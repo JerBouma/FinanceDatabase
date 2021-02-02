@@ -1,1 +1,52 @@
-{"CEW": {"short_name": "WisdomTree Emerging Currency St", "long_name": "WisdomTree Emerging Currency Strategy Fund", "currency": "USD", "summary": "The investment seeks to achieve total returns reflective of both money market rates in selected emerging market countries available to foreign investors and changes to the value of these currencies relative to the U.S. dollar.\n The fund will invest, under normal circumstances, at least 80% of its net assets, plus the amount of any borrowings for investment purposes, in investments whose combined performance is tied economically to selected emerging market countries. It generally will maintain a weighted average portfolio maturity of 90 days or less with respect to the money market securities in its portfolio. The fund is non-diversified.", "category": "Multicurrency", "family": "WisdomTree", "exchange": "PCX", "market": "us_market"}, "DBV": {"short_name": "Invesco DB G10 Currency Harvest", "long_name": "Invesco DB G10 Currency Harvest Fund", "currency": "USD", "summary": "The investment seeks to track changes, whether positive or negative, in the level of the Deutsche Bank G10 Currency Future Harvest Index\u00c2\u00ae\u00e2\u0080\u0094Excess Return.\n The index is comprised of long futures positions in the three eligible index currencies associated with the highest interest rates and short futures positions in the three eligible index currencies associated with the lowest interest rates. The index\u00e2\u0080\u0099s six component currencies from time-to-time, comprised of the three long and three short futures positions, are referred to as the index currencies and are used to calculate the value of the index.", "category": "Multicurrency", "family": "Invesco", "exchange": "PCX", "market": "us_market"}, "UDN": {"short_name": "Invesco DB USD Index Bearish ET", "long_name": "Invesco DB US Dollar Index Bearish Fund", "currency": "USD", "summary": "The investment seeks to track the changes, whether positive or negative, in the level of the Deutsche Bank Short US Dollar Index Futures Index.\n The index reflects the changes in market value over time, whether positive or negative, of a short position in the DX Contract which expires during the months of March, June, September and December. The fund seeks to track the index by establishing short positions in DX Contracts. DX Contracts are linked to the six underlying currencies, or the index currencies, of the U.S. Dollar index (USDX\u00c2\u00ae), or the USDX\u00c2\u00ae. The index currencies are Euro, Japanese Yen, British Pound, Canadian Dollar, Swedish Krona and Swiss Franc.", "category": "Multicurrency", "family": "Invesco", "exchange": "PCX", "market": "us_market"}, "USDU": {"short_name": "WisdomTree Bloomberg U.S. Dolla", "long_name": "WisdomTree Bloomberg U.S. Dollar Bullish Fund", "currency": "USD", "summary": "The investment seeks to provide total returns, before fees and expenses, that exceed the performance of the Bloomberg Dollar Total Return Index (the \"index\").\n The fund is an actively managed ETF that seeks to provide total returns, before fees and expenses, that exceed the performance of the index. The index is structured to potentially benefit as the U.S. dollar appreciates relative to a basket of global currencies. The fund will seek exposure to both the U.S. dollar and global currencies held by the index through investing, under normal circumstances, at least 80% of its assets in money market securities and other liquid securities. It is non-diversified.", "category": "Multicurrency", "family": "WisdomTree", "exchange": "PCX", "market": "us_market"}, "UUP": {"short_name": "Invesco DB USD Index Bullish Fu", "long_name": "Invesco DB US Dollar Index Bullish Fund", "currency": "USD", "summary": "The investment seeks to establish long positions in ICE U.S. Dollar Index futures contracts with a view to tracking the changes, whether positive or negative, in the level of the Deutsche Bank Long USD Currency Portfolio Index \u00e2\u0080\u0094 Excess ReturnTM over time, plus the excess, if any, of the sum of the fund\u00e2\u0080\u0099s Treasury Income, Money Market Income and T-Bill ETF Income over the expenses of the fund.\n The fund invests in futures contracts in an attempt to track its index. The index is calculated to reflect the changes in market value over time, whether positive or negative, of long positions in DX Contracts.", "category": "Multicurrency", "family": "Invesco", "exchange": "PCX", "market": "us_market"}}
+{
+    "CEW": {
+        "short_name": "WisdomTree Emerging Currency St",
+        "long_name": "WisdomTree Emerging Currency Strategy Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to achieve total returns reflective of both money market rates in selected emerging market countries available to foreign investors and changes to the value of these currencies relative to the U.S. dollar.\n The fund will invest, under normal circumstances, at least 80% of its net assets, plus the amount of any borrowings for investment purposes, in investments whose combined performance is tied economically to selected emerging market countries. It generally will maintain a weighted average portfolio maturity of 90 days or less with respect to the money market securities in its portfolio. The fund is non-diversified.",
+        "category": "Multicurrency",
+        "family": "WisdomTree",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "DBV": {
+        "short_name": "Invesco DB G10 Currency Harvest",
+        "long_name": "Invesco DB G10 Currency Harvest Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to track changes, whether positive or negative, in the level of the Deutsche Bank G10 Currency Future Harvest Index\u00c2\u00ae\u00e2\u0080\u0094Excess Return.\n The index is comprised of long futures positions in the three eligible index currencies associated with the highest interest rates and short futures positions in the three eligible index currencies associated with the lowest interest rates. The index\u00e2\u0080\u0099s six component currencies from time-to-time, comprised of the three long and three short futures positions, are referred to as the index currencies and are used to calculate the value of the index.",
+        "category": "Multicurrency",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "UDN": {
+        "short_name": "Invesco DB USD Index Bearish ET",
+        "long_name": "Invesco DB US Dollar Index Bearish Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to track the changes, whether positive or negative, in the level of the Deutsche Bank Short US Dollar Index Futures Index.\n The index reflects the changes in market value over time, whether positive or negative, of a short position in the DX Contract which expires during the months of March, June, September and December. The fund seeks to track the index by establishing short positions in DX Contracts. DX Contracts are linked to the six underlying currencies, or the index currencies, of the U.S. Dollar index (USDX\u00c2\u00ae), or the USDX\u00c2\u00ae. The index currencies are Euro, Japanese Yen, British Pound, Canadian Dollar, Swedish Krona and Swiss Franc.",
+        "category": "Multicurrency",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "USDU": {
+        "short_name": "WisdomTree Bloomberg U.S. Dolla",
+        "long_name": "WisdomTree Bloomberg U.S. Dollar Bullish Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to provide total returns, before fees and expenses, that exceed the performance of the Bloomberg Dollar Total Return Index (the \"index\").\n The fund is an actively managed ETF that seeks to provide total returns, before fees and expenses, that exceed the performance of the index. The index is structured to potentially benefit as the U.S. dollar appreciates relative to a basket of global currencies. The fund will seek exposure to both the U.S. dollar and global currencies held by the index through investing, under normal circumstances, at least 80% of its assets in money market securities and other liquid securities. It is non-diversified.",
+        "category": "Multicurrency",
+        "family": "WisdomTree",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "UUP": {
+        "short_name": "Invesco DB USD Index Bullish Fu",
+        "long_name": "Invesco DB US Dollar Index Bullish Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to establish long positions in ICE U.S. Dollar Index futures contracts with a view to tracking the changes, whether positive or negative, in the level of the Deutsche Bank Long USD Currency Portfolio Index \u00e2\u0080\u0094 Excess ReturnTM over time, plus the excess, if any, of the sum of the fund\u00e2\u0080\u0099s Treasury Income, Money Market Income and T-Bill ETF Income over the expenses of the fund.\n The fund invests in futures contracts in an attempt to track its index. The index is calculated to reflect the changes in market value over time, whether positive or negative, of long positions in DX Contracts.",
+        "category": "Multicurrency",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    }
+}

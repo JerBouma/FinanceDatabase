@@ -1,1 +1,149 @@
-{"DJSI-MILA-PA.SN": {"short_name": null, "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SP-IPSA-ESGT.SN": {"short_name": null, "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SP-IPSA-ESGTUSD.SN": {"short_name": null, "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SP-IPSA.SN": {"short_name": "S&P IPSA", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLCRCP.SN": {"short_name": "S&P/CLX Construction & Real Est", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLFBCP.SN": {"short_name": "S&P/CLX Food & Beverage", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLFECP.SN": {"short_name": "S&P/CLX Financials Ex-Banks", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLITCP.SN": {"short_name": "S&P/CLX Industrial Conglomerate", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLNRCP.SN": {"short_name": "S&P/CLX Natural Resources", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLUTCP.SN": {"short_name": "S&P/CLX Utilities & Telecom", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLX-INDS.SN": {"short_name": "S&P/CLX IGPA Industrials (Chile", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLX-RE.SN": {"short_name": "S&P/CLX IGPA Real Estate (Chile", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLX-TELECOS.SN": {"short_name": "S&P/CLX IGPA Telecommunication ", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLX-UTILS.SN": {"short_name": "S&P/CLX IGPA Utilities (Chilean", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLXBCP.SN": {"short_name": null, "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLXDCP.SN": {"short_name": null, "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLXIGL.SN": {"short_name": "S&P/CLX IGPA LARGE", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLXIGM.SN": {"short_name": "S&P/CLX IGPA MID", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLXIGPA.SN": {"short_name": "S&P/CLX IGPA", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLXIGS.SN": {"short_name": "S&P/CLX IGPA SMALL", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}, "SPCLXIN10.SN": {"short_name": "S&P/CLX INTER-10", "currency": "CLP", "market": "cl_market", "exchange": "SGO", "exchange timezone": "CLST"}}
+{
+    "DJSI-MILA-PA.SN": {
+        "short_name": null,
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SP-IPSA-ESGT.SN": {
+        "short_name": null,
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SP-IPSA-ESGTUSD.SN": {
+        "short_name": null,
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SP-IPSA.SN": {
+        "short_name": "S&P IPSA",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLCRCP.SN": {
+        "short_name": "S&P/CLX Construction & Real Est",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLFBCP.SN": {
+        "short_name": "S&P/CLX Food & Beverage",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLFECP.SN": {
+        "short_name": "S&P/CLX Financials Ex-Banks",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLITCP.SN": {
+        "short_name": "S&P/CLX Industrial Conglomerate",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLNRCP.SN": {
+        "short_name": "S&P/CLX Natural Resources",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLUTCP.SN": {
+        "short_name": "S&P/CLX Utilities & Telecom",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLX-INDS.SN": {
+        "short_name": "S&P/CLX IGPA Industrials (Chile",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLX-RE.SN": {
+        "short_name": "S&P/CLX IGPA Real Estate (Chile",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLX-TELECOS.SN": {
+        "short_name": "S&P/CLX IGPA Telecommunication ",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLX-UTILS.SN": {
+        "short_name": "S&P/CLX IGPA Utilities (Chilean",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLXBCP.SN": {
+        "short_name": null,
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLXDCP.SN": {
+        "short_name": null,
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLXIGL.SN": {
+        "short_name": "S&P/CLX IGPA LARGE",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLXIGM.SN": {
+        "short_name": "S&P/CLX IGPA MID",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLXIGPA.SN": {
+        "short_name": "S&P/CLX IGPA",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLXIGS.SN": {
+        "short_name": "S&P/CLX IGPA SMALL",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    },
+    "SPCLXIN10.SN": {
+        "short_name": "S&P/CLX INTER-10",
+        "currency": "CLP",
+        "market": "cl_market",
+        "exchange": "SGO",
+        "exchange timezone": "CLST"
+    }
+}

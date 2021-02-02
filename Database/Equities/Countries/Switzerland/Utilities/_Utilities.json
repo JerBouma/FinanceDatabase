@@ -1,1 +1,98 @@
-{"4QP.F": {"short_name": "ETRION CORP.", "long_name": "Etrion Corporation", "summary": "Etrion Corporation, an independent power producer, develops, builds, owns, and operates solar power generation plants. The company owns 57 megawatts of installed solar capacity in Japan. It sells its electricity to the Japanese public utilities. The company was formerly known as PetroFalcon Corporation and changed its name to Etrion Corporation in September 2009. Etrion Corporation was incorporated in 1993 and is headquartered in Geneva, Switzerland.", "currency": "EUR", "sector": "Utilities", "industry": "Utilities\u2014Renewable", "exchange": "FRA", "market": "dr_market", "country": "Switzerland", "city": "Geneva"}, "BKW.SW": {"short_name": "BKW N", "long_name": "BKW AG", "summary": "BKW AG plans, builds, and operates infrastructure to produce and supply energy for businesses, households, and the public sector in Switzerland, Germany, Italy, France, and internationally. It operates through three segments: Energy, Grid, and Services. The Energy segment builds, operates, and maintains power plants, such as hydroelectric, nuclear, fossil-fuel, and other renewable energy power plants. It also sells energy, as well as trades in electricity, certificates, and commodities. The Grid segment builds, operates, and maintains distribution grid. The Services segment engages in the provision of planning and engineering consultancy services for energy; infrastructure and environmental projects; and integrated services in the area of building technology; as well as the construction, servicing, and maintenance of energy, telecommunication, transport, and water networks. The company is headquartered in Bern, Switzerland.", "currency": "CHF", "sector": "Utilities", "industry": "Utilities\u2014Renewable", "exchange": "EBS", "market": "ch_market", "country": "Switzerland", "city": "Bern"}, "EDHN.SW": {"short_name": "ENERGIEDIENST N", "long_name": "Energiedienst Holding AG", "summary": "Energiedienst Holding AG produces, distributes, and sells electricity in Switzerland. It generates electricity from hydro, gas, sun, and wind sources. The company also provides heating solutions. It serves approximately 270,000 private and commercial customers. The company is based in Laufenburg, Switzerland. Energiedienst Holding AG is a subsidiary of EnBW Energie Baden-W\u00c3\u00bcrttemberg AG.", "currency": "CHF", "sector": "Utilities", "industry": "Utilities\u2014Renewable", "exchange": "EBS", "market": "ch_market", "country": "Switzerland", "city": "Laufenburg"}, "ESUN.SW": {"short_name": "EDISUN POWER EUROPE N", "long_name": "Edisun Power Europe AG", "summary": "Edisun Power Europe AG, together with its subsidiaries, finances and operates photovoltaic systems in Europe. It also sells solar energy to local electricity companies. As of March 26, 2020, the company owned and operated 37 solar energy installations in Switzerland, Germany, Spain, France, and Italy. Edisun Power Europe AG was founded in 1997 and is headquartered in Zurich, Switzerland.", "currency": "CHF", "sector": "Utilities", "industry": "Utilities\u2014Renewable", "exchange": "EBS", "market": "ch_market", "country": "Switzerland", "city": "Zurich"}, "ETRXF": {"short_name": "ETRION CORPORATION", "long_name": "Etrion Corporation", "summary": "Etrion Corporation, an independent power producer, develops, builds, owns, and operates solar power generation plants. The company owns 57 megawatts of installed solar capacity in Japan. It sells its electricity to the Japanese public utilities. The company was formerly known as PetroFalcon Corporation and changed its name to Etrion Corporation in September 2009. Etrion Corporation was incorporated in 1993 and is headquartered in Geneva, Switzerland.", "currency": "USD", "sector": "Utilities", "industry": "Utilities\u2014Renewable", "exchange": "PNK", "market": "us_market", "country": "Switzerland", "city": "Geneva"}, "ETX.ST": {"short_name": "Etrion Corporation", "long_name": "Etrion Corporation", "summary": "Etrion Corporation, an independent power producer, develops, builds, owns, and operates solar power generation plants. The company owns 57 megawatts of installed solar capacity in Japan. It sells its electricity to the Japanese public utilities. The company was formerly known as PetroFalcon Corporation and changed its name to Etrion Corporation in September 2009. Etrion Corporation was incorporated in 1993 and is headquartered in Geneva, Switzerland.", "currency": "SEK", "sector": "Utilities", "industry": "Utilities\u2014Renewable", "exchange": "STO", "market": "se_market", "country": "Switzerland", "city": "Geneva"}, "ETX.TO": {"short_name": "ETRION CORPORATION", "long_name": "Etrion Corporation", "summary": "Etrion Corporation, an independent power producer, develops, builds, owns, and operates solar power generation plants. The company owns 57 megawatts of installed solar capacity in Japan. It sells its electricity to the Japanese public utilities. The company was formerly known as PetroFalcon Corporation and changed its name to Etrion Corporation in September 2009. Etrion Corporation was incorporated in 1993 and is headquartered in Geneva, Switzerland.", "currency": "CAD", "sector": "Utilities", "industry": "Utilities\u2014Renewable", "exchange": "TOR", "market": "ca_market", "country": "Switzerland", "city": "Geneva"}, "HREN.SW": {"short_name": "ROMANDE ENERGIE N", "long_name": "Romande Energie Holding SA", "summary": "Romande Energie Holding SA engages in the generation, distribution, and marketing of electricity in Switzerland. The company generates electricity through hydropower, solar, wind, and biomass plants. It also owns and manages distribution grids and natural-gas distribution pipelines; manages energy portfolios; designs and installs heat pumps, thermal solar, and PV solutions, as well as district heating, ventilation, air-conditioning, home automation, telecommunications, and IT solutions; and installs heating, ventilation, air-conditioning, and gas solutions, as well as plumbing and paneling solutions. In addition, the company provides invoicing, call-center, and energy audit services; energy systems, including heat pumps, solar thermal energy, and solar photovoltaic energy services; lighting systems, such as public lighting and illumination services; and thermal systems solutions, as well as advisory services. Romande Energie Holding SA was founded in 1901 and is headquartered in Morges, Switzerland.", "currency": "CHF", "sector": "Utilities", "industry": "Utilities\u2014Renewable", "exchange": "EBS", "market": "ch_market", "country": "Switzerland", "city": "Morges"}}
+{
+    "4QP.F": {
+        "short_name": "ETRION CORP.",
+        "long_name": "Etrion Corporation",
+        "summary": "Etrion Corporation, an independent power producer, develops, builds, owns, and operates solar power generation plants. The company owns 57 megawatts of installed solar capacity in Japan. It sells its electricity to the Japanese public utilities. The company was formerly known as PetroFalcon Corporation and changed its name to Etrion Corporation in September 2009. Etrion Corporation was incorporated in 1993 and is headquartered in Geneva, Switzerland.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities\u2014Renewable",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Switzerland",
+        "city": "Geneva"
+    },
+    "BKW.SW": {
+        "short_name": "BKW N",
+        "long_name": "BKW AG",
+        "summary": "BKW AG plans, builds, and operates infrastructure to produce and supply energy for businesses, households, and the public sector in Switzerland, Germany, Italy, France, and internationally. It operates through three segments: Energy, Grid, and Services. The Energy segment builds, operates, and maintains power plants, such as hydroelectric, nuclear, fossil-fuel, and other renewable energy power plants. It also sells energy, as well as trades in electricity, certificates, and commodities. The Grid segment builds, operates, and maintains distribution grid. The Services segment engages in the provision of planning and engineering consultancy services for energy; infrastructure and environmental projects; and integrated services in the area of building technology; as well as the construction, servicing, and maintenance of energy, telecommunication, transport, and water networks. The company is headquartered in Bern, Switzerland.",
+        "currency": "CHF",
+        "sector": "Utilities",
+        "industry": "Utilities\u2014Renewable",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "city": "Bern"
+    },
+    "EDHN.SW": {
+        "short_name": "ENERGIEDIENST N",
+        "long_name": "Energiedienst Holding AG",
+        "summary": "Energiedienst Holding AG produces, distributes, and sells electricity in Switzerland. It generates electricity from hydro, gas, sun, and wind sources. The company also provides heating solutions. It serves approximately 270,000 private and commercial customers. The company is based in Laufenburg, Switzerland. Energiedienst Holding AG is a subsidiary of EnBW Energie Baden-W\u00c3\u00bcrttemberg AG.",
+        "currency": "CHF",
+        "sector": "Utilities",
+        "industry": "Utilities\u2014Renewable",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "city": "Laufenburg"
+    },
+    "ESUN.SW": {
+        "short_name": "EDISUN POWER EUROPE N",
+        "long_name": "Edisun Power Europe AG",
+        "summary": "Edisun Power Europe AG, together with its subsidiaries, finances and operates photovoltaic systems in Europe. It also sells solar energy to local electricity companies. As of March 26, 2020, the company owned and operated 37 solar energy installations in Switzerland, Germany, Spain, France, and Italy. Edisun Power Europe AG was founded in 1997 and is headquartered in Zurich, Switzerland.",
+        "currency": "CHF",
+        "sector": "Utilities",
+        "industry": "Utilities\u2014Renewable",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "city": "Zurich"
+    },
+    "ETRXF": {
+        "short_name": "ETRION CORPORATION",
+        "long_name": "Etrion Corporation",
+        "summary": "Etrion Corporation, an independent power producer, develops, builds, owns, and operates solar power generation plants. The company owns 57 megawatts of installed solar capacity in Japan. It sells its electricity to the Japanese public utilities. The company was formerly known as PetroFalcon Corporation and changed its name to Etrion Corporation in September 2009. Etrion Corporation was incorporated in 1993 and is headquartered in Geneva, Switzerland.",
+        "currency": "USD",
+        "sector": "Utilities",
+        "industry": "Utilities\u2014Renewable",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Switzerland",
+        "city": "Geneva"
+    },
+    "ETX.ST": {
+        "short_name": "Etrion Corporation",
+        "long_name": "Etrion Corporation",
+        "summary": "Etrion Corporation, an independent power producer, develops, builds, owns, and operates solar power generation plants. The company owns 57 megawatts of installed solar capacity in Japan. It sells its electricity to the Japanese public utilities. The company was formerly known as PetroFalcon Corporation and changed its name to Etrion Corporation in September 2009. Etrion Corporation was incorporated in 1993 and is headquartered in Geneva, Switzerland.",
+        "currency": "SEK",
+        "sector": "Utilities",
+        "industry": "Utilities\u2014Renewable",
+        "exchange": "STO",
+        "market": "se_market",
+        "country": "Switzerland",
+        "city": "Geneva"
+    },
+    "ETX.TO": {
+        "short_name": "ETRION CORPORATION",
+        "long_name": "Etrion Corporation",
+        "summary": "Etrion Corporation, an independent power producer, develops, builds, owns, and operates solar power generation plants. The company owns 57 megawatts of installed solar capacity in Japan. It sells its electricity to the Japanese public utilities. The company was formerly known as PetroFalcon Corporation and changed its name to Etrion Corporation in September 2009. Etrion Corporation was incorporated in 1993 and is headquartered in Geneva, Switzerland.",
+        "currency": "CAD",
+        "sector": "Utilities",
+        "industry": "Utilities\u2014Renewable",
+        "exchange": "TOR",
+        "market": "ca_market",
+        "country": "Switzerland",
+        "city": "Geneva"
+    },
+    "HREN.SW": {
+        "short_name": "ROMANDE ENERGIE N",
+        "long_name": "Romande Energie Holding SA",
+        "summary": "Romande Energie Holding SA engages in the generation, distribution, and marketing of electricity in Switzerland. The company generates electricity through hydropower, solar, wind, and biomass plants. It also owns and manages distribution grids and natural-gas distribution pipelines; manages energy portfolios; designs and installs heat pumps, thermal solar, and PV solutions, as well as district heating, ventilation, air-conditioning, home automation, telecommunications, and IT solutions; and installs heating, ventilation, air-conditioning, and gas solutions, as well as plumbing and paneling solutions. In addition, the company provides invoicing, call-center, and energy audit services; energy systems, including heat pumps, solar thermal energy, and solar photovoltaic energy services; lighting systems, such as public lighting and illumination services; and thermal systems solutions, as well as advisory services. Romande Energie Holding SA was founded in 1901 and is headquartered in Morges, Switzerland.",
+        "currency": "CHF",
+        "sector": "Utilities",
+        "industry": "Utilities\u2014Renewable",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "city": "Morges"
+    }
+}

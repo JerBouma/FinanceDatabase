@@ -44,7 +44,7 @@ def make_directories_and_fill_json_options(data, directory_name):
 
     print('Filling folder with data..')
     with open(directory_name + '/' + 'Options.json', 'w') as handle:
-        json.dump(symbols_dictionaries, handle)
+        json.dump(symbols_dictionaries, handle, indent=4)
 
     if Errors:
         print("A couple of tickers were not able to be categorized. Please check the output of this function.")

@@ -1,1 +1,72 @@
-{"DRW": {"short_name": "WisdomTree Global ex-US Real Es", "long_name": "WisdomTree Global ex-US Real Estate Fund", "currency": "USD", "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree Global ex-U.S. Real Estate Index.\n Under normal circumstances, at least 95% of the fund&#39;s total assets will be invested in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a fundamentally weighted index that is comprised of companies from developed and emerging markets outside of the United States that are classified as being part of the \"Global Real Estate\" sector. The fund is non-diversified.", "category": "Global Real Estate", "family": "WisdomTree", "exchange": "PCX", "market": "us_market"}, "FFR": {"short_name": "First Trust FTSE EPRA/NAREIT Gl", "long_name": "First Trust FTSE EPRA/NAREIT Developed Markets Real Estate Index Fund", "currency": "USD", "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the FTSE EPRA/NAREIT Developed Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and depositary receipts that comprise the index. The index is modified market cap weighted based on free float market capitalization and includes the securities of real estate companies or REITs that are publicly traded on an official stock exchange located in North America, Europe or Asia and provides an audited annual report in English.", "category": "Global Real Estate", "family": "First Trust", "exchange": "PCX", "market": "us_market"}, "GQRE": {"short_name": "FlexShares Global Quality Real ", "long_name": "FlexShares Global Quality Real Estate Index Fund", "currency": "USD", "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the Northern Trust Global Quality Real Estate IndexSM.\n The index is designed to reflect the performance of a selection of companies that, in aggregate, possess greater exposure to quality, value and momentum factors relative to the Northern Trust Global Real Estate Index. The fund will invest at least 80% of its total assets in the securities of the index and in ADRs and GDRs based on the securities in the index. The fund is non-diversified.", "category": "Global Real Estate", "family": "Flexshares Trust", "exchange": "PCX", "market": "us_market"}, "IFGL": {"short_name": "iShares FTSE EPRA/NAREIT Global", "long_name": "iShares International Developed Real Estate ETF", "currency": "USD", "summary": "The investment seeks to track the investment results of the FTSE EPRA/NAREIT Developed ex-U.S. Index composed of real estate equities in developed non-U.S. markets.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index measures the stock performance of companies engaged in the ownership and development of real estate markets in developed countries (except for the United States) as defined by FTSE EPRA/NAREIT.", "category": "Global Real Estate", "family": "iShares", "exchange": "NGM", "market": "us_market"}, "RWO": {"short_name": "SPDR DJ Wilshire Global Real Es", "long_name": "SPDR Dow Jones Global Real Estate ETF", "currency": "USD", "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the Dow Jones Global Select Real Estate Securities Indexsm based upon the global real estate market.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in depositary receipts based on securities comprising the index. The index is a float-adjusted market capitalization index designed to measure the performance of publicly traded global real estate securities.", "category": "Global Real Estate", "family": "SPDR State Street Global Advisors", "exchange": "PCX", "market": "us_market"}, "RWX": {"short_name": "SPDR DJ Wilshire Intl Real Esta", "long_name": "SPDR Dow Jones International Real Estate ETF", "currency": "USD", "summary": "The investment seeks to provide investment results, before fees and expenses, correspond generally to the total return performance of the Dow Jones Global ex-U.S. Select Real Estate Securities Indexsm.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in depositary receipts based on securities comprising the index. The index is a float-adjusted market capitalization index designed to measure the performance of publicly traded real estate securities in countries excluding the United States.", "category": "Global Real Estate", "family": "SPDR State Street Global Advisors", "exchange": "PCX", "market": "us_market"}, "VNQI": {"short_name": "Vanguard Global ex-U.S. Real Es", "long_name": "Vanguard Global ex-U.S. Real Estate Index Fund ETF Shares", "currency": "USD", "summary": "The investment seeks to track the performance of a benchmark index.\n The fund employs an indexing investment approach designed to track the performance of the S&P Global ex-U.S. Property Index, a float-adjusted, market-capitalization-weighted index that measures the equity market performance of international real estate stocks in both developed and emerging markets. The index is composed of stocks of publicly traded equity real estate investment trusts (known as REITs) and certain real estate management and development companies (REMDs).", "category": "Global Real Estate", "family": "Vanguard", "exchange": "NGM", "market": "us_market"}}
+{
+    "DRW": {
+        "short_name": "WisdomTree Global ex-US Real Es",
+        "long_name": "WisdomTree Global ex-US Real Estate Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree Global ex-U.S. Real Estate Index.\n Under normal circumstances, at least 95% of the fund&#39;s total assets will be invested in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a fundamentally weighted index that is comprised of companies from developed and emerging markets outside of the United States that are classified as being part of the \"Global Real Estate\" sector. The fund is non-diversified.",
+        "category": "Global Real Estate",
+        "family": "WisdomTree",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "FFR": {
+        "short_name": "First Trust FTSE EPRA/NAREIT Gl",
+        "long_name": "First Trust FTSE EPRA/NAREIT Developed Markets Real Estate Index Fund",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the FTSE EPRA/NAREIT Developed Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and depositary receipts that comprise the index. The index is modified market cap weighted based on free float market capitalization and includes the securities of real estate companies or REITs that are publicly traded on an official stock exchange located in North America, Europe or Asia and provides an audited annual report in English.",
+        "category": "Global Real Estate",
+        "family": "First Trust",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "GQRE": {
+        "short_name": "FlexShares Global Quality Real ",
+        "long_name": "FlexShares Global Quality Real Estate Index Fund",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the Northern Trust Global Quality Real Estate IndexSM.\n The index is designed to reflect the performance of a selection of companies that, in aggregate, possess greater exposure to quality, value and momentum factors relative to the Northern Trust Global Real Estate Index. The fund will invest at least 80% of its total assets in the securities of the index and in ADRs and GDRs based on the securities in the index. The fund is non-diversified.",
+        "category": "Global Real Estate",
+        "family": "Flexshares Trust",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IFGL": {
+        "short_name": "iShares FTSE EPRA/NAREIT Global",
+        "long_name": "iShares International Developed Real Estate ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the FTSE EPRA/NAREIT Developed ex-U.S. Index composed of real estate equities in developed non-U.S. markets.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index measures the stock performance of companies engaged in the ownership and development of real estate markets in developed countries (except for the United States) as defined by FTSE EPRA/NAREIT.",
+        "category": "Global Real Estate",
+        "family": "iShares",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "RWO": {
+        "short_name": "SPDR DJ Wilshire Global Real Es",
+        "long_name": "SPDR Dow Jones Global Real Estate ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the Dow Jones Global Select Real Estate Securities Indexsm based upon the global real estate market.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in depositary receipts based on securities comprising the index. The index is a float-adjusted market capitalization index designed to measure the performance of publicly traded global real estate securities.",
+        "category": "Global Real Estate",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "RWX": {
+        "short_name": "SPDR DJ Wilshire Intl Real Esta",
+        "long_name": "SPDR Dow Jones International Real Estate ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results, before fees and expenses, correspond generally to the total return performance of the Dow Jones Global ex-U.S. Select Real Estate Securities Indexsm.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in depositary receipts based on securities comprising the index. The index is a float-adjusted market capitalization index designed to measure the performance of publicly traded real estate securities in countries excluding the United States.",
+        "category": "Global Real Estate",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "VNQI": {
+        "short_name": "Vanguard Global ex-U.S. Real Es",
+        "long_name": "Vanguard Global ex-U.S. Real Estate Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of a benchmark index.\n The fund employs an indexing investment approach designed to track the performance of the S&P Global ex-U.S. Property Index, a float-adjusted, market-capitalization-weighted index that measures the equity market performance of international real estate stocks in both developed and emerging markets. The index is composed of stocks of publicly traded equity real estate investment trusts (known as REITs) and certain real estate management and development companies (REMDs).",
+        "category": "Global Real Estate",
+        "family": "Vanguard",
+        "exchange": "NGM",
+        "market": "us_market"
+    }
+}

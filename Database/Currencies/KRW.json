@@ -1,1 +1,158 @@
-{"AEDKRW=X": {"short_name": "AED/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "AUDKRW=X": {"short_name": "AUD/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "BRLKRW=X": {"short_name": "BRL/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "BWPKRW=X": {"short_name": "BWP/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "CADKRW=X": {"short_name": "CAD/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "CHFKRW=X": {"short_name": "CHF/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "CNHKRW=X": {"short_name": "CNH/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "CNYKRW=X": {"short_name": "CNY/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "DKKKRW=X": {"short_name": "DKK/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "EURKRW=X": {"short_name": "EUR/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "GBPKRW=X": {"short_name": "GBP/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "GHSKRW=X": {"short_name": "GHS/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "HKDKRW=X": {"short_name": "HKD/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "IDRKRW=X": {"short_name": "IDR/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "INRKRW=X": {"short_name": "INR/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "JPYKRW=X": {"short_name": "JPY/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "KRW=X": {"short_name": "USD/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "MYRKRW=X": {"short_name": "MYR/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "NZDKRW=X": {"short_name": "NZD/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "PHPKRW=X": {"short_name": "PHP/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "PKRKRW=X": {"short_name": "PKR/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "SEKKRW=X": {"short_name": "SEK/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "SGDKRW=X": {"short_name": "SGD/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "THBKRW=X": {"short_name": "THB/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "TWDKRW=X": {"short_name": "TWD/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}, "UGXKRW=X": {"short_name": "UGX/KRW", "currency": "KRW", "exchange": "CCY", "market": "ccy_market"}}
+{
+    "AEDKRW=X": {
+        "short_name": "AED/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "AUDKRW=X": {
+        "short_name": "AUD/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BRLKRW=X": {
+        "short_name": "BRL/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BWPKRW=X": {
+        "short_name": "BWP/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADKRW=X": {
+        "short_name": "CAD/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFKRW=X": {
+        "short_name": "CHF/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CNHKRW=X": {
+        "short_name": "CNH/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CNYKRW=X": {
+        "short_name": "CNY/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "DKKKRW=X": {
+        "short_name": "DKK/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURKRW=X": {
+        "short_name": "EUR/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPKRW=X": {
+        "short_name": "GBP/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GHSKRW=X": {
+        "short_name": "GHS/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "HKDKRW=X": {
+        "short_name": "HKD/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "IDRKRW=X": {
+        "short_name": "IDR/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "INRKRW=X": {
+        "short_name": "INR/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYKRW=X": {
+        "short_name": "JPY/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KRW=X": {
+        "short_name": "USD/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MYRKRW=X": {
+        "short_name": "MYR/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NZDKRW=X": {
+        "short_name": "NZD/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PHPKRW=X": {
+        "short_name": "PHP/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PKRKRW=X": {
+        "short_name": "PKR/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SEKKRW=X": {
+        "short_name": "SEK/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SGDKRW=X": {
+        "short_name": "SGD/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "THBKRW=X": {
+        "short_name": "THB/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "TWDKRW=X": {
+        "short_name": "TWD/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "UGXKRW=X": {
+        "short_name": "UGX/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
+}

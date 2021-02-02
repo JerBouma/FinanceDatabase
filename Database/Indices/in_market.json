@@ -1,1 +1,569 @@
-{"^BSESN": {"short_name": "S&P BSE SENSEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "^CNXAUTO": {"short_name": "NIFTY AUTO", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXCMDT": {"short_name": "NIFTY COMMODITIES", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXCONSUM": {"short_name": "NIFTY CONSUMPTION", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXDIVOP": {"short_name": "NIFTY DIV OPPS 50", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXENERGY": {"short_name": "NIFTY ENERGY", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXFIN": {"short_name": "NIFTY FINSRV25 50", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXFMCG": {"short_name": "NIFTY FMCG", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXINFRA": {"short_name": "NIFTY INFRA", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXIT": {"short_name": "NIFTY IT", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXMEDIA": {"short_name": "NIFTY MEDIA", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXMETAL": {"short_name": "NIFTY METAL", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXMNC": {"short_name": "NIFTY MNC", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXPHARMA": {"short_name": "NIFTY PHARMA", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXPSE": {"short_name": "NIFTY PSE", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXPSUBANK": {"short_name": "NIFTY PSU BANK", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXREALTY": {"short_name": "NIFTY REALTY", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXSC": {"short_name": "NIFTY SMLCAP 100", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CNXSERVICE": {"short_name": "NIFTY SERV SECTOR", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CRSLDX": {"short_name": "NIFTY 500", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^CRSMID": {"short_name": "NIFTY Midcap 100", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^NSEBANK": {"short_name": "NIFTY BANK", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^NSEDIV": {"short_name": "NIFTY50 DIV POINT", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^NSEI": {"short_name": "NIFTY 50", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^NSEMDCP50": {"short_name": "NIFTY MIDCAP 50", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "^NSMIDCP": {"short_name": "NIFTY NEXT 50", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "ALLCAP.BO": {"short_name": "S&P BSE ALLCAP", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BASMTR.BO": {"short_name": "S&P BSE BASIC MATERIALS", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BHRT22.BO": {"short_name": "S&P BSE Bharat 22 Index", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-100.BO": {"short_name": "S&P BSE 100 INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-500.BO": {"short_name": "S&P BSE 500 INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-AUTO.BO": {"short_name": "S&P BSE AUTO INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-BANK.BO": {"short_name": "S&P BSE BANKEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-CARBONEX.BO": {"short_name": "S&P BSE-CARBON INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-CD.BO": {"short_name": "S&P BSE CONS.DURABLES INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-CG.BO": {"short_name": "S&P BSE CAPITAL GOODS INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-FMCG.BO": {"short_name": "S&P BSE FMCG INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-GREENEX.BO": {"short_name": "S&P BSE-GREENEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-HC.BO": {"short_name": "S&P BSE HEALTH CARE INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-IPO.BO": {"short_name": "S&P BSE IPO INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-IT.BO": {"short_name": "S&P BSE INFOTECH INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-METAL.BO": {"short_name": "S&P BSE METAL INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-MIDCAP.BO": {"short_name": "S&P BSE MIDCAP INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-OILGAS.BO": {"short_name": "S&P BSE OIL&GAS INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-POWER.BO": {"short_name": "S&P BSE POWER INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-PSU.BO": {"short_name": "S&P BSE PUBLIC SECTOR INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-REALTY.BO": {"short_name": "S&P BSE REALTY INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-SMEIPO.BO": {"short_name": "S&P BSE SMALL AND MEDIUM ENTERP", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-SMLCAP.BO": {"short_name": "S&P BSE SMALLCAP INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSE-TECK.BO": {"short_name": "S&P BSE TECK INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSEDSI.BO": {"short_name": "S&P BSE Dividend Stability Inde", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSEEVI.BO": {"short_name": "S&P BSE Enhanced Value Index", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSELVI.BO": {"short_name": "S&P BSE Low Volatility Index", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSEMOI.BO": {"short_name": "S&P BSE Momentum Index", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "BSEQUI.BO": {"short_name": "S&P BSE Quality Index", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "CDGS.BO": {"short_name": "S&P BSE CONSUMER DISCRETIONARY ", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "CPSE.BO": {"short_name": "S&P BSE CPSE INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "CPSE.NS": {"short_name": "Nifty CPSE", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "DFRGRI.BO": {"short_name": "S&P BSE Diversified Financials ", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "DOLLEX100.BO": {"short_name": "S&P BSE DOLLEX-100", "currency": "USD", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "DOLLEX200.BO": {"short_name": "S&P BSE DOLLEX-200", "currency": "USD", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "DOLLEX30.BO": {"short_name": "S&P BSE DOLLEX-30", "currency": "USD", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "INDSTR.BO": {"short_name": "S&P BSE INDUSTRIALS", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "LCTMCI.BO": {"short_name": "S&P BSE 100 LargeCap TMC Index", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "LRGCAP.BO": {"short_name": "S&P BSE LARGECAP", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "MIDSEL.BO": {"short_name": "S&P BSE MIDCAP SELECT INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "MSL400.BO": {"short_name": "S&P BSE 400 MidSmallCap Index", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "NI15.NS": {"short_name": "NIFTY GROWSECT 15", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "NIFTY100_EQL_WGT.NS": {"short_name": "NIFTY100 EQL WGT", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "NIFTY100LOWVOL30.NS": {"short_name": "NIFTY100 LOWVOL30", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "NIFTY200QUALTY30.NS": {"short_name": "NIFTY200 QUALTY30", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "NIFTY50EQUALWEIGHT.NS": {"short_name": "NIFTY50 EQL WGT", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "NIFTY_CPSE.NS": {"short_name": "NIFTY CPSE", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "NIFTYGSCOMPOSITE.NS": {"short_name": "NIFTY GS COMPSITE", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "NIFTYMIDSML400.NS": {"short_name": "NIFTY MIDSML 400", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "NIFTYQUALITY30.NS": {"short_name": "NIFTY100 QUALTY30", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "NIFTYSMLCAP250.NS": {"short_name": "NIFTY SMLCAP 250", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "NIFTYSMLCAP50.NS": {"short_name": "NIFTY SMLCAP 50", "currency": "INR", "market": "in_market", "exchange": "NSI", "exchange timezone": "IST"}, "SMLSEL.BO": {"short_name": "S&P BSE SMALLCAP SELECT INDEX", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "SNSX50.BO": {"short_name": "S&P BSE SENSEX 50 Index", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}, "SNXT50.BO": {"short_name": "S&P BSE SENSEX Next 50 Index", "currency": "INR", "market": "in_market", "exchange": "BSE", "exchange timezone": "IST"}}
+{
+    "^BSESN": {
+        "short_name": "S&P BSE SENSEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "^CNXAUTO": {
+        "short_name": "NIFTY AUTO",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXCMDT": {
+        "short_name": "NIFTY COMMODITIES",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXCONSUM": {
+        "short_name": "NIFTY CONSUMPTION",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXDIVOP": {
+        "short_name": "NIFTY DIV OPPS 50",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXENERGY": {
+        "short_name": "NIFTY ENERGY",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXFIN": {
+        "short_name": "NIFTY FINSRV25 50",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXFMCG": {
+        "short_name": "NIFTY FMCG",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXINFRA": {
+        "short_name": "NIFTY INFRA",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXIT": {
+        "short_name": "NIFTY IT",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXMEDIA": {
+        "short_name": "NIFTY MEDIA",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXMETAL": {
+        "short_name": "NIFTY METAL",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXMNC": {
+        "short_name": "NIFTY MNC",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXPHARMA": {
+        "short_name": "NIFTY PHARMA",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXPSE": {
+        "short_name": "NIFTY PSE",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXPSUBANK": {
+        "short_name": "NIFTY PSU BANK",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXREALTY": {
+        "short_name": "NIFTY REALTY",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXSC": {
+        "short_name": "NIFTY SMLCAP 100",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CNXSERVICE": {
+        "short_name": "NIFTY SERV SECTOR",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CRSLDX": {
+        "short_name": "NIFTY 500",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^CRSMID": {
+        "short_name": "NIFTY Midcap 100",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^NSEBANK": {
+        "short_name": "NIFTY BANK",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^NSEDIV": {
+        "short_name": "NIFTY50 DIV POINT",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^NSEI": {
+        "short_name": "NIFTY 50",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^NSEMDCP50": {
+        "short_name": "NIFTY MIDCAP 50",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "^NSMIDCP": {
+        "short_name": "NIFTY NEXT 50",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "ALLCAP.BO": {
+        "short_name": "S&P BSE ALLCAP",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BASMTR.BO": {
+        "short_name": "S&P BSE BASIC MATERIALS",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BHRT22.BO": {
+        "short_name": "S&P BSE Bharat 22 Index",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-100.BO": {
+        "short_name": "S&P BSE 100 INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-500.BO": {
+        "short_name": "S&P BSE 500 INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-AUTO.BO": {
+        "short_name": "S&P BSE AUTO INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-BANK.BO": {
+        "short_name": "S&P BSE BANKEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-CARBONEX.BO": {
+        "short_name": "S&P BSE-CARBON INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-CD.BO": {
+        "short_name": "S&P BSE CONS.DURABLES INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-CG.BO": {
+        "short_name": "S&P BSE CAPITAL GOODS INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-FMCG.BO": {
+        "short_name": "S&P BSE FMCG INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-GREENEX.BO": {
+        "short_name": "S&P BSE-GREENEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-HC.BO": {
+        "short_name": "S&P BSE HEALTH CARE INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-IPO.BO": {
+        "short_name": "S&P BSE IPO INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-IT.BO": {
+        "short_name": "S&P BSE INFOTECH INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-METAL.BO": {
+        "short_name": "S&P BSE METAL INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-MIDCAP.BO": {
+        "short_name": "S&P BSE MIDCAP INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-OILGAS.BO": {
+        "short_name": "S&P BSE OIL&GAS INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-POWER.BO": {
+        "short_name": "S&P BSE POWER INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-PSU.BO": {
+        "short_name": "S&P BSE PUBLIC SECTOR INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-REALTY.BO": {
+        "short_name": "S&P BSE REALTY INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-SMEIPO.BO": {
+        "short_name": "S&P BSE SMALL AND MEDIUM ENTERP",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-SMLCAP.BO": {
+        "short_name": "S&P BSE SMALLCAP INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSE-TECK.BO": {
+        "short_name": "S&P BSE TECK INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSEDSI.BO": {
+        "short_name": "S&P BSE Dividend Stability Inde",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSEEVI.BO": {
+        "short_name": "S&P BSE Enhanced Value Index",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSELVI.BO": {
+        "short_name": "S&P BSE Low Volatility Index",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSEMOI.BO": {
+        "short_name": "S&P BSE Momentum Index",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "BSEQUI.BO": {
+        "short_name": "S&P BSE Quality Index",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "CDGS.BO": {
+        "short_name": "S&P BSE CONSUMER DISCRETIONARY ",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "CPSE.BO": {
+        "short_name": "S&P BSE CPSE INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "CPSE.NS": {
+        "short_name": "Nifty CPSE",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "DFRGRI.BO": {
+        "short_name": "S&P BSE Diversified Financials ",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "DOLLEX100.BO": {
+        "short_name": "S&P BSE DOLLEX-100",
+        "currency": "USD",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "DOLLEX200.BO": {
+        "short_name": "S&P BSE DOLLEX-200",
+        "currency": "USD",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "DOLLEX30.BO": {
+        "short_name": "S&P BSE DOLLEX-30",
+        "currency": "USD",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "INDSTR.BO": {
+        "short_name": "S&P BSE INDUSTRIALS",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "LCTMCI.BO": {
+        "short_name": "S&P BSE 100 LargeCap TMC Index",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "LRGCAP.BO": {
+        "short_name": "S&P BSE LARGECAP",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "MIDSEL.BO": {
+        "short_name": "S&P BSE MIDCAP SELECT INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "MSL400.BO": {
+        "short_name": "S&P BSE 400 MidSmallCap Index",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "NI15.NS": {
+        "short_name": "NIFTY GROWSECT 15",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "NIFTY100_EQL_WGT.NS": {
+        "short_name": "NIFTY100 EQL WGT",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "NIFTY100LOWVOL30.NS": {
+        "short_name": "NIFTY100 LOWVOL30",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "NIFTY200QUALTY30.NS": {
+        "short_name": "NIFTY200 QUALTY30",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "NIFTY50EQUALWEIGHT.NS": {
+        "short_name": "NIFTY50 EQL WGT",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "NIFTY_CPSE.NS": {
+        "short_name": "NIFTY CPSE",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "NIFTYGSCOMPOSITE.NS": {
+        "short_name": "NIFTY GS COMPSITE",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "NIFTYMIDSML400.NS": {
+        "short_name": "NIFTY MIDSML 400",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "NIFTYQUALITY30.NS": {
+        "short_name": "NIFTY100 QUALTY30",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "NIFTYSMLCAP250.NS": {
+        "short_name": "NIFTY SMLCAP 250",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "NIFTYSMLCAP50.NS": {
+        "short_name": "NIFTY SMLCAP 50",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "NSI",
+        "exchange timezone": "IST"
+    },
+    "SMLSEL.BO": {
+        "short_name": "S&P BSE SMALLCAP SELECT INDEX",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "SNSX50.BO": {
+        "short_name": "S&P BSE SENSEX 50 Index",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    },
+    "SNXT50.BO": {
+        "short_name": "S&P BSE SENSEX Next 50 Index",
+        "currency": "INR",
+        "market": "in_market",
+        "exchange": "BSE",
+        "exchange timezone": "IST"
+    }
+}

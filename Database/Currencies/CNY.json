@@ -1,1 +1,152 @@
-{"AUDCNY=X": {"short_name": "AUD/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "BRLCNY=X": {"short_name": "BRL/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "BWPCNY=X": {"short_name": "BWP/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "CADCNY=X": {"short_name": "CAD/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "CHFCNY=X": {"short_name": "CHF/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "CNY=X": {"short_name": "USD/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "EURCNY=X": {"short_name": "EUR/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "GBPCNY=X": {"short_name": "GBP/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "GHSCNY=X": {"short_name": "GHS/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "HKDCNY=X": {"short_name": "HKD/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "IDRCNY=X": {"short_name": "IDR/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "INRCNY=X": {"short_name": "INR/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "JPYCNY=X": {"short_name": "JPY/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "KRWCNY=X": {"short_name": "KRW/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "LKRCNY=X": {"short_name": "LKR/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "MYRCNY=X": {"short_name": "MYR/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "NZDCNY=X": {"short_name": "NZD/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "PHPCNY=X": {"short_name": "PHP/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "PLNCNY=X": {"short_name": "PLN/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "RUBCNY=X": {"short_name": "RUB/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "SEKCNY=X": {"short_name": "SEK/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "SGDCNY=X": {"short_name": "SGD/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "THBCNY=X": {"short_name": "THB/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "TWDCNY=X": {"short_name": "TWD/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}, "UGXCNY=X": {"short_name": "UGX/CNY", "currency": "CNY", "exchange": "CCY", "market": "ccy_market"}}
+{
+    "AUDCNY=X": {
+        "short_name": "AUD/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BRLCNY=X": {
+        "short_name": "BRL/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BWPCNY=X": {
+        "short_name": "BWP/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADCNY=X": {
+        "short_name": "CAD/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFCNY=X": {
+        "short_name": "CHF/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CNY=X": {
+        "short_name": "USD/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURCNY=X": {
+        "short_name": "EUR/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPCNY=X": {
+        "short_name": "GBP/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GHSCNY=X": {
+        "short_name": "GHS/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "HKDCNY=X": {
+        "short_name": "HKD/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "IDRCNY=X": {
+        "short_name": "IDR/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "INRCNY=X": {
+        "short_name": "INR/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYCNY=X": {
+        "short_name": "JPY/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KRWCNY=X": {
+        "short_name": "KRW/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "LKRCNY=X": {
+        "short_name": "LKR/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MYRCNY=X": {
+        "short_name": "MYR/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NZDCNY=X": {
+        "short_name": "NZD/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PHPCNY=X": {
+        "short_name": "PHP/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PLNCNY=X": {
+        "short_name": "PLN/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "RUBCNY=X": {
+        "short_name": "RUB/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SEKCNY=X": {
+        "short_name": "SEK/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SGDCNY=X": {
+        "short_name": "SGD/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "THBCNY=X": {
+        "short_name": "THB/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "TWDCNY=X": {
+        "short_name": "TWD/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "UGXCNY=X": {
+        "short_name": "UGX/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
+}

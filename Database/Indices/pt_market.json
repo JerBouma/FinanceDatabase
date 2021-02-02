@@ -1,1 +1,212 @@
-{"^BVLG": {"short_name": "PSI ALL-SHARE GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "BVL.LS": {"short_name": "PSI ALL-SHARE", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PSIHD.LS": {"short_name": "PSI HIGH DIV NR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PSILV.LS": {"short_name": "PSI 20 LEVERAGE", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PSINR.LS": {"short_name": "PSI 20 NR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PSISH.LS": {"short_name": "PSI 20 SHORT GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PSITL.LS": {"short_name": "PSI TR LEVERAGE", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PSITR.LS": {"short_name": "PSI 20 GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PSIXB.LS": {"short_name": "PSI 20 XBEAR GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTBM.LS": {"short_name": "PSI BASIC MATER GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTBMP.LS": {"short_name": "PSI BASIC MATERIAL", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTCG.LS": {"short_name": "PSI CONS DISCR GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTCGP.LS": {"short_name": "PSI CONS DISCR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTCS.LS": {"short_name": "PSI CONS STAPL GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTCSP.LS": {"short_name": "PSI CONS STAPLES", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTEB.LS": {"short_name": "PSI 20 EX BANKS", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTEBG.LS": {"short_name": "PSI 20 EX BANKS GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTEBN.LS": {"short_name": "PSI 20 EX BANKS NR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTFIN.LS": {"short_name": "PSI FINANCIALS GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTFIP.LS": {"short_name": "PSI FINANCIALS", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTIN.LS": {"short_name": "PSI INDUSTRIALS GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTINP.LS": {"short_name": "PSI INDUSTRIALS", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTOG.LS": {"short_name": "PSI ENERGY GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTOGP.LS": {"short_name": "PSI ENERGY", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTTEC.LS": {"short_name": "PSI TECHNOLOGY GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTTEL.LS": {"short_name": "PSI TELECOM GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTTEP.LS": {"short_name": "PSI TECHNOLOGY", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTTLP.LS": {"short_name": "PSI TELECOM", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTUT.LS": {"short_name": "PSI UTILITIES GR", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}, "PTUTP.LS": {"short_name": "PSI UTILITIES", "currency": "EUR", "market": "pt_market", "exchange": "LIS", "exchange timezone": "WET"}}
+{
+    "^BVLG": {
+        "short_name": "PSI ALL-SHARE GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "BVL.LS": {
+        "short_name": "PSI ALL-SHARE",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PSIHD.LS": {
+        "short_name": "PSI HIGH DIV NR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PSILV.LS": {
+        "short_name": "PSI 20 LEVERAGE",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PSINR.LS": {
+        "short_name": "PSI 20 NR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PSISH.LS": {
+        "short_name": "PSI 20 SHORT GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PSITL.LS": {
+        "short_name": "PSI TR LEVERAGE",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PSITR.LS": {
+        "short_name": "PSI 20 GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PSIXB.LS": {
+        "short_name": "PSI 20 XBEAR GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTBM.LS": {
+        "short_name": "PSI BASIC MATER GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTBMP.LS": {
+        "short_name": "PSI BASIC MATERIAL",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTCG.LS": {
+        "short_name": "PSI CONS DISCR GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTCGP.LS": {
+        "short_name": "PSI CONS DISCR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTCS.LS": {
+        "short_name": "PSI CONS STAPL GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTCSP.LS": {
+        "short_name": "PSI CONS STAPLES",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTEB.LS": {
+        "short_name": "PSI 20 EX BANKS",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTEBG.LS": {
+        "short_name": "PSI 20 EX BANKS GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTEBN.LS": {
+        "short_name": "PSI 20 EX BANKS NR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTFIN.LS": {
+        "short_name": "PSI FINANCIALS GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTFIP.LS": {
+        "short_name": "PSI FINANCIALS",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTIN.LS": {
+        "short_name": "PSI INDUSTRIALS GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTINP.LS": {
+        "short_name": "PSI INDUSTRIALS",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTOG.LS": {
+        "short_name": "PSI ENERGY GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTOGP.LS": {
+        "short_name": "PSI ENERGY",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTTEC.LS": {
+        "short_name": "PSI TECHNOLOGY GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTTEL.LS": {
+        "short_name": "PSI TELECOM GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTTEP.LS": {
+        "short_name": "PSI TECHNOLOGY",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTTLP.LS": {
+        "short_name": "PSI TELECOM",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTUT.LS": {
+        "short_name": "PSI UTILITIES GR",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    },
+    "PTUTP.LS": {
+        "short_name": "PSI UTILITIES",
+        "currency": "EUR",
+        "market": "pt_market",
+        "exchange": "LIS",
+        "exchange timezone": "WET"
+    }
+}

@@ -1,1 +1,32 @@
-{"DVYA": {"short_name": "iShares Asia / Pacific Dividend", "long_name": "iShares Asia/Pacific Dividend ETF", "currency": "USD", "summary": "The investment seeks to track the investment results of the Dow Jones Asia/Pacific Select Dividend 50 Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index measures the stock performance of high dividend paying companies listed in Australia, Hong Kong, Japan, New Zealand and Singapore.", "category": "Diversified Pacific/Asia", "family": "iShares", "exchange": "PCX", "market": "us_market"}, "IPAC": {"short_name": "iShares Core MSCI Pacific ETF", "long_name": "iShares Core MSCI Pacific ETF", "currency": "USD", "summary": "The investment seeks to track the investment results of the MSCI Pacific IMI (the \"underlying index\").\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is a free float-adjusted market capitalization-weighted index which consists of securities from the following five countries or regions: Australia, Hong Kong, Japan, New Zealand and Singapore.", "category": "Diversified Pacific/Asia", "family": "iShares", "exchange": "PCX", "market": "us_market"}, "VPL": {"short_name": "Vanguard FTSE Pacific ETF", "long_name": "Vanguard FTSE Pacific Index Fund ETF Shares", "currency": "USD", "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of stocks issued by companies located in the major markets of the Pacific region.\n The fund employs an indexing investment approach by investing all, or substantially all, of its assets in the common stocks included in the FTSE Developed Asia Pacific All Cap Index. The FTSE Developed Asia Pacific All Cap Index is a market-capitalization-weighted index.", "category": "Diversified Pacific/Asia", "family": "Vanguard", "exchange": "PCX", "market": "us_market"}}
+{
+    "DVYA": {
+        "short_name": "iShares Asia / Pacific Dividend",
+        "long_name": "iShares Asia/Pacific Dividend ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Dow Jones Asia/Pacific Select Dividend 50 Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index measures the stock performance of high dividend paying companies listed in Australia, Hong Kong, Japan, New Zealand and Singapore.",
+        "category": "Diversified Pacific/Asia",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IPAC": {
+        "short_name": "iShares Core MSCI Pacific ETF",
+        "long_name": "iShares Core MSCI Pacific ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI Pacific IMI (the \"underlying index\").\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is a free float-adjusted market capitalization-weighted index which consists of securities from the following five countries or regions: Australia, Hong Kong, Japan, New Zealand and Singapore.",
+        "category": "Diversified Pacific/Asia",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "VPL": {
+        "short_name": "Vanguard FTSE Pacific ETF",
+        "long_name": "Vanguard FTSE Pacific Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of stocks issued by companies located in the major markets of the Pacific region.\n The fund employs an indexing investment approach by investing all, or substantially all, of its assets in the common stocks included in the FTSE Developed Asia Pacific All Cap Index. The FTSE Developed Asia Pacific All Cap Index is a market-capitalization-weighted index.",
+        "category": "Diversified Pacific/Asia",
+        "family": "Vanguard",
+        "exchange": "PCX",
+        "market": "us_market"
+    }
+}

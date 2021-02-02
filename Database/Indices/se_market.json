@@ -1,1 +1,1388 @@
-{"^CMVINX100SEKNI": {"short_name": "CMVINX Top 100 Equal Weight ex.", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^CX451030PI": {"short_name": "OMX Copenhagen Tobacco PI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^FNDKDKKGI": {"short_name": "First North Denmark DKK GI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^FNDKEURGI": {"short_name": "First North Denmark EUR GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^FNDKEURPI": {"short_name": "First North Denmark EUR PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^FNFIEURGI": {"short_name": "First North Finland EUR GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^FNFIEURPI": {"short_name": "First North Finland EUR PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^FNISEURPI": {"short_name": "First North Iceland EUR PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^FNISISKGI": {"short_name": "First North Iceland ISK GI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^FNISISKPI": {"short_name": "First North Iceland ISK PI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^FNSEEURGI": {"short_name": "First North Sweden EUR GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^FNSEEURPI": {"short_name": "First North Sweden EUR PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^FNSESEKGI": {"short_name": "First North Sweden SEK GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^FNSESEKPI": {"short_name": "First North Sweden SEK PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^HX4520GI": {"short_name": "OMX Helsinki Personal Care, Dru", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^IX10GI": {"short_name": "OMX Iceland Technology GI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^IX35GI": {"short_name": "OMX Iceland Real Estate GI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^IX40GI": {"short_name": "OMX Iceland Consumer Discretion", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^IX40PI": {"short_name": "OMX Iceland Consumer Discretion", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^N4010EURGI": {"short_name": "N Automobiles and Parts EUR GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^N4520GI": {"short_name": "N Personal Care, Drug and Groce", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^N4520PI": {"short_name": "N Personal Care, Drug and Groce", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXIBB": {"short_name": "NASDAQ OMX Iceland Benchmark Bo", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXIBBTA": {"short_name": "NASDAQ OMX Iceland Benchmark Bo", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXINOM": {"short_name": "NASDAQ OMX Iceland Nominal Benc", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXINOMTA": {"short_name": "NASDAQ OMX Iceland Nominal Benc", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXIREAL": {"short_name": "NASDAQ OMX Iceland Inflation-li", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXIREALTA": {"short_name": "NASDAQ OMX Iceland Inflation-li", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXN120": {"short_name": "NASDAQ OMX Nordic 120", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXN120GI": {"short_name": "NASDAQ OMX Nordic 120 Gross Ind", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXN120SEK": {"short_name": "NASDAQ OMX Nordic 120 SEK", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXNBISEK": {"short_name": "NASDAQ OMX Nordic Bank & Insura", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXNCO": {"short_name": "NASDAQ OMX Nordic Consumer", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXNCOGI": {"short_name": "NASDAQ OMX Nordic Consumer Gros", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXNCRGI": {"short_name": "NASDAQ OMX Nordic Construction ", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXNENGI": {"short_name": "NASDAQ OMX Nordic Energy Gross ", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXNHC": {"short_name": "NASDAQ OMX Nordic Health Care", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXNHCSEK": {"short_name": "NASDAQ OMX Nordic Health Care S", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXNIN": {"short_name": "NASDAQ OMX Nordic Industrials", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXNTINI": {"short_name": "NASDAQ OMX Nordic Telecom & Inf", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXNTISEK": {"short_name": "NASDAQ OMX Nordic Tele & InfoTe", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXSCSEGI": {"short_name": "NASDAQ OMX Small Cap Sweden GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NOMXSCSEPI": {"short_name": "NASDAQ OMX Small Cap Sweden PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NQNDDIT": {"short_name": "Nasdaq Nordea SmartBeta Dividen", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NQNDDMT": {"short_name": "NASDAQ Nordea SmartBeta Dividen", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NQNDDVT": {"short_name": "NASDAQ Nordea SmartBeta Dividen", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NQNDMOT": {"short_name": "Nasdaq Nordea SmartBeta Momentu", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NQNDMVT": {"short_name": "NASDAQ Nordea SmartBeta Momentu", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NQNDVOT": {"short_name": "Nasdaq Nordea SmartBeta Volatil", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NQPROP": {"short_name": "Nasdaq Catella Sweden Property ", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NQPROPN": {"short_name": "Nasdaq Catella Sweden Property ", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^NQPROPT": {"short_name": "Nasdaq Catella Sweden Property ", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXALL": {"short_name": "OMRX All Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXALLXMUNI": {"short_name": "OMRX All ex Muni Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXBOND": {"short_name": "OMRX Total Bond Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXBOND13": {"short_name": "OMRX Bond All 1-3 y Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXBOND35": {"short_name": "OMRX Bond All 3-5 y Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXBOND5": {"short_name": "OMRX Bond All 5- y Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXBONDALL": {"short_name": "OMRX Bond All Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXBONDALLXMUN": {"short_name": "OMRX Bond All ex Muni Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXBONDXMUNI13": {"short_name": "OMRX Bond All ex Muni 1-3 y Ind", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXBONDXMUNI35": {"short_name": "OMRX Bond All ex Muni 3-5 y Ind", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXBONDXMUNI5": {"short_name": "OMRX Bond All ex Muni 5- y Inde", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXGOVT": {"short_name": "OMRX Government Debt Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXMM": {"short_name": "OMRX Money Market Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXMORT": {"short_name": "OMRX Mortgage Bond Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXMORT13": {"short_name": "OMRX Mortgage Bond 1-3 y Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXMORT35": {"short_name": "OMRX Mortgage Bond 3-5 y Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXMORT5": {"short_name": "OMRX Mortgage Bond 5- y Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXMORTALL": {"short_name": "OMRX Mortgage Bond All Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXMUNI": {"short_name": "OMRX Municipal Bond Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXON": {"short_name": "OMRX Deposition Overnight Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXREAL": {"short_name": "OMRX Real Return Bond Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXTBILL": {"short_name": "OMRX Treasury Bill Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXTBILL180": {"short_name": "OMRX Treasury Bill 180 day Inde", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXTBILL30": {"short_name": "OMRX Treasury Bill 30 day Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXTBILL60": {"short_name": "OMRX Treasury Bill 60 day Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXTBILL90": {"short_name": "OMRX Treasury Bill 90 day Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXTBOND": {"short_name": "OMRX Treasury Bond Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXTBOND13": {"short_name": "OMRX Treasury Bond 1-3 y Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXTBOND35": {"short_name": "OMRX Treasury Bond 3-5 y Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXTBOND5": {"short_name": "OMRX Treasury Bond 5- y Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMRXTOT": {"short_name": "OMRX Total Market Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMX": {"short_name": "OMX Stockholm 30 Index", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXAFGX": {"short_name": "OMX Affarsvarldens Generalindex", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXC20": {"short_name": "OMX Copenhagen 20", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXC20CAP": {"short_name": "OMX Copenhagen 20 CAP", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXC20EXP": {"short_name": "OMX Copenhagen 20 Expiration in", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXC25": {"short_name": "OMX Copenhagen 25 Index", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXC25DVP": {"short_name": "OMX Copenhagen 25 Dividend Poin", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXC25EXP": {"short_name": "OMX Copenhagen 25 Expiration In", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCBCAPGI": {"short_name": "OMX Copenhagen Benchmark Cap_GI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCBCAPPI": {"short_name": "OMX Copenhagen Benchmark Cap_PI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCBGI": {"short_name": "OMX Copenhagen Benchmark_GI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCBPI": {"short_name": "OMX Copenhagen Benchmark_PI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCCAPGI": {"short_name": "OMX Copenhagen Cap_GI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCCAPNI": {"short_name": "OMX Copenhagen Cap_NI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCCAPPI": {"short_name": "OMX Copenhagen Cap_PI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCGI": {"short_name": "OMX Copenhagen_GI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCLCGI": {"short_name": "OMX_Copenhagen_Large_Cap_GI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCLCPI": {"short_name": "OMX_Copenhagen_Large_Cap_PI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCMCGI": {"short_name": "OMX_Copenhagen_Mid_Cap_GI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCMCPI": {"short_name": "OMX_Copenhagen_Mid_Cap_PI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCPI": {"short_name": "OMX Copenhagen_PI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCSCGI": {"short_name": "OMX_Copenhagen_Small_Cap_GI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCSCPI": {"short_name": "OMX_Copenhagen_Small_Cap_PI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCXC20GI": {"short_name": "OMX Copenhagen Ex OMXC20 Index ", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXCXC20PI": {"short_name": "OMX Copenhagen Ex OMXC20 Index ", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXH15": {"short_name": "OMX Helsinki 15", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXH15GI": {"short_name": "OMX Helsinki 15 Gross Index", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXH25": {"short_name": "OMX Helsinki 25", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXH25EXP": {"short_name": "OMX Helsinki 25 Expiration", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHBCAPGI": {"short_name": "OMX Helsinki Benchmark CAP_GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHBCAPPI": {"short_name": "OMX Helsinki Benchmark CAP_PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHBGI": {"short_name": "OMX Helsinki Benchmark_GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHBPI": {"short_name": "OMX Helsinki Benchmark_PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHCAPGI": {"short_name": "OMX Helsinki Cap_GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHCAPPI": {"short_name": "OMX Helsinki Cap_PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHGI": {"short_name": "OMX Helsinki_GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHLCGI": {"short_name": "OMX_Helsinki_Large_Cap_GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHLCPI": {"short_name": "OMX_Helsinki_Large_Cap_PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHMCGI": {"short_name": "OMX_Helsinki_Mid_Cap_GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHMCPI": {"short_name": "OMX_Helsinki_Mid_Cap_PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHPI": {"short_name": "OMX Helsinki_PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHSCGI": {"short_name": "OMX_Helsinki_Small_Cap_GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXHSCPI": {"short_name": "OMX_Helsinki_Small_Cap_PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXI10": {"short_name": "OMX Iceland 10", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXI10CAP": {"short_name": "OMX Iceland 10 Cap", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXI10CAPEUR": {"short_name": "OMX Iceland 10 Cap EUR", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXI10CAPGI": {"short_name": "OMX Iceland 10 Cap GI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXI10EUR": {"short_name": "OMX Iceland 10 EUR", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXI10EURGI": {"short_name": "OMX Iceland 10 EUR GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXI10GI": {"short_name": "OMX Iceland 10 GI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXN40": {"short_name": "OMX Nordic 40", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNLCDKKGI": {"short_name": "OMX_Nordic_Large_Cap_DKK_GI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNLCDKKPI": {"short_name": "OMX_Nordic_Large_Cap_DKK_PI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNLCEURGI": {"short_name": "OMX_Nordic_Large_Cap_EUR_GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNLCEURPI": {"short_name": "OMX_Nordic_Large_Cap_EUR_PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNLCISKGI": {"short_name": "OMX_Nordic_Large_Cap_ISK_GI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNLCISKPI": {"short_name": "OMX_Nordic_Large_Cap_ISK_PI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNLCSEKGI": {"short_name": "OMX_Nordic_Large_Cap_SEK_GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNLCSEKPI": {"short_name": "OMX_Nordic_Large_Cap_SEK_PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNMCDKKGI": {"short_name": "OMX_Nordic_Mid_Cap_DKK_GI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNMCDKKPI": {"short_name": "OMX_Nordic_Mid_Cap_DKK_PI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNMCEURGI": {"short_name": "OMX_Nordic_Mid_Cap_EUR_GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNMCEURPI": {"short_name": "OMX_Nordic_Mid_Cap_EUR_PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNMCISKGI": {"short_name": "OMX_Nordic_Mid_Cap_ISK_GI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNMCISKPI": {"short_name": "OMX_Nordic_Mid_Cap_ISK_PI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNMCSEKGI": {"short_name": "OMX_Nordic_Mid_Cap_SEK_GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNMCSEKPI": {"short_name": "OMX_Nordic_Mid_Cap_SEK_PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNORDICDKKGI": {"short_name": "OMX_Nordic_DKK_GI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNORDICDKKPI": {"short_name": "OMX_Nordic_DKK_PI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNORDICEURGI": {"short_name": "OMX_Nordic_EUR_GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNORDICEURPI": {"short_name": "OMX_Nordic_EUR_PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNORDICISKGI": {"short_name": "OMX_Nordic_ISK_GI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNORDICISKPI": {"short_name": "OMX_Nordic_ISK_PI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNORDICSEKGI": {"short_name": "OMX_Nordic_SEK_GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNORDICSEKPI": {"short_name": "OMX_Nordic_SEK_PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNSCDKKGI": {"short_name": "OMX_Nordic_Small_Cap_DKK_GI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNSCDKKPI": {"short_name": "OMX_Nordic_Small_Cap_DKK_PI", "currency": "DKK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNSCEURGI": {"short_name": "OMX_Nordic_Small_Cap_EUR_GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNSCEURPI": {"short_name": "OMX_Nordic_Small_Cap_EUR_PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNSCISKGI": {"short_name": "OMX_Nordic_Small_Cap_ISK_GI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNSCISKPI": {"short_name": "OMX_Nordic_Small_Cap_ISK_PI", "currency": "ISK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNSCSEKGI": {"short_name": "OMX_Nordic_Small_Cap_SEK_GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXNSCSEKPI": {"short_name": "OMX_Nordic_Small_Cap_SEK_PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXO20GI": {"short_name": "OMX Oslo 20 GI", "currency": "NOK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXO20GIEXP": {"short_name": "OMX Oslo 20 GI Expiration Index", "currency": "NOK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXO20PI": {"short_name": "OMX Oslo 20 PI", "currency": "NOK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXS30ASK": {"short_name": "OMX Stockholm 30 Ask", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXS30BAL20": {"short_name": "OMXS30 Balance 20 Percent", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXS30EXP": {"short_name": "OMX Stockholm 30 Expiration Ind", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXS30GI": {"short_name": "OMX Stockholm 30_GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXS60CAPPI": {"short_name": "OMX Stockholm 60 Cap_PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSBCAPGI": {"short_name": "OMX Stockholm Benchmark Cap_GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSBCAPPI": {"short_name": "OMX Stockholm Benchmark Cap_PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSBGI": {"short_name": "OMX Stockholm Benchmark_GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSBGIEXP": {"short_name": "OMX Stockholm Benchmark_GI Exp", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSBNI": {"short_name": "OMX Stockholm Benchmark_NI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSBPI": {"short_name": "OMX Stockholm Benchmark_PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSCAPGI": {"short_name": "OMX Stockholm All-Share Cap_GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSCAPPI": {"short_name": "OMX Stockholm All-Share Cap_PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSGI": {"short_name": "OMX Stockholm_GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSLCGI": {"short_name": "OMX_Stockholm_Large_Cap_GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSLCPI": {"short_name": "OMX_Stockholm_Large_Cap_PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSMCGI": {"short_name": "OMX_Stockholm_Mid_Cap_GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSMCPI": {"short_name": "OMX_Stockholm_Mid_Cap_PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSPI": {"short_name": "OMX Stockholm_PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSSCGI": {"short_name": "OMX_Stockholm_Small_Cap_GI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSSCPI": {"short_name": "OMX_Stockholm_Small_Cap_PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSUSTAINFIGI": {"short_name": "OMX Sustainability Finland GI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSUSTAINFIPI": {"short_name": "OMX Sustainability Finland PI", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSUSTFICAPGI": {"short_name": "OMX Sustainability Finland CAP ", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^OMXSUSTFICAPPI": {"short_name": "OMX Sustainability Finland CAP ", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^SHBOMXBANK": {"short_name": "Handelsbanken OMX Bank PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^SHBOMXVERK": {"short_name": "Handelsbanken OMX Verkstad PI", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^SWGOVT115": {"short_name": "Swedish Government Bond 1-15", "currency": "SEK", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}, "^TMT": {"short_name": "ABG TMT Nordic Index", "currency": "EUR", "market": "se_market", "exchange": "STO", "exchange timezone": "CET"}}
+{
+    "^CMVINX100SEKNI": {
+        "short_name": "CMVINX Top 100 Equal Weight ex.",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^CX451030PI": {
+        "short_name": "OMX Copenhagen Tobacco PI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^FNDKDKKGI": {
+        "short_name": "First North Denmark DKK GI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^FNDKEURGI": {
+        "short_name": "First North Denmark EUR GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^FNDKEURPI": {
+        "short_name": "First North Denmark EUR PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^FNFIEURGI": {
+        "short_name": "First North Finland EUR GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^FNFIEURPI": {
+        "short_name": "First North Finland EUR PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^FNISEURPI": {
+        "short_name": "First North Iceland EUR PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^FNISISKGI": {
+        "short_name": "First North Iceland ISK GI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^FNISISKPI": {
+        "short_name": "First North Iceland ISK PI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^FNSEEURGI": {
+        "short_name": "First North Sweden EUR GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^FNSEEURPI": {
+        "short_name": "First North Sweden EUR PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^FNSESEKGI": {
+        "short_name": "First North Sweden SEK GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^FNSESEKPI": {
+        "short_name": "First North Sweden SEK PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^HX4520GI": {
+        "short_name": "OMX Helsinki Personal Care, Dru",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^IX10GI": {
+        "short_name": "OMX Iceland Technology GI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^IX35GI": {
+        "short_name": "OMX Iceland Real Estate GI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^IX40GI": {
+        "short_name": "OMX Iceland Consumer Discretion",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^IX40PI": {
+        "short_name": "OMX Iceland Consumer Discretion",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^N4010EURGI": {
+        "short_name": "N Automobiles and Parts EUR GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^N4520GI": {
+        "short_name": "N Personal Care, Drug and Groce",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^N4520PI": {
+        "short_name": "N Personal Care, Drug and Groce",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXIBB": {
+        "short_name": "NASDAQ OMX Iceland Benchmark Bo",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXIBBTA": {
+        "short_name": "NASDAQ OMX Iceland Benchmark Bo",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXINOM": {
+        "short_name": "NASDAQ OMX Iceland Nominal Benc",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXINOMTA": {
+        "short_name": "NASDAQ OMX Iceland Nominal Benc",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXIREAL": {
+        "short_name": "NASDAQ OMX Iceland Inflation-li",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXIREALTA": {
+        "short_name": "NASDAQ OMX Iceland Inflation-li",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXN120": {
+        "short_name": "NASDAQ OMX Nordic 120",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXN120GI": {
+        "short_name": "NASDAQ OMX Nordic 120 Gross Ind",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXN120SEK": {
+        "short_name": "NASDAQ OMX Nordic 120 SEK",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXNBISEK": {
+        "short_name": "NASDAQ OMX Nordic Bank & Insura",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXNCO": {
+        "short_name": "NASDAQ OMX Nordic Consumer",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXNCOGI": {
+        "short_name": "NASDAQ OMX Nordic Consumer Gros",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXNCRGI": {
+        "short_name": "NASDAQ OMX Nordic Construction ",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXNENGI": {
+        "short_name": "NASDAQ OMX Nordic Energy Gross ",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXNHC": {
+        "short_name": "NASDAQ OMX Nordic Health Care",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXNHCSEK": {
+        "short_name": "NASDAQ OMX Nordic Health Care S",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXNIN": {
+        "short_name": "NASDAQ OMX Nordic Industrials",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXNTINI": {
+        "short_name": "NASDAQ OMX Nordic Telecom & Inf",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXNTISEK": {
+        "short_name": "NASDAQ OMX Nordic Tele & InfoTe",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXSCSEGI": {
+        "short_name": "NASDAQ OMX Small Cap Sweden GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NOMXSCSEPI": {
+        "short_name": "NASDAQ OMX Small Cap Sweden PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NQNDDIT": {
+        "short_name": "Nasdaq Nordea SmartBeta Dividen",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NQNDDMT": {
+        "short_name": "NASDAQ Nordea SmartBeta Dividen",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NQNDDVT": {
+        "short_name": "NASDAQ Nordea SmartBeta Dividen",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NQNDMOT": {
+        "short_name": "Nasdaq Nordea SmartBeta Momentu",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NQNDMVT": {
+        "short_name": "NASDAQ Nordea SmartBeta Momentu",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NQNDVOT": {
+        "short_name": "Nasdaq Nordea SmartBeta Volatil",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NQPROP": {
+        "short_name": "Nasdaq Catella Sweden Property ",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NQPROPN": {
+        "short_name": "Nasdaq Catella Sweden Property ",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^NQPROPT": {
+        "short_name": "Nasdaq Catella Sweden Property ",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXALL": {
+        "short_name": "OMRX All Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXALLXMUNI": {
+        "short_name": "OMRX All ex Muni Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXBOND": {
+        "short_name": "OMRX Total Bond Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXBOND13": {
+        "short_name": "OMRX Bond All 1-3 y Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXBOND35": {
+        "short_name": "OMRX Bond All 3-5 y Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXBOND5": {
+        "short_name": "OMRX Bond All 5- y Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXBONDALL": {
+        "short_name": "OMRX Bond All Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXBONDALLXMUN": {
+        "short_name": "OMRX Bond All ex Muni Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXBONDXMUNI13": {
+        "short_name": "OMRX Bond All ex Muni 1-3 y Ind",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXBONDXMUNI35": {
+        "short_name": "OMRX Bond All ex Muni 3-5 y Ind",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXBONDXMUNI5": {
+        "short_name": "OMRX Bond All ex Muni 5- y Inde",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXGOVT": {
+        "short_name": "OMRX Government Debt Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXMM": {
+        "short_name": "OMRX Money Market Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXMORT": {
+        "short_name": "OMRX Mortgage Bond Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXMORT13": {
+        "short_name": "OMRX Mortgage Bond 1-3 y Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXMORT35": {
+        "short_name": "OMRX Mortgage Bond 3-5 y Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXMORT5": {
+        "short_name": "OMRX Mortgage Bond 5- y Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXMORTALL": {
+        "short_name": "OMRX Mortgage Bond All Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXMUNI": {
+        "short_name": "OMRX Municipal Bond Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXON": {
+        "short_name": "OMRX Deposition Overnight Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXREAL": {
+        "short_name": "OMRX Real Return Bond Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXTBILL": {
+        "short_name": "OMRX Treasury Bill Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXTBILL180": {
+        "short_name": "OMRX Treasury Bill 180 day Inde",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXTBILL30": {
+        "short_name": "OMRX Treasury Bill 30 day Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXTBILL60": {
+        "short_name": "OMRX Treasury Bill 60 day Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXTBILL90": {
+        "short_name": "OMRX Treasury Bill 90 day Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXTBOND": {
+        "short_name": "OMRX Treasury Bond Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXTBOND13": {
+        "short_name": "OMRX Treasury Bond 1-3 y Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXTBOND35": {
+        "short_name": "OMRX Treasury Bond 3-5 y Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXTBOND5": {
+        "short_name": "OMRX Treasury Bond 5- y Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMRXTOT": {
+        "short_name": "OMRX Total Market Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMX": {
+        "short_name": "OMX Stockholm 30 Index",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXAFGX": {
+        "short_name": "OMX Affarsvarldens Generalindex",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXC20": {
+        "short_name": "OMX Copenhagen 20",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXC20CAP": {
+        "short_name": "OMX Copenhagen 20 CAP",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXC20EXP": {
+        "short_name": "OMX Copenhagen 20 Expiration in",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXC25": {
+        "short_name": "OMX Copenhagen 25 Index",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXC25DVP": {
+        "short_name": "OMX Copenhagen 25 Dividend Poin",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXC25EXP": {
+        "short_name": "OMX Copenhagen 25 Expiration In",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCBCAPGI": {
+        "short_name": "OMX Copenhagen Benchmark Cap_GI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCBCAPPI": {
+        "short_name": "OMX Copenhagen Benchmark Cap_PI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCBGI": {
+        "short_name": "OMX Copenhagen Benchmark_GI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCBPI": {
+        "short_name": "OMX Copenhagen Benchmark_PI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCCAPGI": {
+        "short_name": "OMX Copenhagen Cap_GI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCCAPNI": {
+        "short_name": "OMX Copenhagen Cap_NI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCCAPPI": {
+        "short_name": "OMX Copenhagen Cap_PI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCGI": {
+        "short_name": "OMX Copenhagen_GI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCLCGI": {
+        "short_name": "OMX_Copenhagen_Large_Cap_GI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCLCPI": {
+        "short_name": "OMX_Copenhagen_Large_Cap_PI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCMCGI": {
+        "short_name": "OMX_Copenhagen_Mid_Cap_GI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCMCPI": {
+        "short_name": "OMX_Copenhagen_Mid_Cap_PI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCPI": {
+        "short_name": "OMX Copenhagen_PI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCSCGI": {
+        "short_name": "OMX_Copenhagen_Small_Cap_GI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCSCPI": {
+        "short_name": "OMX_Copenhagen_Small_Cap_PI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCXC20GI": {
+        "short_name": "OMX Copenhagen Ex OMXC20 Index ",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXCXC20PI": {
+        "short_name": "OMX Copenhagen Ex OMXC20 Index ",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXH15": {
+        "short_name": "OMX Helsinki 15",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXH15GI": {
+        "short_name": "OMX Helsinki 15 Gross Index",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXH25": {
+        "short_name": "OMX Helsinki 25",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXH25EXP": {
+        "short_name": "OMX Helsinki 25 Expiration",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHBCAPGI": {
+        "short_name": "OMX Helsinki Benchmark CAP_GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHBCAPPI": {
+        "short_name": "OMX Helsinki Benchmark CAP_PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHBGI": {
+        "short_name": "OMX Helsinki Benchmark_GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHBPI": {
+        "short_name": "OMX Helsinki Benchmark_PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHCAPGI": {
+        "short_name": "OMX Helsinki Cap_GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHCAPPI": {
+        "short_name": "OMX Helsinki Cap_PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHGI": {
+        "short_name": "OMX Helsinki_GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHLCGI": {
+        "short_name": "OMX_Helsinki_Large_Cap_GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHLCPI": {
+        "short_name": "OMX_Helsinki_Large_Cap_PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHMCGI": {
+        "short_name": "OMX_Helsinki_Mid_Cap_GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHMCPI": {
+        "short_name": "OMX_Helsinki_Mid_Cap_PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHPI": {
+        "short_name": "OMX Helsinki_PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHSCGI": {
+        "short_name": "OMX_Helsinki_Small_Cap_GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXHSCPI": {
+        "short_name": "OMX_Helsinki_Small_Cap_PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXI10": {
+        "short_name": "OMX Iceland 10",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXI10CAP": {
+        "short_name": "OMX Iceland 10 Cap",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXI10CAPEUR": {
+        "short_name": "OMX Iceland 10 Cap EUR",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXI10CAPGI": {
+        "short_name": "OMX Iceland 10 Cap GI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXI10EUR": {
+        "short_name": "OMX Iceland 10 EUR",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXI10EURGI": {
+        "short_name": "OMX Iceland 10 EUR GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXI10GI": {
+        "short_name": "OMX Iceland 10 GI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXN40": {
+        "short_name": "OMX Nordic 40",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNLCDKKGI": {
+        "short_name": "OMX_Nordic_Large_Cap_DKK_GI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNLCDKKPI": {
+        "short_name": "OMX_Nordic_Large_Cap_DKK_PI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNLCEURGI": {
+        "short_name": "OMX_Nordic_Large_Cap_EUR_GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNLCEURPI": {
+        "short_name": "OMX_Nordic_Large_Cap_EUR_PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNLCISKGI": {
+        "short_name": "OMX_Nordic_Large_Cap_ISK_GI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNLCISKPI": {
+        "short_name": "OMX_Nordic_Large_Cap_ISK_PI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNLCSEKGI": {
+        "short_name": "OMX_Nordic_Large_Cap_SEK_GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNLCSEKPI": {
+        "short_name": "OMX_Nordic_Large_Cap_SEK_PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNMCDKKGI": {
+        "short_name": "OMX_Nordic_Mid_Cap_DKK_GI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNMCDKKPI": {
+        "short_name": "OMX_Nordic_Mid_Cap_DKK_PI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNMCEURGI": {
+        "short_name": "OMX_Nordic_Mid_Cap_EUR_GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNMCEURPI": {
+        "short_name": "OMX_Nordic_Mid_Cap_EUR_PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNMCISKGI": {
+        "short_name": "OMX_Nordic_Mid_Cap_ISK_GI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNMCISKPI": {
+        "short_name": "OMX_Nordic_Mid_Cap_ISK_PI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNMCSEKGI": {
+        "short_name": "OMX_Nordic_Mid_Cap_SEK_GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNMCSEKPI": {
+        "short_name": "OMX_Nordic_Mid_Cap_SEK_PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNORDICDKKGI": {
+        "short_name": "OMX_Nordic_DKK_GI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNORDICDKKPI": {
+        "short_name": "OMX_Nordic_DKK_PI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNORDICEURGI": {
+        "short_name": "OMX_Nordic_EUR_GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNORDICEURPI": {
+        "short_name": "OMX_Nordic_EUR_PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNORDICISKGI": {
+        "short_name": "OMX_Nordic_ISK_GI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNORDICISKPI": {
+        "short_name": "OMX_Nordic_ISK_PI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNORDICSEKGI": {
+        "short_name": "OMX_Nordic_SEK_GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNORDICSEKPI": {
+        "short_name": "OMX_Nordic_SEK_PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNSCDKKGI": {
+        "short_name": "OMX_Nordic_Small_Cap_DKK_GI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNSCDKKPI": {
+        "short_name": "OMX_Nordic_Small_Cap_DKK_PI",
+        "currency": "DKK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNSCEURGI": {
+        "short_name": "OMX_Nordic_Small_Cap_EUR_GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNSCEURPI": {
+        "short_name": "OMX_Nordic_Small_Cap_EUR_PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNSCISKGI": {
+        "short_name": "OMX_Nordic_Small_Cap_ISK_GI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNSCISKPI": {
+        "short_name": "OMX_Nordic_Small_Cap_ISK_PI",
+        "currency": "ISK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNSCSEKGI": {
+        "short_name": "OMX_Nordic_Small_Cap_SEK_GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXNSCSEKPI": {
+        "short_name": "OMX_Nordic_Small_Cap_SEK_PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXO20GI": {
+        "short_name": "OMX Oslo 20 GI",
+        "currency": "NOK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXO20GIEXP": {
+        "short_name": "OMX Oslo 20 GI Expiration Index",
+        "currency": "NOK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXO20PI": {
+        "short_name": "OMX Oslo 20 PI",
+        "currency": "NOK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXS30ASK": {
+        "short_name": "OMX Stockholm 30 Ask",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXS30BAL20": {
+        "short_name": "OMXS30 Balance 20 Percent",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXS30EXP": {
+        "short_name": "OMX Stockholm 30 Expiration Ind",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXS30GI": {
+        "short_name": "OMX Stockholm 30_GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXS60CAPPI": {
+        "short_name": "OMX Stockholm 60 Cap_PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSBCAPGI": {
+        "short_name": "OMX Stockholm Benchmark Cap_GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSBCAPPI": {
+        "short_name": "OMX Stockholm Benchmark Cap_PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSBGI": {
+        "short_name": "OMX Stockholm Benchmark_GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSBGIEXP": {
+        "short_name": "OMX Stockholm Benchmark_GI Exp",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSBNI": {
+        "short_name": "OMX Stockholm Benchmark_NI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSBPI": {
+        "short_name": "OMX Stockholm Benchmark_PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSCAPGI": {
+        "short_name": "OMX Stockholm All-Share Cap_GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSCAPPI": {
+        "short_name": "OMX Stockholm All-Share Cap_PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSGI": {
+        "short_name": "OMX Stockholm_GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSLCGI": {
+        "short_name": "OMX_Stockholm_Large_Cap_GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSLCPI": {
+        "short_name": "OMX_Stockholm_Large_Cap_PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSMCGI": {
+        "short_name": "OMX_Stockholm_Mid_Cap_GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSMCPI": {
+        "short_name": "OMX_Stockholm_Mid_Cap_PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSPI": {
+        "short_name": "OMX Stockholm_PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSSCGI": {
+        "short_name": "OMX_Stockholm_Small_Cap_GI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSSCPI": {
+        "short_name": "OMX_Stockholm_Small_Cap_PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSUSTAINFIGI": {
+        "short_name": "OMX Sustainability Finland GI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSUSTAINFIPI": {
+        "short_name": "OMX Sustainability Finland PI",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSUSTFICAPGI": {
+        "short_name": "OMX Sustainability Finland CAP ",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^OMXSUSTFICAPPI": {
+        "short_name": "OMX Sustainability Finland CAP ",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^SHBOMXBANK": {
+        "short_name": "Handelsbanken OMX Bank PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^SHBOMXVERK": {
+        "short_name": "Handelsbanken OMX Verkstad PI",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^SWGOVT115": {
+        "short_name": "Swedish Government Bond 1-15",
+        "currency": "SEK",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    },
+    "^TMT": {
+        "short_name": "ABG TMT Nordic Index",
+        "currency": "EUR",
+        "market": "se_market",
+        "exchange": "STO",
+        "exchange timezone": "CET"
+    }
+}

@@ -1,1 +1,52 @@
-{"DGLDF": {"short_name": "VelocityShares 3x Inverse Gold ", "long_name": "VelocityShares 3x Inverse Gold ETN Linked to the S&P GSCI Gold Index ER", "currency": "USD", "summary": "The investment seeks to replicate, net of expenses, three times the opposite (inverse) of the S&P GSCI Gold index ER.\n The index comprises futures contracts on a single commodity. The fluctuations in the values of it are intended generally to correlate with changes in the price of gold in global markets.", "category": "Trading--Inverse Commodities", "family": "Credit Suisse AG", "exchange": "PNK", "market": "us_market"}, "DGZ": {"short_name": "DB Gold Short ETN due February ", "long_name": "DB Gold Short ETN", "currency": "USD", "summary": "The investment seeks to replicate, net of expenses, the inverse of the daily performance of the Deutsche Bank Liquid Commodity index - Optimum Yield Gold Excess Return.\n The index is intended to reflect changes in the market value of certain gold futures contracts and is comprised of a single unfunded gold futures contract.", "category": "Trading--Inverse Commodities", "family": "Deutsche Bank AG", "exchange": "PCX", "market": "us_market"}, "DSLVF": {"short_name": "VelocityShares 3x Inverse Silve", "long_name": "VelocityShares 3x Inverse Silver ETN Linked to the S&P GSCI Silver Index ER", "currency": "USD", "summary": "The investment seeks to replicate, net of expenses, three times the opposite (inverse) of the S&P GSCI Silver index ER.\n The index comprises futures contracts on a single commodity. The fluctuations in the values of it are intended generally to correlate with changes in the price of silver in global markets.", "category": "Trading--Inverse Commodities", "family": "Credit Suisse AG", "exchange": "PNK", "market": "us_market"}, "DZZ": {"short_name": "DB Gold Double Short ETN due Fe", "long_name": "DB Gold Double Short ETN", "currency": "USD", "summary": "The investment seeks to replicate, net of expenses, twice of the inverse of the daily performance of the Deutsche Bank Liquid Commodity index - Optimum Yield Gold Excess Return.\n The index is intended to reflect changes in the market value of certain gold futures contracts and is comprised of a single unfunded gold futures contract.", "category": "Trading--Inverse Commodities", "family": "Deutsche Bank AG", "exchange": "PCX", "market": "us_market"}, "SCO": {"short_name": "ProShares UltraShort Bloomberg ", "long_name": "ProShares UltraShort Bloomberg Crude Oil", "currency": "USD", "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to two times the inverse (-2x) of the daily performance of the Bloomberg Commodity Balanced WTI Crude Oil IndexSM.\n The index aims to track the performance of 3 separate contract schedules for WTI Crude Oil futures. One-third of the index follows a monthly roll schedule two months beyond the nearby contract. The second third of the index follows a June annual roll schedule, while the remaining third follows a December annual roll schedule. The index is not linked to the \u00e2\u0080\u009cspot\u00e2\u0080\u009d price of WTI crude oil.", "category": "Trading--Inverse Commodities", "family": "ProShares", "exchange": "PCX", "market": "us_market"}}
+{
+    "DGLDF": {
+        "short_name": "VelocityShares 3x Inverse Gold ",
+        "long_name": "VelocityShares 3x Inverse Gold ETN Linked to the S&P GSCI Gold Index ER",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate, net of expenses, three times the opposite (inverse) of the S&P GSCI Gold index ER.\n The index comprises futures contracts on a single commodity. The fluctuations in the values of it are intended generally to correlate with changes in the price of gold in global markets.",
+        "category": "Trading--Inverse Commodities",
+        "family": "Credit Suisse AG",
+        "exchange": "PNK",
+        "market": "us_market"
+    },
+    "DGZ": {
+        "short_name": "DB Gold Short ETN due February ",
+        "long_name": "DB Gold Short ETN",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate, net of expenses, the inverse of the daily performance of the Deutsche Bank Liquid Commodity index - Optimum Yield Gold Excess Return.\n The index is intended to reflect changes in the market value of certain gold futures contracts and is comprised of a single unfunded gold futures contract.",
+        "category": "Trading--Inverse Commodities",
+        "family": "Deutsche Bank AG",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "DSLVF": {
+        "short_name": "VelocityShares 3x Inverse Silve",
+        "long_name": "VelocityShares 3x Inverse Silver ETN Linked to the S&P GSCI Silver Index ER",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate, net of expenses, three times the opposite (inverse) of the S&P GSCI Silver index ER.\n The index comprises futures contracts on a single commodity. The fluctuations in the values of it are intended generally to correlate with changes in the price of silver in global markets.",
+        "category": "Trading--Inverse Commodities",
+        "family": "Credit Suisse AG",
+        "exchange": "PNK",
+        "market": "us_market"
+    },
+    "DZZ": {
+        "short_name": "DB Gold Double Short ETN due Fe",
+        "long_name": "DB Gold Double Short ETN",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate, net of expenses, twice of the inverse of the daily performance of the Deutsche Bank Liquid Commodity index - Optimum Yield Gold Excess Return.\n The index is intended to reflect changes in the market value of certain gold futures contracts and is comprised of a single unfunded gold futures contract.",
+        "category": "Trading--Inverse Commodities",
+        "family": "Deutsche Bank AG",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SCO": {
+        "short_name": "ProShares UltraShort Bloomberg ",
+        "long_name": "ProShares UltraShort Bloomberg Crude Oil",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to two times the inverse (-2x) of the daily performance of the Bloomberg Commodity Balanced WTI Crude Oil IndexSM.\n The index aims to track the performance of 3 separate contract schedules for WTI Crude Oil futures. One-third of the index follows a monthly roll schedule two months beyond the nearby contract. The second third of the index follows a June annual roll schedule, while the remaining third follows a December annual roll schedule. The index is not linked to the \u00e2\u0080\u009cspot\u00e2\u0080\u009d price of WTI crude oil.",
+        "category": "Trading--Inverse Commodities",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    }
+}

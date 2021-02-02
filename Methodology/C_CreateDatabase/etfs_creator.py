@@ -70,9 +70,9 @@ def make_directories_and_fill_json_etfs(data, directory_name):
     for category in tqdm(category_dictionaries.keys()):
         category_new = category.replace('/', ' ')
         with open(directory_name + '/' + category_new + '.json', 'w') as handle:
-            json.dump(category_dictionaries[category], handle)
+            json.dump(category_dictionaries[category], handle, indent=4)
     with open(directory_name + '/_' + directory_name + ".json", 'w') as handle:
-        json.dump(symbols_dictionaries, handle)
+        json.dump(symbols_dictionaries, handle, indent=4)
 
     if Errors:
         print("A couple of tickers were not able to be categorized. Please check the output of this function.")

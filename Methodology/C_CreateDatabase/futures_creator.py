@@ -44,7 +44,7 @@ def make_directories_and_fill_json_futures(data, directory_name):
 
     print('Filling folders with data..')
     with open(directory_name + '/' + "Futures.json", 'w') as handle:
-        json.dump(symbols_dictionaries, handle)
+        json.dump(symbols_dictionaries, handle, indent=4)
 
     if Errors:
         print("A couple of tickers were not able to be categorized. Please check the output of this function.")

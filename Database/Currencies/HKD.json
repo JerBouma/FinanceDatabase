@@ -1,1 +1,224 @@
-{"AEDHKD=X": {"short_name": "AED/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "AUDHKD=X": {"short_name": "AUD/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "BDTHKD=X": {"short_name": "BDT/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "BHDHKD=X": {"short_name": "BHD/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "BRLHKD=X": {"short_name": "BRL/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "CADHKD=X": {"short_name": "CAD/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "CHFHKD=X": {"short_name": "CHF/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "CNHHKD=X": {"short_name": "CNH/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "CNYHKD=X": {"short_name": "CNY/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "CZKHKD=X": {"short_name": "CZK/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "DKKHKD=X": {"short_name": "DKK/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "EURHKD=X": {"short_name": "EUR/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "FJDHKD=X": {"short_name": "FJD/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "GBPHKD=X": {"short_name": "GBP/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "HKD=X": {"short_name": "USD/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "IDRHKD=X": {"short_name": "IDR/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "ILSHKD=X": {"short_name": "ILS/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "INRHKD=X": {"short_name": "INR/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "JPYHKD=X": {"short_name": "JPY/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "KRWHKD=X": {"short_name": "KRW/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "KWDHKD=X": {"short_name": "KWD/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "LKRHKD=X": {"short_name": "LKR/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "MOPHKD=X": {"short_name": "MOP/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "MXNHKD=X": {"short_name": "MXN/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "MYRHKD=X": {"short_name": "MYR/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "NOKHKD=X": {"short_name": "NOK/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "NZDHKD=X": {"short_name": "NZD/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "OMRHKD=X": {"short_name": "OMR/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "PGKHKD=X": {"short_name": "PGK/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "PHPHKD=X": {"short_name": "PHP/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "PKRHKD=X": {"short_name": "PKR/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "SARHKD=X": {"short_name": "SAR/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "SEKHKD=X": {"short_name": "SEK/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "SGDHKD=X": {"short_name": "SGD/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "THBHKD=X": {"short_name": "THB/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "TWDHKD=X": {"short_name": "TWD/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}, "VNDHKD=X": {"short_name": "VND/HKD", "currency": "HKD", "exchange": "CCY", "market": "ccy_market"}}
+{
+    "AEDHKD=X": {
+        "short_name": "AED/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "AUDHKD=X": {
+        "short_name": "AUD/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BDTHKD=X": {
+        "short_name": "BDT/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BHDHKD=X": {
+        "short_name": "BHD/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BRLHKD=X": {
+        "short_name": "BRL/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADHKD=X": {
+        "short_name": "CAD/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFHKD=X": {
+        "short_name": "CHF/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CNHHKD=X": {
+        "short_name": "CNH/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CNYHKD=X": {
+        "short_name": "CNY/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CZKHKD=X": {
+        "short_name": "CZK/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "DKKHKD=X": {
+        "short_name": "DKK/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURHKD=X": {
+        "short_name": "EUR/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "FJDHKD=X": {
+        "short_name": "FJD/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPHKD=X": {
+        "short_name": "GBP/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "HKD=X": {
+        "short_name": "USD/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "IDRHKD=X": {
+        "short_name": "IDR/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ILSHKD=X": {
+        "short_name": "ILS/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "INRHKD=X": {
+        "short_name": "INR/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYHKD=X": {
+        "short_name": "JPY/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KRWHKD=X": {
+        "short_name": "KRW/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KWDHKD=X": {
+        "short_name": "KWD/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "LKRHKD=X": {
+        "short_name": "LKR/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MOPHKD=X": {
+        "short_name": "MOP/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MXNHKD=X": {
+        "short_name": "MXN/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MYRHKD=X": {
+        "short_name": "MYR/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NOKHKD=X": {
+        "short_name": "NOK/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NZDHKD=X": {
+        "short_name": "NZD/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "OMRHKD=X": {
+        "short_name": "OMR/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PGKHKD=X": {
+        "short_name": "PGK/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PHPHKD=X": {
+        "short_name": "PHP/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PKRHKD=X": {
+        "short_name": "PKR/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SARHKD=X": {
+        "short_name": "SAR/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SEKHKD=X": {
+        "short_name": "SEK/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SGDHKD=X": {
+        "short_name": "SGD/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "THBHKD=X": {
+        "short_name": "THB/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "TWDHKD=X": {
+        "short_name": "TWD/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "VNDHKD=X": {
+        "short_name": "VND/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
+}

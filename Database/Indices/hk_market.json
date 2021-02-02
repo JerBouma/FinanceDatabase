@@ -1,1 +1,205 @@
-{"^HSCC": {"short_name": "HANG SENG CHINA-AFFILIATED CORP", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "^HSCE": {"short_name": "HANG SENG CHINA ENTERPRISES IND", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "^HSI": {"short_name": "HANG SENG INDEX", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "^HSIL": {"short_name": "HSI VOLATILITY INDEX", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "^HSNC": {"short_name": "HANG SENG COMMERCE & INDUSTRY", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "^HSNF": {"short_name": "HANG SENG FINANCE INDEX", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "^HSNP": {"short_name": "HANG SENG PROPERTIES INDEX", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "^HSNU": {"short_name": "HANG SENG UTILITIES INDEX", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "CES120.HK": {"short_name": "CESC CHINA 120 INDEX", "currency": "CNY", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "CESA80.HK": {"short_name": "CES CHINA A80 INDEX", "currency": "CNY", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "CESG10.HK": {"short_name": "CES GAMING TOP 10 INDEX", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "CESHKM.HK": {"short_name": "CES CHINA HK MAINLAND INDEX", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "CSHK100.HK": {"short_name": "CSI HKG 100 INDEX", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "GEINX.HK": {"short_name": "S&P/HKEX GEM INDEX", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "H11123.HK": {"short_name": "CSI HK MAINLAND ENTERPRISES IND", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "HKGDRER.HK": {"short_name": "HKEX CNH Gold Futures Excess Re", "currency": "None", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "HKGDRSP.HK": {"short_name": "HKEX CNH Gold Futures Spot Pric", "currency": "None", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "HKGDRTR.HK": {"short_name": "HKEX CNH Gold Futures Total Ret", "currency": "None", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "HKGDUER.HK": {"short_name": "HKEX USD Gold Futures Excess Re", "currency": "USD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "HKGDUSP.HK": {"short_name": "HKEX USD Gold Futures Spot Pric", "currency": "USD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "HKGDUTR.HK": {"short_name": "HKEX USD Gold Futures Total Ret", "currency": "USD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "HKL.HK": {"short_name": "S&P/HKEX LARGECAP INDEX", "currency": "HKD", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "HSMBI.HK": {"short_name": "HANG SENG MAINLAND BANKS INDEX", "currency": "None", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "HSMOGI.HK": {"short_name": "HANG SENG MAINLAND OIL AND GAS ", "currency": "None", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "HSMPI.HK": {"short_name": "HANG SENG MAINLAND PROPERTIES I", "currency": "None", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "RXYH.HK": {"short_name": "TR/HKEX RXY Global CNH", "currency": "None", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "RXYRH.HK": {"short_name": "TR/HKEX RXY Reference CNH", "currency": "None", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "RXYRY.HK": {"short_name": "TR/HKEX RXY Reference CNY", "currency": "CNY", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}, "RXYY.HK": {"short_name": "TR/HKEX RXY Global CNY", "currency": "CNY", "market": "hk_market", "exchange": "HKG", "exchange timezone": "HKT"}}
+{
+    "^HSCC": {
+        "short_name": "HANG SENG CHINA-AFFILIATED CORP",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSCE": {
+        "short_name": "HANG SENG CHINA ENTERPRISES IND",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSI": {
+        "short_name": "HANG SENG INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSIL": {
+        "short_name": "HSI VOLATILITY INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSNC": {
+        "short_name": "HANG SENG COMMERCE & INDUSTRY",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSNF": {
+        "short_name": "HANG SENG FINANCE INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSNP": {
+        "short_name": "HANG SENG PROPERTIES INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSNU": {
+        "short_name": "HANG SENG UTILITIES INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "CES120.HK": {
+        "short_name": "CESC CHINA 120 INDEX",
+        "currency": "CNY",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "CESA80.HK": {
+        "short_name": "CES CHINA A80 INDEX",
+        "currency": "CNY",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "CESG10.HK": {
+        "short_name": "CES GAMING TOP 10 INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "CESHKM.HK": {
+        "short_name": "CES CHINA HK MAINLAND INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "CSHK100.HK": {
+        "short_name": "CSI HKG 100 INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "GEINX.HK": {
+        "short_name": "S&P/HKEX GEM INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "H11123.HK": {
+        "short_name": "CSI HK MAINLAND ENTERPRISES IND",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "HKGDRER.HK": {
+        "short_name": "HKEX CNH Gold Futures Excess Re",
+        "currency": "None",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "HKGDRSP.HK": {
+        "short_name": "HKEX CNH Gold Futures Spot Pric",
+        "currency": "None",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "HKGDRTR.HK": {
+        "short_name": "HKEX CNH Gold Futures Total Ret",
+        "currency": "None",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "HKGDUER.HK": {
+        "short_name": "HKEX USD Gold Futures Excess Re",
+        "currency": "USD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "HKGDUSP.HK": {
+        "short_name": "HKEX USD Gold Futures Spot Pric",
+        "currency": "USD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "HKGDUTR.HK": {
+        "short_name": "HKEX USD Gold Futures Total Ret",
+        "currency": "USD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "HKL.HK": {
+        "short_name": "S&P/HKEX LARGECAP INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "HSMBI.HK": {
+        "short_name": "HANG SENG MAINLAND BANKS INDEX",
+        "currency": "None",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "HSMOGI.HK": {
+        "short_name": "HANG SENG MAINLAND OIL AND GAS ",
+        "currency": "None",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "HSMPI.HK": {
+        "short_name": "HANG SENG MAINLAND PROPERTIES I",
+        "currency": "None",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "RXYH.HK": {
+        "short_name": "TR/HKEX RXY Global CNH",
+        "currency": "None",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "RXYRH.HK": {
+        "short_name": "TR/HKEX RXY Reference CNH",
+        "currency": "None",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "RXYRY.HK": {
+        "short_name": "TR/HKEX RXY Reference CNY",
+        "currency": "CNY",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "RXYY.HK": {
+        "short_name": "TR/HKEX RXY Global CNY",
+        "currency": "CNY",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    }
+}

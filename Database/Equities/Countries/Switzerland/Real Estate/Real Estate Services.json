@@ -1,1 +1,98 @@
-{"ALLN.SW": {"short_name": "ALLREAL N", "long_name": "Allreal Holding AG", "summary": "Allreal Holding AG operates as a real estate company in Switzerland. It operates through two divisions, Real Estate and Projects & Development. The Real Estate division invests in residential and commercial properties. This division also provides various real estate services, such as portfolio management, and real estate and building management. The Projects & Development division provides project development, real estate consultancy, and contract administration services. This division's services comprise development and realization of new buildings, and conversion or renovation of buildings for third parties or for resale; sale of residential property; and advising private individuals, companies, and institutional investors with regard to real estate transactions. Allreal Holding AG was founded in 1999 and is based in Baar, Switzerland.", "currency": "CHF", "sector": "Real Estate", "industry": "Real Estate Services", "exchange": "EBS", "market": "ch_market", "country": "Switzerland", "city": "Baar"}, "CIE.SW": {"short_name": "CI COM SA", "long_name": "Compagnie Internationale pour la Communication", "summary": "Compagnie Internationale pour la Communication engages in the fields of corporate investment, granting of loans, advancements, and related activities in Switzerland and Europe. It offers equity securities portfolios for investment. The company was founded in 1928 and is headquartered in Geneva, Switzerland.", "currency": "CHF", "sector": "Real Estate", "industry": "Real Estate Services", "exchange": "EBS", "market": "ch_market", "country": "Switzerland", "city": "Geneva"}, "EPH.SW": {"short_name": "EPH EUROPEAN PROPERTY", "long_name": "Eastern Property Holdings Limited", "summary": "Eastern Property Holdings Ltd. is an investment company listed on SIX Swiss Exchange which holds interest in office, residential and retail properties. EPH is managed by Valartis International Ltd. a wholly-owned subsidiary of Valartis Group AG.", "currency": "USD", "sector": "Real Estate", "industry": "Real Estate Services", "exchange": "EBS", "market": "ch_market", "country": "Switzerland", "city": "None"}, "IREN.SW": {"short_name": "INVESTIS N", "long_name": "Investis Holding SA", "summary": "Investis Holding SA operates as a residential property company in Switzerland. It operates through Properties and Real Estate Services segments. The company develops, sells, and rents residential properties. It also offers property management services to residential buildings, commercial buildings, or shopping centers; and facility management services, such as the maintenance of buildings, as well as outdoor services for residential, office, commercial buildings, and shopping centers. The company was founded in 1994 and is headquartered in Zurich, Switzerland.", "currency": "CHF", "sector": "Real Estate", "industry": "Real Estate Services", "exchange": "EBS", "market": "ch_market", "country": "Switzerland", "city": "Zurich"}, "PLAN.SW": {"short_name": "PLAZZA N", "long_name": "Plazza AG", "summary": "Plazza AG plans, develops, manages, and markets real estate properties and projects in Switzerland. It has a portfolio of residential, commercial, and office buildings, as well as garage/parking spaces. The company also provides property management services. Plazza AG is based in Zurich, Switzerland.", "currency": "CHF", "sector": "Real Estate", "industry": "Real Estate Services", "exchange": "EBS", "market": "ch_market", "country": "Switzerland", "city": "Zurich"}, "SPSN.SW": {"short_name": "SWISS PRIME SITE N", "long_name": "Swiss Prime Site AG", "summary": "Swiss Prime Site AG, through its subsidiaries, operates as a real estate company in Switzerland. The company operates in two segments, Real Estate and Services. The Real Estate segment purchases, sells, leases, and develops properties. The Services segment engages in the real estate service, assisted living, and retail and asset management business. Swiss Prime Site AG was founded in 1999 and is headquartered in Olten, Switzerland.", "currency": "CHF", "sector": "Real Estate", "industry": "Real Estate Services", "exchange": "EBS", "market": "ch_market", "country": "Switzerland", "city": "Olten"}, "SWPRF": {"short_name": "SWISS PRIME SITE", "long_name": "Swiss Prime Site AG", "summary": "Swiss Prime Site AG, through its subsidiaries, operates as a real estate company in Switzerland. The company operates in two segments, Real Estate and Services. The Real Estate segment purchases, sells, leases, and develops properties. The Services segment engages in the real estate service, assisted living, and retail and asset management business. Swiss Prime Site AG was founded in 1999 and is headquartered in Olten, Switzerland.", "currency": "USD", "sector": "Real Estate", "industry": "Real Estate Services", "exchange": "PNK", "market": "us_market", "country": "Switzerland", "city": "Olten"}, "WARN.SW": {"short_name": "WARTECK N", "long_name": "Warteck Invest AG", "summary": "Warteck Invest AG is involved in the rental of real estate properties such as apartments in Switzerland. Its portfolio includes 56 properties spread across 11 cantons. Warteck Invest AG is based in Basel and Switzerland.", "currency": "CHF", "sector": "Real Estate", "industry": "Real Estate Services", "exchange": "EBS", "market": "ch_market", "country": "Switzerland", "city": "Basel"}}
+{
+    "ALLN.SW": {
+        "short_name": "ALLREAL N",
+        "long_name": "Allreal Holding AG",
+        "summary": "Allreal Holding AG operates as a real estate company in Switzerland. It operates through two divisions, Real Estate and Projects & Development. The Real Estate division invests in residential and commercial properties. This division also provides various real estate services, such as portfolio management, and real estate and building management. The Projects & Development division provides project development, real estate consultancy, and contract administration services. This division's services comprise development and realization of new buildings, and conversion or renovation of buildings for third parties or for resale; sale of residential property; and advising private individuals, companies, and institutional investors with regard to real estate transactions. Allreal Holding AG was founded in 1999 and is based in Baar, Switzerland.",
+        "currency": "CHF",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "city": "Baar"
+    },
+    "CIE.SW": {
+        "short_name": "CI COM SA",
+        "long_name": "Compagnie Internationale pour la Communication",
+        "summary": "Compagnie Internationale pour la Communication engages in the fields of corporate investment, granting of loans, advancements, and related activities in Switzerland and Europe. It offers equity securities portfolios for investment. The company was founded in 1928 and is headquartered in Geneva, Switzerland.",
+        "currency": "CHF",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "city": "Geneva"
+    },
+    "EPH.SW": {
+        "short_name": "EPH EUROPEAN PROPERTY",
+        "long_name": "Eastern Property Holdings Limited",
+        "summary": "Eastern Property Holdings Ltd. is an investment company listed on SIX Swiss Exchange which holds interest in office, residential and retail properties. EPH is managed by Valartis International Ltd. a wholly-owned subsidiary of Valartis Group AG.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "city": "None"
+    },
+    "IREN.SW": {
+        "short_name": "INVESTIS N",
+        "long_name": "Investis Holding SA",
+        "summary": "Investis Holding SA operates as a residential property company in Switzerland. It operates through Properties and Real Estate Services segments. The company develops, sells, and rents residential properties. It also offers property management services to residential buildings, commercial buildings, or shopping centers; and facility management services, such as the maintenance of buildings, as well as outdoor services for residential, office, commercial buildings, and shopping centers. The company was founded in 1994 and is headquartered in Zurich, Switzerland.",
+        "currency": "CHF",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "city": "Zurich"
+    },
+    "PLAN.SW": {
+        "short_name": "PLAZZA N",
+        "long_name": "Plazza AG",
+        "summary": "Plazza AG plans, develops, manages, and markets real estate properties and projects in Switzerland. It has a portfolio of residential, commercial, and office buildings, as well as garage/parking spaces. The company also provides property management services. Plazza AG is based in Zurich, Switzerland.",
+        "currency": "CHF",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "city": "Zurich"
+    },
+    "SPSN.SW": {
+        "short_name": "SWISS PRIME SITE N",
+        "long_name": "Swiss Prime Site AG",
+        "summary": "Swiss Prime Site AG, through its subsidiaries, operates as a real estate company in Switzerland. The company operates in two segments, Real Estate and Services. The Real Estate segment purchases, sells, leases, and develops properties. The Services segment engages in the real estate service, assisted living, and retail and asset management business. Swiss Prime Site AG was founded in 1999 and is headquartered in Olten, Switzerland.",
+        "currency": "CHF",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "city": "Olten"
+    },
+    "SWPRF": {
+        "short_name": "SWISS PRIME SITE",
+        "long_name": "Swiss Prime Site AG",
+        "summary": "Swiss Prime Site AG, through its subsidiaries, operates as a real estate company in Switzerland. The company operates in two segments, Real Estate and Services. The Real Estate segment purchases, sells, leases, and develops properties. The Services segment engages in the real estate service, assisted living, and retail and asset management business. Swiss Prime Site AG was founded in 1999 and is headquartered in Olten, Switzerland.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Switzerland",
+        "city": "Olten"
+    },
+    "WARN.SW": {
+        "short_name": "WARTECK N",
+        "long_name": "Warteck Invest AG",
+        "summary": "Warteck Invest AG is involved in the rental of real estate properties such as apartments in Switzerland. Its portfolio includes 56 properties spread across 11 cantons. Warteck Invest AG is based in Basel and Switzerland.",
+        "currency": "CHF",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "city": "Basel"
+    }
+}

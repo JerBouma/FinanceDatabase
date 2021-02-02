@@ -1,1 +1,58 @@
-{"^IETP": {"short_name": "ISEQ 20", "currency": "EUR", "market": "ie_market", "exchange": "ISE", "exchange timezone": "GMT"}, "^IETR": {"short_name": "ISEQ 20 GR", "currency": "EUR", "market": "ie_market", "exchange": "ISE", "exchange timezone": "GMT"}, "^IFIN": {"short_name": "ISEQ Financial", "currency": "EUR", "market": "ie_market", "exchange": "ISE", "exchange timezone": "GMT"}, "^IFNT": {"short_name": "ISEQ Financial GR", "currency": "EUR", "market": "ie_market", "exchange": "ISE", "exchange timezone": "GMT"}, "^ISCI": {"short_name": "ISEQ Small", "currency": "EUR", "market": "ie_market", "exchange": "ISE", "exchange timezone": "GMT"}, "^ISCT": {"short_name": "ISEQ Small GR", "currency": "EUR", "market": "ie_market", "exchange": "ISE", "exchange timezone": "GMT"}, "^ISEQ": {"short_name": "ISEQ All Share", "currency": "EUR", "market": "ie_market", "exchange": "ISE", "exchange timezone": "GMT"}, "^IVRT": {"short_name": "ISEQ All Share GR", "currency": "EUR", "market": "ie_market", "exchange": "ISE", "exchange timezone": "GMT"}}
+{
+    "^IETP": {
+        "short_name": "ISEQ 20",
+        "currency": "EUR",
+        "market": "ie_market",
+        "exchange": "ISE",
+        "exchange timezone": "GMT"
+    },
+    "^IETR": {
+        "short_name": "ISEQ 20 GR",
+        "currency": "EUR",
+        "market": "ie_market",
+        "exchange": "ISE",
+        "exchange timezone": "GMT"
+    },
+    "^IFIN": {
+        "short_name": "ISEQ Financial",
+        "currency": "EUR",
+        "market": "ie_market",
+        "exchange": "ISE",
+        "exchange timezone": "GMT"
+    },
+    "^IFNT": {
+        "short_name": "ISEQ Financial GR",
+        "currency": "EUR",
+        "market": "ie_market",
+        "exchange": "ISE",
+        "exchange timezone": "GMT"
+    },
+    "^ISCI": {
+        "short_name": "ISEQ Small",
+        "currency": "EUR",
+        "market": "ie_market",
+        "exchange": "ISE",
+        "exchange timezone": "GMT"
+    },
+    "^ISCT": {
+        "short_name": "ISEQ Small GR",
+        "currency": "EUR",
+        "market": "ie_market",
+        "exchange": "ISE",
+        "exchange timezone": "GMT"
+    },
+    "^ISEQ": {
+        "short_name": "ISEQ All Share",
+        "currency": "EUR",
+        "market": "ie_market",
+        "exchange": "ISE",
+        "exchange timezone": "GMT"
+    },
+    "^IVRT": {
+        "short_name": "ISEQ All Share GR",
+        "currency": "EUR",
+        "market": "ie_market",
+        "exchange": "ISE",
+        "exchange timezone": "GMT"
+    }
+}

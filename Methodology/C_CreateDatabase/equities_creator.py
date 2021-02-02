@@ -119,25 +119,25 @@ def make_directories_and_fill_json_equities(data, directory_name):
     print('Filling folders with data..')
     for sector in tqdm(sector_industry_dictionaries.keys()):
         with open(directory_name + '/Sectors/' + sector + '/_' + sector + '.json', 'w') as handle:
-            json.dump(sector_dictionaries[sector], handle)
+            json.dump(sector_dictionaries[sector], handle, indent=4)
         for industry in sector_industry_dictionaries[sector].keys():
             industry_new = industry.replace('/', ' ')
             with open(directory_name + '/Sectors/' + sector + '/' + industry_new + '.json', 'w') as handle:
-                json.dump(sector_industry_dictionaries[sector][industry], handle)
+                json.dump(sector_industry_dictionaries[sector][industry], handle, indent=4)
 
     for country in tqdm(country_sector_industry_dictionaries.keys()):
         with open(directory_name + '/Countries/' + country + '/' + country + '.json', 'w') as handle:
-            json.dump(country_dictionaries[country], handle)
+            json.dump(country_dictionaries[country], handle, indent=4)
         for sector in country_sector_industry_dictionaries[country].keys():
             with open(directory_name + '/Countries/' + country + '/' + sector + '/_' + sector + '.json', 'w') as handle:
-                json.dump(country_sector_dictionaries[country][sector], handle)
+                json.dump(country_sector_dictionaries[country][sector], handle, indent=4)
             for industry in country_sector_industry_dictionaries[country][sector].keys():
                 industry_new = industry.replace('/', ' ')
                 with open(directory_name + '/Countries/' + country + '/' + sector +
                           '/' + industry_new + '.json', 'w') as handle:
-                    json.dump(country_sector_industry_dictionaries[country][sector][industry], handle)
+                    json.dump(country_sector_industry_dictionaries[country][sector][industry], handle, indent=4)
     with open(directory_name + '/' + directory_name + ".json", 'w') as handle:
-        json.dump(symbols_dictionaries, handle)
+        json.dump(symbols_dictionaries, handle, indent=4)
 
     if Errors:
         print("A couple of tickers were not able to be categorized. Please check the output of this function.")

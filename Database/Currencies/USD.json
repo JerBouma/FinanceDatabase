@@ -1,1 +1,788 @@
-{"AEDUSD=X": {"short_name": "AED/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "AFNUSD=X": {"short_name": "AFN/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "ALLUSD=X": {"short_name": "ALL/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "ANGUSD=X": {"short_name": "ANG/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "AOAUSD=X": {"short_name": "AOA/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "ARSUSD=X": {"short_name": "ARS/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "AUDUSD=X": {"short_name": "AUD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "AWGUSD=X": {"short_name": "AWG/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "BBDUSD=X": {"short_name": "BBD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "BDTUSD=X": {"short_name": "BDT/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "BGNUSD=X": {"short_name": "BGN/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "BHDUSD=X": {"short_name": "BHD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "BIFUSD=X": {"short_name": "BIF/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "BMDUSD=X": {"short_name": "BMD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "BNDUSD=X": {"short_name": "BND/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "BOBUSD=X": {"short_name": "BOB/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "BRLUSD=X": {"short_name": "BRL/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "BSDUSD=X": {"short_name": "BSD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "BTNUSD=X": {"short_name": "BTN/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "BWPUSD=X": {"short_name": "BWP/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "BZDUSD=X": {"short_name": "BZD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "CADUSD=X": {"short_name": "CAD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "CHFUSD=X": {"short_name": "CHF/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "CLFUSD=X": {"short_name": "CLF/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "CLPUSD=X": {"short_name": "CLP/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "CNHUSD=X": {"short_name": "CNH/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "CNYUSD=X": {"short_name": "CNY/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "COPUSD=X": {"short_name": "COP/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "CRCUSD=X": {"short_name": "CRC/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "CUCUSD=X": {"short_name": "CUC/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "CVEUSD=X": {"short_name": "CVE/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "CZKUSD=X": {"short_name": "CZK/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "DJFUSD=X": {"short_name": "DJF/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "DKKUSD=X": {"short_name": "DKK/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "DOPUSD=X": {"short_name": "DOP/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "DZDUSD=X": {"short_name": "DZD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "EGPUSD=X": {"short_name": "EGP/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "ERNUSD=X": {"short_name": "ERN/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "ETBUSD=X": {"short_name": "ETB/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "EURUSD=X": {"short_name": "EUR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "GBPUSD=X": {"short_name": "GBP/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "GHSUSD=X": {"short_name": "GHS/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "GIPUSD=X": {"short_name": "GIP/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "GMDUSD=X": {"short_name": "GMD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "GNFUSD=X": {"short_name": "GNF/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "GTQUSD=X": {"short_name": "GTQ/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "GYDUSD=X": {"short_name": "GYD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "HKDUSD=X": {"short_name": "HKD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "HNLUSD=X": {"short_name": "HNL/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "HRKUSD=X": {"short_name": "HRK/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "HTGUSD=X": {"short_name": "HTG/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "HUFUSD=X": {"short_name": "HUF/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "IDRUSD=X": {"short_name": "IDR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "ILSUSD=X": {"short_name": "ILS/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "INRUSD=X": {"short_name": "INR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "IQDUSD=X": {"short_name": "IQD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "IRRUSD=X": {"short_name": "IRR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "ISKUSD=X": {"short_name": "ISK/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "JMDUSD=X": {"short_name": "JMD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "JODUSD=X": {"short_name": "JOD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "JPYUSD=X": {"short_name": "JPY/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "KESUSD=X": {"short_name": "KES/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "KHRUSD=X": {"short_name": "KHR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "KMFUSD=X": {"short_name": "KMF/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "KRWUSD=X": {"short_name": "KRW/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "KWDUSD=X": {"short_name": "KWD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "KYDUSD=X": {"short_name": "KYD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "KZTUSD=X": {"short_name": "KZT/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "LAKUSD=X": {"short_name": "LAK/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "LBPUSD=X": {"short_name": "LBP/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "LKRUSD=X": {"short_name": "LKR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "LRDUSD=X": {"short_name": "LRD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "LSLUSD=X": {"short_name": "LSL/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "MADUSD=X": {"short_name": "MAD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "MGAUSD=X": {"short_name": "MGA/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "MMKUSD=X": {"short_name": "MMK/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "MNTUSD=X": {"short_name": "MNT/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "MOPUSD=X": {"short_name": "MOP/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "MRUUSD=X": {"short_name": "MRU/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "MURUSD=X": {"short_name": "MUR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "MWKUSD=X": {"short_name": "MWK/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "MXNUSD=X": {"short_name": "MXN/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "MYRUSD=X": {"short_name": "MYR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "MZNUSD=X": {"short_name": "MZN/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "NADUSD=X": {"short_name": "NAD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "NGNUSD=X": {"short_name": "NGN/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "NIOUSD=X": {"short_name": "NIO/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "NOKUSD=X": {"short_name": "NOK/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "NPRUSD=X": {"short_name": "NPR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "NZDUSD=X": {"short_name": "NZD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "OMRUSD=X": {"short_name": "OMR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "PABUSD=X": {"short_name": "PAB/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "PENUSD=X": {"short_name": "PEN/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "PGKUSD=X": {"short_name": "PGK/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "PHPUSD=X": {"short_name": "PHP/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "PKRUSD=X": {"short_name": "PKR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "PLNUSD=X": {"short_name": "PLN/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "PYGUSD=X": {"short_name": "PYG/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "QARUSD=X": {"short_name": "QAR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "RONUSD=X": {"short_name": "RON/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "RSDUSD=X": {"short_name": "RSD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "RUBUSD=X": {"short_name": "RUB/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "RWFUSD=X": {"short_name": "RWF/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "SARUSD=X": {"short_name": "SAR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "SBDUSD=X": {"short_name": "SBD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "SCRUSD=X": {"short_name": "SCR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "SEKUSD=X": {"short_name": "SEK/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "SGDUSD=X": {"short_name": "SGD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "SLLUSD=X": {"short_name": "SLL/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "SOSUSD=X": {"short_name": "SOS/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "STNUSD=X": {"short_name": "STN/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "SVCUSD=X": {"short_name": "SVC/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "SZLUSD=X": {"short_name": "SZL/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "THBUSD=X": {"short_name": "THB/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "TNDUSD=X": {"short_name": "TND/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "TOPUSD=X": {"short_name": "TOP/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "TRYUSD=X": {"short_name": "TRY/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "TTDUSD=X": {"short_name": "TTD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "TWDUSD=X": {"short_name": "TWD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "TZSUSD=X": {"short_name": "TZS/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "UAHUSD=X": {"short_name": "UAH/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "UGXUSD=X": {"short_name": "UGX/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "USD=X": {"short_name": "USD/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "UYUUSD=X": {"short_name": "UYU/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "VNDUSD=X": {"short_name": "VND/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "VUVUSD=X": {"short_name": "VUV/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "WSTUSD=X": {"short_name": "WST/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "XAFUSD=X": {"short_name": "XAF/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "XCUUSD=X": {"short_name": "XCU/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "XDRUSD=X": {"short_name": "XDR/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}, "XOFUSD=X": {"short_name": "XOF/USD", "currency": "USD", "exchange": "CCY", "market": "ccy_market"}}
+{
+    "AEDUSD=X": {
+        "short_name": "AED/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "AFNUSD=X": {
+        "short_name": "AFN/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ALLUSD=X": {
+        "short_name": "ALL/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ANGUSD=X": {
+        "short_name": "ANG/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "AOAUSD=X": {
+        "short_name": "AOA/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ARSUSD=X": {
+        "short_name": "ARS/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "AUDUSD=X": {
+        "short_name": "AUD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "AWGUSD=X": {
+        "short_name": "AWG/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BBDUSD=X": {
+        "short_name": "BBD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BDTUSD=X": {
+        "short_name": "BDT/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BGNUSD=X": {
+        "short_name": "BGN/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BHDUSD=X": {
+        "short_name": "BHD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BIFUSD=X": {
+        "short_name": "BIF/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BMDUSD=X": {
+        "short_name": "BMD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BNDUSD=X": {
+        "short_name": "BND/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BOBUSD=X": {
+        "short_name": "BOB/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BRLUSD=X": {
+        "short_name": "BRL/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BSDUSD=X": {
+        "short_name": "BSD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BTNUSD=X": {
+        "short_name": "BTN/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BWPUSD=X": {
+        "short_name": "BWP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BZDUSD=X": {
+        "short_name": "BZD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADUSD=X": {
+        "short_name": "CAD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFUSD=X": {
+        "short_name": "CHF/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CLFUSD=X": {
+        "short_name": "CLF/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CLPUSD=X": {
+        "short_name": "CLP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CNHUSD=X": {
+        "short_name": "CNH/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CNYUSD=X": {
+        "short_name": "CNY/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "COPUSD=X": {
+        "short_name": "COP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CRCUSD=X": {
+        "short_name": "CRC/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CUCUSD=X": {
+        "short_name": "CUC/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CVEUSD=X": {
+        "short_name": "CVE/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CZKUSD=X": {
+        "short_name": "CZK/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "DJFUSD=X": {
+        "short_name": "DJF/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "DKKUSD=X": {
+        "short_name": "DKK/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "DOPUSD=X": {
+        "short_name": "DOP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "DZDUSD=X": {
+        "short_name": "DZD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EGPUSD=X": {
+        "short_name": "EGP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ERNUSD=X": {
+        "short_name": "ERN/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ETBUSD=X": {
+        "short_name": "ETB/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURUSD=X": {
+        "short_name": "EUR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPUSD=X": {
+        "short_name": "GBP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GHSUSD=X": {
+        "short_name": "GHS/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GIPUSD=X": {
+        "short_name": "GIP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GMDUSD=X": {
+        "short_name": "GMD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GNFUSD=X": {
+        "short_name": "GNF/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GTQUSD=X": {
+        "short_name": "GTQ/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GYDUSD=X": {
+        "short_name": "GYD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "HKDUSD=X": {
+        "short_name": "HKD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "HNLUSD=X": {
+        "short_name": "HNL/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "HRKUSD=X": {
+        "short_name": "HRK/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "HTGUSD=X": {
+        "short_name": "HTG/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "HUFUSD=X": {
+        "short_name": "HUF/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "IDRUSD=X": {
+        "short_name": "IDR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ILSUSD=X": {
+        "short_name": "ILS/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "INRUSD=X": {
+        "short_name": "INR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "IQDUSD=X": {
+        "short_name": "IQD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "IRRUSD=X": {
+        "short_name": "IRR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ISKUSD=X": {
+        "short_name": "ISK/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JMDUSD=X": {
+        "short_name": "JMD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JODUSD=X": {
+        "short_name": "JOD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYUSD=X": {
+        "short_name": "JPY/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KESUSD=X": {
+        "short_name": "KES/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KHRUSD=X": {
+        "short_name": "KHR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KMFUSD=X": {
+        "short_name": "KMF/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KRWUSD=X": {
+        "short_name": "KRW/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KWDUSD=X": {
+        "short_name": "KWD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KYDUSD=X": {
+        "short_name": "KYD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KZTUSD=X": {
+        "short_name": "KZT/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "LAKUSD=X": {
+        "short_name": "LAK/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "LBPUSD=X": {
+        "short_name": "LBP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "LKRUSD=X": {
+        "short_name": "LKR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "LRDUSD=X": {
+        "short_name": "LRD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "LSLUSD=X": {
+        "short_name": "LSL/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MADUSD=X": {
+        "short_name": "MAD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MGAUSD=X": {
+        "short_name": "MGA/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MMKUSD=X": {
+        "short_name": "MMK/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MNTUSD=X": {
+        "short_name": "MNT/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MOPUSD=X": {
+        "short_name": "MOP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MRUUSD=X": {
+        "short_name": "MRU/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MURUSD=X": {
+        "short_name": "MUR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MWKUSD=X": {
+        "short_name": "MWK/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MXNUSD=X": {
+        "short_name": "MXN/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MYRUSD=X": {
+        "short_name": "MYR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MZNUSD=X": {
+        "short_name": "MZN/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NADUSD=X": {
+        "short_name": "NAD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NGNUSD=X": {
+        "short_name": "NGN/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NIOUSD=X": {
+        "short_name": "NIO/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NOKUSD=X": {
+        "short_name": "NOK/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NPRUSD=X": {
+        "short_name": "NPR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NZDUSD=X": {
+        "short_name": "NZD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "OMRUSD=X": {
+        "short_name": "OMR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PABUSD=X": {
+        "short_name": "PAB/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PENUSD=X": {
+        "short_name": "PEN/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PGKUSD=X": {
+        "short_name": "PGK/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PHPUSD=X": {
+        "short_name": "PHP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PKRUSD=X": {
+        "short_name": "PKR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PLNUSD=X": {
+        "short_name": "PLN/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PYGUSD=X": {
+        "short_name": "PYG/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "QARUSD=X": {
+        "short_name": "QAR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "RONUSD=X": {
+        "short_name": "RON/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "RSDUSD=X": {
+        "short_name": "RSD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "RUBUSD=X": {
+        "short_name": "RUB/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "RWFUSD=X": {
+        "short_name": "RWF/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SARUSD=X": {
+        "short_name": "SAR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SBDUSD=X": {
+        "short_name": "SBD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SCRUSD=X": {
+        "short_name": "SCR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SEKUSD=X": {
+        "short_name": "SEK/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SGDUSD=X": {
+        "short_name": "SGD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SLLUSD=X": {
+        "short_name": "SLL/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SOSUSD=X": {
+        "short_name": "SOS/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "STNUSD=X": {
+        "short_name": "STN/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SVCUSD=X": {
+        "short_name": "SVC/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SZLUSD=X": {
+        "short_name": "SZL/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "THBUSD=X": {
+        "short_name": "THB/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "TNDUSD=X": {
+        "short_name": "TND/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "TOPUSD=X": {
+        "short_name": "TOP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "TRYUSD=X": {
+        "short_name": "TRY/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "TTDUSD=X": {
+        "short_name": "TTD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "TWDUSD=X": {
+        "short_name": "TWD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "TZSUSD=X": {
+        "short_name": "TZS/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "UAHUSD=X": {
+        "short_name": "UAH/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "UGXUSD=X": {
+        "short_name": "UGX/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "USD=X": {
+        "short_name": "USD/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "UYUUSD=X": {
+        "short_name": "UYU/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "VNDUSD=X": {
+        "short_name": "VND/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "VUVUSD=X": {
+        "short_name": "VUV/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "WSTUSD=X": {
+        "short_name": "WST/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "XAFUSD=X": {
+        "short_name": "XAF/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "XCUUSD=X": {
+        "short_name": "XCU/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "XDRUSD=X": {
+        "short_name": "XDR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "XOFUSD=X": {
+        "short_name": "XOF/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
+}

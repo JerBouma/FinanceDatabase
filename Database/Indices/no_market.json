@@ -1,1 +1,905 @@
-{"^OSEAX": {"short_name": "Oslo Bors All-Share Index_GI", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAAX.OL": {"short_name": "EN EXPAND ALL-S GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAAXN.OL": {"short_name": "EN EXPAND ALL-S NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAAXNR.OL": {"short_name": "Oslo Axess All-share Index_NR", "currency": "None", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAAXP.OL": {"short_name": "EN EXPAND ALL-S", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAAXPR.OL": {"short_name": "Oslo Axess All-share Index_PR", "currency": "None", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAX2030GI.OL": {"short_name": "OAX2030 Transportation_GI", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAX3030GI.OL": {"short_name": "OAX3030 Household & Personal Pr", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAX30GI.OL": {"short_name": "OAX30 Consumer Staples_GI", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAX3510GI.OL": {"short_name": "OAX3510 Health Care Equipm & Se", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAX35GI.OL": {"short_name": "OAX35 Health Care_GI", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAX4020GI.OL": {"short_name": "OAX4020 Diversified Financials_", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAX40GI.OL": {"short_name": "OAX40 Financials_GI", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAX5010GI.OL": {"short_name": "OAX5010 Telecommunication Servi", "currency": "None", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAX5510GI.OL": {"short_name": "OAX5510 Utilities_GI", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OAX55GI.OL": {"short_name": "OAX55 Utilities_GI", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGBA.OL": {"short_name": "OB Govern Bnd All", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGBF1Y.OL": {"short_name": "OB Govt Bonds Fixed Maturity 1y", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGBF2Y.OL": {"short_name": "OB Govt Bonds Fixed Maturity 2y", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGBF3Y.OL": {"short_name": "OB Govt Bonds Fixed Maturity 3y", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGBF4Y.OL": {"short_name": "OB Govt Bonds Fixed Maturity 4y", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGBF5Y.OL": {"short_name": "OB Govt Bonds Fixed Maturity 5y", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGBF6Y.OL": {"short_name": "OB Govt Bonds Fixed Maturity 6y", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGBF7Y.OL": {"short_name": "OB Govt Bonds Fixed Maturity 7y", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGBO5Y.OL": {"short_name": "OB Govt Bonds > 5 year Index", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGBU5Y.OL": {"short_name": "OB Govt Bonds < 5 year Index", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGF3.OL": {"short_name": "OB Gov.Bond 3 year", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGF4.OL": {"short_name": "OB Gov Bond 4year", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGF5.OL": {"short_name": "OB Gov Bond 5 year", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGF6.OL": {"short_name": "OB Gov Bond 6 year", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGF7.OL": {"short_name": "OB Gov. Bond 7year", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGO5.OL": {"short_name": "OB GB  <5 yr Index", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBGU5.OL": {"short_name": "OB Gov. Bnd >5", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBMG.OL": {"short_name": "OBX BASIC MAT GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBMN.OL": {"short_name": "OBX BASIC MAT NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBMP.OL": {"short_name": "OBX BASIC MAT PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBOSP.OL": {"short_name": "OBOSX OIL SERV PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBOSX.OL": {"short_name": "OBOSX OIL SERV GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBSFN.OL": {"short_name": "OBSFX SEAFOOD NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBSFP.OL": {"short_name": "OBSFX SEAFOOD PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBSFX.OL": {"short_name": "OBSFX SEAFOOD GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBSFXNR.OL": {"short_name": "Oslo Bors Seafood Index_NR", "currency": "None", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBSFXPR.OL": {"short_name": "Oslo Bors Seafood Index_PR", "currency": "None", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBSHN.OL": {"short_name": "OBSHX SHIPPING NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBSHP.OL": {"short_name": "OBSHX SHIPPING PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBSHX.OL": {"short_name": "OBSHX SHIPPING GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBSHXPR.OL": {"short_name": "Oslo Bors Shipping Index_PR", "currency": "None", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBTBA.OL": {"short_name": "OB Treasury Bills", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBTBO.OL": {"short_name": "OB T-Bill >180 day", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBTBO180D.OL": {"short_name": "OB Treasury Bills > 180 days In", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBTBU.OL": {"short_name": "OB T-Bill <180 day", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBTBU180D.OL": {"short_name": "OB Treasury Bills < 180 days In", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBX.OL": {"short_name": "OBX GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBXBID.OL": {"short_name": "OBX BID Index", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBXP.OL": {"short_name": "OBX PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBXU.OL": {"short_name": "OBX UNCAPPED GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBXUP.OL": {"short_name": "OBX UNCAPPED PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OBXW.OL": {"short_name": "OBX Volume-weighted Index", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OCDG.OL": {"short_name": "OBX CONS DISC GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OCDN.OL": {"short_name": "OBX CONS DISC NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OCDP.OL": {"short_name": "OBX CONS DISC PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OCSG.OL": {"short_name": "OBX CONS STAPLE GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OCSN.OL": {"short_name": "OBX CONS STAPLE NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OCSP.OL": {"short_name": "OBX CONS STAPLE PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OENG.OL": {"short_name": "OBX ENERGY GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OENN.OL": {"short_name": "OBX ENERGY NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OENP.OL": {"short_name": "OBX ENERGY PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OFING.OL": {"short_name": "OBX FINANCIALS GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OFINN.OL": {"short_name": "OBX FINANCIALS NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OFINP.OL": {"short_name": "OBX FINANCIALS PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OHCG.OL": {"short_name": "OBX HEALTH C GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OHCN.OL": {"short_name": "OBX HEALTH C NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OHCP.OL": {"short_name": "OBX HEALTH C PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OING.OL": {"short_name": "OBX INDUSTRIALS GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OINN.OL": {"short_name": "OBX INDUSTRIALS NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OINP.OL": {"short_name": "OBX INDUSTRIALS PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OREN.OL": {"short_name": "OBX REAL ESTATE NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OREP.OL": {"short_name": "OBX REAL ESTATE PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSE101010GI.OL": {"short_name": "OSE101010 Energy Equipment & Se", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSE10GI.OL": {"short_name": "OSE10 Energy_GI", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSE50GI.OL": {"short_name": "OSE50 Communication Services_GI", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSE6010GI.OL": {"short_name": "OSE6010 Real Estate_GI", "currency": "None", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEAN.OL": {"short_name": "OSE All-SHARE NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEAP.OL": {"short_name": "OSE All-SHARE PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEAX.OL": {"short_name": "OSE All-SHARE GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEAXNR.OL": {"short_name": "Oslo Bors All-Share Index_NR", "currency": "None", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEAXPR.OL": {"short_name": "Oslo Bors All-Share Index_PR", "currency": "None", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEBG.OL": {"short_name": "OSEBXG GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEBN.OL": {"short_name": "OSEBX NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEBP.OL": {"short_name": "OSEBX PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEBS.OL": {"short_name": "OSEBX STB GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEBX.OL": {"short_name": "OSEBX GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEBXPR.OL": {"short_name": "Oslo Bors Benchmark Index_PR", "currency": "None", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEEP.OL": {"short_name": "OSLO B\u00d8RS EQ C PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEER.OL": {"short_name": "OSEEXR GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEEX.OL": {"short_name": "OSLO B\u00d8RS EQ C GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEFN.OL": {"short_name": "OSEFX MUTUAL F NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEFP.OL": {"short_name": "OSEFX MUTUAL F PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEFX.OL": {"short_name": "OSEFX MUTUAL F GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEFXPR.OL": {"short_name": "Oslo Bors Mutual Fund Index_PR", "currency": "None", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEMN.OL": {"short_name": "OSEMX MID CAP NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEMP.OL": {"short_name": "OSEMX MID CAP PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEMX.OL": {"short_name": "OSEMX MID CAP GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEMXNR.OL": {"short_name": "Oslo Bors Mid Cap Index_NR", "currency": "None", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEPB.OL": {"short_name": "OSEBX STB PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEPX.OL": {"short_name": "OSEBXG PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSESN.OL": {"short_name": "OSESX SMALL CAP NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSESP.OL": {"short_name": "OSESX SMALL CAP PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSESX.OL": {"short_name": "OSESX SMALL CAP GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSESXPR.OL": {"short_name": "Oslo Bors Small Cap Index_PR", "currency": "None", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSEXP.OL": {"short_name": "OSEEXR PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSLENX.OL": {"short_name": "OSLO Energy Index", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSLSFX.OL": {"short_name": "OSLO Seafood Index", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OSLSHX.OL": {"short_name": "OSLO Shipping Index", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OTECG.OL": {"short_name": "OBX TECHNOLOGY GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OTECN.OL": {"short_name": "OBX TECHNOLOGY NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OTECP.OL": {"short_name": "OBX TECHNOLOGY PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OTELG.OL": {"short_name": "OBX TELECOM GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OTELN.OL": {"short_name": "OBX TELECOM NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OTELP.OL": {"short_name": "OBX TELECOM PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OUTG.OL": {"short_name": "OBX UTILITIES GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OUTN.OL": {"short_name": "OBX UTILITIES NR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "OUTP.OL": {"short_name": "OBX UTILITIES PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "SSENP.OL": {"short_name": "OSLO ENERGY PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "SSENX.OL": {"short_name": "OSLO ENERGY GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "SSSFP.OL": {"short_name": "OSLO SEAFOOD PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "SSSFX.OL": {"short_name": "OSLO SEAFOOD GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "SSSHP.OL": {"short_name": "OSLO SHIPPING PR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}, "SSSHX.OL": {"short_name": "OSLO SHIPPING GR", "currency": "NOK", "market": "no_market", "exchange": "OSL", "exchange timezone": "CET"}}
+{
+    "^OSEAX": {
+        "short_name": "Oslo Bors All-Share Index_GI",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAAX.OL": {
+        "short_name": "EN EXPAND ALL-S GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAAXN.OL": {
+        "short_name": "EN EXPAND ALL-S NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAAXNR.OL": {
+        "short_name": "Oslo Axess All-share Index_NR",
+        "currency": "None",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAAXP.OL": {
+        "short_name": "EN EXPAND ALL-S",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAAXPR.OL": {
+        "short_name": "Oslo Axess All-share Index_PR",
+        "currency": "None",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAX2030GI.OL": {
+        "short_name": "OAX2030 Transportation_GI",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAX3030GI.OL": {
+        "short_name": "OAX3030 Household & Personal Pr",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAX30GI.OL": {
+        "short_name": "OAX30 Consumer Staples_GI",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAX3510GI.OL": {
+        "short_name": "OAX3510 Health Care Equipm & Se",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAX35GI.OL": {
+        "short_name": "OAX35 Health Care_GI",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAX4020GI.OL": {
+        "short_name": "OAX4020 Diversified Financials_",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAX40GI.OL": {
+        "short_name": "OAX40 Financials_GI",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAX5010GI.OL": {
+        "short_name": "OAX5010 Telecommunication Servi",
+        "currency": "None",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAX5510GI.OL": {
+        "short_name": "OAX5510 Utilities_GI",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OAX55GI.OL": {
+        "short_name": "OAX55 Utilities_GI",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGBA.OL": {
+        "short_name": "OB Govern Bnd All",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGBF1Y.OL": {
+        "short_name": "OB Govt Bonds Fixed Maturity 1y",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGBF2Y.OL": {
+        "short_name": "OB Govt Bonds Fixed Maturity 2y",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGBF3Y.OL": {
+        "short_name": "OB Govt Bonds Fixed Maturity 3y",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGBF4Y.OL": {
+        "short_name": "OB Govt Bonds Fixed Maturity 4y",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGBF5Y.OL": {
+        "short_name": "OB Govt Bonds Fixed Maturity 5y",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGBF6Y.OL": {
+        "short_name": "OB Govt Bonds Fixed Maturity 6y",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGBF7Y.OL": {
+        "short_name": "OB Govt Bonds Fixed Maturity 7y",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGBO5Y.OL": {
+        "short_name": "OB Govt Bonds > 5 year Index",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGBU5Y.OL": {
+        "short_name": "OB Govt Bonds < 5 year Index",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGF3.OL": {
+        "short_name": "OB Gov.Bond 3 year",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGF4.OL": {
+        "short_name": "OB Gov Bond 4year",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGF5.OL": {
+        "short_name": "OB Gov Bond 5 year",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGF6.OL": {
+        "short_name": "OB Gov Bond 6 year",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGF7.OL": {
+        "short_name": "OB Gov. Bond 7year",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGO5.OL": {
+        "short_name": "OB GB  <5 yr Index",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBGU5.OL": {
+        "short_name": "OB Gov. Bnd >5",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBMG.OL": {
+        "short_name": "OBX BASIC MAT GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBMN.OL": {
+        "short_name": "OBX BASIC MAT NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBMP.OL": {
+        "short_name": "OBX BASIC MAT PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBOSP.OL": {
+        "short_name": "OBOSX OIL SERV PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBOSX.OL": {
+        "short_name": "OBOSX OIL SERV GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBSFN.OL": {
+        "short_name": "OBSFX SEAFOOD NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBSFP.OL": {
+        "short_name": "OBSFX SEAFOOD PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBSFX.OL": {
+        "short_name": "OBSFX SEAFOOD GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBSFXNR.OL": {
+        "short_name": "Oslo Bors Seafood Index_NR",
+        "currency": "None",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBSFXPR.OL": {
+        "short_name": "Oslo Bors Seafood Index_PR",
+        "currency": "None",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBSHN.OL": {
+        "short_name": "OBSHX SHIPPING NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBSHP.OL": {
+        "short_name": "OBSHX SHIPPING PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBSHX.OL": {
+        "short_name": "OBSHX SHIPPING GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBSHXPR.OL": {
+        "short_name": "Oslo Bors Shipping Index_PR",
+        "currency": "None",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBTBA.OL": {
+        "short_name": "OB Treasury Bills",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBTBO.OL": {
+        "short_name": "OB T-Bill >180 day",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBTBO180D.OL": {
+        "short_name": "OB Treasury Bills > 180 days In",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBTBU.OL": {
+        "short_name": "OB T-Bill <180 day",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBTBU180D.OL": {
+        "short_name": "OB Treasury Bills < 180 days In",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBX.OL": {
+        "short_name": "OBX GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBXBID.OL": {
+        "short_name": "OBX BID Index",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBXP.OL": {
+        "short_name": "OBX PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBXU.OL": {
+        "short_name": "OBX UNCAPPED GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBXUP.OL": {
+        "short_name": "OBX UNCAPPED PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OBXW.OL": {
+        "short_name": "OBX Volume-weighted Index",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OCDG.OL": {
+        "short_name": "OBX CONS DISC GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OCDN.OL": {
+        "short_name": "OBX CONS DISC NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OCDP.OL": {
+        "short_name": "OBX CONS DISC PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OCSG.OL": {
+        "short_name": "OBX CONS STAPLE GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OCSN.OL": {
+        "short_name": "OBX CONS STAPLE NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OCSP.OL": {
+        "short_name": "OBX CONS STAPLE PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OENG.OL": {
+        "short_name": "OBX ENERGY GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OENN.OL": {
+        "short_name": "OBX ENERGY NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OENP.OL": {
+        "short_name": "OBX ENERGY PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OFING.OL": {
+        "short_name": "OBX FINANCIALS GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OFINN.OL": {
+        "short_name": "OBX FINANCIALS NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OFINP.OL": {
+        "short_name": "OBX FINANCIALS PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OHCG.OL": {
+        "short_name": "OBX HEALTH C GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OHCN.OL": {
+        "short_name": "OBX HEALTH C NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OHCP.OL": {
+        "short_name": "OBX HEALTH C PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OING.OL": {
+        "short_name": "OBX INDUSTRIALS GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OINN.OL": {
+        "short_name": "OBX INDUSTRIALS NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OINP.OL": {
+        "short_name": "OBX INDUSTRIALS PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OREN.OL": {
+        "short_name": "OBX REAL ESTATE NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OREP.OL": {
+        "short_name": "OBX REAL ESTATE PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSE101010GI.OL": {
+        "short_name": "OSE101010 Energy Equipment & Se",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSE10GI.OL": {
+        "short_name": "OSE10 Energy_GI",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSE50GI.OL": {
+        "short_name": "OSE50 Communication Services_GI",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSE6010GI.OL": {
+        "short_name": "OSE6010 Real Estate_GI",
+        "currency": "None",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEAN.OL": {
+        "short_name": "OSE All-SHARE NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEAP.OL": {
+        "short_name": "OSE All-SHARE PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEAX.OL": {
+        "short_name": "OSE All-SHARE GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEAXNR.OL": {
+        "short_name": "Oslo Bors All-Share Index_NR",
+        "currency": "None",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEAXPR.OL": {
+        "short_name": "Oslo Bors All-Share Index_PR",
+        "currency": "None",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEBG.OL": {
+        "short_name": "OSEBXG GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEBN.OL": {
+        "short_name": "OSEBX NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEBP.OL": {
+        "short_name": "OSEBX PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEBS.OL": {
+        "short_name": "OSEBX STB GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEBX.OL": {
+        "short_name": "OSEBX GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEBXPR.OL": {
+        "short_name": "Oslo Bors Benchmark Index_PR",
+        "currency": "None",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEEP.OL": {
+        "short_name": "OSLO B\u00d8RS EQ C PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEER.OL": {
+        "short_name": "OSEEXR GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEEX.OL": {
+        "short_name": "OSLO B\u00d8RS EQ C GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEFN.OL": {
+        "short_name": "OSEFX MUTUAL F NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEFP.OL": {
+        "short_name": "OSEFX MUTUAL F PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEFX.OL": {
+        "short_name": "OSEFX MUTUAL F GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEFXPR.OL": {
+        "short_name": "Oslo Bors Mutual Fund Index_PR",
+        "currency": "None",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEMN.OL": {
+        "short_name": "OSEMX MID CAP NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEMP.OL": {
+        "short_name": "OSEMX MID CAP PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEMX.OL": {
+        "short_name": "OSEMX MID CAP GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEMXNR.OL": {
+        "short_name": "Oslo Bors Mid Cap Index_NR",
+        "currency": "None",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEPB.OL": {
+        "short_name": "OSEBX STB PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEPX.OL": {
+        "short_name": "OSEBXG PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSESN.OL": {
+        "short_name": "OSESX SMALL CAP NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSESP.OL": {
+        "short_name": "OSESX SMALL CAP PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSESX.OL": {
+        "short_name": "OSESX SMALL CAP GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSESXPR.OL": {
+        "short_name": "Oslo Bors Small Cap Index_PR",
+        "currency": "None",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSEXP.OL": {
+        "short_name": "OSEEXR PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSLENX.OL": {
+        "short_name": "OSLO Energy Index",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSLSFX.OL": {
+        "short_name": "OSLO Seafood Index",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OSLSHX.OL": {
+        "short_name": "OSLO Shipping Index",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OTECG.OL": {
+        "short_name": "OBX TECHNOLOGY GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OTECN.OL": {
+        "short_name": "OBX TECHNOLOGY NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OTECP.OL": {
+        "short_name": "OBX TECHNOLOGY PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OTELG.OL": {
+        "short_name": "OBX TELECOM GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OTELN.OL": {
+        "short_name": "OBX TELECOM NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OTELP.OL": {
+        "short_name": "OBX TELECOM PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OUTG.OL": {
+        "short_name": "OBX UTILITIES GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OUTN.OL": {
+        "short_name": "OBX UTILITIES NR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "OUTP.OL": {
+        "short_name": "OBX UTILITIES PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "SSENP.OL": {
+        "short_name": "OSLO ENERGY PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "SSENX.OL": {
+        "short_name": "OSLO ENERGY GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "SSSFP.OL": {
+        "short_name": "OSLO SEAFOOD PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "SSSFX.OL": {
+        "short_name": "OSLO SEAFOOD GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "SSSHP.OL": {
+        "short_name": "OSLO SHIPPING PR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    },
+    "SSSHX.OL": {
+        "short_name": "OSLO SHIPPING GR",
+        "currency": "NOK",
+        "market": "no_market",
+        "exchange": "OSL",
+        "exchange timezone": "CET"
+    }
+}

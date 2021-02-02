@@ -1,1 +1,122 @@
-{"015020.KS": {"short_name": "e-STARCO", "long_name": "E-Starco. Co. Ltd", "summary": "E-Starco. Co. Ltd distributes and rents residential and commercial office buildings in Korea. It also operates schools. The company was formerly known as Starco Company Limited and changed its name to E-Starco. Co. Ltd in January 2006. E-Starco. Co. Ltd was founded in 1969 and is based in Seoul, South Korea.", "currency": "KRW", "sector": "Real Estate", "industry": "Real Estate\u2014Development", "exchange": "KSC", "market": "kr_market", "country": "South Korea", "city": "Seoul"}, "034830.KS": {"short_name": "KOREIT", "long_name": "KOREIT", "summary": "KOREIT, a real estate investment trust, engages in the investment, development, and management of real estate properties in South Korea. It also involves in land development trust, management trust, profit certificate trust, proxy business and agency business, real estate consulting, real estate investment trusts, and asset-backed securities businesses. The company was founded in 1996 and is based in Seoul, South Korea.", "currency": "KRW", "sector": "Real Estate", "industry": "REIT\u2014Diversified", "exchange": "KSC", "market": "kr_market", "country": "South Korea", "city": "Seoul"}, "088260.KS": {"short_name": "E KOCREF", "long_name": "E Kocref Cr-Reit", "summary": "E Kocref Cr-Reit engages in the acquisition, development, management, and leasing of real estate properties. The company has elected to be taxed as a real estate investment trust. As a result, it would not be subject to corporate income tax on that portion of its net income that is distributed to shareholders. The company was founded in 2005 and is based in Seoul, South Korea. E Kocref Cr-Reit is a subsidiary of ELAND RETAIL.Ltd.", "currency": "KRW", "sector": "Real Estate", "industry": "REIT\u2014Diversified", "exchange": "KSC", "market": "kr_market", "country": "South Korea", "city": "Seoul"}, "140910.KS": {"short_name": "A REIT", "long_name": "A Self-Administered Real Estate Investment Trust Inc.", "summary": "Kwanghee Development-oriented Self-administered REIT Inc. is based in South Korea.", "currency": "KRW", "sector": "Real Estate", "industry": "REIT\u2014Residential", "exchange": "KSC", "market": "kr_market", "country": "South Korea", "city": "Seoul"}, "145270.KS": {"short_name": "KTOPREITs", "long_name": "K-TOP Reits Co.,Ltd.", "summary": "K-TOP REITS co.Ltd. is a real estate investment trust. K-TOP REITS co.Ltd. is based in Seoul, South Korea.", "currency": "KRW", "sector": "Real Estate", "industry": "REIT\u2014Diversified", "exchange": "KSC", "market": "kr_market", "country": "South Korea", "city": "Seoul"}, "334890.KS": {"short_name": "IGIS Value REIT", "long_name": "IGIS Value Plus REIT Co., Ltd.", "summary": "Igis Value Plus Reit Co., Ltd. engages in the acquisition, development, management, and lease of real estate properties. It also trades in securities. The company was founded in 2019 and is based in Seoul, South Korea.", "currency": "KRW", "sector": "Real Estate", "industry": "REIT\u2014Office", "exchange": "KSC", "market": "kr_market", "country": "South Korea", "city": "Seoul"}, "350520.KS": {"short_name": "IGIS RESIDENCE REIT", "long_name": "IGIS RESIDENCE REIT Co., Ltd.", "summary": "IGIS Residence Reit Co., Ltd. operates as a real estate investment fund based on rented houses. The company was founded in 2020 and is based in Seoul, South Korea.", "currency": "KRW", "sector": "Real Estate", "industry": "REIT\u2014Residential", "exchange": "KSC", "market": "kr_market", "country": "South Korea", "city": "Seoul"}, "357120.KS": {"short_name": "KORAMCO EP REIT", "long_name": "Koramco Energy Plus Reit", "summary": "Koramco Energy Plus Reit operates as a real estate investment trust with 187 directly-managed gas stations in Korea. The company has elected to be taxed as a REIT under the Internal Revenue Code of 1986 and would not be subject to federal corporate income taxes, if it distributes at least 90% of its taxable income to its stockholders. Koramco Energy Plus Reit is based in Seoul, South Korea.", "currency": "KRW", "sector": "Real Estate", "industry": "REIT\u2014Diversified", "exchange": "KSC", "market": "kr_market", "country": "South Korea", "city": "Seoul"}, "357250.KS": {"short_name": "MAPS REIT 1", "long_name": "Miraeasset Maps REIT 1 Co., Ltd.", "summary": "Miraeasset Maps Reit1 Co., Ltd. operates as a retail REIT in South Korea. It primarily invests in commercial facilities in Gwanggyo Central Prugio City located in Gwanggyo New City, Gyeonggi-do. The company is based in Seoul, South Korea.", "currency": "KRW", "sector": "Real Estate", "industry": "REIT\u2014Diversified", "exchange": "KSC", "market": "kr_market", "country": "South Korea", "city": "Seoul"}, "365550.KS": {"short_name": "ESRKSREIT", "long_name": "ESR Kendall Square REIT Co., Ltd.", "summary": "ESR Kendall Square REIT Co., Ltd. operates as a logistics REIT in South Korea. It develops and operates logistics centers. The company was founded in 2020 and is Seoul, South Korea.", "currency": "KRW", "sector": "Real Estate", "industry": "REIT\u2014Industrial", "exchange": "KSC", "market": "kr_market", "country": "South Korea", "city": "Seoul"}}
+{
+    "015020.KS": {
+        "short_name": "e-STARCO",
+        "long_name": "E-Starco. Co. Ltd",
+        "summary": "E-Starco. Co. Ltd distributes and rents residential and commercial office buildings in Korea. It also operates schools. The company was formerly known as Starco Company Limited and changed its name to E-Starco. Co. Ltd in January 2006. E-Starco. Co. Ltd was founded in 1969 and is based in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Real Estate",
+        "industry": "Real Estate\u2014Development",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "034830.KS": {
+        "short_name": "KOREIT",
+        "long_name": "KOREIT",
+        "summary": "KOREIT, a real estate investment trust, engages in the investment, development, and management of real estate properties in South Korea. It also involves in land development trust, management trust, profit certificate trust, proxy business and agency business, real estate consulting, real estate investment trusts, and asset-backed securities businesses. The company was founded in 1996 and is based in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Real Estate",
+        "industry": "REIT\u2014Diversified",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "088260.KS": {
+        "short_name": "E KOCREF",
+        "long_name": "E Kocref Cr-Reit",
+        "summary": "E Kocref Cr-Reit engages in the acquisition, development, management, and leasing of real estate properties. The company has elected to be taxed as a real estate investment trust. As a result, it would not be subject to corporate income tax on that portion of its net income that is distributed to shareholders. The company was founded in 2005 and is based in Seoul, South Korea. E Kocref Cr-Reit is a subsidiary of ELAND RETAIL.Ltd.",
+        "currency": "KRW",
+        "sector": "Real Estate",
+        "industry": "REIT\u2014Diversified",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "140910.KS": {
+        "short_name": "A REIT",
+        "long_name": "A Self-Administered Real Estate Investment Trust Inc.",
+        "summary": "Kwanghee Development-oriented Self-administered REIT Inc. is based in South Korea.",
+        "currency": "KRW",
+        "sector": "Real Estate",
+        "industry": "REIT\u2014Residential",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "145270.KS": {
+        "short_name": "KTOPREITs",
+        "long_name": "K-TOP Reits Co.,Ltd.",
+        "summary": "K-TOP REITS co.Ltd. is a real estate investment trust. K-TOP REITS co.Ltd. is based in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Real Estate",
+        "industry": "REIT\u2014Diversified",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "334890.KS": {
+        "short_name": "IGIS Value REIT",
+        "long_name": "IGIS Value Plus REIT Co., Ltd.",
+        "summary": "Igis Value Plus Reit Co., Ltd. engages in the acquisition, development, management, and lease of real estate properties. It also trades in securities. The company was founded in 2019 and is based in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Real Estate",
+        "industry": "REIT\u2014Office",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "350520.KS": {
+        "short_name": "IGIS RESIDENCE REIT",
+        "long_name": "IGIS RESIDENCE REIT Co., Ltd.",
+        "summary": "IGIS Residence Reit Co., Ltd. operates as a real estate investment fund based on rented houses. The company was founded in 2020 and is based in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Real Estate",
+        "industry": "REIT\u2014Residential",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "357120.KS": {
+        "short_name": "KORAMCO EP REIT",
+        "long_name": "Koramco Energy Plus Reit",
+        "summary": "Koramco Energy Plus Reit operates as a real estate investment trust with 187 directly-managed gas stations in Korea. The company has elected to be taxed as a REIT under the Internal Revenue Code of 1986 and would not be subject to federal corporate income taxes, if it distributes at least 90% of its taxable income to its stockholders. Koramco Energy Plus Reit is based in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Real Estate",
+        "industry": "REIT\u2014Diversified",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "357250.KS": {
+        "short_name": "MAPS REIT 1",
+        "long_name": "Miraeasset Maps REIT 1 Co., Ltd.",
+        "summary": "Miraeasset Maps Reit1 Co., Ltd. operates as a retail REIT in South Korea. It primarily invests in commercial facilities in Gwanggyo Central Prugio City located in Gwanggyo New City, Gyeonggi-do. The company is based in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Real Estate",
+        "industry": "REIT\u2014Diversified",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "365550.KS": {
+        "short_name": "ESRKSREIT",
+        "long_name": "ESR Kendall Square REIT Co., Ltd.",
+        "summary": "ESR Kendall Square REIT Co., Ltd. operates as a logistics REIT in South Korea. It develops and operates logistics centers. The company was founded in 2020 and is Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Real Estate",
+        "industry": "REIT\u2014Industrial",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    }
+}

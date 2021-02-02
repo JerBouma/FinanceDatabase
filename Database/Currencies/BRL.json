@@ -1,1 +1,146 @@
-{"ARSBRL=X": {"short_name": "ARS/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "AUDBRL=X": {"short_name": "AUD/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "BOBBRL=X": {"short_name": "BOB/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "BRL=X": {"short_name": "USD/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "CADBRL=X": {"short_name": "CAD/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "CHFBRL=X": {"short_name": "CHF/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "CLPBRL=X": {"short_name": "CLP/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "CNYBRL=X": {"short_name": "CNY/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "COPBRL=X": {"short_name": "COP/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "DKKBRL=X": {"short_name": "DKK/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "EURBRL=X": {"short_name": "EUR/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "GBPBRL=X": {"short_name": "GBP/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "HKDBRL=X": {"short_name": "HKD/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "IDRBRL=X": {"short_name": "IDR/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "ILSBRL=X": {"short_name": "ILS/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "INRBRL=X": {"short_name": "INR/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "JPYBRL=X": {"short_name": "JPY/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "MXNBRL=X": {"short_name": "MXN/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "MYRBRL=X": {"short_name": "MYR/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "NOKBRL=X": {"short_name": "NOK/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "NZDBRL=X": {"short_name": "NZD/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "RUBBRL=X": {"short_name": "RUB/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "SEKBRL=X": {"short_name": "SEK/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}, "SGDBRL=X": {"short_name": "SGD/BRL", "currency": "BRL", "exchange": "CCY", "market": "ccy_market"}}
+{
+    "ARSBRL=X": {
+        "short_name": "ARS/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "AUDBRL=X": {
+        "short_name": "AUD/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BOBBRL=X": {
+        "short_name": "BOB/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BRL=X": {
+        "short_name": "USD/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADBRL=X": {
+        "short_name": "CAD/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFBRL=X": {
+        "short_name": "CHF/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CLPBRL=X": {
+        "short_name": "CLP/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CNYBRL=X": {
+        "short_name": "CNY/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "COPBRL=X": {
+        "short_name": "COP/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "DKKBRL=X": {
+        "short_name": "DKK/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURBRL=X": {
+        "short_name": "EUR/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPBRL=X": {
+        "short_name": "GBP/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "HKDBRL=X": {
+        "short_name": "HKD/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "IDRBRL=X": {
+        "short_name": "IDR/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ILSBRL=X": {
+        "short_name": "ILS/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "INRBRL=X": {
+        "short_name": "INR/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYBRL=X": {
+        "short_name": "JPY/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MXNBRL=X": {
+        "short_name": "MXN/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MYRBRL=X": {
+        "short_name": "MYR/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NOKBRL=X": {
+        "short_name": "NOK/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NZDBRL=X": {
+        "short_name": "NZD/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "RUBBRL=X": {
+        "short_name": "RUB/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SEKBRL=X": {
+        "short_name": "SEK/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SGDBRL=X": {
+        "short_name": "SGD/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
+}

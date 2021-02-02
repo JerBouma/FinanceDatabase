@@ -1,1 +1,212 @@
-{"AEDZAR=X": {"short_name": "AED/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "ANGZAR=X": {"short_name": "ANG/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "AUDZAR=X": {"short_name": "AUD/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "BRLZAR=X": {"short_name": "BRL/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "BWPZAR=X": {"short_name": "BWP/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "CADZAR=X": {"short_name": "CAD/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "CHFZAR=X": {"short_name": "CHF/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "CNYZAR=X": {"short_name": "CNY/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "DKKZAR=X": {"short_name": "DKK/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "EGPZAR=X": {"short_name": "EGP/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "EURZAR=X": {"short_name": "EUR/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "GBPZAR=X": {"short_name": "GBP/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "GHSZAR=X": {"short_name": "GHS/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "HKDZAR=X": {"short_name": "HKD/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "IDRZAR=X": {"short_name": "IDR/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "INRZAR=X": {"short_name": "INR/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "JPYZAR=X": {"short_name": "JPY/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "KESZAR=X": {"short_name": "KES/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "KRWZAR=X": {"short_name": "KRW/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "LKRZAR=X": {"short_name": "LKR/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "MXNZAR=X": {"short_name": "MXN/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "MYRZAR=X": {"short_name": "MYR/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "NADZAR=X": {"short_name": "NAD/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "NOKZAR=X": {"short_name": "NOK/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "NZDZAR=X": {"short_name": "NZD/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "PKRZAR=X": {"short_name": "PKR/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "PLNZAR=X": {"short_name": "PLN/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "RUBZAR=X": {"short_name": "RUB/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "SEKZAR=X": {"short_name": "SEK/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "SGDZAR=X": {"short_name": "SGD/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "THBZAR=X": {"short_name": "THB/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "TRYZAR=X": {"short_name": "TRY/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "TWDZAR=X": {"short_name": "TWD/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "UGXZAR=X": {"short_name": "UGX/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}, "ZAR=X": {"short_name": "USD/ZAR", "currency": "ZAR", "exchange": "CCY", "market": "ccy_market"}}
+{
+    "AEDZAR=X": {
+        "short_name": "AED/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ANGZAR=X": {
+        "short_name": "ANG/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "AUDZAR=X": {
+        "short_name": "AUD/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BRLZAR=X": {
+        "short_name": "BRL/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BWPZAR=X": {
+        "short_name": "BWP/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADZAR=X": {
+        "short_name": "CAD/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFZAR=X": {
+        "short_name": "CHF/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CNYZAR=X": {
+        "short_name": "CNY/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "DKKZAR=X": {
+        "short_name": "DKK/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EGPZAR=X": {
+        "short_name": "EGP/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURZAR=X": {
+        "short_name": "EUR/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPZAR=X": {
+        "short_name": "GBP/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GHSZAR=X": {
+        "short_name": "GHS/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "HKDZAR=X": {
+        "short_name": "HKD/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "IDRZAR=X": {
+        "short_name": "IDR/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "INRZAR=X": {
+        "short_name": "INR/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYZAR=X": {
+        "short_name": "JPY/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KESZAR=X": {
+        "short_name": "KES/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KRWZAR=X": {
+        "short_name": "KRW/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "LKRZAR=X": {
+        "short_name": "LKR/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MXNZAR=X": {
+        "short_name": "MXN/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MYRZAR=X": {
+        "short_name": "MYR/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NADZAR=X": {
+        "short_name": "NAD/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NOKZAR=X": {
+        "short_name": "NOK/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NZDZAR=X": {
+        "short_name": "NZD/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PKRZAR=X": {
+        "short_name": "PKR/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PLNZAR=X": {
+        "short_name": "PLN/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "RUBZAR=X": {
+        "short_name": "RUB/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SEKZAR=X": {
+        "short_name": "SEK/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SGDZAR=X": {
+        "short_name": "SGD/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "THBZAR=X": {
+        "short_name": "THB/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "TRYZAR=X": {
+        "short_name": "TRY/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "TWDZAR=X": {
+        "short_name": "TWD/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "UGXZAR=X": {
+        "short_name": "UGX/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZAR=X": {
+        "short_name": "USD/ZAR",
+        "currency": "ZAR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
+}

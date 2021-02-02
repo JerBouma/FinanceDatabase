@@ -1,1 +1,62 @@
-{"BRF": {"short_name": "VanEck Vectors Brazil Small-Cap", "long_name": "VanEck Vectors Brazil Small-Cap ETF", "currency": "USD", "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the MVIS\u00c2\u00ae Brazil Small-Cap Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index includes securities of Brazilian small-capitalization companies. A company is generally considered to be a Brazilian company if it is incorporated in Brazil or is incorporated outside of Brazil but has at least 50% of its revenues/related assets in Brazil.", "category": "Latin America Stock", "family": "VanEck", "exchange": "PCX", "market": "us_market"}, "EWZ": {"short_name": "iShares Inc iShares MSCI Brazil", "long_name": "iShares MSCI Brazil ETF", "currency": "USD", "summary": "The investment seeks to track the investment results of the MSCI Brazil 25/50 Index.\n The fund generally invests at least 95% of its assets in the securities of its underlying index and in depositary receipts representing securities in its underlying index. The index is a free float-adjusted market capitalization-weighted index with a capping methodology applied to issuer weights so that no single issuer exceeds 25% of the underlying index weight, and all issuers with a weight above 5% do not cumulatively exceed 50% of the underlying index weight. The fund is non-diversified.", "category": "Latin America Stock", "family": "iShares", "exchange": "PCX", "market": "us_market"}, "EWZS": {"short_name": "iShares MSCI Brazil Small-Cap E", "long_name": "iShares MSCI Brazil Small-Cap ETF", "currency": "USD", "summary": "The investment seeks to track the investment results of the MSCI Brazil Small Cap Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is a free float-adjusted market capitalization-weighted index designed to measure primarily the performance of equity securities of small capitalization companies listed on stock exchanges in Brazil.", "category": "Latin America Stock", "family": "iShares", "exchange": "NMS", "market": "us_market"}, "FBZ": {"short_name": "First Trust Brazil AlphaDEX Fun", "long_name": "First Trust Brazil AlphaDEX Fund", "currency": "USD", "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the NASDAQ AlphaDEX\u00c2\u00ae Brazil Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the commonstocks, depositary receipts, real estate investment trusts (\"REITs\") and preferred shares that comprise the index. The index is designed to select stocks from the NASDAQ Brazil Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.", "category": "Latin America Stock", "family": "First Trust", "exchange": "NMS", "market": "us_market"}, "FLN": {"short_name": "First Trust Latin America Alpha", "long_name": "First Trust Latin America AlphaDEX Fund", "currency": "USD", "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the NASDAQ AlphaDEX\u00c2\u00ae Latin America Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks, depositary receipts, real estate investment trusts (\"REITs\") and preferred shares that comprise the index. The index is designed to select stocks from the NASDAQ Latin America Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.", "category": "Latin America Stock", "family": "First Trust", "exchange": "NMS", "market": "us_market"}, "ILF": {"short_name": "iShares Latin America 40 ETF", "long_name": "iShares Latin America 40 ETF", "currency": "USD", "summary": "The investment seeks to track the investment results of the S&P Latin America 40TM composed of 40 of the largest Latin American equities.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. It seeks to track the investment results of the S&P Latin America 40TM (the \"underlying index\"), which is comprised of selected equities trading on the exchanges of five Latin American countries. The fund is non-diversified.", "category": "Latin America Stock", "family": "iShares", "exchange": "PCX", "market": "us_market"}}
+{
+    "BRF": {
+        "short_name": "VanEck Vectors Brazil Small-Cap",
+        "long_name": "VanEck Vectors Brazil Small-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the MVIS\u00c2\u00ae Brazil Small-Cap Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index includes securities of Brazilian small-capitalization companies. A company is generally considered to be a Brazilian company if it is incorporated in Brazil or is incorporated outside of Brazil but has at least 50% of its revenues/related assets in Brazil.",
+        "category": "Latin America Stock",
+        "family": "VanEck",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "EWZ": {
+        "short_name": "iShares Inc iShares MSCI Brazil",
+        "long_name": "iShares MSCI Brazil ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI Brazil 25/50 Index.\n The fund generally invests at least 95% of its assets in the securities of its underlying index and in depositary receipts representing securities in its underlying index. The index is a free float-adjusted market capitalization-weighted index with a capping methodology applied to issuer weights so that no single issuer exceeds 25% of the underlying index weight, and all issuers with a weight above 5% do not cumulatively exceed 50% of the underlying index weight. The fund is non-diversified.",
+        "category": "Latin America Stock",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "EWZS": {
+        "short_name": "iShares MSCI Brazil Small-Cap E",
+        "long_name": "iShares MSCI Brazil Small-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI Brazil Small Cap Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is a free float-adjusted market capitalization-weighted index designed to measure primarily the performance of equity securities of small capitalization companies listed on stock exchanges in Brazil.",
+        "category": "Latin America Stock",
+        "family": "iShares",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "FBZ": {
+        "short_name": "First Trust Brazil AlphaDEX Fun",
+        "long_name": "First Trust Brazil AlphaDEX Fund",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the NASDAQ AlphaDEX\u00c2\u00ae Brazil Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the commonstocks, depositary receipts, real estate investment trusts (\"REITs\") and preferred shares that comprise the index. The index is designed to select stocks from the NASDAQ Brazil Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
+        "category": "Latin America Stock",
+        "family": "First Trust",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "FLN": {
+        "short_name": "First Trust Latin America Alpha",
+        "long_name": "First Trust Latin America AlphaDEX Fund",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the NASDAQ AlphaDEX\u00c2\u00ae Latin America Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks, depositary receipts, real estate investment trusts (\"REITs\") and preferred shares that comprise the index. The index is designed to select stocks from the NASDAQ Latin America Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
+        "category": "Latin America Stock",
+        "family": "First Trust",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "ILF": {
+        "short_name": "iShares Latin America 40 ETF",
+        "long_name": "iShares Latin America 40 ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the S&P Latin America 40TM composed of 40 of the largest Latin American equities.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. It seeks to track the investment results of the S&P Latin America 40TM (the \"underlying index\"), which is comprised of selected equities trading on the exchanges of five Latin American countries. The fund is non-diversified.",
+        "category": "Latin America Stock",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    }
+}

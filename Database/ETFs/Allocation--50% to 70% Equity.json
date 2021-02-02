@@ -1,1 +1,62 @@
-{"AOR": {"short_name": "iShares Core Growth Allocation ", "long_name": "iShares Core Growth Allocation ETF", "currency": "USD", "summary": "The investment seeks to track the investment results of the S&P Target Risk Growth Index composed of a portfolio of underlying equity and fixed income funds intended to represent a growth allocation target risk strategy.\n The fund is a fund of funds and seeks its investment objective by investing primarily in underlying funds that themselves seek investment results corresponding to their own respective underlying indexes. It generally will invest at least 90% of its assets in the component securities of the underlying index. The index measures the performance of the S&P Dow Jones Indices LLC proprietary allocation model.", "category": "Allocation--50% to 70% Equity", "family": "iShares", "exchange": "PCX", "market": "us_market"}, "FLYT": {"short_name": "Direxion Flight to Safety Strat", "long_name": "Direxion Shares ETF Trust - Direxion Flight to Safety Strategy ETF", "currency": "USD", "summary": "The investment seeks to provide total returns that exceed the total return of the Solactive Flight to Safety Index over a complete market cycle.\n The fund, under normal circumstances, will generally seek to maintain a portfolio of instruments similar to those included in the index and may also utilize investments in other investment companies or exchange-traded products, or swap contracts to obtain exposure to certain securities or commodities included in the index. It is non-diversified.", "category": "Allocation--50% to 70% Equity", "family": "Direxion Funds", "exchange": "PCX", "market": "us_market"}, "GAL": {"short_name": "SPDR SSgA Global Allocation ETF", "long_name": "SPDR SSgA Global Allocation ETF", "currency": "USD", "summary": "The investment seeks to provide capital appreciation.\n The Adviser primarily invests the assets of the fund among exchange traded products (\"ETPs\") that provide balanced exposure to domestic and international debt and equity securities. The fund typically allocates approximately 60% of its assets to equity securities, though this percentage can vary based on the Adviser&#39;s tactical decisions.", "category": "Allocation--50% to 70% Equity", "family": "SPDR State Street Global Advisors", "exchange": "PCX", "market": "us_market"}, "QPT": {"short_name": "AdvisorShares Q Portfolio Blend", "long_name": "AdvisorShares Q Portfolio Blended Allocation ETF", "currency": "USD", "summary": "The investment seeks to maximize total return over the long-term.\n The fund invests in ETFs representing all asset classes, including, but not limited to, treasury bonds, municipal bonds, investment grade corporate bonds, high-yield U.S. corporate bonds (sometimes referred to as \"junk bonds\"), municipal bonds, U.S. and foreign equities, and commodities. These underlying investments may be of any market capitalization, duration, maturity, and quality.", "category": "Allocation--50% to 70% Equity", "family": "AdvisorShares", "exchange": "PCX", "market": "us_market"}, "QQH": {"short_name": "HCM Defender 100 Index ETF", "long_name": "HCM Defender 100 Index ETF", "currency": "USD", "summary": "The investment seeks to provide investment results that correspond, before fees and expenses, generally to the performance of the HCM Defender 100 Index.\n The fund seeks to achieve its investment objective by investing at least 80% of its net assets, including borrowings for investment purposes but exclusive of collateral held from securities lending, in securities included in the index. The index seeks to outperform the Solactive US Technology 100 Index, a proprietary methodology.", "category": "Allocation--50% to 70% Equity", "family": "Howard Capital Management", "exchange": "PCX", "market": "us_market"}, "RISN": {"short_name": "Inspire Tactical Balanced ESG E", "long_name": "Inspire Tactical Balanced ESG ETF", "currency": "USD", "summary": "The investment seeks to provide capital appreciation with lower volatility than the U.S. large cap stock market over the long term.\n The fund, an actively managed ETF, uses a proprietary system of technical analysis to tactically allocate assets into U.S. large cap stocks when the strategy identifies an uptrend in the U.S. large cap stock market, and shifts into U.S. Treasury bonds via third-party ETFs, investment grade and high-yield corporate bonds, government agency bonds, and listed gold exchange-traded products and exchange-traded notes such as SPDR Gold Shares (GLD) when the strategy identifies a downtrend in the U.S. large cap stock market.", "category": "Allocation--50% to 70% Equity", "family": "Inspire", "exchange": "PCX", "market": "us_market"}}
+{
+    "AOR": {
+        "short_name": "iShares Core Growth Allocation ",
+        "long_name": "iShares Core Growth Allocation ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the S&P Target Risk Growth Index composed of a portfolio of underlying equity and fixed income funds intended to represent a growth allocation target risk strategy.\n The fund is a fund of funds and seeks its investment objective by investing primarily in underlying funds that themselves seek investment results corresponding to their own respective underlying indexes. It generally will invest at least 90% of its assets in the component securities of the underlying index. The index measures the performance of the S&P Dow Jones Indices LLC proprietary allocation model.",
+        "category": "Allocation--50% to 70% Equity",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "FLYT": {
+        "short_name": "Direxion Flight to Safety Strat",
+        "long_name": "Direxion Shares ETF Trust - Direxion Flight to Safety Strategy ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide total returns that exceed the total return of the Solactive Flight to Safety Index over a complete market cycle.\n The fund, under normal circumstances, will generally seek to maintain a portfolio of instruments similar to those included in the index and may also utilize investments in other investment companies or exchange-traded products, or swap contracts to obtain exposure to certain securities or commodities included in the index. It is non-diversified.",
+        "category": "Allocation--50% to 70% Equity",
+        "family": "Direxion Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "GAL": {
+        "short_name": "SPDR SSgA Global Allocation ETF",
+        "long_name": "SPDR SSgA Global Allocation ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide capital appreciation.\n The Adviser primarily invests the assets of the fund among exchange traded products (\"ETPs\") that provide balanced exposure to domestic and international debt and equity securities. The fund typically allocates approximately 60% of its assets to equity securities, though this percentage can vary based on the Adviser&#39;s tactical decisions.",
+        "category": "Allocation--50% to 70% Equity",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "QPT": {
+        "short_name": "AdvisorShares Q Portfolio Blend",
+        "long_name": "AdvisorShares Q Portfolio Blended Allocation ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to maximize total return over the long-term.\n The fund invests in ETFs representing all asset classes, including, but not limited to, treasury bonds, municipal bonds, investment grade corporate bonds, high-yield U.S. corporate bonds (sometimes referred to as \"junk bonds\"), municipal bonds, U.S. and foreign equities, and commodities. These underlying investments may be of any market capitalization, duration, maturity, and quality.",
+        "category": "Allocation--50% to 70% Equity",
+        "family": "AdvisorShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "QQH": {
+        "short_name": "HCM Defender 100 Index ETF",
+        "long_name": "HCM Defender 100 Index ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond, before fees and expenses, generally to the performance of the HCM Defender 100 Index.\n The fund seeks to achieve its investment objective by investing at least 80% of its net assets, including borrowings for investment purposes but exclusive of collateral held from securities lending, in securities included in the index. The index seeks to outperform the Solactive US Technology 100 Index, a proprietary methodology.",
+        "category": "Allocation--50% to 70% Equity",
+        "family": "Howard Capital Management",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "RISN": {
+        "short_name": "Inspire Tactical Balanced ESG E",
+        "long_name": "Inspire Tactical Balanced ESG ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide capital appreciation with lower volatility than the U.S. large cap stock market over the long term.\n The fund, an actively managed ETF, uses a proprietary system of technical analysis to tactically allocate assets into U.S. large cap stocks when the strategy identifies an uptrend in the U.S. large cap stock market, and shifts into U.S. Treasury bonds via third-party ETFs, investment grade and high-yield corporate bonds, government agency bonds, and listed gold exchange-traded products and exchange-traded notes such as SPDR Gold Shares (GLD) when the strategy identifies a downtrend in the U.S. large cap stock market.",
+        "category": "Allocation--50% to 70% Equity",
+        "family": "Inspire",
+        "exchange": "PCX",
+        "market": "us_market"
+    }
+}
