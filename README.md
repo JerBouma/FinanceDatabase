@@ -37,25 +37,119 @@ Some key statistics of the database:
 \** This is an estimation. Obtaining the country distribution can only be done by collecting data on the underlying 
 or by manual search.
 
+## Usage
+To access the database you can download the entire repository but I strongly recommend making use of the package 
+closely attached to the database. It allows you to select specific json files as well as search through collected
+data with a specific query.
+
+You can install the package with the following steps:
+1. `pip install FinanceDatabase`
+    - Alternatively, download the 'Searcher' directory.
+2. (within Python) `import FinanceDatabase as fd`
+
+The package has the following functions:
+- `show_options(product)` - gives all available options from the below functions per product (i.e. Equities, Funds)
+which then can be used to collect the data.
+- `select_cryptocurrencies(cryptocurrency=None)` - with no input gives all cryptocurrencies, with input gives 
+the cryptocurrency of choice.
+- `select_currencies(currency=None)` - with no input gives all currencies, with input gives 
+the currency of choice.
+- `select_etfs(category=None)` - with no input gives all etfs, with input gives all etfs of a 
+specific category.
+- `select_equities(country=None, sector=None, industry=None)` - with no input gives all equities, with input 
+gives all equities of a country, sector, industry or a combination of the three.
+- `select_funds(category=None)` - with no input gives all funds, with input gives all funds of a 
+specific category.
+- `def select_indices(market=None)` - with no input gives all indices, with input gives all funds of a 
+specific market which usually refers to indices in a specific country (like de_market gives DAX).
+- `select_other(product)` - gives either all Futures, all Moneymarkets or all Options.
+- `search_products(database, query, new_database=None)` - with input from the above functions, this function searching
+for specific values in the summary of the product (i.e. the query 'sustainable')
+
 ## Examples
-For example, if I wish to obtain all companies within the Semiconductor industry, I can load in the .json file in
-Python with the following lines of code:
+This section gives a few examples of the possibilities with this package. These are merely a few of the things you
+can do with the package and it only uses yfinance. **As you can obtain a wide range of symbols, pretty much any package 
+that requires symbols should work.**
 
+### United States' Airlines
+If I wish to obtain all companies within the United States listed under 'Airlines' I can write the 
+following code:
 ````
-import json
+import FinanceDatabase as fd
 
-with open('semiconductors.json') as json_file:
-    semiconductors = json.load(json_file)
+airlines_us = fd.select_equities(country='United States', sector='Industrials', industry='Airlines')
 ````
 Then, I can use packages like [yfinance](https://github.com/ranaroussi/yfinance) to quickly collect data from 
 Yahoo Finance for each symbol in the industry like this:
 ````
 from yfinance.utils import get_json
+from yfinance import download
 
-semiconductors_data = {}
-for symbol in semiconductors.keys():
-    semiconductors_data[symbol] = get_json("https://finance.yahoo.com/quote/" + symbol)
+airlines_us_fundamentals = {}
+for symbol in airlines_us:
+    airlines_us_fundamentals[symbol] = get_json("https://finance.yahoo.com/quote/" + symbol)
+
+airlines_us_stock_data = download(list(airlines_us))
 ```` 
-With a few lines of code, I have collected all data from one specific industry. From here on you can compare pretty
-much any key statistic, fundamental data and stock data. Please see the documentation from yfinance for the available
-options and further examples.
+With a few lines of code, I have collected all data from a specific industry within the United States. From here on 
+you can compare pretty much any key statistic, fundamental data and stock data. For example, let's plot a simple bar 
+chart that gives insights in the Quick Ratios (indicator of the overall financial strength or weakness of a company):
+````
+import matplotlib.pyplot as plt
+
+for symbol in airlines_us_fundamentals:
+    quick_ratio = airlines_us_fundamentals[symbol]['financialData']['quickRatio']
+    long_name = airlines_us_fundamentals[symbol]['quoteType']['longName']
+
+    if quick_ratio is None:
+        continue
+
+    plt.barh(long_name, quick_ratio)
+
+plt.tight_layout()
+plt.show()
+``````
+Which results in the graph displayed below (as of the 3rd of February 2021). From this graph you could identify 
+companies that currently lack enough assets to cover their liabilities (quick ratio < 1) and those that do have enough
+assets (quick ratio > 1). Both too low and too high could make you wonder whether the company adequately manages 
+its assets.
+
+![FinanceDatabase](Examples/United_States_Airlines_QuickRatio.png)
+
+### Semiconductors ETFs
+If I wish to obtain all ETFs that have something to do with 'semiconductors' I can use the search function which works
+as follows:
+````
+import FinanceDatabase as fd
+
+all_etfs = fd.select_etfs()
+semiconductor_etfs = search_products(all_etfs, 'semiconductor')
+````
+The variable semiconductor_etfs returns all etfs that have the word 'semiconductor' in their summary which usually also 
+corresponds to the fact they are targeted around semiconductors. Next, I collect data:
+````
+semiconductor_etfs_fundamentals = {}
+for symbol in semiconductor_etfs:
+    semiconductor_etfs_fundamentals[symbol] = get_json("https://finance.yahoo.com/quote/" + symbol)
+````
+And lastly, I have a look at the YTD returns (as of the 3rd of February 2021) of each ETF to understand which ones 
+might be worthwile to invest in:
+````
+for symbol in semiconductor_etfs_fundamentals:
+    ytd_return = semiconductor_etfs_fundamentals[symbol]['fundPerformance']['trailingReturns']['ytd']
+    long_name = semiconductor_etfs_fundamentals[symbol]['quoteType']['longName']
+
+    if ytd_return is None:
+        continue
+
+    plt.barh(long_name, ytd_return)
+
+plt.tight_layout()
+plt.xticks([-1, -0.5, 0, 0.5, 1], ['-100%', '-50%', '0%', '50%', '100%'])
+plt.show()
+````
+This results in the following graph which gives _some_ insights in the available semiconductor ETFs. Then with the large amount of fundamentals data you can 
+figure out how each ETF differs and what might be worthwile to invest in.
+
+![FinanceDatabase](Examples/Semiconductors_ETFs_Returns.png)
+
