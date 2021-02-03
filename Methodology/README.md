@@ -23,5 +23,6 @@ used to find those symbols that match a specific criteria (i.e. all companies in
 with packages like [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) or 
 [yfinance](https://github.com/ranaroussi/yfinance) it becomes easy to collect the fundamentals data.
 
-By following these steps you should be able to reproduce the exact structure I have here. But why bother if I already
-went through the whole process of collection and organizing! :wink:
+By following these steps you should be able to reproduce the exact structure I have here. I highly appreciate it when
+you make updates to the database by following above steps. This way we can keep the database as up to date and complete 
+as possible.
