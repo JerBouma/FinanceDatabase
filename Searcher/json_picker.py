@@ -96,18 +96,18 @@ def select_equities(country=None, sector=None, industry=None):
         except json.decoder.JSONDecodeError:
             raise ValueError("Not able to find any data with the combination of, "
                              "Sector ({}), Industry ({}).".format(sector, industry))
+    elif industry or (country and industry):
+        raise ValueError("Only selecting industry or country and industry results in no data.")
     elif country:
         country = country.replace(' ', '%20')
 
         try:
-            json_file = URL + 'Countries/' + country + ".json"
+            json_file = URL + 'Countries/' + country + '/' + country + ".json"
             request = requests.get(json_file)
             json_data = json.loads(request.text)
         except json.decoder.JSONDecodeError:
             raise ValueError("Not able to find any data with the combination of "
-                             "Country ({}).".format(country))
-    elif industry or (country and industry):
-        raise ValueError("Only selecting industry or country and industry results in no data.")
+                             f"Country ({country}).")
     else:
         try:
             json_file = URL + "Equities.json"
@@ -130,7 +130,7 @@ def select_funds(category=None):
             request = requests.get(json_file)
             json_data = json.loads(request.text)
         except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data for {}".format(category))
+            raise ValueError(f"Not able to find any data for {category}.")
     else:
         try:
             json_file = URL + "_Funds.json"
@@ -152,7 +152,7 @@ def select_indices(market=None):
             request = requests.get(json_file)
             json_data = json.loads(request.text)
         except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data for {}".format(market))
+            raise ValueError(f"Not able to find any data for {market}.")
     else:
         try:
             json_file = URL + "_Indices.json"
@@ -169,13 +169,13 @@ def select_other(product):
            "Database/Other/")
 
     if product not in ['Futures', 'Moneymarkets', 'Options']:
-        raise ValueError("{} is not available. Only 'Futures', 'Moneymarkets' and 'Options'.")
+        raise ValueError(f"{product} is not available. Only 'Futures', 'Moneymarkets' and 'Options'.")
 
     try:
         json_file = URL + product + ".json"
         request = requests.get(json_file)
         json_data = json.loads(request.text)
     except json.decoder.JSONDecodeError:
-        raise ValueError("Not able to find any data with type {}.".format(product))
+        raise ValueError(f"Not able to find any data with type {product}.")
 
     return json_data
