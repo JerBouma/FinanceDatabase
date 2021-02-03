@@ -16,6 +16,8 @@ country, industry and sector and gives the most essential information about each
 can analyse specific areas of the financial world and/or find that product that is hard to find. See for examples
 on how you can combine this database and the earlier mentioned packages the section [Examples](#Examples).
 
+![Finance Database](Examples/FinanceDatabase.png)
+
 Some key statistics of the database:
 
 | Product           | Quantity  | Sectors   | Industries    | Countries | Exchanges |
@@ -123,7 +125,7 @@ as follows:
 import FinanceDatabase as fd
 
 all_etfs = fd.select_etfs()
-semiconductor_etfs = search_products(all_etfs, 'semiconductor')
+semiconductor_etfs = fd.search_products(all_etfs, 'semiconductor')
 ````
 The variable semiconductor_etfs returns all etfs that have the word 'semiconductor' in their summary which usually also 
 corresponds to the fact they are targeted around semiconductors. Next, I collect data:
@@ -153,3 +155,9 @@ figure out how each ETF differs and what might be worthwile to invest in.
 
 ![FinanceDatabase](Examples/Semiconductors_ETFs_Returns.png)
 
+## Contribution
+Projects are bound to have (small) errors and can always be improved. Therefore, I highly encourage you to submit 
+issues and create pull requests to improve the package.
+
+The last update to the database is the 3rd of February 2021. I do always accept Pull Requests every few months 
+to keep the database up to date. Extending the amount of tickers and data is also much appreciated.
