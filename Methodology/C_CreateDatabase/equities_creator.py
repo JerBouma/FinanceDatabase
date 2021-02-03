@@ -9,43 +9,43 @@ def fill_data_points_equities(data_symbol, options=None):
     try:
         options['short_name'] = data_symbol['quoteType']['shortName']
     except (TypeError, KeyError):
-        options['short_name'] = 'None'
+        options['short_name'] = None
     try:
         options['long_name'] = data_symbol['quoteType']['longName']
     except (TypeError, KeyError):
-        options['long_name'] = 'None'
+        options['long_name'] = None
     try:
         options['summary'] = data_symbol['summaryProfile']['longBusinessSummary']
     except (TypeError, KeyError):
-        options['summary'] = 'None'
+        options['summary'] = None
     try:
         options['currency'] = data_symbol['price']['currency']
     except (TypeError, KeyError):
-        options['currency'] = 'None'
+        options['currency'] = None
     try:
         options['sector'] = data_symbol['summaryProfile']['sector']
     except (TypeError, KeyError):
-        options['sector'] = 'None'
+        options['sector'] = None
     try:
         options['industry'] = data_symbol['summaryProfile']['industry']
     except (TypeError, KeyError):
-        options['industry'] = 'None'
+        options['industry'] = None
     try:
         options['exchange'] = data_symbol['quoteType']['exchange']
     except (TypeError, KeyError):
-        options['exchange'] = 'None'
+        options['exchange'] = None
     try:
         options['market'] = data_symbol['quoteType']['market']
     except (TypeError, KeyError):
-        options['market'] = 'None'
+        options['market'] = None
     try:
         options['country'] = data_symbol['summaryProfile']['country']
     except (TypeError, KeyError):
-        options['country'] = 'None'
+        options['country'] = None
     try:
         options['city'] = data_symbol['summaryProfile']['city']
     except (TypeError, KeyError):
-        options['city'] = 'None'
+        options['city'] = None
     return options
 
 
@@ -75,14 +75,11 @@ def make_directories_and_fill_json_equities(data, directory_name):
             sector = data[symbol]['summaryProfile']['sector']
             industry = data[symbol]['summaryProfile']['industry']
 
-            if sector is None:
-                sector = 'Unknown Sector'
-            if sector not in sector_directories and len(sector) > 0:
-                os.mkdir(directory_name + '/Sectors/' + sector)
-                sector_dictionaries[sector] = {}
-                sector_industry_dictionaries[sector] = {}
-            if industry is None:
-                industry = 'Unknown Industry'
+            if sector not in sector_directories and sector is not None:
+                if len(sector) > 0:
+                    os.mkdir(directory_name + '/Sectors/' + sector)
+                    sector_dictionaries[sector] = {}
+                    sector_industry_dictionaries[sector] = {}
             if industry not in sector_industry_dictionaries[sector]:
                 sector_industry_dictionaries[sector][industry] = {}
 
@@ -97,15 +94,17 @@ def make_directories_and_fill_json_equities(data, directory_name):
             country_directories = os.listdir(directory_name + '/Countries')
             country = data[symbol]['summaryProfile']['country']
 
-            if country not in country_directories and len(country) > 0:
-                os.mkdir(directory_name + '/Countries/' + country)
-                country_dictionaries[country] = {}
-                country_sector_dictionaries[country] = {}
-                country_sector_industry_dictionaries[country] = {}
-            if sector not in country_sector_industry_dictionaries[country] and len(sector) > 0:
-                os.mkdir(directory_name + '/Countries/' + country + '/' + sector)
-                country_sector_dictionaries[country][sector] = {}
-                country_sector_industry_dictionaries[country][sector] = {}
+            if country not in country_directories and country is not None:
+                if len(country) > 0:
+                    os.mkdir(directory_name + '/Countries/' + country)
+                    country_dictionaries[country] = {}
+                    country_sector_dictionaries[country] = {}
+                    country_sector_industry_dictionaries[country] = {}
+            if sector not in country_sector_industry_dictionaries[country] and sector is not None:
+                if len(sector) > 0:
+                    os.mkdir(directory_name + '/Countries/' + country + '/' + sector)
+                    country_sector_dictionaries[country][sector] = {}
+                    country_sector_industry_dictionaries[country][sector] = {}
             if industry not in country_sector_industry_dictionaries[country][sector]:
                 country_sector_industry_dictionaries[country][sector][industry] = {}
 

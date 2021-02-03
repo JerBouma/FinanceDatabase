@@ -9,43 +9,43 @@ def fill_data_points_funds(data_symbol, options=None):
     try:
         options['short_name'] = data_symbol['quoteType']['shortName']
     except (TypeError, KeyError):
-        options['short_name'] = 'None'
+        options['short_name'] = None
     try:
         options['long_name'] = data_symbol['quoteType']['longName']
     except (TypeError, KeyError):
-        options['long_name'] = 'None'
+        options['long_name'] = None
     try:
         options['currency'] = data_symbol['price']['currency']
     except (TypeError, KeyError):
-        options['currency'] = 'None'
+        options['currency'] = None
     try:
         options['summary'] = data_symbol['assetProfile']['longBusinessSummary']
     except (TypeError, KeyError):
-        options['summary'] = 'None'
+        options['summary'] = None
     try:
         options['manager_name'] = data_symbol['fundProfile']['managementInfo']['managerName']
     except (TypeError, KeyError):
-        options['manager_name'] = 'None'
+        options['manager_name'] = None
     try:
         options['manager_bio'] = data_symbol['fundProfile']['managementInfo']['managerBio']
     except (TypeError, KeyError):
-        options['manager_bio'] = 'None'
+        options['manager_bio'] = None
     try:
         options['category'] = data_symbol['fundProfile']['categoryName']
     except (TypeError, KeyError):
-        options['category'] = 'None'
+        options['category'] = None
     try:
         options['family'] = data_symbol['fundProfile']['family']
     except (TypeError, KeyError):
-        options['family'] = 'None'
+        options['family'] = None
     try:
         options['exchange'] = data_symbol['quoteType']['exchange']
     except (TypeError, KeyError):
-        options['exchange'] = 'None'
+        options['exchange'] = None
     try:
         options['market'] = data_symbol['quoteType']['market']
     except (TypeError, KeyError):
-        options['market'] = 'None'
+        options['market'] = None
     return options
 
 
@@ -67,8 +67,9 @@ def make_directories_and_fill_json_funds(data, directory_name):
         try:
             category = data[symbol]['fundProfile']['categoryName']
 
-            if category not in category_dictionaries and len(category) > 0:
-                category_dictionaries[category] = {}
+            if category not in category_dictionaries and category is not None:
+                if len(category) > 0:
+                    category_dictionaries[category] = {}
 
             category_dictionaries[category][symbol] = options
         except (TypeError, KeyError) as e:

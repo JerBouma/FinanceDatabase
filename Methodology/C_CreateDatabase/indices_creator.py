@@ -9,23 +9,23 @@ def fill_data_points_indices(data_symbol, options=None):
     try:
         options['short_name'] = data_symbol['quoteType']['shortName']
     except (TypeError, KeyError):
-        options['short_name'] = 'None'
+        options['short_name'] = None
     try:
         options['currency'] = data_symbol['price']['currency']
     except (TypeError, KeyError):
-        options['currency'] = 'None'
+        options['currency'] = None
     try:
         options['market'] = data_symbol['quoteType']['market']
     except (TypeError, KeyError):
-        options['market'] = 'None'
+        options['market'] = None
     try:
         options['exchange'] = data_symbol['quoteType']['exchange']
     except (TypeError, KeyError):
-        options['exchange'] = 'None'
+        options['exchange'] = None
     try:
         options['exchange timezone'] = data_symbol['quoteType']['exchangeTimezoneShortName']
     except (TypeError, KeyError):
-        options['exchange timezone'] = 'None'
+        options['exchange timezone'] = None
     return options
 
 
@@ -47,8 +47,9 @@ def make_directories_and_fill_json_indices(data, directory_name):
         try:
             market = data[symbol]['quoteType']['market']
 
-            if market not in market_dictionaries and len(market) > 0:
-                market_dictionaries[market] = {}
+            if market not in market_dictionaries and market is not None:
+                if len(market) > 0:
+                    market_dictionaries[market] = {}
 
             market_dictionaries[market][symbol] = options
         except (TypeError, KeyError) as e:

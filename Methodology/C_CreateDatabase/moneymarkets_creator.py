@@ -9,23 +9,23 @@ def fill_data_points_moneymarkets(data_symbol, options=None):
     try:
         options['short_name'] = data_symbol['quoteType']['shortName']
     except (TypeError, KeyError):
-        options['short_name'] = 'None'
+        options['short_name'] = None
     try:
         options['long_name'] = data_symbol['quoteType']['longName']
     except (TypeError, KeyError):
-        options['long_name'] = 'None'
+        options['long_name'] = None
     try:
         options['currency'] = data_symbol['price']['currency']
     except (TypeError, KeyError):
-        options['currency'] = 'None'
+        options['currency'] = None
     try:
         options['market'] = data_symbol['quoteType']['market']
     except (TypeError, KeyError):
-        options['market'] = 'None'
+        options['market'] = None
     try:
         options['exchange'] = data_symbol['quoteType']['exchange']
     except (TypeError, KeyError):
-        options['exchange'] = 'None'
+        options['exchange'] = None
     return options
 
 
