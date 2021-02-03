@@ -1,25 +1,10 @@
-import json
+import FinanceDatabase as fd
 from yfinance.utils import get_json
 import matplotlib.pyplot as plt
 
-all_etfs = json.load(open(r"C:\Users\jerbo\Google Drive\Programming\Python\FinanceDatabase\Database\ETFs\_ETFs.json", "rb"))
+all_etfs = fd.select_etfs()
 
-
-def search_products(database, query, new_database=None):
-    if new_database is None:
-        new_database = {}
-
-    for symbol in database:
-        try:
-            if query in database[symbol]['summary']:
-                new_database[symbol] = database[symbol]
-        except (TypeError, KeyError):
-            continue
-
-    return new_database
-
-
-semiconductor_etfs = search_products(all_etfs, 'semiconductor')
+semiconductor_etfs = fd.search_products(all_etfs, 'semiconductor')
 
 # Remove some unwanted ETFs
 del semiconductor_etfs['DXSH.DE']

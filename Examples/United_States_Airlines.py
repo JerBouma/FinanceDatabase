@@ -1,9 +1,9 @@
-import json
+import FinanceDatabase as fd
 from yfinance.utils import get_json
 from yfinance import download
 import matplotlib.pyplot as plt
 
-airlines_us = json.load(open(r"C:\Users\jerbo\Google Drive\Programming\Python\FinanceDatabase\Database\Equities\Countries\United States\Industrials\Airlines.json", "rb"))
+airlines_us = fd.select_equities(country='United States', sector='Industrials', industry='Airlines')
 
 airlines_us_fundamentals = {}
 for symbol in airlines_us:
