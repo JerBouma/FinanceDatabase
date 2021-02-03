@@ -36,7 +36,7 @@
     },
     "BBOV.SA": {
         "short_name": "BB ETF IBOV",
-        "currency": "None",
+        "currency": null,
         "market": "br_market",
         "exchange": "SAO",
         "exchange timezone": "BRT"
@@ -63,8 +63,8 @@
         "exchange timezone": "BRT"
     },
     "BOVB.SA": {
-        "short_name": "None",
-        "currency": "None",
+        "short_name": null,
+        "currency": null,
         "market": "br_market",
         "exchange": "SAO",
         "exchange timezone": "BRT"
@@ -99,7 +99,7 @@
     },
     "ESGB.SA": {
         "short_name": null,
-        "currency": "None",
+        "currency": null,
         "market": "br_market",
         "exchange": "SAO",
         "exchange timezone": "BRT"
@@ -218,7 +218,7 @@
     },
     "SMAC.SA": {
         "short_name": "IT NOW SMALL",
-        "currency": "None",
+        "currency": null,
         "market": "br_market",
         "exchange": "SAO",
         "exchange timezone": "BRT"
@@ -232,7 +232,7 @@
     },
     "TFIX.SA": {
         "short_name": "INDICE TESTE",
-        "currency": "None",
+        "currency": null,
         "market": "br_market",
         "exchange": "SAO",
         "exchange timezone": "BRT"
@@ -246,7 +246,7 @@
     },
     "XFIX.SA": {
         "short_name": "TREND IFIX",
-        "currency": "None",
+        "currency": null,
         "market": "br_market",
         "exchange": "SAO",
         "exchange timezone": "BRT"

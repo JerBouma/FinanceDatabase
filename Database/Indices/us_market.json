@@ -4257,7 +4257,7 @@
     },
     "^BKBRICT": {
         "short_name": "S&P/BNY Mellon BRIC Select ADR ",
-        "currency": "None",
+        "currency": null,
         "market": "us_market",
         "exchange": "SNP",
         "exchange timezone": "EST"
@@ -4369,7 +4369,7 @@
     },
     "^BKCCH": {
         "short_name": "S&P/BNY Mellon Switzerland Clas",
-        "currency": "None",
+        "currency": null,
         "market": "us_market",
         "exchange": "SNP",
         "exchange timezone": "EST"
@@ -19040,7 +19040,7 @@
         "exchange timezone": "EST"
     },
     "^DSJA-IV": {
-        "short_name": "None",
+        "short_name": null,
         "currency": "USD",
         "market": "us_market",
         "exchange": "ASE",
@@ -19054,7 +19054,7 @@
         "exchange timezone": "EST"
     },
     "^DSOC-IV": {
-        "short_name": "None",
+        "short_name": null,
         "currency": "USD",
         "market": "us_market",
         "exchange": "ASE",
@@ -61335,7 +61335,7 @@
     },
     "^NQCNANCNH": {
         "short_name": "NASDAQ China A Shares CNH NTR I",
-        "currency": "None",
+        "currency": null,
         "market": "us_market",
         "exchange": "NIM",
         "exchange timezone": "EST"
@@ -61363,14 +61363,14 @@
     },
     "^NQCNAPCNH": {
         "short_name": "NASDAQ China A Shares CNH Index",
-        "currency": "None",
+        "currency": null,
         "market": "us_market",
         "exchange": "NIM",
         "exchange timezone": "EST"
     },
     "^NQCNATCNH": {
         "short_name": "NASDAQ China A Shares CNH TR In",
-        "currency": "None",
+        "currency": null,
         "market": "us_market",
         "exchange": "NIM",
         "exchange timezone": "EST"
@@ -67341,7 +67341,7 @@
     },
     "^NQGICNACNH": {
         "short_name": "NASDAQ Global plus China A Shar",
-        "currency": "None",
+        "currency": null,
         "market": "us_market",
         "exchange": "NIM",
         "exchange timezone": "EST"
@@ -67369,7 +67369,7 @@
     },
     "^NQGICNANCNH": {
         "short_name": "NASDAQ Global plus China A Shar",
-        "currency": "None",
+        "currency": null,
         "market": "us_market",
         "exchange": "NIM",
         "exchange timezone": "EST"
@@ -88452,28 +88452,28 @@
         "exchange timezone": "EST"
     },
     "^QTUM-EU": {
-        "short_name": "None",
+        "short_name": null,
         "currency": "USD",
         "market": "us_market",
         "exchange": "ASE",
         "exchange timezone": "EST"
     },
     "^QTUM-IV": {
-        "short_name": "None",
+        "short_name": null,
         "currency": "USD",
         "market": "us_market",
         "exchange": "ASE",
         "exchange timezone": "EST"
     },
     "^QTUM-NV": {
-        "short_name": "None",
+        "short_name": null,
         "currency": "USD",
         "market": "us_market",
         "exchange": "ASE",
         "exchange timezone": "EST"
     },
     "^QTUM-TC": {
-        "short_name": "None",
+        "short_name": null,
         "currency": "USD",
         "market": "us_market",
         "exchange": "ASE",
@@ -106289,7 +106289,7 @@
     },
     "^SPNSEINP": {
         "short_name": "S&P Nigeria Select Equity Incom",
-        "currency": "None",
+        "currency": null,
         "market": "us_market",
         "exchange": "SNP",
         "exchange timezone": "EST"
@@ -122143,7 +122143,7 @@
         "exchange timezone": "EST"
     },
     "^XNDC": {
-        "short_name": "None",
+        "short_name": null,
         "currency": "USD",
         "market": "us_market",
         "exchange": "NIM",
@@ -122690,7 +122690,7 @@
     },
     "^XSHD-EU": {
         "short_name": "Invesco S P SmallCap High Divid",
-        "currency": "None",
+        "currency": null,
         "market": "us_market",
         "exchange": "ASE",
         "exchange timezone": "EST"
@@ -123481,21 +123481,21 @@
     },
     "GBKX": {
         "short_name": "KBW Nasdaq Global Bank Index",
-        "currency": "None",
+        "currency": null,
         "market": "us_market",
         "exchange": "NIM",
         "exchange timezone": "EST"
     },
     "GBKXN": {
         "short_name": "KBW Nasdaq Global Bank Net Total Return Index",
-        "currency": "None",
+        "currency": null,
         "market": "us_market",
         "exchange": "NIM",
         "exchange timezone": "EST"
     },
     "GBKXT": {
         "short_name": "KBW Nasdaq Global Bank Total Return Index",
-        "currency": "None",
+        "currency": null,
         "market": "us_market",
         "exchange": "NIM",
         "exchange timezone": "EST"
