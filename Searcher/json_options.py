@@ -3,6 +3,23 @@ import json
 
 
 def show_options(product):
+    """
+    Description
+    ----
+    Returns all options that exist in the database that you
+    can use to filter the database.
+
+    Input
+    ----
+    product (string)
+        Gives all data for a specific product which can be
+        cryptocurrencies, currencies, equities, etfs or funds.
+
+    Output
+    ----
+    json_data (dictionary)
+        Returns a dictionary with a selection based on the input.
+    """
     URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
            "Database/Categories/")
 
@@ -20,6 +37,27 @@ def show_options(product):
 
 
 def search_products(database, query, new_database=None):
+    """
+    Description
+    ----
+    Search in the provided dictionary for a specific query. It
+    specifically searches in the 'summary' key which can be found in
+    equities, etfs and funds.
+
+    Input
+    ----
+    database (dictionary)
+        A dictionary that has data from the Database.
+    query (string)
+        The search term that is used to search in the dictionary.
+    new_database (dictionary, default is None)
+        If filled, is used to add data to based on the query.
+
+    Output
+    ----
+    json_data (dictionary)
+        Returns a dictionary with a selection based on the input.
+    """
     if new_database is None:
         new_database = {}
 

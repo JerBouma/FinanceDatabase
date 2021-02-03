@@ -3,6 +3,22 @@ import json
 
 
 def select_cryptocurrencies(cryptocurrency=None):
+    """
+    Description
+    ----
+    Returns all cryptocurrencies when no input is given and has the option to give
+    a specific set of symbols for the cryptocurrency you provide.
+
+    Input
+    ----
+    cryptocurrency (string, default is None)
+        If filled, gives all data for a specific cryptocurrency.
+
+    Output
+    ----
+    json_data (dictionary)
+        Returns a dictionary with a selection or all data based on the input.
+    """
     URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
            "Database/Cryptocurrencies/")
 
@@ -12,7 +28,7 @@ def select_cryptocurrencies(cryptocurrency=None):
             request = requests.get(json_file)
             json_data = json.loads(request.text)
         except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data for {}".format(cryptocurrency))
+            raise ValueError(f"Not able to find any data for {cryptocurrency}.")
     else:
         try:
             json_file = URL + "_Cryptocurrencies.json"
@@ -25,6 +41,22 @@ def select_cryptocurrencies(cryptocurrency=None):
 
 
 def select_currencies(currency=None):
+    """
+    Description
+    ----
+    Returns all currencies when no input is given and has the option to give
+    a specific set of symbols for the currency you provide.
+
+    Input
+    ----
+    currency (string, default is None)
+        If filled, gives all data for a specific currency.
+
+    Output
+    ----
+    json_data (dictionary)
+        Returns a dictionary with a selection or all data based on the input.
+    """
     URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
            "Database/Currencies/")
 
@@ -34,7 +66,7 @@ def select_currencies(currency=None):
             request = requests.get(json_file)
             json_data = json.loads(request.text)
         except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data for {}".format(currency))
+            raise ValueError("Not able to find any data for {currency}.")
     else:
         try:
             json_file = URL + "_Currencies.json"
@@ -47,6 +79,22 @@ def select_currencies(currency=None):
 
 
 def select_etfs(category=None):
+    """
+    Description
+    ----
+    Returns all ETFs when no input is given and has the option to give
+    a specific set of symbols for the category you provide.
+
+    Input
+    ----
+    category (string, default is None)
+        If filled, gives all data for a specific category.
+
+    Output
+    ----
+    json_data (dictionary)
+        Returns a dictionary with a selection or all data based on the input.
+    """
     URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
            "Database/ETFs/")
 
@@ -57,7 +105,7 @@ def select_etfs(category=None):
             request = requests.get(json_file)
             json_data = json.loads(request.text)
         except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data for {}".format(category))
+            raise ValueError(f"Not able to find any data for {category}.")
     else:
         try:
             json_file = URL + "_ETFs.json"
@@ -70,6 +118,29 @@ def select_etfs(category=None):
 
 
 def select_equities(country=None, sector=None, industry=None):
+    """
+    Description
+    ----
+    Returns all equities when no input is given and has the option to give
+    a specific set of symbols for the country, sector and/or industry provided.
+
+    The data depends on the combination of inputs. For example Country + Sector
+    gives all symbols for a specific sector in a specific country.
+
+    Input
+    ----
+    country (string, default is None)
+        If filled, gives all data for a specific country.
+    sector (string, default is None)
+        If filled, gives all data for a specific sector.
+    industry (string, default is None)
+        If filled, gives all data for a specific industry.
+
+    Output
+    ----
+    json_data (dictionary)
+        Returns a dictionary with a selection or all data based on the input.
+    """
     URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
            "Database/Equities/")
 
@@ -83,8 +154,8 @@ def select_equities(country=None, sector=None, industry=None):
             request = requests.get(json_file)
             json_data = json.loads(request.text)
         except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data with the combination of Country ({}), "
-                             "Sector ({}), Industry ({}).".format(country, sector, industry))
+            raise ValueError(f"Not able to find any data with the combination of Country ({country}), "
+                             f"Sector ({sector}), Industry ({industry}).")
     elif sector and industry:
         sector = sector.replace(' ', '%20')
         industry = industry.replace(' ', '%20')
@@ -95,7 +166,7 @@ def select_equities(country=None, sector=None, industry=None):
             json_data = json.loads(request.text)
         except json.decoder.JSONDecodeError:
             raise ValueError("Not able to find any data with the combination of, "
-                             "Sector ({}), Industry ({}).".format(sector, industry))
+                             f"Sector ({sector}), Industry ({industry}).")
     elif industry or (country and industry):
         raise ValueError("Only selecting industry or country and industry results in no data.")
     elif country:
@@ -120,6 +191,22 @@ def select_equities(country=None, sector=None, industry=None):
 
 
 def select_funds(category=None):
+    """
+    Description
+    ----
+    Returns all funds when no input is given and has the option to give
+    a specific set of symbols for the category you provide.
+
+    Input
+    ----
+    category (string, default is None)
+        If filled, gives all data for a specific category.
+
+    Output
+    ----
+    json_data (dictionary)
+        Returns a dictionary with a selection or all data based on the input.
+    """
     URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
            "Database/Funds/")
 
@@ -143,6 +230,22 @@ def select_funds(category=None):
 
 
 def select_indices(market=None):
+    """
+    Description
+    ----
+    Returns all indices when no input is given and has the option to give
+    a specific set of symbols for the market you provide.
+
+    Input
+    ----
+    market (string, default is None)
+        If filled, gives all data for a specific market.
+
+    Output
+    ----
+    json_data (dictionary)
+        Returns a dictionary with a selection or all data based on the input.
+    """
     URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
            "Database/Indices/")
 
@@ -165,6 +268,22 @@ def select_indices(market=None):
 
 
 def select_other(product):
+    """
+    Description
+    ----
+    Returns all Futures, Moneymarkets or Options based on the
+    value you give to the input parameter.
+
+    Input
+    ----
+    product (string)
+        Gives all data for a specific product.
+
+    Output
+    ----
+    json_data (dictionary)
+        Returns a dictionary with a selection or all data based on the input.
+    """
     URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
            "Database/Other/")
 
