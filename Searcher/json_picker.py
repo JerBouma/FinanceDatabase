@@ -179,7 +179,7 @@ def select_equities(country=None, sector=None, industry=None):
             raise ValueError("Not able to find any data with the combination of, "
                              f"Sector ({sector}) and Industry ({industry}).")
     elif country and industry:
-        country = sector.replace(' ', '%20')
+        country = country.replace(' ', '%20')
         industry = industry.replace(' ', '%20')
 
         try:
