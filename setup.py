@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="FinanceDatabase",
     packages=["FinanceDatabase"],
-    version="0.1.4",
+    version="0.1.5",
     license="MIT",
     description="This is a database of 180.000+ symbols containing Equities, ETFs, Funds, Indices, Futures, "
                 "Options, Currencies, Cryptocurrencies and Money Markets.",
