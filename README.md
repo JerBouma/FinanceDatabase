@@ -16,8 +16,6 @@ country, industry and sector and gives the most essential information about each
 can analyse specific areas of the financial world and/or find that product that is hard to find. See for examples
 on how you can combine this database and the earlier mentioned packages the section [Examples](#Examples).
 
-![Finance Database](Examples/FinanceDatabase.png)
-
 Some key statistics of the database:
 
 | Product           | Quantity  | Sectors   | Industries    | Countries | Exchanges |
