@@ -60,7 +60,9 @@ for item in pickles.keys():
             json.dump(sorted(currencies), handle, indent=4)
     elif item == 'Equities':
         print("Creating equities countries, sectors and industries..")
-        options = {}
+        countries = []
+        sectors = []
+        industries = []
 
         for symbol in tqdm(data_set):
             try:
@@ -68,16 +70,20 @@ for item in pickles.keys():
                 sector = data_set[symbol]['summaryProfile']['sector']
                 industry = data_set[symbol]['summaryProfile']['industry']
 
-                if country not in options:
-                    options[country] = {}
-                if sector not in options[country]:
-                    options[country][sector] = []
-                if industry not in options[country][sector]:
-                    options[country][sector].append(industry)
+                if country not in countries:
+                    countries.append(country)
+                if sector not in sectors:
+                    sectors.append(sector)
+                if industry not in industries:
+                    industries.append(industry)
             except (TypeError, KeyError):
                 None
-        with open("Categories/equities_options.json", 'w') as handle:
-            json.dump(sorted(options.items()), handle, indent=4)
+        with open("Categories/equities_countries.json", 'w') as handle:
+            json.dump(sorted(countries), handle, indent=4)
+        with open("Categories/equities_sectors.json", 'w') as handle:
+            json.dump(sorted(sectors), handle, indent=4)
+        with open("Categories/equities_industries.json", 'w') as handle:
+            json.dump(sorted(industries), handle, indent=4)
     elif item == 'ETFs':
         print("Creating etfs categories..")
         etfs = []
