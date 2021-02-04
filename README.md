@@ -79,7 +79,7 @@ following code:
 ````
 import FinanceDatabase as fd
 
-airlines_us = fd.select_equities(country='United States', sector='Industrials', industry='Airlines')
+airlines_us = fd.select_equities(country='United States', industry='Airlines')
 ````
 Then, I can use packages like [yfinance](https://github.com/ranaroussi/yfinance) to quickly collect data from 
 Yahoo Finance for each symbol in the industry like this:
