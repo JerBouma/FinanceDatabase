@@ -155,7 +155,18 @@ def select_equities(country=None, sector=None, industry=None):
             json_data = json.loads(request.text)
         except json.decoder.JSONDecodeError:
             raise ValueError(f"Not able to find any data with the combination of Country ({country}), "
-                             f"Sector ({sector}), Industry ({industry}).")
+                             f"Sector ({sector}) and Industry ({industry}).")
+    elif country and sector:
+        country = country.replace(' ', '%20')
+        sector = sector.replace(' ', '%20')
+
+        try:
+            json_file = URL + 'Countries/' + country + '/' + sector + '/_' + sector + ".json"
+            request = requests.get(json_file)
+            json_data = json.loads(request.text)
+        except json.decoder.JSONDecodeError:
+            raise ValueError(f"Not able to find any data with the combination of Country ({country}) "
+                             f"and Sector ({sector})")
     elif sector and industry:
         sector = sector.replace(' ', '%20')
         industry = industry.replace(' ', '%20')
@@ -166,9 +177,18 @@ def select_equities(country=None, sector=None, industry=None):
             json_data = json.loads(request.text)
         except json.decoder.JSONDecodeError:
             raise ValueError("Not able to find any data with the combination of, "
-                             f"Sector ({sector}), Industry ({industry}).")
-    elif industry or (country and industry):
-        raise ValueError("Only selecting industry or country and industry results in no data.")
+                             f"Sector ({sector}) and Industry ({industry}).")
+    elif country and industry:
+        country = sector.replace(' ', '%20')
+        industry = industry.replace(' ', '%20')
+
+        try:
+            json_file = URL + 'Countries/' + country + '/Industries/' + industry + ".json"
+            request = requests.get(json_file)
+            json_data = json.loads(request.text)
+        except json.decoder.JSONDecodeError:
+            raise ValueError("Not able to find any data with the combination of, "
+                             f"Country ({country}) and Industry ({industry}).")
     elif country:
         country = country.replace(' ', '%20')
 
@@ -177,8 +197,25 @@ def select_equities(country=None, sector=None, industry=None):
             request = requests.get(json_file)
             json_data = json.loads(request.text)
         except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data with the combination of "
-                             f"Country ({country}).")
+            raise ValueError(f"Not able to find any data for {country}.")
+    elif sector:
+        sector = sector.replace(' ', '%20')
+
+        try:
+            json_file = URL + 'Sectors/' + sector + '/_' + sector + ".json"
+            request = requests.get(json_file)
+            json_data = json.loads(request.text)
+        except json.decoder.JSONDecodeError:
+            raise ValueError(f"Not able to find any data for {sector}.")
+    elif industry:
+        industry = industry.replace(' ', '%20')
+
+        try:
+            json_file = URL + 'Industries/' + industry + ".json"
+            request = requests.get(json_file)
+            json_data = json.loads(request.text)
+        except json.decoder.JSONDecodeError:
+            raise ValueError(f"Not able to find any data for {industry}.")
     else:
         try:
             json_file = URL + "Equities.json"
