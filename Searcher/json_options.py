@@ -14,7 +14,9 @@ def show_options(product, equities_selection=None):
     product (string)
         Gives all data for a specific product which can be
         cryptocurrencies, currencies, equities, etfs or funds.
-
+    equities_selection (string)
+        Gives a sub selection fo the possibilities for equities which can be
+        countries, sectors or industries.
     Output
     ----
     json_data (dictionary)
@@ -35,6 +37,13 @@ def show_options(product, equities_selection=None):
             product = 'equities'
 
     try:
+        if product == 'equities' and equities_selection is None:
+            json_data = {}
+            for option in ['countries', 'sectors', 'industries']:
+                json_file = URL + product.lower() + '_' + option + '.json'
+                request = requests.get(json_file)
+                json_data[option] = json.loads(request.text)
+            return json_data
         if equities_selection:
             json_file = URL + product.lower() + '_' + equities_selection + '.json'
         else:
