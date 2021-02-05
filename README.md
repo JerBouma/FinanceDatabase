@@ -66,6 +66,10 @@ specific market which usually refers to indices in a specific country (like de_m
 - `select_other(product)` - gives either all Futures, all Moneymarkets or all Options.
 - `search_products(database, query, new_database=None)` - with input from the above functions, this function searching
 for specific values in the summary of the product (i.e. the query 'sustainable')
+  
+If you want additional information about each function you can use the build-in help function of Python By calling 
+`help(<function_name>)` you can retrieve the Docstring of each function that gives a detailed explanation about 
+the input and output (you can use `help(show_options)` for example). 
 
 ## Examples
 This section gives a few examples of the possibilities with this package. These are merely a few of the things you
