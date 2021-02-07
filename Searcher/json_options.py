@@ -51,18 +51,17 @@ def show_options(product, equities_selection=None):
         request = requests.get(json_file)
         json_data = json.loads(request.text)
     except json.decoder.JSONDecodeError:
-        raise ValueError("Not able to find the options for " + product.lower())
+        raise ValueError(f"Not able to find the options for {product.lower()}.")
 
     return json_data
 
 
-def search_products(database, query, new_database=None):
+def search_products(database, query, search='summary', case_sensitive=False, new_database=None):
     """
     Description
     ----
-    Search in the provided dictionary for a specific query. It
-    specifically searches in the 'summary' key which can be found in
-    equities, etfs and funds.
+    Search in the provided dictionary for a specific query. By default
+    it searches in the 'summary' key which can be found in equities, etfs and funds.
 
     Input
     ----
@@ -70,6 +69,12 @@ def search_products(database, query, new_database=None):
         A dictionary that has data from the Database.
     query (string)
         The search term that is used to search in the dictionary.
+    search (string):
+        The key of the dictionary you wish to search in. The default
+        is set to 'summary'.
+    case_sensitive (boolean):
+        A variable that determines whether the query needs to be case
+        sensitive or not. Default is False.
     new_database (dictionary, default is None)
         If filled, is used to add data to based on the query.
 
@@ -81,11 +86,23 @@ def search_products(database, query, new_database=None):
     if new_database is None:
         new_database = {}
 
+    try:
+        all_keys = list(database[list(database.keys())[0]].keys())
+    except IndexError:
+        raise ValueError("The database is empty. Please fill the database with one of the 'select' functions.")
+    if search not in all_keys:
+        raise ValueError(f"The value {search} is not an option for the 'search' variable. "
+                         f"Please select one of the following:\n{all_keys}")
+
     for symbol in database:
         try:
-            if query in database[symbol]['summary']:
+            string = database[symbol][search]
+            if not case_sensitive:
+                query = query.lower()
+                string = database[symbol][search].lower()
+            if query in string:
                 new_database[symbol] = database[symbol]
-        except (TypeError, KeyError):
+        except (TypeError, KeyError, AttributeError):
             continue
 
     return new_database
