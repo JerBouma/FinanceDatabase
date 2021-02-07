@@ -66,7 +66,7 @@ def select_currencies(currency=None):
             request = requests.get(json_file)
             json_data = json.loads(request.text)
         except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data for {currency}.")
+            raise ValueError(f"Not able to find any data for {currency}.")
     else:
         try:
             json_file = URL + "_Currencies.json"
