@@ -13,7 +13,7 @@ The aim of this database is explicitly _not_ to provide up-to-date fundamentals 
 with ease (with the help of this database) by using [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) 
 or [yfinance](https://github.com/ranaroussi/yfinance). Instead, it gives  insights into the products that exist in each 
 country, industry and sector and gives the most essential information about each product. With this information, you 
-can analyse specific areas of the financial world and/or find that product that is hard to find. See for examples
+can analyse specific areas of the financial world and/or find a product that is hard to find. See for examples
 on how you can combine this database, and the earlier mentioned packages the section [Examples](#Examples).
 
 Some key statistics of the database:
@@ -64,8 +64,15 @@ specific category.
 - `select_indices(market=None)` - with no input gives all indices, with input gives all funds of a 
 specific market which usually refers to indices in a specific country (like de_market gives DAX).
 - `select_other(product)` - gives either all Futures, all Moneymarkets or all Options.
-- `search_products(database, query, new_database=None)` - with input from the above functions, this function searching
-for specific values in the summary of the product (i.e. the query 'sustainable')
+- `search_products(database, query, search='summary', case_sensitive=False, new_database=None)` - with input 
+  from the above functions, this function searching for specific values in the one of the keys in the dictionary 
+  which is by default the summary (i.e. the query 'sustainable'). It also has the option to enable case_sensitive 
+  searching which is by default off.
+  
+For the users of the broker **DeGiro**, you are able to find data on the tickers found in the 
+[Comission Free ETFs](https://www.degiro.ie/data/pdf/ie/commission-free-etfs-list.pdf) list by selecting either 
+`core_selection_degiro_filled` (all data) or `core_selection_degiro_filtered` (filtered by summary) as category 
+when using the function `select_etfs`.
 
 For additional information about each function you can use the build-in help function of Python. For 
 example `help(show_options)` returns a general description, the possible input parameters and what is returned 
