@@ -11,7 +11,7 @@ industries, types of investments and much more.
 
 The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data as those can be obtained 
 with ease (with the help of this database) by using [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) 
-or [yfinance](https://github.com/ranaroussi/yfinance). Instead, it gives  insights into the products that exist in each 
+or [yfinance](https://github.com/ranaroussi/yfinance). Instead, it gives insights into the products that exist in each 
 country, industry and sector and gives the most essential information about each product. With this information, you 
 can analyse specific areas of the financial world and/or find a product that is hard to find. See for examples
 on how you can combine this database, and the earlier mentioned packages the section [Examples](#Examples).
@@ -48,8 +48,8 @@ You can install the package with the following steps:
 2. (within Python) `import FinanceDatabase as fd`
 
 The package has the following functions:
-- `show_options(product, equities_selection=None)` - gives all available options from the below functions per 
-  product (i.e. Equities, Funds) which then can be used to collect the data. You can select a sub selection of 
+- `show_options(product, equities_selection=None)` - gives all available options from the functions below per 
+  product (i.e. Equities, Funds) which then can be used to collect data. You can select a sub selection of 
   equities by entering 'countries', 'sectors' or 'industries' for equities_selection.
 - `select_cryptocurrencies(cryptocurrency=None)` - with no input gives all cryptocurrencies, with input gives 
 the cryptocurrency of choice.
@@ -61,27 +61,27 @@ specific category.
 gives all equities of a country, sector, industry or a combination of the three.
 - `select_funds(category=None)` - with no input gives all funds, with input gives all funds of a 
 specific category.
-- `select_indices(market=None)` - with no input gives all indices, with input gives all funds of a 
+- `select_indices(market=None)` - with no input gives all indices, with input gives all indices of a 
 specific market which usually refers to indices in a specific country (like de_market gives DAX).
 - `select_other(product)` - gives either all Futures, all Moneymarkets or all Options.
 - `search_products(database, query, search='summary', case_sensitive=False, new_database=None)` - with input 
-  from the above functions, this function searching for specific values in the one of the keys in the dictionary 
-  which is by default the summary (i.e. the query 'sustainable'). It also has the option to enable case_sensitive 
-  searching which is by default off.
+  from the above functions, this function searches for specific values (i.e. the query 'sustainable') in 
+  one of the keys of the dictionary (which is by default the summary). It also has the option to enable 
+  case-sensitive searching which is off by default.
   
-For the users of the broker **DeGiro**, you are able to find data on the tickers found in the 
-[Comission Free ETFs](https://www.degiro.ie/data/pdf/ie/commission-free-etfs-list.pdf) list by selecting either 
-`core_selection_degiro_filled` (all data) or `core_selection_degiro_filtered` (filtered by summary) as category 
-when using the function `select_etfs`.
-
 For additional information about each function you can use the build-in help function of Python. For 
 example `help(show_options)` returns a general description, the possible input parameters and what is returned 
 as output.
 
+For users of the broker **DeGiro**, you are able to find data on the tickers found in the 
+[Commission Free ETFs](https://www.degiro.ie/data/pdf/ie/commission-free-etfs-list.pdf) list by selecting either 
+`core_selection_degiro_filled` (all data) or `core_selection_degiro_filtered` (filtered by summary) as category 
+when using the function `select_etfs`.
+
 ## Examples
 This section gives a few examples of the possibilities with this package. These are merely a few of the things you
-can do with the package, and it only uses yfinance. **As you can obtain a wide range of symbols, pretty much any package 
-that requires symbols should work.**
+can do with the package, and it only uses yfinance. **As you can obtain a wide range of symbols, pretty much any 
+package that requires symbols should work.**
 
 ### United States' Airlines
 If I wish to obtain all companies within the United States listed under 'Airlines' I can write the 
@@ -104,7 +104,7 @@ for symbol in airlines_us:
 airlines_us_stock_data = download(list(airlines_us))
 ```` 
 With a few lines of code, I have collected all data from a specific industry within the United States. From here on 
-you can compare pretty much any key statistic, fundamental data and stock data. For example, let's plot a simple bar 
+you can compare pretty much any key statistic, fundamental- and stock data. For example, let's plot a simple bar 
 chart that gives insights in the Quick Ratios (indicator of the overall financial strength or weakness of a company):
 ````
 import matplotlib.pyplot as plt
@@ -121,31 +121,31 @@ for symbol in airlines_us_fundamentals:
 plt.tight_layout()
 plt.show()
 ``````
-Which results in the graph displayed below (as of the 3rd of February 2021). From this graph you could identify 
-companies that currently lack enough assets to cover their liabilities (quick ratio < 1), and those that do have enough
-assets (quick ratio > 1). Both too low and too high could make you wonder whether the company adequately manages 
-its assets.
+Which results in the graph displayed below (as of the 3rd of February 2021). From this graph you can identify 
+companies that currently lack enough assets to cover their liabilities (quick ratio < 1), and those that do have 
+enough assets (quick ratio > 1). Both too low and too high could make you wonder whether the company adequately 
+manages its assets.
 
 ![FinanceDatabase](Examples/United_States_Airlines_QuickRatio.png)
 
 ### Semiconductors ETFs
-If I wish to obtain all ETFs that have something to do with 'semiconductors' I can use the search function which works
-as follows:
+If I wish to obtain all ETFs that have something to do with 'semiconductors' I can use the search function which can 
+be used the following way:
 ````
 import FinanceDatabase as fd
 
 all_etfs = fd.select_etfs()
 semiconductor_etfs = fd.search_products(all_etfs, 'semiconductor')
 ````
-The variable semiconductor_etfs returns all etfs that have the word 'semiconductor' in their summary which usually also 
-corresponds to the fact they are targeted around semiconductors. Next, I collect data:
+The variable semiconductor_etfs returns all etfs that have the word 'semiconductor' in their summary which usually 
+also corresponds to the fact they are targeted around semiconductors. Next, I collect data:
 ````
 semiconductor_etfs_fundamentals = {}
 for symbol in semiconductor_etfs:
     semiconductor_etfs_fundamentals[symbol] = get_json("https://finance.yahoo.com/quote/" + symbol)
 ````
-And lastly, I have a look at the YTD returns (as of the 3rd of February 2021) of each ETF to understand which ones 
-might be outperforming the others:
+And lastly, I have a look at the YTD returns (as of the 3rd of February 2021) of each ETF to better understand the 
+products that are available (for example levered products or specific bear and bull products):
 ````
 for symbol in semiconductor_etfs_fundamentals:
     ytd_return = semiconductor_etfs_fundamentals[symbol]['fundPerformance']['trailingReturns']['ytd']
@@ -164,6 +164,27 @@ This results in the following graph which gives _some_ insights in the available
 large amount of fundamentals data you can figure out how each ETF differs and what might be worthwhile to invest in.
 
 ![FinanceDatabase](Examples/Semiconductors_ETFs_Returns.png)
+
+## Q&A
+
+- **How did you get your data?**
+    - Please check the [Methodology](https://github.com/JerBouma/FinanceDatabase/tree/master/Methodology).
+- **Is there support for <insert_country>?**
+    - Yes, most likely there is as the database includes 109 countries. Please check 
+    [here](https://github.com/JerBouma/FinanceDatabase/tree/master/Database/Equities/Countries).
+- **When I collect data via yfinance I notice that not all tickers return output, why is that?**
+    - Some tickers are merely holdings of companies and therefore do not really have any data attached to them. 
+      Therefore, it makes sense that not all tickers return data. If you are still in doubt, search the ticker on 
+      Google to see if there is really no data available.
+- **How frequently does the Database get updated?**
+    - I aim at doing this every few months. The database does not have to get updated frequently because the data 
+      collected is only general information. For example, a Sector name hardly changes and companies do not tend to 
+      move to another country every few months. Therefore, the data should stay up to date for several months. 
+      *I you wish to contribute to updating the database then that is much appreciated. Please check the 
+      [Methodology](https://github.com/JerBouma/FinanceDatabase/tree/master/Methodology) for guidance on how.*
+- **Do your sector and industry names use the same naming convention as GIC sector**?
+    - Not entirely but very similar, it's based on Yahoo Finance's sectors and industries. See industries and 
+      sectors. Perhaps a future adjustment could be to make them aligned with GICS.
 
 ## Contribution
 Projects are bound to have (small) errors and can always be improved. Therefore, I highly encourage you to submit 
