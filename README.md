@@ -10,9 +10,9 @@ Options, Currencies, Cryptocurrencies and Money Markets. It therefore allows you
 industries, types of investments and much more.
 
 The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data as those can be obtained 
-with ease (with the help of this database) by using [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) 
-or [yfinance](https://github.com/ranaroussi/yfinance). Instead, it gives insights into the products that exist in each 
-country, industry and sector and gives the most essential information about each product. With this information, you 
+with ease (with the help of this database) by using [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis), 
+[yfinance](https://github.com/ranaroussi/yfinance) or [ThePassiveInvestor](https://github.com/JerBouma/ThePassiveInvestor). 
+Instead, it gives insights into the products that exist in each country, industry and sector and gives the most essential information about each product. With this information, you 
 can analyse specific areas of the financial world and/or find a product that is hard to find. See for examples
 on how you can combine this database, and the earlier mentioned packages the section [Examples](#Examples).
 
@@ -165,6 +165,42 @@ large amount of fundamentals data you can figure out how each ETF differs and wh
 
 ![FinanceDatabase](Examples/Semiconductors_ETFs_Returns.png)
 
+### Using ThePassiveInvestor
+Sometimes, Excel simply offers the best solution to quickly compare a range of ETFs. Therefore, another option is to 
+use my program [ThePassiveInvestor](https://github.com/JerBouma/ThePassiveInvestor). The goal of this program is to 
+quickly compare ETFs by comparing their most important attributies (i.e. holdings, return, volatility, tracking error). 
+Thus what you can do is gather a set of symbols and run it through the program.
+
+As I invest with DeGiro, a great start for me would be by collecting all ETFs that are listed within the Core 
+Selection (commission free) of my broker with the following code (or manually obtain them from the json file):
+````
+import FinanceDatabase as fd
+
+core_selection = fd.select_etfs("core_selection_degiro_filtered")
+````
+Then I convert the keys of the core_selection into a Series and send it to Excel without index and header.
+````
+import pandas as pd
+
+tickers = pd.Series(core_selection.keys())
+tickers.to_excel('core_selection_tickers.xlsx', index=None, header=None)
+````
+When you then open the Excel file created you see the following lay-out (which corresponds to the lay-out accepted 
+by the program):
+
+![ThePassiveInvestor](Examples/ThePassiveInvestor_Excel.PNG)
+
+Then I can open ThePassiveInvestor program and use the Excel as input. The first input is the Excel that you want to 
+be filled with input from your tickers (created by the program). The second input is the file you created above.
+
+![ThePassiveInvestor](Examples/ThePassiveInvestor_Program.PNG)
+
+When you run the program it starts collecting data on each ticker and fills the Excel with data. After the program is 
+finished you are able to find an Excel that looks very much like the data you see below. With this data you can 
+get an indication whether the ETF is what you are looking for.
+
+![ThePassiveInvestor](Examples/ThePassiveInvestor_GIF.gif)
+
 ## Q&A
 
 - **How did you get your data?**
@@ -180,7 +216,7 @@ large amount of fundamentals data you can figure out how each ETF differs and wh
     - I aim at doing this every few months. The database does not have to get updated frequently because the data 
       collected is only general information. For example, a Sector name hardly changes and companies do not tend to 
       move to another country every few months. Therefore, the data should stay up to date for several months. 
-      *I you wish to contribute to updating the database then that is much appreciated. Please check the 
+      *If you wish to contribute to updating the database then that is much appreciated. Please check the 
       [Methodology](https://github.com/JerBouma/FinanceDatabase/tree/master/Methodology) for guidance on how.*
 - **Do your sector and industry names use the same naming convention as GIC sector**?
     - Not entirely but very similar, it's based on Yahoo Finance's sectors and industries. See industries and 
