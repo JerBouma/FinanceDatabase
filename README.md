@@ -10,11 +10,13 @@ Options, Currencies, Cryptocurrencies and Money Markets. It therefore allows you
 industries, types of investments and much more.
 
 The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data as those can be obtained 
-with ease (with the help of this database) by using [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis), 
-[yfinance](https://github.com/ranaroussi/yfinance) or [ThePassiveInvestor](https://github.com/JerBouma/ThePassiveInvestor). 
-Instead, it gives insights into the products that exist in each country, industry and sector and gives the most essential information about each product. With this information, you 
-can analyse specific areas of the financial world and/or find a product that is hard to find. See for examples
-on how you can combine this database, and the earlier mentioned packages the section [Examples](#Examples).
+with ease (with the help of this database) by using [yfinance](https://github.com/ranaroussi/yfinance), 
+[FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) or 
+[ThePassiveInvestor](https://github.com/JerBouma/ThePassiveInvestor).  Instead, it gives insights into the products 
+that exist in each country, industry and sector and gives the most essential information about each product. With 
+this information, you can analyse specific areas of the financial world and/or find a product that is hard to find. 
+See for examples on how you can combine this database, and the earlier mentioned packages the section 
+[Examples](#Examples).
 
 Some key statistics of the database:
 
