@@ -179,13 +179,13 @@ names = [all_technology_companies[name]['short_name']
          if name in market_cap.index]
 market_cap.index = names
 
-market_cap.T.plot.bar(stacked=True, rot=0)
+market_cap.T.plot.bar(stacked=True, rot=0, colormap='Spectral')
 ````
 This results in the graph displayed below which separates the small companies from the large companies. Note that 
 this does not include _all_ technology companies in Silicon Valley because most are not listed or are not included 
 in the database of the FundamentalAnalysis package.
 
-![FinanceDatabase](Examples/Sillicon_Valley_Technology_MarketCap.png)
+![FinanceDatabase](Examples/Silicon_Valley_Technology_MarketCap.png)
 
 ### Core Selection ETFs
 Sometimes, Excel simply offers the best solution if you want compare a range of ETFs quickly. Therefore, another 

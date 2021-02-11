@@ -36,5 +36,5 @@ names = [all_technology_companies[name]['short_name']
          if name in market_cap.index]
 market_cap.index = names
 
-market_cap.T.plot.bar(stacked=True, rot=0)
+market_cap.T.plot.bar(stacked=True, rot=0, colormap='Spectral')
 
