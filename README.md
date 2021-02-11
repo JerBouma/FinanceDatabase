@@ -80,7 +80,7 @@ when using the function `select_etfs`.
 
 ## Examples
 This section gives a few examples of the possibilities with this package. These are merely a few of the things you
-can do with the package, and it only uses yfinance. **As you can obtain a wide range of symbols, pretty much any 
+can do with the package. **As you can obtain a wide range of symbols, pretty much any 
 package that requires symbols should work.**
 
 ### United States' Airlines
@@ -128,51 +128,69 @@ manages its assets.
 
 ![FinanceDatabase](Examples/United_States_Airlines_QuickRatio.png)
 
-### Semiconductors ETFs
-If I wish to obtain all ETFs that have something to do with 'semiconductors' I can use the search function which can 
-be used the following way:
+### Silicon Valley's Market Cap
+If I want to understand which listed technology companies exist in Silicon Valley, I can collect all equities of 
+the sector 'Technology' and then filter based on city to obtain all listed technology companies in 'Silicon Valley'. 
+The city 'San Jose' is where Silicon Valley is located. I remove all tickers with a dot since they refer to 
+different markets.
 ````
 import FinanceDatabase as fd
 
-all_etfs = fd.select_etfs()
-semiconductor_etfs = fd.search_products(all_etfs, 'semiconductor')
-````
-The variable semiconductor_etfs returns all etfs that have the word 'semiconductor' in their summary which usually 
-also corresponds to the fact they are targeted around semiconductors. Next, I collect data:
-````
-semiconductor_etfs_fundamentals = {}
-for symbol in semiconductor_etfs:
-    semiconductor_etfs_fundamentals[symbol] = get_json("https://finance.yahoo.com/quote/" + symbol)
-````
-And lastly, I have a look at the YTD returns (as of the 3rd of February 2021) of each ETF to better understand the 
-products that are available (for example levered products or specific bear and bull products):
-````
-for symbol in semiconductor_etfs_fundamentals:
-    ytd_return = semiconductor_etfs_fundamentals[symbol]['fundPerformance']['trailingReturns']['ytd']
-    long_name = semiconductor_etfs_fundamentals[symbol]['quoteType']['longName']
+all_technology_companies = fd.select_equities(sector='Technology')
+silicon_valley = fd.search_products(all_technology_companies, query='San Jose', search='city')
 
-    if ytd_return is None:
+for ticker in silicon_valley.copy():
+    if '.' in ticker:
+        del silicon_valley[ticker]
+````
+Then I start collecting data with the [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) package. 
+Here I collect the key metrics which include 57 different metrics (ranging from PE ratios to Market Cap).
+````
+API_KEY = "YOUR API KEY HERE"
+data_set = {}
+for ticker in silicon_valley:
+    try:
+        data_set[ticker] = fa.key_metrics(ticker, API_KEY, period='annual')
+    except Exception:
         continue
-
-    plt.barh(long_name, ytd_return)
-
-plt.tight_layout()
-plt.xticks([-1, -0.5, 0, 0.5, 1], ['-100%', '-50%', '0%', '50%', '100%'])
-plt.show()
 ````
-This results in the following graph which gives _some_ insights in the available semiconductor ETFs. Then with the 
-large amount of fundamentals data you can figure out how each ETF differs and what might be worthwhile to invest in.
+Then I make a selection based on the last 5 years and filter by market cap to compare the companies in terms of size
+with each other. This also causes companies that have not been listed for 5 years to be filtered out of my dataset.
+````
+years = ['2020', '2019', '2018', '2017', '2016']
+market_cap = pd.DataFrame(columns=years)
+for ticker in data_set:
+    try:
+        data_years = []
+        for year in years:
+            data_years.append(data_set[ticker].loc['marketCap'][year])
+        market_cap.loc[ticker] = data_years
+    except Exception:
+        continue
+````
+Lastly, I replace the ticker symbols with the actual names of the companies and then plot the data.
+````
+names = [all_technology_companies[name]['short_name'] 
+         for name in all_technology_companies 
+         if name in market_cap.index]
+market_cap.index = names
 
-![FinanceDatabase](Examples/Semiconductors_ETFs_Returns.png)
+market_cap.T.plot.bar(stacked=True, rot=0)
+````
+This results in the graph displayed below which separates the small companies from the large companies. Note that 
+this does not include _all_ technology companies in Silicon Valley because most are not listed or are not included 
+in the database of the FundamentalAnalysis package.
 
-### Using ThePassiveInvestor
-Sometimes, Excel simply offers the best solution to quickly compare a range of ETFs. Therefore, another option is to 
-use my program [ThePassiveInvestor](https://github.com/JerBouma/ThePassiveInvestor). The goal of this program is to 
-quickly compare ETFs by comparing their most important attributies (i.e. holdings, return, volatility, tracking error). 
-Thus what you can do is gather a set of symbols and run it through the program.
+![FinanceDatabase](Examples/Sillicon_Valley_Technology_MarketCap.png)
+
+### Core Selection ETFs
+Sometimes, Excel simply offers the best solution if you want compare a range of ETFs quickly. Therefore, another 
+option is to use my program [ThePassiveInvestor](https://github.com/JerBouma/ThePassiveInvestor). The goal of 
+this program is to quickly compare a large selection of ETFs by collecting their most important attributes 
+(i.e. holdings, return, volatility, tracking error).
 
 As I invest with DeGiro, a great start for me would be by collecting all ETFs that are listed within the Core 
-Selection (commission free) of my broker with the following code (or manually obtain them from the json file):
+Selection (commission free) list of my broker with the following code (or manually obtain them from the json file):
 ````
 import FinanceDatabase as fd
 
@@ -185,18 +203,18 @@ import pandas as pd
 tickers = pd.Series(core_selection.keys())
 tickers.to_excel('core_selection_tickers.xlsx', index=None, header=None)
 ````
-When you then open the Excel file created you see the following lay-out (which corresponds to the lay-out accepted 
+If you open the Excel file created you see the following lay-out (which corresponds to the lay-out accepted 
 by the program):
 
 ![ThePassiveInvestor](Examples/ThePassiveInvestor_Excel.PNG)
 
-Then I can open ThePassiveInvestor program and use the Excel as input. The first input is the Excel that you want to 
+Then I open ThePassiveInvestor program and use the Excel as input. The first input is the Excel that you want to 
 be filled with input from your tickers (created by the program). The second input is the file you created above.
 
 ![ThePassiveInvestor](Examples/ThePassiveInvestor_Program.PNG)
 
-When you run the program it starts collecting data on each ticker and fills the Excel with data. After the program is 
-finished you are able to find an Excel that looks very much like the data you see below. With this data you can 
+When you run the program it starts collecting data on each ticker and fills the Excel with data. After the program 
+is finished you are able to find an Excel that looks very much like the GIF you see below. With this data you can 
 get an indication whether the ETF is what you are looking for.
 
 ![ThePassiveInvestor](Examples/ThePassiveInvestor_GIF.gif)
