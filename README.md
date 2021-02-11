@@ -146,6 +146,8 @@ for ticker in silicon_valley.copy():
 Then I start collecting data with the [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) package. 
 Here I collect the key metrics which include 57 different metrics (ranging from PE ratios to Market Cap).
 ````
+import FundamentalAnalysis as fa
+
 API_KEY = "YOUR API KEY HERE"
 data_set = {}
 for ticker in silicon_valley:
@@ -157,6 +159,8 @@ for ticker in silicon_valley:
 Then I make a selection based on the last 5 years and filter by market cap to compare the companies in terms of size
 with each other. This also causes companies that have not been listed for 5 years to be filtered out of my dataset.
 ````
+import pandas as pd
+
 years = ['2020', '2019', '2018', '2017', '2016']
 market_cap = pd.DataFrame(columns=years)
 for ticker in data_set:
@@ -170,8 +174,8 @@ for ticker in data_set:
 ````
 Lastly, I replace the ticker symbols with the actual names of the companies and then plot the data.
 ````
-names = [all_technology_companies[name]['short_name'] 
-         for name in all_technology_companies 
+names = [all_technology_companies[name]['short_name']
+         for name in all_technology_companies
          if name in market_cap.index]
 market_cap.index = names
 

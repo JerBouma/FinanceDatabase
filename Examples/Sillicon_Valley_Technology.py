@@ -1,6 +1,4 @@
 import FinanceDatabase as fd
-import FundamentalAnalysis as fa
-import pandas as pd
 
 all_technology_companies = fd.select_equities(sector='Technology')
 silicon_valley = fd.search_products(all_technology_companies, query='San Jose', search='city')
@@ -10,6 +8,8 @@ for ticker in silicon_valley.copy():
     if '.' in ticker:
         del silicon_valley[ticker]
 
+import FundamentalAnalysis as fa
+
 API_KEY = "YOUR API KEY HERE"
 data_set = {}
 for ticker in silicon_valley:
@@ -17,6 +17,8 @@ for ticker in silicon_valley:
         data_set[ticker] = fa.key_metrics(ticker, API_KEY, period='annual')
     except Exception:
         continue
+
+import pandas as pd
 
 years = ['2020', '2019', '2018', '2017', '2016']
 market_cap = pd.DataFrame(columns=years)
