@@ -160,28 +160,22 @@ for ticker in silicon_valley:
 ````
 Then I make a selection based on the last 5 years and filter by market cap to compare the companies in terms of size
 with each other. This also causes companies that have not been listed for 5 years to be filtered out of my dataset.
+Lastly, I plot the data.
 ````
 import pandas as pd
 
-years = ['2020', '2019', '2018', '2017', '2016']
-market_cap = pd.DataFrame(columns=years)
+years = ['2016', '2017', '2018', '2019', '2020']
+market_cap = pd.DataFrame(index=years)
 for ticker in data_set:
     try:
         data_years = []
         for year in years:
             data_years.append(data_set[ticker].loc['marketCap'][year])
-        market_cap.loc[ticker] = data_years
+        market_cap[all_technology_companies[ticker]['short_name']] = data_years
     except Exception:
         continue
-````
-Lastly, I replace the ticker symbols with the actual names of the companies and then plot the data.
-````
-names = [all_technology_companies[name]['short_name']
-         for name in all_technology_companies
-         if name in market_cap.index]
-market_cap.index = names
-
-market_cap.T.plot.bar(stacked=True, rot=0, colormap='Spectral')
+        
+market_cap.plot.bar(stacked=True, rot=0, colormap='Spectral').legend(prop={'size': 5.25})
 ````
 This results in the graph displayed below which separates the small companies from the large companies. Note that 
 this does not include _all_ technology companies in Silicon Valley because most are not listed or are not included 

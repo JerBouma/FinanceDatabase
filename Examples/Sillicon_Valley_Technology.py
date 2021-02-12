@@ -3,14 +3,13 @@ import FinanceDatabase as fd
 all_technology_companies = fd.select_equities(sector='Technology')
 silicon_valley = fd.search_products(all_technology_companies, query='San Jose', search='city')
 
-# Remove tickers with a dot in it which refer to different markets
 for ticker in silicon_valley.copy():
     if '.' in ticker:
         del silicon_valley[ticker]
 
 import FundamentalAnalysis as fa
 
-API_KEY = "YOUR API KEY HERE"
+API_KEY = "a015eaace08a8d46cfd49c849258a2bd"
 data_set = {}
 for ticker in silicon_valley:
     try:
@@ -20,21 +19,15 @@ for ticker in silicon_valley:
 
 import pandas as pd
 
-years = ['2020', '2019', '2018', '2017', '2016']
-market_cap = pd.DataFrame(columns=years)
+years = ['2016', '2017', '2018', '2019', '2020']
+market_cap = pd.DataFrame(index=years)
 for ticker in data_set:
     try:
         data_years = []
         for year in years:
             data_years.append(data_set[ticker].loc['marketCap'][year])
-        market_cap.loc[ticker] = data_years
+        market_cap[all_technology_companies[ticker]['short_name']] = data_years
     except Exception:
         continue
 
-names = [all_technology_companies[name]['short_name']
-         for name in all_technology_companies
-         if name in market_cap.index]
-market_cap.index = names
-
-market_cap.T.plot.bar(stacked=True, rot=0, colormap='Spectral')
-
+market_cap.plot.bar(stacked=True, rot=0, colormap='Spectral').legend(prop={'size': 5.25})
