@@ -163,6 +163,7 @@ with each other. This also causes companies that have not been listed for 5 year
 Lastly, I plot the data.
 ````
 import pandas as pd
+import matplotlib.pyplot as plt
 
 years = ['2016', '2017', '2018', '2019', '2020']
 market_cap = pd.DataFrame(index=years)
@@ -174,8 +175,10 @@ for ticker in data_set:
         market_cap[all_technology_companies[ticker]['short_name']] = data_years
     except Exception:
         continue
-        
-market_cap.plot.bar(stacked=True, rot=0, colormap='Spectral').legend(prop={'size': 5.25})
+
+market_cap_plot = market_cap.plot.bar(stacked=True, rot=0, colormap='Spectral')
+market_cap_plot.legend(prop={'size': 5.25})
+plt.show()
 ````
 This results in the graph displayed below which separates the small companies from the large companies. Note that 
 this does not include _all_ technology companies in Silicon Valley because most are not listed or are not included 

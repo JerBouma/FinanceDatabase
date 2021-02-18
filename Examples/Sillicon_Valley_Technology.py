@@ -9,7 +9,7 @@ for ticker in silicon_valley.copy():
 
 import FundamentalAnalysis as fa
 
-API_KEY = "a015eaace08a8d46cfd49c849258a2bd"
+API_KEY = "YOUR_API_KEY_HERE"
 data_set = {}
 for ticker in silicon_valley:
     try:
@@ -18,6 +18,7 @@ for ticker in silicon_valley:
         continue
 
 import pandas as pd
+import matplotlib.pyplot as plt
 
 years = ['2016', '2017', '2018', '2019', '2020']
 market_cap = pd.DataFrame(index=years)
@@ -30,4 +31,6 @@ for ticker in data_set:
     except Exception:
         continue
 
-market_cap.plot.bar(stacked=True, rot=0, colormap='Spectral').legend(prop={'size': 5.25})
+market_cap_plot = market_cap.plot.bar(stacked=True, rot=0, colormap='Spectral')
+market_cap_plot.legend(prop={'size': 5.25})
+plt.show()
