@@ -6,16 +6,15 @@ from Methodology.C_CreateDatabase import (cryptocurrencies_creator, currencies_c
                                           options_creator, utilities)
 
 pickles = {
-    'Cryptocurrencies': (
-        r'C:\Users\jerbo\Google Drive\Programming\Python\FinanceDatabase\Pickles\CryptoCurrencies.pickle'),
-    'Currencies': r'C:\Users\jerbo\Google Drive\Programming\Python\FinanceDatabase\Pickles\Currencies.pickle',
-    'Equities': r'C:\Users\jerbo\Google Drive\Programming\Python\FinanceDatabase\Pickles\Equities.pickle',
-    'ETFs': r'C:\Users\jerbo\Google Drive\Programming\Python\FinanceDatabase\Pickles\ETFs.pickle',
-    'Funds': r'C:\Users\jerbo\Google Drive\Programming\Python\FinanceDatabase\Pickles\Funds.pickle',
-    'Futures': r'C:\Users\jerbo\Google Drive\Programming\Python\FinanceDatabase\Pickles\Futures.pickle',
-    'Indices': r'C:\Users\jerbo\Google Drive\Programming\Python\FinanceDatabase\Pickles\Indices.pickle',
-    'Moneymarkets': r'C:\Users\jerbo\Google Drive\Programming\Python\FinanceDatabase\Pickles\MoneyMarkets.pickle',
-    'Options': r'C:\Users\jerbo\Google Drive\Programming\Python\FinanceDatabase\Pickles\Options.pickle'}
+    'Cryptocurrencies': r'C:\Users\jerbo\Documents\Pickles\CryptoCurrencies.pickle',
+    'Currencies': r'C:\Users\jerbo\Documents\Pickles\Currencies.pickle',
+    'Equities': r'C:\Users\jerbo\Documents\Pickles\Equities.pickle',
+    'ETFs': r'C:\Users\jerbo\Documents\Pickles\ETFs.pickle',
+    'Funds': r'C:\Users\jerbo\Documents\Pickles\Funds.pickle',
+    'Futures': r'C:\Users\jerbo\Documents\Pickles\Futures.pickle',
+    'Indices': r'C:\Users\jerbo\Documents\Pickles\Indices.pickle',
+    'Moneymarkets': r'C:\Users\jerbo\Documents\Pickles\MoneyMarkets.pickle',
+    'Options': r'C:\Users\jerbo\Documents\Pickles\Options.pickle'}
 
 for item in pickles.keys():
     print("--- " + item + " ---")
@@ -68,7 +67,7 @@ for item in pickles.keys():
             try:
                 country = data_set[symbol]['summaryProfile']['country']
                 sector = data_set[symbol]['summaryProfile']['sector']
-                industry = data_set[symbol]['summaryProfile']['industry']
+                industry = data_set[symbol]['summaryProfile']['industry'].replace('/', ' ').replace('\u2014', ' - ')
 
                 if country not in countries:
                     countries.append(country)
@@ -77,7 +76,7 @@ for item in pickles.keys():
                 if industry not in industries:
                     industries.append(industry)
             except (TypeError, KeyError):
-                None
+                continue
         with open("Categories/equities_countries.json", 'w') as handle:
             json.dump(sorted(countries), handle, indent=4)
         with open("Categories/equities_sectors.json", 'w') as handle:

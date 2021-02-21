@@ -110,7 +110,7 @@ def select_etfs(category=None):
         try:
             json_file = URL + "_ETFs.json"
             request = requests.get(json_file)
-            json_data = json.loads(request.text)
+            json_data = json.loads(request.text).decode("UTF-8")
         except json.decoder.JSONDecodeError:
             raise ValueError("Not able to find any data.")
 

@@ -27,7 +27,7 @@ def fill_data_points_equities(data_symbol, options=None):
     except (TypeError, KeyError):
         options['sector'] = None
     try:
-        options['industry'] = data_symbol['summaryProfile']['industry']
+        options['industry'] = data_symbol['summaryProfile']['industry'].replace('/', ' ').replace('\u2014', ' - ')
     except (TypeError, KeyError):
         options['industry'] = None
     try:
@@ -74,7 +74,7 @@ def make_directories_and_fill_json_equities(data, directory_name):
         symbols_dictionaries[symbol] = options
 
         try:
-            industry = data[symbol]['summaryProfile']['industry']
+            industry = data[symbol]['summaryProfile']['industry'].replace('/', ' ').replace('\u2014', ' - ')
 
             if industry not in industry_dictionaries and industry is not None:
                 if len(industry) > 0:
@@ -87,7 +87,7 @@ def make_directories_and_fill_json_equities(data, directory_name):
         try:
             sector_directories = os.listdir(directory_name + '/Sectors')
             sector = data[symbol]['summaryProfile']['sector']
-            industry = data[symbol]['summaryProfile']['industry']
+            industry = data[symbol]['summaryProfile']['industry'].replace('/', ' ').replace('\u2014', ' - ')
 
             if sector not in sector_directories and sector is not None:
                 if len(sector) > 0:
@@ -104,7 +104,7 @@ def make_directories_and_fill_json_equities(data, directory_name):
 
         try:
             sector = data[symbol]['summaryProfile']['sector']
-            industry = data[symbol]['summaryProfile']['industry']
+            industry = data[symbol]['summaryProfile']['industry'].replace('/', ' ').replace('\u2014', ' - ')
             country_directories = os.listdir(directory_name + '/Countries')
             country = data[symbol]['summaryProfile']['country']
 
@@ -136,16 +136,14 @@ def make_directories_and_fill_json_equities(data, directory_name):
 
     print('Filling folders with data..')
     for industry in tqdm(industry_dictionaries.keys()):
-        industry_new = industry.replace('/', ' ')
-        with open(directory_name + '/Industries/' + industry_new + '.json', 'w') as handle:
+        with open(directory_name + '/Industries/' + industry + '.json', 'w') as handle:
             json.dump(industry_dictionaries[industry], handle, indent=4)
 
     for sector in tqdm(sector_industry_dictionaries.keys()):
         with open(directory_name + '/Sectors/' + sector + '/_' + sector + '.json', 'w') as handle:
             json.dump(sector_dictionaries[sector], handle, indent=4)
         for industry in sector_industry_dictionaries[sector].keys():
-            industry_new = industry.replace('/', ' ')
-            with open(directory_name + '/Sectors/' + sector + '/' + industry_new + '.json', 'w') as handle:
+            with open(directory_name + '/Sectors/' + sector + '/' + industry + '.json', 'w') as handle:
                 json.dump(sector_industry_dictionaries[sector][industry], handle, indent=4)
 
     for country in tqdm(country_sector_industry_dictionaries.keys()):
@@ -155,13 +153,11 @@ def make_directories_and_fill_json_equities(data, directory_name):
             with open(directory_name + '/Countries/' + country + '/' + sector + '/_' + sector + '.json', 'w') as handle:
                 json.dump(country_sector_dictionaries[country][sector], handle, indent=4)
             for industry in country_sector_industry_dictionaries[country][sector].keys():
-                industry_new = industry.replace('/', ' ')
                 with open(directory_name + '/Countries/' + country + '/' + sector +
-                          '/' + industry_new + '.json', 'w') as handle:
+                          '/' + industry + '.json', 'w') as handle:
                     json.dump(country_sector_industry_dictionaries[country][sector][industry], handle, indent=4)
         for industry in country_industry_dictionaries[country].keys():
-            industry_new = industry.replace('/', ' ')
-            with open(directory_name + '/Countries/' + country + '/Industries/' + industry_new + '.json',
+            with open(directory_name + '/Countries/' + country + '/Industries/' + industry + '.json',
                       'w') as handle:
                 json.dump(country_industry_dictionaries[country][industry], handle, indent=4)
     with open(directory_name + '/' + directory_name + ".json", 'w') as handle:
