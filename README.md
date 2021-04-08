@@ -249,3 +249,5 @@ issues and create pull requests to improve the package.
 
 The last update to the database is the 3rd of February 2021. I always accept Pull Requests every few months 
 to keep the database up to date. Extending the amount of tickers and data is also much appreciated.
+
+<a href="https://www.buymeacoffee.com/jerbouma" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
