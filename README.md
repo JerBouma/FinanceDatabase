@@ -197,7 +197,7 @@ Selection (commission free) list of my broker with the following code (or manual
 ````
 import FinanceDatabase as fd
 
-core_selection = fd.select_etfs("core_selection_degiro_filtered")
+core_selection = fd.select_etfs("core_selection_filtered")
 ````
 Then I convert the keys of the core_selection into a Series and send it to Excel without index and header.
 ````
