@@ -1,30 +1,39 @@
 import os
 import json
 from tqdm import tqdm
-from Methodology.C_CreateDatabase import (cryptocurrencies_creator, currencies_creator, equities_creator, etfs_creator,
-                                          funds_creator, futures_creator, indices_creator, moneymarkets_creator,
-                                          options_creator, utilities)
+import cryptocurrencies_creator, currencies_creator, equities_creator, etfs_creator, funds_creator, futures_creator, indices_creator, moneymarkets_creator, options_creator, utilities
 
-pickles = {
-    'Cryptocurrencies': r'C:\Users\jerbo\Documents\Pickles\CryptoCurrencies.pickle',
-    'Currencies': r'C:\Users\jerbo\Documents\Pickles\Currencies.pickle',
-    'Equities': r'C:\Users\jerbo\Documents\Pickles\Equities.pickle',
-    'ETFs': r'C:\Users\jerbo\Documents\Pickles\ETFs.pickle',
-    'Funds': r'C:\Users\jerbo\Documents\Pickles\Funds.pickle',
-    'Futures': r'C:\Users\jerbo\Documents\Pickles\Futures.pickle',
-    'Indices': r'C:\Users\jerbo\Documents\Pickles\Indices.pickle',
-    'Moneymarkets': r'C:\Users\jerbo\Documents\Pickles\MoneyMarkets.pickle',
-    'Options': r'C:\Users\jerbo\Documents\Pickles\Options.pickle'}
+DATA_FOLDER = r"C:/Users/jerbo/Python/FinanceDatabase"
+EXCLUDED_TYPES = ['Option', 'Futures']
+naming = {
+    'Cryptocurrencies': 'CRYPTOCURRENCY',
+    'Currencies': 'Currency',
+    'Equities': 'Equity',
+    'ETFs': 'ETF',
+    'Funds': 'Fund',
+    'Futures': 'Futures',
+    'Indices': 'Index',
+    'Moneymarkets': 'MoneyMarket',
+    'Options': 'Option'}
 
-for item in pickles.keys():
-    print("--- " + item + " ---")
-    data_set = utilities.read_pickle(pickles[item])
-    if item in ['Futures', 'Moneymarkets', 'Options']:
-        if 'Other' not in os.listdir():
-            os.mkdir('Other')
-        eval(item.lower() + '_creator' + ".make_directories_and_fill_json_" + item.lower())(data_set, "Other")
-    else:
-        eval(item.lower() + '_creator' + ".make_directories_and_fill_json_" + item.lower())(data_set, item)
+for folder in naming:
+    print("--- " + folder + " ---")
+    if folder in os.listdir():
+        print(f"{folder} is skipped as the folder already exists")
+        continue
+    if naming[folder] in EXCLUDED_TYPES:
+        print(f"{folder} is skipped due to being time-dependent")
+        continue
+    items = {}
+    print("Creating a list with symbols..")
+    for item in tqdm(os.listdir(f"{DATA_FOLDER}/Data/{naming[folder]}")):
+        items[item.strip('.pickle')] = item
+    data_set = {}
+    print("Loading all pickles..")
+    for data in tqdm(items):
+        data_set[data] = utilities.read_pickle(f"{DATA_FOLDER}/Data/{naming[folder]}/{items[data]}")
+
+    eval(folder.lower() + '_creator' + ".make_directories_and_fill_json_" + folder.lower())(data_set, folder)
 
     try:
         os.mkdir("Categories")

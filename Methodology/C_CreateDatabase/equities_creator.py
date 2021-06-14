@@ -1,6 +1,7 @@
 import json
 import os
 from tqdm import tqdm
+from itertools import islice
 
 
 def fill_data_points_equities(data_symbol, options=None):
@@ -160,8 +161,15 @@ def make_directories_and_fill_json_equities(data, directory_name):
             with open(directory_name + '/Countries/' + country + '/Industries/' + industry + '.json',
                       'w') as handle:
                 json.dump(country_industry_dictionaries[country][industry], handle, indent=4)
-    with open(directory_name + '/' + directory_name + ".json", 'w') as handle:
-        json.dump(symbols_dictionaries, handle, indent=4)
+
+    complete_dictionary = iter(symbols_dictionaries.items())
+    symbols_dictionary_part_one = dict(islice(complete_dictionary, len(symbols_dictionaries) // 2))
+    symbols_dictionary_part_two = dict(complete_dictionary)
+
+    with open(directory_name + '/' + directory_name + " Part 1.json", 'w') as handle:
+        json.dump(symbols_dictionary_part_one, handle, indent=4)
+    with open(directory_name + '/' + directory_name + " Part 2.json", 'w') as handle:
+        json.dump(symbols_dictionary_part_two, handle, indent=4)
 
     if Errors:
         print("A couple of tickers were not able to be categorized. Please check the output of this function.")
