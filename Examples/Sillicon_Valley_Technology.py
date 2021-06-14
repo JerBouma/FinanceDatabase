@@ -32,5 +32,5 @@ for ticker in data_set:
         continue
 
 market_cap_plot = market_cap.plot.bar(stacked=True, rot=0, colormap='Spectral')
-market_cap_plot.legend(prop={'size': 5.25})
+market_cap_plot.legend(prop={'size': 5.25}, loc="upper left")
 plt.show()
