@@ -26,28 +26,28 @@ def show_options(product, equities_selection=None):
            "Database/Categories/")
 
     if product.lower() not in ['cryptocurrencies', 'currencies', 'equities', 'etfs', 'funds']:
-        raise ValueError((product.lower() + " is not an available options. Please choose either 'cryptocurrencies', "
-                                            "'currencies', 'equities', 'etfs' or 'funds'."))
+        raise ValueError(f"{product.lower()} is not an available options. Please choose either 'cryptocurrencies', "
+                         f"'currencies', 'equities', 'etfs' or 'funds'.")
     if equities_selection is not None:
         if equities_selection.lower() not in ['countries', 'sectors', 'industries']:
-            raise ValueError((equities_selection.lower() + " is not an available sub selection. Please choose either "
-                                                           "'countries', 'sectors' or 'industries'."))
+            raise ValueError(f"{equities_selection.lower()} is not an available sub selection. Please choose either "
+                             "'countries', 'sectors' or 'industries'.")
         if equities_selection.lower() in ['countries', 'sectors', 'industries'] and product.lower() != 'equities':
             print("equities_selection is only used for the product 'equities' thus changing product to 'equities'.")
             product = 'equities'
 
     try:
-        if product == 'equities' and equities_selection is None:
+        if product.lower() == 'equities' and equities_selection is None:
             json_data = {}
             for option in ['countries', 'sectors', 'industries']:
-                json_file = URL + product.lower() + '_' + option + '.json'
+                json_file = f"{URL}{product.lower()}_{option}.json"
                 request = requests.get(json_file)
                 json_data[option] = json.loads(request.text)
             return json_data
         if equities_selection:
-            json_file = URL + product.lower() + '_' + equities_selection + '.json'
+            json_file = f"{URL}{product.lower()}_{equities_selection}.json"
         else:
-            json_file = URL + product.lower() + '_options.json'
+            json_file = f"{URL}{product.lower()}_options.json"
         request = requests.get(json_file)
         json_data = json.loads(request.text)
     except json.decoder.JSONDecodeError:

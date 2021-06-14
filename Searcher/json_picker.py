@@ -218,9 +218,17 @@ def select_equities(country=None, sector=None, industry=None):
             raise ValueError(f"Not able to find any data for {industry}.")
     else:
         try:
-            json_file = URL + "Equities.json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
+            json_data = {}
+
+            json_file_part_one = URL + "Equities Part 1.json"
+            request = requests.get(json_file_part_one)
+            json_data_segment = json.loads(request.text)
+            json_data.update(json_data_segment)
+
+            json_file_part_two = URL + "Equities Part 2.json"
+            request = requests.get(json_file_part_two)
+            json_data_segment = json.loads(request.text)
+            json_data.update(json_data_segment)
         except json.decoder.JSONDecodeError:
             raise ValueError("Not able to find any data.")
 
@@ -304,17 +312,17 @@ def select_indices(market=None):
     return json_data
 
 
-def select_other(product):
+def select_moneymarkets(market=None):
     """
     Description
     ----
-    Returns all Futures, Moneymarkets or Options based on the
-    value you give to the input parameter.
+    Returns all moneymarkets when no input is given and has the option to give
+    a specific set of symbols for the market you provide.
 
     Input
     ----
-    product (string)
-        Gives all data for a specific product.
+    market (string, default is None)
+        If filled, gives all data for a specific market.
 
     Output
     ----
@@ -322,16 +330,21 @@ def select_other(product):
         Returns a dictionary with a selection or all data based on the input.
     """
     URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
-           "Database/Other/")
+           "Database/Moneymarkets/")
 
-    if product not in ['Futures', 'Moneymarkets', 'Options']:
-        raise ValueError(f"{product} is not available. Only 'Futures', 'Moneymarkets' and 'Options'.")
-
-    try:
-        json_file = URL + product + ".json"
-        request = requests.get(json_file)
-        json_data = json.loads(request.text)
-    except json.decoder.JSONDecodeError:
-        raise ValueError(f"Not able to find any data with type {product}.")
+    if market:
+        try:
+            json_file = URL + market + '.json'
+            request = requests.get(json_file)
+            json_data = json.loads(request.text)
+        except json.decoder.JSONDecodeError:
+            raise ValueError(f"Not able to find any data for {market}.")
+    else:
+        try:
+            json_file = URL + "_Moneymarkets.json"
+            request = requests.get(json_file)
+            json_data = json.loads(request.text)
+        except json.decoder.JSONDecodeError:
+            raise ValueError("Not able to find any data.")
 
     return json_data
