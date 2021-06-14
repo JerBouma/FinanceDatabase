@@ -1,12 +1,19 @@
-# Finance Database
+![](Examples/FinanceDatabaseCropped.png)
+
+[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-brightgreen?logo=buymeacoffee)](https://www.buymeacoffee.com/jerbouma)
+[![](https://img.shields.io/github/issues/jerbouma/financedatabase)](https://github.com/JerBouma/FinanceDatabase/issues)
+[![](https://img.shields.io/github/issues-pr/JerBouma/FinanceDatabase?color=yellow)](https://github.com/JerBouma/FinanceDatabase/pulls)
+[![](https://img.shields.io/pypi/v/FinanceDatabase)](https://pypi.org/project/FinanceDatabase/)
+[![](https://img.shields.io/pypi/dm/FinanceDatabase)](https://pypi.org/project/FinanceDatabase/)
+
 As a private investor, the sheer amount of information that can be found on the internet is rather daunting. Trying to 
 understand what type of companies or ETFs are available is incredibly challenging with there being millions of
 companies amd derivatives available on the market. Sure, the most traded companies and ETFs can quickly be found
 simply because they are known to the public (for example, Microsoft, Tesla, S&P500 ETF or an All-World ETF). However, 
 what else is out there is often unknown.
 
-**This database tries to solve that**. It features 180.000+ symbols containing Equities, ETFs, Funds, Indices, Futures, 
-Options, Currencies, Cryptocurrencies and Money Markets. It therefore allows you to obtain a broad overview of sectors,
+**This database tries to solve that**. It features 300.000+ symbols containing Equities, ETFs, Funds, Indices, 
+Currencies, Cryptocurrencies and Money Markets. It therefore allows you to obtain a broad overview of sectors,
 industries, types of investments and much more.
 
 The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data as those can be obtained 
@@ -20,20 +27,18 @@ See for examples on how you can combine this database, and the earlier mentioned
 
 Some key statistics of the database:
 
-| Product           | Quantity  | Sectors   | Industries    | Countries | Exchanges |
-| ----------------- | --------- | --------- | ------------- | --------- | --------- |
-| Equities          | 84.091    | 16        | 262           | 109       | 79        |
-| ETFs              | 15.892    | 268*      | 88*           | 100**     | 44        |
-| Funds             | 34.947    | 857*      | 416*          | 100**     | 25        |
+| Product           | Quantity   | Sectors    | Industries    | Countries | Exchanges |
+| ----------------- | ---------- | ---------- | ------------- | --------- | --------- |
+| Equities          | 155.705    | 16         | 242           | 111       | 82        |
+| ETFs              | 36.727     | 364*       | 94*           | 100**     | 52        |
+| Funds             | 57.816     | 1678*      | 438*          | 100**     | 34        |
 
-| Product           | Quantity  | Exchanges |
-| ----------------- | --------- | --------- |
-| Indices           | 24.548    | 62        |
-| Currencies        | 2.529     | 2         |
-| Cryptocurrencies  | 3.624     | 1         |
-| Options           | 13.819    | 1         |
-| Futures           | 1.173     | 7         |
-| Money Markets     | 1.384     | 2         |
+| Product           | Quantity  | Category              |
+| ----------------- | --------- | --------------------- |
+| Currencies        | 2.590     | 174 Currencies        |
+| Cryptocurrencies  | 3.624     | 299 Cryptocurrencies  |
+| Indices           | 86.353    | 49 Exchanges          |
+| Money Markets     | 1.384     | 2 Exchanges           |
 
 \* These numbers refer to families (iShares, Vanguard) and categories (World Stock, Real Estate) respectively.  
 \** This is an estimation. Obtaining the country distribution can only be done by collecting data on the underlying 
@@ -65,7 +70,8 @@ gives all equities of a country, sector, industry or a combination of the three.
 specific category.
 - `select_indices(market=None)` - with no input gives all indices, with input gives all indices of a 
 specific market which usually refers to indices in a specific country (like de_market gives DAX).
-- `select_other(product)` - gives either all Futures, all Moneymarkets or all Options.
+- `select_moneymarket(market=None)` - with no input gives all moneymarkets, with input gives all moneymarkets of a 
+specific market which usually refers to moneymarkets in a specific country.
 - `search_products(database, query, search='summary', case_sensitive=False, new_database=None)` - with input 
   from the above functions, this function searches for specific values (i.e. the query 'sustainable') in 
   one of the keys of the dictionary (which is by default the summary). It also has the option to enable 
@@ -123,7 +129,7 @@ for symbol in airlines_us_fundamentals:
 plt.tight_layout()
 plt.show()
 ``````
-Which results in the graph displayed below (as of the 3rd of February 2021). From this graph you can identify 
+Which results in the graph displayed below (as of the 14th of June 2021). From this graph you can identify 
 companies that currently lack enough assets to cover their liabilities (quick ratio < 1), and those that do have 
 enough assets (quick ratio > 1). Both too low and too high could make you wonder whether the company adequately 
 manages its assets.
@@ -247,7 +253,8 @@ get an indication whether the ETF is what you are looking for.
 Projects are bound to have (small) errors and can always be improved. Therefore, I highly encourage you to submit 
 issues and create pull requests to improve the package.
 
-The last update to the database is the 3rd of February 2021. I always accept Pull Requests every few months 
-to keep the database up to date. Extending the amount of tickers and data is also much appreciated.
+The last update to the database is the 14th of June 2021. I always accept Pull Requests every few months 
+to keep the database up to date. Extending the amount of tickers and data is also much appreciated. When you wish to do 
+this, please inform me first to prevent multiple users doing the exact same thing.
 
 <a href="https://www.buymeacoffee.com/jerbouma" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
