@@ -1,137 +1,177 @@
 import pickle
-from tqdm import tqdm
+from colorama import Fore
 from yfinance.utils import get_json
 import os
+import multiprocessing as mp
+from tqdm import tqdm
+import time
 
-PICKLE_NAME_OF_ALL_SYMBOLS = 'generic.pickle'
+REMOVE_ALL_EMPTY_PICKLES = True
+SKIP_LIST = ['Futures', 'Option']
 
-# Load pickle with data
+# Load the generic pickle and create a ticker list
+PICKLE_NAME_OF_ALL_SYMBOLS = "generic.pickle"
 THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
 my_file = os.path.join(THIS_FOLDER, PICKLE_NAME_OF_ALL_SYMBOLS)
 ticker_list = pickle.load(open(my_file, "rb")).symbols
 
-try:
-    DoneList = pickle.load(open("DoneList.pickle", "rb"))
-    Equities = pickle.load(open("Equities.pickle", "rb"))
-    ETFs = pickle.load(open("ETFs.pickle", "rb"))
-    Funds = pickle.load(open("Funds.pickle", "rb"))
-    Indices = pickle.load(open("Indices.pickle", "rb"))
-    Currencies = pickle.load(open("Currencies.pickle", "rb"))
-    Futures = pickle.load(open("Futures.pickle", "rb"))
-    CryptoCurrencies = pickle.load(open("CryptoCurrencies.pickle", "rb"))
-    MoneyMarkets = pickle.load(open("MoneyMarkets.pickle", "rb"))
-    Options = pickle.load(open("Options.pickle", "rb"))
-    Errors = pickle.load(open("Errors.pickle", "rb"))
-except Exception as e:
-    print("Not all dictionaries and/or the list of done tickers is created.")
-    print("Error: " + str(e))
-    check = input("Do you want to start fresh? (yes/no):")
-    if check == 'yes':
-        Equities = {}
-        ETFs = {}
-        Funds = {}
-        Indices = {}
-        Currencies = {}
-        Futures = {}
-        CryptoCurrencies = {}
-        MoneyMarkets = {}
-        Options = {}
-        Errors = {}
-        DoneList = []
+
+def initialize():
+    # Create a data folder in case it does not exist yet
+    if 'Data' not in os.listdir():
+        os.mkdir('Data')
     else:
-        print("You typed {INPUT} which isn't 'yes' thus stopping program.".format(INPUT=check))
-        raise ValueError("Program was stopped.")
-
-
-def save_to_pickle():
-    with open('Equities.pickle', 'wb') as handle:
-        pickle.dump(Equities, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    with open('ETFs.pickle', 'wb') as handle:
-        pickle.dump(ETFs, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    with open('Funds.pickle', 'wb') as handle:
-        pickle.dump(Funds, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    with open('Indices.pickle', 'wb') as handle:
-        pickle.dump(Indices, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    with open('Currencies.pickle', 'wb') as handle:
-        pickle.dump(Currencies, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    with open('Futures.pickle', 'wb') as handle:
-        pickle.dump(Futures, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    with open('CryptoCurrencies.pickle', 'wb') as handle:
-        pickle.dump(CryptoCurrencies, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    with open('MoneyMarkets.pickle', 'wb') as handle:
-        pickle.dump(MoneyMarkets, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    with open('Options.pickle', 'wb') as handle:
-        pickle.dump(Options, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    with open('Errors.pickle', 'wb') as handle:
-        pickle.dump(Errors, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    with open('DoneList.pickle', 'wb') as handle:
-        pickle.dump(DoneList, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
-
-# Start counter for saving to pickle and make TemporaryList
-counter_for_saving = 0
-TemporaryList = []
-
-for ticker in tqdm(ticker_list):
-    # When already done, continue
-    if ticker in DoneList:
-        continue
-
-    # Add to temporary list
-    TemporaryList.append(ticker)
-
-    # Save everything perodically
-    if counter_for_saving == 100:
-        counter_for_saving = 0
-        for ticker in TemporaryList:
-            DoneList.append(ticker)
-        TemporaryList = []
-        save_to_pickle()
-
-    # Increase counter by 1
-    counter_for_saving += 1
-
-    try:
-        data = get_json("https://finance.yahoo.com/quote/" + ticker)
-        symbol_type = ticker_list[ticker].symbolTypeDisplay
-    except Exception as e:
-        print("Not able to find the data for {TICKER} by checking the url {URL} due to {ERROR}.".format(
-            TICKER=ticker, URL="https://finance.yahoo.com/quote/" + ticker, ERROR=e))
-        Errors[ticker] = "Not able to find the data for {TICKER} by checking the url {URL} due to {ERROR}.".format(
-            TICKER=ticker, URL="https://finance.yahoo.com/quote/" + ticker, ERROR=e)
-        continue
-
-    try:
-        if symbol_type == 'Equity':
-            Equities[ticker] = data
-        elif symbol_type == "ETF":
-            ETFs[ticker] = data
-        elif symbol_type == "Fund":
-            Funds[ticker] = data
-        elif symbol_type == "Index":
-            Indices[ticker] = data
-        elif symbol_type == "Currency":
-            Currencies[ticker] = data
-        elif symbol_type == "Futures":
-            Futures[ticker] = data
-        elif symbol_type == 'CRYPTOCURRENCY':
-            CryptoCurrencies[ticker] = data
-        elif symbol_type == 'MoneyMarket':
-            MoneyMarkets[ticker] = data
-        elif symbol_type == 'Option':
-            Options[ticker] = data
+        # Determine whether pickles are corrupted. If so remove them so they are added again
+        # in the next section
+        if REMOVE_ALL_EMPTY_PICKLES:
+            print("Checking for corrupted pickles and removing empty pickles..")
         else:
-            print("The symbol type ({TYPE}) of {TICKER} is not an option".format(
-                TICKER=symbol_type, TYPE=ticker))
-            Errors[ticker] = "The symbol type ({TYPE}) of {TICKER} is not an option.".format(
-                TYPE=symbol_type, TICKER=ticker)
-            continue
-    except Exception:
-        print("Not able to find the data for {TICKER} with type {TYPE}.".format(
-            TICKER=ticker, TYPE=symbol_type))
-        Errors[ticker] = "Not able to find the data for {TICKER} with type {TYPE}.".format(
-            TICKER=ticker, TYPE=symbol_type)
-        continue
+            print("Checking for corrupted pickles..")
+        options = os.listdir('Data')
 
-# Final Save
-save_to_pickle()
+        if "Blacklist.pickle" in options:
+            options.remove("Blacklist.pickle")
+        if 'Blacklist.pickle' not in os.listdir('Data'):
+            Blacklist = {}
+            for option in options:
+                Blacklist[option] = {}
+            with open(f"Data/Blacklist.pickle", 'wb') as handle:
+                pickle.dump(Blacklist, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+        Blacklist = pickle.load(open("Data/Blacklist.pickle", "rb"))
+    
+        for option in tqdm(options):
+            if option in SKIP_LIST:
+                continue
+            tickers = [s.strip('.pickle') for s in os.listdir(f"Data/{option}")]
+            for ticker in tickers:
+                try:
+                    pickle_data = pickle.load(open(f"Data/{option}/{ticker}.pickle", "rb"))
+                    if REMOVE_ALL_EMPTY_PICKLES and not pickle_data and option not in SKIP_LIST:
+                        if ticker not in Blacklist[option]:
+                            Blacklist[option][ticker] = 1
+                        elif Blacklist[option][ticker] == 3:
+                            print(f"{Fore.LIGHTRED_EX} Data for {ticker} ({option}) is fully Blacklisted "
+                                  f"thus not removing")
+                            continue
+                        elif Blacklist[option][ticker] < 3:
+                            print(f"{Fore.RED} Data for {ticker} ({option}) is empty thus removing as "
+                                  f"REMOVE_ALL_EMPTY_PICKLES is {REMOVE_ALL_EMPTY_PICKLES} "
+                                  f"and Blacklist number {Blacklist[option][ticker]} < 3")
+                        Blacklist[option][ticker] = Blacklist[option][ticker] + 1
+                        os.remove(f"Data/{option}/{ticker}.pickle")
+                except Exception as error:
+                    print(f"{Fore.RED} Could not read (and thus removing) {ticker} due to: {error}")
+                    os.remove(f"Data/{option}/{ticker}.pickle")
+        with open(f"Data/Blacklist.pickle", 'wb') as handle:
+            pickle.dump(Blacklist, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+
+def collect_data(ticker):
+    url = "https://finance.yahoo.com/quote/" + ticker
+    try:
+        retry_times = [5, 10, 20, 30, 40, 50, 60]
+        retries = 0
+        symbol_type = ticker_list[ticker].symbolTypeDisplay
+        ticker = ticker.replace('*', '').replace('\\', '')
+
+        if symbol_type not in os.listdir('Data'):
+            os.mkdir(f'Data/{symbol_type}')
+        if symbol_type in SKIP_LIST:
+            with open(f"Data/{symbol_type}/{ticker}.pickle", 'wb') as handle:
+                pickle.dump({}, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            print(f"{Fore.RED} Empty pickle saved for {ticker} due to it being a {symbol_type}.\n")
+        if f"{ticker}.pickle" in os.listdir(f"Data/{symbol_type}"):
+            print(f"{Fore.GREEN} {ticker} ({symbol_type}) already collected. \n")
+            return None
+        while not get_json("https://finance.yahoo.com/quote/AAPL"):
+            print(f"{Fore.RED} Waiting {retry_times[retries]} seconds..")
+            time.sleep(retry_times[retries])
+            if retry_times[retries] != 60:
+                retries += 1
+        data = get_json(url)
+    except Exception as error:
+        print(f"{Fore.RED} Not able to find the data for {ticker} by checking the url {url} due to {error}. \n")
+        return None
+    try:
+        with open(f"Data/{symbol_type}/{ticker}.pickle", 'wb') as handle:
+            pickle.dump(data, handle, protocol=pickle.HIGHEST_PROTOCOL)
+        print(f"{Fore.BLUE} {ticker} downloaded and stored in {symbol_type}. \n")
+    except Exception as error:
+        print(f"{Fore.RED} Was not able to write to pickle due to: {error}. \n")
+
+
+def collect_data_issue_8(ticker):
+    url = "https://finance.yahoo.com/quote/" + ticker
+    symbol_type = 'Equity'
+    try:
+        retry_times = [5, 10, 20, 30, 40, 50, 60]
+        retries = 0
+        ticker = ticker.replace('*', '').replace('\\', '')
+
+        if f"{ticker}.pickle" in os.listdir(f"Data/{symbol_type}"):
+            print(f"{Fore.GREEN} {ticker} ({symbol_type}) already collected. \n")
+            return None
+        while not get_json("https://finance.yahoo.com/quote/AAPL"):
+            print(f"{Fore.RED} Waiting {retry_times[retries]} seconds..")
+            time.sleep(retry_times[retries])
+            if retry_times[retries] != 60:
+                retries += 1
+        data = get_json(url)
+    except Exception as error:
+        print(f"{Fore.RED} Not able to find the data for {ticker} by checking the url {url} due to {error}. \n")
+        return None
+
+    try:
+        with open(f"Data/{symbol_type}/{ticker}.pickle", 'wb') as handle:
+            pickle.dump(data, handle, protocol=pickle.HIGHEST_PROTOCOL)
+        print(f"{Fore.BLUE} {ticker} downloaded and stored in {symbol_type}. \n")
+    except Exception as error:
+        print(f"{Fore.RED} Was not able to write to pickle due to: {error}. \n")
+
+
+def collect_data_based_on_txt_for_issue_8():
+    pool = mp.Pool(mp.cpu_count())
+    print(f"{Fore.LIGHTYELLOW_EX} Starting CPUs..")
+    result = pool.map(collect_data_issue_8, ticker_symbols_issue_8)
+    print(f"{Fore.LIGHTYELLOW_EX} Ready!")
+
+
+def collect_data_based_on_pickle():
+    pool = mp.Pool(mp.cpu_count())
+    print(f"{Fore.LIGHTYELLOW_EX} Starting CPUs..")
+    result = pool.map(collect_data, ticker_symbols)
+    print(f"{Fore.LIGHTYELLOW_EX} Ready!")
+
+
+if __name__ == "__main__":
+    print(f"{Fore.YELLOW} Initalizing..")
+    initialize()
+
+    print(f"{Fore.YELLOW} Loading tickers....")
+    ticker_symbols = list(ticker_list.keys())
+    ticker_symbols_issue_8 = open("GitHub Issues/Issues - 8.txt", "r").read().split("\n")
+
+    # Determine which pickles are already created so they are not included in the total list
+    already_collected = []
+    options = os.listdir('Data')
+    if "Blacklist.pickle" in options:
+        options.remove("Blacklist.pickle")
+
+    for folder in options:
+        already_collected.extend([s.strip('.pickle') for s in os.listdir(f"Data/{folder}")])
+    already_collected_issue_8 = []
+    for item in ticker_symbols_issue_8:
+        if item in already_collected:
+            already_collected_issue_8.extend([item])
+
+    # Remove already collected tickers from the total list
+    ticker_symbols = list(set(ticker_symbols) - set(already_collected) - set(already_collected_issue_8))
+    ticker_symbols_issue_8 = list(set(ticker_symbols_issue_8) - set(already_collected_issue_8))
+
+    if ticker_symbols:
+        print(f"{Fore.YELLOW} Starting General Data collection")
+        collect_data_based_on_pickle()
+    if ticker_symbols_issue_8:
+        print(f"{Fore.YELLOW} Starting Data collection for Issue 8")
+        collect_data_based_on_txt_for_issue_8()  # See: https://github.com/JerBouma/FinanceDatabase/issues/8
