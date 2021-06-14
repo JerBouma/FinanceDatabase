@@ -7,7 +7,7 @@ from ytd.compat import text
 from ytd.compat import quote
 
 user_agent = 'yahoo-ticker-symbol-downloader'
-general_search_characters = 'abcdefghijklmnopqrstuvwxyz-' # Adjusted by JerBouma
+general_search_characters = 'abcdefghijklmnopqrstuvwxyz0123456789.='
 first_search_characters = '_abcdefghijklmnopqrstuvwxyz'
 
 class SymbolDownloader:
@@ -37,9 +37,6 @@ class SymbolDownloader:
 
         for i in range(len(search_characters)):
             element = str(prefix) + str(search_characters[i])
-            if len(element) > 5: # Adjusted by JerBouma
-                # Limit the amount of possible combinations
-                continue
             if element not in self.queries:  # Avoid having duplicates in list
                 self.queries.append(element)
 
