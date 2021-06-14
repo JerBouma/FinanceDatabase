@@ -26,7 +26,77 @@
         "summary": "The investment seeks to generate current income that is exempt from regular federal income taxes and its secondary objective is long term capital appreciation.\n Under normal market conditions, the fund seeks to achieve its investment objectives by investing at least 80% of its net assets (including investment borrowings) in municipal debt securities that pay interest that is exempt from regular federal income taxes.",
         "category": "Muni National Interm",
         "family": "First Trust",
-        "exchange": "NMS",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "HMOP": {
+        "short_name": "Hartford Municipal Opportunitie",
+        "long_name": "Hartford Municipal Opportunities ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide current income that is generally exempt from federal income taxes and long-term total return.\n The fund invests in investment grade and non-investment grade municipal securities (known as \"junk bonds\") that the sub-adviser considers to be attractive from a yield perspective while considering total return. At least 80% of the fund&#39;s net assets must be invested in municipal securities, and up to 35% of its net assets may be invested in non-investment grade municipal securities. The fund may invest in securities of any maturity or duration.",
+        "category": "Muni National Interm",
+        "family": "Hartford Mutual Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IBMO": {
+        "short_name": "iShares iBonds Dec 2026 Term Mu",
+        "long_name": "iShares iBonds Dec 2026 Term Muni Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the S&P AMT-Free Municipal Series Callable-Adjusted Dec 2026 IndexTM composed of investment-grade U.S. municipal bonds expected to mature or be redeemed before December 2, 2026.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index, except during the last months of the fund&#39;s operations, and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. It is non-diversified.",
+        "category": "Muni National Interm",
+        "family": "iShares",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "INMU": {
+        "short_name": "BlackRock Intermediate Muni Inc",
+        "long_name": "BlackRock Intermediate Muni Income Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to maximize tax-free current income.\n Under normal circumstances, the fund seeks to achieve its objective by investing at least 80% of its assets in municipal bonds. Municipal bonds include debt obligations issued by or on behalf of a governmental entity or other qualifying issuer that pay interest that is, in the opinion of bond counsel to the issuer, generally excludable from gross income for federal income tax purposes. Although it may invest in municipal bonds in any rating category, fund management presently intends to invest the fund&#39;s assets primarily in investment grade municipal bonds. It is non-diversified.",
+        "category": "Muni National Interm",
+        "family": "BlackRock",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "JMUB": {
+        "short_name": "JPMorgan Municipal ETF",
+        "long_name": "JPMorgan Municipal ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide monthly dividends, which are excluded from gross income, and to protect the value of the investors&#39; investment by investing primarily in municipal obligations.\n Under normal circumstances, the fund invests at least 80% of its assets in municipal securities, the income from which is exempt from federal income tax. The fund may invest in debt securities issued by governmental entities, certain issuers identified with the U.S. government and private issuers. It may invest in municipal mortgage-backed and asset-backed securities.",
+        "category": "Muni National Interm",
+        "family": "JPMorgan",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "MBND": {
+        "short_name": "SPDR Nuveen Municipal Bond ETF",
+        "long_name": "SPDR Nuveen Municipal Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide current income that is exempt from regular federal income taxes; capital appreciation is a secondary objective when consistent with the fund&#39;s primary objective.\n Normally, the fund invests at least 80% of its net assets in municipal bonds that pay income that is exempt from regular federal income tax. Its investment portfolio will consist primarily of municipal bonds rated A3/A-/A- or higher by an independent rating agency; however the fund may invest in municipal bonds of any credit quality, including up to 20% of its net assets in low- to medium-quality bonds rated Baa1/BBB+/BBB+ or lower. The fund is non-diversified.",
+        "category": "Muni National Interm",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "MMIN": {
+        "short_name": "IQ MacKay Municipal Insured ETF",
+        "long_name": "IQ MacKay Municipal Insured ETF",
+        "currency": "USD",
+        "summary": "The investment seeks current income exempt from federal income tax.\n The fund is an actively managed ETF and thus does not seek to replicate the performance of a specific index. Instead, it uses an active management strategy to meet its investment objective. The fund, under normal circumstances, invests at least 80% of its assets (net assets plus borrowings for investment purposes) in: (i) debt securities whose interest is, in the opinion of bond counsel for the issuer at the time of issuance, exempt from federal Income tax (\"Municipal Bonds\"); and (ii) debt securities covered by an insurance policy guaranteeing the payment of principal and interest.",
+        "category": "Muni National Interm",
+        "family": "IndexIQ",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "MMIT": {
+        "short_name": "IQ MacKay Municipal Intermediat",
+        "long_name": "IQ MacKay Municipal Intermediate ETF",
+        "currency": "USD",
+        "summary": "The investment seeks current income exempt from federal income tax.\n The fund is an actively managed ETF and thus does not seek to replicate the performance of a specific index. Instead, it uses an active management strategy to meet its investment objective. The fund, under normal circumstances, invests at least 80% of its assets (net assets plus borrowings for investment purposes) in debt securities whose interest is, in the opinion of bond counsel for the issuer at the time of issuance, exempt from federal income tax (\"Municipal Bonds\"). It does not intend to invest in Municipal Bonds whose interest is subject to the federal alternative minimum tax.",
+        "category": "Muni National Interm",
+        "family": "IndexIQ",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "MUB": {
@@ -47,6 +117,26 @@
         "category": "Muni National Interm",
         "family": "PIMCO",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "MUST": {
+        "short_name": "Columbia Multi-Sector Municipal",
+        "long_name": "Columbia Multi-Sector Municipal Income ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that, before fees and expenses, closely correspond to the performance of the Beta Advantage\u00c2\u00ae Multi-Sector Municipal Bond Index.\n The fund will invest at least 80% of its assets in securities within the index. It invests at least 80% of its net assets (plus borrowings for investment purposes) in bonds and other debt instruments issued by or on behalf of state or local governmental units whose interest is exempt from U.S. federal income tax. The index reflects a rules-based, multi-sector strategic beta approach to measuring the performance of the U.S. tax-exempt bond market.",
+        "category": "Muni National Interm",
+        "family": "Columbia Threadneedle",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "RTAI": {
+        "short_name": "Rareview Tax Advantaged Income ",
+        "long_name": "Rareview Tax Advantaged Income ETF",
+        "currency": "USD",
+        "summary": "The investment seeks total return with an emphasis on providing current income, a substantial portion of which will be exempt from federal income taxes.\n Under normal market conditions, the fund will invest in municipal bond closed-end funds trading at a discount or premium to their underlying net asset value and that pay regular periodic cash distributions. While it will invest primarily in closed-end funds, the fund may invest up to 30% of its assets in municipal or short term Treasury ETFs if in the adviser&#39;s discretion, the ETFs will provide a better investment opportunity or liquidity for the asset class. It is non-diversified.",
+        "category": "Muni National Interm",
+        "family": "Rareview Capital",
+        "exchange": "BTS",
         "market": "us_market"
     },
     "TAXF": {

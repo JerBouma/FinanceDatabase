@@ -2,7 +2,7 @@
     "0OZ.SG": {
         "short_name": "Ohizumi MFG. Co. Ltd. Registere",
         "long_name": "Ohizumi Mfg. Co., Ltd.",
-        "summary": "Ohizumi Mfg. Co., Ltd. manufactures and sells electronics parts and electric equipment/devices primarily in Japan. It offers NTC thermistors, such as thermistors for temperature sensing or temperature compensation, temperature sensors for automobile engines, sensors for car air conditioners, and temperature sensors for room air conditioners, as well as for residential installations and home electric appliances. The company also provides PTC thermistors for over-current protection, demagnetization, heaters, temperature sensing/compensation, and other applications; and metal oxide non-linear resistor varistors for the protection of semiconductors from over-voltage, lighting surge, on-off surge of relays, automotive electronic equipment, etc. In addition, it offers thermistor assemblies for automotive industries, household and housing applications, and thermistor assembly and other applications. The company was formerly known as Ohizumi Aircraft Equipment Manufacturing Co., Ltd. and changed its name to Ohizumi Mfg. Co., Ltd. in 1945. Ohizumi Mfg. Co., Ltd. was founded in 1939 and is headquartered in Sayama, Japan.",
+        "summary": "Ohizumi Mfg. Co., Ltd. manufactures and sells electronics components primarily in Japan. The company offers various thermistors, including NBC, a bare chip thermistor for used in semiconductor laser; NSS and NSM, a surface-mounting type chip thermistor used in TCXO, LCD backlight, rechargeable battery overcharging protection, CPU temperature monitor, optical pickup, HDD, and autofocus circuits; NGR, a glass sealed radial leads chip thermistor used for temperature sensing for water heaters, engine control, air conditioners; NDH, a glass sealed axal leads chip thermistor used for automobiles and room air conditioning; NRD, a disc thermistor with lead used in temperature compensation for electronic circuits; NRC, a chip thermistor with lead-wire used for rechargeable battery overcharging protection circuit, element in various temperature sensors, and temperature compensation for electronic circuits; and PTC thermistors for various heaters. It also provides metal oxide non-linear resistor varistors for the protection of semiconductors, electronic equipment, control equipment, and general electronic devices from over-voltage, lighting surge, switching surge of relays, and stabilizing voltage; and thermistor assemblies for automobile industries, household and housing applications, and thermistors and other applications. The company was formerly known as Ohizumi Aircraft Equipment Manufacturing Co., Ltd. and changed its name to Ohizumi Mfg. Co., Ltd. in 1945. Ohizumi Mfg. Co., Ltd. was founded in 1939 and is headquartered in Sayama, Japan.",
         "currency": "EUR",
         "sector": "Technology",
         "industry": "Semiconductor Equipment & Materials",
@@ -35,10 +35,22 @@
         "country": "Japan",
         "city": "Tokyo"
     },
+    "5217.T": {
+        "short_name": "TECHNO QUARTZ",
+        "long_name": "Techno Quartz Inc.",
+        "summary": "Techno Quartz Inc. provides high-precision quartz glass, silicon, and ceramic products primarily for use in semiconductor and liquid crystal display manufacturing equipment, and analytics equipment in Japan. It offers vertical quartz boats; quartz pedestals; high-precision welded bell jars; gas distribution plates; quartz rings; quartz reaction tubes; and machining solutions. The company also provides single crystal silicon products that are used in semiconductor and flat panel displays manufacturing processes. In addition, it offers CVD Yttria coated parts; and contract cleaning services for ceramic, silicon, metals, and coated products. The company was incorporated in 1976 and is headquartered in Tokyo, Japan. Techno Quartz Inc. is a subsidiary of GL Sciences Inc.",
+        "currency": "JPY",
+        "sector": "Technology",
+        "industry": "Semiconductor Equipment & Materials",
+        "exchange": "JPX",
+        "market": "jp_market",
+        "country": "Japan",
+        "city": "Tokyo"
+    },
     "5384.T": {
         "short_name": "FUJIMI INC",
         "long_name": "Fujimi Incorporated",
-        "summary": "Fujimi Incorporated manufactures and sells synthetic precision abrasives in Japan, rest of Asia, North America, and Europe. The company offers various products for crystal silicon ingots, lapping, and polishing silicon wafers; abrasives used in the production of semiconductor devices, such as CMP slurry and other materials; and polishing products for magnetic disks of the hard disk drives. It also provides specialty materials, including lapping, polishing, and diamond products, as well as polishing pads and catalyst carriers for use in electronic components, lighting and LED products, automobiles, lenses, power semiconductors, and other products. In addition, the company offers thermal spray materials for use in aerospace, semiconductor liquid crystal, steel, energy, chemical, and other industries. Fujimi Incorporated was founded in 1950 and is headquartered in Kiyosu, Japan.",
+        "summary": "Fujimi Incorporated manufactures and sells synthetic precision abrasives in Japan, rest of Asia, North America, and Europe. The company offers various products for crystal silicon ingots, lapping, and polishing silicon wafers; abrasives for use in the production of semiconductor devices, such as CMP slurry and other materials; and polishing products for magnetic disks of the hard disk drives. It also provides specialty materials, including lapping, polishing, and diamond products, as well as polishing pads and catalyst carriers for use in electronic components, lighting and LED products, automobiles, lenses, power semiconductors, and other products. In addition, the company offers thermal spray materials for use in aerospace, semiconductor, liquid crystal, steel, energy, chemical, and other industries. Fujimi Incorporated was founded in 1950 and is headquartered in Kiyosu, Japan.",
         "currency": "JPY",
         "sector": "Technology",
         "industry": "Semiconductor Equipment & Materials",
@@ -46,6 +58,18 @@
         "market": "jp_market",
         "country": "Japan",
         "city": "Kiyosu"
+    },
+    "6228.T": {
+        "short_name": "JET CO LTD",
+        "long_name": "J.E.T. CO., LTD.",
+        "summary": "J.E.T.Co.,LTD. engages in the design, development, manufacture, sale, maintenance, and service of semiconductor cleaning equipment in Japan. Its product portfolio includes various types of semiconductors, such as SSD, HTS, BW, SC, QUANTUM, and VRC series products; bevel treatment LIBRA and dryer systems; and quarts tube and manual wet stations, spin dryers, and quarts tube storage products. The company also provides internal short/open event checkers, electrolyte leak checkers, and ultrasonic welding monitoring systems. J.E.T.Co.,LTD. was incorporated in 2009 and is based in Okayama, Japan. J.E.T.Co.,LTD. operates as a subsidiary of Zeus Co.,Ltd.",
+        "currency": "JPY",
+        "sector": "Technology",
+        "industry": "Semiconductor Equipment & Materials",
+        "exchange": "JPX",
+        "market": "jp_market",
+        "country": "Japan",
+        "city": "Asakuchi"
     },
     "6323.T": {
         "short_name": "RORZE CORP",
@@ -62,7 +86,7 @@
     "6337.T": {
         "short_name": "TESEC CORP",
         "long_name": "TESEC Corporation",
-        "summary": "TESEC Corporation designs, develops, manufactures, and sells semiconductor test equipment in Japan and internationally. It offers various test systems, including discrete device test systems, thermal resistance testers, inductive load testers, dynamic test systems, IPD/IPM test systems, and internal gate resistance testers. The company also provides various handlers comprising micro electro mechanical systems, strip test, film frame test, gravity, pick and place, discrete, and TAB handlers, as well as die sorters. In addition, it offers after-sales services, such as tester calibration, overhaul, and training services, as well as spare parts, warranty, maintenance, and resale services. The company was formerly known as TES Corporation and changed its name to TESEC Corporation in 1980. TESEC Corporation was founded in 1969 and is headquartered in Tokyo, Japan.",
+        "summary": "TESEC Corporation designs, develops, manufactures, and sells semiconductor test equipment in Japan and internationally. It offers various test systems, including discrete device test systems, thermal resistance testers, inductive load testers, dynamic test systems, IPD/IPM test systems, and internal gate resistance testers. The company also provides various handlers comprising micro electro mechanical systems, film frame test, gravity, pick and place, discrete, and TAB handlers, as well as die sorters. In addition, it offers after-sales services, such as tester calibration, overhaul, and training services, as well as spare parts, warranty, maintenance, and resale services. The company was formerly known as TES Corporation and changed its name to TESEC Corporation in 1980. TESEC Corporation was founded in 1969 and is headquartered in Tokyo, Japan.",
         "currency": "JPY",
         "sector": "Technology",
         "industry": "Semiconductor Equipment & Materials",
@@ -98,7 +122,7 @@
     "6618.T": {
         "short_name": "OHIZUMI MFG CO LTD",
         "long_name": "Ohizumi Mfg. Co., Ltd.",
-        "summary": "Ohizumi Mfg. Co., Ltd. manufactures and sells electronics parts and electric equipment/devices primarily in Japan. It offers NTC thermistors, such as thermistors for temperature sensing or temperature compensation, temperature sensors for automobile engines, sensors for car air conditioners, and temperature sensors for room air conditioners, as well as for residential installations and home electric appliances. The company also provides PTC thermistors for over-current protection, demagnetization, heaters, temperature sensing/compensation, and other applications; and metal oxide non-linear resistor varistors for the protection of semiconductors from over-voltage, lighting surge, on-off surge of relays, automotive electronic equipment, etc. In addition, it offers thermistor assemblies for automotive industries, household and housing applications, and thermistor assembly and other applications. The company was formerly known as Ohizumi Aircraft Equipment Manufacturing Co., Ltd. and changed its name to Ohizumi Mfg. Co., Ltd. in 1945. Ohizumi Mfg. Co., Ltd. was founded in 1939 and is headquartered in Sayama, Japan.",
+        "summary": "Ohizumi Mfg. Co., Ltd. manufactures and sells electronics components primarily in Japan. The company offers various thermistors, including NBC, a bare chip thermistor for used in semiconductor laser; NSS and NSM, a surface-mounting type chip thermistor used in TCXO, LCD backlight, rechargeable battery overcharging protection, CPU temperature monitor, optical pickup, HDD, and autofocus circuits; NGR, a glass sealed radial leads chip thermistor used for temperature sensing for water heaters, engine control, air conditioners; NDH, a glass sealed axal leads chip thermistor used for automobiles and room air conditioning; NRD, a disc thermistor with lead used in temperature compensation for electronic circuits; NRC, a chip thermistor with lead-wire used for rechargeable battery overcharging protection circuit, element in various temperature sensors, and temperature compensation for electronic circuits; and PTC thermistors for various heaters. It also provides metal oxide non-linear resistor varistors for the protection of semiconductors, electronic equipment, control equipment, and general electronic devices from over-voltage, lighting surge, switching surge of relays, and stabilizing voltage; and thermistor assemblies for automobile industries, household and housing applications, and thermistors and other applications. The company was formerly known as Ohizumi Aircraft Equipment Manufacturing Co., Ltd. and changed its name to Ohizumi Mfg. Co., Ltd. in 1945. Ohizumi Mfg. Co., Ltd. was founded in 1939 and is headquartered in Sayama, Japan.",
         "currency": "JPY",
         "sector": "Technology",
         "industry": "Semiconductor Equipment & Materials",
@@ -131,6 +155,30 @@
         "country": "Japan",
         "city": "Senboku"
     },
+    "6857.T": {
+        "short_name": "ADVANTEST CORP",
+        "long_name": "Advantest Corporation",
+        "summary": "Advantest Corporation manufactures and sells semiconductor and component test system products and mechatronics-related products. It operates through three segments: Semiconductor and Component Test System; Mechatronics System; and Services, Support and Others. The Semiconductor and Component Test System segment provides customers with test system products for the semiconductor industry and the electronic parts industry. This segment offers test systems for SoC semiconductor devices; and test systems for memory semiconductors devices. The Mechatronics System segment provides test handlers; mechatronic-applied products for handling semiconductor devices; and device interfaces, which serve as interfaces with the devices that are measured. This segment also engages in the operations related to nano-technology products. The Services, Support and Others segment provides customer solutions for the semiconductor and component test system and mechatronics system segments; and support services. This segment is also involved in the sale of consumables and used products; and equipment lease business and others. In addition, the company engages in the research and development activities measuring and testing technologies. Advantest Corporation serves fabless semiconductor companies, foundries, and test houses, as well as industrial, design, and manufacturing companies in Japan, rest of Asia, the United States, and Europe. Advantest Corporation has collaboration with STMicroelectronics on advanced automated test cell for IC Testing; and partnership with PDF Solutions Inc. for cloud-based software solutions. The company was founded in 1954 and is headquartered in Tokyo, Japan.",
+        "currency": "JPY",
+        "sector": "Technology",
+        "industry": "Semiconductor Equipment & Materials",
+        "exchange": "JPX",
+        "market": "jp_market",
+        "country": "Japan",
+        "city": "Tokyo"
+    },
+    "6871.T": {
+        "short_name": "MICRONICS JAPAN CO",
+        "long_name": "Micronics Japan Co., Ltd.",
+        "summary": "Micronics Japan Co., Ltd. develops, manufactures, and sells testing and measurement equipment for semiconductors and LCD testing system worldwide. The company's semiconductor products include probe cards, package probes, semiconductor test equipment, and wafer prober. It also provides flat panel display (FPD) products, such as automated optical inspection equipment under the PIXQUIRE name; and mura inspection and compensation system under the Gaterumph name, as well as probe units, FPD lighting units, manual probers for FPD substrates, and array probers/cell probers. Micronics Japan Co., Ltd. was formerly known as Towa Electric Co., Ltd. and changed to Micronics Japan Co., Ltd. in April 1975. The company was founded in 1970 and is headquartered in Musashino, Japan.",
+        "currency": "JPY",
+        "sector": "Technology",
+        "industry": "Semiconductor Equipment & Materials",
+        "exchange": "JPX",
+        "market": "jp_market",
+        "country": "Japan",
+        "city": "Musashino"
+    },
     "7510.T": {
         "short_name": "TAKEBISHI CORPORATION",
         "long_name": "Takebishi Corporation",
@@ -146,7 +194,7 @@
     "7587.T": {
         "short_name": "PALTEK CORP",
         "long_name": "Paltek Corporation",
-        "summary": "Paltek Corporation engages in the sale of semiconductors and related products in Japan. Its products include FPGAs, memory ICs, ASSP, analog ICs/power supply ICs, telecom/network applications, wireless ICs, sensor ICs, clock/timing ICs, etc. The company also offers ODM services in the field of medical, industrial, and communication equipment; model-based design services; and in-house products, such as FPGA computing platforms used for video processing and video transmission. In addition, it provides mobility, IoT, AI, video transmission, server and storage, paper packing, and fleet management solutions, as well as body motion sensor for infants, work support wearable robots, chlorus acid water, and space sanitization systems. Paltek Corporation was incorporated in 1977 and is headquartered in Yokohama, Japan.",
+        "summary": "Paltek Corporation engages in the sale of semiconductors and related products in Japan. Its products include FPGAs, memory ICs, ASSP, analog ICs/power supply ICs, telecom/network applications, wireless ICs, sensor ICs, clock/timing ICs, etc. The company also offers ODM services in the field of medical, industrial, and communication equipment; model-based design services; and in-house products, such as FPGA computing platforms used for video processing and video transmission. In addition, it provides mobility, IoT, AI, video transmission, server and storage, paper packing, and fleet management solutions, as well as body motion sensor for infants, work support wearable robots, chlorus acid water, and space sanitization systems. Paltek Corporation was incorporated in 1977 and is headquartered in Yokohama, Japan. As of May 27, 2021, Paltek Corporation operates as a subsidiary of Restar Holdings Corporation.",
         "currency": "JPY",
         "sector": "Technology",
         "industry": "Semiconductor Equipment & Materials",
@@ -203,6 +251,18 @@
         "country": "Japan",
         "city": "Takasaki"
     },
+    "ADTTF": {
+        "short_name": "ADVANTEST CORP",
+        "long_name": "Advantest Corporation",
+        "summary": "Advantest Corporation manufactures and sells semiconductor and component test system products and mechatronics-related products. It operates through three segments: Semiconductor and Component Test System; Mechatronics System; and Services, Support and Others. The Semiconductor and Component Test System segment provides customers with test system products for the semiconductor industry and the electronic parts industry. This segment offers test systems for SoC semiconductor devices; and test systems for memory semiconductors devices. The Mechatronics System segment provides test handlers; mechatronic-applied products for handling semiconductor devices; and device interfaces, which serve as interfaces with the devices that are measured. This segment also engages in the operations related to nano-technology products. The Services, Support and Others segment provides customer solutions for the semiconductor and component test system and mechatronics system segments; and support services. This segment is also involved in the sale of consumables and used products; and equipment lease business and others. In addition, the company engages in the research and development activities measuring and testing technologies. Advantest Corporation serves fabless semiconductor companies, foundries, and test houses, as well as industrial, design, and manufacturing companies in Japan, rest of Asia, the United States, and Europe. Advantest Corporation has collaboration with STMicroelectronics on advanced automated test cell for IC Testing; and partnership with PDF Solutions Inc. for cloud-based software solutions. The company was founded in 1954 and is headquartered in Tokyo, Japan.",
+        "currency": "USD",
+        "sector": "Technology",
+        "industry": "Semiconductor Equipment & Materials",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Japan",
+        "city": "Tokyo"
+    },
     "ATEYY": {
         "short_name": "ADVANTEST CORP",
         "long_name": "Advantest Corporation",
@@ -212,6 +272,18 @@
         "industry": "Semiconductor Equipment & Materials",
         "exchange": "PNK",
         "market": "us_market",
+        "country": "Japan",
+        "city": "Tokyo"
+    },
+    "D65.SG": {
+        "short_name": "DISCO CORP. Registered Shares o",
+        "long_name": "Disco Corporation",
+        "summary": "Disco Corporation manufactures and sells precision cutting, grinding, and polishing machines in Japan and internationally. The company's precision machines include dicing saws, laser saws, grinders, polishers, wafer mounters, die separators, surface planers, and waterjet saws, as well as products for dicing before grinding process and package singulation. It also offers precision processing tools comprising dicing blades, grinding wheels, and dry polishing wheels; and other products, such as accessory equipment, as well as frames and cassettes, and additives for cutting waters. In addition, the company is involved in the disassembly and recycling of precision cutting, grinding, and polishing machines, as well as provides training services for the maintenance and operation of its products. Further, it leases precision machines; and purchases and sells used machines. The company was founded in 1937 and is headquartered in Tokyo, Japan.",
+        "currency": "EUR",
+        "sector": "Technology",
+        "industry": "Semiconductor Equipment & Materials",
+        "exchange": "STU",
+        "market": "dr_market",
         "country": "Japan",
         "city": "Tokyo"
     },
@@ -226,6 +298,18 @@
         "market": "us_market",
         "country": "Japan",
         "city": "Tokyo"
+    },
+    "MJ3.F": {
+        "short_name": "MICRONICS JAPAN CO. LTD",
+        "long_name": "Micronics Japan Co., Ltd.",
+        "summary": "Micronics Japan Co., Ltd. develops, manufactures, and sells testing and measurement equipment for semiconductors and LCD testing system worldwide. The company's semiconductor products include probe cards, package probes, semiconductor test equipment, and wafer prober. It also provides flat panel display (FPD) products, such as automated optical inspection equipment under the PIXQUIRE name; and mura inspection and compensation system under the Gaterumph name, as well as probe units, FPD lighting units, manual probers for FPD substrates, and array probers/cell probers. Micronics Japan Co., Ltd. was formerly known as Towa Electric Co., Ltd. and changed to Micronics Japan Co., Ltd. in April 1975. The company was founded in 1970 and is headquartered in Musashino, Japan.",
+        "currency": "EUR",
+        "sector": "Technology",
+        "industry": "Semiconductor Equipment & Materials",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Japan",
+        "city": "Musashino"
     },
     "MU2.MU": {
         "short_name": "MIMASU SEMICON.IND.",
@@ -290,7 +374,7 @@
     "TEW.F": {
         "short_name": "TESEC CORP.",
         "long_name": "TESEC Corporation",
-        "summary": "TESEC Corporation designs, develops, manufactures, and sells semiconductor test equipment in Japan and internationally. It offers various test systems, including discrete device test systems, thermal resistance testers, inductive load testers, dynamic test systems, IPD/IPM test systems, and internal gate resistance testers. The company also provides various handlers comprising micro electro mechanical systems, strip test, film frame test, gravity, pick and place, discrete, and TAB handlers, as well as die sorters. In addition, it offers after-sales services, such as tester calibration, overhaul, and training services, as well as spare parts, warranty, maintenance, and resale services. The company was formerly known as TES Corporation and changed its name to TESEC Corporation in 1980. TESEC Corporation was founded in 1969 and is headquartered in Tokyo, Japan.",
+        "summary": "TESEC Corporation designs, develops, manufactures, and sells semiconductor test equipment in Japan and internationally. It offers various test systems, including discrete device test systems, thermal resistance testers, inductive load testers, dynamic test systems, IPD/IPM test systems, and internal gate resistance testers. The company also provides various handlers comprising micro electro mechanical systems, film frame test, gravity, pick and place, discrete, and TAB handlers, as well as die sorters. In addition, it offers after-sales services, such as tester calibration, overhaul, and training services, as well as spare parts, warranty, maintenance, and resale services. The company was formerly known as TES Corporation and changed its name to TESEC Corporation in 1980. TESEC Corporation was founded in 1969 and is headquartered in Tokyo, Japan.",
         "currency": "EUR",
         "sector": "Technology",
         "industry": "Semiconductor Equipment & Materials",
@@ -332,6 +416,30 @@
         "industry": "Semiconductor Equipment & Materials",
         "exchange": "PNK",
         "market": "us_market",
+        "country": "Japan",
+        "city": "Tokyo"
+    },
+    "VAN.F": {
+        "short_name": "ADVANTEST CORP.",
+        "long_name": "Advantest Corporation",
+        "summary": "Advantest Corporation manufactures and sells semiconductor and component test system products and mechatronics-related products. It operates through three segments: Semiconductor and Component Test System; Mechatronics System; and Services, Support and Others. The Semiconductor and Component Test System segment provides customers with test system products for the semiconductor industry and the electronic parts industry. This segment offers test systems for SoC semiconductor devices; and test systems for memory semiconductors devices. The Mechatronics System segment provides test handlers; mechatronic-applied products for handling semiconductor devices; and device interfaces, which serve as interfaces with the devices that are measured. This segment also engages in the operations related to nano-technology products. The Services, Support and Others segment provides customer solutions for the semiconductor and component test system and mechatronics system segments; and support services. This segment is also involved in the sale of consumables and used products; and equipment lease business and others. In addition, the company engages in the research and development activities measuring and testing technologies. Advantest Corporation serves fabless semiconductor companies, foundries, and test houses, as well as industrial, design, and manufacturing companies in Japan, rest of Asia, the United States, and Europe. Advantest Corporation has collaboration with STMicroelectronics on advanced automated test cell for IC Testing; and partnership with PDF Solutions Inc. for cloud-based software solutions. The company was founded in 1954 and is headquartered in Tokyo, Japan.",
+        "currency": "EUR",
+        "sector": "Technology",
+        "industry": "Semiconductor Equipment & Materials",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Japan",
+        "city": "Tokyo"
+    },
+    "VANA.F": {
+        "short_name": "ADVANTEST  ADR NEW/1 O.N.",
+        "long_name": "Advantest Corporation",
+        "summary": "Advantest Corporation manufactures and sells semiconductor and component test system products and mechatronics-related products. It operates through three segments: Semiconductor and Component Test System; Mechatronics System; and Services, Support and Others. The Semiconductor and Component Test System segment provides customers with test system products for the semiconductor industry and the electronic parts industry. This segment offers test systems for SoC semiconductor devices; and test systems for memory semiconductors devices. The Mechatronics System segment provides test handlers; mechatronic-applied products for handling semiconductor devices; and device interfaces, which serve as interfaces with the devices that are measured. This segment also engages in the operations related to nano-technology products. The Services, Support and Others segment provides customer solutions for the semiconductor and component test system and mechatronics system segments; and support services. This segment is also involved in the sale of consumables and used products; and equipment lease business and others. In addition, the company engages in the research and development activities measuring and testing technologies. Advantest Corporation serves fabless semiconductor companies, foundries, and test houses, as well as industrial, design, and manufacturing companies in Japan, rest of Asia, the United States, and Europe. Advantest Corporation has collaboration with STMicroelectronics on advanced automated test cell for IC Testing; and partnership with PDF Solutions Inc. for cloud-based software solutions. The company was founded in 1954 and is headquartered in Tokyo, Japan.",
+        "currency": "EUR",
+        "sector": "Technology",
+        "industry": "Semiconductor Equipment & Materials",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "Japan",
         "city": "Tokyo"
     }

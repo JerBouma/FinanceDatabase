@@ -1,4 +1,40 @@
 {
+    "0A7.F": {
+        "short_name": "PLANETEL SPA",
+        "long_name": "Planetel S.p.A.",
+        "summary": "PLANETEL S.p.A. offers integrated telecommunication services in Italy. The company provides fiber optic network services for businesses, and wholesale and residential customers through a network of 1,400 kms of fiber optic network in 96 Municipalities. It also offers voice, internet, and data services; IP communication services; broadband and ultra-broadband services in various modes, including xDSL, FTTC, FTTH, FTTP, and radio connectivity; virtual bandwidth, managed hosting, managed housing, and colocation services; and telephone systems and virtual switchboard services. In addition, the company provides IT, cloud, and web services. PLANETEL S.p.A. was founded in 2001 and is headquartered in Treviolo, Italy.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Treviolo"
+    },
+    "7E0.F": {
+        "short_name": "CONVERGENZE S.P.A. SB",
+        "long_name": "Convergenze S.p.A. Societ\u00e0 Benefit",
+        "summary": "Convergenze S.p.A., through its subsidiaries, provides nationwide Internet services, voice, energy, and natural gas services. The company offers fiber optic network and Wi-Fi; VoIP and voice services, and marketing services; and cloud data storage, fax, and phone services. It also provides electricity supply service for the home, condominium, and business; charging network for electric cars; and natural gas supply services. Convergenze S.p.A. was founded in 2005 and is based in Salerno, Italy.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Salerno"
+    },
+    "CVG.MI": {
+        "short_name": "CONVERGENZE",
+        "long_name": "Convergenze S.p.A. Societ\u00e0 Benefit",
+        "summary": "Convergenze S.p.A., through its subsidiaries, provides nationwide Internet services, voice, energy, and natural gas services. The company offers fiber optic network and Wi-Fi; VoIP and voice services, and marketing services; and cloud data storage, fax, and phone services. It also provides electricity supply service for the home, condominium, and business; charging network for electric cars; and natural gas supply services. Convergenze S.p.A. was founded in 2005 and is based in Salerno, Italy.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Salerno"
+    },
     "EAEN.F": {
         "short_name": "RETELIT S.P.A. NUOVA",
         "long_name": "Retelit S.p.A.",
@@ -11,17 +47,29 @@
         "country": "Italy",
         "city": "Milan"
     },
-    "INW.MI": {
-        "short_name": "INWIT",
-        "long_name": "Infrastrutture Wireless Italiane S.p.A.",
-        "summary": "Infrastrutture Wireless Italiane S.p.A. operates in the telco infrastructure business in Italy. The company constructs and operates towers. It offers integrated hosting services to create wireless networks, antennae framework, cabling, parabolas, spaces for equipment and technological systems for power supply; site access and security management, 24h supervision, scheduled maintenance, and corrective and unscheduled maintenance services; and fiber optic connection of transmission sites. The company also creates indoor and outdoor coverage with micro cells and distributed antenna systems in stations, hospitals, airports, motorways, shopping centers, stadiums, and meeting and entertainment spaces; and designs and constructs new sites. It manages approximately 11,000 sites. The company serves network operators; operators with licenses for radio transmission services in other wireless technologies; broadcasting service operators; and institutions, public entities, armed forces, etc. Infrastrutture Wireless Italiane S.p.A. was founded in 2015 and is based in Milan, Italy.",
+    "GO.MI": {
+        "short_name": "GO INTERNET",
+        "long_name": "GO internet S.p.A.",
+        "summary": "GO internet S.p.A. operates as an Internet service provider in the Marche and Emilia Romagna regions in Italy. It offers Internet and voice connection services using WiMAX/LTE wireless technologies; and telephone services through the VoIP protocol. The company also offers ultra-broadband connections. It serves families and businesses. The company was founded in 2002 and is based in Gubbio, Italy.",
         "currency": "EUR",
         "sector": "Communication Services",
         "industry": "Telecom Services",
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "city": "Gubbio"
+    },
+    "INW.MI": {
+        "short_name": "INWIT",
+        "long_name": "Infrastrutture Wireless Italiane S.p.A.",
+        "summary": "Infrastrutture Wireless Italiane S.p.A. operates in the telco infrastructure business in Italy. The company constructs and operates towers. It offers integrated hosting services to create wireless networks, masts for antennas, cabling, dishes, spaces for equipment, and technological systems for power supply; site access and security management, 24h supervision, and ordinary, corrective and extraordinary maintenance services; and fiber optic connection of transmission sites. The company also creates indoor and outdoor roofs with micro cells and distributed antenna systems in stations, hospitals, airports, highways, shopping centers, stadiums, and meeting and entertainment spaces; and designs and constructs new sites. The company serves network operators; operators with licenses for radio transmission services in other wireless technologies; broadcasting service operators; and institutions, public entities, armed forces, etc. Infrastrutture Wireless Italiane S.p.A. was incorporated in 2015 and is headquartered in Rome, Italy.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Rome"
     },
     "ITD.MI": {
         "short_name": "INTRED",
@@ -38,7 +86,7 @@
     "KLR": {
         "short_name": "Kaleyra, Inc.",
         "long_name": "Kaleyra, Inc.",
-        "summary": "Kaleyra, Inc. provides a cloud communications platform for enterprises worldwide. Its platform integrates software services and applications that enable mobile first interactive end-user customer communications. The company was founded in 1999 and is headquartered in Milan, Italy.",
+        "summary": "Kaleyra, Inc. provides mobile communication services for financial institutions and enterprises of various sizes worldwide. The company, through its proprietary platform, manages multi-channel integrated communication services on a global scale comprising messages, push notifications, e-mail, instant messaging, voice services, and chatbots. Its technology manages billions of messages monthly with a reach to hundreds of MNOs and approximately 190 countries. Kaleyra, Inc. was founded in 1999 and is headquartered in Milan, Italy.",
         "currency": "USD",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -59,10 +107,46 @@
         "country": "Italy",
         "city": "Milan"
     },
+    "OT3.MU": {
+        "short_name": "SOFTLAB S.P.A.",
+        "long_name": "Softlab S.p.A.",
+        "summary": "Softlab S.p.A., operates in the ICT sector in Italy, Latin America, other European countries, India, North America, and internationally. The company operates through three segments: Acotel Interactive, Bucksense, and Acotel Net. The Acotel Interactive segment offers digital entertainment products and services, including mobile entertainment, casual gaming, social dating, and games of skill offerings marketed under consumer brands, such as SkillDerby for smartphone games, SkillSweet for Web games, Yabox for casual gaming on PC, and Flycell for the download of content, as well as SurveyLotto, GiocaNews, and Palpitamos for prize competitions. The Bucksense segment offers programmatic advertising services. The Acotel Net segment is involved in the design, production, and maintenance of electronic security systems in Italy, as well as engages in the installation, supply, servicing, and maintenance of remote surveillance equipment. This segment also offers energy and health management services. Softlab S.p.A. was incorporated in 2003 and is based in Rome, Italy.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "MUN",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Rome"
+    },
+    "PLT.MI": {
+        "short_name": "PLANETEL",
+        "long_name": "Planetel S.p.A.",
+        "summary": "PLANETEL S.p.A. offers integrated telecommunication services in Italy. The company provides fiber optic network services for businesses, and wholesale and residential customers through a network of 1,400 kms of fiber optic network in 96 Municipalities. It also offers voice, internet, and data services; IP communication services; broadband and ultra-broadband services in various modes, including xDSL, FTTC, FTTH, FTTP, and radio connectivity; virtual bandwidth, managed hosting, managed housing, and colocation services; and telephone systems and virtual switchboard services. In addition, the company provides IT, cloud, and web services. PLANETEL S.p.A. was founded in 2001 and is headquartered in Treviolo, Italy.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Treviolo"
+    },
+    "SOF.MI": {
+        "short_name": "SOFTLAB",
+        "long_name": "Softlab S.p.A.",
+        "summary": "Softlab S.p.A., operates in the ICT sector in Italy, Latin America, other European countries, India, North America, and internationally. The company operates through three segments: Acotel Interactive, Bucksense, and Acotel Net. The Acotel Interactive segment offers digital entertainment products and services, including mobile entertainment, casual gaming, social dating, and games of skill offerings marketed under consumer brands, such as SkillDerby for smartphone games, SkillSweet for Web games, Yabox for casual gaming on PC, and Flycell for the download of content, as well as SurveyLotto, GiocaNews, and Palpitamos for prize competitions. The Bucksense segment offers programmatic advertising services. The Acotel Net segment is involved in the design, production, and maintenance of electronic security systems in Italy, as well as engages in the installation, supply, servicing, and maintenance of remote surveillance equipment. This segment also offers energy and health management services. Softlab S.p.A. was incorporated in 2003 and is based in Rome, Italy.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Rome"
+    },
     "TIAIY": {
         "short_name": "TELECOM ITALIA SPA SPON ADS EAC",
         "long_name": "Telecom Italia S.p.A.",
-        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for IT sector. The company has a strategic partnership with Google. Telecom Italia S.p.A. was founded in 1908 and is headquartered in Rome, Italy.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
         "currency": "USD",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -74,7 +158,7 @@
     "TIAJF": {
         "short_name": "TELECOM ITALIA SPA",
         "long_name": "Telecom Italia S.p.A.",
-        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for IT sector. The company has a strategic partnership with Google. Telecom Italia S.p.A. was founded in 1908 and is headquartered in Rome, Italy.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
         "currency": "USD",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -86,7 +170,7 @@
     "TIAOF": {
         "short_name": "TELECOM ITALIA SPA",
         "long_name": "Telecom Italia S.p.A.",
-        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for IT sector. The company has a strategic partnership with Google. Telecom Italia S.p.A. was founded in 1908 and is headquartered in Rome, Italy.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
         "currency": "USD",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -98,7 +182,7 @@
     "TIIAY": {
         "short_name": "TELECOM ITALIA SPA SPON ADS EAC",
         "long_name": "Telecom Italia S.p.A.",
-        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for IT sector. The company has a strategic partnership with Google. Telecom Italia S.p.A. was founded in 1908 and is headquartered in Rome, Italy.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
         "currency": "USD",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -143,10 +227,22 @@
         "country": "Italy",
         "city": "Cagliari"
     },
+    "TIT.BR": {
+        "short_name": "TELECOM ITALIA SPA",
+        "long_name": "Telecom Italia S.p.A.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "BRU",
+        "market": "be_market",
+        "country": "Italy",
+        "city": "Rome"
+    },
     "TIT.MI": {
         "short_name": "TELECOM ITALIA",
         "long_name": "Telecom Italia S.p.A.",
-        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for IT sector. The company has a strategic partnership with Google. Telecom Italia S.p.A. was founded in 1908 and is headquartered in Rome, Italy.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
         "currency": "EUR",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -155,10 +251,22 @@
         "country": "Italy",
         "city": "Rome"
     },
+    "TIT.VI": {
+        "short_name": "TELECOM ITALIA SPA",
+        "long_name": "Telecom Italia S.p.A.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "VIE",
+        "market": "at_market",
+        "country": "Italy",
+        "city": "Rome"
+    },
     "TITR.MI": {
         "short_name": "TELECOM ITALIA R",
         "long_name": "Telecom Italia S.p.A.",
-        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for IT sector. The company has a strategic partnership with Google. Telecom Italia S.p.A. was founded in 1908 and is headquartered in Rome, Italy.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
         "currency": "EUR",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -170,7 +278,7 @@
     "TQI.DE": {
         "short_name": "TELECOM ITALIA",
         "long_name": "Telecom Italia S.p.A.",
-        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for IT sector. The company has a strategic partnership with Google. Telecom Italia S.p.A. was founded in 1908 and is headquartered in Rome, Italy.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
         "currency": "EUR",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -179,10 +287,34 @@
         "country": "Italy",
         "city": "Rome"
     },
+    "TQI.F": {
+        "short_name": "TELECOM ITALIA",
+        "long_name": "Telecom Italia S.p.A.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Rome"
+    },
+    "TQI1.F": {
+        "short_name": "TELECOM ITAL.RISP. ADR/10",
+        "long_name": "Telecom Italia S.p.A.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Rome"
+    },
     "TQIA.F": {
         "short_name": "TELECOM ITALIA ADR 1",
         "long_name": "Telecom Italia S.p.A.",
-        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for IT sector. The company has a strategic partnership with Google. Telecom Italia S.p.A. was founded in 1908 and is headquartered in Rome, Italy.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
         "currency": "EUR",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -194,7 +326,7 @@
     "TQIR.DE": {
         "short_name": "TELECOM ITALIA RNC",
         "long_name": "Telecom Italia S.p.A.",
-        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for IT sector. The company has a strategic partnership with Google. Telecom Italia S.p.A. was founded in 1908 and is headquartered in Rome, Italy.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
         "currency": "EUR",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -206,7 +338,7 @@
     "TQIR.F": {
         "short_name": "TELECOM ITALIA RNC",
         "long_name": "Telecom Italia S.p.A.",
-        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for IT sector. The company has a strategic partnership with Google. Telecom Italia S.p.A. was founded in 1908 and is headquartered in Rome, Italy.",
+        "summary": "Telecom Italia S.p.A., together with its subsidiaries, provides fixed and mobile telecommunications services in Italy and internationally. The company operates through Domestic, Brazil, and Other Operations segments. It offers fixed and mobile voice and Internet, and public telephony services, as well as products managed and developed for individuals and families; and voice, data, and Internet services and products, and information and communications technology solutions for small and medium-size enterprises, small offices/home offices, the public sector, large accounts, and enterprises in the fixed and mobile telecommunications markets. The company also manages and develops a portfolio of regulated and unregulated wholesale services for fixed-line and mobile telecommunications operators; provision of infrastructure for housing radio transmission equipment of mobile telephone networks; and development, engineering, construction, and operation of network infrastructures, information technology (IT), real estate properties, and plant engineering. In addition, it is involved in customer care, operating credit support, loyalty, and retention activities; and staff functions and other support activities. Further, the company offers products and services for communication, industrial, IT, and other sectors. It has a strategic partnership with Google Cloud. The company was incorporated in 1908 and is headquartered in Rome, Italy.",
         "currency": "EUR",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -238,5 +370,17 @@
         "market": "it_market",
         "country": "Italy",
         "city": "Orvieto"
+    },
+    "WI8.F": {
+        "short_name": "INFRASTRUT.WIRELESS ITAL.",
+        "long_name": "Infrastrutture Wireless Italiane S.p.A.",
+        "summary": "Infrastrutture Wireless Italiane S.p.A. operates in the telco infrastructure business in Italy. The company constructs and operates towers. It offers integrated hosting services to create wireless networks, masts for antennas, cabling, dishes, spaces for equipment, and technological systems for power supply; site access and security management, 24h supervision, and ordinary, corrective and extraordinary maintenance services; and fiber optic connection of transmission sites. The company also creates indoor and outdoor roofs with micro cells and distributed antenna systems in stations, hospitals, airports, highways, shopping centers, stadiums, and meeting and entertainment spaces; and designs and constructs new sites. The company serves network operators; operators with licenses for radio transmission services in other wireless technologies; broadcasting service operators; and institutions, public entities, armed forces, etc. Infrastrutture Wireless Italiane S.p.A. was incorporated in 2015 and is headquartered in Rome, Italy.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Rome"
     }
 }

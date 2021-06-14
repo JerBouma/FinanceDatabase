@@ -14,7 +14,7 @@
     "4V1.F": {
         "short_name": "VGP N.V.",
         "long_name": "VGP NV",
-        "summary": "VGP NV, together with its subsidiaries, develops, builds, owns, manages, and leases logistics and semi-industrial real estate, and ancillary offices. It leases its properties to tenants in logistic sector, including storing, assembling, re-conditioning, and final treatment of the goods. The company also offers asset and property management services; and facility management services, such as maintenance, waste management, greenery maintenance services, etc. It operates in Germany, Spain, Austria, the Netherlands, Italy, Portugal, the Czech Republic, Slovakia, Hungary, Romania, and Latvia. The company was founded in 1998 and is headquartered in Antwerp, Belgium.",
+        "summary": "VGP NV, together with its subsidiaries, develops, owns, and manages logistics and semi-industrial real estate, and ancillary offices. The company leases its properties to tenants in logistic sector, including storing, assembling, re-conditioning, and final treatment of the goods. It also offers asset and property management services; and facility management services, such as maintenance, waste management, greenery maintenance services, etc. The company operates in Germany, Spain, Italy, the Netherlands, Austria, Portugal, the Czech Republic, Slovakia, Hungary, Romania and, Latvia. VGP NV was founded in 1998 and is headquartered in Antwerp, Belgium.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -41,7 +41,7 @@
         "summary": "Aedifica is a Belgian listed company that offers sustainable real estate solutions to professional operators that provide care to people with care needs throughout Europe. To realise that mission, Aedifica has specialised in investments in quality European healthcare real estate, with a particular focus on the care needs of the elderly. Aedifica has established itself in recent years as a leader in the European listed real estate sector and has the ambition to further expand this position in the coming years. By investing in quality buildings that generate recurring and indexed rental income and offer potential for capital gains, Aedifica aims to offer its shareholders a reliable and sustainable real estate investment with an attractive yield. Aedifica is listed on Euronext Brussels (2006) and Euronext Amsterdam (2019). Since March 2020, Aedifica is part of the BEL 20, the leading share index of Euronext Brussels.",
         "currency": "EUR",
         "sector": "Real Estate",
-        "industry": "REIT - Residential",
+        "industry": "REIT - Healthcare Facilities",
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
@@ -62,7 +62,7 @@
     "ANT.BR": {
         "short_name": "ANTARES CERT",
         "long_name": "Immo-Antares NV",
-        "summary": "Immo-Antares NV issues real estate certificate under the name Antares. The company issues certificate that gives the right to a quota of the distributions and determined property deals income. Its real estate certificates are mainly offered to investors through a bid and are listed on the Brussels Euronext Regulated Market, as well as through private offers. The company is based in Brussels, Belgium. Immo-Antares NV operates as a subsidiary of KBC Bank NV.",
+        "summary": "Immo-Antares NV issues real estate certificate under the name Antares. The company issues certificate that gives the right to a quota of the distributions and determined property deals income. Its real estate certificates are mainly offered to investors through a bid and are listed on the Brussels Euronext Regulated Market, as well as through private offers. The company is based in Brussels, Belgium. Immo-Antares NV is a subsidiary of KBC Bank NV.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -77,11 +77,23 @@
         "summary": "Aedifica is a Belgian listed company that offers sustainable real estate solutions to professional operators that provide care to people with care needs throughout Europe. To realise that mission, Aedifica has specialised in investments in quality European healthcare real estate, with a particular focus on the care needs of the elderly. Aedifica has established itself in recent years as a leader in the European listed real estate sector and has the ambition to further expand this position in the coming years. By investing in quality buildings that generate recurring and indexed rental income and offer potential for capital gains, Aedifica aims to offer its shareholders a reliable and sustainable real estate investment with an attractive yield. Aedifica is listed on Euronext Brussels (2006) and Euronext Amsterdam (2019). Since March 2020, Aedifica is part of the BEL 20, the leading share index of Euronext Brussels.",
         "currency": "EUR",
         "sector": "Real Estate",
-        "industry": "REIT - Residential",
+        "industry": "REIT - Healthcare Facilities",
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
         "city": "Brussels"
+    },
+    "ASC.BR": {
+        "short_name": "ASCENCIO",
+        "long_name": "Ascencio SCA",
+        "summary": "Ascencio is based in Gosselies, Belgium.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "BRU",
+        "market": "be_market",
+        "country": "Belgium",
+        "city": "Gosselies"
     },
     "ATEB.BR": {
         "short_name": "ATENOR",
@@ -194,7 +206,7 @@
     "DISL.BR": {
         "short_name": "DISTRI-LAND CERT",
         "long_name": "Immobiliere Distri-Land NV",
-        "summary": "Immobiliere Distri-Land NV engages in real estate sector. The company is based in Brussels, Belgium. Immobiliere Distri-Land NV operates as a subsidiary of KBC Bank NV.",
+        "summary": "Immobiliere Distri-Land NV issues real estate certificates. The company is based in Brussels, Belgium.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -227,6 +239,18 @@
         "country": "Belgium",
         "city": "Lasne"
     },
+    "H5V.F": {
+        "short_name": "HOME INVEST BELGIUM",
+        "long_name": "Home Invest Belgium S.A.",
+        "summary": "Home Invest Belgium S.A. operates as a real estate investment company in Belgium. It primarily invests in residential properties. As of December 31, 2008, the company's real estate portfolio consisted of 992 rental units with a total rentable space of approximately 111,091 square meters. The company was formerly known as Home Invest and changed its name to Home Invest Belgium S.A. in May 1999. Home Invest Belgium S.A. was founded in 1980 and is based in Brussels, Belgium.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Residential",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Belgium",
+        "city": "Brussels"
+    },
     "HOMI.BR": {
         "short_name": "HOME INVEST BE.",
         "long_name": "Home Invest Belgium S.A.",
@@ -252,8 +276,8 @@
         "city": "Antwerp"
     },
     "IJX.F": {
-        "short_name": "VASTNED RETAIL BELGIUM",
-        "long_name": "Vastned Retail Belgium SA",
+        "short_name": "VASTNED BELGIUM S.A.",
+        "long_name": "Vastned Belgium",
         "summary": "Vastned Retail Belgium is a public regulated real estate company (RREC), the shares of which are listed on Euronext Brussels (VASTB). Vastned Retail Belgium invests exclusively in Belgian commercial real estate, more specifically in prime retail properties located on the best shopping streets in the major cities of Antwerp, Brussels, Ghent and Bruges. Furthermore, the real estate portfolio consists of inner-city shops outside of the premium cities, high-end retail parks and retail warehouses.",
         "currency": "EUR",
         "sector": "Real Estate",
@@ -277,8 +301,8 @@
     },
     "IMMO.BR": {
         "short_name": "IMMOBEL",
-        "long_name": "IMMOBEL SA",
-        "summary": "IMMOBEL SA engages in the real estate development activities in Belgium, Luxemburg, Poland, France, Spain, and Germany. It undertakes office, residential development, retail, and landbanking projects, as well as develops mixed real estate projects for living, working, shopping, and leisure activities. It also provides project management and leasing services. The company was formerly known as Allfin NV and changed its name to IMMOBEL SA in June 2016. IMMOBEL SA was founded in 1863 and is headquartered in Brussels, Belgium.",
+        "long_name": "Immobel SA",
+        "summary": "Immobel SA engages in the real estate development business in Belgium, Luxemburg, France, Germany, Poland, and Spain. The company undertakes office, residential development, retail, and land banking projects, as well as develops real estate projects for living, working, and leisure activities. It also provides project management and leasing services. The company was formerly known as Allfin NV and changed its name to Immobel SA in June 2016. Immobel SA was incorporated in 1863 and is headquartered in Brussels, Belgium.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -299,6 +323,18 @@
         "country": "Belgium",
         "city": "Li\u00c3\u00a8ge"
     },
+    "INCLU.BR": {
+        "short_name": "INCLUSIO SA/NV",
+        "long_name": "Inclusio SA",
+        "summary": "Inclusio SA operates as a real estate company in Belgium. It focuses on affordable rental housing, housing for disabled, and social infrastructures. The company is based in Brussels, Belgium.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "BRU",
+        "market": "be_market",
+        "country": "Belgium",
+        "city": "Brussels"
+    },
     "INTO.BR": {
         "short_name": "INTERVEST OFF-WARE",
         "long_name": "Intervest Offices & Warehouses nv",
@@ -308,6 +344,18 @@
         "industry": "REIT - Diversified",
         "exchange": "BRU",
         "market": "be_market",
+        "country": "Belgium",
+        "city": "Antwerp"
+    },
+    "L3R.F": {
+        "short_name": "LEASINVEST REAL ESTATE",
+        "long_name": "Leasinvest Real Estate SCA",
+        "summary": "Leasinvest Real Estate SCA is a Public BE-REIT (SIR/GVV) that invests in high quality and well-located retail buildings and offices in the Grand Duchy of Luxembourg, Belgium and Austria. At present, the total fair value of the directly held real estate portfolio of Leasinvest amounts to \u00c2\u0080 1.12 billion, spread across the Grand Duchy of Luxembourg (54%), Belgium (30%) and Austria (16%). Moreover, Leasinvest is one of the most important real estate investors in Luxembourg. The public BE-REIT is listed on Euronext Brussels and has a market capitalization of \u00c2\u0080 459 million (value 16 November 2020).",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "Belgium",
         "city": "Antwerp"
     },
@@ -323,6 +371,30 @@
         "country": "Belgium",
         "city": "Antwerp"
     },
+    "M8E.F": {
+        "short_name": "MONTEA SCA",
+        "long_name": "Montea Comm. VA",
+        "summary": "Montea is a developing investor in logistics real estate in Belgium, France, Germany and the Netherlands. Our team of passionate specialists creates the ideal real estate solution together with the customer.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Industrial",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Belgium",
+        "city": "Erembodegem"
+    },
+    "MCC.BR": {
+        "short_name": "IMMO MCC",
+        "long_name": "Immo Mcc NV",
+        "summary": "Mechelen City Center NV operates as a subsidiary of KBC Bank NV.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "BRU",
+        "market": "be_market",
+        "country": "Belgium",
+        "city": "Brussels"
+    },
     "MLNEU.BR": {
         "short_name": "NEUFCOUR-FIN.",
         "long_name": "Compagnie Financi\u00e8re de Neufcour S.A.",
@@ -335,6 +407,18 @@
         "country": "Belgium",
         "city": "Fl\u00c3\u00a9ron"
     },
+    "MONT.BR": {
+        "short_name": "MONTEA C.V.A.",
+        "long_name": "Montea Comm. VA",
+        "summary": "Montea is a developing investor in logistics real estate in Belgium, France, Germany and the Netherlands. Our team of passionate specialists creates the ideal real estate solution together with the customer.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Industrial",
+        "exchange": "BRU",
+        "market": "be_market",
+        "country": "Belgium",
+        "city": "Erembodegem"
+    },
     "QRF.BR": {
         "short_name": "QRF",
         "long_name": "Qrf Comm. VA",
@@ -346,6 +430,30 @@
         "market": "be_market",
         "country": "Belgium",
         "city": "Antwerp"
+    },
+    "R6N.F": {
+        "short_name": "RETAIL ESTATES",
+        "long_name": "Retail Estates N.V.",
+        "summary": "The Belgian public real estate investment trust Retail Estates nv is a niche player specialised in making in out-of-town retail properties located on the periphery of residential areas or along main access roads to urban centres available to users. Real Estates NV acquires these real properties from third parties or builds and commercialises retail buildings for its own account. The buildings have useful areas ranging between 500m\u00c2\u00b2 and 3,000m\u00c2\u00b2. A typical retail building has an average area of 1,000 m\u00c2\u00b2.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Belgium",
+        "city": "Brussels"
+    },
+    "RET.BR": {
+        "short_name": "RETAIL ESTATES",
+        "long_name": "Retail Estates N.V.",
+        "summary": "The Belgian public real estate investment trust Retail Estates nv is a niche player specialised in making in out-of-town retail properties located on the periphery of residential areas or along main access roads to urban centres available to users. Real Estates NV acquires these real properties from third parties or builds and commercialises retail buildings for its own account. The buildings have useful areas ranging between 500m\u00c2\u00b2 and 3,000m\u00c2\u00b2. A typical retail building has an average area of 1,000 m\u00c2\u00b2.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "BRU",
+        "market": "be_market",
+        "country": "Belgium",
+        "city": "Brussels"
     },
     "SOFT.BR": {
         "short_name": "SOFTIMAT",
@@ -360,7 +468,7 @@
         "city": "Lasne"
     },
     "VASTB.BR": {
-        "short_name": "VASTNED RETAIL BEL",
+        "short_name": "VASTNED BELGIUM",
         "long_name": "Vastned Retail Belgium SA",
         "summary": "Vastned Retail Belgium is a public regulated real estate company (RREC), the shares of which are listed on Euronext Brussels (VASTB). Vastned Retail Belgium invests exclusively in Belgian commercial real estate, more specifically in prime retail properties located on the best shopping streets in the major cities of Antwerp, Brussels, Ghent and Bruges. Furthermore, the real estate portfolio consists of inner-city shops outside of the premium cities, high-end retail parks and retail warehouses.",
         "currency": "EUR",
@@ -374,7 +482,7 @@
     "VGP.BR": {
         "short_name": "VGP",
         "long_name": "VGP NV",
-        "summary": "VGP NV, together with its subsidiaries, develops, builds, owns, manages, and leases logistics and semi-industrial real estate, and ancillary offices. It leases its properties to tenants in logistic sector, including storing, assembling, re-conditioning, and final treatment of the goods. The company also offers asset and property management services; and facility management services, such as maintenance, waste management, greenery maintenance services, etc. It operates in Germany, Spain, Austria, the Netherlands, Italy, Portugal, the Czech Republic, Slovakia, Hungary, Romania, and Latvia. The company was founded in 1998 and is headquartered in Antwerp, Belgium.",
+        "summary": "VGP NV, together with its subsidiaries, develops, owns, and manages logistics and semi-industrial real estate, and ancillary offices. The company leases its properties to tenants in logistic sector, including storing, assembling, re-conditioning, and final treatment of the goods. It also offers asset and property management services; and facility management services, such as maintenance, waste management, greenery maintenance services, etc. The company operates in Germany, Spain, Italy, the Netherlands, Austria, Portugal, the Czech Republic, Slovakia, Hungary, Romania and, Latvia. VGP NV was founded in 1998 and is headquartered in Antwerp, Belgium.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -406,6 +514,18 @@
         "market": "be_market",
         "country": "Belgium",
         "city": "Wolvertem"
+    },
+    "WEB.BR": {
+        "short_name": "WAREHOUSES",
+        "long_name": "Warehouses Estates Belgium SCA",
+        "summary": "Warehouses Estates Belgium SCA is a real estate investment trust. Warehouses Estates Belgium SCA is based in Belgium.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "BRU",
+        "market": "be_market",
+        "country": "Belgium",
+        "city": "Gosselies"
     },
     "WEHB.BR": {
         "short_name": "WERELDHAVE BELGIUM",

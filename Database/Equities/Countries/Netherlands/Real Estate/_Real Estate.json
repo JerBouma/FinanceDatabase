@@ -11,6 +11,30 @@
         "country": "Netherlands",
         "city": "Amsterdam"
     },
+    "BEVER.AS": {
+        "short_name": "BEVER HOLDING",
+        "long_name": "Bever Holding NV",
+        "summary": "Bever Holding NV operates as a real estate company in the Netherlands. It primarily engages in the real estate development activity. The company also invests in, acquires, and leases real estate properties. Bever Holding NV was founded in 1975 and is based in Wassenaar, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "AMS",
+        "market": "nl_market",
+        "country": "Netherlands",
+        "city": "Wassenaar"
+    },
+    "CTPNV.AS": {
+        "short_name": "CTP",
+        "long_name": "CTP B.V.",
+        "summary": "CTP B.V., a commercial real estate developer, engages in the development and ownership of multi-use industrial and logistics business parks and properties in the Central and Eastern Europe. It offers its properties primarily for warehousing, light production, or office spaces. As of March 17, 2021, the company owned and operated a network of 70 multi-use business parks with approximately 450 buildings; and owned three hotels in the Czech Republic. It primarily operates in the Czech Republic, Romania, Hungary, and Slovakia with presence in Serbia, Poland, Bulgaria, Germany, and Austria. The company was founded in 1998 and is headquartered in Utrecht, the Netherlands. CTP B.V. operates as a subsidiary of CTP Holding B.V.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "AMS",
+        "market": "nl_market",
+        "country": "Netherlands",
+        "city": "Utrecht"
+    },
     "ECMPA.AS": {
         "short_name": "EUROCOMMERCIAL",
         "long_name": "Eurocommercial Properties N.V.",
@@ -26,7 +50,7 @@
     "EPP.JO": {
         "short_name": "EPP N.V.",
         "long_name": "EPP N.V.",
-        "summary": "EPP N.V. operates as a real estate investment company in Poland. The company operates in two segments, Retail and Office. It acquires, develops, and leases shopping malls and offices. The company operates a portfolio of 25 retail and 6 office projects, as well as 1 retail development project with a gross lettable area of approximately 1,000,000 square meters in Warsaw. The company was formerly known as Echo Polska Properties N.V. and changed its name to EPP N.V. in May 2018. EPP N.V. was incorporated in 2016 and is based in Amsterdam, the Netherlands.",
+        "summary": "EPP N.V. operates as a real estate investment company in Poland. It operates through two segments, Retail and Office. The company acquires, develops, and leases shopping malls and offices. It operates a portfolio of 25 retail and 6 office properties, as well as 1 mixed-use development project with a total leasable area of approximately 1,000,000 square meters in Warsaw. The company was formerly known as Echo Polska Properties N.V. and changed its name to EPP N.V. in May 2018. EPP N.V. was incorporated in 2016 and is based in Amsterdam, the Netherlands.",
         "currency": "ZAc",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -35,15 +59,27 @@
         "country": "Netherlands",
         "city": "Amsterdam"
     },
-    "KRNV-L.TA": {
-        "short_name": "KARDAN NV",
-        "long_name": "Kardan N.V.",
-        "summary": "Kardan N.V. develops and manages residential and commercial real estate projects in China. It develops and sells residential and small office apartments; and holds, operates, and manages shopping centers under the Galleria brand. The company was incorporated in 2003 and is headquartered in Amsterdam, the Netherlands.",
-        "currency": "ILA",
+    "N4RN.F": {
+        "short_name": "NSI N.V. NEW  EO 3,68",
+        "long_name": "NSI N.V.",
+        "summary": "NSI N.V. is a specialist commercial property investor and the only listed real estate investment trust (REIT) focused on well-located offices in economic growth regions in The Netherlands. The NSI team aims to maximise returns for its shareholders through pro-active management of its investment portfolio, value-add initiatives and disciplined asset rotation. The portfolio, with a value of over one billion euros, is underpinned by a strong balance sheet, with significant capacity to fund both internal and external growth. By investing in attractive space and a high level of services for its customers, NSI can generate sustainable and growing revenues to support an attractive level of dividend.",
+        "currency": "EUR",
         "sector": "Real Estate",
-        "industry": "Real Estate - Development",
-        "exchange": "TLV",
-        "market": "il_market",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Netherlands",
+        "city": "Hoofddorp"
+    },
+    "N4S.F": {
+        "short_name": "EUROCOMM.PR. CERT.10EO-50",
+        "long_name": "Eurocommercial Properties N.V.",
+        "summary": "At the outset Eurocommercial invested in a variety of countries, including France where the Company made its first investment in 1992 with the acquisition of Les Atlantes shopping centre in Tours. In 1994 Eurocommercial purchased Curno in Bergamo, marking its first acquisition in Italy. Eurocommercial moved into the Swedish market in 2001. It re-entered the Belgian market in 2018 with the purchase of the Woluwe shopping centre. The Company is now one of Europe's most experienced property investors with a portfolio of shopping centres of \u00c2\u00804.1 billion.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "Netherlands",
         "city": "Amsterdam"
     },
@@ -58,6 +94,18 @@
         "market": "nl_market",
         "country": "Netherlands",
         "city": "Hoofddorp"
+    },
+    "PLAZ.L": {
+        "short_name": "PLAZA CENTERS N.V. ORD EUR1.00",
+        "long_name": "Plaza Centers N.V.",
+        "summary": "Plaza Centers N.V. does not have significant operations. Previously, it was involved in the establishment, operation, and sale of shopping and entertainment centers, as well as other mixed-use projects, such as retail, office, and residential projects in Central and Eastern Europe, and India. The company was formerly known as Plaza Centers (Europe) B.V. and changed its name to Plaza Centers N.V. in October 2006. Plaza Centers N.V. was incorporated in 1993 and is based in Amsterdam, the Netherlands.",
+        "currency": "GBp",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "Netherlands",
+        "city": "Amsterdam"
     },
     "VASTN.AS": {
         "short_name": "VASTNED",

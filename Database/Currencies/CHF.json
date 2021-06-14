@@ -442,5 +442,17 @@
         "currency": "CHF",
         "exchange": "EBS",
         "market": "ch_market"
+    },
+    "ZARCHF=X": {
+        "short_name": "ZAR/CHF",
+        "currency": "CHF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZMWCHF=X": {
+        "short_name": "ZMW/CHF",
+        "currency": "CHF",
+        "exchange": "CCY",
+        "market": "ccy_market"
     }
 }

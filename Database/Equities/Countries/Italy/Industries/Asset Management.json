@@ -1,16 +1,4 @@
 {
-    "5JQ.F": {
-        "short_name": "H-FARM SPA",
-        "long_name": "H-Farm S.p.A.",
-        "summary": "H-Farm S.p.A. is venture capital firm specializing in direct and fund of fund investments. Within direct investments, the firm focuses on incubation, start-up investments in the digital, blockchain, edutech, agritech, fashion and innovation sectors. Within fund of fund investments, the firm focuses on venture capital funds. The firm also has an acceleration program and provides business consultancy. It makes investments in Italian companies. The firm takes balance sheet investments. H-Farm S.p.A. was founded in January 2005 and is based in Roncade, Italy with additional offices in Milan, Italy and Torino, Italy.",
-        "currency": "EUR",
-        "sector": "Financial Services",
-        "industry": "Asset Management",
-        "exchange": "FRA",
-        "market": "dr_market",
-        "country": "Italy",
-        "city": "Roncade"
-    },
     "ANIM.MI": {
         "short_name": "ANIMA HOLDING",
         "long_name": "Anima Holding S.p.A.",
@@ -24,18 +12,6 @@
         "city": "Milan"
     },
     "AZIHF": {
-        "short_name": "AZIMUT HLDG S.P.A",
-        "long_name": "Azimut Holding S.p.A.",
-        "summary": "Azimut Holding S.p.A., together with its subsidiaries, distributes, manages, and promotes financial and insurance products. The company offers mutual fund management, life insurance, wealth management, investment portfolio individual management, insurance mediation, financial planning consultancy, and fund and asset management services; invests in the digital sector; and manages Italian, pension, alternative, discretionary, and private equity funds. It operates in Italy, Luxembourg, Ireland, China, Monaco, Switzerland, Singapore, Brazil, Mexico, Taiwan, Chile, Australia, Turkey, the United States, the United Arab Emirates, and Egypt. The company was founded in 1989 and is based in Milan, Italy.",
-        "currency": "USD",
-        "sector": "Financial Services",
-        "industry": "Asset Management",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "Italy",
-        "city": "Milan"
-    },
-    "AZIHY": {
         "short_name": "AZIMUT HLDG S.P.A",
         "long_name": "Azimut Holding S.p.A.",
         "summary": "Azimut Holding S.p.A., together with its subsidiaries, distributes, manages, and promotes financial and insurance products. The company offers mutual fund management, life insurance, wealth management, investment portfolio individual management, insurance mediation, financial planning consultancy, and fund and asset management services; invests in the digital sector; and manages Italian, pension, alternative, discretionary, and private equity funds. It operates in Italy, Luxembourg, Ireland, China, Monaco, Switzerland, Singapore, Brazil, Mexico, Taiwan, Chile, Australia, Turkey, the United States, the United Arab Emirates, and Egypt. The company was founded in 1989 and is based in Milan, Italy.",
@@ -68,6 +44,18 @@
         "industry": "Asset Management",
         "exchange": "VIE",
         "market": "at_market",
+        "country": "Italy",
+        "city": "Milan"
+    },
+    "CFM.MI": {
+        "short_name": "CROWDFUNDME",
+        "long_name": "CrowdFundMe S.p.A.",
+        "summary": "CrowdFundMe S.p.A. operates a crowdfunding portal supports companies to raise funding. The company's portal offers tools with which companies can propose their projects to the public and obtain the necessary funding to carry out their activities. CrowdFundMe is based in Milan, Italy.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "MIL",
+        "market": "it_market",
         "country": "Italy",
         "city": "Milan"
     },
@@ -104,6 +92,18 @@
         "industry": "Asset Management",
         "exchange": "STU",
         "market": "dr_market",
+        "country": "Italy",
+        "city": "Milan"
+    },
+    "DEA.MI": {
+        "short_name": "DEA CAPITAL",
+        "long_name": "DeA Capital S.p.A.",
+        "summary": "DeA Capital S.p.A. is the private equity arm of De Agostini S.p.A. specializing in direct investments, fund of funds investments, and co-investments. The firm invests in buyouts in middle market and mature companies. Within direct investments, it seeks to invest in the private companies operating in service sector. It also invests in listed company, if it is planning to delist. The firm prefers to invest in information and communication technology, financial services, real estate, life science, and healthcare sectors. In information and communication technology sector, it focuses on services and applications for next generation communications and internet including wireless, optical networking, IP telephony, next generation access, high speed switching, broadband, communications components, e-commerce and e-business applications, and security. The firm seeks to invest across the world mainly in companies based in Europe with a focus on Southern Europe and Emerging Europe. It typically invests between \u00c2\u008050 million ($67.005 million) and \u00c2\u0080200 million ($268.02 million) in its portfolio companies. The firm seeks majority and minority position with an initial ownership up to ten percent. It prefers to take a board position in its portfolio companies and also participates in subsequent rounds of financing. The firm typically invests out of personal capital. DeA Capital S.p.A. was founded in 2007 and is based in Milan, Italy with an additional office in Greater London, United Kingdom.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "MIL",
+        "market": "it_market",
         "country": "Italy",
         "city": "Milan"
     },
@@ -176,6 +176,30 @@
         "industry": "Asset Management",
         "exchange": "PAR",
         "market": "fr_market",
+        "country": "Italy",
+        "city": "Milan"
+    },
+    "MTS.MI": {
+        "short_name": "MIT SIM",
+        "long_name": "MiT Sim S.p.A.",
+        "summary": "MiT Sim S.p.A., an intermediary, offers investment services to SMEs. The company serves clients in raising capital through the financial market and offers specialist service once listed. It provides global coordinator services for IPOs; intermediary services for performing market making functions, as well as produces research reports; equity research services; and order reception and transmission services. The company is based in Milan, Italy.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Milan"
+    },
+    "TTT.MI": {
+        "short_name": "TITANMET",
+        "long_name": "TitanMet S.p.A.",
+        "summary": "TitanMet S.p.A. invests in assets or financial instruments. It is also involved in the development of synergies and implementation of subsequent integrations, acquisitions, spin-offs, and other interventions, as well as provides advisory services. The company was formerly known as Sintesi Societ\u00c3\u00a0 di Investimenti e Partecipazioni S.p.A. and changed its name to TitanMet S.p.A. in September 2018. TitanMet S.p.A. was founded in 1900 and is based in Milan, Italy.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "MIL",
+        "market": "it_market",
         "country": "Italy",
         "city": "Milan"
     }

@@ -26,7 +26,7 @@
     "44W.F": {
         "short_name": "COREPOINT LODGING  DL-,01",
         "long_name": "CorePoint Lodging Inc.",
-        "summary": "CorePoint Lodging Inc., a real estate investment trust company, owns midscale and upper-midscale select-service hotels primarily under the La Quinta brand. As of December 31, 2019, it had a portfolio of 271 select-service hotels and approximately 35,000 rooms across 41 states in the United States. The company has elected to be taxed as a real estate investment trust. As a result, it would not be subject to corporate income tax on that portion of its net income that is distributed to shareholders. CorePoint Lodging Inc. is headquartered in Irving, Texas.",
+        "summary": "CorePoint Lodging Inc., a real estate investment trust company, owns select-service hotels primarily under the La Quinta brand in the United States. As of December 31, 2020, it had a portfolio of 209 select-service hotels and approximately 27,800 rooms across 35 states in the United States. The company has elected to be taxed as a real estate investment trust. As a result, it would not be subject to corporate income tax on that portion of its net income that is distributed to shareholders. CorePoint Lodging Inc. was incorporated in 2017 and is headquartered in Irving, Texas.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "REIT - Hotel & Motel",
@@ -56,18 +56,6 @@
         "industry": "REIT - Hotel & Motel",
         "exchange": "FRA",
         "market": "dr_market",
-        "country": "United States",
-        "city": "Dallas"
-    },
-    "AHT": {
-        "short_name": "Ashford Hospitality Trust Inc",
-        "long_name": "Ashford Hospitality Trust, Inc.",
-        "summary": "Ashford Hospitality Trust is a real estate investment trust (REIT) focused on investing predominantly in upper upscale, full-service hotels.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Hotel & Motel",
-        "exchange": "NYQ",
-        "market": "us_market",
         "country": "United States",
         "city": "Dallas"
     },
@@ -131,6 +119,18 @@
         "country": "United States",
         "city": "Dallas"
     },
+    "AHT": {
+        "short_name": "Ashford Hospitality Trust Inc",
+        "long_name": "Ashford Hospitality Trust, Inc.",
+        "summary": "Ashford Hospitality Trust is a real estate investment trust (REIT) focused on investing predominantly in upper upscale, full-service hotels.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Hotel & Motel",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Dallas"
+    },
     "APLE": {
         "short_name": "Apple Hospitality REIT, Inc.",
         "long_name": "Apple Hospitality REIT, Inc.",
@@ -142,18 +142,6 @@
         "market": "us_market",
         "country": "United States",
         "city": "Richmond"
-    },
-    "BHR": {
-        "short_name": "Braemar Hotels & Resorts Inc.",
-        "long_name": "Braemar Hotels & Resorts, Inc.",
-        "summary": "Braemar Hotels & Resorts is a real estate investment trust (REIT) focused on investing in luxury hotels and resorts.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Hotel & Motel",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "Dallas"
     },
     "BHR-PB": {
         "short_name": "Braemar Hotels & Resorts Inc. 5",
@@ -169,6 +157,18 @@
     },
     "BHR-PD": {
         "short_name": "Braemar Hotels & Resorts Inc. 8",
+        "long_name": "Braemar Hotels & Resorts, Inc.",
+        "summary": "Braemar Hotels & Resorts is a real estate investment trust (REIT) focused on investing in luxury hotels and resorts.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Hotel & Motel",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Dallas"
+    },
+    "BHR": {
+        "short_name": "Braemar Hotels & Resorts Inc.",
         "long_name": "Braemar Hotels & Resorts, Inc.",
         "summary": "Braemar Hotels & Resorts is a real estate investment trust (REIT) focused on investing in luxury hotels and resorts.",
         "currency": "USD",
@@ -206,7 +206,7 @@
     "CPLG": {
         "short_name": "CorePoint Lodging Inc.",
         "long_name": "CorePoint Lodging Inc.",
-        "summary": "CorePoint Lodging Inc., a real estate investment trust company, owns midscale and upper-midscale select-service hotels primarily under the La Quinta brand. As of December 31, 2019, it had a portfolio of 271 select-service hotels and approximately 35,000 rooms across 41 states in the United States. The company has elected to be taxed as a real estate investment trust. As a result, it would not be subject to corporate income tax on that portion of its net income that is distributed to shareholders. CorePoint Lodging Inc. is headquartered in Irving, Texas.",
+        "summary": "CorePoint Lodging Inc., a real estate investment trust company, owns select-service hotels primarily under the La Quinta brand in the United States. As of December 31, 2020, it had a portfolio of 209 select-service hotels and approximately 27,800 rooms across 35 states in the United States. The company has elected to be taxed as a real estate investment trust. As a result, it would not be subject to corporate income tax on that portion of its net income that is distributed to shareholders. CorePoint Lodging Inc. was incorporated in 2017 and is headquartered in Irving, Texas.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Hotel & Motel",
@@ -215,7 +215,7 @@
         "country": "United States",
         "city": "Irving"
     },
-    "DRH": {
+    "DRH-PA": {
         "short_name": "Diamondrock Hospitality Company",
         "long_name": "DiamondRock Hospitality Company",
         "summary": "DiamondRock Hospitality Company is a self-advised real estate investment trust (REIT) that is an owner of a leading portfolio of geographically diversified hotels concentrated in top gateway markets and destination resort locations. The Company owns 31 premium quality hotels with over 10,000 rooms. The Company has strategically positioned its hotels to be operated both under leading global brand families as well as unique boutique hotels in the lifestyle segment.",
@@ -227,7 +227,7 @@
         "country": "United States",
         "city": "Bethesda"
     },
-    "DRH-PA": {
+    "DRH": {
         "short_name": "Diamondrock Hospitality Company",
         "long_name": "DiamondRock Hospitality Company",
         "summary": "DiamondRock Hospitality Company is a self-advised real estate investment trust (REIT) that is an owner of a leading portfolio of geographically diversified hotels concentrated in top gateway markets and destination resort locations. The Company owns 31 premium quality hotels with over 10,000 rooms. The Company has strategically positioned its hotels to be operated both under leading global brand families as well as unique boutique hotels in the lifestyle segment.",
@@ -263,6 +263,18 @@
         "country": "United States",
         "city": "Bethesda"
     },
+    "H3U1.F": {
+        "short_name": "HERSHA HOSPIT.TR. SBI A",
+        "long_name": "Hersha Hospitality Trust",
+        "summary": "Hersha Hospitality Trust (HT) is a self-advised real estate investment trust in the hospitality sector, which owns and operates high quality upscale and lifestyle hotels in urban gateway markets and resort destinations. The Company's 49 hotels totaling 7,774 rooms are located in New York, Washington, DC, Boston, Philadelphia, South Florida and select markets on the West Coast. The Company's common shares are traded on The New York Stock Exchange under the ticker \u00c2\u0093HT.\u00c2\u0094",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Hotel & Motel",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "Harrisburg"
+    },
     "HBO.F": {
         "short_name": "DIAMONDROCK HOSP.  DL-,01",
         "long_name": "DiamondRock Hospitality Company",
@@ -274,6 +286,18 @@
         "market": "dr_market",
         "country": "United States",
         "city": "Bethesda"
+    },
+    "HIP.F": {
+        "short_name": "PARK HOTELS+RESORTS DL-01",
+        "long_name": "Park Hotels & Resorts Inc.",
+        "summary": "Park is the second largest publicly traded lodging REIT with a diverse portfolio of market-leading hotels and resorts with significant underlying real estate value. Park's portfolio currently consists of 60 premium-branded hotels and resorts with over 33,000 rooms primarily located in prime city center and resort locations.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Hotel & Motel",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "Tysons"
     },
     "HMT.F": {
         "short_name": "HOST HOTELS+RESOR.DL 0,01",
@@ -288,7 +312,7 @@
         "city": "Bethesda"
     },
     "HST": {
-        "short_name": "Host Hotels & Resorts, Inc.",
+        "short_name": "Host Hotels",
         "long_name": "Host Hotels & Resorts, Inc.",
         "summary": "Host Hotels & Resorts, Inc. is an S&P 500 company and is the largest lodging real estate investment trust and one of the largest owners of luxury and upper-upscale hotels. The Company currently owns 74 properties in the United States and five properties internationally totaling approximately 46,100 rooms. The Company also holds non-controlling interests in six domestic and one international joint ventures. Guided by a disciplined approach to capital allocation and aggressive asset management, the Company partners with premium brands such as Marriott\u00c2\u00ae, Ritz-Carlton\u00c2\u00ae, Westin\u00c2\u00ae, Sheraton\u00c2\u00ae, W\u00c2\u00ae, St. Regis\u00c2\u00ae, The Luxury Collection\u00c2\u00ae, Hyatt\u00c2\u00ae, Fairmont\u00c2\u00ae, Hilton\u00c2\u00ae, Swiss\u00c3\u00b4tel\u00c2\u00ae, ibis\u00c2\u00ae and Novotel\u00c2\u00ae, as well as independent brands. For additional information, please visit the Company's website at www.hosthotels.com.",
         "currency": "USD",
@@ -298,18 +322,6 @@
         "market": "us_market",
         "country": "United States",
         "city": "Bethesda"
-    },
-    "HT": {
-        "short_name": "Hersha Hospitality Trust",
-        "long_name": "Hersha Hospitality Trust",
-        "summary": "Hersha Hospitality Trust (HT) is a self-advised real estate investment trust in the hospitality sector, which owns and operates high quality upscale and lifestyle hotels in urban gateway markets and resort destinations. The Company's 49 hotels totaling 7,774 rooms are located in New York, Washington, DC, Boston, Philadelphia, South Florida and select markets on the West Coast. The Company's common shares are traded on The New York Stock Exchange under the ticker \u00c2\u0093HT.\u00c2\u0094",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Hotel & Motel",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "Harrisburg"
     },
     "HT-PC": {
         "short_name": "Hersha Hospitality Trust 6.875%",
@@ -347,6 +359,18 @@
         "country": "United States",
         "city": "Harrisburg"
     },
+    "HT": {
+        "short_name": "Hersha Hospitality Trust",
+        "long_name": "Hersha Hospitality Trust",
+        "summary": "Hersha Hospitality Trust (HT) is a self-advised real estate investment trust in the hospitality sector, which owns and operates high quality upscale and lifestyle hotels in urban gateway markets and resort destinations. The Company's 49 hotels totaling 7,774 rooms are located in New York, Washington, DC, Boston, Philadelphia, South Florida and select markets on the West Coast. The Company's common shares are traded on The New York Stock Exchange under the ticker \u00c2\u0093HT.\u00c2\u0094",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Hotel & Motel",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Harrisburg"
+    },
     "IHT": {
         "short_name": "InnSuites Hospitality Trust Sha",
         "long_name": "InnSuites Hospitality Trust",
@@ -358,30 +382,6 @@
         "market": "us_market",
         "country": "United States",
         "city": "Phoenix"
-    },
-    "INN": {
-        "short_name": "Summit Hotel Properties, Inc.",
-        "long_name": "Summit Hotel Properties, Inc.",
-        "summary": "Summit Hotel Properties, Inc. is a publicly traded real estate investment trust focused on owning premium-branded hotels with efficient operating models primarily in the Upscale segment of the lodging industry. As of November 3, 2020, the Company's portfolio consisted of 72 hotels, 67 of which are wholly owned, with a total of 11,288 guestrooms located in 23 states.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Hotel & Motel",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "Austin"
-    },
-    "INN-PD": {
-        "short_name": "Summit Hotel Properties, Inc. 6",
-        "long_name": "Summit Hotel Properties, Inc.",
-        "summary": "Summit Hotel Properties, Inc. is a publicly traded real estate investment trust focused on owning premium-branded hotels with efficient operating models primarily in the Upscale segment of the lodging industry. As of November 3, 2020, the Company's portfolio consisted of 72 hotels, 67 of which are wholly owned, with a total of 11,288 guestrooms located in 23 states.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Hotel & Motel",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "Austin"
     },
     "INN-PE": {
         "short_name": "Summit Hotel Properties, Inc. 6",
@@ -395,17 +395,17 @@
         "country": "United States",
         "city": "Austin"
     },
-    "PEB": {
-        "short_name": "Pebblebrook Hotel Trust",
-        "long_name": "Pebblebrook Hotel Trust",
-        "summary": "Pebblebrook Hotel Trust (NYSE: PEB) is a publicly traded real estate investment trust (\"REIT\") and the largest owner of urban and resort lifestyle hotels in the United States. The Company owns 53 hotels, totaling approximately 13,200 guestrooms across 14 urban and resort markets, with a focus on the west coast gateway cities.",
+    "INN": {
+        "short_name": "Summit Hotel Properties, Inc.",
+        "long_name": "Summit Hotel Properties, Inc.",
+        "summary": "Summit Hotel Properties, Inc. is a publicly traded real estate investment trust focused on owning premium-branded hotels with efficient operating models primarily in the Upscale segment of the lodging industry. As of November 3, 2020, the Company's portfolio consisted of 72 hotels, 67 of which are wholly owned, with a total of 11,288 guestrooms located in 23 states.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Hotel & Motel",
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Bethesda"
+        "city": "Austin"
     },
     "PEB-PC": {
         "short_name": "Pebblebrook Hotel Trust 6.50% S",
@@ -421,6 +421,30 @@
     },
     "PEB-PD": {
         "short_name": "Pebblebrook Hotel Trust 6.375% ",
+        "long_name": "Pebblebrook Hotel Trust",
+        "summary": "Pebblebrook Hotel Trust (NYSE: PEB) is a publicly traded real estate investment trust (\"REIT\") and the largest owner of urban and resort lifestyle hotels in the United States. The Company owns 53 hotels, totaling approximately 13,200 guestrooms across 14 urban and resort markets, with a focus on the west coast gateway cities.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Hotel & Motel",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Bethesda"
+    },
+    "PEB-PG": {
+        "short_name": "Pebblebrook Hotel Trust 6.375% ",
+        "long_name": "Pebblebrook Hotel Trust",
+        "summary": "Pebblebrook Hotel Trust (NYSE: PEB) is a publicly traded real estate investment trust (\"REIT\") and the largest owner of urban and resort lifestyle hotels in the United States. The Company owns 53 hotels, totaling approximately 13,200 guestrooms across 14 urban and resort markets, with a focus on the west coast gateway cities.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Hotel & Motel",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Bethesda"
+    },
+    "PEB": {
+        "short_name": "Pebblebrook Hotel Trust",
         "long_name": "Pebblebrook Hotel Trust",
         "summary": "Pebblebrook Hotel Trust (NYSE: PEB) is a publicly traded real estate investment trust (\"REIT\") and the largest owner of urban and resort lifestyle hotels in the United States. The Company owns 53 hotels, totaling approximately 13,200 guestrooms across 14 urban and resort markets, with a focus on the west coast gateway cities.",
         "currency": "USD",
@@ -455,6 +479,18 @@
         "country": "United States",
         "city": "Nashville"
     },
+    "RLJ-PA": {
+        "short_name": "RLJ Lodging Trust $1.95 Series ",
+        "long_name": "RLJ Lodging Trust",
+        "summary": "RLJ Lodging Trust is a self-advised, publicly traded real estate investment trust that owns primarily premium-branded, high-margin, focused-service and compact full-service hotels. The Company's portfolio consists of 103 hotels with approximately 22,570 rooms, located in 23 states and the District of Columbia and an ownership interest in one unconsolidated hotel with 171 rooms.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Hotel & Motel",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Bethesda"
+    },
     "RLJ": {
         "short_name": "RLJ Lodging Trust",
         "long_name": "RLJ Lodging Trust",
@@ -467,17 +503,41 @@
         "country": "United States",
         "city": "Bethesda"
     },
-    "RLJ-PA": {
-        "short_name": "RLJ Lodging Trust $1.95 Series ",
-        "long_name": "RLJ Lodging Trust",
-        "summary": "RLJ Lodging Trust is a self-advised, publicly traded real estate investment trust that owns primarily premium-branded, high-margin, focused-service and compact full-service hotels. The Company's portfolio consists of 103 hotels with approximately 22,570 rooms, located in 23 states and the District of Columbia and an ownership interest in one unconsolidated hotel with 171 rooms.",
+    "SDP.F": {
+        "short_name": "SUMMIT HOTEL PROP. DL-,01",
+        "long_name": "Summit Hotel Properties, Inc.",
+        "summary": "Summit Hotel Properties, Inc. is a publicly traded real estate investment trust focused on owning premium-branded hotels with efficient operating models primarily in the Upscale segment of the lodging industry. As of November 3, 2020, the Company's portfolio consisted of 72 hotels, 67 of which are wholly owned, with a total of 11,288 guestrooms located in 23 states.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Hotel & Motel",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "Austin"
+    },
+    "SHO-PE": {
+        "short_name": "Sunstone Hotel Investors, Inc. ",
+        "long_name": "Sunstone Hotel Investors, Inc.",
+        "summary": "Sunstone Hotel Investors, Inc. is a lodging real estate investment trust (\"REIT\") that as of the date of this release has interests in 19 hotels comprised of 9,997 rooms. Sunstone's business is to acquire, own, asset manage and renovate or reposition hotels considered to be Long-Term Relevant Real Estate\u00c2\u00ae, the majority of which are operated under nationally recognized brands, such as Marriott, Hilton and Hyatt.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Hotel & Motel",
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Bethesda"
+        "city": "Irvine"
+    },
+    "SHO-PF": {
+        "short_name": "Sunstone Hotel Investors, Inc. ",
+        "long_name": "Sunstone Hotel Investors, Inc.",
+        "summary": "Sunstone Hotel Investors, Inc. is a lodging real estate investment trust (\"REIT\") that as of the date of this release has interests in 19 hotels comprised of 9,997 rooms. Sunstone's business is to acquire, own, asset manage and renovate or reposition hotels considered to be Long-Term Relevant Real Estate\u00c2\u00ae, the majority of which are operated under nationally recognized brands, such as Marriott, Hilton and Hyatt.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Hotel & Motel",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Irvine"
     },
     "SHO": {
         "short_name": "Sunstone Hotel Investors, Inc. ",
@@ -498,7 +558,7 @@
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Hotel & Motel",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market",
         "country": "United States",
         "city": "Williamsburg"
@@ -510,7 +570,7 @@
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Hotel & Motel",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market",
         "country": "United States",
         "city": "Williamsburg"

@@ -107,26 +107,14 @@
         "country": "Germany",
         "city": "Munich"
     },
-    "NHB.F": {
-        "short_name": "NEBELHORNBAHN AG O.N.",
+    "NHB0.F": {
+        "short_name": "NEBELHORNBAHN AG NA O.N.",
         "long_name": "Nebelhornbahn-Aktiengesellschaft",
         "summary": "Nebelhornbahn-Aktiengesellschaft operates mountain railway in Nebelhorn. It also provides catering services. The company was founded in 1927 and is based in Oberstdorf, Germany. The company was founded in 1927 and is based in Oberstdorf, Germany. Nebelhornbahn-Aktiengesellschaft was formerly a subsidiary of RWE Aktiengesellschaft.",
         "currency": "EUR",
         "sector": "Consumer Cyclical",
         "industry": "Leisure",
         "exchange": "FRA",
-        "market": "dr_market",
-        "country": "Germany",
-        "city": "Oberstdorf"
-    },
-    "NHB.MU": {
-        "short_name": "NEBELHORNBAHN AG O.N.",
-        "long_name": "Nebelhornbahn-Aktiengesellschaft",
-        "summary": "Nebelhornbahn-Aktiengesellschaft operates mountain railway in Nebelhorn. It also provides catering services. The company was founded in 1927 and is based in Oberstdorf, Germany. The company was founded in 1927 and is based in Oberstdorf, Germany. Nebelhornbahn-Aktiengesellschaft was formerly a subsidiary of RWE Aktiengesellschaft.",
-        "currency": "EUR",
-        "sector": "Consumer Cyclical",
-        "industry": "Leisure",
-        "exchange": "MUN",
         "market": "dr_market",
         "country": "Germany",
         "city": "Oberstdorf"
@@ -202,5 +190,29 @@
         "market": "dr_market",
         "country": "Germany",
         "city": "M\u00c3\u00bcnster"
+    },
+    "ZPF.HM": {
+        "short_name": "ZAPF CREATION AG  NA O.N.",
+        "long_name": "Zapf Creation AG",
+        "summary": "Zapf Creation AG, together with its subsidiaries, designs, develops, manufactures, and distributes play and functional dolls, and accessories worldwide. The company primarily sells its products under the BABY born, BABY Annabell, Dolly Moda, and Heidi brands. Zapf Creation AG was founded in 1932 and is based in R\u00c3\u00b6dental, Germany.",
+        "currency": "EUR",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "HAM",
+        "market": "dr_market",
+        "country": "Germany",
+        "city": "R\u00c3\u00b6dental"
+    },
+    "ZPF.MU": {
+        "short_name": "ZAPF CREATION AG  NA O.N.",
+        "long_name": "Zapf Creation AG",
+        "summary": "Zapf Creation AG, together with its subsidiaries, designs, develops, manufactures, and distributes play and functional dolls, and accessories worldwide. The company primarily sells its products under the BABY born, BABY Annabell, Dolly Moda, and Heidi brands. Zapf Creation AG was founded in 1932 and is based in R\u00c3\u00b6dental, Germany.",
+        "currency": "EUR",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "MUN",
+        "market": "dr_market",
+        "country": "Germany",
+        "city": "R\u00c3\u00b6dental"
     }
 }

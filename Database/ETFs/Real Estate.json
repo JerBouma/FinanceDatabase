@@ -13,10 +13,20 @@
         "short_name": "Invesco S&P 500 Equal Weight Re",
         "long_name": "Invesco S&P 500 Equal Weight Real Estate ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Equal Weight Real Estate Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of all of the components of the S&P 500\u00c2\u00ae Real Estate Index, an index that contains the common stocks of all companies included in the S&P 500\u00c2\u00ae Index that are classified as members of the real estate sector, as defined according to the Global Industry Classification Standard (\"GICS\"). The fund is non-diversified.",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Equal Weight Real Estate Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of all of the components of the S&P 500\u00c2\u00ae Real Estate Index, an index that contains the common stocks of all companies included in the S&P 500\u00c2\u00ae Index that are classified as members of the real estate sector, as defined according to the Global Industry Classification Standard (\"GICS\").",
         "category": "Real Estate",
         "family": "Invesco",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "FPRO": {
+        "short_name": "Fidelity Real Estate Investment",
+        "long_name": "Fidelity Real Estate Investment ETF",
+        "currency": "USD",
+        "summary": "The investment seeks above-average income and long-term capital growth, consistent with reasonable investment risk.\n The fund is an actively managed ETF that operates pursuant to an exemptive order from the Securities and Exchange Commission (Order) and is not required to publicly disclose its complete portfolio holdings each business day. The fund normally invests at least 80% of assets in securities of companies principally engaged in the real estate industry and other real estate related investments. It invests in domestic and foreign issuers. The fund is non-diversified.",
+        "category": "Real Estate",
+        "family": "Fidelity Investments",
+        "exchange": "BTS",
         "market": "us_market"
     },
     "FREL": {
@@ -39,11 +49,31 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "ICF": {
+        "short_name": "iShares Cohen & Steers REIT ETF",
+        "long_name": "iShares Cohen & Steers REIT ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Cohen & Steers Realty Majors Index, which consists of REITs.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. The objective of the underlying index is to represent relatively large and liquid REITs that may benefit from future consolidation and securitization of the U.S. real estate industry. The fund is non-diversified.",
+        "category": "Real Estate",
+        "family": "iShares",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "INDS": {
+        "short_name": "Pacer Benchmark Industrial Real",
+        "long_name": "Pacer Benchmark Industrial Real Estate SCTR ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Benchmark Industrial Real Estate SCTR\u00e2\u0084\u00a0 Index (the \"index\").\n Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in the component securities of the index. The index was developed by Benchmark Investments, LLC, the index provider (the \"index provider\"), and measures the performance of the industrial real estate sector of the U.S. equity market, which includes warehouse and self-storage real estate sub-sectors. The fund is non-diversified.",
+        "category": "Real Estate",
+        "family": "Pacer",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "IYR": {
         "short_name": "iShares U.S. Real Estate ETF",
         "long_name": "iShares U.S. Real Estate ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the Dow Jones U.S. Real Estate Capped Index.\n The fund seeks to track the investment results of the Dow Jones U.S. Real Estate Capped Index, which measures the performance of the real estate sector of the U.S. equity market, as defined by the \u00e2\u0080\u009cindex provider\u00e2\u0080\u009d. The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index.",
+        "summary": "The investment seeks to track the investment results of the Dow Jones U.S. Real Estate Capped Index.\n The fund seeks to track the investment results of the Dow Jones U.S. Real Estate Capped Index, which measures the performance of the real estate sector of the U.S. equity market, as defined by the \"index provider\". It generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index.",
         "category": "Real Estate",
         "family": "iShares",
         "exchange": "PCX",
@@ -59,6 +89,16 @@
         "exchange": "NGM",
         "market": "us_market"
     },
+    "MORT": {
+        "short_name": "VanEck Vectors Mortgage REIT In",
+        "long_name": "VanEck Vectors Mortgage REIT Income ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the MVIS\u00c2\u00ae US Mortgage REITs Index (the \"Mortgage REITs Index\").\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The Mortgage REITs Index may include small-, medium- and large-capitalization companies. The fund is non-diversified.",
+        "category": "Real Estate",
+        "family": "VanEck",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "NETL": {
         "short_name": "NETLease Corporate Real Estate ",
         "long_name": "Fundamental Income Net Lease Real Estate ETF",
@@ -69,6 +109,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "NURE": {
+        "short_name": "Nuveen Short-Term REIT ETF",
+        "long_name": "Nuveen Short-Term REIT ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Dow Jones U.S. Select Short-Term REIT Index.\n The fund invests at least 80% of the sum of its net assets and the amount of any borrowings for investment purposes in REITs. The index is a subset of the Dow Jones U.S. Select REIT Index, which generally includes equity REITs traded on a national securities exchange in the U.S. that derive at least 75% of their total revenue from the ownership and operation of real estate assets and that have a minimum total market capitalization of $200 million at the time of their inclusion. It is non-diversified.",
+        "category": "Real Estate",
+        "family": "Nuveen",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
     "OLD": {
         "short_name": "The Long-Term Care ETF",
         "long_name": "The Long-Term Care ETF",
@@ -76,7 +126,27 @@
         "summary": "The investment seeks investment results that correspond generally to the performance, before fees and expenses, of an index which is designed to track the performance of companies globally that are positioned to profit from providing long-term care to the aging population, including companies owning or operating senior living facilities, nursing services, specialty hospitals, and senior housing, biotech companies for age-related illnesses, and companies that sell products and services to such facilities.\n The fund invests at least 80% of its net assets in the stocks that comprise the Solactive Long-Term Care Index. It is non-diversified.",
         "category": "Real Estate",
         "family": "Janus Henderson",
-        "exchange": "NGM",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "PPTY": {
+        "short_name": "PPTY U.S. Diversified Real Esta",
+        "long_name": "PPTY \u2013 U.S. Diversified Real Estate ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance, before fees and expenses, of the USREX \u00e2\u0080\u0093 U.S. Diversified Real Estate Index\u00e2\u0084\u00a2.\n Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of any collateral held from securities lending) will be invested in the component securities of the index. The index uses a rules-based methodology to provide diversified exposure to the liquid U.S. real estate market.",
+        "category": "Real Estate",
+        "family": "PPTY",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "PSR": {
+        "short_name": "Invesco Active U.S. Real Estate",
+        "long_name": "Invesco Active U.S. Real Estate Fund",
+        "currency": "USD",
+        "summary": "The investment seeks high total return through growth of capital and current income.\n The fund invests normally at least 80% of its assets in securities of companies that are principally engaged in the U.S. real estate industry and included within the FTSE NAREIT All Equity REITs Index. It also may invest in real estate operating companies (\"REOCs\"), as well as securities of other companies principally engaged in the U.S. real estate industry. REOCs are similar to REITs, except that REOCs reinvest their earnings into the business, rather than distributing them to unitholders like REITs.",
+        "category": "Real Estate",
+        "family": "Invesco",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "RDOG": {
@@ -89,6 +159,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "REIT": {
+        "short_name": "ALPS Active REIT ETF",
+        "long_name": "ALPS Active REIT ETF",
+        "currency": "USD",
+        "summary": "The investment seeks total return through dividends and capital appreciation.\n The fund will, under normal circumstances, seek to achieve its investment objective by investing at least 80% of its net assets in publicly traded equity securities of REITs. It will primarily invest in publicly traded common equity securities of U.S. REITs. The fund may also invest a portion of its assets in publicly traded common equity of U.S. real estate operating companies (not structured as REITs), publicly traded preferred equity of U.S. REITs and real estate operating companies, and cash and cash equivalents. It is non-diversified.",
+        "category": "Real Estate",
+        "family": "ALPS",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
     "REM": {
         "short_name": "iShares Trust iShares Mortgage ",
         "long_name": "iShares Mortgage Real Estate Capped ETF",
@@ -97,6 +177,16 @@
         "category": "Real Estate",
         "family": "iShares",
         "exchange": "BTS",
+        "market": "us_market"
+    },
+    "REZ": {
+        "short_name": "iShares Residential and Multise",
+        "long_name": "iShares Residential and Multisector Real Estate ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the FTSE NAREIT All Residential Capped Index composed of U.S. residential, healthcare and self-storage real estate equities.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The underlying index measures the performance of the residential apartments, manufactured homes, healthcare and self-storage real estate sectors of the U.S. equity market. The fund is non-diversified.",
+        "category": "Real Estate",
+        "family": "iShares",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "ROOF": {
@@ -136,7 +226,7 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the Solactive Global SuperDividend \u00c2\u00ae REIT Index.\n The fund invests at least 80% of its total assets in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The underlying index tracks the performance of REITs that rank among the highest yielding REITs globally, as determined by Solactive AG, the provider of the underlying index.",
         "category": "Real Estate",
         "family": "Global X Funds",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "SRVR": {
@@ -149,6 +239,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "USRT": {
+        "short_name": "iShares Core U.S. REIT ETF",
+        "long_name": "iShares Core U.S. REIT ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the FTSE NAREIT Equity REITs Index composed of U.S. real estate equities.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The index measures the performance of U.S. listed equity real estate investment trusts (\"REITs\"), excluding infrastructure REITs, mortgage REITs, and timber REITs.",
+        "category": "Real Estate",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "VNQ": {
         "short_name": "Vanguard Real Estate ETF",
         "long_name": "Vanguard Real Estate Index Fund ETF Shares",
@@ -156,6 +256,16 @@
         "summary": "The investment seeks to provide a high level of income and moderate long-term capital appreciation by tracking the performance of the MSCI US Investable Market Real Estate 25/50 Index that measures the performance of publicly traded equity REITs and other real estate-related investments.\n The advisor attempts to track the index by investing all, or substantially all, of its assets-either directly or indirectly through a wholly owned subsidiary, which is itself a registered investment company-in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index. The fund is non-diversified.",
         "category": "Real Estate",
         "family": "Vanguard",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "XLRE": {
+        "short_name": "Real Estate Select Sector SPDR ",
+        "long_name": "The Real Estate Select Sector SPDR Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before expenses, correspond generally to the price and yield performance of publicly traded equity securities of companies in the Real Estate Select Sector Index (the \"index\").\n Under normal market conditions, the fund generally invests substantially all, but at least 95%, of its total assets in the securities comprising the index. The index includes securities of companies from the following industries: real estate management and development and REITs, excluding mortgage REITs. The fund is non-diversified.",
+        "category": "Real Estate",
+        "family": "SPDR State Street Global Advisors",
         "exchange": "PCX",
         "market": "us_market"
     }

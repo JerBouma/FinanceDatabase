@@ -1,16 +1,4 @@
 {
-    "FIHUN.MX": {
-        "short_name": "FAIRFAX INDIA HOLDINGS CORPORAT",
-        "long_name": "Fairfax India Holdings Corporation",
-        "summary": "Fairfax India Holdings Corporation, an investment holding company, engages in the investment activities in India. It invests in public and private equity securities and debt instruments in India and Indian businesses, or other businesses with customers, suppliers, or business primarily conducted in, or dependent on, India. The company was founded in 2014 and is headquartered in Toronto, Canada. Fairfax India Holdings Corporation is a subsidiary of Fairfax Financial Holdings Limited.",
-        "currency": "MXN",
-        "sector": "Financial",
-        "industry": "Asset Management",
-        "exchange": "MEX",
-        "market": "mx_market",
-        "country": "Canada",
-        "city": "Toronto"
-    },
     "PBY-UN.TO": {
         "short_name": "CANSO CREDIT INCOME FUND UNITS",
         "long_name": "Canso Credit Trust - Canso Credit Income Fund",
@@ -22,5 +10,17 @@
         "market": "ca_market",
         "country": "Canada",
         "city": "Richmond Hill"
+    },
+    "WFS.TO": {
+        "short_name": "WORLD FINANCIAL SPLIT CORP",
+        "long_name": "World Financial Split Corp.",
+        "summary": "World Financial Split Corp is an equity mutual fund launched and managed by Strathbridge Asset Management Inc. It invests in public equity markets across the globe. The fund also invests some portion of its portfolio in derivative instruments. It invests in the stocks of companies operating in the financial services sector. The fund invests in the stocks of large cap companies. World Financial Split Corp was formed on December 5, 2003 and is domiciled in Canada.",
+        "currency": "CAD",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "TOR",
+        "market": "ca_market",
+        "country": "Canada",
+        "city": "Toronto"
     }
 }

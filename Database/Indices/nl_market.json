@@ -1,1682 +1,2669 @@
 {
-    "^AEX": {
-        "short_name": "AEX-INDEX",
+    "A12LE.AS": {
+        "short_name": "AEX X12 LEV NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
-    },
-    "^AMX": {
-        "short_name": "AMX-INDEX",
-        "currency": "EUR",
-        "market": "nl_market",
-        "exchange": "AMS",
-        "exchange timezone": "CET"
-    },
-    "^FTEU1": {
-        "short_name": "FTSE EURO TOP 100",
-        "currency": "EUR",
-        "market": "nl_market",
-        "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AAX.AS": {
         "short_name": "AEX ALL-SHARE",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AAXG.AS": {
         "short_name": "AEX ALL-SHARE GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "AE10S.AS": {
+        "short_name": "AEX X10 SHORT GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "AE12S.AS": {
+        "short_name": "AEX X12 SHORT GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "AE15S.AS": {
+        "short_name": "AEX X15 SHORT GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "AEEXT.AS": {
         "short_name": "AEX EXT",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AETAW.AS": {
         "short_name": "AEX ALL-TRADE AW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "AEX2S.AS": {
+        "short_name": "AEX X2 SHORT GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "AEX3L.AS": {
+        "short_name": "AEX X3 LEVERAGE NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "AEX3S.AS": {
+        "short_name": "AEX X3 SHORT GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "AEX4L.AS": {
+        "short_name": "AEX X4 LEVERAGE NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "AEX4S.AS": {
+        "short_name": "AEX X4 SHORT GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "AEX5L.AS": {
+        "short_name": "AEX X5 LEVERAGE NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "AEX5S.AS": {
+        "short_name": "AEX X5 SHORT GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "AEX6L.AS": {
+        "short_name": "AEX X6 LEVERAGE NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "AEX6S.AS": {
+        "short_name": "AEX X6 SHORT GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "AEX7L.AS": {
+        "short_name": "AEX X7 LEVERAGE NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "AEXAT.AS": {
         "short_name": "AEX ALL-TRADABLE",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXDI.AS": {
         "short_name": "AEX DI",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXEG.AS": {
         "short_name": "AEX EQUAL W GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXEN.AS": {
         "short_name": "AEX EQUAL W NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXEW.AS": {
         "short_name": "AEX EQUAL WEIGHT",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXGR.AS": {
         "short_name": "AEX GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXHD.AS": {
         "short_name": "AEX HIGH DIV NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXLV.AS": {
         "short_name": "AEX LEVERAGE",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXNL.AS": {
         "short_name": "AEX LEVERAGE NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXNR.AS": {
         "short_name": "AEX NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXSH.AS": {
         "short_name": "AEX SHORT GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXTG.AS": {
         "short_name": "AEX ALL-TRADE GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXTL.AS": {
         "short_name": "AEX TR LEVERAGE",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXTN.AS": {
         "short_name": "AEX ALL-TRADE NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AEXXB.AS": {
         "short_name": "AEX XBEAR GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AMXGR.AS": {
         "short_name": "AMX GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "AMXNR.AS": {
         "short_name": "AMX NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "AS500.AS": {
+        "short_name": "EN ASIA PAC 500",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "AS5GR.AS": {
+        "short_name": "EN ASIA PAC 500 GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "AS5NR.AS": {
+        "short_name": "EN ASIA PAC 500 NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "ASCX.AS": {
         "short_name": "ASCX-INDEX",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ASCXG.AS": {
         "short_name": "ASCX GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ASCXN.AS": {
         "short_name": "ASCX NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ATAWG.AS": {
         "short_name": "AEX ALL-TRA AW GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ATAWN.AS": {
         "short_name": "AEX ALL-TRA AW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "BANK.AS": {
+        "short_name": "EN EZ Banks",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "BANKD.AS": {
+        "short_name": "EN EZ Banks D5%",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "BANKG.AS": {
+        "short_name": "EN EZ Banks GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "BANKN.AS": {
+        "short_name": "EN EZ Banks NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "BESGD.AS": {
         "short_name": "BNL ESG L20 D 4.5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "BESGG.AS": {
         "short_name": "BNL ESG L20 GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "BESGN.AS": {
         "short_name": "BNL ESG L20 NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "BESGP.AS": {
         "short_name": "BNL ESG L20",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "BNEW.AS": {
         "short_name": "EN BENE 40 EW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "BNEWE.AS": {
         "short_name": "EN BENE 40 EW ER",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "BNEWG.AS": {
         "short_name": "EN BENE 40 EW GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "BNEWN.AS": {
         "short_name": "EN BENE 40 EW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "BNEWV.AS": {
         "short_name": "EN BENE 40 EW VT",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "CAIN2.AS": {
+        "short_name": "EURONEXT CA INDEX2",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "CAIND.AS": {
         "short_name": "Euronext CA Index",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "CEE1G.AS": {
+        "short_name": "EN CE 1 ESG EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "CEE1N.AS": {
+        "short_name": "EN CE 1 ESG EW NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "CEE1P.AS": {
+        "short_name": "EN CORE E1 ESG EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "CEE3G.AS": {
+        "short_name": "EN CE 30 ESG EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "CEE3N.AS": {
+        "short_name": "EN CE 30 ESG EW NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "CEE3P.AS": {
+        "short_name": "EN CORE E30 ESG EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "CESG1.AS": {
         "short_name": "ENCE1 ESGEW D5%NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "CESG3.AS": {
         "short_name": "ENCE30 ESGEW D5%NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "CLE5G.AS": {
+        "short_name": "EN EZ E TR L 50 GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "CLE5N.AS": {
+        "short_name": "EN EZ E TR L 50 NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "CLE5P.AS": {
+        "short_name": "EN EZ ENER TR L 50",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "CLIE5.AS": {
         "short_name": "EN EZ E T L 50 D5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "COP5D.AS": {
+        "short_name": "EN COP 50 EW 4.5%D",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "COP5E.AS": {
+        "short_name": "EN COP 50 EW ER",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "COR30.AS": {
+        "short_name": "EN CE EW30 D 5% NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "COR3D.AS": {
+        "short_name": "EN CE EW30 D 5% GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "COR3G.AS": {
+        "short_name": "EN CORE E30 EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "COR3N.AS": {
+        "short_name": "EN CORE E30 EW NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "COR3P.AS": {
+        "short_name": "EN CORE E30 EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "COREN.AS": {
         "short_name": "EN CORE E100 EW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "COREU.AS": {
         "short_name": "EN CE EW DEC 5% NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EBLRD.AS": {
         "short_name": "EN BENEL LR D 4.5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EBLRE.AS": {
         "short_name": "EN BENELUX LR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EBLRG.AS": {
         "short_name": "EN BENEL LR GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EBLRN.AS": {
         "short_name": "EN BENEL LR NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "EC1ED.AS": {
+        "short_name": "EN CE EW DEC 5% GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EC1EG.AS": {
+        "short_name": "EN CORE E100 EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EC1EW.AS": {
+        "short_name": "EN CORE E100 EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ECO50.AS": {
+        "short_name": "EN CL OB 50 EW D5%",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ECO5E.AS": {
+        "short_name": "EN CL OB 50EEW D5%",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ECO5G.AS": {
+        "short_name": "EN Cl OB 50E EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ECO5N.AS": {
+        "short_name": "EN Cl OB E50 EW NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ECO5P.AS": {
+        "short_name": "EN Cl OBJ 50 E EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "ECOEG.AS": {
         "short_name": "EN CL OB 50 EW GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ECOEN.AS": {
         "short_name": "EN CL OB 50 EW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ECOEW.AS": {
         "short_name": "EN CL OBJ 50 EW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "ECOP.AS": {
+        "short_name": "EURONEXT COP 50 EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "ECOPG.AS": {
         "short_name": "EN COP 50 EW GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ECOPN.AS": {
         "short_name": "EN COP 50 EW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "EF80.AS": {
+        "short_name": "FTSEUROFIRST 80",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EFC1.AS": {
+        "short_name": "FTSEUROFIRST 100",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "EFGED.AS": {
         "short_name": "EN FGL 50 EW D 5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EFGEG.AS": {
         "short_name": "EN FGL 50 EW GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EFGEN.AS": {
         "short_name": "EN FGL 50 EW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EFGEW.AS": {
         "short_name": "EN FRAGER L 50 EW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EFGG.AS": {
         "short_name": "EN FR GR L 50 GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EFGN.AS": {
         "short_name": "EN FR GR L 50 NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EFGP.AS": {
         "short_name": "EN FRAGER LEAD 50",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EFMED.AS": {
         "short_name": "EN FM EU EW D5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EFMEG.AS": {
         "short_name": "EN FM EU EW GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EFMEN.AS": {
         "short_name": "EN FM EU EW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EFMEP.AS": {
         "short_name": "EN FM EU EW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENCEG.AS": {
         "short_name": "EN CLIMATE EUROP G",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENCEN.AS": {
         "short_name": "EN CLIMATE EUROP N",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENCLE.AS": {
         "short_name": "EN CLIMATE EUROPE",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENFAG.AS": {
         "short_name": "EN FAM BUSINESS GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENFAM.AS": {
         "short_name": "EN FAMILY BUSINESS",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENFAN.AS": {
         "short_name": "EN FAM BUSINESS NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVB.AS": {
         "short_name": "EN VIGEO BNL 20",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVBG.AS": {
         "short_name": "EN VIGEO BNL 20 GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVBN.AS": {
         "short_name": "EN VIGEO BNL 20 NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVEG.AS": {
         "short_name": "EN VIGEO EU 120 GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVEN.AS": {
         "short_name": "EN VIGEO EU 120 NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVEO.AS": {
         "short_name": "EN VIGEO EUR 120",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVEU.AS": {
         "short_name": "EN VIGEO EU 120",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVF.AS": {
         "short_name": "EN VIGEO FR 20",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVFG.AS": {
         "short_name": "EN VIGEO FR 20 GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVFN.AS": {
         "short_name": "EN VIGEO FR 20 NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVG.AS": {
         "short_name": "EN VIGEO US 50 GR",
         "currency": "USD",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVN.AS": {
         "short_name": "EN VIGEO US 50 NR",
         "currency": "USD",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVOG.AS": {
         "short_name": "EN VIGEO EUR120 GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVON.AS": {
         "short_name": "EN VIGEO EUR120 NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVU.AS": {
         "short_name": "EN VIGEO US 50",
         "currency": "USD",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVUG.AS": {
         "short_name": "EN VIGEO UK 20 GR",
         "currency": "GBp",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVUK.AS": {
         "short_name": "EN VIGEO UK 20",
         "currency": "GBp",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVUN.AS": {
         "short_name": "EN VIGEO UK 20 NR",
         "currency": "GBp",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVW.AS": {
         "short_name": "EN VIGEO WORLD 120",
         "currency": "USD",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVWG.AS": {
         "short_name": "EN VIGEO W 120 GR",
         "currency": "USD",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ENVWN.AS": {
         "short_name": "EN VIGEO W 120 NR",
         "currency": "USD",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ERGBD.AS": {
         "short_name": "EN RM GLB BAL DECR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ERGBN.AS": {
         "short_name": "EN RM GLOB BAL NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ERGBP.AS": {
         "short_name": "EN RM GLOB BALANCE",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ERGCD.AS": {
         "short_name": "EN RM GLBCONV DECR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ERGCN.AS": {
         "short_name": "EN RM GLOB CONV NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ERGCP.AS": {
         "short_name": "EN RM GLOB CONV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ERGSD.AS": {
         "short_name": "EN RM G GL SUS DEC",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ERGSN.AS": {
         "short_name": "EN RM G GL SUST NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ERGSP.AS": {
         "short_name": "EN RM G GLOB SUST",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "ES1ED.AS": {
+        "short_name": "EN EU S 100EW D50P",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ES1EG.AS": {
+        "short_name": "EN EU S 100EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ES1EN.AS": {
+        "short_name": "EN EU S 100EW NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ES1EP.AS": {
+        "short_name": "EN EU SUST 100 EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ESE4G.AS": {
+        "short_name": "EN EZ ESG L 40 GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ESE4N.AS": {
+        "short_name": "EN EZ ESG L 40 NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ESE4P.AS": {
+        "short_name": "EN EZ ESG L 40",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "ESF5D.AS": {
         "short_name": "SBFT 50 ESGEW D50P",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ESF5G.AS": {
         "short_name": "SBFT 50 ESG EW GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ESF5N.AS": {
         "short_name": "SBFT 50 ESG EW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ESF5P.AS": {
         "short_name": "SBFT 50 ESG EW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "ESG1D.AS": {
+        "short_name": "EN EZ 100 ESG D5%",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ESG1G.AS": {
+        "short_name": "EN EZ 100 ESG GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ESG1N.AS": {
+        "short_name": "EN EZ 100 ESG NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ESG1P.AS": {
+        "short_name": "EN EZ 100 ESG",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ESG50.AS": {
+        "short_name": "EN EURO 50 ESG EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ESG5D.AS": {
+        "short_name": "EN E50 ESG EW D50P",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ESG5G.AS": {
+        "short_name": "EN E50 ESG EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ESG5N.AS": {
+        "short_name": "EN E50 ESG EW NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "ESGDE.AS": {
         "short_name": "EN EZ100 ESG D3.5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "ESGE4.AS": {
+        "short_name": "EN EZ ESG L 40 D5%",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "ESGED.AS": {
         "short_name": "EN EZ100 ESG D4.5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ESGEL.AS": {
         "short_name": "ESG LEADERS EZ D",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "EU500.AS": {
+        "short_name": "EN EUROPE 500",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EU5GR.AS": {
+        "short_name": "EN EUROPE 500 GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EU5NR.AS": {
+        "short_name": "EN EUROPE 500 NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EUS5D.AS": {
+        "short_name": "TRANSATLANTIC EW D",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "EUS5G.AS": {
         "short_name": "TRANSATLANTIC EWGR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EUS5N.AS": {
         "short_name": "TRANSATLANTIC EWNR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "EUS5P.AS": {
+        "short_name": "TRANSATLANTIC EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ150.AS": {
+        "short_name": "EN EURO 150 EW D5%",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ15G.AS": {
+        "short_name": "EN EUROZ 150 EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ15N.AS": {
+        "short_name": "EN EUROZ 150 EW NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ15P.AS": {
+        "short_name": "EN EUROZONE 150 EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ300.AS": {
+        "short_name": "EN EUROZONE 300",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ3GR.AS": {
+        "short_name": "EN EUROZONE 300 GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ3NR.AS": {
+        "short_name": "EN EUROZONE 300 NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ40.AS": {
+        "short_name": "EN EUROZ 40 EW D5%",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ40G.AS": {
+        "short_name": "EN EUROZ 40 EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ40N.AS": {
+        "short_name": "EN EUROZ 40 EW NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ40P.AS": {
+        "short_name": "EN EUROZONE 40 EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ60.AS": {
+        "short_name": "EN EZ 60 EW D 50P",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ60G.AS": {
+        "short_name": "EN EUROZ 60 EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ60N.AS": {
+        "short_name": "EN EUROZ 60 EW NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ60P.AS": {
+        "short_name": "EN EUROZONE 60 EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ70.AS": {
+        "short_name": "EN EUROZ 70 EW D5%",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ70G.AS": {
+        "short_name": "EN EUROZ 70 EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ70N.AS": {
+        "short_name": "EN EUROZ 70 EW NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ70P.AS": {
+        "short_name": "EN EUROZONE 70 EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ80D.AS": {
+        "short_name": "EN EUROZ 80 EW D5%",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ80G.AS": {
+        "short_name": "EN EUROZ 80 EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ80N.AS": {
+        "short_name": "EN EUROZ 80 EW NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "EZ80P.AS": {
+        "short_name": "EN EUROZONE 80 EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "EZENG.AS": {
         "short_name": "EN CDP ENV EZ EW G",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZENN.AS": {
         "short_name": "EN CDP ENV EZ EW N",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZENP.AS": {
         "short_name": "EN CDP ENV EZ EW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZENV.AS": {
         "short_name": "EN CDP E EZ EW D5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZML6.AS": {
         "short_name": "EN EZ L&M60EW D50P",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZMLG.AS": {
         "short_name": "EN EZ L&M 60 EW GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZMLN.AS": {
         "short_name": "EN EZ L&M 60 EW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZMLP.AS": {
         "short_name": "EN EZ L&M 60 EW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZN1G.AS": {
         "short_name": "EN EUR N100 EW GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZN1N.AS": {
         "short_name": "EN EUR N100 EW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZN1P.AS": {
         "short_name": "EN EUR N100 EW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZNE1.AS": {
         "short_name": "EN EUR N100 EW D5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZWTG.AS": {
         "short_name": "EN CDP W EZ EW GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZWTN.AS": {
         "short_name": "EN CDP W EZ EW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZWTP.AS": {
         "short_name": "EN CDP W EZ EW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "EZWTR.AS": {
         "short_name": "EN CDP W EZ EW D5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FEZ60.AS": {
         "short_name": "EN FREZ 60 EW D50P",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "FEZ6G.AS": {
+        "short_name": "EN FR EZ 60 EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "FEZ6N.AS": {
+        "short_name": "EN FR EZ 60 EW NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "FEZ6P.AS": {
         "short_name": "EN FR EZ 60 EW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FGIND.AS": {
         "short_name": "EN T30 FGINDEW D5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FGING.AS": {
         "short_name": "EN T30 FG INDEW GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FGINN.AS": {
         "short_name": "EN T30 FG INDEW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FGINP.AS": {
         "short_name": "EN T30 FG IND EW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FREEG.AS": {
         "short_name": "EN CDP E F EOGE GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FREEN.AS": {
         "short_name": "EN CDP E F EOGE NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FREEP.AS": {
         "short_name": "EN CDP ENV FR EOGE",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FRENE.AS": {
         "short_name": "EN CDP EF EOGE D5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FRENG.AS": {
         "short_name": "EN CDP E FR EW GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FRENN.AS": {
         "short_name": "EN CDP E FR EW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FRENP.AS": {
         "short_name": "EN CDP ENV FR EW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FRENV.AS": {
         "short_name": "EN CDP E FR EW D5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "GB10C.AS": {
+        "short_name": "EN RM GLB BAL RC10",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "GB10D.AS": {
+        "short_name": "EN RM GL BAL RC10D",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "GB12C.AS": {
+        "short_name": "EN RM GLB BAL RC12",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "GB12D.AS": {
+        "short_name": "EN RM GL BAL RC12D",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I2BIN.AS": {
+        "short_name": "AMUNDI 2BINF INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I2GOL.AS": {
+        "short_name": "AMUNDI 2GOLD INAV",
+        "currency": "USD",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I2STS.AS": {
+        "short_name": "LS 2STS INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I3BA.AS": {
+        "short_name": "LS 3BA INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I3BAC.AS": {
+        "short_name": "LS 3BAC INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I3BP.AS": {
+        "short_name": "LS 3BP INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I3HSB.AS": {
+        "short_name": "LS 3HSB INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I3PYP.AS": {
+        "short_name": "LS 3PYP INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I3RDS.AS": {
+        "short_name": "LS 3RDS INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I3SHP.AS": {
+        "short_name": "LS 3SHP INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I3SQ.AS": {
+        "short_name": "LS 3SQ INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I3TSL.AS": {
+        "short_name": "LS 3TSL INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I3VOD.AS": {
+        "short_name": "LS 3VOD INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "I3ZM.AS": {
+        "short_name": "LS 3ZM INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "IBCSS.AS": {
+        "short_name": "LS BCSS INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "ICEMP.AS": {
         "short_name": "ISHARES CEMP INAV",
         "currency": "GBP",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "IGSSS.AS": {
+        "short_name": "LS GSSS INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "IHSBS.AS": {
+        "short_name": "LS HSBS INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "IIESE.AS": {
         "short_name": "ISHARES IESE INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "IIFRB.AS": {
         "short_name": "ISHARES IFRB INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "IIGSG.AS": {
         "short_name": "ISHARES IGSG INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "IIJPE.AS": {
         "short_name": "ISHARES IJPE INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "IIUES.AS": {
         "short_name": "ISHARES IUES INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "IIWDE.AS": {
         "short_name": "ISHARES IWDE INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "IJPMS.AS": {
+        "short_name": "LS JPMS INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "INAPD.AS": {
         "short_name": "ISHARES IAD INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
-    },
-    "INAUC.AS": {
-        "short_name": "ETFS AUCO INAV",
-        "currency": "EUR",
-        "market": "nl_market",
-        "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INBGL.AS": {
         "short_name": "ISHARES BGL INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INBGM.AS": {
         "short_name": "ISHARES BGM INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INBGS.AS": {
         "short_name": "ISHARES IBU INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INBGX.AS": {
         "short_name": "ISHARES BGX INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INBRI.AS": {
         "short_name": "ISHARES BRC INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INBTM.AS": {
         "short_name": "ISHARES BTMA INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INBTS.AS": {
         "short_name": "ISHARES ITU INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "INDIA.AS": {
+        "short_name": "DIAMONDS DIA INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "INDJM.AS": {
         "short_name": "ISHARES IDM INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INDJS.AS": {
         "short_name": "ISHARES IDS INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INDTM.AS": {
         "short_name": "VANECK DTM INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INEGY.AS": {
         "short_name": "ISHARES IEGY INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INEGZ.AS": {
         "short_name": "ISHARES IEGZ INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INEUE.AS": {
         "short_name": "ISHARES EUE INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INEUN.AS": {
         "short_name": "ISHARES EUN INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INEUX.AS": {
         "short_name": "ISHARES IEX INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INFXC.AS": {
         "short_name": "ISHARES FXC INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIAC.AS": {
         "short_name": "ISHARES IEAC INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIAG.AS": {
         "short_name": "ISHARES IEAG INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIAS.AS": {
         "short_name": "ISHARES IAP INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIAX.AS": {
         "short_name": "ISHARES IAEX INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIBC.AS": {
         "short_name": "ISHARES IBX INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIBI.AS": {
         "short_name": "ISHARES IBI INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIBZ.AS": {
         "short_name": "ISHARES IBZ INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INICO.AS": {
         "short_name": "ISHARES ICOV INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIDA.AS": {
         "short_name": "ISHARES IWDA INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIDY.AS": {
         "short_name": "ISHARES IDY INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIEA.AS": {
         "short_name": "ISHARES IEMA INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIEE.AS": {
         "short_name": "ISHARES IEE INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIEM.AS": {
         "short_name": "ISHARES IEM INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIFE.AS": {
         "short_name": "ISHARES IFE INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIGE.AS": {
         "short_name": "ISHARES IEGE INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIJA.AS": {
         "short_name": "ISHARES IJPA INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIJP.AS": {
         "short_name": "ISHARES IJP INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIKR.AS": {
         "short_name": "ISHARES IKR INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIMA.AS": {
         "short_name": "ISHARES IMAE INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIME.AS": {
         "short_name": "ISHARES EUM INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ININF.AS": {
         "short_name": "ISHARES NFR INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIPP.AS": {
         "short_name": "ISHARES IPP INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INISF.AS": {
         "short_name": "ISHARES ISFA INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INISG.AS": {
         "short_name": "ISHARES ISG INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INISV.AS": {
         "short_name": "ISHARES ISV INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INITK.AS": {
         "short_name": "ISHARES ITK INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INITW.AS": {
         "short_name": "ISHARES ITW INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIUS.AS": {
         "short_name": "ISHARES ISP INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INIWD.AS": {
         "short_name": "ISHARES IWD INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INLQD.AS": {
         "short_name": "ISHARES LQDA INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INLTA.AS": {
         "short_name": "ISHARES LAM INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INLVO.AS": {
         "short_name": "LYXOR LVO INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INNAA.AS": {
         "short_name": "ISHARES NAA INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INNTM.AS": {
         "short_name": "VANECK NTM INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INPRV.AS": {
         "short_name": "ISHARES PRV INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
-    },
-    "INRTW.AS": {
-        "short_name": "ETFS RTWO INAV",
-        "currency": "EUR",
-        "market": "nl_market",
-        "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INTDT.AS": {
         "short_name": "VANECK TDT INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INTMX.AS": {
         "short_name": "VANECK TMX INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INTOF.AS": {
         "short_name": "VANECK TOF INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INTPS.AS": {
         "short_name": "ISHARES TIPS INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INUSP.AS": {
         "short_name": "ISHARES IUS INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "INWDP.AS": {
         "short_name": "ISHARES IGP INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "ISBA.AS": {
+        "short_name": "LS SBA INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ISBP.AS": {
+        "short_name": "LS SBP INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ISCIT.AS": {
+        "short_name": "LS SCIT INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ISPYP.AS": {
+        "short_name": "LS SPYP INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ISRDS.AS": {
+        "short_name": "LS SRDS INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ISSHO.AS": {
+        "short_name": "LS SSHO INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ISSQ.AS": {
+        "short_name": "LS SSQ INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ISZM.AS": {
+        "short_name": "LS SZM INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "ITAT.AS": {
         "short_name": "VANECK TAT INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ITCBT.AS": {
         "short_name": "VANECK TCBT INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ITGBT.AS": {
         "short_name": "VANECK TGBT INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ITGET.AS": {
         "short_name": "VANECK TGET INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ITRET.AS": {
         "short_name": "VANECK TRET INAV",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "ITSL3.AS": {
+        "short_name": "LS TSL3 INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ITX7L.AS": {
+        "short_name": "ITALIA X 7",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "ITX7S.AS": {
         "short_name": "ITALIA X -7",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "IVODS.AS": {
+        "short_name": "LS VODS INAV",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "LC100.AS": {
+        "short_name": "LC 100 EUROPE",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "LC1GR.AS": {
+        "short_name": "LC 100 EUROPE GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "LC1NR.AS": {
+        "short_name": "LC 100 EUROPE NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "MDE1G.AS": {
         "short_name": "M DM EUROPE 100 GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "MDE1N.AS": {
         "short_name": "M DM EUROPE 100 NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "MDE1P.AS": {
         "short_name": "M DM EUROPE 100 PR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "ME50G.AS": {
+        "short_name": "MSG EUROZONE 50 GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ME50N.AS": {
+        "short_name": "MSG EUROZONE 50 NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "ME50P.AS": {
+        "short_name": "MSG EUROZONE 50 PR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "NA500.AS": {
+        "short_name": "EN NA 500",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "NA5GR.AS": {
+        "short_name": "EN NA 500 GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "NA5NR.AS": {
+        "short_name": "EN NA 500 NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "NLBM.AS": {
         "short_name": "AEX BASIC MATER.",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLBMG.AS": {
         "short_name": "AEX BASIC MATER GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLCG.AS": {
         "short_name": "AEX CONS DISCR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLCGG.AS": {
         "short_name": "AEX CONS DISCR GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLCS.AS": {
         "short_name": "AEX CONS STAPLES",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLCSG.AS": {
         "short_name": "AEX CONS STAPL GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLFIN.AS": {
         "short_name": "AEX FINANCIALS",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLFNG.AS": {
         "short_name": "AEX FINANCIALS GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLHC.AS": {
         "short_name": "AEX HEALTH CARE",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLHCG.AS": {
         "short_name": "AEX HLTH CARE GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLIN.AS": {
         "short_name": "AEX INDUSTRIALS",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLING.AS": {
         "short_name": "AEX INDUSTRIALS GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLOG.AS": {
         "short_name": "AEX ENERGY",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLOGG.AS": {
         "short_name": "AEX ENERGY GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLRE.AS": {
         "short_name": "AEX REAL ESTATE",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLREG.AS": {
         "short_name": "AEX REAL ESTATE GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLTCG.AS": {
         "short_name": "AEX TECHNOLOGY GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLTEC.AS": {
         "short_name": "AEX TECHNOLOGY",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLTEL.AS": {
         "short_name": "AEX TELECOM.",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "NLTLG.AS": {
         "short_name": "AEX TELECOM GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
-    "VAEX.AS": {
-        "short_name": "AEX VOLAT.INDEX",
+    "NLUT.AS": {
+        "short_name": "AEX UTILITIES",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "NLUTG.AS": {
+        "short_name": "AEX UTILITIES GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "SG50D.AS": {
+        "short_name": "EN E50 SG EW D50P",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "SG50G.AS": {
+        "short_name": "EN E50 SG EW GR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "SG50N.AS": {
+        "short_name": "EN E50 SG EW NR",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "SG50P.AS": {
+        "short_name": "EN EURO 50 SG EW",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     },
     "WLENG.AS": {
         "short_name": "EN CDP ENV W EW GR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "WLENN.AS": {
         "short_name": "EN CDP ENV W EW NR",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "WLENP.AS": {
         "short_name": "EN CDP ENV W EW",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "WLENV.AS": {
         "short_name": "EN CDP E W EW D5%",
         "currency": "EUR",
         "market": "nl_market",
         "exchange": "AMS",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "^AEX": {
+        "short_name": "AEX-INDEX",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "^AMX": {
+        "short_name": "AMX-INDEX",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
+    },
+    "^FTEU1": {
+        "short_name": "FTSE EURO TOP 100",
+        "currency": "EUR",
+        "market": "nl_market",
+        "exchange": "AMS",
+        "exchange timezone": "CEST"
     }
 }

@@ -1,4 +1,10 @@
 {
+    "CADKGS=X": {
+        "short_name": "CAD/KGS",
+        "currency": "KGS",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "CHFKGS=X": {
         "short_name": "CHF/KGS",
         "currency": "KGS",
@@ -7,6 +13,12 @@
     },
     "EURKGS=X": {
         "short_name": "EUR/KGS",
+        "currency": "KGS",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPKGS=X": {
+        "short_name": "GBP/KGS",
         "currency": "KGS",
         "exchange": "CCY",
         "market": "ccy_market"

@@ -47,6 +47,18 @@
         "country": "Australia",
         "city": "Melbourne"
     },
+    "AKL.AX": {
+        "short_name": "AUCKREESTR UNIT",
+        "long_name": "Auckland Real Estate Trust",
+        "summary": "Auckland Real Estate Trust engages in the property investment activities in the United States. The company's property portfolio comprises retail, office, and industrial properties located in New Jersey, Massachusetts, Illinois, New York, and New Hampshire. Auckland Real Estate Trust was formerly known as Quattro Plus Real Estate. Auckland Real Estate Trust is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "AOF.AX": {
         "short_name": "AU OFFICE FPO",
         "long_name": "Australian Unity Office Fund",
@@ -81,7 +93,7 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Bondi Junction"
+        "city": "Surry Hills"
     },
     "AQR.AX": {
         "short_name": "APNCONREIT STAPLED",
@@ -106,6 +118,18 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Melbourne"
+    },
+    "AU1.AX": {
+        "short_name": "THE AGENCY FPO",
+        "long_name": "The Agency Group Australia Limited",
+        "summary": "The Agency Group Australia Limited engages in the real estate business in Australia. The company offers property management, real estate agency, and related services, as well as sells properties. The Agency Group Australia Limited was incorporated in 2006 and is based in Perth, Australia.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Perth"
     },
     "AVJ.AX": {
         "short_name": "AVJ FPO",
@@ -143,15 +167,15 @@
         "country": "Australia",
         "city": "Adelaide"
     },
-    "BHL.AX": {
-        "short_name": "BOYUAN FPO",
-        "long_name": "Boyuan Holdings Limited",
-        "summary": "Boyuan Holdings Limited, through its subsidiaries, engages in the property development and management activities in Australia. The company operates through four segments: Property Investment and Management, Funds Management, Lifestyle Living, and Corporate. It provides property advisory services across the life cycle of residential and commercial developments comprising assistance in site acquisition and development applications, building design, construction, sales, and marketing, as well as property management. The company also operates tourist parks and retirement lifestyle living villages; and manages investment funds. The company was founded in 2015 and is headquartered in Sydney, Australia. Boyuan Holdings Limited is a subsidiary of Hong Kong Jianyuan Investment Limited.",
-        "currency": "AUD",
+    "BVP.SI": {
+        "short_name": "AIMS Property",
+        "long_name": "Aims Property Securities Fund",
+        "summary": "Aims Property Securities Fund is a close-ended fund of funds launched by MacArthurCook Ltd. The fund is managed by MacarthurCook Fund Management Limited. It invests in the funds investing in the real estate sector including unlisted property trusts/syndicates, wholesale property funds, listed property trust, listed property-related companies, and cash and fixed interest securities. The fund employs a fundamental analysis with a bottom-up stock picking approach focusing on factors such as skills of manager, quality of fund, quality of properties, debt management skills and commitment to income growth, financial strength, proven management, and business model strength to create its portfolio. It benchmarks the performance of its portfolio against the S&P/ASX200 Property Trust Accumulation Index. The fund conducts in-house research to make its investments. It was formerly known as MacArthurcook Property Securties Fund. Aims Property Securities Fund is domiciled in Australia.",
+        "currency": "SGD",
         "sector": "Real Estate",
-        "industry": "Real Estate Services",
-        "exchange": "ASX",
-        "market": "au_market",
+        "industry": "REIT - Diversified",
+        "exchange": "SES",
+        "market": "sg_market",
         "country": "Australia",
         "city": "Sydney"
     },
@@ -167,18 +191,6 @@
         "country": "Australia",
         "city": "Perth"
     },
-    "BWR.AX": {
-        "short_name": "BWLPTRUST UNITS",
-        "long_name": "Blackwall Property Trust",
-        "summary": "Blackwall Property Trust is a real estate investment trust externally managed by BlackWall Fund Services Limited. It invests in the real estate markets across Australia. It primarily invests in the industrial, retail and commercial Australian properties, and unlisted property securities. Blackwall Property Trust is based in Australia.",
-        "currency": "AUD",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "ASX",
-        "market": "au_market",
-        "country": "Australia",
-        "city": "Neutral Bay"
-    },
     "CDP.AX": {
         "short_name": "CARINDALE UNIT",
         "long_name": "Carindale Property Trust",
@@ -191,10 +203,34 @@
         "country": "Australia",
         "city": "Sydney"
     },
+    "CHC.AX": {
+        "short_name": "CHARTER HG STP FORUS",
+        "long_name": "Charter Hall Group",
+        "summary": "With over 30 years' experience in property investment and funds management, we're one of Australia's leading fully integrated property groups. We use our property expertise to access, deploy, manage and invest equity across our core sectors \u00c2\u0096 office, retail, industrial & logistics and social infrastructure. Operating with prudence, we've carefully curated a $41.8 billion plus diverse portfolio of over 1100 high quality, long leased properties. Partnership and financial discipline are at the heart of our approach. Acting in the best interest of customers and communities, we combine insight and inventiveness to unlock hidden value. Taking a long term view, our $6.8 billion development pipeline delivers sustainable, technologically enabled projects for our customers. The impacts of what we do are far-reaching. From helping businesses succeed by supporting their evolving workplace needs, to providing investors with superior returns for a better retirement, we're powered by the drive to go further.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "CIP.AX": {
+        "short_name": "CEN I REIT ORD UNIT",
+        "long_name": "Centuria Industrial REIT",
+        "summary": "CIP is Australia's largest domestic pure play industrial REIT and is included in the S&P/ASX 200 Index. CIP's portfolio of high-quality industrial assets is situated in key metropolitan locations throughout Australia and is underpinned by a quality and diverse tenant base. CIP is overseen by a hands on, active manager and provides investors with income and an opportunity for capital growth from a pure play portfolio of high quality Australian industrial assets. Centuria Property Funds No. 2 Limited (CPF2L), is the Responsible Entity for the ASX-listed Centuria Industrial REIT (CIP). CPF2L, is a wholly owned subsidiary of Centuria Capital Group (CNI). CNI is an ASX-listed specialist investment manager with $10.2 billion in total assets under management and strong offerings across listed real estate investment trusts, unlisted real estate funds and investment bonds.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "REIT - Industrial",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "CLW.AX": {
         "short_name": "CHTR H LWR STAPLED",
         "long_name": "Charter Hall Long WALE REIT",
-        "summary": "Charter Hall Long WALE REIT is an Australian Real Estate Investment Trust (REIT) listed on the ASX and investing in high quality Australasian real estate assets that are predominantly leased to corporate and government tenants on long term leases. Charter Hall Long WALE REIT is managed by Charter Hall Group (ASX:CHC). With over 29 years' experience in property investment and funds management, we're one of Australia's leading fully integrated property groups. We use our property expertise to access, deploy, manage and invest equity across our core sectors \u00c2\u0096 office, retail, industrial and social infrastructure. Operating with prudence Charter Hall Group as manager of CLW has carefully curated a $40 billion diverse portfolio of over 1100 high quality, long leased properties. Partnership and financial discipline are at the heart of our approach. Acting in the best interest of customers and communities, we combine insight and inventiveness to unlock hidden value. Taking a long term view, our $7.3 billion development pipeline delivers sustainable, technologically enabled projects for our customers. The impacts of what we do are far-reaching. From helping businesses succeed by supporting their evolving workplace needs, to providing investors with superior returns for a better retirement, we're powered by the drive to go further.",
+        "summary": "Charter Hall Long WALE REIT is an Australian Real Estate Investment Trust (REIT) listed on the ASX and investing in high quality Australasian real estate assets that are predominantly leased to corporate and government tenants on long term leases. Charter Hall Long WALE REIT is managed by Charter Hall Group (ASX:CHC). With over 29 years' experience in property investment and funds management, we're one of Australia's leading fully integrated property groups. We use our property expertise to access, deploy, manage and invest equity across our core sectors - office, industrial & logistics, retail and social infrastructure. Operating with prudence, we've carefully curated a $45 billion diverse portfolio of over 1,300 high quality, long leased properties. Partnership and financial discipline are at the heart of our approach. Acting in the best interest of customers and communities, we combine insight and inventiveness to unlock hidden value. Taking a long-term view, our $6.8 billion development pipeline delivers sustainable, technologically enabled projects for our customers. The impacts of what we do are far-reaching. From helping businesses succeed by supporting their evolving workplace needs, to providing investors with superior returns for a better retirement, we're powered by the drive to go further.",
         "currency": "AUD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -226,6 +262,18 @@
         "market": "us_market",
         "country": "Australia",
         "city": "Chadstone"
+    },
+    "COF.AX": {
+        "short_name": "CENTOREIT ORD UNIT",
+        "long_name": "Centuria Office REIT",
+        "summary": "COF is Australia's largest ASX listed pure play office REIT and is included in the S&P/ASX300 Index. COF owns a portfolio of high quality assets situated in core office markets throughout Australia. COF is overseen by a hands-on, active manager and provides investors with income and the opportunity for capital growth from a pure play portfolio of high-quality Australian office assets. Centuria Property Funds Limited (CPFL) is the Responsible Entity for the ASX listed Centuria Office REIT (COF). CPFL, is a wholly owned subsidiary of Centuria Capital Group (CNI). CNI is an ASX-listed specialist investment manager with $10.2 billion in total assets under management and offers a range of investment opportunities including listed and unlisted property funds as well as tax effective investment bonds.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
     },
     "CQE.AX": {
         "short_name": "CHSOCINFRA UNIT",
@@ -278,7 +326,7 @@
     "DVN.AX": {
         "short_name": "DEVINE FPO",
         "long_name": "Devine Limited",
-        "summary": "Devine Limited, together with its subsidiaries, engages in the land development and construction activities in Australia. It develops and sells apartment and mixed use projects; and constructs residential apartments, as well as offers property management services. The company was founded in 1983 and is headquartered in Hamilton, Australia. Devine Limited is a subsidiary of CIMIC Residential Investments Pty Limited.",
+        "summary": "Devine Limited, together with its subsidiaries, engages in the land development and construction activities in Australia. The company develops and sells apartment and mixed use projects; and constructs residential apartments. It also offers property management services. The company was founded in 1983 and is headquartered in Hamilton, Australia. Devine Limited is a subsidiary of CIMIC Residential Investments Pty Limited.",
         "currency": "AUD",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -290,7 +338,7 @@
     "DXS.AX": {
         "short_name": "DEXUS STAPLED",
         "long_name": "Dexus",
-        "summary": "Dexus is one of Australia's leading real estate groups, managing a high quality Australian property portfolio valued at $32.0 billion. We believe that the strength and quality of our relationships is central to our success and are deeply committed to working with our customers to provide spaces that engage and inspire. We invest only in Australia, and directly own $16.5 billion of office and industrial properties. We manage a further $15.5 billion of office, retail, industrial and healthcare properties for third party clients. The group's $10.6 billion development pipeline provides the opportunity to grow both portfolios and enhance future returns. With 1.8 million square metres of office workspace across 51 properties, we are Australia's preferred office partner. Dexus is a Top 50 entity by market capitalisation listed on the Australian Securities Exchange (trading code: DXS) and is supported by 29,000 investors from 21 countries. With 36 years of expertise in property investment, development and asset management, we have a proven track record in capital and risk management, providing service excellence to tenants and delivering superior risk-adjusted returns for investors.",
+        "summary": "Dexus is one of Australia's leading real estate groups, proudly managing a high-quality Australian property portfolio valued at $32.1 billion. We believe that the strength and quality of our relationships will always be central to our success and are deeply committed to working with our customers to provide spaces that engage and inspire. We invest only in Australia, and directly own $16.5 billion of office and industrial properties. We manage a further $15.6 billion of office, retail, industrial and healthcare properties for third party clients. The group's $11.4 billion development pipeline provides the opportunity to grow both portfolios and enhance future returns. With 1.6 million square metres of office workspace across 51 properties, we are Australia's preferred office partner. Dexus is a Top 50 entity by market capitalisation listed on the Australian Securities Exchange (trading code: DXS) and is supported by more than 29,000 investors from 24 countries. With 36 years of expertise in property investment, development and asset management, we have a proven track record in capital and risk management, providing service excellence to tenants and delivering superior risk adjusted returns for investors.",
         "currency": "AUD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -302,7 +350,7 @@
     "DXSPF": {
         "short_name": "DEXUS",
         "long_name": "Dexus",
-        "summary": "Dexus is one of Australia's leading real estate groups, managing a high quality Australian property portfolio valued at $32.0 billion. We believe that the strength and quality of our relationships is central to our success and are deeply committed to working with our customers to provide spaces that engage and inspire. We invest only in Australia, and directly own $16.5 billion of office and industrial properties. We manage a further $15.5 billion of office, retail, industrial and healthcare properties for third party clients. The group's $10.6 billion development pipeline provides the opportunity to grow both portfolios and enhance future returns. With 1.8 million square metres of office workspace across 51 properties, we are Australia's preferred office partner. Dexus is a Top 50 entity by market capitalisation listed on the Australian Securities Exchange (trading code: DXS) and is supported by 29,000 investors from 21 countries. With 36 years of expertise in property investment, development and asset management, we have a proven track record in capital and risk management, providing service excellence to tenants and delivering superior risk-adjusted returns for investors.",
+        "summary": "Dexus is one of Australia's leading real estate groups, proudly managing a high-quality Australian property portfolio valued at $32.1 billion. We believe that the strength and quality of our relationships will always be central to our success and are deeply committed to working with our customers to provide spaces that engage and inspire. We invest only in Australia, and directly own $16.5 billion of office and industrial properties. We manage a further $15.6 billion of office, retail, industrial and healthcare properties for third party clients. The group's $11.4 billion development pipeline provides the opportunity to grow both portfolios and enhance future returns. With 1.6 million square metres of office workspace across 51 properties, we are Australia's preferred office partner. Dexus is a Top 50 entity by market capitalisation listed on the Australian Securities Exchange (trading code: DXS) and is supported by more than 29,000 investors from 24 countries. With 36 years of expertise in property investment, development and asset management, we have a proven track record in capital and risk management, providing service excellence to tenants and delivering superior risk adjusted returns for investors.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -429,7 +477,7 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "city": "Rosebery"
     },
     "GMGSF": {
         "short_name": "GOODMAN GROUP",
@@ -441,7 +489,7 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Sydney"
+        "city": "Rosebery"
     },
     "GOZ.AX": {
         "short_name": "GROWTHPRO STAPLED",
@@ -491,17 +539,17 @@
         "country": "Australia",
         "city": "Sydney"
     },
-    "HGL.AX": {
-        "short_name": "HUDSON INV FPO",
-        "long_name": "Hudson Investment Group Limited",
-        "summary": "Hudson Investment Group Limited, together with its subsidiaries, engages in the investment, development, and administration of industrial and commercial properties in Australia. Hudson Investment Group Limited is based in Sydney, Australia.",
+    "HMC.AX": {
+        "short_name": "HOME CO STAPLED",
+        "long_name": "Home Consortium Limited",
+        "summary": "Home Consortium Limited, together with its subsidiaries, owns, develops, and manages real estate properties in Australia. The company operates hyper-convenience retail and services centers. Its property portfolio consists of 35 centers in 5 states under the HomeCo brand name. The company was incorporated in 2009 and is headquartered in Double Bay, Australia.",
         "currency": "AUD",
         "sector": "Real Estate",
-        "industry": "Real Estate - Development",
+        "industry": "Real Estate - Diversified",
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "city": "Double Bay"
     },
     "HPI.AX": {
         "short_name": "HOTELPROP STAPLED",
@@ -586,6 +634,18 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Sydney"
+    },
+    "LIC.AX": {
+        "short_name": "LIFESTYLE FPO",
+        "long_name": "Lifestyle Communities Limited",
+        "summary": "Lifestyle Communities Limited, together with its subsidiaries, develops, owns, and manages affordable independent living residential land lease communities for working, semi-retired, or retired people in Australia. The company was founded in 2003 and is based in South Melbourne, Australia.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Diversified",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Melbourne"
     },
     "LLC.AX": {
         "short_name": "LEND LEASE STAPLED",
@@ -707,6 +767,18 @@
         "country": "Australia",
         "city": "Deakin"
     },
+    "RPG.AX": {
+        "short_name": "RAPTIS FPO",
+        "long_name": "Raptis Group Limited",
+        "summary": "Raptis Group Limited engages in the property development, management, and investment activities in Australia. It develops residential, commercial, and retail projects, as well as resorts. The company was incorporated in 1983 and is based in Brisbane, Australia. Raptis Group Limited is a subsidiary of Hanslow Holdings Pty Limited.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Diversified",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Brisbane"
+    },
     "SCG.AX": {
         "short_name": "SCENTRE STAPLED",
         "long_name": "Scentre Group",
@@ -743,6 +815,18 @@
         "country": "Australia",
         "city": "Brisbane"
     },
+    "SGP.AX": {
+        "short_name": "STOCKLAND. STAPLED",
+        "long_name": "Stockland",
+        "summary": "Stockland (ASX:SGP) was founded in 1952 and has grown to become one of Australia's largest diversified property groups \u00c2\u0096 owning, developing and managing a large portfolio of shopping centres, residential communities, workplace and logistic assets and retirement living villages. Stockland is consistently rated as one of the most sustainable real estate companies in the world by the Dow Jones Sustainability World Index (DJSI). Stockland is also an Employer of Choice for Gender Equality, as recognised by the Workplace Gender Equality Agency.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "SRV.AX": {
         "short_name": "SERVCORP FPO",
         "long_name": "Servcorp Limited",
@@ -754,6 +838,18 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Sydney"
+    },
+    "SSL.AX": {
+        "short_name": "SIETEL FPO",
+        "long_name": "Sietel Limited",
+        "summary": "Sietel Limited invests in industrial, commercial, and retail real estate properties in Australia. It also finances and leases facilities, as well as offers plant and management services. In addition, the company also operates as a commercial vehicle body builder; and a designer, developer, importer, and distributor of domestic appliances, as well as a property maintenance company. Sietel Limited is based in Moorabbin, Australia.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Moorabbin"
     },
     "STGPF": {
         "short_name": "SCENTRE GROUP LIMITED",
@@ -786,6 +882,30 @@
         "currency": "AUD",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "TIA.AX": {
+        "short_name": "TIAN AN AU FPO",
+        "long_name": "Tian An Australia Limited",
+        "summary": "Tian An Australia Limited engages in the development and sale of residential land and built-form products in Australia. It primarily focuses its development in the east coast of Australia and Mandurah/Peel Region of Western Australia. The company develops residential, commercial, and tourism projects. The company was formerly known as PBD Developments Limited and changed its name to Tian An Australia Limited in April 2016. Tian An Australia Limited was incorporated in 1985 and is based in Sydney, Australia. Tian An Australia Limited is a subsidiary of Oasis Star Limited.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "TOT.AX": {
+        "short_name": "360CAPITAL STAPLED",
+        "long_name": "360 Capital REIT",
+        "summary": "360 Capital REIT invests across the entire real estate capital stack to take advantage of varying market conditions in order to maximize risk adjusted returns for unit holders. It was formerly known as 360 Capital Total Return Fund. 360 Capital REIT is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
@@ -838,6 +958,30 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Chadstone"
+    },
+    "VOL.AX": {
+        "short_name": "VICTRY OFF FPO",
+        "long_name": "Victory Offices Limited",
+        "summary": "Victory Offices Limited provides workspace services for individuals and businesses in Australia. The company offers space to private serviced, virtual, and day offices; training and board rooms; and co-working, hot desks, and shared and meeting spaces, as well as victory lounge, auditorium, and event spaces. It also offers covid-19 risk solutions, such as virtual assistance and business continuity programs. The company was founded in 2013 and is based in Melbourne, Australia. Victory Offices Limited is a subsidiary of Victory Group Holdings Pty Ltd.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Melbourne"
+    },
+    "WOT.AX": {
+        "short_name": "WOTSO STAPLED",
+        "long_name": "Wotso Property",
+        "summary": "Wotso Property is a real estate investment trust externally managed by BlackWall Fund Services Limited. It invests in the real estate markets across Australia. It primarily invests in the industrial, retail and commercial Australian properties, and unlisted property securities. Wotso Property is based in Australia.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Neutral Bay"
     },
     "WPR.AX": {
         "short_name": "WAYPOINTRT STAPLED",

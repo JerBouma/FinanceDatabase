@@ -1,27 +1,27 @@
 {
-    "BCG.NS": {
-        "short_name": "BRIGHTCOM GROUP",
-        "long_name": "Brightcom Group Limited",
-        "summary": "Brightcom Group Limited provides digital marketing solutions to businesses, agencies, and online publishers worldwide. It operates through Digital Marketing and Software Development segments. The company connects advertisers with their audience across various forms of digital media to deliver messages to the right audience. The company was formerly known as Lycos Internet Limited and changed its name to Brightcom Group Limited in September 2018. Brightcom Group Limited was incorporated in 1999 and is based in Hyderabad, India.",
-        "currency": "INR",
+    "CURM": {
+        "short_name": "CUR MEDIA INC",
+        "long_name": "C\u00dcR Media, Inc.",
+        "summary": "C\u00c3\u009cR Media, Inc., an Internet music service, focuses on providing a paid subscription Internet radio service offering listeners streaming music on the Web and mobile devices under the C\u00c3\u009cR brand. It also intends to offer personalized advertising in the form of display ads, email, and text messages; and to sell music, concert tickets, and merchandise through its music streaming service, as well as music downloads. The company was formerly known as Duane Street Corp and changed its name to C\u00c3\u009cR Media, Inc. in January 2014. C\u00c3\u009cR Media, Inc. was founded in 2008 and is based in Glastonbury, Connecticut.",
+        "currency": "USD",
         "sector": "Technology",
         "industry": "Internet Information Providers",
-        "exchange": "NSI",
-        "market": "in_market",
-        "country": "India",
-        "city": "Hyderabad"
-    },
-    "GRPN.MX": {
-        "short_name": "GROUPON INC",
-        "long_name": "Groupon, Inc.",
-        "summary": "Groupon, Inc. operates online local commerce marketplaces that connect merchants to consumers by offering goods and services at a discount in North America and internationally. The company provides deals in various categories, including events and activities; health, beauty, and wellness; food and drink; home and garden; automotive; discounted and market rates for hotel, airfare, and package deals, as well as deals on various product lines, such as electronics, sporting goods, jewelry, toys, household items, and apparel. It offers its deal offerings to customers through Websites; search engines; mobile applications and mobile, which enable consumers to browse, purchase, manage, and redeem deals on their mobile devices; emails and push notifications; affiliate channels; social and display advertising; and offline marketing. The company was formerly known as ThePoint.com, Inc. and changed its name to Groupon, Inc. in October 2008. Groupon, Inc. was founded in 2008 and is headquartered in Chicago, Illinois.",
-        "currency": "MXN",
-        "sector": "Technology",
-        "industry": "Internet Information Providers",
-        "exchange": "MEX",
-        "market": "mx_market",
+        "exchange": "PNK",
+        "market": "us_market",
         "country": "United States",
-        "city": "Chicago"
+        "city": "Glastonbury"
+    },
+    "EVTI": {
+        "short_name": "EVENTURE INTERACTIVE INC",
+        "long_name": "Eventure Interactive, Inc.",
+        "summary": "Eventure Interactive, Inc. engages in the social media business in the United States. It develops social applications, as well as operates a mobile-to-Web technology platform that enables the users to create, capture, and organize memories and data. The company provides mobile applications for android and iOS based smartphones and mobile devices. It also operates eventure.com, which provides Eventure service that enables customers to find, plan, invite, navigate, capture, organize, and share events into a single application. The company was formerly known as Live Event Media, Inc. and changed its name to Eventure Interactive, Inc. in February 2013. Eventure Interactive, Inc. was founded in 2010 and is headquartered in Costa Mesa, California.",
+        "currency": "USD",
+        "sector": "Technology",
+        "industry": "Internet Information Providers",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Costa Mesa"
     },
     "OPMG": {
         "short_name": "OPTIONS MEDIA GROUP HOLDINGS IN",
@@ -47,22 +47,10 @@
         "country": "China",
         "city": "Guangzhou"
     },
-    "SINAN.MX": {
-        "short_name": "SINA CORPORATION (CAY)",
-        "long_name": "SINA Corporation",
-        "summary": "SINA Corporation, together with its subsidiaries, operates as an online media company in the People's Republic of China and internationally. The company operates SINA.com, an online media property that provides region-focused format and content, including feeds from news providers; business news coverage and personal finance columns; sporting events information; entertainment news and events; automobile-related news and service information; technology updates; interactive video products, such as news, sports, and entertainment; and education, digital, fashion, luxury, health, collectibles, travel, and other interest-based channels. It also offers SINA mobile, a mobile portal, which provides news information and entertainment content from SINA.com for mobile users in mobile browser and application format. In addition, it operates Weibo.com that offers discovery products to help users discover content; self-expression products to enable users to express themselves on Weibo platform; social products to promote social interaction between users on Weibo platform; advertising and marketing solutions; and tools and services. Further, the company offers online loan facilitation and payment, VIP membership, live streaming, and game-related services. SINA Corporation was founded in 1993 and is headquartered in Beijing, the People's Republic of China.",
-        "currency": "MXN",
-        "sector": "Technology",
-        "industry": "Internet Information Providers",
-        "exchange": "MEX",
-        "market": "mx_market",
-        "country": "China",
-        "city": "Beijing"
-    },
     "SPOTN.MX": {
         "short_name": "SPOTIFY TECHNOLOGY S.A.",
         "long_name": "Spotify Technology S.A.",
-        "summary": "Spotify Technology S.A., together with its subsidiaries, provides audio streaming services in the United States, the United Kingdom, Luxembourg, and internationally. It operates through two segments, Premium and Ad-Supported. The company offers unlimited online and offline high-quality streaming access to its catalog of music and podcasts without commercial breaks to its subscribers. It also provides on-demand online access to its catalog of music and unlimited online access to the catalog of podcasts to its subscribers with no subscription fees; and sales, marketing, contract research and development, and customer support services. As of March 31, 2020, the company's platform included 286 million monthly active users and 130 million premium subscribers in approximately 79 countries and territories. Spotify Technology S.A. was founded in 2006 and is based in Luxembourg, Luxembourg.",
+        "summary": "Spotify Technology S.A., together with its subsidiaries, provides audio streaming services worldwide. It operates in two segments, Premium and Ad-Supported. The Premium segment offers unlimited online and offline streaming access to its catalog of music and podcasts without commercial breaks to its subscribers. The Ad-Supported segment provides on-demand online access to its catalog of music and unlimited online access to the catalog of podcasts to its subscribers with no subscription fees. The company also offers sales, marketing, contract research and development, and customer support services. As of December 31, 2020, its platform included 345 million monthly active users and 155 million premium subscribers in 93 countries and territories. The company was founded in 2006 and is based in Luxembourg, Luxembourg.",
         "currency": "MXN",
         "sector": "Technology",
         "industry": "Internet Information Providers",
@@ -86,7 +74,7 @@
     "TCEHYN.MX": {
         "short_name": "TENCENT HOLDINGS LIMITED",
         "long_name": "Tencent Holdings Limited",
-        "summary": "Tencent Holdings Limited, an investment holding company, provides value-added services (VAS) and Internet advertising services in Mainland China, the United States, Europe, and internationally. The company operates through VAS, FinTech and Business Services, Online Advertising, and Others segments. It offers online games and social network services; FinTech and cloud services; and online advertising services, such as media, social, and others advertisement services. The company is also involved in production, investment, and distribution of films and television programs for third parties, as well as copyrights licensing, merchandise sales, and other activities. In addition, it develops software; develops and operates online games; and provides information technology, information system integration, asset management, online literature, and online music entertainment services. The company was founded in 1998 and is headquartered in Shenzhen, the People's Republic of China.",
+        "summary": "Tencent Holdings Limited, an investment holding company, provides value-added services (VAS) and Online advertising services in Mainland China and internationally. The company operates through VAS, Online Advertising, FinTech and Business Services, and Others segments. It offers online games and social network services; FinTech and cloud services, and online advertising services, such as media, social, and others advertisement services. The company is also involved in production, investment, and distribution of films and television programs for third parties, as well as copyrights licensing, merchandise sales, and other activities. In addition, it develops software; develops and operates online games; and provides information technology, information system integration, asset management, online literature, and online music entertainment services. Tencent Holdings Limited company was founded in 1998 and is headquartered in Shenzhen, the People's Republic of China.",
         "currency": "MXN",
         "sector": "Technology",
         "industry": "Internet Information Providers",
@@ -98,7 +86,7 @@
     "WBN.MX": {
         "short_name": "WEIBO CORPORATION",
         "long_name": "Weibo Corporation",
-        "summary": "Weibo Corporation, through its subsidiaries, operates as a social media platform for people to create, distribute, and discover content in the People's Republic of China. It operates in two segments, Advertising and Marketing Services; and Value-Added Services. The company offers discovery products to help users discover content on its platform; self-expression products that enable its users to express themselves on its platform; and social products to promote social interaction between users on its platform. It also provides advertising and marketing solutions, such as social display advertisements; and promoted feeds, such as Super FST, Fans Headline, and Weibo Express, promoted accounts, and promoted trends and search products that enable its customers to promote their brands and conduct marketing activities. In addition, the company offers copyright content, such as TV channels, online video websites, and operators with copyright content through traffic resource exchange and content traffic sharing; MCNs and other self-media to manage and provide services to content creators on Weibo, such as MCNs, unions, and e-commerce partners; other app developers an application platform, which allows users to log into third-party applications; and Weibo Wallet product consists of red envelops and coupons that enables platform partners to conduct interest generation activities on Weibo. The company was formerly known as T.CN Corporation and changed its name to Weibo Corporation in 2012. The company was founded in 2009 and is headquartered in Beijing, China. Weibo Corporation is a subsidiary of Sina Corporation.",
+        "summary": "Weibo Corporation, through its subsidiaries, operates as a social media platform for people to create, distribute, and discover content in the People's Republic of China. It operates in two segments, Advertising and Marketing Services; and Value-Added Services. The company offers discovery products to help users discover content on its platform; self-expression products that enable its users to express themselves on its platform; and social products to promote social interaction between users on its platform. It also provides advertising and marketing solutions, such as social display advertisements; and promoted marketing offerings, such as Fans Headline and Weibo Express, as well as promoted trends and search products that appear alongside user's trends discovery and search behaviors. In addition, the company offers products, such as trends, search, video/live streaming, and editing tools; content customization, copyright contents pooling, and user interaction development; and search list recommendation, trends list recommendation, and Weibo app opening advertisements for copyright content providers. Further, it provides back-end management, traffic support, and product solutions to MCNs, unions, and e-commerce partners; open application platform for other app developers that allows users to log into third-party applications with their Weibo account for sharing third-party content on its platform; and Weibo Wallet, a product that enables platform partners to conduct interest generation activities on Weibo, such as handing out red envelops and coupons. The company was formerly known as T.CN Corporation and changed its name to Weibo Corporation in 2012. The company was founded in 2009 and is headquartered in Beijing, China. Weibo Corporation is a subsidiary of Sina Corporation.",
         "currency": "MXN",
         "sector": "Technology",
         "industry": "Internet Information Providers",

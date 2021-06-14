@@ -1,39 +1,4 @@
 {
-    "^BVSP": {
-        "short_name": "IBOVESPA",
-        "currency": "BRL",
-        "market": "br_market",
-        "exchange": "SAO",
-        "exchange timezone": "BRT"
-    },
-    "^IBX50": {
-        "short_name": "IBRX 50",
-        "currency": "BRL",
-        "market": "br_market",
-        "exchange": "SAO",
-        "exchange timezone": "BRT"
-    },
-    "^IEE": {
-        "short_name": "IEELETRICA",
-        "currency": "BRL",
-        "market": "br_market",
-        "exchange": "SAO",
-        "exchange timezone": "BRT"
-    },
-    "^IGCX": {
-        "short_name": "IGOVERNANCA",
-        "currency": "BRL",
-        "market": "br_market",
-        "exchange": "SAO",
-        "exchange timezone": "BRT"
-    },
-    "^IVBX": {
-        "short_name": "IVBX2",
-        "currency": "BRL",
-        "market": "br_market",
-        "exchange": "SAO",
-        "exchange timezone": "BRT"
-    },
     "BBOV.SA": {
         "short_name": "BB ETF IBOV",
         "currency": null,
@@ -132,9 +97,30 @@
         "exchange": "SAO",
         "exchange timezone": "BRT"
     },
+    "ICO2.SA": {
+        "short_name": "ICO2",
+        "currency": "BRL",
+        "market": "br_market",
+        "exchange": "SAO",
+        "exchange timezone": "BRT"
+    },
     "ICON.SA": {
         "short_name": "ICONSUMO",
         "currency": "BRL",
+        "market": "br_market",
+        "exchange": "SAO",
+        "exchange timezone": "BRT"
+    },
+    "IDIV.SA": {
+        "short_name": "I DIVIDENDOS",
+        "currency": "BRL",
+        "market": "br_market",
+        "exchange": "SAO",
+        "exchange timezone": "BRT"
+    },
+    "IFIL.SA": {
+        "short_name": "IFIX L B3",
+        "currency": null,
         "market": "br_market",
         "exchange": "SAO",
         "exchange timezone": "BRT"
@@ -169,6 +155,20 @@
     },
     "IMAT.SA": {
         "short_name": "IMAT BASICOS",
+        "currency": "BRL",
+        "market": "br_market",
+        "exchange": "SAO",
+        "exchange timezone": "BRT"
+    },
+    "IMOB.SA": {
+        "short_name": "IMOBILIARIO",
+        "currency": "BRL",
+        "market": "br_market",
+        "exchange": "SAO",
+        "exchange timezone": "BRT"
+    },
+    "INDX.SA": {
+        "short_name": "INDUSTRIAL",
         "currency": "BRL",
         "market": "br_market",
         "exchange": "SAO",
@@ -209,6 +209,13 @@
         "exchange": "SAO",
         "exchange timezone": "BRT"
     },
+    "PCAR.SA": {
+        "short_name": "CESTA PCAR ASAI",
+        "currency": null,
+        "market": "br_market",
+        "exchange": "SAO",
+        "exchange timezone": "BRT"
+    },
     "PIBB.SA": {
         "short_name": "IT NOW PIBB IBRX",
         "currency": "BRL",
@@ -219,6 +226,13 @@
     "SMAC.SA": {
         "short_name": "IT NOW SMALL",
         "currency": null,
+        "market": "br_market",
+        "exchange": "SAO",
+        "exchange timezone": "BRT"
+    },
+    "SMAL.SA": {
+        "short_name": "ISHARES SMAL",
+        "currency": "BRL",
         "market": "br_market",
         "exchange": "SAO",
         "exchange timezone": "BRT"
@@ -247,6 +261,41 @@
     "XFIX.SA": {
         "short_name": "TREND IFIX",
         "currency": null,
+        "market": "br_market",
+        "exchange": "SAO",
+        "exchange timezone": "BRT"
+    },
+    "^BVSP": {
+        "short_name": "IBOVESPA",
+        "currency": "BRL",
+        "market": "br_market",
+        "exchange": "SAO",
+        "exchange timezone": "BRT"
+    },
+    "^IBX50": {
+        "short_name": "IBRX 50",
+        "currency": "BRL",
+        "market": "br_market",
+        "exchange": "SAO",
+        "exchange timezone": "BRT"
+    },
+    "^IEE": {
+        "short_name": "IEELETRICA",
+        "currency": "BRL",
+        "market": "br_market",
+        "exchange": "SAO",
+        "exchange timezone": "BRT"
+    },
+    "^IGCX": {
+        "short_name": "IGOVERNANCA",
+        "currency": "BRL",
+        "market": "br_market",
+        "exchange": "SAO",
+        "exchange timezone": "BRT"
+    },
+    "^IVBX": {
+        "short_name": "IVBX2",
+        "currency": "BRL",
         "market": "br_market",
         "exchange": "SAO",
         "exchange timezone": "BRT"

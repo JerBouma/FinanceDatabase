@@ -1,4 +1,28 @@
 {
+    "BHD.VI": {
+        "short_name": "BURGENLAND HOLDING AG",
+        "long_name": "Burgenland Holding Aktiengesellschaft",
+        "summary": "Burgenland Holding Aktiengesellschaft, through its investment in Energie Burgenland AG, engages in the generation and sale of electricity in Austria. It operates 226 wind turbines with a total capacity of 520 MW. The company is also involved in the sale of natural gas. The company was founded in 1990 and is based in Eisenstadt, Austria. Burgenland Holding Aktiengesellschaft is a subsidiary of EVN AG.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Diversified",
+        "exchange": "VIE",
+        "market": "at_market",
+        "country": "Austria",
+        "city": "Eisenstadt"
+    },
+    "EVN.DE": {
+        "short_name": "EVN AG",
+        "long_name": "EVN AG",
+        "summary": "EVN AG provides energy and environmental services for household, commercial, and industrial customers, as well as municipalities in Austria, Bulgaria, North Macedonia, Croatia, Germany, and Albania. The company operates through Energy, Generation, Networks, South East Europe, Environmental, and Other segments. It generates electricity from thermal sources and renewable energies; and procures, trades, and sells electricity and natural gas to end customers and on wholesale markets, as well as generates and sells heat. The company also operates regional electricity and natural gas networks, as well as cable TV and telecommunications networks. In addition, it is involved in drinking water supply, wastewater disposal and treatment, thermal waste utilisation, and international project business activities. The company was founded in 1922 and is headquartered in Maria Enzersdorf, Austria. EVN AG is a subsidiary of N\u00c3\u0096 Landes-Beteiligungsholding GmbH.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Diversified",
+        "exchange": "GER",
+        "market": "de_market",
+        "country": "Austria",
+        "city": "Maria Enzersdorf"
+    },
     "EVN.F": {
         "short_name": "EVN AG",
         "long_name": "EVN AG",
@@ -35,10 +59,22 @@
         "country": "Austria",
         "city": "Maria Enzersdorf"
     },
+    "OEW.F": {
+        "short_name": "VERBUND AG ADR 1/5/O.N.",
+        "long_name": "VERBUND AG",
+        "summary": "VERBUND AG, together with its subsidiaries, generates, trades, and sells electricity to energy exchanges, traders, energy utilities and industrial companies, and households and commercial customers in Austria and internationally. The company operates through Hydro, New Renewables, Sales, Grid, and All Other segments. As of December 31, 2020, it operated hydropower plants with a capacity of 8,267 megawatts (MW); wind farms with a capacity of 418 MW; and thermal power plants with an electrical capacity of 1,013 MW. The company also owns and operates a transmission grid in Austria; and trades and sells gas, as well as provides energy-related services. The company was formerly known as \u00c3\u0096sterreichische Elektrizit\u00c3\u00a4tswirtschafts- Aktiengesellschaft and changed its name to VERBUND AG in 2010. VERBUND AG was founded in 1947 and is headquartered in Vienna, Austria.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Austria",
+        "city": "Vienna"
+    },
     "OEWA.F": {
         "short_name": "VERBUND AG  INH. A",
         "long_name": "VERBUND AG",
-        "summary": "VERBUND AG, together with its subsidiaries, generates, trades, and sells electricity to energy exchanges, traders, energy utilities and industrial companies, and households and commercial customers in Austria and internationally. The company operates through Renewable Generation, Sales, Grid, and All Other segments. As of December 31, 2019, it operated hydropower plants with a capacity of 8,222 megawatts (MW); wind farms with a capacity of 418 MW; and thermal power plants with an electrical capacity of 1,094 MW. The company also owns and operates a transmission grid in Austria; and trades and sells gas, as well as provides energy-related services. The company was formerly known as \u00c3\u0096sterreichische Elektrizit\u00c3\u00a4tswirtschafts- Aktiengesellschaft and changed its name to VERBUND AG in 2010. VERBUND AG was founded in 1947 and is headquartered in Vienna, Austria.",
+        "summary": "VERBUND AG, together with its subsidiaries, generates, trades, and sells electricity to energy exchanges, traders, energy utilities and industrial companies, and households and commercial customers in Austria and internationally. The company operates through Hydro, New Renewables, Sales, Grid, and All Other segments. As of December 31, 2020, it operated hydropower plants with a capacity of 8,267 megawatts (MW); wind farms with a capacity of 418 MW; and thermal power plants with an electrical capacity of 1,013 MW. The company also owns and operates a transmission grid in Austria; and trades and sells gas, as well as provides energy-related services. The company was formerly known as \u00c3\u0096sterreichische Elektrizit\u00c3\u00a4tswirtschafts- Aktiengesellschaft and changed its name to VERBUND AG in 2010. VERBUND AG was founded in 1947 and is headquartered in Vienna, Austria.",
         "currency": "EUR",
         "sector": "Utilities",
         "industry": "Utilities - Renewable",
@@ -50,7 +86,7 @@
     "OEZVF": {
         "short_name": "VERBUND (OEST ELEKTRIZITAET AG)",
         "long_name": "VERBUND AG",
-        "summary": "VERBUND AG, together with its subsidiaries, generates, trades, and sells electricity to energy exchanges, traders, energy utilities and industrial companies, and households and commercial customers in Austria and internationally. The company operates through Renewable Generation, Sales, Grid, and All Other segments. As of December 31, 2019, it operated hydropower plants with a capacity of 8,222 megawatts (MW); wind farms with a capacity of 418 MW; and thermal power plants with an electrical capacity of 1,094 MW. The company also owns and operates a transmission grid in Austria; and trades and sells gas, as well as provides energy-related services. The company was formerly known as \u00c3\u0096sterreichische Elektrizit\u00c3\u00a4tswirtschafts- Aktiengesellschaft and changed its name to VERBUND AG in 2010. VERBUND AG was founded in 1947 and is headquartered in Vienna, Austria.",
+        "summary": "VERBUND AG, together with its subsidiaries, generates, trades, and sells electricity to energy exchanges, traders, energy utilities and industrial companies, and households and commercial customers in Austria and internationally. The company operates through Hydro, New Renewables, Sales, Grid, and All Other segments. As of December 31, 2020, it operated hydropower plants with a capacity of 8,267 megawatts (MW); wind farms with a capacity of 418 MW; and thermal power plants with an electrical capacity of 1,013 MW. The company also owns and operates a transmission grid in Austria; and trades and sells gas, as well as provides energy-related services. The company was formerly known as \u00c3\u0096sterreichische Elektrizit\u00c3\u00a4tswirtschafts- Aktiengesellschaft and changed its name to VERBUND AG in 2010. VERBUND AG was founded in 1947 and is headquartered in Vienna, Austria.",
         "currency": "USD",
         "sector": "Utilities",
         "industry": "Utilities - Renewable",
@@ -62,7 +98,7 @@
     "OEZVY": {
         "short_name": "VERBUND (OEST ELEKTRIZITAET AG)",
         "long_name": "VERBUND AG",
-        "summary": "VERBUND AG, together with its subsidiaries, generates, trades, and sells electricity to energy exchanges, traders, energy utilities and industrial companies, and households and commercial customers in Austria and internationally. The company operates through Renewable Generation, Sales, Grid, and All Other segments. As of December 31, 2019, it operated hydropower plants with a capacity of 8,222 megawatts (MW); wind farms with a capacity of 418 MW; and thermal power plants with an electrical capacity of 1,094 MW. The company also owns and operates a transmission grid in Austria; and trades and sells gas, as well as provides energy-related services. The company was formerly known as \u00c3\u0096sterreichische Elektrizit\u00c3\u00a4tswirtschafts- Aktiengesellschaft and changed its name to VERBUND AG in 2010. VERBUND AG was founded in 1947 and is headquartered in Vienna, Austria.",
+        "summary": "VERBUND AG, together with its subsidiaries, generates, trades, and sells electricity to energy exchanges, traders, energy utilities and industrial companies, and households and commercial customers in Austria and internationally. The company operates through Hydro, New Renewables, Sales, Grid, and All Other segments. As of December 31, 2020, it operated hydropower plants with a capacity of 8,267 megawatts (MW); wind farms with a capacity of 418 MW; and thermal power plants with an electrical capacity of 1,013 MW. The company also owns and operates a transmission grid in Austria; and trades and sells gas, as well as provides energy-related services. The company was formerly known as \u00c3\u0096sterreichische Elektrizit\u00c3\u00a4tswirtschafts- Aktiengesellschaft and changed its name to VERBUND AG in 2010. VERBUND AG was founded in 1947 and is headquartered in Vienna, Austria.",
         "currency": "USD",
         "sector": "Utilities",
         "industry": "Utilities - Renewable",
@@ -71,10 +107,22 @@
         "country": "Austria",
         "city": "Vienna"
     },
+    "VER.PR": {
+        "short_name": "VERBUND",
+        "long_name": "VERBUND AG",
+        "summary": "VERBUND AG, together with its subsidiaries, generates, trades, and sells electricity to energy exchanges, traders, energy utilities and industrial companies, and households and commercial customers in Austria and internationally. The company operates through Hydro, New Renewables, Sales, Grid, and All Other segments. As of December 31, 2020, it operated hydropower plants with a capacity of 8,267 megawatts (MW); wind farms with a capacity of 418 MW; and thermal power plants with an electrical capacity of 1,013 MW. The company also owns and operates a transmission grid in Austria; and trades and sells gas, as well as provides energy-related services. The company was formerly known as \u00c3\u0096sterreichische Elektrizit\u00c3\u00a4tswirtschafts- Aktiengesellschaft and changed its name to VERBUND AG in 2010. VERBUND AG was founded in 1947 and is headquartered in Vienna, Austria.",
+        "currency": "CZK",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "PRA",
+        "market": "cz_market",
+        "country": "Austria",
+        "city": "Vienna"
+    },
     "VER.VI": {
         "short_name": "VERBUND AG  KAT. A",
         "long_name": "VERBUND AG",
-        "summary": "VERBUND AG, together with its subsidiaries, generates, trades, and sells electricity to energy exchanges, traders, energy utilities and industrial companies, and households and commercial customers in Austria and internationally. The company operates through Renewable Generation, Sales, Grid, and All Other segments. As of December 31, 2019, it operated hydropower plants with a capacity of 8,222 megawatts (MW); wind farms with a capacity of 418 MW; and thermal power plants with an electrical capacity of 1,094 MW. The company also owns and operates a transmission grid in Austria; and trades and sells gas, as well as provides energy-related services. The company was formerly known as \u00c3\u0096sterreichische Elektrizit\u00c3\u00a4tswirtschafts- Aktiengesellschaft and changed its name to VERBUND AG in 2010. VERBUND AG was founded in 1947 and is headquartered in Vienna, Austria.",
+        "summary": "VERBUND AG, together with its subsidiaries, generates, trades, and sells electricity to energy exchanges, traders, energy utilities and industrial companies, and households and commercial customers in Austria and internationally. The company operates through Hydro, New Renewables, Sales, Grid, and All Other segments. As of December 31, 2020, it operated hydropower plants with a capacity of 8,267 megawatts (MW); wind farms with a capacity of 418 MW; and thermal power plants with an electrical capacity of 1,013 MW. The company also owns and operates a transmission grid in Austria; and trades and sells gas, as well as provides energy-related services. The company was formerly known as \u00c3\u0096sterreichische Elektrizit\u00c3\u00a4tswirtschafts- Aktiengesellschaft and changed its name to VERBUND AG in 2010. VERBUND AG was founded in 1947 and is headquartered in Vienna, Austria.",
         "currency": "EUR",
         "sector": "Utilities",
         "industry": "Utilities - Renewable",

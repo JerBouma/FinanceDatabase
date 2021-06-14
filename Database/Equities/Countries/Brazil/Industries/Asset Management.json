@@ -23,6 +23,18 @@
         "country": "Brazil",
         "city": null
     },
+    "FXM.F": {
+        "short_name": "BRADESPAR S.A. PFD",
+        "long_name": "Bradespar S.A.",
+        "summary": "Bradespar S.A., through its interest in VALE, operates as a mining company in the production of iron ore, iron ore pellets, and nickel. The company also produces manganese ore, ferroalloys, thermal and metallurgical coal, copper, platinum group metal by-products, gold, silver, and cobalt. In addition, it operates logistics systems, including railroads, maritime terminals, and ports. The company was incorporated in 2000 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Brazil",
+        "city": "S\u00c3\u00a3o Paulo"
+    },
     "FXMA.F": {
         "short_name": "BRADESPAR S.A.",
         "long_name": "Bradespar S.A.",
@@ -47,8 +59,20 @@
         "country": "Brazil",
         "city": "Sao Paulo"
     },
+    "GTWR11.SA": {
+        "short_name": "FII G TOWERSCI  ER",
+        "long_name": "Fundo Investimento Imobiliario Green Towers",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": null
+    },
     "HABT11.SA": {
-        "short_name": "FII HABIT IICI",
+        "short_name": "FII HABIT IICI  ER",
         "long_name": "Habitat Ii - Fundo De Investimento Imobiliario",
         "summary": null,
         "currency": "BRL",
@@ -60,7 +84,7 @@
         "city": null
     },
     "HCTR11.SA": {
-        "short_name": "FII HECTARE CI",
+        "short_name": "FII HECTARE CI  ER",
         "long_name": "Fundo De Investimento Imobiliario Hectare Ce",
         "summary": null,
         "currency": "BRL",
@@ -72,7 +96,7 @@
         "city": null
     },
     "HSML11.SA": {
-        "short_name": "FII HSI MALLCI",
+        "short_name": "FII HSI MALLCI  ER",
         "long_name": "Hsi Malls Fundo De Investimento Imobiliario",
         "summary": null,
         "currency": "BRL",
@@ -82,6 +106,42 @@
         "market": "br_market",
         "country": "Brazil",
         "city": "Sao Paulo"
+    },
+    "HUSC11.SA": {
+        "short_name": "FII H UNIMEDCI  ER",
+        "long_name": "Fundo Investimento Imobiliario Hospital Unimed Sul Capixaba",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": null
+    },
+    "KFOF11.SA": {
+        "short_name": "FII KINEAFOFCI  ER",
+        "long_name": "Kinea Fundo Fundos De Investimento Imobiliario FII",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": null
+    },
+    "KNHY11.SA": {
+        "short_name": "FII KINEA HYCI  ER",
+        "long_name": "Kinea High Yield Cri Fundo Investimento Imobiliario FII",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": null
     },
     "MAPT4.SA": {
         "short_name": "CEMEPE      PN",
@@ -96,7 +156,7 @@
         "city": "Rio De Janeiro"
     },
     "MGFF11.SA": {
-        "short_name": "FII MOGNO   CI",
+        "short_name": "FII MOGNO   CI  ER",
         "long_name": "Fundo Investimento Imobiliario Mogno Fundo Fundos",
         "summary": null,
         "currency": "BRL",
@@ -120,7 +180,7 @@
         "city": null
     },
     "PATC11.SA": {
-        "short_name": "FII PATRIA  CI",
+        "short_name": "FII PATRIA  CI  ER",
         "long_name": "Patria Edificios Corporativos Fundo Investimento Imobiliario Fii",
         "summary": null,
         "currency": "BRL",
@@ -168,7 +228,7 @@
         "city": "Sao Paulo"
     },
     "RBED11.SA": {
-        "short_name": "FII RIOB ED CI",
+        "short_name": "FII RIOB ED CI  ER",
         "long_name": "Aesapar Fundo de Investimento Imobili\u00e1rio - FII",
         "summary": "Aesapar Fundo de Investimento Imobili\u00c3\u00a1rio - FII specializes in real estate investments.",
         "currency": "BRL",
@@ -180,7 +240,7 @@
         "city": "Sao Paulo"
     },
     "RBIV11.SA": {
-        "short_name": "FII RBCRI IVCI",
+        "short_name": "FII RBCRI IVCI  ER",
         "long_name": "Rio Bravo Credito Imobiliario IV Fundo De Investimento Imobiliario - FII",
         "summary": null,
         "currency": "BRL",
@@ -192,7 +252,7 @@
         "city": null
     },
     "RBRP11.SA": {
-        "short_name": "FII RBR PROPCI",
+        "short_name": "FII RBR PROPCI  ER",
         "long_name": "Fundo Investimento Imobiliario Rbr Properties Fii",
         "summary": null,
         "currency": "BRL",
@@ -228,7 +288,7 @@
         "city": null
     },
     "RBVA11.SA": {
-        "short_name": "FII RIOB VA CI",
+        "short_name": "FII RIOB VA CI  ER",
         "long_name": "Fundo Invest Imobiliario Agencias Caixa - FII Fund",
         "summary": null,
         "currency": "BRL",
@@ -252,7 +312,7 @@
         "city": null
     },
     "RDPD11.SA": {
-        "short_name": "FII BB PAPIICI",
+        "short_name": "FII BB PAPIICI  ERA",
         "long_name": "Bb Renda Papeis Imobiliarios II Fundo Investimento Imobiliario",
         "summary": null,
         "currency": "BRL",
@@ -264,7 +324,7 @@
         "city": null
     },
     "VILG11.SA": {
-        "short_name": "FII VINCILOGCI",
+        "short_name": "FII VINCILOGCI  ER",
         "long_name": "Vinci Logistica Fundo Investimento Imobiliario FII",
         "summary": null,
         "currency": "BRL",
@@ -275,8 +335,20 @@
         "country": "Brazil",
         "city": null
     },
+    "VINP": {
+        "short_name": "Vinci Partners Investments Ltd.",
+        "long_name": "Vinci Partners Investments Ltd.",
+        "summary": "Vinci Partners Investments Ltd. operates as an asset management platform in Brazil. The company's portfolio of investment products and solutions covers private equity, infrastructures, real estate, credit, public equities, hedge funds, and investment products and solutions. It also offers financial and strategic advisory services to entrepreneurs, corporate management teams, and/or boards of directors, focusing primarily on IPO advisory and mergers and acquisition transactions on the sell side or the buy side. The company was founded in 2009 and is based in Rio de Janeiro, Brazil.",
+        "currency": "USD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "NMS",
+        "market": "us_market",
+        "country": "Brazil",
+        "city": "Rio de Janeiro"
+    },
     "VOTS11.SA": {
-        "short_name": "FII V MASTERCI",
+        "short_name": "FII V MASTERCI  ER",
         "long_name": "Votorantim Securities Master Fundo Investimento Imobiliario Fii",
         "summary": null,
         "currency": "BRL",
@@ -287,9 +359,33 @@
         "country": "Brazil",
         "city": null
     },
+    "VSHO11.SA": {
+        "short_name": "FII VOT SHOPCI  ER",
+        "long_name": "FII Votorantim shopping",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": "Sao Paulo"
+    },
     "VTLT11.SA": {
-        "short_name": "FII VOT LOG CI",
+        "short_name": "FII VOT LOG CI  ER",
         "long_name": "Fundo Investimento Imobiliario Votorantim Logistica",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": null
+    },
+    "WTSP11B.SA": {
+        "short_name": "FII OURINVEST RE I",
+        "long_name": "Fundo De Investimento Imobiliario Ourinvest Re I",
         "summary": null,
         "currency": "BRL",
         "sector": "Financial",

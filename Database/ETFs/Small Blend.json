@@ -36,7 +36,7 @@
         "summary": "The investment seeks investment results that match the performance of the Nasdaq Victory US Small Cap 500 Long/Cash Volatility Weighted Index before fees and expenses.\n The fund seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its assets directly or indirectly in the securities included in the Nasdaq Victory US Small Cap 500 Long/Cash Volatility Weighted Index. The index identifies the 500 largest U.S. companies with market capitalizations of less than $3 billion measured at the time the index&#39;s constituent securities are determined.",
         "category": "Small Blend",
         "family": "Victory Capital",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "CSML": {
@@ -73,7 +73,7 @@
         "short_name": "iShares ESG Aware MSCI USA Smal",
         "long_name": "iShares ESG Aware MSCI USA Small-Cap ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI USA Small Cap Extended ESG Focus Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The underlying index is an optimized equity index designed to produce investment results comparable to the MSCI USA Small Cap Index (the \"parent index\"), while reflecting a higher allocation than that of the parent index to companies with favorable ESG profiles (as determined by MSCI). It is non-diversified.",
+        "summary": "The investment seeks to track the investment results of the MSCI USA Small Cap Extended ESG Focus Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The underlying index is an optimized equity index designed to produce investment results comparable to the MSCI USA Small Cap Index (the \"parent index\"), while reflecting a higher allocation than that of the parent index to companies with favorable ESG profiles (as determined by MSCI).",
         "category": "Small Blend",
         "family": "iShares",
         "exchange": "BTS",
@@ -83,7 +83,7 @@
         "short_name": "Invesco S&P SmallCap 600 Equal ",
         "long_name": "Invesco S&P SmallCap 600 Equal Weight ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P SmallCap 600\u00c2\u00ae Equal Weight Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index consists of all of the components of the S&P SmallCap 600\u00c2\u00ae Index, a broad-based index of approximately 600 securities that measures the small-cap segment of the U.S. equity market. The fund is non-diversified.",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P SmallCap 600\u00c2\u00ae Equal Weight Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index consists of all of the components of the S&P SmallCap 600\u00c2\u00ae Index, a broad-based index of approximately 600 securities that measures the small-cap segment of the U.S. equity market.",
         "category": "Small Blend",
         "family": "Invesco",
         "exchange": "PCX",
@@ -103,7 +103,7 @@
         "short_name": "Schwab Fundamental U.S. Small C",
         "long_name": "Schwab Fundamental U.S. Small Company Index ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Russell RAFI\u00e2\u0084\u00a2 US Small Company Index.\n The fund normally will invest at least 90% of its net assets (including, for this purpose, any borrowings for investment purposes) in stocks included in the index. The index measures the performance of the small company size segment by fundamental overall company scores (scores), which are created using as the universe the U.S. companies in the FTSE Global Total Cap Index (the parent index). It may invest up to 10% of its net assets in securities not included in the index.",
+        "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Russell RAFI\u00e2\u0084\u00a2 US Small Company Index.\n The fund normally will invest at least 90% of its net assets (including, for this purpose, any borrowings for investment purposes) in stocks included in the index. The index measures the performance of the small company size segment by fundamental overall company scores (scores), which are created using as the universe the U.S. companies in the FTSE Global Total Cap Index (the parent index).",
         "category": "Small Blend",
         "family": "Schwab ETFs",
         "exchange": "PCX",
@@ -116,7 +116,17 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the Nasdaq AlphaDEX\u00c2\u00ae Small Cap Core Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks that comprise the index. The index is designed to select stocks from the NASDAQ US 700 Small Cap Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
         "category": "Small Blend",
         "family": "First Trust",
-        "exchange": "NMS",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "GSSC": {
+        "short_name": "GS ActiveBeta U.S. Small Cap Eq",
+        "long_name": "Goldman Sachs ActiveBeta U.S. Small Cap Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the Goldman Sachs ActiveBeta\u00c2\u00ae U.S. Small Cap Equity Index.\n The fund seeks to achieve its investment objective by investing at least 80% of its assets in securities included in its index, in depositary receipts representing securities included in the index and in underlying stocks in respect of depositary receipts included in its index. The index is designed to deliver exposure to equity securities of small capitalization U.S. issuers.",
+        "category": "Small Blend",
+        "family": "Goldman Sachs",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "IJR": {
@@ -126,6 +136,26 @@
         "summary": "The investment seeks to track the investment results of the S&P SmallCap 600 (the \"underlying index\"), which measures the performance of the small-capitalization sector of the U.S. equity market.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. It may invest the remainder of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the underlying index, but which the advisor believes will help the fund track the underlying index.",
         "category": "Small Blend",
         "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "ISCB": {
+        "short_name": "iShares Morningstar Small-Cap E",
+        "long_name": "iShares Morningstar Small-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Morningstar\u00c2\u00ae US Small-Cap Extended IndexSM composed of small-capitalization U.S. equities.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. The underlying index measures the performance of stocks issued by small-capitalization companies that have exhibited both \u00e2\u0080\u009cgrowth\u00e2\u0080\u009d and \u00e2\u0080\u009cvalue\u00e2\u0080\u009d characteristics as determined by Morningstar, Inc.\u00e2\u0080\u0099s (\u00e2\u0080\u009cMorningstar\u00e2\u0080\u009d or the \u00e2\u0080\u009cindex provider\u00e2\u0080\u009d) proprietary index methodology.",
+        "category": "Small Blend",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "ISMD": {
+        "short_name": "Inspire Small/Mid Cap Impact ET",
+        "long_name": "Inspire Small/Mid Cap Impact ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate investment results that generally correspond to the performance of the Inspire Small/Mid Cap Impact Equal Weight Index.\n The fund generally invests at least 80% of its total assets in the component securities of the index. The index provider selects securities from a universe of publicly traded, domestic small and mid capitalization equity securities of companies with market capitalizations between $1 billion and $3.5 billion and which have an Inspire Impact Score\u00c2\u00ae of zero or higher.",
+        "category": "Small Blend",
+        "family": "Inspire",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -159,14 +189,24 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "JKJ": {
-        "short_name": "iShares Morningstar Small-Cap E",
-        "long_name": "iShares Morningstar Small-Cap ETF",
+    "JPSE": {
+        "short_name": "JPMorgan Diversified Return U.S",
+        "long_name": "JPMorgan Diversified Return U.S. Small Cap Equity ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the Morningstar\u00c2\u00ae US Small Core IndexSM composed of small-capitalization U.S. equities.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. The underlying index measures the performance of stocks issued by small-capitalization companies that have exhibited similar \"growth\" and \"value\" characteristics as determined by Morningstar, Inc.&#39;s (\"Morningstar\" or the \"index provider\") proprietary index methodology.",
+        "summary": "The investment seeks investment results that closely correspond, before fees and expenses, to the performance of the JP Morgan Diversified Factor US Small Cap Equity Index.\n The fund will invest at least 80% of its assets in securities included in the underlying index. \"Assets\" means net assets, plus the amount of borrowing for investment purposes. The underlying index is comprised of U.S. equity securities selected to represent a diversified set of factor characteristics. The rules based proprietary multi-factor selection process utilizes the following characteristics: value, momentum and quality.",
         "category": "Small Blend",
-        "family": "iShares",
+        "family": "JPMorgan",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "KAPR": {
+        "short_name": "Innovator Russell 2000 Power Bu",
+        "long_name": "Innovator Russell 2000 Power Buffer ETF - April",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that match the price return of the iShares Russell 2000 ETF.\n The fund invests at least 80% of its net assets in FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the iShares Russell 2000 ETF. FLEX Options are exchange-traded options contracts with uniquely customizable terms. Although guaranteed for settlement by the Options Clearing Corporation (the \"OCC\"), FLEX Options are still subject to counterparty risk with the OCC and may be less liquid than more traditional exchange-traded options. It is non-diversified.",
+        "category": "Small Blend",
+        "family": "Innovator ETFs",
+        "exchange": "BTS",
         "market": "us_market"
     },
     "KJAN": {
@@ -199,6 +239,56 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "OMFS": {
+        "short_name": "Invesco Exchange-Traded Self-In",
+        "long_name": "Invesco Russell 2000 Dynamic Multifactor ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Russell 2000\u00c2\u00ae Invesco Dynamic Multifactor Index.\n The fund generally will invest at least 80% of its total assets in the securities that comprise the underlying index. The underlying index is designed to select equity securities from within the Russell 2000 Index, which measures the performance of 2,000 small-capitalization companies in the United States. The fund is non-diversified.",
+        "category": "Small Blend",
+        "family": "Invesco",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "OSCV": {
+        "short_name": "Opus Small Cap Value ETF",
+        "long_name": "Opus Small Cap Value Plus ETF",
+        "currency": "USD",
+        "summary": "The investment seeks capital appreciation.\n The fund is an actively managed exchange-traded fund (\"ETF\") that invests under normal circumstances at least 80% of its net assets (plus any borrowings for investment purposes) in equity securities of small-capitalization U.S. companies. The fund&#39;s sub-adviser defines a small-capitalization company as an issuer whose market capitalization at the time of purchase is in the range of those found in the Russell 2000\u00c2\u00ae Index. The fund\u00e2\u0080\u0099s equity securities primarily include common stocks, real estate investment trusts (\u00e2\u0080\u009cREITs\u00e2\u0080\u009d), and American Depositary Receipts (\u00e2\u0080\u009cADRs\u00e2\u0080\u009d) representing the stock of a foreign company.",
+        "category": "Small Blend",
+        "family": "Aptus Capital Advisors",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "PBSM": {
+        "short_name": "Invesco PureBeta MSCI USA Small",
+        "long_name": "Invesco PureBeta MSCI USA Small Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the MSCI USA Small Cap Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The index is designed to measure the performance of the small-capitalization segment of the U.S. equity market.",
+        "category": "Small Blend",
+        "family": "Invesco",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "PRFZ": {
+        "short_name": "Invesco FTSE RAFI US 1500 Small",
+        "long_name": "Invesco FTSE RAFI US 1500 Small-Mid ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the FTSE RAFI\u00e2\u0084\u00a2 US Mid Small 1500 Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of 1,500 common stocks that the index provider strictly in accordance with its guidelines and mandated procedures, include to track the performance of small- and medium-sized U.S. companies based on the following four fundamental measures of firm size: book value, cash flow, sales and dividends.",
+        "category": "Small Blend",
+        "family": "Invesco",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "RNSC": {
+        "short_name": "Small Cap US Equity Select ETF",
+        "long_name": "First Trust Small Cap US Equity Select ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the Nasdaq Riskalyze US Small Cap Index (the \"index\").\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and real estate investment trusts (\"REITs\") that comprise the index. The index is designed to select dividend-paying securities issued by small capitalization U.S. companies.",
+        "category": "Small Blend",
+        "family": "First Trust",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
     "SCHA": {
         "short_name": "Schwab U.S. Small-Cap ETF",
         "long_name": "Schwab U.S. Small-Cap ETF",
@@ -219,6 +309,46 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "SLY": {
+        "short_name": "SPDR S&P 600 Small Cap ETF (bas",
+        "long_name": "SPDR S&P 600 Small Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the S&P SmallCap 600 Index.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. In addition, in seeking to track the index, it may invest in equity securities that are not included in the index, cash and cash equivalents or money market instruments, such as repurchase agreements and money market funds. The index measures the performance of the small-capitalization segment of the U.S. equity market.",
+        "category": "Small Blend",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SMDV": {
+        "short_name": "ProShares Russell 2000 Dividend",
+        "long_name": "ProShares Russell 2000 Dividend Growers ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results, before fees and expenses, that track the performance of the Russell 2000 \u00c2\u00ae Dividend Growth Index (the \"index\").\n Under normal circumstances, the fund will invest at least 80% of its total assets in component securities of the index. The index contains a minimum of 40 stocks, which are equally weighted, and no single sector is allowed to comprise more than 30% of the index weight.",
+        "category": "Small Blend",
+        "family": "ProShares",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "SMLV": {
+        "short_name": "SPDR SSGA US Small Cap Low Vola",
+        "long_name": "SPDR SSGA US Small Cap Low Volatility Index ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the SSGA US Small Cap Low Volatility Index.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is designed to measure the performance of the stocks of U.S. small capitalization companies that exhibit low volatility. Volatility is a statistical measurement of the magnitude of movements in a stock&#39;s price over time. The fund is non-diversified.",
+        "category": "Small Blend",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SPSM": {
+        "short_name": "SPDR Portfolio S&P 600 Small Ca",
+        "long_name": "SPDR Portfolio S&P 600 Small Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the S&P SmallCap 600 Index.\n Under normal market conditions, the fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index measures the performance of the small-capitalization segment of the U.S. equity market. The fund is non-diversified.",
+        "category": "Small Blend",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "SQLV": {
         "short_name": "Legg Mason Small-Cap Quality Va",
         "long_name": "Legg Mason Small-Cap Quality Value ETF",
@@ -226,27 +356,87 @@
         "summary": "The investment seeks to track the investment results of an index composed of equity securities of small-capitalization companies that are traded in the United States.\n The fund seeks to track the investment results of the Royce Small-Cap Quality Value Index (the \"underlying index\"). The underlying index utilizes a proprietary methodology created and sponsored by the fund&#39;s subadviser. The subadviser is affiliated with both LMPFA and the fund. The fund will invest at least 80% of its net assets, plus borrowings for investment purposes, if any, in securities that compose its underlying index.",
         "category": "Small Blend",
         "family": "Franklin Templeton Investments",
-        "exchange": "NMS",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "SSLY": {
+        "short_name": "Syntax Stratified SmallCap ETF",
+        "long_name": "Syntax Stratified SmallCap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before expenses, correspond generally to the total return performance of publicly traded equity securities of companies in the Syntax Stratified SmallCap Index.\n Under normal market conditions, the fund generally invests substantially all, and at least 80% of its total assets in the securities comprising the index. The index is the Stratified WeightTM version of the widely used S&P SmallCap 600\u00c2\u00ae Index and holds the same constituents as the S&P SmallCap 600\u00c2\u00ae Index.",
+        "category": "Small Blend",
+        "family": "Syntax",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "STSB": {
         "short_name": "iShares Factors US Small Blend ",
         "long_name": "iShares Factors US Small Blend Style ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the Russell US Small Cap Factors Blend Style Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The underlying index is designed to select equity securities from the Russell 2000\u00c2\u00ae Index, with exposure to five equity style factors (momentum, quality, value, size and low volatility) while maintaining a level of risk similar to that of the parent index. It is non-diversified.",
+        "summary": "The investment seeks to track the investment results of the Russell US Small Cap Factors Blend Style Index.\n The fund generally will invest at least 80% of its assets in the component securities of its index and in investments that have economic characteristics that are substantially identical to the component securities of its index and may invest up to 20% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The index is designed to select equity securities from the Russell 2000\u00c2\u00ae Index, with exposure to five equity style factors while maintaining a level of risk similar to that of the parent index. It is non-diversified.",
         "category": "Small Blend",
         "family": "iShares",
         "exchange": "BTS",
+        "market": "us_market"
+    },
+    "TPSC": {
+        "short_name": "Timothy Plan US Small Cap Core ",
+        "long_name": "Timothy Plan US Small Cap Core ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that track the performance of the Victory US Small Cap Volatility Weighted BRI Index before fees and expenses.\n The fund seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its net assets directly or indirectly in the securities included in the Victory US Small Cap Volatility Weighted BRI Index, an unmanaged, volatility weighted index created by the fund&#39;s Sub-Advisor. The index combines fundamental criteria with individual security risk control achieved through volatility weighting of individual securities, rather than traditional market-cap weighting.",
+        "category": "Small Blend",
+        "family": "Timothy Plan",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "USVM": {
+        "short_name": "VictoryShares USAA MSCI USA Sma",
+        "long_name": "VictoryShares USAA MSCI USA Small Cap Value Momentum ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the MSCI USA Small Cap Select Value Momentum Blend Index.\n Under normal circumstances, the fund seeks to achieve its investment objective by investing at least 80% of its assets in securities in the index. The index is designed to deliver exposure to equity securities of small-capitalization U.S. issuers within the MSCI USA Small Cap Index (the \"parent index\") that have higher exposure to value and momentum factors while also maintaining moderate index turnover and lower realized volatility than traditional capitalization weighted indexes.",
+        "category": "Small Blend",
+        "family": "Victory Capital",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "VB": {
         "short_name": "Vanguard Small-Cap ETF",
         "long_name": "Vanguard Small-Cap Index Fund ETF Shares",
         "currency": "USD",
-        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of small-capitalization stocks.\n The fund employs an indexing investment approach designed to track the performance of the CRSP US Small Cap Index, a broadly diversified index of stocks of small U.S. companies. The advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+        "summary": "The investment seeks to track the performance of the CRSP US Small Cap Index that measures the investment return of small-capitalization stocks.\n The fund employs an indexing investment approach designed to track the performance of the CRSP US Small Cap Index, a broadly diversified index of stocks of small U.S. companies. The advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
         "category": "Small Blend",
         "family": "Vanguard",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "VIOO": {
+        "short_name": "Vanguard S&P Small-Cap 600 ETF",
+        "long_name": "Vanguard S&P Small-Cap 600 Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of small-capitalization stocks in the United States.\n The fund employs an indexing investment approach designed to track the performance of the S&P SmallCap 600\u00c2\u00ae Index. The Advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+        "category": "Small Blend",
+        "family": "Vanguard",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "VTWO": {
+        "short_name": "Vanguard Russell 2000 ETF",
+        "long_name": "Vanguard Russell 2000 Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of small-capitalization stocks in the United States.\n The fund employs an indexing investment approach designed to track the performance of the Russell 2000\u00c2\u00ae Index. The index is designed to measure the performance of small-capitalization stocks in the United States. The advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+        "category": "Small Blend",
+        "family": "Vanguard",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "XJR": {
+        "short_name": "iShares ESG Screened S&P Small-",
+        "long_name": "iShares ESG Screened S&P Small-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of an index composed of small-capitalization U.S. equities while applying screens for company involvement in controversies and controversial business activities.\n The fund seeks to track the investment results of the S&P SmallCap 600 Sustainability Screened Index, which measures the performance of the small-capitalization sector of the U.S. equity market while excluding companies involved in controversial business activities and controversies, as determined by S&P Dow Jones Indices LLC. BFA uses a representative sampling indexing strategy to manage the fund. It is non-diversified.",
+        "category": "Small Blend",
+        "family": "iShares",
+        "exchange": "BTS",
         "market": "us_market"
     },
     "XSLV": {

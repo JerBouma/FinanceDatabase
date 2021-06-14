@@ -28,5 +28,25 @@
         "family": "ProShares",
         "exchange": "BTS",
         "market": "us_market"
+    },
+    "KMLM": {
+        "short_name": "KFA Mount Lucas Index Strategy ",
+        "long_name": "KFA Mount Lucas Index Strategy ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide a total return that, before fees and expenses, exceeds that of the KFA MLM Index over a complete market cycle.\n The fund seeks to achieve its goal by investing under normal circumstances in commodity, currency, and global fixed income futures contracts traded on U.S. and foreign exchanges that are the same as or similar to those included in the index and debt instruments. The index is a modified version of the MLM Index, which is an index constructed of a portfolio of commodity, currency, and global fixed income futures contracts traded on U.S. and foreign exchanges using a trend following methodology. It is non-diversified.",
+        "category": "Managed Futures",
+        "family": "KraneShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "WTMF": {
+        "short_name": "WisdomTree Managed Futures Stra",
+        "long_name": "WisdomTree Managed Futures Strategy Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with positive total returns in rising or falling markets.\n The fund normally invests at least 80% of its net assets, plus the amount of any borrowings for investment purposes, in \"managed futures\". It is an actively managed exchange traded fund (\"ETF\") that seeks to achieve positive total returns in rising or falling markets that are not directly correlated to broad market equity or fixed income returns. The fund is managed using a quantitative, rules-based strategy designed to provide returns that correspond to the performance of the WisdomTree Managed Futures Index. It is non-diversified.",
+        "category": "Managed Futures",
+        "family": "WisdomTree",
+        "exchange": "PCX",
+        "market": "us_market"
     }
 }

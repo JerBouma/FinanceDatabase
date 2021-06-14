@@ -1,37 +1,25 @@
 {
-    "0P00000VEX.L": {
-        "short_name": "Scottish Widows UK Fix-Interest",
-        "long_name": "Scottish Widows UK Fix-Interest Tracker I Acc",
-        "currency": "GBp",
-        "summary": "The fund seeks to track the performance of the UK gilt market as represented by the FTSE Actuaries UK Conventional Gilts All Stocks Index (the \u00e2\u0080\u009cIndex\u00e2\u0080\u009d), before deduction of fees, by investing in UK Government bonds (gilts). The Fund aims to invest in all of the stocks within the Index. This is often referred to as a \u00e2\u0080\u0098full replication\u00e2\u0080\u0099 approach.",
-        "manager_name": "David  Millar",
-        "manager_bio": "David Millar, Investment Director\u00e2\u0080\u0094Multi-Asset Investing, joined Standard Life Investments in January 2008. Prior to joining Standard Life Investments, Mr. Millar was Head of Bond Strategy and Chair of the Bond Policy Group at Scottish Widows Investment Partnership (\"SWIP\"). Mr. Millar joined SWIP as a fixed interest fund manager in 1995 and was appointed Deputy Head of Bonds in December 2003. Mr. Millar began his career at Scottish Widows in 1989, qualifying as an actuary in 1992.",
-        "category": "GBP Government Bond",
-        "family": "Scottish Widows Unit Trust Managers Ltd",
-        "exchange": "LSE",
-        "market": "gb_market"
-    },
-    "0P00000VRX.L": {
-        "short_name": "Scottish Widows UK Fix-Interest",
-        "long_name": "Scottish Widows UK Fix-Interest Tracker I Inc",
-        "currency": "GBp",
-        "summary": "The fund seeks to track the performance of the UK gilt market as represented by the FTSE Actuaries UK Conventional Gilts All Stocks Index (the \u00e2\u0080\u009cIndex\u00e2\u0080\u009d), before deduction of fees, by investing in UK Government bonds (gilts). The Fund aims to invest in all of the stocks within the Index. This is often referred to as a \u00e2\u0080\u0098full replication\u00e2\u0080\u0099 approach.",
-        "manager_name": "David  Millar",
-        "manager_bio": "David Millar, Investment Director\u00e2\u0080\u0094Multi-Asset Investing, joined Standard Life Investments in January 2008. Prior to joining Standard Life Investments, Mr. Millar was Head of Bond Strategy and Chair of the Bond Policy Group at Scottish Widows Investment Partnership (\"SWIP\"). Mr. Millar joined SWIP as a fixed interest fund manager in 1995 and was appointed Deputy Head of Bonds in December 2003. Mr. Millar began his career at Scottish Widows in 1989, qualifying as an actuary in 1992.",
-        "category": "GBP Government Bond",
-        "family": "Scottish Widows Unit Trust Managers Ltd",
-        "exchange": "LSE",
-        "market": "gb_market"
-    },
     "0P00000XWQ.L": {
         "short_name": "Quilter Investors Gilt Index Fu",
         "long_name": "Quilter Investors Gilt Index Fund A (GBP) Accumulation",
         "currency": "GBp",
-        "summary": "The Fund aims to achieve capital growth through a portfolio of investments aimed at tracking the performance of the Bank of America Merrill Lynch UK Gilt Index before fees are deducted.",
+        "summary": "The Fund aims to achieve capital growth through a portfolio of investments aimed at tracking the performance of the ICE BofAML UK Gilt Index before fees are deducted. The Fund primarily invests (at least 70%) in UK Gilts (i.e. government bonds). Investment will generally be made in proportion to the weightings in the ICE BofAML UK Gilt Index.",
         "manager_name": "Not  Disclosed",
         "manager_bio": "",
         "category": "GBP Government Bond",
         "family": "Quilter Investors Limited",
+        "exchange": "LSE",
+        "market": "gb_market"
+    },
+    "0P000023KZ.L": {
+        "short_name": "Allianz Gilt Yield I Inc",
+        "long_name": "Allianz Gilt Yield I Inc",
+        "currency": "GBp",
+        "summary": "The objective of the Fund is to maximise total return, consistent with preservation of capital and prudent investment management, primarily through investment in United Kingdom Government Securities. The ACD will adopt a policy of active management and may invest in gilts, overseas government bonds, government guaranteed bonds, supranational bonds, deposits, money market instruments and derivatives. The Fund may also invest in collective investment schemes. At least 80% of the value of the Fund will be invested in gilts issued by the United Kingdom Government",
+        "manager_name": "Michael  Amey",
+        "manager_bio": "Mr. Amey is a managing director and portfolio manager in the London office. He is responsible for sterling portfolios, the European insurance (ex Germany) and the European LDI (liability-driven investing) portfolio management groups. Prior to joining PIMCO in 2003, he was head of U.K. fixed income at Rothschild Asset Management and after their merger, at Insight Investment. Prior to joining Rothschild in 1994, Mr. Amey spent two years tutoring in the Department of Economics at the University of Durham. He holds undergraduate and master's degrees in corporate and international finance from the University of Durham. Mr. Amey is also a member of the U.K. Society of Investment Professionals.",
+        "category": "GBP Government Bond",
+        "family": "Allianz Global Investors GmbH",
         "exchange": "LSE",
         "market": "gb_market"
     },
@@ -75,7 +63,7 @@
         "short_name": "Quilter Investors Gilt Index Fu",
         "long_name": "Quilter Investors Gilt Index Fund U2 (GBP) Accumulation",
         "currency": "GBp",
-        "summary": "The Fund aims to achieve capital growth through a portfolio of investments aimed at tracking the performance of the Bank of America Merrill Lynch UK Gilt Index before fees are deducted.",
+        "summary": "The Fund aims to achieve capital growth through a portfolio of investments aimed at tracking the performance of the ICE BofAML UK Gilt Index before fees are deducted. The Fund primarily invests (at least 70%) in UK Gilts (i.e. government bonds). Investment will generally be made in proportion to the weightings in the ICE BofAML UK Gilt Index.",
         "manager_name": "Not  Disclosed",
         "manager_bio": "",
         "category": "GBP Government Bond",
@@ -107,15 +95,15 @@
         "exchange": "LSE",
         "market": "gb_market"
     },
-    "0P0001HB5D.L": {
-        "short_name": "AI Pre-Annuity Fixed Interest F",
-        "long_name": "AI Pre-Annuity Fixed Interest Fund UK Institutional Acc",
+    "0P0001H3U2.L": {
+        "short_name": "NFU Mutual UK Government Bond F",
+        "long_name": "NFU Mutual UK Government Bond Fund Class I",
         "currency": "GBp",
-        "summary": "The fund aims to provide an element of protection from changes in the cost of buying a pension annuity by gaining exposure predominantly from longer dated investment grade corporate bonds and government bonds.",
+        "summary": "The fund seeks to achieve income and capital growth (net of fees) over the long term (5 years +). This Fund will invest at least 80% in a portfolio of UK government bonds.",
         "manager_name": "",
         "manager_bio": "",
         "category": "GBP Government Bond",
-        "family": "Aviva Investors UK Fund Services Limited",
+        "family": "NFU Mutual Unit Managers Limited",
         "exchange": "LSE",
         "market": "gb_market"
     },
@@ -124,7 +112,7 @@
         "long_name": "Epworth Sovereign Bond Fund for Charities GBP Income",
         "currency": "GBp",
         "summary": "The Sub-fund seeks to provide income and investment growth exceeding that of the iBoxx Gilt Index (the \u00e2\u0080\u009cIndex\u00e2\u0080\u009d) (after allowing for fees) by investing in sovereign bonds that are issued in Pounds Sterling. The Sub-fund invests at least 30%of its portfolio in bonds with fixed coupons issued by the UK Governments (Gilts) but may also invest, or have holdings of bonds (or similar investments) issued or guaranteed by other sovereign states; variation rate and index-linked government securities; and cash (and near cash).",
-        "manager_name": "",
+        "manager_name": "Not  Disclosed",
         "manager_bio": "",
         "category": "GBP Government Bond",
         "family": "Epworth Investment Management Ltd",
@@ -140,18 +128,6 @@
         "manager_bio": "",
         "category": "GBP Government Bond",
         "family": "Managed Pension Funds Limited",
-        "exchange": "LSE",
-        "market": "gb_market"
-    },
-    "0P0001IHUJ.L": {
-        "short_name": "AI Pre-Annuity Fixed Interest F",
-        "long_name": "AI Pre-Annuity Fixed Interest Fund Insured Pension Acc",
-        "currency": "GBp",
-        "summary": "The fund aims to provide an element of protection from changes in the cost of buying a pension annuity by gaining exposure predominantly from longer dated investment grade corporate bonds and government bonds.",
-        "manager_name": "",
-        "manager_bio": "",
-        "category": "GBP Government Bond",
-        "family": "Aviva Investors UK Fund Services Limited",
         "exchange": "LSE",
         "market": "gb_market"
     }

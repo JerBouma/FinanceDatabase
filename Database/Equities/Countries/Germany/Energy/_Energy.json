@@ -35,17 +35,17 @@
         "country": "Germany",
         "city": "Mannheim"
     },
-    "DRJ.F": {
-        "short_name": "DE RAJ GROUP AG INH O.N.",
-        "long_name": "De Raj Group AG",
-        "summary": "De Raj Group AG, through its subsidiaries, operates in the oil and gas business in Asia and Europe. It provides various solutions for the monetization of oil and gas fields for National oil companies, companies having stakes in oil fields, and other technological enterprises in the South East Asian region. The company has a range of assets comprising jack-up rigs, drilling equipment, processing equipment, and marine equipment that handles offshore oil and gas extraction and production for green fields, brown fields, and marginal fields. The company is based in Cologne, Germany.",
+    "DR0.F": {
+        "short_name": "DT.ROHSTOFF AG NA O.N.",
+        "long_name": "Deutsche Rohstoff AG",
+        "summary": "Deutsche Rohstoff AG, together with its subsidiaries, engages in the exploration and production of crude oil, and natural gas primarily in North America, Australia, and Europe. It also explores for and develops metal properties, including gold, copper, rare earth elements, tungsten, and tin. The company was founded in 2006 and is based in Mannheim, Germany.",
         "currency": "EUR",
         "sector": "Energy",
-        "industry": "Oil & Gas Equipment & Services",
+        "industry": "Oil & Gas E&P",
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Cologne"
+        "city": "Mannheim"
     },
     "HMU.DE": {
         "short_name": "HMS BERGBAU AG",
@@ -82,5 +82,17 @@
         "market": "dr_market",
         "country": "Germany",
         "city": "Bad Homburg"
+    },
+    "VH2.F": {
+        "short_name": "FR.VORWERK GRP SE INH ON",
+        "long_name": "Friedrich Vorwerk Group SE",
+        "summary": "Friedrich Vorwerk Group SE provides various solutions for critical mid-stream on-shore energy transformation and transportation infrastructure in Germany and Europe. The company operates through four segments: Natural Gas, Electricity, Clean Hydrogen, and Adjacent Opportunities. The Natural Gas segment plans, engineers, builds, operates, and maintains infrastructure solutions for the on-shore transportation of natural gas through high-pressure pipelines and storage facilities, as well as for the conditioning of the gas in filtering and separation systems in compressor stations, and pressure regulating and metering stations. The Electricity segment plans, engineers, builds, operates, and maintains infrastructure solutions for the on-shore underground transportation of high-voltage AC- and DC- electricity over long distance, as well as solutions for the transformation of electricity into the required form for onward transportation regarding voltage and type of current. The Clean Hydrogen segment plans, engineers, builds, operates, and maintains infrastructure solutions for the industrial production of hydrogen in the form of electrolyzer station. It also plans, engineers, builds, operates, and maintains infrastructure solutions for the on-shore transportation of hydrogen through high-pressure pipelines and storage facilities, as well as for the conditioning of the hydrogen in filtering and separation systems in compressor stations, and pressure regulating and metering stations. The Adjacent Opportunities segment provides solutions and services for district heating, fresh-water and waste-water transportation and treatment, chemical and petrochemical industry, and the purification and transportation of biogenic and synthetic gases. The company was founded in 1962 and is headquartered in Tostedt, Germany.",
+        "currency": "EUR",
+        "sector": "Energy",
+        "industry": "Oil & Gas Midstream",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Germany",
+        "city": "Tostedt"
     }
 }

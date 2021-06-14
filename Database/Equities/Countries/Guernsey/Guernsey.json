@@ -38,7 +38,7 @@
     "9BFA.F": {
         "short_name": "BURFORD CAPITAL LTD",
         "long_name": "Burford Capital Limited",
-        "summary": "Burford Capital Limited, together with its subsidiaries, provides investment capital, asset management, financing, and risk solutions for the legal sector in Guernsey and internationally. The company offers law firm and business solutions, including litigation finance, portfolio financing, risk management, insurance, asset recovery, international arbitration, insolvency and bankruptcy, competition and antitrust, intellectual property, and post-settlement and monetization solutions, as well as legal finance, equity, and advisory services. The company was founded in 2009 and is based in St Peter Port, Guernsey.",
+        "summary": "Burford Capital Limited, together with its subsidiaries, provides investment capital, asset management, financing, and risk solutions for the legal sector in Guernsey and internationally. The company offers law firm and business solutions, including litigation finance, portfolio financing, risk management, insurance, asset recovery, international arbitration, insolvency and bankruptcy, competition and antitrust, intellectual property, and post-settlement and monetization solutions, as well as legal finance and advisory services. The company was incorporated in 2009 and is based in Saint Peter Port, Guernsey.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -56,6 +56,30 @@
         "industry": "Other Industrial Metals & Mining",
         "exchange": "FRA",
         "market": "dr_market",
+        "country": "Guernsey",
+        "city": "St Peter Port"
+    },
+    "AFR.AX": {
+        "short_name": "AFRICAN EN CDI 1:1",
+        "long_name": "African Energy Resources Limited",
+        "summary": "African Energy Resources Limited develops various power projects in Botswana. The company operates through Coal-fired Power Projects and Power Investments segments. The company holds interests in Mmamantswe coal project and Mmamabula West coal project. African Energy Resources Limited was incorporated in 2006 and is based in St Martin, Guernsey.",
+        "currency": "AUD",
+        "sector": "Energy",
+        "industry": "Thermal Coal",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Guernsey",
+        "city": "St Martin"
+    },
+    "AFTTF": {
+        "short_name": "AFRITIN MINING LTD",
+        "long_name": "AfriTin Mining Limited",
+        "summary": "AfriTin Mining Limited, together with its subsidiaries, engages in the exploration and development of projects in Namibia and South Africa. Its flagship asset is the Uis brownfield tin mine that consists of three project areas located in the Erongo Region, Namibia. AfriTin Mining Limited was founded in 2017 and is headquartered in St Peter Port, Guernsey.",
+        "currency": "USD",
+        "sector": "Basic Materials",
+        "industry": "Other Industrial Metals & Mining",
+        "exchange": "PNK",
+        "market": "us_market",
         "country": "Guernsey",
         "city": "St Peter Port"
     },
@@ -95,10 +119,34 @@
         "country": "Guernsey",
         "city": "St Peter Port"
     },
+    "BP6.F": {
+        "short_name": "AFRICAN ENERGY RES.CUFS1",
+        "long_name": "African Energy Resources Limited",
+        "summary": "African Energy Resources Limited develops various power projects in Botswana. The company operates through Coal-fired Power Projects and Power Investments segments. The company holds interests in Mmamantswe coal project and Mmamabula West coal project. African Energy Resources Limited was incorporated in 2006 and is based in St Martin, Guernsey.",
+        "currency": "EUR",
+        "sector": "Energy",
+        "industry": "Thermal Coal",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Guernsey",
+        "city": "St Martin"
+    },
+    "BUR.L": {
+        "short_name": "BURFORD CAPITAL LIMITED ORD NPV",
+        "long_name": "Burford Capital Limited",
+        "summary": "Burford Capital Limited, together with its subsidiaries, provides investment capital, asset management, financing, and risk solutions for the legal sector in Guernsey and internationally. The company offers law firm and business solutions, including litigation finance, portfolio financing, risk management, insurance, asset recovery, international arbitration, insolvency and bankruptcy, competition and antitrust, intellectual property, and post-settlement and monetization solutions, as well as legal finance and advisory services. The company was incorporated in 2009 and is based in Saint Peter Port, Guernsey.",
+        "currency": "GBp",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "Guernsey",
+        "city": "Saint Peter Port"
+    },
     "BUR": {
         "short_name": "Burford Capital Limited",
         "long_name": "Burford Capital Limited",
-        "summary": "Burford Capital Limited, together with its subsidiaries, provides investment capital, asset management, financing, and risk solutions for the legal sector in Guernsey and internationally. The company offers law firm and business solutions, including litigation finance, portfolio financing, risk management, insurance, asset recovery, international arbitration, insolvency and bankruptcy, competition and antitrust, intellectual property, and post-settlement and monetization solutions, as well as legal finance, equity, and advisory services. The company was founded in 2009 and is based in St Peter Port, Guernsey.",
+        "summary": "Burford Capital Limited, together with its subsidiaries, provides investment capital, asset management, financing, and risk solutions for the legal sector in Guernsey and internationally. The company offers law firm and business solutions, including litigation finance, portfolio financing, risk management, insurance, asset recovery, international arbitration, insolvency and bankruptcy, competition and antitrust, intellectual property, and post-settlement and monetization solutions, as well as legal finance and advisory services. The company was incorporated in 2009 and is based in Saint Peter Port, Guernsey.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -107,15 +155,15 @@
         "country": "Guernsey",
         "city": "Saint Peter Port"
     },
-    "BUR.L": {
-        "short_name": "BURFORD CAPITAL LIMITED ORD NPV",
-        "long_name": "Burford Capital Limited",
-        "summary": "Burford Capital Limited, together with its subsidiaries, provides investment capital, asset management, financing, and risk solutions for the legal sector in Guernsey and internationally. The company offers law firm and business solutions, including litigation finance, portfolio financing, risk management, insurance, asset recovery, international arbitration, insolvency and bankruptcy, competition and antitrust, intellectual property, and post-settlement and monetization solutions, as well as legal finance, equity, and advisory services. The company was founded in 2009 and is based in St Peter Port, Guernsey.",
-        "currency": "GBp",
-        "sector": "Financial Services",
-        "industry": "Asset Management",
-        "exchange": "LSE",
-        "market": "gb_market",
+    "C62.F": {
+        "short_name": "CHARIOT OIL + GAS  LS-,01",
+        "long_name": "Chariot Oil & Gas Limited",
+        "summary": "Chariot Oil & Gas Limited, together with its subsidiaries, engages in the oil and gas exploration business. It holds exploration licenses covering two blocks in Namibia; three blocks in Morocco; and four blocks in the Barreirinhas Basin offshore Brazil. The company is based in Saint Peter Port, Guernsey.",
+        "currency": "EUR",
+        "sector": "Energy",
+        "industry": "Oil & Gas E&P",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "Guernsey",
         "city": "Saint Peter Port"
     },
@@ -126,6 +174,18 @@
         "currency": "GBp",
         "sector": "Energy",
         "industry": "Oil & Gas E&P",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "Guernsey",
+        "city": "Saint Peter Port"
+    },
+    "CORD.L": {
+        "short_name": "CORDIANT DIGITAL INFRASTRUCTURE",
+        "long_name": "Cordiant Digital Infrastructure Limited",
+        "summary": "Cordiant Digital Infrastructure Limited, an investment company, intends to invest in digital infrastructure assets in the United Kingdom, Europe, and North America. It focuses on investing in companies operating in data centers, telecommunications towers, and fiber networks business. The company was incorporated in 2021 and is based in Saint Peter Port, Guernsey.",
+        "currency": "GBp",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Guernsey",
@@ -143,6 +203,42 @@
         "country": "Guernsey",
         "city": "Saint Peter Port"
     },
+    "ESKN.L": {
+        "short_name": "ESKEN LIMITED ORD 10P",
+        "long_name": "Esken Limited",
+        "summary": "Esken Limited operates in the aviation and energy business primarily in the United Kingdom, Europe, Ireland, and internationally. It operates through Stobart Aviation, Stobart Energy, Stobart Rail & Civils, Stobart Investments, and Stobart Non-Strategic Infrastructure segments. The Stobart Aviation segment engages in the operation of commercial airports and the provision of ground handling services. The Stobart Energy segment is involved in the supply of sustainable biomass for the generation of renewable energy. The Stobart Rail & Civils segment delivers internal and external civil engineering development projects, including rail network operations. The Stobart Investments segment engages in the transport and distribution, and baggage handling businesses. The Stobart Non-Strategic Infrastructure segment is involved in the management, development, and realization of a portfolio of property assets, including Carlisle Lake District Airport, as well as an investment in a renewable energy plant. The company was formerly known as Stobart Group Limited and changed its name to Esken Limited in February 2021. Esken Limited was incorporated in 2002 and is based in Saint Peter Port, Guernsey.",
+        "currency": "GBp",
+        "sector": "Industrials",
+        "industry": "Conglomerates",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "Guernsey",
+        "city": "Saint Peter Port"
+    },
+    "EYI.F": {
+        "short_name": "SIRIUS REAL ESTATE LTD.",
+        "long_name": "Sirius Real Estate Limited",
+        "summary": "Sirius Real Estate Limited, a real estate company, engages in the investment, development, and operation of commercial properties in Germany. The company owns and operates offices; warehouses, storerooms, and self-storage spaces; and production and workshop spaces. It serves small to medium-sized enterprises under the Sirius brand name. As of March 31, 2020, it owned a portfolio of owned 57 and managed 2 additional business parks with approximately 1.5 million square meters of lettable space. The company was formerly known as Dawnay, Day Sirius Limited and changed its name to Sirius Real Estate Limited in October 2008. Sirius Real Estate Limited was founded in 2007 and is based in Saint Peter Port, Guernsey.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Guernsey",
+        "city": "Saint Peter Port"
+    },
+    "FAR.L": {
+        "short_name": "FERRO-ALLOY RESOURCES LIMITED O",
+        "long_name": "Ferro-Alloy Resources Limited",
+        "summary": "Ferro-Alloy Resources Limited engages in mining, processing, and selling vanadium and associated by-products in the Republic of Kazakhstan. It explores for uranium, molybdenum, aluminum, rare earth metals, and carbon deposits. The company primarily holds an interest in the Balasausqandiq deposit located in Southern Kazakhstan. Ferro-Alloy Resources Limited was founded in 2000 and is based in St. Peter Port, Guernsey.",
+        "currency": "GBp",
+        "sector": "Basic Materials",
+        "industry": "Other Industrial Metals & Mining",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "Guernsey",
+        "city": "Saint Peter Port"
+    },
     "GEM.L": {
         "short_name": "GEMFIELDS GROUP LIMITED ORD USD",
         "long_name": "Gemfields Group Limited",
@@ -157,6 +253,18 @@
     },
     "GLIF.L": {
         "short_name": "GLI FINANCE LIMITED ORD NPV",
+        "long_name": "GLI Finance Limited",
+        "summary": "GLI Finance Limited provides alternative finance services. The company operates in two segments, Sancus BMS and FinTech Ventures. It offers property backed and small and medium sized enterprise loans. The company also invests in a portfolio of SME focused lending platforms. It operates in the United Kingdom, Ireland, Jersey, Guernsey, Gibraltar, Isle of Man, the United States, France, Spain, and Cameroon. The company was formerly known as Greenwich Loan Income Fund Limited and changed its name to GLI Finance Limited in April 2013. GLI Finance Limited was incorporated in 2005 and is based in Saint Peter Port, the United Kingdom.",
+        "currency": "GBp",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "Guernsey",
+        "city": "Saint Peter Port"
+    },
+    "GLIZ.L": {
+        "short_name": "GLI FINANCE LIMITED ZDP NPV",
         "long_name": "GLI Finance Limited",
         "summary": "GLI Finance Limited provides alternative finance services. The company operates in two segments, Sancus BMS and FinTech Ventures. It offers property backed and small and medium sized enterprise loans. The company also invests in a portfolio of SME focused lending platforms. It operates in the United Kingdom, Ireland, Jersey, Guernsey, Gibraltar, Isle of Man, the United States, France, Spain, and Cameroon. The company was formerly known as Greenwich Loan Income Fund Limited and changed its name to GLI Finance Limited in April 2013. GLI Finance Limited was incorporated in 2005 and is based in Saint Peter Port, the United Kingdom.",
         "currency": "GBp",
@@ -191,20 +299,8 @@
         "country": "Guernsey",
         "city": "St Martin"
     },
-    "HVPE.L": {
-        "short_name": "HARBOURVEST GLOBAL PRIVATE EQUI",
-        "long_name": "HarbourVest Global Private Equity Ltd.",
-        "summary": "HarbourVest Global Private Equity Ltd. specializes in primary, secondary, and direct co-investments as well as fund of funds investments. For fund of funds investments, it prefers to invest in private equity funds and invests in HarbourVest funds. The fund seeks to provide long-term capital growth primarily through investments in private market assets.",
-        "currency": "GBp",
-        "sector": "Financial Services",
-        "industry": "Asset Management",
-        "exchange": "LSE",
-        "market": "gb_market",
-        "country": "Guernsey",
-        "city": "St Peter Port"
-    },
     "IBPO.L": {
-        "short_name": "IENERGIZER LD ORD 1P",
+        "short_name": "IENERGIZER LIMITED ORD 1P",
         "long_name": "iEnergizer Limited",
         "summary": "iEnergizer Limited provides business process outsourcing (BPO) and content transformation services in the United Kingdom, India, the United States, and internationally. The company operates through Business Process Outsourcing and Content Delivery segments. It offers a suite of content and publishing process outsourcing, and customer management services, including transaction processing, customer acquisition, customer care, technical support, billing and collections, dispute handling, off the shelf courseware, anti-money laundering and KYC services, and market research and analytics through various platforms, such as voice-inbound and outbound, back-office support, online chat, mail room, and other business support services. The company's BPO solutions include accounts receivable, healthcare document processing, document processing, finance and accounting services, e-learning development and support, and investor and shareowner services; and contact center solutions, such as chat and email services, customer care, customer acquisition, gaming support and testing, technical support, and market research services. It serves banking, financial services, and insurance; anti money laundering KYC services; publishing; non-publishing; entertainment and online video gaming; information technology; legal; and healthcare and pharmaceutical industries. The company was founded in 2000 and is based in Saint Sampson, the Channel Islands. iEnergizer Limited is a subsidiary of EICR (Cyprus) Limited.",
         "currency": "GBp",
@@ -214,6 +310,18 @@
         "market": "gb_market",
         "country": "Guernsey",
         "city": "Saint Sampson"
+    },
+    "INDI.L": {
+        "short_name": "INDUS GAS LIMITED ORD 1P",
+        "long_name": "Indus Gas Limited",
+        "summary": "Indus Gas Limited, together with its subsidiaries, operates as an oil and gas exploration and development company in Asia and Europe. The company is involved in the exploration, development, production, distribution, and marketing of hydrocarbons, including natural gas. It owns a 90% participating interest in the Block RJ-ON/6, a petroleum exploration and development concession covering an area of approximately 4,026 square kilometres located in onshore mid Indus basin, Rajasthan. The company was incorporated in 2008 and is based in Saint Peter Port, Guernsey.",
+        "currency": "GBp",
+        "sector": "Energy",
+        "industry": "Oil & Gas E&P",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "Guernsey",
+        "city": "Saint Peter Port"
     },
     "LND.L": {
         "short_name": "LANDORE RESOURCES LIMITED ORD N",
@@ -263,22 +371,58 @@
         "country": "Guernsey",
         "city": "Saint Peter Port"
     },
+    "RBW.L": {
+        "short_name": "RAINBOW RARE EARTHS LIMITED ORD",
+        "long_name": "Rainbow Rare Earths Limited",
+        "summary": "Rainbow Rare Earths Limited, a mining company, engages in the mining and exploration of rare earth minerals. It primarily holds a 90% interest in the Gakara project covering an area of approximately 135 km2 located in Western Burundi. The company was founded in 2011 and is based in Guernsey, the United Kingdom.",
+        "currency": "GBp",
+        "sector": "Basic Materials",
+        "industry": "Other Industrial Metals & Mining",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "Guernsey",
+        "city": "Guernsey"
+    },
+    "RBWRF": {
+        "short_name": "RAINBOW RARE EARTHS LTD",
+        "long_name": "Rainbow Rare Earths Limited",
+        "summary": "Rainbow Rare Earths Limited, a mining company, engages in the mining and exploration of rare earth minerals. It primarily holds a 90% interest in the Gakara project covering an area of approximately 135 km2 located in Western Burundi. The company was founded in 2011 and is based in Guernsey, the United Kingdom.",
+        "currency": "USD",
+        "sector": "Basic Materials",
+        "industry": "Other Industrial Metals & Mining",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Guernsey",
+        "city": "Guernsey"
+    },
     "RHM.L": {
         "short_name": "ROUND HILL MUSIC ROYALTY FUND L",
         "long_name": "Round Hill Music Royalty Fund Limited",
-        "summary": "Round Hill Music Royalty Fund Limited is a private equity firm specializes in specializes in small to medium sized companies. The firm prefers to invest in revenue generating music copyright assets. Round Hill Music Royalty Fund Limited is based in St Peter Port, Guernsey with additional offices in New York, New York; Santa Monica, California; Nashville, Tennessee and London, United Kingdom.",
+        "summary": "Round Hill Music Royalty Fund Limited invests in music copyright assets. It intends to invest in small to medium sized catalogues that are diversified by artist, genre, decade, and royalty type. The company was incorporated in 2020 and is based in Saint Peter Port, the Channel Islands.",
         "currency": "USD",
         "sector": "Communication Services",
         "industry": "Entertainment",
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Guernsey",
-        "city": "St Peter Port"
+        "city": "Saint Peter Port"
+    },
+    "RR1.F": {
+        "short_name": "RAINBOW RARE EARTHS LTD",
+        "long_name": "Rainbow Rare Earths Limited",
+        "summary": "Rainbow Rare Earths Limited, a mining company, engages in the mining and exploration of rare earth minerals. It primarily holds a 90% interest in the Gakara project covering an area of approximately 135 km2 located in Western Burundi. The company was founded in 2011 and is based in Guernsey, the United Kingdom.",
+        "currency": "EUR",
+        "sector": "Basic Materials",
+        "industry": "Other Industrial Metals & Mining",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Guernsey",
+        "city": "Guernsey"
     },
     "SHG.L": {
         "short_name": "SHANTA GOLD LIMITED ORD 0.01P",
         "long_name": "Shanta Gold Limited",
-        "summary": "Shanta Gold Limited, together with its subsidiaries, engages in gold mining, development, and exploration in Tanzania. Its flagship asset is the 100% owned New Luika Gold Mine property located in Songwe district of South Western Tanzania. Shanta Gold Limited was founded in 2005 and is based in St Peter Port, Guernsey.",
+        "summary": "Shanta Gold Limited, together with its subsidiaries, engages in the gold production, development, and exploration in Tanzania. The company's flagship asset is the 100% owned New Luika Gold Mine property located in Songwe district of South Western Tanzania. Shanta Gold Limited was founded in 2005 and is based in St Peter Port, Guernsey.",
         "currency": "GBp",
         "sector": "Basic Materials",
         "industry": "Gold",
@@ -290,7 +434,7 @@
     "SIGB.L": {
         "short_name": "SHERBORNE INVESTORS (GUERNSEY) ",
         "long_name": "Sherborne Investors (Guernsey) B Limited",
-        "summary": "Sherborne Investors (Guernsey) B Limited is a private equity firm specializing in investments in undervalued companies and turnarounds. The firm seeks to invest in companies in any sector. It typically invests in a company which is publicly quoted, most likely on a UK stock exchange. The firm's typical investment holding period is greater than one year. The company prefers to invest in one target company at a time. It prefers to invest in a company which is publicly quoted, most likely on a UK stock exchange, which it considers to be undervalued as a result of operational deficiencies and which it believes can be rectified by the Investment Manager's active involvement, thereby increasing the value of the investment.  Sherborne Investors (Guernsey) B Limited was incorporated on November 8, 2012 and is based in St Peter Port, Channel Islands.",
+        "summary": "Sherborne Investors (Guernsey) B Limited was founded in 2012 and is headquartered in St Peter Port, Guernsey.",
         "currency": "GBp",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -299,25 +443,25 @@
         "country": "Guernsey",
         "city": "St Peter Port"
     },
-    "SREI.L": {
-        "short_name": "SCHRODER REAL ESTATE INVESTMENT",
-        "long_name": "Schroder Real Estate Investment Trust Limited",
-        "summary": "Schroder Real Estate Investment Trust Limited (the \u00c2\u0091Company' and together with its subsidiaries the \u00c2\u0091Group') is a real estate investment company with a premium listing on the Official List of the UK Listing Authority and whose shares are traded on the Main Market of the London Stock Exchange (ticker: SREI). The Company is a Real Estate Investment Trust (\u00c2\u0091REIT') and benefits from the various tax advantages offered by the UK REIT regime. The Company continues to be declared as an authorised closed-ended investment scheme by the Guernsey Financial Services Commission under section 8 of the Protection of Investors (Bailiwick of Guernsey) Law, 1987, as amended and the Authorised Closed-ended Investment Schemes Rules 2008.",
+    "SRE.JO": {
+        "short_name": "Sirius Real Estate Ltd",
+        "long_name": "Sirius Real Estate Limited",
+        "summary": "Sirius Real Estate Limited, a real estate company, engages in the investment, development, and operation of commercial properties in Germany. The company owns and operates offices; warehouses, storerooms, and self-storage spaces; and production and workshop spaces. It serves small to medium-sized enterprises under the Sirius brand name. As of March 31, 2020, it owned a portfolio of owned 57 and managed 2 additional business parks with approximately 1.5 million square meters of lettable space. The company was formerly known as Dawnay, Day Sirius Limited and changed its name to Sirius Real Estate Limited in October 2008. Sirius Real Estate Limited was founded in 2007 and is based in Saint Peter Port, Guernsey.",
+        "currency": "ZAc",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "JNB",
+        "market": "za_market",
+        "country": "Guernsey",
+        "city": "Saint Peter Port"
+    },
+    "SRE.L": {
+        "short_name": "SIRIUS REAL ESTATE LD ORD NPV",
+        "long_name": "Sirius Real Estate Limited",
+        "summary": "Sirius Real Estate Limited, a real estate company, engages in the investment, development, and operation of commercial properties in Germany. The company owns and operates offices; warehouses, storerooms, and self-storage spaces; and production and workshop spaces. It serves small to medium-sized enterprises under the Sirius brand name. As of March 31, 2020, it owned a portfolio of owned 57 and managed 2 additional business parks with approximately 1.5 million square meters of lettable space. The company was formerly known as Dawnay, Day Sirius Limited and changed its name to Sirius Real Estate Limited in October 2008. Sirius Real Estate Limited was founded in 2007 and is based in Saint Peter Port, Guernsey.",
         "currency": "GBp",
         "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "LSE",
-        "market": "gb_market",
-        "country": "Guernsey",
-        "city": "St Peter Port"
-    },
-    "STOB.L": {
-        "short_name": "ESKEN LIMITED",
-        "long_name": "Stobart Group Limited",
-        "summary": "Stobart Group Limited operates in the aviation and energy business primarily in the United Kingdom, Europe, Ireland, and internationally. It operates through Stobart Aviation, Stobart Energy, Stobart Rail & Civils, Stobart Investments, and Stobart Non-Strategic Infrastructure segments. The Stobart Aviation segment engages in the operation of commercial airports and the provision of ground handling services. The Stobart Energy segment is involved in the supply of sustainable biomass for the generation of renewable energy. The Stobart Rail & Civils segment delivers internal and external civil engineering development projects, including rail network operations. The Stobart Investments segment engages in the transport and distribution, and baggage handling businesses. The Stobart Non-Strategic Infrastructure segment is involved in the management, development, and realization of a portfolio of property assets, including Carlisle Lake District Airport, as well as an investment in a renewable energy plant. Stobart Group Limited was incorporated in 2002 and is based in Saint Peter Port, Guernsey.",
-        "currency": "GBp",
-        "sector": "Industrials",
-        "industry": "Conglomerates",
+        "industry": "Real Estate Services",
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Guernsey",
@@ -356,6 +500,18 @@
         "industry": "Asset Management",
         "exchange": "LSE",
         "market": "gb_market",
+        "country": "Guernsey",
+        "city": "Saint Peter Port"
+    },
+    "ZIM.AX": {
+        "short_name": "ZIMPLATS FPO 10CUS",
+        "long_name": "Zimplats Holdings Limited",
+        "summary": "Zimplats Holdings Limited, together with its subsidiaries, engages in the production of platinum and associated metals mined from the Great Dyke in Zimbabwe. The company produces platinum, palladium, rhodium, iridium, and ruthenium, as well as nickel, gold, copper, cobalt, and silver deposits. It operates mines in Ngezi. The company was incorporated in 1998 and is based in Saint Peter Port, Guernsey.",
+        "currency": "AUD",
+        "sector": "Basic Materials",
+        "industry": "Other Precious Metals & Mining",
+        "exchange": "ASX",
+        "market": "au_market",
         "country": "Guernsey",
         "city": "Saint Peter Port"
     }

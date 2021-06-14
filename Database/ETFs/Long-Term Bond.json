@@ -9,6 +9,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "IGLB": {
+        "short_name": "iShares 10  Year Investment Gra",
+        "long_name": "iShares 10+ Year Investment Grade Corporate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the ICE BofA 10+ Year US Corporate Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The underlying index measures the performance of investment-grade corporate bonds of both U.S. and non-U.S. issuers that are U.S. dollar-denominated and publicly issued in the U.S. domestic market and have a remaining maturity of greater than or equal to ten years.",
+        "category": "Long-Term Bond",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "ILTB": {
         "short_name": "iShares Core 10  Year USD Bond ",
         "long_name": "iShares Core 10+ Year USD Bond ETF",
@@ -26,7 +36,7 @@
         "summary": "The investment seeks to track the performance of a market-weighted corporate bond index with a long-term dollar-weighted average maturity.\n The fund employs an indexing investment approach designed to track the performance of the Bloomberg Barclays U.S. 10+ Year Corporate Bond Index. This index includes U.S. dollar-denominated, investment-grade, fixed-rate, taxable securities issued by industrial, utility, and financial companies, with maturities greater than 10 years. Under normal circumstances, at least 80% of the fund&#39;s assets will be invested in bonds included in the index.",
         "category": "Long-Term Bond",
         "family": "Vanguard",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     }
 }

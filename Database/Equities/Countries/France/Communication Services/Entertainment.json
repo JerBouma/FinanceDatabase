@@ -1,4 +1,28 @@
 {
+    "69N.F": {
+        "short_name": "GAUMONT SA INH.  EO 8",
+        "long_name": "Gaumont SA",
+        "summary": "Gaumont SA, together with its subsidiaries, produces and distributes movies in France, the United States, and internationally. The company operates in two segments, Movie Production and Distribution, and Television Production and Distribution. The company produces and distributes animated feature films, and cartoon and drama series. It sells broadcasting rights to television channels; and distributes video and video on demand. The company is based in Neuilly-sur-Seine, France.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Entertainment",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "France",
+        "city": "Neuilly-sur-Seine"
+    },
+    "AZ6.F": {
+        "short_name": "EUROPACORP S.A.  EO-,34",
+        "long_name": "EuropaCorp",
+        "summary": "EuropaCorp, together with its subsidiaries, produces and distributes films worldwide. It operates through four segments: Production and Distribution of Films, Production and Distribution of TV Films and Series, Events, and Others. The company produces and distributes cinematographic works and TV dramas; distributes films in theaters, as well as engages in the international sales of film distribution rights, licensing and partnerships, line production, and coproduction activities; and operates movie complexes and audiovisual communication services. It also sells television broadcasting rights, as well as broadcasting rights of its films on video-on-demand subscription platforms; produces and publishes film soundtracks; produces television movies and episodic television series for platforms; and offers advertising consultancy and space purchasing, consulting, and operational assistance services, as well as engages in the exploitation of musical works. EuropaCorp was incorporated in 1992 and is based in Saint-Denis, France.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Entertainment",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "France",
+        "city": "Saint-Denis"
+    },
     "BOIVF": {
         "short_name": "BOLLORE",
         "long_name": "Bollor\u00e9 SE",
@@ -47,6 +71,18 @@
         "country": "France",
         "city": "Puteaux"
     },
+    "ECP.PA": {
+        "short_name": "EUROPACORP",
+        "long_name": "EuropaCorp",
+        "summary": "EuropaCorp, together with its subsidiaries, produces and distributes films worldwide. It operates through four segments: Production and Distribution of Films, Production and Distribution of TV Films and Series, Events, and Others. The company produces and distributes cinematographic works and TV dramas; distributes films in theaters, as well as engages in the international sales of film distribution rights, licensing and partnerships, line production, and coproduction activities; and operates movie complexes and audiovisual communication services. It also sells television broadcasting rights, as well as broadcasting rights of its films on video-on-demand subscription platforms; produces and publishes film soundtracks; produces television movies and episodic television series for platforms; and offers advertising consultancy and space purchasing, consulting, and operational assistance services, as well as engages in the exploitation of musical works. EuropaCorp was incorporated in 1992 and is based in Saint-Denis, France.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Entertainment",
+        "exchange": "PAR",
+        "market": "fr_market",
+        "country": "France",
+        "city": "Saint-Denis"
+    },
     "GAM.PA": {
         "short_name": "GAUMONT",
         "long_name": "Gaumont SA",
@@ -83,10 +119,22 @@
         "country": "France",
         "city": "Paris"
     },
+    "TCH.PA": {
+        "short_name": "TECHNICOLOR",
+        "long_name": "Technicolor SA",
+        "summary": "Technicolor SA develops, creates, and delivers products and services for the media and entertainment sectors in France, the United Kingdom, rest of Europe, the United States, rest of Americas, and the Asia-Pacific. It operates through three segments: Production Services, DVD Services, and Connected Home. The Production Services segment offers visual effects (VFX) services, including pre-visualization, asset creation, texturing, animation, rigging, rotoscoping, lighting, match move, and compositing; and computer-generated imagery animation solutions. This segment offers its services for feature films, episodic, advertising, video games, and other audiovisual content. The DVD Services segment replicates, packages, and distributes video game and music CD, DVD, and Blu-ray discs; and provides turnkey integrated supply-chain solutions, and returns handling and freight management, as well as procurement, and other inventory management and related services. The Connected Home segment offers a portfolio of broadband and video customer premise equipment, including broadband modems and gateways, digital set-top boxes, and Internet of Things connected devices for Pay-TV operators and network service providers, as well as develops software solutions. The company was incorporated in 1985 and is headquartered in Paris, France.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Entertainment",
+        "exchange": "PAR",
+        "market": "fr_market",
+        "country": "France",
+        "city": "Paris"
+    },
     "TCLRY": {
         "short_name": "TECHNICOLOR",
         "long_name": "Technicolor SA",
-        "summary": "Technicolor SA develops video technologies, products, and services for the media and entertainment sectors worldwide. It operates through three segments: Production Services, DVD Services, and Connected Home. The Production Services segment offers visual effects (VFX) services, including pre-visualization, asset creation, texturing, animation, rigging, rotoscoping, lighting, match move, and compositing; computer-generated imagery animation solutions; and post production services, such as camera capture on the production set and creation of final distribution masters comprising on-set services, color correction, and VFX integration. This segment offers its services for feature films, TV series, advertising, video games, and other audiovisual content. The DVD Services segment replicates, packages, and distributes video game and music DVD, Blu-ray discs, and CDs; and provides turnkey integrated supply-chain solutions. The Connected Home segment offers a portfolio of broadband and video customer premise equipment, and develops software solutions, including broadband modems and gateways, digital set-top boxes, and Internet of Things connected devices for Pay-TV operators and network service providers. The company is headquartered in Paris, France.",
+        "summary": "Technicolor SA develops, creates, and delivers products and services for the media and entertainment sectors in France, the United Kingdom, rest of Europe, the United States, rest of Americas, and the Asia-Pacific. It operates through three segments: Production Services, DVD Services, and Connected Home. The Production Services segment offers visual effects (VFX) services, including pre-visualization, asset creation, texturing, animation, rigging, rotoscoping, lighting, match move, and compositing; and computer-generated imagery animation solutions. This segment offers its services for feature films, episodic, advertising, video games, and other audiovisual content. The DVD Services segment replicates, packages, and distributes video game and music CD, DVD, and Blu-ray discs; and provides turnkey integrated supply-chain solutions, and returns handling and freight management, as well as procurement, and other inventory management and related services. The Connected Home segment offers a portfolio of broadband and video customer premise equipment, including broadband modems and gateways, digital set-top boxes, and Internet of Things connected devices for Pay-TV operators and network service providers, as well as develops software solutions. The company was incorporated in 1985 and is headquartered in Paris, France.",
         "currency": "USD",
         "sector": "Communication Services",
         "industry": "Entertainment",
@@ -98,7 +146,7 @@
     "TNM2.F": {
         "short_name": "TECHNICOLOR INH. EO 0,01",
         "long_name": "Technicolor SA",
-        "summary": "Technicolor SA develops video technologies, products, and services for the media and entertainment sectors worldwide. It operates through three segments: Production Services, DVD Services, and Connected Home. The Production Services segment offers visual effects (VFX) services, including pre-visualization, asset creation, texturing, animation, rigging, rotoscoping, lighting, match move, and compositing; computer-generated imagery animation solutions; and post production services, such as camera capture on the production set and creation of final distribution masters comprising on-set services, color correction, and VFX integration. This segment offers its services for feature films, TV series, advertising, video games, and other audiovisual content. The DVD Services segment replicates, packages, and distributes video game and music DVD, Blu-ray discs, and CDs; and provides turnkey integrated supply-chain solutions. The Connected Home segment offers a portfolio of broadband and video customer premise equipment, and develops software solutions, including broadband modems and gateways, digital set-top boxes, and Internet of Things connected devices for Pay-TV operators and network service providers. The company is headquartered in Paris, France.",
+        "summary": "Technicolor SA develops, creates, and delivers products and services for the media and entertainment sectors in France, the United Kingdom, rest of Europe, the United States, rest of Americas, and the Asia-Pacific. It operates through three segments: Production Services, DVD Services, and Connected Home. The Production Services segment offers visual effects (VFX) services, including pre-visualization, asset creation, texturing, animation, rigging, rotoscoping, lighting, match move, and compositing; and computer-generated imagery animation solutions. This segment offers its services for feature films, episodic, advertising, video games, and other audiovisual content. The DVD Services segment replicates, packages, and distributes video game and music CD, DVD, and Blu-ray discs; and provides turnkey integrated supply-chain solutions, and returns handling and freight management, as well as procurement, and other inventory management and related services. The Connected Home segment offers a portfolio of broadband and video customer premise equipment, including broadband modems and gateways, digital set-top boxes, and Internet of Things connected devices for Pay-TV operators and network service providers, as well as develops software solutions. The company was incorporated in 1985 and is headquartered in Paris, France.",
         "currency": "EUR",
         "sector": "Communication Services",
         "industry": "Entertainment",
@@ -123,7 +171,7 @@
         "short_name": "XILAM ANIMATION",
         "long_name": "Xilam Animation",
         "summary": "Xilam Animation operates as an animation company in Europe and internationally. It creates, produces, and distributes programmes for children and adult audiences. The company broadcasts its content on television and SVoD platforms, such as Netflix, Disney+, Amazon, and NBC Universal, as well as ADVoD streaming platforms, including YouTube and Facebook. It owns various brands that include Oggy and the Cockroaches, Zig & Sharko, Oggy Oggy, Moka, Mr. Magoo, and I Lost My Body. Xilam Animation was founded in 1990 and is headquartered in Paris, France.",
-        "currency": "EUR",
+        "currency": null,
         "sector": "Communication Services",
         "industry": "Entertainment",
         "exchange": "PAR",

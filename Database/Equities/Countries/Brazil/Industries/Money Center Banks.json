@@ -2,7 +2,7 @@
     "BBDN.MX": {
         "short_name": "BANCO BRADESCO SA",
         "long_name": "Banco Bradesco S.A.",
-        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and financial services to individuals, corporates, and businesses in Brazil and internationally. It operates through two segments, Banking and Insurance. The company offers checking and savings accounts, demand deposits, time deposits, and interbank deposits. It also provides mutual funds, foreign exchange, overdrafts, credit cards, and personal and housing loans; and auto, health, life, accident, and property insurance products. In addition, the company offers fund management and treasury services; corporate finance; investment banking, asset management and consortium administration; pension plans; brokerage; real estate ventures and capitalization bonds; and hedge and finance products, including working capital financing. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
+        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and services to individuals, corporates, and businesses in Brazil and internationally. The company offers leasing, investment banking, brokerage, and consortium management services, as well as credit cards, real estate products, pension plans, and capitalization bonds. It also provides health, dental assistance, life, and personal accident insurance products. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
         "currency": "MXN",
         "sector": "Financial",
         "industry": "Money Center Banks",
@@ -12,7 +12,7 @@
         "city": "Osasco"
     },
     "CRFF11.SA": {
-        "short_name": "FII CX RBRA2CI",
+        "short_name": "FII CX RBRA2CI  ER",
         "long_name": "Caixa Rio Bravo Fundo De Fundos De Investimento Imobiliario II-Cotas",
         "summary": null,
         "currency": "BRL",
@@ -23,8 +23,20 @@
         "country": "Brazil",
         "city": null
     },
+    "HGFF11.SA": {
+        "short_name": "FII CSHG FOFCI  ER",
+        "long_name": "CSHG Imobiliario Fof - Fundo De Investimento Imobiliario - Fii",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "Money Center Banks",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": null
+    },
     "HGRU11.SA": {
-        "short_name": "FII CSHG URBCI",
+        "short_name": "FII CSHG URBCI  ER",
         "long_name": "CSHG Renda Urbana Fundo Investimento Imobilirio - FII",
         "summary": null,
         "currency": "BRL",
@@ -38,7 +50,7 @@
     "ITUBN.MX": {
         "short_name": "ITAU UNIBANCO HOLDINGS S.A.",
         "long_name": "Ita\u00fa Unibanco Holding S.A.",
-        "summary": "Ita\u00c3\u00ba Unibanco Holding S.A. provides a range of financial products and services in Brazil and internationally. The company operates through three segments: Retail Banking, Wholesale Banking, and Activities with the Market + Corporation. It offers various deposit products, as well as loans and credit cards; investment banking services; real estate lending services; financing and investment services; and leasing and foreign exchange services. The company also provides property and casualty insurance covering loss, damage, or liabilities for assets or persons, as well as life insurance covering death and personal accidents; and reinsurance products. It serves retail customers, account and non-account holders, individuals and legal entities, high income clients, microenterprises, and companies. The company was formerly known as Ita\u00c3\u00ba Unibanco Banco M\u00c3\u00baltiplo S.A. and changed its name to Ita\u00c3\u00ba Unibanco Holding S.A. in April 2009. The company was founded in 1924 and is headquartered in S\u00c3\u00a3o Paulo, Brazil. Ita\u00c3\u00ba Unibanco Holding S.A. operates a subsidiary of IUPAR - Ita\u00c3\u00ba Unibanco Participa\u00c3\u00a7\u00c3\u00b5es S.A.",
+        "summary": "Ita\u00c3\u00ba Unibanco Holding S.A. provides a range of financial products and services in Brazil and internationally. The company operates through three segments: Retail Banking, Wholesale Banking, and Activities with the Market + Corporation. It offers various deposit products, as well as loans and credit cards; investment banking services; real estate lending services; financing and investment services; and leasing and foreign exchange services. The company also provides property and casualty insurance products covering loss, damage, or liabilities for assets or persons, as well as life insurance products covering death and personal accident; and reinsurance products. It serves retail customers, account and non-account holders, individuals and legal entities, high income clients, microenterprises, and companies. The company was formerly known as Ita\u00c3\u00ba Unibanco Banco M\u00c3\u00baltiplo S.A. and changed its name to Ita\u00c3\u00ba Unibanco Holding S.A. in April 2009. The company was incorporated in 1924 and is headquartered in S\u00c3\u00a3o Paulo, Brazil. Ita\u00c3\u00ba Unibanco Holding S.A. operates a subsidiary of IUPAR - Ita\u00c3\u00ba Unibanco Participa\u00c3\u00a7\u00c3\u00b5es S.A.",
         "currency": "MXN",
         "sector": "Financial",
         "industry": "Money Center Banks",

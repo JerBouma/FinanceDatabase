@@ -1,338 +1,660 @@
 {
-    "^MXX": {
-        "short_name": "IPC MEXICO",
-        "currency": "MXN",
-        "market": "mx_market",
-        "exchange": "MEX",
-        "exchange timezone": "CST"
-    },
-    "AS-01.MX": {
-        "short_name": null,
-        "currency": "MXN",
-        "market": "mx_market",
-        "exchange": "MEX",
-        "exchange timezone": "CST"
-    },
-    "AS-02.MX": {
-        "short_name": null,
-        "currency": "MXN",
-        "market": "mx_market",
-        "exchange": "MEX",
-        "exchange timezone": "CST"
-    },
-    "AS-03.MX": {
-        "short_name": null,
-        "currency": "MXN",
-        "market": "mx_market",
-        "exchange": "MEX",
-        "exchange timezone": "CST"
-    },
-    "AS-04.MX": {
-        "short_name": null,
-        "currency": "MXN",
-        "market": "mx_market",
-        "exchange": "MEX",
-        "exchange timezone": "CST"
-    },
-    "AS-05.MX": {
-        "short_name": null,
-        "currency": "MXN",
-        "market": "mx_market",
-        "exchange": "MEX",
-        "exchange timezone": "CST"
-    },
-    "AS-06.MX": {
-        "short_name": null,
-        "currency": "MXN",
-        "market": "mx_market",
-        "exchange": "MEX",
-        "exchange timezone": "CST"
-    },
-    "AS-07.MX": {
-        "short_name": null,
-        "currency": "MXN",
-        "market": "mx_market",
-        "exchange": "MEX",
-        "exchange timezone": "CST"
-    },
     "AT07000.MX": {
         "short_name": "BMV-SRVCM RT",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
+    },
+    "AT1000.MX": {
+        "short_name": "AT1 EXTRACTIVA",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "AT2000.MX": {
+        "short_name": "AT2 TRANSFORMA",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "AT3000.MX": {
+        "short_name": "AT3 CONSTRUYE",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "AT4000.MX": {
+        "short_name": "AT4 COMERCIO",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
     },
     "AT5000.MX": {
         "short_name": "AT5 ENLACE",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
+    },
+    "AT6000.MX": {
+        "short_name": "AT6 SERVICIOS",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
     },
     "BB.MX": {
         "short_name": "BMBRA",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "BT.MX": {
         "short_name": "BMBRART",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "BVNMXPUSD.MX": {
         "short_name": null,
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
+    },
+    "CN.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "CR.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "CS.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "CT.MX": {
+        "short_name": "CHINA SX20RT",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "CU.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "CW.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "CX.MX": {
+        "short_name": "CHINA SX20",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
     },
     "DDBOL.MX": {
         "short_name": "DDBOL",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "DIBOL.MX": {
         "short_name": "DIBOL",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
-    "ET-02.MX": {
+    "DS.MX": {
+        "short_name": "L.FTSE E./N.D.E.U.ETF D",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "DT.MX": {
+        "short_name": "DT",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "EE.MX": {
         "short_name": null,
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
-    "ET-03.MX": {
+    "EG.MX": {
         "short_name": null,
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
-    "ET-04.MX": {
+    "ER.MX": {
         "short_name": null,
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
-    "ET-05.MX": {
+    "ES.MX": {
         "short_name": null,
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
-    "ET-06.MX": {
+    "ET.MX": {
+        "short_name": "ENERGY TRANSFER LP",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "EU.MX": {
         "short_name": null,
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
-    },
-    "ET-07.MX": {
-        "short_name": null,
-        "currency": "MXN",
-        "market": "mx_market",
-        "exchange": "MEX",
-        "exchange timezone": "CST"
-    },
-    "ET-09.MX": {
-        "short_name": null,
-        "currency": "MXN",
-        "market": "mx_market",
-        "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "FB00000000.MX": {
         "short_name": "BMV FIBRAS",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
+    },
+    "FF.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "FG.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "FM.MX": {
+        "short_name": "ISHARES INC MSCI FRONTIER AND S",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "FP.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
     },
     "FR.MX": {
         "short_name": "BMV FIBRAS RT",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "FT.MX": {
         "short_name": "BMV-FM-RT",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "HT.MX": {
         "short_name": "Habita Index (Home Building)",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
+    },
+    "IF.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
     },
     "IH.MX": {
         "short_name": "IND HABITA",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "IN.MX": {
         "short_name": "BMV INDIA RT",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "INMEX.MX": {
         "short_name": "INDICE DE MEXICO",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "IPCCOMPMX.MX": {
         "short_name": "IPC Comp 60 Mexico",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "IPCLARGECAP.MX": {
         "short_name": "IPC Large Cap",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "IPCMIDCAP.MX": {
         "short_name": "IPC MidCap",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "IPCSMALLCAP.MX": {
         "short_name": "IPC Small Cap",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
+    },
+    "IR.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
     },
     "IRT.MX": {
         "short_name": "RENDIMIENTO TOTAL MEXICO",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "IRTCOMPMX.MX": {
         "short_name": "IRT Comp Mx",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "IRTLARGECAP.MX": {
         "short_name": "IRT LargeCap",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "IRTMIDCAP.MX": {
         "short_name": "IRT MidCap",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "IRTSMALLCAP.MX": {
         "short_name": "IRT SmallCap",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "IT00000000.MX": {
         "short_name": "INMEX RT",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "MB.MX": {
         "short_name": "IMEBZ",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
+    },
+    "MM.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
     },
     "MT.MX": {
         "short_name": "IMEBZ RT",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
+    },
+    "PR.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "PT.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "PU.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "QS.MX": {
+        "short_name": "QUANTUMSCAPE CORPORATION",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "QT.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "QU.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "RC.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
     },
     "RD.MX": {
         "short_name": "BMV-RENTABLE DIAR",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "RI.MX": {
         "short_name": "INDICE BMV-RENTABL",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
+    },
+    "SC.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "SE2000.MX": {
+        "short_name": "Materials",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "SE3000.MX": {
+        "short_name": "Industrials",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "SE4000.MX": {
+        "short_name": "Consumer Discretionary & Servic",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "SE5000.MX": {
+        "short_name": "Consumer Staples",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "SE6000.MX": {
+        "short_name": "HealthCare",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "SE7000.MX": {
+        "short_name": "Financial Services",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "SE9000.MX": {
+        "short_name": "Telecommunication Services",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
     },
     "SN-01.MX": {
         "short_name": "AT5 ENLACE",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "SN-02.MX": {
         "short_name": "AT3 CONSTRUYE",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "SN-03.MX": {
         "short_name": "AT2 TRANSFORMA",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
     },
     "SN-05.MX": {
         "short_name": "AT2 TRANSFORMA",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
+    },
+    "ST.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "ST1000.MX": {
+        "short_name": "MATERIALES RT",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "ST2000.MX": {
+        "short_name": "INDUSTRIAL RT",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "ST3000.MX": {
+        "short_name": "ALIMENTOS RT",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "ST5000.MX": {
+        "short_name": "TELECOM RT",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "SU.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "TI.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "TM.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "TQ.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "TR.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
     },
     "TS.MX": {
         "short_name": "TENARIS S.A.",
         "currency": "MXN",
         "market": "mx_market",
         "exchange": "MEX",
-        "exchange timezone": "CST"
+        "exchange timezone": "CDT"
+    },
+    "TV.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "UM.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "US.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "UT.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "VD.MX": {
+        "short_name": "BURSA OPTIMO",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "VM.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "VT00000000.MX": {
+        "short_name": "BURSA OPTIMO RT",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "VU.MX": {
+        "short_name": null,
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
+    },
+    "^MXX": {
+        "short_name": "IPC MEXICO",
+        "currency": "MXN",
+        "market": "mx_market",
+        "exchange": "MEX",
+        "exchange timezone": "CDT"
     }
 }

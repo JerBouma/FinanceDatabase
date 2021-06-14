@@ -1,37 +1,37 @@
 {
+    "DX-Y.NYB": {
+        "short_name": "US Dollar/USDX - Index - Cash",
+        "currency": "USD",
+        "market": "us24_market",
+        "exchange": "NYB",
+        "exchange timezone": "EDT"
+    },
     "^FVX": {
         "short_name": "Treasury Yield 5 Years",
         "currency": "USD",
         "market": "us24_market",
         "exchange": "NYB",
-        "exchange timezone": "EST"
+        "exchange timezone": "EDT"
     },
     "^IRX": {
         "short_name": "13 WEEK TREASURY BILL",
         "currency": "USD",
         "market": "us24_market",
         "exchange": "NYB",
-        "exchange timezone": "EST"
+        "exchange timezone": "EDT"
     },
     "^TNX": {
         "short_name": "CBOE Interest Rate 10 Year T No",
         "currency": "USD",
         "market": "us24_market",
         "exchange": "NYB",
-        "exchange timezone": "EST"
+        "exchange timezone": "EDT"
     },
     "^TYX": {
         "short_name": "Treasury Yield 30 Years",
         "currency": "USD",
         "market": "us24_market",
         "exchange": "NYB",
-        "exchange timezone": "EST"
-    },
-    "DX-Y.NYB": {
-        "short_name": "US Dollar/USDX - Index - Cash",
-        "currency": "USD",
-        "market": "us24_market",
-        "exchange": "NYB",
-        "exchange timezone": "EST"
+        "exchange timezone": "EDT"
     }
 }

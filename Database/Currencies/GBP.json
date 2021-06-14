@@ -437,6 +437,12 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
+    "TNDGBP=X": {
+        "short_name": "TND/GBP",
+        "currency": "GBP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "TRYGBP=X": {
         "short_name": "TRY/GBP",
         "currency": "GBP",
@@ -493,6 +499,18 @@
     },
     "XOFGBP=X": {
         "short_name": "XOF/GBP",
+        "currency": "GBP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARGBP=X": {
+        "short_name": "ZAR/GBP",
+        "currency": "GBP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZMWGBP=X": {
+        "short_name": "ZMW/GBP",
         "currency": "GBP",
         "exchange": "CCY",
         "market": "ccy_market"

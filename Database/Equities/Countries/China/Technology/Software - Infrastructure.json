@@ -1,16 +1,4 @@
 {
-    "000662.SZ": {
-        "short_name": "TEAMAX SMART CITY",
-        "long_name": "Teamax Smart City Technology Corporation Limited",
-        "summary": "Teamax Smart City Technology Corporation Limited provides smart city big data services worldwide. It operates a smart city 2.0 operation platform, which integrates the separated information of various departments of urban management, education, medical care, transportation, water, fire, business area, and municipal departments into one platform. The company also offers smart government solutions, smart city management solutions, smart law enforcement solutions, smart traffic solutions, safe city solutions, wisdom justice solutions, smart agriculture solutions, smart planning solutions, smart environmental protection solutions, wisdom pipe gallery solutions, smart medical solutions, smart park integration solutions, and smart education solutions. In addition, it provides smart water solutions, wisdom tourism solutions, smart community solutions, smart property solutions, smart business solutions, and smart firefighting solutions. Further, the company offers XGIS products, which provides a series of framework for geographic information system (GIS) applications; and Xcity 3D virtual city system that integrates 3D visualization models and GIS for the urban planning, 3D geographic information, real estate demonstration, military exercise, monument restoration, garden landscapes, etc. The company was formerly known as Softto Co., Ltd. and changed its name to Teamax Smart City Technology Corporation Limited in April 2016. Teamax Smart City Technology Corporation Limited is headquartered in Hangzhou, China.",
-        "currency": "CNY",
-        "sector": "Technology",
-        "industry": "Software - Infrastructure",
-        "exchange": "SHZ",
-        "market": "cn_market",
-        "country": "China",
-        "city": "Hangzhou"
-    },
     "002017.SZ": {
         "short_name": "EASTCOMPEACE TECH",
         "long_name": "Eastcompeace Technology Co.,ltd",
@@ -22,6 +10,18 @@
         "market": "cn_market",
         "country": "China",
         "city": "Zhuhai"
+    },
+    "002090.SZ": {
+        "short_name": "WISCOM SYSTEM CO",
+        "long_name": "Wiscom System Co., Ltd.",
+        "summary": "Wiscom System Co., Ltd. engages in smart energy and smart city businesses in China. The company researches and develops, manufactures, and sells power generation, transmission, substation, distribution, and other power automation products. It is also involved in the wind power, solar energy, and other new energy power generation; biomass and waste heat power generation; distributed gas turbine and other thermal power generation; and power distribution professional engineering consulting, survey, and design businesses. In addition, the company engages in the new energy, micro-network, energy emission reduction, and other project development, construction management, and general contracting businesses; and other technology development and technical services businesses. Further, it provides IT consulting, value-added, and infrastructure, as well as industry application solutions. The company was founded in 1995 and is headquartered in Nanjing, China.",
+        "currency": "CNY",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "exchange": "SHZ",
+        "market": "cn_market",
+        "country": "China",
+        "city": "Nanjing"
     },
     "002212.SZ": {
         "short_name": "TOPSEC TECHNOLOGIE",
@@ -58,18 +58,6 @@
         "market": "cn_market",
         "country": "China",
         "city": "Shenzhen"
-    },
-    "1806.HK": {
-        "short_name": "HUIFU PAYMENT",
-        "long_name": "Huifu Payment Limited",
-        "summary": "Huifu Payment Limited provides third-party payment services in Mainland China. The company offers merchant payment services, such as POS, Internet payment, mobile payment, mobile POS, and cross-border payment services to micro and small merchants, as well as companies in various industry verticals. It also provides fintech enabling services, including SaaS offerings that comprise account management services and data-driven value-added services to Internet finance providers and commercial banks. The company was founded in 2006 and is headquartered in Shanghai, the People's Republic of China.",
-        "currency": "HKD",
-        "sector": "Technology",
-        "industry": "Software - Infrastructure",
-        "exchange": "HKG",
-        "market": "hk_market",
-        "country": "China",
-        "city": "Shanghai"
     },
     "300017.SZ": {
         "short_name": "WANGSU SCIENCE AND",
@@ -275,6 +263,18 @@
         "country": "China",
         "city": "Shanghai"
     },
+    "6608.HK": {
+        "short_name": "BAIRONG-W",
+        "long_name": "Bairong Inc.",
+        "summary": "Bairong Inc., a fintech application company, provides full lifecycle management services to financial institutions and offers financial products and services to private and small-micro enterprises in the People's Republic of China. It offers credit risk management, precision marketing, and insurance distribution products. The company is also engaged in micro-loan business, and insurance and reinsurance brokerage business. In addition, it provides development, consulting, and transfer services of software and hardware products, and network technology; data processing and big data services; enterprise credit services; technology development services; and financial information services. Further, the company is engaged in computer system development; and technology development, consulting, and promotion services. It provides its solutions to banks and insurance companies. Bairong Inc. was founded in 2014 and is headquartered in Beijing, China.",
+        "currency": "HKD",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "exchange": "HKG",
+        "market": "hk_market",
+        "country": "China",
+        "city": "Beijing"
+    },
     "688023.SS": {
         "short_name": "HANGZHOU DAS-SECURITY TECHNOLOG",
         "long_name": "DBAPPSecurity Co., Ltd.",
@@ -325,13 +325,25 @@
     },
     "688229.SS": {
         "short_name": "BONREE DATA TECHNOLOGY CO LTD",
-        "long_name": "Bonree Data Technology Co., Ltd.",
+        "long_name": "Bonree Data Technology Co., Ltd",
         "summary": "Bonree Data Technology Co., Ltd provides application performance management services for enterprises in China. It also offers network performance management, big data, mobile app, and test products. In addition, the company provides financial, e-commerce, portal, aviation, manufacturing, live video, and operator solutions. Further, it offers support services. The company was founded in 2008 and is based in Beijing, China.",
         "currency": "CNY",
         "sector": "Technology",
         "industry": "Software - Infrastructure",
         "exchange": "SHH",
         "market": "cn_market",
+        "country": "China",
+        "city": "Beijing"
+    },
+    "6B5.MU": {
+        "short_name": "BAIRONG INC.CL.B -,00002",
+        "long_name": "Bairong Inc.",
+        "summary": "Bairong Inc., a fintech application company, provides full lifecycle management services to financial institutions and offers financial products and services to private and small-micro enterprises in the People's Republic of China. It offers credit risk management, precision marketing, and insurance distribution products. The company is also engaged in micro-loan business, and insurance and reinsurance brokerage business. In addition, it provides development, consulting, and transfer services of software and hardware products, and network technology; data processing and big data services; enterprise credit services; technology development services; and financial information services. Further, the company is engaged in computer system development; and technology development, consulting, and promotion services. It provides its solutions to banks and insurance companies. Bairong Inc. was founded in 2014 and is headquartered in Beijing, China.",
+        "currency": "EUR",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "exchange": "MUN",
+        "market": "dr_market",
         "country": "China",
         "city": "Beijing"
     },
@@ -350,7 +362,19 @@
     "9923.HK": {
         "short_name": "YEAHKA",
         "long_name": "Yeahka Limited",
-        "summary": "Yeahka Limited operates payment-based technology platform that provides payment and business services to merchants and consumers in China. The company offers one-stop payment services, which consists of app-based payment services that enables customers to accept payments using mobile apps, and pay to merchant customers through third-party e-wallets; and traditional payment services, which enables customers to accept non-cash payments that do not belong to app-based payments, including accepting card payments with traditional payment terminals. It also provides technology-enabled business services, comprising of value-added services, such as merchant SaaS products that helps customers enhance their operational efficiency; marketing services, which is provided primarily though a payment-based advertising platform that allows customers to reach their target markets; and fintech services for financial needs of customers. The company was founded in 2011 and is headquartered in Shenzhen, the People's Republic of China. Yeahka Limited is a subsidiary of Creative Brocade Ltd.",
+        "summary": "Yeahka Limited operates payment-based technology platform that provides payment and business services to merchants and consumers in China. It offers one-stop payment services, which include app-based and traditional payment services comprising mobile payment and bank card acquiring products, as well as an intelligent risk control platform for controlling and managing mobile payments. The company also provides technology-enabled business services, including various merchant SaaS products and marketing services that offer a variety of intelligent business solutions, and intelligent operation and management services; and a payment-based advertising platform, which provides various marketing and promotional tools. In addition, it offers fintech services for financial needs of customers. Yeahka Limited was incorporated in 2011 and is headquartered in Shenzhen, the People's Republic of China.",
+        "currency": "HKD",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "exchange": "HKG",
+        "market": "hk_market",
+        "country": "China",
+        "city": "Shenzhen"
+    },
+    "9959.HK": {
+        "short_name": "LINKLOGIS-W",
+        "long_name": "Linklogis Inc.",
+        "summary": "Linklogis Inc., an investment holding company, provides technology solutions for supply chain finance primarily in China. The company offers Anchor Cloud, a solution that enables anchor enterprises to achieve digital transformation for supply chain management and optimize payment cycle for parties along the supply chain; and FI Cloud, a solution to help for financial institutions to digitalize, automate, and streamline their supply chain financing services. It also provides Cross-border Cloud solutions to help anchor enterprises and financial institutions to offer supply chain payment and financing for corporates engaged in cross-border trade activities; and SME Credit Tech Solution, a suite of data-driven risk analytics solutions, which help financial institutions to provide financing for anchor enterprises' SME suppliers and distributors based on data in the supply chain ecosystem. The company was founded in 2016 and is based in Shenzhen, in the People's Republic of China.",
         "currency": "HKD",
         "sector": "Technology",
         "industry": "Software - Infrastructure",
@@ -374,7 +398,7 @@
     "C3IA.F": {
         "short_name": "TAOPING INC.  NEW  DL-,01",
         "long_name": "Taoping Inc.",
-        "summary": "Taoping Inc. provides cloud-based platform, resource sharing, and big data solutions to the Chinese new media, education residential community management, and elevator Internet of Things (IoT) industries in the People's Republic of China. The company operates in two segments, Cloud-based Technology and Traditional Information Technology. It offers cloud-based software as a service to automate the interactive workflow between advertising agencies and their customers, including establishing new projects, submitting advertisement proposals, revising and approving advertising proposals, processing payment online, remotely uploading advertisement content, and tracking and analyzing performance data. The company also provides project-based technology products and services for the public sector; and software and hardware with fully integrated solutions, including information technology infrastructure, Internet-enabled display technologies, and IoT platforms to customers in government, education, residential community management, media, transportation, healthcare, and other private sectors, as well as related maintenance and support services. In addition, it offers cloud-app-terminal and IoT technology based digital advertising distribution network and media resource sharing platform in the out-of-home advertising markets. Further, the company operates Taoping Net, an advertising-resources trading service platform, which connect screen owners, advertisers, and consumers; and Taoping App, which enable customers to distribute and manage ads from mobile terminals. The company was formerly known as China Information Technology, Inc. and changed its name to Taoping Inc. in June 2018. Taoping Inc. was founded in 1993 and is headquartered in Shenzhen, the People's Republic of China.",
+        "summary": "Taoping Inc. provides cloud-based platform, resource sharing, and big data solutions to the Chinese new media, education residential community management, and elevator Internet of Things (IoT) industries in the People's Republic of China. The company operates in two segments, Cloud-Based Technology and Traditional Information Technology. It offers cloud-based software as a service to automate the interactive workflow between advertising agencies and their customers, including establishing new advertising projects, submitting advertisement proposals, revising and approving advertising proposals, processing payment online, remotely uploading advertisement content, and tracking and analyzing performance data. The company also provides project-based technology products and services for the public sector; and software and hardware with integrated solutions, including information technology infrastructure, Internet-enabled display technologies, and IoT platforms to customers in government, education, residential community management, media, transportation, healthcare, and other private sectors, as well as related maintenance and support services. In addition, it offers cloud-application-terminal and IoT technology based digital advertising distribution network and media resource sharing platform in the out-of-home advertising markets. Further, the company operates Taoping Net, an advertising-resources trading service platform, which connect screen owners, advertisers, and consumers; Taoping App, which enable customers to distribute and manage ads from mobile terminals; and blockchain business. It has strategic partnership agreement with Ivy International Education Technology Co., Ltd. to develop and market new learning programs for quality education. The company was formerly known as China Information Technology, Inc. and changed its name to Taoping Inc. in June 2018. Taoping Inc. was founded in 1993 and is headquartered in Shenzhen, the People's Republic of China.",
         "currency": "EUR",
         "sector": "Technology",
         "industry": "Software - Infrastructure",
@@ -382,18 +406,6 @@
         "market": "dr_market",
         "country": "China",
         "city": "Shenzhen"
-    },
-    "CCIHY": {
-        "short_name": "CHINACACHE INTL HLDGS LTD ADS E",
-        "long_name": "ChinaCache International Holdings Ltd.",
-        "summary": "ChinaCache International Holdings Ltd., an investment holding company, provides content and application delivery services in the People's Republic of China. The company offers a portfolio of services and solutions to businesses, government agencies, and other enterprises to enhance the reliability and scalability of their online services and applications. Its services include Web page content, file transfer, and rich media streaming services; and guaranteed application services for Websites that have various features, such as online booking and ordering, real-time stock quotes, and online surveys. It also provides managed Internet data services for content and application delivery, and network infrastructure and security; content bridging services for mobile telecommunications carriers; Internet exchange and data center services; and mobile Internet solutions. In addition, the company offers various value-added services, such as geo-content acceleration service, performance evaluation modules, scalable service routing service, link anti-hijack service, user behavior analysis service, Website performance evaluation service, all-around application acceleration solution, and cloud extension solution. Further, the company provides technical consultation services; and leases mechanical equipment. Additionally, it engages in computer hardware and technology development; and real estate management businesses. The company was founded in 1998 and is headquartered in Beijing, the People's Republic of China.",
-        "currency": "USD",
-        "sector": "Technology",
-        "industry": "Software - Infrastructure",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "China",
-        "city": "Beijing"
     },
     "DTSS": {
         "short_name": "Datasea Inc.",
@@ -407,14 +419,62 @@
         "country": "China",
         "city": "Beijing"
     },
-    "TAOP": {
-        "short_name": "Taoping Inc.",
-        "long_name": "Taoping Inc.",
-        "summary": "Taoping Inc. provides cloud-based platform, resource sharing, and big data solutions to the Chinese new media, education residential community management, and elevator Internet of Things (IoT) industries in the People's Republic of China. The company operates in two segments, Cloud-based Technology and Traditional Information Technology. It offers cloud-based software as a service to automate the interactive workflow between advertising agencies and their customers, including establishing new projects, submitting advertisement proposals, revising and approving advertising proposals, processing payment online, remotely uploading advertisement content, and tracking and analyzing performance data. The company also provides project-based technology products and services for the public sector; and software and hardware with fully integrated solutions, including information technology infrastructure, Internet-enabled display technologies, and IoT platforms to customers in government, education, residential community management, media, transportation, healthcare, and other private sectors, as well as related maintenance and support services. In addition, it offers cloud-app-terminal and IoT technology based digital advertising distribution network and media resource sharing platform in the out-of-home advertising markets. Further, the company operates Taoping Net, an advertising-resources trading service platform, which connect screen owners, advertisers, and consumers; and Taoping App, which enable customers to distribute and manage ads from mobile terminals. The company was formerly known as China Information Technology, Inc. and changed its name to Taoping Inc. in June 2018. Taoping Inc. was founded in 1993 and is headquartered in Shenzhen, the People's Republic of China.",
+    "FTC.AX": {
+        "short_name": "FIN CHAIN CDI 1:1",
+        "long_name": "FinTech Chain Limited",
+        "summary": "FinTech Chain Limited, an investment holding company, engages in the provision of system development and information technology services in the People's Republic of China. It also provides point-of-sale machines. The company's products comprise Payment T+ that includes prepaid card, integrated payment cashier, and commission assignment system, as well as POS P acquiring system; Clearing F.E.A, such as bank identification number based promotion tool system, traceable transaction electronic authentication platform, horizontal alliance clearing and settlement platform, and universal points platform; Q-Life, a web-based community service system that provides digital value-added services for property management and convenient life-support services for community residents, T-Linx, an integrated payment acquiring infrastructure, community O2O service platform, and e-commerce supply chain system services; and T-PAD, T-BOX, TL-007, TL 008/009, and T-Linx Remix Mini hardware products. In addition, it offers investment management and consultancy services. It offers its solutions for banking, catering, department store, tourism, and retail industries, as well as for community management. The company was formerly known as TTG FinTech Limited and changed its name to FinTech Chain Limited in April 2018. FinTech Chain Limited was founded in 2010 and is based in Shenzhen, the People's Republic of China.",
+        "currency": "AUD",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "China",
+        "city": "Shenzhen"
+    },
+    "SOS": {
+        "short_name": "SOS Limited",
+        "long_name": "SOS Limited",
+        "summary": "SOS Limited, a technology company, provides marketing data, technology, and solutions for emergency rescue services to corporate and individual members. It operates SOS cloud emergency rescue service software as a service platform that offers basic cloud products, such as medical rescue, car rescue, financial rescue, and mutual assistance rescue cards; cooperative cloud products, including information rescue center, intelligent big data, and intelligent software and hardware; and information cloud products, such as News Today and E-Commerce Today. The company serves insurance companies, financial institutions, medical institutions, healthcare providers, auto manufacturers, security providers, senior living assistance providers, and other service providers in the emergency rescue services industry. SOS Limited is based Qingdao, the People's Republic of China.",
         "currency": "USD",
         "sector": "Technology",
         "industry": "Software - Infrastructure",
-        "exchange": "NMS",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "China",
+        "city": "Qingdao"
+    },
+    "TAOP": {
+        "short_name": "Taoping Inc.",
+        "long_name": "Taoping Inc.",
+        "summary": "Taoping Inc. provides cloud-based platform, resource sharing, and big data solutions to the Chinese new media, education residential community management, and elevator Internet of Things (IoT) industries in the People's Republic of China. The company operates in two segments, Cloud-based Technology and Traditional Information Technology. It offers cloud-based software as a service to automate the interactive workflow between advertising agencies and their customers, including establishing new projects, submitting advertisement proposals, revising and approving advertising proposals, processing payment online, remotely uploading advertisement content, and tracking and analyzing performance data. The company also provides project-based technology products and services for the public sector; and software and hardware with fully integrated solutions, including information technology infrastructure, Internet-enabled display technologies, and IoT platforms to customers in government, education, residential community management, media, transportation, healthcare, and other private sectors, as well as related maintenance and support services. In addition, it offers cloud-app-terminal and IoT technology based digital advertising distribution network and media resource sharing platform in the out-of-home advertising markets. Further, the company operates Taoping Net, an advertising-resources trading service platform, which connect screen owners, advertisers, and consumers; Taoping App, which enable customers to distribute and manage ads from mobile terminals; and blockchain business. The company was formerly known as China Information Technology, Inc. and changed its name to Taoping Inc. in June 2018. Taoping Inc. was founded in 1993 and is headquartered in Shenzhen, the People's Republic of China.",
+        "currency": "USD",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "exchange": "NCM",
+        "market": "us_market",
+        "country": "China",
+        "city": "Shenzhen"
+    },
+    "TUYA": {
+        "short_name": "Tuya Inc.",
+        "long_name": "Tuya Inc.",
+        "summary": "Tuya Inc. engages in the cloud and application development business. It provides purpose-built Internet of Things (IoT) cloud platform that delivers a suite of offerings, including Platform-as-a-Service (PaaS) and Software-as-a-Service (SaaS) to original equipment manufacturers, industry operators, and system integrators. The company's IoT PaaS offering enables businesses and developers to develop, launch, manage, and monetize software-enabled devices and services; and SaaS offering enables businesses to deploy, connect, and manage various types of smart devices. It also provides a wide range of cloud-based value-added services to businesses, developers, and end users to develop and manage IoT experiences. The company offers its solutions to smart real estate, smart business, healthcare, education, energy, and agriculture industry. Tuya Inc. was founded in 2014 and is based in Hangzhou, China with additional locations at Santa Clara, California; Gurugram, India; Dusseldorf, Germany; Antioquia, Colombia; Tokyo, Japan; Shenzhen, China; and Los Angeles, California.",
+        "currency": "USD",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "China",
+        "city": "Hangzhou"
+    },
+    "YHEKF": {
+        "short_name": "YEAHKA LTD",
+        "long_name": "Yeahka Limited",
+        "summary": "Yeahka Limited operates payment-based technology platform that provides payment and business services to merchants and consumers in China. It offers one-stop payment services, which include app-based and traditional payment services comprising mobile payment and bank card acquiring products, as well as an intelligent risk control platform for controlling and managing mobile payments. The company also provides technology-enabled business services, including various merchant SaaS products and marketing services that offer a variety of intelligent business solutions, and intelligent operation and management services; and a payment-based advertising platform, which provides various marketing and promotional tools. In addition, it offers fintech services for financial needs of customers. Yeahka Limited was incorporated in 2011 and is headquartered in Shenzhen, the People's Republic of China.",
+        "currency": "USD",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure",
+        "exchange": "PNK",
         "market": "us_market",
         "country": "China",
         "city": "Shenzhen"

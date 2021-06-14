@@ -3,10 +3,20 @@
         "short_name": "American Customer Satisfaction ",
         "long_name": "American Customer Satisfaction ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the performance of the American Customer Satisfaction Investable Index.\n Under normal circumstances, at least 80% of the fund&#39;s total assets will be invested in the component securities of the index. Construction of the index begins with over 400 ACSI Companies across 46 industries and 10 economic sectors. The initial universe is then screened to eliminate companies whose stock is not principally listed on a U.S. exchange, whose market capitalization is less than $1 billion, or for which the Customer Satisfaction Data is statistically insignificant.",
+        "summary": "The investment seeks to track the performance of the American Customer Satisfaction Investable Index.\n Under normal circumstances, at least 80% of the fund&#39;s net assets, plus borrowings for investment purposes, will be invested in investments that are tied economically to the United States. Construction of the index begins with over 400 ACSI Companies across 46 industries and 10 economic sectors. The initial universe is then screened to eliminate companies whose stock is not principally listed on a U.S. exchange, whose market capitalization is less than $1 billion, or for which the Customer Satisfaction Data is statistically insignificant.",
         "category": "Large Blend",
         "family": "Exponential ETFs",
         "exchange": "BTS",
+        "market": "us_market"
+    },
+    "ACTV": {
+        "short_name": "LeaderShares Activist Leaders E",
+        "long_name": "LeaderShares Activist Leaders ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to generate long-term capital growth.\n The fund will be invested in equity securities of companies listed on a U.S. exchange with market capitalizations of at least $1 billion at the time of initial purchase. It may focus its investments in a particular sector, industry or group of industries. The fund may utilize derivatives, such as equity options and total return swap agreements, to seek to achieve its objective and for hedging purposes.",
+        "category": "Large Blend",
+        "family": "LeaderShares",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "AESR": {
@@ -17,6 +27,26 @@
         "category": "Large Blend",
         "family": "Anfield",
         "exchange": "BTS",
+        "market": "us_market"
+    },
+    "ALTL": {
+        "short_name": "Pacer Lunt Large Cap Alternator",
+        "long_name": "Pacer Lunt Large Cap Alternator ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Lunt Capital U.S. Large Cap Equity Rotation Index.\n Under normal circumstances, at least 80% of the fund\u00e2\u0080\u0099s total assets (exclusive of collateral held from securities lending) will be invested in the component securities of its underlying index or in one or more ETFs that track the performance of all or a portion of such component securities in the same approximate proportion as in the fund\u00e2\u0080\u0099s underlying index. The index uses an objective, rules-based methodology to provide exposure to large-capitalization U.S. companies. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Pacer",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "ARMR": {
+        "short_name": "Exchange Listed Funds Trust Arm",
+        "long_name": "Armor US Equity Index ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the Armor US Equity Index.\n The fund will normally invest at least 80% of its total assets in securities of the index. The index generally is comprised of one or more exchange-traded funds (\u00e2\u0080\u009cETFs\u00e2\u0080\u009d), each of which is designed to track the performance of common stocks included in the following sectors of the U.S. equity market: communication services, consumer discretionary, consumer staples, energy, financials, health care, industrials, information technology, materials, real estate, and utilities.",
+        "category": "Large Blend",
+        "family": "Exchange Traded Concepts",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "AZAA": {
@@ -63,7 +93,7 @@
         "short_name": "AllianzIM U.S. Large Cap Buffer",
         "long_name": "AllianzIM U.S. Large Cap Buffer20 Apr ETF",
         "currency": "USD",
-        "summary": "The investment seeks to match, at the end of the current Outcome Period, the returns of the S&P 500 Price Index, up to a specified upside Cap, while providing a Buffer against the first 20% of S&P 500 Price Index losses.\n Under normal market conditions, the fund invests at least 80% of its net assets in instruments with economic characteristics similar to U.S. large cap equity securities. Specifically, the manager intends to invest substantially all of the fund&#39;s assets in FLexible EXchange Options (\u00e2\u0080\u009cFLEX Options\u00e2\u0080\u009d) that reference the S&P 500 Price Index. The fund is non-diversified.",
+        "summary": "The investment seeks to match, at the end of the current Outcome Period, the returns of the S&P 500 Price Index, up to a specified upside Cap, while providing a Buffer against the first 20% of S&P 500 Price Index losses.\n Under normal market conditions, the fund invests at least 80% of its net assets in instruments with economic characteristics similar to U.S. large cap equity securities. Specifically, the manager intends to invest substantially all of the fund&#39;s assets in FLexible EXchange Options (\"FLEX Options\") that reference the S&P 500 Price Index. The fund is non-diversified.",
         "category": "Large Blend",
         "family": "AllianzIM",
         "exchange": "PCX",
@@ -103,9 +133,19 @@
         "short_name": "Inspire 100 ETF",
         "long_name": "Inspire 100 ETF",
         "currency": "USD",
-        "summary": "The investment seeks to replicate investment results that generally correspond, before fees and expenses, to the performance of the Inspire 100 Index.\n The fund generally will invest at least 80% of its total assets in the component securities of the Inspire 100 Index. The index provider selects domestic large capitalization equity securities using the index provider&#39;s Inspire Impact Score\u00c2\u00ae, a proprietary selection methodology that is designed to assign a score to a particular security based on the security&#39;s alignment with biblical values and the positive impact that company has on the world through various environmental, social and governance criterion.",
+        "summary": "The investment seeks to replicate investment results that generally correspond, before fees and expenses, to the performance of the Inspire 100 Index.\n The fund generally invests at least 80% of its total assets in the component securities of the Inspire 100 Index. The index provider selects domestic large capitalization equity securities using the index provider&#39;s Inspire Impact Score\u00c2\u00ae, a proprietary selection methodology that is designed to assign a score to a particular security based on the security&#39;s alignment with biblical values and the positive impact that company has on the world through various environmental, social and governance criterion.",
         "category": "Large Blend",
         "family": "Inspire",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "BKLC": {
+        "short_name": "BNY Mellon US Large Cap Core Eq",
+        "long_name": "BNY Mellon US Large Cap Core Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of the Morningstar US Large Cap IndexSM.\n Under normal circumstances, the fund generally invests in all of the stocks in the index in proportion to their weighting in the index. The index is a float-adjusted market capitalization weighted index designed to measure the performance of U.S. large-capitalization stocks. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "BNY Mellon",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -137,6 +177,16 @@
         "category": "Large Blend",
         "family": "Alpha Architect",
         "exchange": "BTS",
+        "market": "us_market"
+    },
+    "CATH": {
+        "short_name": "Global X S&P 500 Catholic Value",
+        "long_name": "Global X S&P 500 Catholic Values ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, of the S&P 500\u00c2\u00ae Catholic Values Index.\n The fund invests at least 80% of its total assets in the securities of the underlying index. The underlying index is based on the S&P 500\u00c2\u00ae Index, and generally comprises approximately 500 or less U.S. listed common stocks. From this starting universe, constituents are screened to exclude companies involved in activities which are perceived to be inconsistent with Catholic values as outlined in the Socially Responsible Investment Guidelines of the United States Conference of Catholic Bishops.",
+        "category": "Large Blend",
+        "family": "Global X Funds",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "CFA": {
@@ -179,14 +229,34 @@
         "exchange": "BTS",
         "market": "us_market"
     },
+    "DBOC": {
+        "short_name": "Innovator Double Stacker 9 Buff",
+        "long_name": "Innovator Double Stacker 9 Buffer ETF \u2013 October",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that match those of the SPDR S&P 500 ETF Trust.\n The fund will invest substantially all of its assets in a portfolio of FLexible EXchange\u00c2\u00ae Options (\u00e2\u0080\u009cFLEX Options\u00e2\u0080\u009d) that reference both the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust (\u00e2\u0080\u009cS&P 500 ETF\u00e2\u0080\u009d) and the Invesco QQQ TrustSM, Series 1 (the \u00e2\u0080\u009cQQQ ETF,\u00e2\u0080\u009d and together with the S&P 500 ETF, the \u00e2\u0080\u009cUnderlying ETFs\u00e2\u0080\u009d). Its assets will be principally composed of FLEX Options, the value of which is derived from the performance of the underlying reference asset, the applicable Underlying ETF\u00e2\u0080\u0099s share price. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Innovator ETFs",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
     "DEF": {
         "short_name": "Invesco Defensive Equity ETF",
         "long_name": "Invesco Defensive Equity ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Invesco Defensive Equity Index (the \"underlying index\").\n The fund generally will invest at least 80% of its total assets in the securities that comprise the underlying index. The underlying index is comprised of a subset of securities from the S&P 500\u00c2\u00ae Index (the \"S&P 500\"). The fund will concentrate its investments in securities of issuers in any one industry or group of industries only to the extent that the underlying index reflects a concentration in that industry or group of industries. The fund is non-diversified.",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Invesco Defensive Equity Index (the \"underlying index\").\n The fund generally will invest at least 80% of its total assets in the securities that comprise the underlying index. The underlying index is comprised of a subset of securities from the S&P 500\u00c2\u00ae Index (the \"S&P 500\"). The fund will concentrate its investments in securities of issuers in any one industry or group of industries only to the extent that the underlying index reflects a concentration in that industry or group of industries.",
         "category": "Large Blend",
         "family": "Invesco",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "DEMZ": {
+        "short_name": "Democratic Large Cap Core ETF",
+        "long_name": "Democratic Large Cap Core ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Democratic Large Cap Core Index.\n The index is a subset of the S&P 500\u00c2\u00ae Index designed to provide exposure to large capitalization companies that make political contributions to Democratic Party candidates and political action committees above a certain threshold. Under normal circumstances, the fund will invest at least 80% of its net assets (plus the amount of any borrowings for investment purposes) in securities of companies included in the index.",
+        "category": "Large Blend",
+        "family": "DEMZ",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "DFAU": {
@@ -263,30 +333,20 @@
         "short_name": "Distillate U.S. Fundamental Sta",
         "long_name": "Distillate U.S. Fundamental Stability & Value ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the performance, before fees and expenses, of the Distillate U.S. Fundamental Stability & Value Index (the \"index\").\n Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of any collateral held from securities lending) will be invested in the component securities of the index. The index was developed in 2018 by Distillate Capital Partners LLC, the fund&#39;s investment adviser and index provider (the \"Adviser\"), and uses an objective, rules-based methodology to measure the performance of U.S.-listed, large-capitalization equity securities, selected based on certain fundamental factors.",
+        "summary": "The investment seeks to track the performance, before fees and expenses, of the Distillate U.S. Fundamental Stability & Value Index (the \"index\").\n Under normal circumstances, at least 80% of the fund&#39;s net assets, plus borrowings for investment purposes, will be invested in U.S. assets. The index was developed in 2018 by Distillate Capital Partners LLC, the fund&#39;s investment adviser and index provider (the \"Adviser\"), and uses an objective, rules-based methodology to measure the performance of U.S.-listed, large-capitalization equity securities, selected based on certain fundamental factors.",
         "category": "Large Blend",
         "family": "Distillate Capital Partners",
         "exchange": "PCX",
         "market": "us_market"
     },
-    "DUAL": {
-        "short_name": "North Shore Dual Share Class ET",
-        "long_name": "North Shore Dual Share Class ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the North Shore Dual Share Class Index (the \"index\").\n The fund normally invests at least 80% of its total assets in securities of the index. The index is designed to track the performance of \"dual class stock\" companies - companies that issue at least two share classes of common stock, generally one to the investing public, and the other to the company&#39;s founders and executives (\"Dual Share Class Companies\"). It employs a \"passive management\" investment strategy designed to track the performance of the index.",
-        "category": "Large Blend",
-        "family": "Exchange Traded Concepts",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
     "DUSA": {
-        "short_name": "Davis Select U.S. Equity ETF",
+        "short_name": "Davis Fundamental ETF Trust Dav",
         "long_name": "Davis Select U.S. Equity ETF",
         "currency": "USD",
         "summary": "The investment seeks long-term capital growth and capital preservation.\n Under normal market conditions, the fund will invest at least 80% of its net assets plus any borrowings for investment purposes in equity securities issued by U.S. companies. The fund&#39;s portfolio generally contains between 15 and 35 companies. It may invest a portion of its assets in financial services companies. The fund may also invest in mid- and small-capitalization companies, which the manager considers to be those companies with less than $10 billion in market capitalization. It may invest up to 20% of net assets in non-U.S. companies. The fund is non-diversified.",
         "category": "Large Blend",
         "family": "Davis ETFs",
-        "exchange": "NGM",
+        "exchange": "BTS",
         "market": "us_market"
     },
     "DVOL": {
@@ -296,17 +356,17 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an index called the Dorsey Wright Momentum Plus Low Volatility Index (the \"index\").\n Under normal conditions, the fund will invest at least 90% of its net assets (including investment borrowings) in the equity securities that comprise the index. The index is a rules-based equity index designed to track the overall performance of the 50 stocks comprising the NASDAQ US Large Mid Index that exhibit the lowest levels of volatility while still maintaining high levels of \"relative strength.\" The fund is non-diversified.",
         "category": "Large Blend",
         "family": "First Trust",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "DWPP": {
         "short_name": "First Trust Dorsey Wright Peopl",
         "long_name": "First Trust Dorsey Wright People's Portfolio ETF",
         "currency": "USD",
-        "summary": "The investment seeks results that correspond generally to an index called the Nasdaq Dorsey Wright People&#39;s Portfolio Index.\n The fund will normally invest at least 80% of its total assets (including investment borrowings) in the common stocks or an exchange-traded fund (\"ETF\") that comprise the Index. The index is a modified market-capitalization weighted index designed to tactically allocate exposure to one of three indices: (i) Nasdaq US 500 Large Cap Index; (ii) Nasdaq US 500 Large Cap Equal Weight Index; or (iii) First Trust Enhanced Short Maturity ETF (\"FTSM\") (each, an \"Underlying Allocation\"), based on daily relative strength readings.",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield of an index called the Nasdaq Dorsey Wright People&#39;s Portfolio Index.\n The fund will normally invest at least 80% of its total assets in the common stocks or an exchange-traded fund (\"ETF\") that comprise the index. The index is a modified market-capitalization weighted index designed to tactically allocate exposure to one of three allocations: (i) Nasdaq US 500 Large Cap Index; (ii) Nasdaq US 500 Large Cap Equal Weight Index; or (iii) First Trust Enhanced Short Maturity ETF (\"FTSM\") (each, an \"Underlying Allocation\"), based on daily relative strength readings.",
         "category": "Large Blend",
         "family": "First Trust",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "ECOZ": {
@@ -446,7 +506,7 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the Nasdaq AlphaDEX\u00c2\u00ae Large Cap Core Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks that comprise the index. The index is designed to select stocks from the NASDAQ US 500 Large Cap Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
         "category": "Large Blend",
         "family": "First Trust",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "FLQL": {
@@ -469,16 +529,6 @@
         "exchange": "BTS",
         "market": "us_market"
     },
-    "FMK": {
-        "short_name": "First Trust Mega Cap AlphaDEX F",
-        "long_name": "First Trust Mega Cap AlphaDEX Fund",
-        "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the Nasdaq AlphaDEX\u00c2\u00ae Mega Cap Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks that comprise the index. The index is designed to select mega cap stocks from the NASDAQ US 500 Large Cap Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
-        "category": "Large Blend",
-        "family": "First Trust",
-        "exchange": "NMS",
-        "market": "us_market"
-    },
     "FTCS": {
         "short_name": "First Trust Capital Strength ET",
         "long_name": "First Trust Capital Strength ETF",
@@ -497,6 +547,16 @@
         "category": "Large Blend",
         "family": "Global Beta",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "GSEW": {
+        "short_name": "Goldman Sachs Equal Weight U.S.",
+        "long_name": "Goldman Sachs Equal Weight U.S. Large Cap Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the Solactive US Large Cap Equal Weight Index (GTR).\n The fund seeks to achieve its investment objective by investing at least 80% of its assets (exclusive of collateral held from securities lending) in securities included in its underlying index. The index consists of equity securities of large capitalization U.S. issuers. The index is an equal-weight version of the Solactive US Large Cap Index, a market capitalization-weighted index that includes equity securities of approximately 500 of the largest U.S. companies.",
+        "category": "Large Blend",
+        "family": "Goldman Sachs",
+        "exchange": "BTS",
         "market": "us_market"
     },
     "GSLC": {
@@ -519,6 +579,26 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "GSUS": {
+        "short_name": "Goldman Sachs MarketBeta U.S. E",
+        "long_name": "Goldman Sachs MarketBeta US Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the Solactive GBS United States Large & Mid Cap Index.\n The fund invests at least 80% of its assets in securities included in its underlying index, in depositary receipts representing securities included in its underlying index and in underlying stocks in respect of depositary receipts included in its underlying index. The index consists of equity securities of large and mid-capitalization equity issuers covering approximately the largest 85% of the free-float market capitalization in the United States.",
+        "category": "Large Blend",
+        "family": "Goldman Sachs",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "HLAL": {
+        "short_name": "Wahed FTSE USA Shariah ETF",
+        "long_name": "Wahed FTSE USA Shariah ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the FTSE USA Shariah Index.\n The index is composed of common stocks of large and mid-capitalization U.S. companies the characteristics of which meet the requirements of the Shariah and are consistent with Islamic principles as interpreted by subject-matter experts. Under normal circumstances, at least 80% of its total assets will be invested in the component securities of the index. The fund is non-diversified.",
+        "category": "Large Blend",
+        "family": "Wahed Invest",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
     "HUSV": {
         "short_name": "First Trust Exchange-Traded Fun",
         "long_name": "First Trust Horizon Managed Volatility Domestic ETF",
@@ -533,9 +613,29 @@
         "short_name": "U.S. Equity Cumulative Dividend",
         "long_name": "Metaurus U.S. Equity Cumulative Dividends Fund-Series 2027",
         "currency": "USD",
-        "summary": "The investment seeks investment results that correspond to the performance of the Metaurus U.S. Cumulative Dividends Index-Series 2027 Index over each calendar year so as to provide Shareholders with returns designed to replicate the dividends on constituent companies of the S&P 500, without exposure to the underlying securities.\n The advisor intends primarily to invest its assets in the component instruments of the index, as well as in cash and/or cash equivalents. The manager expects to pay monthly cash distributions to its Shareholders throughout each calendar year.",
+        "summary": "The investment seeks investment results that, before fees and expenses, correspond to the performance of the Metaurus U.S. Cumulative Dividends Index\u00e2\u0080\u0094Series 2027 (the \u00e2\u0080\u009cMetaurus Dividend Index\u00e2\u0080\u009d) over each calendar year.\n The advisor intends primarily to invest its assets in the component instruments of the index, as well as in cash and/or cash equivalents. The component instruments of the Metaurus Dividend Index consist of U.S. Treasury Securities and long positions in annual futures contracts listed on the CME that provide exposure to dividends paid on the S&P 500 constituent companies pro rata for each year of the life of the fund.",
         "category": "Large Blend",
         "family": "Metaurus",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "ILCB": {
+        "short_name": "iShares Morningstar Large-Cap E",
+        "long_name": "iShares Morningstar U.S. Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Morningstar\u00c2\u00ae US Large-Mid Cap IndexSM composed of large- and mid-capitalization U.S. equities.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. The underlying index measures the performance of stocks issued by large-mid capitalization companies that have exhibited similar \u00e2\u0080\u009cgrowth\u00e2\u0080\u009d and \u00e2\u0080\u009cvalue\u00e2\u0080\u009d characteristics, as determined by Morningstar, Inc.\u00e2\u0080\u0099s (\u00e2\u0080\u009cMorningstar\u00e2\u0080\u009d or the \u00e2\u0080\u009cindex provider\u00e2\u0080\u009d) proprietary index methodology.",
+        "category": "Large Blend",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IQSU": {
+        "short_name": "IQ Candriam ESG US Equity ETF",
+        "long_name": "IQ Candriam ESG US Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that track (before fees and expenses) the price and yield performance of its underlying index, the IQ Candriam ESG US Equity Index.\n The Advisor employs a \"passive management\"\u00e2\u0080\u0089-\u00e2\u0080\u0089or indexing\u00e2\u0080\u0089-\u00e2\u0080\u0089investment approach designed to track the performance of the underlying index. The underlying index is designed to deliver exposure to equity securities of companies meeting environmental, social and corporate governance (ESG) criteria developed by Candriam and weighted using a market capitalization weighting methodology.",
+        "category": "Large Blend",
+        "family": "IndexIQ",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -579,6 +679,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "IWL": {
+        "short_name": "iShares Russell Top 200 ETF",
+        "long_name": "iShares Russell Top 200 ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Russell Top 200\u00c2\u00ae Index, which measures the performance of the largest capitalization sector of the U.S. equity market.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents, including shares of money market funds advised by the advisor or its affiliates, as well as in securities not included in the underlying index, but which the advisor believes will help the fund track the underlying index.",
+        "category": "Large Blend",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "IWV": {
         "short_name": "iShares Russell 3000 ETF",
         "long_name": "iShares Russell 3000 ETF",
@@ -599,14 +709,34 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "JANZ": {
-        "short_name": "TrueShares Structured Outcome (",
-        "long_name": "TrueShares Structured Outcome (January) ETF",
+    "JHML": {
+        "short_name": "John Hancock Multifactor Large ",
+        "long_name": "John Hancock Multifactor Large Cap ETF",
         "currency": "USD",
-        "summary": "The investment seeks to provide investors with returns that track those of the S&P 500 Price Return Index while seeking to provide a buffer against the first 8% to 12% of S&P 500 Price Index losses, over the period from January 1, 2021 to December 31, 2021.\n The fund is an actively-managed ETF that seeks to achieve its investment objective by investing substantially all of its assets in options that reference the S&P 500 Price Index. It will purchase call options and sell put options on the index or an ETF that tracks the S&P 500 Price Index on each Initial Investment Day with an expiration on the next Roll Date. The fund is non-diversified.",
+        "summary": "The investment seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the John Hancock Dimensional Large Cap Index.\n The fund normally invests at least 80% of its net assets (plus any borrowings for investment purposes) in securities that compose the fund&#39;s index. The index is designed to comprise a subset of securities in the U.S. Universe issued by companies whose market capitalizations are larger than that of the 801st largest U.S. company at the time of reconstitution.",
         "category": "Large Blend",
-        "family": "TrueShares",
-        "exchange": "BTS",
+        "family": "John Hancock",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "JMIN": {
+        "short_name": "JPMorgan U.S. Minimum Volatilit",
+        "long_name": "JPMorgan U.S. Minimum Volatility ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that closely correspond, before fees and expenses, to the performance of the JP Morgan US Minimum Volatility Index.\n The fund will invest at least 80% of its assets in securities included in the underlying index. \"Assets\" means net assets, plus the amount of borrowing for investment purposes. The underlying index measures the performance of U.S. equity securities selected using a rules-based process that is designed so the underlying index targets lower volatility than the Russell 1000 Index.",
+        "category": "Large Blend",
+        "family": "JPMorgan",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "JPUS": {
+        "short_name": "JPMorgan Diversified Return U.S",
+        "long_name": "JPMorgan Diversified Return U.S. Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that closely correspond, before fees and expenses, to the performance of the JP Morgan Diversified Factor US Equity Index.\n The fund will invest at least 80% of its net assets in securities included in the underlying index. The underlying index is comprised of U.S. equity securities selected to represent a diversified set of factor characteristics: value, momentum, and quality. The fund&#39;s securities are large- and mid-cap equity securities of U.S. companies, including common stock, preferred stock and real estate investment trusts.",
+        "category": "Large Blend",
+        "family": "JPMorgan",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "JQUA": {
@@ -639,6 +769,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "KNG": {
+        "short_name": "FT Cboe Vest S&P 500 Dividend A",
+        "long_name": "FT Cboe Vest S&P 500 Dividend Aristocrats Target Income ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield of an equity index called the Cboe S&P 500\u00c2\u00ae Dividend Aristocrats Target Income Index Monthly Series.\n The fund invests at least 80% of its total assets in the common stocks and call options that comprise the index. The index is designed with the primary goal of generating an annualized level of income from stock dividends and option premiums that is approximately 3% over the annual dividend yield of the S&P 500\u00c2\u00ae Index and a secondary goal of generating capital appreciation based on the price returns of the equity securities contained in the index. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "CBOE Vest",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
     "KVLE": {
         "short_name": "KraneShares Trust KFA Value Lin",
         "long_name": "KFA Value Line Dynamic Core Equity Index ETF",
@@ -646,6 +786,26 @@
         "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the price and yield performance of a specific equity securities index, the Value Line\u00c2\u00aeDynamic Core Equity Index.\n Under normal circumstances, the fund will invest at least 80% of its total assets in components of the underlying index. It may invest up to 20% of its assets in instruments that are not included in the underlying index, but that Fund&#39;s adviser, Krane Funds Advisors, LLC, believes will help the fund track the underlying index. The fund is non-diversified.",
         "category": "Large Blend",
         "family": "KraneShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "LCTU": {
+        "short_name": "BlackRock U.S. Carbon Transitio",
+        "long_name": "BlackRock U.S. Carbon Transition Readiness ETF",
+        "currency": "USD",
+        "summary": "The investment seeks long-term capital appreciation by investing in large- and mid-capitalization U.S. equity securities that may be better positioned to benefit from the transition to a low-carbon economy.\n The fund seeks to outperform the price and yield performance of the Russell 1000 \u00c2\u00aeIndex by optimizing for LCETR scores criteria based on proprietary BFA research. It seeks to invest at least 80% of its net assets in equity securities of issuers listed in the United States of America. The index is a subset of the Russell 3000 Index, which measures the performance of the broad U.S. equity market. The fund is non-diversified.",
+        "category": "Large Blend",
+        "family": "BlackRock",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "LGH": {
+        "short_name": "HCM Defender 500 Index ETF",
+        "long_name": "HCM Defender 500 Index ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond, before fees and expenses, generally to the performance of the HCM Defender 500 Index (the \"HCM 500 index\").\n The fund seeks to achieve its investment objective by investing at least 80% of its net assets, including borrowings for investment purposes but exclusive of collateral held from securities lending, in securities included in the HCM 500 index. The HCM 500 index seeks to outperform the Solactive US Large Cap Index using a proprietary methodology.",
+        "category": "Large Blend",
+        "family": "Howard Capital Management",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -659,6 +819,76 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "LSAF": {
+        "short_name": "LeaderShares AlphaFactor US Cor",
+        "long_name": "LeaderSharesTM AlphaFactor US Core Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally, before fees and expenses, to the performance of the AlphaFactor\u00c2\u00ae US Core Equity Index.\n Under normal circumstances, at least 80% of the fund&#39;s net assets, including any borrowings for investment purposes, will be invested in a diversified portfolio of equity securities of U.S. common stocks included in the index. The index utilizes a quantitative rules-based investment methodology that applies a multi-factor ranking process and is focused on the largest 1,000 U.S. common stocks based on market capitalization.",
+        "category": "Large Blend",
+        "family": "Redwood",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "LVOL": {
+        "short_name": "American Century Low Volatility",
+        "long_name": "American Century Low Volatility ETF",
+        "currency": "USD",
+        "summary": "The investment seeks capital appreciation.\n The fund generally invests in common stocks of U.S. companies that have a market capitalization greater than $2 billion. It seeks to deliver a lower realized portfolio volatility than its benchmark, the S&P 500\u00c2\u00ae Index, by utilizing a stock selection process that expands on traditional measures of price volatility by including measures of asymmetric volatility and seeking securities of businesses that demonstrate consistent cash-flows, stable operations, and strong balance sheets. The fund is an actively managed ETF that does not seek to replicate the performance of a specified index.",
+        "category": "Large Blend",
+        "family": "American Century Investments",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "LYFE": {
+        "short_name": "2ndVote Life Neutral Plus ETF",
+        "long_name": "2ndVote Life Neutral Plus ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to generate long-term total return.\n The fund is an actively managed ETF. Under normal circumstances, the fund seeks to meet its investment objective by primarily investing its net assets, plus borrowings for investment purposes, if any, in the equity securities of large- and mid- capitalization U.S. companies that meet its pro-life social criteria. It uses a fundamental security analysis and proprietary social scoring system to select the equity securities.",
+        "category": "Large Blend",
+        "family": "2nd Vote Funds",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "MGC": {
+        "short_name": "Vanguard Mega Cap ETF",
+        "long_name": "Vanguard Mega Cap Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of large-capitalization stocks in the United States.\n The fund employs an indexing investment approach designed to track the performance of the CRSP US Mega Cap Index. The index is a float-adjusted, market-capitalization-weighted index designed to measure equity market performance of mega-capitalization stocks in the United States. The Advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+        "category": "Large Blend",
+        "family": "Vanguard",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "MOAT": {
+        "short_name": "VanEck Vectors Morningstar Wide",
+        "long_name": "VanEck Vectors Morningstar Wide Moat ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the Morningstar\u00c2\u00ae Wide Moat Focus IndexSM.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index is comprised of securities issued by companies that Morningstar, Inc. (\"Morningstar\") determines to have sustainable competitive advantages based on a proprietary methodology that considers quantitative and qualitative factors (\"wide moat companies\").",
+        "category": "Large Blend",
+        "family": "VanEck",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "MXDU": {
+        "short_name": "Nationwide Maximum Diversificat",
+        "long_name": "Nationwide Maximum Diversification U.S. Core Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the TOBAM Maximum Diversification USA Index (the \"index\").\n The advisor attempts to invest all, or substantially all, of its assets in the component securities that make up the index. Normally, at least 80% of the fund&#39;s total assets will be invested in the component securities of the index. The index is a rules-based index that is designed to create a more diversified equity portfolio of the common and preferred stock of large and mid-capitalization U.S. companies relative to traditional market capitalization weighted benchmarks.",
+        "category": "Large Blend",
+        "family": "Nationwide",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "NAPR": {
+        "short_name": "Innovator Nasdaq-100 Power Buff",
+        "long_name": "Innovator Nasdaq-100 Power Buffer ETF - April",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that match the price return of the Invesco QQQ TrustSM.\n The fund invests at least 80% of its net assets in FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the Invesco QQQ TrustSM. FLEX Options are exchange-traded options contracts with uniquely customizable terms. Although guaranteed for settlement by the Options Clearing Corporation (the \"OCC\"), FLEX Options are still subject to counterparty risk with the OCC and may be less liquid than more traditional exchange-traded options. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Innovator ETFs",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
     "NIFE": {
         "short_name": "Direxion Fallen Knives ETF",
         "long_name": "Direxion Fallen Knives ETF",
@@ -669,16 +899,6 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "NJAN": {
-        "short_name": "Innovator ETFs Trust Innovator ",
-        "long_name": "Innovator Nasdaq-100 Power Buffer ETF - January",
-        "currency": "USD",
-        "summary": "The investment seeks to provide investors with returns that match the price return of the Invesco QQQ TrustSM, Series 1.\n The fund invests at least 80% of its net assets in FLexible Exchange\u00c2\u00ae Options (\"FLEX Options\") that reference the Invesco QQQ TrustSM, Series 1 (the \"Underlying ETF\"). FLEX Options are exchange-traded options contracts with uniquely customizable terms. In general, an option contract is an agreement between a buyer and seller that gives the purchaser of the option the right to buy or sell a particular asset at a specified future date at an agreed upon price. It is non-diversified.",
-        "category": "Large Blend",
-        "family": "Innovator ETFs",
-        "exchange": "BTS",
-        "market": "us_market"
-    },
     "NOBL": {
         "short_name": "ProShares S&P 500 Dividend Aris",
         "long_name": "ProShares S&P 500 Dividend Aristocrats ETF",
@@ -686,6 +906,26 @@
         "summary": "The investment seeks investment results, before fees and expenses, that track the performance of the S&P 500\u00c2\u00ae Dividend Aristocrats\u00c2\u00ae Index (the \"index\").\n The fund will invest at least 80% of its total assets in component securities of the index. The index contains a minimum of 40 stocks, which are equally weighted, and no single sector is allowed to comprise more than 30% of the index weight. It seeks to remain fully invested at all times in securities and/or financial instruments that, in combination, provide exposure to the returns of the index without regard to market conditions, trends or direction.",
         "category": "Large Blend",
         "family": "ProShares",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "NTSX": {
+        "short_name": "WisdomTree U.S. Efficient Core ",
+        "long_name": "WisdomTree U.S. Efficient Core Fund",
+        "currency": "USD",
+        "summary": "The investment seeks total return.\n The fund is actively managed using a models-based approach. It seeks to achieve its investment objective by investing in large-capitalization U.S. equity securities and U.S. Treasury futures contracts. Under normal circumstances, the fund will invest approximately 90% of its net assets in U.S. equity securities. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "WisdomTree",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "NULC": {
+        "short_name": "Nuveen ESG Large-Cap ETF",
+        "long_name": "Nuveen ESG Large-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results, before fees and expenses, of the TIAA ESG USA Large-Cap Index.\n Under normal market conditions, the fund invests at least 80% of the sum of its net assets and the amount of any borrowings for investment purposes in component securities of the index. The index selects from the securities included in the MSCI USA Index, which generally consists of large-and mid-capitalization segments of the U.S. market.",
+        "category": "Large Blend",
+        "family": "Nuveen",
         "exchange": "BTS",
         "market": "us_market"
     },
@@ -699,6 +939,26 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "OMFL": {
+        "short_name": "Invesco Exchange-Traded Self-In",
+        "long_name": "Invesco Russell 1000 Dynamic Multifactor ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Russell 1000\u00c2\u00ae Invesco Dynamic Multifactor Index.\n The fund generally will invest at least 80% of its total assets in the securities that comprise the underlying index. The underlying index is designed to select equity securities from within the Russell 1000\u00c2\u00ae Index, which measures the performance of the 1,000 largest-capitalization companies in the United States. The fund is non-diversified.",
+        "category": "Large Blend",
+        "family": "Invesco",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "OVLH": {
+        "short_name": "Overlay Shares Hedged Large Cap",
+        "long_name": "Overlay Shares Hedged Large Cap Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks total return.\n The fund is an actively-managed ETF that seeks to achieve its objective by (i) investing in one or more other ETFs that seek to obtain exposure to the performance of U.S. large-cap equity securities or directly in the securities held by such ETFs, (ii) selling and purchasing listed short-term put options to generate income to the fund, and (iii) purchasing long-term out-of-the-money put options to seek to hedge against significant declines in U.S. large-cap equities.",
+        "category": "Large Blend",
+        "family": "Overlay Shares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "PALC": {
         "short_name": "Pacer Lunt Large Cap Multi-Fact",
         "long_name": "Pacer Lunt Large Cap Multi-Factor Alternator ETF",
@@ -707,6 +967,86 @@
         "category": "Large Blend",
         "family": "Pacer",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "PBUS": {
+        "short_name": "Invesco PureBeta MSCI USA ETF",
+        "long_name": "Invesco PureBeta MSCI USA ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the MSCI USA Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The index is designed to measure the performance of the large- and mid-capitalization segments of the U.S. equity market.",
+        "category": "Large Blend",
+        "family": "Invesco",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "PSCW": {
+        "short_name": "Pacer Swan SOS Conservative (Ap",
+        "long_name": "Pacer Swan SOS Conservative (April) ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that, before fees and expenses of the fund, match those of the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust.\n The fund is an actively managed exchange-traded fund (\"ETF\") that, under normal market conditions, invests substantially all of its assets in FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the market price of the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust (the \"Underlying ETF\"). It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Pacer",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "PSCX": {
+        "short_name": "Pacer Swan SOS Conservative (De",
+        "long_name": "Pacer Swan SOS Conservative (December) ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that, before fees and expenses of the fund, match those of the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust.\n The fund is an actively managed exchange-traded fund (\"ETF\") that, under normal market conditions, invests substantially all of its assets in FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the market price of the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust (the \"Underlying ETF\"). It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Pacer",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "PSFD": {
+        "short_name": "Pacer Funds ETF",
+        "long_name": "Pacer Swan SOS Flex (December) ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that match those of the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust (the \"Underlying ETF\").\n The fund is an actively managed exchange-traded fund (\"ETF\") that, under normal market conditions, invests substantially all of its assets in FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the market price of the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust (the \"Underlying ETF\"). It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Pacer",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "PSFM": {
+        "short_name": "Pacer Swan SOS Flex (April) ETF",
+        "long_name": "Pacer Swan SOS Flex (April) ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that match those of the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust.\n The fund is an actively managed exchange-traded fund (\"ETF\") that, under normal market conditions, invests substantially all of its assets in FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the market price of the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust (the \"Underlying ETF\"). It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Pacer",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "PSMD": {
+        "short_name": "Pacer Swan SOS Moderate (Decemb",
+        "long_name": "Pacer Swan SOS Moderate (December) ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that, before fees and expenses of the fund, match those of the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust (\"the Underlying ETF\").\n The fund is an actively managed exchange-traded fund (\"ETF\") that, under normal market conditions, invests substantially all of its assets in FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the market price of the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust (the \"Underlying ETF\"). It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Pacer",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "PSMR": {
+        "short_name": "Pacer Swan SOS Moderate (April)",
+        "long_name": "Pacer Swan SOS Moderate (April) ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that, before fees and expenses of the fund, match those of the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust.\n The fund is an actively managed exchange-traded fund (\"ETF\") that, under normal market conditions, invests substantially all of its assets in FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the market price of the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust (the \"Underlying ETF\"). It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Pacer",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "PTLC": {
+        "short_name": "Pacer Fund Trust Pacer Trendpil",
+        "long_name": "Pacer Trendpilot US Large Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Pacer Trendpilot US Large Cap Index.\n The fund invests at least 80% of its total assets (exclusive of collateral held from securities lending) in the component securities of the index. The index uses an objective, rules-based methodology to implement a systematic trend-following strategy that directs exposure (i) 100% to the S&P 500\u00c2\u00ae Index, (ii) 50% to the S&P 500 and 50% to 3-Month U.S. Treasury bills, or (iii) 100% to 3-Month U.S. Treasury bills, depending on the relative performance of the S&P 500 and its 200-business day historical simple moving average.",
+        "category": "Large Blend",
+        "family": "Pacer",
+        "exchange": "BTS",
         "market": "us_market"
     },
     "QMJ": {
@@ -720,22 +1060,22 @@
         "market": "us_market"
     },
     "QQC": {
-        "short_name": "Simplify Growth Equity Plus Con",
+        "short_name": "Simplify Nasdaq 100 PLUS Convex",
         "long_name": "Simplify Growth Equity Plus Convexity ETF",
         "currency": "USD",
         "summary": "The investment seeks to provide capital appreciation.\n The fund will invest at least 80% of its net assets (plus any borrowings for investment purposes) in equity securities, primarily by purchasing ETFs that invest in companies listed on the NASDAQ-100 Index. Up to twenty percent of its net assets will be subject to the fund&#39;s convexity option overlay. The option overlay consists of purchasing exchange-traded and OTC put and call options on the NASDAQ\u00c2\u00ae -100 Index or a NASDAQ\u00c2\u00ae-100 Index ETF.",
         "category": "Large Blend",
         "family": "Simplify Asset Management",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
-    "QQQM": {
-        "short_name": "Invesco NASDAQ 100 ETF",
-        "long_name": "Invesco NASDAQ 100 ETF",
+    "QQD": {
+        "short_name": "Simplify Nasdaq 100 PLUS Downsi",
+        "long_name": "Simplify Growth Equity Plus Downside Convexity ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results (before fees and expenses) of the NASDAQ-100 Index\u00c2\u00ae (the \u00e2\u0080\u009cunderlying index\u00e2\u0080\u009d).\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, Nasdaq, Inc. (\u00e2\u0080\u009cNasdaq\u00e2\u0080\u009d or the \u00e2\u0080\u009cindex provider\u00e2\u0080\u009d) compiles, maintains and calculates the underlying index, which includes securities of 100 of the largest domestic and international nonfinancial companies listed on The Nasdaq Stock Market LLC based on market capitalization. It is non-diversified.",
+        "summary": "The investment seeks to provide capital appreciation.\n The fund will invest at least 80% of its net assets (plus any borrowings for investment purposes) in equity securities, primarily by purchasing ETFs that invest in companies listed on the NASDAQ-100 Index. Up to twenty percent of its net assets will be subject to the fund&#39;s downside convexity option overlay. The downside convexity option overlay consists of purchasing exchange-traded and OTC put options on the NASDAQ\u00c2\u00ae-100 Index or a NASDAQ\u00c2\u00ae-100 Index ETF.",
         "category": "Large Blend",
-        "family": "Invesco",
+        "family": "Simplify Asset Management",
         "exchange": "NMS",
         "market": "us_market"
     },
@@ -759,6 +1099,26 @@
         "exchange": "BTS",
         "market": "us_market"
     },
+    "QUS": {
+        "short_name": "SPDR MSCI USA StrategicFactors ",
+        "long_name": "SPDR MSCI USA StrategicFactors ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of the MSCI USA Factor Mix A-Series Capped Index.\n The fund invests at least 80%, of its total assets in the securities comprising the index. The index is designed to measure the equity market performance of large-and mid-cap companies across the U.S. equity market. It aims to represent the performance of a combination of three factors: value, quality, and low volatility. It is an equal weighted combination of the following three MSCI Factor Indices in a single composite index: the MSCI USA Value Weighted Index, the MSCI USA Quality Index, and the MSCI USA Minimum Volatility Index.",
+        "category": "Large Blend",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "RBUS": {
+        "short_name": "Nationwide Risk-Based U.S. Equi",
+        "long_name": "Nationwide Risk-Based U.S. Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Rothschild & Co Risk-Based US Index (the \"index\").\n The advisor attempts to invest all, or substantially all, of its assets in the component securities that make up the index. Normally, at least 80% of the fund&#39;s total assets will be invested in the component securities of the index. The index is a rules-based, equal risk-weighted index that is designed to provide exposure to U.S.-listed large capitalization companies with lower volatility, reduced maximum drawdown, and an improved Sharpe ratio as compared to traditional, market capitalization weighted approaches.",
+        "category": "Large Blend",
+        "family": "Nationwide",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "RESP": {
         "short_name": "WisdomTree U.S. ESG Fund",
         "long_name": "WisdomTree U.S. ESG Fund",
@@ -769,13 +1129,63 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "RFFC": {
+        "short_name": "RiverFront Dynamic US Flex-Cap ",
+        "long_name": "RiverFront Dynamic US Flex-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide capital appreciation.\n The fund invests at least 65% of its net assets in a portfolio of equity securities of publicly traded U.S. companies. Equity securities include common stocks and common or preferred shares of real estate investment trusts. The fund may invest in small-, mid- and large-capitalization companies. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "ALPS",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "RNLC": {
+        "short_name": "Large Cap US Equity Select ETF",
+        "long_name": "First Trust Large Cap US Equity Select ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the Nasdaq Riskalyze US Large Cap Index (the \"index\").\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and real estate investment trusts (\"REITs\") that comprise the index. The index is designed to select dividend-paying securities issued by large capitalization U.S. companies.",
+        "category": "Large Blend",
+        "family": "First Trust",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "RODI": {
+        "short_name": "iPath Return on Disability ETN",
+        "long_name": "Barclays Return on Disability ETN",
+        "currency": "USD",
+        "summary": "The investment seeks a return linked to the performance of the Return on Disability US LargeCap ETN Total Return USD Index.\n The index notionally tracks the returns that may be available from investing in a Basket comprised of stocks of up to 100 companies that, according to the RoD Ranking, are considered the top ranked firms in the disability market with respect to creation of shareholder value and which meet other eligibility requirements.",
+        "category": "Large Blend",
+        "family": "Milleis Investissements Funds",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "RORO": {
+        "short_name": "ATAC US Rotation ETF",
+        "long_name": "ATAC US Rotation ETF",
+        "currency": "USD",
+        "summary": "The investment seeks total return.\n Under normal circumstances, at least 80% of the fund&#39;s net assets, plus borrowings for investment purposes, will be invested in (i) securities that are traded principally in the United States, (ii) securities issued or guaranteed by the U.S. government, its agencies, or instrumentalities, or (iii) ETFs that invest, under normal circumstances, at least 80% of their net assets, plus borrowings for investment purposes, in the foregoing securities. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "ATAC Fund",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "RSP": {
         "short_name": "Invesco S&P 500 Equal Weight ET",
         "long_name": "Invesco S&P 500 Equal Weight ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Equal Weight Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, the index provider compiles, maintains and calculates the underlying index, which is an equal-weighted version of the S&P 500\u00c2\u00ae Index. The fund is non-diversified.",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Equal Weight Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, the index provider compiles, maintains and calculates the underlying index, which is an equal-weighted version of the S&P 500\u00c2\u00ae Index.",
         "category": "Large Blend",
         "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SCHB": {
+        "short_name": "Schwab U.S. Broad Market ETF",
+        "long_name": "Schwab U.S. Broad Market ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Dow Jones U.S. Broad Stock Market Index.\n To pursue its goal, the fund generally invests in stocks that are included in the index. The index includes the largest 2,500 publicly traded U.S. companies for which pricing information is readily available. The fund will invest at least 90% of its net assets in these stocks. It may invest up to 10% of its net assets in securities not included in the index.",
+        "category": "Large Blend",
+        "family": "Schwab ETFs",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -786,6 +1196,36 @@
         "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Schwab 1000 Index\u00c2\u00ae.\n The Schwab 1000 Index is a float-adjusted market capitalization weighted index that includes the 1,000 largest stocks of publicly traded companies in the United States, with size being determined by market capitalization (total market value of all shares outstanding). It is the fund&#39;s policy that under normal circumstances it will invest at least 90% of its net assets (including, for this purpose, any borrowings for investment purposes) in stocks included in the index.",
         "category": "Large Blend",
         "family": "Schwab ETFs",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SCHX": {
+        "short_name": "Schwab U.S. Large-Cap ETF",
+        "long_name": "Schwab U.S. Large-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Dow Jones U.S. Large-Cap Total Stock Market Index.\n To pursue its goal, the fund generally invests in stocks that are included in the Dow Jones U.S. Large-Cap Total Stock Market Index. The index includes the large-cap portion of the Dow Jones U.S. Total Stock Market Index actually available to investors in the marketplace. The Dow Jones U.S. Large-Cap Total Stock Market Index includes the components ranked 1-750 by full market capitalization. The index is a float-adjusted market capitalization weighted index.",
+        "category": "Large Blend",
+        "family": "Schwab ETFs",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SECT": {
+        "short_name": "Northern Lights Fund Trust IV M",
+        "long_name": "Main Sector Rotation ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to outperform the S&P 500 in rising markets while limiting losses during periods of decline.\n The fund utilizes a \"fund of funds\" structure to invest in sector based equity ETFs. It seeks to achieve its objective through dynamic sector rotation. The Adviser focuses its research primarily on sector selection by carefully reviewing the sector, industry, and sub-industries in the fund&#39;s portfolio. The Adviser chooses sectors it believes are undervalued and poised to respond favorably to financial market catalysts. The fund sell a security when it achieves its target price and is, in the opinion of the Adviser, no longer undervalued.",
+        "category": "Large Blend",
+        "family": "Main Management ETFs",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "SHE": {
+        "short_name": "SPDR Series Trust SPDR SSGA Gen",
+        "long_name": "SPDR SSGA Gender Diversity Index ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the SSGA Gender Diversity Index, which tracks U.S. companies that are leaders in advancing women through gender diversity on their boards of directors and in management.\n Under normal market conditions, the fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. In addition, it may invest in equity securities that are not included in the index, cash and cash equivalents or money market instruments. The fund is non-diversified.",
+        "category": "Large Blend",
+        "family": "SPDR State Street Global Advisors",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -819,6 +1259,26 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "SLT": {
+        "short_name": "Pacer Salt High truBeta US Mark",
+        "long_name": "Pacer Salt High truBeta US Market ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance, before fees and expenses, of the Salt High truBeta\u00e2\u0084\u00a2 US Market Index (the \"index\").\n Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of any collateral held from securities lending) will be invested in the component securities of the index. The index uses an objective, rules-based methodology to measure the performance of an equal-weighted portfolio of approximately 100 large- and mid-capitalization U.S.-listed stocks with the highest forecasted systematic risk relative to the market (known as \"beta\"). The fund is non-diversified.",
+        "category": "Large Blend",
+        "family": "Pacer",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "SNPE": {
+        "short_name": "Xtrackers S&P 500 ESG ETF",
+        "long_name": "Xtrackers S&P 500 ESG ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the performance, before fees and expenses, of the S&P 500 ESG Index.\n The index is a broad-based, market capitalization weighted index that provides exposure to companies with high environmental, social and governance (\"ESG\") performance relative to their sector peers, while maintaining similar overall industry group weights as the S&P 500 Index. The fund uses a full replication indexing strategy to seek to track the underlying index. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Xtrackers",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "SPHB": {
         "short_name": "Invesco S&P 500 High Beta ETF",
         "long_name": "Invesco S&P 500 High Beta ETF",
@@ -826,6 +1286,76 @@
         "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae High Beta Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, S&P Dow Jones Indices LLC compiles, maintains and calculates the index, which is designed to measure the performance of the 100 constituents of the S&P 500 \u00c2\u00ae Index that have the highest sensitivity to market returns, or \u00e2\u0080\u009cbeta,\u00e2\u0080\u009d over the past 12 months as determined by the index Provider.",
         "category": "Large Blend",
         "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SPHQ": {
+        "short_name": "Invesco S&P 500 Quality ETF",
+        "long_name": "Invesco S&P 500 Quality ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Quality Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. In selecting constituent securities for the underlying index, the index provider calculates the quality score of each security in the S&P 500\u00c2\u00ae Index, then selects the 100 stocks with the highest quality score for inclusion in the underlying index.",
+        "category": "Large Blend",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SPLG": {
+        "short_name": "SPDR Portfolio S&P 500 ETF",
+        "long_name": "SPDR Portfolio S&P 500 ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the S&P 500 Index.\n Under normal market conditions, the fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is designed to measure the performance of the large-capitalization segment of the U.S. equity market.",
+        "category": "Large Blend",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SPLV": {
+        "short_name": "Invesco S&P 500 Low Volatility ",
+        "long_name": "Invesco S&P 500 Low Volatility ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Low Volatility Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, S&P Dow Jones Indices LLC (the \u00e2\u0080\u009cindex Provider\u00e2\u0080\u009d) compiles, maintains and calculates the underlying index, which is designed to measure the performance of 100 least volatile constituents of the S&P 500 \u00c2\u00ae Index over the past 12 months as determined by the index Provider.",
+        "category": "Large Blend",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SPMV": {
+        "short_name": "Invesco S&P 500 Minimum Varianc",
+        "long_name": "Invesco S&P 500 Minimum Variance ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Minimum Volatility Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is designed to measure the performance of a subset of constituent securities of the S&P 500 Index using a managed volatility equity strategy that seeks to achieve lower total volatility than the S&P 500 \u00c2\u00ae Index, while maintaining other similar characteristics of the S&P 500 \u00c2\u00ae Index.",
+        "category": "Large Blend",
+        "family": "Invesco",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "SPQQ": {
+        "short_name": "Siren Large Cap Blend Index ETF",
+        "long_name": "Siren Large Cap Blend Index ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond (before fees and expenses) generally to the performance of its underlying index, the Siren Large Cap Blend Index (the \"index\").\n The index&#39;s construction begins by identifying two universes of stocks. It then selects the 30 largest companies from each universe by market capitalization and weights each company equally. Under normal circumstances, the fund generally will replicate the index by investing in all of the securities in the index in proportion to their weighting in the index. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "SRN Advisors",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "SPTM": {
+        "short_name": "SPDR Portfolio S&P 1500 Composi",
+        "long_name": "SPDR Portfolio S&P 1500 Composite Stock Market ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the S&P Composite 1500 Index.\n Under normal market conditions, the fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is designed to measure the performance of the large-, mid-, and small-capitalization segments of the U.S. equity market. The index consists of those stocks included in the S&P 500 Index, the S&P MidCap 400 Index, and the S&P SmallCap 600 Index.",
+        "category": "Large Blend",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SPXE": {
+        "short_name": "ProShares S&P 500 Ex-Energy ETF",
+        "long_name": "ProShares S&P 500 ex-Energy ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results, before fees and expenses, that track the performance of the S&P 500\u00c2\u00ae Ex-Energy Index (the \"index\").\n Under normal circumstances, the fund will invest at least 80% of its total assets in component securities. The index and fund seek to provide exposure to the companies of the S&P 500\u00c2\u00ae Index (the \"S&P 500\u00c2\u00ae\") with the exception of those companies included in the Energy Sector.",
+        "category": "Large Blend",
+        "family": "ProShares",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -889,6 +1419,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "STNC": {
+        "short_name": "Stance Equity ESG Large Cap Cor",
+        "long_name": "Stance Equity ESG Large Cap Core ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to achieve long-term capital appreciation.\n The fund is an actively managed exchange-traded fund (\"ETF\") that will invest, under normal circumstances at least 80% of the value of its net assets (plus the amount of any borrowings for investment purposes) in exchange-traded equity securities of U.S. large capitalization issuers that meet environmental, social, and governance (\"ESG\") standards, as determined by its sub-adviser. Its investment portfolio is focused, generally composed of at least 30 investment positions.",
+        "category": "Large Blend",
+        "family": "Stance",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "SUSA": {
         "short_name": "iShares MSCI USA ESG Select ETF",
         "long_name": "iShares MSCI USA ESG Select ETF",
@@ -899,14 +1439,134 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "SUSL": {
+        "short_name": "iShares ESG MSCI USA Leaders ET",
+        "long_name": "iShares ESG MSCI USA Leaders ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI USA Extended ESG Leaders Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The underlying index is a free float-adjusted market capitalization weighted equity index designed to reflect the equity performance of U.S. companies that have favorable environmental, social and governance (\"ESG\") characteristics. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "iShares",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "SVOL": {
+        "short_name": "Simplify Volatility Premium ETF",
+        "long_name": "Simplify Volatility Premium ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results, before fees and expenses, that correspond to approximately one-fifth to three-tenths the inverse (-0.2x to -0.3x) of the performance of the S&P 500 VIX short-term futures index while also seeking to mitigate extreme volatility.\n In pursuing its investment objective, the fund primarily purchases or sells futures contracts, call options, and put options on VIX futures. The fund will hold cash, cash-like instruments or high-quality short term fixed income securities. Up to twenty percent of the fund\u00e2\u0080\u0099s net assets will be subject to the fund\u00e2\u0080\u0099s option overlay to mitigate against extreme volatility.",
+        "category": "Large Blend",
+        "family": "Simplify Asset Management",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SYE": {
+        "short_name": "SPDR MFS Systematic Core Equity",
+        "long_name": "SPDR MFS Systematic Core Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks capital appreciation.\n Under normal circumstances, the fund invests at least 80% of its net assets (plus the amount of borrowings for investment purposes) in equity securities. Equity securities in which the fund invests include common stocks, preferred stocks, and securities convertible into stocks. In selecting securities for the fund, the Sub-Adviser utilizes a bottom-up approach to buying and selling investments for the fund.",
+        "category": "Large Blend",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SYUS": {
+        "short_name": "Syntax Stratified U.S. Total Ma",
+        "long_name": "Syntax Stratified U.S. Total Market ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to obtain capital growth that meets or exceeds the performance of the S&P Composite 1500\u00c2\u00ae Index (the 1500) by investing in exchange-traded funds (\"ETFs\") or underlying securities that provide Stratified WeightTM U.S. total equity market exposure.\n The fund seeks Stratified-Weight exposure to the securities in the S&P Composite 1500 Index though investments in ETFs or underlying securities. It has a policy that under normal circumstances, the fund will invest at least 80% of holdings in companies that represent U.S. total market exposure as per the investment objective.",
+        "category": "Large Blend",
+        "family": "Syntax",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "TAAG": {
+        "short_name": "Trend Aggregation Growth ETF",
+        "long_name": "Trend Aggregation Growth ETF",
+        "currency": "USD",
+        "summary": "The investment seeks capital appreciation.\n The fund seeks to employ a tactical approach to invest in exchange traded funds that primarily invest in U.S. equity securities and by directly investing in U.S. equity securities of small, medium and large capitalization companies that are listed on U.S. exchanges. It may use volatility ETFs and ETNs along with inverse and leveraged ETFs and ETNs to hedge market exposure.",
+        "category": "Large Blend",
+        "family": "Tuttle",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "TADS": {
+        "short_name": "Trend Aggregation Dividend Stoc",
+        "long_name": "Trend Aggregation Dividend Stock ETF",
+        "currency": "USD",
+        "summary": "The investment seeks capital appreciation.\n The fund seeks to employ a tactical approach to invest in to income-producing U.S. equity securities and ETFs. Under normal market conditions, it will invest in income producing equity securities. While the Advisor expects to be invested primarily in large capitalization companies, it may invest in equity securities of any capitalization. The fund may invest, a portion of its portfolio in volatility ETFs and ETNs, leveraged ETFs, inverse ETFs, Treasury Bond ETFs, and Inverse Treasury Bond ETFs.",
+        "category": "Large Blend",
+        "family": "Tuttle",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "TAEQ": {
+        "short_name": "Trend Aggregation U.S. ETF",
+        "long_name": "Trend Aggregation U.S. ETF",
+        "currency": "USD",
+        "summary": "The investment seeks capital appreciation.\n Under normal conditions, the fund invests in equity securities of companies of any capitalization that are traded on U.S. exchanges and exchange traded funds (\"ETFs\") that primarily invest in U.S. equity securities (\"Equity ETFs\"). The adviser&#39;s models may also direct for investment in ETFs that invest in treasury bonds, volatility ETFs and exchange-traded notes (\"ETNs\") and leveraged and inverse ETFs.",
+        "category": "Large Blend",
+        "family": "Tuttle",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "TILT": {
+        "short_name": "FlexShares Mornigstar US Market",
+        "long_name": "FlexShares Morningstar US Market Factors Tilt Index Fund",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the Morningstar\u00c2\u00ae US Market Factor Tilt IndexSM.\n The index is designed to reflect the performance of a selection of companies that, in aggregate, possess greater exposure to size and value factors relative to the Morningstar US Market Index, a float-adjusted market-capitalization weighted index of U.S.-incorporated large-, mid-, small- and micro-capitalization companies. The fund will invest at least 80% of its total assets (exclusive of collateral held from securities lending) in the securities of the index.",
+        "category": "Large Blend",
+        "family": "Flexshares Trust",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "TSJA": {
+        "short_name": "Innovator Triple Stacker ETF - ",
+        "long_name": "Innovator Triple Stacker ETF - January",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that match those of the SPDR S&P 500 ETF Trust.\n The fund will invest substantially all of its assets in a portfolio of FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust, Invesco QQQ TrustSM, Series 1 and the iShares Russell 2000 ETF. FLEX Options are exchange-traded options contracts with uniquely customizable terms. Although guaranteed for settlement by the Options Clearing Corporation (the \"OCC\"), FLEX Options are still subject to counterparty risk with the OCC and may be less liquid than more traditional exchange-traded options. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Innovator ETFs",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
     "TSOC": {
         "short_name": "Innovator Triple Stacker ETF - ",
         "long_name": "Innovator Triple Stacker ETF \u2013 October",
         "currency": "USD",
-        "summary": "The investment seeks to provide investors with returns that match those of the SPDR S&P 500 ETF Trust.\n The fund will invest substantially all of its assets in a portfolio of FLexible EXchange\u00c2\u00ae Options (\u00e2\u0080\u009cFLEX Options\u00e2\u0080\u009d) that reference the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust (\u00e2\u0080\u009cS&P 500 ETF\u00e2\u0080\u009d), Invesco QQQ TrustSM, Series 1 (the \u00e2\u0080\u009cQQQ ETF\u00e2\u0080\u009d) and the iShares Russell 2000 ETF (the \u00e2\u0080\u009cRussell 2000 ETF,\u00e2\u0080\u009d and together with the S&P 500 ETF and QQQ ETF, the \u00e2\u0080\u009cUnderlying ETFs\u00e2\u0080\u009d). Its assets will be principally composed of FLEX Options, the value of which is derived from the performance of the underlying reference asset, the applicable Underlying ETF\u00e2\u0080\u0099s share price. It is non-diversified.",
+        "summary": "The investment seeks to provide investors with returns that match those of the SPDR S&P 500 ETF Trust.\n The fund will invest substantially all of its assets in a portfolio of FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust (\"S&P 500 ETF\"), Invesco QQQ TrustSM, Series 1 (the \"QQQ ETF\") and the iShares Russell 2000 ETF (the \"Russell 2000 ETF,\" and together with the S&P 500 ETF and QQQ ETF, the \"Underlying ETFs\"). Its assets will be principally composed of FLEX Options, the value of which is derived from the performance of the underlying reference asset, the applicable Underlying ETF&#39;s share price. It is non-diversified.",
         "category": "Large Blend",
         "family": "Innovator ETFs",
         "exchange": "BTS",
+        "market": "us_market"
+    },
+    "UMAR": {
+        "short_name": "Innovator S&P 500 Ultra Buffer ",
+        "long_name": "Innovator S&P 500 Ultra Buffer ETF - March",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that match the price return of the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust.\n The fund invests at least 80% of its net assets in FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust (the \"Underlying ETF\"). FLEX Options are exchange-traded options contracts with uniquely customizable terms. Although guaranteed for settlement by the Options Clearing Corporation (the \"OCC\"), FLEX Options are still subject to counterparty risk with the OCC and may be less liquid than more traditional exchange-traded options. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Innovator ETFs",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "UMAY": {
+        "short_name": "Innovator S&P 500 Ultra Buffer ",
+        "long_name": "Innovator S&P 500 Ultra Buffer ETF - May",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that match those of the S&P 500 Price Index.\n The fund invests at least 80% of its net assets in FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the S&P 500 Price Return Index (\"S&P 500 Price Index\"). FLEX Options are exchange-traded options contracts with uniquely customizable terms. Although guaranteed for settlement by the Options Clearing Corporation (the \"OCC\"), FLEX Options are still subject to counterparty risk with the OCC and may be less liquid than more traditional exchange-traded options. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Innovator ETFs",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "USMC": {
+        "short_name": "Principal U.S. Mega-Cap ETF",
+        "long_name": "Principal U.S. Mega-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that closely correspond, before expenses, to the performance of the Nasdaq US Mega Cap Select Leaders Index (the \"index\").\n Under normal circumstances, the fund invests at least 80% of its net assets, plus any borrowings for investment purposes, in equity securities that compose the index at the time of purchase. The index uses a quantitative model designed to identify equity securities of companies in the Nasdaq US 500 Large Cap Index (the \"parent index\") that have the largest market capitalizations, with higher weights given to less volatile securities.",
+        "category": "Large Blend",
+        "family": "Principal Funds",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "USMV": {
@@ -917,6 +1577,16 @@
         "category": "Large Blend",
         "family": "iShares",
         "exchange": "BTS",
+        "market": "us_market"
+    },
+    "USSG": {
+        "short_name": "Xtrackers MSCI USA ESG Leaders ",
+        "long_name": "Xtrackers MSCI USA ESG Leaders Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the performance, before fees and expenses, of the MSCI USA ESG Leaders Index.\n The index consists of large- and medium-capitalization companies in the U.S. market. The fund invests directly in the component securities of the index in substantially the same weightings in which they are represented in the index. It will normally invest at least 80% of its net assets, plus the amount of any borrowings for investment purposes, in equity securities of issuers incorporated in the United States. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Xtrackers",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "UTRN": {
@@ -959,24 +1629,74 @@
         "exchange": "BTS",
         "market": "us_market"
     },
+    "VONE": {
+        "short_name": "Vanguard Russell 1000 ETF",
+        "long_name": "Vanguard Russell 1000 Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of large-capitalization stocks in the United States.\n The fund employs an indexing investment approach designed to track the performance of the Russell 1000\u00c2\u00ae Index. The index is designed to measure the performance of large-capitalization stocks in the United States. The Advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+        "category": "Large Blend",
+        "family": "Vanguard",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
     "VOO": {
         "short_name": "Vanguard S&P 500 ETF",
         "long_name": "Vanguard S&P 500 ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of large-capitalization stocks.\n The fund employs an indexing investment approach designed to track the performance of the Standard & Poor&#39;s 500 Index, a widely recognized benchmark of U.S. stock market performance that is dominated by the stocks of large U.S. companies. The advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+        "summary": "The investment seeks to track the performance of the Standard & Poor\u00e2\u0080\u0098s 500 Index that measures the investment return of large-capitalization stocks.\n The fund employs an indexing investment approach designed to track the performance of the Standard & Poor&#39;s 500 Index, a widely recognized benchmark of U.S. stock market performance that is dominated by the stocks of large U.S. companies. The advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
         "category": "Large Blend",
         "family": "Vanguard",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "VSDA": {
+        "short_name": "VictoryShares Dividend Accelera",
+        "long_name": "VictoryShares Dividend Accelerator ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that track the performance of the Nasdaq Victory Dividend Accelerator Index before fees and expenses.\n The fund seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its assets in securities included in the Nasdaq Victory Dividend Accelerator Index (the \"index\"). The index utilizes a rules-based approach designed to identify dividend paying stocks with a higher likelihood of future dividend growth.",
+        "category": "Large Blend",
+        "family": "Victory Capital",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "VSL": {
+        "short_name": "Volshares Large Cap ETF",
+        "long_name": "Volshares Large Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance, before fees and expenses, of the Volshares Large Cap Index (the \"index\").\n Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of any collateral held from securities lending) will be invested in the component securities of the index. The index was developed in 2016 by the fund&#39;s investment adviser and index provider, and uses an objective, rules-based methodology to measure the performance of an equal-weighted portfolio of approximately 25 large capitalization U.S.-listed companies based on a quantitative, volatility-based algorithm. The fund is non-diversified.",
+        "category": "Large Blend",
+        "family": "Volshares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "VTHR": {
+        "short_name": "Vanguard Russell 3000 ETF",
+        "long_name": "Vanguard Russell 3000 Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of the broad U.S. stock market.\n The fund employs an indexing investment approach designed to track the performance of the Russell 3000\u00c2\u00ae Index, which represents approximately 98% of the U.S. equity market and comprises the 3,000 largest companies in the United States. The Advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+        "category": "Large Blend",
+        "family": "Vanguard",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "VTI": {
         "short_name": "Vanguard Total Stock Market ETF",
         "long_name": "Vanguard Total Stock Market Index Fund ETF Shares",
         "currency": "USD",
-        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of the overall stock market.\n The fund employs an indexing investment approach designed to track the performance of the CRSP US Total Market Index, which represents approximately 100% of the investable U.S. stock market and includes large-, mid-, small-, and micro-cap stocks regularly traded on the New York Stock Exchange and Nasdaq. It invests by sampling the index, meaning that it holds a broadly diversified collection of securities that, in the aggregate, approximates the full index in terms of key characteristics.",
+        "summary": "The investment seeks to track the performance of the CRSP US Total Market Index that measures the investment return of the overall stock market.\n The fund employs an indexing investment approach designed to track the performance of the index, which represents approximately 100% of the investable U.S. stock market and includes large-, mid-, small-, and micro-cap stocks regularly traded on the New York Stock Exchange and Nasdaq. It invests by sampling the index, meaning that it holds a broadly diversified collection of securities that, in the aggregate, approximates the full index in terms of key characteristics.",
         "category": "Large Blend",
         "family": "Vanguard",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "VTRN": {
+        "short_name": "VictoryShares Top Veteran Emplo",
+        "long_name": "VictoryShares Top Veteran Employers ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that track the performance of the Veterans Select Index before fees and expenses.\n Under normal circumstances, the fund seeks to achieve its investment objective by investing at least 80% of its assets in securities in the index. The index is designed to identify companies that have demonstrated support of U.S. military veterans, service members and their families through employment opportunities and related policies.",
+        "category": "Large Blend",
+        "family": "Victory Capital",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "VV": {
@@ -989,13 +1709,83 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "WBIE": {
+        "short_name": "WBI BullBear Rising Income 3000",
+        "long_name": "WBI BullBear Rising Income 3000 ETF",
+        "currency": "USD",
+        "summary": "The investment seeks long-term capital appreciation and the potential for current income, while also seeking to protect principal during unfavorable market conditions.\n The fund will seek to invest in the equity securities of small-capitalization, mid-capitalization, and large capitalization domestic and foreign companies that the sub-advisor to the fund and an affiliate of the advisor, believes display attractive prospects for growth in a company&#39;s intrinsic value, and in other tactical investment opportunities. It may invest up to 50% of its net assets in the securities of issuers in emerging markets.",
+        "category": "Large Blend",
+        "family": "WBI Investments",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "WBIL": {
+        "short_name": "WBI BullBear Quality 3000 ETF",
+        "long_name": "WBI BullBear Quality 3000 ETF",
+        "currency": "USD",
+        "summary": "The investment seeks long-term capital appreciation and the potential for current income, while also seeking to protect principal during unfavorable market conditions.\n The fund will seek to invest in the equity securities of small-capitalization, mid-capitalization, and large capitalization domestic and foreign companies that the sub-advisor to the fund and an affiliate of the advisor, believes display attractive prospects for growth in a company&#39;s intrinsic value, and in other tactical investment opportunities. It may invest up to 50% of its net assets in the securities of issuers in emerging markets.",
+        "category": "Large Blend",
+        "family": "WBI Investments",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "WIL": {
+        "short_name": "iPath Women in Leadership ETN",
+        "long_name": "Barclays Women in Leadership ETN",
+        "currency": "USD",
+        "summary": "The investment seeks a return linked to the performance of the Barclays Women in Leadership Total Return USD Index (the \u00e2\u0080\u009cindex\u00e2\u0080\u009d).\n The index is designed to provide investors with exposure to U.S.-based companies that satisfy one or both of the gender diversity criteria of having a female chief executive officer or having at least 25% female members on the board of directors and that satisfy certain market capitalization, liquidity and other selection criteria and concentration limits.",
+        "category": "Large Blend",
+        "family": "Milleis Investissements Funds",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "WOMN": {
+        "short_name": "Impact Shares Trust I ETF Impac",
+        "long_name": "Impact Shares YWCA Women's Empowerment ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that, before fees and expenses, track the performance of the Morningstar\u00c2\u00ae Women&#39;s Empowerment Index (the \"underlying index\").\n The fund will, under normal circumstances, invest at least 80% of its total assets plus any borrowings for investment purposes (the \"80% basket\") in component securities of the underlying index. The underlying index is designed to measure the performance of U.S. large and mid-capitalization companies that are \"empowering to women,\" and to exhibit risk and return characteristics similar to those of the Morningstar US Large-Mid Cap \u00c2\u00ae Index (the \"parent index\"). The fund is non-diversified.",
+        "category": "Large Blend",
+        "family": "Impact Shares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "XDIV": {
         "short_name": "U.S. Equity Ex-Dividend Fund Se",
         "long_name": "Metaurus U.S. Equity Ex-Dividend Fund-Series 2027",
         "currency": "USD",
-        "summary": "The investment seeks investment results that, before fees and expenses, correspond to the performance of the Metaurus\u00c2\u00ae U.S. Cumulative Dividends Index-Series 2027 Index.\n The manager intends to replicate the returns of SPY through owning long positions in quarterly S&P 500 Index futures contracts traded on the CME rather than shares of SPDR S&P 500 ETF. Additionally, the manager intends to track the performance of the Solactive Ex-Dividend Index by selling annual S&P 500 Dividend Futures Contracts out to the maturity date of the fund.",
+        "summary": "The investment seeks investment results that, before fees and expenses, correspond to the performance of the Metaurus U.S. Equity Ex-Dividends Index\u00e2\u0080\u0094Series 2027.\n The manager intends to replicate the returns of SPY through owning long positions in quarterly S&P 500 Index futures contracts traded on the CME rather than shares of SPY. Additionally, the manager intends to track the performance of the Metaurus Ex-Dividend Index by selling annual S&P 500 Dividend Futures Contracts out to the maturity date of the fund.",
         "category": "Large Blend",
         "family": "Metaurus",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "XDSQ": {
+        "short_name": "Innovator ETFs Trust Innovator ",
+        "long_name": "Innovator U.S. Equity Accelerated ETF \u2013 Quarterly",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that are twice those of the SPDR S&P 500 ETF Trust.\n The fund will invest at least 80% of its net assets in a portfolio of FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the SPDR\u00c2\u00ae S&P 500\u00c2\u00ae ETF Trust, an exchange-traded fund registered under the Investment Company Act of 1940. FLEX Options are exchange-traded options contracts with uniquely customizable terms. Although guaranteed for settlement by the Options Clearing Corporation, FLEX Options are still subject to counterparty risk with the OCC and may be less liquid than more traditional exchange-traded options. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "Innovator ETFs",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "XLG": {
+        "short_name": "Invesco S&P 500 Top 50 ETF",
+        "long_name": "Invesco S&P 500 Top 50 ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Top 50 Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The index provider compiles, maintains and calculates the underlying index, which consists of the 50 largest members of the S&P 500\u00c2\u00ae Index by float-adjusted market capitalization. The underlying index&#39;s components are weighted by float-adjusted market capitalization. The fund is non-diversified.",
+        "category": "Large Blend",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "XLSR": {
+        "short_name": "SPDR SSGA U.S. Sector Rotation ",
+        "long_name": "SPDR SSGA U.S. Sector Rotation ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide capital appreciation.\n The fund is a \"fund of funds,\" meaning that it primarily invests its assets in securities of other exchange-traded funds (\"ETFs\"). In particular, it allocates its assets among ETFs that each focus on common stocks of companies included in an individual sector of the S&P 500\u00c2\u00ae Index, as determined by the Global Industry Classification Standard (GICS\u00c2\u00ae). Under normal circumstances, the fund invests at least 80% of its net assets (plus the amount of borrowings for investments purposes) directly or indirectly through the underlying ETFs, in securities of U.S. companies.",
+        "category": "Large Blend",
+        "family": "SPDR State Street Global Advisors",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -1009,6 +1799,26 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "XVOL": {
+        "short_name": "Acruence Active Hedge U.S. Equi",
+        "long_name": "Acruence Active Hedge U.S. Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks capital appreciation with reduced volatility as compared to the S&P 500 Index.\n The fund is an actively-managed ETF that seeks to achieve its objective by investing nearly all of the fund\u00e2\u0080\u0099s assets in a portfolio replicating the constituents and weights of the S&P 500, while seeking to reduce volatility by purchasing options contracts on the CBOE Volatility Index. The Advisor intends to gain exposure to VIX Options through its investments in the Subsidiary and may invest up to 20% of its total assets in the Subsidiary. The fund is non-diversified.",
+        "category": "Large Blend",
+        "family": "Acruence",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "XVV": {
+        "short_name": "iShares ESG Screened S&P 500 ET",
+        "long_name": "iShares ESG Screened S&P 500 ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of an index composed of large-capitalization U.S. equities while applying screens for company involvement in controversies and controversial business activities.\n The fund seeks to track the investment results of the S&P 500 Sustainability Screened Index, which measures the performance of the large-capitalization sector of the U.S. equity market while excluding companies involved in controversial business activities and controversies, as determined by S&P Dow Jones Indices LLC. BFA uses a representative sampling indexing strategy to manage the fund. It is non-diversified.",
+        "category": "Large Blend",
+        "family": "iShares",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
     "YLDE": {
         "short_name": "ClearBridge Dividend Strategy E",
         "long_name": "ClearBridge Dividend Strategy ESG ETF",
@@ -1016,7 +1826,7 @@
         "summary": "The investment seeks dividend income, growth of dividend income and long-term capital appreciation.\n Under normal circumstances, the fund will invest at least 80% of its net assets, plus borrowings for investment purposes, if any, in dividend-paying stocks or other instruments with similar economic characteristics that offer the potential for income growth and capital appreciation over time and that meet its financial and environmental, social and governance (\"ESG\") criteria. The fund may also invest in companies that the subadviser believes are making substantial progress toward becoming a leader in ESG policies.",
         "category": "Large Blend",
         "family": "Franklin Templeton Investments",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     }
 }

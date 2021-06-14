@@ -1,8 +1,20 @@
 {
+    "06Y.F": {
+        "short_name": "POLENERGIA S.A. ZY 2",
+        "long_name": "Polenergia S.A.",
+        "summary": "Polenergia S.A., together with its subsidiaries, generates, distributes, and trades in electricity in Poland. The company operates through Onshore Wind Farms, Photovoltaics, Gas and Clean Fuels, Trading and Sales, and Distribution segments. The Onshore Wind Farms segment engages in the development, construction, and maintenance of facilities generating electrical energy from onshore wind. The Photovoltaics segment develops, constructs, and maintains facilities generating electrical energy using the solar radiation. The Gas and Clean Fuels segment is involved in the development, construction, and maintenance of facilities generating electrical energy in gas cogeneration; and development work in the manufacture of hydrogen and generation of energy from hydrogen based on the renewable sources originating energy. The Trading and Sales segment trades in electricity, and certificates of origin, and other energy market instruments; sells electricity to industrial customers; and provides market access services to energy producers using renewable energy sources. The Distribution segment offers electrical energy and gas distribution and sale services to commercial, industrial, and household customers. It also sells pellets. The company was formerly known as Polish Energy Partners Spolka Akcyjna. The company was founded in 1997 and is based in Warsaw, Poland. Polenergia S.A. is a subsidiary of Mansa Investments Sp. z o.o.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Independent Power Producers",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Poland",
+        "city": "Warsaw"
+    },
     "1T5.F": {
         "short_name": "TAURON POLSKA ENERGIA ZY5",
         "long_name": "TAURON Polska Energia S.A.",
-        "summary": "TAURON Polska Energia S.A., through its subsidiaries, engages in the generation, transmission, distribution, and sale of electricity and heat in Poland. The company operates through five segments: Mining, Generation, Distribution, Supply, and Other. The Mining segment offers hard coal mining, and enrichment and sales services. The generation segment is involved in electricity generation through conventional sources, including co-generation; and renewable energy, which includes biomass burning and co-firing, hydroelectric power plants, and wind farms; and overhaul of generation equipment and construction of power generation unit. The distribution segment provides electricity distribution service using the distribution grids; and technical support services related to electricity metering systems and metering data acquisition. The supply segment engages in the wholesale trade of electricity, natural gas, and derivative products, as well as trading and management of CO2 emission allowances, property rights arising from certificates of origin that confirm electricity generation from renewable sources, and cogeneration and property rights arising from energy efficiency certificates and fuels; electricity and natural gas supply; and lighting service sales. The other segment is involved in the extraction of stone, including limestone for the needs of power generation, steel, construction, and road building industries, as well as the production of sorbents agents for wet desulphurization installations and fluidized bed boilers; and real estate administration and property security activities. The company was formerly known as Energetyka Poludnie S.A. and changed its name to TAURON Polska Energia S.A. in November 2007. TAURON Polska Energia S.A. was founded in 2006 and is based in Katowice, Poland.",
+        "summary": "TAURON Polska Energia S.A., through its subsidiaries, engages in the generation, transmission, distribution, and sale of electricity and heat in Poland. The company operates through five segments: Mining, Generation, Renewable Energy Sources, Distribution, and Supply. The Mining segment offers hard coal mining, and cleaning and sales services. The Generation segment is involved in electricity generation through conventional sources, including co-generation, as well as through biomass burning; and the overhaul of generation equipment. The Renewable Energy Sources segment engages in the electricity generation through renewable energy sources, including hydroelectric power plants and wind farms. The Distribution segment provides electricity distribution service using the distribution grids; and technical support services related to electricity metering systems and metering data acquisition. The Supply segment engages in the wholesale trade of electricity, natural gas, and derivative products, as well as trading and management of CO2 emission allowances, property rights arising from certificates of origin that confirm electricity generation from renewable sources, and cogeneration and property rights arising from energy efficiency certificates and fuels; electricity and natural gas supply; and lighting service sales. TAURON Polska Energia S.A. is also involved in the extraction of stone, including limestone for the needs of power generation, steel making, construction, and road building industries, as well as the production of sorbents agents for wet desulphurization installations and fluidized bed boilers; and real estate administration and property security activities. The company was formerly known as Energetyka Poludnie S.A. and changed its name to TAURON Polska Energia S.A. in November 2007. TAURON Polska Energia S.A. was incorporated in 2006 and is based in Katowice, Poland.",
         "currency": "EUR",
         "sector": "Utilities",
         "industry": "Utilities - Renewable",
@@ -10,6 +22,18 @@
         "market": "dr_market",
         "country": "Poland",
         "city": "Katowice"
+    },
+    "2ZO.F": {
+        "short_name": "KOGENERACJA S.A.  ZY 5",
+        "long_name": "Zesp\u00f3l Elektrocieplowni Wroclawskich KOGENERACJA S.A.",
+        "summary": "Zesp\u00c3\u00b3l Elektrocieplowni Wroclawskich KOGENERACJA S.A. engages in the production of electricity and heat in Poland. The company is also involved in the wholesale and retail sale of electricity, heat, and power industry products and services. It operates 3 production plants, including the Wroclaw, Czechnica, and Zawidawie heat and power plants located in Wroclaw with a total electric capacity of 365.7 megawatts; and 1,080.4 megawatts of heat power. The company is based in Wroclaw, Poland. Zesp\u00c3\u00b3l Elektrocieplowni Wroclawskich KOGENERACJA S.A. is a subsidiary of PGE Energia Ciepla S.A.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Poland",
+        "city": "Wroclaw"
     },
     "6PG.F": {
         "short_name": "PGE PL.GR.ENERG. ZY10,25",
@@ -22,5 +46,17 @@
         "market": "dr_market",
         "country": "Poland",
         "city": "Warsaw"
+    },
+    "EN2.F": {
+        "short_name": "ENERGA SA AA  ZY 10,92",
+        "long_name": "Energa SA",
+        "summary": "Energa SA, together with its subsidiaries, generates, distributes, trades in, and sells electricity and heat in Poland. The company operates through Distribution, Generation, and Sales segments. It operates hydropower, wind, biomass, and photovoltaic power plants with a total installed generation capacity of approximately 1.38 gigawatt of electrical power; and supplies electricity to approximately 3.2 million customers. As of December 31, 2020, the company had 191 thousand kilometers of power lines. It also provides contracting and design, lighting, financing, repair and maintenance, logistics and supply, and property management services, as well as accounting, payroll, administrative, and security services; and information and communication technologies. The company was founded in 2006 and is headquartered in Gdansk, Poland. Energa SA is a subsidiary of Polski Koncern Naftowy ORLEN Sp\u00c3\u00b3lka Akcyjna.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Poland",
+        "city": "Gdansk"
     }
 }

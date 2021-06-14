@@ -29,16 +29,6 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "DVLU": {
-        "short_name": "First Trust Dorsey Wright Momen",
-        "long_name": "First Trust Dorsey Wright Momentum & Value ETF",
-        "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an index called the Dorsey Wright Momentum Plus Value Index (the \"index\").\n Under normal conditions, the fund will invest at least 90% of its net assets (including investment borrowings) in the equity securities that comprise the index. The index is a rules-based equity index designed to track the overall performance of the 50 most undervalued stocks comprising the NASDAQ US Large Mid Index that exhibit high levels of \"relative strength.\" The fund is non-diversified.",
-        "category": "Mid-Cap Value",
-        "family": "First Trust",
-        "exchange": "NMS",
-        "market": "us_market"
-    },
     "FAB": {
         "short_name": "First Trust Multi Cap Value Alp",
         "long_name": "First Trust Multi Cap Value AlphaDEX Fund",
@@ -46,7 +36,7 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of the Nasdaq AlphaDEX\u00c2\u00ae Multi Cap Value Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks that comprise the index. The index is designed to select value stocks from the NASDAQ US 500 Large Cap Index, NASDAQ US 600 Mid Cap Index and NASDAQ US 700 Small Cap Index that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
         "category": "Mid-Cap Value",
         "family": "First Trust",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "IJJ": {
@@ -59,14 +49,44 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "JKI": {
-        "short_name": "iShares Morningstar Mid-Cap ETF",
+    "IMCV": {
+        "short_name": "iShares Morningstar Mid-Cap Val",
         "long_name": "iShares Morningstar Mid-Cap Value ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the Morningstar\u00c2\u00ae US Mid Value IndexSM composed of mid-capitalization U.S. equities that exhibit value characteristics.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. The underlying index measures the performance of stocks issued by mid-capitalization companies that have exhibited \"value\" characteristics as determined by Morningstar, Inc.&#39;s (\"Morningstar\" or the \"index provider\") proprietary index methodology.",
+        "summary": "The investment seeks to track the investment results of the Morningstar\u00c2\u00ae US Mid Cap Broad Value IndexSM composed of mid-capitalization U.S. equities that exhibit value characteristics.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. The underlying index measures the performance of stocks issued by mid-capitalization companies that have exhibited \u00e2\u0080\u009cvalue\u00e2\u0080\u009d characteristics as determined by Morningstar, Inc.\u00e2\u0080\u0099s (\u00e2\u0080\u009cMorningstar\u00e2\u0080\u009d or the \u00e2\u0080\u009cindex provider\u00e2\u0080\u009d) proprietary index methodology.",
         "category": "Mid-Cap Value",
         "family": "iShares",
         "exchange": "NGM",
+        "market": "us_market"
+    },
+    "IVOV": {
+        "short_name": "Vanguard S&P Mid-Cap 400 Value ",
+        "long_name": "Vanguard S&P Mid-Cap 400 Value Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of mid-capitalization value stocks in the United States.\n The fund employs an indexing investment approach designed to track the performance of the S&P MidCap 400\u00c2\u00ae Value Index, which represents the value companies, as determined by the index sponsor, of the S&P MidCap 400 Index. The Advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+        "category": "Mid-Cap Value",
+        "family": "Vanguard",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IWS": {
+        "short_name": "iShares Russell Mid-cap Value E",
+        "long_name": "iShares Russell Mid-Cap Value ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Russell Midcap Value Index, which measures the performance of the mid-capitalization value sector of the U.S. equity market.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. It may invest the remainder of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the underlying index, but which the advisor believes will help the fund track the underlying index.",
+        "category": "Mid-Cap Value",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "MDYV": {
+        "short_name": "SPDR S&P 400 Mid Cap Value ETF ",
+        "long_name": "SPDR S&P 400 Mid Cap Value ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the S&P MidCap 400 Value Index.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index measures the performance of the mid-capitalization value segment of the U.S. equity market. It may purchase a subset of the securities in the index in an effort to hold a portfolio of securities with generally the same risk and return characteristics of the index.",
+        "category": "Mid-Cap Value",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "ONEY": {
@@ -87,6 +107,96 @@
         "category": "Mid-Cap Value",
         "family": "Invesco",
         "exchange": "NMS",
+        "market": "us_market"
+    },
+    "RVRS": {
+        "short_name": "Reverse Cap Weighted US Large C",
+        "long_name": "Reverse Cap Weighted U.S. Large Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance, before fees and expenses, of the Reverse Cap Weighted U.S. Large Cap Index (the \"index\").\n Under normal circumstances, at least 80% of the fund&#39;s net assets, plus borrowings for investment purposes, will be invested in large cap securities that are principally traded in the United States. The index is a rules-based, reverse capitalization weighted index comprised of constituents of the S&P 500 \u00c2\u00ae Index, which consists of approximately 500 leading U.S.-listed companies representing approximately 80% of the U.S. equity market capitalization.",
+        "category": "Mid-Cap Value",
+        "family": "Exponential ETFs",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "RWK": {
+        "short_name": "Invesco Exchange-Traded Fund Tr",
+        "long_name": "Invesco S&P MidCap 400 Revenue ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P MidCap 400\u00c2\u00ae Revenue-Weighted Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the index. The index is designed to measure the performance of positive revenue-producing constituent securities of the S&P MidCap 400 \u00c2\u00ae Index (the \u00e2\u0080\u009cParent index\u00e2\u0080\u009d). The Parent index is comprised of common stocks of approximately 400 mid-capitalization companies that generally represent the mid-cap universe of the U.S. equity market. The fund is non-diversified.",
+        "category": "Mid-Cap Value",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SYLD": {
+        "short_name": "Cambria Shareholder Yield ETF",
+        "long_name": "Cambria Shareholder Yield ETF",
+        "currency": "USD",
+        "summary": "The investment seeks income and capital appreciation.\n The fund is actively managed and seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its total assets in equity securities, including common stock, issued by U.S.-based publicly listed companies that provide high \"shareholder yield.\" Its investment adviser, Cambria Investment Management, L.P. (\"Cambria\" or the \"Adviser\"), defines \"shareholder yield\" as the totality of returns realized by an investor from a company\u00e2\u0080\u0099s cash payments for dividends, buybacks and debt paydowns.",
+        "category": "Mid-Cap Value",
+        "family": "CAMBRIA ETF TRUST",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "TMDV": {
+        "short_name": "ProShares Russell US Dividend G",
+        "long_name": "ProShares Russell US Dividend Growers ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results, before fees and expenses, that track the performance of the Russell 3000\u00c2\u00ae Dividend Elite Index (the \"index\").\n The index, constructed and maintained by FTSE International Limited, targets companies that are currently members of the Russell 3000 Index, have increased dividend payments each year for at least 35 years, and meet certain liquidity requirements. Under normal circumstances, the fund will invest at least 80% of its total assets in component securities.",
+        "category": "Mid-Cap Value",
+        "family": "ProShares",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "TPHD": {
+        "short_name": "Timothy Plan High Dividend Stoc",
+        "long_name": "Timothy Plan High Dividend Stock ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that track the performance of the Victory US Large Cap High Dividend Volatility Weighted BRI Index before fees and expenses.\n The fund seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its net assets directly or indirectly in the securities included in the Victory US Large Cap High Dividend Volatility Weighted BRI Index, an unmanaged, volatility weighted index created by the Sub-Advisor. The index combines fundamental criteria with individual security risk control achieved through volatility weighting of individual securities.",
+        "category": "Mid-Cap Value",
+        "family": "Timothy Plan",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "VFVA": {
+        "short_name": "Vanguard Wellington Fund ETF",
+        "long_name": "Vanguard U.S. Value Factor ETF ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to provide long-term capital appreciation by investing in stocks with relatively lower share prices relative to fundamental values as determined by the advisor.\n The fund invests primarily in U.S. common stocks with the potential to generate higher returns relative to the broad U.S. equity market by investing in stocks with relatively lower share prices relative to fundamental values as determined by the advisor. Under normal circumstances, at least 80% of the fund&#39;s assets will be invested in securities issued by U.S. companies.",
+        "category": "Mid-Cap Value",
+        "family": "Vanguard",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "VOE": {
+        "short_name": "Vanguard Mid-Cap Value ETF",
+        "long_name": "Vanguard Mid-Cap Value Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of the CRSP US Mid Cap Value Index that measures the investment return of mid-capitalization value stocks.\n The fund employs an indexing investment approach designed to track the performance of the CRSP US Mid Cap Value Index, a broadly diversified index of value stocks of mid-size U.S. companies. The advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+        "category": "Mid-Cap Value",
+        "family": "Vanguard",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "VRAI": {
+        "short_name": "Virtus Real Asset Income ETF",
+        "long_name": "Virtus Real Asset Income ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond, before fees and expenses, to the price and yield performance of the Indxx Real Asset Income Index (the \"underlying index\").\n Under normal market conditions, the fund will invest not less than 80% of its assets in component securities of the underlying index. The underlying index is designed to track the performance of U.S.-listed \"Real Asset\" companies, as defined by Indxx, LLC. The underlying index includes common stock, real estate investment trusts, master limited partnerships, American depositary receipts. The fund is non-diversified.",
+        "category": "Mid-Cap Value",
+        "family": "Virtus",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "VUSE": {
+        "short_name": "ETF Series Solutions Trust Vide",
+        "long_name": "Vident Core U.S. Equity Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance, before fees and expenses, of the Vident Core U.S. Stock IndexTM (the \"index\").\n Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in the component securities of the index. The underlying index is a rules-based, systematic strategy index comprised of equity securities of issuers domiciled and traded in the United States.",
+        "category": "Mid-Cap Value",
+        "family": "Vident Financial",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "WBIY": {

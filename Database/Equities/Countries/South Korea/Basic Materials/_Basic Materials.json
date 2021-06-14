@@ -107,6 +107,18 @@
         "country": "South Korea",
         "city": "Seoul"
     },
+    "001020.KS": {
+        "short_name": "PaperCorea",
+        "long_name": "PaperCorea Inc.",
+        "summary": "PaperCorea Inc. manufactures and sells paper products in South Korea and internationally. The paper manufacturing business include sack kraft papers, shopping bags, woven lamination paper, container board, and newsprint products, as well as specialty papers for PCB, saturating paper, saturating news, etc. It also engages in the real estate development comprising education, culture, art, shopping, and residence projects. The company was founded in 1944 and is headquartered in Gunsan-si, South Korea.",
+        "currency": "KRW",
+        "sector": "Basic Materials",
+        "industry": "Paper & Paper Products",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Gunsan-si"
+    },
     "001080.KS": {
         "short_name": "ManhoRope&Wire",
         "long_name": "Manho Rope & Wire Co., Ltd.",
@@ -206,7 +218,7 @@
     "001570.KS": {
         "short_name": "Kumyang",
         "long_name": "Kumyang Co., Ltd.",
-        "summary": "Kumyang Co., Ltd. produces and sells chemicals in South Korea. It offers blowing agents for polyvinyl chloride (PVC) applications, including insulation tubes, synthetic leathers, sandals, wall and floor coverings, and others; ethylene vinyl acetate (EVA) applications comprising sports shoes, sandals, interlayer noise dampers, baby toys, fishing floats, and other EVA sponges; and polyethylene and polypropylene applications, such as automotive door panels, pipes, thermal insulation, mats, and others. It also provides blowing agents for applications consisting of ethylene propylene diene monomer (EPDM), acrylonitrile-butadiene rubber, chloroprene rubber, and other rubber products that comprise EPDM weather strips, wire coverings, EPDM thermal insulations, diving suits, and rubber sponges, as well as doors, windows, and picture frames; and cap seals and others. In addition, it offers capsulated blowing agents for use in the PVC sandals, artificial leather, screen wall papers, mid sole and outsole of sports shoes, screen printing, and printing inks; and masterbatches with blowing and non-blowing agents. Further, it provides titanium dioxide products, including rutile-type for the use in coating industry, anticorrosive paints, ink, plastics, etc.; and anatase-type for the use in paper, paint, plastic, and rubber industries, as well as in toothpastes, TV, cathode-ray tubes, electronic condensers, electronic parts, photcatalysts, and PET reaction. Additionally, it offers flame retardants, an additive for plastics in construction, automobile, electric appliance, plane, and vessel industries; and other products for synthetic resins, rubber, and plastic additives. It also exports its products to North America, South America, Europe, Oceania, Asia, Africa, and internationally. The company was formerly known as Gumbuk Chemical Industrial Company and changed its name to Kumyang Co., Ltd. in July 1978. The company was founded in 1955 and is headquartered in Busan, South Korea.",
+        "summary": "Kumyang Co., Ltd. manufactures and supplies a range of chemical materials in South Korea and internationally. It offers chemical blowing agents for polyvinyl chloride, ethylene vinyl acetate, polyethylene or polypropylene, rubber, and other blowing agents; capsule blowing agents; blowing agent masterbatch products; anti-foaming agent masterbatch products; titanium dioxide products; flame retardants; and optimal solutions for synthetic resins, rubbers, and additives related to blowing agents. The company was formerly known as Gumbuk Chemical Industrial Company and changed its name to Kumyang Co., Ltd. in July 1978. The company was founded in 1955 and is headquartered in Busan, South Korea.",
         "currency": "KRW",
         "sector": "Basic Materials",
         "industry": "Chemicals",
@@ -287,18 +299,6 @@
         "country": "South Korea",
         "city": "Hwaseong"
     },
-    "002820.KS": {
-        "short_name": "Sunchang",
-        "long_name": "Sunchang Corporation",
-        "summary": "Sunchang Corporation produces and markets timber products in South Korea and internationally. The company offers plywood, medium density fiber-boards, lumber products, and PB and OSB boards. It is also involved in the transportation, heavy equipment rental, and maintenance and management businesses; and provision of consulting services. The company was founded in 1959 and is headquartered in Incheon, South Korea.",
-        "currency": "KRW",
-        "sector": "Basic Materials",
-        "industry": "Lumber & Wood Production",
-        "exchange": "KSC",
-        "market": "kr_market",
-        "country": "South Korea",
-        "city": "Incheon"
-    },
     "002840.KS": {
         "short_name": "MiwonComcl",
         "long_name": "Miwon Commercial Co., Ltd.",
@@ -336,9 +336,9 @@
         "city": "Seoul"
     },
     "003410.KS": {
-        "short_name": "SsangyongCement",
-        "long_name": "Ssangyong Cement Industrial Co., Ltd.",
-        "summary": "Ssangyong Cement Industrial Co., Ltd. engages in the production and sale of cement and clinker products in South Korea. The company offers Portland, blended, and specialty cement, as well as mortar and other related products, such as non-shrinkage mortar, resistance acid mortar, and expansion agents for use in architectural and civil engineering works. It is also involved in the waste recycling and other environment-related business; sale of petroleum products. In addition, the company engages in the mining and sale limestone; maritime transportation and unloading of cement, krinka, etc.; and leasing of office and real estate. The company also exports its products to the United States, Japan, Africa, and the Middle East. Ssangyong Cement Industrial Co., Ltd. was founded in 1962 and is headquartered in Donghae, South Korea. Ssangyong Cement Industrial Co., Ltd. is a subsidiary of Hahn & Co. Cement Holdings Limited.",
+        "short_name": "SSANGYONGCNE",
+        "long_name": "SsangYong C&E Co., Ltd.",
+        "summary": "SsangYong C&E Co., Ltd. engages in the production and sale of cement and clinker products in South Korea. The company offers Portland, blended, and specialty cement, as well as mortar and other related products, such as non-shrinkage mortar, resistance acid mortar, and expansion agents for use in architectural and civil engineering works. It is also involved in the waste recycling and other environment-related business; sale of petroleum products. In addition, the company engages in the mining and sale limestone; maritime transportation and unloading of cement, krinka, etc.; and leasing of office and real estate. The company also exports its products to the United States, Japan, Africa, and the Middle East. The company was formerly known as Ssangyong Cement Industrial Co., Ltd. and changed its name to SsangYong C&E Co., Ltd. in March 2021. SsangYong C&E Co., Ltd. was founded in 1962 and is headquartered in Seoul, South Korea. SsangYong C&E Co., Ltd. is a subsidiary of Hahn & Co. Cement Holdings Limited.",
         "currency": "KRW",
         "sector": "Basic Materials",
         "industry": "Building Materials",
@@ -378,6 +378,18 @@
         "currency": "KRW",
         "sector": "Basic Materials",
         "industry": "Steel",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "004150.KS": {
+        "short_name": "HANSOL HOLDINGS",
+        "long_name": "Hansol Holdings Co., Ltd.",
+        "summary": "Hansol Holdings Co., Ltd. engages in the paper material and business solution businesses in South Korea. The company offers corrugated container boards, including liner boards, test liner boards, and corrugated medium papers; interior materials for flooring, wall, door, molding, and sheets applications; furniture components, such as MDF and processed boards; and overseas afforestation and renewable energy services. It provides engineering, purchasing, procurement, construction, and O&M services in the areas of incineration, power plant, and complex environment plant; management advice and consultation services; electronics power module, wireless charging, solar module and generation, LED material, and mobile phone parts and EMS products; and IT chemicals, fine chemicals, and eco-friendly chemicals. In addition, the company engages in the sea and air logistics, container and truck transportations, and W&D business; and tributary distribution, IT services, etc. Hansol Holdings Co., Ltd. was founded in 1965 and is headquartered in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Basic Materials",
+        "industry": "Paper & Paper Products",
         "exchange": "KSC",
         "market": "kr_market",
         "country": "South Korea",
@@ -506,7 +518,7 @@
     "005490.KS": {
         "short_name": "POSCO",
         "long_name": "POSCO",
-        "summary": "POSCO manufactures and sells steel rolled products and plates in South Korea and internationally. It operates through four segments: Steel, Construction, Trading, and Others. The company offers hot and cold rolled steel, stainless steel, plates, wire rods, and silicon steel sheets. It also plans, designs, and constructs industrial plants, civil engineering projects, and commercial and residential buildings; exports and imports steel products and raw materials; and generates electricity; produces gas and refuse derived fuel, as well as provides network and system integration, and logistics services. In addition, the company is involved in the engineering and construction; computer hardware and software distribution; economic research and consulting; business facility maintenance; architecture and consulting; investment in venture, energy, and bio tech industries; electronic commerce; intellectual property services and consulting; refractories and quicklime manufacturing and sales; transporting and warehousing; real estate development, rental, sale, and management; house and train manufacturing and management; and education and real estate business. Further, it engages in the resource development; mine development; business facility maintenance; fuel cell; iron ore and coal sales; and cargo handling business, as well as operates housing business agency. Additionally, the company manufactures and sells coated steel and steel byproduct, anode material, and textile products. It also engages in loading and unloading; IT service and DVR; electric control engineering; forest resources development; wastewater treatment operation and maintenance; refractory materials sales and furnace maintenance; rice processing; grain sales; packing materials manufacturing; and social enterprise businesses. POSCO was founded in 1968 and is headquartered in Pohang, South Korea.",
+        "summary": "POSCO, together with its subsidiaries, manufactures and sells steel rolled products and plates in South Korea and internationally. It operates through four segments: Steel, Construction, Trading, and Others. The company offers hot and cold rolled steel, stainless steel, plates, wire rods, and silicon steel sheets. It also plans, designs, and constructs industrial plants, civil engineering projects, and commercial and residential buildings; exports and imports steel products and raw materials; and generates electricity; produces gas and refuse derived fuel, as well as provides network and system integration, and logistics services. In addition, the company is involved in the engineering and construction; computer hardware and software distribution; economic research and consulting; business facility maintenance; architecture and consulting; investment in venture, energy, and bio tech industries; electronic commerce; intellectual property services and consulting; refractories and quicklime manufacturing and sales; transporting and warehousing; real estate development, rental, sale, and management; house and train manufacturing and management; and education and real estate business. Further, it engages in the resource development; mine development; business facility maintenance; fuel cell; iron ore and coal sales; and cargo handling business, as well as operates housing business agency. Additionally, the company manufactures and sells coated, and anode material. It also engages in loading and unloading; IT service and DVR; electric control engineering; forest resources development; refractory materials sales and furnace maintenance; rice processing; grain sales; packing materials manufacturing; and social enterprise businesses. POSCO was incorporated in 1968 and is headquartered in Pohang, South Korea.",
         "currency": "KRW",
         "sector": "Basic Materials",
         "industry": "Steel",
@@ -538,18 +550,6 @@
         "market": "kr_market",
         "country": "South Korea",
         "city": "Busan"
-    },
-    "006110.KS": {
-        "short_name": "SamaAlum",
-        "long_name": "Sam-A Aluminium Company, Limited",
-        "summary": "Sam-A Aluminium Company, Limited produces and sells plain aluminum foils, converted foils, and aluminum paste in South Korea. Its plain aluminum foils are used in various applications, including tobacco, dairy, preserved food, beverage, dessert, cosmetic, pharmaceutical, machinery, electric and electronic, thermal insulation, textile and apparel, decoration, and other products, as well as in household goods. The company offers aluminum paste for use in structure, ship bottom, and automotive paintings; and dried aluminum paste used as a forming agent in the manufacture of aerated lightweight concrete products and raw material of explosives. It also exports its products. The company was founded in 1969 and is based in Pyeongtaek, South Korea.",
-        "currency": "KRW",
-        "sector": "Basic Materials",
-        "industry": "Aluminum",
-        "exchange": "KSC",
-        "market": "kr_market",
-        "country": "South Korea",
-        "city": "Pyeongtaek-Si"
     },
     "006380.KS": {
         "short_name": "CAPRO",
@@ -587,18 +587,6 @@
         "country": "South Korea",
         "city": "Pyeongtaek-Si"
     },
-    "007280.KS": {
-        "short_name": "KOSCO",
-        "long_name": "Korea Steel Shapes Co., Ltd.",
-        "summary": "Korea Steel Shapes Co., Ltd. manufactures and sells steel products in South Korea. It offers billets; sections, including equal and un-equal angles, channels, checkered channels, elevator rails, and profiles; steel bars, such as rounds, screw bars, and square bar steels; and flat steels comprising flat bars and I-bars. The company was formerly known as Busan Steel Co., Ltd. and changed its name to Korea Steel Shapes Co., Ltd. in March 2001. Korea Steel Shapes Co., Ltd. was founded in 1971 and is headquartered in Busan, South Korea.",
-        "currency": "KRW",
-        "sector": "Basic Materials",
-        "industry": "Steel",
-        "exchange": "KSC",
-        "market": "kr_market",
-        "country": "South Korea",
-        "city": "Busan"
-    },
     "007690.KS": {
         "short_name": "KukdoChem",
         "long_name": "Kukdo Chemical Co., Ltd.",
@@ -622,6 +610,18 @@
         "market": "kr_market",
         "country": "South Korea",
         "city": "Incheon"
+    },
+    "008260.KS": {
+        "short_name": "NI STEEL",
+        "long_name": "N.I Steel Co.,Ltd",
+        "summary": "N.I Steel Co., Ltd produces and sells steel products for construction sites in South Korea. The company offers sheet piles, HYFO beams, act columns, smart beams, modular H-beams, D-deck plates, and steel curtain walls, as well as leases and sells H-beams. The company was formerly known as N.I TECH Co., Ltd and changed its name to N.I Steel Co., Ltd in March 2007. N.I Steel Co., Ltd was founded in 1972 and is headquartered in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
     },
     "008350.KS": {
         "short_name": "NamsunAlum",
@@ -743,6 +743,18 @@
         "country": "South Korea",
         "city": "Seoul"
     },
+    "010060.KS": {
+        "short_name": "OCI",
+        "long_name": "OCI Company Ltd.",
+        "summary": "OCI Company Ltd., together with its subsidiaries, manufactures and sells basic chemical products in Korea, the United States, China, Asia, Europe, and internationally. The company operates through four segments: Basic Chemicals, Carbon Chemicals, Energy Solutions, and Others. It provides basic chemicals, such as polysilicon used for solar power generation and semiconductors; phosphoric acid, which is used in semiconductor wafer etchant material, LCD etchant material, food additives, and metal surface treatment agents; hydrogen peroxide used as an environmentally friendly oxidant in healthcare, food, and cosmetic industries; fumed silica that is used in construction, automobile, semiconductors, etc.; and vacuum insulation panels. The company also offers petrochemical and carbon materials, including carbon black used as reinforcing rubber elasticity and color rubber, as well as ink, paint, and conductive materials; benzene, toluene, and xylene used as a base material; pitch used as a binding agent in anodes for aluminum smelting, and other binding applications; plasticizers that enhance flexibility, low-temperature resistance, and processability of PVC products; and TDI used in foam type products, such as the components of vehicles, beds, paints, and adhesives. In addition, it provides develops and operates solar PV energy and cogeneration power plants. Further, the company manufactures and sells percarbonate, solar tracker and panels, pesticides, coal tar, carbon black, as well as solar energy equipment and related materials. Additionally, it develops real estate; invests in and operates information system; supplies steam and hot water; and offers manpower and jobs for business support services. The company was formerly known as DC Chemical Co., Ltd. and changed its name to OCI Company Ltd. in April 2009. OCI Company Ltd. was founded in 1959 and is headquartered in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Basic Materials",
+        "industry": "Chemicals",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
     "010420.KS": {
         "short_name": "HANSOLPNS",
         "long_name": "Hansol PNS Co.,Ltd.",
@@ -806,7 +818,7 @@
     "011780.KS": {
         "short_name": "KumhoPetrochem",
         "long_name": "Kumho Petrochemical Co., Ltd.",
-        "summary": "Kumho Petrochemical Co., Ltd. manufactures and sells synthetic rubber and resins, specialty chemicals, electronic materials, nanocarbon, energy, building, and IT materials in South Korea and internationally. The company's synthetic rubber products include styrene butadiene rubber, high-cis and low-cis polybutadiene rubber, solution polymerized styrene butadiene rubber, ultra high-cis polybutadiene rubber, acrylonitrile butadiene rubber, high styrene resin masterbatch, styrene-butadiene latex and carboxylated styrene-butadiene latex, styrene butadiene styrene, styrenic thermoplastic elastomer compounds, and LEADCAP for use in industrial items, such as golf balls, medical products, footwear, asphalt modifiers, etc. Its synthetic resin products comprise general purpose polystyrene, high impact polystyrene, acrylonitrile butadiene styrene, engineering plastics, expandable polystyrene, ENERPOR, polypropylene glycol, and styrene acrylonitrile for use in general-purpose products, such as automotive parts, electronic components, food containers, building materials, etc. The company's specialty chemicals consist of antioxidants, vulcanization accelerators, and paint additives/diluents used in tires; electronic materials include photoresists, bottom anti-reflection coatings, photosensitive polyimide, and LCD panel sealants; and carbon nanotubes used in semiconductor and display industries. Its building materials comprise ABS window systems, PVC window systems, AL window systems, and gold foam insulators; and facial recognition IT systems and solutions. The company also operates a cogeneration plant that provides residential, commercial, and industrial users with electricity, steam, and purified water to businesses. Kumho Petrochemical Co., Ltd. was founded in 1970 and is headquartered in Seoul, South Korea.",
+        "summary": "Kumho Petrochemical Co., Ltd. manufactures and sells synthetic rubber and resins, specialty chemicals, nanocarbon, energy, and building materials in South Korea and internationally. The company's synthetic rubber products include high-cis and low-cis polybutadiene rubber, high styrene resin masterbatch, styrene butadiene latex and carboxyl styrene butadiene latex, LEADCAP, acrylonitrile butadiene rubber, ultra high-cis polybutadiene rubber, styrene butadiene rubber, styrene butadiene styrene, solution polymerized styrene butadiene rubber, and STE for use in industrial items, such as golf balls, medical products, footwear, asphalt modifiers, etc. Its synthetic resin products comprise acrylonitrile butadiene styrene, ENERPOR, engineering plastics, expandable polystyrene, GPPS, HIPS, polypropylene glycol, and styrene acrylonitrile for use in general-purpose products, such as automotive parts, electronic components, food containers, building materials, etc. The company also provides specialty chemicals consisting of antioxidants, vulcanization accelerators, and paint additives/diluents used in tires, rubber belts, and shoes; carbon nanotubes; and building materials comprise ABS window systems, PVC window systems, AL window systems, and gold foam insulators. In addition, it operates a cogeneration plant that provides residential, commercial, and industrial users with electricity, steam, and purified water to businesses. Kumho Petrochemical Co., Ltd. was founded in 1970 and is headquartered in Seoul, South Korea.",
         "currency": "KRW",
         "sector": "Basic Materials",
         "industry": "Specialty Chemicals",
@@ -818,7 +830,7 @@
     "011785.KS": {
         "short_name": "KumhoPetrochem(1P)",
         "long_name": "Kumho Petrochemical Co., Ltd.",
-        "summary": "Kumho Petrochemical Co., Ltd. manufactures and sells synthetic rubber and resins, specialty chemicals, electronic materials, nanocarbon, energy, building, and IT materials in South Korea and internationally. The company's synthetic rubber products include styrene butadiene rubber, high-cis and low-cis polybutadiene rubber, solution polymerized styrene butadiene rubber, ultra high-cis polybutadiene rubber, acrylonitrile butadiene rubber, high styrene resin masterbatch, styrene-butadiene latex and carboxylated styrene-butadiene latex, styrene butadiene styrene, styrenic thermoplastic elastomer compounds, and LEADCAP for use in industrial items, such as golf balls, medical products, footwear, asphalt modifiers, etc. Its synthetic resin products comprise general purpose polystyrene, high impact polystyrene, acrylonitrile butadiene styrene, engineering plastics, expandable polystyrene, ENERPOR, polypropylene glycol, and styrene acrylonitrile for use in general-purpose products, such as automotive parts, electronic components, food containers, building materials, etc. The company's specialty chemicals consist of antioxidants, vulcanization accelerators, and paint additives/diluents used in tires; electronic materials include photoresists, bottom anti-reflection coatings, photosensitive polyimide, and LCD panel sealants; and carbon nanotubes used in semiconductor and display industries. Its building materials comprise ABS window systems, PVC window systems, AL window systems, and gold foam insulators; and facial recognition IT systems and solutions. The company also operates a cogeneration plant that provides residential, commercial, and industrial users with electricity, steam, and purified water to businesses. Kumho Petrochemical Co., Ltd. was founded in 1970 and is headquartered in Seoul, South Korea.",
+        "summary": "Kumho Petrochemical Co., Ltd. manufactures and sells synthetic rubber and resins, specialty chemicals, nanocarbon, energy, and building materials in South Korea and internationally. The company's synthetic rubber products include high-cis and low-cis polybutadiene rubber, high styrene resin masterbatch, styrene butadiene latex and carboxyl styrene butadiene latex, LEADCAP, acrylonitrile butadiene rubber, ultra high-cis polybutadiene rubber, styrene butadiene rubber, styrene butadiene styrene, solution polymerized styrene butadiene rubber, and STE for use in industrial items, such as golf balls, medical products, footwear, asphalt modifiers, etc. Its synthetic resin products comprise acrylonitrile butadiene styrene, ENERPOR, engineering plastics, expandable polystyrene, GPPS, HIPS, polypropylene glycol, and styrene acrylonitrile for use in general-purpose products, such as automotive parts, electronic components, food containers, building materials, etc. The company also provides specialty chemicals consisting of antioxidants, vulcanization accelerators, and paint additives/diluents used in tires, rubber belts, and shoes; carbon nanotubes; and building materials comprise ABS window systems, PVC window systems, AL window systems, and gold foam insulators. In addition, it operates a cogeneration plant that provides residential, commercial, and industrial users with electricity, steam, and purified water to businesses. Kumho Petrochemical Co., Ltd. was founded in 1970 and is headquartered in Seoul, South Korea.",
         "currency": "KRW",
         "sector": "Basic Materials",
         "industry": "Specialty Chemicals",
@@ -902,7 +914,7 @@
     "014440.KS": {
         "short_name": "YoungboChem",
         "long_name": "Youngbo Chemical Co., Ltd.",
-        "summary": "Youngbo Chemical Co., Ltd. manufactures and sells cross-linked polyolefin foam in South Korea and internationally. The company offers artiflex, artilon, epilon, heatlon, filmy, polyisocyanurate, and youngboard cross-linked polyolefin foam products. Its products are used in various applications, including automotive interior, home appliance and HVAC/climate control, building and construction, sports and leisure, packaging and cushioning, sundry goods and others, specialty products, IT parts materials, sound absorption material, electronic materials, and wallpaper products. The company was founded in 1979 and is headquartered in Chungju, South Korea.",
+        "summary": "Youngbo Chemical Co., Ltd. manufactures and sells cross-linked polyolefin foam in Korea and internationally. The company offers artiflex, artilon, epilon, heatlon, filmy, polyisocyanurate, and youngboard cross-linked polyolefin foam products. Its products are used in various applications, including automotive interior, home appliance and HVAC/climate control, building and construction, sports and leisure, packaging and cushioning, sundry goods and others, specialty products, IT parts materials, sound absorption materials, electronic materials, and wallpaper products. The company was founded in 1979 and is headquartered in Chungju-si, South Korea.",
         "currency": "KRW",
         "sector": "Basic Materials",
         "industry": "Chemicals",
@@ -1018,6 +1030,18 @@
         "market": "kr_market",
         "country": "South Korea",
         "city": "Pohang"
+    },
+    "024070.KS": {
+        "short_name": "WISCOM",
+        "long_name": "Wiscom Co.,Ltd.",
+        "summary": "Wiscom Co.,Ltd. manufactures and sells plastic products in South Korea. It operates through PNP and Manufacturing divisions. The company offers HFFR and HFIX, crosslinked type XLPE, power cable, communication cable, flame retardant cable, heat resistant cable, cold resistant cable, oil resistant, solar power cable, marine cable, automobile cable, automobile interior/exterior, rat and ant repellent, equipment wire PVC, hose pipe, and other compounds; and coating compounds for voltage power cables, as well as semi-conductive compounds for cables. It also produces soft/hard PVC, PO, masterbatch, and conductive compounds; and LG Chem/LG MMA OEM products, such as ABS/PS compounds, EP compounds, PMMA compounds, etc. The company was founded in 1973 and is headquartered in Ansan-si, South Korea.",
+        "currency": "KRW",
+        "sector": "Basic Materials",
+        "industry": "Chemicals",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Ansan-Si"
     },
     "024890.KS": {
         "short_name": "DaewonChem",
@@ -1178,26 +1202,26 @@
     "090350.KS": {
         "short_name": "NOROOPAINT",
         "long_name": "NOROO PAINT & COATINGS Co., Ltd.",
-        "summary": "NOROO PAINT & COATINGS Co., Ltd. develops, manufactures, and sells paints in South Korea and internationally. It provides floor, waterproof, heavy duty, PCM, household electrical appliance, and industrial coating products, as well as architecture and automotive refinish paint products; and resin products. The company offers its products under the SOON&SOO, Pantone Paint, YEGREENA, NOROOWAY, HiQ, Q-Fit, Natural, Color stain, Pororo Paint, and Energy Saver brands. It also engages in the market research and networking activities. The company was founded in 1945 and is based in Anyang, South Korea. NOROO PAINT & COATINGS Co., Ltd is a subsidiary of NOROO Holdings Co., Ltd.",
+        "summary": "NOROO PAINT & COATINGS Co., Ltd. develops, manufactures, and sells paints in South Korea and internationally. It provides floor, waterproof, heavy duty, PCM, household electrical appliance, and industrial coating products, as well as architecture and automotive refinish paint products; and resin products. The company offers its products under the SOON&SOO, Pantone Paint, YEGREENA, NOROOWAY, HiQ, Q-Fit, Natural, Color stain, Pororo Paint, and Energy Saver brands. It also engages in the market research and networking activities. The company was founded in 1945 and is based in Anyang-si, South Korea. NOROO PAINT & COATINGS Co., Ltd is a subsidiary of NOROO Holdings Co., Ltd.",
         "currency": "KRW",
         "sector": "Basic Materials",
         "industry": "Specialty Chemicals",
         "exchange": "KSC",
         "market": "kr_market",
         "country": "South Korea",
-        "city": "Anyang"
+        "city": "Anyang-Si"
     },
     "090355.KS": {
         "short_name": "NOROOPAINT(1P)",
         "long_name": "NOROO PAINT & COATINGS Co., Ltd.",
-        "summary": "NOROO PAINT & COATINGS Co., Ltd. develops, manufactures, and sells paints in South Korea and internationally. It provides floor, waterproof, heavy duty, PCM, household electrical appliance, and industrial coating products, as well as architecture and automotive refinish paint products; and resin products. The company offers its products under the SOON&SOO, Pantone Paint, YEGREENA, NOROOWAY, HiQ, Q-Fit, Natural, Color stain, Pororo Paint, and Energy Saver brands. It also engages in the market research and networking activities. The company was founded in 1945 and is based in Anyang, South Korea. NOROO PAINT & COATINGS Co., Ltd is a subsidiary of NOROO Holdings Co., Ltd.",
+        "summary": "NOROO PAINT & COATINGS Co., Ltd. develops, manufactures, and sells paints in South Korea and internationally. It provides floor, waterproof, heavy duty, PCM, household electrical appliance, and industrial coating products, as well as architecture and automotive refinish paint products; and resin products. The company offers its products under the SOON&SOO, Pantone Paint, YEGREENA, NOROOWAY, HiQ, Q-Fit, Natural, Color stain, Pororo Paint, and Energy Saver brands. It also engages in the market research and networking activities. The company was founded in 1945 and is based in Anyang-si, South Korea. NOROO PAINT & COATINGS Co., Ltd is a subsidiary of NOROO Holdings Co., Ltd.",
         "currency": "KRW",
         "sector": "Basic Materials",
         "industry": "Specialty Chemicals",
         "exchange": "KSC",
         "market": "kr_market",
         "country": "South Korea",
-        "city": "Anyang"
+        "city": "Anyang-Si"
     },
     "093370.KS": {
         "short_name": "FOOSUNG",
@@ -1367,22 +1391,10 @@
         "country": "South Korea",
         "city": "Seoul"
     },
-    "PKX": {
-        "short_name": "POSCO",
-        "long_name": "POSCO",
-        "summary": "POSCO manufactures and sells steel rolled products and plates in South Korea and internationally. It operates through four segments: Steel, Construction, Trading, and Others. The company offers hot and cold rolled steel, stainless steel, plates, wire rods, and silicon steel sheets. It also plans, designs, and constructs industrial plants, civil engineering projects, and commercial and residential buildings; exports and imports steel products and raw materials; and generates electricity; produces gas and refuse derived fuel, as well as provides network and system integration, and logistics services. In addition, the company is involved in the engineering and construction; computer hardware and software distribution; economic research and consulting; business facility maintenance; architecture and consulting; investment in venture, energy, and bio tech industries; electronic commerce; intellectual property services and consulting; refractories and quicklime manufacturing and sales; transporting and warehousing; real estate development, rental, sale, and management; house and train manufacturing and management; and education and real estate business. Further, it engages in the resource development; mine development; business facility maintenance; fuel cell; iron ore and coal sales; and cargo handling business, as well as operates housing business agency. Additionally, the company manufactures and sells coated steel and steel byproduct, anode material, and textile products. It also engages in loading and unloading; IT service and DVR; electric control engineering; forest resources development; wastewater treatment operation and maintenance; refractory materials sales and furnace maintenance; rice processing; grain sales; packing materials manufacturing; and social enterprise businesses. POSCO was founded in 1968 and is headquartered in Pohang, South Korea.",
-        "currency": "USD",
-        "sector": "Basic Materials",
-        "industry": "Steel",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "South Korea",
-        "city": "Pohang"
-    },
     "PKX.F": {
         "short_name": "POSCO SP.ADR 1/4/SW 5000",
         "long_name": "POSCO",
-        "summary": "POSCO manufactures and sells steel rolled products and plates in South Korea and internationally. It operates through four segments: Steel, Construction, Trading, and Others. The company offers hot and cold rolled steel, stainless steel, plates, wire rods, and silicon steel sheets. It also plans, designs, and constructs industrial plants, civil engineering projects, and commercial and residential buildings; exports and imports steel products and raw materials; and generates electricity; produces gas and refuse derived fuel, as well as provides network and system integration, and logistics services. In addition, the company is involved in the engineering and construction; computer hardware and software distribution; economic research and consulting; business facility maintenance; architecture and consulting; investment in venture, energy, and bio tech industries; electronic commerce; intellectual property services and consulting; refractories and quicklime manufacturing and sales; transporting and warehousing; real estate development, rental, sale, and management; house and train manufacturing and management; and education and real estate business. Further, it engages in the resource development; mine development; business facility maintenance; fuel cell; iron ore and coal sales; and cargo handling business, as well as operates housing business agency. Additionally, the company manufactures and sells coated steel and steel byproduct, anode material, and textile products. It also engages in loading and unloading; IT service and DVR; electric control engineering; forest resources development; wastewater treatment operation and maintenance; refractory materials sales and furnace maintenance; rice processing; grain sales; packing materials manufacturing; and social enterprise businesses. POSCO was founded in 1968 and is headquartered in Pohang, South Korea.",
+        "summary": "POSCO, together with its subsidiaries, manufactures and sells steel rolled products and plates in South Korea and internationally. It operates through four segments: Steel, Construction, Trading, and Others. The company offers hot and cold rolled steel, stainless steel, plates, wire rods, and silicon steel sheets. It also plans, designs, and constructs industrial plants, civil engineering projects, and commercial and residential buildings; exports and imports steel products and raw materials; and generates electricity; produces gas and refuse derived fuel, as well as provides network and system integration, and logistics services. In addition, the company is involved in the engineering and construction; computer hardware and software distribution; economic research and consulting; business facility maintenance; architecture and consulting; investment in venture, energy, and bio tech industries; electronic commerce; intellectual property services and consulting; refractories and quicklime manufacturing and sales; transporting and warehousing; real estate development, rental, sale, and management; house and train manufacturing and management; and education and real estate business. Further, it engages in the resource development; mine development; business facility maintenance; fuel cell; iron ore and coal sales; and cargo handling business, as well as operates housing business agency. Additionally, the company manufactures and sells coated, and anode material. It also engages in loading and unloading; IT service and DVR; electric control engineering; forest resources development; refractory materials sales and furnace maintenance; rice processing; grain sales; packing materials manufacturing; and social enterprise businesses. POSCO was incorporated in 1968 and is headquartered in Pohang, South",
         "currency": "EUR",
         "sector": "Basic Materials",
         "industry": "Steel",
@@ -1391,10 +1403,22 @@
         "country": "South Korea",
         "city": "Pohang"
     },
+    "PKX": {
+        "short_name": "POSCO",
+        "long_name": "POSCO",
+        "summary": "POSCO, together with its subsidiaries, manufactures and sells steel rolled products and plates in South Korea and internationally. It operates through four segments: Steel, Construction, Trading, and Others. The company offers hot and cold rolled steel, stainless steel, plates, wire rods, and silicon steel sheets. It also plans, designs, and constructs industrial plants, civil engineering projects, and commercial and residential buildings; exports and imports steel products and raw materials; and generates electricity; produces gas and refuse derived fuel, as well as provides network and system integration, and logistics services. In addition, the company is involved in the engineering and construction; computer hardware and software distribution; economic research and consulting; business facility maintenance; architecture and consulting; investment in venture, energy, and bio tech industries; electronic commerce; intellectual property services and consulting; refractories and quicklime manufacturing and sales; transporting and warehousing; real estate development, rental, sale, and management; house and train manufacturing and management; and education and real estate business. Further, it engages in the resource development; mine development; business facility maintenance; fuel cell; iron ore and coal sales; and cargo handling business, as well as operates housing business agency. Additionally, the company manufactures and sells coated, and anode material. It also engages in loading and unloading; IT service and DVR; electric control engineering; forest resources development; refractory materials sales and furnace maintenance; rice processing; grain sales; packing materials manufacturing; and social enterprise businesses. POSCO was incorporated in 1968 and is headquartered in Pohang, South Korea.",
+        "currency": "USD",
+        "sector": "Basic Materials",
+        "industry": "Steel",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "South Korea",
+        "city": "Pohang"
+    },
     "PKXN.MX": {
         "short_name": "POSCO",
         "long_name": "POSCO",
-        "summary": "POSCO manufactures and sells steel rolled products and plates in South Korea and internationally. It operates through four segments: Steel, Construction, Trading, and Others. The company offers hot and cold rolled steel, stainless steel, plates, wire rods, and silicon steel sheets. It also plans, designs, and constructs industrial plants, civil engineering projects, and commercial and residential buildings; exports and imports steel products and raw materials; and generates electricity; produces gas and refuse derived fuel, as well as provides network and system integration, and logistics services. In addition, the company is involved in the engineering and construction; computer hardware and software distribution; economic research and consulting; business facility maintenance; architecture and consulting; investment in venture, energy, and bio tech industries; electronic commerce; intellectual property services and consulting; refractories and quicklime manufacturing and sales; transporting and warehousing; real estate development, rental, sale, and management; house and train manufacturing and management; and education and real estate business. Further, it engages in the resource development; mine development; business facility maintenance; fuel cell; iron ore and coal sales; and cargo handling business, as well as operates housing business agency. Additionally, the company manufactures and sells coated steel and steel byproduct, anode material, and textile products. It also engages in loading and unloading; IT service and DVR; electric control engineering; forest resources development; wastewater treatment operation and maintenance; refractory materials sales and furnace maintenance; rice processing; grain sales; packing materials manufacturing; and social enterprise businesses. POSCO was founded in 1968 and is headquartered in Pohang, South Korea.",
+        "summary": "POSCO, together with its subsidiaries, manufactures and sells steel rolled products and plates in South Korea and internationally. It operates through four segments: Steel, Construction, Trading, and Others. The company offers hot and cold rolled steel, stainless steel, plates, wire rods, and silicon steel sheets. It also plans, designs, and constructs industrial plants, civil engineering projects, and commercial and residential buildings; exports and imports steel products and raw materials; and generates electricity; produces gas and refuse derived fuel, as well as provides network and system integration, and logistics services. In addition, the company is involved in the engineering and construction; computer hardware and software distribution; economic research and consulting; business facility maintenance; architecture and consulting; investment in venture, energy, and bio tech industries; electronic commerce; intellectual property services and consulting; refractories and quicklime manufacturing and sales; transporting and warehousing; real estate development, rental, sale, and management; house and train manufacturing and management; and education and real estate business. Further, it engages in the resource development; mine development; business facility maintenance; fuel cell; iron ore and coal sales; and cargo handling business, as well as operates housing business agency. Additionally, the company manufactures and sells coated, and anode material. It also engages in loading and unloading; IT service and DVR; electric control engineering; forest resources development; refractory materials sales and furnace maintenance; rice processing; grain sales; packing materials manufacturing; and social enterprise businesses. POSCO was incorporated in 1968 and is headquartered in Pohang, South",
         "currency": "MXN",
         "sector": "Basic Materials",
         "industry": "Steel & Iron",

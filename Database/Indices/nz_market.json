@@ -1,135 +1,324 @@
 {
-    "^NZ50": {
-        "short_name": "S&P/NZX 50 INDEX GROSS ( GROSS ",
-        "currency": "NZD",
-        "market": "nz_market",
-        "exchange": "NZE",
-        "exchange timezone": "NZDT"
-    },
-    "^NZC50": {
-        "short_name": "S&P/NZX 50 PORTFOLIO INDEX GROS",
-        "currency": "NZD",
-        "market": "nz_market",
-        "exchange": "NZE",
-        "exchange timezone": "NZDT"
-    },
-    "^NZCI": {
-        "short_name": "S&P/NZX ALL INDEX ( CAPITAL IND",
-        "currency": "NZD",
-        "market": "nz_market",
-        "exchange": "NZE",
-        "exchange timezone": "NZDT"
-    },
-    "^NZGI": {
-        "short_name": "S&P/NZX ALL INDEX GROSS ( GROSS",
-        "currency": "NZD",
-        "market": "nz_market",
-        "exchange": "NZE",
-        "exchange timezone": "NZDT"
-    },
-    "^NZMC": {
-        "short_name": "S&P/NZX MIDCAP INDEX ( CAPITAL ",
-        "currency": "NZD",
-        "market": "nz_market",
-        "exchange": "NZE",
-        "exchange timezone": "NZDT"
-    },
-    "^NZMGC": {
-        "short_name": "S&P/NZX MIDCAP INDEX GROSS ( GR",
-        "currency": "NZD",
-        "market": "nz_market",
-        "exchange": "NZE",
-        "exchange timezone": "NZDT"
-    },
-    "^NZSC": {
-        "short_name": "S&P/NZX SMALLCAP INDEX ( CAPITA",
-        "currency": "NZD",
-        "market": "nz_market",
-        "exchange": "NZE",
-        "exchange timezone": "NZDT"
-    },
-    "^NZSCG": {
-        "short_name": "S&P/NZX SMALLCAP INDEX GROSS ( ",
-        "currency": "NZD",
-        "market": "nz_market",
-        "exchange": "NZE",
-        "exchange timezone": "NZDT"
-    },
     "FWPIC.NZ": {
         "short_name": "S&P/NZX PRIMARY SECTOR INVESTAB",
         "currency": "NZD",
         "market": "nz_market",
         "exchange": "NZE",
-        "exchange timezone": "NZDT"
+        "exchange timezone": "NZST"
     },
     "FWPIG.NZ": {
         "short_name": "S&P/NZX PRIMARY SECTOR INVESTAB",
         "currency": "NZD",
         "market": "nz_market",
         "exchange": "NZE",
-        "exchange timezone": "NZDT"
+        "exchange timezone": "NZST"
     },
     "FWPPC.NZ": {
         "short_name": "S&P/NZX PRIMARY SECTOR EQUITY I",
         "currency": "NZD",
         "market": "nz_market",
         "exchange": "NZE",
-        "exchange timezone": "NZDT"
+        "exchange timezone": "NZST"
     },
     "FWPPG.NZ": {
         "short_name": "S&P/NZX PRIMARY SECTOR EQUITY I",
         "currency": "NZD",
         "market": "nz_market",
         "exchange": "NZE",
-        "exchange timezone": "NZDT"
+        "exchange timezone": "NZST"
+    },
+    "G10C.NZ": {
+        "short_name": "S&P/NZX ALL ENERGY (SECTOR) ( C",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G10G.NZ": {
+        "short_name": "S&P/NZX ALL ENERGY (SECTOR) GRO",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G15C.NZ": {
+        "short_name": "S&P/NZX ALL MATERIALS (SECTOR) ",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G15G.NZ": {
+        "short_name": "S&P/NZX ALL MATERIALS (SECTOR) ",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G20C.NZ": {
+        "short_name": "S&P/NZX ALL INDUSTRIALS (SECTOR",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G20G.NZ": {
+        "short_name": "S&P/NZX ALL INDUSTRIALS (SECTOR",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G25C.NZ": {
+        "short_name": "S&P/NZX ALL CONSUMER DISCRETION",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G25G.NZ": {
+        "short_name": "S&P/NZX ALL CONSUMER DISCRETION",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G30C.NZ": {
+        "short_name": "S&P/NZX ALL CONSUMER STAPLES (S",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G30G.NZ": {
+        "short_name": "S&P/NZX ALL CONSUMER STAPLES (S",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G35C.NZ": {
+        "short_name": "S&P/NZX ALL HEALTH CARE (SECTOR",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G35G.NZ": {
+        "short_name": "S&P/NZX ALL HEALTH CARE (SECTOR",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G40C.NZ": {
+        "short_name": "S&P/NZX ALL FINANCIALS (SECTOR)",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G40G.NZ": {
+        "short_name": "S&P/NZX ALL FINANCIALS (SECTOR)",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G45C.NZ": {
+        "short_name": "S&P/NZX ALL INFORMATION TECHNOL",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G45G.NZ": {
+        "short_name": "S&P/NZX ALL INFORMATION TECHNOL",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G50C.NZ": {
+        "short_name": "S&P/NZX ALL COMMUNICATION SERVI",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G50G.NZ": {
+        "short_name": "S&P/NZX ALL COMMUNICATION SERVI",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G55C.NZ": {
+        "short_name": "S&P/NZX ALL UTILITIES (SECTOR) ",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "G55G.NZ": {
+        "short_name": "S&P/NZX ALL UTILITIES (SECTOR) ",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
     },
     "HDIC.NZ": {
         "short_name": "S&P/NZX 50 HIGH DIVIDEND INDEX ",
         "currency": "NZD",
         "market": "nz_market",
         "exchange": "NZE",
-        "exchange timezone": "NZDT"
+        "exchange timezone": "NZST"
     },
     "HDIG.NZ": {
         "short_name": "S&P/NZX 50 HIGH DIVIDEND INDEX ",
         "currency": "NZD",
         "market": "nz_market",
         "exchange": "NZE",
-        "exchange timezone": "NZDT"
+        "exchange timezone": "NZST"
     },
     "MORC.NZ": {
         "short_name": "S&P/NZX MORRISON INDEX ( CAPITA",
         "currency": "NZD",
         "market": "nz_market",
         "exchange": "NZE",
-        "exchange timezone": "NZDT"
+        "exchange timezone": "NZST"
+    },
+    "MORG.NZ": {
+        "short_name": "S&P/NZX MORRISON INDEX GROSS ( ",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "NC50C.NZ": {
+        "short_name": "S&P/NZX 50 PORTFOLIO INDEX ( CA",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "NZ20C.NZ": {
+        "short_name": "S&P/NZX 20 INDEX ( CAPITAL INDE",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "NZ20G.NZ": {
+        "short_name": "S&P/NZX 20 INDEX GROSS ( GROSS ",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "NZ50C.NZ": {
+        "short_name": "S&P/NZX 50 INDEX ( CAPITAL INDE",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
     },
     "NZREC.NZ": {
         "short_name": "S&P/NZX ALL REAL ESTATE (INDUST",
         "currency": "NZD",
         "market": "nz_market",
         "exchange": "NZE",
-        "exchange timezone": "NZDT"
+        "exchange timezone": "NZST"
     },
     "NZREG.NZ": {
         "short_name": "S&P/NZX ALL REAL ESTATE (INDUST",
         "currency": "NZD",
         "market": "nz_market",
         "exchange": "NZE",
-        "exchange timezone": "NZDT"
+        "exchange timezone": "NZST"
     },
     "NZRSC.NZ": {
         "short_name": "S&P/NZX REAL ESTATE SELECT INDE",
         "currency": "NZD",
         "market": "nz_market",
         "exchange": "NZE",
-        "exchange timezone": "NZDT"
+        "exchange timezone": "NZST"
     },
     "NZRSG.NZ": {
         "short_name": "S&P/NZX REAL ESTATE SELECT INDE",
         "currency": "NZD",
         "market": "nz_market",
         "exchange": "NZE",
-        "exchange timezone": "NZDT"
+        "exchange timezone": "NZST"
+    },
+    "^NZ10": {
+        "short_name": "S&P/NZX 10 INDEX ( CAPITAL INDE",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "^NZ10G": {
+        "short_name": "S&P/NZX 10 INDEX GROSS ( GROSS ",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "^NZ50": {
+        "short_name": "S&P/NZX 50 INDEX GROSS ( GROSS ",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "^NZC50": {
+        "short_name": "S&P/NZX 50 PORTFOLIO INDEX GROS",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "^NZCI": {
+        "short_name": "S&P/NZX ALL INDEX ( CAPITAL IND",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "^NZGI": {
+        "short_name": "S&P/NZX ALL INDEX GROSS ( GROSS",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "^NZMC": {
+        "short_name": "S&P/NZX MIDCAP INDEX ( CAPITAL ",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "^NZMGC": {
+        "short_name": "S&P/NZX MIDCAP INDEX GROSS ( GR",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "^NZSC": {
+        "short_name": "S&P/NZX SMALLCAP INDEX ( CAPITA",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
+    },
+    "^NZSCG": {
+        "short_name": "S&P/NZX SMALLCAP INDEX GROSS ( ",
+        "currency": "NZD",
+        "market": "nz_market",
+        "exchange": "NZE",
+        "exchange timezone": "NZST"
     }
 }

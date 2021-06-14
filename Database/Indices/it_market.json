@@ -4,55 +4,475 @@
         "currency": "EUR",
         "market": "it_market",
         "exchange": "MIL",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "FTSEMIBN.MI": {
         "short_name": "FTSE MIB Net Total Return (Lux)",
         "currency": "EUR",
         "market": "it_market",
         "exchange": "MIL",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "IT0001.MI": {
+        "short_name": "FTSE Italia All-Share Oil & Gas",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT0500.MI": {
+        "short_name": "FTSE Italia All-Share Oil & Gas",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT1000.MI": {
+        "short_name": "FTSE Italia All-Share Basic Mat",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT1300.MI": {
+        "short_name": "FTSE Italia All-Share Chemicals",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT1700.MI": {
+        "short_name": "FTSE Italia All-Share Basic Res",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT2000.MI": {
+        "short_name": "FTSE Italia All-Share Industria",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT2300.MI": {
+        "short_name": "FTSE Italia All-Share Construct",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT2700.MI": {
+        "short_name": "FTSE Italia All-Share Industria",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT3000.MI": {
+        "short_name": "FTSE Italia All-Share Consumer ",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT3300.MI": {
+        "short_name": "FTSE Italia All-Share Automobil",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT3500.MI": {
+        "short_name": "FTSE Italia All-Share Food & Be",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT3700.MI": {
+        "short_name": "FTSE Italia All-Share Personal ",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT4000.MI": {
+        "short_name": "FTSE Italia All-Share Health Ca",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT4500.MI": {
+        "short_name": "FTSE Italia All-Share Health Ca",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT5000.MI": {
+        "short_name": "FTSE Italia All-Share Consumer ",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT5300.MI": {
+        "short_name": "FTSE Italia All-Share Retail In",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT5500.MI": {
+        "short_name": "FTSE Italia All-Share Media Ind",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT5700.MI": {
+        "short_name": "FTSE Italia All-Share Travel & ",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT6000.MI": {
+        "short_name": "FTSE Italia All-Share Telecommu",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT6500.MI": {
+        "short_name": "FTSE Italia All-Share Telecommu",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT7000.MI": {
+        "short_name": "FTSE Italia All-Share Utilities",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT7500.MI": {
+        "short_name": "FTSE Italia All-Share Utilities",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT8000.MI": {
+        "short_name": "FTSE Italia All-Share Financial",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT8300.MI": {
+        "short_name": "FTSE Italia All-Share Banks Ind",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT8500.MI": {
+        "short_name": "FTSE Italia All-Share Insurance",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT8600.MI": {
+        "short_name": "FTSE Italia All-Share Real Esta",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT8700.MI": {
+        "short_name": "FTSE Italia All-Share Financial",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT9000.MI": {
+        "short_name": "FTSE Italia All-Share Technolog",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "IT9500.MI": {
+        "short_name": "FTSE Italia All-Share Technolog",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
     },
     "ITAIM.MI": {
         "short_name": "FTSE AIM Italia Index",
         "currency": "EUR",
         "market": "it_market",
         "exchange": "MIL",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ITLMS.MI": {
         "short_name": "FTSE Italia All-Share Index",
         "currency": "EUR",
         "market": "it_market",
         "exchange": "MIL",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "ITLMS10.MI": {
+        "short_name": "FTSE Italia All-Share Technolog",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS1010.MI": {
+        "short_name": "FTSE Italia All-Share Technolog",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS15.MI": {
+        "short_name": "FTSE Italia All-Share Telecommu",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS1510.MI": {
+        "short_name": "FTSE Italia All-Share Telecommu",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS20.MI": {
+        "short_name": "FTSE Italia All-Share Health Ca",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS2010.MI": {
+        "short_name": "FTSE Italia All-Share Health Ca",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS30.MI": {
+        "short_name": "FTSE Italia All-Share Financial",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS3010.MI": {
+        "short_name": "FTSE Italia All-Share Banks Ind",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS3020.MI": {
+        "short_name": "FTSE Italia All-Share Financial",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS3030.MI": {
+        "short_name": "FTSE Italia All-Share Insurance",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS3510.MI": {
+        "short_name": "FTSE Italia All-Share Real Esta",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS40.MI": {
+        "short_name": "FTSE Italia All-Share Consumer ",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS4010.MI": {
+        "short_name": "FTSE Italia All-Share Automobil",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS4020.MI": {
+        "short_name": "FTSE Italia All-Share Consumer ",
+        "currency": null,
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS4030.MI": {
+        "short_name": "FTSE Italia All-Share Media Ind",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS4040.MI": {
+        "short_name": "FTSE Italia All-Share Retail In",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS4050.MI": {
+        "short_name": "FTSE Italia All-Share Travel an",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS45.MI": {
+        "short_name": "FTSE Italia All-Share Consumer ",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS4510.MI": {
+        "short_name": "FTSE Italia All-Share Food, Bev",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS4520.MI": {
+        "short_name": "FTSE Italia All-Share Personal ",
+        "currency": null,
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS50.MI": {
+        "short_name": "FTSE Italia All-Share Industria",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS5010.MI": {
+        "short_name": "FTSE Italia All-Share Construct",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS5020.MI": {
+        "short_name": "FTSE Italia All-Share Industria",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS55.MI": {
+        "short_name": "FTSE Italia All-Share Basic Mat",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS5510.MI": {
+        "short_name": "FTSE Italia All-Share Basic Res",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS5520.MI": {
+        "short_name": "FTSE Italia All-Share Chemicals",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS60.MI": {
+        "short_name": "FTSE Italia All-Share Energy In",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS6010.MI": {
+        "short_name": "FTSE Italia All-Share Energy In",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS65.MI": {
+        "short_name": "FTSE Italia All-Share Utilities",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
+    },
+    "ITLMS6510.MI": {
+        "short_name": "FTSE Italia All-Share Utilities",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
     },
     "ITLMSC.MI": {
         "short_name": "FTSE Italia All-Share Capped In",
         "currency": "EUR",
         "market": "it_market",
         "exchange": "MIL",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
+    },
+    "ITLMSN.MI": {
+        "short_name": "FTSE Italia All-Share Net Tax I",
+        "currency": "EUR",
+        "market": "it_market",
+        "exchange": "MIL",
+        "exchange timezone": "CEST"
     },
     "ITMC.MI": {
         "short_name": "FTSE Italia Mid Cap Index",
         "currency": "EUR",
         "market": "it_market",
         "exchange": "MIL",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ITSC.MI": {
         "short_name": "FTSE Italia Small Cap Index",
         "currency": "EUR",
         "market": "it_market",
         "exchange": "MIL",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     },
     "ITSTAR.MI": {
         "short_name": "FTSE Italia STAR Index",
         "currency": "EUR",
         "market": "it_market",
         "exchange": "MIL",
-        "exchange timezone": "CET"
+        "exchange timezone": "CEST"
     }
 }

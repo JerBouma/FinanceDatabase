@@ -1,4 +1,14 @@
 {
+    "CORP": {
+        "short_name": "Pimco Investment Grade Corporat",
+        "long_name": "PIMCO Investment Grade Corporate Bond Index Exchange-Traded Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to provide total return that closely corresponds, before fees and expenses, to the total return of the ICE BofA US Corporate Index.\n The fund invests at least 80% of its total assets (exclusive of collateral held from securities lending) in the component securities of the ICE BofA US Corporate Index (the \"underlying index\"). The underlying index is an unmanaged index comprised of U.S. dollar denominated investment grade corporate debt securities publicly issued in the U.S. domestic market with at least one year remaining term to final maturity.",
+        "category": "Corporate Bond",
+        "family": "PIMCO",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "ESCR": {
         "short_name": "Xtrackers Bloomberg Barclays US",
         "long_name": "Xtrackers Bloomberg Barclays US Investment Grade Corporate ESG ETF",
@@ -39,13 +49,63 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "LQD": {
-        "short_name": "iShares iBoxx $ Investment Grad",
-        "long_name": "iShares iBoxx $ Investment Grade Corporate Bond ETF",
+    "IGBH": {
+        "short_name": "iShares Interest Rate Hedged Lo",
+        "long_name": "iShares Interest Rate Hedged Long-Term Corporate Bond ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the Markit iBoxx\u00c2\u00ae USD Liquid Investment Grade Index.\n The fund generally invests at least 90% of its assets in component securities of the underlying index and at least 95% of its assets in investment-grade corporate bonds. The underlying index is designed to provide a broad representation of the U.S. dollar-denominated liquid investment-grade corporate bond market.",
+        "summary": "The investment seeks to mitigate the interest rate risk of a portfolio composed of U.S. dollar-denominated investment-grade corporate bonds with remaining maturities greater than ten years.\n The fund invests at least 80% of its net assets in U.S. dollar-denominated investment-grade corporate bonds with remaining maturities greater than ten years, in one or more underlying funds that principally invest in U.S. dollar-denominated investment-grade corporate bonds.",
         "category": "Corporate Bond",
         "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IGEB": {
+        "short_name": "iShares Investment Grade Bond F",
+        "long_name": "iShares Edge Investment Grade Enhanced Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the BlackRock Investment Grade Enhanced Bond Index.\n The fund will invest at least 80% of its assets in the component securities of the underlying index and may invest up to 20% of its assets in certain index futures, options, options on index futures, swap contracts or other derivatives, as related to its underlying index, cash and cash equivalents, other investment companies, as well as in securities and other instruments not included in the underlying index. The index consists of U.S. dollar-denominated, investment-grade corporate bonds.",
+        "category": "Corporate Bond",
+        "family": "iShares",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "IGIB": {
+        "short_name": "iShares 5-10 Year Investment Gr",
+        "long_name": "iShares 5-10 Year Investment Grade Corporate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the ICE BofA 5-10 Year US Corporate Index.\n The fund generally invests at least 90% of its assets in securities of the underlying index. The index measures the performance of investment-grade corporate bonds of both U.S. and non-U.S. issuers that are U.S. dollar-denominated and publicly issued in the U.S. domestic market and have a remaining maturity of greater than or equal to five years and less than ten years. The fund may invest the remainder of its assets in certain futures, options and swap contracts, cash and cash equivalents.",
+        "category": "Corporate Bond",
+        "family": "iShares",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "IIGV": {
+        "short_name": "Invesco Investment Grade Value ",
+        "long_name": "Invesco Investment Grade Value ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Invesco Investment Grade Value Index (the \"underlying index\").\n The fund generally will invest at least 80% of its total assets in securities that comprise the underlying index. The underlying index is designed to provide exposure to higher value, U.S. investment grade bonds. In addition, the underlying index seeks to incorporate securities with the highest \"quality scores\" (within the eligible universe of U.S. investment grade bonds) as determined by the index provider. The fund is non-diversified.",
+        "category": "Corporate Bond",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "JIGB": {
+        "short_name": "JPMorgan Corporate Bond Researc",
+        "long_name": "JPMorgan Corporate Bond Research Enhanced ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide total return.\n The fund is actively managed and mainly invests in corporate bonds that are rated investment grade by a nationally recognized statistical rating organization or in securities that are unrated but are deemed by the fund&#39;s adviser to be of comparable quality. Under normal circumstances, the fund invests at least 80% of its assets in corporate bonds. In implementing its strategy and seeking to achieve its investment objective, the fund constructs a portfolio of holdings that seeks to outperform the Bloomberg Barclays U.S. Corporate Bond Index (the benchmark) over time while maintaining similar risk characteristics.",
+        "category": "Corporate Bond",
+        "family": "JPMorgan",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "KORP": {
+        "short_name": "American Century Diversified Co",
+        "long_name": "American Century Diversified Corporate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide current income.\n The portfolio managers will invest at least 80% of the fund&#39;s net assets, plus any borrowings for investment purposes, in corporate debt securities and corporate debt investments. Under normal market conditions, the weighted average duration of the fund&#39;s portfolio is expected to be between three and seven years.",
+        "category": "Corporate Bond",
+        "family": "American Century Investments",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -59,6 +119,36 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "LQDI": {
+        "short_name": "iShares Inflation Hedged Corpor",
+        "long_name": "iShares Inflation Hedged Corporate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to mitigate the inflation risk of a portfolio composed of U.S. dollar-denominated, investment-grade corporate bonds.\n The fund seeks to achieve its investment objective by investing, under normal circumstances, at least 80% of its net assets in the underlying fund, U.S. dollar-denominated investment-grade corporate bonds, in one or more other underlying funds that principally invest in investment-grade corporate bonds, and in inflation swaps. The advisor intends to invest a substantial portion of its assets in the underlying fund. The fund is non-diversified.",
+        "category": "Corporate Bond",
+        "family": "iShares",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "MBBB": {
+        "short_name": "VanEck Vectors Moody's Analytic",
+        "long_name": "VanEck Vectors Moody's Analytics BBB Corporate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track, as closely as possible, before fees and expenses, the price and yield performance of the MVIS\u00c2\u00ae Moody&#39;s Analytics\u00c2\u00ae US BBB Corporate Bond Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index is comprised of U.S. dollar-denominated corporate bonds issued in the U.S. domestic market that have a BBB rating based on the bond&#39;s composite rating, which is an average of ratings from various rating agencies. It is non-diversified.",
+        "category": "Corporate Bond",
+        "family": "VanEck",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "MIG": {
+        "short_name": "VanEck Vectors Moody's Analytic",
+        "long_name": "VanEck Vectors Moody's Analytics IG Corporate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track, as closely as possible, before fees and expenses, the price and yield performance of the MVIS\u00c2\u00ae Moody&#39;s Analytics\u00c2\u00ae US Investment Grade Corporate Bond Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The inndex is comprised of U.S. dollar-denominated corporate bonds issued in the U.S. domestic market that have an investment grade rating based on the bond&#39;s composite rating, which is an average of ratings from various rating agencies. It is non-diversified.",
+        "category": "Corporate Bond",
+        "family": "VanEck",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
     "QLTA": {
         "short_name": "iShares Aaa A Rated Corporate B",
         "long_name": "iShares Aaa - A Rated Corporate Bond ETF",
@@ -69,6 +159,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "RBND": {
+        "short_name": "SPDR Bloomberg SASB Corporate B",
+        "long_name": "SPDR Bloomberg SASB Corporate Bond ESG Select ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the Bloomberg SASB \u00c2\u00aeUS Corporate ESG Ex-Controversies Select Index that tracks investment grade corporate bonds issued by companies that exhibit certain ESG characteristics.\n Normally, the fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index or in securities that the Adviser determines have economic characteristics that are substantially identical to the economic characteristics of the securities that comprise the index. It is non-diversified.",
+        "category": "Corporate Bond",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "SCHI": {
         "short_name": "Schwab 5-10 Year Corporate Bond",
         "long_name": "Schwab 5-10 Year Corporate Bond ETF",
@@ -76,6 +176,36 @@
         "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Bloomberg Barclays US 5-10 Year Corporate Bond Index.\n To pursue its goal, the fund generally invests in securities that are included in the index. The index measures the performance of U.S. investment grade, taxable corporate bonds with maturities greater than or equal to five years and less than ten years that have $300 million or more of outstanding face value. It is the fund&#39;s policy that under normal circumstances it will invest at least 90% of its net assets in securities included in the index.",
         "category": "Corporate Bond",
         "family": "Schwab ETFs",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SKOR": {
+        "short_name": "FlexShares Credit-Scored US Cor",
+        "long_name": "FlexShares Credit-Scored US Corporate Bond Index Fund",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the Northern Trust US Corporate Bond IndexSM.\n The underlying index reflects the performance of a broad universe of US-dollar denominated investment grade corporate bonds that can potentially deliver a higher total return than the overall investment grade corporate bond market, as represented by the Northern Trust US Investment Grade Corporate Bond Index SM. The fund generally will invest at least 80% of its total assets in the securities of its index. The fund is non-diversified.",
+        "category": "Corporate Bond",
+        "family": "Flexshares Trust",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "SPBO": {
+        "short_name": "SPDR Portfolio Corporate Bond E",
+        "long_name": "SPDR Portfolio Corporate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that, before fees and expenses, correspond generally to the price and yield performance of an index that tracks the Bloomberg Barclays U.S. Corporate Bond Index.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in securities that the Adviser determines have economic characteristics that are substantially identical to the economic characteristics of the securities that comprise the index. The index is designed to measure the performance of the investment grade corporate bond market.",
+        "category": "Corporate Bond",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SPIB": {
+        "short_name": "SPDR Portfolio Intermediate Ter",
+        "long_name": "SPDR Portfolio Intermediate Term Corporate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance of the Bloomberg Barclays U.S. Intermediate Corporate Bond Index.\n The fund invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in securities that the Adviser determines have economic characteristics that are substantially identical to the economic characteristics of the securities that comprise the index. The index is designed to measure the performance of U.S. corporate bonds that have a maturity of greater than or equal to 1 year and less than 10 years.",
+        "category": "Corporate Bond",
+        "family": "SPDR State Street Global Advisors",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -96,7 +226,17 @@
         "summary": "The investment seeks to track the investment results of the Bloomberg Barclays MSCI US Corporate ESG Focus Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The index has been developed by Bloomberg Barclays Capital Inc. with environmental, social and governance (\"ESG\") rating inputs from MSCI ESG Research LLC (\"MSCI ESG Research\") pursuant to an agreement between MSCI ESG Research and Bloomberg Index Services Limited, a subsidiary of Bloomberg Barclays. The fund is non-diversified.",
         "category": "Corporate Bond",
         "family": "iShares",
-        "exchange": "NMS",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "USIG": {
+        "short_name": "iShares Broad USD Investment Gr",
+        "long_name": "iShares Broad USD Investment Grade Corporate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the ICE BofA US Corporate Index (the \"underlying index\").\n The fund generally invests at least 90% of its assets in securities of the underlying index. It may invest the remainder of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the underlying index. The underlying index measures the performance of investment-grade corporate bonds of both U.S. and non-U.S. issuers that are U.S. dollar-denominated and publicly issued in the U.S. domestic market.",
+        "category": "Corporate Bond",
+        "family": "iShares",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "VCIT": {
@@ -104,6 +244,16 @@
         "long_name": "Vanguard Intermediate-Term Corporate Bond Index Fund ETF Shares",
         "currency": "USD",
         "summary": "The investment seeks to track the performance of a market-weighted corporate bond index with an intermediate-term dollar-weighted average maturity.\n The fund employs an indexing investment approach designed to track the performance of the Bloomberg Barclays U.S. 5-10 Year Corporate Bond Index. This index includes U.S. dollar-denominated, investment-grade, fixed-rate, taxable securities issued by industrial, utility, and financial companies, with maturities between 5 and 10 years. Under normal circumstances, at least 80% of the fund&#39;s assets will be invested in bonds included in the index.",
+        "category": "Corporate Bond",
+        "family": "Vanguard",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "VTC": {
+        "short_name": "Vanguard Total Corporate Bond E",
+        "long_name": "Vanguard Total Corporate Bond ETF ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of a broad, market-weighted corporate bond index.\n The fund is a fund of funds and employs an indexing investment approach designed to track the performance of the Bloomberg Barclays U.S. Corporate Bond Index, which measures the investment-grade, fixed-rate, taxable corporate bond market. The index includes U.S. dollar-denominated securities that are publicly issued by industrial, utility, and financial issuers.",
         "category": "Corporate Bond",
         "family": "Vanguard",
         "exchange": "NGM",

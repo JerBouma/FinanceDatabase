@@ -1,4 +1,14 @@
 {
+    "ASPY": {
+        "short_name": "ASYMmetric ETFs Trust ASYMshare",
+        "long_name": "ASYMshares ASYMmetric 500 ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the ASYMmetric 500 Index.\n The index is a rules-based, quantitative long/short hedging strategy that seeks to provide protection against bear market losses and to capture the majority of bull market gains with respect to exposure to the 500 largest capitalized equity securities publicly traded in the United States, which is referred to as the index&#39;s \"market\". Under normal market conditions, the fund will invest at least 80% of its total assets in securities and cash included in the index&#39;s Long Book.",
+        "category": "Long-Short Equity",
+        "family": "ASYMshare",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "CLIX": {
         "short_name": "ProShares Long Online/Short Sto",
         "long_name": "ProShares Long Online/Short Stores ETF",
@@ -11,9 +21,9 @@
     },
     "DBEH": {
         "short_name": "iM DBi Hedge Strategy ETF",
-        "long_name": "iM DBi Long Short Hedge Strategy ETF",
+        "long_name": "iM DBi Hedge Strategy ETF",
         "currency": "USD",
-        "summary": "The investment seeks long-term capital appreciation.\n The fund invests in long and short positions in exchange-traded futures contracts across the broad asset classes of equities, fixed income, and currencies. The sub-adviser expects, under normal circumstances, to invest in investment grade debt securities to collateralize its derivatives investments, for liquidity purposes, or to enhance yield. It may hold fixed income instruments of varying maturities, but that have an average duration of less than one year. The fund is non-diversified.",
+        "summary": "The investment seeks long-term capital appreciation.\n The fund invests in long and short positions in exchange-traded futures contracts across the broad asset classes of equities, fixed income, and currencies. The sub-adviser expects, under normal circumstances, to collateralize its derivative investments, for liquidity purposes, or to enhance yield, to invest a large portion of the portfolio in investment grade debt securities. It may hold fixed income instruments of varying maturities, but that have an average duration of less than one year. The fund is non-diversified.",
         "category": "Long-Short Equity",
         "family": "iM Global Partner (US)",
         "exchange": "PCX",
@@ -49,6 +59,26 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "HTUS": {
+        "short_name": "Hull Tactical US ETF",
+        "long_name": "Hull Tactical US ETF",
+        "currency": "USD",
+        "summary": "The investment seeks long-term capital appreciation.\n The fund seeks to achieve its investment objective by taking long and short positions in one or more ETFs that seek to track the performance of the S&P 500\u00c2\u00ae Index and by entering into S&P 500\u00c2\u00ae Index-related options and options on S&P 500\u00c2\u00ae-related ETFs (\u00e2\u0080\u009cS&P 500\u00c2\u00ae Options\u00e2\u0080\u009d). The S&P 500\u00c2\u00ae Index is a widely recognized benchmark of U.S. stock market performance that is composed primarily of large-capitalization U.S. issuers. It may also invest up to 10% of its total assets in leveraged or inverse ETFs that seek to deliver multiples, or the inverse, of the performance of the S&P 500 Index, respectively.",
+        "category": "Long-Short Equity",
+        "family": "Hull Tactical Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "PHDG": {
+        "short_name": "Invesco S&P 500 Downside Hedged",
+        "long_name": "Invesco S&P 500 Downside Hedged ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to achieve positive total returns in rising or falling markets that are not directly correlated to broad equity or fixed income market returns.\n The fund uses a quantitative, rules based strategy to allocate its assets among components of the S&P 500\u00c2\u00ae Dynamic VEQTOR Index in a combination of (i) equity securities contained in the S&P 500\u00c2\u00ae Index and that are listed on a U.S. securities exchange, (ii) Chicago Board Options Exchange Volatility Index related instruments, such as listed VIX Index futures contracts that reflect exposure to the S&P 500\u00c2\u00ae VIX Short Term Futures Index, and (iii) money market instruments, cash and cash equivalents.",
+        "category": "Long-Short Equity",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "QLS": {
         "short_name": "IQ Hedge Long Short Tracker ETF",
         "long_name": "IQ Hedge Long/Short Tracker ETF",
@@ -67,6 +97,16 @@
         "category": "Long-Short Equity",
         "family": "AGFiQ",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "VAMO": {
+        "short_name": "Cambria ETF Trust Cambria Value",
+        "long_name": "Cambria Value and Momentum ETF",
+        "currency": "USD",
+        "summary": "The investment seeks income and capital appreciation from investments in the U.S. equity market.\n The fund will seek to achieve its investment objective by investing, under normal market conditions, at least 80% of the value of the fund&#39;s net assets in U.S. exchange-listed equity securities. It may hedge up to 100% of the value of the fund&#39;s long portfolio. The fund may invest in securities of companies in any industry, but will limit the maximum allocation to any particular sector to 25%. It may invest up to 20% of the value of its net assets in U.S. dollar and non-U.S. dollar denominated money market instruments or other high quality debt securities, or ETFs.",
+        "category": "Long-Short Equity",
+        "family": "CAMBRIA ETF TRUST",
+        "exchange": "BTS",
         "market": "us_market"
     }
 }

@@ -1,4 +1,16 @@
 {
+    "0P00008SO3.F": {
+        "short_name": "Varenne S\u00e9lection A-EUR",
+        "long_name": "Varenne S&#195;&#169;lection A-EUR",
+        "currency": "EUR",
+        "summary": "Le FIA a pour objectif de rechercher sur la dur\u00c3\u00a9e de placement recommand\u00c3\u00a9e, la performance annualis\u00c3\u00a9e indiqu\u00c3\u00a9e ci-apr\u00c3\u00a8s en mettant en oeuvre une strat\u00c3\u00a9gie de gestion totalement discr\u00c3\u00a9tionnaire, sans contraintes g\u00c3\u00a9ographiques, ni sectorielles, fond\u00c3\u00a9e sur les anticipations de march\u00c3\u00a9 du g\u00c3\u00a9rant.\nL\u00e2\u0080\u0099objectif est de r\u00c3\u00a9aliser une performance annualis\u00c3\u00a9e sup\u00c3\u00a9rieure \u00c3\u00a0 l&#39;EONIA capitalis\u00c3\u00a9 (moyenne sur 12 mois glissants) + 105 points de base pour les parts A, \u00c3\u00a0 l&#39;EONIA capitalis\u00c3\u00a9 (moyenne sur 12 mois glissants) + 165 points de base pour les parts P, \u00c3\u00a0 l&#39;EONIA capitalis\u00c3\u00a9 (moyenne sur 12 mois glissants) + 190 points de base pour les parts I, apr\u00c3\u00a8s d\u00c3\u00a9duction de l\u00e2\u0080\u0099ensemble des frais factur\u00c3\u00a9s au FIA (\u00c3\u00a0 l\u00e2\u0080\u0099exception de la commission de surperformance).\nLa gestion est d\u00c3\u00a9connect\u00c3\u00a9e de tout indicateur de r\u00c3\u00a9f\u00c3\u00a9rence, toutefois la performance de chaque cat\u00c3\u00a9gorie de parts pourra \u00c3\u00aatre compar\u00c3\u00a9e a posteriori \u00c3\u00a0 l\u00e2\u0080\u0099objectif propre \u00c3\u00a0 chaque cat\u00c3\u00a9gorie de parts indiqu\u00c3\u00a9 ci-avant.",
+        "manager_name": "Giuseppe  Perrone",
+        "manager_bio": "",
+        "category": "Alt - Long/Short Equity - Global",
+        "family": "Varenne Capital Partners",
+        "exchange": "FRA",
+        "market": "dr_market"
+    },
     "0P0000A10U.F": {
         "short_name": "Soprarno Relative Value A",
         "long_name": "Soprarno Relative Value A",
@@ -8,6 +20,42 @@
         "manager_bio": "",
         "category": "Alt - Long/Short Equity - Global",
         "family": "Soprarno SGR SpA",
+        "exchange": "FRA",
+        "market": "dr_market"
+    },
+    "0P0000HP8S.F": {
+        "short_name": "Soprarno Relative Value B",
+        "long_name": "Soprarno Relative Value B",
+        "currency": "EUR",
+        "summary": "Investimento principale in strumenti finanziari azionari e/o obbligazionari. Nei limiti e alle condizioni stabiliti dall\u00e2\u0080\u0099Organo di Vigilanza fino al 30% delle attivit\u00c3\u00a0 in depositi bancari per una quota massima pari al 10% del totale delle attivit\u00c3\u00a0 in parti di OICR.\nValuta di denominazione degli strumenti finanziari: principalmente rappresentative dei paesi Ocse.",
+        "manager_name": "Marco  Seveso",
+        "manager_bio": "",
+        "category": "Alt - Long/Short Equity - Global",
+        "family": "Soprarno SGR SpA",
+        "exchange": "FRA",
+        "market": "dr_market"
+    },
+    "0P0000RZMH.F": {
+        "short_name": "Controlfida Delta Defensive UCI",
+        "long_name": "Controlfida Delta Defensive UCITS Fund Class A Share",
+        "currency": "EUR",
+        "summary": "Low volatility absolute return fund: The objective of the fund is to achieve an absolute positive gross return of 5-6% while limiting the volatility to a target 3/4%. In order to achieve its objective, the Fund invests in equity indexes, listed equity derivative instruments and listed large-cap as well as high grade fixed income securities and money market instruments.",
+        "manager_name": "",
+        "manager_bio": "",
+        "category": "Alt - Long/Short Equity - Global",
+        "family": "Controlfida Management Company Limited",
+        "exchange": "FRA",
+        "market": "dr_market"
+    },
+    "0P0000RZMI.F": {
+        "short_name": "Controlfida Delta Defensive UCI",
+        "long_name": "Controlfida Delta Defensive UCITS Fund Class B Share",
+        "currency": "EUR",
+        "summary": "Low volatility absolute return fund: The objective of the fund is to achieve an absolute positive gross return of 5-6% while limiting the volatility to a target 3/4%. In order to achieve its objective, the Fund invests in equity indexes, listed equity derivative instruments and listed large-cap as well as high grade fixed income securities and money market instruments.",
+        "manager_name": "",
+        "manager_bio": "",
+        "category": "Alt - Long/Short Equity - Global",
+        "family": "Controlfida Management Company Limited",
         "exchange": "FRA",
         "market": "dr_market"
     },
@@ -22,18 +70,6 @@
         "family": "Majedie Asset Management Ltd",
         "exchange": "LSE",
         "market": "gb_market"
-    },
-    "0P0000X6LO.F": {
-        "short_name": "UBS (Irl) Investor Selection - ",
-        "long_name": "UBS (Irl) Investor Selection - Equity Opportunity Long Short Fund Q-PF-acc",
-        "currency": "EUR",
-        "summary": "The Sub-Fund seeks to achieve risk-adjusted capital appreciation over the medium to long-term.\n It is intended that the Sub-Fund will seek to achieve its investment objective by utilising a long-short equity strategy and by exploiting short- and mid-term stock price anomalies predominantly in equity securities of companies in global equity markets based on the MSCI All Country World Index, but not necessarily including or limited to all countries or stocks in that classification, via over-the-counter or exchange-traded derivatives, with reference to such equities.",
-        "manager_name": "Maximilian  Anderl",
-        "manager_bio": "Maximilian Anderl is Head of Concentrated Alpha Equity within UBS Asset Managment and is the lead portfolio manager for the Global and European Concentrated Alpha long only and long / short strategies. Maximilian has worked on the Concentrated Alpha team and its distinctive approach and strategies since its inception in 2004, becoming head of that team in January 2011. Maximilian joined the European Equity Team in London in 2002, having joined UBS Asset Management, Zurich, in 2000 as an equity fund manager. In that role he was responsible for the retail funds and European client mandates. Prior to joining UBS, Maximilian worked in academic research, university teaching, research and development and corporate finance for the pharmaceutical industry. Maximilian is a Regular Member of the CFA Society of the UK and the CFA Institute.",
-        "category": "Alt - Long/Short Equity - Global",
-        "family": "UBS Fund Management (Luxembourg) S.A.",
-        "exchange": "FRA",
-        "market": "dr_market"
     },
     "0P0000ZE4L.F": {
         "short_name": "InRIS Parus Fund Class I Euro H",
@@ -83,41 +119,17 @@
         "exchange": "FRA",
         "market": "dr_market"
     },
-    "0P000168MA.F": {
-        "short_name": "UBS (Irl) Investor Selection Gl",
-        "long_name": "UBS (Irl) Investor Selection Global Equity Long Short Fund (EUR) Q-PF Acc",
+    "0P00016EBE.F": {
+        "short_name": "Varenne S\u00e9lection I-EUR",
+        "long_name": "Varenne S&#195;&#169;lection I-EUR",
         "currency": "EUR",
-        "summary": "seeks to preserve and grow capital with low correlation to equity market returns.",
-        "manager_name": "Scott  Wilkin",
-        "manager_bio": "Scott is the Head of the Global Intrinsic Value Equity\nteam and co-PM for our Global equity portfolios. He is\nalso Director of Research (DOR); responsible for\nmanaging the 13-member analyst team and driving\nresearch quality standards across the Global Intrinsic\nValue platform.\nIn 2012, Scott was promoted to the position of DOR for\nthe US Intrinsic Value equity team. In this role, Scott\nmanaged a team of six sector-based analysts and lead\ncompany and industry-level research. Scott was also the\nlead portfolio manager of the Intrinsic Value equity\nteam's Global Healthcare and UBS Healthcare\nLong/Short strategies.\nPrior to being named DOR and portfolio manager, Scott\nwas a Senior Investment Analyst and Sector Head for the\nhealth care analyst team. His responsibilities included\nfundamental company and industry-level research.",
-        "category": "Alt - Long/Short Equity - Global",
-        "family": "UBS Fund Management (Luxembourg) S.A.",
-        "exchange": "FRA",
-        "market": "dr_market"
-    },
-    "0P00016Z1O.F": {
-        "short_name": "BKZ Euro Premium Income",
-        "long_name": "BKZ Euro Premium Income",
-        "currency": "EUR",
-        "summary": "n/a",
-        "manager_name": "",
+        "summary": "Le FIA a pour objectif de rechercher sur la dur\u00c3\u00a9e de placement recommand\u00c3\u00a9e, la performance annualis\u00c3\u00a9e indiqu\u00c3\u00a9e ci-apr\u00c3\u00a8s en mettant en oeuvre une strat\u00c3\u00a9gie de gestion totalement discr\u00c3\u00a9tionnaire, sans contraintes g\u00c3\u00a9ographiques, ni sectorielles, fond\u00c3\u00a9e sur les anticipations de march\u00c3\u00a9 du g\u00c3\u00a9rant.\nL\u00e2\u0080\u0099objectif est de r\u00c3\u00a9aliser une performance annualis\u00c3\u00a9e sup\u00c3\u00a9rieure \u00c3\u00a0 l&#39;EONIA capitalis\u00c3\u00a9 (moyenne sur 12 mois glissants) + 105 points de base pour les parts A, \u00c3\u00a0 l&#39;EONIA capitalis\u00c3\u00a9 (moyenne sur 12 mois glissants) + 165 points de base pour les parts P, \u00c3\u00a0 l&#39;EONIA capitalis\u00c3\u00a9 (moyenne sur 12 mois glissants) + 190 points de base pour les parts I, apr\u00c3\u00a8s d\u00c3\u00a9duction de l\u00e2\u0080\u0099ensemble des frais factur\u00c3\u00a9s au FIA (\u00c3\u00a0 l\u00e2\u0080\u0099exception de la commission de surperformance).\nLa gestion est d\u00c3\u00a9connect\u00c3\u00a9e de tout indicateur de r\u00c3\u00a9f\u00c3\u00a9rence, toutefois la performance de chaque cat\u00c3\u00a9gorie de parts pourra \u00c3\u00aatre compar\u00c3\u00a9e a posteriori \u00c3\u00a0 l\u00e2\u0080\u0099objectif propre \u00c3\u00a0 chaque cat\u00c3\u00a9gorie de parts indiqu\u00c3\u00a9 ci-avant.",
+        "manager_name": "Giuseppe  Perrone",
         "manager_bio": "",
         "category": "Alt - Long/Short Equity - Global",
-        "family": "Axxion S.A.",
+        "family": "Varenne Capital Partners",
         "exchange": "FRA",
         "market": "dr_market"
-    },
-    "0P000174AA.L": {
-        "short_name": "UBS (Irl) Investor Selection - ",
-        "long_name": "UBS (Irl) Investor Selection - Equity Opportunity Long Short Fund (GBP hedged) Q-PF-acc",
-        "currency": "GBp",
-        "summary": "The Sub-Fund seeks to achieve risk-adjusted capital appreciation over the medium to long-term.\n It is intended that the Sub-Fund will seek to achieve its investment objective by utilising a long-short equity strategy and by exploiting short- and mid-term stock price anomalies predominantly in equity securities of companies in global equity markets based on the MSCI All Country World Index, but not necessarily including or limited to all countries or stocks in that classification, via over-the-counter or exchange-traded derivatives, with reference to such equities.",
-        "manager_name": "Maximilian  Anderl",
-        "manager_bio": "Maximilian Anderl is Head of Concentrated Alpha Equity within UBS Asset Managment and is the lead portfolio manager for the Global and European Concentrated Alpha long only and long / short strategies. Maximilian has worked on the Concentrated Alpha team and its distinctive approach and strategies since its inception in 2004, becoming head of that team in January 2011. Maximilian joined the European Equity Team in London in 2002, having joined UBS Asset Management, Zurich, in 2000 as an equity fund manager. In that role he was responsible for the retail funds and European client mandates. Prior to joining UBS, Maximilian worked in academic research, university teaching, research and development and corporate finance for the pharmaceutical industry. Maximilian is a Regular Member of the CFA Society of the UK and the CFA Institute.",
-        "category": "Alt - Long/Short Equity - Global",
-        "family": "UBS Fund Management (Luxembourg) S.A.",
-        "exchange": "LSE",
-        "market": "gb_market"
     },
     "0P000176G4.L": {
         "short_name": "InRIS Parus Fund Class I GBP He",
@@ -143,6 +155,18 @@
         "exchange": "LSE",
         "market": "gb_market"
     },
+    "0P00017C1X.L": {
+        "short_name": "Purple Global Adaptive Equity U",
+        "long_name": "Purple Global Adaptive Equity UCITs GBP Institutional Class B",
+        "currency": "GBp",
+        "summary": "The investment objective of the Sub-Fund is to deliver returns through a combination of capital growth\nand income",
+        "manager_name": "",
+        "manager_bio": "",
+        "category": "Alt - Long/Short Equity - Global",
+        "family": "MontLake Management Limited",
+        "exchange": "LSE",
+        "market": "gb_market"
+    },
     "0P00017Y98.F": {
         "short_name": "IAM Investments ICAV - Incline ",
         "long_name": "IAM Investments ICAV - Incline Global Long/Short Equity UCITS Fund E EUR Acc",
@@ -159,7 +183,7 @@
         "short_name": "COMPAM ACTIVE GLOBAL LONG SHORT",
         "long_name": "CompAM FUND - Active Global Long Short Q Accumulation",
         "currency": "EUR",
-        "summary": "The European Equity Sub-Fund aims to obtain long-term gains in capital invested under the risk diversification principle, by investing principally, in selected equities or equity-related securities issued by issuers domiciled in or deriving a significant part of their revenues from Europe and listed on a recognized stock exchange or dealt in on another Regulated Market. European Equity Sub- Fund may also invest in other transferable securities, including bonds and other debt securities.",
+        "summary": "The investment objective of the Sub-Fund is to achieve above-average long-term capital growth while respecting adequate diversification. For this purpose, the Sub-Fund will mainly invest in the following assets: - Shares and other equity related instruments of companies listed on stock exchanges worldwide; - Fixed interest and floating-rate securities, debt securities with a minimum average rating of BBB- or claims as well as other interest-bearing investments (including money-market instruments and, in particular, convertible bonds with warrants); - Sight deposits and deposits repayable on demand.",
         "manager_name": "Giuseppe  Ganci",
         "manager_bio": "Equity and Credit analyst\nJanuary 2004- May 2005 Credit Derivatives Trader at Dresdner Kleinwort Wasserstein, London\nApril 2001- December 2003 Quantitative Analyst and fund manager assistant at Nextam Partners Ltd, London\nOctober 2000- April 2001 Financial Analyst and fund manager assistant at Compass Asset Management\nMarch 2000- September 2000 Research Assistant in Industrial Economics at Luiss Guido Carli,Giuseppe Ganci has attained the Economics Degree at the Luiss Guido Carli university and holds the IMC certificate.",
         "category": "Alt - Long/Short Equity - Global",

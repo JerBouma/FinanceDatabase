@@ -6,7 +6,7 @@
         "summary": "The investment seeks investment results that correspond (before fees and expenses) generally to the performance of its underlying index, the CIBC Atlas Clean Energy Index (ticker symbol NACEX) (the \"underlying index\").\n The fund will invest at least 80% of its net assets in securities that comprise the underlying index. The underlying index utilizes a rules-based methodology developed by CIBC National Trust Company (the \"index provider\"), which is designed to provide exposure to a diverse set of U.S. and Canadian companies involved in the clean energy sector including renewables and clean technology. The fund is non-diversified.",
         "category": "Equity Energy",
         "family": "ALPS",
-        "exchange": "BTS",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "CNRG": {
@@ -59,14 +59,14 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "FTXN": {
-        "short_name": "First Trust Nasdaq Oil & Gas ET",
-        "long_name": "First Trust Nasdaq Oil & Gas ETF",
+    "FRAK": {
+        "short_name": "VanEck Vectors Unconventional O",
+        "long_name": "VanEck Vectors Unconventional Oil & Gas ETF",
         "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of the Nasdaq US Smart Oil & Gas Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and depository receipts that comprise the index. The index is designed to provide exposure to U.S. companies comprising the oil and gas sector that have been selected based upon their liquidity and weighted based upon their cumulative score on three investing factors: volatility, value and growth. It is non-diversified.",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the MVIS\u00c2\u00ae Global Unconventional Oil & Gas Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index contains companies that generate at least 50% of their revenues from unconventional oil and gas or that have properties with the potential to generate at least 50% of their revenues from unconventional oil and gas. The fund is non-diversified.",
         "category": "Equity Energy",
-        "family": "First Trust",
-        "exchange": "NGM",
+        "family": "VanEck",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "FXN": {
@@ -129,6 +129,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "PSCE": {
+        "short_name": "Invesco S&P SmallCap Energy ETF",
+        "long_name": "Invesco S&P SmallCap Energy ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P SmallCap 600\u00c2\u00ae Capped Energy Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities of small-capitalization U.S. energy companies that comprise the underlying index. These companies are principally engaged in the business of producing, distributing or servicing energy related products, including oil and gas exploration and production, refining, oil services and pipelines. It is non-diversified.",
+        "category": "Equity Energy",
+        "family": "Invesco",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
     "PXE": {
         "short_name": "Invesco Dynamic Energy Explorat",
         "long_name": "Invesco Dynamic Energy Exploration & Production ETF",
@@ -154,6 +164,16 @@
         "long_name": "Invesco Dynamic Oil & Gas Services ETF",
         "currency": "USD",
         "summary": "The investment seeks to track the investment results (before fees and expenses) of the Dynamic Oil Services IntellidexSM Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index was composed of common stocks of U.S. companies that assist in the production, processing and distribution of oil and gas. The fund is non-diversified.",
+        "category": "Equity Energy",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "RYE": {
+        "short_name": "Invesco S&P 500 Equal Weight En",
+        "long_name": "Invesco S&P 500 Equal Weight Energy ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Equal Weight Energy Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of all of the components of the S&P 500\u00c2\u00ae Energy Index, an index that contains the common stocks of all companies included in the S&P 500\u00c2\u00ae Index that are classified as members of the energy sector, as defined according to the Global Industry Classification Standard (\"GICS\").",
         "category": "Equity Energy",
         "family": "Invesco",
         "exchange": "PCX",

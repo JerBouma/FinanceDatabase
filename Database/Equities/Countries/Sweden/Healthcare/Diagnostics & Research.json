@@ -1,4 +1,28 @@
 {
+    "1YR.F": {
+        "short_name": "IMMUNOVIA AB",
+        "long_name": "Immunovia AB (publ)",
+        "summary": "Immunovia AB (publ), a diagnostic company, engages in developing and commercializing blood tests for the early detection of cancer and autoimmune diseases based on its proprietary test platform IMMray in Sweden and internationally. Its pipeline comprises early-phase research projects in collaboration with academic centers; and diagnostic tests in pancreatic cancer and rheumatoid arthritis diagnostics. Immunovia AB (publ) was founded in 2007 and is headquartered in Lund, Sweden.",
+        "currency": "EUR",
+        "sector": "Healthcare",
+        "industry": "Diagnostics & Research",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Sweden",
+        "city": "Lund"
+    },
+    "6XA.F": {
+        "short_name": "OLINK HOLDING AB SP.ADS/1",
+        "long_name": "Olink Holding AB (publ)",
+        "summary": "Olink Holding AB (publ) provides various products and services for academic, government, biopharmaceutical, biotechnology, and other institutions focused on life science research. Its products include Olink Explore for cardiovascular and metabolic diseases, oncology, neurology, or inflammation; Olink Target product line; and Olink Focus product line consists of custom developed solutions for customers that have identified a small number of proteins of interest to focus on. The company's products also comprise Olink NPX Manager, a purpose-built software that enable users to import data, validate data quality, and normalize for subsequent statistical analysis; and Olink Insight, a cloud platform for data visualization and statistical analysis of normalized protein expression (NPX) data. In addition, it provides Olink Analysis services comprising study design and consultation, sample preparation and assay execution, and data processing and QC; and bioinformatics services. The company sells its products and services through its own direct sales force in the Americas, Europe, the Middle East, Africa, and the Asia Pacific. The company was formerly known as Knilo HoldCo AB and changed its name to Olink Holding AB (publ) in January 2021. Olink Holding AB (publ) was founded in 2016 and is headquartered in Uppsala, Sweden.",
+        "currency": "EUR",
+        "sector": "Healthcare",
+        "industry": "Diagnostics & Research",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Sweden",
+        "city": "Uppsala"
+    },
     "80R.F": {
         "short_name": "AROCELL AB",
         "long_name": "AroCell AB (publ)",
@@ -8,18 +32,6 @@
         "industry": "Diagnostics & Research",
         "exchange": "FRA",
         "market": "dr_market",
-        "country": "Sweden",
-        "city": "Uppsala"
-    },
-    "ALLPF": {
-        "short_name": "AROCELL AB",
-        "long_name": "AroCell AB (publ)",
-        "summary": "AroCell AB (publ), a vitro diagnostics company, focuses on the monitoring of hematological malignancies, breast cancer, and other solid tumors. The company offers TK 210 ELISA, a kit for the determination of Thymidine Kinase 1 in human blood. The company was formerly known as Xi Bao Research AB and changed its name to AroCell AB (publ) in 2006. AroCell AB (publ) was founded in 2003 and is based in Uppsala, Sweden.",
-        "currency": "USD",
-        "sector": "Healthcare",
-        "industry": "Diagnostics & Research",
-        "exchange": "PNK",
-        "market": "us_market",
         "country": "Sweden",
         "city": "Uppsala"
     },
@@ -50,7 +62,7 @@
     "IMMNOV.ST": {
         "short_name": "Immunovia AB",
         "long_name": "Immunovia AB (publ)",
-        "summary": "Immunovia AB (publ), a molecular diagnostics company, develops and commercializes diagnostic tools for cancer and autoimmune diseases in Sweden and internationally. The company offers IMMray PanCan-d, a blood-based test for the detection of pancreatic cancer. Immunovia AB (publ) was founded in 2007 and is headquartered in Lund, Sweden.",
+        "summary": "Immunovia AB (publ), a diagnostic company, engages in developing and commercializing blood tests for the early detection of cancer and autoimmune diseases based on its proprietary test platform IMMray in Sweden and internationally. Its pipeline comprises early-phase research projects in collaboration with academic centers; and diagnostic tests in pancreatic cancer and rheumatoid arthritis diagnostics. Immunovia AB (publ) was founded in 2007 and is headquartered in Lund, Sweden.",
         "currency": "SEK",
         "sector": "Healthcare",
         "industry": "Diagnostics & Research",
@@ -58,6 +70,30 @@
         "market": "se_market",
         "country": "Sweden",
         "city": "Lund"
+    },
+    "OLK": {
+        "short_name": "Olink Holding AB (publ)",
+        "long_name": "Olink Holding AB (publ)",
+        "summary": "Olink Holding AB (publ) provides various products and services for academic, government, biopharmaceutical, biotechnology, and other institutions focused on life science research. Its products include Olink Explore for cardiovascular and metabolic diseases, oncology, neurology, or inflammation; Olink Target product line; and Olink Focus product line consists of custom developed solutions for customers that have identified a small number of proteins of interest to focus on. The company's products also comprise Olink NPX Manager, a purpose-built software that enable users to import data, validate data quality, and normalize for subsequent statistical analysis; and Olink Insight, a cloud platform for data visualization and statistical analysis of normalized protein expression (NPX) data. In addition, it provides Olink Analysis services comprising study design and consultation, sample preparation and assay execution, and data processing and QC; and bioinformatics services. The company sells its products and services through its own direct sales force in the Americas, Europe, the Middle East, Africa, and the Asia Pacific. The company was formerly known as Knilo HoldCo AB and changed its name to Olink Holding AB (publ) in January 2021. Olink Holding AB (publ) was founded in 2016 and is headquartered in Uppsala, Sweden.",
+        "currency": "USD",
+        "sector": "Healthcare",
+        "industry": "Diagnostics & Research",
+        "exchange": "NMS",
+        "market": "us_market",
+        "country": "Sweden",
+        "city": "Uppsala"
+    },
+    "PGO.F": {
+        "short_name": "PROSTATYPE GENOMICS AB",
+        "long_name": "Prostatype Genomics AB (publ)",
+        "summary": "Prostatype Genomics AB manufactures, markets, and sells the prognostic gene tests. It offers Prostatype, a gene test for prostate cancer patients. The company offers Prostatype Test System that combines gene expression information with used clinical parameters, such as PSA, Gleason Score, and Tumor Stage, as well as calculates the P-score. The test is based on database containing prostate cancer patients and provides decision support for patients and doctors when making a treatment decision. The company was founded in 2007 and is based in Solna, Sweden.",
+        "currency": "EUR",
+        "sector": "Healthcare",
+        "industry": "Diagnostics & Research",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Sweden",
+        "city": "Solna"
     },
     "PROGEN.ST": {
         "short_name": "Prostatype Genomics AB",
@@ -80,18 +116,6 @@
         "industry": "Diagnostics & Research",
         "exchange": "STO",
         "market": "se_market",
-        "country": "Sweden",
-        "city": "Lund"
-    },
-    "SZGEF": {
-        "short_name": "SENZAGEN AB",
-        "long_name": "SenzaGen AB",
-        "summary": "SenzaGen AB markets, sells, and performs in vitro genomic allergen rapid detection (GARD) sensitization tests for the screening of pharmaceutical candidates, and safety assessment of chemicals, complex mixtures, and cosmetic ingredients in Sweden and internationally. It offers GARDskin for predicting the ability of chemicals to induce sensitization; GARDpotency, an animal free test to subcategorize sensitizers according to CLP/GHS classifications by monitoring the expression of 50 complementary genomic biomarkers; and GARDair, an in vitro assay for the prediction of chemical respiratory sensitizers. The company also provides GARDskin medical devices. It offers services through distributors, laboratories, and licensed contract research organizations. SenzaGen AB has a collaboration agreement with the Research Institute for Fragrance Materials to develop tests for photosensitization. The company was founded in 2010 and is headquartered in Lund, Sweden.",
-        "currency": "USD",
-        "sector": "Healthcare",
-        "industry": "Diagnostics & Research",
-        "exchange": "PNK",
-        "market": "us_market",
         "country": "Sweden",
         "city": "Lund"
     }

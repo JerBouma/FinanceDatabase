@@ -1,9 +1,9 @@
 {
     "ERSX": {
-        "short_name": "ERShares Non-US Small Cap ETF",
-        "long_name": "ERShares Non-US Small Cap Fund",
+        "short_name": "ERShares NextGen Entrepreneurs ",
+        "long_name": "ERShares NextGen Entrepreneurs ETF",
         "currency": "USD",
-        "summary": "The investment seeks investment results that correspond (before fees and expenses) generally to the performance of its underlying index, the Entrepreneur Non-US Small Cap Index.\n The index comprises 50 non-U.S. companies from around the world with market capitalizations between $300 million and $5 billion USD, that have the highest rank based on the six investment style factors discussed below. Under normal circumstances, the fund will invest at least 80% of its net assets, plus any borrowings for investment purposes, in securities of companies included in the index. The fund is non-diversified.",
+        "summary": "The investment seeks long-term capital appreciation.\n Under normal market conditions, the fund invests primarily in companies domiciled or headquartered outside of the U.S., or whose primary business activities or principal trading markets are located outside of the U.S. It invests primarily in equity securities of small- and mid-capitalization companies traded on major global exchanges. Equity securities include common stocks, preferred stocks, convertible preferred stocks, American Depositary Receipts (ADRs) and Global Depositary Receipts (GDRs). The fund is non-diversified.",
         "category": "Foreign Small/Mid Blend",
         "family": "EntrepreneurShares",
         "exchange": "PCX",
@@ -13,7 +13,7 @@
         "short_name": "Schwab Fundamental Internationa",
         "long_name": "Schwab Fundamental International Small Company Index ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Russell RAFI\u00e2\u0084\u00a2 Developed ex US Small Company Index.\n The fund will invest at least 90% of its net assets in stocks included in the index, including depositary receipts representing securities of the index, which may be in the form of American Depositary Receipts, Global Depositary Receipts and European Depositary Receipts. The index measures the performance of the small company size segment by fundamental overall company scores, which are created using as the universe the developed ex U.S. companies in the FTSE Global Total Cap Index (the parent index).",
+        "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Russell RAFI\u00e2\u0084\u00a2 Developed ex US Small Company Index.\n The fund will invest at least 90% of its net assets in stocks included in the index. The index measures the performance of the small company size segment by fundamental overall company scores, which are created using as the universe the developed ex U.S. companies in the FTSE Global Total Cap Index (the parent index).",
         "category": "Foreign Small/Mid Blend",
         "family": "Schwab ETFs",
         "exchange": "PCX",
@@ -26,6 +26,26 @@
         "summary": "The investment seeks investment results that, before fees and expenses, correspond generally to the total return performance of the S&P Developed Ex-U.S. under USD2 Billion Index.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in depositary receipts based on securities comprising the index. The index is a market capitalization weighted index designed to define and measure the investable universe of publicly traded small-cap companies, as defined by the index, domiciled in developed countries outside the United States.",
         "category": "Foreign Small/Mid Blend",
         "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "HSCZ": {
+        "short_name": "iShares Currency Hedged MSCI EA",
+        "long_name": "iShares Currency Hedged MSCI EAFE Small-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI EAFE Small Cap 100% Hedged to USD Index composed of small capitalization developed market equities, excluding the U.S. and Canada, while mitigating exposure to fluctuations between the value of the component currencies and the U.S. dollar.\n The fund generally will invest at least 90% of its assets in the component securities (including indirect investments through the underlying fund) and other instruments of the index and in investments that have economic characteristics that are substantially identical to the component securities of the index.",
+        "category": "Foreign Small/Mid Blend",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "ISCF": {
+        "short_name": "iShares MSCI Intl Small-Cap Mul",
+        "long_name": "iShares MSCI Intl Small-Cap Multifactor ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI World ex USA Small Cap Diversified Multiple-Factor Index.\n The fund generally will invest at least 80% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index is designed to select equity securities from the MSCI World ex USA Small Cap Index that have high exposure to four investment style factors: value, quality, momentum and low size, while maintaining a level of risk similar to that of the parent index.",
+        "category": "Foreign Small/Mid Blend",
+        "family": "iShares",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -46,7 +66,7 @@
         "summary": "The investment seeks to track the investment results of the MSCI EAFE Small Cap Index composed of small-capitalization developed market equities, excluding the U.S. and Canada.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index represents the small-capitalization segment of the MSCI EAFE IMI Index.",
         "category": "Foreign Small/Mid Blend",
         "family": "iShares",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "VSS": {

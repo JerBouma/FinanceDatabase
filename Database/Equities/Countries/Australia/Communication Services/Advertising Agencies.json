@@ -2,7 +2,7 @@
     "0OH.F": {
         "short_name": "OOH MEDIA LTD",
         "long_name": "oOh!media Limited",
-        "summary": "oOh!media Limited operates as an out of home media company in Australia and New Zealand. The company's portfolio includes large format classic and digital roadside screens; classic and digital signs in shopping centers, airport terminals, and lounges, as well as in cafes, pubs, universities, office buildings, and gyms; classic and digital street furniture signs; classic and digital rail, and classic format advertising in public transportation corridors, such as rail; and online sites for millennials, students, flyers, small businesses, and city-based audiences. It also engages in content production and digital printing operations. The company serves advertisers, landlords, leaseholders, community organizations, local councils, and governments in reaching various public audiences. oOh!media Limited was founded in 1989 and is headquartered in North Sydney, Australia.",
+        "summary": "oOh!media Limited operates as an out of home media company in Australia and New Zealand. The company's portfolio includes large format classic and digital roadside screens; classic and digital signs in shopping centers, airport terminals, and lounges, as well as in cafes, pubs, universities, office buildings, and gyms; classic and digital street furniture signs; digital and classic format advertising in public transportation corridors, such as rail; and online sites for millennials, students, flyers, small businesses, and city-based audiences. It also engages in content production and digital printing operations. The company serves advertisers, landlords, leaseholders, community organizations, local councils, and governments. oOh!media Limited was founded in 1989 and is based in North Sydney, Australia.",
         "currency": "EUR",
         "sector": "Communication Services",
         "industry": "Advertising Agencies",
@@ -23,8 +23,20 @@
         "country": "Australia",
         "city": "Pyrmont"
     },
+    "GTN.AX": {
+        "short_name": "GTNETWORK FPO",
+        "long_name": "GTN Limited",
+        "summary": "GTN Limited, together with its subsidiaries, operates broadcast media advertising platforms that supply traffic information reports to radio and/or television stations. The company through its advertising spots offers information reports, such as traffic and news. Its advertising platform enables advertisers to reach audiences in Australia, the United Kingdom, Canada, and Brazil. The company was founded in 1997 and is headquartered in North Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Communication Services",
+        "industry": "Advertising Agencies",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "North Sydney"
+    },
     "GWC.NZ": {
-        "short_name": "Snakk Media Limited Ordinary Sh",
+        "short_name": "Goodwood Capital Limited Ordina",
         "long_name": "Goodwood Capital Limited",
         "summary": "Goodwood Capital Limited operates as a mobile media advertising company in Australia, New Zealand, and Southeast Asia. It offers precision geo-location and audience based in-app and mobile Web advertising solutions. The company also provides programmatic geographic mobile platform for customers to manage on a self-service basis. The company was formerly known as Snakk Media Limited and changed its name to Goodwood Capital Limited in October 2020. Goodwood Capital Limited was founded in 2010 and is headquartered in Sydney, Australia. As of October 19, 2020, Goodwood Capital Limited was taken private.",
         "currency": "NZD",
@@ -32,6 +44,18 @@
         "industry": "Advertising Agencies",
         "exchange": "NZE",
         "market": "nz_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "IGL.AX": {
+        "short_name": "IVEGROUP FPO",
+        "long_name": "IVE Group Limited",
+        "summary": "IVE Group Limited engages in the marketing, communications, and print businesses in Australia. The company provides conceptual and creative design across print, mobile, and interactive media; and personalized communications, including marketing automation, marketing mail, publication mail, e-communications, multi-channel solutions, and call center services. It also prints and distributes catalogues, magazines, marketing, and corporate communications materials and stationery; and manufactures point of sale display material and large format banners for retail applications. In addition, the company provides data analytics, customer experience strategy, and CRM; and outsourced communication solutions for large organizations, such development of customized multi-channel management models covering creative and digital services, supply chain optimization, inventory management, warehousing, and logistics. It serves various industry sectors comprising financial services, publishing, retail, communications, property, clubs and associations, not-for-profit, utilities, manufacturing, education, and government. IVE Group Limited was founded in 1921 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Communication Services",
+        "industry": "Advertising Agencies",
+        "exchange": "ASX",
+        "market": "au_market",
         "country": "Australia",
         "city": "Sydney"
     },
@@ -50,7 +74,7 @@
     "OML.AX": {
         "short_name": "OOHMEDIA FPO",
         "long_name": "oOh!media Limited",
-        "summary": "oOh!media Limited operates as an out of home media company in Australia and New Zealand. The company's portfolio includes large format classic and digital roadside screens; classic and digital signs in shopping centers, airport terminals, and lounges, as well as in cafes, pubs, universities, office buildings, and gyms; classic and digital street furniture signs; classic and digital rail, and classic format advertising in public transportation corridors, such as rail; and online sites for millennials, students, flyers, small businesses, and city-based audiences. It also engages in content production and digital printing operations. The company serves advertisers, landlords, leaseholders, community organizations, local councils, and governments in reaching various public audiences. oOh!media Limited was founded in 1989 and is headquartered in North Sydney, Australia.",
+        "summary": "oOh!media Limited operates as an out of home media company in Australia and New Zealand. The company's portfolio includes large format classic and digital roadside screens; classic and digital signs in shopping centers, airport terminals, and lounges, as well as in cafes, pubs, universities, office buildings, and gyms; classic and digital street furniture signs; digital and classic format advertising in public transportation corridors, such as rail; and online sites for millennials, students, flyers, small businesses, and city-based audiences. It also engages in content production and digital printing operations. The company serves advertisers, landlords, leaseholders, community organizations, local councils, and governments. oOh!media Limited was founded in 1989 and is based in North Sydney, Australia.",
         "currency": "AUD",
         "sector": "Communication Services",
         "industry": "Advertising Agencies",
@@ -70,17 +94,5 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Darlinghurst"
-    },
-    "WPP.AX": {
-        "short_name": "WPP AUNZ FPO",
-        "long_name": "WPP AUNZ Limited",
-        "summary": "WPP AUNZ Limited, together with its subsidiaries, provides marketing, content, and communications services in Australia and internationally. The company operates through four segments: Global Integrated Agencies, Large Format Production, Public Relations & Public Affairs, and Specialist Communications. Its services include advertising, content, media investment management, public relations and public affairs, branding, service design, platforms and applications, data management, marketing technology consulting, and systems integration services; and branding and identity, digital, e-commerce and shopper marketing, and production and specialist communications. The company was formerly known as STW Communications Group Limited and changed its name to WPP AUNZ Limited in May 2016. The company is headquartered in Millers Point, Australia. WPP AUNZ Limited is a subsidiary of WPP plc.",
-        "currency": "AUD",
-        "sector": "Communication Services",
-        "industry": "Advertising Agencies",
-        "exchange": "ASX",
-        "market": "au_market",
-        "country": "Australia",
-        "city": "Millers Point"
     }
 }

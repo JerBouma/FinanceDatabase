@@ -11,7 +11,7 @@
     },
     "FLYT": {
         "short_name": "Direxion Flight to Safety Strat",
-        "long_name": "Direxion Shares ETF Trust - Direxion Flight to Safety Strategy ETF",
+        "long_name": "Direxion Flight to Safety Strategy ETF",
         "currency": "USD",
         "summary": "The investment seeks to provide total returns that exceed the total return of the Solactive Flight to Safety Index over a complete market cycle.\n The fund, under normal circumstances, will generally seek to maintain a portfolio of instruments similar to those included in the index and may also utilize investments in other investment companies or exchange-traded products, or swap contracts to obtain exposure to certain securities or commodities included in the index. It is non-diversified.",
         "category": "Allocation--50% to 70% Equity",
@@ -29,6 +29,46 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "MDIV": {
+        "short_name": "Multi-Asset Diversified Income ",
+        "long_name": "First Trust Multi-Asset Diversified Income Index Fund",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an index called the NASDAQ US Multi-Asset Diversified Income IndexSM.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and/or depositary receipts, REITs, preferred securities, MLPs and ETF that comprise the index. The index is designed to provide exposure to five asset segments, each selected to result in a consistent and high yield for the index. These five asset segments are: equity securities, REITs, preferred securities, MLPs and high yield corporate bonds.",
+        "category": "Allocation--50% to 70% Equity",
+        "family": "First Trust",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "OCIO": {
+        "short_name": "ETF Series Solutions Trust ETF",
+        "long_name": "ClearShares OCIO ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to outperform a traditional 60/40 mix of global equity and fixed-income investments.\n The fund is expected to typically invest approximately 40% to 70% of its total assets in underlying funds that principally invest in equity securities of any market capitalization. It is expected to typically invest approximately 20% to 50% of its total assets in underlying funds that principally invest in debt obligations.",
+        "category": "Allocation--50% to 70% Equity",
+        "family": "ClearShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "PSMB": {
+        "short_name": "Invesco Balanced Multi-Asset Al",
+        "long_name": "Invesco Balanced Multi-Asset Allocation ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide current income and capital appreciation.\n The fund seeks to achieve its investment objective by allocating its assets using a balanced investment style that seeks to maximize the benefits of diversification, which focuses on investing portions of fund assets both in underlying ETFs that invest in fixed-income securities (\"Fixed Income ETFs\") as well as in underlying ETFs that invest primarily in equity securities (\"Equity ETFs\"). Specifically, the fund&#39;s target allocation is to invest approximately 45%-75% of its total assets in Equity ETFs and approximately 25%-55% of its total assets in Fixed Income ETFs. It is non-diversified.",
+        "category": "Allocation--50% to 70% Equity",
+        "family": "Invesco",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "PWS": {
+        "short_name": "Pacer WealthShield ETF",
+        "long_name": "Pacer WealthShield ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Pacer WealthShield Index.\n Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in (i) the component securities of the index or (ii) ETFs that seek to track the performance of some or all of the component securities of the index in the same approximate weight as such component securities. The index utilizes a systematic risk management strategy that directs the index&#39;s exposure to U.S. equity securities, U.S. Treasury securities, or a mix of each. The fund is non-diversified.",
+        "category": "Allocation--50% to 70% Equity",
+        "family": "Pacer",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
     "QPT": {
         "short_name": "AdvisorShares Q Portfolio Blend",
         "long_name": "AdvisorShares Q Portfolio Blended Allocation ETF",
@@ -36,16 +76,6 @@
         "summary": "The investment seeks to maximize total return over the long-term.\n The fund invests in ETFs representing all asset classes, including, but not limited to, treasury bonds, municipal bonds, investment grade corporate bonds, high-yield U.S. corporate bonds (sometimes referred to as \"junk bonds\"), municipal bonds, U.S. and foreign equities, and commodities. These underlying investments may be of any market capitalization, duration, maturity, and quality.",
         "category": "Allocation--50% to 70% Equity",
         "family": "AdvisorShares",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "QQH": {
-        "short_name": "HCM Defender 100 Index ETF",
-        "long_name": "HCM Defender 100 Index ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to provide investment results that correspond, before fees and expenses, generally to the performance of the HCM Defender 100 Index.\n The fund seeks to achieve its investment objective by investing at least 80% of its net assets, including borrowings for investment purposes but exclusive of collateral held from securities lending, in securities included in the index. The index seeks to outperform the Solactive US Technology 100 Index, a proprietary methodology.",
-        "category": "Allocation--50% to 70% Equity",
-        "family": "Howard Capital Management",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -57,6 +87,16 @@
         "category": "Allocation--50% to 70% Equity",
         "family": "Inspire",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "TEGS": {
+        "short_name": "Trend Aggregation ESG ETF",
+        "long_name": "Trend Aggregation ESG ETF",
+        "currency": "USD",
+        "summary": "The investment seeks capital appreciation.\n The fund will under normal conditions invest at least 80% of its net assets (plus borrowings for investment purposes) directly, or indirectly through mutual funds or exchange traded funds, in equity or fixed income securities of well-known environmental, social, and governance (\"ESG\") indices such as MSCI and Russell. It may also invest up to 20% of its net assets in cash and cash equivalents including U.S. government securities.",
+        "category": "Allocation--50% to 70% Equity",
+        "family": "Tuttle",
+        "exchange": "BTS",
         "market": "us_market"
     }
 }

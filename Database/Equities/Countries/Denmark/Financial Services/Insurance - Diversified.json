@@ -2,7 +2,7 @@
     "ALMB.CO": {
         "short_name": "Alm. Brand A/S",
         "long_name": "Alm. Brand A/S",
-        "summary": "Alm. Brand A/S, together with its subsidiaries, provides non-life insurance, banking, and life and pension insurance products and services in Denmark. The company offers banking products and services to private customers and small and medium-sized enterprises; and financial markets services comprising bonds, equity and currency trading and research, private banking, and asset management services, as well as leases cars to private and commercial customers. It also provides advisory services. The company offers its non-life insurance products for the private customers, small and medium-sized enterprises, property owners and administrators, agricultural customers, and the public sectors through insurance shops, independent insurance shops, and business partners. Its life and pension insurance products include coverage for death, disability, and critical illness; and savings comprising capital pension plans, installment pensions, and annuity schemes for private individuals, farmers, and owners and employees of small businesses. The company operates 19 branches in Denmark. Alm. Brand A/S is headquartered in Copenhagen, Denmark. Alm. Brand A/S is a subsidiary of Alm. Brand af 1792 Fmba.",
+        "summary": "Alm. Brand A/S, together with its subsidiaries, provides non-life insurance, banking, and life and pension insurance products and services in Denmark. The company offers banking products and services to private customers and small and medium-sized enterprises; and financial markets services comprising bonds, equity and currency trading and research, private banking, and asset management services, as well as leases cars to private and commercial customers. It also provides advisory services. The company offers its non-life insurance products for the private customers, small and medium-sized enterprises, property owners and administrators, agricultural customers, and the public sectors through insurance shops, independent insurance shops, and business partners. Its life and pension insurance products include coverage for death, disability, and critical illness; and savings comprising capital pension plans, installment pensions, and annuity schemes for private individuals, farmers, and owners and employees of small businesses. The company operates 19 branches in Denmark. Alm. Brand A/S is headquartered in Copenhagen, Denmark. Alm. Brand A/S operates as a subsidiary of Alm. Brand af 1792 Fmba.",
         "currency": "DKK",
         "sector": "Financial Services",
         "industry": "Insurance - Diversified",
@@ -26,7 +26,7 @@
     "TOP.CO": {
         "short_name": "Topdanmark A/S",
         "long_name": "Topdanmark A/S",
-        "summary": "Topdanmark A/S, together with its subsidiaries, operates as an insurance company in Denmark. It offers non-life insurance products, motor insurance policies, risk management advice, and home and travel insurance products, as well as life insurance and pension fund schemes primarily in the event of illness, death, and injuries. The company also provides asset management services. It serves individual households, and SMEs and agricultural businesses under the Topdanmark and Coop Forsikringer brands. The company was founded in 1985 is headquartered in Ballerup, Denmark.",
+        "summary": "Topdanmark A/S, together with its subsidiaries, operates as an insurance company in Denmark. The company operates through three segments: Private, SME, and Life. It offers illness and accident, motor, workers compensation, fire and property, liability, and travel insurance products, as well as life insurance and pension fund schemes primarily in the event of illness, death, and injuries. The company also provides asset management services and IT services. It serves individual households, and SMEs and agricultural businesses under the Topdanmark and Coop Forsikringer brands. The company offers its products through personal meetings, online meetings, and online. Topdanmark A/S was founded in 1728 and is headquartered in Ballerup, Denmark.",
         "currency": "DKK",
         "sector": "Financial Services",
         "industry": "Insurance - Diversified",
@@ -38,7 +38,7 @@
     "TPDKY": {
         "short_name": "TOPDANMARK A/S",
         "long_name": "Topdanmark A/S",
-        "summary": "Topdanmark A/S, together with its subsidiaries, operates as an insurance company in Denmark. It offers non-life insurance products, motor insurance policies, risk management advice, and home and travel insurance products, as well as life insurance and pension fund schemes primarily in the event of illness, death, and injuries. The company also provides asset management services. It serves individual households, and SMEs and agricultural businesses under the Topdanmark and Coop Forsikringer brands. The company was founded in 1985 is headquartered in Ballerup, Denmark.",
+        "summary": "Topdanmark A/S, together with its subsidiaries, operates as an insurance company in Denmark. The company operates through three segments: Private, SME, and Life. It offers illness and accident, motor, workers compensation, fire and property, liability, and travel insurance products, as well as life insurance and pension fund schemes primarily in the event of illness, death, and injuries. The company also provides asset management services and IT services. It serves individual households, and SMEs and agricultural businesses under the Topdanmark and Coop Forsikringer brands. The company offers its products through personal meetings, online meetings, and online. Topdanmark A/S was founded in 1728 and is headquartered in Ballerup, Denmark.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Insurance - Diversified",
@@ -50,7 +50,7 @@
     "TQ71.F": {
         "short_name": "TOPDANMARK AS NAM.  DK 1",
         "long_name": "Topdanmark A/S",
-        "summary": "Topdanmark A/S, together with its subsidiaries, operates as an insurance company in Denmark. It offers non-life insurance products, motor insurance policies, risk management advice, and home and travel insurance products, as well as life insurance and pension fund schemes primarily in the event of illness, death, and injuries. The company also provides asset management services. It serves individual households, and SMEs and agricultural businesses under the Topdanmark and Coop Forsikringer brands. The company was founded in 1985 is headquartered in Ballerup, Denmark.",
+        "summary": "Topdanmark A/S, together with its subsidiaries, operates as an insurance company in Denmark. The company operates through three segments: Private, SME, and Life. It offers illness and accident, motor, workers compensation, fire and property, liability, and travel insurance products, as well as life insurance and pension fund schemes primarily in the event of illness, death, and injuries. The company also provides asset management services and IT services. It serves individual households, and SMEs and agricultural businesses under the Topdanmark and Coop Forsikringer brands. The company offers its products through personal meetings, online meetings, and online. Topdanmark A/S was founded in 1728 and is headquartered in Ballerup, Denmark.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Insurance - Diversified",
@@ -68,6 +68,18 @@
         "industry": "Insurance - Diversified",
         "exchange": "CPH",
         "market": "dk_market",
+        "country": "Denmark",
+        "city": "Ballerup"
+    },
+    "TRYG.VI": {
+        "short_name": "TRYG AS",
+        "long_name": "Tryg A/S",
+        "summary": "Tryg A/S, together with its subsidiaries, provides insurance products and services for private and corporate customers, and small and medium sized businesses in Denmark, Norway, and Sweden. The company operates through Private, Commercial, Corporate, and Sweden segments. It provides car, contents, house, accident, travel, motorcycles, pet, health, property, liability, transportation, group life, and boat insurance products, as well as fire and content, and worker compensation insurance products. Tryg A/S sells its products primarily through call centers, Internet, tied agents, franchisees, interest organizations, car dealers, real estate agents, insurance brokers, and Nordea branches under the Tryg Forsikring, Alka, Enter Forsikring, Tryg, Moderna, Tryg Garanti, Moderna Djurf\u00c3\u00b6rs\u00c3\u00a4kringar, Atlantica B\u00c3\u00a5tf\u00c3\u00b6rs\u00c3\u00a4kring, Bilsport, and MC specialf\u00c3\u00b6rs\u00c3\u00a4kring brands. The company was founded in 1731 and is headquartered in Ballerup, Denmark. Tryg A/S is a subsidiary of TryghedsGruppen smba.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Insurance - Diversified",
+        "exchange": "VIE",
+        "market": "at_market",
         "country": "Denmark",
         "city": "Ballerup"
     }

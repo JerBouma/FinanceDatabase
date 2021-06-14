@@ -3,7 +3,7 @@
         "short_name": "Invesco BLDRS Emerging Markets ",
         "long_name": "Invesco BLDRS Emerging Markets 50 ADR Index Fund",
         "currency": "USD",
-        "summary": "The investment seeks to provide investment results that correspond generally, before fees and expenses, to the price and yield performance of the S&P/BNY Mellon Emerging 50 ADR Index (USD).\n The fund typically invests substantially all of its assets in the securities that make up the index. The index (USD) is intended to give investors a benchmark for tracking the price and yield performance of Emerging Markets Depositary Receipts. The fund is non-diversified.",
+        "summary": "The investment seeks to track the investment results, of publicly traded Depositary Receipts representing securities of issuers in emerging markets represented by the S&P/BNY Mellon Emerging 50 ADR Index (USD).\n The index is developed by the Licensor from a universe of Depositary Receipts defined by the S&P/Bank of New York Mellon ADR Index (\"S&P/BNY Mellon ADR Composite Index\"). The fund normally holds at least 95% of its total assets in Depositary Receipts that comprise the index, and will seek to track the investment results, before fees and expenses, of the index. It is non-diversified.",
         "category": "Diversified Emerging Mkts",
         "family": "Invesco",
         "exchange": "NGM",
@@ -16,7 +16,17 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the ISE BICKTM.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and depositary receipts that comprise the index. The index is designed to provide a benchmark for investors interested in tracking some of the largest and most liquid public companies that are domiciled in Brazil, India, China (including Hong Kong) and South Korea that are accessible for investment by U.S. investors.",
         "category": "Diversified Emerging Mkts",
         "family": "First Trust",
-        "exchange": "NMS",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "BKEM": {
+        "short_name": "BNY Mellon Emerging Markets Equ",
+        "long_name": "BNY Mellon Emerging Markets Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of the Morningstar Emerging Markets Large Cap IndexSM.\n Under normal circumstances, in seeking to track the index&#39;s performance, the fund generally purchases a representative sample of the securities comprising the index. By using a sampling process, it typically will not invest in all of the securities in the index. The Morningstar\u00c2\u00ae Emerging Markets Large Cap IndexSM is a float-adjusted market capitalization weighted index designed to measure the performance of emerging market large-capitalization stocks. The fund is non-diversified.",
+        "category": "Diversified Emerging Mkts",
+        "family": "BNY Mellon",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "BKF": {
@@ -36,7 +46,7 @@
         "summary": "The investment seeks to provide investment results that track the performance of the Nasdaq Victory Emerging Market High Dividend 100 Volatility Weighted Index before fees and expenses.\n The fund seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its assets directly or indirectly in the securities included in the Nasdaq Victory Emerging Market High Dividend 100 Volatility Weighted Index (the \"index\"). The index identifies the 100 highest dividend yielding stocks in the Nasdaq Victory Emerging Market 500 Volatility Weighted Index.",
         "category": "Diversified Emerging Mkts",
         "family": "Victory Capital",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "DBEM": {
@@ -47,26 +57,6 @@
         "category": "Diversified Emerging Mkts",
         "family": "Xtrackers",
         "exchange": "PCX",
-        "market": "us_market"
-    },
-    "DEM": {
-        "short_name": "WisdomTree Emerging Markets Hig",
-        "long_name": "WisdomTree Emerging Markets High Dividend Fund",
-        "currency": "USD",
-        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree Emerging Markets High Dividend Index.\n Under normal circumstances, at least 95% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a fundamentally weighted index that is comprised of the highest dividend-yielding common stocks selected from the WisdomTree Emerging Markets Dividend Index. The fund is non-diversified.",
-        "category": "Diversified Emerging Mkts",
-        "family": "WisdomTree",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "DGRE": {
-        "short_name": "WisdomTree Emerging Markets Qua",
-        "long_name": "WisdomTree Emerging Markets Quality Dividend Growth Fund",
-        "currency": "USD",
-        "summary": "The investment seeks income and capital appreciation.\n The fund seeks to achieve its investment objective by investing primarily in emerging market dividend-paying common stocks with growth characteristics. The adviser, using a disciplined model-based process focused on a long-term approach to investing, seeks to identify dividend-paying companies with strong corporate profitability and sustainable growth characteristics. The fund is non-diversified.",
-        "category": "Diversified Emerging Mkts",
-        "family": "WisdomTree",
-        "exchange": "NMS",
         "market": "us_market"
     },
     "DGS": {
@@ -99,6 +89,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "EAPR": {
+        "short_name": "Innovator MSCI Emerging Markets",
+        "long_name": "Innovator MSCI Emerging Markets Power Buffer ETF - April",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that match the price return of the iShares MSCI Emerging Markets ETF.\n The fund invests at least 80% of its net assets in FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the iShares MSCI Emerging Markets ETF. FLEX Options are exchange-traded options contracts with uniquely customizable terms. Although guaranteed for settlement by the Options Clearing Corporation (the \"OCC\"), FLEX Options are still subject to counterparty risk with the OCC and may be less liquid than more traditional exchange-traded options. It is non-diversified.",
+        "category": "Diversified Emerging Mkts",
+        "family": "Innovator ETFs",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "ECON": {
         "short_name": "Columbia Emerging Markets Consu",
         "long_name": "Columbia Emerging Markets Consumer ETF",
@@ -107,6 +107,16 @@
         "category": "Diversified Emerging Mkts",
         "family": "Columbia Threadneedle",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "ECOW": {
+        "short_name": "Pacer Emerging Markets Cash Cow",
+        "long_name": "Pacer Emerging Markets Cash Cows 100 ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Pacer Emerging Markets Cash Cows 100 Index.\n The index uses an objective, rules-based methodology to provide exposure to large and mid-capitalization companies in emerging markets with high free cash flow yields. Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in the component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. It is non-diversified.",
+        "category": "Diversified Emerging Mkts",
+        "family": "Pacer",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "EDIV": {
@@ -153,7 +163,7 @@
         "short_name": "AAM S&P Emerging Markets High D",
         "long_name": "AAM S&P Emerging Markets High Dividend Value ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the S&P Emerging Markets Dividend and Free Cash Flow Yield Index.\n At least 80% of the fund&#39;s total assets (exclusive of any collateral held from securities lending) will be invested in the component securities of the index and depositary receipts representing index components. The index is a rules-based, equal-weighted index that is designed to provide exposure to the constituents of the S&P Emerging Plus LargeMidCap Index that exhibit both high dividend yield and sustainable dividend distribution characteristics, while maintaining diversified sector exposure.",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the S&P Emerging Markets Dividend and Free Cash Flow Yield Index.\n The index is a rules-based, equal-weighted index that is designed to provide exposure to the constituents of the S&P Emerging Plus LargeMidCap Index that exhibit both high dividend yield and sustainable dividend distribution characteristics, while maintaining diversified sector exposure. At least 80% of the fund\u00e2\u0080\u0099s net assets will be invested in equity securities that (i) are tied economically to Emerging Markets countries and (ii) have had a positive realized annual dividend yield within the past year.",
         "category": "Diversified Emerging Mkts",
         "family": "AAM",
         "exchange": "PCX",
@@ -177,16 +187,6 @@
         "category": "Diversified Emerging Mkts",
         "family": "iShares",
         "exchange": "PCX",
-        "market": "us_market"
-    },
-    "EEMV": {
-        "short_name": "iShares MSCI Emerging Markets M",
-        "long_name": "iShares MSCI Emerging Markets Min Vol Factor ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI Emerging Markets Minimum Volatility (USD) Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index measures the performance of equity securities in global emerging markets that, in the aggregate, have lower volatility relative to the large- and mid-cap global emerging markets.",
-        "category": "Diversified Emerging Mkts",
-        "family": "iShares",
-        "exchange": "BTS",
         "market": "us_market"
     },
     "EEMX": {
@@ -246,7 +246,7 @@
         "summary": "The investment seeks to track the investment results of the S&P Emerging Markets Infrastructure IndexTM, which is designed to track the performance of 30 of the largest publicly listed companies in the infrastructure industry in emerging markets.\n The fund generally will invest at least 90% of its assets in the component securities of the index and in investments that have economic characteristics that are substantially identical to the component securities of the index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the index. It is non-diversified.",
         "category": "Diversified Emerging Mkts",
         "family": "iShares",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "EMQQ": {
@@ -276,7 +276,7 @@
         "summary": "The investment seeks to track the investment results of the MSCI Emerging Markets ex China Index (the \"underlying index\").\n The fund generally will invest at least 90% of its assets in the component securities (including indirect investments through an underlying fund) of the underlying index. The underlying index is a free float-adjusted market capitalization weighted index that captures large- and mid-capitalization stocks across 25 of the 26 Emerging Markets countries (as defined by MSCI Inc. (the \"index provider\" or \"MSCI\")), excluding China.",
         "category": "Diversified Emerging Mkts",
         "family": "iShares",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "EWEB": {
@@ -286,7 +286,7 @@
         "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the Nasdaq CTA Emerging Markets Internet & E-commerce Net Total Return Index.\n The fund invests at least 80% of its total assets, plus borrowings for investments purposes (if any), in the securities of the index and in ADRs and GDRs based on the securities in the index. The index is designed to provide exposure to exchange-listed companies that are expected to benefit from further adoption of internet and e-commerce technologies in emerging markets countries. The fund is non-diversified.",
         "category": "Diversified Emerging Mkts",
         "family": "Global X Funds",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "EWX": {
@@ -316,7 +316,7 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the NASDAQ AlphaDEX\u00c2\u00ae Emerging Markets Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks, depositary receipts, real estate investment trusts (\"REITs\") and preferred shares that comprise the index. The index is designed to select stocks from the NASDAQ Emerging Markets Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
         "category": "Diversified Emerging Mkts",
         "family": "First Trust",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "FEMS": {
@@ -326,7 +326,7 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield of an equity index called the NASDAQ AlphaDEX\u00c2\u00ae Emerging Markets Small Cap Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks, depositary receipts, real estate investment trusts (\"REITs\") and preferred shares that comprise the index. The index is designed to select stocks from the NASDAQ Emerging Markets Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
         "category": "Diversified Emerging Mkts",
         "family": "First Trust",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "FLQE": {
@@ -340,10 +340,10 @@
         "market": "us_market"
     },
     "FM": {
-        "short_name": "iShares MSCI Frontier 100 Fund",
-        "long_name": "iShares MSCI Frontier 100 ETF",
+        "short_name": "iShares MSCI Frontier and Selec",
+        "long_name": "iShares MSCI Frontier and Select EM ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI Frontier Markets 100 Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is designed to measure equity market performance of frontier markets while putting stronger emphasis on tradability compared to the MSCI Frontier Markets IMI (the parent index).",
+        "summary": "The investment seeks to track the investment results of the MSCI Frontier and Emerging Markets Select Index composed primarily of frontier market equities along with select emerging market equities.\n The index aims to reflect the performance of frontier markets and the lower size spectrum of emerging markets, while putting a stronger emphasis on tradability and investability of the constituents compared to the parent index. The fund generally will invest at least 90% of its assets in the component securities of the index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index.",
         "category": "Diversified Emerging Mkts",
         "family": "iShares",
         "exchange": "PCX",
@@ -356,6 +356,16 @@
         "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Russell RAFI\u00e2\u0084\u00a2 Emerging Markets Large Company Index.\n The fund will invest at least 80% of its net assets in stocks included in the index, including depositary receipts representing securities of the index; which may be in the form of American Depositary Receipts, Global Depositary Receipts and European Depositary Receipts. The index measures the performance of the large company size segment by fundamental overall company scores, which are created using as the universe the emerging markets companies in the FTSE Global Total Cap Index (the parent index).",
         "category": "Diversified Emerging Mkts",
         "family": "Schwab ETFs",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "GEM": {
+        "short_name": "Goldman Sachs ActiveBeta Emergi",
+        "long_name": "Goldman Sachs ActiveBeta Emerging Markets Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the Goldman Sachs ActiveBeta\u00c2\u00ae Emerging Markets Equity Index.\n The index is designed to deliver exposure to equity securities of emerging market issuers. The fund invests at least 80% of its assets (exclusive of collateral held from securities lending) in securities included in its underlying index, in depositary receipts representing securities included in its underlying index and in underlying stocks in respect of depositary receipts included in its underlying index.",
+        "category": "Diversified Emerging Mkts",
+        "family": "Goldman Sachs",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -373,9 +383,69 @@
         "short_name": "iShares Core MSCI Emerging Mark",
         "long_name": "iShares Core MSCI Emerging Markets ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI Emerging Markets Investable Market Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is designed to measure large-, mid- and small-cap equity market performance in the global emerging markets.",
+        "summary": "The investment seeks to track the investment results of the MSCI Emerging Markets Investable Market Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is designed to measure large-, mid- and small-cap equity market performance in the global emerging markets. It is non-diversified.",
         "category": "Diversified Emerging Mkts",
         "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "ISEM": {
+        "short_name": "Invesco RAFI Strategic Emerging",
+        "long_name": "Invesco RAFI Strategic Emerging Markets ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Invesco Strategic Emerging Markets Index (the \"underlying index\").\n The fund generally will invest at least 80% of its total assets in securities that comprise the underlying index and American depositary receipts (\"ADRs\") and global depositary receipts (\"GDRs\") that are based on securities in the underlying index. The underlying index is designed to measure the performance of equity securities issued by higher quality, large-business-sized companies located in countries designated as emerging market countries. The fund is non-diversified.",
+        "category": "Diversified Emerging Mkts",
+        "family": "Invesco",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "JEMA": {
+        "short_name": "J.P. Morgan Exchange-Traded Fun",
+        "long_name": "JPMorgan Emerging Markets Equity Core ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide long-term capital appreciation.\n Under normal circumstances, the fund invests at least 80% of its assets in equity securities and equity-related instruments that are tied economically to emerging markets. The equity securities and equity-related instruments in which it may invest include, but are not limited to, common stock, participation notes or other structured notes, and other instruments that provide economic exposure to one or more equity securities. The fund may also use exchanged-traded futures for the efficient management of cash flows.",
+        "category": "Diversified Emerging Mkts",
+        "family": "JPMorgan",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "JHEM": {
+        "short_name": "John Hancock Multifactor Emergi",
+        "long_name": "John Hancock Multifactor Emerging Markets ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the John Hancock Dimensional Emerging Markets Index (the index).\n The fund normally invests at least 80% of its net assets (plus any borrowings for investment purposes) in securities included in the index, in depositary receipts representing securities included in the index, and in underlying stocks in respect of depositary receipts included in the index. The index is designed to comprise a subset of securities associated with emerging markets, which may include frontier markets (emerging markets in an earlier stage of development).",
+        "category": "Diversified Emerging Mkts",
+        "family": "John Hancock",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "JPEM": {
+        "short_name": "JPMorgan Diversified Return Eme",
+        "long_name": "JPMorgan Diversified Return Emerging Markets Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that closely correspond, before fees and expenses, to the performance of the JP Morgan Diversified Factor Emerging Markets Equity Index.\n The fund will invest at least 80% of its assets in securities included in the underlying index. \"Assets\" means net assets, plus the amount of borrowing for investment purposes. The underlying index is comprised of equity securities from emerging markets selected to represent a diversified set of factor characteristics.",
+        "category": "Diversified Emerging Mkts",
+        "family": "JPMorgan",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "KEMQ": {
+        "short_name": "KraneShares Emerging Markets Co",
+        "long_name": "KraneShares FTSE Emerging Markets Consumer Technology Index ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that track the price and yield performance of Solactive Emerging Market Consumer Technology Index.\n Under normal circumstances, the fund will invest at least 80% of its total assets in components of the index, depositary receipts, including ADRs, representing such components and securities underlying depositary receipts in the index. The index is composed of the equity securities of the 50 companies with the largest market capitalization that are headquartered in certain emerging market and frontier countries and engaged in the consumer or technology sectors. The fund is non-diversified.",
+        "category": "Diversified Emerging Mkts",
+        "family": "KraneShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "KEMX": {
+        "short_name": "KraneShares MSCI Emerging Marke",
+        "long_name": "KraneShares MSCI Emerging Markets ex China Index ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the price and yield performance of the MSCI Emerging Markets ex China Index.\n Under normal circumstances, the fund will invest at least 80% of its total assets in components of the underlying index and depositary receipts, including American depositary receipts (\"ADRs\"), representing such components. The underlying index is a free float-adjusted market capitalization weighted index designed to track the equity market performance of mid- and large-cap companies of emerging market countries, excluding China.",
+        "category": "Diversified Emerging Mkts",
+        "family": "KraneShares",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -389,11 +459,31 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "PBEE": {
+        "short_name": "Invesco PureBeta FTSE Emerging ",
+        "long_name": "Invesco PureBeta FTSE Emerging Markets ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the FTSE Emerging Index.\n The fund generally will invest at least 90% of its total assets common stocks that comprise the underlying index, as well as American depositary receipts (\"ADRs\") and global depositary receipts (\"GDRs\") that represent securities in the underlying index. The index is designed to measure the performance of the large- and mid-capitalization segments of equity markets of countries around the world that are classified as emerging markets within the country classification definition of the index provider.",
+        "category": "Diversified Emerging Mkts",
+        "family": "Invesco",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "PIE": {
+        "short_name": "Invesco DWA Emerging Markets Mo",
+        "long_name": "Invesco DWA Emerging Markets Momentum ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Dorsey Wright\u00c2\u00ae Emerging Markets Technical Leaders Index (the \"underlying index\").\n The fund will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is comprised of equity securities of large capitalization companies based in emerging market countries.",
+        "category": "Diversified Emerging Mkts",
+        "family": "Invesco",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
     "PXH": {
         "short_name": "Invesco FTSE RAFI Emerging Mark",
         "long_name": "Invesco FTSE RAFI Emerging Markets ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results (before fees and expenses) of the FTSE RAFITM Emerging Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index, as well as ADRs and GDRs that represent securities in the underlying index. The underlying index is designed to track the performance of securities of companies domiciled in emerging market countries with the highest ranking cumulative score (\"Fundamental Value\"), selected from the constituents of the FTSE Emerging All Cap Index, as determined by the index provider.",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the FTSE RAFITM Emerging Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index, as well as ADRs and GDRs that represent securities in the underlying index. The underlying index is is comprised of securities of companies located in countries that are classified as emerging markets within the country classification definition of FTSE. The underlying index includes securities of companies selected from the constituents of the FTSE Emerging Total Cap Index.",
         "category": "Diversified Emerging Mkts",
         "family": "Invesco",
         "exchange": "PCX",
@@ -417,6 +507,26 @@
         "category": "Diversified Emerging Mkts",
         "family": "WisdomTree",
         "exchange": "BTS",
+        "market": "us_market"
+    },
+    "RFEM": {
+        "short_name": "First Trust RiverFront Dynamic ",
+        "long_name": "First Trust RiverFront Dynamic Emerging Markets ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide capital appreciation.\n The fund invests at least 80% of its net assets (including investment borrowings) in a portfolio of equity securities of emerging market companies, including through investments in common stock, depositary receipts, and common and preferred shares of real estate investment trusts, and forward foreign currency exchange contracts and currency spot transactions used to hedge the fund&#39;s exposure to the currencies in which the equity securities of such emerging market companies are denominated. The fund may invest in small, mid and large capitalization companies.",
+        "category": "Diversified Emerging Mkts",
+        "family": "First Trust",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "RNEM": {
+        "short_name": "Emerging Markets Equity Select ",
+        "long_name": "First Trust Emerging Markets Equity Select ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the Nasdaq Riskalyze Emerging Markets Index (the \"index\").\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks, depositary receipts, preferred shares and real estate investment trusts (\"REITs\") that comprise the index. The index is designed to select low volatility securities issued by companies operating in emerging market countries.",
+        "category": "Diversified Emerging Mkts",
+        "family": "First Trust",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "ROAM": {
@@ -449,6 +559,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "TLTE": {
+        "short_name": "FlexShares Morningstar Emerging",
+        "long_name": "FlexShares Morningstar Emerging Markets Factor Tilt Index Fund",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the Morningstar\u00c2\u00ae Emerging Markets Factor Tilt IndexSM.\n The index is designed to reflect the performance of a selection of companies that, in aggregate, possess greater exposure to size and value factors relative to the Morningstar Emerging Markets Index, a float-adjusted market-capitalization weighted index of companies incorporated in emerging-market countries. The fund will invest at least 80% of its total assets in the securities of the index and in ADRs and GDRs based on the securities in the index.",
+        "category": "Diversified Emerging Mkts",
+        "family": "Flexshares Trust",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "UEVM": {
         "short_name": "VictoryShares USAA MSCI Emergin",
         "long_name": "VictoryShares USAA MSCI Emerging Markets Value Momentum ETF",
@@ -476,16 +596,6 @@
         "summary": "The investment seeks investment results that correspond to the price and yield performance of the Beta Thematic Emerging Markets ex-China Index.\n The fund will invest at least 80% of its net assets in the companies included in the index and the advisor generally expects to be substantially invested at such times, with at least 95% of its net assets invested in these securities. The index is designed to provide broad, core emerging markets equity exposure by measuring the stock performance of up to 700 emerging markets companies, excluding companies domiciled or exchange-listed in China or domiciled in Hong Kong. It is non-diversified.",
         "category": "Diversified Emerging Mkts",
         "family": "Columbia Threadneedle",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "XSOE": {
-        "short_name": "WisdomTree Emerging Markets Ex-",
-        "long_name": "WisdomTree Emerging Markets ex-State-Owned Enterprises Fund",
-        "currency": "USD",
-        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree Emerging Markets ex-State-Owned Enterprises Index (the \"index\").\n Under normal circumstances, at least 80% of the fund&#39;s total assets will be invested in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a modified float-adjusted market cap weighted index that consists of common stocks in emerging markets, excluding common stocks of \"state-owned enterprises.\" The fund is non-diversified.",
-        "category": "Diversified Emerging Mkts",
-        "family": "WisdomTree",
         "exchange": "PCX",
         "market": "us_market"
     }

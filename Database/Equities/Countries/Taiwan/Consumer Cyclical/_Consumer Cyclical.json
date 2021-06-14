@@ -1,4 +1,16 @@
 {
+    "1269.TWO": {
+        "short_name": "KANPAI",
+        "long_name": "Kanpai Co., Ltd",
+        "summary": "Kanpai Co., Ltd operates restaurants under the Kanpai brand in China. Its restaurants offer yakiniku and beer. The company was founded in 1999 and is based in Taipei City, Taiwan. Kanpai Co., Ltd is a subsidiary of Tokyo Gas Co., Ltd.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Restaurants",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei City"
+    },
     "1316.TW": {
         "short_name": "SUN YAD CONSTRUCTION CO LTD",
         "long_name": "Sun Yad Construction Co.,Ltd",
@@ -14,7 +26,7 @@
     "1323.TW": {
         "short_name": "YONYU PLASTICS",
         "long_name": "Yonyu Plastics Co., Ltd.",
-        "summary": "Yonyu Plastics Co., Ltd. manufactures and sells plastic packaging products worldwide. The company offers home and personal cleaning, pharmaceutical, and green packaging products, as well as cosmetic package materials; and other products comprising cable accessories and other injection/extrusion products. It also provides color matching and master batch compounding, mold design and fabrication, plastic molding, cosmetic ingredient developing and filling, product design, assembly, computer-aided raw color recipe design, injection, blow molding, and tube manufacturing services; and various decoration services, such as printing, hot stamping, labeling, metallization, UV coating, and automated assembly services. Yonyu Plastics Co., Ltd. was founded in 1964 and is based in Tainan City, Taiwan.",
+        "summary": "Yonyu Plastics Co., Ltd. manufactures and sells plastic packaging products worldwide. The company offers home and personal cleaning, pharmaceutical, and green packaging products, as well as cosmetic package materials; and other products comprising cable accessories and other injection/extrusion products. It also provides color matching and master batch compounding, mold design and fabrication, plastic molding, cosmetic ingredient developing and filling, product design, computer-aided raw color recipe design, injection, blow molding, and tube manufacturing services; and various decoration services, such as printing, hot stamping, labeling, metallization, UV coating, and automated assembly services. The company was founded in 1964 and is based in Tainan City, Taiwan.",
         "currency": "TWD",
         "sector": "Consumer Cyclical",
         "industry": "Packaging & Containers",
@@ -22,6 +34,30 @@
         "market": "tw_market",
         "country": "Taiwan",
         "city": "Tainan City"
+    },
+    "1336.TWO": {
+        "short_name": "TAIHAN PRECISION TECHNOLOGY CO ",
+        "long_name": "Taihan Precision Technology Co., Ltd.",
+        "summary": "Taihan Precision Technology Co., Ltd. designs, manufactures, and sells precision molds primarily for system integrators in worldwide. It offers plastic injection products; surface treatment products, such as painting, NCVM, and IMD products; and assembly/installation and welding products and services. The company's products comprise MFP related components; keyboard frames, keyboards, and handset key tops; mobility products, including handset housings, net book housings, DSC housings, and plastic components of digital photo frames; plastic components of photo printers; and projector housing and other plastic components. It is also involved in the mold and die development and fabrication of automotive plastic components. The company was formerly known as TaiHan Steel Mold Corp. and changed its name to Taihan Precision Technology Co., Ltd. in June 2000. Taihan Precision Technology Co., Ltd. was founded in 1987 and is based in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
+    "1339.TW": {
+        "short_name": "Y.C.C. PARTS MFG CO LTD",
+        "long_name": "Y.C.C. Parts Mfg. Co., Ltd.",
+        "summary": "Y.C.C. Parts Mfg. Co., Ltd. manufactures and sells auto plastic parts in Taiwan, North America, South America, Europe, and Asia. It offers bumpers, grilles, head lamp mounting panels, valances, head lamps, and other products, as well as bumper covers and lower valances. The company was founded in 1986 and is based in Lukang Town, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TAI",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Lukang Town"
     },
     "1409.TW": {
         "short_name": "SHINKONG SYNTHETIC FIBER",
@@ -122,7 +158,7 @@
     "1439.TW": {
         "short_name": "CHUWA WOOL INDUSTR",
         "long_name": "Chuwa Wool Industry Co., (Taiwan) Ltd.",
-        "summary": "Chuwa Wool Industry Co., (Taiwan) Ltd., an investment holding company, engages in trading wool related products in Taiwan, Japan, Korea, Malaysia, and internationally. The company operates through two segments, Sales Department and Lease Department. It also manufactures and sells wool tops, chlorinated wool tops, and chlorinated wool. In addition, the company leases real estate properties. Chuwa Wool Industry Co., (Taiwan) Ltd. was founded in 1964 and is based in Taipei, Taiwan.",
+        "summary": "Chuwa Wool Industry Co., (Taiwan) Ltd. sells wool tops, superwash wool tops, and seperwash loose wool products in Taiwan. It also leases real estate properties. The company was founded in 1953 and is based in Taipei, Taiwan.",
         "currency": "TWD",
         "sector": "Consumer Cyclical",
         "industry": "Textile Manufacturing",
@@ -215,18 +251,6 @@
         "country": "Taiwan",
         "city": "Taipei"
     },
-    "1456.TW": {
-        "short_name": "I-HWA INDUSTRIAL",
-        "long_name": "I-HWA Industrial Co.,Ltd",
-        "summary": "I-HWA Industrial Co., Ltd. engages in textile and real estate businesses in Taiwan. It is involved in the manufacture, processing, and sale of textiles; and investment, trading, leasing, and sale of real estate projects. The company was founded in 1968 and is based in Taipei, Taiwan.",
-        "currency": "TWD",
-        "sector": "Consumer Cyclical",
-        "industry": "Textile Manufacturing",
-        "exchange": "TAI",
-        "market": "tw_market",
-        "country": "Taiwan",
-        "city": "Taipei"
-    },
     "1457.TW": {
         "short_name": "YI JINN INDUSTRIAL CO",
         "long_name": "Yi Jinn Industrial Co., Ltd.",
@@ -298,18 +322,6 @@
         "market": "tw_market",
         "country": "Taiwan",
         "city": "Changhua"
-    },
-    "1467.TW": {
-        "short_name": "TEX-RAY INDUSTRIAL CO LTD",
-        "long_name": "Tex-Ray Industrial Co., Ltd.",
-        "summary": "Tex-Ray Industrial Co., Ltd. manufactures and retails yarns and fabrics. It also manufactures garments. The company was founded in 1978 and is headquartered in Taipei City, Taiwan.",
-        "currency": "TWD",
-        "sector": "Consumer Cyclical",
-        "industry": "Apparel Manufacturing",
-        "exchange": "TAI",
-        "market": "tw_market",
-        "country": "Taiwan",
-        "city": "Taipei City"
     },
     "1470.TW": {
         "short_name": "EVERTEX FABRINOLOGY LTD",
@@ -398,7 +410,7 @@
     "1524.TW": {
         "short_name": "GORDON AUTO BODY PARTS CO",
         "long_name": "Gordon Auto Body Parts Co., Ltd.",
-        "summary": "Gordon Auto Body Parts Co., Ltd. manufactures and sells automotive sheet metal replacement crash parts worldwide. The company offers fenders, hoods, bumpers, doors, radiator supports, and other products. It also provides AC condensers, handles, mirrors, side panels, tail lamps, tailgates, fender flares, head lamps, inner fenders, steel bumpers, and step bumpers. The company was founded in 1986 and is headquartered in Taoyuan, Taiwan.",
+        "summary": "Gordon Auto Body Parts Co., Ltd. manufactures and sells automotive sheet metal replacement crash parts worldwide. It offers side panels, wheel flares, tailgates, engine under covers, radiators, mirrors, hoods, handles, fenders, steel and front bumpers, inner fenders, and other products. The company was founded in 1986 and is headquartered in Taoyuan City, Taiwan.",
         "currency": "TWD",
         "sector": "Consumer Cyclical",
         "industry": "Auto Parts",
@@ -431,6 +443,18 @@
         "country": "Taiwan",
         "city": "Taoyuan City"
     },
+    "1533.TW": {
+        "short_name": "MOBILETRON ELECTRONICS",
+        "long_name": "Mobiletron Electronics Co.,Ltd.",
+        "summary": "Mobiletron Electronics Co., Ltd. designs, manufactures, and sells electronic components for the automotive industry in Taiwan. It offers engine management systems, such as ABS/wheel speed sensors, brake pad wear sensors, crank/cam shaft position sensors, EGR valves, idle air control valves, ignition modules and coils, knock sensors, MAF and Map sensors, MAF sensor cores, oxygen sensors, pick up coils, relays, throttle position sensors, and transmission speed sensors, as well as ignition modules for small engines. The company also provides charging systems, including brush holders, diodes and diode trios, rectifiers, repair circuits, and voltage regulators. In addition, it offers voltage regulators, mobile safety equipment, tire pressure monitoring systems, and power tools. The company also exports its products to approximately 100 countries. Mobiletron Electronics Co., Ltd. was founded in 1982 and is headquartered in Taichung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TAI",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taichung"
+    },
     "1536.TW": {
         "short_name": "HOTA INDUSTRIAL MFG CO",
         "long_name": "Hota Industrial Mfg. Co., Ltd.",
@@ -442,6 +466,18 @@
         "market": "tw_market",
         "country": "Taiwan",
         "city": "Taichung"
+    },
+    "1563.TWO": {
+        "short_name": "S A I",
+        "long_name": "SuperAlloy Industrial Co., Ltd.",
+        "summary": "SuperAlloy Industrial Co., Ltd. engages in engineering and manufacturing lightweight metal products primarily for the automotive industry. It provides forged aluminum wheels for luxury and sports automobiles; and engineering lightweight suspension components. The company has operations in Taiwan, the United States, the United Kingdom, Germany, other parts of Europe, Australia, Japan, and internationally. SuperAlloy Industrial Co., Ltd. was founded in 1994 and is headquartered in Douliu City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Douliu City"
     },
     "1568.TW": {
         "short_name": "TSANG YOW INDUSTRIAL CO",
@@ -467,6 +503,18 @@
         "country": "Taiwan",
         "city": "Changhua"
     },
+    "1592.TW": {
+        "short_name": "ENTEREX INTERNATIONAL LIMITED",
+        "long_name": "Enterex International Limited",
+        "summary": "Enterex International Limited develops, manufactures, and sells automotive and heavy radiators, and automobile condenser in Taiwan and internationally. The company's principal products include plastic tanks and aluminum core radiators, all aluminum radiators, heavy duty radiators, intercoolers, condensers, and evaporators. Its products are used in passengers' cars, pick-ups, trailers, and generators, as well as for military and agricultural applications. Enterex International Limited was founded in 1984 and is headquartered in Tainan City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TAI",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Tainan City"
+    },
     "1598.TW": {
         "short_name": "DYACO INTERNATIONAL INC",
         "long_name": "Dyaco International Inc.",
@@ -478,6 +526,18 @@
         "market": "tw_market",
         "country": "Taiwan",
         "city": "Taipei"
+    },
+    "1736.TW": {
+        "short_name": "JOHNSON HEALTH TECH",
+        "long_name": "Johnson Health Tech. Co., Ltd.",
+        "summary": "Johnson Health Tech. Co., Ltd. provides sports and fitness equipment in Asia and internationally. The company offers electric treadmills, indoor exercise bikes/flywheels, elliptical training products, and weight training/rowing equipment; electric massage chairs, and instep shoulder and neck massage equipment; and fitness accessories, bar/dumbells, yoga supplies, gloves/boxing products, and protective/weight gears. It also provides exercise products, including fitness and bicycle series, marathon products, and GPS sports watch, as well as polar accessories. The company offers its products principally under the Matrix, Vision, and Horizon brand names primarily through stores. Johnson Health Tech. Co., Ltd. was founded in 1975 and is based in Taichung City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "TAI",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taichung"
     },
     "1810.TW": {
         "short_name": "HOCHENG CORP",
@@ -526,6 +586,18 @@
         "market": "tw_market",
         "country": "Taiwan",
         "city": "Taipei City"
+    },
+    "2102.TW": {
+        "short_name": "FEDERAL CORP",
+        "long_name": "Federal Corporation",
+        "summary": "Federal Corporation produces and sells tires in Taiwan and internationally. The company offers drift, ultra high performance, high performance, passenger car, touring, SUV, commercial, and winter tires. Federal Corporation was founded in 1954 and is based in Taoyuan City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TAI",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taoyuan City"
     },
     "2105.TW": {
         "short_name": "CHENG SHIN RUBBER INDUSTRIES",
@@ -647,6 +719,18 @@
         "country": "Taiwan",
         "city": "New Taipei City"
     },
+    "2230.TWO": {
+        "short_name": "C.T.I. TRAFFIC INDUSTRIES CO. L",
+        "long_name": "C.T.I. Traffic Industries Co., Ltd.",
+        "summary": "C.T.I. Traffic Industries Co., Ltd. manufactures and sells auto engine parts in Taiwan and internationally. The company offers green power products; DLC piston rings comprising black diamond piston rings; gasoline engine oil rings, such as car and auto oil, car piston, engine oil, and piston ring expanders; diesel engine oil rings, including cast iron rings; liner kits; piston kits; and timing kits and components, timing guides, and timing chains, as well as tensioners, and cam and crank gears. It also provides overhaul engine gaskets, which include CYL heads, cylinder head gaskets, automotive and engine oil seals, valve covers, oil pans, and valve stem and engine valve seals, as well as intake, exhaust, and pipe manifolds; engine valves consisting of auto engine valves, engine valve seats, engine bearings, and engine valve guides; and carburetor kits. In addition, the company offers hydraulic brake systems, such as break, master, brake wheel, and brake master cylinders; compression rings, including hook, step, inside cut, under cut, notch, both-side keystone, slip in, and copper plated rings; and jump starters. Its products are used automotive, agriculture, off-highway, and heavy-duty trucks applications. The company was founded in 1973 and is headquartered in Tainan City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Tainan City"
+    },
     "2231.TW": {
         "short_name": "CUB ELECPARTS INC.",
         "long_name": "Cub Elecparts Inc.",
@@ -670,6 +754,30 @@
         "market": "tw_market",
         "country": "Taiwan",
         "city": "New Taipei City"
+    },
+    "2246.TWO": {
+        "short_name": "KGET",
+        "long_name": "Kaison Green Energy Technology Co., LTD",
+        "summary": "Kaison Green Energy Technology Co., LTD researches and develops, produces, assembles, and sells electric vehicles. The company is based in Taichung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taichung"
+    },
+    "2249.TWO": {
+        "short_name": "YOUNG SHINE",
+        "long_name": "Young Shine Electric Co., Ltd.",
+        "summary": "Young Shine Electric Co., Ltd. manufactures and sells automotive a/c components in Taiwan. The company offers automotive a/c compressors, heat exchangers, and parts. It also exports its products internationally. The company was founded in 2008 and is based in Kaohsiung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Kaohsiung City"
     },
     "2430.TW": {
         "short_name": "TSANN KUEN ENTERPRISE CO",
@@ -707,18 +815,6 @@
         "country": "Taiwan",
         "city": "New Taipei City"
     },
-    "2497.TW": {
-        "short_name": "E-LEAD ELECTRONIC CO",
-        "long_name": "E-Lead Electronic Co., Ltd.",
-        "summary": "E-Lead Electronic Co., Ltd. designs and manufactures electronics devices for automotive industry in Taiwan and internationally. The company provides head unit infotainment/navigation systems, rear seat entertainment systems, automotive systems and digital dashboards, and advanced driving assistance systems. It also provides HUD products, including one piece windshield and combiner type and mirror HUD, and floating optical displays; project air products comprising project air computers, game, universal, and video; and eLeadrive, a solution for supporting the Internet of vehicles. E-Lead Electronic Co., Ltd. was founded in 1983 and is headquartered in Changhua, Taiwan.",
-        "currency": "TWD",
-        "sector": "Consumer Cyclical",
-        "industry": "Auto Parts",
-        "exchange": "TAI",
-        "market": "tw_market",
-        "country": "Taiwan",
-        "city": "Changhua"
-    },
     "2546.TW": {
         "short_name": "KEDGE CONSTRUCTION CO",
         "long_name": "Kedge Construction Co., Ltd.",
@@ -730,6 +826,18 @@
         "market": "tw_market",
         "country": "Taiwan",
         "city": "Taipei"
+    },
+    "2702.TW": {
+        "short_name": "HOTEL HOLIDAY GARDEN",
+        "long_name": "Hotel Holiday Garden",
+        "summary": "Hotel Holiday Garden engages in hotel operation business in Taiwan and the United States. It operates international tourist hotel rooms rental services with Chinese and western restaurants, nightclubs, and swimming pools. The company also offers approximately 270 guest rooms, lobby, banquet hall, gym, and other facilities; and operates an amusement park located next to Taroko Park Shopping Center. In addition, it is involved in general export; hotel rental and catering; and investment businesses. Hotel Holiday Garden was founded in 1958 and is based in Kaohsiung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Lodging",
+        "exchange": "TAI",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Kaohsiung"
     },
     "2704.TW": {
         "short_name": "AMBASSADOR HOTEL",
@@ -779,6 +887,18 @@
         "country": "Taiwan",
         "city": "Hualien City"
     },
+    "2718.TWO": {
+        "short_name": "PLEASANT HOTELS INTERNATIONAL L",
+        "long_name": "Pleasant Hotels International Inc.",
+        "summary": "Pleasant Hotels International Inc. engages in the operation of a hotel in Taiwan. The company's hotel features 388 guest rooms, as well as wedding and meeting halls; and a business center, swimming pool, fitness center, and restaurant. Pleasant Hotels International Inc. is based in Taoyuan City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Lodging",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taoyuan City"
+    },
     "2722.TW": {
         "short_name": "CHATEAU INTERNATIONAL DEVELOPME",
         "long_name": "Chateau International Development Co., Ltd.",
@@ -806,7 +926,7 @@
     "2727.TW": {
         "short_name": "WOWPRIME CORP",
         "long_name": "Wowprime Corp.",
-        "summary": "Wowprime Corp. provides catering services in Taiwan, China, and internationally. The company offers Western steak, Japanese style cuisine, original grilled, Hokkaido kelp hotpot, teppanyaki, Japanese pork chop, hot pot, and Italian veggie cuisines. It operates approximately 20 bands; and 400 restaurants in the United States. The company was founded in 1993 and is based in Taichung, Taiwan.",
+        "summary": "Wowprime Corp. provides catering services in Taiwan and internationally. The company offers steak dishes, Japanese pot dishes, teppanyaki, Japanese dishes, barbecue dishes, Japanese pork chops, vegetable dishes, fried steak, etc. It operates approximately 20 brands; and 400 restaurants in the United States. The company was founded in 1993 and is based in Taichung, Taiwan.",
         "currency": "TWD",
         "sector": "Consumer Cyclical",
         "industry": "Restaurants",
@@ -814,6 +934,54 @@
         "market": "tw_market",
         "country": "Taiwan",
         "city": "Taichung"
+    },
+    "2729.TWO": {
+        "short_name": "TTFB COMPANY LTD",
+        "long_name": "TTFB Company Limited",
+        "summary": "TTFB Company Limited operates a chain of restaurants in Taiwan and internationally. The company was founded in 1990 and is based in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Restaurants",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
+    "2730.TWO": {
+        "short_name": "MIRAMAR HOSPITALITY CO LTD",
+        "long_name": "Miramar Hospitality Co.,Ltd",
+        "summary": "Miramar Hospitality Co.,Ltd engages in the hotel business in Taiwan. The company operates Miramar Garden Taipei, a 5-star international business and tourist hotel that provides accommodation services, including deluxe rooms, business rooms, executive deluxe rooms, boss suites, and premier suites; dining services under the Rain Forest, Light Caf\u00c3\u00a9, JIU BAR, and Tic-Tac-Toe Bakery names; and conference services, such as conference rooms, and wedding and banquets. It also provides health club, fitness center, outdoor swimming pool, sauna, fitness club membership, and business center facilities. The company is based in Taipei, Taiwan. Miramar Hospitality Co.,Ltd is a subsidiary of Tze Shin International Co. Ltd.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Lodging",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "2734.TWO": {
+        "short_name": "EZFLY INTERNATIONAL TRAVEL AGEN",
+        "long_name": "Ezfly International Travel Agent Co., Ltd.",
+        "summary": "Ezfly International Travel Agent Co., Ltd. operates as an online travel agency in Taiwan. The company offers ticket purchase and booking services; and sells domestic air tickets, foreign individual air tickets, and foreign group air tickets. It also provides domestic and international reservation, group travel, mini tour, group and airline free travel, and themed tickets, as well as foreign dynamic packaging free travel, themed project travel, domestic high-speed rail holiday travel, domestic bus travel, various European and Japanese railway ticket, visa, and other travel products. The company offers its services through its ezfly.com website. The company was founded in 1988 and is headquartered in Taipei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Travel Services",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "2736.TWO": {
+        "short_name": "HOYA RESORT HOTEL GROUP",
+        "long_name": "Hoya Resort Hotel Group",
+        "summary": "Hoya Resort Hotel Group operates hotels, resorts, and spas in Taiwan. The company was founded in 1998 and is based in Beinan, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Lodging",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Beinan"
     },
     "2739.TW": {
         "short_name": "MY HUMBLE HOUSE HOSPITALITY MGM",
@@ -826,6 +994,114 @@
         "market": "tw_market",
         "country": "Taiwan",
         "city": "Taipei City"
+    },
+    "2740.TWO": {
+        "short_name": "MR ONION CORP",
+        "long_name": "Mr. Onion International Co., Ltd",
+        "summary": "Mr. Onion International Co., Ltd provides catering services in Taiwan. The company was founded in 1991 and is based in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Restaurants",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
+    "2741.TWO": {
+        "short_name": "Oldsichuan",
+        "long_name": "Renjie Oldsichuan Catering Management Consultant Co., Ltd.",
+        "summary": "Renjie Oldsichuan Catering Management Consultant Co., Ltd. operates a chain of catering facilities in Harbin, Mainland China, and Taiwan. The company was founded in 2007 and is based in Kaohsiung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Restaurants",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+    },
+    "2743.TWO": {
+        "short_name": "RICHMOND INTL TRAVEL & TOURS CO",
+        "long_name": "Richmond International Travel & Tours Co.,Ltd",
+        "summary": "Richmond International Travel & Tours Co.,Ltd provides travel transportation services under the Shan Fu Tourism brand. It offers passenger services, such as passport visa, Wi-fi rental, translator/headset, and tourism encyclopedia; and professional services, such as outbound, inbound, and national tourism, as well as ticket ordering service. The company offers its products through an e-commerce platform. Richmond International Travel & Tours Co.,Ltd was founded in 1988 and is headquartered in Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Travel Services",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "2745.TWO": {
+        "short_name": "LIFE TRAVEL & TOURIST SERVICE C",
+        "long_name": "Life Travel & Tourist Service Co., Ltd.",
+        "summary": "Life Travel & Tourist Service Co., Ltd. provides group tourism products and services to domestic and foreign tourists in Taiwan. The company was founded in 1988 and is based in Kaohsiung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Travel Services",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+    },
+    "2750.TWO": {
+        "short_name": "Orchard Park",
+        "long_name": "Hotel Orchard Park CO., LTD.",
+        "summary": "Hotel Orchard Park CO., LTD. operates a hotel in Taiwan. The company operates the Orchard Park Hotel, an international tourist hotel with business, holiday, and transit functionalities in Taoyuan's Aerotropolis. Its hotel includes 187 guestrooms, such as deluxe king, executive rooms, Washitsu suites, executive suites, park view suites, and orchard suites. The company also provides Hee Yuet Lau Chinese restaurant, Orchard Caf\u00c3\u00a9, Hanamizuki Japanese cuisine, Atrium Bar, Oasis club, banquet hall, conference room, shopping street, and business center services, as well as ball room, meeting room, pavilion, and spa services. Hotel Orchard Park CO., LTD. was founded in 2009 and is based in Taoyuan City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Resorts & Casinos",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taoyuan City"
+    },
+    "2752.TWO": {
+        "short_name": "TOFU RESTAURANT CO LTD",
+        "long_name": "Tofu Restaurant Co., Ltd.",
+        "summary": "Tofu Restaurant Co., Ltd engages in the chain restaurant business in Taiwan. It is also involved in the food manufacturing business. Tofu Restaurant Co., Ltd was founded in 1997 and is based in Taipei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Restaurants",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "2753.TWO": {
+        "short_name": "8way",
+        "long_name": "Bafang Yunji International Company Limited",
+        "summary": "Bafang Yunji International Company Limited operates and franchises restaurants under the BAFANG YUNJI name. The company operates approximately 700 stores in Taiwan; and 100 stores in Hong Kong. The company was founded in 1989 and is based in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Restaurants",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
+    "2754.TWO": {
+        "short_name": "KURA SUSHI ASIA CO LTD",
+        "long_name": "Kura Sushi Asia Co., Ltd.",
+        "summary": "Kura Sushi Asia Co., Ltd. operates sushi restaurant in Taiwan. Its restaurants offer sushi, warship, hand roll, volume, and side meal products, as well as desserts and drinks. The company was founded in 1977 and is based in Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Restaurants",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei City"
+    },
+    "2755.TWO": {
+        "short_name": "YOUNGQIN INTERNATIONAL CO LTD",
+        "long_name": "YoungQin International Co., Ltd.",
+        "summary": "YoungQin International Co., Ltd. operates restaurants under the MWD brand name. It also operates retail stores that offer fried chicken products under the Fried Chicken Master name. The company has operations in Taiwan and internationally. The company was founded in 2015 and is based in Taoyuan, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Restaurants",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taoyuan"
     },
     "2903.TW": {
         "short_name": "FAR EASTERN DEPARTMENT STORES L",
@@ -842,7 +1118,7 @@
     "2906.TW": {
         "short_name": "COLLINS",
         "long_name": "Collins Co., Ltd.",
-        "summary": "Collins Co., Ltd. exports sundry goods and garments to department stores, warehouse clubs, supermarkets, discounted stores, home centers, drug stores and importers, etc. worldwide. The company's products include tool sets and boxes/auto accessories, garden tools/accessories, houseware/kitchenware, X'mas decorations and lightings, sporting equipment/travel goods, small appliances/lightings, digital products/computer accessories, garments, and indoor and outdoor furniture, as well as bbq grills, firepits, and accessories. It is also involved in the apparel retail; biotechnology and medical care businesses; and provision of surface and storage products. The company was founded in 1969 and is based in Taipei City, Taiwan.",
+        "summary": "Collins Co., Ltd. exports sundry goods and garments to department stores, warehouse clubs, supermarkets, discounted stores, home centers, drug stores and importers, etc. worldwide. The company's products include tool sets and boxes/auto accessories, garden tools/accessories, houseware/kitchenware, X'mas decorations and lightings, sporting equipment/travel goods, small appliances/lightings, digital products/computer accessories, garments, and indoor and outdoor furniture, as well as BBQ grills, firepits, and accessories. It is also involved in the apparel retail business; biotechnology and medical care businesses; and provision of surface and storage products. The company was founded in 1969 and is based in Taipei, Taiwan.",
         "currency": "TWD",
         "sector": "Consumer Cyclical",
         "industry": "Specialty Retail",
@@ -851,29 +1127,17 @@
         "country": "Taiwan",
         "city": "Taipei"
     },
-    "2908.TW": {
-        "short_name": "TEST RITE INTERNATIONAL",
-        "long_name": "Test-Rite International Co., Ltd.",
-        "summary": "Test-Rite International Co., Ltd. imports and exports hand tools, auto parts, machinery, furniture, and various home appliances worldwide. The company operates through Retail, Trading, and Construction segments. The company's products include shovels, sprinklers, etc.; Christmas gifts; outdoor tables and chairs, ice buckets, tents, etc.; barbecue stoves and others; hand tools, including axes, saws, wrenches, and pliers; hardware components; automobile accessories and supplies, and their repair and maintenance products; home storage box and cabinet, and do it yourself (DIY) furniture supplies; and travel storage products. Its products also comprise furniture; stationery; computer accessories; ceiling and electric fans; wall, table, and floor lamps; indoor and outdoor lighting products and accessories; consumer electronics, such as blow-dryers, shavers, and infrared detectors; sports and leisure related products, including bicycles, and beauty and health merchandise; recreational products; BBQ grills; mattresses, sofas, sofa beds, and leisure chairs; and healthy grains and tea, organic cotton, cleaning products, personal cleaning products, fair-trade merchandising, and other related products. In addition, the company provides professional services for home improvement, home furnishing, furniture, bedding, interior design, and full-house decorations; and plumbing and electrical maintenance, waterproofing and leak repair services, as well as air conditioning repair advisory services. Further, it provides information software and electronic information; house decoration, hardware, and construction materials; interior design; mechanical and electronic engineering; cleaning service and land scape design; logistics; and other information services, as well as builds dwellings and rents buildings. It operates 27 TLW (DIY) stores, 26 HOLA stores, 2 Crate & Barrel stores, and 9 hoi! stores in Taiwan. The company was founded in 1978 and is headquartered in Taipei, Taiwan.",
-        "currency": "TWD",
-        "sector": "Consumer Cyclical",
-        "industry": "Home Improvement Retail",
-        "exchange": "TAI",
-        "market": "tw_market",
-        "country": "Taiwan",
-        "city": "Taipei"
-    },
     "2910.TW": {
         "short_name": "TONLIN DEPARTMENT STORE CO",
         "long_name": "Tonlin Department Store Co.,Ltd.",
-        "summary": "Tonlin Department Store Co., Ltd. operates department stores in Taiwan. It offers fashion, beauty, and lifestyle products. The company also operates cafes and restaurants. Tonlin Department Store Co., Ltd. was founded in 1971 and is headquartered in Taipei City, Taiwan.",
+        "summary": "Tonlin Department Store Co., Ltd. operates department stores in Taiwan. The company offers fashion, beauty, and lifestyle products. It also operates cafes and restaurants. The company was founded in 1971 and is headquartered in Taipei City, Taiwan.",
         "currency": "TWD",
         "sector": "Consumer Cyclical",
         "industry": "Department Stores",
         "exchange": "TAI",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taipei City"
+        "city": "Taipei"
     },
     "2911.TW": {
         "short_name": "LES ENPHANTS",
@@ -899,6 +1163,42 @@
         "country": "Taiwan",
         "city": "Taipei"
     },
+    "2916.TWO": {
+        "short_name": "MUNSIN GARMENT CORP",
+        "long_name": "Munsin Garment Corporation",
+        "summary": "Munsin Garment Corporation manufactures and trades in various knitwear garments in Taiwan. The company offers golf apparel, lightweight sportswear, professional bicycles, equestrian sports products, casual wear, cue bags, handbags, protective accessories, special clothing, sneakers, shirts, trousers, and sporting products, as well as jogging, tennis, and football series products. It is also involved in the product distribution, import, and export businesses. Munsin Garment Corporation provides its products under the Munsingwear, Le coq sportif, Felix Buhler, McGREGOR, HAZZYS, ACUPUNCTURE, NARA CAMICIE, Eminento, As know as de base, POU DOU DOU, and Danskin brands. The company was founded in 1966 and is headquartered in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Apparel Manufacturing",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
+    "2924.TWO": {
+        "short_name": "CAYMAN TUNG LING CO LIMITED",
+        "long_name": "Cayman Tung Ling Co., Limited",
+        "summary": "Cayman Tung Ling Co., Limited researches, develops, manufactures, and sells various baby apparel and supplies in Taiwan and internationally. It operates through General Merchandise Retailing and Restaurant Entertainment segments. The company offers children's clothing, and baby and children's products, including maternity products, breastfeeding supplies, weaning products, cleaning and care products, cotton-fiber products, inner wear, etc. under the Piyopiyo, Abby Bear, and Kaeru brand names. It also provides catering services; franchises Piyo CASA family restaurant; and leases plant. Cayman Tung Ling Co., Limited was founded in 1988 and is headquartered in Taipei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Apparel Manufacturing",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "2926.TWO": {
+        "short_name": "THE ESLITE SPECTRUM CORPORATION",
+        "long_name": "The Eslite Spectrum Corporation",
+        "summary": "The Eslite Spectrum Corporation operates department stores and shopping malls in Taiwan. It also provides real estate analysis, investment planning, and operation management services. The company engages in the engineering service, catering supplies, retail store and equipment businesses; operation of retail outlets; and supply of professional kitchen/laundry equipment, hotel supplies, exquisite cuisine, wine cellars, and catering stores. Further, it operates a hotel under the Songyan \u00c2\u0091Eslite Travel' name. The company operates 43 stores. It provides its planning, design, sales, installation, and after sales services to international tourist hotels and fast food chain stores, coffee chain stores, Chinese and Western restaurants, clubs, sky kitchens, hospitals, and staff restaurants. The company was founded in 2005 and is based in Taipei, Taiwan. The Eslite Spectrum Corporation is a subsidiary of The Eslite Co., Ltd.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Department Stores",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
     "2929.TW": {
         "short_name": "TOPBI INTERNATIONAL HOLDINGS LT",
         "long_name": "TOPBI International Holdings Limited",
@@ -911,26 +1211,206 @@
         "country": "Taiwan",
         "city": "Taipei"
     },
+    "2937.TWO": {
+        "short_name": "GSEVEN CO LTD",
+        "long_name": "Gseven Co., Ltd.",
+        "summary": "Gseven Co., Ltd. sells consumer electronic products in Taiwan. The company offers audio, TV projection, health and beauty, digital, and life style products, as well as horn and air conditioning systems, Home theaters, and household and kitchen appliances. It also sells its products through department store counters and outlets. The company was founded in 1994 and is headquartered in Kaohsiung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Specialty Retail",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+    },
+    "2938.TWO": {
+        "short_name": "BEDDING WORLD",
+        "long_name": "Bedding World Co., Ltd.",
+        "summary": "Bedding World Co., Ltd. engages in the wholesale and retail of furniture, bedding, kitchen utensils, and decorative products in Taiwan. It primarily offers mattresses and beddings. The company was founded in 2004 and is based in Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Furnishings, Fixtures & Appliances",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "2942.TWO": {
+        "short_name": "Jing Jan",
+        "long_name": "Jing-Jan Retail Business Co., Ltd.",
+        "summary": "Jing-Jan Retail Business Co., Ltd. owns and operates a shopping mall. The company is based in Taipei, Taiwan. Jing-Jan Retail Business Co., Ltd. is a subsidiary of Radium Life Technology Co., Ltd.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Department Stores",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "2948.TWO": {
+        "short_name": "Bausen",
+        "long_name": "Bausen Inc.",
+        "summary": "Bausen Inc. provides home improvement materials in Taiwan and internationally. It offers hardwood flooring, engineered flooring, laminate flooring, and WPC composite flooring products; and floor coverings, moldings, cabinet systems, marble and stone countertops, and home improvement materials and accessories. The company is based in Taipei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Home Improvement Retail",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "3252.TWO": {
+        "short_name": "HAIWAN INTERNATIONAL DEVELOPMEN",
+        "long_name": "Haiwan International Development Co., Ltd",
+        "summary": "Haiwan International Development Co., Ltd engages in the development and leasing of residential buildings. It is also involved in the hotel business; and real estate trading activities. The company was formerly known as Haewan International Development Co., Ltd and changed its name to Haiwan International Development Co., Ltd. in 2014. Haiwan International Development Co., Ltd was founded in 1994 and is based in Taichung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Resorts & Casinos",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taichung"
+    },
+    "3522.TWO": {
+        "short_name": "TOPLUS GLOBAL CO LTD",
+        "long_name": "Toplus Global Co., Ltd.",
+        "summary": "Toplus Global Co., Ltd. engages in the food and beverage business in Taiwan. It operates 3 seafood restaurants under the DingXian brand; and 8 wedding halls and 1 marine manor under the AmazingHall brand. The company was founded in 2001 and is based in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Restaurants",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
+    "3552.TWO": {
+        "short_name": "TUNG THIH ELECTRONIC CO. LTD.",
+        "long_name": "Tung Thih Electronic Co., Ltd.",
+        "summary": "Tung Thih Electronic Co., Ltd. manufactures and supplies automotive electronics in Taiwan, Asia, Europe, the United States, Australia, and internationally. It offers ultrasonic parking assistance systems, vehicle anti-theft devices, car door lock actuators, interior rear mirror systems, car video systems, wireless tire pressure monitor systems, body control modules, and vehicle electric peripherals and services. The company was founded in 1979 and is based in Taoyuan City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taoyuan City"
+    },
     "3607.TW": {
         "short_name": "COXON PRECISE INDUSTRIAL CO. LT",
-        "long_name": "Coxon Precise Industrial Co., Ltd.",
-        "summary": "Coxon Precise Industrial Co., Ltd. manufactures and sells engineering plastic products in Taiwan and internationally. It is involved in the designing, mold manufacturing, injection molding, coating and printing, assembling, and optical lens processing activities. The company was founded in 1989 and is based in Zhongli, Taiwan.",
+        "long_name": "Coxon Precise Industrial Co., Ltd",
+        "summary": "Coxon Precise Industrial Co., Ltd manufactures and sells engineering plastic products in Taiwan and internationally. It is involved in the designing, mold manufacturing, injection molding, coating and printing, assembling, and optical lens processing activities. The company was incorporated in 1989 and is based in Taoyuan City, Taiwan.",
         "currency": "TWD",
         "sector": "Consumer Cyclical",
         "industry": "Packaging & Containers",
         "exchange": "TAI",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Zhongli"
+        "city": "Zhongl\u00c3\u00ac"
+    },
+    "3642.TWO": {
+        "short_name": "UNITEL HIGH TECHNOLOGY CORPORAT",
+        "long_name": "Unitel High Technology Corporation",
+        "summary": "Unitel High Technology Corporation produces and sells custom rubber and plastic parts for use in the commercial and industrial electronic products worldwide. The company offers rubber molding products, such as foot pads, earphone covers, microphone covers, waterproof rings, internal mechanism gaskets, self-adhesive rubber etc.; plastic single and double injection products, including buttons, doors, thrust sliding cover, battery cover switch, headphone jack protection cover etc.; button products; and metal, plastic, and rubber heterogeneous material combination products used for mobile phones, laptops, cameras, and other 3C products. The company was formerly known as Unitel Rubber Corporation and changed its name to Unitel High Technology Corporation in June 2006. Unitel High Technology Corporation was founded in 1989 and is headquartered in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
+    "4151.TWO": {
+        "short_name": "STRENGTH MASTER FINTNESS TECH C",
+        "long_name": "Strength Master Fitness Tech Co.,Ltd.",
+        "summary": "Strength Master Fitness Tech Co.,Ltd. manufactures and sells fitness equipment in Taiwan. The company offers treadmills, exercise and recumbent bikes, and elliptical trainers. It also provides Interactive Health Partner, a medically-based system; and Fit Plus(Fit +) App and FitPlus(BLE) App, which moves various functions on treadmills and bike consoles to phones or tablets. The company was founded in 1994 and is based in Changhua, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Changhua"
+    },
+    "4304.TWO": {
+        "short_name": "SUNVIC TECHNOLOGY CO. LTD.",
+        "long_name": "SunVic Technology Co., Ltd.",
+        "summary": "SunVic Technology Co., Ltd. engages in the manufacture and sale of EMI shielding laminate and flexible laminated packaging materials in Taiwan. It offers wire and cable materials, including shielding tapes; foil free edge tapes; and polyester, cotton paper, non-woven, and foam polypropylene strips. The company also provides specialized composite films, such as zipper patches; and other films, as well as vacuum-sealed and thermo-forming, and medical packaging bags. In addition, it offers EMI shielding and ESD packaging materials; industrial composite films; and other tapes. The company was formerly known as Taipei Lamination Industries Inc. and changed its name to SunVic Technology Co., Ltd. in April 2007. SunVic Technology Co., Ltd. was founded in 1971 and is headquartered in Taipei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Packaging & Containers",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "4305.TWO": {
+        "short_name": "SHIH-KUEN PLASTICS",
+        "long_name": "Shih-Kuen Plastics Co., Ltd.",
+        "summary": "Shih-Kuen Plastics Co., Ltd. produces and supplies plastic sheets. The company offers double polished PVC sheets, including super clear, normal clear, and transparent colored; textured embossing PVC sheet, such as textured embossing, translucent textured, and semi-transparent textured; super clear laminated and colored laminated PVC sheets; and UV stabilized outdoor PVC sheets; cold crack resistant PVC sheeting; and fire flame retardant PVC sheets. Its products are used in home and office supplies, construction and industrial, outdoor PVC waterproof covers, and medical applications. The company was founded in 1986 and is based in Tainan City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Tainan City"
     },
     "4306.TW": {
         "short_name": "YEM CHIO CO LTD",
         "long_name": "Yem Chio Co., Ltd.",
-        "summary": "Yem Chio Co., Ltd. engages in the biaxially oriented polypropylene film, adhesive tape, packaging material, construction, hotel, and petrochemical businesses worldwide. The company offers petrochemicals, such as acrylic acid; and plain, matt, pearlized cavitated, anti-fog, and heat sealable biaxially oriented polypropylene films. It also provides adhesive tapes, including OPP, super clear, and colored packing tapes, as well as printing tapes; and double-sided, stationery, PVC, masking, cloth, aluminum foil, floral, and Kraft paper tapes. In addition, the company engages in the land development, building construction, real estate, and hotel management businesses. Yem Chio Co., Ltd. was founded in 1977 and is based in Taipei City, Taiwan.",
+        "summary": "Yem Chio Co., Ltd. engages in the BOPP film, adhesive tape, packaging material, construction, and hotel businesses worldwide. The company offers anti fog, heat sealable, matt, pearlized cavitated, and plain BOPP films; adhesive tapes, such as OPP packaging, super clear packaging, colored packing, and printing tapes, as well as double-sided, stationery, PVC, masking, cloth, aluminum foil, floral, kraft paper tapes; and packaging materials under the Master Package brand. It is also involved in the land development, building construction, real estate, and hotel management businesses, as well as operates hotels. The company was founded in 1977 and is based in Taipei City, Taiwan.",
         "currency": "TWD",
         "sector": "Consumer Cyclical",
         "industry": "Auto Parts",
         "exchange": "TAI",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "4401.TWO": {
+        "short_name": "TOUNG LOONG TEXTILE MFG CO",
+        "long_name": "Toung Loong Textile MFG. Co., LTD.",
+        "summary": "Toung Loong Textile MFG. Co., LTD. operates as a textile manufacturing company in Taiwan. It develops and produces air and draw textured, shape control twist, alpha yarn, and air textured covered yarns, as well as functional synthetic yarn dyes and sewing threads. The company was founded in 1960 and is headquartered in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
+    "4417.TWO": {
+        "short_name": "KING CHOU MARINE TECHNOLOGY CO ",
+        "long_name": "King Chou Marine Technology Co., Ltd.",
+        "summary": "King Chou Marine Technology Co., Ltd. manufactures and sells netting products for the marine industries under the King Net brand name worldwide. The company offers purse seine, trawl, Danish seine, gill and trammel, trap, and set nets; long line, twine, and rope products; marine hardware products, such as cable clamps, purse rings, snap rings, steel triangles, choker hooks, alloy galv. connecting links, strong C-rings, ring scoopers, splice needles, Samson splicing kits, chains, floats, swivels, and hooks; fish farming and cage nets; and other nets, such as safety, flower, camouflage, and melon nets. It also provides a range of sports nets for soccer, volleyball, baseball, and tennis. The company was formerly known as King Chou Fish Net Mfg. Co., Ltd. and changed its name to King Chou Marine Technology Co., Ltd. in 2002. King Chou Marine Technology Co., Ltd. was founded in 1978 and is headquartered in Kaohsiung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+    },
+    "4419.TWO": {
+        "short_name": "ENSURE GLOBAL CORP LTD",
+        "long_name": "Ensure Global Corp., Ltd.",
+        "summary": "Ensure Global Corp., Ltd. manufactures and sells spun-like fabrics and yarns in Taiwan. The company offers air and draw textured yarns; knitted fabrics; and mirror surface wiping clothes. It also provides cotton-like fabric and microfiber products. In addition, the company offers grating, twill, and interweaving products. Further, it provides wind breakers, shirts, knitting sports wears, casual pants, and durable towels. The company was founded in 1991 and is based in Changhua, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Changhua"
+    },
+    "4420.TWO": {
+        "short_name": "KWANG MING SILK MILL CO",
+        "long_name": "Kwang Ming Silk Mill Co., Ltd.",
+        "summary": "Kwang Ming Silk Mill Co., Ltd. engages in the production and sale of polyester processing yarn. The company offers composite fabrics, special functionality fabrics, synthetic fiber fabrics, and general garments materials, as well as man-made fiber products. It is also involved in real estate leasing and trading business. The company's products are used for fashion clothing, environmental protection functional fabrics, outdoor leisure fabrics, and home decoration, as well as cloth for shoe materials. The company is based in Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
         "city": "Taipei"
@@ -947,6 +1427,54 @@
         "country": "Taiwan",
         "city": "Douliou"
     },
+    "4429.TWO": {
+        "short_name": "G FUN INDUSTRIAL CORPORATION",
+        "long_name": "GFun Industrial Corporation",
+        "summary": "GFun Industrial Corporation manufactures and sells coated and laminated functional fabrics in Taiwan. It offers various functional membranes and fabrics; and develops various types of wick, windproof, water-repellent, anti-UV, anti-bacterial, and abrasion-resistant functional fabrics. The company was founded in 1999 and is based in Taoyuan, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taoyuan City"
+    },
+    "4430.TWO": {
+        "short_name": "YAO I FABRIC CO. LTD.",
+        "long_name": "Yao I Fabric Co., Ltd.",
+        "summary": "Yao I Fabric Co., Ltd. manufactures and sells filament and spun products in Taiwan and internationally. Its products include various kinds of fishing, tennis, badminton racket, and cutting lines; industrial wires, mesh cloth chairs, pet mats, breathable beds, knitted cotton car seats, car seats with blankets, and automotive sound-absorbing cotton materials; and environmentally friendly stretch cotton, firewood, stretch cotton, and electronic supplies blankets, as well as shoes with cotton insulation class, and bedding and sofa with a stretch cotton. The company was founded in 1973 and is based in Changhua, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Changhua"
+    },
+    "4432.TWO": {
+        "short_name": "HAKERS ENTERPRISE CO LTD",
+        "long_name": "Hakers Enterprise Co., Ltd.",
+        "summary": "Hakers Enterprise Co., Ltd. researches, develops, manufactures, and markets garments and other related textile products in Taiwan and internationally. It offers sportswear products, including swim trunks, shorts, jackets, and trousers. The company was founded in 1986 and is based in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Apparel Manufacturing",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
+    "4433.TWO": {
+        "short_name": "SINGTEX INDUSTRIAL CO LTD",
+        "long_name": "Singtex Industrial Co., Ltd.",
+        "summary": "Singtex Industrial Co., Ltd. engages in the research and development, and sale of eco-friendly functional textile products in Taiwan. It offers functional fabrics; and functional, specialty, and comfort yarns. The company was founded in 1989 is based in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
     "4438.TW": {
         "short_name": "QUANG VIET ENTERPRISE CO LTD",
         "long_name": "Quang Viet Enterprise Co., Ltd.",
@@ -959,6 +1487,42 @@
         "country": "Taiwan",
         "city": "Taipei City"
     },
+    "4523.TWO": {
+        "short_name": "TAIWAN CALSONIC CO. LTD.",
+        "long_name": "Taiwan Calsonic Co., Ltd.",
+        "summary": "Taiwan Calsonic Co., Ltd. manufactures and sells car air conditioning products, electronics, and other products in Taiwan. The company offers car air conditioning systems, such as unified central panels, air conditioning controllers, driver alert systems, night vision systems, body control modules, condensers, evaporators, blowers, motors, inter coolers, water cooled radiators, and chip coolers; and engineering products, including vacuum, air, and no fuse breakers, as well as electromagnetic contractors, inverters, programmable controllers, energy saving systems, robots, control devices, and thin film extension products. It also provides power distribution equipment and industry automatic control products, as well as industrial robot/electronic process equipment. The company was founded in 1987 and is based in Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "4528.TWO": {
+        "short_name": "CHIAN HSING FORGING INDUSTRIAL ",
+        "long_name": "Chian Hsing Forging Industrial Co., Ltd.",
+        "summary": "Chian Hsing Forging Industrial Co., Ltd. manufactures and sells various forged products in Taiwan. Its forged products include hardware, bicycle, motorbike, automobile, and track vehicle parts, as well as industrial engineering vehicle components and other products. The company offers auto parts comprising C.V. joints and driving elements of front wheel; inner races; inner race crosses; bearing cups, pistons, and housings; transmission parts; transmission bearing spang products; transmission joint gears; mandrils, rear axis, and core axis of the generator; air conditioning belt pulleys; bevel gears; magnetic poles and driving gears; motor brake parts; aluminum alloy forging parts that include ammonia cans for auto air-conditioners; flange bases; and pipes, excavator teethes, and tubes. It also provides assorted hardware parts, including impactors, saddles, pneumatic toolings, tone hole parts, and rod couplings, as well as parts of sports goods, which include cranks, high-pressure joints, high-tension bolts/nuts, alloy bearing forgings, and delivering tube forgings. In addition, the company offers motorcycle parts, such as gear shafts, gear blanks, start gears, transmission shafts, and ammonia cans for auto air-conditioners; starting gear and clutch gear forged work products; shaft and axle parts; and clutches, tube yokes, and chain gears. Further, it provides rail parts, which comprise tie plates. The company was formerly known as Hsieh Hsing Iron Factory and changed its name to Chian Hsing Forging Industrial Co., Ltd. in 1980. Chian Hsing Forging Industrial Co., Ltd. was founded in 1971 and is based in Taichung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taichung"
+    },
+    "4535.TWO": {
+        "short_name": "FINE BLANKING & TOOL CO LTD",
+        "long_name": "Fine Blanking & Tool Co., Ltd",
+        "summary": "Fine Blanking & Tool Co., Ltd. produces and sells car and motorcycle parts in Taiwan. The company's primary products include precision stamping products, motorcycle and bicycle disc brakes, motorcycle start gears, car seat recliners, car brake parts, automotive safety shackles, and steam locomotive seats. It also provides tubes, seat belt reels, tongues, tappet and shims, frames for airbag, hand brakes, blanking gears, sectors and latches, slide stand, foot support and rest, saddles, handle bar and clamps, triple clamps, ABS phonic wheels, slope plates, bicycle parts, and engine gears and other high precision metal components. In addition, the company offers clutch and gas brake pedal, RAEV, push and pull mechanism, steering assembly, and rack and pinion, as well as medical equipment, sporting goods, and computer parts. Fine Blanking & Tool Co., Ltd. was founded in 1988 and is based in Changhua, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Changhua"
+    },
     "4536.TW": {
         "short_name": "TOPKEY CORPORATION",
         "long_name": "Topkey Corporation",
@@ -970,6 +1534,18 @@
         "market": "tw_market",
         "country": "Taiwan",
         "city": "Taichung City"
+    },
+    "4543.TWO": {
+        "short_name": "MAN ZAI INDUSTRIAL CO LTD",
+        "long_name": "Man Zai Industrial Co., Ltd.",
+        "summary": "Man Zai Industrial Co., Ltd. manufactures and sells air-conditioner components for vehicles worldwide. The company offers auto air-con modules, including condenser units, evaporator units, and heater cores; automobile and motorcycle aluminum radiators for cooling systems, such as radiator units and oil coolers; and thermal-electric cooling modules comprising thermal modules for CPU, thermal syphon modules, and liquid cooling modules, as well as water-cooled modules for use in CPU, VGA, LED, and auto-electric cooling modules. It also provides aluminum extrusion products that include fittings/brackets/pipes, racket frames, OPC drums, computer heat sinks, and bicycle frames; and air-con and refrigeration products. Man Zai Industrial Co., Ltd. was founded in 1984 and is based in Tainan, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Tainan City"
     },
     "4551.TW": {
         "short_name": "GLOBAL PMX CO LTD",
@@ -995,6 +1571,150 @@
         "country": "Taiwan",
         "city": "Chiayi"
     },
+    "4950.TWO": {
+        "short_name": "MUTTO OPTRONICS CORPORATION",
+        "long_name": "Mutto Optronics Corporation",
+        "summary": "Mutto Optronics Corporation, together with its subsidiaries, manufactures and sells stainless steel kitchen utensils and refined cutlery sets in the United States, China, Taiwan, and internationally. It is also involved in OEM/ODM knife manufacturing businesses; and investment activities. The company was founded in 2008 and is based in Taipei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Furnishings, Fixtures & Appliances",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "4972.TWO": {
+        "short_name": "TONS LIGHTOLOGY INC",
+        "long_name": "Tons Lightology Inc.",
+        "summary": "Tons Lightology Inc., together with its subsidiaries, designs and manufactures commercial lighting products in Taiwan, rest of Asia, Europe, Oceania, and internationally. The company offers light-emitting diode, high-intensity discharge, fluorescent, and halogen lighting products. Its indoor lighting products include tracks and structures, luminaires for tracks, recessed downlights, frameless and adjustable downlights, assemblies, surface-mounted ceiling lights, pendant lights, wall lights, display spotlights, linear lights, task lights, and micro track lights. The company's outdoor lighting products comprise outdoor downlights, outdoor ceiling lights, outdoor wall lights, in-ground lights, projectors, flood lights, bollards, and outdoor accessories. Its products are used for architectural, retail display, residential, entertainment, outdoor area and commercial/industrial lighting applications. Tons Lightology Inc. was founded in 1992 and is headquartered in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Furnishings, Fixtures & Appliances",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
+    "5102.TWO": {
+        "short_name": "FU-CHIAN TIRE CO",
+        "long_name": "Fu Chian Tire Co.,Ltd.",
+        "summary": "Fu Chian Tire Co.,Ltd. manufactures and sells retread tires in Taiwan. The company also offers high and low temperature tread rubber products, gums, backing products, rubber flooring products, silicone products, rubber compounds, and other rubber products. It is also involved in the provision of rubber manufacturing machines, as well as in the import and export activities. Fu Chian Tire Co.,Ltd. was founded in 1949 and is based in Yuanlin City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Yuanlin"
+    },
+    "5263.TWO": {
+        "short_name": "BROGENT TECHNOLOGIES INC",
+        "long_name": "Brogent Technologies Inc.",
+        "summary": "Brogent Technologies Inc., a technology company, provides digital content creation services in Taiwan. Its business primarily includes software and hardware research and development, manufacturing and system integration, theater design, and planning, and construction capabilities. The company's products include i-Ride, a flying theater built on six degrees of freedom motion platform; m-Ride, a flying theater built on the design of 180-degree rotating gondolas; d-Ride, a media based interactive dark ride solution for gaming; and GestureMagic that offers effect-driven 4D experience in gaming. It also provides v-Ride 360, a cylinder screen that provides 360-degree panorama balloon ride; t-Ride, a Jurassic age ride; and Q-Ride, an ultrarealistic ocean VR adventure. Brogent Technologies Inc. was founded in 2001 and is headquartered in Kaohsiung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+    },
+    "5301.TWO": {
+        "short_name": "CJW INTERNATIONAL CO LTD",
+        "long_name": "CJW International Co., Ltd.",
+        "summary": "CJW International Co., Ltd. designs and sells jewelry products, and tobacco and alcohol in Taiwan. The company offers diamond, jade, and coral jewelry products. It is also involved in the wholesale and retail of beauty products. The company was founded in 1967 and is based in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Luxury Goods",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
+    "5306.TWO": {
+        "short_name": "KMC (KUEI MENG) INTERNATIONAL I",
+        "long_name": "KMC (Kuei Meng) International Inc.",
+        "summary": "KMC (Kuei Meng) International Inc. manufactures and sells various types of chains, motorcycle components, and vehicle components in Asia, Europe, and the United States. The company offers bicycle chains, such as road bike, mountain bike, BMX, E-bike, and rust buster chain series products, as well as EcoProTech chains. It also provides motorcycle chain and gears, including standard driving, heavy duty, cam, and silent chain series products, as well as standard driving sprockets, and chain and sprocket kits. In addition, the company offers automobile timing systems and garage door openers. Further, it is involved in investing activities. The company was formerly known as CNet Technology Inc. and changed its name to KMC (Kuei Meng) International Inc. in July 2012. KMC (Kuei Meng) International Inc. was founded in 1977 and is headquartered in Tainan City, Taiwan. KMC (Kuei Meng) International Inc. is a subsidiary of KMC Transton Industries Limited.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Tainan City"
+    },
+    "5364.TWO": {
+        "short_name": "LEALEA HOTELS & RESORTS CO LTD",
+        "long_name": "Lealea Hotels & Resorts Co., Ltd.",
+        "summary": "Lealea Hotels & Resorts Co., Ltd. operates hotel under the LEALEA GARDEN HOTEL in Taiwan. The company was formerly known as I-Future Co., Ltd. Lealea Hotels & Resorts Co., Ltd. is based in Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Lodging",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "5475.TWO": {
+        "short_name": "GLOTECH INDUSTRIAL CORP",
+        "long_name": "Glotech Industrial Corp.",
+        "summary": "Glotech Industrial Corp. produces and sells e-glass fiber fabrics in Taiwan and internationally. It offers fiber glass fabrics and yarns that are used as composite materials. The company was formerly known as A Johnson Composite Inc. and changed its name to Glotech Industrial Corp. in May 2011. Glotech Industrial Corp. was founded in 1997 and is headquartered in Yangmei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Yangmei"
+    },
+    "5530.TWO": {
+        "short_name": "LUNGYEN LIFE SERVICE CO LTD",
+        "long_name": "Lungyen Life Service Corporation",
+        "summary": "Lungyen Life Service Corporation provides funeral services in Taiwan. It is also involved in the development and lease of interment premises; sale and rental of residence and business buildings; invests in securities; provision of architecture and civil engineering services; and sale of cremated remains storage facilities. The company was formerly known as Dahan Development Corp. Lungyen Life Service Corporation was founded in 1987 and is based in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Personal Services",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
+    "5701.TWO": {
+        "short_name": "JANFUSUN FANCYWORLD CORP",
+        "long_name": "Janfusun Fancyworld Corp.",
+        "summary": "Janfusun Fancyworld Corp. operates theme parks and holiday hotels in Taiwan. It also operates department stores, as well as an online store for ticket and reservation services. The company was founded in 1986 and is based in Yunlin, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Yunlin"
+    },
+    "5703.TWO": {
+        "short_name": "THE LANDIS TAIPEI HOTEL CO. LTD",
+        "long_name": "The Landis Taipei Hotel Co., Ltd",
+        "summary": "The Landis Taipei Hotel Co., Ltd operates a hotel in Taipei City, Taiwan. The company operates The Landis Taipei Hotel, which offers superior and deluxe rooms, disable rooms, executive and corner suites, dining and meeting rooms, banquet halls, and wedding and travel packages, as well as fitness center, business center, and lounge facilities. It also engages in restaurant, cafe, and bar businesses. The company was founded in 1977 and is based in Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Lodging",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "5704.TWO": {
+        "short_name": "HOTEL ROYAL CHIHPEN",
+        "long_name": "Hotel Royal Chihpen",
+        "summary": "Hotel Royal Chihpen operates a resort hotel in Taiwan. Its resort hotel comprises 183 guest accommodations, as well as offers recreational facilities and amenities. The company is based in Taitung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Lodging",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taitung"
+    },
     "5706.TW": {
         "short_name": "PHOENIX TOURS INTL INC",
         "long_name": "Phoenix Tours International, Inc.",
@@ -1007,14 +1727,62 @@
         "country": "Taiwan",
         "city": "Taipei City"
     },
-    "6281.TW": {
-        "short_name": "E-LIFE MALL CORPORATION",
-        "long_name": "E-Life Corporation",
-        "summary": "E-Life Corporation engages in the retail of home appliances, computers, and mobile devices in Taiwan. It operates 320 retail stores, as well as an online shopping platform. The company was founded in 1975 and is headquartered in New Taipei City, Taiwan.",
+    "5903.TWO": {
+        "short_name": "TAIWAN FAMILYMART CO",
+        "long_name": "Taiwan FamilyMart Co., Ltd.",
+        "summary": "Taiwan FamilyMart Co., Ltd. operates various convenience stores in Taiwan and internationally. The company engages in the provision of warehouse tally services; electronic information services; system integrated services; sales and services of computer software and related equipment; logistics activities; manufacturing of food; and trucking, staffing, and packaging services. In addition, it wholesales and retails books and magazines, and household merchandise. As of December 31, 2019, the company operated 3,548 stores in Taiwan; and 2,801 stores in China. Taiwan FamilyMart Co., Ltd. was founded in 1988 and is headquartered in Taipei City, Taiwan.",
         "currency": "TWD",
         "sector": "Consumer Cyclical",
-        "industry": "Specialty Retail",
-        "exchange": "TAI",
+        "industry": "Department Stores",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "5904.TWO": {
+        "short_name": "POYA INTERNATIONAL CO LTD",
+        "long_name": "POYA International Co., Ltd.",
+        "summary": "POYA International Co., Ltd. operates personal beauty and daily merchandise stores in Taiwan. The company's stores offer makeup products and cosmetics, jewelries, daily goods, snacks, fashion hosieries, hardware products, underwear and pajamas, etc. As of April 30, 2020, it has operated 239 stores. The company was formerly known as POYA Department Store Co., Ltd. and changed its name to POYA International Co., Ltd. in June 2000. POYA International Co., Ltd. was founded in 1997 and is headquartered in Tainan, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Department Stores",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Tainan City"
+    },
+    "5905.TWO": {
+        "short_name": "NAN REN LAKE LEISURE AMUSEMENT ",
+        "long_name": "Nan Ren Lake Leisure Amusement Co., Ltd.",
+        "summary": "Nan Ren Lake Leisure Amusement Co., Ltd. provides leisure and recreation facilities in Taiwan. It operates the National Museum of Marine Biology and Aquarium, an underwater tunnel, a resort and sleepover, dining service area, and underground food shopping mall, as well as Nargo electronic mall, an online shopping platform. The company was founded in 1989 and is based in Kaohsiung City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Resorts & Casinos",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+    },
+    "6222.TWO": {
+        "short_name": "SOARING TECHNOLOGY CO",
+        "long_name": "Soaring Technology Co.,Ltd.",
+        "summary": "Soaring Technology Co.,Ltd. manufactures and sells liquid crystal displays and lighting products in Taiwan and internationally. It offers LED bulbs and lamps, LED tubes, and LED indoor and outdoor fixtures, as well as dimmers, switches, and plugs. The company was founded in 1986 and is headquartered in New Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Furnishings, Fixtures & Appliances",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "New Taipei City"
+    },
+    "6584.TWO": {
+        "short_name": "NAN JUEN",
+        "long_name": "Nan Juen International Co., Ltd.",
+        "summary": "Nan Juen International Co., Ltd. manufactures and trades in steel-ball bearing slides and other products in Taiwan, the Americas, and internationally. The company was formerly known as Nan Juen Industrial Corporation and changed its name to Nan Juen International Co., Ltd. in September 1996. Nan Juen International Co., Ltd. in 1984 and is headquartered in New Taipei City, Taiwan. Nan Juen International Co., Ltd. is a subsidiary of Repon Industrial Corporation.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Furnishings, Fixtures & Appliances",
+        "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
         "city": "New Taipei City"
@@ -1031,14 +1799,98 @@
         "country": "Taiwan",
         "city": "Taipei"
     },
-    "8443.TW": {
-        "short_name": "SHUI-MU INTERNATIONAL CO LTD",
-        "long_name": "Shui-Mu International Company Limited",
-        "summary": "Shui-Mu International Company Limited produces and sells footwear in Taiwan. The company operates approximately 219 stores. Shui-Mu International Company Limited was founded in 1952 and is headquartered in Taipei, Taiwan.",
+    "6740.TWO": {
+        "short_name": "Mobix",
+        "long_name": "Mobix Corporation",
+        "summary": "Mobix Corporation operates mobile based e-commerce platform in Taiwan. The company was founded in 2016 and is based in Taipei, Taiwan. Mobix Corporation is a subsidiary of Kuobrothers Corp.",
         "currency": "TWD",
         "sector": "Consumer Cyclical",
-        "industry": "Footwear & Accessories",
-        "exchange": "TAI",
+        "industry": "Internet Retail",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "6804.TWO": {
+        "short_name": "Axman",
+        "long_name": "Axman Enterprise Co., Ltd.",
+        "summary": "Axman Enterprise Co., Ltd. designs, develops, manufactures, tests, and sells bicycles. It provides road bikes, mountain bikes, and carbon fiber frames. The company was founded in 1985 and is based in Changhua County, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Changhua"
+    },
+    "7566.TWO": {
+        "short_name": "AYDC",
+        "long_name": "Argo Yachts Development Co.,Ltd.",
+        "summary": "Argo Yachts Development Co., Ltd. engages in the operation of water recreation activities and ship leasing business in Taiwan. The company was founded in 2003 is based in Tainan City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Tainan City"
+    },
+    "8044.TWO": {
+        "short_name": "PCHOME ONLINE INC.",
+        "long_name": "PChome Online Inc.",
+        "summary": "PChome Online Inc. provides e-commerce and portal services in China and internationally. It operates through E-Commerce-Sales, Market Place, and Other segments. The company operates PChome 24h Shopping, PChome Shopping, and PChome Global Shopping Websites. It also operates portals that provide a range of network services, including news platforms, stock markets, email, Kaza personal blog, news, travel, car-buying, customized photo album, search channels, etc., as well as online adverting services, such as display advertising and display network. In addition, the company offers type II telecommunications, magazine publication, international trade and investment, online payment processing, travel agency, information, transportation and logistics, clothing sales, information processing, electronic information, and Internet services. PChome Online Inc. was founded in 1996 and is headquartered in Taipei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "8107.TWO": {
+        "short_name": "TAYIH KENMOS AUTO PARTS CO LTD",
+        "long_name": "Tayih Kenmos Auto parts Co., Ltd.",
+        "summary": "Tayih Kenmos Auto parts Co., Ltd. researches, develops, manufactures, and sells automotive blow molding and filtration parts in Taiwan and internationally. It offers automobile cabin air filters, automatic transmission filters, home air purifier filters, face masks, and other products; running boards; and pickup sport bars, tonneau covers, and other exteriors. The company was founded in 1998 and is headquartered in Tainan City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Tainan City"
+    },
+    "8255.TWO": {
+        "short_name": "ACTRON TECHNOLOGY CORP",
+        "long_name": "Actron Technology Corporation",
+        "summary": "Actron Technology Corporation designs, develops, manufactures, and sells electronic components of vehicles for automakers worldwide. It offers high and low cup, and JP pressfit diodes; dish diodes; and TO-220, standard, micro, and jumbo button diodes. The company also provides alternators, regulators, and anti-lock brake system controls. Actron Technology Corporation was founded in 1998 and is based in Taoyuan, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taoyuan City"
+    },
+    "8359.TWO": {
+        "short_name": "CASHBOX",
+        "long_name": "Cashbox Partyworld Co., Ltd.",
+        "summary": "Cashbox Partyworld Co., Ltd. primarily engages in the karaoke business in Taiwan and China. The company conducts its operations through Services Industries segment. It offers karaoke entertainment services. The company is also involved the distribution and trade of karaoke equipment and supplies; sale of food and beverages; retail of stationery, toys, entertainment products, books, and tobacco; and management consulting business. It operates 12 branches and 16 direct stores. The company was formerly known as Cashbox Consulting Co., Ltd. and changed its name to Cashbox Partyworld Co., Ltd. in September 2000. Cashbox Partyworld Co., Ltd. was founded in 1986 and is headquartered in Taipei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "8433.TWO": {
+        "short_name": "BON FAME CO LTD",
+        "long_name": "Bon Fame Co., Ltd.",
+        "summary": "Bon Fame Co., Ltd. operates in fashion market in Taiwan. It offers hair accessories, jewelry, hairstyling products, beauty tools, bags and purses, fashion accessories, and novelty products, as well as event products, such as kid's masks. The company was founded in 1985 and is based in Taipei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Specialty Retail",
+        "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
         "city": "Taipei"
@@ -1067,6 +1919,30 @@
         "country": "Taiwan",
         "city": "Taichung"
     },
+    "8472.TWO": {
+        "short_name": "GOMAJI CORP LTD",
+        "long_name": "GOMAJI Corp., LTD",
+        "summary": "GOMAJI Corp., LTD provides e-commerce and advertising services in Taiwan. The company was founded in 1999 and is based in Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "8477.TWO": {
+        "short_name": "KUOBROTHERS CORP",
+        "long_name": "Kuobrothers Corp.",
+        "summary": "Kuobrothers Corp. operates B2C e-commerce business under the Living Bazaar name In Taiwan. The company provides online shopping platform for daily consumables, electric apparatuses, household commodities, storage and decoration devices, and delicacies. It also operates online trading platforms under the MobiX and MySport brand names. The company was founded in 2012 and is headquartered in Taipei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
     "8482.TW": {
         "short_name": "SHANE GLOBAL HOLDING INC",
         "long_name": "Shane Global Holding Inc.",
@@ -1079,10 +1955,70 @@
         "country": "Taiwan",
         "city": "Taipei"
     },
+    "8916.TWO": {
+        "short_name": "KWONG LUNG ENTERPRISE",
+        "long_name": "Kwong Lung Enterprise Co., Ltd.",
+        "summary": "Kwong Lung Enterprise Co., Ltd. manufactures and sells apparel in Taiwan, China, Vietnam, and Japan. The company operates through Apparel department, Down Material Department, and Home Textile Department segments. It offers down and bedding; wholesale of outdoor supplies, household wares, clothing, and related packaging materials; food; and import and export of goods and technology. The company provides down products, including natural down, water repellent down, antibacterial deodorant down, color down, and flame retardant, as well as Thermobrid plus products for use in outdoor and home textile. In addition, it provides clothing products, such as snowboard wear, skiing wear, mountain climbing jackets, seamless wind and rain-proof jackets, biking wear, sportswear, jeans, casual jackets and pants, etc. Further, it manufactures winter quilts, cushions, seating pads, sofas, pillows, sleeping bags, gloves, and home decoration products. It also offers bedding products under the Kong lung brand. Kwong Lung Enterprise Co., Ltd. was founded in 1966 and is headquartered in Taipei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "8916A.TWO": {
+        "short_name": "KWONG LUNG ENTERPRISE",
+        "long_name": "Kwong Lung Enterprise Co., Ltd.",
+        "summary": "Kwong Lung Enterprise Co., Ltd. manufactures and sells apparel in Taiwan, China, Vietnam, and Japan. The company operates through Apparel department, Down Material Department, and Home Textile Department segments. It offers down and bedding; wholesale of outdoor supplies, household wares, clothing, and related packaging materials; food; and import and export of goods and technology. The company provides down products, including natural down, water repellent down, antibacterial deodorant down, color down, and flame retardant, as well as Thermobrid plus products for use in outdoor and home textile. In addition, it provides clothing products, such as snowboard wear, skiing wear, mountain climbing jackets, seamless wind and rain-proof jackets, biking wear, sportswear, jeans, casual jackets and pants, etc. Further, it manufactures winter quilts, cushions, seating pads, sofas, pillows, sleeping bags, gloves, and home decoration products. It also offers bedding products under the Kong lung brand. Kwong Lung Enterprise Co., Ltd. was founded in 1966 and is headquartered in Taipei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "8932.TWO": {
+        "short_name": "MAX ZIPPER CO. LTD.",
+        "long_name": "Max Zipper Co., Ltd.",
+        "summary": "Max Zipper Co., Ltd. manufactures and markets zippers worldwide. It offers nylon, delrin, metal, invisible, specialized, water repellent, heat transfer, pattern tape, coil vacuum, satin tape, chameleon, reflective, spear teach, weave tape, delrin inkjet, and contrast slit zippers; invisible, nylon, delrin, metal, and tape attachable sliders; plastic and spring lock sliders; and metal, plastic, diamante, cord, leather, woven, and stone pullers. The company also provides special slider treatment, such as pattern coating and double plating services. Max Zipper Co., Ltd. offers its products under the MAX brand. The company was formerly known as Horng Dah Zippers Co. Ltd. and changed its name to Max Zipper Co., Ltd. in September 2009. Max Zipper Co., Ltd. was founded in 1978 and is headquartered in Taipei, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Apparel Manufacturing",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taipei"
+    },
+    "8933.TWO": {
+        "short_name": "IDEAL BIKE CORP",
+        "long_name": "Ideal Bike Corporation",
+        "summary": "Ideal Bike Corporation manufactures and sells bicycles worldwide. The company was founded in 1980 and is headquartered in Taichung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Taichung"
+    },
+    "8938.TWO": {
+        "short_name": "ADVANCED INTERNATIONAL MULTITEC",
+        "long_name": "Advanced International Multitech Co., Ltd.",
+        "summary": "Advanced International Multitech Co., Ltd. manufactures and sells golf club heads, shafts, golf club sets, golf balls, carbon fiber components, aviation products, and composite materials worldwide. The company offers various golf products, including metal woods, irons/wedges, putters, graphite shafts, and club assemblies; carbon fiber bicycle components, such as frames, forks, and parts; DIZO bicycles; and investment casting services for components of aircraft interior, bike, industrial, and hardware in titanium and stainless steel. It also provides composite products, such as aircraft interiors comprising seat backrests, seat pads, and seat arm rests; automotive products consisting of engine covers, spoilers, and driving shafts; electronic device protectors, such as laptop carbon covers and pad soft goods; and industrial structures, including robot arm accessories, frame tubes, and assistive devices. In addition, the company offers prepreg products. Advanced International Multitech Co., Ltd. was founded in 1987 and is headquartered in Kaohsiung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Kaohsiung"
+    },
     "8940.TW": {
         "short_name": "NEW PALACE INTERNATIONAL CO",
         "long_name": "New Palace International Co., Ltd.",
-        "summary": "New Palace International Co., Ltd. operates restaurants. It provides food services, wedding banquets, and catering services. The company was founded in 1971 and based in Taichung, Taiwan.",
+        "summary": "New Palace International Co., Ltd. operates restaurants. The company provides food, wedding banquet, and catering services. New Palace International Co., Ltd. was founded in 1971 and is based in Taichung, Taiwan.",
         "currency": "TWD",
         "sector": "Consumer Cyclical",
         "industry": "Restaurants",
@@ -1094,7 +2030,7 @@
     "9904.TW": {
         "short_name": "POU CHEN",
         "long_name": "Pou Chen Corporation",
-        "summary": "Pou Chen Corporation manufactures and sells athletic, casual, and outdoor shoes in Taiwan and internationally. The company operates as an original equipment manufacturer for international brands, as well as original design manufacturer for athletic footwear, leisure shoes, and sports sandals; and manufacturer for footwear accessories, apparels, and others. It also engages in the retailing of sporting goods and brand licensing business. In addition, the company is involved in the real estate development activities; and tourist hotel business. Pou Chen Corporation was founded in 1969 and is headquartered in Taichung, Taiwan.",
+        "summary": "Pou Chen Corporation manufactures and sells athletic, casual, and outdoor shoes in Taiwan and internationally. It operates as an original equipment manufacturer for international brands, as well as original design manufacturer for athletic footwear, leisure shoes, and sports sandals; and manufacturer for footwear accessories, apparels, and others. The company also engages in the retailing of sporting goods and brand licensing business. In addition, it is involved in the real estate development activities; and tourist hotel business. Pou Chen Corporation was founded in 1969 and is headquartered in Taichung, Taiwan.",
         "currency": "TWD",
         "sector": "Consumer Cyclical",
         "industry": "Footwear & Accessories",
@@ -1126,6 +2062,18 @@
         "market": "tw_market",
         "country": "Taiwan",
         "city": "Taichung"
+    },
+    "9914.TW": {
+        "short_name": "MERIDA INDUSTRY",
+        "long_name": "Merida Industry Co., Ltd.",
+        "summary": "Merida Industry Co., Ltd. manufactures and sells bicycles and related parts in Taiwan, China, Hong Kong, and Europe. It offers machine bicycles, e-bikes, fitness bikes, road bikes, and trekking and city bikes, as well as bikes for youth, kids, and women. It also provides speedometers; handlebars, stems, grips and bartapes, pedals and quickreleases, saddles, seatposts and clamps, and EQ and spare parts; bags, backpacks, brackets, lights, pumps, bottles and cages, tools, and locks; and apparel, such as jerseys, shorts, jackets and vests, gloves, socks, and sunglasses. Merida Industry Co., Ltd. was founded in 1972 and is headquartered in Changhua, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "TAI",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Changhua"
     },
     "9921.TW": {
         "short_name": "GIANT MANUFACTURING CO",
@@ -1210,6 +2158,42 @@
         "market": "tw_market",
         "country": "Taiwan",
         "city": "Taoyuan City"
+    },
+    "9950.TWO": {
+        "short_name": "EMINENT LUGGAGE CORPORATION",
+        "long_name": "Eminent Luggage Corporation",
+        "summary": "Eminent Luggage Corporation designs, manufactures, and sells luggage products worldwide. The company provides a range of ABS, PP, PC, nylon, and polyester cases; bags and leisure products; and hard shell and beauty cases, soft luggage, trolleys, suitcase sets, business suitcases, and laptop backpacks. It offers its products under the Eminent, Case-Star, Mine, and Probeetle brands. Eminent Luggage Corporation was founded in 1979 and is headquartered in Tainan City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Footwear & Accessories",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Tainan City"
+    },
+    "9951.TWO": {
+        "short_name": "MACAUTO INDUSTRIAL CO",
+        "long_name": "Macauto Industrial Co., Ltd.",
+        "summary": "Macauto Industrial Co., Ltd. engages in the manufacture and sale of automotive sunshade products. The company offers automotive interiors, such as Sunshades for roof systems, luggage cover systems, side and rear window shades, wind deflectors, divider net systems, and mobile phone/tablet holder. It also provides garden tools, including cordless electric mower, electric wheelbarrows, and robotic golf caddy cart. Macauto Industrial Co., Ltd. was founded in 1979 and is headquartered in Tainan, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Tainan"
+    },
+    "9960.TWO": {
+        "short_name": "DACOME INTERNATIONAL LTD",
+        "long_name": "Dacome International Ltd.",
+        "summary": "Dacome International Ltd. distributes golf brands in Taiwan, the United States, and Japan. The company offers balls, golf products, footwear, bags, apparel, hats, belts, gloves, accessories, audiovisual books, team gifts, and gift certificates, as well as training supplies. It also markets its products through its Website, golfshop.com.tw; and provides golf equipment bidding, golf courses booking, golf tours at home and abroad, golf skills teaching, handicap system, etc. The company was founded in 2000 and is headquartered in Kaohsiung City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "city": "Kaohsiung"
     },
     "CMKI": {
         "short_name": "CMK GAMING INTERNATIONAL INC",

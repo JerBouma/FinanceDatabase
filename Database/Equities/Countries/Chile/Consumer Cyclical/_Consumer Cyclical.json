@@ -1,16 +1,4 @@
 {
-    "AZUL-AZUL.SN": {
-        "short_name": "AZUL AZUL S.A.",
-        "long_name": "Azul Azul S.A.",
-        "summary": "Azul Azul S.A. administers professional football club in Chile. The company was founded in 2007 and is based in La Cisterna, Chile.",
-        "currency": "CLP",
-        "sector": "Consumer Cyclical",
-        "industry": "Leisure",
-        "exchange": "SGO",
-        "market": "cl_market",
-        "country": "Chile",
-        "city": "La Cisterna"
-    },
     "CENCOSUD.SN": {
         "short_name": "CENCOSUD SA",
         "long_name": "Cencosud S.A.",
@@ -23,6 +11,18 @@
         "country": "Chile",
         "city": "Las Condes"
     },
+    "CIC.SN": {
+        "short_name": "COMPANIAS CIC SA",
+        "long_name": "Companias CIC S.A.",
+        "summary": "Companias CIC S.A. designs, produces, and markets furniture and decoration products in Chile. It offers beds and mattresses; pillows; bases; linens, such as bed sheets, bed covers and quilts, bedding sets, blankets, and accessories; and bedroom, living room, and dining room furniture. The company was founded in 1912 and is based in Santiago, Chile.",
+        "currency": "CLP",
+        "sector": "Consumer Cyclical",
+        "industry": "Furnishings, Fixtures & Appliances",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Santiago de Chile"
+    },
     "COLO-COLO.SN": {
         "short_name": "BLANCO Y NEGRO SA",
         "long_name": "Blanco y Negro S.A.",
@@ -34,6 +34,18 @@
         "market": "cl_market",
         "country": "Chile",
         "city": "Macul"
+    },
+    "COUNTRY-A.SN": {
+        "short_name": "PRINCE OF WALES CN",
+        "long_name": "Prince of Wales Country Club S.A.I.",
+        "summary": "Prince of Wales Country Club S.A.I. operates sports and recreation club in Chile. The company offers sports facilities for golf, rugby, hockey, soccer, tennis, squash, paddle, and others. It also provides fitness lessons, swimming, school summer/winter activities, and club house services. The company was founded in 1925 and is based in Santiago, Chile.",
+        "currency": "CLP",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Santiago de Chile"
     },
     "CRISTALES.SN": {
         "short_name": "CRISTALERIAS CHILE",
@@ -98,19 +110,31 @@
     "FORUS.SN": {
         "short_name": "FORUS S.A.",
         "long_name": "Forus S.A.",
-        "summary": "Forus S.A. designs, produces, imports, markets, and distributes footwear, clothing articles, and accessories in Chile, Peru, Colombia, and Uruguay. The company offers its products under the Hush Puppies, Columbia, Cat, RKF, Azaleia, Merrell, Nine West, Hush Puppies Kids, Calpany, Brooks, Mountain Hardwear, WLS, Patagonia, Sorel, Sebago, Church's, Jansport, Norseg, Burton, Skullcandy, Dakine, Pasqualini, Billabong, Element, Von Zipper, Keds, Sperry Top Sider, 7Veinte, RVCA, BODY AND SOUL, prAna, Wolverine, Montrail, and Just Smile brands. It is also involved in the wholesale business. The company sells its products through 494 stores, as well as e-commerce. The company was formerly known as Comercial Hush Puppies Chile Limitada and changed its name to Forus S.A. in December 1991. The company was founded in 1980 and is headquartered in La Florida, Chile. Forus S.A. is a subsidiary of Inversiones Costanera Limitada.",
+        "summary": "Forus S.A. designs, produces, imports, markets, and distributes footwear, clothing articles, and accessories in Chile, Peru, Colombia, and Uruguay. The company offers its products under the Hush Puppies, Columbia, Cat, RKF, Azaleia, Merrell, Nine West, Hush Puppies Kids, Calpany, Brooks, Mountain Hardwear, Patagonia, Sorel, Church's, Jansport, Norseg, Burton, Dakine, Pasqualini, Billabong, Element, Keds, Sperry, 7Veinte, RVCA, Body And Soul, Prana, We Love Shoes, and Vans brands. It also engages in the wholesale business. The company sells its products through 507 stores and 37 e-commerce websites. The company was formerly known as Comercial Hush Puppies Chile Limitada and changed its name to Forus S.A. in December 1991. The company was founded in 1980 and is headquartered in Las Condes, Chile. Forus S.A. is a subsidiary of Inversiones Costanera Limitada.",
         "currency": "CLP",
         "sector": "Consumer Cyclical",
         "industry": "Apparel Retail",
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "La Florida"
+        "city": "Las Condes"
     },
-    "HIPICO.SN": {
-        "short_name": "CLUB HIPICO STGO",
-        "long_name": "Club Hipico de Santiago S.A.",
-        "summary": "Club Hipico de Santiago S.A. operates a horse racing club in Chile. It also operates a veterinary clinic that offers hospitalization, surgery, diagnostic, clinical laboratory, and other services for equine. The company was founded in 1869 and is based in Santiago, Chile.",
+    "GOLF.SN": {
+        "short_name": "CLUB DE GOLF",
+        "long_name": "Sociedad Anonima de Deportes Club de Golf Santiago",
+        "summary": "Sociedad Anonima de Deportes Club de Golf Santiago engages in the practice, development, and promotion of sports in Chile. It is also involved in the construction and installation of golf courses. The company is based in Santiago, Chile.",
+        "currency": "CLP",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Santiago de Chile"
+    },
+    "HIPODROMOA.SN": {
+        "short_name": "HIPODROMO CHILE SA",
+        "long_name": "Sociedad Hipodromo Chile S.A.",
+        "summary": "Sociedad Hipodromo Chile S.A. operates horse racecourses in Chile. The company was founded in 1904 and is based in Santiago, Chile.",
         "currency": "CLP",
         "sector": "Consumer Cyclical",
         "industry": "Gambling",
@@ -166,6 +190,18 @@
         "market": "cl_market",
         "country": "Chile",
         "city": "Santiago de Chile"
+    },
+    "SMU.SN": {
+        "short_name": "SMU SA",
+        "long_name": "SMU S.A.",
+        "summary": "SMU S.A. operates a chain of supermarkets in Chile. The company offers fresh items, such as fruits and vegetables, white and red meats, and dairy products, as well as dry goods, wine and spirits, frozen and cleaning products, and various non-food items; and ready meals, chocolates, beverages, pastries, bread, and tobacco products. It operates food retail business through various formats comprising supermarkets under the Unimarc and Mayorista 10 name; cash and carry stores under the Alvi names; convenience stores under the Ok Market name; and online through Telemercados name. As of March 15, 2021, it operated 284 Unimarc stores, 63 Mayorista 10 stores, 32 Alvi stores, 125 Ok Market, and 25 Mayorsa stores. SMU S.A. was founded in 2007 and is based in Las Condes, Chile.",
+        "currency": "CLP",
+        "sector": "Consumer Cyclical",
+        "industry": "Department Stores",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Las Condes"
     },
     "SOCOVESA.SN": {
         "short_name": "SOCOVESA SA",

@@ -19,16 +19,6 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "BNKZ": {
-        "short_name": "MicroSectors U.S. Big Banks Ind",
-        "long_name": "MicroSectors U.S. Big Banks Index -2X Inverse Leveraged ETNs",
-        "currency": "USD",
-        "summary": "The investment seeks to reflect an inverse exposure t to reflect a 2x inverse leveraged exposure to the performance of the Solactive MicroSectorsTM U.S. Big Banks Index on a daily basis.\n The notes are senior unsecured medium-term notes issued by Bank of Montreal with a return linked to a two times leveraged participation in the inverse performance of the index, compounded daily, less a Daily Investor Fee, any negative Daily Interest and, if applicable, the Redemption Fee Amount. The index is an equal-dollar weighted index designed to represent the 10 U.S. stocks with the largest market capitalization in the banking sector.",
-        "category": "Trading--Inverse Equity",
-        "family": "Microsectors",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
     "BZQ": {
         "short_name": "ProShares UltraShort MSCI Brazi",
         "long_name": "ProShares UltraShort MSCI Brazil Capped",
@@ -44,6 +34,16 @@
         "long_name": "Direxion Daily CSI 300 China A Share Bear 1X Shares",
         "currency": "USD",
         "summary": "The investment seeks daily investment results, before fees and expenses, of 100% of the inverse of the daily performance of the CSI 300 Index.\n The fund, under normal circumstances, invests in swap agreements, futures contracts, short positions or other financial instruments that, in combination, provide inverse (opposite) or short exposure to the index equal to at least 80% of the fund&#39;s net assets (plus borrowing for investment purposes). The index is a modified free-float market capitalization weighted index comprised of the largest and most liquid stocks in the Chinese A-share market. The fund is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "Direxion Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "CLDS": {
+        "short_name": "Direxion Daily Cloud Computing ",
+        "long_name": "Direxion Daily Cloud Computing Bear 2X Shares",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, of 200% of the inverse (or opposite) of the daily performance of the Indxx USA Cloud Computing Index.\n The fund, under normal circumstances, invests in swap agreements, futures contracts, short positions or other financial instruments that, in combination, provide inverse (opposite) or short leveraged exposure to the index equal to at least 80% of the fund&#39;s net assets (plus borrowing for investment purposes). The index is provided by Indxx, LLC and includes domestic companies that deliver cloud computing infrastructure, platforms, or services. The fund is non-diversified.",
         "category": "Trading--Inverse Equity",
         "family": "Direxion Funds",
         "exchange": "PCX",
@@ -123,7 +123,7 @@
         "short_name": "Direxion Emerging Markets Bear ",
         "long_name": "Direxion Daily MSCI Emerging Markets Bear 3X Shares",
         "currency": "USD",
-        "summary": "The investment seeks daily investment results, before fees and expenses, of 300% of the inverse of the daily performance of the MSCI Emerging Markets IndexSM.\n The fund invests in swap agreements, futures contracts, short positions or other financial instruments that, in combination, provide inverse or short leveraged exposure to the index equal to at least 80% of the fund&#39;s net assets (plus borrowing for investment purposes). The index is a free float-adjusted market capitalization weighted index that is designed to represent the performance of large- and mid-capitalizations securities across 26 emerging market countries. The fund is non-diversified.",
+        "summary": "The investment seeks daily investment results, before fees and expenses, of 300% of the inverse of the daily performance of the MSCI Emerging Markets IndexSM.\n The fund invests in swap agreements, futures contracts, short positions or other financial instruments that, in combination, provide inverse or short leveraged exposure to the index equal to at least 80% of the fund&#39;s net assets (plus borrowing for investment purposes). The index is a free float-adjusted market capitalization weighted index that is designed to represent the performance of large- and mid-capitalizations securities across 27 emerging market countries. The fund is non-diversified.",
         "category": "Trading--Inverse Equity",
         "family": "Direxion Funds",
         "exchange": "PCX",
@@ -239,6 +239,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "HDGE": {
+        "short_name": "Ranger Equity Bear Bear ETF",
+        "long_name": "AdvisorShares Ranger Equity Bear ETF",
+        "currency": "USD",
+        "summary": "The investment seeks capital appreciation through short sales of domestically traded equity securities.\n The Sub-Advisor seeks to achieve the fund&#39;s investment objective by short selling a portfolio of liquid mid- and large-cap U.S. exchange-traded equity securities, ETFs, ETNs and other exchange-traded products. The fund invests at least 80% of its net assets, plus any borrowings for investment purposes, in short positions in equity securities. The Sub-Advisor implements a bottom-up, fundamental, research driven security selection process.",
+        "category": "Trading--Inverse Equity",
+        "family": "AdvisorShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "HIBS": {
         "short_name": "Direxion Daily S&P 500 High Bet",
         "long_name": "Direxion Daily S&P 500 High Beta Bear 3X Shares",
@@ -266,6 +276,16 @@
         "summary": "The investment seeks daily investment results, before fees and expenses, of 300% of the inverse of the daily performance of the S&P Biotechnology Select Industry Index.\n The fund, under normal circumstances, invests in swap agreements, futures contracts, short positions or other financial instruments that, in combination, provide inverse (opposite) or short leveraged exposure to the index equal to at least 80% of the fund&#39;s net assets (plus borrowing for investment purposes). The index is designed to measure the performance of the biotechnology sub-industry based on the Global Industry Classification Standards (\"GICS\"). The fund is non-diversified.",
         "category": "Trading--Inverse Equity",
         "family": "Direxion Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "MYY": {
+        "short_name": "ProShares Short MidCap400",
+        "long_name": "ProShares Short MidCap400",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results that correspond to the inverse (-1x) of the daily performance of the S&P MidCap 400\u00c2\u00ae Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index is a measure of mid-size company U.S. stock market performance. It is a float-adjusted, market capitalization-weighted index of 400 U.S. operating companies and real estate investment trusts selected through a process that factors in criteria such as liquidity, price, market capitalization and financial viability. It is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "ProShares",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -299,6 +319,26 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "REK": {
+        "short_name": "ProShares Short Real Estate",
+        "long_name": "ProShares Short Real Estate",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to the inverse (-1x) of the daily performance of the Dow Jones U.S. Real EstateSM Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index measures the performance of certain companies in the real estate industry of the U.S. equity market. Component companies include, among others, real estate holding and development and real estate services companies and real estate investment trusts (\"REITs\"). The fund is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "REW": {
+        "short_name": "ProShares UltraShort Technology",
+        "long_name": "ProShares UltraShort Technology",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to two times the inverse (-2x) of the daily performance of the Dow Jones U.S. TechnologySM Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index seeks to measure the performance of certain companies in the technology industry of the U.S. equity market. The fund is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "RWM": {
         "short_name": "ProShares Short Russell2000",
         "long_name": "ProShares Short Russell2000",
@@ -314,6 +354,36 @@
         "long_name": "ProShares UltraShort Health Care",
         "currency": "USD",
         "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to two times the inverse (-2x) of the daily performance of the Dow Jones U.S. Health CareSM Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index seeks to measure the performance of certain companies in the healthcare industry of the U.S. equity market. The fund is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SBB": {
+        "short_name": "ProShares Short SmallCap600",
+        "long_name": "ProShares Short SmallCap600",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results that correspond to the inverse (-1x) of the daily performance of the S&P SmallCap 600\u00c2\u00ae Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index is a measure of small-cap company U.S. stock market performance. It is a float-adjusted, market capitalization-weighted index of 600 U.S. operating companies selected through a process that factors in criteria such as liquidity, price, market capitalization, financial viability and public float. The fund is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SBM": {
+        "short_name": "Short Basic Materials",
+        "long_name": "ProShares Short Basic Materials",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results that correspond to the inverse (-1x) of the daily performance of the Dow Jones U.S. Basic MaterialsSM Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index seeks to measure the performance of certain companies in the basic materials industry of the U.S. equity market. The fund is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SCC": {
+        "short_name": "ProShares UltraShort Consumer S",
+        "long_name": "ProShares UltraShort Consumer Services",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to two times the inverse (-2x) of the daily performance of the Dow Jones U.S. Consumer ServicesSM Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index seeks to measure the stock performance of certain U.S. companies in the consumer services sector of the U.S. equity market. The fund is non-diversified.",
         "category": "Trading--Inverse Equity",
         "family": "ProShares",
         "exchange": "PCX",
@@ -339,11 +409,31 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "SDP": {
+        "short_name": "ProShares UltraShort Utilities",
+        "long_name": "ProShares UltraShort Utilities",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to two times the inverse (-2x) of the daily performance of the Dow Jones U.S. UtilitiesSM Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index seeks to measure the performance of certain companies in the utilities sector of the U.S. equity market. The fund is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "SDS": {
         "short_name": "ProShares UltraShort S&P500",
         "long_name": "ProShares UltraShort S&P500",
         "currency": "USD",
         "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to two times the inverse (-2x) of the daily performance of the S&P 500\u00c2\u00ae Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index is a measure of large-cap U.S. stock market performance. The fund is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SEF": {
+        "short_name": "ProShares Short Financials",
+        "long_name": "ProShares Short Financials",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to the inverse (-1x) of the daily performance of the Dow Jones U.S. FinancialsSM Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index seeks to measure the performance of certain companies in the financial services sector of the U.S. equity market. The fund is non-diversified.",
         "category": "Trading--Inverse Equity",
         "family": "ProShares",
         "exchange": "PCX",
@@ -359,11 +449,51 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "SIJ": {
+        "short_name": "ProShares UltraShort Industrial",
+        "long_name": "ProShares UltraShort Industrials",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to two times the inverse (-2x) of the daily performance of the Dow Jones U.S. IndustrialsSM Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index seeks to measure the performance of certain companies in the industrial sector of the U.S. equity market. The fund is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "SKF": {
         "short_name": "ProShares UltraShort Financials",
         "long_name": "ProShares UltraShort Financials",
         "currency": "USD",
         "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to two times the inverse (-2x) of the daily performance of the Dow Jones U.S. FinancialsSM Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index seeks to measure the performance of certain companies in the financial services sector of the U.S. equity market. The fund is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SKYU": {
+        "short_name": "ProShares Ultra Nasdaq Cloud Co",
+        "long_name": "ProShares Ultra Cloud Computing",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to two times (2x) the daily performance of the ISE CTA Cloud Computing Index.\n The index is comprised of companies classified as \"cloud computing\" companies by the CTA. The Advisor expects that its cash balances maintained in connection with the use of financial instruments will typically be held in money market instruments. It invests in common stock issued by public companies. The fund invests in derivatives, which are financial instruments whose value is derived from the value of an underlying asset or assets. It is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "ProShares",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "SMDD": {
+        "short_name": "UltraPro Short MidCap400",
+        "long_name": "ProShares UltraPro Short MidCap400",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to three times the inverse (-3x) of the daily performance of the S&P MidCap 400\u00c2\u00ae Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index is a measure of mid-size company U.S. stock market performance. The fund is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SMN": {
+        "short_name": "ProShares UltraShort Basic Mate",
+        "long_name": "ProShares UltraShort Basic Materials",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to two times the inverse (-2x) of the daily performance of the Dow Jones U.S. Basic MaterialsSM Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index seeks to measure the performance of certain companies in the basic materials sector of the U.S. equity market. The fund is non-diversified.",
         "category": "Trading--Inverse Equity",
         "family": "ProShares",
         "exchange": "PCX",
@@ -383,7 +513,7 @@
         "short_name": "Direxion Daily S&P 500 Bear 1X ",
         "long_name": "Direxion Daily S&P 500 Bear 1X Shares",
         "currency": "USD",
-        "summary": "The investment seeks daily investment results, before fees and expenses, of 100% of the inverse (or opposite) of the daily performance of the S&P 500\u00c2\u00ae Index.\n The fund, under normal circumstances, invests in swap agreements, futures contracts, short positions or other financial instruments that, in combination, provide inverse (opposite) or short exposure to the index equal to at least 80% of the fund&#39;s net assets (plus borrowing for investment purposes). The index is a float-adjusted, market capitalization-weighted index. The fund is non-diversified.",
+        "summary": "The investment seeks daily investment results, before fees and expenses, of 100% of the inverse (or opposite) of the daily performance of the S&P 500\u00c2\u00ae Index.\n The fund, under normal circumstances, invests in swap agreements, futures contracts, short positions or other financial instruments that, in combination, provide inverse (opposite) or short exposure to the index equal to at least 80% of the fund&#39;s net assets (plus borrowing for investment purposes). The index is a float-adjusted and market capitalization-weighted index. The fund is non-diversified.",
         "category": "Trading--Inverse Equity",
         "family": "Direxion Funds",
         "exchange": "PCX",
@@ -396,6 +526,16 @@
         "summary": "The investment seeks daily investment results, before fees and expenses, of 300% of the inverse (or opposite) of the daily performance of the S&P 500\u00c2\u00ae Index.\n The fund, under normal circumstances, invests in swap agreements, futures contracts, short positions or other financial instruments that, in combination, provide inverse (opposite) or short leveraged exposure to the index equal to at least 80% of the fund&#39;s net assets (plus borrowing for investment purposes). The index is a float-adjusted, market capitalization-weighted index. The fund is non-diversified.",
         "category": "Trading--Inverse Equity",
         "family": "Direxion Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SPXU": {
+        "short_name": "ProShares UltraPro Short S&P500",
+        "long_name": "ProShares UltraPro Short S&P500",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results before fees and expenses that correspond to three times the inverse (-3x) of the daily performance of the S&P 500\u00c2\u00ae Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index is a measure of large-cap U.S. stock market performance. The fund is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "ProShares",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -449,6 +589,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "TECS": {
+        "short_name": "Direxion Technology Bear 3X Sha",
+        "long_name": "Direxion Daily Technology Bear 3X Shares",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, of 300% of the inverse (or opposite) of the daily performance of the Technology Select Sector Index.\n The fund, under normal circumstances, invests in swap agreements, futures contracts, short positions or other financial instruments that, in combination, provide inverse (opposite) or short leveraged exposure to the index equal to at least 80% of the fund&#39;s net assets (plus borrowing for investment purposes). The index is provided by S&P Dow Jones Indices (the \"index provider\") and includes domestic companies from the technology sector. It is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "Direxion Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "TWM": {
         "short_name": "ProShares UltraShort Russell200",
         "long_name": "ProShares UltraShort Russell2000",
@@ -464,6 +614,16 @@
         "long_name": "Direxion Daily Small Cap Bear 3X Shares",
         "currency": "USD",
         "summary": "The investment seeks daily investment results, before fees and expenses, of 300% of the inverse (or opposite) of the daily performance of the Russell 2000\u00c2\u00ae Index.\n The fund invests in swap agreements, futures contracts, short positions or other financial instruments that, in combination, provide inverse (opposite) or short leveraged exposure to the index equal to at least 80% of the fund&#39;s net assets (plus borrowing for investment purposes). The index measures the performance of approximately 2,000 small-capitalization companies in the Russell 3000\u00c2\u00ae Index, based on a combination of their market capitalization and current index membership. It is non-diversified.",
+        "category": "Trading--Inverse Equity",
+        "family": "Direxion Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "WEBS": {
+        "short_name": "Direxion Daily Dow Jones Intern",
+        "long_name": "Direxion Daily Dow Jones Internet Bear 3X Shares",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, of 300% of the inverse (or opposite) of the daily performance of the Dow Jones Internet Composite Index.\n The fund, under normal circumstances, invests in swap agreements, futures contracts, short positions or other financial instruments that, in combination, provide inverse (opposite) or short leveraged exposure to the index equal to at least 80% of the fund&#39;s net assets. The index includes companies that generate at least 50% of their annual sales/revenue from the internet as determined by the index provider. It is non-diversified.",
         "category": "Trading--Inverse Equity",
         "family": "Direxion Funds",
         "exchange": "PCX",

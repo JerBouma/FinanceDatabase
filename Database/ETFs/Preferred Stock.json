@@ -1,32 +1,22 @@
 {
-    "FPE": {
-        "short_name": "First Trust Preferred Securitie",
-        "long_name": "First Trust Preferred Securities and Income ETF",
+    "IPFF": {
+        "short_name": "iShares International Preferred",
+        "long_name": "iShares International Preferred Stock ETF",
         "currency": "USD",
-        "summary": "The investment seeks total return and to provide current income.\n Under normal market conditions, the fund invests at least 80% of its net assets (including investment borrowings) in preferred securities (\"Preferred Securities\") and income-producing debt securities (\"Income Securities\"). The fund invests in securities that are traded over-the-counter or listed on an exchange.",
+        "summary": "The investment seeks to track the investment results of the S&P International Preferred Stock IndexTM.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The index measures the performance of a select group of preferred stocks from non-U.S. developed market issuers and traded on non-U.S. developed market exchanges as defined by the index provider. The fund is non-diversified.",
         "category": "Preferred Stock",
-        "family": "First Trust",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "FPEI": {
-        "short_name": "First Trust Institutional Prefe",
-        "long_name": "First Trust Institutional Preferred Securities and Income ETF",
-        "currency": "USD",
-        "summary": "The investment seeks total return and to provide current income.\n The fund invests at least 80% of its net assets (including investment borrowings) in institutional preferred securities and income-producing debt securities (\"Income Securities\"). Preferred securities are a type of equity security that have preference over common stock in the payment of distributions and the liquidation of a company&#39;s assets, but are generally junior to all forms of the company&#39;s debt, including both senior and subordinated debt. The fund&#39;s investments in preferred securities will primarily be in institutional preferred securities. It is non-diversified.",
-        "category": "Preferred Stock",
-        "family": "First Trust",
-        "exchange": "PCX",
+        "family": "iShares",
+        "exchange": "BTS",
         "market": "us_market"
     },
     "PFF": {
-        "short_name": "iShares US Preferred Stock ETF",
+        "short_name": "iShares Preferred and Income Se",
         "long_name": "iShares Preferred and Income Securities ETF",
         "currency": "USD",
         "summary": "The investment seeks to track the investment results of the ICE Exchange-Listed Preferred & Hybrid Securities Index, which measures the performance of a select group of exchange-listed, U.S. dollar-denominated preferred securities, hybrid securities and convertible preferred securities listed on the NYSE or NASDAQ.\n The fund may invest at least 80% of its assets in the component securities of the index and may invest up to 20% of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the index, but which the advisor believes will help the fund track the index.",
         "category": "Preferred Stock",
         "family": "iShares",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "PFFA": {
@@ -39,11 +29,11 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "PFFV": {
-        "short_name": "Global X Variable Rate Preferre",
-        "long_name": "Global X Variable Rate Preferred ETF",
+    "PFFD": {
+        "short_name": "Global X U.S. Preferred ETF",
+        "long_name": "Global X U.S. Preferred ETF",
         "currency": "USD",
-        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the ICE U.S. Variable Rate Preferred Securities Index.\n The fund invests at least 80% of its total assets, plus borrowings for investments purposes (if any), in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The underlying index is designed to track the broad-based performance of the U.S.-listed variable rate preferred securities market. It is non-diversified.",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the ICE BofA Diversified Core U.S. Preferred Securities Index.\n The fund invests at least 80% of its total assets in the securities of its underlying index. It also invests at least 80% of its total assets in preferred securities that are domiciled in, principally traded in or whose revenues are primarily from the U.S. The underlying index is designed to track the broad-based performance of the U.S. preferred securities market.",
         "category": "Preferred Stock",
         "family": "Global X Funds",
         "exchange": "PCX",
@@ -53,7 +43,7 @@
         "short_name": "AAM Low Duration Preferred and ",
         "long_name": "AAM Low Duration Preferred and Income Securities ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the ICE 0-5 Year Duration Exchange-Listed Preferred & Hybrid Securities Index.\n The index measures the performance of exchange-listed, U.S. dollar-denominated preferred securities and hybrid securities listed on the New York Stock Exchange (\"NYSE\") or NASDAQ Capital Market (\"NASDAQ\") with an option-adjusted duration of less than 5 years. Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of any collateral held from securities lending) will be invested in the component securities of the index.",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the ICE 0-5 Year Duration Exchange-Listed Preferred & Hybrid Securities Index.\n The index measures the performance of exchange-listed, U.S. dollar-denominated preferred securities and hybrid securities listed on the New York Stock Exchange (\"NYSE\") or NASDAQ Capital Market (\"NASDAQ\") with an option-adjusted duration of less than 5 years. Under normal circumstances, at least 80% of the fund\u00e2\u0080\u0099s net assets, plus borrowings for investment purposes, will be invested in preferred and income securities.",
         "category": "Preferred Stock",
         "family": "AAM",
         "exchange": "PCX",
@@ -90,22 +80,12 @@
         "market": "us_market"
     },
     "PSK": {
-        "short_name": "SPDR Wells Fargo Preferred Stoc",
-        "long_name": "SPDR Wells Fargo Preferred Stock ETF",
+        "short_name": "SPDR ICE Preferred Securities E",
+        "long_name": "SPDR ICE Preferred Securities ETF",
         "currency": "USD",
-        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of an index.\n In seeking to track the performance of Wells Fargo Hybrid and Preferred Securities Aggregate Index (the \"index\"), the fund employs a sampling strategy. It generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is a modified market capitalization weighted index designed to measure the performance of non-convertible preferred stock and securities that are functionally equivalent to preferred stock. The fund is non-diversified.",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the ICE Exchange-Listed Fixed & Adjustable Rate Preferred Securities Index.\n In seeking to track the performance of the index, the adviser employs a sampling strategy. It generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is designed to measure the performance of non-convertible preferred stock and securities that are functionally equivalent to preferred stock, including, but not limited to, senior and subordinated debt.",
         "category": "Preferred Stock",
         "family": "SPDR State Street Global Advisors",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "VRP": {
-        "short_name": "Invesco Variable Rate Preferred",
-        "long_name": "Invesco Variable Rate Preferred ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Wells Fargo\u00c2\u00ae Hybrid and Preferred Securities Floating and Variable Rate Index.\n The fund generally will invest at least 90% of its total assets in the components of the index. The index is a market capitalization-weighted index designed to track the performance of preferred stock, as well as certain types of hybrid securities that are comparable to preferred stocks, that are issued by U.S.-based or foreign issuers and that pay a floating or variable rate dividend or coupon. The fund is non-diversified.",
-        "category": "Preferred Stock",
-        "family": "Invesco",
         "exchange": "PCX",
         "market": "us_market"
     }

@@ -24,9 +24,9 @@
         "city": "Seoul"
     },
     "000270.KS": {
-        "short_name": "KiaMtr",
+        "short_name": "KIA CORP.",
         "long_name": "Kia Corporation",
-        "summary": "Kia Corporation, together with its subsidiaries, manufactures and sells vehicles in South Korea, North America, Europe, and internationally. The company offers passenger cars, recreational vehicles, and commercial vehicles, as well as hybrid and plug-in hybrid, and electric vehicles. The company sells its products primarily through a network of distributors and dealers. The company was formerly known as Kia Motors Corporation and changed its name to Kia Corporation in January 2021. Kia Corporation was founded in 1944 and is based in Seoul, South Korea.",
+        "summary": "Kia Corporation, together with its subsidiaries, manufactures and sells vehicles in South Korea, North America, and Europe. The company offers cars, SUVs and MPV, eco, and commercial vehicles. It sells its products through a network of dealers. The company was formerly known as Kia Motors Corporation and changed its name to Kia Corporation in January 2021. Kia Corporation was founded in 1944 and is based in Seoul, South Korea.",
         "currency": "KRW",
         "sector": "Consumer Cyclical",
         "industry": "Auto Manufacturers",
@@ -34,6 +34,18 @@
         "market": "kr_market",
         "country": "South Korea",
         "city": "Seoul"
+    },
+    "000430.KS": {
+        "short_name": "DaewonKangup",
+        "long_name": "Daewon Kang Up Co., Ltd.",
+        "summary": "Daewon Kang Up Co., Ltd. develops, produces, and sells suspension springs and seats in South Korea and internationally. The company offers suspension springs, including coil and leaf springs, stabilizer and torsion bars, and air springs, as well as air and pusher axle suspension kits for automobile makers; and coil insert, tension bar connection, and test equipment for springs. It also provides precision springs, such as engine valve springs and cotters, curved springs, return springs, die springs, and precision wire and disc springs, as well as flat and snap rings, and IT components for use in auto parts, electronic products, industrial machinery, civil construction parts, and high precision IT parts. In addition, the company offers seats for automobiles, subway trains, trains, heavy equipment, and other industries; manufacturing equipment for coil and leaf springs, and stabilizer bars; peelers, testing equipment for springs, and engineering services; equipment for materials processing and engineering services; and adjusters, recliners, pumping devices, headrests, magnesium frames, and set assemblies. The company was founded in 1946 and is headquartered in Cheonan-si, South Korea.",
+        "currency": "KRW",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Cheonan-si"
     },
     "000950.KS": {
         "short_name": "Chonbang",
@@ -58,18 +70,6 @@
         "market": "kr_market",
         "country": "South Korea",
         "city": "Seoul"
-    },
-    "001380.KS": {
-        "short_name": "SG CHOONGBANG",
-        "long_name": "SG Choongbang Co.,Ltd",
-        "summary": "SG Choongbang Co.,Ltd engages in spinning and car seat cover businesses in South Korea, Vietnam, and internationally. The company offers spun and blended yarns. Its products include Lenzing Modal Edelweiss used in underwear, bath towels, housedress, socks, etc.; Tencel for use in inner and outer wear for women, bed sheets/covers, denim textiles, children's wear, shirts, sportswear, etc.; and ProViscose used in airy summer clothes, as well as in textile for suits. The company's products also comprise specialized yarns, including high twist yarns principally used in ramie clothes and summer sweaters; SLUB yarn used in manufacturing casual wear, jackets, and pants; SMATRICH; and natural fiber blended yarns, such as flax and ramie/cotton, as well as wool/cotton and silk/cotton used in the production of various products comprising neckties, scarfs, jackets, and shirts. In addition, it develops, produces, and sells car seat covers. The company was founded in 1954 and is based in Yesan-Eup, South Korea.",
-        "currency": "KRW",
-        "sector": "Consumer Cyclical",
-        "industry": "Textile Manufacturing",
-        "exchange": "KSC",
-        "market": "kr_market",
-        "country": "South Korea",
-        "city": "Yesan-Eup"
     },
     "001420.KS": {
         "short_name": "TaewonMulsan",
@@ -227,18 +227,6 @@
         "country": "South Korea",
         "city": "Seoul"
     },
-    "003620.KS": {
-        "short_name": "SsangyongMtr",
-        "long_name": "Ssangyong Motor Company",
-        "summary": "Ssangyong Motor Company manufactures and sells automobiles and parts in South Korea and internationally. The company offers range of SUVs under the Rexton, Korando, and Tivoli brand name. It also engages in the sales finance activity. In addition, the company exports and sells its SUVs through approximately 1,500 sales outlets in approximately 126 countries. The company was founded in 1954 and is headquartered in Pyeongtaek, South Korea. Ssangyong Motor Company is a subsidiary of Mahindra & Mahindra Limited.",
-        "currency": "KRW",
-        "sector": "Consumer Cyclical",
-        "industry": "Auto Parts",
-        "exchange": "KSC",
-        "market": "kr_market",
-        "country": "South Korea",
-        "city": "Pyeongtaek"
-    },
     "003720.KS": {
         "short_name": "SamyoungChem",
         "long_name": "SamYoung Chemical Co.,Ltd",
@@ -301,18 +289,6 @@
     },
     "004250.KS": {
         "short_name": "NPC",
-        "long_name": "NPC Co., Ltd.",
-        "summary": "NPC Co., Ltd. manufactures and sells plastic products in South Korea. The company's products include containers, pallets, chairs and desks, recycling bins, sheets, reversetap, and cups. The company was formerly known as National Plastic Co., Ltd. and changed its name to NPC Co., Ltd. in March 2010. NPC Co., Ltd. was founded in 1965 and is headquartered in Ansan, South Korea.",
-        "currency": "KRW",
-        "sector": "Consumer Cyclical",
-        "industry": "Packaging & Containers",
-        "exchange": "KSC",
-        "market": "kr_market",
-        "country": "South Korea",
-        "city": "Ansan-Si"
-    },
-    "004255.KS": {
-        "short_name": "NPC(1P)",
         "long_name": "NPC Co., Ltd.",
         "summary": "NPC Co., Ltd. manufactures and sells plastic products in South Korea. The company's products include containers, pallets, chairs and desks, recycling bins, sheets, reversetap, and cups. The company was formerly known as National Plastic Co., Ltd. and changed its name to NPC Co., Ltd. in March 2010. NPC Co., Ltd. was founded in 1965 and is headquartered in Ansan, South Korea.",
         "currency": "KRW",
@@ -410,7 +386,7 @@
     "005380.KS": {
         "short_name": "HyundaiMtr",
         "long_name": "Hyundai Motor Company",
-        "summary": "Hyundai Motor Company, together with its subsidiaries, manufactures and distributes motor vehicles and parts worldwide. It operates through Vehicle, Finance, and Others segments. The company offers cars under the i30 N, Veloster, Accent, Sonata, i30, Azera, Sonata Turbo, i40, i40 Sedan, Elantra, Elantra Sport, Accent 5DR, ix20, i20, i20 Coupe, Elite i20, Xcent, i10, Grand i10, and Eon names. It also provides SUVs under the New Santa Fe, Kona, Grand Santa Fe, Venue, Santa Fe, Palisade, Grand Santa Fe, Tucson, and Creta names; commercial vehicles under the H-1 and H-100 names; and eco vehicles under the IONIQ Plug-in Hybrid, IONIQ Electric, Sonata Plug-in-Hybrid, NEXO, KONA Electric, Sonata Hybrid, ix35 Fuel Cell, and IONIQ Hybrid names. In addition, the company offers trucks, buses, vans, special-CVs, and engines; vehicle financing, credit card processing, marketing, engineering, and insurance services; manufactures trains; and operates a football club. Further, it is involved in real estate development; research and development; and investment activities. Hyundai Motor Company has a strategic partnership with Rimac Automobili to develop electric vehicles; and partnership with Incheon International Airport Corporation. The company was founded in 1967 and is headquartered in Seoul, South Korea.",
+        "summary": "Hyundai Motor Company, together with its subsidiaries, manufactures and distributes motor vehicles and parts. It operates through Vehicle, Finance, and Others segments. The company offers cars under the Azera, Sonata, Veloster, Veloster N, i30 Fastback N, i30 N, i30, Elantra, Accent, i20, and i10 names; and SUVs under the Palisade, Santa Fe, Tucson, Creta, Kona, and Venue names. It also provides commercial vehicles under the H-1 and H-100 names; and eco vehicles under the IONIQ 5, NEXO, Santa Fe Hybrid/Plug-in Hybrid, Tucson Hybrid, KONA Electric, Elantra Hybrid, IONIQ Plug-in Hybrid, IONIQ Electric, IONIQ Electric, and i30 Hybrid names. In addition, the company offers trucks, buses, vans, and engines; vehicle financing, credit card processing, marketing, engineering, mobility, and insurance services; and train manufacturing services, as well as operates a football club. Further, it is involved in real estate development; research and development; and investment activities. The company was incorporated in 1967 and is headquartered in Seoul, South Korea.",
         "currency": "KRW",
         "sector": "Consumer Cyclical",
         "industry": "Auto Manufacturers",
@@ -422,7 +398,7 @@
     "005389.KS": {
         "short_name": "HyundaiMtr(3PB)",
         "long_name": "Hyundai Motor Company",
-        "summary": "Hyundai Motor Company, together with its subsidiaries, manufactures and distributes motor vehicles and parts worldwide. It operates through Vehicle, Finance, and Others segments. The company offers cars under the i30 N, Veloster, Accent, Sonata, i30, Azera, Sonata Turbo, i40, i40 Sedan, Elantra, Elantra Sport, Accent 5DR, ix20, i20, i20 Coupe, Elite i20, Xcent, i10, Grand i10, and Eon names. It also provides SUVs under the New Santa Fe, Kona, Grand Santa Fe, Venue, Santa Fe, Palisade, Grand Santa Fe, Tucson, and Creta names; commercial vehicles under the H-1 and H-100 names; and eco vehicles under the IONIQ Plug-in Hybrid, IONIQ Electric, Sonata Plug-in-Hybrid, NEXO, KONA Electric, Sonata Hybrid, ix35 Fuel Cell, and IONIQ Hybrid names. In addition, the company offers trucks, buses, vans, special-CVs, and engines; vehicle financing, credit card processing, marketing, engineering, and insurance services; manufactures trains; and operates a football club. Further, it is involved in real estate development; research and development; and investment activities. Hyundai Motor Company has a strategic partnership with Rimac Automobili to develop electric vehicles; and partnership with Incheon International Airport Corporation. The company was founded in 1967 and is headquartered in Seoul, South Korea.",
+        "summary": "Hyundai Motor Company, together with its subsidiaries, manufactures and distributes motor vehicles and parts. It operates through Vehicle, Finance, and Others segments. The company offers cars under the Azera, Sonata, Veloster, Veloster N, i30 Fastback N, i30 N, i30, Elantra, Accent, i20, and i10 names; and SUVs under the Palisade, Santa Fe, Tucson, Creta, Kona, and Venue names. It also provides commercial vehicles under the H-1 and H-100 names; and eco vehicles under the IONIQ 5, NEXO, Santa Fe Hybrid/Plug-in Hybrid, Tucson Hybrid, KONA Electric, Elantra Hybrid, IONIQ Plug-in Hybrid, IONIQ Electric, IONIQ Electric, and i30 Hybrid names. In addition, the company offers trucks, buses, vans, and engines; vehicle financing, credit card processing, marketing, engineering, mobility, and insurance services; and train manufacturing services, as well as operates a football club. Further, it is involved in real estate development; research and development; and investment activities. The company was incorporated in 1967 and is headquartered in Seoul, South Korea.",
         "currency": "KRW",
         "sector": "Consumer Cyclical",
         "industry": "Auto Manufacturers",
@@ -515,22 +491,10 @@
         "country": "South Korea",
         "city": "Anyang-Si"
     },
-    "007980.KS": {
-        "short_name": "PAN-PACIFIC",
-        "long_name": "Pan-Pacific Co., Ltd.",
-        "summary": "Pan-Pacific Co., Ltd. engages in the research and development, production, and sale of apparel and materials in South Korea, Indonesia, Vietnam, Myanmar, China, the United States, and internationally. It offers woven products, such as jackets, pants, sportswear, and outdoor clothing; light woven products, including women's top blouses and dresses; knit products comprising yoga and active wear products; and shirts. The company also provides warm and feather products under the Prauden brand; and polyester-based thermal insulation fiber filler under the Absolon and Syncloud brands. In addition, it offers bedding products under the Sofraum, Beontre, and Sheridan brand names; and food products, such as dry rice powder, puffed rice powder, and premix under the HAET BANG A brand, as well as acquires, operates, and manages real estate assets. Pan-Pacific Co., Ltd. was founded in 1972 and is headquartered in Seoul, South Korea.",
-        "currency": "KRW",
-        "sector": "Consumer Cyclical",
-        "industry": "Apparel Manufacturing",
-        "exchange": "KSC",
-        "market": "kr_market",
-        "country": "South Korea",
-        "city": "Seoul"
-    },
     "008500.KS": {
         "short_name": "IljeongInd",
-        "long_name": "IL Jeong Industrial Co., Ltd.",
-        "summary": "IL Jeong Industrial Co., Ltd. provides car seat fabrics to automobile makers in Korea. Its moquette, tricot, woven, plush jacquard, jersey, single knit, and headliner fabrics are used in car seat fabrics, head linings, door trims, arms rests, and sun visors. The company also provides upholstery fabrics that are used in sofas and chairs in hotel and homes. IL Jeong Industrial Co., Ltd. was founded in 1973 and is headquartered in Ansan, South Korea.",
+        "long_name": "Iljeong Industrial Co.,Ltd",
+        "summary": "Iljeong Industrial Co.Ltd. provides car seat fabrics to automobile makers in Korea. Its moquette, tricot, woven, plush jacquard, jersey, single knit, and headliner fabrics are used in car seat fabrics, head linings, door trims, arms rests, and sun visors. The company also provides upholstery fabrics that are used in sofas and chairs in hotel and homes. Iljeong Industrial Co.Ltd. was founded in 1973 and is headquartered in Ansan, South Korea.",
         "currency": "KRW",
         "sector": "Consumer Cyclical",
         "industry": "Textile Manufacturing",
@@ -563,29 +527,53 @@
         "country": "South Korea",
         "city": "Seoul"
     },
+    "008770.KS": {
+        "short_name": "HtlShilla",
+        "long_name": "Hotel Shilla Co.,Ltd",
+        "summary": "Hotel Shilla Co.,Ltd operates as a hospitality company. The company operates airport duty-free shops under the The Shilla Duty Free name, which offer various luxury brands in boutique items, fashion, jewelry, cosmetics, watches, etc., as well as an online duty-free shop and a guest lounge. It also operates hotels under the The Shilla Seoul and The Shilla Jeju names; and Hotel Shilla fitness center. Hotel Shilla Co.,Ltd is based in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Consumer Cyclical",
+        "industry": "Lodging",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "008775.KS": {
+        "short_name": "HtlShilla(1P)",
+        "long_name": "Hotel Shilla Co.,Ltd",
+        "summary": "Hotel Shilla Co.,Ltd operates as a hospitality company. The company operates airport duty-free shops under the The Shilla Duty Free name, which offer various luxury brands in boutique items, fashion, jewelry, cosmetics, watches, etc., as well as an online duty-free shop and a guest lounge. It also operates hotels under the The Shilla Seoul and The Shilla Jeju names; and Hotel Shilla fitness center. Hotel Shilla Co.,Ltd is based in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Consumer Cyclical",
+        "industry": "Lodging",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
     "008870.KS": {
         "short_name": "Kumbi",
         "long_name": "Kumbi Corporation",
-        "summary": "Kumbi Corporation manufactures and sells glass bottles, bottle caps, and cosmetics in South Korea. Its glass bottle business serves liquor, beverage, pharmaceutical, and cosmetic industries. The company was formerly known as Jin Ro Glass Co., Ltd. and changed its name to Kumbi Corporation in April 1992. Kumbi Corporation was founded in 1973 and is headquartered in Icheon, South Korea.",
+        "summary": "Kumbi Corporation manufactures and sells glass bottles, bottle caps, cosmetics, and plastic products in South Korea. The company was formerly known as Jin Ro Glass Co., Ltd. and changed its name to Kumbi Corporation in April 1992. Kumbi Corporation was founded in 1973 and is headquartered in Icheon, South Korea.",
         "currency": "KRW",
         "sector": "Consumer Cyclical",
         "industry": "Packaging & Containers",
         "exchange": "KSC",
         "market": "kr_market",
         "country": "South Korea",
-        "city": "Icheon"
+        "city": "Icheon-Si"
     },
     "009240.KS": {
         "short_name": "Hanssem",
         "long_name": "Hanssem Co., Ltd.",
-        "summary": "Hanssem Co., Ltd. operates as a full-service interior company in South Korea, the United States, China, and Japan. The company offers furniture, appliances, household accessories, fabric products, etc. for kitchen, bedroom, living room, and bathroom. It also provides package designs that coordinate interior items in furniture, lightings, fabrics, and living goods for space of bedroom, living room, children's room, kitchen, office room, and bathroom, as well as library and daily supplies. The company offers its products through direct stores, construction company's special sales, and kitchen-and-interior-specialized stores, as well as through online shopping malls and interior affiliated stores. It operates 12 large-scale flagship showrooms; 230 kitchen agency stores; 80 Rehaus agency stores; and 80 interior furniture agency stores. The company was founded in 1970 and is headquartered in Ansan-si, South Korea.",
+        "summary": "Hanssem Co., Ltd. operates as a full-service interior company in South Korea, the United States, China, and Japan. The company offers furniture, appliances, household accessories, fabric products, etc. for kitchen, bedroom, living room, and bathroom. It also provides package designs that coordinate interior items in furniture, lightings, fabrics, and living goods for space of bedroom, living room, children's room, kitchen, office room, and bathroom, as well as library and daily supplies. The company offers its products through direct stores, construction company's special sales, and kitchen-and-interior-specialized stores, as well as through online shopping malls and interior affiliated stores. It operates 12 stores; 450 re-house agencies; 200 Kitchenbach agencies; and 80 interior specialty agencies. The company was founded in 1970 and is based in Seoul, South Korea.",
         "currency": "KRW",
         "sector": "Consumer Cyclical",
         "industry": "Furnishings, Fixtures & Appliances",
         "exchange": "KSC",
         "market": "kr_market",
         "country": "South Korea",
-        "city": "Ansan-si"
+        "city": "Seoul"
     },
     "009270.KS": {
         "short_name": "Shinwon",
@@ -647,6 +635,18 @@
         "country": "South Korea",
         "city": "Gyeongju"
     },
+    "009970.KS": {
+        "short_name": "YoungoneHoldings",
+        "long_name": "Youngone Holdings Co., Ltd.",
+        "summary": "Youngone Holdings Co., Ltd. manufactures and sells apparel, shoes, handbags, sleeping bags, socks, and accessories in South Korea and internationally. It offers clothing products, such as outdoor apparel, sportswear, technical clothing, knitwear, sweaters, and casual wear; shoes, including sports shoes, casual shoes, safety shoes, sneakers, boots, and fishing shoes; mountain climbing, travel, casual, and business bags; and camping goods. The company was formerly known as Youngone Corp. and changed its name to Youngone Holdings Co., Ltd. in July 2001. Youngone Holdings Co., Ltd. was founded in 1974 and is based in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Consumer Cyclical",
+        "industry": "Leisure",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
     "010100.KS": {
         "short_name": "KorFlange",
         "long_name": "Korea Flange Co., Ltd",
@@ -674,7 +674,7 @@
     "010690.KS": {
         "short_name": "Hwashin",
         "long_name": "HWASHIN CO.,Ltd",
-        "summary": "Hwashin Co., Ltd manufactures and sells automobile chassis and body components. It offers chassis products, such as front and rear cross member type, front and rear lower arm, rear CTBA, rear trailing and assist arm, rear axle housing assembly, front upper arm, pedal, and fuel tank; and body parts comprising reinf side outer, fender apron and member, center and rear floor, cowl complete and cross bar, bumper rail, and sun roof reinf products. The company was formerly known as Hwashin Industrial Corporation and changed its name to Hwashin Co., Ltd in March 1995. Hwashin Co., Ltd was founded in 1969 and is headquartered in Yeongcheon, South Korea.",
+        "summary": "HWASHIN CO.,Ltd manufactures and sells automobile chassis and body components. It offers chassis products, such as front and rear cross member type, front and rear lower arm, rear CTBA, rear trailing and assist arm, rear axle housing assembly, front upper arm, pedal, and fuel tank; and body parts comprising reinf side outer, fender apron and member, center and rear floor, cowl complete and cross bar, bumper rail, and sun roof reinf products. The company was formerly known as Hwashin Industrial Corporation and changed its name to HWASHIN CO.,Ltd in March 1995. HWASHIN CO.,Ltd was founded in 1969 and is headquartered in Yeongcheon, South Korea.",
         "currency": "KRW",
         "sector": "Consumer Cyclical",
         "industry": "Auto Parts",
@@ -719,18 +719,6 @@
         "country": "South Korea",
         "city": "Seoul"
     },
-    "011330.KS": {
-        "short_name": "UNI CHEM",
-        "long_name": "Uni-Chem Co., Ltd.",
-        "summary": "Uni-Chem Co., Ltd. manufactures and sells leather products in South Korea. It offers fabrics for automobile seats and handbags. The company was formerly known as Shinjin Leather Industrial Co., Ltd. and changed its name to Uni-Chem Co., Ltd. in April 2000. The company was founded in 1976 and is headquartered in Ansan, South Korea.",
-        "currency": "KRW",
-        "sector": "Consumer Cyclical",
-        "industry": "Footwear & Accessories",
-        "exchange": "KSC",
-        "market": "kr_market",
-        "country": "South Korea",
-        "city": "Ansan-Si"
-    },
     "012280.KS": {
         "short_name": "YeonghwaMtl",
         "long_name": "Yeong Hwa Metal Co., Ltd.",
@@ -756,9 +744,9 @@
         "city": "Seoul"
     },
     "013520.KS": {
-        "short_name": "HS R&A",
-        "long_name": "Hwaseung R&A Co., Ltd.",
-        "summary": "Hwaseung R&A Co., Ltd. primarily produces and sells automobile parts worldwide. The company offers weather strip products, including front and rear glass molding products, hood weather strips, sun roof weather strips, glass run products, fixed weather strips, door opening weather strips, door seal and door drip weather strips, trunk lids, and inner and outer door belts. It also provides air conditioning, power steering return, fuel, radiator, brake vacuum, heater, fuel filler, power steering pressure, hydraulic brake, and intercooler hoses. In addition, the company trades in resources, steel products, and fabrics; develops compounds, including CMB, TPE, silicon, etc.; develops fine chemicals; and develops fashion and sports shoes. Hwaseung R&A Co., Ltd. was founded in 1953 and is based in Yangsan, South Korea.",
+        "short_name": "HS Corp",
+        "long_name": "Hwaseung Corporation Co.,Ltd.",
+        "summary": "Hwaseung Corporation Co., Ltd. engages in the in the manufacture and sale of industrial rubber products. The company is based in Yangsan, South Korea.",
         "currency": "KRW",
         "sector": "Consumer Cyclical",
         "industry": "Auto Parts",
@@ -766,6 +754,30 @@
         "market": "kr_market",
         "country": "South Korea",
         "city": "Yangsan-si"
+    },
+    "013890.KS": {
+        "short_name": "ZINUS",
+        "long_name": "Zinus, Inc",
+        "summary": "Zinus, Inc manufactures and sells mattresses, bedroom furniture, beds, bedding products, etc. It sells it products through stores and online channels. The company was founded in 1979 and is based in Seongnam-si, South Korea.",
+        "currency": "KRW",
+        "sector": "Consumer Cyclical",
+        "industry": "Furnishings, Fixtures & Appliances",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seongnam-si"
+    },
+    "014160.KS": {
+        "short_name": "DaeyoungPkg",
+        "long_name": "DAE YOUNG Packaging.Co., Ltd.",
+        "summary": "DAE YOUNG Packaging.Co., Ltd. manufactures and sells corrugated cardboards and boxes in South Korea. The company provides middle, reverse side, and surface base papers for corrugated fiber boards. It offers single and double faced; and double and triple wall corrugated fiber boards. DAE YOUNG Packaging.Co., Ltd. was founded in 1979 and is based in Ansan, South Korea.",
+        "currency": "KRW",
+        "sector": "Consumer Cyclical",
+        "industry": "Packaging & Containers",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Ansan"
     },
     "015230.KS": {
         "short_name": "DaechangForging",
@@ -786,6 +798,30 @@
         "currency": "KRW",
         "sector": "Consumer Cyclical",
         "industry": "Apparel Manufacturing",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "016450.KS": {
+        "short_name": "HansaeYes24Holdings",
+        "long_name": "Hansae Yes24 Holdings Co., Ltd",
+        "summary": "Hansae Yes24 Holdings Co., Ltd., through its subsidiaries, produces and sells fabrics in South Korea and internationally. It offers baby clothes under the Moimoln brand name; operates a kid sports multi play shop; operates an online bookstore; publishes books/textbooks; distributes cultural products, including music, DVD/Blu-ray, and gift products; offers ticket booking services; and provides digital contents, such as Web novels, light novels, and comics. The company was formerly known as Hansae Co. Ltd. and changed its name to Hansae Yes24 Holdings Co., Ltd. in 2009. Hansae Yes24 Holdings Co., Ltd. was founded in 1982 and is based in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Consumer Cyclical",
+        "industry": "Textile Manufacturing",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "016740.KS": {
+        "short_name": "DUAL",
+        "long_name": "DUAL Co., Ltd.",
+        "summary": "DUAL Co., Ltd. manufactures and sells automobile parts in South Korea and internationally. Its products comprise car fabrics, seats, and air bags. The company was founded in 1971 and is headquartered in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
         "exchange": "KSC",
         "market": "kr_market",
         "country": "South Korea",
@@ -913,11 +949,23 @@
     },
     "025750.KS": {
         "short_name": "HomeDeco",
-        "long_name": "HansolHomeDeco.Co.Ltd.",
-        "summary": "HansolHomeDeco.Co.Ltd. manufactures and distributes furniture components, interior materials, and other products in South Korea. The company offers furniture components, such as medium density fiberboards, low pressure melamine products, PET boards, and furniture doors; and SB floors, steel floors, reinforced floors, flooring products, door molding materials, wall materials, and sheet materials. It is also involved in the plantation business; production of steam energy using renewable energy; and provision of lumber products and saw dust. The company was formerly known as Jeonju Imsan Co., Ltd. and changed its name to HansolHomeDeco.Co.Ltd. in 2003. HansolHomeDeco.Co.Ltd. was founded in 1991 and is headquartered in Seoul, South Korea.",
+        "long_name": "Hansol Homedeco Co., Ltd.",
+        "summary": "Hansol Homedeco Co., Ltd. manufactures and distributes furniture components, interior materials, and other products in South Korea. The company offers furniture components, such as medium density fiberboards, low pressure melamine products, PET boards, furniture doors, SB floors, steel floors, reinforced floors, flooring products, door molding materials, wall materials, and sheet materials. It also engages in the plantation business; production of steam energy using renewable energy; and provision of lumber products and saw dust. The company was formerly known as Jeonju Imsan Co., Ltd. and changed its name to Hansol Homedeco Co., Ltd. in January 2003. Hansol Homedeco Co., Ltd. was incorporated in 1991 and is headquartered in Seoul, South Korea with additional office locations in Yeongnam, Daegu, and Honam. It has a factory location in Iksan, South Korea.",
         "currency": "KRW",
         "sector": "Consumer Cyclical",
         "industry": "Furnishings, Fixtures & Appliances",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "031430.KS": {
+        "short_name": "SHINSEGAE INTERNATIONAL",
+        "long_name": "Shinsegae International Co., Ltd.",
+        "summary": "Shinsegae International Co., Ltd. operates as a fashion retailer in South Korea. It offers fashion, beauty, and lifestyle brands. The company also designs, manufactures, and distributes fashion, beauty, and living products. It operates through a network of approximately 860 stores. The company was founded in 1979 and is based in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Consumer Cyclical",
+        "industry": "Apparel Retail",
         "exchange": "KSC",
         "market": "kr_market",
         "country": "South Korea",
@@ -1032,9 +1080,9 @@
         "city": "Seoul"
     },
     "064960.KS": {
-        "short_name": "S&T MOTIV",
-        "long_name": "S&T Motiv Co., Ltd.",
-        "summary": "S&T Motiv Co., Ltd. produces, develops, and sells products for defense and automotive industries in South Korea and internationally. It offers motors, engine/transmission components, electric/electronic products, chassis, airbags, power train parts, shock absorbers, semi conduct machinery components, die castings, and defense products, as well as suspension systems, wheels and tires, and knuckles. The company was formerly known as S&T Daewoo Co., Ltd. and changed its name to S&T Motiv Co., Ltd. in 2012. S&T Motiv Co., Ltd. was founded in 1981 and is headquartered in Busan, South Korea.",
+        "short_name": "SNT MOTIV",
+        "long_name": "SNT Motiv Co., Ltd.",
+        "summary": "SNT Motiv Co., Ltd. produces, develops, and sells products for defense and automotive industries in South Korea and internationally. It offers motors, engine/transmission components, electric/electronic products, chassis, airbags, power train parts, shock absorbers, semi conduct machinery components, die castings, and defense products, as well as suspension systems, wheels and tires, and knuckles. The company was formerly known as S&T Motiv Co., Ltd. and changed its name to SNT Motiv Co., Ltd. in February 2021. SNT Motiv Co., Ltd. was founded in 1981 and is headquartered in Busan, South Korea.",
         "currency": "KRW",
         "sector": "Consumer Cyclical",
         "industry": "Auto Parts",
@@ -1055,9 +1103,21 @@
         "country": "South Korea",
         "city": "Seoul"
     },
+    "069640.KS": {
+        "short_name": "HANSAEMK",
+        "long_name": "Hansaemk Co.,Ltd.",
+        "summary": "Hansaemk Co.,Ltd. manufactures and sells women's and men's casual clothes in South Korea and internationally. It sells its products under the PGA TOUR, LPGA, NBA, NBA KIDS, BUCKAROO, TBJ, and ANDEW brands. The company was formerly known as MK Trend Co., Ltd. Hansaemk Co.,Ltd. was founded in 1995 and is headquartered in Seoul, South Korea. Hansaemk Co.,Ltd. is a subsidiary of Hansae Yes24 Holdings Co., Ltd.",
+        "currency": "KRW",
+        "sector": "Consumer Cyclical",
+        "industry": "Apparel Manufacturing",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
     "069960.KS": {
         "short_name": "HYUNDAIDEPTST",
-        "long_name": "Hyundai Department Store Co. Ltd.",
+        "long_name": "Hyundai Department Store Co., Ltd.",
         "summary": "Hyundai Department Store Co.,Ltd operates various department stores located in Apgujeong-dong and Cheonho-dong, Gangdong District in South Korea. It also provides real estate agency services. The company was founded in 2002 and is headquartered in Seoul, South Korea.",
         "currency": "KRW",
         "sector": "Consumer Cyclical",
@@ -1082,7 +1142,7 @@
     "071840.KS": {
         "short_name": "LOTTE Himart",
         "long_name": "LOTTE Himart Co.,Ltd.",
-        "summary": "LOTTE Himart Co.,Ltd. primarily provides electronic products in South Korea and internationally. Its product categories include TVs, refrigerators, washers and dryers; Kitchen, Living, and Health Appliances; Seasonal household appliances; computers; digital, game, and sound products; cellphones; living and kitchen supplies; furniture and home decoration products; sports fashion and leisure products; office and stationery products; hobby, travel, and companion animal products; vehicle tools; toys and games; fashion products; and beauty products. It provides its products through specialty stores, as well as through Internet. LOTTE Himart Co.,Ltd. was formerly known as Hi-mart Co., Ltd. and changed its name to LOTTE Himart Co.,Ltd. in November 2012. The company was founded in 1987 and is based in Seoul, South Korea. LOTTE Himart Co., Ltd. is a subsidiary of Lotte Shopping Co., Ltd.",
+        "summary": "LOTTE Himart Co.,Ltd. retails in home appliances in South Korea. Its product categories include TVs, refrigerators, washers and dryers; home, beauty, and health appliances; seasonal appliances; computers; camera, game, and sound products; mobile phone; living and kitchen goods; furniture, and home d\u00c3\u00a9cor and care products; sports fashion and leisure products; office and stationery products; hobby, travel, and pet products; vehicles and tools; books and toys; fashion products; beauty products, such as makeup, perfume, accessories, and healthcare; and food products, comprising of sweets, snacks, water beverages, coffee, milk, instant food, sauce, and health/diet food. The company also offers home care services. It operates 466 LOTTE HIMART stores, as well as online store. LOTTE Himart Co.,Ltd. was formerly known as Hi-mart Co., Ltd. and changed its name to LOTTE Himart Co.,Ltd. in November 2012. The company was founded in 1987 and is headquartered in Seoul, South Korea. LOTTE Himart Co., Ltd. is a subsidiary of Lotte Shopping Co., Ltd.",
         "currency": "KRW",
         "sector": "Consumer Cyclical",
         "industry": "Specialty Retail",
@@ -1163,18 +1223,6 @@
         "country": "South Korea",
         "city": "Seoul"
     },
-    "084680.KS": {
-        "short_name": "E-WORLD",
-        "long_name": "E-World Co.,Ltd.",
-        "summary": "E-World Co.,Ltd. operates a theme park around Woobang Tower in Daegu City, South Korea. Its theme park offers special leisure programs in various seasons and festivals; and offers discounted tickets for students in vacation seasons. The company was formerly known as Woobangland Co., Ltd. and changed its name to E-World Co.,Ltd. in 2011. The company was founded in 2005 and is headquartered in Daegu, South Korea. E-World Co.,Ltd. is a subsidiary of Eland Park Limited.",
-        "currency": "KRW",
-        "sector": "Consumer Cyclical",
-        "industry": "Leisure",
-        "exchange": "KSC",
-        "market": "kr_market",
-        "country": "South Korea",
-        "city": "Daegu"
-    },
     "084870.KS": {
         "short_name": "TBH GLOBAL",
         "long_name": "TBH Global Co., Ltd",
@@ -1222,6 +1270,18 @@
         "market": "kr_market",
         "country": "South Korea",
         "city": "Daegu"
+    },
+    "090370.KS": {
+        "short_name": "METALABS",
+        "long_name": "Metalabs Co., Ltd.",
+        "summary": "Metalabs Co., Ltd. primarily provides clothing in South Korea. It also manufactures and distributes prescription drugs, medical devices, and masks; develops peptide-based bio products; offers medical management services; and distributes cosmetics, as well as operates dating applications. The company was formerly known as Avista Inc. and changed its name to Metalabs Co., Ltd. in April 2018. Metalabs Co., Ltd. was founded in 2000 and is based in Seoul, South Korea.",
+        "currency": "KRW",
+        "sector": "Consumer Cyclical",
+        "industry": "Apparel Manufacturing",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
     },
     "092200.KS": {
         "short_name": "DIC",
@@ -1302,6 +1362,18 @@
         "currency": "KRW",
         "sector": "Consumer Cyclical",
         "industry": "Textile Manufacturing",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "111770.KS": {
+        "short_name": "Youngone Corp",
+        "long_name": "Youngone Corporation",
+        "summary": "Youngone Corporation engages in the manufacture and sale of clothing, shoes, bags, sleeping bags, and socks worldwide. The company offers technical apparels, knitwear, and sweaters, as well as casual wears, including outdoor apparels and sportswear; sports shoes, casual shoes, safety shoes, sneakers, winter boots, and fishing shoes; and mountaineering, travel, casual, and business bags, as well as camping supplies. It is also involved in the distribution of lifestyle outdoor products of TAKHI brand. The company was founded in 1974 and is headquartered in Seoul, South Korea. Youngone Corporation is a subsidiary of Youngone Holdings Co., Ltd.",
+        "currency": "KRW",
+        "sector": "Consumer Cyclical",
+        "industry": "Apparel Manufacturing",
         "exchange": "KSC",
         "market": "kr_market",
         "country": "South Korea",
@@ -1463,10 +1535,46 @@
         "country": "South Korea",
         "city": "Osan-si"
     },
+    "378850.KS": {
+        "short_name": "HS R&A",
+        "long_name": "Hwaseung R&A Co., Ltd.",
+        "summary": "Hwaseung R&A Co., Ltd. primarily produces and sells automobile parts worldwide. The company offers weather strip products, including front and rear glass molding products, hood weather strips, sun roof weather strips, glass run products, fixed weather strips, door opening weather strips, door seal and door drip weather strips, trunk lids, and inner and outer door belts. It also provides air conditioning, power steering return, fuel, radiator, brake vacuum, heater, fuel filler, power steering pressure, hydraulic brake, and intercooler hoses. Hwaseung R&A Co., Ltd. is based in Yangsan, South Korea.",
+        "currency": "KRW",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "city": "Yangsan"
+    },
+    "788.F": {
+        "short_name": "COUPANG INC.CL.A DL-,0001",
+        "long_name": "Coupang, Inc.",
+        "summary": "Coupang, Inc. owns and operates in e-commerce business through its mobile applications and Internet websites primarily in South Korea. It sells various products and services in the categories of home goods and d\u00c3\u00a9cor products, apparel, beauty products, fresh food and groceries, sporting goods, electronics, and everyday consumables, as well as travel, and restaurant order and delivery services. The company was founded in 2010 and is based in Seoul, South Korea.",
+        "currency": "EUR",
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
+    "CPNG": {
+        "short_name": "Coupang, Inc.",
+        "long_name": "Coupang, Inc.",
+        "summary": "Coupang, Inc. owns and operates in e-commerce business through its mobile applications and Internet websites primarily in South Korea. It sells various products and services in the categories of home goods and d\u00c3\u00a9cor products, apparel, beauty products, fresh food and groceries, sporting goods, electronics, and everyday consumables, as well as travel, and restaurant order and delivery services. The company was founded in 2010 and is based in Seoul, South Korea.",
+        "currency": "USD",
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "South Korea",
+        "city": "Seoul"
+    },
     "HYMTF": {
         "short_name": "HYUNDAI MOTOR CO",
         "long_name": "Hyundai Motor Company",
-        "summary": "Hyundai Motor Company, together with its subsidiaries, manufactures and distributes motor vehicles and parts worldwide. It operates through Vehicle, Finance, and Others segments. The company offers cars under the i30 N, Veloster, Accent, Sonata, i30, Azera, Sonata Turbo, i40, i40 Sedan, Elantra, Elantra Sport, Accent 5DR, ix20, i20, i20 Coupe, Elite i20, Xcent, i10, Grand i10, and Eon names. It also provides SUVs under the New Santa Fe, Kona, Grand Santa Fe, Venue, Santa Fe, Palisade, Grand Santa Fe, Tucson, and Creta names; commercial vehicles under the H-1 and H-100 names; and eco vehicles under the IONIQ Plug-in Hybrid, IONIQ Electric, Sonata Plug-in-Hybrid, NEXO, KONA Electric, Sonata Hybrid, ix35 Fuel Cell, and IONIQ Hybrid names. In addition, the company offers trucks, buses, vans, special-CVs, and engines; vehicle financing, credit card processing, marketing, engineering, and insurance services; manufactures trains; and operates a football club. Further, it is involved in real estate development; research and development; and investment activities. Hyundai Motor Company has a strategic partnership with Rimac Automobili to develop electric vehicles; and partnership with Incheon International Airport Corporation. The company was founded in 1967 and is headquartered in Seoul, South Korea.",
+        "summary": "Hyundai Motor Company, together with its subsidiaries, manufactures and distributes motor vehicles and parts. It operates through Vehicle, Finance, and Others segments. The company offers cars under the Azera, Sonata, Veloster, Veloster N, i30 Fastback N, i30 N, i30, Elantra, Accent, i20, and i10 names; and SUVs under the Palisade, Santa Fe, Tucson, Creta, Kona, and Venue names. It also provides commercial vehicles under the H-1 and H-100 names; and eco vehicles under the IONIQ 5, NEXO, Santa Fe Hybrid/Plug-in Hybrid, Tucson Hybrid, KONA Electric, Elantra Hybrid, IONIQ Plug-in Hybrid, IONIQ Electric, IONIQ Electric, and i30 Hybrid names. In addition, the company offers trucks, buses, vans, and engines; vehicle financing, credit card processing, marketing, engineering, mobility, and insurance services; and train manufacturing services, as well as operates a football club. Further, it is involved in real estate development; research and development; and investment activities. The company was incorporated in 1967 and is headquartered in Seoul, South Korea.",
         "currency": "USD",
         "sector": "Consumer Cyclical",
         "industry": "Auto Manufacturers",
@@ -1478,7 +1586,7 @@
     "HYU.F": {
         "short_name": "HYUNDAI MOT.0,5N.VTG GDRS",
         "long_name": "Hyundai Motor Company",
-        "summary": "Hyundai Motor Company, together with its subsidiaries, manufactures and distributes motor vehicles and parts worldwide. It operates through Vehicle, Finance, and Others segments. The company offers cars under the i30 N, Veloster, Accent, Sonata, i30, Azera, Sonata Turbo, i40, i40 Sedan, Elantra, Elantra Sport, Accent 5DR, ix20, i20, i20 Coupe, Elite i20, Xcent, i10, Grand i10, and Eon names. It also provides SUVs under the New Santa Fe, Kona, Grand Santa Fe, Venue, Santa Fe, Palisade, Grand Santa Fe, Tucson, and Creta names; commercial vehicles under the H-1 and H-100 names; and eco vehicles under the IONIQ Plug-in Hybrid, IONIQ Electric, Sonata Plug-in-Hybrid, NEXO, KONA Electric, Sonata Hybrid, ix35 Fuel Cell, and IONIQ Hybrid names. In addition, the company offers trucks, buses, vans, special-CVs, and engines; vehicle financing, credit card processing, marketing, engineering, and insurance services; manufactures trains; and operates a football club. Further, it is involved in real estate development; research and development; and investment activities. Hyundai Motor Company has a strategic partnership with Rimac Automobili to develop electric vehicles; and partnership with Incheon International Airport Corporation. The company was founded in 1967 and is headquartered in Seoul, South Korea.",
+        "summary": "Hyundai Motor Company, together with its subsidiaries, manufactures and distributes motor vehicles and parts. It operates through Vehicle, Finance, and Others segments. The company offers cars under the Azera, Sonata, Veloster, Veloster N, i30 Fastback N, i30 N, i30, Elantra, Accent, i20, and i10 names; and SUVs under the Palisade, Santa Fe, Tucson, Creta, Kona, and Venue names. It also provides commercial vehicles under the H-1 and H-100 names; and eco vehicles under the IONIQ 5, NEXO, Santa Fe Hybrid/Plug-in Hybrid, Tucson Hybrid, KONA Electric, Elantra Hybrid, IONIQ Plug-in Hybrid, IONIQ Electric, IONIQ Electric, and i30 Hybrid names. In addition, the company offers trucks, buses, vans, and engines; vehicle financing, credit card processing, marketing, engineering, mobility, and insurance services; and train manufacturing services, as well as operates a football club. Further, it is involved in real estate development; research and development; and investment activities. The company was incorporated in 1967 and is headquartered in Seoul, South Korea.",
         "currency": "EUR",
         "sector": "Consumer Cyclical",
         "industry": "Auto Manufacturers",

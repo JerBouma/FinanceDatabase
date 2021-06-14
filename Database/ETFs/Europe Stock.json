@@ -53,20 +53,10 @@
         "short_name": "Xtrackers Eurozone Equity ETF",
         "long_name": "Xtrackers Eurozone Equity ETF",
         "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the performance, before fees and expenses, of the NASDAQ Eurozone Large Mid Cap Index (the \"underlying index\").\n The fund will invest at least 80% of its total assets (but typically far more) in component securities (including depositary receipts in respect of such securities) of the underlying index. The underlying index is designed to track the performance of equity securities of large- and mid-capitalization companies based in the countries in the Economic and Monetary Union (the \"EMU\" or \"Eurozone\") of the European Union (\"EU\"). The fund is non-diversified.",
+        "summary": "The investment seeks investment results that correspond generally to the performance, before fees and expenses, of the NASDAQ Eurozone Large Mid Cap Index (the \"underlying index\").\n The fund will invest at least 80% of its total assets (but typically far more) in component securities (including depositary receipts in respect of such securities) of the underlying index. The underlying index is designed to track the performance of equity securities of large- and mid-capitalization companies based in the countries in the Economic and Monetary Union (the \"EMU\" or \"Eurozone\") of the European Union (\"EU\").",
         "category": "Europe Stock",
         "family": "Xtrackers",
         "exchange": "BTS",
-        "market": "us_market"
-    },
-    "EUSC": {
-        "short_name": "WisdomTree Europe Hedged SmallC",
-        "long_name": "WisdomTree Europe Hedged SmallCap Equity Fund",
-        "currency": "USD",
-        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree Europe Hedged SmallCap Equity Index.\n Under normal circumstances, at least 80% of the fund&#39;s total assets will be invested in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a dividend weighted index designed to provide exposure to small cap equity securities within Europe, while at the same time neutralizing exposure to fluctuations between the value of the euro and the U.S. dollar. The fund is non-diversified.",
-        "category": "Europe Stock",
-        "family": "WisdomTree",
-        "exchange": "PCX",
         "market": "us_market"
     },
     "EZU": {
@@ -89,16 +79,6 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "FEP": {
-        "short_name": "First Trust Europe AlphaDEX Fun",
-        "long_name": "First Trust Europe AlphaDEX Fund",
-        "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the NASDAQ AlphaDEX\u00c2\u00ae Europe Index (the \"index\").\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks, depositary receipts, real estate investment trusts (\"REITs\") and preferred shares that comprise the index. The index is designed to select stocks from the NASDAQ Europe Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
-        "category": "Europe Stock",
-        "family": "First Trust",
-        "exchange": "NGM",
-        "market": "us_market"
-    },
     "FEUL": {
         "short_name": "Credit Suisse FI Enhanced Europ",
         "long_name": "Credit Suisse FI Enhanced Europe 50 Exchange Traded Notes (ETNs)",
@@ -109,16 +89,6 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "FEUZ": {
-        "short_name": "First Trust Eurozone AlphaDEX E",
-        "long_name": "First Trust Eurozone AlphaDEX ETF",
-        "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield of an index called the NASDAQ\u00c2\u00ae AlphaDEX\u00c2\u00ae Eurozone Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks, depositary receipts, real estate investment trusts (\"REITs\") and preferred shares that comprise the index. The index is designed to select stocks from the NASDAQ Eurozone Index that may generate positive alpha, or risk-adjusted returns, relative to traditional passive-style indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
-        "category": "Europe Stock",
-        "family": "First Trust",
-        "exchange": "NGM",
-        "market": "us_market"
-    },
     "FEZ": {
         "short_name": "SPDR DJ Euro STOXX 50 Etf",
         "long_name": "SPDR EURO STOXX 50 ETF",
@@ -126,16 +96,6 @@
         "summary": "The investment seeks investment results that, before fees and expenses, correspond generally to the total return performance of the EURO STOXX 50\u00c2\u00ae Index.\n The fund employs a sampling strategy, which means that the fund is not required to purchase all of the securities represented in the index. It generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is designed to represent the performance of some of the largest companies across components of the 19 EURO STOXX Supersector Indexes. The EURO STOXX Supersector Indexes are subsets of the EURO STOXX Index.",
         "category": "Europe Stock",
         "family": "SPDR State Street Global Advisors",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "FFEU": {
-        "short_name": "Barclays ETN  FI Enhanced Europ",
-        "long_name": "Barclays ETN+ FI Enhanced Europe 50 ETN Series C",
-        "currency": "USD",
-        "summary": "The investment seeks return linked to a quarterly rebalanced leveraged participation in the performance of the STOXX Europe 50\u00c2\u00ae USD (Gross Return) Index (the \u00e2\u0080\u009cindex\u00e2\u0080\u009d).\n At inception the ETN is designed to target two times the performance of the index. A quarterly rebalancing event or a loss rebalancing event will aim to reset the leveraged exposure to the index to approximately two. The index is composed of 50 European blue-chip companies selected from within the STOXX Europe 600 Index.",
-        "category": "Europe Stock",
-        "family": "Milleis Investissements Funds",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -156,7 +116,47 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the IPOX\u00c2\u00ae 100 Europe Index (the \"index\").\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and depositary receipts that comprise the index. The index seeks to measure the performance of the equity securities of the 100 largest and typically most liquid initial public offerings (\"IPOs\") (including spin-offs and equity carve-outs) of companies that are economically tied to Europe. The fund is non-diversified.",
         "category": "Europe Stock",
         "family": "First Trust",
-        "exchange": "NGM",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "GSEU": {
+        "short_name": "Goldman Sachs ActiveBeta Europe",
+        "long_name": "Goldman Sachs ActiveBeta Europe Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the Goldman Sachs ActiveBeta\u00c2\u00ae Europe Equity Index (the \"index\").\n The index is designed to deliver exposure to equity securities of developed markets issuers in Europe. The fund seeks to achieve its investment objective by investing at least 80% of its assets (exclusive of collateral held from securities lending) in securities included in its underlying index, in depositary receipts representing securities included in its underlying index and in underlying stocks in respect of depositary receipts included in its underlying index.",
+        "category": "Europe Stock",
+        "family": "Goldman Sachs",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "HEZU": {
+        "short_name": "iShares Currency Hedged MSCI Eu",
+        "long_name": "iShares Currency Hedged MSCI Eurozone ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI EMU 100% Hedged to USD Index composed of large- and mid-capitalization equities from developed market countries which use the euro as their official currency while mitigating exposure to fluctuations between the value of the euro and the U.S. dollar.\n The fund will invest at least 80% of its assets in the component securities and other instruments of the index and in investments that have economic characteristics that are substantially identical to the component securities of the index and may invest up to 20% of its assets in certain futures, options and swap contracts, cash and cash equivalents.",
+        "category": "Europe Stock",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IEUS": {
+        "short_name": "iShares MSCI Europe Small-Cap E",
+        "long_name": "iShares MSCI Europe Small-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI Europe Small Cap Index composed of small-capitalization developed market equities in Europe.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is a free float-adjusted, market capitalization-weighted index that captures small-capitalization representation across the 15 developed market countries in Europe.",
+        "category": "Europe Stock",
+        "family": "iShares",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "IEV": {
+        "short_name": "iShares Europe ETF",
+        "long_name": "iShares Europe ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the S&P Europe 350TM, which measures the performance of the stocks of leading companies in the following countries: Austria, Belgium, Denmark, Finland, France, Germany, Ireland, Italy, Luxembourg, the Netherlands, Norway, Portugal, Spain, Sweden, Switzerland and the United Kingdom.\n The fund generally invests at least 90% of its assets in securities of the index and in depositary receipts representing securities of the index. It may invest the remainder of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the index.",
+        "category": "Europe Stock",
+        "family": "iShares",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "OEUR": {
@@ -167,6 +167,16 @@
         "category": "Europe Stock",
         "family": "O&#39;Shares Investments",
         "exchange": "BTS",
+        "market": "us_market"
+    },
+    "SMEZ": {
+        "short_name": "SPDR EURO STOXX Small Cap ETF",
+        "long_name": "SPDR EURO STOXX Small Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the EURO STOXX Small Index that tracks the performance of small capitalization Eurozone equity securities.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in depositary receipts (including ADRs or GDRs) based on securities comprising the index. The index is designed to provide a representation of small companies across the Eurozone.",
+        "category": "Europe Stock",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "SPEU": {

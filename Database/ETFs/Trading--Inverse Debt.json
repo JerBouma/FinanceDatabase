@@ -1,14 +1,4 @@
 {
-    "BTYS": {
-        "short_name": "iPath Series B US Treasury 10-y",
-        "long_name": "iPath Series B US Treasury 10-year Bear ETN",
-        "currency": "USD",
-        "summary": "The investment seeks to inversely link to the performance of the Barclays 10Y US Treasury Futures Targeted Exposure Index\u00e2\u0084\u00a2 (the \"index\") that Barclays Bank PLC may issue from time to time.\n The index seeks to produce returns that track movements in response to an increase or decrease, as applicable, in the yields available to investors purchasing 10-year U.S. Treasury notes (\"10-year Treasury notes\").",
-        "category": "Trading--Inverse Debt",
-        "family": "Barclays",
-        "exchange": "BTS",
-        "market": "us_market"
-    },
     "DFVS": {
         "short_name": "iPath US Treasury 5 Year Bear E",
         "long_name": "iPath US Treasury 5-year Bear ETN",
@@ -17,6 +7,16 @@
         "category": "Trading--Inverse Debt",
         "family": "Milleis Investissements Funds",
         "exchange": "BTS",
+        "market": "us_market"
+    },
+    "PST": {
+        "short_name": "ProShares UltraShort Lehman 7-1",
+        "long_name": "ProShares UltraShort 7-10 Year Treasury",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results that correspond to two times the inverse (-2x) of the daily performance of the ICE U.S. Treasury 7-10 Year Bond Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index includes publicly-issued U.S. Treasury securities that have a remaining maturity of greater than or equal to seven years and less than or equal to ten years and have $300 million or more of outstanding face value, excluding amounts held by the Federal Reserve. The fund is non-diversified.",
+        "category": "Trading--Inverse Debt",
+        "family": "ProShares",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "SJB": {
@@ -49,6 +49,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "TBX": {
+        "short_name": "ProShares Short 7 10 Year Treas",
+        "long_name": "ProShares Short 7-10 Year Treasury",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results that correspond to the inverse (-1x) of the daily performance of the ICE U.S. Treasury 7-10 Year Bond Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index includes publicly- issued U.S. Treasury securities that have a remaining maturity of greater than or equal to seven years and less than or equal to ten years and have $300 million or more of outstanding face value, excluding amounts held by the Federal Reserve. The fund is non-diversified.",
+        "category": "Trading--Inverse Debt",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "TMV": {
         "short_name": "Direxion Daily 20-Year Treasury",
         "long_name": "Direxion Daily 20+ Year Treasury Bear 3X Shares",
@@ -59,11 +69,21 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "TTT": {
+        "short_name": "ProShares UltraPro Short 20 Yea",
+        "long_name": "ProShares UltraPro Short 20+ Year Treasury",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to three times the inverse (-3x) of the daily performance of the ICE U.S. Treasury 20+ Year Bond Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index includes publicly- issued U.S. Treasury securities that have a remaining maturity greater than or equal to twenty years and have $300 million or more of outstanding face value, excluding amounts held by the Federal Reserve. The fund is non-diversified.",
+        "category": "Trading--Inverse Debt",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "TYO": {
         "short_name": "Direxion Daily 10-Yr Treasury B",
         "long_name": "Direxion Daily 7-10 Year Treasury Bear 3X Shares",
         "currency": "USD",
-        "summary": "The investment seeks daily investment results before fees and expenses of 300% of the inverse (or opposite) of the daily performance of the ICE U.S. Treasury 7-10 Year Bond Index.\n The fund invests in swap agreements, futures contracts, short positions or other financial instruments that, in combination, provide inverse or short leveraged exposure to the index equal to at least 80% of the fund&#39;s net assets (plus borrowing for investment purposes). The index is a market value weighted index that includes publicly issued U.S. Treasury securities that have a remaining maturity of greater than seven years and less than or equal to ten years. It is non-diversified.",
+        "summary": "The investment seeks daily investment results before fees and expenses of 300% of the inverse (or opposite) of the daily performance of the ICE U.S. Treasury 7-10 Year Bond Index.\n The fund invests in swap agreements, futures contracts, short positions or other financial instruments that, in combination, provide inverse or short leveraged exposure to the index equal to at least 80% of the fund&#39;s net assets (plus borrowing for investment purposes). The index is a market value weighted index that includes publicly issued U.S. Treasury securities that have a remaining maturity of greater than or equal to seven years and less than ten years. It is non-diversified.",
         "category": "Trading--Inverse Debt",
         "family": "Direxion Funds",
         "exchange": "PCX",

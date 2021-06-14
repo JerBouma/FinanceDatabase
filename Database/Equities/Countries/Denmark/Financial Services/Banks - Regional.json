@@ -2,7 +2,7 @@
     "24V.F": {
         "short_name": "VESTJYSK BANK NAM.  DK 1",
         "long_name": "Vestjysk Bank A/S",
-        "summary": "Vestjysk Bank A/S provides banking products and services for retail and business customers in Jutland, Denmark. The company operates in four business areas: Business, Retail, Markets, and Agricultural Centre. It accepts deposits; and provides lending and financing for agriculture, fisheries, real estate, and small and medium-sized enterprises, as well as engages in project financing activities. The company is based in Lemvig, Denmark.",
+        "summary": "Vestjysk Bank A/S provides banking products and services for retail and business customers in Jutland, Denmark. The company operates in four business areas: Business, Retail, Markets, and Agriculture. It accepts deposits; and provides lending and financing for agriculture, fisheries, real estate, and small and medium-sized enterprises.  The company also engages in project financing activities. The company is based in Lemvig, Denmark.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -14,7 +14,7 @@
     "BNORDIK-CSE.CO": {
         "short_name": "BankNordik P/F",
         "long_name": "P/F BankNordik",
-        "summary": "P/F BankNordik, together with its subsidiaries, provides various banking products and services for individual and corporate customers in the Faroe Islands, Denmark, and Greenland. The company operates in two segments, Banking and Non-Life Insurance. It provides personal and corporate banking services; a range of property and casualty insurance products under the Trygd brand, and life insurance products under NordikL\u00c3\u00adv brand; and real estate agency services under the Skyn brand. The company operates through a network of 19 banking branches. P/F BankNordik is headquartered in T\u00c3\u00b3rshavn, Denmark.",
+        "summary": "P/F BankNordik, together with its subsidiaries, provides various banking products and services for individual and corporate customers in the Faroe Islands and Greenland. The company operates in two segments, Banking and Non-Life Insurance. It provides personal and corporate banking services; a range of property and casualty insurance products under the Trygd brand, and life insurance products under NordikL\u00c3\u00adv brand; and real estate agency services under the Skyn brand. The company operates through a network of six branches. P/F BankNordik is headquartered in T\u00c3\u00b3rshavn, Denmark.",
         "currency": "DKK",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -35,10 +35,22 @@
         "country": "Denmark",
         "city": "Tjele"
     },
+    "DANS.VI": {
+        "short_name": "DANSKE BANK AS",
+        "long_name": "Danske Bank A/S",
+        "summary": "Danske Bank A/S provides various banking products and services to small and medium-sized businesses, corporate, institutional, and personal customers. The company offers daily banking, home financing, investment, and retirement planning solutions; strategic advisory services; leasing solutions; and financing, financial market, general banking, and corporate finance advisory services, as well as financial solutions and products in the areas of capital markets, fixed income and currencies, and transaction banking and investor services. It also provides wealth and asset management, pension savings, and insurance solutions, including life, health, and accident; and mobile banking services. In addition, the company provides mortgage finance and real-estate brokerage services, as well as trades in fixed income products, foreign exchange, and equities. It has operations in Denmark, Finland, Sweden, Norway, the United Kingdom, Ireland, Baltics, Germany, and Poland. Danske Bank A/S was founded in 1871 and is headquartered in Copenhagen, Denmark.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "VIE",
+        "market": "at_market",
+        "country": "Denmark",
+        "city": "Copenhagen"
+    },
     "DANSKE.CO": {
         "short_name": "Danske Bank A/S",
         "long_name": "Danske Bank A/S",
-        "summary": "Danske Bank A/S provides various banking products and services to small and medium-sized businesses; and corporate, institutional, and personal customers. It operates through Banking DK, Banking Nordic, Corporates and Institutions, Wealth Management, and Northern Ireland segments. The company offers daily banking, home financing, investment, and retirement planning solutions; strategic advisory services; leasing solutions; and financing, financial market, general banking, and corporate finance advisory services, as well as financial solutions and products in the areas of capital markets, fixed income and currencies, and transaction banking and investor services. It also provides wealth and asset management, pension savings, and insurance solutions covering life, health, and accident; and mobile banking services. In addition, the company provides mortgage finance and real-estate brokerage, as well as trades in fixed income products, foreign exchange, and equities. It has operations in Denmark, Finland, Sweden, Norway, the United Kingdom, Ireland, Estonia, Latvia, Lithuania, Luxembourg, Russia, Germany, Poland, the United States, India, and China. Danske Bank A/S was founded in 1871 and is headquartered in Copenhagen, Denmark.",
+        "summary": "Danske Bank A/S provides various banking products and services to small and medium-sized businesses, corporate, institutional, and personal customers. The company offers daily banking, home financing, investment, and retirement planning solutions; strategic advisory services; leasing solutions; and financing, financial market, general banking, and corporate finance advisory services, as well as financial solutions and products in the areas of capital markets, fixed income and currencies, and transaction banking and investor services. It also provides wealth and asset management, pension savings, and insurance solutions, including life, health, and accident; and mobile banking services. In addition, the company provides mortgage finance and real-estate brokerage services, as well as trades in fixed income products, foreign exchange, and equities. It has operations in Denmark, Finland, Sweden, Norway, the United Kingdom, Ireland, Baltics, Germany, and Poland. Danske Bank A/S was founded in 1871 and is headquartered in Copenhagen, Denmark.",
         "currency": "DKK",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -46,18 +58,6 @@
         "market": "dk_market",
         "country": "Denmark",
         "city": "Copenhagen"
-    },
-    "DJS.CO": {
-        "short_name": "Den Jyske Sparekasse A/S",
-        "long_name": "Den Jyske Sparekasse A/S",
-        "summary": "Den Jyske Sparekasse A/S operates as a savings bank. The company offers savings accounts; car, housing, and other loans; and pension/wealth, insurance, investment, payment, financing, and risk management services. It serves private customers, and small and medium-sized businesses. The company operates through a network of 19 branches. Den Jyske Sparekasse A/S was founded in 1872 and is headquartered in Grindsted, Denmark.",
-        "currency": "DKK",
-        "sector": "Financial Services",
-        "industry": "Banks - Regional",
-        "exchange": "CPH",
-        "market": "dk_market",
-        "country": "Denmark",
-        "city": "Grindsted"
     },
     "DJUR.CO": {
         "short_name": "Djurslands Bank A/S",
@@ -74,7 +74,7 @@
     "DNKEY": {
         "short_name": "DANSKE BANK A/S",
         "long_name": "Danske Bank A/S",
-        "summary": "Danske Bank A/S provides various banking products and services to small and medium-sized businesses; and corporate, institutional, and personal customers. It operates through Banking DK, Banking Nordic, Corporates and Institutions, Wealth Management, and Northern Ireland segments. The company offers daily banking, home financing, investment, and retirement planning solutions; strategic advisory services; leasing solutions; and financing, financial market, general banking, and corporate finance advisory services, as well as financial solutions and products in the areas of capital markets, fixed income and currencies, and transaction banking and investor services. It also provides wealth and asset management, pension savings, and insurance solutions covering life, health, and accident; and mobile banking services. In addition, the company provides mortgage finance and real-estate brokerage, as well as trades in fixed income products, foreign exchange, and equities. It has operations in Denmark, Finland, Sweden, Norway, the United Kingdom, Ireland, Estonia, Latvia, Lithuania, Luxembourg, Russia, Germany, Poland, the United States, India, and China. Danske Bank A/S was founded in 1871 and is headquartered in Copenhagen, Denmark.",
+        "summary": "Danske Bank A/S provides various banking products and services to small and medium-sized businesses, corporate, institutional, and personal customers. The company offers daily banking, home financing, investment, and retirement planning solutions; strategic advisory services; leasing solutions; and financing, financial market, general banking, and corporate finance advisory services, as well as financial solutions and products in the areas of capital markets, fixed income and currencies, and transaction banking and investor services. It also provides wealth and asset management, pension savings, and insurance solutions, including life, health, and accident; and mobile banking services. In addition, the company provides mortgage finance and real-estate brokerage services, as well as trades in fixed income products, foreign exchange, and equities. It has operations in Denmark, Finland, Sweden, Norway, the United Kingdom, Ireland, Baltics, Germany, and Poland. Danske Bank A/S was founded in 1871 and is headquartered in Copenhagen, Denmark.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -86,7 +86,7 @@
     "DNSKF": {
         "short_name": "DANSKE BANK A/S",
         "long_name": "Danske Bank A/S",
-        "summary": "Danske Bank A/S provides various banking products and services to small and medium-sized businesses; and corporate, institutional, and personal customers. It operates through Banking DK, Banking Nordic, Corporates and Institutions, Wealth Management, and Northern Ireland segments. The company offers daily banking, home financing, investment, and retirement planning solutions; strategic advisory services; leasing solutions; and financing, financial market, general banking, and corporate finance advisory services, as well as financial solutions and products in the areas of capital markets, fixed income and currencies, and transaction banking and investor services. It also provides wealth and asset management, pension savings, and insurance solutions covering life, health, and accident; and mobile banking services. In addition, the company provides mortgage finance and real-estate brokerage, as well as trades in fixed income products, foreign exchange, and equities. It has operations in Denmark, Finland, Sweden, Norway, the United Kingdom, Ireland, Estonia, Latvia, Lithuania, Luxembourg, Russia, Germany, Poland, the United States, India, and China. Danske Bank A/S was founded in 1871 and is headquartered in Copenhagen, Denmark.",
+        "summary": "Danske Bank A/S provides various banking products and services to small and medium-sized businesses, corporate, institutional, and personal customers. The company offers daily banking, home financing, investment, and retirement planning solutions; strategic advisory services; leasing solutions; and financing, financial market, general banking, and corporate finance advisory services, as well as financial solutions and products in the areas of capital markets, fixed income and currencies, and transaction banking and investor services. It also provides wealth and asset management, pension savings, and insurance solutions, including life, health, and accident; and mobile banking services. In addition, the company provides mortgage finance and real-estate brokerage services, as well as trades in fixed income products, foreign exchange, and equities. It has operations in Denmark, Finland, Sweden, Norway, the United Kingdom, Ireland, Baltics, Germany, and Poland. Danske Bank A/S was founded in 1871 and is headquartered in Copenhagen, Denmark.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -98,7 +98,7 @@
     "DSN.F": {
         "short_name": "DANSKE BK  NAM.  DK 10",
         "long_name": "Danske Bank A/S",
-        "summary": "Danske Bank A/S provides various banking products and services to small and medium-sized businesses; and corporate, institutional, and personal customers. It operates through Banking DK, Banking Nordic, Corporates and Institutions, Wealth Management, and Northern Ireland segments. The company offers daily banking, home financing, investment, and retirement planning solutions; strategic advisory services; leasing solutions; and financing, financial market, general banking, and corporate finance advisory services, as well as financial solutions and products in the areas of capital markets, fixed income and currencies, and transaction banking and investor services. It also provides wealth and asset management, pension savings, and insurance solutions covering life, health, and accident; and mobile banking services. In addition, the company provides mortgage finance and real-estate brokerage, as well as trades in fixed income products, foreign exchange, and equities. It has operations in Denmark, Finland, Sweden, Norway, the United Kingdom, Ireland, Estonia, Latvia, Lithuania, Luxembourg, Russia, Germany, Poland, the United States, India, and China. Danske Bank A/S was founded in 1871 and is headquartered in Copenhagen, Denmark.",
+        "summary": "Danske Bank A/S provides various banking products and services to small and medium-sized businesses, corporate, institutional, and personal customers. The company offers daily banking, home financing, investment, and retirement planning solutions; strategic advisory services; leasing solutions; and financing, financial market, general banking, and corporate finance advisory services, as well as financial solutions and products in the areas of capital markets, fixed income and currencies, and transaction banking and investor services. It also provides wealth and asset management, pension savings, and insurance solutions, including life, health, and accident; and mobile banking services. In addition, the company provides mortgage finance and real-estate brokerage services, as well as trades in fixed income products, foreign exchange, and equities. It has operations in Denmark, Finland, Sweden, Norway, the United Kingdom, Ireland, Baltics, Germany, and Poland. Danske Bank A/S was founded in 1871 and is headquartered in Copenhagen, Denmark.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -143,10 +143,22 @@
         "country": "Denmark",
         "city": "Aars"
     },
+    "JYS1.F": {
+        "short_name": "JYSKE BK A/S NAM. DK 10",
+        "long_name": "Jyske Bank A/S",
+        "summary": "Jyske Bank A/S provides a range of financial solutions to personal and corporate clients in Denmark, Gibraltar, and Germany. The company operates through Banking Activities, Mortgage Activities, and Leasing Activities segments. The Banking Activities segment engages in the provision of advisory services relating to traditional financial solutions to personal and private banking clients, as well as corporate clients; and trading of interest-rate products, currencies, equities, commodities, and derivatives. The Mortgage Activities segment offers financial solutions for the financing of real property to Danish personal clients, corporate clients, and subsidized rental housing. The Leasing Activities segment provides leasing and financing services for car, and equipment for the corporate sector to Danish personal and corporate clients, as well as dealer cooperation schemes and partnerships. The company was founded in 1967 and is based in Silkeborg, Denmark.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Denmark",
+        "city": "Silkeborg"
+    },
     "JYSK.CO": {
         "short_name": "Jyske Bank A/S",
         "long_name": "Jyske Bank A/S",
-        "summary": "Jyske Bank A/S provides a range of financial solutions to personal, corporate, private banking, and institutional clients in Denmark, Gibraltar, and Germany. It offers deposit products; home loans for personal clients; mortgage solutions, including the financing of real property; car and equipment leasing and financing services; and advisory services relating to traditional financial solutions targeting personal and private banking clients, and corporate clients. The company provides investment services; trades in interest-rate products, currencies, equities, commodities, and derivatives; asset management; and wealth management advisory services. The company was founded in 1967 and is based in Silkeborg, Denmark.",
+        "summary": "Jyske Bank A/S provides a range of financial solutions to personal and corporate clients in Denmark, Gibraltar, and Germany. The company operates through Banking Activities, Mortgage Activities, and Leasing Activities segments. The Banking Activities segment engages in the provision of advisory services relating to traditional financial solutions to personal and private banking clients, as well as corporate clients; and trading of interest-rate products, currencies, equities, commodities, and derivatives. The Mortgage Activities segment offers financial solutions for the financing of real property to Danish personal clients, corporate clients, and subsidized rental housing. The Leasing Activities segment provides leasing and financing services for car, and equipment for the corporate sector to Danish personal and corporate clients, as well as dealer cooperation schemes and partnerships. The company was founded in 1967 and is based in Silkeborg, Denmark.",
         "currency": "DKK",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -218,7 +230,7 @@
     "RILBA.CO": {
         "short_name": "Ringkjbing Landbobank A/S",
         "long_name": "Ringkj\u00f8bing Landbobank A/S",
-        "summary": "Ringkj\u00c3\u00b8bing Landbobank A/S provides various banking products and services in Denmark. It offers various deposits, and loans and guarantees, as well as mortgage credit, securities trading, asset management and custody accounts, foreign exchange, and payment handling services. The company was founded in 1886 and is headquartered in Ringk\u00c3\u00b8bing, Denmark.",
+        "summary": "Ringkj\u00c3\u00b8bing Landbobank A/S provides various banking products and services in Denmark. It offers various deposits, and loans and guarantees, as well as mortgage credit, securities trading, asset management and custody accounts, foreign exchange, and payment handling services. Ringkj\u00c3\u00b8bing Landbobank A/S was founded in 1886 and is headquartered in Ringk\u00c3\u00b8bing, Denmark.",
         "currency": "DKK",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -230,7 +242,7 @@
     "SKJE.CO": {
         "short_name": "Skjern Bank A/S",
         "long_name": "Skjern Bank A/S",
-        "summary": "Skjern Bank A/S provides various banking products and services to private and corporate customers in Denmark. It accepts deposits and grants loans; provides pension and insurance products; and offers wealth management services. It serves the agriculture, industry, retail, transport, and real estate sectors, as well as private clients. The company operates branches in Skjern, Varde, Esbjerg, Bramming, Ribe, Hellerup, and Virum. Skjern Bank A/S was founded in 1906 and is based in Skjern, Denmark.",
+        "summary": "Skjern Bank A/S provides various banking products and services to private, corporate, and institutional customers in Denmark. The company offers saving accounts; financing products; loans; pension funds; personal and travel insurances; real estate consulting, leasing, and investment services; and related advisory services, as well as credit cards. It serves the agriculture, industry, retail, transport, and real estate sectors, as well as private clients. The company operates branches in Skjern, Varde, Esbjerg, Bramming, Ribe, Hellerup, and Virum. Skjern Bank A/S was founded in 1906 and is based in Skjern, Denmark.",
         "currency": "DKK",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -254,7 +266,7 @@
     "SPNO.CO": {
         "short_name": "Spar Nord Bank A/S",
         "long_name": "Spar Nord Bank A/S",
-        "summary": "Spar Nord Bank A/S provides various banking products and services to retail, business, and public sector customers in Denmark. It offers deposits, loans, advances, and guarantees, as well as mortgage credits and custodianship accounts. The company also provides leasing products; and trading services in the field of equities, bonds, interest and forex, asset management and international transactions. In addition, it offers consumer financing services through retail stores; gift voucher solutions through shopping centers and shopping center associations; and direct loans through its Website, sparxpres.dk. As of December 31, 2019, the company operated a network of 49 branches. Spar Nord Bank A/S was founded in 1824 and is based in Aalborg, Denmark.",
+        "summary": "Spar Nord Bank A/S provides various banking products and services to retail, business, and public sector customers in Denmark. It offers deposits, loans, advances, and guarantees; and mortgage loans, as well as custodianship accounts. The company also provides leasing products; and trading services in the field of equities, bonds, interest and forex, asset management, and international transactions. In addition, it offers consumer financing services through retail stores; gift voucher solutions through shopping centers and shopping center associations; and direct loans through its website, sparxpres.dk. The company operates through a network of 51 branches. Spar Nord Bank A/S was founded in 1824 and is based in Aalborg, Denmark.",
         "currency": "DKK",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -266,7 +278,7 @@
     "SYDB.CO": {
         "short_name": "Sydbank A/S",
         "long_name": "Sydbank A/S",
-        "summary": "Sydbank A/S, together with its subsidiaries, provides various banking products and services to corporate and retail customers in Denmark and internationally. The company operates in Banking, Asset Management, Sydbank Markets, Treasury, and Other segments. It offers various deposits, and loans and advances; and corporate banking services, including financing solutions and advisory services; and international commercial banking services, such as payment services and cash management solutions. The company also provides private banking products and services, such as advice related to pensions, investments, and various financial issues; personal and individual advisory services; and payment cards, and insurance and investment products, as well as related services. In addition, it offers advisory and asset management services for investment funds, pooled pension plans, foundations, and institutional and wealthy clients; and advice and quotes prices as regards bonds, shares, and foreign exchange, as well as undertakes market-making obligations for institutional clients, central banks, asset managers, foreign clients, and banks. Further, the company is involved in the macro, equity, and fixed income research activities. Additionally, it deals in government and mortgage bonds; and provides online and digital solutions. As of December 31, 2019, the company operated through a network of 60 branches in Denmark and 3 branches in Germany. Sydbank A/S was founded in 1970 and is headquartered in Aabenraa, Denmark.",
+        "summary": "Sydbank A/S, together with its subsidiaries, provides various banking products and services to corporate and retail customers in Denmark and internationally. The company operates in Banking, Asset Management, Sydbank Markets, Treasury, and Other segments. It offers various deposits, and loans and advances; and corporate banking services, including financing solutions and advisory services; and international commercial banking services, such as payment services and cash management solutions. The company also provides private banking products and services, such as advice related to pensions, investments, and various financial issues; personal and individual advisory services; and payment cards, and insurance and investment products, as well as related services. In addition, it offers advisory and asset management services for investment funds, pooled pension plans, foundations, and institutional and wealthy clients; and advice and quotes prices as regards bonds, shares, and foreign exchange, as well as undertakes market-making obligations for institutional clients, central banks, asset managers, foreign clients, and banks. Further, the company is involved in macro, equity, and fixed income research activities. Additionally, it deals in government and mortgage bonds; and provides online and digital solutions. As of December 31, 2020, the company operated through a network of 56 branches in Denmark and 3 branches in Germany. Sydbank A/S was founded in 1970 and is headquartered in Aabenraa, Denmark.",
         "currency": "DKK",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -278,7 +290,7 @@
     "TM2.F": {
         "short_name": "SYDBANK  NAM.  DK 10",
         "long_name": "Sydbank A/S",
-        "summary": "Sydbank A/S, together with its subsidiaries, provides various banking products and services to corporate and retail customers in Denmark and internationally. The company operates in Banking, Asset Management, Sydbank Markets, Treasury, and Other segments. It offers various deposits, and loans and advances; and corporate banking services, including financing solutions and advisory services; and international commercial banking services, such as payment services and cash management solutions. The company also provides private banking products and services, such as advice related to pensions, investments, and various financial issues; personal and individual advisory services; and payment cards, and insurance and investment products, as well as related services. In addition, it offers advisory and asset management services for investment funds, pooled pension plans, foundations, and institutional and wealthy clients; and advice and quotes prices as regards bonds, shares, and foreign exchange, as well as undertakes market-making obligations for institutional clients, central banks, asset managers, foreign clients, and banks. Further, the company is involved in the macro, equity, and fixed income research activities. Additionally, it deals in government and mortgage bonds; and provides online and digital solutions. As of December 31, 2019, the company operated through a network of 60 branches in Denmark and 3 branches in Germany. Sydbank A/S was founded in 1970 and is headquartered in Aabenraa, Denmark.",
+        "summary": "Sydbank A/S, together with its subsidiaries, provides various banking products and services to corporate and retail customers in Denmark and internationally. The company operates in Banking, Asset Management, Sydbank Markets, Treasury, and Other segments. It offers various deposits, and loans and advances; and corporate banking services, including financing solutions and advisory services; and international commercial banking services, such as payment services and cash management solutions. The company also provides private banking products and services, such as advice related to pensions, investments, and various financial issues; personal and individual advisory services; and payment cards, and insurance and investment products, as well as related services. In addition, it offers advisory and asset management services for investment funds, pooled pension plans, foundations, and institutional and wealthy clients; and advice and quotes prices as regards bonds, shares, and foreign exchange, as well as undertakes market-making obligations for institutional clients, central banks, asset managers, foreign clients, and banks. Further, the company is involved in macro, equity, and fixed income research activities. Additionally, it deals in government and mortgage bonds; and provides online and digital solutions. As of December 31, 2020, the company operated through a network of 56 branches in Denmark and 3 branches in Germany. Sydbank A/S was founded in 1970 and is headquartered in Aabenraa, Denmark.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -287,10 +299,22 @@
         "country": "Denmark",
         "city": "Aabenraa"
     },
+    "TOTA.CO": {
+        "short_name": "Totalbanken A/S",
+        "long_name": "Totalbanken A/S",
+        "summary": "Totalbanken A/S provides various banking products and services to private households, and small and medium-sized enterprises in Denmark. The company offers savings accounts, deposits, and guarantees; and car loans, investment products, pension products, leasing services, and insurance products. It operates through 1 branch in Tommerup and 2 branches in Odense. The company was founded in 1911 and is headquartered in Aarup, Denmark.",
+        "currency": "DKK",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "CPH",
+        "market": "dk_market",
+        "country": "Denmark",
+        "city": "Aarup"
+    },
     "VJBA.CO": {
         "short_name": "Vestjysk Bank A/S",
         "long_name": "Vestjysk Bank A/S",
-        "summary": "Vestjysk Bank A/S provides banking products and services for retail and business customers in Jutland, Denmark. The company operates in four business areas: Business, Retail, Markets, and Agricultural Centre. It accepts deposits; and provides lending and financing for agriculture, fisheries, real estate, and small and medium-sized enterprises, as well as engages in project financing activities. The company is based in Lemvig, Denmark.",
+        "summary": "Vestjysk Bank A/S provides banking products and services for retail and business customers in Jutland, Denmark. The company operates in four business areas: Business, Retail, Markets, and Agriculture. It accepts deposits; and provides lending and financing for agriculture, fisheries, real estate, and small and medium-sized enterprises.  The company also engages in project financing activities. The company is based in Lemvig, Denmark.",
         "currency": "DKK",
         "sector": "Financial Services",
         "industry": "Banks - Regional",

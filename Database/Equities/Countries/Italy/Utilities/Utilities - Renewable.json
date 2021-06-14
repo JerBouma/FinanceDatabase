@@ -35,10 +35,22 @@
         "country": "Italy",
         "city": "Milan"
     },
+    "ER9.F": {
+        "short_name": "ERG S.P.A.  EO 0,10",
+        "long_name": "ERG S.p.A.",
+        "summary": "ERG S.p.A., through its subsidiaries, produces energy through renewable sources in Italy, France, Germany, Poland, Bulgaria, and Romania. The company generates electricity through wind, solar, hydroelectric, and thermoelectric power plants, as well as natural gas cogeneration plants. As of December 31, 2020, it had wind farms installed capacity of 1,967 MW; solar plants installed capacity of 141 MW; hydroelectric plants installed capacity of 527 MW; and thermoelectric plants installed capacity of 480 MW. The company was founded in 1938 and is headquartered in Genoa, Italy. ERG S.p.A. is a subsidiary of San Quirico S.p.A.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Genoa"
+    },
     "ERG.MI": {
         "short_name": "ERG",
         "long_name": "ERG S.p.A.",
-        "summary": "ERG S.p.A., through its subsidiaries, produces energy through renewable sources in Italy, France, Germany, Poland, Bulgaria, Romania, and the United Kingdom. The company generates electricity through wind, solar, hydroelectric, and thermoelectric power plants, as well as natural gas cogeneration plants. As of December 31, 2019, it had wind farms installed capacity of 1,929 MW; solar plants installed capacity of 141 MW; hydroelectric plants installed capacity of 527 MW; and thermoelectric plants installed capacity of 480 MW. The company was founded in 1938 and is headquartered in Genoa, Italy. ERG S.p.A. is a subsidiary of San Quirico S.p.A.",
+        "summary": "ERG S.p.A., through its subsidiaries, produces energy through renewable sources in Italy, France, Germany, Poland, Bulgaria, and Romania. The company generates electricity through wind, solar, hydroelectric, and thermoelectric power plants, as well as natural gas cogeneration plants. As of December 31, 2020, it had wind farms installed capacity of 1,967 MW; solar plants installed capacity of 141 MW; hydroelectric plants installed capacity of 527 MW; and thermoelectric plants installed capacity of 480 MW. The company was founded in 1938 and is headquartered in Genoa, Italy. ERG S.p.A. is a subsidiary of San Quirico S.p.A.",
         "currency": "EUR",
         "sector": "Utilities",
         "industry": "Utilities - Renewable",
@@ -82,6 +94,18 @@
         "market": "it_market",
         "country": "Italy",
         "city": "Milan"
+    },
+    "SERI.MI": {
+        "short_name": "SERI INDUSTRIAL",
+        "long_name": "Seri Industrial S.p.A.",
+        "summary": "Seri Industrial S.p.A., through its subsidiary, Seri Plast S.r.l., engages in the processing of plastic materials for the battery market, automotive, and thermo-sanitary sectors. The company, through its other subdiairy, is invovled in the production and recycling of lead and lithium batteries for traction, industrial, storage, and military applications under the FAAM brand, as well as design of plants for the recycling of batteries. The company was formerly known as K.R.Energy S.p.A. Seri Industrial S.p.A. is based in San Potito Sannitico, Italy.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "San Potito Sannitico"
     },
     "TI5.F": {
         "short_name": "ALGOWATT S.P.A.",

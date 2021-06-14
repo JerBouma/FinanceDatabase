@@ -14,7 +14,7 @@
     "3001.SR": {
         "short_name": "Hail Cement Co.",
         "long_name": "Hail Cement Company",
-        "summary": "Hail Cement Company produces and sells cement in the Kingdom of Saudi Arabia. It offers ordinary Portland, masonry, and sulphate resistant cement products. The company was founded in 2010 and is headquartered in Hail, the Kingdom of Saudi Arabia.",
+        "summary": "Hail Cement Company manufactures and sells cement in the Kingdom of Saudi Arabia and internationally. It offers ordinary Portland, sulphate resistant, and masonry cement. The company was founded in 2010 and is headquartered in Hail, the Kingdom of Saudi Arabia.",
         "currency": "SAR",
         "sector": "Basic Materials",
         "industry": "Building Materials",
@@ -26,7 +26,7 @@
     "3002.SR": {
         "short_name": "Najran Cement Co.",
         "long_name": "Najran Cement Company",
-        "summary": "Najran Cement Company manufactures and sells cement products in the Kingdom of Saudi Arabia. The company offers ordinary Portland and cement resistant to salt. It also sells its products online. The company was founded in 2005 and is based in Najran, the Kingdom of Saudi Arabia.",
+        "summary": "Najran Cement Company manufactures and sells cement products in the Kingdom of Saudi Arabia. The company offers ordinary Portland and cement resistant to salt. It also sells its products online. Najran Cement Company was founded in 2005 and is based in Najran, the Kingdom of Saudi Arabia.",
         "currency": "SAR",
         "sector": "Basic Materials",
         "industry": "Building Materials",
@@ -59,10 +59,22 @@
         "country": "Saudi Arabia",
         "city": "Riyadh"
     },
+    "3010.SR": {
+        "short_name": "Arabian Cement Co.",
+        "long_name": "Arabian Cement Company",
+        "summary": "Arabian Cement Company engages in the production, trading, and selling of cement primarily in Saudi Arabia and Jordan. It also provides building materials and other related products. The company was incorporated in 1955 and is based in Jeddah, Saudi Arabia.",
+        "currency": "SAR",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "exchange": "SAU",
+        "market": "sr_market",
+        "country": "Saudi Arabia",
+        "city": "Jeddah"
+    },
     "3020.SR": {
         "short_name": "Yamama Cement Co.",
         "long_name": "Yamama Saudi Cement Company",
-        "summary": "Yamama Saudi Cement Company manufactures and sells cement in the Kingdom of Saudi Arabia. It offers finishing, moderate sulfate resisting, ordinary, and sulphate resistant cement. The company was founded in 1961 and is headquartered in Riyadh, the Kingdom of Saudi Arabia.",
+        "summary": "Yamama Saudi Cement Company manufactures and sells cement in Saudi Arabia. It offers ordinary Portland, clinker and finishing, sulfate-resistant Portland, white and colored, oil-well, fast cementing Bozolani, and bacteric resistant cement. The company was founded in 1956 and is headquartered in Riyadh, Saudi Arabia.",
         "currency": "SAR",
         "sector": "Basic Materials",
         "industry": "Building Materials",
@@ -74,7 +86,7 @@
     "3040.SR": {
         "short_name": "The Qassim Cement Co.",
         "long_name": "Qassim Cement Company",
-        "summary": "Qassim Cement Company manufactures and sells cement and its related products in Saudi Arabia. It offers ordinary Portland, Portland, sulphate resistant, and limestone cement. The company was founded in 1976 and is headquartered in Buraydah, Saudi Arabia.",
+        "summary": "Qassim Cement Company manufactures and sells cement and its derivatives and supplements in the Kingdom of Saudi Arabia. It offers ordinary Portland, Portland pozzolana, sulphate resistant, finishing, and limestone cement. The company was founded in 1976 and is headquartered in Buraydah, the Kingdom of Saudi Arabia.",
         "currency": "SAR",
         "sector": "Basic Materials",
         "industry": "Building Materials",
@@ -83,10 +95,22 @@
         "country": "Saudi Arabia",
         "city": "Buraydah"
     },
+    "3050.SR": {
+        "short_name": "Southern Province Cement Co.",
+        "long_name": "Southern Province Cement Company",
+        "summary": "Southern Province Cement Company engages in the production and sale of cement, clinker, and its derivatives in Saudi Arabia. The company was founded in 1978 and is headquartered in Abha, Saudi Arabia.",
+        "currency": "SAR",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "exchange": "SAU",
+        "market": "sr_market",
+        "country": "Saudi Arabia",
+        "city": "Abha"
+    },
     "3060.SR": {
         "short_name": "Yanbou Cement Co.",
         "long_name": "Yanbu Cement Company",
-        "summary": "Yanbu Cement Company manufactures and sells cement in the Kingdom of Saudi Arabia. The company offers ordinary Portland, Pozzolana Portland, hydraulic, and sulphate resistance cement. It also produces and sells paper sack bags. Yanbu Cement Company was founded in 1977 and is headquartered in Jeddah, the Kingdom of Saudi Arabia.",
+        "summary": "Yanbu Cement Company, together with its subsidiaries, engages in the manufacturing, producing, and trading in cement and related products in the Kingdom of Saudi Arabia. The company offers ordinary Portland, Pozzolana Portland, hydraulic, and sulphate resistance cement products. It also manufactures cement bags. Yanbu Cement Company was founded in 1977 and is headquartered in Jeddah, the Kingdom of Saudi Arabia.",
         "currency": "SAR",
         "sector": "Basic Materials",
         "industry": "Building Materials",
@@ -94,6 +118,18 @@
         "market": "sr_market",
         "country": "Saudi Arabia",
         "city": "Jeddah"
+    },
+    "3080.SR": {
+        "short_name": "Eastern Province Cement Co.",
+        "long_name": "Eastern Province Cement Co.",
+        "summary": "Eastern Province Cement Company produces and sells clinker and cement in the Kingdom of Saudi and internationally. It offers ordinary Portland, sulphate resisting, and finishing cement, as well as pre-cast concrete products. The company also engages in the wholesale and retail of cement, gypsum, etc. Eastern Province Cement Company is headquartered in Dammam, the Kingdom of Saudi Arabia.",
+        "currency": "SAR",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "exchange": "SAU",
+        "market": "sr_market",
+        "country": "Saudi Arabia",
+        "city": "Dammam"
     },
     "3090.SR": {
         "short_name": "Tabouk Cement Co.",
@@ -118,5 +154,17 @@
         "market": "sr_market",
         "country": "Saudi Arabia",
         "city": "Jeddah"
+    },
+    "9512.SR": {
+        "short_name": "Riyadh Cement Co.",
+        "long_name": "Riyadh Cement Co.",
+        "summary": "Saudi White Cement Company manufactures, produces, and markets various types of clinker and cement in the Kingdom of Saudi Arabia. The company was founded in 1997 and is headquartered in Dammam, Saudi Arabia.",
+        "currency": "SAR",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "exchange": "SAU",
+        "market": "sr_market",
+        "country": "Saudi Arabia",
+        "city": "Dammam"
     }
 }

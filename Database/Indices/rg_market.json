@@ -1,72 +1,128 @@
 {
+    "^B3020PI": {
+        "short_name": "OMX Baltic Financial Services P",
+        "currency": "EUR",
+        "market": "rg_market",
+        "exchange": "RIS",
+        "exchange timezone": "EEST"
+    },
+    "^B30GI": {
+        "short_name": "OMX Baltic Financials GI",
+        "currency": "EUR",
+        "market": "rg_market",
+        "exchange": "RIS",
+        "exchange timezone": "EEST"
+    },
+    "^B4020GI": {
+        "short_name": "OMX Baltic Consumer Products an",
+        "currency": "EUR",
+        "market": "rg_market",
+        "exchange": "RIS",
+        "exchange timezone": "EEST"
+    },
+    "^B4040PI": {
+        "short_name": "OMX Baltic Retail PI",
+        "currency": "EUR",
+        "market": "rg_market",
+        "exchange": "RIS",
+        "exchange timezone": "EEST"
+    },
+    "^B4050GI": {
+        "short_name": "OMX Baltic Travel and Leisure G",
+        "currency": "EUR",
+        "market": "rg_market",
+        "exchange": "RIS",
+        "exchange timezone": "EEST"
+    },
+    "^B40PI": {
+        "short_name": "OMX Baltic Consumer Discretiona",
+        "currency": "EUR",
+        "market": "rg_market",
+        "exchange": "RIS",
+        "exchange timezone": "EEST"
+    },
+    "^B55GI": {
+        "short_name": "OMX Baltic Basic Materials GI",
+        "currency": "EUR",
+        "market": "rg_market",
+        "exchange": "RIS",
+        "exchange timezone": "EEST"
+    },
+    "^B55PI": {
+        "short_name": "OMX Baltic Basic Materials PI",
+        "currency": "EUR",
+        "market": "rg_market",
+        "exchange": "RIS",
+        "exchange timezone": "EEST"
+    },
     "^OMXB10": {
         "short_name": "OMX_Baltic_10",
         "currency": "EUR",
         "market": "rg_market",
         "exchange": "RIS",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "^OMXB10EXP": {
         "short_name": "OMX_Baltic_10_EXP",
         "currency": "EUR",
         "market": "rg_market",
         "exchange": "RIS",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "^OMXB10GI": {
         "short_name": "OMX_Baltic_10_GI",
         "currency": "EUR",
         "market": "rg_market",
         "exchange": "RIS",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "^OMXBBCAPGI": {
         "short_name": "OMX_Baltic_Benchmark_Cap_GI",
         "currency": "EUR",
         "market": "rg_market",
         "exchange": "RIS",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "^OMXBBCAPPI": {
         "short_name": "OMX_Baltic_Benchmark_Cap_PI",
         "currency": "EUR",
         "market": "rg_market",
         "exchange": "RIS",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "^OMXBBGI": {
         "short_name": "OMX_Baltic_Benchmark_GI",
         "currency": "EUR",
         "market": "rg_market",
         "exchange": "RIS",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "^OMXBBPI": {
         "short_name": "OMX_Baltic_Benchmark_PI",
         "currency": "EUR",
         "market": "rg_market",
         "exchange": "RIS",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "^OMXBGI": {
         "short_name": "OMX_Baltic_GI",
         "currency": "EUR",
         "market": "rg_market",
         "exchange": "RIS",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "^OMXBPI": {
         "short_name": "OMX_Baltic_PI",
         "currency": "EUR",
         "market": "rg_market",
         "exchange": "RIS",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "^OMXR": {
         "short_name": "OMX Riga_GI",
         "currency": "EUR",
         "market": "rg_market",
         "exchange": "RIS",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     }
 }

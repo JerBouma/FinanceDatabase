@@ -29,6 +29,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "INDA": {
+        "short_name": "Ishares MSCI India ETF",
+        "long_name": "iShares MSCI India ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI India Index composed of Indian equities.\n The fund generally will collectively invest at least 90% of the fund&#39;s assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index measures the performance of equity securities of companies whose market capitalization, as calculated by the index provider, represents the large and mid-capitalization segments of the Indian securities market. The fund is non-diversified.",
+        "category": "India Equity",
+        "family": "iShares",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
     "INDY": {
         "short_name": "iShares S&P India Nifty 50 Inde",
         "long_name": "iShares India 50 ETF",
@@ -39,6 +49,16 @@
         "exchange": "NGM",
         "market": "us_market"
     },
+    "IXSE": {
+        "short_name": "WisdomTree India Ex-State-Owned",
+        "long_name": "WisdomTree India ex-State-Owned Enterprises Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree India ex-State-Owned Enterprises Index.\n Normally, at least 80% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a modified float-adjusted market cap weighted index that consists of companies incorporated and traded in India, excluding common stocks of \"state-owned enterprises.\" The fund is non-diversified.",
+        "category": "India Equity",
+        "family": "WisdomTree",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "NFTY": {
         "short_name": "First Trust India Nifty 50 Equa",
         "long_name": "First Trust India NIFTY 50 Equal Weight ETF",
@@ -46,7 +66,27 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the NIFTY 50 Equal Weight Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks that comprise the index. The index is designed to track the performance of the 50 largest and most liquid Indian securities listed on the National Stock Exchange of India (\"NSE\") by investing in all of the components of the NIFTY 50.",
         "category": "India Equity",
         "family": "First Trust",
-        "exchange": "NGM",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "PIN": {
+        "short_name": "Invesco India ETF",
+        "long_name": "Invesco India ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the FTSE India Quality and Yield Select Index (the \"underlying index\").\n The fund seeks to achieve its investment objective by investing at least 90% of its total assets in the securities that comprise the underlying index, as well as ADRs and GDRs that represent securities in the underlying index. The underlying index is a modified-market capitalization-weighted index of equity securities that are traded on the National Stock Exchange of India. The fund is non-diversified.",
+        "category": "India Equity",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SMIN": {
+        "short_name": "Ishares MSCI India Small Cap ET",
+        "long_name": "iShares MSCI India Small-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI India Small Cap Index.\n The fund generally will collectively invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is designed to measure the performance of equity securities of small-capitalization companies in the Indian securities market.",
+        "category": "India Equity",
+        "family": "iShares",
+        "exchange": "BTS",
         "market": "us_market"
     }
 }

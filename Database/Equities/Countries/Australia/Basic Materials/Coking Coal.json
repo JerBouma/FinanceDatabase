@@ -2,7 +2,7 @@
     "0QE.F": {
         "short_name": "CORON.GL.RES. CDIS/10/1",
         "long_name": "Coronado Global Resources Inc.",
-        "summary": "Coronado Global Resources Inc., together with its subsidiaries, produces, markets, and exports metallurgical coal. The company operates through four segments: Curragh, Buchanan, Logan, and Greenbrier. It owns a portfolio of operating mines and development projects, including the Curragh mine complex located in the Bowen Basin of Queensland, Australia; and the Buchanan, Logan, and Greenbrier mine complexes located in the Central Appalachian region in Virginia and West Virginia, the United States. The company provides its products in the United States, India, Japan, South Korea, Taiwan, Brazil, China, and Europe. Coronado Global Resources Inc. was founded in 2011 and is headquartered in Brisbane, Australia. Coronado Global Resources Inc. operates as a subsidiary of Coronado Group LLC.",
+        "summary": "Coronado Global Resources Inc., together with its subsidiaries, produces, markets, and exports metallurgical coal. It owns a portfolio of operating mines and development projects, including the Curragh mine complex located in the Bowen Basin of Australia; and the Buchanan, Logan, Greenbrier, Pangburn-Shaner-Fallowfield, Russell County, and Amonate mine complexes located in the Central Appalachian region of the United States. Coronado Global Resources Inc. was founded in 2011 and is headquartered in Brisbane, Australia. Coronado Global Resources Inc. operates as a subsidiary of Coronado Group LLC.",
         "currency": "EUR",
         "sector": "Basic Materials",
         "industry": "Coking Coal",
@@ -22,6 +22,18 @@
         "market": "dr_market",
         "country": "Australia",
         "city": "Sydney"
+    },
+    "2GF.F": {
+        "short_name": "TERRACOM LTD",
+        "long_name": "TerraCom Limited",
+        "summary": "TerraCom Limited engages in the exploration, extraction, and production of coal in Australia and South Africa. It explores for hard and soft coking, thermal, and PCI coal. The company holds interests in the Northern Galilee project comprising the Hughenden and the Pentland projects covering an area of approximately 2,160 square kilometers, as well as the Clyde Park project that covers an area of approximately 133 square kilometers located in the Galilee Basin, Queensland; the Blair Athol Coal Mine project; and the Springsure project covering an area of approximately 1,178 square kilometers situated in the Central-Western Bowen basin coal mining district, Queensland. It also holds interests in the Kangala Colliery property; the New Clydesdale Colliery project; the Berenice Project; Ubuntu Colliery; North Block Complex Colliery; Cygnus project; and Eloff Project located in South Africa.The company was formerly known as Guildford Coal Limited and changed its name to TerraCom Limited in November 2015. TerraCom Limited was founded in 2009 and is based in Clermont, Australia.",
+        "currency": "EUR",
+        "sector": "Basic Materials",
+        "industry": "Coking Coal",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Australia",
+        "city": "Clermont"
     },
     "5PM.F": {
         "short_name": "PRAIRIE MINING LTD.",
@@ -74,7 +86,7 @@
     "ATU.AX": {
         "short_name": "ATRUM COAL FPO",
         "long_name": "Atrum Coal Limited",
-        "summary": "Atrum Coal Limited explores for and develops metallurgical coal properties. It primarily offers coking coal for steel industry. The company's flagship asset is the 100%-owned Elan Hard coking coal project, which covers 27 coal exploration tenements consisting of an area of approximately 22,951 hectares located in the Crowsnest Pass area of southern Alberta, Canada. It also explores for anthracite in British Columbia, Canada. The company was incorporated in 2011 and is based in Melbourne, Australia.",
+        "summary": "Atrum Coal Limited explores for and develops metallurgical coal properties. It primarily offers coking coal for steel industry. The company's flagship asset is the 100%-owned Elan Hard coking coal project located in the Crowsnest Pass area of southern Alberta, Canada. It also explores for anthracite in British Columbia, Canada. The company was incorporated in 2011 and is based in Melbourne, Australia.",
         "currency": "AUD",
         "sector": "Basic Materials",
         "industry": "Coking Coal",
@@ -110,7 +122,7 @@
     "CRN.AX": {
         "short_name": "CORONADO CDI FORUS",
         "long_name": "Coronado Global Resources Inc.",
-        "summary": "Coronado Global Resources Inc., together with its subsidiaries, produces, markets, and exports metallurgical coal. The company operates through four segments: Curragh, Buchanan, Logan, and Greenbrier. It owns a portfolio of operating mines and development projects, including the Curragh mine complex located in the Bowen Basin of Queensland, Australia; and the Buchanan, Logan, and Greenbrier mine complexes located in the Central Appalachian region in Virginia and West Virginia, the United States. The company provides its products in the United States, India, Japan, South Korea, Taiwan, Brazil, China, and Europe. Coronado Global Resources Inc. was founded in 2011 and is headquartered in Brisbane, Australia. Coronado Global Resources Inc. operates as a subsidiary of Coronado Group LLC.",
+        "summary": "Coronado Global Resources Inc., together with its subsidiaries, produces, markets, and exports metallurgical coal. It owns a portfolio of operating mines and development projects, including the Curragh mine complex located in the Bowen Basin of Australia; and the Buchanan, Logan, Greenbrier, Pangburn-Shaner-Fallowfield, Russell County, and Amonate mine complexes located in the Central Appalachian region of the United States. Coronado Global Resources Inc. was founded in 2011 and is headquartered in Brisbane, Australia. Coronado Global Resources Inc. operates as a subsidiary of Coronado Group LLC.",
         "currency": "AUD",
         "sector": "Basic Materials",
         "industry": "Coking Coal",
@@ -141,7 +153,31 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "West Perth"
+        "city": "Brisbane"
+    },
+    "MR1.AX": {
+        "short_name": "MONTEM FPO",
+        "long_name": "Montem Resources Limited",
+        "summary": "Montem Resources Limited operates as a steelmaking coal development company in Canada. It owns interests in the Tent Mountain mine re-start project; Chinook project; and Greenfield projects comprising Isola, 4-Stack, and Oldman properties, which are located in the Crowsnest Pass area of southwest Alberta and southeast British Columbia. The company was incorporated in 2017 and is based in South Melbourne, Australia.",
+        "currency": "AUD",
+        "sector": "Basic Materials",
+        "industry": "Coking Coal",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "South Melbourne"
+    },
+    "PAK.AX": {
+        "short_name": "PACIFICAM FPO",
+        "long_name": "Pacific American Holdings Limited",
+        "summary": "Pacific American Holdings Limited focuses on the production, development, and exploration of metallurgical coal assets in Canada and Australia. The company's flagship property is the Elko coking coal project covering an area of 8,824 acres located in Kootenay, British Columbia, Canada. It also has exploration licenses in the metallurgical coal region of the Arkoma Basin in Oklahoma; and focuses on the development of hydro projects within Australia and the South Pacific Region, as well as holds an agreement to earn up to a 60% equity interest in the Porphyry North Gold Project in Western Australia. The company was formerly known as Pacific American Coal Limited and changed its name to Pacific American Holdings Limited in May 2019. Pacific American Holdings Limited is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Basic Materials",
+        "industry": "Coking Coal",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
     },
     "PDZ.AX": {
         "short_name": "PRAIRIE FPO",
@@ -166,6 +202,18 @@
         "market": "gb_market",
         "country": "Australia",
         "city": "Perth"
+    },
+    "TER.AX": {
+        "short_name": "TERRACOM FPO",
+        "long_name": "TerraCom Limited",
+        "summary": "TerraCom Limited engages in the exploration, extraction, and production of coal in Australia and South Africa. It explores for hard and soft coking, thermal, and PCI coal. The company holds interests in the Northern Galilee project comprising the Hughenden and the Pentland projects covering an area of approximately 2,160 square kilometers, as well as the Clyde Park project that covers an area of approximately 133 square kilometers located in the Galilee Basin, Queensland; the Blair Athol Coal Mine project; and the Springsure project covering an area of approximately 1,178 square kilometers situated in the Central-Western Bowen basin coal mining district, Queensland. It also holds interests in the Kangala Colliery property; the New Clydesdale Colliery project; the Berenice Project; Ubuntu Colliery; North Block Complex Colliery; Cygnus project; and Eloff Project located in South Africa.The company was formerly known as Guildford Coal Limited and changed its name to TerraCom Limited in November 2015. TerraCom Limited was founded in 2009 and is based in Clermont, Australia.",
+        "currency": "AUD",
+        "sector": "Basic Materials",
+        "industry": "Coking Coal",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Clermont"
     },
     "WKU.F": {
         "short_name": "ASPIRE MINING LTD",

@@ -1,4 +1,64 @@
 {
+    "2FA.F": {
+        "short_name": "GLOBAL CANNABIS APPL.",
+        "long_name": "Global Cannabis Applications Corp.",
+        "summary": "Global Cannabis Applications Corp. designs, develops, markets, and acquires data technologies and applications for the medical cannabis industry. The company offers Citizen Green platform, a medical cannabis data solution. It uses various technologies, such as mobile applications, artificial intelligence, regulatory, smart databases, blockchain, and digital reward tokens to qualify candidates for clinical studies. The company was formerly known as Fundamental Applications Corp. Global Cannabis Applications Corp. was founded in 2014 and is headquartered in Vancouver, Canada.",
+        "currency": "EUR",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Canada",
+        "city": "Vancouver"
+    },
+    "38H0.F": {
+        "short_name": "HEALTHSPACE DATA SYS LTD",
+        "long_name": "HealthSpace Data Systems Ltd.",
+        "summary": "HealthSpace Data Systems Ltd. develops and sells information and communication management systems for health inspection departments of federal, provincial, state, and municipal governments in Canada and the United States. Its products include HSCloud product, a no-code data management platform for managing applications, licenses, permits, inspections, and virtually other data for operating state and local government agencies; and HSTouch for data collection, such as calendars, past inspections, regulatory codes, and violations, which works either connected to or disconnected from the internet to record observations is the field, as well as captures electronic signature, and insert photos and email inspection reports. The company also offers HealthSpace EnviroIntel EHS Manager, an internet-based client/server application used to fill out forms, request information, and view data, including real-time reports. HealthSpace Data Systems Ltd. was founded in 1998 and is headquartered in Chilliwack, Canada.",
+        "currency": "EUR",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Canada",
+        "city": "Chilliwack"
+    },
+    "3CT0.F": {
+        "short_name": "LYNX GLOBAL DIGITAL FINL.",
+        "long_name": "Lynx Global Digital Finance Corporation",
+        "summary": "CannaOne Technologies Inc., a software development and technology company, develops and markets online e-commerce marketplace solution for the cannabis industry in Canada. It provides BloomKit, a software suite that delivers an online toolkit for various applications for companies in the cannabis sector; and BWell, which uses BloomKit to facilitate the sale of premium CBD products on its online marketplace. The company also operates Primo, a review driven marketplace that show a dispensary directory, brand pages, visual product attributes, and multi-varied cannabis centric reviews. CannaOne Technologies Inc. was incorporated in 2016 and is headquartered in Vancouver, Canada.",
+        "currency": "EUR",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Canada",
+        "city": "Vancouver"
+    },
+    "6OVA.F": {
+        "short_name": "VITALHUB CORP..",
+        "long_name": "Vitalhub Corp.",
+        "summary": "Vitalhub Corp., together with its subsidiaries, develops technology solutions for health and human service providers in the hospital, regional health authority, mental health, long term care, home health, and community and social service sectors in Canada, the United Kingdom, and the United States. Its solutions include electronic healthcare record, case management, care coordination, patient flow and operational visibility, and DOCit mobile apps. Vitalhub Corp. is based in Toronto, Canada.",
+        "currency": "EUR",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Canada",
+        "city": "Toronto"
+    },
+    "6PH.F": {
+        "short_name": "CLOUDMD SOFTWARE+SERVICES",
+        "long_name": "CloudMD Software & Services Inc.",
+        "summary": "CloudMD Software & Services Inc., a healthcare technology company, provides SaaS based health technology solutions to medical clinics in North America. It offers CloudMD telemedicine application, a telemedicine platform that connects patients to licensed physician through videoconferencing technology; operates a network of inter-connected medical clinics; and Re:Function, an integrated network of 8 rehabilitation clinics that offers various rehabilitation services. The company also retails prescription drugs, over-the-counter drugs, and other front store items through two pharmacies, as well as provides clinical services, such as medical reviews and compounding; and provides cloud-based electronic medical records (EMR) software, medical billing and practice management software, and various telemedicine platforms to medical professionals, as well as digital platforms to serve individuals for their eyecare and specialty drug needs. In addition, it offers JunoEMR, a cloud-based EMR solution; MyHealthAccess, an online patient portal for online appointment booking and telemedicine visits; Benchmark, a suite of cloud-based medical practice solutions; and ClinicAid, a medical billing software. Further, the company provides Livecare Connect, a telemedicine platform; IDYA4, a health data integration and security technology platform; VisionPros, an online eyecare platform that offers contact lenses and eyeglasses under the KIND brand; Rxi, a specialty drug wholesaler, pharmacy, and technology/patient support program administrator. Additionally, it provides enterprise health solutions, including mental health support; employee and student assistance programs; healthcare navigation and specialist; rehabilitation and assessments; education; and absence management. The company was formerly known as Premier Health Group Inc. and changed its name to CloudMD Software & Services Inc. in February 2020. The company was incorporated in 2013 and is headquartered in Victoria, Canada.",
+        "currency": "EUR",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Canada",
+        "city": "Vancouver"
+    },
     "ADK.V": {
         "short_name": "DIAGNOS INC.",
         "long_name": "DIAGNOS Inc.",
@@ -22,6 +82,18 @@
         "market": "us_market",
         "country": "Canada",
         "city": "Toronto"
+    },
+    "APP.CN": {
+        "short_name": "Global CannaApp",
+        "long_name": "Global Cannabis Applications Corp.",
+        "summary": "Global Cannabis Applications Corp. designs, develops, markets, and acquires data technologies and applications for the medical cannabis industry. The company offers Citizen Green platform, a medical cannabis data solution. It uses various technologies, such as mobile applications, artificial intelligence, regulatory, smart databases, blockchain, and digital reward tokens to qualify candidates for clinical studies. The company was formerly known as Fundamental Applications Corp. Global Cannabis Applications Corp. was founded in 2014 and is headquartered in Vancouver, Canada.",
+        "currency": "CAD",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "exchange": "CNQ",
+        "market": "ca_market",
+        "country": "Canada",
+        "city": "Vancouver"
     },
     "AUHP.F": {
         "short_name": "EGF THERAMED HEALTH CORP.",
@@ -47,22 +119,34 @@
         "country": "Canada",
         "city": "Vancouver"
     },
-    "CNNA.CN": {
-        "short_name": "CannaOneTechInc",
-        "long_name": "CannaOne Technologies Inc.",
-        "summary": "CannaOne Technologies Inc., a cannabis e-commerce technology company, develops and markets online e-commerce marketplace solution for the cannabis industry in Canada. It provides BloomKit, a software suite that delivers an online toolkit for various applications for companies in the cannabis sector; and BWell, which uses BloomKit to facilitate the sale of a selection of premium CBD products from various suppliers to consumers. The company also operates Primo, a review driven marketplace that show accessories, merchandise, brands, and knowledge. CannaOne Technologies Inc. was founded in 2016 and is headquartered in Vancouver, Canada.",
+    "CARE.TO": {
+        "short_name": "DIALOGUE HEALTH TECHNOLOGIES IN",
+        "long_name": "Dialogue Health Technologies Inc.",
+        "summary": "Dialogue Health Technologies Inc. operates a digital healthcare and wellness platform in Canada. Its Integrated Health Platform is a healthcare hub that provides access to virtual healthcare, stress management, mental wellbeing, and other orientation and counselling services. The company's platform also enables its members and their dependents to access an employee assistance program and an occupational health and safety program for customers in Germany. It serves employers and organizations. Dialogue Technologies Inc. was incorporated in 2016 and is headquartered in Montreal, Canada.",
         "currency": "CAD",
         "sector": "Healthcare",
         "industry": "Health Information Services",
-        "exchange": "CNQ",
+        "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "city": "Montreal"
+    },
+    "CDX.V": {
+        "short_name": "CLOUD DX INC",
+        "long_name": "Cloud DX Inc.",
+        "summary": "Cloud DX Inc. provides remote patient monitoring hardware and software solutions. The company offers Cloud DX Connected Health, an end-to-end virtual healthcare platform for monitoring patients with chronic illness, including COPD and CHF, as well as patients recovering from surgery to large hospitals and provincial health authorities in Canada, and physician practices and hospitals in the United States. Its Cloud DX Connected Health Kits includes its proprietary Pulsewave wrist cuff blood pressure monitor; Cloud DX Bluetooth pulse oximeter; and Cloud DX wireless weight scale and optionally, a digital thermometer and digital wireless glucose meter from 3rd party suppliers. The company also offers CPT Codes for Remote Patient Monitoring; and VITALITI, a vital sign monitor for measuring ECG, heart rate, oxygen saturation, respiration, core body temperature, blood pressure, movement, steps, and posture. Cloud DX Inc. is headquartered in Kitchener, Canada.",
+        "currency": "CAD",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "exchange": "VAN",
+        "market": "ca_market",
+        "country": "Canada",
+        "city": "Kitchener"
     },
     "CNONF": {
-        "short_name": "CANNAONE TECHNOLOGIES INC",
-        "long_name": "CannaOne Technologies Inc.",
-        "summary": "CannaOne Technologies Inc., a cannabis e-commerce technology company, develops and markets online e-commerce marketplace solution for the cannabis industry in Canada. It provides BloomKit, a software suite that delivers an online toolkit for various applications for companies in the cannabis sector; and BWell, which uses BloomKit to facilitate the sale of a selection of premium CBD products from various suppliers to consumers. The company also operates Primo, a review driven marketplace that show accessories, merchandise, brands, and knowledge. CannaOne Technologies Inc. was founded in 2016 and is headquartered in Vancouver, Canada.",
+        "short_name": "LYNX GLOBAL DIGITAL FIN CORP",
+        "long_name": "Lynx Global Digital Finance Corporation",
+        "summary": "CannaOne Technologies Inc., a software development and technology company, develops and markets online e-commerce marketplace solution for the cannabis industry in Canada. It provides BloomKit, a software suite that delivers an online toolkit for various applications for companies in the cannabis sector; and BWell, which uses BloomKit to facilitate the sale of premium CBD products on its online marketplace. The company also operates Primo, a review driven marketplace that show a dispensary directory, brand pages, visual product attributes, and multi-varied cannabis centric reviews. CannaOne Technologies Inc. was incorporated in 2016 and is headquartered in Vancouver, Canada.",
         "currency": "USD",
         "sector": "Healthcare",
         "industry": "Health Information Services",
@@ -95,10 +179,22 @@
         "country": "Canada",
         "city": "Montreal"
     },
+    "DOC.V": {
+        "short_name": "CLOUDMD SOFTWARE AND SERVICES I",
+        "long_name": "CloudMD Software & Services Inc.",
+        "summary": "CloudMD Software & Services Inc., a healthcare technology company, provides SaaS based health technology solutions to medical clinics in North America. It offers CloudMD telemedicine application, a telemedicine platform that connects patients to licensed physician through videoconferencing technology; operates a network of inter-connected medical clinics; and Re:Function, an integrated network of 8 rehabilitation clinics that offers various rehabilitation services. The company also retails prescription drugs, over-the-counter drugs, and other front store items through two pharmacies, as well as provides clinical services, such as medical reviews and compounding; and provides cloud-based electronic medical records (EMR) software, medical billing and practice management software, and various telemedicine platforms to medical professionals, as well as digital platforms to serve individuals for their eyecare and specialty drug needs. In addition, it offers JunoEMR, a cloud-based EMR solution; MyHealthAccess, an online patient portal for online appointment booking and telemedicine visits; Benchmark, a suite of cloud-based medical practice solutions; and ClinicAid, a medical billing software. Further, the company provides Livecare Connect, a telemedicine platform; IDYA4, a health data integration and security technology platform; VisionPros, an online eyecare platform that offers contact lenses and eyeglasses under the KIND brand; Rxi, a specialty drug wholesaler, pharmacy, and technology/patient support program administrator. Additionally, it provides enterprise health solutions, including mental health support; employee and student assistance programs; healthcare navigation and specialist; rehabilitation and assessments; education; and absence management. The company was formerly known as Premier Health Group Inc. and changed its name to CloudMD Software & Services Inc. in February 2020. The company was incorporated in 2013 and is headquartered in Victoria, Canada.",
+        "currency": "CAD",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "exchange": "VAN",
+        "market": "ca_market",
+        "country": "Canada",
+        "city": "Vancouver"
+    },
     "DOCRF": {
         "short_name": "CLOUDMD SOFTWARE & SERVICES INC",
         "long_name": "CloudMD Software & Services Inc.",
-        "summary": "CloudMD Software & Services Inc., a technology company, provides SaaS based health technology solutions to medical clinics in Canada. The company provides digital technologies that connect doctors and allied health care providers to their patients. It also engages in retailing of prescription drugs, over-the-counter drugs, and other front store items through primary care clinics and pharmacies, as well as provide clinical, medical reviews, and compounding services. The company was formerly known as Premier Health Group Inc. and changed its name to CloudMD Software & Services Inc. in February 2020. CloudMD Software & Services Inc. was incorporated in 2013 and is headquartered in Victoria, Canada.",
+        "summary": "CloudMD Software & Services Inc., a healthcare technology company, provides SaaS based health technology solutions to medical clinics in North America. It offers CloudMD telemedicine application, a telemedicine platform that connects patients to licensed physician through videoconferencing technology; operates a network of inter-connected medical clinics; and Re:Function, an integrated network of 8 rehabilitation clinics that offers various rehabilitation services. The company also retails prescription drugs, over-the-counter drugs, and other front store items through two pharmacies, as well as provides clinical services, such as medical reviews and compounding; and provides cloud-based electronic medical records (EMR) software, medical billing and practice management software, and various telemedicine platforms to medical professionals, as well as digital platforms to serve individuals for their eyecare and specialty drug needs. In addition, it offers JunoEMR, a cloud-based EMR solution; MyHealthAccess, an online patient portal for online appointment booking and telemedicine visits; Benchmark, a suite of cloud-based medical practice solutions; and ClinicAid, a medical billing software. Further, the company provides Livecare Connect, a telemedicine platform; IDYA4, a health data integration and security technology platform; VisionPros, an online eyecare platform that offers contact lenses and eyeglasses under the KIND brand; Rxi, a specialty drug wholesaler, pharmacy, and technology/patient support program administrator. Additionally, it provides enterprise health solutions, including mental health support; employee and student assistance programs; healthcare navigation and specialist; rehabilitation and assessments; education; and absence management. The company was formerly known as Premier Health Group Inc. and changed its name to CloudMD Software & Services Inc. in February 2020. The company was incorporated in 2013 and is headquartered in Victoria, Canada.",
         "currency": "USD",
         "sector": "Healthcare",
         "industry": "Health Information Services",
@@ -179,6 +275,18 @@
         "country": "Canada",
         "city": "Chilliwack"
     },
+    "HS.CN": {
+        "short_name": "HealthSpace",
+        "long_name": "HealthSpace Data Systems Ltd.",
+        "summary": "HealthSpace Data Systems Ltd. develops and sells information and communication management systems for health inspection departments of federal, provincial, state, and municipal governments in Canada and the United States. Its products include HSCloud product, a no-code data management platform for managing applications, licenses, permits, inspections, and virtually other data for operating state and local government agencies; and HSTouch for data collection, such as calendars, past inspections, regulatory codes, and violations, which works either connected to or disconnected from the internet to record observations is the field, as well as captures electronic signature, and insert photos and email inspection reports. The company also offers HealthSpace EnviroIntel EHS Manager, an internet-based client/server application used to fill out forms, request information, and view data, including real-time reports. HealthSpace Data Systems Ltd. was founded in 1998 and is headquartered in Chilliwack, Canada.",
+        "currency": "CAD",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "exchange": "CNQ",
+        "market": "ca_market",
+        "country": "Canada",
+        "city": "Chilliwack"
+    },
     "HSCHF": {
         "short_name": "H-SOURCE HOLDINGS LTD",
         "long_name": "H-Source Holdings Ltd.",
@@ -188,18 +296,6 @@
         "industry": "Health Information Services",
         "exchange": "PNK",
         "market": "us_market",
-        "country": "Canada",
-        "city": "Vancouver"
-    },
-    "HSI.V": {
-        "short_name": "H SOURCE HOLDINGS LTD",
-        "long_name": "H-Source Holdings Ltd.",
-        "summary": "H-Source Holdings Ltd., a technology company, operates in the healthcare industry. It offers a hospital-to-hospital transaction platform that provides a marketplace for members to buy, sell, and transfer excess inventory supplies and capital equipment with each other. The company's platform allows members to conduct transactions within integrated delivery networks and group purchasing organizations. H-Source Holdings Ltd. is headquartered in Vancouver, Canada.",
-        "currency": "CAD",
-        "sector": "Healthcare",
-        "industry": "Health Information Services",
-        "exchange": "VAN",
-        "market": "ca_market",
         "country": "Canada",
         "city": "Vancouver"
     },
@@ -215,18 +311,6 @@
         "country": "Canada",
         "city": "Vancouver"
     },
-    "KALO": {
-        "short_name": "KALLO INC",
-        "long_name": "Kallo Inc.",
-        "summary": "Kallo Inc. focuses on developing medical information technology software. The company's products in development include Electronic Medical Records (EMR) Integration Engine, a software, which connects all the other applications in or outside a hospital/clinic with the EMR system; Communicable and Infectious Disease Information Management System, an Internet-based solution for monitoring and managing communicable and infectious disease information; and Clinical-Care Globalization, a clinical-care globalization technology. Its products also include MC-Telehealth, a mobile clinic with telehealth system technology; Kallo Integrated Delivery System (KIDS), a technology and process framework; and KIDS Global Tele-Health Ecosystems, a Tele-health Program that encompasses various technologies and administrative processes needed to deliver virtual medical care, health promotion/prevention, and other patient education to KIDS patients. The company was formerly known as Diamond Technologies Inc. Kallo Inc. was founded in 2006 and is headquartered in Toronto, Canada.",
-        "currency": "USD",
-        "sector": "Healthcare",
-        "industry": "Health Information Services",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "Canada",
-        "city": "Toronto"
-    },
     "LFCOF": {
         "short_name": "LIFT & CO CORP",
         "long_name": "Lift & Co. Corp.",
@@ -239,10 +323,22 @@
         "country": "Canada",
         "city": "Toronto"
     },
+    "LYNX.CN": {
+        "short_name": "LynxGlDigitFin",
+        "long_name": "Lynx Global Digital Finance Corporation",
+        "summary": "CannaOne Technologies Inc., a software development and technology company, develops and markets online e-commerce marketplace solution for the cannabis industry in Canada. It provides BloomKit, a software suite that delivers an online toolkit for various applications for companies in the cannabis sector; and BWell, which uses BloomKit to facilitate the sale of premium CBD products on its online marketplace. The company also operates Primo, a review driven marketplace that show a dispensary directory, brand pages, visual product attributes, and multi-varied cannabis centric reviews. CannaOne Technologies Inc. was incorporated in 2016 and is headquartered in Vancouver, Canada.",
+        "currency": "CAD",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "exchange": "CNQ",
+        "market": "ca_market",
+        "country": "Canada",
+        "city": "Vancouver"
+    },
     "MBCN.TO": {
         "short_name": "MINDBEACON HOLDINGS INC",
-        "long_name": "Mindbeacon Holdings Inc.",
-        "summary": "Mindbeacon Holdings Inc. designs and develops a platform for mental healthcare that includes self-guided psychoeducational, wellness content, therapist-assisted asynchronous therapies, and real-time synchronous therapies. The company was founded in 2015 and is based in Toronto, Canada.",
+        "long_name": "MindBeacon Holdings Inc.",
+        "summary": "MindBeacon Holdings Inc. designs and develops a platform for mental healthcare that includes self-guided psychoeducational, wellness content, therapist-assisted asynchronous therapies, and real-time synchronous therapies. The company was founded in 2015 and is headquartered in Toronto, Canada.",
         "currency": "CAD",
         "sector": "Healthcare",
         "industry": "Health Information Services",
@@ -275,10 +371,22 @@
         "country": "Canada",
         "city": "Hamilton"
     },
+    "MNOW.V": {
+        "short_name": "MEDNOW INC",
+        "long_name": "Mednow Inc.",
+        "summary": "Mednow Inc. develops a proprietary website and a web application for the sale and distribution of prescription medications. The company was founded in 2018 and is headquartered in Vancouver, Canada.",
+        "currency": "CAD",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "exchange": "VAN",
+        "market": "ca_market",
+        "country": "Canada",
+        "city": "Vancouver"
+    },
     "NEWU.V": {
         "short_name": "NEWTOPIA INC",
         "long_name": "Newtopia Inc.",
-        "summary": "Newtopia Inc., a health technology company, operates a habit change platform. It offers a proprietary virtual habit change platform that focuses on metabolic risk reduction by developing and implementing personalized plans based on social, psychological, and genetic insights. The company was founded in 2008 and is headquartered in Toronto, Canada.",
+        "summary": "Newtopia Inc., a health technology company, operates a habit change platform. It offers a personalized habit change platform that focuses on metabolic risk reduction by developing and implementing personalized experiences based on social, behavioral, and genetic information. The company was incorporated in 2008 and is headquartered in Toronto, Canada.",
         "currency": "CAD",
         "sector": "Healthcare",
         "industry": "Health Information Services",
@@ -290,7 +398,7 @@
     "NEWUF": {
         "short_name": "NEWTOPIA INC",
         "long_name": "Newtopia Inc.",
-        "summary": "Newtopia Inc., a health technology company, operates a habit change platform. It offers a proprietary virtual habit change platform that focuses on metabolic risk reduction by developing and implementing personalized plans based on social, psychological, and genetic insights. The company was founded in 2008 and is headquartered in Toronto, Canada.",
+        "summary": "Newtopia Inc., a health technology company, operates a habit change platform. It offers a personalized habit change platform that focuses on metabolic risk reduction by developing and implementing personalized experiences based on social, behavioral, and genetic information. The company was incorporated in 2008 and is headquartered in Toronto, Canada.",
         "currency": "USD",
         "sector": "Healthcare",
         "industry": "Health Information Services",
@@ -383,6 +491,18 @@
         "country": "Canada",
         "city": "Vancouver"
     },
+    "TRUE.CN": {
+        "short_name": "Treatment.com",
+        "long_name": "Treatment.Com International Inc.",
+        "summary": "Treatment.Com International Inc. operates as a mobile health, telemedicine, and artificial intelligence (AI) company in Canada. The company offers MERLIN, a probabilistic medical reasoning engine to provide medical advice such that individuals can make decisions about available treatments for their health care problems; and GLM, a collaborative repository where care providers, researchers, and developers exchange and publish medical knowledge. It also provides CareBOT, an AI prompting agent mobile application platform for use by consumers; and ClinBOT, an enterprise clinic application for use as diagnostic tool for medical professionals. Treatment.Com International Inc. is headquartered in Vancouver, Canada.",
+        "currency": "CAD",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "exchange": "CNQ",
+        "market": "ca_market",
+        "country": "Canada",
+        "city": "West Vancouver"
+    },
     "VEGN.CN": {
         "short_name": "Plant&Co.Brands",
         "long_name": "Plant & Co. Brands Ltd.",
@@ -422,12 +542,24 @@
     "VHI.V": {
         "short_name": "VITALHUB CORP",
         "long_name": "Vitalhub Corp.",
-        "summary": "Vitalhub Corp., together with its subsidiaries, develops technology solutions for health and human service providers in the mental health, long term care, community health service, home health, social service, acute care, and hospital sectors in Canada, the United Kingdom, and the United States. Its technologies include blockchain, mobile, patient flow, Web-based assessment, and electronic healthcare record solutions. Vitalhub Corp. is based in Toronto, Canada.",
+        "summary": "Vitalhub Corp., together with its subsidiaries, develops technology solutions for health and human service providers in the hospital, regional health authority, mental health, long term care, home health, and community and social service sectors in Canada, the United Kingdom, and the United States. Its solutions include electronic healthcare record, case management, care coordination, patient flow and operational visibility, and DOCit mobile apps. Vitalhub Corp. is based in Toronto, Canada.",
         "currency": "CAD",
         "sector": "Healthcare",
         "industry": "Health Information Services",
         "exchange": "VAN",
         "market": "ca_market",
+        "country": "Canada",
+        "city": "Toronto"
+    },
+    "VHIBF": {
+        "short_name": "VITALHUB CORP",
+        "long_name": "Vitalhub Corp.",
+        "summary": "Vitalhub Corp., together with its subsidiaries, develops technology solutions for health and human service providers in the hospital, regional health authority, mental health, long term care, home health, and community and social service sectors in Canada, the United Kingdom, and the United States. Its solutions include electronic healthcare record, case management, care coordination, patient flow and operational visibility, and DOCit mobile apps. Vitalhub Corp. is based in Toronto, Canada.",
+        "currency": "USD",
+        "sector": "Healthcare",
+        "industry": "Health Information Services",
+        "exchange": "PNK",
+        "market": "us_market",
         "country": "Canada",
         "city": "Toronto"
     },

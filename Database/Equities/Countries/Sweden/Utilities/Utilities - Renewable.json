@@ -11,10 +11,22 @@
         "country": "Sweden",
         "city": "Gothenburg"
     },
+    "7MN.F": {
+        "short_name": "MINESTO AB",
+        "long_name": "Minesto AB (publ)",
+        "summary": "Minesto AB (publ) operates as a marine energy technology developer in Sweden, Wales, Northern Ireland, and Taiwan. The company develops Deep Green technology, which produces electricity from tidal and ocean currents through a turbine. Minesto AB (publ) was founded in 2007 and is headquartered in Gothenburg, Sweden.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Sweden",
+        "city": "Gothenburg"
+    },
     "A4W.F": {
         "short_name": "ARISE",
         "long_name": "Arise AB (publ)",
-        "summary": "Arise AB (publ), together with its subsidiaries, operates in the onshore wind power sector. The company operates through Own Wind Power Operations, and Development and Management segments. It develops, builds, operates, and manages wind farms. The company operates a portfolio of managed wind power approximately 1300 MW in Sweden and Norway. It has 10 wind farms totalling 139 MW in southern Sweden. The company was formerly known as Arise Windpower AB (publ) and changed its name to Arise AB (publ) in June 2013. Arise AB (publ) was founded in 2007 and is headquartered in Halmstad, Sweden.",
+        "summary": "Arise AB (publ), together with its subsidiaries, operates in the onshore wind power sector. It operates through Development and Management, and Own Wind Power Operations segments. The Development and Management segment engages in project development, construction, and sale of projects for renewable electricity production, as well as management of renewable electricity production. The Own Wind Power Operations segment engages in the production and sale of electricity and electricity certificates. The company operates a portfolio of managed wind power approximately 1,300 MW in Sweden, Norway, and Scotland. It has 10 wind farms totalling 139 MW in southern Sweden. The company was formerly known as Arise Windpower AB (publ) and changed its name to Arise AB (publ) in June 2013. Arise AB (publ) was founded in 1986 and is headquartered in Halmstad, Sweden.",
         "currency": "EUR",
         "sector": "Utilities",
         "industry": "Utilities - Renewable",
@@ -26,7 +38,7 @@
     "ARISE.ST": {
         "short_name": "Arise AB",
         "long_name": "Arise AB (publ)",
-        "summary": "Arise AB (publ), together with its subsidiaries, operates in the onshore wind power sector. The company operates through Own Wind Power Operations, and Development and Management segments. It develops, builds, operates, and manages wind farms. The company operates a portfolio of managed wind power approximately 1300 MW in Sweden and Norway. It has 10 wind farms totalling 139 MW in southern Sweden. The company was formerly known as Arise Windpower AB (publ) and changed its name to Arise AB (publ) in June 2013. Arise AB (publ) was founded in 2007 and is headquartered in Halmstad, Sweden.",
+        "summary": "Arise AB (publ), together with its subsidiaries, operates in the onshore wind power sector. It operates through Development and Management, and Own Wind Power Operations segments. The Development and Management segment engages in project development, construction, and sale of projects for renewable electricity production, as well as management of renewable electricity production. The Own Wind Power Operations segment engages in the production and sale of electricity and electricity certificates. The company operates a portfolio of managed wind power approximately 1,300 MW in Sweden, Norway, and Scotland. It has 10 wind farms totalling 139 MW in southern Sweden. The company was formerly known as Arise Windpower AB (publ) and changed its name to Arise AB (publ) in June 2013. Arise AB (publ) was founded in 1986 and is headquartered in Halmstad, Sweden.",
         "currency": "SEK",
         "sector": "Utilities",
         "industry": "Utilities - Renewable",
@@ -44,18 +56,6 @@
         "industry": "Utilities - Renewable",
         "exchange": "STO",
         "market": "se_market",
-        "country": "Sweden",
-        "city": "Gothenburg"
-    },
-    "AZLOF": {
-        "short_name": "AZELIO AB",
-        "long_name": "Azelio AB (publ)",
-        "summary": "Azelio AB (publ) engages in the research and development, production, and supply of Stirling engine-based renewable energy systems in Sweden, the European Union, and internationally. It is involved in the assembly of the Stirling engines. The company was founded in 2008 and is headquartered in Gothenburg, Sweden.",
-        "currency": "USD",
-        "sector": "Utilities",
-        "industry": "Utilities - Renewable",
-        "exchange": "PNK",
-        "market": "us_market",
         "country": "Sweden",
         "city": "Gothenburg"
     },
@@ -94,6 +94,30 @@
         "market": "dr_market",
         "country": "Sweden",
         "city": "Kista"
+    },
+    "DLAB.ST": {
+        "short_name": "Dlaboratory Sweden AB",
+        "long_name": "Dlaboratory Sweden AB (publ)",
+        "summary": "Dlaboratory Sweden AB (publ) operates as a cleantech company in Sweden. It provides dInsight Analytics platform that connects and collects grid data; analyses to unlock critical information; categorizes and visualizes; and sets the information in meaningful context and transform into actionable knowledge. The company was founded in 2010 and is based in Lund, Sweden.",
+        "currency": "SEK",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "STO",
+        "market": "se_market",
+        "country": "Sweden",
+        "city": "Lund"
+    },
+    "MINEST.ST": {
+        "short_name": "Minesto AB",
+        "long_name": "Minesto AB (publ)",
+        "summary": "Minesto AB (publ) operates as a marine energy technology developer in Sweden, Wales, Northern Ireland, and Taiwan. The company develops Deep Green technology, which produces electricity from tidal and ocean currents through a turbine. Minesto AB (publ) was founded in 2007 and is headquartered in Gothenburg, Sweden.",
+        "currency": "SEK",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "STO",
+        "market": "se_market",
+        "country": "Sweden",
+        "city": "Gothenburg"
     },
     "OCE.F": {
         "short_name": "CORTUS ENERGY AB  SK 1",

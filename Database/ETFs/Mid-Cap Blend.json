@@ -19,6 +19,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "BUL": {
+        "short_name": "Pacer US Cash Cows Growth ETF",
+        "long_name": "Pacer US Cash Cows Growth ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Pacer US Cash Cows Growth Index.\n The index uses an objective, rules-based methodology to provide exposure to mid- and large-capitalization U.S. companies with high free cash flow yields. Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in the component securities of the index. It is non-diversified.",
+        "category": "Mid-Cap Blend",
+        "family": "Pacer",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "CSD": {
         "short_name": "Invesco S&P Spin-Off ETF",
         "long_name": "Invesco S&P Spin-Off ETF",
@@ -33,15 +43,15 @@
         "short_name": "Invesco Zacks Mid-Cap ETF",
         "long_name": "Invesco Zacks Mid-Cap ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Zacks Mid-Cap Core Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index, as well as American depositary receipts (\"ADRs\") that represent securities in the underlying index. The underlying index is composed of 100 securities that Zacks selects from a universe of mid-capitalization securities including common stocks, master limited partnerships (\"MLPs\"), ADRs, real estate investment trusts (\"REITs\") and business development companies (\"BDCs\"). The fund is non-diversified.",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Zacks Mid-Cap Core Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index, as well as American depositary receipts (\"ADRs\") that represent securities in the underlying index. The underlying index is composed of 100 securities that Zacks selects from a universe of mid-capitalization securities including common stocks, master limited partnerships (\"MLPs\"), ADRs, real estate investment trusts (\"REITs\") and business development companies (\"BDCs\").",
         "category": "Mid-Cap Blend",
         "family": "Invesco",
         "exchange": "PCX",
         "market": "us_market"
     },
     "DEUS": {
-        "short_name": "Xtrackers Russell 1000 Comprehe",
-        "long_name": "Xtrackers Russell 1000 Comprehensive Factor ETF",
+        "short_name": "Xtrackers Russell US Multifacto",
+        "long_name": "Xtrackers Russell US Multifactor ETF",
         "currency": "USD",
         "summary": "The investment seeks investment results that correspond generally to the performance, before fees and expenses, of the Russell 1000 Comprehensive Factor Index.\n The fund, using a \"passive\" or indexing investment approach, seeks investment results that correspond generally to the performance of the underlying index, which is designed to track the equity market performance of companies in the United States selected on the investment style criteria (\"factors\") of value, momentum, quality, low volatility and size. It will invest at least 80% of its total assets (but typically far more) in component securities of the underlying index.",
         "category": "Mid-Cap Blend",
@@ -59,23 +69,23 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "EWMC": {
-        "short_name": "Invesco S&P MidCap 400 Equal We",
-        "long_name": "Invesco S&P MidCap 400 Equal Weight ETF",
+    "EQAL": {
+        "short_name": "Invesco Russell 1000 Equal Weig",
+        "long_name": "Invesco Russell 1000 Equal Weight ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P MidCap 400\u00c2\u00ae Equal Weight Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index consists of all of the components of the S&P MidCap 400\u00c2\u00ae Index, a broad-based index of approximately 400 securities that measures the mid-cap segment of the U.S. equity market. The fund is non-diversified.",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Russell 1000\u00c2\u00ae Equal Weight Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is comprised of all of the securities in the Russell 1000 \u00c2\u00ae Index, which is designed to measure the performance of the large-cap segment of the U.S. equity market and consists of the stocks of the largest 1,000 U.S. companies by market capitalization.",
         "category": "Mid-Cap Blend",
         "family": "Invesco",
         "exchange": "PCX",
         "market": "us_market"
     },
-    "EZM": {
-        "short_name": "WisdomTree U.S. MidCap Fund",
-        "long_name": "WisdomTree U.S. MidCap Earnings Fund",
+    "EWMC": {
+        "short_name": "Invesco S&P MidCap 400 Equal We",
+        "long_name": "Invesco S&P MidCap 400 Equal Weight ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree U.S. MidCap Index.\n Under normal circumstances, at least 95% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a fundamentally weighted index that is comprised of earnings-generating companies within the mid-capitalization segment of the U.S. stock market. The fund is non-diversified.",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P MidCap 400\u00c2\u00ae Equal Weight Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index consists of all of the components of the S&P MidCap 400\u00c2\u00ae Index, a broad-based index of approximately 400 securities that measures the mid-cap segment of the U.S. equity market.",
         "category": "Mid-Cap Blend",
-        "family": "WisdomTree",
+        "family": "Invesco",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -96,14 +106,14 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the Nasdaq AlphaDEX\u00c2\u00ae Mid Cap Core Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks that comprise the index. The index is designed to select stocks from the NASDAQ US 600 Mid Cap Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
         "category": "Mid-Cap Blend",
         "family": "First Trust",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
-    "FVL": {
-        "short_name": "First Trust Value Line 100 Fund",
-        "long_name": "First Trust Value Line 100 Exchange-Traded Fund",
+    "HSMV": {
+        "short_name": "First Trust Horizon Managed Vol",
+        "long_name": "First Trust Horizon Managed Volatility Small/Mid ETF",
         "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the Value Line\u00c2\u00ae 100 Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and depositary receipts that comprise the index. The index seeks to measure the performance of the 100 highest ranked securities according to the index provider&#39;s proprietary Value Line Timeliness Ranking System (the \"Timeliness Ranking System\").",
+        "summary": "The investment seeks to provide investors with capital appreciation.\n Under normal market conditions, the fund seeks to achieve its investment objective by investing at least 80% of its net assets (including investment borrowings) in small- and/or mid-capitalization common stocks listed and traded on U.S. national securities exchanges that Sub-Advisor believes exhibit low future expected volatility. It is non-diversified.",
         "category": "Mid-Cap Blend",
         "family": "First Trust",
         "exchange": "PCX",
@@ -116,6 +126,26 @@
         "summary": "The investment seeks to track the investment results of the S&P MidCap 400 (the \"underlying index\"), which measures the performance of the mid-capitalization sector of the U.S. equity market.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. It may invest the remainder of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the underlying index, but which the advisor believes will help the fund track the underlying index.",
         "category": "Mid-Cap Blend",
         "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IMCB": {
+        "short_name": "iShares Morningstar Mid-Cap ETF",
+        "long_name": "iShares Morningstar Mid-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Morningstar\u00c2\u00ae US Mid Cap IndexSM composed of mid-capitalization U.S. equities.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. The underlying index measures the performance of stocks issued by mid-capitalization companies that have exhibited both \u00e2\u0080\u009cgrowth\u00e2\u0080\u009d and \u00e2\u0080\u009cvalue\u00e2\u0080\u009d characteristics as determined by Morningstar, Inc.\u00e2\u0080\u0099s (\u00e2\u0080\u009cMorningstar\u00e2\u0080\u009d or the \u00e2\u0080\u009cindex provider\u00e2\u0080\u009d) proprietary index methodology.",
+        "category": "Mid-Cap Blend",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IVOO": {
+        "short_name": "Vanguard S&P Mid-Cap 400 ETF",
+        "long_name": "Vanguard S&P Mid-Cap 400 Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of mid-capitalization stocks in the United States.\n The fund employs an indexing investment approach designed to track the performance of the S&P MidCap 400\u00c2\u00ae Index. The index measures the performance of mid-size companies in the United States. The Advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+        "category": "Mid-Cap Blend",
+        "family": "Vanguard",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -139,16 +169,6 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "JKG": {
-        "short_name": "iShares Morningstar Mid-Cap ETF",
-        "long_name": "iShares Morningstar Mid-Cap ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the Morningstar\u00c2\u00ae Mid Core IndexSM composed of mid-capitalization U.S. equities.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. The underlying index measures the performance of stocks issued by mid-capitalization companies that have exhibited similar \"growth\" and \"value\" characteristics as determined by Morningstar, Inc.&#39;s (\"Morningstar\" or the \"index provider\") proprietary index methodology.",
-        "category": "Mid-Cap Blend",
-        "family": "iShares",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
     "JPME": {
         "short_name": "JPMorgan Diversified Return U.S",
         "long_name": "JPMorgan Diversified Return U.S. Mid Cap Equity ETF",
@@ -166,6 +186,16 @@
         "summary": "The investment seeks to provide investment results that, before expenses, correspond generally to the price and yield performance of the S&P MidCap 400\u00c2\u00ae Index\u00e2\u0084\u00a2.\n The Trust seeks to achieve its investment objective by holding a portfolio of the common stocks that are included in the index (the \u00e2\u0080\u009cPortfolio\u00e2\u0080\u009d), with the weight of each stock in the Portfolio substantially corresponding to the weight of such stock in the index.",
         "category": "Mid-Cap Blend",
         "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "MGMT": {
+        "short_name": "Ballast Small/Mid Cap ETF",
+        "long_name": "Ballast Small/Mid Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to generate positive risk adjusted returns.\n Under normal circumstances, the fund invests at least 80% of the value of its net assets (plus borrowings for investment purposes) in equity securities (principally common stocks) of domestic companies with small to medium market capitalizations. It may also invest all or substantially all of its assets in cash and cash equivalents, including money market funds and other short-term fixed income investments, in seeking to protect principal, or when, in the Adviser&#39;s opinion, there are not sufficient companies appropriate for investment.",
+        "category": "Mid-Cap Blend",
+        "family": "Ballast Asset Management",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -209,6 +239,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "PTMC": {
+        "short_name": "Pacer Trendpilot US Mid Cap ETF",
+        "long_name": "Pacer Trendpilot US Mid Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Pacer Trendpilot US Mid Cap Index.\n The fund invests at least 80% of its total assets (exclusive of collateral held from securities lending) in the component securities of the index. The index implements a systematic trend-following strategy that directs exposure (i) 100% to the S&P MidCap 400\u00c2\u00ae Index, (ii) 50% to the S&P MidCap 400 and 50% to 3-Month U.S. Treasury bills, or (iii) 100% to 3-Month U.S. Treasury bills, depending on the relative performance of the S&P MidCap 400 and its 200-business day historical simple moving average.",
+        "category": "Mid-Cap Blend",
+        "family": "Pacer",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
     "PWC": {
         "short_name": "Invesco Dynamic Market ETF",
         "long_name": "Invesco Dynamic Market ETF",
@@ -229,6 +269,16 @@
         "exchange": "BTS",
         "market": "us_market"
     },
+    "RNMC": {
+        "short_name": "Mid Cap US Equity Select ETF",
+        "long_name": "First Trust Mid Cap US Equity Select ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the Nasdaq Riskalyze US Mid Cap Index (the \"index\").\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and real estate investment trusts (\"REITs\") that comprise the index. The index is designed to select dividend-paying securities issued by mid capitalization U.S. companies.",
+        "category": "Mid-Cap Blend",
+        "family": "First Trust",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
     "SCHM": {
         "short_name": "Schwab U.S. Mid Cap ETF",
         "long_name": "Schwab U.S. Mid-Cap ETF",
@@ -239,11 +289,101 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "SPMD": {
+        "short_name": "SPDR Portfolio S&P 400 Mid Cap ",
+        "long_name": "SPDR Portfolio S&P 400 Mid Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the S&P MidCap 400 Index.\n Under normal market conditions, the fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is designed to measure the performance of the mid-capitalization segment of the U.S. equity market.",
+        "category": "Mid-Cap Blend",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "TPLC": {
+        "short_name": "Timothy Plan US Large/Mid Cap C",
+        "long_name": "Timothy Plan US Large/Mid Cap Core ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that track the performance of the Victory US Large Cap Volatility Weighted BRI Index before fees and expenses.\n The fund seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its net assets directly or indirectly in the securities included in the Victory US Large Cap Volatility Weighted BRI Index, an unmanaged, volatility weighted index created by the Sub-Advisor. The index combines fundamental criteria with individual security risk control achieved through volatility weighting of individual securities.",
+        "category": "Mid-Cap Blend",
+        "family": "Timothy Plan",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "TUSA": {
+        "short_name": "First Trust Total US Market Alp",
+        "long_name": "First Trust Total US Market AlphaDEX ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the NASDAQ AlphaDEX\u00c2\u00ae Total US Market Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks that comprise the index. The index is a modified market capitalization index designed to quantitatively identify and select U.S. exchange-listed securities issued by small, mid and large cap U.S. companies that exhibit growth and value factors and appear to have the greatest potential for capital appreciation.",
+        "category": "Mid-Cap Blend",
+        "family": "First Trust",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "USEQ": {
+        "short_name": "Invesco Russell 1000 Enhanced E",
+        "long_name": "Invesco Russell 1000 Enhanced Equal Weight ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Russell 1000\u00c2\u00ae Enhanced Value Equal Weight Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is comprised of securities in the Russell 1000\u00c2\u00ae Index that exhibit upward price momentum and good relative valuation. The underlying index is a subset of the Russell 1000, which is designed to measure the performance of the large-cap segment of the U.S. equity market and consists of the stocks of the largest 1,000 U.S. companies.",
+        "category": "Mid-Cap Blend",
+        "family": "Invesco",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "USLB": {
+        "short_name": "Invesco Russell 1000 Low Beta E",
+        "long_name": "Invesco Russell 1000 Low Beta Equal Weight ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Russell 1000\u00c2\u00ae Low Beta Equal Weight Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is comprised of securities in the Russell 1000\u00c2\u00ae Index that exhibit low beta characteristics. The underlying index is a subset of the Russell 1000, which is designed to measure the performance of the large-cap segment of the U.S. equity market and consists of the stocks of the largest 1,000 U.S. companies, by market capitalization.",
+        "category": "Mid-Cap Blend",
+        "family": "Invesco",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "USMF": {
+        "short_name": "WisdomTree U.S. Multifactor Fun",
+        "long_name": "WisdomTree U.S. Multifactor Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree U.S. Multifactor Index.\n Under normal circumstances, at least 80% of the fund&#39;s total assets will be invested in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is generally comprised of 200 U.S. companies with the highest composite scores based on two fundamental factors (value and quality measures) and two technical factors (momentum and correlation). The fund is non-diversified.",
+        "category": "Mid-Cap Blend",
+        "family": "WisdomTree",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "VFLQ": {
+        "short_name": "Vanguard U.S. Liquidity Factor ",
+        "long_name": "Vanguard U.S. Liquidity Factor ETF ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to provide long-term capital appreciation by investing in stocks with lower measures of trading liquidity as determined by the advisor.\n The fund invests primarily in U.S. common stocks with the potential to generate higher returns relative to the broad U.S. equity market by investing in stocks with lower measures of trading liquidity as determined by the advisor. The portfolio will include a diverse mix of companies representing many different market sectors and industry groups. Under normal circumstances, at least 80% of the fund&#39;s assets will be invested in securities issued by U.S. companies.",
+        "category": "Mid-Cap Blend",
+        "family": "Vanguard",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "VFMF": {
+        "short_name": "Vanguard U.S. Multifactor ETF",
+        "long_name": "Vanguard U.S. Multifactor ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to provide long-term capital appreciation.\n The fund invests primarily in U.S. common stocks with the potential to generate higher returns relative to the broad U.S. equity market by investing in stocks with relatively strong recent performance, strong fundamentals, and low prices relative to fundamentals as determined by the advisor. Under normal circumstances, at least 80% of its assets will be invested in securities issued by U.S. companies.",
+        "category": "Mid-Cap Blend",
+        "family": "Vanguard",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "VFMV": {
+        "short_name": "Vanguard U.S. Minimum Volatilit",
+        "long_name": "Vanguard U.S. Minimum Volatility ETF ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to provide long-term capital appreciation with lower volatility relative to the broad U.S. equity market.\n The fund invests primarily in a group of U.S. common stocks that together are deemed by the advisor to have the potential to generate lower volatility relative to the broad U.S. equity market. The portfolio will include a diverse mix of companies representing many different market sectors and industry groups. Under normal circumstances, at least 80% of the fund&#39;s assets will be invested in securities issued by U.S. companies.",
+        "category": "Mid-Cap Blend",
+        "family": "Vanguard",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
     "VO": {
         "short_name": "Vanguard Mid-Cap ETF",
         "long_name": "Vanguard Mid-Cap Index Fund ETF Shares",
         "currency": "USD",
-        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of mid-capitalization stocks.\n The fund employs an indexing investment approach designed to track the performance of the CRSP US Mid Cap Index, a broadly diversified index of stocks of mid-size U.S. companies. The advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+        "summary": "The investment seeks to track the performance of the CRSP US Mid Cap Index that measures the investment return of mid-capitalization stocks.\n The fund employs an indexing investment approach designed to track the performance of the CRSP US Mid Cap Index, a broadly diversified index of stocks of mid-size U.S. companies. The advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
         "category": "Mid-Cap Blend",
         "family": "Vanguard",
         "exchange": "PCX",
@@ -253,10 +393,20 @@
         "short_name": "Vanguard Extended Market ETF",
         "long_name": "Vanguard Extended Market Index Fund ETF Shares",
         "currency": "USD",
-        "summary": "The investment seeks to track a benchmark index that measures the investment return of small- and mid-capitalization stocks.\n The fund employs an indexing investment approach designed to track the performance of S&P Completion Index, a broadly diversified index of stocks of small and mid-size U.S. companies. It invests by sampling the index, meaning that it holds a broadly diversified collection of securities that, in the aggregate, approximates the full index in terms of key characteristics. These characteristics include industry weightings and market capitalization, as well as certain financial measures, such as price/earnings ratio and dividend yield.",
+        "summary": "The investment seeks to track the S&P Completion Index that measures the investment return of small- and mid-capitalization stocks.\n The fund employs an indexing investment approach designed to track the performance of S&P Completion Index, a broadly diversified index of stocks of small and mid-size U.S. companies. It invests by sampling the index, meaning that it holds a broadly diversified collection of securities that, in the aggregate, approximates the full index in terms of key characteristics. These characteristics include industry weightings and market capitalization, as well as certain financial measures, such as price/earnings ratio and dividend yield.",
         "category": "Mid-Cap Blend",
         "family": "Vanguard",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "XJH": {
+        "short_name": "iShares ESG Screened S&P Mid-Ca",
+        "long_name": "iShares ESG Screened S&P Mid-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of an index composed of mid-capitalization U.S. equities while applying screens for company involvement in controversies and controversial business activities.\n The fund seeks to track the investment results of the S&P MidCap 400 Sustainability Screened Index, which measures the performance of the mid-capitalization sector of the U.S. equity market while excluding companies involved in controversial business activities and controversies, as determined by S&P Dow Jones Indices LLC. BFA uses a representative sampling indexing strategy to manage the fund. It is non-diversified.",
+        "category": "Mid-Cap Blend",
+        "family": "iShares",
+        "exchange": "BTS",
         "market": "us_market"
     },
     "XMHQ": {

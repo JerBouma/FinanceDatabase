@@ -18,5 +18,25 @@
         "family": "SPDR State Street Global Advisors",
         "exchange": "PCX",
         "market": "us_market"
+    },
+    "HYMU": {
+        "short_name": "BlackRock High Yield Muni Incom",
+        "long_name": "BlackRock High Yield Muni Income Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to maximize tax-free current income and secondarily seeks to maximize capital appreciation with a portfolio composed principally of high yield and other income-generating U.S. municipal bonds.\n Under normal circumstances, the fund seeks to achieve its objectives by investing at least 80% of its assets in municipal bonds. Municipal bonds include debt obligations issued by or on behalf of a governmental entity or other qualifying issuer that pay interest that is, in the opinion of bond counsel to the issuer, generally excludable from gross income for federal income tax purposes. It is non-diversified.",
+        "category": "High Yield Muni",
+        "family": "BlackRock",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "SHYD": {
+        "short_name": "VanEck Vectors ETF Trust VanEck",
+        "long_name": "VanEck Vectors Short High Yield Muni ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the Bloomberg Barclays Municipal High Yield Short Duration Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the benchmark index. The index is composed of publicly traded municipal bonds that cover the U.S. dollar denominated high yield short-term tax-exempt bond market.",
+        "category": "High Yield Muni",
+        "family": "VanEck",
+        "exchange": "BTS",
+        "market": "us_market"
     }
 }

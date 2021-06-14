@@ -1,16 +1,4 @@
 {
-    "0JM.F": {
-        "short_name": "JASA MARGA (PERSERO)RP500",
-        "long_name": "PT Jasa Marga (Persero) Tbk",
-        "summary": "PT Jasa Marga (Persero) Tbk develops, constructs, operates, manages, and maintains toll roads in Indonesia. The company also offers toll road service, such as transaction services, traffic services, and road construction services. It operates 11 toll roads. PT Jasa Marga (Persero) Tbk was founded in 1978 and is headquartered in Jakarta, Indonesia.",
-        "currency": "EUR",
-        "sector": "Industrials",
-        "industry": "Engineering & Construction",
-        "exchange": "FRA",
-        "market": "dr_market",
-        "country": "Indonesia",
-        "city": "Jakarta"
-    },
     "3KH.F": {
         "short_name": "CATUR SENTOSA ADIPRANA",
         "long_name": "PT Catur Sentosa Adiprana Tbk",
@@ -34,6 +22,18 @@
         "market": "dr_market",
         "country": "Indonesia",
         "city": "Jakarta Timur"
+    },
+    "5S31.SG": {
+        "short_name": "Surya Semesta Internusa, PT Reg",
+        "long_name": "PT Surya Semesta Internusa Tbk",
+        "summary": "PT Surya Semesta Internusa Tbk, together with its subsidiaries, engages in the construction business. The company operates through five divisions: Construction of Industrial Estates, Real Estate and Rental Buildings, Building Construction, Investment in Other Companies, and Hotels. It engages in the property, development, and management of industrial estates, real estate, buildings, and commercial centers; provision of construction and general contractor services for commercial buildings, mining, and infrastructure; and development and management of hotels and resorts, as well as hospitality and industrial estate development activities. The company owns approximately 10 hotels under the Gran Meli\u00c3\u00a1 Jakarta and Meli\u00c3\u00a1 Bali Hotels, Banyan Tree Ungasan Resort, The Plaza Hotel Glodok, and BATIQA Hotels brands. It engages in the rental of office buildings and shopping centers; and trading, development, transportation, agriculture, mining and services, and building construction activities. The company was formerly known as PT Multi Investments Limited and changed its name to PT Surya Semesta Internusa Tbk in 1995. PT Surya Semesta Internusa Tbk was founded in 1971 and is based in Jakarta, Indonesia.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "exchange": "STU",
+        "market": "dr_market",
+        "country": "Indonesia",
+        "city": "Jakarta"
     },
     "ACST.JK": {
         "short_name": "Acset Indonusa Tbk.",
@@ -110,19 +110,19 @@
     "ARNA.JK": {
         "short_name": "Arwana Citramulia Tbk.",
         "long_name": "PT Arwana Citramulia Tbk",
-        "summary": "PT Arwana Citramulia Tbk, together with its subsidiaries, manufactures and distributes ceramic tiles in Indonesia. The company primarily offers wall tiles. It sells its products under the Arwana and UNO brands through sub-distributors and retail outlets. The company was formerly known as PT Arwana Citra Mulia and changed its name to PT Arwana Citramulia Tbk in November 1993. PT Arwana Citramulia Tbk was founded in 1993 and is headquartered in West Jakarta, Indonesia.",
+        "summary": "PT Arwana Citramulia Tbk, together with its subsidiaries, manufactures and distributes ceramic tiles in Indonesia. The company primarily offers wall tiles. It sells its products under the Arwana and UNO brands through sub-distributors and retail outlets. The company was formerly known as PT Arwana Citra Mulia and changed its name to PT Arwana Citramulia Tbk in November 1993. The company was founded in 1993 and is headquartered in Jakarta, Indonesia.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Building Products & Equipment",
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "Jakarta Barat"
+        "city": "Jakarta"
     },
     "ASGR.JK": {
         "short_name": "Astra Graphia Tbk.",
         "long_name": "PT Astra Graphia Tbk",
-        "summary": "PT Astra Graphia Tbk engages in trading, industrial, consulting services, office equipment and supplies contractor services, information technology, telecommunications, and investment businesses. It operates in three segments: Document Solution, Information Technology Solution, and Office Services Solution. The Document Solution segment offers hardware-based service providers to solution based services that include various aspects of the document cycle, from document input, such as creating, scanning, merging, editing, and capturing, as well as the document management, including sharing, indexing, storing, archiving, and distributing to document output comprising printing, faxing, scanning, copying, emailing, and Web viewing. This segment also provides digital printing services, such as transactional printing and printing on demand, as well as document imaging and its delivery. The Information Technology Solution segment offers hardware and software solutions; IT solutions and infrastructure services; and IT software development and managed services, including data center and cloud services. The Office Services Solution segment provides general office needs, such as outsourcing service solutions in the form of document printing production, distribution services, and general office services, including office supplies, office equipment, electronic goods, and consumer goods. The company is also involved in e-commerce, courier, and postal service businesses. It serves customers through a network of 93 service points located at 32 branch offices and other locations in Indonesia. The company was founded in 1975 and is headquartered in Jakarta, Indonesia. PT Astra Graphia Tbk is a subsidiary of PT Astra International Tbk.",
+        "summary": "PT Astra Graphia Tbk engages in trading, industrial, consulting, office equipment and supplies contractor services, information technology, telecommunications, and investment businesses. It operates in three segments: Document Solution, Information Technology Solution, and Office Services Solution. The Document Solution segment offers hardware and solution based services that include various aspects of the document cycle comprising document input, such as creating, scanning, merging, editing, and capturing, as well as the document management, including sharing, indexing, storing, archiving, and distributing, and document output consisting of printing, faxing, scanning, copying, emailing, and web viewing. This segment also provides digital printing services, such as transactional printing and printing on demand, as well as document imaging and its delivery. The Information Technology Solution segment offers hardware and software solutions; IT solutions and infrastructure services; and IT software development and managed services, including data center and cloud services. The Office Services Solution segment provides general office needs, such as outsourcing service solutions in the form of document printing production, distribution services, and general office services, including office supplies, office equipment, electronic goods, and consumer goods. The company is also involved in the e-commerce service business. It serves customers through a network of 32 branch offices and 92 service points in 514 cities and districts of Indonesia. The company was founded in 1975 and is headquartered in Jakarta, Indonesia. PT Astra Graphia Tbk is a subsidiary of PT Astra International Tbk.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Specialty Business Services",
@@ -206,7 +206,7 @@
     "BIRD.JK": {
         "short_name": "Blue Bird Tbk.",
         "long_name": "PT Blue Bird Tbk",
-        "summary": "PT Blue Bird Tbk provides taxi transportation services in Indonesia. As of December 31, 2019, it owned and operated 20,633 regular taxi units under the Bluebird, Pusaka, Lombok Taxi, and Bali Taxi band names. It also operated 883 executive taxis under the Silverbird name. The company owned and operated 6,231 rental vehicles, as well as 601 buses. The company was founded in 2001 and is based in South Jakarta, Indonesia.",
+        "summary": "PT Blue Bird Tbk provides taxi transportation services in Indonesia. The company operates combined fleet of approximately 23000 taxis in 61 depots located in Jakarta, Banten, Bandung, Semarang, Surabaya, Bali, Lombok, Medan, Padang, Batam, Pekanbaru, Palembang, Makasar, and Manado; and operates 1000 executive taxis, as well as offers lifecare taxi services. It also provides used cars; charter bus services for business and leisure; and corporate rental services. In addition, the company offers logistics, heavy equipment rental, van and coach body manufacturing services; and operates a resort consisting of 189 rooms, 104 garden chalet rooms, 39 ocean view rooms, 14 beach bungalow rooms, 1 beach garden suite room with private pool, and 30 two bedroom mangsit suites. Further, it provides supporting services, such as strategic and IT-based services to medium-and large-size business, manages and develops properties and assets that include pool area, building, etc.; and maintains and operates petrol stations. The company was founded in 2001 and is based in South Jakarta, Indonesia.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Railroads",
@@ -230,7 +230,7 @@
     "BMSR.JK": {
         "short_name": "Bintang Mitra Semestaraya Tbk",
         "long_name": "PT Bintang Mitra Semestaraya Tbk",
-        "summary": "PT Bintang Mitra Semestaraya Tbk engages in the trading of chemicals and rice in Indonesia. The company offers caustic soda liquid and flakes, hydrochloric acid, sodium hypochlorite, sulfuric acid, ethylene dichloride, vinyl chloride monomer, polyvinyl chloride, and hydrogen gas. It is also involved in the exploration and production of oil and gas; and investment and general trading activities. The company was formerly known as PT Bintang Mahkota Semestaraya and changed its name to PT Bintang Mitra Semestaraya Tbk in May 1991. PT Bintang Mitra Semestaraya Tbk was founded in 1989 and is based in Jakarta, Indonesia.",
+        "summary": "PT Bintang Mitra Semestaraya Tbk engages in the trading of chemicals and rice in Indonesia. The company offers caustic soda liquid and flakes, hydrochloric acid, sodium hypochlorite, sulfuric acid, ethylene dichloride, vinyl chloride monomer, polyvinyl chloride, and hydrogen gas. It is also involved in the exploration and production of oil and gas; and investment and general trading activities. The company was formerly known as PT Bintang Mahkota Semestaraya and changed its name to PT Bintang Mitra Semestaraya Tbk in May 1991. PT Bintang Mitra Semestaraya Tbk was founded in 1989 and is headquartered in Jakarta, Indonesia.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Conglomerates",
@@ -302,14 +302,14 @@
     "CAKK.JK": {
         "short_name": "Cahayaputra Asa Keramik Tbk.",
         "long_name": "PT Cahayaputra Asa Keramik Tbk",
-        "summary": "PT Cahayaputra Asa Keramik Tbk designs, manufactures, distributes, and sells tiles in Indonesia. The company offers wall and floor tiles for living room, kitchens, and bathrooms. It distributes its products in Europe, the United States, Canada, Australia, Africa, New Zealand, and other Asian countries. The company was founded in 1997 and is headquartered in South Jakarta, Indonesia.",
+        "summary": "PT Cahayaputra Asa Keramik Tbk designs, manufactures, distributes, and sells tiles in Indonesia. The company offers wall and floor tiles for living room, kitchens, and bathrooms. It distributes its products in Europe, the United States, Canada, Australia, Africa, New Zealand, and other Asian countries. The company was founded in 1995 and is headquartered in Jakarta Selatan, Indonesia.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Building Products & Equipment",
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "South Jakarta"
+        "city": "Jakarta Selatan"
     },
     "CANI.JK": {
         "short_name": "Capitol Nusantara Indonesia Tbk",
@@ -382,6 +382,18 @@
         "market": "id_market",
         "country": "Indonesia",
         "city": "Jakarta Selatan"
+    },
+    "FIMP.JK": {
+        "short_name": "Fimperkasa Utama Tbk.",
+        "long_name": "PT Fimperkasa Utama Tbk",
+        "summary": "PT Fimperkasa Utama Tbk engages in the construction service business in Indonesia. Its portfolio of services cover building and residential construction comprising residential homes, estates, apartments, mini buildings, sport centers, and school buildings; commercial and industrial constructions, such as shophouses and offices, buildings and facilities, factories, warehouses, facilities and infrastructure, and industrial area; and civil and infrastructure constructions, including land preparation, highways, bridges and flyovers, parking areas, and dams/reservoirs. The company was founded in 1993 and is headquartered in Jakarta Pusat, Indonesia.",
+        "currency": "IDR",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "exchange": "JKT",
+        "market": "id_market",
+        "country": "Indonesia",
+        "city": "Jakarta Pusat"
     },
     "GIAA.JK": {
         "short_name": "Garuda Indonesia (Persero) Tbk.",
@@ -575,18 +587,6 @@
         "country": "Indonesia",
         "city": "Jakarta"
     },
-    "IPU1.SG": {
-        "short_name": "Intraco Penta, PT Registered Sh",
-        "long_name": "PT Intraco Penta Tbk",
-        "summary": "PT Intraco Penta Tbk operates as a heavy equipment trading company in Indonesia. The company also provides mining contracting solutions, which include application and maintenance of mining equipment; and financing services for heavy equipment and other capital goods. It offers transportation and construction equipment; and provides fabrication and infrastructure support services for various sectors, including the mining, industrial, oil and gas, marine, and logistics, as well as operates a steam power plant. PT Intraco Penta Tbk was founded in 1970 and is based in Jakarta, Indonesia.",
-        "currency": "EUR",
-        "sector": "Industrials",
-        "industry": "Industrial Distribution",
-        "exchange": "STU",
-        "market": "dr_market",
-        "country": "Indonesia",
-        "city": "Jakarta"
-    },
     "ITMA.JK": {
         "short_name": "Sumber Energi Andalan Tbk.",
         "long_name": "PT Sumber Energi Andalan Tbk",
@@ -610,18 +610,6 @@
         "market": "dr_market",
         "country": "Indonesia",
         "city": "Jakarta Utara"
-    },
-    "J9B.F": {
-        "short_name": "ASTRINDO NUSANTAR.I.RP100",
-        "long_name": "PT Astrindo Nusantara Infrastruktur Tbk",
-        "summary": "PT Astrindo Nusantara Infrastruktur Tbk, together with its subsidiaries, operates in mining infrastructure in Indonesia. The company operates through Port services; and Coal Mining and Others segments. It provides coal-mining facilities, including harbors and crushers. The company also operates two ports in South Kalimantan and one port in East Kalimantan. In addition, it engages in the exploration, production, and infrastructure of coal mining; construction and trading activities; and rental of coal harbor and facilities. The company was formerly known as PT Benakat Integra Tbk and changed its name to PT Astrindo Nusantara Infrastruktur Tbk in May 2018. PT Astrindo Nusantara Infrastruktur Tbk was founded in 2007 and is based in Jakarta, Indonesia.",
-        "currency": "EUR",
-        "sector": "Industrials",
-        "industry": "Infrastructure Operations",
-        "exchange": "FRA",
-        "market": "dr_market",
-        "country": "Indonesia",
-        "city": "Jakarta"
     },
     "JAYA.JK": {
         "short_name": "Armada Berjaya Trans Tbk.",
@@ -674,7 +662,7 @@
     "JTPE.JK": {
         "short_name": "Jasuindo Tiga Perkasa Tbk.",
         "long_name": "PT Jasuindo Tiga Perkasa Tbk",
-        "summary": "PT Jasuindo Tiga Perkasa Tbk, together with its subsidiaries, operates in the printing industry in Indonesia. It operates through Security Products and Non-Security Products segments. The company provides security document products, such as passport, e-passport, deed and registration, cheque and giro, letter of deposit, diploma, SKPD, and National Exam scripts; windshield labels and security product labels; holograms for governmental documents and other security documents; and card technology products comprising credit, Visa, Mastercard, JCB, Union Pay, e-Money, and ATM cards, as well as security and regular cards. It also offers business documents consisting of saving books, pin mailer, roll printing, insurance policy, billing statement, delivery orders, invoice, tax invoice, shipping receipt, voucher, warranty card, forms with barcode, snap set, and continuous envelope; promo products; and game products. In addition, the company provides information technology solutions. The company was founded in 1990 and is headquartered in Sidoarjo, Indonesia.",
+        "summary": "PT Jasuindo Tiga Perkasa Tbk, together with its subsidiaries, operates in the printing industry in Indonesia. It operates through two segments, Security Products and Non-Security Products. The company offers payment products, including checks, bank cards, and other payment products; brand protection products comprising stamp duty and labels; commercial printing products, such as promo plus, game plus, pin mailers, reel printing, insurance policy, bills, and delivery orders; and identity documents consisting of passports, identity cards, and certificate/diploma documents. It also provides information technology solutions. The company was founded in 1990 and is headquartered in Sidoarjo, Indonesia.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Specialty Business Services",
@@ -686,14 +674,14 @@
     "KARW.JK": {
         "short_name": "ICTSI Jasa Prima Tbk.",
         "long_name": "PT ICTSI Jasa Prima Tbk",
-        "summary": "PT ICTSI Jasa Prima Tbk, together with its subsidiaries, engages in the development, construction, and operation of maritime logistics infrastructure facilities and related services in Indonesia. The company offers services on maintenance, upkeep, operation, and utilization of maritime facilities and infrastructure, including concession of berths and terminals, and container yards; and upkeep, maintenance and repair, and operation of technical, mechanical, and electronic equipment/aids, as well as machinery and special scales. It also provides computer software and hardware related to facilities and infrastructure of maritime logistics; and stevedoring services. In addition, the company engages in the facilities and infrastructures development for maritime logistics; trading of various goods related to maritime logistics facilities and infrastructure; and freight forwarding and warehousing, and marine and water transportation of goods. Further, it is involved in the workshop, installation and sales, and supply or rental of heavy equipment/light appliance and spare parts related to maritime logistics facilities and infrastructures. Additionally, the company offers management, business, and administration consulting related to maritime logistics facilities and infrastructures; and supply and services related to terminal and other maritime logistic facility management, dredging service of port, quay basin, channel, or supply and management of other maritime logistic infrastructure and facilities, as well as strait and shipping passage and other related supporting service. It is also involved in the development, trading, industrial, agribusiness, land transportation, repair shop, and other activities. The company was formerly known as PT Maharlika Indonesia Tbk and changed its name to PT ICTSI Jasa Prima Tbk in August 2012. The company was founded in 1978 and is based in North Jakarta, Indonesia. PT ICTSI Jasa Prima Tbk is a subsidiary of ICTSI Far East Pte. Ltd.",
+        "summary": "PT ICTSI Jasa Prima Tbk, together with its subsidiaries, engages in the development, construction, and operation of maritime logistics infrastructure facilities and related services in Indonesia. The company offers services on maintenance, upkeep, operation, and utilization of maritime facilities and infrastructure, including concession of berths and terminals, and container yards; and upkeep, maintenance and repair, and operation of technical, mechanical, and electronic equipment/aids, as well as machinery and special scales. It also provides computer software and hardware related to facilities and infrastructure of maritime logistics; and stevedoring services. In addition, the company engages in the facilities and infrastructures development for maritime logistics; trading of various goods related to maritime logistics facilities and infrastructure; and freight forwarding and warehousing, and marine and water transportation of goods. Further, it is involved in the workshop, installation and sales, and supply or rental of heavy equipment/light appliance and spare parts related to maritime logistics facilities and infrastructures. Additionally, the company offers management, business, and administration consulting related to maritime logistics facilities and infrastructures; and supply and services related to terminal and other maritime logistic facility management, dredging service of port, quay basin, channel, or supply and management of other maritime logistic infrastructure and facilities, as well as strait and shipping passage and other related supporting service. It is also involved in the development, trading, industrial, agribusiness, land transportation, repair shop, and other activities. The company was formerly known as PT Maharlika Indonesia Tbk and changed its name to PT ICTSI Jasa Prima Tbk in August 2012. The company was incorporated in 1978 and is based in North Jakarta, Indonesia. PT ICTSI Jasa Prima Tbk is a subsidiary of ICTSI Far East Pte. Ltd.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Marine Shipping",
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "North Jakarta"
+        "city": "Jakarta Utara"
     },
     "KBLI.JK": {
         "short_name": "KMI Wire & Cable Tbk.",
@@ -722,7 +710,7 @@
     "KIJA.JK": {
         "short_name": "Kawasan Industri Jababeka Tbk.",
         "long_name": "PT Kawasan Industri Jababeka Tbk",
-        "summary": "PT Kawasan Industri Jababeka Tbk engages in the real estate development activities in Indonesia and the Netherlands. It operates through Real Estate, Golf, Service and Maintenance, Power Plant, and Tourism segments. The Real Estate segment develops and sells industrial estates, and related facilities and services, including residential estates, apartments, office buildings, and shopping centers; and develops and installs water treatment plant, waste water treatment, telephone, electricity, and other facilities to support the industrial estates, such as sports and recreational facilities. It also exports and imports goods for businesses related to the development and management of the industrial estates. The Golf segment develops and manages golf course, club house, recreation, and sports facilities, as well as supporting facilities. The Service and Maintenance segment engages in the development and infrastructure management of industrial estates, hotels, and residential estates; and development and management of public infrastructure. The Power Plant segment develops and manages power plants; supplies and distributes energy; and provides energy management services to third parties. The Tourism segment is involved in the tourism object, tourism hotel, tourism estate, and education and tourism training center activities. The company also generates and distributes electricity; and provides residential condominium, financing, general trading, transportation, building management, real estate construction, and other services. PT Kawasan Industri Jababeka Tbk was founded in 1989 and is headquartered in Bekasi, Indonesia.",
+        "summary": "PT Kawasan Industri Jababeka Tbk engages in the real estate development activities in Indonesia and the Netherlands. It operates through five segments: Real Estate, Golf, Service and Maintenance, Power Plant, and Tourism. The Real Estate segment develops and sells industrial estates, and related facilities and services, including residential estates, apartments, office buildings, and shopping centers; and develops and installs water treatment plant, waste water treatment, telephone, electricity, and other facilities to support the industrial estates, such as sports and recreational facilities. It also exports and imports goods for businesses related to the development and management of the industrial estates. The Golf segment develops and manages golf course, club house, recreation, and sports facilities, as well as supporting facilities. The Service and Maintenance segment engages in the development and infrastructure management of industrial estates, hotels, and residential estates; and development and management of public infrastructure. The Power Plant segment develops and manages power plants; supplies and distributes energy; and provides energy management services to third parties. The Tourism segment is involved in the tourism object, tourism hotel, tourism estate, and education and tourism training center activities. The company also generates and distributes electricity; and provides residential condominium, financing, general trading, transportation, building management, real estate construction, and other services. PT Kawasan Industri Jababeka Tbk was founded in 1989 and is headquartered in Bekasi, Indonesia.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Conglomerates",
@@ -827,6 +815,18 @@
         "country": "Indonesia",
         "city": "Jakarta Selatan"
     },
+    "LION.JK": {
+        "short_name": "Lion Metal Works Tbk.",
+        "long_name": "PT Lion Metal Works Tbk",
+        "summary": "PT Lion Metal Works Tbk manufactures and sells office equipment and steel fabricated products in Indonesia and internationally. The company operates through Office Equipment, Building Material, and Other segments. It offers office equipment and file storage equipment systems, such as filing cabinets, horizontal file cabinet, modular units, office desks, mobile files, office chairs, lockers, cupboard, office panels, workstations, and other office equipment; and safe and security equipment, including safes, fireproof safes, hotel bedroom safes, and safe deposit boxes. The company also provides warehouse equipment comprising utility racks, archive shelving racks, multitier racks, pallet racks, drive-in racks, and shuttle racks; building and construction materials consisting of cable support systems, steel doors, fire proof doors, and steel roof structures for buildings; C-channel and related products; and hospital equipment. It sells its products through distributors, dealers, and suppliers, as well as through online store. The company was founded in 1972 and is headquartered in Jakarta, Indonesia.",
+        "currency": "IDR",
+        "sector": "Industrials",
+        "industry": "Business Equipment & Supplies",
+        "exchange": "JKT",
+        "market": "id_market",
+        "country": "Indonesia",
+        "city": "Jakarta"
+    },
     "LMSH.JK": {
         "short_name": "Lionmesh Prima Tbk.",
         "long_name": "PT Lionmesh Prima Tbk",
@@ -866,14 +866,14 @@
     "MCAS.JK": {
         "short_name": "M Cash Integrasi Tbk.",
         "long_name": "PT M Cash Integrasi Tbk",
-        "summary": "PT M Cash Integrasi Tbk distributes digital products in Indonesia. It provides digital kiosk, a self-service kiosk in modern and traditional retails; cashier, which offers digital products at modern retail; and digital products to traditional retails, as well as apps/chat bots. The company also offers information technology management consulting services. PT M Cash Integrasi Tbk was founded in 2010 and is based in South Jakarta, Indonesia.",
+        "summary": "PT M Cash Integrasi Tbk operates as a digital distribution company in Indonesia. It provides digital kiosk, a self-service kiosk in modern and traditional retails; cashier, which offers digital products at modern retail; and digital products to traditional retails, as well as apps/chat bots. The company also offers information technology management consulting services. PT M Cash Integrasi Tbk was founded in 2010 and is based in South Jakarta, Indonesia.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Business Equipment & Supplies",
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "South Jakarta"
+        "city": "Jakarta Selatan"
     },
     "MDRN.JK": {
         "short_name": "Modern Internasional Tbk.",
@@ -926,7 +926,7 @@
     "MTPS.JK": {
         "short_name": "Meta Epsi Tbk.",
         "long_name": "PT Meta Epsi Tbk.",
-        "summary": "PT Meta Epsi Tbk. provides engineering, procurement, and construction services to customers in the areas of power and industrial generation, transmission, distribution, oil and gas, and infrastructure. The company also offers project management, procurement, construction and commissioning, and project development services. In addition, it is involved in the fisheries and plantation activities. The company was founded in 1975 and is headquartered in Jakarta, Indonesia. PT Meta Epsi Tbk. is a subsidiary of PT. Central Energi Pratama.",
+        "summary": "PT Meta Epsi Tbk. provides engineering, procurement, and construction services to customers in the areas of power and industrial generation, transmission, distribution, oil and gas, and infrastructure. The company also offers project management, procurement, construction and commissioning, and project development services. In addition, it is involved in the fisheries and plantation activities. The company was founded in 1975 and is headquartered in Jakarta, Indonesia. PT Meta Epsi Tbk. operates as a subsidiary of Pt Anugerah Perkasa Semesta.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
@@ -1154,7 +1154,7 @@
     "PUTKY": {
         "short_name": "UNITED TRACTORS",
         "long_name": "PT United Tractors Tbk",
-        "summary": "PT United Tractors Tbk, together with its subsidiaries, sells and rents heavy equipment in Indonesia. The company operates through five segments: Construction Machinery, Mining Contracting, Coal Mining, Gold Mining, and Construction Industry. The company distributes heavy equipment and spare-parts under the Komatsu, UD Trucks, Scania, Bomag, Tadano, and Komatsu Forest names to cover works in mining, plantation, construction, and forestry sector, as well as for material handling and transportation; and offers services in the areas of non-destructive test, full maintenance contract, UT PAP service, machine inspection program, service call, workshop service, tire management system, pit stop management service, fabrication and remanufacturing cylinder, and UT remanufacturing. It also transports coal through river; and distributes tractors, generators, forklifts, and mini hydraulic excavators, as well as sells commodity parts. In addition, the company offers mining services that supports coal companies, such as mining design and implementation, preliminary assessment and feasibility studies, construction of infrastructure and plant, removal of overburden and waste, commercial exploitation, expansion of mine/plant, reclamation and revegetation, and transshipment and marketing, as well as owns interests in various coal mine concessions with total estimated coal reserves of 400 million tons. Further, it engages in the engineering, planning, assembling, and manufacturing components of machinery, tools, parts, and heavy equipment; provision of vessel construction and related repair services; provision of vessel charter and shipping services; construction and concrete product businesses; operating power plants; gold mining business; and fishery business. The company was founded in 1972 and is based in Jakarta Timur, Indonesia. PT United Tractors Tbk is a subsidiary of PT Astra International Tbk.",
+        "summary": "PT United Tractors Tbk, together with its subsidiaries, sells and rents heavy equipment in Indonesia. The company operates through five segments: Construction Machinery, Mining Contracting, Coal Mining, Gold Mining, and Construction Industry. The company distributes heavy equipment and spare-parts under the Komatsu, UD Trucks, Scania, Bomag, and Tadano names to mining, plantation, construction, and forestry sectors, as well as for transportation; and offers services in the areas of non-destructive test, full maintenance contract, UT PAP service, machine inspection program, service call, workshop service, tire management system, pit stop management service, fabrication and remanufacturing cylinder, and UT remanufacturing. It also transports coal through river; and distributes tractors, generators, forklifts, and mini excavators, as well as sells commodity parts, as well as operates mini hydro power plant located in Banjarnegara, Central Java. In addition, the company offers mining services that supports coal companies, such as mining design and implementation, preliminary assessment and feasibility studies, construction of infrastructure and plant, removal of overburden and waste, commercial exploitation, expansion of mine/plant, reclamation and revegetation, and transshipment and marketing, as well as owns interests in various coal mine concessions with total estimated coal reserves of 395 million tons. Further, it engages in the engineering, planning, assembling, and manufacturing components of machinery, tools, parts, and heavy equipment; provision of vessel construction and related repair services; provision of vessel charter and shipping services; construction and concrete product businesses; operating power plants; gold mining business; and fishery business. The company was founded in 1972 and is based in Jakarta Timur, Indonesia. PT United Tractors Tbk is a subsidiary of PT Astra International Tbk.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Farm & Heavy Construction Machinery",
@@ -1298,14 +1298,14 @@
     "T9Q.F": {
         "short_name": "TOTAL BANGUN PER.  RP100",
         "long_name": "PT Total Bangun Persada Tbk",
-        "summary": "PT Total Bangun Persada Tbk, together with its subsidiaries, provides construction and other related services primarily in Indonesia. It operates through Construction, and Rental and Others divisions. The company undertakes construction of education, office and religious buildings, high rise residential buildings, hospitals, shopping centers, hotels, utilities, and industrial projects. It also provides equipment rental and installation services. The company was founded in 1970 and is based in West Jakarta, Indonesia. PT Total Bangun Persada Tbk is a subsidiary of PT Total Inti Persada.",
+        "summary": "PT Total Bangun Persada Tbk, together with its subsidiaries, provides construction and other related services primarily in Indonesia. It operates through Construction, and Rental and Others divisions. The company undertakes construction of education, office and religious buildings, high rise residential buildings, hospitals, shopping centers, hotels, utilities, and industrial projects. PT Total Bangun Persada Tbk also provides equipment rental and installation services. The company was founded in 1970 and is based in West Jakarta, Indonesia. PT Total Bangun Persada Tbk is a subsidiary of PT Total Inti Persada.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Indonesia",
-        "city": "West Jakarta"
+        "city": "Jakarta Barat"
     },
     "TAMU.JK": {
         "short_name": "Pelayaran Tamarin Samudra Tbk.",
@@ -1334,14 +1334,14 @@
     "TBMS.JK": {
         "short_name": "Tembaga Mulia Semanan Tbk.",
         "long_name": "PT Tembaga Mulia Semanan Tbk",
-        "summary": "PT Tembaga Mulia Semanan Tbk manufactures, sells, and exports copper and aluminum rods and wires products in Indonesia and internationally. The company's Copper Rod and Wire segment engages in the production of copper rods and wires, as well as copper nuggets. Its Aluminum Rod segment produces EC grade rods, alloy rods, and TAL rods. The company was founded in 1977 and is based in West Jakarta, Indonesia.",
+        "summary": "PT Tembaga Mulia Semanan Tbk manufactures, sells, and exports copper and aluminum rods and wires in Indonesia and internationally. The company's Copper Rod and Wire segment engages in the production of copper rods and wires, as well as copper nuggets. Its Aluminum Rod segment produces EC grade rods, alloy rods, and TAL rods. The company was incorporated in 1977 and is based in Jakarta Barat, Indonesia.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Metal Fabrication",
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "West Jakarta"
+        "city": "Jakarta Barat"
     },
     "TCPI.JK": {
         "short_name": "TRANSCOAL PACIFIC TBK",
@@ -1430,14 +1430,14 @@
     "TOTL.JK": {
         "short_name": "Total Bangun Persada Tbk.",
         "long_name": "PT Total Bangun Persada Tbk",
-        "summary": "PT Total Bangun Persada Tbk, together with its subsidiaries, provides construction and other related services primarily in Indonesia. It operates through Construction, and Rental and Others divisions. The company undertakes construction of education, office and religious buildings, high rise residential buildings, hospitals, shopping centers, hotels, utilities, and industrial projects. It also provides equipment rental and installation services. The company was founded in 1970 and is based in West Jakarta, Indonesia. PT Total Bangun Persada Tbk is a subsidiary of PT Total Inti Persada.",
+        "summary": "PT Total Bangun Persada Tbk, together with its subsidiaries, provides construction and other related services primarily in Indonesia. It operates through Construction, and Rental and Others divisions. The company undertakes construction of education, office and religious buildings, high rise residential buildings, hospitals, shopping centers, hotels, utilities, and industrial projects. PT Total Bangun Persada Tbk also provides equipment rental and installation services. The company was founded in 1970 and is based in West Jakarta, Indonesia. PT Total Bangun Persada Tbk is a subsidiary of PT Total Inti Persada.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "West Jakarta"
+        "city": "Jakarta Barat"
     },
     "TOTO.JK": {
         "short_name": "Surya Toto Indonesia Tbk.",
@@ -1490,7 +1490,7 @@
     "UNTR.JK": {
         "short_name": "United Tractors Tbk.",
         "long_name": "PT United Tractors Tbk",
-        "summary": "PT United Tractors Tbk, together with its subsidiaries, sells and rents heavy equipment in Indonesia. The company operates through five segments: Construction Machinery, Mining Contracting, Coal Mining, Gold Mining, and Construction Industry. The company distributes heavy equipment and spare-parts under the Komatsu, UD Trucks, Scania, Bomag, Tadano, and Komatsu Forest names to cover works in mining, plantation, construction, and forestry sector, as well as for material handling and transportation; and offers services in the areas of non-destructive test, full maintenance contract, UT PAP service, machine inspection program, service call, workshop service, tire management system, pit stop management service, fabrication and remanufacturing cylinder, and UT remanufacturing. It also transports coal through river; and distributes tractors, generators, forklifts, and mini hydraulic excavators, as well as sells commodity parts. In addition, the company offers mining services that supports coal companies, such as mining design and implementation, preliminary assessment and feasibility studies, construction of infrastructure and plant, removal of overburden and waste, commercial exploitation, expansion of mine/plant, reclamation and revegetation, and transshipment and marketing, as well as owns interests in various coal mine concessions with total estimated coal reserves of 400 million tons. Further, it engages in the engineering, planning, assembling, and manufacturing components of machinery, tools, parts, and heavy equipment; provision of vessel construction and related repair services; provision of vessel charter and shipping services; construction and concrete product businesses; operating power plants; gold mining business; and fishery business. The company was founded in 1972 and is based in Jakarta Timur, Indonesia. PT United Tractors Tbk is a subsidiary of PT Astra International Tbk.",
+        "summary": "PT United Tractors Tbk, together with its subsidiaries, sells and rents heavy equipment in Indonesia. The company operates through five segments: Construction Machinery, Mining Contracting, Coal Mining, Gold Mining, and Construction Industry. The company distributes heavy equipment and spare-parts under the Komatsu, UD Trucks, Scania, Bomag, and Tadano names to mining, plantation, construction, and forestry sectors, as well as for transportation; and offers services in the areas of non-destructive test, full maintenance contract, UT PAP service, machine inspection program, service call, workshop service, tire management system, pit stop management service, fabrication and remanufacturing cylinder, and UT remanufacturing. It also transports coal through river; and distributes tractors, generators, forklifts, and mini excavators, as well as sells commodity parts, as well as operates mini hydro power plant located in Banjarnegara, Central Java. In addition, the company offers mining services that supports coal companies, such as mining design and implementation, preliminary assessment and feasibility studies, construction of infrastructure and plant, removal of overburden and waste, commercial exploitation, expansion of mine/plant, reclamation and revegetation, and transshipment and marketing, as well as owns interests in various coal mine concessions with total estimated coal reserves of 395 million tons. Further, it engages in the engineering, planning, assembling, and manufacturing components of machinery, tools, parts, and heavy equipment; provision of vessel construction and related repair services; provision of vessel charter and shipping services; construction and concrete product businesses; operating power plants; gold mining business; and fishery business. The company was founded in 1972 and is based in Jakarta Timur, Indonesia. PT United Tractors Tbk is a subsidiary of PT Astra International Tbk.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Farm & Heavy Construction Machinery",
@@ -1502,7 +1502,7 @@
     "UTY.F": {
         "short_name": "UTD TRACTORS  RP  250",
         "long_name": "PT United Tractors Tbk",
-        "summary": "PT United Tractors Tbk, together with its subsidiaries, sells and rents heavy equipment in Indonesia. The company operates through five segments: Construction Machinery, Mining Contracting, Coal Mining, Gold Mining, and Construction Industry. The company distributes heavy equipment and spare-parts under the Komatsu, UD Trucks, Scania, Bomag, Tadano, and Komatsu Forest names to cover works in mining, plantation, construction, and forestry sector, as well as for material handling and transportation; and offers services in the areas of non-destructive test, full maintenance contract, UT PAP service, machine inspection program, service call, workshop service, tire management system, pit stop management service, fabrication and remanufacturing cylinder, and UT remanufacturing. It also transports coal through river; and distributes tractors, generators, forklifts, and mini hydraulic excavators, as well as sells commodity parts. In addition, the company offers mining services that supports coal companies, such as mining design and implementation, preliminary assessment and feasibility studies, construction of infrastructure and plant, removal of overburden and waste, commercial exploitation, expansion of mine/plant, reclamation and revegetation, and transshipment and marketing, as well as owns interests in various coal mine concessions with total estimated coal reserves of 400 million tons. Further, it engages in the engineering, planning, assembling, and manufacturing components of machinery, tools, parts, and heavy equipment; provision of vessel construction and related repair services; provision of vessel charter and shipping services; construction and concrete product businesses; operating power plants; gold mining business; and fishery business. The company was founded in 1972 and is based in Jakarta Timur, Indonesia. PT United Tractors Tbk is a subsidiary of PT Astra International Tbk.",
+        "summary": "PT United Tractors Tbk, together with its subsidiaries, sells and rents heavy equipment in Indonesia. The company operates through five segments: Construction Machinery, Mining Contracting, Coal Mining, Gold Mining, and Construction Industry. The company distributes heavy equipment and spare-parts under the Komatsu, UD Trucks, Scania, Bomag, and Tadano names to mining, plantation, construction, and forestry sectors, as well as for transportation; and offers services in the areas of non-destructive test, full maintenance contract, UT PAP service, machine inspection program, service call, workshop service, tire management system, pit stop management service, fabrication and remanufacturing cylinder, and UT remanufacturing. It also transports coal through river; and distributes tractors, generators, forklifts, and mini excavators, as well as sells commodity parts, as well as operates mini hydro power plant located in Banjarnegara, Central Java. In addition, the company offers mining services that supports coal companies, such as mining design and implementation, preliminary assessment and feasibility studies, construction of infrastructure and plant, removal of overburden and waste, commercial exploitation, expansion of mine/plant, reclamation and revegetation, and transshipment and marketing, as well as owns interests in various coal mine concessions with total estimated coal reserves of 395 million tons. Further, it engages in the engineering, planning, assembling, and manufacturing components of machinery, tools, parts, and heavy equipment; provision of vessel construction and related repair services; provision of vessel charter and shipping services; construction and concrete product businesses; operating power plants; gold mining business; and fishery business. The company was founded in 1972 and is based in Jakarta Timur, Indonesia. PT United Tractors Tbk is a subsidiary of PT Astra International Tbk.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Farm & Heavy Construction Machinery",

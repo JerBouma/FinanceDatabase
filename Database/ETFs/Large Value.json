@@ -19,6 +19,26 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "BUFF": {
+        "short_name": "Innovator Laddered Fund of S&P ",
+        "long_name": "Innovator Laddered Fund of S&P 500 Power Buffer ETFs",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that generally correspond (before fees and expenses) to the performance of the Refinitiv Laddered Power Buffer Strategy Index.\n The fund will invest at least 80% of its net assets (including investment borrowing) in the exchange-traded funds (\"ETFs\") that comprise the index. The index is composed of the shares of twelve Innovator S&P 500 Power Buffer ETFs. The fund, in accordance with the index, will be continuously invested in each of the underlying ETFs and will rebalance semi-annually by purchasing and selling the underlying ETFs to equally weight the underlying ETFs. It is non-diversified.",
+        "category": "Large Value",
+        "family": "Innovator ETFs",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "CAPE": {
+        "short_name": "iPath Shiller CAPE ETN",
+        "long_name": "Barclays ETN+ Shiller Capet ETN",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate, net of expenses, the Shiller Barclays CAPETM US Core Sector Index.\n The index seeks to provide a notional long exposure to the top four relatively undervalued U.S. equity sectors that also exhibit relatively strong price momentum. It incorporates the CAPE (Cyclically Adjusted Price Earnings) ratio to assess equity market valuations of nine sectors on a monthly basis and to identify the relatively undervalued sectors represented in the S&P 500\u00c2\u00ae.",
+        "category": "Large Value",
+        "family": "Milleis Investissements Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "CDL": {
         "short_name": "VictoryShares US Large Cap High",
         "long_name": "VictoryShares US Large Cap High Div Volatility Wtd ETF",
@@ -46,7 +66,7 @@
         "summary": "The investment seeks investment results that track (before fees and expenses) the price and yield performance of the Nasdaq Chaikin Power US Large Cap Index (the \"underlying index\").\n The underlying index is an equally weighted index of large-capitalization securities. The fund generally will invest in all of the securities that comprise its underlying index in proportion to their weightings in the underlying index. It invests, under normal circumstances, at least 80% of the value of its assets (net assets plus the amount of any borrowings for investment purposes) in securities of large-capitalization U.S. issuers.",
         "category": "Large Value",
         "family": "IndexIQ",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "COWZ": {
@@ -119,26 +139,6 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "DTD": {
-        "short_name": "WisdomTree U.S. Total Dividend ",
-        "long_name": "WisdomTree U.S. Total Dividend Fund",
-        "currency": "USD",
-        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree U.S. Dividend Index.\n The fund invests at least 95% of its total assets (exclusive of collateral held from securities lending) in the component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a fundamentally-weighted index that is comprised of U.S. companies listed on a U.S. stock market that pay regular cash dividends. The fund is non-diversified.",
-        "category": "Large Value",
-        "family": "WisdomTree",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "DTN": {
-        "short_name": "WisdomTree U.S. Dividend ex-Fin",
-        "long_name": "WisdomTree U.S. Dividend ex-Financials Fund",
-        "currency": "USD",
-        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree U.S. Dividend ex-Financials Index.\n The fund normally invests at least 95% of its total assets (exclusive of collateral held from securities lending) in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is comprised of the 10 highest dividend-yielding companies in each sector, selected from the three hundred largest companies by market value in the WisdomTree U.S. Dividend Index. The fund is non-diversified.",
-        "category": "Large Value",
-        "family": "WisdomTree",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
     "DURA": {
         "short_name": "VanEck Vectors Morningstar Dura",
         "long_name": "VanEck Vectors Morningstar Durable Dividend ETF",
@@ -153,7 +153,7 @@
         "short_name": "First Trust Dow 30 Equal Weight",
         "long_name": "First Trust Dow 30 Equal Weight ETF",
         "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield of an equity index called the Dow Jones Industrial Average Equal Weight Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks that comprise the index. The index is the equal weight version of the Dow Jones Industrial Average (the \"DJIA\"). The DJIA is composed of 30 securities issued by blue-chip U.S. companies covering all industries, with the exception of transportation and utilities. The fund is non-diversified.",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield of an equity index called the Dow Jones Industrial Average Equal Weight Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks that comprise the index. The index is the equal weight version of the Dow Jones Industrial Average (the \"DJIA\"). The DJIA is composed of 30 securities issued by blue-chip U.S. companies covering all industries, with the exception of transportation and utilities.",
         "category": "Large Value",
         "family": "First Trust",
         "exchange": "PCX",
@@ -166,7 +166,7 @@
         "summary": "The investment seeks investment results, before fees and expenses, that track the performance of the Nasdaq U.S. Large Cap Equities for Rising Rates Index (the \"index\").\n The fund invests in securities that ProShare Advisors believes, in combination, should track the performance of the index. Under normal circumstances, the fund will invest at least 80% of its total assets in component securities. The index consists of 50 companies whose stock prices historically have tended to outperform the Universe during periods of rising interest rates.",
         "category": "Large Value",
         "family": "ProShares",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "ERM": {
@@ -243,7 +243,7 @@
         "short_name": "Schwab Fundamental U.S. Large C",
         "long_name": "Schwab Fundamental U.S. Large Company Index ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Russell RAFI\u00e2\u0084\u00a2 US Large Company Index.\n The fund normally will invest at least 90% of its net assets (including, for this purpose, any borrowings for investment purposes) in stocks included in the index. The index measures the performance of the large company size segment by fundamental overall company scores (scores), which are created using as the universe the U.S. companies in the FTSE Global Total Cap Index (the parent index). It may invest up to 10% of its net assets in securities not included in the index.",
+        "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Russell RAFI\u00e2\u0084\u00a2 US Large Company Index.\n The fund normally will invest at least 90% of its net assets (including, for this purpose, any borrowings for investment purposes) in stocks included in the index. The index measures the performance of the large company size segment by fundamental overall company scores (scores), which are created using as the universe the U.S. companies in the FTSE Global Total Cap Index (the parent index).",
         "category": "Large Value",
         "family": "Schwab ETFs",
         "exchange": "PCX",
@@ -256,7 +256,7 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the Nasdaq AlphaDEX\u00c2\u00ae Large Cap Value Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks that comprise the index. The index is designed to select value stocks from the NASDAQ US 500 Large Cap Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
         "category": "Large Value",
         "family": "First Trust",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "FVAL": {
@@ -289,6 +289,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "ILCV": {
+        "short_name": "iShares Morningstar Large-Cap  ",
+        "long_name": "iShares Morningstar Value ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Morningstar\u00c2\u00ae US Large-Mid Cap Broad Value IndexSM composed of large-and mid-capitalization U.S. equities that exhibit value characteristics.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. The underlying index measures the performance of stocks issued by large-mid capitalization companies that have exhibited above-average \u00e2\u0080\u009cvalue\u00e2\u0080\u009d characteristics as determined by Morningstar, Inc.\u00e2\u0080\u0099s (\u00e2\u0080\u009cMorningstar\u00e2\u0080\u009d or the \u00e2\u0080\u009cindex provider\u00e2\u0080\u009d) proprietary index methodology.",
+        "category": "Large Value",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "IUSV": {
         "short_name": "iShares Core S&P U.S. Value ETF",
         "long_name": "iShares Core S&P U.S. Value ETF",
@@ -296,7 +306,7 @@
         "summary": "The investment seeks to track the investment results of the S&P 900 Value Index (the \"underlying index\"), which measures the performance of the large- and mid-capitalization value sector of the U.S. equity market.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. It may invest the remainder of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the underlying index, but which the advisor believes will help the fund track the underlying index.",
         "category": "Large Value",
         "family": "iShares",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "IVE": {
@@ -319,6 +329,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "IWX": {
+        "short_name": "iShares Russell Top 200 Value E",
+        "long_name": "iShares Russell Top 200 Value ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Russell Top 200 Value Index, which measures the performance of the largest capitalization value sector of the U.S. equity market.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents, including shares of money market funds advised by BFA or its affiliates, as well as in securities not included in the underlying index, but which BFA believes will help the fund track the underlying index.",
+        "category": "Large Value",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "JDIV": {
         "short_name": "JPMorgan U.S. Dividend ETF",
         "long_name": "JPMorgan U.S. Dividend ETF",
@@ -326,16 +346,6 @@
         "summary": "The investment seeks investment results that closely correspond, before fees and expenses, to the performance of the JP Morgan US Dividend Index.\n The fund will invest at least 80% of its assets in securities included in the underlying index. \"Assets\" means net assets, plus the amount of borrowing for investment purposes. The underlying index is comprised of higher yielding U.S. equity securities.",
         "category": "Large Value",
         "family": "JPMorgan",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "JKF": {
-        "short_name": "iShares Morningstar Large-Cap  ",
-        "long_name": "iShares Morningstar Large-Cap Value ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the Morningstar\u00c2\u00ae Large Value IndexSM composed of large-capitalization U.S. equities that exhibit value characteristics.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. The underlying index measures the performance of stocks issued by large-capitalization companies that have exhibited above-average \"value\" characteristics as determined by Morningstar, Inc.&#39;s (\"Morningstar\" or the \"index provider\") proprietary index methodology.",
-        "category": "Large Value",
-        "family": "iShares",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -349,24 +359,34 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "LRGF": {
-        "short_name": "iShares MSCI USA Multifactor ET",
-        "long_name": "iShares MSCI USA Multifactor ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI USA Diversified Multiple-Factor Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The underlying index is designed to select equity securities from the MSCI USA Index (the \"parent index\") that have high exposure to four investment style factors: value, quality, momentum and low size, while maintaining a level of risk similar to that of the parent index.",
-        "category": "Large Value",
-        "family": "iShares",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
     "LVHD": {
         "short_name": "Legg Mason Low Volatility High ",
         "long_name": "Legg Mason Low Volatility High Dividend ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the QS Low Volatility High Dividend Index (the \"underlying index\").\n The fund will invest at least 80% of its net assets, plus borrowings for investment purposes, if any, in securities that compose the underlying index. The underlying index is composed of equity securities of U.S. companies with relatively high yield and low price and earnings volatility.",
+        "summary": "The investment seeks to track the investment results of the QS Low Volatility High Dividend Index composed of equity securities of U.S. companies with relatively high yield and low price and earnings volatility.\n The index is composed of stocks of U.S. companies across a wide range of market capitalizations, including the largest 3,000 U.S. stocks as determined by the Solactive US Broad Market Index. The fund will invest at least 80% of its net assets, plus borrowings for investment purposes, if any, in securities that compose the index.",
         "category": "Large Value",
         "family": "Franklin Templeton Investments",
-        "exchange": "NMS",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "MAGA": {
+        "short_name": "Point Bridge GOP Stock Tracker ",
+        "long_name": "Point Bridge GOP Stock Tracker ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance, before fees and expenses, of the Point Bridge GOP Stock Tracker Index.\n Under normal circumstances, at least 80% of the fund&#39;s total assets will be invested in the component securities of the index. The index uses an objective, rules-based methodology to track the performance of companies whose employees and political action committees are highly supportive of Republican candidates for election to the United States Congress, the Vice Presidency, or the Presidency (\"Candidates\") and party-affiliated federal committees or groups that are subject to federal campaign contribution limits.",
+        "category": "Large Value",
+        "family": "Point Bridge Capital",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "MGV": {
+        "short_name": "Vanguard Mega Cap Value ETF",
+        "long_name": "Vanguard Mega Cap Value Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks the performance of a benchmark index.\n The fund employs an indexing investment approach designed to track the performance of the CRSP US Mega Cap Value Index. The index is a float-adjusted, market-capitalization-weighted index designed to measure equity market performance of mega-capitalization value stocks in the United States. The Advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+        "category": "Large Value",
+        "family": "Vanguard",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "NVQ": {
@@ -396,7 +416,7 @@
         "summary": "The investment seeks to track the investment results (before fees and expenses) of the NASDAQ US Broad Dividend AchieversTM Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, Nasdaq, Inc. (\"Nasdaq\" or the \"index provider\") includes common stock in the underlying index pursuant to a proprietary selection methodology that identifies a universe of \"Dividend AchieversTM.\"",
         "category": "Large Value",
         "family": "Invesco",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "PKW": {
@@ -406,7 +426,27 @@
         "summary": "The investment seeks to track the investment results (before fees and expenses) of the NASDAQ US BuyBack AchieversTM Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The NASDAQ includes common stocks in the underlying index pursuant to a proprietary selection methodology that identifies a universe of \"BuyBack Achievers TM\".",
         "category": "Large Value",
         "family": "Invesco",
-        "exchange": "NGM",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "PRF": {
+        "short_name": "Invesco FTSE RAFI US 1000 ETF",
+        "long_name": "Invesco FTSE RAFI US 1000 ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the FTSE RAFI\u00e2\u0084\u00a2 US 1000 Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of 1,000 common stocks that FTSE International Limited and Research Affiliates LLC strictly in accordance with their guidelines and mandated procedures, include to track the performance of the largest U.S. companies based on the following four fundamental measures: book value, cash flow, sales and dividends.",
+        "category": "Large Value",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "PWV": {
+        "short_name": "Invesco Dynamic Large Cap Value",
+        "long_name": "Invesco Dynamic Large Cap Value ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Dynamic Large Cap Value IntellidexSM Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of large-capitalization U.S. value stocks that the Intellidex Provider includes principally on the basis of their capital appreciation potential.",
+        "category": "Large Value",
+        "family": "Invesco",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "QDEF": {
@@ -459,6 +499,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "RDIV": {
+        "short_name": "Invesco Exchange-Traded Fund Tr",
+        "long_name": "Invesco S&P Ultra Dividend Revenue ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the S&P 900\u00c2\u00ae Dividend Revenue-Weighted Index.\n The fund will invest at least 90% of its total assets in the securities that comprise the index. The index provider maintains and calculates the index, which is designed to measure the performance of positive revenue-producing constituent securities of the parent index. The parent index is comprised of common stocks of approximately 900 mid- and large-cap companies, and is created by combining the S&P 500 \u00c2\u00ae Index and S&P MidCap \u00c2\u00ae 400 Index to form an investable benchmark for the large- and mid-cap universe of the U.S. equity market. It is non-diversified.",
+        "category": "Large Value",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "RDVY": {
         "short_name": "First Trust Rising Dividend Ach",
         "long_name": "First Trust Rising Dividend Achievers ETF",
@@ -466,7 +516,27 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before fees and expenses) of the NASDAQ US Rising Dividend Achievers Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stock and depositary receipts that comprise the index. The index is designed to provide access to a diversified portfolio of small, mid and large capitalization companies with a history of raising their dividends while exhibiting the characteristics to continue to do so in the future by including companies with strong cash balances, low debt and increasing earnings.",
         "category": "Large Value",
         "family": "First Trust",
-        "exchange": "NGM",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "RFDA": {
+        "short_name": "RiverFront Dynamic US Dividend ",
+        "long_name": "RiverFront Dynamic US Dividend Advantage ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide capital appreciation and dividend income.\n The fund invests at least 65% of its net assets in a portfolio of equity securities of publicly traded U.S. companies with the potential for dividend income. Equity securities include common stocks and common or preferred shares of real estate investment trusts. The fund may invest in small-, mid- and large-capitalization companies. It is non-diversified.",
+        "category": "Large Value",
+        "family": "ALPS",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "RPV": {
+        "short_name": "Invesco S&P 500 Pure Value ETF",
+        "long_name": "Invesco S&P 500 Pure Value ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Pure Value Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of a subset of securities from the S&P 500\u00c2\u00ae Index that exhibit strong value characteristics.",
+        "category": "Large Value",
+        "family": "Invesco",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "RWL": {
@@ -479,6 +549,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "RWVG": {
+        "short_name": "Direxion Russell 1000 Value Ove",
+        "long_name": "Direxion Russell 1000 Value Over Growth ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results, before fees and expenses, that track the Russell 1000\u00c2\u00ae Value/Growth 150/50 Net Spread Index (the \"index\").\n The index measures the performance of a portfolio that has 150% long exposure to the Russell 1000\u00c2\u00ae Value Index (the \"Long Component\") and 50% short exposure to the Russell 1000\u00c2\u00ae Growth Index (the \"Short Component\"). The fund, under normal circumstances, invests at least 80% of its net assets (plus borrowing for investment purposes) in securities that comprise the Long Component of the index or shares of exchange-traded funds (\u00e2\u0080\u009cETFs\u00e2\u0080\u009d) that track the Long Component of the index. The fund is non-diversified.",
+        "category": "Large Value",
+        "family": "Direxion Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "SCHD": {
         "short_name": "Schwab US Dividend Equity ETF",
         "long_name": "Schwab U.S. Dividend Equity ETF",
@@ -486,6 +566,26 @@
         "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Dow Jones U.S. Dividend 100\u00e2\u0084\u00a2 Index.\n To pursue its goal, the fund generally invests in stocks that are included in the index. The index is designed to measure the performance of high dividend yielding stocks issued by U.S. companies that have a record of consistently paying dividends, selected for fundamental strength relative to their peers, based on financial ratios. The fund invests at least 90% of its net assets in stocks that are included in the index.",
         "category": "Large Value",
         "family": "Schwab ETFs",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SCHV": {
+        "short_name": "Schwab U.S. Large-Cap Value ETF",
+        "long_name": "Schwab U.S. Large-Cap Value ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Dow Jones U.S. Large-Cap Value Total Stock Market Index.\n To pursue its goal, the fund generally invests in stocks that are included in the Dow Jones U.S. Large-Cap Value Total Stock Market Index. The index includes the large-cap value portion of the Dow Jones U.S. Total Stock Market Index actually available to investors in the marketplace. The Dow Jones U.S. Large-Cap Value Total Stock Market Index includes the components ranked 1-750 by full market capitalization and that are classified as \"value\" based on a number of factors.",
+        "category": "Large Value",
+        "family": "Schwab ETFs",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SDGA": {
+        "short_name": "Impact Shares Sustainable Devel",
+        "long_name": "Impact Shares Sustainable Development Goals Global Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that, before fees and expenses, track the performance of the Morningstar\u00c2\u00ae Societal Development Index.\n The fund will, under normal circumstances, invest at least 80% of its total assets plus any borrowings for investment purposes in component securities of the underlying index. The underlying index is constructed using a rules based methodology to select companies with specific characteristics from the Morningstar\u00c2\u00ae Global Markets Large-Mid Index (parent index). The fund is non-diversified.",
+        "category": "Large Value",
+        "family": "Impact Shares",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -513,7 +613,7 @@
         "short_name": "AAM S&P 500 High Dividend Value",
         "long_name": "AAM S&P 500 High Dividend Value ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the S&P 500 Dividend and Free Cash Flow Yield Index (the \"index\").\n Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of any collateral held from securities lending) will be invested in the component securities of the index. The index is a rules-based, equal-weighted index that is designed to provide exposure to the constituents of the S&P 500\u00c2\u00ae Index that exhibit both high dividend yield and sustainable dividend distribution characteristics, while maintaining diversified sector exposure.",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the S&P 500 Dividend and Free Cash Flow Yield Index.\n The index is a rules-based, equal-weighted index that is designed to provide exposure to the constituents of the S&P 500\u00c2\u00ae Index that exhibit both high dividend yield and sustainable dividend distribution characteristics, while maintaining diversified sector exposure. At least 80% of the fund\u00e2\u0080\u0099s net assets, plus borrowings for investment purposes, will be invested in equity securities that (i) are included in the S&P 500 Index and (ii) have had a positive indicated annual dividend yield within the past year.",
         "category": "Large Value",
         "family": "AAM",
         "exchange": "PCX",
@@ -529,6 +629,36 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "SPVM": {
+        "short_name": "Invesco S&P 500 Value with Mome",
+        "long_name": "Invesco S&P 500 Value with Momentum ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae High Momentum Value Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, the index provider compiles, maintains and calculates the underlying index, which is designed to track the performance of approximately 100 stocks in the S&P 500\u00c2\u00ae Index that have the highest \"value\" and \"momentum\" scores.",
+        "category": "Large Value",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SPVU": {
+        "short_name": "Invesco S&P 500 Enhanced Value ",
+        "long_name": "Invesco S&P 500 Enhanced Value ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500 Enhanced Value Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is designed to track the performance of approximately 100 stocks in the S&P 500\u00c2\u00ae Index that have the highest \"value score,\" which the index provider calculates based on fundamental ratios of a company&#39;s stock. A value stock tends to trade at a lower price relative to such fundamentals and thus may be considered undervalued by investors.",
+        "category": "Large Value",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SPYV": {
+        "short_name": "SPDR Series Trust SPDR Portfoli",
+        "long_name": "SPDR Portfolio S&P 500 Value ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the S&P 500 Value Index that tracks the performance of large capitalization exchange traded U.S. equity securities exhibiting \"value\" characteristics.\n The fund employs a sampling strategy in seeking to track the performance of the S&P 500 Value Index. It generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index measures the performance of the large-capitalization value segment of the U.S. equity market.",
+        "category": "Large Value",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "STLV": {
         "short_name": "iShares Factors US Value Style ",
         "long_name": "iShares Factors US Value Style ETF",
@@ -539,6 +669,16 @@
         "exchange": "BTS",
         "market": "us_market"
     },
+    "SYV": {
+        "short_name": "SPDR MFS Systematic Value Equit",
+        "long_name": "SPDR MFS Systematic Value Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks capital appreciation.\n Under normal circumstances, the fund invests at least 80% of its net assets (plus the amount of borrowings for investment purposes) in equity securities. Equity securities in which the fund invests include common stocks, preferred stocks, and securities convertible into stocks. In selecting securities for the fund, the Sub-Adviser utilizes a bottom-up approach to buying and selling investments for the fund.",
+        "category": "Large Value",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "TERM": {
         "short_name": "EquityCompass Tactical Risk Man",
         "long_name": "EquityCompass Tactical Risk Manager ETF",
@@ -546,6 +686,16 @@
         "summary": "The investment seeks to provide long term capital appreciation with capital preservation as a secondary objective.\n The fund will seek to achieve its investment objectives by investing in equity securities of companies domiciled in the U.S. or listed on a U.S. securities exchange. The fund&#39;s strategy seeks to provide exposure to U.S. listed equity securities and to avoid large, prolonged market losses and reduce volatility. It may also invest in inverse ETFs which seek to provide investment results that match a negative return of the performance of an underlying index like the S&P 500\u00c2\u00ae Index.",
         "category": "Large Value",
         "family": "First Trust",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "ULVM": {
+        "short_name": "VictoryShares USAA MSCI USA Val",
+        "long_name": "VictoryShares USAA MSCI USA Value Momentum ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the MSCI USA Select Value Momentum Blend Index.\n Under normal circumstances, the fund seeks to achieve its investment objective by investing at least 80% of its assets in securities in the index. The index is designed to deliver exposure to equity securities of large- and mid-capitalization U.S. issuers within the MSCI USA Index (the \"parent index\") that have higher exposure to value and momentum factors, while also maintaining moderate index turnover and lower realized volatility than traditional capitalization-weighted indexes.",
+        "category": "Large Value",
+        "family": "Victory Capital",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -569,14 +719,44 @@
         "exchange": "NMS",
         "market": "us_market"
     },
-    "VLUE": {
-        "short_name": "iShares MSCI USA Value Factor E",
-        "long_name": "iShares MSCI USA Value Factor ETF",
+    "VLU": {
+        "short_name": "SPDR S&P 1500 Value Tilt ETF",
+        "long_name": "SPDR S&P 1500 Value Tilt ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI USA Enhanced Value Index composed of U.S. large- and mid-capitalization stocks with value characteristics and relatively lower valuations.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The index is based on a traditional market capitalization-weighted parent index, the MSCI USA Index (the \"parent index\"). The parent index includes U.S. large- and mid- capitalization stocks.",
+        "summary": "The investment seeks investment results that, before fees and expenses, correspond generally to the total return performance of the S&P 1500 Low Valuation Tilt Index.\n The fund employs a sampling strategy in seeking to track the index. It generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index applies an alternative weighting methodology to the S&P Composite 1500 Index so that stocks with relatively low valuations (i.e., relatively \"cheap\") are overweight relative to the S&P Composite 1500 Index and stocks with relatively high valuations are underweight. The fund is non-diversified.",
         "category": "Large Value",
-        "family": "iShares",
-        "exchange": "BTS",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "VONV": {
+        "short_name": "Vanguard Russell 1000 Value ETF",
+        "long_name": "Vanguard Russell 1000 Value Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of large-capitalization value stocks in the United States.\n The fund employs an indexing investment approach designed to track the performance of the Russell 1000\u00c2\u00ae Value Index. The index is designed to measure the performance of large-capitalization value stocks in the United States. The Advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+        "category": "Large Value",
+        "family": "Vanguard",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "VOOV": {
+        "short_name": "Vanguard S&P 500 Value ETF",
+        "long_name": "Vanguard S&P 500 Value Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of large-capitalization value stocks in the United States.\n The fund employs an indexing investment approach designed to track the performance of the S&P 500\u00c2\u00ae Value Index, which represents the value companies, as determined by the index sponsor, of the S&P 500 Index. The index measures the performance of large-capitalization value companies in the United States.",
+        "category": "Large Value",
+        "family": "Vanguard",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "VSMV": {
+        "short_name": "VictoryShares US Multi-Factor M",
+        "long_name": "VictoryShares US Multi-Factor Minimum Volatility ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that track the performance of the Nasdaq Victory US Multi-Factor Minimum Volatility Index before fees and expenses.\n The fund seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its assets in securities included in the Nasdaq Victory US Multi-Factor Minimum Volatility Index (the \"index\"). The index utilizes a rules-based approach designed to generate investment returns with less volatility than the broader U.S. market.",
+        "category": "Large Value",
+        "family": "Victory Capital",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "VTV": {
@@ -596,6 +776,26 @@
         "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of common stocks of companies that are characterized by high dividend yield.\n The fund employs an indexing investment approach designed to track the performance of the FTSE High Dividend Yield Index, which consists of common stocks of companies that pay dividends that generally are higher than average. The adviser attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
         "category": "Large Value",
         "family": "Vanguard",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "WBIF": {
+        "short_name": "WBI BullBear Value 3000 ETF",
+        "long_name": "WBI BullBear Value 3000 ETF",
+        "currency": "USD",
+        "summary": "The investment seeks long-term capital appreciation and the potential for current income, while also seeking to protect principal during unfavorable market conditions.\n The fund will seek to invest in the equity securities of small-capitalization, mid-capitalization, and large capitalization domestic and foreign companies that the sub-advisor to the fund and an affiliate of the advisor, believes display attractive prospects for growth in a company&#39;s intrinsic value, and in other tactical investment opportunities. It may invest up to 50% of its net assets in the securities of issuers in emerging markets.",
+        "category": "Large Value",
+        "family": "WBI Investments",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "WBIG": {
+        "short_name": "WBI BullBear Yield 3000 ETF",
+        "long_name": "WBI BullBear Yield 3000 ETF",
+        "currency": "USD",
+        "summary": "The investment seeks long-term capital appreciation and the potential for current income, while also seeking to protect principal during unfavorable market conditions.\n The fund will seek to invest in the equity securities of small-capitalization, mid-capitalization, and large capitalization domestic and foreign companies that the sub-advisor to the fund and an affiliate of the advisor, believes display attractive prospects for growth in a company&#39;s intrinsic value, and in other tactical investment opportunities. It may invest up to 50% of its net assets in the securities of issuers in emerging markets.",
+        "category": "Large Value",
+        "family": "WBI Investments",
         "exchange": "PCX",
         "market": "us_market"
     }

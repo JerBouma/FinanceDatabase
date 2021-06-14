@@ -683,6 +683,12 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
+    "AUDNGN=X": {
+        "short_name": "AUD/NGN",
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "AUDNOK=X": {
         "short_name": "AUD/NOK",
         "currency": "NOK",
@@ -797,6 +803,12 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
+    "AUDSYP=X": {
+        "short_name": "AUD/SYP",
+        "currency": "SYP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "AUDTHB=X": {
         "short_name": "AUD/THB",
         "currency": "THB",
@@ -893,12 +905,6 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
-    "AUXAED=X": {
-        "short_name": "AUX/AED",
-        "currency": null,
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
     "AUXCAD=X": {
         "short_name": "AUX/CAD",
         "currency": null,
@@ -924,10 +930,10 @@
         "market": "ccy_market"
     },
     "AUXGBP=X": {
-        "short_name": "AUX/GBP",
+        "short_name": null,
         "currency": null,
-        "exchange": "CCY",
-        "market": "ccy_market"
+        "exchange": null,
+        "market": null
     },
     "AUXHKD=X": {
         "short_name": "AUX/HKD",
@@ -973,12 +979,6 @@
     },
     "AUXPGK=X": {
         "short_name": "AUX/PGK",
-        "currency": null,
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "AUXPKG=X": {
-        "short_name": null,
         "currency": null,
         "exchange": "CCY",
         "market": "ccy_market"
@@ -1673,18 +1673,6 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
-    "BTC=X": {
-        "short_name": null,
-        "currency": null,
-        "exchange": null,
-        "market": null
-    },
-    "BTCUSD=X": {
-        "short_name": null,
-        "currency": null,
-        "exchange": null,
-        "market": null
-    },
     "BTN=X": {
         "short_name": "USD/BTN",
         "currency": "BTN",
@@ -2273,6 +2261,12 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
+    "CADKGS=X": {
+        "short_name": "CAD/KGS",
+        "currency": "KGS",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "CADKHR=X": {
         "short_name": "CAD/KHR",
         "currency": "KHR",
@@ -2642,6 +2636,12 @@
     "CADSVC=X": {
         "short_name": "CAD/SVC",
         "currency": "SVC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADSYP=X": {
+        "short_name": "CAD/SYP",
+        "currency": "SYP",
         "exchange": "CCY",
         "market": "ccy_market"
     },
@@ -3665,6 +3665,12 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
+    "CHFSYP=X": {
+        "short_name": "CHF/SYP",
+        "currency": "SYP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "CHFSZL=X": {
         "short_name": "CHF/SZL",
         "currency": "SZL",
@@ -4379,6 +4385,12 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
+    "CUPUSD=X": {
+        "short_name": "CUP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "CVE=X": {
         "short_name": "USD/CVE",
         "currency": "CVE",
@@ -4990,18 +5002,6 @@
         "currency": "USD",
         "exchange": "CCY",
         "market": "ccy_market"
-    },
-    "ETH=X": {
-        "short_name": null,
-        "currency": null,
-        "exchange": null,
-        "market": null
-    },
-    "ETHUSD=X": {
-        "short_name": null,
-        "currency": null,
-        "exchange": null,
-        "market": null
     },
     "EUR=X": {
         "short_name": "USD/EUR",
@@ -6239,6 +6239,12 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
+    "FKP=X": {
+        "short_name": "USD/FKP",
+        "currency": "FKP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "FKPBRX=X": {
         "short_name": "FKP/BRX",
         "currency": null,
@@ -6710,6 +6716,12 @@
     "GBPKES=X": {
         "short_name": "GBP/KES",
         "currency": "KES",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPKGS=X": {
+        "short_name": "GBP/KGS",
+        "currency": "KGS",
         "exchange": "CCY",
         "market": "ccy_market"
     },
@@ -8538,7 +8550,7 @@
         "market": "ccy_market"
     },
     "ISKDKX=X": {
-        "short_name": null,
+        "short_name": "ISK/DKX",
         "currency": null,
         "exchange": "CCY",
         "market": "ccy_market"
@@ -10354,18 +10366,6 @@
         "currency": null,
         "exchange": "CCY",
         "market": "ccy_market"
-    },
-    "LTC=X": {
-        "short_name": null,
-        "currency": null,
-        "exchange": null,
-        "market": null
-    },
-    "LTCUSD=X": {
-        "short_name": null,
-        "currency": null,
-        "exchange": null,
-        "market": null
     },
     "LYD=X": {
         "short_name": "USD/LYD",
@@ -12779,6 +12779,12 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
+    "SARSEK=X": {
+        "short_name": "SAR/SEK",
+        "currency": "SEK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "SARSGD=X": {
         "short_name": "SAR/SGD",
         "currency": "SGD",
@@ -13010,6 +13016,12 @@
     "SEKINR=X": {
         "short_name": "SEK/INR",
         "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SEKISK=X": {
+        "short_name": "SEK/ISK",
+        "currency": "ISK",
         "exchange": "CCY",
         "market": "ccy_market"
     },
@@ -13445,6 +13457,12 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
+    "SHP=X": {
+        "short_name": "USD/SHP",
+        "currency": "SHP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "SHPBRX=X": {
         "short_name": "SHP/BRX",
         "currency": null,
@@ -13544,6 +13562,12 @@
     "SYPBRX=X": {
         "short_name": "SYP/BRX",
         "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SYPUSD=X": {
+        "short_name": "SYP/USD",
+        "currency": "USD",
         "exchange": "CCY",
         "market": "ccy_market"
     },
@@ -13825,7 +13849,7 @@
     },
     "TNDGBP=X": {
         "short_name": "TND/GBP",
-        "currency": null,
+        "currency": "GBP",
         "exchange": "CCY",
         "market": "ccy_market"
     },
@@ -15167,9 +15191,351 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
+    "ZARAED=X": {
+        "short_name": "ZAR/AED",
+        "currency": "AED",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARANG=X": {
+        "short_name": "ZAR/ANG",
+        "currency": "ANG",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARAOA=X": {
+        "short_name": "ZAR/AOA",
+        "currency": "AOA",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARAUD=X": {
+        "short_name": "ZAR/AUD",
+        "currency": "AUD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARBRL=X": {
+        "short_name": "ZAR/BRL",
+        "currency": "BRL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARBRX=X": {
+        "short_name": "ZAR/BRX",
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARBWP=X": {
+        "short_name": "ZAR/BWP",
+        "currency": "BWP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARCAD=X": {
+        "short_name": "ZAR/CAD",
+        "currency": "CAD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARCAX=X": {
+        "short_name": "ZAR/CAX",
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARCHF=X": {
+        "short_name": "ZAR/CHF",
+        "currency": "CHF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARCNY=X": {
+        "short_name": "ZAR/CNY",
+        "currency": "CNY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARCZX=X": {
+        "short_name": "ZAR/CZX",
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARDKK=X": {
+        "short_name": "ZAR/DKK",
+        "currency": "DKK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARDKX=X": {
+        "short_name": "ZAR/DKX",
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZAREGP=X": {
+        "short_name": "ZAR/EGP",
+        "currency": "EGP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZAREUR=X": {
+        "short_name": "ZAR/EUR",
+        "currency": "EUR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARGBP=X": {
+        "short_name": "ZAR/GBP",
+        "currency": "GBP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARGHS=X": {
+        "short_name": "ZAR/GHS",
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARHKD=X": {
+        "short_name": "ZAR/HKD",
+        "currency": "HKD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARHUX=X": {
+        "short_name": "ZAR/HUX",
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARIDR=X": {
+        "short_name": "ZAR/IDR",
+        "currency": "IDR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARINR=X": {
+        "short_name": "ZAR/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARJPY=X": {
+        "short_name": "ZAR/JPY",
+        "currency": "JPY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARKES=X": {
+        "short_name": "ZAR/KES",
+        "currency": "KES",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARKRW=X": {
+        "short_name": "ZAR/KRW",
+        "currency": "KRW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARLKR=X": {
+        "short_name": "ZAR/LKR",
+        "currency": "LKR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARLSL=X": {
+        "short_name": "ZAR/LSL",
+        "currency": "LSL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARMWK=X": {
+        "short_name": "ZAR/MWK",
+        "currency": "MWK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARMXN=X": {
+        "short_name": "ZAR/MXN",
+        "currency": "MXN",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARMYR=X": {
+        "short_name": "ZAR/MYR",
+        "currency": "MYR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARNOK=X": {
+        "short_name": "ZAR/NOK",
+        "currency": "NOK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARNZD=X": {
+        "short_name": "ZAR/NZD",
+        "currency": "NZD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARPHP=X": {
+        "short_name": "ZAR/PHP",
+        "currency": "PHP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARPKR=X": {
+        "short_name": "ZAR/PKR",
+        "currency": "PKR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARPLN=X": {
+        "short_name": "ZAR/PLN",
+        "currency": "PLN",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARPLX=X": {
+        "short_name": "ZAR/PLX",
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARRUB=X": {
+        "short_name": "ZAR/RUB",
+        "currency": "RUB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARRUX=X": {
+        "short_name": "ZAR/RUX",
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARSCR=X": {
+        "short_name": "ZAR/SCR",
+        "currency": "SCR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARSEK=X": {
+        "short_name": "ZAR/SEK",
+        "currency": "SEK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARSGD=X": {
+        "short_name": "ZAR/SGD",
+        "currency": "SGD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARSZL=X": {
+        "short_name": "ZAR/SZL",
+        "currency": "SZL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARTHB=X": {
+        "short_name": "ZAR/THB",
+        "currency": "THB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARTHX=X": {
+        "short_name": "ZAR/THX",
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARTWD=X": {
+        "short_name": "ZAR/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARUSD=X": {
+        "short_name": "ZAR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARXDR=X": {
+        "short_name": "ZAR/XDR",
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARZAC=X": {
+        "short_name": null,
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARZMW=X": {
+        "short_name": "ZAR/ZMW",
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "ZMW=X": {
         "short_name": "USD/ZMW",
         "currency": "ZMW",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZMWBRX=X": {
+        "short_name": "ZMW/BRX",
+        "currency": null,
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZMWCAD=X": {
+        "short_name": "ZMW/CAD",
+        "currency": "CAD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZMWCHF=X": {
+        "short_name": "ZMW/CHF",
+        "currency": "CHF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZMWEUR=X": {
+        "short_name": "ZMW/EUR",
+        "currency": "EUR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZMWGBP=X": {
+        "short_name": "ZMW/GBP",
+        "currency": "GBP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZMWJPY=X": {
+        "short_name": "ZMW/JPY",
+        "currency": "JPY",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZMWUSD=X": {
+        "short_name": "ZMW/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZMWZAR=X": {
+        "short_name": "ZMW/ZAR",
+        "currency": null,
         "exchange": "CCY",
         "market": "ccy_market"
     }

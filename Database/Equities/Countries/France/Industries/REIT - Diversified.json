@@ -11,6 +11,18 @@
         "country": "France",
         "city": "Issy-les-Moulineaux"
     },
+    "8L9.F": {
+        "short_name": "FONCIERE ATLAND INH.EO 11",
+        "long_name": "Fonciere Atland",
+        "summary": "Fonciere Atland operates as a real estate investment trust. It invests in offices, retail outlets, warehouses, or light industrial premises. It also provides real estate sale-leaseback services, and construction and turnkey rental development services to business customers. The company is based in Paris, France.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "France",
+        "city": "Paris"
+    },
     "BLEE.PA": {
         "short_name": "BLEECKER",
         "long_name": "Bleecker Soci\u00e9t\u00e9 Anonyme",
@@ -34,18 +46,6 @@
         "market": "fr_market",
         "country": "France",
         "city": "Paris"
-    },
-    "CDMGF": {
-        "short_name": "ICADE",
-        "long_name": "Icade SA",
-        "summary": "As an investor and a developer, Icade is an integrated real estate player that designs innovative real estate products and services adapted to new urban lifestyles and habits. By placing corporate social responsibility and innovation at the core of its strategy, Icade is closely involved with stakeholders and users in the cities\u00c2\u0097local authorities and communities, companies and employees, institutions and associations\u00c2\u0085 As an office and healthcare property investor (portfolio value of \u00c2\u008011.6bn as of 06/30/2020 on a proportionate consolidation basis) and as a property developer (2019 economic revenues of nearly \u00c2\u00801bn), Icade has been able to reinvent the real estate business and foster the emergence of tomorrow's greener, smarter and more responsible cities. Icade is a significant player in the Greater Paris area and major French cities. Icade is listed on Euronext Paris as a French Listed Real Estate Investment Company (soci\u00c3\u00a9t\u00c3\u00a9 d'investissement immobilier cot\u00c3\u00a9e, SIIC). Its leading shareholder is the Caisse des d\u00c3\u00a9p\u00c3\u00b4ts Group.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "France",
-        "city": "Issy-les-Moulineaux"
     },
     "COV.PA": {
         "short_name": "COVIVIO",
@@ -143,6 +143,18 @@
         "country": "France",
         "city": "Paris"
     },
+    "MRM.PA": {
+        "short_name": "M.R.M",
+        "long_name": "M.R.M. SA",
+        "summary": "MRM is a listed real estate investment company that owns and manages a portfolio of retail properties across several regions of France. Its majority shareholder is SCOR SE, which owns 59.9% of share capital. MRM is listed in Compartment C of Euronext Paris (ISIN: FR0000060196 - Bloomberg code: MRM:FP \u00c2\u0096 Reuters code: MRM.PA). MRM opted for SIIC status on 1 January 2008.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "PAR",
+        "market": "fr_market",
+        "country": "France",
+        "city": "Paris"
+    },
     "PAR.PA": {
         "short_name": "PAREF",
         "long_name": "Paref SA",
@@ -154,5 +166,17 @@
         "market": "fr_market",
         "country": "France",
         "city": "Paris"
+    },
+    "PAT.PA": {
+        "short_name": "PATRIMOINE ET COMM",
+        "long_name": "Patrimoine et Commerce SA",
+        "summary": "Patrimoine et Commerce SA, a real estate company, engages in the acquisition, development, and operation of commercial real estate properties in France. The company operates a portfolio of 31 real estate assets covering a total area of 129,280 square meters located in high-attraction areas in the suburbs or centers of medium-sized cities. Its property portfolio includes shopping malls, supermarkets, shops, and business parks. The company is based in Boulogne-Billancourt, France.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "PAR",
+        "market": "fr_market",
+        "country": "France",
+        "city": "Boulogne-Billancourt"
     }
 }

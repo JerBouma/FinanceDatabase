@@ -1,4 +1,16 @@
 {
+    "1AG.AX": {
+        "short_name": "ALTERRA FPO",
+        "long_name": "Alterra Limited",
+        "summary": "Alterra Limited engages in the origination, development, and management of agricultural land and water assets in Australia. Its flagship project is the Carpenters Project, which covers an area of approximately 300 hectares of avocado development located in Pemberton, Western Australia. The company was formerly known as Carbon Conscious Limited and changed its name to Alterra Limited in March 2016. Alterra Limited was incorporated in 2008 and is based in West Leederville, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "West Leederville"
+    },
     "4B5.F": {
         "short_name": "PENDAL GROUP LTD",
         "long_name": "Pendal Group Limited",
@@ -11,6 +23,18 @@
         "country": "Australia",
         "city": "Sydney"
     },
+    "ACQ.AX": {
+        "short_name": "ACORN CAP FPO",
+        "long_name": "Acorn Capital Investment Fund Limited",
+        "summary": "Acorn Capital Investment Fund Limited is an open ended equity mutual fund launched and managed by Acorn Capital Limited. The fund invests in public equity markets of Australia. It invests in the listed and unlisted microcap companies. The fund benchmarks its performance against S&P/ASX Small Ordinaries Accumulation Index. It invests in the companies operating across diversified sectors. Acorn Capital Investment Fund Limited was launched in 2014 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Melbourne"
+    },
     "AEF.AX": {
         "short_name": "A ETHICAL FPO",
         "long_name": "Australian Ethical Investment Ltd.",
@@ -22,6 +46,66 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Sydney"
+    },
+    "AEG.AX": {
+        "short_name": "AB EQ PERF FPO",
+        "long_name": "Absolute Equity Performance Fund Limited",
+        "summary": "Absolute Equity Performance Fund Limited is an equity mutual fund launched and managed by Bennelong Long Short Equity Management Pty Limited. It invests in the public equity markets of Australia. The fund employs fundamental analysis and uses fundamental research to select securities and generate return. It invests in stocks of companies operating across the diversified sectors. Absolute Equity Performance Fund Limited was founded in November, 2015 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": null
+    },
+    "AFI.AX": {
+        "short_name": "AUS.FOUND. FPO",
+        "long_name": "Australian Foundation Investment Company Limited",
+        "summary": "Australian Foundation Investment Company Limited is a publicly owned investment manager. The firm invests in the public equity markets of Australia and New Zealand. It invests in value stocks of companies. It benchmarks the performance of its portfolio against S&P/ASX 200 Accumulation Index. It invests in companies across diversified industries. The firm employs fundamental analysis with a focus on bottom-up research to make its investments. The firm conducts in-house research to make its investments. Australian Foundation Investment Company Limited was founded in 1928 and is based in Melbourne, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Melbourne"
+    },
+    "AFI.NZ": {
+        "short_name": "Australian Foundation Investmen",
+        "long_name": "Australian Foundation Investment Company Limited",
+        "summary": "Australian Foundation Investment Company Limited is a publicly owned investment manager. The firm invests in the public equity markets of Australia and New Zealand. It invests in value stocks of companies. It benchmarks the performance of its portfolio against S&P/ASX 200 Accumulation Index. It invests in companies across diversified industries. The firm employs fundamental analysis with a focus on bottom-up research to make its investments. The firm conducts in-house research to make its investments. Australian Foundation Investment Company Limited was founded in 1928 and is based in Melbourne, Australia.",
+        "currency": "NZD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "NZE",
+        "market": "nz_market",
+        "country": "Australia",
+        "city": "Melbourne"
+    },
+    "AIB.AX": {
+        "short_name": "AURORA GLB UNITS",
+        "long_name": "Aurora Global Income Trust",
+        "summary": "Aurora Global Income Trust is an equity mutual fund launched and managed by Aurora Funds Management Limited. The fund invests into the public equity markets of the globe. It seeks to invest in stocks of companies operating across diversified sectors. The firm primarily invests in global exchange listed equities and equity derivatives, including options and convertible securities. It employs absolute returns strategy to make its investments. The fund employs fundamental and quantitative analysis with focus on factors like takeovers and mergers, earnings announcements, demergers and restructuring, liquidity events, recapitalizations, multiple share classes, option availability, and pricing to create its portfolio. It was formerly known as Aurora Global Infrastructure Income Trust. Aurora Global Income Trust was formed on December 18, 2007 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "ALI.AX": {
+        "short_name": "ARGO GLOBL FPO",
+        "long_name": "Argo Global Listed Infrastructure Limited",
+        "summary": "Argo Global Listed Infrastructure Limited is a closed ended balanced mutual fund launched and managed by Argo Service Company Pty Ltd. The fund is co-managed by Cohen & Steers Capital Management, Inc. It invests in public equity and fixed income markets across the globe. The fund invests in the infrastructure sector. Argo Global Listed Infrastructure Limited was launched on May 20, 2015 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Adelaide"
     },
     "AMH.AX": {
         "short_name": "AMCIL FPO",
@@ -38,7 +122,7 @@
     "AMLTF": {
         "short_name": "AMP LIMITED",
         "long_name": "AMP Limited",
-        "summary": "AMP Limited operates as a wealth management company in Australia and internationally. The company operates through Australian Wealth Management, AMP Bank, AMP Capital, New Zealand Wealth Management, and Australian and New Zealand Wealth Protection and Mature segments. The Australian Wealth Management segment offers financial advice services; platform and software administration services; unit linked superannuation products, including personal and employer sponsored plans with insurance; and retirement income and managed investment products. The AMP Bank segment provides retail banking services covering residential mortgages, deposits, and transaction banking; and a portfolio of practice finance loans. This segment distributes through its aligned distribution network, as well as third party brokers, and direct to retail customers through phone and online. The AMP Capital segment manages investments across various asset classes, including equities, fixed interest, real estate, infrastructure, and multi-manager and multi-asset funds; and provides commercial, industrial, and retail real estate management services. The New Zealand Wealth Management segment provides wealth management solutions comprising KiwiSaver schemes, corporate superannuation, and retail investments, as well as operates a wrap investment management platform. The Australian and New Zealand Wealth Protection and Mature segment offers individual and group term, disability, and income protection insurance products; whole of life, endowment, investment linked, and investment accounts; retirement savings accounts; eligible rollover funds; annuities; insurance bonds; personal superannuation and guaranteed savings accounts; and risk insurance and mature books. AMP Limited was founded in 1849 and is based in Sydney, Australia.",
+        "summary": "AMP Limited operates as a wealth management company in Australia and internationally. The company offers financial advice and platform administration services, unit linked superannuation products, and retirement income and managed investment products for individuals; and residential mortgages, residential and investment property home loans, deposits, transaction banking services, SMSF products, and loans to AMP-aligned financial adviser practices through digital, online, and phone channels, as well as through financial advisers and home loan brokers. It also manages investments across various asset classes, including infrastructure debt, infrastructure equity, real estate, equities, fixed interest, diversified, and multi-manager and multi-asset funds for institutional and direct clients; and real estate and infrastructure assets, which include shopping centres, airports, and trains on behalf of funds and clients. In addition, the company provides wealth management solutions comprising KiwiSaver schemes, corporate superannuation, retail investments, and general insurance products, as well as operates a wrap investment management platform. AMP Limited was founded in 1849 and is based in Sydney, Australia.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -50,7 +134,7 @@
     "AMLYY": {
         "short_name": "AMP LIMITED",
         "long_name": "AMP Limited",
-        "summary": "AMP Limited operates as a wealth management company in Australia and internationally. The company operates through Australian Wealth Management, AMP Bank, AMP Capital, New Zealand Wealth Management, and Australian and New Zealand Wealth Protection and Mature segments. The Australian Wealth Management segment offers financial advice services; platform and software administration services; unit linked superannuation products, including personal and employer sponsored plans with insurance; and retirement income and managed investment products. The AMP Bank segment provides retail banking services covering residential mortgages, deposits, and transaction banking; and a portfolio of practice finance loans. This segment distributes through its aligned distribution network, as well as third party brokers, and direct to retail customers through phone and online. The AMP Capital segment manages investments across various asset classes, including equities, fixed interest, real estate, infrastructure, and multi-manager and multi-asset funds; and provides commercial, industrial, and retail real estate management services. The New Zealand Wealth Management segment provides wealth management solutions comprising KiwiSaver schemes, corporate superannuation, and retail investments, as well as operates a wrap investment management platform. The Australian and New Zealand Wealth Protection and Mature segment offers individual and group term, disability, and income protection insurance products; whole of life, endowment, investment linked, and investment accounts; retirement savings accounts; eligible rollover funds; annuities; insurance bonds; personal superannuation and guaranteed savings accounts; and risk insurance and mature books. AMP Limited was founded in 1849 and is based in Sydney, Australia.",
+        "summary": "AMP Limited operates as a wealth management company in Australia and internationally. The company offers financial advice and platform administration services, unit linked superannuation products, and retirement income and managed investment products for individuals; and residential mortgages, residential and investment property home loans, deposits, transaction banking services, SMSF products, and loans to AMP-aligned financial adviser practices through digital, online, and phone channels, as well as through financial advisers and home loan brokers. It also manages investments across various asset classes, including infrastructure debt, infrastructure equity, real estate, equities, fixed interest, diversified, and multi-manager and multi-asset funds for institutional and direct clients; and real estate and infrastructure assets, which include shopping centres, airports, and trains on behalf of funds and clients. In addition, the company provides wealth management solutions comprising KiwiSaver schemes, corporate superannuation, retail investments, and general insurance products, as well as operates a wrap investment management platform. AMP Limited was founded in 1849 and is based in Sydney, Australia.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -59,10 +143,46 @@
         "country": "Australia",
         "city": "Sydney"
     },
+    "AMP.AX": {
+        "short_name": "AMP FPO",
+        "long_name": "AMP Limited",
+        "summary": "AMP Limited operates as a wealth management company in Australia and internationally. The company offers financial advice and platform administration services, unit linked superannuation products, and retirement income and managed investment products for individuals; and residential mortgages, residential and investment property home loans, deposits, transaction banking services, SMSF products, and loans to AMP-aligned financial adviser practices through digital, online, and phone channels, as well as through financial advisers and home loan brokers. It also manages investments across various asset classes, including infrastructure debt, infrastructure equity, real estate, equities, fixed interest, diversified, and multi-manager and multi-asset funds for institutional and direct clients; and real estate and infrastructure assets, which include shopping centres, airports, and trains on behalf of funds and clients. In addition, the company provides wealth management solutions comprising KiwiSaver schemes, corporate superannuation, retail investments, and general insurance products, as well as operates a wrap investment management platform. AMP Limited was founded in 1849 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "AMP.F": {
+        "short_name": "AMP LTD.",
+        "long_name": "AMP Limited",
+        "summary": "AMP Limited operates as a wealth management company in Australia and internationally. The company offers financial advice and platform administration services, unit linked superannuation products, and retirement income and managed investment products for individuals; and residential mortgages, residential and investment property home loans, deposits, transaction banking services, SMSF products, and loans to AMP-aligned financial adviser practices through digital, online, and phone channels, as well as through financial advisers and home loan brokers. It also manages investments across various asset classes, including infrastructure debt, infrastructure equity, real estate, equities, fixed interest, diversified, and multi-manager and multi-asset funds for institutional and direct clients; and real estate and infrastructure assets, which include shopping centres, airports, and trains on behalf of funds and clients. In addition, the company provides wealth management solutions comprising KiwiSaver schemes, corporate superannuation, retail investments, and general insurance products, as well as operates a wrap investment management platform. AMP Limited was founded in 1849 and is based in Sydney, Australia.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "AMP.NZ": {
+        "short_name": "AMP Limited Ordinary Shares",
+        "long_name": "AMP Limited",
+        "summary": "AMP Limited operates as a wealth management company in Australia and internationally. The company offers financial advice and platform administration services, unit linked superannuation products, and retirement income and managed investment products for individuals; and residential mortgages, residential and investment property home loans, deposits, transaction banking services, SMSF products, and loans to AMP-aligned financial adviser practices through digital, online, and phone channels, as well as through financial advisers and home loan brokers. It also manages investments across various asset classes, including infrastructure debt, infrastructure equity, real estate, equities, fixed interest, diversified, and multi-manager and multi-asset funds for institutional and direct clients; and real estate and infrastructure assets, which include shopping centres, airports, and trains on behalf of funds and clients. In addition, the company provides wealth management solutions comprising KiwiSaver schemes, corporate superannuation, retail investments, and general insurance products, as well as operates a wrap investment management platform. AMP Limited was founded in 1849 and is based in Sydney, Australia.",
+        "currency": "NZD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "NZE",
+        "market": "nz_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "AMPPB.AX": {
         "short_name": "AMP NYR3QUT",
         "long_name": "AMP Limited",
-        "summary": "AMP Limited operates as a wealth management company in Australia and internationally. The company operates through Australian Wealth Management, AMP Bank, AMP Capital, New Zealand Wealth Management, and Australian and New Zealand Wealth Protection and Mature segments. The Australian Wealth Management segment offers financial advice services; platform and software administration services; unit linked superannuation products, including personal and employer sponsored plans with insurance; and retirement income and managed investment products. The AMP Bank segment provides retail banking services covering residential mortgages, deposits, and transaction banking; and a portfolio of practice finance loans. This segment distributes through its aligned distribution network, as well as third party brokers, and direct to retail customers through phone and online. The AMP Capital segment manages investments across various asset classes, including equities, fixed interest, real estate, infrastructure, and multi-manager and multi-asset funds; and provides commercial, industrial, and retail real estate management services. The New Zealand Wealth Management segment provides wealth management solutions comprising KiwiSaver schemes, corporate superannuation, and retail investments, as well as operates a wrap investment management platform. The Australian and New Zealand Wealth Protection and Mature segment offers individual and group term, disability, and income protection insurance products; whole of life, endowment, investment linked, and investment accounts; retirement savings accounts; eligible rollover funds; annuities; insurance bonds; personal superannuation and guaranteed savings accounts; and risk insurance and mature books. AMP Limited was founded in 1849 and is based in Sydney, Australia.",
+        "summary": "AMP Limited operates as a wealth management company in Australia and internationally. The company offers financial advice and platform administration services, unit linked superannuation products, and retirement income and managed investment products for individuals; and residential mortgages, residential and investment property home loans, deposits, transaction banking services, SMSF products, and loans to AMP-aligned financial adviser practices through digital, online, and phone channels, as well as through financial advisers and home loan brokers. It also manages investments across various asset classes, including infrastructure debt, infrastructure equity, real estate, equities, fixed interest, diversified, and multi-manager and multi-asset funds for institutional and direct clients; and real estate and infrastructure assets, which include shopping centres, airports, and trains on behalf of funds and clients. In addition, the company provides wealth management solutions comprising KiwiSaver schemes, corporate superannuation, retail investments, and general insurance products, as well as operates a wrap investment management platform. AMP Limited was founded in 1849 and is based in Sydney, Australia.",
         "currency": "AUD",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -107,6 +227,30 @@
         "country": "Australia",
         "city": "Melbourne"
     },
+    "ARC.AX": {
+        "short_name": "AUST RURAL FPO",
+        "long_name": "Australian Rural Capital Limited",
+        "summary": "Australian Rural Capital Limited is a publicly owned investment manager. The firm invests in the private equity markets across the globe. It operates as a closed-end strategic and specialist investor in Australian listed securities. It operates in two businesses: strategic equity investment, and funds management and financial services. In the strategic management business, the company invests in \u00c2\u0091microcap' Australian listed securities whose equity market value is less than $30 million. In the funds management and financial services business, and engages in the establishment of and provision of capital and services to new \u00c2\u0091boutique' funds management. It also engages in the acquisition of strategic share holdings in existing \u00c2\u0091boutique' funds management and other related financial services. Australian Rural Capital Limited was founded in 1979 and is based in Brisbane, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Brisbane"
+    },
+    "ARG.AX": {
+        "short_name": "ARGO FPO",
+        "long_name": "Argo Investments Limited",
+        "summary": "Argo Investments Limited is a publicly owned investment manager. The firm manages separate client focused equity portfolios for its clients. It invests in public equity markets of Australia. The firm employs a qualitative analysis with bottom-up stock picking approach to create its portfolio. It conducts in-house analysis to make its investments. Argo Investments Limited was founded in 1946 and is based in Adelaide, Australia with an additional office in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Adelaide"
+    },
     "AUI.AX": {
         "short_name": "A.U.INV. FPO",
         "long_name": "Australian United Investment Company Limited",
@@ -122,7 +266,7 @@
     "AVC.AX": {
         "short_name": "AUCTUS INV FPO",
         "long_name": "Auctus Investment Group Limited",
-        "summary": "Auctus Investment Group Limited previously known as Yonder and Beyond Group Limited is a private equity, and venture capital firm specializing in expansion stage, growth sectors, real estate, debt funds and infrastructure. The firm typically invests in global technology, Fintech, Proptech and Frontier Tech (Blockchain, Robotics, Drones, Artificial Intelligence and Virtual Reality). It prefer to invest globally. The firm prefer to invest between $5 million to $50 million. Auctus Investment Group Limited was founded in 2011 and is based in Melbourne, Australia, with additional office New York, New York.",
+        "summary": "Auctus Investment Group Limited previously known as Yonder and Beyond Group Limited is a private equity, and venture capital firm specializing in expansion stage, mid-market, growth sectors, real estate, debt funds and infrastructure. The firm typically invests in global technology, Fintech, Proptech and Frontier Tech (Blockchain, Robotics, Drones, Artificial Intelligence and Virtual Reality) healthcare, education and energy infrastructure. It prefers to invest globally. The firm prefer to invest between $10 million to $50 million. Auctus Investment Group Limited was founded in 2011 and is based in Melbourne, Australia, with additional office New York, New York.",
         "currency": "AUD",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -167,6 +311,30 @@
         "country": "Australia",
         "city": "Sydney"
     },
+    "BIR.AX": {
+        "short_name": "BIRFIN FPO",
+        "long_name": "BIR Financial Limited",
+        "summary": "BIR Financial Limited, through its subsidiary, Pulse Markets Pty Ltd, operates as a financial services company in Australia. It primarily provides equity capital market trading services to retail, institutional, corporate, and private clients. The company was formerly known as Birrabong Corporation Limited and changed its name to BIR Financial Limited in June 2018. BIR Financial Limited was incorporated in 1996 and is headquartered in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "BKI.AX": {
+        "short_name": "BKI INVEST FPO",
+        "long_name": "BKI Investment Company Limited",
+        "summary": "BKI Investment Company Limited is a publicly owned investment manager. The firm invests in the public equity markets. It invest in the stocks of companies operating across diversified sectors. It also invest in well managed, quality Australian companies. The firm primarily invests in dividend paying stocks of companies. It employs bottom up approach with a focus on merits of individual companies rather than market and economic trends to create its portfolio. The firm conducts in-house research to make its investments. BKI Investment Company Limited was formed on October 17, 2003 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "BPH.AX": {
         "short_name": "BPH ENERGY FPO",
         "long_name": "BPH Energy Limited",
@@ -191,6 +359,18 @@
         "country": "Australia",
         "city": "Neutral Bay"
     },
+    "CAF.AX": {
+        "short_name": "C ALLIANCE FPO",
+        "long_name": "Centrepoint Alliance Limited",
+        "summary": "Centrepoint Alliance Limited, together with its subsidiaries, engages in the financial services industry in Australia. It operates through Licensee and Advice Services, and Fund Management and Administration segments. The Licensee and Advice Services segment offers license services to financial advisers and their clients, as well as mortgage broking services. The Fund Management and Administration segment provides investor directed portfolio services and investment management services to financial advisers, accountants, and their client. The company also offers financial advisory, support, Australian financial services license, and salaried advisory services, as well as employee share plan; and loans to advisers, as well as packages investment platforms and managed funds. The company was formerly known as Alliance Finance Corporation Limited and changed its name to Centrepoint Alliance Limited in September 2005. Centrepoint Alliance Limited was founded in 1982 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "CAM.AX": {
         "short_name": "CLIME CAP FPO",
         "long_name": "Clime Capital Limited",
@@ -203,22 +383,22 @@
         "country": "Australia",
         "city": "Sydney"
     },
-    "CD2.AX": {
-        "short_name": "CD PRIEQU2 UNITS",
-        "long_name": "CD Private Equity Fund II",
-        "summary": "CD Private Equity Fund II is a co-sponsored fund of Cordish Private Ventures LLC and Dixon Advisory and Superannuation Services Pty Ltd., Investment Arm. It specializes in fund of fund investments. It targets investing in small-to-mid-market private investment funds and unlisted opportunities in United States.",
+    "CDM.AX": {
+        "short_name": "CADENCE FPO",
+        "long_name": "Cadence Capital Limited",
+        "summary": "Cadence Capital Limited is a close ended equity mutual fund launched and managed by Cadence Asset Management. The fund invests in the public equity markets of Australia. It seeks to invest in stocks of companies operating across diversified sectors. The fund seeks to invest in the stocks listed on Australian Securities Exchange. It benchmarks the performance of its portfolio against the All Ordinaries Accumulation Index and the Small Ordinaries Accumulation Index. Cadence Capital Limited was formed in October 2005 and is domiciled in Australia.",
         "currency": "AUD",
         "sector": "Financial Services",
         "industry": "Asset Management",
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "North Sydney"
+        "city": "Sydney"
     },
-    "CDM.AX": {
-        "short_name": "CADENCE FPO",
-        "long_name": "Cadence Capital Limited",
-        "summary": "Cadence Capital Limited is a close ended equity mutual fund launched and managed by Cadence Asset Management. The fund invests in the public equity markets of Australia. It seeks to invest in stocks of companies operating across diversified sectors. The fund seeks to invest in the stocks listed on Australian Securities Exchange. It benchmarks the performance of its portfolio against the All Ordinaries Accumulation Index and the Small Ordinaries Accumulation Index. Cadence Capital Limited was formed in October 2005 and is domiciled in Australia.",
+    "CGA.AX": {
+        "short_name": "CONTANGOAM FPO",
+        "long_name": "Contango Asset Management Limited",
+        "summary": "Contango Asset Management Limited is a publicly owned investment manager. It manages large cap, mid cap, small cap, micro cap, and income focused mandates for its institutional clients. The company was formerly known as Tyrian Diagnostics Limited and changed its name to Contango Asset Management Limited in August 2016. Contango Asset Management Limited is based in Sydney, Australia.",
         "currency": "AUD",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -251,6 +431,18 @@
         "country": "Australia",
         "city": "Sydney"
     },
+    "CNI.AX": {
+        "short_name": "CENTURIA STAPLED",
+        "long_name": "Centuria Capital Group",
+        "summary": "Centuria Capital Group, an investment manager, markets and manages investment products primarily in Australia. It operates through four segments: Property Funds Management, Investment Bonds Management, Co-Investments, and Corporate. The Property Funds Management segment manages listed and unlisted property funds. The Investment Bonds Management segment manages benefit funds, which include a range of financial products, such as single and multi-premium investments. The Co-Investments segment holds interest in property funds and other liquid investments, as well as properties held for development. The Corporate segment manages reverse mortgage lending portfolio. The company was incorporated in 2000 and is headquartered in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "CVC.AX": {
         "short_name": "CVC LTD FPO",
         "long_name": "CVC Limited",
@@ -262,18 +454,6 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Sydney"
-    },
-    "CVF.AX": {
-        "short_name": "CONTRARIAN FPO",
-        "long_name": "Arowana Australasian Value Opportunities Fund Ltd",
-        "summary": "Arowana Australasian Value Opportunities Fund Ltd is based in Australia.",
-        "currency": "AUD",
-        "sector": "Financial Services",
-        "industry": "Asset Management",
-        "exchange": "ASX",
-        "market": "au_market",
-        "country": "Australia",
-        "city": null
     },
     "DJW.AX": {
         "short_name": "DJW INVEST FPO",
@@ -299,6 +479,18 @@
         "country": "Australia",
         "city": "Melbourne"
     },
+    "E7L.F": {
+        "short_name": "EUROZ LTD.",
+        "long_name": "Euroz Limited",
+        "summary": "Euroz Limited, a diversified financial services company, provides stockbroking, corporate finance, funds management, investing, and wealth management services to institutional and corporate clients, and high net worth individuals primarily in Australia. The company offers equities research, institutional dealing, and private clients dealing services, as well as corporate advisory services, including equity capital raising and undertaking, merger and acquisitions advisory, strategic planning and review, privatization and reconstruction, and takeover/takeover response services. It also provides portfolio management, strategic financial planning advisory, and portfolio administration services; and raises equity capital through initial public offerings, placements, and rights issues. Euroz Limited was incorporated in 1961 and is based in Perth, Australia",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Australia",
+        "city": "Perth"
+    },
     "EAS.AX": {
         "short_name": "EASTON FPO",
         "long_name": "Easton Investments Limited",
@@ -311,10 +503,10 @@
         "country": "Australia",
         "city": "Sydney"
     },
-    "EGD.AX": {
-        "short_name": "E&PDISRUP UNITS",
-        "long_name": "Evans & Partners Global Disruption Fund",
-        "summary": "Evans & Partners Global Disruption Fund is an open-ended equity mutual fund launched by Walsh & Company Investments Limited. The fund is also managed by Evans and Partners Investment Management Pty Limited. It invests in the public equity markets across the globe. Evans & Partners Global Disruption Fund is domiciled in New South Wales, Australia.",
+    "ECP.AX": {
+        "short_name": "ECP EMERGE FPO",
+        "long_name": "ECP Emerging Growth Limited",
+        "summary": "ECP Emerging Growth Limited operates as an investment company in Australia. It invests in Australian small and mid-cap growth companies. The company was formerly known as Barrack St Investments Limited and changed its name to ECP Emerging Growth Limited in November 2019. ECP Emerging Growth Limited was incorporated in 2014 and is based in Sydney, Australia.",
         "currency": "AUD",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -334,6 +526,30 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Sydney"
+    },
+    "EP1.AX": {
+        "short_name": "EPFINACLTD FPO",
+        "long_name": "E&P Financial Group Limited",
+        "summary": "E&P Financial Group Limited engages in financial services business in Australia and the United States. It operates through three segments: Wealth Advice, E&P, and Funds Management. The Wealth Advice segment offers financial and investment advisory, stock broking, private wealth management, private client portfolio administration and reporting, self-managed superannuation administration, and estate planning services. The E&P segment provides stockbroking and investment advisory services to institutional clients and corporations, including advice on equity and debt capital market transactions, public markets and private treaty mergers and acquisitions, corporate divestments, private equity buyouts and debt financing, and corporate restructurings. The Funds Management segment offers investment management, responsible entity and administration, performance, design, architectural, and project management services; and executes asset acquisition and disposal, and debt arranging transactions. The company serves private clients, institutional clients, and corporates. The company was formerly known as Evans Dixon Limited and changed its name to E&P Financial Group Limited in November 2020. E&P Financial Group Limited was incorporated in 2015 and is based in North Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "North Sydney"
+    },
+    "EQT.AX": {
+        "short_name": "EQUITY TR FPO",
+        "long_name": "EQT Holdings Limited",
+        "summary": "EQT Holdings Limited, together with its subsidiaries, provides philanthropic, trust, and estate services in Australia, the United Kingdom, and Ireland. It operates through Trustee & Wealth Services and Corporate Trustee Services segments. The Trustee & Wealth Services segment offers a range of private client, philanthropic, and superannuation trustee services, including estate planning and management; charitable, compensation, community, and personal trust services; and wealth management and advisory services. The Corporate Trustee Services segment provides a range of fund governance and trustee services for managed investment trusts on behalf of local and international fund managers and sponsors, as well as specialized trustee services for corporates and structured multi-party transactions. The company also offers executorship and administration, investment administration and custody, executor services. EQT Holdings Limited was founded in 1888 and is based in Melbourne, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Melbourne"
     },
     "EZL.AX": {
         "short_name": "EUROZ FPO",
@@ -407,6 +623,18 @@
         "country": "Australia",
         "city": "Sydney"
     },
+    "FSI.AX": {
+        "short_name": "FLAGSHIP FPO",
+        "long_name": "Flagship Investments Limited",
+        "summary": "Flagship Investments Limited is a close ended equity mutual fund launched and managed by EC. Pohl & Company. The fund invests in the public equity markets across the globe. It invests in stocks of companies operating across diversified sectors. The fund employs a combination of fundamental and quantitative analysis with a focus on factors such as management stability, organic growth, sustainable competitive, and financial statements to build its portfolio. It benchmarks the performance of its portfolio against the All Ordinaries Index. The fund was formerly known as Hyperion Flagship Investments Limited. Flagship Investments Limited was formed in April, 1998 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Bundall"
+    },
     "GC1PA.AX": {
         "short_name": "GLENNON CPVM6QU",
         "long_name": "Glennon Small Companies Ltd",
@@ -418,6 +646,18 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Sydney"
+    },
+    "GDC.AX": {
+        "short_name": "GLOBALDATA STAPLED",
+        "long_name": "360 Capital Digital Infrastructure Fund",
+        "summary": "360 Capital Digital Infrastructure Fund enables investors to invest in digital infrastructure assets in Australia. The company was incorporated in 2019 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": null
     },
     "GFL.AX": {
         "short_name": "GBL MASTER FPO",
@@ -479,15 +719,27 @@
         "country": "Australia",
         "city": "Melbourne"
     },
-    "IOOFF": {
-        "short_name": "IOOF HOLDINGS LIMITED",
-        "long_name": "IOOF Holdings Ltd",
-        "summary": "IOOF Holdings Ltd provides financial advice, portfolio management and administration, and investment management services in Australia. It offers financial planning advice and stockbroking services, such as investment research, training, compliance support, and access to financial products. The company also provides administration and management services through master trust platforms, which offer a single access point to a range of investment products. In addition, it engages in the management and investment of monies on behalf of corporate, superannuation, and institutional clients, as well as private individual investor clients. The company was founded in 1846 and is based in Melbourne, Australia.",
-        "currency": "USD",
+    "IPC.AX": {
+        "short_name": "IM PACIFIC FPO",
+        "long_name": "Imperial Pacific Limited",
+        "summary": "Imperial Pacific Limited is a publicly owned asset management holding company. Through its subsidiaries, it operates as an investment and financial services company in Australia. It is involved in the portfolio management of London City Equities Limited, as well as nominee shareholding activities. The company was formerly known as Belmont Holdings Limited and changed its name to Imperial Pacific Limited in 2011. Imperial Pacific Limited was founded in 1936 and is based in Sydney, Australia.",
+        "currency": "AUD",
         "sector": "Financial Services",
         "industry": "Asset Management",
-        "exchange": "PNK",
-        "market": "us_market",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "KAM.AX": {
+        "short_name": "KASSET MGT FPO",
+        "long_name": "K2 Asset Management Holdings Ltd",
+        "summary": "K2 Asset Management Holdings Ltd. is a publicly owned investment manager. The firm provides its services to retail, wholesale and institutional investors. It manages equity mutual funds for its clients. The firm invests in the public equity markets across the globe. K2 employs a top-down approach along with bottom-up stock picking approach. It conducts in-house research to make its investments. K2 Asset Management Holdings was founded in July 1999 and is based in Melbourne, Australia with additional office in Cottesloe, Australia, Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
         "country": "Australia",
         "city": "Melbourne"
     },
@@ -551,6 +803,30 @@
         "country": "Australia",
         "city": "Sydney"
     },
+    "MAI.AX": {
+        "short_name": "MAINSTREAM FPO",
+        "long_name": "Mainstream Group Holdings Limited",
+        "summary": "Mainstream Group Holdings Limited provides fund administration services for the financial services industry in the Asia Pacific, Americas, and Europe. Its fund administration services include investment administration and fund, fund accounting, unit registry, custody, middle office, distressed assets administration, and company secretarial services to fund managers and listed companies. The company also provides superannuation services comprising member administration, unit pricing, and accounting services to industry funds, corporate superannuation funds, and retail superannuation master trusts, as well as manages accumulation funds, defined benefit funds, hybrid funds, and account based pensions and transition to retirement pensions. In addition, it offers registry services, such as listing, transaction processing, and reporting and correspondence services to exchange-traded products. The company was formerly known as MainstreamBPO Limited and changed its name to Mainstream Group Holdings Limited in September 2017. The company was founded in 2006 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "MAM.AX": {
+        "short_name": "MICROASSET FPO",
+        "long_name": "Microequities Asset Management Group Limited",
+        "summary": "Microequities Asset Management Group Limited provides fund management services to investors. It also invests in various listed companies. The company was formerly known as Microequities Ltd. Microequities Asset Management Group Limited was incorporated in 2004 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "MCX.AX": {
         "short_name": "MARINERCOR FPO",
         "long_name": "Mariner Corporation Limited",
@@ -562,6 +838,18 @@
         "market": "au_market",
         "country": "Australia",
         "city": "North Sydney"
+    },
+    "MEC.AX": {
+        "short_name": "MORPHICEEF FPO",
+        "long_name": "Morphic Ethical Equities Fund Limited",
+        "summary": "Morphic Ethical Equities Fund Limited is an equity mutual fund launched and managed by Morphic Asset Management Pty Limited. The fund invests in public equity markets across the globe. It also invests in derivatives. The fund invests in stocks of companies across diversified market capitalizations. It invests in value, growth, and momentum stocks of companies. The fund employs long and short strategy to make its investments. It employs fundamental analysis with bottom-up and top-down approach to make its investments. The fund benchmarks the performance of its portfolio against the MSCI All Countries Total Return Daily Index. It employs ethical screening to make its investments. The fund does not invests in securities of companies involved in environmental destruction, including coal and uranium mining, oil and gas extraction, intensive animal farming and aquaculture, tobacco and alcohol, armaments, gambling, logging of rainforest, and old growth timber. Morphic Ethical Equities Fund Limited was formed on March 14, 2017 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
     },
     "MFF.AX": {
         "short_name": "MFFCAPITAL FPO",
@@ -599,10 +887,22 @@
         "country": "Australia",
         "city": "Melbourne"
     },
+    "MLT.AX": {
+        "short_name": "MILTON FPO",
+        "long_name": "Milton Corporation Limited",
+        "summary": "Milton Corporation Limited is a publicly owned investment manager. It invests in the public equity and fixed income markets of Australia. The firm is a long-term investor in companies, trusts, interest bearing securities, real estate, and mortgages. Milton seeks to invest in well-managed companies and trusts with a profitable history and with the expectation of sound dividend growth. Milton Corporation Limited was founded in 1938 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "MOE.AX": {
         "short_name": "MOELISAUS FPO",
         "long_name": "Moelis Australia Limited",
-        "summary": "Moelis Australia Limited, together with its subsidiaries, provides various financial services. It operates in two segments, Corporate Advisory and Equities; and Asset Management. The Corporate Advisory and Equities segment offers strategic and financial advisory services related to mergers and acquisitions; equity capital markets; debt markets; restructuring and recapitalizations; and situations advisory, as well as provides underwriting and institutional stockbroking services. It also provides securities research, sales, and trading execution services to institutional and high-net-worth clients. The Asset Management segment offers asset, fund, and investment management services to domestic and foreign high net worth and institutional investors. Moelis Australia Limited was founded in 2009 and is based in Sydney, Australia.",
+        "summary": "Moelis Australia Limited, together with its subsidiaries, provides various financial services. It operates through two segments, Asset Management, and Corporate Advisory and Equities. The Asset Management segment offers asset, fund, and investment management services to domestic and foreign high net worth and institutional investors. The Corporate Advisory and Equities segment offers strategic and financial advisory services related to mergers and acquisitions; equity capital markets; debt capital markets; and restructuring and recapitalizations, as well as provides underwriting and institutional stockbroking services. It also provides securities research, sales, and trading execution services to institutional and high net worth clients. The company was founded in 2009 and is based in Sydney, Australia.",
         "currency": "AUD",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -647,15 +947,15 @@
         "country": "Australia",
         "city": "Sydney"
     },
-    "NGELF": {
-        "short_name": "NGE CAPITAL LTD",
+    "NGE.AX": {
+        "short_name": "NGECAPITAL FPO",
         "long_name": "NGE Capital Limited",
         "summary": "NGE Capital Limited operates as an investment company in Australia. It invests in listed and unlisted securities. The company was formerly known as New Guinea Energy Limited and changed its name to NGE Capital Limited in June 2017. NGE Capital Limited was founded in 2005 and is based in Melbourne, Australia.",
-        "currency": "USD",
+        "currency": "AUD",
         "sector": "Financial Services",
         "industry": "Asset Management",
-        "exchange": "PNK",
-        "market": "us_market",
+        "exchange": "ASX",
+        "market": "au_market",
         "country": "Australia",
         "city": "Melbourne"
     },
@@ -731,6 +1031,42 @@
         "country": "Australia",
         "city": "Perth"
     },
+    "PAC.AX": {
+        "short_name": "PACCURRENT FPO",
+        "long_name": "Pacific Current Group Limited",
+        "summary": "Pacific Current Group Limited engages in multi-boutique asset management business worldwide. It manages assets for institutional and individual clients. The company was formerly known as Treasury Group Ltd and changed its name to Pacific Current Group Limited in October 2015. Pacific Current Group Limited is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "PAF.AX": {
+        "short_name": "PMASIAN FPO",
+        "long_name": "PM Capital Asian Opportunities Fund Limited",
+        "summary": "PM Capital Asian Opportunities Fund Limited is a closed-ended equity mutual fund launched and managed by PM CAPITAL Limited. It invests in public equity markets of Asia, excluding Japan. The fund seeks to invest in stocks of companies that are operating across diversified sectors. It primarily invests in value stocks of companies. The fund seeks to benchmark the performance of its portfolio against the MSCI All Country Asia (ex-Japan) Net Index. PM Capital Asian Opportunities Fund Limited was formed on May 22, 2014 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "PAI.AX": {
+        "short_name": "PLAT ASIA FPO",
+        "long_name": "Platinum Asia Investments Limited",
+        "summary": "Platinum Asia Investments Limited is a closed-ended equity mutual fund launched and managed by Platinum Asset Management Limited. It invests in the public equity markets of Asia ex Japan. The fund invests in stocks of companies operating across diversified sectors. It invests in value stocks of companies. The fund employs fundamental analysis with a bottom up approach to create its portfolio. It benchmarks the performance of its portfolio against the MSCI All Country Asia ex Japan Net Index. Platinum Asia Investments Limited was founded on September 16, 2015 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "PCG.AX": {
         "short_name": "PENGANA FPO",
         "long_name": "Pengana Capital Group Limited",
@@ -755,10 +1091,46 @@
         "country": "Australia",
         "city": "Sydney"
     },
+    "PFG.AX": {
+        "short_name": "PRIME FIN. FPO",
+        "long_name": "Prime Financial Group Limited",
+        "summary": "Prime Financial Group Limited provides integrated accounting and business advisory, wealth management, and capital advisory services in Australia. The company offers accounting and business advisory services, such as accounting and tax compliance, board advisory and business owner monitoring, management advisory, start up, small to medium enterprise advisory, outsourced CFO and accounting, grants and tax incentives, and innovation and commercialization. It also provides wealth management services, including financial and retirement planning, investment advice, life insurance, superannuation advice, self-managed superannuation fund, and administration and compliance services; and capital and corporate advisory services comprising merger and acquisition transactions, capital raising, and other capital and corporate development services. Prime Financial Group Limited was incorporated in 1965 and is headquartered in Southbank, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Southbank"
+    },
+    "PGF.AX": {
+        "short_name": "PMGLOBAL FPO",
+        "long_name": "PM Capital Global Opportunities Fund Limited",
+        "summary": "PM Capital Global Opportunities Fund Limited is a closed ended equity mutual fund launched and managed by PM CAPITAL Limited. It invests in public equity markets across the globe. The fund seeks to invest in stocks of companies that are operating across diversified sectors. It primarily invests in value stocks of companies. PM Capital Global Opportunities Fund Limited was formed on December 12, 2013 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "PIA.AX": {
         "short_name": "PENGANA IN FPO",
         "long_name": "Pengana International Equities Limited",
         "summary": "Hunter Hall Global Value Limited is a closed-ended equity mutual fund launched and managed by Hunter Hall Investment Management Limited. The fund invests in public equity markets across the globe. It seeks to invest in stocks of companies that are operating across diversified sectors. The fund invests in value stocks of small to medium-cap companies. It benchmarks the performance of its portfolio against the MSCI World Total Return Index, Net Dividends Reinvested. Hunter Hall Global Value Limited was formed on December 22, 2003 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "PIC.AX": {
+        "short_name": "PERPEQUITY FPO",
+        "long_name": "Perpetual Equity Investment Company Limited",
+        "summary": "Perpetual Equity Investment Company Limited invests in listed securities. The company was incorporated in 2014 and is based in Sydney, Australia.",
         "currency": "AUD",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -815,6 +1187,18 @@
         "country": "Australia",
         "city": "Sydney"
     },
+    "PTM.AX": {
+        "short_name": "PLAT MGMT FPO",
+        "long_name": "Platinum Investment Management Limited",
+        "summary": "Platinum Asset Management is a publicly owned hedge fund sponsor. The firm primarily provides its services to pooled investment vehicles. The firm launches and manages equity mutual funds for its clients. It also launches and manages hedge funds for its clients. The firm invests in public equity markets across the globe. It employs value strategy with bottom-up stock picking approach to create its portfolio. The firm employs a combination of in-house and external research to make its investments. The firm typically invests in companies in consumer, health care and technology sectors. Platinum Asset Management was founded in February 1994 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "PVQ.F": {
         "short_name": "PERPETUAL LTD.",
         "long_name": "Perpetual Limited",
@@ -826,6 +1210,18 @@
         "market": "dr_market",
         "country": "Australia",
         "city": "Sydney"
+    },
+    "QUE.AX": {
+        "short_name": "QUESTE FPO",
+        "long_name": "Queste Communications Ltd",
+        "summary": "Queste Communications Ltd, through its subsidiary, Orion Equities Limited manages its investments in Australia. It invests in listed and unlisted securities; and develops and rents real estate properties. Queste Communications Ltd was incorporated in 1998 and is based in West Perth, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "West Perth"
     },
     "QVE.AX": {
         "short_name": "QVEQUITIES FPO",
@@ -875,6 +1271,18 @@
         "country": "Australia",
         "city": "Sydney"
     },
+    "TCF.AX": {
+        "short_name": "360EI FUND UNIT",
+        "long_name": "360 Capital Enhanced Income Fund",
+        "summary": "360 Capital Enhanced Income Fund is a closed-ended fixed income mutual fund launched and managed by Elstree Investment Management Limited. The fund invests in the fixed income markets of Australia. It invests in a range of fixed income and hybrid securities, and other debt securities issued by government bodies, companies and specialist financing vehicles. It was formerly known as Australian Enhanced Income Fund. 360 Capital Enhanced Income Fund was formed on October 17, 2006 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Melbourne"
+    },
     "TGF.AX": {
         "short_name": "TRIBECA FPO",
         "long_name": "Tribeca Global Natural Resources Limited",
@@ -911,17 +1319,17 @@
         "country": "Australia",
         "city": "North Sydney"
     },
-    "TSRUF": {
-        "short_name": "PACIFIC CURRENT GROUP LTD",
-        "long_name": "Pacific Current Group Limited",
-        "summary": "Pacific Current Group Limited engages in multi-boutique asset management business worldwide. It manages assets for institutional and individual clients. The company was formerly known as Treasury Group Ltd and changed its name to Pacific Current Group Limited in October 2015. Pacific Current Group Limited is based in Sydney, Australia.",
-        "currency": "USD",
+    "TOP.AX": {
+        "short_name": "THORNEYOPP FPO",
+        "long_name": "Thorney Opportunities Ltd",
+        "summary": "Thorney Opportunities Ltd is an equity fund launched and managed by Thorney Management Services Pty Ltd. The fund invests in the public equity markets of Australia. It seeks to invest in stocks of companies operating across diversified sectors. Thorney Opportunities Ltd is domiciled in Australia.",
+        "currency": "AUD",
         "sector": "Financial Services",
         "industry": "Asset Management",
-        "exchange": "PNK",
-        "market": "us_market",
+        "exchange": "ASX",
+        "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "city": "Melbourne"
     },
     "TTU.F": {
         "short_name": "NGE CAPITAL",
@@ -934,6 +1342,18 @@
         "market": "dr_market",
         "country": "Australia",
         "city": "Melbourne"
+    },
+    "VGI.AX": {
+        "short_name": "VGI PRTNRS FPO",
+        "long_name": "VGI Partners Limited",
+        "summary": "VGI Partners Limited is a publicly owned investment manager. The firm primarily provides its services to high net worth individuals, family offices, endowment funds, Pooled investment vehicles, Corporations or other businesses and other wholesale clients. The firm invests in public equity markets across the globe. The firm launches and manages equity mutual funds and separate client-focused equity portfolios. It primarily invests in growth and value stocks of companies using both long and short positions. The firm employs a combination of in-house and external research to make its investments. VGI Partners Limited was formerly known as VGI Partners Pty Limited. VGI Partners Limited was founded in 2008 and is based in Sydney, Australia with additional offices in New York, New York and Tokyo, Japan.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
     },
     "VTH.AX": {
         "short_name": "VITALHARV UNIT",
@@ -951,6 +1371,18 @@
         "short_name": "WAM ACTIVE FPO",
         "long_name": "WAM Active Limited",
         "summary": "WAM Active Limited is a close-ended equity mutual fund launched and managed by MAM Pty Limited. The fund invests in public equity markets of Australia. It seeks to invest in stocks of companies that are operating across diversified sectors. The fund invests in stocks of companies across all market capitalizations. It also invests in bills of exchange, other negotiable investments, and debentures. The fund seeks to take advantage of opportunities created by corporate transactions and other trading and arbitrage opportunities. It benchmarks the performance of its portfolio against the S&P/ASX All Ordinaries Accumulation Index. WAM Active Limited was founded in November 13, 2007 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "WAM.AX": {
+        "short_name": "WAMCAPITAL FPO",
+        "long_name": "WAM Capital Limited",
+        "summary": "WAM Capital Limited is a close-ended equity mutual fund launched and managed by Wilson Asset Management (International) Pty Limited. The fund invests in public equity markets of Australia. It makes its investments in companies primarily engaged in the industrial sector. The fund invests in value and growth stocks of small to medium-cap companies. It seeks to invest in short-term arbitrage and mispricing opportunities. The fund has absolute returns focus. It employs fundamental and quantitative analysis with a focus on bottom-up approach to make its investments. The fund benchmarks the performance of its portfolio against the S&P/ASX All Ordinaries Accumulation Index. It conducts in-house research to create its portfolio. WAM Capital Limited was formed on March 8, 1999 and is domiciled in Australia.",
         "currency": "AUD",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -1007,18 +1439,6 @@
         "country": "Australia",
         "city": "Sydney"
     },
-    "WLN.F": {
-        "short_name": "AUSTRALIAN LEADERS FD LTD",
-        "long_name": "Australian Leaders Fund Limited",
-        "summary": "Australian Leaders Fund Limited is an equity mutual fund launched and managed by Kingston Funds Management Pty Limited. It invests into the public equity markets of Australia. The fund seeks to invest in stocks of companies operating across diversified sectors. It invests in the value stocks of companies. The fund typically employs both quantitative and fundamental analysis focusing on factors like a history of superior returns on the capital employed in the business through the economic cycle, management with a track record of creating and distributing value to shareholders and businesses with a capacity to grow. It also employs short selling. The fund benchmarks the performance of its portfolio against the ASX All Ordinaries Accumulation Index. It was formerly known as Wilson Leaders Ltd. Australian Leaders Fund Limited is domiciled in Sydney, Australia.",
-        "currency": "EUR",
-        "sector": "Financial Services",
-        "industry": "Asset Management",
-        "exchange": "FRA",
-        "market": "dr_market",
-        "country": "Australia",
-        "city": "Sydney"
-    },
     "WMA.AX": {
         "short_name": "WAMALTERAT FPO",
         "long_name": "Wam Alternative Assets Limited",
@@ -1030,5 +1450,17 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Brisbane"
+    },
+    "WTL.AX": {
+        "short_name": "WT FIN GRP FPO",
+        "long_name": "WT Financial Group Limited",
+        "summary": "WT Financial Group Limited provides a range of financial services. It operates in two segments, Financial Planning, Investment Advice and Product Sales; and Accounting and Taxation Services. The company provides financial advice and solutions, including superannuation investments, insurance, finance, equities, and direct and SMSF residential and commercial properties to retail and wholesale clients. It also offers licensing, compliance, education and training, and technical support services; and practice management and development services, including consumer marketing and education tools. In addition, the company provides wealth management, retirement, investment, and financial advice; mortgage and finance advice; buyers agency and real estate advice; and accounting and tax advice and compliance services for investors and small to medium businesses, as well as operates as an investment and asset manager of a disability housing fund. The company was formerly known as Spring FG Limited and changed its name to WT Financial Group Limited in November 2019. WT Financial Group Limited was incorporated in 2014 and is headquartered in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
     }
 }

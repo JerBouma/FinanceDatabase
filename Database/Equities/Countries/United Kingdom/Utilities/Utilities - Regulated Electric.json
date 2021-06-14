@@ -1,13 +1,73 @@
 {
-    "PPG.L": {
-        "short_name": "PLUTUS POWERGEN PLC ORD 0.01P",
-        "long_name": "Plutus PowerGen Plc",
-        "summary": "Plutus PowerGen Plc, through its subsidiaries, develops and operates flexible standby electricity generation sites in the United Kingdom. The company sells its power to national energy suppliers. Plutus PowerGen Plc was incorporated in 2006 and is based in London, the United Kingdom.",
+    "NG.L": {
+        "short_name": "NATIONAL GRID PLC ORD 12 204/47",
+        "long_name": "National Grid plc",
+        "summary": "National Grid plc transmits and distributes electricity and natural gas. It operates through UK Electricity Transmission, UK Gas Transmission, US Regulated, and National Grid Ventures (NGV) and Other segments. The UK Electricity Transmission segment owns and operates electricity transmission networks, which comprise approximately 7,212 kilometers of overhead lines; 2,239 kilometers of underground cables; and 347 substations in England and Wales, as well as Scottish electricity transmission systems. The UK Gas Transmission segment owns and operates gas transmission systems that include approximately 7,630 kilometres of high-pressure pipes; and 24 compressor stations connecting to 8 distribution networks in Great Britain, as well as third-party independent systems and liquefied natural gas (LNG) storage facilities. The US Regulated segments owns and operates transmission facilities across upstate New York, Massachusetts, New Hampshire, Rhode Island, and Vermont; and electricity distribution networks in upstate New York, Massachusetts, and Rhode Island. Its assets comprise 14,659 kilometres of overhead lines, 169 kilometres of underground cables, and 396 transmission substations; an electricity distribution network of approximately 117,488 circuit kilometres and 730 distribution substations; a network of approximately 57,425 kilometres of gas pipeline; and approximately 801 kilometres of gas transmission pipes. The NGV and Other segment engages in the energy metering business; transporting renewable energy long distances through its electricity interconnectors; and storing LNG, as well as property development and insurance activities in the United Kingdom and United States. The company was founded in 1990 and is headquartered in London, the United Kingdom.",
         "currency": "GBp",
         "sector": "Utilities",
         "industry": "Utilities - Regulated Electric",
         "exchange": "LSE",
         "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "NGG": {
+        "short_name": "National Grid Transco, PLC Nati",
+        "long_name": "National Grid plc",
+        "summary": "National Grid plc transmits and distributes electricity and natural gas. It operates through UK Electricity Transmission, UK Gas Transmission, US Regulated, and National Grid Ventures (NGV) and Other segments. The UK Electricity Transmission segment owns and operates electricity transmission networks, which comprise approximately 7,212 kilometers of overhead lines; 2,239 kilometers of underground cables; and 347 substations in England and Wales, as well as Scottish electricity transmission systems. The UK Gas Transmission segment owns and operates gas transmission systems that include approximately 7,630 kilometres of high-pressure pipes; and 24 compressor stations connecting to 8 distribution networks in Great Britain, as well as third-party independent systems and liquefied natural gas (LNG) storage facilities. The US Regulated segments owns and operates transmission facilities across upstate New York, Massachusetts, New Hampshire, Rhode Island, and Vermont; and electricity distribution networks in upstate New York, Massachusetts, and Rhode Island. Its assets comprise 14,659 kilometres of overhead lines, 169 kilometres of underground cables, and 396 transmission substations; an electricity distribution network of approximately 117,488 circuit kilometres and 730 distribution substations; a network of approximately 57,425 kilometres of gas pipeline; and approximately 801 kilometres of gas transmission pipes. The NGV and Other segment engages in the energy metering business; transporting renewable energy long distances through its electricity interconnectors; and storing LNG, as well as property development and insurance activities in the United Kingdom and United States. The company was founded in 1990 and is headquartered in London, the United Kingdom.",
+        "currency": "USD",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "NGGTF": {
+        "short_name": "NATIONAL GRID",
+        "long_name": "National Grid plc",
+        "summary": "National Grid plc transmits and distributes electricity and natural gas. It operates through UK Electricity Transmission, UK Gas Transmission, US Regulated, and National Grid Ventures (NGV) and Other segments. The UK Electricity Transmission segment owns and operates electricity transmission networks, which comprise approximately 7,212 kilometers of overhead lines; 2,239 kilometers of underground cables; and 347 substations in England and Wales, as well as Scottish electricity transmission systems. The UK Gas Transmission segment owns and operates gas transmission systems that include approximately 7,630 kilometres of high-pressure pipes; and 24 compressor stations connecting to 8 distribution networks in Great Britain, as well as third-party independent systems and liquefied natural gas (LNG) storage facilities. The US Regulated segments owns and operates transmission facilities across upstate New York, Massachusetts, New Hampshire, Rhode Island, and Vermont; and electricity distribution networks in upstate New York, Massachusetts, and Rhode Island. Its assets comprise 14,659 kilometres of overhead lines, 169 kilometres of underground cables, and 396 transmission substations; an electricity distribution network of approximately 117,488 circuit kilometres and 730 distribution substations; a network of approximately 57,425 kilometres of gas pipeline; and approximately 801 kilometres of gas transmission pipes. The NGV and Other segment engages in the energy metering business; transporting renewable energy long distances through its electricity interconnectors; and storing LNG, as well as property development and insurance activities in the United Kingdom and United States. The company was founded in 1990 and is headquartered in London, the United Kingdom.",
+        "currency": "USD",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "NNGD.F": {
+        "short_name": "NATL GRID PLC ADR/5",
+        "long_name": "National Grid plc",
+        "summary": "National Grid plc transmits and distributes electricity and natural gas. It operates through UK Electricity Transmission, UK Gas Transmission, US Regulated, and National Grid Ventures (NGV) and Other segments. The UK Electricity Transmission segment owns and operates electricity transmission networks, which comprise approximately 7,212 kilometers of overhead lines; 2,239 kilometers of underground cables; and 347 substations in England and Wales, as well as Scottish electricity transmission systems. The UK Gas Transmission segment owns and operates gas transmission systems that include approximately 7,630 kilometres of high-pressure pipes; and 24 compressor stations connecting to 8 distribution networks in Great Britain, as well as third-party independent systems and liquefied natural gas (LNG) storage facilities. The US Regulated segments owns and operates transmission facilities across upstate New York, Massachusetts, New Hampshire, Rhode Island, and Vermont; and electricity distribution networks in upstate New York, Massachusetts, and Rhode Island. Its assets comprise 14,659 kilometres of overhead lines, 169 kilometres of underground cables, and 396 transmission substations; an electricity distribution network of approximately 117,488 circuit kilometres and 730 distribution substations; a network of approximately 57,425 kilometres of gas pipeline; and approximately 801 kilometres of gas transmission pipes. The NGV and Other segment engages in the energy metering business; transporting renewable energy long distances through its electricity interconnectors; and storing LNG, as well as property development and insurance activities in the United Kingdom and United States. The company was founded in 1990 and is headquartered in London, the United Kingdom.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "NNGF.DE": {
+        "short_name": "NATIONAL GRID PLC",
+        "long_name": "National Grid plc",
+        "summary": "National Grid plc transmits and distributes electricity and natural gas. It operates through UK Electricity Transmission, UK Gas Transmission, US Regulated, and National Grid Ventures (NGV) and Other segments. The UK Electricity Transmission segment owns and operates electricity transmission networks, which comprise approximately 7,212 kilometers of overhead lines; 2,239 kilometers of underground cables; and 347 substations in England and Wales, as well as Scottish electricity transmission systems. The UK Gas Transmission segment owns and operates gas transmission systems that include approximately 7,630 kilometres of high-pressure pipes; and 24 compressor stations connecting to 8 distribution networks in Great Britain, as well as third-party independent systems and liquefied natural gas (LNG) storage facilities. The US Regulated segments owns and operates transmission facilities across upstate New York, Massachusetts, New Hampshire, Rhode Island, and Vermont; and electricity distribution networks in upstate New York, Massachusetts, and Rhode Island. Its assets comprise 14,659 kilometres of overhead lines, 169 kilometres of underground cables, and 396 transmission substations; an electricity distribution network of approximately 117,488 circuit kilometres and 730 distribution substations; a network of approximately 57,425 kilometres of gas pipeline; and approximately 801 kilometres of gas transmission pipes. The NGV and Other segment engages in the energy metering business; transporting renewable energy long distances through its electricity interconnectors; and storing LNG, as well as property development and insurance activities in the United Kingdom and United States. The company was founded in 1990 and is headquartered in London, the United Kingdom.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "GER",
+        "market": "de_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "NNGF.F": {
+        "short_name": "NATIONAL GRID PLC",
+        "long_name": "National Grid plc",
+        "summary": "National Grid plc transmits and distributes electricity and natural gas. It operates through UK Electricity Transmission, UK Gas Transmission, US Regulated, and National Grid Ventures (NGV) and Other segments. The UK Electricity Transmission segment owns and operates electricity transmission networks, which comprise approximately 7,212 kilometers of overhead lines; 2,239 kilometers of underground cables; and 347 substations in England and Wales, as well as Scottish electricity transmission systems. The UK Gas Transmission segment owns and operates gas transmission systems that include approximately 7,630 kilometres of high-pressure pipes; and 24 compressor stations connecting to 8 distribution networks in Great Britain, as well as third-party independent systems and liquefied natural gas (LNG) storage facilities. The US Regulated segments owns and operates transmission facilities across upstate New York, Massachusetts, New Hampshire, Rhode Island, and Vermont; and electricity distribution networks in upstate New York, Massachusetts, and Rhode Island. Its assets comprise 14,659 kilometres of overhead lines, 169 kilometres of underground cables, and 396 transmission substations; an electricity distribution network of approximately 117,488 circuit kilometres and 730 distribution substations; a network of approximately 57,425 kilometres of gas pipeline; and approximately 801 kilometres of gas transmission pipes. The NGV and Other segment engages in the energy metering business; transporting renewable energy long distances through its electricity interconnectors; and storing LNG, as well as property development and insurance activities in the United Kingdom and United States. The company was founded in 1990 and is headquartered in London, the United Kingdom.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "United Kingdom",
         "city": "London"
     }

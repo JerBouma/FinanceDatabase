@@ -71,6 +71,18 @@
         "country": "United Kingdom",
         "city": "London"
     },
+    "DIS.L": {
+        "short_name": "DISTIL PLC ORD 0.1P",
+        "long_name": "Distil Plc",
+        "summary": "Distil Plc, through its subsidiaries, markets and sells spirits. The company offers its products under various brands, including RedLeg Spiced Rum, Blackwoods Vintage Gin, Blackwood's Limited Edition Vintage Gin, Blackwood's Vodka, Blavod Original Black Vodka, Diva Vodka, and Jago's Vanilla Cream Liqueur. It markets and sells its products in the United Kingdom, the United States, Germany, Spain, Australia, and Russia. The company was formerly known as Blavod Wines and Spirits plc and changed its name to Distil Plc in April 2014. Distil Plc was incorporated in 1999 and is based in London, the United Kingdom.",
+        "currency": "GBp",
+        "sector": "Consumer Defensive",
+        "industry": "Beverages - Wineries & Distilleries",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
     "GUI.DE": {
         "short_name": "DIAGEO PLC LS-,28935185",
         "long_name": "Diageo plc",
@@ -134,7 +146,7 @@
     "MMNT": {
         "short_name": "MOMENTOUS HOLDINGS CORP",
         "long_name": "Momentous Holdings Corp.",
-        "summary": "Momentous Holdings Corp. engages in the design, production, marketing, and sale of low carbon, alcoholic beverages. The company offers gin, vodka, bitter aperitif, and ready to drink cocktails. It provides its products under the Victory brand. The company was founded in 2015 and is headquartered in London, the United Kingdom.",
+        "summary": "Momentous Holdings Corp., a beverage company, engages in the design, production, marketing, and sale of alcoholic beverages. The company offers gin, vodka, bitter aperitif, and ready to drink cocktails. It provides its products under the Victory brand. The company was founded in 2015 and is headquartered in London, the United Kingdom.",
         "currency": "USD",
         "sector": "Consumer Defensive",
         "industry": "Beverages - Wineries & Distilleries",
@@ -143,17 +155,17 @@
         "country": "United Kingdom",
         "city": "London"
     },
-    "SLLFF": {
-        "short_name": "GUSBOURNE PLC",
-        "long_name": "Gusbourne PLC",
-        "summary": "Gusbourne PLC, together with its subsidiaries, produces, distributes, and sells English sparkling wines in the United Kingdom. It has 231 acres of vineyards in Kent and West Sussex. The company was formerly known as Shellproof Plc and changed its name to Gusbourne PLC in September 2013. Gusbourne PLC was incorporated in 2012 and is based in Ashford, the United Kingdom.",
+    "SPPGF": {
+        "short_name": "STOCK SPIRITS GROUP PLC",
+        "long_name": "Stock Spirits Group PLC",
+        "summary": "Stock Spirits Group PLC produces and distributes branded spirits in Central and Eastern Europe, and Italy. It offers a range of spirits, such as vodka, vodka-based flavored liqueurs, rum, brandy, wines, whisky, herbal bitters, and limoncello. The company also exports its products to approximately 50 countries worldwide. Stock Spirits Group PLC was founded in 1884 and is based in Wooburn Green, the United Kingdom.",
         "currency": "USD",
         "sector": "Consumer Defensive",
         "industry": "Beverages - Wineries & Distilleries",
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "Ashford"
+        "city": "Wooburn Green"
     },
     "STCK.L": {
         "short_name": "STOCK SPIRITS GROUP PLC ORD 10P",
@@ -166,6 +178,30 @@
         "market": "gb_market",
         "country": "United Kingdom",
         "city": "Wooburn Green"
+    },
+    "STOCK.PR": {
+        "short_name": "STOCK",
+        "long_name": "Stock Spirits Group PLC",
+        "summary": "Stock Spirits Group PLC produces and distributes branded spirits in Central and Eastern Europe, and Italy. It offers a range of spirits, such as vodka, vodka-based flavored liqueurs, rum, brandy, wines, whisky, herbal bitters, and limoncello. The company also exports its products to approximately 50 countries worldwide. Stock Spirits Group PLC was founded in 1884 and is based in Wooburn Green, the United Kingdom.",
+        "currency": "CZK",
+        "sector": "Consumer Defensive",
+        "industry": "Beverages - Wineries & Distilleries",
+        "exchange": "PRA",
+        "market": "cz_market",
+        "country": "United Kingdom",
+        "city": "Wooburn Green"
+    },
+    "VINO.L": {
+        "short_name": "VIRGIN WINES UK PLC ORD GBP0.01",
+        "long_name": "Virgin Wines UK PLC",
+        "summary": "Virgin Wines UK PLC operates as a direct-to-consumer online wine retailer in the United Kingdom. The company sells wines through its WineBank and Wine Plan subscription models or on a pay as you go basis. Virgin Wines UK PLC was founded in 2000 and is headquartered in Norwich, the United Kingdom.",
+        "currency": "GBp",
+        "sector": "Consumer Defensive",
+        "industry": "Beverages - Wineries & Distilleries",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "Norwich"
     },
     "WINE.L": {
         "short_name": "NAKED WINES PLC ORD 7.5P",

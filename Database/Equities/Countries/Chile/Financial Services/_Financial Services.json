@@ -38,7 +38,7 @@
     "BCH": {
         "short_name": "Banco De Chile Banco De Chile",
         "long_name": "Banco de Chile",
-        "summary": "Banco de Chile, together with its subsidiaries, provides banking and financial products and services to customers in Chile. The company operates through four segments: Retail, Wholesale, Treasury, and Subsidiaries. It offers deposit products, such as checking accounts, current accounts, demand deposits and accounts, saving accounts, and time deposits; commercial, mortgage, micro entrepreneurial, and installment loans; and credit and debit cards. The company also provides leasing, factoring, and foreign trade services; transactional banking services, such as current account management, payments, collections, representation, and asset custody; and advisory services for initial public offerings, capital increases, sales and purchases of blocks of shares, private capital placements, public share tenders, mergers and acquisitions, company valuations, bond issuances, and syndicated loans. In addition, it offers securities brokerage, mutual funds management, investment banking, life and general insurance, and securitization services. The company serves individuals; small and medium enterprises; and wholesale customers. It operates through 353 branches, as well as 1,712 automatic teller machines. Banco de Chile was founded in 1855 and is headquartered in Santiago, Chile.",
+        "summary": "Banco de Chile, together with its subsidiaries, provides various banking products and services to customers in Chile. The company operates through four segments: Retail, Wholesale, Treasury, and Subsidiaries. It offers checking accounts, consumer loans, commercial loans, credit cards, credit lines, and mortgage loans. The company also provides liquidity management services, debt instruments, foreign trade, and derivative contracts and leases. In addition, it engages in the management of the investment portfolio, and business of financial transactions and currency trading. Further, the company offers international and treasury banking services; and securities brokerage, mutual fund and investment management, insurance brokerage, and financial advisory services. It serves individuals, small and medium-sized companies, corporate clients, and large companies. The company operates through a network of 1,927 branches and 7,644 ATMs. Banco de Chile was founded in 1855 and is headquartered in Santiago, Chile.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -46,6 +46,18 @@
         "market": "us_market",
         "country": "Chile",
         "city": "Santiago"
+    },
+    "BCI.SN": {
+        "short_name": "BCO CREDITO INVERS",
+        "long_name": "Banco de Cr\u00e9dito e Inversiones",
+        "summary": "Banco de Cr\u00c3\u00a9dito e Inversiones provides various banking products and services to individuals, micro-enterprises, businesses, and institutions in Chile and internationally. The company operates through Retail Banking; Wholesale Banking; Corporate & Investment Banking Finance Division; BCI Financial Group, INC, and Subsidiaries; Financial Services; and Others segments. It offers checking and other accounts; credit and debit cards; mortgage and consumer credit, short term and long term commercial credit, overdraft line of credit, corporate financing, working capital line, commercial credit, real estate leasing, and margin lending; guarantees; and life, health, home, comprehensive protection, and automotive insurance products. The company also provides factoring, leasing, foreign trade, cash management, wealth portfolio management, and markets analysis services; sales and trading solutions, such as investments, FX hedging strategies, rate hedging strategies, arbitration opportunities, derivatives, distribution of corporate bonds, and fixed income intermediation; and corporate finance services, including structuring of bank financing, structuring of public and private financing, mergers and acquisitions operations advisory, public and private capital raises, financial advisory, and private capital increases. In addition, it engages in the portfolio management business, and distribution of mutual funds and investment funds; intermediation, administration, and custody of securities; and investment advisory business. Further, the company offers personal, small business, real state banking services; residential mortgages; treasury management; and online services, as well as banking services for professionals. It operates through a network of 180 branches. The company was founded in 1937 and is based in Santiago, Chile. Banco de Cr\u00c3\u00a9dito e Inversiones is a subsidiary of Empresas Juan Yarur S.P.A.",
+        "currency": "CLP",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Santiago de Chile"
     },
     "BICECORP.SN": {
         "short_name": "BICECORP SA",
@@ -71,29 +83,41 @@
         "country": "Chile",
         "city": "Santiago"
     },
+    "BSA.F": {
+        "short_name": "BCO SANTAN.CHILE ADR/1039",
+        "long_name": "Banco Santander-Chile",
+        "summary": "Banco Santander-Chile, together with its subsidiaries, provides commercial and retail banking products and services in Chile. It operates through Retail Banking, Middle-Market, and Corporate Investment Banking segments. The company offers debit and credit cards, checking accounts, and savings products; consumer, automobile, commercial, mortgage, and government-guaranteed loans; and Chilean peso and foreign currency denominated loans to finance various commercial transactions, trade, foreign currency forward contracts, and credit lines. It also provides mutual funds, insurance and stock brokerage, foreign exchange, leasing, factoring, financial consulting, investment management, foreign trade and mortgage financing, treasury, and transactional services, as well as specialized services to finance projects for the real estate industry. In addition, the company offers short-term financing and fund raising, and brokerage services, as well as derivatives, securitization, and other tailor-made products. It serves individuals, small to middle-sized entities, companies, and large corporations, as well as universities, government entities, and local and regional governments. As of December 31, 2020, the company operated 358 branches, which include 220 under the Santander brand name, 19 under the Select brand name, 32 specialized branches for the middle market, and 28 as auxiliary and payment centers, as well as 1,199 ATMs. Banco Santander-Chile was incorporated in 1977 and is headquartered in Santiago, Chile.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Chile",
+        "city": "Santiago de Chile"
+    },
     "BSAC": {
         "short_name": "Banco Santander - Chile",
         "long_name": "Banco Santander-Chile",
-        "summary": "Banco Santander-Chile provides commercial and retail banking products and services in Chile. It operates through Retail Banking, Middle-Market, and Corporate Investment Banking segments. The company offers checking accounts and savings products; consumer, auto, commercial, mortgage, and government-guaranteed loans; credit and debit cards; and Chilean peso and foreign currency denominated loans to finance various commercial transactions, trade, foreign currency forward contracts, and credit lines. It also provides mutual funds, insurance and stock brokerage, foreign exchange, leasing, factoring, financial consulting, investment management, foreign trade and mortgage financing, treasury, and transactional services, as well as specialized services to finance projects for the real estate industry. In addition, the company offers short-term financing and fund raising, brokerage services, derivatives, securitization, and other tailor-made products. It serves individuals, small to middle-sized entities, companies, and large corporations, as well as universities, government entities, and local and regional governments. As of December 31, 2019, the company operated 377 branches, which include 251 under the Santander brand name, 36 under the Select brand name, 7 specialized branches for the middle market, and 28 as auxiliary and payment centers, as well as 1,088 ATMs. Banco Santander-Chile was founded in 1977 and is headquartered in Santiago, Chile.",
+        "summary": "Banco Santander-Chile, together with its subsidiaries, provides commercial and retail banking products and services in Chile. It operates through Retail Banking, Middle-Market, and Corporate Investment Banking segments. The company offers debit and credit cards, checking accounts, and savings products; consumer, automobile, commercial, mortgage, and government-guaranteed loans; and Chilean peso and foreign currency denominated loans to finance various commercial transactions, trade, foreign currency forward contracts, and credit lines. It also provides mutual funds, insurance and stock brokerage, foreign exchange, leasing, factoring, financial consulting, investment management, foreign trade and mortgage financing, treasury, and transactional services, as well as specialized services to finance projects for the real estate industry. In addition, the company offers short-term financing and fund raising, and brokerage services, as well as derivatives, securitization, and other tailor-made products. It serves individuals, small to middle-sized entities, companies, and large corporations, as well as universities, government entities, and local and regional governments. As of December 31, 2020, the company operated 358 branches, which include 220 under the Santander brand name, 19 under the Select brand name, 32 specialized branches for the middle market, and 28 as auxiliary and payment centers, as well as 1,199 ATMs. Banco Santander-Chile was incorporated in 1977 and is headquartered in Santiago, Chile.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Chile",
-        "city": "Santiago"
+        "city": "Santiago de Chile"
     },
     "BSANTANDER.SN": {
         "short_name": "BCO SANTANDER-CHIL",
         "long_name": "Banco Santander-Chile",
-        "summary": "Banco Santander-Chile provides commercial and retail banking products and services in Chile. It operates through Retail Banking, Middle-Market, and Corporate Investment Banking segments. The company offers checking accounts and savings products; consumer, auto, commercial, mortgage, and government-guaranteed loans; credit and debit cards; and Chilean peso and foreign currency denominated loans to finance various commercial transactions, trade, foreign currency forward contracts, and credit lines. It also provides mutual funds, insurance and stock brokerage, foreign exchange, leasing, factoring, financial consulting, investment management, foreign trade and mortgage financing, treasury, and transactional services, as well as specialized services to finance projects for the real estate industry. In addition, the company offers short-term financing and fund raising, brokerage services, derivatives, securitization, and other tailor-made products. It serves individuals, small to middle-sized entities, companies, and large corporations, as well as universities, government entities, and local and regional governments. As of December 31, 2019, the company operated 377 branches, which include 251 under the Santander brand name, 36 under the Select brand name, 7 specialized branches for the middle market, and 28 as auxiliary and payment centers, as well as 1,088 ATMs. Banco Santander-Chile was founded in 1977 and is headquartered in Santiago, Chile.",
+        "summary": "Banco Santander-Chile, together with its subsidiaries, provides commercial and retail banking products and services in Chile. It operates through Retail Banking, Middle-Market, and Corporate Investment Banking segments. The company offers debit and credit cards, checking accounts, and savings products; consumer, automobile, commercial, mortgage, and government-guaranteed loans; and Chilean peso and foreign currency denominated loans to finance various commercial transactions, trade, foreign currency forward contracts, and credit lines. It also provides mutual funds, insurance and stock brokerage, foreign exchange, leasing, factoring, financial consulting, investment management, foreign trade and mortgage financing, treasury, and transactional services, as well as specialized services to finance projects for the real estate industry. In addition, the company offers short-term financing and fund raising, and brokerage services, as well as derivatives, securitization, and other tailor-made products. It serves individuals, small to middle-sized entities, companies, and large corporations, as well as universities, government entities, and local and regional governments. As of December 31, 2020, the company operated 358 branches, which include 220 under the Santander brand name, 19 under the Select brand name, 32 specialized branches for the middle market, and 28 as auxiliary and payment centers, as well as 1,199 ATMs. Banco Santander-Chile was incorporated in 1977 and is headquartered in Santiago, Chile.",
         "currency": "CLP",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago"
+        "city": "Santiago de Chile"
     },
     "CALICHERAA.SN": {
         "short_name": "PAMPA CALICHERA SA",
@@ -107,6 +131,30 @@
         "country": "Chile",
         "city": "Las Condes"
     },
+    "CALICHERAB.SN": {
+        "short_name": "PAMPA CALICHERA SA",
+        "long_name": "Sociedad de Inversiones Pampa Calichera S.A.",
+        "summary": "Sociedad de Inversiones Pampa Calichera S.A. invests in the shares of Sociedad Qu\u00c3\u00admica y Minera de Chile S.A. The company is headquartered in Las Condes, Chile. Sociedad de Inversiones Pampa Calichera S.A. is a subsidiary of Sociedad de Inversiones Oro Blanco S.A.",
+        "currency": "CLP",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Las Condes"
+    },
+    "CHILE.SN": {
+        "short_name": "BANCO DE CHILE",
+        "long_name": "Banco de Chile",
+        "summary": "Banco de Chile, together with its subsidiaries, provides various banking products and services to customers in Chile. The company operates through four segments: Retail, Wholesale, Treasury, and Subsidiaries. It offers checking accounts, consumer loans, commercial loans, credit cards, credit lines, and mortgage loans. The company also provides liquidity management services, debt instruments, foreign trade, and derivative contracts and leases. In addition, it engages in the management of the investment portfolio, and business of financial transactions and currency trading. Further, the company offers international and treasury banking services; and securities brokerage, mutual fund and investment management, insurance brokerage, and financial advisory services. It serves individuals, small and medium-sized companies, corporate clients, and large companies. The company operates through a network of 1,927 branches and 7,644 ATMs. Banco de Chile was founded in 1855 and is headquartered in Santiago, Chile.",
+        "currency": "CLP",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Santiago de Chile"
+    },
     "CUPRUM.SN": {
         "short_name": "AFP CUPRUM SA",
         "long_name": "Administradora de Fondos de Pensiones Cuprum S.A.",
@@ -118,6 +166,18 @@
         "market": "cl_market",
         "country": "Chile",
         "city": "Santiago"
+    },
+    "G4RA.F": {
+        "short_name": "BANCO DE CHILE ADR/200",
+        "long_name": "Banco de Chile",
+        "summary": "Banco de Chile, together with its subsidiaries, provides various banking products and services to customers in Chile. The company operates through four segments: Retail, Wholesale, Treasury, and Subsidiaries. It offers checking accounts, consumer loans, commercial loans, credit cards, credit lines, and mortgage loans. The company also provides liquidity management services, debt instruments, foreign trade, and derivative contracts and leases. In addition, it engages in the management of the investment portfolio, and business of financial transactions and currency trading. Further, the company offers international and treasury banking services; and securities brokerage, mutual fund and investment management, insurance brokerage, and financial advisory services. It serves individuals, small and medium-sized companies, corporate clients, and large companies. The company operates through a network of 1,927 branches and 7,644 ATMs. Banco de Chile was founded in 1855 and is headquartered in Santiago, Chile.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Chile",
+        "city": "Santiago de Chile"
     },
     "HABITAT.SN": {
         "short_name": "AFP HABITAT SA",
@@ -146,14 +206,14 @@
     "ITAUCORP.SN": {
         "short_name": "ITAU CORPBANCA",
         "long_name": "Ita\u00fa Corpbanca",
-        "summary": "Ita\u00c3\u00ba Corpbanca provides wholesale and retail banking services to large and medium-sized companies, individuals, and institutional clients in Chile and Colombia. The company offers checking and savings accounts, as well as demand and time deposits, and bankers' drafts; and provides commercial, mortgage, consumer, and contingent loans. It also offers financial advisory, mutual fund management, insurance brokerage, and securities brokerage services; treasury and asset management services; trust portfolio management services, including investment trust management, administration, security, real estate trusts, and fund administration; court and out-of-court collections services for loans; and Internet and mobile banking services. As of December 31, 2019, the company operated 194 branch offices in Chile and New York, which includes 139 branches operating as Ita\u00c3\u00ba and 54 branches operating as Banco Condell, as well as representative offices in Madrid and Spain. Ita\u00c3\u00ba Corpbanca was founded in 1871 and is headquartered in Santiago, Chile.",
+        "summary": "Ita\u00c3\u00ba Corpbanca provides wholesale and retail banking services to small and medium-sized enterprises, individuals, and institutional clients in Chile and Colombia. The company offers checking and savings accounts, as well as demand and time deposits, and bankers' drafts; and provides commercial, mortgage, consumer, and contingent loans. It also offers financial advisory, asset management, insurance brokerage, securities brokerage, and treasury services; trust portfolio management services, including investment trust management, administration, security, real estate trusts, and fund administration; rust and custodial services; court and out-of-court collections services for loans; and Internet, telephone, and mobile banking services. As of December 31, 2019, the company operated 294 branches and 533 ATMs. Ita\u00c3\u00ba Corpbanca was incorporated in 1871 and is headquartered in Santiago, Chile.",
         "currency": "CLP",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago"
+        "city": "Santiago de Chile"
     },
     "ITCB": {
         "short_name": "Itau CorpBanca",
@@ -178,6 +238,18 @@
         "market": "cl_market",
         "country": "Chile",
         "city": "Santiago"
+    },
+    "NORTEGRAN.SN": {
+        "short_name": "NORTE GRANDE SA",
+        "long_name": "Norte Grande S.A.",
+        "summary": "Norte Grande S.A. invests in various types of assets and securities. Its investments include stocks, bonds, and obligations. The company was founded in 1992 and is based in Santiago, Chile. Norte Grande S.A. is a subsidiary of Inversiones SQYA, S.A.",
+        "currency": "CLP",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Las Condes"
     },
     "ORO-BLANCO.SN": {
         "short_name": "SOCD INV ORO BLANC",
@@ -210,6 +282,54 @@
         "currency": "CLP",
         "sector": "Financial Services",
         "industry": "Asset Management",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Santiago"
+    },
+    "PROVIDA.SN": {
+        "short_name": "AFP PROVIDA",
+        "long_name": "Administradora de Fondos de Pensiones ProVida S.A.",
+        "summary": "Administradora de Fondos de Pensiones Provida SA operates as an investment arm of MetLife, Inc. Administradora de Fondos de Pensiones Provida S.A. offers private pension fund administration and related services in the Republic of Chile. Its services include collection for individual capitalization accounts, voluntary savings accounts, voluntary pension savings, life and disability benefits, investment services, and accounts administration. The company also holds investments in private pension fund administrators operating in Peru, Ecuador, Mexico, and the Dominican Republic. As of June 30, 2005, it operated 134 branches. The company was incorporated in 1981 and is headquartered in Santiago, Chile.",
+        "currency": "CLP",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Santiago"
+    },
+    "SANTANA.SN": {
+        "short_name": "SANTANA SA",
+        "long_name": "Santana S.A.",
+        "summary": "Santana S.A. engages in the investment activities in Chile. It invests in real estate, stocks, investment funds, promissory notes, mutual funds, and bonds. The company was formerly known as Fabrica de Envases S.A. and changed its name to Santana S.A. in 1992. Santana S.A. was founded in 1940 and is headquartered in Santiago, Chile.",
+        "currency": "CLP",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Santiago de Chile"
+    },
+    "SCOTIABKCL.SN": {
+        "short_name": "SCOTIABANK CHILE",
+        "long_name": "Scotiabank Chile, S.A.",
+        "summary": "Scotiabank Chile, S.A. provides banking products and services in Chile. Its deposit products include current, checking, and daily rent accounts; term deposits; and voluntary pension saving products. The company also provides consumer, automotive, and mortgage credits; and credit lines and credit cards. In addition, it offers insurance products, such as automotive, RCI, travel, transportation, and general insurance. Further, the company provides mutual funds, commercial credit, line of credit, factoring, leasing, foreign trade, and cash management services. Scotiabank Chile, S.A. operates through a network of 169 branches located in Arica and Punta Arenas. The company was founded in 1990 and is based in Santiago, Chile. Scotiabank Chile, S.A. operates as a subsidiary of The Bank of Nova Scotia.",
+        "currency": "CLP",
+        "sector": "Financial Services",
+        "industry": "Banks - Diversified",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Santiago de Chile"
+    },
+    "SECURITY.SN": {
+        "short_name": "GRUPO SECURITY SA",
+        "long_name": "Grupo Security S.A.",
+        "summary": "Grupo Security S.A., a diversified financial company, provides banking, insurance, asset management, and other services to large and medium-sized companies, and high-income individuals in Chile. The company provides commercial and retail banking, and factoring services. It also offers fund management, securities brokerage, asset management, and securitization services; and life and general insurance, as well as travel assistance and insurance brokerage services. In addition, the company engages in the development of real estate properties; and provision of travel agency, as well as technological development and business support services. Grupo Security S.A. was founded in 1981 and is headquartered in Santiago, Chile.",
+        "currency": "CLP",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",

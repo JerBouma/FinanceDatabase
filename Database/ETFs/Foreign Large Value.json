@@ -23,7 +23,7 @@
         "short_name": "AAM S&P Developed Markets High ",
         "long_name": "AAM S&P Developed Markets High Dividend Value ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the S&P Developed Ex-U.S. Dividend and Free Cash Flow Yield Index.\n Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of any collateral held from securities lending) will be invested in the component securities of the index and depositary receipts representing index components. The index is designed to provide exposure to the constituents of the S&P Developed BMI Ex-U.S. & Korea LargeMidcap Index that exhibit both high dividend yield and sustainable dividend distribution characteristics, while maintaining diversified sector exposure.",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the S&P Developed Ex-U.S. Dividend and Free Cash Flow Yield Index.\n The index is designed to provide exposure to the constituents of the S&P Developed BMI Ex-U.S. & Korea LargeMidcap Index that exhibit both high dividend yield and sustainable dividend distribution characteristics, while maintaining diversified sector exposure. At least 80% of the fund\u00e2\u0080\u0099s net assets will be invested in equity securities that (i) are tied economically to Emerging Markets countries and (ii) have had a positive realized annual dividend yield within the past year.",
         "category": "Foreign Large Value",
         "family": "AAM",
         "exchange": "PCX",
@@ -34,26 +34,6 @@
         "long_name": "WisdomTree International LargeCap Dividend Fund",
         "currency": "USD",
         "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree International LargeCap Dividend Index.\n The fund normally invests at least 95% of its total assets (exclusive of collateral held from securities lending) in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a fundamentally weighted index that is comprised of the large-capitalization segment of the dividend-paying market in the industrialized world outside the U.S. and Canada. The fund is non-diversified.",
-        "category": "Foreign Large Value",
-        "family": "WisdomTree",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "DOO": {
-        "short_name": "WisdomTree International Divide",
-        "long_name": "WisdomTree International Dividend ex-Financials Fund",
-        "currency": "USD",
-        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree International Dividend ex-Financials Index.\n Under normal circumstances, at least 95% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a fundamentally weighted index that is comprised of high dividend-yielding international common stocks outside the financial sector. The fund is non-diversified.",
-        "category": "Foreign Large Value",
-        "family": "WisdomTree",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "DTH": {
-        "short_name": "WisdomTree International High D",
-        "long_name": "WisdomTree International High Dividend Fund",
-        "currency": "USD",
-        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree International High Dividend Index.\n Under normal circumstances, at least 95% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a fundamentally weighted index that is comprised of companies with high dividend yields selected from the WisdomTree International Equity Index. The fund is non-diversified.",
         "category": "Foreign Large Value",
         "family": "WisdomTree",
         "exchange": "PCX",
@@ -77,16 +57,6 @@
         "category": "Foreign Large Value",
         "family": "SPDR State Street Global Advisors",
         "exchange": "PCX",
-        "market": "us_market"
-    },
-    "EFAS": {
-        "short_name": "Global X MSCI SuperDividend EAF",
-        "long_name": "Global X MSCI SuperDividend EAFE ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the MSCI EAFE Top 50 Dividend Index (\"underlying index\").\n The fund invests at least 80% of its total assets in the securities of the underlying index. The underlying index tracks the performance of 50 equally-weighted companies that rank among the highest dividend yielding equity securities in Europe, Australasia and the Far East, as defined by MSCI, the provider of the underlying index (\"index provider\").",
-        "category": "Foreign Large Value",
-        "family": "Global X Funds",
-        "exchange": "NMS",
         "market": "us_market"
     },
     "EFV": {
@@ -116,7 +86,7 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an index called the S&P International Dividend Aristocrats Index.\n Under normal conditions, the fund will invest at least 90% of its net assets (including investment borrowings) in the equity securities that comprise the index. The index measures the performance of high dividend yielding companies that have followed a managed-dividends policy of increasing or maintaining dividends for at least ten consecutive years.",
         "category": "Foreign Large Value",
         "family": "First Trust",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "FIDI": {
@@ -143,9 +113,29 @@
         "short_name": "Schwab Fundamental Internationa",
         "long_name": "Schwab Fundamental International Large Company Index ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Russell RAFI\u00e2\u0084\u00a2 Developed ex US Large Company Index.\n The fund will invest at least 90% of its net assets in stocks included in the index, including depositary receipts representing securities of the index; which may be in the form of American Depositary Receipts, Global Depositary Receipts and European Depositary Receipts. The index measures the performance of the large company size segment by fundamental overall company scores, which are created using as the universe the developed ex U.S. companies in the FTSE Global Total Cap Index (the parent index).",
+        "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Russell RAFI\u00e2\u0084\u00a2 Developed ex US Large Company Index.\n The fund will invest at least 90% of its net assets in stocks included in the index. The index measures the performance of the large company size segment by fundamental overall company scores, which are created using as the universe the developed ex U.S. companies in the FTSE Global Total Cap Index (the parent index).",
         "category": "Foreign Large Value",
         "family": "Schwab ETFs",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "HDAW": {
+        "short_name": "Xtrackers MSCI All World ex US ",
+        "long_name": "Xtrackers MSCI All World ex US High Dividend Yield Hedged Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the performance of the MSCI ACWI ex USA High Dividend Yield Index.\n The fund will invest at least 80% of its total assets (but typically far more) in component securities of the underlying index. The underlying index is designed to reflect the performance of equities (excluding REITs) in its parent index, the MSCI ACWI ex US Index, with higher dividend income and quality characteristics than average dividend yields of equities in the parent index, where such higher dividend income and quality characteristics are both sustainable and persistent.",
+        "category": "Foreign Large Value",
+        "family": "Xtrackers",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "HDEF": {
+        "short_name": "Xtrackers MSCI EAFE High Divide",
+        "long_name": "Xtrackers MSCI EAFE High Dividend Yield Equity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the performance, before fees and expenses, of the MSCI EAFE High Dividend Yield Index.\n The fund will invest at least 80% of its total assets (but typically far more) in component securities of the underlying index. The underlying index is designed to reflect the performance of equities in its parent index, the MSCI EAFE Index, with higher dividend income and quality characteristics than average dividend yields of equities in the parent index, where such higher dividend income and quality characteristics are both sustainable and persistent. It is non-diversified.",
+        "category": "Foreign Large Value",
+        "family": "Xtrackers",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -156,6 +146,16 @@
         "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Pacer Developed Markets International Cash Cows 100 Index.\n The fund will invest at least 80% of its total assets (exclusive of collateral held from securities lending) in the component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index uses an objective, rules-based methodology to provide exposure to large and mid-capitalization non-U.S. companies in developed markets with high free cash flow yields.",
         "category": "Foreign Large Value",
         "family": "Pacer",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "IDHD": {
+        "short_name": "Invesco S&P International Devel",
+        "long_name": "Invesco S&P International Developed High Dividend Low Volatility ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P EPAC Ex-Korea Low Volatility High Dividend Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in securities that comprise the underlying index. The index provider compiles, maintains and calculates the underlying index, which is composed of 100 securities in the S&P EPAC Ex-Korea LargeMidCap Index that historically have provided high dividend yields with lower volatility.",
+        "category": "Foreign Large Value",
+        "family": "Invesco",
         "exchange": "BTS",
         "market": "us_market"
     },
@@ -179,14 +179,54 @@
         "exchange": "BTS",
         "market": "us_market"
     },
-    "IVLU": {
-        "short_name": "iShares MSCI Intl Value Factor ",
-        "long_name": "iShares Edge MSCI Intl Value Factor ETF",
+    "IQDE": {
+        "short_name": "FlexShares International Qualit",
+        "long_name": "FlexShares International Quality Dividend Defensive Index Fund",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI World ex USA Enhanced Value Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents as well as in securities not included in the underlying index. The index is based on a traditional market capitalization-weighted parent index, the MSCI World ex USA Index.",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the Northern Trust International Quality Dividend Defensive IndexSM.\n The underlying index is designed to reflect the performance of a selection of companies that, in aggregate, possess greater financial strength and stability characteristics relative to the Northern Trust International Large Cap Index. The fund will invest at least 80% of its total assets in the securities of the underlying index and in ADRs and GDRs based on the securities in the underlying index.",
         "category": "Foreign Large Value",
-        "family": "iShares",
+        "family": "Flexshares Trust",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IQDF": {
+        "short_name": "FlexShares International Qualit",
+        "long_name": "FlexShares International Quality Dividend Index Fund",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the Northern Trust International Quality Dividend IndexSM.\n The index reflects the performance of a selection of companies that, in aggregate, possess greater financial strength and stability characteristics relative to the Northern Trust International Large Cap Index, a float-adjusted market-capitalization weighted index of non-U.S. domiciled large- and mid-capitalization companies. The fund will invest at least 80% of its total assets in the securities of the index and in ADRs and GDRs based on the securities in the index.",
+        "category": "Foreign Large Value",
+        "family": "Flexshares Trust",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IQDY": {
+        "short_name": "FlexShares International Qualit",
+        "long_name": "FlexShares International Quality Dividend Dynamic Index Fund",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the Northern Trust International Quality Dividend Dynamic IndexSM.\n The index is designed to reflect the performance of a selection of companies that, in aggregate, possess greater financial strength and stability characteristics relative to the Northern Trust International Large Cap Index. The fund will invest at least 80% of its total assets in the securities of the index and in ADRs and GDRs based on the securities in the index.",
+        "category": "Foreign Large Value",
+        "family": "Flexshares Trust",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IQIN": {
+        "short_name": "IQ 500 International ETF",
+        "long_name": "IQ 500 International ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that track (before fees and expenses) generally to the price and yield performance of its underlying index, the IQ 500 International Index (the \"underlying index\").\n The fund invests, under normal circumstances, at least 80% of its net assets, plus the amount of any borrowings for investment purposes, in the investments included in its underlying index (\"underlying index components\"). The underlying index consists of a number of underlying index components selected in accordance with IndexIQ&#39;s rules-based methodology. Such underlying index components will include primarily non-U.S. equity securities.",
+        "category": "Foreign Large Value",
+        "family": "IndexIQ",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IVAL": {
+        "short_name": "Alpha Architect International Q",
+        "long_name": "Alpha Architect International Quantitative Value ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, of the Alpha Architect International Quantitative Value Index.\n The fund normally will invest at least 80% of its total assets in the component securities of the Alpha Architect International Quantitative Value Index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index uses a 5-step, quantitative, rules-based methodology to identify a portfolio of approximately 40-50 undervalued non-U.S. equity securities or their depositary receipts with the potential for capital appreciation.",
+        "category": "Foreign Large Value",
+        "family": "Alpha Architect",
+        "exchange": "BTS",
         "market": "us_market"
     },
     "LVHI": {
@@ -209,6 +249,26 @@
         "exchange": "NGM",
         "market": "us_market"
     },
+    "PXF": {
+        "short_name": "Invesco FTSE RAFI Developed Mar",
+        "long_name": "Invesco FTSE RAFI Developed Markets ex-U.S. ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the FTSE RAFITM Developed ex U.S. 1000 Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index, as well as American depositary receipts (\"ADRs\") and global depositary receipts (\"GDRs\") that represent securities in the underlying index. The underlying index is comprised of companies located in countries that are classified as \"developed\" within the country classification definition of FTSE, excluding the United States.",
+        "category": "Foreign Large Value",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "TLTD": {
+        "short_name": "FlexShares Morningstar Develope",
+        "long_name": "FlexShares Morningstar Developed Markets ex-US Factor Tilt Index Fund",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the Morningstar\u00c2\u00ae Developed Markets ex-US Factor Tilt IndexSM.\n The index reflects the performance of a selection of companies that, in aggregate, possess greater exposure to size and value factors relative to the Morningstar Developed Markets ex-US Index, a float-adjusted market-capitalization weighted index of companies incorporated in developed-market countries, excluding the U.S. The fund will invest at least 80% of its total assets in the securities of the index and in ADRs and GDRs based on the securities in the index.",
+        "category": "Foreign Large Value",
+        "family": "Flexshares Trust",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "UIVM": {
         "short_name": "VictoryShares USAA MSCI Interna",
         "long_name": "VictoryShares USAA MSCI International Value Momentum ETF",
@@ -226,7 +286,7 @@
         "summary": "The investment seeks to track the performance of FTSE All-World ex US High Dividend Yield Index that measures the investment return of non-U.S. companies that are characterized by high dividend yield.\n The fund invests by sampling the index, meaning that it holds a broadly diversified collection of securities that, in the aggregate, approximates the full index in terms of key characteristics. The index focuses on companies located in developed and emerging markets, excluding the United States, that are forecasted to have above-average dividend yields.",
         "category": "Foreign Large Value",
         "family": "Vanguard",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     }
 }

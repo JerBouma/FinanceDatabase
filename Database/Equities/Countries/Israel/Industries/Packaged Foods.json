@@ -35,6 +35,18 @@
         "country": "Israel",
         "city": "Tel Aviv"
     },
+    "CHAM.TA": {
+        "short_name": "CHAM FOODS ISRAEL",
+        "long_name": "Cham Foods (Israel) Ltd",
+        "summary": "Cham Foods (Israel) Ltd produces and sells food ingredients in Israel and internationally. The company offers a range of processed agricultural ingredients, such as fruits, vegetables, pre-cooked legumes and grains, and nutritional supplements. It provides aseptic foods that include organic and tomato paste, roasted and peeled bell peppers, roasted eggplant puree, chickpea puree, pizza and pasta base sauce, diced tomatoes, and mediternian sauce. The company also offers freeze-dried fruits, such as sweet potato, prickly pear fruit; avocado powder; black bean; red, black, and white quinoa; lemon whole and juice powder; lime whole powder; lentils speckled; golden chickpeas; red and black lentils; orange whole powder; quinoa tricolor; kidney beans; pinto beans; black eyed beans; black wild rice; soybeans; whole bulgur; basmati white rice; red rice; white beans; tricolor rice; whole pearl barley; jasmine whole and white rice; mung beans; whole buckwheat; lentils green; and tricolor rice. In addition, it manufactures and markets spray-dried tomato powders used as raw materials in ready-to-consume meals comprising soups and sauces, natural food coloring and seasoning, pasta, seasonings, sauces, and dressings; and other powders, such a lemon powders and non-dairy thickeners/whiteners. It serves multinational food companies. The company was founded in 1970 and is based in Tel Aviv, Israel. Cham Foods (Israel) Ltd operates as a subsidiary of M. Shvi Family's Asset Ltd.",
+        "currency": "ILA",
+        "sector": "Consumer Defensive",
+        "industry": "Packaged Foods",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "city": "Tel Aviv"
+    },
     "KRUR.TA": {
         "short_name": "KERUR HOLDINGS LTD",
         "long_name": "Kerur Holdings Ltd.",
@@ -46,18 +58,6 @@
         "market": "il_market",
         "country": "Israel",
         "city": "Or Yehuda"
-    },
-    "MEAT.TA": {
-        "short_name": "MEAT-TECH 3D LTD",
-        "long_name": "Meat-Tech 3D Ltd",
-        "summary": "Meat-Tech 3D Ltd develops a 3D printing technology for edible meat tissue using cellular agriculture. It develops technologies, processes, and machines for cultivating, producing, and printing cultured meat. The company was formerly known as Ophectra Real Estate & Investments Ltd and changed its name to Meat-Tech 3D Ltd in October 2019. The company is based in Ness Ziona, Israel.",
-        "currency": "ILA",
-        "sector": "Consumer Defensive",
-        "industry": "Packaged Foods",
-        "exchange": "TLV",
-        "market": "il_market",
-        "country": "Israel",
-        "city": "Ness Ziona"
     },
     "MIFT.TA": {
         "short_name": "MILLENNIUM FOOD-TE",
@@ -71,17 +71,41 @@
         "country": "Israel",
         "city": "Jaffa"
     },
+    "MITC": {
+        "short_name": "MeaTech 3D Ltd.",
+        "long_name": "Meat-Tech 3D Ltd.",
+        "summary": "Meat-Tech 3D Ltd., a technology company, focuses on the development and out-licensing of proprietary three-dimensional printing technology, biotechnology processes, and customizable manufacturing processes to food processing and food retail companies to manufacture proteins without animal slaughtering. The company is developing three-dimensional bioprinter to deposit layers of differentiated stem cells, scaffolding, and cell nutrients in a three-dimensional form of structured cultured meat. It intends to license its proprietary production technology; provide associated products, such as cell lines, printheads, bioreactors, and incubators; and offer services, such as technology implementation, training, and engineering support directly and through contractors to food processing and food retail companies. The company is based in Ness Ziona, Israel.",
+        "currency": "USD",
+        "sector": "Consumer Defensive",
+        "industry": "Packaged Foods",
+        "exchange": "NCM",
+        "market": "us_market",
+        "country": "Israel",
+        "city": "Ness Ziona"
+    },
+    "MITC.TA": {
+        "short_name": "MEATECH 3D LTD",
+        "long_name": "MeaTech 3D Ltd.",
+        "summary": "As of January 26, 2020, Ophectra Real Estate and Investments Ltd was acquired by MeaTech Ltd. in a reverse merger transaction. Meat-Tech 3D Ltd develops a 3D printing technology for edible meat tissue using cellular agriculture. It develops technologies, processes, and machines for cultivating, producing, and printing cultured meat. The company was formerly known as Ophectra Real Estate & Investments Ltd and changed its name to Meat-Tech 3D Ltd in October 2019. The company is based in Ness Ziona, Israel.",
+        "currency": "ILA",
+        "sector": "Consumer Defensive",
+        "industry": "Packaged Foods",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "city": "Ness Ziona"
+    },
     "MTTCF": {
-        "short_name": "MEAT-TECH 3D LTD",
-        "long_name": "Meat-Tech 3D Ltd",
-        "summary": "Meat-Tech 3D Ltd develops a 3D stem cell printing technology for cell based meat production. The company was formerly known as Ophectra Real Estate & Investments Ltd and changed its name to Meat-Tech 3D Ltd in October 2019. The company is based in Petah Tikva, Israel.",
+        "short_name": "MEATECH 3D LTD",
+        "long_name": "Ophectra Real Estate and Investments Ltd",
+        "summary": "As of January 26, 2020, Ophectra Real Estate and Investments Ltd was acquired by MeaTech Ltd. in a reverse merger transaction. Meat-Tech 3D Ltd develops a 3D printing technology for edible meat tissue using cellular agriculture. It develops technologies, processes, and machines for cultivating, producing, and printing cultured meat. The company was formerly known as Ophectra Real Estate & Investments Ltd and changed its name to Meat-Tech 3D Ltd in October 2019. The company is based in Ness Ziona, Israel.",
         "currency": "USD",
         "sector": "Consumer Defensive",
         "industry": "Packaged Foods",
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Petah Tikva"
+        "city": "Ness Ziona"
     },
     "NGS.AX": {
         "short_name": "NGSLTD FPO",
@@ -108,7 +132,7 @@
         "city": "Kiryat Malakhi"
     },
     "NXFR.TA": {
-        "short_name": null,
+        "short_name": "NEXTFERM TECHNOLOG",
         "long_name": "NextFerm Technologies Ltd",
         "summary": "NextFerm Technologies Ltd, a food-tech company, develops and produces active ingredients based on in-house yeast development and fermentation, and for human nutrition. It offers Astaferm, a fermented-astaxanthin; and ProteVin, a vegan protein. The company was founded in 2013 and is based in Yokneam Illit, Israel.",
         "currency": "ILA",
@@ -122,14 +146,14 @@
     "STRS.TA": {
         "short_name": "STRAUSS GROUP LTD",
         "long_name": "Strauss Group Ltd.",
-        "summary": "Strauss Group Ltd., together with its subsidiaries, develops, manufactures, markets, and sells various food and beverage products in Israel, North America, Europe, and internationally. The company primarily operates through six segments: Health & Wellness; Fun & Indulgence; Israel Coffee; International Coffee; International Dips & Spreads; and Strauss Water. The Health & Wellness segment provides yogurts, dairy desserts, soft cheeses, flavored milk beverages, chilled salads, cut vegetables, fresh pasta products, cereal and granola bars, honey products, olive oils, fruit preserves, cooking sauces, lemon juices, and natural maple syrups. This segment also sells and distributes natural juices, butter spreads, sheep yogurt, and plant-based probiotic desserts The Fun & Indulgence segment offers sweet snack bars, chocolate tablets, sweet spreads, candies, chewing gums, cakes and cookies, biscuits, wafers, and salty snacks. The Israel Coffee segment develops, manufactures, sells, markets, and distributes a range of coffee products, chocolate powders, and other drink powders; and retails coffee products. The International Coffee segment develops and manufactures various coffee products and powder drinks; markets and distributes coffee machines; and purchases and processes green coffee, corn products, and juice powders. The International Dips & Spreads segment develops, manufactures, markets, and sells refrigerated dips and spreads under the Sabra, Obela, and Florentin brands. The Strauss Water segment also develops, manufactures, and sells drinking water filtration, purification, and carbonation devices. The company was formerly known as Strauss-Elite Ltd. and changed its name to Strauss Group Ltd. in February 2007. Strauss Group Ltd. was founded in 1933 and is headquartered in Petach Tikva, Israel. Strauss Group Ltd. is a subsidiary of Strauss Holdings Ltd.",
+        "summary": "Strauss Group Ltd., together with its subsidiaries, develops, manufactures, markets, and sells various food and beverage products in Israel, North America, Brazil, Europe, and internationally. The company operates through six segments: Health & Wellness; Fun & Indulgence; Israel Coffee; International Coffee; International Dips & Spreads; and Strauss Water. The Health & Wellness segment provides yogurts, dairy desserts, dairy-free tahini desserts, soft cheeses, flavored milk beverages, chilled salads, cut vegetables, fresh pasta products, cereal and granola bars, honey products, olive oils, fruit preserves, cooking sauces, lemon juices, and natural maple syrups. This segment also sells and distributes natural juices, butter spreads, sheep yogurt, and plant-based probiotic desserts. The Fun & Indulgence segment offers sweet snack bars, chocolate tablets, sweet spreads, candies, chewing gums, cakes and cookies, biscuits, wafers, and salty snacks. The Israel Coffee segment develops, manufactures, sells, markets, and distributes a range of coffee products, chocolate powders, and other drink powders; sells coffee beans; and retails coffee products. The International Coffee segment develops and manufactures various coffee products and powder drinks; markets and distributes coffee machines; and purchases and processes green coffee, corn products, and juice powders. The International Dips & Spreads segment manufactures, markets, and sells chilled dips and spreads under the Sabra, Obela, and Florentin brands. The Strauss Water segment also develops, manufactures, distributes, and sells filtration, purification, and carbonation systems for drinking water. The company was formerly known as Strauss-Elite Ltd. and changed its name to Strauss Group Ltd. in February 2007. Strauss Group Ltd. was founded in 1933 and is headquartered in Petach Tikva, Israel. Strauss Group Ltd. is a subsidiary of Strauss Holdings Ltd.",
         "currency": "ILA",
         "sector": "Consumer Defensive",
         "industry": "Packaged Foods",
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Petach Tikva"
+        "city": "Petah Tikva"
     },
     "SVRT.TA": {
         "short_name": "SAVOREAT LTD",
@@ -154,5 +178,17 @@
         "market": "il_market",
         "country": "Israel",
         "city": "Yavne"
+    },
+    "ZNKL.TA": {
+        "short_name": "ZANLAKOL",
+        "long_name": "Zanlakol Ltd",
+        "summary": "Zanlakol Ltd produces and sells food products in Israel. The company offers hummus and dips, cooking sauces, tomato products, canned vegetables, and fruits and syrups, as well as customized products. It also exports its products worldwide. The company was founded in 1940 and is based in Afula, Israel.",
+        "currency": "ILA",
+        "sector": "Consumer Defensive",
+        "industry": "Packaged Foods",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "city": "Afula"
     }
 }

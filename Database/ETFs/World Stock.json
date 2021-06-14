@@ -1,74 +1,4 @@
 {
-    "ACWF": {
-        "short_name": "iShares MSCI Global Multifactor",
-        "long_name": "iShares MSCI Global Multifactor ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI ACWI Diversified Multiple-Factor Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index is designed to contain equity securities from the MSCI ACWI Index (the \"parent index\") that have high exposure to four investment style factors: value, quality, momentum and low size, while maintaining a level of risk similar to that of the parent index.",
-        "category": "World Stock",
-        "family": "iShares",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "ACWI": {
-        "short_name": "iShares MSCI ACWI Index Fund",
-        "long_name": "iShares MSCI ACWI ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI ACWI composed of large- and mid-capitalization developed and emerging market equities.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is a free float-adjusted market capitalization index designed to measure the combined equity market performance of developed and emerging markets countries.",
-        "category": "World Stock",
-        "family": "iShares",
-        "exchange": "NMS",
-        "market": "us_market"
-    },
-    "ACWV": {
-        "short_name": "iShares MSCI Global Min Vol Fac",
-        "long_name": "iShares MSCI Global Min Vol Factor ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI ACWI Minimum Volatility (USD) Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index measures the combined performance of equity securities in both developed and emerging markets that, in the aggregate, have lower volatility relative to the large- and mid-cap developed and emerging markets.",
-        "category": "World Stock",
-        "family": "iShares",
-        "exchange": "BTS",
-        "market": "us_market"
-    },
-    "ASET": {
-        "short_name": "FlexShares Real Assets Allocati",
-        "long_name": "FlexShares Real Assets Allocation Index Fund",
-        "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the Northern Trust Real Assets Allocation IndexSM.\n Under normal circumstances, the fund will invest at least 80% of its total assets (exclusive of collateral held from securities lending) in the securities of the underlying index. The underlying index measures the performance of an optimized allocation to the underlying funds that is intended to provide exposures to certain real assets and minimize overall volatility of investment in the underlying funds. The fund is non-diversified.",
-        "category": "World Stock",
-        "family": "Flexshares Trust",
-        "exchange": "NGM",
-        "market": "us_market"
-    },
-    "CRBN": {
-        "short_name": "iShares MSCI ACWI Low Carbon Ta",
-        "long_name": "iShares MSCI ACWI Low Carbon Target ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI ACWI Low Carbon Target Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index is designed to address two dimensions of carbon exposure - carbon emissions and potential carbon emissions from fossil fuel reserves.",
-        "category": "World Stock",
-        "family": "iShares",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "DEW": {
-        "short_name": "WisdomTree Global High Dividend",
-        "long_name": "WisdomTree Global High Dividend Fund",
-        "currency": "USD",
-        "summary": "The investment seeks to track the price and yield performance of the WisdomTree Global High Dividend Index.\n The fund will invest at least 95% of its total assets in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a fundamentally weighted index that is comprised of high dividend-yielding companies selected from the WisdomTree Global Dividend Index, which defines the dividend-paying universe of companies in the U.S., developed countries and emerging markets throughout the world. The fund is non-diversified.",
-        "category": "World Stock",
-        "family": "WisdomTree",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "DGT": {
-        "short_name": "SPDR Global Dow ETF (based on T",
-        "long_name": "SPDR Global Dow ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the Global Dow that tracks the performance of multinational blue-chip issuers.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is made up of 150 companies from around the world. It may purchase a subset of the securities in the index in an effort to hold a portfolio of securities with generally the same risk and return characteristics of the index.",
-        "category": "World Stock",
-        "family": "SPDR State Street Global Advisors",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
     "DUDE": {
         "short_name": "Merlyn.AI SectorSurfer Momentum",
         "long_name": "Merlyn.AI SectorSurfer Momentum ETF",
@@ -79,113 +9,13 @@
         "exchange": "BTS",
         "market": "us_market"
     },
-    "DWLD": {
-        "short_name": "Davis Select Worldwide ETF",
-        "long_name": "Davis Select Worldwide ETF",
+    "LDRS": {
+        "short_name": "Innovator IBD ETF Leaders ETF",
+        "long_name": "Innovator IBD ETF Leaders ETF",
         "currency": "USD",
-        "summary": "The investment seeks long-term growth of capital.\n The fund&#39;s investment adviser, uses the Davis Investment Discipline to invest the fund&#39;s portfolio principally in common stocks issued by both United States and foreign companies, including countries with developed or emerging markets. It will invest significantly in issuers (i) organized or located outside of the U.S.; (ii) whose primary trading market is located outside the U.S.; or (iii) doing a substantial amount of business outside the U.S., which the adviser considers to be a company that derives at least 50% of its revenue from business outside the U.S. or has at least 50% of its assets outside the U.S.",
+        "summary": "The investment seeks to track, before fees and expenses, the performance of the IBD\u00c2\u00ae ETF Leaders Index.\n The fund normally invests at least 80% of its net assets (including investment borrowings) in the exchange-traded investment companies that comprise the index. It generally invests in all of the securities comprising the index in proportion to the weightings of the securities in the index. The index is a rules-based index owned and developed by Investor&#39;s Business Daily\u00c2\u00ae designed to attempt to outperform the broader equity and fixed income markets. The fund is non-diversified.",
         "category": "World Stock",
-        "family": "Davis ETFs",
-        "exchange": "NMS",
-        "market": "us_market"
-    },
-    "EDUT": {
-        "short_name": "Global X Education ETF",
-        "long_name": "Global X Education ETF",
-        "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the Indxx Global Education Thematic Index (\"underlying index\").\n The fund invests at least 80% of its total assets in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The objective of the underlying index is to provide exposure to exchange-listed companies globally that provide educational products and services. The fund generally will use a replication strategy. It is non-diversified.",
-        "category": "World Stock",
-        "family": "Global X Funds",
-        "exchange": "NGM",
-        "market": "us_market"
-    },
-    "ESGG": {
-        "short_name": "FlexShares Trust FlexShares STO",
-        "long_name": "FlexShares STOXX Global ESG Impact Index Fund",
-        "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the STOXX\u00c2\u00ae Global ESG Impact Index.\n The index is designed to reflect the performance of a selection of companies that, in aggregate, possess greater exposure to environmental, social and governance characteristics relative to the STOXX\u00c2\u00ae Global 1800 Index, a float-adjusted market-capitalization weighted index of companies incorporated in the U.S. or in developed international markets. The fund will invest at least 80% of its total assets in the securities of the index and in ADRs and GDRs based on the securities in the index.",
-        "category": "World Stock",
-        "family": "Flexshares Trust",
-        "exchange": "BTS",
-        "market": "us_market"
-    },
-    "FIHD": {
-        "short_name": "UBS AG UBS AG FI Enhanced Globa",
-        "long_name": "UBS AG FI Enhanced Global High Yield ETN",
-        "currency": "USD",
-        "summary": "The investment seeks a return linked to the MSCI World High Dividend Yield USD Gross Total Return Index.\n The ETN is a series of FI Enhanced ETNs. The Securities are senior unsecured debt securities issued by UBS AG. The Securities are designed to provide a two times leveraged long exposure to the performance of the index compounded on a quarterly basis, reduced by the Accrued Fees. The index is designed to track the performance of large- and mid-cap stocks (excluding REITS) across 23 developed markets countries tracked by the MSCI World Index with higher than average dividend yields that are potentially both sustainable and persistent.",
-        "category": "World Stock",
-        "family": "UBS Group AG",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "FIYY": {
-        "short_name": "Barclays ETN  FI Enhanced Globa",
-        "long_name": "Barclays ETN+ FI Enhanced Global High Yield ETN B",
-        "currency": "USD",
-        "summary": "The investment seeks return linked to a quarterly rebalanced leveraged participation in the performance of the MSCI World High Dividend Yield USD Gross Total Return Index (the \u00e2\u0080\u009cindex\u00e2\u0080\u009d).\n At inception the ETN is designed to target two times the performance of the index. A quarterly rebalancing event or a loss rebalancing event will aim to reset the leveraged exposure to the index to approximately two. The index is designed to track the performance of large and mid cap stocks (excluding REITS) across 23 developed markets countries tracked by the MSCI World Index with higher than average dividend yields that are potentially both sustainable and persistent.",
-        "category": "World Stock",
-        "family": "Milleis Investissements Funds",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "FLQD": {
-        "short_name": "Franklin LibertyQ Global Divide",
-        "long_name": "Franklin LibertyQ Global Dividend ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the LibertyQ Global Dividend Index.\n The fund invests at least 80% of its assets in the component securities of the index and in depositary receipts representing such securities. The index includes stocks from developed and emerging market countries with high and persistent dividend income that have favorable exposure to a quality investment style factor.",
-        "category": "World Stock",
-        "family": "Franklin Templeton Investments",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "FLQG": {
-        "short_name": "Franklin LibertyQ Global Equity",
-        "long_name": "Franklin LibertyQ Global Equity ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the LibertyQ Global Equity Index.\n The fund invests at least 80% of its assets in the component securities of the index and in depositary receipts representing such securities. The index includes stocks from developed and emerging market countries that have favorable exposure to multiple investment style factors.",
-        "category": "World Stock",
-        "family": "Franklin Templeton Investments",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "GENY": {
-        "short_name": "Principal Millennials Index ETF",
-        "long_name": "Principal Millennials Index ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to provide investment results that closely correspond, before expenses, to the performance of the Nasdaq Global Millennial Opportunity Index (the \"index\").\n Under normal circumstances, the fund invests at least 80% of its net assets, plus any borrowings for investment purposes, in equity securities of companies that compose the index at the time of purchase. The index uses a quantitative model designed to identify equity securities of companies in the Nasdaq Global Index (the \"parent index\") that are impacted by the spending and lifestyle activities of the Millennial generation, which refers to people born from 1980 to the mid-2000s.",
-        "category": "World Stock",
-        "family": "Principal Funds",
-        "exchange": "NMS",
-        "market": "us_market"
-    },
-    "IOO": {
-        "short_name": "iShares Global 100 ETF",
-        "long_name": "iShares Global 100 ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the S&P Global 100TM (the \"underlying index\"), which is designed to measure the performance of the stocks of 100 large-capitalization global companies.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. It may invest the remainder of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the underlying index, but which the advisor believes will help the fund track the underlying index.",
-        "category": "World Stock",
-        "family": "iShares",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "LOWC": {
-        "short_name": "SPDR MSCI ACWI Low Carbon Targe",
-        "long_name": "SPDR MSCI ACWI Low Carbon Target ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the MSCI ACWI Low Carbon Target Index.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in depositary receipts based on securities comprising the index. The index is designed to address two dimensions of carbon exposure - carbon emissions and fossil fuel reserves, expressed as potential emissions.",
-        "category": "World Stock",
-        "family": "SPDR State Street Global Advisors",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "MOTO": {
-        "short_name": "SmartETFs Smart Transportation ",
-        "long_name": "SmartETFs Smart Transportation & Technology ETF",
-        "currency": "USD",
-        "summary": "The investment seeks long-term capital appreciation.\n The fund will invest in publicly-traded equity securities of domestic or foreign companies that are involved in the development and production of products or services for Smart Transportation, including safer, cleaner or connected vehicles and Smart Transportation companies providing \"transportation as a service.\" Under normal circumstances, it will invest at least 80% of its net assets (plus any borrowings for investment purposes) in Smart Transportation companies and Technology companies.",
-        "category": "World Stock",
-        "family": "SmartETFs",
+        "family": "Innovator ETFs",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -199,43 +29,23 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "QWLD": {
-        "short_name": "SPDR MSCI World StrategicFactor",
-        "long_name": "SPDR MSCI World StrategicFactors ETF",
+    "ROMO": {
+        "short_name": "Strategy Shares Newfound/ReSolv",
+        "long_name": "Strategy Shares Newfound/ReSolve Robust Momentum ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the performance of the MSCI World Factor Mix A-Series Index.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in depositary receipts based on securities comprising the index. The index captures large-and mid-cap representation across 23 developed countries and aims to represent the performance of value, low volatility, and quality factor strategies.",
+        "summary": "The investment seeks to provide investment returns that correspond, before fees and expenses, to the performance of the Newfound/ReSolve Robust Equity Momentum Index.\n The fund employs a \"passive management\" investment approach designed to track the total return performance, before fees and expenses, of the Newfound/ReSolve Robust Equity Momentum Index. The index uses a quantitative, rules-based methodology to provide exposure to broad U.S. equity, international equity, and emerging market equity indices, to the extent that such equity indices are exhibiting positive momentum relative to U.S. Treasury market indices.",
         "category": "World Stock",
-        "family": "SPDR State Street Global Advisors",
-        "exchange": "PCX",
+        "family": "Strategy Shares",
+        "exchange": "BTS",
         "market": "us_market"
     },
-    "URTH": {
-        "short_name": "Ishares MSCI World Index Fund",
-        "long_name": "iShares MSCI World ETF",
+    "TRND": {
+        "short_name": "Pacer Trendpilot Fund of Funds ",
+        "long_name": "Pacer Trendpilot Fund of Funds ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI World Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is designed to measure the performance of equity securities in the large and mid-capitalization segments of developed market countries.",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Pacer Trendpilot Fund of Funds Index.\n The index is based on a proprietary methodology developed and maintained by Index Design Group, an affiliate of Pacer Advisors, Inc., the fund&#39;s investment adviser. Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in the component securities of the index. It is non-diversified.",
         "category": "World Stock",
-        "family": "iShares",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "VT": {
-        "short_name": "Vanguard Total World Stock Inde",
-        "long_name": "Vanguard Total World Stock Index Fund ETF Shares",
-        "currency": "USD",
-        "summary": "The investment seeks to track the performance of a benchmark index that measures the investment return of stocks of companies located in developed and emerging markets around the world.\n The fund employs an indexing investment approach designed to track the performance of the FTSE Global All Cap Index. The advisor attempts to sample the target index by investing all, or substantially all, of its assets in common stocks in the index and by holding a representative sample of securities that resembles the full index in terms of key risk factors and other characteristics.",
-        "category": "World Stock",
-        "family": "Vanguard",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
-    "WDIV": {
-        "short_name": "SPDR S&P Global Dividend",
-        "long_name": "SPDR S&P Global Dividend ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return of the S&P Global Dividend Aristocrats Index.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in depositary receipts based on securities comprising the index. The index is designed to measure the performance of high dividend-yield companies included in the S&P Global BMI that have followed a managed-dividends policy of increasing or stable dividends for at least ten consecutive years.",
-        "category": "World Stock",
-        "family": "SPDR State Street Global Advisors",
+        "family": "Pacer",
         "exchange": "PCX",
         "market": "us_market"
     }

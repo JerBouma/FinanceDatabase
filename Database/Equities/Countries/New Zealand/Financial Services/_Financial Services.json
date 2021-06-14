@@ -1,4 +1,16 @@
 {
+    "ACE.NZ": {
+        "short_name": "Ascension Capital Limited Ordin",
+        "long_name": "Ascension Capital Limited",
+        "summary": "Ascension Capital Limited is a publicly owned investment manager. The firm is listed on the New Zealand Stock Exchange. The company was formerly known as TRS Investments Limited and changed its name to Ascension Capital Limited in July 2020. Ascension Capital Limited is based in Wellington, New Zealand.",
+        "currency": "NZD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "NZE",
+        "market": "nz_market",
+        "country": "New Zealand",
+        "city": "Wellington"
+    },
     "ASKH": {
         "short_name": "ASTIKA HOLDINGS INC",
         "long_name": "Astika Holdings, Inc.",
@@ -8,6 +20,18 @@
         "industry": "Shell Companies",
         "exchange": "PNK",
         "market": "us_market",
+        "country": "New Zealand",
+        "city": "Auckland"
+    },
+    "BGI.NZ": {
+        "short_name": "Blackwell Global Holdings Limit",
+        "long_name": "Blackwell Global Holdings Limited",
+        "summary": "Blackwell Global Holdings Limited, a financial services company, offers mortgage lending services to investors, builders, developers, and other borrowers. The company provides bridging finance, development finance, subdivision finance, construction loans, low doc mortgages, new building finance, debt consolidations, credit home loans, development and construction finance, non-resident finance, mezzanine finance, and bank rescues packages. The company was formerly known as NZF Group Limited and changed its name to Blackwell Global Holdings Limited in July 2017. The company is based in Auckland, New Zealand. Blackwell Global Holdings Limited is a subsidiary of Blackwell Global Group Limited.",
+        "currency": "NZD",
+        "sector": "Financial Services",
+        "industry": "Mortgage Finance",
+        "exchange": "NZE",
+        "market": "nz_market",
         "country": "New Zealand",
         "city": "Auckland"
     },
@@ -35,6 +59,18 @@
         "country": "New Zealand",
         "city": "Auckland"
     },
+    "GEN.NZ": {
+        "short_name": "General Capital Limited Ordinar",
+        "long_name": "General Capital Limited",
+        "summary": "Corporate Holdings Limited provides financial services in New Zealand. It operates through Finance, and Research and Advisory segments. The company accepts deposits, and provides residential mortgage lending. It also offers investment advisory services, as well as produces and sells investment research and publications. Corporate Holdings Limited is based in Auckland, New Zealand.",
+        "currency": "NZD",
+        "sector": "Financial Services",
+        "industry": "Mortgage Finance",
+        "exchange": "NZE",
+        "market": "nz_market",
+        "country": "New Zealand",
+        "city": "Auckland"
+    },
     "GFL.NZ": {
         "short_name": "Geneva Finance Limited Ordinary",
         "long_name": "Geneva Finance Limited",
@@ -42,6 +78,30 @@
         "currency": "NZD",
         "sector": "Financial Services",
         "industry": "Credit Services",
+        "exchange": "NZE",
+        "market": "nz_market",
+        "country": "New Zealand",
+        "city": "Auckland"
+    },
+    "HGH.AX": {
+        "short_name": "HEARTLAND FPO NZX",
+        "long_name": "Heartland Group Holdings Limited",
+        "summary": "Heartland Group Holdings Limited operates as the bank holding company for Heartland Bank Limited that provides various financial services in New Zealand and Australia. The company offers savings accounts, term deposits, and direct and business call accounts. It also provides home loans, business loans, term loans, revolving credit, business finance guarantee scheme, reverse mortgages, car loans, rural loans, livestock finance, seasonal finance, capital livestock finance, and farm transition loans. In addition, it offers internet and mobile banking services; and management and insurance services. Further, the company engages in investment property holding business. The company was founded in 1875 and is based in Auckland, New Zealand.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Mortgage Finance",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "New Zealand",
+        "city": "Auckland"
+    },
+    "HGH.NZ": {
+        "short_name": "Heartland Group Holdings Limite",
+        "long_name": "Heartland Group Holdings Limited",
+        "summary": "Heartland Group Holdings Limited operates as the bank holding company for Heartland Bank Limited that provides various financial services in New Zealand and Australia. The company offers savings accounts, term deposits, and direct and business call accounts. It also provides home loans, business loans, term loans, revolving credit, business finance guarantee scheme, reverse mortgages, car loans, rural loans, livestock finance, seasonal finance, capital livestock finance, and farm transition loans. In addition, it offers internet and mobile banking services; and management and insurance services. Further, the company engages in investment property holding business. The company was founded in 1875 and is based in Auckland, New Zealand.",
+        "currency": "NZD",
+        "sector": "Financial Services",
+        "industry": "Mortgage Finance",
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
@@ -74,7 +134,7 @@
     "NZSTF": {
         "short_name": "NZX LIMITED",
         "long_name": "NZX Limited",
-        "summary": "NZX Limited operates as a stock exchange in New Zealand. The company operates through five segments: Issuer Relationships, Secondary Markets, Data & Insights, Funds Management, and Wealth Technologies. The Issuer Relationships segment provides issuer services for current and prospective customers and market operator for Fonterra Co-Operative Group and the Electricity Authority. The Secondary Markets provides trading and post-trade services for securities and derivatives markets, as well as provides central securities depository. The Data & Insights segment involved in provision of data services for securities and derivatives markets; and data and analysis for New Zealand's dairy sector. The Funds Management segment offers SuperLife superannuation and KiwiSaver, and Smartshares exchange traded funds. The Wealth Technologies segment provides funds administration service. It also offers virtualTrading, a virtual platform for people to learn about key investing concepts by actively trading virtual securities. NZX Limited was incorporated in 2002 and is based in Wellington, New Zealand.",
+        "summary": "NZX Limited operates a stock exchange in New Zealand. The company operates through five segments: Issuer Relationships, Secondary Markets, Data & Insights, Funds Management, and Wealth Technologies. The Issuer Relationships segment provides issuer services for current and prospective customers and market operator for Fonterra Co-Operative Group and the Electricity Authority. The Secondary Markets provides trading and post-trade services for securities and derivatives markets, as well as provides central securities depository; and market operator for Fonterra Co-Operative Group, the Electricity Authority, and the Ministry for the Environment. The Data & Insights segment offers information services for the securities and derivatives markets; and analysis for New Zealand's dairy sector. The Funds Management segment provides superannuation and KiwiSaver, and Smartshares exchange traded funds. The Wealth Technologies segment offers funds administration and custodian services. It also offers virtualTrading, a virtual platform for people to learn about key investing concepts by actively trading virtual securities. NZX Limited was incorporated in 2002 and is based in Wellington, New Zealand.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Financial Data & Stock Exchanges",
@@ -86,7 +146,7 @@
     "NZX.NZ": {
         "short_name": "NZX Limited Ordinary Shares",
         "long_name": "NZX Limited",
-        "summary": "NZX Limited operates as a stock exchange in New Zealand. The company operates through five segments: Issuer Relationships, Secondary Markets, Data & Insights, Funds Management, and Wealth Technologies. The Issuer Relationships segment provides issuer services for current and prospective customers and market operator for Fonterra Co-Operative Group and the Electricity Authority. The Secondary Markets provides trading and post-trade services for securities and derivatives markets, as well as provides central securities depository. The Data & Insights segment involved in provision of data services for securities and derivatives markets; and data and analysis for New Zealand's dairy sector. The Funds Management segment offers SuperLife superannuation and KiwiSaver, and Smartshares exchange traded funds. The Wealth Technologies segment provides funds administration service. It also offers virtualTrading, a virtual platform for people to learn about key investing concepts by actively trading virtual securities. NZX Limited was incorporated in 2002 and is based in Wellington, New Zealand.",
+        "summary": "NZX Limited operates a stock exchange in New Zealand. The company operates through five segments: Issuer Relationships, Secondary Markets, Data & Insights, Funds Management, and Wealth Technologies. The Issuer Relationships segment provides issuer services for current and prospective customers and market operator for Fonterra Co-Operative Group and the Electricity Authority. The Secondary Markets provides trading and post-trade services for securities and derivatives markets, as well as provides central securities depository; and market operator for Fonterra Co-Operative Group, the Electricity Authority, and the Ministry for the Environment. The Data & Insights segment offers information services for the securities and derivatives markets; and analysis for New Zealand's dairy sector. The Funds Management segment provides superannuation and KiwiSaver, and Smartshares exchange traded funds. The Wealth Technologies segment offers funds administration and custodian services. It also offers virtualTrading, a virtual platform for people to learn about key investing concepts by actively trading virtual securities. NZX Limited was incorporated in 2002 and is based in Wellington, New Zealand.",
         "currency": "NZD",
         "sector": "Financial Services",
         "industry": "Financial Data & Stock Exchanges",
@@ -106,6 +166,18 @@
         "market": "au_market",
         "country": "New Zealand",
         "city": "Christchurch"
+    },
+    "TWR.AX": {
+        "short_name": "TOWER FPO NZX",
+        "long_name": "Tower Limited",
+        "summary": "Tower Limited provides general insurance products in New Zealand and the Pacific Islands. Its insurance products include car, contents, renters', house, landlord, business, travel, boat, motorbike, lifestyle block and farm, motorhome, and caravan or trailer insurance. The company was founded in 1869 and is based in Auckland, New Zealand.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Insurance - Diversified",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "New Zealand",
+        "city": "Auckland"
     },
     "TWR.NZ": {
         "short_name": "Tower Limited Ordinary Shares",

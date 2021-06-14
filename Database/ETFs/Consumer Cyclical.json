@@ -9,6 +9,26 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "BEDZ": {
+        "short_name": "AdvisorShares Hotel ETF",
+        "long_name": "AdvisorShares Hotel ETF",
+        "currency": "USD",
+        "summary": "The investment seeks long-term capital appreciation.\n The fund is an actively ETF that seeks to achieve its investment objective by investing, under normal circumstances, at least 80% of its net assets (plus any borrowings for investment purposes) in securities of companies that derive at least 50% of their net revenue from the hotel business. It may also invest in companies involved in other lodging and travel-related services. The fund invests primarily in U.S. exchange listed equity securities, including common and preferred stock and \u00e2\u0080\u009cADRs. It is non-diversified.",
+        "category": "Consumer Cyclical",
+        "family": "AdvisorShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "BETZ": {
+        "short_name": "Roundhill Sports Betting & iGam",
+        "long_name": "Roundhill Sports Betting & iGaming ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Roundhill Sports Betting & iGaming Index.\n Under normal circumstances, at least 80% of the fund&#39;s net assets (plus borrowings for investment purposes) will be invested in securities issued by Sports Betting and iGaming Companies. The index tracks the performance of the common stock (or corresponding American Depositary Receipts (\"ADRs\") or Global Depositary Receipts (\"GDRs\")) of exchange-listed companies that earn revenue from online gaming (\"iGaming\").",
+        "category": "Consumer Cyclical",
+        "family": "Roundhill Financial",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "BJK": {
         "short_name": "VanEck Vectors Gaming ETF",
         "long_name": "VanEck Vectors Gaming ETF",
@@ -16,7 +36,27 @@
         "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the MVIS\u00c2\u00ae Global Gaming Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. To be initially eligible for the index, companies must generate at least 50% of their revenues from gaming. Gaming includes casinos and casino hotels, sports betting (including internet gambling and racetracks) and lottery services as well as gaming services, gaming technology and gaming equipment. It is non-diversified.",
         "category": "Consumer Cyclical",
         "family": "VanEck",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "CARZ": {
+        "short_name": "First Trust NASDAQ Global Auto ",
+        "long_name": "First Trust NASDAQ Global Auto Index Fund",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the NASDAQ OMX Global Auto Index(SM).\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and depositary receipts that comprise the index. The index is designed to track the performance of the largest and most liquid companies engaged in the manufacturing of automobiles. The fund is non-diversified.",
+        "category": "Consumer Cyclical",
+        "family": "First Trust",
         "exchange": "NGM",
+        "market": "us_market"
+    },
+    "EATZ": {
+        "short_name": "AdvisorShares Restaurant ETF",
+        "long_name": "AdvisorShares Restaurant ETF",
+        "currency": "USD",
+        "summary": "The investment seeks long-term capital appreciation.\n The fund is an actively managed ETF that seeks to achieve its investment objective by investing, under normal circumstances, at least 80% of its net assets (plus any borrowings for investment purposes) in securities of companies that derive at least 50% of their net revenue from the restaurant business. It invests primarily in U.S. exchange listed equity securities, including common and preferred stock and ADRs. The fund will concentrate at least 25% of its investments in the Hotels, Restaurants & Leisure Industry within the Consumer Discretionary Sector. It is non-diversified.",
+        "category": "Consumer Cyclical",
+        "family": "AdvisorShares",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "FDIS": {
@@ -36,7 +76,7 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of the Nasdaq US Smart Retail Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and depository receipts that comprise the index. The index is designed to provide exposure to U.S. companies comprising the retail sector that have been selected based upon their liquidity and weighted based upon their cumulative score on three investing factors: volatility, value and growth. It is non-diversified.",
         "category": "Consumer Cyclical",
         "family": "First Trust",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "FXD": {
@@ -53,10 +93,20 @@
         "short_name": "Amplify ETF Trust Amplify Onlin",
         "long_name": "Amplify Online Retail ETF",
         "currency": "USD",
-        "summary": "The investment seeks investment results that generally correspond (before fees and expenses) to the price and yield of the EQM Online Retail Index.\n The fund will invest at least 80% of its total assets in global equity securities that comprise the index, which will primarily include common stocks and/or depositary receipts, such as ADRs and GDRs. The index seeks to measure the performance of global equity securities of publicly traded companies with significant revenue from the online retail business. The index methodology is designed to result in a portfolio that has the potential for capital appreciation. The fund is non-diversified.",
+        "summary": "The investment seeks investment results that generally correspond (before fees and expenses) to the price and yield of the EQM Online Retail Index.\n The fund will invest at least 80% of its total assets in global equity securities that comprise the index, which will primarily include common stocks and/or depositary receipts, such as ADRs and GDRs. The index seeks to measure the performance of global equity securities of publicly traded companies with significant revenue from the online retail business. The index methodology is designed to result in a portfolio that has the potential for capital appreciation.",
         "category": "Consumer Cyclical",
         "family": "Amplify ETFs",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "ITB": {
+        "short_name": "iShares U.S. Home Construction ",
+        "long_name": "iShares U.S. Home Construction ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Dow Jones U.S. Select Home Construction Index composed of U.S. equities in the home construction sector.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. The underlying index measures the performance of the home construction sector of the U.S. equity market. The fund may invest the remainder of its assets in certain futures, options and swap contracts, cash and cash equivalents. It is non-diversified.",
+        "category": "Consumer Cyclical",
+        "family": "iShares",
+        "exchange": "BTS",
         "market": "us_market"
     },
     "IYC": {
@@ -79,6 +129,26 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "ONLN": {
+        "short_name": "ProShares Online Retail ETF",
+        "long_name": "ProShares Online Retail ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results, before fees and expenses, that track the performance of the ProShares Online Retail Index (the index).\n Under normal circumstances, the fund will invest at least 80% of its total assets in component securities of the index. The index is designed to measure the performance of publicly traded companies that principally sell online or through other non-store sales channels, such as through mobile or app purchases, rather than through \"brick and mortar\" store locations. The fund is non-diversified.",
+        "category": "Consumer Cyclical",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "PBS": {
+        "short_name": "Invesco Dynamic Media ETF",
+        "long_name": "Invesco Dynamic Media ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Dynamic Media IntellidexSM Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of common stocks of U.S. media companies. These companies are principally engaged in the development, production, sale and distribution of goods or services used in the media industry. The fund is non-diversified.",
+        "category": "Consumer Cyclical",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "PEJ": {
         "short_name": "Invesco Dynamic Leisure and Ent",
         "long_name": "Invesco Dynamic Leisure and Entertainment ETF",
@@ -96,7 +166,27 @@
         "summary": "The investment seeks to track the investment results (before fees and expenses) of the Dorsey Wright\u00c2\u00ae Consumer Cyclicals Technical Leaders Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of at least 30 securities of companies in the consumer discretionary (or cyclicals) sector that have powerful relative strength or \"momentum\" characteristics.",
         "category": "Consumer Cyclical",
         "family": "Invesco",
-        "exchange": "NMS",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "PSCD": {
+        "short_name": "Invesco S&P SmallCap Consumer D",
+        "long_name": "Invesco S&P SmallCap Consumer Discretionary ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P SmallCap 600\u00c2\u00ae Capped Consumer Discretionary Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities of small-capitalization U.S. consumer discretionary companies that comprise the underlying index. These companies are principally engaged in the businesses of providing consumer goods and services that are cyclical in nature, including, but not limited to, household durables, leisure products and services, apparel and luxury goods, computers and electronics, automobiles, etc.",
+        "category": "Consumer Cyclical",
+        "family": "Invesco",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "RCD": {
+        "short_name": "Invesco S&P 500 Equal Weight Co",
+        "long_name": "Invesco S&P 500 Equal Weight Consumer Discretionary ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Equal Weight Consumer Discretionary Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of all of the components of the S&P 500\u00c2\u00ae Consumer Discretionary Index, an index that contains the common stocks of all companies included in the S&P 500\u00c2\u00ae Index that are classified as members of the consumer discretionary sector, as defined according to the Global Industry Classification Standard (\"GICS\").",
+        "category": "Consumer Cyclical",
+        "family": "Invesco",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "RTH": {

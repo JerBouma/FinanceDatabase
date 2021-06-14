@@ -2,7 +2,7 @@
     "07H.F": {
         "short_name": "CORESITE REALTY  DL -,001",
         "long_name": "CoreSite Realty Corporation",
-        "summary": "CoreSite Realty Corporation (NYSE:COR) delivers secure, reliable, high-performance data center, cloud and interconnection solutions to a growing customer ecosystem across eight key North American markets. More than 1,350 of the world's leading enterprises, network operators, cloud providers, and supporting service providers choose CoreSite to connect, protect and optimize their performance-sensitive data, applications and computing workloads. Our scalable, flexible solutions and 460+ dedicated employees consistently deliver unmatched data center options \u00c2\u0097 all of which leads to a best-in-class customer experience and lasting relationships.",
+        "summary": "CoreSite Realty Corporation (NYSE:COR) delivers secure, reliable, high-performance data center, cloud access and interconnection solutions to a growing customer ecosystem across eight key North American markets. More than 1,375 of the world's leading enterprises, network operators, cloud providers, and supporting service providers choose CoreSite to connect, protect and optimize their performance-sensitive data, applications and computing workloads. Our scalable, flexible solutions and 460+ dedicated employees consistently deliver unmatched data center options \u00c2\u0097 all of which leads to a best-in-class customer experience and lasting relationships.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -13,7 +13,7 @@
     },
     "2971.T": {
         "short_name": "ESCON JAPAN REIT INVESTMENT COR",
-        "long_name": "ESCON JAPAN REIT Investment Corporation",
+        "long_name": "Escon Japan REIT Investment Corporation",
         "summary": "Escon Japan REIT Investment Corp. is a real estate investment trust (REIT) focused on commercial facilities and was listed in 2019. It invests intensively in community-oriented commercial facilities and leasehold land located in Japan's four largest metropolitan areas. Es-Con Japan Ltd. serves as its sponsor.",
         "currency": "JPY",
         "sector": "Real Estate",
@@ -34,18 +34,6 @@
         "market": "jp_market",
         "country": "Japan",
         "city": "Tokyo"
-    },
-    "3227.T": {
-        "short_name": "MCUBS MIDCITY INVESTMENT CORP",
-        "long_name": "MCUBS MidCity Investment Corporation",
-        "summary": "MCUBS MidCity Investment Corporation (MidCity) is a REIT focused on office properties. It is managed by Mitsubishi Corp.-UBS Realty Inc. (MC-UBS), an asset management company established as a joint venture between the general trading company, Mitsubishi Corporation, and UBS A.G., a leading European financial institution. Featuring a portfolio balanced among Japan's three major metropolitan areas, it carries out carefully selected investment in properties with stable earnings through its unique strategy utilizing an asset information network from the sponsors.",
-        "currency": "JPY",
-        "sector": "Real Estate",
-        "industry": "REIT - Office",
-        "exchange": "JPX",
-        "market": "jp_market",
-        "country": "Japan",
-        "city": "Chiyoda"
     },
     "3295.T": {
         "short_name": "HULIC REIT INC.",
@@ -70,6 +58,18 @@
         "market": "kr_market",
         "country": "South Korea",
         "city": "Seoul"
+    },
+    "6PM.F": {
+        "short_name": "PARAMOUNT GROUP  DL -,01",
+        "long_name": "Paramount Group, Inc.",
+        "summary": "Headquartered in New York City, Paramount Group, Inc. is a fully-integrated real estate investment trust that owns, operates, manages, acquires and redevelops high-quality, Class A office properties located in select central business district submarkets of New York City and San Francisco. Paramount is focused on maximizing the value of its portfolio by leveraging the sought-after locations of its assets and its proven property management capabilities to attract and retain high-quality tenants.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "New York"
     },
     "7CO.F": {
         "short_name": "COIMA RES S.P.A.",
@@ -119,10 +119,34 @@
         "country": "Japan",
         "city": "Tokyo"
     },
+    "8987.T": {
+        "short_name": "JAPAN EXCELLENT INC",
+        "long_name": "Japan Excellent, Inc.",
+        "summary": "JEI invests primarily in office buildings located in major metropolitan areas and pursues to create portfolio that produces stable growth of income by acquiring properties with a strict investment criteria and a close monitoring of real estate market trends.",
+        "currency": "JPY",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "JPX",
+        "market": "jp_market",
+        "country": "Japan",
+        "city": "Tokyo"
+    },
+    "A1RE34.SA": {
+        "short_name": "ALEXANDRIA RDRN",
+        "long_name": "Alexandria Real Estate Equities, Inc.",
+        "summary": "Alexandria Real Estate Equities, Inc. (NYSE:ARE), an S&P 500<sup>\u00c2\u00ae</sup> urban office real estate investment trust (\"REIT\"), is the first, longest-tenured, and pioneering owner, operator, and developer uniquely focused on collaborative life science, technology, and agtech campuses in AAA innovation cluster locations, with a total market capitalization of $31.9 billion as of December 31, 2020, and an asset base in North America of 49.7 million square feet (\"SF\"). The asset base in North America includes 31.9 million RSF of operating properties and 3.3 million RSF of Class A properties undergoing construction, 7.1 million RSF of near-term and intermediate-term development and redevelopment projects, and 7.4 million SF of future development projects. Founded in 1994, Alexandria pioneered this niche and has since established a significant market presence in key locations, including Greater Boston, San Francisco, New York City, San Diego, Seattle, Maryland, and Research Triangle. Alexandria has a longstanding and proven track record of developing Class A properties clustered in urban life science, technology, and agtech campuses that provide our innovative tenants with highly dynamic and collaborative environments that enhance their ability to successfully recruit and retain world-class talent and inspire productivity, efficiency, creativity, and success. Alexandria also provides strategic capital to transformative life science, technology, and agtech companies through our venture capital platform. We believe our unique business model and diligent underwriting ensure a high-quality and diverse tenant base that results in higher occupancy levels, longer lease terms, higher rental income, higher returns, and greater long-term asset value.",
+        "currency": "BRL",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "United States",
+        "city": "Pasadena"
+    },
     "A6W.F": {
         "short_name": "ALEXANDRIA REAL EST. EQU.",
         "long_name": "Alexandria Real Estate Equities, Inc.",
-        "summary": "Alexandria Real Estate Equities, Inc. (NYSE:ARE), an S&P 500\u00c2\u00ae urban office real estate investment trust (\"REIT\"), is the first, longest-tenured, and pioneering owner, operator, and developer uniquely focused on collaborative life science, technology, and agtech campuses in AAA innovation cluster locations, with a total market capitalization of $29.2 billion as of September 30, 2020, and an asset base in North America of 47.4 million square feet (\"SF\"). The asset base in North America includes 31.2 million RSF of operating properties and 2.8 million RSF of Class A properties undergoing construction, 7.2 million RSF of near-term and intermediate-term development and redevelopment projects, and 6.2 million SF of future development projects. Founded in 1994, Alexandria pioneered this niche and has since established a significant market presence in key locations, including Greater Boston, San Francisco, New York City, San Diego, Seattle, Maryland, and Research Triangle. Alexandria has a longstanding and proven track record of developing Class A properties clustered in urban life science, technology, and agtech campuses that provide our innovative tenants with highly dynamic and collaborative environments that enhance their ability to successfully recruit and retain world-class talent and inspire productivity, efficiency, creativity, and success. Alexandria also provides strategic capital to transformative life science, technology, and agtech companies through our venture capital platform. We believe our unique business model and diligent underwriting ensure a high-quality and diverse tenant base that results in higher occupancy levels, longer lease terms, higher rental income, higher returns, and greater long-term asset value.",
+        "summary": "Alexandria Real Estate Equities, Inc. (NYSE:ARE), an S&P 500<sup>\u00c2\u00ae</sup> urban office real estate investment trust (\"REIT\"), is the first, longest-tenured, and pioneering owner, operator, and developer uniquely focused on collaborative life science, technology, and agtech campuses in AAA innovation cluster locations, with a total market capitalization of $31.9 billion as of December 31, 2020, and an asset base in North America of 49.7 million square feet (\"SF\"). The asset base in North America includes 31.9 million RSF of operating properties and 3.3 million RSF of Class A properties undergoing construction, 7.1 million RSF of near-term and intermediate-term development and redevelopment projects, and 7.4 million SF of future development projects. Founded in 1994, Alexandria pioneered this niche and has since established a significant market presence in key locations, including Greater Boston, San Francisco, New York City, San Diego, Seattle, Maryland, and Research Triangle. Alexandria has a longstanding and proven track record of developing Class A properties clustered in urban life science, technology, and agtech campuses that provide our innovative tenants with highly dynamic and collaborative environments that enhance their ability to successfully recruit and retain world-class talent and inspire productivity, efficiency, creativity, and success. Alexandria also provides strategic capital to transformative life science, technology, and agtech companies through our venture capital platform. We believe our unique business model and diligent underwriting ensure a high-quality and diverse tenant base that results in higher occupancy levels, longer lease terms, higher rental income, higher returns, and greater long-term asset value.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -170,7 +194,7 @@
     "AJBU.SI": {
         "short_name": "Keppel DC Reit",
         "long_name": "Keppel DC REIT",
-        "summary": "Listed on 12 December 2014, Keppel DC REIT is the first pure-play data centre REIT listed in Asia and on the Singapore Exchange (SGX-ST). Keppel DC REIT's investment strategy is to principally invest, directly or indirectly, in a diversified portfolio of income-producing real estate assets which are used primarily for data centre purposes, as well as real estate related assets. As at 30 June 2020, its portfolio comprises 18 data centres centres1 strategically located in key data centre hubs. With an aggregate lettable area of approximately 1,952,280 sq ft, the portfolio spans 11 cities in eight countries across Asia Pacific and Europe. Keppel Telecommunications & Transportation Ltd (Keppel T&T), the Sponsor of the REIT, has also granted Rights of First Refusal (ROFR) to the REIT for future acquisition opportunities of its data centre assets. The REIT is managed by Keppel DC REIT Management Pte. Ltd.. Keppel Capital Holdings Pte. Ltd. (Keppel Capital) has a 50% interest in the Manager, with the remaining interest held by Keppel T&T. Keppel Capital is a premier asset manager in Asia with assets under management comprising real estate, infrastructure and data centre properties in key global markets. The Manager's key objectives are to provide the REIT's Unitholders with regular and stable distributions, as well as achieve long-term growth while maintaining an optimal capital structure.",
+        "summary": "Listed on 12 December 2014, Keppel DC REIT is the first pure-play data centre REIT listed in Asia and on the Singapore Exchange (SGX-ST). Keppel DC REIT's investment strategy is to principally invest, directly or indirectly, in a diversified portfolio of income-producing real estate assets which are used primarily for data centre purposes, as well as real estate related assets. As at 31 December 2020, its portfolio comprises 19 data centres strategically located in key data centre hubs. With an aggregate lettable area of approximately 2,089,085 sq ft, the portfolio spans 12 cities in eight countries across Asia Pacific and Europe. Keppel Telecommunications & Transportation Ltd (Keppel T&T), the Sponsor of the REIT, has also granted Rights of First Refusal (ROFR) to the REIT for future acquisition opportunities of its data centre assets. The REIT is managed by Keppel DC REIT Management Pte. Ltd.. Keppel Capital Holdings Pte. Ltd. (Keppel Capital) has a 50% interest in the Manager, with the remaining interest held by Keppel T&T. Keppel Capital is a premier asset manager in Asia with assets under management comprising real estate, infrastructure and data centre properties in key global markets. The Manager's key objectives are to provide the REIT's Unitholders with regular and stable distributions, as well as achieve long-term growth while maintaining an optimal capital structure.",
         "currency": "SGD",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -203,18 +227,6 @@
         "country": "Germany",
         "city": "Hamburg"
     },
-    "AP-UN.TO": {
-        "short_name": "ALLIED PROPERTIES REAL ESTATE I",
-        "long_name": "Allied Properties Real Estate Investment Trust",
-        "summary": "Allied is a leading owner, manager and developer of (i) distinctive urban workspace in Canada's major cities and (ii) network-dense urban data centres in Toronto that form Canada's hub for global connectivity. Allied's business is providing knowledge-based organizations with distinctive urban environments for creativity and connectivity.",
-        "currency": "CAD",
-        "sector": "Real Estate",
-        "industry": "REIT - Office",
-        "exchange": "TOR",
-        "market": "ca_market",
-        "country": "Canada",
-        "city": "Toronto"
-    },
     "APYRF": {
         "short_name": "ALLIED PROPS REAL ESTATE INV TS",
         "long_name": "Allied Properties Real Estate Investment Trust",
@@ -230,7 +242,7 @@
     "ARE": {
         "short_name": "Alexandria Real Estate Equities",
         "long_name": "Alexandria Real Estate Equities, Inc.",
-        "summary": "Alexandria Real Estate Equities, Inc. (NYSE:ARE), an S&P 500\u00c2\u00ae urban office real estate investment trust (\"REIT\"), is the first, longest-tenured, and pioneering owner, operator, and developer uniquely focused on collaborative life science, technology, and agtech campuses in AAA innovation cluster locations, with a total market capitalization of $29.2 billion as of September 30, 2020, and an asset base in North America of 47.4 million square feet (\"SF\"). The asset base in North America includes 31.2 million RSF of operating properties and 2.8 million RSF of Class A properties undergoing construction, 7.2 million RSF of near-term and intermediate-term development and redevelopment projects, and 6.2 million SF of future development projects. Founded in 1994, Alexandria pioneered this niche and has since established a significant market presence in key locations, including Greater Boston, San Francisco, New York City, San Diego, Seattle, Maryland, and Research Triangle. Alexandria has a longstanding and proven track record of developing Class A properties clustered in urban life science, technology, and agtech campuses that provide our innovative tenants with highly dynamic and collaborative environments that enhance their ability to successfully recruit and retain world-class talent and inspire productivity, efficiency, creativity, and success. Alexandria also provides strategic capital to transformative life science, technology, and agtech companies through our venture capital platform. We believe our unique business model and diligent underwriting ensure a high-quality and diverse tenant base that results in higher occupancy levels, longer lease terms, higher rental income, higher returns, and greater long-term asset value.",
+        "summary": "Alexandria Real Estate Equities, Inc. (NYSE:ARE), an S&P 500<sup>\u00c2\u00ae</sup> urban office real estate investment trust (\"REIT\"), is the first, longest-tenured, and pioneering owner, operator, and developer uniquely focused on collaborative life science, technology, and agtech campuses in AAA innovation cluster locations, with a total market capitalization of $31.9 billion as of December 31, 2020, and an asset base in North America of 49.7 million square feet (\"SF\"). The asset base in North America includes 31.9 million RSF of operating properties and 3.3 million RSF of Class A properties undergoing construction, 7.1 million RSF of near-term and intermediate-term development and redevelopment projects, and 7.4 million SF of future development projects. Founded in 1994, Alexandria pioneered this niche and has since established a significant market presence in key locations, including Greater Boston, San Francisco, New York City, San Diego, Seattle, Maryland, and Research Triangle. Alexandria has a longstanding and proven track record of developing Class A properties clustered in urban life science, technology, and agtech campuses that provide our innovative tenants with highly dynamic and collaborative environments that enhance their ability to successfully recruit and retain world-class talent and inspire productivity, efficiency, creativity, and success. Alexandria also provides strategic capital to transformative life science, technology, and agtech companies through our venture capital platform. We believe our unique business model and diligent underwriting ensure a high-quality and diverse tenant base that results in higher occupancy levels, longer lease terms, higher rental income, higher returns, and greater long-term asset value.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -251,6 +263,18 @@
         "country": "Spain",
         "city": "Madrid"
     },
+    "B2X.F": {
+        "short_name": "BRANDYWINE RLTY TR. SBI",
+        "long_name": "Brandywine Realty Trust",
+        "summary": "Brandywine Realty Trust (NYSE: BDN) is one of the largest, publicly traded, full-service, integrated real estate companies in the United States with a core focus in the Philadelphia, Austin and Washington, D.C. markets. Organized as a real estate investment trust (REIT), we own, develop, lease and manage an urban, town center and transit-oriented portfolio comprising 175 properties and 24.7 million square feet as of December 31, 2020 which excludes assets held for sale. Our purpose is to shape, connect and inspire the world around us through our expertise, the relationships we foster, the communities in which we live and work, and the history we build together.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "Philadelphia"
+    },
     "BBFI11B.SA": {
         "short_name": "BB FDO DE INVST I",
         "long_name": "BB Fundo De Investimento Imobiliario Progressivo",
@@ -266,7 +290,7 @@
     "BDN": {
         "short_name": "Brandywine Realty Trust",
         "long_name": "Brandywine Realty Trust",
-        "summary": "Brandywine Realty Trust (NYSE: BDN) is one of the largest, publicly traded, full-service, integrated real estate companies in the United States with a core focus in the Philadelphia, Austin and Washington, D.C. Markets. Organized as a real estate investment trust (REIT), we own, develop, lease and manage an urban, town center and transit-oriented portfolio comprising 173 properties and 24.4 million square feet as of September 30, 2020. Our purpose is to shape, connect and inspire the world around us through our expertise, the relationships we foster, the communities in which we live and work, and the history we build together.",
+        "summary": "Brandywine Realty Trust (NYSE: BDN) is one of the largest, publicly traded, full-service, integrated real estate companies in the United States with a core focus in the Philadelphia, Austin and Washington, D.C. markets. Organized as a real estate investment trust (REIT), we own, develop, lease and manage an urban, town center and transit-oriented portfolio comprising 175 properties and 24.7 million square feet as of December 31, 2020 which excludes assets held for sale. Our purpose is to shape, connect and inspire the world around us through our expertise, the relationships we foster, the communities in which we live and work, and the history we build together.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -287,10 +311,22 @@
         "country": "Belgium",
         "city": "Brussels"
     },
+    "BO9.F": {
+        "short_name": "BOSTON PROPERTIES DL-,01",
+        "long_name": "Boston Properties, Inc.",
+        "summary": "Boston Properties (NYSE:BXP) is the largest publicly-held developer and owner of Class A office properties in the United States, concentrated in five markets - Boston, Los Angeles, New York, San Francisco and Washington, DC. The Company is a fully integrated real estate company, organized as a real estate investment trust (REIT), that develops, manages, operates, acquires and owns a diverse portfolio of primarily Class A office space. The Company's portfolio totals 51.2 million square feet and 196 properties, including six properties under construction/redevelopment.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "Boston"
+    },
     "BOXP34.SA": {
         "short_name": "BOSTON PROP DRN",
         "long_name": "Boston Properties, Inc.",
-        "summary": "Boston Properties (NYSE: BXP) is the largest publicly-held developer and owner of Class A office properties in the United States, concentrated in five markets - Boston, Los Angeles, New York, San Francisco and Washington, DC. The Company is a fully integrated real estate company, organized as a real estate investment trust (REIT), that develops, manages, operates, acquires and owns a diverse portfolio of primarily Class A office space. The Company's portfolio totals 51.2 million square feet and 196 properties, including seven properties under construction/redevelopment.",
+        "summary": "Boston Properties (NYSE:BXP) is the largest publicly-held developer and owner of Class A office properties in the United States, concentrated in five markets - Boston, Los Angeles, New York, San Francisco and Washington, DC. The Company is a fully integrated real estate company, organized as a real estate investment trust (REIT), that develops, manages, operates, acquires and owns a diverse portfolio of primarily Class A office space. The Company's portfolio totals 51.2 million square feet and 196 properties, including six properties under construction/redevelopment.",
         "currency": "BRL",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -300,7 +336,7 @@
         "city": "Boston"
     },
     "BRCR11.SA": {
-        "short_name": "FII BC FUND CI",
+        "short_name": "FII BC FUND CI  ER",
         "long_name": "Fundo de Investimento Imobili\u00e1rio - FII BTG Pactual Corporate Office Fund",
         "summary": "Fundo de Investimento Imobili\u00c3\u00a1rio - FII BTG Pactual Corporate Office Fund is a real estate investment trust co-launched by BTG Pactual Servi\u00c3\u00a7os Financeiros and BTG Pactual Gestora de Recursos Ltda. The fund is managed by BTG Pactual Servi\u00c3\u00a7os Financeiros. The fund invests in the real estate markets of Brazil. It was formerly known as Fundo De Investimento Imobiliario Brazilian Capital Real Estate Fund. Fundo de Investimento Imobili\u00c3\u00a1rio - FII BTG Pactual Corporate Office Fund is domiciled in Brazil.",
         "currency": "BRL",
@@ -323,22 +359,22 @@
         "country": "Singapore",
         "city": "Singapore"
     },
-    "BXP": {
-        "short_name": "Boston Properties, Inc.",
+    "BXP.MX": {
+        "short_name": "BOSTON PROPERTIES INC",
         "long_name": "Boston Properties, Inc.",
-        "summary": "Boston Properties (NYSE: BXP) is the largest publicly-held developer and owner of Class A office properties in the United States, concentrated in five markets - Boston, Los Angeles, New York, San Francisco and Washington, DC. The Company is a fully integrated real estate company, organized as a real estate investment trust (REIT), that develops, manages, operates, acquires and owns a diverse portfolio of primarily Class A office space. The Company's portfolio totals 51.2 million square feet and 196 properties, including seven properties under construction/redevelopment.",
-        "currency": "USD",
+        "summary": "Boston Properties (NYSE:BXP) is the largest publicly-held developer and owner of Class A office properties in the United States, concentrated in five markets - Boston, Los Angeles, New York, San Francisco and Washington, DC. The Company is a fully integrated real estate company, organized as a real estate investment trust (REIT), that develops, manages, operates, acquires and owns a diverse portfolio of primarily Class A office space. The Company's portfolio totals 51.2 million square feet and 196 properties, including six properties under construction/redevelopment.",
+        "currency": "MXN",
         "sector": "Real Estate",
         "industry": "REIT - Office",
-        "exchange": "NYQ",
-        "market": "us_market",
+        "exchange": "MEX",
+        "market": "mx_market",
         "country": "United States",
         "city": "Boston"
     },
-    "BXP-PB": {
-        "short_name": "Boston Properties, Inc. Deposit",
+    "BXP": {
+        "short_name": "Boston Properties, Inc.",
         "long_name": "Boston Properties, Inc.",
-        "summary": "Boston Properties (NYSE: BXP) is the largest publicly-held developer and owner of Class A office properties in the United States, concentrated in five markets - Boston, Los Angeles, New York, San Francisco and Washington, DC. The Company is a fully integrated real estate company, organized as a real estate investment trust (REIT), that develops, manages, operates, acquires and owns a diverse portfolio of primarily Class A office space. The Company's portfolio totals 51.2 million square feet and 196 properties, including seven properties under construction/redevelopment.",
+        "summary": "Boston Properties (NYSE:BXP) is the largest publicly-held developer and owner of Class A office properties in the United States, concentrated in five markets - Boston, Los Angeles, New York, San Francisco and Washington, DC. The Company is a fully integrated real estate company, organized as a real estate investment trust (REIT), that develops, manages, operates, acquires and owns a diverse portfolio of primarily Class A office space. The Company's portfolio totals 51.2 million square feet and 196 properties, including six properties under construction/redevelopment.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -348,7 +384,7 @@
         "city": "Boston"
     },
     "CEOC11.SA": {
-        "short_name": "FII CEO CCP CI",
+        "short_name": "FII CEO CCP CI  ER",
         "long_name": "Fundo de Investimento Imobili\u00e1rio FII CEO Cyrela Fund",
         "summary": null,
         "currency": "BRL",
@@ -371,18 +407,6 @@
         "country": "France",
         "city": "Paris"
     },
-    "CIO": {
-        "short_name": "City Office REIT, Inc.",
-        "long_name": "City Office REIT, Inc.",
-        "summary": "City Office REIT, Inc. (NYSE: CIO) invests in high-quality office properties in 18-hour cities with strong economic fundamentals, primarily in the Southern and Western United States. At September 30, 2020, CIO owned office complexes comprising 5.8 million square feet of net rentable area (\u00c2\u0093NRA\u00c2\u0094).",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Office",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "Canada",
-        "city": "Vancouver"
-    },
     "CIO-PA": {
         "short_name": "City Office REIT, Inc. 6.625% S",
         "long_name": "City Office REIT, Inc.",
@@ -392,8 +416,20 @@
         "industry": "REIT - Office",
         "exchange": "NYQ",
         "market": "us_market",
-        "country": "Canada",
-        "city": "Vancouver"
+        "country": "United States",
+        "city": "Dallas"
+    },
+    "CIO": {
+        "short_name": "City Office REIT, Inc.",
+        "long_name": "City Office REIT, Inc.",
+        "summary": "City Office REIT, Inc. (NYSE: CIO) invests in high-quality office properties in 18-hour cities with strong economic fundamentals, primarily in the Southern and Western United States. At September 30, 2020, CIO owned office complexes comprising 5.8 million square feet of net rentable area (\u00c2\u0093NRA\u00c2\u0094).",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Dallas"
     },
     "CLI": {
         "short_name": "Mack-Cali Realty Corporation",
@@ -414,7 +450,7 @@
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Office",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market",
         "country": "United States",
         "city": "Dallas"
@@ -438,7 +474,7 @@
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Office",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market",
         "country": "United States",
         "city": "Dallas"
@@ -479,6 +515,18 @@
         "country": "Brazil",
         "city": null
     },
+    "COF.AX": {
+        "short_name": "CENTOREIT ORD UNIT",
+        "long_name": "Centuria Office REIT",
+        "summary": "COF is Australia's largest ASX listed pure play office REIT and is included in the S&P/ASX300 Index. COF owns a portfolio of high quality assets situated in core office markets throughout Australia. COF is overseen by a hands-on, active manager and provides investors with income and the opportunity for capital growth from a pure play portfolio of high-quality Australian office assets. Centuria Property Funds Limited (CPFL) is the Responsible Entity for the ASX listed Centuria Office REIT (COF). CPFL, is a wholly owned subsidiary of Centuria Capital Group (CNI). CNI is an ASX-listed specialist investment manager with $10.2 billion in total assets under management and offers a range of investment opportunities including listed and unlisted property funds as well as tax effective investment bonds.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "COL.MC": {
         "short_name": "INMOBILIARIA COLONIAL, SOCIMI S",
         "long_name": "Inmobiliaria Colonial, SOCIMI, S.A.",
@@ -488,6 +536,18 @@
         "industry": "REIT - Office",
         "exchange": "MCE",
         "market": "es_market",
+        "country": "Spain",
+        "city": "Madrid"
+    },
+    "COL.VI": {
+        "short_name": "INMOBILIARIA COLONIAL SA",
+        "long_name": "Inmobiliaria Colonial, SOCIMI, S.A.",
+        "summary": "Colonial is a Spanish listed REIT company (SOCIMI), leader in the European Prime office market with presence in the main business areas of Barcelona, Madrid and Paris with a prime office portfolio of more than one million of sqm of GLA and assets under management with a value of more than \u00c2\u008012bn.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "VIE",
+        "market": "at_market",
         "country": "Spain",
         "city": "Madrid"
     },
@@ -506,7 +566,7 @@
     "COR": {
         "short_name": "CoreSite Realty Corporation",
         "long_name": "CoreSite Realty Corporation",
-        "summary": "CoreSite Realty Corporation (NYSE:COR) delivers secure, reliable, high-performance data center, cloud and interconnection solutions to a growing customer ecosystem across eight key North American markets. More than 1,350 of the world's leading enterprises, network operators, cloud providers, and supporting service providers choose CoreSite to connect, protect and optimize their performance-sensitive data, applications and computing workloads. Our scalable, flexible solutions and 460+ dedicated employees consistently deliver unmatched data center options \u00c2\u0097 all of which leads to a best-in-class customer experience and lasting relationships.",
+        "summary": "CoreSite Realty Corporation (NYSE:COR) delivers secure, reliable, high-performance data center, cloud access and interconnection solutions to a growing customer ecosystem across eight key North American markets. More than 1,375 of the world's leading enterprises, network operators, cloud providers, and supporting service providers choose CoreSite to connect, protect and optimize their performance-sensitive data, applications and computing workloads. Our scalable, flexible solutions and 460+ dedicated employees consistently deliver unmatched data center options \u00c2\u0097 all of which leads to a best-in-class customer experience and lasting relationships.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -563,21 +623,21 @@
         "country": "United States",
         "city": "New York"
     },
-    "D-UN.TO": {
-        "short_name": "DREAM OFFICE REIT",
-        "long_name": "Dream Office Real Estate Investment Trust",
-        "summary": "Dream Office REIT is an unincorporated, open-ended real estate investment trust. Dream Office REIT owns well-located, high-quality office properties, primarily in downtown Toronto.",
-        "currency": "CAD",
+    "D1LR34.SA": {
+        "short_name": "DIGITAL REALDRN",
+        "long_name": "Digital Realty Trust, Inc.",
+        "summary": "Digital Realty supports the world's leading enterprises and service providers by delivering the full spectrum of data center, colocation and interconnection solutions. PlatformDIGITALR, the company's global data center platform, provides customers a trusted foundation and proven Pervasive Datacenter Architecture PDxTM solution methodology for scaling digital business and efficiently managing data gravity challenges. Digital Realty's global data center footprint gives customers access to the connected communities that matter to them with more than 284 facilities in 48 metros across 23 countries on six continents.",
+        "currency": "BRL",
         "sector": "Real Estate",
         "industry": "REIT - Office",
-        "exchange": "TOR",
-        "market": "ca_market",
-        "country": "Canada",
-        "city": "Toronto"
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "United States",
+        "city": "San Francisco"
     },
     "D2L.F": {
-        "short_name": "CEGEREAL INH.  EO 12",
-        "long_name": "CeGeREAL",
+        "short_name": "VITURA S.A. INH  EO 3,80",
+        "long_name": "Vitura",
         "summary": "Created in 2006, Cegereal is a listed property company that invests in prime office properties in Greater Paris. The total value of the portfolio was estimated at \u00c2\u00801,460 million at June 30, 2020 (excluding transfer duties). Thanks to its strong commitment to environmental, social and governance issues, Cegereal achieved first place among listed companies in Europe in the 2019 Global Real Estate Sustainability Benchmark (GRESB) ranking. Its entire portfolio has achieved NF HQETM Exploitation and BREEAM In-Use International certification. Cegereal is a REIT listed on Euronext Paris since 2006, in compartment B (ISIN: FR0010309096). The Company had a market capitalization of \u00c2\u0080398 million at November 5, 2020.",
         "currency": "EUR",
         "sector": "Real Estate",
@@ -635,18 +695,6 @@
         "country": "United Kingdom",
         "city": "London"
     },
-    "DLR": {
-        "short_name": "Digital Realty Trust, Inc.",
-        "long_name": "Digital Realty Trust, Inc.",
-        "summary": "Digital Realty supports the world's leading enterprises and service providers by delivering the full spectrum of data center, colocation and interconnection solutions. PlatformDIGITALR, the company's global data center platform, provides customers a trusted foundation and proven Pervasive Datacenter Architecture PDxTM solution methodology for scaling digital business and efficiently managing data gravity challenges. Digital Realty's global data center footprint gives customers access to the connected communities that matter to them with more than 284 facilities in 48 metros across 23 countries on six continents.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Office",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "San Francisco"
-    },
     "DLR-PC": {
         "short_name": "Digital Realty Trust, Inc. 6.62",
         "long_name": "Digital Realty Trust, Inc.",
@@ -685,6 +733,18 @@
     },
     "DLR-PL": {
         "short_name": "Digital Realty Trust, Inc. 5.20",
+        "long_name": "Digital Realty Trust, Inc.",
+        "summary": "Digital Realty supports the world's leading enterprises and service providers by delivering the full spectrum of data center, colocation and interconnection solutions. PlatformDIGITALR, the company's global data center platform, provides customers a trusted foundation and proven Pervasive Datacenter Architecture PDxTM solution methodology for scaling digital business and efficiently managing data gravity challenges. Digital Realty's global data center footprint gives customers access to the connected communities that matter to them with more than 284 facilities in 48 metros across 23 countries on six continents.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "San Francisco"
+    },
+    "DLR": {
+        "short_name": "Digital Realty Trust, Inc.",
         "long_name": "Digital Realty Trust, Inc.",
         "summary": "Digital Realty supports the world's leading enterprises and service providers by delivering the full spectrum of data center, colocation and interconnection solutions. PlatformDIGITALR, the company's global data center platform, provides customers a trusted foundation and proven Pervasive Datacenter Architecture PDxTM solution methodology for scaling digital business and efficiently managing data gravity challenges. Digital Realty's global data center footprint gives customers access to the connected communities that matter to them with more than 284 facilities in 48 metros across 23 countries on six continents.",
         "currency": "USD",
@@ -755,7 +815,7 @@
         "country": "France",
         "city": "Paris"
     },
-    "EQC": {
+    "EQC-PD": {
         "short_name": "Equity",
         "long_name": "Equity Commonwealth",
         "summary": "Equity Commonwealth (NYSE: EQC) is a Chicago based, internally managed and self-advised real estate investment trust (REIT) with commercial office properties in the United States. EQC's same property portfolio is comprised of 4 properties and 1.5 million square feet.",
@@ -767,7 +827,7 @@
         "country": "United States",
         "city": "Chicago"
     },
-    "EQC-PD": {
+    "EQC": {
         "short_name": "Equity",
         "long_name": "Equity Commonwealth",
         "summary": "Equity Commonwealth (NYSE: EQC) is a Chicago based, internally managed and self-advised real estate investment trust (REIT) with commercial office properties in the United States. EQC's same property portfolio is comprised of 4 properties and 1.5 million square feet.",
@@ -832,7 +892,7 @@
         "long_name": "Digital Realty Trust, Inc.",
         "summary": "Digital Realty supports the world's leading enterprises and service providers by delivering the full spectrum of data center, colocation and interconnection solutions. PlatformDIGITALR, the company's global data center platform, provides customers a trusted foundation and proven Pervasive Datacenter Architecture PDxTM solution methodology for scaling digital business and efficiently managing data gravity challenges. Digital Realty's global data center footprint gives customers access to the connected communities that matter to them with more than 284 facilities in 48 metros across 23 countries on six continents.",
         "currency": "EUR",
-        "sector": "Real Estate",
+        "sector": "Financial",
         "industry": "REIT - Office",
         "exchange": "GER",
         "market": "de_market",
@@ -923,18 +983,6 @@
         "country": "France",
         "city": "Paris"
     },
-    "GNL": {
-        "short_name": "Global Net Lease, Inc.",
-        "long_name": "Global Net Lease, Inc.",
-        "summary": "Global Net Lease, Inc. (NYSE: GNL) is a publicly traded real estate investment trust listed on the NYSE focused on acquiring a diversified global portfolio of commercial properties, with an emphasis on sale-leaseback transactions involving single tenant, mission critical income producing net-leased assets across the United States, Western and Northern Europe.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Office",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "New York"
-    },
     "GNL-PA": {
         "short_name": "Global Net Lease, Inc. 7.25% Se",
         "long_name": "Global Net Lease, Inc.",
@@ -949,6 +997,18 @@
     },
     "GNL-PB": {
         "short_name": "Global Net Lease, Inc. 6.875% S",
+        "long_name": "Global Net Lease, Inc.",
+        "summary": "Global Net Lease, Inc. (NYSE: GNL) is a publicly traded real estate investment trust listed on the NYSE focused on acquiring a diversified global portfolio of commercial properties, with an emphasis on sale-leaseback transactions involving single tenant, mission critical income producing net-leased assets across the United States, Western and Northern Europe.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "New York"
+    },
+    "GNL": {
+        "short_name": "Global Net Lease, Inc.",
         "long_name": "Global Net Lease, Inc.",
         "summary": "Global Net Lease, Inc. (NYSE: GNL) is a publicly traded real estate investment trust listed on the NYSE focused on acquiring a diversified global portfolio of commercial properties, with an emphasis on sale-leaseback transactions involving single tenant, mission critical income producing net-leased assets across the United States, Western and Northern Europe.",
         "currency": "USD",
@@ -1007,6 +1067,30 @@
         "country": "United States",
         "city": "Raleigh"
     },
+    "HP5A.F": {
+        "short_name": "EQUITY COMMONW. SBI DL-01",
+        "long_name": "Equity Commonwealth",
+        "summary": "Equity Commonwealth (NYSE: EQC) is a Chicago based, internally managed and self-advised real estate investment trust (REIT) with commercial office properties in the United States. EQC's same property portfolio is comprised of 4 properties and 1.5 million square feet.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "Chicago"
+    },
+    "HP9.F": {
+        "short_name": "HUDSON PACIFIC PPT.DL-,01",
+        "long_name": "Hudson Pacific Properties, Inc.",
+        "summary": "Hudson Pacific is a real estate investment trust with a portfolio of office and studio properties totaling nearly 19 million square feet, including land for development. Focused on premier West Coast epicenters of innovation, media and technology, its anchor tenants include Fortune 500 and leading growth companies such as Netflix, Google, Square, Uber, NFL Enterprises and more. Hudson Pacific is publicly traded on the NYSE under the symbol HPP, and listed as a component of the S&P MidCap 400 Index.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "Los Angeles"
+    },
     "HPP": {
         "short_name": "Hudson Pacific Properties, Inc.",
         "long_name": "Hudson Pacific Properties, Inc.",
@@ -1030,6 +1114,30 @@
         "market": "dr_market",
         "country": "United States",
         "city": "Raleigh"
+    },
+    "HSC2.F": {
+        "short_name": "INMOBIL.COL.SOC.EO 2,50",
+        "long_name": "Inmobiliaria Colonial, SOCIMI, S.A.",
+        "summary": "Colonial is a Spanish listed REIT company (SOCIMI), leader in the European Prime office market with presence in the main business areas of Barcelona, Madrid and Paris with a prime office portfolio of more than one million of sqm of GLA and assets under management with a value of more than \u00c2\u008012bn.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Spain",
+        "city": "Madrid"
+    },
+    "IMPACT.BK": {
+        "short_name": "IMPACT GROWTH REAL ESTATE INVES",
+        "long_name": "Impact Growth Real Estate Investment Trust",
+        "summary": "IMPACT Growth Real Estate Investment Trust is a real estate investment trust externally managed by RMI Company Limited. It invests in real estate markets of Thailand. The firm invests in freehold right of Building Exhibition and Conference of IMPACT Muang Thong Thani. IMPACT Growth Real Estate Investment Trust is domiciled in Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Nonthaburi"
     },
     "INEA.PA": {
         "short_name": "FONCIERE INEA",
@@ -1067,22 +1175,10 @@
         "country": "United States",
         "city": "Bethesda"
     },
-    "JREIF": {
-        "short_name": "JAPAN REAL ESTATE INVESTMENT CO",
-        "long_name": "Japan Real Estate Investment Corporation",
-        "summary": "JRE shall invest in specified assets, primarily consisting of real estate assets and asset related securities which mainly invests in real estate assets with the goals of stable growth in value over a medium-to-long term period.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Office",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "Japan",
-        "city": "Tokyo"
-    },
     "K71U.SI": {
         "short_name": "Keppel Reit",
         "long_name": "Keppel REIT",
-        "summary": "Keppel REIT was listed by way of an introduction on 28 April 2006. It is one of Asia's leading REITs with a portfolio of premium Grade A commercial assets in prime business and financial districts pan-Asia. Keppel REIT's objective is to generate stable income and long-term growth for Unitholders by owning and investing in a portfolio of quality income-producing commercial real estate and real estate-related assets in Singapore and pan-Asia. The REIT has assets under management of approximately $8 billion in Singapore, key Australian cities of Sydney, Melbourne, Brisbane and Perth, as well as Seoul, South Korea. Keppel REIT is sponsored by Keppel Land Limited, one of Asia's leading property companies. It is managed by Keppel REIT Management Limited, a wholly owned subsidiary of Keppel Capital Holdings Pte. Ltd. (Keppel Capital). Keppel Capital is a premier asset manager in Asia with a diversified portfolio in real estate, infrastructure and data center properties in key global markets.",
+        "summary": "Listed by way of an introduction on 28 April 2006, Keppel REIT is one of Asia's leading REITs with a portfolio of Grade A commercial assets in key business districts pan-Asia. Keppel REIT's objective is to generate stable income and long-term growth for Unitholders by owning and investing in a portfolio of quality income-producing commercial real estate and real estate-related assets in Singapore and pan-Asia. The REIT has assets under management of over $8 billion in Singapore, key Australian cities of Sydney, Melbourne, Brisbane and Perth, as well as Seoul, South Korea. Keppel REIT is sponsored by Keppel Land Limited, one of Asia's leading property companies. It is managed by Keppel REIT Management Limited, a wholly-owned subsidiary of Keppel Capital Holdings Pte Ltd (Keppel Capital). Keppel Capital is a premier asset manager in Asia with a diversified portfolio in real estate, infrastructure and data centre properties in key global markets.",
         "currency": "SGD",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -1090,18 +1186,6 @@
         "market": "sg_market",
         "country": "Singapore",
         "city": "Singapore"
-    },
-    "KRC": {
-        "short_name": "Kilroy Realty Corporation",
-        "long_name": "Kilroy Realty Corporation",
-        "summary": "Kilroy Realty Corporation (NYSE: KRC, the \u00c2\u0093company\u00c2\u0094, \u00c2\u0093KRC\u00c2\u0094) is a leading West Coast landlord and developer, with a major presence in San Diego, Greater Los Angeles, the San Francisco Bay Area, and the Pacific Northwest. The company has earned global recognition for sustainability, building operations, innovation and design. As pioneers and innovators in the creation of a more sustainable real estate industry, the company's approach to modern business environments helps drive creativity, productivity and employee retention for some of the world's leading technology, entertainment, life science and business services companies. KRC is a publicly traded real estate investment trust (\u00c2\u0093REIT\u00c2\u0094) and member of the S&P MidCap 400 Index with more than seven decades of experience developing, acquiring and managing office and mixed-use projects. As of September 30, 2020, KRC's stabilized portfolio totaled approximately 14.3 million square feet of primarily office and life science space that was 92.2% occupied and 95.5% leased. The company also had 808 residential units in Hollywood and San Diego, which had a quarterly average occupancy of 85.0% and 37.5%, respectively. In addition, KRC had seven in-process development projects with an estimated total investment of $1.9 billion, totaling approximately 2.3 million square feet of office and life science space. The office and life science space was 90% leased.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Office",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "Los Angeles"
     },
     "KRC.F": {
         "short_name": "KILROY REALTY CORP.DL-,01",
@@ -1115,10 +1199,22 @@
         "country": "United States",
         "city": "Los Angeles"
     },
+    "KRC": {
+        "short_name": "Kilroy Realty Corporation",
+        "long_name": "Kilroy Realty Corporation",
+        "summary": "Kilroy Realty Corporation (NYSE: KRC, the \u00c2\u0093company\u00c2\u0094, \u00c2\u0093KRC\u00c2\u0094) is a leading West Coast landlord and developer, with a major presence in San Diego, Greater Los Angeles, the San Francisco Bay Area, and the Pacific Northwest. The company has earned global recognition for sustainability, building operations, innovation and design. As pioneers and innovators in the creation of a more sustainable real estate industry, the company's approach to modern business environments helps drive creativity, productivity and employee retention for some of the world's leading technology, entertainment, life science and business services companies. KRC is a publicly traded real estate investment trust (\u00c2\u0093REIT\u00c2\u0094) and member of the S&P MidCap 400 Index with more than seven decades of experience developing, acquiring and managing office and mixed-use projects. As of September 30, 2020, KRC's stabilized portfolio totaled approximately 14.3 million square feet of primarily office and life science space that was 92.2% occupied and 95.5% leased. The company also had 808 residential units in Hollywood and San Diego, which had a quarterly average occupancy of 85.0% and 37.5%, respectively. In addition, KRC had seven in-process development projects with an estimated total investment of $1.9 billion, totaling approximately 2.3 million square feet of office and life science space. The office and life science space was 90% leased.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Los Angeles"
+    },
     "KREVF": {
         "short_name": "KEPPEL REIT",
         "long_name": "Keppel REIT",
-        "summary": "Keppel REIT was listed by way of an introduction on 28 April 2006. It is one of Asia's leading REITs with a portfolio of premium Grade A commercial assets in prime business and financial districts pan-Asia. Keppel REIT's objective is to generate stable income and long-term growth for Unitholders by owning and investing in a portfolio of quality income-producing commercial real estate and real estate-related assets in Singapore and pan-Asia. The REIT has assets under management of approximately $8 billion in Singapore, key Australian cities of Sydney, Melbourne, Brisbane and Perth, as well as Seoul, South Korea. Keppel REIT is sponsored by Keppel Land Limited, one of Asia's leading property companies. It is managed by Keppel REIT Management Limited, a wholly owned subsidiary of Keppel Capital Holdings Pte. Ltd. (Keppel Capital). Keppel Capital is a premier asset manager in Asia with a diversified portfolio in real estate, infrastructure and data center properties in key global markets.",
+        "summary": "Listed by way of an introduction on 28 April 2006, Keppel REIT is one of Asia's leading REITs with a portfolio of Grade A commercial assets in key business districts pan-Asia. Keppel REIT's objective is to generate stable income and long-term growth for Unitholders by owning and investing in a portfolio of quality income-producing commercial real estate and real estate-related assets in Singapore and pan-Asia. The REIT has assets under management of over $8 billion in Singapore, key Australian cities of Sydney, Melbourne, Brisbane and Perth, as well as Seoul, South Korea. Keppel REIT is sponsored by Keppel Land Limited, one of Asia's leading property companies. It is managed by Keppel REIT Management Limited, a wholly-owned subsidiary of Keppel Capital Holdings Pte Ltd (Keppel Capital). Keppel Capital is a premier asset manager in Asia with a diversified portfolio in real estate, infrastructure and data centre properties in key global markets.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -1126,6 +1222,18 @@
         "market": "us_market",
         "country": "Singapore",
         "city": "Singapore"
+    },
+    "L3R.F": {
+        "short_name": "LEASINVEST REAL ESTATE",
+        "long_name": "Leasinvest Real Estate SCA",
+        "summary": "Leasinvest Real Estate SCA is a Public BE-REIT (SIR/GVV) that invests in high quality and well-located retail buildings and offices in the Grand Duchy of Luxembourg, Belgium and Austria. At present, the total fair value of the directly held real estate portfolio of Leasinvest amounts to \u00c2\u0080 1.12 billion, spread across the Grand Duchy of Luxembourg (54%), Belgium (30%) and Austria (16%). Moreover, Leasinvest is one of the most important real estate investors in Luxembourg. The public BE-REIT is listed on Euronext Brussels and has a market capitalization of \u00c2\u0080 459 million (value 16 November 2020).",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Belgium",
+        "city": "Antwerp"
     },
     "LEAS.BR": {
         "short_name": "LEASINVEST",
@@ -1187,6 +1295,18 @@
         "country": "Singapore",
         "city": "Singapore"
     },
+    "N4RN.F": {
+        "short_name": "NSI N.V. NEW  EO 3,68",
+        "long_name": "NSI N.V.",
+        "summary": "NSI N.V. is a specialist commercial property investor and the only listed real estate investment trust (REIT) focused on well-located offices in economic growth regions in The Netherlands. The NSI team aims to maximise returns for its shareholders through pro-active management of its investment portfolio, value-add initiatives and disciplined asset rotation. The portfolio, with a value of over one billion euros, is underpinned by a strong balance sheet, with significant capacity to fund both internal and external growth. By investing in attractive space and a high level of services for its customers, NSI can generate sustainable and growing revenues to support an attractive level of dividend.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Netherlands",
+        "city": "Hoofddorp"
+    },
     "NSI.AS": {
         "short_name": "NSI N.V.",
         "long_name": "NSI N.V.",
@@ -1214,7 +1334,7 @@
     "OFC": {
         "short_name": "Corporate Office Properties Tru",
         "long_name": "Corporate Office Properties Trust",
-        "summary": "COPT is a REIT that owns, manages, leases, develops and selectively acquires office and data center properties. The majority of its portfolio is in locations that support the United States Government and its contractors, most of whom are engaged in national security, defense and information technology (\u00c2\u0093IT\u00c2\u0094) related activities servicing what it believes are growing, durable, priority missions (\u00c2\u0093Defense/IT Locations\u00c2\u0094). The Company also owns a portfolio of office properties located in select urban/urban-like submarkets in the Greater Washington, DC/Baltimore region with durable Class-A office fundamentals and characteristics (\u00c2\u0093Regional Office Properties\u00c2\u0094). As of September 30, 2020, the Company derived 88% of its core portfolio annualized rental revenue from Defense/IT Locations and 12% from its Regional Office Properties. As of the same date and including 15 properties owned through unconsolidated joint ventures, COPT's core portfolio of 174 office and data center shell properties encompassed 20.2 million square feet and was 94.6% leased; the Company also owned one wholesale data center with a critical load of 19.25 megawatts that was 86.7% leased.",
+        "summary": "COPT is a REIT that owns, manages, leases, develops and selectively acquires office and data center properties. The majority of its portfolio is in locations that support the United States Government and its contractors, most of whom are engaged in national security, defense and information technology (\u00c2\u0093IT\u00c2\u0094) related activities servicing what it believes are growing, durable, priority missions (\u00c2\u0093Defense/IT Locations\u00c2\u0094). The Company also owns a portfolio of office properties located in select urban/urban-like submarkets in the Greater Washington, DC/Baltimore region with durable Class-A office fundamentals and characteristics (\u00c2\u0093Regional Office Properties\u00c2\u0094). As of December 31, 2020, the Company derived 87% of its core portfolio annualized rental revenue from Defense/IT Locations and 13% from its Regional Office Properties. As of the same date and including 17 properties owned through unconsolidated joint ventures, COPT's core portfolio of 179 office and data center shell properties encompassed 20.8 million square feet and was 95.0% leased; the Company also owned one wholesale data center with a critical load of 19.25 megawatts that was 86.7% leased.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -1295,10 +1415,22 @@
         "country": "United States",
         "city": "Cedarhurst"
     },
-    "SLG": {
-        "short_name": "SL Green Realty Corp",
+    "S1LG34.SA": {
+        "short_name": "SL GREEN READRN ED",
         "long_name": "SL Green Realty Corp.",
-        "summary": "SL Green Realty Corp., an S&P 500 company and Manhattan's largest office landlord, is a fully integrated real estate investment trust, or REIT, that is focused primarily on acquiring, managing and maximizing value of Manhattan commercial properties. As of September 30, 2020, SL Green held interests in 93 buildings totaling 40.6 million square feet. This included ownership interests in 29.2 million square feet of Manhattan buildings and 10.3 million square feet securing debt and preferred equity investments.",
+        "summary": "SL Green Realty Corp., an S&P 500 company and Manhattan's largest office landlord, is a fully integrated real estate investment trust, or REIT, that is focused primarily on acquiring, managing and maximizing value of Manhattan commercial properties. As of December 31, 2020, SL Green held interests in 88 buildings totaling 38.2 million square feet. This included ownership interests in 28.6 million square feet of Manhattan buildings and 8.7 million square feet securing debt and preferred equity investments.",
+        "currency": "BRL",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "United States",
+        "city": "New York"
+    },
+    "SLG-PI": {
+        "short_name": "SL Green Realty Corporation Pre",
+        "long_name": "SL Green Realty Corp.",
+        "summary": "SL Green Realty Corp., an S&P 500 company and Manhattan's largest office landlord, is a fully integrated real estate investment trust, or REIT, that is focused primarily on acquiring, managing and maximizing value of Manhattan commercial properties. As of December 31, 2020, SL Green held interests in 88 buildings totaling 38.2 million square feet. This included ownership interests in 28.6 million square feet of Manhattan buildings and 8.7 million square feet securing debt and preferred equity investments.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -1307,10 +1439,10 @@
         "country": "United States",
         "city": "New York"
     },
-    "SLG-PI": {
-        "short_name": "SL Green Realty Corporation Pre",
+    "SLG": {
+        "short_name": "SL Green Realty Corp",
         "long_name": "SL Green Realty Corp.",
-        "summary": "SL Green Realty Corp., an S&P 500 company and Manhattan's largest office landlord, is a fully integrated real estate investment trust, or REIT, that is focused primarily on acquiring, managing and maximizing value of Manhattan commercial properties. As of September 30, 2020, SL Green held interests in 93 buildings totaling 40.6 million square feet. This included ownership interests in 29.2 million square feet of Manhattan buildings and 10.3 million square feet securing debt and preferred equity investments.",
+        "summary": "SL Green Realty Corp., an S&P 500 company and Manhattan's largest office landlord, is a fully integrated real estate investment trust, or REIT, that is focused primarily on acquiring, managing and maximizing value of Manhattan commercial properties. As of December 31, 2020, SL Green held interests in 88 buildings totaling 38.2 million square feet. This included ownership interests in 28.6 million square feet of Manhattan buildings and 8.7 million square feet securing debt and preferred equity investments.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -1318,6 +1450,18 @@
         "market": "us_market",
         "country": "United States",
         "city": "New York"
+    },
+    "SLTTF": {
+        "short_name": "SLATE OFFICE REIT",
+        "long_name": "Slate Office REIT",
+        "summary": "Slate Office REIT is an owner and operator of North American office real estate. The REIT owns interests in and operates a portfolio of 35 strategic and well-located real estate assets across Canada's major population centres and includes two assets in downtown Chicago, Illinois. 60% of the REIT's portfolio is comprised of government or credit rated tenants. The REIT acquires quality assets at a discount to replacement cost and creates value for unitholders by applying hands-on asset management strategies to grow rental revenue, extend lease term and increase occupancy.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Canada",
+        "city": "Toronto"
     },
     "SOT-UN.TO": {
         "short_name": "SLATE OFFICE REIT",
@@ -1415,6 +1559,18 @@
         "country": "France",
         "city": "Paris"
     },
+    "V1NO34.SA": {
+        "short_name": "VORNADO REALDRN",
+        "long_name": "Vornado Realty Trust",
+        "summary": "Vornado's portfolio is concentrated in the nation's key market \u00c2\u0097 New York City \u00c2\u0097 along with the premier asset in both Chicago and San Francisco. Vornado is also the real estate industry leader in sustainability policy. The company owns and manages over 23 million square feet of LEED certified buildings and received the Energy Star Partner of the Year Award, Sustained Excellence 2019. In 2012, Vornado commemorated 50 years on the NYSE.",
+        "currency": "BRL",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "United States",
+        "city": "New York"
+    },
     "VJ6.F": {
         "short_name": "BEFIMMO S.A.",
         "long_name": "Befimmo SA",
@@ -1426,18 +1582,6 @@
         "market": "dr_market",
         "country": "Belgium",
         "city": "Brussels"
-    },
-    "VNO": {
-        "short_name": "Vornado Realty Trust",
-        "long_name": "Vornado Realty Trust",
-        "summary": "Vornado's portfolio is concentrated in the nation's key market \u00c2\u0097 New York City \u00c2\u0097 along with the premier asset in both Chicago and San Francisco. Vornado is also the real estate industry leader in sustainability policy. The company owns and manages over 23 million square feet of LEED certified buildings and received the Energy Star Partner of the Year Award, Sustained Excellence 2019. In 2012, Vornado commemorated 50 years on the NYSE.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Office",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "New York"
     },
     "VNO-PL": {
         "short_name": "Vornado Realty Trust Pfd Ser L ",
@@ -1463,6 +1607,18 @@
         "country": "United States",
         "city": "New York"
     },
+    "VNO": {
+        "short_name": "Vornado Realty Trust",
+        "long_name": "Vornado Realty Trust",
+        "summary": "Vornado's portfolio is concentrated in the nation's key market \u00c2\u0097 New York City \u00c2\u0097 along with the premier asset in both Chicago and San Francisco. Vornado is also the real estate industry leader in sustainability policy. The company owns and manages over 23 million square feet of LEED certified buildings and received the Energy Star Partner of the Year Award, Sustained Excellence 2019. In 2012, Vornado commemorated 50 years on the NYSE.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "New York"
+    },
     "VNORP": {
         "short_name": "VORNADO REALTY TRUST",
         "long_name": "Vornado Realty Trust",
@@ -1472,6 +1628,18 @@
         "industry": "REIT - Office",
         "exchange": "PNK",
         "market": "us_market",
+        "country": "United States",
+        "city": "New York"
+    },
+    "VO7.F": {
+        "short_name": "VORNADO RLTY TR. SBI",
+        "long_name": "Vornado Realty Trust",
+        "summary": "Vornado's portfolio is concentrated in the nation's key market \u00c2\u0097 New York City \u00c2\u0097 along with the premier asset in both Chicago and San Francisco. Vornado is also the real estate industry leader in sustainability policy. The company owns and manages over 23 million square feet of LEED certified buildings and received the Energy Star Partner of the Year Award, Sustained Excellence 2019. In 2012, Vornado commemorated 50 years on the NYSE.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "United States",
         "city": "New York"
     },
@@ -1490,7 +1658,7 @@
     "WKP.L": {
         "short_name": "WORKSPACE GROUP PLC ORD GBP1",
         "long_name": "Workspace Group plc",
-        "summary": "Established in 1987, and listed on the London Stock Exchange since 1993, Workspace owns and manages some 4 million sq. ft. of business space in London. We are home to thousands of businesses, including fast growing and established brands across a wide range of sectors. Workspace is geared towards helping businesses perform at their very best. We provide inspiring, flexible work spaces in dynamic London locations. Workspace (WKP) is a FTSE 250 listed Real Estate Investment Trust (REIT) and a member of the European Public Real Estate Association (EPRA). LEI: 2138003GUZRFIN3UT430.",
+        "summary": "Established in 1987, and listed on the London Stock Exchange since 1993, Workspace owns and manages some 4 million sq. ft. of business space in London. We are home to London's brightest businesses, including fast growing and established brands across a wide range of sectors. Workspace is geared towards helping businesses perform at their very best. We provide inspiring, flexible work spaces in dynamic London locations. Workspace (WKP) is a FTSE 250 listed Real Estate Investment Trust (REIT) and a member of the European Public Real Estate Association.",
         "currency": "GBp",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -1502,7 +1670,7 @@
     "WKPPF": {
         "short_name": "WORKSPACE GROUP",
         "long_name": "Workspace Group plc",
-        "summary": "Established in 1987, and listed on the London Stock Exchange since 1993, Workspace owns and manages some 4 million sq. ft. of business space in London. We are home to thousands of businesses, including fast growing and established brands across a wide range of sectors. Workspace is geared towards helping businesses perform at their very best. We provide inspiring, flexible work spaces in dynamic London locations. Workspace (WKP) is a FTSE 250 listed Real Estate Investment Trust (REIT) and a member of the European Public Real Estate Association (EPRA). LEI: 2138003GUZRFIN3UT430.",
+        "summary": "Established in 1987, and listed on the London Stock Exchange since 1993, Workspace owns and manages some 4 million sq. ft. of business space in London. We are home to London's brightest businesses, including fast growing and established brands across a wide range of sectors. Workspace is geared towards helping businesses perform at their very best. We provide inspiring, flexible work spaces in dynamic London locations. Workspace (WKP) is a FTSE 250 listed Real Estate Investment Trust (REIT) and a member of the European Public Real Estate Association.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -1523,10 +1691,22 @@
         "country": "United States",
         "city": "Washington"
     },
+    "WRI.F": {
+        "short_name": "WASHINGTON REIT SBI",
+        "long_name": "Washington Real Estate Investment Trust",
+        "summary": "WashREIT owns and operates uniquely positioned real estate assets in the Washington Metro area. Backed by decades of experience, expertise and ambition, we create value by transforming insights into strategy and strategy into action. As of October 29, 2020, the Company's portfolio of 45 properties includes approximately 3.7 million square feet of commercial space and 6,863 multifamily apartment units. These 45 properties consist of 22 multifamily properties,15 office properties, and 8 retail centers. Our shares trade on the NYSE. With a track record of driving returns and delivering satisfaction, we are a trusted authority in one of the nation's most competitive real estate markets.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "Washington"
+    },
     "WRX1.F": {
         "short_name": "WORKSPACE GROUP  LS 1",
         "long_name": "Workspace Group plc",
-        "summary": "Established in 1987, and listed on the London Stock Exchange since 1993, Workspace owns and manages some 4 million sq. ft. of business space in London. We are home to thousands of businesses, including fast growing and established brands across a wide range of sectors. Workspace is geared towards helping businesses perform at their very best. We provide inspiring, flexible work spaces in dynamic London locations. Workspace (WKP) is a FTSE 250 listed Real Estate Investment Trust (REIT) and a member of the European Public Real Estate Association (EPRA). LEI: 2138003GUZRFIN3UT430.",
+        "summary": "Established in 1987, and listed on the London Stock Exchange since 1993, Workspace owns and manages some 4 million sq. ft. of business space in London. We are home to London's brightest businesses, including fast growing and established brands across a wide range of sectors. Workspace is geared towards helping businesses perform at their very best. We provide inspiring, flexible work spaces in dynamic London locations. Workspace (WKP) is a FTSE 250 listed Real Estate Investment Trust (REIT) and a member of the European Public Real Estate Association.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "REIT - Office",
@@ -1547,6 +1727,18 @@
         "country": "United States",
         "city": "Wakefield"
     },
+    "WX7.F": {
+        "short_name": "CORPORATE OFF. PR. TR. MD",
+        "long_name": "Corporate Office Properties Trust",
+        "summary": "COPT is a REIT that owns, manages, leases, develops and selectively acquires office and data center properties. The majority of its portfolio is in locations that support the United States Government and its contractors, most of whom are engaged in national security, defense and information technology (\u00c2\u0093IT\u00c2\u0094) related activities servicing what it believes are growing, durable, priority missions (\u00c2\u0093Defense/IT Locations\u00c2\u0094). The Company also owns a portfolio of office properties located in select urban/urban-like submarkets in the Greater Washington, DC/Baltimore region with durable Class-A office fundamentals and characteristics (\u00c2\u0093Regional Office Properties\u00c2\u0094). As of December 31, 2020, the Company derived 87% of its core portfolio annualized rental revenue from Defense/IT Locations and 13% from its Regional Office Properties. As of the same date and including 17 properties owned through unconsolidated joint ventures, COPT's core portfolio of 179 office and data center shell properties encompassed 20.8 million square feet and was 95.0% leased; the Company also owned one wholesale data center with a critical load of 19.25 megawatts that was 86.7% leased.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "Columbia"
+    },
     "WY4.F": {
         "short_name": "MACK-CALI RLTY  DL-,01",
         "long_name": "Mack-Cali Realty Corporation",
@@ -1559,16 +1751,28 @@
         "country": "United States",
         "city": "Jersey City"
     },
-    "YCOR.MC": {
-        "short_name": "CORONA PATRIMONIAL SOCIMI, S.A.",
-        "long_name": "Corona Patrimonial SOCIMI, S.A.",
-        "summary": "Corona Patrimonial SOCIMI, S.A.U., a real estate investment trust, engages in the acquisition, development, and rental of urban real estate assets in Spain. It acquires and leases office buildings located in Madrid, Alcobendas, and Barcelona. The company is based in Barcelona, Spain.",
+    "WY52.F": {
+        "short_name": "CIM COMM. TR. SBI DL-,001",
+        "long_name": "CIM Commercial Trust Corporation",
+        "summary": "CIM Commercial is a real estate investment trust that primarily acquires, owns, and operates Class A and creative office assets in vibrant and improving metropolitan communities throughout the United States (including improving and developing such assets). Its properties are primarily located in Los Angeles and the San Francisco Bay Area. CIM Commercial is operated by affiliates of CIM Group, L.P., a vertically-integrated owner and operator of real assets with multi-disciplinary expertise and in-house research, acquisition, credit analysis, development, finance, leasing, and onsite property management capabilities.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "Dallas"
+    },
+    "YDES.MC": {
+        "short_name": "DESARROLLOS ERMITA DEL SANTO SO",
+        "long_name": "Desarrollos Ermita del Santo, SOCIMI, S.A.",
+        "summary": "Desarrollos Ermita Del Santo Socimi, S.A. owns the La Ermita Shopping Center in Madrid, Spain. The company is based in Madrid, Spain.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "REIT - Office",
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Barcelona"
+        "city": "Madrid"
     }
 }

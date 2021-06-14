@@ -2,7 +2,7 @@
     "17SA.F": {
         "short_name": "VEDANTA LTD. ADR  IR 1",
         "long_name": "Vedanta Limited",
-        "summary": "Vedanta Limited operates as a diversified natural resources company in India. The company explores for, develops, produces, processes, and sells oil and gas, zinc, lead, silver, copper, aluminum, iron ore, steel, and power. It is involved in the exploration, development, and production of oil and gas; and exploration, mining, and processing of iron ore, pig iron, and metallurgical coke. The company also operates a thermal coal- based commercial power facility of 600 megawatts (MW) at Jharsuguda in the State of Odisha in eastern India; a 300 MW thermal coal based power plant at Korba; 1,980 MW (three units of 660 MW each) thermal coal- based commercial power facilities; 274MW of wind power plants; and a power plant situated at Mettur Dam in the state of Tamil Nadu in southern India. In addition, it manufactures and supplies billets, TMT bars, wire rods, and ductile iron pipes; engages in the mechanization of coal handling facilities and upgradation of general cargo berth for handling coal at the outer harbour of Visakhapatnam Port on the east coast of India; and provides logistics and other allied services inter alia rendering stevedoring, and other allied services in ports and other allied sectors. Further, the company is involved in manufacturing glass substrates in South Korea and Taiwan. It also has operations in South Africa, Namibia, Ireland, Australia, Liberia, and the United Arab Emirates. The company was incorporated in 1965 and is based in Mumbai, India.",
+        "summary": "Vedanta Limited operates as a diversified natural resources company in India. The company explores for, develops, extracts, produces, processes, and sells oil and gas, zinc, lead, silver, copper, aluminum, iron ore, steel, and power. It is involved in the exploration, development, and production of oil and gas; and exploration, mining, and processing of iron ore, pig iron, and metallurgical coke. The company also operates a thermal coal-based commercial power facility of 600 megawatts (MW) at Jharsuguda in the State of Odisha in eastern India; two 300 MW thermal coal based power plants at Korba; 1,980 MW (three units of 660 MW each) thermal coal-based commercial power facilities; 274MW of wind power plants; and a power plant situated at Mettur Dam in the state of Tamil Nadu in southern India. In addition, it manufactures and supplies billets, TMT bars, wire rods, and ductile iron pipes; engages in the mechanization of coal handling facilities and upgradation of general cargo berth for handling coal at the outer harbor of Visakhapatnam Port on the east coast of India; and provides logistics and other allied services inter alia rendering stevedoring, and other allied services in ports and other allied sectors. Further, the company is involved in manufacturing glass substrates in South Korea and Taiwan. It also has operations in South Africa, Namibia, Ireland, Australia, Liberia, and the United Arab Emirates. The company was incorporated in 1965 and is based in Mumbai, India.",
         "currency": "EUR",
         "sector": "Basic Materials",
         "industry": "Other Industrial Metals & Mining",
@@ -10,6 +10,18 @@
         "market": "dr_market",
         "country": "India",
         "city": "Mumbai"
+    },
+    "20MICRONS.NS": {
+        "short_name": "20 MICRONS LTD",
+        "long_name": "20 Microns Limited",
+        "summary": "20 Microns Limited engages in the industrial micronised minerals and specialty chemicals businesses in India. It offers industrial minerals, such as ground calcium carbonate, dolomite, hydrous kaolins, calcined kaolins, talcs, natural barytes, silica/quartz, muscovite mica, feldspar/nepheline syenite, and natural and synthetic red oxide. The company also provides specialty chemicals, including white pigment opacifiers, buff colored TIO2, synthetic barium sulphate, micronized wax and wax additives, high aspect ratio talc, flash and surface modified calcined kaolins, matting agents, rheological additives, inorganic thickeners, sub micron calcium carbonate, decorative colored quartz sand, calcium oxide desiccant, and flame retardants. Its products are used in paints and coatings, inks and pigments, plastics and polymers, papers, rubber, cosmetics, adhesives and sealants, agrochemicals, welding electrodes, foundry, ceramics, construction and construction chemicals, oil well drilling, filtration, detergents and soaps, leather, and textiles applications. The company also exports its products. 20 Microns Limited was founded in 1987 and is headquartered in Vadodara, India.",
+        "currency": "INR",
+        "sector": "Basic Materials",
+        "industry": "Other Industrial Metals & Mining",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Vadodara"
     },
     "ARENTERP.NS": {
         "short_name": "RAJDARSHAN INDUSTR",
@@ -59,18 +71,6 @@
         "country": "India",
         "city": "Kolkata"
     },
-    "METKORE.NS": {
-        "short_name": "METKORE ALLOYS & I",
-        "long_name": "Metkore Alloys & Industries Limited",
-        "summary": "Metkore Alloys & Industries Limited manufactures and trades in steel products and ferro alloy products in India. The company offers high carbon ferro chrome alloys, and silicon manganese and ferro silicon, as well as trades in other ferro alloy and related products, including ore, coal, coke, char coal, anthracite coal, quartzite, etc. It also provides ferro manganese and chrome ore lumps. The company was formerly known as Cronimet Alloys India Limited and changed its name to Metkore Alloys & Industries Limited in January 2012. Metkore Alloys & Industries Limited was incorporated in 2006 and is based in Bengaluru, India.",
-        "currency": "INR",
-        "sector": "Basic Materials",
-        "industry": "Other Industrial Metals & Mining",
-        "exchange": "NSI",
-        "market": "in_market",
-        "country": "India",
-        "city": "Bengaluru"
-    },
     "MOIL.NS": {
         "short_name": "MOIL LTD",
         "long_name": "MOIL Limited",
@@ -86,7 +86,7 @@
     "ORISSAMINE.NS": {
         "short_name": "ORISSA MINERALS DE",
         "long_name": "The Orissa Minerals Development Company Limited",
-        "summary": "The Orissa Minerals Development Company Limited mines and markets iron ore and manganese ore in India. It also produces and sells sponge iron. The company was incorporated in 1918 and is based in Bhubaneswar, India. The Orissa Minerals Development Company Limited is a subsidiary of Eastern Investments Limited.",
+        "summary": "The Orissa Minerals Development Company Limited mines and markets iron ore and manganese ore in India. It also produces and sells sponge iron. The company was incorporated in 1918 and is headquartered in Bhubaneswar, India. The Orissa Minerals Development Company Limited is a subsidiary of Eastern Investments Limited.",
         "currency": "INR",
         "sector": "Basic Materials",
         "industry": "Other Industrial Metals & Mining",
@@ -95,27 +95,39 @@
         "country": "India",
         "city": "Bhubaneswar"
     },
-    "VEDL": {
-        "short_name": "Vedanta Limited",
-        "long_name": "Vedanta Limited",
-        "summary": "Vedanta Limited operates as a diversified natural resources company in India. The company explores for, develops, produces, processes, and sells oil and gas, zinc, lead, silver, copper, aluminum, iron ore, steel, and power. It is involved in the exploration, development, and production of oil and gas; and exploration, mining, and processing of iron ore, pig iron, and metallurgical coke. The company also operates a thermal coal- based commercial power facility of 600 megawatts (MW) at Jharsuguda in the State of Odisha in eastern India; a 300 MW thermal coal based power plant at Korba; 1,980 MW (three units of 660 MW each) thermal coal- based commercial power facilities; 274MW of wind power plants; and a power plant situated at Mettur Dam in the state of Tamil Nadu in southern India. In addition, it manufactures and supplies billets, TMT bars, wire rods, and ductile iron pipes; engages in the mechanization of coal handling facilities and upgradation of general cargo berth for handling coal at the outer harbour of Visakhapatnam Port on the east coast of India; and provides logistics and other allied services inter alia rendering stevedoring, and other allied services in ports and other allied sectors. Further, the company is involved in manufacturing glass substrates in South Korea and Taiwan. It also has operations in South Africa, Namibia, Ireland, Australia, Liberia, and the United Arab Emirates. The company was incorporated in 1965 and is based in Mumbai, India.",
-        "currency": "USD",
-        "sector": "Basic Materials",
-        "industry": "Other Industrial Metals & Mining",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "India",
-        "city": "Mumbai"
-    },
-    "VEDL.NS": {
-        "short_name": "VEDANTA LIMITED",
-        "long_name": "Vedanta Limited",
-        "summary": "Vedanta Limited operates as a diversified natural resources company in India. The company explores for, develops, produces, processes, and sells oil and gas, zinc, lead, silver, copper, aluminum, iron ore, steel, and power. It is involved in the exploration, development, and production of oil and gas; and exploration, mining, and processing of iron ore, pig iron, and metallurgical coke. The company also operates a thermal coal- based commercial power facility of 600 megawatts (MW) at Jharsuguda in the State of Odisha in eastern India; a 300 MW thermal coal based power plant at Korba; 1,980 MW (three units of 660 MW each) thermal coal- based commercial power facilities; 274MW of wind power plants; and a power plant situated at Mettur Dam in the state of Tamil Nadu in southern India. In addition, it manufactures and supplies billets, TMT bars, wire rods, and ductile iron pipes; engages in the mechanization of coal handling facilities and upgradation of general cargo berth for handling coal at the outer harbour of Visakhapatnam Port on the east coast of India; and provides logistics and other allied services inter alia rendering stevedoring, and other allied services in ports and other allied sectors. Further, the company is involved in manufacturing glass substrates in South Korea and Taiwan. It also has operations in South Africa, Namibia, Ireland, Australia, Liberia, and the United Arab Emirates. The company was incorporated in 1965 and is based in Mumbai, India.",
+    "RAJMET.NS": {
+        "short_name": "Rajnandini Metal Limited",
+        "long_name": "Rajnandini Metal Limited",
+        "summary": "Rajnandini Metal Limited engages in the trading of various metals in India and internationally. Its products include base/primary metals, secondary metals and alloys, minor metals, ferro-alloys, ferrous and non-ferrous scraps, recyclable plastic scraps, finished and semi-finished metals and steel products, and alloying additives for smelters and foundries. The company trades copper scrap, semi-finished copper, brass scrap, semi-finished brass, aluminum scrap, aluminum alloy, semi-finished lead, ferrous/HMS scrap, and zinc scrap products. In addition, it offers steel, iron, iron alloy, castings, various metals and chemicals, furnace oil, and petroleum products, as well as act as a fabricator, contractor, exporter, importer, stocker, agent, dealer, and distributer. Further, the company is involved in the smelting, refining, finishing, buying, and selling of ferrous and non-ferrous metals, such as iron and steel, aluminum, tin, nickel, and zinc led. The company was founded in 2010 and is headquartered in Faridabad, India.",
         "currency": "INR",
         "sector": "Basic Materials",
         "industry": "Other Industrial Metals & Mining",
         "exchange": "NSI",
         "market": "in_market",
+        "country": "India",
+        "city": "Faridabad"
+    },
+    "VEDL.NS": {
+        "short_name": "VEDANTA LIMITED",
+        "long_name": "Vedanta Limited",
+        "summary": "Vedanta Limited operates as a diversified natural resources company in India. The company explores for, develops, extracts, produces, processes, and sells oil and gas, zinc, lead, silver, copper, aluminum, iron ore, steel, and power. It is involved in the exploration, development, and production of oil and gas; and exploration, mining, and processing of iron ore, pig iron, and metallurgical coke. The company also operates a thermal coal-based commercial power facility of 600 megawatts (MW) at Jharsuguda in the State of Odisha in eastern India; two 300 MW thermal coal based power plants at Korba; 1,980 MW (three units of 660 MW each) thermal coal-based commercial power facilities; 274MW of wind power plants; and a power plant situated at Mettur Dam in the state of Tamil Nadu in southern India. In addition, it manufactures and supplies billets, TMT bars, wire rods, and ductile iron pipes; engages in the mechanization of coal handling facilities and upgradation of general cargo berth for handling coal at the outer harbor of Visakhapatnam Port on the east coast of India; and provides logistics and other allied services inter alia rendering stevedoring, and other allied services in ports and other allied sectors. Further, the company is involved in manufacturing glass substrates in South Korea and Taiwan. It also has operations in South Africa, Namibia, Ireland, Australia, Liberia, and the United Arab Emirates. The company was incorporated in 1965 and is based in Mumbai, India.",
+        "currency": "INR",
+        "sector": "Basic Materials",
+        "industry": "Other Industrial Metals & Mining",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Mumbai"
+    },
+    "VEDL": {
+        "short_name": "Vedanta Limited",
+        "long_name": "Vedanta Limited",
+        "summary": "Vedanta Limited operates as a diversified natural resources company in India. The company explores for, develops, extracts, produces, processes, and sells oil and gas, zinc, lead, silver, copper, aluminum, iron ore, steel, and power. It is involved in the exploration, development, and production of oil and gas; and exploration, mining, and processing of iron ore, pig iron, and metallurgical coke. The company also operates a thermal coal-based commercial power facility of 600 megawatts (MW) at Jharsuguda in the State of Odisha in eastern India; two 300 MW thermal coal based power plants at Korba; 1,980 MW (three units of 660 MW each) thermal coal-based commercial power facilities; 274MW of wind power plants; and a power plant situated at Mettur Dam in the state of Tamil Nadu in southern India. In addition, it manufactures and supplies billets, TMT bars, wire rods, and ductile iron pipes; engages in the mechanization of coal handling facilities and upgradation of general cargo berth for handling coal at the outer harbor of Visakhapatnam Port on the east coast of India; and provides logistics and other allied services inter alia rendering stevedoring, and other allied services in ports and other allied sectors. Further, the company is involved in manufacturing glass substrates in South Korea and Taiwan. It also has operations in South Africa, Namibia, Ireland, Australia, Liberia, and the United Arab Emirates. The company was incorporated in 1965 and is based in Mumbai, India.",
+        "currency": "USD",
+        "sector": "Basic Materials",
+        "industry": "Other Industrial Metals & Mining",
+        "exchange": "NYQ",
+        "market": "us_market",
         "country": "India",
         "city": "Mumbai"
     }

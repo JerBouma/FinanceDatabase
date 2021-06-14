@@ -1,4 +1,40 @@
 {
+    "3U2.F": {
+        "short_name": "DR. MARTENS PLC  LS -,01",
+        "long_name": "Dr. Martens plc",
+        "summary": "Dr. Martens Limited engages in the manufacture and sale of footwear in the United Kingdom and internationally. Its product segments include originals, fusion, kids and casual, and a complementary range of accessories. The company offers its products under Dr. Martens brand name. It operates Europe, the Middle East, Africa, the Americas, and the Asia-Pacific. Dr. Martens Limited was founded in 1960 and is based in London, the United Kingdom.",
+        "currency": "EUR",
+        "sector": "Consumer Cyclical",
+        "industry": "Footwear & Accessories",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "DOCMF": {
+        "short_name": "DR. MARTENS PLC",
+        "long_name": "Dr. Martens plc",
+        "summary": "Dr. Martens Limited engages in the manufacture and sale of footwear in the United Kingdom and internationally. Its product segments include originals, fusion, kids and casual, and a complementary range of accessories. The company offers its products under Dr. Martens brand name. It operates Europe, the Middle East, Africa, the Americas, and the Asia-Pacific. Dr. Martens Limited was founded in 1960 and is based in London, the United Kingdom.",
+        "currency": "USD",
+        "sector": "Consumer Cyclical",
+        "industry": "Footwear & Accessories",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "DOCS.L": {
+        "short_name": "DR. MARTENS PLC ORD GBP0.01",
+        "long_name": "Dr. Martens plc",
+        "summary": "Dr. Martens Limited engages in the manufacture and sale of footwear in the United Kingdom and internationally. Its product segments include originals, fusion, kids and casual, and a complementary range of accessories. The company offers its products under Dr. Martens brand name. It operates Europe, the Middle East, Africa, the Americas, and the Asia-Pacific. Dr. Martens Limited was founded in 1960 and is based in London, the United Kingdom.",
+        "currency": "GBp",
+        "sector": "Consumer Cyclical",
+        "industry": "Footwear & Accessories",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
     "MUL.L": {
         "short_name": "MULBERRY GROUP PLC ORD 5P",
         "long_name": "Mulberry Group plc",
@@ -14,7 +50,7 @@
     "PTD.L": {
         "short_name": "PITTARDS PLC ORD 50P",
         "long_name": "Pittards plc",
-        "summary": "Pittards plc designs, produces, procures, and sells leather products in the United Kingdom, Europe, North America, the Far East, and internationally. The company operates in two divisions, UK and Ethiopia. It is also involved in the production and retail of leather goods and garments, bags, shoes, and gloves; and provision of consultancy and other related services to the leather industry. In addition, the company exports its products to approximately 44 countries. It serves manufacturers and distributors of shoes, gloves, luxury leather goods, interiors, and sports equipment. Pittards plc was founded in 1826 and is headquartered in Yeovil, the United Kingdom.",
+        "summary": "Pittards plc designs, produces, procures, and sells leather products in the United Kingdom, Europe, North America, the Far East, and internationally. The company operates in UK and Ethiopia divisions. It is also involved in the production and retail of leather goods and garments, bags, shoes, and gloves; and provision of consultancy and other related services to the leather industry. In addition, the company exports its products to approximately 44 countries and four continents. It serves manufacturers and distributors of shoes, gloves, luxury leather goods, interiors, and sports equipment. Pittards plc was founded in 1826 and is headquartered in Yeovil, the United Kingdom.",
         "currency": "GBp",
         "sector": "Consumer Cyclical",
         "industry": "Footwear & Accessories",
@@ -22,5 +58,17 @@
         "market": "gb_market",
         "country": "United Kingdom",
         "city": "Yeovil"
+    },
+    "SHOE.L": {
+        "short_name": "SHOE ZONE PLC ORD 1P",
+        "long_name": "Shoe Zone plc",
+        "summary": "Shoe Zone plc operates as a footwear retailer in the United Kingdom and the Republic of Ireland. The company offers shoes for men, women, boys, and girls. It operates 500 stores and shoezone.com, a Website. The company was incorporated in 2014 and is headquartered in Leicester, the United Kingdom.",
+        "currency": "GBp",
+        "sector": "Consumer Cyclical",
+        "industry": "Footwear & Accessories",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "Leicester"
     }
 }

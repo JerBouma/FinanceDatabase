@@ -1,16 +1,4 @@
 {
-    "12M.F": {
-        "short_name": "I.M.A.IND.MACCH.AUTOM.SPA",
-        "long_name": "I.M.A. Industria Macchine Automatiche S.p.A.",
-        "summary": "I.M.A. Industria Macchine Automatiche S.p.A. designs, manufactures, and sells automatic machines for the processing and packaging of pharmaceuticals, cosmetics, tea, coffee, tobacco, and other food products worldwide. Its Tea, Food & Other segment offers machines for the packaging of tea and herbal teas in filter bags, and the packaging of coffee in pods; end-of-line machines; machines and automatic lines for the manufacturing of electric motors and rotors; machines for containers and sticks, and ultraclean closures and wrappers, as well as forming, filling, and sealing; cartoning machines and systems; machines and plants for the dosing and packaging of cheese portions and stock cubes; and machines and systems for horizontal flowpack and fold packaging. This segment also provides machines and lines for food and non-food packaging; machines for the production of wet wipes; machines for the filling and packaging of single-serve coffee capsules; refurbished second-hand machines for processed cheese, and tea and herbs in filter bags; machines for the assembly of plastic material in the caps and closures sector, as well as medical products for self-medication; and machines for the packaging and management of tissue and personal care products.  Its Tobacco Packaging segment provides machines and plants for tobacco packaging, and related services. The company was founded in 1961 and is headquartered in Ozzano dell'Emilia, Italy. I.M.A. Industria Macchine Automatiche S.p.A. is a subsidiary of SO.FI.M.A. Societa Finanziaria Macchine Automatiche S.p.a.",
-        "currency": "EUR",
-        "sector": "Industrials",
-        "industry": "Specialty Industrial Machinery",
-        "exchange": "FRA",
-        "market": "dr_market",
-        "country": "Italy",
-        "city": "Ozzano Dell'emilia"
-    },
     "2GV.F": {
         "short_name": "TESMEC S.P.A.",
         "long_name": "Tesmec S.p.A.",
@@ -34,6 +22,18 @@
         "market": "dr_market",
         "country": "Italy",
         "city": "Turin"
+    },
+    "7UP.F": {
+        "short_name": "CLABO S.P.A.",
+        "long_name": "Clabo S.p.A.",
+        "summary": "Clabo S.p.A. designs, produces, and distributes refrigerated showcases and furniture for the food retail market worldwide. It offers refrigerated showcases for ice-cream and pastry products exhibition and conservation; and furniture for bars, pastry parlors, caf\u00c3\u00a9s, and canteens under the ORION, FB, ARTIC, BOCCHINI, and EASY BEST brand names. The company was founded in 2001 and is headquartered in Jesi, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Jesi"
     },
     "9NM.F": {
         "short_name": "COMAL S.P.A.",
@@ -70,18 +70,6 @@
         "market": "it_market",
         "country": "Italy",
         "city": "Pesaro"
-    },
-    "CFT.MI": {
-        "short_name": "CFT",
-        "long_name": "CFT S.p.A.",
-        "summary": "CFT S.p.A designs and installs plant and machinery for the food industry in Italy and internationally. The company operates through Processing & Packaging and Sorting segments. Its processing machines include receiving/washing/sorting machines, peelers, choppers/extractors/refiners, mixer and cookers, evaporators, sterilizers and pasteurizers, aseptic fillers, and processed cheese systems, as well as brewing and beverage systems. The company's filling machines comprise food volumetric fillers with rotating valves and rotary fillers with flow meters, as well as telescopic, vacuum, gas, and weight fillers; flow meter fillers, level fillers for still products, flow meter and level fillers for carbonated products, and keg systems; and volumetric rotary and inline fillers. It also offers blow-molding machines, vacuum seamers, sorting machines, X-ray inspection machines, pelletizers/depalletizers, handling systems, packers, robotic systems, and pick and place systems; and tunnel pasteurizers, spirals, freezers, dryers, batch retorts, air separators, cooling systems, decoring machines, and portion formers. Its products are used in food, beverage, liquid food, and non-food applications. The company was founded in 1945 and is based in Parma, Italy.",
-        "currency": "EUR",
-        "sector": "Industrials",
-        "industry": "Specialty Industrial Machinery",
-        "exchange": "MIL",
-        "market": "it_market",
-        "country": "Italy",
-        "city": "Parma"
     },
     "CLA.MI": {
         "short_name": "CLABO",
@@ -191,17 +179,17 @@
         "country": "Italy",
         "city": "Mortara"
     },
-    "IMA.MI": {
-        "short_name": "I.M.A.",
-        "long_name": "I.M.A. Industria Macchine Automatiche S.p.A.",
-        "summary": "I.M.A. Industria Macchine Automatiche S.p.A. designs, manufactures, and sells automatic machines for the processing and packaging of pharmaceuticals, cosmetics, tea, coffee, tobacco, and other food products worldwide. Its Tea, Food & Other segment offers machines for the packaging of tea and herbal teas in filter bags, and the packaging of coffee in pods; end-of-line machines; machines and automatic lines for the manufacturing of electric motors and rotors; machines for containers and sticks, and ultraclean closures and wrappers, as well as forming, filling, and sealing; cartoning machines and systems; machines and plants for the dosing and packaging of cheese portions and stock cubes; and machines and systems for horizontal flowpack and fold packaging. This segment also provides machines and lines for food and non-food packaging; machines for the production of wet wipes; machines for the filling and packaging of single-serve coffee capsules; refurbished second-hand machines for processed cheese, and tea and herbs in filter bags; machines for the assembly of plastic material in the caps and closures sector, as well as medical products for self-medication; and machines for the packaging and management of tissue and personal care products.  Its Tobacco Packaging segment provides machines and plants for tobacco packaging, and related services. The company was founded in 1961 and is headquartered in Ozzano dell'Emilia, Italy. I.M.A. Industria Macchine Automatiche S.p.A. is a subsidiary of SO.FI.M.A. Societa Finanziaria Macchine Automatiche S.p.a.",
+    "IP.MI": {
+        "short_name": "INTERPUMP GROUP",
+        "long_name": "Interpump Group S.p.A.",
+        "summary": "Interpump Group S.p.A. manufactures and markets high pressure plunger pumps in Italy, rest of Europe, North America, the Far East, Oceania, and internationally. It operates in two segments, Hydraulic Sector and Water Jetting Sector. The Hydraulic Sector segment produces and sells power take-offs that transmit drive from an industrial vehicle engine or transmission through hydraulic components; hydraulic cylinders that are components of hydraulic systems of various vehicle types; front-end and underbody cylinders for use in industrial vehicles in the construction sector; double acting cylinders, which are used in a range of applications, such as earthmoving and agricultural machinery, cranes and truck cranes, waste compactors, etc.; hydraulic lines and fittings that are used in hydraulic equipment and water systems; and pumps, directional controls, valves, other hydraulic components, and ancillary products. The Water Jetting Sector segment provides high pressure pumps and systems that are used in a range of industrial sectors for the conveyance of fluids. This segment's high pressure plunger pumps are the primary components of pressure washers, as well as used for car wash installations, forced lubrication systems for machine tools, and inverse osmosis systems for seawater desalination plants. Its very high-pressure pumps and systems are used for cleaning surfaces, ship hulls, and various hoses; removing machining burr; cutting and removing cement, asphalt, and paint coatings from stone, cement, and metal surfaces; and cutting solid materials. This segment also engages in drawing, blanking, and pressing sheet metals; and providing high pressure homogenizers, mixers, agitators, piston pumps, values, and other machines for use in the food processing, chemicals, cosmetics, and pharmaceutical industries. The company also engages in the research and development activities. Interpump Group S.p.A. was founded in 1977 and is based in Sant'Ilario d'Enza, Italy.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Specialty Industrial Machinery",
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Ozzano Dell'emilia"
+        "city": "Sant'ilario D'enza"
     },
     "MARP.MI": {
         "short_name": "MARZOCCHI POMPE",
@@ -214,6 +202,42 @@
         "market": "it_market",
         "country": "Italy",
         "city": "Casalecchio Di Reno"
+    },
+    "OSA.MI": {
+        "short_name": "OSAI AUTOMATION SYSTEM",
+        "long_name": "OSAI Automation System S.p.A.",
+        "summary": "OSAI Automation System S.p.A. engages in the automation and robotics, electronic, laser micromachining, and semiconductor businesses in Italy and internationally. Its Automation and Robotics division offers Benches, an ergonomically designed modular workbench; rotary tables; lines; modular assembly line; and NeoTray, a vertical magazine suitable to manage blister for loading/unloading purpose. The company's Electronic division offers scalable and modular odd-shape assemblies, including Neoplace 304 modula for assembling ODD-shapes; Neomark Easy, a topnotch equipment for customer who need in line machines; Neo router modular, a solution for mechanical separation of PCB panels; Neocut Shape, which performs cutting operations without mechanical stresses on components; and NeoTray, a vertical magazine suitable to manage blister for loading/unloading purpose. The company's Semiconductor division provides Osai neohandler, a notch solution for semiconductor companies for testing MEMS and power devices in mass production; Osai power module test handler, an equipment for testing power modules; and Osai's burn-in loader/unloader solutions for pre-test operations. Its Laser Micromachining division offers DM2c, a laser marking system; fineweld 300, a laser welding system; fineplast 140R, a system for welding plastic components; and finecut 300, a system to laser cut metallic components. The company was founded in 1991 and is based in Turin, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Turin"
+    },
+    "PA6.F": {
+        "short_name": "PRIMA INDUSTRIE  EO 2,50",
+        "long_name": "Prima Industrie SpA",
+        "summary": "Prima Industrie SpA develops, manufactures, and markets laser systems for industrial applications, sheet metal processing machines, and industrial electronics and laser sources. The company operates in two divisions, PRIMA POWER and PRIMA ELECTRO. The PRIMA POWER division designs, manufactures, and sells laser machines for cutting, welding, and punching of three-dimensional and two-dimensional metallic components; and sheet metal processing machines that use mechanical tools, such as punchers, integrated punching and shearing systems, integrated punching and laser cutting systems, panel bending products, bending machines, and automated systems. The Prima Electro division is involved in the development, construction, and sale of electronic power and control components, and high-power laser sources for industrial applications. The company operates in Europe, the Middle East, Africa, the Americas, and the Asia Pacific. Prima Industrie SpA was founded in 1977 and is headquartered in Collegno, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Collegno"
+    },
+    "PRI.MI": {
+        "short_name": "PRIMA INDUSTRIE",
+        "long_name": "Prima Industrie SpA",
+        "summary": "Prima Industrie SpA develops, manufactures, and markets laser systems for industrial applications, sheet metal processing machines, and industrial electronics and laser sources. The company operates in two divisions, PRIMA POWER and PRIMA ELECTRO. The PRIMA POWER division designs, manufactures, and sells laser machines for cutting, welding, and punching of three-dimensional and two-dimensional metallic components; and sheet metal processing machines that use mechanical tools, such as punchers, integrated punching and shearing systems, integrated punching and laser cutting systems, panel bending products, bending machines, and automated systems. The Prima Electro division is involved in the development, construction, and sale of electronic power and control components, and high-power laser sources for industrial applications. The company operates in Europe, the Middle East, Africa, the Americas, and the Asia Pacific. Prima Industrie SpA was founded in 1977 and is headquartered in Collegno, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Collegno"
     },
     "PV0.F": {
         "short_name": "PIOVAN S.P.A.",
@@ -262,6 +286,18 @@
         "market": "it_market",
         "country": "Italy",
         "city": "Ospitaletto"
+    },
+    "SIT.MI": {
+        "short_name": "SIT",
+        "long_name": "SIT S.p.A.",
+        "summary": "SIT S.p.A. develops, manufactures, and sells measuring devices and systems for the domestic gas equipment worldwide. The company offers mechanical controls, such as electrical on off, electrical and air/gas modulation, mixer, and thermostatic and manual controls; electronic controls, including burner controls, heat recovery units, and controls for appliances; fans for condensing and atmospheric boilers, and electric fans for pellet stoves-extractor hoods and air recirculation; and integrated systems. It also provides sensors comprising thermocouples, oxyprotectors, oxypilots, sensing elements, temperature sensors devices, pressure switches, and pilot burners; flue kits consisting of coaxial and twin flue systems, exhaust and condensing kits, roof terminal and cascade systems, and condensate traps; fans for range hoods; accessories; and gas meters. The company was founded in 1953 and is headquartered in Padua, Italy. SIT S.p.A. is a subsidiary of SIT Technologies Spa.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Padua"
     },
     "SITI.MI": {
         "short_name": "SITI - B&T",

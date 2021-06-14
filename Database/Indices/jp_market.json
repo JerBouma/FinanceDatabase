@@ -1,7 +1,42 @@
 {
+    "^N1000": {
+        "short_name": "Nikkei JAPAN 1000",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
     "^N225": {
         "short_name": "Nikkei 225",
         "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^N300": {
+        "short_name": "Nikkei 300",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^N500": {
+        "short_name": "Nikkei 500",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^ND20.OS": {
+        "short_name": "Nikkei 225 Dividend Point Index",
+        "currency": null,
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^ND21.OS": {
+        "short_name": null,
+        "currency": null,
         "market": "jp_market",
         "exchange": "OSA",
         "exchange timezone": "JST"
@@ -41,6 +76,20 @@
         "exchange": "OSA",
         "exchange timezone": "JST"
     },
+    "^NE20.OS": {
+        "short_name": "Nikkei 225 Estimated Dividend P",
+        "currency": null,
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NE21.OS": {
+        "short_name": null,
+        "currency": null,
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
     "^NENR.OS": {
         "short_name": "Nikkei ESG-REIT Net Total Retur",
         "currency": null,
@@ -55,8 +104,253 @@
         "exchange": "OSA",
         "exchange timezone": "JST"
     },
+    "^NG01.OS": {
+        "short_name": "Nikkei 500 Fishery",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG02.OS": {
+        "short_name": "Nikkei 500 Mining",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG03.OS": {
+        "short_name": "Nikkei 500 Construction",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG04.OS": {
+        "short_name": "Nikkei 500 Foods",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG05.OS": {
+        "short_name": "Nikkei 500 Textiles & Apparel",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG06.OS": {
+        "short_name": "Nikkei 500 Pulp & Paper",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG07.OS": {
+        "short_name": "Nikkei 500 Chemicals",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG08.OS": {
+        "short_name": "Nikkei 500 Pharmaceuticals",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG09.OS": {
+        "short_name": "Nikkei 500 Petroleum",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG10.OS": {
+        "short_name": "Nikkei 500 Rubber",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG11.OS": {
+        "short_name": "Nikkei 500 Glass & Ceramics",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG12.OS": {
+        "short_name": "Nikkei 500 Steel",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG13.OS": {
+        "short_name": "Nikkei 500 Nonferrous Metals",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG14.OS": {
+        "short_name": "Nikkei 500 Machinery",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG15.OS": {
+        "short_name": "Nikkei 500 Electric Machinery",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG16.OS": {
+        "short_name": "Nikkei 500 Shipbuilding",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG17.OS": {
+        "short_name": "Nikkei 500 Automobiles & Auto P",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG18.OS": {
+        "short_name": "Nikkei 500 Transportation Equip",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG19.OS": {
+        "short_name": "Nikkei 500 Precision Instrument",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG20.OS": {
+        "short_name": "Nikkei 500 Other Manufacturing",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG21.OS": {
+        "short_name": "Nikkei 500 Trading Companies",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG22.OS": {
+        "short_name": "Nikkei 500 Retail",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG23.OS": {
+        "short_name": "Nikkei 500 Banking",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG24.OS": {
+        "short_name": "Nikkei 500 Other Financial Serv",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG25.OS": {
+        "short_name": "Nikkei 500 Securities",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG26.OS": {
+        "short_name": "Nikkei 500 Insurance",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG27.OS": {
+        "short_name": "Nikkei 500 Real Estate",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG28.OS": {
+        "short_name": "Nikkei 500 Railway & Bus",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG29.OS": {
+        "short_name": "Nikkei 500 Land Transport",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG30.OS": {
+        "short_name": "Nikkei 500 Marine Transport",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG31.OS": {
+        "short_name": "Nikkei 500 Air Transport",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
     "^NG32.OS": {
         "short_name": "Nikkei 500 Wharehousing",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG33.OS": {
+        "short_name": "Nikkei 500 Communications",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG34.OS": {
+        "short_name": "Nikkei 500 Electric Power",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG35.OS": {
+        "short_name": "Nikkei 500 Gas",
+        "currency": "JPY",
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NG36.OS": {
+        "short_name": "Nikkei 500 Services",
         "currency": "JPY",
         "market": "jp_market",
         "exchange": "OSA",
@@ -97,6 +391,13 @@
         "exchange": "OSA",
         "exchange timezone": "JST"
     },
+    "^NK50.OS": {
+        "short_name": "Nikkei China Related Stock 50",
+        "currency": null,
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
     "^NKCC.OS": {
         "short_name": "Nikkei Average Covered Call Ind",
         "currency": null,
@@ -120,6 +421,13 @@
     },
     "^NKEH.OS": {
         "short_name": "Nikkei Average EUR Hedge Index",
+        "currency": null,
+        "market": "jp_market",
+        "exchange": "OSA",
+        "exchange timezone": "JST"
+    },
+    "^NKER.OS": {
+        "short_name": "Nikkei ESG-REIT",
         "currency": null,
         "market": "jp_market",
         "exchange": "OSA",

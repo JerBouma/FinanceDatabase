@@ -1,135 +1,184 @@
 {
+    "ASI.AT": {
+        "short_name": "ATHEX Select Index",
+        "currency": null,
+        "market": "gr_market",
+        "exchange": "ATH",
+        "exchange timezone": "EEST"
+    },
     "ASIP.AT": {
         "short_name": "ATHEX Select Plus Index",
         "currency": null,
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
+    },
+    "DAP.AT": {
+        "short_name": "FTSE/ATHEX Real Estate",
+        "currency": "EUR",
+        "market": "gr_market",
+        "exchange": "ATH",
+        "exchange timezone": "EEST"
+    },
+    "DAS.AT": {
+        "short_name": "FTSE ATHEX INSURANCE",
+        "currency": "EUR",
+        "market": "gr_market",
+        "exchange": "ATH",
+        "exchange timezone": "EEST"
+    },
+    "DBP.AT": {
+        "short_name": "FTSE ATHEX IND. GOODS AND SERV",
+        "currency": "EUR",
+        "market": "gr_market",
+        "exchange": "ATH",
+        "exchange timezone": "EEST"
+    },
+    "DEA.AT": {
+        "short_name": "ATHEX Alternat.Mark.Price Ind",
+        "currency": "EUR",
+        "market": "gr_market",
+        "exchange": "ATH",
+        "exchange timezone": "EEST"
+    },
+    "DEM.AT": {
+        "short_name": "FTSE ATHEX RETAIL",
+        "currency": "EUR",
+        "market": "gr_market",
+        "exchange": "ATH",
+        "exchange timezone": "EEST"
     },
     "DKO.AT": {
         "short_name": "FTSE ATHEX UTILITIES",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "DKY.AT": {
         "short_name": "FTSE ATHEX CONSTR. AND MATER.",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
+    },
+    "DPA.AT": {
+        "short_name": "FTSE/ATHEX ENERGY",
+        "currency": "EUR",
+        "market": "gr_market",
+        "exchange": "ATH",
+        "exchange timezone": "EEST"
     },
     "DPO.AT": {
         "short_name": "FTSE/ATHEX CONSUM. GOOD& SERV.",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "DPP.AT": {
         "short_name": "FTSE/ATHEX PERSONAL PRODUCTS",
         "currency": null,
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "DPY.AT": {
         "short_name": "FTSE ATHEX BASIC RESOURCES",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "DTA.AT": {
         "short_name": "FTSE ATHEX TRAVEL AND LEISURE",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "DTL.AT": {
         "short_name": "FTSE ATHEX TELECOMMUNICATIONS",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "DTP.AT": {
         "short_name": "FTSE ATHEX FOOD AND BEVERAGE",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "DTR.AT": {
         "short_name": "FTSE ATHEX BANKS",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "DTX.AT": {
         "short_name": "FTSE ATHEX TECHNOLOGY",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "DXY.AT": {
         "short_name": "FTSE ATHEX FINANCIAL SERVICES",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "DYG.AT": {
         "short_name": "FTSE ATHEX HEALTH CARE",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "FTSEA.AT": {
         "short_name": "FTSE ATHEX Market Index",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "FTSEB.AT": {
         "short_name": "FTSE ATHEX-CSE Banking Index",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "FTSEM.AT": {
         "short_name": "FTSE ATHEX MID CAP",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
-    "FTSEMSFW.AT": {
-        "short_name": "FTSE/ATHEX MID&SM CAP FACT-WEI",
+    "GD.AT": {
+        "short_name": "COMPOSITE INDEX",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "HELMSI.AT": {
         "short_name": "HELLENIC MID&SMALL CAP INDEX",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     },
     "SAGD.AT": {
         "short_name": "COMPOSITE INDEX TOTAL RETURN",
         "currency": "EUR",
         "market": "gr_market",
         "exchange": "ATH",
-        "exchange timezone": "EET"
+        "exchange timezone": "EEST"
     }
 }

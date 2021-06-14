@@ -119,6 +119,12 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
+    "SARSEK=X": {
+        "short_name": "SAR/SEK",
+        "currency": "SEK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "SEK=X": {
         "short_name": "USD/SEK",
         "currency": "SEK",
@@ -139,6 +145,12 @@
     },
     "TWDSEK=X": {
         "short_name": "TWD/SEK",
+        "currency": "SEK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARSEK=X": {
+        "short_name": "ZAR/SEK",
         "currency": "SEK",
         "exchange": "CCY",
         "market": "ccy_market"

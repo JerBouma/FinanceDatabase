@@ -1,132 +1,48 @@
 {
-    "^SGMCSGD": {
-        "short_name": "NASDAQ Singapore Mid Cap SGD In",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "^SGSCSGD": {
-        "short_name": "NASDAQ Singapore Small Cap SGD ",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "^STI": {
-        "short_name": "STI Index",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "ADLN.SI": {
-        "short_name": "iEdge APEJ DIV LDR NTR",
-        "currency": "USD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "ADLNS.SI": {
-        "short_name": "iEdge APXJ DLREIT SGD NTR",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "ADLP.SI": {
-        "short_name": "iEdge APEJ DIV LDR",
-        "currency": "USD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "ADLPS.SI": {
-        "short_name": "iEdge APXJ DLREIT SGD",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "ADLT.SI": {
-        "short_name": "iEdge APEJ DIV LDR TR",
-        "currency": "USD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "ADLTS.SI": {
-        "short_name": "iEdge APXJ DLREIT SGD TR",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "ARAN.SI": {
-        "short_name": "iEdge Aus REIT AUD NTR",
-        "currency": "AUD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "ARAP.SI": {
-        "short_name": "iEdge Aus REIT AUD PR",
-        "currency": "AUD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "ARAT.SI": {
-        "short_name": "iEdge Aus REIT AUD TR",
-        "currency": "AUD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "ARUN.SI": {
-        "short_name": "iEdge Aus REIT USD NTR",
-        "currency": "USD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "ARUP.SI": {
-        "short_name": "iEdge Aus REIT USD PR",
-        "currency": "USD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "ARUT.SI": {
-        "short_name": "iEdge Aus REIT USD TR",
-        "currency": "USD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "CNO5S.SI": {
-        "short_name": "SG CNOOC S5X",
-        "currency": "HKD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "CTD5L.SI": {
-        "short_name": "SG City Dev L5X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "CTD5S.SI": {
-        "short_name": "SG City Dev S5X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
     "FSTAM.SI": {
         "short_name": "FTSE ST Maritime Index",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS.SI": {
+        "short_name": "FTSE ST All-Share Index",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS0001.SI": {
+        "short_name": "FTSE ST Oil & Gas Index",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS10.SI": {
+        "short_name": "FTSE ST All-Share Technology In",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS1000.SI": {
+        "short_name": "FTSE ST Basic",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS15.SI": {
+        "short_name": "FTSE ST All-Share Telecommunica",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS20.SI": {
+        "short_name": "FTSE ST All-Share Health Care I",
         "currency": "SGD",
         "market": "sg_market",
         "exchange": "SES",
@@ -139,8 +55,71 @@
         "exchange": "SES",
         "exchange timezone": "SGT"
     },
+    "FSTAS30.SI": {
+        "short_name": "FTSE ST All-Share Financials In",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS3000.SI": {
+        "short_name": "FTSE ST Consumer Goods Index",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS35.SI": {
+        "short_name": "FTSE ST All-Share Real Estate I",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS3510.SI": {
+        "short_name": "FTSE ST All-Share Real Estate I",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS351010.SI": {
+        "short_name": "FTSE ST All-Share Real Estate I",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS351020.SI": {
+        "short_name": "FTSE ST All-Share Real Estate I",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS40.SI": {
+        "short_name": "FTSE ST All-Share Consumer Disc",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
     "FSTAS4000.SI": {
         "short_name": "FTSE ST Health Care Index",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS45.SI": {
+        "short_name": "FTSE ST All-Share Consumer Stap",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS50.SI": {
+        "short_name": "FTSE ST All-Share Industrials I",
         "currency": "SGD",
         "market": "sg_market",
         "exchange": "SES",
@@ -153,8 +132,29 @@
         "exchange": "SES",
         "exchange timezone": "SGT"
     },
+    "FSTAS55.SI": {
+        "short_name": "FTSE ST All-Share Basic Materia",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS60.SI": {
+        "short_name": "FTSE ST All-Share Energy Index",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
     "FSTAS6000.SI": {
         "short_name": "FTSE ST Telecommunications Inde",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "FSTAS65.SI": {
+        "short_name": "FTSE ST All-Share Utilities Ind",
         "currency": "SGD",
         "market": "sg_market",
         "exchange": "SES",
@@ -244,48 +244,6 @@
         "exchange": "SES",
         "exchange timezone": "SGT"
     },
-    "GEE5L.SI": {
-        "short_name": "SG Geely L5X",
-        "currency": "HKD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "HKE5L.SI": {
-        "short_name": "SG HKEX L5X",
-        "currency": "HKD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "HKE5S.SI": {
-        "short_name": "SG HKEX S5X",
-        "currency": "HKD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "IFIH1.SI": {
-        "short_name": "Custom Index IFID HKD 1",
-        "currency": "HKD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "IFIU1.SI": {
-        "short_name": "Custom Index IFID USD 1",
-        "currency": "USD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "KEP5S.SI": {
-        "short_name": "SG Keppel S5X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
     "LHSS.SI": {
         "short_name": "LION-OSPL HSTECH US$iNAV",
         "currency": "USD",
@@ -307,41 +265,6 @@
         "exchange": "SES",
         "exchange timezone": "SGT"
     },
-    "LPCF.SI": {
-        "short_name": "Custom Index LPCF",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "NEGH.SI": {
-        "short_name": "Custom Index NEGAEIVH",
-        "currency": "HKD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "NEGU.SI": {
-        "short_name": "Custom Index NEGAEIVU",
-        "currency": "USD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "OCB5L.SI": {
-        "short_name": "SG OCBC L5X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "OCB5S.SI": {
-        "short_name": "SG OCBC S5X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
     "PINS1.SI": {
         "short_name": "Custom Index NCB 1",
         "currency": "SGD",
@@ -356,106 +279,8 @@
         "exchange": "SES",
         "exchange timezone": "SGT"
     },
-    "RE2TR.SI": {
-        "short_name": "iEdge SREIT Ldr SGD TR",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "REIT.SI": {
-        "short_name": "iEdge REIT",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "REIT2.SI": {
-        "short_name": "iEdge SREIT Ldr SGD PR",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "REITR.SI": {
-        "short_name": "iEdge REITR",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SG7L.SI": {
-        "short_name": "SG SGLM L7X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SG7S.SI": {
-        "short_name": "SG SGSM S7X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SGLM.SI": {
-        "short_name": "SG SGLM L5X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SGSM.SI": {
-        "short_name": "SG SGSM S5X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SGT5L.SI": {
-        "short_name": "SG SingTel L5X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SGT5S.SI": {
-        "short_name": "SG SingTel S5X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SGX5L.SI": {
-        "short_name": "SG SGX L5X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SGX5S.SI": {
-        "short_name": "SG SGX S5X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
     "SGXOG.SI": {
         "short_name": "iEdge OG",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SGXR2.SI": {
-        "short_name": "iEdge R2",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SGXRE.SI": {
-        "short_name": "iEdge RE",
         "currency": "SGD",
         "market": "sg_market",
         "exchange": "SES",
@@ -464,48 +289,6 @@
     "SING1.SI": {
         "short_name": "Custom Index SINV",
         "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SR2TR.SI": {
-        "short_name": "iEdge R2TR",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SRETR.SI": {
-        "short_name": "iEdge RETR",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SRLSN.SI": {
-        "short_name": "iEdge SREIT Ldr SGD NTR",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SRLUN.SI": {
-        "short_name": "iEdge SREIT Ldr USD NTR",
-        "currency": "USD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SRLUP.SI": {
-        "short_name": "iEdge SREIT Ldr USD PR",
-        "currency": "USD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "SRLUT.SI": {
-        "short_name": "iEdge SREIT Ldr USD TR",
-        "currency": "USD",
         "market": "sg_market",
         "exchange": "SES",
         "exchange timezone": "SGT"
@@ -524,76 +307,6 @@
         "exchange": "SES",
         "exchange timezone": "SGT"
     },
-    "SUN5L.SI": {
-        "short_name": "SG Sunny Optical L5X",
-        "currency": "HKD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "TRSGA.SI": {
-        "short_name": "SFI Index",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "TRSGC.SI": {
-        "short_name": "SFI Corporate Bond Index",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "TRSGF.SI": {
-        "short_name": "SFI Financial Bond Index",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "TRSGG.SI": {
-        "short_name": "SFI GovernmentBond Index",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "TRSGI.SI": {
-        "short_name": "SFI IndustrialBond Index",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "TRSGS.SI": {
-        "short_name": "SFI StatBoard Bond Index",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "TSGTP.SI": {
-        "short_name": "SFI Gov 10+Y Bond Idx",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "WIL5L.SI": {
-        "short_name": "SG Wilmar L5X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
-    "WIL5S.SI": {
-        "short_name": "SG Wilmar S5X",
-        "currency": "SGD",
-        "market": "sg_market",
-        "exchange": "SES",
-        "exchange timezone": "SGT"
-    },
     "WISGP.SI": {
         "short_name": "FTSE Singapore Index",
         "currency": "SGD",
@@ -601,8 +314,22 @@
         "exchange": "SES",
         "exchange timezone": "SGT"
     },
-    "YZJ5S.SI": {
-        "short_name": "SG Yangzijiang S5X",
+    "^SGMCSGD": {
+        "short_name": "NASDAQ Singapore Mid Cap SGD In",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "^SGSCSGD": {
+        "short_name": "NASDAQ Singapore Small Cap SGD ",
+        "currency": "SGD",
+        "market": "sg_market",
+        "exchange": "SES",
+        "exchange timezone": "SGT"
+    },
+    "^STI": {
+        "short_name": "STI Index",
         "currency": "SGD",
         "market": "sg_market",
         "exchange": "SES",

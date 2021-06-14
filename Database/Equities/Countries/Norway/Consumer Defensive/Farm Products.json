@@ -14,7 +14,7 @@
     "9NR.F": {
         "short_name": "NORWAY ROYAL SALMON  NK 1",
         "long_name": "Norway Royal Salmon AS",
-        "summary": "Norway Royal Salmon ASA produces, harvests, sells, and markets smolt and salmon products in Norway. The company offers fresh and frozen fish, round fish, fillet, portions, and smoked and marinated products. It also exports its products. Norway Royal Salmon ASA was founded in 1992 and is based in Trondheim, Norway.",
+        "summary": "Norway Royal Salmon ASA produces, harvests, sells, and markets smolt and salmon products in Norway. The company offers fresh and frozen fish, round fish, fillet, portions, and smoked and marinated products. It also exports its products to 52 countries. Norway Royal Salmon ASA was founded in 1992 and is headquartered in Trondheim, Norway.",
         "currency": "EUR",
         "sector": "Consumer Defensive",
         "industry": "Farm Products",
@@ -47,10 +47,22 @@
         "country": "Norway",
         "city": "Sortland"
     },
+    "ASA.OL": {
+        "short_name": "ATLANTIC SAPPH ASA",
+        "long_name": "Atlantic Sapphire ASA",
+        "summary": "Atlantic Sapphire ASA, together with its subsidiaries, engages in the land-based salmon farming business. The company operates through two segments, Fish Farming (Denmark); and Fish Farming (USA). It is involved in the production and sale of salmon. Atlantic Sapphire ASA was founded in 2010 and is headquartered in Vikebukt, Norway.",
+        "currency": "NOK",
+        "sector": "Consumer Defensive",
+        "industry": "Farm Products",
+        "exchange": "OSL",
+        "market": "no_market",
+        "country": "Norway",
+        "city": "Vikebukt"
+    },
     "ASTVF": {
         "short_name": "AUSTEVOLL SEAFOOD ASA",
         "long_name": "Austevoll Seafood ASA",
-        "summary": "Austevoll Seafood ASA, a seafood company, engages in the salmon, white fish, and pelagic businesses in Norway, the European Union, Eastern Europe, Africa, the Pacific, North America, South America, and Central America. The company is involved in the ownership and operation of fishing vessels, as well as farming, harvesting, processing, sale, and distribution of salmon and trout. It also produces white fish products, fishmeals, and fish oils; omega-3 oil; and canned and frozen fish products The company was founded in 1981 and is headquartered in Storeb\u00c3\u00b8, Norway. Austevoll Seafood ASA is a subsidiary of Laco AS.",
+        "summary": "Austevoll Seafood ASA, a seafood company, engages in the salmon and trout, white fish, and pelagic businesses in Norway, the European Union, Eastern Europe, Africa, Asia, North America, South America, and Central America. The company is involved in the ownership and operation of fishing vessels, as well as farming, processing, sale, and distribution of salmon and trout. It also produces white fish products, fish meals, and fish oils; omega-3 oil; and canned and frozen fish products. The company was incorporated in 1981 and is headquartered in Storeb\u00c3\u00b8, Norway. Austevoll Seafood ASA is a subsidiary of Laco AS.",
         "currency": "USD",
         "sector": "Consumer Defensive",
         "industry": "Farm Products",
@@ -62,7 +74,7 @@
     "AUSS.OL": {
         "short_name": "AUSTEVOLL SEAFOOD",
         "long_name": "Austevoll Seafood ASA",
-        "summary": "Austevoll Seafood ASA, a seafood company, engages in the salmon, white fish, and pelagic businesses in Norway, the European Union, Eastern Europe, Africa, the Pacific, North America, South America, and Central America. The company is involved in the ownership and operation of fishing vessels, as well as farming, harvesting, processing, sale, and distribution of salmon and trout. It also produces white fish products, fishmeals, and fish oils; omega-3 oil; and canned and frozen fish products The company was founded in 1981 and is headquartered in Storeb\u00c3\u00b8, Norway. Austevoll Seafood ASA is a subsidiary of Laco AS.",
+        "summary": "Austevoll Seafood ASA, a seafood company, engages in the salmon and trout, white fish, and pelagic businesses in Norway, the European Union, Eastern Europe, Africa, Asia, North America, South America, and Central America. The company is involved in the ownership and operation of fishing vessels, as well as farming, processing, sale, and distribution of salmon and trout. It also produces white fish products, fish meals, and fish oils; omega-3 oil; and canned and frozen fish products. The company was incorporated in 1981 and is headquartered in Storeb\u00c3\u00b8, Norway. Austevoll Seafood ASA is a subsidiary of Laco AS.",
         "currency": "NOK",
         "sector": "Consumer Defensive",
         "industry": "Farm Products",
@@ -71,17 +83,17 @@
         "country": "Norway",
         "city": "Storeb\u00c3\u00b8"
     },
-    "ISLAX.OL": {
-        "short_name": "ICELANDIC SALMON",
-        "long_name": "Icelandic Salmon AS",
-        "summary": "Icelandic Salmon AS, together with its subsidiaries, engages in salmon farming, commercial, sales, and distribution activities. The company was formerly known as Arnarlax AS and changed its name to Icelandic Salmon AS in October 2020. Icelandic Salmon AS was incorporated in 2001 and is headquartered in Kverva, Norway. Icelandic Salmon AS is a subsidiary of SalMar ASA.",
+    "FROY.OL": {
+        "short_name": "FROY ASA",
+        "long_name": "Fr\u00f8y ASA",
+        "summary": "Fr\u00c3\u00b8y ASA provides vessel and value chain services to the aquaculture industry in Norway. The company offers wellboat services, sea freight, de-lice and treatment, mooring and laying, ring washing and cage services, net washing and mending, inspection and certification, bottom mapping and documentation, slep, diving and ROV, and control system. The company was incorporated in 2019 and is headquartered in Sistranda, Norway.",
         "currency": "NOK",
         "sector": "Consumer Defensive",
         "industry": "Farm Products",
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Kverva"
+        "city": "Sistranda"
     },
     "JEP.F": {
         "short_name": "SALMAR ASA  NK -,25",
@@ -107,10 +119,22 @@
         "country": "Norway",
         "city": "Oslo"
     },
+    "KSLLF": {
+        "short_name": "KALERA AS",
+        "long_name": "Kalera AS",
+        "summary": "Kalera AS operates as a technology-driven vertical farming company. It produces pesticide-free non-GMO vegetables. The company's products include arugula, kohlrabi, onion, mixes, daikon and purple radish, and lettuces. It serves restaurant and food trade, including resorts and the cruise industry. The company is headquartered in Oslo, Norway.",
+        "currency": "USD",
+        "sector": "Consumer Defensive",
+        "industry": "Farm Products",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Norway",
+        "city": "Oslo"
+    },
     "MHGVY": {
         "short_name": "MOWI ASA SPON ADS EACH REP 1 OR",
         "long_name": "Mowi ASA",
-        "summary": "Mowi ASA, a seafood company, produces and supplies farmed salmon products worldwide. The company operates through three segments: Feed, Farming, and Sales and Marketing. It is involved in the salmon feed production, salmon farming and primary processing, and seafood secondary processing activities. The company offers whole gutted fish, including Label Rouge and organic salmon; and white fish and other seafood products, as well as fillets, steaks, cutlets, portions, loins, kebabs, and steak combos. It also provides value added products, such as breaded, pre-fried, dusted, marinated, grilled, battered, topped, filled with sauce, delicatessen, fresh fish ready meal, and smoked fish products. The company offers its products under the Pieters, The Irish Organic Salmon Company, Rebel Fish, Sterling, Olav's, Supreme Salmon, Ducktrap River, Kritsen, Donegal Silver, Harbour Salmon, Appeti'Marine, Mowi, Laschinger, and Admiral's brands. The company was formerly known as Marine Harvest ASA and changed its name to Mowi ASA in December 2018. Mowi ASA was founded in 1965 and is headquartered in Bergen, Norway.",
+        "summary": "Mowi ASA, a seafood company, produces and supplies farmed salmon products worldwide. The company operates through three segments: Feed, Farming, and Sales and Marketing. It is involved in the salmon feed production, salmon farming and primary processing, and seafood secondary processing activities. The company offers whole gutted fish, including Label Rouge and organic salmon; and white fish and other seafood products, as well as fillets, steaks, cutlets, portions, loins, kebabs, and steak combos. It also provides value added products, such as breaded, pre-fried, dusted, marinated, grilled, battered, topped, filled with sauce, delicatessen, fresh fish ready meal, and smoked fish products. The company offers its products under the Mowi, Appeti'Marine, Mowi Salmon, Donegal Silver, Admiral's, Pieters, Laschinger, Kritsen, Ducktrap River, Harbour Salmon Co., Rebel Fish, Supreme Salmon, Olav's, Northern Harvest, and Mowi Nutrition brand names. The company was formerly known as Marine Harvest ASA and changed its name to Mowi ASA in December 2018. Mowi ASA was founded in 1964 and is headquartered in Bergen, Norway.",
         "currency": "USD",
         "sector": "Consumer Defensive",
         "industry": "Farm Products",
@@ -122,7 +146,7 @@
     "MNHVF": {
         "short_name": "MOWI ASA",
         "long_name": "Mowi ASA",
-        "summary": "Mowi ASA, a seafood company, produces and supplies farmed salmon products worldwide. The company operates through three segments: Feed, Farming, and Sales and Marketing. It is involved in the salmon feed production, salmon farming and primary processing, and seafood secondary processing activities. The company offers whole gutted fish, including Label Rouge and organic salmon; and white fish and other seafood products, as well as fillets, steaks, cutlets, portions, loins, kebabs, and steak combos. It also provides value added products, such as breaded, pre-fried, dusted, marinated, grilled, battered, topped, filled with sauce, delicatessen, fresh fish ready meal, and smoked fish products. The company offers its products under the Pieters, The Irish Organic Salmon Company, Rebel Fish, Sterling, Olav's, Supreme Salmon, Ducktrap River, Kritsen, Donegal Silver, Harbour Salmon, Appeti'Marine, Mowi, Laschinger, and Admiral's brands. The company was formerly known as Marine Harvest ASA and changed its name to Mowi ASA in December 2018. Mowi ASA was founded in 1965 and is headquartered in Bergen, Norway.",
+        "summary": "Mowi ASA, a seafood company, produces and supplies farmed salmon products worldwide. The company operates through three segments: Feed, Farming, and Sales and Marketing. It is involved in the salmon feed production, salmon farming and primary processing, and seafood secondary processing activities. The company offers whole gutted fish, including Label Rouge and organic salmon; and white fish and other seafood products, as well as fillets, steaks, cutlets, portions, loins, kebabs, and steak combos. It also provides value added products, such as breaded, pre-fried, dusted, marinated, grilled, battered, topped, filled with sauce, delicatessen, fresh fish ready meal, and smoked fish products. The company offers its products under the Mowi, Appeti'Marine, Mowi Salmon, Donegal Silver, Admiral's, Pieters, Laschinger, Kritsen, Ducktrap River, Harbour Salmon Co., Rebel Fish, Supreme Salmon, Olav's, Northern Harvest, and Mowi Nutrition brand names. The company was formerly known as Marine Harvest ASA and changed its name to Mowi ASA in December 2018. Mowi ASA was founded in 1964 and is headquartered in Bergen, Norway.",
         "currency": "USD",
         "sector": "Consumer Defensive",
         "industry": "Farm Products",
@@ -134,7 +158,7 @@
     "MOWI.OL": {
         "short_name": "MOWI ASA",
         "long_name": "Mowi ASA",
-        "summary": "Mowi ASA, a seafood company, produces and supplies farmed salmon products worldwide. The company operates through three segments: Feed, Farming, and Sales and Marketing. It is involved in the salmon feed production, salmon farming and primary processing, and seafood secondary processing activities. The company offers whole gutted fish, including Label Rouge and organic salmon; and white fish and other seafood products, as well as fillets, steaks, cutlets, portions, loins, kebabs, and steak combos. It also provides value added products, such as breaded, pre-fried, dusted, marinated, grilled, battered, topped, filled with sauce, delicatessen, fresh fish ready meal, and smoked fish products. The company offers its products under the Pieters, The Irish Organic Salmon Company, Rebel Fish, Sterling, Olav's, Supreme Salmon, Ducktrap River, Kritsen, Donegal Silver, Harbour Salmon, Appeti'Marine, Mowi, Laschinger, and Admiral's brands. The company was formerly known as Marine Harvest ASA and changed its name to Mowi ASA in December 2018. Mowi ASA was founded in 1965 and is headquartered in Bergen, Norway.",
+        "summary": "Mowi ASA, a seafood company, produces and supplies farmed salmon products worldwide. The company operates through three segments: Feed, Farming, and Sales and Marketing. It is involved in the salmon feed production, salmon farming and primary processing, and seafood secondary processing activities. The company offers whole gutted fish, including Label Rouge and organic salmon; and white fish and other seafood products, as well as fillets, steaks, cutlets, portions, loins, kebabs, and steak combos. It also provides value added products, such as breaded, pre-fried, dusted, marinated, grilled, battered, topped, filled with sauce, delicatessen, fresh fish ready meal, and smoked fish products. The company offers its products under the Mowi, Appeti'Marine, Mowi Salmon, Donegal Silver, Admiral's, Pieters, Laschinger, Kritsen, Ducktrap River, Harbour Salmon Co., Rebel Fish, Supreme Salmon, Olav's, Northern Harvest, and Mowi Nutrition brand names. The company was formerly known as Marine Harvest ASA and changed its name to Mowi ASA in December 2018. Mowi ASA was founded in 1964 and is headquartered in Bergen, Norway.",
         "currency": "NOK",
         "sector": "Consumer Defensive",
         "industry": "Farm Products",
@@ -142,6 +166,18 @@
         "market": "no_market",
         "country": "Norway",
         "city": "Bergen"
+    },
+    "NA8.F": {
+        "short_name": "NTS ASA  NK 1",
+        "long_name": "NTS ASA",
+        "summary": "NTS ASA, an integrated aquaculture company, engages in the aquaculture, well-boat, sea transport, and service boat businesses in Norway. The company produces salmon; provides well-boat shipping services; and transports fish and fish products by sea and land. It also supplies various safety systems for boats, fish farms, and land customers; and provides preparation, implementation, and maintenance services for management systems and security management systems. In addition, the company operates boat and ferry connections; and offers diving services and other services for the aquaculture and other sectors. It operates 15 connections, including 10 ferry connections, 4 fast ferry routes, and 1 local boat route, as well as 23 service vessels. The company was founded in 1879 and is based in Kolvereid, Norway.",
+        "currency": "EUR",
+        "sector": "Consumer Defensive",
+        "industry": "Farm Products",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Norway",
+        "city": "Kolvereid"
     },
     "NCOD.OL": {
         "short_name": "NORCOD AS",
@@ -155,10 +191,22 @@
         "country": "Norway",
         "city": "Trondheim"
     },
+    "NOHAL.OL": {
+        "short_name": "NORDIC HALIBUT AS",
+        "long_name": "Nordic Halibut AS",
+        "summary": "Nordic Halibut AS produces and sells farmed Atlantic halibut products worldwide. It offers fresh and frozen halibut products. The company was founded in 1995 and is headquartered in Aver\u00c3\u00b8y, Norway.",
+        "currency": "NOK",
+        "sector": "Consumer Defensive",
+        "industry": "Farm Products",
+        "exchange": "OSL",
+        "market": "no_market",
+        "country": "Norway",
+        "city": "Aver\u00c3\u00b8y"
+    },
     "NRS.OL": {
         "short_name": "NORWAY ROYAL SALMO",
         "long_name": "Norway Royal Salmon AS",
-        "summary": "Norway Royal Salmon ASA produces, harvests, sells, and markets smolt and salmon products in Norway. The company offers fresh and frozen fish, round fish, fillet, portions, and smoked and marinated products. It also exports its products. Norway Royal Salmon ASA was founded in 1992 and is based in Trondheim, Norway.",
+        "summary": "Norway Royal Salmon ASA produces, harvests, sells, and markets smolt and salmon products in Norway. The company offers fresh and frozen fish, round fish, fillet, portions, and smoked and marinated products. It also exports its products to 52 countries. Norway Royal Salmon ASA was founded in 1992 and is headquartered in Trondheim, Norway.",
         "currency": "NOK",
         "sector": "Consumer Defensive",
         "industry": "Farm Products",
@@ -167,10 +215,22 @@
         "country": "Norway",
         "city": "Trondheim"
     },
+    "NTS.OL": {
+        "short_name": "NTS ASA",
+        "long_name": "NTS ASA",
+        "summary": "NTS ASA, an integrated aquaculture company, engages in the aquaculture, well-boat, sea transport, and service boat businesses in Norway. The company produces salmon; provides well-boat shipping services; and transports fish and fish products by sea and land. It also supplies various safety systems for boats, fish farms, and land customers; and provides preparation, implementation, and maintenance services for management systems and security management systems. In addition, the company operates boat and ferry connections; and offers diving services and other services for the aquaculture and other sectors. It operates 15 connections, including 10 ferry connections, 4 fast ferry routes, and 1 local boat route, as well as 23 service vessels. The company was founded in 1879 and is based in Kolvereid, Norway.",
+        "currency": "NOK",
+        "sector": "Consumer Defensive",
+        "industry": "Farm Products",
+        "exchange": "OSL",
+        "market": "no_market",
+        "country": "Norway",
+        "city": "Kolvereid"
+    },
     "PND.F": {
         "short_name": "MOWI ASA  NK 7,5",
         "long_name": "Mowi ASA",
-        "summary": "Mowi ASA, a seafood company, produces and supplies farmed salmon products worldwide. The company operates through three segments: Feed, Farming, and Sales and Marketing. It is involved in the salmon feed production, salmon farming and primary processing, and seafood secondary processing activities. The company offers whole gutted fish, including Label Rouge and organic salmon; and white fish and other seafood products, as well as fillets, steaks, cutlets, portions, loins, kebabs, and steak combos. It also provides value added products, such as breaded, pre-fried, dusted, marinated, grilled, battered, topped, filled with sauce, delicatessen, fresh fish ready meal, and smoked fish products. The company offers its products under the Pieters, The Irish Organic Salmon Company, Rebel Fish, Sterling, Olav's, Supreme Salmon, Ducktrap River, Kritsen, Donegal Silver, Harbour Salmon, Appeti'Marine, Mowi, Laschinger, and Admiral's brands. The company was formerly known as Marine Harvest ASA and changed its name to Mowi ASA in December 2018. Mowi ASA was founded in 1965 and is headquartered in Bergen, Norway.",
+        "summary": "Mowi ASA, a seafood company, produces and supplies farmed salmon products worldwide. The company operates through three segments: Feed, Farming, and Sales and Marketing. It is involved in the salmon feed production, salmon farming and primary processing, and seafood secondary processing activities. The company offers whole gutted fish, including Label Rouge and organic salmon; and white fish and other seafood products, as well as fillets, steaks, cutlets, portions, loins, kebabs, and steak combos. It also provides value added products, such as breaded, pre-fried, dusted, marinated, grilled, battered, topped, filled with sauce, delicatessen, fresh fish ready meal, and smoked fish products. The company offers its products under the Mowi, Appeti'Marine, Mowi Salmon, Donegal Silver, Admiral's, Pieters, Laschinger, Kritsen, Ducktrap River, Harbour Salmon Co., Rebel Fish, Supreme Salmon, Olav's, Northern Harvest, and Mowi Nutrition brand names. The company was formerly known as Marine Harvest ASA and changed its name to Mowi ASA in December 2018. Mowi ASA was founded in 1964 and is headquartered in Bergen, Norway.",
         "currency": "EUR",
         "sector": "Consumer Defensive",
         "industry": "Farm Products",
@@ -182,12 +242,24 @@
     "PNDA.F": {
         "short_name": "MOWI ASA SP.ADR",
         "long_name": "Mowi ASA",
-        "summary": "Mowi ASA, a seafood company, produces and supplies farmed salmon products worldwide. The company operates through three segments: Feed, Farming, and Sales and Marketing. It is involved in the salmon feed production, salmon farming and primary processing, and seafood secondary processing activities. The company offers whole gutted fish, including Label Rouge and organic salmon; and white fish and other seafood products, as well as fillets, steaks, cutlets, portions, loins, kebabs, and steak combos. It also provides value added products, such as breaded, pre-fried, dusted, marinated, grilled, battered, topped, filled with sauce, delicatessen, fresh fish ready meal, and smoked fish products. The company offers its products under the Pieters, The Irish Organic Salmon Company, Rebel Fish, Sterling, Olav's, Supreme Salmon, Ducktrap River, Kritsen, Donegal Silver, Harbour Salmon, Appeti'Marine, Mowi, Laschinger, and Admiral's brands. The company was formerly known as Marine Harvest ASA and changed its name to Mowi ASA in December 2018. Mowi ASA was founded in 1965 and is headquartered in Bergen, Norway.",
+        "summary": "Mowi ASA, a seafood company, produces and supplies farmed salmon products worldwide. The company operates through three segments: Feed, Farming, and Sales and Marketing. It is involved in the salmon feed production, salmon farming and primary processing, and seafood secondary processing activities. The company offers whole gutted fish, including Label Rouge and organic salmon; and white fish and other seafood products, as well as fillets, steaks, cutlets, portions, loins, kebabs, and steak combos. It also provides value added products, such as breaded, pre-fried, dusted, marinated, grilled, battered, topped, filled with sauce, delicatessen, fresh fish ready meal, and smoked fish products. The company offers its products under the Mowi, Appeti'Marine, Mowi Salmon, Donegal Silver, Admiral's, Pieters, Laschinger, Kritsen, Ducktrap River, Harbour Salmon Co., Rebel Fish, Supreme Salmon, Olav's, Northern Harvest, and Mowi Nutrition brand names. The company was formerly known as Marine Harvest ASA and changed its name to Mowi ASA in December 2018. Mowi ASA was founded in 1964 and is headquartered in Bergen, Norway.",
         "currency": "EUR",
         "sector": "Consumer Defensive",
         "industry": "Farm Products",
         "exchange": "FRA",
         "market": "dr_market",
+        "country": "Norway",
+        "city": "Bergen"
+    },
+    "PROXI.OL": {
+        "short_name": "PROXIMAR SEAFOOD",
+        "long_name": "Proximar Seafood AS",
+        "summary": "Proximar Seafood AS engages in land-based salmon farming activities. It produces Atlantic salmon. The company was founded in 2015 and is based in Bergen, Norway.",
+        "currency": "NOK",
+        "sector": "Consumer Defensive",
+        "industry": "Farm Products",
+        "exchange": "OSL",
+        "market": "no_market",
         "country": "Norway",
         "city": "Bergen"
     },
@@ -205,7 +277,7 @@
     },
     "SALME.OL": {
         "short_name": "SALMON EVOLUTION",
-        "long_name": "Salmon Evolution Holding AS",
+        "long_name": "Salmon Evolution ASA",
         "summary": "Salmon Evolution Holding AS operates as a land-based salmon farming company in Norway. It focuses on the production of salmon meals. The company was founded in 2017 and is headquartered in Molde, Norway.",
         "currency": "NOK",
         "sector": "Consumer Defensive",
@@ -239,10 +311,22 @@
         "country": "Norway",
         "city": "Kverva"
     },
+    "STATT.OL": {
+        "short_name": "STATT TORSK AS",
+        "long_name": "Statt Torsk AS",
+        "summary": "Statt Torsk AS produces and sells farmed cod products in Norway and internationally. The company was incorporated in 2014 and is based in Stadlandet, Norway.",
+        "currency": "NOK",
+        "sector": "Consumer Defensive",
+        "industry": "Farm Products",
+        "exchange": "OSL",
+        "market": "no_market",
+        "country": "Norway",
+        "city": "Stadlandet"
+    },
     "Z85.F": {
         "short_name": "AUSTEVOLL SEAFOOD  NK 0,5",
         "long_name": "Austevoll Seafood ASA",
-        "summary": "Austevoll Seafood ASA, a seafood company, engages in the salmon, white fish, and pelagic businesses in Norway, the European Union, Eastern Europe, Africa, the Pacific, North America, South America, and Central America. The company is involved in the ownership and operation of fishing vessels, as well as farming, harvesting, processing, sale, and distribution of salmon and trout. It also produces white fish products, fishmeals, and fish oils; omega-3 oil; and canned and frozen fish products The company was founded in 1981 and is headquartered in Storeb\u00c3\u00b8, Norway. Austevoll Seafood ASA is a subsidiary of Laco AS.",
+        "summary": "Austevoll Seafood ASA, a seafood company, engages in the salmon and trout, white fish, and pelagic businesses in Norway, the European Union, Eastern Europe, Africa, Asia, North America, South America, and Central America. The company is involved in the ownership and operation of fishing vessels, as well as farming, processing, sale, and distribution of salmon and trout. It also produces white fish products, fish meals, and fish oils; omega-3 oil; and canned and frozen fish products. The company was incorporated in 1981 and is headquartered in Storeb\u00c3\u00b8, Norway. Austevoll Seafood ASA is a subsidiary of Laco AS.",
         "currency": "EUR",
         "sector": "Consumer Defensive",
         "industry": "Farm Products",

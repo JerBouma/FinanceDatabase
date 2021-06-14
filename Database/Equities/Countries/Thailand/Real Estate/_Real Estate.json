@@ -2,7 +2,7 @@
     "1PT1.SG": {
         "short_name": "Central Pattana PCL Reg. Shares",
         "long_name": "Central Pattana Public Company Limited",
-        "summary": "Central Pattana Public Company Limited develops and manages real estate properties primarily in Thailand. The company develops and rents shopping centers; office buildings; hotel; residential building; and food court, as well as invests in property leasehold funds and trust, and offers property management services. As of December 31, 2019, its property portfolio comprised 34 shopping centers, 7 office buildings, 2 hotels, and 1 rental housing project and accommodation project. The company was founded in 1980 and is headquartered in Bangkok, Thailand. Central Pattana Public Company Limited operates as a subsidiary of Chirathivat Group.",
+        "summary": "Central Pattana Public Company Limited develops and manages real estate properties primarily in Thailand. It develops and rents shopping centers, office buildings, condominiums, hotels, and residential buildings; offers property management consulting and corporate services; invests in real estates and leasehold property fund; and sells land and houses, and condominium units. The company also operates play land and water theme park, and hotels; manages real estate investment trust, condominium juristic person, and housing estate juristic person; and provides utility, food center, training, and personnel development services. As of December 31, 2020, its property portfolio comprised 34 shopping centers, 10 office buildings, 2 hotels, and 1 rental residential project. The company was founded in 1980 and is headquartered in Bangkok, Thailand.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate - Diversified",
@@ -14,7 +14,7 @@
     "2PR3.F": {
         "short_name": "PRUKSA HLGDS -NVDR- BA 1",
         "long_name": "Pruksa Holding Public Company Limited",
-        "summary": "Pruksa Holding Public Company Limited, through its subsidiaries, engages in the development and sale of residential real estate properties in Thailand. The company develops townhouses, single houses, and condominiums. It also provides management, home decoration, and construction services; and operates hospitals and clinics, as well as place of examination and treatment. The company was founded in 1993 and is headquartered in Bangkok, Thailand.",
+        "summary": "Pruksa Holding Public Company Limited, through its subsidiaries, develops and sells residential real estate properties in Thailand. The company develops townhouses, single-detached houses, and condominiums. It also provides management, home decoration, and construction services; and operates hospitals and clinics, as well as place of examination and treatment. The company was founded in 1993 and is headquartered in Bangkok, Thailand.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -26,7 +26,31 @@
     "2PR4.SG": {
         "short_name": "Pruksa Holdings PCL Reg. Shares",
         "long_name": "Pruksa Holding Public Company Limited",
-        "summary": "Pruksa Holding Public Company Limited, through its subsidiaries, engages in the development and sale of residential real estate properties in Thailand. The company develops townhouses, single houses, and condominiums. It also provides management, home decoration, and construction services; and operates hospitals and clinics, as well as place of examination and treatment. The company was founded in 1993 and is headquartered in Bangkok, Thailand.",
+        "summary": "Pruksa Holding Public Company Limited, through its subsidiaries, develops and sells residential real estate properties in Thailand. The company develops townhouses, single-detached houses, and condominiums. It also provides management, home decoration, and construction services; and operates hospitals and clinics, as well as place of examination and treatment. The company was founded in 1993 and is headquartered in Bangkok, Thailand.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "STU",
+        "market": "dr_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
+    "6TI.SG": {
+        "short_name": "Frasers Property [Thailand]PLCR",
+        "long_name": "Frasers Property (Thailand) Public Company Limited",
+        "summary": "Frasers Property (Thailand) Public Company Limited, together with its subsidiaries, primarily develops industrial real estate properties in Thailand. The company develops, rents, and sells factories and warehouses, as well as manages 2.8 million square meters of factories and warehouses. It is also involved in the development of commercial and hospitality properties, as well as houses, lands, and mixed-use projects; development of residential properties, including rental and related service of commercial buildings; hotel business; and operation of a golf course. In addition, the company operates and manages serviced apartments, hotels, and office and commercial buildings; and operates as a sponsor and manager of the industrial real estate investment trust in Thailand. Further, it offers data center colocation, smart solutions, investment management, and treasury center development services. The company was formerly known as TICON Industrial Connection Public Company Limited and changed its name to Frasers Property (Thailand) Public Company Limited in January 2019. Frasers Property (Thailand) Public Company Limited was founded in 1990 and is based in Bangkok, Thailand.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "STU",
+        "market": "dr_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
+    "9LE.SG": {
+        "short_name": "LPN Development PCL Reg. Shs (N",
+        "long_name": "L.P.N. Development Public Company Limited",
+        "summary": "L.P.N. Development Public Company Limited, together with its subsidiaries, develops real estate properties in Thailand. It is involved in the development of residential and non-residential condominiums. The company also provides community management services for office and residential condominiums; building engineering services; condominium unit and office space brokerage services; construction management services; and real estate products and services research, development, and consultancy services. In addition, it leases office buildings; and offers security services. L.P.N. Development Public Company Limited was founded in 1989 and is based in Bangkok, Thailand.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -71,7 +95,7 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
-    "ALL-R.BK": {
+    "ALL.BK": {
         "short_name": "ALL INSPIRE DEVELOPMENT PUBLIC ",
         "long_name": "All Inspire Development Public Company Limited",
         "summary": "All Inspire Development Public Company Limited engages in the development of real estate properties in Thailand. The company develops condominiums and townhomes. It also provides condominium management and real estate brokerage services. In addition, the company engages in the leasing and rental of shopping malls. The company was founded in 2013 and is headquartered in Bangkok, Thailand.",
@@ -83,10 +107,22 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
+    "ALLY.BK": {
+        "short_name": "ALLY LEASEHOLD REAL ESTATE INVE",
+        "long_name": "Ally Leasehold Real Estate Investment Trust",
+        "summary": "Bualuang K.E.Retail Leasehold Real Estate Investment Trust specializes in real estate investments.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
     "AMATA-R.BK": {
         "short_name": "AMATA CORPORATION PUBLIC COMPAN",
         "long_name": "Amata Corporation Public Company Limited",
-        "summary": "Amata Corporation Public Company Limited plans, develops, manages, and markets integrated industrial estates in Thailand and internationally. It also produces, distributes, and treats water for industrial use; provides management services for common area; operates a school; and constructs factory for rent. In addition, the company operates as a REIT manager. The company was founded in 1989 and is headquartered in Bangkok, Thailand.",
+        "summary": "Amata Corporation Public Company Limited, together with its subsidiaries, engages in the planning, developing, managing, and marketing of integrated industrial estates in Thailand and internationally. It also produces, distributes, and treats water for industrial use; provides management services in common area; operates a school; and constructs factory for rent. In addition, the company operates as a REIT manager. The company was founded in 1989 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -98,7 +134,7 @@
     "AMATA.BK": {
         "short_name": "AMATA CORPORATION PUBLIC COMPAN",
         "long_name": "Amata Corporation Public Company Limited",
-        "summary": "Amata Corporation Public Company Limited plans, develops, manages, and markets integrated industrial estates in Thailand and internationally. It also produces, distributes, and treats water for industrial use; provides management services for common area; operates a school; and constructs factory for rent. In addition, the company operates as a REIT manager. The company was founded in 1989 and is headquartered in Bangkok, Thailand.",
+        "summary": "Amata Corporation Public Company Limited, together with its subsidiaries, engages in the planning, developing, managing, and marketing of integrated industrial estates in Thailand and internationally. It also produces, distributes, and treats water for industrial use; provides management services in common area; operates a school; and constructs factory for rent. In addition, the company operates as a REIT manager. The company was founded in 1989 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -122,7 +158,7 @@
     "AMATAV-R.BK": {
         "short_name": "AMATA VN PUBLIC COMPANY LIMITED",
         "long_name": "Amata VN Public Company Limited",
-        "summary": "Amata VN Public Company Limited, through its subsidiaries, engages in the development of industrial estate in Vietnam. It is also involved in the leasing of industrial land, ready built factories, and commercial and residential land, as well as office rental activities. In addition, the company provides utility services. The company was founded in 2012 and is headquartered in Bangkok, Thailand. Amata VN Public Company Limited is a subsidiary of Amata Corporation Public Company Limited.",
+        "summary": "Amata VN Public Company Limited, through its subsidiaries, engages in the development of industrial estate and related business in Vietnam. It is also involved in the leasing of industrial land, ready built factories, and commercial and residential land, as well as office rental activities. In addition, the company provides utility services. The company was founded in 2012 and is headquartered in Bangkok, Thailand. Amata VN Public Company Limited is a subsidiary of Amata Corporation Public Company Limited.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -134,7 +170,7 @@
     "AMATAV.BK": {
         "short_name": "AMATA VN PUBLIC COMPANY LIMITED",
         "long_name": "Amata VN Public Company Limited",
-        "summary": "Amata VN Public Company Limited, through its subsidiaries, engages in the development of industrial estate in Vietnam. It is also involved in the leasing of industrial land, ready built factories, and commercial and residential land, as well as office rental activities. In addition, the company provides utility services. The company was founded in 2012 and is headquartered in Bangkok, Thailand. Amata VN Public Company Limited is a subsidiary of Amata Corporation Public Company Limited.",
+        "summary": "Amata VN Public Company Limited, through its subsidiaries, engages in the development of industrial estate and related business in Vietnam. It is also involved in the leasing of industrial land, ready built factories, and commercial and residential land, as well as office rental activities. In addition, the company provides utility services. The company was founded in 2012 and is headquartered in Bangkok, Thailand. Amata VN Public Company Limited is a subsidiary of Amata Corporation Public Company Limited.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -146,7 +182,7 @@
     "ANAN-R.BK": {
         "short_name": "ANANDA DEVELOPMENT PUBLIC COMPA",
         "long_name": "Ananda Development Public Company Limited",
-        "summary": "Ananda Development Public Company Limited, together with subsidiaries, develops and sells various real estate projects in Thailand. It operates through Real Estate Development, Management of Real Estate Development Project, Construction Service, and Other segments. The company provides management services for real estate projects; house construction services; and car racetrack, real estate brokerage, sport club member, and other services, as well as sells food and beverages. It is also involved in the management of juristic person; manufacture and distribution of building materials; development of software; and media production activities, as well as provides academic seminar services. Further, the company engages in the provision of property rental and procurement of lessee services. Ananda Development Public Company Limited was founded in 1999 and is headquartered in Bang Phli, Thailand.",
+        "summary": "Ananda Development Public Company Limited, together with subsidiaries, develops and sells various real estate projects in Thailand. It operates through Real Estate Development, Management of Real Estate Development Project, Construction Service, and Other segments. The company provides management services for real estate projects; house construction services; and real estate brokerage, sport club member, and other services, as well as sells food and beverages. It is also involved in the management of juristic person; manufacture and distribution of building materials; development of software; and media production activities, as well as provides academic seminar services. Further, the company engages in the provision of property rental and procurement of lessee services. Ananda Development Public Company Limited was founded in 1999 and is headquartered in Bang Phli, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -158,7 +194,7 @@
     "ANAN.BK": {
         "short_name": "ANANDA DEVELOPMENT PUBLIC COMPA",
         "long_name": "Ananda Development Public Company Limited",
-        "summary": "Ananda Development Public Company Limited, together with subsidiaries, develops and sells various real estate projects in Thailand. It operates through Real Estate Development, Management of Real Estate Development Project, Construction Service, and Other segments. The company provides management services for real estate projects; house construction services; and car racetrack, real estate brokerage, sport club member, and other services, as well as sells food and beverages. It is also involved in the management of juristic person; manufacture and distribution of building materials; development of software; and media production activities, as well as provides academic seminar services. Further, the company engages in the provision of property rental and procurement of lessee services. Ananda Development Public Company Limited was founded in 1999 and is headquartered in Bang Phli, Thailand.",
+        "summary": "Ananda Development Public Company Limited, together with subsidiaries, develops and sells various real estate projects in Thailand. It operates through Real Estate Development, Management of Real Estate Development Project, Construction Service, and Other segments. The company provides management services for real estate projects; house construction services; and real estate brokerage, sport club member, and other services, as well as sells food and beverages. It is also involved in the management of juristic person; manufacture and distribution of building materials; development of software; and media production activities, as well as provides academic seminar services. Further, the company engages in the provision of property rental and procurement of lessee services. Ananda Development Public Company Limited was founded in 1999 and is headquartered in Bang Phli, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -167,10 +203,10 @@
         "country": "Thailand",
         "city": "Bang Phli"
     },
-    "AP-R.BK": {
+    "AP.BK": {
         "short_name": "AP (THAILAND) PUBLIC COMPANY LI",
         "long_name": "AP (Thailand) Public Company Limited",
-        "summary": "AP (Thailand) Public Company Limited, together with its subsidiaries, engages in the real estate development activities in Thailand. The company operates in three segments: Low \u00c2\u0096 Rise, High \u00c2\u0096 Rise, and Other. It develops single detached houses, townhouses, and condominiums; and provides after sales, property brokerage, and construction services. AP (Thailand) Public Company Limited is also involved in the education and training businesses. The company was formerly known as Asian Property Development Public Company Limited and changed its name to AP (Thailand) Public Company Limited in May 2013. AP (Thailand) Public Company Limited is based in Bangkok, Thailand.",
+        "summary": "AP (Thailand) Public Company Limited, together with its subsidiaries, engages in the real estate development activities in Thailand. It operates in three segments: Low\u00c2\u0096Rise, High\u00c2\u0096Rise, and Other. The company develops single detached houses, townhouses, and condominiums; and provides after sales, property management and brokerage, and construction services. It also provides education and training services. The company was formerly known as Asian Property Development Public Company Limited and changed its name to AP (Thailand) Public Company Limited in May 2013. AP (Thailand) Public Company Limited was founded in 1991 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -179,7 +215,19 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
-    "AQ-R.BK": {
+    "APEX.BK": {
+        "short_name": "APEX DEVELOPMENT PUBLIC COMPANY",
+        "long_name": "Apex Development Public Company Limited",
+        "summary": "Apex Development Public Company Limited develops and sells real estate properties. The company develops residential condominiums, villas, and hotels, as well as land. It also provides services for customers to operate apartments and villas for rent. The company was formerly known as Sun Tech Group Public Company Limited and changed its name to Apex Development Public Company Limited in August 2007. Apex Development Public Company Limited was incorporated in 1989 and is headquartered in Bangkok, Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Diversified",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
+    "AQ.BK": {
         "short_name": "AQ ESTATE PUBLIC COMPANY LIMITE",
         "long_name": "AQ Estate Public Company Limited",
         "summary": "AQ Estate Public Company Limited acquires, develops, and sells properties in Thailand. It operates through four segments: Property Development Low Rise, Property Development High Rise, Services, and Property Rental and Service. The company provides recreational and sale management services; operates hotels and resorts; manages commercial space; and provides real estate trading and rental services. The company was formerly known as Krisdamahanakorn Public Company Limited and changed its name to AQ Estate Public Company Limited in April 2014. The company was founded in 1982 and is based in Bangkok, Thailand.",
@@ -193,7 +241,7 @@
     },
     "ARIN-R.BK": {
         "short_name": "ARINSIRI LAND PUBLIC COMPANY LI",
-        "long_name": "Arinsiri Land Public company limited",
+        "long_name": "Arinsiri Land Public Company Limited",
         "summary": "Arinsiri Land Public company limited engages in the property development activities in Thailand. The company was incorporated in 2014 and is based in Chonburi, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
@@ -205,7 +253,7 @@
     },
     "ARIN.BK": {
         "short_name": "ARINSIRI LAND PUBLIC COMPANY LI",
-        "long_name": "Arinsiri Land Public company limited",
+        "long_name": "Arinsiri Land Public Company Limited",
         "summary": "Arinsiri Land Public company limited engages in the property development activities in Thailand. The company was incorporated in 2014 and is based in Chonburi, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
@@ -214,6 +262,30 @@
         "market": "th_market",
         "country": "Thailand",
         "city": "Chonburi"
+    },
+    "ASW-R.BK": {
+        "short_name": "ASSETWISE PUBLIC COMPANY LIMITE",
+        "long_name": "Assetwise Public Company Limited",
+        "summary": "Asset Wise Public Company Limited develops residential real estate properties in Thailand. It develops residential condominiums, condominiums, and low-rise real estate projects consisting of detached houses, townhomes, and home offices. The company also rents real estate properties. Asset Wise Public Company Limited is headquartered in Bangkok, Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
+    "ASW.BK": {
+        "short_name": "ASSETWISE PUBLIC COMPANY LIMITE",
+        "long_name": "Assetwise Public Company Limited",
+        "summary": "Asset Wise Public Company Limited develops residential real estate properties in Thailand. It develops residential condominiums, condominiums, and low-rise real estate projects consisting of detached houses, townhomes, and home offices. The company also rents real estate properties. Asset Wise Public Company Limited is headquartered in Bangkok, Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Bangkok"
     },
     "B52-R.BK": {
         "short_name": "B-52 CAPITAL PUBLIC COMPANY LIM",
@@ -239,18 +311,6 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
-    "BC-R.BK": {
-        "short_name": "BOUTIQUE CORPORATION PUBLIC COM",
-        "long_name": "Boutique Corporation Public Company Limited",
-        "summary": "Boutique Corporation Public Company Limited designs, develops, manages, and sells real estate solutions in the hospitality, retail, and commercial sectors to institutional investors in Thailand. It is involved in real estate development, such as serviced residences, hotel operations, and community mall, as well as sale of real estate projects and real estate investment management activities. The company is headquartered in Bangkok, Thailand.",
-        "currency": "THB",
-        "sector": "Real Estate",
-        "industry": "Real Estate - Diversified",
-        "exchange": "SET",
-        "market": "th_market",
-        "country": "Thailand",
-        "city": "Bangkok"
-    },
     "BC.BK": {
         "short_name": "BOUTIQUE CORPORATION PUBLIC COM",
         "long_name": "Boutique Corporation Public Company Limited",
@@ -258,18 +318,6 @@
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Diversified",
-        "exchange": "SET",
-        "market": "th_market",
-        "country": "Thailand",
-        "city": "Bangkok"
-    },
-    "BKER.BK": {
-        "short_name": "BUALUANG K.E. RETAIL LEASEHOLD ",
-        "long_name": "Bualuang K.E.Retail Leasehold Real Estate Investment Trust",
-        "summary": "Bualuang K.E.Retail Leasehold Real Estate Investment Trust specializes in real estate investments.",
-        "currency": "THB",
-        "sector": "Real Estate",
-        "industry": "REIT - Retail",
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
@@ -302,7 +350,7 @@
     "BROCK-R.BK": {
         "short_name": "BAAN ROCK GARDEN PUBLIC COMPANY",
         "long_name": "Baan Rock Garden Public Company Limited",
-        "summary": "Baan Rock Garden Public Company Limited engages in real estate development activities in the Bangkok, Phuket, and Samutprakarn, Thailand. It develops residential projects under the Baan Rock Garden brand. The company was formerly known as Chucheep South Group, Co., Ltd. Baan Rock Garden Public Company Limited was founded in 1990 and is based in Bangkok, Thailand.",
+        "summary": "Baan Rock Garden Public Company Limited engages in real estate development activities in Bangkok, Phuket, Rayong, and Samutprakarn, Thailand. It develops and sells townhouses, single detached houses, and commercial buildings under the Baan Rock Garden brand. The company was formerly known as Chucheep South Group, Co., Ltd. Baan Rock Garden Public Company Limited was founded in 1990 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -314,7 +362,7 @@
     "BROCK.BK": {
         "short_name": "BAAN ROCK GARDEN PUBLIC COMPANY",
         "long_name": "Baan Rock Garden Public Company Limited",
-        "summary": "Baan Rock Garden Public Company Limited engages in real estate development activities in the Bangkok, Phuket, and Samutprakarn, Thailand. It develops residential projects under the Baan Rock Garden brand. The company was formerly known as Chucheep South Group, Co., Ltd. Baan Rock Garden Public Company Limited was founded in 1990 and is based in Bangkok, Thailand.",
+        "summary": "Baan Rock Garden Public Company Limited engages in real estate development activities in Bangkok, Phuket, Rayong, and Samutprakarn, Thailand. It develops and sells townhouses, single detached houses, and commercial buildings under the Baan Rock Garden brand. The company was formerly known as Chucheep South Group, Co., Ltd. Baan Rock Garden Public Company Limited was founded in 1990 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -323,7 +371,7 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
-    "CGD-R.BK": {
+    "CGD.BK": {
         "short_name": "COUNTRY GROUP DEVELOPMENT PUBLI",
         "long_name": "Country Group Development Public Company Limited",
         "summary": "Country Group Development Public Company Limited, together with its subsidiaries, engages in the real estate development business in Thailand and internationally. The company trades, rents, and operates real estate properties; wholesales equipment and furniture used in construction; and manages real estate properties. It also engages in the construction business. The company was formerly known as Dragon One Public Company Limited and changed its name to Country Group Development Public Company Limited in May 2010. Country Group Development Public Company Limited was incorporated in 1995 and is headquartered in Bangkok, Thailand.",
@@ -362,7 +410,7 @@
     "CMC-R.BK": {
         "short_name": "CHAOPRAYAMAHANAKORN PUBLIC COMP",
         "long_name": "Chaoprayamahanakorn Public Company Limited",
-        "summary": "Chaoprayamahanakorn Public Company Limited engages in the real estate development activities in Thailand. The company develops lands, single detached houses, townhouses, and condominium units. It also offers construction services; leases space in office building; and engages in the furniture and wall manufacturing business. Chaoprayamahanakorn Public Company Limited was founded in 1994 and is headquartered in Bangkok, Thailand.",
+        "summary": "Chaoprayamahanakorn Public Company Limited engages in the real estate development activities in Thailand. It also offers construction services; and leases space in office building. Chaoprayamahanakorn Public Company Limited was founded in 1994 and is based in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Diversified",
@@ -374,7 +422,7 @@
     "CMC.BK": {
         "short_name": "CHAOPRAYAMAHANAKORN PUBLIC COMP",
         "long_name": "Chaoprayamahanakorn Public Company Limited",
-        "summary": "Chaoprayamahanakorn Public Company Limited engages in the real estate development activities in Thailand. The company develops lands, single detached houses, townhouses, and condominium units. It also offers construction services; leases space in office building; and engages in the furniture and wall manufacturing business. Chaoprayamahanakorn Public Company Limited was founded in 1994 and is headquartered in Bangkok, Thailand.",
+        "summary": "Chaoprayamahanakorn Public Company Limited engages in the real estate development activities in Thailand. It also offers construction services; and leases space in office building. Chaoprayamahanakorn Public Company Limited was founded in 1994 and is based in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Diversified",
@@ -386,7 +434,7 @@
     "CPN-R.BK": {
         "short_name": "CENTRAL PATTANA PUBLIC COMPANY ",
         "long_name": "Central Pattana Public Company Limited",
-        "summary": "Central Pattana Public Company Limited develops and manages real estate properties primarily in Thailand. The company develops and rents shopping centers; office buildings; hotel; residential building; and food court, as well as invests in property leasehold funds and trust, and offers property management services. As of December 31, 2019, its property portfolio comprised 34 shopping centers, 7 office buildings, 2 hotels, and 1 rental housing project and accommodation project. The company was founded in 1980 and is headquartered in Bangkok, Thailand. Central Pattana Public Company Limited operates as a subsidiary of Chirathivat Group.",
+        "summary": "Central Pattana Public Company Limited develops and manages real estate properties primarily in Thailand. It develops and rents shopping centers, office buildings, condominiums, hotels, and residential buildings; offers property management consulting and corporate services; invests in real estates and leasehold property fund; and sells land and houses, and condominium units. The company also operates play land and water theme park, and hotels; manages real estate investment trust, condominium juristic person, and housing estate juristic person; and provides utility, food center, training, and personnel development services. As of December 31, 2020, its property portfolio comprised 34 shopping centers, 10 office buildings, 2 hotels, and 1 rental residential project. The company was founded in 1980 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Diversified",
@@ -398,7 +446,7 @@
     "CPN.BK": {
         "short_name": "CENTRAL PATTANA PUBLIC COMPANY ",
         "long_name": "Central Pattana Public Company Limited",
-        "summary": "Central Pattana Public Company Limited develops and manages real estate properties primarily in Thailand. The company develops and rents shopping centers; office buildings; hotel; residential building; and food court, as well as invests in property leasehold funds and trust, and offers property management services. As of December 31, 2019, its property portfolio comprised 34 shopping centers, 7 office buildings, 2 hotels, and 1 rental housing project and accommodation project. The company was founded in 1980 and is headquartered in Bangkok, Thailand. Central Pattana Public Company Limited operates as a subsidiary of Chirathivat Group.",
+        "summary": "Central Pattana Public Company Limited develops and manages real estate properties primarily in Thailand. It develops and rents shopping centers, office buildings, condominiums, hotels, and residential buildings; offers property management consulting and corporate services; invests in real estates and leasehold property fund; and sells land and houses, and condominium units. The company also operates play land and water theme park, and hotels; manages real estate investment trust, condominium juristic person, and housing estate juristic person; and provides utility, food center, training, and personnel development services. As of December 31, 2020, its property portfolio comprised 34 shopping centers, 10 office buildings, 2 hotels, and 1 rental residential project. The company was founded in 1980 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Diversified",
@@ -458,7 +506,7 @@
     "ESTAR-R.BK": {
         "short_name": "EASTERN STAR REAL ESTATE PUBLIC",
         "long_name": "Eastern Star Real Estate Public Company Limited",
-        "summary": "Eastern Star Real Estate Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates in three segments: Real Estate Business, Golf Course Business, and Rental Business. The company develops and sells land, houses, and residential condominium units; and rents land and units in residential buildings. It also operates golf courses, as well as offers sport memberships. The company is headquartered in Bangkok, Thailand.",
+        "summary": "Eastern Star Real Estate Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates in three segments: Real Estate Business, Golf Course Business, and Rental Business. The company develops and sells land, houses, and residential condominium units; and rents properties. It also operates golf courses, as well as offers sport memberships. The company is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -470,7 +518,7 @@
     "ESTAR.BK": {
         "short_name": "EASTERN STAR REAL ESTATE PUBLIC",
         "long_name": "Eastern Star Real Estate Public Company Limited",
-        "summary": "Eastern Star Real Estate Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates in three segments: Real Estate Business, Golf Course Business, and Rental Business. The company develops and sells land, houses, and residential condominium units; and rents land and units in residential buildings. It also operates golf courses, as well as offers sport memberships. The company is headquartered in Bangkok, Thailand.",
+        "summary": "Eastern Star Real Estate Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates in three segments: Real Estate Business, Golf Course Business, and Rental Business. The company develops and sells land, houses, and residential condominium units; and rents properties. It also operates golf courses, as well as offers sport memberships. The company is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -482,7 +530,7 @@
     "EVER-R.BK": {
         "short_name": "EVERLAND PUBLIC COMPANY LIMITED",
         "long_name": "Everland Public Company Limited",
-        "summary": "Everland Public Company Limited, together with its subsidiaries, engages in the real estate development business in Thailand. It operates in two segments, Property Development, and Hospital and Dental Clinic. The company develops land for various residential properties, such as townhouses, single-detached houses, and condominiums. It is also involved in the operation and investment in private hospitals and dental clinics; and provision of land and hospital buildings for rent. The company was founded in 1988 and is headquartered in Bangkok, Thailand.",
+        "summary": "Everland Public Company Limited, together with its subsidiaries, operates a real estate development business in Thailand. It operates in two segments, Property Development, and Hospital and Dental Clinic. The company develops land for various residential properties, such as townhouses, single-detached houses, and condominiums. It is also involved in the operation and investment in private hospitals and dental clinics; and provision of land and hospital buildings for rent. The company was founded in 1988 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -494,7 +542,7 @@
     "EVER.BK": {
         "short_name": "EVERLAND PUBLIC COMPANY LIMITED",
         "long_name": "Everland Public Company Limited",
-        "summary": "Everland Public Company Limited, together with its subsidiaries, engages in the real estate development business in Thailand. It operates in two segments, Property Development, and Hospital and Dental Clinic. The company develops land for various residential properties, such as townhouses, single-detached houses, and condominiums. It is also involved in the operation and investment in private hospitals and dental clinics; and provision of land and hospital buildings for rent. The company was founded in 1988 and is headquartered in Bangkok, Thailand.",
+        "summary": "Everland Public Company Limited, together with its subsidiaries, operates a real estate development business in Thailand. It operates in two segments, Property Development, and Hospital and Dental Clinic. The company develops land for various residential properties, such as townhouses, single-detached houses, and condominiums. It is also involved in the operation and investment in private hospitals and dental clinics; and provision of land and hospital buildings for rent. The company was founded in 1988 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -542,10 +590,10 @@
     "GLAND-R.BK": {
         "short_name": "GRAND CANAL LAND PUBLIC COMPANY",
         "long_name": "Grand Canal Land Public Company Limited",
-        "summary": "Grand Canal Land Public Company Limited develops real estate properties in Thailand. It operates through two segments, Real Estate for Sale Business, and Real Estate for Rental and Service Business. The Real Estate for Sale Business segment develops land and house, and residential condominium projects. The Real Estate for Rental and Service Business segment rents office buildings. Grand Canal Land Public Company Limited also manages a real estate investment trust; and operates hotels. The company was formerly known as Media of Medias Public Company Limited and changed its name to Grand Canal Land Public Company Limited in May 2010. The company was founded in 1985 and is headquartered in Bangkok, Thailand. Grand Canal Land Public Company Limited is a subsidiary of CPN Pattaya Company Limited.",
+        "summary": "Grand Canal Land Public Company Limited develops real estate properties in Thailand. It operates through two segments, Real Estate for Sale Business, and Real Estate for Rental and Service Business. The Real Estate for Sale Business segment develops land and house, and residential condominium projects. The Real Estate for Rental and Service Business segment rents office buildings. Grand Canal Land Public Company Limited also manages a real estate investment trust; and operates hotels. The company was formerly known as Media of Medias Public Company Limited and changed its name to Grand Canal Land Public Company Limited in May 2010. The company was incorporated in 1985 and is headquartered in Bangkok, Thailand. Grand Canal Land Public Company Limited is a subsidiary of CPN Pattaya Company Limited.",
         "currency": "THB",
         "sector": "Real Estate",
-        "industry": "Real Estate - Development",
+        "industry": "Real Estate Services",
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
@@ -554,10 +602,10 @@
     "GLAND.BK": {
         "short_name": "GRAND CANAL LAND PUBLIC COMPANY",
         "long_name": "Grand Canal Land Public Company Limited",
-        "summary": "Grand Canal Land Public Company Limited develops real estate properties in Thailand. It operates through two segments, Real Estate for Sale Business, and Real Estate for Rental and Service Business. The Real Estate for Sale Business segment develops land and house, and residential condominium projects. The Real Estate for Rental and Service Business segment rents office buildings. Grand Canal Land Public Company Limited also manages a real estate investment trust; and operates hotels. The company was formerly known as Media of Medias Public Company Limited and changed its name to Grand Canal Land Public Company Limited in May 2010. The company was founded in 1985 and is headquartered in Bangkok, Thailand. Grand Canal Land Public Company Limited is a subsidiary of CPN Pattaya Company Limited.",
+        "summary": "Grand Canal Land Public Company Limited develops real estate properties in Thailand. It operates through two segments, Real Estate for Sale Business, and Real Estate for Rental and Service Business. The Real Estate for Sale Business segment develops land and house, and residential condominium projects. The Real Estate for Rental and Service Business segment rents office buildings. Grand Canal Land Public Company Limited also manages a real estate investment trust; and operates hotels. The company was formerly known as Media of Medias Public Company Limited and changed its name to Grand Canal Land Public Company Limited in May 2010. The company was incorporated in 1985 and is headquartered in Bangkok, Thailand. Grand Canal Land Public Company Limited is a subsidiary of CPN Pattaya Company Limited.",
         "currency": "THB",
         "sector": "Real Estate",
-        "industry": "Real Estate - Development",
+        "industry": "Real Estate Services",
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
@@ -578,7 +626,7 @@
     "HNQ.SG": {
         "short_name": "U City PCL Reg. Shares (NVDRs)B",
         "long_name": "U City Public Company Limited",
-        "summary": "U City Public Company Limited operates as a diversified real estate investment and development company in Thailand and internationally. The company operates in three segments: Hotel Business; Rental and Management Business; and Real Estate for Sale Business. It develops, rents, and sells real estate properties; leases land and structures; invests in securities; and manages and operates golf course and sports club, as well as manages and operates hotels; owns property; and engages in the office rental business. The company was formerly known as Natural Park Public Company Limited and changed its name to U City Public Company Limited in April 2015. U City Public Company Limited was founded in 1988 and is headquartered in Bangkok, Thailand.",
+        "summary": "U City Public Company Limited operates as a diversified real estate investment and development company in Thailand and internationally. The company operates through Hotel Business, Rental Business, and Management Business segments. It provides securities investment, property ownership and management, consulting, office and commercial rental, and land and structure leasing services; and operates and manages hotels, golf courses, and sports clubs. The company was formerly known as Natural Park Public Company Limited and changed its name to U City Public Company Limited in April 2015. U City Public Company Limited was incorporated in 1988 and is headquartered in Bangkok, Thailand.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -587,10 +635,22 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
-    "J-R.BK": {
+    "IMPACT.BK": {
+        "short_name": "IMPACT GROWTH REAL ESTATE INVES",
+        "long_name": "Impact Growth Real Estate Investment Trust",
+        "summary": "IMPACT Growth Real Estate Investment Trust is a real estate investment trust externally managed by RMI Company Limited. It invests in real estate markets of Thailand. The firm invests in freehold right of Building Exhibition and Conference of IMPACT Muang Thong Thani. IMPACT Growth Real Estate Investment Trust is domiciled in Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "REIT - Office",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Nonthaburi"
+    },
+    "J.BK": {
         "short_name": "JAS ASSET PUBLIC COMPANY LIMITE",
         "long_name": "JAS Asset Public Company Limited",
-        "summary": "JAS Asset Public Company Limited provides rental and related services in Thailand. The company operates in four segments: Rental and Related Services Business, Food and Beverage Business, Real Estate Business and Others. It also organizes rented space for mobile phones and IT products in shopping centers for retail sellers under the IT Junction name; develops and manages community markets and community malls under the J Market, The Jas, and The Jas Urban names; manages food courts and indoor amusement park under the Urban Food Ville and Totem Kingdom brands; and develops properties and condominium projects under the Newera Condominium name. The company was founded in 2012 and is headquartered in Bangkok, Thailand. JAS Asset Public Company Limited is a subsidiary of Jay Mart Public Company Limited.",
+        "summary": "JAS Asset Public Company Limited provides rental and related services in Thailand. It operates in four segments: Rental and Related Services Business, Food and Beverage Business, Real Estate Business, and Others. The company also manages rented space for mobile phones and IT products in shopping centers for retail sellers under the IT Junction name; food courts under the Urban Food Ville brand; and indoor amusement park under the Totem Kingdom brand name. In addition, it develops and manages community markets and malls under the J Market, The Jas, and The Jas Urban names; and develops condominium projects under the Newera brand name. The company was founded in 2012 and is headquartered in Bangkok, Thailand. JAS Asset Public Company Limited is a subsidiary of Jay Mart Public Company Limited.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -605,7 +665,7 @@
         "summary": "Jakpaisan Estate Public Company Limited operates as a property developer in Thailand. It specializes in housing estate projects, commercial buildings, and condominiums. The company is based in Pathum Thani, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
-        "industry": "Real Estate Services",
+        "industry": "Real Estate - Development",
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
@@ -614,10 +674,10 @@
     "JAK.BK": {
         "short_name": "JAKPAISAN ESTATE PUBLIC COMPANY",
         "long_name": "Jakpaisan Estate Public Company Limited",
-        "summary": "Jakpaisan Estate Public Company Limited operates as a property developer in Thailand. It specializes in housing estate projects, commercial buildings, and condominiums. The company is based in Pathum Thani, Thailand.",
+        "summary": "Jakpaisan Estate Public Company Limited engages in the real estate development business in Thailand. It develops and sells twin houses, single houses, commercial buildings, townhouses, and condominiums. The company also engages in selling of beverages and bakery products; and rental of investment properties. Jakpaisan Estate Public Company Limited founded in 2003 and is headquartered in Pathum Thani, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
-        "industry": "Real Estate Services",
+        "industry": "Real Estate - Development",
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
@@ -650,7 +710,7 @@
     "JSP-R.BK": {
         "short_name": "J.S.P. PROPERTY PUBLIC COMPANY ",
         "long_name": "J.S.P. Property Public Company Limited",
-        "summary": "J.S.P. Property Public Company Limited primarily engages in the property development business in Thailand. It operates through two segments, Real Estate Business and Rental and Service Business. The Real Estate Business segment develops and sells houses, townhouses, commercial buildings, and residence condominium projects, as well as provides property management services to other related companies. The Rental and Service Business segment engages in the rental of community mall and parking lot. The company was founded in 2010 and is based in Bangkok, Thailand.",
+        "summary": "J.S.P. Property Public Company Limited engages in the property development business in Thailand. It operates through two segments, Real Estate Business, and Rental and Service Business. The Real Estate Business segment develops and sells houses, townhouses, commercial buildings, and residence condominium projects, as well as provides property management services to other related companies. The Rental and Service Business segment engages in the rental of community mall and parking lot. The company was founded in 2010 and is based in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -662,7 +722,7 @@
     "JSP.BK": {
         "short_name": "J.S.P. PROPERTY PUBLIC COMPANY ",
         "long_name": "J.S.P. Property Public Company Limited",
-        "summary": "J.S.P. Property Public Company Limited primarily engages in the property development business in Thailand. It operates through two segments, Real Estate Business and Rental and Service Business. The Real Estate Business segment develops and sells houses, townhouses, commercial buildings, and residence condominium projects, as well as provides property management services to other related companies. The Rental and Service Business segment engages in the rental of community mall and parking lot. The company was founded in 2010 and is based in Bangkok, Thailand.",
+        "summary": "J.S.P. Property Public Company Limited engages in the property development business in Thailand. It operates through two segments, Real Estate Business, and Rental and Service Business. The Real Estate Business segment develops and sells houses, townhouses, commercial buildings, and residence condominium projects, as well as provides property management services to other related companies. The Rental and Service Business segment engages in the rental of community mall and parking lot. The company was founded in 2010 and is based in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -674,7 +734,7 @@
     "KUN-R.BK": {
         "short_name": "VILLA KUNALAI PUBLIC COMPANY LI",
         "long_name": "Villa Kunalai Public Company Limited",
-        "summary": "Villa Kunalai Public Company Limited engages in the property development activities in Thailand. The company was founded in 2007 and is headquartered in Bang Bua Thong, Thailand.",
+        "summary": "Villa Kunalai Public Company Limited engages in the property development business in Thailand. It develops semi-detached houses, detached houses, and commercial buildings. The company is headquartered in Bang Bua Thong, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -686,7 +746,7 @@
     "KUN.BK": {
         "short_name": "VILLA KUNALAI PUBLIC COMPANY LI",
         "long_name": "Villa Kunalai Public Company Limited",
-        "summary": "Villa Kunalai Public Company Limited engages in the property development activities in Thailand. The company was founded in 2007 and is headquartered in Bang Bua Thong, Thailand.",
+        "summary": "Villa Kunalai Public Company Limited engages in the property development business in Thailand. The company is headquartered in Bang Bua Thong, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -698,7 +758,7 @@
     "KWC-R.BK": {
         "short_name": "KRUNGDHEP SOPHON PUBLIC COMPANY",
         "long_name": "Krungdhep Sophon Public Company Limited",
-        "summary": "Krungdhep Sophon Public Company Limited, together with its subsidiaries, engages in developing and leasing of real estate properties in Thailand. The company also engages in the warehouse and wharf business that offers space renting and port of loading/unloading goods services to retail customers. In addition, it provides management consulting, document storage and data management, and computer back-up media storage services. The company was formerly known as Krungdhep Warehouse Company Limited and changed its name to Krungdhep Sophon Public Company Limited in December 1995. Krungdhep Sophon Public Company Limited was founded in 1961 and is based in Bangkok, Thailand.",
+        "summary": "Krungdhep Sophon Public Company Limited, together with its subsidiaries, engages in developing and leasing of real estate properties in Thailand. The company also engages in the warehouse and wharf business that offers space renting and port of loading/unloading goods services to retail customers. In addition, it provides management consulting, document storage and data management, document management, and computer back-up media storage services, as well as electronic management services. The company was formerly known as Krungdhep Warehouse Company Limited and changed its name to Krungdhep Sophon Public Company Limited in December 1995. Krungdhep Sophon Public Company Limited was founded in 1961 and is based in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -710,7 +770,7 @@
     "KWC.BK": {
         "short_name": "KRUNGDHEP SOPHON PUBLIC COMPANY",
         "long_name": "Krungdhep Sophon Public Company Limited",
-        "summary": "Krungdhep Sophon Public Company Limited, together with its subsidiaries, engages in developing and leasing of real estate properties in Thailand. The company also engages in the warehouse and wharf business that offers space renting and port of loading/unloading goods services to retail customers. In addition, it provides management consulting, document storage and data management, and computer back-up media storage services. The company was formerly known as Krungdhep Warehouse Company Limited and changed its name to Krungdhep Sophon Public Company Limited in December 1995. Krungdhep Sophon Public Company Limited was founded in 1961 and is based in Bangkok, Thailand.",
+        "summary": "Krungdhep Sophon Public Company Limited, together with its subsidiaries, engages in developing and leasing of real estate properties in Thailand. The company also engages in the warehouse and wharf business that offers space renting and port of loading/unloading goods services to retail customers. In addition, it provides management consulting, document storage and data management, document management, and computer back-up media storage services, as well as electronic management services. The company was formerly known as Krungdhep Warehouse Company Limited and changed its name to Krungdhep Sophon Public Company Limited in December 1995. Krungdhep Sophon Public Company Limited was founded in 1961 and is based in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -746,10 +806,22 @@
     "LH-R.BK": {
         "short_name": "LAND AND HOUSES PUBLIC COMPANY ",
         "long_name": "Land and Houses Public Company Limited",
-        "summary": "Land and Houses Public Company Limited engages in the property development activities in Thailand and the United States. It operates in two segments, Real Estate Business, and Rental and Service Business. The Real Estate Business segment develops and sells single detached houses, townhouses, and residence condominium projects. The Rental and Service Business segment is involved in the rental of shopping malls, hotels, and apartments. The company also offers project administration and management, and investment advisory services. Land and Houses Public Company Limited was founded in 1973 and is headquartered in Bangkok, Thailand.",
+        "summary": "Land and Houses Public Company Limited engages in the property development activities in Thailand and the United States. It operates in two segments, Real Estate Business, and Rental and Service Business. The company's Real Estate Business segment develops and sells single detached houses, townhouses, and residence condominium projects. Its Rental and Service Business segment is involved in the rental of shopping malls, hotels, and apartments. The company also offers project administration and management, and investment advisory services. Land and Houses Public Company Limited was founded in 1973 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
-        "industry": "Real Estate - Diversified",
+        "industry": "Real Estate - Development",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
+    "LH.BK": {
+        "short_name": "LAND AND HOUSES PUBLIC COMPANY ",
+        "long_name": "Land and Houses Public Company Limited",
+        "summary": "Land and Houses Public Company Limited engages in the property development activities in Thailand and the United States. It operates in two segments, Real Estate Business, and Rental and Service Business. The company's Real Estate Business segment develops and sells single detached houses, townhouses, and residence condominium projects. Its Rental and Service Business segment is involved in the rental of shopping malls, hotels, and apartments. The company also offers project administration and management, and investment advisory services. Land and Houses Public Company Limited was founded in 1973 and is headquartered in Bangkok, Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
@@ -758,10 +830,10 @@
     "LHOG.F": {
         "short_name": "LD + HOUSES PCL FGN  BA 1",
         "long_name": "Land and Houses Public Company Limited",
-        "summary": "Land and Houses Public Company Limited engages in the property development activities in Thailand and the United States. It operates in two segments, Real Estate Business, and Rental and Service Business. The Real Estate Business segment develops and sells single detached houses, townhouses, and residence condominium projects. The Rental and Service Business segment is involved in the rental of shopping malls, hotels, and apartments. The company also offers project administration and management, and investment advisory services. Land and Houses Public Company Limited was founded in 1973 and is headquartered in Bangkok, Thailand.",
+        "summary": "Land and Houses Public Company Limited engages in the property development activities in Thailand and the United States. It operates in two segments, Real Estate Business, and Rental and Service Business. The company's Real Estate Business segment develops and sells single detached houses, townhouses, and residence condominium projects. Its Rental and Service Business segment is involved in the rental of shopping malls, hotels, and apartments. The company also offers project administration and management, and investment advisory services. Land and Houses Public Company Limited was founded in 1973 and is headquartered in Bangkok, Thailand.",
         "currency": "EUR",
         "sector": "Real Estate",
-        "industry": "Real Estate - Diversified",
+        "industry": "Real Estate - Development",
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Thailand",
@@ -815,10 +887,22 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
-    "MDX-R.BK": {
+    "MBK.BK": {
+        "short_name": "MBK PUBLIC COMPANY LIMITED",
+        "long_name": "MBK Public Company Limited",
+        "summary": "MBK Public Company Limited, together with its subsidiaries, engages in the shopping center, hotel and tourism, golf, real estate, food, finance, and other businesses in Thailand, the United States, Canada, Europe, and the Asia Pacific. The company provides rental space to retail tenants in the shopping centers; and office rental space. It also offers lodging, food and drink, and other facilities and services related to accommodation and travel; and provision of golf services and clubhouses, as well as sells golf equipment and residential sale, property development and management, building and community management, advisory, and asset appraisal businesses. In addition, the company produces and sells rice for local and export markets; and operates in food center and restaurant, motorcycle hire purchase, and life assurance businesses. Further, it provides car and motorcycle auction services; security, personnel management, construction, and investment services; CRM loyalty programs; land, warehouse, factory building, and car park rental services; and fitness center and inventory trading services. The company was formerly known as MBK Development Public Company Limited and changed its name to MBK Public Company Limited in November 2003. MBK Public Company Limited was founded in 1974 and is based in Bangkok, Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
+    "MDX.BK": {
         "short_name": "M.D.X. PUBLIC COMPANY LIMITED",
         "long_name": "MDX Public Company Limited",
-        "summary": "MDX Public Company Limited invests in and develops real estate and infrastructure projects. The company operates through three segments: Real Estate, Electricity Generation and Distribution, and Others Business. It also generates and distributes electricity from renewable energy; invests in various electrical power production and distribution projects; and provides investment and financial consulting services. In addition, the company offers land management and rental services. MDX Public Company Limited was founded in 1988 and is headquartered in Bangkok, Thailand.",
+        "summary": "MDX Public Company Limited, together with its subsidiaries, invests in and develops real estate and infrastructure projects. The company operates through three segments: Real Estate, Electricity Generation and Distribution, and Others Business. It also generates and distributes electricity from renewable energy; invests in various electrical power production and distribution projects; and provides investment and financial consulting services. In addition, the company offers land management and rental services. MDX Public Company Limited was founded in 1988 and is based in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -827,10 +911,22 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
+    "MIT.BK": {
+        "short_name": "MFC INDUSTRIAL REAL ESTATE INVE",
+        "long_name": "MFC Industrial Real Estate Investment Trust",
+        "summary": "MFC Industrial Real Estate Investment Trust, through its subsidiary, APUK Ltd, invests in and owns land and data center building located in London, the United Kingdom. The company qualifies as a real estate investment trust for federal income tax purposes. It generally would not be subject to federal corporate income taxes if it distributes at least 90% of its taxable income to its stockholders. MFC Industrial Real Estate Investment Trust is based in Bangkok, Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "REIT - Industrial",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
     "MJD-R.BK": {
         "short_name": "MAJOR DEVELOPMENT PUBLIC COMPAN",
         "long_name": "Major Development Public Company Limited",
-        "summary": "Major Development Public Company Limited, together with its subsidiaries, engages in the development and sale of properties in Thailand. The company operates in three segments: Development of Properties for Sales, Hotel Business, and Rental Business. The company is also involved in the hotel, as well as properties rental and service businesses; and operates as an agent, representative, and advisor of real estate properties. In addition, it develops high end condominium projects, as well as engages in the provision of condominium juristic person management. Major Development Public Company Limited was founded in 1999 and is headquartered in Bangkok, Thailand.",
+        "summary": "Major Development Public Company Limited, together with its subsidiaries, engages in the development and sale of properties in Thailand. The company operates through three segments: Property Development, Hotel Business, and Rental and Service Business. It is also involved in hotel; office building space rental and service; real estate agency, representative, and advisory; condominium juristic person management; and high-end condominium development businesses. The company was founded in 1999 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -842,7 +938,7 @@
     "MJD.BK": {
         "short_name": "MAJOR DEVELOPMENT PUBLIC COMPAN",
         "long_name": "Major Development Public Company Limited",
-        "summary": "Major Development Public Company Limited, together with its subsidiaries, engages in the development and sale of properties in Thailand. The company operates in three segments: Development of Properties for Sales, Hotel Business, and Rental Business. The company is also involved in the hotel, as well as properties rental and service businesses; and operates as an agent, representative, and advisor of real estate properties. In addition, it develops high end condominium projects, as well as engages in the provision of condominium juristic person management. Major Development Public Company Limited was founded in 1999 and is headquartered in Bangkok, Thailand.",
+        "summary": "Major Development Public Company Limited, together with its subsidiaries, engages in the development and sale of properties in Thailand. The company operates through three segments: Property Development, Hotel Business, and Rental and Service Business. It is also involved in hotel; office building space rental and service; real estate agency, representative, and advisory; condominium juristic person management; and high-end condominium development businesses. The company was founded in 1999 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -863,10 +959,22 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
+    "MK.BK": {
+        "short_name": "M.K. REAL ESTATE DEVELOPMENT",
+        "long_name": "M.K. Real Estate Development Public Company Limited",
+        "summary": "M.K. Real Estate Development Public Company Limited engages in the property development business in Thailand. The company operates through five segments: Real Estate; Rental Warehouse, Factory and Others; Golf Services; Property Management; and Health and Wellness Center. It develops and sells land, houses, and condominiums; and provides property management services. The company is also involved in building and parking rental activities, as well as in the golf course business. In addition, it operates health and wellness centers. The company was founded in 1956 and is headquartered in Bangkok, Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
     "NCH-R.BK": {
         "short_name": "N. C. HOUSING PUBLIC COMPANY LI",
         "long_name": "N.C. Housing Public Company Limited",
-        "summary": "N.C. Housing Public Company Limited operates as a property development company in Thailand. It develops and sells land, single detached houses, duplexes, townhouses, condominiums, and others; provides contractor, construction, and project and property management services; rents space in club houses, etc.; and operates health rehabilitation and senior care centers, etc. The company was founded in 1963 and is based in Pathum Thani, Thailand. N.C. Housing Public Company Limited is a subsidiary of NCH 2555 Holding Company Limited.",
+        "summary": "N.C. Housing Public Company Limited operates as a property development company in Thailand. It develops and sells housing estates and land, single detached houses, duplexes, townhouses, condominiums, and others; provides contractor, construction, and project and property management services; rents space in club houses, etc.; and operates health rehabilitation and senior care centers, etc. The company was founded in 1963 and is headquartered in Pathum Thani, Thailand. N.C. Housing Public Company Limited is a subsidiary of NCH 2555 Holding Company Limited.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Diversified",
@@ -878,7 +986,7 @@
     "NCH.BK": {
         "short_name": "N. C. HOUSING PUBLIC COMPANY LI",
         "long_name": "N.C. Housing Public Company Limited",
-        "summary": "N.C. Housing Public Company Limited operates as a property development company in Thailand. It develops and sells land, single detached houses, duplexes, townhouses, condominiums, and others; provides contractor, construction, and project and property management services; rents space in club houses, etc.; and operates health rehabilitation and senior care centers, etc. The company was founded in 1963 and is based in Pathum Thani, Thailand. N.C. Housing Public Company Limited is a subsidiary of NCH 2555 Holding Company Limited.",
+        "summary": "N.C. Housing Public Company Limited operates as a property development company in Thailand. It develops and sells housing estates and land, single detached houses, duplexes, townhouses, condominiums, and others; provides contractor, construction, and project and property management services; rents space in club houses, etc.; and operates health rehabilitation and senior care centers, etc. The company was founded in 1963 and is headquartered in Pathum Thani, Thailand. N.C. Housing Public Company Limited is a subsidiary of NCH 2555 Holding Company Limited.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Diversified",
@@ -887,10 +995,46 @@
         "country": "Thailand",
         "city": "Pathum Thani"
     },
+    "NNCL-R.BK": {
+        "short_name": "NAVANAKORN PUBLIC COMPANY LIMIT",
+        "long_name": "Nava Nakorn Public Company Limited",
+        "summary": "Nava Nakorn Public Company Limited operates as a real estate development company in Thailand. It operates in two segments, Real Estate Business and Utilities Services Business. The company It develops industrial promotion zone projects for trading and leasing. It also provides utilities and other facilities services in the industrial promotion zone. The company was founded in 1971 and is headquartered in Khlong Luang, Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Khlong Luang"
+    },
+    "NNCL.BK": {
+        "short_name": "NAVANAKORN PUBLIC COMPANY LIMIT",
+        "long_name": "Nava Nakorn Public Company Limited",
+        "summary": "Nava Nakorn Public Company Limited operates as a real estate development company in Thailand. It operates in two segments, Real Estate Business and Utilities Services Business. The company It develops industrial promotion zone projects for trading and leasing. It also provides utilities and other facilities services in the industrial promotion zone. The company was founded in 1971 and is headquartered in Khlong Luang, Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Khlong Luang"
+    },
+    "NOBLE.BK": {
+        "short_name": "NOBLE DEVELOPMENT PUBLIC COMPAN",
+        "long_name": "Noble Development Public Company Limited",
+        "summary": "Noble Development Public Company Limited, together with its subsidiaries, develops and sells real estate properties in Thailand. The company offers construction, rental and service, and construction consulting services. Its properties comprise land plots, single detached houses, townhouses, and condominium units. In addition, the company provides project management and after housing delivery services. The company was founded in 1991 and is headquartered in Bangkok, Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
     "NUSA-R.BK": {
         "short_name": "NUSASIRI PUBLIC COMPANY LIMITED",
         "long_name": "Nusasiri Public Company Limited",
-        "summary": "Nusasiri Public Company Limited develops properties in Thailand. The company operates through three segments: Property Development, Rental and Service, and Cultural Theme-Park. It develops and sells land, houses, and condominiums units, as well as rents property. The company is also involved in cultural theme park, art cultural center, golf course, and hotel operations. In addition, it invests in hospital business; leases spaces; and rents vehicles. The company was formerly known as Angpao Assets Public Company Limited and changed its name to Nusasiri Public Company Limited in May 2012. Nusasiri Public Company Limited was founded in 1960 and is based in Bangkok, Thailand.",
+        "summary": "Nusasiri Public Company Limited develops properties in Thailand. It operates through three segments: Property Development, Rental and Service, and Cultural Theme-Park. The company develops and sells land, houses, and residential condominiums. It is also involved in cultural theme park, art cultural center, golf course, and hotel operations. In addition, the company invests in hospital business; leases spaces; rents vehicles; operates travel agency; and provides financial services. Further, it is involved in the medical and technological business; and develops tourism platform. The company was formerly known as Angpao Assets Public Company Limited and changed its name to Nusasiri Public Company Limited in May 2012. Nusasiri Public Company Limited was founded in 1960 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -902,7 +1046,7 @@
     "NUSA.BK": {
         "short_name": "NUSASIRI PUBLIC COMPANY LIMITED",
         "long_name": "Nusasiri Public Company Limited",
-        "summary": "Nusasiri Public Company Limited develops properties in Thailand. The company operates through three segments: Property Development, Rental and Service, and Cultural Theme-Park. It develops and sells land, houses, and condominiums units, as well as rents property. The company is also involved in cultural theme park, art cultural center, golf course, and hotel operations. In addition, it invests in hospital business; leases spaces; and rents vehicles. The company was formerly known as Angpao Assets Public Company Limited and changed its name to Nusasiri Public Company Limited in May 2012. Nusasiri Public Company Limited was founded in 1960 and is based in Bangkok, Thailand.",
+        "summary": "Nusasiri Public Company Limited develops properties in Thailand. It operates through three segments: Property Development, Rental and Service, and Cultural Theme-Park. The company develops and sells land, houses, and residential condominiums. It is also involved in cultural theme park, art cultural center, golf course, and hotel operations. In addition, the company invests in hospital business; leases spaces; rents vehicles; operates travel agency; and provides financial services. Further, it is involved in the medical and technological business; and develops tourism platform. The company was formerly known as Angpao Assets Public Company Limited and changed its name to Nusasiri Public Company Limited in May 2012. Nusasiri Public Company Limited was founded in 1960 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -914,10 +1058,10 @@
     "NVAH.F": {
         "short_name": "LAND + HOUSE -NVDR-  BA 1",
         "long_name": "Land and Houses Public Company Limited",
-        "summary": "Land and Houses Public Company Limited engages in the property development activities in Thailand and the United States. It operates in two segments, Real Estate Business, and Rental and Service Business. The Real Estate Business segment develops and sells single detached houses, townhouses, and residence condominium projects. The Rental and Service Business segment is involved in the rental of shopping malls, hotels, and apartments. The company also offers project administration and management, and investment advisory services. Land and Houses Public Company Limited was founded in 1973 and is headquartered in Bangkok, Thailand.",
+        "summary": "Land and Houses Public Company Limited engages in the property development activities in Thailand and the United States. It operates in two segments, Real Estate Business, and Rental and Service Business. The company's Real Estate Business segment develops and sells single detached houses, townhouses, and residence condominium projects. Its Rental and Service Business segment is involved in the rental of shopping malls, hotels, and apartments. The company also offers project administration and management, and investment advisory services. Land and Houses Public Company Limited was founded in 1973 and is headquartered in Bangkok, Thailand.",
         "currency": "EUR",
         "sector": "Real Estate",
-        "industry": "Real Estate - Diversified",
+        "industry": "Real Estate - Development",
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Thailand",
@@ -926,7 +1070,7 @@
     "NVD-R.BK": {
         "short_name": "NIRVANA DAII PUBLIC COMPANY LIM",
         "long_name": "Nirvana Daii Public Company Limited",
-        "summary": "Nirvana Daii Public Company Limited, together with its subsidiaries, develops and sells real estate properties. It also provides construction services; and distributes precast concrete products. The company was formerly known as Daii Group Public Company Limited and changed its name to Nirvana Daii Public Company Limited in May 2017. The company is headquartered in Bangkok, Thailand. Nirvana Daii Public Company Limited is a former subsidiary of Singha Estate Public Company Limited.",
+        "summary": "Nirvana Daii Public Company Limited, together with its subsidiaries, develops and sells real estate properties. It also provides construction services; and distributes precast concrete products. The company was formerly known as Daii Group Public Company Limited and changed its name to Nirvana Daii Public Company Limited in May 2017. The company is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -938,7 +1082,7 @@
     "NVD.BK": {
         "short_name": "NIRVANA DAII PUBLIC COMPANY LIM",
         "long_name": "Nirvana Daii Public Company Limited",
-        "summary": "Nirvana Daii Public Company Limited, together with its subsidiaries, develops and sells real estate properties. It also provides construction services; and distributes precast concrete products. The company was formerly known as Daii Group Public Company Limited and changed its name to Nirvana Daii Public Company Limited in May 2017. The company is headquartered in Bangkok, Thailand. Nirvana Daii Public Company Limited is a former subsidiary of Singha Estate Public Company Limited.",
+        "summary": "Nirvana Daii Public Company Limited, together with its subsidiaries, develops and sells real estate properties. It also provides construction services; and distributes precast concrete products. The company was formerly known as Daii Group Public Company Limited and changed its name to Nirvana Daii Public Company Limited in May 2017. The company is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -947,10 +1091,46 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
+    "NYVA.MU": {
+        "short_name": "AP(THAILAND)PLC-NVDR-BA 1",
+        "long_name": "AP (Thailand) Public Company Limited",
+        "summary": "AP (Thailand) Public Company Limited, together with its subsidiaries, engages in the real estate development activities in Thailand. It operates in three segments: Low\u00c2\u0096Rise, High\u00c2\u0096Rise, and Other. The company develops single detached houses, townhouses, and condominiums; and provides after sales, property management and brokerage, and construction services. It also provides education and training services. The company was formerly known as Asian Property Development Public Company Limited and changed its name to AP (Thailand) Public Company Limited in May 2013. AP (Thailand) Public Company Limited was founded in 1991 and is headquartered in Bangkok, Thailand.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "MUN",
+        "market": "dr_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
+    "NYVB.MU": {
+        "short_name": "BANGKOK LAND -NVDR- BA 1",
+        "long_name": "Bangkok Land Public Company Limited",
+        "summary": "Bangkok Land Public Company Limited, together with its subsidiaries, engages in the real estate development, exhibition and convention, food and beverage, and hotel investment businesses in Thailand. It also provides financing services; project and infrastructure management services; building management and maintenance services; and real estate investment trust management services, as well as rents properties. In addition, the company is involved in the retail business, as well as in the issuance of bonds. Bangkok Land Public Company Limited is based in Nonthaburi, Thailand.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Diversified",
+        "exchange": "MUN",
+        "market": "dr_market",
+        "country": "Thailand",
+        "city": "Nonthaburi"
+    },
+    "NYVG.MU": {
+        "short_name": "PROPERTY PERF.-NVDR- BA 6",
+        "long_name": "Property Perfect Public Company Limited",
+        "summary": "Property Perfect Public Company Limited, together with its subsidiaries, engages in the real estate development business in Thailand. The company develops shopping malls, office buildings, commercial areas, detached houses, townhouses, and condominiums; rents office buildings, assets, and shopping plazas; and offers construction services, as well as invests in other companies and projects, as well as provides rental property management and data analytics services. It is also involved in the hotel and construction business; producing and assembling prefabricated building systems; and management of clubhouse. The company was founded in 1985 and is headquartered in Bangkok, Thailand.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "MUN",
+        "market": "dr_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
     "NYVL.F": {
         "short_name": "SUPALAI PCL-NVDR-  BA 1",
         "long_name": "Supalai Public Company Limited",
-        "summary": "Supalai Public Company Limited, together with its subsidiaries, engages in the development of real estate projects for living and commercial purposes in Thailand, the Philippines, and Australia. It operates through Real Estate Business and Hotel Business and Management segments. The company owns and operates housing projects, including single detached houses, duplex houses, townhouses, and condominiums. It also develops and manages hotels and resorts; rents office buildings; and provides real estate project management. The company offers its services under the Supalai brand. Supalai Public Company Limited was founded in 1989 and is headquartered in Bangkok, Thailand.",
+        "summary": "Supalai Public Company Limited, together with its subsidiaries, engages in the development of real estate projects for living and commercial purposes in Thailand, the Philippines, and Australia. It operates through Real Estate Business; and Hotel Business and Management segments. The company owns and operates housing projects, including single detached houses, duplex houses, townhouses, and condominiums. It also develops and manages hotels and resorts; rents office buildings; and provides real estate project management. The company offers its services under the Supalai brand. Supalai Public Company Limited was founded in 1989 and is headquartered in Bangkok, Thailand.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -959,10 +1139,10 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
-    "ORI-R.BK": {
+    "ORI.BK": {
         "short_name": "ORIGIN PROPERTY PUBLIC COMPANY ",
         "long_name": "Origin Property Public Company Limited",
-        "summary": "Origin Property Public Company Limited develops properties in Thailand. The company develops residential condominium units; and sells land and house. It also provides rental agency, interior decoration, property management, and real estate related services; and invests in other companies. In addition, it engages in food and hotel business. The company was founded in 2009 and is based in Mueang Samut Prakan, Thailand.",
+        "summary": "Origin Property Public Company Limited, together with its subsidiaries, develops properties in Thailand. It develops residential condominium units; and sells land and house. The company also provides interior decoration, property management, and real estate sales agency and related services; and invests in other companies. In addition, it engages in the food and beverage business. The company was founded in 2009 and is based in Mueang Samut Prakan, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -974,7 +1154,7 @@
     "PF-R.BK": {
         "short_name": "PROPERTY PERFECT PUBLIC COMPANY",
         "long_name": "Property Perfect Public Company Limited",
-        "summary": "Property Perfect Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates through three segments: Property Development, Hotel, and Others. The company develops shopping malls and commercial areas; rents office buildings, assets, and shopping plazas; and offers apartment and construction services, as well as invests in other companies and projects. It is also involved in the hotel business, producing and assembling prefabricated building systems, and clubhouse management. Property Perfect Public Company Limited was founded in 1985 and is headquartered in Bangkok, Thailand.",
+        "summary": "Property Perfect Public Company Limited, together with its subsidiaries, engages in the real estate development business in Thailand. The company develops shopping malls, office buildings, commercial areas, detached houses, townhouses, and condominiums; rents office buildings, assets, and shopping plazas; and offers construction services, as well as invests in other companies and projects, as well as provides rental property management and data analytics services. It is also involved in the hotel and construction business; producing and assembling prefabricated building systems; and management of clubhouse. The company was founded in 1985 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -986,7 +1166,7 @@
     "PF.BK": {
         "short_name": "PROPERTY PERFECT PUBLIC COMPANY",
         "long_name": "Property Perfect Public Company Limited",
-        "summary": "Property Perfect Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates through three segments: Property Development, Hotel, and Others. The company develops shopping malls and commercial areas; rents office buildings, assets, and shopping plazas; and offers apartment and construction services, as well as invests in other companies and projects. It is also involved in the hotel business, producing and assembling prefabricated building systems, and clubhouse management. Property Perfect Public Company Limited was founded in 1985 and is headquartered in Bangkok, Thailand.",
+        "summary": "Property Perfect Public Company Limited, together with its subsidiaries, engages in the real estate development business in Thailand. The company develops shopping malls, office buildings, commercial areas, detached houses, townhouses, and condominiums; rents office buildings, assets, and shopping plazas; and offers construction services, as well as invests in other companies and projects, as well as provides rental property management and data analytics services. It is also involved in the hotel and construction business; producing and assembling prefabricated building systems; and management of clubhouse. The company was founded in 1985 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -995,10 +1175,10 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
-    "PLAT-R.BK": {
+    "PLAT.BK": {
         "short_name": "THE PLATINUM GROUP PUBLIC COMPA",
         "long_name": "The Platinum Group Public Company Limited",
-        "summary": "The Platinum Group Public Company Limited engages in the real estate development and investment business in Thailand. The company develops and rents retail space in shopping centers, as well as offers related services; and operates hotel, and food and beverages centers. The Platinum Group Public Company Limited was incorporated in 2013 and is based in Bangkok, Thailand.",
+        "summary": "The Platinum Group Public Company Limited engages in the real estate development and investment business in Thailand. It develops and rents retail space in shopping centers; and operates a hotel, and food and beverages centers. The company was incorporated in 2013 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -1034,7 +1214,7 @@
     "PRIN-R.BK": {
         "short_name": "PRINSIRI PUBLIC COMPANY LIMITED",
         "long_name": "Prinsiri Public Company Limited",
-        "summary": "Prinsiri Public Company Limited, together with its subsidiaries, develops, leases, and sells real estate properties. The company is also involved in the construction distribution and acts as a contractor; and provision of real estate services. In addition, it generates and distributes electricity current from solar cell and alternative energy; and provides entertainment park and education center services, as well as food service in restaurant and food shop. The company was incorporated in 2000 and is based in Bangkok, Thailand.",
+        "summary": "Prinsiri Public Company Limited, together with its subsidiaries, develops, leases, and sells real estate properties. The company develops housing estates and condominiums; and provides real estate services. It also provides entertainment park and education center services, as well as food service in restaurant and food shop. In addition, the company engages in the generation and distribution of electricity from solar cells and alternative energy. Prinsiri Public Company Limited was incorporated in 2000 and is based in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -1046,7 +1226,7 @@
     "PRIN.BK": {
         "short_name": "PRINSIRI PUBLIC COMPANY LIMITED",
         "long_name": "Prinsiri Public Company Limited",
-        "summary": "Prinsiri Public Company Limited, together with its subsidiaries, develops, leases, and sells real estate properties. The company is also involved in the construction distribution and acts as a contractor; and provision of real estate services. In addition, it generates and distributes electricity current from solar cell and alternative energy; and provides entertainment park and education center services, as well as food service in restaurant and food shop. The company was incorporated in 2000 and is based in Bangkok, Thailand.",
+        "summary": "Prinsiri Public Company Limited, together with its subsidiaries, develops, leases, and sells real estate properties. The company develops housing estates and condominiums; and provides real estate services. It also provides entertainment park and education center services, as well as food service in restaurant and food shop. In addition, the company engages in the generation and distribution of electricity from solar cells and alternative energy. Prinsiri Public Company Limited was incorporated in 2000 and is based in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -1082,7 +1262,7 @@
     "PSH-R.BK": {
         "short_name": "PRUKSA HOLDING PUBLIC COMPANY L",
         "long_name": "Pruksa Holding Public Company Limited",
-        "summary": "Pruksa Holding Public Company Limited, through its subsidiaries, engages in the development and sale of residential real estate properties in Thailand. The company develops townhouses, single houses, and condominiums. It also provides management, home decoration, and construction services; and operates hospitals and clinics, as well as place of examination and treatment. The company was founded in 1993 and is headquartered in Bangkok, Thailand.",
+        "summary": "Pruksa Holding Public Company Limited, through its subsidiaries, develops and sells residential real estate properties in Thailand. The company develops townhouses, single-detached houses, and condominiums. It also provides management, home decoration, and construction services; and operates hospitals and clinics, as well as place of examination and treatment. The company was founded in 1993 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -1094,7 +1274,7 @@
     "PSH.BK": {
         "short_name": "PRUKSA HOLDING PUBLIC COMPANY L",
         "long_name": "Pruksa Holding Public Company Limited",
-        "summary": "Pruksa Holding Public Company Limited, through its subsidiaries, engages in the development and sale of residential real estate properties in Thailand. The company develops townhouses, single houses, and condominiums. It also provides management, home decoration, and construction services; and operates hospitals and clinics, as well as place of examination and treatment. The company was founded in 1993 and is headquartered in Bangkok, Thailand.",
+        "summary": "Pruksa Holding Public Company Limited, through its subsidiaries, develops and sells residential real estate properties in Thailand. The company develops townhouses, single-detached houses, and condominiums. It also provides management, home decoration, and construction services; and operates hospitals and clinics, as well as place of examination and treatment. The company was founded in 1993 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -1106,7 +1286,7 @@
     "QH-R.BK": {
         "short_name": "QUALITY HOUSES PUBLIC COMPANY L",
         "long_name": "Quality Houses Public Company Limited",
-        "summary": "Quality Houses Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates in four segments: Real Estate Business, Hotel Business, Rental Business, and Others. The company develops and sells land and houses, and condominium units; rents office buildings; and services residential buildings. It also engages in hotel operations; management of serviced apartments; lease of land; and management of public utilities of real estate business and land owners, as well as the manufacture and distribution of precast concrete. The company was incorporated in 1983 and is headquartered in Bangkok, Thailand.",
+        "summary": "Quality Houses Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates in four segments: Real Estate Business, Hotel Business, Rental Business, and Others. The company develops and sells land and houses, and condominium units; rents residential, hotels, and office buildings; and services residential buildings. It also engages in hotel operations; lease of land; and management for rental properties, including hotels, serviced apartments, rental office buildings, and rental residential projects, as well as the manufacture and sale of ready-made concrete sheets and precast concrete. The company was incorporated in 1983 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Diversified",
@@ -1118,7 +1298,7 @@
     "QH.BK": {
         "short_name": "QUALITY HOUSES PUBLIC COMPANY L",
         "long_name": "Quality Houses Public Company Limited",
-        "summary": "Quality Houses Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates in four segments: Real Estate Business, Hotel Business, Rental Business, and Others. The company develops and sells land and houses, and condominium units; rents office buildings; and services residential buildings. It also engages in hotel operations; management of serviced apartments; lease of land; and management of public utilities of real estate business and land owners, as well as the manufacture and distribution of precast concrete. The company was incorporated in 1983 and is headquartered in Bangkok, Thailand.",
+        "summary": "Quality Houses Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates in four segments: Real Estate Business, Hotel Business, Rental Business, and Others. The company develops and sells land and houses, and condominium units; rents residential, hotels, and office buildings; and services residential buildings. It also engages in hotel operations; lease of land; and management for rental properties, including hotels, serviced apartments, rental office buildings, and rental residential projects, as well as the manufacture and sale of ready-made concrete sheets and precast concrete. The company was incorporated in 1983 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Diversified",
@@ -1154,7 +1334,7 @@
     "RML-R.BK": {
         "short_name": "RAIMON LAND PUBLIC COMPANY LIMI",
         "long_name": "Raimon Land Public Company Limited",
-        "summary": "Raimon Land Public Company Limited, together with its subsidiaries, engages in property investment and development activities in Thailand. It develops and sells condominiums, and other housing and resort properties. The company also engages in the rental of office buildings, residential condominiums, and community malls; and property agency, hospitality, and food and beverage businesses. In addition, it offers real estate and online services. Raimon Land Public Company Limited is based in Bangkok, Thailand.",
+        "summary": "Raimon Land Public Company Limited, together with its subsidiaries, engages in the property development activities in Thailand. It develops and sells land, houses, and residential condominiums. The company also engages in the rental of office buildings, residential condominiums, and community malls; and hospitality, and food and beverage businesses. In addition, it offers property rental, lease, and resale agency services. Raimon Land Public Company Limited was founded in 1987 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -1166,7 +1346,7 @@
     "RML.BK": {
         "short_name": "RAIMON LAND PUBLIC COMPANY LIMI",
         "long_name": "Raimon Land Public Company Limited",
-        "summary": "Raimon Land Public Company Limited, together with its subsidiaries, engages in property investment and development activities in Thailand. It develops and sells condominiums, and other housing and resort properties. The company also engages in the rental of office buildings, residential condominiums, and community malls; and property agency, hospitality, and food and beverage businesses. In addition, it offers real estate and online services. Raimon Land Public Company Limited is based in Bangkok, Thailand.",
+        "summary": "Raimon Land Public Company Limited, together with its subsidiaries, engages in the property development activities in Thailand. It develops and sells land, houses, and residential condominiums. The company also engages in the rental of office buildings, residential condominiums, and community malls; and hospitality, and food and beverage businesses. In addition, it offers property rental, lease, and resale agency services. Raimon Land Public Company Limited was founded in 1987 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -1202,10 +1382,10 @@
     "SA-R.BK": {
         "short_name": "SIAMESE ASSET PUBLIC COMPANY LI",
         "long_name": "Siamese Asset Public Company Limited",
-        "summary": "Siamese Asset Public Company Limited operates as a property development company in Thailand. The company develops condominium, single house, town home, and home office projects. Siamese Asset Public Company Limited was founded in 2010 and is based in Bangkok, Thailand.",
+        "summary": "Siamese Asset Public Company Limited engages in the property development business in Thailand. It operates in two segments, Real Estate Development and Service. The company develops condominium, single house, townhome, housing estate, and home office projects; and commercial space and hotel or serviced residence. It also manages real estate development projects; and operates training centers, hotels, and restaurants, as well as rents real estate properties; and a kitchen facility. The company was founded in 2010 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
-        "industry": "Real Estate Services",
+        "industry": "Real Estate - Development",
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
@@ -1214,7 +1394,7 @@
     "SA.BK": {
         "short_name": "SIAMESE ASSET PUBLIC COMPANY LI",
         "long_name": "Siamese Asset Public Company Limited",
-        "summary": "Siamese Asset Public Company Limited operates as a property development company in Thailand. The company develops condominium, single house, town home, and home office projects. Siamese Asset Public Company Limited was founded in 2010 and is based in Bangkok, Thailand.",
+        "summary": "Siamese Asset Public Company Limited engages in the property development business in Thailand. It operates in two segments, Real Estate Development and Service. The company develops condominium, single house, townhome, housing estate, and home office projects; and commercial space and hotel or serviced residence. It also manages real estate development projects; and operates training centers, hotels, and restaurants, as well as rents real estate properties; and a kitchen facility. The company was founded in 2010 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -1226,7 +1406,7 @@
     "SAMCO-R.BK": {
         "short_name": "SAMMAKORN PUBLIC COMPANY LIMITE",
         "long_name": "Sammakorn Public Company Limited",
-        "summary": "Sammakorn Public Company Limited, together with its subsidiaries, engages in the real estate development activities in Thailand. The company develops single houses, town homes, condominiums, and office parks. It also develops land into community malls; and offers real estate management and other related services. The company was founded in 1970 and is headquartered in Bangkok, Thailand.",
+        "summary": "Sammakorn Public Company Limited, together with its subsidiaries, engages in the real estate development activities in Thailand. The company operates through Real Estate Development, Rental, and Service segments. It also develops land into community malls; and offers real estate management and other related services. The company was founded in 1970 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -1238,7 +1418,7 @@
     "SAMCO.BK": {
         "short_name": "SAMMAKORN PUBLIC COMPANY LIMITE",
         "long_name": "Sammakorn Public Company Limited",
-        "summary": "Sammakorn Public Company Limited, together with its subsidiaries, engages in the real estate development activities in Thailand. The company develops single houses, town homes, condominiums, and office parks. It also develops land into community malls; and offers real estate management and other related services. The company was founded in 1970 and is headquartered in Bangkok, Thailand.",
+        "summary": "Sammakorn Public Company Limited, together with its subsidiaries, engages in the real estate development activities in Thailand. The company operates through Real Estate Development, Rental, and Service segments. It also develops land into community malls; and offers real estate management and other related services. The company was founded in 1970 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -1247,10 +1427,10 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
-    "SC-R.BK": {
+    "SC.BK": {
         "short_name": "SC ASSET CORPORATION PUBLIC COM",
         "long_name": "SC Asset Corporation Public Company Limited",
-        "summary": "SC Asset Corporation Public Company Limited, together with its subsidiaries, operates as a real estate development company in Thailand. The company operates through Real Estates sales; Rental and Rendering of Services; and Consulting and Management Service segments. It develops and sells single detached houses, townhomes, and condominiums, as well as home offices; and rents office and technical buildings. It also provides consulting and management services. The company was founded in 1989 and is headquartered in Bangkok, Thailand.",
+        "summary": "SC Asset Corporation Public Company Limited, together with its subsidiaries, operates as a real estate development company in Thailand. It operates through Real Estates sales; Rental and Rendering of Services; and Consulting and Management Service segments. The company develops and sells single detached houses, townhomes, and condominiums, as well as home offices; and rents office and technical buildings. It also provides consulting and management services. The company was incorporated in 1989 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Diversified",
@@ -1262,7 +1442,7 @@
     "SENA-R.BK": {
         "short_name": "SENADEVELOPMENT PUBLIC COMPANY ",
         "long_name": "Sena Development Public Company Limited",
-        "summary": "Sena Development Public Company Limited, together with its subsidiaries, engages in the development and sale of properties in Thailand. The company operates through Property Development for Sales, Golf Course Services, and Services Apartment segments. It primarily develops single-detached houses, townhouses, commercial buildings, and condominiums; and rents apartment, small shopping center, and office building. The company is also involved in golf course; and juristic person management businesses. In addition, it manufactures and distributes electricity from solar energy; distributes prefab steel and construction materials, as well as solar panels and inverters, including solar system installment; provides tool rental machinery and equipment for electricity, and engineering services and construction work on solar energy; acts as a real estate agents and brokers; manages real estate; and trades in non-residential real estate property. The company was formerly known as Krungthep Keha Group Co., Ltd. Sena Development Public Company Limited was founded in 1993 and is headquartered in Bangkok, Thailand.",
+        "summary": "Sena Development Public Company Limited, together with its subsidiaries, engages in the development and sale of properties in Thailand. It primarily develops single-detached houses, townhouses, commercial buildings, and condominiums; and rents apartments, small shopping centers, and office buildings. The company is also involved in the golf course and juristic person management businesses. In addition, it manufactures and distributes electricity from solar energy; and acts as a real estate agent and broker. The company was formerly known as Krungthep Keha Group Co., Ltd. Sena Development Public Company Limited was founded in 1977 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -1274,7 +1454,7 @@
     "SENA.BK": {
         "short_name": "SENADEVELOPMENT PUBLIC COMPANY ",
         "long_name": "Sena Development Public Company Limited",
-        "summary": "Sena Development Public Company Limited, together with its subsidiaries, engages in the development and sale of properties in Thailand. The company operates through Property Development for Sales, Golf Course Services, and Services Apartment segments. It primarily develops single-detached houses, townhouses, commercial buildings, and condominiums; and rents apartment, small shopping center, and office building. The company is also involved in golf course; and juristic person management businesses. In addition, it manufactures and distributes electricity from solar energy; distributes prefab steel and construction materials, as well as solar panels and inverters, including solar system installment; provides tool rental machinery and equipment for electricity, and engineering services and construction work on solar energy; acts as a real estate agents and brokers; manages real estate; and trades in non-residential real estate property. The company was formerly known as Krungthep Keha Group Co., Ltd. Sena Development Public Company Limited was founded in 1993 and is headquartered in Bangkok, Thailand.",
+        "summary": "Sena Development Public Company Limited, together with its subsidiaries, engages in the development and sale of properties in Thailand. It primarily develops single-detached houses, townhouses, commercial buildings, and condominiums; and rents apartments, small shopping centers, and office buildings. The company is also involved in the golf course and juristic person management businesses. In addition, it manufactures and distributes electricity from solar energy; and acts as a real estate agent and broker. The company was formerly known as Krungthep Keha Group Co., Ltd. Sena Development Public Company Limited was founded in 1977 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -1283,22 +1463,10 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
-    "SF-R.BK": {
-        "short_name": "SIAM FUTURE DEVELOPMENT PUBLIC ",
-        "long_name": "Siam Future Development Public Company Limited",
-        "summary": "Siam Future Development Public Company Limited, together with its subsidiaries, engages in the rental of building space and provision of utility services in Thailand. The company is involved in the development and management of shopping centers; and installation of electricity and water meters. As of December 31, 2019, it operated 20 centers with gross leasable area of approximately 441,158 square meters. The company also provides utility services that comprise electricity, gas, water supply, and telephone services; and location procurement services. The company was founded in 1994 and is based in Bangkok, Thailand.",
-        "currency": "THB",
-        "sector": "Real Estate",
-        "industry": "Real Estate Services",
-        "exchange": "SET",
-        "market": "th_market",
-        "country": "Thailand",
-        "city": "Bangkok"
-    },
     "SF.BK": {
         "short_name": "SIAM FUTURE DEVELOPMENT PUBLIC ",
         "long_name": "Siam Future Development Public Company Limited",
-        "summary": "Siam Future Development Public Company Limited, together with its subsidiaries, engages in the rental of building space and provision of utility services in Thailand. The company is involved in the development and management of shopping centers; and installation of electricity and water meters. As of December 31, 2019, it operated 20 centers with gross leasable area of approximately 441,158 square meters. The company also provides utility services that comprise electricity, gas, water supply, and telephone services; and location procurement services. The company was founded in 1994 and is based in Bangkok, Thailand.",
+        "summary": "Siam Future Development Public Company Limited, together with its subsidiaries, engages in the rental of building space and provision of utility services in Thailand. It is involved in the development and management of shopping centers; and installation of electricity and water meters. As of December 31, 2020, the company operated 18 centers with gross leasable area of approximately 430,628 square meters. It also provides utility services that comprise electricity, gas, water supply, and telephone services; and location procurement services. The company was incorporated in 1994 and is based in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -1322,7 +1490,7 @@
     "SIRI-R.BK": {
         "short_name": "SANSIRI PUBLIC COMPANY LIMITED",
         "long_name": "Sansiri Public Company Limited",
-        "summary": "Sansiri Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates through Property Development; Building Management, Project Management and Real Estate Brokerage; Hotel Management; and Other segments. The Property Development segment develops land and housing projects, as well as residential condominium projects; and rents serviced apartments and office buildings. The Building Management, Project Management and Real Estate Brokerage segment provides building management, property project management, and real estate brokerage services. The Hotel Management segment manages hotels. The Other segment is involved in the hotel and education businesses. The company also offers events management, restaurant club management, and administrative services, as well as distributes standard branded products. Sansiri Public Company Limited was founded in 1984 and is headquartered in Bangkok, Thailand.",
+        "summary": "Sansiri Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates through Property Development; Building Management, Project Management and Real Estate Brokerage; Hotel Management; and Other segments. The Property Development segment develops land and housing projects, as well as residential condominium projects; and rents serviced apartments and office buildings. The Building Management, Project Management and Real Estate Brokerage segment provides building management, property project management, and real estate brokerage services. The Hotel Management segment manages hotels. The Other segment is involved in the hotel and education businesses. The company also offers events management, restaurant club management, and administrative services; and engages in E-commerce and retail businesses, as well as distributes standard branded products. Sansiri Public Company Limited was founded in 1984 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -1334,7 +1502,7 @@
     "SIRI.BK": {
         "short_name": "SANSIRI PUBLIC COMPANY LIMITED",
         "long_name": "Sansiri Public Company Limited",
-        "summary": "Sansiri Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates through Property Development; Building Management, Project Management and Real Estate Brokerage; Hotel Management; and Other segments. The Property Development segment develops land and housing projects, as well as residential condominium projects; and rents serviced apartments and office buildings. The Building Management, Project Management and Real Estate Brokerage segment provides building management, property project management, and real estate brokerage services. The Hotel Management segment manages hotels. The Other segment is involved in the hotel and education businesses. The company also offers events management, restaurant club management, and administrative services, as well as distributes standard branded products. Sansiri Public Company Limited was founded in 1984 and is headquartered in Bangkok, Thailand.",
+        "summary": "Sansiri Public Company Limited, together with its subsidiaries, engages in the property development business in Thailand. It operates through Property Development; Building Management, Project Management and Real Estate Brokerage; Hotel Management; and Other segments. The Property Development segment develops land and housing projects, as well as residential condominium projects; and rents serviced apartments and office buildings. The Building Management, Project Management and Real Estate Brokerage segment provides building management, property project management, and real estate brokerage services. The Hotel Management segment manages hotels. The Other segment is involved in the hotel and education businesses. The company also offers events management, restaurant club management, and administrative services; and engages in E-commerce and retail businesses, as well as distributes standard branded products. Sansiri Public Company Limited was founded in 1984 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -1346,7 +1514,7 @@
     "SPALI-R.BK": {
         "short_name": "SUPALAI PUBLIC COMPANY LIMITED",
         "long_name": "Supalai Public Company Limited",
-        "summary": "Supalai Public Company Limited, together with its subsidiaries, engages in the development of real estate projects for living and commercial purposes in Thailand, the Philippines, and Australia. It operates through Real Estate Business and Hotel Business and Management segments. The company owns and operates housing projects, including single detached houses, duplex houses, townhouses, and condominiums. It also develops and manages hotels and resorts; rents office buildings; and provides real estate project management. The company offers its services under the Supalai brand. Supalai Public Company Limited was founded in 1989 and is headquartered in Bangkok, Thailand.",
+        "summary": "Supalai Public Company Limited, together with its subsidiaries, engages in the development of real estate projects for living and commercial purposes in Thailand, the Philippines, and Australia. It operates through Real Estate Business; and Hotel Business and Management segments. The company owns and operates housing projects, including single detached houses, duplex houses, townhouses, and condominiums. It also develops and manages hotels and resorts; rents office buildings; and provides real estate project management. The company offers its services under the Supalai brand. Supalai Public Company Limited was founded in 1989 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -1358,7 +1526,7 @@
     "SPALI.BK": {
         "short_name": "SUPALAI PUBLIC COMPANY LIMITED",
         "long_name": "Supalai Public Company Limited",
-        "summary": "Supalai Public Company Limited, together with its subsidiaries, engages in the development of real estate projects for living and commercial purposes in Thailand, the Philippines, and Australia. It operates through Real Estate Business and Hotel Business and Management segments. The company owns and operates housing projects, including single detached houses, duplex houses, townhouses, and condominiums. It also develops and manages hotels and resorts; rents office buildings; and provides real estate project management. The company offers its services under the Supalai brand. Supalai Public Company Limited was founded in 1989 and is headquartered in Bangkok, Thailand.",
+        "summary": "Supalai Public Company Limited, together with its subsidiaries, engages in the development of real estate projects for living and commercial purposes in Thailand, the Philippines, and Australia. It operates through Real Estate Business; and Hotel Business and Management segments. The company owns and operates housing projects, including single detached houses, duplex houses, townhouses, and condominiums. It also develops and manages hotels and resorts; rents office buildings; and provides real estate project management. The company offers its services under the Supalai brand. Supalai Public Company Limited was founded in 1989 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
@@ -1370,7 +1538,7 @@
     "SPI-R.BK": {
         "short_name": "SAHA PATHANA INTER-HOLDING",
         "long_name": "Saha Pathana Inter-Holding Public Company Limited",
-        "summary": "Saha Pathana Inter-Holding Public Company Limited, together with its subsidiary, engages in the investment, rental and services, and real estate businesses in Thailand. The company operates through three segments: Investment in Consumer Goods Business; Investment in Food and Beverage Business; and Industrial Park Development and Investment in Other Businesses. It invests in hotel and golf course; leases land and buildings; and provides utility, electricity, and stream services. The company offers consumer products, including textile and fashion; household and baby-care products, such as Lipon F dish-washing agent, Pao detergent, Systema, and Kodomo products; oral-care products, which includes sanitary napkins, and Elleair wet wipes; beauty and cosmetics products under the BSC Cosmetology, Arty Professional by BSC, Sheene, Pure Care, and Mistine brand names; and other consumer products. In addition, it is involved in the operation of four industrial parks in Si Racha District, Chonburi Province; Kabinburi District, Prachinburi Province; Lamphun District, Lamphun Province; and Mae Sot District, Tak Province. Further, the company provides consultation, business planning, project execution, and trademark services. It also exports consumer goods; and acts as an agent. The company was formerly known as Saha Pathana Investment Co., Ltd. and changed its name to Saha Pathana Inter-Holding Public Company Limited in 1984. Saha Pathana Inter-Holding Public Company Limited was incorporated in 1972 and is headquartered in Bangkok, Thailand.",
+        "summary": "Saha Pathana Inter-Holding Public Company Limited engages in the investment and real estate businesses in Thailand. The company operates through three segments: Investment in Consumer Products Business; Investment in Food and Beverage Business; and Industrial Park Development and Investment in Other Businesses. It invests in, develops, and rents a hotel and a golf course; and leases land and buildings. The company also invests in consumer products, such as textile and fashion, household, beauty and cosmetics, and other consumer products; and food and beverages, which include instant noodles and semi-finished foods, and bread and bakery products. In addition, it is involved in the development and operation of four industrial parks in Si Racha District, Chonburi Province; Kabinburi District, Prachinburi Province; Mueang Lamphun District, Lamphun Province; and Mae Sot District, Tak Province. Further, the company provides consultation on business planning and project execution, as well as trademark services. The company was formerly known as Saha Pathana Investment Co., Ltd. and changed its name to Saha Pathana Inter-Holding Public Company Limited in 1984. Saha Pathana Inter-Holding Public Company Limited was incorporated in 1972 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -1382,7 +1550,7 @@
     "SPI.BK": {
         "short_name": "SAHA PATHANA INTER-HOLDING",
         "long_name": "Saha Pathana Inter-Holding Public Company Limited",
-        "summary": "Saha Pathana Inter-Holding Public Company Limited, together with its subsidiary, engages in the investment, rental and services, and real estate businesses in Thailand. The company operates through three segments: Investment in Consumer Goods Business; Investment in Food and Beverage Business; and Industrial Park Development and Investment in Other Businesses. It invests in hotel and golf course; leases land and buildings; and provides utility, electricity, and stream services. The company offers consumer products, including textile and fashion; household and baby-care products, such as Lipon F dish-washing agent, Pao detergent, Systema, and Kodomo products; oral-care products, which includes sanitary napkins, and Elleair wet wipes; beauty and cosmetics products under the BSC Cosmetology, Arty Professional by BSC, Sheene, Pure Care, and Mistine brand names; and other consumer products. In addition, it is involved in the operation of four industrial parks in Si Racha District, Chonburi Province; Kabinburi District, Prachinburi Province; Lamphun District, Lamphun Province; and Mae Sot District, Tak Province. Further, the company provides consultation, business planning, project execution, and trademark services. It also exports consumer goods; and acts as an agent. The company was formerly known as Saha Pathana Investment Co., Ltd. and changed its name to Saha Pathana Inter-Holding Public Company Limited in 1984. Saha Pathana Inter-Holding Public Company Limited was incorporated in 1972 and is headquartered in Bangkok, Thailand.",
+        "summary": "Saha Pathana Inter-Holding Public Company Limited engages in the investment and real estate businesses in Thailand. The company operates through three segments: Investment in Consumer Products Business; Investment in Food and Beverage Business; and Industrial Park Development and Investment in Other Businesses. It invests in, develops, and rents a hotel and a golf course; and leases land and buildings. The company also invests in consumer products, such as textile and fashion, household, beauty and cosmetics, and other consumer products; and food and beverages, which include instant noodles and semi-finished foods, and bread and bakery products. In addition, it is involved in the development and operation of four industrial parks in Si Racha District, Chonburi Province; Kabinburi District, Prachinburi Province; Mueang Lamphun District, Lamphun Province; and Mae Sot District, Tak Province. Further, the company provides consultation on business planning and project execution, as well as trademark services. The company was formerly known as Saha Pathana Investment Co., Ltd. and changed its name to Saha Pathana Inter-Holding Public Company Limited in 1984. Saha Pathana Inter-Holding Public Company Limited was incorporated in 1972 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -1427,6 +1595,30 @@
         "country": "Thailand",
         "city": null
     },
+    "THANA-R.BK": {
+        "short_name": "THANASIRI GROUP PUBLIC COMPANY ",
+        "long_name": "Thanasiri Group Public Company Limited",
+        "summary": "Thanasiri Group Public Company Limited, together with its subsidiaries, develops and sells real estate properties in Thailand. The company offers townhouses, detached houses, and semi-detached houses. It develops its projects under the Thanasio, Thana Village, Thana Habitat, Thanacluster, Thana Residence, and Siri Village brands. The company was formerly known as Thanasiri Baan Lae Suan Company Limited and changed its name to Thanasiri Group Public Company Limited in April 2009. Thanasiri Group Public Company Limited was incorporated in 1985 and is based in Bangkok, Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
+    "THANA.BK": {
+        "short_name": "THANASIRI GROUP PUBLIC COMPANY ",
+        "long_name": "Thanasiri Group Public Company Limited",
+        "summary": "Thanasiri Group Public Company Limited, together with its subsidiaries, develops and sells real estate properties in Thailand. The company offers townhouses, detached houses, and semi-detached houses. It develops its projects under the Thanasio, Thana Village, Thana Habitat, Thanacluster, Thana Residence, and Siri Village brands. The company was formerly known as Thanasiri Baan Lae Suan Company Limited and changed its name to Thanasiri Group Public Company Limited in April 2009. Thanasiri Group Public Company Limited was incorporated in 1985 and is based in Bangkok, Thailand.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
     "TITLE-R.BK": {
         "short_name": "RHOM BHO PROPERTY PUBLIC COMPAN",
         "long_name": "Rhom Bho Property Public Company Limited",
@@ -1463,27 +1655,15 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
-    "U-R.BK": {
+    "U.BK": {
         "short_name": "U CITY PUBLIC COMPANY LIMITED",
         "long_name": "U City Public Company Limited",
-        "summary": "U City Public Company Limited operates as a diversified real estate investment and development company in Thailand and internationally. The company operates in three segments: Hotel Business; Rental and Management Business; and Real Estate for Sale Business. It develops, rents, and sells real estate properties; leases land and structures; invests in securities; and manages and operates golf course and sports club, as well as manages and operates hotels; owns property; and engages in the office rental business. The company was formerly known as Natural Park Public Company Limited and changed its name to U City Public Company Limited in April 2015. U City Public Company Limited was founded in 1988 and is headquartered in Bangkok, Thailand.",
+        "summary": "U City Public Company Limited operates as a diversified real estate investment and development company in Thailand and internationally. The company operates through Hotel Business, Rental Business, and Management Business segments. It provides securities investment, property ownership and management, consulting, office and commercial rental, and land and structure leasing services; and operates and manages hotels, golf courses, and sports clubs. The company was formerly known as Natural Park Public Company Limited and changed its name to U City Public Company Limited in April 2015. U City Public Company Limited was incorporated in 1988 and is headquartered in Bangkok, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate - Development",
         "exchange": "SET",
         "market": "th_market",
-        "country": "Thailand",
-        "city": "Bangkok"
-    },
-    "UNZ.SG": {
-        "short_name": "Univentures PCL Reg. Shares (NV",
-        "long_name": "Univentures Public Company Limited",
-        "summary": "Univentures Public Company Limited engages in the property development business in Thailand. It develops and sells condominiums, as well as rents office buildings. The company also manufactures and sells zinc oxide and chemicals; and provides time recorders, parking control equipment, and electronics equipment. In addition, it offers finance and investment consulting services; investment and management consulting; and other related services. Further, the company operates as a manager of trusts for real estate investments; and invests in energy services, hotel, and other companies. Additionally, it acts as a broker and agent in real estate-related business; and offers corporate registration services. The company was founded in 1980 and is headquartered in Bangkok, Thailand. Univentures Public Company Limited is a subsidiary of Adelfos Company Limited.",
-        "currency": "EUR",
-        "sector": "Real Estate",
-        "industry": "Real Estate - Development",
-        "exchange": "STU",
-        "market": "dr_market",
         "country": "Thailand",
         "city": "Bangkok"
     },
@@ -1499,17 +1679,29 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
-    "WHA-R.BK": {
+    "UV.BK": {
+        "short_name": "UNIVENTURES PUBLIC COMPANY LIMI",
+        "long_name": "Univentures Public Company Limited",
+        "summary": "Univentures Public Company Limited engages in the property development business in Thailand. It develops and sells condominiums, as well as rents office buildings. The company also manufactures and sells zinc oxide and chemicals; and provides time recorders, parking control equipment, and electronics equipment. In addition, it offers finance and investment consulting services; investment and management consulting; and other related services. Further, the company operates as a manager of trusts for real estate investments; and invests in energy services, hotel, and other companies. Additionally, it acts as a broker and agent in real estate-related business; and offers corporate registration services. The company was founded in 1980 and is headquartered in Bangkok, Thailand. Univentures Public Company Limited is a subsidiary of Adelfos Company Limited.",
+        "currency": "THB",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "SET",
+        "market": "th_market",
+        "country": "Thailand",
+        "city": "Bangkok"
+    },
+    "WHA.BK": {
         "short_name": "WHA CORPORATION PUBLIC COMPANY ",
         "long_name": "WHA Corporation Public Company Limited",
-        "summary": "WHA Corporation Public Company Limited, together with its subsidiaries, develops, rents, and sells lands, buildings, factories, warehouses, and other properties in Thailand and internationally. It develops and manages properties in industrial estates and industrial zones. The company also provides raw and industrial water; wastewater treatment services; and maintenance services to industrial estate customers, such as power plants, steel mills, and automotive and petrochemical industries. In addition, the company operates power projects; and provides digital services, data center, Internet connection, and other IT services. WHA Corporation Public Company Limited was founded in 2003 and is headquartered in Muang Samut Prakan, Thailand.",
+        "summary": "WHA Corporation Public Company Limited, together with its subsidiaries, develops, rents, and sells lands, buildings, factories, warehouses, and other properties in Thailand and internationally. It engages in the development and management of properties in industrial estates and zones. The company also provides digital services, data center, Internet connection, and other IT services; raw and industrial water services; and wastewater treatment services. In addition, it offers consulting, general and service management, property investment, marina, design and construction supervision, pipe pack rental, renewable energy investment and development, and water resources development and management services. WHA Corporation Public Company Limited was founded in 2003 and is headquartered in Bang Kaeo, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Muang Samut Prakan"
+        "city": "Bang Kaeo"
     },
     "WHABT.BK": {
         "short_name": "WHA BUSINESS COMPLEX FREEHOLD",
@@ -1538,7 +1730,7 @@
     "WIN-R.BK": {
         "short_name": "WYNCOAST INDUSTRIAL PARK PUBLIC",
         "long_name": "Wyncoast Industrial Park Public Company Limited",
-        "summary": "Wyncoast Industrial Park Public Company Limited sells and rents custom duty free zone areas for the commercial and industrial activities worldwide. The company's facilities include customs office at site, logistics solution teams, executive offices, staff accommodations, conference rooms, and food centers. Its total land area is 109,174 square meters with factory and warehouse buildings for rent of 42,754 square meters, depot area of 15,175 square meters, and a three-storey office building of 4,011 square meters. The company also operates as an auto dealer for new, old, and multipurpose cars; and other vehicles, as well as spare parts and accessories. In addition, it produces and distributes electricity from solar energy; produces and distributes water; and operates and manages properties and assets, as well as engages in the construction business. The company was formerly known as Capetronic International (Thailand) Public Company Limited and changed its name to Wyncoast Industrial Park Public Company Limited in October 2013. Wyncoast Industrial Park Public Company Limited was founded in 1985 and is headquartered in Bang Pakong, Thailand.",
+        "summary": "Wyncoast Industrial Park Public Company Limited sells and rents custom duty free zone areas for the commercial and industrial activities worldwide. The company's facilities include customs office at site, logistics solution teams, executive offices, staff accommodations, conference rooms, and food centers. Its total land area is 109,174 square meters with factory and warehouse buildings for rent of 42,754 square meters, depot area of 15,175 square meters, and a three-storey office building of 4,011 square meters. The company also operates as an auto dealer for new, old, and multipurpose cars; and other vehicles, as well as spare parts and accessories. In addition, it produces and distributes electricity from solar energy; produces and distributes water; and operates and manages properties and assets, as well as engages in the construction business. The company was formerly known as Capetronic International (Thailand) Public Company Limited and changed its name to Wyncoast Industrial Park Public Company Limited in October 2013. Wyncoast Industrial Park Public Company Limited was incorporated in 1985 and is headquartered in Bang Pakong, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -1550,7 +1742,7 @@
     "WIN.BK": {
         "short_name": "WYNCOAST INDUSTRIAL PARK PUBLIC",
         "long_name": "Wyncoast Industrial Park Public Company Limited",
-        "summary": "Wyncoast Industrial Park Public Company Limited sells and rents custom duty free zone areas for the commercial and industrial activities worldwide. The company's facilities include customs office at site, logistics solution teams, executive offices, staff accommodations, conference rooms, and food centers. Its total land area is 109,174 square meters with factory and warehouse buildings for rent of 42,754 square meters, depot area of 15,175 square meters, and a three-storey office building of 4,011 square meters. The company also operates as an auto dealer for new, old, and multipurpose cars; and other vehicles, as well as spare parts and accessories. In addition, it produces and distributes electricity from solar energy; produces and distributes water; and operates and manages properties and assets, as well as engages in the construction business. The company was formerly known as Capetronic International (Thailand) Public Company Limited and changed its name to Wyncoast Industrial Park Public Company Limited in October 2013. Wyncoast Industrial Park Public Company Limited was founded in 1985 and is headquartered in Bang Pakong, Thailand.",
+        "summary": "Wyncoast Industrial Park Public Company Limited sells and rents custom duty free zone areas for the commercial and industrial activities worldwide. The company's facilities include customs office at site, logistics solution teams, executive offices, staff accommodations, conference rooms, and food centers. Its total land area is 109,174 square meters with factory and warehouse buildings for rent of 42,754 square meters, depot area of 15,175 square meters, and a three-storey office building of 4,011 square meters. The company also operates as an auto dealer for new, old, and multipurpose cars; and other vehicles, as well as spare parts and accessories. In addition, it produces and distributes electricity from solar energy; produces and distributes water; and operates and manages properties and assets, as well as engages in the construction business. The company was formerly known as Capetronic International (Thailand) Public Company Limited and changed its name to Wyncoast Industrial Park Public Company Limited in October 2013. Wyncoast Industrial Park Public Company Limited was incorporated in 1985 and is headquartered in Bang Pakong, Thailand.",
         "currency": "THB",
         "sector": "Real Estate",
         "industry": "Real Estate Services",

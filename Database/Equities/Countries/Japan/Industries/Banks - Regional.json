@@ -50,7 +50,7 @@
     "5F9.F": {
         "short_name": "FIDEA HLDGS CO. LTD",
         "long_name": "FIDEA Holdings Co. Ltd.",
-        "summary": "FIDEA Holdings Co. Ltd., through its subsidiaries, provides various banking products and services in Japan. The company was founded in 2009 and is headquartered in Sendai, Japan.",
+        "summary": "FIDEA Holdings Co. Ltd., through its subsidiaries, provides various banking products and services in Japan. The company was founded in 1878 and is headquartered in Sendai, Japan.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -82,6 +82,18 @@
         "market": "dr_market",
         "country": "Japan",
         "city": "Shimonoseki"
+    },
+    "7150.T": {
+        "short_name": "THE SHIMANE BANK LTD",
+        "long_name": "The Shimane Bank,Ltd.",
+        "summary": "The Shimane Bank,Ltd. provides various banking products and services for individual and corporate customers in Japan. The company offers various deposit products; and loans, including car, card, education, housing, multipurpose, bill, certificate, and institutional loans, as well as bill discounts. It also provides whole life, personal annuity, medical, cancer, income security, disability, and fire insurance products; investment trusts; financial product brokerage; and Internet banking services. The company operates 33 branches. The Shimane Bank, Ltd. was incorporated in 1915 and is headquartered in Matsue, Japan.",
+        "currency": "JPY",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "JPX",
+        "market": "jp_market",
+        "country": "Japan",
+        "city": "Matsue"
     },
     "7161.T": {
         "short_name": "JIMOTO HOLDINGS INC",
@@ -143,18 +155,6 @@
         "country": "Japan",
         "city": "Tokyo"
     },
-    "7321.T": {
-        "short_name": "KANSAI MIRAI FINL GP INC",
-        "long_name": "Kansai Mirai Financial Group, Inc.",
-        "summary": "Kansai Mirai Financial Group, Inc., through its subsidiaries, provides various financial products and services in the Japan. The company operates through Banking, Leasing, and Others segments. It offers deposits, loans, domestic and foreign exchange services, securities, credit guarantees, leasing services, credit card services, investment and management consultation services, and consulting services. The company was founded in 2017 and is headquartered in Osaka, Japan. Kansai Mirai Financial Group, Inc. operates as a subsidiary of Resona Holdings, Inc.",
-        "currency": "JPY",
-        "sector": "Financial Services",
-        "industry": "Banks - Regional",
-        "exchange": "JPX",
-        "market": "jp_market",
-        "country": "Japan",
-        "city": "Osaka"
-    },
     "7327.T": {
         "short_name": "DAISHI HOKUETSU FINANCIAL GROUP",
         "long_name": "Daishi Hokuetsu Financial Group, Inc.",
@@ -182,7 +182,7 @@
     "8303.T": {
         "short_name": "SHINSEI BANK",
         "long_name": "Shinsei Bank, Limited",
-        "summary": "Shinsei Bank, Limited provides various banking and financial products and services to individual customers, businesses, corporations, public-sector entities, and financial institutions in Japan. It offers Yen/foreign currency deposits and structured deposits; and housing loans, unsecured loans, credit guarantees, real estate related nonrecourse finance and corporate finance, and project finance, as well as specialty finance, including M and A-related finance. The company also provides investment trusts, brokerage, life and nonlife insurance, shopping credit and settlement, loans and collection, advisory, credit trading, private equity, business succession finance, corporate restructuring, and asset-backed investment services, as well as credit cards. In addition, it engages in the provision of financial transactions and services for individuals; healthcare finance and trust banking businesses; foreign exchange, derivatives, equity-related, and other capital markets businesses; and securities, asset management, and wealth management businesses. The company was formerly known as The Long-Term Credit Bank of Japan, Limited and changed its name to Shinsei Bank, Limited in June 2000. Shinsei Bank, Limited was founded in 1952 and is based in Tokyo, Japan.",
+        "summary": "Shinsei Bank, Limited provides various banking and financial products and services to individual customers, businesses, public corporations, and financial institutions in Japan. It offers Yen/foreign currency deposits, and structured deposits; home mortgages; and housing and unsecured loans, real estate related nonrecourse finance and corporate finance, ship finance, healthcare, and project finance, specialty finance, M&A-related, and renewable energy finance. The company also provides investment trusts, brokerage, life and non-life insurance, advisory, credit trading, private equity, business succession finance, and asset-backed investment services, as well as credit cards. In addition, it engages in the provision of financial transactions and services for individuals; trust businesses; foreign exchange, derivatives, equity-related, and other capital markets businesses; payment services; and securities, asset management, and wealth management businesses. The company was formerly known as The Long-Term Credit Bank of Japan, Limited and changed its name to Shinsei Bank, Limited in June 2000. Shinsei Bank, Limited was incorporated in 1952 and is headquartered in Tokyo, Japan.",
         "currency": "JPY",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -290,7 +290,7 @@
     "8343.T": {
         "short_name": "AKITA BANK",
         "long_name": "The Akita Bank, Ltd.",
-        "summary": "The Akita Bank, Ltd. provides banking and other financial services in the Akita Prefecture, Japan. It offers current, ordinary, savings, time, and other deposits, as well as installment savings and deposits at notice. The company also provides loans and credit cards, as well as guarantee, leasing, and consulting services. As of March 31, 2019, it operated through 98 branches. The company was founded in 1879 and is headquartered in Akita, Japan.",
+        "summary": "The Akita Bank, Ltd. provides banking and other financial services in the Akita Prefecture, Japan. It offers current, ordinary, savings, time, and other deposits, as well as installment savings and deposits at notice. The company also provides loans and credit cards, as well as guarantee, leasing, and consulting services. As of March 31, 2020, it operated through 98 branches. The company was founded in 1879 and is headquartered in Akita, Japan.",
         "currency": "JPY",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -334,6 +334,18 @@
         "market": "jp_market",
         "country": "Japan",
         "city": "Morioka"
+    },
+    "8350.T": {
+        "short_name": "MICHINOKU BANK",
+        "long_name": "The Michinoku Bank, Ltd.",
+        "summary": "The Michinoku Bank, Ltd. provides various banking products and services in Japan. The company accepts savings, time, and foreign currency deposits. Its loan portfolio comprises housing, remodeling, mortgage, card, car, education, multipurpose, and business loans. The company also offers various cards; investment trust, mutual fund, and government bonds; insurance and pension products; and Internet and mobile banking. It operates through a network of 92 branches, 2 offices, and 1 representative office. The Michinoku Bank, Ltd. was founded in 1921 and is headquartered in Aomori, Japan.",
+        "currency": "JPY",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "JPX",
+        "market": "jp_market",
+        "country": "Japan",
+        "city": "Aomori"
     },
     "8354.T": {
         "short_name": "FUKUOKA FINANCIAL GROUP INC.",
@@ -458,7 +470,7 @@
     "8365.T": {
         "short_name": "TOYAMA BANK",
         "long_name": "The Bank of Toyama, Ltd.",
-        "summary": "The Bank of Toyama, Ltd. provides various banking products and services in Japan. It offers general accounts; and settlement, savings, floating rate time, and foreign currency time deposits. It also provides mutual funds, government bonds, and insurance and pension products; housing, car, and education loans; loan simulation services; safe deposit boxes; foreign currency delivery services; and debit cards. The company was formerly known as Toyama Industrial Bank and changed its name to The Bank of Toyama, Ltd. in August 1967. The Bank of Toyama, Ltd. was founded in 1954 and is headquartered in Takaoka, Japan.",
+        "summary": "The Bank of Toyama, Ltd. provides various banking products and services to individual and business customers in Japan. It offers ordinary, time, savings, and term deposits, as well as housing, car, and education loans. The company also provides pension and insurance, NISA products, financial products brokerage, government bonds, and investment trust services; safe deposit boxes; automatic transfer and foreign currency services; and debit cards. In addition, it offers direct, internet, and mobile banking services, as well as operates 39 stores. The company was formerly known as Toyama Industrial Bank and changed its name to The Bank of Toyama, Ltd. in August 1967. The company was founded in 1954 and is headquartered in Takaoka, Japan.",
         "currency": "JPY",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -638,7 +650,7 @@
     "8398.F": {
         "short_name": "CHIKUHO BANK",
         "long_name": "The Chikuho Bank, Ltd.",
-        "summary": "The Chikuho Bank, Ltd. provides banking products and services to individual and corporate customers in Japan. The company offers deposits, negotiable certificates, loans, financing, fund management, and management support services. The Chikuho Bank, Ltd. was founded in 1952 and is headquartered in Kurume, Japan.",
+        "summary": "The Chikuho Bank, Ltd. provides various banking products and services to individual and corporate customers in Japan. The company offers deposits, certificates of deposits, loans, financing, fund management, and management support services. As of September 30, 2020, it operated 44 branches. The company was founded in 1952 and is headquartered in Kurume, Japan.",
         "currency": "JPY",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -696,7 +708,7 @@
         "city": "Shimonoseki"
     },
     "8421.T": {
-        "short_name": "SHINKIN CENTRAL BANK",
+        "short_name": "SHINKIN CENTRAL BANK NON-CUM PR",
         "long_name": "Shinkin Central Bank",
         "summary": "Shinkin Central Bank, a financial institution, operates as a central bank for Shinkin banks in Japan. The company provides various products and services, such as deposits, debentures, lending, market fund management, trading operations, clearing, and trust services. It also offers securities dealing, brokerage, and underwriting services, as well as securities investment and consulting services; asset management services; guarantees for unsecured personal loans; investment banking, merger and acquisition brokerage, and corporate business consulting services; and data processing services. As of March 31, 2020, the company had 255 banks. Shinkin Central Bank was founded in 1950 and is headquartered in Tokyo, Japan.",
         "currency": "JPY",
@@ -746,7 +758,7 @@
     "8530.T": {
         "short_name": "CHUKYO BANK",
         "long_name": "The Chukyo Bank, Limited",
-        "summary": "The Chukyo Bank, Limited provides various banking products and services to individual and corporate customers in Japan. The company offers ordinary, savings, time, and foreign currency deposits; and individual annuity, whole life, medical, cancer, student, and individual defined contribution insurance products. Its loan portfolio comprises housing, mortgage, card, car, education, travel, bridal, dental, hobby, furniture/home appliance, sporting goods purchase, remodeling and eco- remodeling, and multipurpose loans. The company also provides management, founding, financing, business matching, and overseas business support services, as well as accounting office work efficiency, payroll, and forex Web services for corporate customers. In addition, it offers mutual funds, government bonds, and financial product brokerage products and services. Further, the company provides Internet and mobile banking, pension, fund and Web account transfer, foreign currency exchange and remittance, and safe deposit box services, as well as debit cards. As of June 30, 2020, it operated 87 branches, including 1 Internet branch; and 203 ATMs. The company was founded in 1943 and is headquartered in Nagoya, Japan.",
+        "summary": "The Chukyo Bank, Limited provides various banking products and services to individual and corporate customers in Japan. The company offers ordinary, savings, time, and foreign currency deposits; housing, mortgage, card, car, education, travel, bridal, dental, hobby, furniture/home appliance, sporting goods purchase, remodeling and eco- remodeling, and multipurpose loans; and individual annuity, whole life, medical, cancer, student insurance products, as well as individual defined contribution pension products. The company also provides management, founding, financing, business matching, and overseas business support services, as well as accounting office work efficiency and forex Web services for corporate customers. In addition, it offers investment trust, government bonds, and financial product brokerage products and services. Further, the company provides Internet banking, pension, fund and Web account transfer, foreign currency exchange and remittance, and safe deposit box services, as well as debit cards. As of September 30, 2020, it operated 87 branches, including 1 Internet branch. The company was incorporated in 1943 and is headquartered in Nagoya, Japan.",
         "currency": "JPY",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -782,7 +794,7 @@
     "8541.T": {
         "short_name": "EHIME BANK",
         "long_name": "The Ehime Bank, Ltd.",
-        "summary": "The Ehime Bank, Ltd. provides banking products and financial services in Japan. It offers savings, non-interest-bearing savings, checking, foreign currency savings, notification, automatic savings time, super time, large time, negotiable, and foreign currency time deposit products. The company also provides business support, agency, corporate association/tax accountant collaboration, and shipping and shipbuilding loans; and guarantee/institutional financing and co-financing services. In addition, it offers pension, life, non-life, medical, and cancer insurance products; asset management, fund management, trust agency, and management/business support services. The company operates through 105 branches. The Ehime Bank, Ltd. was founded in 1915 and is headquartered in Matsuyama, Japan.",
+        "summary": "The Ehime Bank, Ltd. provides banking products and financial services in Japan. It offers savings, interest-free-bearing savings, checking, foreign currency savings, notification, automatic savings time, super time, large time, negotiable, certificate of deposit, and foreign currency time deposit products, as well as various loans. The company also provides business support, corporate association/tax accountant collaboration, and shipping and shipbuilding loans; and guarantee/institutional financing and co-financing services. In addition, it offers pension, life, non-life, medical, and cancer insurance products; asset management, fund management, trust agency, and management/business support services, as well as farm and internet banking; and e-net payment collection services. As of March 31, 2020, the company operated through 112 branches. The Ehime Bank, Ltd. was founded in 1915 and is headquartered in Matsuyama, Japan.",
         "currency": "JPY",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -794,7 +806,7 @@
     "8542.T": {
         "short_name": "TOMATO BANK",
         "long_name": "Tomato Bank, Ltd.",
-        "summary": "Tomato Bank, Ltd. provides banking products and services for individual and corporate customers in Japan. It accepts saving, time, foreign currency, and education fund donation deposits, as well as provides loan products, such as card, free, housing, reform, car, education, syndicated, and other loans. The company also offers debit and credit cards; mutual funds and government bonds; private placements and guarantees; and government annuity, life, medical/long-term care, cancer, child, income and revenue protection, business, secondary life support, and property insurance products. In addition, it provides pension, investment trust, electronic money charge, foreign currency delivery, payment and transfer, safe deposit box, securities, and Internet and mobile banking services. Further, it offers consulting, self-diagnosis and information on value added services related to management, forex Web, ISO certificate and private mark acquisition, support, accounts receivable warranty, lease introduction, and securities introduction services. Tomato Bank, Ltd. operates through 61 branches. The company was formerly known as Sanyo Mutual Bank, Ltd. and changed its name to Tomato Bank, Ltd. in April 1989. Tomato Bank, Ltd. was founded in 1931 and is headquartered in Okayama, Japan.",
+        "summary": "Tomato Bank, Ltd. provides banking products and services for individual and corporate customers in Japan. It accepts saving, time, reserve, foreign currency, and education fund deposits, as well as provides loan products, such as card, housing, car, education, and other loans. The company also offers debit and credit cards; insurance products and services; mutual funds and government bonds; and private placements and guarantees. In addition, it provides pension, investment trust, electronic money charge, foreign currency delivery, payment and transfer, safe deposit box, securities, and Internet and mobile banking services. Further, the company provides management consulting, business support, fund management, and ATM services. It operates through 61 branches. The company was formerly known as Sanyo Mutual Bank, Ltd. and changed its name to Tomato Bank, Ltd. in April 1989. Tomato Bank, Ltd. was founded in 1931 and is headquartered in Okayama, Japan.",
         "currency": "JPY",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -842,7 +854,7 @@
     "8554.F": {
         "short_name": "MINAMI-NIPPON BANK",
         "long_name": "The Minami-Nippon Bank,Ltd.",
-        "summary": "The Minami-Nippon Bank,Ltd. provides various banking products and services to individual and corporate customers in Japan. The company accepts savings, ordinary, time, and foreign currency deposits; and certificates of deposit. Its loan products include personal, commercial vehicle mortgage, and business loans. The company also provides investment trusts and government bonds; life and non-life insurance, and pension products; various cards; and salary transfer/automatic pension, securities, fund management, rating agency, ATM, leasing, and internet banking services. The company operates 64 branches. The Minami-Nippon Bank,Ltd. was founded in 1913 and is headquartered in Kagoshima, Japan.",
+        "summary": "The Minami-Nippon Bank,Ltd. provides various banking products and services to individual and corporate customers in Japan. The company accepts savings, ordinary, time, and reserve time, periodic, and foreign currency deposits; and certificates of deposit. Its loan products include card, free, car, education, and business loans. The company also offers investment trusts and government bonds; life and non-life insurance, and pension products; cash and debit cards; payroll transfer/automatic pension receipt; online fund transfer; and other services, as well as rating agency, fund management, security, and internet and mobile banking services. In addition, it provides leasing; and transport and security services. The company operates 64 branches. The Minami-Nippon Bank,Ltd. was founded in 1913 and is headquartered in Kagoshima, Japan.",
         "currency": "JPY",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -878,7 +890,7 @@
     "8560.F": {
         "short_name": "MIYAZAKI TAIYO BANK",
         "long_name": "The Miyazaki Taiyo Bank, Ltd.",
-        "summary": "The Miyazaki Taiyo Bank, Ltd. provides various banking products and services for individual and corporate customers primarily in Japan. The company offers time and term deposits; foreign currency deposits; government bonds; mutual funds; life and non-life insurance products; and card, car, and education loans. The company was formerly known as K.K. Miyazaki Sogo Ginko and changed its name to The Miyazaki Taiyo Bank, Ltd. in 1989. The Miyazaki Taiyo Bank, Ltd. was founded in 1964 and is headquartered in Miyazaki, Japan.",
+        "summary": "The Miyazaki Taiyo Bank, Ltd. provides various banking products and services for individual and corporate customers primarily in Japan. The company operates through Banking, and Lease and Guarantee Business segments. It offers deposit, lending, domestic exchange, foreign exchange, and other incidental business services. The company also provides comprehensive leasing and guarantee services, such as personal loans, as well as engages in the venture capital business. It operates through 52 branches. The company was formerly known as K.K. Miyazaki Sogo Ginko and changed its name to The Miyazaki Taiyo Bank, Ltd. in February 1989. The Miyazaki Taiyo Bank, Ltd. was founded in 1941 and is headquartered in Miyazaki, Japan.",
         "currency": "JPY",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -914,7 +926,7 @@
     "8713.T": {
         "short_name": "FIDEA HOLDINGS CO LTD",
         "long_name": "FIDEA Holdings Co. Ltd.",
-        "summary": "FIDEA Holdings Co. Ltd., through its subsidiaries, provides various banking products and services in Japan. The company was founded in 2009 and is headquartered in Sendai, Japan.",
+        "summary": "FIDEA Holdings Co. Ltd., through its subsidiaries, provides various banking products and services in Japan. The company was founded in 1878 and is headquartered in Sendai, Japan.",
         "currency": "JPY",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -971,6 +983,18 @@
         "country": "Japan",
         "city": "Tokyo"
     },
+    "DW1.F": {
+        "short_name": "RESONA HOLDINGS INC.",
+        "long_name": "Resona Holdings, Inc.",
+        "summary": "Resona Holdings, Inc., through its subsidiaries, provides banking products and services in Japan and internationally. It operates through Consumer Banking, Corporate Banking, and Market Trading segments. The company engages in the short term lending, borrowing, bond purchase and sale, and derivatives trading activities; and provides various services related to corporate loan, trust asset management, real estate business, corporate pension, and asset succession. It also offers banking and trust banking, credit guarantee, collection of bills and receivables, factoring, and credit card administration and guarantee facilities. In addition, the company is involved in the private equity and financing businesses; and provision of business consulting and investment management, business process outsourcing and placement, general leasing, and system development services. It serves individuals and corporate customers. As of March 31, 2020, the company operated 833 branches. Resona Holdings, Inc. was founded in 1918 and is headquartered in Tokyo, Japan.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Japan",
+        "city": "Tokyo"
+    },
     "HACBY": {
         "short_name": "HACHIJUNI BANK",
         "long_name": "The Hachijuni Bank, Ltd.",
@@ -982,18 +1006,6 @@
         "market": "us_market",
         "country": "Japan",
         "city": "Nagano"
-    },
-    "HYKUF": {
-        "short_name": "HYAKUGO BANK",
-        "long_name": "The Hyakugo Bank, Ltd.",
-        "summary": "The Hyakugo Bank, Ltd. provides various banking and financial services in Japan. The company also offers credit card and guarantee, leasing, regional industry survey and consulting-related, computer information processing, financial instruments transaction, cash examination and arrangement, collateralized real estate survey and appraisal, and employment placement and labor management services. In addition, it provides printing, storage, and administrative services for documents, account books, etc.; and management and administrative services for bank notes, bonds, etc. As of March 31, 2020, the company operated 85 branches and 30 sub-branches in Mie prefecture; 21 branches in Aichi prefectures; 1 branch in Wakayama prefecture; 2 branches in Tokyo and Osaka; and 3 representative offices in Singapore, Shanghai, and Bangkok, as well as 205 ATMs. The company was formerly known as 105th National Chartered Bank and changed its name to The Hyakugo Bank, Ltd. in 1897. The Hyakugo Bank, Ltd. was founded in 1878 and is headquartered in Tsu, Japan.",
-        "currency": "USD",
-        "sector": "Financial Services",
-        "industry": "Banks - Regional",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "Japan",
-        "city": "Tsu"
     },
     "JPHLF": {
         "short_name": "JAPAN POST HLDGS CO LTD",
@@ -1019,22 +1031,10 @@
         "country": "Japan",
         "city": "Tokyo"
     },
-    "JPSTF": {
-        "short_name": "JAPAN POST BANK CO LTD",
-        "long_name": "JAPAN POST BANK Co.,Ltd.",
-        "summary": "JAPAN POST BANK Co., Ltd. provides various banking products and services to retail and corporate clients in Japan and internationally. The company offers liquid deposits, including transfer deposits, savings deposits, ordinary deposits, etc.; fixed-term deposits, such as time deposits, TEIGAKU deposits, etc.; and other deposits, as well as negotiable certificates of deposit. It also provides loans secured by deposits, loans secured by Japanese government bonds, credit card loans, and loans to local, central, and regional government authorities; syndicated loans; and corporate and other secondary market loans. In addition, the company offers securities investment products, domestic and foreign exchange services, Japanese government bonds, investment trust products, and insurance products; and intermediary services, such as mortgage and credit card services. It operates through a network of 29,837 ATMs and 23,944 branches. The company was formerly known as Yucho Co, Ltd. and changed its name to JAPAN POST BANK Co., Ltd. in October 2007. The company was founded in 2006 and is headquartered in Tokyo, Japan. JAPAN POST BANK Co., Ltd. operates as a subsidiary of Japan Post Holdings Co., Ltd.",
-        "currency": "USD",
-        "sector": "Financial Services",
-        "industry": "Banks - Regional",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "Japan",
-        "city": "Tokyo"
-    },
     "LCJ.F": {
         "short_name": "SHINSEI BANK",
         "long_name": "Shinsei Bank, Limited",
-        "summary": "Shinsei Bank, Limited provides various banking and financial products and services to individual customers, businesses, corporations, public-sector entities, and financial institutions in Japan. It offers Yen/foreign currency deposits and structured deposits; and housing loans, unsecured loans, credit guarantees, real estate related nonrecourse finance and corporate finance, and project finance, as well as specialty finance, including M and A-related finance. The company also provides investment trusts, brokerage, life and nonlife insurance, shopping credit and settlement, loans and collection, advisory, credit trading, private equity, business succession finance, corporate restructuring, and asset-backed investment services, as well as credit cards. In addition, it engages in the provision of financial transactions and services for individuals; healthcare finance and trust banking businesses; foreign exchange, derivatives, equity-related, and other capital markets businesses; and securities, asset management, and wealth management businesses. The company was formerly known as The Long-Term Credit Bank of Japan, Limited and changed its name to Shinsei Bank, Limited in June 2000. Shinsei Bank, Limited was founded in 1952 and is based in Tokyo, Japan.",
+        "summary": "Shinsei Bank, Limited provides various banking and financial products and services to individual customers, businesses, public corporations, and financial institutions in Japan. It offers Yen/foreign currency deposits, and structured deposits; home mortgages; and housing and unsecured loans, real estate related nonrecourse finance and corporate finance, ship finance, healthcare, and project finance, specialty finance, M&A-related, and renewable energy finance. The company also provides investment trusts, brokerage, life and non-life insurance, advisory, credit trading, private equity, business succession finance, and asset-backed investment services, as well as credit cards. In addition, it engages in the provision of financial transactions and services for individuals; trust businesses; foreign exchange, derivatives, equity-related, and other capital markets businesses; payment services; and securities, asset management, and wealth management businesses. The company was formerly known as The Long-Term Credit Bank of Japan, Limited and changed its name to Shinsei Bank, Limited in June 2000. Shinsei Bank, Limited was incorporated in 1952 and is headquartered in Tokyo, Japan.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -1058,7 +1058,19 @@
     "MIU.F": {
         "short_name": "SUMITOMO MITSUI TR.HLDGS",
         "long_name": "Sumitomo Mitsui Trust Holdings, Inc.",
-        "summary": "Sumitomo Mitsui Trust Holdings, Inc. operates as a trust bank in Japan and internationally. It offers retail services, such as asset management, inheritance and succession, mortgage loans, and installment-type products and insurance products; and wholesale services, including loans and financing schemes, corporate consultations, and M&A advisory services. The company also provides property administration and alliance services; and stock and shareholders meetings, IPO, investor and capital strategies, and governance enhancement consulting services. In addition, it offers real estate brokerage and consulting, management and administration, infrastructure, and other services; fiduciary services comprising pensions, asset management, and asset administration; and global markets services. The company was formerly known as Chuo Mitsui Trust Holdings, Inc. and changed its name to Sumitomo Mitsui Trust Holdings, Inc. in 2011. Sumitomo Mitsui Trust Holdings, Inc. was founded in 2002 and is headquartered in Tokyo, Japan.",
+        "summary": "Sumitomo Mitsui Trust Holdings, Inc. operates as a trust bank in Japan and internationally. It offers retail services, such as asset management, inheritance and succession, mortgage loans, and installment-type products and insurance products; and wholesale services, including loans and financing schemes, corporate consultations, and M&A advisory services. The company also provides property administration and alliance services; and stock and shareholders meetings, IPO, investor and capital strategies, and governance enhancement consulting services. In addition, it offers real estate brokerage and consulting, management and administration, infrastructure, and other services; fiduciary services comprising pensions, asset management, and asset administration; and global markets services. The company was formerly known as Chuo Mitsui Trust Holdings, Inc. and changed its name to Sumitomo Mitsui Trust Holdings, Inc. in 2011. Sumitomo Mitsui Trust Holdings, Inc. was incorporated in 2002 and is headquartered in Tokyo, Japan.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Japan",
+        "city": "Tokyo"
+    },
+    "MZ8.F": {
+        "short_name": "MIZUHO FINL GROUP",
+        "long_name": "Mizuho Financial Group, Inc.",
+        "summary": "Mizuho Financial Group, Inc., together with its subsidiaries, engages in banking, trust, securities, and other businesses related to financial services in Japan, the Americas, Europe, Asia/Oceania, and internationally. It operates through five segments: Retail & Business Banking Company, Corporate & Institutional Company, Global Corporate Company, Global Markets Company, and Asset Management Company. The company provides deposit products; syndicated, housing, and card loans; business matching services; and advisory services related to overseas expansions, and mergers and acquisitions-related services. It also offers consulting services, including asset management and asset succession; payroll services; and sells lottery tickets issued by prefectures and ordinance-designated cities. In addition, it offers financial solutions, such as fund management, underwriting of equity and bonds, M&A advisory, and risk hedging products, etc. for corporate customers to meet their needs in fund-raising, investment management, and financial strategies; solutions based on their capital management, business strategy, and financial strategy; solutions related to real estate; advisory services and solutions, such as advice on proposals on various investment products; and financial services that include funding support. Further, the company offers sales and trading services to meet risk hedging and investment needs; investment products for individual customers; and consulting services for institutional investors. Additionally, the company provides products and services related to trust, securitization and structured finance, pension, and stock transfers; securities services; and research, private banking, and information technology-related services. As of March 31, 2020, its branch network included 464 Mizuho Bank, 60 Mizuho Trust and Banking, and 256 Mizuho Securities; and 7,200 automated teller machines in Japan. The company was founded in 2003 and is headquartered in Tokyo, Japan.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -1075,6 +1087,18 @@
         "sector": "Financial Services",
         "industry": "Banks - Regional",
         "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Japan",
+        "city": "Tokyo"
+    },
+    "MZ8A.SG": {
+        "short_name": "Mizuho Financial Group Inc. Reg",
+        "long_name": "Mizuho Financial Group, Inc.",
+        "summary": "Mizuho Financial Group, Inc., together with its subsidiaries, engages in banking, trust, securities, and other businesses related to financial services in Japan, the Americas, Europe, Asia/Oceania, and internationally. It operates through five segments: Retail & Business Banking Company, Corporate & Institutional Company, Global Corporate Company, Global Markets Company, and Asset Management Company. The company provides deposit products; syndicated, housing, and card loans; business matching services; and advisory services related to overseas expansions, and mergers and acquisitions-related services. It also offers consulting services, including asset management and asset succession; payroll services; and sells lottery tickets issued by prefectures and ordinance-designated cities. In addition, it offers financial solutions, such as fund management, underwriting of equity and bonds, M&A advisory, and risk hedging products, etc. for corporate customers to meet their needs in fund-raising, investment management, and financial strategies; solutions based on their capital management, business strategy, and financial strategy; solutions related to real estate; advisory services and solutions, such as advice on proposals on various investment products; and financial services that include funding support. Further, the company offers sales and trading services to meet risk hedging and investment needs; investment products for individual customers; and consulting services for institutional investors. Additionally, the company provides products and services related to trust, securitization and structured finance, pension, and stock transfers; securities services; and research, private banking, and information technology-related services. As of March 31, 2020, its branch network included 464 Mizuho Bank, 60 Mizuho Trust and Banking, and 256 Mizuho Securities; and 7,200 automated teller machines in Japan. The company was founded in 2003 and is headquartered in Tokyo, Japan.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "STU",
         "market": "dr_market",
         "country": "Japan",
         "city": "Tokyo"
@@ -1118,7 +1142,7 @@
     "SKLKF": {
         "short_name": "SHINSEI BANK",
         "long_name": "Shinsei Bank, Limited",
-        "summary": "Shinsei Bank, Limited provides various banking and financial products and services to individual customers, businesses, corporations, public-sector entities, and financial institutions in Japan. It offers Yen/foreign currency deposits and structured deposits; and housing loans, unsecured loans, credit guarantees, real estate related nonrecourse finance and corporate finance, and project finance, as well as specialty finance, including M and A-related finance. The company also provides investment trusts, brokerage, life and nonlife insurance, shopping credit and settlement, loans and collection, advisory, credit trading, private equity, business succession finance, corporate restructuring, and asset-backed investment services, as well as credit cards. In addition, it engages in the provision of financial transactions and services for individuals; healthcare finance and trust banking businesses; foreign exchange, derivatives, equity-related, and other capital markets businesses; and securities, asset management, and wealth management businesses. The company was formerly known as The Long-Term Credit Bank of Japan, Limited and changed its name to Shinsei Bank, Limited in June 2000. Shinsei Bank, Limited was founded in 1952 and is based in Tokyo, Japan.",
+        "summary": "Shinsei Bank, Limited provides various banking and financial products and services to individual customers, businesses, public corporations, and financial institutions in Japan. It offers Yen/foreign currency deposits, and structured deposits; home mortgages; and housing and unsecured loans, real estate related nonrecourse finance and corporate finance, ship finance, healthcare, and project finance, specialty finance, M&A-related, and renewable energy finance. The company also provides investment trusts, brokerage, life and non-life insurance, advisory, credit trading, private equity, business succession finance, and asset-backed investment services, as well as credit cards. In addition, it engages in the provision of financial transactions and services for individuals; trust businesses; foreign exchange, derivatives, equity-related, and other capital markets businesses; payment services; and securities, asset management, and wealth management businesses. The company was formerly known as The Long-Term Credit Bank of Japan, Limited and changed its name to Shinsei Bank, Limited in June 2000. Shinsei Bank, Limited was incorporated in 1952 and is headquartered in Tokyo, Japan.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -1130,7 +1154,7 @@
     "SKLKY": {
         "short_name": "SHINSEI BANK",
         "long_name": "Shinsei Bank, Limited",
-        "summary": "Shinsei Bank, Limited provides various banking and financial products and services to individual customers, businesses, corporations, public-sector entities, and financial institutions in Japan. It offers Yen/foreign currency deposits and structured deposits; and housing loans, unsecured loans, credit guarantees, real estate related nonrecourse finance and corporate finance, and project finance, as well as specialty finance, including M and A-related finance. The company also provides investment trusts, brokerage, life and nonlife insurance, shopping credit and settlement, loans and collection, advisory, credit trading, private equity, business succession finance, corporate restructuring, and asset-backed investment services, as well as credit cards. In addition, it engages in the provision of financial transactions and services for individuals; healthcare finance and trust banking businesses; foreign exchange, derivatives, equity-related, and other capital markets businesses; and securities, asset management, and wealth management businesses. The company was formerly known as The Long-Term Credit Bank of Japan, Limited and changed its name to Shinsei Bank, Limited in June 2000. Shinsei Bank, Limited was founded in 1952 and is based in Tokyo, Japan.",
+        "summary": "Shinsei Bank, Limited provides various banking and financial products and services to individual customers, businesses, public corporations, and financial institutions in Japan. It offers Yen/foreign currency deposits, and structured deposits; home mortgages; and housing and unsecured loans, real estate related nonrecourse finance and corporate finance, ship finance, healthcare, and project finance, specialty finance, M&A-related, and renewable energy finance. The company also provides investment trusts, brokerage, life and non-life insurance, advisory, credit trading, private equity, business succession finance, and asset-backed investment services, as well as credit cards. In addition, it engages in the provision of financial transactions and services for individuals; trust businesses; foreign exchange, derivatives, equity-related, and other capital markets businesses; payment services; and securities, asset management, and wealth management businesses. The company was formerly known as The Long-Term Credit Bank of Japan, Limited and changed its name to Shinsei Bank, Limited in June 2000. Shinsei Bank, Limited was incorporated in 1952 and is headquartered in Tokyo, Japan.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -1138,6 +1162,18 @@
         "market": "us_market",
         "country": "Japan",
         "city": "Tokyo"
+    },
+    "SUGBY": {
+        "short_name": "SURUGA BANK",
+        "long_name": "Suruga Bank Ltd.",
+        "summary": "Suruga Bank Ltd. provides various banking and financial products and services to individuals and corporate customers in Japan. The company offers deposit products, such as time, ordinary, savings, foreign currency, and other deposits, as well as current and general accounts; card, housing, second house, resort, startup, project assistance, and business up term loans, as well as loans by purpose; credit and debit cards; and overdrafts and other financing products. It also provides investment trust, public bond, pension contribution, insurance, inheritance/trust, lottery, foreign currency exchange reservation, pay-easy, Web oral receipt, safe deposit box, external linkage, foreign remittance, fund management, e-combination, payment, nursing care/medical care/dispensing compensation receivable factoring, mortgage, and Internet and telephone banking services. In addition, the company offers staffing, money lending and credit guarantee, mortgage loans guarantee, printing, bookbinding, packing and shipping, leasing, and clerical agency and system engineering services. It operates through a network of 128 branches in Japan. The company was founded in 1895 and is headquartered in Numazu, Japan.",
+        "currency": "USD",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Japan",
+        "city": "Numazu"
     },
     "SUTNY": {
         "short_name": "SUMITOMO MITSUI TRUST HOLDINGS ",
@@ -1174,5 +1210,17 @@
         "market": "dr_market",
         "country": "Japan",
         "city": "Numazu"
+    },
+    "YC3.F": {
+        "short_name": "CONCORDIA FINL GROUP",
+        "long_name": "Concordia Financial Group, Ltd.",
+        "summary": "Concordia Financial Group, Ltd., through its subsidiaries, provides various banking products and services to small and medium-sized businesses and individuals. It offers various deposit and loan products. The company also provides securities, leasing, survey research and other information, venture capital, and other financial services. It operates through a network of branches, sub-branches, ATMs, and representative offices in Japan and internationally. Concordia Financial Group, Ltd. was founded in 2016 and is headquartered in Tokyo, Japan.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Japan",
+        "city": "Tokyo"
     }
 }

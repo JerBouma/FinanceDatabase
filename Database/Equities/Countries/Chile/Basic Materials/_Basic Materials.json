@@ -1,25 +1,25 @@
 {
-    "0MDP.L": {
-        "short_name": "GEOPARK LTD GEOPARK ORD SHS",
-        "long_name": "GeoPark Limited",
-        "summary": "GeoPark Limited engages in the exploration, development, and production of oil and gas reserves in Chile, Colombia, Brazil, Argentina, Peru, and Ecuador. As of December 31, 2019, the company had working and/or economic interests in 31 hydrocarbons blocks, as well as shallow-offshore concession in Brazil that includes the Manati Field. It had net proved reserves of 124.0 million barrels of oil equivalent. GeoPark Limited has a strategic partnership with ONGC Videsh to jointly acquire, invest in, and create value from upstream oil and gas projects across Latin America. The company was formerly known as GeoPark Holdings Limited and changed its name to GeoPark Limited in July 2013. GeoPark Limited was founded in 2002 and is based in Santiago, Chile.",
-        "currency": "USD",
+    "CAP.SN": {
+        "short_name": "CAP SA",
+        "long_name": "CAP S.A.",
+        "summary": "CAP S.A. engages in iron ore mining, steel production, and steel processing businesses in Chile and internationally. The company explores, evaluates, and develops mineral ores; and produces iron ore and pellets in the Pacific coast. It also produces and sells rebars, grinding rods, reinforcing bars, helical bars, CAP-SOL bars, wire rods, limestone, and quicklime for construction companies, steel distributors, processors and industries, wire drawers, manufacturers of grinding balls, workshops, and copper mining companies. Addtionally, the company offers pipes and conduit; corrugated steel products; roofs and claddings for sheds, and industrial and commercial warehouses; highway guard rails; photovoltaic structures; insulated panels, open profiles, laminated profiles, collaborative plates, steel plates, tubest, and tubular profiles. Further, it engages in desalinated water production business; and constructs power transmission lines. The company was formerly known as Compa\u00c3\u00b1\u00c3\u00ada de Acero del Pac\u00c3\u00adfico S.A. de Inversiones and changed its name to CAP S.A. in May 1991. CAP S.A. was founded in 1946 and is based in Las Condes, Chile",
+        "currency": "CLP",
         "sector": "Basic Materials",
-        "industry": "Independent Oil & Gas",
-        "exchange": "LSE",
-        "market": "gb_market",
+        "industry": "Steel",
+        "exchange": "SGO",
+        "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago de Chile"
+        "city": "Las Condes"
     },
-    "CEG.CN": {
-        "short_name": "CerroGrande",
-        "long_name": "Cerro Grande Mining Corporation",
-        "summary": "Cerro Grande Mining Corporation engages in the acquisition, exploration, and development of mineral properties in Chile. The company explores for gold, silver, and copper deposits. It holds interest in Tordillo project. The company was formerly known as South American Gold and Copper Company Limited and changed its name to Cerro Grande Mining Corporation in March 2011. Cerro Grande Mining Corporation was founded in 1990 and is based in Providencia, Chile.",
-        "currency": "CAD",
+    "CEMENTOS.SN": {
+        "short_name": "CEMENTOS BIO BIO",
+        "long_name": "Cementos Bio Bio S.A.",
+        "summary": "Cementos Bio Bio S.A. manufactures and sells cement in Chile and internationally. It provides clinker, pozzolana, gypsum, pozzolanic portland, and other cement; and concrete products for housing, buildings, pavement, infrastructure, and mining projects. The company also provides lime, limestones, agricultural, and road solutions; and logistics management and technical consulting services. The company was founded in 1957 and is based in Providencia, Chile.",
+        "currency": "CLP",
         "sector": "Basic Materials",
-        "industry": "Other Industrial Metals & Mining",
-        "exchange": "CNQ",
-        "market": "ca_market",
+        "industry": "Building Materials",
+        "exchange": "SGO",
+        "market": "cl_market",
         "country": "Chile",
         "city": "Providencia"
     },
@@ -38,7 +38,7 @@
     "CMPC.SN": {
         "short_name": "EMPRESAS CMPC SA",
         "long_name": "Empresas CMPC S.A.",
-        "summary": "Empresas CMPC S.A., a forestry company, produces, markets, sells, and exports wood products, pulp, paper, and tissue products in Chile and internationally. It operates through Pulp, Biopackaging, and Softys segments. The Pulp segment produces and markets pulp and wood products. It offers wood logs, sawn lumber, refabricated wood, and plywood board. This segment also owns approximately 688,000 hectares of forest plantations primarily comprising pine and eucalyptus, including 449,000 hectares in Chile; 181,000 hectares in Brazil; and 58,000 hectares in Argentina, as well as operates a biomass electric energy production plant located in Nacimiento. The Biopackaging segment offers cardboard, corrugated paper, corrugated cardboard boxes, bags or industrial sacks, and molded pulp trays; and distributes and recycles paper. The Softys segment produces and sells tissue product comprising toilet paper, paper towels, paper napkins, and facial tissues; sanitary products, such as baby diapers, wipes, adult diapers, and sanitary napkins; and specialized hygiene products for consumption in institutions and public places. This segment sells its products under the Elite, Confort, Nova, Higienol, Sussex, Babysec, Cotidian, and Ladysoft brands name. Empresas CMPC S.A. was founded in 1920 and is headquartered in Santiago, Chile.",
+        "summary": "Empresas CMPC S.A., a forestry company, produces, markets, sells, and exports wood products, pulp, paper, tissue, personal care, and packaging products in Chile and internationally. It operates through Pulp, Biopackaging, and Softys segments. The Pulp segment produces and markets pulp and wood products. It offers pulpwood logs, sawn pulpwood, sawn timber, refabricated wood, plywood board, and long and short pulp fiber. This segment also owns approximately 647,000 hectares of forest plantations primarily comprising pine and eucalyptus, including 453,000 hectares in Chile; 140,000 hectares in Brazil; and 54,000 hectares in Argentina, as well as operates a biomass electric energy production plant located in Nacimiento. The Biopackaging segment offers cardboard, corrugated paper, corrugated cardboard boxes, bags or industrial sacks, and molded pulp trays; and distributes and recycles paper. The Softys segment produces and sells tissue products comprising toilet papers, paper towels, paper napkins, and facial tissues; sanitary products, such as baby diapers, wipes, adult diapers, and sanitary napkins; and specialized hygiene products for consumption in institutions and public places. This segment sells its products under the Elite, Confort, Nova, Higienol, Sussex, Babysec, Cotidian, and Ladysoft brands name. Empresas CMPC S.A. was incorporated in 1920 and is headquartered in Santiago, Chile.",
         "currency": "CLP",
         "sector": "Basic Materials",
         "industry": "Paper & Paper Products",
@@ -47,10 +47,22 @@
         "country": "Chile",
         "city": "Santiago de Chile"
     },
+    "CROJF": {
+        "short_name": "MARIMACA COPPER CORP",
+        "long_name": "Marimaca Copper Corp.",
+        "summary": "Marimaca Copper Corp. engages in the acquisition, exploration, and exploitation of mineral properties and projects in Chile. The company explores for copper, iron ore, gold, and other base and precious metals. Its flagship project is the Marimaca Copper project located in the Antofagasta Region of Chile. The company was formerly known as Coro Mining Corp. and changed its name to Marimaca Copper Corp. in May 2020. Marimaca Copper Corp. was incorporated in 2004 and is headquartered in Las Condes, Chile.",
+        "currency": "USD",
+        "sector": "Basic Materials",
+        "industry": "Copper",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Chile",
+        "city": "Las Condes"
+    },
     "E2E1.F": {
         "short_name": "MARIMACA COPPER CORP.",
         "long_name": "Marimaca Copper Corp.",
-        "summary": "Marimaca Copper Corp. engages in the acquisition, exploration, and exploitation of mineral properties and projects located in Chile. The company explores for copper, iron ore, gold, and other base and precious metals. It principally holds 51% interests in Marimaca copper oxide project located in the Antofagasta Region of northern Chile. The company was formerly known as Coro Mining Corp. and changed its name to Marimaca Copper Corp. in May 2020. Marimaca Copper Corp. was incorporated in 2004 and is headquartered in Las Condes, Chile.",
+        "summary": "Marimaca Copper Corp. engages in the acquisition, exploration, and exploitation of mineral properties and projects in Chile. The company explores for copper, iron ore, gold, and other base and precious metals. Its flagship project is the Marimaca Copper project located in the Antofagasta Region of Chile. The company was formerly known as Coro Mining Corp. and changed its name to Marimaca Copper Corp. in May 2020. Marimaca Copper Corp. was incorporated in 2004 and is headquartered in Las Condes, Chile.",
         "currency": "EUR",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -74,7 +86,7 @@
     "ENAEX.SN": {
         "short_name": "ENAEX SA",
         "long_name": "Enaex S.A.",
-        "summary": "Enaex S.A. produces and sells explosives in Chile, Latin America, and internationally. It provides blasting agents, raw materials for blasting agents, high explosives, initiating systems, and blasting accessories. The company offers ammonium nitrate, boosters, dynamites, and cartridge emulsions, as well as detonators. It also provides services for mining and civil works; explosives and raw materials; explosives transportation; explosive charging; stemming, tie-up, and blast-hole firing; and magazines administration services. In addition, the company offers rock-breaking and blasting, blasting agents loading, surface lashing, blast hole covering, drilling checks, blasting engineering, and other services. The company was founded in 1920 and is headquartered in Las Condes, Chile.",
+        "summary": "Enaex S.A. produces and sells explosives in Chile, Latin America, and internationally. The company provides blasting agents, raw materials for blasting agents, high explosives, initiating systems, and blasting accessories. It offers ammonium nitrate, boosters, dynamites, and cartridge emulsions, as well as detonators. The company also provides services for mining and civil works; explosives and raw materials; explosives transportation; explosive charging; stemming, tie-up, and blast-hole firing; and magazines administration services. In addition, it offers rock-breaking and blasting, blasting agents loading, surface lashing, blast hole covering, drilling checks, blasting engineering, and other services. The company was founded in 1920 and is headquartered in Las Condes, Chile. Enaex S.A. is a subsidiary of Sigdo Koppers S.A.",
         "currency": "CLP",
         "sector": "Basic Materials",
         "industry": "Specialty Chemicals",
@@ -82,18 +94,6 @@
         "market": "cl_market",
         "country": "Chile",
         "city": "Las Condes"
-    },
-    "FOSFOROS.SN": {
-        "short_name": "CHILENA FOSFOROS",
-        "long_name": "Compa\u00f1\u00eda Chilena de F\u00f3sforos S.A.",
-        "summary": "Compa\u00c3\u00b1\u00c3\u00ada Chilena de F\u00c3\u00b3sforos S.A., together with its subsidiaries, engages in the production and marketing of security matches in Chile. The company also provides splints, and match and ice cream sticks, as well as wooden spatulas for mixing paints, moldings, latticework doors, and fruits. The company provides matches under the Los Andes, Copihue, Monarca, and Penley brands. It also exports its products to approximately 22 countries internationally. The company was founded in 1913 and is based in Santiago, Chile.",
-        "currency": "CLP",
-        "sector": "Basic Materials",
-        "industry": "Lumber & Wood Production",
-        "exchange": "SGO",
-        "market": "cl_market",
-        "country": "Chile",
-        "city": "Santiago de Chile"
     },
     "FUTS": {
         "short_name": "FUTURE SCIENCE HOLDINGS INC",
@@ -107,22 +107,22 @@
         "country": "Chile",
         "city": "Santiago"
     },
-    "INFODEMA.SN": {
-        "short_name": "INFODEMA SA",
-        "long_name": "Infodema S.A.",
-        "summary": "Infodema S.A. manufactures, markets, and sells foliage and must-have sheets, and tertiary or plywood and veneer boards in Chile and internationally. The company was founded in 1942 and is based in Valdivia, Chile.",
+    "INVERCAP.SN": {
+        "short_name": "INVERCAP SA",
+        "long_name": "Invercap S.A.",
+        "summary": "Invercap S.A. engages in mining and steel businesses in Chile, Argentina, Brazil, and Peru. The company produces and sells steel products, including bars, flat products, structural tubes, pipes, and open profiles. It also provides shaped steel products for structural use and conduction of steel fluids for road safety and construction markets. In addition, the company operates hydroelectric plants. The company was founded in 1994 and is based in Santiago, Chile.",
         "currency": "CLP",
         "sector": "Basic Materials",
-        "industry": "Lumber & Wood Production",
+        "industry": "Steel",
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Valdivia"
+        "city": "Santiago de Chile"
     },
     "MARI.TO": {
         "short_name": "MARIMACA COPPER CORP",
         "long_name": "Marimaca Copper Corp.",
-        "summary": "Marimaca Copper Corp. engages in the acquisition, exploration, and exploitation of mineral properties and projects located in Chile. The company explores for copper, iron ore, gold, and other base and precious metals. It principally holds 51% interests in Marimaca copper oxide project located in the Antofagasta Region of northern Chile. The company was formerly known as Coro Mining Corp. and changed its name to Marimaca Copper Corp. in May 2020. Marimaca Copper Corp. was incorporated in 2004 and is headquartered in Las Condes, Chile.",
+        "summary": "Marimaca Copper Corp. engages in the acquisition, exploration, and exploitation of mineral properties and projects in Chile. The company explores for copper, iron ore, gold, and other base and precious metals. Its flagship project is the Marimaca Copper project located in the Antofagasta Region of Chile. The company was formerly known as Coro Mining Corp. and changed its name to Marimaca Copper Corp. in May 2020. Marimaca Copper Corp. was incorporated in 2004 and is headquartered in Las Condes, Chile.",
         "currency": "CAD",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -182,7 +182,7 @@
     "PUCOBRE.SN": {
         "short_name": "SOCIEDAD PUNTA DEL",
         "long_name": "Sociedad Punta del Cobre S.A.",
-        "summary": "Sociedad Punta del Cobre S.A., a mining company, engages in the exploitation of copper deposits primarily in the Atacama Region. Its mining operations include Mina Punta del Cobre, Mina Mantos de Cobre, and garnet mines. The company also develops El Espino project located in Coquimbo region and Tovaku project situated in Antofagasta region. In addition, it provides copper concentrates for foundries; and copper cathodes. The company was founded in 1989 and is based in Copiap\u00c3\u00b3, Chile.",
+        "summary": "Sociedad Punta del Cobre S.A., a mining company, engages in the exploitation of copper deposits primarily in the Atacama Region. It holds interest in Punta del Cobre, Copper Mantle Mine, Mina Granate, San Jose, and Biocobre mines located in the Atacama Region. The company also holds interests in the El Espino project located in Coquimbo region; and the Tovaku project located in Antofagasta region. Sociedad Punta del Cobre S.A. was founded in 1989 and is based in Copiap\u00c3\u00b3, Chile.",
         "currency": "CLP",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -194,14 +194,14 @@
     "QYM.F": {
         "short_name": "SOC. QUIMICA MIN.ADR B 1",
         "long_name": "Sociedad Qu\u00edmica y Minera de Chile S.A.",
-        "summary": "Sociedad Qu\u00c3\u00admica y Minera de Chile S.A. produces and distributes specialty plant nutrients, iodine and its derivatives, lithium and its derivatives, potassium chloride and sulfate, industrial chemicals, and other products and services. The company offers specialty plant nutrients, including potassium nitrate, sodium nitrate, sodium potassium nitrate, specialty blends, and other specialty fertilizers for crops, such as vegetables, fruits, and flowers under the Ultrasol, Qrop, Speedfol, and Allganic brands. It also provides iodine and its derivatives for use in medical, pharmaceutical, agricultural, and industrial applications comprising x-ray contrast media, polarizing films for LCD and LED, antiseptics, biocides and disinfectants, pharmaceutical synthesis, electronics, pigments, and dye components. In addition, the company offers lithium carbonates for various applications that include electrochemical materials for batteries, frits for the ceramic and enamel industries, heat-resistant glass, air conditioning chemicals, continuous casting powder for steel extrusion, primary aluminum smelting process, pharmaceuticals, and lithium derivatives. Further, it supplies lithium hydroxide for the lubricating greases industry, as well as cathodes for batteries. Additionally, it offers potassium chloride and potassium sulfate for various crops; industrial chemicals, including sodium nitrate, potassium nitrate, potassium chloride, and solar salts under the QSodiumNitrate, QPotassiumNitrate, and QPotassiumChloride brands; and other fertilizers and blends. The company sells its products through representative offices and distributors in Chile, North America, Europe, Central and South America, Asia, and internationally. Sociedad Qu\u00c3\u00admica y Minera de Chile S.A. was founded in 1968 and is headquartered in Santiago, Chile.",
+        "summary": "Sociedad Qu\u00c3\u00admica y Minera de Chile S.A. produces and distributes specialty plant nutrients, iodine and its derivatives, lithium and its derivatives, potassium chloride and sulfate, industrial chemicals, and other products and services worldwide. The company offers specialty plant nutrients, including potassium nitrate, sodium nitrate, sodium potassium nitrate, specialty blends, and other specialty fertilizers for crops, such as vegetables, fruits, and industrial crops. It also provides iodine and its derivatives for use in medical, pharmaceutical, agricultural, and industrial applications comprising x-ray contrast media, polarizing films for LCD and LED, antiseptics, biocides and disinfectants, pharmaceutical synthesis, electronics, pigments, and dye components. In addition, the company offers lithium carbonates for various applications that include electrochemical materials for batteries, frits for the ceramic and enamel industries, heat-resistant glass, air conditioning chemicals, continuous casting powder for steel extrusion, primary aluminum smelting process, pharmaceuticals, and lithium derivatives. Further, it supplies lithium hydroxide for the lubricating greases industry, as well as cathodes for batteries. Additionally, it offers potassium chloride and potassium sulfate for various crops, including corn, rice, sugar, soybean, and wheat; industrial chemicals, including sodium nitrate, potassium nitrate, potassium chloride, and solar salts; and other fertilizers and blends. The company was founded in 1968 and is headquartered in Santiago, Chile.",
         "currency": "EUR",
         "sector": "Basic Materials",
         "industry": "Chemicals",
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Chile",
-        "city": "Santiago"
+        "city": "Santiago de Chile"
     },
     "SOPROCAL.SN": {
         "short_name": "SOPROCAL CALERIAS",
@@ -227,41 +227,41 @@
         "country": "Chile",
         "city": "Santiago de Chile"
     },
+    "SQM-A.SN": {
+        "short_name": "QUIMICA Y MINERA",
+        "long_name": "Sociedad Qu\u00edmica y Minera de Chile S.A.",
+        "summary": "Sociedad Qu\u00c3\u00admica y Minera de Chile S.A. produces and distributes specialty plant nutrients, iodine and its derivatives, lithium and its derivatives, potassium chloride and sulfate, industrial chemicals, and other products and services worldwide. The company offers specialty plant nutrients, including potassium nitrate, sodium nitrate, sodium potassium nitrate, specialty blends, and other specialty fertilizers for crops, such as vegetables, fruits, and industrial crops. It also provides iodine and its derivatives for use in medical, pharmaceutical, agricultural, and industrial applications comprising x-ray contrast media, polarizing films for LCD and LED, antiseptics, biocides and disinfectants, pharmaceutical synthesis, electronics, pigments, and dye components. In addition, the company offers lithium carbonates for various applications that include electrochemical materials for batteries, frits for the ceramic and enamel industries, heat-resistant glass, air conditioning chemicals, continuous casting powder for steel extrusion, primary aluminum smelting process, pharmaceuticals, and lithium derivatives. Further, it supplies lithium hydroxide for the lubricating greases industry, as well as cathodes for batteries. Additionally, it offers potassium chloride and potassium sulfate for various crops, including corn, rice, sugar, soybean, and wheat; industrial chemicals, including sodium nitrate, potassium nitrate, potassium chloride, and solar salts; and other fertilizers and blends. The company was founded in 1968 and is headquartered in Santiago, Chile.",
+        "currency": "CLP",
+        "sector": "Basic Materials",
+        "industry": "Chemicals",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Santiago de Chile"
+    },
+    "SQM-B.SN": {
+        "short_name": "QUIMICA Y MINERA",
+        "long_name": "Sociedad Qu\u00edmica y Minera de Chile S.A.",
+        "summary": "Sociedad Qu\u00c3\u00admica y Minera de Chile S.A. produces and distributes specialty plant nutrients, iodine and its derivatives, lithium and its derivatives, potassium chloride and sulfate, industrial chemicals, and other products and services worldwide. The company offers specialty plant nutrients, including potassium nitrate, sodium nitrate, sodium potassium nitrate, specialty blends, and other specialty fertilizers for crops, such as vegetables, fruits, and industrial crops. It also provides iodine and its derivatives for use in medical, pharmaceutical, agricultural, and industrial applications comprising x-ray contrast media, polarizing films for LCD and LED, antiseptics, biocides and disinfectants, pharmaceutical synthesis, electronics, pigments, and dye components. In addition, the company offers lithium carbonates for various applications that include electrochemical materials for batteries, frits for the ceramic and enamel industries, heat-resistant glass, air conditioning chemicals, continuous casting powder for steel extrusion, primary aluminum smelting process, pharmaceuticals, and lithium derivatives. Further, it supplies lithium hydroxide for the lubricating greases industry, as well as cathodes for batteries. Additionally, it offers potassium chloride and potassium sulfate for various crops, including corn, rice, sugar, soybean, and wheat; industrial chemicals, including sodium nitrate, potassium nitrate, potassium chloride, and solar salts; and other fertilizers and blends. The company was founded in 1968 and is headquartered in Santiago, Chile.",
+        "currency": "CLP",
+        "sector": "Basic Materials",
+        "industry": "Chemicals",
+        "exchange": "SGO",
+        "market": "cl_market",
+        "country": "Chile",
+        "city": "Santiago de Chile"
+    },
     "SQM": {
         "short_name": "Sociedad Quimica y Minera S.A.",
         "long_name": "Sociedad Qu\u00edmica y Minera de Chile S.A.",
-        "summary": "Sociedad Qu\u00c3\u00admica y Minera de Chile S.A. produces and distributes specialty plant nutrients, iodine and its derivatives, lithium and its derivatives, potassium chloride and sulfate, industrial chemicals, and other products and services. The company offers specialty plant nutrients, including potassium nitrate, sodium nitrate, sodium potassium nitrate, specialty blends, and other specialty fertilizers for crops, such as vegetables, fruits, and flowers under the Ultrasol, Qrop, Speedfol, and Allganic brands. It also provides iodine and its derivatives for use in medical, pharmaceutical, agricultural, and industrial applications comprising x-ray contrast media, polarizing films for LCD and LED, antiseptics, biocides and disinfectants, pharmaceutical synthesis, electronics, pigments, and dye components. In addition, the company offers lithium carbonates for various applications that include electrochemical materials for batteries, frits for the ceramic and enamel industries, heat-resistant glass, air conditioning chemicals, continuous casting powder for steel extrusion, primary aluminum smelting process, pharmaceuticals, and lithium derivatives. Further, it supplies lithium hydroxide for the lubricating greases industry, as well as cathodes for batteries. Additionally, it offers potassium chloride and potassium sulfate for various crops; industrial chemicals, including sodium nitrate, potassium nitrate, potassium chloride, and solar salts under the QSodiumNitrate, QPotassiumNitrate, and QPotassiumChloride brands; and other fertilizers and blends. The company sells its products through representative offices and distributors in Chile, North America, Europe, Central and South America, Asia, and internationally. Sociedad Qu\u00c3\u00admica y Minera de Chile S.A. was founded in 1968 and is headquartered in Santiago, Chile.",
+        "summary": "Sociedad Qu\u00c3\u00admica y Minera de Chile S.A. produces and distributes specialty plant nutrients, iodine and its derivatives, lithium and its derivatives, potassium chloride and sulfate, industrial chemicals, and other products and services worldwide. The company offers specialty plant nutrients, including potassium nitrate, sodium nitrate, sodium potassium nitrate, specialty blends, and other specialty fertilizers for crops, such as vegetables, fruits, and industrial crops. It also provides iodine and its derivatives for use in medical, pharmaceutical, agricultural, and industrial applications comprising x-ray contrast media, polarizing films for LCD and LED, antiseptics, biocides and disinfectants, pharmaceutical synthesis, electronics, pigments, and dye components. In addition, the company offers lithium carbonates for various applications that include electrochemical materials for batteries, frits for the ceramic and enamel industries, heat-resistant glass, air conditioning chemicals, continuous casting powder for steel extrusion, primary aluminum smelting process, pharmaceuticals, and lithium derivatives. Further, it supplies lithium hydroxide for the lubricating greases industry, as well as cathodes for batteries. Additionally, it offers potassium chloride and potassium sulfate for various crops, including corn, rice, sugar, soybean, and wheat; industrial chemicals, including sodium nitrate, potassium nitrate, potassium chloride, and solar salts; and other fertilizers and blends. The company was founded in 1968 and is headquartered in Santiago, Chile.",
         "currency": "USD",
         "sector": "Basic Materials",
         "industry": "Chemicals",
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Chile",
-        "city": "Santiago"
-    },
-    "SQM-A.SN": {
-        "short_name": "QUIMICA Y MINERA",
-        "long_name": "Sociedad Qu\u00edmica y Minera de Chile S.A.",
-        "summary": "Sociedad Qu\u00c3\u00admica y Minera de Chile S.A. produces and distributes specialty plant nutrients, iodine and its derivatives, lithium and its derivatives, potassium chloride and sulfate, industrial chemicals, and other products and services. The company offers specialty plant nutrients, including potassium nitrate, sodium nitrate, sodium potassium nitrate, specialty blends, and other specialty fertilizers for crops, such as vegetables, fruits, and flowers under the Ultrasol, Qrop, Speedfol, and Allganic brands. It also provides iodine and its derivatives for use in medical, pharmaceutical, agricultural, and industrial applications comprising x-ray contrast media, polarizing films for LCD and LED, antiseptics, biocides and disinfectants, pharmaceutical synthesis, electronics, pigments, and dye components. In addition, the company offers lithium carbonates for various applications that include electrochemical materials for batteries, frits for the ceramic and enamel industries, heat-resistant glass, air conditioning chemicals, continuous casting powder for steel extrusion, primary aluminum smelting process, pharmaceuticals, and lithium derivatives. Further, it supplies lithium hydroxide for the lubricating greases industry, as well as cathodes for batteries. Additionally, it offers potassium chloride and potassium sulfate for various crops; industrial chemicals, including sodium nitrate, potassium nitrate, potassium chloride, and solar salts under the QSodiumNitrate, QPotassiumNitrate, and QPotassiumChloride brands; and other fertilizers and blends. The company sells its products through representative offices and distributors in Chile, North America, Europe, Central and South America, Asia, and internationally. Sociedad Qu\u00c3\u00admica y Minera de Chile S.A. was founded in 1968 and is headquartered in Santiago, Chile.",
-        "currency": "CLP",
-        "sector": "Basic Materials",
-        "industry": "Chemicals",
-        "exchange": "SGO",
-        "market": "cl_market",
-        "country": "Chile",
-        "city": "Santiago"
-    },
-    "SQM-B.SN": {
-        "short_name": "QUIMICA Y MINERA",
-        "long_name": "Sociedad Qu\u00edmica y Minera de Chile S.A.",
-        "summary": "Sociedad Qu\u00c3\u00admica y Minera de Chile S.A. produces and distributes specialty plant nutrients, iodine and its derivatives, lithium and its derivatives, potassium chloride and sulfate, industrial chemicals, and other products and services. The company offers specialty plant nutrients, including potassium nitrate, sodium nitrate, sodium potassium nitrate, specialty blends, and other specialty fertilizers for crops, such as vegetables, fruits, and flowers under the Ultrasol, Qrop, Speedfol, and Allganic brands. It also provides iodine and its derivatives for use in medical, pharmaceutical, agricultural, and industrial applications comprising x-ray contrast media, polarizing films for LCD and LED, antiseptics, biocides and disinfectants, pharmaceutical synthesis, electronics, pigments, and dye components. In addition, the company offers lithium carbonates for various applications that include electrochemical materials for batteries, frits for the ceramic and enamel industries, heat-resistant glass, air conditioning chemicals, continuous casting powder for steel extrusion, primary aluminum smelting process, pharmaceuticals, and lithium derivatives. Further, it supplies lithium hydroxide for the lubricating greases industry, as well as cathodes for batteries. Additionally, it offers potassium chloride and potassium sulfate for various crops; industrial chemicals, including sodium nitrate, potassium nitrate, potassium chloride, and solar salts under the QSodiumNitrate, QPotassiumNitrate, and QPotassiumChloride brands; and other fertilizers and blends. The company sells its products through representative offices and distributors in Chile, North America, Europe, Central and South America, Asia, and internationally. Sociedad Qu\u00c3\u00admica y Minera de Chile S.A. was founded in 1968 and is headquartered in Santiago, Chile.",
-        "currency": "CLP",
-        "sector": "Basic Materials",
-        "industry": "Chemicals",
-        "exchange": "SGO",
-        "market": "cl_market",
-        "country": "Chile",
-        "city": "Santiago"
+        "city": "Santiago de Chile"
     },
     "STUV.V": {
         "short_name": "STUVE GOLD CORP",
@@ -275,16 +275,16 @@
         "country": "Chile",
         "city": null
     },
-    "TXDC.F": {
-        "short_name": "CERRO GRANDE MINING CORP.",
-        "long_name": "Cerro Grande Mining Corporation",
-        "summary": "Cerro Grande Mining Corporation engages in the acquisition, exploration, and development of mineral properties in Chile. The company explores for gold, silver, and copper deposits. It holds interest in Tordillo project. The company was formerly known as South American Gold and Copper Company Limited and changed its name to Cerro Grande Mining Corporation in March 2011. Cerro Grande Mining Corporation was founded in 1990 and is based in Providencia, Chile.",
-        "currency": "EUR",
+    "VOLCAN.SN": {
+        "short_name": "INDUSTRIAL VOLCAN",
+        "long_name": "Compa\u00f1\u00eda Industrial El Volc\u00e1n S.A.",
+        "summary": "Compa\u00c3\u00b1\u00c3\u00ada Industrial El Volc\u00c3\u00a1n S.A. produces and sells construction materials in Chile and internationally. The company offers inner liners, manhole covers, traditional and acoustic volcanoes, panels and laminates, perimeter walls, fa\u00c3\u00a7ade finishing products, plates for wet areas, impact plates, and plates with built-in color, as well as plasters, powders, and putties; and volcanites for wet areas, fire, hanging heavy elements, high hardness/impacts, radiological protection, and thermal insulation. It also provides commercial and industrial building insulation products, such as insulation for boilers and ponds, pipes, and industrial sheds, as well as thermal insulation products; ducts for air conditioning, heating, and ventilation; residential thermal insulation products; and flooring solutions, as well as volcanites with straight and curved shapes, and decoration. In addition, the company offers volcan products for agricultural use; and volcan accessories. The company was founded in 1916 and is based in Santiago, Chile.",
+        "currency": "CLP",
         "sector": "Basic Materials",
-        "industry": "Other Industrial Metals & Mining",
-        "exchange": "FRA",
-        "market": "dr_market",
+        "industry": "Building Materials",
+        "exchange": "SGO",
+        "market": "cl_market",
         "country": "Chile",
-        "city": "Providencia"
+        "city": "Santiago de Chile"
     }
 }

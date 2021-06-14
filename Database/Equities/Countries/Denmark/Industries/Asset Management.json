@@ -1,6 +1,6 @@
 {
     "25N.F": {
-        "short_name": "NEWCAP HLDG AS NAM.DK0,50",
+        "short_name": "NEWCAP HLDG AS NAM.DK0,05",
         "long_name": "Newcap Holding A/S",
         "summary": "Newcap Holding A/S does not have significant operations. Previously, it was involved in the provision of advice on savings and insurance intermediation, and asset management to individuals and companies in Sweden. Newcap Holding A/S was founded in 1989 and is based in Copenhagen, Denmark.",
         "currency": "EUR",
@@ -20,6 +20,18 @@
         "industry": "Asset Management",
         "exchange": "FRA",
         "market": "dr_market",
+        "country": "Denmark",
+        "city": "Copenhagen"
+    },
+    "EAC.CO": {
+        "short_name": "EAC Invest A/S",
+        "long_name": "EAC Invest A/S",
+        "summary": "EAC Invest A/S operates as an investment company. It produces acrylics in Thailand; and bottled water to hotels, embassies, and consulates in China. The company was formerly known as Santa Fe Group A/S and changed its name to EAC Invest A/S in November 2019. EAC Invest A/S was founded in 1897 and is based in Copenhagen, Denmark.",
+        "currency": "DKK",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "CPH",
+        "market": "dk_market",
         "country": "Denmark",
         "city": "Copenhagen"
     },

@@ -1,8 +1,32 @@
 {
+    "42T.SI": {
+        "short_name": "$ Trendlines",
+        "long_name": "The Trendlines Group Ltd.",
+        "summary": "The Trendlines Group Ltd. is an innovation commercialization company and a private equity and venture capital firm specializing in incubation, seed, start-up, early venture and late venture investments. The firm seeks to invest in food, clean technology, agritechnology, lifesciences with a focus on medical devices, biotechnology, and pharmaceuticals, security, medical, and information technology companies. It considers investments in Israel and Singapore. The firm offers business incubation, partner and channel development, market strategies, business plans, research and development and commercialization activities, business development, finance and funding strategies, administrative services and marketing communications services to entrepreneurs. The firm seeks to invest a minimum of $0.06 million in its portfolio companies. The firm prefers to exit its investments through merger and acquisition transactions, listing on public stock exchanges, or other dispositions of holdings. It leverages its own capital with government funding to mitigate risk in creating and developing new businesses. It is involved in all aspects of its portfolio companies from technology development to business building. The Trendlines Group Ltd. was founded in 1993 and is based in M.P. Misgav, Israel with additional offices in Tel Aviv, Israel; Beijing, China; and Singapore, Singapore.",
+        "currency": "SGD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "SES",
+        "market": "sg_market",
+        "country": "Israel",
+        "city": "M.P. Misgav"
+    },
     "ANLT.TA": {
         "short_name": "ANALYST INV MGT SV",
         "long_name": "Analyst I.M.S. Investment Management Services Ltd",
         "summary": "Analyst I.M.S. Investment Management Services Ltd is a publicly owned investment manager. The firm provided its services to private clients, private and public corporations and institutional clients. Through its subsidiaries, the firm provides portfolio management, financial services consulting, trust funds with different specializations, fund management, underwriting services, and management and consulting services for its clients. Analyst I.M.S. Investment Management Services Ltd was founded in 1985 and is based in Tel Aviv, Israel.",
+        "currency": "ILA",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "city": "Tel Aviv"
+    },
+    "ASPF.TA": {
+        "short_name": "ALTSHULER SHAHM",
+        "long_name": "Altshuler Shaham Provident Funds and Pension Ltd",
+        "summary": "Altshuler Shaham Provident Funds and Pension Ltd is a publicly owned investment manager. It invests in markets across the globe. The firm's investment strategies focus on long-term vision and maximizing asset potential over time. Altshuler Shaham Provident Funds and Pension Ltd was founded in 1990 and is based in Tel Aviv, Israel.",
         "currency": "ILA",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -47,6 +71,18 @@
         "country": "Israel",
         "city": "Ramat Gan"
     },
+    "FEAT-L.TA": {
+        "short_name": "FEAT FUND INVESTME",
+        "long_name": "Feat Fund Investments Limited Partnership",
+        "summary": "Feat Fund Investments-Limited Partnership invests in hi-tech companies. The company is based in Israel.",
+        "currency": "ILA",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "city": null
+    },
     "GNRS.TA": {
         "short_name": "GENERATION CAPITAL",
         "long_name": "Generation Capital Ltd",
@@ -58,18 +94,6 @@
         "market": "il_market",
         "country": "Israel",
         "city": "Herzliya"
-    },
-    "HAIN.TA": {
-        "short_name": "HALMANALDUB INV",
-        "long_name": "Halman Aldubi Investment House Ltd",
-        "summary": "Halman Aldubi Investment House Ltd is a government pension plan sponsor. The firm provides medium and long term savings and investment products in Israel. The company offers pension funds, provident funds, study funds, individual retirement account, and investment portfolio management services. It serves private, business, and institutional clients. The firm was formerly known as Halman - Aldubi Provident and Pension Funds Ltd. Halman Aldubi Investment House Ltd was founded in 1995 and is based in Holon, Israel.",
-        "currency": "ILA",
-        "sector": "Financial Services",
-        "industry": "Asset Management",
-        "exchange": "TLV",
-        "market": "il_market",
-        "country": "Israel",
-        "city": "Holon"
     },
     "MISH.TA": {
         "short_name": "MIVTACH SHAMIR HDS",
@@ -121,15 +145,27 @@
     },
     "SPRG.TA": {
         "short_name": "SPRING VENTURES",
-        "long_name": "Spring Ventures Ltd.",
-        "summary": "Spring Ventures Ltd. engages in technology related businesses in Israel. The company was formerly known as buy2 networks Ltd. and changed its name to Spring Ventures Ltd. in November 2016. Spring Ventures Ltd. was founded in 1999 and is based in Hod-Hasharon, Israel.",
+        "long_name": "Spring Ventures Ltd",
+        "summary": "Spring Ventures Ltd. Is a venture capital firm specializes in Seed stage, Series A stage and early stage investments. It typically invests in deep technology, SaaS with focus on business to business SaaS based models. It invests in private and public enterprises and companies primarily in the technology sector in Israel and internationally. The company develops technological tools, applications, and other properties in the internet and technology sectors, as well as invests in securities traded in Nasdaq Stock Exchange. It also provides management services in the electronic commerce sector. The company was formerly known as buy2 networks Ltd. and changed its name to Spring Ventures Ltd. in November 2016. Spring Ventures Ltd. was incorporated in 1999 and is based in Tel Aviv, Israel with an additional office in New York, New York.",
         "currency": "ILA",
         "sector": "Financial Services",
         "industry": "Asset Management",
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Hod-Hasharon"
+        "city": "Tel Aviv"
+    },
+    "STEC.TA": {
+        "short_name": null,
+        "long_name": "Shure-Tech Investments - Limited Partnership",
+        "summary": "Shure-Tech Investments - Limited Partnership engages in investment business. It focuses on investments in the fields of insurance and finance technologies. The company is based in Tel Aviv-Yafo, Israel.",
+        "currency": "ILA",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "city": "Tel Aviv-Yafo"
     },
     "TNPV.TA": {
         "short_name": "TECHNOPLUS VENTURE",
@@ -146,7 +182,7 @@
     "TRNLY": {
         "short_name": "THE TRENDLINES GROUP LTD.",
         "long_name": "The Trendlines Group Ltd.",
-        "summary": "The Trendlines Group Ltd. is an innovation commercialization company specializing in incubation and seed/start-up investments. The firm seeks to engage in investing and incubating innovation-based early-stage medical and agricultural technologies. It considers investments in Israel and Singapore. The firm offers business incubation, partner and channel development, market strategies, business plans, research and development and commercialization activities, business development, finance and funding strategies, administrative services and marketing communications services to entrepreneurs. The firm seeks to invest a minimum of $0.06 million in its portfolio companies. The firm prefers to exit its investments through merger and acquisition transactions, listing on public stock exchanges, or other dispositions of holdings. It leverages its own capital with government funding to mitigate risk in creating and developing new businesses. It is involved in all aspects of its portfolio companies from technology development to business building. The Trendlines Group Ltd. was founded in 2007 and is based in M.P. Misgav, Israel with additional offices in Tel Aviv, Israel; Beijing, China; and Singapore.",
+        "summary": "The Trendlines Group Ltd. is an innovation commercialization company and a private equity and venture capital firm specializing in incubation, seed, start-up, early venture and late venture investments. The firm seeks to invest in food, clean technology, agritechnology, lifesciences with a focus on medical devices, biotechnology, and pharmaceuticals, security, medical, and information technology companies. It considers investments in Israel and Singapore. The firm offers business incubation, partner and channel development, market strategies, business plans, research and development and commercialization activities, business development, finance and funding strategies, administrative services and marketing communications services to entrepreneurs. The firm seeks to invest a minimum of $0.06 million in its portfolio companies. The firm prefers to exit its investments through merger and acquisition transactions, listing on public stock exchanges, or other dispositions of holdings. It leverages its own capital with government funding to mitigate risk in creating and developing new businesses. It is involved in all aspects of its portfolio companies from technology development to business building. The Trendlines Group Ltd. was founded in 1993 and is based in M.P. Misgav, Israel with additional offices in Tel Aviv, Israel; Beijing, China; and Singapore, Singapore.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Asset Management",

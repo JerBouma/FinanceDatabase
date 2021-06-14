@@ -1,4 +1,16 @@
 {
+    "5CR0.F": {
+        "short_name": "SIXTY SIX CAPITAL INC.",
+        "long_name": "Sixty Six Capital Inc.",
+        "summary": "Sixty Six Capital Inc. provides co-location and cloud computing services. The company engages in the high-performance computing, storage, and information processing activities. It also invests in various technology sectors, such as crypto tokens and crypto finance. The company was formerly known as Hydro66 Holdings Corp. and changed its name to Sixty Six Capital Inc. in April 2021. Sixty Six Capital Inc. is headquartered in London, the United Kingdom.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
     "AFN.L": {
         "short_name": "ADVFN PLC ORD 0.2P",
         "long_name": "ADVFN Plc",
@@ -14,7 +26,7 @@
     "AFX.L": {
         "short_name": "ALPHA FX GROUP PLC ORD 0.2P",
         "long_name": "Alpha FX Group plc",
-        "summary": "Alpha FX Group plc provides foreign exchange services in the United Kingdom and internationally. Its activities comprise initial design and implementation of hedging strategies, as well as ongoing management and monitoring of currency risks. The company sells forward currency contracts, foreign exchange spot transactions, payments and collections, and option contracts. It serves corporates and institutions that are exposed to currency market volatility. The company was formerly known as Alpha Capital Limited. Alpha FX Group PLC was founded in 2009 and is headquartered in London, the United Kingdom.",
+        "summary": "Alpha FX Group plc provides foreign exchange risk management and alternative banking solutions in the United Kingdom and internationally. The company offers forward currency contracts, option contracts, foreign exchange spot transactions, and payments collections and currency accounts services. It serves corporates and institutions that are exposed to currency market volatility. The company was formerly known as Alpha Capital Limited. Alpha FX Group PLC was founded in 2009 and is based in London, the United Kingdom.",
         "currency": "GBp",
         "sector": "Financial Services",
         "industry": "Capital Markets",
@@ -24,7 +36,7 @@
         "city": "London"
     },
     "AGFX.L": {
-        "short_name": null,
+        "short_name": "ARGENTEX GROUP PLC ORD 001",
         "long_name": "Argentex Group Plc",
         "summary": "Argentex Group PLC provides foreign exchange services for businesses worldwide. Its product offering includes spot, forward, and options FX capabilities provided primarily through voice broking channels. The company serves corporate, institutional, and private clients. Argentex Group PLC was founded in 2011 and is headquartered in London, the United Kingdom.",
         "currency": "GBp",
@@ -47,6 +59,18 @@
         "country": "United Kingdom",
         "city": "Manchester"
     },
+    "ARB.L": {
+        "short_name": "ARGO BLOCKCHAIN PLC ORD 0.1P",
+        "long_name": "Argo Blockchain plc",
+        "summary": "Argo Blockchain plc, together with its subsidiary, Argo Blockchain Canada Holdings Inc., engages in the crypto asset mining services worldwide. The company was formerly known as GoSun Blockchain Limited and changed its name to Argo Blockchain plc in December 2017. The company was founded in 2017 and is headquartered in London, the United Kingdom.",
+        "currency": "GBp",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
     "ARBKF": {
         "short_name": "ARGO BLOCKCHAIN PLC",
         "long_name": "Argo Blockchain plc",
@@ -62,7 +86,7 @@
     "ARDN.L": {
         "short_name": "ARDEN PARTNERS PLC ORD 10P",
         "long_name": "Arden Partners plc",
-        "summary": "Arden Partners plc operates as a multi-service stockbroker that provides a range of financial services to corporate and institutional clients in the United Kingdom. The company is involved in the equity research, sales, sales trading, and market making activities. It also offers corporate advisory services, such as corporate finance advice, takeovers, and new issues; corporate brokerage services; and wealth management services to high net worth private clients, as well as M&A, sponsor, and NOMAD services. Arden Partners plc was founded in 2002 and is based in Birmingham, the United Kingdom.",
+        "summary": "Arden Partners plc operates as a multi-service stockbroker for small and mid-cap companies in the United Kingdom. It provides various financial services consisting of corporate advisory, such as nominated adviser and sponsor services, strategic corporate finance advice and strategic reviews, and capital restructurings, as well as services related to takeover codes and new issues; corporate broking and investor relations; equity sales and trading; equity research; and wealth management services. Arden Partners plc was founded in 2002 and is based in Birmingham, the United Kingdom.",
         "currency": "GBp",
         "sector": "Financial Services",
         "industry": "Capital Markets",
@@ -82,6 +106,18 @@
         "market": "us_market",
         "country": "United Kingdom",
         "city": "Ongar"
+    },
+    "BYA1.SG": {
+        "short_name": "QUANTUM BLOCKCHAIN TECHNOLOGIES",
+        "long_name": "Quantum Blockchain Technologies Plc",
+        "summary": "Clear Leisure plc, formerly known as Brainspark plc, is a private equity and venture capital firm specializing in investments in mid venture, early stage, turnaround, medium-sized companies, and considers pre-IPO opportunities as well. It seeks to invest in leisure, real estate, interactive media, financial services, renewable & alternative energy sector and technology related investments specially interactive media, blockchain and artificial intelligence sectors. It also prefers to invest in the entertainment sector with specific focus on theme park sector. The firm does not have any geographical restrictions. However, it seeks to invest in companies based in Europe, China, Middle East, United Kingdom, Italy and India. The focus of management is to pursue the monetisation of all of the Company's existing assets, through selected realisations, court-led recoveries of misappropriated assets and substantial debt-recovery processes. The firm seeks to invest between $0.1 million and $15 million in the portfolio companies. The firm's investments range from acquiring minority positions with strategic influence through to larger controlling positions. It seeks board seat in its investee companies. The firm seeks to invest in first rounds together with other institutional investors and also makes balance sheet investments. It exits its investments through initial public offering or trade sale. Clear Leisure plc was founded in 1999 and is based in London, United Kingdom with an additional office in Milano, Italy.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "STU",
+        "market": "dr_market",
+        "country": "United Kingdom",
+        "city": "London"
     },
     "CBG.L": {
         "short_name": "CLOSE BROTHERS GROUP PLC ORD 25",
@@ -122,12 +158,24 @@
     "CNKS.L": {
         "short_name": "CENKOS SECURITIES PLC ORD 1P",
         "long_name": "Cenkos Securities plc",
-        "summary": "Cenkos Securities plc, together with its subsidiaries, provides corporate finance, nomad and broking, and research and execution services to small and mid-cap growth companies and investment funds in the United Kingdom. The company offers technical advice on various forms of corporate transactions, including IPOs, fundraisings, mergers and acquisitions, disposals, restructurings, and tender offers. It also provides transactional advice, strategic advice, and regulatory guidance, as well as assistance with investor relations and research; and execution services comprising liquidity and facilitate institutional business, making markets in small and large cap equities and investment funds. The company was founded in 2004 and is headquartered in London, the United Kingdom.",
+        "summary": "Cenkos Securities plc, together with its subsidiaries, provides corporate finance, nomad and broking, and research and execution services to small and mid-cap growth companies and investment funds in the United Kingdom. The company offers technical advice on various forms of corporate transactions, including IPOs, fundraisings, mergers and acquisitions, disposals, restructurings, and tender offers. It also provides transactional advice, strategic advice, and regulatory guidance services, as well as assistance with investor relations and research; and execution services comprising liquidity and facilitate institutional business, as well as making markets in small and large cap equities and investment funds. The company was incorporated in 2004 and is headquartered in London, the United Kingdom.",
         "currency": "GBp",
         "sector": "Financial Services",
         "industry": "Capital Markets",
         "exchange": "LSE",
         "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "CS3.F": {
+        "short_name": "CLOSE BROTH. GRP  LS-,25",
+        "long_name": "Close Brothers Group plc",
+        "summary": "Close Brothers Group plc, a merchant banking company, provides financial services to small businesses and individuals in the United Kingdom. It operates through five segments: Commercial, Retail, Property, Asset Management, and Securities. The company offers various deposit products, including fixed term deposits and notice accounts. It also provides asset finance, asset-based lending, commercial vehicle hire, short-term bridging finance, insurance premium finance, invoice discounting and factoring, and property finance products. In addition, the company offers funding services for general aviation aircraft, and various leisure and commercial vessels; sale and rent back services for the brewing sector; broker finance services to agriculture, construction, manufacturing, and transport industries; leasing services for construction, manufacturing, IT equipment, and specialist assets; and loan, hire purchase, leasing, and refinancing services to the professional service sector, including dental, medical, pharmacy, and veterinary sectors. Further, it provides financial education, investment management, and financial planning and advice services; self-directed services that help investors to manage their portfolio online; and services for financial advisers. Additionally, the company offers liquidity and flexible execution services to retail stockbrokers, wealth managers, and institutional investors; market making, sales, research, and corporate broking services; and dealing, custody, and settlement services to the institutional, wealth management, and brokerage clients. Close Brothers Group plc was founded in 1878 and is headquartered in London, the United Kingdom.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "United Kingdom",
         "city": "London"
     },
@@ -164,6 +212,30 @@
         "industry": "Capital Markets",
         "exchange": "LSE",
         "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "HYHDF": {
+        "short_name": "SIXTY SIX CAP INC",
+        "long_name": "Sixty Six Capital Inc.",
+        "summary": "Sixty Six Capital Inc. provides co-location and cloud computing services. The company engages in the high-performance computing, storage, and information processing activities. It also invests in various technology sectors, such as crypto tokens and crypto finance. The company was formerly known as Hydro66 Holdings Corp. and changed its name to Sixty Six Capital Inc. in April 2021. Sixty Six Capital Inc. is headquartered in London, the United Kingdom.",
+        "currency": "USD",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "I5G.F": {
+        "short_name": "IG GROUP HLDGS PLC",
+        "long_name": "IG Group Holdings plc",
+        "summary": "IG Group Holdings plc operates as a multi-platform trading company worldwide. It offers CFDs (contracts for difference), are derivative contracts that enable clients to take advantage of changes in an asset's price; and spread betting that allow clients to take advantage of changes in an asset's price without owning the asset itself, and to use the same range of risk-mitigation measures. The company also offers clients access to a range of risk-mitigation measures, including stops and limits and a limited risk account; and stock trading service, ISAs, and SIPPs. In addition, it provides a range of portfolios, which include commodities, equities, and fixed-income assets designed to match the degree of caution or aggression desired by the client; and exchange traded derivatives, as well as offers foreign exchange, market risk management, data distribution, nominee, finance, software development, publication, domains registry, foreign exchange trading, and translation services. The company was founded in 1974 and is headquartered in London, the United Kingdom.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "United Kingdom",
         "city": "London"
     },
@@ -218,7 +290,7 @@
     "JIM.L": {
         "short_name": "JARVIS SECURITIES PLC ORD 0.25P",
         "long_name": "Jarvis Securities plc",
-        "summary": "Jarvis Securities plc, through its subsidiary, Jarvis Investment Management Limited, provides a range of stock broking services to retail and institutional clients in the United Kingdom. The company offers retail execution-only stockbroking services; ISA and SIPP investment wrappers; savings schemes; and financial administration, settlement, and custody services to other stockbrokers and investment firms, as well as to individuals. It also provides outsourced investment administration and Model B settlement services. The company was incorporated in 2004 and is headquartered in Royal Tunbridge Wells, the United Kingdom.",
+        "summary": "Jarvis Securities plc, through its subsidiary, Jarvis Investment Management Limited, provides a range of stock broking services to retail and institutional clients in the United Kingdom. The company offers retail execution-only stockbroking services; ISA and SIPP investment wrappers; savings schemes; and financial administration, settlement, and custody services to other stockbrokers and investment firms, as well as to individuals. It also provides outsourced investment administration and Model B clearing and settlement services. The company was founded in 1984 and is headquartered in Royal Tunbridge Wells, the United Kingdom.",
         "currency": "GBp",
         "sector": "Financial Services",
         "industry": "Capital Markets",
@@ -226,6 +298,18 @@
         "market": "gb_market",
         "country": "United Kingdom",
         "city": "Royal Tunbridge Wells"
+    },
+    "K3C.L": {
+        "short_name": "K3 CAPITAL GROUP PLC ORD 1P",
+        "long_name": "K3 Capital Group PLC",
+        "summary": "K3 Capital Group PLC acts as a business sales specialist in the United Kingdom and internationally. The company provides business sale services that identify and match the sellers of SME businesses to trade, individual, and institutional buyers under the KBS Corporate brand; delivers deals to mid-market private equity and trade buyers under the KBS Corporate Finance brand; and offers business transfer services under the Knightsbridge brand. It also offers insolvency and restructuring, forensic accounting, corporate finance, pension, and financial advisory services under the Quantuma brand; and tax credit specialist services under the RandD brand. The company was founded in 1998 and is headquartered in Bolton, the United Kingdom.",
+        "currency": "GBp",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "Bolton"
     },
     "MAC.L": {
         "short_name": "MARECHALE CAPITAL PLC ORD 0.8P",
@@ -251,18 +335,6 @@
         "country": "United Kingdom",
         "city": "London"
     },
-    "N5C.F": {
-        "short_name": "TP ICAP PLC  LS -,25",
-        "long_name": "TP ICAP plc",
-        "summary": "TP ICAP plc, through its portfolio of businesses, provides intermediary services, contextual insights and intelligence, trade execution solutions, and data and analytics. It operates in four divisions: Global Broking, Energy & Commodities, Institutional Services, and Data & Analytics. The Global Broking division offers professional intermediary services that enable buyers and sellers to execute trades covering rates, foreign exchange and money markets, local markets, equities, and credit asset classes. The Energy & Commodities division assists its clients in energy and commodity transactions ranging from canvassing the market for expressions of interest to intelligence gathering, negotiations, commercial implementation, and post-transaction processing, as well as provides insights on unpredictable factors that affect energy and commodities markets. This division primarily focuses on the oil, gas, power, renewables, ferrous metals, base metals, precious metals, soft commodities, and coal markets. The Institutional Services division provides an agency sales and execution service in a range of asset classes for hedge funds, asset managers, and asset owners. The Data & Analytics division offers pricing, reference data, and analytical tools for making investment, portfolio analysis, valuation, risk management, and compliance decisions for various asset classes and markets. The company's clients include banks, insurance companies, pension funds, asset managers, hedge funds, governmental organizations, central banks, charities and endowment funds, energy producers and refiners, corporate treasurers, information analysts, risk and compliance managers, and those responsible for trading activities in their business. It primarily operates in the Americas, the Asia Pacific, Europe, the Middle East, and Africa. The company was incorporated in 2006 and is headquartered in London, the United Kingdom.",
-        "currency": "EUR",
-        "sector": "Financial Services",
-        "industry": "Capital Markets",
-        "exchange": "FRA",
-        "market": "dr_market",
-        "country": "United Kingdom",
-        "city": "London"
-    },
     "NUM.L": {
         "short_name": "NUMIS CORPORATION PLC ORD 5P",
         "long_name": "Numis Corporation Plc",
@@ -272,6 +344,30 @@
         "industry": "Capital Markets",
         "exchange": "LSE",
         "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "SIX.CN": {
+        "short_name": "SixtySixCapit",
+        "long_name": "Sixty Six Capital Inc.",
+        "summary": "Sixty Six Capital Inc. provides co-location and cloud computing services. The company engages in the high-performance computing, storage, and information processing activities. It also invests in various technology sectors, such as crypto tokens and crypto finance. The company was formerly known as Hydro66 Holdings Corp. and changed its name to Sixty Six Capital Inc. in April 2021. Sixty Six Capital Inc. is headquartered in London, the United Kingdom.",
+        "currency": "CAD",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "CNQ",
+        "market": "ca_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "T8Q.F": {
+        "short_name": "CMC MARKETS PLC  LS -,25",
+        "long_name": "CMC Markets plc",
+        "summary": "CMC Markets plc, together with its subsidiaries, provides online retail financial services to retail, professional, stockbroking, and institutional clients in Australia, the United Kingdom, and internationally. The company provides its clients with the ability to trade contracts for difference and financial spread betting on a range of underlying shares, indices, foreign currencies, commodities, and treasuries through its trading platform. It also offers Australian clients the opportunity to trade Australian and selected international instruments, including shares, options, managed funds, warrants, and exchange traded funds. In addition, the company provides its clients a range of education opportunities through weekly and monthly webinars and seminars, as well as Trader Development programme, which provides a range of in-platform, on-demand education, and tailored market commentary. CMC Markets plc was founded in 1989 and is headquartered in London, the United Kingdom.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "United Kingdom",
         "city": "London"
     },
@@ -287,27 +383,15 @@
         "country": "United Kingdom",
         "city": "Bracknell"
     },
-    "TCAP.L": {
-        "short_name": "TP ICAP PLC ORD 25P",
-        "long_name": "TP ICAP plc",
-        "summary": "TP ICAP plc, through its portfolio of businesses, provides intermediary services, contextual insights and intelligence, trade execution solutions, and data and analytics. It operates in four divisions: Global Broking, Energy & Commodities, Institutional Services, and Data & Analytics. The Global Broking division offers professional intermediary services that enable buyers and sellers to execute trades covering rates, foreign exchange and money markets, local markets, equities, and credit asset classes. The Energy & Commodities division assists its clients in energy and commodity transactions ranging from canvassing the market for expressions of interest to intelligence gathering, negotiations, commercial implementation, and post-transaction processing, as well as provides insights on unpredictable factors that affect energy and commodities markets. This division primarily focuses on the oil, gas, power, renewables, ferrous metals, base metals, precious metals, soft commodities, and coal markets. The Institutional Services division provides an agency sales and execution service in a range of asset classes for hedge funds, asset managers, and asset owners. The Data & Analytics division offers pricing, reference data, and analytical tools for making investment, portfolio analysis, valuation, risk management, and compliance decisions for various asset classes and markets. The company's clients include banks, insurance companies, pension funds, asset managers, hedge funds, governmental organizations, central banks, charities and endowment funds, energy producers and refiners, corporate treasurers, information analysts, risk and compliance managers, and those responsible for trading activities in their business. It primarily operates in the Americas, the Asia Pacific, Europe, the Middle East, and Africa. The company was incorporated in 2006 and is headquartered in London, the United Kingdom.",
+    "WHI.L": {
+        "short_name": "W.H. IRELAND GROUP PLC ORD 5P",
+        "long_name": "WH Ireland Group plc",
+        "summary": "WH Ireland Group plc, a financial services company, provides wealth management, wealth planning, and corporate and institutional broking services primarily in the United Kingdom and the Isle of Man. It operates through two segments, Wealth Management, and Corporate and Institutional Broking. The Wealth Management segment provides bespoke wealth management solutions and independent financial advisory services to retail clients. This segment also provides savings and investments, retirement and pensions, and estate planning, as well as discretionary and advisory services to individuals, corporates, trusts, funds, and institutional clients. The Corporate Broking segment offers corporate finance, advisory, broking, research, market making, and fund raising services to small and mid-cap corporate clients. This segment also acts as nominated adviser to clients listed on the Alternative Investment Market and engages in the institutional sales and research business, which carries out stockbroking activities on behalf of companies, as well as conducting research into markets of interest to its clients. WH Ireland Group plc also serves corporate clients across technology, consumer, support services, healthcare, natural resources and industrials sectors. The company was founded in 1872 and is headquartered in London, the United Kingdom.",
         "currency": "GBp",
         "sector": "Financial Services",
         "industry": "Capital Markets",
         "exchange": "LSE",
         "market": "gb_market",
-        "country": "United Kingdom",
-        "city": "London"
-    },
-    "TULLF": {
-        "short_name": "TP ICAP PLC",
-        "long_name": "TP ICAP plc",
-        "summary": "TP ICAP plc, through its portfolio of businesses, provides intermediary services, contextual insights and intelligence, trade execution solutions, and data and analytics. It operates in four divisions: Global Broking, Energy & Commodities, Institutional Services, and Data & Analytics. The Global Broking division offers professional intermediary services that enable buyers and sellers to execute trades covering rates, foreign exchange and money markets, local markets, equities, and credit asset classes. The Energy & Commodities division assists its clients in energy and commodity transactions ranging from canvassing the market for expressions of interest to intelligence gathering, negotiations, commercial implementation, and post-transaction processing, as well as provides insights on unpredictable factors that affect energy and commodities markets. This division primarily focuses on the oil, gas, power, renewables, ferrous metals, base metals, precious metals, soft commodities, and coal markets. The Institutional Services division provides an agency sales and execution service in a range of asset classes for hedge funds, asset managers, and asset owners. The Data & Analytics division offers pricing, reference data, and analytical tools for making investment, portfolio analysis, valuation, risk management, and compliance decisions for various asset classes and markets. The company's clients include banks, insurance companies, pension funds, asset managers, hedge funds, governmental organizations, central banks, charities and endowment funds, energy producers and refiners, corporate treasurers, information analysts, risk and compliance managers, and those responsible for trading activities in their business. It primarily operates in the Americas, the Asia Pacific, Europe, the Middle East, and Africa. The company was incorporated in 2006 and is headquartered in London, the United Kingdom.",
-        "currency": "USD",
-        "sector": "Financial Services",
-        "industry": "Capital Markets",
-        "exchange": "PNK",
-        "market": "us_market",
         "country": "United Kingdom",
         "city": "London"
     }

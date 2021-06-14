@@ -2,7 +2,7 @@
     "7BG.F": {
         "short_name": "BERGENBIO ASA",
         "long_name": "BerGenBio ASA",
-        "summary": "BerGenBio ASA, a clinical-stage biopharmaceutical company, develops medicines to treat immune evasive, drug resistant, and metastatic cancers. Its lead candidate is Bemcentinib, a bioavailable small molecule AXL inhibitor, which is in Phase II clinical development in two major cancer indications. The Phase II clinical trial program focuses on lung cancer, acute myeloid leukaemia, and myelodysplastic syndrome, as well as melanoma and triple negative breast cancer. In addition, it is developing tilvestamab, a function blocking antibody that is in Phase I clinical trial; and BGB601, a Phase I clinical trial antibody drug conjugate against human AXL that is linked to a cytotoxin. BerGenBio ASA has a collaboration agreement with Merck & Co. for clinical trials. The company was founded in 2007 and is headquartered in Bergen, Norway.",
+        "summary": "BerGenBio ASA, a clinical-stage biopharmaceutical company, engages in the developing drugs to treat immune evasive, drug resistant, and metastatic cancers. Its lead candidate is Bemcentinib, a bio-available small molecule AXL inhibitor, which is in Phase II clinical development in major cancer indications and COVID-19. The company's Phase II clinical trial program focuses on treatment of non-small cell lung cancer, acute myeloid leukaemia, and myelodysplastic syndrome, as well as COVID-19. In addition, it is developing tilvestamab, an anti-AXL antibody that is in Phase I clinical trial. BerGenBio ASA has a collaboration agreement with Merck & Co. for clinical trials. The company was incorporated in 2007 and is headquartered in Bergen, Norway.",
         "currency": "EUR",
         "sector": "Healthcare",
         "industry": "Biotechnology",
@@ -26,7 +26,7 @@
     "8NN.F": {
         "short_name": "NORDIC NANOVECTOR NK 0,20",
         "long_name": "Nordic Nanovector ASA",
-        "summary": "Nordic Nanovector ASA, a biopharmaceutical company, develops and commercializes therapeutics for haematological cancers. The company's lead product candidate is Betalutin, an antibody-radionuclide-conjugate, which has completed Phase I/IIa clinical trial for the treatment of patients with non-hodgkin lymphoma, a life-threatening blood cancer. Nordic Nanovector ASA has collaboration agreements with Paul Scherrer Institute; Areva Med; LegoChemBio; and Heidelberg Pharma. The company was formerly known as Nordic Nanovector AS and changed its name to Nordic Nanovector ASA in 2014. Nordic Nanovector ASA was founded in 2009 and is headquartered in Oslo, Norway.",
+        "summary": "Nordic Nanovector ASA, a biopharmaceutical company, develops and commercializes therapeutics for hematological cancers in Norway and internationally. The company's lead product candidate is Betalutin, a CD37-targeting antibody-radionuclide-conjugate, which is in Phase 2b clinical trial for the treatment of patients with non-hodgkin lymphoma. Its preclinical development product also includes Alpha37, an anti-CD37 alphaparticle emitting radioimmunoconjugate for treating chronic lymphatic leukemia. Nordic Nanovector ASA has collaboration agreements with Paul Scherrer Institute; Areva Med; LegoChem Bio; and Heidelberg Pharma. The company was formerly known as Nordic Nanovector AS and changed its name to Nordic Nanovector ASA in 2014. Nordic Nanovector ASA was incorporated in 2009 and is headquartered in Oslo, Norway.",
         "currency": "EUR",
         "sector": "Healthcare",
         "industry": "Biotechnology",
@@ -35,10 +35,58 @@
         "country": "Norway",
         "city": "Oslo"
     },
+    "8U5.MU": {
+        "short_name": "CIRCA GROUP  NK 1",
+        "long_name": "Circa Group AS",
+        "summary": "Circa Group AS engages in production and sale of biochemicals from waste biomass. Its products include Levoglucosenone, a valuable platform molecule; Cyrene, a chiral dipolar aprotic solvent from renewable cellulose; and Laiscent, a nature identical molecule. The company was founded in 2006 and is based in Oslo, Norway.",
+        "currency": "EUR",
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "exchange": "MUN",
+        "market": "dr_market",
+        "country": "Norway",
+        "city": "Oslo"
+    },
+    "ABS.OL": {
+        "short_name": "ARCTIC BIOSCIENCE",
+        "long_name": "Arctic Bioscience AS",
+        "summary": "Arctic Bioscience AS, a biotechnology company, provides nutraceutical and pharmaceutical products. It designs, produces, and sells intermediary and finished food supplements to businesses and consumers. The company is also developing a pharmaceutical product candidate HRO350, a novel oral treatment for mild-to-moderate psoriasis. In addition, it provides a subscription service for its nutraceutical Romega branded capsules. It serves in China, Hong Kong, Macao, Chile, France, Spain, Portugal, Germany, Poland, Austria, and internationally. Arctic Bioscience AS was incorporated in 2011 and is based in \u00c3\u0098rsta, Norway.",
+        "currency": "NOK",
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "exchange": "OSL",
+        "market": "no_market",
+        "country": "Norway",
+        "city": "\u00c3\u0098rsta"
+    },
+    "ABT.OL": {
+        "short_name": "AQUA BIO TECHNOLOG",
+        "long_name": "Aqua Bio Technology ASA",
+        "summary": "Aqua Bio Technology ASA engages in developing and commercializing active ingredients for use in skin care products in Norway. It offers Aquabeautine XL, a proprietary ingredient; and Spirulysat, an antioxidant for cosmetic use. The company also markets and distributes natural and skin care products to consumers, retailers, and professionals in Europe and the Middle East. It distributes its products through Internet, stores, and skin care clinics. The company markets and distributes organic skin care products under the Moana brand name in New Zealand and arctic skin care products under the Cuvget brand name in Norway. Aqua Bio Technology ASA was founded in 2000 and is based in Lysaker, Norway.",
+        "currency": "NOK",
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "exchange": "OSL",
+        "market": "no_market",
+        "country": "Norway",
+        "city": "Lysaker"
+    },
+    "AZT.OL": {
+        "short_name": "ARCTICZYMES TECH",
+        "long_name": "ArcticZymes Technologies ASA",
+        "summary": "ArcticZymes Technologies ASA, a life sciences company, develops, manufactures, and markets recombinant enzymes derived from cold-water marine species and organisms from other relevant environments for use in molecular research, in vitro diagnostics (IVD), and therapeutics in Norway, Europe, Asia, Australia, Africa, and the Americas. It offers shrimp alkaline phosphatase and derived kits for cleanup prior to Sanger sequencing and next generation sequencing (NGS) processes; cod UNG for use in viral and other molecular diagnostic assays; double-strand specific DNases and derived kits for the removal of double stranded DNA; polymerases for technology development for life science, molecular diagnostics, NGS, and synthetic biology; proteinase for microbiological diagnostics and liquid biopsies; salt active nuclease for the removal of nucleic acids during manufacturing of vaccines, viruses, recombinant proteins, and other reagents; and ligases for joining DNA fragments. The company was formerly known as Biotec Pharmacon ASA and changed its name to ArcticZymes Technologies ASA in June 2020. ArcticZymes Technologies ASA was incorporated in 1990 and is headquartered in Troms\u00c3\u00b8, Norway.",
+        "currency": "NOK",
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "exchange": "OSL",
+        "market": "no_market",
+        "country": "Norway",
+        "city": "Troms\u00c3\u00b8"
+    },
     "B4V.F": {
         "short_name": "ARCTICZYMES TECH ASA NK 1",
         "long_name": "ArcticZymes Technologies ASA",
-        "summary": "ArcticZymes Technologies ASA develops, manufactures, and markets immunomodulating beta-glucans and recombinant enzymes in Norway, Europe, Asia, Australia, Africa, and the Americas. It operates through two segments, Enzymes and Beta-Glucans. The company provides recombinant enzymes that are primarily derived from cold-water marine species and organisms from other relevant environments for use in molecular research, in vitro diagnostics, and therapeutics. It offers shrimp alkaline phosphatase and derived kits for cleanup prior to Sanger sequencing and next generation sequencing (NGS) processes; cod UNG for use in viral and other molecular diagnostic assays; double-strand specific DNases and derived kits for the removal of DNA from RNA samples; polymerases for technology development for life science, molecular diagnostics, NGS, and synthetic biology; proteinase for microbiological diagnostics and liquid biopsies; salt active nuclease for the removal of nucleic acids during manufacturing of vaccines, viruses, recombinant proteins, and other reagents; and ligases for joining DNA fragments. The company also provides immunomodulating beta-glucans products for the wound care, animal and consumer health, and adjuvants markets. It offers Woulgan wound gel; M-Glucan, a natural immune-stimulating product for fish and animal feed; and M-Gard, a natural immune-stimulating ingredients to enhance physical health. The company was formerly known as Biotec Pharmacon ASA and changed its name to ArcticZymes Technologies ASA in June 2020. ArcticZymes Technologies ASA was founded in 1990 and is headquartered in Troms\u00c3\u00b8, Norway.",
+        "summary": "ArcticZymes Technologies ASA, a life sciences company, develops, manufactures, and markets recombinant enzymes derived from cold-water marine species and organisms from other relevant environments for use in molecular research, in vitro diagnostics (IVD), and therapeutics in Norway, Europe, Asia, Australia, Africa, and the Americas. It offers shrimp alkaline phosphatase and derived kits for cleanup prior to Sanger sequencing and next generation sequencing (NGS) processes; cod UNG for use in viral and other molecular diagnostic assays; double-strand specific DNases and derived kits for the removal of double stranded DNA; polymerases for technology development for life science, molecular diagnostics, NGS, and synthetic biology; proteinase for microbiological diagnostics and liquid biopsies; salt active nuclease for the removal of nucleic acids during manufacturing of vaccines, viruses, recombinant proteins, and other reagents; and ligases for joining DNA fragments. The company was formerly known as Biotec Pharmacon ASA and changed its name to ArcticZymes Technologies ASA in June 2020. ArcticZymes Technologies ASA was incorporated in 1990 and is headquartered in Troms\u00c3\u00b8, Norway.",
         "currency": "EUR",
         "sector": "Healthcare",
         "industry": "Biotechnology",
@@ -50,7 +98,7 @@
     "BGBIO.OL": {
         "short_name": "BERGENBIO ASA",
         "long_name": "BerGenBio ASA",
-        "summary": "BerGenBio ASA, a clinical-stage biopharmaceutical company, develops medicines to treat immune evasive, drug resistant, and metastatic cancers. Its lead candidate is Bemcentinib, a bioavailable small molecule AXL inhibitor, which is in Phase II clinical development in two major cancer indications. The Phase II clinical trial program focuses on lung cancer, acute myeloid leukaemia, and myelodysplastic syndrome, as well as melanoma and triple negative breast cancer. In addition, it is developing tilvestamab, a function blocking antibody that is in Phase I clinical trial; and BGB601, a Phase I clinical trial antibody drug conjugate against human AXL that is linked to a cytotoxin. BerGenBio ASA has a collaboration agreement with Merck & Co. for clinical trials. The company was founded in 2007 and is headquartered in Bergen, Norway.",
+        "summary": "BerGenBio ASA, a clinical-stage biopharmaceutical company, engages in the developing drugs to treat immune evasive, drug resistant, and metastatic cancers. Its lead candidate is Bemcentinib, a bio-available small molecule AXL inhibitor, which is in Phase II clinical development in major cancer indications and COVID-19. The company's Phase II clinical trial program focuses on treatment of non-small cell lung cancer, acute myeloid leukaemia, and myelodysplastic syndrome, as well as COVID-19. In addition, it is developing tilvestamab, an anti-AXL antibody that is in Phase I clinical trial. BerGenBio ASA has a collaboration agreement with Merck & Co. for clinical trials. The company was incorporated in 2007 and is headquartered in Bergen, Norway.",
         "currency": "NOK",
         "sector": "Healthcare",
         "industry": "Biotechnology",
@@ -62,7 +110,7 @@
     "BRRGF": {
         "short_name": "BERGENBIO ASA",
         "long_name": "BerGenBio ASA",
-        "summary": "BerGenBio ASA, a clinical-stage biopharmaceutical company, develops medicines to treat immune evasive, drug resistant, and metastatic cancers. Its lead candidate is Bemcentinib, a bioavailable small molecule AXL inhibitor, which is in Phase II clinical development in two major cancer indications. The Phase II clinical trial program focuses on lung cancer, acute myeloid leukaemia, and myelodysplastic syndrome, as well as melanoma and triple negative breast cancer. In addition, it is developing tilvestamab, a function blocking antibody that is in Phase I clinical trial; and BGB601, a Phase I clinical trial antibody drug conjugate against human AXL that is linked to a cytotoxin. BerGenBio ASA has a collaboration agreement with Merck & Co. for clinical trials. The company was founded in 2007 and is headquartered in Bergen, Norway.",
+        "summary": "BerGenBio ASA, a clinical-stage biopharmaceutical company, engages in the developing drugs to treat immune evasive, drug resistant, and metastatic cancers. Its lead candidate is Bemcentinib, a bio-available small molecule AXL inhibitor, which is in Phase II clinical development in major cancer indications and COVID-19. The company's Phase II clinical trial program focuses on treatment of non-small cell lung cancer, acute myeloid leukaemia, and myelodysplastic syndrome, as well as COVID-19. In addition, it is developing tilvestamab, an anti-AXL antibody that is in Phase I clinical trial. BerGenBio ASA has a collaboration agreement with Merck & Co. for clinical trials. The company was incorporated in 2007 and is headquartered in Bergen, Norway.",
         "currency": "USD",
         "sector": "Healthcare",
         "industry": "Biotechnology",
@@ -71,10 +119,22 @@
         "country": "Norway",
         "city": "Bergen"
     },
+    "CIRCA.OL": {
+        "short_name": "CIRCA GROUP AS",
+        "long_name": "Circa Group AS",
+        "summary": "Circa Group AS engages in production and sale of biochemicals from waste biomass. Its products include Levoglucosenone, a valuable platform molecule; Cyrene, a chiral dipolar aprotic solvent from renewable cellulose; and Laiscent, a nature identical molecule. The company was founded in 2006 and is based in Oslo, Norway.",
+        "currency": "NOK",
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "exchange": "OSL",
+        "market": "no_market",
+        "country": "Norway",
+        "city": "Oslo"
+    },
     "EXTX.OL": {
         "short_name": "EXACT THERAPEUTICS",
         "long_name": "EXACT Therapeutics AS",
-        "summary": "EXACT Therapeutics AS, a clinical stage biotech company, develops a technology platform for targeted therapeutic enhancement, Acoustic Cluster Therapy (ACT). The ACT sonoporation is an approach to ultrasound-mediated, targeted drug enhancement with the potential to amplify the clinical utility of a range of therapeutic agents across various indications, including within oncology (chemotherapy and immunotherapy), infectious diseases, and neurological conditions. EXACT Therapeutics AS has a collaboration with GE Healthcare to develop an ultrasound probe to be used in studies using acoustic cluster therapy across various disease conditions. The company was founded in 2012 and is based in Oslo, Norway.",
+        "summary": "EXACT Therapeutics AS, a clinical stage biotech company, develops a technology platform for targeted therapeutic enhancement, Acoustic Cluster Therapy (ACT). The ACT sonoporation is an approach to ultrasound-mediated, targeted drug enhancement with the potential to amplify the clinical utility of a range of therapeutic agents across various indications, including within oncology, infectious diseases, and neurological conditions. EXACT Therapeutics AS has a collaboration with GE Healthcare to develop an ultrasound probe to be used in studies using acoustic cluster therapy across various disease conditions. The company was founded in 2012 and is based in Oslo, Norway.",
         "currency": "NOK",
         "sector": "Healthcare",
         "industry": "Biotechnology",
@@ -86,7 +146,7 @@
     "HBC.OL": {
         "short_name": "HOFSETH BIOCARE AS",
         "long_name": "Hofseth BioCare ASA",
-        "summary": "Hofseth BioCare ASA, a biotech company, offers value added biomarine ingredients and finished products for the human nutrition, and pet and feed markets in Norway. Its products include OmeGo salmon oil; ProGo, a salmon protein hydrolysate powder used as a fast absorbing protein supplement; and CalGo, a marine calcium powder produced from salmon bones that enhances bone density and bone deposition in older individuals. The company has a research agreement with Stanford University School of Medicine to investigate the gastro-intestinal-protective properties of HBC's salmon protein hydrolysate peptides in children and adults with GI tract disorders. The company was founded in 2000 and is headquartered in \u00c3\u0085lesund, Norway.",
+        "summary": "Hofseth BioCare ASA provides value added biomarine ingredients for human, pets, and animal feed markets in Norway and internationally. Its products include Brilliant salmon oil; OmeGo salmon oil for the maintenance of healthy cholesterol and cardiovascular function; ProGo, a salmon protein hydrolysate powder used as a fast absorbing protein supplement; CalGo, a marine calcium powder produced from salmon bones that enhances bone density and bone deposition in older individuals; and CollaGo, a collagen peptide powder to enhance the beauty of hair, skin, and nails. The company distributes its products through distributors, agents, and its own sales force. It has a research agreement with Stanford University School of Medicine for pre-clinical and clinical research on necrotizing enterocolitis and irritable bowel syndrome. The company was founded in 2000 and is headquartered in \u00c3\u0085lesund, Norway.",
         "currency": "NOK",
         "sector": "Healthcare",
         "industry": "Biotechnology",
@@ -98,7 +158,7 @@
     "HBQ.F": {
         "short_name": "HOFSETH BIOCARE  NK 0,01",
         "long_name": "Hofseth BioCare ASA",
-        "summary": "Hofseth BioCare ASA, a biotech company, offers value added biomarine ingredients and finished products for the human nutrition, and pet and feed markets in Norway. Its products include OmeGo salmon oil; ProGo, a salmon protein hydrolysate powder used as a fast absorbing protein supplement; and CalGo, a marine calcium powder produced from salmon bones that enhances bone density and bone deposition in older individuals. The company has a research agreement with Stanford University School of Medicine to investigate the gastro-intestinal-protective properties of HBC's salmon protein hydrolysate peptides in children and adults with GI tract disorders. The company was founded in 2000 and is headquartered in \u00c3\u0085lesund, Norway.",
+        "summary": "Hofseth BioCare ASA provides value added biomarine ingredients for human, pets, and animal feed markets in Norway and internationally. Its products include Brilliant salmon oil; OmeGo salmon oil for the maintenance of healthy cholesterol and cardiovascular function; ProGo, a salmon protein hydrolysate powder used as a fast absorbing protein supplement; CalGo, a marine calcium powder produced from salmon bones that enhances bone density and bone deposition in older individuals; and CollaGo, a collagen peptide powder to enhance the beauty of hair, skin, and nails. The company distributes its products through distributors, agents, and its own sales force. It has a research agreement with Stanford University School of Medicine for pre-clinical and clinical research on necrotizing enterocolitis and irritable bowel syndrome. The company was founded in 2000 and is headquartered in \u00c3\u0085lesund, Norway.",
         "currency": "EUR",
         "sector": "Healthcare",
         "industry": "Biotechnology",
@@ -110,7 +170,7 @@
     "HOFBF": {
         "short_name": "HOFSETH BIOCARE AS",
         "long_name": "Hofseth BioCare ASA",
-        "summary": "Hofseth BioCare ASA, a biotech company, offers value added biomarine ingredients and finished products for the human nutrition, and pet and feed markets in Norway. Its products include OmeGo salmon oil; ProGo, a salmon protein hydrolysate powder used as a fast absorbing protein supplement; and CalGo, a marine calcium powder produced from salmon bones that enhances bone density and bone deposition in older individuals. The company has a research agreement with Stanford University School of Medicine to investigate the gastro-intestinal-protective properties of HBC's salmon protein hydrolysate peptides in children and adults with GI tract disorders. The company was founded in 2000 and is headquartered in \u00c3\u0085lesund, Norway.",
+        "summary": "Hofseth BioCare ASA provides value added biomarine ingredients for human, pets, and animal feed markets in Norway and internationally. Its products include Brilliant salmon oil; OmeGo salmon oil for the maintenance of healthy cholesterol and cardiovascular function; ProGo, a salmon protein hydrolysate powder used as a fast absorbing protein supplement; CalGo, a marine calcium powder produced from salmon bones that enhances bone density and bone deposition in older individuals; and CollaGo, a collagen peptide powder to enhance the beauty of hair, skin, and nails. The company distributes its products through distributors, agents, and its own sales force. It has a research agreement with Stanford University School of Medicine for pre-clinical and clinical research on necrotizing enterocolitis and irritable bowel syndrome. The company was founded in 2000 and is headquartered in \u00c3\u0085lesund, Norway.",
         "currency": "USD",
         "sector": "Healthcare",
         "industry": "Biotechnology",
@@ -118,6 +178,18 @@
         "market": "us_market",
         "country": "Norway",
         "city": "\u00c3\u0085lesund"
+    },
+    "NANOV.OL": {
+        "short_name": "NORDIC NANOVECTOR",
+        "long_name": "Nordic Nanovector ASA",
+        "summary": "Nordic Nanovector ASA, a biopharmaceutical company, develops and commercializes therapeutics for hematological cancers in Norway and internationally. The company's lead product candidate is Betalutin, a CD37-targeting antibody-radionuclide-conjugate, which is in Phase 2b clinical trial for the treatment of patients with non-hodgkin lymphoma. Its preclinical development product also includes Alpha37, an anti-CD37 alphaparticle emitting radioimmunoconjugate for treating chronic lymphatic leukemia. Nordic Nanovector ASA has collaboration agreements with Paul Scherrer Institute; Areva Med; LegoChem Bio; and Heidelberg Pharma. The company was formerly known as Nordic Nanovector AS and changed its name to Nordic Nanovector ASA in 2014. Nordic Nanovector ASA was incorporated in 2009 and is headquartered in Oslo, Norway.",
+        "currency": "NOK",
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "exchange": "OSL",
+        "market": "no_market",
+        "country": "Norway",
+        "city": "Oslo"
     },
     "PCIB.OL": {
         "short_name": "PCI BIOTECH HLDG",
@@ -146,19 +218,31 @@
     "TA5.F": {
         "short_name": "TARGOVAX ASA  NK -,10",
         "long_name": "Targovax ASA",
-        "summary": "Targovax ASA, a clinical stage immuno-oncology company, engages in the development of oncolytic viruses to target hard-to-treat solid tumors. Its lead product candidate is ONCOS-102 that is in Phase I/II clinical studies for the treatment of mesothelioma, melanoma, peritoneal disease, and prostate cancer. It also develops neoantigen cancer vaccines targeting tumors with oncogenic RAS\u00c2\u0096mutations. The company has collaboration agreements with Cancer Research Institute, Ludwig Cancer Research, and AstraZeneca to develop ONCOS-102 for peritoneal disease; Sotio to develop ONCOS-102 for prostate cancer; Valo Therapeutics to develop RAS neoantigen coating of ONCOS viruses using PeptiCRAd technology; and Merck & Co., Inc. to evaluate ONCOS-102 in combination with KEYTRUDA in mesothelioma. Targovax ASA is based in Oslo, Norway.",
+        "summary": "Targovax ASA, a clinical stage immuno-oncology company, engages in the development of immune activators to target hard-to-treat solid tumors. Its lead product candidate is ONCOS-102, which is in Phase I/II clinical studies for the treatment of mesothelioma, melanoma, and colorectal cancer. The company is also developing neoantigen cancer vaccines targeting tumors with oncogenic RAS\u00c2\u0096mutations. In addition, it is developing ONCOS-211 for next generation ONCOS viruses. The company has collaboration agreements with Cancer Research Institute and Ludwig Cancer Research to develop ONCOS-102 for colorectal cancer with peritoneal carcinomatosis; Valo Therapeutics to develop mutant RAS neoantigen coating of ONCOS viruses using PeptiCRAd technology; and Papyrus Therapeutics to develop novel ONCOS viruses with Receptor Tyrosine Kinase inhibitor functionality. Targovax ASA was incorporated in 2010 and is based in Lysaker, Norway.",
         "currency": "EUR",
         "sector": "Healthcare",
         "industry": "Biotechnology",
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Oslo"
+        "city": "Lysaker"
     },
     "TRVX.OL": {
         "short_name": "TARGOVAX ASA",
         "long_name": "Targovax ASA",
-        "summary": "Targovax ASA, a clinical stage immuno-oncology company, engages in the development of oncolytic viruses to target hard-to-treat solid tumors. Its lead product candidate is ONCOS-102 that is in Phase I/II clinical studies for the treatment of mesothelioma, melanoma, peritoneal disease, and prostate cancer. It also develops neoantigen cancer vaccines targeting tumors with oncogenic RAS\u00c2\u0096mutations. The company has collaboration agreements with Cancer Research Institute, Ludwig Cancer Research, and AstraZeneca to develop ONCOS-102 for peritoneal disease; Sotio to develop ONCOS-102 for prostate cancer; Valo Therapeutics to develop RAS neoantigen coating of ONCOS viruses using PeptiCRAd technology; and Merck & Co., Inc. to evaluate ONCOS-102 in combination with KEYTRUDA in mesothelioma. Targovax ASA is based in Oslo, Norway.",
+        "summary": "Targovax ASA, a clinical stage immuno-oncology company, engages in the development of immune activators to target hard-to-treat solid tumors. Its lead product candidate is ONCOS-102, which is in Phase I/II clinical studies for the treatment of mesothelioma, melanoma, and colorectal cancer. The company is also developing neoantigen cancer vaccines targeting tumors with oncogenic RAS\u00c2\u0096mutations. In addition, it is developing ONCOS-211 for next generation ONCOS viruses. The company has collaboration agreements with Cancer Research Institute and Ludwig Cancer Research to develop ONCOS-102 for colorectal cancer with peritoneal carcinomatosis; Valo Therapeutics to develop mutant RAS neoantigen coating of ONCOS viruses using PeptiCRAd technology; and Papyrus Therapeutics to develop novel ONCOS viruses with Receptor Tyrosine Kinase inhibitor functionality. Targovax ASA was incorporated in 2010 and is based in Lysaker, Norway.",
+        "currency": "NOK",
+        "sector": "Healthcare",
+        "industry": "Biotechnology",
+        "exchange": "OSL",
+        "market": "no_market",
+        "country": "Norway",
+        "city": "Lysaker"
+    },
+    "ULTI.OL": {
+        "short_name": "ULTIMOVACS ASA",
+        "long_name": "Ultimovacs ASA",
+        "summary": "Ultimovacs ASA, a pharmaceutical company, develops immunotherapies for various cancers. The company engages in performing a clinical development program with clinical trials in Europe and the United States. Its lead product candidate is UV1, a peptide-based vaccine, which completed Phase I clinical trial that induces T cell response against the universal cancer antigen telomerase. The company was founded in 2011 and is headquartered in Oslo, Norway.",
         "currency": "NOK",
         "sector": "Healthcare",
         "industry": "Biotechnology",

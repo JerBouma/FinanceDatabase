@@ -227,10 +227,10 @@
         "country": "Brazil",
         "city": "Natal"
     },
-    "DEIPY": {
-        "short_name": "RIO PARANAPANEMA ENERGIA SA",
-        "long_name": "Rio Paranapanema Energia S.A.",
-        "summary": "Rio Paranapanema Energia S.A. generates and sells electric power in Brazil. It operates and manages eight hydroelectric power plants on the Paranapanema River; and two small hydroelectric plants located at Sapuca\u00c3\u00ad River that have an installed capacity of 2,297.76 megawatts. The company was formerly known as Duke Energy International, Gera\u00c3\u00a7\u00c3\u00a3o Paranapanema S.A. and changed its name to Rio Paranapanema Energia S.A. in January 2017. The company was founded in 1999 and is headquartered in Sao Paulo, Brazil. Rio Paranapanema Energia S.A. is a subsidiary of Rio Paranapanema Participa\u00c3\u00a7\u00c3\u00b5es S.A.",
+    "CTPZY": {
+        "short_name": "CIA TRANSMISSAO ENER ELETR PAUL",
+        "long_name": "CTEEP - Companhia de Transmiss\u00e3o de Energia El\u00e9trica Paulista S.A.",
+        "summary": "CTEEP \u00c2\u0096 Companhia de Transmiss\u00c3\u00a3o de Energia El\u00c3\u00a9trica Paulista S.A. engages in the electric power transmission business in Brazil. As of February 2, 2021, it had a total installed transformation capacity of 68,386 MVA together with transmission lines of 18,786 kilometers (km); 26,074 km of circuits; and 128 substations. It operates in the states of Rio Grande do Sul, Santa Catarina, Parana, Sao Paulo, Minas Gerais, Rondonia, Mato Grosso, Mato Grosso do Sul, Goias, Tocantins, Maranhao, Piaui, Paraiba, Pernambuco, Alagoas, Espirito Santo, and Bahia. The company was incorporated in 1999 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "USD",
         "sector": "Utilities",
         "industry": "Utilities - Regulated Electric",
@@ -238,18 +238,6 @@
         "market": "us_market",
         "country": "Brazil",
         "city": "S\u00c3\u00a3o Paulo"
-    },
-    "EBR": {
-        "short_name": "Centrais Electricas Brasileiras",
-        "long_name": "Centrais El\u00e9tricas Brasileiras S.A. - Eletrobr\u00e1s",
-        "summary": "Centrais El\u00c3\u00a9tricas Brasileiras S.A. - Eletrobras, through its subsidiaries, engages in the generation, transmission, and distribution of electricity in Brazil. The company generates electricity through hydroelectric, thermal, nuclear, wind, and solar plants. As of December 31, 2019, it owned and operated 35 hydroelectric plants with a total installed capacity of 46,258.65 megawatts; seven thermal plants, including coal, and oil and gas power generation units with a total installed capacity of 1,770 megawatts; and two nuclear power plants comprising Angra I with an installed capacity of 640 megawatts and Angra II an installed capacity of 1,350 megawatts. It also operates 64,138 kilometers of transmission lines. The company was founded in 1962 and is based in Rio de Janeiro, Brazil.",
-        "currency": "USD",
-        "sector": "Utilities",
-        "industry": "Utilities - Regulated Electric",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "Brazil",
-        "city": "Rio De Janeiro"
     },
     "EBR-B": {
         "short_name": "Centrais Electricas Brasileiras",
@@ -263,20 +251,32 @@
         "country": "Brazil",
         "city": "Rio De Janeiro"
     },
-    "EEEL3.SA": {
-        "short_name": "CEEE,GT     ON      N1",
-        "long_name": "Companhia Estadual de Gera\u00e7\u00e3o e Transmiss\u00e3o de Energia El\u00e9trica - CEEE-GT",
-        "summary": "Companhia Estadual de Gera\u00c3\u00a7\u00c3\u00a3o e Transmiss\u00c3\u00a3o de Energia El\u00c3\u00a9trica - CEEE-GT engages in the generation, transmission, distribution, and sale of electricity in the state of Rio Grande do Sul, Brazil. The company operates hydroelectric plants; and approximately 6000 kilometers of power transmission lines, as well as distributes electricity in 72 municipalities. It provides electricity to approximately 1.7 million people. The company was founded in 1943 and is based in Porto Alegre, Brazil. Companhia Estadual de Gera\u00c3\u00a7\u00c3\u00a3o e Transmiss\u00c3\u00a3o de Energia El\u00c3\u00a9trica - CEEE-GT is a subsidiary of Companhia Estadual de Energia Eletrica Participa\u00c3\u00a7\u00c3\u00b5es.",
-        "currency": "BRL",
+    "EBR.BA": {
+        "short_name": "CENTRAIS ELET BRAS",
+        "long_name": "Centrais El\u00e9tricas Brasileiras S.A. - Eletrobr\u00e1s",
+        "summary": "Centrais El\u00c3\u00a9tricas Brasileiras S.A. - Eletrobras, through its subsidiaries, engages in the generation, transmission, and distribution of electricity in Brazil. The company generates electricity through hydroelectric, thermal, nuclear, wind, and solar plants. As of December 31, 2019, it owned and operated 35 hydroelectric plants with a total installed capacity of 46,258.65 megawatts; seven thermal plants, including coal, and oil and gas power generation units with a total installed capacity of 1,770 megawatts; and two nuclear power plants comprising Angra I with an installed capacity of 640 megawatts and Angra II an installed capacity of 1,350 megawatts. It also operates 64,138 kilometers of transmission lines. The company was founded in 1962 and is based in Rio de Janeiro, Brazil.",
+        "currency": "ARS",
         "sector": "Utilities",
         "industry": "Utilities - Regulated Electric",
-        "exchange": "SAO",
-        "market": "br_market",
+        "exchange": "BUE",
+        "market": "ar_market",
         "country": "Brazil",
-        "city": "Porto Alegre"
+        "city": "Rio De Janeiro"
     },
-    "EEEL4.SA": {
-        "short_name": "CEEE-GT     PN      N1",
+    "EBR": {
+        "short_name": "Centrais Electricas Brasileiras",
+        "long_name": "Centrais El\u00e9tricas Brasileiras S.A. - Eletrobr\u00e1s",
+        "summary": "Centrais El\u00c3\u00a9tricas Brasileiras S.A. - Eletrobras, through its subsidiaries, engages in the generation, transmission, and distribution of electricity in Brazil. The company generates electricity through hydroelectric, thermal, nuclear, wind, and solar plants. As of December 31, 2019, it owned and operated 35 hydroelectric plants with a total installed capacity of 46,258.65 megawatts; seven thermal plants, including coal, and oil and gas power generation units with a total installed capacity of 1,770 megawatts; and two nuclear power plants comprising Angra I with an installed capacity of 640 megawatts and Angra II an installed capacity of 1,350 megawatts. It also operates 64,138 kilometers of transmission lines. The company was founded in 1962 and is based in Rio de Janeiro, Brazil.",
+        "currency": "USD",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "Brazil",
+        "city": "Rio De Janeiro"
+    },
+    "EEEL3.SA": {
+        "short_name": "CEEE,GT     ON      N1",
         "long_name": "Companhia Estadual de Gera\u00e7\u00e3o e Transmiss\u00e3o de Energia El\u00e9trica - CEEE-GT",
         "summary": "Companhia Estadual de Gera\u00c3\u00a7\u00c3\u00a3o e Transmiss\u00c3\u00a3o de Energia El\u00c3\u00a9trica - CEEE-GT engages in the generation, transmission, distribution, and sale of electricity in the state of Rio Grande do Sul, Brazil. The company operates hydroelectric plants; and approximately 6000 kilometers of power transmission lines, as well as distributes electricity in 72 municipalities. It provides electricity to approximately 1.7 million people. The company was founded in 1943 and is based in Porto Alegre, Brazil. Companhia Estadual de Gera\u00c3\u00a7\u00c3\u00a3o e Transmiss\u00c3\u00a3o de Energia El\u00c3\u00a9trica - CEEE-GT is a subsidiary of Companhia Estadual de Energia Eletrica Participa\u00c3\u00a7\u00c3\u00b5es.",
         "currency": "BRL",
@@ -347,6 +347,18 @@
         "country": "Brazil",
         "city": "Rio De Janeiro"
     },
+    "ELET5.SA": {
+        "short_name": "ELETROBRAS  PNA     N1",
+        "long_name": "Centrais El\u00e9tricas Brasileiras S.A. - Eletrobr\u00e1s",
+        "summary": "Centrais El\u00c3\u00a9tricas Brasileiras S.A. - Eletrobras, through its subsidiaries, engages in the generation, transmission, and distribution of electricity in Brazil. The company generates electricity through hydroelectric, thermal, nuclear, wind, and solar plants. As of December 31, 2019, it owned and operated 35 hydroelectric plants with a total installed capacity of 46,258.65 megawatts; seven thermal plants, including coal, and oil and gas power generation units with a total installed capacity of 1,770 megawatts; and two nuclear power plants comprising Angra I with an installed capacity of 640 megawatts and Angra II an installed capacity of 1,350 megawatts. It also operates 64,138 kilometers of transmission lines. The company was founded in 1962 and is based in Rio de Janeiro, Brazil.",
+        "currency": "BRL",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": "Rio De Janeiro"
+    },
     "ELET6.SA": {
         "short_name": "ELETROBRAS  PNB     N1",
         "long_name": "Centrais El\u00e9tricas Brasileiras S.A. - Eletrobr\u00e1s",
@@ -394,6 +406,30 @@
         "market": "br_market",
         "country": "Brazil",
         "city": "S\u00c3\u00a3o Lu\u00c3\u00ads"
+    },
+    "EQPA3.SA": {
+        "short_name": "EQTL PARA   ON",
+        "long_name": "Equatorial Par\u00e1 Distribuidora de Energia S.A.",
+        "summary": "Equatorial Par\u00c3\u00a1 Distribuidora de Energia S.A. distributes electricity to residential, industrial, commercial, corporate, and rural customers in the state of Par\u00c3\u00a1. It distributes electricity in five regions, including Bel\u00c3\u00a9m, Castanhal, Marab\u00c3\u00a1, Santar\u00c3\u00a9m, and Altamira; and serves 144 municipalities comprising approximately 8.6 million customers. The company was founded in 1902 and is headquartered in Bel\u00c3\u00a9m, Brazil. Equatorial Par\u00c3\u00a1 Distribuidora de Energia S.A. operates as a subsidiary of Equatorial Energia S.A.",
+        "currency": "BRL",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": "Bel\u00c3\u00a9m"
+    },
+    "EQPA5.SA": {
+        "short_name": "EQTL PARA   PNA",
+        "long_name": "Equatorial Par\u00e1 Distribuidora de Energia S.A.",
+        "summary": "Equatorial Par\u00c3\u00a1 Distribuidora de Energia S.A. distributes electricity to residential, industrial, commercial, corporate, and rural customers in the state of Par\u00c3\u00a1. It distributes electricity in five regions, including Bel\u00c3\u00a9m, Castanhal, Marab\u00c3\u00a1, Santar\u00c3\u00a9m, and Altamira; and serves 144 municipalities comprising approximately 8.6 million customers. The company was founded in 1902 and is headquartered in Bel\u00c3\u00a9m, Brazil. Equatorial Par\u00c3\u00a1 Distribuidora de Energia S.A. operates as a subsidiary of Equatorial Energia S.A.",
+        "currency": "BRL",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": "Bel\u00c3\u00a9m"
     },
     "EQPA7.SA": {
         "short_name": "EQTL PARA   PNC",
@@ -467,6 +503,54 @@
         "country": "Brazil",
         "city": "Goi\u00c3\u00a2nia"
     },
+    "L3X.F": {
+        "short_name": "CENTRAIS EL.BR.ELETROBRAS",
+        "long_name": "Centrais El\u00e9tricas Brasileiras S.A. - Eletrobr\u00e1s",
+        "summary": "Centrais El\u00c3\u00a9tricas Brasileiras S.A. - Eletrobras, through its subsidiaries, engages in the generation, transmission, and distribution of electricity in Brazil. The company generates electricity through hydroelectric, thermal, nuclear, wind, and solar plants. As of December 31, 2019, it owned and operated 35 hydroelectric plants with a total installed capacity of 46,258.65 megawatts; seven thermal plants, including coal, and oil and gas power generation units with a total installed capacity of 1,770 megawatts; and two nuclear power plants comprising Angra I with an installed capacity of 640 megawatts and Angra II an installed capacity of 1,350 megawatts. It also operates 64,138 kilometers of transmission lines. The company was founded in 1962 and is based in Rio de Janeiro, Brazil.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Brazil",
+        "city": "Rio De Janeiro"
+    },
+    "L3XA.F": {
+        "short_name": "CENTRAIS EL.BR.ELET.PFD B",
+        "long_name": "Centrais El\u00e9tricas Brasileiras S.A. - Eletrobr\u00e1s",
+        "summary": "Centrais El\u00c3\u00a9tricas Brasileiras S.A. - Eletrobras, through its subsidiaries, engages in the generation, transmission, and distribution of electricity in Brazil. The company generates electricity through hydroelectric, thermal, nuclear, wind, and solar plants. As of December 31, 2019, it owned and operated 35 hydroelectric plants with a total installed capacity of 46,258.65 megawatts; seven thermal plants, including coal, and oil and gas power generation units with a total installed capacity of 1,770 megawatts; and two nuclear power plants comprising Angra I with an installed capacity of 640 megawatts and Angra II an installed capacity of 1,350 megawatts. It also operates 64,138 kilometers of transmission lines. The company was founded in 1962 and is based in Rio de Janeiro, Brazil.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Brazil",
+        "city": "Rio De Janeiro"
+    },
+    "L3XB.F": {
+        "short_name": "CENTRAIS EL.BR.EL. ADR 1",
+        "long_name": "Centrais El\u00e9tricas Brasileiras S.A. - Eletrobr\u00e1s",
+        "summary": "Centrais El\u00c3\u00a9tricas Brasileiras S.A. - Eletrobras, through its subsidiaries, engages in the generation, transmission, and distribution of electricity in Brazil. The company generates electricity through hydroelectric, thermal, nuclear, wind, and solar plants. As of December 31, 2019, it owned and operated 35 hydroelectric plants with a total installed capacity of 46,258.65 megawatts; seven thermal plants, including coal, and oil and gas power generation units with a total installed capacity of 1,770 megawatts; and two nuclear power plants comprising Angra I with an installed capacity of 640 megawatts and Angra II an installed capacity of 1,350 megawatts. It also operates 64,138 kilometers of transmission lines. The company was founded in 1962 and is based in Rio de Janeiro, Brazil.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Brazil",
+        "city": "Rio De Janeiro"
+    },
+    "L3XC.F": {
+        "short_name": "CENTRAIS EL.BR.EL.PFD ADR",
+        "long_name": "Centrais El\u00e9tricas Brasileiras S.A. - Eletrobr\u00e1s",
+        "summary": "Centrais El\u00c3\u00a9tricas Brasileiras S.A. - Eletrobras, through its subsidiaries, engages in the generation, transmission, and distribution of electricity in Brazil. The company generates electricity through hydroelectric, thermal, nuclear, wind, and solar plants. As of December 31, 2019, it owned and operated 35 hydroelectric plants with a total installed capacity of 46,258.65 megawatts; seven thermal plants, including coal, and oil and gas power generation units with a total installed capacity of 1,770 megawatts; and two nuclear power plants comprising Angra I with an installed capacity of 640 megawatts and Angra II an installed capacity of 1,350 megawatts. It also operates 64,138 kilometers of transmission lines. The company was founded in 1962 and is based in Rio de Janeiro, Brazil.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Brazil",
+        "city": "Rio De Janeiro"
+    },
     "LIPR3.SA": {
         "short_name": "ELETROPAR   ON",
         "long_name": "Eletrobras Participa\u00e7\u00f5es S.A. - Eletropar",
@@ -494,7 +578,7 @@
     "REDE3.SA": {
         "short_name": "REDE ENERGIAON",
         "long_name": "Rede Energia Participa\u00e7\u00f5es S.A.",
-        "summary": "Rede Energia Participa\u00c3\u00a7\u00c3\u00b5es S.A., through its subsidiaries, engages in the generation, distribution, and commercialization of electricity in Brazil. The company is also involved in the construction, operation, maintenance and related service operations. It offers its electricity to residential, industrial, commercial, agricultural, government, and public sector customers. The company was incorporated in 1969 and is based in Sao Paulo, Brazil. Rede Energia Participa\u00c3\u00a7\u00c3\u00b5es S.A. is a subsidiary of Energisa S.A.",
+        "summary": "Rede Energia Participa\u00c3\u00a7\u00c3\u00b5es S.A., through its subsidiaries, engages in the generation, distribution, and commercialization of electricity in Brazil. The company is also involved in the construction, operation, maintenance and related service operations. It offers its electricity to residential, industrial, commercial, agricultural, government, and public sector customers. The company was incorporated in 1969 and is based in Sao Paulo, Brazil.",
         "currency": "BRL",
         "sector": "Utilities",
         "industry": "Utilities - Regulated Electric",
@@ -542,7 +626,7 @@
     "TRPL3.SA": {
         "short_name": "TRAN PAULISTON      N1",
         "long_name": "CTEEP - Companhia de Transmiss\u00e3o de Energia El\u00e9trica Paulista S.A.",
-        "summary": "CTEEP \u00c2\u0096 Companhia de Transmiss\u00c3\u00a3o de Energia El\u00c3\u00a9trica Paulista S.A. engages in the electric power transmission business in Brazil. As of December 31, 2019, it had a total installed transformation capacity of 65,525 MVA together with transmission lines of 18,642 kilometers (km); 25,795 km of circuits; 2,358 km of fiber optic cables; and 126 substations with voltages up to 550 kV. It operates in the states of Rio Grande do Sul, Santa Catarina, Parana, Sao Paulo, Minas Gerais, Rondonia, Mato Grosso, Mato Grosso do Sul, Goias, Tocantins, Maranhao, Piaui, Paraiba, Pernambuco, Alagoas, and Espirito Santo. The company was founded in 1999 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
+        "summary": "CTEEP \u00c2\u0096 Companhia de Transmiss\u00c3\u00a3o de Energia El\u00c3\u00a9trica Paulista S.A. engages in the electric power transmission business in Brazil. As of February 2, 2021, it had a total installed transformation capacity of 68,386 MVA together with transmission lines of 18,786 kilometers (km); 26,074 km of circuits; and 128 substations. It operates in the states of Rio Grande do Sul, Santa Catarina, Parana, Sao Paulo, Minas Gerais, Rondonia, Mato Grosso, Mato Grosso do Sul, Goias, Tocantins, Maranhao, Piaui, Paraiba, Pernambuco, Alagoas, Espirito Santo, and Bahia. The company was incorporated in 1999 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "BRL",
         "sector": "Utilities",
         "industry": "Utilities - Regulated Electric",
@@ -554,7 +638,7 @@
     "TRPL4.SA": {
         "short_name": "TRAN PAULISTPN      N1",
         "long_name": "CTEEP - Companhia de Transmiss\u00e3o de Energia El\u00e9trica Paulista S.A.",
-        "summary": "CTEEP \u00c2\u0096 Companhia de Transmiss\u00c3\u00a3o de Energia El\u00c3\u00a9trica Paulista S.A. engages in the electric power transmission business in Brazil. As of December 31, 2019, it had a total installed transformation capacity of 65,525 MVA together with transmission lines of 18,642 kilometers (km); 25,795 km of circuits; 2,358 km of fiber optic cables; and 126 substations with voltages up to 550 kV. It operates in the states of Rio Grande do Sul, Santa Catarina, Parana, Sao Paulo, Minas Gerais, Rondonia, Mato Grosso, Mato Grosso do Sul, Goias, Tocantins, Maranhao, Piaui, Paraiba, Pernambuco, Alagoas, and Espirito Santo. The company was founded in 1999 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
+        "summary": "CTEEP \u00c2\u0096 Companhia de Transmiss\u00c3\u00a3o de Energia El\u00c3\u00a9trica Paulista S.A. engages in the electric power transmission business in Brazil. As of February 2, 2021, it had a total installed transformation capacity of 68,386 MVA together with transmission lines of 18,786 kilometers (km); 26,074 km of circuits; and 128 substations. It operates in the states of Rio Grande do Sul, Santa Catarina, Parana, Sao Paulo, Minas Gerais, Rondonia, Mato Grosso, Mato Grosso do Sul, Goias, Tocantins, Maranhao, Piaui, Paraiba, Pernambuco, Alagoas, Espirito Santo, and Bahia. The company was incorporated in 1999 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "BRL",
         "sector": "Utilities",
         "industry": "Utilities - Regulated Electric",

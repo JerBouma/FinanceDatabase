@@ -179,6 +179,12 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
+    "CUPUSD=X": {
+        "short_name": "CUP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "CVEUSD=X": {
         "short_name": "CVE/USD",
         "currency": "USD",
@@ -671,6 +677,12 @@
         "exchange": "CCY",
         "market": "ccy_market"
     },
+    "SYPUSD=X": {
+        "short_name": "SYP/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
     "SZLUSD=X": {
         "short_name": "SZL/USD",
         "currency": "USD",
@@ -781,6 +793,18 @@
     },
     "XOFUSD=X": {
         "short_name": "XOF/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARUSD=X": {
+        "short_name": "ZAR/USD",
+        "currency": "USD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZMWUSD=X": {
+        "short_name": "ZMW/USD",
         "currency": "USD",
         "exchange": "CCY",
         "market": "ccy_market"

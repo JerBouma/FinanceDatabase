@@ -9,13 +9,43 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "AGGY": {
+        "short_name": "WisdomTree Yield Enhanced U.S. ",
+        "long_name": "WisdomTree Yield Enhanced U.S. Aggregate Bond Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the Bloomberg Barclays US Aggregate Enhanced Yield Index (the \"index\").\n Under normal circumstances, the fund will invest at least 80% of its total asset in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is designed to broadly capture the U.S. investment grade, fixed income securities market while seeking to enhance yield within desired risk parameters and constraints. The fund is non-diversified.",
+        "category": "Intermediate-Term Bond",
+        "family": "WisdomTree",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "AVIG": {
+        "short_name": "Avantis Core Fixed Income ETF",
+        "long_name": "Avantis Core Fixed Income ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to maximize total return.\n The fund invests primarily in investment grade quality debt obligations from a diverse group of U.S. and non-U.S. issuers. Under normal market conditions, it will invest at least 80% of its net assets, plus any borrowings for investment purposes, in fixed income securities. The fund seeks to maintain a weighted average duration within 2 years of the weighted average duration of its benchmark, the Bloomberg Barclays U.S. Aggregate Bond index, as calculated by the manager.",
+        "category": "Intermediate-Term Bond",
+        "family": "Avantis Investors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "BIV": {
         "short_name": "Vanguard Intermediate-Term Bond",
         "long_name": "Vanguard Intermediate-Term Bond Index Fund ETF Shares",
         "currency": "USD",
-        "summary": "The investment seeks the performance of the Bloomberg Barclays U.S. 5-10 Year Government/Credit Float Adjusted Index.\n Bloomberg Barclays U.S. 5-10 Year Government/Credit Float Adjusted Index includes all medium and larger issues of U.S. government, investment-grade corporate and investment-grade international dollar-denominated bonds that have maturities between 5 and 10 years and are publicly issued. All of its investments will be selected through the sampling process, and at least 80% of its assets will be invested in bonds held in the index.",
+        "summary": "The investment seeks to track the performance of the Bloomberg Barclays U.S. 5-10 Year Government/Credit Float Adjusted Index.\n This index includes all medium and larger issues of U.S. government, investment-grade corporate and investment-grade international dollar-denominated bonds that have maturities between 5 and 10 years and are publicly issued. All of the fund&#39;s investments will be selected through the sampling process, and at least 80% of its assets will be invested in bonds held in the index.",
         "category": "Intermediate-Term Bond",
         "family": "Vanguard",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "BKAG": {
+        "short_name": "BNY Mellon Core Bond ETF",
+        "long_name": "BNY Mellon Core Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of the Bloomberg Barclays US Aggregate Total Return Index.\n To pursue its goal, the fund normally invests substantially all, but at least 80%, of its assets in bonds comprising the Bloomberg Barclays US Aggregate Total Return Index and TBA transactions representing bonds included in the index. The Bloomberg Barclays US Aggregate Total Return Index is designed to measure the investment grade, U.S. dollar-denominated, fixed-rate taxable bond market. It is non-diversified.",
+        "category": "Intermediate-Term Bond",
+        "family": "BNY Mellon",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -23,10 +53,10 @@
         "short_name": "Vanguard Total Bond Market ETF",
         "long_name": "Vanguard Total Bond Market Index Fund ETF Shares",
         "currency": "USD",
-        "summary": "The investment seeks the performance of Bloomberg Barclays U.S. Aggregate Float Adjusted Index.\n Bloomberg Barclays U.S. Aggregate Float Adjusted Index measures the performance of a wide spectrum of public, investment-grade, taxable, fixed income securities in the United States-including government, corporate, and international dollar-denominated bonds, as well as mortgage-backed and asset-backed securities-all with maturities of more than 1 year. All of its investments will be selected through the sampling process, and at least 80% of its assets will be invested in bonds held in the index.",
+        "summary": "The investment seeks to track the performance of the Bloomberg Barclays U.S. Aggregate Float Adjusted Index.\n This index measures the performance of a wide spectrum of public, investment-grade, taxable, fixed income securities in the United States-including government, corporate, and international dollar-denominated bonds, as well as mortgage-backed and asset-backed securities-all with maturities of more than 1 year. All of the fund&#39;s investments will be selected through the sampling process, and at least 80% of its assets will be invested in bonds held in the index.",
         "category": "Intermediate-Term Bond",
         "family": "Vanguard",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "BNDC": {
@@ -36,6 +66,16 @@
         "summary": "The investment seeks total return and preservation of capital.\n The fund invests at least 80% of its net assets in U.S. dollar-denominated investment-grade fixed-income securities either directly or indirectly through exchange-traded funds and other registered investment companies. The fund may invest, without limitation, in mortgage- or asset-backed securities, including to-be-announced transactions, and purchase and sell securities on a when-issued, delayed delivery or forward commitment basis.",
         "category": "Intermediate-Term Bond",
         "family": "Flexshares Trust",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "BTC": {
+        "short_name": "ClearShares Piton Intermediate ",
+        "long_name": "ClearShares Piton Intermediate Fixed Income ETF",
+        "currency": "USD",
+        "summary": "The investment seeks current income consistent with the long term preservation of capital.\n The fund is an actively managed exchange-traded fund (\"ETF\") that seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its net assets (plus borrowings for investment purposes) in debt securities and in derivatives and other instruments that have economic characteristics similar to such securities. It principally invests in U.S.-dollar denominated, investment-grade securities and seeks to typically maintain a dollar-weighted average portfolio maturity of zero to ten years. The fund is non-diversified.",
+        "category": "Intermediate-Term Bond",
+        "family": "ClearShares",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -59,6 +99,46 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "FIGB": {
+        "short_name": "Fidelity Investment Grade Bond ",
+        "long_name": "Fidelity Investment Grade Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks a high level of current income.\n The fund normally invests at least 80% of assets in investment-grade debt securities (those of medium and high quality) of all types and repurchase agreements for those securities. The adviser allocates assets across different market sectors and maturities. It invests in domestic and foreign issuers. The adviser analyzes the credit quality of the issuer, security-specific features, current and potential future valuation, and trading opportunities to select investments.",
+        "category": "Intermediate-Term Bond",
+        "family": "Fidelity Investments",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "FSEC": {
+        "short_name": "Fidelity Investment Grade Secur",
+        "long_name": "Fidelity Investment Grade Securitized ETF",
+        "currency": "USD",
+        "summary": "The investment seeks a high level of current income.\n The fund normally invests at least 80% of assets in investment-grade securitized debt securities (those of medium and high quality) and repurchase agreements for those securities. It invests in securitized debt securities issued by the U.S. government and its agencies or instrumentalities, foreign governments, and corporations. The fund invests in U.S. government securities issued by entities that are chartered or sponsored by Congress but whose securities are neither issued nor guaranteed by the U.S. Treasury.",
+        "category": "Intermediate-Term Bond",
+        "family": "Fidelity Investments",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "GBF": {
+        "short_name": "iShares Government/Credit Bond ",
+        "long_name": "iShares Government/Credit Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Bloomberg Barclays U.S. Government/Credit Bond Index (the \"underlying index\").\n The underlying index measures the performance of U.S. dollar-denominated U.S. Treasury bonds, government-related bonds and investment-grade U.S. corporate bonds that have a remaining maturity of greater than or equal to one year. The fund generally invests at least 90% of its assets in securities of the underlying index. It may invest the remainder of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the underlying index.",
+        "category": "Intermediate-Term Bond",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "GCOR": {
+        "short_name": "Goldman Sachs ETF Trust Goldman",
+        "long_name": "Goldman Sachs Access U.S. Aggregate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that closely correspond, before fees and expenses, to the performance of the FTSE Goldman Sachs US Broad Bond Market Index.\n The fund seeks to achieve its investment objective by investing at least 80% of its assets (exclusive of collateral held from securities lending) in securities included in its underlying index. The index is a rules-based index that is designed to measure the performance of investment grade, U.S. dollar (\u00e2\u0080\u009cUSD\u00e2\u0080\u009d)-denominated bonds issued in the United States that meet certain liquidity and fundamental screening criteria.",
+        "category": "Intermediate-Term Bond",
+        "family": "Goldman Sachs",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "GVI": {
         "short_name": "iShares Intermediate Government",
         "long_name": "iShares Intermediate Government/Credit Bond ETF",
@@ -66,6 +146,66 @@
         "summary": "The investment seeks to track the investment results of the Bloomberg Barclays U.S. Intermediate Government/Credit Bond Index.\n The fund generally invests at least 90% of its assets in securities of the underlying index. The index measures the performance of U.S. dollar-denominated U.S. Treasury bonds, government-related bonds (i.e., U.S. and non-U.S. agencies, sovereign, supranational and local authority debt) and investment-grade U.S. corporate bonds that have a remaining maturity of greater than one year and less than ten years.",
         "category": "Intermediate-Term Bond",
         "family": "iShares",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "HCRB": {
+        "short_name": "Hartford Core Bond ETF",
+        "long_name": "Hartford Core Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide long-term total return.\n Under normal circumstances, at least 80% of its net assets (including any borrowings for investment purposes) in fixed-income securities. The fund will invest primarily in investment grade fixed income securities. It may invest in securities and other instruments issued by both U.S. and foreign issuers.",
+        "category": "Intermediate-Term Bond",
+        "family": "Hartford Mutual Funds",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "HTAB": {
+        "short_name": "Hartford Schroders Tax-Aware Bo",
+        "long_name": "Hartford Schroders Tax-Aware Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks total return on an after-tax basis.\n The fund seeks to achieve its investment objective by investing in a diversified portfolio of fixed income debt instruments of varying maturities. Under normal circumstances, it invests at least 80% of its assets in U.S. dollar-denominated, investment-grade fixed income debt instruments. Fixed income debt instruments include bonds, debt securities and other similar instruments issued by various U.S. and non-U.S. public or private-sector entities.",
+        "category": "Intermediate-Term Bond",
+        "family": "Hartford Mutual Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "JAGG": {
+        "short_name": "JPMorgan U.S. Aggregate Bond ET",
+        "long_name": "JPMorgan U.S. Aggregate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide long-term total return.\n Under normal circumstances, the fund invests at least 80% of its assets in bonds denominated in U.S. dollars. The fund is actively managed and seeks to provide long-term return by principally investing in corporate bonds, U.S. treasury obligations and other U.S. government and agency securities, and asset-backed, mortgage-related and mortgage-backed securities, all of which are rated investment grade by a nationally recognized statistical rating organization or that are unrated but are deemed by the fund&#39;s adviser, J.P. Morgan Investment Management Inc. to be of comparable quality.",
+        "category": "Intermediate-Term Bond",
+        "family": "JPMorgan",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "NUAG": {
+        "short_name": "Nuveen Enhanced Yield U.S. Aggr",
+        "long_name": "Nuveen Enhanced Yield U.S. Aggregate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results, before fees and expenses, of the ICE BofAML Enhanced Yield U.S. Broad Bond Index (the \"index\").\n Under normal market conditions, the fund invests at least 80% of its assets, exclusive of collateral held from securities lending, in component securities of the index. The index consists of U.S. dollar-denominated, investment grade taxable debt securities with fixed rate coupons that have at least one year to final maturity.",
+        "category": "Intermediate-Term Bond",
+        "family": "Nuveen",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "NUBD": {
+        "short_name": "Nuveen ESG U.S. Aggregate Bond ",
+        "long_name": "Nuveen ESG U.S. Aggregate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results, before fees and expenses, of the Bloomberg Barclays MSCI U.S. Aggregate ESG Select Index (the \"index\").\n Under normal market conditions, the fund invests at least 80% of the sum of its net assets and the amount of any borrowings for investment purposes in component securities of the index. The index utilizes certain environmental, social, and governance (\"ESG\") criteria to select from the securities included in the Bloomberg Barclays U.S. Aggregate Bond Index (the \"base index\"), which is designed to broadly capture the U.S. investment grade, taxable fixed income market.",
+        "category": "Intermediate-Term Bond",
+        "family": "Nuveen",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "PBND": {
+        "short_name": "Invesco PureBeta US Aggregate B",
+        "long_name": "Invesco PureBeta US Aggregate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the ICE BofAML US Broad Market IndexSM.\n The fund generally will invest at least 80% of its total assets in the component securities that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, ICE Data Indices, LLC compiles, maintains and calculates the index, which is designed to measure the performance of the domestic investment grade bond market, represented by U.S. dollar-denominated, investment grade debt securities that are publicly offered for sale in the United States.",
+        "category": "Intermediate-Term Bond",
+        "family": "Invesco",
         "exchange": "BTS",
         "market": "us_market"
     },

@@ -11,9 +11,21 @@
         "country": "Belgium",
         "city": "Antwerp"
     },
+    "ASC.BR": {
+        "short_name": "ASCENCIO",
+        "long_name": "Ascencio SCA",
+        "summary": "Ascencio is based in Gosselies, Belgium.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "BRU",
+        "market": "be_market",
+        "country": "Belgium",
+        "city": "Gosselies"
+    },
     "IJX.F": {
-        "short_name": "VASTNED RETAIL BELGIUM",
-        "long_name": "Vastned Retail Belgium SA",
+        "short_name": "VASTNED BELGIUM S.A.",
+        "long_name": "Vastned Belgium",
         "summary": "Vastned Retail Belgium is a public regulated real estate company (RREC), the shares of which are listed on Euronext Brussels (VASTB). Vastned Retail Belgium invests exclusively in Belgian commercial real estate, more specifically in prime retail properties located on the best shopping streets in the major cities of Antwerp, Brussels, Ghent and Bruges. Furthermore, the real estate portfolio consists of inner-city shops outside of the premium cities, high-end retail parks and retail warehouses.",
         "currency": "EUR",
         "sector": "Real Estate",
@@ -35,8 +47,32 @@
         "country": "Belgium",
         "city": "Antwerp"
     },
+    "R6N.F": {
+        "short_name": "RETAIL ESTATES",
+        "long_name": "Retail Estates N.V.",
+        "summary": "The Belgian public real estate investment trust Retail Estates nv is a niche player specialised in making in out-of-town retail properties located on the periphery of residential areas or along main access roads to urban centres available to users. Real Estates NV acquires these real properties from third parties or builds and commercialises retail buildings for its own account. The buildings have useful areas ranging between 500m\u00c2\u00b2 and 3,000m\u00c2\u00b2. A typical retail building has an average area of 1,000 m\u00c2\u00b2.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Belgium",
+        "city": "Brussels"
+    },
+    "RET.BR": {
+        "short_name": "RETAIL ESTATES",
+        "long_name": "Retail Estates N.V.",
+        "summary": "The Belgian public real estate investment trust Retail Estates nv is a niche player specialised in making in out-of-town retail properties located on the periphery of residential areas or along main access roads to urban centres available to users. Real Estates NV acquires these real properties from third parties or builds and commercialises retail buildings for its own account. The buildings have useful areas ranging between 500m\u00c2\u00b2 and 3,000m\u00c2\u00b2. A typical retail building has an average area of 1,000 m\u00c2\u00b2.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "BRU",
+        "market": "be_market",
+        "country": "Belgium",
+        "city": "Brussels"
+    },
     "VASTB.BR": {
-        "short_name": "VASTNED RETAIL BEL",
+        "short_name": "VASTNED BELGIUM",
         "long_name": "Vastned Retail Belgium SA",
         "summary": "Vastned Retail Belgium is a public regulated real estate company (RREC), the shares of which are listed on Euronext Brussels (VASTB). Vastned Retail Belgium invests exclusively in Belgian commercial real estate, more specifically in prime retail properties located on the best shopping streets in the major cities of Antwerp, Brussels, Ghent and Bruges. Furthermore, the real estate portfolio consists of inner-city shops outside of the premium cities, high-end retail parks and retail warehouses.",
         "currency": "EUR",

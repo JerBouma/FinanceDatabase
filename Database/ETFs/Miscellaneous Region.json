@@ -3,7 +3,7 @@
         "short_name": "VanEck Vectors-Africa Index ETF",
         "long_name": "VanEck Vectors Africa Index ETF",
         "currency": "USD",
-        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the MVIS\u00c2\u00ae GDP Africa Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index includes local listings of companies that are incorporated in Africa and listings of companies incorporated outside of Africa but that have at least 50% of their revenues/related assets in Africa.",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the MVIS\u00c2\u00ae GDP Africa Index.\n The fund normallyinvests at least 80% of its total assets in securities that comprise the fund\u00e2\u0080\u0099s benchmark index. The index includes securities of African companies. African companies generally include local listings of companies that are incorporated in Africa and listings of companies incorporated outside of Africa but that have at least 50% of their revenues/related assets in Africa.",
         "category": "Miscellaneous Region",
         "family": "VanEck",
         "exchange": "PCX",
@@ -406,7 +406,7 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the NASDAQ AlphaDEX\u00c2\u00ae United Kingdom Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks, depositary receipts, real estate investment trusts (\"REITs\") and preferred shares that comprise the index. The index is designed to select stocks from the NASDAQ United Kingdom Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
         "category": "Miscellaneous Region",
         "family": "First Trust",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "FNI": {
@@ -449,13 +449,63 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "GXG": {
-        "short_name": "Global X MSCI Colombia ETF",
-        "long_name": "Global X MSCI Colombia ETF",
+    "HEWG": {
+        "short_name": "iShares Currency Hedged MSCI Ge",
+        "long_name": "iShares Currency Hedged MSCI Germany ETF",
         "currency": "USD",
-        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the MSCI All Colombia Select 25/50 Index.\n The fund invests at least 80% of its total assets in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. It also invests at least 80% of its total assets in securities of companies that are economically tied to Colombia. The underlying index is designed to represent the performance of the broad Colombia equity universe. The fund is non-diversified.",
+        "summary": "The investment seeks to track the investment results of the MSCI Germany 100% Hedged to USD Index.\n The fund generally will invest at least 90% of its assets in the component securities (including indirect investments through the underlying fund) and other instruments of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index primarily consists of stocks traded on the Frankfurt Stock Exchange with the currency risk inherent in the securities included in the underlying index hedged to the U.S. dollar on a monthly basis.",
         "category": "Miscellaneous Region",
-        "family": "Global X Funds",
+        "family": "iShares",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "HEWU": {
+        "short_name": "iShares Currency Hedged MSCI",
+        "long_name": "iShares Currency Hedged MSCI United Kingdom ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI United Kingdom 100% Hedged to USD Index.\n The fund generally will invest at least 80% of its assets in the component securities (including indirect investments through the underlying fund) and other instruments of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index primarily consists of stocks traded on the London Stock Exchange with the currency risk inherent in the securities included in the underlying index hedged to the U.S. dollar on a monthly basis.",
+        "category": "Miscellaneous Region",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "HEWW": {
+        "short_name": "iShares Currency Hedged MSCI Me",
+        "long_name": "iShares Currency Hedged MSCI Mexico ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI Mexico IMI 25/50 100% Hedged to USD Index.\n The fund generally will invest at least 80% of its assets in the component securities (including indirect investments through the underlying fund) and other instruments of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index primarily consists of stocks traded on the Mexican Stock Exchange with the currency risk inherent in the securities included in the underlying index hedged to the U.S. dollar on a monthly basis.",
+        "category": "Miscellaneous Region",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "ICOL": {
+        "short_name": "iShares Inc iShares MSCI Colomb",
+        "long_name": "iShares MSCI Colombia ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI All Colombia Capped Index composed of Colombian equities.\n The fund generally will invest at least 80% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is designed to represent the performance of the broad Colombia equity universe. The underlying index will include large-, mid- and small-capitalization companies and may change over time. The fund is non-diversified.",
+        "category": "Miscellaneous Region",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IDX": {
+        "short_name": "VanEck Vectors Indonesia Index ",
+        "long_name": "VanEck Vectors Indonesia Index ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the MVIS\u00c2\u00ae Indonesia Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index includes securities of Indonesian companies. A company is generally considered to be an Indonesian company if it is incorporated in Indonesia or is incorporated outside of Indonesia but has at least 50% of its revenues/related assets in Indonesia. Such companies may include small- and medium-capitalization companies. It is non-diversified.",
+        "category": "Miscellaneous Region",
+        "family": "VanEck",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "ISRA": {
+        "short_name": "VanEck Vectors Israel ETF",
+        "long_name": "VanEck Vectors Israel ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the BlueStar Israel Global Index\u00c2\u00ae.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index is comprised of equity securities, which may include depositary receipts, of publicly traded companies that are generally considered by MV Index Solutions GmbH to be Israeli companies. It may also utilize depositary receipts to seek performance that corresponds to the fund&#39;s benchmark index. The fund is non-diversified.",
+        "category": "Miscellaneous Region",
+        "family": "VanEck",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -469,16 +519,6 @@
         "exchange": "BTS",
         "market": "us_market"
     },
-    "KSA": {
-        "short_name": "iShares Trust iShares MSCI Saud",
-        "long_name": "iShares MSCI Saudi Arabia ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI Saudi Arabia IMI 25/50 Index.\n The fund generally will invest at least 90% of its assets in the component securities of the index and in investments that have economic characteristics that are substantially identical to the component securities of the index. The index is a free float-adjusted market capitalization-weighted index with a capping methodology applied to issuer weights so that no single issuer exceeds 25% of the index weight, and all issuers with a weight above 5% do not cumulatively exceed 50% of the index weight. The fund is non-diversified.",
-        "category": "Miscellaneous Region",
-        "family": "iShares",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
     "KWT": {
         "short_name": "iShares Trust iShares MSCI Kuwa",
         "long_name": "iShares MSCI Kuwait ETF",
@@ -489,24 +529,24 @@
         "exchange": "BTS",
         "market": "us_market"
     },
-    "NORW": {
-        "short_name": "Global X MSCI Norway ETF",
-        "long_name": "Global X MSCI Norway ETF",
+    "NGE": {
+        "short_name": "Global X MSCI Nigeria ETF",
+        "long_name": "Global X MSCI Nigeria ETF",
         "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the MSCI Norway IMI 25/50 Index.\n The fund invests at least 80% of its total assets in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The underlying index is designed to represent the performance of the broad Norway equity universe. The fund is non-diversified.",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the MSCI All Nigeria Select 25/50 Index.\n The fund will invest at least 80% of its total assets in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The underlying index is designed to represent the performance of the broad Nigeria equity universe, while including a minimum number of constituents. The fund is non-diversified.",
         "category": "Miscellaneous Region",
         "family": "Global X Funds",
         "exchange": "PCX",
         "market": "us_market"
     },
-    "QAT": {
-        "short_name": "iShares MSCI Qatar ETF",
-        "long_name": "iShares MSCI Qatar ETF",
+    "PGAL": {
+        "short_name": "Global X MSCI Portugal ETF",
+        "long_name": "Global X MSCI Portugal ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI All Qatar Capped Index.\n The fund will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index, which is designed to measure the equity market in Qatar, is a free float-adjusted market capitalization-weighted index with a capping methodology applied to issuer weights. The fund is non-diversified.",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the MSCI All Portugal Plus 25/50 Index.\n The fund will invest at least 80% of its total assets in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The underlying index is designed to represent the performance of the broad Portugal equity universe, while including a minimum number of constituents. The fund is non-diversified.",
         "category": "Miscellaneous Region",
-        "family": "iShares",
-        "exchange": "NMS",
+        "family": "Global X Funds",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "RSX": {
@@ -519,24 +559,44 @@
         "exchange": "BTS",
         "market": "us_market"
     },
+    "RSXJ": {
+        "short_name": "VanEck Vectors Russia Small-Cap",
+        "long_name": "VanEck Vectors Russia Small-Cap ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the MVIS\u00c2\u00ae Russia Small-Cap Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index includes securities of Russian small-capitalization companies. It will normally invest at least 80% of its total assets in securities of small-capitalization Russian companies. The fund is non-diversified.",
+        "category": "Miscellaneous Region",
+        "family": "VanEck",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "THD": {
+        "short_name": "iShares Inc iShares MSCI Thaila",
+        "long_name": "iShares MSCI Thailand ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI Thailand IMI 25/50 Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index primarily consists of stocks traded on the Stock Exchange of Thailand. A capping methodology is applied to issuer weights so that no single issuer exceeds 25% of the underlying index weight, and all issuers with a weight above 5% do not cumulatively exceed 50% of the underlying index weight. It is non-diversified.",
+        "category": "Miscellaneous Region",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "TUR": {
-        "short_name": "iShares MSCI Turkey Investable ",
+        "short_name": "iShares MSCI Turkey ETF",
         "long_name": "iShares MSCI Turkey ETF",
         "currency": "USD",
         "summary": "The investment seeks to track the investment results of the MSCI Turkey IMI 25/50 Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The underlying index primarily consists of stocks traded on the Istanbul Stock Exchange (ISE). The fund is non-diversified.",
         "category": "Miscellaneous Region",
         "family": "iShares",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "UAE": {
         "short_name": "iShares MSCI UAE ETF",
         "long_name": "iShares MSCI UAE ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI All UAE Capped Index composed of UAE equities.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is designed to measure the equity market in the United Arab Emirates (\"UAE\"). The fund is non-diversified.",
+        "summary": "The investment seeks to track the investment results of the MSCI All UAE Capped Index composed of UAE equities.\n The fund generally will invest at least 80% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is designed to measure the equity market in the United Arab Emirates (\"UAE\"). The fund is non-diversified.",
         "category": "Miscellaneous Region",
         "family": "iShares",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "VNM": {

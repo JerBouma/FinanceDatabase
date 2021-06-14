@@ -1,55 +1,6 @@
 {
-    "^HSCC": {
-        "short_name": "HANG SENG CHINA-AFFILIATED CORP",
-        "currency": "HKD",
-        "market": "hk_market",
-        "exchange": "HKG",
-        "exchange timezone": "HKT"
-    },
-    "^HSCE": {
-        "short_name": "HANG SENG CHINA ENTERPRISES IND",
-        "currency": "HKD",
-        "market": "hk_market",
-        "exchange": "HKG",
-        "exchange timezone": "HKT"
-    },
-    "^HSI": {
-        "short_name": "HANG SENG INDEX",
-        "currency": "HKD",
-        "market": "hk_market",
-        "exchange": "HKG",
-        "exchange timezone": "HKT"
-    },
-    "^HSIL": {
-        "short_name": "HSI VOLATILITY INDEX",
-        "currency": "HKD",
-        "market": "hk_market",
-        "exchange": "HKG",
-        "exchange timezone": "HKT"
-    },
-    "^HSNC": {
-        "short_name": "HANG SENG COMMERCE & INDUSTRY",
-        "currency": "HKD",
-        "market": "hk_market",
-        "exchange": "HKG",
-        "exchange timezone": "HKT"
-    },
-    "^HSNF": {
-        "short_name": "HANG SENG FINANCE INDEX",
-        "currency": "HKD",
-        "market": "hk_market",
-        "exchange": "HKG",
-        "exchange timezone": "HKT"
-    },
-    "^HSNP": {
-        "short_name": "HANG SENG PROPERTIES INDEX",
-        "currency": "HKD",
-        "market": "hk_market",
-        "exchange": "HKG",
-        "exchange timezone": "HKT"
-    },
-    "^HSNU": {
-        "short_name": "HANG SENG UTILITIES INDEX",
+    "CES100.HK": {
+        "short_name": "CES SHANGHAI-HKG SELECT 100 IND",
         "currency": "HKD",
         "market": "hk_market",
         "exchange": "HKG",
@@ -57,6 +8,20 @@
     },
     "CES120.HK": {
         "short_name": "CESC CHINA 120 INDEX",
+        "currency": "CNY",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "CES280.HK": {
+        "short_name": "CES CHINA 280 INDEX",
+        "currency": "CNY",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "CES300.HK": {
+        "short_name": "CES SHANGHAI-HKG STOCK CONNECT ",
         "currency": "CNY",
         "market": "hk_market",
         "exchange": "HKG",
@@ -198,6 +163,62 @@
     "RXYY.HK": {
         "short_name": "TR/HKEX RXY Global CNY",
         "currency": "CNY",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSCC": {
+        "short_name": "HANG SENG CHINA-AFFILIATED CORP",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSCE": {
+        "short_name": "HANG SENG CHINA ENTERPRISES IND",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSI": {
+        "short_name": "HANG SENG INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSIL": {
+        "short_name": "HSI VOLATILITY INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSNC": {
+        "short_name": "HANG SENG COMMERCE & INDUSTRY",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSNF": {
+        "short_name": "HANG SENG FINANCE INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSNP": {
+        "short_name": "HANG SENG PROPERTIES INDEX",
+        "currency": "HKD",
+        "market": "hk_market",
+        "exchange": "HKG",
+        "exchange timezone": "HKT"
+    },
+    "^HSNU": {
+        "short_name": "HANG SENG UTILITIES INDEX",
+        "currency": "HKD",
         "market": "hk_market",
         "exchange": "HKG",
         "exchange timezone": "HKT"

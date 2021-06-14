@@ -1,6 +1,6 @@
 {
     "AEX.L": {
-        "short_name": "AMINEX PLC ORD EUR0.001",
+        "short_name": "AMINEX PLC ORD EUR0.001 (CDI)",
         "long_name": "Aminex PLC",
         "summary": "Aminex PLC, together with its subsidiaries, engages in the exploration, appraisal, development, and production of oil and gas properties. The company operates through Producing Oil and Gas Properties, Exploration Activities, and Oilfield Services segments. Its properties include the Ruvuma PSA, Kiliwani South, and Nyuni Area PSA exploration licenses located in primarily in Tanzania. The company also provides technical oilfield and administrative services. Aminex PLC was incorporated in 1979 and is based in Dublin, Ireland.",
         "currency": "GBp",
@@ -47,6 +47,30 @@
         "country": "Ireland",
         "city": "Dublin"
     },
+    "FAC.F": {
+        "short_name": "FALCON OIL + GAS",
+        "long_name": "Falcon Oil & Gas Ltd.",
+        "summary": "Falcon Oil & Gas Ltd., an oil and gas company, engages in the acquisition, exploration, and development of unconventional oil and gas assets in Australia, South Africa and Hungary. It holds 30% interests in three exploration permits covering an area of approximately 1 million net acres in the Beetaloo Sub-basin, Northern Territory, Australia. The company also holds a 100% interest in the technical cooperation permit covering an area of approximately 30,327.9 square kilometers in the southwest Karoo Basin, South Africa; and a 100% interest in the Mak\u00c3\u00b3 production license covering an area of approximately 994.6 square kilometers in the Mak\u00c3\u00b3 Trough located in south-eastern Hungary. Falcon Oil & Gas Ltd. was incorporated in 1980 and is headquartered in Dublin, Ireland.",
+        "currency": "EUR",
+        "sector": "Energy",
+        "industry": "Oil & Gas E&P",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Ireland",
+        "city": "Dublin"
+    },
+    "FO.V": {
+        "short_name": "FALCON OIL & GAS LTD",
+        "long_name": "Falcon Oil & Gas Ltd.",
+        "summary": "Falcon Oil & Gas Ltd., an oil and gas company, engages in the acquisition, exploration, and development of unconventional oil and gas assets in Australia, South Africa and Hungary. It holds 30% interests in three exploration permits covering an area of approximately 1 million net acres in the Beetaloo Sub-basin, Northern Territory, Australia. The company also holds a 100% interest in the technical cooperation permit covering an area of approximately 30,327.9 square kilometers in the southwest Karoo Basin, South Africa; and a 100% interest in the Mak\u00c3\u00b3 production license covering an area of approximately 994.6 square kilometers in the Mak\u00c3\u00b3 Trough located in south-eastern Hungary. Falcon Oil & Gas Ltd. was incorporated in 1980 and is headquartered in Dublin, Ireland.",
+        "currency": "CAD",
+        "sector": "Energy",
+        "industry": "Oil & Gas E&P",
+        "exchange": "VAN",
+        "market": "ca_market",
+        "country": "Ireland",
+        "city": "Dublin"
+    },
     "FOG.L": {
         "short_name": "FALCON OIL & GAS LTD. COM SHS N",
         "long_name": "Falcon Oil & Gas Ltd.",
@@ -83,6 +107,30 @@
         "country": "Ireland",
         "city": "Dublin"
     },
+    "P8ET.F": {
+        "short_name": "PETRONEFT RES PLC  EO-,01",
+        "long_name": "PetroNeft Resources plc",
+        "summary": "PetroNeft Resources plc, together with its subsidiaries, engages in the exploration, development, and production of oil and gas properties in Russia. The company's primary assets are a 50% operating interest in Licence 61 that covers 4,991 square kilometers in the Tomsk Oblast; and a 50% operating interest in Licence 67 covering 2,447 square kilometers located in the Tomsk Oblast. It also owns construction projects, such as well pads and on-site accommodation. The company was founded in 2003 and is based in Dublin, Ireland.",
+        "currency": "EUR",
+        "sector": "Energy",
+        "industry": "Oil & Gas E&P",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Ireland",
+        "city": "Dublin"
+    },
+    "P8ET.IR": {
+        "short_name": "PETRONEFT RES.",
+        "long_name": "PetroNeft Resources plc",
+        "summary": "PetroNeft Resources plc, together with its subsidiaries, engages in the exploration, development, and production of oil and gas properties in Russia. The company's primary assets are a 50% operating interest in Licence 61 that covers 4,991 square kilometers in the Tomsk Oblast; and a 50% operating interest in Licence 67 covering 2,447 square kilometers located in the Tomsk Oblast. It also owns construction projects, such as well pads and on-site accommodation. The company was founded in 2003 and is based in Dublin, Ireland.",
+        "currency": "EUR",
+        "sector": "Energy",
+        "industry": "Oil & Gas E&P",
+        "exchange": "ISE",
+        "market": "ie_market",
+        "country": "Ireland",
+        "city": "Dublin"
+    },
     "PET.L": {
         "short_name": "PETREL RESOURCES PLC ORD EUR0.0",
         "long_name": "Petrel Resources Plc",
@@ -104,6 +152,18 @@
         "industry": "Oil & Gas E&P",
         "exchange": "FRA",
         "market": "dr_market",
+        "country": "Ireland",
+        "city": "Dublin"
+    },
+    "PTR.L": {
+        "short_name": "PETRONEFT RESOURCES PLC ORD EUR",
+        "long_name": "PetroNeft Resources plc",
+        "summary": "PetroNeft Resources plc, together with its subsidiaries, engages in the exploration, development, and production of oil and gas properties in Russia. The company's primary assets are a 50% operating interest in Licence 61 that covers 4,991 square kilometers in the Tomsk Oblast; and a 50% operating interest in Licence 67 covering 2,447 square kilometers located in the Tomsk Oblast. It also owns construction projects, such as well pads and on-site accommodation. The company was founded in 2003 and is based in Dublin, Ireland.",
+        "currency": "GBp",
+        "sector": "Energy",
+        "industry": "Oil & Gas E&P",
+        "exchange": "LSE",
+        "market": "gb_market",
         "country": "Ireland",
         "city": "Dublin"
     },

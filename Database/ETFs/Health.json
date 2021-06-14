@@ -1,4 +1,14 @@
 {
+    "AGNG": {
+        "short_name": "Global X Aging Population ETF",
+        "long_name": "Global X Aging Population ETF",
+        "currency": "USD",
+        "summary": "The investment seeks results that correspond generally to the price and yield performance, before fees and expenses, of the Indxx Global Longevity Thematic Index.\n The fund invests more than 80% of its total assets in the securities of the underlying index. The underlying index is designed to provide exposure to exchange-listed companies in developed markets that facilitate the demographic trend of longer average life spans and the aging of the global population, including but not limited to companies involved in biotechnology, medical devices, pharmaceuticals, senior living facilities and specialized health care services.",
+        "category": "Health",
+        "family": "Global X Funds",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
     "ARKG": {
         "short_name": "ARK Genomic Revolution ETF",
         "long_name": "ARK Genomic Revolution ETF",
@@ -66,7 +76,7 @@
         "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Loncar Cancer Immunotherapy Index.\n The index is composed of the common stock of approximately 30 pharmaceutical or biotechnology companies identified by the fund&#39;s index provider, as having a high strategic focus on the development of drugs that harness the body&#39;s own immune system to fight cancer. The adviser attempts to invest all, or substantially all, of its assets in the component securities and ADRs that make up the index. Normally it will invest at least 80% of its total assets in the component securities of the index. The fund is non-diversified.",
         "category": "Health",
         "family": "Loncar Investments",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "EDOC": {
@@ -119,6 +129,36 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "HART": {
+        "short_name": "IQ Healthy Hearts ETF",
+        "long_name": "IQ Healthy Hearts ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond (before fees and expenses) generally to the price and yield performance of its underlying index, the IQ Candriam Healthy Hearts Index.\n The fund employs a \"passive management\" - or indexing - investment approach designed to track the performance of the index, which was developed by IndexIQ LLC with Candriam Belgium S.A. acting as index consultant to IndexIQ. The index includes securities of large-, mid- and small-capitalization companies that trade in the U.S. and foreign markets, including emerging markets other than China, Egypt, India, Kuwait, Pakistan, Qatar, Saudi Arabia and United Arab Emirates.",
+        "category": "Health",
+        "family": "IndexIQ",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "HLGE": {
+        "short_name": "Hartford Longevity Economy ETF",
+        "long_name": "Hartford Longevity Economy ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond to the total return performance of the Hartford Longevity Economy Index (LHLGEX), which is designed to generate attractive risk-adjusted returns by investing in companies that comprise industries that reflect certain themes that are expected to benefit from the growth of the aging population and the substantial buying power it represents.\n The fund generally invests at least 80% of its assets in securities included in the index and in depositary receipts representing securities included in the index.",
+        "category": "Health",
+        "family": "Hartford Mutual Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "HTEC": {
+        "short_name": "Robo Global Healthcare Technolo",
+        "long_name": "Robo Global Healthcare Technology and Innovation ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the price and yield performance of the ROBO Global\u00c2\u00ae Healthcare Technology and Innovation Index.\n The fund will normally invest at least 80% of its total assets in securities of the index or in depositary receipts representing securities of the index. The index is designed to measure the performance of companies that have a portion of their business and revenue derived from the field of healthcare technology, and the potential to grow within this space through innovation and market adoption of such companies\u00e2\u0080\u0099 products and services. It is non-diversified.",
+        "category": "Health",
+        "family": "Robo Global",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "IBB": {
         "short_name": "iShares Nasdaq Biotechnology In",
         "long_name": "iShares Nasdaq Biotechnology ETF",
@@ -126,7 +166,7 @@
         "summary": "The investment seeks to track the investment results of the NASDAQ Biotechnology Index, which contains securities of companies listed on NASDAQ that are classified according to the Industry Classification Benchmark as either biotechnology or pharmaceuticals and that also meet other eligibility criteria determined by Nasdaq, Inc.\n The fund generally invests at least 90% of its assets in securities of the index and in depositary receipts representing securities of the index. It may invest the remainder of its assets in certain futures, options and swap contracts, cash and cash equivalents. It is non-diversified.",
         "category": "Health",
         "family": "iShares",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "IBBJ": {
@@ -137,6 +177,26 @@
         "category": "Health",
         "family": "Defiance ETFs",
         "exchange": "NGM",
+        "market": "us_market"
+    },
+    "IEHS": {
+        "short_name": "iShares Evolved U.S. Healthcare",
+        "long_name": "iShares Evolved U.S. Healthcare Staples ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide access to U.S. companies with healthcare staples exposure, as classified using a proprietary classification system.\n The fund invests, under normal circumstances, at least 80% of its net assets in U.S. listed common stock of large-, mid- and small-capitalization healthcare equipment and services companies. It will hold common stock of those companies that fall into the Healthcare Staples Evolved Sector which have economic characteristics that have been historically correlated with companies traditionally defined as healthcare equipment and services companies. The fund is non-diversified.",
+        "category": "Health",
+        "family": "iShares",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "IEIH": {
+        "short_name": "iShares Evolved U.S. Innovative",
+        "long_name": "iShares Evolved U.S. Innovative Healthcare ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide access to U.S. companies with innovative healthcare exposure, as classified using a proprietary classification system.\n The fund invests, under normal circumstances, at least 80% of its net assets in U.S. listed common stock of large-, mid- and small-capitalization pharmaceutical and biotechnology companies. It will hold common stock of those companies that fall into the Innovative Healthcare Evolved Sector which have economic characteristics that have been historically correlated with companies traditionally defined as pharmaceutical and biotechnology companies. The fund is non-diversified.",
+        "category": "Health",
+        "family": "iShares",
+        "exchange": "BTS",
         "market": "us_market"
     },
     "IHE": {
@@ -189,14 +249,14 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "LNGR": {
-        "short_name": "Global X Longevity Thematic ETF",
-        "long_name": "Global X Longevity Thematic ETF",
+    "PBE": {
+        "short_name": "Invesco Dynamic Biotech & Genom",
+        "long_name": "Invesco Dynamic Biotechnology & Genome ETF",
         "currency": "USD",
-        "summary": "The investment seeks results that correspond generally to the price and yield performance, before fees and expenses, of the Indxx Global Longevity Thematic Index.\n The fund invests more than 80% of its total assets in the securities of the underlying index. The underlying index is designed to provide exposure to exchange-listed companies in developed markets that facilitate the demographic trend of longer average life spans and the aging of the global population, including but not limited to companies involved in biotechnology, medical devices, pharmaceuticals, senior living facilities and specialized health care services.",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the Dynamic Biotech & Genome IntellidexSM Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying intellidex. The underlying intellidex was composed of common stocks of U.S. biotechnology and genome companies. These companies are engaged principally in the research, development, manufacture and marketing and distribution of various biotechnological products, services and processes, etc. It is non-diversified.",
         "category": "Health",
-        "family": "Global X Funds",
-        "exchange": "NGM",
+        "family": "Invesco",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "PJP": {
@@ -209,6 +269,26 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "PPH": {
+        "short_name": "VanEck Vectors Pharmaceutical E",
+        "long_name": "VanEck Vectors Pharmaceutical ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the MVIS\u00c2\u00ae US Listed Pharmaceutical 25 Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index includes common stocks and depositary receipts of U.S. exchange-listed companies in the pharmaceutical industry. Such companies may include medium-capitalization companies and foreign companies that are listed on a U.S. exchange. It is non-diversified.",
+        "category": "Health",
+        "family": "VanEck",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "PSCH": {
+        "short_name": "Invesco S&P SmallCap Health Car",
+        "long_name": "Invesco S&P SmallCap Health Care ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P SmallCap 600\u00c2\u00ae Capped Health Care Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the index. Strictly in accordance with its guidelines and mandated procedures, S&P Dow Jones Indices, LLC compiles, maintains and calculates the index, which is designed to measure the performance of securities of small-capitalization U.S. companies in the health care sector, as defined by the Global Industry Classification Standard.",
+        "category": "Health",
+        "family": "Invesco",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
     "PTH": {
         "short_name": "Invesco DWA Healthcare Momentum",
         "long_name": "Invesco DWA Healthcare Momentum ETF",
@@ -217,6 +297,16 @@
         "category": "Health",
         "family": "Invesco",
         "exchange": "NMS",
+        "market": "us_market"
+    },
+    "RYH": {
+        "short_name": "Invesco S&P 500 Equal Weight He",
+        "long_name": "Invesco S&P 500 Equal Weight Health Care ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Equal Weight Health Care Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of all of the components of the S&P 500\u00c2\u00ae Health Care Index, an index that contains the common stocks of all companies included in the S&P 500\u00c2\u00ae Index that are classified as members of the health care sector, as defined according to the Global Industry Classification Standard (\"GICS\").",
+        "category": "Health",
+        "family": "Invesco",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "SBIO": {

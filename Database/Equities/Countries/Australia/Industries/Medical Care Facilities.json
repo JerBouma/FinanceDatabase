@@ -47,10 +47,34 @@
         "country": "Australia",
         "city": "East Melbourne"
     },
+    "D4I.F": {
+        "short_name": "CAPITOL HEALTH LTD",
+        "long_name": "Capitol Health Limited",
+        "summary": "Capitol Health Limited provides diagnostic imaging and related services to the healthcare market in Australia. The company owns and operates clinics in Victoria, Tasmania, and Western Australia. It offers a range of diagnostic imaging services, including general x-ray, magnetic resonance imaging, ultrasound, mammography, Doppler, orthopantomogram, echocardiography, computed tomography, CT angiography, cone beam CT, nuclear medicine, bone densitometry, and fluoroscopy. The company was founded in 2005 and is headquartered in East Melbourne, Australia.",
+        "currency": "EUR",
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Australia",
+        "city": "East Melbourne"
+    },
     "EHE.AX": {
         "short_name": "ESTIA HLTH FPO",
         "long_name": "Estia Health Limited",
         "summary": "Estia Health Limited operates residential aged care homes in Australia. As of June 30, 2020, it had 69 homes, which include 6,182 resident places in New South Wales, Queensland, South Australia, and Victoria. The company was founded in 2005 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "FFC.AX": {
+        "short_name": "FARMAFORCE FPO",
+        "long_name": "FarmaForce Limited",
+        "summary": "FarmaForce Limited provides services as a contract sales organization to pharmaceutical industry in Australia. The company operates in two segments, Contract Sales and Marketing Services to External Customers; and Services to Related Parties. It also offers sales, data, and medical affairs solutions. The company was founded in 2014 and is based in Sydney, Australia. FarmaForce Limited is a subsidiary of The iQ Group Global Ltd.",
         "currency": "AUD",
         "sector": "Healthcare",
         "industry": "Medical Care Facilities",
@@ -95,6 +119,18 @@
         "country": "Australia",
         "city": "Southbank"
     },
+    "ONT.AX": {
+        "short_name": "SMILES LTD FPO",
+        "long_name": "1300SMILES Limited",
+        "summary": "1300SMILES Limited provides dental and management services in Australia. It enables the delivery of services to patients by offering the use of dental surgeries, practice management, and other services to self-employed dentists who carry on their own dental practices. The company also provides services in the areas of marketing, administration, billing and collections, and facilities certification and licensing to participating dentists; and support staff, equipment, and facilities, as well as sources various consumable goods. In addition, it offers general, restorative, cosmetic, preventive, and children's dentistry services, as well as orthodontics services. The company serves dentists ranging from new graduates to experienced dental professionals. It owns and operates approximately 30 full-service dental facilities in Queensland, Sydney, and Adelaide. The company was founded in 2000 and is based in Townsville, Australia.",
+        "currency": "AUD",
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Townsville"
+    },
     "PGZ.F": {
         "short_name": "HEALIUS LTD",
         "long_name": "Healius Limited",
@@ -118,6 +154,18 @@
         "market": "au_market",
         "country": "Australia",
         "city": "East Maitland"
+    },
+    "REG.AX": {
+        "short_name": "REG HEALTH FPO",
+        "long_name": "Regis Healthcare Limited",
+        "summary": "Regis Healthcare Limited provides residential aged care services in Australia. The company offers home care services, including personal hygiene, dressing and undressing, and mobility and transportation; home help services, such as cooking and cleaning, shopping and transportation, and facilitating social outings; aged care facilities; owns and operates specialist retirement and independent living villages, which provides laundry, meals, cleaning, and allied health services consist of physiotherapy, podiatry, diversional therapy, and therapeutic activities. It also offers companionship and government-funded and private home care services; aged care services, including ageing-in-place, respite care, specialist dementia care, and palliative care services; Day Respite Programs for carers; and therapeutic services to people living in the community, in retirement villages, and aged care facilities. As of June 30, 2020, the company owned and operated 65 aged care facilities. The company was formerly known as Fairway Investment Holdings Pty Ltd. and changed its name to Regis Healthcare Limited in September 2014. Regis Healthcare Limited was incorporated in 2007 and is based in Armadale, Australia.",
+        "currency": "AUD",
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Armadale"
     },
     "RHC.AX": {
         "short_name": "RAMSAY FPO",
@@ -230,7 +278,7 @@
     "SLA.AX": {
         "short_name": "SILK LASER FPO",
         "long_name": "SILK Laser Australia Limited",
-        "summary": "SILK Laser Australia Limited operates a network of specialist clinics for a range of non-surgical aesthetic products and services in Australia. Its products and services include laser hair removal, cosmetic injectable, skin treatment, body contouring, and fat reduction services, as well as owned brand skincare products. The company operates 53 clinics throughout metropolitan and regional Australia, including 37 company owned or joint venture owned clinics, and 16 franchised clinics. SILK Laser Australia Limited was founded in 2009 and is based in Parkside, Australia.",
+        "summary": "SILK Laser Australia Limited operates and franchises a network of specialist clinics that offer non-surgical aesthetic services in Australia. Its services include laser hair removal, cosmetic injectables, skin treatment, and body contouring. The company also manufactures and sells skincare products. As of December 31, 2020, the company had 28 corporate and owned stores, and 28 franchised stores, including 11 joint venture clinics. The company was formerly known as SILK Laser & Skin Holdings Pty Ltd. SILK Laser Australia Limited was founded in 2009 and is based in Parkside, Australia.",
         "currency": "AUD",
         "sector": "Healthcare",
         "industry": "Medical Care Facilities",
@@ -239,16 +287,28 @@
         "country": "Australia",
         "city": "Parkside"
     },
-    "WNB.AX": {
-        "short_name": "WELLNESS FPO",
-        "long_name": "Wellness and Beauty Solutions Limited",
-        "summary": "Wellness and Beauty Solutions Limited provides non-invasive and non-surgical cosmetic treatments in Australia. It operates through Clinical and Beauty Treatments and Sale of Wellness and Lifestyle Products segments. The Clinical and Beauty Treatments segment offers clinical, skin, and wellness services through a network of beauty and wellness clinics. The Sale of Wellness and Lifestyle Products segment develops, manufactures, and sells various beauty products. The company also offers hand sanitizers under the MICRO19 name. It sells its products to professionals and retail markets. The company was formerly known as Total Face Group Limited and changed its name to Wellness and Beauty Solutions Limited in November 2018. Wellness and Beauty Solutions Limited was incorporated in 2014 and is based in Cheltenham, Australia.",
+    "V6H.F": {
+        "short_name": "VIRTUS HEALTH LTD",
+        "long_name": "Virtus Health Limited",
+        "summary": "Virtus Health Limited provides various healthcare services in Australia, Denmark, the United Kingdom, Ireland, and Singapore. The company operates through two segments, Healthcare Services Australia and Healthcare Services International. The company provides fertility clinics and diagnostics and pathology, as well as day hospital services. It offers in-vitro fertilization (IVF) services. In addition, it offers day hospital procedures, such as non-IVF elective surgery, laparoscopic gynecology procedure, endoscopy, and other surgery. As of August 12, 2020, the company operated through a network of 120 fertility specialists. Virtus Health Limited was founded in 2008 and is headquartered in Greenwich, Australia.",
+        "currency": "EUR",
+        "sector": "Healthcare",
+        "industry": "Medical Care Facilities",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Australia",
+        "city": "Greenwich"
+    },
+    "VRT.AX": {
+        "short_name": "VIRTUS FPO",
+        "long_name": "Virtus Health Limited",
+        "summary": "Virtus Health Limited provides various healthcare services in Australia, Denmark, the United Kingdom, Ireland, and Singapore. The company operates through two segments, Healthcare Services Australia and Healthcare Services International. The company provides fertility clinics and diagnostics and pathology, as well as day hospital services. It offers in-vitro fertilization (IVF) services. In addition, it offers day hospital procedures, such as non-IVF elective surgery, laparoscopic gynecology procedure, endoscopy, and other surgery. As of August 12, 2020, the company operated through a network of 120 fertility specialists. Virtus Health Limited was founded in 2008 and is headquartered in Greenwich, Australia.",
         "currency": "AUD",
         "sector": "Healthcare",
         "industry": "Medical Care Facilities",
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Cheltenham"
+        "city": "Greenwich"
     }
 }

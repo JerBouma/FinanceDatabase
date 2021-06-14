@@ -1,6 +1,34 @@
 {
-    "^AGRO-M.BK": {
+    "^AGRI.BK": {
+        "short_name": "Agribusiness",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^AGRO.BK": {
         "short_name": "Agro & Food Industry",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^AUTO.BK": {
+        "short_name": "Automotive",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^BANK.BK": {
+        "short_name": "Banking",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^COMM.BK": {
+        "short_name": "Commerce",
         "currency": "THB",
         "market": "th_market",
         "exchange": "SET",
@@ -13,8 +41,43 @@
         "exchange": "SET",
         "exchange timezone": "ICT"
     },
+    "^CONS.BK": {
+        "short_name": "Construction Services",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^CONSUMP.BK": {
+        "short_name": "Consumer Products",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^ENERG.BK": {
+        "short_name": "Energy & Utilities",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
     "^ETRON.BK": {
         "short_name": "Electronic Components",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^FASHION.BK": {
+        "short_name": "Fashion",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^FIN.BK": {
+        "short_name": "Finance & Securities",
         "currency": "THB",
         "market": "th_market",
         "exchange": "SET",
@@ -34,8 +97,50 @@
         "exchange": "SET",
         "exchange timezone": "ICT"
     },
+    "^FOOD.BK": {
+        "short_name": "Food & Beverage",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
     "^HELTH.BK": {
         "short_name": "Health Care Services",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^HOME.BK": {
+        "short_name": "Home & Office Products",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^ICT.BK": {
+        "short_name": "Information & Communication Tec",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^IMM.BK": {
+        "short_name": "Industrial Materials & Machiner",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^INDUS.BK": {
+        "short_name": "Industrials",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^INSUR.BK": {
+        "short_name": "Insurance",
         "currency": "THB",
         "market": "th_market",
         "exchange": "SET",
@@ -48,8 +153,50 @@
         "exchange": "SET",
         "exchange timezone": "ICT"
     },
+    "^MEDIA.BK": {
+        "short_name": "Media & Publishing",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^PAPER.BK": {
+        "short_name": "Paper & Printing Materials",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^PERSON.BK": {
+        "short_name": "Personal Products & Pharmaceuti",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^PETRO.BK": {
+        "short_name": "Petrochemicals & Chemicals",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
     "^PKG.BK": {
         "short_name": "Packaging",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^PROF.BK": {
+        "short_name": "Professional Services",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^PROP.BK": {
+        "short_name": "Property Development",
         "currency": "THB",
         "market": "th_market",
         "exchange": "SET",
@@ -64,6 +211,41 @@
     },
     "^PROPCON.BK": {
         "short_name": "Property & Construction",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^RESOURC.BK": {
+        "short_name": "Resources",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^SERVICE.BK": {
+        "short_name": "Services",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^SET.BK": {
+        "short_name": "SET Index",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^SET100.BK": {
+        "short_name": "SET100 Index",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^SET50.BK": {
+        "short_name": "SET50 Index",
         "currency": "THB",
         "market": "th_market",
         "exchange": "SET",
@@ -104,8 +286,29 @@
         "exchange": "SET",
         "exchange timezone": "ICT"
     },
-    "^TECH-M.BK": {
+    "^STEEL.BK": {
+        "short_name": "Steel",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^TECH.BK": {
         "short_name": "Technology",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^TOURISM.BK": {
+        "short_name": "Tourism & Leisure",
+        "currency": "THB",
+        "market": "th_market",
+        "exchange": "SET",
+        "exchange timezone": "ICT"
+    },
+    "^TRANS.BK": {
+        "short_name": "Transportation & Logistics",
         "currency": "THB",
         "market": "th_market",
         "exchange": "SET",

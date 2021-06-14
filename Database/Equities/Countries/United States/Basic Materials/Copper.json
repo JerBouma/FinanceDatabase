@@ -1,32 +1,8 @@
 {
-    "CAEN": {
-        "short_name": "CALIFORNIA ENGELS MNG CO",
-        "long_name": "California-Engels Mining Company",
-        "summary": "California-Engels Mining Company engages in developing mineral and timber properties in the western United States. It involves in the sale of timber, land, sand, and rock, as well as the provision of bookkeeping services. The company owns 36 patented lode mining claims totaling 736 acres, as well as 239.24 acres of other patented lands at Engelmine, Lights Creek Mining District, Plumas County, California. California-Engels also holds interest in five patented lode mining claims covering 100 acres in the Genesee Mining District, Plumas County, California. The company was incorporated in 1901 and is based in Greenville, California.",
-        "currency": "USD",
-        "sector": "Basic Materials",
-        "industry": "Copper",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "United States",
-        "city": "Greenville"
-    },
-    "FCX": {
-        "short_name": "Freeport-McMoRan, Inc.",
-        "long_name": "Freeport-McMoRan Inc.",
-        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2019, it estimated consolidated recoverable proven and probable mineral reserves totaled 116 billion pounds of copper, 29.6 million ounces of gold, and 3.58 billion pounds of molybdenum, as well as operated approximately 210 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was founded in 1987 and is headquartered in Phoenix, Arizona.",
-        "currency": "USD",
-        "sector": "Basic Materials",
-        "industry": "Copper",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "Phoenix"
-    },
     "FCX.BA": {
         "short_name": "FREEPORT-MCMORAN",
         "long_name": "Freeport-McMoRan Inc.",
-        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2019, it estimated consolidated recoverable proven and probable mineral reserves totaled 116 billion pounds of copper, 29.6 million ounces of gold, and 3.58 billion pounds of molybdenum, as well as operated approximately 210 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was founded in 1987 and is headquartered in Phoenix, Arizona.",
+        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2020, it operated approximately 165 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was incorporated in 1987 and is headquartered in Phoenix, Arizona.",
         "currency": "ARS",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -38,7 +14,7 @@
     "FCX.MX": {
         "short_name": "FREEPORT-MCMORAN INC",
         "long_name": "Freeport-McMoRan Inc.",
-        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2019, it estimated consolidated recoverable proven and probable mineral reserves totaled 116 billion pounds of copper, 29.6 million ounces of gold, and 3.58 billion pounds of molybdenum, as well as operated approximately 210 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was founded in 1987 and is headquartered in Phoenix, Arizona.",
+        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2020, it operated approximately 165 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was incorporated in 1987 and is headquartered in Phoenix, Arizona.",
         "currency": "MXN",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -47,10 +23,22 @@
         "country": "United States",
         "city": "Phoenix"
     },
+    "FCX": {
+        "short_name": "Freeport-McMoRan, Inc.",
+        "long_name": "Freeport-McMoRan Inc.",
+        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2020, it operated approximately 165 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was incorporated in 1987 and is headquartered in Phoenix, Arizona.",
+        "currency": "USD",
+        "sector": "Basic Materials",
+        "industry": "Copper",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Phoenix"
+    },
     "FCX.SN": {
         "short_name": "FREEPORT-MCMORAN",
         "long_name": "Freeport-McMoRan Inc.",
-        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2019, it estimated consolidated recoverable proven and probable mineral reserves totaled 116 billion pounds of copper, 29.6 million ounces of gold, and 3.58 billion pounds of molybdenum, as well as operated approximately 210 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was founded in 1987 and is headquartered in Phoenix, Arizona.",
+        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2020, it operated approximately 165 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was incorporated in 1987 and is headquartered in Phoenix, Arizona.",
         "currency": "USD",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -62,7 +50,7 @@
     "FCX.VI": {
         "short_name": "FREEPORT-MCMORAN INC",
         "long_name": "Freeport-McMoRan Inc.",
-        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2019, it estimated consolidated recoverable proven and probable mineral reserves totaled 116 billion pounds of copper, 29.6 million ounces of gold, and 3.58 billion pounds of molybdenum, as well as operated approximately 210 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was founded in 1987 and is headquartered in Phoenix, Arizona.",
+        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2020, it operated approximately 165 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was incorporated in 1987 and is headquartered in Phoenix, Arizona.",
         "currency": "EUR",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -74,7 +62,7 @@
     "FCXO34.SA": {
         "short_name": "FREEPORT    DRN",
         "long_name": "Freeport-McMoRan Inc.",
-        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2019, it estimated consolidated recoverable proven and probable mineral reserves totaled 116 billion pounds of copper, 29.6 million ounces of gold, and 3.58 billion pounds of molybdenum, as well as operated approximately 210 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was founded in 1987 and is headquartered in Phoenix, Arizona.",
+        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2020, it operated approximately 165 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was incorporated in 1987 and is headquartered in Phoenix, Arizona.",
         "currency": "BRL",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -86,7 +74,7 @@
     "FPMB.DE": {
         "short_name": "FREEPORT-MCMORAN INC.",
         "long_name": "Freeport-McMoRan Inc.",
-        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2019, it estimated consolidated recoverable proven and probable mineral reserves totaled 116 billion pounds of copper, 29.6 million ounces of gold, and 3.58 billion pounds of molybdenum, as well as operated approximately 210 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was founded in 1987 and is headquartered in Phoenix, Arizona.",
+        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2020, it operated approximately 165 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was incorporated in 1987 and is headquartered in Phoenix, Arizona.",
         "currency": "EUR",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -98,7 +86,7 @@
     "FPMB.F": {
         "short_name": "FREEPORT-MCMORAN INC.",
         "long_name": "Freeport-McMoRan Inc.",
-        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2019, it estimated consolidated recoverable proven and probable mineral reserves totaled 116 billion pounds of copper, 29.6 million ounces of gold, and 3.58 billion pounds of molybdenum, as well as operated approximately 210 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was founded in 1987 and is headquartered in Phoenix, Arizona.",
+        "summary": "Freeport-McMoRan Inc. engages in the mining of mineral properties in North America, South America, and Indonesia. The company primarily explores for copper, gold, molybdenum, silver, and other metals, as well as oil and gas. Its assets include the Grasberg minerals district in Indonesia; Morenci, Bagdad, Safford, Sierrita, and Miami in Arizona; Tyrone and Chino in New Mexico; and Henderson and Climax in Colorado, North America, as well as Cerro Verde in Peru and El Abra in Chile. The company also operates a portfolio of oil and gas properties primarily located in offshore California and the Gulf of Mexico. As of December 31, 2020, it operated approximately 165 wells. The company was formerly known as Freeport-McMoRan Copper & Gold Inc. and changed its name to Freeport-McMoRan Inc. in July 2014. Freeport-McMoRan Inc. was incorporated in 1987 and is headquartered in Phoenix, Arizona.",
         "currency": "EUR",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -110,7 +98,7 @@
     "NCU.TO": {
         "short_name": "NEVADA COPPER CORP.",
         "long_name": "Nevada Copper Corp.",
-        "summary": "Nevada Copper Corp. engages in the identification, acquisition, exploration, and development of mineral properties in Nevada. The company explores for copper, gold, silver, and iron ores. Its principal property is the Pumpkin Hollow property located in Nevada, United States. The company was formerly known as Astron Resources Corporation and changed its name to Nevada Copper Corp. in November 2006. Nevada Copper Corp. was incorporated in 1999 and is based in Reno, Nevada.",
+        "summary": "Nevada Copper Corp. engages in the exploration, development, and operation of mineral properties in Nevada. The company explores for copper, gold, and silver ores. Its holds 100% interests in the Pumpkin Hollow property located in Nevada, the United States. Nevada Copper Corp. is based in Reno, Nevada.",
         "currency": "CAD",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -122,7 +110,7 @@
     "NEVDF": {
         "short_name": "NEVADA COPPER CORP",
         "long_name": "Nevada Copper Corp.",
-        "summary": "Nevada Copper Corp. engages in the identification, acquisition, exploration, and development of mineral properties in Nevada. The company explores for copper, gold, silver, and iron ores. Its principal property is the Pumpkin Hollow property located in Nevada, United States. The company was formerly known as Astron Resources Corporation and changed its name to Nevada Copper Corp. in November 2006. Nevada Copper Corp. was incorporated in 1999 and is based in Reno, Nevada.",
+        "summary": "Nevada Copper Corp. engages in the exploration, development, and operation of mineral properties in Nevada. The company explores for copper, gold, and silver ores. Its holds 100% interests in the Pumpkin Hollow property located in Nevada, the United States. Nevada Copper Corp. is based in Reno, Nevada.",
         "currency": "USD",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -134,7 +122,7 @@
     "PCU.F": {
         "short_name": "SOUTHERN COPPER  DL-,01",
         "long_name": "Southern Copper Corporation",
-        "summary": "Southern Copper Corporation engages in mining, exploring, smelting, and refining copper and other minerals in Peru, Mexico, Argentina, Ecuador, and Chile. The company is involved in the mining, milling, and flotation of copper ore to produce copper and molybdenum concentrates; smelting of copper concentrates to produce blister and anode copper; refining of anode copper to produce copper cathodes; production of molybdenum concentrate and sulfuric acid; production of refined silver, gold, and other materials; and mining and processing of zinc and lead. It operates the Toquepala and Cuajone open-pit mines, and a smelter and refinery in Peru; and La Caridad, an open-pit copper mine, as well as a copper ore concentrator, a SX-EW plant, a smelter, refinery, and a rod plant in Mexico. The company also operates Buenavista, an open-pit copper mine, as well as two copper concentrators and three SX-EW plants in Mexico. In addition, it operates five underground mines that produce zinc, lead, copper, silver, and gold; a coal mine that produces coal and coke; and a zinc refinery. The company has interests in 37,622 hectares of exploration concessions in Peru; 147,974 hectares of exploration concessions in Mexico; 63,453 hectares of exploration concessions in Argentina; 42,615 hectares of exploration concessions in Chile; and 7,298 hectares of exploration concessions in Ecuador. Southern Copper Corporation was founded in 1952 and is based in Phoenix, Arizona. Southern Copper Corporation is a subsidiary of Americas Mining Corporation.",
+        "summary": "Southern Copper Corporation engages in mining, exploring, smelting, and refining copper and other minerals in Peru, Mexico, Argentina, Ecuador, and Chile. The company is involved in the mining, milling, and flotation of copper ore to produce copper and molybdenum concentrates; smelting of copper concentrates to produce blister and anode copper; refining of anode copper to produce copper cathodes; production of molybdenum concentrate and sulfuric acid; production of refined silver, gold, and other materials; and mining and processing of zinc and lead. It operates the Toquepala and Cuajone open-pit mines, and a smelter and refinery in Peru; and La Caridad, an open-pit copper mine, as well as a copper ore concentrator, a SX-EW plant, a smelter, refinery, and a rod plant in Mexico. The company also operates Buenavista, an open-pit copper mine, as well as two copper concentrators and two operating SX-EW plants in Mexico. In addition, it operates five underground mines that produce zinc, lead, copper, silver, and gold; a coal mine that produces coal and coke; and a zinc refinery. The company has interests in 59,252 hectares of exploration concessions in Peru; 503,104 hectares of exploration concessions in Mexico; 229,312 hectares of exploration concessions in Argentina; 27,353 hectares of exploration concessions in Chile; and 7,299 hectares of exploration concessions in Ecuador. Southern Copper Corporation was incorporated in 1952 and is based in Phoenix, Arizona. Southern Copper Corporation is a subsidiary of Americas Mining Corporation.",
         "currency": "EUR",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -143,10 +131,22 @@
         "country": "United States",
         "city": "Phoenix"
     },
+    "SCCO.MX": {
+        "short_name": "SOUTHERN COPPER CORPORATION",
+        "long_name": "Southern Copper Corporation",
+        "summary": "Southern Copper Corporation engages in mining, exploring, smelting, and refining copper and other minerals in Peru, Mexico, Argentina, Ecuador, and Chile. The company is involved in the mining, milling, and flotation of copper ore to produce copper and molybdenum concentrates; smelting of copper concentrates to produce blister and anode copper; refining of anode copper to produce copper cathodes; production of molybdenum concentrate and sulfuric acid; production of refined silver, gold, and other materials; and mining and processing of zinc and lead. It operates the Toquepala and Cuajone open-pit mines, and a smelter and refinery in Peru; and La Caridad, an open-pit copper mine, as well as a copper ore concentrator, a SX-EW plant, a smelter, refinery, and a rod plant in Mexico. The company also operates Buenavista, an open-pit copper mine, as well as two copper concentrators and two operating SX-EW plants in Mexico. In addition, it operates five underground mines that produce zinc, lead, copper, silver, and gold; a coal mine that produces coal and coke; and a zinc refinery. The company has interests in 59,252 hectares of exploration concessions in Peru; 503,104 hectares of exploration concessions in Mexico; 229,312 hectares of exploration concessions in Argentina; 27,353 hectares of exploration concessions in Chile; and 7,299 hectares of exploration concessions in Ecuador. Southern Copper Corporation was incorporated in 1952 and is based in Phoenix, Arizona. Southern Copper Corporation is a subsidiary of Americas Mining Corporation.",
+        "currency": "MXN",
+        "sector": "Basic Materials",
+        "industry": "Copper",
+        "exchange": "MEX",
+        "market": "mx_market",
+        "country": "United States",
+        "city": "Phoenix"
+    },
     "SCCO": {
         "short_name": "Southern Copper Corporation",
         "long_name": "Southern Copper Corporation",
-        "summary": "Southern Copper Corporation engages in mining, exploring, smelting, and refining copper and other minerals in Peru, Mexico, Argentina, Ecuador, and Chile. The company is involved in the mining, milling, and flotation of copper ore to produce copper and molybdenum concentrates; smelting of copper concentrates to produce blister and anode copper; refining of anode copper to produce copper cathodes; production of molybdenum concentrate and sulfuric acid; production of refined silver, gold, and other materials; and mining and processing of zinc and lead. It operates the Toquepala and Cuajone open-pit mines, and a smelter and refinery in Peru; and La Caridad, an open-pit copper mine, as well as a copper ore concentrator, a SX-EW plant, a smelter, refinery, and a rod plant in Mexico. The company also operates Buenavista, an open-pit copper mine, as well as two copper concentrators and three SX-EW plants in Mexico. In addition, it operates five underground mines that produce zinc, lead, copper, silver, and gold; a coal mine that produces coal and coke; and a zinc refinery. The company has interests in 37,622 hectares of exploration concessions in Peru; 147,974 hectares of exploration concessions in Mexico; 63,453 hectares of exploration concessions in Argentina; 42,615 hectares of exploration concessions in Chile; and 7,298 hectares of exploration concessions in Ecuador. Southern Copper Corporation was founded in 1952 and is based in Phoenix, Arizona. Southern Copper Corporation is a subsidiary of Americas Mining Corporation.",
+        "summary": "Southern Copper Corporation engages in mining, exploring, smelting, and refining copper and other minerals in Peru, Mexico, Argentina, Ecuador, and Chile. The company is involved in the mining, milling, and flotation of copper ore to produce copper and molybdenum concentrates; smelting of copper concentrates to produce blister and anode copper; refining of anode copper to produce copper cathodes; production of molybdenum concentrate and sulfuric acid; production of refined silver, gold, and other materials; and mining and processing of zinc and lead. It operates the Toquepala and Cuajone open-pit mines, and a smelter and refinery in Peru; and La Caridad, an open-pit copper mine, as well as a copper ore concentrator, a SX-EW plant, a smelter, refinery, and a rod plant in Mexico. The company also operates Buenavista, an open-pit copper mine, as well as two copper concentrators and two operating SX-EW plants in Mexico. In addition, it operates five underground mines that produce zinc, lead, copper, silver, and gold; a coal mine that produces coal and coke; and a zinc refinery. The company has interests in 59,252 hectares of exploration concessions in Peru; 503,104 hectares of exploration concessions in Mexico; 229,312 hectares of exploration concessions in Argentina; 27,353 hectares of exploration concessions in Chile; and 7,299 hectares of exploration concessions in Ecuador. Southern Copper Corporation was incorporated in 1952 and is based in Phoenix, Arizona. Southern Copper Corporation is a subsidiary of Americas Mining Corporation.",
         "currency": "USD",
         "sector": "Basic Materials",
         "industry": "Copper",
@@ -155,16 +155,16 @@
         "country": "United States",
         "city": "Phoenix"
     },
-    "SCCO.MX": {
-        "short_name": "SOUTHERN COPPER CORPORATION",
-        "long_name": "Southern Copper Corporation",
-        "summary": "Southern Copper Corporation engages in mining, exploring, smelting, and refining copper and other minerals in Peru, Mexico, Argentina, Ecuador, and Chile. The company is involved in the mining, milling, and flotation of copper ore to produce copper and molybdenum concentrates; smelting of copper concentrates to produce blister and anode copper; refining of anode copper to produce copper cathodes; production of molybdenum concentrate and sulfuric acid; production of refined silver, gold, and other materials; and mining and processing of zinc and lead. It operates the Toquepala and Cuajone open-pit mines, and a smelter and refinery in Peru; and La Caridad, an open-pit copper mine, as well as a copper ore concentrator, a SX-EW plant, a smelter, refinery, and a rod plant in Mexico. The company also operates Buenavista, an open-pit copper mine, as well as two copper concentrators and three SX-EW plants in Mexico. In addition, it operates five underground mines that produce zinc, lead, copper, silver, and gold; a coal mine that produces coal and coke; and a zinc refinery. The company has interests in 37,622 hectares of exploration concessions in Peru; 147,974 hectares of exploration concessions in Mexico; 63,453 hectares of exploration concessions in Argentina; 42,615 hectares of exploration concessions in Chile; and 7,298 hectares of exploration concessions in Ecuador. Southern Copper Corporation was founded in 1952 and is based in Phoenix, Arizona. Southern Copper Corporation is a subsidiary of Americas Mining Corporation.",
-        "currency": "MXN",
+    "ZYT.F": {
+        "short_name": "NEVADA COPPER CORP.",
+        "long_name": "Nevada Copper Corp.",
+        "summary": "Nevada Copper Corp. engages in the exploration, development, and operation of mineral properties in Nevada. The company explores for copper, gold, and silver ores. Its holds 100% interests in the Pumpkin Hollow property located in Nevada, the United States. Nevada Copper Corp. is based in Reno, Nevada.",
+        "currency": "EUR",
         "sector": "Basic Materials",
         "industry": "Copper",
-        "exchange": "MEX",
-        "market": "mx_market",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "United States",
-        "city": "Phoenix"
+        "city": "Reno"
     }
 }

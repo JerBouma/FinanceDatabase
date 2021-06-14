@@ -11,18 +11,6 @@
         "country": "Belgium",
         "city": "Antwerp"
     },
-    "EURN": {
-        "short_name": "Euronav NV",
-        "long_name": "Euronav NV",
-        "summary": "Euronav NV, together with its subsidiaries, engages in the shipping and storage of crude oil worldwide. The company also offers floating, storage, and offloading (FSO) services. As of April 15, 2020, it owned and operated a fleet of 2 V-Plus vessels, 42 VLCCs, 26 Suezmaxes, and 2 FSO vessels. The company was incorporated in 2003 and is headquartered in Antwerp, Belgium.",
-        "currency": "USD",
-        "sector": "Energy",
-        "industry": "Oil & Gas Midstream",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "Belgium",
-        "city": "Antwerp"
-    },
     "EURN.BR": {
         "short_name": "EURONAV",
         "long_name": "Euronav NV",
@@ -32,6 +20,18 @@
         "industry": "Oil & Gas Midstream",
         "exchange": "BRU",
         "market": "be_market",
+        "country": "Belgium",
+        "city": "Antwerp"
+    },
+    "EURN": {
+        "short_name": "Euronav NV",
+        "long_name": "Euronav NV",
+        "summary": "Euronav NV, together with its subsidiaries, engages in the ocean transportation and storage of crude oil worldwide. The company also offers floating, storage, and offloading (FSO) services. As of April 1, 2021, it owned and operated a fleet of 77 vessels, including 10 chartered-in vessels with an aggregate carrying capacity of approximately 19.5 million deadweight tons consisting of 45 very large crude carriers, two V-plus, 28 Suezmax vessels, and two floating, storage, and offloading vessels. The company was incorporated in 2003 and is headquartered in Antwerp, Belgium.",
+        "currency": "USD",
+        "sector": "Energy",
+        "industry": "Oil & Gas Midstream",
+        "exchange": "NYQ",
+        "market": "us_market",
         "country": "Belgium",
         "city": "Antwerp"
     },
@@ -47,10 +47,22 @@
         "country": "Belgium",
         "city": "Antwerp"
     },
+    "FLUX.BR": {
+        "short_name": "FLUXYS BELGIUM D",
+        "long_name": "Fluxys Belgium SA",
+        "summary": "Fluxys Belgium SA engages in the transmission and storage of natural gas in Belgium. The company sells capacity to its customers to transport natural gas for distribution system operators, power plants, and industrial end-users in Belgium, as well as to send natural gas to border points for transmission to other end-user markets in Europe. It also provides a package of gas trading services that allow its customers to buy and sell gas on Belgian gas trading places; and storage services enabling customers to use buffer capacity. The company, through Zeebrugge terminal, sells capacity for loading and unloading liquefied natural gas (LNG) carriers, storing LNG, and regasifying it for transmission on the network; loading of LNG trailers or containers to supply local networks or industrial sites in Europe; and supplies filling stations for LNG-fueled trucks and LNG-powered vessels. In addition, it is involved in the reinsurance business. The company was formerly known as Fluxys SA. The company is based in Brussels, Belgium. Fluxys Belgium SA is a subsidiary of Fluxys SA.",
+        "currency": "EUR",
+        "sector": "Energy",
+        "industry": "Oil & Gas Midstream",
+        "exchange": "BRU",
+        "market": "be_market",
+        "country": "Belgium",
+        "city": "Brussels"
+    },
     "OCW.F": {
         "short_name": "EURONAV NV NAM.",
         "long_name": "Euronav NV",
-        "summary": "Euronav NV, together with its subsidiaries, engages in the shipping and storage of crude oil worldwide. The company also offers floating, storage, and offloading (FSO) services. As of April 15, 2020, it owned and operated a fleet of 2 V-Plus vessels, 42 VLCCs, 26 Suezmaxes, and 2 FSO vessels. The company was incorporated in 2003 and is headquartered in Antwerp, Belgium.",
+        "summary": "Euronav NV, together with its subsidiaries, engages in the ocean transportation and storage of crude oil worldwide. The company also offers floating, storage, and offloading (FSO) services. As of April 1, 2021, it owned and operated a fleet of 77 vessels, including 10 chartered-in vessels with an aggregate carrying capacity of approximately 19.5 million deadweight tons consisting of 45 very large crude carriers, two V-plus, 28 Suezmax vessels, and two floating, storage, and offloading vessels. The company was incorporated in 2003 and is headquartered in Antwerp, Belgium.",
         "currency": "EUR",
         "sector": "Energy",
         "industry": "Oil & Gas Midstream",

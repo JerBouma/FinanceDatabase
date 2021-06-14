@@ -16,7 +16,7 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the Nasdaq US Smart Food & Beverage Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks and depository receipts that comprise the underlying index. The index is designed to provide exposure to U.S. companies comprising the food and beverage sector that have been selected based upon their liquidity and weighted based upon their cumulative score on three investing factors: volatility, value and growth. The fund is non-diversified.",
         "category": "Consumer Defensive",
         "family": "First Trust",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "FXG": {
@@ -26,6 +26,26 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the StrataQuant\u00c2\u00ae Consumer Staples Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks that comprise the index. The index is a modified equal-dollar weighted index designed by IDI to objectively identify and select stocks from the Russell 1000\u00c2\u00ae Index in the consumer staples sector that may generate positive alpha relative to traditional passive-style indices through the use of the AlphaDEX\u00c2\u00ae selection methodology. The fund is non-diversified.",
         "category": "Consumer Defensive",
         "family": "First Trust",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IECS": {
+        "short_name": "iShares Evolved U.S. Consumer S",
+        "long_name": "iShares Evolved U.S. Consumer Staples ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide access to U.S. companies with consumer staples exposure, as classified using a proprietary classification system.\n The fund seeks to achieve its investment objective by investing, under normal circumstances, at least 80% of its net assets in U.S. listed common stock of large-, mid- and small-capitalization consumer staples companies. It will hold common stock of those companies that fall into the Consumer Staples Evolved Sector which have economic characteristics that have been historically correlated with companies traditionally defined as consumer staples companies. The fund is non-diversified.",
+        "category": "Consumer Defensive",
+        "family": "iShares",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "IYK": {
+        "short_name": "iShares U.S. Consumer Goods ETF",
+        "long_name": "iShares U.S. Consumer Goods ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Dow Jones U.S. Consumer Goods Index composed of U.S. equities in the consumer goods sector.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. The underlying index measures the performance of the consumer goods sector of the U.S. equity market. The fund may invest the remainder of its assets in certain futures, options and swap contracts, cash and cash equivalents. It is non-diversified.",
+        "category": "Consumer Defensive",
+        "family": "iShares",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -49,6 +69,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "PSCC": {
+        "short_name": "Invesco S&P SmallCap Consumer S",
+        "long_name": "Invesco S&P SmallCap Consumer Staples ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P SmallCap 600\u00c2\u00ae Capped Consumer Staples Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, S&P Dow Jones Indices, LLC compiles, maintains and calculates the index, which is designed to measure the performance of securities of small-capitalization U.S. companies in the consumer staples sector, as defined by the Global Industry Classification Standard. The fund is non-diversified.",
+        "category": "Consumer Defensive",
+        "family": "Invesco",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
     "PSL": {
         "short_name": "Invesco DWA Consumer Staples Mo",
         "long_name": "Invesco DWA Consumer Staples Momentum ETF",
@@ -63,7 +93,7 @@
         "short_name": "Invesco S&P 500 Equal Weight Co",
         "long_name": "Invesco S&P 500 Equal Weight Consumer Staples ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Equal Weight Consumer Staples Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of all of the components of the S&P 500\u00c2\u00ae Consumer Staples Index, an index that contains the common stocks of all companies included in the S&P 500\u00c2\u00ae Index that are classified as members of the consumer staples sector, as defined according to the Global Industry Classification Standard (\"GICS\"). The fund is non-diversified.",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Equal Weight Consumer Staples Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of all of the components of the S&P 500\u00c2\u00ae Consumer Staples Index, an index that contains the common stocks of all companies included in the S&P 500\u00c2\u00ae Index that are classified as members of the consumer staples sector, as defined according to the Global Industry Classification Standard (\"GICS\").",
         "category": "Consumer Defensive",
         "family": "Invesco",
         "exchange": "PCX",

@@ -26,7 +26,17 @@
         "summary": "The investment seeks to track the investment results of the ICE U.S. Treasury 7-10 Year Bond Index.\n The fund generally invests at least 90% of its assets in the bonds of the underlying index and at least 95% of its assets in U.S. government bonds. The underlying index measures the performance of public obligations of the U.S. Treasury that have a remaining maturity of greater than or equal to seven years and less than ten years.",
         "category": "Long Government",
         "family": "iShares",
-        "exchange": "NGM",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "LGOV": {
+        "short_name": "First Trust Long Duration Oppor",
+        "long_name": "First Trust Long Duration Opportunities ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to generate current income with a focus on preservation of capital.\n Under normal market conditions, the fund will invest at least 80% of its net assets (including investment borrowings) in a portfolio of investment-grade debt securities issued or guaranteed by the U.S. government, its agencies or government-sponsored entities, including publicly-issued U.S. Treasury securities and mortgage-related securities. It may also invest in exchange-traded funds (\"ETFs\") that principally invest in such securities. The fund is non-diversified.",
+        "category": "Long Government",
+        "family": "First Trust",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "SCHQ": {
@@ -37,6 +47,26 @@
         "category": "Long Government",
         "family": "Schwab ETFs",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "TBJL": {
+        "short_name": "Innovator 20  Year Treasury Bon",
+        "long_name": "Innovator 20+ Year Treasury Bond Buffer ETF \u2013 July",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that match the price return of the iShares 20+ Year Treasury Bond ETF, up to the upside cap of 9.25% (prior to taking into account management fees and other fees) and 8.57% (after taking into account management fees and other fees) while providing a buffer against the first 9% of iShares 20+ Year Treasury Bond ETF losses, over the period from August 18, 2020 to June 30, 2021.\n The fund invests at least 80% of its net assets in FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the iShares 20+ Year Treasury Bond ETF (the \"Underlying ETF\"). It is non-diversified.",
+        "category": "Long Government",
+        "family": "Innovator ETFs",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "TFJL": {
+        "short_name": "Innovator 20  Year Treasury Bon",
+        "long_name": "Innovator Long Term Treasury Floor ETF - July",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with returns that match the price return of the iShares 20+ Year Treasury Bond ETF, up to the upside cap of 6.75% (prior to taking into account management fees and other fees) and 6.07% (after taking into account management fees and other fees) while providing a maximum loss of 5% of iShares 20+ Year Treasury Bond ETF losses, over the period from August 18, 2020 to June 30, 2021.\n The fund invests at least 80% of its net assets in FLexible EXchange\u00c2\u00ae Options (\"FLEX Options\") that reference the iShares 20+ Year Treasury Bond ETF (the \"Underlying ETF\"). It is non-diversified.",
+        "category": "Long Government",
+        "family": "Innovator ETFs",
+        "exchange": "BTS",
         "market": "us_market"
     },
     "TLH": {
@@ -56,7 +86,7 @@
         "summary": "The investment seeks to track the investment results of the ICE U.S. Treasury 20+ Year Bond Index (the \"underlying index\").\n The fund generally invests at least 90% of its assets in the bonds of the underlying index and at least 95% of its assets in U.S. government bonds. The underlying index measures the performance of public obligations of the U.S. Treasury that have a remaining maturity greater than or equal to twenty years.",
         "category": "Long Government",
         "family": "iShares",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "VGLT": {

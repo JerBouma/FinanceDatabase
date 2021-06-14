@@ -2,7 +2,7 @@
     "0JN9N.MX": {
         "short_name": "DSV PANALPINA A/S",
         "long_name": "DSV Panalpina A/S",
-        "summary": "DSV Panalpina A/S provides transport and logistics services in Europe, the Middle East, Africa, North America, South America, Asia, Australia, and the Pacific. It operates through three segments: Air & Sea, Road, and Solutions. The company offers air freight, air freight compliance and carrier, and sea-air freight services; standard sea freight, and sea freight compliance and carrier services, as well as freight containers. It also provides road freight services, such as part and full loads, groupage, specialized transport, packaging and labeling, and document handling services, as well as online services comprising track and trace services. In addition, the company offers logistics solutions for automotive, consumer products, healthcare, high-tech, and industrial sectors; and inventory management solutions. Further, it provides project transport services, such as industrial projects, renewable energy, government logistics, ship charter, and air charter services; and warehousing services. The company was formerly known as DSV A/S and changed its name to DSV Panalpina A/S in September 2019. DSV Panalpina A/S was founded in 1976 and is headquartered in Hedehusene, Denmark.",
+        "summary": "DSV Panalpina A/S provides transport and logistics services in Europe, the Middle East, Africa, North America, South America, Asia, Australia, and the Pacific. It operates through three segments: Air & Sea, Road, and Solutions. The company offers air freight, air freight compliance and carrier, and rail freight services; sea freight, and sea freight compliance and carrier services, as well as freight containers. It also provides road freight services, such as part and full loads, groupage, specialized transport, packaging and labeling, and document handling services, as well as online services comprising track and trace services. In addition, the company offers logistics solutions for automotive, consumer products, healthcare, high-tech, and industrial sectors; and inventory management solutions. Further, it provides project transport services, such as industrial projects, renewable energy, government logistics, ship charter, and air charter services; and warehousing services. The company was formerly known as DSV A/S and changed its name to DSV Panalpina A/S in September 2019. DSV Panalpina A/S was founded in 1976 and is headquartered in Hedehusene, Denmark.",
         "currency": "MXN",
         "sector": "Services",
         "industry": "Air Delivery & Freight Services",
@@ -11,15 +11,27 @@
         "country": "Denmark",
         "city": "Hedehusene"
     },
-    "DPWN.MX": {
-        "short_name": "DEUTSCHE POST AG",
-        "long_name": "Deutsche Post AG",
-        "summary": "Deutsche Post AG operates as a mail and logistics company in Germany, rest of Europe, the Americas, the Asia Pacific, the Middle East, and Africa. It operates through five divisions: Post & Parcel Germany; Express; Global Forwarding, Freight; Supply Chain; and eCommerce Solutions. The Post & Parcel Germany division transports, sorts, and delivers documents and goods; and offers digital transmission services, such as information on shipment status and digital messages. The Express division provides courier and express services to business and private customers. The Global Forwarding, Freight division transports goods by rail, road, air, and sea; and offers multimodal and sector-specific solutions. The Supply Chain division offers supply chain solutions, including warehousing, transport, and value-added services. The eCommerce Solutions division provides parcel delivery and cross-border non-time definite international services. Deutsche Post AG is headquartered in Bonn, Germany.",
+    "BPOSTN.MX": {
+        "short_name": "BPOST SA",
+        "long_name": "bpost SA/NV",
+        "summary": "bpost SA/NV, together with its subsidiaries, provides mail and parcel services in Belgium, rest of Europe, the United States, and internationally. The company operates through Mail & Retail Solutions, and Parcels & Logistics segments. Its mail and parcels services include collection, transport, sorting, and distribution of addressed and non-addressed mail, printed documents, newspapers, and parcels, as well as e-commerce logistics, express delivery, proximity and convenience, document management, and related services. The company also offers transactional mails, advertising mails, press, domestic and international parcels, logistic solutions, value-added services, international mails, banking and financial products, insurance, and distribution products. It serves private and public customers. The company is headquartered in Brussels, Belgium.",
         "currency": "MXN",
         "sector": "Services",
         "industry": "Air Delivery & Freight Services",
         "exchange": "MEX",
         "market": "mx_market",
+        "country": "Belgium",
+        "city": "Brussels"
+    },
+    "DPWA.DE": {
+        "short_name": "DEUTSCHE POST SPONS.ADR 1",
+        "long_name": "Deutsche Post AG",
+        "summary": "Deutsche Post AG operates as a mail and logistics company in Germany, rest of Europe, the Americas, the Asia Pacific, the Middle East, and Africa. The company operates through five segments: Post & Parcel Germany; Express; Global Forwarding, Freight; Supply Chain; and eCommerce Solutions. The Post & Parcel Germany segment transports and delivers mail, letters, parcels, physical and hybrid letters, special products for merchandize, and registered mail to private and business customers. It also provides additional services, such as registered mail, cash on delivery, and insured items. The Express segment transport and offers time-definite international (TDI) shipments comprising urgent documents and goods. The Global Forwarding, Freight segment transports goods by air, ocean, and overland; and offers multimodal and sector-specific solutions. This segment's business model is based on brokering transport services between customers and freight carriers. The Supply Chain segment provides contract logistics solutions, including warehousing and transport services; and value-added services, such as e-fulfilment, lead logistics partner, real estate solutions, service logistics, and packaging solutions for various industrial sectors. The eCommerce Solutions segment provides parcel delivery and cross-border non-TDI services. Deutsche Post AG is headquartered in Bonn, Germany.",
+        "currency": "EUR",
+        "sector": "Services",
+        "industry": "Air Delivery & Freight Services",
+        "exchange": "GER",
+        "market": "de_market",
         "country": "Germany",
         "city": "Bonn"
     },

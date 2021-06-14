@@ -13,15 +13,39 @@
     },
     "ABC.AX": {
         "short_name": "ADEL BRTN FPO",
-        "long_name": "ADBRI Limited",
-        "summary": "ADBRI Limited produces, imports, distributes, and markets construction materials in Australia. The company operates in two segments, Cement, Lime, Concrete and Aggregates; and Concrete Products. It offers cement, cementitious products, lime, premixed concrete, aggregates, and sand, as well as concrete bricks, blocks, pavers, retaining walls, erosion control products, architectural masonry products, and reconstituted stone veneers. The company offers its products to residential and non-residential construction, engineering construction, alumina production, and mining markets. The company was formerly known as Adelaide Brighton Limited and changed its name to ADBRI Limited in May 2020. ADBRI Limited was founded in 1882 and is headquartered in Adelaide, Australia.",
+        "long_name": "Adbri Limited",
+        "summary": "Adbri Limited manufactures, imports, distributes, and markets construction materials in Australia. The company operates in two segments, Cement, Lime, Concrete and Aggregates; and Concrete Products. It offers cement, lime, premixed concrete, aggregates, and sand; concrete bricks and blocks, pavers, retaining wall blocks; and industrial minerals comprising stockfield minerals and fillers, silica, and quick and hydrated lime. The company offers its products to residential and non-residential construction, engineering construction, industrial manufacturing, and mining markets. The company was formerly known as Adelaide Brighton Limited and changed its name to Adbri Limited in May 2020. Adbri Limited was founded in 1882 and is based in Sydney, Australia.",
         "currency": "AUD",
         "sector": "Basic Materials",
         "industry": "Building Materials",
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Adelaide"
+        "city": "Sydney"
+    },
+    "ADBCF": {
+        "short_name": "ADBRI LTD",
+        "long_name": "Adbri Limited",
+        "summary": "Adbri Limited manufactures, imports, distributes, and markets construction materials in Australia. The company operates in two segments, Cement, Lime, Concrete and Aggregates; and Concrete Products. It offers cement, lime, premixed concrete, aggregates, and sand; concrete bricks and blocks, pavers, retaining wall blocks; and industrial minerals comprising stockfield minerals and fillers, silica, and quick and hydrated lime. The company offers its products to residential and non-residential construction, engineering construction, industrial manufacturing, and mining markets. The company was formerly known as Adelaide Brighton Limited and changed its name to Adbri Limited in May 2020. Adbri Limited was founded in 1882 and is based in Sydney, Australia.",
+        "currency": "USD",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "ADLDY": {
+        "short_name": "ADBRI LTD UNSP ADR EA REPR 4 OR",
+        "long_name": "Adbri Limited",
+        "summary": "Adbri Limited manufactures, imports, distributes, and markets construction materials in Australia. The company operates in two segments, Cement, Lime, Concrete and Aggregates; and Concrete Products. It offers cement, lime, premixed concrete, aggregates, and sand; concrete bricks and blocks, pavers, retaining wall blocks; and industrial minerals comprising stockfield minerals and fillers, silica, and quick and hydrated lime. The company offers its products to residential and non-residential construction, engineering construction, industrial manufacturing, and mining markets. The company was formerly known as Adelaide Brighton Limited and changed its name to Adbri Limited in May 2020. Adbri Limited was founded in 1882 and is based in Sydney, Australia.",
+        "currency": "USD",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Australia",
+        "city": "Sydney"
     },
     "BKW.AX": {
         "short_name": "BRICKWORKS FPO",
@@ -83,29 +107,41 @@
         "country": "Australia",
         "city": "North Sydney"
     },
-    "CSRLF": {
-        "short_name": "CSR LIMITED",
+    "CSR.AX": {
+        "short_name": "CSR FPO",
         "long_name": "CSR Limited",
         "summary": "CSR Limited, together with its subsidiaries, engages in the manufacture and supply of building products for homes and commercial buildings in Australia and New Zealand. It operates through Building Products, Property, and Aluminium segments. The Building Products segment offers lightweight systems, including gyprock plasterboards, Cemintel fiber cement, Himmel interior systems, and Rondo rolled formed steel products; construction systems, such as Hebel autoclaved aerated concrete products, AFS walling systems, and CSR Inclose systems; energy and roofing solutions comprising Bradford and Martini insulations, Bradford energy solutions, Edmonds ventilation systems, and Monier roofing solutions; and bricks, including PGH Bricks and pavers. The Property segment sells former operating sites by advancing the sites through various stages of the development cycle. This segment is also involved in the large-scale developments in New South Wales, Queensland, and Victoria. The Aluminium segment offers aluminium ingots, billets, and slabs. CSR Limited was founded in 1855 and is headquartered in North Ryde, Australia.",
-        "currency": "USD",
+        "currency": "AUD",
         "sector": "Basic Materials",
         "industry": "Building Materials",
-        "exchange": "PNK",
-        "market": "us_market",
+        "exchange": "ASX",
+        "market": "au_market",
         "country": "Australia",
         "city": "North Ryde"
     },
-    "GHO.F": {
-        "short_name": "ADBRI LTD.",
-        "long_name": "ADBRI Limited",
-        "summary": "ADBRI Limited produces, imports, distributes, and markets construction materials in Australia. The company operates in two segments, Cement, Lime, Concrete and Aggregates; and Concrete Products. It offers cement, cementitious products, lime, premixed concrete, aggregates, and sand, as well as concrete bricks, blocks, pavers, retaining walls, erosion control products, architectural masonry products, and reconstituted stone veneers. The company offers its products to residential and non-residential construction, engineering construction, alumina production, and mining markets. The company was formerly known as Adelaide Brighton Limited and changed its name to ADBRI Limited in May 2020. ADBRI Limited was founded in 1882 and is headquartered in Adelaide, Australia.",
+    "CSR.F": {
+        "short_name": "CSR LTD",
+        "long_name": "CSR Limited",
+        "summary": "CSR Limited, together with its subsidiaries, engages in the manufacture and supply of building products for residential and commercial constructions in Australia and New Zealand. It operates through Building Products, Property, and Aluminium segments. The Building Products segment offers interior systems, including gyprock plasterboards, Martini acoustic insulation products, and Rondo rolled formed steel products, as well as Himmel and Potter interior systems that supplies ceiling tiles, aluminum partitions, and architectural hardware products; construction systems, such as Hebel autoclaved aerated concrete products, AFS walling systems, cladding systems, and Cemintel fiber cement; masonry and insulation solutions comprising Bradford insulations, Bradford energy solutions, Edmonds ventilation systems, and Monier roofing solutions; and bricks, including PGH Bricks and pavers. The Property segment sells former operating sites. This segment is also involved in the large-scale developments in New South Wales, Queensland, and Victoria. The Aluminium segment offers aluminium ingots, billets, and slabs. CSR Limited was founded in 1855 and is headquartered in North Ryde, Australia.",
         "currency": "EUR",
         "sector": "Basic Materials",
         "industry": "Building Materials",
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Adelaide"
+        "city": "North Ryde"
+    },
+    "GHO.F": {
+        "short_name": "ADBRI LTD.",
+        "long_name": "Adbri Limited",
+        "summary": "Adbri Limited manufactures, imports, distributes, and markets construction materials in Australia. The company operates in two segments, Cement, Lime, Concrete and Aggregates; and Concrete Products. It offers cement, lime, premixed concrete, aggregates, and sand; concrete bricks and blocks, pavers, retaining wall blocks; and industrial minerals comprising stockfield minerals and fillers, silica, and quick and hydrated lime. The company offers its products to residential and non-residential construction, engineering construction, industrial manufacturing, and mining markets. The company was formerly known as Adelaide Brighton Limited and changed its name to Adbri Limited in May 2020. Adbri Limited was founded in 1882 and is based in Sydney, Australia.",
+        "currency": "EUR",
+        "sector": "Basic Materials",
+        "industry": "Building Materials",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Australia",
+        "city": "Sydney"
     },
     "HQK.F": {
         "short_name": "BORAL LTD",

@@ -29,14 +29,54 @@
         "exchange": "BTS",
         "market": "us_market"
     },
+    "IBND": {
+        "short_name": "SPDR Bloomberg Barclays Interna",
+        "long_name": "SPDR Bloomberg Barclays International Corporate Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance of the Bloomberg Barclays Global Aggregate ex-USD >$1B: Corporate Bond Index.\n The fund invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in securities that the Adviser determines have economic characteristics that are substantially identical to the economic characteristics of the securities that comprise the index. The index is designed to be a broad based measure of the global investment grade, fixed rate, fixed income corporate markets outside the United States.",
+        "category": "World Bond",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "IGOV": {
+        "short_name": "iShares International Treasury ",
+        "long_name": "iShares International Treasury Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the FTSE World Government Bond Index - Developed Markets Capped Select Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The underlying index is measures the performance of fixed-rate, local currency, investment-grade, sovereign bonds from certain developed markets. The fund is non-diversified.",
+        "category": "World Bond",
+        "family": "iShares",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
     "ISHG": {
         "short_name": "iShares 1-3 Year International ",
         "long_name": "iShares 1-3 Year International Treasury Bond ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the FTSE World Government Bond Index \u00e2\u0080\u0093 Developed Markets 1-3 Years Capped Select Index.\n The fund will invest at least 90% of its assets in the component securities of the index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The index is the performance of fixed-rate, local currency, investment-grade, sovereign bonds from certain developed markets. The fund is non-diversified.",
+        "summary": "The investment seeks to track the investment results of the FTSE World Government Bond Index - Developed Markets 1-3 Years Capped Select Index.\n The fund will invest at least 90% of its assets in the component securities of the index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The index is the performance of fixed-rate, local currency, investment-grade, sovereign bonds from certain developed markets. The fund is non-diversified.",
         "category": "World Bond",
         "family": "iShares",
         "exchange": "NMS",
+        "market": "us_market"
+    },
+    "RIGS": {
+        "short_name": "RiverFront Strategic Income Fun",
+        "long_name": "RiverFront Strategic Income Fund",
+        "currency": "USD",
+        "summary": "The investment seeks total return, with an emphasis on income as the source of that total return.\n The fund seeks to achieve its investment objective by investing in a global portfolio of fixed income securities of various maturities, ratings and currency denominations. The fund utilizes various investment strategies in a broad array of fixed income sectors. The fund may purchase fixed income securities issued by U.S. or foreign corporations or financial institutions, including debt securities of all types and maturities, convertible securities and preferred stocks.",
+        "category": "World Bond",
+        "family": "ALPS",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "WIP": {
+        "short_name": "SPDR FTSE International Governm",
+        "long_name": "SPDR FTSE International Government Inflation-Protected Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the price and yield performance of the FTSE International Inflation-Linked Securities Select Index.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in securities that the Adviser determines have economic characteristics. The index is designed to measure the total return performance of inflation-linked bonds outside the United States with fixed-rate coupon payments that are linked to an inflation index. It is non-diversified.",
+        "category": "World Bond",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
         "market": "us_market"
     }
 }

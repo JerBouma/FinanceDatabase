@@ -1,16 +1,4 @@
 {
-    "0P00000FET.F": {
-        "short_name": "CM-CIC Euro Mid Cap C",
-        "long_name": "CM-CIC Euro Mid Cap C",
-        "currency": "EUR",
-        "summary": "Cet OPCVM a pour objectif de gestion la recherche d\u00e2\u0080\u0099une performance sup\u00c3\u00a9rieure \u00c3\u00a0 celle des march\u00c3\u00a9s d\u00e2\u0080\u0099actions de moyenne et petite capitalisations de la zone Euro, sur la dur\u00c3\u00a9e de placement recommand\u00c3\u00a9e.",
-        "manager_name": "Jean-Pierre  Mariaud",
-        "manager_bio": "",
-        "category": "Eurozone Mid-Cap Equity",
-        "family": "Cr\u00c3\u00a9dit Mutuel Asset Management",
-        "exchange": "FRA",
-        "market": "dr_market"
-    },
     "0P00000HD3.F": {
         "short_name": "Vend\u00f4me S\u00e9lection Euro PC",
         "long_name": "Vend&#195;&#180;me S&#195;&#169;lection Euro PC",
@@ -75,11 +63,23 @@
         "short_name": "Brongniart Avenir C",
         "long_name": "Brongniart Avenir C",
         "currency": "EUR",
-        "summary": "Cet OPCVM a pour objectif de gestion la recherche d\u00e2\u0080\u0099une performance sup\u00c3\u00a9rieure \u00c3\u00a0 celle de son indicateur de r\u00c3\u00a9f\u00c3\u00a9rence MSCI EMU Mid Cap, sur la dur\u00c3\u00a9e de placement recommand\u00c3\u00a9e.\nLa composition de cet OPCVM peut s\u00e2\u0080\u0099\u00c3\u00a9carter sensiblement de la r\u00c3\u00a9partition de l\u00e2\u0080\u0099indice.",
+        "summary": "Cet OPCVM est g\u00c3\u00a9r\u00c3\u00a9 activement et de mani\u00c3\u00a8re discr\u00c3\u00a9tionnaire.\nIl a pour objectif de gestion la recherche d\u00e2\u0080\u0099une performance sup\u00c3\u00a9rieure \u00c3\u00a0 celle de son indicateur de r\u00c3\u00a9f\u00c3\u00a9rence MSCI EMU Mid Cap, sur la dur\u00c3\u00a9e de placement recommand\u00c3\u00a9e.\nLa composition de cet OPCVM peut s\u00e2\u0080\u0099\u00c3\u00a9carter de mani\u00c3\u00a8re importante de la r\u00c3\u00a9partition de l\u00e2\u0080\u0099indice.",
         "manager_name": "St\u00c3\u00a9phane  Cochener",
         "manager_bio": "",
         "category": "Eurozone Mid-Cap Equity",
         "family": "Cr\u00c3\u00a9dit Mutuel Asset Management",
+        "exchange": "FRA",
+        "market": "dr_market"
+    },
+    "0P0000CULV.F": {
+        "short_name": "Quadrator IC",
+        "long_name": "Quadrator SRI IC",
+        "currency": "EUR",
+        "summary": "L\u00e2\u0080\u0099objectif de gestion de la SICAV est la recherche d\u00e2\u0080\u0099une performance nette de frais de gestion, sur la dur\u00c3\u00a9e de placement recommand\u00c3\u00a9e de 5 ans, sup\u00c3\u00a9rieure \u00c3\u00a0 l\u00e2\u0080\u0099indice EuroStoxx Small Net Return (SCXT) calcul\u00c3\u00a9 dividendes r\u00c3\u00a9investis, au travers de la s\u00c3\u00a9lection d&#39;actions, \u00c2\u00ab stock picking \u00c2\u00bb, sur les march\u00c3\u00a9s de la zone euro ; en dehors de toute allocation sectorielle ou g\u00c3\u00a9ographique pr\u00c3\u00a9d\u00c3\u00a9finie, via une m\u00c3\u00a9thode privil\u00c3\u00a9giant la recherche de la qualit\u00c3\u00a9 intrins\u00c3\u00a8que des titres int\u00c3\u00a9grant des crit\u00c3\u00a8res ESG dans le processus de s\u00c3\u00a9lection et d\u00e2\u0080\u0099analyse des titres en portefeuille.",
+        "manager_name": "St\u00c3\u00a9phane  Ni\u00c3\u00a8res Tavernier",
+        "manager_bio": "",
+        "category": "Eurozone Mid-Cap Equity",
+        "family": "Montpensier Finance",
         "exchange": "FRA",
         "market": "dr_market"
     },
@@ -95,15 +95,15 @@
         "exchange": "FRA",
         "market": "dr_market"
     },
-    "0P00011I8C.F": {
-        "short_name": "Oddo BHF Avenir Euro CP-EUR",
-        "long_name": "Oddo BHF Avenir Euro CP-EUR",
+    "0P0000KABF.F": {
+        "short_name": "Groupama Avenir Euro MC",
+        "long_name": "Groupama Avenir Euro MC",
         "currency": "EUR",
-        "summary": "L\u00e2\u0080\u0099objectif de gestion est de surperformer sur une p\u00c3\u00a9riode de cinq ans l\u00e2\u0080\u0099indice de r\u00c3\u00a9f\u00c3\u00a9rence, le MSCI EMU SMID CAP (Net Return), tout en prenant en compte des crit\u00c3\u00a8res ESG.",
-        "manager_name": "Pascal  Riegis",
+        "summary": "The Fund\u00e2\u0080\u0099s investment objective is to outperform its benchmark, the MSCI EMU Small Cap (closing), with net dividends reinvested.",
+        "manager_name": "Cyrille  Carri\u00c3\u00a8re",
         "manager_bio": "",
         "category": "Eurozone Mid-Cap Equity",
-        "family": "ODDO BHF Asset Management SAS",
+        "family": "Groupama Asset Management",
         "exchange": "FRA",
         "market": "dr_market"
     },
@@ -119,9 +119,81 @@
         "exchange": "FRA",
         "market": "dr_market"
     },
+    "0P000147O1.F": {
+        "short_name": "Talence Euromidcap AC",
+        "long_name": "Talence Euromidcap AC",
+        "currency": "EUR",
+        "summary": "Dans le cadre d\u00e2\u0080\u0099une gestion actions discr\u00c3\u00a9tionnaire, le FCP a pour objectif sur la dur\u00c3\u00a9e de placement recommand\u00c3\u00a9e d\u00e2\u0080\u0099obtenir une performance annualis\u00c3\u00a9e sup\u00c3\u00a9rieure \u00c3\u00a0 celle de l\u00e2\u0080\u0099indice EURO STOXX Small Net Return Index (dividendes r\u00c3\u00a9investis \u00e2\u0080\u0093 code Bloomberg : SCXT).",
+        "manager_name": "Jean-Fran\u00c3\u00a7ois  Arnaud",
+        "manager_bio": "",
+        "category": "Eurozone Mid-Cap Equity",
+        "family": "Talence Gestion",
+        "exchange": "FRA",
+        "market": "dr_market"
+    },
+    "0P0001575H.F": {
+        "short_name": "Quadrator RC",
+        "long_name": "Quadrator SRI RC",
+        "currency": "EUR",
+        "summary": "L\u00e2\u0080\u0099objectif de gestion de la SICAV est la recherche d\u00e2\u0080\u0099une performance nette de frais de gestion, sur la dur\u00c3\u00a9e de placement recommand\u00c3\u00a9e de 5 ans, sup\u00c3\u00a9rieure \u00c3\u00a0 l\u00e2\u0080\u0099indice EuroStoxx Small Net Return (SCXT) calcul\u00c3\u00a9 dividendes r\u00c3\u00a9investis, au travers de la s\u00c3\u00a9lection d&#39;actions, \u00c2\u00ab stock picking \u00c2\u00bb, sur les march\u00c3\u00a9s de la zone euro ; en dehors de toute allocation sectorielle ou g\u00c3\u00a9ographique pr\u00c3\u00a9d\u00c3\u00a9finie, via une m\u00c3\u00a9thode privil\u00c3\u00a9giant la recherche de la qualit\u00c3\u00a9 intrins\u00c3\u00a8que des titres int\u00c3\u00a9grant des crit\u00c3\u00a8res ESG dans le processus de s\u00c3\u00a9lection et d\u00e2\u0080\u0099analyse des titres en portefeuille.",
+        "manager_name": "St\u00c3\u00a9phane  Ni\u00c3\u00a8res Tavernier",
+        "manager_bio": "",
+        "category": "Eurozone Mid-Cap Equity",
+        "family": "Montpensier Finance",
+        "exchange": "FRA",
+        "market": "dr_market"
+    },
+    "0P00015YKG.F": {
+        "short_name": "Quadrator ID",
+        "long_name": "Quadrator SRI ID",
+        "currency": "EUR",
+        "summary": "L\u00e2\u0080\u0099objectif de gestion de la SICAV est la recherche d\u00e2\u0080\u0099une performance nette de frais de gestion, sur la dur\u00c3\u00a9e de placement recommand\u00c3\u00a9e de 5 ans, sup\u00c3\u00a9rieure \u00c3\u00a0 l\u00e2\u0080\u0099indice EuroStoxx Small Net Return (SCXT) calcul\u00c3\u00a9 dividendes r\u00c3\u00a9investis, au travers de la s\u00c3\u00a9lection d&#39;actions, \u00c2\u00ab stock picking \u00c2\u00bb, sur les march\u00c3\u00a9s de la zone euro ; en dehors de toute allocation sectorielle ou g\u00c3\u00a9ographique pr\u00c3\u00a9d\u00c3\u00a9finie, via une m\u00c3\u00a9thode privil\u00c3\u00a9giant la recherche de la qualit\u00c3\u00a9 intrins\u00c3\u00a8que des titres int\u00c3\u00a9grant des crit\u00c3\u00a8res ESG dans le processus de s\u00c3\u00a9lection et d\u00e2\u0080\u0099analyse des titres en portefeuille.",
+        "manager_name": "St\u00c3\u00a9phane  Ni\u00c3\u00a8res Tavernier",
+        "manager_bio": "",
+        "category": "Eurozone Mid-Cap Equity",
+        "family": "Montpensier Finance",
+        "exchange": "FRA",
+        "market": "dr_market"
+    },
+    "0P00015YKI.F": {
+        "short_name": "Quadrator RD",
+        "long_name": "Quadrator SRI RD",
+        "currency": "EUR",
+        "summary": "L\u00e2\u0080\u0099objectif de gestion de la SICAV est la recherche d\u00e2\u0080\u0099une performance nette de frais de gestion, sur la dur\u00c3\u00a9e de placement recommand\u00c3\u00a9e de 5 ans, sup\u00c3\u00a9rieure \u00c3\u00a0 l\u00e2\u0080\u0099indice EuroStoxx Small Net Return (SCXT) calcul\u00c3\u00a9 dividendes r\u00c3\u00a9investis, au travers de la s\u00c3\u00a9lection d&#39;actions, \u00c2\u00ab stock picking \u00c2\u00bb, sur les march\u00c3\u00a9s de la zone euro ; en dehors de toute allocation sectorielle ou g\u00c3\u00a9ographique pr\u00c3\u00a9d\u00c3\u00a9finie, via une m\u00c3\u00a9thode privil\u00c3\u00a9giant la recherche de la qualit\u00c3\u00a9 intrins\u00c3\u00a8que des titres int\u00c3\u00a9grant des crit\u00c3\u00a8res ESG dans le processus de s\u00c3\u00a9lection et d\u00e2\u0080\u0099analyse des titres en portefeuille.",
+        "manager_name": "St\u00c3\u00a9phane  Ni\u00c3\u00a8res Tavernier",
+        "manager_bio": "",
+        "category": "Eurozone Mid-Cap Equity",
+        "family": "Montpensier Finance",
+        "exchange": "FRA",
+        "market": "dr_market"
+    },
+    "0P000160VE.F": {
+        "short_name": "Talence Euromidcap IC",
+        "long_name": "Talence Euromidcap IC",
+        "currency": "EUR",
+        "summary": "Dans le cadre d\u00e2\u0080\u0099une gestion actions discr\u00c3\u00a9tionnaire, le FCP a pour objectif sur la dur\u00c3\u00a9e de placement recommand\u00c3\u00a9e d\u00e2\u0080\u0099obtenir une performance annualis\u00c3\u00a9e sup\u00c3\u00a9rieure \u00c3\u00a0 celle de l\u00e2\u0080\u0099indice EURO STOXX Small Net Return Index (dividendes r\u00c3\u00a9investis \u00e2\u0080\u0093 code Bloomberg : SCXT).",
+        "manager_name": "Jean-Fran\u00c3\u00a7ois  Arnaud",
+        "manager_bio": "",
+        "category": "Eurozone Mid-Cap Equity",
+        "family": "Talence Gestion",
+        "exchange": "FRA",
+        "market": "dr_market"
+    },
     "0P00017QX8.F": {
         "short_name": "Pluvalca Disruptive Opportuniti",
         "long_name": "Pluvalca Disruptive Opportunities A",
+        "currency": "EUR",
+        "summary": "Pluvalca Disruptive Opportunities a pour objectif de gestion la recherche d\u00e2\u0080\u0099une performance annualis\u00c3\u00a9e nette de frais de gestion sup\u00c3\u00a9rieure \u00c3\u00a0 8% sur la dur\u00c3\u00a9e de placement recommand\u00c3\u00a9e au travers d\u00e2\u0080\u0099une s\u00c3\u00a9lection rigoureuse de titres de type \u00c2\u00ab stock picking \u00c2\u00bb.",
+        "manager_name": "S\u00c3\u00a9bastien  Lalev\u00c3\u00a9e",
+        "manager_bio": "",
+        "category": "Eurozone Mid-Cap Equity",
+        "family": "Financi\u00c3\u00a8re Arbevel",
+        "exchange": "FRA",
+        "market": "dr_market"
+    },
+    "0P00017QX9.F": {
+        "short_name": "Pluvalca Disruptive Opportuniti",
+        "long_name": "Pluvalca Disruptive Opportunities I",
         "currency": "EUR",
         "summary": "Pluvalca Disruptive Opportunities a pour objectif de gestion la recherche d\u00e2\u0080\u0099une performance annualis\u00c3\u00a9e nette de frais de gestion sup\u00c3\u00a9rieure \u00c3\u00a0 8% sur la dur\u00c3\u00a9e de placement recommand\u00c3\u00a9e au travers d\u00e2\u0080\u0099une s\u00c3\u00a9lection rigoureuse de titres de type \u00c2\u00ab stock picking \u00c2\u00bb.",
         "manager_name": "S\u00c3\u00a9bastien  Lalev\u00c3\u00a9e",

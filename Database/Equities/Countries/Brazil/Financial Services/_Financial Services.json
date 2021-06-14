@@ -1,4 +1,16 @@
 {
+    "ABCB10.SA": {
+        "short_name": "ABC BRASIL  PN  REC N2",
+        "long_name": "Banco ABC Brasil S.A.",
+        "summary": "Banco ABC Brasil S.A., a commercial bank, provides various financial products and services large companies in Brazil and internationally. It offers current accounts; loan products, such as company check, working capital, and foreign currency loans; advances against receivables; and agribusiness loans, as well as housing finance; payment; and Internet banking services. The company also provides export and import foreign trade finance products; onlending products; guarantees; and derivatives. In addition, it offers investment products, such as bank deposit certificate, agribusiness letters of credit, letter of mortgage lending, real estate finance, and structured transactions. Further, the company provides customized advisory services to coordinate, execute, and negotiate acquisitions, disinvestments, investments, mergers, and corporate reorganizations, as well as offers capital market services for promissory notes, debentures, receivables certificates, market distribution, and structured loans. It operates branches in Brazil, as well as through an overseas branch located in Georgetown, the Cayman Islands. The company was formerly known as Banco Roma de Investimentos and changed its name to Banco ABC Brasil S.A. in 1997. Banco ABC Brasil S.A. was incorporated in 1983 and is based in S\u00c3\u00a3o Paulo, Brazil. Banco ABC Brasil S.A. is a subsidiary of Arab Banking Corporation.",
+        "currency": "BRL",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": "S\u00c3\u00a3o Paulo"
+    },
     "ABCB4.SA": {
         "short_name": "ABC BRASIL  PN      N2",
         "long_name": "Banco ABC Brasil S.A.",
@@ -26,7 +38,7 @@
     "B3SA3.SA": {
         "short_name": "B3          ON      NM",
         "long_name": "B3 S.A. - Brasil, Bolsa, Balc\u00e3o",
-        "summary": "B3 S.A. - Brasil, Bolsa, Balc\u00c3\u00a3o, a financial market infrastructure company, provides trading services in an exchange and OTC environment. It operates through Listed, OTC, Infrastructure For Financing, and Technology, Data and Service segments. The company offers listed equities and securities for commodities, including anhydrous fuel ethanol, Arabica coffee 4/5 and 6/7, corn, crystal sugar, gold, hydrous ethanol, live cattle, and soybean; fixed income products, such as ETF and sovereign debt instruments; and exchange rates, interest rates, and equities, as well as collateral management products. It also provides OTC market products comprising flexible option, forward, and swap derivatives, as well as agribusiness, banking funding, credit bonds, mortgage, securities registration, treasury bond, and other financial securities; clearing and settlement services; central depository products; securities lending services; and netting agreement, ESG products, and informational service. In addition, the company offers broad, corporate governance, segment, sustainability, sector, and other indices, as well as indices in partnership with S&P DowJones; and Tesouro Direto, an alternative investment product. Further, it provides market data services, which include services related to quotes, distributors, historical data, and reports; UP2DATA, DATAWISE, and UP2DATA ON DEMAND data services; and financing market information services. Additionally, the company offers various platforms, such as PUMA trading system, trading interface, and others; connectivity; and hosting and colocation services. It has a strategic partnership with CME Group to develop risk management products for Brazilian domestic and international market participants. The company was formerly known as BM&FBOVESPA S.A. - Bolsa de Valores, Mercadorias e Futuros and changed its name to B3 S.A. - Brasil, Bolsa, Balc\u00c3\u00a3o in June 2017. The company was incorporated in 2007 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
+        "summary": "B3 S.A. - Brasil, Bolsa, Balc\u00c3\u00a3o, a financial market infrastructure company, provides trading services in an exchange and OTC environment. It operates through Listed, OTC, Infrastructure for Financing, and Technology, Data and Service segments. The company offers listed equities and securities for commodities, including anhydrous fuel ethanol, Arabica coffee 4/5 and 6/7, corn, crystal sugar, gold, hydrous ethanol, live cattle, and soybean; fixed income products, such as ETF and sovereign debt instruments; and exchange rates, interest rates, and equities, as well as collateral management products. It also provides OTC market products comprising flexible option and forward derivatives, as well as agribusiness, banking funding, credit bonds, mortgage, securities registration, treasury bond, and other financial securities; clearing and settlement services; central depository products; securities lending services; and netting agreement and ESG products. In addition, the company offers broad, corporate governance, segment, sustainability, sector, and other indices, as well as indices in partnership with S&P DowJones; and Tesouro Direto, an alternative investment product. Further, it provides market data services, which include services related to quotes, distributors, historical data, and reports; UP2DATA, DATAWISE, and UP2DATA ON DEMAND data services; and financing market information services. Additionally, the company offers various platforms, such as PUMA trading system, trading interface, and others; connectivity; and hosting and colocation services. The company was formerly known as BM&FBOVESPA S.A. - Bolsa de Valores, Mercadorias e Futuros and changed its name to B3 S.A. - Brasil, Bolsa, Balc\u00c3\u00a3o in June 2017. B3 S.A. - Brasil, Bolsa, Balc\u00c3\u00a3o was incorporated in 2007 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Financial Data & Stock Exchanges",
@@ -59,10 +71,22 @@
         "country": "Brazil",
         "city": "Bras\u00c3\u00adlia"
     },
+    "BBD.BA": {
+        "short_name": "BCO BRADESCO SA",
+        "long_name": "Banco Bradesco S.A.",
+        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and services to individuals, corporates, and businesses in Brazil and internationally. The company offers leasing, investment banking, brokerage, and consortium management services, as well as credit cards, real estate products, pension plans, and capitalization bonds. It also provides health, dental assistance, life, and personal accident insurance products. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
+        "currency": "ARS",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "BUE",
+        "market": "ar_market",
+        "country": "Brazil",
+        "city": "Osasco"
+    },
     "BBD": {
         "short_name": "Banco Bradesco Sa",
         "long_name": "Banco Bradesco S.A.",
-        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and financial services to individuals, corporates, and businesses in Brazil and internationally. It operates through two segments, Banking and Insurance. The company offers checking and savings accounts, demand deposits, time deposits, and interbank deposits. It also provides mutual funds, foreign exchange, overdrafts, credit cards, and personal and housing loans; and auto, health, life, accident, and property insurance products. In addition, the company offers fund management and treasury services; corporate finance; investment banking, asset management and consortium administration; pension plans; brokerage; real estate ventures and capitalization bonds; and hedge and finance products, including working capital financing. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
+        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and services to individuals, corporates, and businesses in Brazil and internationally. The company operates through The Banking, and The Insurance. The company offers leasing, investment banking, brokerage, and consortium management services, overdrafts, as well as credit cards, real estate products, pension plans, and capitalization bonds. It also provides health, life, and personal accident insurance products. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -72,9 +96,9 @@
         "city": "Osasco"
     },
     "BBDC3.SA": {
-        "short_name": "BRADESCO    ON      N1",
+        "short_name": "BRADESCO    ON  EJ  N1",
         "long_name": "Banco Bradesco S.A.",
-        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and financial services to individuals, corporates, and businesses in Brazil and internationally. It operates through two segments, Banking and Insurance. The company offers checking and savings accounts, demand deposits, time deposits, and interbank deposits. It also provides mutual funds, foreign exchange, overdrafts, credit cards, and personal and housing loans; and auto, health, life, accident, and property insurance products. In addition, the company offers fund management and treasury services; corporate finance; investment banking, asset management and consortium administration; pension plans; brokerage; real estate ventures and capitalization bonds; and hedge and finance products, including working capital financing. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
+        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and services to individuals, corporates, and businesses in Brazil and internationally. The company offers leasing, investment banking, brokerage, and consortium management services, as well as credit cards, real estate products, pension plans, and capitalization bonds. It also provides health, dental assistance, life, and personal accident insurance products. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -84,9 +108,9 @@
         "city": "Osasco"
     },
     "BBDC4.SA": {
-        "short_name": "BRADESCO    PN      N1",
+        "short_name": "BRADESCO    PN  EJ  N1",
         "long_name": "Banco Bradesco S.A.",
-        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and financial services to individuals, corporates, and businesses in Brazil and internationally. It operates through two segments, Banking and Insurance. The company offers checking and savings accounts, demand deposits, time deposits, and interbank deposits. It also provides mutual funds, foreign exchange, overdrafts, credit cards, and personal and housing loans; and auto, health, life, accident, and property insurance products. In addition, the company offers fund management and treasury services; corporate finance; investment banking, asset management and consortium administration; pension plans; brokerage; real estate ventures and capitalization bonds; and hedge and finance products, including working capital financing. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
+        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and services to individuals, corporates, and businesses in Brazil and internationally. The company offers leasing, investment banking, brokerage, and consortium management services, as well as credit cards, real estate products, pension plans, and capitalization bonds. It also provides health, dental assistance, life, and personal accident insurance products. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -98,7 +122,7 @@
     "BBDO": {
         "short_name": "Banco Bradesco Sa",
         "long_name": "Banco Bradesco S.A.",
-        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and financial services to individuals, corporates, and businesses in Brazil and internationally. It operates through two segments, Banking and Insurance. The company offers checking and savings accounts, demand deposits, time deposits, and interbank deposits. It also provides mutual funds, foreign exchange, overdrafts, credit cards, and personal and housing loans; and auto, health, life, accident, and property insurance products. In addition, the company offers fund management and treasury services; corporate finance; investment banking, asset management and consortium administration; pension plans; brokerage; real estate ventures and capitalization bonds; and hedge and finance products, including working capital financing. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
+        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and services to individuals, corporates, and businesses in Brazil and internationally. The company offers leasing, investment banking, brokerage, and consortium management services, as well as credit cards, real estate products, pension plans, and capitalization bonds. It also provides health, dental assistance, life, and personal accident insurance products. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -144,7 +168,7 @@
         "city": "Bras\u00c3\u00adlia"
     },
     "BEES3.SA": {
-        "short_name": "BANESTES    ON",
+        "short_name": "BANESTES    ON  EJ",
         "long_name": "Banestes S.A - Banco do Estado do Esp\u00edrito Santo",
         "summary": "Banestes S.A - Banco do Estado do Esp\u00c3\u00adrito Santo S.A. provides various financial products and services to individual and legal clients in the State of Esp\u00c3\u00adrito Santo, Brazil. The company offers checking accounts, savings accounts, deposits, cards, loans, and funds. It is also involved in the administration and brokerage of insurance; and provision of pension plans and capitalization services. The company was founded in 1937 and is headquartered in Vit\u00c3\u00b3ria, Brazil.",
         "currency": "BRL",
@@ -156,7 +180,7 @@
         "city": "Vit\u00c3\u00b3ria"
     },
     "BEES4.SA": {
-        "short_name": "BANESTES    PN",
+        "short_name": "BANESTES    PN  EJ",
         "long_name": "Banestes S.A - Banco do Estado do Esp\u00edrito Santo",
         "summary": "Banestes S.A - Banco do Estado do Esp\u00c3\u00adrito Santo S.A. provides various financial products and services to individual and legal clients in the State of Esp\u00c3\u00adrito Santo, Brazil. The company offers checking accounts, savings accounts, deposits, cards, loans, and funds. It is also involved in the administration and brokerage of insurance; and provision of pension plans and capitalization services. The company was founded in 1937 and is headquartered in Vit\u00c3\u00b3ria, Brazil.",
         "currency": "BRL",
@@ -194,7 +218,7 @@
     "BIDI11.SA": {
         "short_name": "BANCO INTER UNT     N2",
         "long_name": "Banco Inter S.A.",
-        "summary": "Banco Inter S.A. provides digital banking services in Brazil. It offers checking, personal, corporate, and microenterprise accounts; investment products; loans and financing products; insurance products; payments and wire transfer services; invoice deposit services; and prepaid mobile top-up services. The company was founded in 1994 and is based in Belo Horizonte, Brazil.",
+        "summary": "Banco Inter S.A. provides digital banking services to individuals and legal entities in Brazil. The company offers checking, personal, corporate, and microenterprise accounts; investment products; loans and financing products; insurance products; and real estate, personal, and corporate credit products, as well as credit cards. It also provides payments and wire transfer, invoice deposit, and prepaid mobile top-up services. Banco Inter S.A. was founded in 1994 and is based in Belo Horizonte, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -206,7 +230,7 @@
     "BIDI3.SA": {
         "short_name": "BANCO INTER ON      N2",
         "long_name": "Banco Inter S.A.",
-        "summary": "Banco Inter S.A. provides digital banking services in Brazil. It offers checking, personal, corporate, and microenterprise accounts; investment products; loans and financing products; insurance products; payments and wire transfer services; invoice deposit services; and prepaid mobile top-up services. The company was founded in 1994 and is based in Belo Horizonte, Brazil.",
+        "summary": "Banco Inter S.A. provides digital banking services to individuals and legal entities in Brazil. The company offers checking, personal, corporate, and microenterprise accounts; investment products; loans and financing products; insurance products; and real estate, personal, and corporate credit products, as well as credit cards. It also provides payments and wire transfer, invoice deposit, and prepaid mobile top-up services. Banco Inter S.A. was founded in 1994 and is based in Belo Horizonte, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -218,7 +242,7 @@
     "BIDI4.SA": {
         "short_name": "BANCO INTER PN      N2",
         "long_name": "Banco Inter S.A.",
-        "summary": "Banco Inter S.A. provides digital banking services in Brazil. It offers checking, personal, corporate, and microenterprise accounts; investment products; loans and financing products; insurance products; payments and wire transfer services; invoice deposit services; and prepaid mobile top-up services. The company was founded in 1994 and is based in Belo Horizonte, Brazil.",
+        "summary": "Banco Inter S.A. provides digital banking services to individuals and legal entities in Brazil. The company offers checking, personal, corporate, and microenterprise accounts; investment products; loans and financing products; insurance products; and real estate, personal, and corporate credit products, as well as credit cards. It also provides payments and wire transfer, invoice deposit, and prepaid mobile top-up services. Banco Inter S.A. was founded in 1994 and is based in Belo Horizonte, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -254,7 +278,7 @@
     "BMGB4.SA": {
         "short_name": "BANCO BMG   PN      N1",
         "long_name": "Banco BMG S.A.",
-        "summary": "Banco BMG S.A. provides commercial and credit, financing, and investment products and services primarily in Brazil. It operates through two segments, Retail Banking and Wholesale Banking. The company offers payroll credit card, payroll loan, personal credit, and retail insurance, as well as digital banking services for retail customers. It also provides financing, structured financial services, derivative instruments, and guarantee insurance for medium and large companies. The company was formerly known as BMG Financeira S.A.\u00c2\u0096Cr\u00c3\u00a9dito, Financiamento e Investimento and changed its name to Banco BMG S.A. in April 1989. Banco BMG S.A. was founded in 1930 and is based in S\u00c3\u00a3o Paulo, Brazil.",
+        "summary": "Banco BMG S.A. provides commercial and credit, financing, and investment products and services primarily in Brazil. It operates through two segments, Retail Banking and Wholesale Banking. The company offers current account, payroll credit card, payroll loan, personal loan, and retail insurance, as well as digital banking services for retail customers. It also provides financing, structured financial services, derivative instruments, and guarantee insurance for medium and large companies. The company was formerly known as BMG Financeira S.A.\u00c2\u0096Cr\u00c3\u00a9dito, Financiamento e Investimento and changed its name to Banco BMG S.A. in April 1989. Banco BMG S.A. was founded in 1930 and is headquartered in S\u00c3\u00a3o Paulo, Brazil. Banco BMG S.A. is a subsidiary of Grupo BMG S.A.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -311,10 +335,10 @@
         "country": "Brazil",
         "city": "Barueri"
     },
-    "BOLSF": {
-        "short_name": "B3 SA - BRASIL  BOLSA  BALCAO",
+    "BOLSY": {
+        "short_name": "B3 SA - BRASIL  BOLSA  BALCAO U",
         "long_name": "B3 S.A. - Brasil, Bolsa, Balc\u00e3o",
-        "summary": "B3 S.A. - Brasil, Bolsa, Balc\u00c3\u00a3o, a financial market infrastructure company, provides trading services in an exchange and OTC environment. It operates through Listed, OTC, Infrastructure For Financing, and Technology, Data and Service segments. The company offers listed equities and securities for commodities, including anhydrous fuel ethanol, Arabica coffee 4/5 and 6/7, corn, crystal sugar, gold, hydrous ethanol, live cattle, and soybean; fixed income products, such as ETF and sovereign debt instruments; and exchange rates, interest rates, and equities, as well as collateral management products. It also provides OTC market products comprising flexible option, forward, and swap derivatives, as well as agribusiness, banking funding, credit bonds, mortgage, securities registration, treasury bond, and other financial securities; clearing and settlement services; central depository products; securities lending services; and netting agreement, ESG products, and informational service. In addition, the company offers broad, corporate governance, segment, sustainability, sector, and other indices, as well as indices in partnership with S&P DowJones; and Tesouro Direto, an alternative investment product. Further, it provides market data services, which include services related to quotes, distributors, historical data, and reports; UP2DATA, DATAWISE, and UP2DATA ON DEMAND data services; and financing market information services. Additionally, the company offers various platforms, such as PUMA trading system, trading interface, and others; connectivity; and hosting and colocation services. It has a strategic partnership with CME Group to develop risk management products for Brazilian domestic and international market participants. The company was formerly known as BM&FBOVESPA S.A. - Bolsa de Valores, Mercadorias e Futuros and changed its name to B3 S.A. - Brasil, Bolsa, Balc\u00c3\u00a3o in June 2017. The company was incorporated in 2007 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
+        "summary": "B3 S.A. - Brasil, Bolsa, Balc\u00c3\u00a3o, a financial market infrastructure company, provides trading services in an exchange and OTC environment. It operates through Listed, OTC, Infrastructure for Financing, and Technology, Data and Service segments. The company offers listed equities and securities for commodities, including anhydrous fuel ethanol, Arabica coffee 4/5 and 6/7, corn, crystal sugar, gold, hydrous ethanol, live cattle, and soybean; fixed income products, such as ETF and sovereign debt instruments; and exchange rates, interest rates, and equities, as well as collateral management products. It also provides OTC market products comprising flexible option and forward derivatives, as well as agribusiness, banking funding, credit bonds, mortgage, securities registration, treasury bond, and other financial securities; clearing and settlement services; central depository products; securities lending services; and netting agreement and ESG products. In addition, the company offers broad, corporate governance, segment, sustainability, sector, and other indices, as well as indices in partnership with S&P DowJones; and Tesouro Direto, an alternative investment product. Further, it provides market data services, which include services related to quotes, distributors, historical data, and reports; UP2DATA, DATAWISE, and UP2DATA ON DEMAND data services; and financing market information services. Additionally, the company offers various platforms, such as PUMA trading system, trading interface, and others; connectivity; and hosting and colocation services. The company was formerly known as BM&FBOVESPA S.A. - Bolsa de Valores, Mercadorias e Futuros and changed its name to B3 S.A. - Brasil, Bolsa, Balc\u00c3\u00a3o in June 2017. B3 S.A. - Brasil, Bolsa, Balc\u00c3\u00a3o was incorporated in 2007 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Financial Data & Stock Exchanges",
@@ -333,7 +357,7 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Sao Paulo"
+        "city": "S\u00c3\u00a3o Paulo"
     },
     "BPAC3.SA": {
         "short_name": "BTGP BANCO  ON      N2",
@@ -345,7 +369,7 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Sao Paulo"
+        "city": "S\u00c3\u00a3o Paulo"
     },
     "BPAC5.SA": {
         "short_name": "BTGP BANCO  PNA     N2",
@@ -357,12 +381,12 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Sao Paulo"
+        "city": "S\u00c3\u00a3o Paulo"
     },
     "BPAN4.SA": {
         "short_name": "BANCO PAN   PN      N1",
         "long_name": "Banco Pan S.A.",
-        "summary": "Banco Pan S.A. operates as a middle-sized financial institution in Brazil. It offers payroll loans, vehicle financing, and credit cards. The company also provides services in the areas of consortium, insurance, securitization of real estate, and agribusiness receivables. In addition, it offers investment products, such as bank deposit certificates, real estate and agribusiness letters of credit, financial bills, interbank deposits, and Eurobonds. The company distributes its products and services through correspondent banks, authorized dealerships, multi-brand new and used vehicle shops, and real estate partners. The company was formerly known as Banco Panamericano S.A. and changed its name to Banco Pan S.A. in August 2014. Banco Pan S.A. is based in S\u00c3\u00a3o Paulo, Brazil. Banco Pan S.A. is a subsidiary of Banco BTG Pactual S.A.",
+        "summary": "Banco Pan S.A. operates as a middle-sized financial institution in Brazil. It offers payroll loans, vehicle financing, and credit cards. The company also provides services in the areas of consortium, insurance, securitization of real estate, and agribusiness receivables. In addition, it offers investment products, such as bank deposit certificates, real estate and agribusiness letters of credit, financial bills, interbank deposits, and Eurobonds. The company distributes its products and services through correspondent banks, authorized dealerships, multi-brand new and used vehicle shops, and real estate partners. The company was formerly known as Banco Panamericano S.A. and changed its name to Banco Pan S.A. in August 2014. Banco Pan S.A. is based in S\u00c3\u00a3o Paulo, Brazil. Banco Pan S.A. operates as a subsidiary of Banco BTG Pactual S.A.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -395,10 +419,22 @@
         "country": "Brazil",
         "city": "S\u00c3\u00a3o Paulo"
     },
+    "BRE.F": {
+        "short_name": "BANCO BRADESCO  PFD",
+        "long_name": "Banco Bradesco S.A.",
+        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and services to individuals, corporates, and businesses in Brazil and internationally. The company offers leasing, investment banking, brokerage, and consortium management services, as well as credit cards, real estate products, pension plans, and capitalization bonds. It also provides health, dental assistance, life, and personal accident insurance products. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Brazil",
+        "city": "Osasco"
+    },
     "BREC.F": {
         "short_name": "BANCO BRADESCO PFD 04 ADR",
         "long_name": "Banco Bradesco S.A.",
-        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and financial services to individuals, corporates, and businesses in Brazil and internationally. It operates through two segments, Banking and Insurance. The company offers checking and savings accounts, demand deposits, time deposits, and interbank deposits. It also provides mutual funds, foreign exchange, overdrafts, credit cards, and personal and housing loans; and auto, health, life, accident, and property insurance products. In addition, the company offers fund management and treasury services; corporate finance; investment banking, asset management and consortium administration; pension plans; brokerage; real estate ventures and capitalization bonds; and hedge and finance products, including working capital financing. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
+        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and services to individuals, corporates, and businesses in Brazil and internationally. The company offers leasing, investment banking, brokerage, and consortium management services, as well as credit cards, real estate products, pension plans, and capitalization bonds. It also provides health, dental assistance, life, and personal accident insurance products. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -455,18 +491,6 @@
         "country": "Brazil",
         "city": "S\u00c3\u00a3o Paulo"
     },
-    "BRGE6.SA": {
-        "short_name": "ALFA CONSORCPNB",
-        "long_name": "Cons\u00f3rcio Alfa de Administra\u00e7\u00e3o S.A.",
-        "summary": "Cons\u00c3\u00b3rcio Alfa de Administra\u00c3\u00a7\u00c3\u00a3o S.A., through its subsidiaries, provides financing, insurance, and technology and services in Brazil. It operates through Retail, Insurance and Pension, and Services segments. The company was formerly known as Cons\u00c3\u00b3rcio Real Brasileiro de Administra\u00c3\u00a7\u00c3\u00a3o S.A. and changed its name to Cons\u00c3\u00b3rcio Alfa de Administra\u00c3\u00a7\u00c3\u00a3o S.A. in 1999. The company was founded in 1952 and is headquartered in S\u00c3\u00a3o Paulo, Brazil. Consorcio Alfa de Administra\u00c3\u00a7\u00c3\u00a3o S.A. is a subsidiary of Administradora Fortaleza Ltda.",
-        "currency": "BRL",
-        "sector": "Financial Services",
-        "industry": "Financial Conglomerates",
-        "exchange": "SAO",
-        "market": "br_market",
-        "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
-    },
     "BRGE8.SA": {
         "short_name": "ALFA CONSORCPND",
         "long_name": "Cons\u00f3rcio Alfa de Administra\u00e7\u00e3o S.A.",
@@ -504,7 +528,7 @@
         "city": "Sao Paulo"
     },
     "BRSR3.SA": {
-        "short_name": "BANRISUL    ON      N1",
+        "short_name": "BANRISUL    ON  EJ  N1",
         "long_name": "Banco do Estado do Rio Grande do Sul S.A.",
         "summary": "Banco do Estado do Rio Grande do Sul S.A., a multiple-service bank, provides a range of banking products and services primarily in Brazil, Miami, and the Grand Cayman. The company operates through Retail, Payroll Correspondents, and Corporate segments. The Retail segment provides funding and lending operation services for individuals, as well as micro, small, and medium-sized entities. The Payroll Correspondents segment offers payroll loans. The Corporate segment manages products and services related to fundraising; and provides commercial lending, long-term, rural, mortgages, and foreign exchange loans for government entities, and medium and large size companies. The company also provides securities brokerage services; credit cards; and insurance and pension products, as well as manages sales poll groups. In addition, it acts as an economic and financial agent for the state of Rio Grande do Sul. Further, the company is involved in the investment, development, leasing, and foreign exchange activities. It serves customers through a network of 518 branches. Banco do Estado do Rio Grande do Sul S.A. was founded in 1928 and is headquartered in Porto Alegre, Brazil.",
         "currency": "BRL",
@@ -516,7 +540,7 @@
         "city": "Porto Alegre"
     },
     "BRSR5.SA": {
-        "short_name": "BANRISUL    PNA     N1",
+        "short_name": "BANRISUL    PNA EJ  N1",
         "long_name": "Banco do Estado do Rio Grande do Sul S.A.",
         "summary": "Banco do Estado do Rio Grande do Sul S.A., a multiple-service bank, provides a range of banking products and services primarily in Brazil, Miami, and the Grand Cayman. The company operates through Retail, Payroll Correspondents, and Corporate segments. The Retail segment provides funding and lending operation services for individuals, as well as micro, small, and medium-sized entities. The Payroll Correspondents segment offers payroll loans. The Corporate segment manages products and services related to fundraising; and provides commercial lending, long-term, rural, mortgages, and foreign exchange loans for government entities, and medium and large size companies. The company also provides securities brokerage services; credit cards; and insurance and pension products, as well as manages sales poll groups. In addition, it acts as an economic and financial agent for the state of Rio Grande do Sul. Further, the company is involved in the investment, development, leasing, and foreign exchange activities. It serves customers through a network of 518 branches. Banco do Estado do Rio Grande do Sul S.A. was founded in 1928 and is headquartered in Porto Alegre, Brazil.",
         "currency": "BRL",
@@ -528,7 +552,7 @@
         "city": "Porto Alegre"
     },
     "BRSR6.SA": {
-        "short_name": "BANRISUL    PNB     N1",
+        "short_name": "BANRISUL    PNB EJ  N1",
         "long_name": "Banco do Estado do Rio Grande do Sul S.A.",
         "summary": "Banco do Estado do Rio Grande do Sul S.A., a multiple-service bank, provides a range of banking products and services primarily in Brazil, Miami, and the Grand Cayman. The company operates through Retail, Payroll Correspondents, and Corporate segments. The Retail segment provides funding and lending operation services for individuals, as well as micro, small, and medium-sized entities. The Payroll Correspondents segment offers payroll loans. The Corporate segment manages products and services related to fundraising; and provides commercial lending, long-term, rural, mortgages, and foreign exchange loans for government entities, and medium and large size companies. The company also provides securities brokerage services; credit cards; and insurance and pension products, as well as manages sales poll groups. In addition, it acts as an economic and financial agent for the state of Rio Grande do Sul. Further, the company is involved in the investment, development, leasing, and foreign exchange activities. It serves customers through a network of 518 branches. Banco do Estado do Rio Grande do Sul S.A. was founded in 1928 and is headquartered in Porto Alegre, Brazil.",
         "currency": "BRL",
@@ -539,27 +563,27 @@
         "country": "Brazil",
         "city": "Porto Alegre"
     },
+    "BSBR.BA": {
+        "short_name": "BANCO SANTANDER(BR",
+        "long_name": "Banco Santander SA (Brazil)",
+        "summary": "Banco Santander SA is based in Ribeirao Preto, Brazil. Banco Santander SA (Brazil) operates as a subsidiary of Banco Santander, S.A.",
+        "currency": "ARS",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "BUE",
+        "market": "ar_market",
+        "country": "Brazil",
+        "city": "Ribeirao Preto"
+    },
     "BSBR": {
         "short_name": "Banco Santander Brasil SA",
         "long_name": "Banco Santander (Brasil) S.A.",
-        "summary": "Banco Santander (Brasil) S.A. provides commercial banking products and services to individuals, small and medium enterprises, and corporate customers in Brazil and internationally. It operates in two segments, Commercial Banking and Global Wholesale Banking. The company offers checking and savings accounts; priority services, such as withdrawals, debit cards, deposits, and transfers; onshore and offshore financial products and services, investment advice, and asset management services; consumer credit for purchasing motor vehicles, and other goods and services; local loans, commercial finance, trade finance, guarantees, structured loans, and cash management and funding solutions, as well as Banco Nacional de Desenvolvimento Econ\u00c3\u00b4mico e Social on-lending transfer services; payroll, mortgage, and agribusiness loans, as well as microcredit; investment products; and credit cards and foreign exchange services. It also provides funding and financial advisory services related to projects, and origination and distribution of fixed-income securities in the debt capital markets, as well as financing for acquisitions and syndicated loans, other structured financing arrangements, and subordinated debt and energy efficiency transactions. In addition, the company offers advisory services in mergers and acquisitions, and equity capital markets transactions; stock brokerage and advisory, equity, and equity research services; derivative and investment products; and digital payment solutions. Further, it operates Webmotors, an online automotive classified. The company provides its products and services through branches, mini-branches, and ATMs; call centers; and digital channels, such as Internet banking and mobile banking. Banco Santander (Brasil) S.A. was incorporated in 1985 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
+        "summary": "Banco Santander (Brasil) S.A. provides various banking products and services to individuals, small and medium enterprises, and corporate customers in Brazil and internationally. The company operates in two segments, Commercial Banking and Global Wholesale Banking. It offers deposits and other bank funding instruments; debit and credit cards; digital pre-paid solutions; payment platform; loyalty programs; employee benefit vouchers; payroll loans; digital lending and online debt renegotiation services; mortgages; home equity financing products; consumer credit; and local loans, commercial and trade finance, guarantees, structured loans, and cash management and funding solutions, as well as on-lending transfer services. It also provides funding and financial advisory services related to projects, origination and distribution of fixed-income securities in the debt capital markets, financing of acquisitions and syndicated loans, other structured financing arrangements, and subordinated debt and energy efficiency transactions; advisory services for mergers and acquisitions, and equity capital markets transactions; and stock brokerage and advisory, equity, and equity research services. In addition, the company structures and offers foreign exchange, derivative, and investment products for institutional investors, and corporate and retail customers; and provides market making services. Further, it offers instant payment services; range of products and services focused on the agribusiness sector; microfinance services; and online automotive listing and digital car insurance solutions, as well as digital trading platform. The company provides its financial services and products to its customers through multichannel distribution network comprising branches, mini-branches, ATMs, call centers, Internet banking, and mobile banking. Banco Santander (Brasil) S.A. was incorporated in 1985 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
         "exchange": "NYQ",
         "market": "us_market",
-        "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
-    },
-    "BSBRN.MX": {
-        "short_name": "BANCO SANTANDER(BRAZIL)SA",
-        "long_name": "Banco Santander (Brasil) S.A.",
-        "summary": "Banco Santander (Brasil) S.A. provides commercial banking products and services to individuals, small and medium enterprises, and corporate customers in Brazil and internationally. It operates in two segments, Commercial Banking and Global Wholesale Banking. The company offers checking and savings accounts; priority services, such as withdrawals, debit cards, deposits, and transfers; onshore and offshore financial products and services, investment advice, and asset management services; consumer credit for purchasing motor vehicles, and other goods and services; local loans, commercial finance, trade finance, guarantees, structured loans, and cash management and funding solutions, as well as Banco Nacional de Desenvolvimento Econ\u00c3\u00b4mico e Social on-lending transfer services; payroll, mortgage, and agribusiness loans, as well as microcredit; investment products; and credit cards and foreign exchange services. It also provides funding and financial advisory services related to projects, and origination and distribution of fixed-income securities in the debt capital markets, as well as financing for acquisitions and syndicated loans, other structured financing arrangements, and subordinated debt and energy efficiency transactions. In addition, the company offers advisory services in mergers and acquisitions, and equity capital markets transactions; stock brokerage and advisory, equity, and equity research services; derivative and investment products; and digital payment solutions. Further, it operates Webmotors, an online automotive classified. The company provides its products and services through branches, mini-branches, and ATMs; call centers; and digital channels, such as Internet banking and mobile banking. Banco Santander (Brasil) S.A. was incorporated in 1985 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
-        "currency": "MXN",
-        "sector": "Financial Services",
-        "industry": "Banks - Regional",
-        "exchange": "MEX",
-        "market": "mx_market",
         "country": "Brazil",
         "city": "S\u00c3\u00a3o Paulo"
     },
@@ -590,7 +614,7 @@
     "BVXB.F": {
         "short_name": "ITAU UNIBCO HLDG ADR PFD1",
         "long_name": "Ita\u00fa Unibanco Holding S.A.",
-        "summary": "Ita\u00c3\u00ba Unibanco Holding S.A. provides a range of financial products and services in Brazil and internationally. The company operates through three segments: Retail Banking, Wholesale Banking, and Activities with the Market + Corporation. It offers various deposit products, as well as loans and credit cards; investment banking services; real estate lending services; financing and investment services; and leasing and foreign exchange services. The company also provides property and casualty insurance covering loss, damage, or liabilities for assets or persons, as well as life insurance covering death and personal accidents; and reinsurance products. It serves retail customers, account and non-account holders, individuals and legal entities, high income clients, microenterprises, and companies. The company was formerly known as Ita\u00c3\u00ba Unibanco Banco M\u00c3\u00baltiplo S.A. and changed its name to Ita\u00c3\u00ba Unibanco Holding S.A. in April 2009. The company was founded in 1924 and is headquartered in S\u00c3\u00a3o Paulo, Brazil. Ita\u00c3\u00ba Unibanco Holding S.A. operates a subsidiary of IUPAR - Ita\u00c3\u00ba Unibanco Participa\u00c3\u00a7\u00c3\u00b5es S.A.",
+        "summary": "Ita\u00c3\u00ba Unibanco Holding S.A. provides a range of financial products and services in Brazil and internationally. The company operates through three segments: Retail Banking, Wholesale Banking, and Activities with the Market + Corporation. It offers various deposit products, as well as loans and credit cards; investment banking services; real estate lending services; financing and investment services; and leasing and foreign exchange services. The company also provides property and casualty insurance products covering loss, damage, or liabilities for assets or persons, as well as life insurance products covering death and personal accident; and reinsurance products. It serves retail customers, account and non-account holders, individuals and legal entities, high income clients, microenterprises, and companies. The company was formerly known as Ita\u00c3\u00ba Unibanco Banco M\u00c3\u00baltiplo S.A. and changed its name to Ita\u00c3\u00ba Unibanco Holding S.A. in April 2009. The company was incorporated in 1924 and is headquartered in S\u00c3\u00a3o Paulo, Brazil. Ita\u00c3\u00ba Unibanco Holding S.A. operates a subsidiary of IUPAR - Ita\u00c3\u00ba Unibanco Participa\u00c3\u00a7\u00c3\u00b5es S.A.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -614,7 +638,7 @@
     "CARD3.SA": {
         "short_name": "CSU CARDSYSTON      NM",
         "long_name": "CSU Cardsystem S.A.",
-        "summary": "CSU CardSystem S.A. engages in the processing of electronic payment transactions, customer relationships, and reward programs in Brazil. The company offers CSU.CardSystem solutions, such as processing, fraud prevention, contact center, back office, cards embossing, operation management, network management, charge back, and web services to banks, Fintechs, and retailers; MarketSystem provides relationship marketing, loyalty, incentive, and e-commerce solutions using resources from the technological platforms of Loyalty and OPTe+; and ITS that provides data center management and outsourcing services. It also provides CSU.Contact, a management outsourcing unit for customer relations used in automation, robotization, and digital channels. CSU Cardsystem S.A. was founded in 1992 and is based in Barueri, Brazil.",
+        "summary": "CSU CardSystem S.A. engages in the processing of electronic payment transactions, customer relationships, and reward programs in Brazil. The company offers CSU.CardSystem solutions, such as processing, fraud prevention, contact center, back office, cards embossing, operation and network management, charge back, and web services to banks, Fintechs, and retailers; MarketSystem that provides relationship marketing, e-commerce, loyalty, and incentive solutions; and ITS that offers IT outsourcing and data center management services. It also provides CSU.Contact, which provides outsourcing business solutions that manages various activation channels and enabling the development of programs for acquisition, recovery, collection, and customer services. The company was founded in 1992 and is based in Barueri, Brazil. CSU Cardsystem S.A. is a subsidiary of Greeneville Delaware LLC.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Credit Services",
@@ -671,13 +695,37 @@
         "country": "Brazil",
         "city": "Salvador"
     },
+    "CXSE3.SA": {
+        "short_name": "CAIXA SEGURION      NM",
+        "long_name": "Caixa Seguridade Participa\u00e7\u00f5es S.A.",
+        "summary": "Caixa Seguridade Participa\u00c3\u00a7\u00c3\u00b5es S.A. provides various life and non-life insurance policies in Brazil. It offers housing, elementary, credit, and auto insurance; and private retirement plans, capitalization bonds, and consortium. The company was incorporated in 2015 and is based in Bras\u00c3\u00adlia, Brazil. Caixa Seguridade Participa\u00c3\u00a7\u00c3\u00b5es S.A. is a subsidiary of Caixa Econ\u00c3\u00b4mica Federal.",
+        "currency": "BRL",
+        "sector": "Financial Services",
+        "industry": "Insurance - Diversified",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": "Bras\u00c3\u00adlia"
+    },
     "DBSA.F": {
         "short_name": "BANCO SANT.SPON.ADS/1 UTS",
         "long_name": "Banco Santander (Brasil) S.A.",
-        "summary": "Banco Santander (Brasil) S.A. provides commercial banking products and services to individuals, small and medium enterprises, and corporate customers in Brazil and internationally. It operates in two segments, Commercial Banking and Global Wholesale Banking. The company offers checking and savings accounts; priority services, such as withdrawals, debit cards, deposits, and transfers; onshore and offshore financial products and services, investment advice, and asset management services; consumer credit for purchasing motor vehicles, and other goods and services; local loans, commercial finance, trade finance, guarantees, structured loans, and cash management and funding solutions, as well as Banco Nacional de Desenvolvimento Econ\u00c3\u00b4mico e Social on-lending transfer services; payroll, mortgage, and agribusiness loans, as well as microcredit; investment products; and credit cards and foreign exchange services. It also provides funding and financial advisory services related to projects, and origination and distribution of fixed-income securities in the debt capital markets, as well as financing for acquisitions and syndicated loans, other structured financing arrangements, and subordinated debt and energy efficiency transactions. In addition, the company offers advisory services in mergers and acquisitions, and equity capital markets transactions; stock brokerage and advisory, equity, and equity research services; derivative and investment products; and digital payment solutions. Further, it operates Webmotors, an online automotive classified. The company provides its products and services through branches, mini-branches, and ATMs; call centers; and digital channels, such as Internet banking and mobile banking. Banco Santander (Brasil) S.A. was incorporated in 1985 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
+        "summary": "Banco Santander (Brasil) S.A. provides various banking products and services to individuals, small and medium enterprises, and corporate customers in Brazil and internationally. The company operates in two segments, Commercial Banking and Global Wholesale Banking. It offers deposits and other bank funding instruments; debit and credit cards; digital pre-paid solutions; payment platform; loyalty programs; employee benefit vouchers; payroll loans; digital lending and online debt renegotiation services; mortgages; home equity financing products; consumer credit; and local loans, commercial and trade finance, guarantees, structured loans, and cash management and funding solutions, as well as on-lending transfer services. It also provides funding and financial advisory services related to projects, origination and distribution of fixed-income securities in the debt capital markets, financing of acquisitions and syndicated loans, other structured financing arrangements, and subordinated debt and energy efficiency transactions; advisory services for mergers and acquisitions, and equity capital markets transactions; and stock brokerage and advisory, equity, and equity research services. In addition, the company structures and offers foreign exchange, derivative, and investment products for institutional investors, and corporate and retail customers; and provides market making services. Further, it offers instant payment services; range of products and services focused on the agribusiness sector; microfinance services; and online automotive listing and digital car insurance solutions, as well as digital trading platform. The company provides its financial services and products to its customers through multichannel distribution network comprising branches, mini-branches, ATMs, call centers, Internet banking, and mobile banking. Banco Santander (Brasil) S.A. was incorporated in 1985 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Brazil",
+        "city": "S\u00c3\u00a3o Paulo"
+    },
+    "FXM.F": {
+        "short_name": "BRADESPAR S.A. PFD",
+        "long_name": "Bradespar S.A.",
+        "summary": "Bradespar S.A., through its interest in VALE, operates as a mining company in the production of iron ore, iron ore pellets, and nickel. The company also produces manganese ore, ferroalloys, thermal and metallurgical coal, copper, platinum group metal by-products, gold, silver, and cobalt. In addition, it operates logistics systems, including railroads, maritime terminals, and ports. The company was incorporated in 2000 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Brazil",
@@ -708,7 +756,7 @@
         "city": "Sao Paulo"
     },
     "HGPO11.SA": {
-        "short_name": "FII CSHGPRIMCI",
+        "short_name": "FII CSHGPRIMCI  ER",
         "long_name": "Cshg Jhsf Prime Offices Fundo De Investimento Imobiliario",
         "summary": "Cshg Jhsf Prime Offices Fundo De Investimento Imobiliario specializes in real estate investments in buildings and Metropolitan platinum office.",
         "currency": "BRL",
@@ -733,7 +781,7 @@
     },
     "ITSA3.SA": {
         "short_name": "ITAUSA      ON      N1",
-        "long_name": "Ita\u00fasa - Investimentos Ita\u00fa S.A.",
+        "long_name": "Ita\u00fasa - Investimentos Ita\u00fa SA",
         "summary": "Ita\u00c3\u00basa S.A., through its subsidiaries, operates in the financial and industrial markets in Brazil and internationally. The company offers credit and other financial services to individuals and corporates. It also manufactures and sells footwear, apparel, and textile items and related components, as well as leather, resin and natural or artificial rubber, and sports articles. In addition, the company offers bathroom porcelain and metals, showers, and electric taps; ceramic tiles, including floor and wall coatings, under the Deca, Ceusa, Cecrisa, Hydra, and Portinari brands; and pine and eucalyptus wood panels primarily used in the manufacture of medium, high, and super-density fiberboards, as well as chipboards under the Durafloor brand. Further, it engages in the transportation of gas through gas pipelines to distribution companies. Ita\u00c3\u00basa S.A. was founded in 1966 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
@@ -744,8 +792,8 @@
         "city": "S\u00c3\u00a3o Paulo"
     },
     "ITSA4.SA": {
-        "short_name": "ITAUSA      PN      N1",
-        "long_name": "Ita\u00fasa - Investimentos Ita\u00fa S.A.",
+        "short_name": "ITAUSA      PN  ED  N1",
+        "long_name": "Ita\u00fasa - Investimentos Ita\u00fa SA",
         "summary": "Ita\u00c3\u00basa S.A., through its subsidiaries, operates in the financial and industrial markets in Brazil and internationally. The company offers credit and other financial services to individuals and corporates. It also manufactures and sells footwear, apparel, and textile items and related components, as well as leather, resin and natural or artificial rubber, and sports articles. In addition, the company offers bathroom porcelain and metals, showers, and electric taps; ceramic tiles, including floor and wall coatings, under the Deca, Ceusa, Cecrisa, Hydra, and Portinari brands; and pine and eucalyptus wood panels primarily used in the manufacture of medium, high, and super-density fiberboards, as well as chipboards under the Durafloor brand. Further, it engages in the transportation of gas through gas pipelines to distribution companies. Ita\u00c3\u00basa S.A. was founded in 1966 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
@@ -755,10 +803,22 @@
         "country": "Brazil",
         "city": "S\u00c3\u00a3o Paulo"
     },
+    "ITUB.BA": {
+        "short_name": "ITAU UNIBANCO HOLD",
+        "long_name": "Ita\u00fa Unibanco Holding S.A.",
+        "summary": "Ita\u00c3\u00ba Unibanco Holding S.A. provides a range of financial products and services in Brazil and internationally. The company operates through three segments: Retail Banking, Wholesale Banking, and Activities with the Market + Corporation. It offers various deposit products, as well as loans and credit cards; investment banking services; real estate lending services; financing and investment services; and leasing and foreign exchange services. The company also provides property and casualty insurance products covering loss, damage, or liabilities for assets or persons, as well as life insurance products covering death and personal accident; and reinsurance products. It serves retail customers, account and non-account holders, individuals and legal entities, high income clients, microenterprises, and companies. The company was formerly known as Ita\u00c3\u00ba Unibanco Banco M\u00c3\u00baltiplo S.A. and changed its name to Ita\u00c3\u00ba Unibanco Holding S.A. in April 2009. The company was incorporated in 1924 and is headquartered in S\u00c3\u00a3o Paulo, Brazil. Ita\u00c3\u00ba Unibanco Holding S.A. operates a subsidiary of IUPAR - Ita\u00c3\u00ba Unibanco Participa\u00c3\u00a7\u00c3\u00b5es S.A.",
+        "currency": "ARS",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "BUE",
+        "market": "ar_market",
+        "country": "Brazil",
+        "city": "S\u00c3\u00a3o Paulo"
+    },
     "ITUB": {
         "short_name": "Itau Unibanco Banco Holding SA",
         "long_name": "Ita\u00fa Unibanco Holding S.A.",
-        "summary": "Ita\u00c3\u00ba Unibanco Holding S.A. provides a range of financial products and services in Brazil and internationally. The company operates through three segments: Retail Banking, Wholesale Banking, and Activities with the Market + Corporation. It offers various deposit products, as well as loans and credit cards; investment banking services; real estate lending services; financing and investment services; and leasing and foreign exchange services. The company also provides property and casualty insurance covering loss, damage, or liabilities for assets or persons, as well as life insurance covering death and personal accidents; and reinsurance products. It serves retail customers, account and non-account holders, individuals and legal entities, high income clients, microenterprises, and companies. The company was formerly known as Ita\u00c3\u00ba Unibanco Banco M\u00c3\u00baltiplo S.A. and changed its name to Ita\u00c3\u00ba Unibanco Holding S.A. in April 2009. The company was founded in 1924 and is headquartered in S\u00c3\u00a3o Paulo, Brazil. Ita\u00c3\u00ba Unibanco Holding S.A. operates a subsidiary of IUPAR - Ita\u00c3\u00ba Unibanco Participa\u00c3\u00a7\u00c3\u00b5es S.A.",
+        "summary": "Ita\u00c3\u00ba Unibanco Holding S.A. provides a range of financial products and services in Brazil and internationally. The company operates through three segments: Retail Banking, Wholesale Banking, and Activities with the Market + Corporation. It offers various deposit products, as well as loans and credit cards; investment banking services; real estate lending services; financing and investment services; and leasing and foreign exchange services. The company also provides property and casualty insurance products covering loss, damage, or liabilities for assets or persons, as well as life insurance products covering death and personal accident; and reinsurance products. It serves retail customers, account and non-account holders, individuals and legal entities, high income clients, microenterprises, and companies. The company was formerly known as Ita\u00c3\u00ba Unibanco Banco M\u00c3\u00baltiplo S.A. and changed its name to Ita\u00c3\u00ba Unibanco Holding S.A. in April 2009. The company was incorporated in 1924 and is headquartered in S\u00c3\u00a3o Paulo, Brazil. Ita\u00c3\u00ba Unibanco Holding S.A. operates a subsidiary of IUPAR - Ita\u00c3\u00ba Unibanco Participa\u00c3\u00a7\u00c3\u00b5es S.A.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -768,9 +828,9 @@
         "city": "S\u00c3\u00a3o Paulo"
     },
     "ITUB3.SA": {
-        "short_name": "ITAUUNIBANCOON  EJ  N1",
+        "short_name": "ITAUUNIBANCOON  EDJ N1",
         "long_name": "Ita\u00fa Unibanco Holding S.A.",
-        "summary": "Ita\u00c3\u00ba Unibanco Holding S.A. provides a range of financial products and services in Brazil and internationally. The company operates through three segments: Retail Banking, Wholesale Banking, and Activities with the Market + Corporation. It offers various deposit products, as well as loans and credit cards; investment banking services; real estate lending services; financing and investment services; and leasing and foreign exchange services. The company also provides property and casualty insurance covering loss, damage, or liabilities for assets or persons, as well as life insurance covering death and personal accidents; and reinsurance products. It serves retail customers, account and non-account holders, individuals and legal entities, high income clients, microenterprises, and companies. The company was formerly known as Ita\u00c3\u00ba Unibanco Banco M\u00c3\u00baltiplo S.A. and changed its name to Ita\u00c3\u00ba Unibanco Holding S.A. in April 2009. The company was founded in 1924 and is headquartered in S\u00c3\u00a3o Paulo, Brazil. Ita\u00c3\u00ba Unibanco Holding S.A. operates a subsidiary of IUPAR - Ita\u00c3\u00ba Unibanco Participa\u00c3\u00a7\u00c3\u00b5es S.A.",
+        "summary": "Ita\u00c3\u00ba Unibanco Holding S.A. provides a range of financial products and services in Brazil and internationally. The company operates through three segments: Retail Banking, Wholesale Banking, and Activities with the Market + Corporation. It offers various deposit products, as well as loans and credit cards; investment banking services; real estate lending services; financing and investment services; and leasing and foreign exchange services. The company also provides property and casualty insurance products covering loss, damage, or liabilities for assets or persons, as well as life insurance products covering death and personal accident; and reinsurance products. It serves retail customers, account and non-account holders, individuals and legal entities, high income clients, microenterprises, and companies. The company was formerly known as Ita\u00c3\u00ba Unibanco Banco M\u00c3\u00baltiplo S.A. and changed its name to Ita\u00c3\u00ba Unibanco Holding S.A. in April 2009. The company was incorporated in 1924 and is headquartered in S\u00c3\u00a3o Paulo, Brazil. Ita\u00c3\u00ba Unibanco Holding S.A. operates a subsidiary of IUPAR - Ita\u00c3\u00ba Unibanco Participa\u00c3\u00a7\u00c3\u00b5es S.A.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -780,9 +840,9 @@
         "city": "S\u00c3\u00a3o Paulo"
     },
     "ITUB4.SA": {
-        "short_name": "ITAUUNIBANCOPN  EJ  N1",
+        "short_name": "ITAUUNIBANCOPN  EDJ N1",
         "long_name": "Ita\u00fa Unibanco Holding S.A.",
-        "summary": "Ita\u00c3\u00ba Unibanco Holding S.A. provides a range of financial products and services in Brazil and internationally. The company operates through three segments: Retail Banking, Wholesale Banking, and Activities with the Market + Corporation. It offers various deposit products, as well as loans and credit cards; investment banking services; real estate lending services; financing and investment services; and leasing and foreign exchange services. The company also provides property and casualty insurance covering loss, damage, or liabilities for assets or persons, as well as life insurance covering death and personal accidents; and reinsurance products. It serves retail customers, account and non-account holders, individuals and legal entities, high income clients, microenterprises, and companies. The company was formerly known as Ita\u00c3\u00ba Unibanco Banco M\u00c3\u00baltiplo S.A. and changed its name to Ita\u00c3\u00ba Unibanco Holding S.A. in April 2009. The company was founded in 1924 and is headquartered in S\u00c3\u00a3o Paulo, Brazil. Ita\u00c3\u00ba Unibanco Holding S.A. operates a subsidiary of IUPAR - Ita\u00c3\u00ba Unibanco Participa\u00c3\u00a7\u00c3\u00b5es S.A.",
+        "summary": "Ita\u00c3\u00ba Unibanco Holding S.A. provides a range of financial products and services in Brazil and internationally. The company operates through three segments: Retail Banking, Wholesale Banking, and Activities with the Market + Corporation. It offers various deposit products, as well as loans and credit cards; investment banking services; real estate lending services; financing and investment services; and leasing and foreign exchange services. The company also provides property and casualty insurance products covering loss, damage, or liabilities for assets or persons, as well as life insurance products covering death and personal accident; and reinsurance products. It serves retail customers, account and non-account holders, individuals and legal entities, high income clients, microenterprises, and companies. The company was formerly known as Ita\u00c3\u00ba Unibanco Banco M\u00c3\u00baltiplo S.A. and changed its name to Ita\u00c3\u00ba Unibanco Holding S.A. in April 2009. The company was incorporated in 1924 and is headquartered in S\u00c3\u00a3o Paulo, Brazil. Ita\u00c3\u00ba Unibanco Holding S.A. operates a subsidiary of IUPAR - Ita\u00c3\u00ba Unibanco Participa\u00c3\u00a7\u00c3\u00b5es S.A.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -802,6 +862,30 @@
         "market": "br_market",
         "country": "Brazil",
         "city": "Rio De Janeiro"
+    },
+    "MERC3.SA": {
+        "short_name": "MERC FINANC ON",
+        "long_name": "Mercantil do Brasil Financeira S.A.",
+        "summary": "Mercantil do Brasil Financeira S.A. provides direct consumer credit and payroll credit services in Brazil. The company was founded in 1943 and is based in Belo Horizonte, Brazil. Mercantil do Brasil Financeira S.A. is a subsidiary of Banco Mercantil do Brasil S.A.",
+        "currency": "BRL",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": "Belo Horizonte"
+    },
+    "MERC4.SA": {
+        "short_name": "MERC FINANC PN",
+        "long_name": "Mercantil do Brasil Financeira S.A.",
+        "summary": "Mercantil do Brasil Financeira S.A. provides direct consumer credit and payroll credit services in Brazil. The company was founded in 1943 and is based in Belo Horizonte, Brazil. Mercantil do Brasil Financeira S.A. is a subsidiary of Banco Mercantil do Brasil S.A.",
+        "currency": "BRL",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": "Belo Horizonte"
     },
     "NORD3.SA": {
         "short_name": "NORDON MET  ON",
@@ -839,6 +923,18 @@
         "country": "Brazil",
         "city": "Salvador"
     },
+    "PINE4.SA": {
+        "short_name": "PINE        PN      N2",
+        "long_name": "Banco Pine S.A.",
+        "summary": "Banco Pine S.A. provides commercial banking products and services in Brazil and Grand Cayman, the Cayman Islands. It offers bank account services, revolving credit, debt collections, transfers, bank guarantees, foreign exchange, foreign trade, insurance, and investment services. The company also provides working capital financing, prepayment of receivables, debt structuring, and financial risk management for currencies, interest rates, and commodity pricing. Banco Pine S.A. was founded in 1939 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
+        "currency": "BRL",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": "S\u00c3\u00a3o Paulo"
+    },
     "PPLA11.SA": {
         "short_name": "PPLA        UNT",
         "long_name": "PPLA Participations Ltd.",
@@ -864,7 +960,7 @@
         "city": "S\u00c3\u00a3o Paulo"
     },
     "RBED11.SA": {
-        "short_name": "FII RIOB ED CI",
+        "short_name": "FII RIOB ED CI  ER",
         "long_name": "Aesapar Fundo de Investimento Imobili\u00e1rio - FII",
         "summary": "Aesapar Fundo de Investimento Imobili\u00c3\u00a1rio - FII specializes in real estate investments.",
         "currency": "BRL",
@@ -878,7 +974,7 @@
     "SANB11.SA": {
         "short_name": "SANTANDER BRUNT",
         "long_name": "Banco Santander (Brasil) S.A.",
-        "summary": "Banco Santander (Brasil) S.A. provides commercial banking products and services to individuals, small and medium enterprises, and corporate customers in Brazil and internationally. It operates in two segments, Commercial Banking and Global Wholesale Banking. The company offers checking and savings accounts; priority services, such as withdrawals, debit cards, deposits, and transfers; onshore and offshore financial products and services, investment advice, and asset management services; consumer credit for purchasing motor vehicles, and other goods and services; local loans, commercial finance, trade finance, guarantees, structured loans, and cash management and funding solutions, as well as Banco Nacional de Desenvolvimento Econ\u00c3\u00b4mico e Social on-lending transfer services; payroll, mortgage, and agribusiness loans, as well as microcredit; investment products; and credit cards and foreign exchange services. It also provides funding and financial advisory services related to projects, and origination and distribution of fixed-income securities in the debt capital markets, as well as financing for acquisitions and syndicated loans, other structured financing arrangements, and subordinated debt and energy efficiency transactions. In addition, the company offers advisory services in mergers and acquisitions, and equity capital markets transactions; stock brokerage and advisory, equity, and equity research services; derivative and investment products; and digital payment solutions. Further, it operates Webmotors, an online automotive classified. The company provides its products and services through branches, mini-branches, and ATMs; call centers; and digital channels, such as Internet banking and mobile banking. Banco Santander (Brasil) S.A. was incorporated in 1985 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
+        "summary": "Banco Santander (Brasil) S.A. provides various banking products and services to individuals, small and medium enterprises, and corporate customers in Brazil and internationally. The company operates in two segments, Commercial Banking and Global Wholesale Banking. It offers deposits and other bank funding instruments; debit and credit cards; digital pre-paid solutions; payment platform; loyalty programs; employee benefit vouchers; payroll loans; digital lending and online debt renegotiation services; mortgages; home equity financing products; consumer credit; and local loans, commercial and trade finance, guarantees, structured loans, and cash management and funding solutions, as well as on-lending transfer services. It also provides funding and financial advisory services related to projects, origination and distribution of fixed-income securities in the debt capital markets, financing of acquisitions and syndicated loans, other structured financing arrangements, and subordinated debt and energy efficiency transactions; advisory services for mergers and acquisitions, and equity capital markets transactions; and stock brokerage and advisory, equity, and equity research services. In addition, the company structures and offers foreign exchange, derivative, and investment products for institutional investors, and corporate and retail customers; and provides market making services. Further, it offers instant payment services; range of products and services focused on the agribusiness sector; microfinance services; and online automotive listing and digital car insurance solutions, as well as digital trading platform. The company provides its financial services and products to its customers through multichannel distribution network comprising branches, mini-branches, ATMs, call centers, Internet banking, and mobile banking. Banco Santander (Brasil) S.A. was incorporated in 1985 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -890,7 +986,7 @@
     "SANB3.SA": {
         "short_name": "SANTANDER BRON",
         "long_name": "Banco Santander (Brasil) S.A.",
-        "summary": "Banco Santander (Brasil) S.A. provides commercial banking products and services to individuals, small and medium enterprises, and corporate customers in Brazil and internationally. It operates in two segments, Commercial Banking and Global Wholesale Banking. The company offers checking and savings accounts; priority services, such as withdrawals, debit cards, deposits, and transfers; onshore and offshore financial products and services, investment advice, and asset management services; consumer credit for purchasing motor vehicles, and other goods and services; local loans, commercial finance, trade finance, guarantees, structured loans, and cash management and funding solutions, as well as Banco Nacional de Desenvolvimento Econ\u00c3\u00b4mico e Social on-lending transfer services; payroll, mortgage, and agribusiness loans, as well as microcredit; investment products; and credit cards and foreign exchange services. It also provides funding and financial advisory services related to projects, and origination and distribution of fixed-income securities in the debt capital markets, as well as financing for acquisitions and syndicated loans, other structured financing arrangements, and subordinated debt and energy efficiency transactions. In addition, the company offers advisory services in mergers and acquisitions, and equity capital markets transactions; stock brokerage and advisory, equity, and equity research services; derivative and investment products; and digital payment solutions. Further, it operates Webmotors, an online automotive classified. The company provides its products and services through branches, mini-branches, and ATMs; call centers; and digital channels, such as Internet banking and mobile banking. Banco Santander (Brasil) S.A. was incorporated in 1985 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
+        "summary": "Banco Santander (Brasil) S.A. provides various banking products and services to individuals, small and medium enterprises, and corporate customers in Brazil and internationally. The company operates in two segments, Commercial Banking and Global Wholesale Banking. It offers deposits and other bank funding instruments; debit and credit cards; digital pre-paid solutions; payment platform; loyalty programs; employee benefit vouchers; payroll loans; digital lending and online debt renegotiation services; mortgages; home equity financing products; consumer credit; and local loans, commercial and trade finance, guarantees, structured loans, and cash management and funding solutions, as well as on-lending transfer services. It also provides funding and financial advisory services related to projects, origination and distribution of fixed-income securities in the debt capital markets, financing of acquisitions and syndicated loans, other structured financing arrangements, and subordinated debt and energy efficiency transactions; advisory services for mergers and acquisitions, and equity capital markets transactions; and stock brokerage and advisory, equity, and equity research services. In addition, the company structures and offers foreign exchange, derivative, and investment products for institutional investors, and corporate and retail customers; and provides market making services. Further, it offers instant payment services; range of products and services focused on the agribusiness sector; microfinance services; and online automotive listing and digital car insurance solutions, as well as digital trading platform. The company provides its financial services and products to its customers through multichannel distribution network comprising branches, mini-branches, ATMs, call centers, Internet banking, and mobile banking. Banco Santander (Brasil) S.A. was incorporated in 1985 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -902,7 +998,7 @@
     "SANB4.SA": {
         "short_name": "SANTANDER BRPN",
         "long_name": "Banco Santander (Brasil) S.A.",
-        "summary": "Banco Santander (Brasil) S.A. provides commercial banking products and services to individuals, small and medium enterprises, and corporate customers in Brazil and internationally. It operates in two segments, Commercial Banking and Global Wholesale Banking. The company offers checking and savings accounts; priority services, such as withdrawals, debit cards, deposits, and transfers; onshore and offshore financial products and services, investment advice, and asset management services; consumer credit for purchasing motor vehicles, and other goods and services; local loans, commercial finance, trade finance, guarantees, structured loans, and cash management and funding solutions, as well as Banco Nacional de Desenvolvimento Econ\u00c3\u00b4mico e Social on-lending transfer services; payroll, mortgage, and agribusiness loans, as well as microcredit; investment products; and credit cards and foreign exchange services. It also provides funding and financial advisory services related to projects, and origination and distribution of fixed-income securities in the debt capital markets, as well as financing for acquisitions and syndicated loans, other structured financing arrangements, and subordinated debt and energy efficiency transactions. In addition, the company offers advisory services in mergers and acquisitions, and equity capital markets transactions; stock brokerage and advisory, equity, and equity research services; derivative and investment products; and digital payment solutions. Further, it operates Webmotors, an online automotive classified. The company provides its products and services through branches, mini-branches, and ATMs; call centers; and digital channels, such as Internet banking and mobile banking. Banco Santander (Brasil) S.A. was incorporated in 1985 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
+        "summary": "Banco Santander (Brasil) S.A. provides various banking products and services to individuals, small and medium enterprises, and corporate customers in Brazil and internationally. The company operates in two segments, Commercial Banking and Global Wholesale Banking. It offers deposits and other bank funding instruments; debit and credit cards; digital pre-paid solutions; payment platform; loyalty programs; employee benefit vouchers; payroll loans; digital lending and online debt renegotiation services; mortgages; home equity financing products; consumer credit; and local loans, commercial and trade finance, guarantees, structured loans, and cash management and funding solutions, as well as on-lending transfer services. It also provides funding and financial advisory services related to projects, origination and distribution of fixed-income securities in the debt capital markets, financing of acquisitions and syndicated loans, other structured financing arrangements, and subordinated debt and energy efficiency transactions; advisory services for mergers and acquisitions, and equity capital markets transactions; and stock brokerage and advisory, equity, and equity research services. In addition, the company structures and offers foreign exchange, derivative, and investment products for institutional investors, and corporate and retail customers; and provides market making services. Further, it offers instant payment services; range of products and services focused on the agribusiness sector; microfinance services; and online automotive listing and digital car insurance solutions, as well as digital trading platform. The company provides its financial services and products to its customers through multichannel distribution network comprising branches, mini-branches, ATMs, call centers, Internet banking, and mobile banking. Banco Santander (Brasil) S.A. was incorporated in 1985 and is headquartered in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -914,7 +1010,7 @@
     "SULA11.SA": {
         "short_name": "SUL AMERICA UNT     N2",
         "long_name": "Sul Am\u00e9rica S.A.",
-        "summary": "Sul Am\u00c3\u00a9rica S.A., through its subsidiaries, engages in the insurance business in Brazil. The company's products and services include health and dental insurance, health and dental administrative services, healthcare and well-being solutions, life insurance and private pension, savings bonds, and asset management. It also offers property and casualty insurance products, including automobile, mass, and mortgage; and individual and group life, and accident insurance products. The company offers its products and services through a network of independent brokers. Sul Am\u00c3\u00a9rica S.A. was founded in 1895 and is headquartered in Rio de Janeiro, Brazil.",
+        "summary": "Sul Am\u00c3\u00a9rica S.A., through its subsidiaries, engages in the insurance business in Brazil. Its products and services include health and dental insurance, health and dental administrative services, healthcare and well-being solutions, life and personal accident insurance, private pension, savings bonds, and asset management. The company was founded in 1895 and is headquartered in Rio de Janeiro, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Insurance - Property & Casualty",
@@ -926,7 +1022,7 @@
     "SULA3.SA": {
         "short_name": "SUL AMERICA ON      N2",
         "long_name": "Sul Am\u00e9rica S.A.",
-        "summary": "Sul Am\u00c3\u00a9rica S.A., through its subsidiaries, engages in the insurance business in Brazil. The company's products and services include health and dental insurance, health and dental administrative services, healthcare and well-being solutions, life insurance and private pension, savings bonds, and asset management. It also offers property and casualty insurance products, including automobile, mass, and mortgage; and individual and group life, and accident insurance products. The company offers its products and services through a network of independent brokers. Sul Am\u00c3\u00a9rica S.A. was founded in 1895 and is headquartered in Rio de Janeiro, Brazil.",
+        "summary": "Sul Am\u00c3\u00a9rica S.A., through its subsidiaries, engages in the insurance business in Brazil. Its products and services include health and dental insurance, health and dental administrative services, healthcare and well-being solutions, life and personal accident insurance, private pension, savings bonds, and asset management. The company was founded in 1895 and is headquartered in Rio de Janeiro, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Insurance - Property & Casualty",
@@ -938,7 +1034,7 @@
     "SULA4.SA": {
         "short_name": "SUL AMERICA PN      N2",
         "long_name": "Sul Am\u00e9rica S.A.",
-        "summary": "Sul Am\u00c3\u00a9rica S.A., through its subsidiaries, engages in the insurance business in Brazil. The company's products and services include health and dental insurance, health and dental administrative services, healthcare and well-being solutions, life insurance and private pension, savings bonds, and asset management. It also offers property and casualty insurance products, including automobile, mass, and mortgage; and individual and group life, and accident insurance products. The company offers its products and services through a network of independent brokers. Sul Am\u00c3\u00a9rica S.A. was founded in 1895 and is headquartered in Rio de Janeiro, Brazil.",
+        "summary": "Sul Am\u00c3\u00a9rica S.A., through its subsidiaries, engages in the insurance business in Brazil. Its products and services include health and dental insurance, health and dental administrative services, healthcare and well-being solutions, life and personal accident insurance, private pension, savings bonds, and asset management. The company was founded in 1895 and is headquartered in Rio de Janeiro, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Insurance - Property & Casualty",
@@ -947,10 +1043,22 @@
         "country": "Brazil",
         "city": "Rio De Janeiro"
     },
+    "VINP": {
+        "short_name": "Vinci Partners Investments Ltd.",
+        "long_name": "Vinci Partners Investments Ltd.",
+        "summary": "Vinci Partners Investments Ltd. operates as an asset management platform in Brazil. The company's portfolio of investment products and solutions covers private equity, infrastructures, real estate, credit, public equities, hedge funds, and investment products and solutions. It also offers financial and strategic advisory services to entrepreneurs, corporate management teams, and/or boards of directors, focusing primarily on IPO advisory and mergers and acquisition transactions on the sell side or the buy side. The company was founded in 2009 and is based in Rio de Janeiro, Brazil.",
+        "currency": "USD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "NMS",
+        "market": "us_market",
+        "country": "Brazil",
+        "city": "Rio de Janeiro"
+    },
     "WIZS3.SA": {
         "short_name": "WIZ S.A.    ON      NM",
         "long_name": "Wiz Solu\u00e7\u00f5es e Corretagem de Seguros S.A.",
-        "summary": "Wiz Solu\u00c3\u00a7\u00c3\u00b5es e Corretagem de Seguros S.A., together with its subsidiaries, provides financial and insurance brokerage services in Brazil. It offers life insurance for individuals and corporate clients; mortgage insurance, including death or permanent disability insurance, and physical property damage; and credit insurance, auto, residential property, and business multi-risk insurance. The company also provides pension, consortium, and capitalization plans; special risk products, such as various warranties, construction, and group life and rural insurance products; and auto and housing consortium letters, warranty default, and agri business insurance products. In addition, it provides BPO services, such as customer relationship operations, back office, document management, and collection and outsourcing of specialized labors; and focuses on identifying and proposing the business benefit management solutions. The company was formerly known as FPC PAR Corretora de Seguros S.A. and changed its name to Wiz Solu\u00c3\u00a7\u00c3\u00b5es e Corretagem de Seguros S.A. in May 2017. Wiz Solu\u00c3\u00a7\u00c3\u00b5es e Corretagem de Seguros S.A. was founded in 1973 and is headquartered in Brasilia, Brazil.",
+        "summary": "Wiz Solu\u00c3\u00a7\u00c3\u00b5es e Corretagem de Seguros S.A., together with its subsidiaries, provides financial and insurance brokerage services in Brazil. The company offers life insurance for individuals and corporate clients; mortgage insurance, including death or permanent disability insurance, and physical property damage; and credit insurance, auto, residential property, and business multi-risk insurance. It also provides pension, consortium, and capitalization plans; special risk products, such as various warranties, construction, and group life and rural insurance products; and auto and housing consortium letters, warranty default, and agri business insurance products. In addition, the company offers home equity, loan with real estate guarantee, payroll loans, and personal loans. Further, it provides BPO services, such as customer relationship operations, back office, document management, and collection and outsourcing of specialized labors; and focuses on identifying and proposing the business benefit management solutions. The company was formerly known as FPC PAR Corretora de Seguros S.A. and changed its name to Wiz Solu\u00c3\u00a7\u00c3\u00b5es e Corretagem de Seguros S.A. in May 2017. Wiz Solu\u00c3\u00a7\u00c3\u00b5es e Corretagem de Seguros S.A. was founded in 1973 and is headquartered in Brasilia, Brazil.",
         "currency": "BRL",
         "sector": "Financial Services",
         "industry": "Insurance Brokers",
@@ -962,7 +1070,7 @@
     "XBBDC.MC": {
         "short_name": "BANCO BRADESCO, S.A., PREFERENT",
         "long_name": "Banco Bradesco S.A.",
-        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and financial services to individuals, corporates, and businesses in Brazil and internationally. It operates through two segments, Banking and Insurance. The company offers checking and savings accounts, demand deposits, time deposits, and interbank deposits. It also provides mutual funds, foreign exchange, overdrafts, credit cards, and personal and housing loans; and auto, health, life, accident, and property insurance products. In addition, the company offers fund management and treasury services; corporate finance; investment banking, asset management and consortium administration; pension plans; brokerage; real estate ventures and capitalization bonds; and hedge and finance products, including working capital financing. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
+        "summary": "Banco Bradesco S.A., together with its subsidiaries, provides various banking products and services to individuals, corporates, and businesses in Brazil and internationally. The company offers leasing, investment banking, brokerage, and consortium management services, as well as credit cards, real estate products, pension plans, and capitalization bonds. It also provides health, dental assistance, life, and personal accident insurance products. Banco Bradesco S.A. was founded in 1943 and is headquartered in Osasco, Brazil.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -998,12 +1106,24 @@
     "XP": {
         "short_name": "XP Inc.",
         "long_name": "XP Inc.",
-        "summary": "XP Inc. operates technology-driven financial services platform that provides financial products and services in Brazil. It provides broker-dealer services for high-net worth customers and institutional clients; product structuring and capital markets services for corporate clients and issuers of fixed income products; advisory services for mass-affluent and institutional clients; and wealth management services for high-net-worth clients. The company also offers XP Educa\u00c3\u00a7\u00c3\u00a3o, an online financial education portal that offers seminars, classes, and learning tools to help teach individuals a range of topics, such as basics of investing, techniques, and investment strategies, as well as insurance brokerage services. In addition, it operates XP Platform, an open product platform that provides clients to access investment products in the market, including equity and fixed income securities, mutual and hedge funds, structured products, life insurance, pension plans, real-estate investment funds, and others. The company was founded in 2001 and is based in S\u00c3\u00a3o Paulo, Brazil.",
+        "summary": "XP Inc. operates technology-driven financial services platform that provides financial products and services in Brazil. It provides securities brokerage, private pension plans, commercial, and investment banking products, such as loan operations and transactions in the foreign exchange markets and deposits; product structuring and capital markets services for corporate clients and issuers of fixed income products; advisory services for mass-affluent and institutional clients; and wealth management services for high-net-worth customers and institutional clients. The company also offers XP Educa\u00c3\u00a7\u00c3\u00a3o, an online financial education portal that offers seminars, classes, and learning tools to help teach individuals a range of topics, such as basics of investing, techniques, and investment strategies, as well as insurance brokerage services. In addition, it operates XP Platform, an open product platform that provides clients to access investment products in the market, including equity and fixed income securities, mutual and hedge funds, structured products, life insurance, pension plans, real-estate investment funds, and others. The company was founded in 2001 and is based in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Capital Markets",
         "exchange": "NMS",
         "market": "us_market",
+        "country": "Brazil",
+        "city": "S\u00c3\u00a3o Paulo"
+    },
+    "XP9.F": {
+        "short_name": "XP INC.  DL-,00001",
+        "long_name": "XP Inc.",
+        "summary": "XP Inc. operates technology-driven financial services platform that provides financial products and services in Brazil. It provides securities brokerage, private pension plans, commercial, and investment banking products, such as loan operations and transactions in the foreign exchange markets and deposits; product structuring and capital markets services for corporate clients and issuers of fixed income products; advisory services for mass-affluent and institutional clients; and wealth management services for high-net-worth customers and institutional clients. The company also offers XP Educa\u00c3\u00a7\u00c3\u00a3o, an online financial education portal that offers seminars, classes, and learning tools to help teach individuals a range of topics, such as basics of investing, techniques, and investment strategies, as well as insurance brokerage services. In addition, it operates XP Platform, an open product platform that provides clients to access investment products in the market, including equity and fixed income securities, mutual and hedge funds, structured products, life insurance, pension plans, real-estate investment funds, and others. The company was founded in 2001 and is based in S\u00c3\u00a3o Paulo, Brazil.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "Brazil",
         "city": "S\u00c3\u00a3o Paulo"
     }

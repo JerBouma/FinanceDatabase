@@ -11,27 +11,15 @@
         "exchange": "HKG",
         "market": "hk_market"
     },
-    "0P00008SWD.HK": {
-        "short_name": "Sun Life MPF Master Trust-Schro",
-        "long_name": "Sun Life MPF Master Trust-Schroder MPF Stable Growth Portfolio B",
+    "0P00008SUR.HK": {
+        "short_name": "Sun Life MPF Comprehensive Sche",
+        "long_name": "Sun Life MPF Comprehensive Scheme Stable Growth Portfolio",
         "currency": "HKD",
-        "summary": "The objective of the Schroder MPF Stable Growth Portfolio is to achieve a long term return in excess of Hong Kong price inflation (as measured by the Consumer Prince Index Type A).",
+        "summary": "The objective is to achieve medium capital growth with medium to low volatility by investing in a diversified portfolio of collective investment schemes that normally invests in global bonds and equities with equal emphasis. The target asset allocation is 50% equities, and 50% bonds and cash. It is a medium risk fund portfolio and appropriate for middle-aged investors who are willing to take medium risk in return for moderate capital growth (Value of this portfolio will fluctuate both upwards and downwards). The fund invests in a single approved pooled investment fund managed by HSBC Investment Funds (Hong Kong) Limited and may also hold cash up to 5% of its assets.",
         "manager_name": "Not  Disclosed",
         "manager_bio": "",
         "category": "Moderate Allocation",
-        "family": "Schroder Investment Management (Hong Kong) Limited",
-        "exchange": "HKG",
-        "market": "hk_market"
-    },
-    "0P0000KUYO.HK": {
-        "short_name": "AMTD Allianz Choice Stable Grow",
-        "long_name": "AMTD RCM Stable Growth Fund",
-        "currency": "HKD",
-        "summary": "To achieve a stable overall return over the long term by investing solely in the RCM Stable Growth Fund which is an APIF and in turn invests in a diversified portfolio of global equities and fixed-interest securities.",
-        "manager_name": "Not  Disclosed",
-        "manager_bio": "",
-        "category": "Moderate Allocation",
-        "family": "AMTD Financial Planning Limited",
+        "family": "Sun Life Hong Kong Limited",
         "exchange": "HKG",
         "market": "hk_market"
     },
@@ -56,6 +44,18 @@
         "manager_bio": "",
         "category": "Moderate Allocation",
         "family": "Bharti AXA Life Insurance Pvt. Ltd.",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P0000NNDI.BO": {
+        "short_name": "Aditya Birla Sun Life - Individ",
+        "long_name": "Aditya Birla Sun Life - Individual Creator Fund",
+        "currency": "INR",
+        "summary": "To achieve optimum balance between growth and stability to provide long-term capital appreciation with balanced level of risk by investing in fixed income securities and high quality equity security. This fund option is for those who are willing to take average to high level of risk to earn attractive returns over a long period of time.",
+        "manager_name": "Dhrumil  Shah",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "Aditya Birla Sun Life Insurance Company Limited",
         "exchange": "BSE",
         "market": "in_market"
     },
@@ -131,15 +131,39 @@
         "exchange": "BSE",
         "market": "in_market"
     },
-    "0P0000NPO1.BO": {
-        "short_name": "Star Union Dai-ichi Life-Pen Ap",
-        "long_name": "Star Union Dai-ichi Life-Pen Apex Balanced",
+    "0P0000NPD2.BO": {
+        "short_name": "LIC of India - Jeevan Saathi Pl",
+        "long_name": "LIC of India - Jeevan Saathi Plus Balanced",
         "currency": "INR",
         "summary": null,
         "manager_name": "",
         "manager_bio": "",
         "category": "Moderate Allocation",
-        "family": "Star Union Dai-ichi Life Insurance",
+        "family": "Life Insurance Corporation of India",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P0000NPD3.BO": {
+        "short_name": "LIC of India - Jeevan Saathi Pl",
+        "long_name": "LIC of India - Jeevan Saathi Plus Secure",
+        "currency": "INR",
+        "summary": null,
+        "manager_name": "",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "Life Insurance Corporation of India",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P0000NPDT.BO": {
+        "short_name": "PNB Met Life - Balancer Fund II",
+        "long_name": "PNB Met Life - Balancer Fund II",
+        "currency": "INR",
+        "summary": "To generate capital appreciation and current income, through a judicious mix of investments in equities and fixed income securities.",
+        "manager_name": "Amit  Shah",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "PNB MetLife India Insurance Co. Ltd.",
         "exchange": "BSE",
         "market": "in_market"
     },
@@ -155,6 +179,78 @@
         "exchange": "BSE",
         "market": "in_market"
     },
+    "0P0000NQW1.BO": {
+        "short_name": "ICICI Prudential Life - Balance",
+        "long_name": "ICICI Prudential Life - Balancer Fund III",
+        "currency": "INR",
+        "summary": "The objective of the fund is to provide a balance between long-term capital appreciation and current income through investment in equity as well as fixed income instruments in appropriate proportions depending on market conditions prevalent from time to time.",
+        "manager_name": "Manish  Kumar",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "ICICI Prudential Life Insurance Co Ltd",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P0000NQW2.BO": {
+        "short_name": "ICICI Prudential Life - Balance",
+        "long_name": "ICICI Prudential Life - Balancer Fund II",
+        "currency": "INR",
+        "summary": "The objective of the fund is to provide a balance between long-term capital appreciation and current income through investment in equity as well as fixed income instruments in appropriate proportions depending on market conditions prevalent from time to time.",
+        "manager_name": "Manish  Kumar",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "ICICI Prudential Life Insurance Co Ltd",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P0000NQW4.BO": {
+        "short_name": "ICICI Prudential Life - Balance",
+        "long_name": "ICICI Prudential Life - Balancer Fund IV",
+        "currency": "INR",
+        "summary": "The objective of the fund is to provide a balance between long-term capital appreciation and current income through investment in equity as well as fixed income instruments in appropriate proportions depending on market conditions prevalent from time to time.",
+        "manager_name": "Manish  Kumar",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "ICICI Prudential Life Insurance Co Ltd",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P0000NQXP.BO": {
+        "short_name": "ICICI Prudential Life - Pension",
+        "long_name": "ICICI Prudential Life - Pension Balancer Fund",
+        "currency": "INR",
+        "summary": "The objective of the fund is to provide a balance between long-term capital appreciation and current income through investment in equity as well as fixed income instruments in appropriate proportions depending on market conditions prevalent from time to time.",
+        "manager_name": "Manish  Kumar",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "ICICI Prudential Life Insurance Co Ltd",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P0000NQXQ.BO": {
+        "short_name": "ICICI Prudential Life - Pension",
+        "long_name": "ICICI Prudential Life - Pension Balancer Fund II",
+        "currency": "INR",
+        "summary": "The objective of the fund is to provide a balance between long-term capital appreciation and current income through investment in equity as well as fixed income instruments in appropriate proportions depending on market conditions prevalent from time to time.",
+        "manager_name": "Manish  Kumar",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "ICICI Prudential Life Insurance Co Ltd",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P0000NRT4.BO": {
+        "short_name": "Max Life - PensionGrowth Fund",
+        "long_name": "Max Life - PensionGrowth Fund",
+        "currency": "INR",
+        "summary": null,
+        "manager_name": "",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "Max Life Insurance Company Ltd.",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
     "0P0000S4MT.BO": {
         "short_name": "LIC of India - Endowment Plus G",
         "long_name": "LIC of India - Endowment Plus Growth",
@@ -164,30 +260,6 @@
         "manager_bio": "",
         "category": "Moderate Allocation",
         "family": "Life Insurance Corporation of India",
-        "exchange": "BSE",
-        "market": "in_market"
-    },
-    "0P0000THZZ.BO": {
-        "short_name": "Star Union Dai-ichi Life-Expres",
-        "long_name": "Star Union Dai-ichi Life-Express Balanced",
-        "currency": "INR",
-        "summary": null,
-        "manager_name": "",
-        "manager_bio": "",
-        "category": "Moderate Allocation",
-        "family": "Star Union Dai-ichi Life Insurance",
-        "exchange": "BSE",
-        "market": "in_market"
-    },
-    "0P0000XWBQ.BO": {
-        "short_name": "UTI Unit Linked Insurance Plan-",
-        "long_name": "UTI Unit Linked Insurance Plan- Direct",
-        "currency": "INR",
-        "summary": "Investment objective of the scheme is primarily to provide return through growth in the NAV or through dividend distribution and reinvestment thereof.",
-        "manager_name": "Amandeep S. Chopra",
-        "manager_bio": "Mr Ajay Tyagi is a CFA Charterholder from The CFA Institute, USA and also holds a Masters degree in Finance from Delhi University. Ajay joined UTI in the year 2000 and has been working in the equity research and fund management functions since then. He is presently working as a Fund Manager in the Portfolio Management Division, where he is managing funds for private clients like Offshore funds, HNIs, Institutions, Trusts etc. He is also acting as an Investment Advisor to a few India dedicated offshore funds. Prior to being designated as a Fund Manager he has worked as an Assistant Fund Manager in the Offshore Funds division.",
-        "category": "Moderate Allocation",
-        "family": "UTI Asset Management Company Ltd",
         "exchange": "BSE",
         "market": "in_market"
     },
@@ -203,9 +275,9 @@
         "exchange": "BSE",
         "market": "in_market"
     },
-    "0P000168W1.BO": {
+    "0P000168W0.BO": {
         "short_name": "LIC MF Unit Linked Insurance 10",
-        "long_name": "LIC MF Unit Linked Insurance 10 Yrs Regular Premium Reducing Cover Half-Yearly-Regular-Dividend",
+        "long_name": "LIC MF Unit Linked Insurance 10 Yrs Regular Premium Reducing Cover Yearly-Regular-Dividend",
         "currency": "INR",
         "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
         "manager_name": "Marzban  Irani",
@@ -227,9 +299,9 @@
         "exchange": "BSE",
         "market": "in_market"
     },
-    "0P000168W5.BO": {
-        "short_name": "LIC MF Unit Linked Insurance 15",
-        "long_name": "LIC MF Unit Linked Insurance 15 Yrs Regular Premium Reducing Cover Half-Yearly-Regular-Dividend",
+    "0P000168W3.BO": {
+        "short_name": "LIC MF Unit Linked Insurance 10",
+        "long_name": "LIC MF Unit Linked Insurance 10 Yrs Regular Premium Uniform Cover Yearly-Regular-Dividend",
         "currency": "INR",
         "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
         "manager_name": "Marzban  Irani",
@@ -239,9 +311,33 @@
         "exchange": "BSE",
         "market": "in_market"
     },
-    "0P000168W8.BO": {
+    "0P000168W4.BO": {
         "short_name": "LIC MF Unit Linked Insurance 15",
-        "long_name": "LIC MF Unit Linked Insurance 15 Yrs Regular Premium Uniform Cover Half-Yearly-Regular-Dividend",
+        "long_name": "LIC MF Unit Linked Insurance 15 Yrs Regular Premium Reducing Cover Monthly-Regular-Dividend",
+        "currency": "INR",
+        "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
+        "manager_name": "Marzban  Irani",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "LIC Mutual Fund Asset Management Limited",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P000168W6.BO": {
+        "short_name": "LIC MF Unit Linked Insurance 15",
+        "long_name": "LIC MF Unit Linked Insurance 15Yrs Regular Premium Reducing Cover Yearly-Regular-Dividend",
+        "currency": "INR",
+        "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
+        "manager_name": "Marzban  Irani",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "LIC Mutual Fund Asset Management Limited",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P000168W9.BO": {
+        "short_name": "LIC MF Unit Linked Insurance 15",
+        "long_name": "LIC MF Unit Linked Insurance 15 Yrs Regular Premium Uniform Cover Yearly-Regular-Dividend",
         "currency": "INR",
         "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
         "manager_name": "Marzban  Irani",
@@ -263,9 +359,21 @@
         "exchange": "BSE",
         "market": "in_market"
     },
-    "0P000168WE.BO": {
+    "0P000168WC.BO": {
         "short_name": "LIC MF Unit Linked Insurance 10",
-        "long_name": "LIC MF Unit Linked Insurance 10 Yrs Regular Premium Uniform Cover Half-Yearly-Direct-Dividend",
+        "long_name": "LIC MF Unit Linked Insurance 10 Yrs Regular Premium Reducing Cover Yearly-Direct-Dividend",
+        "currency": "INR",
+        "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
+        "manager_name": "Marzban  Irani",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "LIC Mutual Fund Asset Management Limited",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P000168WF.BO": {
+        "short_name": "LIC MF Unit Linked Insurance-10",
+        "long_name": "LIC MF Unit Linked Insurance-10 Yrs Regular Premium Uniform Cover Yearly-Direct-Dividend",
         "currency": "INR",
         "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
         "manager_name": "Marzban  Irani",
@@ -287,9 +395,9 @@
         "exchange": "BSE",
         "market": "in_market"
     },
-    "0P000168WH.BO": {
+    "0P000168WI.BO": {
         "short_name": "LIC MF Unit Linked Insurance 15",
-        "long_name": "LIC MF Unit Linked Insurance 15 Yrs Regular Premium Reducing Cover Half-Yearly-Direct-Dividend",
+        "long_name": "LIC MF Unit Linked Insurance 15 Yrs Regular Premium Reducing Cover Yearly-Direct-Dividend",
         "currency": "INR",
         "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
         "manager_name": "Marzban  Irani",
@@ -311,18 +419,6 @@
         "exchange": "BSE",
         "market": "in_market"
     },
-    "0P000168WK.BO": {
-        "short_name": "LIC MF Unit Linked Insurance 15",
-        "long_name": "LIC MF Unit Linked Insurance 15 Yrs Regular Premium Uniform Cover Half-Yearly-Direct-Dividend",
-        "currency": "INR",
-        "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
-        "manager_name": "Marzban  Irani",
-        "manager_bio": "",
-        "category": "Moderate Allocation",
-        "family": "LIC Mutual Fund Asset Management Limited",
-        "exchange": "BSE",
-        "market": "in_market"
-    },
     "0P000168WL.BO": {
         "short_name": "LIC MF Unit Linked Insurance 15",
         "long_name": "LIC MF Unit Linked Insurance 15 Yrs Regular Premium Uniform Cover Yearly-Direct-Dividend",
@@ -335,9 +431,69 @@
         "exchange": "BSE",
         "market": "in_market"
     },
+    "0P00017894.BO": {
+        "short_name": "LIC MF Unit Linked Insurance 10",
+        "long_name": "LIC MF Unit Linked Insurance 10 Yrs Regular Premium Reducing Cover Quarterly - Direct",
+        "currency": "INR",
+        "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
+        "manager_name": "Marzban  Irani",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "LIC Mutual Fund Asset Management Limited",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P00017895.BO": {
+        "short_name": "LIC MF Unit Linked Insurance 10",
+        "long_name": "LIC MF Unit Linked Insurance 10 Years Regular Premium Reducing Cover Quarterly-Regular",
+        "currency": "INR",
+        "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
+        "manager_name": "Marzban  Irani",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "LIC Mutual Fund Asset Management Limited",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P00017896.BO": {
+        "short_name": "LIC MF Unit Linked Insurance 10",
+        "long_name": "LIC MF Unit Linked Insurance 10 Years Regular Premium Uniform Cover Quarterly-Direct",
+        "currency": "INR",
+        "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
+        "manager_name": "Marzban  Irani",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "LIC Mutual Fund Asset Management Limited",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
     "0P00017897.BO": {
         "short_name": "LIC MF Unit Linked Insurance 10",
         "long_name": "LIC MF Unit Linked Insurance 10 Yrs Regular Premium Uniform Cover Quarterly-Regular",
+        "currency": "INR",
+        "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
+        "manager_name": "Marzban  Irani",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "LIC Mutual Fund Asset Management Limited",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P00017898.BO": {
+        "short_name": "LIC MF Unit Linked Insurance 15",
+        "long_name": "LIC MF Unit Linked Insurance 15 Yrs Regular Premium Reducing Cover Quarterly-Direct",
+        "currency": "INR",
+        "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
+        "manager_name": "Marzban  Irani",
+        "manager_bio": "",
+        "category": "Moderate Allocation",
+        "family": "LIC Mutual Fund Asset Management Limited",
+        "exchange": "BSE",
+        "market": "in_market"
+    },
+    "0P00017899.BO": {
+        "short_name": "LIC MF Unit Linked Insurance 15",
+        "long_name": "LIC MF Unit Linked Insurance 15 Yrs Regular Premium Reducing Cover Quarterly-Regular",
         "currency": "INR",
         "summary": "An open ended scheme which seeks to generate long term capital appreciation and offer Tax benefits u/s 80C of the Income Tax Act as well as additional benefits of a life cover and free accident insurance cover.",
         "manager_name": "Marzban  Irani",

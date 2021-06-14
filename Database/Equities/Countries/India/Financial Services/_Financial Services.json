@@ -2,7 +2,7 @@
     "AAVAS.NS": {
         "short_name": "AAVAS FINANCIERS L",
         "long_name": "Aavas Financiers Limited",
-        "summary": "Aavas Financiers Limited provides housing loans to customers belonging to low and middle income segments in semi-urban and rural areas in India. The company offers home loans for flats, houses, and bungalows, as well as resale properties; land purchase and construction loans, including finance for self-construction of residential house; and home improvement loans, which include loans for tiling or flooring, plaster, painting, etc. It also provides home equity loans; and micro, small, and medium enterprise loans for business expansion, purchase of equipment, working capital, etc., as well as balance transfer products. As of March 31, 2020, it operated through 250 branches covering in 10 states, including Rajasthan, Maharashtra, Gujarat, Madhya Pradesh, Haryana, Delhi, Chhattisgarh, Uttar Pradesh, Uttarakhand, and Punjab. The company was formerly known as AU Housing Finance Limited and changed its name to Aavas Financiers Limited in February 2017. Aavas Financiers Limited was incorporated in 2011 and is based in Jaipur, India. As of July 31, 2020, Aavas Financiers Limited was taken private.",
+        "summary": "Aavas Financiers Limited provides housing loans to customers belonging to low and middle income segments in semi-urban and rural areas in India. The company offers home loans for flats, houses, and bungalows, as well as resale properties; land purchase and construction loans, including finance for self-construction of residential house; and home improvement loans, which include loans for tiling or flooring, plaster, painting, etc. It also provides home equity loans; and micro, small, and medium enterprise loans for business expansion, purchase of equipment, working capital, etc., as well as balance transfer products. As of March 31, 2020, it operated through 250 branches covering in 10 states, including Rajasthan, Maharashtra, Gujarat, Madhya Pradesh, Haryana, Delhi, Chhattisgarh, Uttar Pradesh, Uttarakhand, and Punjab. The company was formerly known as AU Housing Finance Limited and changed its name to Aavas Financiers Limited in February 2017. Aavas Financiers Limited was incorporated in 2011 and is based in Jaipur, India.",
         "currency": "INR",
         "sector": "Financial Services",
         "industry": "Mortgage Finance",
@@ -109,7 +109,7 @@
     },
     "BAJAJFINSV.NS": {
         "short_name": "BAJAJ FINSERV LTD",
-        "long_name": "Bajaj Finserv Limited",
+        "long_name": "Bajaj Finserv Ltd.",
         "summary": "Bajaj Finserv Ltd. (\u00c2\u0091Bajaj Finserv', \u00c2\u0091BFS' or \u00c2\u0091the Company') is the holding company for the various financial services businesses under the Bajaj group. It serves millions of customers by providing solutions for asset acquisition through financing, asset protection through general insurance, family and income protection in the form of life and health insurance and retirement and savings solutions.",
         "currency": "INR",
         "sector": "Financial Services",
@@ -167,6 +167,18 @@
         "country": "India",
         "city": "Vadodara"
     },
+    "BANKINDIA.NS": {
+        "short_name": "BK OF INDIA",
+        "long_name": "Bank of India Limited",
+        "summary": "Bank of India Limited provides various banking products and services. It operates through Treasury Operations, Wholesale Banking, and Retail Banking segments. The company accepts various deposit products, such as savings, current, salary, term, and tax saving deposits. It also offers home, education, vehicle, personal, pensioner, holiday, top-up, and demand/term loans, as well as loan for Pradhan Mantri Awas Yojana and against property; housing loans to NRIs/PIOs; overdraft against securities; loans against FCNR deposits; and loans for corporate and MSME customers. In addition, the company provides cash management services; trade finance; online share trading services; insurance products and services; mutual fund products; portfolio management services; credit, debit, and prepaid cards; and remittance, online banking and payment, online income tax return, and ATM and other kiosk services, as well as cards, loans, and services to rural customers. As of March 31, 2020, it operated 5,083 branches in India; and 24 branches and 1 representative office internationally. The company was founded in 1906 and is headquartered in Mumbai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Mumbai"
+    },
     "BFINVEST.NS": {
         "short_name": "BF INVESTMENT LTD",
         "long_name": "BF Investment Limited",
@@ -190,6 +202,18 @@
         "market": "in_market",
         "country": "India",
         "city": "New Delhi"
+    },
+    "BIRLAMONEY.NS": {
+        "short_name": "ADITYA BIRLA MONEY",
+        "long_name": "Aditya Birla Money Limited",
+        "summary": "Aditya Birla Money Limited engages in the securities brokerage and financial product distribution businesses in India. It provides broking, portfolio management, depository, and e-insurance repository services; and invests in debt instruments and mutual funds. The company also offers equity and derivative trading services through NSE and BSE; currency derivatives on MCX-SX; and commodities trading services through MCX and NCDEX. Aditya Birla Money Limited operates through 41 branches and 755 franchised offices. The company was incorporated in 1995 and is based in Chennai, India. Aditya Birla Money Limited is a subsidiary of Aditya Birla Capital Limited.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Chennai"
     },
     "BLBLIMITED.NS": {
         "short_name": "BLB",
@@ -215,10 +239,22 @@
         "country": "India",
         "city": "Kolkata"
     },
+    "BSE.NS": {
+        "short_name": "BSE LIMITED",
+        "long_name": "BSE Limited",
+        "summary": "BSE Limited, together with its subsidiaries, provides a platform for trading in equity, debt instruments, derivatives, and mutual funds in India and internationally. The company also offers securities, data dissemination, and depository services. In addition, it provides clearing and settlement; IT support; training; and investment services, as well as engages in the corporate social responsibility activities. The company was formerly known as Bombay Stock Exchange Limited and changed its name to BSE Limited in July 2011. BSE Limited was founded in 1875 and is based in Mumbai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Financial Data & Stock Exchanges",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Mumbai"
+    },
     "CAMS.NS": {
         "short_name": "Computer Age Mngt Ser Ltd",
         "long_name": "Computer Age Management Services Limited",
-        "summary": "Computer Age Management Services Pvt. Ltd., a mutual fund transfer agency, provides services for investors, distributors, asset management companies, and demat account holders in India. It offers investor services, such as myCAMS, an application for financial transactions; SMSBack Service, a suite of services to access account via SMS; direct plans; and more. The company also provides common mutual fund transaction system, an integrated solution to access information relating to, and transact on schemes of various mutual funds; and FUNDSNet, a platform that allows channel intermediaries to use Internet and submit requests for transactions and to provide customer statements, including wrap statements. In addition, it offers Distributor Mailback Service that enables distributors to request historical NAVs, account statements, and transactions of their customers on an ad-hoc basis; and mail back systems to check sales performance by city, find individual distributor performance and ranking, investor queries, and others. Further, the company provides service network that enables same day transaction processing, including submit transactions, service request, make enquiries about balance, valuation, and ask for statement; NIGO transactions; and account information to verify current balance, obtain an account statement, review sales performance of fund or of a distributor, and transact on behalf of investors using eISC, a secure intranet based application. Furthermore, it offers NAV and dividend history of various mutual fund schemes; and depository services, such as demat account opening, dematerialization, rematerialization, transaction statement and execution, pledge, and other demat related services for demat account holders. It serves customers through a network of service centers in India. The company was incorporated in 1988 and is based in Chennai, India with additional offices in India.",
+        "summary": "Computer Age Management Services Pvt. Ltd., a mutual fund transfer agency, provides services for investors, distributors, asset management companies, and demat account holders in India. It offers investor services, such as myCAMS, an application for financial transactions; and SMSBack Service, a suite of services to access account via SMS, as well as direct plans and others. The company also provides common mutual fund transaction system, an integrated solution to access information relating to, and transact on schemes of various mutual funds; and FUNDSNet, a platform that allows channel intermediaries to use Internet and submit requests for transactions and to provide customer statements, including wrap statements. In addition, it offers Distributor Mailback Service that enables distributors to request historical NAVs, account statements, and transactions of their customers on an ad-hoc basis, as well as provides mail back systems to check sales performance by city, find individual distributor performance and ranking, investor queries, and others. Further, the company provides service network that enables same day transaction processing, including submit transactions, service request, make enquiries about balance, valuation, and ask for statement; NIGO transactions; and account information to verify current balance, obtain an account statement, review sales performance of fund or of a distributor, and transact on behalf of investors using eISC, a secure intranet based application. Additionally, it offers NAV and dividend history of various mutual fund schemes; and depository services, such as demat account opening, dematerialization, rematerialization, transaction statement and execution, pledge, and other demat related services for demat account holders. It serves customers through a network of service centers in India. The company was incorporated in 1988 and is based in Chennai, India.",
         "currency": "INR",
         "sector": "Financial Services",
         "industry": "Capital Markets",
@@ -287,13 +323,25 @@
         "country": "India",
         "city": "Mumbai"
     },
-    "CGCL.NS": {
-        "short_name": "CAPRI GLOBAL CAPIT",
-        "long_name": "Capri Global Capital Limited",
-        "summary": "Capri Global Capital Limited, a non-banking finance company, provides financial services in India. It offers business loans; working capital term loans, term loans against property rentals, and term loans for purchase of property for micro, small, and medium enterprises; home loans; and construction finance products, including project funding, structured debt financing, etc. The company was formerly known as Money Matters Financial Services Limited and changed its name to Capri Global Capital Limited in July 2013. Capri Global Capital Limited was incorporated in 1994 and is based in Mumbai, India.",
+    "CENTRALBK.NS": {
+        "short_name": "CENTRAL BANK OF IN",
+        "long_name": "Central Bank of India",
+        "summary": "Central Bank of India operates as a commercial bank in India. It offers deposit products, which include savings and current accounts, time deposits, fixed deposits, and recurring deposit schemes; and loans, including housing, vehicle, property, personal, senior citizens, education, corporate mortgage and rental, and agricultural, as well as micro small and medium enterprises loans. The company also provides credit, debit, and prepaid/gift cards, as well as cash management, mutual funds, depository, payments, mobile and Internet banking, and ATM services, as well as remittance services. In addition, it offers investment banking services, such as debt syndication, financial modeling and valuation, merger and acquisition advisory, corporate restructuring, equity products, equity research, and wealth and portfolio management, as well as trusteeship services. Further, the company sells and distributes life, general, and health insurance products, including unit linked, whole life, children, money back, endowment, pension, health, property, personal, fire, burglary, engineering, motor, package, travel, and group insurance products, as well as protection and retirement solutions. As of March 31, 2020, it operated through a network of 4,651 branches; 3,642 ATMs; 10 satellite offices; and 1 extension counter. The company was founded in 1911 and is headquartered in Mumbai, India.",
         "currency": "INR",
         "sector": "Financial Services",
-        "industry": "Credit Services",
+        "industry": "Banks - Regional",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Mumbai"
+    },
+    "CENTRUM.NS": {
+        "short_name": "CENTRUM CAPITAL",
+        "long_name": "Centrum Capital Limited",
+        "summary": "Centrum Capital Limited, together with its subsidiaries, provides various financial services for institutions and individuals in India. It operates through Institutional Business, Wealth Management & Distribution, Housing Finance Business, and SME / Micro Credit Lending Business segments. The company offers investment banking services, including equity initial public offerings (IPO), follow-on public offerings and rights issues, pre-IPO placements, qualified institutional placements, American depository receipts, global depository receipts, convertible issuances, buybacks and delisting, open offers and takeovers, and valuation advisory services, as well as alternative investment markets; and mergers and acquisitions, private equity, and structured finance advisory services. It also provides services in the areas of working capital, term loans/corporate loans, project finance, and external commercial borrowings/foreign currency loans; and housing finance, SME and MSME finance, and micro finance. In addition, the company offers private debt, public equity, venture capital, and real estate advisory services; money changing, portfolio management, retail broking, and defense and infrastructure advisory services, as well as trades in bonds. Further, it offers wealth management, stock broking, and insurance services. Centrum Capital Limited was incorporated in 1977 and is based in Mumbai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Financial Conglomerates",
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
@@ -359,10 +407,22 @@
         "country": "India",
         "city": "Bengaluru"
     },
+    "CREST.NS": {
+        "short_name": "CREST VENTURES",
+        "long_name": "Crest Ventures Limited",
+        "summary": "Crest Ventures Limited operates as a non-banking finance company in India. It operates through three segments: Real Estate, Financial Services, and Investment and Credit. The company develops various real estate projects, such as residential and commercial projects, malls, hotel, and townships. It also provides financial services, including asset management; mutual fund distribution services; and investment management services to family offices and high net worth individuals, as well as deals in wholesale debt markets, foreign exchange markets, interest rate swaps, and currency options. In addition, the company offers destination and event management services, such as tours; meetings, incentives, conferencing, and exhibitions; events; and online services. The company was formerly known as Sharyans Resources Limited and changed its name to Crest Ventures Limited in September 2014. Crest Ventures Limited was incorporated in 1982 and is headquartered in Mumbai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Financial Conglomerates",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Mumbai"
+    },
     "CRISIL.NS": {
         "short_name": "CRISIL LTD",
         "long_name": "CRISIL Limited",
-        "summary": "CRISIL Limited, an analytical company, together with its subsidiaries, provides ratings, data, research, and analytics and solutions in India, the United States, the United Kingdom, Argentina, Poland, China, Hong Kong, Singapore, and the United Arab Emirates. It operates through three segments: Ratings, Research, and Advisory. The Ratings services segment include credit ratings for corporates, banks, bank loans, and small and medium enterprises; credit analysis services; grading services; and analytical services. The Research segment provides research and analytical services, industry reports, customized research assignments, subscription to data services, independent equity research, initial public offering grading, and training services. The Advisory segment offers advisory services; and risk management tools, analytics, and solutions to financial institutions, banks, and corporates. The company was formerly known as The Credit Rating Information Services of India Limited and changed its name to CRISIL Limited in December 2003. CRISIL Limited was founded in 1987 and is headquartered in Mumbai, India.",
+        "summary": "CRISIL Limited, an analytical company, together with its subsidiaries, provides ratings, data, research, and analytics and solutions in India, Europe, North America, and internationally. It operates through three segments: Ratings, Research, and Advisory. The Ratings services segment offers credit ratings for corporates, banks, bank loans, and small and medium enterprises; credit analysis services; grading services; and analytical services. The Research segment provides research and analytical services, industry reports, customized research assignments, subscription to data services, independent equity research, initial public offering grading, and training services. The Advisory segment offers advisory services; and range of risk management tools, analytics, and solutions to financial institutions, banks, and corporates. The company was formerly known as The Credit Rating Information Services of India Limited and changed its name to CRISIL Limited in December 2003. CRISIL Limited was incorporated in 1987 and is headquartered in Mumbai, India.",
         "currency": "INR",
         "sector": "Financial Services",
         "industry": "Financial Data & Stock Exchanges",
@@ -383,10 +443,22 @@
         "country": "India",
         "city": "Thrissur"
     },
+    "CUB.NS": {
+        "short_name": "CITY UNION BANK",
+        "long_name": "City Union Bank Ltd.",
+        "summary": "City Union Bank Ltd. provides various banking products and services to personal and corporate clients in India. The company operates through four segments: Corporate/Wholesale Banking, Retail Banking, Treasury, and Other Banking Operations. It offers savings and current accounts; salary and NRI accounts; and fixed deposits, flexi fix, recurring, and tax saver deposits. The company also provides four and two wheeler, educational, housing, consumer, jewel, agricultural, working capital, small road transport operator, and foreign currency loans; micro credit, cash credits, bank guarantees, letters of credit, bills finance, and overdrafts services; and international business services, including export, import, remittances, deposits, correspondent banks, and treasury risk management services. In addition, it offers locker facilities, cards, automated teller machines (ATMs), and point of sales services, as well as demat and insurance services; and real time gross settlement, immediate payment service, national automatic clearing house, and national electronic fund transfer services. Further, the company provides cash management, electronic payment, digital and other tech, and payment to government services. As of March 31, 2020, it operated through a network of 700 branches and 1,793 ATMs. The company was formerly known as The Kumbakonam City Union Bank Limited and changed its name to City Union Bank Ltd. in November 1987. City Union Bank Ltd. was incorporated in 1904 and is based in Kumbakonam, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Kumbakonam"
+    },
     "DBSTOCKBRO.NS": {
         "short_name": "DB INTL STOCK BROK",
         "long_name": "DB (International) Stock Brokers Limited",
-        "summary": "DB (International) Stock Brokers Limited provides stock broking and depository participant services in India. It also offers non-resident Indian services, such as equity and derivative trading, mutual fund and initial public offering investment, and procurement of permanent account number cards and RBI permissions. The company was founded in 1992 and is based in New Delhi, India.",
+        "summary": "DB (International) Stock Brokers Limited provides stock broking and depository participant services in India. It also offers non-resident Indian services, such as equity and derivative trading, mutual fund and initial public offering investment, and procurement of permanent account number cards and RBI permissions. DB (International) Stock Brokers Limited was founded in 1992 and is based in New Delhi, India.",
         "currency": "INR",
         "sector": "Financial Services",
         "industry": "Capital Markets",
@@ -398,7 +470,7 @@
     "DCBBANK.NS": {
         "short_name": "DCB BANK LIMITED",
         "long_name": "DCB Bank Limited",
-        "summary": "DCB Bank Limited provides various banking and financial products and services in India. It operates through Treasury Operations, Wholesale Banking, Retail Banking, and Other Banking Operations segments. The company offers deposit products, such as current and savings accounts, fixed deposits, term deposits, FCNR deposits, and NRE recurring deposits, as well as portfolio investment schemes; and personal, smart credit, home, gold, car, business and micro business, commercial vehicle, working capital, term, farmer, microfinance, and warehouse construction loans, as well as trade finance and warehouse receipt funding products. It also provides debit, payless, gift, and prepaid cards; life, health, car/motor, travel, home, and group personal accident insurance products; investment products comprising mutual funds, and demat and smart trade accounts, as well as mobile, Internet, and phone banking services. The company serves customers in various segments, including retail, micro-SME, SME, mid-corporate, agriculture, commodities, government, and public sectors, as well as microfinance institutions, Indian banks, co-operative banks, and non-banking finance companies. As of March 31, 2019, it operated through a network of 333 branches and 504 ATMs in 19 states and 3 union territories. The company was formerly known as Development Credit Bank Limited and changed its name to DCB Bank Limited in October 2013. DCB Bank Limited was founded in 1930 and is based in Mumbai, India.",
+        "summary": "DCB Bank Limited provides various banking and financial products and services in India. It operates through Treasury Operations, Wholesale Banking, Retail Banking, and Other Banking Operations segments. The Treasury Operations segment engages in various financial markets activities undertaken on behalf of the company's customers, proprietary trading, maintenance of reserve requirements, and resource mobilization from other banks and financial institutions. The Wholesale Banking segment's activities include lending, deposit taking, and other services offered to corporate customers. The Retail Banking segment's activities comprise lending, deposit taking, and other services offered to retail customers. The Other Banking Operations segment provides para banking services, such as third-party product distribution, merchant banking, etc. As of March 31, 2021, it operated through a network of 352 branches across 19 states and 3 union territories. The company was formerly known as Development Credit Bank Limited and changed its name to DCB Bank Limited in October 2013. DCB Bank Limited was founded in 1930 and is based in Mumbai, India.",
         "currency": "INR",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -422,7 +494,7 @@
     "DHANBANK.NS": {
         "short_name": "DHANLAXMI BANK LTD",
         "long_name": "Dhanlaxmi Bank Limited",
-        "summary": "Dhanlaxmi Bank Limited provides various banking and financial services in India. It operates through Treasury Operations, Corporate/Wholesale Banking, Retail Banking, and Other Banking Business Operations segments. The company offers deposit products, such as savings and current accounts, and term deposits; loans, including property, car, commercial, personal, education, and business loans, as well as loans against securities; and foreign exchange services comprising foreign currency cash, cheque deposits, foreign currency demand drafts, remittances, and foreign exchange cards. It also provides export and import services; credit products comprising industrial and trade advance, import export assistance, and agricultural assistance; corporate salary accounts; and cash management services, as well as life, health, and car insurance products. In addition, the company offers non-resident Indians (NRI) banking services, such as non-residential external accounts, non-resident ordinary accounts, recurring and term deposits, foreign currency non-resident fixed deposits, and resident foreign currency accounts, as well as money transfer services and NRI property loans; and micro and agricultural banking, and financial planning services. Further, it provides SME banking services, including working capital facilities, trade facilities, and capacity expansion services; credit, debit, and gift cards; and investment, depository, and online banking services, as well as locker facilities. As of March 31, 2020, it had 247 branches and 254 ATMs across 14 States and 1 Union Territory. The company was founded in 1927 and is headquartered in Thrissur, India.",
+        "summary": "Dhanlaxmi Bank Limited provides various banking and financial services in India. It operates through Treasury Operations, Corporate/Wholesale Banking, Retail Banking, and Other Banking Business Operations segments. The company offers deposit products, such as savings and current accounts, and term deposits; loans, including property, car, commercial, personal, education, and business loans, as well as loans against securities; and foreign exchange services comprising foreign currency cash, cheque deposits, foreign currency demand drafts, remittances, and foreign exchange cards. It also provides export and import services; credit products comprising industrial and trade advance, import export assistance, and agricultural assistance; corporate salary accounts; and cash management services, as well as life, health, and car insurance products. In addition, the company offers non-resident Indians (NRI) banking services, such as non-residential external accounts, non-resident ordinary accounts, recurring and term deposits, foreign currency non-resident fixed deposits, and resident foreign currency accounts, as well as money transfer services and NRI property loans; and micro and agricultural banking, and financial planning services. Further, it provides SME banking services, including working capital facilities, trade facilities, and capacity expansion services; credit, debit, and gift cards; and investment, depository, and online banking services, as well as locker facilities. As of March 31, 2020, it had 247 branches and 254 ATMs across 14 States and 1 Union Territory. The company was founded in 1927 and is based in Thrissur, India.",
         "currency": "INR",
         "sector": "Financial Services",
         "industry": "Banks - Regional",
@@ -494,7 +566,7 @@
     "EBIXFOREX.NS": {
         "short_name": "EBIXCASH WRLD MONEY IND",
         "long_name": "Ebixcash World Money India Limited",
-        "summary": "Ebixcash World Money India Limited provides money changing and transfer services in India. It primarily offers foreign exchange and outward and inward remittance services, prepaid and gift cards, and travel insurance services for its corporate and retail clients. The company was formerly known as Weizmann Forex Limited and changed its name to Ebixcash World Money India Limited in January 2020. The company was founded in 1985 and is based in Mumbai, India. Ebixcash World Money India Limited is a subsidiary of EbixCash World Money Limited.",
+        "summary": "Ebixcash World Money India Limited provides money changing and transfer services in India. It primarily offers foreign exchange and outward and inward remittance services, prepaid and gift cards, and travel insurance services for its corporate and retail clients. The company was formerly known as Weizmann Forex Limited and changed its name to Ebixcash World Money India Limited in January 2020. The company was founded in 1985 and is based in Mumbai, India. Ebixcash World Money India Limited operates as a subsidiary of EbixCash World Money Limited.",
         "currency": "INR",
         "sector": "Financial Services",
         "industry": "Capital Markets",
@@ -526,6 +598,42 @@
         "market": "in_market",
         "country": "India",
         "city": "Mumbai"
+    },
+    "EQUITAS.NS": {
+        "short_name": "EQUITAS HOLDINGS",
+        "long_name": "Equitas Holdings Limited",
+        "summary": "Equitas Holdings Limited, through its subsidiaries, operates as a non-banking financial institution in India. The company operates in Banking and Finance, and Others segments. It accepts current and savings accounts, and term deposits; and offers micro finance loans, vehicle finance, housing finance, micro and small enterprises loans, agri loans, gold loans, business loans, etc. The company also offers online freight facilitation services under the Wowtruck brand name. It serves individuals, and micro and small enterprises. Equitas Holdings Limited was founded in 2007 and is based in Chennai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Chennai"
+    },
+    "EQUITASBNK.NS": {
+        "short_name": "Equitas Small Fin Bnk Ltd",
+        "long_name": "Equitas Small Finance Bank Limited",
+        "summary": "Equitas Small Finance Bank Limited provides banking and financial services in India. It operates through Treasury, Corporate/Wholesale Banking, Retail Banking, and Other Banking Operations segments. The company offers current, savings, and salary accounts; and term, bulk, and certificates of deposits. It also provides small business loans comprising secured business, self employed and salaried, agri, and housing loans; group loans to microentrepreneurial women; vehicle finance for used and new commercial vehicles, and used passenger cars; micro and small enterprise finance, such as working capital loans, and fund based and non-fund based products; and loans to financial institutions and corporates. In addition, the company offers insurance, FASTag, and asset management services; ATM and debit cards/point of sale services; call centre services; and mobile, phone, and internet banking services. It has 854 banking outlets and 322 ATMs. The company was formerly known as Equitas Finance Limited and changed its name to Equitas Small Finance Bank Limited in September 2016. Equitas Small Finance Bank Limited was incorporated in 1993 and is headquartered in Chennai, India. Equitas Small Finance Bank Limited operates as a subsidiary of Equitas Holdings Limited.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Chennai"
+    },
+    "FEDERALBNK.NS": {
+        "short_name": "FED BANK",
+        "long_name": "The Federal Bank Limited",
+        "summary": "The Federal Bank Limited engages in commercial banking activities in India. It operates through four segments: Treasury, Corporate/Wholesale Banking, Retail Banking, and Other Banking Operations. The company's deposit products include savings accounts, current accounts, demat accounts, salary accounts, fixed deposits, cash certificates, recurring deposits, exchange earner's foreign currency accounts, gilt accounts, and NRI deposit schemes. Its loan portfolio comprises gold, housing, car, property, educational or career, cash, instant digital, business, and agriculture and agricultural allied loans; travel, gift, debit, and credit cards; and loans against fixed deposits. The company also provides life, health, and general insurance products; mutual funds, online trading, and national pension system, as well as term loans, project finance, bill discounting, working capital loans, bank guarantees, letter of credit, packing credit limit, rediscounting of export bills, Internet banking, mobile banking, ATM, telephone banking services. As of March 31, 2019, it operated through a network of 1,251 branches and 1,669 ATMs. The company was formerly known as Travancore Federal Bank Limited and changed its name to The Federal Bank Limited in March 1947. The Federal Bank Limited was incorporated in 1931 and is headquartered in Aluva, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Aluva"
     },
     "GEOJITFSL.NS": {
         "short_name": "GEOJIT FINANCIAL S",
@@ -671,6 +779,18 @@
         "country": "India",
         "city": "New Delhi"
     },
+    "HOMEFIRST.NS": {
+        "short_name": "Home First Fin Co Ind Ltd",
+        "long_name": "Home First Finance Company India Limited",
+        "summary": "Home First Finance Company India Limited operates as a housing finance company in India. The company offers housing loans for the purchase or construction of homes, loans against property, developer finance loans, and loans for purchase of commercial property. It serves salaried and self-employed customers. The company was founded in 2010 and is headquartered in Mumbai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Mortgage Finance",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Mumbai"
+    },
     "HOTELRUGBY.NS": {
         "short_name": "HOTEL RUGBY LTD",
         "long_name": "Hotel Rugby Limited",
@@ -694,6 +814,18 @@
         "market": "in_market",
         "country": "India",
         "city": "New Delhi"
+    },
+    "IBN.BA": {
+        "short_name": "ICICI BANK",
+        "long_name": "ICICI Bank Limited",
+        "summary": "ICICI Bank Limited provides various banking products and financial services in India and internationally. It operates in Retail Banking, Wholesale Banking, Treasury, and Others Banking segments. The company offers savings, salary, pension, current, and other accounts; and fixed, recurring, and security deposits. It also provides home, car, two wheeler, personal, gold, and commercial business loans, as well as loans against securities and other loans; business loans, such as working capital finance, term loans, collateral free loans, loans without financials, finance for importers and exporters, and secured loans for credit card swipes, as well as loans for new entities, and schools and colleges; and credit, debit, prepaid, travel, and corporate cards. In addition, the company offers insurance products; pockets wallet; fixed income products; investment products, such as mutual funds, gold monetization schemes, and initial public offerings, as well as other online investment services; and farmer finance, tractor loans, and micro banking services, as well as other services to agri traders and processors, and agri corporates. Further, it provides portfolio management, trade, foreign exchange, locker, private and NRI banking, and cash management services; family wealth and demat accounts; commercial and investment banking, capital market, custodial, project and technology finance, and institutional banking services, as well as Internet, mobile, and phone banking services. Additionally, the company offers securities investment, broking, trading, and underwriting services; and merchant banking, trusteeship, housing finance, and pension fund management services. As of March 31, 2020, it had a network of 5,324 branches, 15,688 ATMs, 1,638 insta-banking kiosks, 483,538 POS terminals, and 1,791 cash acceptance machines. ICICI Bank Limited was founded in 1955 and is headquartered in Mumbai, India.",
+        "currency": "ARS",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "BUE",
+        "market": "ar_market",
+        "country": "India",
+        "city": "Mumbai"
     },
     "IBN": {
         "short_name": "ICICI Bank Limited",
@@ -746,7 +878,7 @@
     "ICICIGI.NS": {
         "short_name": "ICICI LOMBARD GEN",
         "long_name": "ICICI Lombard General Insurance Company Limited",
-        "summary": "ICICI Lombard General Insurance Company Limited provides various general insurance products in India. The company offers insurance products, such as travel, motor, crop/weather, cattle, health, fire, personal accident, marine, engineering, liability, and home and cyber insurance products, as well as provides reinsurance services. It serves customers through body corporates, as well as small, micro, and medium enterprises; state and central governments, and rural customers; and agents, brokers, bancassurance, telesales, direct alliances, motor insurance service providers, and online platforms. The company was incorporated in 2000 and is based in Mumbai, India. ICICI Lombard General Insurance Company Limited is a subsidiary of ICICI Bank Limited.",
+        "summary": "ICICI Lombard General Insurance Company Limited provides various general insurance products and services in India. The company offers motor, car, two wheeler, health, health booster, personal accident, international travel, home, marine, workmen compensation, NRI, business, third party, crop, rural, and cyber insurance products; and provides reinsurance services. The company was incorporated in 2000 and is based in Mumbai, India. ICICI Lombard General Insurance Company Limited is a subsidiary of ICICI Bank Limited.",
         "currency": "INR",
         "sector": "Financial Services",
         "industry": "Insurance - Diversified",
@@ -899,6 +1031,18 @@
         "country": "India",
         "city": "Chennai"
     },
+    "INDIANB.NS": {
+        "short_name": "INDIAN BANK",
+        "long_name": "Indian Bank",
+        "summary": "Indian Bank provides various banking product and services. The company provides deposit products, including savings and current accounts, term deposits, and Non Resident Indian (NRI) accounts. It also offers agriculture, group, personal/individual, micro small and medium enterprises, education, and NRI loans. In addition, the company provides Internet and mobile banking, as well as Ministry of Corporate Affairs payment, money gram, money transfer, remittance, and multicity check facility services; debit and credit cards; insurance services; direct and indirect tax payment services; debenture trustee services; and merchant banking and housing finance services. As of March 31, 2020, it operated 2,887 branches comprising 740 rural, 833 semi urban, 637 urban, and 677 metropolitan branches in India; 3 foreign branches in Singapore, Colombo, and Jaffna; and 4059 automated teller machines. Indian Bank was founded in 1907 and is based in Chennai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Chennai"
+    },
     "INDOSTAR.NS": {
         "short_name": "INDOSTAR CAP FIN",
         "long_name": "IndoStar Capital Finance Limited",
@@ -923,6 +1067,18 @@
         "country": "India",
         "city": "Indore"
     },
+    "INDUSINDBK.NS": {
+        "short_name": "INDUSIND BANK LTD",
+        "long_name": "IndusInd Bank Limited",
+        "summary": "IndusInd Bank Limited provides various banking products and services to individuals, NRIs, business owners, corporates, and government and financial institutions. It operates through Treasury Operations, Corporate/Wholesale Banking, Retail Banking, and Other Banking business segments. The company offers current, savings, defense and corporate salary, and RFC accounts; and fixed and FCNR, sweep in/out deposits, senior citizen schemes, young saver deposits, and recurring and RFC deposits, as well as Rupee multiplier products. It also provides home, personal, car, two wheeler, gold, agricultural, and medical equipment loans, as well as loans against property and securities; business loans; and loan on credit cards. In addition, the company offers transaction banking services, including letters of credit/guarantees, structured trade and export finance, and import finance solutions, as well as cash management and remittance services; investment products, such as demat account, mutual fund, gold bond, national pension system, and equity trading; project finance, debt underwriting and placement, advisory related to M&A and equity raise, structured credit products, etc.; and health, general, life, and card protection insurance. Further, it provides debit, credit, forex, and commercial cards; individual outward remittances, foreign currency bank notes and demand drafts, and travelers cheque; financial inclusion products; trade and foreign exchange accounts; real estate developer financing and bullion services; correspondent banking services; and forex and derivative desk, information and advisory, and remittances through forex channel services. As of December 31, 2020, the company had 1,915 branches and 2,835 ATMs in India, as well as representative offices in London, Dubai, and Abu Dhabi. IndusInd Bank Limited was founded in 1994 and is based in Mumbai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Mumbai"
+    },
     "INFOMEDIA.NS": {
         "short_name": "INFOMEDIA PRESS LI",
         "long_name": "Infomedia Press Limited",
@@ -930,6 +1086,18 @@
         "currency": "INR",
         "sector": "Financial Services",
         "industry": "Shell Companies",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Mumbai"
+    },
+    "INVENTURE.NS": {
+        "short_name": "INVENTURE GROWTH &",
+        "long_name": "Inventure Growth & Securities Limited",
+        "summary": "Inventure Growth & Securities Limited, together with its subsidiaries, provides various financial products and services in India. The company offers shares and other securities broking, financial product distribution, institutional broking, and mutual fund investment services. It also provides consumer and business loans, loans against properties and securities, inter corporate deposits, salaried personal loans, and gold loans, as well as financial institutions group lending services; commodities broking and hedging services, and arbitrage products; and life and general insurance broking services, as well as risk management solutions. In addition, the company offers issue management, leasing and hire purchase, loan syndication, mergers and acquisitions, treasury and portfolio management, project advisory, structured debt placement, mergers and acquisitions, capital markets, private equity, stressed assets resolution, etc.; and manages funds. Further, it engages in the real estate business. It serves institutional clients, HNIs, and retail investors through 224 business locations, including branches, franchisees, and sub-brokers. Inventure Growth & Securities Limited was founded in 1995 and is headquartered in Mumbai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
@@ -946,6 +1114,18 @@
         "market": "in_market",
         "country": "India",
         "city": "Chennai"
+    },
+    "IRFC.NS": {
+        "short_name": "Indian Railway Fin Corp L",
+        "long_name": "Indian Railway Finance Corporation Limited",
+        "summary": "Indian Railway Finance Corporation Limited operates as a financing company in India. The company engages in borrowing funds from the financial markets to finance the acquisition/creation of assets that are leased out to the Indian Railways as finance lease. It also operates as a non-deposit taking non-banking financial and infrastructure finance company. The company was founded in 1986 and is based in New Delhi, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "New Delhi"
     },
     "ISEC.NS": {
         "short_name": "ICICI SEC. LTD",
@@ -994,6 +1174,18 @@
         "market": "in_market",
         "country": "India",
         "city": "Srinagar"
+    },
+    "JINDALPHOT.NS": {
+        "short_name": "JINDAL PHOTO LTD",
+        "long_name": "Jindal Photo Limited",
+        "summary": "Jindal Photo Limited primarily invests in the shares of companies in India. It also provides management consultancy services. The company was incorporated in 2004 and is headquartered in New Delhi, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "New Delhi"
     },
     "JMFINANCIL.NS": {
         "short_name": "JM FINANCIAL",
@@ -1295,18 +1487,6 @@
         "country": "India",
         "city": "Ludhiana"
     },
-    "NAM-INDIA.NS": {
-        "short_name": "NIPPON L I A M LTD",
-        "long_name": "Nippon Life India Asset Management Limited",
-        "summary": "Nippon Life Asset Management Limited is a publicly owned investment manager. The firm launches and manages equity and fixed income mutual funds for its clients. It also manages exchange traded funds for its clients. The firm invests in the public equity, fixed income and commodity markets. Nippon Life Asset Management Limited was previously known as Reliance Nippon Life Asset Management Limited. Nippon Life Asset Management Limited was founded on February 24, 1995 and is based in Mumbai, India.",
-        "currency": "INR",
-        "sector": "Financial Services",
-        "industry": "Asset Management",
-        "exchange": "NSI",
-        "market": "in_market",
-        "country": "India",
-        "city": "Mumbai"
-    },
     "NBIFIN.NS": {
         "short_name": "N.B.I. INDUSTRIAL",
         "long_name": "N.B.I. Industrial Finance Company Limited",
@@ -1403,6 +1583,18 @@
         "country": "India",
         "city": "New Delhi"
     },
+    "PFS.NS": {
+        "short_name": "PTC INDIA FINANCIA",
+        "long_name": "PTC India Financial Services Limited",
+        "summary": "PTC India Financial Services Limited provides financing solutions to companies with projects in the power sector and related areas across the entire energy value chain. The company provides debt assistance to projects in the energy value chain, such as generation, transmission, and distribution, as well as in fuel sources and related infrastructure; and invests in equities. It also offers fund based/non-fund based financial assistance in the form of debt or structured debt instruments. The company was founded in 2006 and is based in New Delhi, India. PTC India Financial Services Limited is a subsidiary of PTC India Limited.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "New Delhi"
+    },
     "PILANIINVS.NS": {
         "short_name": "PILANI INVESTMENT",
         "long_name": "Pilani Investment and Industries Corporation Limited",
@@ -1450,6 +1642,18 @@
         "market": "in_market",
         "country": "India",
         "city": "New Delhi"
+    },
+    "PRIMESECU.NS": {
+        "short_name": "PRIME SECURITIES",
+        "long_name": "Prime Securities Limited",
+        "summary": "Prime Securities Limited provides corporate advisory and investment banking services in India. It offers corporate advisory services that include financial advisory for debt and capital structuring; strategic, business, and value enhancement; mergers and acquisitions, and stake sales; and structured debt placement/loan syndications. The company also engages in the debt/equity/capital restructurings/loan re-organization activities; and provision of listed equity services, such as initial public offerings (IPO), qualified institutions placements, and rights issues/buybacks/open offers/preferential allotments, as well as local advisory to overseas offerings/foreign entrants. In addition, it offers unlisted equity services that include pre-IPO placements/PIPEs, private equity, and exits/strategic alliances/JVs. Prime Securities Limited was founded in 1982 and is headquartered in Mumbai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Mumbai"
     },
     "PSB.NS": {
         "short_name": "PUNJAB & SIND BANK",
@@ -1535,6 +1739,18 @@
         "country": "India",
         "city": "Mumbai"
     },
+    "RPSGVENT.NS": {
+        "short_name": "RPSG VENTURES LIMITED",
+        "long_name": "RPSG Ventures Limited",
+        "summary": "CESC Ventures Limited owns, operates, invests, and promotes business in the fields of information technology, business process outsourcing, real estate, entertainment, and fast moving consumer goods in India. It offers application development and management, setup and operations and maintenance of IT infrastructure, cyber security management, and IT consultancy services; and business process outsourcing in the field of customer interaction management, data and transaction processing, collections management, consulting, and analytics. The company also provides packaged snacks under the TOO YUMM! and Evita brands; and various Ayurvedic formulations under the Dr. Vaidya's brand name, as well as wellness products and supplements for immunity, energy, sexual wellness, weight management, hair and skin care, and others. In addition, it operates shopping malls; and restaurants under the brand name of Waffle Wallah and Bombay Toastee brands. As of March 31, 2020, it operated 24 restaurant outlets. The company was formerly known as RP-SG Business Process Services Limited and changed its name to CESC Ventures Limited. The company was incorporated in 2017 and is based in Kolkata, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Kolkata"
+    },
     "SATIN.NS": {
         "short_name": "SATIN CREDIT CARE",
         "long_name": "Satin Creditcare Network Limited",
@@ -1607,6 +1823,18 @@
         "country": "India",
         "city": "Hyderabad"
     },
+    "SHAREINDIA.NS": {
+        "short_name": "Share Ind. Securities Ltd",
+        "long_name": "Share India Securities Limited",
+        "summary": "Share India Securities Limited, a financial services company, trades in securities. The company offers broking/depository services, including equity, derivative, commodity, currency, mutual funds, and depository services; loan against securities, loan against commodities, business loans, and personal loans, as well as short, medium, and long term financial loans; and life and general insurances for individual and corporates. It also provides qualified institutional placements; bulk and block trades on exchanges; off-market transactions; arranges private equity; valuation advisory; open offers, buyback, and delisting of securities; and equity mobilization services for infrastructure projects from private equity investors, as well as manages initial public offerings and rights offering. In addition, the company offers a range of financial products and personalized services, including currency and commodity derivative, depository participant, research and analysis, mutual fund advisory and distributorship, and portfolio management services. It serves customers through a network of approximately 587 branches across 14 states in India. The company was formerly known as FMS Securities Limited and changed its name to Share India Securities Limited in 2010. Share India Securities Limited was founded in 1994 and is based in Delhi, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Delhi"
+    },
     "SHRIRAMCIT.NS": {
         "short_name": "SHRIRAM CITY UNION",
         "long_name": "Shriram City Union Finance Limited",
@@ -1619,6 +1847,18 @@
         "country": "India",
         "city": "Chennai"
     },
+    "SID.F": {
+        "short_name": "STATE BANK OF IND.GDR S/2",
+        "long_name": "State Bank of India",
+        "summary": "State Bank of India provides various banking products and services to individuals, commercial enterprises, corporates, public bodies, and institutional customers in India and internationally. The company operates through Treasury, Corporate/Wholesale Banking, Retail Banking, Insurance Business, and Other Banking Business segments. It offers personal banking services, including current accounts, savings accounts, term deposits, and recurring deposits; home, auto, education, gold, and personal loans, as well as loans against property and securities; and wealth management, mobile and Internet banking, demat, ATM, foreign inward remittance, safe deposit locker, public provident fund, money transfer, pension policy, and mobile wallet services, as well as cards and inflation indexed national savings securities cumulative bonds. The company also provides corporate banking services comprising corporate accounts, working capital and project finance, term loans, deferred payment guarantees, corporate loans, structured finance, dealer and channel financing, equipment leasing, loan syndication, construction equipment loans, financing Indian firms overseas subsidiaries or JVs, and cash management, as well as export and cash, and letters of credit products. In addition, it offers NRI services, including accounts and deposits, remittances, investments, and loans; agricultural banking and micro credit to agriculturists and farmers; supply chain finance, and deposits and transaction banking services for SME customers; and international banking services. Further, the company provides treasury, broking, bill payment, and MICR services; and credit cards, life and non-life insurance, mutual funds, merchant banking, trustee business, factoring, security trading, pension fund management, and custody services. It operates 22,141 branches and 58,555 ATMs. The company was founded in 1806 and is headquartered in Mumbai, India.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "India",
+        "city": "Mumbai"
+    },
     "SILINV.NS": {
         "short_name": "SIL INVESTMENTS",
         "long_name": "SIL Investments Limited",
@@ -1630,6 +1870,30 @@
         "market": "in_market",
         "country": "India",
         "city": "Bhawanimandi"
+    },
+    "SMCGLOBAL.NS": {
+        "short_name": "SMC Global Securities Ltd",
+        "long_name": "SMC Global Securities Limited",
+        "summary": "SMC Global Securities Limited, together with its subsidiaries, provides various financial services in India and internationally. The company operates through three segments: Trading and Distribution, Advisory, and Financing. The Trading and Distribution segment engages in the brokerage and propriety trading of shares, commodities, currencies, derivatives, and other securities; provision of clearing, depositary, and insurance broking services; portfolio and wealth management; and distribution of third party financial products. The Advisory segment provides mortgage and loan advisory, real estate broking, and investment banking services. The Financing segment offers loans. The company also offers online trading and real estate advisory services. SMC Global Securities Limited was founded in 1990 and is based in New Delhi, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "New Delhi"
+    },
+    "SOUTHBANK.NS": {
+        "short_name": "SOUTH INDIA BANK",
+        "long_name": "The South Indian Bank Limited",
+        "summary": "The South Indian Bank Limited provides banking products and services in India. The company operates through Treasury, Corporate/Wholesale Banking, Retail Banking, and Other Banking Operations segments. Its personal banking products and services include savings accounts, term deposits, and unclaimed deposits/inoperative accounts; personal, car, home, gold, educational, property, and other loans, as well as one time settlement scheme for micro and small enterprises sector; and mutual funds. The company also offers insurance products, such as life insurance, health insurance, and various credit risk insurance, as well as general insurance products, such as fire, liability, marine, motor, and travel insurance products. In addition, it offers money transfer services; various cards; and value added services consisting of SIB rewards, education fee collection, 3-in-one trading KIT, green pin, SIB feebook, branch banking, FX-retail, NETC FASTag, sovereign gold bonds, credit and debit cards, ATM cum shopping card, mobile and Internet banking, demat, pension system, online trading, SIB collect, PAN service agency, cash management, travel card, tax payment, tax savings investments, direct debit, and safe deposit locker services, as well as distributes capital gain bonds and tax free bonds. Further, the company's NRI banking services comprise NRE and NRO rupee accounts, and foreign currency deposits, as well as personal, home, car, property, SIB d\u00c3\u00a9cor, and education loans; and portfolio investment schemes. Additionally, its business banking services consist of normal and premium accounts, and trader smart current account; working capital, long term, non-fund based, supply chain, and international finance; mortgage and business loans; and merchant acquiring services. As of March 31, 2020, the company had a network of 935 branches and 1,424 ATMs/CRMs. The South Indian Bank Limited was incorporated in 1929 and is headquartered in Thrissur, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Thrissur"
     },
     "SPANDANA.NS": {
         "short_name": "Spandana Sphoorty Fin Ltd",
@@ -1679,6 +1943,42 @@
         "country": "India",
         "city": "Mumbai"
     },
+    "STAMPEDE.NS": {
+        "short_name": "STAMPEDE CAPITAL",
+        "long_name": "Stampede Capital Limited",
+        "summary": "Stampede Capital Limited provides securities and currencies broking and trading services through various stock exchanges in India. The company was formerly known as Brilliant Securities Limited and changed its name to Stampede Capital Ltd. in July 2011. Stampede Capital Ltd. was incorporated in 1995 and is based in Hyderabad, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Hyderabad"
+    },
+    "STEELCITY.NS": {
+        "short_name": "STEEL CITY SECURIT",
+        "long_name": "Steel City Securities Limited",
+        "summary": "Steel City Securities Limited provides retail stock broking services in southern parts of India. It provides a trading platform of capital market, futures and options, commodities, and currency derivatives; acts as a depository participant; offers margin trading facility for stocks or derivatives traded on National Stock Exchange of India Limited and BSE; and distributes mutual funds, credit cards, corporate fixed deposits, bonds, and IPOs. The company also promotes pension schemes for the retirement benefits of employees and business people; offers insurance agency services; and provides non-banking financial services, such as personal loans, gold loans, and loans against securities. In addition, it offers e-governance products, such as PAN, TAN, e-TDS, AIR, and form 24G, as well as change requests of PAN and TAN. The company was founded in 1995 and is headquartered in Visakhapatnam, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Visakhapatnam"
+    },
+    "SUMMITSEC.NS": {
+        "short_name": "SUMMIT SECURITIES",
+        "long_name": "Summit Securities Limited",
+        "summary": "Summit Securities Limited, a non-banking financial company, engages in investment and financial activities. The investments of the firm are typically long term in nature and predominantly in the equity markets. The firm typically invests in companies in real estate sector. Summit Securities Limited was formerly known as RPG Itochu Finance Limited. The company was incorporated on January 30, 1997 and is based in Mumbai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Mumbai"
+    },
     "SUNDARMFIN.NS": {
         "short_name": "SUNDARAM FINANCE L",
         "long_name": "Sundaram Finance Limited",
@@ -1690,6 +1990,18 @@
         "market": "in_market",
         "country": "India",
         "city": "Chennai"
+    },
+    "SURYODAY.NS": {
+        "short_name": "Suryoday Small Fin Bk Ltd",
+        "long_name": "Suryoday Small Finance Bank Limited",
+        "summary": "Suryoday Small Finance Bank Limited operates as a small finance bank primarily serving the unserved and underserved with a focus on financial inclusion in India. The company operates through Treasury, Retail Banking, Wholesale Banking, and Other Banking Operations segments. The company accepts savings and current accounts, term and fixed deposits, recurring deposits, and certificates of deposit. It also provides finance for mortgage and commercial vehicles; and loans to micro, small, and medium enterprises, as well as loans to non-banking finance companies. In addition, the company offers home loans, secured business loans against property, joint liability group loans, and emergency credit line guarantee schemes. Further, it provides life, general, and group health insurance, as well as national pension and social security schemes. Additionally, the company offers debit cards and NRI banking services; safe deposit locker facilities and bill and UPI payment services; and internet, phone, tab, and mobile banking services. As of July 31, 2020, it operated 482 banking outlets across 12 states and union territories. The company was formerly known as Suryoday Micro Finance Limited and changed its name to Suryoday Small Finance Bank Limited in January 2017. Suryoday Small Finance Bank Limited was founded in 2008 and is based in Navi Mumbai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Navi Mumbai"
     },
     "TATAINVEST.NS": {
         "short_name": "TATA INVESTMENT",
@@ -1727,6 +2039,18 @@
         "country": "India",
         "city": "New Delhi"
     },
+    "TFL.NS": {
+        "short_name": "TRANSWARRANTY FINA",
+        "long_name": "Transwarranty Finance Limited",
+        "summary": "Transwarranty Finance Limited, a non-banking finance company, provides financial services to companies and retail clients in India. Its investment banking services comprise mergers and acquisitions, venture capital, private equity, international capital market, joint ventures, corporate advisory, and business re-structuring; and corporate finance services consist of structured finance, rupee/foreign currency loans, external commercial borrowing, working capital facilities from banks, acquisition and stressed assets finance, and debt re-structuring. The company's trade finance services comprise letter of credit and clean bills discounting, inter corporate deposits, unsecured working capital loans, and import and export finance; and project finance services include financial structuring, project report and financial feasibility studies, raising project equity, and raising rupee and foreign currency loans for projects. In addition, it offers retail loans against security of gold; and online personal and consumer loans. Further, the company provides retail stock broking and investment advisory services, depository participation, institutional broking, arbitrage, corporate restructuring, take over and offer for sale services, ESOPs, and certifications services, as well as listing services on National Stock Exchange and Bombay Stock Exchange, and buy back of shares; distributes mutual funds, IPO, and other financial products; manages initial public offers/follow on offers/rights issues and debt issues; places equity shares with QIP/private equity funds and preference shares; valuates companies/enterprises/shares; and online personal and consumer loans. Additionally, it is involved in the retail of commodities broking and insurance business. The company was founded in 1994 and is headquartered in Mumbai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Mortgage Finance",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Mumbai"
+    },
     "THEINVEST.NS": {
         "short_name": "THE INVESTMENT TRU",
         "long_name": "The Investment Trust of India Limited",
@@ -1734,6 +2058,18 @@
         "currency": "INR",
         "sector": "Financial Services",
         "industry": "Capital Markets",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Mumbai"
+    },
+    "TIMESGTY.NS": {
+        "short_name": "TIMES GUARANTY",
+        "long_name": "Times Guaranty Limited",
+        "summary": "Times Guaranty Limited, a non-deposit accepting non-banking financial company, provides investment and financial services in India. It also provides retail and corporate lending, merchant banking, and money market related services. The company was formerly known as Times Guaranty Finance Limited and changed its name to Times Guaranty Limited in December 1999. The company was incorporated in 1989 and is based in Mumbai, India. Times Guaranty Limited is a subsidiary of Bennett Coleman and Company Limited.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
@@ -1774,6 +2110,18 @@
         "market": "in_market",
         "country": "India",
         "city": "Bengaluru"
+    },
+    "UNIONBANK.NS": {
+        "short_name": "UNION BK OF INDIA",
+        "long_name": "Union Bank of India",
+        "summary": "Union Bank of India provides various banking products and services. It operates through four segments: Treasury Operation, Retail Banking Operation, Corporate/Wholesale Banking, and Other Banking Operations. The company offers savings and current accounts; term and recurring deposits; and demat and online trading accounts. It also provides retail loans, including home, vehicle, education, and personal loans; loans against property; and loans for pensioners, as well as products and loans for micro, small, and medium enterprises. In addition, the company offers mutual funds, life, non-life, and general insurance products, and tax saving deposits; government saving schemes, tax collection services, pension products, and departmentalized ministries accounts; short term, long term, and other credit for agricultural/SSI/tertiary sectors; and safe deposit locker and cheque collection services. Further, it provides merchant banking services; corporate loans comprising Covid emergency line of credit, trade finance, working capital, lines of credit, project financing, and channel finance; debt structuring/restructuring, loan syndication, structured finance, mergers and acquisition advisory, and private equity services; cash management, ECGC cover, and foreign exchange services, as well as derivatives; export and import finance services; NRI banking services; and treasury and other products, and remittance services. Additionally, the company offers app, Internet, self-service, ATM, and SMS banking services; point of sale terminal and immediate payment services; and combo, debit, credit, gift, prepaid, and payroll cards. As of March 31, 2020, it operated 4,281 branches in India; 3 overseas branches at Sydney, Hong Kong, and Dubai; and 6,895 ATMs and 5,586 micro ATMs. The company was founded in 1919 and is headquartered in Mumbai, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Banks - Regional",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Mumbai"
     },
     "UZC.F": {
         "short_name": "AXIS BANK LTD. GDR REGS 5",
@@ -1822,6 +2170,18 @@
         "market": "in_market",
         "country": "India",
         "city": "New Delhi"
+    },
+    "WEALTH.NS": {
+        "short_name": "Wealth Frst Port. Mg. Ltd",
+        "long_name": "Wealth First Portfolio Managers Limited",
+        "summary": "Wealth First Portfolio Managers Limited provides financial assets investment management solutions to corporate, institutional, retail, and HNI and NRI customers in India. Its products include fixed deposits, government securities, treasury and direct bonds, taxable and tax free bonds, direct equity, mutual funds, PMS and pension products, etc. The company also offers investment strategizing, asset research and allocation, trade-execution\u00c2\u0096 broking, portfolio review, portfolio accounting, tax and retirement planning, and treasury management services. Wealth First Portfolio Managers Limited was founded in 2002 and is headquartered in Ahmedabad, India.",
+        "currency": "INR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "NSI",
+        "market": "in_market",
+        "country": "India",
+        "city": "Ahmedabad"
     },
     "WELINV.NS": {
         "short_name": "WELSPUN INVESTMENT",

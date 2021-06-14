@@ -14,7 +14,7 @@
     "2742.T": {
         "short_name": "HALOWS CO LTD",
         "long_name": "Halows Co.,Ltd.",
-        "summary": "Halows Co.,Ltd. operates a network of supermarket stores in Hiroshima, Okayama, Kagawa, Ehime, Tokushima, and Hyogo Prefectures of Japan. The company was formerly known as Fuchu Supermarket Co., Ltd. and changed its name to Halows Co.,Ltd. in March 1988. Halows Co.,Ltd. was founded in 1958 and is headquartered in Tsukubo, Japan.",
+        "summary": "Halows Co.,Ltd. operates a network of supermarket stores in Hiroshima, Okayama, Kagawa, Ehime, Tokushima, and Hyogo Prefectures of Japan. The company was formerly known as Fuchu Supermarket Co., Ltd. and changed its name to Halows Co.,Ltd. in March 1988. Halows Co.,Ltd. was incorporated in 1958 and is headquartered in Tsukubo, Japan.",
         "currency": "JPY",
         "sector": "Consumer Defensive",
         "industry": "Grocery Stores",
@@ -74,7 +74,7 @@
     "7515.T": {
         "short_name": "MARUYOSHI CENTER INC",
         "long_name": "Maruyoshi Center Inc.",
-        "summary": "Maruyoshi Center Inc. operates supermarkets and restaurants in Japan. It operates 35 supermarkets and 1 restaurant. The company was formerly known as Y.K. Tokiwa Food Center and changed its name to Maruyoshi Center Inc. in 1970. Maruyoshi Center Inc. was founded in 1961 and is headquartered in Takamatsu, Japan.",
+        "summary": "Maruyoshi Center Inc. operates supermarkets and restaurants in Japan. It operates 36 supermarkets and 1 restaurant. The company was formerly known as Y.K. Tokiwa Food Center and changed its name to Maruyoshi Center Inc. in 1970. Maruyoshi Center Inc. was founded in 1958 and is headquartered in Takamatsu, Japan.",
         "currency": "JPY",
         "sector": "Consumer Defensive",
         "industry": "Grocery Stores",
@@ -94,6 +94,18 @@
         "market": "jp_market",
         "country": "Japan",
         "city": "Tachikawa"
+    },
+    "7643.T": {
+        "short_name": "DAIICHI CO LTD",
+        "long_name": "Daiichi Co.,Ltd.",
+        "summary": "Daiichi Co.,Ltd. operates supermarkets in Japan. The company operates 10 stores in Obihiro; 8 stores in Asahikawa; and 5 stores in Sapporo. It also rents real estate properties. The company was formerly known as first Super Co., Ltd. and changed its name to Daiichi Co.,Ltd. in November 1991. Daiichi Co.,Ltd. was founded in 1958 and is headquartered in Obihiro, Japan. Daiichi Co.,Ltd. operates as a subsidiary of Seven & i Holdings Co., Ltd.",
+        "currency": "JPY",
+        "sector": "Consumer Defensive",
+        "industry": "Grocery Stores",
+        "exchange": "JPX",
+        "market": "jp_market",
+        "country": "Japan",
+        "city": "Obihiro"
     },
     "8182.T": {
         "short_name": "INAGEYA CO LTD",
@@ -167,6 +179,18 @@
         "country": "Japan",
         "city": "Fuji"
     },
+    "9919.T": {
+        "short_name": "KANSAI SUPERMARKET",
+        "long_name": "Kansai Super Market Ltd.",
+        "summary": "Kansai Super Market Ltd. operates supermarket stores in Japan. It offers fruits and vegetables; alcoholic beverages; and seafood, meat, confectionery, and frozen food products, as well as miscellaneous goods. The company also engages in the production of cooked rice; cultivation and sale of vegetables; and beef cattle fattening activities. It operates 65 supermarket stores and 1 shopping department store. The company was founded in 1959 and is headquartered in Itami, Japan.",
+        "currency": "JPY",
+        "sector": "Consumer Defensive",
+        "industry": "Grocery Stores",
+        "exchange": "JPX",
+        "market": "jp_market",
+        "country": "Japan",
+        "city": "Itami"
+    },
     "9974.T": {
         "short_name": "BELC CO LTD",
         "long_name": "Belc CO., LTD.",
@@ -203,22 +227,34 @@
         "country": "Japan",
         "city": "Yamagata"
     },
-    "FYRTY": {
-        "short_name": "FAMILYMART CO LTD",
-        "long_name": "FamilyMart Co., Ltd.",
-        "summary": "FamilyMart Co., Ltd., together with its subsidiaries, operates as a convenience store franchise operator. It primarily operates convenience stores and general merchandise stores. The company is also involved in the provision of accounting and other store related services; manufacturing, processing, and wholesale of prepared dishes; boxed lunch home delivery business; and entertainment business, as well as provides fintech related services. As of February 28, 2019, it operated 16,430 stores in Japan and 7,384 stores in Taiwan, Thailand, China, Vietnam, Indonesia, the Philippines, and Malaysia. The company was formerly known as FamilyMart UNY Holdings Co., Ltd. and changed its name to FamilyMart Co., Ltd. in September 2019. The company was founded in 1973 and is headquartered in Tokyo, Japan. As of February 28, 2019, FamilyMart Co., Ltd. operates as a subsidiary of ITOCHU Corporation.",
-        "currency": "USD",
+    "S6M.F": {
+        "short_name": "SEVEN + I HLDGS CO. LTD",
+        "long_name": "Seven & i Holdings Co., Ltd.",
+        "summary": "Seven & i Holdings Co., Ltd. engages in retail, food, financial, and IT businesses in Japan, North America, and internationally. It operates through seven segments: Domestic Convenience Store operations, Overseas Convenience Store Operations, Superstore Operations, Department Store Operations, Financial Services, Specialty Stores Operations, and Others. The company's Domestic Convenience Store Operations segment operates convenience stores comprising directly managed corporate stores and franchised stores. Its Overseas Convenience Store Operations segment engages in convenience store operation and gasoline retail businesses. The company's Superstore Operations segment operates retail business that provide daily life necessities, such as food and other daily necessities. Its Department Store Operations operates department stores that provide various merchandise products. The company's Financial Services segment offers banking, leasing, and credit card services. Its Specialty Store Operations segment operates specialty retail stores. The company's others segment engages in real estate and other businesses. It operates approximately 22,500 stores in Japan and 71,800 stores internationally. The company was incorporated in 2005 and is headquartered in Tokyo, Japan.",
+        "currency": "EUR",
         "sector": "Consumer Defensive",
         "industry": "Grocery Stores",
-        "exchange": "PNK",
-        "market": "us_market",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Japan",
+        "city": "Tokyo"
+    },
+    "S6MA.F": {
+        "short_name": "SEVEN+I HLDGS UNSP.ADR1/2",
+        "long_name": "Seven & i Holdings Co., Ltd.",
+        "summary": "Seven & i Holdings Co., Ltd. engages in retail, food, financial, and IT businesses in Japan, North America, and internationally. It operates through seven segments: Domestic Convenience Store operations, Overseas Convenience Store Operations, Superstore Operations, Department Store Operations, Financial Services, Specialty Stores Operations, and Others. The company's Domestic Convenience Store Operations segment operates convenience stores comprising directly managed corporate stores and franchised stores. Its Overseas Convenience Store Operations segment engages in convenience store operation and gasoline retail businesses. The company's Superstore Operations segment operates retail business that provide daily life necessities, such as food and other daily necessities. Its Department Store Operations operates department stores that provide various merchandise products. The company's Financial Services segment offers banking, leasing, and credit card services. Its Specialty Store Operations segment operates specialty retail stores. The company's others segment engages in real estate and other businesses. It operates approximately 22,500 stores in Japan and 71,800 stores internationally. The company was incorporated in 2005 and is headquartered in Tokyo, Japan.",
+        "currency": "EUR",
+        "sector": "Consumer Defensive",
+        "industry": "Grocery Stores",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "Japan",
         "city": "Tokyo"
     },
     "SVNDF": {
         "short_name": "SEVEN & I HOLDINGS CO LTD",
         "long_name": "Seven & i Holdings Co., Ltd.",
-        "summary": "Seven & i Holdings Co., Ltd. engages in retail, food, financial, and IT businesses. The company's Domestic Convenience Store Operations segment operates convenience stores. As of May 31, 2018, it operated 19,943 franchised stores and 442 directly operated stores in Japan; and a number of 7-Eleven convenience stores in China and Hawaii. Its Overseas Convenience Store Operations segment engages in convenience store and gasoline retail businesses. As of March 31, 2018, it operated 7,166 franchised stores and 2,530 directly operated stores in the United States and Canada; and 35,548 7-Eleven licensed convenience stores. The company's Superstore Operations segment operates Ito-Yokado superstores, which offers food items, apparel, and household goods, as well as York-Benimaru, York Mart, and The Garden Jiyugaoka supermarkets in Japan. As of May 31, 2018, it operated Ito-Yokado stores in 164 locations. Its Department Store Operations operates department stores that provide apparel, luxury goods, cosmetics, specialty products, and food items. As of May 31, 2018, it operated 15 department stores under the Sogo and Seibu brands in Japan. The company's Financial Services segment offers banking, ATM, leasing, insurance, credit card, and e-money services. As of May 31, 2018, the Seven Bank operated 24,481 ATM locations in Japan; and March 31, 2018, it operated 13,413 ATMs in North America. Its Specialty Store Operations segment operates specialty retail stores; an online retailer under the Nissen name; and in restaurant, fast food, and contract businesses. As of May 31, 2018, it primarily operated 112 Akachan Honpo stores; 96 directly operated and 17 franchised stores under the THE LOFT name; and 12 Barneys New York branded stores, as well as February 28, 2018, it operated 488 restaurant and fast food locations. The company's others segment engages in real estate, publishing, and cultural education businesses. The company was founded in 2005 and is headquartered in Tokyo, Japan.",
+        "summary": "Seven & i Holdings Co., Ltd. engages in retail, food, financial, and IT businesses in Japan, North America, and internationally. It operates through seven segments: Domestic Convenience Store operations, Overseas Convenience Store Operations, Superstore Operations, Department Store Operations, Financial Services, Specialty Stores Operations, and Others. The company's Domestic Convenience Store Operations segment operates convenience stores comprising directly managed corporate stores and franchised stores. Its Overseas Convenience Store Operations segment engages in convenience store operation and gasoline retail businesses. The company's Superstore Operations segment operates retail business that provide daily life necessities, such as food and other daily necessities. Its Department Store Operations operates department stores that provide various merchandise products. The company's Financial Services segment offers banking, leasing, and credit card services. Its Specialty Store Operations segment operates specialty retail stores. The company's others segment engages in real estate and other businesses. It operates approximately 22,500 stores in Japan and 71,800 stores internationally. The company was incorporated in 2005 and is headquartered in Tokyo, Japan.",
         "currency": "USD",
         "sector": "Consumer Defensive",
         "industry": "Grocery Stores",
@@ -230,7 +266,7 @@
     "SVNDY": {
         "short_name": "SEVEN & I HOLDINGS CO LTD",
         "long_name": "Seven & i Holdings Co., Ltd.",
-        "summary": "Seven & i Holdings Co., Ltd. engages in retail, food, financial, and IT businesses. The company's Domestic Convenience Store Operations segment operates convenience stores. As of May 31, 2018, it operated 19,943 franchised stores and 442 directly operated stores in Japan; and a number of 7-Eleven convenience stores in China and Hawaii. Its Overseas Convenience Store Operations segment engages in convenience store and gasoline retail businesses. As of March 31, 2018, it operated 7,166 franchised stores and 2,530 directly operated stores in the United States and Canada; and 35,548 7-Eleven licensed convenience stores. The company's Superstore Operations segment operates Ito-Yokado superstores, which offers food items, apparel, and household goods, as well as York-Benimaru, York Mart, and The Garden Jiyugaoka supermarkets in Japan. As of May 31, 2018, it operated Ito-Yokado stores in 164 locations. Its Department Store Operations operates department stores that provide apparel, luxury goods, cosmetics, specialty products, and food items. As of May 31, 2018, it operated 15 department stores under the Sogo and Seibu brands in Japan. The company's Financial Services segment offers banking, ATM, leasing, insurance, credit card, and e-money services. As of May 31, 2018, the Seven Bank operated 24,481 ATM locations in Japan; and March 31, 2018, it operated 13,413 ATMs in North America. Its Specialty Store Operations segment operates specialty retail stores; an online retailer under the Nissen name; and in restaurant, fast food, and contract businesses. As of May 31, 2018, it primarily operated 112 Akachan Honpo stores; 96 directly operated and 17 franchised stores under the THE LOFT name; and 12 Barneys New York branded stores, as well as February 28, 2018, it operated 488 restaurant and fast food locations. The company's others segment engages in real estate, publishing, and cultural education businesses. The company was founded in 2005 and is headquartered in Tokyo, Japan.",
+        "summary": "Seven & i Holdings Co., Ltd. engages in retail, food, financial, and IT businesses in Japan, North America, and internationally. It operates through seven segments: Domestic Convenience Store operations, Overseas Convenience Store Operations, Superstore Operations, Department Store Operations, Financial Services, Specialty Stores Operations, and Others. The company's Domestic Convenience Store Operations segment operates convenience stores comprising directly managed corporate stores and franchised stores. Its Overseas Convenience Store Operations segment engages in convenience store operation and gasoline retail businesses. The company's Superstore Operations segment operates retail business that provide daily life necessities, such as food and other daily necessities. Its Department Store Operations operates department stores that provide various merchandise products. The company's Financial Services segment offers banking, leasing, and credit card services. Its Specialty Store Operations segment operates specialty retail stores. The company's others segment engages in real estate and other businesses. It operates approximately 22,500 stores in Japan and 71,800 stores internationally. The company was incorporated in 2005 and is headquartered in Tokyo, Japan.",
         "currency": "USD",
         "sector": "Consumer Defensive",
         "industry": "Grocery Stores",

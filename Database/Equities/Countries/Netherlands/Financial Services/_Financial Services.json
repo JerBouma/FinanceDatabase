@@ -1,20 +1,44 @@
 {
-    "4NH.F": {
-        "short_name": "NIBC HOLDING N.V. EO 1",
-        "long_name": "NIBC Holding N.V.",
-        "summary": "NIBC Holding N.V. provides corporate and retail banking products and services in the Netherlands, Germany, Belgium, the United Kingdom, and the Nordics. It operates through Corporate Client Offering, Retail Client Offering, and Treasury and Group Functions segments. The company offers merger and acquisition advisory services; equity sales and trading; debt and equity advisory services; leveraged and receivables finances; corporate lending; asset and cash flow finance; and project equity services. The company also offers mezzanine and equity solutions; and equities research, fixed income, and debt and equity capital market services. In addition, it provides mortgages; and savings products, as well as brokerage services under the NIBC Direct label. The company serves corporate clients, financial institutions, institutional investors, financial sponsors, family offices, entrepreneurial investors, and retail clients. NIBC Holding N.V. was founded in 1945 and is headquartered in The Hague, the Netherlands. As of December 21, 2020, NIBC Holding N.V. operates as a subsidiary of The Blackstone Group International Partners LLP.",
+    "4IT.F": {
+        "short_name": "INTERTRUST NV  EO-,60",
+        "long_name": "Intertrust N.V.",
+        "summary": "Intertrust N.V. provides corporate, fund, capital market, and private wealth services in Western Europe, the Americas, and internationally. The company offers formation and implementation; domiciliation, management, and trustee; legal and tax compliance; regulatory and compliance; accounting and reporting services; and liquidation services. It also provides corporate secretarial, escrow, performance and reward management, process agent, and treasury management services, as well as payroll services. In addition, the company offers depositary, ManCo, outsourced fiduciary, and fund administration services. Further, it provides agency, corporate administration, investor reporting, listing, portfolio administration, and process agency services; and business succession, family governance, philanthropy and charitable trust, real estate, and treasury and investment services. It serves multinational corporations, financial institutions, real estate and private equity funds, ultra-high net worth individuals, and family offices. Intertrust N.V. was founded in 1952 and is headquartered in Amsterdam, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
-        "industry": "Banks - Regional",
+        "industry": "Asset Management",
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Netherlands",
-        "city": "The Hague"
+        "city": "Amsterdam"
+    },
+    "8FT.F": {
+        "short_name": "FLOW TRADERS N.V. EO -,10",
+        "long_name": "Flow Traders N.V.",
+        "summary": "Flow Traders N.V. operates as a financial technology-enabled liquidity provider in financial products in Europe, the Americas, and Asia. The company uses its proprietary technology platform to quote bid and ask prices in thousands of exchange traded products (ETP), as well as related financial products. It also provides liquidity in ETPs off-exchange to institutional counterparties, including banks, asset managers, pension funds, insurance companies, family offices, hedge funds, and others. The company was founded in 2004 and is headquartered in Amsterdam, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Netherlands",
+        "city": "Amsterdam"
+    },
+    "A16.F": {
+        "short_name": "ASR NEDERLAND N.V.EO-,16",
+        "long_name": "ASR Nederland N.V.",
+        "summary": "ASR Nederland N.V. provides various insurance and non-insurance products and services to private and business customers in the Netherlands and internationally. It operates through five segments: Non-Life, Life, Asset Management, Distribution and Services, and Holding and Other. The company offers non-life insurance products, including motor vehicle and commercial fleet, fire, travel, leisure, transport, liability, agricultural, construction motorized vehicles, and construction all risk and assistance insurance products; self-employed disability, sickness leave, and group disability insurance products; and health insurance products comprising basic and supplementary health insurance products. It also provides life insurance products, such as individual life and funeral insurance products, as well as pensions. In addition, the company asset management products, such as euro corporate bonds, euro government bonds, euro equities, interest rate overlays, balanced mandates, tailor-made bond portfolios, loans, fixed-income index investments, and real estate and the mortgage fund propositions; mortgage loan services, including acceptance, arrears management and recovery, and reporting for mortgages; and real estate investment funds. Further, it engages in the distribution of insurance contracts and financial intermediary services; and real estate development business. ASR Nederland N.V. offers its products under the De Amersfoortse, Loyalis, Ditzo, Europeesche Verzekeringen, and Ardanta brand names. The company was formerly known as Fortis Verzekeringen Nederland N.V. and changed its name to ASR Nederland N.V. in October 2008. ASR Nederland N.V. is headquartered in Utrecht, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Insurance - Diversified",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Netherlands",
+        "city": "Utrecht"
     },
     "AAVMY": {
         "short_name": "ABN AMRO BANK N.V. UNSPON ADS E",
         "long_name": "ABN AMRO Bank N.V.",
-        "summary": "ABN AMRO Bank N.V. provides various banking products and services in the Netherlands and internationally. It operates through Retail Banking, Commercial Banking, Private Banking, and Corporate & Institutional Banking segments. The Retail Banking segment offers banking products and services, including labelled residential mortgage products under the Florius and Moneyou names; and consumer loans under the Alpha Credit Nederland, Credivance, Defam, and GreenLoans names. It also issues, promotes, manages, and processes credit cards; and provides revolving credit card facilities and pension schemes, as well as Internet banking services for payment and savings accounts and mortgages, as well as consumer credit and mortgages. The Commercial Banking segment offers asset-based solutions, including working capital solutions, equipment leases and loans, and vendor lease services to business clients and clients. The Private Banking segment provides private banking and private wealth-management-related services. The Corporate & Institutional Banking segment offers derivatives and equity clearing, trade, and commodity finance services. ABN AMRO Bank N.V. was incorporated in 2009 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "ABN AMRO Bank N.V. provides various banking products and services in the Netherlands and internationally. It operates through Retail Banking, Commercial Banking, Private Banking, and Corporate & Institutional Banking segments. The Retail Banking segment offers banking products and services, including labelled residential mortgage products under the Florius brands; and consumer loans under the Alpha Credit Nederland, Credivance, Defam, and GreenLoans, Moneyou, and ABN AMRO brands. It also issues, promotes, manages, and processes credit cards; provides revolving credit card facilities and pension schemes, as well as Internet banking services for payment and savings accounts and mortgages, as well as consumer credit and mortgages; and life and non-life insurance products. The Commercial Banking segment offers asset-based solutions, including working capital solutions, equipment leases and loans, and vendor lease services. The Private Banking segment provides private banking and private wealth-management-related services. The Corporate & Institutional Banking segment offers derivatives and equity clearing services. ABN AMRO Bank N.V. was incorporated in 2009 and is based in Amsterdam, the Netherlands.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
@@ -26,7 +50,7 @@
     "AB2.F": {
         "short_name": "ABN AMRO BANK DR/EO1",
         "long_name": "ABN AMRO Bank N.V.",
-        "summary": "ABN AMRO Bank N.V. provides various banking products and services in the Netherlands and internationally. It operates through Retail Banking, Commercial Banking, Private Banking, and Corporate & Institutional Banking segments. The Retail Banking segment offers banking products and services, including labelled residential mortgage products under the Florius and Moneyou names; and consumer loans under the Alpha Credit Nederland, Credivance, Defam, and GreenLoans names. It also issues, promotes, manages, and processes credit cards; and provides revolving credit card facilities and pension schemes, as well as Internet banking services for payment and savings accounts and mortgages, as well as consumer credit and mortgages. The Commercial Banking segment offers asset-based solutions, including working capital solutions, equipment leases and loans, and vendor lease services to business clients and clients. The Private Banking segment provides private banking and private wealth-management-related services. The Corporate & Institutional Banking segment offers derivatives and equity clearing, trade, and commodity finance services. ABN AMRO Bank N.V. was incorporated in 2009 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "ABN AMRO Bank N.V. provides various banking products and services in the Netherlands and internationally. It operates through Retail Banking, Commercial Banking, Private Banking, and Corporate & Institutional Banking segments. The Retail Banking segment offers banking products and services, including labelled residential mortgage products under the Florius brands; and consumer loans under the Alpha Credit Nederland, Credivance, Defam, and GreenLoans, Moneyou, and ABN AMRO brands. It also issues, promotes, manages, and processes credit cards; provides revolving credit card facilities and pension schemes, as well as Internet banking services for payment and savings accounts and mortgages, as well as consumer credit and mortgages; and life and non-life insurance products. The Commercial Banking segment offers asset-based solutions, including working capital solutions, equipment leases and loans, and vendor lease services. The Private Banking segment provides private banking and private wealth-management-related services. The Corporate & Institutional Banking segment offers derivatives and equity clearing services. ABN AMRO Bank N.V. was incorporated in 2009 and is based in Amsterdam, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
@@ -38,7 +62,7 @@
     "ABMRF": {
         "short_name": "ABN AMRO BANK N.V. DR EACH REP ",
         "long_name": "ABN AMRO Bank N.V.",
-        "summary": "ABN AMRO Bank N.V. provides various banking products and services in the Netherlands and internationally. It operates through Retail Banking, Commercial Banking, Private Banking, and Corporate & Institutional Banking segments. The Retail Banking segment offers banking products and services, including labelled residential mortgage products under the Florius and Moneyou names; and consumer loans under the Alpha Credit Nederland, Credivance, Defam, and GreenLoans names. It also issues, promotes, manages, and processes credit cards; and provides revolving credit card facilities and pension schemes, as well as Internet banking services for payment and savings accounts and mortgages, as well as consumer credit and mortgages. The Commercial Banking segment offers asset-based solutions, including working capital solutions, equipment leases and loans, and vendor lease services to business clients and clients. The Private Banking segment provides private banking and private wealth-management-related services. The Corporate & Institutional Banking segment offers derivatives and equity clearing, trade, and commodity finance services. ABN AMRO Bank N.V. was incorporated in 2009 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "ABN AMRO Bank N.V. provides various banking products and services in the Netherlands and internationally. It operates through Retail Banking, Commercial Banking, Private Banking, and Corporate & Institutional Banking segments. The Retail Banking segment offers banking products and services, including labelled residential mortgage products under the Florius brands; and consumer loans under the Alpha Credit Nederland, Credivance, Defam, and GreenLoans, Moneyou, and ABN AMRO brands. It also issues, promotes, manages, and processes credit cards; provides revolving credit card facilities and pension schemes, as well as Internet banking services for payment and savings accounts and mortgages, as well as consumer credit and mortgages; and life and non-life insurance products. The Commercial Banking segment offers asset-based solutions, including working capital solutions, equipment leases and loans, and vendor lease services. The Private Banking segment provides private banking and private wealth-management-related services. The Corporate & Institutional Banking segment offers derivatives and equity clearing services. ABN AMRO Bank N.V. was incorporated in 2009 and is based in Amsterdam, the Netherlands.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
@@ -50,7 +74,7 @@
     "ABN.AS": {
         "short_name": "ABN AMRO BANK N.V.",
         "long_name": "ABN AMRO Bank N.V.",
-        "summary": "ABN AMRO Bank N.V. provides various banking products and services in the Netherlands and internationally. It operates through Retail Banking, Commercial Banking, Private Banking, and Corporate & Institutional Banking segments. The Retail Banking segment offers banking products and services, including labelled residential mortgage products under the Florius and Moneyou names; and consumer loans under the Alpha Credit Nederland, Credivance, Defam, and GreenLoans names. It also issues, promotes, manages, and processes credit cards; and provides revolving credit card facilities and pension schemes, as well as Internet banking services for payment and savings accounts and mortgages, as well as consumer credit and mortgages. The Commercial Banking segment offers asset-based solutions, including working capital solutions, equipment leases and loans, and vendor lease services to business clients and clients. The Private Banking segment provides private banking and private wealth-management-related services. The Corporate & Institutional Banking segment offers derivatives and equity clearing, trade, and commodity finance services. ABN AMRO Bank N.V. was incorporated in 2009 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "ABN AMRO Bank N.V. provides various banking products and services in the Netherlands and internationally. It operates through Retail Banking, Commercial Banking, Private Banking, and Corporate & Institutional Banking segments. The Retail Banking segment offers banking products and services, including labelled residential mortgage products under the Florius brands; and consumer loans under the Alpha Credit Nederland, Credivance, Defam, and GreenLoans, Moneyou, and ABN AMRO brands. It also issues, promotes, manages, and processes credit cards; provides revolving credit card facilities and pension schemes, as well as Internet banking services for payment and savings accounts and mortgages, as well as consumer credit and mortgages; and life and non-life insurance products. The Commercial Banking segment offers asset-based solutions, including working capital solutions, equipment leases and loans, and vendor lease services. The Private Banking segment provides private banking and private wealth-management-related services. The Corporate & Institutional Banking segment offers derivatives and equity clearing services. ABN AMRO Bank N.V. was incorporated in 2009 and is based in Amsterdam, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
@@ -62,7 +86,7 @@
     "ABN.VI": {
         "short_name": "ABN AMRO GROUP NV",
         "long_name": "ABN AMRO Bank N.V.",
-        "summary": "ABN AMRO Bank N.V. provides various banking products and services in the Netherlands and internationally. It operates through Retail Banking, Commercial Banking, Private Banking, and Corporate & Institutional Banking segments. The Retail Banking segment offers banking products and services, including labelled residential mortgage products under the Florius and Moneyou names; and consumer loans under the Alpha Credit Nederland, Credivance, Defam, and GreenLoans names. It also issues, promotes, manages, and processes credit cards; and provides revolving credit card facilities and pension schemes, as well as Internet banking services for payment and savings accounts and mortgages, as well as consumer credit and mortgages. The Commercial Banking segment offers asset-based solutions, including working capital solutions, equipment leases and loans, and vendor lease services to business clients and clients. The Private Banking segment provides private banking and private wealth-management-related services. The Corporate & Institutional Banking segment offers derivatives and equity clearing, trade, and commodity finance services. ABN AMRO Bank N.V. was incorporated in 2009 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "ABN AMRO Bank N.V. provides various banking products and services in the Netherlands and internationally. It operates through Retail Banking, Commercial Banking, Private Banking, and Corporate & Institutional Banking segments. The Retail Banking segment offers banking products and services, including labelled residential mortgage products under the Florius brands; and consumer loans under the Alpha Credit Nederland, Credivance, Defam, and GreenLoans, Moneyou, and ABN AMRO brands. It also issues, promotes, manages, and processes credit cards; provides revolving credit card facilities and pension schemes, as well as Internet banking services for payment and savings accounts and mortgages, as well as consumer credit and mortgages; and life and non-life insurance products. The Commercial Banking segment offers asset-based solutions, including working capital solutions, equipment leases and loans, and vendor lease services. The Private Banking segment provides private banking and private wealth-management-related services. The Corporate & Institutional Banking segment offers derivatives and equity clearing services. ABN AMRO Bank N.V. was incorporated in 2009 and is based in Amsterdam, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
@@ -74,7 +98,7 @@
     "AEG": {
         "short_name": "AEGON N.V.",
         "long_name": "Aegon N.V.",
-        "summary": "Aegon N.V. provides insurance, pensions, and asset management services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
+        "summary": "Aegon N.V. provides a range of financial services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance, as well as pension products. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Insurance - Diversified",
@@ -86,7 +110,7 @@
     "AEGOF": {
         "short_name": "AEGON NV",
         "long_name": "Aegon N.V.",
-        "summary": "Aegon N.V. provides insurance, pensions, and asset management services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
+        "summary": "Aegon N.V. provides a range of financial services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance, as well as pension products. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Insurance - Diversified",
@@ -98,7 +122,7 @@
     "AEND.DE": {
         "short_name": "AEGON NV (DEMAT.)  EO-12",
         "long_name": "Aegon N.V.",
-        "summary": "Aegon N.V. provides insurance, pensions, and asset management services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
+        "summary": "Aegon N.V. provides a range of financial services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance, as well as pension products. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Insurance - Diversified",
@@ -110,7 +134,7 @@
     "AEND.F": {
         "short_name": "AEGON NV (DEMAT.)  EO-12",
         "long_name": "Aegon N.V.",
-        "summary": "Aegon N.V. provides insurance, pensions, and asset management services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
+        "summary": "Aegon N.V. provides a range of financial services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance, as well as pension products. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Insurance - Diversified",
@@ -119,22 +143,10 @@
         "country": "Netherlands",
         "city": "The Hague"
     },
-    "AENF.DE": {
-        "short_name": "AEGON NV EO 0,12 NY REG.1",
-        "long_name": "Aegon N.V.",
-        "summary": "Aegon N.V. provides insurance, pensions, and asset management services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
-        "currency": "EUR",
-        "sector": "Financial Services",
-        "industry": "Insurance - Diversified",
-        "exchange": "GER",
-        "market": "de_market",
-        "country": "Netherlands",
-        "city": "The Hague"
-    },
     "AENF.F": {
         "short_name": "AEGON NV EO 0,12 NY REG.1",
         "long_name": "Aegon N.V.",
-        "summary": "Aegon N.V. provides insurance, pensions, and asset management services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
+        "summary": "Aegon N.V. provides a range of financial services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance, as well as pension products. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Insurance - Diversified",
@@ -146,12 +158,36 @@
     "AGN.AS": {
         "short_name": "AEGON",
         "long_name": "Aegon N.V.",
-        "summary": "Aegon N.V. provides insurance, pensions, and asset management services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
+        "summary": "Aegon N.V. provides a range of financial services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance, as well as pension products. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Insurance - Diversified",
         "exchange": "AMS",
         "market": "nl_market",
+        "country": "Netherlands",
+        "city": "The Hague"
+    },
+    "AGN.MI": {
+        "short_name": "AEGON",
+        "long_name": "Aegon N.V.",
+        "summary": "Aegon N.V. provides a range of financial services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance, as well as pension products. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Insurance - Diversified",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Netherlands",
+        "city": "The Hague"
+    },
+    "AGN.VI": {
+        "short_name": "AEGON NV",
+        "long_name": "Aegon N.V.",
+        "summary": "Aegon N.V. provides a range of financial services in the Americas, Europe, and Asia. Its insurance products include life, accident, and health insurance; property and casualty insurance; and household and car insurance, as well as pension products. The company also offers savings products, such as retirement plan services; annuities; mutual funds; and stable value solutions. In addition, it provides retail and institutional investment management solutions, retirement savings vehicles, residential mortgages, and digital banking services. The company markets its products through brokers, agents, banks, employee benefit consultants, independent financial advisors, bancassurance channels, and advice centers. Aegon N.V. was founded in 1983 and is headquartered in The Hague, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Insurance - Diversified",
+        "exchange": "VIE",
+        "market": "at_market",
         "country": "Netherlands",
         "city": "The Hague"
     },
@@ -179,10 +215,46 @@
         "country": "Netherlands",
         "city": "Utrecht"
     },
+    "DSC2.AS": {
+        "short_name": "DSC2",
+        "long_name": "Dutch Star Companies TWO B.V.",
+        "summary": "Dutch Star Companies TWO B.V., a special purpose acquisition vehicle, intends to acquire a minority stake in a business with principal business operations primarily in the Netherlands. The company was incorporated in 2020 and is based in Amsterdam, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Shell Companies",
+        "exchange": "AMS",
+        "market": "nl_market",
+        "country": "Netherlands",
+        "city": "Amsterdam"
+    },
+    "EBACU": {
+        "short_name": "European Biotech Acquisition Co",
+        "long_name": "European Biotech Acquisition Corp.",
+        "summary": "European Biotech Acquisition Corp. focuses on effecting a merger, capital stock exchange, asset acquisition, stock purchase, reorganization, or similar business combination with one or more businesses. The company was founded in 2021 and is based in Amsterdam, the Netherlands.",
+        "currency": "USD",
+        "sector": "Financial Services",
+        "industry": "Shell Companies",
+        "exchange": "NCM",
+        "market": "us_market",
+        "country": "Netherlands",
+        "city": "Amsterdam"
+    },
+    "EFIC1.AS": {
+        "short_name": "EFIC1 ORD SHARES",
+        "long_name": "European FinTech IPO Company 1 B.V.",
+        "summary": "European FinTech IPO Company 1 B.V. is a blank check company which intends to effect a merger, capital stock exchange, asset acquisition, stock purchase, reorganization, or related business combination with businesses or entities. It focuses on the financial services and financial services technology sectors. The company was incorporated in 2021 and is based in Amsterdam, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Shell Companies",
+        "exchange": "AMS",
+        "market": "nl_market",
+        "country": "Netherlands",
+        "city": "Amsterdam"
+    },
     "ENX.PA": {
         "short_name": "EURONEXT",
         "long_name": "Euronext N.V.",
-        "summary": "Euronext N.V., together with its subsidiaries, operates securities and derivatives exchanges in Continental Europe, Ireland, and Norway. The company offers a range of exchange and corporate services, including security listings, cash and derivatives trading, and market data dissemination. It also provides listing venues and cash equities trading venues; and various marketplaces, including multilateral trading facilities for investors, broker-dealers, and other market participants to meet directly to buy and sell cash equities, fixed income securities, and exchange traded products. In addition, the company offers options contracts based on the blue-chip equities listed on Euronext; commodity derivatives, such as milling wheat futures contracts; and post-trade services, as well as distributes and sells real-time, historic, and reference data to data vendors, and financial institutions and individual investors. Further, it provides equity, debts, funds, and exchange traded funds listing services; and investors, foreign exchange trading, and advanced data services. Additionally, the company offers technology solutions and services to exchanges and venue operators; software support and maintenance services for the legacy trading platforms; software licensing services; trading software in the form of managed services; network connectivity and server colocation services to market participants; information technology hosting services to third-party market operators; connection services; and other services. The company was formerly known as Euronext Group N.V. and changed its name to Euronext N.V. in May 2014. Euronext N.V. was founded in 2000 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "Euronext N.V., together with its subsidiaries, operates securities and derivatives exchanges in Continental Europe, Ireland, and Norway. The company offers a range of exchange and corporate services, including security listings, cash and derivatives trading, and market data dissemination. It also provides listing venues and cash equities trading venues; and various marketplaces, including multilateral trading facilities for investors, broker-dealers, and other market participants to meet directly to buy and sell cash equities, fixed income securities, and exchange traded products. In addition, the company offers options contracts based on the blue-chip equities listed on Euronext; commodity derivatives, such as milling wheat futures contracts; and post-trade services, as well as distributes and sells real-time, historic, and reference data to data vendors, and financial institutions and individual investors. Further, it provides equity, debts, funds, and exchange traded funds listing services, as well as investors, foreign exchange trading, and advanced data services. Additionally, the company offers technology solutions and services to exchanges and venue operators; software support and maintenance services for the legacy trading platforms; software licensing services; trading software in the form of managed services; network connectivity and server colocation services to market participants; information technology hosting services to third-party market operators; connection services; and other services. The company was formerly known as Euronext Group N.V. and changed its name to Euronext N.V. in May 2014. Euronext N.V. was founded in 2000 and is headquartered in Amsterdam, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Financial Data & Stock Exchanges",
@@ -191,10 +263,22 @@
         "country": "Netherlands",
         "city": "Amsterdam"
     },
+    "ENX.VI": {
+        "short_name": "EURONEXT NV",
+        "long_name": "Euronext N.V.",
+        "summary": "Euronext N.V., together with its subsidiaries, operates securities and derivatives exchanges in Continental Europe, Ireland, and Norway. The company offers a range of exchange and corporate services, including security listings, cash and derivatives trading, and market data dissemination. It also provides listing venues and cash equities trading venues; and various marketplaces, including multilateral trading facilities for investors, broker-dealers, and other market participants to meet directly to buy and sell cash equities, fixed income securities, and exchange traded products. In addition, the company offers options contracts based on the blue-chip equities listed on Euronext; commodity derivatives, such as milling wheat futures contracts; and post-trade services, as well as distributes and sells real-time, historic, and reference data to data vendors, and financial institutions and individual investors. Further, it provides equity, debts, funds, and exchange traded funds listing services, as well as investors, foreign exchange trading, and advanced data services. Additionally, the company offers technology solutions and services to exchanges and venue operators; software support and maintenance services for the legacy trading platforms; software licensing services; trading software in the form of managed services; network connectivity and server colocation services to market participants; information technology hosting services to third-party market operators; connection services; and other services. The company was formerly known as Euronext Group N.V. and changed its name to Euronext N.V. in May 2014. Euronext N.V. was founded in 2000 and is headquartered in Amsterdam, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Financial Data & Stock Exchanges",
+        "exchange": "VIE",
+        "market": "at_market",
+        "country": "Netherlands",
+        "city": "Amsterdam"
+    },
     "ENXB.F": {
         "short_name": "EURONEXT N.V. WI EO 1,60",
         "long_name": "Euronext N.V.",
-        "summary": "Euronext N.V., together with its subsidiaries, operates securities and derivatives exchanges in Continental Europe, Ireland, and Norway. The company offers a range of exchange and corporate services, including security listings, cash and derivatives trading, and market data dissemination. It also provides listing venues and cash equities trading venues; and various marketplaces, including multilateral trading facilities for investors, broker-dealers, and other market participants to meet directly to buy and sell cash equities, fixed income securities, and exchange traded products. In addition, the company offers options contracts based on the blue-chip equities listed on Euronext; commodity derivatives, such as milling wheat futures contracts; and post-trade services, as well as distributes and sells real-time, historic, and reference data to data vendors, and financial institutions and individual investors. Further, it provides equity, debts, funds, and exchange traded funds listing services; and investors, foreign exchange trading, and advanced data services. Additionally, the company offers technology solutions and services to exchanges and venue operators; software support and maintenance services for the legacy trading platforms; software licensing services; trading software in the form of managed services; network connectivity and server colocation services to market participants; information technology hosting services to third-party market operators; connection services; and other services. The company was formerly known as Euronext Group N.V. and changed its name to Euronext N.V. in May 2014. Euronext N.V. was founded in 2000 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "Euronext N.V., together with its subsidiaries, operates securities and derivatives exchanges in Continental Europe, Ireland, and Norway. The company offers a range of exchange and corporate services, including security listings, cash and derivatives trading, and market data dissemination. It also provides listing venues and cash equities trading venues; and various marketplaces, including multilateral trading facilities for investors, broker-dealers, and other market participants to meet directly to buy and sell cash equities, fixed income securities, and exchange traded products. In addition, the company offers options contracts based on the blue-chip equities listed on Euronext; commodity derivatives, such as milling wheat futures contracts; and post-trade services, as well as distributes and sells real-time, historic, and reference data to data vendors, and financial institutions and individual investors. Further, it provides equity, debts, funds, and exchange traded funds listing services, as well as investors, foreign exchange trading, and advanced data services. Additionally, the company offers technology solutions and services to exchanges and venue operators; software support and maintenance services for the legacy trading platforms; software licensing services; trading software in the form of managed services; network connectivity and server colocation services to market participants; information technology hosting services to third-party market operators; connection services; and other services. The company was formerly known as Euronext Group N.V. and changed its name to Euronext N.V. in May 2014. Euronext N.V. was founded in 2000 and is headquartered in Amsterdam, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Financial Data & Stock Exchanges",
@@ -203,10 +287,10 @@
         "country": "Netherlands",
         "city": "Amsterdam"
     },
-    "EUXTF": {
+    "ERNXY": {
         "short_name": "EURONEXT",
         "long_name": "Euronext N.V.",
-        "summary": "Euronext N.V., together with its subsidiaries, operates securities and derivatives exchanges in Continental Europe, Ireland, and Norway. The company offers a range of exchange and corporate services, including security listings, cash and derivatives trading, and market data dissemination. It also provides listing venues and cash equities trading venues; and various marketplaces, including multilateral trading facilities for investors, broker-dealers, and other market participants to meet directly to buy and sell cash equities, fixed income securities, and exchange traded products. In addition, the company offers options contracts based on the blue-chip equities listed on Euronext; commodity derivatives, such as milling wheat futures contracts; and post-trade services, as well as distributes and sells real-time, historic, and reference data to data vendors, and financial institutions and individual investors. Further, it provides equity, debts, funds, and exchange traded funds listing services; and investors, foreign exchange trading, and advanced data services. Additionally, the company offers technology solutions and services to exchanges and venue operators; software support and maintenance services for the legacy trading platforms; software licensing services; trading software in the form of managed services; network connectivity and server colocation services to market participants; information technology hosting services to third-party market operators; connection services; and other services. The company was formerly known as Euronext Group N.V. and changed its name to Euronext N.V. in May 2014. Euronext N.V. was founded in 2000 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "Euronext N.V., together with its subsidiaries, operates securities and derivatives exchanges in Continental Europe, Ireland, and Norway. The company offers a range of exchange and corporate services, including security listings, cash and derivatives trading, and market data dissemination. It also provides listing venues and cash equities trading venues; and various marketplaces, including multilateral trading facilities for investors, broker-dealers, and other market participants to meet directly to buy and sell cash equities, fixed income securities, and exchange traded products. In addition, the company offers options contracts based on the blue-chip equities listed on Euronext; commodity derivatives, such as milling wheat futures contracts; and post-trade services, as well as distributes and sells real-time, historic, and reference data to data vendors, and financial institutions and individual investors. Further, it provides equity, debts, funds, and exchange traded funds listing services, as well as investors, foreign exchange trading, and advanced data services. Additionally, the company offers technology solutions and services to exchanges and venue operators; software support and maintenance services for the legacy trading platforms; software licensing services; trading software in the form of managed services; network connectivity and server colocation services to market participants; information technology hosting services to third-party market operators; connection services; and other services. The company was formerly known as Euronext Group N.V. and changed its name to Euronext N.V. in May 2014. Euronext N.V. was founded in 2000 and is headquartered in Amsterdam, the Netherlands.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Financial Data & Stock Exchanges",
@@ -215,10 +299,46 @@
         "country": "Netherlands",
         "city": "Amsterdam"
     },
+    "ESG.AS": {
+        "short_name": "ESG CORE INVEST",
+        "long_name": "ESG Core Investments B.V.",
+        "summary": "ESG Core Investments B.V., a special purpose acquisition company, intends to effect a merger, share exchange, share purchase, contribution in kind, asset acquisition, or related business combination to acquire majority stake in a business. The company was incorporated in 2021 and is based in Enschede, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Shell Companies",
+        "exchange": "AMS",
+        "market": "nl_market",
+        "country": "Netherlands",
+        "city": "Enschede"
+    },
+    "EUXTF": {
+        "short_name": "EURONEXT",
+        "long_name": "Euronext N.V.",
+        "summary": "Euronext N.V., together with its subsidiaries, operates securities and derivatives exchanges in Continental Europe, Ireland, and Norway. The company offers a range of exchange and corporate services, including security listings, cash and derivatives trading, and market data dissemination. It also provides listing venues and cash equities trading venues; and various marketplaces, including multilateral trading facilities for investors, broker-dealers, and other market participants to meet directly to buy and sell cash equities, fixed income securities, and exchange traded products. In addition, the company offers options contracts based on the blue-chip equities listed on Euronext; commodity derivatives, such as milling wheat futures contracts; and post-trade services, as well as distributes and sells real-time, historic, and reference data to data vendors, and financial institutions and individual investors. Further, it provides equity, debts, funds, and exchange traded funds listing services, as well as investors, foreign exchange trading, and advanced data services. Additionally, the company offers technology solutions and services to exchanges and venue operators; software support and maintenance services for the legacy trading platforms; software licensing services; trading software in the form of managed services; network connectivity and server colocation services to market participants; information technology hosting services to third-party market operators; connection services; and other services. The company was formerly known as Euronext Group N.V. and changed its name to Euronext N.V. in May 2014. Euronext N.V. was founded in 2000 and is headquartered in Amsterdam, the Netherlands.",
+        "currency": "USD",
+        "sector": "Financial Services",
+        "industry": "Financial Data & Stock Exchanges",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Netherlands",
+        "city": "Amsterdam"
+    },
+    "FLOW.AS": {
+        "short_name": "FLOW TRADERS",
+        "long_name": "Flow Traders N.V.",
+        "summary": "Flow Traders N.V. operates as a financial technology-enabled liquidity provider in financial products in Europe, the Americas, and Asia. The company uses its proprietary technology platform to quote bid and ask prices in thousands of exchange traded products (ETP), as well as related financial products. It also provides liquidity in ETPs off-exchange to institutional counterparties, including banks, asset managers, pension funds, insurance companies, family offices, hedge funds, and others. The company was founded in 2004 and is headquartered in Amsterdam, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "AMS",
+        "market": "nl_market",
+        "country": "Netherlands",
+        "city": "Amsterdam"
+    },
     "FLTDF": {
         "short_name": "FLOW TRADERS NV",
         "long_name": "Flow Traders N.V.",
-        "summary": "Flow Traders N.V. operates as a financial technology-enabled liquidity provider in financial products in Europe, the Americas, and Asia. The company uses its proprietary technology platform to quote bid and ask prices in thousands of exchange traded products (ETP), as well as similar financial products. It also provides liquidity in ETPs off-exchange to institutional counterparties, including banks, asset managers, pension funds, insurance companies, family offices, hedge funds, and others. The company was founded in 2004 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "Flow Traders N.V. operates as a financial technology-enabled liquidity provider in financial products in Europe, the Americas, and Asia. The company uses its proprietary technology platform to quote bid and ask prices in thousands of exchange traded products (ETP), as well as related financial products. It also provides liquidity in ETPs off-exchange to institutional counterparties, including banks, asset managers, pension funds, insurance companies, family offices, hedge funds, and others. The company was founded in 2004 and is headquartered in Amsterdam, the Netherlands.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Capital Markets",
@@ -227,10 +347,34 @@
         "country": "Netherlands",
         "city": "Amsterdam"
     },
+    "IEX.AS": {
+        "short_name": "IEX GROUP NV",
+        "long_name": "IEX Group N.V.",
+        "summary": "IEX Group N.V., through its subsidiaries, operates financial websites in the Netherlands and Belgium. It operates Belegger.nl, DeBeurs.nl, Beursonline.nl, Participaties.nl, Guruwatch, and IEX.nl websites. The company also provides investment information and investment advisory services. In addition, it offers magazine for various investors; and organizes various events for private individuals and professionals. The company was founded in 1999 and is based in Amsterdam, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "AMS",
+        "market": "nl_market",
+        "country": "Netherlands",
+        "city": "Amsterdam"
+    },
+    "ING.BA": {
+        "short_name": "ING GROEP N.V.",
+        "long_name": "ING Groep N.V.",
+        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides range products and services that covers payment, saving, insurance, investment, and secured and unsecured lending. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1762 and is headquartered in Amsterdam, the Netherlands.",
+        "currency": "ARS",
+        "sector": "Financial Services",
+        "industry": "Banks - Diversified",
+        "exchange": "BUE",
+        "market": "ar_market",
+        "country": "Netherlands",
+        "city": "Amsterdam"
+    },
     "ING": {
         "short_name": "ING Group, N.V.",
         "long_name": "ING Groep N.V.",
-        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides mortgage, payment, savings, investment, secured and unsecured lending, and insurance products and services. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1991 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides range products and services that covers payment, saving, insurance, investment, and secured and unsecured lending. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1762 and is headquartered in Amsterdam, the Netherlands.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
@@ -242,7 +386,7 @@
     "INGA.AS": {
         "short_name": "ING GROEP N.V.",
         "long_name": "ING Groep N.V.",
-        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides mortgage, payment, savings, investment, secured and unsecured lending, and insurance products and services. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1991 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides range products and services that covers payment, saving, insurance, investment, and secured and unsecured lending. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1762 and is headquartered in Amsterdam, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
@@ -254,7 +398,7 @@
     "INGA.VI": {
         "short_name": "ING GROEP NV",
         "long_name": "ING Groep N.V.",
-        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides mortgage, payment, savings, investment, secured and unsecured lending, and insurance products and services. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1991 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides range products and services that covers payment, saving, insurance, investment, and secured and unsecured lending. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1762 and is headquartered in Amsterdam, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
@@ -266,7 +410,7 @@
     "INGN.MX": {
         "short_name": "ING GROEP N.V.",
         "long_name": "ING Groep N.V.",
-        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides mortgage, payment, savings, investment, secured and unsecured lending, and insurance products and services. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1991 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides range products and services that covers payment, saving, insurance, investment, and secured and unsecured lending. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1762 and is headquartered in Amsterdam, the Netherlands.",
         "currency": "MXN",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
@@ -278,7 +422,7 @@
     "INGVF": {
         "short_name": "ING GROEP N.V.",
         "long_name": "ING Groep N.V.",
-        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides mortgage, payment, savings, investment, secured and unsecured lending, and insurance products and services. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1991 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides range products and services that covers payment, saving, insurance, investment, and secured and unsecured lending. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1762 and is headquartered in Amsterdam, the Netherlands.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
@@ -290,7 +434,7 @@
     "INN1.DE": {
         "short_name": "ING GROEP NV  EO -,01",
         "long_name": "ING Groep N.V.",
-        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides mortgage, payment, savings, investment, secured and unsecured lending, and insurance products and services. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1991 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides range products and services that covers payment, saving, insurance, investment, and secured and unsecured lending. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1762 and is headquartered in Amsterdam, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
@@ -299,27 +443,39 @@
         "country": "Netherlands",
         "city": "Amsterdam"
     },
-    "INNA.DE": {
-        "short_name": "ING GP NV SP.ADR/1 EO-,24",
+    "INN1.F": {
+        "short_name": "ING GROEP NV  EO -,01",
         "long_name": "ING Groep N.V.",
-        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides mortgage, payment, savings, investment, secured and unsecured lending, and insurance products and services. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1991 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides range products and services that covers payment, saving, insurance, investment, and secured and unsecured lending. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1762 and is headquartered in Amsterdam, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
-        "exchange": "GER",
-        "market": "de_market",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "Netherlands",
         "city": "Amsterdam"
     },
     "INNA.F": {
         "short_name": "ING GP NV SP.ADR/1 EO-,24",
         "long_name": "ING Groep N.V.",
-        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides mortgage, payment, savings, investment, secured and unsecured lending, and insurance products and services. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1991 and is headquartered in Amsterdam, the Netherlands.",
+        "summary": "ING Groep N.V., a financial institution, provides various banking products and services to individuals, small and medium-sized enterprises, and mid-corporates. It operates in Retail Netherlands, Retail Belgium, Retail Germany, Retail Other, and Wholesale Banking segments. The company accepts various deposits, such as current and savings accounts; and offers business lending products, as well as consumer lending products, such as residential mortgage loans, term loans, and revolver and personal loans. It also provides range products and services that covers payment, saving, insurance, investment, and secured and unsecured lending. In addition, the company offers specialized lending, corporate finance, and debt and equity markets solutions, as well as working capital, cash management, and trade and treasury services; and financial market, trade finance, and overdraft services. The company operates in the Netherlands, Belgium, North America, Latin America, Asia, Australia, and rest of Europe. ING Groep N.V. was founded in 1762 and is headquartered in Amsterdam, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Banks - Diversified",
         "exchange": "FRA",
         "market": "dr_market",
+        "country": "Netherlands",
+        "city": "Amsterdam"
+    },
+    "INTER.AS": {
+        "short_name": "INTERTRUST",
+        "long_name": "Intertrust N.V.",
+        "summary": "Intertrust N.V. provides corporate, fund, capital market, and private wealth services in Western Europe, the Americas, and internationally. The company offers formation and implementation; domiciliation, management, and trustee; legal and tax compliance; regulatory and compliance; accounting and reporting services; and liquidation services. It also provides corporate secretarial, escrow, performance and reward management, process agent, and treasury management services, as well as payroll services. In addition, the company offers depositary, ManCo, outsourced fiduciary, and fund administration services. Further, it provides agency, corporate administration, investor reporting, listing, portfolio administration, and process agency services; and business succession, family governance, philanthropy and charitable trust, real estate, and treasury and investment services. It serves multinational corporations, financial institutions, real estate and private equity funds, ultra-high net worth individuals, and family offices. Intertrust N.V. was founded in 1952 and is headquartered in Amsterdam, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "AMS",
+        "market": "nl_market",
         "country": "Netherlands",
         "city": "Amsterdam"
     },
@@ -335,22 +491,34 @@
         "country": "Netherlands",
         "city": "Aardenburg"
     },
-    "NIBC.AS": {
-        "short_name": "NIBC HOLDING",
-        "long_name": "NIBC Holding N.V.",
-        "summary": "NIBC Holding N.V. provides corporate and retail banking products and services in the Netherlands, Germany, Belgium, the United Kingdom, and the Nordics. It operates through Corporate Client Offering, Retail Client Offering, and Treasury and Group Functions segments. The company offers merger and acquisition advisory services; equity sales and trading; debt and equity advisory services; leveraged and receivables finances; corporate lending; asset and cash flow finance; and project equity services. The company also offers mezzanine and equity solutions; and equities research, fixed income, and debt and equity capital market services. In addition, it provides mortgages; and savings products, as well as brokerage services under the NIBC Direct label. The company serves corporate clients, financial institutions, institutional investors, financial sponsors, family offices, entrepreneurial investors, and retail clients. NIBC Holding N.V. was founded in 1945 and is headquartered in The Hague, the Netherlands. As of December 21, 2020, NIBC Holding N.V. operates as a subsidiary of The Blackstone Group International Partners LLP.",
+    "NN.AS": {
+        "short_name": "NN GROUP",
+        "long_name": "NN Group N.V.",
+        "summary": "NN Group N.V., a financial services company, primarily provides life insurance products in the Netherlands, rest of Europe, the United States, the United Kingdom, Asia, and internationally. The company operates through Netherlands Life, Netherlands Non-life, Insurance Europe, Japan Life, Asset Management, Banking, and Other segments. It offers group and individual life insurance, and pension products; non-life insurance products, including motor, fire, liability, transport, travel, and disability and accident insurance; health insurance products; corporate-owned life insurance products; and single premium variable annuity individual life insurance products. The company also provides various asset management products; advisory services; banking services, including mortgage loans, savings products, bank annuities, consumer lending, and retail investment products, as well as payment services; mortgage administration and management services; reinsurance services; and retirement products and services. It offers its products to individuals, small and medium-sized enterprises, large corporations, retail customers, and institutional customers directly, as well as through agents, securities houses, and banks. The company was formerly known as ING Insurance Topholding N.V. and changed its name to NN Group N.V. in March 2014. NN Group N.V. was incorporated in 2011 and is headquartered in The Hague, the Netherlands.",
         "currency": "EUR",
         "sector": "Financial Services",
-        "industry": "Banks - Regional",
+        "industry": "Insurance - Diversified",
         "exchange": "AMS",
         "market": "nl_market",
+        "country": "Netherlands",
+        "city": "The Hague"
+    },
+    "NN.VI": {
+        "short_name": "NN GROUP",
+        "long_name": "NN Group N.V.",
+        "summary": "NN Group N.V., a financial services company, primarily provides life insurance products in the Netherlands, rest of Europe, the United States, the United Kingdom, Asia, and internationally. The company operates through Netherlands Life, Netherlands Non-life, Insurance Europe, Japan Life, Asset Management, Banking, and Other segments. It offers group and individual life insurance, and pension products; non-life insurance products, including motor, fire, liability, transport, travel, and disability and accident insurance; health insurance products; corporate-owned life insurance products; and single premium variable annuity individual life insurance products. The company also provides various asset management products; advisory services; banking services, including mortgage loans, savings products, bank annuities, consumer lending, and retail investment products, as well as payment services; mortgage administration and management services; reinsurance services; and retirement products and services. It offers its products to individuals, small and medium-sized enterprises, large corporations, retail customers, and institutional customers directly, as well as through agents, securities houses, and banks. The company was formerly known as ING Insurance Topholding N.V. and changed its name to NN Group N.V. in March 2014. NN Group N.V. was incorporated in 2011 and is headquartered in The Hague, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Insurance - Diversified",
+        "exchange": "VIE",
+        "market": "at_market",
         "country": "Netherlands",
         "city": "The Hague"
     },
     "NNGPF": {
         "short_name": "NN GROUP N.V.",
         "long_name": "NN Group N.V.",
-        "summary": "NN Group N.V., a financial services company, primarily provides life insurance products in the Netherlands, rest of Europe, the United States, and Asia. The company operates through seven segments: Netherlands Life, Netherlands Non-life, Insurance Europe, Japan Life, Asset Management, Banking, and Other. It offers group and individual life insurance, and pension products; non-life insurance products, including motor, fire, liability, transport, travel, and disability and accident insurance; health insurance products; corporate-owned life insurance products; and single premium variable annuity individual life insurance products. The company also provides various asset management products; advisory services; banking services, including mortgage loans, savings products, bank annuities, consumer lending, and retail investment products; mortgage administration and management services; and reinsurance services; and retirement products and services. It offers its products to individuals, small and medium-sized enterprises, large corporations, retail customers, and institutional customers directly, as well as through agents, securities houses, and banks. The company was formerly known as ING Insurance Topholding N.V. and changed its name to NN Group N.V. in March 2014 as a result of its merger with ING Verzekeringen N.V. NN Group N.V. was incorporated in 2011 and is headquartered in The Hague, the Netherlands.",
+        "summary": "NN Group N.V., a financial services company, primarily provides life insurance products in the Netherlands, rest of Europe, the United States, the United Kingdom, Asia, and internationally. The company operates through Netherlands Life, Netherlands Non-life, Insurance Europe, Japan Life, Asset Management, Banking, and Other segments. It offers group and individual life insurance, and pension products; non-life insurance products, including motor, fire, liability, transport, travel, and disability and accident insurance; health insurance products; corporate-owned life insurance products; and single premium variable annuity individual life insurance products. The company also provides various asset management products; advisory services; banking services, including mortgage loans, savings products, bank annuities, consumer lending, and retail investment products, as well as payment services; mortgage administration and management services; reinsurance services; and retirement products and services. It offers its products to individuals, small and medium-sized enterprises, large corporations, retail customers, and institutional customers directly, as well as through agents, securities houses, and banks. The company was formerly known as ING Insurance Topholding N.V. and changed its name to NN Group N.V. in March 2014. NN Group N.V. was incorporated in 2011 and is headquartered in The Hague, the Netherlands.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Insurance - Diversified",
@@ -362,7 +530,7 @@
     "NNGRY": {
         "short_name": "NN GROUP N.V.",
         "long_name": "NN Group N.V.",
-        "summary": "NN Group N.V., a financial services company, primarily provides life insurance products in the Netherlands, rest of Europe, the United States, and Asia. The company operates through seven segments: Netherlands Life, Netherlands Non-life, Insurance Europe, Japan Life, Asset Management, Banking, and Other. It offers group and individual life insurance, and pension products; non-life insurance products, including motor, fire, liability, transport, travel, and disability and accident insurance; health insurance products; corporate-owned life insurance products; and single premium variable annuity individual life insurance products. The company also provides various asset management products; advisory services; banking services, including mortgage loans, savings products, bank annuities, consumer lending, and retail investment products; mortgage administration and management services; and reinsurance services; and retirement products and services. It offers its products to individuals, small and medium-sized enterprises, large corporations, retail customers, and institutional customers directly, as well as through agents, securities houses, and banks. The company was formerly known as ING Insurance Topholding N.V. and changed its name to NN Group N.V. in March 2014 as a result of its merger with ING Verzekeringen N.V. NN Group N.V. was incorporated in 2011 and is headquartered in The Hague, the Netherlands.",
+        "summary": "NN Group N.V., a financial services company, primarily provides life insurance products in the Netherlands, rest of Europe, the United States, the United Kingdom, Asia, and internationally. The company operates through Netherlands Life, Netherlands Non-life, Insurance Europe, Japan Life, Asset Management, Banking, and Other segments. It offers group and individual life insurance, and pension products; non-life insurance products, including motor, fire, liability, transport, travel, and disability and accident insurance; health insurance products; corporate-owned life insurance products; and single premium variable annuity individual life insurance products. The company also provides various asset management products; advisory services; banking services, including mortgage loans, savings products, bank annuities, consumer lending, and retail investment products, as well as payment services; mortgage administration and management services; reinsurance services; and retirement products and services. It offers its products to individuals, small and medium-sized enterprises, large corporations, retail customers, and institutional customers directly, as well as through agents, securities houses, and banks. The company was formerly known as ING Insurance Topholding N.V. and changed its name to NN Group N.V. in March 2014. NN Group N.V. was incorporated in 2011 and is headquartered in The Hague, the Netherlands.",
         "currency": "USD",
         "sector": "Financial Services",
         "industry": "Insurance - Diversified",
@@ -372,9 +540,9 @@
         "city": "The Hague"
     },
     "NUQA.F": {
-        "short_name": "NAVIGATOR EQ.SOLUT.EO-,20",
-        "long_name": "Navigator Equity Solutions SE",
-        "summary": "Navigator Equity Solutions SE is a public investment firm specializing in direct investments in restructuring of non-listed, medium sized firms that are facing special situations. The firm focuses on the acquisition of majority holdings in privately-owned and small and medium-sized firms. Within special situations, the firm seeks to invest in unresolved business successions, turnarounds, restructuring, reorganizations of firms near insolvency, unsolved company's transmissions, management buy outs, management buy-ins and corporate spin-offs. It typically invests in all sectors. The firm targets the European region. The firm invests up to \u00c2\u00805 million ($6.63 million) in equity. It typically takes up to a 100 percent stake. The firm also provides investment banking and consultancy services through its subsidiaries. Navigator Equity Solutions SE was founded in 2004 and is headquartered in Eindhoven, Netherlands with an additional office in Munich, Germany.",
+        "short_name": "NAVSTONE SE  EO-,20",
+        "long_name": "Navstone SE",
+        "summary": "Navstone SE is a public investment firm specializing in direct investments in restructuring of non-listed, medium sized firms that are facing special situations. The firm focuses on the acquisition of majority holdings in privately-owned and small and medium-sized firms. Within special situations, the firm seeks to invest in unresolved business successions, turnarounds, restructuring, reorganizations of firms near insolvency, unsolved company's transmissions, management buy outs, management buy-ins and corporate spin-offs. It typically invests in all sectors. The firm targets the European region. The firm invests up to \u00c2\u00805 million ($6.63 million) in equity. It typically takes up to a 100 percent stake. The firm also provides investment banking and consultancy services through its subsidiaries. The company was formerly known as Navigator Equity Solutions SE. Navstone SE was founded in 2004 and is headquartered in Eindhoven, Netherlands with an additional office in Munich, Germany.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -385,8 +553,8 @@
     },
     "NUQA.SG": {
         "short_name": "NAVIGATOR Equity Solutions SE A",
-        "long_name": "Navigator Equity Solutions SE",
-        "summary": "Navigator Equity Solutions SE is a public investment firm specializing in direct investments in restructuring of non-listed, medium sized firms that are facing special situations. The firm focuses on the acquisition of majority holdings in privately-owned and small and medium-sized firms. Within special situations, the firm seeks to invest in unresolved business successions, turnarounds, restructuring, reorganizations of firms near insolvency, unsolved company's transmissions, management buy outs, management buy-ins and corporate spin-offs. It typically invests in all sectors. The firm targets the European region. The firm invests up to \u00c2\u00805 million ($6.63 million) in equity. It typically takes up to a 100 percent stake. The firm also provides investment banking and consultancy services through its subsidiaries. Navigator Equity Solutions SE was founded in 2004 and is headquartered in Eindhoven, Netherlands with an additional office in Munich, Germany.",
+        "long_name": "Navstone SE",
+        "summary": "Navstone SE is a public investment firm specializing in direct investments in restructuring of non-listed, medium sized firms that are facing special situations. The firm focuses on the acquisition of majority holdings in privately-owned and small and medium-sized firms. Within special situations, the firm seeks to invest in unresolved business successions, turnarounds, restructuring, reorganizations of firms near insolvency, unsolved company's transmissions, management buy outs, management buy-ins and corporate spin-offs. It typically invests in all sectors. The firm targets the European region. The firm invests up to \u00c2\u00805 million ($6.63 million) in equity. It typically takes up to a 100 percent stake. The firm also provides investment banking and consultancy services through its subsidiaries. The company was formerly known as Navigator Equity Solutions SE. Navstone SE was founded in 2004 and is headquartered in Eindhoven, Netherlands with an additional office in Munich, Germany.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -394,6 +562,18 @@
         "market": "dr_market",
         "country": "Netherlands",
         "city": "Waalre"
+    },
+    "PACEU.AS": {
+        "short_name": "PEGASUS UNITS",
+        "long_name": "Pegasus Acquisition Company Europe B.V.",
+        "summary": "Pegasus Acquisition Company Europe B.V. focuses on identifying and completing a business combination in a sub-sector of the European financial services sector. The company is based in Amsterdam, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Shell Companies",
+        "exchange": "AMS",
+        "market": "nl_market",
+        "country": "Netherlands",
+        "city": "Amsterdam"
     },
     "PREVA.AS": {
         "short_name": "VALUE8 CUM PREF",
@@ -442,6 +622,18 @@
         "market": "dr_market",
         "country": "Netherlands",
         "city": "\u00e2\u0080\u0098s-Hertogenbosch"
+    },
+    "VALUE.AS": {
+        "short_name": "VALUE8",
+        "long_name": "Value8 N.V.",
+        "summary": "Value8 N.V. is a private equity firm specializing in growth capital investments in small and medium-sized companies. The firm primarily invests in the food, healthcare, business and financial services, energy, safety and security, water and environment, leisure, luxury products and internet sectors. It typically invests in Western Europe, primarily in the Netherlands, Belgium and France. The firm considers investments in companies with an enterprise value between \u00c2\u00805 million ($6.96 million) and \u00c2\u0080150 million ($208.87 million). The firm prefers to take a seat on the board of directors and seeks to exit the investment through a public listing. Value8 NV was founded in 2008 and is headquartered in Bussum, the Netherlands.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "AMS",
+        "market": "nl_market",
+        "country": "Netherlands",
+        "city": "Bussum"
     },
     "VLK.AS": {
         "short_name": "V LANSCHOT KEMPEN",

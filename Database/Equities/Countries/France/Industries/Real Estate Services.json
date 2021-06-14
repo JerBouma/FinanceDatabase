@@ -1,4 +1,28 @@
 {
+    "ALADO.PA": {
+        "short_name": "ADOMOS",
+        "long_name": "Adomos S.A.",
+        "summary": "Adomos S.A. distributes investment real estate assets through the Internet in France. It offers real estate investment services, such as conducting property studies, selecting real estate programs, issuing loan offers, handling administrative duties, leasing management, rate guarantee services, etc. The company also publishes real estate ads in free publications and on the Internet. Adomos S.A. was founded in 1999 and is based in Paris, France.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "PAR",
+        "market": "fr_market",
+        "country": "France",
+        "city": "Paris"
+    },
+    "ALEUA.PA": {
+        "short_name": "EURASIA GROUPE",
+        "long_name": "Eurasia Groupe SA",
+        "summary": "Eurasia Groupe SA owns and manages commercial real estate properties in France. It properties include stores/showrooms, warehouses, and offices. The company is also involved in real estate development activities. It also owns a hotel with 43 rooms. The company was formerly known as BONY SARL. Eurasia Groupe SA was founded in 1993 and is based in Aubervilliers, France.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "PAR",
+        "market": "fr_market",
+        "country": "France",
+        "city": "Aubervilliers"
+    },
     "ALIMO.PA": {
         "short_name": "GROUPIMO",
         "long_name": "Groupimo S.A.",
@@ -49,8 +73,8 @@
     },
     "BERR.PA": {
         "short_name": "FIN.ETANG BERRE",
-        "long_name": "Financiere et Immobiliere de l'Etang de Berre et de la Mediterranee S.A.",
-        "summary": "Financiere et Immobiliere de l'Etang de Berre et de la Mediterranee S.A. engages in the development and commercialization of real estate properties in France. It also rents caravan. The company is headquartered in Carry-le-Rouet, France.",
+        "long_name": "Financiere et Immobiliere de l'Etang de Berre et de la Mediterranee Soci\u00e9t\u00e9 anonyme",
+        "summary": "Financiere et Immobiliere de l'Etang de Berre et de la Mediterranee Soci\u00c3\u00a9t\u00c3\u00a9 anonyme engages in the caravanning, and parking and restaurant rental businesses. The company is headquartered in Carry-le-Rouet, France.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -95,10 +119,22 @@
         "country": "France",
         "city": "Toulouse"
     },
+    "CROS.PA": {
+        "short_name": "CROSSWOOD",
+        "long_name": "Crosswood SA",
+        "summary": "Crosswood SA holds and manages commercial real estate assets in France. Its property portfolio includes shops and offices, and housing properties. The company was formerly known as Desquenne et Giral. Crosswood SA was incorporated in 1935 and is based in Paris, France. Crosswood SA is a subsidiary of Compagnie Financi\u00c3\u00a8re de Broc\u00c3\u00a9liande.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "Real Estate Services",
+        "exchange": "PAR",
+        "market": "fr_market",
+        "country": "France",
+        "city": "Paris"
+    },
     "EBPF.PA": {
         "short_name": "FIN.ETANG BERRE PF",
-        "long_name": "Financiere et Immobiliere de l'Etang de Berre et de la Mediterranee S.A.",
-        "summary": "Financiere et Immobiliere de l'Etang de Berre et de la Mediterranee S.A. engages in the development and commercialization of real estate properties in France. It also rents caravan. The company is headquartered in Carry-le-Rouet, France.",
+        "long_name": "Financiere et Immobiliere de l'Etang de Berre et de la Mediterranee Soci\u00e9t\u00e9 anonyme",
+        "summary": "Financiere et Immobiliere de l'Etang de Berre et de la Mediterranee Soci\u00c3\u00a9t\u00c3\u00a9 anonyme engages in the caravanning, and parking and restaurant rental businesses. The company is headquartered in Carry-le-Rouet, France.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -179,17 +215,17 @@
         "country": "France",
         "city": "Thyez"
     },
-    "MLPRI.PA": {
-        "short_name": "PROP.IMMEUBLES",
-        "long_name": "Societe Nationale de Propriete d'Immeubles",
-        "summary": "Societe Nationale de Propriete d'Immeubles operates as a real estate company in France. It invests in mixed-use buildings, offices, and business premises in the Rh\u00c3\u00b4ne-Alpes region. The company is based in Lyon, France.",
+    "MLIPP.PA": {
+        "short_name": "IMM.PARIS.PERLE",
+        "long_name": "Societe Anonyme Immobilier Parisienne De La Perle Et Des Pierres Precieuses",
+        "summary": "Societe Anonyme Immobilier Parisienne De La Perle Et Des Pierres Precieuses manages real estate assets. It manages a property located in Paris, France and a building located in Lima, Peru. The company is based in Paris, France.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Lyon"
+        "city": "Paris"
     },
     "MLVIN.PA": {
         "short_name": "FONCIERE VINDI",
@@ -206,7 +242,7 @@
     "ORIA.PA": {
         "short_name": "FIDUCIAL REAL EST.",
         "long_name": "Fiducial Real Estate SA",
-        "summary": "Fiducial Real Estate SA operates real estate properties in France. As of September 30, 2019, it operated a portfolio of office, activity, and apartment buildings covering 331,540 square meters. The company is headquartered in Courbevoie, France.",
+        "summary": "Fiducial Real Estate SA operates and manages real estate properties in France. As of September 30, 2020, it operated a portfolio of office, activity, and apartment buildings covering 337,793 square meters. The company is headquartered in Courbevoie, France.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "Real Estate Services",
@@ -214,18 +250,6 @@
         "market": "fr_market",
         "country": "France",
         "city": "Courbevoie"
-    },
-    "SFBS.PA": {
-        "short_name": "SOFIBUS PATRIMOINE",
-        "long_name": "Sofibus Patrimoine S.A.",
-        "summary": "Sofibus Patrimoine S.A. engages in the real estate rental and leasing business in France. It leases business premises in the Petits Carreaux business park. The company was founded in 1969 and is based in Paris, France.",
-        "currency": "EUR",
-        "sector": "Real Estate",
-        "industry": "Real Estate Services",
-        "exchange": "PAR",
-        "market": "fr_market",
-        "country": "France",
-        "city": "Paris"
     },
     "SPEL.PA": {
         "short_name": "FONCIERE VOLTA",

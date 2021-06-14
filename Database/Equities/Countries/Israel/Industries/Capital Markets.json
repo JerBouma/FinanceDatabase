@@ -38,7 +38,7 @@
     "INBR.TA": {
         "short_name": "INBAR GROUP FIN",
         "long_name": "Inbar Group Finance Ltd",
-        "summary": "Inbar Group Finance Ltd provides proprietary trading and distribution consulting services to public and private companies in Israel and internationally. It trades in share indices; and invests in securities, including shares, corporate and government bonds, and other financial assets, as well as provides consulting and distribution services. The company was formerly known as Itay Financial A.A Investments Ltd and changed its name to Inbar Group Finance Ltd in February 2018. Inbar Group Finance Ltd was founded in 1980 and is based in Tel Aviv, Israel.",
+        "summary": "Inbar Group Finance Ltd provides proprietary trading and distribution consulting services in Israel and internationally. The company trades in share indices; and invests in securities, including shares, corporate and government bonds, and other financial assets, as well as provides consulting and distribution services. It is also involved in the initiation and execution of private loans from various institutional entities and investment funds to a range of public and private companies in various fields. The company was formerly known as Itay Financial A.A Investments Ltd and changed its name to Inbar Group Finance Ltd in February 2018. Inbar Group Finance Ltd was founded in 1980 and is based in Tel Aviv, Israel.",
         "currency": "ILA",
         "sector": "Financial Services",
         "industry": "Capital Markets",
@@ -50,7 +50,7 @@
     "OPAL.TA": {
         "short_name": "OPAL BALANCE INV",
         "long_name": "Opal Balance Investments Ltd",
-        "summary": "Opal Balance Investments Ltd provides various financing solutions in Israel. It offers financing solutions, such as commercial checks discounts, financing and guarantee against credit checks, completion of entrepreneurs equity, forex services, and money transfer services to importers and exporters. The company also provides digital messenger services and terminals. Opal Balance Investments Ltd was founded in 2006 and is based in Ashdod, Israel.",
+        "summary": "Opal Balance Investments Ltd provides various financing solutions in Israel. The company offers financing solutions, such as commercial checks discounts, financing and guarantee against credit checks, completion of entrepreneurs equity, forex services, and money transfer services to importers and exporters. It also provides digital messenger services and terminals. The company was founded in 2006 and is based in Ashdod, Israel.",
         "currency": "ILA",
         "sector": "Financial Services",
         "industry": "Capital Markets",
@@ -58,6 +58,18 @@
         "market": "il_market",
         "country": "Israel",
         "city": "Ashdod"
+    },
+    "P55.F": {
+        "short_name": "PLUS500 LTD.  LS -,01",
+        "long_name": "Plus500 Ltd.",
+        "summary": "Plus500 Ltd. develops and operates an online and mobile trading platform for individual customers to trade contracts for difference (CFDs). The company's online trading and mobile platform allows its customers to trade CFDs on approximately 2,500 underlying financial instruments, including equities, indices, commodities, options, exchange-traded funds, cryptocurrencies, shares, and foreign exchange in approximately 50 countries in 32 languages. Its trading platform is accessible from various operating systems, such as Windows, iOS, Android, and Surface, as well as web browsers. The company was formerly known as Investsoft Ltd. and changed its name to Plus500 Ltd. in June 2012. Plus500 Ltd. was incorporated in 2008 and is headquartered in Haifa, Israel.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Israel",
+        "city": "Haifa"
     },
     "PIU.TA": {
         "short_name": "POALIM I.B.I",
@@ -70,5 +82,29 @@
         "market": "il_market",
         "country": "Israel",
         "city": "Tel Aviv"
+    },
+    "PLUS.L": {
+        "short_name": "PLUS500 LTD ORD ILS0.01 (DI)",
+        "long_name": "Plus500 Ltd.",
+        "summary": "Plus500 Ltd. develops and operates an online and mobile trading platform for individual customers to trade contracts for difference (CFDs). The company's online trading and mobile platform allows its customers to trade CFDs on approximately 2,500 underlying financial instruments, including equities, indices, commodities, options, exchange-traded funds, cryptocurrencies, shares, and foreign exchange in approximately 50 countries in 32 languages. Its trading platform is accessible from various operating systems, such as Windows, iOS, Android, and Surface, as well as web browsers. The company was formerly known as Investsoft Ltd. and changed its name to Plus500 Ltd. in June 2012. Plus500 Ltd. was incorporated in 2008 and is headquartered in Haifa, Israel.",
+        "currency": "GBp",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "Israel",
+        "city": "Haifa"
+    },
+    "VALU.TA": {
+        "short_name": "VALUE CAPITAL ONE",
+        "long_name": "Value Capital One Ltd",
+        "summary": "Value Capital One Ltd provides check discounting services to small and medium-sized businesses in Israel. The company was formerly known as P.L.T. Financial Services Ltd and changed its name to Value Capital One Ltd in August 2020. Value Capital One Ltd was founded in 1960 and is based in Herzliya, Israel.",
+        "currency": "ILA",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "city": "Herzliya"
     }
 }

@@ -19,6 +19,36 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "GOAU": {
+        "short_name": "US Global GO Gold and Precious ",
+        "long_name": "U.S. Global GO GOLD and Precious Metal Miners ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance, before fees and expenses, of the U.S. Global Go Gold and Precious Metal Miners Index.\n Under normal circumstances, at least 80 percent of the fund&#39;s total assets (exclusive of any collateral held from securities lending) will be invested in the component securities of the index and depositary receipts representing component securities. The index is composed of the exchange-listed common stock (or American Depositary Receipts (\"ADRs\")) of U.S. and international (including emerging markets) companies that earn at least 50 percent of their aggregate revenue from precious metals. The fund is non-diversified.",
+        "category": "Equity Precious Metals",
+        "family": "U.S. Global Investors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "GOEX": {
+        "short_name": "Global X Gold Explorers ETF",
+        "long_name": "Global X Gold Explorers ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the Solactive Global Gold Explorers & Developers Total Return Index.\n The fund invests at least 80% of its total assets in the securities of the index and in American Depositary Receipts and Global Depositary Receipts based on the securities in the underlying index. The underlying index is a free float-adjusted, liquidity-tested and market capitalization-weighted index that is designed to measure broad-based equity market performance of global companies involved in gold exploration. It is non-diversified.",
+        "category": "Equity Precious Metals",
+        "family": "Global X Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "JGLD": {
+        "short_name": "Amplify Pure Junior Gold Miners",
+        "long_name": "Amplify Pure Junior Gold Miners ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that generally correspond (before fees and expenses) to the price and yield of the EQM Pure Junior Gold Miners Index.\n The fund will normally invest at least 80% of its total assets in the securities that comprise the index, which primarily include common stocks and/or depositary receipts. The index seeks to provide exposure to global companies engaged in junior and exploratory gold mining. It will not concentrate its investments in securities of issuers in any one industry or group of industries, except to the extent that the index concentrates in an industry or group of industries. The fund is non-diversified.",
+        "category": "Equity Precious Metals",
+        "family": "Amplify ETFs",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "REMX": {
         "short_name": "VanEck Vectors Rare Earth Strat",
         "long_name": "VanEck Vectors Rare Earth/Strategic Metals ETF",
@@ -29,14 +59,64 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "RING": {
+        "short_name": "iShares MSCI Global Gold Miners",
+        "long_name": "iShares MSCI Global Gold Miners ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI ACWI Select Gold Miners Investable Market Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index has been developed by MSCI Inc. (the \"index provider\" or \"MSCI\") to target a minimum of 30 companies in developed and emerging markets that are involved in the business of gold mining. The fund is non-diversified.",
+        "category": "Equity Precious Metals",
+        "family": "iShares",
+        "exchange": "NMS",
+        "market": "us_market"
+    },
+    "SGDJ": {
+        "short_name": "Sprott Junior Gold Miners ETF",
+        "long_name": "Sprott Junior Gold Miners ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond (before fees and expenses) to the performance of its underlying index, the Solactive Junior Gold Miners Custom Factor Index.\n The fund will invest at least 90% of its net assets in securities that comprise the underlying index. The underlying index aims to track the performance of \"junior\" gold companies primarily located in the U.S., Canada and Australia whose common stock, American Depositary Receipts (\"ADRs\") or Global Depositary Receipts (\"GDRs\") are traded on a regulated stock exchange in the form of shares tradeable for foreign investors without any restrictions. It is non-diversified.",
+        "category": "Equity Precious Metals",
+        "family": "Sprott",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SGDM": {
+        "short_name": "Sprott Gold Miners ETF",
+        "long_name": "Sprott Gold Miners ETF",
+        "currency": "USD",
+        "summary": "The investment seeks results that correspond (before fees and expenses) to the performance of the Solactive Gold Miners Custom Factors Index.\n The underlying index aims to track the performance of gold companies located in the U.S. and Canada whose common stocks or American Depository Receipts (\"ADRs\") are traded on the Toronto Stock Exchange, the New York Stock Exchange and NASDAQ. The fund will normally invest at least 90% of its net assets in securities that comprise the index. The fund is non-diversified.",
+        "category": "Equity Precious Metals",
+        "family": "Sprott",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SIL": {
+        "short_name": "Global X Silver Miners ETF",
+        "long_name": "Global X Silver Miners ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the Solactive Global Silver Miners Total Return Index.\n The fund invests at least 80% of its total assets in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The underlying index is designed to measure broad-based equity market performance of global companies involved in the silver mining industry. The fund is non-diversified.",
+        "category": "Equity Precious Metals",
+        "family": "Global X Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "SILJ": {
         "short_name": "ETFMG Prime Junior Silver Miner",
         "long_name": "ETFMG Prime Junior Silver Miners ETF",
         "currency": "USD",
-        "summary": "The investment seeks investment results that, before fees and expenses, correspond generally to the price and yield performance of the Prime Junior Silver Miners & Explorers Index.\n The fund invests at least 80% of its total assets in the component securities of the index and in ADRs and GDRs based on the component securities in the index. The index tracks the performance of the equity securities (or corresponding American Depositary Receipts (\"ADRs\") or Global Depositary Receipts (\"GDRs\")) of small-capitalization companies actively engaged in silver refining, mining, or exploration (\"Junior Silver Companies\"). The fund is non-diversified.",
+        "summary": "The investment seeks investment results that, before fees and expenses, correspond generally to thetotal return performance of the Prime Junior Silver Miners & Explorers Index.\n The index tracks the performance of the equity securities (or corresponding American Depositary Receipts (\"ADRs\") or Global Depositary Receipts (\"GDRs\")) of small-capitalization companies actively engaged in silver refining, mining, or exploration (\"Junior Silver Companies\"). The fund invests at least 80% of its total assets in the component securities of the index and in ADRs and GDRs based on the component securities in the index. The fund is non-diversified.",
         "category": "Equity Precious Metals",
         "family": "ETFMG",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "SLVP": {
+        "short_name": "iShares MSCI Global Silver Mine",
+        "long_name": "iShares MSCI Global Silver and Metals Miners ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI ACWI Select Silver Miners Investable Market Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index has been developed by MSCI Inc. (the \"index provider\" or \"MSCI\") to focus on approximately 25 companies in developed and emerging markets that are involved in silver mining or exploration. The fund is non-diversified.",
+        "category": "Equity Precious Metals",
+        "family": "iShares",
+        "exchange": "BTS",
         "market": "us_market"
     }
 }

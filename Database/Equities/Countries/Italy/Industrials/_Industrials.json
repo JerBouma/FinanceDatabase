@@ -1,16 +1,4 @@
 {
-    "12M.F": {
-        "short_name": "I.M.A.IND.MACCH.AUTOM.SPA",
-        "long_name": "I.M.A. Industria Macchine Automatiche S.p.A.",
-        "summary": "I.M.A. Industria Macchine Automatiche S.p.A. designs, manufactures, and sells automatic machines for the processing and packaging of pharmaceuticals, cosmetics, tea, coffee, tobacco, and other food products worldwide. Its Tea, Food & Other segment offers machines for the packaging of tea and herbal teas in filter bags, and the packaging of coffee in pods; end-of-line machines; machines and automatic lines for the manufacturing of electric motors and rotors; machines for containers and sticks, and ultraclean closures and wrappers, as well as forming, filling, and sealing; cartoning machines and systems; machines and plants for the dosing and packaging of cheese portions and stock cubes; and machines and systems for horizontal flowpack and fold packaging. This segment also provides machines and lines for food and non-food packaging; machines for the production of wet wipes; machines for the filling and packaging of single-serve coffee capsules; refurbished second-hand machines for processed cheese, and tea and herbs in filter bags; machines for the assembly of plastic material in the caps and closures sector, as well as medical products for self-medication; and machines for the packaging and management of tissue and personal care products.  Its Tobacco Packaging segment provides machines and plants for tobacco packaging, and related services. The company was founded in 1961 and is headquartered in Ozzano dell'Emilia, Italy. I.M.A. Industria Macchine Automatiche S.p.A. is a subsidiary of SO.FI.M.A. Societa Finanziaria Macchine Automatiche S.p.a.",
-        "currency": "EUR",
-        "sector": "Industrials",
-        "industry": "Specialty Industrial Machinery",
-        "exchange": "FRA",
-        "market": "dr_market",
-        "country": "Italy",
-        "city": "Ozzano Dell'emilia"
-    },
     "169.F": {
         "short_name": "AEROPORTO GUG.MARCO.D.BO.",
         "long_name": "Aeroporto Guglielmo Marconi di Bologna S.p.A.",
@@ -22,6 +10,18 @@
         "market": "dr_market",
         "country": "Italy",
         "city": "Bologna"
+    },
+    "1F8.F": {
+        "short_name": "FINCANTIERI SPA  O.N.",
+        "long_name": "Fincantieri S.p.A.",
+        "summary": "Fincantieri S.p.A. operates in the shipbuilding industry. The company operates in three segments: Shipbuilding; Offshore and Specialized Vessels; and Equipment, Systems and Services. The Shipbuilding segment designs and constructs cruise ships; ferries, including cruise, Ro-Pax, and due fuel ferries; naval vessels, such as aircraft carriers, destroyers, frigates, corvettes, patrol vessels, amphibious and logistic support ships, multirole and research vessels, special vessels, and submarines; and mega yachts, as well as expedition cruise vessels. The Offshore and Specialized Vessels segment designs and constructs offshore support vessels, specialized ships, and vessels for offshore wind farms and open ocean aquaculture, as well as other products in the field of drill ships and semi-submersible drilling rigs. This segment also provides electrical systems, including engineering, manufacturing, installation, integration testing, and commissioning services. The Equipment, Systems and Services segment provides stabilization, propulsion, and positioning and power generation systems; ship automation systems, steam turbines, and ship accommodation systems; entertainment systems and steel structures; cabins and public areas; catering; and electric, electronic, and electromechanical integrated systems. This segment also offers ship repairs, refitting, refurbishment, conversions, and product lifecycle management services, as well as after-sales support services. In addition, it is involved in the dry-dock management; project management; accommodation installation; and pipe installation. Further, the company provides electrical parts, technical and logistics engineering services, and ship interiors. It primarily serves ship owners and the defense sector worldwide. The company was founded in 1959 and is based in Trieste, Italy. Fincantieri S.p.A. is a subsidiary of CDP Industria S.p.A.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Aerospace & Defense",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Trieste"
     },
     "29O.F": {
         "short_name": "CARRARO S.P.A.  EO 0,52",
@@ -110,7 +110,7 @@
     "3S0.F": {
         "short_name": "F.I.L.A. S.P.A.",
         "long_name": "F.I.L.A. - Fabbrica Italiana Lapis ed Affini S.p.A.",
-        "summary": "F.I.L.A. - Fabbrica Italiana Lapis ed Affini S.p.A. produces and sells coloring, designing, modelling, writing, and painting objects worldwide. The company provides pencils, crayons, modelling clays, chalks, oil colours, acrylics, watercolours, paints, and paper products for the fine arts, school, and leisure sectors. It offers its products under the GIOTTO, DAS, LYRA, Canson, Maimeri, Daler-Rowney Lukas, Ticonderoga, Pacon, Strathmore, and Princeton brands. The company was founded in 1920 and is based in Pero, Italy.",
+        "summary": "F.I.L.A. - Fabbrica Italiana Lapis ed Affini S.p.A. produces and markets coloring, designing, modelling, writing, and painting objects worldwide. It provides pencils, crayons, modelling clays, chalks, oil colours, acrylics, watercolors, paints, and paper products for the fine arts, school, and leisure sectors. The company offers its products under the GIOTTO, DAS, LYRA, Canson, Maimeri, Daler-Rowney Lukas, Ticonderoga, Pacon, Strathmore, Princeton, and Arches brands. It sells its products through a distribution network of 35 commercial branches to wholesalers, office/school suppliers, mass-market retailers, distributors, and B2B operators, as well as online channels. The company was founded in 1920 and is headquartered in Pero, Italy.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Business Equipment & Supplies",
@@ -146,10 +146,34 @@
     "7PI.F": {
         "short_name": "POSTE ITALIANE SPA EO-,51",
         "long_name": "Poste Italiane SpA",
-        "summary": "Poste Italiane SpA provides postal, logistics, and financial and insurance products and services in Italy. It operates in four segments: Mail, Parcels and Distribution; Payments, Mobile and Digital; Financial Services; and Insurance Services. The Mail, Parcels and Distribution segment offers letter post, express delivery, logistics, parcels, and philately services. As of December 31, 2019, it operated a network of 12,809 post offices in Italy. The Payments, Mobile and Digital segment provides payment services, card payments, and mobile telecommunications services, as well as digital services for the public sector. The Financial Services segment is involved in the collection of various forms of savings deposits; provision of payment and foreign currency exchange services, as well as investment services; and promotion and arrangement of loans issued by banks and other authorized financial institutions. The Insurance Services segment offers life and casualty insurance products. Poste Italiane SpA is headquartered in Rome, Italy.",
+        "summary": "Poste Italiane SpA provides postal, logistics, and financial and insurance products and services in Italy. It operates in four segments: Mail, Parcels and Distribution; Payments, Mobile and Digital; Financial Services; and Insurance Services. The Mail, Parcels and Distribution segment offers letter post, express delivery, logistics, parcels, and philately services. As of December 31, 2020, it operated a network of 12,765 post offices in Italy. The Payments, Mobile and Digital segment provides payment services, card payments, and mobile telecommunications services, as well as digital services for the public sector. The Financial Services segment is involved in the collection of various forms of savings deposits; provision of payment and foreign currency exchange services, as well as investment services; and promotion and arrangement of loans issued by banks and other authorized financial institutions. The Insurance Services segment offers life and casualty insurance products. Poste Italiane SpA was founded in 1862 and is headquartered in Rome, Italy.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Conglomerates",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Rome"
+    },
+    "7UP.F": {
+        "short_name": "CLABO S.P.A.",
+        "long_name": "Clabo S.p.A.",
+        "summary": "Clabo S.p.A. designs, produces, and distributes refrigerated showcases and furniture for the food retail market worldwide. It offers refrigerated showcases for ice-cream and pastry products exhibition and conservation; and furniture for bars, pastry parlors, caf\u00c3\u00a9s, and canteens under the ORION, FB, ARTIC, BOCCHINI, and EASY BEST brand names. The company was founded in 2001 and is headquartered in Jesi, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Jesi"
+    },
+    "9KI.F": {
+        "short_name": "IGEAMED S.P.A.",
+        "long_name": "Igeamed S.p.A.",
+        "summary": "Igeamed S.p.A. provides consulting, engineering, training, and medical services. The company offers EHS consulting services, such as health and safety, environmental, and energy management; engineering services, including process safety, maintenance engineering, safety engineering, and infrastructure engineering; and corporate healthcare services comprising occupational medicine, workplace health promotion, and corporate welfare, as well as consultancy services related to green power projects. It also provides business assurance, product control and development, infrastructure control, and innovation and smart industry solutions; training solutions for risk management and managerial competence comprising EHS Future Academy, Corporate Future Academy, and Business Assurance Academy; and digital software solutions for the safety in the workplace, risk assessment, and management of corporate assets. The company was founded in 1979 and is based in Rome, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Consulting Services",
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
@@ -170,7 +194,7 @@
     "ACI.F": {
         "short_name": "ASTALDI S.P.A.  O.N.",
         "long_name": "Astaldi S.p.A.",
-        "summary": "Astaldi S.p.A. designs, develops, and operates public infrastructure and civil engineering works in Italy and internationally. It undertakes transport infrastructure projects, including roads, bridges/viducts, railways, undergrounds, subways, stations, motorways, and tunnels; water and energy plants, such as hydroelectric plants, dams, aqueducts, and power stations. It is also involved in the civil and industrial buildings comprising schools, hospitals, underground rail stations, car parks, and exhibition spaces; and plant design and engineering, as well as offers operation and maintenance services. The company was founded in 1929 and is headquartered in Rome, Italy. Astaldi S.p.A. is a subsidiary of Fin.Ast S.r.l.",
+        "summary": "Astaldi S.p.A. designs, develops, and operates public infrastructure and civil engineering works in Italy and internationally. It undertakes transport infrastructure projects, including roads, bridges/viducts, railways, undergrounds, subways, stations, motorways, and tunnels; water and energy plants, such as hydroelectric plants, dams, aqueducts, and power stations. It is also involved in the civil and industrial buildings comprising schools, hospitals, underground rail stations, car parks, and exhibition spaces; and plant design and engineering, as well as offers operation and maintenance services. The company was founded in 1929 and is headquartered in Rome, Italy. Astaldi S.p.A. is a subsidiary of Webuild S.p.A.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
@@ -191,6 +215,18 @@
         "country": "Italy",
         "city": "Bologna"
     },
+    "AEU.F": {
+        "short_name": "PRYSMIAN S.P.A.  EO 0,10",
+        "long_name": "Prysmian S.p.A.",
+        "summary": "Prysmian S.p.A. produces, distributes, and sells cables and systems, and related accessories for the energy and telecommunications industries worldwide. The company operates through three segments: Energy, Projects, and Telecom. The Energy segment comprising trade and installers; power distribution and overhead transmission lines; and industrial and network components for various industries, which includes oil and gas, downhole technology, elevators, automotive, nuclear, mining, marine, and infrastructure sectors, as well as for renewable energy field, military, railways, and cranes. The Projects segment designs, manufactures, and installs high and extra high voltage cables for underground and submarine power transmission; high voltage cabling systems for terrestrial and submarine applications; provides submarine interconnections between countries and between off shore wind farms and the mainland, which is used for generation and distribution of electricity. The Telecom segment manufactures cable systems and connectivity products comprising optical fiber, optical cables, connectivity components and accessories, optical ground wires, and copper cables used in telecommunication networks. Prysmian S.p.A. is headquartered in Milan, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Electrical Equipment & Parts",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Milan"
+    },
     "ALEAC.PA": {
         "short_name": "EDILIZIACROBATICA",
         "long_name": "EdiliziAcrobatica S.p.A.",
@@ -206,7 +242,7 @@
     "AST.MI": {
         "short_name": "ASTALDI",
         "long_name": "Astaldi S.p.A.",
-        "summary": "Astaldi S.p.A. designs, develops, and operates public infrastructure and civil engineering works in Italy and internationally. It undertakes transport infrastructure projects, including roads, bridges/viducts, railways, undergrounds, subways, stations, motorways, and tunnels; water and energy plants, such as hydroelectric plants, dams, aqueducts, and power stations. It is also involved in the civil and industrial buildings comprising schools, hospitals, underground rail stations, car parks, and exhibition spaces; and plant design and engineering, as well as offers operation and maintenance services. The company was founded in 1929 and is headquartered in Rome, Italy. Astaldi S.p.A. is a subsidiary of Fin.Ast S.r.l.",
+        "summary": "Astaldi S.p.A. designs, develops, and operates public infrastructure and civil engineering works in Italy and internationally. It undertakes transport infrastructure projects, including roads, bridges/viducts, railways, undergrounds, subways, stations, motorways, and tunnels; water and energy plants, such as hydroelectric plants, dams, aqueducts, and power stations. It is also involved in the civil and industrial buildings comprising schools, hospitals, underground rail stations, car parks, and exhibition spaces; and plant design and engineering, as well as offers operation and maintenance services. The company was founded in 1929 and is headquartered in Rome, Italy. Astaldi S.p.A. is a subsidiary of Webuild S.p.A.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
@@ -230,7 +266,7 @@
     "ATASF": {
         "short_name": "ATLANTIA SPA",
         "long_name": "Atlantia SpA",
-        "summary": "Atlantia SpA, through its subsidiaries, engages in the construction and operation of motorways, airports and transport infrastructure, parking areas, and intermodal systems worldwide. It operates and manages approximately 15,000 kilometers of toll motorways in Italy and France. The company manages, maintains, constructs, and widens related motorways operated under concession; and provides support for the Italian motorway operators. It also operates and expands Rome's Fiumicino and Ciampino airports; and operates the airports of Nice, Cannes-Mandelieu, and Saint-Tropez. In addition, the company engages in the design, project management, controlling, and maintenance of road and airport infrastructures; operation of toll payment systems; and provision of systems integration, hardware and software maintenance, customer, and consultancy services in the field of free-flow electronic tolling systems, as well as provides assistance and toll management services. Further, it produces and operates free-flow tolling systems, traffic and transport management systems, and electronic payment systems. Additionally, the company offers insurance brokerage, as well as engineering services. Atlantia SpA was founded in 1950 and is headquartered in Rome, Italy.",
+        "summary": "Atlantia SpA, through its subsidiaries, engages in the construction and operation of motorways, airports and transport infrastructure, parking areas, and intermodal systems worldwide. It operates and manages approximately 13,000 kilometers of toll motorways. The company manages, maintains, constructs, and widens related motorways operated under concession; and provides support for the Italian motorway operators. It also operates and expands Rome's Fiumicino and Ciampino airports; and operates the airports of Nice, Cannes-Mandelieu, and Saint-Tropez. In addition, the company engages in the design, project management, controlling, and maintenance of road and airport infrastructures; and operation of toll payment systems, as well as provides assistance and toll management services. Further, it operates free-flow tolling systems, traffic and transport management systems, and electronic payment systems. Additionally, the company offers insurance brokerage, as well as engineering services. Atlantia SpA was incorporated in 1950 and is headquartered in Rome, Italy.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Infrastructure Operations",
@@ -242,7 +278,7 @@
     "ATASY": {
         "short_name": "ATLANTIA SPA",
         "long_name": "Atlantia SpA",
-        "summary": "Atlantia SpA, through its subsidiaries, engages in the construction and operation of motorways, airports and transport infrastructure, parking areas, and intermodal systems worldwide. It operates and manages approximately 15,000 kilometers of toll motorways in Italy and France. The company manages, maintains, constructs, and widens related motorways operated under concession; and provides support for the Italian motorway operators. It also operates and expands Rome's Fiumicino and Ciampino airports; and operates the airports of Nice, Cannes-Mandelieu, and Saint-Tropez. In addition, the company engages in the design, project management, controlling, and maintenance of road and airport infrastructures; operation of toll payment systems; and provision of systems integration, hardware and software maintenance, customer, and consultancy services in the field of free-flow electronic tolling systems, as well as provides assistance and toll management services. Further, it produces and operates free-flow tolling systems, traffic and transport management systems, and electronic payment systems. Additionally, the company offers insurance brokerage, as well as engineering services. Atlantia SpA was founded in 1950 and is headquartered in Rome, Italy.",
+        "summary": "Atlantia SpA, through its subsidiaries, engages in the construction and operation of motorways, airports and transport infrastructure, parking areas, and intermodal systems worldwide. It operates and manages approximately 13,000 kilometers of toll motorways. The company manages, maintains, constructs, and widens related motorways operated under concession; and provides support for the Italian motorway operators. It also operates and expands Rome's Fiumicino and Ciampino airports; and operates the airports of Nice, Cannes-Mandelieu, and Saint-Tropez. In addition, the company engages in the design, project management, controlling, and maintenance of road and airport infrastructures; and operation of toll payment systems, as well as provides assistance and toll management services. Further, it operates free-flow tolling systems, traffic and transport management systems, and electronic payment systems. Additionally, the company offers insurance brokerage, as well as engineering services. Atlantia SpA was incorporated in 1950 and is headquartered in Rome, Italy.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Infrastructure Operations",
@@ -262,6 +298,54 @@
         "market": "it_market",
         "country": "Italy",
         "city": "Segrate"
+    },
+    "ATL.MI": {
+        "short_name": "ATLANTIA",
+        "long_name": "Atlantia SpA",
+        "summary": "Atlantia SpA, through its subsidiaries, engages in the construction and operation of motorways, airports and transport infrastructure, parking areas, and intermodal systems worldwide. It operates and manages approximately 13,000 kilometers of toll motorways. The company manages, maintains, constructs, and widens related motorways operated under concession; and provides support for the Italian motorway operators. It also operates and expands Rome's Fiumicino and Ciampino airports; and operates the airports of Nice, Cannes-Mandelieu, and Saint-Tropez. In addition, the company engages in the design, project management, controlling, and maintenance of road and airport infrastructures; and operation of toll payment systems, as well as provides assistance and toll management services. Further, it operates free-flow tolling systems, traffic and transport management systems, and electronic payment systems. Additionally, the company offers insurance brokerage, as well as engineering services. Atlantia SpA was incorporated in 1950 and is headquartered in Rome, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Infrastructure Operations",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Rome"
+    },
+    "ATL.VI": {
+        "short_name": "ATLANTIA SPA",
+        "long_name": "Atlantia SpA",
+        "summary": "Atlantia SpA, through its subsidiaries, engages in the construction and operation of motorways, airports and transport infrastructure, parking areas, and intermodal systems worldwide. It operates and manages approximately 13,000 kilometers of toll motorways. The company manages, maintains, constructs, and widens related motorways operated under concession; and provides support for the Italian motorway operators. It also operates and expands Rome's Fiumicino and Ciampino airports; and operates the airports of Nice, Cannes-Mandelieu, and Saint-Tropez. In addition, the company engages in the design, project management, controlling, and maintenance of road and airport infrastructures; and operation of toll payment systems, as well as provides assistance and toll management services. Further, it operates free-flow tolling systems, traffic and transport management systems, and electronic payment systems. Additionally, the company offers insurance brokerage, as well as engineering services. Atlantia SpA was incorporated in 1950 and is headquartered in Rome, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Infrastructure Operations",
+        "exchange": "VIE",
+        "market": "at_market",
+        "country": "Italy",
+        "city": "Rome"
+    },
+    "AU9.F": {
+        "short_name": "ATLANTIA S.P.A.",
+        "long_name": "Atlantia SpA",
+        "summary": "Atlantia SpA, through its subsidiaries, engages in the construction and operation of motorways, airports and transport infrastructure, parking areas, and intermodal systems worldwide. It operates and manages approximately 13,000 kilometers of toll motorways. The company manages, maintains, constructs, and widens related motorways operated under concession; and provides support for the Italian motorway operators. It also operates and expands Rome's Fiumicino and Ciampino airports; and operates the airports of Nice, Cannes-Mandelieu, and Saint-Tropez. In addition, the company engages in the design, project management, controlling, and maintenance of road and airport infrastructures; and operation of toll payment systems, as well as provides assistance and toll management services. Further, it operates free-flow tolling systems, traffic and transport management systems, and electronic payment systems. Additionally, the company offers insurance brokerage, as well as engineering services. Atlantia SpA was incorporated in 1950 and is headquartered in Rome, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Infrastructure Operations",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Rome"
+    },
+    "AU9A.F": {
+        "short_name": "ATLANTIA SPA ADR 1/2/EO 1",
+        "long_name": "Atlantia SpA",
+        "summary": "Atlantia SpA, through its subsidiaries, engages in the construction and operation of motorways, airports and transport infrastructure, parking areas, and intermodal systems worldwide. It operates and manages approximately 13,000 kilometers of toll motorways. The company manages, maintains, constructs, and widens related motorways operated under concession; and provides support for the Italian motorway operators. It also operates and expands Rome's Fiumicino and Ciampino airports; and operates the airports of Nice, Cannes-Mandelieu, and Saint-Tropez. In addition, the company engages in the design, project management, controlling, and maintenance of road and airport infrastructures; and operation of toll payment systems, as well as provides assistance and toll management services. Further, it operates free-flow tolling systems, traffic and transport management systems, and electronic payment systems. Additionally, the company offers insurance brokerage, as well as engineering services. Atlantia SpA was incorporated in 1950 and is headquartered in Rome, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Infrastructure Operations",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Rome"
     },
     "AUTME.MI": {
         "short_name": "AUTOSTRADE MERID",
@@ -395,18 +479,6 @@
         "country": "Italy",
         "city": "Campodarsego"
     },
-    "CFT.MI": {
-        "short_name": "CFT",
-        "long_name": "CFT S.p.A.",
-        "summary": "CFT S.p.A designs and installs plant and machinery for the food industry in Italy and internationally. The company operates through Processing & Packaging and Sorting segments. Its processing machines include receiving/washing/sorting machines, peelers, choppers/extractors/refiners, mixer and cookers, evaporators, sterilizers and pasteurizers, aseptic fillers, and processed cheese systems, as well as brewing and beverage systems. The company's filling machines comprise food volumetric fillers with rotating valves and rotary fillers with flow meters, as well as telescopic, vacuum, gas, and weight fillers; flow meter fillers, level fillers for still products, flow meter and level fillers for carbonated products, and keg systems; and volumetric rotary and inline fillers. It also offers blow-molding machines, vacuum seamers, sorting machines, X-ray inspection machines, pelletizers/depalletizers, handling systems, packers, robotic systems, and pick and place systems; and tunnel pasteurizers, spirals, freezers, dryers, batch retorts, air separators, cooling systems, decoring machines, and portion formers. Its products are used in food, beverage, liquid food, and non-food applications. The company was founded in 1945 and is based in Parma, Italy.",
-        "currency": "EUR",
-        "sector": "Industrials",
-        "industry": "Specialty Industrial Machinery",
-        "exchange": "MIL",
-        "market": "it_market",
-        "country": "Italy",
-        "city": "Parma"
-    },
     "CLA.MI": {
         "short_name": "CLABO",
         "long_name": "Clabo S.p.A.",
@@ -443,6 +515,18 @@
         "country": "Italy",
         "city": "Montalto Di Castro"
     },
+    "COM.MI": {
+        "short_name": "COMER INDUSTRIES",
+        "long_name": "Comer Industries S.p.A.",
+        "summary": "Comer Industries S.p.A. designs and produces engineering systems and mechatronic solutions for power transmission applications worldwide. The company's product includes gearboxes, powertrain, planetary drives, slew drives and wheel drives, as well as standard and professional driveshafts, and spare parts. Its products are used in agri applications comprising land preparation, soil tillage, crop treatment, forage and hay, and forage mixing and distribution machines; biogas systems; corn and grain headers; combines and forage harvesters; and tractors, as well as industrial applications consisting of construction, road construction, forestry, mining, and water treatment machines; material handling; and renewable energy applications. Comer Industries S.p.A. was founded in 1970 and is headquartered in Reggiolo, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Farm & Heavy Construction Machinery",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Reggiolo"
+    },
     "DAN.MI": {
         "short_name": "DANIELI & C",
         "long_name": "Danieli & C. Officine Meccaniche S.p.A.",
@@ -478,6 +562,18 @@
         "market": "dr_market",
         "country": "Italy",
         "city": "Buttrio"
+    },
+    "DBA.MI": {
+        "short_name": "DBA GROUP",
+        "long_name": "DBA Group S.p.A.",
+        "summary": "DBA Group S.p.A. provides consultancy, architecture, engineering, and project management services. It offers architectural and design study, feasibility study and master planning, and general and specialist works supervision services; preliminary examination, geometric and specialized survey, consulting and technical, workplace safety, quality audit, H and S, and administrative test services; and bid and tender management, construction and installation management, testing and commissioning management, provisioning and deprovisioning circuits, inventory systems update, test and suitability, reporting, business intelligence, and document management, as well as quality, health, and safety audit services. The company also provides energy efficiency services comprising energy audit, efficiency improvement interventions design, and monitoring and energy consumption control systems. In addition, it engages in project management, process analysis and optimization, ICT consulting, software architecture and system design, user training, help desk, and maintenance and technical assistance, as well as software development, implementation, installation, and testing; and IT outsourcing, consulting, hosting, and virtualization, as well as system integration. Further, the company provides cyber security services, including information security and business continuity consulting, privacy, security information and event management, identity and access management, infrastructure security, security assessments and information system audit, penetration test and vulnerability assessment, security check, information security monitoring and management, certification preparation program, and IT security and compliance education and awareness services; and SAP solutions. It serves real estate, telecommunications and media, energy and utilities, alternative fuels and oil, transport and logistics, and other markets. The company was founded in 1991 and is based in Villorba, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Villorba"
     },
     "DNIYY": {
         "short_name": "DANIELI & C",
@@ -602,7 +698,7 @@
     "FILA.MI": {
         "short_name": "FILA",
         "long_name": "F.I.L.A. - Fabbrica Italiana Lapis ed Affini S.p.A.",
-        "summary": "F.I.L.A. - Fabbrica Italiana Lapis ed Affini S.p.A. produces and sells coloring, designing, modelling, writing, and painting objects worldwide. The company provides pencils, crayons, modelling clays, chalks, oil colours, acrylics, watercolours, paints, and paper products for the fine arts, school, and leisure sectors. It offers its products under the GIOTTO, DAS, LYRA, Canson, Maimeri, Daler-Rowney Lukas, Ticonderoga, Pacon, Strathmore, and Princeton brands. The company was founded in 1920 and is based in Pero, Italy.",
+        "summary": "F.I.L.A. - Fabbrica Italiana Lapis ed Affini S.p.A. produces and markets coloring, designing, modelling, writing, and painting objects worldwide. It provides pencils, crayons, modelling clays, chalks, oil colours, acrylics, watercolors, paints, and paper products for the fine arts, school, and leisure sectors. The company offers its products under the GIOTTO, DAS, LYRA, Canson, Maimeri, Daler-Rowney Lukas, Ticonderoga, Pacon, Strathmore, Princeton, and Arches brands. It sells its products through a distribution network of 35 commercial branches to wholesalers, office/school suppliers, mass-market retailers, distributors, and B2B operators, as well as online channels. The company was founded in 1920 and is headquartered in Pero, Italy.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Business Equipment & Supplies",
@@ -614,7 +710,7 @@
     "FINMF": {
         "short_name": "LEONARDO SPA",
         "long_name": "Leonardo S.p.a.",
-        "summary": "Leonardo S.p.a. engages in the helicopters, defense electronics and security systems, aeronautics, space, and other businesses in Italy, the United Kingdom, rest of Europe, North America, and internationally. The company researches, designs, develops, produces, supports, and markets a range of helicopters for commercial, public service, and security and defense applications. It also offers multi-mission, tactical transport, combat, and trainer aircraft; airborne solutions, such as components and ISR/ISTAR, airborne sensors, and effectors in the electromagnetic spectrum; unmanned aerial systems; and aero structures. In addition, the company offers C4I solutions for the digital battlefield; air defense solutions; air traffic control and management; vehicle systems; land weapon systems; soldier systems; force protection and border control products; radars; communication products; optronics; electronic warfares; and unmanned systems for land operations. Further, it provides command and control, maritime domain awareness, and weapon systems for sea; and cyber and digital solutions, professional communications, operation and control products, and handling systems. Additionally, the company offers services and infrastructures, payloads, equipment, and programs for space, as well as services and trainings. Leonardo has strategic alliance with Intermarine in the naval sector; and partnership with ENAV to develop solutions for use in helicopters in the civil air space. The company was formerly known as Leonardo \u00c2\u0096 Finmeccanica S.p.a. and changed its name to Leonardo S.p.a. in January 2017. Leonardo S.p.a. was founded in 1948 and is headquartered in Rome, Italy.",
+        "summary": "Leonardo S.p.a. engages in the helicopters, defense electronics and security systems, aeronautics, space, and other businesses in Italy, the United Kingdom, rest of Europe, the United States, and internationally. It researches, designs, develops, produces, supports, and markets a range of helicopters for commercial, public service, and security and defense applications. The company also offers multi-mission, tactical transport, combat, and trainer aircraft; airborne solutions, such as components, airborne sensors, and effectors in the electromagnetic spectrum, as well as ISR/information/intelligence, surveillance, targeting acquisition, and reconnaissance; unmanned aerial systems; and aero structures. In addition, it provides command, control, communications, and computers solutions for the digital battlefield; air defense solutions; air traffic control and management; vehicle systems; land weapon systems; soldier systems; force protection and border control products; radars; communication products; optronics; electronic warfare products; and unmanned systems for land operations. Further, the company offers command and control, maritime domain awareness, and weapon systems for sea; and cyber and digital solutions, professional communications, operation and control products, and handling systems. Additionally, it provides services and infrastructures, space and alliance, payloads and equipment, and programs for space, as well as services and trainings. The company was formerly known as Leonardo \u00c2\u0096 Finmeccanica S.p.a. and changed its name to Leonardo S.p.a. in January 2017. Leonardo S.p.a. was founded in 1948 and is headquartered in Rome, Italy.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Aerospace & Defense",
@@ -626,7 +722,7 @@
     "FINMY": {
         "short_name": "LEONARDO SPA",
         "long_name": "Leonardo S.p.a.",
-        "summary": "Leonardo S.p.a. engages in the helicopters, defense electronics and security systems, aeronautics, space, and other businesses in Italy, the United Kingdom, rest of Europe, North America, and internationally. The company researches, designs, develops, produces, supports, and markets a range of helicopters for commercial, public service, and security and defense applications. It also offers multi-mission, tactical transport, combat, and trainer aircraft; airborne solutions, such as components and ISR/ISTAR, airborne sensors, and effectors in the electromagnetic spectrum; unmanned aerial systems; and aero structures. In addition, the company offers C4I solutions for the digital battlefield; air defense solutions; air traffic control and management; vehicle systems; land weapon systems; soldier systems; force protection and border control products; radars; communication products; optronics; electronic warfares; and unmanned systems for land operations. Further, it provides command and control, maritime domain awareness, and weapon systems for sea; and cyber and digital solutions, professional communications, operation and control products, and handling systems. Additionally, the company offers services and infrastructures, payloads, equipment, and programs for space, as well as services and trainings. Leonardo has strategic alliance with Intermarine in the naval sector; and partnership with ENAV to develop solutions for use in helicopters in the civil air space. The company was formerly known as Leonardo \u00c2\u0096 Finmeccanica S.p.a. and changed its name to Leonardo S.p.a. in January 2017. Leonardo S.p.a. was founded in 1948 and is headquartered in Rome, Italy.",
+        "summary": "Leonardo S.p.a. engages in the helicopters, defense electronics and security systems, aeronautics, space, and other businesses in Italy, the United Kingdom, rest of Europe, the United States, and internationally. It researches, designs, develops, produces, supports, and markets a range of helicopters for commercial, public service, and security and defense applications. The company also offers multi-mission, tactical transport, combat, and trainer aircraft; airborne solutions, such as components, airborne sensors, and effectors in the electromagnetic spectrum, as well as ISR/information/intelligence, surveillance, targeting acquisition, and reconnaissance; unmanned aerial systems; and aero structures. In addition, it provides command, control, communications, and computers solutions for the digital battlefield; air defense solutions; air traffic control and management; vehicle systems; land weapon systems; soldier systems; force protection and border control products; radars; communication products; optronics; electronic warfare products; and unmanned systems for land operations. Further, the company offers command and control, maritime domain awareness, and weapon systems for sea; and cyber and digital solutions, professional communications, operation and control products, and handling systems. Additionally, it provides services and infrastructures, space and alliance, payloads and equipment, and programs for space, as well as services and trainings. The company was formerly known as Leonardo \u00c2\u0096 Finmeccanica S.p.a. and changed its name to Leonardo S.p.a. in January 2017. Leonardo S.p.a. was founded in 1948 and is headquartered in Rome, Italy.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Aerospace & Defense",
@@ -635,10 +731,34 @@
         "country": "Italy",
         "city": "Rome"
     },
+    "FM.MI": {
+        "short_name": "FIERA MILANO",
+        "long_name": "Fiera Milano SpA",
+        "summary": "Fiera Milano SpA, together with its subsidiaries, operates in the exhibition and congress industry in Italy and internationally. It operates through Italian Exhibitions Business, Foreign Exhibitions Business, Media, and Congresses segments. The company is involved in organizing and hosting exhibitions, fairs, and other events; promoting and making available equipped exhibition spaces; and staging exhibitions, as well as offers project support, ancillary, and end services to exhibitors and visitors. It also produces content; and offers online and offline publishing, destination management and logistics, stand-fitting, technical, and other exhibition site services. The company was founded in 1920 and is headquartered in Rho, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Business Services",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Rho"
+    },
+    "FM3.F": {
+        "short_name": "FIERA MILANO S.P.A.",
+        "long_name": "Fiera Milano SpA",
+        "summary": "Fiera Milano SpA, together with its subsidiaries, operates in the exhibition and congress industry in Italy and internationally. It operates through Italian Exhibitions Business, Foreign Exhibitions Business, Media, and Congresses segments. The company is involved in organizing and hosting exhibitions, fairs, and other events; promoting and making available equipped exhibition spaces; and staging exhibitions, as well as offers project support, ancillary, and end services to exhibitors and visitors. It also produces content; and offers online and offline publishing, destination management and logistics, stand-fitting, technical, and other exhibition site services. The company was founded in 1920 and is headquartered in Rho, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Business Services",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Rho"
+    },
     "FMNB.F": {
         "short_name": "LEONARDO S.P.A.  EO 4,40",
         "long_name": "Leonardo S.p.a.",
-        "summary": "Leonardo S.p.a. engages in the helicopters, defense electronics and security systems, aeronautics, space, and other businesses in Italy, the United Kingdom, rest of Europe, North America, and internationally. The company researches, designs, develops, produces, supports, and markets a range of helicopters for commercial, public service, and security and defense applications. It also offers multi-mission, tactical transport, combat, and trainer aircraft; airborne solutions, such as components and ISR/ISTAR, airborne sensors, and effectors in the electromagnetic spectrum; unmanned aerial systems; and aero structures. In addition, the company offers C4I solutions for the digital battlefield; air defense solutions; air traffic control and management; vehicle systems; land weapon systems; soldier systems; force protection and border control products; radars; communication products; optronics; electronic warfares; and unmanned systems for land operations. Further, it provides command and control, maritime domain awareness, and weapon systems for sea; and cyber and digital solutions, professional communications, operation and control products, and handling systems. Additionally, the company offers services and infrastructures, payloads, equipment, and programs for space, as well as services and trainings. Leonardo has strategic alliance with Intermarine in the naval sector; and partnership with ENAV to develop solutions for use in helicopters in the civil air space. The company was formerly known as Leonardo \u00c2\u0096 Finmeccanica S.p.a. and changed its name to Leonardo S.p.a. in January 2017. Leonardo S.p.a. was founded in 1948 and is headquartered in Rome, Italy.",
+        "summary": "Leonardo S.p.a. engages in the helicopters, defense electronics and security systems, aeronautics, space, and other businesses in Italy, the United Kingdom, rest of Europe, the United States, and internationally. It researches, designs, develops, produces, supports, and markets a range of helicopters for commercial, public service, and security and defense applications. The company also offers multi-mission, tactical transport, combat, and trainer aircraft; airborne solutions, such as components, airborne sensors, and effectors in the electromagnetic spectrum, as well as ISR/information/intelligence, surveillance, targeting acquisition, and reconnaissance; unmanned aerial systems; and aero structures. In addition, it provides command, control, communications, and computers solutions for the digital battlefield; air defense solutions; air traffic control and management; vehicle systems; land weapon systems; soldier systems; force protection and border control products; radars; communication products; optronics; electronic warfare products; and unmanned systems for land operations. Further, the company offers command and control, maritime domain awareness, and weapon systems for sea; and cyber and digital solutions, professional communications, operation and control products, and handling systems. Additionally, it provides services and infrastructures, space and alliance, payloads and equipment, and programs for space, as well as services and trainings. The company was formerly known as Leonardo \u00c2\u0096 Finmeccanica S.p.a. and changed its name to Leonardo S.p.a. in January 2017. Leonardo S.p.a. was founded in 1948 and is headquartered in Rome, Italy.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Aerospace & Defense",
@@ -658,6 +778,18 @@
         "market": "it_market",
         "country": "Italy",
         "city": "Bollate"
+    },
+    "FNM.MI": {
+        "short_name": "FNM",
+        "long_name": "FNM S.p.A.",
+        "summary": "FNM S.p.A. manages and maintains railway network in Italy. The company offers engineering and design, railway and Malpensa express, railway replacement and school bus, public road transport, freight transportation, and electric car sharing services, as well as digital solutions for transport and mobility, digital payments, and optical fibre. It also provides energy services. The company was formerly known as Ferrovie Nord Milano. The company was founded in 1877 and is based in Milan, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Railroads",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Milan"
     },
     "FUM.MI": {
         "short_name": "FRANCHI UMBERTO MARMI",
@@ -682,6 +814,30 @@
         "market": "it_market",
         "country": "Italy",
         "city": "Vignola"
+    },
+    "GEL.MI": {
+        "short_name": "GEL",
+        "long_name": "Gel S.p.A.",
+        "summary": "Gel S.p.A. engages in the design, manufacture, and sale of water treatment products in Italy. The company offers filters, water softeners, dosing units, reverse osmosis, and conditioning products for private users; and leachate, medical water, mobile plants, food and beverage, drinking water, and desalination solutions for industrial users. It also provides magnetic scale reducers, column filters, metering pumps, antilegionella systems, UV sterilizers, water purifiers, measuring and control instruments, and neutralizing filters for acidic condensates; descaling chemicals, technical products, and equipment for flushing and filling; and conditioners, such as heating, cooling, solar thermal, and water systems, as well as steam generators for professional users. GEL S.p.A. was founded in 1979 and is based in Castelfidardo, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Pollution & Treatment Controls",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Castelfidardo"
+    },
+    "GPI.MI": {
+        "short_name": "GPI",
+        "long_name": "GPI SpA",
+        "summary": "GPI SpA provides ICT healthcare solutions for various public and private sector in Italy and internationally. Its products and services portfolio includes information systems and hi-tech platform for healthcare services, automated warehouse system for hospital and pharmacies, telemedicine and virtual care, DTM services, and e-payment solutions. It develops an EHR platform for diagnosis and treatment; clinical collaboration platform that enables clinicians to share patient information, such as reports, images, and structured data; IT solution for the management of various processes of neonatal intensive care unit, such as medical treatment, assistance, and information exchange between medical staff and parents; and a modular hospital information system to manage various clinical activities in private and public hospitals. The company also offers solutions for automated drug storage and picking system; a virtual care solution for patients', doctors, and healthcare operators; and Phebo, a platform for H2T evaluation of biometrics observations for tele-monitoring, virtual care, and telemedicine activities. The company was founded in 1988 and is based in Trento, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Conglomerates",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Trento"
     },
     "GVS.MI": {
         "short_name": "GVS",
@@ -719,22 +875,10 @@
         "country": "Italy",
         "city": "Mortara"
     },
-    "IMA.MI": {
-        "short_name": "I.M.A.",
-        "long_name": "I.M.A. Industria Macchine Automatiche S.p.A.",
-        "summary": "I.M.A. Industria Macchine Automatiche S.p.A. designs, manufactures, and sells automatic machines for the processing and packaging of pharmaceuticals, cosmetics, tea, coffee, tobacco, and other food products worldwide. Its Tea, Food & Other segment offers machines for the packaging of tea and herbal teas in filter bags, and the packaging of coffee in pods; end-of-line machines; machines and automatic lines for the manufacturing of electric motors and rotors; machines for containers and sticks, and ultraclean closures and wrappers, as well as forming, filling, and sealing; cartoning machines and systems; machines and plants for the dosing and packaging of cheese portions and stock cubes; and machines and systems for horizontal flowpack and fold packaging. This segment also provides machines and lines for food and non-food packaging; machines for the production of wet wipes; machines for the filling and packaging of single-serve coffee capsules; refurbished second-hand machines for processed cheese, and tea and herbs in filter bags; machines for the assembly of plastic material in the caps and closures sector, as well as medical products for self-medication; and machines for the packaging and management of tissue and personal care products.  Its Tobacco Packaging segment provides machines and plants for tobacco packaging, and related services. The company was founded in 1961 and is headquartered in Ozzano dell'Emilia, Italy. I.M.A. Industria Macchine Automatiche S.p.A. is a subsidiary of SO.FI.M.A. Societa Finanziaria Macchine Automatiche S.p.a.",
-        "currency": "EUR",
-        "sector": "Industrials",
-        "industry": "Specialty Industrial Machinery",
-        "exchange": "MIL",
-        "market": "it_market",
-        "country": "Italy",
-        "city": "Ozzano Dell'emilia"
-    },
     "IMPJY": {
         "short_name": "WEBUILD SPA UNSP ADR EACH REPR ",
         "long_name": "Webuild S.p.A.",
-        "summary": "Webuild S.p.A. engages in construction activities worldwide. It designs and builds works and infrastructure for the mobility, hydroelectric energy, water, and green buildings sectors. The company also undertakes the construction of airports, and civil and industrial construction; railways and undergrounds; and motorways, roads, and bridges. The company was formerly known as Salini Impregilo S.p.A. and changed its name to Webuild S.p.A. in May 2020. The company is headquartered in Milan, Italy. Webuild S.p.A.is a subsidiary of Salini Costruttori S.p.A.",
+        "summary": "Webuild S.p.A. engages in the construction activities worldwide. The company designs and builds works and infrastructure for the mobility, hydroelectric energy, water, green buildings, and tunnelling sectors. It also undertakes the construction of airports and civil and industrial construction; railways and subways; and highways, roads, and bridges, as well as dams and hydroelectric power plants. The company is headquartered in Milan, Italy. Webuild S.p.A. is a subsidiary of Salini Costruttori S.p.A.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
@@ -743,10 +887,22 @@
         "country": "Italy",
         "city": "Milan"
     },
+    "IP.MI": {
+        "short_name": "INTERPUMP GROUP",
+        "long_name": "Interpump Group S.p.A.",
+        "summary": "Interpump Group S.p.A. manufactures and markets high pressure plunger pumps in Italy, rest of Europe, North America, the Far East, Oceania, and internationally. It operates in two segments, Hydraulic Sector and Water Jetting Sector. The Hydraulic Sector segment produces and sells power take-offs that transmit drive from an industrial vehicle engine or transmission through hydraulic components; hydraulic cylinders that are components of hydraulic systems of various vehicle types; front-end and underbody cylinders for use in industrial vehicles in the construction sector; double acting cylinders, which are used in a range of applications, such as earthmoving and agricultural machinery, cranes and truck cranes, waste compactors, etc.; hydraulic lines and fittings that are used in hydraulic equipment and water systems; and pumps, directional controls, valves, other hydraulic components, and ancillary products. The Water Jetting Sector segment provides high pressure pumps and systems that are used in a range of industrial sectors for the conveyance of fluids. This segment's high pressure plunger pumps are the primary components of pressure washers, as well as used for car wash installations, forced lubrication systems for machine tools, and inverse osmosis systems for seawater desalination plants. Its very high-pressure pumps and systems are used for cleaning surfaces, ship hulls, and various hoses; removing machining burr; cutting and removing cement, asphalt, and paint coatings from stone, cement, and metal surfaces; and cutting solid materials. This segment also engages in drawing, blanking, and pressing sheet metals; and providing high pressure homogenizers, mixers, agitators, piston pumps, values, and other machines for use in the food processing, chemicals, cosmetics, and pharmaceutical industries. The company also engages in the research and development activities. Interpump Group S.p.A. was founded in 1977 and is based in Sant'Ilario d'Enza, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Sant'ilario D'enza"
+    },
     "IPJ1.F": {
         "short_name": "WEBUILD S.P.A.",
         "long_name": "Webuild S.p.A.",
-        "summary": "Webuild S.p.A. engages in construction activities worldwide. It designs and builds works and infrastructure for the mobility, hydroelectric energy, water, and green buildings sectors. The company also undertakes the construction of airports, and civil and industrial construction; railways and undergrounds; and motorways, roads, and bridges. The company was formerly known as Salini Impregilo S.p.A. and changed its name to Webuild S.p.A. in May 2020. The company is headquartered in Milan, Italy. Webuild S.p.A.is a subsidiary of Salini Costruttori S.p.A.",
+        "summary": "Webuild S.p.A. engages in the construction activities worldwide. The company designs and builds works and infrastructure for the mobility, hydroelectric energy, water, green buildings, and tunnelling sectors. It also undertakes the construction of airports and civil and industrial construction; railways and subways; and highways, roads, and bridges, as well as dams and hydroelectric power plants. The company is headquartered in Milan, Italy. Webuild S.p.A. is a subsidiary of Salini Costruttori S.p.A.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
@@ -782,7 +938,7 @@
     "LDO.MI": {
         "short_name": "LEONARDO",
         "long_name": "Leonardo S.p.a.",
-        "summary": "Leonardo S.p.a. engages in the helicopters, defense electronics and security systems, aeronautics, space, and other businesses in Italy, the United Kingdom, rest of Europe, North America, and internationally. The company researches, designs, develops, produces, supports, and markets a range of helicopters for commercial, public service, and security and defense applications. It also offers multi-mission, tactical transport, combat, and trainer aircraft; airborne solutions, such as components and ISR/ISTAR, airborne sensors, and effectors in the electromagnetic spectrum; unmanned aerial systems; and aero structures. In addition, the company offers C4I solutions for the digital battlefield; air defense solutions; air traffic control and management; vehicle systems; land weapon systems; soldier systems; force protection and border control products; radars; communication products; optronics; electronic warfares; and unmanned systems for land operations. Further, it provides command and control, maritime domain awareness, and weapon systems for sea; and cyber and digital solutions, professional communications, operation and control products, and handling systems. Additionally, the company offers services and infrastructures, payloads, equipment, and programs for space, as well as services and trainings. Leonardo has strategic alliance with Intermarine in the naval sector; and partnership with ENAV to develop solutions for use in helicopters in the civil air space. The company was formerly known as Leonardo \u00c2\u0096 Finmeccanica S.p.a. and changed its name to Leonardo S.p.a. in January 2017. Leonardo S.p.a. was founded in 1948 and is headquartered in Rome, Italy.",
+        "summary": "Leonardo S.p.a. engages in the helicopters, defense electronics and security systems, aeronautics, space, and other businesses in Italy, the United Kingdom, rest of Europe, the United States, and internationally. It researches, designs, develops, produces, supports, and markets a range of helicopters for commercial, public service, and security and defense applications. The company also offers multi-mission, tactical transport, combat, and trainer aircraft; airborne solutions, such as components, airborne sensors, and effectors in the electromagnetic spectrum, as well as ISR/information/intelligence, surveillance, targeting acquisition, and reconnaissance; unmanned aerial systems; and aero structures. In addition, it provides command, control, communications, and computers solutions for the digital battlefield; air defense solutions; air traffic control and management; vehicle systems; land weapon systems; soldier systems; force protection and border control products; radars; communication products; optronics; electronic warfare products; and unmanned systems for land operations. Further, the company offers command and control, maritime domain awareness, and weapon systems for sea; and cyber and digital solutions, professional communications, operation and control products, and handling systems. Additionally, it provides services and infrastructures, space and alliance, payloads and equipment, and programs for space, as well as services and trainings. The company was formerly known as Leonardo \u00c2\u0096 Finmeccanica S.p.a. and changed its name to Leonardo S.p.a. in January 2017. Leonardo S.p.a. was founded in 1948 and is headquartered in Rome, Italy.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Aerospace & Defense",
@@ -794,7 +950,7 @@
     "LDO.VI": {
         "short_name": "LEONARDO SPA",
         "long_name": "Leonardo S.p.a.",
-        "summary": "Leonardo S.p.a. engages in the helicopters, defense electronics and security systems, aeronautics, space, and other businesses in Italy, the United Kingdom, rest of Europe, North America, and internationally. The company researches, designs, develops, produces, supports, and markets a range of helicopters for commercial, public service, and security and defense applications. It also offers multi-mission, tactical transport, combat, and trainer aircraft; airborne solutions, such as components and ISR/ISTAR, airborne sensors, and effectors in the electromagnetic spectrum; unmanned aerial systems; and aero structures. In addition, the company offers C4I solutions for the digital battlefield; air defense solutions; air traffic control and management; vehicle systems; land weapon systems; soldier systems; force protection and border control products; radars; communication products; optronics; electronic warfares; and unmanned systems for land operations. Further, it provides command and control, maritime domain awareness, and weapon systems for sea; and cyber and digital solutions, professional communications, operation and control products, and handling systems. Additionally, the company offers services and infrastructures, payloads, equipment, and programs for space, as well as services and trainings. Leonardo has strategic alliance with Intermarine in the naval sector; and partnership with ENAV to develop solutions for use in helicopters in the civil air space. The company was formerly known as Leonardo \u00c2\u0096 Finmeccanica S.p.a. and changed its name to Leonardo S.p.a. in January 2017. Leonardo S.p.a. was founded in 1948 and is headquartered in Rome, Italy.",
+        "summary": "Leonardo S.p.a. engages in the helicopters, defense electronics and security systems, aeronautics, space, and other businesses in Italy, the United Kingdom, rest of Europe, the United States, and internationally. It researches, designs, develops, produces, supports, and markets a range of helicopters for commercial, public service, and security and defense applications. The company also offers multi-mission, tactical transport, combat, and trainer aircraft; airborne solutions, such as components, airborne sensors, and effectors in the electromagnetic spectrum, as well as ISR/information/intelligence, surveillance, targeting acquisition, and reconnaissance; unmanned aerial systems; and aero structures. In addition, it provides command, control, communications, and computers solutions for the digital battlefield; air defense solutions; air traffic control and management; vehicle systems; land weapon systems; soldier systems; force protection and border control products; radars; communication products; optronics; electronic warfare products; and unmanned systems for land operations. Further, the company offers command and control, maritime domain awareness, and weapon systems for sea; and cyber and digital solutions, professional communications, operation and control products, and handling systems. Additionally, it provides services and infrastructures, space and alliance, payloads and equipment, and programs for space, as well as services and trainings. The company was formerly known as Leonardo \u00c2\u0096 Finmeccanica S.p.a. and changed its name to Leonardo S.p.a. in January 2017. Leonardo S.p.a. was founded in 1948 and is headquartered in Rome, Italy.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Aerospace & Defense",
@@ -827,15 +983,15 @@
         "country": "Italy",
         "city": "Casalecchio Di Reno"
     },
-    "MED.MI": {
-        "short_name": "IGEAMED",
-        "long_name": "Igeamed S.p.A.",
-        "summary": "Igeamed S.p.A. provides consulting, engineering, training, and medical services. The company offers EHS consulting services, such as health and safety, environmental, and energy management; engineering services, including process safety, maintenance engineering, safety engineering, and infrastructure engineering; and corporate healthcare services comprising occupational medicine, workplace health promotion, and corporate welfare, as well as consultancy services related to green power projects. It also provides business assurance, product control and development, infrastructure control, and innovation and smart industry solutions; training solutions for risk management and managerial competence comprising EHS Future Academy, Corporate Future Academy, and Business Assurance Academy; and digital software solutions for the safety in the workplace, risk assessment, and management of corporate assets. The company was founded in 1979 and is based in Rome, Italy.",
+    "MLITN.PA": {
+        "short_name": "ITALY INNOVAZIONI",
+        "long_name": "Italy Innovazioni S.P.A.",
+        "summary": "Italy Innovazioni S.P.A. engages in the design, prototyping, production, and marketing of electric outlets for homes and offices in Italy and internationally. Its products include Hide, a recessed electrical outlet; SlideBox, an adjustable electrical box; and SuperDual, a multistandard socket. The company is based in Rome, Italy.",
         "currency": "EUR",
         "sector": "Industrials",
-        "industry": "Consulting Services",
-        "exchange": "MIL",
-        "market": "it_market",
+        "industry": "Electrical Equipment & Parts",
+        "exchange": "PAR",
+        "market": "fr_market",
         "country": "Italy",
         "city": "Rome"
     },
@@ -863,6 +1019,42 @@
         "country": "Italy",
         "city": "Gallarate"
     },
+    "OS.MI": {
+        "short_name": "OFFICINA STELLARE",
+        "long_name": "Officina Stellare S.p.A.",
+        "summary": "Officina Stellare S.p.A. designs and produces telescopes, and opto-mechanical and aerospace instrumentation for ground and space based applications worldwide. It serves aerospace, defense, earth observation, astronomy and science research, and laser communication sectors. The company was founded in 2009 and is headquartered in Sarcedo, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Aerospace & Defense",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Sarcedo"
+    },
+    "OSA.MI": {
+        "short_name": "OSAI AUTOMATION SYSTEM",
+        "long_name": "OSAI Automation System S.p.A.",
+        "summary": "OSAI Automation System S.p.A. engages in the automation and robotics, electronic, laser micromachining, and semiconductor businesses in Italy and internationally. Its Automation and Robotics division offers Benches, an ergonomically designed modular workbench; rotary tables; lines; modular assembly line; and NeoTray, a vertical magazine suitable to manage blister for loading/unloading purpose. The company's Electronic division offers scalable and modular odd-shape assemblies, including Neoplace 304 modula for assembling ODD-shapes; Neomark Easy, a topnotch equipment for customer who need in line machines; Neo router modular, a solution for mechanical separation of PCB panels; Neocut Shape, which performs cutting operations without mechanical stresses on components; and NeoTray, a vertical magazine suitable to manage blister for loading/unloading purpose. The company's Semiconductor division provides Osai neohandler, a notch solution for semiconductor companies for testing MEMS and power devices in mass production; Osai power module test handler, an equipment for testing power modules; and Osai's burn-in loader/unloader solutions for pre-test operations. Its Laser Micromachining division offers DM2c, a laser marking system; fineweld 300, a laser welding system; fineplast 140R, a system for welding plastic components; and finecut 300, a system to laser cut metallic components. The company was founded in 1991 and is based in Turin, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Turin"
+    },
+    "PA6.F": {
+        "short_name": "PRIMA INDUSTRIE  EO 2,50",
+        "long_name": "Prima Industrie SpA",
+        "summary": "Prima Industrie SpA develops, manufactures, and markets laser systems for industrial applications, sheet metal processing machines, and industrial electronics and laser sources. The company operates in two divisions, PRIMA POWER and PRIMA ELECTRO. The PRIMA POWER division designs, manufactures, and sells laser machines for cutting, welding, and punching of three-dimensional and two-dimensional metallic components; and sheet metal processing machines that use mechanical tools, such as punchers, integrated punching and shearing systems, integrated punching and laser cutting systems, panel bending products, bending machines, and automated systems. The Prima Electro division is involved in the development, construction, and sale of electronic power and control components, and high-power laser sources for industrial applications. The company operates in Europe, the Middle East, Africa, the Americas, and the Asia Pacific. Prima Industrie SpA was founded in 1977 and is headquartered in Collegno, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Italy",
+        "city": "Collegno"
+    },
     "PGC.F": {
         "short_name": "POLIGRAFICA S.F.  EO 5,16",
         "long_name": "Poligrafica S. Faustino S.p.A.",
@@ -874,6 +1066,42 @@
         "market": "dr_market",
         "country": "Italy",
         "city": "Castrezzato"
+    },
+    "PLC.MI": {
+        "short_name": "PLC",
+        "long_name": "PLC S.p.A.",
+        "summary": "PLC S.p.A. acts as a general contractor in the construction of renewable energy power plants in Italy and internationally. The company operates in two segments, Construction and Services. It constructs turnkey plants for the production of electrical energy from renewable sources; and monitors and maintains electrical power grids, transformers, and accessory plants of wind farms and photovoltaic plants, as well as offers installation, maintenance, and repair services for inverters. The company also markets wind generators and components for wind generators and wind farms, as well as provides maintenance, assembly, disassembly, and management services, including electrical and civil works. The company was formerly known as Industria e Innovazione S.p.A. and changed its name to PLC S.p.A. in July 2018. PLC S.p.A. is based in Milan, Italy. PLC S.p.A is a subsidiary of Fraes S.r.l.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Milan"
+    },
+    "PMT.MI": {
+        "short_name": "PROMOTICA",
+        "long_name": "Promotica S.p.A.",
+        "summary": "Promotica S.p.A. operates in the loyalty marketing sector in Italy. It designs, organizes, and manages promotional operations and campaigns. The company was founded in 2003 and is headquartered in Desenzano del Garda, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Consulting Services",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Desenzano Del Garda"
+    },
+    "PRI.MI": {
+        "short_name": "PRIMA INDUSTRIE",
+        "long_name": "Prima Industrie SpA",
+        "summary": "Prima Industrie SpA develops, manufactures, and markets laser systems for industrial applications, sheet metal processing machines, and industrial electronics and laser sources. The company operates in two divisions, PRIMA POWER and PRIMA ELECTRO. The PRIMA POWER division designs, manufactures, and sells laser machines for cutting, welding, and punching of three-dimensional and two-dimensional metallic components; and sheet metal processing machines that use mechanical tools, such as punchers, integrated punching and shearing systems, integrated punching and laser cutting systems, panel bending products, bending machines, and automated systems. The Prima Electro division is involved in the development, construction, and sale of electronic power and control components, and high-power laser sources for industrial applications. The company operates in Europe, the Middle East, Africa, the Americas, and the Asia Pacific. Prima Industrie SpA was founded in 1977 and is headquartered in Collegno, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Collegno"
     },
     "PSF.MI": {
         "short_name": "POLIGRAF. S. F.",
@@ -890,7 +1118,7 @@
     "PST.MI": {
         "short_name": "POSTE ITALIANE",
         "long_name": "Poste Italiane SpA",
-        "summary": "Poste Italiane SpA provides postal, logistics, and financial and insurance products and services in Italy. It operates in four segments: Mail, Parcels and Distribution; Payments, Mobile and Digital; Financial Services; and Insurance Services. The Mail, Parcels and Distribution segment offers letter post, express delivery, logistics, parcels, and philately services. As of December 31, 2019, it operated a network of 12,809 post offices in Italy. The Payments, Mobile and Digital segment provides payment services, card payments, and mobile telecommunications services, as well as digital services for the public sector. The Financial Services segment is involved in the collection of various forms of savings deposits; provision of payment and foreign currency exchange services, as well as investment services; and promotion and arrangement of loans issued by banks and other authorized financial institutions. The Insurance Services segment offers life and casualty insurance products. Poste Italiane SpA is headquartered in Rome, Italy.",
+        "summary": "Poste Italiane SpA provides postal, logistics, and financial and insurance products and services in Italy. It operates in four segments: Mail, Parcels and Distribution; Payments, Mobile and Digital; Financial Services; and Insurance Services. The Mail, Parcels and Distribution segment offers letter post, express delivery, logistics, parcels, and philately services. As of December 31, 2020, it operated a network of 12,765 post offices in Italy. The Payments, Mobile and Digital segment provides payment services, card payments, and mobile telecommunications services, as well as digital services for the public sector. The Financial Services segment is involved in the collection of various forms of savings deposits; provision of payment and foreign currency exchange services, as well as investment services; and promotion and arrangement of loans issued by banks and other authorized financial institutions. The Insurance Services segment offers life and casualty insurance products. Poste Italiane SpA was founded in 1862 and is headquartered in Rome, Italy.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Conglomerates",
@@ -902,7 +1130,7 @@
     "PST.VI": {
         "short_name": "POSTE ITALIANE SPA",
         "long_name": "Poste Italiane SpA",
-        "summary": "Poste Italiane SpA provides postal, logistics, and financial and insurance products and services in Italy. It operates in four segments: Mail, Parcels and Distribution; Payments, Mobile and Digital; Financial Services; and Insurance Services. The Mail, Parcels and Distribution segment offers letter post, express delivery, logistics, parcels, and philately services. As of December 31, 2019, it operated a network of 12,809 post offices in Italy. The Payments, Mobile and Digital segment provides payment services, card payments, and mobile telecommunications services, as well as digital services for the public sector. The Financial Services segment is involved in the collection of various forms of savings deposits; provision of payment and foreign currency exchange services, as well as investment services; and promotion and arrangement of loans issued by banks and other authorized financial institutions. The Insurance Services segment offers life and casualty insurance products. Poste Italiane SpA is headquartered in Rome, Italy.",
+        "summary": "Poste Italiane SpA provides postal, logistics, and financial and insurance products and services in Italy. It operates in four segments: Mail, Parcels and Distribution; Payments, Mobile and Digital; Financial Services; and Insurance Services. The Mail, Parcels and Distribution segment offers letter post, express delivery, logistics, parcels, and philately services. As of December 31, 2020, it operated a network of 12,765 post offices in Italy. The Payments, Mobile and Digital segment provides payment services, card payments, and mobile telecommunications services, as well as digital services for the public sector. The Financial Services segment is involved in the collection of various forms of savings deposits; provision of payment and foreign currency exchange services, as well as investment services; and promotion and arrangement of loans issued by banks and other authorized financial institutions. The Insurance Services segment offers life and casualty insurance products. Poste Italiane SpA was founded in 1862 and is headquartered in Rome, Italy.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Conglomerates",
@@ -995,6 +1223,18 @@
         "country": "Italy",
         "city": "Contrada"
     },
+    "SEB.MI": {
+        "short_name": "SEBINO",
+        "long_name": "Sebino S.p.A.",
+        "summary": "Sebino S.p.A. engages in the design, development, installation, and maintenance of fire-fighting systems for the detection of fires or intrusions. It also provides security system integration services for smoke detection, anti-intrusion, access control, video surveillance with video analysis, and other systems; and services for system, fire prevention, security, smoke detection, and CCTV. The company was founded in 1979 and is headquartered in Madone, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Security & Protection Services",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Madone"
+    },
     "SECN.L": {
         "short_name": "SEC NEWGATE S.P.A. ORD NPV (CDI",
         "long_name": "SEC Newgate S.p.A.",
@@ -1030,6 +1270,18 @@
         "market": "it_market",
         "country": "Italy",
         "city": "Ravenna"
+    },
+    "SIT.MI": {
+        "short_name": "SIT",
+        "long_name": "SIT S.p.A.",
+        "summary": "SIT S.p.A. develops, manufactures, and sells measuring devices and systems for the domestic gas equipment worldwide. The company offers mechanical controls, such as electrical on off, electrical and air/gas modulation, mixer, and thermostatic and manual controls; electronic controls, including burner controls, heat recovery units, and controls for appliances; fans for condensing and atmospheric boilers, and electric fans for pellet stoves-extractor hoods and air recirculation; and integrated systems. It also provides sensors comprising thermocouples, oxyprotectors, oxypilots, sensing elements, temperature sensors devices, pressure switches, and pilot burners; flue kits consisting of coaxial and twin flue systems, exhaust and condensing kits, roof terminal and cascade systems, and condensate traps; fans for range hoods; accessories; and gas meters. The company was founded in 1953 and is headquartered in Padua, Italy. SIT S.p.A. is a subsidiary of SIT Technologies Spa.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Industrial Machinery",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Padua"
     },
     "SITI.MI": {
         "short_name": "SITI - B&T",
@@ -1078,6 +1330,18 @@
         "market": "it_market",
         "country": "Italy",
         "city": "San Vendemiano"
+    },
+    "SRI.MI": {
+        "short_name": "SERVIZI ITALIA",
+        "long_name": "Servizi Italia S.p.A.",
+        "summary": "Servizi Italia S.p.A. provides integrated services for the rental, washing, and sterilization of textiles and surgical instruments to public and private hospital facilities. The company offers wash-hire services, including planning and provision of integrated rental services; reconditioning services, such as disinfection, washing, finishing, and packaging; and logistics services for textile items, mattresses, and accessories. Its wash-hire services also comprise rental and washing of high visibility '118' emergency service items; and logistics and management of hospital wardrobes. The company also provides linen sterilization services, which include planning and rental of sterile medical devices, such as linens for operating theatres and scrubs, as well as personal protection equipment comprising gloves and masks. In addition, it offers surgical instruments sterilization services, including planning and provision of washing, packaging, and sterilization of surgical instruments and accessories for operating theatres, as well as planning, installation, and renovation of sterilization centers. It provides its services in central and northern Italy, Turkey, India, Albania, and Morocco, as well as in Sao Paulo, Brazil. The company was founded in 1986 and is headquartered in Castellina di Soragna, Italy. Servizi Italia S.p.A. is a subsidiary of Aurum S.p.A.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Business Services",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Castellina Di Soragna"
     },
     "TES.MI": {
         "short_name": "TESMEC",
@@ -1178,7 +1442,7 @@
     "VIM.MI": {
         "short_name": "VIMI FASTENERS",
         "long_name": "vimi fasteners S.p.a.",
-        "summary": "Vimi Fasteners S.p.A. manufactures and supplies various fastener systems for the automotive, industrial engine and vehicle, oil and gas, and aerospace and motorsport markets in Italy. The company offers crankcase screws and studs, cylinder head screws, flywheel bolts, bearing cap screws, connecting rod screws, screws for timing belt pulleys, adjusting screws for rocker arm distribution, and studs for exhaust systems and turbocharger screws; and turbocharger shafts, high temperature resistance studs and screws, and pins. It also provides exhaust manifold and exhaust systems, including locking knurling studs, and special screws and studs for high temperature applications; power transmission products; braking systems; and suspensions and wheel hubs. The company was formerly known as Viterie Mirabello. Vimi Fasteners S.p.A. founded in 1967 and is headquartered in Novellara, Italy. Vimi Fasteners S.p.A. is a subsidiary of Comer Industries S.p.A.",
+        "summary": "Vimi Fasteners S.p.A. manufactures and supplies various fastener systems for the automotive, industrial engine and vehicle, oil and gas, and aerospace and motorsport markets in Italy. The company offers crankcase screws and studs, cylinder head screws, flywheel bolts, bearing cap screws, connecting rod screws, screws for timing belt pulleys, adjusting screws for rocker arm distribution, and studs for exhaust systems and turbocharger screws; and turbocharger shafts, high temperature resistance studs and screws, and pins. It also provides exhaust manifold and exhaust systems, including locking knurling studs, and special screws and studs for high temperature applications; power transmission products; braking systems; and suspensions and wheel hubs. The company was formerly known as Viterie Mirabello. Vimi Fasteners S.p.A. founded in 1967 and is headquartered in Novellara, Italy. Vimi Fasteners S.p.A. operates as a subsidiary of Finregg S.p.a.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Tools & Accessories",
@@ -1190,7 +1454,7 @@
     "WBD.MI": {
         "short_name": "WEBUILD",
         "long_name": "Webuild S.p.A.",
-        "summary": "Webuild S.p.A. engages in construction activities worldwide. It designs and builds works and infrastructure for the mobility, hydroelectric energy, water, and green buildings sectors. The company also undertakes the construction of airports, and civil and industrial construction; railways and undergrounds; and motorways, roads, and bridges. The company was formerly known as Salini Impregilo S.p.A. and changed its name to Webuild S.p.A. in May 2020. The company is headquartered in Milan, Italy. Webuild S.p.A.is a subsidiary of Salini Costruttori S.p.A.",
+        "summary": "Webuild S.p.A. engages in the construction activities worldwide. The company designs and builds works and infrastructure for the mobility, hydroelectric energy, water, green buildings, and tunnelling sectors. It also undertakes the construction of airports and civil and industrial construction; railways and subways; and highways, roads, and bridges, as well as dams and hydroelectric power plants. The company is headquartered in Milan, Italy. Webuild S.p.A. is a subsidiary of Salini Costruttori S.p.A.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
@@ -1202,10 +1466,22 @@
     "WBDR.MI": {
         "short_name": "WEBUILD RSP",
         "long_name": "Webuild S.p.A.",
-        "summary": "Webuild S.p.A. engages in construction activities worldwide. It designs and builds works and infrastructure for the mobility, hydroelectric energy, water, and green buildings sectors. The company also undertakes the construction of airports, and civil and industrial construction; railways and undergrounds; and motorways, roads, and bridges. The company was formerly known as Salini Impregilo S.p.A. and changed its name to Webuild S.p.A. in May 2020. The company is headquartered in Milan, Italy. Webuild S.p.A.is a subsidiary of Salini Costruttori S.p.A.",
+        "summary": "Webuild S.p.A. engages in the construction activities worldwide. The company designs and builds works and infrastructure for the mobility, hydroelectric energy, water, green buildings, and tunnelling sectors. It also undertakes the construction of airports and civil and industrial construction; railways and subways; and highways, roads, and bridges, as well as dams and hydroelectric power plants. The company is headquartered in Milan, Italy. Webuild S.p.A. is a subsidiary of Salini Costruttori S.p.A.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "city": "Milan"
+    },
+    "WMC.MI": {
+        "short_name": "WM CAPITAL",
+        "long_name": "WM Capital S.p.A.",
+        "summary": "WM Capital S.p.A. engages in the development of business format franchising worldwide. Its activities include strategic support to growth and internationalization; entry mode strategies and development of foreign brands in the Italian market; assessment, analysis, and launch of franchise format in various industries; and franchisees research and match. The company serves fashion, energy, health and wellness, food, information technology, travel, and service industries. WM Capital S.p.A. is headquartered in Milan, Italy.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Specialty Business Services",
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",

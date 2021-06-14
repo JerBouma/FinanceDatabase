@@ -1,4 +1,16 @@
 {
+    "AGL.AX": {
+        "short_name": "AGL ENERGY FPO",
+        "long_name": "AGL Energy Limited",
+        "summary": "AGL Energy Limited provides energy and other services to residential, small and large business, and wholesale customers in Australia. It operates in four segments: Wholesale Markets, Customer Markets, Group Operations, and Investments. The company engages in generating electricity through thermal, hydro, wind, and solar power generation plants; gas storage activities; and the retail sale of electricity, gas, solar, and energy products and services. The company operates electricity generation portfolio of 11,208 megawatts; the Newcastle gas storage facility in New South Wales; the Silver Springs underground gas storage facility in Queensland; natural gas production assets at Camden in New South Wales; and the North Queensland gas assets. It serves 3.8 million customer accounts. AGL Energy Limited was founded in 1837 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "AGLNF": {
         "short_name": "AGL ENERGY",
         "long_name": "AGL Energy Limited",
@@ -71,6 +83,18 @@
         "country": "Australia",
         "city": "North Fremantle"
     },
+    "DEL.AX": {
+        "short_name": "DELOREANCP FPO",
+        "long_name": "Delorean Corporation Limited",
+        "summary": "Delorean Corporation Limited engages in the renewable energy generation and retail business in Australia and New Zealand. It is involved in designing, building, commissioning, and operation of anaerobic digestion infrastructure plants. The company also develops, owns, and manages bioenergy plants. In addition, it fabricates and manufactures tanks, pipework, and structural steel, as well as specializes IP in stainless steel double-bunded tanks for liquid storage and mixing. The company was incorporated in 2019 and is headquartered in West Perth, Australia.",
+        "currency": "AUD",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "West Perth"
+    },
     "GNX.AX": {
         "short_name": "GENEXPOWER FPO",
         "long_name": "Genex Power Limited",
@@ -107,10 +131,70 @@
         "country": "Australia",
         "city": "Subiaco"
     },
+    "N9Z1.F": {
+        "short_name": "AGL ENERGY",
+        "long_name": "AGL Energy Limited",
+        "summary": "AGL Energy Limited provides energy and other services to residential, small and large business, and wholesale customers in Australia. It operates in four segments: Wholesale Markets, Customer Markets, Group Operations, and Investments. The company engages in generating electricity through thermal, hydro, wind, and solar power generation plants; gas storage activities; and the retail sale of electricity, gas, solar, and energy products and services. The company operates electricity generation portfolio of 11,208 megawatts; the Newcastle gas storage facility in New South Wales; the Silver Springs underground gas storage facility in Queensland; natural gas production assets at Camden in New South Wales; and the North Queensland gas assets. It serves 3.8 million customer accounts. AGL Energy Limited was founded in 1837 and is based in Sydney, Australia.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "NEW.AX": {
+        "short_name": "NEW ENERGY STAPLED",
+        "long_name": "New Energy Solar Limited",
+        "summary": "New Energy Solar Limited acquires, owns and manages large scale solar generation facilities. The firm may also invest in other renewable energy assets including wind, geothermal, hydro-electricity, hybrid solutions and owns and manages large scale solar generation facilities. New Energy Solar Limited was established in 2015 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "North Sydney"
+    },
+    "TIL.SG": {
+        "short_name": "Tilt Renewables Ltd. Registered",
+        "long_name": "Tilt Renewables Limited",
+        "summary": "Tilt Renewables Limited, together with its subsidiaries, develops, owns, and manages renewable energy generation assets. The company operates in two segments, Australian Generation and New Zealand Generation. It generates electricity from renewable energy sources, such as wind and solar energy. As of March 31, 2020, the company operated 266 MW of wind generation assets in Australia and 196 MW of wind generation assets in New Zealand. It also offers financial services; and trades in electricity and associated products from renewable energy sources. The company has strategic partnership with Genesis Energy. Tilt Renewables Limited was incorporated in 2016 is headquartered in Melbourne, Australia. Tilt Renewables Limited is a subsidiary of Infratil Limited.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "STU",
+        "market": "dr_market",
+        "country": "Australia",
+        "city": "Melbourne"
+    },
+    "TLT.AX": {
+        "short_name": "TILTRENEW FPO NZX",
+        "long_name": "Tilt Renewables Limited",
+        "summary": "Tilt Renewables Limited, together with its subsidiaries, develops, owns, and manages renewable energy generation assets. The company operates in two segments, Australian Generation and New Zealand Generation. It generates electricity from renewable energy sources, such as wind and solar energy. As of March 31, 2020, the company operated 266 MW of wind generation assets in Australia and 196 MW of wind generation assets in New Zealand. It also offers financial services; and trades in electricity and associated products from renewable energy sources. The company has strategic partnership with Genesis Energy. Tilt Renewables Limited was incorporated in 2016 is headquartered in Melbourne, Australia. Tilt Renewables Limited is a subsidiary of Infratil Limited.",
+        "currency": "AUD",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Melbourne"
+    },
+    "TLT.NZ": {
+        "short_name": "Tilt Renewables Limited Ordinar",
+        "long_name": "Tilt Renewables Limited",
+        "summary": "Tilt Renewables Limited, together with its subsidiaries, develops, owns, and manages renewable energy generation assets. The company operates in two segments, Australian Generation and New Zealand Generation. It generates electricity from renewable energy sources, such as wind and solar energy. As of March 31, 2020, the company operated 266 MW of wind generation assets in Australia and 196 MW of wind generation assets in New Zealand. It also offers financial services; and trades in electricity and associated products from renewable energy sources. The company has strategic partnership with Genesis Energy. Tilt Renewables Limited was incorporated in 2016 is headquartered in Melbourne, Australia. Tilt Renewables Limited is a subsidiary of Infratil Limited.",
+        "currency": "NZD",
+        "sector": "Utilities",
+        "industry": "Utilities - Renewable",
+        "exchange": "NZE",
+        "market": "nz_market",
+        "country": "Australia",
+        "city": "Melbourne"
+    },
     "VPR.AX": {
         "short_name": "VOLT POWER FPO",
         "long_name": "Volt Power Group Limited",
-        "summary": "Volt Power Group Limited, together with its subsidiaries, provides power generation technology solutions in Australia. It offers Accretive Thermal Energy Node, a waste heat recovery power generation technology designed to harvest industrial waste heat; and sample crushing equipment for the use in iron ore industry. The company also develops, manufactures, and supplies mobile solar/Li-Ion battery power box towers compatible with LED lighting; and provides LTE/Wi-Fi repeater communication solutions, as well as CCTV retro-fits. It serves resources and construction sectors. The company was formerly known as Enerji Limited and changed its name to Volt Power Group Limited in January 2017. Volt Power Group Limited was incorporated in 1989 and is based in Belmont, Australia.",
+        "summary": "Volt Power Group Limited, together with its subsidiaries, provides power generation technology solutions in Australia. It offers Accretive Thermal Energy Node, a waste heat recovery power generation technology designed to harvest industrial waste heat; and sample crushing equipment for the use in iron ore industry. The company also develops, manufactures, and supplies mobile solar/Li-Ion battery enabled LED lightings, LTE/Wi-Fi repeater communication solutions, and CCTV retrofits. It serves resources and construction sectors. The company was formerly known as Enerji Limited and changed its name to Volt Power Group Limited in January 2017. Volt Power Group Limited was incorporated in 1989 and is based in Belmont, Australia.",
         "currency": "AUD",
         "sector": "Utilities",
         "industry": "Utilities - Renewable",

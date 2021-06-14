@@ -1,16 +1,4 @@
 {
-    "CHR.TA": {
-        "short_name": "CHIRON REFINERIES",
-        "long_name": "Upsellon Brands Holdings Ltd",
-        "summary": "Chiron Refineries Ltd purchases, dismantles, refurbishes, operates, and sells refineries in Israel. The company also provides engineering, technical and logistical consulting, and initiative services related to refineries and components. It serves private entities, states, and government agencies. The company was formerly known as I.P.C. Oil and Gas Holdings Ltd. and changed its name to Chiron Refineries Ltd in November 2014. Chiron Refineries Ltd was incorporated in 1993 and is based in Ramat Gan, Israel.",
-        "currency": "ILA",
-        "sector": "Technology",
-        "industry": "Information Technology Services",
-        "exchange": "TLV",
-        "market": "il_market",
-        "country": "Israel",
-        "city": "Ramat Gan"
-    },
     "CMDR.TA": {
         "short_name": "COMPUTER DIRECT",
         "long_name": "Computer Direct Group Ltd.",
@@ -22,6 +10,18 @@
         "market": "il_market",
         "country": "Israel",
         "city": "Petah Tikva"
+    },
+    "EMCO.TA": {
+        "short_name": "E & M COMPUTING",
+        "long_name": "E & M Computing Ltd.",
+        "summary": "E & M Computing Ltd. provides cloud, information systems, and data-center technologies in Israel. It offers IT infrastructure services, including professional, big-data and analytics, hyperscale cloud, business continuity, cyber security, software, hosted IT, networking, and outsourcing services; infrastructure for large scale private clouds, compute clusters, and software- defined systems; and design, integration, and logistic services for software vendors. The company was founded in 1984 and is headquartered in Ramat Gan, Israel.",
+        "currency": "ILA",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "city": "Ramat Gan"
     },
     "ESYL": {
         "short_name": "EASYLINK SOLUTIONS CORPORATION",
@@ -44,6 +44,30 @@
         "industry": "Information Technology Services",
         "exchange": "NMS",
         "market": "us_market",
+        "country": "Israel",
+        "city": "Or Yehuda"
+    },
+    "FSY.F": {
+        "short_name": "FORMULA SYS 1985 ADR",
+        "long_name": "Formula Systems (1985) Ltd.",
+        "summary": "Formula Systems (1985) Ltd., through its subsidiaries, provides software, proprietary and non-proprietary software, and software product marketing and support services in Israel and internationally. The company offers computer and telecommunication infrastructure solutions; computer solutions to computer and communications infrastructures; cloud computing solutions; database and big data services; customer relations management, computer systems management infrastructures, web world content management, database and data warehouse mining, application integration, database and systems, data management, and software development tools; and professional training courses and advanced professional studies. It also markets and sells computers and peripheral equipment to business customers. In addition, the company offers property and casualty insurance platforms, such as Sapiens, Sapiens CoreSuite, Sapiens IDITSuite, Sapiens PolicyPro, Sapiens BillingPro, Sapiens ClaimsPro, e-Tica, and Sapiens Stingray; life, pension, and annuities platforms, including Sapiens CoreSuite, Sapiens UnderwritingPro, Sapiens ApplicationPro, Sapiens IllustrationPro, and Sapiens ConsolidationMaster; reinsurance software solutions comprising Sapiens ReinsuranceMaster, Sapiens ReinsurancePro, and Sapiens Reinsurance GO; and Sapiens platform for workers' compensation solutions. Further, it provides financial and compliance solutions that include Sapiens FinancialPro, Sapiens Financial GO, and Sapiens StatementPro; Sapiens DECISION, a decision management platform; and technology-based solutions and digital insurance suites. Additionally, the company offers application development and business process integration platforms; vertical software solutions; software services and information technologies outsourcing software services; and professionals in various areas, as well as develops on-premise payroll software solutions. The company was founded in 1985 and is headquartered in Or Yehuda, Israel.",
+        "currency": "EUR",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Israel",
+        "city": "Or Yehuda"
+    },
+    "FSY.MU": {
+        "short_name": "FORMULA SYS 1985 ADR",
+        "long_name": "Formula Systems (1985) Ltd.",
+        "summary": "Formula Systems (1985) Ltd., through its subsidiaries, provides software, proprietary and non-proprietary software, and software product marketing and support services in Israel and internationally. The company offers computer and telecommunication infrastructure solutions; computer solutions to computer and communications infrastructures; cloud computing solutions; database and big data services; customer relations management, computer systems management infrastructures, web world content management, database and data warehouse mining, application integration, database and systems, data management, and software development tools; and professional training courses and advanced professional studies. It also markets and sells computers and peripheral equipment to business customers. In addition, the company offers property and casualty insurance platforms, such as Sapiens, Sapiens CoreSuite, Sapiens IDITSuite, Sapiens PolicyPro, Sapiens BillingPro, Sapiens ClaimsPro, e-Tica, and Sapiens Stingray; life, pension, and annuities platforms, including Sapiens CoreSuite, Sapiens UnderwritingPro, Sapiens ApplicationPro, Sapiens IllustrationPro, and Sapiens ConsolidationMaster; reinsurance software solutions comprising Sapiens ReinsuranceMaster, Sapiens ReinsurancePro, and Sapiens Reinsurance GO; and Sapiens platform for workers' compensation solutions. Further, it provides financial and compliance solutions that include Sapiens FinancialPro, Sapiens Financial GO, and Sapiens StatementPro; Sapiens DECISION, a decision management platform; and technology-based solutions and digital insurance suites. Additionally, the company offers application development and business process integration platforms; vertical software solutions; software services and information technologies outsourcing software services; and professionals in various areas, as well as develops on-premise payroll software solutions. The company was founded in 1985 and is headquartered in Or Yehuda, Israel.",
+        "currency": "EUR",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "exchange": "MUN",
+        "market": "dr_market",
         "country": "Israel",
         "city": "Or Yehuda"
     },
@@ -71,18 +95,6 @@
         "country": "Israel",
         "city": "Petah Tikva"
     },
-    "TALD.TA": {
-        "short_name": "TALDOR COMPUTER SY",
-        "long_name": "Taldor Computer Systems (1986) Ltd",
-        "summary": "Taldor Computer Systems (1986) Ltd. plans, develops, and delivers business and technological solutions in the areas of software, infrastructure, hardware, business operations, and self-service kiosks in Israel. It offers software solutions, including Web and mobile development; communications and infrastructures solutions; and a range of private, public, and hybrid cloud solutions, including full command-and-control, budget management, and personalized automation, as well as develops applications and user interfaces for the Internet, mobile, and Internet of Things. The company also provides cyber and information security solutions ranging from the infrastructure and application levels to the end-user level; and GIS and sensor systems that provide specific and holistic solutions for the management of smart cities and smart organizations. In addition, it organizes, manages, and analysis covert and covert information, combined with open source systems and a data framework; and managed and business process outsourcing services. The company serves clients in various sectors, such as finance, public, defense, commerce, healthcare, etc. Taldor Computer Systems (1986) Ltd was founded in 1986 and is based in Holon, Israel.",
-        "currency": "ILA",
-        "sector": "Technology",
-        "industry": "Information Technology Services",
-        "exchange": "TLV",
-        "market": "il_market",
-        "country": "Israel",
-        "city": "Holon"
-    },
     "TOPS.TA": {
         "short_name": "TOP RAMDOR SYSTEMS",
         "long_name": "Top Ramdor Systems & Computers Co. (1990) Ltd",
@@ -94,5 +106,17 @@
         "market": "il_market",
         "country": "Israel",
         "city": "Tel Aviv"
+    },
+    "UPSL.TA": {
+        "short_name": "UPSELLON BRANDS",
+        "long_name": "Upsellon Brands Holdings Ltd",
+        "summary": "Upsellon Brands Holdings Ltd purchases, dismantles, refurbishes, operates, and sells refineries in Israel. The company also provides engineering, technical and logistical consulting, and initiative services related to refineries and components. It serves private entities, states, and government agencies. The company was formerly known as Chiron Refineries Ltd and changed its name to Upsellon Brands Holdings Ltd in January 2020. Upsellon Brands Holdings Ltd was incorporated in 1993 and is based in Ramat Gan, Israel.",
+        "currency": "ILA",
+        "sector": "Technology",
+        "industry": "Information Technology Services",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "city": "Ramat Gan"
     }
 }

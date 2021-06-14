@@ -35,22 +35,22 @@
         "country": "Hong Kong",
         "city": "Wan Chai"
     },
+    "0808.HK": {
+        "short_name": "PROSPERITY REIT",
+        "long_name": "Prosperity Real Estate Investment Trust",
+        "summary": "Prosperity REIT [SEHK: 808] is a Hong Kong collective investment scheme authorized under section 104 of the Securities and Futures Ordinance (Chapter 571 of the Laws of Hong Kong). Prosperity REIT owns a diverse portfolio of seven high-quality properties in the decentralized business districts of Hong Kong, comprising all, or a portion of, three Grade A office buildings, one commercial building, two industrial/office buildings and one industrial building, with a total gross rentable area of about 1.28 million sq. ft.",
+        "currency": "HKD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "HKG",
+        "market": "hk_market",
+        "country": "Hong Kong",
+        "city": "Central"
+    },
     "088260.KS": {
         "short_name": "E KOCREF",
         "long_name": "E Kocref Cr-Reit",
         "summary": "E Kocref Cr-Reit engages in the acquisition, development, management, and leasing of real estate properties. The company has elected to be taxed as a real estate investment trust. As a result, it would not be subject to corporate income tax on that portion of its net income that is distributed to shareholders. The company was founded in 2005 and is based in Seoul, South Korea. E Kocref Cr-Reit is a subsidiary of ELAND RETAIL.Ltd.",
-        "currency": "KRW",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "KSC",
-        "market": "kr_market",
-        "country": "South Korea",
-        "city": "Seoul"
-    },
-    "145270.KS": {
-        "short_name": "KTOPREITs",
-        "long_name": "K-TOP Reits Co.,Ltd.",
-        "summary": "K-TOP REITS co.Ltd. is a real estate investment trust. K-TOP REITS co.Ltd. is based in Seoul, South Korea.",
         "currency": "KRW",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -99,6 +99,18 @@
         "short_name": "MORI HILLS REIT INVESTMENT CORP",
         "long_name": "Mori Hills REIT Investment Corporation",
         "summary": "MHR aims to further enhance the profitability and asset value of its portfolio through growth created by making targeted investment in the \u00c2\u0093City,\u00c2\u0094 while paying close attention to the competitiveness of the \u00c2\u0093City\u00c2\u0094 concentrating on central Tokyo, and on the portfolio's ability to create value. \u00c2\u0093City\u00c2\u0094 in MHR's definition is not merely a geographic location with an aggregation of buildings, but a \u00c2\u0094space\u00c2\u0094 with multiple uses, such as for work, residence, recreation, rest and study that integrates various economic and cultural activities of the people that gather there. MHR believes that the provision of all urban elements will result in people, products and information concentrating and merging to generate new business models and lifestyles. MHR recognizes its Sponsor, the Mori Building Group, (Mori Building Co., Ltd. being its core company), as being uniquely positioned to realize investments in the \u00c2\u0093City.\u00c2\u0094 By optimally utilizing the comprehensive strengths of the Mori Building Group, which has completed successive large-scale redevelopments in central Tokyo, MHR aims to acquire scarce, premium properties and to enhance the asset value of its portfolio.",
+        "currency": "JPY",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "JPX",
+        "market": "jp_market",
+        "country": "Japan",
+        "city": "Tokyo"
+    },
+    "3279.T": {
+        "short_name": "ACTIVIA PROPERTIES INC",
+        "long_name": "Activia Properties Inc.",
+        "summary": "Activia Properties Inc. invests primarily in Urban Retail and Tokyo Office Properties. API seeks to increase unitholder value by building a portfolio of properties that are competitive in the medium- to long-term and operating it. To build a portfolio of properties that can expect stable and sustainable customer demand, we believe that in addition to the location, use, scale, and quality of properties, reducing our environmental footprint and contributing to the surrounding communities and environment are important.",
         "currency": "JPY",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -263,6 +275,18 @@
         "country": "Saudi Arabia",
         "city": "Jeddah"
     },
+    "5PP.F": {
+        "short_name": "LONDONMETRIC PROPERTY",
+        "long_name": "LondonMetric Property Plc",
+        "summary": "LondonMetric is a FTSE 250 REIT that owns one of the UK's leading listed logistics platforms alongside a diversified long income portfolio, with 16 million sq ft under management. It owns and manages desirable real estate that meets occupiers' demands, delivers reliable, repetitive and growing income-led returns and outperforms over the long term.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
     "5XR.F": {
         "short_name": "XIOR STUDENT HOUSING N.V.",
         "long_name": "Xior Student Housing NV",
@@ -362,7 +386,7 @@
     "8977.T": {
         "short_name": "HANKYU HANSHIN REIT INC",
         "long_name": "Hankyu Hanshin REIT, Inc.",
-        "summary": "Hankyu Hanshin REIT, Inc. manages funds contributed by unit holders by investing them primarily in real estate and real estate-backed securities in accordance with its Articles of Incorporation.",
+        "summary": "Hankyu Hanshin REIT, Inc. shall manage funds contributed by unitholders by investing them primarily in real estate and real estate-backed securities in accordance with its Articles of Incorporation.",
         "currency": "JPY",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -370,6 +394,18 @@
         "market": "jp_market",
         "country": "Japan",
         "city": "Osaka"
+    },
+    "8L9.F": {
+        "short_name": "FONCIERE ATLAND INH.EO 11",
+        "long_name": "Fonciere Atland",
+        "summary": "Fonciere Atland operates as a real estate investment trust. It invests in offices, retail outlets, warehouses, or light industrial premises. It also provides real estate sale-leaseback services, and construction and turnkey rental development services to business customers. The company is based in Paris, France.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "France",
+        "city": "Paris"
     },
     "AAT": {
         "short_name": "American Assets Trust, Inc.",
@@ -491,6 +527,18 @@
         "country": "South Africa",
         "city": "Johannesburg"
     },
+    "AHH-PA": {
+        "short_name": "Armada Hoffler Properties, Inc.",
+        "long_name": "Armada Hoffler Properties, Inc.",
+        "summary": "Armada Hoffler Properties, Inc. (NYSE: AHH) is a vertically-integrated, self-managed real estate investment trust (\"REIT\") with four decades of experience developing, building, acquiring, and managing high-quality, institutional-grade office, retail, and multifamily properties located primarily in the Mid-Atlantic and Southeastern United States. In addition to developing and building properties for its own account, the Company also provides development and general contracting construction services to third-party clients. Founded in 1979 by Daniel A. Hoffler, the Company has elected to be taxed as a REIT for U.S. federal income tax purposes.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Virginia Beach"
+    },
     "AHH": {
         "short_name": "Armada Hoffler Properties, Inc.",
         "long_name": "Armada Hoffler Properties, Inc.",
@@ -503,17 +551,17 @@
         "country": "United States",
         "city": "Virginia Beach"
     },
-    "AHH-PA": {
-        "short_name": "Armada Hoffler Properties, Inc.",
-        "long_name": "Armada Hoffler Properties, Inc.",
-        "summary": "Armada Hoffler Properties, Inc. (NYSE: AHH) is a vertically-integrated, self-managed real estate investment trust (\"REIT\") with four decades of experience developing, building, acquiring, and managing high-quality, institutional-grade office, retail, and multifamily properties located primarily in the Mid-Atlantic and Southeastern United States. In addition to developing and building properties for its own account, the Company also provides development and general contracting construction services to third-party clients. Founded in 1979 by Daniel A. Hoffler, the Company has elected to be taxed as a REIT for U.S. federal income tax purposes.",
-        "currency": "USD",
+    "AKL.AX": {
+        "short_name": "AUCKREESTR UNIT",
+        "long_name": "Auckland Real Estate Trust",
+        "summary": "Auckland Real Estate Trust engages in the property investment activities in the United States. The company's property portfolio comprises retail, office, and industrial properties located in New Jersey, Massachusetts, Illinois, New York, and New Hampshire. Auckland Real Estate Trust was formerly known as Quattro Plus Real Estate. Auckland Real Estate Trust is based in Sydney, Australia.",
+        "currency": "AUD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "Virginia Beach"
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
     },
     "AKSGY.IS": {
         "short_name": "AKIS GMYO",
@@ -550,6 +598,18 @@
         "market": "tr_market",
         "country": "Turkey",
         "city": "Istanbul"
+    },
+    "APL.NZ": {
+        "short_name": "Asset Plus Limited Ordinary Sha",
+        "long_name": "Asset Plus Limited",
+        "summary": "NPT Limited operates as a property company. It invests in retail, commercial, and industrial properties located in Auckland, Wellington, Napier, and Christchurch. The company was formerly known as The National Property Trust and changed its name to NPT Limited on April 1, 2011. NPT Limited was founded in 1994 and is based in Wellington, New Zealand.",
+        "currency": "NZD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "NZE",
+        "market": "nz_market",
+        "country": "New Zealand",
+        "city": "Auckland"
     },
     "APW.AX": {
         "short_name": "AIMSPROSEC UNIT",
@@ -635,44 +695,8 @@
         "country": "South Africa",
         "city": "Waterfall City"
     },
-    "AX-PE.TO": {
-        "short_name": "ARTIS REIT PREF SER E",
-        "long_name": "Artis Real Estate Investment Trust",
-        "summary": "Artis is a diversified Canadian real estate investment trust investing in industrial and office properties in Canada and the United States. Since 2004, Artis has executed an aggressive but disciplined growth strategy, building a portfolio of commercial properties in select markets in Canada and the United States. As of September 30, 2020, Artis' commercial property comprises approximately 23.8 million square feet of leasable area.",
-        "currency": "CAD",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "TOR",
-        "market": "ca_market",
-        "country": "Canada",
-        "city": "Winnipeg"
-    },
-    "AX-PI.TO": {
-        "short_name": "ARTIS REIT PREF SERIES I",
-        "long_name": "Artis Real Estate Investment Trust",
-        "summary": "Artis is a diversified Canadian real estate investment trust investing in industrial and office properties in Canada and the United States. Since 2004, Artis has executed an aggressive but disciplined growth strategy, building a portfolio of commercial properties in select markets in Canada and the United States. As of September 30, 2020, Artis' commercial property comprises approximately 23.8 million square feet of leasable area.",
-        "currency": "CAD",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "TOR",
-        "market": "ca_market",
-        "country": "Canada",
-        "city": "Winnipeg"
-    },
-    "AX-UN.TO": {
-        "short_name": "ARTIS REAL ESTATE INVESTMENT TR",
-        "long_name": "Artis Real Estate Investment Trust",
-        "summary": "Artis is a diversified Canadian real estate investment trust investing in industrial and office properties in Canada and the United States. Since 2004, Artis has executed an aggressive but disciplined growth strategy, building a portfolio of commercial properties in select markets in Canada and the United States. As of September 30, 2020, Artis' commercial property comprises approximately 23.8 million square feet of leasable area.",
-        "currency": "CAD",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "TOR",
-        "market": "ca_market",
-        "country": "Canada",
-        "city": "Winnipeg"
-    },
     "BBPO11.SA": {
-        "short_name": "FII BB PRGIICI",
+        "short_name": "FII BB PRGIICI  ER",
         "long_name": "BB Progressivo II Fundo de Investimento Imobili\u00e1rio - FII",
         "summary": null,
         "currency": "BRL",
@@ -684,7 +708,7 @@
         "city": "Sao Paulo"
     },
     "BBRC11.SA": {
-        "short_name": "FII BB CORP CI",
+        "short_name": "FII BB CORP CI  ER",
         "long_name": "BB Renda Corporativa Fundo de Investimento Imobili\u00e1rio - FII",
         "summary": null,
         "currency": "BRL",
@@ -708,7 +732,7 @@
         "city": "Sao Paulo"
     },
     "BCIA11.SA": {
-        "short_name": "FII BCIA    CI",
+        "short_name": "FII BCIA    CI  ER",
         "long_name": "Bradesco Carteira Imobiliaria Ativa Fundos de Investimento Imobiliario",
         "summary": "Bradesco Carteira Imobiliaria Ativa Fundos de Investimento Imobiliario specializes in real estate investing.",
         "currency": "BRL",
@@ -720,7 +744,7 @@
         "city": null
     },
     "BCRI11.SA": {
-        "short_name": "FII BEES CRICI",
+        "short_name": "FII BEES CRICI  ERS",
         "long_name": "Banestes Recebiveis Imobiliarios Fundo Investimento Imobiliario FII",
         "summary": "Banestes Recebiveis Imobiliarios Fundo Investimento Imobiliario FII specializes in real estate investments.",
         "currency": "BRL",
@@ -734,7 +758,7 @@
     "BELP": {
         "short_name": "BELPOINTE REIT INC",
         "long_name": "Belpointe REIT, Inc.",
-        "summary": "Belpointe REIT, Inc. (the \u00c2\u0093Company\u00c2\u0094) is a Maryland corporation that concentrates its operations on the identification, acquisition and development or redevelopment of properties located within \u00c2\u0093qualified opportunity zones.\u00c2\u0094",
+        "summary": "Belpointe REIT, Inc. focuses to engage in the identification, acquisition, and development or redevelopment of properties located within qualified opportunity zones. The company was founded in 2018 and is based in Greenwich, Connecticut.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -754,6 +778,18 @@
         "market": "hu_market",
         "country": "Hungary",
         "city": "Budapest"
+    },
+    "BLD.F": {
+        "short_name": "BRIT. LD CO. PLC  LS-,25",
+        "long_name": "British Land Company Plc",
+        "summary": "Our portfolio of high quality UK commercial property is focused on London Offices and Retail around the UK. We own or manage a portfolio valued at \u00c2\u00a313.7bn (British Land share: \u00c2\u00a310.3bn) as at 30 September 2020 making us one of Europe's largest listed real estate investment companies. Our strategy is to provide places which meet the needs of our customers and respond to changing lifestyles - Places People Prefer. We do this by creating great environments both inside and outside our buildings and use our scale and placemaking skills to enhance and enliven them. This expands their appeal to a broader range of occupiers, creating enduring demand and driving sustainable, long term performance. Our Offices portfolio comprises three office-led campuses in central London as well as high quality standalone buildings and accounts for 65% of our portfolio. Our Retail portfolio is focused on retail parks and shopping centres, and accounts for 31% of our portfolio. Increasingly our focus is on providing a mix of uses and this is most evident at Canada Water, our 53 acre redevelopment opportunity where we have plans to create a new neighbourhood for London. Sustainability is embedded throughout our business. Our places, which are designed to meet high sustainability standards, become part of local communities, provide opportunities for skills development and employment and promote wellbeing. In April 2016 British Land received the Queen's Award for Enterprise: Sustainable Development, the UK's highest accolade for business success for economic, social and environmental achievements over a period of five years.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United Kingdom",
+        "city": "London"
     },
     "BLDA.F": {
         "short_name": "BRITISH LAND ADR/1 LS-,25",
@@ -792,7 +828,7 @@
         "city": "London"
     },
     "BNFS11.SA": {
-        "short_name": "FII BANRISULCI",
+        "short_name": "FII BANRISULCI  ER",
         "long_name": "Banrisul N Front Fund Investment IMO FII Fund",
         "summary": null,
         "currency": "BRL",
@@ -816,7 +852,7 @@
         "city": "Rochester"
     },
     "BPFF11.SA": {
-        "short_name": "FII ABSOLUTOCI",
+        "short_name": "FII ABSOLUTOCI  ER",
         "long_name": "Fundo de Investimento Imobili\u00e1rio - FII Brasil Plural Absoluto Fundo de Fundos",
         "summary": "Fundo de Investimento Imobili\u00c3\u00a1rio - FII Brasil Plural Absoluto Fundo de Fundos specializes in real estate investments.",
         "currency": "BRL",
@@ -875,20 +911,20 @@
         "country": "United Kingdom",
         "city": "London"
     },
-    "BWR.AX": {
-        "short_name": "BWLPTRUST UNITS",
-        "long_name": "Blackwall Property Trust",
-        "summary": "Blackwall Property Trust is a real estate investment trust externally managed by BlackWall Fund Services Limited. It invests in the real estate markets across Australia. It primarily invests in the industrial, retail and commercial Australian properties, and unlisted property securities. Blackwall Property Trust is based in Australia.",
-        "currency": "AUD",
+    "BVP.SI": {
+        "short_name": "AIMS Property",
+        "long_name": "Aims Property Securities Fund",
+        "summary": "Aims Property Securities Fund is a close-ended fund of funds launched by MacArthurCook Ltd. The fund is managed by MacarthurCook Fund Management Limited. It invests in the funds investing in the real estate sector including unlisted property trusts/syndicates, wholesale property funds, listed property trust, listed property-related companies, and cash and fixed interest securities. The fund employs a fundamental analysis with a bottom-up stock picking approach focusing on factors such as skills of manager, quality of fund, quality of properties, debt management skills and commitment to income growth, financial strength, proven management, and business model strength to create its portfolio. It benchmarks the performance of its portfolio against the S&P/ASX200 Property Trust Accumulation Index. The fund conducts in-house research to make its investments. It was formerly known as MacArthurcook Property Securties Fund. Aims Property Securities Fund is domiciled in Australia.",
+        "currency": "SGD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
-        "exchange": "ASX",
-        "market": "au_market",
+        "exchange": "SES",
+        "market": "sg_market",
         "country": "Australia",
-        "city": "Neutral Bay"
+        "city": "Sydney"
     },
     "CBOP11.SA": {
-        "short_name": "FII C BRANCOCI",
+        "short_name": "FII C BRANCOCI  ER",
         "long_name": "Castello Branco Off Park Fund In Im",
         "summary": null,
         "currency": "BRL",
@@ -911,17 +947,17 @@
         "country": "France",
         "city": "Paris"
     },
-    "CDMGF": {
-        "short_name": "ICADE",
-        "long_name": "Icade SA",
-        "summary": "As an investor and a developer, Icade is an integrated real estate player that designs innovative real estate products and services adapted to new urban lifestyles and habits. By placing corporate social responsibility and innovation at the core of its strategy, Icade is closely involved with stakeholders and users in the cities\u00c2\u0097local authorities and communities, companies and employees, institutions and associations\u00c2\u0085 As an office and healthcare property investor (portfolio value of \u00c2\u008011.6bn as of 06/30/2020 on a proportionate consolidation basis) and as a property developer (2019 economic revenues of nearly \u00c2\u00801bn), Icade has been able to reinvent the real estate business and foster the emergence of tomorrow's greener, smarter and more responsible cities. Icade is a significant player in the Greater Paris area and major French cities. Icade is listed on Euronext Paris as a French Listed Real Estate Investment Company (soci\u00c3\u00a9t\u00c3\u00a9 d'investissement immobilier cot\u00c3\u00a9e, SIIC). Its leading shareholder is the Caisse des d\u00c3\u00a9p\u00c3\u00b4ts Group.",
-        "currency": "USD",
+    "CHC.AX": {
+        "short_name": "CHARTER HG STP FORUS",
+        "long_name": "Charter Hall Group",
+        "summary": "With over 30 years' experience in property investment and funds management, we're one of Australia's leading fully integrated property groups. We use our property expertise to access, deploy, manage and invest equity across our core sectors \u00c2\u0096 office, retail, industrial & logistics and social infrastructure. Operating with prudence, we've carefully curated a $41.8 billion plus diverse portfolio of over 1100 high quality, long leased properties. Partnership and financial discipline are at the heart of our approach. Acting in the best interest of customers and communities, we combine insight and inventiveness to unlock hidden value. Taking a long term view, our $6.8 billion development pipeline delivers sustainable, technologically enabled projects for our customers. The impacts of what we do are far-reaching. From helping businesses succeed by supporting their evolving workplace needs, to providing investors with superior returns for a better retirement, we're powered by the drive to go further.",
+        "currency": "AUD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "France",
-        "city": "Issy-les-Moulineaux"
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
     },
     "CLNC": {
         "short_name": "Colony Credit Real Estate, Inc.",
@@ -934,18 +970,6 @@
         "market": "us_market",
         "country": "United States",
         "city": "Los Angeles"
-    },
-    "CLNY": {
-        "short_name": "Colony Capital, Inc.",
-        "long_name": "Colony Capital, Inc.",
-        "summary": "Colony Capital, Inc. (NYSE: CLNY) is a leading global investment firm with a heritage of identifying and capitalizing on key secular trends in real estate. The Company manages an approximately $47 billion portfolio of real assets on behalf of its shareholders and limited partners, including over $23 billion in digital real estate investments through Digital Colony, its digital infrastructure platform. Colony Capital, structured as a REIT, is headquartered in Los Angeles with key offices in Boca Raton, New York, and London, and has over 350 employees across 20 locations in 11 countries.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "Boca Raton"
     },
     "CLNY-PG": {
         "short_name": "Colony Capital, Inc. 7.50% Seri",
@@ -995,6 +1019,18 @@
         "country": "United States",
         "city": "Boca Raton"
     },
+    "CLNY": {
+        "short_name": "Colony Capital, Inc.",
+        "long_name": "Colony Capital, Inc.",
+        "summary": "Colony Capital, Inc. (NYSE: CLNY) is a leading global investment firm with a heritage of identifying and capitalizing on key secular trends in real estate. The Company manages an approximately $47 billion portfolio of real assets on behalf of its shareholders and limited partners, including over $23 billion in digital real estate investments through Digital Colony, its digital infrastructure platform. Colony Capital, structured as a REIT, is headquartered in Los Angeles with key offices in Boca Raton, New York, and London, and has over 350 employees across 20 locations in 11 countries.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Boca Raton"
+    },
     "CLPR": {
         "short_name": "Clipper Realty Inc.",
         "long_name": "Clipper Realty Inc.",
@@ -1010,7 +1046,7 @@
     "CLW.AX": {
         "short_name": "CHTR H LWR STAPLED",
         "long_name": "Charter Hall Long WALE REIT",
-        "summary": "Charter Hall Long WALE REIT is an Australian Real Estate Investment Trust (REIT) listed on the ASX and investing in high quality Australasian real estate assets that are predominantly leased to corporate and government tenants on long term leases. Charter Hall Long WALE REIT is managed by Charter Hall Group (ASX:CHC). With over 29 years' experience in property investment and funds management, we're one of Australia's leading fully integrated property groups. We use our property expertise to access, deploy, manage and invest equity across our core sectors \u00c2\u0096 office, retail, industrial and social infrastructure. Operating with prudence Charter Hall Group as manager of CLW has carefully curated a $40 billion diverse portfolio of over 1100 high quality, long leased properties. Partnership and financial discipline are at the heart of our approach. Acting in the best interest of customers and communities, we combine insight and inventiveness to unlock hidden value. Taking a long term view, our $7.3 billion development pipeline delivers sustainable, technologically enabled projects for our customers. The impacts of what we do are far-reaching. From helping businesses succeed by supporting their evolving workplace needs, to providing investors with superior returns for a better retirement, we're powered by the drive to go further.",
+        "summary": "Charter Hall Long WALE REIT is an Australian Real Estate Investment Trust (REIT) listed on the ASX and investing in high quality Australasian real estate assets that are predominantly leased to corporate and government tenants on long term leases. Charter Hall Long WALE REIT is managed by Charter Hall Group (ASX:CHC). With over 29 years' experience in property investment and funds management, we're one of Australia's leading fully integrated property groups. We use our property expertise to access, deploy, manage and invest equity across our core sectors - office, industrial & logistics, retail and social infrastructure. Operating with prudence, we've carefully curated a $45 billion diverse portfolio of over 1,300 high quality, long leased properties. Partnership and financial discipline are at the heart of our approach. Acting in the best interest of customers and communities, we combine insight and inventiveness to unlock hidden value. Taking a long-term view, our $6.8 billion development pipeline delivers sustainable, technologically enabled projects for our customers. The impacts of what we do are far-reaching. From helping businesses succeed by supporting their evolving workplace needs, to providing investors with superior returns for a better retirement, we're powered by the drive to go further.",
         "currency": "AUD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -1034,7 +1070,7 @@
     "CMOU.SI": {
         "short_name": "KepPacOakReitUSD",
         "long_name": "Keppel Pacific Oak US REIT",
-        "summary": "Keppel Pacific Oak US REIT (KORE) is a distinctive office REIT listed on the main board of the Singapore Exchange Securities Trading Limited (SGX-ST) on 9 November 2017. KORE's investment strategy is to principally invest in a diversified portfolio of income-producing commercial assets and real estate-related assets in key growth markets of the United States (US) with positive economic and office fundamentals that generally outpace the US national average, and the average of the gateway cities, so as to provide sustainable distributions and strong total returns for Unitholders. KORE is managed by Keppel Pacific Oak US REIT Management Pte. Ltd., which is jointly owned by two Sponsors, Keppel Capital and KPA. KORE's portfolio comprises a balanced mix of 13 freehold office buildings and business campuses across eight key growth markets driven by innovation and technology in the US. The assets have a combined value of US$1.27 billion and an aggregate net lettable area of over 4.7 million sf. KORE has an extensive and diversified tenant base, some of which are from the growth and defensive sectors such as technology, as well as medical and healthcare, which will continue to support and drive growth. KORE is a technology-focused office REIT with over 50% of the portfolio located in the technology hubs of Seattle, Denver and Austin. The remainder of the portfolio is located in the key growth markets of Houston, Dallas, Orlando, Sacramento and Atlanta.",
+        "summary": "Keppel Pacific Oak US REIT (KORE) is a distinctive office REIT listed on the main board of the Singapore Exchange Securities Trading Limited (SGX-ST) on 9 November 2017. KORE's investment strategy is to principally invest in a diversified portfolio of income-producing commercial assets and real estate-related assets in key growth markets of the United States (US) with positive economic and office fundamentals that generally outpace the US national average, and the average of the gateway cities, so as to provide sustainable distributions and strong total returns for Unitholders. KORE is managed by Keppel Pacific Oak US REIT Management Pte. Ltd., which is jointly owned by two Sponsors, Keppel Capital and KPA. KORE's portfolio comprises a balanced mix of 13 freehold office buildings and business campuses across eight key growth markets driven by innovation and technology in the US. The assets have a combined value of US$1.30 billion and an aggregate net lettable area of over 4.7 million sf. KORE has an extensive and diversified tenant base, some of which are from the growth and defensive sectors such as technology, as well as medical and healthcare, which will continue to support and drive growth. KORE is a technology-focused office REIT with over 50% of the portfolio located in the technology hubs of Seattle \u00c2\u0096 Bellevue/Redmond, Austin and Denver. The remainder of the portfolio is located in the key growth markets of Houston, Dallas, Orlando, Sacramento and Atlanta.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -1091,7 +1127,7 @@
         "country": "Belgium",
         "city": "Brussels"
     },
-    "CORR": {
+    "CORR-PA": {
         "short_name": "CorEnergy Infrastructure Trust,",
         "long_name": "CorEnergy Infrastructure Trust, Inc.",
         "summary": "CorEnergy Infrastructure Trust, Inc. (NYSE: CORR, CORRPrA), is a real estate investment trust (REIT) that owns critical energy assets, such as pipelines, storage terminals, and transmission and distribution assets. We receive long-term contracted revenue from customers and operators of our assets, including triple-net participating leases and from long term customer contracts.",
@@ -1103,7 +1139,7 @@
         "country": "United States",
         "city": "Kansas City"
     },
-    "CORR-PA": {
+    "CORR": {
         "short_name": "CorEnergy Infrastructure Trust,",
         "long_name": "CorEnergy Infrastructure Trust, Inc.",
         "summary": "CorEnergy Infrastructure Trust, Inc. (NYSE: CORR, CORRPrA), is a real estate investment trust (REIT) that owns critical energy assets, such as pipelines, storage terminals, and transmission and distribution assets. We receive long-term contracted revenue from customers and operators of our assets, including triple-net participating leases and from long term customer contracts.",
@@ -1140,7 +1176,7 @@
         "city": "New Glasgow"
     },
     "CTXT11.SA": {
-        "short_name": "FII C TEXTILCI",
+        "short_name": "FII C TEXTILCI  ER",
         "long_name": "Fundo Invest Imobiliario Centro Textil Internacional - Cotas Fund",
         "summary": "Fundo Invest Imobiliario Centro Textil Internacional - Cotas Fund specializes in real estate investments.",
         "currency": "BRL",
@@ -1176,7 +1212,7 @@
         "city": "Paris"
     },
     "CXRI11.SA": {
-        "short_name": "FII CX RBRAVCI",
+        "short_name": "FII CX RBRAVCI  ER",
         "long_name": "CXFI - Caixa Rio Bravo Fundo Fundos",
         "summary": null,
         "currency": "BRL",
@@ -1188,7 +1224,7 @@
         "city": null
     },
     "CXTL11.SA": {
-        "short_name": "FII CX TRX  CI",
+        "short_name": "FII CX TRX  CI  ER",
         "long_name": "Fundo De Investimento Imobili\u00e1rio Caixa Trx Log\u00edstica Renda",
         "summary": null,
         "currency": "BRL",
@@ -1262,7 +1298,7 @@
     "DXS.AX": {
         "short_name": "DEXUS STAPLED",
         "long_name": "Dexus",
-        "summary": "Dexus is one of Australia's leading real estate groups, managing a high quality Australian property portfolio valued at $32.0 billion. We believe that the strength and quality of our relationships is central to our success and are deeply committed to working with our customers to provide spaces that engage and inspire. We invest only in Australia, and directly own $16.5 billion of office and industrial properties. We manage a further $15.5 billion of office, retail, industrial and healthcare properties for third party clients. The group's $10.6 billion development pipeline provides the opportunity to grow both portfolios and enhance future returns. With 1.8 million square metres of office workspace across 51 properties, we are Australia's preferred office partner. Dexus is a Top 50 entity by market capitalisation listed on the Australian Securities Exchange (trading code: DXS) and is supported by 29,000 investors from 21 countries. With 36 years of expertise in property investment, development and asset management, we have a proven track record in capital and risk management, providing service excellence to tenants and delivering superior risk-adjusted returns for investors.",
+        "summary": "Dexus is one of Australia's leading real estate groups, proudly managing a high-quality Australian property portfolio valued at $32.1 billion. We believe that the strength and quality of our relationships will always be central to our success and are deeply committed to working with our customers to provide spaces that engage and inspire. We invest only in Australia, and directly own $16.5 billion of office and industrial properties. We manage a further $15.6 billion of office, retail, industrial and healthcare properties for third party clients. The group's $11.4 billion development pipeline provides the opportunity to grow both portfolios and enhance future returns. With 1.6 million square metres of office workspace across 51 properties, we are Australia's preferred office partner. Dexus is a Top 50 entity by market capitalisation listed on the Australian Securities Exchange (trading code: DXS) and is supported by more than 29,000 investors from 24 countries. With 36 years of expertise in property investment, development and asset management, we have a proven track record in capital and risk management, providing service excellence to tenants and delivering superior risk adjusted returns for investors.",
         "currency": "AUD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -1274,7 +1310,7 @@
     "DXSPF": {
         "short_name": "DEXUS",
         "long_name": "Dexus",
-        "summary": "Dexus is one of Australia's leading real estate groups, managing a high quality Australian property portfolio valued at $32.0 billion. We believe that the strength and quality of our relationships is central to our success and are deeply committed to working with our customers to provide spaces that engage and inspire. We invest only in Australia, and directly own $16.5 billion of office and industrial properties. We manage a further $15.5 billion of office, retail, industrial and healthcare properties for third party clients. The group's $10.6 billion development pipeline provides the opportunity to grow both portfolios and enhance future returns. With 1.8 million square metres of office workspace across 51 properties, we are Australia's preferred office partner. Dexus is a Top 50 entity by market capitalisation listed on the Australian Securities Exchange (trading code: DXS) and is supported by 29,000 investors from 21 countries. With 36 years of expertise in property investment, development and asset management, we have a proven track record in capital and risk management, providing service excellence to tenants and delivering superior risk-adjusted returns for investors.",
+        "summary": "Dexus is one of Australia's leading real estate groups, proudly managing a high-quality Australian property portfolio valued at $32.1 billion. We believe that the strength and quality of our relationships will always be central to our success and are deeply committed to working with our customers to provide spaces that engage and inspire. We invest only in Australia, and directly own $16.5 billion of office and industrial properties. We manage a further $15.6 billion of office, retail, industrial and healthcare properties for third party clients. The group's $11.4 billion development pipeline provides the opportunity to grow both portfolios and enhance future returns. With 1.6 million square metres of office workspace across 51 properties, we are Australia's preferred office partner. Dexus is a Top 50 entity by market capitalisation listed on the Australian Securities Exchange (trading code: DXS) and is supported by more than 29,000 investors from 24 countries. With 36 years of expertise in property investment, development and asset management, we have a proven track record in capital and risk management, providing service excellence to tenants and delivering superior risk adjusted returns for investors.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -1334,7 +1370,7 @@
     "EPRT": {
         "short_name": "Essential Properties Realty Tru",
         "long_name": "Essential Properties Realty Trust, Inc.",
-        "summary": "Essential Properties Realty Trust, Inc., a real estate company, acquires, owns, and manages single-tenant properties in the United States. The company leases its properties to middle-market companies, such as restaurants, car washes, automotive services, medical services, convenience stores, entertainment, early childhood education, and health and fitness on a long-term basis. As of December 31, 2019, it had a portfolio of 1000 properties. The company qualifies as a real estate investment trust for federal income tax purposes. It generally would not be subject to federal corporate income taxes if it distributes at least 90% of its taxable income to its stockholders. The company was founded in 2016 and is based in Princeton, New Jersey.",
+        "summary": "Essential Properties Realty Trust, Inc., a real estate company, acquires, owns, and manages single-tenant properties in the United States. The company leases its properties to middle-market companies, such as restaurants, car washes, automotive services, medical and dental services, convenience stores, equipment rental, entertainment, early childhood education, and health and fitness on a long-term basis. As of December 31, 2020, it had a portfolio of 1,181 properties. The company qualifies as a real estate investment trust for federal income tax purposes. It generally would not be subject to federal corporate income taxes if it distributes at least 90% of its taxable income to its stockholders. The company was founded in 2016 and is headquartered in Princeton, New Jersey.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -1342,6 +1378,18 @@
         "market": "us_market",
         "country": "United States",
         "city": "Princeton"
+    },
+    "ES9.F": {
+        "short_name": "EMPIRE ST.REA.TR.A DL-,01",
+        "long_name": "Empire State Realty Trust, Inc.",
+        "summary": "Empire State Realty Trust, Inc. (NYSE: ESRT), a leading real estate investment trust (REIT), owns, manages, operates, acquires and repositions office and retail properties in Manhattan and the greater New York metropolitan area, including the Empire State Building, the \u00c2\u0093World's Most Famous Building.\u00c2\u0094 Headquartered in New York, New York, the Company's office and retail portfolio covers 10.1 million rentable square feet, as of September 30, 2020, consisting of 9.4 million rentable square feet in 14 office properties, including nine in Manhattan, three in Fairfield County, Connecticut, and two in Westchester County, New York; and approximately 700,000 rentable square feet in the retail portfolio. Long the leader in energy efficiency retrofits and Indoor Environmental Quality, Empire State Realty Trust is the first commercial real estate portfolio in the U.S. to achieve the WELL Health-Safety Rating.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "New York"
     },
     "ESBA": {
         "short_name": "Empire State Realty OP, L.P. Se",
@@ -1392,7 +1440,7 @@
         "city": "Paris"
     },
     "FAED11.SA": {
-        "short_name": "FII ANH EDUCCI",
+        "short_name": "FII ANH EDUCCI  ER",
         "long_name": "Fundo de Investimento Imobili\u00e1rio - FII Anhanguera Educacional",
         "summary": null,
         "currency": "BRL",
@@ -1451,6 +1499,18 @@
         "country": "Brazil",
         "city": "Sao Paulo"
     },
+    "FFA.JO": {
+        "short_name": "Fortress REIT Ltd A",
+        "long_name": "Fortress REIT Limited",
+        "summary": "Fortress was listed on 22 October 2009 on the main board of the Johannesburg Stock Exchange Limited as a property loan stock company. It listed with an initial market capitalisation of R1.8 billion, making it the largest initial listing in the listed property sector. Fortress converted to a Real Estate Investment Trust REIT on 1 July 2013. Fortress is a hybrid fund, investing in both direct property as well as other listed property stocks and REITs. It focusses on the development of prime real estate logistics assets as well as investments into its retail portfolio. Currently Fortress portfolio includes industrial, logistics, office, retail and other properties.",
+        "currency": "ZAc",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "JNB",
+        "market": "za_market",
+        "country": "South Africa",
+        "city": "Morningside"
+    },
     "FIBRAHD15.MX": {
         "short_name": "BANCO ACTINVER SA",
         "long_name": "Fideicomiso Irrevocable No. F/1523",
@@ -1464,7 +1524,7 @@
         "city": "Mexico City"
     },
     "FIGS11.SA": {
-        "short_name": "FII GEN SHOPCI",
+        "short_name": "FII GEN SHOPCI  ER",
         "long_name": "Fundo de Investimento Imobili\u00e1rio General Shopping Ativo e Renda - FII",
         "summary": "Fondo In Im General Shop specializes in real estate investments.",
         "currency": "BRL",
@@ -1513,18 +1573,18 @@
     },
     "FNOVA17.MX": {
         "short_name": "BANCO ACTINVER SA",
-        "long_name": "Fibra Nova",
-        "summary": null,
+        "long_name": "Banco Actinver S.A., Instituci\u00f3n de Banca M\u00faltiple, Grupo Financiero Actinver",
+        "summary": "Banco Actinver S.A., Instituci\u00c3\u00b3n de Banca M\u00c3\u00baltiple, Grupo Financiero Actinver engages in the acquisition and construction of real estate for leasing in Mexico. It manages various properties for leasing, such as industrial, educational, office, logistics, and commerce properties. The company was formerly known as Prudential Bank, S.A., Instituci\u00c3\u00b3n de Banca M\u00c3\u00baltiple and changed its name to Banco Actinver, S.A., Instituci\u00c3\u00b3n de Banca M\u00c3\u00baltiple, Grupo Financiero Actinver in February 2010. Banco Actinver S.A., Instituci\u00c3\u00b3n de Banca M\u00c3\u00baltiple, Grupo Financiero Actinver was founded in 2017 and is based in Mexico City, Mexico. Banco Actinver S.A., Instituci\u00c3\u00b3n de Banca M\u00c3\u00baltiple, Grupo Financiero Actinver operates as a subsidiary of Grupo Financiero Actinver, SA de CV.",
         "currency": "MXN",
-        "sector": "Financial",
+        "sector": "Real Estate",
         "industry": "REIT - Diversified",
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Mexico",
-        "city": null
+        "city": "Mexico City"
     },
     "FPAB11.SA": {
-        "short_name": "FII A BRANCACI",
+        "short_name": "FII A BRANCACI  ER",
         "long_name": "Fundo de Investimento Imobili\u00e1rio Projeto \u00c1gua Branca",
         "summary": "Fundo de Investimento Imobili\u00c3\u00a1rio Projeto \u00c3\u0081gua Branca is a real estate investment trust. It engages in investment and management of properties. The firm's portfolio primarily includes office buildings. Fundo de Investimento Imobili\u00c3\u00a1rio Projeto \u00c3\u0081gua Branca was formed on 1st of May 1998 and is based in S\u00c3\u00a3o Paulo, Brazil.",
         "currency": "BRL",
@@ -1619,6 +1679,18 @@
         "country": "United States",
         "city": "Willow Grove"
     },
+    "GLE.F": {
+        "short_name": "GLADSTONE COMM.  DL-,01",
+        "long_name": "Gladstone Commercial Corporation",
+        "summary": "Gladstone Commercial Corporation is a real estate investment trust focused on acquiring, owning, and operating net leased industrial and office properties across the United States. Including payments through September 2020, Gladstone Commercial has paid 189 consecutive monthly cash distributions on its common stock. Prior to paying distributions on a monthly basis, Gladstone Commercial paid five consecutive quarterly cash distributions. The company has also paid 53 consecutive monthly cash distributions on its Series D Preferred Stock, 12 consecutive monthly cash distributions on its Series E Preferred Stock and three consecutive monthly cash distributions on its Series F Preferred Stock. Gladstone Commercial has never skipped, reduced or deferred a distribution since its inception in 2003.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "McLean"
+    },
     "GMG.AX": {
         "short_name": "GOOD GROUP STAPLED",
         "long_name": "Goodman Group",
@@ -1629,7 +1701,7 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "city": "Rosebery"
     },
     "GMGSF": {
         "short_name": "GOODMAN GROUP",
@@ -1641,7 +1713,7 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Sydney"
+        "city": "Rosebery"
     },
     "GOOD": {
         "short_name": "Gladstone Commercial Corporatio",
@@ -1715,18 +1787,6 @@
         "country": "Australia",
         "city": "Sydney"
     },
-    "GR1T.L": {
-        "short_name": "GRIT REAL ESTATE INCOME GROUP L",
-        "long_name": "Grit Real Estate Income Group Limited",
-        "summary": "Grit is listed on the London Stock Exchange main market (LSE: GR1T), the Johannesburg Stock Exchange main board (JSE: GTR) and the Stock Exchange of Mauritius Ltd official market (SEM: DEL.N0000). Grit Real Estate Income Group Limited is a leading pan-African real estate company focused on investing in and actively managing a diversified portfolio of assets in carefully selected African countries (excluding South Africa). By investing in real estate assets across Africa, the Company is building a secure financial future for schools, employees, non-profit organisations, and the like. As such, Grit is unlocking potential across the African continent in an effort to anchor communities and create sustainable jobs. The company's high-quality assets are underpinned by predominantly US$ and Euro denominated long-term leases with a wide range of blue-chip multi-national tenant covenants across a diverse range of robust property sectors. The Company is committed to delivering strong and sustainable income for shareholders, with the potential for income and capital growth. The Company is targeting 8.5%+ p.a. dividend yield in USD and 12.0%+ p.a. NAV total return.",
-        "currency": "GBp",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "LSE",
-        "market": "gb_market",
-        "country": "Mauritius",
-        "city": "Eb\u00c3\u00a8ne"
-    },
     "GRT.JO": {
         "short_name": "Growthpoint Prop Ltd",
         "long_name": "Growthpoint Properties Limited",
@@ -1751,10 +1811,10 @@
         "country": "France",
         "city": "Paris"
     },
-    "HAB.VI": {
+    "HAB2.VI": {
         "short_name": "HAMBORNER REIT AG",
         "long_name": "Hamborner REIT AG",
-        "summary": "HAMBORNER REIT AG is a public company listed in the SDAX that operates exclusively in the property sector and is positioned as a portfolio holder for high-yield commercial properties. The company generates sustainable rental income on the basis of a diversified portfolio of properties distributed throughout Germany with a total value of around \u00c2\u00801.6 billion. The portfolio focuses on modern office properties as well as local supply properties as large-scale retail assets, retail parks, DIY stores and attractive high street properties in major German cities and mid-sized centres. HAMBORNER REIT AG is distinguished by its many years of experience on the property and capital market, its consistent and sustainable dividend policy and its lean and transparent corporate structure. The company is a registered real estate investment trust (REIT) and benefits from corporation and trade tax exemption at company level.",
+        "summary": "HAMBORNER REIT AG is a public company listed in the SDAX that operates exclusively in the property sector and is positioned as a portfolio holder for high-yield commercial properties. The company generates sustainable rental income on the basis of a diversified portfolio of properties distributed throughout Germany with a total value of around \u00c2\u00801.6 billion. The portfolio focuses on profitable office properties as well as local supply properties as large-scale retail assets, retail parks, DIY stores and attractive high street properties in major German cities and mid-sized centres. HAMBORNER REIT AG is distinguished by its many years of experience on the property and capital market, its consistent and sustainable dividend policy and its lean and transparent corporate structure. The company is a registered real estate investment trust (REIT) and benefits from corporation and trade tax exemption at company level.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -1779,7 +1839,7 @@
         "short_name": "HIBERNIA REIT P.L.C. ORD EUR0.1",
         "long_name": "Hibernia REIT Plc",
         "summary": "Hibernia REIT plc is an Irish Real Estate Investment Trust (\u00c2\u0093REIT\u00c2\u0094), listed on Euronext Dublin and the London Stock Exchange. Hibernia owns and develops property and specialises in Dublin city centre offices.",
-        "currency": "EUR",
+        "currency": "GBp",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
         "exchange": "LSE",
@@ -1811,20 +1871,8 @@
         "country": "United Kingdom",
         "city": "Kidlington"
     },
-    "HET.JO": {
-        "short_name": "Heriot REIT Limited",
-        "long_name": "Heriot REIT Limited",
-        "summary": "Heriot Properties (Pty) Ltd. operates as a property holding company. The company offers investment analysis, project management, property development and management, and retail services. Its projects include industrial, retail, office, and other projects. The company is based in Johannesburg, South Africa. As of August 11, 2017, Heriot Properties (Pty) Ltd. operates as a subsidiary of Heriot Investments Proprietary Limited.",
-        "currency": "ZAc",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "JNB",
-        "market": "za_market",
-        "country": "South Africa",
-        "city": "Johannesburg"
-    },
     "HFOF11.SA": {
-        "short_name": "FII HTOPFOF3CI",
+        "short_name": "FII HTOPFOF3CI  ER",
         "long_name": "Hedge Top Fofii 3 Fundo Investimento Imobilirio",
         "summary": null,
         "currency": "BRL",
@@ -1836,7 +1884,7 @@
         "city": null
     },
     "HGCR11.SA": {
-        "short_name": "FII CSHG CRICI",
+        "short_name": "FII CSHG CRICI  ER",
         "long_name": "CSHG Recebiveis Imobiliarios BC Fundo de Investimento Imobiliario - FII",
         "summary": null,
         "currency": "BRL",
@@ -1848,7 +1896,7 @@
         "city": null
     },
     "HGLG11.SA": {
-        "short_name": "FII CSHG LOGCI",
+        "short_name": "FII CSHG LOGCI  ER",
         "long_name": "Cshg Logistica - Fundo De Investimento Imobiliario",
         "summary": "Cshg Logistica - Fundo De Investimento Imobiliario specializes in real estate investments.",
         "currency": "BRL",
@@ -1860,7 +1908,7 @@
         "city": "Sao Paulo"
     },
     "HGRE11.SA": {
-        "short_name": "FII HG REAL CI",
+        "short_name": "FII HG REAL CI  ER",
         "long_name": "CSHG Real Estate - Fundo de Investimento Imobiliario - FII",
         "summary": "CSHG Real Estate - Fundo de Investimento Imobiliario - FII specializes in real estate investments.",
         "currency": "BRL",
@@ -1898,7 +1946,7 @@
     "HMN.SI": {
         "short_name": "Ascott Trust",
         "long_name": "Ascott Residence Trust",
-        "summary": "Ascott Residence Trust (ART) is the largest hospitality trust in Asia Pacific with an asset value of S$7.6 billion as at 30 June 2020. Having listed on the Singapore Exchange Securities Trading Limited (SGX-ST) since March 2006, ART's objective is to invest primarily in income-producing real estate and real estate-related assets which are used or predominantly used as serviced residences, hotels, rental housing properties and other hospitality assets in any country in the world. ART is a constituent of the FTSE EPRA Nareit Global Real Estate Index Series (Global Developed Index). ART's international portfolio comprises 88 properties with more than 16,000 units in 39 cities across 15 countries in Asia Pacific, Europe and the United States of America as at 30 June 2020. ART's properties are mostly operated under the Ascott The Residence, Somerset, Quest and Citadines brands. They are mainly located in key gateway cities such as Barcelona, Berlin, Brussels, Guangzhou, Hanoi, Ho Chi Minh City, Jakarta, Kuala Lumpur, London, Manila, Melbourne, Munich, New York, Paris, Perth, Seoul, Shanghai, Singapore and Tokyo. ART is a stapled group comprising Ascott Real Estate Investment Trust (Ascott Reit) and Ascott Business Trust (Ascott BT). ART is managed by Ascott Residence Trust Management Limited (as manager of Ascott Reit) and Ascott Business Trust Management Pte. Ltd. (as trustee-manager of Ascott BT), both of which are wholly owned subsidiaries of Singapore-listed CapitaLand Limited, one of Asia's largest diversified real estate groups.",
+        "summary": "Ascott Residence Trust (ART) is the largest hospitality trust in Asia Pacific with an asset value of S$7.2 billion as at 31 December 2020. Having listed on the Singapore Exchange Securities Trading Limited (SGX-ST) since March 2006, ART's objective is to invest primarily in incomeproducing real estate and real estate-related assets which are used or predominantly used as serviced residences, hotels, rental housing properties and other hospitality assets in any country in the world. Ascott Real Estate Investment Trust's investment mandate will include student accommodation to be effected on 27 February 2021. ART is a constituent of the FTSE EPRA Nareit Global Real Estate Index Series (Global Developed Index). ART's international portfolio comprises 86 properties with more than 16,000 units in 38 cities across 15 countries in Asia Pacific, Europe and the United States of America as at 31 December 2020. ART's properties are mostly operated under the Ascott The Residence, Somerset, Quest and Citadines brands. They are mainly located in key gateway cities such as Barcelona, Berlin, Brussels, Hanoi, Ho Chi Minh City, Jakarta, Kuala Lumpur, London, Manila, Melbourne, Munich, New York, Paris, Perth, Seoul, Shanghai, Singapore and Tokyo. ART is a stapled group comprising Ascott Real Estate Investment Trust (Ascott Reit) and Ascott Business Trust (Ascott BT). ART is managed by Ascott Residence Trust Management Limited (as manager of Ascott Reit) and Ascott Business Trust Management Pte. Ltd. (as trustee-manager of Ascott BT), both of which are wholly-owned subsidiaries of Singapore-listed CapitaLand Limited, one of Asia's largest diversified real estate groups.",
         "currency": "SGD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -1918,18 +1966,6 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Melbourne"
-    },
-    "HR-UN.TO": {
-        "short_name": "HR REAL ESTATE INV TRUST",
-        "long_name": "H&R Real Estate Investment Trust",
-        "summary": "H&R REIT is one of Canada's largest real estate investment trusts with total assets of approximately $13.3 billion at September 30, 2020. H&R REIT has ownership interests in a North American portfolio of high quality office, retail, industrial and residential properties comprising over 40 million square feet.",
-        "currency": "CAD",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "TOR",
-        "market": "ca_market",
-        "country": "Canada",
-        "city": "Toronto"
     },
     "HRUFF": {
         "short_name": "H&R REAL ESTATE INVESTMENT TRUS",
@@ -2003,18 +2039,6 @@
         "country": "Belgium",
         "city": "Antwerp"
     },
-    "ILU.JO": {
-        "short_name": "Indluplace Properties Ltd",
-        "long_name": "Indluplace Properties Limited",
-        "summary": "IIndluplace is a proud South African property investor owning a portfolio primarily focused on the affordable end of the residential rental market. The company was listed on the Main Board of the JSE in June 2015 and currently owns a portfolio of 9,668 residential units and 18, 870m2 of associated retail space. The portfolio is valued at R 3,8 billion. By utilising specialist outsourced property managers for the different portfolios, Indluplace ensures that its portfolio remains professionally managed to provide positive investment returns, while providing value for money accommodation and service to all its tenants. Indluplace is mindful of the increasing role and impact of Environmental, Social, and Governance (ESG) on sustainability as well as the societal impact of an investment in the company.",
-        "currency": "ZAc",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "JNB",
-        "market": "za_market",
-        "country": "South Africa",
-        "city": "Johannesburg"
-    },
     "IMDA.PA": {
         "short_name": "IMMOB.DASSAULT",
         "long_name": "Immobiliere Dassault SA",
@@ -2039,6 +2063,18 @@
         "country": "Belgium",
         "city": "Antwerp"
     },
+    "IPF.JO": {
+        "short_name": "Investec Property Fund Ltd",
+        "long_name": "Investec Property Fund Limited",
+        "summary": "Investec Property Fund Limited (IPF) is a South African Real Estate Investment Trust (REIT) which listed on the Johannesburg Stock Exchange (JSE) in 2011. The Fund's investment portfolio comprises R27 billion of direct and indirect real estate investments in South Africa, the UK and Europe. In South Africa, the Fund directly owns a sizeable portfolio of 92 properties in the retail, industrial and office sectors valued at R15.7 billion and a 35% interest in Izandla valued at R0.3 billion. c.50% of the Fund's balance sheet and 45% of earnings are derived from offshore investments. This comprises strategic property investments, mainly in logistics, in the developed markets of Europe and the UK where the Manager has a presence on-the-ground with in-country expertise. These investments include an interest in Argo UK Fund (\u00c2\u0093UK Fund\u00c2\u0094) of R1.0bn, an investment into a Pan-European logistics portfolio of R6.8bn and an investment into a Pan-European light industrial portfolio of R0.3bn. The Fund's best of breed portfolio has been built based on adhering to its investment philosophy of acquiring quality assets with compelling property fundamentals in targeted sectors in selected geographies where it has in-country expertise. More recently, the Fund has strategically shifted its focus towards the logistics sector, as a result of which, logistics assets now comprise 46% of IPF's investments globally. IPF is a company incorporated in South Africa with registration number 2008/011366/06, listed in the Real Estate Holdings and Development sector and obtained REIT status on 1 April 2013.",
+        "currency": "ZAc",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "JNB",
+        "market": "za_market",
+        "country": "South Africa",
+        "city": "Sandton"
+    },
     "ISGYO.IS": {
         "short_name": "IS GMYO",
         "long_name": "Is Gayrimenkul Yatirim Ortakligi Anonim Sirketi",
@@ -2051,20 +2087,8 @@
         "country": "Turkey",
         "city": "Istanbul"
     },
-    "JPRRF": {
-        "short_name": "JAPAN PRIME REALTY INVESTMENT C",
-        "long_name": "Japan Prime Realty Investment Corporation",
-        "summary": "Japan Prime Realty Investment Corporation (JPR) was established on September 14, 2001 under the Act on Investment Trusts and Investment Corporations (Act No. 198 of 1951, as amended), and was listed on the Tokyo Stock Exchange Real Estate Investment Trust Section on June 14, 2002 with 289,600 outstanding investment units. With the subsequently implemented public offerings and other capital raising measures by JPR, the number of investment units issued and outstanding totals 958250 units as of the end of the 37th fiscal period (June 30, 2020). JPR has assigned the asset management of its portfolio to Tokyo Realty Investment Management, Inc. (TRIM), through which JPR aims to maximize unitholder value by efficiently managing the portfolio primarily comprising office properties and retail properties.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "Japan",
-        "city": "Tokyo"
-    },
     "JSRE11.SA": {
-        "short_name": "FII JS REAL CI",
+        "short_name": "FII JS REAL CI  ER",
         "long_name": "JS Real Estate multigest\u00e3o - FII fund",
         "summary": null,
         "currency": "BRL",
@@ -2100,7 +2124,7 @@
         "city": "Istanbul"
     },
     "KNCR11.SA": {
-        "short_name": "FII KINEA RICI",
+        "short_name": "FII KINEA RICI  ER",
         "long_name": "Kinea Rendimentos Imobili\u00e1rios Fundo de Investimento Imobili\u00e1rio - FII",
         "summary": null,
         "currency": "BRL",
@@ -2112,7 +2136,7 @@
         "city": "S\u00c3\u00a3o Paulo"
     },
     "KNIP11.SA": {
-        "short_name": "FII KINEA IPCI",
+        "short_name": "FII KINEA IPCI  ER",
         "long_name": "Kinea Indices Precos Fundo Investimento Imobiliario - FII",
         "summary": null,
         "currency": "BRL",
@@ -2124,7 +2148,7 @@
         "city": null
     },
     "KNRI11.SA": {
-        "short_name": "FII KINEA   CI",
+        "short_name": "FII KINEA   CI  ER",
         "long_name": "Kinea Renda Imobili\u00e1ria Fundo de Investimento Imobili\u00e1rio",
         "summary": null,
         "currency": "BRL",
@@ -2159,6 +2183,42 @@
         "country": "New Zealand",
         "city": "Auckland"
     },
+    "L8E.F": {
+        "short_name": "LAR ESP.RE.EST.SOCIMI EO2",
+        "long_name": "Lar Espa\u00f1a Real Estate SOCIMI, S.A.",
+        "summary": "LAR ESPA\u00c3\u0091A REAL ESTATE SOCIMI, SA is a company listed on the Spanish Stock Exchanges, constituted SOCIMI \"Sociedad An\u00c3\u00b3nima Quizada de Inversi\u00c3\u00b3n en el Mercado Inmobiliario\" in March 2014. The company, which aims to invest in the Spanish real estate sector, especially in the retail segment. Today it is the Spanish market leader in retail, with nearly 600,000 square meters for rent and 1,509 million euros in asset value. In 2015 LAR ESPA\u00c3\u0091A was included in the FTSA EPRA / NAREIT Global index, a selective global index designed to represent general trends in listed real estate companies around the world. Likewise, in 2018 it was included in the Ibex Top Dividend index. In September 2020, for the sixth consecutive year, Lar Espa\u00c3\u00b1a was awarded the EPRA Gold Award for the quality of financial information made available to its main stakeholders. Regarding the information published on ESG, Lar Espa\u00c3\u00b1a has obtained the highest distinction from EPRA, achieving the Gold Award for the third consecutive year.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Spain",
+        "city": "Madrid"
+    },
+    "LAND.L": {
+        "short_name": "LAND SECURITIES GROUP PLC ORD 1",
+        "long_name": "Land Securities Group plc",
+        "summary": "At Landsec, we strive to connect communities, realise potential and deliver sustainable places. As one of the largest real estate companies in Europe, our \u00c2\u00a311.8 billion portfolio spans 24 million sq ft (as at 30 September 2020) of well-connected retail, leisure, workspace and residential hubs. From the iconic Piccadilly Lights in the West End and the regeneration of London's Victoria, to the creation of retail destinations at Westgate Oxford and Trinity Leeds, we own and manage some of the most successful and memorable real estate in the UK. We aim to lead our industry in critical long-term issues \u00c2\u0096 from diversity and community employment, to carbon reduction and climate resilience. We deliver value for our shareholders, great experiences for our customers and positive change for our communities.",
+        "currency": "GBp",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "LATR11B.SA": {
+        "short_name": "LATERES FD INV IMB",
+        "long_name": "Lateres Fundo de Investimento Imobili\u00e1rio",
+        "summary": "Lateres Fundo de Investimento Imobili\u00c3\u00a1rio is a real estate fund.",
+        "currency": "BRL",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": "Rio de Janeiro"
+    },
     "LDSCY": {
         "short_name": "LAND SECURITIES GROUP",
         "long_name": "Land Securities Group plc",
@@ -2183,6 +2243,18 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
+    "LMP.L": {
+        "short_name": "LONDONMETRIC PROPERTY PLC ORD 1",
+        "long_name": "LondonMetric Property Plc",
+        "summary": "LondonMetric is a FTSE 250 REIT that owns one of the UK's leading listed logistics platforms alongside a diversified long income portfolio, with 16 million sq ft under management. It owns and manages desirable real estate that meets occupiers' demands, delivers reliable, repetitive and growing income-led returns and outperforms over the long term.",
+        "currency": "GBp",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
     "LNSPF": {
         "short_name": "LONDONMETRIC PROPERTY PLC",
         "long_name": "LondonMetric Property Plc",
@@ -2196,7 +2268,7 @@
         "city": "London"
     },
     "LRE.MC": {
-        "short_name": "LAR ESPANA REAL ESTATE SOCIMI, ",
+        "short_name": "LAR ESPA...A REAL ESTATE SOCIMI",
         "long_name": "Lar Espa\u00f1a Real Estate SOCIMI, S.A.",
         "summary": "LAR ESPA\u00c3\u0091A REAL ESTATE SOCIMI, SA is a company listed on the Spanish Stock Exchanges, constituted SOCIMI \"Sociedad An\u00c3\u00b3nima Quizada de Inversi\u00c3\u00b3n en el Mercado Inmobiliario\" in March 2014. The company, which aims to invest in the Spanish real estate sector, especially in the retail segment. Today it is the Spanish market leader in retail, with nearly 600,000 square meters for rent and 1,509 million euros in asset value. In 2015 LAR ESPA\u00c3\u0091A was included in the FTSA EPRA / NAREIT Global index, a selective global index designed to represent general trends in listed real estate companies around the world. Likewise, in 2018 it was included in the Ibex Top Dividend index. In September 2020, for the sixth consecutive year, Lar Espa\u00c3\u00b1a was awarded the EPRA Gold Award for the quality of financial information made available to its main stakeholders. Regarding the information published on ESG, Lar Espa\u00c3\u00b1a has obtained the highest distinction from EPRA, achieving the Gold Award for the third consecutive year.",
         "currency": "EUR",
@@ -2243,8 +2315,8 @@
         "country": "United States",
         "city": "New York"
     },
-    "LXP": {
-        "short_name": "Lexington Realty Trust",
+    "LXP-PC": {
+        "short_name": "Lexington Realty Trust  Preferr",
         "long_name": "Lexington Realty Trust",
         "summary": "Lexington Realty Trust (NYSE: LXP) is a publicly traded real estate investment trust (REIT) that owns a portfolio of real estate assets consisting primarily of equity investments in single-tenant net-leased industrial properties across the United States. Lexington seeks to expand its industrial portfolio through build-to-suit transactions, sale-leaseback transactions and other transactions, including acquisitions.",
         "currency": "USD",
@@ -2255,8 +2327,8 @@
         "country": "United States",
         "city": "New York"
     },
-    "LXP-PC": {
-        "short_name": "Lexington Realty Trust  Preferr",
+    "LXP": {
+        "short_name": "Lexington Realty Trust",
         "long_name": "Lexington Realty Trust",
         "summary": "Lexington Realty Trust (NYSE: LXP) is a publicly traded real estate investment trust (REIT) that owns a portfolio of real estate assets consisting primarily of equity investments in single-tenant net-leased industrial properties across the United States. Lexington seeks to expand its industrial portfolio through build-to-suit transactions, sale-leaseback transactions and other transactions, including acquisitions.",
         "currency": "USD",
@@ -2280,7 +2352,7 @@
         "city": "Reading"
     },
     "MBRF11.SA": {
-        "short_name": "FII MERC BR CI",
+        "short_name": "FII MERC BR CI  ER",
         "long_name": "Fundo De Investimento Imobili\u00e1rio Mercantil Do Brasil-fii -Inicio",
         "summary": null,
         "currency": "BRL",
@@ -2339,8 +2411,20 @@
         "country": "Spain",
         "city": "Madrid"
     },
+    "MERL.VI": {
+        "short_name": "MERLIN PROPERTIES SOCIMI SA",
+        "long_name": "MERLIN Properties SOCIMI, S.A.",
+        "summary": "MERLIN Properties SOCIMI, SA, one of the main real estate companies listed on the Spanish Stock Exchange (IBEX-35), has as its main activity the acquisition and management of tertiary real estate assets in the Iberian Peninsula. The Company is a public limited company incorporated as a SOCIMI. The main activity of the Company is the acquisition, active management, operation and selective rotation of quality commercial real estate assets in the investment segment \u00c2\u0093Core\u00c2\u0094 and \u00c2\u0093Core Plus\u00c2\u0094, mainly in Spain and, to a lesser extent, in Portugal. The Company focuses on the office, retail and logistics market.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "VIE",
+        "market": "at_market",
+        "country": "Spain",
+        "city": "Madrid"
+    },
     "MFII11.SA": {
-        "short_name": "FII MERITO ICI",
+        "short_name": "FII MERITO ICI  ER",
         "long_name": "M\u00e9rito Desenvolvimento Imobili\u00e1rio I FII - Fundo de Investimento Imobili\u00e1rio",
         "summary": "Merito Desenvolvimento Imobiliario FII Fund specializes in real estate investments.",
         "currency": "BRL",
@@ -2362,18 +2446,6 @@
         "market": "us_market",
         "country": "United States",
         "city": "Las Vegas"
-    },
-    "MLORE.LS": {
-        "short_name": "OLIMPO REAL ESTATE",
-        "long_name": "Olimpo Real Estate Portugal, SIGI, S.A.",
-        "summary": "Olimpo Real Estate Portugal, SIGI, S.A. engages in the acquisition and management of commercial real estate properties in Portugal and Spain. The company is based in Maia, Portugal.",
-        "currency": "EUR",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "LIS",
-        "market": "pt_market",
-        "country": "Portugal",
-        "city": "Maia"
     },
     "MNRT.TA": {
         "short_name": "MENIVIM REIT",
@@ -2447,6 +2519,18 @@
         "country": "Spain",
         "city": "Madrid"
     },
+    "MRM.PA": {
+        "short_name": "M.R.M",
+        "long_name": "M.R.M. SA",
+        "summary": "MRM is a listed real estate investment company that owns and manages a portfolio of retail properties across several regions of France. Its majority shareholder is SCOR SE, which owns 59.9% of share capital. MRM is listed in Compartment C of Euronext Paris (ISIN: FR0000060196 - Bloomberg code: MRM:FP \u00c2\u0096 Reuters code: MRM.PA). MRM opted for SIIC status on 1 January 2008.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "PAR",
+        "market": "fr_market",
+        "country": "France",
+        "city": "Paris"
+    },
     "MRPRF": {
         "short_name": "MERLIN PROPERTIES SOCIMI S.A.",
         "long_name": "MERLIN Properties SOCIMI, S.A.",
@@ -2484,7 +2568,7 @@
         "city": "Izmir"
     },
     "MXRF11.SA": {
-        "short_name": "FII MAXI RENCI",
+        "short_name": "FII MAXI RENCI  ER",
         "long_name": "Maxi Renda Fundo De Investimento Imobiliaro - FII",
         "summary": "Maxi Renda Fundo De Investimento Imobiliaro - FII specializes in real estate investments.",
         "currency": "BRL",
@@ -2519,10 +2603,10 @@
         "country": "Brazil",
         "city": null
     },
-    "NREF": {
+    "NREF-PA": {
         "short_name": "NexPoint Real Estate Finance, I",
         "long_name": "NexPoint Real Estate Finance, Inc.",
-        "summary": "NexPoint Real Estate Finance, Inc. operates as a commercial real estate finance company in the United States. It focuses on originating, structuring, and investing in first mortgage loans, mezzanine loans, preferred equity, and preferred stock, as well as multifamily commercial mortgage backed securities securitizations. The company intends to qualify as a real estate investment trust for U.S. federal income tax purposes. It generally would not be subject to federal corporate income taxes if it distributes at least 90% of its taxable income to its stockholders. The company was incorporated in 2019 and is based in Dallas, Texas.",
+        "summary": "NexPoint Real Estate Finance, Inc. operates as a real estate finance company in the United States. It focuses on originating, structuring, and investing in first mortgage loans, mezzanine loans, preferred equity, and preferred stock, as well as multifamily commercial mortgage backed securities securitizations. The company intends to qualify as a real estate investment trust for U.S. federal income tax purposes. It generally would not be subject to federal corporate income taxes if it distributes at least 90% of its taxable income to its stockholders. The company was incorporated in 2019 and is based in Dallas, Texas.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -2531,10 +2615,10 @@
         "country": "United States",
         "city": "Dallas"
     },
-    "NREF-PA": {
+    "NREF": {
         "short_name": "NexPoint Real Estate Finance, I",
         "long_name": "NexPoint Real Estate Finance, Inc.",
-        "summary": "NexPoint Real Estate Finance, Inc. operates as a commercial real estate finance company in the United States. It focuses on originating, structuring, and investing in first mortgage loans, mezzanine loans, preferred equity, and preferred stock, as well as multifamily commercial mortgage backed securities securitizations. The company intends to qualify as a real estate investment trust for U.S. federal income tax purposes. It generally would not be subject to federal corporate income taxes if it distributes at least 90% of its taxable income to its stockholders. The company was incorporated in 2019 and is based in Dallas, Texas.",
+        "summary": "NexPoint Real Estate Finance, Inc. operates as a real estate finance company in the United States. It focuses on originating, structuring, and investing in first mortgage loans, mezzanine loans, preferred equity, and preferred stock, as well as multifamily commercial mortgage backed securities securitizations. The company intends to qualify as a real estate investment trust for U.S. federal income tax purposes. It generally would not be subject to federal corporate income taxes if it distributes at least 90% of its taxable income to its stockholders. The company was incorporated in 2019 and is based in Dallas, Texas.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -2556,7 +2640,7 @@
         "city": "Istanbul"
     },
     "NVHO11.SA": {
-        "short_name": "FII NOVOHORICI",
+        "short_name": "FII NOVOHORICI  ER",
         "long_name": "Fundo Invest",
         "summary": null,
         "currency": "BRL",
@@ -2567,17 +2651,17 @@
         "country": "Brazil",
         "city": null
     },
-    "NXR-UN.V": {
-        "short_name": "NEXUS REAL ESTATE INVESTMENT TR",
-        "long_name": "Nexus Real Estate Investment Trust",
-        "summary": "Nexus is a growth oriented real estate investment trust focused on increasing unitholder value through the acquisition, ownership and management of industrial, office and retail properties located in primary and secondary markets in North America. The REIT currently owns a portfolio of 73 properties comprising approximately 4.1 million square feet of rentable area. The REIT has approximately 109,910,000 units issued and outstanding. Additionally, there are Class B LP Units of subsidiary limited partnerships of Nexus REIT issued and outstanding, which are convertible into approximately 25,667,000 REIT Units.",
-        "currency": "CAD",
+    "O1A.F": {
+        "short_name": "ONE LIBERTY PROPTS  DL 1",
+        "long_name": "One Liberty Properties, Inc.",
+        "summary": "One Liberty is a self-administered and self-managed real estate investment trust incorporated in Maryland in 1982. The Company acquires, owns and manages a geographically diversified portfolio consisting primarily of industrial, retail, restaurant, health and fitness and theater properties. Many of these properties are subject to long term net leases under which the tenant is typically responsible for the property's real estate taxes, insurance and ordinary maintenance and repairs.",
+        "currency": "EUR",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
-        "exchange": "VAN",
-        "market": "ca_market",
-        "country": "Canada",
-        "city": "Calgary"
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "Great Neck"
     },
     "OAS.JO": {
         "short_name": "Oasis Crescent Prop Fund",
@@ -2640,7 +2724,7 @@
         "city": "New York"
     },
     "ONEF11.SA": {
-        "short_name": "FII THE ONE CI",
+        "short_name": "FII THE ONE CI  ER",
         "long_name": "Fundo de Investimento Imobiliario The One Fund",
         "summary": "Fundo de Investimento Imobiliario The One Fund is a real estate investment fund.",
         "currency": "BRL",
@@ -2666,7 +2750,7 @@
     "OZGYO.IS": {
         "short_name": "OZDERICI GMYO",
         "long_name": "Ozderici Gayrimenkul Yatirim Ortakligi A.S.",
-        "summary": "Ozderici Gayrimenkul Yatirim Ortakligi A.S. offers factoring services. The company is based in Istanbul, Turkey.",
+        "summary": "Ozderici Gayrimenkul Yatirim Ortakligi A.S. operates as a real estate investment trust in Turkey. It designs projects in the real estate property sector in the areas of land improvement, project design, and urban transformation, as well as focuses on the housing sector. The company was founded in 1992 and is headquartered in Istanbul, Turkey.",
         "currency": "TRY",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -2686,6 +2770,30 @@
         "market": "fr_market",
         "country": "France",
         "city": "Paris"
+    },
+    "PAT.PA": {
+        "short_name": "PATRIMOINE ET COMM",
+        "long_name": "Patrimoine et Commerce SA",
+        "summary": "Patrimoine et Commerce SA, a real estate company, engages in the acquisition, development, and operation of commercial real estate properties in France. The company operates a portfolio of 31 real estate assets covering a total area of 129,280 square meters located in high-attraction areas in the suburbs or centers of medium-sized cities. Its property portfolio includes shopping malls, supermarkets, shops, and business parks. The company is based in Boulogne-Billancourt, France.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "PAR",
+        "market": "fr_market",
+        "country": "France",
+        "city": "Boulogne-Billancourt"
+    },
+    "PCT.NZ": {
+        "short_name": "Precinct Properties New Zealand",
+        "long_name": "Precinct Properties New Zealand Limited",
+        "summary": "Precinct is New Zealand's only listed city centre specialist investing predominately in premium and A-grade commercial office property. Listed on the NZX Main Board, PCT currently owns Auckland's PwC Tower, AMP Centre, ANZ Centre (50%), Jarden House, HSBC House, Mason Bros. Building, 12 Madden Street, 10 Madden Street and Commercial Bay; and Wellington's AON Centre, NTT Tower, No. 1 and No. 3 The Terrace, Mayfair House and Bowen Campus. Precinct owns Generator NZ, New Zealand's premier flexible office space provider. Generator currently offers 13,600 square metres of space across four locations in Auckland.",
+        "currency": "NZD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "NZE",
+        "market": "nz_market",
+        "country": "New Zealand",
+        "city": "Auckland"
     },
     "PCTN.L": {
         "short_name": "PICTON PROPERTY INCOME LD ORD N",
@@ -2748,7 +2856,7 @@
         "city": "Daytona Beach"
     },
     "PLRI11.SA": {
-        "short_name": "FII POLO I  CI",
+        "short_name": "FII POLO I  CI  ERA",
         "long_name": "Polo Fundo de Investimento Imobiliario \u2013 FII Recebiveis Imobiliarios IMO - Cotas Fund",
         "summary": null,
         "currency": "BRL",
@@ -2760,7 +2868,7 @@
         "city": null
     },
     "PORD11.SA": {
-        "short_name": "FII POLO CRICI",
+        "short_name": "FII POLO CRICI  ERS",
         "long_name": "Polo Fundo de Investimento Imobili\u00e1rio - Receb\u00edveis Imobili\u00e1rios II - FII",
         "summary": "Polo Fundo de Investimento Imobili\u00c3\u00a1rio - Receb\u00c3\u00adveis Imobili\u00c3\u00a1rios II - FII specializes in real estate investments.",
         "currency": "BRL",
@@ -2782,30 +2890,6 @@
         "market": "br_market",
         "country": "Brazil",
         "city": "Sao Luis"
-    },
-    "PRV-UN.TO": {
-        "short_name": "PRO REAL ESTATE INVESTMENT TRUS",
-        "long_name": "Pro Real Estate Investment Trust",
-        "summary": "PROREIT is an unincorporated open-ended real estate investment trust owning a diversified portfolio of 92 commercial properties across Canada representing over 4.5 million square feet of GLA. Established in March 2013, PROREIT is mainly focused on strong primary and secondary markets in Qu\u00c3\u00a9bec, Atlantic Canada and Ontario, with selective exposure in Western Canada.",
-        "currency": "CAD",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "TOR",
-        "market": "ca_market",
-        "country": "Canada",
-        "city": "Montreal"
-    },
-    "PSB": {
-        "short_name": "PS Business Parks, Inc.",
-        "long_name": "PS Business Parks, Inc.",
-        "summary": "PS Business Parks, Inc., a member of the S&P MidCap 400, is a REIT that acquires, develops, owns, and operates commercial properties, primarily multi-tenant industrial, flex, and office space. As of September 30, 2020, the Company wholly owned 27.5 million rentable square feet with approximately 5,000 commercial customers in six states. The Company also held a 95.0% interest in a 395-unit apartment complex and a 98.2% interest in a development of a 411-unit multifamily apartment complex.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "Glendale"
     },
     "PSB-PW": {
         "short_name": "PS Business Parks, Inc. Deposit",
@@ -2855,6 +2939,30 @@
         "country": "United States",
         "city": "Glendale"
     },
+    "PSB": {
+        "short_name": "PS Business Parks, Inc. (MD)",
+        "long_name": "PS Business Parks, Inc.",
+        "summary": "PS Business Parks, Inc., a member of the S&P MidCap 400, is a REIT that acquires, develops, owns, and operates commercial properties, primarily multi-tenant industrial, flex, and office space. As of September 30, 2020, the Company wholly owned 27.5 million rentable square feet with approximately 5,000 commercial customers in six states. The Company also held a 95.0% interest in a 395-unit apartment complex and a 98.2% interest in a development of a 411-unit multifamily apartment complex.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "Glendale"
+    },
+    "Q5T.SI": {
+        "short_name": "Far East HTrust",
+        "long_name": "Far East Hospitality Trust",
+        "summary": "Far East H-Trust is a Singapore-Focused Hotel and Serviced Residence Hospitality Trust listed on the Main Board of The Singapore Exchange Securities Trading Limited (\u00c2\u0093SGX-ST\u00c2\u0094). Comprising Far East Hospitality Real Estate Investment Trust (\u00c2\u0093Far East H-REIT\u00c2\u0094) and Far East Hospitality Business Trust (\u00c2\u0093Far East H-BT\u00c2\u0094), Far East H-Trust was listed on the SGX-ST on 27 August 2012 and has a portfolio of 13 properties totaling 3,143 hotel rooms and serviced residence units valued at approximately S$2.65 billion as at 31 December 2019. Managed by FEO Hospitality Asset Management Pte. Ltd. and FEO Hospitality Trust Management Pte. Ltd. (collectively, the \u00c2\u0093Managers\u00c2\u0094) and sponsored by members of Far East Organization Group (the \u00c2\u0093Sponsor\u00c2\u0094), Far East H-Trust seeks to provide Stapled Securityholders with regular, stable and growing distributions on a quarterly basis. Far East H-Trust is listed on the FTSE ST Mid Cap Index.",
+        "currency": "SGD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "SES",
+        "market": "sg_market",
+        "country": "Singapore",
+        "city": "Singapore"
+    },
     "RBDS11.SA": {
         "short_name": "FII RBRESID2CI",
         "long_name": "RB Capital Development Residential Real Estate Investment Fund II",
@@ -2868,7 +2976,7 @@
         "city": null
     },
     "RBGS11.SA": {
-        "short_name": "FII RB GSB ICI",
+        "short_name": "FII RB GSB ICI  ER",
         "long_name": "RB Capital General Shopping Sulacap Real Estate Investment Fund",
         "summary": null,
         "currency": "BRL",
@@ -2880,7 +2988,7 @@
         "city": "Sao Paulo"
     },
     "RBRD11.SA": {
-        "short_name": "FII RB II   CI",
+        "short_name": "FII RB II   CI  ER",
         "long_name": "RB Capital Renda II Fundo de Investimento Imobili\u00e1rio - FII",
         "summary": null,
         "currency": "BRL",
@@ -2926,6 +3034,18 @@
         "market": "za_market",
         "country": "South Africa",
         "city": "Johannesburg"
+    },
+    "RDI.L": {
+        "short_name": "RDI REIT P.L.C. ORD 40P",
+        "long_name": "RDI REIT P.L.C.",
+        "summary": "RDI REIT P.L.C. was incorporated in the Isle of Man on 28 June 2004 (Registered Number: 111198C) and was re-registered under the Isle of Man Companies Act 2006 on 3 December 2013 (Registered Number: 010534V).On 4 December 2013, the Company converted to a UK-REIT and transferred its tax residence from the Isle of Man to the United Kingdom (\"UK\").The Company holds a primary listing on the Main Market of the London Stock Exchange (\"LSE\") and a secondary listing on the Main Board of the Johannesburg Stock Exchange (\"JSE\").",
+        "currency": "GBp",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
     },
     "REA.JO": {
         "short_name": "Rebosis Property Fund Ltd A",
@@ -2975,6 +3095,18 @@
         "country": "Iceland",
         "city": "Reykjavik"
     },
+    "RIT1.TA": {
+        "short_name": "REIT 1 LTD",
+        "long_name": "Reit 1 Ltd",
+        "summary": "Reit 1, Ltd. engages in the acquisition, management, and lease of real estate property. The company holds real estate for commercial and industrial use primarily in the central region of Israel. As of September 30, 2008, its holdings included 9 office properties, 2 industrial properties, and a commercial property, as well as a commercial parking lot with 376 parking spaces. The company, formerly known as Reit 1 Israel (2006) Ltd., was founded in 2006 and is headquartered in Tel Aviv, Israel.",
+        "currency": "ILA",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "city": "Tel Aviv"
+    },
     "RLE.L": {
         "short_name": "REAL ESTATE INVESTORS PLC ORD 1",
         "long_name": "Real Estate Investors plc",
@@ -2988,7 +3120,7 @@
         "city": "Birmingham"
     },
     "RNDP11.SA": {
-        "short_name": "FII BB R PAPCI",
+        "short_name": "FII BB R PAPCI  ER",
         "long_name": "BB Renda de Pap\u00e9is Imobili\u00e1rios Fundo de Investimento Imobili\u00e1rio - FII",
         "summary": null,
         "currency": "BRL",
@@ -3000,7 +3132,7 @@
         "city": "Sao Paulo"
     },
     "RNGO11.SA": {
-        "short_name": "FII RIONEGROCI",
+        "short_name": "FII RIONEGROCI  ER",
         "long_name": "Fundo de Investimento Imobili\u00e1rio Rio Negro",
         "summary": "Fundo de Investimento Imobili\u00c3\u00a1rio Rio Negro specializes in making real estate investment.",
         "currency": "BRL",
@@ -3034,6 +3166,42 @@
         "market": "it_market",
         "country": "Italy",
         "city": "Milan"
+    },
+    "RW0U.SI": {
+        "short_name": "Mapletree NAC Tr",
+        "long_name": "Mapletree North Asia Commercial Trust",
+        "summary": "Listed on the Singapore Exchange Securities Trading Limited (\"SGX-ST\") on 7 March 2013, Mapletree North Asia Commercial Trust (\"MNACT\") is the first real estate investment trust (\u00c2\u0093REIT\u00c2\u0094) that offers investors the opportunity to invest in best-in-class commercial properties situated in prime locations in China, in Hong Kong SAR, in Japan and in South Korea.",
+        "currency": "SGD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "SES",
+        "market": "sg_market",
+        "country": "Singapore",
+        "city": "Singapore"
+    },
+    "S76.F": {
+        "short_name": "STORE CAPITAL CORP.DL-,01",
+        "long_name": "STORE Capital Corporation",
+        "summary": "STORE Capital Corporation is an internally managed net-lease real estate investment trust, or REIT, that is the leader in the acquisition, investment and management of Single Tenant Operational Real Estate, which is its target market and the inspiration for its name. STORE Capital is one of the largest and fastest growing net-lease REITs and owns a large, well-diversified portfolio that consists of investments in more than 2,500 property locations across the United States, substantially all of which are profit centers.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "Scottsdale"
+    },
+    "SAC.JO": {
+        "short_name": "SA Corp Real Estate Ltd",
+        "long_name": "SA Corporate Real Estate Limited",
+        "summary": "SA Corporate Real Estate Limited is a JSE-listed Real Estate Investment Trust (\u00c2\u0093REIT\u00c2\u0094) which owns a diversified portfolio of quality industrial, retail, commercial and residential buildings located primarily in the major metropolitan areas of South Africa with a secondary node in Zambia. The property, excluding investment in listed shares and loans advanced, consists of 192 properties, with 1 629 105 m2 of lettable area, valued at R16.6 billion, and a 50% joint venture in three Zambian properties valued at R1.1 billion.",
+        "currency": "ZAc",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "JNB",
+        "market": "za_market",
+        "country": "South Africa",
+        "city": "Century City"
     },
     "SAFE": {
         "short_name": "Safehold Inc.",
@@ -3072,7 +3240,7 @@
         "city": null
     },
     "SDIL11.SA": {
-        "short_name": "FII SDI LOG CI",
+        "short_name": "FII SDI LOG CI  ER",
         "long_name": "SDI Log\u00edstica Rio - Fundo de Investimento Imobili\u00e1rio - FII",
         "summary": "SDI Log\u00c3\u00adstica Rio - Fundo de Investimento Imobili\u00c3\u00a1rio - FII specializes in real estate investments.",
         "currency": "BRL",
@@ -3082,6 +3250,18 @@
         "market": "br_market",
         "country": "Brazil",
         "city": "Sao Paulo"
+    },
+    "SGP.AX": {
+        "short_name": "STOCKLAND. STAPLED",
+        "long_name": "Stockland",
+        "summary": "Stockland (ASX:SGP) was founded in 1952 and has grown to become one of Australia's largest diversified property groups \u00c2\u0096 owning, developing and managing a large portfolio of shopping centres, residential communities, workplace and logistic assets and retirement living villages. Stockland is consistently rated as one of the most sustainable real estate companies in the world by the Dow Jones Sustainability World Index (DJSI). Stockland is also an Employer of Choice for Gender Equality, as recognised by the Workplace Gender Equality Agency.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
     },
     "SHPH11.SA": {
         "short_name": "FII HIGIENOPCI",
@@ -3110,7 +3290,7 @@
     "SMWN.DE": {
         "short_name": "SM WIRTSCHAFTSBER.NA.O.N.",
         "long_name": "SM Wirtschaftsberatungs AG",
-        "summary": "SM Wirtschaftsberatungs AG engages in the investment, operation, rental, and management of residential properties in Germany. The company was founded in 1996 and is based in Sindelfingen, Germany.",
+        "summary": "SM Wirtschaftsberatungs AG engages in the investment, rental, and management of residential properties in Germany. The company was founded in 1996 and is based in Sindelfingen, Germany.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -3122,7 +3302,7 @@
     "SMWN.F": {
         "short_name": "SM WIRTSCHAFTSBER.NA.O.N.",
         "long_name": "SM Wirtschaftsberatungs AG",
-        "summary": "SM Wirtschaftsberatungs AG engages in the investment, operation, rental, and management of residential properties in Germany. The company was founded in 1996 and is based in Sindelfingen, Germany.",
+        "summary": "SM Wirtschaftsberatungs AG engages in the investment, rental, and management of residential properties in Germany. The company was founded in 1996 and is based in Sindelfingen, Germany.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -3144,7 +3324,7 @@
         "city": "Bangkok"
     },
     "SPTW11.SA": {
-        "short_name": "FII SP DOWNTCI",
+        "short_name": "FII SP DOWNTCI  ER",
         "long_name": "Sp Downtown Fundo de Investimento Imobili\u00e1rio - FII",
         "summary": null,
         "currency": "BRL",
@@ -3162,22 +3342,10 @@
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
-        "exchange": "NMS",
+        "exchange": "NCM",
         "market": "us_market",
         "country": "United States",
         "city": "San Diego"
-    },
-    "SRC": {
-        "short_name": "Spirit Realty Capital, Inc.",
-        "long_name": "Spirit Realty Capital, Inc.",
-        "summary": "Spirit Realty Capital, Inc. (NYSE: SRC) is a premier net-lease REIT that primarily invests in single-tenant, operationally essential real estate assets, subject to long-term leases. As of September 30, 2020, our diverse portfolio of 1,778 owned properties, with an aggregate leasable area of 37.2 million square feet in 48 states, included retail, industrial and office buildings leased to 296 tenants across 28 retail industries.",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "Dallas"
     },
     "SRC-PA": {
         "short_name": "Spirit Realty Capital, Inc. 6.0",
@@ -3191,29 +3359,17 @@
         "country": "United States",
         "city": "Dallas"
     },
-    "SREI.L": {
-        "short_name": "SCHRODER REAL ESTATE INVESTMENT",
-        "long_name": "Schroder Real Estate Investment Trust Limited",
-        "summary": "Schroder Real Estate Investment Trust Limited (the \u00c2\u0091Company' and together with its subsidiaries the \u00c2\u0091Group') is a real estate investment company with a premium listing on the Official List of the UK Listing Authority and whose shares are traded on the Main Market of the London Stock Exchange (ticker: SREI). The Company is a Real Estate Investment Trust (\u00c2\u0091REIT') and benefits from the various tax advantages offered by the UK REIT regime. The Company continues to be declared as an authorised closed-ended investment scheme by the Guernsey Financial Services Commission under section 8 of the Protection of Investors (Bailiwick of Guernsey) Law, 1987, as amended and the Authorised Closed-ended Investment Schemes Rules 2008.",
-        "currency": "GBp",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "LSE",
-        "market": "gb_market",
-        "country": "Guernsey",
-        "city": "St Peter Port"
-    },
-    "STAR": {
-        "short_name": "iStar Inc.",
-        "long_name": "iStar Inc.",
-        "summary": "iStar Inc. (NYSE: STAR) is focused on reinventing the ground lease sector, unlocking value for real estate owners throughout the country by providing modern, more efficient ground leases on all types of properties. As the founder, investment manager and largest shareholder of Safehold Inc. (NYSE: SAFE), the first publicly traded company to focus on modern ground leases, iStar is helping create a logical new approach to the way real estate is owned, and continues to use its historic strengths in finance and net lease to expand this unique platform. Recognized as a consistent innovator in the real estate markets, iStar specializes in identifying and scaling newly discovered opportunities and has completed more than $40 billion of transactions over the past two decades.",
+    "SRC": {
+        "short_name": "Spirit Realty Capital, Inc.",
+        "long_name": "Spirit Realty Capital, Inc.",
+        "summary": "Spirit Realty Capital, Inc. (NYSE: SRC) is a premier net-lease REIT that primarily invests in single-tenant, operationally essential real estate assets, subject to long-term leases. As of September 30, 2020, our diverse portfolio of 1,778 owned properties, with an aggregate leasable area of 37.2 million square feet in 48 states, included retail, industrial and office buildings leased to 296 tenants across 28 retail industries.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "city": "Dallas"
     },
     "STAR-PD": {
         "short_name": "iStar Inc. Series D Cumulative ",
@@ -3251,6 +3407,18 @@
         "country": "United States",
         "city": "New York"
     },
+    "STAR": {
+        "short_name": "iStar Inc.",
+        "long_name": "iStar Inc.",
+        "summary": "iStar Inc. (NYSE: STAR) is focused on reinventing the ground lease sector, unlocking value for real estate owners throughout the country by providing modern, more efficient ground leases on all types of properties. As the founder, investment manager and largest shareholder of Safehold Inc. (NYSE: SAFE), the first publicly traded company to focus on modern ground leases, iStar is helping create a logical new approach to the way real estate is owned, and continues to use its historic strengths in finance and net lease to expand this unique platform. Recognized as a consistent innovator in the real estate markets, iStar specializes in identifying and scaling newly discovered opportunities and has completed more than $40 billion of transactions over the past two decades.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "United States",
+        "city": "New York"
+    },
     "STKAF": {
         "short_name": "STOCKLAND",
         "long_name": "Stockland",
@@ -3262,6 +3430,18 @@
         "market": "us_market",
         "country": "Australia",
         "city": "Sydney"
+    },
+    "STOR.MX": {
+        "short_name": "STORE CAPITAL CORPORATION",
+        "long_name": "STORE Capital Corporation",
+        "summary": "STORE Capital Corporation is an internally managed net-lease real estate investment trust, or REIT, that is the leader in the acquisition, investment and management of Single Tenant Operational Real Estate, which is its target market and the inspiration for its name. STORE Capital is one of the largest and fastest growing net-lease REITs and owns a large, well-diversified portfolio that consists of investments in more than 2,500 property locations across the United States, substantially all of which are profit centers.",
+        "currency": "MXN",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "MEX",
+        "market": "mx_market",
+        "country": "United States",
+        "city": "Scottsdale"
     },
     "STOR": {
         "short_name": "STORE Capital Corporation",
@@ -3278,7 +3458,7 @@
     "SURVF": {
         "short_name": "SUNTEC REAL ESTATE INVESTMENT T",
         "long_name": "Suntec Real Estate Investment Trust",
-        "summary": "Listed on 9 December 2004, Suntec REIT holds properties in Suntec City, Singapore's largest integrated commercial development (including one of Singapore's largest shopping Mall), a 60.8% interest in Suntec Singapore Convention & Exhibition Centre, a one-third interest in One Raffles Quay, a one-third interest in Marina Bay Financial Centre Towers 1 and 2 and the Marina Bay Link Mall, and a 30.0% interest in 9 Penang Road. Suntec REIT holds a 100% interest in a commercial building located at 177 Pacific Highway, Sydney, a 100% interest in a commercial building located at 21 Harris Street, Pyrmont, Sydney, a 50.0% interest in Southgate Complex, Melbourne, a 50.0% interest in a commercial building located at Olderfleet 477 Collins Street, Melbourne and a 100% interest in a commercial building located at 55 Currie Street, Adelaide, Australia. Its aim is to invest in income-producing real estate which is primarily used for office and/or retail purposes. Suntec REIT is managed by an external manager, ARA Trust Management (Suntec) Limited..",
+        "summary": "Listed on 9 December 2004, Suntec REIT holds properties in Suntec City, Singapore's largest integrated commercial development (including one of Singapore's largest shopping Mall), a 66.3% interest in Suntec Singapore Convention & Exhibition Centre, a one-third interest in One Raffles Quay, a one-third interest in Marina Bay Financial Centre Towers 1 and 2 and the Marina Bay Link Mall, and a 30.0% interest in 9 Penang Road. Suntec REIT holds a 100% interest in a commercial building located at 177 Pacific Highway, Sydney, a 100% interest in a commercial building located at 21 Harris Street, Pyrmont, Sydney, a 50.0% interest in Southgate Complex, Melbourne, a 50.0% interest in a commercial building located at Olderfleet 477 Collins Street, Melbourne and a 100% interest in a commercial building located at 55 Currie Street, Adelaide, Australia. Suntec REIT also holds a 50.0% interest in Nova Properties located in London, United Kingdom. Its aim is to invest in income-producing real estate which is primarily used for office and/or retail purposes. Suntec REIT is managed by an external manager, ARA Trust Management (Suntec) Limited.",
         "currency": "USD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -3290,7 +3470,7 @@
     "T82U.SI": {
         "short_name": "Suntec Reit",
         "long_name": "Suntec Real Estate Investment Trust",
-        "summary": "Listed on 9 December 2004, Suntec REIT holds properties in Suntec City, Singapore's largest integrated commercial development (including one of Singapore's largest shopping Mall), a 60.8% interest in Suntec Singapore Convention & Exhibition Centre, a one-third interest in One Raffles Quay, a one-third interest in Marina Bay Financial Centre Towers 1 and 2 and the Marina Bay Link Mall, and a 30.0% interest in 9 Penang Road. Suntec REIT holds a 100% interest in a commercial building located at 177 Pacific Highway, Sydney, a 100% interest in a commercial building located at 21 Harris Street, Pyrmont, Sydney, a 50.0% interest in Southgate Complex, Melbourne, a 50.0% interest in a commercial building located at Olderfleet 477 Collins Street, Melbourne and a 100% interest in a commercial building located at 55 Currie Street, Adelaide, Australia. Its aim is to invest in income-producing real estate which is primarily used for office and/or retail purposes. Suntec REIT is managed by an external manager, ARA Trust Management (Suntec) Limited..",
+        "summary": "Listed on 9 December 2004, Suntec REIT holds properties in Suntec City, Singapore's largest integrated commercial development (including one of Singapore's largest shopping Mall), a 66.3% interest in Suntec Singapore Convention & Exhibition Centre, a one-third interest in One Raffles Quay, a one-third interest in Marina Bay Financial Centre Towers 1 and 2 and the Marina Bay Link Mall, and a 30.0% interest in 9 Penang Road. Suntec REIT holds a 100% interest in a commercial building located at 177 Pacific Highway, Sydney, a 100% interest in a commercial building located at 21 Harris Street, Pyrmont, Sydney, a 50.0% interest in Southgate Complex, Melbourne, a 50.0% interest in a commercial building located at Olderfleet 477 Collins Street, Melbourne and a 100% interest in a commercial building located at 55 Currie Street, Adelaide, Australia. Suntec REIT also holds a 50.0% interest in Nova Properties located in London, United Kingdom. Its aim is to invest in income-producing real estate which is primarily used for office and/or retail purposes. Suntec REIT is managed by an external manager, ARA Trust Management (Suntec) Limited.",
         "currency": "SGD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
@@ -3300,7 +3480,7 @@
         "city": "Singapore"
     },
     "TGAR11.SA": {
-        "short_name": "FII TG ATIVOCI",
+        "short_name": "FII TG ATIVOCI  ER",
         "long_name": "Fundo Investimento Imobiliario Tg Ativo Real",
         "summary": null,
         "currency": "BRL",
@@ -3310,6 +3490,30 @@
         "market": "br_market",
         "country": "Brazil",
         "city": null
+    },
+    "TOT.AX": {
+        "short_name": "360CAPITAL STAPLED",
+        "long_name": "360 Capital REIT",
+        "summary": "360 Capital REIT invests across the entire real estate capital stack to take advantage of varying market conditions in order to maximize risk adjusted returns for unit holders. It was formerly known as 360 Capital Total Return Fund. 360 Capital REIT is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "TOWN.L": {
+        "short_name": "TOWN CENTRE SECURITIES PLC ORD ",
+        "long_name": "Town Centre Securities PLC",
+        "summary": "Town Centre Securities PLC (TCS) is a leading UK property investment & development company with property assets of over \u00c2\u00a3394 million. With almost 60 years' experience, a commitment to sustainable development and a reputation for quality & innovation, TCS create outstanding mixed use developments close to transport hubs in Leeds, Manchester, Glasgow and London. Committed to tenants and shareholders, TCS provides world-class residential, office and commercial accommodation and robust investment opportunities through actively managing our portfolio for income and capital growth. We invest in locations likely to demonstrate sustainable growth, work closely with tenants to improve our properties to meet their needs, and dispose of properties that no longer meet our stringent criteria for future performance.",
+        "currency": "GBp",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "Leeds"
     },
     "TRASTOR.AT": {
         "short_name": "TRASTOR REAL ESTATE INVEST. CO",
@@ -3347,6 +3551,18 @@
         "country": "South Africa",
         "city": "Claremont"
     },
+    "U1B.F": {
+        "short_name": "UNITE GROUP PLC  LS-,25",
+        "long_name": "The Unite Group plc",
+        "summary": "Unite Students is the UK's largest owner, manager and developer of purpose-built student accommodation serving the country's world-leading Higher Education sector. Following our successful \u00c2\u00a31.4bn acquisition of Liberty Living's UK assets in November 2019, we now provide homes to 76,000 students across 177 properties in 27 leading university towns and cities. Our people are driven by a common purpose: to provide a 'Home for Success' for the students who live with us and to be the most trusted brand in the sector. We do this through quality service, quality people and quality properties, all designed on the basis of an excellent insight into students' needs and preferences. Unite's accommodation is high quality, affordable, safe and secure, and located where students want to live. Students live predominantly in en-suite study bedrooms with rents covering all bills, insurance, 24-hour security and high-speed Wi-Fi. MyUnite, our mobile app, provides practical support such as instant messaging and maintenance requests. We hold a five-star British Safety Council audit rating (out of five) following an Occupational Health and Safety audit. The audit measured our performance against a number of key safety management indicators, providing an international benchmark for safety management systems and indicating best practice for continual improvement. Our commitment to customer service is powered by an innovative, in-house operating platform. It provides a wide range of benefits to our students, such as an optimised online booking process, as well as providing us with a unique ability to drive value from our portfolio through scale efficiencies and revenue management. Our other strategic priority is delivering growing and sustainable earnings, underpinned by a strong capital structure. A key part of this strategy is growing the number of beds let through partnerships with the strongest UK universities which are experiencing record levels of student demand. We currently partner with 60 universities across the UK, guaranteeing that 52% of our rooms are let under 'nomination agreements' providing high visibility of forward occupancy and rental growth. Unite Students has spent years helping young people thrive in new situations and help them manage the big \u00c2\u0091Leap' to university life. Our insight has identified a significant gap between student expectations and reality. To support this leap, we have developed the Leapskills programme, helping to prepare prospective students for independent living. The programme introduces students to a number of student life scenarios to provoke group discussion on conflict resolution, problem solving and gives a general insight into shared living to help closer match expectations to reality. Unite is the founder of and major donor to the Unite Foundation, a charitable trust established to support talented students facing challenging financial circumstances through the provision of free accommodation scholarships. The Foundation has so far provided scholarships for 434 young people working in close collaboration with 27 partner universities. Unite is invested in and operates two specialist funds and joint ventures with institutional investment partners: the \u00c2\u00a33 billion Unite UK Student Accommodation Fund (USAF), and the \u00c2\u00a31 billion London Student Accommodation Vehicle (LSAV). Founded in 1991 in Bristol, Unite Group is an award-winning Real Estate Investment Trust (REIT), listed on the London Stock Exchange and a member of the FTSE 250 Index.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United Kingdom",
+        "city": "Bristol"
+    },
     "UE": {
         "short_name": "Urban Edge Properties",
         "long_name": "Urban Edge Properties",
@@ -3371,8 +3587,8 @@
         "country": "United Kingdom",
         "city": "Bristol"
     },
-    "VER": {
-        "short_name": "VEREIT, Inc.",
+    "VER-PF": {
+        "short_name": "VEREIT, Inc. 6.70% Series F Cum",
         "long_name": "VEREIT, Inc.",
         "summary": "VEREIT is a full-service real estate operating company which owns and manages one of the largest portfolios of single-tenant commercial properties in the U.S. The Company has total real estate investments of $14.6 billion including approximately 3,800 properties and 88.9 million square feet. VEREIT's business model provides equity capital to creditworthy corporations in return for long-term leases on their properties. VEREIT is a publicly traded Maryland corporation listed on the New York Stock Exchange. VEREIT uses, and intends to continue to use, its Investor Relations website, which can be found at www.VEREIT.com, as a means of disclosing material nonpublic information and for complying with its disclosure obligations under Regulation FD.",
         "currency": "USD",
@@ -3383,8 +3599,8 @@
         "country": "United States",
         "city": "Phoenix"
     },
-    "VER-PF": {
-        "short_name": "VEREIT, Inc. 6.70% Series F Cum",
+    "VER": {
+        "short_name": "VEREIT, Inc.",
         "long_name": "VEREIT, Inc.",
         "summary": "VEREIT is a full-service real estate operating company which owns and manages one of the largest portfolios of single-tenant commercial properties in the U.S. The Company has total real estate investments of $14.6 billion including approximately 3,800 properties and 88.9 million square feet. VEREIT's business model provides equity capital to creditworthy corporations in return for long-term leases on their properties. VEREIT is a publicly traded Maryland corporation listed on the New York Stock Exchange. VEREIT uses, and intends to continue to use, its Investor Relations website, which can be found at www.VEREIT.com, as a means of disclosing material nonpublic information and for complying with its disclosure obligations under Regulation FD.",
         "currency": "USD",
@@ -3432,7 +3648,7 @@
         "city": "Istanbul"
     },
     "VLOL11.SA": {
-        "short_name": "FII OLIMPIA CI",
+        "short_name": "FII OLIMPIA CI  ER",
         "long_name": "Fundo de Investimento Imobiliario - FII Vila Olimpia Corporate",
         "summary": "Fundo de Investimento Imobiliario - FII Vila Olimpia Corporate specializes in real estate investments.",
         "currency": "BRL",
@@ -3444,7 +3660,7 @@
         "city": "Sao Paulo"
     },
     "VRTA11.SA": {
-        "short_name": "FII FATOR VECI",
+        "short_name": "FII FATOR VECI  ER",
         "long_name": "Fator Verit\u00e1 Fundo de Investimento Imobili\u00e1rio - FII",
         "summary": "Fator Verita Fundo Investimento Imobiliario Fii specializes in real estate investments.",
         "currency": "BRL",
@@ -3454,6 +3670,30 @@
         "market": "br_market",
         "country": "Brazil",
         "city": "Sao Paulo"
+    },
+    "W8U.F": {
+        "short_name": "PS BUSINESS PARKS",
+        "long_name": "PS Business Parks, Inc.",
+        "summary": "PS Business Parks, Inc., a member of the S&P MidCap 400, is a REIT that acquires, develops, owns, and operates commercial properties, primarily multi-tenant industrial, flex, and office space. As of September 30, 2020, the Company wholly owned 27.5 million rentable square feet with approximately 5,000 commercial customers in six states. The Company also held a 95.0% interest in a 395-unit apartment complex and a 98.2% interest in a development of a 411-unit multifamily apartment complex.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United States",
+        "city": "Glendale"
+    },
+    "WEB.BR": {
+        "short_name": "WAREHOUSES",
+        "long_name": "Warehouses Estates Belgium SCA",
+        "summary": "Warehouses Estates Belgium SCA is a real estate investment trust. Warehouses Estates Belgium SCA is based in Belgium.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "BRU",
+        "market": "be_market",
+        "country": "Belgium",
+        "city": "Gosselies"
     },
     "WHART.BK": {
         "short_name": "WHA PREMIUM GROWTH FREEHOLD",
@@ -3467,17 +3707,17 @@
         "country": "Thailand",
         "city": "Bangkok"
     },
-    "WPC": {
-        "short_name": "W. P. Carey Inc. REIT",
-        "long_name": "W. P. Carey Inc.",
-        "summary": "W. P. Carey ranks among the largest net lease REITs with an enterprise value of approximately $18 billion and a diversified portfolio of operationally-critical commercial real estate that includes 1,215 net lease properties covering approximately 142 million square feet as of September 30, 2020. For nearly five decades, the company has invested in high-quality single-tenant industrial, warehouse, office, retail and self-storage properties subject to long-term net leases with built-in rent escalators. Its portfolio is located primarily in the U.S. and Northern and Western Europe and is well-diversified by tenant, property type, geographic location and tenant industry.",
-        "currency": "USD",
+    "WOT.AX": {
+        "short_name": "WOTSO STAPLED",
+        "long_name": "Wotso Property",
+        "summary": "Wotso Property is a real estate investment trust externally managed by BlackWall Fund Services Limited. It invests in the real estate markets across Australia. It primarily invests in the industrial, retail and commercial Australian properties, and unlisted property securities. Wotso Property is based in Australia.",
+        "currency": "AUD",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
-        "exchange": "NYQ",
-        "market": "us_market",
-        "country": "United States",
-        "city": "New York"
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Neutral Bay"
     },
     "WPC.MX": {
         "short_name": "WP CAREY INC",
@@ -3488,6 +3728,18 @@
         "industry": "REIT - Diversified",
         "exchange": "MEX",
         "market": "mx_market",
+        "country": "United States",
+        "city": "New York"
+    },
+    "WPC": {
+        "short_name": "W. P. Carey Inc. REIT",
+        "long_name": "W. P. Carey Inc.",
+        "summary": "W. P. Carey ranks among the largest net lease REITs with an enterprise value of approximately $18 billion and a diversified portfolio of operationally-critical commercial real estate that includes 1,215 net lease properties covering approximately 142 million square feet as of September 30, 2020. For nearly five decades, the company has invested in high-quality single-tenant industrial, warehouse, office, retail and self-storage properties subject to long-term net leases with built-in rent escalators. Its portfolio is located primarily in the U.S. and Northern and Western Europe and is well-diversified by tenant, property type, geographic location and tenant industry.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "NYQ",
+        "market": "us_market",
         "country": "United States",
         "city": "New York"
     },
@@ -3516,7 +3768,7 @@
         "city": "Antwerp"
     },
     "XPCM11.SA": {
-        "short_name": "FII XP MACAECI",
+        "short_name": "FII XP MACAECI  ER",
         "long_name": "XP Corporate Maca\u00e9 Fundo de Investimento Imobili\u00e1rio - FII",
         "summary": "XPCM - XP Corporate Real Estate Investment Fund Macae FII specializes in real estate investments.",
         "currency": "BRL",
@@ -3539,17 +3791,17 @@
         "country": "Brazil",
         "city": "Sao Paulo"
     },
-    "YAP67.MC": {
-        "short_name": "AP67 SOCIMI, S.A.",
-        "long_name": "Ap67 Socimi, S.A.",
-        "summary": "Ap67 Socimi, S.A. engages in the acquisition and management of real estate assets in Spain. The company was founded in 2001 and is based in Leganes, Spain.",
+    "YAPS.MC": {
+        "short_name": "ALBIRANA PROPERTIES SOCIMI S.A.",
+        "long_name": "Albirana Properties SOCIMI, S.A.U.",
+        "summary": "Albirana Properties SOCIMI, S.A.U. operates as a real estate investment company in Spain and internationally. The company acquires and develops real estate assets. Its rental properties comprise apartments, houses, business premises, warehouses, offices, garages, and storage spaces. The company is based in Barcelona, Spain.",
         "currency": "EUR",
         "sector": "Real Estate",
         "industry": "REIT - Diversified",
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Leganes"
+        "city": "Barcelona"
     },
     "YCPS.MC": {
         "short_name": "CASTELLANA PROPERTIES SOCIMI, S",
@@ -3575,6 +3827,18 @@
         "country": "Spain",
         "city": "Madrid"
     },
+    "YENT.MC": {
+        "short_name": "ENTRECAMPOS CUATRO SOCIMI, S.A.",
+        "long_name": "Entrecampos Cuatro, Socimi, S.A.",
+        "summary": "Entrecampos Cuatro, Socimi, S.A. operates as a real estate investment trust that engages in the leasing of real estate properties in Spain and Germany. The company was formerly known as Entrecampos Cuatro, S.L. and changed its name to Entrecampos Cuatro, Socimi, S.A. in May 2013. Entrecampos Cuatro, Socimi, S.A. was founded in 2004 and is headquartered in Madrid, Spain.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "MCE",
+        "market": "es_market",
+        "country": "Spain",
+        "city": "Madrid"
+    },
     "YGGYO.IS": {
         "short_name": "YENI GIMAT GMYO",
         "long_name": "Yeni Gimat Gayrimenkul Yatirim Ortakligi A.S.",
@@ -3586,6 +3850,18 @@
         "market": "tr_market",
         "country": "Turkey",
         "city": "Ankara"
+    },
+    "YGMP.MC": {
+        "short_name": "GMP PROPERTY SOCIMI, S.A.",
+        "long_name": "GMP Property SOCIMI, S.A.",
+        "summary": "Gmp Property SOCIMI, S.A. invests, acquires, develops, and manages offices, shopping centers and commercial premises, industrial buildings, and logistics centers in Spain. The company rents and sells luxury villas, apartments, and plots of land. It is also involved in the land acquisition and management; property management; and residential tourism development activities. In addition, the company provides a range of sports and leisure services; and accommodation facilities, as well as develops and renovates existing buildings. Further, it operates restaurants; and an 18-hole championship golf course and country club, as well as offers Internet services. GMP Property SOCIMI, S.A. was founded in 1979 and is headquartered in Madrid, Spain.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "MCE",
+        "market": "es_market",
+        "country": "Spain",
+        "city": "Madrid"
     },
     "YGOP.MC": {
         "short_name": "GRUPO ORTIZ PROPERTIES SOCIMI, ",
@@ -3610,18 +3886,6 @@
         "market": "tr_market",
         "country": "Turkey",
         "city": "Istanbul"
-    },
-    "YHLY.MC": {
-        "short_name": "HADLEY INVESTMENTS SOCIMI, S.A.",
-        "long_name": "Hadley Investments SOCIMI, S.A.U.",
-        "summary": "Hadley Investments SOCIMI, S.A.U. engages in the acquisition, leasing, and management of residential, office, and commercial properties in Spain. The company was founded in 2014 and is based in Cornell\u00c3\u00a0 de Llobregat, Spain.",
-        "currency": "EUR",
-        "sector": "Real Estate",
-        "industry": "REIT - Diversified",
-        "exchange": "MCE",
-        "market": "es_market",
-        "country": "Spain",
-        "city": "Cornell\u00c3\u00a0 de Llobregat"
     },
     "YHSP.MC": {
         "short_name": "HISPANOTELS INVERSIONES SOCIMI,",
@@ -3682,6 +3946,18 @@
         "market": "es_market",
         "country": "Spain",
         "city": "Madrid"
+    },
+    "YORS.MC": {
+        "short_name": "OPTIMUM RE SPAIN SOCIMI, S.A.",
+        "long_name": "Optimum RE Spain, SOCIMI, S.A.",
+        "summary": "Optimum RE Spain, SOCIMI, S.A. operates in the real estate investment trust business. The company is incorporated in 2014 and is based in Barcelona, Spain.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Diversified",
+        "exchange": "MCE",
+        "market": "es_market",
+        "country": "Spain",
+        "city": "Barcelona"
     },
     "YPARK.MC": {
         "short_name": "INMOBILIARIA PARK ROSE IBEROAME",

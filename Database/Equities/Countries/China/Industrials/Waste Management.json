@@ -47,22 +47,10 @@
         "country": "China",
         "city": "Hefei"
     },
-    "1065.HK": {
-        "short_name": "TIANJIN CAPITAL",
-        "long_name": "Tianjin Capital Environmental Protection Group Company Limited",
-        "summary": "Tianjin Capital Environmental Protection Group Company Limited, together with its subsidiaries, engages in the sewage treatment and construction of the sewage treatment plants in the People's Republic of China. The company operates through Processing of Sewage Water; Recycled Water; Pipeline Connection; Heating and Cooling Service; Sales of Tap Water; Sale of Environmental Protection Equipment; and All Other segments. It also provides toll collection and engineering consulting services; environment governance, technical consulting services, etc.; technical consulting for water recycling business; and energy saving and research, consulting and transfer, and property management services, as well as invests in construction projects. The company was founded in 1993 and is based in Tianjin, the People's Republic of China. Tianjin Capital Environmental Protection Group Company Limited is a subsidiary of Tianjin Municipal Investment Company Limited.",
-        "currency": "HKD",
-        "sector": "Industrials",
-        "industry": "Waste Management",
-        "exchange": "HKG",
-        "market": "hk_market",
-        "country": "China",
-        "city": "Tianjin"
-    },
     "1330.HK": {
         "short_name": "DYNAGREEN ENV",
         "long_name": "Dynagreen Environmental Protection Group Co., Ltd.",
-        "summary": "Dynagreen Environmental Protection Group Co., Ltd., together with its subsidiaries, engages in the investment, technical consulting, construction, operation, and maintenance of municipal waste-to-energy plants in the People's Republic of China. The company engages in the waste treatment and power generation activities. It is also involved in the technological research in environmental protection industries, including waste-incineration, as well as design, development, and systematic integration of relevant equipment; and management of waste treatment projects and operations, as well as the provision of technological services and associated technological consultation. The company was founded in 2012 and is headquartered in Shenzhen, the People's Republic of China. Dynagreen Environmental Protection Group Co., Ltd. is a subsidiary of Beijing State-owned Assets Management Co., Ltd.",
+        "summary": "Dynagreen Environmental Protection Group Co., Ltd., together with its subsidiaries, engages in the investment, technical consulting, construction, operation, and maintenance of municipal waste-to-energy plants in the People's Republic of China. The company engages in the waste treatment and power generation activities. It is also involved in the technological research in environmental protection industries, including waste-incineration, as well as design, development, and systematic integration of relevant equipment; and management of waste treatment projects and operations, as well as the provision of technological services and associated technological consultation. The company was incorporated in 2012 and is headquartered in Shenzhen, the People's Republic of China.",
         "currency": "HKD",
         "sector": "Industrials",
         "industry": "Waste Management",
@@ -74,7 +62,7 @@
     "1845.HK": {
         "short_name": "WG ENV TECH",
         "long_name": "Weigang Environmental Technology Holding Group Limited",
-        "summary": "Weigang Environmental Technology Holding Group Limited engages in the research, design, integration, and commissioning of solid waste treatment systems primarily for hazardous waste incineration projects in China. It also provides solid waste treatment, such as thermal desorption of oil sludge, pyrolysis treatment of solid waste, and cement plant parallel kiln co-treatment. The company was formerly known as WeiGang Environmental Protection Holdings Limited and changed its name to Weigang Environmental Technology Holding Group Limited in May 2017. Weigang Environmental Technology Holding Group Limited was founded in 1998 and is based in Guangzhou, China. Weigang Environmental Technology Holding Group Limited is a subsidiary of WeiGang Technology Limited.",
+        "summary": "Weigang Environmental Technology Holding Group Limited engages in the research, design, integration, and commissioning of solid waste treatment systems primarily for hazardous waste incineration projects in China. It also provides solutions for thermal desorption of oil sludge, pyrolysis treatment of solid waste, and cement plant parallel kiln co-treatment. The company was formerly known as WeiGang Environmental Protection Holdings Limited and changed its name to Weigang Environmental Technology Holding Group Limited in May 2017. The company was founded in 1998 and is headquartered in Guangzhou, China. Weigang Environmental Technology Holding Group Limited is a subsidiary of WeiGang Technology Limited.",
         "currency": "HKD",
         "sector": "Industrials",
         "industry": "Waste Management",
@@ -82,6 +70,18 @@
         "market": "hk_market",
         "country": "China",
         "city": "Guangzhou"
+    },
+    "300070.SZ": {
+        "short_name": "BEIJING ORIGINWATE",
+        "long_name": "Beijing Originwater Technology Co., Ltd.",
+        "summary": "Beijing Originwater Technology Co., Ltd. operates in the water and wastewater treatment industry in China and internationally. Its products and technologies include microfiltration membrane, ultrafiltration membrane, ultra-low pressure and highly selective membrane, and reverse osmosis. The company engages in water and wastewater treatment industrial chain, including municipal and industrial wastewater treatment, drinking water treatment, desalination, civil water treatment, wetland protection and reconstruction, sponge cities, river management, black and odorous water treatment, urban landscape construction, light environment construction, solid waste and hazardous waste treatment and disposal, and others. Beijing Originwater Technology Co., Ltd. was founded in 2001 and is based in Beijing, the People's Republic of China.",
+        "currency": "CNY",
+        "sector": "Industrials",
+        "industry": "Waste Management",
+        "exchange": "SHZ",
+        "market": "cn_market",
+        "country": "China",
+        "city": "Beijing"
     },
     "300187.SZ": {
         "short_name": "YONKER ENVIRONMENT",
@@ -143,6 +143,18 @@
         "country": "China",
         "city": "Nanning"
     },
+    "300692.SZ": {
+        "short_name": "ANHUI ZHONGHUAN EN",
+        "long_name": "Anhui Zhonghuan Environmental Protection Technology Co., Ltd.",
+        "summary": "Anhui Zhonghuan Environmental Protection Technology Co., Ltd. provides urban sewage treatment and industrial waste water treatment services in China. The company is based in Hefei, China.",
+        "currency": "CNY",
+        "sector": "Industrials",
+        "industry": "Waste Management",
+        "exchange": "SHZ",
+        "market": "cn_market",
+        "country": "China",
+        "city": "Hefei"
+    },
     "300779.SZ": {
         "short_name": "QINGDAO HUICHENG E",
         "long_name": "Qingdao Huicheng Environmental Technology Co., Ltd.",
@@ -154,6 +166,18 @@
         "market": "cn_market",
         "country": "China",
         "city": "Qingdao"
+    },
+    "300867.SZ": {
+        "short_name": "SHENGYUAN ENVIRONM",
+        "long_name": "Shengyuan Environmental Protection Co.,Ltd.",
+        "summary": "Shengyuan Environmental Protection Co.,Ltd. engages in the waste incineration power generation, sewage treatment, etc. in China. The company is involved in the collection, transportation, and terminal treatment of domestic garbage. It has five sewage treatment plants and one landfill leachate treatment station. The company was founded in 2004 and is based in Xiamen, China.",
+        "currency": "CNY",
+        "sector": "Industrials",
+        "industry": "Waste Management",
+        "exchange": "SHZ",
+        "market": "cn_market",
+        "country": "China",
+        "city": "Xiamen"
     },
     "300899.SZ": {
         "short_name": "KEYSINO SEPARATION",
@@ -167,10 +191,34 @@
         "country": "China",
         "city": "Shanghai"
     },
+    "300948.SZ": {
+        "short_name": "QINGDAO GREENSUM E",
+        "long_name": "QingDao Greensum Ecology Co.,Ltd.",
+        "summary": "Qingdao Guanzhong Ecology Co., Ltd. engages in the ecological restoration and urban environmental construction businesses in China. It undertakes vegetation restoration, and landscaping and municipal public utilities construction activities. The company was founded in 2000 and is based in Qingdao, China.",
+        "currency": "CNY",
+        "sector": "Industrials",
+        "industry": "Waste Management",
+        "exchange": "SHZ",
+        "market": "cn_market",
+        "country": "China",
+        "city": "Qingdao"
+    },
+    "300958.SZ": {
+        "short_name": "BCEG ENVIRONMENTAL",
+        "long_name": "BCEG Environmental Remediation Co., Ltd.",
+        "summary": "BCEG Environmental Remediation Co., Ltd. provides environmental engineering services. The company offers soil remediation, pesticide contaminated site restoration, coking site restoration, petrochemical site restoration, and other services; and repairing agent production, technology consulting, and other services. It also provides site and groundwater restoration, mine repair, farmland improvement and restoration, and water body and heavy metal repair services. The company was founded in 2007 and is based in Beijing, China.",
+        "currency": "CNY",
+        "sector": "Industrials",
+        "industry": "Waste Management",
+        "exchange": "SHZ",
+        "market": "cn_market",
+        "country": "China",
+        "city": "Beijing"
+    },
     "601330.SS": {
         "short_name": "DYNAGREEN ENVIRONMENTAL PROTECT",
         "long_name": "Dynagreen Environmental Protection Group Co., Ltd.",
-        "summary": "Dynagreen Environmental Protection Group Co., Ltd., together with its subsidiaries, engages in the investment, technical consulting, construction, operation, and maintenance of municipal waste-to-energy plants in the People's Republic of China. The company engages in the waste treatment and power generation activities. It is also involved in the technological research in environmental protection industries, including waste-incineration, as well as design, development, and systematic integration of relevant equipment; and management of waste treatment projects and operations, as well as the provision of technological services and associated technological consultation. The company was founded in 2012 and is headquartered in Shenzhen, the People's Republic of China. Dynagreen Environmental Protection Group Co., Ltd. is a subsidiary of Beijing State-owned Assets Management Co., Ltd.",
+        "summary": "Dynagreen Environmental Protection Group Co., Ltd., together with its subsidiaries, engages in the investment, technical consulting, construction, operation, and maintenance of municipal waste-to-energy plants in the People's Republic of China. The company engages in the waste treatment and power generation activities. It is also involved in the technological research in environmental protection industries, including waste-incineration, as well as design, development, and systematic integration of relevant equipment; and management of waste treatment projects and operations, as well as the provision of technological services and associated technological consultation. The company was incorporated in 2012 and is headquartered in Shenzhen, the People's Republic of China.",
         "currency": "CNY",
         "sector": "Industrials",
         "industry": "Waste Management",
@@ -242,7 +290,7 @@
     "BIU2.F": {
         "short_name": "CN EVERBRIGHT WATER HD 1",
         "long_name": "China Everbright Water Limited",
-        "summary": "China Everbright Water Limited, an investment holding company, provides water environmental management services in Mainland China and Germany. It offers municipal waste water treatment, industrial waste water treatment, water supply, reusable water, sludge harmless treatment, sponge city construction and operation, river-basin ecological restoration, waste water source heat pump, leachate treatment, and engineering construction, as well as researches and develops water environment technologies. The company also provides project investment, planning and design, and operations management services; investment and investment management, business development and management, and pipeline network construction and maintenance services; and survey, mapping, design, and consultancy services for municipal projects. As of December 31, 2019, it invested in and operated water treatment projects with a designed daily waste water treatment capacity of approximately 6.2 m3. The company is based in Shenzhen, the People's Republic of China. China Everbright Water Limited is a subsidiary of China Everbright Water Holdings Limited.",
+        "summary": "China Everbright Water Limited, an investment holding company, provides water environmental management services in Mainland China and Germany. It offers municipal waste water treatment, industrial waste water treatment, water supply, reusable water, sludge harmless treatment, sponge city construction and operation, river-basin ecological restoration, waste water source heat pump, leachate treatment, and engineering construction, as well as researches and develops water environment technologies. The company also provides project investment, planning and design, and operations management services; investment and investment management, business development and management, and pipeline network construction and maintenance services; and survey, mapping, design, and consultancy services for municipal projects. As of December 31, 2020, it invested in and operated water treatment projects with a designed daily waste water treatment capacity of approximately 6.5 m3. The company is based in Shenzhen, the People's Republic of China. China Everbright Water Limited is a subsidiary of China Everbright Water Holdings Limited.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Waste Management",
@@ -254,7 +302,7 @@
     "BOTRF": {
         "short_name": "CHINA EVERBRIGHT WATER LIMITED",
         "long_name": "China Everbright Water Limited",
-        "summary": "China Everbright Water Limited, an investment holding company, provides water environmental management services in Mainland China and Germany. It offers municipal waste water treatment, industrial waste water treatment, water supply, reusable water, sludge harmless treatment, sponge city construction and operation, river-basin ecological restoration, waste water source heat pump, leachate treatment, and engineering construction, as well as researches and develops water environment technologies. The company also provides project investment, planning and design, and operations management services; investment and investment management, business development and management, and pipeline network construction and maintenance services; and survey, mapping, design, and consultancy services for municipal projects. As of December 31, 2019, it invested in and operated water treatment projects with a designed daily waste water treatment capacity of approximately 6.2 m3. The company is based in Shenzhen, the People's Republic of China. China Everbright Water Limited is a subsidiary of China Everbright Water Holdings Limited.",
+        "summary": "China Everbright Water Limited, an investment holding company, provides water environmental management services in Mainland China and Germany. It offers municipal waste water treatment, industrial waste water treatment, water supply, reusable water, sludge harmless treatment, sponge city construction and operation, river-basin ecological restoration, waste water source heat pump, leachate treatment, and engineering construction, as well as researches and develops water environment technologies. The company also provides project investment, planning and design, and operations management services; investment and investment management, business development and management, and pipeline network construction and maintenance services; and survey, mapping, design, and consultancy services for municipal projects. As of December 31, 2020, it invested in and operated water treatment projects with a designed daily waste water treatment capacity of approximately 6.5 m3. The company is based in Shenzhen, the People's Republic of China. China Everbright Water Limited is a subsidiary of China Everbright Water Holdings Limited.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Waste Management",
@@ -266,14 +314,14 @@
     "CCNC": {
         "short_name": "Code Chain New Continent Limite",
         "long_name": "Code Chain New Continent Limited",
-        "summary": "Code Chain New Continent Limited, together with its subsidiaries, engages in the research, development, and sale of solid waste recycling systems for the mining and industrial sectors in the People's Republic of China. It operates through three segments: Solid Waste Recycling Systems Business, Coal and Coke Wholesale Business, and Coating Materials Business. The company also produces and sells water-borne epoxy anti-rust paints, epoxy zinc rich primers, solvent-free epoxy bituminous anticorrosive paints, permeable epoxy polysiloxane anticorrosive and waterproof materials, and cold spraying zinc for surface anti-corrosion, waterproof, and decoration of concrete and steel components in ships, bridges, water conservancy and hydropower projects, wind power generation, mining machinery manufacturing, petroleum, petrochemical and metallurgy, port construction, light industry, locomotive and vehicle, and other fields. It also engages in the wholesale of coal; and sale of coke, steels, construction materials, mechanical equipment, and steel scrap. The company was formerly known as TMSR Holding Company Limited and changed its name to Code Chain New Continent Limited in May 2020. The company is based in Nantong, China.",
+        "summary": "Code Chain New Continent Limited, through its subsidiaries, engages in the coal and mobile gaming businesses in China. It is involved in the sales, storage, transportation, and processing of steam coal, as well as iron ore trading and refined processing business. The company also engages in the sale of coke, steel, construction materials, mechanical equipment, and steel scraps. In addition, it researches and develops Wuge Manor, a game that combines Internet of Things and e-commerce based on code chain platform that provides players with access to vendors and business owners in approximately 100 cities in China. Further, the company offers electronic tokens, which are used for purchasing virtual real estate properties. The company was formerly known as TMSR Holding Company Limited and changed its name to Code Chain New Continent Limited in May 2020. Code Chain New Continent Limited is based in Chengdu, China.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Waste Management",
         "exchange": "NMS",
         "market": "us_market",
         "country": "China",
-        "city": "Nantong"
+        "city": "Chengdu"
     },
     "CIWT": {
         "short_name": "CHINA INDUSTRIAL WASTE MGMT INC",
@@ -302,7 +350,7 @@
     "DYN.F": {
         "short_name": "DYNAGREEN EN.PR.GR.H YC 1",
         "long_name": "Dynagreen Environmental Protection Group Co., Ltd.",
-        "summary": "Dynagreen Environmental Protection Group Co., Ltd., together with its subsidiaries, engages in the investment, technical consulting, construction, operation, and maintenance of municipal waste-to-energy plants in the People's Republic of China. The company engages in the waste treatment and power generation activities. It is also involved in the technological research in environmental protection industries, including waste-incineration, as well as design, development, and systematic integration of relevant equipment; and management of waste treatment projects and operations, as well as the provision of technological services and associated technological consultation. The company was founded in 2012 and is headquartered in Shenzhen, the People's Republic of China. Dynagreen Environmental Protection Group Co., Ltd. is a subsidiary of Beijing State-owned Assets Management Co., Ltd.",
+        "summary": "Dynagreen Environmental Protection Group Co., Ltd., together with its subsidiaries, engages in the investment, technical consulting, construction, operation, and maintenance of municipal waste-to-energy plants in the People's Republic of China. The company engages in the waste treatment and power generation activities. It is also involved in the technological research in environmental protection industries, including waste-incineration, as well as design, development, and systematic integration of relevant equipment; and management of waste treatment projects and operations, as well as the provision of technological services and associated technological consultation. The company was incorporated in 2012 and is headquartered in Shenzhen, the People's Republic of China.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Waste Management",
@@ -310,6 +358,30 @@
         "market": "dr_market",
         "country": "China",
         "city": "Shenzhen"
+    },
+    "TIA.F": {
+        "short_name": "TIANJIN CAP. H  YC 1",
+        "long_name": "Tianjin Capital Environmental Protection Group Company Limited",
+        "summary": "Tianjin Capital Environmental Protection Group Company Limited, together with its subsidiaries, engages in the sewage treatment and construction of the sewage treatment plants in the People's Republic of China. The company operates through Processing of Sewage Water; Recycled Water; Pipeline Connection; Heating and Cooling Service; Sales of Tap Water; Sale of Environmental Protection Equipment; and All Other segments. It also provides toll collection and engineering consulting services; environment governance, technical consulting services, etc.; technical consulting for water recycling business; and energy saving and research, consulting and transfer, and property management services, as well as invests in construction projects. The company was founded in 1993 and is based in Tianjin, the People's Republic of China. Tianjin Capital Environmental Protection Group Company Limited is a subsidiary of Tianjin Municipal Investment Company Limited.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Waste Management",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "China",
+        "city": "Tianjin"
+    },
+    "TNJIF": {
+        "short_name": "TIANJIN CAP ENVIRONMTL PROTECT ",
+        "long_name": "Tianjin Capital Environmental Protection Group Company Limited",
+        "summary": "Tianjin Capital Environmental Protection Group Company Limited, together with its subsidiaries, engages in the sewage treatment and construction of the sewage treatment plants in the People's Republic of China. The company operates through Processing of Sewage Water; Recycled Water; Pipeline Connection; Heating and Cooling Service; Sales of Tap Water; Sale of Environmental Protection Equipment; and All Other segments. It also provides toll collection and engineering consulting services; environment governance, technical consulting services, etc.; technical consulting for water recycling business; and energy saving and research, consulting and transfer, and property management services, as well as invests in construction projects. The company was founded in 1993 and is based in Tianjin, the People's Republic of China. Tianjin Capital Environmental Protection Group Company Limited is a subsidiary of Tianjin Municipal Investment Company Limited.",
+        "currency": "USD",
+        "sector": "Industrials",
+        "industry": "Waste Management",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "China",
+        "city": "Tianjin"
     },
     "TRITF": {
         "short_name": "TRI-TECH HOLDING INC",
@@ -326,7 +398,7 @@
     "U9E.SI": {
         "short_name": "China Everbright",
         "long_name": "China Everbright Water Limited",
-        "summary": "China Everbright Water Limited, an investment holding company, provides water environmental management services in Mainland China and Germany. It offers municipal waste water treatment, industrial waste water treatment, water supply, reusable water, sludge harmless treatment, sponge city construction and operation, river-basin ecological restoration, waste water source heat pump, leachate treatment, and engineering construction, as well as researches and develops water environment technologies. The company also provides project investment, planning and design, and operations management services; investment and investment management, business development and management, and pipeline network construction and maintenance services; and survey, mapping, design, and consultancy services for municipal projects. As of December 31, 2019, it invested in and operated water treatment projects with a designed daily waste water treatment capacity of approximately 6.2 m3. The company is based in Shenzhen, the People's Republic of China. China Everbright Water Limited is a subsidiary of China Everbright Water Holdings Limited.",
+        "summary": "China Everbright Water Limited, an investment holding company, provides water environmental management services in Mainland China and Germany. It offers municipal waste water treatment, industrial waste water treatment, water supply, reusable water, sludge harmless treatment, sponge city construction and operation, river-basin ecological restoration, waste water source heat pump, leachate treatment, and engineering construction, as well as researches and develops water environment technologies. The company also provides project investment, planning and design, and operations management services; investment and investment management, business development and management, and pipeline network construction and maintenance services; and survey, mapping, design, and consultancy services for municipal projects. As of December 31, 2020, it invested in and operated water treatment projects with a designed daily waste water treatment capacity of approximately 6.5 m3. The company is based in Shenzhen, the People's Republic of China. China Everbright Water Limited is a subsidiary of China Everbright Water Holdings Limited.",
         "currency": "SGD",
         "sector": "Industrials",
         "industry": "Waste Management",

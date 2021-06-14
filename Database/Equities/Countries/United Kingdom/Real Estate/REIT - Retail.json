@@ -1,13 +1,73 @@
 {
-    "CAPC.L": {
-        "short_name": "CAPITAL & COUNTIES PROPERTIES P",
+    "C20.F": {
+        "short_name": "CAPITAL+COUNT.PR.LS-,25",
         "long_name": "Capital & Counties Properties PLC",
-        "summary": "Capital & Counties Properties PLC, a property company, engages in investment, development, and management of properties. Its principal properties include Covent Garden, a retail and dining destination in central London. The company was founded in 2010 and is headquartered in London, the United Kingdom.",
+        "summary": "Capital & Counties Properties PLC, a property company, engages in investment, development, and management of properties. Its principal properties include Covent Garden, a retail and dining destination in central London. The company was incorporated in 2010 and is headquartered in London, the United Kingdom.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "CAL.L": {
+        "short_name": "CAPITAL & REGIONAL PLC ORD 10P",
+        "long_name": "Capital & Regional Plc",
+        "summary": "Capital & Regional is a UK focused retail property REIT specialising in shopping centres that dominate their catchment, serving the non-discretionary and value orientated needs of the local communities. It has a strong track record of delivering value enhancing retail and leisure asset management opportunities across a portfolio of in-town shopping centres. Capital & Regional is listed on the main market of the London Stock Exchange (LSE) and has a secondary listing on the Johannesburg Stock Exchange (JSE). Capital & Regional owns seven shopping centres in Blackburn, Hemel Hempstead, Ilford, Luton, Maidstone, Walthamstow and Wood Green. Capital & Regional manages these assets through its in-house expert property and asset management platform.",
         "currency": "GBp",
         "sector": "Real Estate",
         "industry": "REIT - Retail",
         "exchange": "LSE",
         "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "CAPC.L": {
+        "short_name": "CAPITAL & COUNTIES PROPERTIES P",
+        "long_name": "Capital & Counties Properties PLC",
+        "summary": "Capital & Counties Properties PLC, a property company, engages in investment, development, and management of properties. Its principal properties include Covent Garden, a retail and dining destination in central London. The company was incorporated in 2010 and is headquartered in London, the United Kingdom.",
+        "currency": "GBp",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "CCO.JO": {
+        "short_name": "Capital&Counties Prop plc",
+        "long_name": "Capital & Counties Properties PLC",
+        "summary": "Capital & Counties Properties PLC, a property company, engages in investment, development, and management of properties. Its principal properties include Covent Garden, a retail and dining destination in central London. The company was incorporated in 2010 and is headquartered in London, the United Kingdom.",
+        "currency": "ZAc",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "JNB",
+        "market": "za_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "CRP.JO": {
+        "short_name": "Capital & Regional Plc",
+        "long_name": "Capital & Regional Plc",
+        "summary": "Capital & Regional is a UK focused retail property REIT specialising in shopping centres that dominate their catchment, serving the non-discretionary and value orientated needs of the local communities. It has a strong track record of delivering value enhancing retail and leisure asset management opportunities across a portfolio of in-town shopping centres. Capital & Regional is listed on the main market of the London Stock Exchange (LSE) and has a secondary listing on the Johannesburg Stock Exchange (JSE). Capital & Regional owns seven shopping centres in Blackburn, Hemel Hempstead, Ilford, Luton, Maidstone, Walthamstow and Wood Green. Capital & Regional manages these assets through its in-house expert property and asset management platform.",
+        "currency": "ZAc",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "JNB",
+        "market": "za_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "H2V2.F": {
+        "short_name": "HAMMERSON PLC  LS-,05",
+        "long_name": "Hammerson plc",
+        "summary": "At Hammerson, we create vibrant, continually evolving spaces, in and around major cities, where people and brands want to be. We seek to deliver value for all our stakeholders and to create a positive and sustainable impact for generations to come. We own and operate high-quality flagship destinations and have investments in premium outlets in selected European countries and have a City Quarters strategy to evolve our portfolio beyond retail.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "United Kingdom",
         "city": "London"
     },
@@ -71,18 +131,6 @@
         "country": "United Kingdom",
         "city": "London"
     },
-    "NRWRF": {
-        "short_name": "NEWRIVER REIT PLC",
-        "long_name": "NewRiver REIT plc",
-        "summary": "NewRiver REIT plc (\u00c2\u0091NewRiver') is a leading Real Estate Investment Trust specialising in buying, managing and developing essential retail and leisure assets throughout the UK. Our \u00c2\u00a31.1 billion portfolio covers 9 million sq ft and comprises 33 community shopping centres, 24 conveniently located retail parks and 700 community pubs. We hand-picked our assets to deliberately focus on occupiers providing essential goods and services, and avoid structurally challenged sub-sectors such as department stores, mid-market fashion and casual dining. This focus, combined with our affordable rents and desirable locations, delivers sustainable and growing returns for our shareholders, while our active approach to asset management and inbuilt 2.6 million sq ft development pipeline provide further opportunities to extract value from our portfolio. NewRiver has a Premium Listing on the Main Market of the London Stock Exchange (ticker: NRR).",
-        "currency": "USD",
-        "sector": "Real Estate",
-        "industry": "REIT - Retail",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "United Kingdom",
-        "city": "London"
-    },
     "OVW.F": {
         "short_name": "SHAFTESBURY PLC  LS-,25",
         "long_name": "Shaftesbury PLC",
@@ -104,6 +152,18 @@
         "industry": "REIT - Retail",
         "exchange": "LSE",
         "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    "XC2R.F": {
+        "short_name": "CAPITAL + REGIONAL LS-,01",
+        "long_name": "Capital & Regional Plc",
+        "summary": "Capital & Regional is a UK focused retail property REIT specialising in shopping centres that dominate their catchment, serving the non-discretionary and value orientated needs of the local communities. It has a strong track record of delivering value enhancing retail and leisure asset management opportunities across a portfolio of in-town shopping centres. Capital & Regional is listed on the main market of the London Stock Exchange (LSE) and has a secondary listing on the Johannesburg Stock Exchange (JSE). Capital & Regional owns seven shopping centres in Blackburn, Hemel Hempstead, Ilford, Luton, Maidstone, Walthamstow and Wood Green. Capital & Regional manages these assets through its in-house expert property and asset management platform.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "United Kingdom",
         "city": "London"
     }

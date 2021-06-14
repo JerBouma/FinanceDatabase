@@ -1,4 +1,16 @@
 {
+    "AIQ.AX": {
+        "short_name": "A INV TRST UNITS",
+        "long_name": "Alternative Investment Trust",
+        "summary": "Alternative Investment Trust is a balanced mutual fund launched by RE The Trust Company (RE Services) Limited. The fund is co-managed by Laxey Partners (UK) Limited and Laxey Partners Ltd. It invests in the equity and fixed income markets of Australia. The fund also invests in absolute return funds. It seeks to invest in stocks of companies that are operating across diversified sectors. The fund was formerly known as Everest Babcock & Brown Alternative Investment Trust. Alternative Investment Trust was formed on April 7, 2005 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
     "ANDRO.AT": {
         "short_name": "ALPHA TRUST-ANDROMEDA INVEST.",
         "long_name": "Alpha Trust Andromeda Investment Trust S.A.",
@@ -26,7 +38,7 @@
     "BAERN.MX": {
         "short_name": "JULIUS BAER GRUPPE AG",
         "long_name": "Julius B\u00e4r Gruppe AG",
-        "summary": "Julius B\u00c3\u00a4r Gruppe AG provides private banking products and services to private clients worldwide. Its wealth management solutions include discretionary mandates, investment advisory mandates, securities execution and advisory, foreign exchange and precious metals, Lombard lending, structured products, global custody, real estate advisory and financing, and wealth planning. It also operates an open product and service platform. The company was founded in 1890 and is headquartered in Zurich, Switzerland.",
+        "summary": "Julius B\u00c3\u00a4r Gruppe AG provides wealth management solutions in Switzerland, Europe, Asia, and South America. Its solutions include discretionary mandates, investment advisory mandates, securities execution and advisory, foreign exchange and precious metals, family office services, Lombard lending, structured products, global custody, real estate advisory and financing, and wealth planning. The company also operates an open product and service platform. Julius B\u00c3\u00a4r Gruppe AG was founded in 1890 and is headquartered in Zurich, Switzerland.",
         "currency": "MXN",
         "sector": "Financial",
         "industry": "Asset Management",
@@ -34,6 +46,42 @@
         "market": "mx_market",
         "country": "Switzerland",
         "city": "Zurich"
+    },
+    "BTI.AX": {
+        "short_name": "BAILADOR FPO",
+        "long_name": "Bailador Technology Investments Limited",
+        "summary": "Bailador Technology Investments Limited is a private equity firm specializing in investments in expansion capital in companies which have advanced through the start-up phase. The firm prefers to invest in the Internet and the Information technology sector with a focus on e-commerce and subscription-based internet businesses, software, high value data, online education, telecommunications applications and services, and new media and marketing. It does not invest in start-ups or biotechnology sector. The firm prefers to invest in Australia and New Zealand. The firm typically invests between $2 million and $10 million in companies with revenues between $5 million and $20 million. It prefers to take minority stake and board seats in portfolio companies. Bailador Technology Investments Limited was founded in 2010 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "CIE.AX": {
+        "short_name": "CNTNGO INC FPO",
+        "long_name": "Contango Income Generator Limited",
+        "summary": "Contango Income Generator Limited is a listed investment company launched and managed by Contango Funds Management Limited. It invests in public equity markets of Australia. It benchmarks its performance against ASX All Ordinaries Accumulation Index. Contango Income Generator Limited was formed in August 2015 and is domiciled in Australia.",
+        "currency": "AUD",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    "DB1N.MX": {
+        "short_name": "DEUTSCHE BOERSE AG",
+        "long_name": "Deutsche B\u00f6rse AG",
+        "summary": "Deutsche B\u00c3\u00b6rse AG operates as an exchange organization in Europe, the United States, and the Asia-Pacific. The company operates through seven segments: Eurex (Financial Derivatives), EEX (Commodities), 360T (Foreign Exchange), Xetra (Cash Equities), Clearstream (Post-Trading), IFS (Investment Fund Services), and Qontigo (index and analytics business). The company engages in the electronic trading of derivatives, electricity and gas products, emission rights, and foreign exchange; operating of Eurex Repo over the counter (OTC) trading platform and electronic clearing architecture; and operating as a central counterparty for on-and-off exchange derivatives, repo transactions, and OTC and exchange-traded derivatives. It also operates in the cash market through Xetra, B\u00c3\u00b6rse Frankfurt, and Tradegate trading venues; operates as a central counterparty for equities and bonds; and provides listing services. In addition, the company offers custody and settlement services for securities; investment fund services; global securities financing services; and global securities finance and collateral management, as well as secured money, market transaction, and repos and securities lending transaction services. Further, it develops and markets indices, as well as portfolio management and risk analysis software; markets licenses for trading and market signals; provides technology and reporting solutions for external customers; and offers link-up of trading participants. Deutsche B\u00c3\u00b6rse AG was founded in 1585 and is headquartered in Eschborn, Germany.",
+        "currency": "MXN",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "MEX",
+        "market": "mx_market",
+        "country": "Germany",
+        "city": "Eschborn"
     },
     "DMAC11.SA": {
         "short_name": "FII MAC     CI",
@@ -59,17 +107,17 @@
         "country": "Australia",
         "city": "Sydney"
     },
-    "EGF.AX": {
-        "short_name": "EPFLAGSHIP UNITS",
-        "long_name": "Evans & Partners Global Flagship Fund",
-        "summary": null,
-        "currency": "AUD",
+    "EX.AT": {
+        "short_name": "EUROXX SECURITIES S.A",
+        "long_name": "Euroxx Securities S.A.",
+        "summary": "Euroxx Securities S.A., a brokerage firm, provides a range of products and services to the investors in Greece and internationally. The company offers various investment options, such as short-term and long-term credit, stock borrowing, and joint investor share, as well as markets, wealth management, online transactions, and information services to retail investors. It also provides institutional services, including institutional sales; research and analysis; investment banking services, including consulting services for acquisitions and mergers, capital markets, and business financials; purchase, liquidity, credit, operational, and legal risk management services; and information services. Euroxx Securities S.A. was founded in 1993 and is based in Chalandri, Greece.",
+        "currency": "EUR",
         "sector": "Financial",
         "industry": "Asset Management",
-        "exchange": "ASX",
-        "market": "au_market",
-        "country": "Australia",
-        "city": "North Sydney"
+        "exchange": "ATH",
+        "market": "gr_market",
+        "country": "Greece",
+        "city": "Chalandri"
     },
     "EXAE.AT": {
         "short_name": "HELLENIC EXCHANGES- ASE S.A",
@@ -94,18 +142,6 @@
         "market": "mx_market",
         "country": "Netherlands",
         "city": "Amsterdam"
-    },
-    "FIHUN.MX": {
-        "short_name": "FAIRFAX INDIA HOLDINGS CORPORAT",
-        "long_name": "Fairfax India Holdings Corporation",
-        "summary": "Fairfax India Holdings Corporation, an investment holding company, engages in the investment activities in India. It invests in public and private equity securities and debt instruments in India and Indian businesses, or other businesses with customers, suppliers, or business primarily conducted in, or dependent on, India. The company was founded in 2014 and is headquartered in Toronto, Canada. Fairfax India Holdings Corporation is a subsidiary of Fairfax Financial Holdings Limited.",
-        "currency": "MXN",
-        "sector": "Financial",
-        "industry": "Asset Management",
-        "exchange": "MEX",
-        "market": "mx_market",
-        "country": "Canada",
-        "city": "Toronto"
     },
     "FNOR11.SA": {
         "short_name": "FINOR       CI *",
@@ -143,8 +179,20 @@
         "country": "Australia",
         "city": "Brisbane"
     },
+    "GTWR11.SA": {
+        "short_name": "FII G TOWERSCI  ER",
+        "long_name": "Fundo Investimento Imobiliario Green Towers",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": null
+    },
     "HABT11.SA": {
-        "short_name": "FII HABIT IICI",
+        "short_name": "FII HABIT IICI  ER",
         "long_name": "Habitat Ii - Fundo De Investimento Imobiliario",
         "summary": null,
         "currency": "BRL",
@@ -156,7 +204,7 @@
         "city": null
     },
     "HCTR11.SA": {
-        "short_name": "FII HECTARE CI",
+        "short_name": "FII HECTARE CI  ER",
         "long_name": "Fundo De Investimento Imobiliario Hectare Ce",
         "summary": null,
         "currency": "BRL",
@@ -180,7 +228,7 @@
         "city": "Sydney"
     },
     "HSML11.SA": {
-        "short_name": "FII HSI MALLCI",
+        "short_name": "FII HSI MALLCI  ER",
         "long_name": "Hsi Malls Fundo De Investimento Imobiliario",
         "summary": null,
         "currency": "BRL",
@@ -191,8 +239,56 @@
         "country": "Brazil",
         "city": "Sao Paulo"
     },
+    "HUSC11.SA": {
+        "short_name": "FII H UNIMEDCI  ER",
+        "long_name": "Fundo Investimento Imobiliario Hospital Unimed Sul Capixaba",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": null
+    },
+    "KFOF11.SA": {
+        "short_name": "FII KINEAFOFCI  ER",
+        "long_name": "Kinea Fundo Fundos De Investimento Imobiliario FII",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": null
+    },
+    "KNHY11.SA": {
+        "short_name": "FII KINEA HYCI  ER",
+        "long_name": "Kinea High Yield Cri Fundo Investimento Imobiliario FII",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": null
+    },
+    "LSEN.MX": {
+        "short_name": "LONDON STOCK EXCHANGE GROUP",
+        "long_name": "London Stock Exchange Group plc",
+        "summary": "London Stock Exchange Group plc engages in market infrastructure business primarily in the United Kingdom, the United States, Italy, France, and internationally. The company operates in five segments: Information Services, Post Trade Services, Capital Markets, Technology Services, and Other. It operates a range of international equity, ETF, bond, and derivatives markets, including London Stock Exchange; Borsa Italiana; MTS, a European fixed income market; and Turquoise, a pan-European equities multilateral trading facility. The company also provides capital formation, intellectual property, and risk and balance sheet management services; financial indexing, benchmarking, and analytic services; data and research services; and clearing, settlement, custody and other post trade services. In addition, it offers information and data products, such as indexes and benchmarks, real time pricing data, product identification, reporting, and reconciliation services, as well as network connectivity and server hosting services. Further, the company provides market trading services; information services comprising regulatory news; education and training, events space, and studio hire services; and capital markets technology and services, trading solutions, technical services, infrastructure solutions and services, and market connectivity, as well as operates data centers and trading venues. Additionally, it licenses capital markets and related IT infrastructure. London Stock Exchange Group plc was founded in 1698 and is headquartered in London, the United Kingdom.",
+        "currency": "MXN",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "MEX",
+        "market": "mx_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
     "MGFF11.SA": {
-        "short_name": "FII MOGNO   CI",
+        "short_name": "FII MOGNO   CI  ER",
         "long_name": "Fundo Investimento Imobiliario Mogno Fundo Fundos",
         "summary": null,
         "currency": "BRL",
@@ -214,6 +310,30 @@
         "market": "fr_market",
         "country": "France",
         "city": "Paris"
+    },
+    "MOT.AX": {
+        "short_name": "MCP INCOME UNITS",
+        "long_name": "MCP Income Opportunities Trust",
+        "summary": null,
+        "currency": "AUD",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": null
+    },
+    "NBI.AX": {
+        "short_name": "NBGCITRUST UNIT",
+        "long_name": "Nb Global Corporate Income Trust",
+        "summary": null,
+        "currency": "AUD",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Melbourne"
     },
     "OPH.AX": {
         "short_name": "OPHIR HCF UNITS",
@@ -240,7 +360,7 @@
         "city": null
     },
     "PATC11.SA": {
-        "short_name": "FII PATRIA  CI",
+        "short_name": "FII PATRIA  CI  ER",
         "long_name": "Patria Edificios Corporativos Fundo Investimento Imobiliario Fii",
         "summary": null,
         "currency": "BRL",
@@ -300,7 +420,7 @@
         "city": "Sydney"
     },
     "RBIV11.SA": {
-        "short_name": "FII RBCRI IVCI",
+        "short_name": "FII RBCRI IVCI  ER",
         "long_name": "Rio Bravo Credito Imobiliario IV Fundo De Investimento Imobiliario - FII",
         "summary": null,
         "currency": "BRL",
@@ -312,7 +432,7 @@
         "city": null
     },
     "RBRP11.SA": {
-        "short_name": "FII RBR PROPCI",
+        "short_name": "FII RBR PROPCI  ER",
         "long_name": "Fundo Investimento Imobiliario Rbr Properties Fii",
         "summary": null,
         "currency": "BRL",
@@ -348,7 +468,7 @@
         "city": null
     },
     "RBVA11.SA": {
-        "short_name": "FII RIOB VA CI",
+        "short_name": "FII RIOB VA CI  ER",
         "long_name": "Fundo Invest Imobiliario Agencias Caixa - FII Fund",
         "summary": null,
         "currency": "BRL",
@@ -372,7 +492,7 @@
         "city": null
     },
     "RDPD11.SA": {
-        "short_name": "FII BB PAPIICI",
+        "short_name": "FII BB PAPIICI  ERA",
         "long_name": "Bb Renda Papeis Imobiliarios II Fundo Investimento Imobiliario",
         "summary": null,
         "currency": "BRL",
@@ -395,8 +515,20 @@
         "country": "Australia",
         "city": "Sydney"
     },
+    "VG1.AX": {
+        "short_name": "VGI GLOBAL FPO",
+        "long_name": "VGI Partners Global Investments Limited",
+        "summary": "VGI Partners Global Investments Limited provides investors with access to a portfolio of long investments and short positions in global listed securities. The company was incorporated in 2017 and is based in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Sydney"
+    },
     "VILG11.SA": {
-        "short_name": "FII VINCILOGCI",
+        "short_name": "FII VINCILOGCI  ER",
         "long_name": "Vinci Logistica Fundo Investimento Imobiliario FII",
         "summary": null,
         "currency": "BRL",
@@ -408,7 +540,7 @@
         "city": null
     },
     "VOTS11.SA": {
-        "short_name": "FII V MASTERCI",
+        "short_name": "FII V MASTERCI  ER",
         "long_name": "Votorantim Securities Master Fundo Investimento Imobiliario Fii",
         "summary": null,
         "currency": "BRL",
@@ -419,8 +551,20 @@
         "country": "Brazil",
         "city": null
     },
+    "VSHO11.SA": {
+        "short_name": "FII VOT SHOPCI  ER",
+        "long_name": "FII Votorantim shopping",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": "Sao Paulo"
+    },
     "VTLT11.SA": {
-        "short_name": "FII VOT LOG CI",
+        "short_name": "FII VOT LOG CI  ER",
         "long_name": "Fundo Investimento Imobiliario Votorantim Logistica",
         "summary": null,
         "currency": "BRL",
@@ -430,6 +574,18 @@
         "market": "br_market",
         "country": "Brazil",
         "city": null
+    },
+    "WFS.TO": {
+        "short_name": "WORLD FINANCIAL SPLIT CORP",
+        "long_name": "World Financial Split Corp.",
+        "summary": "World Financial Split Corp is an equity mutual fund launched and managed by Strathbridge Asset Management Inc. It invests in public equity markets across the globe. The fund also invests some portion of its portfolio in derivative instruments. It invests in the stocks of companies operating in the financial services sector. The fund invests in the stocks of large cap companies. World Financial Split Corp was formed on December 5, 2003 and is domiciled in Canada.",
+        "currency": "CAD",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "TOR",
+        "market": "ca_market",
+        "country": "Canada",
+        "city": "Toronto"
     },
     "WMI.AX": {
         "short_name": "WAM MICRO FPO",
@@ -454,5 +610,17 @@
         "market": "au_market",
         "country": "United States",
         "city": "Laguna Beach"
+    },
+    "WTSP11B.SA": {
+        "short_name": "FII OURINVEST RE I",
+        "long_name": "Fundo De Investimento Imobiliario Ourinvest Re I",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "Asset Management",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "city": null
     }
 }

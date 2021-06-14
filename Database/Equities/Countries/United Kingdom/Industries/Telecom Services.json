@@ -1,8 +1,20 @@
 {
+    "1ZG.SG": {
+        "short_name": "Zegona Communications PLC Regis",
+        "long_name": "Zegona Communications plc",
+        "summary": "Zegona Communications plc, through its subsidiaries, provides telecommunication services in Northern Spain. It serves approximately 715,000 residential customers and companies. The company is also involved in financing business. Zegona Communications plc was founded in 1995 and is based in London, the United Kingdom.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "STU",
+        "market": "dr_market",
+        "country": "United Kingdom",
+        "city": "London"
+    },
     "6GC.F": {
         "short_name": "GAMMA COMMUNICATION.LS-01",
         "long_name": "Gamma Communications plc",
-        "summary": "Gamma Communications plc provides communications and software services for business in the United Kingdom and internationally. It offers strategic services, such as collaboration, cloud PBX, SIP trunking, inbound call control, and network services; enabling services, including ethernet, broadband, and mobile; and traditional call and line services. The company offers its services through a network of channel partners, as well as directly to end users. It serves small, medium, and large sized business customers. Gamma Communications plc was founded in 2001 and is headquartered in Newbury, the United Kingdom.",
+        "summary": "Gamma Communications plc provides communications and software services for small, medium, and large sized business. It offers strategic services, such as collaboration, cloud PBX, SIP trunking, inbound call control, and network services; enabling services, including ethernet, broadband, and mobile; and traditional call and line services. The company offers its services through a network of channel partners, as well as directly to end users. Gamma Communications plc was founded in 2001 and is headquartered in Newbury, the United Kingdom.",
         "currency": "EUR",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -59,18 +71,6 @@
         "country": "United Kingdom",
         "city": "Oxfordshire"
     },
-    "BT-A.L": {
-        "short_name": "BT GROUP PLC ORD 5P",
-        "long_name": "BT Group plc",
-        "summary": "BT Group plc provides communications products and services in the United Kingdom, Europe, the Middle East, Africa, the Americas, the Asia Pacific, and internationally. It operates through Consumer, Enterprise, Global, and Openreach segments. The Consumer segment offers mobile, broadband, home phone, and TV services under the BT, EE and Plusnet brands. The Enterprise segment sells communications and IT services to businesses and public sector organizations; and provides network products and services to communications providers. Its services include fixed voice, mobile, fixed connectivity, and IT services. The Global segment offers connectivity, communications, and IT services to multinational corporations. Its services include voice and data network, managed, security and network, and IT infrastructure services The Openreach segment builds and sells access to the network that connects the homes and businesses. It provides wholesale \u00c2\u0091last mile' fixed access from homes and businesses to exchanges; and installs and maintains fiber and copper communications networks. The company was formerly known as Newgate Telecommunications Limited and changed its name to BT Group plc in September 2001. BT Group plc was incorporated in 2001 and is headquartered in London, the United Kingdom.",
-        "currency": "GBp",
-        "sector": "Communication Services",
-        "industry": "Telecom Services",
-        "exchange": "LSE",
-        "market": "gb_market",
-        "country": "United Kingdom",
-        "city": "London"
-    },
     "BTGOF": {
         "short_name": "BT GROUP",
         "long_name": "BT Group plc",
@@ -110,7 +110,7 @@
     "GAMA.L": {
         "short_name": "GAMMA COMMUNICATIONS PLC ORD 0.",
         "long_name": "Gamma Communications plc",
-        "summary": "Gamma Communications plc provides communications and software services for business in the United Kingdom and internationally. It offers strategic services, such as collaboration, cloud PBX, SIP trunking, inbound call control, and network services; enabling services, including ethernet, broadband, and mobile; and traditional call and line services. The company offers its services through a network of channel partners, as well as directly to end users. It serves small, medium, and large sized business customers. Gamma Communications plc was founded in 2001 and is headquartered in Newbury, the United Kingdom.",
+        "summary": "Gamma Communications plc provides communications and software services for small, medium, and large sized business. It offers strategic services, such as collaboration, cloud PBX, SIP trunking, inbound call control, and network services; enabling services, including ethernet, broadband, and mobile; and traditional call and line services. The company offers its services through a network of channel partners, as well as directly to end users. Gamma Communications plc was founded in 2001 and is headquartered in Newbury, the United Kingdom.",
         "currency": "GBp",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -119,10 +119,22 @@
         "country": "United Kingdom",
         "city": "Newbury"
     },
+    "GAMCF": {
+        "short_name": "GAMMA COMMUNICATIONS PLC",
+        "long_name": "Gamma Communications plc",
+        "summary": "Gamma Communications plc provides communications and software services for small, medium, and large sized business. It offers strategic services, such as collaboration, cloud PBX, SIP trunking, inbound call control, and network services; enabling services, including ethernet, broadband, and mobile; and traditional call and line services. The company offers its services through a network of channel partners, as well as directly to end users. Gamma Communications plc was founded in 2001 and is headquartered in Newbury, the United Kingdom.",
+        "currency": "USD",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "United Kingdom",
+        "city": "Newbury"
+    },
     "HTWS.L": {
         "short_name": "HELIOS TOWERS PLC ORD 1P",
         "long_name": "Helios Towers plc",
-        "summary": "Helios Towers plc, an independent tower company, builds, acquires, and operates telecommunications towers and related passive infrastructure. It provides site space to mobile network operators and other telecommunications providers that in turn provide wireless voice and data services to consumers and businesses. The company also offers comprehensive tower-related operational services, including site selection, site preparation, construction, maintenance, security, and power management. It has a network of 6,974 sites and 14,591 tenancies in Tanzania, the Democratic Republic of Congo, Congo Brazzaville, Ghana, and South Africa. The company was founded in 2009 and is based in London, the United Kingdom.",
+        "summary": "Helios Towers plc, an independent tower company, builds, acquires, and operates telecommunications towers and related passive infrastructure. It provides site space to mobile network operators and other telecommunications providers that in turn provide wireless voice and data services to consumers and businesses. The company also offers comprehensive tower-related operational services, including site selection, site preparation, maintenance, security, and power management. As of March 31, 2021, it operated a network of 7,358 sites and 15,732 tenancies in Tanzania, the Democratic Republic of Congo, Congo Brazzaville, Ghana, and South Africa. The company was founded in 2009 and is based in London, the United Kingdom.",
         "currency": "GBp",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -143,46 +155,10 @@
         "country": "United Kingdom",
         "city": "Harrogate"
     },
-    "TALK.L": {
-        "short_name": "TALKTALK TELECOM GROUP PLC ORD ",
-        "long_name": "TalkTalk Telecom Group PLC",
-        "summary": "TalkTalk Telecom Group PLC provides telecommunications services to consumers and business to business customers in the United Kingdom. It offers fiber, broadband, landline, TV, and mobile services under the TalkTalk and TalkTalk Business brands. Its products include HomeSafe, a home filtering service for residential customers; WorkSafe that provides protection for internet devices to business customers; SuperSafe, which offers protection from viruses and malwares; CallSafe, a security feature that screens inbound calls; and TalkSafe, a way of identifying a customer when they call using their voice. TalkTalk Telecom Group PLC was founded in 2002 and is based in Salford, the United Kingdom.",
-        "currency": "GBp",
-        "sector": "Communication Services",
-        "industry": "Telecom Services",
-        "exchange": "LSE",
-        "market": "gb_market",
-        "country": "United Kingdom",
-        "city": "Salford"
-    },
-    "TK6.F": {
-        "short_name": "TALK TALK TELECOM LS-,001",
-        "long_name": "TalkTalk Telecom Group PLC",
-        "summary": "TalkTalk Telecom Group PLC provides telecommunications services to consumers and business to business customers in the United Kingdom. It offers fiber, broadband, landline, TV, and mobile services under the TalkTalk and TalkTalk Business brands. Its products include HomeSafe, a home filtering service for residential customers; WorkSafe that provides protection for internet devices to business customers; SuperSafe, which offers protection from viruses and malwares; CallSafe, a security feature that screens inbound calls; and TalkSafe, a way of identifying a customer when they call using their voice. TalkTalk Telecom Group PLC was founded in 2002 and is based in Salford, the United Kingdom.",
-        "currency": "EUR",
-        "sector": "Communication Services",
-        "industry": "Telecom Services",
-        "exchange": "FRA",
-        "market": "dr_market",
-        "country": "United Kingdom",
-        "city": "Salford"
-    },
-    "TLKTF": {
-        "short_name": "TALK TALK TELECOM GROUP PLC",
-        "long_name": "TalkTalk Telecom Group PLC",
-        "summary": "TalkTalk Telecom Group PLC provides telecommunications services to consumers and business to business customers in the United Kingdom. It offers fiber, broadband, landline, TV, and mobile services under the TalkTalk and TalkTalk Business brands. Its products include HomeSafe, a home filtering service for residential customers; WorkSafe that provides protection for internet devices to business customers; SuperSafe, which offers protection from viruses and malwares; CallSafe, a security feature that screens inbound calls; and TalkSafe, a way of identifying a customer when they call using their voice. TalkTalk Telecom Group PLC was founded in 2002 and is based in Salford, the United Kingdom.",
-        "currency": "USD",
-        "sector": "Communication Services",
-        "industry": "Telecom Services",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "United Kingdom",
-        "city": "Salford"
-    },
     "TOOP.L": {
         "short_name": "TOOPLE PLC ORD 0.0667P",
         "long_name": "Toople Plc",
-        "summary": "Toople Plc, through its subsidiaries, provides broadband and telephony solutions to small and medium enterprises (SMEs) in the United Kingdom. The company offers cloud based telephony services or Voice over Internet Protocol telephony; broadband over copper, EFM, and Ethernet data and mobile services. It also provides white label services on behalf of other telecommunication companies; and billing services. In addition, the company offers Merlin platform for wholesalers, which connect with carriers and to provide billing services to their own customers; and digital marketing services. The company was incorporated in 2016 and is based in Letchworth Garden City, the United Kingdom.",
+        "summary": "Toople Plc, through its subsidiaries, provides broadband and telephony solutions to small and medium enterprises in the United Kingdom. It offers cloud based telephony services or Voice over Internet Protocol telephony; broadband over copper, Ethernet first mile, SIM, and Ethernet data and mobile services. The company also provides white label services on behalf of other telecommunication companies; and billing services. In addition, it offers Merlin platform for wholesalers, which connect with carriers and to provide billing services to their own customers; and digital marketing services. The company was incorporated in 2016 and is based in Letchworth Garden City, the United Kingdom.",
         "currency": "GBp",
         "sector": "Communication Services",
         "industry": "Telecom Services",
@@ -190,18 +166,6 @@
         "market": "gb_market",
         "country": "United Kingdom",
         "city": "Letchworth Garden City"
-    },
-    "VOD": {
-        "short_name": "Vodafone Group Plc",
-        "long_name": "Vodafone Group Plc",
-        "summary": "Vodafone Group Plc engages in telecommunication services in Europe and internationally. The company offers mobile services that enable customers to call, text, and access data; fixed line services, including broadband, television (TV) offerings, and voice; and convergence services under the GigaKombi and Vodafone One names to customers. It also provides mobile, fixed, and a suite of converged communication services, such as Internet of Things (IoT) comprising managed IoT connectivity, automotive, and insurance services, as well as smart metering and health solutions; cloud and security portfolio comprising public and private cloud services, as well as cloud-based applications and products for securing networks and devices; and international voice, IP transit, and messaging services to support business customers that include small home offices and large multi-national companies. In addition, the company offers M-Pesa, an African payment platform, which provides money transfer, financial, and business and merchant payment services; and various services to operators through its partner market agreements, as well as rents capacity to mobile virtual network operators to provide mobile services. Vodafone Group Plc has strategic partnerships with Open Fiber; and Mobile TeleSystems PJSC. As of March 31, 2019, it had approximately 650 million mobile customers, 19 million fixed broadband customers, and 14 million TV customers. The company was founded in 1984 and is headquartered in Newbury, the United Kingdom.",
-        "currency": "USD",
-        "sector": "Communication Services",
-        "industry": "Telecom Services",
-        "exchange": "NMS",
-        "market": "us_market",
-        "country": "United Kingdom",
-        "city": "Newbury"
     },
     "VOD.L": {
         "short_name": "VODAFONE GROUP PLC ORD USD0.20 ",
@@ -212,6 +176,30 @@
         "industry": "Telecom Services",
         "exchange": "LSE",
         "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "Newbury"
+    },
+    "VOD": {
+        "short_name": "Vodafone Group Plc",
+        "long_name": "Vodafone Group Plc",
+        "summary": "Vodafone Group Plc engages in telecommunication services in Europe and internationally. The company offers mobile services that enable customers to call, text, and access data; fixed line services, including broadband, television (TV) offerings, and voice; and convergence services under the GigaKombi and Vodafone One names to customers. It also provides mobile, fixed, and a suite of converged communication services, such as Internet of Things (IoT) comprising managed IoT connectivity, automotive, and insurance services, as well as smart metering and health solutions; cloud and security portfolio comprising public and private cloud services, as well as cloud-based applications and products for securing networks and devices; and international voice, IP transit, and messaging services to support business customers that include small home offices and large multi-national companies. In addition, the company offers M-Pesa, an African payment platform, which provides money transfer, financial, and business and merchant payment services; and various services to operators through its partner market agreements, as well as rents capacity to mobile virtual network operators to provide mobile services. Vodafone Group Plc has strategic partnerships with Open Fiber, Mobile TeleSystems PJSC, and Google LLC. As of March 31, 2019, it had approximately 650 million mobile customers, 19 million fixed broadband customers, and 14 million TV customers. The company was founded in 1984 and is headquartered in Newbury, the United Kingdom.",
+        "currency": "USD",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "NMS",
+        "market": "us_market",
+        "country": "United Kingdom",
+        "city": "Newbury"
+    },
+    "VOD.VI": {
+        "short_name": "VODAFONE GROUP PLC-SP ADR",
+        "long_name": "Vodafone Group Plc",
+        "summary": "Vodafone Group Plc engages in telecommunication services in Europe and internationally. The company offers mobile services that enable customers to call, text, and access data; fixed line services, including broadband, television (TV) offerings, and voice; and convergence services under the GigaKombi and Vodafone One names to customers. It also provides mobile, fixed, and a suite of converged communication services, such as Internet of Things (IoT) comprising managed IoT connectivity, automotive, and insurance services, as well as smart metering and health solutions; cloud and security portfolio comprising public and private cloud services, as well as cloud-based applications and products for securing networks and devices; and international voice, IP transit, and messaging services to support business customers that include small home offices and large multi-national companies. In addition, the company offers M-Pesa, an African payment platform, which provides money transfer, financial, and business and merchant payment services; and various services to operators through its partner market agreements, as well as rents capacity to mobile virtual network operators to provide mobile services. Vodafone Group Plc has strategic partnerships with Open Fiber; and Mobile TeleSystems PJSC. As of March 31, 2019, it had approximately 650 million mobile customers, 19 million fixed broadband customers, and 14 million TV customers. The company was founded in 1984 and is headquartered in Newbury, the United Kingdom.",
+        "currency": "EUR",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "VIE",
+        "market": "at_market",
         "country": "United Kingdom",
         "city": "Newbury"
     },
@@ -274,5 +262,17 @@
         "market": "us_market",
         "country": "United Kingdom",
         "city": "Edgware"
+    },
+    "ZEG.L": {
+        "short_name": "ZEGONA COMMUNICATIONS PLC ORD 1",
+        "long_name": "Zegona Communications plc",
+        "summary": "Zegona Communications plc, through its subsidiaries, provides telecommunication services in Northern Spain. It serves approximately 715,000 residential customers and companies. The company is also involved in financing business. Zegona Communications plc was founded in 1995 and is based in London, the United Kingdom.",
+        "currency": "GBp",
+        "sector": "Communication Services",
+        "industry": "Telecom Services",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "United Kingdom",
+        "city": "London"
     }
 }

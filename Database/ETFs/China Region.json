@@ -31,12 +31,82 @@
     },
     "CHB": {
         "short_name": "Global X China Biotech Innovati",
-        "long_name": "Global X Funds - Global X China Biotech Innovation ETF",
+        "long_name": "Global X China Biotech Innovation ETF",
         "currency": "USD",
         "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the Solactive China Biotech Innovation Index (\"underlying index\").\n The fund invests at least 80% of its total assets, plus borrowings for investments purposes (if any), in the securities of the underlying index and in American Depositary Receipts (\"ADRs\") and Global Depositary Receipts (\"GDRs\") based on the securities in the underlying index. The underlying index is designed to provide exposure to exchange-listed companies that are directly involved in China\u00e2\u0080\u0099s biotechnology industry. It is non-diversified.",
         "category": "China Region",
         "family": "Global X Funds",
         "exchange": "NMS",
+        "market": "us_market"
+    },
+    "CHIE": {
+        "short_name": "Global X MSCI China Energy ETF",
+        "long_name": "Global X MSCI China Energy ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the MSCI China Energy IMI Plus 10/50 Index.\n The fund invests at least 80% of its total assets in the securities of the underlying index and in ADRs and GDRs based on the securities in the underlying index. The underlying index tracks the performance of companies in the MSCI China Investable Market Index (the \"parent index\") that are classified in the energy sector, as defined by the index provider. The fund is non-diversified.",
+        "category": "China Region",
+        "family": "Global X Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "CHIH": {
+        "short_name": "Global X Funds Global X MSCI Ch",
+        "long_name": "Global X MSCI China Health Care ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the MSCI China Health Care 10/50 Index.\n The fund invests at least 80% of its total assets in the securities of the underlying index and in ADRs and GDRs based on the securities in the underlying index. The underlying index tracks the performance of companies in the MSCI China Index (the \"parent index\") that are classified in the health care sector, as defined by the index provider. The fund is non-diversified.",
+        "category": "China Region",
+        "family": "Global X Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "CHII": {
+        "short_name": "Global X MSCI China Industrials",
+        "long_name": "Global X MSCI China Industrials ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the MSCI China Industrials 10/50 Index.\n The fund invests at least 80% of its total assets in the securities of the underlying index and in ADRs and GDRs based on the securities in the underlying index. The underlying index tracks the performance of companies in the MSCI China Index (the \"parent index\") that are classified in the industrials sector, as defined by the index provider. The fund is non-diversified.",
+        "category": "China Region",
+        "family": "Global X Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "CHIM": {
+        "short_name": "Global X MSCI China Materials E",
+        "long_name": "Global X MSCI China Materials ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the MSCI China Materials 10/50 Index.\n The fund invests at least 80% of its total assets in the securities of the underlying index and in ADRs and GDRs based on the securities in the underlying index. The underlying index tracks the performance of companies in the MSCI China Index (the \"parent index\") that are classified in the materials sector, as defined by the index provider. The fund is non-diversified.",
+        "category": "China Region",
+        "family": "Global X Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "CHIQ": {
+        "short_name": "Global X MSCI China Consumer Di",
+        "long_name": "Global X MSCI China Consumer Disc ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance of the MSCI China Consumer Discretionary 10/50 Index.\n The fund invests at least 80% of its total assets in the securities of the underlying index and in ADRs and GDRs based on the securities in the underlying index. The underlying index tracks the performance of companies in the MSCI China Index (the \"parent index\") that are classified in the consumer discretionary sector, as defined by the index provider. The fund is non-diversified.",
+        "category": "China Region",
+        "family": "Global X Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "CHIS": {
+        "short_name": "Global X Funds Global X MSCI Ch",
+        "long_name": "Global X MSCI China Consumer Staples ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the MSCI China Consumer Staples 10/50 Index.\n The fund invests at least 80% of its total assets in the securities of the underlying index and in ADRs and GDRs based on the securities in the underlying index. The underlying index tracks the performance of companies in the MSCI China Index (the \"parent index\") that are classified in the consumer staples sector, as defined by the index provider. The fund is non-diversified.",
+        "category": "China Region",
+        "family": "Global X Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "CHIX": {
+        "short_name": "Global X MSCI China Financials ",
+        "long_name": "Global X MSCI China Financials ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the MSCI China Financials 10/50 Index.\n The fund invests at least 80% of its total assets in the securities of the underlying index and in ADRs and GDRs based on the securities in the underlying index. The underlying index tracks the performance of companies in the MSCI China Index (the \"parent index\") that are classified in the financials sector, as defined by the index provider. The fund is non-diversified.",
+        "category": "China Region",
+        "family": "Global X Funds",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "CN": {
@@ -63,7 +133,7 @@
         "short_name": "Invesco China Technology ETF",
         "long_name": "Invesco China Technology ETF",
         "currency": "USD",
-        "summary": "The investment seeks to track the investment results (before fees and expenses) of the FTSE China Incl A 25% Technology Capped Index.\n The fund generally will invest at least 90% of its total assets in the securities (including ADRs and GDRs) that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, the index provider compiles, maintains, and calculates the underlying index. The underlying index may include China A-shares, B-shares, H-shares, N-shares, Red Chip shares, P-chip shares and S-chip shares. The fund is non-diversified.",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the FTSE China Incl A 25% Technology Capped Index.\n The fund generally will invest at least 90% of its total assets in the securities (including ADRs and GDRs) that comprise the underlying index. Strictly in accordance with its guidelines and mandated procedures, the index provider compiles, maintains, and calculates the underlying index. The underlying index may include China A-shares, B-shares, H-shares, N-shares, Red Chips, P-chips and S-chips. The fund is non-diversified.",
         "category": "China Region",
         "family": "Invesco",
         "exchange": "PCX",
@@ -89,16 +159,6 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "EWT": {
-        "short_name": "iShares Inc iShares MSCI Taiwan",
-        "long_name": "iShares MSCI Taiwan ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the MSCI Taiwan 25/50 Index.\n The fund will at all times invest at least 80% of its assets in the securities of its underlying index and in depositary receipts representing securities in its underlying index. The index is designed to measure the performance of the large- and mid-cap segments of the Taiwanese market. A capping methodology is applied that limits the weight of any single issuer to a maximum of 25% of the underlying index. The fund is non-diversified.",
-        "category": "China Region",
-        "family": "iShares",
-        "exchange": "PCX",
-        "market": "us_market"
-    },
     "FCA": {
         "short_name": "First Trust China AlphaDEX Fund",
         "long_name": "First Trust China AlphaDEX Fund",
@@ -106,7 +166,7 @@
         "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an equity index called the NASDAQ AlphaDEX\u00c2\u00ae China Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks, depositary receipts, real estate investment trusts (\"REITs\") and preferred shares that comprise the index. The index is designed to select stocks from the NASDAQ China Index (the \"base index\") that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
         "category": "China Region",
         "family": "First Trust",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "GLCN": {
@@ -129,6 +189,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "KALL": {
+        "short_name": "KraneShares MSCI All China Inde",
+        "long_name": "KraneShares MSCI All China Index ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond to the price and yield performance of the MSCI China All Shares Index (the \"underlying index\").\n Under normal circumstances, the fund will invest at least 80% of its total assets in components of the underlying index, in depositary receipts, representing such components, and investment companies that seek to track the performance of a subset of the underlying index or of an index highly correlated to a portion of the underlying index. The underlying index is a free float adjusted market capitalization weighted index designed to track the performance of Chinese exchange-listed equity securities.",
+        "category": "China Region",
+        "family": "KraneShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "KBA": {
         "short_name": "KraneShares Bosera MSCI China A",
         "long_name": "KraneShares Bosera MSCI China A ETF",
@@ -139,11 +209,51 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "KBUY": {
+        "short_name": "KraneShares CICC China Consumer",
+        "long_name": "KraneShares MSCI All China Consumer Discretionary Index ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, track the price and yield performance of a specific foreign equity securities index. The fund&#39;s current index is the MSCI China All Shares Consumer Discretionary Index.\n Under normal circumstances, the fund will invest at least 80% of its total assets in components of the underlying index, depositary receipts. The underlying index is a free float adjusted market capitalization weighted index designed to track the equity market performance of Chinese companies engaged in the consumer discretionary sector. The fund is non-diversified.",
+        "category": "China Region",
+        "family": "KraneShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "KFVG": {
+        "short_name": "KraneShares Trust KraneShares C",
+        "long_name": "KraneShares CICC China 5G & Semiconductor Index ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the price and yield performance of a specific equity securities index, the CICC China 5G and Semiconductor Leaders Index.\n The fund will invest at least 80% of its total assets in components of the index, depositary receipts, including ADRs, representing such components and securities underlying depositary receipts in the index. The index includes the stocks and depositary receipts of the top 30 companies by free-float market capitalization of Chinese companies engaged in 5G and Semiconductor-Related Industries. The fund is non-diversified.",
+        "category": "China Region",
+        "family": "KraneShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "KFYP": {
         "short_name": "KraneShares CICC China Leaders ",
         "long_name": "KraneShares CICC China Leaders 100 Index ETF",
         "currency": "USD",
         "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the price and yield performance of CSI CICC Select 100 Index.\n Under normal circumstances, the fund will invest at least 80% of its total assets in components of the underlying index and depositary receipts, including ADRs, representing such components. The underlying index includes the China A-Shares of 100 Chinese companies with high historical returns on equity, dividend yields and growth in net profits that have listed China A-Shares, as determined by the index provider. The fund is non-diversified.",
+        "category": "China Region",
+        "family": "KraneShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "KGRN": {
+        "short_name": "KraneShares MSCI China Clean Te",
+        "long_name": "KraneShares MSCI China Clean Technology ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond to the price and yield performance of MSCI China IMI Environment 10/40 Index.\n Under normal circumstances, the fund will invest at least 80% of its total assets in components of the underlying index, depositary receipts. The underlying index is a modified, free float adjusted market capitalization weighted index designed to track the equity market performance of Chinese companies that derive at least a majority of their revenues from environmentally beneficial products and services, as determined by MSCI Inc. It is non-diversified.",
+        "category": "China Region",
+        "family": "KraneShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "KSTR": {
+        "short_name": "KraneShares SSE STAR Market 50 ",
+        "long_name": "KraneShares SSE STAR Market 50 Index ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the price and yield performance of the SSE Science and Technology Innovation Board 50 Index\u00e3\u0080\u0082.\n Under normal circumstances, the fund will invest at least 80% of its total assets in components of the underlying index and depositary receipts, including American depositary receipts, representing such components. The underlying index includes the stocks and depositary receipts of the top 50 companies by free-float market capitalizations that are listed on the SSE Science and Technology Innovation Board. It is non-diversified.",
         "category": "China Region",
         "family": "KraneShares",
         "exchange": "PCX",
@@ -169,6 +279,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "MCHI": {
+        "short_name": "iShares MSCI China ETF",
+        "long_name": "iShares MSCI China ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the MSCI China Index.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and in investments that have economic characteristics that are substantially identical to the component securities of the underlying index. The index is a free float-adjusted market capitalization-weighted index designed to measure the performance of equity securities in the top 85% in market capitalization of the Chinese equity securities markets, as represented by the H-shares and B-shares markets. The fund is non-diversified.",
+        "category": "China Region",
+        "family": "iShares",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
     "PGJ": {
         "short_name": "Invesco Golden Dragon China ETF",
         "long_name": "Invesco Golden Dragon China ETF",
@@ -176,7 +296,7 @@
         "summary": "The investment seeks to track the investment results (before fees and expenses) of the NASDAQ Golden Dragon China Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of securities of U.S. exchange-listed companies that are headquartered or incorporated in the People&#39;s Republic of China. The fund is non-diversified.",
         "category": "China Region",
         "family": "Invesco",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "ZHOK": {

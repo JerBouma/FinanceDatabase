@@ -1,16 +1,4 @@
 {
-    "0JM.F": {
-        "short_name": "JASA MARGA (PERSERO)RP500",
-        "long_name": "PT Jasa Marga (Persero) Tbk",
-        "summary": "PT Jasa Marga (Persero) Tbk develops, constructs, operates, manages, and maintains toll roads in Indonesia. The company also offers toll road service, such as transaction services, traffic services, and road construction services. It operates 11 toll roads. PT Jasa Marga (Persero) Tbk was founded in 1978 and is headquartered in Jakarta, Indonesia.",
-        "currency": "EUR",
-        "sector": "Industrials",
-        "industry": "Engineering & Construction",
-        "exchange": "FRA",
-        "market": "dr_market",
-        "country": "Indonesia",
-        "city": "Jakarta"
-    },
     "5AA.F": {
         "short_name": "PT WIJAYA KARYA (P.)RP100",
         "long_name": "PT Wijaya Karya (Persero) Tbk.",
@@ -22,6 +10,18 @@
         "market": "dr_market",
         "country": "Indonesia",
         "city": "Jakarta Timur"
+    },
+    "5S31.SG": {
+        "short_name": "Surya Semesta Internusa, PT Reg",
+        "long_name": "PT Surya Semesta Internusa Tbk",
+        "summary": "PT Surya Semesta Internusa Tbk, together with its subsidiaries, engages in the construction business. The company operates through five divisions: Construction of Industrial Estates, Real Estate and Rental Buildings, Building Construction, Investment in Other Companies, and Hotels. It engages in the property, development, and management of industrial estates, real estate, buildings, and commercial centers; provision of construction and general contractor services for commercial buildings, mining, and infrastructure; and development and management of hotels and resorts, as well as hospitality and industrial estate development activities. The company owns approximately 10 hotels under the Gran Meli\u00c3\u00a1 Jakarta and Meli\u00c3\u00a1 Bali Hotels, Banyan Tree Ungasan Resort, The Plaza Hotel Glodok, and BATIQA Hotels brands. It engages in the rental of office buildings and shopping centers; and trading, development, transportation, agriculture, mining and services, and building construction activities. The company was formerly known as PT Multi Investments Limited and changed its name to PT Surya Semesta Internusa Tbk in 1995. PT Surya Semesta Internusa Tbk was founded in 1971 and is based in Jakarta, Indonesia.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "exchange": "STU",
+        "market": "dr_market",
+        "country": "Indonesia",
+        "city": "Jakarta"
     },
     "ACST.JK": {
         "short_name": "Acset Indonusa Tbk.",
@@ -83,6 +83,18 @@
         "country": "Indonesia",
         "city": "Jakarta Selatan"
     },
+    "FIMP.JK": {
+        "short_name": "Fimperkasa Utama Tbk.",
+        "long_name": "PT Fimperkasa Utama Tbk",
+        "summary": "PT Fimperkasa Utama Tbk engages in the construction service business in Indonesia. Its portfolio of services cover building and residential construction comprising residential homes, estates, apartments, mini buildings, sport centers, and school buildings; commercial and industrial constructions, such as shophouses and offices, buildings and facilities, factories, warehouses, facilities and infrastructure, and industrial area; and civil and infrastructure constructions, including land preparation, highways, bridges and flyovers, parking areas, and dams/reservoirs. The company was founded in 1993 and is headquartered in Jakarta Pusat, Indonesia.",
+        "currency": "IDR",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "exchange": "JKT",
+        "market": "id_market",
+        "country": "Indonesia",
+        "city": "Jakarta Pusat"
+    },
     "IDPR.JK": {
         "short_name": "Indonesia Pondasi Raya Tbk.",
         "long_name": "PT Indonesia Pondasi Raya Tbk",
@@ -122,7 +134,7 @@
     "MTPS.JK": {
         "short_name": "Meta Epsi Tbk.",
         "long_name": "PT Meta Epsi Tbk.",
-        "summary": "PT Meta Epsi Tbk. provides engineering, procurement, and construction services to customers in the areas of power and industrial generation, transmission, distribution, oil and gas, and infrastructure. The company also offers project management, procurement, construction and commissioning, and project development services. In addition, it is involved in the fisheries and plantation activities. The company was founded in 1975 and is headquartered in Jakarta, Indonesia. PT Meta Epsi Tbk. is a subsidiary of PT. Central Energi Pratama.",
+        "summary": "PT Meta Epsi Tbk. provides engineering, procurement, and construction services to customers in the areas of power and industrial generation, transmission, distribution, oil and gas, and infrastructure. The company also offers project management, procurement, construction and commissioning, and project development services. In addition, it is involved in the fisheries and plantation activities. The company was founded in 1975 and is headquartered in Jakarta, Indonesia. PT Meta Epsi Tbk. operates as a subsidiary of Pt Anugerah Perkasa Semesta.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
@@ -254,14 +266,14 @@
     "T9Q.F": {
         "short_name": "TOTAL BANGUN PER.  RP100",
         "long_name": "PT Total Bangun Persada Tbk",
-        "summary": "PT Total Bangun Persada Tbk, together with its subsidiaries, provides construction and other related services primarily in Indonesia. It operates through Construction, and Rental and Others divisions. The company undertakes construction of education, office and religious buildings, high rise residential buildings, hospitals, shopping centers, hotels, utilities, and industrial projects. It also provides equipment rental and installation services. The company was founded in 1970 and is based in West Jakarta, Indonesia. PT Total Bangun Persada Tbk is a subsidiary of PT Total Inti Persada.",
+        "summary": "PT Total Bangun Persada Tbk, together with its subsidiaries, provides construction and other related services primarily in Indonesia. It operates through Construction, and Rental and Others divisions. The company undertakes construction of education, office and religious buildings, high rise residential buildings, hospitals, shopping centers, hotels, utilities, and industrial projects. PT Total Bangun Persada Tbk also provides equipment rental and installation services. The company was founded in 1970 and is based in West Jakarta, Indonesia. PT Total Bangun Persada Tbk is a subsidiary of PT Total Inti Persada.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Indonesia",
-        "city": "West Jakarta"
+        "city": "Jakarta Barat"
     },
     "TOPS.JK": {
         "short_name": "Totalindo Eka Persada Tbk.",
@@ -278,14 +290,14 @@
     "TOTL.JK": {
         "short_name": "Total Bangun Persada Tbk.",
         "long_name": "PT Total Bangun Persada Tbk",
-        "summary": "PT Total Bangun Persada Tbk, together with its subsidiaries, provides construction and other related services primarily in Indonesia. It operates through Construction, and Rental and Others divisions. The company undertakes construction of education, office and religious buildings, high rise residential buildings, hospitals, shopping centers, hotels, utilities, and industrial projects. It also provides equipment rental and installation services. The company was founded in 1970 and is based in West Jakarta, Indonesia. PT Total Bangun Persada Tbk is a subsidiary of PT Total Inti Persada.",
+        "summary": "PT Total Bangun Persada Tbk, together with its subsidiaries, provides construction and other related services primarily in Indonesia. It operates through Construction, and Rental and Others divisions. The company undertakes construction of education, office and religious buildings, high rise residential buildings, hospitals, shopping centers, hotels, utilities, and industrial projects. PT Total Bangun Persada Tbk also provides equipment rental and installation services. The company was founded in 1970 and is based in West Jakarta, Indonesia. PT Total Bangun Persada Tbk is a subsidiary of PT Total Inti Persada.",
         "currency": "IDR",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "West Jakarta"
+        "city": "Jakarta Barat"
     },
     "WEGE.JK": {
         "short_name": "Wijaya Karya Bangunan Gedung Tb",

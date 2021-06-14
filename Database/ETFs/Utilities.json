@@ -29,6 +29,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "IDU": {
+        "short_name": "iShares U.S. Utilities ETF",
+        "long_name": "iShares U.S. Utilities ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Dow Jones U.S. Utilities Index.\n The fund generally invests at least 90% of its assets in securities of the underlying index and in depositary receipts representing securities of the underlying index. The underlying index measures the performance of the utilities sector of the U.S. equity market and may include large-, mid- or small-capitalization companies. The fund is non-diversified.",
+        "category": "Utilities",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "JXI": {
         "short_name": "iShares Global Utilities ETF",
         "long_name": "iShares Global Utilities ETF",
@@ -39,6 +49,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "PSCU": {
+        "short_name": "Invesco S&P SmallCap Utilities ",
+        "long_name": "Invesco S&P SmallCap Utilities & Communication Services ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P SmallCap 600\u00c2\u00ae Capped Utilities & Communication Services Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the index. Strictly in accordance with its guidelines and mandated procedures, S&P Dow Jones Indices, LLC compiles, maintains and calculates the index, which is designed to measure the performance of securities of small-capitalization U.S. companies in the utilities and communication services sectors, as defined by the Global Industry Classification Standard. The fund is non-diversified.",
+        "category": "Utilities",
+        "family": "Invesco",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
     "PUI": {
         "short_name": "Invesco DWA Utilities Momentum ",
         "long_name": "Invesco DWA Utilities Momentum ETF",
@@ -46,7 +66,17 @@
         "summary": "The investment seeks to track the investment results (before fees and expenses) of the Dorsey Wright\u00c2\u00ae Utilities Technical Leaders Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of at least 30 securities of companies in the utilities sector that have powerful relative strength or \"momentum\" characteristics.",
         "category": "Utilities",
         "family": "Invesco",
-        "exchange": "NMS",
+        "exchange": "NGM",
+        "market": "us_market"
+    },
+    "RYU": {
+        "short_name": "Invesco S&P 500 Equal Weight Ut",
+        "long_name": "Invesco S&P 500 Equal Weight Utilities ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S&P 500\u00c2\u00ae Equal Weight Utilities Plus Index.\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index. The underlying index is composed of all of the components of the S&P 500\u00c2\u00ae Utilities Plus Index, an index that contains the common stocks of all companies included in the S&P 500\u00c2\u00ae Index that are classified as members of the utilities sector, as defined according to the Global Industry Classification Standard (\"GICS\").",
+        "category": "Utilities",
+        "family": "Invesco",
+        "exchange": "PCX",
         "market": "us_market"
     },
     "VPU": {
@@ -67,16 +97,6 @@
         "category": "Utilities",
         "family": "SPDR State Street Global Advisors",
         "exchange": "PCX",
-        "market": "us_market"
-    },
-    "YLCO": {
-        "short_name": "Global X YieldCo & Renewable En",
-        "long_name": "Global X YieldCo & Renewable Energy Income ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track, before fees and expenses, the price and yield performance of the Indxx YieldCo & Renewable Energy Income Index.\n The fund invests at least 80% of its total assets in the securities of the underlying index and in ADRs and GDRs based on the securities in the underlying index. The underlying index is designed to provide exposure to publicly traded companies that produce energy from renewable sources including wind, solar, hydroelectric, geothermal, and biofuels (including publicly traded companies that are formed to own operating assets that produce defined cash flows. The fund is non-diversified.",
-        "category": "Utilities",
-        "family": "Global X Funds",
-        "exchange": "NGM",
         "market": "us_market"
     }
 }

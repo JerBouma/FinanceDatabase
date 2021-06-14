@@ -1,111 +1,13 @@
 {
-    "^KQ11": {
-        "short_name": "Kosdaq Composite Index",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KOE",
-        "exchange timezone": "KST"
-    },
-    "^KQ184": {
-        "short_name": "KOSDAQ Growth Index",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KOE",
-        "exchange timezone": "KST"
-    },
-    "^KQ20": {
-        "short_name": "Kosdaq Transportation Index",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KOE",
-        "exchange timezone": "KST"
-    },
-    "^KQ21": {
-        "short_name": "Kosdaq Food Berverage & Tobacco",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KOE",
-        "exchange timezone": "KST"
-    },
-    "^KQ22": {
-        "short_name": "Kosdaq Textile & Apparel Index",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KOE",
-        "exchange timezone": "KST"
-    },
-    "^KQ26": {
-        "short_name": "Kosdaq Pharmaceuticals Index",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KOE",
-        "exchange timezone": "KST"
-    },
-    "^KQ27": {
-        "short_name": "Kosdaq Non-Metal Products Index",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KOE",
-        "exchange timezone": "KST"
-    },
-    "^KQ38": {
-        "short_name": "Kosdaq Broadcasting Index",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KOE",
-        "exchange timezone": "KST"
-    },
-    "^KQ46": {
-        "short_name": "Kosdaq Computer Hardware Index",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KOE",
-        "exchange timezone": "KST"
-    },
-    "^KQ51": {
-        "short_name": "kosdaq Entertainment & Culture ",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KOE",
-        "exchange timezone": "KST"
-    },
-    "^KQI": {
-        "short_name": "Indicative Kosdaq Composite Ind",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KOE",
-        "exchange timezone": "KST"
-    },
-    "^KQSM": {
-        "short_name": "Kosdaq Small Index",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KOE",
-        "exchange timezone": "KST"
-    },
-    "^KS11": {
-        "short_name": "KOSPI Composite Index",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KSC",
-        "exchange timezone": "KST"
-    },
-    "^KS200": {
-        "short_name": "KOSPI 200 Index",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KSC",
-        "exchange timezone": "KST"
-    },
-    "KOSPI-10.KS": {
-        "short_name": "KOSPI Non-metallic Mineral Prod",
-        "currency": "KRW",
-        "market": "kr_market",
-        "exchange": "KSC",
-        "exchange timezone": "KST"
-    },
     "KOSPI-19.KS": {
         "short_name": "KOSPI Transport & Storage Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI-2.KS": {
+        "short_name": "KOSPI LargeSize Index",
         "currency": "KRW",
         "market": "kr_market",
         "exchange": "KSC",
@@ -118,8 +20,22 @@
         "exchange": "KSC",
         "exchange timezone": "KST"
     },
+    "KOSPI-4.KS": {
+        "short_name": "KOSPI SmallSize Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
     "KOSPI-6.KS": {
         "short_name": "KOSPI Textile & Wearing Apparel",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI.KS": {
+        "short_name": "KOSPI Composite Index",
         "currency": "KRW",
         "market": "kr_market",
         "exchange": "KSC",
@@ -132,6 +48,27 @@
         "exchange": "KSC",
         "exchange timezone": "KST"
     },
+    "KOSPI100EW-I.KS": {
+        "short_name": "KOSPI-100 Equally Weighted Esti",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI100EW.KS": {
+        "short_name": "KOSPI-100 Equally Weighted Inde",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI200-I.KS": {
+        "short_name": "KOSPI 200 Indicative Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
     "KOSPI200.KS": {
         "short_name": "KOSPI 200 Index",
         "currency": "KRW",
@@ -139,8 +76,127 @@
         "exchange": "KSC",
         "exchange timezone": "KST"
     },
+    "KOSPI200EW-I.KS": {
+        "short_name": "KOSPI-200 Equally Weighted Esti",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI200EW.KS": {
+        "short_name": "KOSPI-200 Equally Weighted Inde",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI200SECTOR-1.KS": {
+        "short_name": "KOSPI-200 Constructions Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
     "KOSPI200SECTOR-10.KS": {
         "short_name": "KOSPI-200 Healthcare Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI200SECTOR-4.KS": {
+        "short_name": "KOSPI-200 Energy And Chemicals ",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI200SECTOR-8.KS": {
+        "short_name": "KOSPI-200 Consumer Discretionar",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI200SECTOR-I2.KS": {
+        "short_name": "KOSPI-200 Heavy Industries Indi",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI200SECTOR-I3.KS": {
+        "short_name": "KOSPI-200 Steels And Materials ",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI200SECTOR-I4.KS": {
+        "short_name": "KOSPI-200 Energy And Chemicals ",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI200SECTOR-I5.KS": {
+        "short_name": "KOSPI-200 IT Indicative Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI200SECTOR-I6.KS": {
+        "short_name": "KOSPI-200 Financials Indicative",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI200SECTOR-I7.KS": {
+        "short_name": "KOSPI-200 Consumer Staples Indi",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI200SECTOR-I8.KS": {
+        "short_name": "KOSPI-200 Consumer Discretionar",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI200SECTOR-I9.KS": {
+        "short_name": "KOSPI-200 Industrial Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI50.KS": {
+        "short_name": "KOSPI 50 Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI50EW-I.KS": {
+        "short_name": "KOSPI-50 Equally Weighted Estim",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KOSPI50EW.KS": {
+        "short_name": "KOSPI-50 Equally Weighted Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "KRX100-I.KS": {
+        "short_name": "KRX 100 Indicative Consolidated",
         "currency": "KRW",
         "market": "kr_market",
         "exchange": "KSC",
@@ -176,6 +232,349 @@
     },
     "KTOP30ESTIX.KS": {
         "short_name": "KTOP 30 Estimated Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "^KQ100": {
+        "short_name": "Kosdaq 100 Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ11": {
+        "short_name": "Kosdaq Composite Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ12": {
+        "short_name": "Kosdaq Manufacturing Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ14": {
+        "short_name": "Kosdaq Construction Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ15": {
+        "short_name": "Kosdaq Financials Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ15I": {
+        "short_name": "Indicative Kosdaq IT  Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ16": {
+        "short_name": "Kosdaq Other Services Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ181": {
+        "short_name": "KOSDAQ Prime Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ181I": {
+        "short_name": "KOSDAQ Prime Indicative Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ182": {
+        "short_name": "KOSDAQ Venture Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ182I": {
+        "short_name": "KOSDAQ Venture Indicative Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ183": {
+        "short_name": "KOSDAQ Standard Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ183I": {
+        "short_name": "KOSDAQ Standard Indicative Inde",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ184": {
+        "short_name": "KOSDAQ Growth Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ184I": {
+        "short_name": "KOSDAQ Growth Indicative Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ19": {
+        "short_name": "Kosdaq Distribution Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ20": {
+        "short_name": "Kosdaq Transportation Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ21": {
+        "short_name": "Kosdaq Food Berverage & Tobacco",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ22": {
+        "short_name": "Kosdaq Textile & Apparel Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ23": {
+        "short_name": "Kosdaq Paper & Wood Products In",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ24": {
+        "short_name": "Kosdaq Publishing & Printing In",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ25": {
+        "short_name": "Kosdaq Chemicals Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ26": {
+        "short_name": "Kosdaq Pharmaceuticals Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ27": {
+        "short_name": "Kosdaq Non-Metal Products Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ28": {
+        "short_name": "Kosdaq Metal Products Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ29": {
+        "short_name": "Kosdaq Machinery Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ30": {
+        "short_name": "Kosdaq Electric & Electronic In",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ300": {
+        "short_name": "Kosdaq MID300 Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ31": {
+        "short_name": "Kosdaq Medical & Precision Mach",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ32": {
+        "short_name": "Kosdaq Vehicles & Components In",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ33": {
+        "short_name": "Kosdaq Other Manufacturing Inde",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ36": {
+        "short_name": "Kosdaq Telecom & Broadcasting I",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ37": {
+        "short_name": "Kosdaq Telecommunications Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ38": {
+        "short_name": "Kosdaq Broadcasting Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ39": {
+        "short_name": "Kosdaq IT Software & Services I",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ40": {
+        "short_name": "Kosdaq Internet Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ41": {
+        "short_name": "Kosdaq Digital Contents Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ42": {
+        "short_name": "Kosdaq Software Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ43": {
+        "short_name": "Kosdaq Computer Services Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ44": {
+        "short_name": "Kosdaq IT Hardware Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ45": {
+        "short_name": "Kosdaq Telecom & Broadcasting E",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ46": {
+        "short_name": "Kosdaq Computer Hardware Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ47": {
+        "short_name": "Kosdaq Semiconductors Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ48": {
+        "short_name": "Kosdaq IT Components Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQ51": {
+        "short_name": "kosdaq Entertainment & Culture ",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQI": {
+        "short_name": "Indicative Kosdaq Composite Ind",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KQSM": {
+        "short_name": "Kosdaq Small Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KOE",
+        "exchange timezone": "KST"
+    },
+    "^KS11": {
+        "short_name": "KOSPI Composite Index",
+        "currency": "KRW",
+        "market": "kr_market",
+        "exchange": "KSC",
+        "exchange timezone": "KST"
+    },
+    "^KS200": {
+        "short_name": "KOSPI 200 Index",
         "currency": "KRW",
         "market": "kr_market",
         "exchange": "KSC",

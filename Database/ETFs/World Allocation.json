@@ -1,14 +1,4 @@
 {
-    "DALI": {
-        "short_name": "First Trust DorseyWright DALI 1",
-        "long_name": "First Trust Dorsey Wright DALI 1 ETF",
-        "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield (before the fund&#39;s fees and expenses) of an index called the Nasdaq Dorsey Wright DALI 1 Index.\n Under normal conditions, the fund will invest at least 90% of its net assets (including investment borrowings) in the equity securities that comprise the index. The index has been designed based upon the principle that the asset class exhibiting the highest levels of \"relative strength,\" based on current prices, will be the asset class with the best performance over the near term. It is non-diversified.",
-        "category": "World Allocation",
-        "family": "First Trust",
-        "exchange": "NMS",
-        "market": "us_market"
-    },
     "EUCG": {
         "short_name": "Euclid Capital Growth ETF",
         "long_name": "Euclid Capital Growth ETF",
@@ -26,7 +16,7 @@
         "summary": "The investment seeks to provide current income with a secondary emphasis on total return.\n The fund seeks to achieve its investment objectives by investing at least 80% of its net assets (including investment borrowings) in a portfolio of closed-end investment companies that are listed and traded in the United States on registered exchanges. In selecting the closed-end funds for it&#39;s portfolio, the fund&#39;s investment advisor utilizes a range of investment approaches.",
         "category": "World Allocation",
         "family": "First Trust",
-        "exchange": "NGM",
+        "exchange": "NMS",
         "market": "us_market"
     },
     "GAA": {
@@ -34,6 +24,16 @@
         "long_name": "Cambria Global Asset Allocation ETF",
         "currency": "USD",
         "summary": "The investment seeks income and capital appreciation.\n Under normal market conditions, the fund invests at least 80% of its total assets in affiliated and unaffiliated exchange-traded funds (\"ETFs\") and other exchange-traded products (\"ETPs\") (collectively, \"underlying vehicles\") that provide exposure to various (i) investment asset classes, including equity and fixed income securities, real estate, commodities, and currencies, and (ii) factors such as value, momentum, and trend investing.",
+        "category": "World Allocation",
+        "family": "CAMBRIA ETF TRUST",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "GMOM": {
+        "short_name": "Cambria Global Momentum ETF",
+        "long_name": "Cambria Global Momentum ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to preserve and grow capital from investments in the U.S. and foreign equity, fixed income, commodity and currency markets, independent of market direction.\n The fund is considered a \"fund of funds\" that seeks to achieve its investment objective by primarily investing in other exchange-traded funds and other exchange traded products including, but not limited to, exchange-traded notes, exchange traded currency trusts, closed-end funds, and real estate investment trusts that offer diversified exposure, including inverse exposure, to global regions, countries, styles and sectors.",
         "category": "World Allocation",
         "family": "CAMBRIA ETF TRUST",
         "exchange": "BTS",
@@ -49,6 +49,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "MCRO": {
+        "short_name": "IQ Hedge Macro Tracker ETF",
+        "long_name": "IQ Hedge Macro Tracker ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond (before fees and expenses) generally to the price and yield performance of its underlying index, the IQ Hedge Macro Index.\n The fund is a \"fund of funds\" which means it invests, under normal circumstances, at least 80% of its net assets, plus the amount of any borrowings for investment purposes, in the investments included in its underlying index, which includes underlying funds. The underlying index consists of a number of components (\"underlying index Components\") selected in accordance with IndexIQ&#39;s rules-based methodology of such underlying index.",
+        "category": "World Allocation",
+        "family": "IndexIQ",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "QPX": {
         "short_name": "AdvisorShares Q Dynamic Growth ",
         "long_name": "AdvisorShares Q Dynamic Growth ETF",
@@ -57,6 +67,36 @@
         "category": "World Allocation",
         "family": "AdvisorShares",
         "exchange": "PCX",
+        "market": "us_market"
+    },
+    "RAAX": {
+        "short_name": "VanEck Vectors Real Asset Alloc",
+        "long_name": "VanEck Vectors Real Asset Allocation ETF",
+        "currency": "USD",
+        "summary": "The investment seeks long-term total return.\n The fund invests, under normal circumstances, primarily in (i) exchange-traded products that provide exposure to real assets through investment in domestic and foreign equity and debt securities, master limited partnerships (\"MLPs\"), and commodities, including ETFs and non-1940 Act (defined herein) commodity pools or commodity trusts and exchange traded notes (\"ETNs\") (collectively, \"ETPs\"); and (ii) cash or cash equivalents. It is non-diversified.",
+        "category": "World Allocation",
+        "family": "VanEck",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "RLY": {
+        "short_name": "SPDR SSgA Multi Asset Real Retu",
+        "long_name": "SPDR SSgA Multi-Asset Real Return ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to achieve real return consisting of capital appreciation and current income.\n Under normal circumstances, the Adviser invests at least 80% of the net assets of the fund among ETPs that provide exposure to the following primary asset classes: (i) inflation protected securities issued by the United States government; (ii) domestic and international real estate securities; (iii) commodities; (iv) publicly-traded domestic and international infrastructure companies; and (iv) publicly-traded companies in natural resources and/or commodities businesses.",
+        "category": "World Allocation",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "TFIV": {
+        "short_name": "Global X TargetIncome 5 ETF",
+        "long_name": "Global X TargetIncome 5 ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the Wilshire TargetIncomeTM 5% Plus Index (\"underlying index\").\n The fund is a fund of funds and invests at least 80% of its total assets in the securities of the underlying index. The underlying index seeks to provide broad exposure to income-producing asset classes using a portfolio of exchange-traded funds, with the goal, but not the guarantee, of providing exposure that may be sufficient to support an annualized yield of five percent (5.0%) for the fund, net of fees. The fund is non-diversified.",
+        "category": "World Allocation",
+        "family": "Global X Funds",
+        "exchange": "BTS",
         "market": "us_market"
     }
 }

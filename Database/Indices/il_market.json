@@ -1,226 +1,142 @@
 {
-    "184.TA": {
-        "short_name": "TA-Cleantech",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "32.TA": {
-        "short_name": "TA-Rimon",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "33.TA": {
-        "short_name": "TA-SME150",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
     "35.TA": {
         "short_name": "Tel Bond Shekel-50",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
     },
     "45.TA": {
         "short_name": "Tel Bond Shekel-Banks & Insuran",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "48.TA": {
-        "short_name": "Tel Bond-CPI AA-AAA",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "50.TA": {
-        "short_name": "Tel Bond-Shekel AA-AAA",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "51.TA": {
-        "short_name": "TA-Industrials",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "53.TA": {
-        "short_name": "TA-Family",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "54.TA": {
-        "short_name": "TA-Energy Utilities",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "55.TA": {
-        "short_name": "TA-Construction",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "56.TA": {
-        "short_name": "TA-Investment Properties in Isr",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
     },
     "57.TA": {
         "short_name": "TA-Investment Properties Abroad",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
     },
-    "^TA125.TA": {
-        "short_name": "TA-125",
+    "598.TA": {
+        "short_name": "VTA35",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
+    },
+    "714.TA": {
+        "short_name": "Tel Bond Yields",
+        "currency": "ILS",
+        "market": "il_market",
+        "exchange": "TLV",
+        "exchange timezone": "IDT"
+    },
+    "718.TA": {
+        "short_name": "Tel Bond - Yields Shekel",
+        "currency": "ILS",
+        "market": "il_market",
+        "exchange": "TLV",
+        "exchange timezone": "IDT"
+    },
+    "ESTATE15.TA": {
+        "short_name": "TA Real Estate 15",
+        "currency": "ILS",
+        "market": "il_market",
+        "exchange": "TLV",
+        "exchange timezone": "IDT"
     },
     "MAALA.TA": {
         "short_name": "TA Maala",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
+    },
+    "MIDCAP120.TA": {
+        "short_name": "TA Growth",
+        "currency": "ILS",
+        "market": "il_market",
+        "exchange": "TLV",
+        "exchange timezone": "IDT"
     },
     "MIDCAP50.TA": {
         "short_name": "TA-SME60",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "TA-BANKS.TA": {
-        "short_name": "TA Banks-5",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "TA-COM.TA": {
-        "short_name": "TA Comm & IT",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
     },
     "TA-COMP.TA": {
         "short_name": "TA Allshare",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "TA-FIN.TA": {
-        "short_name": "TA Finance",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "TA-INS.TA": {
-        "short_name": "TA Insurance Plus",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "TA-OG.TA": {
-        "short_name": "TA Oil and Gas",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "TA-TECH.TA": {
-        "short_name": "TA Technology",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
     },
     "TA35.TA": {
         "short_name": "TA-35",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
     },
     "TA90.TA": {
         "short_name": "TA-90",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
     },
     "TASEBM.TA": {
         "short_name": "TA Biomed",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
-    },
-    "TEL-SHEK.TA": {
-        "short_name": "Tel Bond Shekel",
-        "currency": "ILS",
-        "market": "il_market",
-        "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
     },
     "TEL-TECH.TA": {
         "short_name": "TA BlueTech Global",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
     },
     "TELBOND20.TA": {
         "short_name": "Tel Bond 20",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
     },
     "TELBOND40.TA": {
         "short_name": "Tel Bond 40",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
     },
     "TELBOND60.TA": {
         "short_name": "Tel Bond 60",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
     },
     "TELDIV20.TA": {
         "short_name": "Tel Div",
         "currency": "ILS",
         "market": "il_market",
         "exchange": "TLV",
-        "exchange timezone": "IST"
+        "exchange timezone": "IDT"
+    },
+    "^TA125.TA": {
+        "short_name": "TA-125",
+        "currency": "ILS",
+        "market": "il_market",
+        "exchange": "TLV",
+        "exchange timezone": "IDT"
     }
 }

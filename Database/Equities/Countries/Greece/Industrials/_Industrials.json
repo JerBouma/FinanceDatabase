@@ -14,7 +14,7 @@
     "1GT.F": {
         "short_name": "GEK TERNA S.A.  EO 0,57",
         "long_name": "GEK TERNA Holdings, Real Estate, Construction S.A.",
-        "summary": "GEK TERNA Holdings, Real Estate, Construction S.A., together with its subsidiaries, engages in the construction, energy, real estate, industrial, and concession businesses in Greece, the Balkans, the Middle East, Eastern Europe, and North America. It is involved in the construction of railway and highway networks, office buildings, hospitals, museums, resorts, hydro-electric plants, dams, harbors, industrial facilities, power plants, etc. for public and private sectors; and the financing, management, and commercial exploitation of concession projects, such as management and operation of car parking. The company also produces electricity through wind, solar, hydropower, and biomass with an installed capacity of 1,386.5 megawatts. In addition, it engages in the acquisition, investment, development, and exploitation of real estate properties, including business and logistic centers, industrial and entertainment parks, residential and commercial properties, hotels, parking stations, etc. Further, the company is involved in the production of quarry products; extraction and processing of magnesite products; and the operation of Borovets Euphoria Club Hotel & Spa in Bulgaria. It also owns two thermal power plants with a total installed capacity of 147 MW and 435 MW in Viotia, Greece; and undertakes waste management projects. The company was formerly known as Ermis Real Estate Constructions Enterprises S.A. and changed its name to GEK TERNA Holdings, Real Estate, Construction S.A. in 2008. GEK TERNA Holdings, Real Estate, Construction S.A. was founded in 1960 and is headquartered in Athens, Greece.",
+        "summary": "GEK TERNA Holdings, Real Estate, Construction S.A., together with its subsidiaries, engages in the construction, energy, real estate, industrial, and concession businesses in Greece, the Balkans, the Middle East, Eastern Europe, the United States, and internationally. The company is involved in the construction of motorways, buildings, ports, and large energy projects; the financing, management, and commercial exploitation of concession projects, such as operation of car parking. It also constructs and operates wind farms, hydroelectric projects, pumping storage projects, hybrid stations, and photovoltaics, as well as the undertaking of integrated projects for waste management, biofuels, and other materials with an installed capacity of 1,363.7 MW; and trades in electric energy and natural gas. In addition, the company engages in the acquisition, development, and exploitation of real estate properties, including business centers, logistic centers, industrial parks, entertainment parks, residential properties, commercial properties, hotels, etc.; production of quarry products; and exploitation of magnesite products. Further, it operates Borovets Euphoria Club Hotel & Spa in Bulgaria; and owns two thermal power plants with a total installed capacity of 147 MW and 435 MW in Viotia, Greece. The company was formerly known as Ermis Real Estate Constructions Enterprises S.A. and changed its name to GEK TERNA Holdings, Real Estate, Construction S.A. in 2008. The company was founded in 1960 and is headquartered in Athens, Greece.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
@@ -62,7 +62,7 @@
     "CPLP": {
         "short_name": "Capital Product Partners L.P.",
         "long_name": "Capital Product Partners L.P.",
-        "summary": "Capital Product Partners L.P., a shipping company, provides marine transportation services in Greece. Its vessels transports a range of dry cargoes and containerized goods under short-term voyage charters, and medium to long-term time and bareboat charters. As of March 05, 2020, the company owned 14 vessels, including 13 Neo-Panamax container vessels and one capesize bulk carrier. Capital GP L.L.C. serves as the general partner of the company. The company was founded in 2007 and is headquartered in Piraeus, Greece.",
+        "summary": "Capital Product Partners L.P., a shipping company, provides marine transportation services in Greece. Its vessels transports a range of dry cargoes and containerized goods under short-term voyage charters, and medium to long-term time and bareboat charters. As of April 26, 2021, the company owned 17 vessels, including thirteen Neo-Panamax container vessels, three Panamax container vessels, and one Capesize bulk carrier. Capital GP L.L.C. serves as the general partner of the company. The company was incorporated in 2007 and is headquartered in Piraeus, Greece.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -74,7 +74,7 @@
     "DAC": {
         "short_name": "Danaos Corporation",
         "long_name": "Danaos Corporation",
-        "summary": "Danaos Corporation, together with its subsidiaries, owns and operates containerships in Australia, Asia, Europe, and the United States. The company offers seaborne transportation services, such as chartering its vessels to liner companies. As of October 12, 2020, it had a fleet of 63 containerships aggregating 385,769 twenty foot equivalent units in capacity. The company was formerly known as Danaos Holdings Limited and changed its name to Danaos Corporation in October 2005. Danaos Corporation was founded in 1972 and is based in Piraeus, Greece.",
+        "summary": "Danaos Corporation, together with its subsidiaries, owns and operates containerships in Australia, Asia, Europe, and the United States. The company offers seaborne transportation services, such as chartering its vessels to liner companies. As of February 28, 2021, it had a fleet of 65 containerships aggregating 403,793 twenty foot equivalent units in capacity. The company was formerly known as Danaos Holdings Limited and changed its name to Danaos Corporation in October 2005. Danaos Corporation was founded in 1972 and is based in Piraeus, Greece.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -83,10 +83,22 @@
         "country": "Greece",
         "city": "Piraeus"
     },
-    "DSX": {
-        "short_name": "Diana Shipping inc.",
+    "DS2U.F": {
+        "short_name": "PERFORMANCE SHIPP. NEW",
+        "long_name": "Performance Shipping Inc.",
+        "summary": "Performance Shipping Inc., through its subsidiaries, provides shipping transportation services through its ownership of tanker vessels worldwide. As of April 7, 2021, it owned and operated five Aframax tanker vessels with a combined carrying capacity of 546,094 dwt. The company was incorporated in 2010 and is based in Athens, Greece.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Marine Shipping",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Greece",
+        "city": "Athens"
+    },
+    "DSX-PB": {
+        "short_name": "Diana Shipping Inc. Perpetual P",
         "long_name": "Diana Shipping Inc.",
-        "summary": "Diana Shipping Inc. provides shipping transportation services. The company transports a range of dry bulk cargoes, including commodities, such as iron ore, coal, grain, and other materials in shipping routes worldwide. As of March 31, 2020, it operated a fleet of 41 dry bulk vessels comprising 4 Newcastlemax, 13 Capesize, 5 Post-Panamax, 5 Kamsarmax, and 14 Panamax vessels. The company was formerly known as Diana Shipping Investments Corp. and changed its name to Diana Shipping Inc. in February 2005. Diana Shipping Inc. was founded in 1999 and is based in Athens, Greece.",
+        "summary": "Diana Shipping Inc. provides shipping transportation services. The company transports a range of dry bulk cargoes, including commodities, such as iron ore, coal, grain, and other materials in shipping routes worldwide. As of March 11, 2021, it operated a fleet of 37 dry bulk vessels, including 4 Newcastlemax, 12 Capesize, 5 Post-Panamax, 5 Kamsarmax, and 11 Panamax), as well as one Panamax dry bulk vessel. The company was formerly known as Diana Shipping Investments Corp. and changed its name to Diana Shipping Inc. in February 2005. Diana Shipping Inc. was incorporated in 1999 and is based in Athens, Greece.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -95,10 +107,10 @@
         "country": "Greece",
         "city": "Athens"
     },
-    "DSX-PB": {
-        "short_name": "Diana Shipping Inc. Perpetual P",
+    "DSX": {
+        "short_name": "Diana Shipping inc.",
         "long_name": "Diana Shipping Inc.",
-        "summary": "Diana Shipping Inc. provides shipping transportation services. The company transports a range of dry bulk cargoes, including commodities, such as iron ore, coal, grain, and other materials in shipping routes worldwide. As of March 31, 2020, it operated a fleet of 41 dry bulk vessels comprising 4 Newcastlemax, 13 Capesize, 5 Post-Panamax, 5 Kamsarmax, and 14 Panamax vessels. The company was formerly known as Diana Shipping Investments Corp. and changed its name to Diana Shipping Inc. in February 2005. Diana Shipping Inc. was founded in 1999 and is based in Athens, Greece.",
+        "summary": "Diana Shipping Inc. provides shipping transportation services. The company transports a range of dry bulk cargoes, including commodities, such as iron ore, coal, grain, and other materials in shipping routes worldwide. As of March 11, 2021, it operated a fleet of 37 dry bulk vessels, including 4 Newcastlemax, 12 Capesize, 5 Post-Panamax, 5 Kamsarmax, and 11 Panamax), as well as one Panamax dry bulk vessel. The company was formerly known as Diana Shipping Investments Corp. and changed its name to Diana Shipping Inc. in February 2005. Diana Shipping Inc. was incorporated in 1999 and is based in Athens, Greece.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -110,7 +122,7 @@
     "DSZ.F": {
         "short_name": "DIANA SHIPPING INC.DL-,01",
         "long_name": "Diana Shipping Inc.",
-        "summary": "Diana Shipping Inc. provides shipping transportation services. The company transports a range of dry bulk cargoes, including commodities, such as iron ore, coal, grain, and other materials in shipping routes worldwide. As of March 31, 2020, it operated a fleet of 41 dry bulk vessels comprising 4 Newcastlemax, 13 Capesize, 5 Post-Panamax, 5 Kamsarmax, and 14 Panamax vessels. The company was formerly known as Diana Shipping Investments Corp. and changed its name to Diana Shipping Inc. in February 2005. Diana Shipping Inc. was founded in 1999 and is based in Athens, Greece.",
+        "summary": "Diana Shipping Inc. provides shipping transportation services. The company transports a range of dry bulk cargoes, including commodities, such as iron ore, coal, grain, and other materials in shipping routes worldwide. As of March 11, 2021, it operated a fleet of 37 dry bulk vessels, including 4 Newcastlemax, 12 Capesize, 5 Post-Panamax, 5 Kamsarmax, and 11 Panamax), as well as one Panamax dry bulk vessel. The company was formerly known as Diana Shipping Investments Corp. and changed its name to Diana Shipping Inc. in February 2005. Diana Shipping Inc. was incorporated in 1999 and is based in Athens, Greece.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -122,7 +134,7 @@
     "DVW1.F": {
         "short_name": "DANAOS CORP.  DL -,01",
         "long_name": "Danaos Corporation",
-        "summary": "Danaos Corporation, together with its subsidiaries, owns and operates containerships in Australia, Asia, Europe, and the United States. The company offers seaborne transportation services, such as chartering its vessels to liner companies. As of October 12, 2020, it had a fleet of 63 containerships aggregating 385,769 twenty foot equivalent units in capacity. The company was formerly known as Danaos Holdings Limited and changed its name to Danaos Corporation in October 2005. Danaos Corporation was founded in 1972 and is based in Piraeus, Greece.",
+        "summary": "Danaos Corporation, together with its subsidiaries, owns and operates containerships in Australia, Asia, Europe, and the United States. The company offers seaborne transportation services, such as chartering its vessels to liner companies. As of February 28, 2021, it had a fleet of 65 containerships aggregating 403,793 twenty foot equivalent units in capacity. The company was formerly known as Danaos Holdings Limited and changed its name to Danaos Corporation in October 2005. Danaos Corporation was founded in 1972 and is based in Piraeus, Greece.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -162,7 +174,7 @@
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Marine Shipping",
-        "exchange": "NCM",
+        "exchange": "NMS",
         "market": "us_market",
         "country": "Greece",
         "city": "Marousi"
@@ -182,7 +194,7 @@
     "GASS": {
         "short_name": "StealthGas, Inc.",
         "long_name": "StealthGas Inc.",
-        "summary": "StealthGas Inc., together with its subsidiaries, provides seaborne transportation services to liquefied petroleum gas (LPG) producers and users internationally. It also provides crude oil and product carriers chartered to oil producers, refiners, and commodities traders. The company's carriers carry various petroleum gas products in liquefied form, including propane, butane, butadiene, isopropane, propylene, and vinyl chloride monomer; and refined petroleum products, such as gasoline, diesel, fuel oil, and jet fuel, as well as edible oils and chemicals. As of April 1, 2020, it had a fleet of 49 vessels comprising 45 LPG carriers with a total capacity of 420,527 cubic meters; 3 medium range product carriers with a total capacity of 140,000 deadweight tons (dwt); and 1 Aframax crude oil tanker with a total capacity of 115,804 dwt. StealthGas Inc. was founded in 2004 and is based in Athens, Greece.",
+        "summary": "StealthGas Inc., together with its subsidiaries, provides seaborne transportation services to liquefied petroleum gas (LPG) producers and users internationally. It also provides crude oil and product carriers chartered to oil producers, refiners, and commodities traders. The company's carriers carry various petroleum gas products in liquefied form, including propane, butane, butadiene, isopropane, propylene, and vinyl chloride monomer; and refined petroleum products, such as gasoline, diesel, fuel oil, and jet fuel, as well as edible oils and chemicals. As of April 1, 2021, it had a fleet of 50 vessels comprising 46 LPG carriers with a total capacity of 436,692 cubic meters; three medium range product carriers with a total capacity of 140,000 deadweight tons (dwt); and one Aframax crude oil tanker with a total capacity of 115,804 dwt. StealthGas Inc. was incorporated in 2004 and is based in Athens, Greece.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -194,11 +206,11 @@
     "GLBS": {
         "short_name": "Globus Maritime Limited",
         "long_name": "Globus Maritime Limited",
-        "summary": "Globus Maritime Limited, an integrated dry bulk shipping company, provides marine transportation services worldwide. It owns, operates, and manages a fleet of dry bulk vessels that transport iron ore, coal, grain, steel products, cement, alumina, and other dry bulk cargoes. As of October 29, 2020, the company owned and operated six vessels with a total carrying capacity of 381,738 deadweight tonnage. It charters its vessels to operators, trading houses, shipping companies and producers, and government-owned entities. The company was founded in 2006 and is based in Athens, Greece. Globus Maritime Limited is a subsidiary of Firment Trading Limited.",
+        "summary": "Globus Maritime Limited, an integrated dry bulk shipping company, provides marine transportation services worldwide. It owns, operates, and manages a fleet of dry bulk vessels that transport iron ore, coal, grain, steel products, cement, alumina, and other dry bulk cargoes. As of December 31, 2020, the company owned and operated six vessels with a total carrying capacity of 381,738 deadweight tonnage. It charters its vessels to operators, trading houses, shipping companies and producers, and government-owned entities. The company was incorporated in 2006 and is based in Athens, Greece. Globus Maritime Limited operates as a subsidiary of Firment Trading Limited.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Marine Shipping",
-        "exchange": "NCM",
+        "exchange": "NMS",
         "market": "us_market",
         "country": "Greece",
         "city": "Athens"
@@ -227,15 +239,51 @@
         "country": "Greece",
         "city": "Marousi"
     },
+    "MYH.F": {
+        "short_name": "MYTILINEOS SA NAM.EO 0,97",
+        "long_name": "Mytilineos S.A.",
+        "summary": "Mytilineos S.A. operates in metallurgy, sustainable engineering solution, renewables and storage development, and power and gas sectors in Greece, European Union, and internationally. The company's principal business areas include production of electricity and natural gas; operation of industrial and renewable energy plants with a total installed capacity of 1,200 MW; trading of gas; production of alumina and aluminum, as well as bauxite; and production, processing, and trading of metals, which include aluminum alloys and derivative products. Its principal business areas also include development of solar PV and energy storage; contractor of specialized large-scale integrated turn-key projects; provision of environmental solutions for water, liquid, and solid waste; energy solutions; and construction of infrastructure projects, as well as provides range of project management, engineering, procurement, construction, and plant commissioning services. The company was formerly known as Mytilineos Holdings S.A. and changed its name to Mytilineos S.A. in July 2019. Mytilineos S.A. was founded in 1908 and is headquartered in Athens, Greece.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Conglomerates",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Greece",
+        "city": "Athens"
+    },
+    "MYTHY": {
+        "short_name": "MYTILINEOS S.A",
+        "long_name": "Mytilineos S.A.",
+        "summary": "Mytilineos S.A. operates in metallurgy, sustainable engineering solution, renewables and storage development, and power and gas sectors in Greece, European Union, and internationally. The company's principal business areas include production of electricity and natural gas; operation of industrial and renewable energy plants with a total installed capacity of 1,200 MW; trading of gas; production of alumina and aluminum, as well as bauxite; and production, processing, and trading of metals, which include aluminum alloys and derivative products. Its principal business areas also include development of solar PV and energy storage; contractor of specialized large-scale integrated turn-key projects; provision of environmental solutions for water, liquid, and solid waste; energy solutions; and construction of infrastructure projects, as well as provides range of project management, engineering, procurement, construction, and plant commissioning services. The company was formerly known as Mytilineos Holdings S.A. and changed its name to Mytilineos S.A. in July 2019. Mytilineos S.A. was founded in 1908 and is headquartered in Athens, Greece.",
+        "currency": "USD",
+        "sector": "Industrials",
+        "industry": "Conglomerates",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Greece",
+        "city": "Athens"
+    },
     "OET.OL": {
         "short_name": "OKEANIS ECO TANKER",
         "long_name": "Okeanis Eco Tankers Corp.",
-        "summary": "Okeanis Eco Tankers Corp. owns, charters out, and operates tanker vessels. The company also offers commercial shipping services. It consists of three modern Aframax/LR2 tankers, four modern Suezmax tankers, and eight modern VLCC tankers. The company was founded in 2018 and is headquartered in Piraeus, Greece.",
+        "summary": "Okeanis Eco Tankers Corp. owns, charters out, and operates tanker vessels. The company also offers commercial shipping services. As of February 12, 2021, its fleet comprised 17 vessels, including three Aframax/LR2 vessels, six Suezmax vessels, and eight VLCC vessels. The company was incorporated in 2018 and is based in Piraeus, Greece.",
         "currency": "NOK",
         "sector": "Industrials",
         "industry": "Marine Shipping",
         "exchange": "OSL",
         "market": "no_market",
+        "country": "Greece",
+        "city": "Piraeus"
+    },
+    "OKENF": {
+        "short_name": "OKEANIS ECO TANKERS CORP",
+        "long_name": "Okeanis Eco Tankers Corp.",
+        "summary": "Okeanis Eco Tankers Corp. owns, charters out, and operates tanker vessels. The company also offers commercial shipping services. As of February 12, 2021, its fleet comprised 17 vessels, including three Aframax/LR2 vessels, six Suezmax vessels, and eight VLCC vessels. The company was incorporated in 2018 and is based in Piraeus, Greece.",
+        "currency": "USD",
+        "sector": "Industrials",
+        "industry": "Marine Shipping",
+        "exchange": "PNK",
+        "market": "us_market",
         "country": "Greece",
         "city": "Piraeus"
     },
@@ -254,7 +302,7 @@
     "PSHG": {
         "short_name": "Performance Shipping Inc.",
         "long_name": "Performance Shipping Inc.",
-        "summary": "Performance Shipping Inc., through its subsidiaries, provides shipping transportation services through its ownership of container vessels worldwide. As of December 15, 2020, it owned and operated 5 Aframax tanker vessels and 1 Panamax container vessel. The company was founded in 2010 and is based in Athens, Greece.",
+        "summary": "Performance Shipping Inc., through its subsidiaries, provides shipping transportation services through its ownership of tanker vessels worldwide. As of April 7, 2021, it owned and operated five Aframax tanker vessels with a combined carrying capacity of 546,094 dwt. The company was incorporated in 2010 and is based in Athens, Greece.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -266,7 +314,7 @@
     "PXS": {
         "short_name": "Pyxis Tankers Inc.",
         "long_name": "Pyxis Tankers Inc.",
-        "summary": "Pyxis Tankers Inc. operates as a maritime transportation company with a focus on the tanker sector in the United States. Its fleet transports refined petroleum products, such as naphtha, gasoline, jet fuel, kerosene, diesel, and fuel oil, as well as other liquid bulk items, including vegetable oils and organic chemicals. As of August 6, 2020, the company operated a fleet of five double hull product tankers. Pyxis Tankers Inc. was founded in 2015 and is based in Maroussi, Greece.",
+        "summary": "Pyxis Tankers Inc. operates as a maritime transportation company with a focus on the tanker sector in the United States. Its fleet transports refined petroleum products, such as naphtha, gasoline, jet fuel, kerosene, diesel, and fuel oil, as well as other liquid bulk items, including vegetable oils and organic chemicals. As of April 12, 2021, the company operated a fleet of five tankers. Pyxis Tankers Inc. was incorporated in 2015 and is based in Maroussi, Greece.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -278,7 +326,7 @@
     "PXSAP": {
         "short_name": "Pyxis Tankers Inc. - 7.75% Seri",
         "long_name": "Pyxis Tankers Inc.",
-        "summary": "Pyxis Tankers Inc. operates as a maritime transportation company with a focus on the tanker sector in the United States. Its fleet transports refined petroleum products, such as naphtha, gasoline, jet fuel, kerosene, diesel, and fuel oil, as well as other liquid bulk items, including vegetable oils and organic chemicals. As of August 6, 2020, the company operated a fleet of five double hull product tankers. Pyxis Tankers Inc. was founded in 2015 and is based in Maroussi, Greece.",
+        "summary": "Pyxis Tankers Inc. operates as a maritime transportation company with a focus on the tanker sector in the United States. Its fleet transports refined petroleum products, such as naphtha, gasoline, jet fuel, kerosene, diesel, and fuel oil, as well as other liquid bulk items, including vegetable oils and organic chemicals. As of April 12, 2021, the company operated a fleet of five tankers. Pyxis Tankers Inc. was incorporated in 2015 and is based in Maroussi, Greece.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -302,7 +350,7 @@
     "RHSR.F": {
         "short_name": "SEANERGY MARITIME HLDGS",
         "long_name": "Seanergy Maritime Holdings Corp.",
-        "summary": "Seanergy Maritime Holdings Corp., an international shipping company, engages in the seaborne transportation of dry bulk commodities worldwide. It owns a fleet of ten Capesize bulk carriers with a cargo-carrying capacity of approximately 1,748,581 deadweight tons and an average fleet age of 11 years. The company is headquartered in Athens, Greece.",
+        "summary": "Seanergy Maritime Holdings Corp., an international shipping company, engages in the seaborne transportation of dry bulk commodities primarily iron ore and coal worldwide. As of February 19, 2021, it operated a fleet of 11 Capesize vessels with a cargo-carrying capacity of approximately 1,926,117 deadweight ton and an average age of approximately 12 years. Seanergy Maritime Holdings Corp.is headquartered in Athens, Greece.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -314,7 +362,7 @@
     "S6W.F": {
         "short_name": "STEALTHGAS INC.",
         "long_name": "StealthGas Inc.",
-        "summary": "StealthGas Inc., together with its subsidiaries, provides seaborne transportation services to liquefied petroleum gas (LPG) producers and users internationally. It also provides crude oil and product carriers chartered to oil producers, refiners, and commodities traders. The company's carriers carry various petroleum gas products in liquefied form, including propane, butane, butadiene, isopropane, propylene, and vinyl chloride monomer; and refined petroleum products, such as gasoline, diesel, fuel oil, and jet fuel, as well as edible oils and chemicals. As of April 1, 2020, it had a fleet of 49 vessels comprising 45 LPG carriers with a total capacity of 420,527 cubic meters; 3 medium range product carriers with a total capacity of 140,000 deadweight tons (dwt); and 1 Aframax crude oil tanker with a total capacity of 115,804 dwt. StealthGas Inc. was founded in 2004 and is based in Athens, Greece.",
+        "summary": "StealthGas Inc., together with its subsidiaries, provides seaborne transportation services to liquefied petroleum gas (LPG) producers and users internationally. It also provides crude oil and product carriers chartered to oil producers, refiners, and commodities traders. The company's carriers carry various petroleum gas products in liquefied form, including propane, butane, butadiene, isopropane, propylene, and vinyl chloride monomer; and refined petroleum products, such as gasoline, diesel, fuel oil, and jet fuel, as well as edible oils and chemicals. As of April 1, 2021, it had a fleet of 50 vessels comprising 46 LPG carriers with a total capacity of 436,692 cubic meters; three medium range product carriers with a total capacity of 140,000 deadweight tons (dwt); and one Aframax crude oil tanker with a total capacity of 115,804 dwt. StealthGas Inc. was incorporated in 2004 and is based in Athens, Greece.",
         "currency": "EUR",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -326,7 +374,7 @@
     "SBLK": {
         "short_name": "Star Bulk Carriers Corp.",
         "long_name": "Star Bulk Carriers Corp.",
-        "summary": "Star Bulk Carriers Corp., a shipping company, engages in the ocean transportation of dry bulk cargoes worldwide. The company's vessels transport a range of major bulks, including iron ores, coal, and grains, as well as minor bulks, such as bauxite, fertilizers, and steel products. As of February 29, 2020, it had a fleet of 116 vessels with an aggregate capacity of approximately 12.9 million deadweight ton, including consisting of Newcastlemax, Capesize, Post Panamax, Kamsarmax, Panamax, Ultramax, and Supramax vessels. It also provides vessel management services. The company was incorporated in 2006 and is based in Maroussi, Greece.",
+        "summary": "Star Bulk Carriers Corp., a shipping company, engages in the ocean transportation of dry bulk cargoes worldwide. The company's vessels transport a range of major bulks, including iron ores, coal, and grains, as well as minor bulks, such as bauxite, fertilizers, and steel products. As of March 16, 2021, it had a fleet of 128 vessels with an aggregate capacity of approximately 14.1 million deadweight tons, including 17 Newcastlemax, 22 Capesize, 2 Mini Capesize, 7 Post Panamax, 41 Kamsarmax, 2 Panamax, 20 Ultramax, and 17 Supramax vessels. The company also provides vessel management services. Star Bulk Carriers Corp. was incorporated in 2006 and is based in Maroussi, Greece.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -338,7 +386,7 @@
     "SHIP": {
         "short_name": "Seanergy Maritime Holdings Corp",
         "long_name": "Seanergy Maritime Holdings Corp.",
-        "summary": "Seanergy Maritime Holdings Corp., an international shipping company, engages in the seaborne transportation of dry bulk commodities worldwide. It owns a fleet of ten Capesize bulk carriers with a cargo-carrying capacity of approximately 1,748,581 deadweight tons and an average fleet age of 11 years. The company is headquartered in Athens, Greece.",
+        "summary": "Seanergy Maritime Holdings Corp., an international shipping company, engages in the seaborne transportation of dry bulk commodities primarily iron ore and coal worldwide. As of February 19, 2021, it operated a fleet of 11 Capesize vessels with a cargo-carrying capacity of approximately 1,926,117 deadweight ton and an average age of approximately 12 years. Seanergy Maritime Holdings Corp.is headquartered in Athens, Greece.",
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Marine Shipping",
@@ -378,7 +426,7 @@
         "currency": "USD",
         "sector": "Industrials",
         "industry": "Marine Shipping",
-        "exchange": "NCM",
+        "exchange": "NMS",
         "market": "us_market",
         "country": "Greece",
         "city": "Marousi"

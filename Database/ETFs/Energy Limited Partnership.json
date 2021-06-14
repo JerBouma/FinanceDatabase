@@ -19,6 +19,16 @@
         "exchange": "PCX",
         "market": "us_market"
     },
+    "AMND": {
+        "short_name": "UBS AG ETRACS Alerian Midstream",
+        "long_name": "ETRACS Alerian Midstream Energy High Dividend Index ETN",
+        "currency": "USD",
+        "summary": "The investment seeks a return linked to the performance of the Alerian Midstream Energy Dividend Index (the \u00e2\u0080\u009cindex\u00e2\u0080\u009d). \nThe index is a fundamentally-weighted index based on the liquid, dividend-paying portion of the North American energy infrastructure market. The securities do not have a minimum payment at maturity, upon redemption or upon call and are fully exposed to any decline in the index. The payment investors receive on the securities at maturity, early redemption or upon exercise by UBS of its call right will depend on the performance of the index, as measured by the Current Principal Amount.",
+        "category": "Energy Limited Partnership",
+        "family": "UBS",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
     "AMUB": {
         "short_name": "ETRACS Alerian MLP Index ETN Se",
         "long_name": "UBS ETRACS Alerian MLP Index ETN Series B",
@@ -56,7 +66,7 @@
         "summary": "The investment seeks to link to the performance of the DWA MLP Select\u00e2\u0084\u00a2 Index (the \u00e2\u0080\u009cindex\u00e2\u0080\u009d).\n The index includes 15 master limited partnerships (\u00e2\u0080\u009cMLPs\u00e2\u0080\u009d) based on the proprietary Dorsey Wright Relative Strength Ranking Methodology. By comparing the price relationship between each MLP, the index seeks to determine which MLPs are currently showing outperformance relative to their peers within the Index universe.",
         "category": "Energy Limited Partnership",
         "family": "BMO Capital Markets",
-        "exchange": "NMS",
+        "exchange": "NGM",
         "market": "us_market"
     },
     "EINC": {
@@ -73,7 +83,7 @@
         "short_name": "First Trust North American Ener",
         "long_name": "First Trust North American Energy Infrastructure Fund",
         "currency": "USD",
-        "summary": "The investment seeks total return.\n The fund invests at least 80% of its net assets in equity securities of companies deemed by the sub-advisor to be engaged in the energy infrastructure sector. These companies principally include publicly-traded MLPs and limited liability companies taxed as partnerships, MLP affiliates, pipeline companies, utilities, and other companies that derive the majority of their revenues from operating or providing services in support of infrastructure assets such as pipelines, power transmission and petroleum and natural gas storage in the petroleum, natural gas and power generation industries. It is non-diversified.",
+        "summary": "The investment seeks total return.\n The fund invests at least 80% of its net assets in equity securities of companies deemed by the sub-advisor to be engaged in the energy infrastructure sector. These companies principally include U.S. and Canadian natural gas and electric utilities, corporations operating energy infrastructure assets such as pipelines or renewable energy production, utilities, publicly-traded MLPs, MLP affiliates and energy infrastructure companies. It is non-diversified.",
         "category": "Energy Limited Partnership",
         "family": "First Trust",
         "exchange": "PCX",
@@ -89,13 +99,23 @@
         "exchange": "PCX",
         "market": "us_market"
     },
-    "MLPA": {
-        "short_name": "Global X MLP ETF",
-        "long_name": "Global X MLP ETF",
+    "IMLP": {
+        "short_name": "iPath S&P MLP ETN",
+        "long_name": "iPath S&P MLP ETN",
         "currency": "USD",
-        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the Solactive MLP Infrastructure Index (\"underlying index\").\n The fund invests at least 80% of its total assets in the securities of the underlying index. Moreover, at least 80% of the fund&#39;s total assets will be invested in securities that have economic characteristics of the Master Limited Partnership (\"MLP\") asset class. The underlying index is intended to give investors a means of tracking the performance of the energy infrastructure MLP asset class in the United States. The fund is non-diversified.",
+        "summary": "The investment seeks to replicate, net of expenses, the S&P MLP Index.\n The index is designed to provide exposure to leading partnerships that trade on major U.S. exchanges and are classified in the GICS Energy Sector and GICS Gas Utilities Industry according to the Global Industry Classification Standard\u00c2\u00ae (\u00e2\u0080\u009cGICS\u00e2\u0080\u009d). It includes both master limited partnerships (\u00e2\u0080\u009cMLPs\u00e2\u0080\u009d) and publicly traded limited liability companies which have a similar legal structure to MLPs and share the same tax benefits as MLPs (collectively, the \u00e2\u0080\u009cindex constituents\u00e2\u0080\u009d). The index is calculated, maintained and published by S&P Dow Jones Indices LLC.",
         "category": "Energy Limited Partnership",
-        "family": "Global X Funds",
+        "family": "Milleis Investissements Funds",
+        "exchange": "BTS",
+        "market": "us_market"
+    },
+    "MLPB": {
+        "short_name": "ETRACS Alerian MLP Infrastructu",
+        "long_name": "UBS ETRACS Alerian MLP Infrastructure Index ETN Series B",
+        "currency": "USD",
+        "summary": "The investment seeks to provide exposure to potential price appreciation in the Alerian MLP Infrastructure Index.\n The ETRACS Alerian MLP Infrastructure Index ETN Series B is senior unsecured debt securities issued by UBS. The index constituents earn the majority of their cash flow from gathering and processing, liquefaction, midstream services, pipeline transportation, rail terminaling and storage of energy commodities.",
+        "category": "Energy Limited Partnership",
+        "family": "UBS Group AG",
         "exchange": "PCX",
         "market": "us_market"
     },
@@ -116,6 +136,36 @@
         "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance, before fees and expenses, of the Solactive MLP & Energy Infrastructure Index.\n The fund invests at least 80% of its total assets in the securities of the index. It also invests at least 80% of its total assets in securities of master limited partnerships and energy infrastructure corporations. The fund&#39;s 80% investment policies are non-fundamental and require 60 days prior written notice to shareholders before they can be changed. The index tracks the performance of midstream energy infrastructure MLPs and corporations. It is non-diversified.",
         "category": "Energy Limited Partnership",
         "family": "Global X Funds",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "PYPE": {
+        "short_name": "ETRACS NYSE Pickens Core Midstr",
+        "long_name": "UBS ETRACS NYSE Pickens Core Midstream Index ETN",
+        "currency": "USD",
+        "summary": "The investment seeks to provide exposure to potential price appreciation in the NYSE\u00c2\u00ae Pickens Core Midstream\u00e2\u0084\u00a2 Index (the \u00e2\u0080\u009cindex\u00e2\u0080\u009d).\n The securities are senior unsecured medium-term notes issued by UBS with a return linked to the performance of the index. The securities may pay a quarterly coupon during their term. The index measures the performance of the common stock of corporations and units of master limited partnerships (\u00e2\u0080\u009cMLPs\u00e2\u0080\u009d) which represent U.S. midstream energy fundamentals, agnostic of entity structure.",
+        "category": "Energy Limited Partnership",
+        "family": "UBS Group AG",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "TPYP": {
+        "short_name": "Tortoise North American Pipelin",
+        "long_name": "Tortoise North American Pipeline Fund",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond (before fees and expenses) generally to the price and distribution rate (total return) performance of the Tortoise North American Pipeline IndexSM (the \"underlying index\").\n The fund will normally invest at least 80% of its total assets in securities that comprise the underlying index (or depository receipts based on such securities). The underlying index is a proprietary rules-based, capitalization weighted, float adjusted index designed to track the overall performance of equity securities of North American Pipeline Companies. The fund is non-diversified.",
+        "category": "Energy Limited Partnership",
+        "family": "Tortoise Capital Advisors",
+        "exchange": "PCX",
+        "market": "us_market"
+    },
+    "UMI": {
+        "short_name": "USCF Midstream Energy Income Fu",
+        "long_name": "USCF Midstream Energy Income Fund",
+        "currency": "USD",
+        "summary": "The investment seeks a high level of current income; as a secondary objective, the fund seeks capital appreciation.\n The fund will seek to achieve its investment objectives by investing, under normal market conditions, at least 80% of its net assets in equity securities of U.S. and Canadian companies of any market capitalization deemed by the Sub-Adviser to be engaged in the midstream energy sector. It will invest more than 25% of the value of its total assets in the energy, oil, and gas industries. The fund is non-diversified.",
+        "category": "Energy Limited Partnership",
+        "family": "USCF Investments",
         "exchange": "PCX",
         "market": "us_market"
     },

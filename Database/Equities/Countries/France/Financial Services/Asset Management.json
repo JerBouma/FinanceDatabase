@@ -2,7 +2,7 @@
     "7TI.F": {
         "short_name": "TIKEHAU CAP. S.C.A. EO 12",
         "long_name": "Tikehau Capital",
-        "summary": "Tikehau Capital is a private equity and venture capital firm specializing in providing a full range of financing products including senior secured loans, equity, senior debt, unitranche, mezzanine, and preferred shares. The firm seeks to make early stage, mezzanine, and turnaround investments and manage long-term capital for institutional and private investors in various asset classes including credit, listed, private equity, and real estate. It invests in all sectors and all countries with a focus on Singapore. The firm prefers to invests between USD0.5 million and \u00c2\u008070 million ($82.1073 million). The firm seeks to invest in small and middle market European corporate. It makes balance sheet investments. Tikehau Capital was founded in June 2004 and is based in Paris, France with additional offices in London, United Kingdom; Brussels, Belgium; Milan, Italy; New York, United States; Madrid, Spain; Seoul, Tokyo, Japan; South Korea, Luxembourg and Singapore.",
+        "summary": "Tikehau Capital is a private equity and venture capital firm specializing in providing a full range of financing products including senior secured loans, equity, senior debt, unitranche, mezzanine, and preferred shares. The firm seeks to make early stage, mezzanine, and turnaround investments and manage long-term capital for institutional and private investors in various asset classes including credit, listed, private equity, and real estate. It invests in all sectors and all countries with a focus on Singapore. The firm prefers to invests between \u00c2\u00800.41 million ($0.5 million) and \u00c2\u008070 million ($82.1073 million). The firm seeks to invest in small and middle market European corporate. It makes balance sheet investments. Tikehau Capital was founded in June 2004 and is based in Paris, France with additional offices across Europe, North America and Asia.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -47,15 +47,51 @@
         "country": "France",
         "city": "Paris"
     },
-    "AMDUF": {
+    "AMUN.PA": {
         "short_name": "AMUNDI",
         "long_name": "Amundi SA",
         "summary": "Amundi is a publically owned investment manager. The firm engages in the asset management business. The company provides a range of retail products and solutions through quasi-exclusive distribution agreements with the retail banking networks of the Cr\u00c3\u00a9dit Agricole and the Soci\u00c3\u00a9t\u00c3\u00a9 G\u00c3\u00a9n\u00c3\u00a9rale groups in France; and through international partner networks and joint ventures outside France, as well as through third-party distributors primarily in France, rest of Europe, and Asia. It also offers management and advisory services for various pension funds, insurers, and sovereigns; and treasury management and employee savings solutions for corporate customers through global relationship managers supported by sales and marketing staff in 30 countries. It was formerly known as Amundi Group. The company was founded in 1982 and is headquartered in Paris, France. Amundi Group operates as a subsidiary of Credit Agricole S.A.",
-        "currency": "USD",
+        "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Asset Management",
-        "exchange": "PNK",
-        "market": "us_market",
+        "exchange": "PAR",
+        "market": "fr_market",
+        "country": "France",
+        "city": "Paris"
+    },
+    "AMUN.VI": {
+        "short_name": "AMUNDI SA",
+        "long_name": "Amundi SA",
+        "summary": "Amundi is a publically owned investment manager. The firm engages in the asset management business. The company provides a range of retail products and solutions through quasi-exclusive distribution agreements with the retail banking networks of the Cr\u00c3\u00a9dit Agricole and the Soci\u00c3\u00a9t\u00c3\u00a9 G\u00c3\u00a9n\u00c3\u00a9rale groups in France; and through international partner networks and joint ventures outside France, as well as through third-party distributors primarily in France, rest of Europe, and Asia. It also offers management and advisory services for various pension funds, insurers, and sovereigns; and treasury management and employee savings solutions for corporate customers through global relationship managers supported by sales and marketing staff in 30 countries. It was formerly known as Amundi Group. The company was founded in 1982 and is headquartered in Paris, France. Amundi Group operates as a subsidiary of Credit Agricole S.A.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "VIE",
+        "market": "at_market",
+        "country": "France",
+        "city": "Paris"
+    },
+    "ANI.F": {
+        "short_name": "AMUNDI S.A.  EO 2,50",
+        "long_name": "Amundi SA",
+        "summary": "Amundi is a publically owned investment manager. The firm engages in the asset management business. The company provides a range of retail products and solutions through quasi-exclusive distribution agreements with the retail banking networks of the Cr\u00c3\u00a9dit Agricole and the Soci\u00c3\u00a9t\u00c3\u00a9 G\u00c3\u00a9n\u00c3\u00a9rale groups in France; and through international partner networks and joint ventures outside France, as well as through third-party distributors primarily in France, rest of Europe, and Asia. It also offers management and advisory services for various pension funds, insurers, and sovereigns; and treasury management and employee savings solutions for corporate customers through global relationship managers supported by sales and marketing staff in 30 countries. It was formerly known as Amundi Group. The company was founded in 1982 and is headquartered in Paris, France. Amundi Group operates as a subsidiary of Credit Agricole S.A.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "France",
+        "city": "Paris"
+    },
+    "EGR.PA": {
+        "short_name": "EVERGREEN",
+        "long_name": "Evergreen SA",
+        "summary": "Evergreen SA provides solutions for the production and distribution of digital content in Europe, the Middle East, Africa, and the Americas. It offers point to point encoding and streaming links, such as on-the-go portable outside broadcast encoders and studio to transmitters links; audio-over-IP solution for broadcasting, on air in-studio production, radio program transmission, and public transportation; and production and sound cards. The company also provides professional, support and maintenance contract, software development tool, and product support services. It offers its products to journalists, broadcasters, and industrialists. The company was formerly known as Digigram S.A. and changed its name to Evergreen SA in June 2020. Evergreen SA was founded in 1985 and is based in Paris, France. As of March 10, 2020, Evergreen SA operates as a subsidiary of Evergreen Holding.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "PAR",
+        "market": "fr_market",
         "country": "France",
         "city": "Paris"
     },
@@ -71,17 +107,29 @@
         "country": "France",
         "city": "Paris"
     },
-    "EUZOF": {
-        "short_name": "EURAZEO",
-        "long_name": "Eurazeo SE",
-        "summary": "Eurazeo SE is a private equity and venture capital firm specializing in growth capital, acquisitions, leveraged buyouts, and buyins of a private company, and investments in mid-market and listed public companies. The firm seeks to invest in medium-sized or large companies, SMEs, high growth companies, and real estate management and investment activities. It does not have any restrictions regarding the sectors in which it invests but prefers to invest in services, leisure and mobility, real estate, fintech, investment activities, distribution, industry, luxury, consumer goods, business services, consumer and retail brands, and health sectors. The firm seeks to invest in consumer brands with a focus on beauty, personal care, household care, juvenile products, apparel, wellness, accessories, home, jewelry, leisure, health, fitness, beverage, and food companies based in United States and Europe. It typically invests in companies with a differentiated concept and global growth potential. The firm identifies companies upstream, carefully selecting them primarily from sectors driven by digital transformation and focusing on changes in lifestyle and consumption (mobility, online buying, collaboration models, etc.). The firm invests in large properties in need of restructuring; residential, commercial, and office development projects; and companies with real estate assets in Western Europe. It primarily invests in United States, France, Italy, North America and other European countries. The firm typically invests between $10 million and \u00c2\u0080800 million ($892.55 million) in companies with enterprise values of more than \u00c2\u0080150/200 million ($163.74 million/$218.30 million) and \u00c2\u00805000 million ($7108.9 million). It limits each investment to less than 10 percent to 15 percent of its net asset value. The firm can also invest where its equity or quasi-equity stake is between \u00c2\u0080175 million ($195.25 million) and \u00c2\u0080800 million ($892.55 million). The firm prefers to make investments with transactions above $100 million as co-investments. It prefers to acquire majority stakes in its portfolio companies along with minority stakes. The firm may invest in public companies either taking the public company to private, and then doing a leveraged buyout or in the form of private investment in public equity (PIPE). The firm invests for a period of five to seven years. It exits its investment by sale to a manufacturer, sale to a financial investor, or through an IPO. Eurazeo SE was founded in 1969 and is based in Paris, France with additional offices in North America, Asia, Europe and South America.",
-        "currency": "USD",
+    "FFP.F": {
+        "short_name": "PEUGEOT INVEST S.A.  EO 1",
+        "long_name": "Peugeot Invest Soci\u00e9t\u00e9 anonyme",
+        "summary": "FFP Soci\u00c3\u00a9t\u00c3\u00a9 anonyme is a publicly owned investment manager. The firm invests in private equity and real estate funds. The firm also invests in governance, social and environmental protection. FFP Soci\u00c3\u00a9t\u00c3\u00a9 anonyme was founded in 1929 and is based in Paris, France.",
+        "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Asset Management",
-        "exchange": "PNK",
-        "market": "us_market",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "city": "Neuilly-sur-Seine"
+    },
+    "FFP.SG": {
+        "short_name": "PEUGEOT INVEST",
+        "long_name": "Peugeot Invest Soci\u00e9t\u00e9 anonyme",
+        "summary": "FFP Soci\u00c3\u00a9t\u00c3\u00a9 anonyme is a publicly owned investment manager. The firm invests in private equity and real estate funds. The firm also invests in governance, social and environmental protection. FFP Soci\u00c3\u00a9t\u00c3\u00a9 anonyme was founded in 1929 and is based in Paris, France.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "STU",
+        "market": "dr_market",
+        "country": "France",
+        "city": "Neuilly-sur-Seine"
     },
     "IDIP.PA": {
         "short_name": "IDI",
@@ -110,7 +158,7 @@
     "LBON.PA": {
         "short_name": "LEBON",
         "long_name": "Compagnie Lebon",
-        "summary": "Compagnie Lebon engages in the real estate, hospitality, and capital investment businesses in France. The company develops and manages real estate assets, such as offices, houses, stores, and industrial and commercial properties; and owns and operates nine boutique hotels in Paris and a five-star hotel in Aix-en-Provence under the ESPRIT DE FRANCE brand, as well as manages Allevard spa center. It is also involved in the management of investment funds in the venture capital sector and leveraged buyouts; and investment in funds in French or foreign firms, or new business start-ups. The company was founded in 1847 and is based in Paris, France. Compagnie Lebon is a subsidiary of France Participations Sa.",
+        "summary": "Compagnie Lebon engages in the hotel, private equity, real estate, and thermal bath businesses in France. It acquires the majority or minority stakes in the capital of unlisted small and medium-sized companies; restructures, repositions, and develops medium/long-term leased assets and leased or vacant assets, as well as purchases and resells leased assets. The company is also involved in the acquisition, renovation, and management of hotels; and management and animation of the 47 members labelled hotels and residences Esprit de France, as well as operates spa resort under the Brides-les-Bains name. As of December 31, 2019, it operated 13 hotels. The company was founded in 1847 and is based in Paris, France. Compagnie Lebon is a subsidiary of France Participations Sa.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -179,6 +227,30 @@
         "country": "France",
         "city": "Puteaux"
     },
+    "NEXTS.PA": {
+        "short_name": "NEXTSTAGE",
+        "long_name": "NextStage - S.C.A.",
+        "summary": "NextStage - S.C.A. is a private equity firm specializing in long term investments in medium-sized, mid cap, mature, and growth capital companies. It invests in all sectors except biotech. The firm seeks to invest in Europe. It targets 75 percent of its portfolio companies to be unlisted mid-cap companies and the remainder to be mid-cap companies listed on Euronext or Alternext. It invests between \u00c2\u00808 million ($9.01 million) and \u00c2\u008040 million ($45.06 million) in companies with revenue between \u00c2\u008010 million ($11.65 million) to \u00c2\u0080500 million ($582.51 million) and enterprise value between \u00c2\u008025 million ($28.16 million) and \u00c2\u0080200 million ($225.30 million). NextStage - S.C.A. is based in France. NextStage operates as a subsidiary of NextStage AM.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "PAR",
+        "market": "fr_market",
+        "country": "France",
+        "city": "Paris"
+    },
+    "PEUG.PA": {
+        "short_name": "PEUGEOT INVEST",
+        "long_name": "Peugeot Invest Soci\u00e9t\u00e9 anonyme",
+        "summary": "FFP Soci\u00c3\u00a9t\u00c3\u00a9 anonyme is a publicly owned investment manager. The firm invests in private equity and real estate funds. The firm also invests in governance, social and environmental protection. FFP Soci\u00c3\u00a9t\u00c3\u00a9 anonyme was founded in 1929 and is based in Paris, France.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "PAR",
+        "market": "fr_market",
+        "country": "France",
+        "city": "Neuilly-sur-Seine"
+    },
     "RF.PA": {
         "short_name": "EURAZEO",
         "long_name": "Eurazeo SE",
@@ -203,22 +275,10 @@
         "country": "France",
         "city": "Paris"
     },
-    "TKKHF": {
-        "short_name": "TIKEHAU CAPITAL SCA",
-        "long_name": "Tikehau Capital",
-        "summary": "Tikehau Capital is a private equity and venture capital firm specializing in providing a full range of financing products including senior secured loans, equity, senior debt, unitranche, mezzanine, and preferred shares. The firm seeks to make early stage, mezzanine, and turnaround investments and manage long-term capital for institutional and private investors in various asset classes including credit, listed, private equity, and real estate. It invests in all sectors and all countries with a focus on Singapore. The firm prefers to invests between USD0.5 million and \u00c2\u008070 million ($82.1073 million). The firm seeks to invest in small and middle market European corporate. It makes balance sheet investments. Tikehau Capital was founded in June 2004 and is based in Paris, France with additional offices in London, United Kingdom; Brussels, Belgium; Milan, Italy; New York, United States; Madrid, Spain; Seoul, Tokyo, Japan; South Korea, Luxembourg and Singapore.",
-        "currency": "USD",
-        "sector": "Financial Services",
-        "industry": "Asset Management",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "France",
-        "city": "Paris"
-    },
     "TKO.PA": {
         "short_name": "TIKEHAU CAPITAL",
         "long_name": "Tikehau Capital",
-        "summary": "Tikehau Capital is a private equity and venture capital firm specializing in providing a full range of financing products including senior secured loans, equity, senior debt, unitranche, mezzanine, and preferred shares. The firm seeks to make early stage, mezzanine, and turnaround investments and manage long-term capital for institutional and private investors in various asset classes including credit, listed, private equity, and real estate. It invests in all sectors and all countries with a focus on Singapore. The firm prefers to invests between USD0.5 million and \u00c2\u008070 million ($82.1073 million). The firm seeks to invest in small and middle market European corporate. It makes balance sheet investments. Tikehau Capital was founded in June 2004 and is based in Paris, France with additional offices in London, United Kingdom; Brussels, Belgium; Milan, Italy; New York, United States; Madrid, Spain; Seoul, Tokyo, Japan; South Korea, Luxembourg and Singapore.",
+        "summary": "Tikehau Capital is a private equity and venture capital firm specializing in providing a full range of financing products including senior secured loans, equity, senior debt, unitranche, mezzanine, and preferred shares. The firm seeks to make early stage, mezzanine, and turnaround investments and manage long-term capital for institutional and private investors in various asset classes including credit, listed, private equity, and real estate. It invests in all sectors and all countries with a focus on Singapore. The firm prefers to invests between \u00c2\u00800.41 million ($0.5 million) and \u00c2\u008070 million ($82.1073 million). The firm seeks to invest in small and middle market European corporate. It makes balance sheet investments. Tikehau Capital was founded in June 2004 and is based in Paris, France with additional offices across Europe, North America and Asia.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Asset Management",
@@ -239,15 +299,15 @@
         "country": "France",
         "city": "Paris"
     },
-    "VRNL.PA": {
-        "short_name": "VERNEUIL FINANCE",
-        "long_name": "Verneuil Finance Soci\u00e9t\u00e9 anonyme",
-        "summary": "Verneuil Finance Soci\u00c3\u00a9t\u00c3\u00a9 anonyme, an investment company, engages in the leisure sectors. It also operates virtual gaming centers and casinos. The company was incorporated in 1987 and is based in Paris, France. Verneuil Finance Soci\u00c3\u00a9t\u00c3\u00a9 anonyme is a subsidiary of Verneuil & Associ\u00c3\u00a9s.",
+    "UFN.F": {
+        "short_name": "UNION FIN.FRANCE BQE O.N.",
+        "long_name": "Union Financi\u00e8re de France Banque SA",
+        "summary": "Union Financi\u00c3\u00a8re de France Banque SA, a wealth management consulting bank, offers products and services to individuals, companies, and sportsmen in France. The company offers investment solutions, which include securities, life insurance, and property rental. It operates 25 agencies. The company was founded in 1968 and is headquartered in Paris, France. Union Financi\u00c3\u00a8re de France Banque SA is a subsidiary of AVIVA France SA.",
         "currency": "EUR",
         "sector": "Financial Services",
         "industry": "Asset Management",
-        "exchange": "PAR",
-        "market": "fr_market",
+        "exchange": "FRA",
+        "market": "dr_market",
         "country": "France",
         "city": "Paris"
     },

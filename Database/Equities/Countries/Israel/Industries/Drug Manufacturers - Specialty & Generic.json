@@ -2,7 +2,7 @@
     "2RH.F": {
         "short_name": "REDHILL B.S.ADR 10/IL-,01",
         "long_name": "RedHill Biopharma Ltd.",
-        "summary": "RedHill Biopharma Ltd., a specialty biopharmaceutical company, primarily focused on gastrointestinal and infectious diseases. The company promotes gastrointestinal drugs, including Movantik for opioid-induced constipation in adults with non-cancer pain; Talicia for the treatment of Helicobacter pylori infection in adults; and Aemcolo for the treatment of travelers' diarrhea in adults. Its clinical late-stage investigational development programs include RHB-204, with a planned Phase 3 study for pulmonary nontuberculous mycobacteria infections; opaganib (Yeliva), a SK2 selective inhibitor targeting various indications with a Phase 2/3 program for COVID-19 and Phase 2 studies for prostate cancer and cholangiocarcinoma ongoing; RHB-104, which is in Phase 3 studies for Crohn's disease; RHB-102 (Bekinda) that is in Phase 3 studies for acute gastroenteritis and gastritis, and in Phase 2 studies for irritable bowel syndrome with diarrhea; RHB-107, a Phase 2-stage serine protease inhibitor for cancer and inflammatory gastrointestinal diseases, and is also being evaluated for COVID-19; and RHB-106, an encapsulated bowel preparation. The company was founded in 2009 and is headquartered in Tel Aviv, Israel.",
+        "summary": "RedHill Biopharma Ltd., a specialty biopharmaceutical company, primarily focused on gastrointestinal and infectious diseases. The company promotes gastrointestinal drugs, including Movantik for opioid-induced constipation in adults with chronic non-cancer pain; Talicia for the treatment of Helicobacter pylori infection in adults; and Aemcolo for the treatment of travelers' diarrhea in adults. Its clinical late-stage investigational development programs include RHB-204, which is in Phase 3 study for pulmonary nontuberculous mycobacteria infections; opaganib (Yeliva), an SK2 selective inhibitor, which has completed Phase 2 study to treat patients with SARS-CoV-2 severe COVID-19 pneumonia, in Phase 1/2a study to treat advanced unresectable cholangiocarcinoma, and in investigator-sponsored Phase 2 study to treat prostate cancer; RHB-104, which is in Phase 3 studies for Crohn's disease; RHB-102 (Bekinda) that is in Phase 3 studies for acute gastroenteritis and gastritis, and has completed Phase 2 studies for irritable bowel syndrome with diarrhea; RHB-107, which is in Phase 2/3 study to treat outpatients infected with COVID-19 disease, and Phase 2a study to treat advanced unresectable cholangiocarcinoma, as well as has completed Phase 2 study to treat gastrointestinal and other solid tumors; and RHB-106, an encapsulated formulation for bowel preparation, which has completed Phase 2a study. The company was incorporated in 2009 and is headquartered in Tel Aviv, Israel.",
         "currency": "EUR",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
@@ -26,7 +26,7 @@
     "IMCC.CN": {
         "short_name": "IMCannabisCorp",
         "long_name": "IM Cannabis Corp.",
-        "summary": "IM Cannabis Corp. focuses on breeding, growing, and supply of medical cannabis products in Israel and Germany. Its products include strains and oils. The company also offers its intellectual property related services to the medical cannabis industry. IM Cannabis Corp. is based in Tel Aviv, Israel.",
+        "summary": "IM Cannabis Corp. engages in breeding, growing, and supply of medical cannabis products in Israel, Germany, and Canada. It offers strains under the Roma, Dairy Queen, London, Tel Aviv, Paris, and Pandora Box brands; and CBD oil products under the IMC brand. The company also offers its intellectual property related services to the medical cannabis industry. IM Cannabis Corp. is headquartered in Tel Aviv-Yafo, Israel.",
         "currency": "CAD",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
@@ -35,22 +35,70 @@
         "country": "Israel",
         "city": "Tel Aviv"
     },
-    "IMCNF": {
-        "short_name": "IM CANNABIS CORP",
+    "IMCC": {
+        "short_name": "IM Cannabis Corp.",
         "long_name": "IM Cannabis Corp.",
-        "summary": "IM Cannabis Corp. focuses on breeding, growing, and supply of medical cannabis products in Israel and Germany. Its products include strains and oils. The company also offers its intellectual property related services to the medical cannabis industry. IM Cannabis Corp. is based in Tel Aviv, Israel.",
+        "summary": "IM Cannabis Corp. engages in breeding, growing, and supply of medical cannabis products in Israel, Germany, and Canada. It offers strains under the Roma, Dairy Queen, London, Tel Aviv, Paris, and Pandora Box brands; and CBD oil products under the IMC brand. The company also offers its intellectual property related services to the medical cannabis industry. IM Cannabis Corp. is headquartered in Tel Aviv-Yafo, Israel.",
+        "currency": "USD",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "exchange": "NMS",
+        "market": "us_market",
+        "country": "Israel",
+        "city": "Tel Aviv"
+    },
+    "INCR-U.TO": {
+        "short_name": "INTERCURE LTD USD",
+        "long_name": "InterCure Ltd.",
+        "summary": "InterCure Ltd, together with its subsidiaries, engages in the research, cultivation, production, marketing, and distribution of medical cannabis products in Israel and internationally. It also invests in biomed sector. The company was incorporated in 1994 and is headquartered in Herzliya, Israel.",
+        "currency": "USD",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "exchange": "TOR",
+        "market": "ca_market",
+        "country": "Israel",
+        "city": "Herzliya"
+    },
+    "INCR.TA": {
+        "short_name": "INTERCURE LTD",
+        "long_name": "InterCure Ltd.",
+        "summary": "InterCure Ltd, together with its subsidiaries, engages in the research, cultivation, production, marketing, and distribution of medical cannabis products in Israel and internationally. It also invests in biomed sector. The company was incorporated in 1994 and is headquartered in Herzliya, Israel.",
+        "currency": "ILA",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "city": "Herzliya"
+    },
+    "INTL.TA": {
+        "short_name": "INTELICANNA LTD",
+        "long_name": "Intelicanna Ltd",
+        "summary": "Intelicanna Ltd provides various management consulting services in Israel, the United States, Europe, and internationally. The company offers its services in the areas of corporate strategy, global strategy, marketing strategy, mergers and acquisitions, turnaround management, and innovation strategy; and sales and marketing areas, such as sales and channel management, customer relationship management, customer lifecycle, organization and capabilities, product launch, sales force efficiency, and pricing. It also provides operation and organization services in various areas comprising operational excellence, customer service, organization design, change management, and people capabilities; and services in the areas of manufacturing and quality, including quality management, lean manufacturing, six sigma, capacity planning and OEE, and facility design. In addition, the company offers services in the areas of supply chain comprising strategy and risk management, planning, procurement, distribution and logistics, and reverse logistics and green supply chain; and portfolio management, project management excellence, IT governance, risk management, and design for X methodology. Further, it provides services in the areas of corporate finance, such as financial reporting and cost controlling, financing strategy and financial control, value based management, and financial restructuring services. Additionally, the company offers Tefen AI, an artificial intelligence tool for businesses. It serves various companies in the retail, patient care, life sciences, healthcare, financial services, general manufacturing, aviation and transportation, consumer goods, telecommunications, energy and utilities, public sector, high tech, semiconductors, and legal industries. The company was formerly known as Tefen Industrial Engineering & Management & Systems Analysis and changed its name to Intelicanna Ltd. Intelicanna Ltd was founded in 1982 and is based in Beit-Dagan, Israel.",
+        "currency": "ILA",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "city": "Beit Dagan"
+    },
+    "IRCLF": {
+        "short_name": "INTERCURE LTD",
+        "long_name": "InterCure Ltd.",
+        "summary": "InterCure Ltd, together with its subsidiaries, engages in the research, cultivation, production, marketing, and distribution of medical cannabis products in Israel and internationally. It also invests in biomed sector. The company was incorporated in 1994 and is headquartered in Herzliya, Israel.",
         "currency": "USD",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "city": "Herzliya"
     },
     "KMDA": {
         "short_name": "Kamada Ltd.",
         "long_name": "Kamada Ltd.",
-        "summary": "Kamada Ltd. develops, produces, and markets plasma-derived protein therapeutics for orphan indications. It operates in two segments, Proprietary Products and Distribution. The company offers respiratory products, including Glassia for use in chronic augmentation and maintenance therapy in adults with emphysema due to congenital Alpha-1 Antitrypsin (AAT) deficiency. It also provides KamRAB for prophylaxis of rabies disease; KamRho (D) IM to treat prophylaxis of hemolytic disease of newborns; KamRho (D) IV for immune thermobocytopunic purpura; and snake bite antiserum to treat snake bites by the vipera palaestinae and echis coloratus, as well as human transferrin that is used as a cultural medium for diagnostic assays and cell cultures. In addition, the company distributes Bramitob to manage chronic pulmonary infection; FOSTER to treat asthma; PROVOCHOLINE for the diagnosis of bronchial airway hyperactivity; IVIG 5% for the treatment of various immunodeficiency-related conditions; Varitect, a varicella zoster immunoglobulin; Zutectra and Hepatect CP for the prevention of hepatitis B virus; Megalotect, a CMV immunoglobulin; and RUCONEST for the treatment of acute angioedema attacks in adults with hereditary angioedema. Further, it distributes Heparin sodium injection to treat thrombo-embolic disorders; Albumin and Albumin 4% for maintenance of blood plasma; and coagulation factors comprising Factor VIII and Factor IX, as well as IXIARO vaccine. The company's products in pipeline are G1-AAT (IV) for graft versus host disease and L1-AAT (1V) for lung transparent that are in Phase II stage; and Inhaled AAT for AAT deficiency, which is in Phase II and III stages. It markets its products through strategic partners in the United States, as well as through distributors internationally. Kamada Ltd. has strategic partnerships with Takeda Pharmaceutical Company Limited; PARI GmbH; and Kedrion Biopharma. The company was founded in 1990 and is headquartered in Rehovot, Israel.",
+        "summary": "Kamada Ltd. develops, produces, and markets plasma-derived protein therapeutics for orphan indications. It operates in two segments, Proprietary Products and Distribution. The company offers Glassia for use in chronic augmentation and maintenance therapy in adults with emphysema due to congenital Alpha-1 Antitrypsin (AAT) deficiency. It also provides KamRAB for prophylaxis of rabies disease; KamRho (D) IM to treat prophylaxis of hemolytic disease of newborns; KamRho (D) IV for immune thermobocytopunic purpura; and snake bite antiserum to treat snake bites by the vipera palaestinae and echis coloratus. In addition, the company distributes Bramitob to manage chronic pulmonary infection; FOSTER to treat asthma; PROVOCHOLINE for the diagnosis of bronchial airway hyperactivity; IVIG 5% for the treatment of various immunodeficiency-related conditions; AeroBika, an OPEP device; Varitect, a varicella zoster immunoglobulin; Zutectra and Hepatect CP for the prevention of hepatitis B virus; Megalotect, a CMV immunoglobulin; and RUCONEST for the treatment of acute angioedema attacks in adults with hereditary angioedema. Further, it distributes Heparin sodium injection to treat thrombo-embolic disorders; Albumin and Albumin 4% for maintenance of blood plasma; and coagulation factors comprising Factor VIII and Factor IX, as well as IXIARO vaccine. It markets its products through strategic partners in the United States, as well as through distributors internationally. Kamada Ltd. has strategic partnerships with Takeda Pharmaceutical Company Limited; PARI GmbH; and Kedrion Biopharma. The company was incorporated in 1990 and is headquartered in Rehovot, Israel.",
         "currency": "USD",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
@@ -62,7 +110,7 @@
     "KMDA.TA": {
         "short_name": "KAMADA LTD",
         "long_name": "Kamada Ltd.",
-        "summary": "Kamada Ltd. develops, produces, and markets plasma-derived protein therapeutics for orphan indications. It operates in two segments, Proprietary Products and Distribution. The company offers respiratory products, including Glassia for use in chronic augmentation and maintenance therapy in adults with emphysema due to congenital Alpha-1 Antitrypsin (AAT) deficiency. It also provides KamRAB for prophylaxis of rabies disease; KamRho (D) IM to treat prophylaxis of hemolytic disease of newborns; KamRho (D) IV for immune thermobocytopunic purpura; and snake bite antiserum to treat snake bites by the vipera palaestinae and echis coloratus, as well as human transferrin that is used as a cultural medium for diagnostic assays and cell cultures. In addition, the company distributes Bramitob to manage chronic pulmonary infection; FOSTER to treat asthma; PROVOCHOLINE for the diagnosis of bronchial airway hyperactivity; IVIG 5% for the treatment of various immunodeficiency-related conditions; Varitect, a varicella zoster immunoglobulin; Zutectra and Hepatect CP for the prevention of hepatitis B virus; Megalotect, a CMV immunoglobulin; and RUCONEST for the treatment of acute angioedema attacks in adults with hereditary angioedema. Further, it distributes Heparin sodium injection to treat thrombo-embolic disorders; Albumin and Albumin 4% for maintenance of blood plasma; and coagulation factors comprising Factor VIII and Factor IX, as well as IXIARO vaccine. The company's products in pipeline are G1-AAT (IV) for graft versus host disease and L1-AAT (1V) for lung transparent that are in Phase II stage; and Inhaled AAT for AAT deficiency, which is in Phase II and III stages. It markets its products through strategic partners in the United States, as well as through distributors internationally. Kamada Ltd. has strategic partnerships with Takeda Pharmaceutical Company Limited; PARI GmbH; and Kedrion Biopharma. The company was founded in 1990 and is headquartered in Rehovot, Israel.",
+        "summary": "Kamada Ltd. develops, produces, and markets plasma-derived protein therapeutics for orphan indications. It operates in two segments, Proprietary Products and Distribution. The company offers Glassia for use in chronic augmentation and maintenance therapy in adults with emphysema due to congenital Alpha-1 Antitrypsin (AAT) deficiency. It also provides KamRAB for prophylaxis of rabies disease; KamRho (D) IM to treat prophylaxis of hemolytic disease of newborns; KamRho (D) IV for immune thermobocytopunic purpura; and snake bite antiserum to treat snake bites by the vipera palaestinae and echis coloratus. In addition, the company distributes Bramitob to manage chronic pulmonary infection; FOSTER to treat asthma; PROVOCHOLINE for the diagnosis of bronchial airway hyperactivity; IVIG 5% for the treatment of various immunodeficiency-related conditions; AeroBika, an OPEP device; Varitect, a varicella zoster immunoglobulin; Zutectra and Hepatect CP for the prevention of hepatitis B virus; Megalotect, a CMV immunoglobulin; and RUCONEST for the treatment of acute angioedema attacks in adults with hereditary angioedema. Further, it distributes Heparin sodium injection to treat thrombo-embolic disorders; Albumin and Albumin 4% for maintenance of blood plasma; and coagulation factors comprising Factor VIII and Factor IX, as well as IXIARO vaccine. It markets its products through strategic partners in the United States, as well as through distributors internationally. Kamada Ltd. has strategic partnerships with Takeda Pharmaceutical Company Limited; PARI GmbH; and Kedrion Biopharma. The company was incorporated in 1990 and is headquartered in Rehovot, Israel.",
         "currency": "ILA",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
@@ -95,6 +143,18 @@
         "country": "Israel",
         "city": "Ramat Gan"
     },
+    "PMCN.TA": {
+        "short_name": "PHARMOCANN GLOBAL",
+        "long_name": "Pharmocann Global Ltd",
+        "summary": "Pharmocann Global Ltd engages in cultivation of cannabis for medical purposes. The company was founded in 2008 and is based in Raanana, Israel.",
+        "currency": "ILA",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "city": "Raanana"
+    },
     "PNAX.TA": {
         "short_name": "PANAXIA LABS ISRAE",
         "long_name": "Panaxia Labs Israel Ltd",
@@ -110,19 +170,19 @@
     "PRFX": {
         "short_name": "PainReform Ltd.",
         "long_name": "PainReform Ltd.",
-        "summary": "PainReform Ltd., a clinical stage specialty pharmaceutical company, engages in the development of products for the treatment of pain in Israel. It develops PRF-110, a product based on local anesthetic ropivacaine, which completed Phase II clinical study in hernia repair. The company was founded in 2007 and is headquartered in Herzeliya, Israel.",
+        "summary": "PainReform Ltd., a clinical stage specialty pharmaceutical company, engages in the development of therapeutics that provides an extended period of post-surgical pain relief in Israel. It engages in developing PRF-110, a viscous clear oil-based solution that is instilled directly into the surgical wound to provide localized and extended post-operative analgesia. The company is currently conducting two Phase 3 clinical trials of PRF-110 for the treatment of patients undergoing bunionectomy surgery and hernia repair. PainReform Ltd. was incorporated in 2007 and is based in Tel Aviv, Israel.",
         "currency": "USD",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
-        "exchange": "NMS",
+        "exchange": "NCM",
         "market": "us_market",
         "country": "Israel",
-        "city": "Herzliya"
+        "city": "Tel Aviv"
     },
     "RDHL": {
         "short_name": "Redhill Biopharma Ltd.",
         "long_name": "RedHill Biopharma Ltd.",
-        "summary": "RedHill Biopharma Ltd., a specialty biopharmaceutical company, primarily focused on gastrointestinal and infectious diseases. The company promotes gastrointestinal drugs, including Movantik for opioid-induced constipation in adults with non-cancer pain; Talicia for the treatment of Helicobacter pylori infection in adults; and Aemcolo for the treatment of travelers' diarrhea in adults. Its clinical late-stage investigational development programs include RHB-204, with a planned Phase 3 study for pulmonary nontuberculous mycobacteria infections; opaganib (Yeliva), a SK2 selective inhibitor targeting various indications with a Phase 2/3 program for COVID-19 and Phase 2 studies for prostate cancer and cholangiocarcinoma ongoing; RHB-104, which is in Phase 3 studies for Crohn's disease; RHB-102 (Bekinda) that is in Phase 3 studies for acute gastroenteritis and gastritis, and in Phase 2 studies for irritable bowel syndrome with diarrhea; RHB-107, a Phase 2-stage serine protease inhibitor for cancer and inflammatory gastrointestinal diseases, and is also being evaluated for COVID-19; and RHB-106, an encapsulated bowel preparation. The company was founded in 2009 and is headquartered in Tel Aviv, Israel.",
+        "summary": "RedHill Biopharma Ltd., a specialty biopharmaceutical company, primarily focused on gastrointestinal and infectious diseases. The company promotes gastrointestinal drugs, including Movantik for opioid-induced constipation in adults with chronic non-cancer pain; Talicia for the treatment of Helicobacter pylori infection in adults; and Aemcolo for the treatment of travelers' diarrhea in adults. Its clinical late-stage investigational development programs include RHB-204, which is in Phase 3 study for pulmonary nontuberculous mycobacteria infections; opaganib (Yeliva), an SK2 selective inhibitor, which has completed Phase 2 study to treat patients with SARS-CoV-2 severe COVID-19 pneumonia, in Phase 1/2a study to treat advanced unresectable cholangiocarcinoma, and in investigator-sponsored Phase 2 study to treat prostate cancer; RHB-104, which is in Phase 3 studies for Crohn's disease; RHB-102 (Bekinda) that is in Phase 3 studies for acute gastroenteritis and gastritis, and has completed Phase 2 studies for irritable bowel syndrome with diarrhea; RHB-107, which is in Phase 2/3 study to treat outpatients infected with COVID-19 disease, and Phase 2a study to treat advanced unresectable cholangiocarcinoma, as well as has completed Phase 2 study to treat gastrointestinal and other solid tumors; and RHB-106, an encapsulated formulation for bowel preparation, which has completed Phase 2a study. The company was incorporated in 2009 and is headquartered in Tel Aviv, Israel.",
         "currency": "USD",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
@@ -170,7 +230,7 @@
     "TEV.F": {
         "short_name": "TEVA PHARMACEUT. SP.ADR",
         "long_name": "Teva Pharmaceutical Industries Limited",
-        "summary": "Teva Pharmaceutical Industries Limited, a pharmaceutical company, develops, manufactures, markets, and distributes generic medicines, specialty medicines, and biopharmaceutical products in North America, Europe, and internationally. The company offers sterile products, hormones, high-potency drugs, and cytotoxic substances in various dosage forms, including tablets, capsules, injectables, inhalants, liquids, ointments, and creams. It also develops, manufactures, and sells active pharmaceutical ingredients. In addition, the company provides specialty medicines for use in central nervous system and respiratory indications. Further, its products in the central nervous system and pain area comprise Copaxone for the treatment of relapsing forms of MS; AJOVY for the preventive treatment of migraine; and AUSTEDO for the treatment of tardive dyskinesia and chorea associated with Huntington disease. Additionally, the company's products in the respiratory market include ProAir, ProAir Respiclick, QVAR, Duoresp Spiromax, Braltus, Cinqair/Cinqaero, and AirDuo RespiClick/ArmonAir RespiClick/AirDuo Digihaler for the treatment of asthma and chronic obstructive pulmonary disease, as well as Bendeka, Treanda, Granix, Trisenox, Lonquex, and Tevagrastim/Ratiograstim products in the oncology market. It has collaboration arrangements with Otsuka Pharmaceutical Co. Ltd. and Regeneron Pharmaceuticals, Inc. Teva Pharmaceutical Industries Limited was founded in 1901 and is headquartered in Petach Tikva, Israel.",
+        "summary": "Teva Pharmaceutical Industries Limited, a pharmaceutical company, develops, manufactures, markets, and distributes generic medicines, specialty medicines, and biopharmaceutical products in North America, Europe, and internationally. The company offers sterile products, hormones, high-potency drugs, and cytotoxic substances in various dosage forms, including tablets, capsules, injectables, inhalants, liquids, ointments, and creams. It also develops, manufactures, and sells active pharmaceutical ingredients. In addition, it focuses on the central nervous system, pain, respiratory, and oncology areas. Its products in the central nervous system and pain area include Copaxone for the treatment of relapsing forms of multiple sclerosis; AJOVY for the preventive treatment of migraine; and AUSTEDO for the treatment of tardive dyskinesia and chorea associated with Huntington disease. The company's products in the respiratory market comprise ProAir, QVAR, ProAir Digihaler, AirDuo Digihaler, and ArmonAir Digihaler, BRALTUS, CINQAIR/CINQAERO, DuoResp Spiromax, and AirDuo RespiClick/ArmonAir RespiClick for the treatment of asthma and chronic obstructive pulmonary disease. Its products in the oncology market include Bendeka, Treanda, Granix, Trisenox, Lonquex, and Tevagrastim/Ratiograstim. The company was founded in 1901 and is headquartered in Petach Tikva, Israel.",
         "currency": "EUR",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
@@ -182,7 +242,7 @@
     "TEVA": {
         "short_name": "Teva Pharmaceutical Industries ",
         "long_name": "Teva Pharmaceutical Industries Limited",
-        "summary": "Teva Pharmaceutical Industries Limited, a pharmaceutical company, develops, manufactures, markets, and distributes generic medicines, specialty medicines, and biopharmaceutical products in North America, Europe, and internationally. The company offers sterile products, hormones, high-potency drugs, and cytotoxic substances in various dosage forms, including tablets, capsules, injectables, inhalants, liquids, ointments, and creams. It also develops, manufactures, and sells active pharmaceutical ingredients. In addition, the company provides specialty medicines for use in central nervous system and respiratory indications. Further, its products in the central nervous system and pain area comprise Copaxone for the treatment of relapsing forms of MS; AJOVY for the preventive treatment of migraine; and AUSTEDO for the treatment of tardive dyskinesia and chorea associated with Huntington disease. Additionally, the company's products in the respiratory market include ProAir, ProAir Respiclick, QVAR, Duoresp Spiromax, Braltus, Cinqair/Cinqaero, and AirDuo RespiClick/ArmonAir RespiClick/AirDuo Digihaler for the treatment of asthma and chronic obstructive pulmonary disease, as well as Bendeka, Treanda, Granix, Trisenox, Lonquex, and Tevagrastim/Ratiograstim products in the oncology market. It has collaboration arrangements with Otsuka Pharmaceutical Co. Ltd. and Regeneron Pharmaceuticals, Inc. Teva Pharmaceutical Industries Limited was founded in 1901 and is headquartered in Petach Tikva, Israel.",
+        "summary": "Teva Pharmaceutical Industries Limited, a pharmaceutical company, develops, manufactures, markets, and distributes generic medicines, specialty medicines, and biopharmaceutical products in North America, Europe, and internationally. The company offers sterile products, hormones, high-potency drugs, and cytotoxic substances in various dosage forms, including tablets, capsules, injectables, inhalants, liquids, ointments, and creams. It also develops, manufactures, and sells active pharmaceutical ingredients. In addition, it focuses on the central nervous system, pain, respiratory, and oncology areas. Its products in the central nervous system and pain area include Copaxone for the treatment of relapsing forms of multiple sclerosis; AJOVY for the preventive treatment of migraine; and AUSTEDO for the treatment of tardive dyskinesia and chorea associated with Huntington disease. The company's products in the respiratory market comprise ProAir, QVAR, ProAir Digihaler, AirDuo Digihaler, and ArmonAir Digihaler, BRALTUS, CINQAIR/CINQAERO, DuoResp Spiromax, and AirDuo RespiClick/ArmonAir RespiClick for the treatment of asthma and chronic obstructive pulmonary disease. Its products in the oncology market include Bendeka, Treanda, Granix, Trisenox, Lonquex, and Tevagrastim/Ratiograstim. The company was founded in 1901 and is headquartered in Petach Tikva, Israel.",
         "currency": "USD",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
@@ -194,7 +254,7 @@
     "TEVA.TA": {
         "short_name": "TEVA PHARMA IND",
         "long_name": "Teva Pharmaceutical Industries Limited",
-        "summary": "Teva Pharmaceutical Industries Limited, a pharmaceutical company, develops, manufactures, markets, and distributes generic medicines, specialty medicines, and biopharmaceutical products in North America, Europe, and internationally. The company offers sterile products, hormones, high-potency drugs, and cytotoxic substances in various dosage forms, including tablets, capsules, injectables, inhalants, liquids, ointments, and creams. It also develops, manufactures, and sells active pharmaceutical ingredients. In addition, the company provides specialty medicines for use in central nervous system and respiratory indications. Further, its products in the central nervous system and pain area comprise Copaxone for the treatment of relapsing forms of MS; AJOVY for the preventive treatment of migraine; and AUSTEDO for the treatment of tardive dyskinesia and chorea associated with Huntington disease. Additionally, the company's products in the respiratory market include ProAir, ProAir Respiclick, QVAR, Duoresp Spiromax, Braltus, Cinqair/Cinqaero, and AirDuo RespiClick/ArmonAir RespiClick/AirDuo Digihaler for the treatment of asthma and chronic obstructive pulmonary disease, as well as Bendeka, Treanda, Granix, Trisenox, Lonquex, and Tevagrastim/Ratiograstim products in the oncology market. It has collaboration arrangements with Otsuka Pharmaceutical Co. Ltd. and Regeneron Pharmaceuticals, Inc. Teva Pharmaceutical Industries Limited was founded in 1901 and is headquartered in Petach Tikva, Israel.",
+        "summary": "Teva Pharmaceutical Industries Limited, a pharmaceutical company, develops, manufactures, markets, and distributes generic medicines, specialty medicines, and biopharmaceutical products in North America, Europe, and internationally. The company offers sterile products, hormones, high-potency drugs, and cytotoxic substances in various dosage forms, including tablets, capsules, injectables, inhalants, liquids, ointments, and creams. It also develops, manufactures, and sells active pharmaceutical ingredients. In addition, it focuses on the central nervous system, pain, respiratory, and oncology areas. Its products in the central nervous system and pain area include Copaxone for the treatment of relapsing forms of multiple sclerosis; AJOVY for the preventive treatment of migraine; and AUSTEDO for the treatment of tardive dyskinesia and chorea associated with Huntington disease. The company's products in the respiratory market comprise ProAir, QVAR, ProAir Digihaler, AirDuo Digihaler, and ArmonAir Digihaler, BRALTUS, CINQAIR/CINQAERO, DuoResp Spiromax, and AirDuo RespiClick/ArmonAir RespiClick for the treatment of asthma and chronic obstructive pulmonary disease. Its products in the oncology market include Bendeka, Treanda, Granix, Trisenox, Lonquex, and Tevagrastim/Ratiograstim. The company was founded in 1901 and is headquartered in Petach Tikva, Israel.",
         "currency": "ILA",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
@@ -206,7 +266,7 @@
     "TEVA.VI": {
         "short_name": "TEVA PHARMACEUTICAL ADR",
         "long_name": "Teva Pharmaceutical Industries Limited",
-        "summary": "Teva Pharmaceutical Industries Limited, a pharmaceutical company, develops, manufactures, markets, and distributes generic medicines, specialty medicines, and biopharmaceutical products in North America, Europe, and internationally. The company offers sterile products, hormones, high-potency drugs, and cytotoxic substances in various dosage forms, including tablets, capsules, injectables, inhalants, liquids, ointments, and creams. It also develops, manufactures, and sells active pharmaceutical ingredients. In addition, the company provides specialty medicines for use in central nervous system and respiratory indications. Further, its products in the central nervous system and pain area comprise Copaxone for the treatment of relapsing forms of MS; AJOVY for the preventive treatment of migraine; and AUSTEDO for the treatment of tardive dyskinesia and chorea associated with Huntington disease. Additionally, the company's products in the respiratory market include ProAir, ProAir Respiclick, QVAR, Duoresp Spiromax, Braltus, Cinqair/Cinqaero, and AirDuo RespiClick/ArmonAir RespiClick/AirDuo Digihaler for the treatment of asthma and chronic obstructive pulmonary disease, as well as Bendeka, Treanda, Granix, Trisenox, Lonquex, and Tevagrastim/Ratiograstim products in the oncology market. It has collaboration arrangements with Otsuka Pharmaceutical Co. Ltd. and Regeneron Pharmaceuticals, Inc. Teva Pharmaceutical Industries Limited was founded in 1901 and is headquartered in Petach Tikva, Israel.",
+        "summary": "Teva Pharmaceutical Industries Limited, a pharmaceutical company, develops, manufactures, markets, and distributes generic medicines, specialty medicines, and biopharmaceutical products in North America, Europe, and internationally. The company offers sterile products, hormones, high-potency drugs, and cytotoxic substances in various dosage forms, including tablets, capsules, injectables, inhalants, liquids, ointments, and creams. It also develops, manufactures, and sells active pharmaceutical ingredients. In addition, it focuses on the central nervous system, pain, respiratory, and oncology areas. Its products in the central nervous system and pain area include Copaxone for the treatment of relapsing forms of multiple sclerosis; AJOVY for the preventive treatment of migraine; and AUSTEDO for the treatment of tardive dyskinesia and chorea associated with Huntington disease. The company's products in the respiratory market comprise ProAir, QVAR, ProAir Digihaler, AirDuo Digihaler, and ArmonAir Digihaler, BRALTUS, CINQAIR/CINQAERO, DuoResp Spiromax, and AirDuo RespiClick/ArmonAir RespiClick for the treatment of asthma and chronic obstructive pulmonary disease. Its products in the oncology market include Bendeka, Treanda, Granix, Trisenox, Lonquex, and Tevagrastim/Ratiograstim. The company was founded in 1901 and is headquartered in Petach Tikva, Israel.",
         "currency": "EUR",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
@@ -218,7 +278,7 @@
     "TEVJF": {
         "short_name": "TEVA PHARMACEUTICAL INDUSTRIES",
         "long_name": "Teva Pharmaceutical Industries Limited",
-        "summary": "Teva Pharmaceutical Industries Limited, a pharmaceutical company, develops, manufactures, markets, and distributes generic medicines, specialty medicines, and biopharmaceutical products in North America, Europe, and internationally. The company offers sterile products, hormones, high-potency drugs, and cytotoxic substances in various dosage forms, including tablets, capsules, injectables, inhalants, liquids, ointments, and creams. It also develops, manufactures, and sells active pharmaceutical ingredients. In addition, the company provides specialty medicines for use in central nervous system and respiratory indications. Further, its products in the central nervous system and pain area comprise Copaxone for the treatment of relapsing forms of MS; AJOVY for the preventive treatment of migraine; and AUSTEDO for the treatment of tardive dyskinesia and chorea associated with Huntington disease. Additionally, the company's products in the respiratory market include ProAir, ProAir Respiclick, QVAR, Duoresp Spiromax, Braltus, Cinqair/Cinqaero, and AirDuo RespiClick/ArmonAir RespiClick/AirDuo Digihaler for the treatment of asthma and chronic obstructive pulmonary disease, as well as Bendeka, Treanda, Granix, Trisenox, Lonquex, and Tevagrastim/Ratiograstim products in the oncology market. It has collaboration arrangements with Otsuka Pharmaceutical Co. Ltd. and Regeneron Pharmaceuticals, Inc. Teva Pharmaceutical Industries Limited was founded in 1901 and is headquartered in Petach Tikva, Israel.",
+        "summary": "Teva Pharmaceutical Industries Limited, a pharmaceutical company, develops, manufactures, markets, and distributes generic medicines, specialty medicines, and biopharmaceutical products in North America, Europe, and internationally. The company offers sterile products, hormones, high-potency drugs, and cytotoxic substances in various dosage forms, including tablets, capsules, injectables, inhalants, liquids, ointments, and creams. It also develops, manufactures, and sells active pharmaceutical ingredients. In addition, it focuses on the central nervous system, pain, respiratory, and oncology areas. Its products in the central nervous system and pain area include Copaxone for the treatment of relapsing forms of multiple sclerosis; AJOVY for the preventive treatment of migraine; and AUSTEDO for the treatment of tardive dyskinesia and chorea associated with Huntington disease. The company's products in the respiratory market comprise ProAir, QVAR, ProAir Digihaler, AirDuo Digihaler, and ArmonAir Digihaler, BRALTUS, CINQAIR/CINQAERO, DuoResp Spiromax, and AirDuo RespiClick/ArmonAir RespiClick for the treatment of asthma and chronic obstructive pulmonary disease. Its products in the oncology market include Bendeka, Treanda, Granix, Trisenox, Lonquex, and Tevagrastim/Ratiograstim. The company was founded in 1901 and is headquartered in Petach Tikva, Israel.",
         "currency": "USD",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
@@ -230,7 +290,7 @@
     "TGTR.TA": {
         "short_name": "TOGETHER PHARMA",
         "long_name": "Together Pharma Ltd",
-        "summary": "Together Pharma Ltd, through its subsidiary, Globus Pharma Ltd., engages in growing, producing, and distributing medical cannabis products in Israel. The company is headquartered in Ashkelon, Israel.",
+        "summary": "Together Pharma Ltd, through its subsidiaries, engages in growing, production, storage, and distribution of medical cannabis products in Israel. The company is based in Ashkelon, Israel.",
         "currency": "ILA",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
@@ -242,13 +302,13 @@
     "TKUN.TA": {
         "short_name": "TIKUN OLAM - CANNB",
         "long_name": "Tikun Olam - Cannbit Pharmaceuticals Ltd",
-        "summary": "A.L. Capital Holdings (2016) Ltd. does not have significant operations. The company was formerly known as Tamaris Holdings (1995) Ltd. and changed its name to A.L. Capital Holdings (2016) Ltd. in December 2015. The company was incorporated in 1995 and is based in Ramat Gan, Israel. A.L.",
+        "summary": "Tikun Olam - Cannbit Pharmaceuticals Ltd engages in the research, development, cultivation, manufacture, marketing, and sale of medical cannabis and related products. The company was incorporated in 1995 and is based in Tel Aviv-Yafo, Israel.",
         "currency": "ILA",
         "sector": "Healthcare",
         "industry": "Drug Manufacturers - Specialty & Generic",
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Ramat Gan"
+        "city": "Tel Aviv-Yafo"
     }
 }

@@ -95,17 +95,17 @@
         "country": "Australia",
         "city": "Sydney"
     },
-    "AG0.SG": {
-        "short_name": "Ausgroup Ltd. Registered Shares",
-        "long_name": "AusGroup Limited",
-        "summary": "AusGroup Limited, an investment holding company, provides a range of integrated service solutions to the energy, resources, industrial, utilities, and port and marine sectors in Australia and South East Asia. The company's Projects segment provides construction services, including structural, mechanical, and piping; painting, insulation, and fireproofing; and engineering, procurement, and construction services. Its Access Services segment offers scaffolding, engineering and design, labor supply and stock control, logistics, transportation, and rope services. The company's Fabrication and Manufacturing segment provides turnkey solutions to the oil and gas sector, including exploration, construction, commissioning, operation, maintenance and repair, and decommissioning in various phases of the asset lifecycle. Its Maintenance Services segment offers preventative and breakdown maintenance services, as well as shut down services and sustaining capital works. The company's Port & Marine Services segment offers logistics and marine transportation support services to the oil and gas industry, as well as general marine and defense sectors. AusGroup Limited was founded in 1988 and is headquartered in West Perth, Australia.",
-        "currency": "EUR",
+    "BSA.AX": {
+        "short_name": "BSA AUST FPO",
+        "long_name": "BSA Limited",
+        "summary": "BSA Limited, together with its subsidiaries, operates as a technical services contracting company in Australia. It operates through BSA Communications & Utility Infrastructure, and BSA Advanced Property Solutions segments. The BSA Communications & Utility Infrastructure segment engages in the delivery of bundled services over fixed line multi-technology networks; and installation of subscription television and smart meters to the telecommunications, subscription television and utility industries. The BSA Advanced Property Solutions segment designs, installs, maintains, and optimizes building services for all hard assets in commercial and industrial buildings and properties, including fire detection and suppression, mechanical services, heating, ventilation, air conditioning, refrigeration, electrical, and building management systems. BSA Limited was incorporated in 1999 and is based in Macquarie Park, Australia.",
+        "currency": "AUD",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
-        "exchange": "STU",
-        "market": "dr_market",
+        "exchange": "ASX",
+        "market": "au_market",
         "country": "Australia",
-        "city": "West Perth"
+        "city": "Macquarie Park"
     },
     "CDD.AX": {
         "short_name": "CARDNO FPO",
@@ -275,6 +275,18 @@
         "country": "Australia",
         "city": "Belmont"
     },
+    "ITG.AX": {
+        "short_name": "INTEGA GRP FPO",
+        "long_name": "Intega Group Limited",
+        "summary": "Intega Group Limited provides engineering services primarily in Australia, New Zealand, the United States, the United Kingdom, and Canada. It operates through Asia Pacific and Americas segments. The company offers testing services for construction materials, including soil, aggregates, and concrete; subsurface utility engineering services, such as mapping the location and condition of subsurface utilities to reduce the occurrence of interference and conflict with existing infrastructure; and environmental testing services comprising testing soils, asbestos, groundwater quality, construction noise, dust, and vibration levels. It also provides geotechnical engineering services, such as temporary works design, bored pile supervision, geotechnical investigation, site classification, and pavement design services; geomechanical testing services for infrastructure, mining, and tunneling projects; owners' representative services; and quality assurance services. The company was founded in 1968 and is based in Newstead, Australia.",
+        "currency": "AUD",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Newstead"
+    },
     "JLG.AX": {
         "short_name": "JOHNS LYNG FPO",
         "long_name": "Johns Lyng Group Limited",
@@ -346,6 +358,18 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Perth"
+    },
+    "MCE.AX": {
+        "short_name": "MATRIX CE FPO",
+        "long_name": "Matrix Composites & Engineering Ltd",
+        "summary": "Matrix Composites & Engineering Ltd, together with its subsidiaries, designs, manufactures, sells, and engineers composite and material technology solutions to the oil and gas, civil and infrastructure, resources, defense, and transportation industries in Australia and internationally. It offers conventional riser buoyancy systems; Nautilus riser protection; Riser sealing mandrel; Matrix Longitudinal Groove System (LGS) VIV and Drag Reduction; and Matrix LGS VIV suppression, as well as buoyancy system testing services, such as hyperbaric, buoyancy verification tank, mechanical, laboratory, and material testing. The company also provides well construction products, such as Max-R, a range of low friction composite drilling and completions centralizers. In addition, it offers distributed buoyancy clamping systems, IsoBlox buoyancy building block systems, mid water arch buoyancy, permanent subsurface mooring buoyancy, pipeline buckle mitigation buoyancy, steel catenary riser buoyancy, and production riser buoyancy systems; buoyancy balls, cuboids, and tablets; and pipeline installation buoyancy products. Further, the company provides Paragon epoxy resin systems; Kinetica dropped object protection cell systems; energy absorption systems; and Matrix LGS free span remediation solutions. Additionally, it offers Cetrafoam molded pipe cryogenic insulation products; Xirtherm C140 composite cryogenic thermal break blocks; and composite pipe reinforcement systems. The company was founded in 1980 and is headquartered in Henderson, Australia.",
+        "currency": "AUD",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Henderson"
     },
     "MCHHF": {
         "short_name": "MACMAHON HLDGS",
@@ -419,10 +443,10 @@
         "country": "Australia",
         "city": "Perth"
     },
-    "PGX.AX": {
-        "short_name": "PRIMERO FPO",
-        "long_name": "Primero Group Limited",
-        "summary": "Primero Group Limited provides design, engineering, construction, and operational services to the minerals, energy, and infrastructure sectors in Australia. Its services include full plant design and feasibility studies; project management and planning; turnkey in-house construction services in civil, structural, mechanical, piping, electrical, instrumentation, and control systems areas; commissioning; and operations and maintenance. The company was founded in 2011 and is headquartered in Osborne Park, Australia.",
+    "PKD.AX": {
+        "short_name": "PARKD LTD FPO",
+        "long_name": "PARKD Limited",
+        "summary": "PARKD Limited, a construction technology company, constructs and supplies modular car parking systems for single and multi-level arrangements in Australia. The company was incorporated in 2016 and is based in Osborne Park, Australia.",
         "currency": "AUD",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
@@ -430,18 +454,6 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Osborne Park"
-    },
-    "PKD.AX": {
-        "short_name": "PARKD LTD FPO",
-        "long_name": "PARKD Limited",
-        "summary": "PARKD Limited, a construction technology company, constructs and supplies modular car parking systems for single and multi-level arrangements in Australia. The company was incorporated in 2016 and is based in Claremont, Australia.",
-        "currency": "AUD",
-        "sector": "Industrials",
-        "industry": "Engineering & Construction",
-        "exchange": "ASX",
-        "market": "au_market",
-        "country": "Australia",
-        "city": "Claremont"
     },
     "RDG.AX": {
         "short_name": "RESDEV FPO",
@@ -466,6 +478,30 @@
         "market": "au_market",
         "country": "Australia",
         "city": "Rhodes"
+    },
+    "SOP.AX": {
+        "short_name": "SYNERTEC FPO",
+        "long_name": "Synertec Corporation Limited",
+        "summary": "Synertec Corporation Limited provides specialist engineering and compliance services in Australia. The company offers services in the areas of project and construction management; process and mechanical engineering; LNG custody transfer system; analyzer systems; automation and control engineering; and functional safety, as well as compliance and validation services. It serves oil and gas, pharmaceutical, water, petrochemical, terminal and defense, and food and dairy industries. The company was formerly known as SML Corporation Limited and changed its name to Synertec Corporation Limited as a result of its acquisition of Synertec Pty Ltd in August 2017. Synertec Corporation is headquartered in Richmond, Australia.",
+        "currency": "AUD",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Richmond"
+    },
+    "SRG.AX": {
+        "short_name": "SRGGLOBAL FPO",
+        "long_name": "SRG Global Limited",
+        "summary": "SRG Global Limited provides engineering-led specialist asset, construction, and mining services. The company operates through Construction, Asset Services, and Mining Services segments. The Construction segment supplies integrated products and services to customers involved in the construction of infrastructure, including bridges, dams, office towers, high rise apartments, shopping centers, hotels, car parks, recreational buildings, and hospitals. The Asset Services segment supplies integrated services to customers in various sectors comprising oil and gas, energy, major infrastructure, offshore, mining, power generation, water treatment plants, commissioning, decommissioning, shutdowns, and civil works. The Mining Services segment provides ground solutions, which include production drilling, ground and slope stabilization, design engineering, and monitoring services to mining clients. The company was formerly known as Structural Systems Limited and changed its name to SRG Global Limited in November 2014. SRG Global Limited was founded in 1961 and is headquartered in Subiaco, Australia.",
+        "currency": "AUD",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Subiaco"
     },
     "SSM.AX": {
         "short_name": "SRVSTREAM FPO",
@@ -506,7 +542,7 @@
     "VMG.AX": {
         "short_name": "VDM GROUP FPO",
         "long_name": "VDM Group Limited",
-        "summary": "VDM Group Limited engages in the construction business in Australia. It operates through three divisions: VDM Mining, VDM Trading, and VDM Construction. The VDM Mining division engages in the exploration, development, and operation of mining projects in Africa and Latin America. This division holds a 65% interest in the Cachoeiras do Binga copper exploration project located in the Republic of Angola. The VDM Trading division imports and exports various products, including foods and wines. The VDM Construction division provides engineering, procurement, and construction services. This division constructs residential housings covering high-rise apartments, and affordable and social housing for communities; mining accommodation facilities; modular hotel units; and student accommodation units. VDM Group Limited was founded in 1978 and is headquartered in East Perth, Australia.",
+        "summary": "VDM Group Limited engages in the construction business in Australia. It operates through three divisions: VDM Mining, VDM Trading, and VDM Construction. The VDM Mining division engages in the exploration, development, and operation of mining projects in Africa and Latin America. This division holds a 65% interest in the Cachoeiras do Binga copper exploration project located in the Republic of Angola. The VDM Trading division imports and exports various products, including foods and wines. The VDM Construction division provides engineering, procurement, and construction services. This division constructs residential housings covering high-rise apartments, and affordable and social housing for communities; mining accommodation facilities; modular hotel units; and student accommodation units. VDM Group Limited was founded in 1978 and is based in East Perth, Australia.",
         "currency": "AUD",
         "sector": "Industrials",
         "industry": "Engineering & Construction",
@@ -514,6 +550,18 @@
         "market": "au_market",
         "country": "Australia",
         "city": "East Perth"
+    },
+    "VRS.AX": {
+        "short_name": "VERIS FPO",
+        "long_name": "Veris Limited",
+        "summary": "Veris Limited provides surveying, professional and advisory, and geospatial services in Australia. The company's Veris Australia segment provides cadastral, civil and construction, and engineering surveying, as well as 3D spatial services, such as lidar, 3D laser scanning, ground penetrating radar, mobile laser scanning, and hydrographic surveys. This segment also provides town planning and urban design services. It serves infrastructure, land and property, resources, and defence markets. Its Aqura Technologies segment offers ICT and communications services to the industrial communications sector. Veris Limited was formerly known as OTOC Limited and changed its name to Veris Limited in November 2016. Veris Limited is headquartered in Osborne Park, Australia.",
+        "currency": "AUD",
+        "sector": "Industrials",
+        "industry": "Engineering & Construction",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "city": "Osborne Park"
     },
     "VYS.AX": {
         "short_name": "VYSARNLTD FPO",
