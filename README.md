@@ -77,14 +77,22 @@ specific market which usually refers to moneymarkets in a specific country.
   one of the keys of the dictionary (which is by default the summary). It also has the option to enable 
   case-sensitive searching which is off by default.
   
-For additional information about each function you can use the build-in help function of Python. For 
-example `help(show_options)` returns a general description, the possible input parameters and what is returned 
-as output.
+If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
+`base_url` which you can find in each of the above 'select' functions. An example would be:
+- `select_funds(category='Africa Equity', base_url=<YOUR URL>)`
 
+You can also store the database locally and point to your local location with the variable `base_url` and by setting
+`use_local_location` to True. An example would be:
+- `select_etfs(category='Bank Loan, base_url=C:/Users/jerbo/FinanceDatabase/Database/ETFs/, use_local_location=True)`
+  
 For users of the broker **DeGiro**, you are able to find data on the tickers found in the 
 [Commission Free ETFs](https://www.degiro.ie/data/pdf/ie/commission-free-etfs-list.pdf) list by selecting either 
 `core_selection_degiro_filled` (all data) or `core_selection_degiro_filtered` (filtered by summary) as category 
 when using the function `select_etfs`.
+
+For additional information about each function you can use the build-in help function of Python. For 
+example `help(show_options)` returns a general description, the possible input parameters and what is returned 
+as output.
 
 ## Examples
 This section gives a few examples of the possibilities with this package. These are merely a few of the things you
