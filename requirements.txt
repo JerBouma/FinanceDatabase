@@ -1,8 +1,8 @@
-pandas==1.1.2
-tablib==3.0.0
-matplotlib==3.3.2
-dill==0.3.3
-tqdm==4.56.0
-requests==2.25.1
-backports.statistics==0.1.0
-FundamentalAnalysis==0.2.6
+pandas>=1.1.2
+tablib>=3.0.0
+matplotlib>=3.3.2
+dill>=0.3.3
+tqdm>=4.56.0
+requests>=2.25.1
+backports.statistics>=0.1.0
+FundamentalAnalysis>=0.2.10
