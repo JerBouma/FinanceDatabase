@@ -2,7 +2,10 @@ import requests
 import json
 
 
-def select_cryptocurrencies(cryptocurrency=None):
+def select_cryptocurrencies(cryptocurrency=None,
+                            base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
+                                     "Database/Cryptocurrencies/",
+                            use_local_location=False, all_cryptocurrencies_json="_Cryptocurrencies"):
     """
     Description
     ----
@@ -13,34 +16,48 @@ def select_cryptocurrencies(cryptocurrency=None):
     ----
     cryptocurrency (string, default is None)
         If filled, gives all data for a specific cryptocurrency.
+    base_url (string, default is GitHub location)
+        The possibility to enter your own location if desired.
+    use_local_location (string, default False)
+        The possibility to select a local location (i.e. based on Windows path)
+    all_cryptocurrencies_json (string, default is _Cryptocurrencies)
+        Alter the name of the all cryptocurrencies json if desired.
 
     Output
     ----
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
-           "Database/Cryptocurrencies/")
-
     if cryptocurrency:
-        try:
-            json_file = URL + cryptocurrency + '.json'
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError(f"Not able to find any data for {cryptocurrency}.")
+        json_file = base_url + cryptocurrency + '.json'
+        if use_local_location:
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError(f"Not able to find any data for {cryptocurrency}.")
     else:
-        try:
-            json_file = URL + "_Cryptocurrencies.json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data.")
+        json_file = base_url + all_cryptocurrencies_json + ".json"
+        if use_local_location:
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError("Not able to find any data.")
 
     return json_data
 
 
-def select_currencies(currency=None):
+def select_currencies(currency=None,
+                      base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+                               "master/Database/Currencies/",
+                      use_local_location=False, all_currencies_json="_Currencies"):
     """
     Description
     ----
@@ -51,34 +68,48 @@ def select_currencies(currency=None):
     ----
     currency (string, default is None)
         If filled, gives all data for a specific currency.
+    base_url (string, default is GitHub location)
+        The possibility to enter your own location if desired.
+    use_local_location (string, default False)
+        The possibility to select a local location (i.e. based on Windows path)
+    all_currencies_json (string, default is _Currencies)
+        Alter the name of the all currencies json if desired.
 
     Output
     ----
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
-           "Database/Currencies/")
-
     if currency:
-        try:
-            json_file = URL + currency + '.json'
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError(f"Not able to find any data for {currency}.")
+        json_file = base_url + currency + '.json'
+        if use_local_location:
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError(f"Not able to find any data for {currency}.")
     else:
-        try:
-            json_file = URL + "_Currencies.json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data.")
+        json_file = base_url + all_currencies_json + ".json"
+        if use_local_location:
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError("Not able to find any data.")
 
     return json_data
 
 
-def select_etfs(category=None):
+def select_etfs(category=None,
+                base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+                         "master/Database/ETFs/",
+                use_local_location=False, all_etfs_json="_ETFs"):
     """
     Description
     ----
@@ -89,35 +120,51 @@ def select_etfs(category=None):
     ----
     category (string, default is None)
         If filled, gives all data for a specific category.
+    base_url (string, default is GitHub location)
+        The possibility to enter your own location if desired.
+    use_local_location (string, default False)
+        The possibility to select a local location (i.e. based on Windows path)
+    all_etfs_json (string, default is _ETFs)
+        Alter the name of the all etfs json if desired.
 
     Output
     ----
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
-           "Database/ETFs/")
 
     if category:
-        category = category.replace(' ', '%20')
-        try:
-            json_file = URL + category + '.json'
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError(f"Not able to find any data for {category}.")
+        if use_local_location:
+            json_file = base_url + category + '.json'
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                category = category.replace('%', '%25').replace(' ', '%20')
+                json_file = base_url + category + '.json'
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError(f"Not able to find any data for {category}.")
     else:
-        try:
-            json_file = URL + "_ETFs.json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text).decode("UTF-8")
-        except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data.")
+        json_file = base_url + all_etfs_json + ".json"
+        if use_local_location:
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError("Not able to find any data.")
 
     return json_data
 
 
-def select_equities(country=None, sector=None, industry=None):
+def select_equities(country=None, sector=None, industry=None,
+                    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+                             "master/Database/Equities/",
+                    use_local_location=False):
     """
     Description
     ----
@@ -135,107 +182,152 @@ def select_equities(country=None, sector=None, industry=None):
         If filled, gives all data for a specific sector.
     industry (string, default is None)
         If filled, gives all data for a specific industry.
+    base_url (string, default is GitHub location)
+        The possibility to enter your own location if desired.
+    use_local_location (string, default False)
+        The possibility to select a local location (i.e. based on Windows path)
 
     Output
     ----
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
-           "Database/Equities/")
-
     if country and sector and industry:
-        country = country.replace(' ', '%20')
-        sector = sector.replace(' ', '%20')
-        industry = industry.replace(' ', '%20')
-
-        try:
-            json_file = URL + 'Countries/' + country + '/' + sector + '/' + industry + ".json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError(f"Not able to find any data with the combination of Country ({country}), "
-                             f"Sector ({sector}) and Industry ({industry}).")
+        if use_local_location:
+            json_file = base_url + 'Countries/' + country + '/' + sector + '/' + industry + ".json"
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                country = country.replace('%', '%25').replace(' ', '%20')
+                sector = sector.replace('%', '%25').replace(' ', '%20')
+                industry = industry.replace('%', '%25').replace(' ', '%20')
+                json_file = base_url + 'Countries/' + country + '/' + sector + '/' + industry + ".json"
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError(f"Not able to find any data with the combination of Country ({country}), "
+                                 f"Sector ({sector}) and Industry ({industry}).")
     elif country and sector:
-        country = country.replace(' ', '%20')
-        sector = sector.replace(' ', '%20')
-
-        try:
-            json_file = URL + 'Countries/' + country + '/' + sector + '/_' + sector + ".json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError(f"Not able to find any data with the combination of Country ({country}) "
-                             f"and Sector ({sector})")
+        if use_local_location:
+            json_file = base_url + 'Countries/' + country + '/' + sector + '/_' + sector + ".json"
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                country = country.replace('%', '%25').replace(' ', '%20')
+                sector = sector.replace('%', '%25').replace(' ', '%20')
+                json_file = base_url + 'Countries/' + country + '/' + sector + '/_' + sector + ".json"
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError(f"Not able to find any data with the combination of Country ({country}) "
+                                 f"and Sector ({sector})")
     elif sector and industry:
-        sector = sector.replace(' ', '%20')
-        industry = industry.replace(' ', '%20')
-
-        try:
-            json_file = URL + 'Sectors/' + sector + '/' + industry + ".json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data with the combination of, "
-                             f"Sector ({sector}) and Industry ({industry}).")
+        if use_local_location:
+            json_file = base_url + 'Sectors/' + sector + '/' + industry + ".json"
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                sector = sector.replace('%', '%25').replace(' ', '%20')
+                industry = industry.replace('%', '%25').replace(' ', '%20')
+                json_file = base_url + 'Sectors/' + sector + '/' + industry + ".json"
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError("Not able to find any data with the combination of, "
+                                 f"Sector ({sector}) and Industry ({industry}).")
     elif country and industry:
-        country = country.replace(' ', '%20')
-        industry = industry.replace(' ', '%20')
-
-        try:
-            json_file = URL + 'Countries/' + country + '/Industries/' + industry + ".json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data with the combination of, "
-                             f"Country ({country}) and Industry ({industry}).")
+        if use_local_location:
+            json_file = base_url + 'Countries/' + country + '/Industries/' + industry + ".json"
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                country = country.replace('%', '%25').replace(' ', '%20')
+                industry = industry.replace('%', '%25').replace(' ', '%20')
+                json_file = base_url + 'Countries/' + country + '/Industries/' + industry + ".json"
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError("Not able to find any data with the combination of, "
+                                 f"Country ({country}) and Industry ({industry}).")
     elif country:
-        country = country.replace(' ', '%20')
-
-        try:
-            json_file = URL + 'Countries/' + country + '/' + country + ".json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError(f"Not able to find any data for {country}.")
+        if use_local_location:
+            json_file = base_url + 'Countries/' + country + '/' + country + ".json"
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                country = country.replace('%', '%25').replace(' ', '%20')
+                json_file = base_url + 'Countries/' + country + '/' + country + ".json"
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError(f"Not able to find any data for {country}.")
     elif sector:
-        sector = sector.replace(' ', '%20')
-
-        try:
-            json_file = URL + 'Sectors/' + sector + '/_' + sector + ".json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError(f"Not able to find any data for {sector}.")
+        if use_local_location:
+            json_file = base_url + 'Sectors/' + sector + '/_' + sector + ".json"
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                sector = sector.replace('%', '%25').replace(' ', '%20')
+                json_file = base_url + 'Sectors/' + sector + '/_' + sector + ".json"
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError(f"Not able to find any data for {sector}.")
     elif industry:
-        industry = industry.replace(' ', '%20')
-
-        try:
-            json_file = URL + 'Industries/' + industry + ".json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError(f"Not able to find any data for {industry}.")
+        if use_local_location:
+            json_file = base_url + 'Industries/' + industry + ".json"
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                industry = industry.replace('%', '%25').replace(' ', '%20')
+                json_file = base_url + 'Industries/' + industry + ".json"
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError(f"Not able to find any data for {industry}.")
     else:
-        try:
+        if use_local_location:
             json_data = {}
 
-            json_file_part_one = URL + "Equities Part 1.json"
-            request = requests.get(json_file_part_one)
-            json_data_segment = json.loads(request.text)
-            json_data.update(json_data_segment)
+            json_file_part_one = base_url + "Equities Part 1.json"
+            with open(json_file_part_one) as json_local:
+                json_data_part_one = json.load(json_local)
+            json_data.update(json_data_part_one)
 
-            json_file_part_two = URL + "Equities Part 2.json"
-            request = requests.get(json_file_part_two)
-            json_data_segment = json.loads(request.text)
-            json_data.update(json_data_segment)
-        except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data.")
+            json_file_part_two = base_url + "Equities Part 2.json"
+            with open(json_file_part_two) as json_local:
+                json_data_part_two = json.load(json_local)
+            json_data.update(json_data_part_two)
+        else:
+            try:
+                json_data = {}
+
+                json_file_part_one = base_url + "Equities Part 1.json"
+                request = requests.get(json_file_part_one)
+                json_data_segment = json.loads(request.text)
+                json_data.update(json_data_segment)
+
+                json_file_part_two = base_url + "Equities Part 2.json"
+                request = requests.get(json_file_part_two)
+                json_data_segment = json.loads(request.text)
+                json_data.update(json_data_segment)
+            except json.decoder.JSONDecodeError:
+                raise ValueError("Not able to find any data.")
 
     return json_data
 
 
-def select_funds(category=None):
+def select_funds(category=None,
+                 base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+                          "master/Database/Funds/",
+                 use_local_location=False, all_funds_json="_Funds"):
     """
     Description
     ----
@@ -246,35 +338,50 @@ def select_funds(category=None):
     ----
     category (string, default is None)
         If filled, gives all data for a specific category.
+    base_url (string, default is GitHub location)
+        The possibility to enter your own location if desired.
+    use_local_location (string, default False)
+        The possibility to select a local location (i.e. based on Windows path)
+    all_funds_json (string, default is _Funds)
+        Alter the name of the all funds json if desired.
 
     Output
     ----
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
-           "Database/Funds/")
-
     if category:
-        category = category.replace(' ', '%20')
-        try:
-            json_file = URL + category + '.json'
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError(f"Not able to find any data for {category}.")
+        if use_local_location:
+            json_file = base_url + category + '.json'
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                category = category.replace('%', '%25').replace(' ', '%20')
+                json_file = base_url + category + '.json'
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError(f"Not able to find any data for {category}.")
     else:
-        try:
-            json_file = URL + "_Funds.json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data.")
+        json_file = base_url + all_funds_json + ".json"
+        if use_local_location:
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError("Not able to find any data.")
 
     return json_data
 
 
-def select_indices(market=None):
+def select_indices(market=None,
+                   base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+                            "master/Database/Indices/",
+                   use_local_location=False, all_indices_json="_Indices"):
     """
     Description
     ----
@@ -285,34 +392,48 @@ def select_indices(market=None):
     ----
     market (string, default is None)
         If filled, gives all data for a specific market.
+    base_url (string, default is GitHub location)
+        The possibility to enter your own location if desired.
+    use_local_location (string, default False)
+        The possibility to select a local location (i.e. based on Windows path)
+    all_indices_json (string, default is _Indices)
+        Alter the name of the all indices json if desired.
 
     Output
     ----
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
-           "Database/Indices/")
-
     if market:
-        try:
-            json_file = URL + market + '.json'
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError(f"Not able to find any data for {market}.")
+        json_file = base_url + market + '.json'
+        if use_local_location:
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError(f"Not able to find any data for {market}.")
     else:
-        try:
-            json_file = URL + "_Indices.json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data.")
+        json_file = base_url + all_indices_json + ".json"
+        if use_local_location:
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError("Not able to find any data.")
 
     return json_data
 
 
-def select_moneymarkets(market=None):
+def select_moneymarkets(market=None,
+                        base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+                                 "master/Database/Moneymarkets/",
+                        use_local_location=False, all_moneymarkets_json="_Moneymarkets"):
     """
     Description
     ----
@@ -323,28 +444,39 @@ def select_moneymarkets(market=None):
     ----
     market (string, default is None)
         If filled, gives all data for a specific market.
+    base_url (string, default is GitHub location)
+        The possibility to enter your own location if desired.
+    use_local_location (string, default False)
+        The possibility to select a local location (i.e. based on Windows path)
+    all_moneymarkets_json (string, default is _Moneymarkets)
+        Alter the name of the all moneymarkets json if desired.
 
     Output
     ----
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
-           "Database/Moneymarkets/")
-
     if market:
-        try:
-            json_file = URL + market + '.json'
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError(f"Not able to find any data for {market}.")
+        json_file = base_url + market + '.json'
+        if use_local_location:
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError(f"Not able to find any data for {market}.")
     else:
-        try:
-            json_file = URL + "_Moneymarkets.json"
-            request = requests.get(json_file)
-            json_data = json.loads(request.text)
-        except json.decoder.JSONDecodeError:
-            raise ValueError("Not able to find any data.")
+        json_file = base_url + all_moneymarkets_json + ".json"
+        if use_local_location:
+            with open(json_file) as json_local:
+                json_data = json.load(json_local)
+        else:
+            try:
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError("Not able to find any data.")
 
     return json_data
