@@ -83,7 +83,7 @@ If you wish to store the database at a different location (for example your own 
 
 You can also store the database locally and point to your local location with the variable `base_url` and by setting
 `use_local_location` to True. An example would be:
-- `select_etfs(category='Bank Loan, base_url=C:/Users/jerbo/FinanceDatabase/Database/ETFs/, use_local_location=True)`
+- `select_etfs(category='Bank Loan', base_url='C:/Users/jerbo/FinanceDatabase/Database/ETFs/', use_local_location=True)`
   
 For users of the broker **DeGiro**, you are able to find data on the tickers found in the 
 [Commission Free ETFs](https://www.degiro.ie/data/pdf/ie/commission-free-etfs-list.pdf) list by selecting either 
@@ -98,6 +98,56 @@ as output.
 This section gives a few examples of the possibilities with this package. These are merely a few of the things you
 can do with the package. **As you can obtain a wide range of symbols, pretty much any 
 package that requires symbols should work.**
+
+### Companies per Sector in the Netherlands
+Understanding which sectors exist in a country can be interesting. Not only to understand the focus of the country but 
+also to understand which area holds the most data. This is also a demonstration of the show_option function. A function 
+crucial to query data from the Database.
+
+Lets start by acquiring the countries, sectors and industries of equities:
+````
+import FinanceDatabase as fd
+
+# Obtain all countries from the database
+equities_countries = fd.show_options('equities', 'countries')
+
+# Obtain all sectors from the database
+equities_sectors = fd.show_options('equities', 'sectors')
+
+# Obtain all industries from the database
+equities_industries = fd.show_options('equities', 'industries')
+
+# Obtain all countres + sectors + industries from the database
+equities_all_categories = fd.show_options('equities')
+````
+This gives you the following lists (whereas all categories is a dictionary with these lists):
+
+![](Examples/CountriesSectorsIndustries.png)
+
+Then, let's see how many companies exist in each sector in the Netherlands. Let's count all 
+companies with the following code, I skip a sector when it has no data:
+````
+equities_per_sector_netherlands = {}
+
+for sector in equities_sectors[1:]:
+    try:
+        equities_per_sector_netherlands[sector] = len(fd.select_equities(country='Netherlands', sector=sector))
+    except ValueError as error:
+        print(error)
+````
+Lastly, I plot the data in a pie chart:
+````
+legend, values = zip(*equities_per_sector_netherlands.items())
+
+plt.pie(values, labels=legend)
+plt.title('Companies per sector in the Netherlands')
+plt.tight_layout()
+
+plt.show()
+````
+This results in the following graph:
+
+![](Examples/CompaniesPerSectorInTheNetherlands.png)
 
 ### United States' Airlines
 If I wish to obtain all companies within the United States listed under 'Airlines' I can write the 
