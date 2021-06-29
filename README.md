@@ -101,10 +101,10 @@ package that requires symbols should work.**
 
 ### Companies per Sector in the Netherlands
 Understanding which sectors exist in a country can be interesting. Not only to understand the focus of the country but 
-also to understand which area holds the most data. This is also a demonstration of the show_option function. A function 
-crucial to query data from the Database.
+also to understand which area holds the most data. This is a demonstration of the ```show_options``` function. 
+A function crucial to querying data from the Database.
 
-Lets start by acquiring the countries, sectors and industries of equities:
+Let's start by acquiring the unique countries, sectors and industries of all equities in the database:
 ````
 import FinanceDatabase as fd
 
@@ -117,15 +117,15 @@ equities_sectors = fd.show_options('equities', 'sectors')
 # Obtain all industries from the database
 equities_industries = fd.show_options('equities', 'industries')
 
-# Obtain all countres + sectors + industries from the database
+# Obtain all countries + sectors + industries from the database
 equities_all_categories = fd.show_options('equities')
 ````
-This gives you the following lists (whereas all categories is a dictionary with these lists):
+This gives the following lists (where  ```equities_all_categories``` is a dictionary with these three lists):
 
 ![](Examples/CountriesSectorsIndustries.png)
 
-Then, let's see how many companies exist in each sector in the Netherlands. Let's count all 
-companies with the following code, I skip a sector when it has no data:
+Then, I want to see how many companies exist in each sector in the Netherlands. Let's count all companies with the 
+following code, I skip a sector when it has no data and also do not include companies that are not categorized:
 ````
 equities_per_sector_netherlands = {}
 
@@ -135,19 +135,25 @@ for sector in equities_sectors[1:]:
     except ValueError as error:
         print(error)
 ````
-Lastly, I plot the data in a pie chart:
+Lastly, I plot the data in a pie chart and add some formatting to make the pie chart look a bit nicer:
 ````
 legend, values = zip(*equities_per_sector_netherlands.items())
 
-plt.pie(values, labels=legend)
+colors = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'tab:blue', 'tab:orange', 'tab:gray',
+          'lightcoral', 'yellow', 'saddlebrown', 'lightblue', 'olive']
+plt.pie(values, labels=legend, colors=colors,
+        wedgeprops={'linewidth': 0.5, 'edgecolor': 'white'})
 plt.title('Companies per sector in the Netherlands')
 plt.tight_layout()
 
 plt.show()
-````
-This results in the following graph:
 
-![](Examples/CompaniesPerSectorInTheNetherlands.png)
+````
+This results in the following graph which gives an indication which sectors are dominant within The Netherlands. 
+Of course this is a mere example and to truly understand the importance of certain companies for the Netherlands, 
+an in-depth analysis must be done.
+
+![FinanceDatabase](Examples/CompaniesPerSectorInTheNetherlands.png)
 
 ### United States' Airlines
 If I wish to obtain all companies within the United States listed under 'Airlines' I can write the 

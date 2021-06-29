@@ -1,7 +1,6 @@
 import FinanceDatabase as fd
 import matplotlib.pyplot as plt
 
-
 # Obtain all countries from the database
 equities_countries = fd.show_options('equities', 'countries')
 
@@ -24,7 +23,10 @@ for sector in equities_sectors[1:]:  # I skip the first sector since it means 'N
 
 legend, values = zip(*equities_per_sector_netherlands.items())
 
-plt.pie(values, labels=legend)
+colors = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'tab:blue', 'tab:orange', 'tab:gray',
+          'lightcoral', 'yellow', 'saddlebrown', 'lightblue', 'olive']
+plt.pie(values, labels=legend, colors=colors,
+        wedgeprops={'linewidth': 0.5, 'edgecolor': 'white'})
 plt.title('Companies per sector in the Netherlands')
 plt.tight_layout()
 
