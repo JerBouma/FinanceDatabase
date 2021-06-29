@@ -44,16 +44,33 @@ Some key statistics of the database:
 \** This is an estimation. Obtaining the country distribution can only be done by collecting data on the underlying 
 or by manual search.
 
-## Usage
+## Table of Contents
+
+1. [Using the Database](#using-the-database)
+    1. [Installation](#installation)
+    2. [Functions](#functions)
+    3. [Advanced Usage](#advanced-usage)
+2. [Examples](#examples)
+    1. [Companies per Sector in the Netherlands](#companies-per-sector-in-the-netherlands)
+    2. [United States' Airlines](#united-states-airlines)
+    3. [Silicon Valley's Market Cap](#silicon-valleys-market-cap)
+    4. [DEGIRO's Core Selection ETFs](#core-selection-etfs)
+3. [Questions & Answers](#qa)
+4. [Contribution](#contribution)
+
+
+## Using the Database
 To access the database you can download the entire repository, but I strongly recommend making use of the package 
 closely attached to the database. It allows you to select specific json files as well as search through collected
 data with a specific query.
 
+### Installation
 You can install the package with the following steps:
 1. `pip install FinanceDatabase`
     - Alternatively, download the 'Searcher' directory.
 2. (within Python) `import FinanceDatabase as fd`
 
+### Functions
 The package has the following functions:
 - `show_options(product, equities_selection=None)` - gives all available options from the functions below per 
   product (i.e. Equities, Funds) which then can be used to collect data. You can select a sub selection of 
@@ -77,14 +94,6 @@ specific market which usually refers to moneymarkets in a specific country.
   one of the keys of the dictionary (which is by default the summary). It also has the option to enable 
   case-sensitive searching which is off by default.
   
-If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
-`base_url` which you can find in each of the above 'select' functions. An example would be:
-- `select_funds(category='Africa Equity', base_url=<YOUR URL>)`
-
-You can also store the database locally and point to your local location with the variable `base_url` and by setting
-`use_local_location` to True. An example would be:
-- `select_etfs(category='Bank Loan', base_url='C:/Users/jerbo/FinanceDatabase/Database/ETFs/', use_local_location=True)`
-  
 For users of the broker **DeGiro**, you are able to find data on the tickers found in the 
 [Commission Free ETFs](https://www.degiro.ie/data/pdf/ie/commission-free-etfs-list.pdf) list by selecting either 
 `core_selection_degiro_filled` (all data) or `core_selection_degiro_filtered` (filtered by summary) as category 
@@ -93,6 +102,15 @@ when using the function `select_etfs`.
 For additional information about each function you can use the build-in help function of Python. For 
 example `help(show_options)` returns a general description, the possible input parameters and what is returned 
 as output.
+  
+### Advanced Usage
+If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
+`base_url` which you can find in each of the above 'select' functions. An example would be:
+- `select_funds(category='Africa Equity', base_url=<YOUR URL>)`
+
+You can also store the database locally and point to your local location with the variable `base_url` and by setting
+`use_local_location` to True. An example would be:
+- `select_etfs(category='Bank Loan', base_url='C:/Users/jerbo/FinanceDatabase/Database/ETFs/', use_local_location=True)`
 
 ## Examples
 This section gives a few examples of the possibilities with this package. These are merely a few of the things you
@@ -292,13 +310,19 @@ get an indication whether the ETF is what you are looking for.
 
 ![ThePassiveInvestor](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/ThePassiveInvestor_GIF.gif)
 
-## Q&A
+## Questions & Answers
+In this section you can find answers to commonly asked questions. In case the answer to your question is not here, 
+consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues).
 
 - **How did you get your data?**
     - Please check the [Methodology](https://github.com/JerBouma/FinanceDatabase/tree/master/Methodology).
 - **Is there support for <insert_country>?**
     - Yes, most likely there is as the database includes 111 countries. Please check 
     [here](https://github.com/JerBouma/FinanceDatabase/tree/master/Database/Equities/Countries).
+- **How can I find out which countries, sectors and/or industries exists within the database without needing to check 
+  the database manually?**
+    - For this you can use the ``show_options`` function from the package attached to this database. Please see 
+    [this example](#companies-per-sector-in-the-netherlands)
 - **When I collect data via yfinance I notice that not all tickers return output, why is that?**
     - Some tickers are merely holdings of companies and therefore do not really have any data attached to them. 
       Therefore, it makes sense that not all tickers return data. If you are still in doubt, search the ticker on 
