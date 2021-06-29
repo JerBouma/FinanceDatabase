@@ -1,10 +1,10 @@
-![](Examples/FinanceDatabaseCropped.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/FinanceDatabaseCropped.png)
 
-[![](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-brightgreen?logo=buymeacoffee)](https://www.buymeacoffee.com/jerbouma)
-[![](https://img.shields.io/github/issues/jerbouma/financedatabase)](https://github.com/JerBouma/FinanceDatabase/issues)
-[![](https://img.shields.io/github/issues-pr/JerBouma/FinanceDatabase?color=yellow)](https://github.com/JerBouma/FinanceDatabase/pulls)
-[![](https://img.shields.io/pypi/v/FinanceDatabase)](https://pypi.org/project/FinanceDatabase/)
-[![](https://img.shields.io/pypi/dm/FinanceDatabase)](https://pypi.org/project/FinanceDatabase/)
+[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-brightgreen?logo=buymeacoffee)](https://www.buymeacoffee.com/jerbouma)
+[![Issues](https://img.shields.io/github/issues/jerbouma/financedatabase)](https://github.com/JerBouma/FinanceDatabase/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/JerBouma/FinanceDatabase?color=yellow)](https://github.com/JerBouma/FinanceDatabase/pulls)
+[![PYPI Version](https://img.shields.io/pypi/v/FinanceDatabase)](https://pypi.org/project/FinanceDatabase/)
+[![PYPI Downloads](https://img.shields.io/pypi/dm/FinanceDatabase)](https://pypi.org/project/FinanceDatabase/)
 
 As a private investor, the sheer amount of information that can be found on the internet is rather daunting. Trying to 
 understand what type of companies or ETFs are available is incredibly challenging with there being millions of
@@ -122,7 +122,7 @@ equities_all_categories = fd.show_options('equities')
 ````
 This gives the following lists (where  ```equities_all_categories``` is a dictionary with these three lists):
 
-![](Examples/CountriesSectorsIndustries.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/CountriesSectorsIndustries.png)
 
 Then, I want to see how many companies exist in each sector in the Netherlands. Let's count all companies with the 
 following code, I skip a sector when it has no data and also do not include companies that are not categorized:
@@ -153,7 +153,7 @@ This results in the following graph which gives an indication which sectors are 
 Of course this is a mere example and to truly understand the importance of certain companies for the Netherlands, 
 an in-depth analysis must be done.
 
-![FinanceDatabase](Examples/CompaniesPerSectorInTheNetherlands.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/CompaniesPerSectorInTheNetherlands.png)
 
 ### United States' Airlines
 If I wish to obtain all companies within the United States listed under 'Airlines' I can write the 
@@ -198,7 +198,7 @@ companies that currently lack enough assets to cover their liabilities (quick ra
 enough assets (quick ratio > 1). Both too low and too high could make you wonder whether the company adequately 
 manages its assets.
 
-![FinanceDatabase](Examples/United_States_Airlines_QuickRatio.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/United_States_Airlines_QuickRatio.png)
 
 ### Silicon Valley's Market Cap
 If I want to understand which listed technology companies exist in Silicon Valley, I can collect all equities of 
@@ -254,7 +254,7 @@ This results in the graph displayed below which separates the small companies fr
 this does not include _all_ technology companies in Silicon Valley because most are not listed or are not included 
 in the database of the FundamentalAnalysis package.
 
-![FinanceDatabase](Examples/Silicon_Valley_Technology_MarketCap.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/Silicon_Valley_Technology_MarketCap.png)
 
 ### Core Selection ETFs
 Sometimes, Excel simply offers the best solution if you want compare a range of ETFs quickly. Therefore, another 
@@ -279,25 +279,25 @@ tickers.to_excel('core_selection_tickers.xlsx', index=None, header=None)
 If you open the Excel file created you see the following lay-out (which corresponds to the lay-out accepted 
 by the program):
 
-![ThePassiveInvestor](Examples/ThePassiveInvestor_Excel.PNG)
+![ThePassiveInvestor](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/ThePassiveInvestor_Excel.PNG)
 
 Then I open ThePassiveInvestor program and use the Excel as input. The first input is the Excel that you want to 
 be filled with input from your tickers (created by the program). The second input is the file you created above.
 
-![ThePassiveInvestor](Examples/ThePassiveInvestor_Program.PNG)
+![ThePassiveInvestor](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/ThePassiveInvestor_Program.PNG)
 
 When you run the program it starts collecting data on each ticker and fills the Excel with data. After the program 
 is finished you are able to find an Excel that looks very much like the GIF you see below. With this data you can 
 get an indication whether the ETF is what you are looking for.
 
-![ThePassiveInvestor](Examples/ThePassiveInvestor_GIF.gif)
+![ThePassiveInvestor](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/ThePassiveInvestor_GIF.gif)
 
 ## Q&A
 
 - **How did you get your data?**
     - Please check the [Methodology](https://github.com/JerBouma/FinanceDatabase/tree/master/Methodology).
 - **Is there support for <insert_country>?**
-    - Yes, most likely there is as the database includes 109 countries. Please check 
+    - Yes, most likely there is as the database includes 111 countries. Please check 
     [here](https://github.com/JerBouma/FinanceDatabase/tree/master/Database/Equities/Countries).
 - **When I collect data via yfinance I notice that not all tickers return output, why is that?**
     - Some tickers are merely holdings of companies and therefore do not really have any data attached to them. 
