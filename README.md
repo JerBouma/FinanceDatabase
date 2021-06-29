@@ -55,7 +55,7 @@ or by manual search.
     2. [United States' Airlines](#united-states-airlines)
     3. [Silicon Valley's Market Cap](#silicon-valleys-market-cap)
     4. [DEGIRO's Core Selection ETFs](#core-selection-etfs)
-3. [Questions & Answers](#qa)
+3. [Questions & Answers](#questions--answers)
 4. [Contribution](#contribution)
 
 
