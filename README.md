@@ -176,8 +176,9 @@ an in-depth analysis must be done.
 
 ### Technical Analysis of Biotech ETFs
 With the help of [ta](https://github.com/bukosabino/ta) and [yfinance](https://github.com/ranaroussi/yfinance) I can 
-quickly perform a basis technical analysis on a group of ETFs categorized by the FinanceDatabase. I start with 
-searching the database for ETFs related to Health and then search the collected tickers for biotech-related ETFs:
+quickly perform a basic technical analysis on a group of ETFs categorized by the FinanceDatabase. I start by 
+searching the database for ETFs related to Health and then make a subselection by searching, in the collected database, 
+for biotech-related ETFs:
 
 ````
 import FinanceDatabase as fd
@@ -186,7 +187,7 @@ health_etfs = fd.select_etfs(category='Health')
 health_etfs_in_biotech = fd.search_products(health_etfs, 'biotech')
 ````
 
-Then I collect stock data on each ticker and remove tickers that have no data in my chosen period. The period I have 
+Then, I collect stock data on each ticker and remove tickers that have no data in my chosen period. The period I have 
 chosen shows the initial impact of the Coronacrisis on the financial markets.
 
 ````
@@ -197,7 +198,8 @@ stock_data_biotech = stock_data_biotech.dropna(axis='columns')
 ````
 
 Next up I initialise subplots and loop over all collected tickers. Here, I create a new temporary DataFrame that I fill 
-with the adjusted close price of the ticker as well as the Bollinger Bands. Then I plot the data in one of the subplots.
+with the adjusted close prices of the ticker as well as the Bollinger Bands. Then I plot the data in one of 
+the subplots.
 
 ````
 import pandas as pd
@@ -231,8 +233,9 @@ figure.suptitle('Technical Analysis of Biotech ETFs during Coronacrisis')
 figure.tight_layout()
 ````
 
-This then leads to the following graph which gives an indication wether Biotech ETFs were oversold or overbought and 
-how this effect is neutralised (to some degree) in the months after.
+This leads to the following graph which gives an indication wether Biotech ETFs were oversold or overbought and 
+how this effect is neutralised (to some degree) in the months after. Read more 
+about [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp) here.
 
 ![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/Technical_Analysis_Biotech_Companies_Coronacrisis.png)
 
