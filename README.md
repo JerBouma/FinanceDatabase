@@ -385,7 +385,7 @@ consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues)
 - **How can I find out which countries, sectors and/or industries exists within the database without needing to check 
   the database manually?**
     - For this you can use the ``show_options`` function from the package attached to this database. Please see 
-    [this example](#companies-per-sector-in-the-netherlands)
+    [this example](#companies-in-the-netherlands)
 - **When I collect data via yfinance I notice that not all tickers return output, why is that?**
     - Some tickers are merely holdings of companies and therefore do not really have any data attached to them. 
       Therefore, it makes sense that not all tickers return data. If you are still in doubt, search the ticker on 
