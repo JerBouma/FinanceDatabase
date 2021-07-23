@@ -51,10 +51,11 @@ or by manual search.
     2. [Functions](#functions)
     3. [Advanced Usage](#advanced-usage)
 2. [Examples](#examples)
-    1. [Companies per Sector in the Netherlands](#companies-per-sector-in-the-netherlands)
-    2. [United States' Airlines](#united-states-airlines)
-    3. [Silicon Valley's Market Cap](#silicon-valleys-market-cap)
-    4. [DEGIRO's Core Selection ETFs](#core-selection-etfs)
+    1. [Companies in the Netherlands](#companies-in-the-netherlands)
+    2. [Technical Analysis of Biotech ETFs](#technical-analysis-of-biotech-etfs)
+    3. [United States' Airlines](#united-states-airlines)
+    4. [Silicon Valley's Market Cap](#silicon-valleys-market-cap)
+    5. [DEGIRO's Core Selection ETFs](#core-selection-etfs)
 3. [Questions & Answers](#questions--answers)
 4. [Contribution](#contribution)
 
@@ -117,7 +118,7 @@ This section gives a few examples of the possibilities with this package. These 
 can do with the package. **As you can obtain a wide range of symbols, pretty much any 
 package that requires symbols should work.**
 
-### Companies per Sector in the Netherlands
+### Companies in the Netherlands
 Understanding which sectors exist in a country can be interesting. Not only to understand the focus of the country but 
 also to understand which area holds the most data. This is a demonstration of the ```show_options``` function. 
 A function crucial to querying data from the Database.
@@ -172,6 +173,63 @@ Of course this is a mere example and to truly understand the importance of certa
 an in-depth analysis must be done.
 
 ![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/CompaniesPerSectorInTheNetherlands.png)
+
+### Technical Analysis of Biotech ETFs
+With the help of [ta](https://github.com/bukosabino/ta) and [yfinance](https://github.com/ranaroussi/yfinance) I can 
+quickly perform a basis technical analysis on a group of ETFs categorized by the FinanceDatabase. I start with 
+searching the database for ETFs related to Health and then search the collected tickers for biotech-related ETFs:
+
+````
+import FinanceDatabase as fd
+
+health_etfs = fd.select_etfs(category='Health')
+health_etfs_in_biotech = fd.search_products(health_etfs, 'biotech')
+````
+
+Then I collect stock data on each ticker and remove tickers that have no data in my chosen period. The period I have 
+chosen shows the initial impact of the Coronacrisis on the financial markets.
+
+````
+stock_data_biotech = yf.download(list(health_etfs_in_biotech.keys()), start="2020-01-01", end="2020-06-01")['Adj Close']
+stock_data_biotech = stock_data_biotech.dropna(axis='columns')
+````
+
+Next up I initialise subplots and loop over all collected tickers. Here, I create a new temporary DataFrame that I fill 
+with the adjusted close price of the ticker as well as the Bollinger Bands. Then I plot the data in one of the subplots.
+
+````
+figure, axis = plt.subplots(4, 3)
+row = 0
+column = 0
+
+for ticker in stock_data_biotech.columns:
+    # Initalise the DataFrame
+    data_plot = pd.DataFrame(stock_data_biotech[ticker])
+
+    indicator_bb = BollingerBands(close=stock_data_biotech[ticker], window=20, window_dev=2)
+
+    data_plot['bb_bbm'] = indicator_bb.bollinger_mavg()
+    data_plot['bb_bbh'] = indicator_bb.bollinger_hband()
+    data_plot['bb_bbl'] = indicator_bb.bollinger_lband()
+
+    axis[row, column].plot(data_plot)
+    axis[row, column].set_title(health_etfs_in_biotech[ticker]['long_name'], fontsize=6)
+    axis[row, column].set_xticks([])
+    axis[row, column].set_yticks([])
+
+    column += 1
+    if column == 3:
+        row += 1
+        column = 0
+        
+figure.suptitle('Technical Analysis of Biotech ETFs during Coronacrisis')
+figure.tight_layout()
+````
+
+This then leads to the following graph which gives an indication wether Biotech ETFs were oversold or overbought and 
+how this effect is neutralised (to some degree) in the months after.
+
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/Technical_Analysis_Biotech_Companies_Coronacrisis.png)
 
 ### United States' Airlines
 If I wish to obtain all companies within the United States listed under 'Airlines' I can write the 
