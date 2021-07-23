@@ -27,7 +27,7 @@ colors = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'tab:blue', 'tab:orange', 'tab:gray
           'lightcoral', 'yellow', 'saddlebrown', 'lightblue', 'olive']
 plt.pie(values, labels=legend, colors=colors,
         wedgeprops={'linewidth': 0.5, 'edgecolor': 'white'})
-plt.title('Companies per sector in the Netherlands')
+plt.title('Companies in the Netherlands')
 plt.tight_layout()
 
 plt.show()
