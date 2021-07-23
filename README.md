@@ -190,6 +190,8 @@ Then I collect stock data on each ticker and remove tickers that have no data in
 chosen shows the initial impact of the Coronacrisis on the financial markets.
 
 ````
+import yfinance as yf
+
 stock_data_biotech = yf.download(list(health_etfs_in_biotech.keys()), start="2020-01-01", end="2020-06-01")['Adj Close']
 stock_data_biotech = stock_data_biotech.dropna(axis='columns')
 ````
@@ -198,12 +200,15 @@ Next up I initialise subplots and loop over all collected tickers. Here, I creat
 with the adjusted close price of the ticker as well as the Bollinger Bands. Then I plot the data in one of the subplots.
 
 ````
+import pandas as pd
+from ta.volatility import BollingerBands
+import matplotlib.pyplot as plt
+
 figure, axis = plt.subplots(4, 3)
 row = 0
 column = 0
 
 for ticker in stock_data_biotech.columns:
-    # Initalise the DataFrame
     data_plot = pd.DataFrame(stock_data_biotech[ticker])
 
     indicator_bb = BollingerBands(close=stock_data_biotech[ticker], window=20, window_dev=2)
