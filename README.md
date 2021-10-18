@@ -19,7 +19,7 @@ industries, types of investments and much more.
 The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data as those can be obtained 
 with ease (with the help of this database) by using [yfinance](https://github.com/ranaroussi/yfinance), 
 [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) or 
-[ThePassiveInvestor](https://github.com/JerBouma/ThePassiveInvestor).  Instead, it gives insights into the products 
+[ThePassiveInvestor](https://github.com/JerBouma/ThePassiveInvestor). Instead, it gives insights into the products 
 that exist in each country, industry and sector and gives the most essential information about each product. With 
 this information, you can analyse specific areas of the financial world and/or find a product that is hard to find. 
 See for examples on how you can combine this database, and the earlier mentioned packages the section 
@@ -99,6 +99,9 @@ For users of the broker **DeGiro**, you are able to find data on the tickers fou
 [Commission Free ETFs](https://www.degiro.ie/data/pdf/ie/commission-free-etfs-list.pdf) list by selecting either 
 `core_selection_degiro_filled` (all data) or `core_selection_degiro_filtered` (filtered by summary) as category 
 when using the function `select_etfs`.
+
+By default, exchanges are not included in the selection functions. Therefore, the amount of data returned is less 
+than depicted in the key statistics. If you wish to include all exchanges, please set `exclude_exchanges` to `False`.
 
 For additional information about each function you can use the build-in help function of Python. For 
 example `help(show_options)` returns a general description, the possible input parameters and what is returned 
@@ -277,7 +280,7 @@ for symbol in airlines_us_fundamentals:
 plt.tight_layout()
 plt.show()
 ``````
-Which results in the graph displayed below (as of the 14th of June 2021). From this graph you can identify 
+Which results in the graph displayed below (as of the 18th of October 2021). From this graph you can identify 
 companies that currently lack enough assets to cover their liabilities (quick ratio < 1), and those that do have 
 enough assets (quick ratio > 1). Both too low and too high could make you wonder whether the company adequately 
 manages its assets.
@@ -287,17 +290,12 @@ manages its assets.
 ### Silicon Valley's Market Cap
 If I want to understand which listed technology companies exist in Silicon Valley, I can collect all equities of 
 the sector 'Technology' and then filter based on city to obtain all listed technology companies in 'Silicon Valley'. 
-The city 'San Jose' is where Silicon Valley is located. I remove all tickers with a dot since they refer to 
-different markets.
+The city 'San Jose' is where Silicon Valley is located.
 ````
 import FinanceDatabase as fd
 
 all_technology_companies = fd.select_equities(sector='Technology')
 silicon_valley = fd.search_products(all_technology_companies, query='San Jose', search='city')
-
-for ticker in silicon_valley.copy():
-    if '.' in ticker:
-        del silicon_valley[ticker]
 ````
 Then I start collecting data with the [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) package. 
 Here I collect the key metrics which include 57 different metrics (ranging from PE ratios to Market Cap).
@@ -407,7 +405,7 @@ consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues)
 Projects are bound to have (small) errors and can always be improved. Therefore, I highly encourage you to submit 
 issues and create pull requests to improve the package.
 
-The last update to the database is the 14th of June 2021. I always accept Pull Requests every few months 
+The last update to the database is the 18th of October 2021. I always accept Pull Requests every few months 
 to keep the database up to date. Extending the amount of tickers and data is also much appreciated. When you wish to do 
 this, please inform me first to prevent multiple users doing the exact same thing.
 
