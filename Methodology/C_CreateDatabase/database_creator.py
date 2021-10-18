@@ -40,7 +40,7 @@ for folder in naming:
     except FileExistsError:
         None
 
-    if item == 'Cryptocurrencies':
+    if folder == 'Cryptocurrencies':
         print("Creating cryptocurrencies options..")
         cryptocurrencies = []
         for symbol in tqdm(data_set):
@@ -53,7 +53,7 @@ for folder in naming:
             cryptocurrencies.remove(None)
         with open("Categories/cryptocurrencies_options.json", 'w') as handle:
             json.dump(sorted(cryptocurrencies), handle, indent=4)
-    elif item == 'Currencies':
+    elif folder == 'Currencies':
         print("Creating currencies options..")
         currencies = []
         for symbol in tqdm(data_set):
@@ -66,7 +66,7 @@ for folder in naming:
             currencies.remove(None)
         with open("Categories/currencies_options.json", 'w') as handle:
             json.dump(sorted(currencies), handle, indent=4)
-    elif item == 'Equities':
+    elif folder == 'Equities':
         print("Creating equities countries, sectors and industries..")
         countries = []
         sectors = []
@@ -92,7 +92,7 @@ for folder in naming:
             json.dump(sorted(sectors), handle, indent=4)
         with open("Categories/equities_industries.json", 'w') as handle:
             json.dump(sorted(industries), handle, indent=4)
-    elif item == 'ETFs':
+    elif folder == 'ETFs':
         print("Creating etfs categories..")
         etfs = []
         for symbol in tqdm(data_set):
@@ -105,7 +105,7 @@ for folder in naming:
             etfs.remove(None)
         with open("Categories/etfs_options.json", 'w') as handle:
             json.dump(sorted(etfs), handle, indent=4)
-    elif item == 'Funds':
+    elif folder == 'Funds':
         print("Creating funds options..")
         funds = []
         for symbol in tqdm(data_set):
