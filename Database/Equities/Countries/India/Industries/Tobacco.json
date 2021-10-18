@@ -9,7 +9,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "New Delhi"
+        "state": null,
+        "city": "New Delhi",
+        "zipcode": "110025",
+        "website": "http://www.godfreyphillips.com",
+        "full_time_employees": 1016
     },
     "ITC.NS": {
         "short_name": "ITC LTD",
@@ -21,7 +25,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Kolkata"
+        "state": null,
+        "city": "Kolkata",
+        "zipcode": "700071",
+        "website": "http://www.itcportal.com",
+        "full_time_employees": 28115
     },
     "VSTIND.NS": {
         "short_name": "VST INDUSTRIES",
@@ -33,6 +41,10 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Hyderabad"
+        "state": null,
+        "city": "Hyderabad",
+        "zipcode": "500020",
+        "website": "http://www.vsthyd.com",
+        "full_time_employees": null
     }
 }

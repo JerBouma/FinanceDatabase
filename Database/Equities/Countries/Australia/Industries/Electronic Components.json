@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Surry Hills"
+        "state": "NSW",
+        "city": "Surry Hills",
+        "zipcode": "2010",
+        "website": "http://www.audinate.com",
+        "full_time_employees": 123
     },
     "AUDGF": {
         "short_name": "AUDINATE GROUP LIMITED",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Surry Hills"
+        "state": "NSW",
+        "city": "Surry Hills",
+        "zipcode": "2010",
+        "website": "http://www.audinate.com",
+        "full_time_employees": 123
     },
     "CPX.L": {
         "short_name": "CAP-XX LIMITED ORD NPV",
@@ -33,6 +41,10 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Australia",
-        "city": "Seven Hills"
+        "state": "NSW",
+        "city": "Seven Hills",
+        "zipcode": "2147",
+        "website": "http://www.cap-xx.com",
+        "full_time_employees": null
     }
 }

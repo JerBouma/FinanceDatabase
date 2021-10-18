@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Czech Republic",
-        "city": "Prague"
+        "state": null,
+        "city": "Prague",
+        "zipcode": "140 53",
+        "website": "http://www.cez.cz",
+        "full_time_employees": 31704
     },
     "CEZ.PR": {
         "short_name": "CEZ",
@@ -21,7 +25,11 @@
         "exchange": "PRA",
         "market": "cz_market",
         "country": "Czech Republic",
-        "city": "Prague"
+        "state": null,
+        "city": "Prague",
+        "zipcode": "140 53",
+        "website": "http://www.cez.cz",
+        "full_time_employees": 30700
     },
     "CZAVF": {
         "short_name": "CEZ",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Czech Republic",
-        "city": "Prague"
+        "state": null,
+        "city": "Prague",
+        "zipcode": "140 53",
+        "website": "http://www.cez.cz",
+        "full_time_employees": 30700
     },
     "ENRGA.PR": {
         "short_name": "ENERGOAQUA",
@@ -45,6 +57,10 @@
         "exchange": "PRA",
         "market": "cz_market",
         "country": "Czech Republic",
-        "city": "Roznov pod Radhostem"
+        "state": null,
+        "city": "Roznov pod Radhostem",
+        "zipcode": "756 61",
+        "website": "http://www.energoaqua.cz",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "6581603",
+        "website": null,
+        "full_time_employees": 4254
     },
     "ELSPC.TA": {
         "short_name": "ELSPEC ENGINEERING",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Caesarea"
+        "state": null,
+        "city": "Caesarea",
+        "zipcode": null,
+        "website": "http://www.elspec-ltd.com",
+        "full_time_employees": 3119
     },
     "MNGN.TA": {
         "short_name": "MIN HAGOREN DEV",
@@ -33,7 +41,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Jerusalem"
+        "state": null,
+        "city": "Jerusalem",
+        "zipcode": "9777517",
+        "website": "http://gorendev.co.il",
+        "full_time_employees": null
     },
     "PAYT.TA": {
         "short_name": "PAYTON INDUSTRIES",
@@ -45,6 +57,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Ness Ziona"
+        "state": null,
+        "city": "Ness Ziona",
+        "zipcode": "7403128",
+        "website": "http://www.payton.co.il",
+        "full_time_employees": 202
     }
 }

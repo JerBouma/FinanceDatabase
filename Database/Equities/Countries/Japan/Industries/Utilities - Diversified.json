@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Nagoya"
+        "state": null,
+        "city": "Nagoya",
+        "zipcode": "461-8680",
+        "website": "http://www.chuden.co.jp",
+        "full_time_employees": null
     },
     "2CJ.F": {
         "short_name": "KYUSHU EL. PWR",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Fukuoka City"
+        "state": null,
+        "city": "Fukuoka City",
+        "zipcode": "810-8720",
+        "website": "http://www.kyuden.co.jp",
+        "full_time_employees": null
     },
     "3825.T": {
         "short_name": "REMIXPOINT INC",
@@ -33,7 +41,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "106-6236",
+        "website": "http://www.remixpoint.co.jp",
+        "full_time_employees": 151
     },
     "9502.T": {
         "short_name": "CHUBU ELECTRIC POWER CO INC",
@@ -45,7 +57,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Nagoya"
+        "state": null,
+        "city": "Nagoya",
+        "zipcode": "461-8680",
+        "website": "http://www.chuden.co.jp",
+        "full_time_employees": null
     },
     "9508.T": {
         "short_name": "KYUSHU ELECTRIC POWER CO INC",
@@ -57,7 +73,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Fukuoka City"
+        "state": null,
+        "city": "Fukuoka City",
+        "zipcode": "810-8720",
+        "website": "http://www.kyuden.co.jp",
+        "full_time_employees": null
     },
     "RPC.SG": {
         "short_name": "Remixpoint Inc. Registered Shar",
@@ -69,6 +89,10 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "106-6236",
+        "website": "http://www.remixpoint.co.jp",
+        "full_time_employees": 151
     }
 }

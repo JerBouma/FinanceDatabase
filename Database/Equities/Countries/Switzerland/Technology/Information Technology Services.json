@@ -9,7 +9,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Zurich"
+        "state": null,
+        "city": "Zurich",
+        "zipcode": "8002",
+        "website": "http://www.achiko.com",
+        "full_time_employees": null
     },
     "ACHKF": {
         "short_name": "ACHIKO AG",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Zurich"
+        "state": null,
+        "city": "Zurich",
+        "zipcode": "8002",
+        "website": "http://www.achiko.com",
+        "full_time_employees": null
     },
     "ALSN.SW": {
         "short_name": "ALSO N",
@@ -33,7 +41,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Emmen"
+        "state": null,
+        "city": "Emmen",
+        "zipcode": "6032",
+        "website": "http://www.also.com",
+        "full_time_employees": 3714
     },
     "GB": {
         "short_name": "Global Blue Group Holding AG",
@@ -45,7 +57,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Wangen-Br\u00c3\u00bcttisellen"
+        "state": null,
+        "city": "Wangen-Br\u00c3\u00bcttisellen",
+        "zipcode": "8306",
+        "website": "http://www.globalblue.com",
+        "full_time_employees": 2050
     },
     "NTIV.SW": {
         "short_name": "The Native SA",
@@ -57,6 +73,10 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Basel"
+        "state": null,
+        "city": "Basel",
+        "zipcode": "4001",
+        "website": "http://www.thenative.ch",
+        "full_time_employees": 10
     }
 }

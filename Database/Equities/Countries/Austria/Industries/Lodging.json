@@ -9,7 +9,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1210",
+        "website": "http://www.warimpex.com",
+        "full_time_employees": 58
     },
     "WFS.F": {
         "short_name": "WARIMPEX FIN.U.BETEIL. AG",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1210",
+        "website": "http://www.warimpex.com",
+        "full_time_employees": 58
     },
     "WXF.VI": {
         "short_name": "WARIMPEX FINANZ- UND BET. AG",
@@ -33,6 +41,10 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1210",
+        "website": "http://www.warimpex.com",
+        "full_time_employees": 58
     }
 }

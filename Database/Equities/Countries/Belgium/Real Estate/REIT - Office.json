@@ -9,7 +9,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1160",
+        "website": "http://www.befimmo.be",
+        "full_time_employees": 106
     },
     "L3R.F": {
         "short_name": "LEASINVEST REAL ESTATE",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.leasinvest.be",
+        "full_time_employees": null
     },
     "LEAS.BR": {
         "short_name": "LEASINVEST",
@@ -33,7 +41,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.leasinvest.be",
+        "full_time_employees": null
     },
     "VJ6.F": {
         "short_name": "BEFIMMO S.A.",
@@ -45,6 +57,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1160",
+        "website": "http://www.befimmo.be",
+        "full_time_employees": 106
     }
 }

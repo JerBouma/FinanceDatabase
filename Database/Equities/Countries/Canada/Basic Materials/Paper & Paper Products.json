@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H3C 2M1",
+        "website": "http://www.resolutefp.com",
+        "full_time_employees": 7100
     },
     "8CP.F": {
         "short_name": "CANFOR PULP PRODUCTS INC.",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6P 6G2",
+        "website": "http://www.canfor.com",
+        "full_time_employees": 1278
     },
     "AEZ.F": {
         "short_name": "MERCER INTL INC.  DL 1",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6C 1G8",
+        "website": "http://www.mercerint.com",
+        "full_time_employees": 2375
     },
     "CADNF": {
         "short_name": "CASCADES INC",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Kingsey Falls"
+        "state": "QC",
+        "city": "Kingsey Falls",
+        "zipcode": "J0A 1B0",
+        "website": "http://www.cascades.com",
+        "full_time_employees": 11700
     },
     "CAS.TO": {
         "short_name": "CASCADES INC",
@@ -57,7 +73,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Kingsey Falls"
+        "state": "QC",
+        "city": "Kingsey Falls",
+        "zipcode": "J0A 1B0",
+        "website": "http://www.cascades.com",
+        "full_time_employees": 11700
     },
     "CFX.TO": {
         "short_name": "CANFOR PULP PRODUCTS INC.",
@@ -69,7 +89,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6P 6G2",
+        "website": "http://www.canfor.com",
+        "full_time_employees": 1278
     },
     "CS6.F": {
         "short_name": "CASCADES INC.",
@@ -81,7 +105,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Kingsey Falls"
+        "state": "QC",
+        "city": "Kingsey Falls",
+        "zipcode": "J0A 1B0",
+        "website": "http://www.cascades.com",
+        "full_time_employees": 11700
     },
     "MERC": {
         "short_name": "Mercer International Inc.",
@@ -93,7 +121,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6C 1G8",
+        "website": "http://www.mercerint.com",
+        "full_time_employees": 2375
     },
     "RFP": {
         "short_name": "Resolute Forest Products Inc.",
@@ -105,7 +137,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H3C 2M1",
+        "website": "http://www.resolutefp.com",
+        "full_time_employees": 7100
     },
     "RFP.TO": {
         "short_name": "RESOLUTE FOREST PRODUCTS INC",
@@ -117,7 +153,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H3C 2M1",
+        "website": "http://www.resolutefp.com",
+        "full_time_employees": 7100
     },
     "WBE.V": {
         "short_name": "WestBond Enterprises Corporatio",
@@ -129,7 +169,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Delta"
+        "state": "BC",
+        "city": "Delta",
+        "zipcode": "V4G 1E7",
+        "website": "http://www.westbond.ca",
+        "full_time_employees": null
     },
     "WBNEF": {
         "short_name": "WESTBOND ENTERPRISES CORP",
@@ -141,6 +185,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Delta"
+        "state": "BC",
+        "city": "Delta",
+        "zipcode": "V4G 1E7",
+        "website": "http://www.westbond.ca",
+        "full_time_employees": null
     }
 }

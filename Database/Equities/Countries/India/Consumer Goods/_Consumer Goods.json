@@ -9,7 +9,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Chennai"
+        "state": null,
+        "city": "Chennai",
+        "zipcode": "600006",
+        "website": "http://www.haritaseating.com",
+        "full_time_employees": 341
     },
     "PRABHAT.BO": {
         "short_name": "Prabhat Dairy Limited",
@@ -21,7 +25,11 @@
         "exchange": "BSE",
         "market": "in_market",
         "country": "India",
-        "city": "Ahmednagar"
+        "state": null,
+        "city": "Ahmednagar",
+        "zipcode": "413720",
+        "website": "http://www.prabhat-india.in",
+        "full_time_employees": 56
     },
     "TTMN.MX": {
         "short_name": "TATA MOTORS LIMITED",
@@ -33,6 +41,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400093",
+        "website": "http://www.tatamotors.com",
+        "full_time_employees": 78906
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "LIT",
         "market": "vs_market",
         "country": "Lithuania",
-        "city": "Vilnius"
+        "state": null,
+        "city": "Vilnius",
+        "zipcode": "03116",
+        "website": "http://www.ambergrid.lt",
+        "full_time_employees": 328
     },
     "KNF1L.VS": {
         "short_name": "Klaipedos Nafta",
@@ -21,7 +25,11 @@
         "exchange": "LIT",
         "market": "vs_market",
         "country": "Lithuania",
-        "city": "Klaipeda"
+        "state": null,
+        "city": "Klaipeda",
+        "zipcode": "92276",
+        "website": "http://www.kn.lt",
+        "full_time_employees": 406
     },
     "XIC.F": {
         "short_name": "KLAIPEDOS NAFTA AB EO0,29",
@@ -33,6 +41,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Lithuania",
-        "city": "Klaipeda"
+        "state": null,
+        "city": "Klaipeda",
+        "zipcode": "92276",
+        "website": "http://www.kn.lt",
+        "full_time_employees": 406
     }
 }

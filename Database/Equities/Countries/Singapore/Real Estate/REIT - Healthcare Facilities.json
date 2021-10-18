@@ -9,7 +9,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "49321",
+        "website": "http://www.first-reit.com",
+        "full_time_employees": null
     },
     "C2PU.SI": {
         "short_name": "ParkwayLife Reit",
@@ -21,7 +25,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "068898",
+        "website": "http://www.plifereit.com",
+        "full_time_employees": null
     },
     "FESNF": {
         "short_name": "FIRST REIT",
@@ -33,6 +41,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "49321",
+        "website": "http://www.first-reit.com",
+        "full_time_employees": null
     }
 }

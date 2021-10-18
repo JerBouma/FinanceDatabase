@@ -9,7 +9,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Antwerpen"
+        "state": null,
+        "city": "Antwerpen",
+        "zipcode": "2030",
+        "website": "http://www.accentis.com",
+        "full_time_employees": null
     },
     "ALZR11.SA": {
         "short_name": "FII ALIANZA CI  ES",
@@ -21,7 +25,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "ASTAK.AT": {
         "short_name": "ALPHA ASTIKA AKINHTA S.A. (CR)",
@@ -33,7 +41,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "105 64",
+        "website": "http://www.astikaakinita.gr",
+        "full_time_employees": 141
     },
     "KAMP.AT": {
         "short_name": "REDS S.A.",
@@ -45,7 +57,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Spata"
+        "state": null,
+        "city": "Spata",
+        "zipcode": "190 04",
+        "website": "http://www.reds.gr",
+        "full_time_employees": 23
     },
     "KEKR.AT": {
         "short_name": "Kekrops Hotel Tourist. Build",
@@ -57,6 +73,10 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Psychiko"
+        "state": null,
+        "city": "Psychiko",
+        "zipcode": "154 52",
+        "website": "http://www.kekrops.gr",
+        "full_time_employees": 3
     }
 }

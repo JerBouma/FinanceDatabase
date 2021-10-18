@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Clichy"
+        "state": null,
+        "city": "Clichy",
+        "zipcode": "92110",
+        "website": "http://www.ada.fr",
+        "full_time_employees": 92
     },
     "ALD.PA": {
         "short_name": "ALD",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Rueil-Malmaison"
+        "state": null,
+        "city": "Rueil-Malmaison",
+        "zipcode": "92500",
+        "website": "http://www.aldautomotive.com",
+        "full_time_employees": 6361
     },
     "ALUCR.PA": {
         "short_name": "UCAR",
@@ -33,7 +41,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Boulogne Billancourt"
+        "state": null,
+        "city": "Boulogne Billancourt",
+        "zipcode": "92100",
+        "website": "http://www.ucar.fr",
+        "full_time_employees": null
     },
     "E7CD.F": {
         "short_name": "EUROPCAR MO.GRP A EO 0,01",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75017",
+        "website": "http://europcar-mobility-group.com",
+        "full_time_employees": 8482
     },
     "EUCAR.PA": {
         "short_name": "EUROPCAR MOBILITY",
@@ -57,7 +73,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75017",
+        "website": "http://europcar-mobility-group.com",
+        "full_time_employees": 8482
     },
     "EURMF": {
         "short_name": "EUROPCAR MOBILITY GROUP",
@@ -69,6 +89,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75017",
+        "website": "http://europcar-mobility-group.com",
+        "full_time_employees": 8482
     }
 }

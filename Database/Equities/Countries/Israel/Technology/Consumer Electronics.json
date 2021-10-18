@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Rishon LeZion"
+        "state": null,
+        "city": "Rishon LeZion",
+        "zipcode": "75704 1",
+        "website": "http://www.ecp.co.il",
+        "full_time_employees": 1616
     },
     "MTRN.TA": {
         "short_name": "MAYTRONICS LTD",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Jezreel Valley"
+        "state": null,
+        "city": "Jezreel Valley",
+        "zipcode": "1935000",
+        "website": "http://www.maytronics.com",
+        "full_time_employees": 907
     },
     "TDRN.TA": {
         "short_name": "TADIRAN GROUP LTD",
@@ -33,6 +41,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Petah Tikva"
+        "state": null,
+        "city": "Petah Tikva",
+        "zipcode": null,
+        "website": "http://www.tadiran-group.co.il",
+        "full_time_employees": 393
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Yeruham"
+        "state": null,
+        "city": "Yeruham",
+        "zipcode": null,
+        "website": "http://www.brand-industries.com",
+        "full_time_employees": 195
     },
     "GAGR.TA": {
         "short_name": "GAON GROUP",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Or Yehuda"
+        "state": null,
+        "city": "Or Yehuda",
+        "zipcode": "6039730",
+        "website": "http://www.gaon.com",
+        "full_time_employees": null
     },
     "HOD.TA": {
         "short_name": "HOD-ASSAF INDS",
@@ -33,7 +41,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Acre"
+        "state": null,
+        "city": "Acre",
+        "zipcode": "24100",
+        "website": "http://www.hodmetal.co.il",
+        "full_time_employees": 684
     },
     "MNIN.TA": {
         "short_name": "MENDELSON INFRASTR",
@@ -45,6 +57,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Kiryat Ata"
+        "state": null,
+        "city": "Kiryat Ata",
+        "zipcode": "2611102",
+        "website": "http://www.mlsbar.com",
+        "full_time_employees": 520
     }
 }

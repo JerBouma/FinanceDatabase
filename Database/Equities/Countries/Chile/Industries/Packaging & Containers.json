@@ -9,7 +9,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Padre Hurtado"
+        "state": null,
+        "city": "Padre Hurtado",
+        "zipcode": null,
+        "website": "http://www.cristalchile.cl",
+        "full_time_employees": 1870
     },
     "EDELPA.SN": {
         "short_name": "ENVASES PACIFICO",
@@ -21,6 +25,10 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago de Chile"
+        "state": null,
+        "city": "Santiago de Chile",
+        "zipcode": "13320",
+        "website": "http://www.edelpa.cl",
+        "full_time_employees": 513
     }
 }

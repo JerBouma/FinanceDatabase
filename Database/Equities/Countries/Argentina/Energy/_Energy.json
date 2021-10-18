@@ -9,7 +9,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "1206",
+        "website": "http://www.tgs.com.ar",
+        "full_time_employees": 1099
     },
     "TDGDF": {
         "short_name": "TRANSPORTADORA DE GAS DEL NORTE",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": null,
+        "website": "http://www.tgn.com.ar",
+        "full_time_employees": null
     },
     "TGNO4.BA": {
         "short_name": "TRANSPORT GAS NORT",
@@ -33,7 +41,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": null,
+        "website": "http://www.tgn.com.ar",
+        "full_time_employees": null
     },
     "TGS": {
         "short_name": "Transportadora de Gas del Sur S",
@@ -45,7 +57,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "1206",
+        "website": "http://www.tgs.com.ar",
+        "full_time_employees": 1099
     },
     "TGSU2.BA": {
         "short_name": "TRANSPORT GAS SUR",
@@ -57,7 +73,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "1206",
+        "website": "http://www.tgs.com.ar",
+        "full_time_employees": 1099
     },
     "YPF.F": {
         "short_name": "YPF D AP 10 SP.ADR/1 AP10",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "C1106BKK",
+        "website": "http://www.ypf.com",
+        "full_time_employees": null
     },
     "YPF": {
         "short_name": "YPF Sociedad Anonima",
@@ -81,7 +105,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "C1106BKK",
+        "website": "http://www.ypf.com",
+        "full_time_employees": null
     },
     "YPFD.BA": {
         "short_name": "YPF SA",
@@ -93,6 +121,10 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "C1106BKK",
+        "website": "http://www.ypf.com",
+        "full_time_employees": null
     }
 }

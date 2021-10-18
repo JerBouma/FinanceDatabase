@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "6702301",
+        "website": "http://www.dic.co.il",
+        "full_time_employees": null
     },
     "MAXO.TA": {
         "short_name": "MAX STOCK LTD.",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Holon"
+        "state": null,
+        "city": "Holon",
+        "zipcode": null,
+        "website": "http://www.maxstock.co.il",
+        "full_time_employees": 1911
     },
     "MSBI.TA": {
         "short_name": "HAMASHBIR 365 LTD",
@@ -33,6 +41,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Netanya"
+        "state": null,
+        "city": "Netanya",
+        "zipcode": "42506",
+        "website": "http://www.mashbir.co.il",
+        "full_time_employees": 2159
     }
 }

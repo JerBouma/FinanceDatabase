@@ -9,7 +9,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United States",
-        "city": "Rockville"
+        "state": "MD",
+        "city": "Rockville",
+        "zipcode": "20850",
+        "website": "http://www.ceva-dsp.com",
+        "full_time_employees": 404
     },
     "AVGO.MX": {
         "short_name": "BROADCOM INC",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "San Jose"
+        "state": "CA",
+        "city": "San Jose",
+        "zipcode": "95131-2313",
+        "website": "http://www.broadcom.com",
+        "full_time_employees": 21000
     },
     "XIX.DE": {
         "short_name": "XILINX INC.  DL-,01",
@@ -33,6 +41,10 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "United States",
-        "city": "San Jose"
+        "state": "CA",
+        "city": "San Jose",
+        "zipcode": "95124",
+        "website": "http://www.xilinx.com",
+        "full_time_employees": 4891
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Naberezhnye Chelny"
+        "state": null,
+        "city": "Naberezhnye Chelny",
+        "zipcode": "423827",
+        "website": "http://www.kamaz.ru",
+        "full_time_employees": null
     },
     "TUZA.ME": {
         "short_name": "TUIMAZINSKIY ZAVOD",
@@ -21,7 +25,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Tuymazy"
+        "state": null,
+        "city": "Tuymazy",
+        "zipcode": "452755",
+        "website": "http://www.tzacom.ru",
+        "full_time_employees": 642
     },
     "ZILL.ME": {
         "short_name": "LIKHACHOV PLANT PJ",
@@ -33,6 +41,10 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "115280",
+        "website": "http://www.amo-zil.ru/en/",
+        "full_time_employees": 70
     }
 }

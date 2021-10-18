@@ -9,7 +9,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Jabalpur"
+        "state": null,
+        "city": "Jabalpur",
+        "zipcode": "482001",
+        "website": "http://www.cebbco.com",
+        "full_time_employees": 179
     },
     "CONCOR.NS": {
         "short_name": "CONTAINER CORP",
@@ -21,7 +25,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "New Delhi"
+        "state": null,
+        "city": "New Delhi",
+        "zipcode": "110076",
+        "website": "http://www.concorindia.com",
+        "full_time_employees": null
     },
     "IRCTC.NS": {
         "short_name": "Indian Rail Tour Corp Ltd",
@@ -33,7 +41,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "New Delhi"
+        "state": null,
+        "city": "New Delhi",
+        "zipcode": "110001",
+        "website": "http://www.irctc.com",
+        "full_time_employees": 1446
     },
     "TWL.NS": {
         "short_name": "TITAGARH WAGONS",
@@ -45,6 +57,10 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Kolkata"
+        "state": null,
+        "city": "Kolkata",
+        "zipcode": "700017",
+        "website": "http://www.titagarh.in",
+        "full_time_employees": 565
     }
 }

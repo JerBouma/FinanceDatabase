@@ -9,7 +9,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Caucaia"
+        "state": "CE",
+        "city": "Caucaia",
+        "zipcode": "61680-000",
+        "website": "http://www.aerisenergy.com.br",
+        "full_time_employees": 5500
     },
     "BDLL3.SA": {
         "short_name": "BARDELLA    ON",
@@ -21,7 +25,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Guarulhos"
+        "state": "SP",
+        "city": "Guarulhos",
+        "zipcode": "07220-020",
+        "website": "http://www.bardella.com.br",
+        "full_time_employees": 362
     },
     "BDLL4.SA": {
         "short_name": "BARDELLA    PN",
@@ -33,7 +41,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Guarulhos"
+        "state": "SP",
+        "city": "Guarulhos",
+        "zipcode": "07220-020",
+        "website": "http://www.bardella.com.br",
+        "full_time_employees": 362
     },
     "INEP3.SA": {
         "short_name": "INEPAR      ON",
@@ -45,7 +57,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
+        "state": "SP",
+        "city": "S\u00c3\u00a3o Paulo",
+        "zipcode": "04088-001",
+        "website": "http://www.inepar.com.br",
+        "full_time_employees": null
     },
     "INEP4.SA": {
         "short_name": "INEPAR      PN",
@@ -57,7 +73,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
+        "state": "SP",
+        "city": "S\u00c3\u00a3o Paulo",
+        "zipcode": "04088-001",
+        "website": "http://www.inepar.com.br",
+        "full_time_employees": null
     },
     "RCSL3.SA": {
         "short_name": "RECRUSUL    ON",
@@ -69,7 +89,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Sapucaia Do Sul"
+        "state": "RS",
+        "city": "Sapucaia Do Sul",
+        "zipcode": "93212-360",
+        "website": "http://www.recrusul.com.br",
+        "full_time_employees": null
     },
     "RCSL4.SA": {
         "short_name": "RECRUSUL    PN",
@@ -81,7 +105,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Sapucaia Do Sul"
+        "state": "RS",
+        "city": "Sapucaia Do Sul",
+        "zipcode": "93212-360",
+        "website": "http://www.recrusul.com.br",
+        "full_time_employees": null
     },
     "WEGE3.SA": {
         "short_name": "WEG         ON      NM",
@@ -93,7 +121,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Jaragu\u00c3\u00a1 do Sul"
+        "state": "SC",
+        "city": "Jaragu\u00c3\u00a1 do Sul",
+        "zipcode": "89256-900",
+        "website": "http://www.weg.net/institutional/BR/en/",
+        "full_time_employees": 33342
     },
     "WEGZY": {
         "short_name": "WEG SA",
@@ -105,6 +137,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Brazil",
-        "city": "Jaragu\u00c3\u00a1 do Sul"
+        "state": "SC",
+        "city": "Jaragu\u00c3\u00a1 do Sul",
+        "zipcode": "89256-900",
+        "website": "http://www.weg.net/institutional/BR/en/",
+        "full_time_employees": 33342
     }
 }

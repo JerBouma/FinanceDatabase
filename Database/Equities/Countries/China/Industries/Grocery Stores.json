@@ -9,7 +9,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Shenzhen"
+        "state": null,
+        "city": "Shenzhen",
+        "zipcode": null,
+        "website": "http://www.renrenle.cn",
+        "full_time_employees": null
     },
     "1210.HK": {
         "short_name": "CHRISTINE",
@@ -21,7 +25,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": "200062",
+        "website": "http://www.christine.com.cn",
+        "full_time_employees": 2604
     },
     "3686.HK": {
         "short_name": "CLIFFORDML",
@@ -33,7 +41,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Guangzhou"
+        "state": null,
+        "city": "Guangzhou",
+        "zipcode": "511496",
+        "website": "http://www.cliffordmodernliving.com",
+        "full_time_employees": 608
     },
     "600361.SS": {
         "short_name": "BEIJING HUALIAN HYPERMARKET CO.",
@@ -45,7 +57,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100037",
+        "website": "http://zc.beijing-hualian.com",
+        "full_time_employees": 15068
     },
     "601116.SS": {
         "short_name": "SANJIANG SHOPPING CLUB CO LTD",
@@ -57,7 +73,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Ningbo"
+        "state": null,
+        "city": "Ningbo",
+        "zipcode": null,
+        "website": "http://home.sanjiang.com",
+        "full_time_employees": 4658
     },
     "603777.SS": {
         "short_name": "SHANGHAI LIYIFEN CO LTD",
@@ -69,7 +89,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": "201615",
+        "website": "http://www.lyfen.com",
+        "full_time_employees": 7937
     },
     "603866.SS": {
         "short_name": "TOLY BREAD CO LTD",
@@ -81,7 +105,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Shenyang"
+        "state": null,
+        "city": "Shenyang",
+        "zipcode": null,
+        "website": "http://www.tolybread.cn",
+        "full_time_employees": 11877
     },
     "603886.SS": {
         "short_name": "GANSO CO LTD",
@@ -93,7 +121,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": "201703",
+        "website": "http://www.ganso.com.cn",
+        "full_time_employees": 4792
     },
     "QKLS": {
         "short_name": "QKL STORES INC",
@@ -105,6 +137,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Daqing"
+        "state": null,
+        "city": "Daqing",
+        "zipcode": "163300",
+        "website": "http://www.qklstoresinc.com",
+        "full_time_employees": 5207
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Luxembourg",
-        "city": "Luxembourg"
+        "state": null,
+        "city": "Luxembourg",
+        "zipcode": "1840",
+        "website": "http://www.brederode.eu",
+        "full_time_employees": 5
     },
     "REINA.AS": {
         "short_name": "REINET INVESTMENTS",
@@ -21,7 +25,11 @@
         "exchange": "AMS",
         "market": "nl_market",
         "country": "Luxembourg",
-        "city": "Luxembourg City"
+        "state": null,
+        "city": "Luxembourg City",
+        "zipcode": "1724",
+        "website": "http://www.reinet.com",
+        "full_time_employees": null
     },
     "RNI.JO": {
         "short_name": "Reinet Investments S.C.A",
@@ -33,6 +41,10 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "Luxembourg",
-        "city": "Luxembourg City"
+        "state": null,
+        "city": "Luxembourg City",
+        "zipcode": "1724",
+        "website": "http://www.reinet.com",
+        "full_time_employees": null
     }
 }

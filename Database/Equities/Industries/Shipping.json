@@ -9,7 +9,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Norway",
-        "city": "Lysaker"
+        "state": null,
+        "city": "Lysaker",
+        "zipcode": "1366",
+        "website": "http://www.wilhelmsen.com",
+        "full_time_employees": 15113
     },
     "ANEK.AT": {
         "short_name": "ANEK LINES S.A.(CR)",
@@ -21,7 +25,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Chania"
+        "state": null,
+        "city": "Chania",
+        "zipcode": "73100",
+        "website": "http://www.anek.gr",
+        "full_time_employees": null
     },
     "ANEP.AT": {
         "short_name": "ANEK LINES S.A.(PR, issue '90)",
@@ -33,7 +41,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Chania"
+        "state": null,
+        "city": "Chania",
+        "zipcode": "73100",
+        "website": "http://www.anek.gr",
+        "full_time_employees": null
     },
     "ANEPO.AT": {
         "short_name": "ANEK LINES S.A.(PR, issue '96)",
@@ -45,7 +57,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Chania"
+        "state": null,
+        "city": "Chania",
+        "zipcode": "73100",
+        "website": "http://www.anek.gr",
+        "full_time_employees": null
     },
     "ATTICA.AT": {
         "short_name": "ATTICA HOLDINGS SA",
@@ -57,7 +73,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Kallithea"
+        "state": null,
+        "city": "Kallithea",
+        "zipcode": "17674",
+        "website": "http://www.attica-group.com",
+        "full_time_employees": 1412
     },
     "GLNGN.MX": {
         "short_name": "GOLAR LNG LIMITED",
@@ -69,7 +89,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Bermuda",
-        "city": "Hamilton"
+        "state": null,
+        "city": "Hamilton",
+        "zipcode": "HM 11",
+        "website": "http://www.golarlng.com",
+        "full_time_employees": 1703
     },
     "GLOBOFFS.NS": {
         "short_name": "GLOBAL OFFSHORE SE",
@@ -81,7 +105,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400028",
+        "website": "http://www.globaloffshore.in",
+        "full_time_employees": 30
     },
     "INHC": {
         "short_name": "INNOLOG HLDGS CORP",
@@ -93,7 +121,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Fairfax"
+        "state": "VA",
+        "city": "Fairfax",
+        "zipcode": "22033",
+        "website": "http://www.innologholdings.com",
+        "full_time_employees": 22
     },
     "OLTH.AT": {
         "short_name": "THESSALONIKI PORT AUTHORITY",
@@ -105,7 +137,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Thessaloniki"
+        "state": null,
+        "city": "Thessaloniki",
+        "zipcode": "546 25",
+        "website": "http://www.thpa.gr",
+        "full_time_employees": 365
     },
     "PPA.AT": {
         "short_name": "PIREUS PORT AUTHORITY S.A (CR)",
@@ -117,6 +153,10 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Piraeus"
+        "state": null,
+        "city": "Piraeus",
+        "zipcode": null,
+        "website": "http://www.olp.gr",
+        "full_time_employees": 991
     }
 }

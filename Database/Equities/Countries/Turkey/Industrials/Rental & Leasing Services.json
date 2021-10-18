@@ -9,7 +9,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": null,
+        "website": "http://www.beyazfilo.com",
+        "full_time_employees": 86
     },
     "UFUK.IS": {
         "short_name": "UFUK YATIRIM",
@@ -21,7 +25,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": null,
+        "website": "http://www.ufukyyg.com",
+        "full_time_employees": 2
     },
     "VAKFN.IS": {
         "short_name": "VAKIF FIN. KIR.",
@@ -33,6 +41,10 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34394",
+        "website": "http://www.vakifleasing.com.tr",
+        "full_time_employees": 68
     }
 }

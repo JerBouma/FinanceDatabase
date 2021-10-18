@@ -9,7 +9,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Elliniko"
+        "state": null,
+        "city": "Elliniko",
+        "zipcode": "16777",
+        "website": "http://www.intertech.gr",
+        "full_time_employees": 40
     },
     "LEBEK.AT": {
         "short_name": "N. Levederis (C)",
@@ -21,7 +25,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Piraeus"
+        "state": null,
+        "city": "Piraeus",
+        "zipcode": "18545",
+        "website": "http://www.leventeris.gr",
+        "full_time_employees": 16
     },
     "LEBEP.AT": {
         "short_name": "N. Levederis (P)",
@@ -33,7 +41,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Piraeus"
+        "state": null,
+        "city": "Piraeus",
+        "zipcode": "18545",
+        "website": "http://www.leventeris.gr",
+        "full_time_employees": 16
     },
     "MITSN.MX": {
         "short_name": "MITSUBISHI ELECTRIC CORP",
@@ -45,7 +57,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "100-8310",
+        "website": "http://www.mitsubishielectric.com",
+        "full_time_employees": null
     },
     "MRNNV.PA": {
         "short_name": "MERSEN NV21",
@@ -57,7 +73,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92066",
+        "website": "http://www.mersen.com",
+        "full_time_employees": 5129
     },
     "NEXS": {
         "short_name": "NEXUS BIOPHARMA INC",
@@ -69,7 +89,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Houston"
+        "state": "TX",
+        "city": "Houston",
+        "zipcode": "77021-2040",
+        "website": "http://www.nexusbiopharma.com",
+        "full_time_employees": null
     },
     "OMRNN.MX": {
         "short_name": "OMRON CORP",
@@ -81,7 +105,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Kyoto"
+        "state": null,
+        "city": "Kyoto",
+        "zipcode": "600-8530",
+        "website": "http://www.omron.com",
+        "full_time_employees": null
     },
     "OPTRON.AT": {
         "short_name": "OPTRONICS TECHNOLOGIES S.A",
@@ -93,7 +121,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "183 46",
+        "website": "http://www.optronics.gr",
+        "full_time_employees": 17
     },
     "YASKYN.MX": {
         "short_name": "YASKAWA ELECTRIC CORP",
@@ -105,6 +137,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Kitakyushu"
+        "state": null,
+        "city": "Kitakyushu",
+        "zipcode": "806-0004",
+        "website": "http://www.yaskawa.co.jp",
+        "full_time_employees": null
     }
 }

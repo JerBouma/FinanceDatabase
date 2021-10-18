@@ -9,7 +9,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Auckland"
+        "state": null,
+        "city": "Auckland",
+        "zipcode": "1010",
+        "website": "http://www.delegat.com",
+        "full_time_employees": null
     },
     "FWL.NZ": {
         "short_name": "Foley Wines Limited Ordinary Sh",
@@ -21,7 +25,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Blenheim"
+        "state": null,
+        "city": "Blenheim",
+        "zipcode": "7276",
+        "website": "http://www.foleywines.co.nz",
+        "full_time_employees": null
     },
     "MWE.NZ": {
         "short_name": "Marlborough Wine Estates Group ",
@@ -33,6 +41,10 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Auckland"
+        "state": null,
+        "city": "Auckland",
+        "zipcode": null,
+        "website": "http://www.nzmwe.com",
+        "full_time_employees": null
     }
 }

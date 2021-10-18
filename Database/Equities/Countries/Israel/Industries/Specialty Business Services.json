@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Or-Yehuda"
+        "state": null,
+        "city": "Or-Yehuda",
+        "zipcode": null,
+        "website": "http://www.aldservice.com",
+        "full_time_employees": 603
     },
     "CTGL": {
         "short_name": "CITRINE GLOBAL",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "6721503",
+        "website": "http://www.citrine-global.com",
+        "full_time_employees": 18
     },
     "SHGR.TA": {
         "short_name": "SHAGRIR GROUP VEHI",
@@ -33,7 +41,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Holon"
+        "state": null,
+        "city": "Holon",
+        "zipcode": "5811701",
+        "website": "http://www.shagrir.co.il",
+        "full_time_employees": 385
     },
     "SRRPF": {
         "short_name": "SHAGRIR GROUP VEHICLE SERVICES ",
@@ -45,6 +57,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Holon"
+        "state": null,
+        "city": "Holon",
+        "zipcode": "5811701",
+        "website": "http://www.shagrir.co.il",
+        "full_time_employees": 385
     }
 }

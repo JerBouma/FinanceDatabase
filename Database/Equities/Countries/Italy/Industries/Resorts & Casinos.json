@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.igrandiviaggi.it",
+        "full_time_employees": 285
     },
     "FHR.MI": {
         "short_name": "FABILIA",
@@ -21,7 +25,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Cervia"
+        "state": "RA",
+        "city": "Cervia",
+        "zipcode": "48015",
+        "website": "http://www.fabilia.com",
+        "full_time_employees": 453
     },
     "IGV.MI": {
         "short_name": "I GRANDI VIAGGI",
@@ -33,6 +41,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.igrandiviaggi.it",
+        "full_time_employees": 285
     }
 }

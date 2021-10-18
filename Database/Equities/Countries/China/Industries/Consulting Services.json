@@ -9,7 +9,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Guangzhou City"
+        "state": null,
+        "city": "Guangzhou City",
+        "zipcode": "510656",
+        "website": "http://www.grgtest.com",
+        "full_time_employees": 4786
     },
     "300012.SZ": {
         "short_name": "CENTRE TESTING GRO",
@@ -21,7 +25,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Shenzhen"
+        "state": null,
+        "city": "Shenzhen",
+        "zipcode": null,
+        "website": "http://www.cti-cert.com",
+        "full_time_employees": null
     },
     "603060.SS": {
         "short_name": "CHINA BUILDING MATERIAL TEST & ",
@@ -33,7 +41,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100024",
+        "website": "http://www.ctc.ac.cn",
+        "full_time_employees": 3757
     },
     "AYAG": {
         "short_name": "AMAYA GLOBAL HLDGS CORP",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100007",
+        "website": "http://www.gelt-cn.com",
+        "full_time_employees": 33
     },
     "RGLG": {
         "short_name": "UHF LOGISTICS GROUP INC",
@@ -57,7 +73,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Shenzhen"
+        "state": null,
+        "city": "Shenzhen",
+        "zipcode": "518052",
+        "website": null,
+        "full_time_employees": 2
     },
     "SDH": {
         "short_name": "Global Internet of People, Inc.",
@@ -69,7 +89,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": null,
+        "website": "http://www.sdh365.com",
+        "full_time_employees": 96
     },
     "ULNV": {
         "short_name": "PORTER HOLDING INTERNATIONAL IN",
@@ -81,6 +105,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Shenzhen"
+        "state": null,
+        "city": "Shenzhen",
+        "zipcode": "518004",
+        "website": "http://portercity.cn",
+        "full_time_employees": 28
     }
 }

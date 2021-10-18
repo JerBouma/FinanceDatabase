@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tirat Carmel"
+        "state": null,
+        "city": "Tirat Carmel",
+        "zipcode": "3912001",
+        "website": "http://www.almogim.co.il",
+        "full_time_employees": 87
     },
     "ROTS.TA": {
         "short_name": "ROTSHTEIN REALEST",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Petah Tikva"
+        "state": null,
+        "city": "Petah Tikva",
+        "zipcode": null,
+        "website": "http://www.rotshtein.co.il",
+        "full_time_employees": 25
     },
     "RTSN.TA": {
         "short_name": "ROTEM SHANI ENTREP",
@@ -33,6 +41,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "4690500",
+        "website": null,
+        "full_time_employees": null
     }
 }

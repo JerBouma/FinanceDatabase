@@ -9,7 +9,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Zhubei"
+        "state": null,
+        "city": "Zhubei",
+        "zipcode": null,
+        "website": "http://www.hyweb.com.tw",
+        "full_time_employees": null
     },
     "6462.TWO": {
         "short_name": "EGIS TECHNOLOGY INC",
@@ -21,7 +25,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taipei"
+        "state": null,
+        "city": "Taipei",
+        "zipcode": "11492",
+        "website": "http://www.egistec.com",
+        "full_time_employees": null
     },
     "6565.TWO": {
         "short_name": "THROUGHTEK CO LTD",
@@ -33,7 +41,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taipei"
+        "state": null,
+        "city": "Taipei",
+        "zipcode": "11579",
+        "website": "http://www.throughtek.com",
+        "full_time_employees": null
     },
     "6689.TWO": {
         "short_name": "ECV",
@@ -45,7 +57,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taipei"
+        "state": null,
+        "city": "Taipei",
+        "zipcode": "104",
+        "website": "http://www.ecloudvalley.com",
+        "full_time_employees": null
     },
     "7547.TWO": {
         "short_name": "INTUMIT",
@@ -57,7 +73,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "New Taipei City"
+        "state": null,
+        "city": "New Taipei City",
+        "zipcode": "231",
+        "website": "http://www.intumit.com",
+        "full_time_employees": null
     },
     "8298.TWO": {
         "short_name": "Genie",
@@ -69,7 +89,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taipei"
+        "state": null,
+        "city": "Taipei",
+        "zipcode": "114",
+        "website": "http://www.genie-networks.com",
+        "full_time_employees": 83
     },
     "KSIH": {
         "short_name": "KS INTL HLDGS CORP",
@@ -81,6 +105,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Taiwan",
-        "city": "Taipei City"
+        "state": null,
+        "city": "Taipei City",
+        "zipcode": "114",
+        "website": null,
+        "full_time_employees": 16
     }
 }

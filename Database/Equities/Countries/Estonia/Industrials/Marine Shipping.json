@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Estonia",
-        "city": "Tallinn"
+        "state": null,
+        "city": "Tallinn",
+        "zipcode": "10111",
+        "website": "http://www.tallink.com",
+        "full_time_employees": 3953
     },
     "TAL1T.TL": {
         "short_name": "Tallink Grupp",
@@ -21,7 +25,11 @@
         "exchange": "TAL",
         "market": "tl_market",
         "country": "Estonia",
-        "city": "Tallinn"
+        "state": null,
+        "city": "Tallinn",
+        "zipcode": "10111",
+        "website": "http://www.tallink.com",
+        "full_time_employees": 3953
     },
     "TSM1T.TL": {
         "short_name": "Tallinna Sadam",
@@ -33,6 +41,10 @@
         "exchange": "TAL",
         "market": "tl_market",
         "country": "Estonia",
-        "city": "Tallinn"
+        "state": null,
+        "city": "Tallinn",
+        "zipcode": "15051",
+        "website": "http://www.ts.ee",
+        "full_time_employees": 481
     }
 }

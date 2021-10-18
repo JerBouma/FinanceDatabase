@@ -9,7 +9,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "111 52",
+        "website": "http://www.nordicflanges.com",
+        "full_time_employees": 105
     },
     "PCOM-B.ST": {
         "short_name": "Precomp Solutions AB ser. B",
@@ -21,7 +25,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Ulricehamn"
+        "state": null,
+        "city": "Ulricehamn",
+        "zipcode": "523 37",
+        "website": "http://precomp.se",
+        "full_time_employees": 133
     },
     "PROF-B.ST": {
         "short_name": "ProfilGruppen AB ser. B",
@@ -33,6 +41,10 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "\u00c3\u0085seda"
+        "state": null,
+        "city": "\u00c3\u0085seda",
+        "zipcode": "364 21",
+        "website": "http://www.profilgruppen.se",
+        "full_time_employees": 519
     }
 }

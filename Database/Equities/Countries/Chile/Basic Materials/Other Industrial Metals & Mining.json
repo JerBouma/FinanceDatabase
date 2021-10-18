@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Chile",
-        "city": "Santiago"
+        "state": null,
+        "city": "Santiago",
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": 10
     },
     "MOLYMET.SN": {
         "short_name": "MOLIBDENOS Y METAL",
@@ -21,7 +25,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "San Bernardo"
+        "state": null,
+        "city": "San Bernardo",
+        "zipcode": null,
+        "website": "http://molymet.com",
+        "full_time_employees": 1413
     },
     "SOPROCAL.SN": {
         "short_name": "SOPROCAL CALERIAS",
@@ -33,7 +41,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago de Chile"
+        "state": null,
+        "city": "Santiago de Chile",
+        "zipcode": null,
+        "website": "http://www.soprocal.cl",
+        "full_time_employees": 53
     },
     "STUV.V": {
         "short_name": "STUVE GOLD CORP",
@@ -45,6 +57,10 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Chile",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": "http://stuvegoldcorp.ca",
+        "full_time_employees": null
     }
 }

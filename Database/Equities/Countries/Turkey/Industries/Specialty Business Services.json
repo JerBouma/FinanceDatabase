@@ -9,7 +9,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": null,
+        "website": "http://www.ceoevent.com.tr",
+        "full_time_employees": 27
     },
     "ISKPL.IS": {
         "short_name": "ISIK PLASTIK",
@@ -21,7 +25,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Gebze"
+        "state": null,
+        "city": "Gebze",
+        "zipcode": "41480",
+        "website": "http://www.isikplastik.com.tr",
+        "full_time_employees": null
     },
     "PRZMA.IS": {
         "short_name": "PRIZMA PRESS MATBAACILIK",
@@ -33,7 +41,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": null,
+        "website": "http://www.prizmapress.com.tr",
+        "full_time_employees": 31
     },
     "SAMAT.IS": {
         "short_name": "SARAY MATBAACILIK",
@@ -45,6 +57,10 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": null,
+        "website": "http://www.saraymatbaa.com.tr",
+        "full_time_employees": 97
     }
 }

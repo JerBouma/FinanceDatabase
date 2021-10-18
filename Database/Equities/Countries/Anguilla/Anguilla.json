@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Anguilla",
-        "city": "South Hill"
+        "state": null,
+        "city": "South Hill",
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": 1
     },
     "KDOZF": {
         "short_name": "KIDOZ INC",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Anguilla",
-        "city": "The Valley"
+        "state": null,
+        "city": "The Valley",
+        "zipcode": "AI 2640",
+        "website": "http://www.kidoz.net",
+        "full_time_employees": 14
     },
     "KIDZ.V": {
         "short_name": "KIDOZ INC",
@@ -33,6 +41,10 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Anguilla",
-        "city": "The Valley"
+        "state": null,
+        "city": "The Valley",
+        "zipcode": "AI 2640",
+        "website": "http://www.kidoz.net",
+        "full_time_employees": 14
     }
 }

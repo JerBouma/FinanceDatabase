@@ -9,7 +9,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Cyprus",
-        "city": "Nicosia"
+        "state": null,
+        "city": "Nicosia",
+        "zipcode": "1060",
+        "website": "http://www.rusagrogroup.ru",
+        "full_time_employees": 19344
     },
     "AGRO.VI": {
         "short_name": "ROSAGRO GDR",
@@ -21,7 +25,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Cyprus",
-        "city": "Nicosia"
+        "state": null,
+        "city": "Nicosia",
+        "zipcode": "1060",
+        "website": "http://www.rusagrogroup.ru",
+        "full_time_employees": 19344
     },
     "DKL.L": {
         "short_name": "DEKEL AGRI-VISION PLC ORD EUR0.",
@@ -33,6 +41,10 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Cyprus",
-        "city": "Limassol"
+        "state": null,
+        "city": "Limassol",
+        "zipcode": "3025",
+        "website": "http://www.dekelagrivision.com",
+        "full_time_employees": null
     }
 }

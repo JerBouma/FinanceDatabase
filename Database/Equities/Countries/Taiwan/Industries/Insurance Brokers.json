@@ -9,7 +9,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taipei"
+        "state": null,
+        "city": "Taipei",
+        "zipcode": null,
+        "website": "http://www.tabc.com.tw",
+        "full_time_employees": null
     },
     "CUII": {
         "short_name": "CHINA UNITED INSURANCE SERVICE ",
@@ -21,6 +25,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Taiwan",
-        "city": "Taipei"
+        "state": null,
+        "city": "Taipei",
+        "zipcode": "10595",
+        "website": "http://www.holdingscuis.com/cuis_en/",
+        "full_time_employees": 346
     }
 }

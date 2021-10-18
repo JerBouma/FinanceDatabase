@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Capua"
+        "state": "CE",
+        "city": "Capua",
+        "zipcode": "81043",
+        "website": "http://www.pierrelgroup.com",
+        "full_time_employees": 96
     },
     "PRL.MI": {
         "short_name": "PIERREL",
@@ -21,7 +25,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Capua"
+        "state": "CE",
+        "city": "Capua",
+        "zipcode": "81043",
+        "website": "http://www.pierrelgroup.com",
+        "full_time_employees": 96
     },
     "RCDTF": {
         "short_name": "RECORDATI",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20148",
+        "website": "http://www.recordati.com",
+        "full_time_employees": 4486
     },
     "REC.MI": {
         "short_name": "RECORDATI ORD",
@@ -45,7 +57,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20148",
+        "website": "http://www.recordati.com",
+        "full_time_employees": 4486
     },
     "REC.VI": {
         "short_name": "RECORDATI SPA",
@@ -57,7 +73,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20148",
+        "website": "http://www.recordati.com",
+        "full_time_employees": 4486
     },
     "RER1.F": {
         "short_name": "RECORDATI SPA  EO -,125",
@@ -69,6 +89,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20148",
+        "website": "http://www.recordati.com",
+        "full_time_employees": 4486
     }
 }

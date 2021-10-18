@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Sderot"
+        "state": null,
+        "city": "Sderot",
+        "zipcode": "80100",
+        "website": "http://www.rmhmixer.com",
+        "full_time_employees": 89
     },
     "ROO.AX": {
         "short_name": "ROOTS CDI 1:1",
@@ -21,6 +25,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Israel",
-        "city": "Kfar Vitkin"
+        "state": null,
+        "city": "Kfar Vitkin",
+        "zipcode": null,
+        "website": "http://www.rootssat.com",
+        "full_time_employees": null
     }
 }

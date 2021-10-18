@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0668",
+        "website": "http://www.xxlasa.com",
+        "full_time_employees": 5363
     },
     "HYN.OL": {
         "short_name": "HYNION AS",
@@ -21,7 +25,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "B\u00c3\u00a6rum"
+        "state": null,
+        "city": "B\u00c3\u00a6rum",
+        "zipcode": "1363",
+        "website": "http://www.hynion.com",
+        "full_time_employees": null
     },
     "KID.OL": {
         "short_name": "KID ASA",
@@ -33,7 +41,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Lier"
+        "state": null,
+        "city": "Lier",
+        "zipcode": "3426",
+        "website": "http://www.kid.no",
+        "full_time_employees": 778
     },
     "XXL.OL": {
         "short_name": "XXL ASA",
@@ -45,6 +57,10 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0668",
+        "website": "http://www.xxlasa.com",
+        "full_time_employees": 5363
     }
 }

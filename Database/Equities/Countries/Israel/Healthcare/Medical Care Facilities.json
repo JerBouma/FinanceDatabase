@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Ramat Gan"
+        "state": null,
+        "city": "Ramat Gan",
+        "zipcode": null,
+        "website": "http://www.danel-jobs.co.il",
+        "full_time_employees": 3793
     },
     "GOHO.TA": {
         "short_name": "GOLDEN HOUSE",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel-Aviv"
+        "state": null,
+        "city": "Tel-Aviv",
+        "zipcode": "67320",
+        "website": "http://www.golden-house.co.il",
+        "full_time_employees": 140
     },
     "ICCM.TA": {
         "short_name": "ICECURE MEDICAL LT",
@@ -33,7 +41,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Caesarea"
+        "state": null,
+        "city": "Caesarea",
+        "zipcode": "3079504",
+        "website": "http://www.icecure-medical.com",
+        "full_time_employees": 40
     },
     "ICUSF": {
         "short_name": "ICECURE MEDICAL LTD",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Caesarea"
+        "state": null,
+        "city": "Caesarea",
+        "zipcode": "3079504",
+        "website": "http://www.icecure-medical.com",
+        "full_time_employees": 40
     },
     "MRHL.TA": {
         "short_name": "MERCHAVIA HOLD",
@@ -57,7 +73,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Bnei Brak"
+        "state": null,
+        "city": "Bnei Brak",
+        "zipcode": "5126112",
+        "website": "http://merchavia.com",
+        "full_time_employees": 1
     },
     "NVLG.TA": {
         "short_name": "NOVOLOG",
@@ -69,6 +89,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Modi'in-Maccabim-Re'ut"
+        "state": null,
+        "city": "Modi'in-Maccabim-Re'ut",
+        "zipcode": "717131",
+        "website": "http://www.novolog.co.il",
+        "full_time_employees": 641
     }
 }

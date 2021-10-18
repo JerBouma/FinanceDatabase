@@ -9,7 +9,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Bergen"
+        "state": null,
+        "city": "Bergen",
+        "zipcode": "5861",
+        "website": "http://www.lifecare.no",
+        "full_time_employees": null
     },
     "MD1.F": {
         "short_name": "MEDISTIM ASA  NK -,25",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0579",
+        "website": "http://www.medistim.com",
+        "full_time_employees": 120
     },
     "MEDI.OL": {
         "short_name": "MEDISTIM ASA",
@@ -33,7 +41,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0579",
+        "website": "http://www.medistim.com",
+        "full_time_employees": 120
     },
     "OBSRV.OL": {
         "short_name": "OBSERVE MEDICAL",
@@ -45,7 +57,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0255",
+        "website": "http://observemedical.com",
+        "full_time_employees": null
     },
     "OM5A.F": {
         "short_name": "OBSERVE MEDICAL ASA -,26",
@@ -57,6 +73,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0255",
+        "website": "http://observemedical.com",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Marousi"
+        "state": null,
+        "city": "Marousi",
+        "zipcode": "151 25",
+        "website": "http://www.ave.gr",
+        "full_time_employees": 376
     },
     "BFLD": {
         "short_name": "BROADCAST LIVE DIGITAL CORP",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Mississauga"
+        "state": "ON",
+        "city": "Mississauga",
+        "zipcode": "L4W 4Y4",
+        "website": null,
+        "full_time_employees": null
     },
     "DISN.BA": {
         "short_name": "WALT DISNEY CO.",
@@ -33,6 +41,10 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "United States",
-        "city": "Burbank"
+        "state": "CA",
+        "city": "Burbank",
+        "zipcode": "91521",
+        "website": "http://www.thewaltdisneycompany.com",
+        "full_time_employees": 175000
     }
 }

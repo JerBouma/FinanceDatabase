@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2B 6UF",
+        "website": "http://www.capriholdings.com",
+        "full_time_employees": 10834
     },
     "DUR.AT": {
         "short_name": "DUROS S.A. (CR)",
@@ -21,7 +25,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Patras"
+        "state": null,
+        "city": "Patras",
+        "zipcode": "26331",
+        "website": "http://www.dur.gr",
+        "full_time_employees": 62
     },
     "ELBE.AT": {
         "short_name": "ELVE S.A. (CR)",
@@ -33,7 +41,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Kavala"
+        "state": null,
+        "city": "Kavala",
+        "zipcode": "64007",
+        "website": "http://www.elvesa.gr",
+        "full_time_employees": 239
     },
     "MONCN.MX": {
         "short_name": "MONCLER SPA",
@@ -45,7 +57,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20144",
+        "website": "http://www.monclergroup.com",
+        "full_time_employees": 4398
     },
     "PNGB": {
         "short_name": "PANGLOBAL BRANDS INC",
@@ -57,6 +73,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Los Angeles"
+        "state": "CA",
+        "city": "Los Angeles",
+        "zipcode": "90023",
+        "website": "http://www.panglobalbrand.com",
+        "full_time_employees": 48
     }
 }

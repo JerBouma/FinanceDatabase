@@ -9,7 +9,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Geneva"
+        "state": null,
+        "city": "Geneva",
+        "zipcode": "1207",
+        "website": "http://www.apgsga.ch",
+        "full_time_employees": 491
     },
     "BMD.VI": {
         "short_name": "BEACONSMIND AG",
@@ -21,7 +25,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Switzerland",
-        "city": "St\u00c3\u00a4fa"
+        "state": null,
+        "city": "St\u00c3\u00a4fa",
+        "zipcode": "8712",
+        "website": "http://www.beaconsmind.com",
+        "full_time_employees": null
     },
     "MCHN.SW": {
         "short_name": "MCH GROUP N",
@@ -33,7 +41,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Basel"
+        "state": null,
+        "city": "Basel",
+        "zipcode": "4005",
+        "website": "http://www.mch-group.com",
+        "full_time_employees": 585
     },
     "MLBMD.PA": {
         "short_name": "BEACONSMIND",
@@ -45,6 +57,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "Switzerland",
-        "city": "St\u00c3\u00a4fa"
+        "state": null,
+        "city": "St\u00c3\u00a4fa",
+        "zipcode": "8712",
+        "website": "http://www.beaconsmind.com",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Quimper"
+        "state": null,
+        "city": "Quimper",
+        "zipcode": "29000",
+        "website": "http://www.ecomiam.com",
+        "full_time_employees": 36
     },
     "FNTS.PA": {
         "short_name": "FINATIS",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.finatis.fr",
+        "full_time_employees": null
     },
     "MLSRP.PA": {
         "short_name": "SPEED RABBIT PIZZA",
@@ -33,6 +41,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Levallois-Perret"
+        "state": null,
+        "city": "Levallois-Perret",
+        "zipcode": "92300",
+        "website": "http://www.speedrabbitpizza.com",
+        "full_time_employees": 3
     }
 }

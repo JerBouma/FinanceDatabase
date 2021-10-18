@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Ingolstadt"
+        "state": null,
+        "city": "Ingolstadt",
+        "zipcode": "85053",
+        "website": "http://www.bhb-ag.de",
+        "full_time_employees": null
     },
     "KUL.MU": {
         "short_name": "KULMBACHER BRAUEREI AG",
@@ -21,7 +25,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Kulmbach"
+        "state": null,
+        "city": "Kulmbach",
+        "zipcode": "95326",
+        "website": "http://www.kulmbacher.de",
+        "full_time_employees": 914
     },
     "LBH1.MU": {
         "short_name": "LANDSHUTER BRAUH.AG",
@@ -33,7 +41,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Landshut"
+        "state": null,
+        "city": "Landshut",
+        "zipcode": "84028",
+        "website": "http://www.landshuter-brauhaus.de",
+        "full_time_employees": null
     },
     "PKB.F": {
         "short_name": "PARK U.BELLHEIMER AG O.N.",
@@ -45,6 +57,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Pirmasens"
+        "state": null,
+        "city": "Pirmasens",
+        "zipcode": "66953",
+        "website": "http://www.park-bellheimer.de",
+        "full_time_employees": 138
     }
 }

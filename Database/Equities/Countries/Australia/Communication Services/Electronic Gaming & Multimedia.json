@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "North Ryde"
+        "state": "NSW",
+        "city": "North Ryde",
+        "zipcode": "2113",
+        "website": "http://www.aristocrat.com",
+        "full_time_employees": 6000
     },
     "ALL.AX": {
         "short_name": "ARISTOCRAT FPO",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "North Ryde"
+        "state": "NSW",
+        "city": "North Ryde",
+        "zipcode": "2113",
+        "website": "http://www.aristocrat.com",
+        "full_time_employees": 6000
     },
     "ARLUF": {
         "short_name": "ARISTOCRAT LEISURE",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "North Ryde"
+        "state": "NSW",
+        "city": "North Ryde",
+        "zipcode": "2113",
+        "website": "http://www.aristocrat.com",
+        "full_time_employees": 6000
     },
     "EM1.AX": {
         "short_name": "EMERGEGAM FPO",
@@ -45,7 +57,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Perth"
+        "state": "WA",
+        "city": "Perth",
+        "zipcode": "6007",
+        "website": "http://www.emergegaming.com.au",
+        "full_time_employees": null
     },
     "ESH.AX": {
         "short_name": "ESPORTS FPO",
@@ -57,7 +73,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3000",
+        "website": "http://esh.mogul.gg",
+        "full_time_employees": null
     },
     "GIX.F": {
         "short_name": "EMERGE GAMING LTD",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Perth"
+        "state": "WA",
+        "city": "Perth",
+        "zipcode": "6007",
+        "website": "http://www.emergegaming.com.au",
+        "full_time_employees": null
     },
     "ICI.AX": {
         "short_name": "ICANDY FPO",
@@ -81,7 +105,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3000",
+        "website": "http://www.icandy.io",
+        "full_time_employees": null
     },
     "MKL.AX": {
         "short_name": "MIGHTYKING FPO",
@@ -93,7 +121,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Adelaide"
+        "state": "SA",
+        "city": "Adelaide",
+        "zipcode": "5000",
+        "website": "http://www.mightykingdom.com",
+        "full_time_employees": null
     },
     "PLY.AX": {
         "short_name": "PLAYSIDE FPO",
@@ -105,6 +137,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Port Melbourne"
+        "state": "VIC",
+        "city": "Port Melbourne",
+        "zipcode": "3207",
+        "website": "http://www.playsidestudios.com",
+        "full_time_employees": null
     }
 }

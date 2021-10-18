@@ -9,7 +9,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Napoli"
+        "state": "NA",
+        "city": "Napoli",
+        "zipcode": "80142",
+        "website": "http://www.arterrabio.it",
+        "full_time_employees": null
     },
     "CSP.F": {
         "short_name": "CASSIOPEA S.P.A.  EO 1",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Lainate"
+        "state": "MI",
+        "city": "Lainate",
+        "zipcode": "20020",
+        "website": "http://www.cassiopea.com",
+        "full_time_employees": 11
     },
     "NP5.F": {
         "short_name": "NEWRON PHARMACEUT. EO-,20",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Bresso"
+        "state": "MI",
+        "city": "Bresso",
+        "zipcode": "20091",
+        "website": "http://www.newron.com",
+        "full_time_employees": 23
     },
     "NWPHF": {
         "short_name": "NEWRON PHARMACEUTICALS S.P.A.",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Bresso"
+        "state": "MI",
+        "city": "Bresso",
+        "zipcode": "20091",
+        "website": "http://www.newron.com",
+        "full_time_employees": 23
     },
     "NWRN.SW": {
         "short_name": "NEWRON PHARMA N",
@@ -57,7 +73,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Italy",
-        "city": "Bresso"
+        "state": "MI",
+        "city": "Bresso",
+        "zipcode": "20091",
+        "website": "http://www.newron.com",
+        "full_time_employees": 23
     },
     "PHIL.MI": {
         "short_name": "PHILOGEN",
@@ -69,7 +89,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Sovicille"
+        "state": "SI",
+        "city": "Sovicille",
+        "zipcode": "53018",
+        "website": "http://www.philogen.com",
+        "full_time_employees": null
     },
     "SKIN.SW": {
         "short_name": "CASSIOPEA N",
@@ -81,6 +105,10 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Italy",
-        "city": "Lainate"
+        "state": "MI",
+        "city": "Lainate",
+        "zipcode": "20020",
+        "website": "http://www.cassiopea.com",
+        "full_time_employees": 11
     }
 }

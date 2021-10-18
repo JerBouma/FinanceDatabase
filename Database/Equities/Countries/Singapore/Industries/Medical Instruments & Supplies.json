@@ -9,7 +9,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "534963",
+        "website": "http://www.riverstone.com.my",
+        "full_time_employees": 4000
     },
     "OSX.AX": {
         "short_name": "OSTEOPORE FPO",
@@ -21,6 +25,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "618305",
+        "website": "http://www.osteopore.com",
+        "full_time_employees": null
     }
 }

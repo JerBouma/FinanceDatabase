@@ -9,7 +9,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Jiangmen"
+        "state": null,
+        "city": "Jiangmen",
+        "zipcode": null,
+        "website": "http://www.gudouholdings.com",
+        "full_time_employees": 481
     },
     "MCG.V": {
         "short_name": "MOUNTAIN CHINA RESORTS HOLDING ",
@@ -21,7 +25,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "10010",
+        "website": "http://www.mountainchinaresorts.com",
+        "full_time_employees": null
     },
     "SZ4A.F": {
         "short_name": "MOUNTAIN CHINA RES.(HLDG)",
@@ -33,6 +41,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "10010",
+        "website": "http://www.mountainchinaresorts.com",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92032",
+        "website": "http://www.eliorgroup.com",
+        "full_time_employees": 51943
     },
     "ALDBL.PA": {
         "short_name": "BERNARD LOISEAU",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Saulieu"
+        "state": null,
+        "city": "Saulieu",
+        "zipcode": "21210",
+        "website": "http://www.bernard-loiseau.com",
+        "full_time_employees": 126
     },
     "ELIOR.PA": {
         "short_name": "ELIOR GROUP",
@@ -33,7 +41,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92032",
+        "website": "http://www.eliorgroup.com",
+        "full_time_employees": 51943
     },
     "FLO.PA": {
         "short_name": "GROUPE FLO",
@@ -45,7 +57,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Courbevoie"
+        "state": null,
+        "city": "Courbevoie",
+        "zipcode": "92400",
+        "website": "http://www.groupeflo.com",
+        "full_time_employees": 2731
     },
     "MLTBM.PA": {
         "short_name": "TOQUEBLANCHEMONDE",
@@ -57,6 +73,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Lyon"
+        "state": null,
+        "city": "Lyon",
+        "zipcode": "69006",
+        "website": "http://www.lestoquesblanchesdumonde.com",
+        "full_time_employees": 9
     }
 }

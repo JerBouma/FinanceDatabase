@@ -9,7 +9,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "Israel",
-        "city": "Isfiya"
+        "state": null,
+        "city": "Isfiya",
+        "zipcode": "30090",
+        "website": "http://www.check-cap.com",
+        "full_time_employees": 65
     },
     "IDTA": {
         "short_name": "IDENTA CORP",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Jerusalem"
+        "state": null,
+        "city": "Jerusalem",
+        "zipcode": "93420",
+        "website": "http://www.identa-corp.com",
+        "full_time_employees": null
     },
     "ROSGQ": {
         "short_name": "ROSETTA GENOMICS LTD",
@@ -33,6 +41,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Rehovot"
+        "state": null,
+        "city": "Rehovot",
+        "zipcode": "76706",
+        "website": "http://www.rosettagenomics.com",
+        "full_time_employees": 86
     }
 }

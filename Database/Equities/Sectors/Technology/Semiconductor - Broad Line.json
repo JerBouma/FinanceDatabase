@@ -9,7 +9,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United States",
-        "city": "Rockville"
+        "state": "MD",
+        "city": "Rockville",
+        "zipcode": "20850",
+        "website": "http://www.ceva-dsp.com",
+        "full_time_employees": 404
     },
     "ASEHN.MX": {
         "short_name": "ASE TECHNOLOGY HOLDING CO LTD",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Taiwan",
-        "city": "Kaohsiung"
+        "state": null,
+        "city": "Kaohsiung",
+        "zipcode": "811",
+        "website": "http://www.aseglobal.com",
+        "full_time_employees": 101785
     },
     "AVGO.MX": {
         "short_name": "BROADCOM INC",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "San Jose"
+        "state": "CA",
+        "city": "San Jose",
+        "zipcode": "95131-2313",
+        "website": "http://www.broadcom.com",
+        "full_time_employees": 21000
     },
     "NXPIN.MX": {
         "short_name": "NXP SEMICONDUCTORS N V",
@@ -45,7 +57,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Netherlands",
-        "city": "Eindhoven"
+        "state": null,
+        "city": "Eindhoven",
+        "zipcode": "5656 AG",
+        "website": "http://www.nxp.com",
+        "full_time_employees": 29000
     },
     "RNECN.MX": {
         "short_name": "RENESAS ELECTRONICS CORP",
@@ -57,7 +73,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "135-0061",
+        "website": "http://www.renesas.com",
+        "full_time_employees": null
     },
     "XIX.DE": {
         "short_name": "XILINX INC.  DL-,01",
@@ -69,6 +89,10 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "United States",
-        "city": "San Jose"
+        "state": "CA",
+        "city": "San Jose",
+        "zipcode": "95124",
+        "website": "http://www.xilinx.com",
+        "full_time_employees": 4891
     }
 }

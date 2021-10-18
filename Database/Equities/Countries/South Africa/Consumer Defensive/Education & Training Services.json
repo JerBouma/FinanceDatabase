@@ -9,7 +9,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Sandton"
+        "state": null,
+        "city": "Sandton",
+        "zipcode": "2196",
+        "website": "http://www.advtech.co.za",
+        "full_time_employees": 7853
     },
     "COH.JO": {
         "short_name": "Curro Holdings Limited",
@@ -21,7 +25,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Durbanville"
+        "state": null,
+        "city": "Durbanville",
+        "zipcode": "7550",
+        "website": "http://www.curro.co.za",
+        "full_time_employees": 5963
     },
     "SDO.JO": {
         "short_name": "Stadio Holdings Limited",
@@ -33,6 +41,10 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Cape Town"
+        "state": null,
+        "city": "Cape Town",
+        "zipcode": "7550",
+        "website": "http://stadio.co.za",
+        "full_time_employees": null
     }
 }

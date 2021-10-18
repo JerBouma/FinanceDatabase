@@ -9,7 +9,11 @@
         "exchange": "CPH",
         "market": "dk_market",
         "country": "Denmark",
-        "city": "Odense"
+        "state": null,
+        "city": "Odense",
+        "zipcode": "5260",
+        "website": "http://danishaerospace.com",
+        "full_time_employees": null
     },
     "ROV.CO": {
         "short_name": "Rovsing A/S",
@@ -21,7 +25,11 @@
         "exchange": "CPH",
         "market": "dk_market",
         "country": "Denmark",
-        "city": "Skovlunde"
+        "state": null,
+        "city": "Skovlunde",
+        "zipcode": "2740",
+        "website": "http://www.rovsing.dk",
+        "full_time_employees": 25
     },
     "RVY.F": {
         "short_name": "ROVSING AS IN.  DK 50",
@@ -33,6 +41,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Denmark",
-        "city": "Skovlunde"
+        "state": null,
+        "city": "Skovlunde",
+        "zipcode": "2740",
+        "website": "http://www.rovsing.dk",
+        "full_time_employees": 25
     }
 }

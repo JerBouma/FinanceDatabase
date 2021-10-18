@@ -9,7 +9,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": null,
+        "website": "http://www.flaptour.com.tr",
+        "full_time_employees": 36
     },
     "NTHOL.IS": {
         "short_name": "NET HOLDING",
@@ -21,6 +25,10 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34337",
+        "website": "http://www.netholding.com",
+        "full_time_employees": 4071
     }
 }

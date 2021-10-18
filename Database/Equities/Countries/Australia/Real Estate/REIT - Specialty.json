@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3000",
+        "website": "http://www.arena.com.au",
+        "full_time_employees": null
     },
     "CQE.AX": {
         "short_name": "CHSOCINFRA UNIT",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.charterhall.com.au/investments/funds/cqe",
+        "full_time_employees": null
     },
     "HRR-UN.TO": {
         "short_name": "AUSTRALIAN REIT INCOME FUND",
@@ -33,7 +41,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "RFF.AX": {
         "short_name": "RURALFUNDS STAPLED",
@@ -45,7 +57,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Deakin"
+        "state": "ACT",
+        "city": "Deakin",
+        "zipcode": "2600",
+        "website": "http://ruralfunds.com.au/rural-funds-group/",
+        "full_time_employees": null
     },
     "WPR.AX": {
         "short_name": "WAYPOINTRT STAPLED",
@@ -57,6 +73,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Docklands"
+        "state": "VIC",
+        "city": "Docklands",
+        "zipcode": "3008",
+        "website": "http://www.waypointreit.com.au",
+        "full_time_employees": null
     }
 }

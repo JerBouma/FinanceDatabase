@@ -9,7 +9,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Tsuen Wan"
+        "state": null,
+        "city": "Tsuen Wan",
+        "zipcode": null,
+        "website": "http://www.echogroup.com.hk",
+        "full_time_employees": 163
     },
     "BNSO": {
         "short_name": "Bonso Electronics International",
@@ -21,7 +25,11 @@
         "exchange": "NCM",
         "market": "us_market",
         "country": "Hong Kong",
-        "city": "Tsim Sha Tsui"
+        "state": null,
+        "city": "Tsim Sha Tsui",
+        "zipcode": null,
+        "website": "http://www.bonso.com",
+        "full_time_employees": 217
     },
     "T43.SI": {
         "short_name": "Yunnan Energy",
@@ -33,6 +41,10 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Hong Kong",
-        "city": "Wan Chai"
+        "state": null,
+        "city": "Wan Chai",
+        "zipcode": null,
+        "website": "http://www.yeigi.com",
+        "full_time_employees": 27
     }
 }

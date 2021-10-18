@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.mediaset.it",
+        "full_time_employees": null
     },
     "MS.MI": {
         "short_name": "MEDIASET S.P.A",
@@ -21,7 +25,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.mediaset.it",
+        "full_time_employees": null
     },
     "MS.VI": {
         "short_name": "MEDIASET SPA",
@@ -33,7 +41,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.mediaset.it",
+        "full_time_employees": null
     },
     "RWAY.MI": {
         "short_name": "RAI WAY",
@@ -45,7 +57,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00195",
+        "website": "http://www.raiway.it",
+        "full_time_employees": 566
     },
     "TLS.MI": {
         "short_name": "TELESIA",
@@ -57,6 +73,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00145",
+        "website": "http://telesia.it",
+        "full_time_employees": null
     }
 }

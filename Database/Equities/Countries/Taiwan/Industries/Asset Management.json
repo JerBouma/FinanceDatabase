@@ -9,7 +9,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taipei"
+        "state": null,
+        "city": "Taipei",
+        "zipcode": "115",
+        "website": "http://www.trigoldholdings.com",
+        "full_time_employees": null
     },
     "BLS.SI": {
         "short_name": "Hotung Inv",
@@ -21,6 +25,10 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Taiwan",
-        "city": "Taipei"
+        "state": null,
+        "city": "Taipei",
+        "zipcode": "10483",
+        "website": "http://www.hihl.com.sg",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Guangzhou"
+        "state": null,
+        "city": "Guangzhou",
+        "zipcode": "510006",
+        "website": "http://www.mystaru.com",
+        "full_time_employees": 1539
     },
     "TCEHYN.MX": {
         "short_name": "TENCENT HOLDINGS LIMITED",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "China",
-        "city": "Shenzhen"
+        "state": null,
+        "city": "Shenzhen",
+        "zipcode": "518054",
+        "website": "http://www.tencent.com",
+        "full_time_employees": 85858
     },
     "WBN.MX": {
         "short_name": "WEIBO CORPORATION",
@@ -33,6 +41,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100027",
+        "website": "http://ir.weibo.com",
+        "full_time_employees": 5073
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Las Condes"
+        "state": null,
+        "city": "Las Condes",
+        "zipcode": null,
+        "website": "http://conchaytoro.com",
+        "full_time_employees": 3215
     },
     "EMILIANA.SN": {
         "short_name": "VINEDOS EMILIANA",
@@ -21,7 +25,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago de Chile"
+        "state": null,
+        "city": "Santiago de Chile",
+        "zipcode": null,
+        "website": "http://www.emiliana.cl",
+        "full_time_employees": 270
     },
     "VSPT.SN": {
         "short_name": "VINA SAN PEDRO TAR",
@@ -33,6 +41,10 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago de Chile"
+        "state": null,
+        "city": "Santiago de Chile",
+        "zipcode": null,
+        "website": "http://www.sanpedro.cl",
+        "full_time_employees": 1280
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Essen"
+        "state": null,
+        "city": "Essen",
+        "zipcode": "45133",
+        "website": "http://www.arcandor.com",
+        "full_time_employees": 68283
     },
     "ECK.DE": {
         "short_name": "LUDW.BECK A.RATHAUSECK",
@@ -21,7 +25,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Munich"
+        "state": null,
+        "city": "Munich",
+        "zipcode": "80331",
+        "website": "http://www.ludwigbeck.de",
+        "full_time_employees": 405
     },
     "ECK.F": {
         "short_name": "LUDW.BECK A.RATHAUSECK",
@@ -33,6 +41,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Munich"
+        "state": null,
+        "city": "Munich",
+        "zipcode": "80331",
+        "website": "http://www.ludwigbeck.de",
+        "full_time_employees": 405
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Chassieu"
+        "state": null,
+        "city": "Chassieu",
+        "zipcode": "69680",
+        "website": "http://www.amoeba-biocide.com",
+        "full_time_employees": 20
     },
     "ALMIB.PA": {
         "short_name": "AMOEBA",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Chassieu"
+        "state": null,
+        "city": "Chassieu",
+        "zipcode": "69680",
+        "website": "http://www.amoeba-biocide.com",
+        "full_time_employees": 20
     },
     "GRVO.PA": {
         "short_name": "GRAINES VOLTZ",
@@ -33,6 +41,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Colmar"
+        "state": null,
+        "city": "Colmar",
+        "zipcode": "68000",
+        "website": "http://www.graines-voltz.com",
+        "full_time_employees": 335
     }
 }

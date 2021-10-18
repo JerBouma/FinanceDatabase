@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Switzerland",
-        "city": "Zug"
+        "state": null,
+        "city": "Zug",
+        "zipcode": "6300",
+        "website": "http://www.implantica.com",
+        "full_time_employees": null
     },
     "BIIO": {
         "short_name": "BIONOVATE TECHNOLOGIES CORP",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Cham"
+        "state": null,
+        "city": "Cham",
+        "zipcode": "6330",
+        "website": null,
+        "full_time_employees": null
     },
     "IMP-A-SDB.ST": {
         "short_name": "Implantica AG SDB",
@@ -33,7 +41,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Switzerland",
-        "city": "Zug"
+        "state": null,
+        "city": "Zug",
+        "zipcode": "6300",
+        "website": "http://www.implantica.com",
+        "full_time_employees": null
     },
     "MED.SW": {
         "short_name": "MEDARTIS N",
@@ -45,7 +57,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Basel"
+        "state": null,
+        "city": "Basel",
+        "zipcode": "4057",
+        "website": "http://www.medartis.com",
+        "full_time_employees": 636
     },
     "MOVE.SW": {
         "short_name": "MEDACTA GROUP N",
@@ -57,6 +73,10 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Castel San Pietro"
+        "state": null,
+        "city": "Castel San Pietro",
+        "zipcode": "6874",
+        "website": "http://www.medacta.com",
+        "full_time_employees": 1183
     }
 }

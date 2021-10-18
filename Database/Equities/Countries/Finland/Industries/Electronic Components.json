@@ -9,7 +9,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Espoo"
+        "state": null,
+        "city": "Espoo",
+        "zipcode": "02150",
+        "website": "http://aspocomp.com",
+        "full_time_employees": 138
     },
     "ICP1V.HE": {
         "short_name": "Incap Corporation",
@@ -21,7 +25,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00180",
+        "website": "http://incapcorp.com",
+        "full_time_employees": 667
     },
     "S0A.MU": {
         "short_name": "SCANFIL OYJ",
@@ -33,7 +41,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Finland",
-        "city": "Sievi"
+        "state": null,
+        "city": "Sievi",
+        "zipcode": "85410",
+        "website": "http://www.scanfil.com",
+        "full_time_employees": 3238
     },
     "SCANFL.HE": {
         "short_name": "Scanfil Plc",
@@ -45,6 +57,10 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Sievi"
+        "state": null,
+        "city": "Sievi",
+        "zipcode": "85410",
+        "website": "http://www.scanfil.com",
+        "full_time_employees": 3238
     }
 }

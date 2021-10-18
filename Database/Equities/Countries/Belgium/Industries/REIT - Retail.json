@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.qrf.be",
+        "full_time_employees": 6
     },
     "ASC.BR": {
         "short_name": "ASCENCIO",
@@ -21,7 +25,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Gosselies"
+        "state": null,
+        "city": "Gosselies",
+        "zipcode": "6041",
+        "website": "http://www.ascencio.be",
+        "full_time_employees": 19
     },
     "IJX.F": {
         "short_name": "VASTNED BELGIUM S.A.",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2600",
+        "website": "http://www.vastned.be",
+        "full_time_employees": 4
     },
     "QRF.BR": {
         "short_name": "QRF",
@@ -45,7 +57,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.qrf.be",
+        "full_time_employees": 6
     },
     "R6N.F": {
         "short_name": "RETAIL ESTATES",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.retailestates.com",
+        "full_time_employees": null
     },
     "RET.BR": {
         "short_name": "RETAIL ESTATES",
@@ -69,7 +89,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.retailestates.com",
+        "full_time_employees": null
     },
     "VASTB.BR": {
         "short_name": "VASTNED BELGIUM",
@@ -81,7 +105,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2600",
+        "website": "http://www.vastned.be",
+        "full_time_employees": 4
     },
     "WEHB.BR": {
         "short_name": "WERELDHAVE BELGIUM",
@@ -93,7 +121,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Vilvoorde"
+        "state": null,
+        "city": "Vilvoorde",
+        "zipcode": "1800",
+        "website": "http://www.wereldhavebelgium.com",
+        "full_time_employees": 46
     },
     "WPU.F": {
         "short_name": "WERELDHAVE BELGIUM SCA",
@@ -105,6 +137,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Vilvoorde"
+        "state": null,
+        "city": "Vilvoorde",
+        "zipcode": "1800",
+        "website": "http://www.wereldhavebelgium.com",
+        "full_time_employees": 46
     }
 }

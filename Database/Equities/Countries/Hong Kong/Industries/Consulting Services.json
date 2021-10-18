@@ -9,7 +9,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Kowloon"
+        "state": null,
+        "city": "Kowloon",
+        "zipcode": null,
+        "website": "http://www.sundart.com",
+        "full_time_employees": 1704
     },
     "1867.HK": {
         "short_name": "LKS HOLDING",
@@ -21,7 +25,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Kwun Tong"
+        "state": null,
+        "city": "Kwun Tong",
+        "zipcode": null,
+        "website": "http://www.lksholding.com",
+        "full_time_employees": 49
     },
     "3893.HK": {
         "short_name": "CROSSTEC",
@@ -33,7 +41,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "North Point"
+        "state": null,
+        "city": "North Point",
+        "zipcode": null,
+        "website": "http://www.crosstec.com.hk",
+        "full_time_employees": 37
     },
     "8040.HK": {
         "short_name": "DCB HOLDINGS",
@@ -45,7 +57,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Kwun Tong"
+        "state": null,
+        "city": "Kwun Tong",
+        "zipcode": null,
+        "website": "http://www.dcb.com.hk",
+        "full_time_employees": 65
     },
     "8341.HK": {
         "short_name": "AESO HOLDING",
@@ -57,7 +73,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Sheung Wan"
+        "state": null,
+        "city": "Sheung Wan",
+        "zipcode": null,
+        "website": "http://www.aeso.hk",
+        "full_time_employees": 32
     },
     "8501.HK": {
         "short_name": "SANBASE CORP",
@@ -69,7 +89,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Central"
+        "state": null,
+        "city": "Central",
+        "zipcode": null,
+        "website": "http://www.sclhk.com",
+        "full_time_employees": 88
     },
     "ARMC": {
         "short_name": "ASIARIM CORPORATION",
@@ -81,7 +105,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Hong Kong",
-        "city": "Wanchai"
+        "state": null,
+        "city": "Wanchai",
+        "zipcode": "89108",
+        "website": null,
+        "full_time_employees": 5
     },
     "PCHK": {
         "short_name": "PACIFIC CONQUEST HOLDINGS INC",
@@ -93,6 +121,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Hong Kong",
-        "city": "Central"
+        "state": null,
+        "city": "Central",
+        "zipcode": "77070",
+        "website": "http://pacific-conquest.com",
+        "full_time_employees": null
     }
 }

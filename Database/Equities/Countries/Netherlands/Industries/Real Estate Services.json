@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1083 HN",
+        "website": "http://bcp-nv.com",
+        "full_time_employees": 140
     },
     "BEVER.AS": {
         "short_name": "BEVER HOLDING",
@@ -21,7 +25,11 @@
         "exchange": "AMS",
         "market": "nl_market",
         "country": "Netherlands",
-        "city": "Wassenaar"
+        "state": null,
+        "city": "Wassenaar",
+        "zipcode": "2242 AB",
+        "website": "http://www.beverholding.nl",
+        "full_time_employees": 1
     },
     "EPP.JO": {
         "short_name": "EPP N.V.",
@@ -33,6 +41,10 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1082 MA",
+        "website": "http://www.epp-poland.com",
+        "full_time_employees": 212
     }
 }

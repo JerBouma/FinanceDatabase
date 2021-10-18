@@ -9,7 +9,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Malaysia",
-        "city": "Sekudai"
+        "state": null,
+        "city": "Sekudai",
+        "zipcode": "81120",
+        "website": "http://www.samurai2kaerosol.com",
+        "full_time_employees": null
     },
     "GRPEF": {
         "short_name": "GRAPHENE NANOCHEM PLC",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Malaysia",
-        "city": "Kuala Lumpur"
+        "state": null,
+        "city": "Kuala Lumpur",
+        "zipcode": "60000",
+        "website": "http://www.graphenenanochem.com",
+        "full_time_employees": 14
     },
     "VIP.AX": {
         "short_name": "VIP GLOVES FPO",
@@ -33,6 +41,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Malaysia",
-        "city": "Beranang"
+        "state": null,
+        "city": "Beranang",
+        "zipcode": "43700",
+        "website": "http://www.vipglove.com.my",
+        "full_time_employees": null
     }
 }

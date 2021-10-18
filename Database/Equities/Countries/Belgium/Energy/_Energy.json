@@ -9,7 +9,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.exmar.be",
+        "full_time_employees": null
     },
     "EURN.BR": {
         "short_name": "EURONAV",
@@ -21,7 +25,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.euronav.com",
+        "full_time_employees": null
     },
     "EURN": {
         "short_name": "Euronav NV",
@@ -33,7 +41,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.euronav.com",
+        "full_time_employees": 3720
     },
     "EXM.BR": {
         "short_name": "EXMAR",
@@ -45,7 +57,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.exmar.be",
+        "full_time_employees": null
     },
     "FLUX.BR": {
         "short_name": "FLUXYS BELGIUM D",
@@ -57,7 +73,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1040",
+        "website": "http://www.fluxys.com/en/company/fluxys-belgium",
+        "full_time_employees": 783
     },
     "OCW.F": {
         "short_name": "EURONAV NV NAM.",
@@ -69,6 +89,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.euronav.com",
+        "full_time_employees": 3720
     }
 }

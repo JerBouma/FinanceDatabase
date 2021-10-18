@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Milton"
+        "state": "QLD",
+        "city": "Milton",
+        "zipcode": "4064",
+        "website": "http://www.austineng.com",
+        "full_time_employees": 1248
     },
     "DZ2.F": {
         "short_name": "FBR LTD.",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "High Wycombe"
+        "state": "WA",
+        "city": "High Wycombe",
+        "zipcode": "6057",
+        "website": "http://www.fbr.com.au",
+        "full_time_employees": null
     },
     "FBR.AX": {
         "short_name": "FASTBRICK FPO",
@@ -33,7 +41,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "High Wycombe"
+        "state": "WA",
+        "city": "High Wycombe",
+        "zipcode": "6057",
+        "website": "http://www.fbr.com.au",
+        "full_time_employees": null
     },
     "FBRKF": {
         "short_name": "FBR LTD",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "High Wycombe"
+        "state": "WA",
+        "city": "High Wycombe",
+        "zipcode": "6057",
+        "website": "http://www.fbr.com.au",
+        "full_time_employees": null
     },
     "MXI.AX": {
         "short_name": "MAXITRANS FPO",
@@ -57,7 +73,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Derrimut"
+        "state": "VIC",
+        "city": "Derrimut",
+        "zipcode": "3030",
+        "website": "http://maxitrans.com",
+        "full_time_employees": null
     },
     "PPK.AX": {
         "short_name": "PPK GROUP FPO",
@@ -69,7 +89,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Brisbane"
+        "state": "QLD",
+        "city": "Brisbane",
+        "zipcode": "4000",
+        "website": "http://www.ppkgroup.com.au",
+        "full_time_employees": null
     },
     "RZA.F": {
         "short_name": "AUSTIN ENGINEERING LTD.",
@@ -81,7 +105,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Milton"
+        "state": "QLD",
+        "city": "Milton",
+        "zipcode": "4064",
+        "website": "http://www.austineng.com",
+        "full_time_employees": 1248
     },
     "SMW.NZ": {
         "short_name": "SMW Group Limited Ordinary Shar",
@@ -93,6 +121,10 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "Australia",
-        "city": "Rockhampton"
+        "state": "QLD",
+        "city": "Rockhampton",
+        "zipcode": "4700",
+        "website": "http://www.smwgroup.com.au",
+        "full_time_employees": null
     }
 }

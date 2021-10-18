@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "New Zealand",
-        "city": "Auckland"
+        "state": null,
+        "city": "Auckland",
+        "zipcode": "0622",
+        "website": "http://www.aftpharm.com",
+        "full_time_employees": 86
     },
     "AFT.NZ": {
         "short_name": "AFT Pharmaceuticals Ltd Ordinar",
@@ -21,7 +25,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Auckland"
+        "state": null,
+        "city": "Auckland",
+        "zipcode": "0622",
+        "website": "http://www.aftpharm.com",
+        "full_time_employees": 94
     },
     "CBD.NZ": {
         "short_name": "Cannasouth Limited Ordinary Sha",
@@ -33,7 +41,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Hamilton"
+        "state": null,
+        "city": "Hamilton",
+        "zipcode": "3256",
+        "website": "http://www.cannasouth.co.nz",
+        "full_time_employees": null
     },
     "CVT.NZ": {
         "short_name": "Comvita Limited Ordinary Shares",
@@ -45,7 +57,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Te Puke"
+        "state": null,
+        "city": "Te Puke",
+        "zipcode": "3153",
+        "website": "http://www.comvita.co.nz",
+        "full_time_employees": null
     },
     "RUA.NZ": {
         "short_name": "RUA Bioscience Limited Ordinary",
@@ -57,6 +73,10 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Gisborne"
+        "state": null,
+        "city": "Gisborne",
+        "zipcode": "4071",
+        "website": "http://www.ruabio.com",
+        "full_time_employees": 26
     }
 }

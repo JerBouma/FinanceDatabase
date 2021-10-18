@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75001",
+        "website": "http://www.jsatechnology.net",
+        "full_time_employees": null
     },
     "TE.PA": {
         "short_name": "TECHNIP ENERGIES",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92973",
+        "website": "http://www.technipenergies.com",
+        "full_time_employees": 15000
     },
     "THNPF": {
         "short_name": "TECHNIP ENERGIES N.V",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92973",
+        "website": "http://www.technipenergies.com",
+        "full_time_employees": 15000
     },
     "THNPY": {
         "short_name": "TECHNIP ENERGIES N.V SPON ADR E",
@@ -45,6 +57,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92973",
+        "website": "http://www.technipenergies.com",
+        "full_time_employees": 15000
     }
 }

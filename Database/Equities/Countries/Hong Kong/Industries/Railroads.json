@@ -9,7 +9,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Chai Wan"
+        "state": null,
+        "city": "Chai Wan",
+        "zipcode": null,
+        "website": "http://www.kcbh.com.hk",
+        "full_time_employees": 4000
     },
     "KWO.F": {
         "short_name": "TRANSP.INTL HLDG.LTD.HD 1",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Hong Kong",
-        "city": "Kowloon"
+        "state": null,
+        "city": "Kowloon",
+        "zipcode": null,
+        "website": "http://www.tih.hk",
+        "full_time_employees": 12941
     },
     "MRI.F": {
         "short_name": "MTR CORP. LTD",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Hong Kong",
-        "city": "Kowloon Bay"
+        "state": null,
+        "city": "Kowloon Bay",
+        "zipcode": null,
+        "website": "http://www.mtr.com.hk",
+        "full_time_employees": 34209
     },
     "MTCPY": {
         "short_name": "MTR CORPORATION LTD",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Hong Kong",
-        "city": "Kowloon Bay"
+        "state": null,
+        "city": "Kowloon Bay",
+        "zipcode": null,
+        "website": "http://www.mtr.com.hk",
+        "full_time_employees": 34209
     },
     "MTRJF": {
         "short_name": "MTR CORPORATION LTD",
@@ -57,6 +73,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Hong Kong",
-        "city": "Kowloon Bay"
+        "state": null,
+        "city": "Kowloon Bay",
+        "zipcode": null,
+        "website": "http://www.mtr.com.hk",
+        "full_time_employees": 34209
     }
 }

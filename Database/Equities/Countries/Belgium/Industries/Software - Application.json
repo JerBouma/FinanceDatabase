@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Leuven"
+        "state": null,
+        "city": "Leuven",
+        "zipcode": "3001",
+        "website": "http://www.materialise.com",
+        "full_time_employees": 2163
     },
     "60Z.F": {
         "short_name": "UNIFIEDPOST GRP S.A./N.V.",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "La Hulpe"
+        "state": null,
+        "city": "La Hulpe",
+        "zipcode": "1310",
+        "website": "http://www.unifiedpost.com",
+        "full_time_employees": 757
     },
     "MLTV.BR": {
         "short_name": "CHOICE",
@@ -33,7 +41,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Linden"
+        "state": null,
+        "city": "Linden",
+        "zipcode": "3210",
+        "website": "http://www.choice.be",
+        "full_time_employees": null
     },
     "MTLS": {
         "short_name": "Materialise NV",
@@ -45,7 +57,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "Belgium",
-        "city": "Leuven"
+        "state": null,
+        "city": "Leuven",
+        "zipcode": "3001",
+        "website": "http://www.materialise.com",
+        "full_time_employees": 2163
     },
     "UPG.BR": {
         "short_name": "UNIFIEDPOST GROUP",
@@ -57,6 +73,10 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "La Hulpe"
+        "state": null,
+        "city": "La Hulpe",
+        "zipcode": "1310",
+        "website": "http://www.unifiedpost.com",
+        "full_time_employees": 851
     }
 }

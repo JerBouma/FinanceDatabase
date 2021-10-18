@@ -9,7 +9,11 @@
         "exchange": "ISE",
         "market": "ie_market",
         "country": "Ireland",
-        "city": "Letterkenny"
+        "state": null,
+        "city": "Letterkenny",
+        "zipcode": null,
+        "website": "http://www.donegaligroup.com",
+        "full_time_employees": 121
     },
     "OGN.L": {
         "short_name": "ORIGIN ENTERPRISES PLC ORD EUR0",
@@ -21,7 +25,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "24",
+        "website": "http://www.originenterprises.com",
+        "full_time_employees": 2600
     },
     "OIZ.IR": {
         "short_name": "ORIGIN ENT. PLC",
@@ -33,7 +41,11 @@
         "exchange": "ISE",
         "market": "ie_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "24",
+        "website": "http://www.originenterprises.com",
+        "full_time_employees": 2600
     },
     "T7O.IR": {
         "short_name": "TOTAL PRODUCE PLC",
@@ -45,7 +57,11 @@
         "exchange": "ISE",
         "market": "ie_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "7",
+        "website": "http://www.totalproduce.com",
+        "full_time_employees": 5974
     },
     "TOT.L": {
         "short_name": "TOTAL PRODUCE PLC ORD EUR0.01 (",
@@ -57,7 +73,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "7",
+        "website": "http://www.totalproduce.com",
+        "full_time_employees": 5974
     },
     "TTPPF": {
         "short_name": "TOTAL PRODUCE PLC",
@@ -69,6 +89,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "7",
+        "website": "http://www.totalproduce.com",
+        "full_time_employees": 5974
     }
 }

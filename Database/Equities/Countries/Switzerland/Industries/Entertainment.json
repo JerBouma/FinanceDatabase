@@ -9,7 +9,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Pratteln"
+        "state": null,
+        "city": "Pratteln",
+        "zipcode": "4133",
+        "website": "http://www.hlee.ch",
+        "full_time_employees": 1374
     },
     "HLG.DE": {
         "short_name": "HIGHLIGHT CMNCTS INH.SF 1",
@@ -21,7 +25,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Switzerland",
-        "city": "Pratteln"
+        "state": null,
+        "city": "Pratteln",
+        "zipcode": "4133",
+        "website": "http://www.highlight-communications.ch",
+        "full_time_employees": 1440
     },
     "HLG.F": {
         "short_name": "HIGHLIGHT CMNCTS INH.SF 1",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Switzerland",
-        "city": "Pratteln"
+        "state": null,
+        "city": "Pratteln",
+        "zipcode": "4133",
+        "website": "http://www.highlight-communications.ch",
+        "full_time_employees": 1440
     },
     "KDCXF": {
         "short_name": "KUDELSKI SA",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Cheseaux-sur-Lausanne"
+        "state": null,
+        "city": "Cheseaux-sur-Lausanne",
+        "zipcode": "1033",
+        "website": "http://www.nagra.com",
+        "full_time_employees": null
     },
     "KUD.SW": {
         "short_name": "KUDELSKI I",
@@ -57,7 +73,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Cheseaux-sur-Lausanne"
+        "state": null,
+        "city": "Cheseaux-sur-Lausanne",
+        "zipcode": "1033",
+        "website": "http://www.nagra.com",
+        "full_time_employees": null
     },
     "MSU.MI": {
         "short_name": "MONDO TV SUISSE",
@@ -69,6 +89,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Switzerland",
-        "city": "Lugano"
+        "state": null,
+        "city": "Lugano",
+        "zipcode": null,
+        "website": "http://ch.mondotvgroup.com",
+        "full_time_employees": 3
     }
 }

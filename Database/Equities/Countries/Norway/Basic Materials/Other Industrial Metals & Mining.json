@@ -9,7 +9,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Mo i Rana"
+        "state": null,
+        "city": "Mo i Rana",
+        "zipcode": "8601",
+        "website": "http://ranagruber.no",
+        "full_time_employees": 300
     },
     "GEM.OL": {
         "short_name": "GREEN MINERALS AS",
@@ -21,7 +25,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Bergen"
+        "state": null,
+        "city": "Bergen",
+        "zipcode": "5035",
+        "website": "http://greenminerals.no",
+        "full_time_employees": null
     },
     "NOM.OL": {
         "short_name": "NORDIC MINING ASA",
@@ -33,7 +41,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0250",
+        "website": "http://www.nordicmining.com",
+        "full_time_employees": null
     },
     "RANA.OL": {
         "short_name": "RANA GRUBER AS",
@@ -45,6 +57,10 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Mo i Rana"
+        "state": null,
+        "city": "Mo i Rana",
+        "zipcode": "8601",
+        "website": "http://ranagruber.no",
+        "full_time_employees": 300
     }
 }

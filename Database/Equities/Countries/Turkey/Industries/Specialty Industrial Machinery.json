@@ -9,7 +9,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Gebze"
+        "state": null,
+        "city": "Gebze",
+        "zipcode": "41480",
+        "website": "http://www.alarko-carrier.com.tr",
+        "full_time_employees": 613
     },
     "BURCE.IS": {
         "short_name": "BURCELIK",
@@ -21,7 +25,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Bursa"
+        "state": null,
+        "city": "Bursa",
+        "zipcode": "16140",
+        "website": "http://www.burcelik.com.tr",
+        "full_time_employees": 207
     },
     "KLMSN.IS": {
         "short_name": "KLIMASAN KLIMA",
@@ -33,7 +41,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Manisa"
+        "state": null,
+        "city": "Manisa",
+        "zipcode": "45030",
+        "website": "http://www.klimasan.com.tr",
+        "full_time_employees": 1834
     },
     "PARSN.IS": {
         "short_name": "PARSAN",
@@ -45,6 +57,10 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": null,
+        "website": "http://www.parsan.com",
+        "full_time_employees": 1086
     }
 }

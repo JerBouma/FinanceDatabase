@@ -9,7 +9,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Frasnes-lez-Anvaing"
+        "state": null,
+        "city": "Frasnes-lez-Anvaing",
+        "zipcode": "7911",
+        "website": "http://www.rosier.eu",
+        "full_time_employees": 226
     },
     "TESB.BR": {
         "short_name": "TESSENDERLO",
@@ -21,7 +25,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1050",
+        "website": "http://www.tessenderlo.com",
+        "full_time_employees": 4793
     },
     "TEZ.F": {
         "short_name": "TESSENDERLO GROUP P.S.",
@@ -33,6 +41,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1050",
+        "website": "http://www.tessenderlo.com",
+        "full_time_employees": 4793
     }
 }

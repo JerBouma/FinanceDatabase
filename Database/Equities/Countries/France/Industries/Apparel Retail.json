@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Saumur"
+        "state": null,
+        "city": "Saumur",
+        "zipcode": "49400",
+        "website": "http://www.cesar-group.fr",
+        "full_time_employees": 25
     },
     "ALDAR.PA": {
         "short_name": "DAMARTEX",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Roubaix"
+        "state": null,
+        "city": "Roubaix",
+        "zipcode": "59100",
+        "website": "http://www.damartex.com",
+        "full_time_employees": 3300
     },
     "ALFBA.PA": {
         "short_name": "FASHION B AIR",
@@ -33,7 +41,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75002",
+        "website": "http://www.fashion-belair.com",
+        "full_time_employees": 72
     },
     "MLSIM.PA": {
         "short_name": "SIMO INTERNATIONAL",
@@ -45,7 +57,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Gennevilliers"
+        "state": null,
+        "city": "Gennevilliers",
+        "zipcode": "92230",
+        "website": "http://www.simointernational.com",
+        "full_time_employees": null
     },
     "NR21.PA": {
         "short_name": "NR21",
@@ -57,7 +73,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Colombes"
+        "state": null,
+        "city": "Colombes",
+        "zipcode": "92700",
+        "website": "http://www.nr21.eu",
+        "full_time_employees": null
     },
     "SFC.F": {
         "short_name": "SMCP S.A.S.(PROM.) EO-,10",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75001",
+        "website": "http://www.smcp.com",
+        "full_time_employees": null
     },
     "SMCP.PA": {
         "short_name": "SMCP",
@@ -81,6 +105,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75001",
+        "website": "http://www.smcp.com",
+        "full_time_employees": null
     }
 }

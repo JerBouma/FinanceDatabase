@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Montbonnot Saint Martin"
+        "state": null,
+        "city": "Montbonnot Saint Martin",
+        "zipcode": "38330",
+        "website": "http://www.kalrayinc.com",
+        "full_time_employees": 86
     },
     "6SQB.F": {
         "short_name": "SEQUANS COMMNUN.S.ADR NEW",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92700",
+        "website": "http://www.sequans.com",
+        "full_time_employees": 250
     },
     "ALKAL.PA": {
         "short_name": "KALRAY",
@@ -33,7 +41,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Montbonnot Saint Martin"
+        "state": null,
+        "city": "Montbonnot Saint Martin",
+        "zipcode": "38330",
+        "website": "http://www.kalrayinc.com",
+        "full_time_employees": 86
     },
     "AS6A.F": {
         "short_name": "PARAGON ID  EO 35",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Mougins"
+        "state": null,
+        "city": "Mougins",
+        "zipcode": "06250",
+        "website": "http://www.paragon-id.com",
+        "full_time_employees": 500
     },
     "PID.PA": {
         "short_name": "PARAGON ID",
@@ -57,7 +73,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Mougins"
+        "state": null,
+        "city": "Mougins",
+        "zipcode": "06250",
+        "website": "http://www.paragon-id.com",
+        "full_time_employees": 500
     },
     "SQNS": {
         "short_name": "Sequans Communications S.A.",
@@ -69,6 +89,10 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92700",
+        "website": "http://www.sequans.com",
+        "full_time_employees": 250
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Caesarea"
+        "state": null,
+        "city": "Caesarea",
+        "zipcode": null,
+        "website": "http://www.menivim-reit.co.il",
+        "full_time_employees": null
     },
     "RIT1.TA": {
         "short_name": "REIT 1 LTD",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": null,
+        "website": "http://reit1.co.il",
+        "full_time_employees": null
     },
     "SLARL.TA": {
         "short_name": "SELLA CAPITAL REAL",
@@ -33,6 +41,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Ramat Gan"
+        "state": null,
+        "city": "Ramat Gan",
+        "zipcode": "52520",
+        "website": "http://www.sellacapital.com",
+        "full_time_employees": 1
     }
 }

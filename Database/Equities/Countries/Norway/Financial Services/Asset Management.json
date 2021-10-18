@@ -9,7 +9,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Lysaker"
+        "state": null,
+        "city": "Lysaker",
+        "zipcode": "1366",
+        "website": "http://www.akerhorizons.com",
+        "full_time_employees": null
     },
     "NORTH.OL": {
         "short_name": "NORTH ENERGY ASA",
@@ -21,7 +25,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0252",
+        "website": "http://www.northenergy.no",
+        "full_time_employees": 2
     },
     "RN2.F": {
         "short_name": "NORTH ENERGY ASA  NK 1",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0252",
+        "website": "http://www.northenergy.no",
+        "full_time_employees": 2
     },
     "T1A.F": {
         "short_name": "TREASURE ASA  NK 1",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Lysaker"
+        "state": null,
+        "city": "Lysaker",
+        "zipcode": "1324",
+        "website": "http://www.treasureasa.com",
+        "full_time_employees": null
     },
     "TRE.OL": {
         "short_name": "TREASURE ASA",
@@ -57,6 +73,10 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Lysaker"
+        "state": null,
+        "city": "Lysaker",
+        "zipcode": "1324",
+        "website": "http://www.treasureasa.com",
+        "full_time_employees": null
     }
 }

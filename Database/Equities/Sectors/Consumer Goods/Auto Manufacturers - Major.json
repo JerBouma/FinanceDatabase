@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "107-8556",
+        "website": "http://www.honda.co.jp",
+        "full_time_employees": 36062
     },
     "NSANYN.MX": {
         "short_name": "NISSAN MOTOR CO",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Yokohama"
+        "state": null,
+        "city": "Yokohama",
+        "zipcode": "220-8686",
+        "website": "http://www.nissan-global.com",
+        "full_time_employees": 136134
     },
     "TTMN.MX": {
         "short_name": "TATA MOTORS LIMITED",
@@ -33,6 +41,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400093",
+        "website": "http://www.tatamotors.com",
+        "full_time_employees": 78906
     }
 }

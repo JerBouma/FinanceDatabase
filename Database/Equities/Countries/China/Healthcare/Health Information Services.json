@@ -9,7 +9,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100028",
+        "website": "http://www.vanfund.cn",
+        "full_time_employees": 670
     },
     "2158.HK": {
         "short_name": "YIDU TECH",
@@ -21,7 +25,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": null,
+        "website": "http://www.yidutechgroup.com",
+        "full_time_employees": 990
     },
     "2159.HK": {
         "short_name": "MEDIWELCOME",
@@ -33,7 +41,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": null,
+        "website": "http://www.mediwelcome.com",
+        "full_time_employees": 392
     },
     "300253.SZ": {
         "short_name": "WINNING HEALTH TEC",
@@ -45,7 +57,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": null,
+        "website": "http://www.winning.com.cn",
+        "full_time_employees": 5294
     },
     "300288.SZ": {
         "short_name": "GUIYANG LONGMASTER",
@@ -57,7 +73,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Guiyang"
+        "state": null,
+        "city": "Guiyang",
+        "zipcode": null,
+        "website": "http://www.longmaster.com.cn",
+        "full_time_employees": 1083
     },
     "300550.SZ": {
         "short_name": "HEREN HEALTH CO LT",
@@ -69,7 +89,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Hangzhou"
+        "state": null,
+        "city": "Hangzhou",
+        "zipcode": "310051",
+        "website": "http://www.herenit.com",
+        "full_time_employees": null
     },
     "600767.SS": {
         "short_name": "WINSAN(CHENGDU)MEDICAL SCIE & T",
@@ -81,7 +105,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": null,
+        "website": "http://www.winsan.cn",
+        "full_time_employees": 46
     },
     "603990.SS": {
         "short_name": "SUZHOU MEDICALSYSTEM TECHNOLOGY",
@@ -93,7 +121,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Suzhou"
+        "state": null,
+        "city": "Suzhou",
+        "zipcode": "215000",
+        "website": "http://www.medicalsystem.com.cn",
+        "full_time_employees": 678
     },
     "688555.SS": {
         "short_name": "ESSENCE INFORMATION TECHNOLOGY ",
@@ -105,7 +137,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Tianjin"
+        "state": null,
+        "city": "Tianjin",
+        "zipcode": "300457",
+        "website": "http://www.sino-essence.com",
+        "full_time_employees": null
     },
     "MDCE": {
         "short_name": "MEDICAL CARE TECHNOLOGIES INC",
@@ -117,7 +153,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "10009",
+        "website": "http://www.medicaretechinc.com",
+        "full_time_employees": null
     },
     "PANHF": {
         "short_name": "PING AN HEALTHCARE & TECHNO CO ",
@@ -129,7 +169,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": null,
+        "website": "http://www.pagd.net",
+        "full_time_employees": 4226
     },
     "QDMI": {
         "short_name": "QDM INTL INC",
@@ -141,7 +185,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": "200051",
+        "website": null,
+        "full_time_employees": null
     },
     "SY": {
         "short_name": "So-Young International Inc. - A",
@@ -153,7 +201,11 @@
         "exchange": "NGM",
         "market": "us_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100102",
+        "website": "http://www.soyoung.com",
+        "full_time_employees": 1564
     },
     "ZCMD": {
         "short_name": "Zhongchao Inc.",
@@ -165,6 +217,10 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": "200040",
+        "website": "http://www.izcmd.com",
+        "full_time_employees": null
     }
 }

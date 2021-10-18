@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2B 6AN",
+        "website": "http://www.laing.com",
+        "full_time_employees": 156
     },
     "JLG.L": {
         "short_name": "JOHN LAING GROUP PLC ORD 10P",
@@ -21,7 +25,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2B 6AN",
+        "website": "http://www.laing.com",
+        "full_time_employees": 156
     },
     "SUH.L": {
         "short_name": "SUTTON HARBOUR GROUP PLC ORD 1P",
@@ -33,6 +41,10 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Plymouth"
+        "state": null,
+        "city": "Plymouth",
+        "zipcode": "PL4 0ES",
+        "website": "http://www.suttonharbourgroup.com",
+        "full_time_employees": 30
     }
 }

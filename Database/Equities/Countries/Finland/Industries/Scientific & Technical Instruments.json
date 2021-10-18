@@ -9,7 +9,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Espoo"
+        "state": null,
+        "city": "Espoo",
+        "zipcode": "02150",
+        "website": "http://www.deetee.com",
+        "full_time_employees": 444
     },
     "VAIAS.HE": {
         "short_name": "Vaisala Corporation A",
@@ -21,7 +25,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Vantaa"
+        "state": null,
+        "city": "Vantaa",
+        "zipcode": "01670",
+        "website": "http://www.vaisala.com",
+        "full_time_employees": 1933
     },
     "VAYA.F": {
         "short_name": "VAISALA OY  A",
@@ -33,6 +41,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Finland",
-        "city": "Vantaa"
+        "state": null,
+        "city": "Vantaa",
+        "zipcode": "01670",
+        "website": "http://www.vaisala.com",
+        "full_time_employees": 1933
     }
 }

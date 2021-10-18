@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3121",
+        "website": "http://www.accentgr.com.au",
+        "full_time_employees": null
     },
     "CCX.AX": {
         "short_name": "CITYCHIC FPO",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Alexandria"
+        "state": "NSW",
+        "city": "Alexandria",
+        "zipcode": "2015",
+        "website": "http://www.citychiccollective.com.au",
+        "full_time_employees": 640
     },
     "MOZ.AX": {
         "short_name": "MOSAIC FPO",
@@ -33,7 +41,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Rosebery"
+        "state": "NSW",
+        "city": "Rosebery",
+        "zipcode": "2018",
+        "website": "http://www.mosaicbrandslimited.com.au",
+        "full_time_employees": null
     },
     "PMV.AX": {
         "short_name": "PREM INV. FPO",
@@ -45,7 +57,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3004",
+        "website": "http://www.premierinvestments.com.au",
+        "full_time_employees": 9000
     },
     "UNI.AX": {
         "short_name": "UNISTORE FPO",
@@ -57,6 +73,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Nundah"
+        "state": "QLD",
+        "city": "Nundah",
+        "zipcode": "4012",
+        "website": "http://www.universalstore.com",
+        "full_time_employees": 1065
     }
 }

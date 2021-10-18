@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Docklands"
+        "state": "VIC",
+        "city": "Docklands",
+        "zipcode": "3008",
+        "website": "http://www.myer.com.au",
+        "full_time_employees": null
     },
     "AUK.AX": {
         "short_name": "AUMAKE LTD FPO",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Ultimo"
+        "state": "NSW",
+        "city": "Ultimo",
+        "zipcode": "2007",
+        "website": "http://aumake.com.au",
+        "full_time_employees": null
     },
     "HNN.F": {
         "short_name": "HARVEY NORMAN HLDGS",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Homebush West"
+        "state": "NSW",
+        "city": "Homebush West",
+        "zipcode": "2140",
+        "website": "http://www.harveynormanholdings.com.au",
+        "full_time_employees": 5732
     },
     "HVN.AX": {
         "short_name": "HARVEY FPO",
@@ -45,7 +57,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Homebush West"
+        "state": "NSW",
+        "city": "Homebush West",
+        "zipcode": "2140",
+        "website": "http://www.harveynormanholdings.com.au",
+        "full_time_employees": 5732
     },
     "MYR.AX": {
         "short_name": "MYER FPO",
@@ -57,6 +73,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Docklands"
+        "state": "VIC",
+        "city": "Docklands",
+        "zipcode": "3008",
+        "website": "http://www.myer.com.au",
+        "full_time_employees": null
     }
 }

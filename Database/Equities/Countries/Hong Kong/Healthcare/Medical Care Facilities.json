@@ -9,7 +9,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Kowloon Bay"
+        "state": null,
+        "city": "Kowloon Bay",
+        "zipcode": null,
+        "website": "http://www.aidigong.hk",
+        "full_time_employees": null
     },
     "0722.HK": {
         "short_name": "UMP",
@@ -21,7 +25,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Central"
+        "state": null,
+        "city": "Central",
+        "zipcode": null,
+        "website": "http://www2.ump.com.hk",
+        "full_time_employees": 451
     },
     "2189.HK": {
         "short_name": "KATO (HK) HLDGS",
@@ -33,7 +41,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Tuen Mun"
+        "state": null,
+        "city": "Tuen Mun",
+        "zipcode": null,
+        "website": "http://www.elderlyhk.com",
+        "full_time_employees": 531
     },
     "2293.HK": {
         "short_name": "BAMBOOSHEALTH",
@@ -45,7 +57,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Tsim Sha Tsui"
+        "state": null,
+        "city": "Tsim Sha Tsui",
+        "zipcode": null,
+        "website": "http://www.bamboos.com.hk",
+        "full_time_employees": 73
     },
     "8143.HK": {
         "short_name": "GF HEALTHCARE",
@@ -57,7 +73,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Central"
+        "state": null,
+        "city": "Central",
+        "zipcode": null,
+        "website": "http://www.gf-healthcare.com",
+        "full_time_employees": 233
     },
     "8307.HK": {
         "short_name": "MEDICSKIN",
@@ -69,7 +89,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Central"
+        "state": null,
+        "city": "Central",
+        "zipcode": null,
+        "website": "http://www.medicskin.com",
+        "full_time_employees": 36
     },
     "SMIF.F": {
         "short_name": "CHINA MED.+HLTH.G.HD-0005",
@@ -81,7 +105,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Hong Kong",
-        "city": "Wan Chai"
+        "state": null,
+        "city": "Wan Chai",
+        "zipcode": null,
+        "website": "http://www.cmhg.com.hk",
+        "full_time_employees": 2462
     },
     "TNHA.F": {
         "short_name": "TOWN HEALTH INTL M.GR.NEW",
@@ -93,6 +121,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Hong Kong",
-        "city": "Sha Tin"
+        "state": null,
+        "city": "Sha Tin",
+        "zipcode": null,
+        "website": "http://www.townhealth.com",
+        "full_time_employees": 1016
     }
 }

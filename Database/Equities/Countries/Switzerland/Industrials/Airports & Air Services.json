@@ -9,7 +9,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Zurich"
+        "state": null,
+        "city": "Zurich",
+        "zipcode": "8058",
+        "website": "http://www.flughafen-zuerich.ch",
+        "full_time_employees": 1788
     },
     "PRFN.SW": {
         "short_name": "PERFECT N",
@@ -21,6 +25,10 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Lausanne"
+        "state": null,
+        "city": "Lausanne",
+        "zipcode": "1006",
+        "website": "http://www.perfect.aero",
+        "full_time_employees": null
     }
 }

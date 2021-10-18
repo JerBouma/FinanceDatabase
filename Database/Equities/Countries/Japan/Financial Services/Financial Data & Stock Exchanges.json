@@ -9,7 +9,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": null,
+        "website": "http://www.fisco.co.jp",
+        "full_time_employees": 45
     },
     "JPXGY": {
         "short_name": "JAPAN EXCHANGE GROUP",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "103-8224",
+        "website": "http://www.jpx.co.jp",
+        "full_time_employees": null
     },
     "MJP.F": {
         "short_name": "MORNINGSTAR JAPAN",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "106-6015",
+        "website": "http://www.morningstar.co.jp",
+        "full_time_employees": null
     },
     "OSCUF": {
         "short_name": "JAPAN EXCHANGE GROUP",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "103-8224",
+        "website": "http://www.jpx.co.jp",
+        "full_time_employees": null
     },
     "OSKU.F": {
         "short_name": "JAPAN EX UN.ADR 1/2 O.N.",
@@ -57,6 +73,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "103-8224",
+        "website": "http://www.jpx.co.jp",
+        "full_time_employees": null
     }
 }

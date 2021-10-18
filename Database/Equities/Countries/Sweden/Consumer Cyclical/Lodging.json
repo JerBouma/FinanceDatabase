@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": null,
+        "website": "http://www.scandichotelsgroup.com",
+        "full_time_employees": 4521
     },
     "PNDX-B.ST": {
         "short_name": "Pandox AB ser. B",
@@ -21,7 +25,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "101 20",
+        "website": "http://www.pandox.se",
+        "full_time_employees": 428
     },
     "POX.F": {
         "short_name": "PANDOX AB B",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "101 20",
+        "website": "http://www.pandox.se",
+        "full_time_employees": 428
     },
     "SHOT.ST": {
         "short_name": "Scandic Hotels Group AB",
@@ -45,6 +57,10 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": null,
+        "website": "http://www.scandichotelsgroup.com",
+        "full_time_employees": 4521
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Malaysia",
-        "city": "Shah Alam"
+        "state": null,
+        "city": "Shah Alam",
+        "zipcode": null,
+        "website": "http://www.henghup.com",
+        "full_time_employees": 163
     },
     "NPW.SI": {
         "short_name": "MSC",
@@ -21,6 +25,10 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Malaysia",
-        "city": "Port Klang"
+        "state": null,
+        "city": "Port Klang",
+        "zipcode": "42920",
+        "website": "http://www.msmelt.com",
+        "full_time_employees": null
     }
 }

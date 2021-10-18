@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "St Ouen"
+        "state": null,
+        "city": "St Ouen",
+        "zipcode": "93400",
+        "website": "http://www.alstom.com",
+        "full_time_employees": 38900
     },
     "SUN.MX": {
         "short_name": "SCHNEIDER ELECTRIC SE",
@@ -21,6 +25,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Rueil-Malmaison"
+        "state": null,
+        "city": "Rueil-Malmaison",
+        "zipcode": "92500",
+        "website": "http://www.se.com/ww/en",
+        "full_time_employees": 135000
     }
 }

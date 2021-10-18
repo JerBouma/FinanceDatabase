@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Warriewood"
+        "state": "NSW",
+        "city": "Warriewood",
+        "zipcode": "2102",
+        "website": "http://www.ambertech.com.au",
+        "full_time_employees": 125
     },
     "D0D.F": {
         "short_name": "DICKER DATA LTD",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Kurnell"
+        "state": "NSW",
+        "city": "Kurnell",
+        "zipcode": "2231",
+        "website": "http://www.dickerdata.com.au",
+        "full_time_employees": 525
     },
     "DDR.AX": {
         "short_name": "DICKERDATA FPO",
@@ -33,7 +41,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Kurnell"
+        "state": "NSW",
+        "city": "Kurnell",
+        "zipcode": "2231",
+        "website": "http://www.dickerdata.com.au",
+        "full_time_employees": 525
     },
     "TTA.AX": {
         "short_name": "TTA HOLDIN FPO",
@@ -45,6 +57,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Keilor Park"
+        "state": "VIC",
+        "city": "Keilor Park",
+        "zipcode": "3042",
+        "website": "http://www.teac.com.au",
+        "full_time_employees": 16
     }
 }

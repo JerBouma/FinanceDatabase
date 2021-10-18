@@ -9,7 +9,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "New Zealand",
-        "city": "Wellington"
+        "state": null,
+        "city": "Wellington",
+        "zipcode": null,
+        "website": "http://www.newzealandenergy.com",
+        "full_time_employees": null
     },
     "NZEOF": {
         "short_name": "NEW ZEALAND OIL & GAS",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "New Zealand",
-        "city": "Wellington"
+        "state": null,
+        "city": "Wellington",
+        "zipcode": "6011",
+        "website": "http://www.nzog.com",
+        "full_time_employees": null
     },
     "NZERF": {
         "short_name": "NEW ZEALAND ENERGY CORP",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "New Zealand",
-        "city": "Wellington"
+        "state": null,
+        "city": "Wellington",
+        "zipcode": null,
+        "website": "http://www.newzealandenergy.com",
+        "full_time_employees": null
     },
     "NZO.NZ": {
         "short_name": "New Zealand Oil & Gas Ltd Ordin",
@@ -45,6 +57,10 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Wellington"
+        "state": null,
+        "city": "Wellington",
+        "zipcode": "6011",
+        "website": "http://www.nzog.com",
+        "full_time_employees": null
     }
 }

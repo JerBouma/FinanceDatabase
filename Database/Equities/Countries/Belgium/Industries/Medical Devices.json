@@ -9,7 +9,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Gent"
+        "state": null,
+        "city": "Gent",
+        "zipcode": "9052",
+        "website": "http://www.sequanamedical.com",
+        "full_time_employees": null
     },
     "IBAB.BR": {
         "short_name": "IBA",
@@ -21,7 +25,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Louvain-la-Neuve"
+        "state": null,
+        "city": "Louvain-la-Neuve",
+        "zipcode": "1348",
+        "website": "http://www.iba-worldwide.com",
+        "full_time_employees": 1500
     },
     "IOB.F": {
         "short_name": "ION BEAM APPLICATIONS SA",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Louvain-la-Neuve"
+        "state": null,
+        "city": "Louvain-la-Neuve",
+        "zipcode": "1348",
+        "website": "http://www.iba-worldwide.com",
+        "full_time_employees": 1500
     },
     "IOBCF": {
         "short_name": "IBA(ION BEAM APPLICATIONS)",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Belgium",
-        "city": "Louvain-la-Neuve"
+        "state": null,
+        "city": "Louvain-la-Neuve",
+        "zipcode": "1348",
+        "website": "http://www.iba-worldwide.com",
+        "full_time_employees": 1500
     },
     "SEQUA.BR": {
         "short_name": "SEQUANA MEDICAL",
@@ -57,6 +73,10 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Gent"
+        "state": null,
+        "city": "Gent",
+        "zipcode": "9052",
+        "website": "http://www.sequanamedical.com",
+        "full_time_employees": null
     }
 }

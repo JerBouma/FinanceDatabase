@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "6701101",
+        "website": null,
+        "full_time_employees": null
     },
     "SHLTN.SW": {
         "short_name": "SHL TELEMEDICINE N",
@@ -21,7 +25,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "67891",
+        "website": "http://www.shl-telemedicine.com",
+        "full_time_employees": null
     },
     "SZO.F": {
         "short_name": "SHL TELEMEDICINE  IS-,01",
@@ -33,6 +41,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "67891",
+        "website": "http://www.shl-telemedicine.com",
+        "full_time_employees": null
     }
 }

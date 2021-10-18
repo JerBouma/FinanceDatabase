@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75116",
+        "website": "http://www.financiere-marjos.com",
+        "full_time_employees": null
     },
     "MLNEI.PA": {
         "short_name": "NEWSINVEST",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.newsinvest.com",
+        "full_time_employees": null
     },
     "ODET.PA": {
         "short_name": "FINANCIERE ODET",
@@ -33,6 +41,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.financiere-odet.com/fr-fr",
+        "full_time_employees": 76460
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Vitacura"
+        "state": null,
+        "city": "Vitacura",
+        "zipcode": null,
+        "website": "http://almendral.cl",
+        "full_time_employees": 12073
     },
     "CTC.SN": {
         "short_name": "TELEFONICA CHILE S",
@@ -21,7 +25,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago"
+        "state": null,
+        "city": "Santiago",
+        "zipcode": null,
+        "website": "http://www.telefonicachile.cl",
+        "full_time_employees": null
     },
     "ENTEL.SN": {
         "short_name": "EMP NAC TELECOMUNI",
@@ -33,6 +41,10 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago"
+        "state": null,
+        "city": "Santiago",
+        "zipcode": null,
+        "website": "http://www.entel.cl",
+        "full_time_employees": 12070
     }
 }

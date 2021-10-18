@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Newstead"
+        "state": "QLD",
+        "city": "Newstead",
+        "zipcode": "4006",
+        "website": "http://www.eagersautomotive.com.au",
+        "full_time_employees": 8537
     },
     "ASG.AX": {
         "short_name": "AUTOSPORTS FPO",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Leichhardt"
+        "state": "NSW",
+        "city": "Leichhardt",
+        "zipcode": "2040",
+        "website": "http://autosportsgroup.com.au",
+        "full_time_employees": null
     },
     "MTO.AX": {
         "short_name": "MOTORCYCLE FPO",
@@ -33,7 +41,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Slacks Creek"
+        "state": "QLD",
+        "city": "Slacks Creek",
+        "zipcode": "4127",
+        "website": "http://www.mcholdings.com.au",
+        "full_time_employees": null
     },
     "PWR.AX": {
         "short_name": "PETERWA FPO",
@@ -45,6 +57,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2170",
+        "website": "http://www.peterwarren.com.au",
+        "full_time_employees": 1500
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Mannheim"
+        "state": null,
+        "city": "Mannheim",
+        "zipcode": "68161",
+        "website": "http://rohstoff.de",
+        "full_time_employees": 24
     },
     "DR0.F": {
         "short_name": "DT.ROHSTOFF AG NA O.N.",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Mannheim"
+        "state": null,
+        "city": "Mannheim",
+        "zipcode": "68161",
+        "website": "http://rohstoff.de",
+        "full_time_employees": 24
     },
     "NXI.MU": {
         "short_name": "ACTIVA RESOURCES AG",
@@ -33,6 +41,10 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Bad Homburg"
+        "state": null,
+        "city": "Bad Homburg",
+        "zipcode": "61348",
+        "website": null,
+        "full_time_employees": 9
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": null,
+        "website": "http://www.galileo-technology.com",
+        "full_time_employees": 5
     },
     "INFR.TA": {
         "short_name": "INFIMER LTD",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Avihayil"
+        "state": null,
+        "city": "Avihayil",
+        "zipcode": "4291000",
+        "website": "http://www.infimer.com",
+        "full_time_employees": 23700
     },
     "SEMG.TA": {
         "short_name": "SEACH MEDICAL",
@@ -33,6 +41,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Hod Hasharon"
+        "state": null,
+        "city": "Hod Hasharon",
+        "zipcode": "45110",
+        "website": "http://www.seach.co.il",
+        "full_time_employees": null
     }
 }

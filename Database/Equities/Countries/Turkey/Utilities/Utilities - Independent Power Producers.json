@@ -9,7 +9,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": "06700",
+        "website": "http://www.ayen.com.tr",
+        "full_time_employees": 249
     },
     "CANTE.IS": {
         "short_name": "CAN2 TERMIK",
@@ -21,7 +25,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34746",
+        "website": "http://www.odasenerji.com.tr/en/uretim",
+        "full_time_employees": 558
     },
     "TRCAS.IS": {
         "short_name": "TURCAS PETROL",
@@ -33,6 +41,10 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34398",
+        "website": "http://www.turcas.com.tr",
+        "full_time_employees": 86
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Switzerland",
-        "city": "Basel"
+        "state": null,
+        "city": "Basel",
+        "zipcode": "4002",
+        "website": "http://www.lonza.com",
+        "full_time_employees": 16540
     },
     "A.MX": {
         "short_name": "AGILENT TECHNOLOGIES INC",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "Santa Clara"
+        "state": "CA",
+        "city": "Santa Clara",
+        "zipcode": "95051",
+        "website": "http://www.agilent.com",
+        "full_time_employees": 16400
     },
     "ERFNV.PA": {
         "short_name": "EUROFINS SCIE NV21",
@@ -33,7 +41,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "Luxembourg",
-        "city": "Luxembourg City"
+        "state": null,
+        "city": "Luxembourg City",
+        "zipcode": "1526",
+        "website": "http://www.eurofins.com",
+        "full_time_employees": 51516
     },
     "PHIAN.MX": {
         "short_name": "KONINKLIJKE PHILIPS NV",
@@ -45,6 +57,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1096 BC",
+        "website": "http://www.philips.com",
+        "full_time_employees": 77343
     }
 }

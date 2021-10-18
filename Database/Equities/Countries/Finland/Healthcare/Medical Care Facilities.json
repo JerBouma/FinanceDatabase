@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Finland",
-        "city": "Tampere"
+        "state": null,
+        "city": "Tampere",
+        "zipcode": "33200",
+        "website": "http://www.pihlajalinna.fi",
+        "full_time_employees": 5995
     },
     "4TS.F": {
         "short_name": "TERVEYSTALO OYJ",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00100",
+        "website": "http://www.terveystalo.com",
+        "full_time_employees": 8427
     },
     "PIHLIS.HE": {
         "short_name": "Pihlajalinna Oyj",
@@ -33,7 +41,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Tampere"
+        "state": null,
+        "city": "Tampere",
+        "zipcode": "33200",
+        "website": "http://www.pihlajalinna.fi",
+        "full_time_employees": 5995
     },
     "TTALO.HE": {
         "short_name": "Terveystalo Plc",
@@ -45,6 +57,10 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00100",
+        "website": "http://www.terveystalo.com",
+        "full_time_employees": 8427
     }
 }

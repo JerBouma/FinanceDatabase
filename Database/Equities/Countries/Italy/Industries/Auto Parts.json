@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20126",
+        "website": "http://www.pirelli.com",
+        "full_time_employees": 29362
     },
     "ARQ.F": {
         "short_name": "LANDI RENZO S.P.A. EO-,01",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Cavriago"
+        "state": "RE",
+        "city": "Cavriago",
+        "zipcode": "42025",
+        "website": "http://www.landirenzogroup.com",
+        "full_time_employees": 525
     },
     "BN7.F": {
         "short_name": "CIR SPA  EO 0,50",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.cirgroup.it",
+        "full_time_employees": null
     },
     "BRCA.F": {
         "short_name": "BREMBO S.P.A. NOM.",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Stezzano"
+        "state": "BG",
+        "city": "Stezzano",
+        "zipcode": "24040",
+        "website": "http://www.brembo.com",
+        "full_time_employees": 11039
     },
     "BRE.MI": {
         "short_name": "BREMBO",
@@ -57,7 +73,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Stezzano"
+        "state": "BG",
+        "city": "Stezzano",
+        "zipcode": "24040",
+        "website": "http://www.brembo.com",
+        "full_time_employees": 11039
     },
     "BRE.VI": {
         "short_name": "BREMBO SPA",
@@ -69,7 +89,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Stezzano"
+        "state": "BG",
+        "city": "Stezzano",
+        "zipcode": "24040",
+        "website": "http://www.brembo.com",
+        "full_time_employees": 11039
     },
     "CIR.MI": {
         "short_name": "CIR",
@@ -81,7 +105,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.cirgroup.it",
+        "full_time_employees": null
     },
     "LR.MI": {
         "short_name": "LANDI RENZO",
@@ -93,7 +121,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Cavriago"
+        "state": "RE",
+        "city": "Cavriago",
+        "zipcode": "42025",
+        "website": "http://www.landirenzogroup.com",
+        "full_time_employees": 525
     },
     "MOLD.MI": {
         "short_name": "COSTAMP GROUP",
@@ -105,7 +137,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Sirone"
+        "state": "LC",
+        "city": "Sirone",
+        "zipcode": "23844",
+        "website": "http://www.costampgroup.it",
+        "full_time_employees": 257
     },
     "PC.VI": {
         "short_name": "PIRELLI SPA",
@@ -117,7 +153,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20126",
+        "website": "http://www.pirelli.com",
+        "full_time_employees": 29362
     },
     "PIRC.MI": {
         "short_name": "PIRELLI & C",
@@ -129,7 +169,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20126",
+        "website": "http://www.pirelli.com",
+        "full_time_employees": 29362
     },
     "SO.MI": {
         "short_name": "SOGEFI",
@@ -141,6 +185,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.sogefigroup.com",
+        "full_time_employees": 6026
     }
 }

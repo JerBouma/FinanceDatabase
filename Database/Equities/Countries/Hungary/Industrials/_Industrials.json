@@ -9,7 +9,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Hungary",
-        "city": "Budapest"
+        "state": null,
+        "city": "Budapest",
+        "zipcode": "1239",
+        "website": "http://www.waberers.com",
+        "full_time_employees": 7000
     },
     "ANY.BD": {
         "short_name": "ANY",
@@ -21,7 +25,11 @@
         "exchange": "BUD",
         "market": "hu_market",
         "country": "Hungary",
-        "city": "Budapest"
+        "state": null,
+        "city": "Budapest",
+        "zipcode": "1102",
+        "website": "http://www.any.hu",
+        "full_time_employees": 1012
     },
     "OPUS.BD": {
         "short_name": "OPUS",
@@ -33,7 +41,11 @@
         "exchange": "BUD",
         "market": "hu_market",
         "country": "Hungary",
-        "city": "Budapest"
+        "state": null,
+        "city": "Budapest",
+        "zipcode": "1062",
+        "website": "http://opusglobal.hu",
+        "full_time_employees": 3083
     },
     "SET.BD": {
         "short_name": "SET",
@@ -45,6 +57,10 @@
         "exchange": "BUD",
         "market": "hu_market",
         "country": "Hungary",
-        "city": "Budapest"
+        "state": null,
+        "city": "Budapest",
+        "zipcode": "1021",
+        "website": "http://www.setnyrt.com",
+        "full_time_employees": null
     }
 }

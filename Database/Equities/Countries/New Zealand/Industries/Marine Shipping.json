@@ -9,7 +9,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Napier"
+        "state": null,
+        "city": "Napier",
+        "zipcode": "4140",
+        "website": "http://www.napierport.co.nz",
+        "full_time_employees": 284
     },
     "POT.NZ": {
         "short_name": "Port of Tauranga Ltd Ordinary S",
@@ -21,7 +25,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Tauranga"
+        "state": null,
+        "city": "Tauranga",
+        "zipcode": null,
+        "website": "http://www.port-tauranga.co.nz",
+        "full_time_employees": 238
     },
     "SPN.NZ": {
         "short_name": "South Port New Zealand Limited ",
@@ -33,6 +41,10 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Bluff"
+        "state": null,
+        "city": "Bluff",
+        "zipcode": "9842",
+        "website": "http://www.southport.co.nz",
+        "full_time_employees": 105
     }
 }

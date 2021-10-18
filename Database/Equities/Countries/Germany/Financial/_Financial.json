@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Germany",
-        "city": "Munich"
+        "state": null,
+        "city": "Munich",
+        "zipcode": "80802",
+        "website": "http://www.allianz.com",
+        "full_time_employees": 150269
     },
     "DB1N.MX": {
         "short_name": "DEUTSCHE BOERSE AG",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Germany",
-        "city": "Eschborn"
+        "state": null,
+        "city": "Eschborn",
+        "zipcode": "65760",
+        "website": "http://www.deutsche-boerse.com",
+        "full_time_employees": 6523
     },
     "DBN.MX": {
         "short_name": "DEUTSCHE BANK AG",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Germany",
-        "city": "Frankfurt am Main"
+        "state": null,
+        "city": "Frankfurt am Main",
+        "zipcode": "60325",
+        "website": "http://www.db.com",
+        "full_time_employees": 84389
     },
     "MUV2N.MX": {
         "short_name": "MUENCHENER RUECKVERSICHERUNGS A",
@@ -45,7 +57,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Germany",
-        "city": "Munich"
+        "state": null,
+        "city": "Munich",
+        "zipcode": "80802",
+        "website": "http://www.munichre.com",
+        "full_time_employees": 39642
     },
     "WEG1.DE": {
         "short_name": "WESTGRUND AG",
@@ -57,6 +73,10 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Berlin"
+        "state": null,
+        "city": "Berlin",
+        "zipcode": "10785",
+        "website": "http://www.westgrund.de",
+        "full_time_employees": 7
     }
 }

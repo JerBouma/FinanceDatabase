@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel-Aviv"
+        "state": null,
+        "city": "Tel-Aviv",
+        "zipcode": null,
+        "website": "http://www.ibi.co.il",
+        "full_time_employees": 426
     },
     "SRAC.TA": {
         "short_name": "S.R ACCORD LTD",
@@ -21,6 +25,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Ramla"
+        "state": null,
+        "city": "Ramla",
+        "zipcode": "7243224",
+        "website": "http://www.sr-accord.com",
+        "full_time_employees": 37
     }
 }

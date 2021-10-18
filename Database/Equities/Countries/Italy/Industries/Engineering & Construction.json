@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20124",
+        "website": "http://www.mairetecnimont.com",
+        "full_time_employees": 9100
     },
     "ACI.F": {
         "short_name": "ASTALDI S.P.A.  O.N.",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00156",
+        "website": "http://www.astaldi.com",
+        "full_time_employees": null
     },
     "AST.MI": {
         "short_name": "ASTALDI",
@@ -33,7 +41,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00156",
+        "website": "http://www.astaldi.com",
+        "full_time_employees": null
     },
     "AT.MI": {
         "short_name": "ASTM",
@@ -45,7 +57,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Turin"
+        "state": "TO",
+        "city": "Turin",
+        "zipcode": "10144",
+        "website": "http://www.astm.it",
+        "full_time_employees": 6075
     },
     "AUTME.MI": {
         "short_name": "AUTOSTRADE MERID",
@@ -57,7 +73,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Naples"
+        "state": null,
+        "city": "Naples",
+        "zipcode": "80143",
+        "website": "http://www.autostrademeridionali.it",
+        "full_time_employees": 286
     },
     "DBA.MI": {
         "short_name": "DBA GROUP",
@@ -69,7 +89,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Villorba"
+        "state": "TV",
+        "city": "Villorba",
+        "zipcode": "31020",
+        "website": "http://www.dbagroup.it",
+        "full_time_employees": 646
     },
     "IB.MI": {
         "short_name": "INIZIATIVE BRESCIANE",
@@ -81,7 +105,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Breno"
+        "state": "BS",
+        "city": "Breno",
+        "zipcode": "25043",
+        "website": "http://www.iniziativebrescianespa.it",
+        "full_time_employees": 15
     },
     "IMPJY": {
         "short_name": "WEBUILD SPA UNSP ADR EACH REPR ",
@@ -93,7 +121,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20142",
+        "website": "http://www.webuildgroup.com",
+        "full_time_employees": 25371
     },
     "IPJ1.F": {
         "short_name": "WEBUILD S.P.A.",
@@ -105,7 +137,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20142",
+        "website": "http://www.webuildgroup.com",
+        "full_time_employees": 25371
     },
     "MT.MI": {
         "short_name": "MAIRE TECNIMONT",
@@ -117,7 +153,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20124",
+        "website": "http://www.mairetecnimont.com",
+        "full_time_employees": 9100
     },
     "PLC.MI": {
         "short_name": "PLC",
@@ -129,7 +169,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20123",
+        "website": "http://www.plc-spa.com",
+        "full_time_employees": 503
     },
     "SCF.MI": {
         "short_name": "SALCEF GROUP",
@@ -141,7 +185,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00158",
+        "website": "http://www.salcef.com",
+        "full_time_employees": 1000
     },
     "TFI.MI": {
         "short_name": "TREVI FIN IND",
@@ -153,7 +201,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Cesena"
+        "state": "FO",
+        "city": "Cesena",
+        "zipcode": "47522",
+        "website": "http://www.trevifin.com",
+        "full_time_employees": 3645
     },
     "TM3.F": {
         "short_name": "ASTM S.P.A.",
@@ -165,7 +217,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Turin"
+        "state": "TO",
+        "city": "Turin",
+        "zipcode": "10144",
+        "website": "http://www.astm.it",
+        "full_time_employees": 6075
     },
     "TV92.F": {
         "short_name": "TREVI-FIN. INDUSTR.",
@@ -177,7 +233,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Cesena"
+        "state": "FO",
+        "city": "Cesena",
+        "zipcode": "47522",
+        "website": "http://www.trevifin.com",
+        "full_time_employees": 3645
     },
     "WBD.MI": {
         "short_name": "WEBUILD",
@@ -189,7 +249,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20142",
+        "website": "http://www.webuildgroup.com",
+        "full_time_employees": 25371
     },
     "WBDR.MI": {
         "short_name": "WEBUILD RSP",
@@ -201,7 +265,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20142",
+        "website": "http://www.webuildgroup.com",
+        "full_time_employees": 25371
     },
     "YRM.MI": {
         "short_name": "ROSETTI MARINO",
@@ -213,6 +281,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Ravenna"
+        "state": "RA",
+        "city": "Ravenna",
+        "zipcode": "48122",
+        "website": "http://www.rosetti.it",
+        "full_time_employees": 1078
     }
 }

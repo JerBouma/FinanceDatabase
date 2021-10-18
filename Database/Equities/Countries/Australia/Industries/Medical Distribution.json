@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Camberwell"
+        "state": "VIC",
+        "city": "Camberwell",
+        "zipcode": "3124",
+        "website": "http://www.api.net.au",
+        "full_time_employees": null
     },
     "EBO.AX": {
         "short_name": "EBOS FPO NZ",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Docklands"
+        "state": "VIC",
+        "city": "Docklands",
+        "zipcode": "3008",
+        "website": "http://www.ebosgroup.com",
+        "full_time_employees": 3700
     },
     "EBO.NZ": {
         "short_name": "Ebos Group Limited Ordinary Sha",
@@ -33,7 +41,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "Australia",
-        "city": "Docklands"
+        "state": "VIC",
+        "city": "Docklands",
+        "zipcode": "3008",
+        "website": "http://www.ebosgroup.com",
+        "full_time_employees": 3700
     },
     "PGC.AX": {
         "short_name": "PARAGON FPO",
@@ -45,7 +57,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3205",
+        "website": "http://www.paragoncare.com.au",
+        "full_time_employees": 400
     },
     "PXS.F": {
         "short_name": "PARAGON CARE LTD",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3205",
+        "website": "http://www.paragoncare.com.au",
+        "full_time_employees": 400
     },
     "S5YA.F": {
         "short_name": "SIGMA HEALTHCARE LTD",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Rowville"
+        "state": "VIC",
+        "city": "Rowville",
+        "zipcode": "3178",
+        "website": "http://www.sigmahealthcare.com.au",
+        "full_time_employees": null
     },
     "SIG.AX": {
         "short_name": "SIGMAHEALT FPO",
@@ -81,6 +105,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Rowville"
+        "state": "VIC",
+        "city": "Rowville",
+        "zipcode": "3178",
+        "website": "http://www.sigmahealthcare.com.au",
+        "full_time_employees": null
     }
 }

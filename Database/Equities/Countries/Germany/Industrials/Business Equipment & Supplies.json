@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Villingen-Schwenningen"
+        "state": null,
+        "city": "Villingen-Schwenningen",
+        "zipcode": "78054",
+        "website": "http://www.intercard.org",
+        "full_time_employees": 132
     },
     "MBH3.F": {
         "short_name": "MASCH.BERT.HER. O.N. VZO",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Gosheim"
+        "state": null,
+        "city": "Gosheim",
+        "zipcode": "78559",
+        "website": "http://www.hermle.de",
+        "full_time_employees": 1304
     },
     "TTK.DE": {
         "short_name": "TAKKT AG O.N.",
@@ -33,7 +41,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Stuttgart"
+        "state": null,
+        "city": "Stuttgart",
+        "zipcode": "70191",
+        "website": "http://www.takkt.de",
+        "full_time_employees": 2361
     },
     "TTK.F": {
         "short_name": "TAKKT AG O.N.",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Stuttgart"
+        "state": null,
+        "city": "Stuttgart",
+        "zipcode": "70191",
+        "website": "http://www.takkt.de",
+        "full_time_employees": 2361
     },
     "TTK.VI": {
         "short_name": "TAKKT AG",
@@ -57,6 +73,10 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Germany",
-        "city": "Stuttgart"
+        "state": null,
+        "city": "Stuttgart",
+        "zipcode": "70191",
+        "website": "http://www.takkt.de",
+        "full_time_employees": 2361
     }
 }

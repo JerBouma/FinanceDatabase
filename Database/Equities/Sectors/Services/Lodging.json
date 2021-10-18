@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Issy-les-Moulineaux"
+        "state": null,
+        "city": "Issy-les-Moulineaux",
+        "zipcode": "92445",
+        "website": "http://group.accor.com/en",
+        "full_time_employees": 15247
     },
     "LAMPS.AT": {
         "short_name": "Lampsa Hotel Co. (C)",
@@ -21,7 +25,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "106 54",
+        "website": "http://www.lampsa.gr",
+        "full_time_employees": 600
     },
     "PRESD.AT": {
         "short_name": "GEKE S.A. (CR)",
@@ -33,6 +41,10 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "115 23",
+        "website": "http://www.president.gr",
+        "full_time_employees": 83
     }
 }

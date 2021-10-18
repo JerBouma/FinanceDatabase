@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "417 56",
+        "website": "http://www.azelio.com",
+        "full_time_employees": 153
     },
     "7MN.F": {
         "short_name": "MINESTO AB",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "426 71",
+        "website": "http://www.minesto.com",
+        "full_time_employees": 58
     },
     "A4W.F": {
         "short_name": "ARISE",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Halmstad"
+        "state": null,
+        "city": "Halmstad",
+        "zipcode": "302 50",
+        "website": "http://www.arise.se",
+        "full_time_employees": 31
     },
     "ARISE.ST": {
         "short_name": "Arise AB",
@@ -45,7 +57,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Halmstad"
+        "state": null,
+        "city": "Halmstad",
+        "zipcode": "302 50",
+        "website": "http://www.arise.se",
+        "full_time_employees": 31
     },
     "AZELIO.ST": {
         "short_name": "Azelio AB",
@@ -57,7 +73,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "417 56",
+        "website": "http://www.azelio.com",
+        "full_time_employees": 153
     },
     "CE.ST": {
         "short_name": "Cortus Energy AB",
@@ -69,7 +89,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Kista"
+        "state": null,
+        "city": "Kista",
+        "zipcode": "164 40",
+        "website": "http://cortus.se",
+        "full_time_employees": 30
     },
     "CLIME-B.ST": {
         "short_name": "Climeon AB ser. B",
@@ -81,7 +105,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Kista"
+        "state": null,
+        "city": "Kista",
+        "zipcode": "164 40",
+        "website": "http://www.climeon.com",
+        "full_time_employees": 76
     },
     "DCL.F": {
         "short_name": "CLIMEON AB  B",
@@ -93,7 +121,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Kista"
+        "state": null,
+        "city": "Kista",
+        "zipcode": "164 40",
+        "website": "http://www.climeon.com",
+        "full_time_employees": 76
     },
     "DLAB.ST": {
         "short_name": "Dlaboratory Sweden AB",
@@ -105,7 +137,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Lund"
+        "state": null,
+        "city": "Lund",
+        "zipcode": "223 62",
+        "website": "http://dlaboratory.com",
+        "full_time_employees": null
     },
     "ECOWVE.ST": {
         "short_name": "EWPG Holding AB",
@@ -117,7 +153,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "114 56",
+        "website": "http://www.ecowavepower.com",
+        "full_time_employees": 17
     },
     "MINEST.ST": {
         "short_name": "Minesto AB",
@@ -129,7 +169,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "426 71",
+        "website": "http://www.minesto.com",
+        "full_time_employees": 58
     },
     "OCE.F": {
         "short_name": "CORTUS ENERGY AB  SK 1",
@@ -141,7 +185,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Kista"
+        "state": null,
+        "city": "Kista",
+        "zipcode": "164 40",
+        "website": "http://cortus.se",
+        "full_time_employees": 30
     },
     "SLITE.ST": {
         "short_name": "Slitevind AB",
@@ -153,6 +201,10 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Visby"
+        "state": null,
+        "city": "Visby",
+        "zipcode": "62111",
+        "website": "http://www.slitevind.se",
+        "full_time_employees": 7
     }
 }

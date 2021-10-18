@@ -9,7 +9,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400011",
+        "website": "http://www.hdfclife.com",
+        "full_time_employees": null
     },
     "ICICIPRULI.NS": {
         "short_name": "ICICI PRUDENTIAL L",
@@ -21,7 +25,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400025",
+        "website": "http://www.iciciprulife.com",
+        "full_time_employees": null
     },
     "MFSL.NS": {
         "short_name": "MAX FINANCIAL SERV",
@@ -33,7 +41,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "New Delhi"
+        "state": null,
+        "city": "New Delhi",
+        "zipcode": "110001",
+        "website": "http://www.maxfinancialservices.com",
+        "full_time_employees": 9
     },
     "SBILIFE.NS": {
         "short_name": "SBI LIFE INSURANCE",
@@ -45,6 +57,10 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400069",
+        "website": "http://www.sbilife.co.in",
+        "full_time_employees": 17464
     }
 }

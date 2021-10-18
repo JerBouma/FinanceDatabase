@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": null,
+        "website": "http://www.globaltrans.com",
+        "full_time_employees": 1664
     },
     "GLTR.ME": {
         "short_name": "GLOBALTRANS INVEST",
@@ -21,7 +25,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": null,
+        "website": "http://www.globaltrans.com",
+        "full_time_employees": 1664
     },
     "UWGN.ME": {
         "short_name": "UNITED WAGON COMPA",
@@ -33,6 +41,10 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "119002",
+        "website": "http://www.uniwagon.com",
+        "full_time_employees": null
     }
 }

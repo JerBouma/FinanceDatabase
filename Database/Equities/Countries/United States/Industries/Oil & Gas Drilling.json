@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Forest Hills"
+        "state": "NY",
+        "city": "Forest Hills",
+        "zipcode": "11375",
+        "website": "http://www.agri-dynamicsinc.com",
+        "full_time_employees": null
     },
     "BRCOQ": {
         "short_name": "BEARD OIL CO",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Oklahoma City"
+        "state": "OK",
+        "city": "Oklahoma City",
+        "zipcode": "73116",
+        "website": null,
+        "full_time_employees": null
     },
     "DO1.F": {
         "short_name": "DIAMOND OFFSHORE DRILLING",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Houston"
+        "state": "TX",
+        "city": "Houston",
+        "zipcode": "77094-1810",
+        "website": "http://www.diamondoffshore.com",
+        "full_time_employees": 1900
     },
     "EXLA": {
         "short_name": "HELMER DIRECTIONAL DRILLING COR",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Wenatchee"
+        "state": "WA",
+        "city": "Wenatchee",
+        "zipcode": "98802",
+        "website": null,
+        "full_time_employees": 2
     },
     "HP": {
         "short_name": "Helmerich & Payne, Inc.",
@@ -57,7 +73,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Tulsa"
+        "state": "OK",
+        "city": "Tulsa",
+        "zipcode": "74119",
+        "website": "http://www.hpinc.com",
+        "full_time_employees": 4600
     },
     "HPC.F": {
         "short_name": "HELMERICH PAYNE  DL-,10",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Tulsa"
+        "state": "OK",
+        "city": "Tulsa",
+        "zipcode": "74119",
+        "website": "http://www.hpinc.com",
+        "full_time_employees": 4600
     },
     "ICD": {
         "short_name": "Independence Contract Drilling,",
@@ -81,7 +105,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Houston"
+        "state": "TX",
+        "city": "Houston",
+        "zipcode": "77070",
+        "website": "http://www.icdrilling.com",
+        "full_time_employees": 300
     },
     "PDGO": {
         "short_name": "PARADIGM OIL & GAS",
@@ -93,7 +121,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Indian Rocks Beach"
+        "state": "FL",
+        "city": "Indian Rocks Beach",
+        "zipcode": "33785",
+        "website": "http://www.paradigmoil.com",
+        "full_time_employees": 1
     },
     "PE1.F": {
         "short_name": "PATTERS.-UTI  DL-,01",
@@ -105,7 +137,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Houston"
+        "state": "TX",
+        "city": "Houston",
+        "zipcode": "77064",
+        "website": "http://www.patenergy.com",
+        "full_time_employees": 3000
     },
     "PTEN": {
         "short_name": "Patterson-UTI Energy, Inc.",
@@ -117,7 +153,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Houston"
+        "state": "TX",
+        "city": "Houston",
+        "zipcode": "77064",
+        "website": "http://www.patenergy.com",
+        "full_time_employees": 3000
     },
     "PTRO": {
         "short_name": "PETROMINERALS CORP",
@@ -129,7 +169,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Ventura"
+        "state": "CA",
+        "city": "Ventura",
+        "zipcode": "93003",
+        "website": null,
+        "full_time_employees": null
     },
     "TISDZ": {
         "short_name": "TREASURE ISLAND ROYALTY TRUST",
@@ -141,7 +185,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Houston"
+        "state": "TX",
+        "city": "Houston",
+        "zipcode": "77057",
+        "website": null,
+        "full_time_employees": null
     },
     "VTDRF": {
         "short_name": "VANTAGE DRILLING INTERNATIONAL",
@@ -153,7 +201,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Houston"
+        "state": "TX",
+        "city": "Houston",
+        "zipcode": "77056",
+        "website": "http://www.vantagedrilling.com",
+        "full_time_employees": 320
     },
     "VTGDF": {
         "short_name": "VANTAGE DRILLING COMPANY",
@@ -165,7 +217,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Houston"
+        "state": "TX",
+        "city": "Houston",
+        "zipcode": "77056",
+        "website": "http://www.vantagedrilling.com",
+        "full_time_employees": 786
     },
     "WBRE": {
         "short_name": "WILD BRUSH ENERGY INC",
@@ -177,6 +233,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Seattle"
+        "state": "WA",
+        "city": "Seattle",
+        "zipcode": "98101",
+        "website": null,
+        "full_time_employees": null
     }
 }

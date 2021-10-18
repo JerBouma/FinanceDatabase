@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Lyon"
+        "state": null,
+        "city": "Lyon",
+        "zipcode": "69451",
+        "website": "http://www.clasquin.com",
+        "full_time_employees": 1000
     },
     "STF.PA": {
         "short_name": "STEF",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.stef.com",
+        "full_time_employees": 18761
     },
     "XPO.PA": {
         "short_name": "XPO LOGISTICS",
@@ -33,6 +41,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Lyon"
+        "state": null,
+        "city": "Lyon",
+        "zipcode": "69006",
+        "website": "http://europe.xpo.com",
+        "full_time_employees": 58186
     }
 }

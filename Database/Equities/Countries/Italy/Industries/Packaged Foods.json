@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Angri"
+        "state": "SA",
+        "city": "Angri",
+        "zipcode": "84012",
+        "website": "http://www.gruppoladoria.it",
+        "full_time_employees": null
     },
     "6NF.F": {
         "short_name": "NEWLAT FOOD S.P.A",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Reggio Emilia"
+        "state": "RE",
+        "city": "Reggio Emilia",
+        "zipcode": "42124",
+        "website": "http://www.newlat.it",
+        "full_time_employees": null
     },
     "CLI.MI": {
         "short_name": "CENTRALE DEL LATTE D'ITALIA",
@@ -33,7 +41,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Turin"
+        "state": "TO",
+        "city": "Turin",
+        "zipcode": "10137",
+        "website": "http://www.centralelatte.torino.it",
+        "full_time_employees": 383
     },
     "ENV.MI": {
         "short_name": "ENERVIT",
@@ -45,7 +57,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20149",
+        "website": "http://www.enervit.it",
+        "full_time_employees": 220
     },
     "ESI.MI": {
         "short_name": "ESI",
@@ -57,7 +73,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": null,
+        "website": "http://www.esi-spa.com",
+        "full_time_employees": null
     },
     "ITM.MI": {
         "short_name": "ITALMOBILIARE",
@@ -69,7 +89,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.italmobiliare.it",
+        "full_time_employees": 2058
     },
     "ITM1.F": {
         "short_name": "ITALMOBILIARE",
@@ -81,7 +105,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.italmobiliare.it",
+        "full_time_employees": 2058
     },
     "LD.MI": {
         "short_name": "LA DORIA",
@@ -93,7 +121,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Angri"
+        "state": "SA",
+        "city": "Angri",
+        "zipcode": "84012",
+        "website": "http://www.gruppoladoria.it",
+        "full_time_employees": null
     },
     "NWL.MI": {
         "short_name": "NEWLAT FOOD",
@@ -105,7 +137,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Reggio Emilia"
+        "state": "RE",
+        "city": "Reggio Emilia",
+        "zipcode": "42124",
+        "website": "http://www.newlat.it",
+        "full_time_employees": null
     },
     "VLS.MI": {
         "short_name": "VALSOIA",
@@ -117,6 +153,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Bologna"
+        "state": "BO",
+        "city": "Bologna",
+        "zipcode": "40138",
+        "website": "http://www.valsoiaspa.com",
+        "full_time_employees": 120
     }
 }

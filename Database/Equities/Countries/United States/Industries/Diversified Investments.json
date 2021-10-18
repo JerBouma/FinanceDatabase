@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "San Antonio"
+        "state": "TX",
+        "city": "San Antonio",
+        "zipcode": "78216",
+        "website": "http://www.gambitenergy.com",
+        "full_time_employees": 17
     },
     "NTUR": {
         "short_name": "NATURAL BLUE RESOURCES INC",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Woburn"
+        "state": "MA",
+        "city": "Woburn",
+        "zipcode": "01801",
+        "website": null,
+        "full_time_employees": 5
     },
     "SPDL": {
         "short_name": "SPINDLE INC",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Marco Island"
+        "state": "FL",
+        "city": "Marco Island",
+        "zipcode": "34145",
+        "website": "http://www.spindle.com",
+        "full_time_employees": 2
     },
     "TRBD": {
         "short_name": "TURBODYNE TECHNOLOGIES INC",
@@ -45,6 +57,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10107",
+        "website": "http://www.turbodyne.net",
+        "full_time_employees": null
     }
 }

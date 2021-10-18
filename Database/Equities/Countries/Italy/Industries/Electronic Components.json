@@ -9,7 +9,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Brugine"
+        "state": "PD",
+        "city": "Brugine",
+        "zipcode": "35020",
+        "website": "http://www.carel.com",
+        "full_time_employees": 1745
     },
     "GE.MI": {
         "short_name": "GEFRAN",
@@ -21,7 +25,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Provaglio D'iseo"
+        "state": "BS",
+        "city": "Provaglio D'iseo",
+        "zipcode": "25050",
+        "website": "http://www.gefran.com",
+        "full_time_employees": 752
     },
     "GF7.F": {
         "short_name": "GEFRAN SPA  EO 1",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Provaglio D'iseo"
+        "state": "BS",
+        "city": "Provaglio D'iseo",
+        "zipcode": "25050",
+        "website": "http://www.gefran.com",
+        "full_time_employees": 752
     },
     "SG.MI": {
         "short_name": "SAES GETTERS",
@@ -45,7 +57,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Lainate"
+        "state": "MI",
+        "city": "Lainate",
+        "zipcode": "20020",
+        "website": "http://www.saesgetters.com",
+        "full_time_employees": 995
     },
     "SGR.MI": {
         "short_name": "SAES GETTERS RISP NC",
@@ -57,6 +73,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Lainate"
+        "state": "MI",
+        "city": "Lainate",
+        "zipcode": "20020",
+        "website": "http://www.saesgetters.com",
+        "full_time_employees": 995
     }
 }

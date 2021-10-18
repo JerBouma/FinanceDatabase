@@ -9,7 +9,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Jersey",
-        "city": "St. Helier"
+        "state": null,
+        "city": "St. Helier",
+        "zipcode": "JE2 4UH",
+        "website": "http://www.aere.com",
+        "full_time_employees": 375
     },
     "LAMDA.AT": {
         "short_name": "LAMDA DEVELOPMENT S.A.",
@@ -21,7 +25,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Marousi"
+        "state": null,
+        "city": "Marousi",
+        "zipcode": "151 23",
+        "website": "http://www.lamdadev.com",
+        "full_time_employees": 409
     },
     "WEG1.DE": {
         "short_name": "WESTGRUND AG",
@@ -33,6 +41,10 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Berlin"
+        "state": null,
+        "city": "Berlin",
+        "zipcode": "10785",
+        "website": "http://www.westgrund.de",
+        "full_time_employees": 7
     }
 }

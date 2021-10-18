@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Vaux-sur-Mer"
+        "state": null,
+        "city": "Vaux-sur-Mer",
+        "zipcode": "17640",
+        "website": "http://www.cer-eau.fr",
+        "full_time_employees": 94
     },
     "SEV.PA": {
         "short_name": "SUEZ",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92040",
+        "website": "http://www.suez.com",
+        "full_time_employees": null
     },
     "SEV.VI": {
         "short_name": "SUEZ",
@@ -33,7 +41,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92040",
+        "website": "http://www.suez.com",
+        "full_time_employees": null
     },
     "SZ1.F": {
         "short_name": "SUEZ  EO 4",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92040",
+        "website": "http://www.suez.com",
+        "full_time_employees": null
     },
     "SZ1G.F": {
         "short_name": "SUEZ ADR 1/2/EO 4",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92040",
+        "website": "http://www.suez.com",
+        "full_time_employees": null
     },
     "SZEVF": {
         "short_name": "SUEZ SA",
@@ -69,7 +89,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92040",
+        "website": "http://www.suez.com",
+        "full_time_employees": null
     },
     "SZSAY": {
         "short_name": "SUEZ SA",
@@ -81,6 +105,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "92040",
+        "website": "http://www.suez.com",
+        "full_time_employees": null
     }
 }

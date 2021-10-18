@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Andernach"
+        "state": null,
+        "city": "Andernach",
+        "zipcode": "56626",
+        "website": "http://www.ehw.ag",
+        "full_time_employees": 2
     },
     "KCO.DE": {
         "short_name": "KLOECKNER + CO SE NA O.N.",
@@ -21,7 +25,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Duisburg"
+        "state": null,
+        "city": "Duisburg",
+        "zipcode": "47057",
+        "website": "http://www.kloeckner.com",
+        "full_time_employees": 7113
     },
     "KCO.F": {
         "short_name": "KLOECKNER + CO SE NA O.N.",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Duisburg"
+        "state": null,
+        "city": "Duisburg",
+        "zipcode": "47057",
+        "website": "http://www.kloeckner.com",
+        "full_time_employees": 7113
     },
     "KCO.VI": {
         "short_name": "KLOECKNER + CO SE",
@@ -45,7 +57,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Germany",
-        "city": "Duisburg"
+        "state": null,
+        "city": "Duisburg",
+        "zipcode": "47057",
+        "website": "http://www.kloeckner.com",
+        "full_time_employees": 7113
     },
     "SZG.DE": {
         "short_name": "SALZGITTER AG O.N.",
@@ -57,7 +73,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Salzgitter"
+        "state": null,
+        "city": "Salzgitter",
+        "zipcode": "38239",
+        "website": "http://www.salzgitter-ag.com",
+        "full_time_employees": 23181
     },
     "SZG.F": {
         "short_name": "SALZGITTER AG O.N.",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Salzgitter"
+        "state": null,
+        "city": "Salzgitter",
+        "zipcode": "38239",
+        "website": "http://www.salzgitter-ag.com",
+        "full_time_employees": 23181
     },
     "SZG.VI": {
         "short_name": "SALZGITTER AG",
@@ -81,7 +105,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Germany",
-        "city": "Salzgitter"
+        "state": null,
+        "city": "Salzgitter",
+        "zipcode": "38239",
+        "website": "http://www.salzgitter-ag.com",
+        "full_time_employees": 23181
     },
     "SZGA.SG": {
         "short_name": "Salzgitter AG Inh.-Akt.(Unsp.AD",
@@ -93,7 +121,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Salzgitter"
+        "state": null,
+        "city": "Salzgitter",
+        "zipcode": "38239",
+        "website": "http://www.salzgitter-ag.com",
+        "full_time_employees": 23181
     },
     "SZGPY": {
         "short_name": "SALZGITTER AG",
@@ -105,6 +137,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Germany",
-        "city": "Salzgitter"
+        "state": null,
+        "city": "Salzgitter",
+        "zipcode": "38239",
+        "website": "http://www.salzgitter-ag.com",
+        "full_time_employees": 23181
     }
 }

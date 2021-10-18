@@ -9,7 +9,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100028",
+        "website": "http://www.vanfund.cn",
+        "full_time_employees": 670
     },
     "109.F": {
         "short_name": "CASTLIGHT HEALT.B DL-0001",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "San Francisco"
+        "state": "CA",
+        "city": "San Francisco",
+        "zipcode": "94105",
+        "website": "http://www.castlighthealth.com",
+        "full_time_employees": 440
     },
     "19P.F": {
         "short_name": "PHREESIA INC.  DL-,01",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Raleigh"
+        "state": "NC",
+        "city": "Raleigh",
+        "zipcode": "27601",
+        "website": "http://www.phreesia.com",
+        "full_time_employees": 827
     },
     "1M7.F": {
         "short_name": "CAMBR.COGNIT.HLDGS LS-,01",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "Cambridge"
+        "state": null,
+        "city": "Cambridge",
+        "zipcode": "CB25 9TU",
+        "website": "http://www.cambridgecognition.com",
+        "full_time_employees": null
     },
     "2158.HK": {
         "short_name": "YIDU TECH",
@@ -57,7 +73,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": null,
+        "website": "http://www.yidutechgroup.com",
+        "full_time_employees": 990
     },
     "2159.HK": {
         "short_name": "MEDIWELCOME",
@@ -69,7 +89,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": null,
+        "website": "http://www.mediwelcome.com",
+        "full_time_employees": 392
     },
     "2413.T": {
         "short_name": "M3 INC",
@@ -81,7 +105,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "107-0052",
+        "website": "http://corporate.m3.com",
+        "full_time_employees": null
     },
     "27R.F": {
         "short_name": "RAYSEARCH LABS B  SK 0,40",
@@ -93,7 +121,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "111 34",
+        "website": "http://www.raysearchlabs.com",
+        "full_time_employees": 405
     },
     "2FA.F": {
         "short_name": "GLOBAL CANNABIS APPL.",
@@ -105,7 +137,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6E 4A6",
+        "website": "http://cannappscorp.com",
+        "full_time_employees": null
     },
     "2HE.F": {
         "short_name": "HEALTHEQUITY INC.DL-,0001",
@@ -117,7 +153,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Draper"
+        "state": "UT",
+        "city": "Draper",
+        "zipcode": "84020",
+        "website": "http://www.healthequity.com",
+        "full_time_employees": 3001
     },
     "2NJ.DE": {
         "short_name": "COVETRUS INC.",
@@ -129,7 +169,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "United States",
-        "city": "Portland"
+        "state": "ME",
+        "city": "Portland",
+        "zipcode": "04101",
+        "website": "http://www.covetrus.com",
+        "full_time_employees": 5275
     },
     "2NJ.F": {
         "short_name": "COVETRUS INC.",
@@ -141,7 +185,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Portland"
+        "state": "ME",
+        "city": "Portland",
+        "zipcode": "04101",
+        "website": "http://www.covetrus.com",
+        "full_time_employees": 5275
     },
     "300253.SZ": {
         "short_name": "WINNING HEALTH TEC",
@@ -153,7 +201,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": null,
+        "website": "http://www.winning.com.cn",
+        "full_time_employees": 5294
     },
     "300288.SZ": {
         "short_name": "GUIYANG LONGMASTER",
@@ -165,7 +217,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Guiyang"
+        "state": null,
+        "city": "Guiyang",
+        "zipcode": null,
+        "website": "http://www.longmaster.com.cn",
+        "full_time_employees": 1083
     },
     "300550.SZ": {
         "short_name": "HEREN HEALTH CO LT",
@@ -177,7 +233,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Hangzhou"
+        "state": null,
+        "city": "Hangzhou",
+        "zipcode": "310051",
+        "website": "http://www.herenit.com",
+        "full_time_employees": null
     },
     "3649.T": {
         "short_name": "FINDEX INC",
@@ -189,7 +249,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "100-0004",
+        "website": "http://www.findex.co.jp",
+        "full_time_employees": 276
     },
     "3671.T": {
         "short_name": "SOFTMAX CO LTD",
@@ -201,7 +265,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "140-0001",
+        "website": "http://www.s-max.co.jp",
+        "full_time_employees": 173
     },
     "38H0.F": {
         "short_name": "HEALTHSPACE DATA SYS LTD",
@@ -213,7 +281,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Chilliwack"
+        "state": "BC",
+        "city": "Chilliwack",
+        "zipcode": "V2R 6E7",
+        "website": "http://www.gethealthspace.com",
+        "full_time_employees": null
     },
     "3939.T": {
         "short_name": "KANAMIC NETWORK CO LTD",
@@ -225,7 +297,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "150-6031",
+        "website": "http://www.kanamic.net",
+        "full_time_employees": 63
     },
     "3CT0.F": {
         "short_name": "LYNX GLOBAL DIGITAL FINL.",
@@ -237,7 +313,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6B 5C6",
+        "website": "http://www.cannaonetechnologies.com",
+        "full_time_employees": null
     },
     "3KT.F": {
         "short_name": "KONTIGO CARE  AB",
@@ -249,7 +329,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Uppsala"
+        "state": null,
+        "city": "Uppsala",
+        "zipcode": null,
+        "website": "http://www.kontigocare.com",
+        "full_time_employees": 12
     },
     "3YV.MU": {
         "short_name": "MEDLEY INC.",
@@ -261,7 +345,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "106-6222",
+        "website": "http://www.medley.jp",
+        "full_time_employees": 494
     },
     "4172.T": {
         "short_name": "TOWA HI SYSTEM CO LTD",
@@ -273,7 +361,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Okayama"
+        "state": null,
+        "city": "Okayama",
+        "zipcode": "700-0971",
+        "website": "http://www.towa-hi-sys.co.jp",
+        "full_time_employees": null
     },
     "43T.F": {
         "short_name": "TABULA RASA HEAL.DL-,0001",
@@ -285,7 +377,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Moorestown"
+        "state": "NJ",
+        "city": "Moorestown",
+        "zipcode": "08057",
+        "website": "http://www.tabularasahealthcare.com",
+        "full_time_employees": 1614
     },
     "4438.T": {
         "short_name": "WELBY INC",
@@ -297,7 +393,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "103-0023",
+        "website": "http://www.welby.jp",
+        "full_time_employees": 45
     },
     "4480.T": {
         "short_name": "MEDLEY INC",
@@ -309,7 +409,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "106-6222",
+        "website": "http://www.medley.jp",
+        "full_time_employees": 494
     },
     "4483.T": {
         "short_name": "JMDC INC",
@@ -321,7 +425,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "105-0012",
+        "website": "http://www.jmdc.co.jp",
+        "full_time_employees": 741
     },
     "4LL.F": {
         "short_name": "TELADOC HEALTH INC.DL-001",
@@ -333,7 +441,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Purchase"
+        "state": "NY",
+        "city": "Purchase",
+        "zipcode": "10577",
+        "website": "http://www.teladochealth.com",
+        "full_time_employees": 3652
     },
     "4NE1.F": {
         "short_name": "ACCOLADE INC.  DL-,0001",
@@ -345,7 +457,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Plymouth Meeting"
+        "state": "PA",
+        "city": "Plymouth Meeting",
+        "zipcode": "19462",
+        "website": "http://accolade.com",
+        "full_time_employees": 1230
     },
     "4R8.F": {
         "short_name": "SCWORK CORP.  DL-,01",
@@ -357,7 +473,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10022",
+        "website": "http://www.scworx.com",
+        "full_time_employees": 4
     },
     "50V.F": {
         "short_name": "AINO HEALTH AB O.N.",
@@ -369,7 +489,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "115 23",
+        "website": "http://www.ainohealth.com",
+        "full_time_employees": 28
     },
     "54I.SG": {
         "short_name": "Instem PLC Registered Shares LS",
@@ -381,7 +505,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "Stone"
+        "state": null,
+        "city": "Stone",
+        "zipcode": "ST15 0SD",
+        "website": "http://www.instem.com",
+        "full_time_employees": 304
     },
     "5CE.F": {
         "short_name": "CERTIVE SOLUTIONS INC.",
@@ -393,7 +521,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Scottsdale"
+        "state": "AZ",
+        "city": "Scottsdale",
+        "zipcode": "85258",
+        "website": "http://certive.com",
+        "full_time_employees": null
     },
     "600767.SS": {
         "short_name": "WINSAN(CHENGDU)MEDICAL SCIE & T",
@@ -405,7 +537,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": null,
+        "website": "http://www.winsan.cn",
+        "full_time_employees": 46
     },
     "603990.SS": {
         "short_name": "SUZHOU MEDICALSYSTEM TECHNOLOGY",
@@ -417,7 +553,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Suzhou"
+        "state": null,
+        "city": "Suzhou",
+        "zipcode": "215000",
+        "website": "http://www.medicalsystem.com.cn",
+        "full_time_employees": 678
     },
     "6095.T": {
         "short_name": "MEDPEER INC",
@@ -429,7 +569,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "104-0061",
+        "website": "http://medpeer.jp",
+        "full_time_employees": 225
     },
     "6569.TWO": {
         "short_name": "ONYX HEALTHCARE INC",
@@ -441,7 +585,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "New Taipei City"
+        "state": null,
+        "city": "New Taipei City",
+        "zipcode": "231",
+        "website": "http://www.onyx-healthcare.com",
+        "full_time_employees": null
     },
     "6819.HK": {
         "short_name": "INTELLICENTRICS",
@@ -453,7 +601,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "United States",
-        "city": "Dallas"
+        "state": "TX",
+        "city": "Dallas",
+        "zipcode": "75028-4035",
+        "website": "http://www.intellicentrics-global.com",
+        "full_time_employees": 158
     },
     "688555.SS": {
         "short_name": "ESSENCE INFORMATION TECHNOLOGY ",
@@ -465,7 +617,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Tianjin"
+        "state": null,
+        "city": "Tianjin",
+        "zipcode": "300457",
+        "website": "http://www.sino-essence.com",
+        "full_time_employees": null
     },
     "6OVA.F": {
         "short_name": "VITALHUB CORP..",
@@ -477,7 +633,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5G 1V2",
+        "website": "http://vitalhub.com",
+        "full_time_employees": null
     },
     "6PH.F": {
         "short_name": "CLOUDMD SOFTWARE+SERVICES",
@@ -489,7 +649,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6C 1H2",
+        "website": "http://cloudmd.ca",
+        "full_time_employees": null
     },
     "7079.T": {
         "short_name": "WDB COCO CO LTD",
@@ -501,7 +665,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "104-6127",
+        "website": "http://www.wdbcoco.com",
+        "full_time_employees": 277
     },
     "7XE.F": {
         "short_name": "NIGHTINGALE HEALTH  EO 1",
@@ -513,7 +681,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00300",
+        "website": "http://nightingalehealth.com",
+        "full_time_employees": null
     },
     "8409.TWO": {
         "short_name": "EBM TECHNOLOGIES INCORPORATED",
@@ -525,7 +697,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taipei"
+        "state": null,
+        "city": "Taipei",
+        "zipcode": null,
+        "website": "http://www.ebmtech.com",
+        "full_time_employees": null
     },
     "9480.F": {
         "short_name": null,
@@ -537,7 +713,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Link\u00c3\u00b6ping"
+        "state": null,
+        "city": "Link\u00c3\u00b6ping",
+        "zipcode": "582 23",
+        "website": "http://www.syntheticmr.com",
+        "full_time_employees": 24
     },
     "9EH.F": {
         "short_name": "EVOLENT HEALTH A  DL-,01",
@@ -549,7 +729,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Arlington"
+        "state": "VA",
+        "city": "Arlington",
+        "zipcode": "22203",
+        "website": "http://www.evolenthealth.com",
+        "full_time_employees": 2900
     },
     "9UN.F": {
         "short_name": "MEDPEER INC.",
@@ -561,7 +745,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "104-0061",
+        "website": "http://medpeer.jp",
+        "full_time_employees": 225
     },
     "9VO.F": {
         "short_name": "VOLUNTIS S.A.  EO-,10",
@@ -573,7 +761,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Suresnes"
+        "state": null,
+        "city": "Suresnes",
+        "zipcode": "92150",
+        "website": "http://www.voluntis.com",
+        "full_time_employees": 72
     },
     "A4B.F": {
         "short_name": "IMEXHS LTD",
@@ -585,7 +777,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Mascot"
+        "state": "NSW",
+        "city": "Mascot",
+        "zipcode": "2020",
+        "website": "http://www.imexhs.com",
+        "full_time_employees": null
     },
     "ACCD": {
         "short_name": "Accolade, Inc.",
@@ -597,7 +793,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Plymouth Meeting"
+        "state": "PA",
+        "city": "Plymouth Meeting",
+        "zipcode": "19462",
+        "website": "http://accolade.com",
+        "full_time_employees": 1230
     },
     "ACNV": {
         "short_name": "ACCELERA INNOVATIONS INC",
@@ -609,7 +809,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Colorado Springs"
+        "state": "CO",
+        "city": "Colorado Springs",
+        "zipcode": "80924",
+        "website": "http://www.accelerainnovations.com",
+        "full_time_employees": null
     },
     "ADK.V": {
         "short_name": "DIAGNOS INC.",
@@ -621,7 +825,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Brossard"
+        "state": "QC",
+        "city": "Brossard",
+        "zipcode": "J4Z 1A7",
+        "website": "http://www.diagnos.ca",
+        "full_time_employees": null
     },
     "AGTI": {
         "short_name": "Agiliti, Inc.",
@@ -633,7 +841,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Minneapolis"
+        "state": "MN",
+        "city": "Minneapolis",
+        "zipcode": "55439",
+        "website": "http://www.agilitihealth.com",
+        "full_time_employees": 3497
     },
     "AHGIF": {
         "short_name": "ALTERNATE HEALTH CORP",
@@ -645,7 +857,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5R 3K5",
+        "website": "http://www.alternatehealth.com",
+        "full_time_employees": null
     },
     "AINO.ST": {
         "short_name": "Aino Health AB",
@@ -657,7 +873,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "115 23",
+        "website": "http://www.ainohealth.com",
+        "full_time_employees": 28
     },
     "AJ91.DE": {
         "short_name": "DOCCHECK AG NA O.N.",
@@ -669,7 +889,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Cologne"
+        "state": null,
+        "city": "Cologne",
+        "zipcode": "50823",
+        "website": "http://www.doccheck.ag",
+        "full_time_employees": 341
     },
     "AJ91.F": {
         "short_name": "DOCCHECK AG NA O.N.",
@@ -681,7 +905,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Cologne"
+        "state": null,
+        "city": "Cologne",
+        "zipcode": "50823",
+        "website": "http://www.doccheck.ag",
+        "full_time_employees": 341
     },
     "AL21.F": {
         "short_name": "ALLSCRIPTS HEAL.SOL.DL-01",
@@ -693,7 +921,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60654",
+        "website": "http://www.allscripts.com",
+        "full_time_employees": 8400
     },
     "ALC.AX": {
         "short_name": "ALCIDION FPO",
@@ -705,7 +937,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "South Yarra"
+        "state": "VIC",
+        "city": "South Yarra",
+        "zipcode": "3141",
+        "website": "http://www.alcidion.com",
+        "full_time_employees": null
     },
     "ALDNF": {
         "short_name": "ALADDIN HEALTHCARE TECHNOLOGIES",
@@ -717,7 +953,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Germany",
-        "city": "Berlin"
+        "state": null,
+        "city": "Berlin",
+        "zipcode": "10117",
+        "website": "http://www.aladdinid.com",
+        "full_time_employees": 3
     },
     "ALINS.PA": {
         "short_name": "INTRASENSE",
@@ -729,7 +969,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Montpellier"
+        "state": null,
+        "city": "Montpellier",
+        "zipcode": "34000",
+        "website": "http://www.intrasense.fr",
+        "full_time_employees": 40
     },
     "ALVTX.PA": {
         "short_name": "VOLUNTIS",
@@ -741,7 +985,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Suresnes"
+        "state": null,
+        "city": "Suresnes",
+        "zipcode": "92150",
+        "website": "http://www.voluntis.com",
+        "full_time_employees": 72
     },
     "AMWL": {
         "short_name": "American Well Corporation",
@@ -753,7 +1001,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Boston"
+        "state": "MA",
+        "city": "Boston",
+        "zipcode": "02109",
+        "website": "http://amwell.com",
+        "full_time_employees": 812
     },
     "APP.CN": {
         "short_name": "Global CannaApp",
@@ -765,7 +1017,11 @@
         "exchange": "CNQ",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6E 4A6",
+        "website": "http://cannappscorp.com",
+        "full_time_employees": null
     },
     "APYI": {
         "short_name": "ASPYRA INC",
@@ -777,7 +1033,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Jacksonville"
+        "state": "FL",
+        "city": "Jacksonville",
+        "zipcode": "32256",
+        "website": "http://www.aspyra.com",
+        "full_time_employees": 69
     },
     "ASCN.SW": {
         "short_name": "ASCOM N",
@@ -789,7 +1049,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Baar"
+        "state": null,
+        "city": "Baar",
+        "zipcode": "6340",
+        "website": "http://www.ascom.com",
+        "full_time_employees": 1282
     },
     "AUGX": {
         "short_name": "AUGMEDIX INC",
@@ -801,7 +1065,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "San Francisco"
+        "state": "CA",
+        "city": "San Francisco",
+        "zipcode": "94104",
+        "website": "http://www.augmedix.com",
+        "full_time_employees": 455
     },
     "AUHP.F": {
         "short_name": "EGF THERAMED HEALTH CORP.",
@@ -813,7 +1081,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V7Y 1C3",
+        "website": "http://theramedhealthcorp.com",
+        "full_time_employees": null
     },
     "BNVIF": {
         "short_name": "BINOVI TECHNOLOGIES CORP",
@@ -825,7 +1097,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6Z 1S4",
+        "website": "http://www.binovi.com",
+        "full_time_employees": null
     },
     "BPN.F": {
         "short_name": "MEDIBIO LTD",
@@ -837,7 +1113,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3205",
+        "website": "http://medibio.com.au",
+        "full_time_employees": null
     },
     "C1ER34.SA": {
         "short_name": "CERNER CORP DRN",
@@ -849,7 +1129,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "North Kansas City"
+        "state": "MO",
+        "city": "North Kansas City",
+        "zipcode": "64117-2551",
+        "website": "http://www.cerner.com",
+        "full_time_employees": 26400
     },
     "C34.F": {
         "short_name": "CARASENT ASA  NK 1,332",
@@ -861,7 +1145,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0164",
+        "website": "http://carasent.com",
+        "full_time_employees": null
     },
     "C7E.F": {
         "short_name": "CEGEDIM SA  EO 0,9528",
@@ -873,7 +1161,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Boulogne-Billancourt"
+        "state": null,
+        "city": "Boulogne-Billancourt",
+        "zipcode": "92100",
+        "website": "http://www.cegedim.fr",
+        "full_time_employees": 5030
     },
     "CARA.OL": {
         "short_name": "CARASENT ASA",
@@ -885,7 +1177,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0164",
+        "website": "http://carasent.com",
+        "full_time_employees": null
     },
     "CARE.TO": {
         "short_name": "DIALOGUE HEALTH TECHNOLOGIES IN",
@@ -897,7 +1193,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H2Y 1T9",
+        "website": "http://dialogue.co",
+        "full_time_employees": 250
     },
     "CBP.CN": {
         "short_name": "CertiveSoln",
@@ -909,7 +1209,11 @@
         "exchange": "CNQ",
         "market": "ca_market",
         "country": "United States",
-        "city": "Scottsdale"
+        "state": "AZ",
+        "city": "Scottsdale",
+        "zipcode": "85258",
+        "website": "http://certive.com",
+        "full_time_employees": null
     },
     "CDX.V": {
         "short_name": "CLOUD DX INC",
@@ -921,7 +1225,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Kitchener"
+        "state": "ON",
+        "city": "Kitchener",
+        "zipcode": "N2G 4Y9",
+        "website": "http://www.clouddx.com",
+        "full_time_employees": null
     },
     "CDZ.MU": {
         "short_name": "LIFESPOT CAPITAL AG O.N.",
@@ -933,7 +1241,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Munich"
+        "state": null,
+        "city": "Munich",
+        "zipcode": "80335",
+        "website": "http://www.lifespotcapital.com",
+        "full_time_employees": null
     },
     "CERN.MX": {
         "short_name": "CERNER CORP",
@@ -945,7 +1257,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "North Kansas City"
+        "state": "MO",
+        "city": "North Kansas City",
+        "zipcode": "64117-2551",
+        "website": "http://www.cerner.com",
+        "full_time_employees": 26400
     },
     "CERN": {
         "short_name": "Cerner Corporation",
@@ -957,7 +1273,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "North Kansas City"
+        "state": "MO",
+        "city": "North Kansas City",
+        "zipcode": "64117-2551",
+        "website": "http://www.cerner.com",
+        "full_time_employees": 26400
     },
     "CERN.VI": {
         "short_name": "CERNER CORP",
@@ -969,7 +1289,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "United States",
-        "city": "North Kansas City"
+        "state": "MO",
+        "city": "North Kansas City",
+        "zipcode": "64117-2551",
+        "website": "http://www.cerner.com",
+        "full_time_employees": 26400
     },
     "CGM.PA": {
         "short_name": "CEGEDIM",
@@ -981,7 +1305,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Boulogne-Billancourt"
+        "state": null,
+        "city": "Boulogne-Billancourt",
+        "zipcode": "92100",
+        "website": "http://www.cegedim.fr",
+        "full_time_employees": 5030
     },
     "CGS.AX": {
         "short_name": "COGSTATE FPO",
@@ -993,7 +1321,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Fitzroy"
+        "state": "VIC",
+        "city": "Fitzroy",
+        "zipcode": "3065",
+        "website": "http://www.cogstate.com",
+        "full_time_employees": 163
     },
     "CHNG.MX": {
         "short_name": "CHANGE HEALTHCARE INC",
@@ -1005,7 +1337,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "Nashville"
+        "state": "TN",
+        "city": "Nashville",
+        "zipcode": "37219",
+        "website": "http://www.changehealthcare.com",
+        "full_time_employees": 15000
     },
     "CHNG": {
         "short_name": "Change Healthcare Inc.",
@@ -1017,7 +1353,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Nashville"
+        "state": "TN",
+        "city": "Nashville",
+        "zipcode": "37219",
+        "website": "http://www.changehealthcare.com",
+        "full_time_employees": 15000
     },
     "CLNH": {
         "short_name": "CLINIGENCE HLDGS INC",
@@ -1029,7 +1369,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Fort Lauderdale"
+        "state": "FL",
+        "city": "Fort Lauderdale",
+        "zipcode": "33304",
+        "website": "http://ahahealthcare.net",
+        "full_time_employees": null
     },
     "CMPD": {
         "short_name": "COMPUMED INC",
@@ -1041,7 +1385,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Los Angeles"
+        "state": "CA",
+        "city": "Los Angeles",
+        "zipcode": "90045",
+        "website": "http://www.compumed.net",
+        "full_time_employees": 8
     },
     "CNONF": {
         "short_name": "LYNX GLOBAL DIGITAL FIN CORP",
@@ -1053,7 +1401,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6B 5C6",
+        "website": "http://www.cannaonetechnologies.com",
+        "full_time_employees": null
     },
     "COG.L": {
         "short_name": "CAMBRIDGE COGNITION HOLDINGS PL",
@@ -1065,7 +1417,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Cambridge"
+        "state": null,
+        "city": "Cambridge",
+        "zipcode": "CB25 9TU",
+        "website": "http://www.cambridgecognition.com",
+        "full_time_employees": null
     },
     "COGZF": {
         "short_name": "COGSTATE",
@@ -1077,7 +1433,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Fitzroy"
+        "state": "VIC",
+        "city": "Fitzroy",
+        "zipcode": "3065",
+        "website": "http://www.cogstate.com",
+        "full_time_employees": 163
     },
     "CONTX.OL": {
         "short_name": "CONTEXTVISION AB",
@@ -1089,7 +1449,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "111 22",
+        "website": "http://www.contextvision.com",
+        "full_time_employees": 50
     },
     "COO.AX": {
         "short_name": "CORUM GRP FPO",
@@ -1101,7 +1465,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.corumgroup.com.au",
+        "full_time_employees": null
     },
     "COP.DE": {
         "short_name": "COMPUGROUP MED. NA O.N.",
@@ -1113,7 +1481,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Koblenz"
+        "state": null,
+        "city": "Koblenz",
+        "zipcode": "56070",
+        "website": "http://www.cgm.com",
+        "full_time_employees": 7814
     },
     "CPSI": {
         "short_name": "Computer Programs and Systems, ",
@@ -1125,7 +1497,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Mobile"
+        "state": "AL",
+        "city": "Mobile",
+        "zipcode": "36695",
+        "website": "http://www.cpsi.com",
+        "full_time_employees": 2000
     },
     "CRBK.V": {
         "short_name": "CAREBOOK TECHNOLGIES INC",
@@ -1137,7 +1513,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H3A 2V4",
+        "website": "http://www.carebook.com",
+        "full_time_employees": 49
     },
     "CRBKF": {
         "short_name": "CAREBOOK TECHNOLOGIES INC",
@@ -1149,7 +1529,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H3A 2V4",
+        "website": "http://www.carebook.com",
+        "full_time_employees": 49
     },
     "CRE.F": {
         "short_name": "CERNER CORP.  DL-,01",
@@ -1161,7 +1545,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "North Kansas City"
+        "state": "MO",
+        "city": "North Kansas City",
+        "zipcode": "64117-2551",
+        "website": "http://www.cerner.com",
+        "full_time_employees": 26400
     },
     "CRVW": {
         "short_name": "CAREVIEW COMMUNICATIONS INC",
@@ -1173,7 +1561,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Lewisville"
+        "state": "TX",
+        "city": "Lewisville",
+        "zipcode": "75067",
+        "website": "http://www.care-view.com",
+        "full_time_employees": 56
     },
     "CRW.L": {
         "short_name": "CRANEWARE PLC ORD 1P",
@@ -1185,7 +1577,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Edinburgh"
+        "state": null,
+        "city": "Edinburgh",
+        "zipcode": "EH3 5DA",
+        "website": "http://public.craneware.com",
+        "full_time_employees": 350
     },
     "CSAM.OL": {
         "short_name": "CSAM HEALTH GROUP",
@@ -1197,7 +1593,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0283",
+        "website": "http://www.csamhealth.com",
+        "full_time_employees": 168
     },
     "CSLT": {
         "short_name": "Castlight Health, Inc.",
@@ -1209,7 +1609,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "San Francisco"
+        "state": "CA",
+        "city": "San Francisco",
+        "zipcode": "94105",
+        "website": "http://www.castlighthealth.com",
+        "full_time_employees": 440
     },
     "CSOC": {
         "short_name": "CADUCEUS SOFTWARE SYSTEMS CORP",
@@ -1221,7 +1625,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Johnston"
+        "state": "RI",
+        "city": "Johnston",
+        "zipcode": "02919",
+        "website": "http://www.caduceusco.com",
+        "full_time_employees": null
     },
     "CTHZ": {
         "short_name": "CANCER TREATMENT HOLDINGS INC",
@@ -1233,7 +1641,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Carson City"
+        "state": "NV",
+        "city": "Carson City",
+        "zipcode": "89703",
+        "website": null,
+        "full_time_employees": null
     },
     "CTVEF": {
         "short_name": "CERTIVE SOLUTIONS INC",
@@ -1245,7 +1657,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Scottsdale"
+        "state": "AZ",
+        "city": "Scottsdale",
+        "zipcode": "85258",
+        "website": "http://certive.com",
+        "full_time_employees": null
     },
     "CUR.ST": {
         "short_name": "Curando Nordic AB",
@@ -1257,7 +1673,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Sollentuna"
+        "state": null,
+        "city": "Sollentuna",
+        "zipcode": "191 61",
+        "website": "http://www.curando.se",
+        "full_time_employees": null
     },
     "CVET": {
         "short_name": "Covetrus, Inc.",
@@ -1269,7 +1689,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Portland"
+        "state": "ME",
+        "city": "Portland",
+        "zipcode": "04101",
+        "website": "http://www.covetrus.com",
+        "full_time_employees": 5275
     },
     "DOC.AX": {
         "short_name": "DOCTORCARE CDI 1:1",
@@ -1281,7 +1705,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "EC4Y 8DP",
+        "website": "http://www.doctorcareanywhere.com",
+        "full_time_employees": 277
     },
     "DOC.V": {
         "short_name": "CLOUDMD SOFTWARE AND SERVICES I",
@@ -1293,7 +1721,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6C 1H2",
+        "website": "http://cloudmd.ca",
+        "full_time_employees": null
     },
     "DOCRF": {
         "short_name": "CLOUDMD SOFTWARE & SERVICES INC",
@@ -1305,7 +1737,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6C 1H2",
+        "website": "http://cloudmd.ca",
+        "full_time_employees": null
     },
     "DSH.F": {
         "short_name": "SENSYNE HEALTH LT  LS-,1",
@@ -1317,7 +1753,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "Oxford"
+        "state": null,
+        "city": "Oxford",
+        "zipcode": "OX4 4GE",
+        "website": "http://www.sensynehealth.com",
+        "full_time_employees": 135
     },
     "DSOL": {
         "short_name": "DRUG FREE SOLUTION INC",
@@ -1329,7 +1769,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "El Segundo"
+        "state": "CA",
+        "city": "El Segundo",
+        "zipcode": "90245",
+        "website": "http://www.drugfreesolution.com",
+        "full_time_employees": null
     },
     "DTRK": {
         "short_name": "DATATRAK INTERNATIONAL INC",
@@ -1341,7 +1785,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Mayfield Heights"
+        "state": "OH",
+        "city": "Mayfield Heights",
+        "zipcode": "44124",
+        "website": "http://www.datatrak.com",
+        "full_time_employees": null
     },
     "EBYH": {
         "short_name": "E-BUY HOME INC",
@@ -1353,7 +1801,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10001",
+        "website": "http://strainsforpains.com",
+        "full_time_employees": null
     },
     "EKG.V": {
         "short_name": "CARDIOCOMM SOLUTIONS, INC.",
@@ -1365,7 +1817,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M2J 0B5",
+        "website": "http://www.cardiocommsolutions.com",
+        "full_time_employees": null
     },
     "EKGGF": {
         "short_name": "CARDIOCOMM SOLUTIONS INC",
@@ -1377,7 +1833,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M2J 0B5",
+        "website": "http://www.cardiocommsolutions.com",
+        "full_time_employees": null
     },
     "EMD.AX": {
         "short_name": "EMYRIAL FPO",
@@ -1389,7 +1849,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "West Leederville"
+        "state": "WA",
+        "city": "West Leederville",
+        "zipcode": "6901",
+        "website": "http://www.emyria.com",
+        "full_time_employees": null
     },
     "EMIS.L": {
         "short_name": "EMIS GROUP PLC ORD 1P",
@@ -1401,7 +1865,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Leeds"
+        "state": null,
+        "city": "Leeds",
+        "zipcode": "LS19 6BA",
+        "website": "http://www.emisgroupplc.com",
+        "full_time_employees": 1591
     },
     "EMO.F": {
         "short_name": "EM HOLDINGS CO.",
@@ -1413,7 +1881,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Osaka"
+        "state": null,
+        "city": "Osaka",
+        "zipcode": "532-0003",
+        "website": "http://www.emsystems.co.jp",
+        "full_time_employees": null
     },
     "EMOR": {
         "short_name": "HEALIXA INC",
@@ -1425,7 +1897,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Farmingdale"
+        "state": "NY",
+        "city": "Farmingdale",
+        "zipcode": null,
+        "website": "http://www.puravidavitamins.com",
+        "full_time_employees": null
     },
     "EMYSF": {
         "short_name": "EASY TECHNOLOGIES INC",
@@ -1437,7 +1913,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6C 3P6",
+        "website": null,
+        "full_time_employees": null
     },
     "ESSI": {
         "short_name": "ECO SCIENCE SOLUTIONS INC",
@@ -1449,7 +1929,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Makawao"
+        "state": "HI",
+        "city": "Makawao",
+        "zipcode": "96768",
+        "website": "http://www.useherbo.com",
+        "full_time_employees": 3
     },
     "EVAHF": {
         "short_name": "EGF THERAMED HEALTH CORP",
@@ -1461,7 +1945,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V7Y 1C3",
+        "website": "http://theramedhealthcorp.com",
+        "full_time_employees": null
     },
     "EVH": {
         "short_name": "Evolent Health, Inc",
@@ -1473,7 +1961,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Arlington"
+        "state": "VA",
+        "city": "Arlington",
+        "zipcode": "22203",
+        "website": "http://www.evolenthealth.com",
+        "full_time_employees": 2900
     },
     "EWLL": {
         "short_name": "EWELLNESS HEALTHCARE CORP",
@@ -1485,7 +1977,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Fort Lauderdale"
+        "state": "FL",
+        "city": "Fort Lauderdale",
+        "zipcode": "33301",
+        "website": "http://www.ewellnesshealth.com",
+        "full_time_employees": 9
     },
     "FDBH": {
         "short_name": "FOUNDERS BAY HOLDINGS",
@@ -1497,7 +1993,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Las Vegas"
+        "state": "NV",
+        "city": "Las Vegas",
+        "zipcode": "89102",
+        "website": "http://fbaytech.com",
+        "full_time_employees": 7
     },
     "FDBK.L": {
         "short_name": "FEEDBACK PLC ORD 0.25P",
@@ -1509,7 +2009,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "SE1 7LL",
+        "website": "http://fbkmed.com/feedback-plc",
+        "full_time_employees": 12
     },
     "FOBK.F": {
         "short_name": "KNEAT.COM INC.",
@@ -1521,7 +2025,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Ireland",
-        "city": "Limerick"
+        "state": null,
+        "city": "Limerick",
+        "zipcode": "V94 KW28",
+        "website": "http://www.kneat.com",
+        "full_time_employees": null
     },
     "FONET.IS": {
         "short_name": "FONET BILGI TEKNOLOJILERI",
@@ -1533,7 +2041,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": null,
+        "website": "http://www.fonetyazilim.com",
+        "full_time_employees": 119
     },
     "FORA": {
         "short_name": "Forian Inc.",
@@ -1545,7 +2057,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Newtown"
+        "state": "PA",
+        "city": "Newtown",
+        "zipcode": "18940",
+        "website": "http://forian.com",
+        "full_time_employees": 18
     },
     "FRISQ.ST": {
         "short_name": "FRISQ Holding AB",
@@ -1557,7 +2073,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "111 44",
+        "website": "http://www.frisqholding.se",
+        "full_time_employees": 25
     },
     "FUAPF": {
         "short_name": "GLOBAL CANNABIS APPLICATIONS CO",
@@ -1569,7 +2089,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6E 4A6",
+        "website": "http://cannappscorp.com",
+        "full_time_employees": null
     },
     "GDRX": {
         "short_name": "GoodRx Holdings, Inc.",
@@ -1581,7 +2105,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Santa Monica"
+        "state": "CA",
+        "city": "Santa Monica",
+        "zipcode": "90404",
+        "website": "http://www.goodrx.com",
+        "full_time_employees": 450
     },
     "GLH.AX": {
         "short_name": "GLOBALHE FPO",
@@ -1593,7 +2121,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3000",
+        "website": "http://www.global-health.com",
+        "full_time_employees": null
     },
     "HCAT": {
         "short_name": "Health Catalyst, Inc",
@@ -1605,7 +2137,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "South Jordan"
+        "state": "UT",
+        "city": "South Jordan",
+        "zipcode": "84095",
+        "website": "http://www.healthcatalyst.com",
+        "full_time_employees": 1000
     },
     "HDSLF": {
         "short_name": "HEALTHSPACE DATA SYSTEMS LTD",
@@ -1617,7 +2153,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Chilliwack"
+        "state": "BC",
+        "city": "Chilliwack",
+        "zipcode": "V2R 6E7",
+        "website": "http://www.gethealthspace.com",
+        "full_time_employees": null
     },
     "HDVY": {
         "short_name": "HEALTH DISCOVERY CORPORATION",
@@ -1629,7 +2169,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Atlanta"
+        "state": "GA",
+        "city": "Atlanta",
+        "zipcode": "30319",
+        "website": "http://www.healthdiscoverycorp.com",
+        "full_time_employees": 3
     },
     "HEALTH.HE": {
         "short_name": "Nightingale Health Oyj B",
@@ -1641,7 +2185,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00300",
+        "website": "http://nightingalehealth.com",
+        "full_time_employees": null
     },
     "HITC": {
         "short_name": "HEALTHCARE INTEGRATED TECH INC",
@@ -1653,7 +2201,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Knoxville"
+        "state": "TN",
+        "city": "Knoxville",
+        "zipcode": "37919",
+        "website": null,
+        "full_time_employees": 3
     },
     "HL5.F": {
         "short_name": "HEALTHSTREAM INC.  DL-,01",
@@ -1665,7 +2217,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Nashville"
+        "state": "TN",
+        "city": "Nashville",
+        "zipcode": "37203",
+        "website": "http://www.healthstream.com",
+        "full_time_employees": 1037
     },
     "HLTT": {
         "short_name": "HEALTHTECH SOLUTIONS INC",
@@ -1677,7 +2233,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10004",
+        "website": null,
+        "full_time_employees": 2
     },
     "HLYK": {
         "short_name": "HEALTHLYNKED CORP",
@@ -1689,7 +2249,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Naples"
+        "state": "FL",
+        "city": "Naples",
+        "zipcode": "34108",
+        "website": "http://www.healthlynked.com",
+        "full_time_employees": 47
     },
     "HQY": {
         "short_name": "HealthEquity, Inc.",
@@ -1701,7 +2265,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Draper"
+        "state": "UT",
+        "city": "Draper",
+        "zipcode": "84020",
+        "website": "http://www.healthequity.com",
+        "full_time_employees": 3001
     },
     "HS.CN": {
         "short_name": "HealthSpace",
@@ -1713,7 +2281,11 @@
         "exchange": "CNQ",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Chilliwack"
+        "state": "BC",
+        "city": "Chilliwack",
+        "zipcode": "V2R 6E7",
+        "website": "http://www.gethealthspace.com",
+        "full_time_employees": null
     },
     "HSCHF": {
         "short_name": "H-SOURCE HOLDINGS LTD",
@@ -1725,7 +2297,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6E 2E9",
+        "website": "http://www.h-source.com",
+        "full_time_employees": null
     },
     "HSQ.F": {
         "short_name": "H-SOURCE HLDGS CL.A O.N.",
@@ -1737,7 +2313,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6E 2E9",
+        "website": "http://www.h-source.com",
+        "full_time_employees": null
     },
     "HSTM": {
         "short_name": "HealthStream, Inc.",
@@ -1749,7 +2329,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Nashville"
+        "state": "TN",
+        "city": "Nashville",
+        "zipcode": "37203",
+        "website": "http://www.healthstream.com",
+        "full_time_employees": 1037
     },
     "HWT1.F": {
         "short_name": "ICAD INC.  DL-,01",
@@ -1761,7 +2345,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Nashua"
+        "state": "NH",
+        "city": "Nashua",
+        "zipcode": "03062",
+        "website": "http://www.icadmed.com",
+        "full_time_employees": 113
     },
     "I8S.F": {
         "short_name": "INTRASENSE SAS  EO -,05",
@@ -1773,7 +2361,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Montpellier"
+        "state": null,
+        "city": "Montpellier",
+        "zipcode": "34000",
+        "website": "http://www.intrasense.fr",
+        "full_time_employees": 40
     },
     "ICAD": {
         "short_name": "icad inc.",
@@ -1785,7 +2377,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Nashua"
+        "state": "NH",
+        "city": "Nashua",
+        "zipcode": "03062",
+        "website": "http://www.icadmed.com",
+        "full_time_employees": 113
     },
     "ICCO": {
         "short_name": "INTERCARE DX INC",
@@ -1797,7 +2393,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Hawthorne"
+        "state": "CA",
+        "city": "Hawthorne",
+        "zipcode": "90250",
+        "website": "http://www.intercare.com",
+        "full_time_employees": 5
     },
     "ICCT": {
         "short_name": "ICORECONNECT INC",
@@ -1809,7 +2409,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Winter Garden"
+        "state": "FL",
+        "city": "Winter Garden",
+        "zipcode": "34786",
+        "website": "http://www.icoreconnect.com",
+        "full_time_employees": 25
     },
     "ICR.AX": {
         "short_name": "INTELICARE FPO",
@@ -1821,7 +2425,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Leederville"
+        "state": "WA",
+        "city": "Leederville",
+        "zipcode": "6007",
+        "website": "http://intelicare.com.au",
+        "full_time_employees": null
     },
     "ICS.AX": {
         "short_name": "ICSGLOBAL FPO",
@@ -1833,7 +2441,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "1225",
+        "website": "http://icsglobal.com.au",
+        "full_time_employees": null
     },
     "IGRW": {
         "short_name": "INTERACTIVE HEALTH NETWORK",
@@ -1845,7 +2457,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Washington"
+        "state": "DC",
+        "city": "Washington",
+        "zipcode": "20012",
+        "website": null,
+        "full_time_employees": 1
     },
     "IME.AX": {
         "short_name": "IMEXHS FPO",
@@ -1857,7 +2473,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Mascot"
+        "state": "NSW",
+        "city": "Mascot",
+        "zipcode": "2020",
+        "website": "http://www.imexhs.com",
+        "full_time_employees": null
     },
     "IMED-L.TA": {
         "short_name": "IMED INFINITY MEDICAL LTD PARTN",
@@ -1869,7 +2489,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "6701101",
+        "website": null,
+        "full_time_employees": null
     },
     "INDCT.OL": {
         "short_name": "INDUCT AS",
@@ -1881,7 +2505,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0158",
+        "website": "http://www.inductsoftware.com",
+        "full_time_employees": null
     },
     "INHC.L": {
         "short_name": "INDUCTION HEALTHCARE GROUP PLC ",
@@ -1893,7 +2521,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "EC3R 8HL",
+        "website": "http://www.inductionhealthcare.com",
+        "full_time_employees": 16
     },
     "INOV": {
         "short_name": "Inovalon Holdings, Inc.",
@@ -1905,7 +2537,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Bowie"
+        "state": "MD",
+        "city": "Bowie",
+        "zipcode": "20716",
+        "website": "http://www.inovalon.com",
+        "full_time_employees": 1836
     },
     "INS.L": {
         "short_name": "INSTEM PLC ORD 10P",
@@ -1917,7 +2553,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Stone"
+        "state": null,
+        "city": "Stone",
+        "zipcode": "ST15 0SD",
+        "website": "http://www.instem.com",
+        "full_time_employees": 304
     },
     "IOV.F": {
         "short_name": "INOVALON HLD. A DL-000025",
@@ -1929,7 +2569,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Bowie"
+        "state": "MD",
+        "city": "Bowie",
+        "zipcode": "20716",
+        "website": "http://www.inovalon.com",
+        "full_time_employees": 1836
     },
     "IQAI.L": {
         "short_name": "IQ-AI LIMITED ORD GBP0.01",
@@ -1941,7 +2585,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Jersey",
-        "city": "Saint Helier"
+        "state": null,
+        "city": "Saint Helier",
+        "zipcode": "JE4 8TQ",
+        "website": "http://www.imagingbiometrics.com/iq-ai-ltd",
+        "full_time_employees": 7
     },
     "IS8.DE": {
         "short_name": "IFA SYSTEMS AG",
@@ -1953,7 +2601,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Frechen"
+        "state": null,
+        "city": "Frechen",
+        "zipcode": "50226",
+        "website": "http://www.ifasystems.de",
+        "full_time_employees": 60
     },
     "IS8.F": {
         "short_name": "IFA SYSTEMS AG",
@@ -1965,7 +2617,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Frechen"
+        "state": null,
+        "city": "Frechen",
+        "zipcode": "50226",
+        "website": "http://www.ifasystems.de",
+        "full_time_employees": 60
     },
     "JHL.AX": {
         "short_name": "JAYEX FPO",
@@ -1977,7 +2633,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Milton"
+        "state": "QLD",
+        "city": "Milton",
+        "zipcode": "4064",
+        "website": "http://www.jayex.com/en-au/",
+        "full_time_employees": null
     },
     "KERN": {
         "short_name": "Akerna Corp.",
@@ -1989,7 +2649,11 @@
         "exchange": "NCM",
         "market": "us_market",
         "country": "United States",
-        "city": "Denver"
+        "state": "CO",
+        "city": "Denver",
+        "zipcode": "80202",
+        "website": "http://www.akerna.com",
+        "full_time_employees": 144
     },
     "KONT.ST": {
         "short_name": "Kontigo Care AB",
@@ -2001,7 +2665,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Uppsala"
+        "state": null,
+        "city": "Uppsala",
+        "zipcode": null,
+        "website": "http://www.kontigocare.com",
+        "full_time_employees": 12
     },
     "KSI.V": {
         "short_name": "KNEAT.COM INC",
@@ -2013,7 +2681,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Ireland",
-        "city": "Limerick"
+        "state": null,
+        "city": "Limerick",
+        "zipcode": "V94 KW28",
+        "website": "http://www.kneat.com",
+        "full_time_employees": null
     },
     "LFCOF": {
         "short_name": "LIFT & CO CORP",
@@ -2025,7 +2697,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5V 2G4",
+        "website": "http://lift.co",
+        "full_time_employees": null
     },
     "LGBI": {
         "short_name": "CANNABIZ MOBILE INC",
@@ -2037,7 +2713,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Cambridge"
+        "state": "MA",
+        "city": "Cambridge",
+        "zipcode": "02140",
+        "website": "http://www.cannabizmobile.com",
+        "full_time_employees": 9
     },
     "LV1.F": {
         "short_name": "STREAMLINE HEA.SOL.DL-,01",
@@ -2049,7 +2729,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Alpharetta"
+        "state": "GA",
+        "city": "Alpharetta",
+        "zipcode": "30009",
+        "website": "http://www.streamlinehealth.net",
+        "full_time_employees": 66
     },
     "LYNX.CN": {
         "short_name": "LynxGlDigitFin",
@@ -2061,7 +2745,11 @@
         "exchange": "CNQ",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6B 5C6",
+        "website": "http://www.cannaonetechnologies.com",
+        "full_time_employees": null
     },
     "M3V.DE": {
         "short_name": "MEVIS MEDICAL SOL.NA O.N.",
@@ -2073,7 +2761,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Bremen"
+        "state": null,
+        "city": "Bremen",
+        "zipcode": "28359",
+        "website": "http://www.mevis.de",
+        "full_time_employees": 105
     },
     "M3V.F": {
         "short_name": "MEVIS MEDICAL SOL.NA O.N.",
@@ -2085,7 +2777,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Bremen"
+        "state": null,
+        "city": "Bremen",
+        "zipcode": "28359",
+        "website": "http://www.mevis.de",
+        "full_time_employees": 105
     },
     "M7T.AX": {
         "short_name": "MACH7 FPO",
@@ -2097,7 +2793,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "United States",
-        "city": "South Burlington"
+        "state": "VT",
+        "city": "South Burlington",
+        "zipcode": "05403",
+        "website": "http://www.mach7t.com",
+        "full_time_employees": null
     },
     "MBCN.TO": {
         "short_name": "MINDBEACON HOLDINGS INC",
@@ -2109,7 +2809,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M4W 3R8",
+        "website": "http://ir.mindbeacon.com",
+        "full_time_employees": null
     },
     "MBO.F": {
         "short_name": "MTI LTD.",
@@ -2121,7 +2825,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "163-1435",
+        "website": "http://www.mti.co.jp",
+        "full_time_employees": 1194
     },
     "MDBIF": {
         "short_name": "MEDIBIO LIMITED",
@@ -2133,7 +2841,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3205",
+        "website": "http://medibio.com.au",
+        "full_time_employees": null
     },
     "MDCE": {
         "short_name": "MEDICAL CARE TECHNOLOGIES INC",
@@ -2145,7 +2857,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "10009",
+        "website": "http://www.medicaretechinc.com",
+        "full_time_employees": null
     },
     "MDQK.HM": {
         "short_name": "MEDINAVI AG  INH. O.N.",
@@ -2157,7 +2873,11 @@
         "exchange": "HAM",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Munich"
+        "state": null,
+        "city": "Munich",
+        "zipcode": "80634",
+        "website": "http://www.medinavi.de",
+        "full_time_employees": null
     },
     "MDR.AX": {
         "short_name": "MEDADVISOR FPO",
@@ -2169,7 +2889,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Camberwell"
+        "state": "VIC",
+        "city": "Camberwell",
+        "zipcode": "3124",
+        "website": "http://www.medadvisor.com.au",
+        "full_time_employees": null
     },
     "MDRM": {
         "short_name": "MODERN MOBILITY AIDS INC",
@@ -2181,7 +2905,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5X 1C1",
+        "website": "http://mdrminc.com",
+        "full_time_employees": null
     },
     "MDRX": {
         "short_name": "Allscripts Healthcare Solutions",
@@ -2193,7 +2921,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60654",
+        "website": "http://www.allscripts.com",
+        "full_time_employees": 8400
     },
     "MDWK": {
         "short_name": "MDWERKS INC",
@@ -2205,7 +2937,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Deerfield Beach"
+        "state": "FL",
+        "city": "Deerfield Beach",
+        "zipcode": "33442",
+        "website": null,
+        "full_time_employees": 6
     },
     "MDXL": {
         "short_name": "MEDIXALL GROUP INC",
@@ -2217,7 +2953,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Fort Lauderdale"
+        "state": "FL",
+        "city": "Fort Lauderdale",
+        "zipcode": "33308",
+        "website": "http://www.medixall.com",
+        "full_time_employees": 19
     },
     "MEB.AX": {
         "short_name": "MEDIBIOLTD FPO",
@@ -2229,7 +2969,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3205",
+        "website": "http://medibio.com.au",
+        "full_time_employees": null
     },
     "MHN2.F": {
         "short_name": "RELIQ HEALTH TECHS",
@@ -2241,7 +2985,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Hamilton"
+        "state": "ON",
+        "city": "Hamilton",
+        "zipcode": "L8P 0A1",
+        "website": "http://www.reliqhealth.com",
+        "full_time_employees": null
     },
     "MITI": {
         "short_name": "MITESCO INC",
@@ -2253,7 +3001,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Minnetonka"
+        "state": "MN",
+        "city": "Minnetonka",
+        "zipcode": "55305",
+        "website": "http://www.mitescoinc.com",
+        "full_time_employees": 5
     },
     "MLLAB.PA": {
         "short_name": "MEDIA LAB",
@@ -2265,7 +3017,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20124",
+        "website": "http://www.mlsw.com",
+        "full_time_employees": null
     },
     "MNOW.V": {
         "short_name": "MEDNOW INC",
@@ -2277,7 +3033,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V5V 3R3",
+        "website": "http://www.mednow.ca",
+        "full_time_employees": null
     },
     "MONSO.CO": {
         "short_name": "Monsenso A/S",
@@ -2289,7 +3049,11 @@
         "exchange": "CPH",
         "market": "dk_market",
         "country": "Denmark",
-        "city": "Copenhagen"
+        "state": null,
+        "city": "Copenhagen",
+        "zipcode": "1799",
+        "website": "http://www.monsenso.com",
+        "full_time_employees": 19
     },
     "MOST": {
         "short_name": "MOBILESMITH INC",
@@ -2301,7 +3065,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Raleigh"
+        "state": "NC",
+        "city": "Raleigh",
+        "zipcode": "27607",
+        "website": "http://www.mobilesmith.com",
+        "full_time_employees": 28
     },
     "MSRT": {
         "short_name": "MASSROOTS INC",
@@ -2313,7 +3081,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Denver"
+        "state": "CO",
+        "city": "Denver",
+        "zipcode": "80202",
+        "website": "http://www.massroots.com",
+        "full_time_employees": 3
     },
     "MTB0.F": {
         "short_name": "CARECLOUD INC.  DL-,001",
@@ -2325,7 +3097,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Somerset"
+        "state": "NJ",
+        "city": "Somerset",
+        "zipcode": "08873",
+        "website": "http://www.carecloud.com",
+        "full_time_employees": 3700
     },
     "MTBB.F": {
         "short_name": "CARECLOUD INC.PREF. SR. A",
@@ -2337,7 +3113,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Somerset"
+        "state": "NJ",
+        "city": "Somerset",
+        "zipcode": "08873",
+        "website": "http://www.carecloud.com",
+        "full_time_employees": 3700
     },
     "MTBC": {
         "short_name": "CareCloud, Inc.",
@@ -2349,7 +3129,11 @@
         "exchange": "NGM",
         "market": "us_market",
         "country": "United States",
-        "city": "Somerset"
+        "state": "NJ",
+        "city": "Somerset",
+        "zipcode": "08873",
+        "website": "http://www.carecloud.com",
+        "full_time_employees": 3700
     },
     "MTBCP": {
         "short_name": "CareCloud, Inc. - 11% Series A ",
@@ -2361,7 +3145,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Somerset"
+        "state": "NJ",
+        "city": "Somerset",
+        "zipcode": "08873",
+        "website": "http://www.carecloud.com",
+        "full_time_employees": 3700
     },
     "MTHRF": {
         "short_name": "M3 INC",
@@ -2373,7 +3161,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "107-0052",
+        "website": "http://corporate.m3.com",
+        "full_time_employees": null
     },
     "MTHRY": {
         "short_name": "M3 INC UNSPN ADS EACH REP 0.5 O",
@@ -2385,7 +3177,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "107-0052",
+        "website": "http://corporate.m3.com",
+        "full_time_employees": null
     },
     "NEL.F": {
         "short_name": "NANTHEALTH INC.  DL-,0001",
@@ -2397,7 +3193,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Culver City"
+        "state": "CA",
+        "city": "Culver City",
+        "zipcode": "90232",
+        "website": "http://nanthealth.com",
+        "full_time_employees": 352
     },
     "NEWU.V": {
         "short_name": "NEWTOPIA INC",
@@ -2409,7 +3209,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M2P 1N6",
+        "website": "http://www.newtopia.com",
+        "full_time_employees": null
     },
     "NEWUF": {
         "short_name": "NEWTOPIA INC",
@@ -2421,7 +3225,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M2P 1N6",
+        "website": "http://www.newtopia.com",
+        "full_time_employees": null
     },
     "NH": {
         "short_name": "NantHealth, Inc.",
@@ -2433,7 +3241,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Culver City"
+        "state": "CA",
+        "city": "Culver City",
+        "zipcode": "90232",
+        "website": "http://nanthealth.com",
+        "full_time_employees": 352
     },
     "NHEL": {
         "short_name": "NATURAL HEALTH FARM HOLDINGS IN",
@@ -2445,7 +3257,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Malaysia",
-        "city": "Rawang"
+        "state": null,
+        "city": "Rawang",
+        "zipcode": "48000",
+        "website": "http://nhf-holdings.com",
+        "full_time_employees": null
     },
     "NLTA.V": {
         "short_name": "ENLIGHTA INC",
@@ -2457,7 +3273,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "British Virgin Islands",
-        "city": "Road Town"
+        "state": null,
+        "city": "Road Town",
+        "zipcode": null,
+        "website": "http://www.enlightahealth.com",
+        "full_time_employees": null
     },
     "NMI.DE": {
         "short_name": "ALADDIN HLTHC.TECH. O.N.",
@@ -2469,7 +3289,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Berlin"
+        "state": null,
+        "city": "Berlin",
+        "zipcode": "10117",
+        "website": "http://www.aladdinid.com",
+        "full_time_employees": 3
     },
     "NMI.DU": {
         "short_name": "ALADDIN HLTHC.TECH. O.N.",
@@ -2481,7 +3305,11 @@
         "exchange": "DUS",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Berlin"
+        "state": null,
+        "city": "Berlin",
+        "zipcode": "10117",
+        "website": "http://www.aladdinid.com",
+        "full_time_employees": 3
     },
     "NMI.F": {
         "short_name": "ALADDIN HLTHC.TECH. O.N.",
@@ -2493,7 +3321,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Berlin"
+        "state": null,
+        "city": "Berlin",
+        "zipcode": "10117",
+        "website": "http://www.aladdinid.com",
+        "full_time_employees": 3
     },
     "NMXS": {
         "short_name": "NET MEDICAL XPRESS SOLUTIONS IN",
@@ -2505,7 +3337,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Albuquerque"
+        "state": "NM",
+        "city": "Albuquerque",
+        "zipcode": "87113",
+        "website": "http://netmedical.com",
+        "full_time_employees": 23
     },
     "NSAV": {
         "short_name": "NET SAVINGS LINK INC",
@@ -2517,7 +3353,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W1K 4QW",
+        "website": null,
+        "full_time_employees": 1
     },
     "NUG.F": {
         "short_name": "RESAPP HEALTH",
@@ -2529,7 +3369,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Brisbane"
+        "state": "QLD",
+        "city": "Brisbane",
+        "zipcode": "4000",
+        "website": "http://www.resapphealth.com.au",
+        "full_time_employees": 500
     },
     "NXGN": {
         "short_name": "NextGen Healthcare, Inc.",
@@ -2541,7 +3385,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Irvine"
+        "state": "CA",
+        "city": "Irvine",
+        "zipcode": "92612",
+        "website": "http://www.nextgen.com",
+        "full_time_employees": 2754
     },
     "NXU.DE": {
         "short_name": "NEXUS AG O.N.",
@@ -2553,7 +3401,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Donaueschingen"
+        "state": null,
+        "city": "Donaueschingen",
+        "zipcode": "78166",
+        "website": "http://de-de.nexus-ag.de",
+        "full_time_employees": 1322
     },
     "NXU.F": {
         "short_name": "NEXUS AG O.N.",
@@ -2565,7 +3417,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Donaueschingen"
+        "state": null,
+        "city": "Donaueschingen",
+        "zipcode": "78166",
+        "website": "http://de-de.nexus-ag.de",
+        "full_time_employees": 1322
     },
     "OAK.AX": {
         "short_name": "OAKRIDGE FPO",
@@ -2577,7 +3433,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Mile End South"
+        "state": "SA",
+        "city": "Mile End South",
+        "zipcode": "5031",
+        "website": "http://www.xped.com",
+        "full_time_employees": null
     },
     "OC9.F": {
         "short_name": "OMNICELL INC.  DL-,001",
@@ -2589,7 +3449,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Mountain View"
+        "state": "CA",
+        "city": "Mountain View",
+        "zipcode": "94043",
+        "website": "http://www.omnicell.com",
+        "full_time_employees": 2860
     },
     "OLMM": {
         "short_name": "ONELIFE TECHNOLOGIES CORP",
@@ -2601,7 +3465,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Rolling Meadows"
+        "state": "IL",
+        "city": "Rolling Meadows",
+        "zipcode": "60008",
+        "website": "http://www.onelifetc.com",
+        "full_time_employees": 3
     },
     "OMCL": {
         "short_name": "Omnicell, Inc.",
@@ -2613,7 +3481,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Mountain View"
+        "state": "CA",
+        "city": "Mountain View",
+        "zipcode": "94043",
+        "website": "http://www.omnicell.com",
+        "full_time_employees": 2970
     },
     "ONE.AX": {
         "short_name": "ONEVIEW CDI 1:1",
@@ -2625,7 +3497,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "A94 H2X4",
+        "website": "http://www.oneviewhealthcare.com",
+        "full_time_employees": 70
     },
     "ONEM": {
         "short_name": "1Life Healthcare, Inc.",
@@ -2637,7 +3513,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "San Francisco"
+        "state": "CA",
+        "city": "San Francisco",
+        "zipcode": "94111",
+        "website": "http://www.onemedical.com",
+        "full_time_employees": 1957
     },
     "ONVVF": {
         "short_name": "ONEVIEW HEALTHCARE PLC",
@@ -2649,7 +3529,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "A94 H2X4",
+        "website": "http://www.oneviewhealthcare.com",
+        "full_time_employees": 70
     },
     "OPL.AX": {
         "short_name": "OPYLLIMITD FPO",
@@ -2661,7 +3545,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "St Kilda"
+        "state": "VIC",
+        "city": "St Kilda",
+        "zipcode": "3182",
+        "website": "http://www.opyl.ai",
+        "full_time_employees": null
     },
     "OPRX": {
         "short_name": "OptimizeRx Corporation",
@@ -2673,7 +3561,11 @@
         "exchange": "NCM",
         "market": "us_market",
         "country": "United States",
-        "city": "Rochester"
+        "state": "MI",
+        "city": "Rochester",
+        "zipcode": "48307",
+        "website": "http://www.optimizerx.com",
+        "full_time_employees": 71
     },
     "ORHB": {
         "short_name": "ORHUB INC",
@@ -2685,7 +3577,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Phoenix"
+        "state": "AZ",
+        "city": "Phoenix",
+        "zipcode": "85044",
+        "website": "http://www.orhub.com",
+        "full_time_employees": null
     },
     "OUGA.F": {
         "short_name": "CARDIOCOMM SOLUTIONS NEW",
@@ -2697,7 +3593,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M2J 0B5",
+        "website": "http://www.cardiocommsolutions.com",
+        "full_time_employees": null
     },
     "P99.MU": {
         "short_name": "PATIENTSKY GRP NK-,13736",
@@ -2709,7 +3609,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0158",
+        "website": "http://www.patientsky.com",
+        "full_time_employees": null
     },
     "PANHF": {
         "short_name": "PING AN HEALTHCARE & TECHNO CO ",
@@ -2721,7 +3625,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": null,
+        "website": "http://www.pagd.net",
+        "full_time_employees": 4226
     },
     "PAPI.ST": {
         "short_name": "Papilly AB",
@@ -2733,7 +3641,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "114 40",
+        "website": "http://www.papilly.com",
+        "full_time_employees": null
     },
     "PASO": {
         "short_name": "PATIENT ACCESS SOLUTIONS INC",
@@ -2745,7 +3657,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Plainview"
+        "state": "NY",
+        "city": "Plainview",
+        "zipcode": "11803",
+        "website": "http://www.pashealth.com",
+        "full_time_employees": null
     },
     "PAXH": {
         "short_name": "PREAXIA HEALTH CARE PAYMENT SYS",
@@ -2757,7 +3673,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Calgary"
+        "state": "AB",
+        "city": "Calgary",
+        "zipcode": "T3C 3W2",
+        "website": "http://www.preaxia.com",
+        "full_time_employees": null
     },
     "PBSV": {
         "short_name": "PHARMA-BIO SERVICES INC",
@@ -2769,7 +3689,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Dorado"
+        "state": "PR",
+        "city": "Dorado",
+        "zipcode": "00646",
+        "website": "http://www.pharmabioserv.com",
+        "full_time_employees": 220
     },
     "PCK.AX": {
         "short_name": "PAINCHEK FPO",
@@ -2781,7 +3705,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.painchek.com",
+        "full_time_employees": null
     },
     "PCYS": {
         "short_name": "PRIMECARE SYSTEMS INC",
@@ -2793,7 +3721,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Newport News"
+        "state": "VA",
+        "city": "Newport News",
+        "zipcode": "23606",
+        "website": null,
+        "full_time_employees": 8
     },
     "PGNY": {
         "short_name": "Progyny, Inc.",
@@ -2805,7 +3737,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10018",
+        "website": "http://www.progyny.com",
+        "full_time_employees": 210
     },
     "PHA.PA": {
         "short_name": "PHARMAGEST INTER.",
@@ -2817,7 +3753,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Villers-l\u00c3\u00a8s-Nancy"
+        "state": null,
+        "city": "Villers-l\u00c3\u00a8s-Nancy",
+        "zipcode": "54601",
+        "website": "http://pharmagest.com",
+        "full_time_employees": 1100
     },
     "PHF.F": {
         "short_name": "PHARMAGEST INT.INH.EO 0,2",
@@ -2829,7 +3769,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Villers-l\u00c3\u00a8s-Nancy"
+        "state": null,
+        "city": "Villers-l\u00c3\u00a8s-Nancy",
+        "zipcode": "54601",
+        "website": "http://pharmagest.com",
+        "full_time_employees": 1100
     },
     "PHR": {
         "short_name": "Phreesia, Inc.",
@@ -2841,7 +3785,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Raleigh"
+        "state": "NC",
+        "city": "Raleigh",
+        "zipcode": "27601",
+        "website": "http://www.phreesia.com",
+        "full_time_employees": 827
     },
     "PINC": {
         "short_name": "Premier, Inc.",
@@ -2853,7 +3801,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Charlotte"
+        "state": "NC",
+        "city": "Charlotte",
+        "zipcode": "28277",
+        "website": "http://www.premierinc.com",
+        "full_time_employees": 2500
     },
     "PKS.AX": {
         "short_name": "PKSHOLDING FPO",
@@ -2865,7 +3817,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Redfern"
+        "state": "NSW",
+        "city": "Redfern",
+        "zipcode": "2016",
+        "website": "http://www.pks.com.au",
+        "full_time_employees": null
     },
     "PM8.F": {
         "short_name": "PREMIER INC.  DL-,01",
@@ -2877,7 +3833,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Charlotte"
+        "state": "NC",
+        "city": "Charlotte",
+        "zipcode": "28277",
+        "website": "http://www.premierinc.com",
+        "full_time_employees": 2500
     },
     "PMC.F": {
         "short_name": "PRO MEDICUS LTD.",
@@ -2889,7 +3849,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Richmond"
+        "state": "VIC",
+        "city": "Richmond",
+        "zipcode": "3121",
+        "website": "http://www.promed.com.au",
+        "full_time_employees": null
     },
     "PMCUF": {
         "short_name": "PRO MEDICUS",
@@ -2901,7 +3865,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Richmond"
+        "state": "VIC",
+        "city": "Richmond",
+        "zipcode": "3121",
+        "website": "http://www.promed.com.au",
+        "full_time_employees": null
     },
     "PME.AX": {
         "short_name": "PROMEDICUS FPO",
@@ -2913,7 +3881,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Richmond"
+        "state": "VIC",
+        "city": "Richmond",
+        "zipcode": "3121",
+        "website": "http://www.promed.com.au",
+        "full_time_employees": null
     },
     "PMM1.F": {
         "short_name": "CAREBOOK TECHNOLOGIES",
@@ -2925,7 +3897,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H3A 2V4",
+        "website": "http://www.carebook.com",
+        "full_time_employees": 49
     },
     "PPJE": {
         "short_name": "PPJ HEALTHCARE ENTERPRISES INC",
@@ -2937,7 +3913,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Reno"
+        "state": "NV",
+        "city": "Reno",
+        "zipcode": "89502",
+        "website": "http://www.ppjenterprise.com",
+        "full_time_employees": null
     },
     "PRVA": {
         "short_name": "Privia Health Group, Inc.",
@@ -2949,7 +3929,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Arlington"
+        "state": "VA",
+        "city": "Arlington",
+        "zipcode": "22203",
+        "website": "http://www.priviahealth.com",
+        "full_time_employees": 559
     },
     "PS1.F": {
         "short_name": "COMPUTER PROGRAMS + SYS",
@@ -2961,7 +3945,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Mobile"
+        "state": "AL",
+        "city": "Mobile",
+        "zipcode": "36695",
+        "website": "http://www.cpsi.com",
+        "full_time_employees": 2000
     },
     "PSKY.OL": {
         "short_name": "PATIENTSKY GROUP",
@@ -2973,7 +3961,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0158",
+        "website": "http://www.patientsky.com",
+        "full_time_employees": null
     },
     "QDMI": {
         "short_name": "QDM INTL INC",
@@ -2985,7 +3977,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": "200051",
+        "website": null,
+        "full_time_employees": null
     },
     "QEBR": {
         "short_name": "VIRTUAL MEDICAL INTERNATIONAL I",
@@ -2997,7 +3993,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Las Vegas"
+        "state": "NV",
+        "city": "Las Vegas",
+        "zipcode": "89103",
+        "website": "http://www.buyamsterdamcafe.com",
+        "full_time_employees": null
     },
     "QY1.F": {
         "short_name": "NEXTGEN HEALTHC.  DL-,01",
@@ -3009,7 +4009,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Irvine"
+        "state": "CA",
+        "city": "Irvine",
+        "zipcode": "92612",
+        "website": "http://www.nextgen.com",
+        "full_time_employees": 2754
     },
     "RAP.AX": {
         "short_name": "RESAPP FPO",
@@ -3021,7 +4025,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Brisbane"
+        "state": "QLD",
+        "city": "Brisbane",
+        "zipcode": "4000",
+        "website": "http://www.resapphealth.com.au",
+        "full_time_employees": 500
     },
     "RAY-B.ST": {
         "short_name": "RaySearch Laboratories AB ser. ",
@@ -3033,7 +4041,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "111 34",
+        "website": "http://www.raysearchlabs.com",
+        "full_time_employees": 405
     },
     "RCM": {
         "short_name": "R1 RCM Inc.",
@@ -3045,7 +4057,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60611",
+        "website": "http://www.r1rcm.com",
+        "full_time_employees": 19000
     },
     "REFG": {
         "short_name": "MEDICAL CANNABIS PAYMENT SOLUTI",
@@ -3057,7 +4073,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Cheyenne"
+        "state": "WY",
+        "city": "Cheyenne",
+        "zipcode": "82001",
+        "website": "http://paywithgo.com",
+        "full_time_employees": 1
     },
     "RHT.V": {
         "short_name": "RELIQ HEALTH TECHNOLOGIES INC",
@@ -3069,7 +4089,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Hamilton"
+        "state": "ON",
+        "city": "Hamilton",
+        "zipcode": "L8P 0A1",
+        "website": "http://www.reliqhealth.com",
+        "full_time_employees": null
     },
     "RQHTF": {
         "short_name": "RELIQ HEALTH TECHNOLOGIES INC",
@@ -3081,7 +4105,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Hamilton"
+        "state": "ON",
+        "city": "Hamilton",
+        "zipcode": "L8P 0A1",
+        "website": "http://www.reliqhealth.com",
+        "full_time_employees": null
     },
     "RSLBF": {
         "short_name": "RAYSEARCH LABORATORIES AB",
@@ -3093,7 +4121,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "111 34",
+        "website": "http://www.raysearchlabs.com",
+        "full_time_employees": 405
     },
     "SD3.F": {
         "short_name": "SIMULATIONS PLUS  DL-,01",
@@ -3105,7 +4137,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Lancaster"
+        "state": "CA",
+        "city": "Lancaster",
+        "zipcode": "93534-7059",
+        "website": "http://www.simulations-plus.com",
+        "full_time_employees": 129
     },
     "SDGR": {
         "short_name": "Schrodinger, Inc.",
@@ -3117,7 +4153,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10036",
+        "website": "http://www.schrodinger.com",
+        "full_time_employees": 445
     },
     "SDT.PA": {
         "short_name": "VISIODENT",
@@ -3129,7 +4169,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Clichy"
+        "state": null,
+        "city": "Clichy",
+        "zipcode": "92110",
+        "website": "http://www.visiodent.com",
+        "full_time_employees": 45
     },
     "SENS.L": {
         "short_name": "SENSYNE HEALTH PLC ORD 10P",
@@ -3141,7 +4185,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Oxford"
+        "state": null,
+        "city": "Oxford",
+        "zipcode": "OX4 4GE",
+        "website": "http://www.sensynehealth.com",
+        "full_time_employees": 135
     },
     "SGFY": {
         "short_name": "Signify Health, Inc.",
@@ -3153,7 +4201,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Dallas"
+        "state": "TX",
+        "city": "Dallas",
+        "zipcode": "75244",
+        "website": "http://www.signifyhealth.com",
+        "full_time_employees": 2100
     },
     "SHG.AX": {
         "short_name": "SINGHEALTH FPO",
@@ -3165,7 +4217,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Subiaco"
+        "state": "WA",
+        "city": "Subiaco",
+        "zipcode": "6008",
+        "website": "http://singular.health",
+        "full_time_employees": 8
     },
     "SHLTN.SW": {
         "short_name": "SHL TELEMEDICINE N",
@@ -3177,7 +4233,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "67891",
+        "website": "http://www.shl-telemedicine.com",
+        "full_time_employees": null
     },
     "SLP": {
         "short_name": "Simulations Plus, Inc.",
@@ -3189,7 +4249,11 @@
         "exchange": "NCM",
         "market": "us_market",
         "country": "United States",
-        "city": "Lancaster"
+        "state": "CA",
+        "city": "Lancaster",
+        "zipcode": "93534-7059",
+        "website": "http://www.simulations-plus.com",
+        "full_time_employees": 129
     },
     "STRM": {
         "short_name": "Streamline Health Solutions, In",
@@ -3201,7 +4265,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Alpharetta"
+        "state": "GA",
+        "city": "Alpharetta",
+        "zipcode": "30009",
+        "website": "http://www.streamlinehealth.net",
+        "full_time_employees": 66
     },
     "SUS.ST": {
         "short_name": "Surgical Science Sweden AB",
@@ -3213,7 +4281,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "412 50",
+        "website": "http://www.surgicalscience.com",
+        "full_time_employees": 61
     },
     "SUSRF": {
         "short_name": "SURGICAL SCIENCE SWEDEN AB",
@@ -3225,7 +4297,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "412 50",
+        "website": "http://www.surgicalscience.com",
+        "full_time_employees": 61
     },
     "SY": {
         "short_name": "So-Young International Inc. - A",
@@ -3237,7 +4313,11 @@
         "exchange": "NGM",
         "market": "us_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100102",
+        "website": "http://www.soyoung.com",
+        "full_time_employees": 1564
     },
     "SZO.F": {
         "short_name": "SHL TELEMEDICINE  IS-,01",
@@ -3249,7 +4329,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "67891",
+        "website": "http://www.shl-telemedicine.com",
+        "full_time_employees": null
     },
     "T2DH34.SA": {
         "short_name": "TELADOCHEALTDRN",
@@ -3261,7 +4345,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "Purchase"
+        "state": "NY",
+        "city": "Purchase",
+        "zipcode": "10577",
+        "website": "http://www.teladochealth.com",
+        "full_time_employees": 3652
     },
     "TD1.AX": {
         "short_name": "TALI DIGI FPO",
@@ -3273,7 +4361,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Cremorne"
+        "state": "VIC",
+        "city": "Cremorne",
+        "zipcode": "3121",
+        "website": "http://talidigital.com",
+        "full_time_employees": null
     },
     "TDOC.MX": {
         "short_name": "TELADOC HEALTH INC",
@@ -3285,7 +4377,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "Purchase"
+        "state": "NY",
+        "city": "Purchase",
+        "zipcode": "10577",
+        "website": "http://www.teladochealth.com",
+        "full_time_employees": 3652
     },
     "TDOC": {
         "short_name": "Teladoc Health, Inc.",
@@ -3297,7 +4393,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Purchase"
+        "state": "NY",
+        "city": "Purchase",
+        "zipcode": "10577",
+        "website": "http://www.teladochealth.com",
+        "full_time_employees": 3652
     },
     "THNK.V": {
         "short_name": "THINK RESEARCH CORPORATION",
@@ -3309,7 +4409,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5A 0L6",
+        "website": "http://www.thinkresearch.com/ca/",
+        "full_time_employees": 189
     },
     "TMED.CN": {
         "short_name": "EGFThera",
@@ -3321,7 +4425,11 @@
         "exchange": "CNQ",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V7Y 1C3",
+        "website": "http://theramedhealthcorp.com",
+        "full_time_employees": null
     },
     "TRHC": {
         "short_name": "Tabula Rasa HealthCare, Inc.",
@@ -3333,7 +4441,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Moorestown"
+        "state": "NJ",
+        "city": "Moorestown",
+        "zipcode": "08057",
+        "website": "http://www.tabularasahealthcare.com",
+        "full_time_employees": 1614
     },
     "TRUE.CN": {
         "short_name": "Treatment.com",
@@ -3345,7 +4457,11 @@
         "exchange": "CNQ",
         "market": "ca_market",
         "country": "Canada",
-        "city": "West Vancouver"
+        "state": "BC",
+        "city": "West Vancouver",
+        "zipcode": "V7V 1J6",
+        "website": "http://www.treatment.com",
+        "full_time_employees": null
     },
     "TTB.AX": {
         "short_name": "TOTALBRAIN FPO",
@@ -3357,7 +4473,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Surry Hills"
+        "state": "NSW",
+        "city": "Surry Hills",
+        "zipcode": "2010",
+        "website": "http://www.totalbrain.com",
+        "full_time_employees": null
     },
     "TTBLF": {
         "short_name": "TOTAL BRAIN LTD",
@@ -3369,7 +4489,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Surry Hills"
+        "state": "NSW",
+        "city": "Surry Hills",
+        "zipcode": "2010",
+        "website": "http://www.totalbrain.com",
+        "full_time_employees": null
     },
     "TXG.MX": {
         "short_name": "10X GENOMICS INC",
@@ -3381,7 +4505,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "Pleasanton"
+        "state": "CA",
+        "city": "Pleasanton",
+        "zipcode": "94588",
+        "website": "http://www.10xgenomics.com",
+        "full_time_employees": 852
     },
     "TXG": {
         "short_name": "10x Genomics, Inc.",
@@ -3393,7 +4521,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Pleasanton"
+        "state": "CA",
+        "city": "Pleasanton",
+        "zipcode": "94588",
+        "website": "http://www.10xgenomics.com",
+        "full_time_employees": 946
     },
     "U9O0.F": {
         "short_name": "OAKRIDGE INTERNATIONAL",
@@ -3405,7 +4537,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Mile End South"
+        "state": "SA",
+        "city": "Mile End South",
+        "zipcode": "5031",
+        "website": "http://www.xped.com",
+        "full_time_employees": null
     },
     "UCBB": {
         "short_name": "US-CHINA BIOMEDICAL TECHNOLOGY ",
@@ -3417,7 +4553,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Irvine"
+        "state": "CA",
+        "city": "Irvine",
+        "zipcode": "92614",
+        "website": "http://www.ucbb.us",
+        "full_time_employees": 3
     },
     "USAQ": {
         "short_name": "USA EQUITIES CORP",
@@ -3429,7 +4569,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "West Palm Beach"
+        "state": "FL",
+        "city": "West Palm Beach",
+        "zipcode": "33407",
+        "website": "http://www.usaqcorp.com",
+        "full_time_employees": 3
     },
     "UV7.F": {
         "short_name": "TALI DIGITAL LTD",
@@ -3441,7 +4585,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Cremorne"
+        "state": "VIC",
+        "city": "Cremorne",
+        "zipcode": "3121",
+        "website": "http://talidigital.com",
+        "full_time_employees": null
     },
     "VASO": {
         "short_name": "VASO CORP",
@@ -3453,7 +4601,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Plainview"
+        "state": "NY",
+        "city": "Plainview",
+        "zipcode": "11803",
+        "website": "http://www.vasocorporation.com",
+        "full_time_employees": 294
     },
     "VEE.DE": {
         "short_name": "VEEVA SYSTEMS A DL-,00001",
@@ -3465,7 +4617,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "United States",
-        "city": "Pleasanton"
+        "state": "CA",
+        "city": "Pleasanton",
+        "zipcode": "94588",
+        "website": "http://www.veeva.com",
+        "full_time_employees": 4506
     },
     "VEE.F": {
         "short_name": "VEEVA SYSTEMS A DL-,00001",
@@ -3477,7 +4633,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Pleasanton"
+        "state": "CA",
+        "city": "Pleasanton",
+        "zipcode": "94588",
+        "website": "http://www.veeva.com",
+        "full_time_employees": 4506
     },
     "VEEV.MX": {
         "short_name": "VEEVA SYSTEMS INC",
@@ -3489,7 +4649,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "Pleasanton"
+        "state": "CA",
+        "city": "Pleasanton",
+        "zipcode": "94588",
+        "website": "http://www.veeva.com",
+        "full_time_employees": 4506
     },
     "VEEV": {
         "short_name": "Veeva Systems Inc.",
@@ -3501,7 +4665,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Pleasanton"
+        "state": "CA",
+        "city": "Pleasanton",
+        "zipcode": "94588",
+        "website": "http://www.veeva.com",
+        "full_time_employees": 4506
     },
     "VEGN.CN": {
         "short_name": "Plant&Co.Brands",
@@ -3513,7 +4681,11 @@
         "exchange": "CNQ",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6C 2T7",
+        "website": "http://plantandco.com",
+        "full_time_employees": null
     },
     "VGANF": {
         "short_name": "PLANT & CO. BRANDS LTD",
@@ -3525,7 +4697,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6C 2T7",
+        "website": "http://plantandco.com",
+        "full_time_employees": null
     },
     "VGL.V": {
         "short_name": "VIGIL HEALTH SOLUTIONS INC.",
@@ -3537,7 +4713,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Victoria"
+        "state": "BC",
+        "city": "Victoria",
+        "zipcode": "V8Z 7X8",
+        "website": "http://www.vigil.com",
+        "full_time_employees": null
     },
     "VHI.V": {
         "short_name": "VITALHUB CORP",
@@ -3549,7 +4729,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5G 1V2",
+        "website": "http://vitalhub.com",
+        "full_time_employees": null
     },
     "VHIBF": {
         "short_name": "VITALHUB CORP",
@@ -3561,7 +4745,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5G 1V2",
+        "website": "http://vitalhub.com",
+        "full_time_employees": null
     },
     "VHT.AX": {
         "short_name": "VOLPARA FPO NZ",
@@ -3573,7 +4761,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "New Zealand",
-        "city": "Wellington"
+        "state": null,
+        "city": "Wellington",
+        "zipcode": "6011",
+        "website": "http://volparasolutions.com",
+        "full_time_employees": 174
     },
     "VISN.V": {
         "short_name": "BINOVI TECHNOLOGIES CORP",
@@ -3585,7 +4777,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6Z 1S4",
+        "website": "http://www.binovi.com",
+        "full_time_employees": null
     },
     "VMCS": {
         "short_name": "VISUALMED CLINICAL SOLUTIONS",
@@ -3597,7 +4793,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Reno"
+        "state": "NV",
+        "city": "Reno",
+        "zipcode": "89501",
+        "website": null,
+        "full_time_employees": 4
     },
     "VNTH": {
         "short_name": "NANO MOBILE HEALTHCARE INC",
@@ -3609,7 +4809,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Boston"
+        "state": "MA",
+        "city": "Boston",
+        "zipcode": "62108",
+        "website": "http://nanomobilehealthcare.com",
+        "full_time_employees": null
     },
     "VOT.SG": {
         "short_name": "VISIODENT S.A. Actions Port. EO",
@@ -3621,7 +4825,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "France",
-        "city": "Clichy"
+        "state": null,
+        "city": "Clichy",
+        "zipcode": "92110",
+        "website": "http://www.visiodent.com",
+        "full_time_employees": 45
     },
     "VYND": {
         "short_name": "VYNLEADS INC",
@@ -3633,7 +4841,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Rock Hill"
+        "state": "SC",
+        "city": "Rock Hill",
+        "zipcode": "29730",
+        "website": "http://www.vynleads.com",
+        "full_time_employees": 1
     },
     "WMGR": {
         "short_name": "WELLNESS MATRIX GROUP INC",
@@ -3645,7 +4857,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Huntington Beach"
+        "state": "CA",
+        "city": "Huntington Beach",
+        "zipcode": "92647",
+        "website": "http://www.wellnessmatrixgroup.com",
+        "full_time_employees": null
     },
     "WORX": {
         "short_name": "SCWorx Corp.",
@@ -3657,7 +4873,11 @@
         "exchange": "NCM",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10022",
+        "website": "http://www.scworx.com",
+        "full_time_employees": 4
     },
     "ZCBD": {
         "short_name": "BODY BASICS INC",
@@ -3669,7 +4889,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Northridge"
+        "state": "CA",
+        "city": "Northridge",
+        "zipcode": "91324",
+        "website": null,
+        "full_time_employees": null
     },
     "ZCMD": {
         "short_name": "Zhongchao Inc.",
@@ -3681,6 +4905,10 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": "200040",
+        "website": "http://www.izcmd.com",
+        "full_time_employees": null
     }
 }

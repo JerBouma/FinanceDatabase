@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Lod"
+        "state": null,
+        "city": "Lod",
+        "zipcode": "7015001",
+        "website": "http://www.elal.com",
+        "full_time_employees": 1223
     },
     "ELALF": {
         "short_name": "EL AL ISRAEL AIRLINES LTD",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Lod"
+        "state": null,
+        "city": "Lod",
+        "zipcode": "7015001",
+        "website": "http://www.elal.com",
+        "full_time_employees": 1223
     },
     "KNFM.TA": {
         "short_name": "KNAFAIM HLDGS LTD",
@@ -33,6 +41,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Ramat Gan"
+        "state": null,
+        "city": "Ramat Gan",
+        "zipcode": null,
+        "website": "http://www.knafaim.co.il/",
+        "full_time_employees": 900
     }
 }

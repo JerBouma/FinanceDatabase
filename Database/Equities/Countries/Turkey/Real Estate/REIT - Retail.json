@@ -9,7 +9,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "ISTANBUL"
+        "state": null,
+        "city": "ISTANBUL",
+        "zipcode": null,
+        "website": "http://www.akmgyo.com",
+        "full_time_employees": 6
     },
     "PAGYO.IS": {
         "short_name": "PANORA GMYO",
@@ -21,7 +25,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": null,
+        "website": "http://www.panoragyo.com",
+        "full_time_employees": 43
     },
     "TRGYO.IS": {
         "short_name": "TORUNLAR GMYO",
@@ -33,6 +41,10 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34805",
+        "website": "http://www.torunlargyo.com.tr",
+        "full_time_employees": 103
     }
 }

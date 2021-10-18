@@ -9,7 +9,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Sint-Niklaas"
+        "state": null,
+        "city": "Sint-Niklaas",
+        "zipcode": "9100",
+        "website": "http://www.svk.be",
+        "full_time_employees": 224
     },
     "TCJ.F": {
         "short_name": "TITAN CEMENT INTL. S.A.",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1040",
+        "website": "http://www.titan-cement.com",
+        "full_time_employees": 5231
     },
     "TITC.BR": {
         "short_name": "TITAN CEMENT",
@@ -33,6 +41,10 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1040",
+        "website": "http://www.titan-cement.com",
+        "full_time_employees": 5231
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Waterloo"
+        "state": null,
+        "city": "Waterloo",
+        "zipcode": "1410",
+        "website": "http://www.floridienne.be",
+        "full_time_employees": 2686
     },
     "TEXF.BR": {
         "short_name": "TEXAF",
@@ -21,6 +25,10 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1050",
+        "website": "http://www.texaf.be",
+        "full_time_employees": null
     }
 }

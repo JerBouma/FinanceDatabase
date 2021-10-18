@@ -9,7 +9,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Chennai"
+        "state": null,
+        "city": "Chennai",
+        "zipcode": "600042",
+        "website": "http://www.allsectech.com",
+        "full_time_employees": 3372
     },
     "BLS.NS": {
         "short_name": "BLS INTERNATIONAL",
@@ -21,7 +25,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "New Delhi"
+        "state": null,
+        "city": "New Delhi",
+        "zipcode": "110001",
+        "website": "http://www.blsinternational.com",
+        "full_time_employees": 5000
     },
     "GKWLIMITED.NS": {
         "short_name": "GKW LIMITED",
@@ -33,7 +41,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400038",
+        "website": "http://www.gkwltd.com",
+        "full_time_employees": 12
     },
     "HGS.NS": {
         "short_name": "HINDUJA GLOBAL SOL",
@@ -45,7 +57,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Bengaluru"
+        "state": null,
+        "city": "Bengaluru",
+        "zipcode": "560068",
+        "website": "http://www.teamhgs.com",
+        "full_time_employees": 41110
     },
     "KAPSTON.NS": {
         "short_name": "Kapston Facilities Mgmt L",
@@ -57,7 +73,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Hyderabad"
+        "state": null,
+        "city": "Hyderabad",
+        "zipcode": "500034",
+        "website": "http://www.kapstonfm.com",
+        "full_time_employees": 10791
     },
     "ONEPOINT.NS": {
         "short_name": "ONE POINT ONE SOLU",
@@ -69,7 +89,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Navi Mumbai"
+        "state": null,
+        "city": "Navi Mumbai",
+        "zipcode": "400705",
+        "website": "http://www.1point1.in",
+        "full_time_employees": 1367
     },
     "PDSMFL.NS": {
         "short_name": "PDS MULTINATIONAL",
@@ -81,7 +105,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Bengaluru"
+        "state": null,
+        "city": "Bengaluru",
+        "zipcode": "560102",
+        "website": "http://www.pdsmultinational.com",
+        "full_time_employees": null
     },
     "REPRO.NS": {
         "short_name": "REPRO INDIA LTD",
@@ -93,7 +121,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400013",
+        "website": "http://www.repro.in",
+        "full_time_employees": 478
     },
     "SUNDARMHLD.NS": {
         "short_name": "SUNDARAM FINANCE H",
@@ -105,7 +137,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Chennai"
+        "state": null,
+        "city": "Chennai",
+        "zipcode": "600002",
+        "website": "http://www.sundaramholdings.in",
+        "full_time_employees": 575
     },
     "W9N.F": {
         "short_name": "WNS (HLDGS)LTD ADR LS-,01",
@@ -117,7 +153,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400079",
+        "website": "http://www.wns.com",
+        "full_time_employees": 43997
     },
     "WNS": {
         "short_name": "WNS (Holdings) Limited Sponsore",
@@ -129,6 +169,10 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400079",
+        "website": "http://www.wns.com",
+        "full_time_employees": 43997
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0283",
+        "website": "http://www.quantafuel.com",
+        "full_time_employees": 65
     },
     "CAMBI.OL": {
         "short_name": "CAMBI ASA",
@@ -21,7 +25,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Asker"
+        "state": null,
+        "city": "Asker",
+        "zipcode": "1383",
+        "website": "http://www.cambi.com",
+        "full_time_employees": 125
     },
     "QFUEL.OL": {
         "short_name": "QUANTAFUEL ASA",
@@ -33,7 +41,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0283",
+        "website": "http://www.quantafuel.com",
+        "full_time_employees": 65
     },
     "QNTFF": {
         "short_name": "QUANTAFUEL ASA",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0283",
+        "website": "http://www.quantafuel.com",
+        "full_time_employees": 65
     },
     "TMR.F": {
         "short_name": "TOMRA SYSTEMS ASA  NK 1",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Asker"
+        "state": null,
+        "city": "Asker",
+        "zipcode": "1385",
+        "website": "http://www.tomra.com",
+        "full_time_employees": 4300
     },
     "TMRAF": {
         "short_name": "TOMRA SYSTEMS ASA",
@@ -69,7 +89,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Norway",
-        "city": "Asker"
+        "state": null,
+        "city": "Asker",
+        "zipcode": "1385",
+        "website": "http://www.tomra.com",
+        "full_time_employees": 4300
     },
     "TMRAY": {
         "short_name": "TOMRA SYSTEMS ASA",
@@ -81,7 +105,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Norway",
-        "city": "Asker"
+        "state": null,
+        "city": "Asker",
+        "zipcode": "1385",
+        "website": "http://www.tomra.com",
+        "full_time_employees": 4300
     },
     "TOM.OL": {
         "short_name": "TOMRA SYSTEMS ASA",
@@ -93,6 +121,10 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Asker"
+        "state": null,
+        "city": "Asker",
+        "zipcode": "1385",
+        "website": "http://www.tomra.com",
+        "full_time_employees": 4300
     }
 }

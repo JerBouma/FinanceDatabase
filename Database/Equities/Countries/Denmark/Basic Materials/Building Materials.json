@@ -9,7 +9,11 @@
         "exchange": "CPH",
         "market": "dk_market",
         "country": "Denmark",
-        "city": "Copenhagen"
+        "state": null,
+        "city": "Copenhagen",
+        "zipcode": "2100",
+        "website": "http://www.hplush.com",
+        "full_time_employees": 1538
     },
     "RIAS-B.CO": {
         "short_name": "Rias B A/S",
@@ -21,6 +25,10 @@
         "exchange": "CPH",
         "market": "dk_market",
         "country": "Denmark",
-        "city": "Roskilde"
+        "state": null,
+        "city": "Roskilde",
+        "zipcode": "4000",
+        "website": "http://www.rias.dk",
+        "full_time_employees": 104
     }
 }

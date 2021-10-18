@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "North Sydney"
+        "state": "NSW",
+        "city": "North Sydney",
+        "zipcode": "2060",
+        "website": "http://www.oohmedia.com.au",
+        "full_time_employees": 1800
     },
     "EGG.AX": {
         "short_name": "ENERO FPO",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Pyrmont"
+        "state": "NSW",
+        "city": "Pyrmont",
+        "zipcode": "2009",
+        "website": "http://www.enero.com",
+        "full_time_employees": 600
     },
     "GTN.AX": {
         "short_name": "GTNETWORK FPO",
@@ -33,7 +41,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "North Sydney"
+        "state": "NSW",
+        "city": "North Sydney",
+        "zipcode": "2060",
+        "website": "http://www.gtnetwork.com.au",
+        "full_time_employees": null
     },
     "GWC.NZ": {
         "short_name": "Goodwood Capital Limited Ordina",
@@ -45,7 +57,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2010",
+        "website": "http://www.snakkmedia.com",
+        "full_time_employees": null
     },
     "IGL.AX": {
         "short_name": "IVEGROUP FPO",
@@ -57,7 +73,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2140",
+        "website": "http://www.ivegroup.com.au",
+        "full_time_employees": 1700
     },
     "MXO.AX": {
         "short_name": "MOTIO FPO",
@@ -69,7 +89,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Perth"
+        "state": "WA",
+        "city": "Perth",
+        "zipcode": "6000",
+        "website": "http://www.motio.com.au",
+        "full_time_employees": null
     },
     "OML.AX": {
         "short_name": "OOHMEDIA FPO",
@@ -81,7 +105,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "North Sydney"
+        "state": "NSW",
+        "city": "North Sydney",
+        "zipcode": "2060",
+        "website": "http://www.oohmedia.com.au",
+        "full_time_employees": 1800
     },
     "PPL.AX": {
         "short_name": "PUREPROFIL FPO",
@@ -93,6 +121,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Darlinghurst"
+        "state": "NSW",
+        "city": "Darlinghurst",
+        "zipcode": "2010",
+        "website": "http://pureprofile.investorportal.com.au",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Geneva"
+        "state": null,
+        "city": "Geneva",
+        "zipcode": "1207",
+        "website": "http://betw-ind.com",
+        "full_time_employees": null
     },
     "HUBN.SW": {
         "short_name": "HUBER+SUHNER N",
@@ -21,7 +25,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Herisau"
+        "state": null,
+        "city": "Herisau",
+        "zipcode": "9100",
+        "website": "http://www.hubersuhner.com",
+        "full_time_employees": 4410
     },
     "UBLXF": {
         "short_name": "U-BLOX HOLDING AG",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Thalwil"
+        "state": null,
+        "city": "Thalwil",
+        "zipcode": "8800",
+        "website": "http://www.u-blox.com",
+        "full_time_employees": 1000
     },
     "UBXN.SW": {
         "short_name": "U-BLOX N",
@@ -45,6 +57,10 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Thalwil"
+        "state": null,
+        "city": "Thalwil",
+        "zipcode": "8800",
+        "website": "http://www.u-blox.com",
+        "full_time_employees": 1000
     }
 }

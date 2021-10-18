@@ -9,7 +9,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "New Taipei City"
+        "state": null,
+        "city": "New Taipei City",
+        "zipcode": "241",
+        "website": "http://www.fce.com.tw",
+        "full_time_employees": null
     },
     "4712.TWO": {
         "short_name": "NAN TSAN INDUSTRY",
@@ -21,7 +25,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taipei City"
+        "state": null,
+        "city": "Taipei City",
+        "zipcode": null,
+        "website": "http://www.nantsan.com.tw",
+        "full_time_employees": 28
     },
     "8465.TWO": {
         "short_name": "Tekho",
@@ -33,6 +41,10 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Tainan City"
+        "state": null,
+        "city": "Tainan City",
+        "zipcode": "708",
+        "website": "http://www.tekho.com.tw",
+        "full_time_employees": 19
     }
 }

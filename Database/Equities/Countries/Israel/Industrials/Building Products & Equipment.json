@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Israel",
-        "city": "Menashe"
+        "state": null,
+        "city": "Menashe",
+        "zipcode": "3780400",
+        "website": "http://www.caesarstone.com",
+        "full_time_employees": 1999
     },
     "CSTE": {
         "short_name": "Caesarstone Ltd.",
@@ -21,7 +25,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "Israel",
-        "city": "Menashe"
+        "state": null,
+        "city": "Menashe",
+        "zipcode": "3780400",
+        "website": "http://www.caesarstone.com",
+        "full_time_employees": 1999
     },
     "GLPL.TA": {
         "short_name": "GOLAN PLASTIC PROD",
@@ -33,7 +41,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Sha'ar HaGolan"
+        "state": null,
+        "city": "Sha'ar HaGolan",
+        "zipcode": "15145",
+        "website": "http://www.pexgol.com",
+        "full_time_employees": 255
     },
     "HAMAT.TA": {
         "short_name": "HAMAT GROUP LTD",
@@ -45,7 +57,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Ashdod"
+        "state": null,
+        "city": "Ashdod",
+        "zipcode": "77164",
+        "website": "http://www.hamat.co.il",
+        "full_time_employees": 859
     },
     "PLRM.TA": {
         "short_name": "PALRAM INDUSTRIES",
@@ -57,6 +73,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Zevulun"
+        "state": null,
+        "city": "Zevulun",
+        "zipcode": "30035",
+        "website": "http://www.palram.com",
+        "full_time_employees": 1594
     }
 }

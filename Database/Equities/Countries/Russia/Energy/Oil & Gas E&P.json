@@ -9,7 +9,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Nizhnevartovsk"
+        "state": null,
+        "city": "Nizhnevartovsk",
+        "zipcode": "628609",
+        "website": null,
+        "full_time_employees": 51
     },
     "MFGS.ME": {
         "short_name": "SLAVNEFT-MEGIONNEF",
@@ -21,7 +25,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Megion"
+        "state": null,
+        "city": "Megion",
+        "zipcode": "628684",
+        "website": "http://www.sn-mng.ru",
+        "full_time_employees": null
     },
     "MFGSP.ME": {
         "short_name": "SLAVNEFT-MEGIONNEF",
@@ -33,7 +41,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Megion"
+        "state": null,
+        "city": "Megion",
+        "zipcode": "628684",
+        "website": "http://www.sn-mng.ru",
+        "full_time_employees": null
     },
     "N1O.F": {
         "short_name": "NOVATEK GDR RG.S/10 RL-,1",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Russia",
-        "city": "Tarko-Sale"
+        "state": null,
+        "city": "Tarko-Sale",
+        "zipcode": "629850",
+        "website": "http://www.novatek.ru",
+        "full_time_employees": null
     },
     "NOVKY": {
         "short_name": "NOVATEK PUB JOINT STOCK COMPANY",
@@ -57,7 +73,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Russia",
-        "city": "Tarko-Sale"
+        "state": null,
+        "city": "Tarko-Sale",
+        "zipcode": "629850",
+        "website": "http://www.novatek.ru",
+        "full_time_employees": null
     },
     "NVTK.ME": {
         "short_name": "NOVATEK PJSC",
@@ -69,7 +89,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Tarko-Sale"
+        "state": null,
+        "city": "Tarko-Sale",
+        "zipcode": "629850",
+        "website": "http://www.novatek.ru",
+        "full_time_employees": null
     },
     "NVTK.VI": {
         "short_name": "NOVATEK GDR",
@@ -81,7 +105,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Russia",
-        "city": "Tarko-Sale"
+        "state": null,
+        "city": "Tarko-Sale",
+        "zipcode": "629850",
+        "website": "http://www.novatek.ru",
+        "full_time_employees": null
     },
     "RNFT.ME": {
         "short_name": "RUSSNEFT PJSC",
@@ -93,6 +121,10 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "115054",
+        "website": "http://www.russneft.ru",
+        "full_time_employees": 8594
     }
 }

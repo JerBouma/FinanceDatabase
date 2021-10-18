@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Caesarea"
+        "state": null,
+        "city": "Caesarea",
+        "zipcode": "3088900",
+        "website": null,
+        "full_time_employees": 885
     },
     "FOX.TA": {
         "short_name": "FOX-WIZEL LTD",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Airport City"
+        "state": null,
+        "city": "Airport City",
+        "zipcode": "70100",
+        "website": "http://www.foxgroup.co.il",
+        "full_time_employees": 8605
     },
     "TFRFF": {
         "short_name": "TEFRON",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Misgav"
+        "state": null,
+        "city": "Misgav",
+        "zipcode": null,
+        "website": "http://www.tefron.com",
+        "full_time_employees": 855
     },
     "TFRLF.TA": {
         "short_name": "TEFRON",
@@ -45,6 +57,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Misgav"
+        "state": null,
+        "city": "Misgav",
+        "zipcode": null,
+        "website": "http://www.tefron.com",
+        "full_time_employees": 855
     }
 }

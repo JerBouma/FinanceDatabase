@@ -9,7 +9,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Chios"
+        "state": null,
+        "city": "Chios",
+        "zipcode": "821 00",
+        "website": "http://www.mastihashop.com",
+        "full_time_employees": 51
     },
     "PAP.AT": {
         "short_name": "PAPOUTSANIS S.A.",
@@ -21,7 +25,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Chalcis"
+        "state": null,
+        "city": "Chalcis",
+        "zipcode": "34100",
+        "website": "http://www.papoutsanis.gr",
+        "full_time_employees": 155
     },
     "RBN.MX": {
         "short_name": "RECKITT BENCKISER GROUP PLC",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United Kingdom",
-        "city": "Slough"
+        "state": null,
+        "city": "Slough",
+        "zipcode": "SL1 3UH",
+        "website": "http://www.reckitt.com",
+        "full_time_employees": 43500
     },
     "SAR.AT": {
         "short_name": "GR. SARANTIS S.A. (CR)",
@@ -45,7 +57,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "151 25",
+        "website": "http://sarantisgroup.com",
+        "full_time_employees": 2575
     },
     "YALCO.AT": {
         "short_name": "YALCO - CONSTANTINOY S.A. (CR)",
@@ -57,6 +73,10 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Kifissia"
+        "state": null,
+        "city": "Kifissia",
+        "zipcode": "14564",
+        "website": "http://www.yalco.gr",
+        "full_time_employees": 104
     }
 }

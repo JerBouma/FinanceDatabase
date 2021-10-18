@@ -9,7 +9,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Reus"
+        "state": null,
+        "city": "Reus",
+        "zipcode": "43205",
+        "website": "http://www.borges-bain.com",
+        "full_time_employees": 600
     },
     "PNV.F": {
         "short_name": "PESCANOVA SA INH.  EO 6",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Spain",
-        "city": "Redondela"
+        "state": null,
+        "city": "Redondela",
+        "zipcode": null,
+        "website": "http://www.pescanova.com",
+        "full_time_employees": null
     },
     "PVA.MC": {
         "short_name": "PESCANOVA,S.A.",
@@ -33,6 +41,10 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Redondela"
+        "state": null,
+        "city": "Redondela",
+        "zipcode": null,
+        "website": "http://www.pescanova.com",
+        "full_time_employees": null
     }
 }

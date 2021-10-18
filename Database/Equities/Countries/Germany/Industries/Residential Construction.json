@@ -9,7 +9,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Germany",
-        "city": "Meissen"
+        "state": null,
+        "city": "Meissen",
+        "zipcode": "01662",
+        "website": "http://www.bal-ag.de",
+        "full_time_employees": null
     },
     "H5E.DE": {
         "short_name": "HELMA EIGENHEIMBAU AG",
@@ -21,7 +25,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Lehrte"
+        "state": null,
+        "city": "Lehrte",
+        "zipcode": "31275",
+        "website": "http://www.helma.de",
+        "full_time_employees": 346
     },
     "H5E.F": {
         "short_name": "HELMA EIGENHEIMBAU AG",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Lehrte"
+        "state": null,
+        "city": "Lehrte",
+        "zipcode": "31275",
+        "website": "http://www.helma.de",
+        "full_time_employees": 346
     },
     "P9R.F": {
         "short_name": "PRIMAG AG",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Dusseldorf"
+        "state": null,
+        "city": "Dusseldorf",
+        "zipcode": "40547",
+        "website": "http://www.primag.de",
+        "full_time_employees": 5
     },
     "TRU.DE": {
         "short_name": "TRAUMHAUS AG  INH O.N.",
@@ -57,7 +73,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Wiesbaden"
+        "state": null,
+        "city": "Wiesbaden",
+        "zipcode": "65205",
+        "website": "http://www.traumhaus-familie.de",
+        "full_time_employees": 59
     },
     "TRU.F": {
         "short_name": "TRAUMHAUS AG  INH O.N.",
@@ -69,6 +89,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Wiesbaden"
+        "state": null,
+        "city": "Wiesbaden",
+        "zipcode": "65205",
+        "website": "http://www.traumhaus-familie.de",
+        "full_time_employees": 59
     }
 }

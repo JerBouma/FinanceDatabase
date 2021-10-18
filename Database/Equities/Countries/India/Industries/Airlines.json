@@ -9,7 +9,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Gurugram"
+        "state": null,
+        "city": "Gurugram",
+        "zipcode": "122002",
+        "website": "http://www.goindigo.in",
+        "full_time_employees": 27812
     },
     "JETAIRWAYS.NS": {
         "short_name": "JET AIRWAYS INDIA",
@@ -21,7 +25,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400099",
+        "website": "http://www.jetairways.com",
+        "full_time_employees": null
     },
     "SPICEJET.NS": {
         "short_name": "SPICEJET LTD",
@@ -33,6 +41,10 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Gurugram"
+        "state": null,
+        "city": "Gurugram",
+        "zipcode": "122016",
+        "website": "http://www.spicejet.com",
+        "full_time_employees": 16288
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "6789805",
+        "website": "http://www.adikastyle.com",
+        "full_time_employees": 451
     },
     "QUIK.TA": {
         "short_name": "QUIK SUPER ONLINE",
@@ -21,6 +25,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Rishon LeZion"
+        "state": null,
+        "city": "Rishon LeZion",
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     }
 }

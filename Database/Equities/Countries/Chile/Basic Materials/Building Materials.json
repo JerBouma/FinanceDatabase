@@ -9,7 +9,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Providencia"
+        "state": null,
+        "city": "Providencia",
+        "zipcode": null,
+        "website": "http://cbb.cl",
+        "full_time_employees": 1198
     },
     "MELON.SN": {
         "short_name": "MELON SA",
@@ -21,7 +25,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago de Chile"
+        "state": null,
+        "city": "Santiago de Chile",
+        "zipcode": null,
+        "website": "http://www.melon.cl",
+        "full_time_employees": null
     },
     "VOLCAN.SN": {
         "short_name": "INDUSTRIAL VOLCAN",
@@ -33,6 +41,10 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago de Chile"
+        "state": null,
+        "city": "Santiago de Chile",
+        "zipcode": null,
+        "website": "http://www.volcan.cl",
+        "full_time_employees": 644
     }
 }

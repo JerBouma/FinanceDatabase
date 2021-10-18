@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Courbevoie"
+        "state": null,
+        "city": "Courbevoie",
+        "zipcode": "92400",
+        "website": "http://www.verallia.com",
+        "full_time_employees": 10000
     },
     "ALBI.PA": {
         "short_name": "GASCOGNE",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Mimizan"
+        "state": null,
+        "city": "Mimizan",
+        "zipcode": "40200",
+        "website": "http://www.groupe-gascogne.com",
+        "full_time_employees": null
     },
     "ALGIL.PA": {
         "short_name": "GROUPE GUILLIN",
@@ -33,7 +41,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Ornans"
+        "state": null,
+        "city": "Ornans",
+        "zipcode": "25290",
+        "website": "http://www.groupeguillin.fr",
+        "full_time_employees": 2803
     },
     "AUGR.PA": {
         "short_name": "AUGROS COSMETICS",
@@ -45,7 +57,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Alen\u00c3\u00a7on"
+        "state": null,
+        "city": "Alen\u00c3\u00a7on",
+        "zipcode": "61000",
+        "website": "http://www.augros.fr",
+        "full_time_employees": 133
     },
     "TFF.PA": {
         "short_name": "TFF GROUP",
@@ -57,7 +73,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Saint-Romain"
+        "state": null,
+        "city": "Saint-Romain",
+        "zipcode": "21190",
+        "website": "http://www.tff-group.com",
+        "full_time_employees": 1313
     },
     "VRLA.PA": {
         "short_name": "VERALLIA",
@@ -69,7 +89,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Courbevoie"
+        "state": null,
+        "city": "Courbevoie",
+        "zipcode": "92400",
+        "website": "http://www.verallia.com",
+        "full_time_employees": 10000
     },
     "VRLA.VI": {
         "short_name": "VERALLIA SAS",
@@ -81,6 +105,10 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "France",
-        "city": "Courbevoie"
+        "state": null,
+        "city": "Courbevoie",
+        "zipcode": "92400",
+        "website": "http://www.verallia.com",
+        "full_time_employees": 10000
     }
 }

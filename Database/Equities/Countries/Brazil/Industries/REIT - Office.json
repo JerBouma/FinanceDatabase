@@ -9,7 +9,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "CNES11.SA": {
         "short_name": "FII CENESP  CI",
@@ -21,7 +25,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "EDGA11.SA": {
         "short_name": "FII GALERIA CI",
@@ -33,7 +41,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Rio de Janeiro"
+        "state": "RJ",
+        "city": "Rio de Janeiro",
+        "zipcode": "22250-040",
+        "website": null,
+        "full_time_employees": null
     },
     "FAMB11B.SA": {
         "short_name": "FD INV IM ALM BARR",
@@ -45,7 +57,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Sao Paulo"
+        "state": "SP",
+        "city": "Sao Paulo",
+        "zipcode": "04538-133",
+        "website": null,
+        "full_time_employees": null
     },
     "FMOF11.SA": {
         "short_name": "FII MEMORIALCI",
@@ -57,6 +73,10 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     }
 }

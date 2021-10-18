@@ -9,7 +9,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Bologna"
+        "state": "BO",
+        "city": "Bologna",
+        "zipcode": "40012",
+        "website": "http://www.datalogic.com",
+        "full_time_employees": 2826
     },
     "DT8A.F": {
         "short_name": "DATALOGIC  EO -,52",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Bologna"
+        "state": "BO",
+        "city": "Bologna",
+        "zipcode": "40012",
+        "website": "http://www.datalogic.com",
+        "full_time_employees": 2826
     },
     "E5T.F": {
         "short_name": "EUROTECH S.P.A.",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Amaro"
+        "state": "UD",
+        "city": "Amaro",
+        "zipcode": "33020",
+        "website": "http://www.eurotech.com",
+        "full_time_employees": 323
     },
     "ETH.MI": {
         "short_name": "EUROTECH",
@@ -45,7 +57,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Amaro"
+        "state": "UD",
+        "city": "Amaro",
+        "zipcode": "33020",
+        "website": "http://www.eurotech.com",
+        "full_time_employees": 323
     },
     "MFT.MI": {
         "short_name": "MATICA FINTEC",
@@ -57,6 +73,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.maticafintec.com",
+        "full_time_employees": 57
     }
 }

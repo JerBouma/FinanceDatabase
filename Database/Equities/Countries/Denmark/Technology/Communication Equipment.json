@@ -9,7 +9,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Denmark",
-        "city": "Copenhagen"
+        "state": null,
+        "city": "Copenhagen",
+        "zipcode": "2860",
+        "website": "http://www.napatech.com",
+        "full_time_employees": 77
     },
     "NAT.F": {
         "short_name": "NAPATECH A/S NAM. DK 0,25",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Denmark",
-        "city": "Copenhagen"
+        "state": null,
+        "city": "Copenhagen",
+        "zipcode": "2860",
+        "website": "http://www.napatech.com",
+        "full_time_employees": 77
     },
     "RTE.F": {
         "short_name": "RTX A/S  NAM DK 5",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Denmark",
-        "city": "N\u00c3\u00b8rresundby"
+        "state": null,
+        "city": "N\u00c3\u00b8rresundby",
+        "zipcode": "9400",
+        "website": "http://www.rtx.dk",
+        "full_time_employees": 289
     },
     "RTX.CO": {
         "short_name": "RTX A/S",
@@ -45,6 +57,10 @@
         "exchange": "CPH",
         "market": "dk_market",
         "country": "Denmark",
-        "city": "N\u00c3\u00b8rresundby"
+        "state": null,
+        "city": "N\u00c3\u00b8rresundby",
+        "zipcode": "9400",
+        "website": "http://www.rtx.dk",
+        "full_time_employees": 289
     }
 }

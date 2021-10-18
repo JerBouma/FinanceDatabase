@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Poland",
-        "city": "Warsaw"
+        "state": null,
+        "city": "Warsaw",
+        "zipcode": "00-526",
+        "website": "http://www.polenergia.pl",
+        "full_time_employees": 172
     },
     "1T5.F": {
         "short_name": "TAURON POLSKA ENERGIA ZY5",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Poland",
-        "city": "Katowice"
+        "state": null,
+        "city": "Katowice",
+        "zipcode": "40-114",
+        "website": "http://www.tauron.pl",
+        "full_time_employees": 25452
     },
     "2ZO.F": {
         "short_name": "KOGENERACJA S.A.  ZY 5",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Poland",
-        "city": "Wroclaw"
+        "state": null,
+        "city": "Wroclaw",
+        "zipcode": "50-220",
+        "website": "http://www.kogeneracja.com.pl",
+        "full_time_employees": null
     },
     "6PG.F": {
         "short_name": "PGE PL.GR.ENERG. ZY10,25",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Poland",
-        "city": "Warsaw"
+        "state": null,
+        "city": "Warsaw",
+        "zipcode": "00-496",
+        "website": "http://www.gkpge.pl",
+        "full_time_employees": 40141
     },
     "EN2.F": {
         "short_name": "ENERGA SA AA  ZY 10,92",
@@ -57,6 +73,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Poland",
-        "city": "Gdansk"
+        "state": null,
+        "city": "Gdansk",
+        "zipcode": "80-309",
+        "website": "http://www.grupa.energa.pl",
+        "full_time_employees": 9731
     }
 }

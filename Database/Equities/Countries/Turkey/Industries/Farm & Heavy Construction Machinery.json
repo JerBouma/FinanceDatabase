@@ -9,7 +9,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Izmir"
+        "state": null,
+        "city": "Izmir",
+        "zipcode": "10032",
+        "website": "http://www.katmerciler.com.tr",
+        "full_time_employees": 402
     },
     "TMSN.IS": {
         "short_name": "TUMOSAN MOTOR VE TRAKTOR",
@@ -21,7 +25,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34010",
+        "website": "http://www.tumosan.com.tr",
+        "full_time_employees": 551
     },
     "TTRAK.IS": {
         "short_name": "TURK TRAKTOR",
@@ -33,6 +41,10 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": "06560",
+        "website": "http://www.turktraktor.com.tr",
+        "full_time_employees": 2110
     }
 }

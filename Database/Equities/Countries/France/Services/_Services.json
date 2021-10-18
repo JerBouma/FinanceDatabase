@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Issy-les-Moulineaux"
+        "state": null,
+        "city": "Issy-les-Moulineaux",
+        "zipcode": "92445",
+        "website": "http://group.accor.com/en",
+        "full_time_employees": 15247
     },
     "CAN.MX": {
         "short_name": "CARREFOUR SA",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Massy"
+        "state": null,
+        "city": "Massy",
+        "zipcode": "91300",
+        "website": "http://www.carrefour.com",
+        "full_time_employees": 234858
     },
     "ELISN.MX": {
         "short_name": "ELIS SA",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Saint-Cloud"
+        "state": null,
+        "city": "Saint-Cloud",
+        "zipcode": "92210",
+        "website": "http://fr.elis.com",
+        "full_time_employees": 46664
     },
     "MCN.MX": {
         "short_name": "LVMH MOET HENNESSY VUITTON SE",
@@ -45,7 +57,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.lvmh.com",
+        "full_time_employees": 148343
     },
     "MLARD.PA": {
         "short_name": "ARDOIN ST AMAND A",
@@ -57,7 +73,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75010",
+        "website": null,
+        "full_time_employees": null
     },
     "MLEAV.PA": {
         "short_name": "EAVS",
@@ -69,7 +89,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Bonneuil-sur-Marne"
+        "state": null,
+        "city": "Bonneuil-sur-Marne",
+        "zipcode": "94380",
+        "website": "http://www.eavs.fr",
+        "full_time_employees": null
     },
     "MLEVE.PA": {
         "short_name": "EVERSET",
@@ -81,7 +105,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Grenoble"
+        "state": null,
+        "city": "Grenoble",
+        "zipcode": "38100",
+        "website": "http://www.everset.com",
+        "full_time_employees": null
     },
     "PUBN.MX": {
         "short_name": "PUBLICIS GROUPE SA",
@@ -93,6 +121,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.publicisgroupe.com",
+        "full_time_employees": 74229
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Finland",
-        "city": "Vantaa"
+        "state": null,
+        "city": "Vantaa",
+        "zipcode": "01510",
+        "website": "http://www.adapteogroup.com",
+        "full_time_employees": 505
     },
     "ADO.F": {
         "short_name": "ADAPTEO OYJ",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Finland",
-        "city": "Vantaa"
+        "state": null,
+        "city": "Vantaa",
+        "zipcode": "01510",
+        "website": "http://www.adapteogroup.com",
+        "full_time_employees": 505
     },
     "INVEST.HE": {
         "short_name": "Investors House Oyj",
@@ -33,7 +41,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00520",
+        "website": "http://www.investorshouse.fi",
+        "full_time_employees": 20
     },
     "KOJAMO.HE": {
         "short_name": "Kojamo Plc",
@@ -45,7 +57,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00300",
+        "website": "http://www.kojamo.fi",
+        "full_time_employees": 282
     },
     "OVARO.HE": {
         "short_name": null,
@@ -57,7 +73,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00280",
+        "website": "http://www.ovaro.fi",
+        "full_time_employees": 4
     },
     "V4OC.F": {
         "short_name": "KOJAMO OYJ",
@@ -69,6 +89,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00300",
+        "website": "http://www.kojamo.fi",
+        "full_time_employees": 282
     }
 }

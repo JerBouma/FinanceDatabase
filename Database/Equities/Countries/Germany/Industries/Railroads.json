@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Leipzig"
+        "state": null,
+        "city": "Leipzig",
+        "zipcode": "04316",
+        "website": "http://www.sbf-ag.com",
+        "full_time_employees": 175
     },
     "HVB.F": {
         "short_name": "UESTRA HANN.VERK. INH ON",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Hanover"
+        "state": null,
+        "city": "Hanover",
+        "zipcode": "30159",
+        "website": "http://www.uestra.de",
+        "full_time_employees": 2553
     },
     "S4A.DE": {
         "short_name": "SMT SCHARF AG",
@@ -33,7 +41,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Hamm"
+        "state": null,
+        "city": "Hamm",
+        "zipcode": "59075",
+        "website": "http://www.smtscharf.com",
+        "full_time_employees": 410
     },
     "S4A.F": {
         "short_name": "SMT SCHARF AG",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Hamm"
+        "state": null,
+        "city": "Hamm",
+        "zipcode": "59075",
+        "website": "http://www.smtscharf.com",
+        "full_time_employees": 410
     },
     "SLT.DE": {
         "short_name": "SCHALTBAU HOLDING NA O.N",
@@ -57,7 +73,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Munich"
+        "state": null,
+        "city": "Munich",
+        "zipcode": "81829",
+        "website": "http://schaltbaugroup.com",
+        "full_time_employees": 2925
     },
     "SLT.F": {
         "short_name": "SCHALTBAU HOLDING NA O.N",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Munich"
+        "state": null,
+        "city": "Munich",
+        "zipcode": "81829",
+        "website": "http://schaltbaugroup.com",
+        "full_time_employees": 2925
     },
     "VOS.DE": {
         "short_name": "VOSSLOH AG O.N.",
@@ -81,7 +105,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Werdohl"
+        "state": null,
+        "city": "Werdohl",
+        "zipcode": "58791",
+        "website": "http://www.vossloh.com",
+        "full_time_employees": 3604
     },
     "VOS.F": {
         "short_name": "VOSSLOH AG O.N.",
@@ -93,7 +121,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Werdohl"
+        "state": null,
+        "city": "Werdohl",
+        "zipcode": "58791",
+        "website": "http://www.vossloh.com",
+        "full_time_employees": 3604
     },
     "VOS.VI": {
         "short_name": "VOSSLOH AG",
@@ -105,6 +137,10 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Germany",
-        "city": "Werdohl"
+        "state": null,
+        "city": "Werdohl",
+        "zipcode": "58791",
+        "website": "http://www.vossloh.com",
+        "full_time_employees": 3604
     }
 }

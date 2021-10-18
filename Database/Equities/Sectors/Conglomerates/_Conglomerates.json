@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Belize",
-        "city": "Belize City"
+        "state": null,
+        "city": "Belize City",
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "GTSO": {
         "short_name": "GREEN TECHNOLOGY SOLUTIONS INC",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "San Jose"
+        "state": "CA",
+        "city": "San Jose",
+        "zipcode": "95134",
+        "website": null,
+        "full_time_employees": 1
     },
     "MEVA.AT": {
         "short_name": "MEVACO S.A. (CR)",
@@ -33,7 +41,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Aspropyrgos"
+        "state": null,
+        "city": "Aspropyrgos",
+        "zipcode": "193 00",
+        "website": "http://www.mevaco.gr",
+        "full_time_employees": 118
     },
     "MLHOP.PA": {
         "short_name": "PART.INDLES MINI.",
@@ -45,7 +57,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75006",
+        "website": "http://www.participationsindustriellesetminieres.com",
+        "full_time_employees": null
     },
     "PRLX": {
         "short_name": "PARALLAX HEALTH SCIENCES INC",
@@ -57,7 +73,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Santa Monica"
+        "state": "CA",
+        "city": "Santa Monica",
+        "zipcode": "90401",
+        "website": "http://www.parallaxhealthsciences.com",
+        "full_time_employees": 9
     },
     "PTPF": {
         "short_name": "ALL MARKETING SOLUTIONS INC",
@@ -69,7 +89,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Carson City"
+        "state": "NV",
+        "city": "Carson City",
+        "zipcode": "89703",
+        "website": null,
+        "full_time_employees": null
     },
     "TSTS": {
         "short_name": "THAT MARKETING SOLUTION INC",
@@ -81,6 +105,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Salt Lake City"
+        "state": "UT",
+        "city": "Salt Lake City",
+        "zipcode": "84117",
+        "website": "http://www.thatmarketingsolution.com",
+        "full_time_employees": 2
     }
 }

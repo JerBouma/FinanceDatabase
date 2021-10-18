@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Short Hills"
+        "state": "NJ",
+        "city": "Short Hills",
+        "zipcode": "07078",
+        "website": "http://www.aristafinancial.com",
+        "full_time_employees": 3
     },
     "DAVAN.MX": {
         "short_name": "ENDAVA PLC",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "EC2N 1AR",
+        "website": "http://www.endava.com",
+        "full_time_employees": 7139
     },
     "EVTCN.MX": {
         "short_name": "EVERTEC INC",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "San Juan"
+        "state": "PR",
+        "city": "San Juan",
+        "zipcode": "00926",
+        "website": "http://www.evertecinc.com",
+        "full_time_employees": 2500
     },
     "MFGPN.MX": {
         "short_name": "MICRO FOCUS INTERNATIONAL PLC",
@@ -45,7 +57,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United Kingdom",
-        "city": "Newbury"
+        "state": null,
+        "city": "Newbury",
+        "zipcode": "RG14 1QN",
+        "website": "http://www.microfocus.com",
+        "full_time_employees": 11900
     },
     "PROF.AT": {
         "short_name": "PROFILE SYSTEMS & SOFTWARE S.A",
@@ -57,6 +73,10 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "171 21",
+        "website": "http://www.profilesw.com",
+        "full_time_employees": 138
     }
 }

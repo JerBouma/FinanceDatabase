@@ -9,7 +9,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "125315",
+        "website": "http://www.irkut.com",
+        "full_time_employees": null
     },
     "KMEZ.ME": {
         "short_name": "KOVROV MECHANICAL",
@@ -21,7 +25,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Kovrov"
+        "state": null,
+        "city": "Kovrov",
+        "zipcode": null,
+        "website": "http://www.kvmz.ru",
+        "full_time_employees": null
     },
     "NAUK.ME": {
         "short_name": "NPO NAUKA",
@@ -33,7 +41,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "125040",
+        "website": "http://www.npo-nauka.ru",
+        "full_time_employees": null
     },
     "RKKE.ME": {
         "short_name": "ENERGIA ROCKET AND",
@@ -45,7 +57,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Korolev"
+        "state": null,
+        "city": "Korolev",
+        "zipcode": "141070",
+        "website": "http://www.energia.ru",
+        "full_time_employees": null
     },
     "UNAC.ME": {
         "short_name": "UNITED AIRCRAFT CO",
@@ -57,7 +73,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "101000",
+        "website": "http://www.uacrussia.ru",
+        "full_time_employees": null
     },
     "VSYD.ME": {
         "short_name": "VYBORG SHIPYARD P",
@@ -69,6 +89,10 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Vyborg"
+        "state": null,
+        "city": "Vyborg",
+        "zipcode": "188800",
+        "website": "http://www.vyborgshipyard.ru",
+        "full_time_employees": 2245
     }
 }

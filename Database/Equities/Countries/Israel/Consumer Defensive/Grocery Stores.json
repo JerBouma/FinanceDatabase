@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Herzliya"
+        "state": null,
+        "city": "Herzliya",
+        "zipcode": "4690500",
+        "website": null,
+        "full_time_employees": 2350
     },
     "RMLI.TA": {
         "short_name": "RAMI LEVI CHAIN",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Jerusalem"
+        "state": null,
+        "city": "Jerusalem",
+        "zipcode": "9334210",
+        "website": "http://www.rami-levy.co.il",
+        "full_time_employees": 7354
     },
     "SAE.TA": {
         "short_name": "SHUFERSAL LTD",
@@ -33,7 +41,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Rishon LeZion"
+        "state": null,
+        "city": "Rishon LeZion",
+        "zipcode": "7505002",
+        "website": "http://www.shufersal.co.il",
+        "full_time_employees": 16000
     },
     "YHNF.TA": {
         "short_name": "M YOCHANANOF & SON",
@@ -45,6 +57,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Rehovot"
+        "state": null,
+        "city": "Rehovot",
+        "zipcode": null,
+        "website": "http://www.yochananof.co.il",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Nivelles"
+        "state": null,
+        "city": "Nivelles",
+        "zipcode": "1400",
+        "website": "http://www.evadix.be",
+        "full_time_employees": null
     },
     "MLV4S.PA": {
         "short_name": "LV4S",
@@ -21,6 +25,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "Belgium",
-        "city": "Marche-en-Famenne"
+        "state": null,
+        "city": "Marche-en-Famenne",
+        "zipcode": "6900",
+        "website": "http://www.lesverandas4saisons.com",
+        "full_time_employees": 27
     }
 }

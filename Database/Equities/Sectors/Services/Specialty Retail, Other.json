@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "China",
-        "city": "Hangzhou"
+        "state": null,
+        "city": "Hangzhou",
+        "zipcode": "311121",
+        "website": "http://www.alibabagroup.com",
+        "full_time_employees": 252084
     },
     "ELTZ": {
         "short_name": "ELITE GROUP INC",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Frisco"
+        "state": "TX",
+        "city": "Frisco",
+        "zipcode": "75034",
+        "website": null,
+        "full_time_employees": 1
     },
     "FOYRK.AT": {
         "short_name": "FOURLIS S.A (CR)",
@@ -33,7 +41,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Marousi"
+        "state": null,
+        "city": "Marousi",
+        "zipcode": "151 25",
+        "website": "http://www.fourlis.gr",
+        "full_time_employees": 4105
     },
     "JDN.MX": {
         "short_name": "JD.COM INC",
@@ -45,7 +57,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "101111",
+        "website": "http://www.jd.com",
+        "full_time_employees": 314906
     },
     "MELIN.MX": {
         "short_name": "MERCADOLIBRE INC",
@@ -57,7 +73,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "C1430EKG",
+        "website": "http://www.mercadolibre.com",
+        "full_time_employees": 15546
     },
     "NAKAS.AT": {
         "short_name": "NAKAS MUSIC",
@@ -69,7 +89,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Paiania"
+        "state": null,
+        "city": "Paiania",
+        "zipcode": "19002",
+        "website": "http://www.nakas.gr",
+        "full_time_employees": 154
     },
     "VIPSN.MX": {
         "short_name": "VIPSHOP HLDGS LTD",
@@ -81,6 +105,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "China",
-        "city": "Guangzhou"
+        "state": null,
+        "city": "Guangzhou",
+        "zipcode": "510220",
+        "website": "http://www.vip.com",
+        "full_time_employees": 7567
     }
 }

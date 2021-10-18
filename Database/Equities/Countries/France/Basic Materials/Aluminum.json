@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.constellium.com",
+        "full_time_employees": 12000
     },
     "ALLUX.PA": {
         "short_name": "INSTALLUX",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Saint-Bonnet-de-Mure"
+        "state": null,
+        "city": "Saint-Bonnet-de-Mure",
+        "zipcode": "69720",
+        "website": "http://www.groupe-installux.com",
+        "full_time_employees": 454
     },
     "CSTM": {
         "short_name": "Constellium SE",
@@ -33,7 +41,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.constellium.com",
+        "full_time_employees": 10900
     },
     "MLDYN.PA": {
         "short_name": "DYNAFOND",
@@ -45,6 +57,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Etrepagny"
+        "state": null,
+        "city": "Etrepagny",
+        "zipcode": "27150",
+        "website": "http://www.dynafond.fr",
+        "full_time_employees": null
     }
 }

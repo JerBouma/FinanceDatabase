@@ -9,7 +9,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Lund"
+        "state": null,
+        "city": "Lund",
+        "zipcode": "223 81",
+        "website": "http://abliva.com",
+        "full_time_employees": 9
     },
     "L7R.F": {
         "short_name": "LIPIDOR AB",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "106 91",
+        "website": "http://lipidor.se",
+        "full_time_employees": null
     },
     "LIPI.ST": {
         "short_name": "Lipidor AB",
@@ -33,7 +41,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "106 91",
+        "website": "http://lipidor.se",
+        "full_time_employees": 1
     },
     "NEVPF": {
         "short_name": "ABLIVA AB",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Sweden",
-        "city": "Lund"
+        "state": null,
+        "city": "Lund",
+        "zipcode": "223 81",
+        "website": "http://abliva.com",
+        "full_time_employees": 9
     },
     "NTP.F": {
         "short_name": "ABLIVA AB AK",
@@ -57,6 +73,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Lund"
+        "state": null,
+        "city": "Lund",
+        "zipcode": "223 81",
+        "website": "http://abliva.com",
+        "full_time_employees": 9
     }
 }

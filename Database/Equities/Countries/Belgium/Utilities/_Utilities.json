@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Tielt"
+        "state": null,
+        "city": "Tielt",
+        "zipcode": "8700",
+        "website": "http://ekopak.be",
+        "full_time_employees": 40
     },
     "E4S.F": {
         "short_name": "ELIA GROUP",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.elia.be",
+        "full_time_employees": 2750
     },
     "EKOP.BR": {
         "short_name": "EKOPAK",
@@ -33,7 +41,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Tielt"
+        "state": null,
+        "city": "Tielt",
+        "zipcode": "8700",
+        "website": "http://ekopak.be",
+        "full_time_employees": 40
     },
     "ELI.BR": {
         "short_name": "ELIA GROUP",
@@ -45,7 +57,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.elia.be",
+        "full_time_employees": 2750
     },
     "ELIA.VI": {
         "short_name": "ELIA GROUP SA",
@@ -57,6 +73,10 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.elia.be",
+        "full_time_employees": 2750
     }
 }

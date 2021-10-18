@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "113 46",
+        "website": "http://www.qliro.com",
+        "full_time_employees": 198
     },
     "4R6.F": {
         "short_name": "RESURS HOLDING AB",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Helsingborg"
+        "state": null,
+        "city": "Helsingborg",
+        "zipcode": null,
+        "website": "http://www.resursholding.com/en/",
+        "full_time_employees": 702
     },
     "COLL.ST": {
         "short_name": "Collector AB",
@@ -33,7 +41,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "404 39",
+        "website": "http://www.collector.se",
+        "full_time_employees": 306
     },
     "IJU.F": {
         "short_name": "INTRUM AB  SK-,02",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "105 24",
+        "website": "http://www.intrum.com",
+        "full_time_employees": 10000
     },
     "INTRUM.ST": {
         "short_name": "Intrum AB",
@@ -57,7 +73,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "105 24",
+        "website": "http://www.intrum.com",
+        "full_time_employees": 10000
     },
     "ITJTY": {
         "short_name": "INTRUM AB",
@@ -69,7 +89,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "105 24",
+        "website": "http://www.intrum.com",
+        "full_time_employees": 10000
     },
     "NCA.F": {
         "short_name": "COLLECTOR AB (PUBL)",
@@ -81,7 +105,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "404 39",
+        "website": "http://www.collector.se",
+        "full_time_employees": 306
     },
     "QLIRO.ST": {
         "short_name": "Qliro AB",
@@ -93,7 +121,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "113 46",
+        "website": "http://www.qliro.com",
+        "full_time_employees": 198
     },
     "RESURS.ST": {
         "short_name": "Resurs Holding AB",
@@ -105,6 +137,10 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Helsingborg"
+        "state": null,
+        "city": "Helsingborg",
+        "zipcode": null,
+        "website": "http://www.resursholding.com/en/",
+        "full_time_employees": 702
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Florence"
+        "state": "FI",
+        "city": "Florence",
+        "zipcode": "50125",
+        "website": "http://www.eukedos.it",
+        "full_time_employees": 733
     },
     "GHC.F": {
         "short_name": "GAROFALO HEALTH CARE",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00196",
+        "website": "http://www.garofalohealthcare.com",
+        "full_time_employees": 1187
     },
     "GHC.MI": {
         "short_name": "GAROFALO HEALTH CARE",
@@ -33,6 +41,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00196",
+        "website": "http://www.garofalohealthcare.com",
+        "full_time_employees": 1187
     }
 }

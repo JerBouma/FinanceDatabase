@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Mestre"
+        "state": "VE",
+        "city": "Mestre",
+        "zipcode": "30174",
+        "website": "http://www.bancaifis.it",
+        "full_time_employees": 1758
     },
     "1DB.F": {
         "short_name": "DOVALUE S.P.A.",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Verona"
+        "state": "VR",
+        "city": "Verona",
+        "zipcode": "37135",
+        "website": "http://www.dovalue.it",
+        "full_time_employees": 3211
     },
     "4BE.F": {
         "short_name": "BPER BANCA  EO 3",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Modena"
+        "state": "MO",
+        "city": "Modena",
+        "zipcode": "41121",
+        "website": "http://www.bper.it",
+        "full_time_employees": 13177
     },
     "593.F": {
         "short_name": "BCA POP.DI SONDRIO  EO 3",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Sondrio"
+        "state": "SO",
+        "city": "Sondrio",
+        "zipcode": "23100",
+        "website": "http://www.popso.it",
+        "full_time_employees": 3325
     },
     "B2S.F": {
         "short_name": "BANCA SISTEMA SPA  EO-,12",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20122",
+        "website": "http://www.bancasistema.it",
+        "full_time_employees": 269
     },
     "B7A.F": {
         "short_name": "BANCA GENERALI  B  EO 1",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Trieste"
+        "state": "TS",
+        "city": "Trieste",
+        "zipcode": "34132",
+        "website": "http://www.bancagenerali.com",
+        "full_time_employees": 905
     },
     "BAMI.MI": {
         "short_name": "BANCO BPM",
@@ -81,7 +105,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Verona"
+        "state": "VR",
+        "city": "Verona",
+        "zipcode": "37121",
+        "website": "http://www.bancobpm.it",
+        "full_time_employees": 17967
     },
     "BAMI.VI": {
         "short_name": "BANCO BPM SPA",
@@ -93,7 +121,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Verona"
+        "state": "VR",
+        "city": "Verona",
+        "zipcode": "37121",
+        "website": "http://www.bancobpm.it",
+        "full_time_employees": 17967
     },
     "BDB.MI": {
         "short_name": "BCO DESIO BRIANZA",
@@ -105,7 +137,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Desio"
+        "state": "MI",
+        "city": "Desio",
+        "zipcode": "20832",
+        "website": "http://www.bancodesio.it",
+        "full_time_employees": 2179
     },
     "BDBR.MI": {
         "short_name": "BCO DESIO BRIA RNC",
@@ -117,7 +153,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Desio"
+        "state": "MI",
+        "city": "Desio",
+        "zipcode": "20832",
+        "website": "http://www.bancodesio.it",
+        "full_time_employees": 2179
     },
     "BFE.MI": {
         "short_name": "BCA FINNAT",
@@ -129,7 +169,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": null,
+        "city": "Rome",
+        "zipcode": "00186",
+        "website": "http://www.bancafinnat.it",
+        "full_time_employees": null
     },
     "BGN.MI": {
         "short_name": "BANCA GENERALI",
@@ -141,7 +185,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Trieste"
+        "state": "TS",
+        "city": "Trieste",
+        "zipcode": "34132",
+        "website": "http://www.bancagenerali.com",
+        "full_time_employees": 905
     },
     "BGN.VI": {
         "short_name": "BANCA GENERALI SPA",
@@ -153,7 +201,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Trieste"
+        "state": "TS",
+        "city": "Trieste",
+        "zipcode": "34132",
+        "website": "http://www.bancagenerali.com",
+        "full_time_employees": 905
     },
     "BIM.MI": {
         "short_name": "BANCA INTERMOBILIARE",
@@ -165,7 +217,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Turin"
+        "state": "TO",
+        "city": "Turin",
+        "zipcode": "10122",
+        "website": "http://www.bancaintermobiliare.com",
+        "full_time_employees": 249
     },
     "BJ7.SG": {
         "short_name": "BCO DI DESIO E DELLA BRIANZA Az",
@@ -177,7 +233,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Desio"
+        "state": "MI",
+        "city": "Desio",
+        "zipcode": "20832",
+        "website": "http://www.bancodesio.it",
+        "full_time_employees": 2179
     },
     "BMDPF": {
         "short_name": "BANCA MONTE DEI PASCHI DI SIENA",
@@ -189,7 +249,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Siena"
+        "state": "SI",
+        "city": "Siena",
+        "zipcode": "53100",
+        "website": "http://www.mps.it",
+        "full_time_employees": 21432
     },
     "BMED.MI": {
         "short_name": "BANCA MEDIOLANUM",
@@ -201,7 +265,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Basiglio"
+        "state": "MI",
+        "city": "Basiglio",
+        "zipcode": "20079",
+        "website": "http://www.bancamediolanum.it",
+        "full_time_employees": 3092
     },
     "BMED.VI": {
         "short_name": "BANCA MEDIOLANUM SPA",
@@ -213,7 +281,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Basiglio"
+        "state": "MI",
+        "city": "Basiglio",
+        "zipcode": "20079",
+        "website": "http://www.bancamediolanum.it",
+        "full_time_employees": 3092
     },
     "BMPS.MI": {
         "short_name": "BCA MPS",
@@ -225,7 +297,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Siena"
+        "state": "SI",
+        "city": "Siena",
+        "zipcode": "53100",
+        "website": "http://www.mps.it",
+        "full_time_employees": 21432
     },
     "BNCDY": {
         "short_name": "BANCA MEDIOLANUM",
@@ -237,7 +313,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Basiglio"
+        "state": "MI",
+        "city": "Basiglio",
+        "zipcode": "20079",
+        "website": "http://www.bancamediolanum.it",
+        "full_time_employees": 3092
     },
     "BPA.F": {
         "short_name": "BANCA PROFILO",
@@ -249,7 +329,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20122",
+        "website": "http://www.bancaprofilo.it",
+        "full_time_employees": 211
     },
     "BPE.MI": {
         "short_name": "BPER BANCA",
@@ -261,7 +345,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Modena"
+        "state": "MO",
+        "city": "Modena",
+        "zipcode": "41121",
+        "website": "http://www.bper.it",
+        "full_time_employees": 13177
     },
     "BPE.VI": {
         "short_name": "BANCA POPOLARE SPA",
@@ -273,7 +361,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Modena"
+        "state": "MO",
+        "city": "Modena",
+        "zipcode": "41121",
+        "website": "http://www.bper.it",
+        "full_time_employees": 13177
     },
     "BPM.F": {
         "short_name": "BCA BPM S.P.A.",
@@ -285,7 +377,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Verona"
+        "state": "VR",
+        "city": "Verona",
+        "zipcode": "37121",
+        "website": "http://www.bancobpm.it",
+        "full_time_employees": 17967
     },
     "BPSO.MI": {
         "short_name": "BCA POP SONDRIO",
@@ -297,7 +393,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Sondrio"
+        "state": "SO",
+        "city": "Sondrio",
+        "zipcode": "23100",
+        "website": "http://www.popso.it",
+        "full_time_employees": 3325
     },
     "BPXXY": {
         "short_name": "BPER BANCA SPA",
@@ -309,7 +409,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Modena"
+        "state": "MO",
+        "city": "Modena",
+        "zipcode": "41121",
+        "website": "http://www.bper.it",
+        "full_time_employees": 13177
     },
     "BST.MI": {
         "short_name": "BANCA SISTEMA",
@@ -321,7 +425,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20122",
+        "website": "http://www.bancasistema.it",
+        "full_time_employees": 269
     },
     "CE.MI": {
         "short_name": "CREDEM",
@@ -333,7 +441,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Reggio Emilia"
+        "state": "RE",
+        "city": "Reggio Emilia",
+        "zipcode": "42100",
+        "website": "http://www.credem.it",
+        "full_time_employees": 5816
     },
     "CRIN.F": {
         "short_name": "UNICREDIT",
@@ -345,7 +457,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20154",
+        "website": "http://www.unicreditgroup.eu",
+        "full_time_employees": 82107
     },
     "CRIP.F": {
         "short_name": "UNICREDIT S.P.A. ADR",
@@ -357,7 +473,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20154",
+        "website": "http://www.unicreditgroup.eu",
+        "full_time_employees": 82107
     },
     "CVAL.MI": {
         "short_name": "CREDITO VALTELLINESE",
@@ -369,7 +489,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Sondrio"
+        "state": "SO",
+        "city": "Sondrio",
+        "zipcode": null,
+        "website": "http://www.creval.it",
+        "full_time_employees": 3521
     },
     "DOV.MI": {
         "short_name": "DOVALUE",
@@ -381,7 +505,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Verona"
+        "state": "VR",
+        "city": "Verona",
+        "zipcode": "37135",
+        "website": "http://www.dovalue.it",
+        "full_time_employees": 3211
     },
     "EAO.F": {
         "short_name": "CREDITO EMILIANO  EO 1",
@@ -393,7 +521,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Reggio Emilia"
+        "state": "RE",
+        "city": "Reggio Emilia",
+        "zipcode": "42100",
+        "website": "http://www.credem.it",
+        "full_time_employees": 5816
     },
     "FBK.MI": {
         "short_name": "FINECOBANK",
@@ -405,7 +537,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Reggio Emilia"
+        "state": "RE",
+        "city": "Reggio Emilia",
+        "zipcode": "42123",
+        "website": "http://finecobank.com",
+        "full_time_employees": 1262
     },
     "FBK.VI": {
         "short_name": "FINECOBANK SPA",
@@ -417,7 +553,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Reggio Emilia"
+        "state": "RE",
+        "city": "Reggio Emilia",
+        "zipcode": "42123",
+        "website": "http://finecobank.com",
+        "full_time_employees": 1262
     },
     "IES.DE": {
         "short_name": "INTESA SANPAOLO",
@@ -429,7 +569,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Italy",
-        "city": "Turin"
+        "state": "TO",
+        "city": "Turin",
+        "zipcode": "10121",
+        "website": "http://www.intesasanpaolo.com",
+        "full_time_employees": 99599
     },
     "IES.F": {
         "short_name": "INTESA SANPAOLO",
@@ -441,7 +585,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Turin"
+        "state": "TO",
+        "city": "Turin",
+        "zipcode": "10121",
+        "website": "http://www.intesasanpaolo.com",
+        "full_time_employees": 99599
     },
     "IF.MI": {
         "short_name": "BANCA IFIS",
@@ -453,7 +601,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Mestre"
+        "state": "VE",
+        "city": "Mestre",
+        "zipcode": "30174",
+        "website": "http://www.bancaifis.it",
+        "full_time_employees": 1758
     },
     "IITSF": {
         "short_name": "INTESA SANPAOLO S.P.A.",
@@ -465,7 +617,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Turin"
+        "state": "TO",
+        "city": "Turin",
+        "zipcode": "10121",
+        "website": "http://www.intesasanpaolo.com",
+        "full_time_employees": 84737
     },
     "ILTY.MI": {
         "short_name": "ILLIMITY BANK",
@@ -477,7 +633,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20124",
+        "website": "http://www.illimity.com",
+        "full_time_employees": 587
     },
     "ISNPY": {
         "short_name": "INTESA SANPAOLO S.P.A.",
@@ -489,7 +649,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Turin"
+        "state": "TO",
+        "city": "Turin",
+        "zipcode": "10121",
+        "website": "http://www.intesasanpaolo.com",
+        "full_time_employees": 99599
     },
     "ISP.MI": {
         "short_name": "INTESA SANPAOLO",
@@ -501,7 +665,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Turin"
+        "state": "TO",
+        "city": "Turin",
+        "zipcode": "10121",
+        "website": "http://www.intesasanpaolo.com",
+        "full_time_employees": 99599
     },
     "ISP.VI": {
         "short_name": "INTESA SANPAOLO SPA",
@@ -513,7 +681,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Turin"
+        "state": "TO",
+        "city": "Turin",
+        "zipcode": "10121",
+        "website": "http://www.intesasanpaolo.com",
+        "full_time_employees": 99599
     },
     "MB.MI": {
         "short_name": "MEDIOBANCA",
@@ -525,7 +697,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.mediobanca.com",
+        "full_time_employees": 4903
     },
     "MB.VI": {
         "short_name": "MEDIOBANCA SPA",
@@ -537,7 +713,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.mediobanca.com",
+        "full_time_employees": 4903
     },
     "MDIBY": {
         "short_name": "MEDIOBANCA DI CREDITO FINANZ SP",
@@ -549,7 +729,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.mediobanca.com",
+        "full_time_employees": 4903
     },
     "ME1.F": {
         "short_name": "BANCA MEDIOLANUM NOM.",
@@ -561,7 +745,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Basiglio"
+        "state": "MI",
+        "city": "Basiglio",
+        "zipcode": "20079",
+        "website": "http://www.bancamediolanum.it",
+        "full_time_employees": 3092
     },
     "ME9.F": {
         "short_name": "MEDIOBCA  EO 0,50",
@@ -573,7 +761,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.mediobanca.com",
+        "full_time_employees": 4903
     },
     "MPIN.F": {
         "short_name": "BCA MONTE D.PASCHI",
@@ -585,7 +777,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Siena"
+        "state": "SI",
+        "city": "Siena",
+        "zipcode": "53100",
+        "website": "http://www.mps.it",
+        "full_time_employees": 21432
     },
     "PRO.MI": {
         "short_name": "BCA PROFILO",
@@ -597,7 +793,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20122",
+        "website": "http://www.bancaprofilo.it",
+        "full_time_employees": 211
     },
     "TQ9.SG": {
         "short_name": "Banca Finnat Euramerica S.p.A.A",
@@ -609,7 +809,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": null,
+        "city": "Rome",
+        "zipcode": "00186",
+        "website": "http://www.bancafinnat.it",
+        "full_time_employees": null
     },
     "UCG.MI": {
         "short_name": "UNICREDIT",
@@ -621,7 +825,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20154",
+        "website": "http://www.unicreditgroup.eu",
+        "full_time_employees": 82107
     },
     "UCG.VI": {
         "short_name": "UNICREDIT SPA",
@@ -633,7 +841,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20154",
+        "website": "http://www.unicreditgroup.eu",
+        "full_time_employees": 82107
     },
     "UNCFF": {
         "short_name": "UNICREDIT SPA",
@@ -645,7 +857,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20154",
+        "website": "http://www.unicreditgroup.eu",
+        "full_time_employees": 82107
     },
     "UNCRY": {
         "short_name": "UNICREDIT SPA",
@@ -657,7 +873,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20154",
+        "website": "http://www.unicreditgroup.eu",
+        "full_time_employees": 82107
     },
     "ZS3.F": {
         "short_name": "FINECOBANK BCA FIN.EO-,33",
@@ -669,6 +889,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Reggio Emilia"
+        "state": "RE",
+        "city": "Reggio Emilia",
+        "zipcode": "42123",
+        "website": "http://finecobank.com",
+        "full_time_employees": 1262
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.publicisgroupe.com",
+        "full_time_employees": 74229
     },
     "QS3.F": {
         "short_name": "SOLOCAL GROUP  EO 1,-",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Boulogne-Billancourt"
+        "state": null,
+        "city": "Boulogne-Billancourt",
+        "zipcode": "92100",
+        "website": "http://www.solocal.com",
+        "full_time_employees": 2404
     },
     "RFX.SG": {
         "short_name": "PRISMAFLEX INTERNATIONAL S.A. A",
@@ -33,6 +41,10 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "France",
-        "city": "Haute-Rivoire"
+        "state": null,
+        "city": "Haute-Rivoire",
+        "zipcode": "69610",
+        "website": "http://www.prismaflex.com",
+        "full_time_employees": 379
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Gatwick"
+        "state": null,
+        "city": "Gatwick",
+        "zipcode": "RH6 0PA",
+        "website": "http://www.airpartner.com",
+        "full_time_employees": 450
     },
     "B3N.F": {
         "short_name": "MENZIES PLC -JOHN- LS-,25",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "Edinburgh"
+        "state": null,
+        "city": "Edinburgh",
+        "zipcode": "EH12 9DJ",
+        "website": "http://www.menziesaviation.com",
+        "full_time_employees": 23986
     },
     "BBAVF": {
         "short_name": "SIGNATURE AVIATION PLC",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W1U 1QY",
+        "website": "http://www.signatureaviation.com",
+        "full_time_employees": null
     },
     "BBAVY": {
         "short_name": "SIGNATURE AVIATION PLC UNSPON A",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W1U 1QY",
+        "website": "http://www.signatureaviation.com",
+        "full_time_employees": null
     },
     "GMAA.L": {
         "short_name": "GAMA AVIATION PLC ORD 1P",
@@ -57,7 +73,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Farnborough"
+        "state": null,
+        "city": "Farnborough",
+        "zipcode": "GU14 6FE",
+        "website": "http://www.gamaaviation.com",
+        "full_time_employees": 780
     },
     "MNZS.L": {
         "short_name": "MENZIES(JOHN) PLC ORD 25P",
@@ -69,7 +89,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Edinburgh"
+        "state": null,
+        "city": "Edinburgh",
+        "zipcode": "EH12 9DJ",
+        "website": "http://www.menziesaviation.com",
+        "full_time_employees": 23986
     },
     "SIG.L": {
         "short_name": "SIGNATURE AVIATION PLC ORD 37 1",
@@ -81,6 +105,10 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W1U 1QY",
+        "website": "http://www.signatureaviation.com",
+        "full_time_employees": null
     }
 }

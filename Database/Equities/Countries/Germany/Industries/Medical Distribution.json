@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Germany",
-        "city": "Stuttgart"
+        "state": null,
+        "city": "Stuttgart",
+        "zipcode": "70137",
+        "website": "http://www.mckesson.eu/mck-en",
+        "full_time_employees": 26329
     },
     "CLS1.HM": {
         "short_name": "MCKESSON EUROPE  NA O.N.",
@@ -21,7 +25,11 @@
         "exchange": "HAM",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Stuttgart"
+        "state": null,
+        "city": "Stuttgart",
+        "zipcode": "70137",
+        "website": "http://www.mckesson.eu/mck-en",
+        "full_time_employees": 26329
     },
     "ILM1.DE": {
         "short_name": "MEDIOS AG  O.N.",
@@ -33,7 +41,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Berlin"
+        "state": null,
+        "city": "Berlin",
+        "zipcode": "10557",
+        "website": "http://www.medios.ag",
+        "full_time_employees": 187
     },
     "ILM1.F": {
         "short_name": "MEDIOS AG  O.N.",
@@ -45,6 +57,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Berlin"
+        "state": null,
+        "city": "Berlin",
+        "zipcode": "10557",
+        "website": "http://www.medios.ag",
+        "full_time_employees": 187
     }
 }

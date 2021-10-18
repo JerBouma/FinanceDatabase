@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Yakum"
+        "state": null,
+        "city": "Yakum",
+        "zipcode": "6097200",
+        "website": "http://www.doralon.co.il",
+        "full_time_employees": 3185
     },
     "OILRF": {
         "short_name": "OIL REFINERIES LTD",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Haifa"
+        "state": null,
+        "city": "Haifa",
+        "zipcode": "3100001",
+        "website": "http://www.orl.co.il",
+        "full_time_employees": 1437
     },
     "ORL.TA": {
         "short_name": "OIL REFINERIES LTD",
@@ -33,7 +41,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Haifa"
+        "state": null,
+        "city": "Haifa",
+        "zipcode": "3100001",
+        "website": "http://www.orl.co.il",
+        "full_time_employees": 1437
     },
     "PZOL.TA": {
         "short_name": "PAZ OIL CO LTD",
@@ -45,6 +57,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Yakum"
+        "state": null,
+        "city": "Yakum",
+        "zipcode": "60972",
+        "website": "http://www.paz.co.il",
+        "full_time_employees": 3852
     }
 }

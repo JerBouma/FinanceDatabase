@@ -9,7 +9,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Las Condes"
+        "state": null,
+        "city": "Las Condes",
+        "zipcode": null,
+        "website": "http://www.cap.cl",
+        "full_time_employees": null
     },
     "CINTAC.SN": {
         "short_name": "CINTAC SA",
@@ -21,7 +25,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Maip\u00c3\u00ba"
+        "state": null,
+        "city": "Maip\u00c3\u00ba",
+        "zipcode": null,
+        "website": "http://www.cintac.cl",
+        "full_time_employees": null
     },
     "ELECMETAL.SN": {
         "short_name": "ELECTRO METALURGIC",
@@ -33,7 +41,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago"
+        "state": null,
+        "city": "Santiago",
+        "zipcode": null,
+        "website": "http://www.me-elecmetal.com",
+        "full_time_employees": 3138
     },
     "INVERCAP.SN": {
         "short_name": "INVERCAP SA",
@@ -45,6 +57,10 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago de Chile"
+        "state": null,
+        "city": "Santiago de Chile",
+        "zipcode": null,
+        "website": "http://www.invercap.cl",
+        "full_time_employees": null
     }
 }

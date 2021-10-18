@@ -9,7 +9,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Colchester"
+        "state": null,
+        "city": "Colchester",
+        "zipcode": "CO4 9WN",
+        "website": "http://www.gocct.com",
+        "full_time_employees": null
     },
     "QXT.L": {
         "short_name": "QUIXANT PLC ORD 0.1P",
@@ -21,7 +25,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Cambridge"
+        "state": null,
+        "city": "Cambridge",
+        "zipcode": "CB21 4EP",
+        "website": "http://www.quixant.com",
+        "full_time_employees": 209
     },
     "TST.L": {
         "short_name": "TOUCHSTAR PLC ORD 5P",
@@ -33,6 +41,10 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Manchester"
+        "state": null,
+        "city": "Manchester",
+        "zipcode": "M17 1HW",
+        "website": "http://www.touchstarplc.com",
+        "full_time_employees": null
     }
 }

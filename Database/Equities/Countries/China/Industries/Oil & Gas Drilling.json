@@ -9,7 +9,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Karamay"
+        "state": null,
+        "city": "Karamay",
+        "zipcode": "834009",
+        "website": "http://www.beiken.com",
+        "full_time_employees": 1311
     },
     "1033.HK": {
         "short_name": "SINOPEC SSC",
@@ -21,7 +25,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100728",
+        "website": "http://ssc.sinopec.com",
+        "full_time_employees": 71736
     },
     "YIZH.F": {
         "short_name": "SINOPEC OILF. SERV. YC 1",
@@ -33,6 +41,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100728",
+        "website": "http://ssc.sinopec.com",
+        "full_time_employees": 71736
     }
 }

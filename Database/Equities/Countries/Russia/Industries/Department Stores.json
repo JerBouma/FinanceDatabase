@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Russia",
-        "city": "Saint Petersburg"
+        "state": null,
+        "city": "Saint Petersburg",
+        "zipcode": "197374",
+        "website": "http://www.lentainvestor.com",
+        "full_time_employees": 50000
     },
     "DSKY.ME": {
         "short_name": "DETSKY MIR PUBLIC",
@@ -21,7 +25,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "127238",
+        "website": "http://www.detmir.ru",
+        "full_time_employees": null
     },
     "LNTA.ME": {
         "short_name": "LENTA IPJSC",
@@ -33,7 +41,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Saint Petersburg"
+        "state": null,
+        "city": "Saint Petersburg",
+        "zipcode": "197374",
+        "website": "http://www.lentainvestor.com",
+        "full_time_employees": 50000
     },
     "LNTA.VI": {
         "short_name": "LENTA GDR",
@@ -45,6 +57,10 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Russia",
-        "city": "Saint Petersburg"
+        "state": null,
+        "city": "Saint Petersburg",
+        "zipcode": "197374",
+        "website": "http://www.lentainvestor.com",
+        "full_time_employees": 50000
     }
 }

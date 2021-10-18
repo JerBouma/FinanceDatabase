@@ -9,7 +9,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "United States",
-        "city": "Saint Louis"
+        "state": "MO",
+        "city": "Saint Louis",
+        "zipcode": "63017",
+        "website": "http://www.bunge.com",
+        "full_time_employees": 23000
     },
     "UMAM": {
         "short_name": "UMAMI SUSTAINABLE SEAFOOD INC",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "San Diego"
+        "state": "CA",
+        "city": "San Diego",
+        "zipcode": "92101",
+        "website": null,
+        "full_time_employees": 512
     },
     "WFCF": {
         "short_name": "Where Food Comes From, Inc.",
@@ -33,6 +41,10 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Castle Rock"
+        "state": "CO",
+        "city": "Castle Rock",
+        "zipcode": "80104",
+        "website": "http://wherefoodcomesfrom.com",
+        "full_time_employees": 60
     }
 }

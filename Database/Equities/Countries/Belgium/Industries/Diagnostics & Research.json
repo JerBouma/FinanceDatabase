@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Mechelen"
+        "state": null,
+        "city": "Mechelen",
+        "zipcode": "2800",
+        "website": "http://www.biocartis.com",
+        "full_time_employees": 484
     },
     "BCART.BR": {
         "short_name": "BIOCARTIS",
@@ -21,7 +25,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Mechelen"
+        "state": null,
+        "city": "Mechelen",
+        "zipcode": "2800",
+        "website": "http://www.biocartis.com",
+        "full_time_employees": 484
     },
     "MDXH.BR": {
         "short_name": "MDXHEALTH",
@@ -33,7 +41,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Herstal"
+        "state": null,
+        "city": "Herstal",
+        "zipcode": "4040",
+        "website": "http://mdxhealth.com",
+        "full_time_employees": null
     },
     "MXDHF": {
         "short_name": "MDXHEALTH",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Belgium",
-        "city": "Herstal"
+        "state": null,
+        "city": "Herstal",
+        "zipcode": "4040",
+        "website": "http://mdxhealth.com",
+        "full_time_employees": null
     },
     "O6C.F": {
         "short_name": "MDXHEALTH S.A.",
@@ -57,6 +73,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Herstal"
+        "state": null,
+        "city": "Herstal",
+        "zipcode": "4040",
+        "website": "http://mdxhealth.com",
+        "full_time_employees": null
     }
 }

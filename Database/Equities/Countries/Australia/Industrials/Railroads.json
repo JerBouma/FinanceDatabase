@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Fortitude Valley"
+        "state": "QLD",
+        "city": "Fortitude Valley",
+        "zipcode": "4006",
+        "website": "http://www.aurizon.com.au",
+        "full_time_employees": 4840
     },
     "EGN.AX": {
         "short_name": "ENGENCO FPO",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3000",
+        "website": "http://www.engenco.com.au",
+        "full_time_employees": 500
     },
     "QRL.F": {
         "short_name": "AURIZON HLDGS LTD",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Fortitude Valley"
+        "state": "QLD",
+        "city": "Fortitude Valley",
+        "zipcode": "4006",
+        "website": "http://www.aurizon.com.au",
+        "full_time_employees": 4840
     },
     "QRNNF": {
         "short_name": "AURIZON HOLDINGS LIMITED",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Fortitude Valley"
+        "state": "QLD",
+        "city": "Fortitude Valley",
+        "zipcode": "4006",
+        "website": "http://www.aurizon.com.au",
+        "full_time_employees": 4840
     },
     "TTI.AX": {
         "short_name": "TRAFFIC FPO",
@@ -57,6 +73,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Eltham"
+        "state": "VIC",
+        "city": "Eltham",
+        "zipcode": "3095",
+        "website": "http://www.trafficltd.com.au",
+        "full_time_employees": null
     }
 }

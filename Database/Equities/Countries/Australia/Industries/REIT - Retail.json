@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3000",
+        "website": "http://apngroup.com.au/fund/apn-convenience-retail-reit/",
+        "full_time_employees": null
     },
     "AVN.AX": {
         "short_name": "AVENTUS STAPLED",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.aventusgroup.com.au",
+        "full_time_employees": 60
     },
     "CDP.AX": {
         "short_name": "CARINDALE UNIT",
@@ -33,7 +41,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.carindalepropertytrust.com.au",
+        "full_time_employees": null
     },
     "CNRAF": {
         "short_name": "VICINITY CENTRES",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Chadstone"
+        "state": "VIC",
+        "city": "Chadstone",
+        "zipcode": "3148",
+        "website": "http://www.vicinity.com.au",
+        "full_time_employees": null
     },
     "CQR.AX": {
         "short_name": "CHRETAILRT UNIT",
@@ -57,7 +73,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.charterhall.com.au/investments/funds/charter-hall-retail-reit",
+        "full_time_employees": null
     },
     "HDN.AX": {
         "short_name": "HOMECO DNR UNITS",
@@ -69,7 +89,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2028",
+        "website": "http://www.home-co.com.au",
+        "full_time_employees": null
     },
     "SCG.AX": {
         "short_name": "SCENTRE STAPLED",
@@ -81,7 +105,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.scentregroup.com",
+        "full_time_employees": 2427
     },
     "SCP.AX": {
         "short_name": "SHOPCENAUS STAPLED",
@@ -93,7 +121,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.scaproperty.com.au",
+        "full_time_employees": null
     },
     "STGPF": {
         "short_name": "SCENTRE GROUP LIMITED",
@@ -105,7 +137,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.scentregroup.com",
+        "full_time_employees": 2427
     },
     "VCX.AX": {
         "short_name": "VICINITY STAPLED",
@@ -117,6 +153,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Chadstone"
+        "state": "VIC",
+        "city": "Chadstone",
+        "zipcode": "3148",
+        "website": "http://www.vicinity.com.au",
+        "full_time_employees": null
     }
 }

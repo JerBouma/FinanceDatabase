@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stocksund"
+        "state": null,
+        "city": "Stocksund",
+        "zipcode": "182 76",
+        "website": "http://www.atvexa.se",
+        "full_time_employees": 3700
     },
     "ACAD.ST": {
         "short_name": "AcadeMedia AB",
@@ -21,7 +25,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "101 24",
+        "website": "http://www.academedia.se",
+        "full_time_employees": 17600
     },
     "ATVEXA-B.ST": {
         "short_name": "Atvexa AB ser. B",
@@ -33,7 +41,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stocksund"
+        "state": null,
+        "city": "Stocksund",
+        "zipcode": "182 76",
+        "website": "http://www.atvexa.se",
+        "full_time_employees": 3700
     },
     "TELLUS.ST": {
         "short_name": "Tellusgruppen AB",
@@ -45,7 +57,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "111 61",
+        "website": "http://www.tellusgruppen.se",
+        "full_time_employees": null
     },
     "V8T.F": {
         "short_name": "ACADEMEDIA AB",
@@ -57,6 +73,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "101 24",
+        "website": "http://www.academedia.se",
+        "full_time_employees": 17600
     }
 }

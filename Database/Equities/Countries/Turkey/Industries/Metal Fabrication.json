@@ -9,7 +9,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Bursa"
+        "state": null,
+        "city": "Bursa",
+        "zipcode": "16140",
+        "website": "http://www.burcelikvana.com",
+        "full_time_employees": 17
     },
     "CELHA.IS": {
         "short_name": "CELIK HALAT",
@@ -21,7 +25,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Izmit"
+        "state": null,
+        "city": "Izmit",
+        "zipcode": "41180",
+        "website": "http://www.celikhalat.com.tr",
+        "full_time_employees": 403
     },
     "CEMAS.IS": {
         "short_name": "CEMAS DOKUM",
@@ -33,7 +41,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Kirsehir"
+        "state": null,
+        "city": "Kirsehir",
+        "zipcode": "40100",
+        "website": "http://www.cemas.com.tr",
+        "full_time_employees": 413
     },
     "ERBOS.IS": {
         "short_name": "ERBOSAN",
@@ -45,7 +57,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Kayseri"
+        "state": null,
+        "city": "Kayseri",
+        "zipcode": "38002",
+        "website": "http://www.erbosan.com.tr",
+        "full_time_employees": 314
     },
     "TUCLK.IS": {
         "short_name": "TUGCELIK",
@@ -57,6 +73,10 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": null,
+        "website": "http://www.tugcelik.com.tr",
+        "full_time_employees": 291
     }
 }

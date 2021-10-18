@@ -9,7 +9,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Central"
+        "state": null,
+        "city": "Central",
+        "zipcode": null,
+        "website": "http://www.hkex.com.hk",
+        "full_time_employees": 2204
     },
     "3807.T": {
         "short_name": "FISCO LTD",
@@ -21,7 +25,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": null,
+        "website": "http://www.fisco.co.jp",
+        "full_time_employees": 45
     },
     "601519.SS": {
         "short_name": "SHANGHAI GREAT WISDOM CO LTD.",
@@ -33,7 +41,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": "200127",
+        "website": "http://www.gw.com.cn",
+        "full_time_employees": 980
     },
     "9TX.F": {
         "short_name": "TMX GROUP LTD",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5H 1S3",
+        "website": "http://www.tmx.com",
+        "full_time_employees": 1383
     },
     "AQX.L": {
         "short_name": "AQUIS EXCHANGE PLC ORD 10P",
@@ -57,7 +73,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "EC3V 3QQ",
+        "website": "http://www.aquis.eu",
+        "full_time_employees": 46
     },
     "ASX.AX": {
         "short_name": "ASX FPO",
@@ -69,7 +89,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.asx.com.au",
+        "full_time_employees": 737
     },
     "ASXFF": {
         "short_name": "ASX LTD",
@@ -81,7 +105,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.asx.com.au",
+        "full_time_employees": 737
     },
     "ASXFY": {
         "short_name": "ASX LTD",
@@ -93,7 +121,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.asx.com.au",
+        "full_time_employees": 737
     },
     "AUX1.F": {
         "short_name": "ASX LTD UNSPONS.ADR 1",
@@ -105,7 +137,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.asx.com.au",
+        "full_time_employees": 737
     },
     "B3SA3.SA": {
         "short_name": "B3          ON      NM",
@@ -117,7 +153,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
+        "state": "SP",
+        "city": "S\u00c3\u00a3o Paulo",
+        "zipcode": "18970-020",
+        "website": "http://www.b3.com.br",
+        "full_time_employees": null
     },
     "BC51.F": {
         "short_name": "B.MEXICANA DE VAL.CL.A ON",
@@ -129,7 +169,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Mexico",
-        "city": "Mexico City"
+        "state": "DF",
+        "city": "Mexico City",
+        "zipcode": "06500",
+        "website": "http://www.bmv.com.mx",
+        "full_time_employees": null
     },
     "BOLSAA.MX": {
         "short_name": "BOLSA MEXICANA DE VALORES SAB D",
@@ -141,7 +185,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Mexico",
-        "city": "Mexico City"
+        "state": "DF",
+        "city": "Mexico City",
+        "zipcode": "06500",
+        "website": "http://www.bmv.com.mx",
+        "full_time_employees": null
     },
     "BOLSASTGO.SN": {
         "short_name": "BOLSA DE COMERCIO",
@@ -153,7 +201,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago"
+        "state": null,
+        "city": "Santiago",
+        "zipcode": null,
+        "website": "http://www.bolsadesantiago.com",
+        "full_time_employees": null
     },
     "BOLSY": {
         "short_name": "B3 SA - BRASIL  BOLSA  BALCAO U",
@@ -165,7 +217,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
+        "state": "SP",
+        "city": "S\u00c3\u00a3o Paulo",
+        "zipcode": "18970-020",
+        "website": "http://www.b3.com.br",
+        "full_time_employees": null
     },
     "BSE.NS": {
         "short_name": "BSE LIMITED",
@@ -177,7 +233,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400001",
+        "website": "http://www.bseindia.com",
+        "full_time_employees": 516
     },
     "C1BO34.SA": {
         "short_name": "CBOE GLOBAL DRN",
@@ -189,7 +249,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60605-1023",
+        "website": "http://www.cboe.com",
+        "full_time_employees": 1010
     },
     "C67.F": {
         "short_name": "CBOE GLOB.MKTS INC.DL-,01",
@@ -201,7 +265,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60605-1023",
+        "website": "http://www.cboe.com",
+        "full_time_employees": 1010
     },
     "CARERATING.NS": {
         "short_name": "CARE RATINGS LTD",
@@ -213,7 +281,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400022",
+        "website": "http://www.careratings.com",
+        "full_time_employees": 646
     },
     "CBOE": {
         "short_name": "Cboe Global Markets, Inc.",
@@ -225,7 +297,11 @@
         "exchange": "BTS",
         "market": "us_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60605-1023",
+        "website": "http://www.cboe.com",
+        "full_time_employees": 1010
     },
     "CERV.MI": {
         "short_name": "CERVED GROUP",
@@ -237,7 +313,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20097",
+        "website": "http://company.cerved.com",
+        "full_time_employees": 2656
     },
     "CHME34.SA": {
         "short_name": "CME GROUP   DRN",
@@ -249,7 +329,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60606",
+        "website": "http://www.cmegroup.com",
+        "full_time_employees": 4370
     },
     "CME.MX": {
         "short_name": "CME GROUP INC",
@@ -261,7 +345,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60606",
+        "website": "http://www.cmegroup.com",
+        "full_time_employees": 4370
     },
     "CME": {
         "short_name": "CME Group Inc.",
@@ -273,7 +361,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60606",
+        "website": "http://www.cmegroup.com",
+        "full_time_employees": 4370
     },
     "CMEG.VI": {
         "short_name": "CME GROUP INC",
@@ -285,7 +377,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60606",
+        "website": "http://www.cmegroup.com",
+        "full_time_employees": 4370
     },
     "CRISIL.NS": {
         "short_name": "CRISIL LTD",
@@ -297,7 +393,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400076",
+        "website": "http://www.crisil.com",
+        "full_time_employees": 3670
     },
     "CV7.F": {
         "short_name": "CERVED GROUP S.P.A.",
@@ -309,7 +409,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20097",
+        "website": "http://company.cerved.com",
+        "full_time_employees": 2656
     },
     "DB1.DE": {
         "short_name": "DEUTSCHE BOERSE NA O.N.",
@@ -321,7 +425,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Eschborn"
+        "state": null,
+        "city": "Eschborn",
+        "zipcode": "65760",
+        "website": "http://www.deutsche-boerse.com",
+        "full_time_employees": 6523
     },
     "DB1.F": {
         "short_name": "DEUTSCHE BOERSE NA O.N.",
@@ -333,7 +441,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Eschborn"
+        "state": null,
+        "city": "Eschborn",
+        "zipcode": "65760",
+        "website": "http://www.deutsche-boerse.com",
+        "full_time_employees": 6523
     },
     "DB1.MI": {
         "short_name": "DEUTSCHE BOERSE",
@@ -345,7 +457,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Germany",
-        "city": "Eschborn"
+        "state": null,
+        "city": "Eschborn",
+        "zipcode": "65760",
+        "website": "http://www.deutsche-boerse.com",
+        "full_time_employees": 6523
     },
     "DBO.VI": {
         "short_name": "DEUTSCHE BOERSE NA",
@@ -357,7 +473,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Germany",
-        "city": "Eschborn"
+        "state": null,
+        "city": "Eschborn",
+        "zipcode": "65760",
+        "website": "http://www.deutsche-boerse.com",
+        "full_time_employees": 6523
     },
     "DBOEF": {
         "short_name": "DEUTSCHE BOERSE AG",
@@ -369,7 +489,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Germany",
-        "city": "Eschborn"
+        "state": null,
+        "city": "Eschborn",
+        "zipcode": "65760",
+        "website": "http://www.deutsche-boerse.com",
+        "full_time_employees": 6523
     },
     "DBOEY": {
         "short_name": "DEUTSCHE BOERSE AG",
@@ -381,7 +505,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Germany",
-        "city": "Eschborn"
+        "state": null,
+        "city": "Eschborn",
+        "zipcode": "65760",
+        "website": "http://www.deutsche-boerse.com",
+        "full_time_employees": 6523
     },
     "DUT.F": {
         "short_name": "MOODY'S CORP  DL-,01",
@@ -393,7 +521,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10007",
+        "website": "http://www.moodys.com",
+        "full_time_employees": 11558
     },
     "ENX.PA": {
         "short_name": "EURONEXT",
@@ -405,7 +537,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1012 JW",
+        "website": "http://www.euronext.com",
+        "full_time_employees": 1405
     },
     "ENX.VI": {
         "short_name": "EURONEXT NV",
@@ -417,7 +553,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1012 JW",
+        "website": "http://www.euronext.com",
+        "full_time_employees": 1405
     },
     "ENXB.F": {
         "short_name": "EURONEXT N.V. WI EO 1,60",
@@ -429,7 +569,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1012 JW",
+        "website": "http://www.euronext.com",
+        "full_time_employees": 1405
     },
     "ERM.L": {
         "short_name": "EUROMONEY INSTITUTIONAL INVESTO",
@@ -441,7 +585,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "EC4Y 8AX",
+        "website": "http://www.euromoneyplc.com",
+        "full_time_employees": 2420
     },
     "ERNXY": {
         "short_name": "EURONEXT",
@@ -453,7 +601,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1012 JW",
+        "website": "http://www.euronext.com",
+        "full_time_employees": 1405
     },
     "EUM.F": {
         "short_name": "EUROMONEY INST.INV.",
@@ -465,7 +617,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "EC4Y 8AX",
+        "website": "http://www.euromoneyplc.com",
+        "full_time_employees": 2420
     },
     "EUX.F": {
         "short_name": "EUWAX AG O.N.",
@@ -477,7 +633,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Stuttgart"
+        "state": null,
+        "city": "Stuttgart",
+        "zipcode": "70174",
+        "website": "http://www.euwax-ag.de",
+        "full_time_employees": 65
     },
     "EUXTF": {
         "short_name": "EURONEXT",
@@ -489,7 +649,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1012 JW",
+        "website": "http://www.euronext.com",
+        "full_time_employees": 1405
     },
     "FA1.F": {
         "short_name": "FACTSET RESH SYS  DL-,01",
@@ -501,7 +665,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Norwalk"
+        "state": "CT",
+        "city": "Norwalk",
+        "zipcode": "06850",
+        "website": "http://www.factset.com",
+        "full_time_employees": 10660
     },
     "FDS": {
         "short_name": "FactSet Research Systems Inc.",
@@ -513,7 +681,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Norwalk"
+        "state": "CT",
+        "city": "Norwalk",
+        "zipcode": "06850",
+        "website": "http://www.factset.com",
+        "full_time_employees": 10660
     },
     "GLBR": {
         "short_name": "Global Brokerage, Inc.",
@@ -525,7 +697,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10041",
+        "website": "http://ir.globalbrokerage.info",
+        "full_time_employees": null
     },
     "HEE.F": {
         "short_name": "HELLEN.EX.-ATHENS ST. NA.",
@@ -537,7 +713,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "104 42",
+        "website": "http://www.athexgroup.gr",
+        "full_time_employees": 230
     },
     "HEHSF": {
         "short_name": "HELLENIC EXCHANGES ATHENS ST EX",
@@ -549,7 +729,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "104 42",
+        "website": "http://www.athexgroup.gr",
+        "full_time_employees": 230
     },
     "HEXEY": {
         "short_name": "HELLENIC EXCHANGES ATHENS ST EX",
@@ -561,7 +745,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "104 42",
+        "website": "http://www.athexgroup.gr",
+        "full_time_employees": 230
     },
     "HK2C.F": {
         "short_name": "HONGKONG EXCH. (BL 100)",
@@ -573,7 +761,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Hong Kong",
-        "city": "Central"
+        "state": null,
+        "city": "Central",
+        "zipcode": null,
+        "website": "http://www.hkex.com.hk",
+        "full_time_employees": 2204
     },
     "HKXCF": {
         "short_name": "HONG KONG EXCHANGES & CLEARING",
@@ -585,7 +777,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Hong Kong",
-        "city": "Central"
+        "state": null,
+        "city": "Central",
+        "zipcode": null,
+        "website": "http://www.hkex.com.hk",
+        "full_time_employees": 2204
     },
     "HKXCY": {
         "short_name": "HONG KONG EXCHANGES & CLEARING",
@@ -597,7 +793,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Hong Kong",
-        "city": "Central"
+        "state": null,
+        "city": "Central",
+        "zipcode": null,
+        "website": "http://www.hkex.com.hk",
+        "full_time_employees": 2204
     },
     "HSRN.HM": {
         "short_name": "HELVETICST.H.AG NA.SF5,75",
@@ -609,7 +809,11 @@
         "exchange": "HAM",
         "market": "dr_market",
         "country": "Switzerland",
-        "city": "Bern"
+        "state": null,
+        "city": "Bern",
+        "zipcode": "3063",
+        "website": "http://buchmannmedienservice.ch/bmsclient/helveticstar/pages/holding/holding_home.html",
+        "full_time_employees": null
     },
     "IC2.DE": {
         "short_name": "INTERCONTINENTAL EXCH.INC",
@@ -621,7 +825,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "United States",
-        "city": "Atlanta"
+        "state": "GA",
+        "city": "Atlanta",
+        "zipcode": "30328",
+        "website": "http://www.intercontinentalexchange.com",
+        "full_time_employees": 8964
     },
     "IC2.F": {
         "short_name": "INTERCONTINENTAL EXCH.INC",
@@ -633,7 +841,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Atlanta"
+        "state": "GA",
+        "city": "Atlanta",
+        "zipcode": "30328",
+        "website": "http://www.intercontinentalexchange.com",
+        "full_time_employees": 8964
     },
     "ICE.MX": {
         "short_name": "INTERCONTINENTAL EXCHANGE INC",
@@ -645,7 +857,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "Atlanta"
+        "state": "GA",
+        "city": "Atlanta",
+        "zipcode": "30328",
+        "website": "http://www.intercontinentalexchange.com",
+        "full_time_employees": 8964
     },
     "ICE": {
         "short_name": "Intercontinental Exchange Inc.",
@@ -657,7 +873,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Atlanta"
+        "state": "GA",
+        "city": "Atlanta",
+        "zipcode": "30328",
+        "website": "http://www.intercontinentalexchange.com",
+        "full_time_employees": 8964
     },
     "ICEI.VI": {
         "short_name": "INTERCONTINENTAL EXCHANGE INC",
@@ -669,7 +889,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "United States",
-        "city": "Atlanta"
+        "state": "GA",
+        "city": "Atlanta",
+        "zipcode": "30328",
+        "website": "http://www.intercontinentalexchange.com",
+        "full_time_employees": 8964
     },
     "ICRA.NS": {
         "short_name": "ICRA LTD",
@@ -681,7 +905,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Gurugram"
+        "state": null,
+        "city": "Gurugram",
+        "zipcode": "122002",
+        "website": "http://www.icra.in",
+        "full_time_employees": null
     },
     "JPXGY": {
         "short_name": "JAPAN EXCHANGE GROUP",
@@ -693,7 +921,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "103-8224",
+        "website": "http://www.jpx.co.jp",
+        "full_time_employees": null
     },
     "JSE.JO": {
         "short_name": "JSE Ltd",
@@ -705,7 +937,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Sandown"
+        "state": null,
+        "city": "Sandown",
+        "zipcode": "2196",
+        "website": "http://www.jse.co.za",
+        "full_time_employees": null
     },
     "JSEJF": {
         "short_name": "JSE LIMITED",
@@ -717,7 +953,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "South Africa",
-        "city": "Sandown"
+        "state": null,
+        "city": "Sandown",
+        "zipcode": "2196",
+        "website": "http://www.jse.co.za",
+        "full_time_employees": null
     },
     "LDNXF": {
         "short_name": "LONDON STOCK EXCHANGE GROUP",
@@ -729,7 +969,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "EC4M 7LS",
+        "website": "http://www.lseg.com",
+        "full_time_employees": 5554
     },
     "LNSTY": {
         "short_name": "LONDON STOCK EXCHANGE GROUP",
@@ -741,7 +985,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "EC4M 7LS",
+        "website": "http://www.lseg.com",
+        "full_time_employees": 5554
     },
     "LS4C.F": {
         "short_name": "LONDON STOCK EXCHANGE",
@@ -753,7 +1001,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "EC4M 7LS",
+        "website": "http://www.lseg.com",
+        "full_time_employees": 5554
     },
     "LS4D.F": {
         "short_name": "LONDON ST.EX.UNSP.ADRS1/2",
@@ -765,7 +1017,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "EC4M 7LS",
+        "website": "http://www.lseg.com",
+        "full_time_employees": 5554
     },
     "LSEG.L": {
         "short_name": "LONDON STOCK EXCHANGE GROUP PLC",
@@ -777,7 +1033,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "EC4M 7LS",
+        "website": "http://www.lseg.com",
+        "full_time_employees": 5554
     },
     "M1SC34.SA": {
         "short_name": "MSCI INC    DRN",
@@ -789,7 +1049,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10007",
+        "website": "http://www.msci.com",
+        "full_time_employees": 3728
     },
     "MCO.MX": {
         "short_name": "MOODYS CORP",
@@ -801,7 +1065,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10007",
+        "website": "http://www.moodys.com",
+        "full_time_employees": 11558
     },
     "MCO": {
         "short_name": "Moody's Corporation",
@@ -813,7 +1081,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10007",
+        "website": "http://www.moodys.com",
+        "full_time_employees": 11558
     },
     "MCOR34.SA": {
         "short_name": "MOODYS CORP DRN",
@@ -825,7 +1097,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10007",
+        "website": "http://www.moodys.com",
+        "full_time_employees": 11558
     },
     "MCX.NS": {
         "short_name": "MULTI COMMODITY EX",
@@ -837,7 +1113,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400093",
+        "website": "http://www.mcxindia.com",
+        "full_time_employees": null
     },
     "MHL.F": {
         "short_name": "S+P GLOBAL INC.  DL 1",
@@ -849,7 +1129,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10041",
+        "website": "http://www.spglobal.com",
+        "full_time_employees": 23000
     },
     "MJP.F": {
         "short_name": "MORNINGSTAR JAPAN",
@@ -861,7 +1145,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "106-6015",
+        "website": "http://www.morningstar.co.jp",
+        "full_time_employees": null
     },
     "MLNMA.PA": {
         "short_name": "MIGUET ET ASSOCIES",
@@ -873,7 +1161,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Verneuil D'avre Et D'iton"
+        "state": null,
+        "city": "Verneuil D'avre Et D'iton",
+        "zipcode": "27130",
+        "website": "http://www.nicolas-miguet-et-associes.fr/",
+        "full_time_employees": null
     },
     "MOCO.VI": {
         "short_name": "MOODYS CORP",
@@ -885,7 +1177,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10007",
+        "website": "http://www.moodys.com",
+        "full_time_employees": 11558
     },
     "MOEX.ME": {
         "short_name": "MOSCOW EXCHANGE",
@@ -897,7 +1193,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "125009",
+        "website": "http://www.moex.com",
+        "full_time_employees": 1980
     },
     "MORN": {
         "short_name": "Morningstar, Inc.",
@@ -909,7 +1209,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60602",
+        "website": "http://www.morningstar.com",
+        "full_time_employees": 7979
     },
     "MRS.F": {
         "short_name": "MORNINGSTAR INC.  DL-,01",
@@ -921,7 +1225,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60602",
+        "website": "http://www.morningstar.com",
+        "full_time_employees": 8362
     },
     "MSCI.MX": {
         "short_name": "MSCI INC",
@@ -933,7 +1241,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10007",
+        "website": "http://www.msci.com",
+        "full_time_employees": 3728
     },
     "MSCI": {
         "short_name": "MSCI Inc",
@@ -945,7 +1257,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10007",
+        "website": "http://www.msci.com",
+        "full_time_employees": 3728
     },
     "MTR.BA": {
         "short_name": "MATBA ROFEX SA",
@@ -957,7 +1273,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Argentina",
-        "city": "Rosario"
+        "state": null,
+        "city": "Rosario",
+        "zipcode": "S2000CVO",
+        "website": "http://www.matbarofex.com.ar",
+        "full_time_employees": null
     },
     "MTRKS.IS": {
         "short_name": "MATRIKS BILGI DAGITIM",
@@ -969,7 +1289,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34381",
+        "website": "http://www.matriksdata.com",
+        "full_time_employees": null
     },
     "MX4A.DE": {
         "short_name": "CME GROUP INC.  DL-,01",
@@ -981,7 +1305,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60606",
+        "website": "http://www.cmegroup.com",
+        "full_time_employees": 4370
     },
     "MX4A.F": {
         "short_name": "CME GROUP INC.  DL-,01",
@@ -993,7 +1321,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60606",
+        "website": "http://www.cmegroup.com",
+        "full_time_employees": 4370
     },
     "N1DA34.SA": {
         "short_name": "NASDAQ INC  DRN",
@@ -1005,7 +1337,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10036",
+        "website": "http://www.nasdaq.com",
+        "full_time_employees": 4830
     },
     "NAQ.DE": {
         "short_name": "NASDAQ INC.  DL -,01",
@@ -1017,7 +1353,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10036",
+        "website": "http://www.nasdaq.com",
+        "full_time_employees": 4830
     },
     "NAQ.F": {
         "short_name": "NASDAQ INC.  DL -,01",
@@ -1029,7 +1369,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10036",
+        "website": "http://www.nasdaq.com",
+        "full_time_employees": 4830
     },
     "NDAQ.MX": {
         "short_name": "NASDAQ INC",
@@ -1041,7 +1385,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10036",
+        "website": "http://www.nasdaq.com",
+        "full_time_employees": 4830
     },
     "NDAQ": {
         "short_name": "Nasdaq, Inc.",
@@ -1053,7 +1401,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10036",
+        "website": "http://www.nasdaq.com",
+        "full_time_employees": 5585
     },
     "NDAQ.VI": {
         "short_name": "NASDAQ INC",
@@ -1065,7 +1417,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10036",
+        "website": "http://www.nasdaq.com",
+        "full_time_employees": 4830
     },
     "NSX.AX": {
         "short_name": "NSX LTD FPO",
@@ -1077,7 +1433,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.nsx.com.au",
+        "full_time_employees": null
     },
     "NZSTF": {
         "short_name": "NZX LIMITED",
@@ -1089,7 +1449,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "New Zealand",
-        "city": "Wellington"
+        "state": null,
+        "city": "Wellington",
+        "zipcode": "6011",
+        "website": "http://www.nzx.com",
+        "full_time_employees": 257
     },
     "NZX.NZ": {
         "short_name": "NZX Limited Ordinary Shares",
@@ -1101,7 +1465,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Wellington"
+        "state": null,
+        "city": "Wellington",
+        "zipcode": "6011",
+        "website": "http://www.nzx.com",
+        "full_time_employees": 257
     },
     "OSCUF": {
         "short_name": "JAPAN EXCHANGE GROUP",
@@ -1113,7 +1481,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "103-8224",
+        "website": "http://www.jpx.co.jp",
+        "full_time_employees": null
     },
     "OSKU.F": {
         "short_name": "JAPAN EX UN.ADR 1/2 O.N.",
@@ -1125,7 +1497,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "103-8224",
+        "website": "http://www.jpx.co.jp",
+        "full_time_employees": null
     },
     "OTCM": {
         "short_name": "OTC MARKETS GROUP INC",
@@ -1137,7 +1513,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10282",
+        "website": "http://www.otcmarkets.com",
+        "full_time_employees": 102
     },
     "QMCI": {
         "short_name": "QUOTEMEDIA INC",
@@ -1149,7 +1529,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Fountain Hills"
+        "state": "AZ",
+        "city": "Fountain Hills",
+        "zipcode": "85268",
+        "website": "http://www.quotemedia.com",
+        "full_time_employees": 85
     },
     "S68.SI": {
         "short_name": "SGX",
@@ -1161,7 +1545,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "068804",
+        "website": "http://www.sgx.com",
+        "full_time_employees": 968
     },
     "SOU.F": {
         "short_name": "SINGAPORE EXCHANGE SD-,01",
@@ -1173,7 +1561,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "068804",
+        "website": "http://www.sgx.com",
+        "full_time_employees": 968
     },
     "SOUU.F": {
         "short_name": "SINGAPORE EX.UNSP.ADR/15",
@@ -1185,7 +1577,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "068804",
+        "website": "http://www.sgx.com",
+        "full_time_employees": 968
     },
     "SPGI.MX": {
         "short_name": "S&P GLOBAL INC",
@@ -1197,7 +1593,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10041",
+        "website": "http://www.spglobal.com",
+        "full_time_employees": 23000
     },
     "SPGI": {
         "short_name": "S&P Global Inc.",
@@ -1209,7 +1609,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10041",
+        "website": "http://www.spglobal.com",
+        "full_time_employees": 23000
     },
     "SPGI.VI": {
         "short_name": "S+P GLOBAL INC",
@@ -1221,7 +1625,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10041",
+        "website": "http://www.spglobal.com",
+        "full_time_employees": 23000
     },
     "SPGI34.SA": {
         "short_name": "SP GLOBAL   DRN",
@@ -1233,7 +1641,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10041",
+        "website": "http://www.spglobal.com",
+        "full_time_employees": 23000
     },
     "SPXCF": {
         "short_name": "SINGAPORE EXCHANGE",
@@ -1245,7 +1657,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "068804",
+        "website": "http://www.sgx.com",
+        "full_time_employees": 968
     },
     "SPXCY": {
         "short_name": "SINGAPORE EXCHANGE",
@@ -1257,7 +1673,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "068804",
+        "website": "http://www.sgx.com",
+        "full_time_employees": 968
     },
     "TASE.TA": {
         "short_name": "TEL AVIV STOCK EXC",
@@ -1269,7 +1689,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "6525216",
+        "website": "http://www.tase.co.il",
+        "full_time_employees": 250
     },
     "TCU.SI": {
         "short_name": "CreditBureauAsia",
@@ -1281,7 +1705,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "068809",
+        "website": "http://www.creditbureauasia.com",
+        "full_time_employees": null
     },
     "TMXXF": {
         "short_name": "TMX GROUP LIMITED",
@@ -1293,7 +1721,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5H 1S3",
+        "website": "http://www.tmx.com",
+        "full_time_employees": 1383
     },
     "VALO.BA": {
         "short_name": "GPO FINANC VALORES",
@@ -1305,7 +1737,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "C1041AAH",
+        "website": "http://www.byma.com.ar",
+        "full_time_employees": null
     },
     "VALU": {
         "short_name": "Value Line, Inc.",
@@ -1317,7 +1753,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10176-0001",
+        "website": "http://www.valueline.com",
+        "full_time_employees": 161
     },
     "X.TO": {
         "short_name": "TMX GROUP LIMITED",
@@ -1329,7 +1769,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5H 1S3",
+        "website": "http://www.tmx.com",
+        "full_time_employees": 1385
     },
     "XLTD": {
         "short_name": "EXCOIN LTD",
@@ -1341,6 +1785,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Oceanside"
+        "state": "NY",
+        "city": "Oceanside",
+        "zipcode": "11572",
+        "website": null,
+        "full_time_employees": 24
     }
 }

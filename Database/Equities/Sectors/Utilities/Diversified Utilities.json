@@ -9,7 +9,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Essen"
+        "state": null,
+        "city": "Essen",
+        "zipcode": "45131",
+        "website": "http://www.eon.com",
+        "full_time_employees": 71321
     },
     "EOANN.MX": {
         "short_name": "E.ON SE",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Germany",
-        "city": "Essen"
+        "state": null,
+        "city": "Essen",
+        "zipcode": "45131",
+        "website": "http://www.eon.com",
+        "full_time_employees": 71321
     },
     "ESLP": {
         "short_name": "EURO SOLAR PARKS INC",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Upper Saddle River"
+        "state": "NJ",
+        "city": "Upper Saddle River",
+        "zipcode": "07458",
+        "website": "http://www.eurosolarparks.com",
+        "full_time_employees": null
     },
     "FNRG": {
         "short_name": "FORCEFIELD ENERGY",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Coconut Creek"
+        "state": "FL",
+        "city": "Coconut Creek",
+        "zipcode": "33073",
+        "website": "http://www.forcefieldenergy.com",
+        "full_time_employees": 58
     },
     "IBEN.MX": {
         "short_name": "IBERDROLA SA",
@@ -57,7 +73,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Spain",
-        "city": "Bilbao"
+        "state": null,
+        "city": "Bilbao",
+        "zipcode": "48009",
+        "website": "http://www.iberdrola.com",
+        "full_time_employees": 35637
     },
     "JKSN.MX": {
         "short_name": "JINKOSOLAR HOLDING CO LTD",
@@ -69,7 +89,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "China",
-        "city": "Shangrao"
+        "state": null,
+        "city": "Shangrao",
+        "zipcode": "334100",
+        "website": "http://www.jinkosolar.com",
+        "full_time_employees": 24361
     },
     "RWEA.DE": {
         "short_name": "RWE AG  ADR 1",
@@ -81,7 +105,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Essen"
+        "state": null,
+        "city": "Essen",
+        "zipcode": "45141",
+        "website": "http://www.group.rwe/en",
+        "full_time_employees": 19244
     },
     "SOLN.MX": {
         "short_name": "RENESOLA LTD",
@@ -93,6 +121,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "Stamford"
+        "state": "CT",
+        "city": "Stamford",
+        "zipcode": "06902",
+        "website": "http://www.renesolapower.com",
+        "full_time_employees": 147
     }
 }

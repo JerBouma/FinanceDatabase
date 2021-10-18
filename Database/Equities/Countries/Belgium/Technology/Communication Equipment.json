@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "Belgium",
-        "city": "Anderlecht"
+        "state": null,
+        "city": "Anderlecht",
+        "zipcode": "1070",
+        "website": "http://www.audiovalley.com",
+        "full_time_employees": 100
     },
     "EVS.BR": {
         "short_name": "EVS BROADC.EQUIPM.",
@@ -21,7 +25,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Seraing"
+        "state": null,
+        "city": "Seraing",
+        "zipcode": "4102",
+        "website": "http://www.evs.com",
+        "full_time_employees": 550
     },
     "EVSBY": {
         "short_name": "EVS BROADCAST EQUIPMENT",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Belgium",
-        "city": "Seraing"
+        "state": null,
+        "city": "Seraing",
+        "zipcode": "4102",
+        "website": "http://www.evs.com",
+        "full_time_employees": 550
     },
     "OINA.F": {
         "short_name": "CRESCENT N.V. NOM.NOUV.",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Leuven"
+        "state": null,
+        "city": "Leuven",
+        "zipcode": "3001",
+        "website": "http://www.crescent-ventures.com",
+        "full_time_employees": 80
     },
     "OPTI.BR": {
         "short_name": "CRESCENT",
@@ -57,7 +73,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Leuven"
+        "state": null,
+        "city": "Leuven",
+        "zipcode": "3001",
+        "website": "http://www.crescent-ventures.com",
+        "full_time_employees": 80
     },
     "SSJA.SG": {
         "short_name": "Zenitel S.A. Parts Sociales Nom",
@@ -69,7 +89,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Zellik"
+        "state": null,
+        "city": "Zellik",
+        "zipcode": "1731",
+        "website": "http://www.zenitel.com",
+        "full_time_employees": 302
     },
     "ZENT.BR": {
         "short_name": "ZENITEL",
@@ -81,6 +105,10 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Zellik"
+        "state": null,
+        "city": "Zellik",
+        "zipcode": "1731",
+        "website": "http://www.zenitel.com",
+        "full_time_employees": 302
     }
 }

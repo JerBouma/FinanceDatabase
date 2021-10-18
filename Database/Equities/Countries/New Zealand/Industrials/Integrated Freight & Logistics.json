@@ -9,7 +9,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Penrose"
+        "state": null,
+        "city": "Penrose",
+        "zipcode": "DX CX10120",
+        "website": "http://www.freightways.co.nz",
+        "full_time_employees": 5000
     },
     "MFT.NZ": {
         "short_name": "Mainfreight Limited Ordinary Sh",
@@ -21,7 +25,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Auckland"
+        "state": null,
+        "city": "Auckland",
+        "zipcode": "1062",
+        "website": "http://www.mainfreight.com",
+        "full_time_employees": 8631
     },
     "TLL.NZ": {
         "short_name": "TIL Logistics Group Ltd Ordinar",
@@ -33,6 +41,10 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "New Plymouth"
+        "state": null,
+        "city": "New Plymouth",
+        "zipcode": "4342",
+        "website": "http://www.til.kiwi",
+        "full_time_employees": 1493
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100026",
+        "website": "http://www.relxtech.com",
+        "full_time_employees": 725
     },
     "6969.HK": {
         "short_name": "SMOORE INTL",
@@ -21,7 +25,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Shenzhen"
+        "state": null,
+        "city": "Shenzhen",
+        "zipcode": null,
+        "website": "http://www.smooreholdings.com",
+        "full_time_employees": 14273
     },
     "RLX": {
         "short_name": "RLX Technology Inc.",
@@ -33,7 +41,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100026",
+        "website": "http://www.relxtech.com",
+        "full_time_employees": 725
     },
     "SMORF": {
         "short_name": "SMOORE INTL HDGS LTD",
@@ -45,6 +57,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Shenzhen"
+        "state": null,
+        "city": "Shenzhen",
+        "zipcode": null,
+        "website": "http://www.smooreholdings.com",
+        "full_time_employees": 14273
     }
 }

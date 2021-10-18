@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "18",
+        "website": "http://www.dcc.ie",
+        "full_time_employees": 13200
     },
     "DCC.L": {
         "short_name": "DCC PLC ORD EUR0.25 (CDI)",
@@ -21,6 +25,10 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "18",
+        "website": "http://www.dcc.ie",
+        "full_time_employees": 13200
     }
 }

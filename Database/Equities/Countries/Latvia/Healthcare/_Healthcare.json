@@ -9,7 +9,11 @@
         "exchange": "RIS",
         "market": "rg_market",
         "country": "Latvia",
-        "city": "Riga"
+        "state": null,
+        "city": "Riga",
+        "zipcode": "1005",
+        "website": "http://www.ljmc.lv",
+        "full_time_employees": 330
     },
     "OLF1R.RG": {
         "short_name": "Olainfarm",
@@ -21,7 +25,11 @@
         "exchange": "RIS",
         "market": "rg_market",
         "country": "Latvia",
-        "city": "Olaine"
+        "state": null,
+        "city": "Olaine",
+        "zipcode": "2114",
+        "website": "http://lv.olainfarm.com",
+        "full_time_employees": 2191
     },
     "UOM.MU": {
         "short_name": "LATVIJAS JURAS MEDIC.LL 1",
@@ -33,7 +41,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Latvia",
-        "city": "Riga"
+        "state": null,
+        "city": "Riga",
+        "zipcode": "1005",
+        "website": "http://www.ljmc.lv",
+        "full_time_employees": 330
     },
     "UU4.F": {
         "short_name": "OLAINFARM",
@@ -45,6 +57,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Latvia",
-        "city": "Olaine"
+        "state": null,
+        "city": "Olaine",
+        "zipcode": "2114",
+        "website": "http://lv.olainfarm.com",
+        "full_time_employees": 2191
     }
 }

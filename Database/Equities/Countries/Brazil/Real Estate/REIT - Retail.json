@@ -9,7 +9,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Rio de Janeiro"
+        "state": null,
+        "city": "Rio de Janeiro",
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "HGBS11.SA": {
         "short_name": "FII HEDGEBS CI  ER",
@@ -21,6 +25,10 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Sao Paulo"
+        "state": "SP",
+        "city": "Sao Paulo",
+        "zipcode": "1830",
+        "website": "http://www.cshg.com.br/site/publico/imob/imob2.seam",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Switzerland",
-        "city": "Bellevue"
+        "state": null,
+        "city": "Bellevue",
+        "zipcode": "1293",
+        "website": "http://www.richemont.com",
+        "full_time_employees": 35657
     },
     "MCN.MX": {
         "short_name": "LVMH MOET HENNESSY VUITTON SE",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.lvmh.com",
+        "full_time_employees": 148343
     },
     "UHRN.MX": {
         "short_name": "SWATCH GROUP",
@@ -33,6 +41,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Switzerland",
-        "city": "Biel/Bienne"
+        "state": null,
+        "city": "Biel/Bienne",
+        "zipcode": "2501",
+        "website": "http://www.swatchgroup.com",
+        "full_time_employees": 32424
     }
 }

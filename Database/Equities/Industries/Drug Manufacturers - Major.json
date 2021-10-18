@@ -9,7 +9,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Leverkusen"
+        "state": null,
+        "city": "Leverkusen",
+        "zipcode": "51368",
+        "website": "http://www.bayer.com",
+        "full_time_employees": 95955
     },
     "BAYNN.MX": {
         "short_name": "BAYER AG",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Germany",
-        "city": "Leverkusen"
+        "state": null,
+        "city": "Leverkusen",
+        "zipcode": "51368",
+        "website": "http://www.bayer.com",
+        "full_time_employees": 95955
     },
     "DPHN.MX": {
         "short_name": "DECHRA PHARMACEUTICALS",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United Kingdom",
-        "city": "Northwich"
+        "state": null,
+        "city": "Northwich",
+        "zipcode": "CW9 7UA",
+        "website": "http://www.dechra.com",
+        "full_time_employees": 1889
     },
     "LAVI.AT": {
         "short_name": "LAVIPHARM S.A. (CR)",
@@ -45,7 +57,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Paiania"
+        "state": null,
+        "city": "Paiania",
+        "zipcode": "190 02",
+        "website": "http://www.lavipharm.gr",
+        "full_time_employees": 251
     },
     "SANNV.PA": {
         "short_name": "SANOFI NV21",
@@ -57,7 +73,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.sanofi.com",
+        "full_time_employees": 99412
     },
     "SNYN.MX": {
         "short_name": "SANOFI",
@@ -69,6 +89,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.sanofi.com",
+        "full_time_employees": 99412
     }
 }

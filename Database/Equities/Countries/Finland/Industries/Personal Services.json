@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00620",
+        "website": "http://www.mustigroup.com",
+        "full_time_employees": 1244
     },
     "FONDIA.HE": {
         "short_name": "Fondia Oyj",
@@ -21,7 +25,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00100",
+        "website": "http://fondia.com/en",
+        "full_time_employees": 149
     },
     "HARVIA.HE": {
         "short_name": "Harvia Plc",
@@ -33,7 +41,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Muurame"
+        "state": null,
+        "city": "Muurame",
+        "zipcode": "40951",
+        "website": "http://www.harvia.fi",
+        "full_time_employees": 617
     },
     "MUSTI.HE": {
         "short_name": "Musti Group Plc",
@@ -45,6 +57,10 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00620",
+        "website": "http://www.mustigroup.com",
+        "full_time_employees": 1244
     }
 }

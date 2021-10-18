@@ -9,7 +9,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Jinhua"
+        "state": null,
+        "city": "Jinhua",
+        "zipcode": "321016",
+        "website": "http://www.jinzichina.com",
+        "full_time_employees": 453
     },
     "002567.SZ": {
         "short_name": "TANGRENSHEN GROUP",
@@ -21,7 +25,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Zhuzhou"
+        "state": null,
+        "city": "Zhuzhou",
+        "zipcode": "412000",
+        "website": "http://www.trsgroup.com.cn",
+        "full_time_employees": null
     },
     "002719.SZ": {
         "short_name": "MAIQUER GROUP CO L",
@@ -33,7 +41,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Changji"
+        "state": null,
+        "city": "Changji",
+        "zipcode": "831100",
+        "website": "http://www.maiquer.com",
+        "full_time_employees": 1843
     },
     "1587.HK": {
         "short_name": "SHINEROAD INTL",
@@ -45,7 +57,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": null,
+        "website": "http://www.shineroad.com",
+        "full_time_employees": 145
     },
     "300892.SZ": {
         "short_name": "PINLIVE FOODS CO L",
@@ -57,7 +73,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": null,
+        "website": "http://www.pinlive.com",
+        "full_time_employees": 396
     },
     "ENHD": {
         "short_name": "ENERGROUP HOLDINGS CORPORATION",
@@ -69,7 +89,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Dalian City"
+        "state": null,
+        "city": "Dalian City",
+        "zipcode": "116039",
+        "website": null,
+        "full_time_employees": 793
     },
     "GLCC": {
         "short_name": "GOOD LIFE CHINA CORPORATION",
@@ -81,6 +105,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100085",
+        "website": null,
+        "full_time_employees": null
     }
 }

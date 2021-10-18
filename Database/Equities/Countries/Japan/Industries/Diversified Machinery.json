@@ -9,7 +9,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "105-8001",
+        "website": "http://www.toshiba.co.jp",
+        "full_time_employees": 125648
     },
     "FANUN.MX": {
         "short_name": "FANUC CORPORATION",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Yamanashi"
+        "state": null,
+        "city": "Yamanashi",
+        "zipcode": "401-0597",
+        "website": "http://www.fanuc.co.jp",
+        "full_time_employees": null
     },
     "NABCON.MX": {
         "short_name": "NABTESCO CORP",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "102-0093",
+        "website": "http://www.nabtesco.com",
+        "full_time_employees": 7717
     },
     "NIDECN.MX": {
         "short_name": "NIDEC CORPORATION",
@@ -45,7 +57,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Kyoto"
+        "state": null,
+        "city": "Kyoto",
+        "zipcode": "601-8205",
+        "website": "http://www.nidec.com",
+        "full_time_employees": null
     },
     "SMCN.MX": {
         "short_name": "SMC CORP",
@@ -57,6 +73,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "101-0021",
+        "website": "http://www.smcworld.com",
+        "full_time_employees": 20704
     }
 }

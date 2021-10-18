@@ -9,7 +9,11 @@
         "exchange": "HAM",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Brilon"
+        "state": null,
+        "city": "Brilon",
+        "zipcode": "59929",
+        "website": "http://www.centrotec.de",
+        "full_time_employees": 3239
     },
     "FDD.HM": {
         "short_name": "PILKINGTON DTLD. AG",
@@ -21,7 +25,11 @@
         "exchange": "HAM",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Gelsenkirchen"
+        "state": null,
+        "city": "Gelsenkirchen",
+        "zipcode": "45884",
+        "website": "http://www.pilkington.com",
+        "full_time_employees": 1450
     },
     "MPSC.F": {
         "short_name": "MUEHL PROD.+SERV. INH O.N",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Kranichfeld"
+        "state": null,
+        "city": "Kranichfeld",
+        "zipcode": "99448",
+        "website": "http://muehl.ag",
+        "full_time_employees": null
     },
     "RY8.DE": {
         "short_name": "ROY ASSET HLDG INH O.N.",
@@ -45,7 +57,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Hungen"
+        "state": null,
+        "city": "Hungen",
+        "zipcode": "35410",
+        "website": "http://www.roykeramik.de",
+        "full_time_employees": 95
     },
     "RY8.F": {
         "short_name": "ROY ASSET HLDG INH O.N.",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Hungen"
+        "state": null,
+        "city": "Hungen",
+        "zipcode": "35410",
+        "website": "http://www.roykeramik.de",
+        "full_time_employees": 95
     },
     "STO3.DE": {
         "short_name": "STO SE+CO.KGAA VZO O.N.",
@@ -69,7 +89,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "St\u00c3\u00bchlingen"
+        "state": null,
+        "city": "St\u00c3\u00bchlingen",
+        "zipcode": "79780",
+        "website": "http://www.sto.com",
+        "full_time_employees": 5646
     },
     "STO3.F": {
         "short_name": "STO SE+CO.KGAA VZO O.N.",
@@ -81,7 +105,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "St\u00c3\u00bchlingen"
+        "state": null,
+        "city": "St\u00c3\u00bchlingen",
+        "zipcode": "79780",
+        "website": "http://www.sto.com",
+        "full_time_employees": 5646
     },
     "TSS.F": {
         "short_name": "INNOTEC TSS AG",
@@ -93,7 +121,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "D\u00c3\u00bcsseldorf"
+        "state": null,
+        "city": "D\u00c3\u00bcsseldorf",
+        "zipcode": "40239",
+        "website": "http://www.innotectss.de",
+        "full_time_employees": 699
     },
     "UUU.DE": {
         "short_name": "3U HOLDING AG",
@@ -105,7 +137,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Marburg"
+        "state": null,
+        "city": "Marburg",
+        "zipcode": "35039",
+        "website": "http://www.3u.net",
+        "full_time_employees": 193
     },
     "UUU.F": {
         "short_name": "3U HOLDING AG",
@@ -117,6 +153,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Marburg"
+        "state": null,
+        "city": "Marburg",
+        "zipcode": "35039",
+        "website": "http://www.3u.net",
+        "full_time_employees": 193
     }
 }

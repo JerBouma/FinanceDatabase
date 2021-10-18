@@ -9,7 +9,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Slovenia",
-        "city": "Ljubljana"
+        "state": null,
+        "city": "Ljubljana",
+        "zipcode": "1000",
+        "website": null,
+        "full_time_employees": null
     },
     "N1V2.F": {
         "short_name": "NOVA LJUBLJ.BK GDR REG.S",
@@ -21,6 +25,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Slovenia",
-        "city": "Ljubljana"
+        "state": null,
+        "city": "Ljubljana",
+        "zipcode": "1520",
+        "website": "http://www.nlb.si",
+        "full_time_employees": 8725
     }
 }

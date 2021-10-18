@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Sainte-Marie"
+        "state": null,
+        "city": "Sainte-Marie",
+        "zipcode": "97833",
+        "website": "http://www.cboterritoria.com",
+        "full_time_employees": null
     },
     "GALIM.PA": {
         "short_name": "GALIMMO",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75009",
+        "website": "http://www.galimmo-sca.com",
+        "full_time_employees": 53
     },
     "NQ9.F": {
         "short_name": "NEXITY  EO 5",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75801",
+        "website": "http://www.nexity.fr",
+        "full_time_employees": 10151
     },
     "NXI.PA": {
         "short_name": "NEXITY",
@@ -45,6 +57,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75801",
+        "website": "http://www.nexity.fr",
+        "full_time_employees": 10151
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Malaysia",
-        "city": "Kuala Lumpur"
+        "state": null,
+        "city": "Kuala Lumpur",
+        "zipcode": "55200",
+        "website": "http://www.angkaalam.com",
+        "full_time_employees": 30
     },
     "NINK": {
         "short_name": "NAMI CORP",
@@ -21,6 +25,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Malaysia",
-        "city": "Kuala Lumpur"
+        "state": null,
+        "city": "Kuala Lumpur",
+        "zipcode": "59200",
+        "website": "http://www.nink-cs.com",
+        "full_time_employees": null
     }
 }

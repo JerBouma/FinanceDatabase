@@ -9,7 +9,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "145 64",
+        "website": "http://www.aegeanair.com",
+        "full_time_employees": 2699
     },
     "GOLN.MX": {
         "short_name": "GOL LINHAS AEREAS INTELIGENTES ",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
+        "state": "SP",
+        "city": "S\u00c3\u00a3o Paulo",
+        "zipcode": "04626-020",
+        "website": "http://www.voegol.com.br",
+        "full_time_employees": 13999
     },
     "RYAAYN.MX": {
         "short_name": "RYANAIR HOLDINGS PLC",
@@ -33,6 +41,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Ireland",
-        "city": "Swords"
+        "state": null,
+        "city": "Swords",
+        "zipcode": "K67 NY94",
+        "website": "http://www.ryanair.com",
+        "full_time_employees": 16000
     }
 }

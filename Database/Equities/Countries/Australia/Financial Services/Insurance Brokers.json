@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.steadfast.com.au",
+        "full_time_employees": null
     },
     "AUB.AX": {
         "short_name": "AUB GROUP FPO",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "North Sydney"
+        "state": "NSW",
+        "city": "North Sydney",
+        "zipcode": "2000",
+        "website": "http://www.aubgroup.com.au",
+        "full_time_employees": null
     },
     "ENA.AX": {
         "short_name": "ENSURANCE FPO",
@@ -33,7 +41,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Bondi Junction"
+        "state": "NSW",
+        "city": "Bondi Junction",
+        "zipcode": "2022",
+        "website": "http://www.ensurance.com.au",
+        "full_time_employees": null
     },
     "PSI.AX": {
         "short_name": "PSC INSUR FPO",
@@ -45,7 +57,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "East Melbourne"
+        "state": "VIC",
+        "city": "East Melbourne",
+        "zipcode": "3002",
+        "website": "http://www.pscinsurancegroup.com.au",
+        "full_time_employees": null
     },
     "SDF.AX": {
         "short_name": "STEADFAST FPO",
@@ -57,6 +73,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.steadfast.com.au",
+        "full_time_employees": null
     }
 }

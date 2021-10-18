@@ -9,7 +9,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Boudry"
+        "state": null,
+        "city": "Boudry",
+        "zipcode": "2017",
+        "website": "http://www.cicor.com",
+        "full_time_employees": 1901
     },
     "ELMN.SW": {
         "short_name": "ELMA ELECTRONIC N",
@@ -21,7 +25,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Wetzikon"
+        "state": null,
+        "city": "Wetzikon",
+        "zipcode": "8620",
+        "website": "http://www.elma.com",
+        "full_time_employees": 778
     },
     "LEHN.SW": {
         "short_name": "LEM N",
@@ -33,7 +41,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Plan-les-Ouates"
+        "state": null,
+        "city": "Plan-les-Ouates",
+        "zipcode": "1228",
+        "website": "http://www.lem.com",
+        "full_time_employees": 1500
     },
     "SAHN.SW": {
         "short_name": "SCHAFFNER N",
@@ -45,7 +57,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Luterbach"
+        "state": null,
+        "city": "Luterbach",
+        "zipcode": "4542",
+        "website": "http://www.schaffner.com",
+        "full_time_employees": 2180
     },
     "T1EL34.SA": {
         "short_name": "TE CONNECTIVDRN",
@@ -57,7 +73,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Switzerland",
-        "city": "Schaffhausen"
+        "state": null,
+        "city": "Schaffhausen",
+        "zipcode": "8200",
+        "website": "http://www.te.com",
+        "full_time_employees": 80000
     },
     "TEL": {
         "short_name": "TE Connectivity Ltd. New Switze",
@@ -69,6 +89,10 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Schaffhausen"
+        "state": null,
+        "city": "Schaffhausen",
+        "zipcode": "8200",
+        "website": "http://www.te.com",
+        "full_time_employees": 80000
     }
 }

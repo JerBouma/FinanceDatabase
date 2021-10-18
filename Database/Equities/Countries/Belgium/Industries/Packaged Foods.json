@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Sint-Katelijne-Waver"
+        "state": null,
+        "city": "Sint-Katelijne-Waver",
+        "zipcode": "2860",
+        "website": "http://www.greenyard.group",
+        "full_time_employees": 9000
     },
     "GREEN.BR": {
         "short_name": "GREENYARD",
@@ -21,7 +25,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Sint-Katelijne-Waver"
+        "state": null,
+        "city": "Sint-Katelijne-Waver",
+        "zipcode": "2860",
+        "website": "http://www.greenyard.group",
+        "full_time_employees": 9000
     },
     "LOTB.BR": {
         "short_name": "LOTUS BAKERIES",
@@ -33,7 +41,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Lembeke"
+        "state": null,
+        "city": "Lembeke",
+        "zipcode": "9971",
+        "website": "http://www.lotusbakeries.com",
+        "full_time_employees": 2155
     },
     "TERB.BR": {
         "short_name": "TER BEKE",
@@ -45,6 +57,10 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Gent"
+        "state": null,
+        "city": "Gent",
+        "zipcode": "9950",
+        "website": "http://www.terbeke.com",
+        "full_time_employees": null
     }
 }

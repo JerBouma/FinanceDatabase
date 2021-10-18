@@ -9,7 +9,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "South Africa",
-        "city": "Illovo"
+        "state": null,
+        "city": "Illovo",
+        "zipcode": "2196",
+        "website": "http://www.implats.co.za",
+        "full_time_employees": 39834
     },
     "AGLN.MX": {
         "short_name": "ANGLO AMERICAN",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "EC1N 6RA",
+        "website": "http://www.angloamerican.com",
+        "full_time_employees": 95000
     },
     "APM.V": {
         "short_name": "ANDEAN PRECIOUS METALS CORP",
@@ -33,7 +41,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "EMUCA.AX": {
         "short_name": "EMU NL CTG",
@@ -45,7 +57,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "West Perth"
+        "state": "WA",
+        "city": "West Perth",
+        "zipcode": "6005",
+        "website": "http://www.emunl.com.au",
+        "full_time_employees": null
     },
     "MAUCA.AX": {
         "short_name": "MAGNET RES CTG",
@@ -57,7 +73,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "West Perth"
+        "state": "WA",
+        "city": "West Perth",
+        "zipcode": "6005",
+        "website": "http://www.magres.com.au",
+        "full_time_employees": null
     },
     "MERKO.AT": {
         "short_name": "MERMEREN KOMBINAT AD PRILE",
@@ -69,7 +89,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Macedonia",
-        "city": "Prilep"
+        "state": null,
+        "city": "Prilep",
+        "zipcode": "7500",
+        "website": "http://www.mermeren.com",
+        "full_time_employees": 330
     },
     "MYTIL.AT": {
         "short_name": "MYTILINEOS S.A. (CR)",
@@ -81,7 +105,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "151 25",
+        "website": "http://www.mytilineos.gr",
+        "full_time_employees": 3856
     },
     "NOB.V": {
         "short_name": "NOBLE MINERAL EXPLORATION INC",
@@ -93,7 +121,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5H 1T1",
+        "website": "http://www.noblemineralexploration.com",
+        "full_time_employees": null
     },
     "PUDA": {
         "short_name": "PUDA COAL INC",
@@ -105,7 +137,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Taiyuan"
+        "state": null,
+        "city": "Taiyuan",
+        "zipcode": "030006",
+        "website": null,
+        "full_time_employees": 364
     },
     "PWNCA.AX": {
         "short_name": "PARKWAY CTG",
@@ -117,7 +153,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "West Perth"
+        "state": "WA",
+        "city": "West Perth",
+        "zipcode": "6005",
+        "website": "http://www.parkwayminerals.com.au",
+        "full_time_employees": null
     },
     "RBYC": {
         "short_name": "RUBY CREEK RESOURCES INC",
@@ -129,7 +169,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Los Angeles"
+        "state": "CA",
+        "city": "Los Angeles",
+        "zipcode": "90064",
+        "website": "http://www.rubycreekgold.com",
+        "full_time_employees": 102
     },
     "TECKN.MX": {
         "short_name": "TECK RESOURCES LIMITED",
@@ -141,7 +185,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6C 0B3",
+        "website": "http://www.teck.com",
+        "full_time_employees": 10000
     },
     "VALEN.MX": {
         "short_name": "VALE S.A.",
@@ -153,7 +201,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Brazil",
-        "city": "Rio De Janeiro"
+        "state": "RJ",
+        "city": "Rio De Janeiro",
+        "zipcode": "22250-145",
+        "website": "http://www.vale.com",
+        "full_time_employees": 74316
     },
     "VIO.AT": {
         "short_name": "VIOHALCO SA/NY",
@@ -165,6 +217,10 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.viohalco.com",
+        "full_time_employees": 9402
     }
 }

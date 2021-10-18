@@ -9,7 +9,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Marousi"
+        "state": null,
+        "city": "Marousi",
+        "zipcode": "151 25",
+        "website": "http://www.helpe.gr",
+        "full_time_employees": 3544
     },
     "OGZD.BA": {
         "short_name": "GAZPROM PJSC",
@@ -21,7 +25,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "117997",
+        "website": "http://www.gazprom.com",
+        "full_time_employees": 477600
     },
     "REPA.DE": {
         "short_name": "REPSOL S.A. EO 1 ADR 1",
@@ -33,7 +41,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28045",
+        "website": "http://www.repsol.com",
+        "full_time_employees": 23329
     },
     "REPSN.MX": {
         "short_name": "REPSOL SA",
@@ -45,7 +57,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28045",
+        "website": "http://www.repsol.com",
+        "full_time_employees": 23329
     },
     "TKN.MX": {
         "short_name": "TEEKAY CORPORATION",
@@ -57,6 +73,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Bermuda",
-        "city": "Hamilton"
+        "state": null,
+        "city": "Hamilton",
+        "zipcode": "HM 08",
+        "website": "http://www.teekay.com",
+        "full_time_employees": 5350
     }
 }

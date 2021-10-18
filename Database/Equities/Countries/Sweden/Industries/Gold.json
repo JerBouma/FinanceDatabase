@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "114 52",
+        "website": "http://www.kopygoldfields.com",
+        "full_time_employees": 5
     },
     "AUR.ST": {
         "short_name": "Auriant Mining AB",
@@ -21,7 +25,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "102 15",
+        "website": "http://www.auriant.com",
+        "full_time_employees": 558
     },
     "KOPY.ST": {
         "short_name": "Kopy Goldfields AB",
@@ -33,6 +41,10 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "114 52",
+        "website": "http://www.kopygoldfields.com",
+        "full_time_employees": 5
     }
 }

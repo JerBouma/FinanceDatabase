@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "St Ouen"
+        "state": null,
+        "city": "St Ouen",
+        "zipcode": "93400",
+        "website": "http://www.alstom.com",
+        "full_time_employees": 38900
     },
     "DGN.MX": {
         "short_name": "VINCI",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Rueil-Malmaison"
+        "state": null,
+        "city": "Rueil-Malmaison",
+        "zipcode": "92851",
+        "website": "http://www.vinci.com",
+        "full_time_employees": 219400
     },
     "HONV.PA": {
         "short_name": "THALES NV21",
@@ -33,7 +41,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Courbevoie"
+        "state": null,
+        "city": "Courbevoie",
+        "zipcode": "92400",
+        "website": "http://www.thalesgroup.com/en",
+        "full_time_employees": 75735
     },
     "SGON.MX": {
         "short_name": "COMPAGNIE DE ST-GOBAIN",
@@ -45,7 +57,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Courbevoie"
+        "state": null,
+        "city": "Courbevoie",
+        "zipcode": "92400",
+        "website": "http://www.saint-gobain.com",
+        "full_time_employees": 167552
     },
     "SUN.MX": {
         "short_name": "SCHNEIDER ELECTRIC SE",
@@ -57,6 +73,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Rueil-Malmaison"
+        "state": null,
+        "city": "Rueil-Malmaison",
+        "zipcode": "92500",
+        "website": "http://www.se.com/ww/en",
+        "full_time_employees": 135000
     }
 }

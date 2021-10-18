@@ -9,7 +9,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Cape Town"
+        "state": null,
+        "city": "Cape Town",
+        "zipcode": "7800",
+        "website": "http://www.bowlermetcalf.co.za",
+        "full_time_employees": null
     },
     "MPT.JO": {
         "short_name": "Mpact Limited",
@@ -21,7 +25,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Johannesburg"
+        "state": null,
+        "city": "Johannesburg",
+        "zipcode": "2196",
+        "website": "http://www.mpact.co.za",
+        "full_time_employees": null
     },
     "NPK.JO": {
         "short_name": "Nampak Ltd",
@@ -33,7 +41,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Sandton"
+        "state": null,
+        "city": "Sandton",
+        "zipcode": "2191",
+        "website": "http://www.nampak.co.za",
+        "full_time_employees": null
     },
     "NPKLY": {
         "short_name": "NAMPAK",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "South Africa",
-        "city": "Sandton"
+        "state": null,
+        "city": "Sandton",
+        "zipcode": "2191",
+        "website": "http://www.nampak.co.za",
+        "full_time_employees": null
     },
     "TPC.JO": {
         "short_name": "Transpaco Ltd",
@@ -57,6 +73,10 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Johannesburg"
+        "state": null,
+        "city": "Johannesburg",
+        "zipcode": "2090",
+        "website": "http://www.transpaco.co.za",
+        "full_time_employees": 1525
     }
 }

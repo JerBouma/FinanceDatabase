@@ -9,7 +9,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Iceland",
-        "city": "Isafjordur"
+        "state": null,
+        "city": "Isafjordur",
+        "zipcode": "400",
+        "website": "http://www.arcticfish.is",
+        "full_time_employees": 29
     },
     "BRIM.IC": {
         "short_name": "Brim hf.",
@@ -21,7 +25,11 @@
         "exchange": "ICE",
         "market": "ic_market",
         "country": "Iceland",
-        "city": "Reykjav\u00c3\u00adk"
+        "state": null,
+        "city": "Reykjav\u00c3\u00adk",
+        "zipcode": "101",
+        "website": "http://www.brim.is",
+        "full_time_employees": 769
     },
     "HAGA.IC": {
         "short_name": "Hagar hf.",
@@ -33,7 +41,11 @@
         "exchange": "ICE",
         "market": "ic_market",
         "country": "Iceland",
-        "city": "K\u00c3\u00b3pavogur"
+        "state": null,
+        "city": "K\u00c3\u00b3pavogur",
+        "zipcode": "201",
+        "website": "http://www.hagar.is",
+        "full_time_employees": null
     },
     "I6X.MU": {
         "short_name": "ICELANDIC SALMON AS NK 10",
@@ -45,7 +57,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Iceland",
-        "city": "B\u00c3\u00adldudalur"
+        "state": null,
+        "city": "B\u00c3\u00adldudalur",
+        "zipcode": "465",
+        "website": "http://www.arnarlax.is/is",
+        "full_time_employees": null
     },
     "ICESEA.IC": {
         "short_name": "Iceland Seafood International h",
@@ -57,7 +73,11 @@
         "exchange": "ICE",
         "market": "ic_market",
         "country": "Iceland",
-        "city": "Reykjavik"
+        "state": null,
+        "city": "Reykjavik",
+        "zipcode": "104",
+        "website": "http://www.icelandseafood.com",
+        "full_time_employees": 677
     },
     "IFISH.OL": {
         "short_name": "ICE FISH FARM AS",
@@ -69,7 +89,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Iceland",
-        "city": "Seltjarnarnes"
+        "state": null,
+        "city": "Seltjarnarnes",
+        "zipcode": "170",
+        "website": "http://www.icefishfarm.is",
+        "full_time_employees": 51
     },
     "ISLAX.OL": {
         "short_name": "ICELANDIC SALMON",
@@ -81,6 +105,10 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Iceland",
-        "city": "B\u00c3\u00adldudalur"
+        "state": null,
+        "city": "B\u00c3\u00adldudalur",
+        "zipcode": "465",
+        "website": "http://www.arnarlax.is/is",
+        "full_time_employees": null
     }
 }

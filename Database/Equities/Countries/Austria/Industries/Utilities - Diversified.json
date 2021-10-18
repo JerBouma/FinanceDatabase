@@ -9,7 +9,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Austria",
-        "city": "Eisenstadt"
+        "state": null,
+        "city": "Eisenstadt",
+        "zipcode": "7000",
+        "website": "http://www.buho.at",
+        "full_time_employees": null
     },
     "EVN.DE": {
         "short_name": "EVN AG",
@@ -21,7 +25,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Austria",
-        "city": "Maria Enzersdorf"
+        "state": null,
+        "city": "Maria Enzersdorf",
+        "zipcode": "2344",
+        "website": "http://www.evn.at",
+        "full_time_employees": 7152
     },
     "EVN.F": {
         "short_name": "EVN AG",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Austria",
-        "city": "Maria Enzersdorf"
+        "state": null,
+        "city": "Maria Enzersdorf",
+        "zipcode": "2344",
+        "website": "http://www.evn.at",
+        "full_time_employees": 7152
     },
     "EVN.VI": {
         "short_name": "EVN AG",
@@ -45,7 +57,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Austria",
-        "city": "Maria Enzersdorf"
+        "state": null,
+        "city": "Maria Enzersdorf",
+        "zipcode": "2344",
+        "website": "http://www.evn.at",
+        "full_time_employees": 7152
     },
     "EVNVY": {
         "short_name": "EVN AG",
@@ -57,6 +73,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Austria",
-        "city": "Maria Enzersdorf"
+        "state": null,
+        "city": "Maria Enzersdorf",
+        "zipcode": "2344",
+        "website": "http://www.evn.at",
+        "full_time_employees": 7152
     }
 }

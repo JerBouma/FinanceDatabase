@@ -9,7 +9,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Christchurch"
+        "state": null,
+        "city": "Christchurch",
+        "zipcode": "8053",
+        "website": "http://www.pggwrightson.co.nz",
+        "full_time_employees": 1800
     },
     "STG.AX": {
         "short_name": "STRAKER TL FPO",
@@ -21,6 +25,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "New Zealand",
-        "city": "Auckland"
+        "state": null,
+        "city": "Auckland",
+        "zipcode": "0632",
+        "website": "http://www.strakertranslations.com",
+        "full_time_employees": 230
     }
 }

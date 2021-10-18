@@ -9,7 +9,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Whangarei"
+        "state": null,
+        "city": "Whangarei",
+        "zipcode": "0171",
+        "website": "http://www.refiningnz.com",
+        "full_time_employees": null
     },
     "ZEL.AX": {
         "short_name": "Z ENERGY FPO NZX",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "New Zealand",
-        "city": "Wellington"
+        "state": null,
+        "city": "Wellington",
+        "zipcode": "6011",
+        "website": "http://www.z.co.nz",
+        "full_time_employees": 2451
     },
     "ZEL.NZ": {
         "short_name": "Z Energy Limited Ordinary Share",
@@ -33,6 +41,10 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Wellington"
+        "state": null,
+        "city": "Wellington",
+        "zipcode": "6011",
+        "website": "http://www.z.co.nz",
+        "full_time_employees": 2451
     }
 }

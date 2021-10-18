@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.bpost.be",
+        "full_time_employees": 28620
     },
     "BPOS.VI": {
         "short_name": "BPOST",
@@ -21,7 +25,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.bpost.be",
+        "full_time_employees": 28620
     },
     "BPOST.BR": {
         "short_name": "BPOST",
@@ -33,7 +41,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.bpost.be",
+        "full_time_employees": 28620
     },
     "BPOSY": {
         "short_name": "BPOST SA",
@@ -45,6 +57,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.bpost.be",
+        "full_time_employees": 28620
     }
 }

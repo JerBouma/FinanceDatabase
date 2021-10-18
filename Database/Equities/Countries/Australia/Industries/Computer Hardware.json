@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3000",
+        "website": "http://www.dlti.com.au",
+        "full_time_employees": null
     },
     "DPSM": {
         "short_name": "3D PIONEER SYSTEMS INC",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3205",
+        "website": null,
+        "full_time_employees": null
     },
     "DRH.F": {
         "short_name": "DRONESHIELD LTD",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.droneshield.com",
+        "full_time_employees": 40
     },
     "DRO.AX": {
         "short_name": "DRONE FPO",
@@ -45,7 +57,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.droneshield.com",
+        "full_time_employees": 40
     },
     "DRSHF": {
         "short_name": "DRONESHIELD LTD",
@@ -57,7 +73,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.droneshield.com",
+        "full_time_employees": 40
     },
     "OZ8.F": {
         "short_name": "333D LTD",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Laverton North"
+        "state": "VIC",
+        "city": "Laverton North",
+        "zipcode": "3026",
+        "website": "http://www.333d.com.au",
+        "full_time_employees": null
     },
     "T3D.AX": {
         "short_name": "333D FPO",
@@ -81,7 +105,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Laverton North"
+        "state": "VIC",
+        "city": "Laverton North",
+        "zipcode": "3026",
+        "website": "http://www.333d.com.au",
+        "full_time_employees": null
     },
     "ZMM.AX": {
         "short_name": "ZIMILMITED FPO",
@@ -93,6 +121,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Helensvale"
+        "state": "QLD",
+        "city": "Helensvale",
+        "zipcode": "4212",
+        "website": "http://www.zimi.life",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Hadera"
+        "state": null,
+        "city": "Hadera",
+        "zipcode": "38101",
+        "website": "http://www.hadera-paper.co.il",
+        "full_time_employees": 1463
     },
     "HAP.TA": {
         "short_name": "HADERA PAPER LTD",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Hadera"
+        "state": null,
+        "city": "Hadera",
+        "zipcode": "38101",
+        "website": "http://www.hadera-paper.co.il",
+        "full_time_employees": 1463
     },
     "SHAN.TA": {
         "short_name": "SHANIV PAPER IND",
@@ -33,6 +41,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Ofakim"
+        "state": null,
+        "city": "Ofakim",
+        "zipcode": "80300",
+        "website": "http://www.shaniv.com",
+        "full_time_employees": 483
     }
 }

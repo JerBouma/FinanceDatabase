@@ -9,7 +9,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100032",
+        "website": "http://www.cnpccapital.cn",
+        "full_time_employees": 4405
     },
     "002423.SZ": {
         "short_name": "COFCO CAPITAL HOLD",
@@ -21,7 +25,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Jiyuan"
+        "state": null,
+        "city": "Jiyuan",
+        "zipcode": null,
+        "website": "http://zssw.com",
+        "full_time_employees": 3138
     },
     "002647.SZ": {
         "short_name": "RENDONG HOLDINGS C",
@@ -33,7 +41,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": null,
+        "website": "http://www.rendongholdings.com",
+        "full_time_employees": null
     },
     "002670.SZ": {
         "short_name": "GUOSHENG FINANCIAL",
@@ -45,7 +57,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Shenzhen"
+        "state": null,
+        "city": "Shenzhen",
+        "zipcode": null,
+        "website": "http://www.gsfins.com",
+        "full_time_employees": 2580
     },
     "1945.HK": {
         "short_name": "ZERO2IPO",
@@ -57,7 +73,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100600",
+        "website": "http://www.zero2ipo.cn",
+        "full_time_employees": 243
     },
     "600390.SS": {
         "short_name": "MINMETALS CAPITAL COMPANY LIMIT",
@@ -69,7 +89,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Changsha"
+        "state": null,
+        "city": "Changsha",
+        "zipcode": "410012",
+        "website": "http://www.minfinance.com.cn",
+        "full_time_employees": 2808
     },
     "600621.SS": {
         "short_name": "SHANGHAI CHINAFORTUNE CO LTD",
@@ -81,6 +105,10 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": "200030",
+        "website": "http://www.shchinafortune.com",
+        "full_time_employees": 1692
     }
 }

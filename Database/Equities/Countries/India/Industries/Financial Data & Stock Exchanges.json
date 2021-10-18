@@ -9,7 +9,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400001",
+        "website": "http://www.bseindia.com",
+        "full_time_employees": 516
     },
     "CARERATING.NS": {
         "short_name": "CARE RATINGS LTD",
@@ -21,7 +25,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400022",
+        "website": "http://www.careratings.com",
+        "full_time_employees": 646
     },
     "CRISIL.NS": {
         "short_name": "CRISIL LTD",
@@ -33,7 +41,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400076",
+        "website": "http://www.crisil.com",
+        "full_time_employees": 3670
     },
     "ICRA.NS": {
         "short_name": "ICRA LTD",
@@ -45,7 +57,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Gurugram"
+        "state": null,
+        "city": "Gurugram",
+        "zipcode": "122002",
+        "website": "http://www.icra.in",
+        "full_time_employees": null
     },
     "MCX.NS": {
         "short_name": "MULTI COMMODITY EX",
@@ -57,6 +73,10 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400093",
+        "website": "http://www.mcxindia.com",
+        "full_time_employees": null
     }
 }

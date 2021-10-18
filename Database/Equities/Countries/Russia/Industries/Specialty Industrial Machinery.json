@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "125047",
+        "website": "http://www.grouphms.com",
+        "full_time_employees": 13000
     },
     "KRKOP.ME": {
         "short_name": "KRASNY KOTELSHCHIK",
@@ -21,7 +25,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Taganrog"
+        "state": null,
+        "city": "Taganrog",
+        "zipcode": null,
+        "website": "http://www.tkz.su",
+        "full_time_employees": 2296
     },
     "OMZZP.ME": {
         "short_name": "UNITED HEAVY MACH",
@@ -33,6 +41,10 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "115035",
+        "website": "http://www.omz.ru",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20126",
+        "website": "http://www.prysmiangroup.com",
+        "full_time_employees": 28000
     },
     "CMB.MI": {
         "short_name": "CEMBRE",
@@ -21,7 +25,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Brescia"
+        "state": "BS",
+        "city": "Brescia",
+        "zipcode": "25135",
+        "website": "http://www.cembre.it",
+        "full_time_employees": 721
     },
     "IRC.MI": {
         "short_name": "IRCE",
@@ -33,7 +41,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Imola"
+        "state": "BO",
+        "city": "Imola",
+        "zipcode": "40026",
+        "website": "http://www.irce.it",
+        "full_time_employees": 633
     },
     "IRQ.SG": {
         "short_name": "IRCE S.P.A. Azioni nom. EO 0,52",
@@ -45,7 +57,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Imola"
+        "state": "BO",
+        "city": "Imola",
+        "zipcode": "40026",
+        "website": "http://www.irce.it",
+        "full_time_employees": 633
     },
     "MLITN.PA": {
         "short_name": "ITALY INNOVAZIONI",
@@ -57,6 +73,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00187",
+        "website": "http://www.italyinnovazioni.com",
+        "full_time_employees": null
     }
 }

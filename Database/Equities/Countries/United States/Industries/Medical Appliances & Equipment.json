@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Eden Prairie"
+        "state": "MN",
+        "city": "Eden Prairie",
+        "zipcode": "55416",
+        "website": "http://www.prourocare.com",
+        "full_time_employees": 2
     },
     "SCIE": {
         "short_name": "SPECTRASCIENCE INC",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "San Diego"
+        "state": "CA",
+        "city": "San Diego",
+        "zipcode": "92121",
+        "website": "http://www.spectrascience.com",
+        "full_time_employees": 5
     },
     "SGLN": {
         "short_name": "SURGLINE INTL INC",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "West Palm Beach"
+        "state": "FL",
+        "city": "West Palm Beach",
+        "zipcode": "33401",
+        "website": null,
+        "full_time_employees": null
     },
     "TSNI": {
         "short_name": "TECHNISCAN INC",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Salt Lake City"
+        "state": "UT",
+        "city": "Salt Lake City",
+        "zipcode": "84106",
+        "website": null,
+        "full_time_employees": 5
     },
     "VNM.DE": {
         "short_name": "VARIAN MEDICAL SYS  DL 1",
@@ -57,6 +73,10 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "United States",
-        "city": "Palo Alto"
+        "state": "CA",
+        "city": "Palo Alto",
+        "zipcode": "94304-1038",
+        "website": "http://www.varian.com",
+        "full_time_employees": 10000
     }
 }

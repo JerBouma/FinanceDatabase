@@ -9,7 +9,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Austria",
-        "city": "Klagenfurt"
+        "state": null,
+        "city": "Klagenfurt",
+        "zipcode": "9020",
+        "website": "http://de.sw-umwelttechnik.com",
+        "full_time_employees": 600
     },
     "WAH.DE": {
         "short_name": "WOLFTANK-ADISA HLDG O.N.",
@@ -21,7 +25,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Austria",
-        "city": "Innsbruck"
+        "state": null,
+        "city": "Innsbruck",
+        "zipcode": "6020",
+        "website": "http://wolftank-adisa.com",
+        "full_time_employees": 187
     },
     "WAH.MU": {
         "short_name": "WOLFTANK-ADISA HLDG O.N.",
@@ -33,6 +41,10 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Austria",
-        "city": "Innsbruck"
+        "state": null,
+        "city": "Innsbruck",
+        "zipcode": "6020",
+        "website": "http://wolftank-adisa.com",
+        "full_time_employees": 187
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Estonia",
-        "city": "Tallinn"
+        "state": null,
+        "city": "Tallinn",
+        "zipcode": "10145",
+        "website": "http://www.lhv.ee",
+        "full_time_employees": 518
     },
     "CPA1T.TL": {
         "short_name": "Coop Pank",
@@ -21,7 +25,11 @@
         "exchange": "TAL",
         "market": "tl_market",
         "country": "Estonia",
-        "city": "Tallinn"
+        "state": null,
+        "city": "Tallinn",
+        "zipcode": "15014",
+        "website": "http://www.cooppank.ee",
+        "full_time_employees": 289
     },
     "LHV1T.TL": {
         "short_name": "LHV Group",
@@ -33,6 +41,10 @@
         "exchange": "TAL",
         "market": "tl_market",
         "country": "Estonia",
-        "city": "Tallinn"
+        "state": null,
+        "city": "Tallinn",
+        "zipcode": "10145",
+        "website": "http://www.lhv.ee",
+        "full_time_employees": 518
     }
 }

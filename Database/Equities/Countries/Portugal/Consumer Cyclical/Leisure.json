@@ -9,7 +9,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Portugal",
-        "city": "Porto"
+        "state": null,
+        "city": "Porto",
+        "zipcode": "4350-451",
+        "website": "http://www.fcporto.pt",
+        "full_time_employees": 493
     },
     "FCP.LS": {
         "short_name": "FUT.CLUBE PORTO",
@@ -21,7 +25,11 @@
         "exchange": "LIS",
         "market": "pt_market",
         "country": "Portugal",
-        "city": "Porto"
+        "state": null,
+        "city": "Porto",
+        "zipcode": "4350-451",
+        "website": "http://www.fcporto.pt",
+        "full_time_employees": 493
     },
     "SCB.LS": {
         "short_name": "S.CLUBE BRAGA",
@@ -33,7 +41,11 @@
         "exchange": "LIS",
         "market": "pt_market",
         "country": "Portugal",
-        "city": "Braga"
+        "state": null,
+        "city": "Braga",
+        "zipcode": "4700-087",
+        "website": "http://www.scbraga.pt",
+        "full_time_employees": 222
     },
     "SCG.SG": {
         "short_name": "Sporting C.P. - Futebol SAD Ace",
@@ -45,7 +57,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Portugal",
-        "city": "Lisbon"
+        "state": null,
+        "city": "Lisbon",
+        "zipcode": "1501-806",
+        "website": "http://www.sporting.pt",
+        "full_time_employees": 497
     },
     "SCP.LS": {
         "short_name": "SPORTING",
@@ -57,7 +73,11 @@
         "exchange": "LIS",
         "market": "pt_market",
         "country": "Portugal",
-        "city": "Lisbon"
+        "state": null,
+        "city": "Lisbon",
+        "zipcode": "1501-806",
+        "website": "http://www.sporting.pt",
+        "full_time_employees": 497
     },
     "SLBEN.LS": {
         "short_name": "BENFICA",
@@ -69,6 +89,10 @@
         "exchange": "LIS",
         "market": "pt_market",
         "country": "Portugal",
-        "city": "Lisbon"
+        "state": null,
+        "city": "Lisbon",
+        "zipcode": "1500-313",
+        "website": "http://www.slbenfica.pt",
+        "full_time_employees": 276
     }
 }

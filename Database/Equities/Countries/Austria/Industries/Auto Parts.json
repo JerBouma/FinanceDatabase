@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1090",
+        "website": "http://www.frauenthal.at",
+        "full_time_employees": 3292
     },
     "FKA.VI": {
         "short_name": "FRAUENTHAL HOLDING AG",
@@ -21,7 +25,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1090",
+        "website": "http://www.frauenthal.at",
+        "full_time_employees": 3292
     },
     "P4N.F": {
         "short_name": "POLYTEC HLDG AG INH. EO 1",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Austria",
-        "city": "H\u00c3\u00b6rsching"
+        "state": null,
+        "city": "H\u00c3\u00b6rsching",
+        "zipcode": "4063",
+        "website": "http://www.polytec-group.com",
+        "full_time_employees": 3636
     },
     "PYT.VI": {
         "short_name": "POLYTEC HOLDING AG",
@@ -45,6 +57,10 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Austria",
-        "city": "H\u00c3\u00b6rsching"
+        "state": null,
+        "city": "H\u00c3\u00b6rsching",
+        "zipcode": "4063",
+        "website": "http://www.polytec-group.com",
+        "full_time_employees": 3636
     }
 }

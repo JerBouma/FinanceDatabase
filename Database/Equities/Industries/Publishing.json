@@ -9,7 +9,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Hangzhou"
+        "state": null,
+        "city": "Hangzhou",
+        "zipcode": null,
+        "website": "http://www.000607.cn",
+        "full_time_employees": 3070
     },
     "0018.HK": {
         "short_name": "ORIENTAL PRESS",
@@ -21,7 +25,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Tai Po"
+        "state": null,
+        "city": "Tai Po",
+        "zipcode": null,
+        "website": "http://opg.on.cc/tc",
+        "full_time_employees": 1189
     },
     "00W.F": {
         "short_name": "ASPERMONT LTD",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Perth"
+        "state": "WA",
+        "city": "Perth",
+        "zipcode": "6000",
+        "website": "http://www.aspermont.com",
+        "full_time_employees": 79
     },
     "0343.HK": {
         "short_name": "CULTURECOM HOLD",
@@ -45,7 +57,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Admiralty"
+        "state": null,
+        "city": "Admiralty",
+        "zipcode": null,
+        "website": "http://www.culturecom.com.hk",
+        "full_time_employees": 238
     },
     "0811.HK": {
         "short_name": "XINHUA WINSHARE",
@@ -57,7 +73,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Chengdu"
+        "state": null,
+        "city": "Chengdu",
+        "zipcode": "610081",
+        "website": "http://www.winshare.com.cn",
+        "full_time_employees": 7633
     },
     "095720.KS": {
         "short_name": "WOONGJIN THINKBIG",
@@ -69,7 +89,11 @@
         "exchange": "KSC",
         "market": "kr_market",
         "country": "South Korea",
-        "city": "Paju-Si"
+        "state": null,
+        "city": "Paju-Si",
+        "zipcode": "10881",
+        "website": "http://www.wjthinkbig.com",
+        "full_time_employees": null
     },
     "100220.KS": {
         "short_name": "VISANG",
@@ -81,7 +105,11 @@
         "exchange": "KSC",
         "market": "kr_market",
         "country": "South Korea",
-        "city": "Seoul"
+        "state": null,
+        "city": "Seoul",
+        "zipcode": null,
+        "website": "http://www.visang.com",
+        "full_time_employees": null
     },
     "1105.HK": {
         "short_name": "SING TAO",
@@ -93,7 +121,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Tseung Kwan O"
+        "state": null,
+        "city": "Tseung Kwan O",
+        "zipcode": null,
+        "website": "http://www.singtaonewscorp.com",
+        "full_time_employees": 1163
     },
     "112.F": {
         "short_name": "COFINA SGPS NAM.  O.N.",
@@ -105,7 +137,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Portugal",
-        "city": "Porto"
+        "state": null,
+        "city": "Porto",
+        "zipcode": "4100-320",
+        "website": "http://www.cofina.pt",
+        "full_time_employees": 713
     },
     "1KB.F": {
         "short_name": "AH BELO CORP. A  DL-,01",
@@ -117,7 +153,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Dallas"
+        "state": "TX",
+        "city": "Dallas",
+        "zipcode": "75222-4866",
+        "website": "http://www.ahbelo.com",
+        "full_time_employees": 743
     },
     "2164.T": {
         "short_name": "CHIIKISHINBUNSHA CO LTD",
@@ -129,7 +169,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Funabashi"
+        "state": null,
+        "city": "Funabashi",
+        "zipcode": "273-0011",
+        "website": "http://www.chiikinews.co.jp",
+        "full_time_employees": 199
     },
     "2341.T": {
         "short_name": "ARBEIT-TIMES CO LTD",
@@ -141,7 +185,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "101-0043",
+        "website": "http://www.atimes.co.jp",
+        "full_time_employees": null
     },
     "2376.T": {
         "short_name": "SCINEX CORPORATION",
@@ -153,7 +201,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "102-0083",
+        "website": "http://www.scinex.co.jp",
+        "full_time_employees": 736
     },
     "2481.T": {
         "short_name": "TOWNNEWS-SHA CO LTD",
@@ -165,7 +217,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Yokohama"
+        "state": null,
+        "city": "Yokohama",
+        "zipcode": "225-0014",
+        "website": "http://www.townnews.co.jp",
+        "full_time_employees": 194
     },
     "2N2A.F": {
         "short_name": "GANNETT CO.INC  DL-,01",
@@ -177,7 +233,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "McLean"
+        "state": "VA",
+        "city": "McLean",
+        "zipcode": "22107-0910",
+        "website": "http://www.gannett.com",
+        "full_time_employees": 18100
     },
     "300148.SZ": {
         "short_name": "TANGEL CULTURE CO.",
@@ -189,7 +249,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Changsha"
+        "state": null,
+        "city": "Changsha",
+        "zipcode": null,
+        "website": "http://www.t-angel.com",
+        "full_time_employees": null
     },
     "3137.T": {
         "short_name": "FUNDELY CO LTD",
@@ -201,7 +265,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "115-0045",
+        "website": "http://www.fundely.co.jp",
+        "full_time_employees": null
     },
     "3641.T": {
         "short_name": "PAPYLESS CO LTD",
@@ -213,7 +281,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "102-0094",
+        "website": "http://www.papy.co.jp",
+        "full_time_employees": 116
     },
     "4833.T": {
         "short_name": "SUCCESS HOLDERS INC",
@@ -225,7 +297,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "106-0032",
+        "website": "http://www.success-holders.inc",
+        "full_time_employees": 299
     },
     "5JZ.F": {
         "short_name": "BLOOMSBURY PUBL. LS-,0125",
@@ -237,7 +313,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC1B 3DP",
+        "website": "http://www.bloomsbury.com",
+        "full_time_employees": null
     },
     "600229.SS": {
         "short_name": "QINGDAO CITYMEDIA CO LTD",
@@ -249,7 +329,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Qingdao"
+        "state": null,
+        "city": "Qingdao",
+        "zipcode": "266061",
+        "website": "http://www.citymedia.cn",
+        "full_time_employees": 1764
     },
     "600373.SS": {
         "short_name": "CHINESE UNIVERSE PUBLISHING&MED",
@@ -261,7 +345,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Nanchang"
+        "state": null,
+        "city": "Nanchang",
+        "zipcode": "330038",
+        "website": "http://www.600373.com.cn",
+        "full_time_employees": 6527
     },
     "600757.SS": {
         "short_name": "CHANGJIANG PUBLISHING AND MEDIA",
@@ -273,7 +361,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Wuhan"
+        "state": null,
+        "city": "Wuhan",
+        "zipcode": "430070",
+        "website": "http://www.cjcm.com.cn",
+        "full_time_employees": 4509
     },
     "600825.SS": {
         "short_name": "SHANGHAI XINHUA MEDIA CO. LTD.",
@@ -285,7 +377,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": "200030",
+        "website": "http://www.xhmedia.com",
+        "full_time_employees": 1472
     },
     "600880.SS": {
         "short_name": "CHENGDU B-RAY MEDIA CO",
@@ -297,7 +393,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Chengdu"
+        "state": null,
+        "city": "Chengdu",
+        "zipcode": "610063",
+        "website": "http://www.b-raymedia.com",
+        "full_time_employees": 1040
     },
     "601811.SS": {
         "short_name": "XINHUA WINSHARE PUBLISHING & ME",
@@ -309,7 +409,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Chengdu"
+        "state": null,
+        "city": "Chengdu",
+        "zipcode": "610081",
+        "website": "http://www.winshare.com.cn",
+        "full_time_employees": 7633
     },
     "603096.SS": {
         "short_name": "THINKINGDOM MEDIA GROUP LTD",
@@ -321,7 +425,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100120",
+        "website": "http://www.readinglife.com",
+        "full_time_employees": 419
     },
     "603999.SS": {
         "short_name": "DUZHE PUBLISHING AND MEDIA CO L",
@@ -333,7 +441,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Lanzhou"
+        "state": null,
+        "city": "Lanzhou",
+        "zipcode": "730030",
+        "website": "http://www.duzhe.com",
+        "full_time_employees": 480
     },
     "6176.T": {
         "short_name": "BRANGISTA INC",
@@ -345,7 +457,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "150-0031",
+        "website": "http://www.brangista.com",
+        "full_time_employees": 269
     },
     "6240.TWO": {
         "short_name": "SUNG GANG CORP LTD",
@@ -357,7 +473,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taipei"
+        "state": null,
+        "city": "Taipei",
+        "zipcode": null,
+        "website": "http://www.kingsinfo.com.tw",
+        "full_time_employees": null
     },
     "6T71.F": {
         "short_name": "TRIBUNE PUBLISHING DL-,01",
@@ -369,7 +489,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60654",
+        "website": "http://www.tribpub.com",
+        "full_time_employees": 2865
     },
     "7849.T": {
         "short_name": "STARTS PUBLISHING CORP",
@@ -381,7 +505,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "104-0031",
+        "website": "http://www.starts-pub.jp",
+        "full_time_employees": 217
     },
     "7X3.F": {
         "short_name": "XLMEDIA PLC  DL-,000001",
@@ -393,7 +521,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Cyprus",
-        "city": "Limassol"
+        "state": null,
+        "city": "Limassol",
+        "zipcode": "4044",
+        "website": "http://www.xlmedia.com",
+        "full_time_employees": null
     },
     "8006.HK": {
         "short_name": "SINO SPLENDID",
@@ -405,7 +537,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Sheung Wan"
+        "state": null,
+        "city": "Sheung Wan",
+        "zipcode": null,
+        "website": "http://www.sinosplendid.com",
+        "full_time_employees": 47
     },
     "8072.T": {
         "short_name": "JAPAN PUBLICATION TRADING CO",
@@ -417,7 +553,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "101-0064",
+        "website": "http://www.jptco.co.jp",
+        "full_time_employees": null
     },
     "9468.T": {
         "short_name": "KADOKAWA CORPORATION",
@@ -429,7 +569,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "102-8177",
+        "website": "http://www.kadokawa.co.jp",
+        "full_time_employees": null
     },
     "9475.T": {
         "short_name": "SHOBUNSHA HOLDINGS INC",
@@ -441,7 +585,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "102-8238",
+        "website": "http://www.mapple.co.jp",
+        "full_time_employees": null
     },
     "9476.T": {
         "short_name": "CHUOKEIZAI-SHA HOLDINGS INC",
@@ -453,7 +601,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "101-0051",
+        "website": "http://www.chuokeizai.co.jp",
+        "full_time_employees": 106
     },
     "9478.T": {
         "short_name": "SE HOLDINGS AND INCUBATIONS",
@@ -465,7 +617,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "160-0006",
+        "website": "http://www.sehi.co.jp",
+        "full_time_employees": null
     },
     "9479.T": {
         "short_name": "IMPRESS HOLDINGS INC",
@@ -477,7 +633,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "101-0051",
+        "website": "http://www.impressholdings.com",
+        "full_time_employees": null
     },
     "ABBA.JK": {
         "short_name": "Mahaka Media Tbk.",
@@ -489,7 +649,11 @@
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "Jakarta"
+        "state": null,
+        "city": "Jakarta",
+        "zipcode": "10220",
+        "website": "http://www.mahakamedia.com",
+        "full_time_employees": 753
     },
     "ACNI": {
         "short_name": "AMERICAN COMMUNITY NEWSPAPERS I",
@@ -501,7 +665,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Addison"
+        "state": "TX",
+        "city": "Addison",
+        "zipcode": "75254",
+        "website": null,
+        "full_time_employees": 502
     },
     "AHC": {
         "short_name": "A.H. Belo Corporation (TX)",
@@ -513,7 +681,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Dallas"
+        "state": "TX",
+        "city": "Dallas",
+        "zipcode": "75222-4866",
+        "website": "http://www.ahbelo.com",
+        "full_time_employees": 743
     },
     "AJP.F": {
         "short_name": "ARTMARKET.COM SA INH.EO 1",
@@ -525,7 +697,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Neuville sur Saone"
+        "state": null,
+        "city": "Neuville sur Saone",
+        "zipcode": "69270",
+        "website": "http://www.artprice.com",
+        "full_time_employees": 42
     },
     "ALENR.PA": {
         "short_name": "ENTREPRENDRE",
@@ -537,7 +713,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Boulogne-Billancourt"
+        "state": null,
+        "city": "Boulogne-Billancourt",
+        "zipcode": "92100",
+        "website": "http://www.entreprendre.fr",
+        "full_time_employees": 18
     },
     "ALMA.HE": {
         "short_name": "Alma Media Corporation",
@@ -549,7 +729,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00100",
+        "website": "http://www.almamedia.fi",
+        "full_time_employees": 1806
     },
     "ALSEI.PA": {
         "short_name": "SEIF SPA",
@@ -561,7 +745,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00184",
+        "website": "http://www.ilfattoquotidiano.it",
+        "full_time_employees": null
     },
     "AMARIN-R.BK": {
         "short_name": "AMARIN PRINTING AND PUBLISHING",
@@ -573,7 +761,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10170",
+        "website": "http://www.amarin.co.th",
+        "full_time_employees": null
     },
     "AMARIN.BK": {
         "short_name": "AMARIN PRINTING AND PUBLISHING",
@@ -585,7 +777,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10170",
+        "website": "http://www.amarin.co.th",
+        "full_time_employees": null
     },
     "ASP.AX": {
         "short_name": "ASPERMONT FPO",
@@ -597,7 +793,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Perth"
+        "state": "WA",
+        "city": "Perth",
+        "zipcode": "6000",
+        "website": "http://www.aspermont.com",
+        "full_time_employees": 79
     },
     "BLUE.MI": {
         "short_name": "BLUE FINANCIAL COMMUNICATION",
@@ -609,7 +809,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20124",
+        "website": "http://www.bluefinancialcommunication.com",
+        "full_time_employees": null
     },
     "BMY.L": {
         "short_name": "BLOOMSBURY PUBLISHING PLC ORD 1",
@@ -621,7 +825,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC1B 3DP",
+        "website": "http://www.bloomsbury.com",
+        "full_time_employees": null
     },
     "BRILL.AS": {
         "short_name": "BRILL KON",
@@ -633,7 +841,11 @@
         "exchange": "AMS",
         "market": "nl_market",
         "country": "Netherlands",
-        "city": "Leiden"
+        "state": null,
+        "city": "Leiden",
+        "zipcode": "2300 PA",
+        "website": "http://www.brill.com",
+        "full_time_employees": 158
     },
     "BST.DE": {
         "short_name": "BASTEI LUEBBE AG  O.N.",
@@ -645,7 +857,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Cologne"
+        "state": null,
+        "city": "Cologne",
+        "zipcode": "51063",
+        "website": "http://www.luebbe.de",
+        "full_time_employees": 231
     },
     "BST.F": {
         "short_name": "BASTEI LUEBBE AG  O.N.",
@@ -657,7 +873,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Cologne"
+        "state": null,
+        "city": "Cologne",
+        "zipcode": "51063",
+        "website": "http://www.luebbe.de",
+        "full_time_employees": 231
     },
     "CAT.JO": {
         "short_name": "Caxton CTP Publish Print",
@@ -669,7 +889,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Johannesburg"
+        "state": null,
+        "city": "Johannesburg",
+        "zipcode": "2196",
+        "website": "http://www.caxton.co.za",
+        "full_time_employees": 5270
     },
     "CATP.JO": {
         "short_name": "Caxton CTP Publish 6%Pf",
@@ -681,7 +905,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Johannesburg"
+        "state": null,
+        "city": "Johannesburg",
+        "zipcode": "2196",
+        "website": "http://www.caxton.co.za",
+        "full_time_employees": 5270
     },
     "CED.MI": {
         "short_name": "CALTAGIRONE EDIT",
@@ -693,7 +921,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00187",
+        "website": "http://www.caltagironeeditore.com",
+        "full_time_employees": 596
     },
     "CFN.LS": {
         "short_name": "COFINA,SGPS",
@@ -705,7 +937,11 @@
         "exchange": "LIS",
         "market": "pt_market",
         "country": "Portugal",
-        "city": "Porto"
+        "state": null,
+        "city": "Porto",
+        "zipcode": "4100-320",
+        "website": "http://www.cofina.pt",
+        "full_time_employees": 713
     },
     "CLE.MI": {
         "short_name": "CLASS EDITORI",
@@ -717,7 +953,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20122",
+        "website": "http://www.classeditori.it",
+        "full_time_employees": 337
     },
     "CMTX": {
         "short_name": "COMTEX NEWS NETWORKS INC",
@@ -729,7 +969,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10017",
+        "website": "http://www.comtex.com",
+        "full_time_employees": 26
     },
     "CUH2.F": {
         "short_name": "CULTURECOM HLDGS  HD -,01",
@@ -741,7 +985,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Hong Kong",
-        "city": "Admiralty"
+        "state": null,
+        "city": "Admiralty",
+        "zipcode": null,
+        "website": "http://www.culturecom.com.hk",
+        "full_time_employees": 238
     },
     "CYBERMEDIA.NS": {
         "short_name": "CYBER MEDIA (INDIA",
@@ -753,7 +1001,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Gurugram"
+        "state": null,
+        "city": "Gurugram",
+        "zipcode": "122001",
+        "website": "http://www.cybermedia.co.in",
+        "full_time_employees": 128
     },
     "DALALSTCOM.NS": {
         "short_name": "DSJ COMMUNICATION",
@@ -765,7 +1017,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400034",
+        "website": "http://www.dsjcommunication.com",
+        "full_time_employees": 3
     },
     "DBCORP.NS": {
         "short_name": "D B CORP LTD",
@@ -777,7 +1033,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Bhopal"
+        "state": null,
+        "city": "Bhopal",
+        "zipcode": "462011",
+        "website": "http://www.dbcorpltd.com",
+        "full_time_employees": 9120
     },
     "DGW2.F": {
         "short_name": "DAILY MAIL GENL A LS-,125",
@@ -789,7 +1049,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W8 5TT",
+        "website": "http://www.dmgt.com",
+        "full_time_employees": null
     },
     "DGW2.SG": {
         "short_name": "Daily Mail & General Trust PLCR",
@@ -801,7 +1065,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W8 5TT",
+        "website": "http://www.dmgt.com",
+        "full_time_employees": null
     },
     "DJCO": {
         "short_name": "Daily Journal Corp. (S.C.)",
@@ -813,7 +1081,11 @@
         "exchange": "NCM",
         "market": "us_market",
         "country": "United States",
-        "city": "Los Angeles"
+        "state": "CA",
+        "city": "Los Angeles",
+        "zipcode": "90012",
+        "website": "http://www.dailyjournal.com",
+        "full_time_employees": 312
     },
     "DMGT.L": {
         "short_name": "DAILY MAIL & GENERAL TRUST PLC ",
@@ -825,7 +1097,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W8 5TT",
+        "website": "http://www.dmgt.com",
+        "full_time_employees": null
     },
     "DMTGF": {
         "short_name": "DAILY MAIL & GENERAL TRUST",
@@ -837,7 +1113,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W8 5TT",
+        "website": "http://www.dmgt.com",
+        "full_time_employees": null
     },
     "DNAMEDIA.NS": {
         "short_name": "DILIGENT MEDIA COR",
@@ -849,7 +1129,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400 013",
+        "website": "http://www.dnaindia.com",
+        "full_time_employees": 52
     },
     "DOBUR.IS": {
         "short_name": "DOGAN BURDA",
@@ -861,7 +1145,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34387",
+        "website": "http://www.doganburda.com",
+        "full_time_employees": 182
     },
     "DST.F": {
         "short_name": "STORYTEL AB B  SK 5",
@@ -873,7 +1161,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "111 28",
+        "website": "http://www.storytel.com",
+        "full_time_employees": 513
     },
     "DTRL": {
         "short_name": "DETROIT LEGAL NEWS CO",
@@ -885,7 +1177,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Detroit"
+        "state": "MI",
+        "city": "Detroit",
+        "zipcode": "48216",
+        "website": null,
+        "full_time_employees": null
     },
     "EDT1.F": {
         "short_name": "CLASS EDITORI A",
@@ -897,7 +1193,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20122",
+        "website": "http://www.classeditori.it",
+        "full_time_employees": 337
     },
     "EDUC": {
         "short_name": "Educational Development Corpora",
@@ -909,7 +1209,11 @@
         "exchange": "NGM",
         "market": "us_market",
         "country": "United States",
-        "city": "Tulsa"
+        "state": "OK",
+        "city": "Tulsa",
+        "zipcode": "74146",
+        "website": "http://www.edcpub.com",
+        "full_time_employees": 201
     },
     "EFS.SG": {
         "short_name": "EFFECTEN-SPIEGEL AG Inhaber-Sta",
@@ -921,7 +1225,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Germany",
-        "city": "D\u00c3\u00bcsseldorf"
+        "state": null,
+        "city": "D\u00c3\u00bcsseldorf",
+        "zipcode": "40237",
+        "website": "http://www.effecten-spiegel.de",
+        "full_time_employees": 11
     },
     "EFS3.SG": {
         "short_name": "EFFECTEN-SPIEGEL AG Inhaber-Vor",
@@ -933,7 +1241,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Germany",
-        "city": "D\u00c3\u00bcsseldorf"
+        "state": null,
+        "city": "D\u00c3\u00bcsseldorf",
+        "zipcode": "40237",
+        "website": "http://www.effecten-spiegel.de",
+        "full_time_employees": 11
     },
     "FMPR": {
         "short_name": "FAME PRODUCTIONS INC",
@@ -945,7 +1257,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10034",
+        "website": "http://www.fameproinc.com",
+        "full_time_employees": 3
     },
     "FNWA.F": {
         "short_name": "FUTURE PLC  LS-,15",
@@ -957,7 +1273,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "Bath"
+        "state": null,
+        "city": "Bath",
+        "zipcode": "BA1 1UA",
+        "website": "http://www.futureplc.com",
+        "full_time_employees": 2037
     },
     "FP.V": {
         "short_name": "FP NEWSPAPERS INC",
@@ -969,7 +1289,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Winnipeg"
+        "state": "MB",
+        "city": "Winnipeg",
+        "zipcode": "R2X 3B6",
+        "website": "http://www.fpnewspapers.com",
+        "full_time_employees": null
     },
     "FUGI": {
         "short_name": "FUEGO ENTERPRISES INC",
@@ -981,7 +1305,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Miami"
+        "state": "FL",
+        "city": "Miami",
+        "zipcode": "33137",
+        "website": "http://www.fuegoenterprisesinc.com",
+        "full_time_employees": null
     },
     "FUTR.L": {
         "short_name": "FUTURE PLC ORD 15P",
@@ -993,7 +1321,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Bath"
+        "state": null,
+        "city": "Bath",
+        "zipcode": "BA1 1UA",
+        "website": "http://www.futureplc.com",
+        "full_time_employees": 2037
     },
     "G6P.DE": {
         "short_name": "GOING PUBLIC MEDIA NA ON",
@@ -1005,7 +1337,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Munich"
+        "state": null,
+        "city": "Munich",
+        "zipcode": "81379",
+        "website": "http://www.goingpublic.de",
+        "full_time_employees": 21
     },
     "G6P.F": {
         "short_name": "GOING PUBLIC MEDIA NA ON",
@@ -1017,7 +1353,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Munich"
+        "state": null,
+        "city": "Munich",
+        "zipcode": "81379",
+        "website": "http://www.goingpublic.de",
+        "full_time_employees": 21
     },
     "GAMB.MI": {
         "short_name": "GAMBERO ROSSO",
@@ -1029,7 +1369,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00152",
+        "website": "http://www.gamberorosso.it",
+        "full_time_employees": null
     },
     "GCI": {
         "short_name": "Gannett Co., Inc.",
@@ -1041,7 +1385,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "McLean"
+        "state": "VA",
+        "city": "McLean",
+        "zipcode": "22107-0910",
+        "website": "http://www.gannett.com",
+        "full_time_employees": 18100
     },
     "GPIW": {
         "short_name": "GRAND PERFECTA INC",
@@ -1053,7 +1401,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Carson City"
+        "state": "NV",
+        "city": "Carson City",
+        "zipcode": "89706",
+        "website": "http://www.grandperfecta.com",
+        "full_time_employees": 1
     },
     "GVC.TO": {
         "short_name": "GLACIER MEDIA INC",
@@ -1065,7 +1417,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V5Y 3P1",
+        "website": "http://www.glaciermedia.ca",
+        "full_time_employees": null
     },
     "GYL.OL": {
         "short_name": "GYLDENDAL ASA",
@@ -1077,7 +1433,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0164",
+        "website": "http://www.gyldendalasa.no",
+        "full_time_employees": null
     },
     "GYLD-A.CO": {
         "short_name": "Gyldendal A A/S",
@@ -1089,7 +1449,11 @@
         "exchange": "CPH",
         "market": "dk_market",
         "country": "Denmark",
-        "city": "Copenhagen"
+        "state": null,
+        "city": "Copenhagen",
+        "zipcode": "1001",
+        "website": "http://www.gyldendal.dk",
+        "full_time_employees": 509
     },
     "GYLD-B.CO": {
         "short_name": "Gyldendal B A/S",
@@ -1101,7 +1465,11 @@
         "exchange": "CPH",
         "market": "dk_market",
         "country": "Denmark",
-        "city": "Copenhagen"
+        "state": null,
+        "city": "Copenhagen",
+        "zipcode": "1001",
+        "website": "http://www.gyldendal.dk",
+        "full_time_employees": 509
     },
     "HMVL.NS": {
         "short_name": "HINDUSTAN MEDIA VE",
@@ -1113,7 +1481,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "New Delhi"
+        "state": null,
+        "city": "New Delhi",
+        "zipcode": "110001",
+        "website": "http://www.hmvl.in",
+        "full_time_employees": 1281
     },
     "HPI2.F": {
         "short_name": "RCS MEDIAGROUP  EO 1",
@@ -1125,7 +1497,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20132",
+        "website": "http://www.rcsmediagroup.it",
+        "full_time_employees": null
     },
     "HRDI": {
         "short_name": "HERE MEDIA INC",
@@ -1137,7 +1513,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Los Angeles"
+        "state": "CA",
+        "city": "Los Angeles",
+        "zipcode": "90024",
+        "website": "http://www.heremedia.com",
+        "full_time_employees": 156
     },
     "HTMEDIA.NS": {
         "short_name": "HT MEDIA LTD",
@@ -1149,7 +1529,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "New Delhi"
+        "state": null,
+        "city": "New Delhi",
+        "zipcode": "110001",
+        "website": "http://www.htmedia.in",
+        "full_time_employees": 1891
     },
     "HURGZ.IS": {
         "short_name": "HURRIYET GZT.",
@@ -1161,7 +1545,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34204",
+        "website": "http://www.hurriyetkurumsal.com",
+        "full_time_employees": 1233
     },
     "IDWM": {
         "short_name": "IDW MEDIA HOLDINGS",
@@ -1173,7 +1561,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Newark"
+        "state": "NJ",
+        "city": "Newark",
+        "zipcode": "07102",
+        "website": "http://www.idwmediaholdings.com",
+        "full_time_employees": 75
     },
     "IEA.F": {
         "short_name": "INFORMA PLC  LS-,001",
@@ -1185,7 +1577,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "SW1P 1WG",
+        "website": "http://www.informa.com",
+        "full_time_employees": null
     },
     "IFJPY": {
         "short_name": "INFORMA PLC",
@@ -1197,7 +1593,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "SW1P 1WG",
+        "website": "http://www.informa.com",
+        "full_time_employees": null
     },
     "IHGZT.IS": {
         "short_name": "IHLAS GAZETECILIK",
@@ -1209,7 +1609,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34197",
+        "website": "http://www.ihlasgazetecilik.com.tr",
+        "full_time_employees": 482
     },
     "IKTO": {
         "short_name": "ITOKK INC",
@@ -1221,7 +1625,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6B 5C6",
+        "website": "http://www.itokk.com",
+        "full_time_employees": null
     },
     "ILK1S.HE": {
         "short_name": "Ilkka-Yhtym Oyj 1",
@@ -1233,7 +1641,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Sein\u00c3\u00a4joki"
+        "state": null,
+        "city": "Sein\u00c3\u00a4joki",
+        "zipcode": "60101",
+        "website": "http://www.ilkka-yhtyma.fi",
+        "full_time_employees": 440
     },
     "ILK2S.HE": {
         "short_name": "Ilkka-Yhtym\u00e4 Oyj 2",
@@ -1245,7 +1657,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Sein\u00c3\u00a4joki"
+        "state": null,
+        "city": "Sein\u00c3\u00a4joki",
+        "zipcode": "60101",
+        "website": "http://www.ilkka-yhtyma.fi",
+        "full_time_employees": 440
     },
     "IMB.F": {
         "short_name": "IMPRESS HOLDINGS INC.",
@@ -1257,7 +1673,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "101-0051",
+        "website": "http://www.impressholdings.com",
+        "full_time_employees": null
     },
     "INF.L": {
         "short_name": "INFORMA PLC ORD 0.1P",
@@ -1269,7 +1689,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "SW1P 1WG",
+        "website": "http://www.informa.com",
+        "full_time_employees": null
     },
     "JAGRAN.NS": {
         "short_name": "JAGRAN PRAKASHAN L",
@@ -1281,7 +1705,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Kanpur"
+        "state": null,
+        "city": "Kanpur",
+        "zipcode": "208005",
+        "website": "http://jplcorp.in",
+        "full_time_employees": 5808
     },
     "JW-A": {
         "short_name": "John Wiley & Sons, Inc.",
@@ -1293,7 +1721,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Hoboken"
+        "state": "NJ",
+        "city": "Hoboken",
+        "zipcode": "07030",
+        "website": "http://www.wiley.com",
+        "full_time_employees": 6900
     },
     "JW-B": {
         "short_name": "John Wiley & Sons, Inc.",
@@ -1305,7 +1737,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Hoboken"
+        "state": "NJ",
+        "city": "Hoboken",
+        "zipcode": "07030",
+        "website": "http://www.wiley.com",
+        "full_time_employees": 6900
     },
     "KSLAV.HE": {
         "short_name": "Keskisuomalainen Oyj A",
@@ -1317,7 +1753,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Jyv\u00c3\u00a4skyl\u00c3\u00a4"
+        "state": null,
+        "city": "Jyv\u00c3\u00a4skyl\u00c3\u00a4",
+        "zipcode": "40320",
+        "website": "http://www.keskisuomalainen.com",
+        "full_time_employees": 2212
     },
     "LE70.F": {
         "short_name": "LEE ENTERPRISES INC. DL 2",
@@ -1329,7 +1769,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Davenport"
+        "state": "IA",
+        "city": "Davenport",
+        "zipcode": "52807",
+        "website": "http://www.lee.net",
+        "full_time_employees": 4524
     },
     "LEE": {
         "short_name": "Lee Enterprises, Incorporated",
@@ -1341,7 +1785,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Davenport"
+        "state": "IA",
+        "city": "Davenport",
+        "zipcode": "52807",
+        "website": "http://www.lee.net",
+        "full_time_employees": 4524
     },
     "LIMA.F": {
         "short_name": "LINGO MEDIA CORP.",
@@ -1353,7 +1801,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5S 1S4",
+        "website": "http://www.lingomedia.com",
+        "full_time_employees": null
     },
     "LM.V": {
         "short_name": "LINGO MEDIA CORPORATION",
@@ -1365,7 +1817,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5S 1S4",
+        "website": "http://www.lingomedia.com",
+        "full_time_employees": null
     },
     "LPLI.JK": {
         "short_name": "Star Pacific Tbk",
@@ -1377,7 +1833,11 @@
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "Tangerang"
+        "state": null,
+        "city": "Tangerang",
+        "zipcode": "15810",
+        "website": "http://www.star-pacific.co.id",
+        "full_time_employees": 10
     },
     "M9Z.SG": {
         "short_name": "Muza S.A. Inhaber-Aktien ZY 2",
@@ -1389,7 +1849,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Poland",
-        "city": "Warsaw"
+        "state": null,
+        "city": "Warsaw",
+        "zipcode": "00-833",
+        "website": "http://www.muza.com.pl",
+        "full_time_employees": null
     },
     "MAHI": {
         "short_name": "MONARCH SERVCES INC",
@@ -1401,7 +1865,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Baltimore"
+        "state": "MD",
+        "city": "Baltimore",
+        "zipcode": "21214",
+        "website": null,
+        "full_time_employees": null
     },
     "MATI-R.BK": {
         "short_name": "MATICHON PUBLIC COMPANY LIMITED",
@@ -1413,7 +1881,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": null,
+        "website": "http://www.matichon.co.th",
+        "full_time_employees": null
     },
     "MATI.BK": {
         "short_name": "MATICHON PUBLIC COMPANY LIMITED",
@@ -1425,7 +1897,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": null,
+        "website": "http://www.matichon.co.th",
+        "full_time_employees": null
     },
     "MDD.F": {
         "short_name": "MONDADORI ED.  EO 0,26",
@@ -1437,7 +1913,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Segrate"
+        "state": "MI",
+        "city": "Segrate",
+        "zipcode": "20090",
+        "website": "http://www.mondadori.it",
+        "full_time_employees": 1845
     },
     "MDP": {
         "short_name": "Meredith Corporation",
@@ -1449,7 +1929,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Des Moines"
+        "state": "IA",
+        "city": "Des Moines",
+        "zipcode": "50309-3023",
+        "website": "http://www.meredith.com",
+        "full_time_employees": 5290
     },
     "MEZ.F": {
         "short_name": "MEREDITH CORP.  DL 1",
@@ -1461,7 +1945,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Des Moines"
+        "state": "IA",
+        "city": "Des Moines",
+        "zipcode": "50309-3023",
+        "website": "http://www.meredith.com",
+        "full_time_employees": 5290
     },
     "MF8.HM": {
         "short_name": "CASH.MEDIEN AG",
@@ -1473,7 +1961,11 @@
         "exchange": "HAM",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Hamburg"
+        "state": null,
+        "city": "Hamburg",
+        "zipcode": "22765",
+        "website": "http://www.cash-medienag.de",
+        "full_time_employees": 17
     },
     "MLEDS.PA": {
         "short_name": "EDITIONS DU SIGNE",
@@ -1485,7 +1977,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Strasbourg"
+        "state": null,
+        "city": "Strasbourg",
+        "zipcode": "67038",
+        "website": "http://www.editionsdusigne.fr",
+        "full_time_employees": null
     },
     "MLIML.PA": {
         "short_name": "IMALLIANCE",
@@ -1497,7 +1993,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Saint Ouen"
+        "state": null,
+        "city": "Saint Ouen",
+        "zipcode": "93400",
+        "website": "http://www.imalliance.fr",
+        "full_time_employees": null
     },
     "MLIMP.PA": {
         "short_name": "IMPRIMERIE CHIRAT",
@@ -1509,7 +2009,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Saint-Just-la-Pendue"
+        "state": null,
+        "city": "Saint-Just-la-Pendue",
+        "zipcode": "42540",
+        "website": "http://www.imprimerie-chirat.fr",
+        "full_time_employees": 187
     },
     "MN.MI": {
         "short_name": "MONDADORI EDIT",
@@ -1521,7 +2025,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Segrate"
+        "state": "MI",
+        "city": "Segrate",
+        "zipcode": "20090",
+        "website": "http://www.mondadori.it",
+        "full_time_employees": 1845
     },
     "MO9.F": {
         "short_name": "MONRIF S.P.A.  EO 0,19",
@@ -1533,7 +2041,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Bologna"
+        "state": "BO",
+        "city": "Bologna",
+        "zipcode": "40138",
+        "website": "http://www.monrifgroup.net",
+        "full_time_employees": 815
     },
     "MON.MI": {
         "short_name": "MONRIF",
@@ -1545,7 +2057,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Bologna"
+        "state": "BO",
+        "city": "Bologna",
+        "zipcode": "40138",
+        "website": "http://www.monrifgroup.net",
+        "full_time_employees": 815
     },
     "MPSLTD.NS": {
         "short_name": "MPS LTD",
@@ -1557,7 +2073,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Noida"
+        "state": null,
+        "city": "Noida",
+        "zipcode": "201307",
+        "website": "http://www.mpslimited.com",
+        "full_time_employees": null
     },
     "MRPT": {
         "short_name": "MACREPORT.NET INC",
@@ -1569,7 +2089,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Marcellus"
+        "state": "NY",
+        "city": "Marcellus",
+        "zipcode": "13108",
+        "website": "http://www.macreportmedia.com",
+        "full_time_employees": 38
     },
     "MRR.F": {
         "short_name": "REACH PLC  LS-,10",
@@ -1581,7 +2105,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "E14 5AP",
+        "website": "http://www.reachplc.com",
+        "full_time_employees": 4184
     },
     "NAVNETEDUL.NS": {
         "short_name": "NAVNEET EDUCATION",
@@ -1593,7 +2121,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400 028",
+        "website": "http://www.navneet.com",
+        "full_time_employees": 2750
     },
     "NINE-R.BK": {
         "short_name": "NATION INTERNATIONAL EDUTAINMEN",
@@ -1605,7 +2137,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10900",
+        "website": "http://www.nine.co.th",
+        "full_time_employees": null
     },
     "NINE.BK": {
         "short_name": "NATION INTERNATIONAL EDUTAINMEN",
@@ -1617,7 +2153,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10900",
+        "website": "http://www.nine.co.th",
+        "full_time_employees": null
     },
     "NMG.BK": {
         "short_name": "NATION MULTIMEDIA GROUP PUBLIC ",
@@ -1629,7 +2169,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10260",
+        "website": "http://www.nationgroup.com",
+        "full_time_employees": null
     },
     "NORTHM.CO": {
         "short_name": "North Media A/S",
@@ -1641,7 +2185,11 @@
         "exchange": "CPH",
         "market": "dk_market",
         "country": "Denmark",
-        "city": "S\u00c3\u00b8borg"
+        "state": null,
+        "city": "S\u00c3\u00b8borg",
+        "zipcode": "2860",
+        "website": "http://www.northmedia.dk",
+        "full_time_employees": 445
     },
     "NYT.F": {
         "short_name": "N.Y. TIMES CL.A  DL-,10",
@@ -1653,7 +2201,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10018",
+        "website": "http://www.nytco.com",
+        "full_time_employees": 4700
     },
     "NYT": {
         "short_name": "New York Times Company (The)",
@@ -1665,7 +2217,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10018",
+        "website": "http://www.nytco.com",
+        "full_time_employees": 4700
     },
     "OPQ.F": {
         "short_name": "ORIENTAL PRESS GRP",
@@ -1677,7 +2233,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Hong Kong",
-        "city": "Tai Po"
+        "state": null,
+        "city": "Tai Po",
+        "zipcode": null,
+        "website": "http://opg.on.cc/tc",
+        "full_time_employees": 1189
     },
     "P2MC.SG": {
         "short_name": "Postmedia Network Canada Corp.R",
@@ -1689,7 +2249,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M4W 3L4",
+        "website": "http://www.postmedia.com",
+        "full_time_employees": null
     },
     "PDOS": {
         "short_name": "PLATINUM STUDIOS INC",
@@ -1701,7 +2265,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Los Angeles"
+        "state": "CA",
+        "city": "Los Angeles",
+        "zipcode": "90064",
+        "website": "http://www.platinumstudios.com",
+        "full_time_employees": 6
     },
     "PEDH": {
         "short_name": "PEOPLES EDUCATIONAL HLDGS INC",
@@ -1713,7 +2281,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Saddle Brook"
+        "state": "NJ",
+        "city": "Saddle Brook",
+        "zipcode": "07663",
+        "website": "http://www.masteryeducation.com",
+        "full_time_employees": 85
     },
     "PES.DE": {
         "short_name": "PEARSON PLC  LS-,25",
@@ -1725,7 +2297,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2R 0RL",
+        "website": "http://www.pearson.com",
+        "full_time_employees": 20000
     },
     "PES.F": {
         "short_name": "PEARSON PLC  LS-,25",
@@ -1737,7 +2313,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2R 0RL",
+        "website": "http://www.pearson.com",
+        "full_time_employees": 20000
     },
     "PESA.F": {
         "short_name": "PEARSON PLC ADR/1 LS-,25",
@@ -1749,7 +2329,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2R 0RL",
+        "website": "http://www.pearson.com",
+        "full_time_employees": 20000
     },
     "PNC-A.TO": {
         "short_name": "POSTMEDIA NETWORK CANADA CORP C",
@@ -1761,7 +2345,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M4W 3L4",
+        "website": "http://www.postmedia.com",
+        "full_time_employees": null
     },
     "PNC-B.TO": {
         "short_name": "POSTMEDIA NETWORK CANADA CORP C",
@@ -1773,7 +2361,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M4W 3L4",
+        "website": "http://www.postmedia.com",
+        "full_time_employees": null
     },
     "POL.OL": {
         "short_name": "POLARIS MEDIA ASA",
@@ -1785,7 +2377,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Trondheim"
+        "state": null,
+        "city": "Trondheim",
+        "zipcode": "7042",
+        "website": "http://www.polarismedia.no",
+        "full_time_employees": 1115
     },
     "POPR.MI": {
         "short_name": "POLIGRAFICI PRINTING",
@@ -1797,7 +2393,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Bologna"
+        "state": "BO",
+        "city": "Bologna",
+        "zipcode": "40138",
+        "website": "http://www.monrifgroup.net/attivita/stampa",
+        "full_time_employees": null
     },
     "POST.BK": {
         "short_name": "BANGKOK POST PUBLIC COMPANY LIM",
@@ -1809,7 +2409,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10110",
+        "website": "http://www.bangkokpost.co.th",
+        "full_time_employees": null
     },
     "PPK.F": {
         "short_name": "NEXT DIGITAL LTD.",
@@ -1821,7 +2425,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Hong Kong",
-        "city": "Tseung Kwan O"
+        "state": null,
+        "city": "Tseung Kwan O",
+        "zipcode": null,
+        "website": "http://www.nextdigital.com.hk",
+        "full_time_employees": 2095
     },
     "PRC.PA": {
         "short_name": "ARTMARKET COM",
@@ -1833,7 +2441,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Neuville sur Saone"
+        "state": null,
+        "city": "Neuville sur Saone",
+        "zipcode": "69270",
+        "website": "http://www.artprice.com",
+        "full_time_employees": 42
     },
     "PSO": {
         "short_name": "Pearson, Plc",
@@ -1845,7 +2457,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2R 0RL",
+        "website": "http://www.pearson.com",
+        "full_time_employees": 20000
     },
     "PSON.L": {
         "short_name": "PEARSON PLC ORD 25P",
@@ -1857,7 +2473,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2R 0RL",
+        "website": "http://www.pearson.com",
+        "full_time_employees": 20000
     },
     "PSORF": {
         "short_name": "PEARSON",
@@ -1869,7 +2489,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2R 0RL",
+        "website": "http://www.pearson.com",
+        "full_time_employees": 20000
     },
     "PUMU.HE": {
         "short_name": "PunaMusta Media Oyj",
@@ -1881,7 +2505,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Joensuu"
+        "state": null,
+        "city": "Joensuu",
+        "zipcode": "80140",
+        "website": "http://www.punamustamedia.fi",
+        "full_time_employees": 650
     },
     "PVGB.F": {
         "short_name": "SING TAO NEWS CORP. CONS.",
@@ -1893,7 +2521,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Hong Kong",
-        "city": "Tseung Kwan O"
+        "state": null,
+        "city": "Tseung Kwan O",
+        "zipcode": null,
+        "website": "http://www.singtaonewscorp.com",
+        "full_time_employees": 1163
     },
     "QRT.L": {
         "short_name": "QUARTO GROUP INCORPORATED COM S",
@@ -1905,7 +2537,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "N7 9BH",
+        "website": "http://www.quarto.com",
+        "full_time_employees": 300
     },
     "RCH.L": {
         "short_name": "REACH PLC ORD 10P",
@@ -1917,7 +2553,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "E14 5AP",
+        "website": "http://www.reachplc.com",
+        "full_time_employees": 4184
     },
     "RCS.MI": {
         "short_name": "RCS MEDIAGROUP",
@@ -1929,7 +2569,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20132",
+        "website": "http://www.rcsmediagroup.it",
+        "full_time_employees": null
     },
     "RDEB.F": {
         "short_name": "RELX PLC  LS -,144397",
@@ -1941,7 +2585,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2N 5JR",
+        "website": "http://www.relx.com",
+        "full_time_employees": 33200
     },
     "RDED.F": {
         "short_name": "RELX ADR/1/4  LS-,144397",
@@ -1953,7 +2601,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2N 5JR",
+        "website": "http://www.relx.com",
+        "full_time_employees": 33200
     },
     "REL.L": {
         "short_name": "RELX PLC ORD 14 51/116P",
@@ -1965,7 +2617,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2N 5JR",
+        "website": "http://www.relx.com",
+        "full_time_employees": 33200
     },
     "RELX": {
         "short_name": "RELX PLC PLC",
@@ -1977,7 +2633,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2N 5JR",
+        "website": "http://www.relx.com",
+        "full_time_employees": 33200
     },
     "REN.AS": {
         "short_name": "RELX",
@@ -1989,7 +2649,11 @@
         "exchange": "AMS",
         "market": "nl_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2N 5JR",
+        "website": "http://www.relx.com",
+        "full_time_employees": 33200
     },
     "RLXXF": {
         "short_name": "RELX PLC",
@@ -2001,7 +2665,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2N 5JR",
+        "website": "http://www.relx.com",
+        "full_time_employees": 33200
     },
     "ROU.BR": {
         "short_name": "ROULARTA",
@@ -2013,7 +2681,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Roeselare"
+        "state": null,
+        "city": "Roeselare",
+        "zipcode": "8800",
+        "website": "http://www.roularta.be",
+        "full_time_employees": 1182
     },
     "RZSMF": {
         "short_name": "RCS MEDIAGROUP",
@@ -2025,7 +2697,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20132",
+        "website": "http://www.rcsmediagroup.it",
+        "full_time_employees": null
     },
     "S24.MI": {
         "short_name": "IL SOLE 24 ORE",
@@ -2037,7 +2713,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20149",
+        "website": "http://www.gruppo24ore.com",
+        "full_time_employees": 839
     },
     "SAA1V.HE": {
         "short_name": "Sanoma Corporation",
@@ -2049,7 +2729,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00100",
+        "website": "http://www.sanoma.com",
+        "full_time_employees": 4853
     },
     "SABEVENTS.NS": {
         "short_name": "SAB EVENTS & GOV N",
@@ -2061,7 +2745,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400053",
+        "website": "http://www.governancenow.com",
+        "full_time_employees": null
     },
     "SADL": {
         "short_name": "SADLIER(WILLIAM H.) INC",
@@ -2073,7 +2761,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10005",
+        "website": "http://www.sadlier.com",
+        "full_time_employees": 157
     },
     "SALN": {
         "short_name": "SALON CITY INC",
@@ -2085,7 +2777,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "West Hollywood"
+        "state": "CA",
+        "city": "West Hollywood",
+        "zipcode": "90069",
+        "website": null,
+        "full_time_employees": 2
     },
     "SAMBHAAV.NS": {
         "short_name": "SAMBHAAV MEDIA LTD",
@@ -2097,7 +2793,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Ahmedabad"
+        "state": null,
+        "city": "Ahmedabad",
+        "zipcode": "380015",
+        "website": "http://www.sambhaav.com",
+        "full_time_employees": 11
     },
     "SANDESH.NS": {
         "short_name": "SANDESH",
@@ -2109,7 +2809,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Ahmedabad"
+        "state": null,
+        "city": "Ahmedabad",
+        "zipcode": "380054",
+        "website": "http://sandesh.com",
+        "full_time_employees": 491
     },
     "SBSNF": {
         "short_name": "SCHIBSTED ASA",
@@ -2121,7 +2825,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0180",
+        "website": "http://www.schibsted.com",
+        "full_time_employees": 5182
     },
     "SBV.SG": {
         "short_name": "SCHWABENVERLAG AG Inhaber-Stamm",
@@ -2133,7 +2841,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Ostfildern"
+        "state": null,
+        "city": "Ostfildern",
+        "zipcode": "73760",
+        "website": "http://www.schwabenverlag.de",
+        "full_time_employees": 106
     },
     "SCHA.OL": {
         "short_name": "SCHIBSTED ASA",
@@ -2145,7 +2857,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0180",
+        "website": "http://www.schibsted.com",
+        "full_time_employees": 5182
     },
     "SCHAND.NS": {
         "short_name": "S CHAND AND COMPAN",
@@ -2157,7 +2873,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "New Delhi"
+        "state": null,
+        "city": "New Delhi",
+        "zipcode": "110044",
+        "website": "http://schandgroup.com",
+        "full_time_employees": 1900
     },
     "SCHB.OL": {
         "short_name": "SCHIBSTED ASA",
@@ -2169,7 +2889,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0180",
+        "website": "http://www.schibsted.com",
+        "full_time_employees": 5182
     },
     "SCHL": {
         "short_name": "Scholastic Corporation",
@@ -2181,7 +2905,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10012",
+        "website": "http://www.scholastic.com",
+        "full_time_employees": 8300
     },
     "SEIF.MI": {
         "short_name": "SOCIETA' EDITORIALE IL FATTO",
@@ -2193,7 +2921,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00184",
+        "website": "http://www.ilfattoquotidiano.it",
+        "full_time_employees": null
     },
     "SGP1.F": {
         "short_name": "SINGAPORE PRESS  SD -,20",
@@ -2205,7 +2937,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "318994",
+        "website": "http://www.sph.com.sg",
+        "full_time_employees": 3540
     },
     "SGPRF": {
         "short_name": "SINGAPORE PRESS HLDGS",
@@ -2217,7 +2953,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "318994",
+        "website": "http://www.sph.com.sg",
+        "full_time_employees": 3540
     },
     "SGPRY": {
         "short_name": "SINGAPORE PRESS HLDGS",
@@ -2229,7 +2969,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "318994",
+        "website": "http://www.sph.com.sg",
+        "full_time_employees": 3540
     },
     "SL1.F": {
         "short_name": "SCHOLASTIC CORP.  DL-,01",
@@ -2241,7 +2985,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10012",
+        "website": "http://www.scholastic.com",
+        "full_time_employees": 8300
     },
     "SNQB.F": {
         "short_name": "SANOMA OYJ",
@@ -2253,7 +3001,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00100",
+        "website": "http://www.sanoma.com",
+        "full_time_employees": 4853
     },
     "SNWS.L": {
         "short_name": "SMITHS NEWS PLC ORD 5P",
@@ -2265,7 +3017,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Swindon"
+        "state": null,
+        "city": "Swindon",
+        "zipcode": "SN2 8UH",
+        "website": "http://www.corporate.smithsnews.co.uk",
+        "full_time_employees": 1804
     },
     "STORY-B.ST": {
         "short_name": "Storytel AB ser. B",
@@ -2277,7 +3033,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "111 28",
+        "website": "http://www.storytel.com",
+        "full_time_employees": 513
     },
     "STRYF": {
         "short_name": "STORYTEL",
@@ -2289,7 +3049,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "111 28",
+        "website": "http://www.storytel.com",
+        "full_time_employees": 513
     },
     "SXV.F": {
         "short_name": "XINHUA WINSH.PUB.+MED.YC1",
@@ -2301,7 +3065,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "China",
-        "city": "Chengdu"
+        "state": null,
+        "city": "Chengdu",
+        "zipcode": "610081",
+        "website": "http://www.winshare.com.cn",
+        "full_time_employees": 7633
     },
     "T39.SI": {
         "short_name": "SPH",
@@ -2313,7 +3081,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "318994",
+        "website": "http://www.sph.com.sg",
+        "full_time_employees": 3540
     },
     "T6N.F": {
         "short_name": "SMITHS NEWS PLC  LS -,05",
@@ -2325,7 +3097,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "Swindon"
+        "state": null,
+        "city": "Swindon",
+        "zipcode": "SN2 8UH",
+        "website": "http://www.corporate.smithsnews.co.uk",
+        "full_time_employees": 1804
     },
     "TMPO.JK": {
         "short_name": "Tempo Intimedia Tbk.",
@@ -2337,7 +3113,11 @@
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "Jakarta"
+        "state": null,
+        "city": "Jakarta",
+        "zipcode": "12210",
+        "website": "http://korporat.tempo.co",
+        "full_time_employees": 536
     },
     "TPCO": {
         "short_name": "Tribune Publishing Company",
@@ -2349,7 +3129,11 @@
         "exchange": "NGM",
         "market": "us_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60654",
+        "website": "http://www.tribpub.com",
+        "full_time_employees": 2865
     },
     "TQC.F": {
         "short_name": "TOM GROUP LTD.  HD-,10",
@@ -2361,7 +3145,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Hong Kong",
-        "city": "Wan Chai"
+        "state": null,
+        "city": "Wan Chai",
+        "zipcode": null,
+        "website": "http://www.tomgroup.com",
+        "full_time_employees": 1243
     },
     "TXGN.SW": {
         "short_name": "TX GROUP N",
@@ -2373,7 +3161,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Zurich"
+        "state": null,
+        "city": "Zurich",
+        "zipcode": "8021",
+        "website": "http://www.tamedia.ch",
+        "full_time_employees": 3557
     },
     "WKL.AS": {
         "short_name": "WOLTERS KLUWER",
@@ -2385,7 +3177,11 @@
         "exchange": "AMS",
         "market": "nl_market",
         "country": "Netherlands",
-        "city": "Alphen aan den Rijn"
+        "state": null,
+        "city": "Alphen aan den Rijn",
+        "zipcode": "2400 BA",
+        "website": "http://wolterskluwer.com",
+        "full_time_employees": 18785
     },
     "WKL.VI": {
         "short_name": "WOLTERS KLUWER NV",
@@ -2397,7 +3193,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Netherlands",
-        "city": "Alphen aan den Rijn"
+        "state": null,
+        "city": "Alphen aan den Rijn",
+        "zipcode": "2400 BA",
+        "website": "http://wolterskluwer.com",
+        "full_time_employees": 18785
     },
     "WOS.F": {
         "short_name": "WOLTERS KLUWER ADR  EO-12",
@@ -2409,7 +3209,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Netherlands",
-        "city": "Alphen aan den Rijn"
+        "state": null,
+        "city": "Alphen aan den Rijn",
+        "zipcode": "2400 BA",
+        "website": "http://wolterskluwer.com",
+        "full_time_employees": 18785
     },
     "WOSB.F": {
         "short_name": "WOLTERS KLUWER NAM. EO-12",
@@ -2421,7 +3225,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Netherlands",
-        "city": "Alphen aan den Rijn"
+        "state": null,
+        "city": "Alphen aan den Rijn",
+        "zipcode": "2400 BA",
+        "website": "http://wolterskluwer.com",
+        "full_time_employees": 18785
     },
     "WTKWY": {
         "short_name": "WOLTERS KLUWERS",
@@ -2433,7 +3241,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Netherlands",
-        "city": "Alphen aan den Rijn"
+        "state": null,
+        "city": "Alphen aan den Rijn",
+        "zipcode": "2400 BA",
+        "website": "http://wolterskluwer.com",
+        "full_time_employees": 18785
     },
     "XLM.L": {
         "short_name": "XLMEDIA PLC ORD USD0.000001",
@@ -2445,7 +3257,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Cyprus",
-        "city": "Limassol"
+        "state": null,
+        "city": "Limassol",
+        "zipcode": "4044",
+        "website": "http://www.xlmedia.com",
+        "full_time_employees": null
     },
     "XLMDF": {
         "short_name": "XLMEDIA PLC",
@@ -2457,7 +3273,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Cyprus",
-        "city": "Limassol"
+        "state": null,
+        "city": "Limassol",
+        "zipcode": "4044",
+        "website": "http://www.xlmedia.com",
+        "full_time_employees": null
     },
     "XPG.F": {
         "short_name": "SCHIBSTED ASA A  NK-,50",
@@ -2469,7 +3289,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0180",
+        "website": "http://www.schibsted.com",
+        "full_time_employees": 5182
     },
     "XPGB.F": {
         "short_name": "SCHIBSTED ASA B  NK-,50",
@@ -2481,7 +3305,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0180",
+        "website": "http://www.schibsted.com",
+        "full_time_employees": 5182
     },
     "Y.TO": {
         "short_name": "YELLOW PAGES LIMITED",
@@ -2493,7 +3321,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H3K 1G6",
+        "website": "http://corporate.yp.ca",
+        "full_time_employees": null
     },
     "YMI.F": {
         "short_name": "YELLOW PAGES LTD",
@@ -2505,7 +3337,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H3K 1G6",
+        "website": "http://corporate.yp.ca",
+        "full_time_employees": null
     },
     "YYB.SI": {
         "short_name": "$ Arion Ent",
@@ -2517,6 +3353,10 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "238868",
+        "website": "http://www.egl.com.sg",
+        "full_time_employees": null
     }
 }

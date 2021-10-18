@@ -9,7 +9,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00150",
+        "website": "http://www.fellowfinance.fi",
+        "full_time_employees": 46
     },
     "FRU.DE": {
         "short_name": "FERRATUM OYJ",
@@ -21,7 +25,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00520",
+        "website": "http://www.ferratumgroup.com",
+        "full_time_employees": 640
     },
     "FRU.F": {
         "short_name": "FERRATUM OYJ",
@@ -33,6 +41,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00520",
+        "website": "http://www.ferratumgroup.com",
+        "full_time_employees": 640
     }
 }

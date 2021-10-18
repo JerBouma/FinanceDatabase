@@ -9,7 +9,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Moschato"
+        "state": null,
+        "city": "Moschato",
+        "zipcode": "18344",
+        "website": "http://www.centric.gr",
+        "full_time_employees": 56
     },
     "INLOT.AT": {
         "short_name": "INTRALOT S.A. (CR)",
@@ -21,7 +25,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "151 25",
+        "website": "http://www.intralot.com",
+        "full_time_employees": 2119
     },
     "OPAP.AT": {
         "short_name": "OPAP S.A. (CR)",
@@ -33,6 +41,10 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "104 42",
+        "website": "http://www.opap.gr",
+        "full_time_employees": 1473
     }
 }

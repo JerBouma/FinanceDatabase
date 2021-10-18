@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Brazil",
-        "city": "Itaja\u00c3\u00ad"
+        "state": "SC",
+        "city": "Itaja\u00c3\u00ad",
+        "zipcode": "88301-600",
+        "website": "http://www.brf-global.com",
+        "full_time_employees": 95000
     },
     "JBSAYN.MX": {
         "short_name": "JBS SA",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
+        "state": "SP",
+        "city": "S\u00c3\u00a3o Paulo",
+        "zipcode": "05118-100",
+        "website": "http://www.jbs.com.br",
+        "full_time_employees": 250000
     },
     "KEPEN.AT": {
         "short_name": "FLOUR MILLS KEPENOS S.A. (CR)",
@@ -33,7 +41,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Patras"
+        "state": null,
+        "city": "Patras",
+        "zipcode": "250 18",
+        "website": "http://www.kepenos.gr",
+        "full_time_employees": 118
     },
     "KRI.AT": {
         "short_name": "KRI-KRI MILK INDUSTRY S.A (CR)",
@@ -45,7 +57,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Serres"
+        "state": null,
+        "city": "Serres",
+        "zipcode": "621 25",
+        "website": "http://www.krikri.gr",
+        "full_time_employees": 433
     },
     "KYLO.AT": {
         "short_name": "Flour Mills Loulis S.A.(CR)",
@@ -57,7 +73,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Almyros"
+        "state": null,
+        "city": "Almyros",
+        "zipcode": "370 08",
+        "website": "http://www.loulismills.gr",
+        "full_time_employees": 338
     },
     "KYSA.AT": {
         "short_name": "C. Sarantopoulos Flour Mills",
@@ -69,7 +89,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Keratsini"
+        "state": null,
+        "city": "Keratsini",
+        "zipcode": "187 56",
+        "website": "http://www.ksarantopoulos.gr",
+        "full_time_employees": 59
     },
     "NESM.DE": {
         "short_name": "NESTLE NAM. ADR/1 SF 1",
@@ -81,7 +105,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Switzerland",
-        "city": "Vevey"
+        "state": null,
+        "city": "Vevey",
+        "zipcode": "1800",
+        "website": "http://www.nestle.com",
+        "full_time_employees": 273000
     },
     "NESNN.MX": {
         "short_name": "NESTLE SA",
@@ -93,7 +121,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Switzerland",
-        "city": "Vevey"
+        "state": null,
+        "city": "Vevey",
+        "zipcode": "1800",
+        "website": "http://www.nestle.com",
+        "full_time_employees": 273000
     },
     "NIKAS.AT": {
         "short_name": "P. G. NIKAS S.A.(CR)",
@@ -105,7 +137,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Agios Stefanos"
+        "state": null,
+        "city": "Agios Stefanos",
+        "zipcode": "145 65",
+        "website": "http://www.nikas.gr",
+        "full_time_employees": 218
     },
     "NOMDN.MX": {
         "short_name": "NOMAD FOODS LIMITED",
@@ -117,7 +153,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United Kingdom",
-        "city": "Feltham"
+        "state": null,
+        "city": "Feltham",
+        "zipcode": "TW14 8HA",
+        "website": "http://www.nomadfoods.com",
+        "full_time_employees": 4593
     },
     "PRABHAT.BO": {
         "short_name": "Prabhat Dairy Limited",
@@ -129,7 +169,11 @@
         "exchange": "BSE",
         "market": "in_market",
         "country": "India",
-        "city": "Ahmednagar"
+        "state": null,
+        "city": "Ahmednagar",
+        "zipcode": "413720",
+        "website": "http://www.prabhat-india.in",
+        "full_time_employees": 56
     },
     "YUII": {
         "short_name": "YUHE INTERNATIONAL INC",
@@ -141,6 +185,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Weifang"
+        "state": null,
+        "city": "Weifang",
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": 1279
     }
 }

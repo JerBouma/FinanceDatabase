@@ -9,7 +9,11 @@
         "exchange": "SHZ",
         "market": "cn_market",
         "country": "China",
-        "city": "Shenzhen"
+        "state": null,
+        "city": "Shenzhen",
+        "zipcode": "518040",
+        "website": "http://www.fmscm.com",
+        "full_time_employees": null
     },
     "0357.HK": {
         "short_name": "MEILAN AIRPORT",
@@ -21,7 +25,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Haikou"
+        "state": null,
+        "city": "Haikou",
+        "zipcode": "571126",
+        "website": "http://www.mlairport.com",
+        "full_time_employees": 1051
     },
     "0694.HK": {
         "short_name": "BEIJING AIRPORT",
@@ -33,7 +41,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100621",
+        "website": "http://www.bcia.com.cn",
+        "full_time_employees": 1556
     },
     "169.F": {
         "short_name": "AEROPORTO GUG.MARCO.D.BO.",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Bologna"
+        "state": "BO",
+        "city": "Bologna",
+        "zipcode": "40132",
+        "website": "http://www.bologna-airport.it",
+        "full_time_employees": 471
     },
     "1848.HK": {
         "short_name": "CALC",
@@ -57,7 +73,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Admiralty"
+        "state": null,
+        "city": "Admiralty",
+        "zipcode": null,
+        "website": "http://www.calc.com.hk",
+        "full_time_employees": 162
     },
     "4031.SR": {
         "short_name": "Saudi Ground Services Co.",
@@ -69,7 +89,11 @@
         "exchange": "SAU",
         "market": "sr_market",
         "country": "Saudi Arabia",
-        "city": "Jeddah"
+        "state": null,
+        "city": "Jeddah",
+        "zipcode": "21572",
+        "website": "http://www.saudiags.com",
+        "full_time_employees": null
     },
     "5609.TWO": {
         "short_name": "DIMERCO EXPRESS CORPORATION",
@@ -81,7 +105,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taipei"
+        "state": null,
+        "city": "Taipei",
+        "zipcode": "114",
+        "website": "http://www.dimerco.com",
+        "full_time_employees": null
     },
     "600004.SS": {
         "short_name": "GUANGZHOU BAIYUN INTERNATIONAL ",
@@ -93,7 +121,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Guangzhou"
+        "state": null,
+        "city": "Guangzhou",
+        "zipcode": "510000",
+        "website": "http://www.guangzhouairportonline.com",
+        "full_time_employees": 11360
     },
     "6004.SR": {
         "short_name": "Saudi Airlines Catering Co.",
@@ -105,7 +137,11 @@
         "exchange": "SAU",
         "market": "sr_market",
         "country": "Saudi Arabia",
-        "city": "Jeddah"
+        "state": null,
+        "city": "Jeddah",
+        "zipcode": "21413",
+        "website": "http://www.saudiacatering.com/en/home",
+        "full_time_employees": null
     },
     "600897.SS": {
         "short_name": "XIAMEN INTERNATIONAL AIRPORT GR",
@@ -117,7 +153,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Xiamen"
+        "state": null,
+        "city": "Xiamen",
+        "zipcode": "361006",
+        "website": "http://www.xiamenairport.com.cn",
+        "full_time_employees": 3276
     },
     "9377.T": {
         "short_name": "AGP CORP",
@@ -129,7 +169,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "144-0041",
+        "website": "http://www.agpgroup.co.jp",
+        "full_time_employees": null
     },
     "9706.T": {
         "short_name": "JAPAN AIRPORT TERMINAL CO",
@@ -141,7 +185,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "144-0041",
+        "website": "http://www.tokyo-airport-bldg.co.jp",
+        "full_time_employees": 3095
     },
     "9K0.F": {
         "short_name": "AVATION PLC  LS-,01",
@@ -153,7 +201,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "169370",
+        "website": "http://www.avation.net",
+        "full_time_employees": 23
     },
     "A44.F": {
         "short_name": "AENA SME S.A.  EO 10",
@@ -165,7 +217,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28042",
+        "website": "http://www.aena.es",
+        "full_time_employees": 8270
     },
     "AAWW": {
         "short_name": "Atlas Air Worldwide Holdings",
@@ -177,7 +233,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Purchase"
+        "state": "NY",
+        "city": "Purchase",
+        "zipcode": "10577-2543",
+        "website": "http://www.atlasairworldwide.com",
+        "full_time_employees": 4061
     },
     "ACKDF": {
         "short_name": "AUCKLAND INTERNATIONAL AIRPORT",
@@ -189,7 +249,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "New Zealand",
-        "city": "Manukau"
+        "state": null,
+        "city": "Manukau",
+        "zipcode": "2022",
+        "website": "http://www.aucklandairport.co.nz",
+        "full_time_employees": 527
     },
     "ADB.MI": {
         "short_name": "AEROPORTO GUGLIELMO MARCONI DI ",
@@ -201,7 +265,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Bologna"
+        "state": "BO",
+        "city": "Bologna",
+        "zipcode": "40132",
+        "website": "http://www.bologna-airport.it",
+        "full_time_employees": 471
     },
     "ADP.PA": {
         "short_name": "ADP",
@@ -213,7 +281,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Tremblay-en-France"
+        "state": null,
+        "city": "Tremblay-en-France",
+        "zipcode": "93290",
+        "website": "http://www.parisaeroport.fr",
+        "full_time_employees": 22448
     },
     "ADPA.VI": {
         "short_name": "ADP",
@@ -225,7 +297,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "France",
-        "city": "Tremblay-en-France"
+        "state": null,
+        "city": "Tremblay-en-France",
+        "zipcode": "93290",
+        "website": "http://www.parisaeroport.fr",
+        "full_time_employees": 22448
     },
     "AED.F": {
         "short_name": "GRUPO AEROPORTU. SUR. B",
@@ -237,7 +313,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Mexico",
-        "city": "Mexico City"
+        "state": "DF",
+        "city": "Mexico City",
+        "zipcode": "05120",
+        "website": "http://www.asur.com.mx",
+        "full_time_employees": 1555
     },
     "AEDA.F": {
         "short_name": "GRUPO AEROPORTU. B ADR/10",
@@ -249,7 +329,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Mexico",
-        "city": "Mexico City"
+        "state": "DF",
+        "city": "Mexico City",
+        "zipcode": "05120",
+        "website": "http://www.asur.com.mx",
+        "full_time_employees": 1555
     },
     "AENA.MC": {
         "short_name": "AENA, S.M.E., S.A.",
@@ -261,7 +345,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28042",
+        "website": "http://www.aena.es",
+        "full_time_employees": 8270
     },
     "AENA.VI": {
         "short_name": "AENA SA",
@@ -273,7 +361,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28042",
+        "website": "http://www.aena.es",
+        "full_time_employees": 8270
     },
     "AEOXF": {
         "short_name": "AEROPORTS DE PARIS",
@@ -285,7 +377,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "France",
-        "city": "Tremblay-en-France"
+        "state": null,
+        "city": "Tremblay-en-France",
+        "zipcode": "93290",
+        "website": "http://www.parisaeroport.fr",
+        "full_time_employees": 22448
     },
     "AER": {
         "short_name": "AerCap Holdings N.V.",
@@ -297,7 +393,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "D02 YX20",
+        "website": "http://www.aercap.com",
+        "full_time_employees": 376
     },
     "AIA.AX": {
         "short_name": "AUCK AIRPT FPO NZX",
@@ -309,7 +409,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "New Zealand",
-        "city": "Manukau"
+        "state": null,
+        "city": "Manukau",
+        "zipcode": "2022",
+        "website": "http://www.aucklandairport.co.nz",
+        "full_time_employees": 527
     },
     "AIA.NZ": {
         "short_name": "Auckland International Airport ",
@@ -321,7 +425,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Manukau"
+        "state": null,
+        "city": "Manukau",
+        "zipcode": "2022",
+        "website": "http://www.aucklandairport.co.nz",
+        "full_time_employees": 527
     },
     "AIPUY": {
         "short_name": "AIRPORTS OF THAILAND PUBLIC CO",
@@ -333,7 +441,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10210",
+        "website": "http://www.airportthai.co.th",
+        "full_time_employees": null
     },
     "AIR.L": {
         "short_name": "AIR PARTNER PLC ORD 1P",
@@ -345,7 +457,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Gatwick"
+        "state": null,
+        "city": "Gatwick",
+        "zipcode": "RH6 0PA",
+        "website": "http://www.airpartner.com",
+        "full_time_employees": 450
     },
     "ANNSF": {
         "short_name": "AENA SME S.A.",
@@ -357,7 +473,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28042",
+        "website": "http://www.aena.es",
+        "full_time_employees": 8270
     },
     "AOT-R.BK": {
         "short_name": "AIRPORTS OF THAILAND PUBLIC COM",
@@ -369,7 +489,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10210",
+        "website": "http://www.airportthai.co.th",
+        "full_time_employees": null
     },
     "AOT.BK": {
         "short_name": "AIRPORTS OF THAILAND PUBLIC COM",
@@ -381,7 +505,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10210",
+        "website": "http://www.airportthai.co.th",
+        "full_time_employees": null
     },
     "APTPF": {
         "short_name": "AIRPORTS OF THAILAND PUBLIC CO",
@@ -393,7 +521,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10210",
+        "website": "http://www.airportthai.co.th",
+        "full_time_employees": null
     },
     "ARRPY": {
         "short_name": "AEROPORTS DE PARIS",
@@ -405,7 +537,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "France",
-        "city": "Tremblay-en-France"
+        "state": null,
+        "city": "Tremblay-en-France",
+        "zipcode": "93290",
+        "website": "http://www.parisaeroport.fr",
+        "full_time_employees": 22448
     },
     "ASLE": {
         "short_name": "AerSale Corporation",
@@ -417,7 +553,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Coral Gables"
+        "state": "FL",
+        "city": "Coral Gables",
+        "zipcode": "33134",
+        "website": "http://www.aersale.com",
+        "full_time_employees": 470
     },
     "ASR": {
         "short_name": "Grupo Aeroportuario del Sureste",
@@ -429,7 +569,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Mexico",
-        "city": "Mexico City"
+        "state": "DF",
+        "city": "Mexico City",
+        "zipcode": "05120",
+        "website": "http://www.asur.com.mx",
+        "full_time_employees": 1555
     },
     "ASURB.MX": {
         "short_name": "GPO AEROPORTUARIO DEL SURESTE S",
@@ -441,7 +585,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Mexico",
-        "city": "Mexico City"
+        "state": "DF",
+        "city": "Mexico City",
+        "zipcode": "05120",
+        "website": "http://www.asur.com.mx",
+        "full_time_employees": 1555
     },
     "AUKNY": {
         "short_name": "AUCKLAND INTERNATIONAL AIRPORT",
@@ -453,7 +601,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "New Zealand",
-        "city": "Manukau"
+        "state": null,
+        "city": "Manukau",
+        "zipcode": "2022",
+        "website": "http://www.aucklandairport.co.nz",
+        "full_time_employees": 527
     },
     "AVAP.L": {
         "short_name": "AVATION PLC ORD 1P",
@@ -465,7 +617,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "169370",
+        "website": "http://www.avation.net",
+        "full_time_employees": 23
     },
     "B3N.F": {
         "short_name": "MENZIES PLC -JOHN- LS-,25",
@@ -477,7 +633,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "Edinburgh"
+        "state": null,
+        "city": "Edinburgh",
+        "zipcode": "EH12 9DJ",
+        "website": "http://www.menziesaviation.com",
+        "full_time_employees": 23986
     },
     "BAFS-R.BK": {
         "short_name": "BANGKOK AVIATION FUEL SERVICES",
@@ -489,7 +649,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10210",
+        "website": "http://www.bafsthai.com",
+        "full_time_employees": null
     },
     "BAFS.BK": {
         "short_name": "BANGKOK AVIATION FUEL SERVICES",
@@ -501,7 +665,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10210",
+        "website": "http://www.bafsthai.com",
+        "full_time_employees": null
     },
     "BBAVF": {
         "short_name": "SIGNATURE AVIATION PLC",
@@ -513,7 +681,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W1U 1QY",
+        "website": "http://www.signatureaviation.com",
+        "full_time_employees": null
     },
     "BBAVY": {
         "short_name": "SIGNATURE AVIATION PLC UNSPON A",
@@ -525,7 +697,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W1U 1QY",
+        "website": "http://www.signatureaviation.com",
+        "full_time_employees": null
     },
     "BJ1.F": {
         "short_name": "BEIJING C.INTL AIR.-H-YC1",
@@ -537,7 +713,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100621",
+        "website": "http://www.bcia.com.cn",
+        "full_time_employees": 1556
     },
     "BJCHF": {
         "short_name": "BEIJING CAPITAL INT AIRPORT",
@@ -549,7 +729,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100621",
+        "website": "http://www.bcia.com.cn",
+        "full_time_employees": 1556
     },
     "BJCHY": {
         "short_name": "BEIJING CAPITAL INT AIRPORT",
@@ -561,7 +745,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100621",
+        "website": "http://www.bcia.com.cn",
+        "full_time_employees": 1556
     },
     "BZTA.F": {
         "short_name": "AUCKLD INTL AIRPORT O.N.",
@@ -573,7 +761,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "New Zealand",
-        "city": "Manukau"
+        "state": null,
+        "city": "Manukau",
+        "zipcode": "2022",
+        "website": "http://www.aucklandairport.co.nz",
+        "full_time_employees": 527
     },
     "CAAP.BA": {
         "short_name": "CORPORACION AMERIC",
@@ -585,7 +777,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Luxembourg",
-        "city": "Luxembourg City"
+        "state": null,
+        "city": "Luxembourg City",
+        "zipcode": "1643",
+        "website": "http://www.caap.aero",
+        "full_time_employees": 5822
     },
     "CAAP": {
         "short_name": "Corporacion America Airports SA",
@@ -597,7 +793,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Luxembourg",
-        "city": "Luxembourg City"
+        "state": null,
+        "city": "Luxembourg City",
+        "zipcode": "1643",
+        "website": "http://www.caap.aero",
+        "full_time_employees": 5822
     },
     "CASS.JK": {
         "short_name": "Cardig Aero Services Tbk.",
@@ -609,7 +809,11 @@
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "Jakarta Timur"
+        "state": null,
+        "city": "Jakarta Timur",
+        "zipcode": "13650",
+        "website": "http://casgroup.co.id",
+        "full_time_employees": 2223
     },
     "CHHCF": {
         "short_name": "CHC GROUP LLC / CHC FIN LTD",
@@ -621,7 +825,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Irving"
+        "state": "TX",
+        "city": "Irving",
+        "zipcode": "75039",
+        "website": "http://www.chcheli.com",
+        "full_time_employees": null
     },
     "CLEBI.IS": {
         "short_name": "CELEBI",
@@ -633,7 +841,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": null,
+        "website": "http://www.celebiyatirimci.com",
+        "full_time_employees": 10009
     },
     "DOC.VI": {
         "short_name": "DO & CO AKTIENGESELLSCHAFT",
@@ -645,7 +857,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1010",
+        "website": "http://www.doco.com",
+        "full_time_employees": 8075
     },
     "DOCO.IS": {
         "short_name": "DO-CO",
@@ -657,7 +873,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1010",
+        "website": "http://www.doco.com",
+        "full_time_employees": 8075
     },
     "DOQ.F": {
         "short_name": "DO + CO AG",
@@ -669,7 +889,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1010",
+        "website": "http://www.doco.com",
+        "full_time_employees": 8075
     },
     "EENNF": {
         "short_name": "ENAV S.P.A.",
@@ -681,7 +905,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00138",
+        "website": "http://www.enav.it",
+        "full_time_employees": 4147
     },
     "ENAV.MI": {
         "short_name": "ENAV",
@@ -693,7 +921,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00138",
+        "website": "http://www.enav.it",
+        "full_time_employees": 4147
     },
     "ENV.F": {
         "short_name": "ENAV S.P.A.  EO 1",
@@ -705,7 +937,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00138",
+        "website": "http://www.enav.it",
+        "full_time_employees": 4147
     },
     "FAI.F": {
         "short_name": "FINNAIR OYJ  EO-,85",
@@ -717,7 +953,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Finland",
-        "city": "Vantaa"
+        "state": null,
+        "city": "Vantaa",
+        "zipcode": "01053",
+        "website": "http://company.finnair.com",
+        "full_time_employees": 5962
     },
     "FHZN.SW": {
         "short_name": "FLUGHAFEN ZUERICH N",
@@ -729,7 +969,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Zurich"
+        "state": null,
+        "city": "Zurich",
+        "zipcode": "8058",
+        "website": "http://www.flughafen-zuerich.ch",
+        "full_time_employees": 1788
     },
     "FIA1S.HE": {
         "short_name": "Finnair Oyj",
@@ -741,7 +985,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Vantaa"
+        "state": null,
+        "city": "Vantaa",
+        "zipcode": "01053",
+        "website": "http://company.finnair.com",
+        "full_time_employees": 5962
     },
     "FNNNF": {
         "short_name": "FINNAIR OYJ",
@@ -753,7 +1001,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Finland",
-        "city": "Vantaa"
+        "state": null,
+        "city": "Vantaa",
+        "zipcode": "01053",
+        "website": "http://company.finnair.com",
+        "full_time_employees": 5962
     },
     "FPRUY": {
         "short_name": "FRAPORT AG",
@@ -765,7 +1017,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Germany",
-        "city": "Frankfurt am Main"
+        "state": null,
+        "city": "Frankfurt am Main",
+        "zipcode": "60547",
+        "website": "http://www.fraport.com",
+        "full_time_employees": 21218
     },
     "FRA.DE": {
         "short_name": "FRAPORT AG FFM.AIRPORT",
@@ -777,7 +1033,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Frankfurt am Main"
+        "state": null,
+        "city": "Frankfurt am Main",
+        "zipcode": "60547",
+        "website": "http://www.fraport.com",
+        "full_time_employees": 21218
     },
     "FRA.F": {
         "short_name": "FRAPORT AG FFM.AIRPORT",
@@ -789,7 +1049,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Frankfurt am Main"
+        "state": null,
+        "city": "Frankfurt am Main",
+        "zipcode": "60547",
+        "website": "http://www.fraport.com",
+        "full_time_employees": 21218
     },
     "FRA.VI": {
         "short_name": "FRAPORT AG",
@@ -801,7 +1065,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Germany",
-        "city": "Frankfurt am Main"
+        "state": null,
+        "city": "Frankfurt am Main",
+        "zipcode": "60547",
+        "website": "http://www.fraport.com",
+        "full_time_employees": 21218
     },
     "FRAS.F": {
         "short_name": "FRAPORT AG  ADR 2/1 O.N.",
@@ -813,7 +1081,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Frankfurt am Main"
+        "state": null,
+        "city": "Frankfurt am Main",
+        "zipcode": "60547",
+        "website": "http://www.fraport.com",
+        "full_time_employees": 21218
     },
     "G7A.F": {
         "short_name": "GR.AERO.D.CEN.NOR.B ADR/8",
@@ -825,7 +1097,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Mexico",
-        "city": "San Pedro Garza Garc\u00c3\u00ada"
+        "state": "NL",
+        "city": "San Pedro Garza Garc\u00c3\u00ada",
+        "zipcode": "66269",
+        "website": "http://www.oma.aero",
+        "full_time_employees": 870
     },
     "G9N.F": {
         "short_name": "GRUPO AERO.D.PAC.B ADR/10",
@@ -837,7 +1113,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Mexico",
-        "city": "Guadalajara"
+        "state": "JA",
+        "city": "Guadalajara",
+        "zipcode": "44530",
+        "website": "http://www.aeropuertosgap.com.mx",
+        "full_time_employees": 1677
     },
     "G9N1.F": {
         "short_name": "GRUPO AEROP.DEL PAC.SAB B",
@@ -849,7 +1129,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Mexico",
-        "city": "Guadalajara"
+        "state": "JA",
+        "city": "Guadalajara",
+        "zipcode": "44530",
+        "website": "http://www.aeropuertosgap.com.mx",
+        "full_time_employees": 1677
     },
     "GAPB.MX": {
         "short_name": "GPO AEROPORTUARIO DEL PACIFICO ",
@@ -861,7 +1145,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Mexico",
-        "city": "Guadalajara"
+        "state": "JA",
+        "city": "Guadalajara",
+        "zipcode": "44530",
+        "website": "http://www.aeropuertosgap.com.mx",
+        "full_time_employees": 1677
     },
     "GIAA.JK": {
         "short_name": "Garuda Indonesia (Persero) Tbk.",
@@ -873,7 +1161,11 @@
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "Jakarta"
+        "state": null,
+        "city": "Jakarta",
+        "zipcode": "10110",
+        "website": "http://www.garuda-indonesia.com",
+        "full_time_employees": 15368
     },
     "GLOBALVECT.NS": {
         "short_name": "GLOBAL VECTRA HELI",
@@ -885,7 +1177,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400056",
+        "website": "http://www.globalhelicorp.com",
+        "full_time_employees": 400
     },
     "GMAA.L": {
         "short_name": "GAMA AVIATION PLC ORD 1P",
@@ -897,7 +1193,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Farnborough"
+        "state": null,
+        "city": "Farnborough",
+        "zipcode": "GU14 6FE",
+        "website": "http://www.gamaaviation.com",
+        "full_time_employees": 780
     },
     "GMRINFRA.NS": {
         "short_name": "GMR INFRASTRUCTURE",
@@ -909,7 +1209,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "New Delhi"
+        "state": null,
+        "city": "New Delhi",
+        "zipcode": "110 037",
+        "website": "http://www.gmrgroup.in/home/#our-journey/slide11",
+        "full_time_employees": 292
     },
     "GVKPIL.NS": {
         "short_name": "GVK POWER & INFRAS",
@@ -921,7 +1225,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Secunderabad"
+        "state": null,
+        "city": "Secunderabad",
+        "zipcode": "500003",
+        "website": "http://www.gvk.com",
+        "full_time_employees": 2362
     },
     "HAO.F": {
         "short_name": "HAINAN MEILAN INT.AIR.YC1",
@@ -933,7 +1241,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "China",
-        "city": "Haikou"
+        "state": null,
+        "city": "Haikou",
+        "zipcode": "571126",
+        "website": "http://www.mlairport.com",
+        "full_time_employees": 1051
     },
     "HELI.JK": {
         "short_name": "Jaya Trishindo Tbk.",
@@ -945,7 +1257,11 @@
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "Jakarta"
+        "state": null,
+        "city": "Jakarta",
+        "zipcode": "11620",
+        "website": "http://www.jatigroup.com",
+        "full_time_employees": 31
     },
     "HMCTF": {
         "short_name": "HAINAN MEILAN INTL AIRPORT CO L",
@@ -957,7 +1273,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Haikou"
+        "state": null,
+        "city": "Haikou",
+        "zipcode": "571126",
+        "website": "http://www.mlairport.com",
+        "full_time_employees": 1051
     },
     "IATA.JK": {
         "short_name": "Indonesia Transport & Infrastru",
@@ -969,7 +1289,11 @@
         "exchange": "JKT",
         "market": "id_market",
         "country": "Indonesia",
-        "city": "Jakarta Pusat"
+        "state": null,
+        "city": "Jakarta Pusat",
+        "zipcode": "10340",
+        "website": "http://www.indonesia-air.com",
+        "full_time_employees": 116
     },
     "ICEAIR.IC": {
         "short_name": "Icelandair Group hf.",
@@ -981,7 +1305,11 @@
         "exchange": "ICE",
         "market": "ic_market",
         "country": "Iceland",
-        "city": "Reykjavik"
+        "state": null,
+        "city": "Reykjavik",
+        "zipcode": "101",
+        "website": "http://www.icelandairgroup.is",
+        "full_time_employees": 1531
     },
     "JETR": {
         "short_name": "STAR JETS INTERNATIONAL INC",
@@ -993,7 +1321,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10022",
+        "website": "http://www.private-jet-charter-flight.com",
+        "full_time_employees": null
     },
     "JTTRY": {
         "short_name": "JAPAN AIRPORT TERMINAL CO",
@@ -1005,7 +1337,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "144-0041",
+        "website": "http://www.tokyo-airport-bldg.co.jp",
+        "full_time_employees": 3095
     },
     "KBHL.CO": {
         "short_name": "Kbenhavns Lufthavne A/S",
@@ -1017,7 +1353,11 @@
         "exchange": "CPH",
         "market": "dk_market",
         "country": "Denmark",
-        "city": "Kastrup"
+        "state": null,
+        "city": "Kastrup",
+        "zipcode": "2770",
+        "website": "http://www.cph.dk",
+        "full_time_employees": 2617
     },
     "KLH.F": {
         "short_name": "KOBENH.LUFTHAV.NAM. DK100",
@@ -1029,7 +1369,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Denmark",
-        "city": "Kastrup"
+        "state": null,
+        "city": "Kastrup",
+        "zipcode": "2770",
+        "website": "http://www.cph.dk",
+        "full_time_employees": 2617
     },
     "MIC": {
         "short_name": "Macquarie Infrastructure Corpor",
@@ -1041,7 +1385,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10019",
+        "website": "http://www.micinc.com",
+        "full_time_employees": 2224
     },
     "MLAAE.PA": {
         "short_name": "CAIRE",
@@ -1053,7 +1401,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Matoury"
+        "state": null,
+        "city": "Matoury",
+        "zipcode": "97351",
+        "website": "http://www.airguyane.com",
+        "full_time_employees": null
     },
     "MNZS.L": {
         "short_name": "MENZIES(JOHN) PLC ORD 25P",
@@ -1065,7 +1417,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Edinburgh"
+        "state": null,
+        "city": "Edinburgh",
+        "zipcode": "EH12 9DJ",
+        "website": "http://www.menziesaviation.com",
+        "full_time_employees": 23986
     },
     "NYVQ.F": {
         "short_name": "AIRPORTS THAIL.-NVDR-BA 1",
@@ -1077,7 +1433,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10210",
+        "website": "http://www.airportthai.co.th",
+        "full_time_employees": null
     },
     "O3H.SG": {
         "short_name": "SIA ENGINEERING CO. LTD. Regist",
@@ -1089,7 +1449,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "819831",
+        "website": "http://www.siaec.com.sg",
+        "full_time_employees": 6761
     },
     "OMAB.MX": {
         "short_name": "GRUPO AEROPORTUARIO DEL CENTRO ",
@@ -1101,7 +1465,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Mexico",
-        "city": "San Pedro Garza Garc\u00c3\u00ada"
+        "state": "NL",
+        "city": "San Pedro Garza Garc\u00c3\u00ada",
+        "zipcode": "66269",
+        "website": "http://www.oma.aero",
+        "full_time_employees": 870
     },
     "OMAB": {
         "short_name": "Grupo Aeroportuario del Centro ",
@@ -1113,7 +1481,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "Mexico",
-        "city": "San Pedro Garza Garc\u00c3\u00ada"
+        "state": "NL",
+        "city": "San Pedro Garza Garc\u00c3\u00ada",
+        "zipcode": "66269",
+        "website": "http://www.oma.aero",
+        "full_time_employees": 869
     },
     "PAC": {
         "short_name": "Grupo Aeroportuario Del Pacific",
@@ -1125,7 +1497,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Mexico",
-        "city": "Guadalajara"
+        "state": "JA",
+        "city": "Guadalajara",
+        "zipcode": "44530",
+        "website": "http://www.aeropuertosgap.com.mx",
+        "full_time_employees": 1677
     },
     "PJET": {
         "short_name": "PRIORITY AVIATION INC",
@@ -1137,7 +1513,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10038",
+        "website": "http://www.priorityonejets.com",
+        "full_time_employees": null
     },
     "PRFN.SW": {
         "short_name": "PERFECT N",
@@ -1149,7 +1529,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Lausanne"
+        "state": null,
+        "city": "Lausanne",
+        "zipcode": "1006",
+        "website": "http://www.perfect.aero",
+        "full_time_employees": null
     },
     "R1D.F": {
         "short_name": "AERCAP HOLDINGS  EO -,01",
@@ -1161,7 +1545,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "D02 YX20",
+        "website": "http://www.aercap.com",
+        "full_time_employees": 376
     },
     "S58.SI": {
         "short_name": "SATS",
@@ -1173,7 +1561,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "819659",
+        "website": "http://www.sats.com.sg",
+        "full_time_employees": 18000
     },
     "S59.SI": {
         "short_name": "SIA Engineering",
@@ -1185,7 +1577,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "819831",
+        "website": "http://www.siaec.com.sg",
+        "full_time_employees": 6761
     },
     "SAS.ST": {
         "short_name": "SAS AB",
@@ -1197,7 +1593,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "195 87",
+        "website": "http://www.sasgroup.net",
+        "full_time_employees": 4983
     },
     "SASDY": {
         "short_name": "SAS AB",
@@ -1209,7 +1609,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "195 87",
+        "website": "http://www.sasgroup.net",
+        "full_time_employees": 4983
     },
     "SASNO.OL": {
         "short_name": "SAS AB",
@@ -1221,7 +1625,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "195 87",
+        "website": "http://www.sasgroup.net",
+        "full_time_employees": 4983
     },
     "SIG.L": {
         "short_name": "SIGNATURE AVIATION PLC ORD 37 1",
@@ -1233,7 +1641,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W1U 1QY",
+        "website": "http://www.signatureaviation.com",
+        "full_time_employees": null
     },
     "SKAS": {
         "short_name": "SAKER AVIATION SERVICES INC",
@@ -1245,7 +1657,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10004",
+        "website": "http://www.sakeraviation.com",
+        "full_time_employees": 18
     },
     "SPASF": {
         "short_name": "SATS LTD",
@@ -1257,7 +1673,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "819659",
+        "website": "http://www.sats.com.sg",
+        "full_time_employees": null
     },
     "SSV2.F": {
         "short_name": "SAS AB  SK 20,10",
@@ -1269,7 +1689,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "195 87",
+        "website": "http://www.sasgroup.net",
+        "full_time_employees": 4983
     },
     "SYD.AX": {
         "short_name": "SYDAIRPORT STAPLED",
@@ -1281,7 +1705,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2020",
+        "website": "http://www.sydneyairport.com.au",
+        "full_time_employees": 418
     },
     "SYDDF": {
         "short_name": "SYDNEY AIRPORT CORPORATION LTD",
@@ -1293,7 +1721,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2020",
+        "website": "http://www.sydneyairport.com.au",
+        "full_time_employees": 418
     },
     "TPS.MI": {
         "short_name": "TPS",
@@ -1305,7 +1737,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Gallarate"
+        "state": "VA",
+        "city": "Gallarate",
+        "zipcode": null,
+        "website": "http://www.tps-group.it",
+        "full_time_employees": 472
     },
     "TX3A.F": {
         "short_name": "AIRPORTS O.THAI-FOR- BA 1",
@@ -1317,7 +1753,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10210",
+        "website": "http://www.airportthai.co.th",
+        "full_time_employees": null
     },
     "TYA.MI": {
         "short_name": "TOSCANA AEROPORTI",
@@ -1329,7 +1769,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Florence"
+        "state": "FI",
+        "city": "Florence",
+        "zipcode": "50127",
+        "website": "http://www.toscana-aeroporti.com",
+        "full_time_employees": null
     },
     "W1J.F": {
         "short_name": "SATS LTD.",
@@ -1341,7 +1785,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "819659",
+        "website": "http://www.sats.com.sg",
+        "full_time_employees": null
     },
     "W7L.F": {
         "short_name": "AEROP.DE PARIS SA INH.EO3",
@@ -1353,7 +1801,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Tremblay-en-France"
+        "state": null,
+        "city": "Tremblay-en-France",
+        "zipcode": "93290",
+        "website": "http://www.parisaeroport.fr",
+        "full_time_employees": 22448
     },
     "W8W.F": {
         "short_name": "ATLAS AIR WW NEW  DL-,01",
@@ -1365,6 +1817,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Purchase"
+        "state": "NY",
+        "city": "Purchase",
+        "zipcode": "10577-2543",
+        "website": "http://www.atlasairworldwide.com",
+        "full_time_employees": 4061
     }
 }

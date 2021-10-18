@@ -9,7 +9,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": null,
+        "website": "http://www.cablevisionholding.com",
+        "full_time_employees": null
     },
     "CVHSY": {
         "short_name": "CABLEVISION HOLDING SA",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": null,
+        "website": "http://www.cablevisionholding.com",
+        "full_time_employees": null
     },
     "GCLA.BA": {
         "short_name": "GRUPO CLARIN SA",
@@ -33,7 +41,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "C1140ABK",
+        "website": "http://www.grupoclarin.com",
+        "full_time_employees": 4596
     },
     "TECO2.BA": {
         "short_name": "TELEC ARGENTINA SA",
@@ -45,7 +57,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "1107",
+        "website": "http://institucional.telecom.com.ar",
+        "full_time_employees": 23254
     },
     "TEO.F": {
         "short_name": "TELECOM ARGENT.  B ADR/5",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "1107",
+        "website": "http://institucional.telecom.com.ar",
+        "full_time_employees": 23254
     },
     "TEO": {
         "short_name": "Telecom Argentina SA",
@@ -69,6 +89,10 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "1107",
+        "website": "http://institucional.telecom.com.ar",
+        "full_time_employees": 23254
     }
 }

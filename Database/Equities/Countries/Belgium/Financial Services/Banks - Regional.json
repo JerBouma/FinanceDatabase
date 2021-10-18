@@ -9,7 +9,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.nbb.be",
+        "full_time_employees": 1702
     },
     "KBC.BR": {
         "short_name": "KBC",
@@ -21,7 +25,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1080",
+        "website": "http://www.kbc.com",
+        "full_time_employees": 33916
     },
     "KBC.VI": {
         "short_name": "KBC GROEP",
@@ -33,7 +41,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1080",
+        "website": "http://www.kbc.com",
+        "full_time_employees": 33916
     },
     "KBCSF": {
         "short_name": "KBC GROEP NV",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1080",
+        "website": "http://www.kbc.com",
+        "full_time_employees": 33916
     },
     "KBCSY": {
         "short_name": "KBC GROEP NV",
@@ -57,7 +73,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1080",
+        "website": "http://www.kbc.com",
+        "full_time_employees": 33916
     },
     "KDB.F": {
         "short_name": "KBC GROEP N.V.",
@@ -69,6 +89,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1080",
+        "website": "http://www.kbc.com",
+        "full_time_employees": 33916
     }
 }

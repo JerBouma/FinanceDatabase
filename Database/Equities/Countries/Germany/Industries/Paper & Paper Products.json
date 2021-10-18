@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Cologne"
+        "state": null,
+        "city": "Cologne",
+        "zipcode": "51067",
+        "website": "http://www.khdis.de",
+        "full_time_employees": null
     },
     "SUR.DE": {
         "short_name": "SURTECO GROUP SE INH O.N.",
@@ -21,7 +25,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Buttenwiesen"
+        "state": null,
+        "city": "Buttenwiesen",
+        "zipcode": "86647",
+        "website": "http://www.surteco-group.com",
+        "full_time_employees": 3125
     },
     "SUR.F": {
         "short_name": "SURTECO GROUP SE INH O.N.",
@@ -33,6 +41,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Buttenwiesen"
+        "state": null,
+        "city": "Buttenwiesen",
+        "zipcode": "86647",
+        "website": "http://www.surteco-group.com",
+        "full_time_employees": 3125
     }
 }

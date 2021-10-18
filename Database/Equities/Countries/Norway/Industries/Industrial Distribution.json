@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "\u00c3\u0085lesund"
+        "state": null,
+        "city": "\u00c3\u0085lesund",
+        "zipcode": "6002",
+        "website": "http://hexagongroup.com/hexagon-purus/",
+        "full_time_employees": null
     },
     "1MP.F": {
         "short_name": "SCANA ASA  NK 1",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Bergen"
+        "state": null,
+        "city": "Bergen",
+        "zipcode": "5868",
+        "website": "http://www.scana.no",
+        "full_time_employees": 94
     },
     "HPUR.OL": {
         "short_name": "HEXAGON PURUS ASA",
@@ -33,7 +41,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "\u00c3\u0085lesund"
+        "state": null,
+        "city": "\u00c3\u0085lesund",
+        "zipcode": "6002",
+        "website": "http://hexagongroup.com/hexagon-purus/",
+        "full_time_employees": null
     },
     "SCANA.OL": {
         "short_name": "SCANA ASA",
@@ -45,6 +57,10 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Bergen"
+        "state": null,
+        "city": "Bergen",
+        "zipcode": "5868",
+        "website": "http://www.scana.no",
+        "full_time_employees": 94
     }
 }

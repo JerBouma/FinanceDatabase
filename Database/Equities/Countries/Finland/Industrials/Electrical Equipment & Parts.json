@@ -9,7 +9,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Espoo"
+        "state": null,
+        "city": "Espoo",
+        "zipcode": "02201",
+        "website": "http://www.boreo.com",
+        "full_time_employees": 347
     },
     "ENEDO.HE": {
         "short_name": "Enedo Plc",
@@ -21,7 +25,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Vantaa"
+        "state": null,
+        "city": "Vantaa",
+        "zipcode": "1720",
+        "website": "http://enedopower.com",
+        "full_time_employees": 354
     },
     "REKA.HE": {
         "short_name": "Reka Industrial Oyj",
@@ -33,6 +41,10 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Hyvink\u00c3\u00a4\u00c3\u00a4"
+        "state": null,
+        "city": "Hyvink\u00c3\u00a4\u00c3\u00a4",
+        "zipcode": "05800",
+        "website": "http://www.rekaindustrial.fi",
+        "full_time_employees": 520
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Geneva"
+        "state": null,
+        "city": "Geneva",
+        "zipcode": "1211",
+        "website": "http://www.bcge.ch",
+        "full_time_employees": 819
     },
     "BCJ.SW": {
         "short_name": "BC JURA N",
@@ -21,7 +25,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Porrentruy"
+        "state": null,
+        "city": "Porrentruy",
+        "zipcode": "2900",
+        "website": "http://www.bcj.ch",
+        "full_time_employees": 123
     },
     "BCVN.SW": {
         "short_name": "BC VAUD N",
@@ -33,7 +41,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Lausanne"
+        "state": null,
+        "city": "Lausanne",
+        "zipcode": "1001",
+        "website": "http://www.bcv.ch",
+        "full_time_employees": 1909
     },
     "BEKN.SW": {
         "short_name": "BEKB / BCBE N",
@@ -45,7 +57,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Bern"
+        "state": null,
+        "city": "Bern",
+        "zipcode": "3011",
+        "website": "http://www.bekb.ch",
+        "full_time_employees": 1018
     },
     "BLKB.SW": {
         "short_name": "BASELLAND KB PS",
@@ -57,7 +73,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Liestal"
+        "state": null,
+        "city": "Liestal",
+        "zipcode": "4410",
+        "website": "http://www.blkb.ch",
+        "full_time_employees": 710
     },
     "BPDG.SW": {
         "short_name": "BANQUE PROFIL DE GESTION N",
@@ -69,7 +89,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Geneva"
+        "state": null,
+        "city": "Geneva",
+        "zipcode": "1211",
+        "website": "http://www.bpdg.ch",
+        "full_time_employees": 32
     },
     "BSKP.SW": {
         "short_name": "BASLER KB PS",
@@ -81,7 +105,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Basel"
+        "state": null,
+        "city": "Basel",
+        "zipcode": "4002",
+        "website": "http://www.bkb.ch",
+        "full_time_employees": 1320
     },
     "CMBN.SW": {
         "short_name": "CEMBRA MONEY BANK N",
@@ -93,7 +121,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Zurich"
+        "state": null,
+        "city": "Zurich",
+        "zipcode": "8048",
+        "website": "http://www.cembra.ch",
+        "full_time_employees": 928
     },
     "GLKBN.SW": {
         "short_name": "GLARNER KB N",
@@ -105,7 +137,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Glarus"
+        "state": null,
+        "city": "Glarus",
+        "zipcode": "8750",
+        "website": "http://www.glkb.ch",
+        "full_time_employees": 221
     },
     "GRKP.SW": {
         "short_name": "GRAUB KB PS",
@@ -117,7 +153,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Chur"
+        "state": null,
+        "city": "Chur",
+        "zipcode": "7001",
+        "website": "http://www.gkb.ch",
+        "full_time_employees": 757
     },
     "LINN.SW": {
         "short_name": "BK LINTH N",
@@ -129,7 +169,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Uznach"
+        "state": null,
+        "city": "Uznach",
+        "zipcode": "8730",
+        "website": "http://www.banklinth.ch",
+        "full_time_employees": 175
     },
     "LUKN.SW": {
         "short_name": "LUZERNER KB N",
@@ -141,7 +185,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Lucerne"
+        "state": null,
+        "city": "Lucerne",
+        "zipcode": "6003",
+        "website": "http://www.lukb.ch",
+        "full_time_employees": 854
     },
     "SGKN.SW": {
         "short_name": "ST GALLER KB N",
@@ -153,7 +201,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Sankt Gallen"
+        "state": null,
+        "city": "Sankt Gallen",
+        "zipcode": "9001",
+        "website": "http://www.sgkb.ch",
+        "full_time_employees": 1308
     },
     "SNBN.SW": {
         "short_name": "SNB N",
@@ -165,7 +217,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Zurich"
+        "state": null,
+        "city": "Zurich",
+        "zipcode": "3003",
+        "website": "http://www.snb.ch",
+        "full_time_employees": 870
     },
     "SWZNF": {
         "short_name": "SWISS NATIONAL BANK",
@@ -177,7 +233,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Zurich"
+        "state": null,
+        "city": "Zurich",
+        "zipcode": "3003",
+        "website": "http://www.snb.ch",
+        "full_time_employees": 870
     },
     "TKBP.SW": {
         "short_name": "THURGAUER KB PS",
@@ -189,7 +249,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Weinfelden"
+        "state": null,
+        "city": "Weinfelden",
+        "zipcode": "8570",
+        "website": "http://www.tkb.ch",
+        "full_time_employees": 476
     },
     "VATN.SW": {
         "short_name": "VALIANT N",
@@ -201,7 +265,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Lucerne"
+        "state": null,
+        "city": "Lucerne",
+        "zipcode": "6003",
+        "website": "http://www.valiant.ch",
+        "full_time_employees": 654
     },
     "WKBN.SW": {
         "short_name": "WALLISER KB N",
@@ -213,7 +281,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Sion"
+        "state": null,
+        "city": "Sion",
+        "zipcode": "1951",
+        "website": "http://www.bcvs.ch",
+        "full_time_employees": 487
     },
     "ZUGER.SW": {
         "short_name": "ZUGER KB N",
@@ -225,6 +297,10 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Zug"
+        "state": null,
+        "city": "Zug",
+        "zipcode": "6301",
+        "website": "http://www.zugerkb.ch",
+        "full_time_employees": 402
     }
 }

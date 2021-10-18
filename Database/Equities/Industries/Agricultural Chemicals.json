@@ -9,7 +9,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "India",
-        "city": "Ahmedabad"
+        "state": null,
+        "city": "Ahmedabad",
+        "zipcode": "380015",
+        "website": "http://www.meghmani.com",
+        "full_time_employees": null
     },
     "MEGH.NS": {
         "short_name": "MEGHMANI ORGANICS",
@@ -21,7 +25,11 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Ahmedabad"
+        "state": null,
+        "city": "Ahmedabad",
+        "zipcode": "380015",
+        "website": "http://www.meghmani.com",
+        "full_time_employees": null
     },
     "NTRN.MX": {
         "short_name": "NUTRIEN LTD",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Canada",
-        "city": "Saskatoon"
+        "state": "SK",
+        "city": "Saskatoon",
+        "zipcode": "S7K 7G3",
+        "website": "http://www.nutrien.com",
+        "full_time_employees": 23100
     },
     "SPIR.AT": {
         "short_name": "THE HOUSE OF AGRICULTURE SPI",
@@ -45,6 +57,10 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "122 42",
+        "website": "http://www.spirou.gr",
+        "full_time_employees": 145
     }
 }

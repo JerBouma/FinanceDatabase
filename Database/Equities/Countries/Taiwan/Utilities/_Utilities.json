@@ -9,7 +9,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "New Taipei City"
+        "state": null,
+        "city": "New Taipei City",
+        "zipcode": null,
+        "website": "http://www.shinfox.com.tw",
+        "full_time_employees": null
     },
     "8908.TWO": {
         "short_name": "SHINHSIUNG NATURAL GAS INC.",
@@ -21,7 +25,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Kaohsiung"
+        "state": null,
+        "city": "Kaohsiung",
+        "zipcode": "830",
+        "website": "http://www.shng.com.tw",
+        "full_time_employees": null
     },
     "8931.TWO": {
         "short_name": "TA-YUAN COGENERATION CO",
@@ -33,7 +41,11 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taoyuan City"
+        "state": null,
+        "city": "Taoyuan City",
+        "zipcode": "328",
+        "website": "http://www.tycc.com.tw",
+        "full_time_employees": null
     },
     "9908.TW": {
         "short_name": "THE GREAT TAIPEI GAS",
@@ -45,6 +57,10 @@
         "exchange": "TAI",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taipei City"
+        "state": null,
+        "city": "Taipei City",
+        "zipcode": "105",
+        "website": "http://www.taipeigas.com.tw",
+        "full_time_employees": null
     }
 }

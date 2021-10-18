@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Spain",
-        "city": "Barcelona"
+        "state": null,
+        "city": "Barcelona",
+        "zipcode": "08908",
+        "website": "http://www.quadpack.com",
+        "full_time_employees": 320
     },
     "ALQP.PA": {
         "short_name": "QUADPACK",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "Spain",
-        "city": "Barcelona"
+        "state": null,
+        "city": "Barcelona",
+        "zipcode": "08908",
+        "website": "http://www.quadpack.com",
+        "full_time_employees": 320
     },
     "VID.MC": {
         "short_name": "VIDRALA, S.A.",
@@ -33,7 +41,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Laudio/Llodio"
+        "state": null,
+        "city": "Laudio/Llodio",
+        "zipcode": "01400",
+        "website": "http://www.vidrala.com",
+        "full_time_employees": 3490
     },
     "VIR.F": {
         "short_name": "VIDRALA SA INH.  EO 1,02",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Spain",
-        "city": "Laudio/Llodio"
+        "state": null,
+        "city": "Laudio/Llodio",
+        "zipcode": "01400",
+        "website": "http://www.vidrala.com",
+        "full_time_employees": 3490
     },
     "VIS.F": {
         "short_name": "VISCOFAN SA  INH. EO 0,70",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Spain",
-        "city": "Tajonar"
+        "state": null,
+        "city": "Tajonar",
+        "zipcode": "31192",
+        "website": "http://www.viscofan.com",
+        "full_time_employees": 5057
     },
     "VIS.MC": {
         "short_name": "VISCOFAN, S.A.",
@@ -69,7 +89,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Tajonar"
+        "state": null,
+        "city": "Tajonar",
+        "zipcode": "31192",
+        "website": "http://www.viscofan.com",
+        "full_time_employees": 5057
     },
     "VIS.VI": {
         "short_name": "VISCOFAN SA",
@@ -81,6 +105,10 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Spain",
-        "city": "Tajonar"
+        "state": null,
+        "city": "Tajonar",
+        "zipcode": "31192",
+        "website": "http://www.viscofan.com",
+        "full_time_employees": 5057
     }
 }

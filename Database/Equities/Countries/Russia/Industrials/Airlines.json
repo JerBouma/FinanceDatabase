@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "119019",
+        "website": "http://www.aeroflot.ru",
+        "full_time_employees": null
     },
     "AFLT.ME": {
         "short_name": "AEROFLOT PJSC",
@@ -21,7 +25,11 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "119019",
+        "website": "http://www.aeroflot.ru",
+        "full_time_employees": null
     },
     "UTAR.ME": {
         "short_name": "UTAIR AVIATION",
@@ -33,6 +41,10 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Russia",
-        "city": "Surgut"
+        "state": null,
+        "city": "Surgut",
+        "zipcode": "628422",
+        "website": "http://www.utair.ru",
+        "full_time_employees": null
     }
 }

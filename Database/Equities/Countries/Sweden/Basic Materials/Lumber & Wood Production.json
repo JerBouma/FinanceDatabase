@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Vimmerby"
+        "state": null,
+        "city": "Vimmerby",
+        "zipcode": "598 37",
+        "website": "http://www.bergstimber.se",
+        "full_time_employees": 850
     },
     "BRG-B.ST": {
         "short_name": "Bergs Timber AB ser. B",
@@ -21,7 +25,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Vimmerby"
+        "state": null,
+        "city": "Vimmerby",
+        "zipcode": "598 37",
+        "website": "http://www.bergstimber.se",
+        "full_time_employees": 850
     },
     "SCA-A.ST": {
         "short_name": "Svenska Cellulosa AB SCA ser. A",
@@ -33,7 +41,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Sundsvall"
+        "state": null,
+        "city": "Sundsvall",
+        "zipcode": "851 88",
+        "website": "http://www.sca.com",
+        "full_time_employees": 4000
     },
     "SCA-B.ST": {
         "short_name": "Svenska Cellulosa AB SCA ser. B",
@@ -45,7 +57,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Sundsvall"
+        "state": null,
+        "city": "Sundsvall",
+        "zipcode": "851 88",
+        "website": "http://www.sca.com",
+        "full_time_employees": 4000
     },
     "SCA.F": {
         "short_name": "SVENSKA CELL.B FRIA  SK10",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Sundsvall"
+        "state": null,
+        "city": "Sundsvall",
+        "zipcode": "851 88",
+        "website": "http://www.sca.com",
+        "full_time_employees": 4000
     },
     "SCA1.F": {
         "short_name": "SVENSKA CELL.A FR.SK 3,33",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Sundsvall"
+        "state": null,
+        "city": "Sundsvall",
+        "zipcode": "851 88",
+        "website": "http://www.sca.com",
+        "full_time_employees": 4000
     },
     "SVCBF": {
         "short_name": "SVENSKA CELLULOSA AB-SCA",
@@ -81,6 +105,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Sweden",
-        "city": "Sundsvall"
+        "state": null,
+        "city": "Sundsvall",
+        "zipcode": "851 88",
+        "website": "http://www.sca.com",
+        "full_time_employees": 4000
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20135",
+        "website": "http://www.pradagroup.com/en.html",
+        "full_time_employees": 12858
     },
     "8BU.F": {
         "short_name": "BRUNELLO CUCINELLI SPA",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Solomeo"
+        "state": "PG",
+        "city": "Solomeo",
+        "zipcode": null,
+        "website": "http://www.brunellocucinelli.com",
+        "full_time_employees": 2044
     },
     "BC.MI": {
         "short_name": "BRUNELLO CUCINELLI",
@@ -33,7 +41,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Solomeo"
+        "state": "PG",
+        "city": "Solomeo",
+        "zipcode": null,
+        "website": "http://www.brunellocucinelli.com",
+        "full_time_employees": 2044
     },
     "BCUCY": {
         "short_name": "BRUNELLO CUCINELLI",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Solomeo"
+        "state": "PG",
+        "city": "Solomeo",
+        "zipcode": null,
+        "website": "http://www.brunellocucinelli.com",
+        "full_time_employees": 2044
     },
     "CULT.MI": {
         "short_name": "CULTI MILANO",
@@ -57,7 +73,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20122",
+        "website": "http://www.culti.com",
+        "full_time_employees": 58
     },
     "FPE.MI": {
         "short_name": "FOPE",
@@ -69,7 +89,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Vicenza"
+        "state": "VI",
+        "city": "Vicenza",
+        "zipcode": "36100",
+        "website": "http://www.fope.com",
+        "full_time_employees": 59
     },
     "GIS.MI": {
         "short_name": "GISMONDI 1754",
@@ -81,7 +105,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Genoa"
+        "state": "GE",
+        "city": "Genoa",
+        "zipcode": "16121",
+        "website": "http://www.gismondi1754.com",
+        "full_time_employees": null
     },
     "PRDSF": {
         "short_name": "PRADA SPA",
@@ -93,7 +121,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20135",
+        "website": "http://www.pradagroup.com/en.html",
+        "full_time_employees": 12858
     },
     "PRDSY": {
         "short_name": "PRADA SPA",
@@ -105,7 +137,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20135",
+        "website": "http://www.pradagroup.com/en.html",
+        "full_time_employees": 12858
     },
     "PRP.F": {
         "short_name": "PRADA SPA  EO 1",
@@ -117,7 +153,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20135",
+        "website": "http://www.pradagroup.com/en.html",
+        "full_time_employees": 12858
     },
     "S9L.F": {
         "short_name": "SALVATORE FERRAG. EO -,10",
@@ -129,7 +169,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Florence"
+        "state": "FI",
+        "city": "Florence",
+        "zipcode": "50123",
+        "website": "http://www.ferragamo.com",
+        "full_time_employees": 3431
     },
     "SFER.MI": {
         "short_name": "SALVATORE FERRAGAMO",
@@ -141,7 +185,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Florence"
+        "state": "FI",
+        "city": "Florence",
+        "zipcode": "50123",
+        "website": "http://www.ferragamo.com",
+        "full_time_employees": 3431
     },
     "SFER.VI": {
         "short_name": "SALVATORE FERRAGAMO SPA",
@@ -153,7 +201,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Florence"
+        "state": "FI",
+        "city": "Florence",
+        "zipcode": "50123",
+        "website": "http://www.ferragamo.com",
+        "full_time_employees": 3431
     },
     "SFRGF": {
         "short_name": "SALVATORE FERRAGAMO",
@@ -165,7 +217,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Florence"
+        "state": "FI",
+        "city": "Florence",
+        "zipcode": "50123",
+        "website": "http://www.ferragamo.com",
+        "full_time_employees": 3431
     },
     "SFRGY": {
         "short_name": "SALVATORE FERRAGAMO",
@@ -177,6 +233,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Florence"
+        "state": "FI",
+        "city": "Florence",
+        "zipcode": "50123",
+        "website": "http://www.ferragamo.com",
+        "full_time_employees": 3431
     }
 }

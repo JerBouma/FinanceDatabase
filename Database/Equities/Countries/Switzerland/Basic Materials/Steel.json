@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Baar"
+        "state": null,
+        "city": "Baar",
+        "zipcode": "6340",
+        "website": "http://www.ferrexpo.com",
+        "full_time_employees": 11000
     },
     "FEX.F": {
         "short_name": "FERREXPO PLC",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Switzerland",
-        "city": "Baar"
+        "state": null,
+        "city": "Baar",
+        "zipcode": "6340",
+        "website": "http://www.ferrexpo.com",
+        "full_time_employees": 11000
     },
     "FXPO.L": {
         "short_name": "FERREXPO PLC ORD 10P",
@@ -33,7 +41,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Switzerland",
-        "city": "Baar"
+        "state": null,
+        "city": "Baar",
+        "zipcode": "6340",
+        "website": "http://www.ferrexpo.com",
+        "full_time_employees": 11000
     },
     "STLN.SW": {
         "short_name": "Swiss Steel Holding AG",
@@ -45,7 +57,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Lucerne"
+        "state": null,
+        "city": "Lucerne",
+        "zipcode": "6005",
+        "website": "http://www.swisssteel-group.com",
+        "full_time_employees": 9950
     },
     "ZWM.SW": {
         "short_name": "ZWAHLEN I",
@@ -57,6 +73,10 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Aigle"
+        "state": null,
+        "city": "Aigle",
+        "zipcode": "1860",
+        "website": "http://zwahlen.ch",
+        "full_time_employees": 159
     }
 }

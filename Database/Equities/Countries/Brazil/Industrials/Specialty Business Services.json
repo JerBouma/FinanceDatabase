@@ -9,7 +9,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
+        "state": "SP",
+        "city": "S\u00c3\u00a3o Paulo",
+        "zipcode": "03040-010",
+        "website": "http://atmasa.com.br",
+        "full_time_employees": 26000
     },
     "IFCM3.SA": {
         "short_name": "INFRACOMM   ON      NM",
@@ -21,7 +25,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
+        "state": "SP",
+        "city": "S\u00c3\u00a3o Paulo",
+        "zipcode": "04548-005",
+        "website": "http://www.infracommerce.com.br/en/",
+        "full_time_employees": 1012
     },
     "OPCT3.SA": {
         "short_name": "OCEANPACT   ON      NM",
@@ -33,7 +41,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Rio De Janeiro"
+        "state": "RJ",
+        "city": "Rio De Janeiro",
+        "zipcode": "20241-180",
+        "website": "http://www.oceanpact.com",
+        "full_time_employees": 1734
     },
     "SMLS3.SA": {
         "short_name": "SMILES      ON      NM",
@@ -45,7 +57,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Barueri"
+        "state": "SP",
+        "city": "Barueri",
+        "zipcode": null,
+        "website": "http://www.smiles.com.br",
+        "full_time_employees": 162
     },
     "VLID3.SA": {
         "short_name": "VALID       ON      NM",
@@ -57,6 +73,10 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Rio De Janeiro"
+        "state": "RJ",
+        "city": "Rio De Janeiro",
+        "zipcode": "20030-905",
+        "website": "http://www.valid.com",
+        "full_time_employees": null
     }
 }

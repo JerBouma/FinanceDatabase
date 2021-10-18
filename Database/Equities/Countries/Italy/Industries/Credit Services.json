@@ -9,7 +9,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20149",
+        "website": "http://www.bff.com",
+        "full_time_employees": 535
     },
     "CNF.MI": {
         "short_name": "CONAFI",
@@ -21,7 +25,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Turin"
+        "state": "TO",
+        "city": "Turin",
+        "zipcode": "10143",
+        "website": "http://www.conafi.it",
+        "full_time_employees": 8
     },
     "MNL.F": {
         "short_name": "GRUPPO MUTUIONLINE",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20146",
+        "website": "http://www.gruppomol.it",
+        "full_time_employees": 2154
     },
     "MOL.MI": {
         "short_name": "MUTUIONLINE",
@@ -45,6 +57,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20146",
+        "website": "http://www.gruppomol.it",
+        "full_time_employees": 2154
     }
 }

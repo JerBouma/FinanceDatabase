@@ -9,7 +9,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0152",
+        "website": "http://www.bonheur.no",
+        "full_time_employees": 2401
     },
     "ENDUR.OL": {
         "short_name": "ENDUR ASA",
@@ -21,7 +25,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Bergen"
+        "state": null,
+        "city": "Bergen",
+        "zipcode": "5160",
+        "website": "http://www.endur.no",
+        "full_time_employees": 677
     },
     "V7P.F": {
         "short_name": "BONHEUR  NK 1,25",
@@ -33,6 +41,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0152",
+        "website": "http://www.bonheur.no",
+        "full_time_employees": 2401
     }
 }

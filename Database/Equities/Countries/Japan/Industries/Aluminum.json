@@ -9,7 +9,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Osaka"
+        "state": null,
+        "city": "Osaka",
+        "zipcode": "550-0001",
+        "website": "http://www.dik-net.com",
+        "full_time_employees": null
     },
     "5741.T": {
         "short_name": "UACJ CORPORATION",
@@ -21,7 +25,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "100-0004",
+        "website": "http://www.uacj.co.jp",
+        "full_time_employees": null
     },
     "5742.T": {
         "short_name": "NIC AUTOTEC INC",
@@ -33,7 +41,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Toyama"
+        "state": null,
+        "city": "Toyama",
+        "zipcode": "939-8032",
+        "website": "http://www.nic-inc.co.jp",
+        "full_time_employees": null
     },
     "F4M.F": {
         "short_name": "UACJ CORP.",
@@ -45,6 +57,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "100-0004",
+        "website": "http://www.uacj.co.jp",
+        "full_time_employees": null
     }
 }

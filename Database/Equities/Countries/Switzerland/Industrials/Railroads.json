@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Brig"
+        "state": null,
+        "city": "Brig",
+        "zipcode": "3900",
+        "website": "http://www.bvzholding.ch",
+        "full_time_employees": 655
     },
     "BVZN.SW": {
         "short_name": "BVZ HOL N",
@@ -21,7 +25,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Brig"
+        "state": null,
+        "city": "Brig",
+        "zipcode": "3900",
+        "website": "http://www.bvzholding.ch",
+        "full_time_employees": 655
     },
     "JFN.SW": {
         "short_name": "JUNGFRAUBAHN HLD N",
@@ -33,7 +41,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Interlaken"
+        "state": null,
+        "city": "Interlaken",
+        "zipcode": "3800",
+        "website": "http://www.jungfrau.ch",
+        "full_time_employees": 665
     },
     "SRAIL.SW": {
         "short_name": "STADLER RAIL N",
@@ -45,6 +57,10 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Bussnang"
+        "state": null,
+        "city": "Bussnang",
+        "zipcode": "9565",
+        "website": "http://www.stadlerrail.com",
+        "full_time_employees": 11228
     }
 }

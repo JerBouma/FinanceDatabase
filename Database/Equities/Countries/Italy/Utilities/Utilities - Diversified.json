@@ -9,7 +9,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Brescia"
+        "state": "BS",
+        "city": "Brescia",
+        "zipcode": "25124",
+        "website": "http://www.a2a.eu",
+        "full_time_employees": null
     },
     "A2A.VI": {
         "short_name": "A2A SPA",
@@ -21,7 +25,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Brescia"
+        "state": "BS",
+        "city": "Brescia",
+        "zipcode": "25124",
+        "website": "http://www.a2a.eu",
+        "full_time_employees": null
     },
     "ACE.MI": {
         "short_name": "ACEA",
@@ -33,7 +41,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00154",
+        "website": "http://www.gruppo.acea.it",
+        "full_time_employees": 7650
     },
     "ACS.MI": {
         "short_name": "ACSM-AGAM",
@@ -45,7 +57,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Como"
+        "state": null,
+        "city": "Como",
+        "zipcode": "22100",
+        "website": "http://www.acsm-agam.it",
+        "full_time_employees": 878
     },
     "DCA.F": {
         "short_name": "ACEA S.P.A.  EO 5,16",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00154",
+        "website": "http://www.gruppo.acea.it",
+        "full_time_employees": 7650
     },
     "EAM.F": {
         "short_name": "A2A S.P.A.  EO 0,52",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Brescia"
+        "state": "BS",
+        "city": "Brescia",
+        "zipcode": "25124",
+        "website": "http://www.a2a.eu",
+        "full_time_employees": null
     },
     "ECK.MI": {
         "short_name": "ECOSUNTEK",
@@ -81,7 +105,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Gualdo Tadino"
+        "state": "PG",
+        "city": "Gualdo Tadino",
+        "zipcode": "06023",
+        "website": "http://www.ecosuntek.com",
+        "full_time_employees": 20
     },
     "ENEL.MI": {
         "short_name": "ENEL",
@@ -93,7 +121,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00198",
+        "website": "http://www.enel.com",
+        "full_time_employees": 66717
     },
     "ENEL.VI": {
         "short_name": "ENEL SPA",
@@ -105,7 +137,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00198",
+        "website": "http://www.enel.com",
+        "full_time_employees": 66717
     },
     "ENL.DE": {
         "short_name": "ENEL S.P.A.  EO 1",
@@ -117,7 +153,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00198",
+        "website": "http://www.enel.com",
+        "full_time_employees": 66717
     },
     "ENL.F": {
         "short_name": "ENEL S.P.A.  EO 1",
@@ -129,7 +169,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00198",
+        "website": "http://www.enel.com",
+        "full_time_employees": 66717
     },
     "ENLA.F": {
         "short_name": "ENEL S.P.A. ADR  EO 1",
@@ -141,7 +185,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00198",
+        "website": "http://www.enel.com",
+        "full_time_employees": 66717
     },
     "ENLAY": {
         "short_name": "ENEL SPA",
@@ -153,7 +201,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00198",
+        "website": "http://www.enel.com",
+        "full_time_employees": 66717
     },
     "ESOCF": {
         "short_name": "ENEL SPA",
@@ -165,7 +217,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00198",
+        "website": "http://www.enel.com",
+        "full_time_employees": 66717
     },
     "HE9.F": {
         "short_name": "HERA S.P.A.  EO 1",
@@ -177,7 +233,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Bologna"
+        "state": "BO",
+        "city": "Bologna",
+        "zipcode": "40127",
+        "website": "http://www.gruppohera.it",
+        "full_time_employees": 9011
     },
     "HER.MI": {
         "short_name": "HERA",
@@ -189,7 +249,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Bologna"
+        "state": "BO",
+        "city": "Bologna",
+        "zipcode": "40127",
+        "website": "http://www.gruppohera.it",
+        "full_time_employees": 9011
     },
     "IRE.MI": {
         "short_name": "IREN",
@@ -201,7 +265,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Reggio Emilia"
+        "state": "RE",
+        "city": "Reggio Emilia",
+        "zipcode": "42123",
+        "website": "http://www.gruppoiren.it",
+        "full_time_employees": 8680
     },
     "TZ8.F": {
         "short_name": "IREN S.P.A.  EO 1",
@@ -213,6 +281,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Reggio Emilia"
+        "state": "RE",
+        "city": "Reggio Emilia",
+        "zipcode": "42123",
+        "website": "http://www.gruppoiren.it",
+        "full_time_employees": 8680
     }
 }

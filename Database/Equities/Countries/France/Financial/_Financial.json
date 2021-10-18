@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75009",
+        "website": "http://group.bnpparibas",
+        "full_time_employees": 193000
     },
     "CSNV.PA": {
         "short_name": "AXA NV21",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.axa.com",
+        "full_time_employees": 110278
     },
     "GLEN.MX": {
         "short_name": "SOCIETE GENERALE",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75009",
+        "website": "http://www.societegenerale.com",
+        "full_time_employees": 133000
     },
     "MLCOU.PA": {
         "short_name": "COURBET",
@@ -45,7 +57,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75016",
+        "website": "http://www.societeanonymecourbet.com",
+        "full_time_employees": null
     },
     "MLHBB.PA": {
         "short_name": "HOCHE BAINS L.BAIN",
@@ -57,7 +73,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75001",
+        "website": null,
+        "full_time_employees": null
     },
     "URW.MI": {
         "short_name": "WFD UNIBAIL-RODAMCO",
@@ -69,6 +89,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75772",
+        "website": "http://www.urw.com",
+        "full_time_employees": 2999
     }
 }

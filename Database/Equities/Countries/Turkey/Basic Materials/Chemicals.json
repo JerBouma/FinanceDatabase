@@ -9,7 +9,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Denizli"
+        "state": null,
+        "city": "Denizli",
+        "zipcode": null,
+        "website": "http://www.aciselsan.com.tr",
+        "full_time_employees": 58
     },
     "PETKM.IS": {
         "short_name": "PETKIM",
@@ -21,7 +25,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Izmir"
+        "state": null,
+        "city": "Izmir",
+        "zipcode": "35800",
+        "website": "http://www.petkim.com.tr",
+        "full_time_employees": 2379
     },
     "SODSN.IS": {
         "short_name": "SODAS SODYUM SANAYII",
@@ -33,6 +41,10 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Izmir"
+        "state": null,
+        "city": "Izmir",
+        "zipcode": "35220",
+        "website": "http://www.sodas.com.tr",
+        "full_time_employees": 119
     }
 }

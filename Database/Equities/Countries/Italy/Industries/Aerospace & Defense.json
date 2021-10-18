@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Trieste"
+        "state": "TS",
+        "city": "Trieste",
+        "zipcode": "34121",
+        "website": "http://www.fincantieri.com",
+        "full_time_employees": 20150
     },
     "2ZP.F": {
         "short_name": "AVIO S.P.A.",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00187",
+        "website": "http://www.avio.com",
+        "full_time_employees": 950
     },
     "AVIO.MI": {
         "short_name": "AVIO",
@@ -33,7 +41,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00187",
+        "website": "http://www.avio.com",
+        "full_time_employees": 950
     },
     "FCT.MI": {
         "short_name": "FINCANTIERI",
@@ -45,7 +57,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Trieste"
+        "state": "TS",
+        "city": "Trieste",
+        "zipcode": "34121",
+        "website": "http://www.fincantieri.com",
+        "full_time_employees": 20150
     },
     "FINMF": {
         "short_name": "LEONARDO SPA",
@@ -57,7 +73,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00195",
+        "website": "http://www.leonardocompany.com/en/home",
+        "full_time_employees": 49882
     },
     "FINMY": {
         "short_name": "LEONARDO SPA",
@@ -69,7 +89,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00195",
+        "website": "http://www.leonardocompany.com/en/home",
+        "full_time_employees": 49882
     },
     "FMNB.F": {
         "short_name": "LEONARDO S.P.A.  EO 4,40",
@@ -81,7 +105,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00195",
+        "website": "http://www.leonardocompany.com/en/home",
+        "full_time_employees": 49882
     },
     "LDO.MI": {
         "short_name": "LEONARDO",
@@ -93,7 +121,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00195",
+        "website": "http://www.leonardocompany.com/en/home",
+        "full_time_employees": 49882
     },
     "LDO.VI": {
         "short_name": "LEONARDO SPA",
@@ -105,7 +137,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Italy",
-        "city": "Rome"
+        "state": "RM",
+        "city": "Rome",
+        "zipcode": "00195",
+        "website": "http://www.leonardocompany.com/en/home",
+        "full_time_employees": 49882
     },
     "OS.MI": {
         "short_name": "OFFICINA STELLARE",
@@ -117,6 +153,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Sarcedo"
+        "state": "VI",
+        "city": "Sarcedo",
+        "zipcode": "36030",
+        "website": "http://www.officinastellare.com",
+        "full_time_employees": 22
     }
 }

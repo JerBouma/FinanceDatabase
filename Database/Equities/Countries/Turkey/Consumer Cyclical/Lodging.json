@@ -9,7 +9,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Antalya"
+        "state": null,
+        "city": "Antalya",
+        "zipcode": "07100",
+        "website": "http://www.mares.com.tr",
+        "full_time_employees": 6
     },
     "MARTI.IS": {
         "short_name": "MARTI OTEL",
@@ -21,7 +25,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34427",
+        "website": "http://yatirimci.marti.com.tr",
+        "full_time_employees": 455
     },
     "METUR.IS": {
         "short_name": "METEMTUR YATIRIM",
@@ -33,7 +41,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": null,
+        "website": "http://www.metemtur.com",
+        "full_time_employees": 11
     },
     "TEKTU.IS": {
         "short_name": "TEK-ART TURIZM",
@@ -45,7 +57,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": null,
+        "website": "http://www.clubzigana.com",
+        "full_time_employees": 177
     },
     "ULAS.IS": {
         "short_name": "ULASLAR TURIZM YAT.",
@@ -57,7 +73,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": null,
+        "website": "http://www.ulaslar.com.tr",
+        "full_time_employees": 5
     },
     "UTPYA.IS": {
         "short_name": "UTOPYA TURIZM",
@@ -69,6 +89,10 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": null,
+        "website": "http://www.utopyainsaat.com.tr",
+        "full_time_employees": 126
     }
 }

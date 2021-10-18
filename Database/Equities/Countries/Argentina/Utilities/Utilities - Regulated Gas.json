@@ -9,7 +9,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "1107",
+        "website": "http://www.camuzzigas.com",
+        "full_time_employees": 930
     },
     "DGCU2.BA": {
         "short_name": "DISTRIB GAS CUYANA",
@@ -21,7 +25,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Argentina",
-        "city": "Mendoza"
+        "state": null,
+        "city": "Mendoza",
+        "zipcode": null,
+        "website": "http://www.ecogas.com.ar",
+        "full_time_employees": null
     },
     "GBAN.BA": {
         "short_name": "NATURGY BAN SA",
@@ -33,7 +41,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "1268",
+        "website": "http://www.naturgy.com.ar",
+        "full_time_employees": 467
     },
     "METR.BA": {
         "short_name": "METROGAS SA",
@@ -45,6 +57,10 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": null,
+        "website": "http://www.metrogas.com.ar",
+        "full_time_employees": null
     }
 }

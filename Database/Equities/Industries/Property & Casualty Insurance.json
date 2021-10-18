@@ -9,7 +9,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Netherlands",
-        "city": "The Hague"
+        "state": null,
+        "city": "The Hague",
+        "zipcode": "2591 TV",
+        "website": "http://www.aegon.com",
+        "full_time_employees": 22322
     },
     "ALVN.MX": {
         "short_name": "ALLIANZ SE",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Germany",
-        "city": "Munich"
+        "state": null,
+        "city": "Munich",
+        "zipcode": "80802",
+        "website": "http://www.allianz.com",
+        "full_time_employees": 150269
     },
     "CSNV.PA": {
         "short_name": "AXA NV21",
@@ -33,7 +41,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75008",
+        "website": "http://www.axa.com",
+        "full_time_employees": 110278
     },
     "EUPIC.AT": {
         "short_name": "EUROPEAN RELIANCE GEN. INSUR.",
@@ -45,7 +57,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Chalandri"
+        "state": null,
+        "city": "Chalandri",
+        "zipcode": "152 32",
+        "website": "http://www.europaikipisti.gr",
+        "full_time_employees": 1051
     },
     "GCON.MX": {
         "short_name": "GRUPO CATALANA OCCIDENTE SA",
@@ -57,7 +73,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28046",
+        "website": "http://www.grupocatalanaoccidente.com",
+        "full_time_employees": 7587
     },
     "INNA.DE": {
         "short_name": "ING GP NV SP.ADR/1 EO-,24",
@@ -69,7 +89,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1102 CT",
+        "website": "http://www.ing.com",
+        "full_time_employees": 53361
     },
     "MUV2N.MX": {
         "short_name": "MUENCHENER RUECKVERSICHERUNGS A",
@@ -81,7 +105,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Germany",
-        "city": "Munich"
+        "state": null,
+        "city": "Munich",
+        "zipcode": "80802",
+        "website": "http://www.munichre.com",
+        "full_time_employees": 39642
     },
     "SAMPON.MX": {
         "short_name": "SAMPO PLC",
@@ -93,6 +121,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00100",
+        "website": "http://www.sampo.com",
+        "full_time_employees": 13178
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": null,
+        "website": "http://www.tgn.com.ar",
+        "full_time_employees": null
     },
     "TGNO4.BA": {
         "short_name": "TRANSPORT GAS NORT",
@@ -21,7 +25,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": null,
+        "website": "http://www.tgn.com.ar",
+        "full_time_employees": null
     },
     "TGS": {
         "short_name": "Transportadora de Gas del Sur S",
@@ -33,6 +41,10 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "1206",
+        "website": "http://www.tgs.com.ar",
+        "full_time_employees": 1099
     }
 }

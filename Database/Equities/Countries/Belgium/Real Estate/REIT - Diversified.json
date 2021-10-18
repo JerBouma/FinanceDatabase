@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2018",
+        "website": "http://www.xior.be",
+        "full_time_employees": 151
     },
     "COF.F": {
         "short_name": "COFINIMMO",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1200",
+        "website": "http://www.cofinimmo.com",
+        "full_time_employees": 124
     },
     "COFB.BR": {
         "short_name": "COFINIMMO",
@@ -33,7 +41,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1200",
+        "website": "http://www.cofinimmo.com",
+        "full_time_employees": 124
     },
     "COFB.VI": {
         "short_name": "COFINIMMO",
@@ -45,7 +57,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1200",
+        "website": "http://www.cofinimmo.com",
+        "full_time_employees": 124
     },
     "IJY.F": {
         "short_name": "INTERVEST OFFICES+WAREHO.",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2600",
+        "website": "http://www.intervest.be",
+        "full_time_employees": 49
     },
     "INTO.BR": {
         "short_name": "INTERVEST OFF-WARE",
@@ -69,7 +89,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2600",
+        "website": "http://www.intervest.be",
+        "full_time_employees": 49
     },
     "WEB.BR": {
         "short_name": "WAREHOUSES",
@@ -81,7 +105,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Gosselies"
+        "state": null,
+        "city": "Gosselies",
+        "zipcode": "6041",
+        "website": "http://www.w-e-b.be",
+        "full_time_employees": 1
     },
     "XIOR.BR": {
         "short_name": "XIOR",
@@ -93,6 +121,10 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2018",
+        "website": "http://www.xior.be",
+        "full_time_employees": 151
     }
 }

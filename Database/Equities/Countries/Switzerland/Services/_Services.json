@@ -9,7 +9,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Switzerland",
-        "city": "Zurich"
+        "state": null,
+        "city": "Zurich",
+        "zipcode": "8008",
+        "website": "http://www.adeccogroup.com",
+        "full_time_employees": 30000
     },
     "CFRIN.MX": {
         "short_name": "COMPAGNIE FINANCIERE RICHEMONT ",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Switzerland",
-        "city": "Bellevue"
+        "state": null,
+        "city": "Bellevue",
+        "zipcode": "1293",
+        "website": "http://www.richemont.com",
+        "full_time_employees": 35657
     },
     "FFI.SW": {
         "short_name": "FORMULAFIRST I",
@@ -33,7 +41,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Zug"
+        "state": null,
+        "city": "Zug",
+        "zipcode": "6301",
+        "website": "http://www.formulafirst.ch",
+        "full_time_employees": null
     },
     "UHRN.MX": {
         "short_name": "SWATCH GROUP",
@@ -45,6 +57,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Switzerland",
-        "city": "Biel/Bienne"
+        "state": null,
+        "city": "Biel/Bienne",
+        "zipcode": "2501",
+        "website": "http://www.swatchgroup.com",
+        "full_time_employees": 32424
     }
 }

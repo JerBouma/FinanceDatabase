@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Ukraine",
-        "city": "Kiev"
+        "state": null,
+        "city": "Kiev",
+        "zipcode": "01001",
+        "website": "http://www.kernel.ua",
+        "full_time_employees": 11440
     },
     "ARO.L": {
         "short_name": "ARRICANO REAL ESTATE PLC ORD EU",
@@ -21,7 +25,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Ukraine",
-        "city": "Kiev"
+        "state": null,
+        "city": "Kiev",
+        "zipcode": "01032",
+        "website": "http://www.arricano.com",
+        "full_time_employees": 78
     },
     "DBG.F": {
         "short_name": "CENTRENERGO STAT.ADR 10",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Ukraine",
-        "city": "Kyiv"
+        "state": null,
+        "city": "Kyiv",
+        "zipcode": "03022",
+        "website": "http://www.centrenergo.com",
+        "full_time_employees": 6365
     },
     "MPQ.F": {
         "short_name": "MHP SE GDR S/2",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Ukraine",
-        "city": "Kiev"
+        "state": null,
+        "city": "Kiev",
+        "zipcode": "03143",
+        "website": "http://mhp.com.ua",
+        "full_time_employees": 30471
     },
     "SPDI.L": {
         "short_name": "SECURE PROPERTY DEVELOPMENT & I",
@@ -57,7 +73,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Ukraine",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": "http://www.secure-property.eu",
+        "full_time_employees": 14
     },
     "TR61.F": {
         "short_name": "TMM REAL EST.DEV.GDR S 1",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Ukraine",
-        "city": "Kiev"
+        "state": null,
+        "city": "Kiev",
+        "zipcode": "01001",
+        "website": "http://www.tmm.ua",
+        "full_time_employees": 552
     },
     "UK1.F": {
         "short_name": "UKRTELECOM GDR REG S/50",
@@ -81,7 +105,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Ukraine",
-        "city": "Kyiv"
+        "state": null,
+        "city": "Kyiv",
+        "zipcode": "01601",
+        "website": "http://www.ukrtelecom.ua",
+        "full_time_employees": 56088
     },
     "UKR.L": {
         "short_name": "UKRPRODUCT GROUP LIMITED ORD 10",
@@ -93,6 +121,10 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Ukraine",
-        "city": "Kiev"
+        "state": null,
+        "city": "Kiev",
+        "zipcode": "01033",
+        "website": "http://www.ukrproduct.com",
+        "full_time_employees": 844
     }
 }

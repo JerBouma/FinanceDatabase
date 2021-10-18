@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "Belgium",
-        "city": "Saint-Josse-Ten-Noode"
+        "state": null,
+        "city": "Saint-Josse-Ten-Noode",
+        "zipcode": "1210",
+        "website": "http://www.adcsiic.eu",
+        "full_time_employees": 1
     },
     "H5V.F": {
         "short_name": "HOME INVEST BELGIUM",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1200",
+        "website": "http://www.homeinvestbelgium.be",
+        "full_time_employees": 41
     },
     "HOMI.BR": {
         "short_name": "HOME INVEST BE.",
@@ -33,6 +41,10 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1200",
+        "website": "http://www.homeinvestbelgium.be",
+        "full_time_employees": 41
     }
 }

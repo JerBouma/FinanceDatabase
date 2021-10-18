@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Mende"
+        "state": null,
+        "city": "Mende",
+        "zipcode": "48000",
+        "website": "http://www.cogra.fr",
+        "full_time_employees": 60
     },
     "ALEO2.PA": {
         "short_name": "EO2",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Malakoff"
+        "state": null,
+        "city": "Malakoff",
+        "zipcode": "92240",
+        "website": "http://www.eo2.fr",
+        "full_time_employees": 52
     },
     "ALMOU.PA": {
         "short_name": "MOULINVEST",
@@ -33,7 +41,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Duni\u00c3\u00a8res"
+        "state": null,
+        "city": "Duni\u00c3\u00a8res",
+        "zipcode": "43220",
+        "website": "http://www.moulinvest.com",
+        "full_time_employees": 194
     },
     "EO4.F": {
         "short_name": "EO2  EO 1",
@@ -45,6 +57,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Malakoff"
+        "state": null,
+        "city": "Malakoff",
+        "zipcode": "92240",
+        "website": "http://www.eo2.fr",
+        "full_time_employees": 52
     }
 }

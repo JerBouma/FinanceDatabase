@@ -9,7 +9,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Johannesburg"
+        "state": null,
+        "city": "Johannesburg",
+        "zipcode": "2196",
+        "website": "http://www.bidcorpgroup.com",
+        "full_time_employees": 23427
     },
     "SGPPF": {
         "short_name": "SPAR GROUP LIMITED",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "South Africa",
-        "city": "Pinetown"
+        "state": null,
+        "city": "Pinetown",
+        "zipcode": "3610",
+        "website": "http://www.spar.co.za",
+        "full_time_employees": 4527
     },
     "SPP.JO": {
         "short_name": "The Spar Group Ltd",
@@ -33,6 +41,10 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Pinetown"
+        "state": null,
+        "city": "Pinetown",
+        "zipcode": "3610",
+        "website": "http://www.spar.co.za",
+        "full_time_employees": 4527
     }
 }

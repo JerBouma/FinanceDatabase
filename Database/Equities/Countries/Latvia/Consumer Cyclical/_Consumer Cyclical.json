@@ -9,7 +9,11 @@
         "exchange": "RIS",
         "market": "rg_market",
         "country": "Latvia",
-        "city": "Daugavpils"
+        "state": null,
+        "city": "Daugavpils",
+        "zipcode": "5410",
+        "website": "http://www.dpr.lv",
+        "full_time_employees": 130
     },
     "KA11R.RG": {
         "short_name": "Kurzemes atslega 1",
@@ -21,7 +25,11 @@
         "exchange": "RIS",
         "market": "rg_market",
         "country": "Latvia",
-        "city": "Aizpute"
+        "state": null,
+        "city": "Aizpute",
+        "zipcode": "3456",
+        "website": "http://ka1.lv",
+        "full_time_employees": 69
     },
     "UGC.MU": {
         "short_name": "DITTON PIEVADKEZU EO 1,40",
@@ -33,7 +41,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Latvia",
-        "city": "Daugavpils"
+        "state": null,
+        "city": "Daugavpils",
+        "zipcode": "5410",
+        "website": "http://www.dpr.lv",
+        "full_time_employees": 130
     },
     "UKH.MU": {
         "short_name": "KURZEMES ATSLEGA1 EO 1",
@@ -45,7 +57,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Latvia",
-        "city": "Aizpute"
+        "state": null,
+        "city": "Aizpute",
+        "zipcode": "3456",
+        "website": "http://ka1.lv",
+        "full_time_employees": 69
     },
     "VSS1R.RG": {
         "short_name": "Valmieras stikla skiedra",
@@ -57,7 +73,11 @@
         "exchange": "RIS",
         "market": "rg_market",
         "country": "Latvia",
-        "city": "Valmiera"
+        "state": null,
+        "city": "Valmiera",
+        "zipcode": "4201",
+        "website": "http://www.valmiera-glass.com",
+        "full_time_employees": null
     },
     "W2R.MU": {
         "short_name": "JSC VALMIERAS ST.SK.",
@@ -69,7 +89,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Latvia",
-        "city": "Valmiera"
+        "state": null,
+        "city": "Valmiera",
+        "zipcode": "4201",
+        "website": "http://www.valmiera-glass.com",
+        "full_time_employees": null
     },
     "W2R.SG": {
         "short_name": "JSC VALMIERAS STIKLA SKIEDRA Re",
@@ -81,6 +105,10 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Latvia",
-        "city": "Valmiera"
+        "state": null,
+        "city": "Valmiera",
+        "zipcode": "4201",
+        "website": "http://www.valmiera-glass.com",
+        "full_time_employees": null
     }
 }

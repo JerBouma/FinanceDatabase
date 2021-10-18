@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "64739",
+        "website": "http://www.leadercm.co.il",
+        "full_time_employees": 16
     },
     "BITCF": {
         "short_name": "FIRST BITCOIN CAP CORP",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Holon"
+        "state": null,
+        "city": "Holon",
+        "zipcode": "58492",
+        "website": "http://firstbitcoin.io",
+        "full_time_employees": 1
     },
     "EZTD": {
         "short_name": "EZTD INC",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Tel-Aviv"
+        "state": null,
+        "city": "Tel-Aviv",
+        "zipcode": "6810298",
+        "website": null,
+        "full_time_employees": 161
     },
     "INBR.TA": {
         "short_name": "INBAR GROUP FIN",
@@ -45,7 +57,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "67137",
+        "website": "http://www.inbar-group.com",
+        "full_time_employees": 9
     },
     "OPAL.TA": {
         "short_name": "OPAL BALANCE INV",
@@ -57,7 +73,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Ashdod"
+        "state": null,
+        "city": "Ashdod",
+        "zipcode": null,
+        "website": "http://www.opalbalance.co.il",
+        "full_time_employees": 46
     },
     "P55.F": {
         "short_name": "PLUS500 LTD.  LS -,01",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Israel",
-        "city": "Haifa"
+        "state": null,
+        "city": "Haifa",
+        "zipcode": "31905",
+        "website": "http://www.plus500.com",
+        "full_time_employees": 377
     },
     "PIU.TA": {
         "short_name": "POALIM I.B.I",
@@ -81,7 +105,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "6525101",
+        "website": "http://www.eldav.co.il/poalim_ibi.htm",
+        "full_time_employees": 14
     },
     "PLUS.L": {
         "short_name": "PLUS500 LTD ORD ILS0.01 (DI)",
@@ -93,7 +121,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Israel",
-        "city": "Haifa"
+        "state": null,
+        "city": "Haifa",
+        "zipcode": "31905",
+        "website": "http://www.plus500.com",
+        "full_time_employees": 377
     },
     "VALU.TA": {
         "short_name": "VALUE CAPITAL ONE",
@@ -105,6 +137,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Herzliya"
+        "state": null,
+        "city": "Herzliya",
+        "zipcode": null,
+        "website": "http://www.plt-finance.co.il/he/",
+        "full_time_employees": 6
     }
 }

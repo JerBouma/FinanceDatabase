@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Surry Hills"
+        "state": "NSW",
+        "city": "Surry Hills",
+        "zipcode": "2010",
+        "website": "http://www.aspengroup.com.au",
+        "full_time_employees": null
     },
     "AXI.AX": {
         "short_name": "AXIOM FPO",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Adelaide"
+        "state": "SA",
+        "city": "Adelaide",
+        "zipcode": "5000",
+        "website": "http://www.axiompl.com.au",
+        "full_time_employees": null
     },
     "HMC.AX": {
         "short_name": "HOME CO STAPLED",
@@ -33,7 +41,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Double Bay"
+        "state": "NSW",
+        "city": "Double Bay",
+        "zipcode": "2028",
+        "website": "http://www.home-co.com.au",
+        "full_time_employees": null
     },
     "LCOMF": {
         "short_name": "LIFESTYLE COMMUNITIES LIMITED",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3205",
+        "website": "http://www.lifestylecommunities.com.au",
+        "full_time_employees": 100
     },
     "LIC.AX": {
         "short_name": "LIFESTYLE FPO",
@@ -57,7 +73,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3205",
+        "website": "http://www.lifestylecommunities.com.au",
+        "full_time_employees": 100
     },
     "LLC.AX": {
         "short_name": "LEND LEASE STAPLED",
@@ -69,7 +89,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Barangaroo"
+        "state": "NSW",
+        "city": "Barangaroo",
+        "zipcode": "2000",
+        "website": "http://www.lendlease.com",
+        "full_time_employees": null
     },
     "LLESF": {
         "short_name": "LENDLEASE CORPORATION LIMITED",
@@ -81,7 +105,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Barangaroo"
+        "state": "NSW",
+        "city": "Barangaroo",
+        "zipcode": "2000",
+        "website": "http://www.lendlease.com",
+        "full_time_employees": null
     },
     "LLESY": {
         "short_name": "LENDLEASE CORPORATION LIMITED",
@@ -93,7 +121,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Barangaroo"
+        "state": "NSW",
+        "city": "Barangaroo",
+        "zipcode": "2000",
+        "website": "http://www.lendlease.com",
+        "full_time_employees": null
     },
     "RPG.AX": {
         "short_name": "RAPTIS FPO",
@@ -105,6 +137,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Brisbane"
+        "state": "QLD",
+        "city": "Brisbane",
+        "zipcode": "4217",
+        "website": "http://www.raptis.com",
+        "full_time_employees": null
     }
 }

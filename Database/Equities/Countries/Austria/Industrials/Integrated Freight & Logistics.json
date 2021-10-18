@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1030",
+        "website": "http://www.post.at",
+        "full_time_employees": 20580
     },
     "OSTIY": {
         "short_name": "OESTERREICHISCHE POST AG",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1030",
+        "website": "http://www.post.at",
+        "full_time_employees": 20580
     },
     "POST.VI": {
         "short_name": "OESTERREICHISCHE POST AG",
@@ -33,6 +41,10 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1030",
+        "website": "http://www.post.at",
+        "full_time_employees": 20580
     }
 }

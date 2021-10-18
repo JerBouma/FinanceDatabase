@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Spain",
-        "city": "Bilbao"
+        "state": null,
+        "city": "Bilbao",
+        "zipcode": null,
+        "website": "http://www.neinorhomes.com",
+        "full_time_employees": 288
     },
     "1QK.F": {
         "short_name": "AEDAS HOMES S.A. EO 1",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28046",
+        "website": "http://www.aedashomes.com",
+        "full_time_employees": 234
     },
     "AEDAS.MC": {
         "short_name": "AEDAS HOMES, S.A",
@@ -33,7 +41,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28046",
+        "website": "http://www.aedashomes.com",
+        "full_time_employees": 234
     },
     "HOME.MC": {
         "short_name": "NEINOR HOMES, S.A.",
@@ -45,7 +57,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Bilbao"
+        "state": null,
+        "city": "Bilbao",
+        "zipcode": null,
+        "website": "http://www.neinorhomes.com",
+        "full_time_employees": 288
     },
     "MS6N.F": {
         "short_name": "METROVACESA S.A.  EO 7,2",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28050",
+        "website": "http://www.metrovacesa.com",
+        "full_time_employees": 195
     },
     "MVC.MC": {
         "short_name": "METROVACESA, S.A.",
@@ -69,6 +89,10 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28050",
+        "website": "http://www.metrovacesa.com",
+        "full_time_employees": 195
     }
 }

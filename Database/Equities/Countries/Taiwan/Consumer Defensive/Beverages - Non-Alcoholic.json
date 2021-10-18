@@ -9,7 +9,11 @@
         "exchange": "TAI",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "New Taipei City"
+        "state": null,
+        "city": "New Taipei City",
+        "zipcode": null,
+        "website": "http://www.applesidra.com.tw",
+        "full_time_employees": null
     },
     "1234.TW": {
         "short_name": "HEY SONG",
@@ -21,7 +25,11 @@
         "exchange": "TAI",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Taipei City"
+        "state": null,
+        "city": "Taipei City",
+        "zipcode": "106",
+        "website": "http://www.heysong.com.tw",
+        "full_time_employees": null
     },
     "2732.TWO": {
         "short_name": "LA KAFFA INTERNATIONAL CO LTD",
@@ -33,6 +41,10 @@
         "exchange": "TWO",
         "market": "tw_market",
         "country": "Taiwan",
-        "city": "Zhubei City"
+        "state": null,
+        "city": "Zhubei City",
+        "zipcode": "302",
+        "website": "http://www.lakaffagroup.com",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28040",
+        "website": "http://www.ence.es",
+        "full_time_employees": 1150
     },
     "ENCA.F": {
         "short_name": "ENCE ENERGIA+CELUL.EO-,90",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28040",
+        "website": "http://www.ence.es",
+        "full_time_employees": 1150
     },
     "IBG.MC": {
         "short_name": "IBERPAPEL GESTION,S.A.",
@@ -33,7 +41,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "San Sebastian"
+        "state": null,
+        "city": "San Sebastian",
+        "zipcode": "20010",
+        "website": "http://www.iberpapel.es",
+        "full_time_employees": 297
     },
     "IBG.SG": {
         "short_name": "IBERPAPEL GESTION S.A. Acciones",
@@ -45,7 +57,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Spain",
-        "city": "San Sebastian"
+        "state": null,
+        "city": "San Sebastian",
+        "zipcode": "20010",
+        "website": "http://www.iberpapel.es",
+        "full_time_employees": 297
     },
     "MCM.MC": {
         "short_name": "MIQUEL Y COSTAS & MIQUEL, S.A.",
@@ -57,7 +73,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Barcelona"
+        "state": null,
+        "city": "Barcelona",
+        "zipcode": "08006",
+        "website": "http://www.miquelycostas.com",
+        "full_time_employees": 893
     },
     "MCMN.MX": {
         "short_name": "MIQUEL Y COSTAS MIQUEL",
@@ -69,7 +89,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Spain",
-        "city": "Barcelona"
+        "state": null,
+        "city": "Barcelona",
+        "zipcode": "08006",
+        "website": "http://www.miquelycostas.com",
+        "full_time_employees": 812
     },
     "MQ4.SG": {
         "short_name": "MIQUEL Y COSTAS Y MIQUEL S.A. A",
@@ -81,6 +105,10 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Spain",
-        "city": "Barcelona"
+        "state": null,
+        "city": "Barcelona",
+        "zipcode": "08006",
+        "website": "http://www.miquelycostas.com",
+        "full_time_employees": 893
     }
 }

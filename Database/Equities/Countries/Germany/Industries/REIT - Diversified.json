@@ -9,7 +9,11 @@
         "exchange": "MUN",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Munich"
+        "state": null,
+        "city": "Munich",
+        "zipcode": "80538",
+        "website": "http://www.gieag.de",
+        "full_time_employees": 29
     },
     "HAB2.VI": {
         "short_name": "HAMBORNER REIT AG",
@@ -21,7 +25,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Germany",
-        "city": "Duisburg"
+        "state": null,
+        "city": "Duisburg",
+        "zipcode": "47166",
+        "website": "http://www.hamborner.de",
+        "full_time_employees": 44
     },
     "SMWN.DE": {
         "short_name": "SM WIRTSCHAFTSBER.NA.O.N.",
@@ -33,7 +41,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Sindelfingen"
+        "state": null,
+        "city": "Sindelfingen",
+        "zipcode": "71063",
+        "website": "http://www.smw-ag.de",
+        "full_time_employees": 4
     },
     "SMWN.F": {
         "short_name": "SM WIRTSCHAFTSBER.NA.O.N.",
@@ -45,6 +57,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Sindelfingen"
+        "state": null,
+        "city": "Sindelfingen",
+        "zipcode": "71063",
+        "website": "http://www.smw-ag.de",
+        "full_time_employees": 4
     }
 }

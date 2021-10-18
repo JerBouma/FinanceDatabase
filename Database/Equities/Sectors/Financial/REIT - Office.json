@@ -9,7 +9,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "CNES11.SA": {
         "short_name": "FII CENESP  CI",
@@ -21,7 +25,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "COLN.MX": {
         "short_name": "INMOBILIARIA COLONIAL SOCIMI S.",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "08006",
+        "website": "http://www.inmocolonial.com",
+        "full_time_employees": 229
     },
     "EDGA11.SA": {
         "short_name": "FII GALERIA CI",
@@ -45,7 +57,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Rio de Janeiro"
+        "state": "RJ",
+        "city": "Rio de Janeiro",
+        "zipcode": "22250-040",
+        "website": null,
+        "full_time_employees": null
     },
     "FMOF11.SA": {
         "short_name": "FII MEMORIALCI",
@@ -57,7 +73,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "FQI.DE": {
         "short_name": "DIGITAL REALTY TR. DL-,01",
@@ -69,6 +89,10 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "United States",
-        "city": "San Francisco"
+        "state": "CA",
+        "city": "San Francisco",
+        "zipcode": "94111",
+        "website": "http://www.digitalrealty.com",
+        "full_time_employees": 2878
     }
 }

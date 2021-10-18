@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Givatayim"
+        "state": null,
+        "city": "Givatayim",
+        "zipcode": "5358310",
+        "website": "http://www.global-power.co.il",
+        "full_time_employees": 6
     },
     "OPCE.TA": {
         "short_name": "OPC ENERGY LTD",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "6473919",
+        "website": "http://www.opc-energy.com",
+        "full_time_employees": 116
     },
     "RTEN-L.TA": {
         "short_name": "ROTEM ENERGY MINER",
@@ -33,6 +41,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "6789156",
+        "website": "http://www.rem-energy.com",
+        "full_time_employees": null
     }
 }

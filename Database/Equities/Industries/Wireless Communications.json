@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "EC1A 7AJ",
+        "website": "http://www.bt.com",
+        "full_time_employees": 105300
     },
     "DTEA.DE": {
         "short_name": "DEUTSCHE TELEKOM ADR 1",
@@ -21,7 +25,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Bonn"
+        "state": null,
+        "city": "Bonn",
+        "zipcode": "53113",
+        "website": "http://www.telekom.com",
+        "full_time_employees": 226291
     },
     "DTEN.MX": {
         "short_name": "DEUTSCHE TELEKOM AG",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Germany",
-        "city": "Bonn"
+        "state": null,
+        "city": "Bonn",
+        "zipcode": "53113",
+        "website": "http://www.telekom.com",
+        "full_time_employees": 226291
     },
     "FORTH.AT": {
         "short_name": "FORTHNET S.A.",
@@ -45,7 +57,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Pallini"
+        "state": null,
+        "city": "Pallini",
+        "zipcode": "153 51",
+        "website": "http://www.forthnet.gr",
+        "full_time_employees": 930
     },
     "HTO.AT": {
         "short_name": "HELLENIC TELECOM. ORG. (CR)",
@@ -57,7 +73,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "151 24",
+        "website": "http://www.cosmote.gr/cs/otegroup/en/ote_ae.html",
+        "full_time_employees": 16291
     },
     "OIBRQN.MX": {
         "short_name": "OI SA",
@@ -69,7 +89,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Brazil",
-        "city": "Rio de Janeiro"
+        "state": "RJ",
+        "city": "Rio de Janeiro",
+        "zipcode": "22430-190",
+        "website": "http://www.oi.com.br",
+        "full_time_employees": 13305
     },
     "ORANN.MX": {
         "short_name": "ORANGE",
@@ -81,7 +105,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75015",
+        "website": "http://www.orange.com",
+        "full_time_employees": 133787
     },
     "SOFTN.MX": {
         "short_name": "SOFTBANK GROUP CORP",
@@ -93,7 +121,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "105-7317",
+        "website": "http://group.softbank",
+        "full_time_employees": 80909
     },
     "TEON.MX": {
         "short_name": "TELECOM ARGENTINA SA",
@@ -105,7 +137,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "1107",
+        "website": "http://institucional.telecom.com.ar",
+        "full_time_employees": 23254
     },
     "TKCN.MX": {
         "short_name": "TURKCELL ILETISIM HIZMET",
@@ -117,7 +153,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34854",
+        "website": "http://www.turkcell.com.tr",
+        "full_time_employees": null
     },
     "TNE2.DE": {
         "short_name": "TELEFONICA S.A.EO 1 ADR 1",
@@ -129,7 +169,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28050",
+        "website": "http://www.telefonica.com",
+        "full_time_employees": 112543
     },
     "UNLA": {
         "short_name": "UNILAVA CORPORATION",
@@ -141,6 +185,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "San Francisco"
+        "state": "CA",
+        "city": "San Francisco",
+        "zipcode": "94105",
+        "website": "http://www.unilava.com",
+        "full_time_employees": 17
     }
 }

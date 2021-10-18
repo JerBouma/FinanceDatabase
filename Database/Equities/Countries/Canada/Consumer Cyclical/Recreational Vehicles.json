@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Valcourt"
+        "state": "QC",
+        "city": "Valcourt",
+        "zipcode": "J0E 2L0",
+        "website": "http://www.brp.com",
+        "full_time_employees": 14500
     },
     "BOAT.V": {
         "short_name": "THE LIMESTONE BOAT COMPANY LIMI",
@@ -21,7 +25,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": null,
+        "website": "http://www.limestoneboats.com",
+        "full_time_employees": 6
     },
     "DOO.TO": {
         "short_name": "BRP INC",
@@ -33,7 +41,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Valcourt"
+        "state": "QC",
+        "city": "Valcourt",
+        "zipcode": "J0E 2L0",
+        "website": "http://www.brp.com",
+        "full_time_employees": 14500
     },
     "DOOO": {
         "short_name": "BRP Inc.",
@@ -45,7 +57,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "Canada",
-        "city": "Valcourt"
+        "state": "QC",
+        "city": "Valcourt",
+        "zipcode": "J0E 2L0",
+        "website": "http://www.brp.com",
+        "full_time_employees": 14500
     },
     "TAIG.TO": {
         "short_name": "TAIGA MOTORS CORPORATION",
@@ -57,6 +73,10 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Lasalle"
+        "state": "QC",
+        "city": "Lasalle",
+        "zipcode": "H8N 2J8",
+        "website": "http://www.taigamotors.ca",
+        "full_time_employees": 52
     }
 }

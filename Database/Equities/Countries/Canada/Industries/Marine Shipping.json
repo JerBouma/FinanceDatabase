@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Saint Catharines"
+        "state": "ON",
+        "city": "Saint Catharines",
+        "zipcode": "L2R 3C4",
+        "website": "http://www.algonet.com",
+        "full_time_employees": 1600
     },
     "AGMJF": {
         "short_name": "ALGOMA CENTRAL CORP",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Saint Catharines"
+        "state": "ON",
+        "city": "Saint Catharines",
+        "zipcode": "L2R 3C4",
+        "website": "http://www.algonet.com",
+        "full_time_employees": 1600
     },
     "ALC.TO": {
         "short_name": "ALGOMA CENTRAL",
@@ -33,7 +41,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Saint Catharines"
+        "state": "ON",
+        "city": "Saint Catharines",
+        "zipcode": "L2R 3C4",
+        "website": "http://www.algonet.com",
+        "full_time_employees": 1600
     },
     "LGT-A.TO": {
         "short_name": "LOGISTEC CORPORATION, CL.A, MV",
@@ -45,7 +57,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H3B 4L2",
+        "website": "http://www.logistec.com",
+        "full_time_employees": 2700
     },
     "LGT-B.TO": {
         "short_name": "LOGISTEC CORPORATION, CL.B, SV",
@@ -57,7 +73,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H3B 4L2",
+        "website": "http://www.logistec.com",
+        "full_time_employees": 2700
     },
     "WTE.TO": {
         "short_name": "WESTSHORE TERMINALS INVESTMENT ",
@@ -69,7 +89,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6C 1C7",
+        "website": "http://www.westshore.com",
+        "full_time_employees": 237
     },
     "WTSHF": {
         "short_name": "WESTSHORE TERMINALS INVESTMENT ",
@@ -81,6 +105,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Vancouver"
+        "state": "BC",
+        "city": "Vancouver",
+        "zipcode": "V6C 1C7",
+        "website": "http://www.westshore.com",
+        "full_time_employees": 237
     }
 }

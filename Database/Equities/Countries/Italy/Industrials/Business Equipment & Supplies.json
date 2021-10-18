@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Pero"
+        "state": "MI",
+        "city": "Pero",
+        "zipcode": "20016",
+        "website": "http://www.filagroup.it",
+        "full_time_employees": 8070
     },
     "FILA.MI": {
         "short_name": "FILA",
@@ -21,7 +25,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Pero"
+        "state": "MI",
+        "city": "Pero",
+        "zipcode": "20016",
+        "website": "http://www.filagroup.it",
+        "full_time_employees": 8070
     },
     "FNL.MI": {
         "short_name": "FINLOGIC",
@@ -33,7 +41,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Bollate"
+        "state": "MI",
+        "city": "Bollate",
+        "zipcode": "20021",
+        "website": "http://www.finlogic.it",
+        "full_time_employees": 220
     },
     "ROS.MI": {
         "short_name": "ROSSS",
@@ -45,6 +57,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Florence"
+        "state": null,
+        "city": "Florence",
+        "zipcode": "50038",
+        "website": "http://www.rosss.it",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "102 52",
+        "website": "http://www.alphaholdings.gr",
+        "full_time_employees": 10528
     },
     "AXBN.MX": {
         "short_name": "AXIS BANK",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "India",
-        "city": "Mumbai"
+        "state": null,
+        "city": "Mumbai",
+        "zipcode": "400025",
+        "website": "http://www.axisbank.com",
+        "full_time_employees": 78300
     },
     "BBDN.MX": {
         "short_name": "BANCO BRADESCO SA",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Brazil",
-        "city": "Osasco"
+        "state": "SP",
+        "city": "Osasco",
+        "zipcode": "06029-900",
+        "website": "http://banco.bradesco",
+        "full_time_employees": 89575
     },
     "BBVA.DE": {
         "short_name": "BCO BIL.VIZ.ARG.ADR EO,-4",
@@ -45,7 +57,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Spain",
-        "city": "Bilbao"
+        "state": null,
+        "city": "Bilbao",
+        "zipcode": "48005",
+        "website": "http://www.bbva.com",
+        "full_time_employees": 122021
     },
     "BNPN.MX": {
         "short_name": "BNP PARIBAS",
@@ -57,7 +73,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75009",
+        "website": "http://group.bnpparibas",
+        "full_time_employees": 193000
     },
     "CRFF11.SA": {
         "short_name": "FII CX RBRA2CI  ER",
@@ -69,7 +89,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "DBN.MX": {
         "short_name": "DEUTSCHE BANK AG",
@@ -81,7 +105,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Germany",
-        "city": "Frankfurt am Main"
+        "state": null,
+        "city": "Frankfurt am Main",
+        "zipcode": "60325",
+        "website": "http://www.db.com",
+        "full_time_employees": 84389
     },
     "ETE.AT": {
         "short_name": "National Bank of Greece (CR)",
@@ -93,7 +121,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "105 59",
+        "website": "http://www.nbg.gr",
+        "full_time_employees": 9107
     },
     "EUROB.AT": {
         "short_name": "EUROBANK HOLDINGS (CR)",
@@ -105,7 +137,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "105 57",
+        "website": "http://www.eurobankholdings.gr",
+        "full_time_employees": 11501
     },
     "GLEN.MX": {
         "short_name": "SOCIETE GENERALE",
@@ -117,7 +153,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75009",
+        "website": "http://www.societegenerale.com",
+        "full_time_employees": 133000
     },
     "HGFF11.SA": {
         "short_name": "FII CSHG FOFCI  ER",
@@ -129,7 +169,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "HGRU11.SA": {
         "short_name": "FII CSHG URBCI  ER",
@@ -141,7 +185,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Sao Paulo"
+        "state": "SP",
+        "city": "Sao Paulo",
+        "zipcode": "1830",
+        "website": null,
+        "full_time_employees": null
     },
     "ITUBN.MX": {
         "short_name": "ITAU UNIBANCO HOLDINGS S.A.",
@@ -153,7 +201,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
+        "state": "SP",
+        "city": "S\u00c3\u00a3o Paulo",
+        "zipcode": "04344-902",
+        "website": "http://www.itau.com.br",
+        "full_time_employees": 97097
     },
     "KBN.MX": {
         "short_name": "KB FINANCIAL GROUP INC",
@@ -165,7 +217,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "South Korea",
-        "city": "Seoul"
+        "state": null,
+        "city": "Seoul",
+        "zipcode": "07331",
+        "website": "http://www.kbfg.com",
+        "full_time_employees": null
     },
     "MUFGN.MX": {
         "short_name": "MITSUBISHI UFJ FINANCIAL GROUP ",
@@ -177,7 +233,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "100-8330",
+        "website": "http://www.mufg.jp",
+        "full_time_employees": null
     },
     "NDAN.MX": {
         "short_name": "NORDEA BANK ABP",
@@ -189,7 +249,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00020",
+        "website": "http://www.nordea.com",
+        "full_time_employees": 28051
     },
     "SBNC.DE": {
         "short_name": "SBERBANK ADR REGS/4 RL3",
@@ -201,7 +265,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Russia",
-        "city": "Moscow"
+        "state": null,
+        "city": "Moscow",
+        "zipcode": "117997",
+        "website": "http://www.sberbank.ru",
+        "full_time_employees": 278200
     },
     "SHGN.MX": {
         "short_name": "SHINHAN FINANCIAL GROUP CO LTD",
@@ -213,7 +281,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "South Korea",
-        "city": "Seoul"
+        "state": null,
+        "city": "Seoul",
+        "zipcode": "04513",
+        "website": "http://www.shinhangroup.com",
+        "full_time_employees": null
     },
     "SUPVN.MX": {
         "short_name": "GRUPO SUPERVIELLE S.A.",
@@ -225,7 +297,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "C1036AAH",
+        "website": "http://www.gruposupervielle.com",
+        "full_time_employees": 4943
     },
     "TATT.AT": {
         "short_name": "ATTICA BANK S.A",
@@ -237,7 +313,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "106 72",
+        "website": "http://www.atticabank.gr",
+        "full_time_employees": 785
     },
     "TELL.AT": {
         "short_name": "Bank of Greece (CR)",
@@ -249,7 +329,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "102 50",
+        "website": "http://www.bankofgreece.gr",
+        "full_time_employees": null
     },
     "TPEIR.AT": {
         "short_name": "PIRAEUS FINANCIAL HOLDINGS SA",
@@ -261,6 +345,10 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Athens"
+        "state": null,
+        "city": "Athens",
+        "zipcode": "105 64",
+        "website": "http://www.piraeusholdings.gr",
+        "full_time_employees": 10268
     }
 }

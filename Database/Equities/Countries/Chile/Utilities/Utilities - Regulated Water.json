@@ -9,7 +9,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago"
+        "state": null,
+        "city": "Santiago",
+        "zipcode": null,
+        "website": "http://www.aguasandinasinversionistas.cl",
+        "full_time_employees": 1729
     },
     "ESSBIO-C.SN": {
         "short_name": "ESSBIO SA",
@@ -21,7 +25,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Concepci\u00c3\u00b3n"
+        "state": null,
+        "city": "Concepci\u00c3\u00b3n",
+        "zipcode": null,
+        "website": "http://www.essbio.cl",
+        "full_time_employees": 1241
     },
     "ESVAL-C.SN": {
         "short_name": "ESVAL S.A.",
@@ -33,7 +41,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Valpara\u00c3\u00adso"
+        "state": null,
+        "city": "Valpara\u00c3\u00adso",
+        "zipcode": "2370020",
+        "website": "http://www.esval.cl",
+        "full_time_employees": 909
     },
     "IAM.SN": {
         "short_name": "INVERSIONES AGUAS",
@@ -45,6 +57,10 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Las Condes"
+        "state": null,
+        "city": "Las Condes",
+        "zipcode": null,
+        "website": "http://www.iam.cl",
+        "full_time_employees": 1733
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Colombia",
-        "city": "Bogot\u00c3\u00a1"
+        "state": null,
+        "city": "Bogot\u00c3\u00a1",
+        "zipcode": null,
+        "website": "http://www.geo-park.com",
+        "full_time_employees": 437
     },
     "AEDC": {
         "short_name": "AMERICAN ENERGY DEVELOPMENT COR",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10020",
+        "website": null,
+        "full_time_employees": 2
     },
     "FECN.MX": {
         "short_name": "FRONTERA ENERGY CORPORATION",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5H 2R2",
+        "website": "http://www.fronteraenergy.ca",
+        "full_time_employees": 1092
     },
     "NORX": {
         "short_name": "NORSTRA ENERGY INC",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Southlake"
+        "state": "TX",
+        "city": "Southlake",
+        "zipcode": "78041",
+        "website": null,
+        "full_time_employees": null
     },
     "OGNG": {
         "short_name": "BRAVO ENTERPRISES LTD",
@@ -57,7 +73,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Las Vegas"
+        "state": "NV",
+        "city": "Las Vegas",
+        "zipcode": "89146",
+        "website": null,
+        "full_time_employees": 2
     },
     "ZAZA": {
         "short_name": "ZAZA ENERGY CORP",
@@ -69,6 +89,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Houston"
+        "state": "TX",
+        "city": "Houston",
+        "zipcode": "77010",
+        "website": "http://www.zazaenergy.com",
+        "full_time_employees": 20
     }
 }

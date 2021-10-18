@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "100-8310",
+        "website": "http://www.mitsubishielectric.com",
+        "full_time_employees": null
     },
     "OMRNN.MX": {
         "short_name": "OMRON CORP",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Kyoto"
+        "state": null,
+        "city": "Kyoto",
+        "zipcode": "600-8530",
+        "website": "http://www.omron.com",
+        "full_time_employees": null
     },
     "YASKYN.MX": {
         "short_name": "YASKAWA ELECTRIC CORP",
@@ -33,6 +41,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Kitakyushu"
+        "state": null,
+        "city": "Kitakyushu",
+        "zipcode": "806-0004",
+        "website": "http://www.yaskawa.co.jp",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Auburn"
+        "state": "NSW",
+        "city": "Auburn",
+        "zipcode": "2144",
+        "website": "http://www.bingoindustries.com.au",
+        "full_time_employees": 1000
     },
     "BIN.AX": {
         "short_name": "BINGO IND FPO",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Auburn"
+        "state": "NSW",
+        "city": "Auburn",
+        "zipcode": "2144",
+        "website": "http://www.bingoindustries.com.au",
+        "full_time_employees": 1000
     },
     "CWY.AX": {
         "short_name": "CLEANAWAY FPO",
@@ -33,7 +41,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3004",
+        "website": "http://www.cleanaway.com.au",
+        "full_time_employees": 6000
     },
     "M8S.AX": {
         "short_name": "M8SUSTAIN FPO",
@@ -45,7 +57,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Maddington"
+        "state": "WA",
+        "city": "Maddington",
+        "zipcode": "6109",
+        "website": "http://www.m8sustainable.com.au",
+        "full_time_employees": null
     },
     "PG1.AX": {
         "short_name": "PEARGLOBAL FPO",
@@ -57,7 +73,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Stapylton"
+        "state": "QLD",
+        "city": "Stapylton",
+        "zipcode": "4027",
+        "website": "http://www.pearlglobal.com.au",
+        "full_time_employees": null
     },
     "TG9.F": {
         "short_name": "CLEANAWAY WASTE MNGMT",
@@ -69,6 +89,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3004",
+        "website": "http://www.cleanaway.com.au",
+        "full_time_employees": 6000
     }
 }

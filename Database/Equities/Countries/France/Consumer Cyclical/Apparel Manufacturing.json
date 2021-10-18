@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Le Coteau"
+        "state": null,
+        "city": "Le Coteau",
+        "zipcode": "42121",
+        "website": "http://www.devernois.com",
+        "full_time_employees": null
     },
     "BUI.PA": {
         "short_name": "BARBARA BUI",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75004",
+        "website": "http://www.barbarabui.com",
+        "full_time_employees": 62
     },
     "GJAJ.PA": {
         "short_name": "GROUPE JAJ",
@@ -33,7 +41,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Montreuil"
+        "state": null,
+        "city": "Montreuil",
+        "zipcode": "93100",
+        "website": "http://www.jaj.fr",
+        "full_time_employees": 48
     },
     "MLONE.PA": {
         "short_name": "BODY ONE",
@@ -45,7 +57,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Pantin"
+        "state": null,
+        "city": "Pantin",
+        "zipcode": "93500",
+        "website": "http://www.bodyone.fr",
+        "full_time_employees": null
     },
     "MLSML.PA": {
         "short_name": "SMALTO",
@@ -57,6 +73,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75116",
+        "website": "http://www.smalto.com",
+        "full_time_employees": 118
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Zurich"
+        "state": null,
+        "city": "Zurich",
+        "zipcode": "8034",
+        "website": "http://www.dksh.com",
+        "full_time_employees": 32447
     },
     "SGSN.SW": {
         "short_name": "SGS N",
@@ -21,7 +25,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Geneva"
+        "state": null,
+        "city": "Geneva",
+        "zipcode": "1211",
+        "website": "http://www.sgs.com",
+        "full_time_employees": 91698
     },
     "SGSOF": {
         "short_name": "SGS SA",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Geneva"
+        "state": null,
+        "city": "Geneva",
+        "zipcode": "1211",
+        "website": "http://www.sgs.com",
+        "full_time_employees": 91698
     },
     "SGSOY": {
         "short_name": "SGS SA",
@@ -45,6 +57,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Geneva"
+        "state": null,
+        "city": "Geneva",
+        "zipcode": "1211",
+        "website": "http://www.sgs.com",
+        "full_time_employees": 91698
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1100",
+        "website": "http://www.porr-group.com",
+        "full_time_employees": 20193
     },
     "ABS2.F": {
         "short_name": "PORR AG",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1100",
+        "website": "http://www.porr-group.com",
+        "full_time_employees": 20193
     },
     "POS.VI": {
         "short_name": "PORR AG",
@@ -33,7 +41,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1100",
+        "website": "http://www.porr-group.com",
+        "full_time_employees": 20193
     },
     "STR.VI": {
         "short_name": "STRABAG SE",
@@ -45,7 +57,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Austria",
-        "city": "Villach"
+        "state": null,
+        "city": "Villach",
+        "zipcode": "9500",
+        "website": "http://www.strabag.com",
+        "full_time_employees": 71220
     },
     "XD4.F": {
         "short_name": "STRABAG SE",
@@ -57,6 +73,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Austria",
-        "city": "Villach"
+        "state": null,
+        "city": "Villach",
+        "zipcode": "9500",
+        "website": "http://www.strabag.com",
+        "full_time_employees": 71220
     }
 }

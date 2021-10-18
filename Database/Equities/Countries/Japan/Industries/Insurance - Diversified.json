@@ -9,7 +9,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Saga"
+        "state": null,
+        "city": "Saga",
+        "zipcode": "849-0922",
+        "website": "http://www.cig-ins.co.jp",
+        "full_time_employees": null
     },
     "9679.T": {
         "short_name": "HORAI CO LTD",
@@ -21,7 +25,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "104-0061",
+        "website": "http://www.horai-kk.co.jp",
+        "full_time_employees": 156
     },
     "EEW.F": {
         "short_name": "SBI INSURCANCE GROUP",
@@ -33,6 +41,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "106-6016",
+        "website": "http://www.sbiig.co.jp",
+        "full_time_employees": 1056
     }
 }

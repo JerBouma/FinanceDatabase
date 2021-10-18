@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.iphltd.com.au",
+        "full_time_employees": 900
     },
     "1Q0.F": {
         "short_name": "QANTM INTELL. PROP. O.N.",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3002",
+        "website": "http://www.qantmip.com",
+        "full_time_employees": 352
     },
     "ALQ.AX": {
         "short_name": "ALS FPO",
@@ -33,7 +41,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Brisbane"
+        "state": "QLD",
+        "city": "Brisbane",
+        "zipcode": "4053",
+        "website": "http://www.alsglobal.com",
+        "full_time_employees": 15638
     },
     "CP4.F": {
         "short_name": "ALS LTD",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Brisbane"
+        "state": "QLD",
+        "city": "Brisbane",
+        "zipcode": "4053",
+        "website": "http://www.alsglobal.com",
+        "full_time_employees": 15638
     },
     "EAX.AX": {
         "short_name": "ENERGY ACT FPO",
@@ -57,7 +73,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Parramatta"
+        "state": "NSW",
+        "city": "Parramatta",
+        "zipcode": "2150",
+        "website": "http://www.energyaction.com.au",
+        "full_time_employees": null
     },
     "IPH.AX": {
         "short_name": "IPHLIMITED FPO",
@@ -69,7 +89,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.iphltd.com.au",
+        "full_time_employees": 900
     },
     "QIP.AX": {
         "short_name": "QANTMIP FPO",
@@ -81,6 +105,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3002",
+        "website": "http://www.qantmip.com",
+        "full_time_employees": 352
     }
 }

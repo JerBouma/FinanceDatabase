@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Netherlands",
-        "city": "Zaandam"
+        "state": null,
+        "city": "Zaandam",
+        "zipcode": "1506 MA",
+        "website": "http://www.aholddelhaize.com",
+        "full_time_employees": 145000
     },
     "CAN.MX": {
         "short_name": "CARREFOUR SA",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "France",
-        "city": "Massy"
+        "state": null,
+        "city": "Massy",
+        "zipcode": "91300",
+        "website": "http://www.carrefour.com",
+        "full_time_employees": 234858
     },
     "KMOL.AT": {
         "short_name": "KARAMOLEGOS BAKERY INDUSTRY",
@@ -33,7 +41,11 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Koropi"
+        "state": null,
+        "city": "Koropi",
+        "zipcode": null,
+        "website": "http://www.karamolegos-bkr.gr",
+        "full_time_employees": 808
     },
     "OCDON.MX": {
         "short_name": "OCADO GROUP PLC",
@@ -45,7 +57,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United Kingdom",
-        "city": "Hatfield"
+        "state": null,
+        "city": "Hatfield",
+        "zipcode": "AL10 9UL",
+        "website": "http://www.ocadogroup.com",
+        "full_time_employees": 18618
     },
     "TSCON.MX": {
         "short_name": "TESCO",
@@ -57,6 +73,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United Kingdom",
-        "city": "Welwyn Garden City"
+        "state": null,
+        "city": "Welwyn Garden City",
+        "zipcode": "AL7 1GA",
+        "website": "http://www.tescoplc.com",
+        "full_time_employees": 300000
     }
 }

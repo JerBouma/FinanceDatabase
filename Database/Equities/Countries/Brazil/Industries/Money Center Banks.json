@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Brazil",
-        "city": "Osasco"
+        "state": "SP",
+        "city": "Osasco",
+        "zipcode": "06029-900",
+        "website": "http://banco.bradesco",
+        "full_time_employees": 89575
     },
     "CRFF11.SA": {
         "short_name": "FII CX RBRA2CI  ER",
@@ -21,7 +25,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "HGFF11.SA": {
         "short_name": "FII CSHG FOFCI  ER",
@@ -33,7 +41,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "HGRU11.SA": {
         "short_name": "FII CSHG URBCI  ER",
@@ -45,7 +57,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Sao Paulo"
+        "state": "SP",
+        "city": "Sao Paulo",
+        "zipcode": "1830",
+        "website": null,
+        "full_time_employees": null
     },
     "ITUBN.MX": {
         "short_name": "ITAU UNIBANCO HOLDINGS S.A.",
@@ -57,6 +73,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
+        "state": "SP",
+        "city": "S\u00c3\u00a3o Paulo",
+        "zipcode": "04344-902",
+        "website": "http://www.itau.com.br",
+        "full_time_employees": 97097
     }
 }

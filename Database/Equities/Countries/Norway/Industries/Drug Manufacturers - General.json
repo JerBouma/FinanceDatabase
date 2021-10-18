@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0255",
+        "website": "http://www.navamedic.com",
+        "full_time_employees": 30
     },
     "NAVA.OL": {
         "short_name": "NAVAMEDIC ASA",
@@ -21,6 +25,10 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Oslo"
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0255",
+        "website": "http://www.navamedic.com",
+        "full_time_employees": 30
     }
 }

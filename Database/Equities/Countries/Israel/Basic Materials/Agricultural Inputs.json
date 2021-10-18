@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Hefer"
+        "state": null,
+        "city": "Hefer",
+        "zipcode": "38777",
+        "website": "http://www.amir-agricul.co.il",
+        "full_time_employees": 213
     },
     "ICL": {
         "short_name": "ICL Group Ltd.",
@@ -21,7 +25,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "6107025",
+        "website": "http://www.icl-group.com",
+        "full_time_employees": 10832
     },
     "ICL.TA": {
         "short_name": "ICL GROUP LTD",
@@ -33,7 +41,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "6107025",
+        "website": "http://www.icl-group.com",
+        "full_time_employees": 11000
     },
     "SAFO": {
         "short_name": "SAVE FOODS INC",
@@ -45,6 +57,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Lower Galilee"
+        "state": null,
+        "city": "Lower Galilee",
+        "zipcode": "3657700",
+        "website": "http://savefoods.co",
+        "full_time_employees": 2
     }
 }

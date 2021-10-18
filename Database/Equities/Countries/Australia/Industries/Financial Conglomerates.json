@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.clearview.com.au",
+        "full_time_employees": null
     },
     "GDG.AX": {
         "short_name": "GEN DEV FPO",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3000",
+        "website": "http://www.gendevelopmentgroup.com.au",
+        "full_time_employees": null
     },
     "INV.AX": {
         "short_name": "INVESTSGRP FPO",
@@ -33,7 +41,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.investsmart.com.au",
+        "full_time_employees": null
     },
     "SEQ.AX": {
         "short_name": "SEQUOIA FPO",
@@ -45,7 +57,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.sequoia.com.au",
+        "full_time_employees": null
     },
     "YBR.AX": {
         "short_name": "YELLOWBRIC FPO",
@@ -57,7 +73,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.ybr.com.au",
+        "full_time_employees": null
     },
     "YBRHF": {
         "short_name": "YELLOW BRICK ROAD HOLDINGS LIMI",
@@ -69,6 +89,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.ybr.com.au",
+        "full_time_employees": null
     }
 }

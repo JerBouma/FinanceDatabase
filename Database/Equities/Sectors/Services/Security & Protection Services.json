@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": null,
+        "website": "http://www.assaabloy.com",
+        "full_time_employees": 49685
     },
     "ALLEN.MX": {
         "short_name": "ALLEGION PLC",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "D02 VH94",
+        "website": "http://www.allegion.com",
+        "full_time_employees": 11500
     },
     "PCPZ": {
         "short_name": "LEEWARD GROUP HLDGS INC",
@@ -33,6 +41,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Pennington"
+        "state": "NJ",
+        "city": "Pennington",
+        "zipcode": "08543",
+        "website": null,
+        "full_time_employees": 13
     }
 }

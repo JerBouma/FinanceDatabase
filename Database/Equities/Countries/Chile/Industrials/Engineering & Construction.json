@@ -9,7 +9,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago de Chile"
+        "state": null,
+        "city": "Santiago de Chile",
+        "zipcode": null,
+        "website": "http://www.besalco.cl",
+        "full_time_employees": 12988
     },
     "EISA.SN": {
         "short_name": "ECHEVERRIA IZQ SA",
@@ -21,7 +25,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Las Condes"
+        "state": null,
+        "city": "Las Condes",
+        "zipcode": null,
+        "website": "http://www.ei.cl",
+        "full_time_employees": null
     },
     "MOLLER.SN": {
         "short_name": "EMP CONSTR MOLLER",
@@ -33,7 +41,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Providencia"
+        "state": null,
+        "city": "Providencia",
+        "zipcode": null,
+        "website": "http://www.mpc.cl",
+        "full_time_employees": 1848
     },
     "SALFACORP.SN": {
         "short_name": "SALFACORP SA",
@@ -45,7 +57,11 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Santiago de Chile"
+        "state": null,
+        "city": "Santiago de Chile",
+        "zipcode": "7561127",
+        "website": "http://www.salfacorp.com",
+        "full_time_employees": 11900
     },
     "SCHWAGER.SN": {
         "short_name": "SCHWAGER SA",
@@ -57,6 +73,10 @@
         "exchange": "SGO",
         "market": "cl_market",
         "country": "Chile",
-        "city": "Huechuraba"
+        "state": null,
+        "city": "Huechuraba",
+        "zipcode": null,
+        "website": "http://www.schwager.cl",
+        "full_time_employees": 1500
     }
 }

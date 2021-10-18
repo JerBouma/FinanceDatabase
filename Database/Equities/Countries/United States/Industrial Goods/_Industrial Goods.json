@@ -9,7 +9,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United States",
-        "city": "Deerfield"
+        "state": "IL",
+        "city": "Deerfield",
+        "zipcode": "60015",
+        "website": "http://www.caterpillar.com",
+        "full_time_employees": 97300
     },
     "ACA.MX": {
         "short_name": "ARCOSA INC",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "Dallas"
+        "state": "TX",
+        "city": "Dallas",
+        "zipcode": "75201",
+        "website": "http://www.arcosa.com",
+        "full_time_employees": 6410
     },
     "AME.MX": {
         "short_name": "AMETEK INC",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "Berwyn"
+        "state": "PA",
+        "city": "Berwyn",
+        "zipcode": "19312-1177",
+        "website": "http://www.ametek.com",
+        "full_time_employees": 16500
     },
     "CHMR": {
         "short_name": "CHIMERA ENERGY CORP",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Houston"
+        "state": "TX",
+        "city": "Houston",
+        "zipcode": "77056",
+        "website": null,
+        "full_time_employees": null
     },
     "INS": {
         "short_name": "Intelligent Systems Corporation",
@@ -57,7 +73,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Norcross"
+        "state": "GA",
+        "city": "Norcross",
+        "zipcode": "30093",
+        "website": "http://www.intelsys.com",
+        "full_time_employees": 570
     },
     "IXEH": {
         "short_name": "IX ENERGY HOLDINGS INC",
@@ -69,7 +89,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10017",
+        "website": null,
+        "full_time_employees": 3
     },
     "RTX.BA": {
         "short_name": "RAYTHEON TECHNOLOG",
@@ -81,7 +105,11 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "United States",
-        "city": "Waltham"
+        "state": "MA",
+        "city": "Waltham",
+        "zipcode": "02451",
+        "website": "http://www.rtx.com",
+        "full_time_employees": 181000
     },
     "TPAC": {
         "short_name": "TRANS-PACIFIC AEROSPACE CO INC",
@@ -93,7 +121,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "San Marino"
+        "state": "CA",
+        "city": "San Marino",
+        "zipcode": "91108",
+        "website": "http://tpacbearings.com",
+        "full_time_employees": 6
     },
     "USAE": {
         "short_name": "US AEROSPACE INC",
@@ -105,7 +137,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Rancho Cucamonga"
+        "state": "CA",
+        "city": "Rancho Cucamonga",
+        "zipcode": "91730",
+        "website": null,
+        "full_time_employees": 30
     },
     "WSML": {
         "short_name": "WILLIAMSVILLE SEARS MANAGEMENT ",
@@ -117,6 +153,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10111",
+        "website": null,
+        "full_time_employees": null
     }
 }

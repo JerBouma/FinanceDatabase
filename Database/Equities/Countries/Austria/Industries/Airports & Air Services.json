@@ -9,7 +9,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1010",
+        "website": "http://www.doco.com",
+        "full_time_employees": 8075
     },
     "DOCO.IS": {
         "short_name": "DO-CO",
@@ -21,7 +25,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1010",
+        "website": "http://www.doco.com",
+        "full_time_employees": 8075
     },
     "DOQ.F": {
         "short_name": "DO + CO AG",
@@ -33,6 +41,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Austria",
-        "city": "Vienna"
+        "state": null,
+        "city": "Vienna",
+        "zipcode": "1010",
+        "website": "http://www.doco.com",
+        "full_time_employees": 8075
     }
 }

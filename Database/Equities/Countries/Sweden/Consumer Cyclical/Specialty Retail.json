@@ -9,7 +9,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Insj\u00c3\u00b6n"
+        "state": null,
+        "city": "Insj\u00c3\u00b6n",
+        "zipcode": "793 85",
+        "website": "http://www.clasohlson.com",
+        "full_time_employees": 4900
     },
     "ELEC.ST": {
         "short_name": "Electra Gruppen AB",
@@ -21,7 +25,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Kalmar"
+        "state": null,
+        "city": "Kalmar",
+        "zipcode": "392 39",
+        "website": "http://www.electra.se",
+        "full_time_employees": null
     },
     "NEWA-B.ST": {
         "short_name": "New Wave Group AB ser. B",
@@ -33,7 +41,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "411 36",
+        "website": "http://www.nwg.se",
+        "full_time_employees": 2035
     },
     "NWG.F": {
         "short_name": "NEW WAVE GROUP AB B  SK 3",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "411 36",
+        "website": "http://www.nwg.se",
+        "full_time_employees": 2035
     },
     "OHCB.F": {
         "short_name": "CLAS OHLSON B  SK1,25",
@@ -57,6 +73,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Insj\u00c3\u00b6n"
+        "state": null,
+        "city": "Insj\u00c3\u00b6n",
+        "zipcode": "793 85",
+        "website": "http://www.clasohlson.com",
+        "full_time_employees": 4900
     }
 }

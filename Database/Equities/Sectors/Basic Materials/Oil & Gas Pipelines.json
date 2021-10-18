@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Adelaide"
+        "state": "SA",
+        "city": "Adelaide",
+        "zipcode": "5000",
+        "website": "http://www.lcke.com.au",
+        "full_time_employees": null
     },
     "TGSN.MX": {
         "short_name": "TRANSPORTADORA DE GAS DEL SUR S",
@@ -21,6 +25,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Argentina",
-        "city": "Buenos Aires"
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "1206",
+        "website": "http://www.tgs.com.ar",
+        "full_time_employees": 1099
     }
 }

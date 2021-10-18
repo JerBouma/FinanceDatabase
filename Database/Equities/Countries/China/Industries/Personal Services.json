@@ -9,7 +9,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": "200030",
+        "website": "http://www.fsygroup.com",
+        "full_time_employees": 2345
     },
     "600421.SS": {
         "short_name": "HUBEI HUARONG HOLDING CO LTD",
@@ -21,7 +25,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Wuhan"
+        "state": null,
+        "city": "Wuhan",
+        "zipcode": "430070",
+        "website": null,
+        "full_time_employees": null
     },
     "603377.SS": {
         "short_name": "EASTERN PIONEER DRIVING SCHOOL ",
@@ -33,7 +41,11 @@
         "exchange": "SHH",
         "market": "cn_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": null,
+        "website": "http://www.dfss.com.cn",
+        "full_time_employees": 3994
     },
     "EM": {
         "short_name": "Smart Share Global Limited",
@@ -45,7 +57,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": "200335",
+        "website": "http://www.enmonster.com",
+        "full_time_employees": null
     },
     "FSH.F": {
         "short_name": "FU SHOU YUAN IN.GR.DL-,01",
@@ -57,6 +73,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "China",
-        "city": "Shanghai"
+        "state": null,
+        "city": "Shanghai",
+        "zipcode": "200030",
+        "website": "http://www.fsygroup.com",
+        "full_time_employees": 2345
     }
 }

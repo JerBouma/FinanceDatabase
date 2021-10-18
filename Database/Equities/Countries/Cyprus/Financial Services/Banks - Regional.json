@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Cyprus",
-        "city": "Nicosia"
+        "state": null,
+        "city": "Nicosia",
+        "zipcode": "1398",
+        "website": "http://www.bankofcyprus.com",
+        "full_time_employees": 3573
     },
     "BOCH.L": {
         "short_name": "BANK OF CYPRUS HOLDINGS PUBLIC ",
@@ -21,7 +25,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "Cyprus",
-        "city": "Nicosia"
+        "state": null,
+        "city": "Nicosia",
+        "zipcode": "1398",
+        "website": "http://www.bankofcyprus.com",
+        "full_time_employees": 3573
     },
     "TCSG.ME": {
         "short_name": "TCS GROUP HOLDING",
@@ -33,6 +41,10 @@
         "exchange": "MCX",
         "market": "ru_market",
         "country": "Cyprus",
-        "city": "Limassol"
+        "state": null,
+        "city": "Limassol",
+        "zipcode": "3035",
+        "website": "http://www.tcsgh.com.cy",
+        "full_time_employees": 25970
     }
 }

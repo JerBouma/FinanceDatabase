@@ -9,7 +9,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Midrand"
+        "state": null,
+        "city": "Midrand",
+        "zipcode": null,
+        "website": "http://www.famousbrands.co.za",
+        "full_time_employees": null
     },
     "GPL.JO": {
         "short_name": "Grand Parade Inv Ltd",
@@ -21,7 +25,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Cape Town"
+        "state": null,
+        "city": "Cape Town",
+        "zipcode": "8001",
+        "website": "http://www.grandparade.co.za",
+        "full_time_employees": null
     },
     "SUR.JO": {
         "short_name": "Spur Corporation Ltd",
@@ -33,6 +41,10 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Cape Town"
+        "state": null,
+        "city": "Cape Town",
+        "zipcode": "7441",
+        "website": "http://www.spurcorporation.com",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "West Perth"
+        "state": "WA",
+        "city": "West Perth",
+        "zipcode": "6005",
+        "website": "http://www.3dmetalforge.com",
+        "full_time_employees": null
     },
     "AL3.AX": {
         "short_name": "AML3D FPO",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Edinburgh"
+        "state": "SA",
+        "city": "Edinburgh",
+        "zipcode": "5111",
+        "website": "http://www.aml3d.com",
+        "full_time_employees": null
     },
     "KOV.AX": {
         "short_name": "KORVEST FPO",
@@ -33,6 +41,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Kilburn"
+        "state": "SA",
+        "city": "Kilburn",
+        "zipcode": "5084",
+        "website": "http://www.korvest.com.au",
+        "full_time_employees": 189
     }
 }

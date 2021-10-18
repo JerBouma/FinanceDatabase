@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "112 51",
+        "website": "http://www.karnovgroup.com",
+        "full_time_employees": 280
     },
     "8XA.F": {
         "short_name": "ACTIC GROUP AB CLA",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Solna"
+        "state": null,
+        "city": "Solna",
+        "zipcode": "171 21",
+        "website": "http://www.acticgroup.com",
+        "full_time_employees": 600
     },
     "ATIC.ST": {
         "short_name": "Actic Group AB",
@@ -33,7 +41,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Solna"
+        "state": null,
+        "city": "Solna",
+        "zipcode": "171 21",
+        "website": "http://www.acticgroup.com",
+        "full_time_employees": 600
     },
     "KAR.ST": {
         "short_name": "Karnov Group AB",
@@ -45,6 +57,10 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "112 51",
+        "website": "http://www.karnovgroup.com",
+        "full_time_employees": 280
     }
 }

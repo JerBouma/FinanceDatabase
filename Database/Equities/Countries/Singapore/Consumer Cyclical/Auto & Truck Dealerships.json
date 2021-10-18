@@ -9,7 +9,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "099254",
+        "website": "http://www.gallantventure.com",
+        "full_time_employees": 1227
     },
     "8126.HK": {
         "short_name": "G. A. HOLDINGS",
@@ -21,7 +25,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "308900",
+        "website": "http://www.ga-holdings.com.hk",
+        "full_time_employees": 757
     },
     "SJY.SI": {
         "short_name": "$ MeGroup",
@@ -33,7 +41,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "048623",
+        "website": "http://www.me-grp.com",
+        "full_time_employees": null
     },
     "WJP.SI": {
         "short_name": "VICOM Ltd",
@@ -45,6 +57,10 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "575718",
+        "website": "http://www.vicom.com.sg",
+        "full_time_employees": 863
     }
 }

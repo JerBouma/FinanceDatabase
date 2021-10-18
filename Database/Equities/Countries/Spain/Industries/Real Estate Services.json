@@ -9,7 +9,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Seville"
+        "state": null,
+        "city": "Seville",
+        "zipcode": "41013",
+        "website": "http://grupoinsur.com",
+        "full_time_employees": 169
     },
     "LIB.MC": {
         "short_name": "LIBERTAS 7",
@@ -21,7 +25,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Valencia"
+        "state": null,
+        "city": "Valencia",
+        "zipcode": "46001",
+        "website": "http://www.libertas7.es",
+        "full_time_employees": 42
     },
     "MTB.MC": {
         "short_name": "MONTEBALITO, S.A.",
@@ -33,7 +41,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28006",
+        "website": "http://www.montebalito.com",
+        "full_time_employees": 50
     },
     "QBT.MC": {
         "short_name": "QUABIT INMOBILIARIA, S.A.",
@@ -45,7 +57,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28020",
+        "website": "http://www.grupoquabit.com",
+        "full_time_employees": 157
     },
     "RBS.F": {
         "short_name": "REALIA BUSIN. INH. EO-,24",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28050",
+        "website": "http://www.realia.es",
+        "full_time_employees": 91
     },
     "REN.MC": {
         "short_name": "RENTA CORPORACION REAL ESTATE, ",
@@ -69,7 +89,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Barcelona"
+        "state": null,
+        "city": "Barcelona",
+        "zipcode": "08017",
+        "website": "http://www.rentacorporacion.com",
+        "full_time_employees": 45
     },
     "RLIA.MC": {
         "short_name": "REALIA BUSINESS, S.A.",
@@ -81,7 +105,11 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28050",
+        "website": "http://www.realia.es",
+        "full_time_employees": 91
     },
     "UBS.MC": {
         "short_name": "URBAS GRUPO FINANCIERO, S.A.",
@@ -93,6 +121,10 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Madrid"
+        "state": null,
+        "city": "Madrid",
+        "zipcode": "28006",
+        "website": "http://www.grupourbas.com",
+        "full_time_employees": 83
     }
 }

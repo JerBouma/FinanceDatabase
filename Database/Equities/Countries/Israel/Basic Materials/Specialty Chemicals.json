@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Israel",
-        "city": "Petah Tikva"
+        "state": null,
+        "city": "Petah Tikva",
+        "zipcode": "4951446",
+        "website": "http://www.dotz.tech",
+        "full_time_employees": null
     },
     "DTZ.AX": {
         "short_name": "DOTZ NANO FPO",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Israel",
-        "city": "Petah Tikva"
+        "state": null,
+        "city": "Petah Tikva",
+        "zipcode": "4951446",
+        "website": "http://www.dotz.tech",
+        "full_time_employees": null
     },
     "ILCO.TA": {
         "short_name": "THE ISRAEL CORP",
@@ -33,7 +41,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Tel Aviv"
+        "state": null,
+        "city": "Tel Aviv",
+        "zipcode": "61204",
+        "website": "http://www.israelcorp.com",
+        "full_time_employees": 1341
     },
     "KAFR.TA": {
         "short_name": "KAFRIT INDUSTRIES",
@@ -45,7 +57,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Sha'ar HaNegev"
+        "state": null,
+        "city": "Sha'ar HaNegev",
+        "zipcode": "8514200",
+        "website": "http://www.kafrit.co.il",
+        "full_time_employees": 18
     },
     "POLP.TA": {
         "short_name": "POLYRAM PLASTIC IN",
@@ -57,7 +73,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Gilboa"
+        "state": null,
+        "city": "Gilboa",
+        "zipcode": null,
+        "website": "http://www.polyram-group.com",
+        "full_time_employees": 308
     },
     "PVNNF": {
         "short_name": "P V NANO CELL LTD",
@@ -69,7 +89,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Migdal Haemek"
+        "state": null,
+        "city": "Migdal Haemek",
+        "zipcode": "2310102",
+        "website": "http://www.pvnanocell.com",
+        "full_time_employees": null
     },
     "RIMO.TA": {
         "short_name": "RIMONI INDUSTRIES",
@@ -81,6 +105,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Modi'in-Maccabim-Re'ut"
+        "state": null,
+        "city": "Modi'in-Maccabim-Re'ut",
+        "zipcode": "7173000",
+        "website": "http://www.rimoni-ind.com",
+        "full_time_employees": 362
     }
 }

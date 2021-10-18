@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "South Africa",
-        "city": "Cape Town"
+        "state": null,
+        "city": "Cape Town",
+        "zipcode": "8001",
+        "website": "http://www.clicksgroup.co.za",
+        "full_time_employees": 15629
     },
     "CLS.JO": {
         "short_name": "Clicks Group Ltd",
@@ -21,7 +25,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Cape Town"
+        "state": null,
+        "city": "Cape Town",
+        "zipcode": "8001",
+        "website": "http://www.clicksgroup.co.za",
+        "full_time_employees": 15629
     },
     "DCP.JO": {
         "short_name": "Dis-Chem Pharmacies Ltd",
@@ -33,6 +41,10 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Midrand"
+        "state": null,
+        "city": "Midrand",
+        "zipcode": "1682",
+        "website": "http://dischemgroup.com",
+        "full_time_employees": 18700
     }
 }

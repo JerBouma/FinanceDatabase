@@ -9,7 +9,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Glastonbury"
+        "state": "CT",
+        "city": "Glastonbury",
+        "zipcode": "06033",
+        "website": "http://www.curmusic.com",
+        "full_time_employees": 13
     },
     "EVTI": {
         "short_name": "EVENTURE INTERACTIVE INC",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Costa Mesa"
+        "state": "CA",
+        "city": "Costa Mesa",
+        "zipcode": "92626",
+        "website": "http://www.eventure.com",
+        "full_time_employees": 13
     },
     "OPMG": {
         "short_name": "OPTIONS MEDIA GROUP HOLDINGS IN",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Boca Raton"
+        "state": "FL",
+        "city": "Boca Raton",
+        "zipcode": "33432",
+        "website": null,
+        "full_time_employees": 5
     },
     "SBAY": {
         "short_name": "SUBAYE INC",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Guangzhou"
+        "state": null,
+        "city": "Guangzhou",
+        "zipcode": "510006",
+        "website": "http://www.mystaru.com",
+        "full_time_employees": 1539
     },
     "SPOTN.MX": {
         "short_name": "SPOTIFY TECHNOLOGY S.A.",
@@ -57,7 +73,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Luxembourg",
-        "city": "Luxembourg"
+        "state": null,
+        "city": "Luxembourg",
+        "zipcode": "1610",
+        "website": "http://www.spotify.com",
+        "full_time_employees": 6794
     },
     "SPXA": {
         "short_name": "SPECTRUMDNA INC",
@@ -69,7 +89,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Park City"
+        "state": "UT",
+        "city": "Park City",
+        "zipcode": "84068",
+        "website": null,
+        "full_time_employees": 8
     },
     "TCEHYN.MX": {
         "short_name": "TENCENT HOLDINGS LIMITED",
@@ -81,7 +105,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "China",
-        "city": "Shenzhen"
+        "state": null,
+        "city": "Shenzhen",
+        "zipcode": "518054",
+        "website": "http://www.tencent.com",
+        "full_time_employees": 85858
     },
     "WBN.MX": {
         "short_name": "WEIBO CORPORATION",
@@ -93,6 +121,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100027",
+        "website": "http://ir.weibo.com",
+        "full_time_employees": 5073
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Denmark",
-        "city": "Hedehusene"
+        "state": null,
+        "city": "Hedehusene",
+        "zipcode": "2640",
+        "website": "http://www.dsv.com",
+        "full_time_employees": 57642
     },
     "BPOSTN.MX": {
         "short_name": "BPOST SA",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.bpost.be",
+        "full_time_employees": 28620
     },
     "DPWA.DE": {
         "short_name": "DEUTSCHE POST SPONS.ADR 1",
@@ -33,7 +41,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Bonn"
+        "state": null,
+        "city": "Bonn",
+        "zipcode": "53250",
+        "website": "http://www.dpdhl.com",
+        "full_time_employees": 521842
     },
     "FOODL.AT": {
         "short_name": "FOODLINK S.A(CR)",
@@ -45,6 +57,10 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Aspropyrgos"
+        "state": null,
+        "city": "Aspropyrgos",
+        "zipcode": "193 00",
+        "website": "http://www.fdlgroup.gr",
+        "full_time_employees": 556
     }
 }

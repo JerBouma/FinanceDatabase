@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Ramat Gan"
+        "state": null,
+        "city": "Ramat Gan",
+        "zipcode": null,
+        "website": "http://www.bladeranger.com",
+        "full_time_employees": 10
     },
     "BLRNF": {
         "short_name": "BLADERANGER LTD",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Israel",
-        "city": "Ramat Gan"
+        "state": null,
+        "city": "Ramat Gan",
+        "zipcode": null,
+        "website": "http://www.bladeranger.com",
+        "full_time_employees": 10
     },
     "CLAB.TA": {
         "short_name": "COMPULAB LTD",
@@ -33,7 +41,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Yokneam Illit"
+        "state": null,
+        "city": "Yokneam Illit",
+        "zipcode": "2069208",
+        "website": "http://www.compulab.com",
+        "full_time_employees": 102
     },
     "MSVT.TA": {
         "short_name": "MASSIVIT 3D PRINTI",
@@ -45,7 +57,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Lod"
+        "state": null,
+        "city": "Lod",
+        "zipcode": "712936",
+        "website": "http://www.massivit3d.com",
+        "full_time_employees": 147
     },
     "NNDM": {
         "short_name": "Nano Dimension Ltd.",
@@ -57,6 +73,10 @@
         "exchange": "NCM",
         "market": "us_market",
         "country": "Israel",
-        "city": "Ness Ziona"
+        "state": null,
+        "city": "Ness Ziona",
+        "zipcode": "7403635",
+        "website": "http://www.nano-di.com",
+        "full_time_employees": 92
     }
 }

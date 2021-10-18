@@ -9,7 +9,11 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Bergen"
+        "state": null,
+        "city": "Bergen",
+        "zipcode": "5147",
+        "website": "http://www.fjordkraft.no",
+        "full_time_employees": 330
     },
     "GNP.OL": {
         "short_name": "GNP ENERGY AS",
@@ -21,6 +25,10 @@
         "exchange": "OSL",
         "market": "no_market",
         "country": "Norway",
-        "city": "Sandefjord"
+        "state": null,
+        "city": "Sandefjord",
+        "zipcode": "3239",
+        "website": "http://no.gnp.energy",
+        "full_time_employees": null
     }
 }

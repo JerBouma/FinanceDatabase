@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Haifa"
+        "state": null,
+        "city": "Haifa",
+        "zipcode": "26113",
+        "website": "http://www.fridenson.co.il",
+        "full_time_employees": 416
     },
     "MMAN.TA": {
         "short_name": "MAMAN CARGO TERMIN",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Lod"
+        "state": null,
+        "city": "Lod",
+        "zipcode": null,
+        "website": "http://www.maman.co.il",
+        "full_time_employees": 2120
     },
     "ORIN.TA": {
         "short_name": "ORIAN SH.M. LTD.",
@@ -33,7 +41,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Lod"
+        "state": null,
+        "city": "Lod",
+        "zipcode": "71100",
+        "website": "http://www.orian.com",
+        "full_time_employees": 832
     },
     "OVRS.TA": {
         "short_name": "OVERSEAS",
@@ -45,6 +57,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Ashdod"
+        "state": null,
+        "city": "Ashdod",
+        "zipcode": "7714001",
+        "website": "http://www.ovrs.co.il",
+        "full_time_employees": 396
     }
 }

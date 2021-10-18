@@ -9,7 +9,11 @@
         "exchange": "ICE",
         "market": "ic_market",
         "country": "Iceland",
-        "city": "Reykjav\u00c3\u00adk"
+        "state": null,
+        "city": "Reykjav\u00c3\u00adk",
+        "zipcode": "105",
+        "website": "http://www.eik.is",
+        "full_time_employees": null
     },
     "REGINN.IC": {
         "short_name": "Reginn hf.",
@@ -21,7 +25,11 @@
         "exchange": "ICE",
         "market": "ic_market",
         "country": "Iceland",
-        "city": "K\u00c3\u00b3pavogur"
+        "state": null,
+        "city": "K\u00c3\u00b3pavogur",
+        "zipcode": "201",
+        "website": "http://www.reginn.is",
+        "full_time_employees": null
     },
     "REITIR.IC": {
         "short_name": "Reitir fasteignaflag hf",
@@ -33,6 +41,10 @@
         "exchange": "ICE",
         "market": "ic_market",
         "country": "Iceland",
-        "city": "Reykjavik"
+        "state": null,
+        "city": "Reykjavik",
+        "zipcode": "103",
+        "website": "http://www.reitir.is",
+        "full_time_employees": 23
     }
 }

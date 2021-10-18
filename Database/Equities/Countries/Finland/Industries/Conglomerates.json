@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Finland",
-        "city": "Vantaa"
+        "state": null,
+        "city": "Vantaa",
+        "zipcode": "01380",
+        "website": "http://www.neles.com",
+        "full_time_employees": 2825
     },
     "ASPO.HE": {
         "short_name": "Aspo Plc",
@@ -21,7 +25,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00101",
+        "website": "http://www.aspo.com",
+        "full_time_employees": 896
     },
     "LOUD.HE": {
         "short_name": "Loudspring Plc",
@@ -33,7 +41,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00100",
+        "website": "http://www.loudspring.earth",
+        "full_time_employees": 4
     },
     "LOUDS.ST": {
         "short_name": "Loudspring Plc",
@@ -45,7 +57,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00100",
+        "website": "http://www.loudspring.earth",
+        "full_time_employees": 4
     },
     "MXTOF": {
         "short_name": "NELES OYJ",
@@ -57,7 +73,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Finland",
-        "city": "Vantaa"
+        "state": null,
+        "city": "Vantaa",
+        "zipcode": "01380",
+        "website": "http://www.neles.com",
+        "full_time_employees": 2825
     },
     "NELES.HE": {
         "short_name": "Neles Corporation",
@@ -69,6 +89,10 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Vantaa"
+        "state": null,
+        "city": "Vantaa",
+        "zipcode": "01380",
+        "website": "http://www.neles.com",
+        "full_time_employees": 2825
     }
 }

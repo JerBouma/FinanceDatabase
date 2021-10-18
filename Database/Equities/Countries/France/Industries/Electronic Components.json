@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Laval"
+        "state": null,
+        "city": "Laval",
+        "zipcode": "53000",
+        "website": "http://www.cofidur-ems.com",
+        "full_time_employees": 349
     },
     "ALROC.PA": {
         "short_name": "ROCTOOL",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Le Bourget-du-Lac"
+        "state": null,
+        "city": "Le Bourget-du-Lac",
+        "zipcode": "73370",
+        "website": "http://www.roctool.com",
+        "full_time_employees": 50
     },
     "EGID.F": {
         "short_name": "EGIDE S.A. INH.  EO 2",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Boll\u00c3\u00a8ne"
+        "state": null,
+        "city": "Boll\u00c3\u00a8ne",
+        "zipcode": "84505",
+        "website": "http://www.egide-group.com",
+        "full_time_employees": null
     },
     "GID.PA": {
         "short_name": "EGIDE",
@@ -45,7 +57,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Boll\u00c3\u00a8ne"
+        "state": null,
+        "city": "Boll\u00c3\u00a8ne",
+        "zipcode": "84505",
+        "website": "http://www.egide-group.com",
+        "full_time_employees": null
     },
     "MLNOV.PA": {
         "short_name": "NOVATECH IND.",
@@ -57,7 +73,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Lannion"
+        "state": null,
+        "city": "Lannion",
+        "zipcode": "22300",
+        "website": "http://www.novatech-groupe.com",
+        "full_time_employees": null
     },
     "S4M.F": {
         "short_name": "SES-IMAGOTAG EO 2",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Nanterre"
+        "state": null,
+        "city": "Nanterre",
+        "zipcode": "92024",
+        "website": "http://www.ses-imagotag.com",
+        "full_time_employees": null
     },
     "SESL.PA": {
         "short_name": "SES IMAGOTAG",
@@ -81,6 +105,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Nanterre"
+        "state": null,
+        "city": "Nanterre",
+        "zipcode": "92024",
+        "website": "http://www.ses-imagotag.com",
+        "full_time_employees": null
     }
 }

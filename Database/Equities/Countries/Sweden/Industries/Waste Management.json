@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "417 01",
+        "website": "http://www.envirosystems.se",
+        "full_time_employees": 22
     },
     "8Y1.F": {
         "short_name": "AXOLOT SOLUTIONS HOLDING",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Helsingborg"
+        "state": null,
+        "city": "Helsingborg",
+        "zipcode": "254 66",
+        "website": "http://www.axolotsolutions.com",
+        "full_time_employees": 8
     },
     "AXOLOT.ST": {
         "short_name": "Axolot Solutions Holding AB",
@@ -33,7 +41,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Helsingborg"
+        "state": null,
+        "city": "Helsingborg",
+        "zipcode": "254 66",
+        "website": "http://www.axolotsolutions.com",
+        "full_time_employees": 8
     },
     "SES.ST": {
         "short_name": "Scandinavian Enviro Systems AB",
@@ -45,7 +57,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "417 01",
+        "website": "http://www.envirosystems.se",
+        "full_time_employees": 22
     },
     "SVIK.ST": {
         "short_name": "Studsvik AB",
@@ -57,6 +73,10 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Nyk\u00c3\u00b6ping"
+        "state": null,
+        "city": "Nyk\u00c3\u00b6ping",
+        "zipcode": "611 82",
+        "website": "http://www.studsvik.com",
+        "full_time_employees": 509
     }
 }

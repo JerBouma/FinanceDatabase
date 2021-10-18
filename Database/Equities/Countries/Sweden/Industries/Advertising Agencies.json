@@ -9,7 +9,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "111 39",
+        "website": "http://awardit.com",
+        "full_time_employees": 50
     },
     "T1D.F": {
         "short_name": "TRADEDOUBLER AB  SK -,40",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "113 56",
+        "website": "http://www.tradedoubler.com",
+        "full_time_employees": 242
     },
     "TRAD.ST": {
         "short_name": "TradeDoubler AB",
@@ -33,7 +41,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "113 56",
+        "website": "http://www.tradedoubler.com",
+        "full_time_employees": 249
     },
     "Z03.F": {
         "short_name": "ZETADISPLAY AB",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Malm\u00c3\u00b6"
+        "state": null,
+        "city": "Malm\u00c3\u00b6",
+        "zipcode": "212 39",
+        "website": "http://www.zetadisplay.com",
+        "full_time_employees": 161
     },
     "Z03.SG": {
         "short_name": "ZetaDisplay AB Namn-Aktier o.N.",
@@ -57,7 +73,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Malm\u00c3\u00b6"
+        "state": null,
+        "city": "Malm\u00c3\u00b6",
+        "zipcode": "212 39",
+        "website": "http://www.zetadisplay.com",
+        "full_time_employees": 161
     },
     "ZETA.ST": {
         "short_name": "ZetaDisplay AB",
@@ -69,6 +89,10 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Malm\u00c3\u00b6"
+        "state": null,
+        "city": "Malm\u00c3\u00b6",
+        "zipcode": "212 39",
+        "website": "http://www.zetadisplay.com",
+        "full_time_employees": 161
     }
 }

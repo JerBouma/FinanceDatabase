@@ -9,7 +9,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Wan Chai"
+        "state": null,
+        "city": "Wan Chai",
+        "zipcode": null,
+        "website": "http://www.pawnshop.com.hk",
+        "full_time_employees": 51
     },
     "F6H.F": {
         "short_name": "FAR EAST HORIZON",
@@ -21,6 +25,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Hong Kong",
-        "city": "Tsim Sha Tsui"
+        "state": null,
+        "city": "Tsim Sha Tsui",
+        "zipcode": null,
+        "website": "http://www.fehorizon.com",
+        "full_time_employees": 21672
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "La Hulpe"
+        "state": null,
+        "city": "La Hulpe",
+        "zipcode": "1310",
+        "website": "http://www.atenor.be",
+        "full_time_employees": 44
     },
     "BANI.BR": {
         "short_name": "BANIMMO A",
@@ -21,7 +25,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.banimmo.be",
+        "full_time_employees": 1
     },
     "IEP.BR": {
         "short_name": "IEP INVEST",
@@ -33,7 +41,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2030",
+        "website": "http://www.iepinvest.be",
+        "full_time_employees": 38
     },
     "IMMO.BR": {
         "short_name": "IMMOBEL",
@@ -45,7 +57,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.immobelgroup.com",
+        "full_time_employees": 142
     },
     "WOLE.BR": {
         "short_name": "WOL. EXTENS. CERT",
@@ -57,6 +73,10 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": null,
+        "full_time_employees": null
     }
 }

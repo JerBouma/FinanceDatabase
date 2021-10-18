@@ -9,7 +9,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Ramat Gan"
+        "state": null,
+        "city": "Ramat Gan",
+        "zipcode": "52520",
+        "website": "http://www.accel.co.il",
+        "full_time_employees": 25
     },
     "BRMG.TA": {
         "short_name": "BRIMAG DIGITAL AGE",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Azor"
+        "state": null,
+        "city": "Azor",
+        "zipcode": "58001",
+        "website": "http://www.brimag.co.il",
+        "full_time_employees": 344
     },
     "RLCO.TA": {
         "short_name": "RALCO AGENCIES",
@@ -33,7 +41,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Azor"
+        "state": null,
+        "city": "Azor",
+        "zipcode": "58001",
+        "website": "http://www.ralco.co.il",
+        "full_time_employees": 47
     },
     "TLSY.TA": {
         "short_name": "TELSYS LTD",
@@ -45,6 +57,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Petah Tikva"
+        "state": null,
+        "city": "Petah Tikva",
+        "zipcode": "4951404",
+        "website": "http://www.telsys.co.il",
+        "full_time_employees": 72
     }
 }

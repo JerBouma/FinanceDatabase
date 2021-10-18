@@ -9,7 +9,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Zurich"
+        "state": null,
+        "city": "Zurich",
+        "zipcode": "8002",
+        "website": "http://www.arundel-ag.com",
+        "full_time_employees": 13
     },
     "CFT.SW": {
         "short_name": "CIE FIN TR I",
@@ -21,7 +25,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Lausanne"
+        "state": null,
+        "city": "Lausanne",
+        "zipcode": "1003",
+        "website": "http://www.tradition.com",
+        "full_time_employees": 2400
     },
     "SQN.SW": {
         "short_name": "SWISSQUOTE N",
@@ -33,7 +41,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Gland"
+        "state": null,
+        "city": "Gland",
+        "zipcode": "1196",
+        "website": "http://www.swissquote.ch",
+        "full_time_employees": 805
     },
     "VLRT.SW": {
         "short_name": "VALARTIS GROUP N",
@@ -45,6 +57,10 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Fribourg"
+        "state": null,
+        "city": "Fribourg",
+        "zipcode": "1700",
+        "website": "http://valartisgroup.ch",
+        "full_time_employees": 69
     }
 }

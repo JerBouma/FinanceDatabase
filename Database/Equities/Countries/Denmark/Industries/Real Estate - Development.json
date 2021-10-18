@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Denmark",
-        "city": "Aalborg"
+        "state": null,
+        "city": "Aalborg",
+        "zipcode": "9000",
+        "website": "http://agat.dk",
+        "full_time_employees": 19
     },
     "AGAT.CO": {
         "short_name": "Agat Ejendomme A/S",
@@ -21,7 +25,11 @@
         "exchange": "CPH",
         "market": "dk_market",
         "country": "Denmark",
-        "city": "Aalborg"
+        "state": null,
+        "city": "Aalborg",
+        "zipcode": "9000",
+        "website": "http://agat.dk",
+        "full_time_employees": 19
     },
     "PRIMOF.CO": {
         "short_name": "Prime Office A/S",
@@ -33,6 +41,10 @@
         "exchange": "CPH",
         "market": "dk_market",
         "country": "Denmark",
-        "city": "Aarhus"
+        "state": null,
+        "city": "Aarhus",
+        "zipcode": "8000",
+        "website": "http://www.primeoffice.dk",
+        "full_time_employees": 11
     }
 }

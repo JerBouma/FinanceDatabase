@@ -9,7 +9,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.avh.be",
+        "full_time_employees": 22331
     },
     "ACKB.VI": {
         "short_name": "ACKERMANS VAN HAAREN",
@@ -21,7 +25,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.avh.be",
+        "full_time_employees": 22331
     },
     "AVHNY": {
         "short_name": "ACKERMANS",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.avh.be",
+        "full_time_employees": 22331
     },
     "B3K.F": {
         "short_name": "ACKERMANS + VAN HAAREN",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.avh.be",
+        "full_time_employees": 22331
     },
     "C70.F": {
         "short_name": "CIE ENT. CFE NAM.",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1160",
+        "website": "http://www.cfe.be",
+        "full_time_employees": 7899
     },
     "CFEB.BR": {
         "short_name": "CFE",
@@ -69,7 +89,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1160",
+        "website": "http://www.cfe.be",
+        "full_time_employees": 7899
     },
     "MOUR.BR": {
         "short_name": "MOURY CONSTRUCT",
@@ -81,6 +105,10 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Liege"
+        "state": null,
+        "city": "Liege",
+        "zipcode": "4020",
+        "website": "http://www.moury-construct.be",
+        "full_time_employees": null
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Sheung Wan"
+        "state": null,
+        "city": "Sheung Wan",
+        "zipcode": null,
+        "website": "http://www.jin-hai.com.hk",
+        "full_time_employees": 551
     },
     "8260.HK": {
         "short_name": "YIN HE HLDGS",
@@ -21,7 +25,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Central"
+        "state": null,
+        "city": "Central",
+        "zipcode": null,
+        "website": "http://www.yinhe.com.hk",
+        "full_time_employees": null
     },
     "8462.HK": {
         "short_name": "OMNIBRIDGE HLDG",
@@ -33,6 +41,10 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Admiralty"
+        "state": null,
+        "city": "Admiralty",
+        "zipcode": "049315",
+        "website": "http://www.omnibridge.com.hk",
+        "full_time_employees": 55
     }
 }

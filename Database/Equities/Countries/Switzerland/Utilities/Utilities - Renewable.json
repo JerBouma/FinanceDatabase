@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Switzerland",
-        "city": "Geneva"
+        "state": null,
+        "city": "Geneva",
+        "zipcode": "1204",
+        "website": "http://www.etrion.com",
+        "full_time_employees": null
     },
     "BKW.SW": {
         "short_name": "BKW N",
@@ -21,7 +25,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Bern"
+        "state": null,
+        "city": "Bern",
+        "zipcode": "3013",
+        "website": "http://www.bkw.ch",
+        "full_time_employees": 10250
     },
     "EDHN.SW": {
         "short_name": "ENERGIEDIENST N",
@@ -33,7 +41,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Laufenburg"
+        "state": null,
+        "city": "Laufenburg",
+        "zipcode": "5080",
+        "website": "http://www.energiedienst.de",
+        "full_time_employees": 1072
     },
     "ESUN.SW": {
         "short_name": "EDISUN POWER EUROPE N",
@@ -45,7 +57,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Zurich"
+        "state": null,
+        "city": "Zurich",
+        "zipcode": "8006",
+        "website": "http://www.edisunpower.com",
+        "full_time_employees": null
     },
     "ETRXF": {
         "short_name": "ETRION CORPORATION",
@@ -57,7 +73,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Geneva"
+        "state": null,
+        "city": "Geneva",
+        "zipcode": "1204",
+        "website": "http://www.etrion.com",
+        "full_time_employees": null
     },
     "ETX.ST": {
         "short_name": "Etrion Corporation",
@@ -69,7 +89,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Switzerland",
-        "city": "Geneva"
+        "state": null,
+        "city": "Geneva",
+        "zipcode": "1204",
+        "website": "http://www.etrion.com",
+        "full_time_employees": null
     },
     "ETX.TO": {
         "short_name": "ETRION CORPORATION",
@@ -81,7 +105,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Switzerland",
-        "city": "Geneva"
+        "state": null,
+        "city": "Geneva",
+        "zipcode": "1204",
+        "website": "http://www.etrion.com",
+        "full_time_employees": null
     },
     "HREN.SW": {
         "short_name": "ROMANDE ENERGIE N",
@@ -93,6 +121,10 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Morges"
+        "state": null,
+        "city": "Morges",
+        "zipcode": "1110",
+        "website": "http://www.romande-energie.ch",
+        "full_time_employees": 985
     }
 }

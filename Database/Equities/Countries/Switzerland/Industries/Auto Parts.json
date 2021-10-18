@@ -9,7 +9,11 @@
         "exchange": "EBS",
         "market": "ch_market",
         "country": "Switzerland",
-        "city": "Winterthur"
+        "state": null,
+        "city": "Winterthur",
+        "zipcode": "8406",
+        "website": "http://www.autoneum.com",
+        "full_time_employees": 12774
     },
     "ED4.DE": {
         "short_name": "EDAG ENGINEERING G.SF-,04",
@@ -21,7 +25,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Switzerland",
-        "city": "Arbon"
+        "state": null,
+        "city": "Arbon",
+        "zipcode": "9320",
+        "website": "http://www.edag.com",
+        "full_time_employees": 7984
     },
     "ED4.F": {
         "short_name": "EDAG ENGINEERING G.SF-,04",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Switzerland",
-        "city": "Arbon"
+        "state": null,
+        "city": "Arbon",
+        "zipcode": "9320",
+        "website": "http://www.edag.com",
+        "full_time_employees": 7984
     },
     "G02.F": {
         "short_name": "GARRETT MOTION  DL -,001",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Switzerland",
-        "city": "Rolle"
+        "state": null,
+        "city": "Rolle",
+        "zipcode": "1180",
+        "website": "http://www.garrettmotion.com",
+        "full_time_employees": 6300
     },
     "GTX": {
         "short_name": "Garrett Motion Inc.",
@@ -57,7 +73,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "Switzerland",
-        "city": "Rolle"
+        "state": null,
+        "city": "Rolle",
+        "zipcode": "1180",
+        "website": "http://www.garrettmotion.com",
+        "full_time_employees": 6300
     },
     "IQL.F": {
         "short_name": "IQ INTL AG  SF-,01",
@@ -69,6 +89,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Switzerland",
-        "city": "Zug"
+        "state": null,
+        "city": "Zug",
+        "zipcode": "6300",
+        "website": "http://www.iqint.com",
+        "full_time_employees": null
     }
 }

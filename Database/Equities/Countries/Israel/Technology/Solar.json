@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Israel",
-        "city": "Herzliya"
+        "state": null,
+        "city": "Herzliya",
+        "zipcode": "4673335",
+        "website": "http://www.solaredge.com",
+        "full_time_employees": 3174
     },
     "APLP.TA": {
         "short_name": "APOLLO POWER LTD",
@@ -21,7 +25,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Yokneam Illit"
+        "state": null,
+        "city": "Yokneam Illit",
+        "zipcode": null,
+        "website": "http://www.apollo-power.com",
+        "full_time_employees": null
     },
     "NOFR.TA": {
         "short_name": "O.Y. NOFAR ENERGY",
@@ -33,7 +41,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Ashdod"
+        "state": null,
+        "city": "Ashdod",
+        "zipcode": "14504",
+        "website": "http://www.nofar-energy.co.il",
+        "full_time_employees": 49
     },
     "SEDG": {
         "short_name": "SolarEdge Technologies, Inc.",
@@ -45,7 +57,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "Israel",
-        "city": "Herzliya"
+        "state": null,
+        "city": "Herzliya",
+        "zipcode": "4673335",
+        "website": "http://www.solaredge.com",
+        "full_time_employees": 3174
     },
     "SEDG.VI": {
         "short_name": "SOLAREDGE TECHNOLOGIES INC",
@@ -57,7 +73,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Israel",
-        "city": "Herzliya"
+        "state": null,
+        "city": "Herzliya",
+        "zipcode": "4673335",
+        "website": "http://www.solaredge.com",
+        "full_time_employees": 3174
     },
     "SOLR.TA": {
         "short_name": "SOLAER RENEWABLE",
@@ -69,7 +89,11 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Rehovot"
+        "state": null,
+        "city": "Rehovot",
+        "zipcode": null,
+        "website": "http://www.solaer.co.il",
+        "full_time_employees": null
     },
     "TIGI.TA": {
         "short_name": "TIGI LTD",
@@ -81,6 +105,10 @@
         "exchange": "TLV",
         "market": "il_market",
         "country": "Israel",
-        "city": "Kfar Saba"
+        "state": null,
+        "city": "Kfar Saba",
+        "zipcode": "4464315",
+        "website": "http://www.tigisolar.com",
+        "full_time_employees": null
     }
 }

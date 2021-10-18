@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Netherlands",
-        "city": "Schiphol"
+        "state": null,
+        "city": "Schiphol",
+        "zipcode": "1118 CL",
+        "website": "http://www.grandvision.com",
+        "full_time_employees": 39312
     },
     "FAST.AS": {
         "short_name": "FASTNED",
@@ -21,7 +25,11 @@
         "exchange": "AMS",
         "market": "nl_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1097 DL",
+        "website": "http://www.fastned.nl",
+        "full_time_employees": 54
     },
     "FSF.F": {
         "short_name": "FASTNED B.V.  EO -,01",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1097 DL",
+        "website": "http://www.fastned.nl",
+        "full_time_employees": 54
     },
     "GRRDF": {
         "short_name": "GRANDVISION N.V.",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Netherlands",
-        "city": "Schiphol"
+        "state": null,
+        "city": "Schiphol",
+        "zipcode": "1118 CL",
+        "website": "http://www.grandvision.com",
+        "full_time_employees": 39312
     },
     "GVNV.AS": {
         "short_name": "GRANDVISION",
@@ -57,6 +73,10 @@
         "exchange": "AMS",
         "market": "nl_market",
         "country": "Netherlands",
-        "city": "Schiphol"
+        "state": null,
+        "city": "Schiphol",
+        "zipcode": "1118 CL",
+        "website": "http://www.grandvision.com",
+        "full_time_employees": 39312
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Subiaco"
+        "state": "WA",
+        "city": "Subiaco",
+        "zipcode": "6008",
+        "website": "http://www.atlaspearls.com.au",
+        "full_time_employees": 515
     },
     "LO7.F": {
         "short_name": "LOVISA HLDGS DEF.",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Hawthorn"
+        "state": "VIC",
+        "city": "Hawthorn",
+        "zipcode": "3122",
+        "website": "http://www.lovisa.com",
+        "full_time_employees": null
     },
     "LOV.AX": {
         "short_name": "LOVISA FPO",
@@ -33,7 +41,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Hawthorn"
+        "state": "VIC",
+        "city": "Hawthorn",
+        "zipcode": "3122",
+        "website": "http://www.lovisa.com",
+        "full_time_employees": null
     },
     "MHJ.AX": {
         "short_name": "MICHAELHLL FPO",
@@ -45,7 +57,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Murarrie"
+        "state": "QLD",
+        "city": "Murarrie",
+        "zipcode": "4172",
+        "website": "http://www.michaelhill.com.au",
+        "full_time_employees": null
     },
     "MHJ.NZ": {
         "short_name": "Michael Hill International Ltd ",
@@ -57,6 +73,10 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "Australia",
-        "city": "Murarrie"
+        "state": "QLD",
+        "city": "Murarrie",
+        "zipcode": "4172",
+        "website": "http://www.michaelhill.com.au",
+        "full_time_employees": null
     }
 }

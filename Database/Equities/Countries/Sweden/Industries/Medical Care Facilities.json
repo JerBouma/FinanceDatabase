@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "411 06",
+        "website": "http://www.ghp.se",
+        "full_time_employees": 738
     },
     "47H.F": {
         "short_name": "HUMANA AB",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "112 51",
+        "website": "http://www.humana.se",
+        "full_time_employees": 10639
     },
     "5M0B.F": {
         "short_name": "MEDICOVER AB",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "102 46",
+        "website": "http://www.medicover.com",
+        "full_time_employees": 32000
     },
     "6MA.F": {
         "short_name": "AMBEA AB O.N.",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Solna"
+        "state": null,
+        "city": "Solna",
+        "zipcode": "171 29",
+        "website": "http://www.ambea.se",
+        "full_time_employees": 26000
     },
     "7AT.F": {
         "short_name": "ATTENDO AB",
@@ -57,7 +73,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Danderyd"
+        "state": null,
+        "city": "Danderyd",
+        "zipcode": "182 91",
+        "website": "http://www.attendo.com",
+        "full_time_employees": 25000
     },
     "7PL.F": {
         "short_name": "PROSTALUND AB",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Lund"
+        "state": null,
+        "city": "Lund",
+        "zipcode": "223 62",
+        "website": "http://www.prostalund.se",
+        "full_time_employees": 6
     },
     "ADDERA.ST": {
         "short_name": "AdderaCare AB",
@@ -81,7 +105,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Helsingborg"
+        "state": null,
+        "city": "Helsingborg",
+        "zipcode": "252 20",
+        "website": "http://www.adderacare.com",
+        "full_time_employees": null
     },
     "AMBEA.ST": {
         "short_name": "Ambea AB",
@@ -93,7 +121,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Solna"
+        "state": null,
+        "city": "Solna",
+        "zipcode": "171 29",
+        "website": "http://www.ambea.se",
+        "full_time_employees": 26000
     },
     "ATT.ST": {
         "short_name": "Attendo AB",
@@ -105,7 +137,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Danderyd"
+        "state": null,
+        "city": "Danderyd",
+        "zipcode": "182 91",
+        "website": "http://www.attendo.com",
+        "full_time_employees": 25000
     },
     "GHP.ST": {
         "short_name": "GHP Specialty Care AB",
@@ -117,7 +153,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Gothenburg"
+        "state": null,
+        "city": "Gothenburg",
+        "zipcode": "411 06",
+        "website": "http://www.ghp.se",
+        "full_time_employees": 738
     },
     "HUM.ST": {
         "short_name": "Humana AB",
@@ -129,7 +169,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "112 51",
+        "website": "http://www.humana.se",
+        "full_time_employees": 10639
     },
     "MCOV-B.ST": {
         "short_name": "Medicover AB ser. B",
@@ -141,7 +185,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "102 46",
+        "website": "http://www.medicover.com",
+        "full_time_employees": 32000
     },
     "PLUN.ST": {
         "short_name": "ProstaLund AB",
@@ -153,6 +201,10 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Lund"
+        "state": null,
+        "city": "Lund",
+        "zipcode": "223 62",
+        "website": "http://www.prostalund.se",
+        "full_time_employees": 6
     }
 }

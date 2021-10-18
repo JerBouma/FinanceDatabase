@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75772",
+        "website": "http://www.urw.com",
+        "full_time_employees": 2999
     },
     "1D3.F": {
         "short_name": "SERITAGE GWTH PR.A DL-,01",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10110",
+        "website": "http://www.seritage.com",
+        "full_time_employees": 61
     },
     "2QR.F": {
         "short_name": "ORF CVA",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.qrf.be",
+        "full_time_employees": 6
     },
     "3453.T": {
         "short_name": "KENEDIX RETAIL REIT CORP",
@@ -45,7 +57,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": null,
+        "website": "http://www.krr-reit.com",
+        "full_time_employees": null
     },
     "3462.T": {
         "short_name": "NOMURA REAL ESTATE MASTER FUND ",
@@ -57,7 +73,11 @@
         "exchange": "JPX",
         "market": "jp_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": null,
+        "website": "http://www.nre-mf.co.jp",
+        "full_time_employees": null
     },
     "943.F": {
         "short_name": "FREY  EO 2,50",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75001",
+        "website": "http://www.frey.fr",
+        "full_time_employees": 81
     },
     "ADC": {
         "short_name": "Agree Realty Corporation",
@@ -81,7 +105,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Bloomfield Hills"
+        "state": "MI",
+        "city": "Bloomfield Hills",
+        "zipcode": "48304",
+        "website": "http://www.agreerealty.com",
+        "full_time_employees": 49
     },
     "AGL.F": {
         "short_name": "AGREE RLTY CORP. DL-,0001",
@@ -93,7 +121,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Bloomfield Hills"
+        "state": "MI",
+        "city": "Bloomfield Hills",
+        "zipcode": "48304",
+        "website": "http://www.agreerealty.com",
+        "full_time_employees": 49
     },
     "AKMGY.IS": {
         "short_name": "AKMERKEZ GMYO",
@@ -105,7 +137,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "ISTANBUL"
+        "state": null,
+        "city": "ISTANBUL",
+        "zipcode": null,
+        "website": "http://www.akmgyo.com",
+        "full_time_employees": 6
     },
     "AKR": {
         "short_name": "Acadia Realty Trust",
@@ -117,7 +153,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Rye"
+        "state": "NY",
+        "city": "Rye",
+        "zipcode": "10580",
+        "website": "http://www.acadiarealty.com",
+        "full_time_employees": 120
     },
     "ALLY.BK": {
         "short_name": "ALLY LEASEHOLD REAL ESTATE INVE",
@@ -129,7 +169,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10900",
+        "website": null,
+        "full_time_employees": null
     },
     "ALX": {
         "short_name": "Alexander's, Inc.",
@@ -141,7 +185,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Paramus"
+        "state": "NJ",
+        "city": "Paramus",
+        "zipcode": "07652",
+        "website": "http://www.alx-inc.com",
+        "full_time_employees": 70
     },
     "APF.JO": {
         "short_name": "Accelerate Prop Fund Ltd",
@@ -153,7 +201,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Johannesburg"
+        "state": null,
+        "city": "Johannesburg",
+        "zipcode": "2055",
+        "website": "http://acceleratepf.co.za",
+        "full_time_employees": null
     },
     "AQR.AX": {
         "short_name": "APNCONREIT STAPLED",
@@ -165,7 +217,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3000",
+        "website": "http://apngroup.com.au/fund/apn-convenience-retail-reit/",
+        "full_time_employees": null
     },
     "ASC.BR": {
         "short_name": "ASCENCIO",
@@ -177,7 +233,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Gosselies"
+        "state": null,
+        "city": "Gosselies",
+        "zipcode": "6041",
+        "website": "http://www.ascencio.be",
+        "full_time_employees": 19
     },
     "AU8U.SI": {
         "short_name": "CapLand China T",
@@ -189,7 +249,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "068912",
+        "website": "http://www.clct.com.sg",
+        "full_time_employees": null
     },
     "AVN.AX": {
         "short_name": "AVENTUS STAPLED",
@@ -201,7 +265,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.aventusgroup.com.au",
+        "full_time_employees": 60
     },
     "AXE.F": {
         "short_name": "ALEXANDER'S INC.  DL 1",
@@ -213,7 +281,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Paramus"
+        "state": "NJ",
+        "city": "Paramus",
+        "zipcode": "07652",
+        "website": "http://www.alx-inc.com",
+        "full_time_employees": 70
     },
     "AXE.SG": {
         "short_name": "ALEXANDER'S INC. Registered Sha",
@@ -225,7 +297,11 @@
         "exchange": "STU",
         "market": "dr_market",
         "country": "United States",
-        "city": "Paramus"
+        "state": "NJ",
+        "city": "Paramus",
+        "zipcode": "07652",
+        "website": "http://www.alx-inc.com",
+        "full_time_employees": 70
     },
     "BFS-PD": {
         "short_name": "Saul Centers, Inc. Depositary S",
@@ -237,7 +313,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Bethesda"
+        "state": "MD",
+        "city": "Bethesda",
+        "zipcode": "20814",
+        "website": "http://www.saulcenters.com",
+        "full_time_employees": 110
     },
     "BFS-PE": {
         "short_name": "Saul Centers, Inc. Depositary s",
@@ -249,7 +329,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Bethesda"
+        "state": "MD",
+        "city": "Bethesda",
+        "zipcode": "20814",
+        "website": "http://www.saulcenters.com",
+        "full_time_employees": 110
     },
     "BFS": {
         "short_name": "Saul Centers, Inc.",
@@ -261,7 +345,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Bethesda"
+        "state": "MD",
+        "city": "Bethesda",
+        "zipcode": "20814",
+        "website": "http://www.saulcenters.com",
+        "full_time_employees": 110
     },
     "BMGU.SI": {
         "short_name": "BHG Retail Reit",
@@ -273,7 +361,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "179101",
+        "website": "http://www.bhgreit.com",
+        "full_time_employees": null
     },
     "BPYU": {
         "short_name": "Brookfield Property REIT Inc.",
@@ -285,7 +377,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10281",
+        "website": "http://www.bpy.brookfield.com",
+        "full_time_employees": null
     },
     "BPYUP": {
         "short_name": "Brookfield Property REIT Inc. -",
@@ -297,7 +393,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10281",
+        "website": "http://www.bpy.brookfield.com",
+        "full_time_employees": null
     },
     "BRX": {
         "short_name": "Brixmor Property Group Inc.",
@@ -309,7 +409,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10017",
+        "website": "http://www.brixmor.com",
+        "full_time_employees": 474
     },
     "BXR.F": {
         "short_name": "BRIXMOR PPTY GROUP INC.",
@@ -321,7 +425,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10017",
+        "website": "http://www.brixmor.com",
+        "full_time_employees": 474
     },
     "C20.F": {
         "short_name": "CAPITAL+COUNT.PR.LS-,25",
@@ -333,7 +441,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2E 8BU",
+        "website": "http://www.capitalandcounties.com",
+        "full_time_employees": 66
     },
     "C38U.SI": {
         "short_name": "CapLand IntCom T",
@@ -345,7 +457,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "068912",
+        "website": "http://www.cict.com.sg",
+        "full_time_employees": 665
     },
     "CAL.L": {
         "short_name": "CAPITAL & REGIONAL PLC ORD 10P",
@@ -357,7 +473,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "SW1P 4NP",
+        "website": "http://www.capreg.com",
+        "full_time_employees": 216
     },
     "CAPC.L": {
         "short_name": "CAPITAL & COUNTIES PROPERTIES P",
@@ -369,7 +489,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2E 8BU",
+        "website": "http://www.capitalandcounties.com",
+        "full_time_employees": 66
     },
     "CARE11.SA": {
         "short_name": "FII DEA CARECI  ER",
@@ -381,7 +505,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Rio de Janeiro"
+        "state": null,
+        "city": "Rio de Janeiro",
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "CARM.PA": {
         "short_name": "CARMILA",
@@ -393,7 +521,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Boulogne-Billancourt"
+        "state": null,
+        "city": "Boulogne-Billancourt",
+        "zipcode": "92100",
+        "website": "http://www.carmila.com/en/",
+        "full_time_employees": 194
     },
     "CAZ.F": {
         "short_name": "CBL + ASS. PROP.  DL-,01",
@@ -405,7 +537,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Chattanooga"
+        "state": "TN",
+        "city": "Chattanooga",
+        "zipcode": "37421",
+        "website": "http://www.cblproperties.com",
+        "full_time_employees": 418
     },
     "CBLAQ": {
         "short_name": "CBL & ASSOCIATES PROPERTIES INC",
@@ -417,7 +553,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Chattanooga"
+        "state": "TN",
+        "city": "Chattanooga",
+        "zipcode": "37421",
+        "website": "http://www.cblproperties.com",
+        "full_time_employees": 418
     },
     "CBLDQ": {
         "short_name": "CBL & ASSOCIATES PROPERTIES INC",
@@ -429,7 +569,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Chattanooga"
+        "state": "TN",
+        "city": "Chattanooga",
+        "zipcode": "37421",
+        "website": "http://www.cblproperties.com",
+        "full_time_employees": 418
     },
     "CBLEQ": {
         "short_name": "CBL & ASSOCIATES PROPERTIES INC",
@@ -441,7 +585,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Chattanooga"
+        "state": "TN",
+        "city": "Chattanooga",
+        "zipcode": "37421",
+        "website": "http://www.cblproperties.com",
+        "full_time_employees": 418
     },
     "CCO.JO": {
         "short_name": "Capital&Counties Prop plc",
@@ -453,7 +601,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "WC2E 8BU",
+        "website": "http://www.capitalandcounties.com",
+        "full_time_employees": 66
     },
     "CDH.F": {
         "short_name": "CEDAR REALTY TR. DL-06",
@@ -465,7 +617,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Port Washington"
+        "state": "NY",
+        "city": "Port Washington",
+        "zipcode": "11050",
+        "website": "http://www.cedarrealtytrust.com",
+        "full_time_employees": 63
     },
     "CDP.AX": {
         "short_name": "CARINDALE UNIT",
@@ -477,7 +633,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.carindalepropertytrust.com.au",
+        "full_time_employees": null
     },
     "CDR-PB": {
         "short_name": "Cedar Realty Trust, Inc. 7.25% ",
@@ -489,7 +649,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Port Washington"
+        "state": "NY",
+        "city": "Port Washington",
+        "zipcode": "11050",
+        "website": "http://www.cedarrealtytrust.com",
+        "full_time_employees": 63
     },
     "CDR-PC": {
         "short_name": "Cedar Realty Trust, Inc. 6.50% ",
@@ -501,7 +665,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Port Washington"
+        "state": "NY",
+        "city": "Port Washington",
+        "zipcode": "11050",
+        "website": "http://www.cedarrealtytrust.com",
+        "full_time_employees": 63
     },
     "CDR": {
         "short_name": "Cedar Realty Trust, Inc.",
@@ -513,7 +681,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Port Washington"
+        "state": "NY",
+        "city": "Port Washington",
+        "zipcode": "11050",
+        "website": "http://www.cedarrealtytrust.com",
+        "full_time_employees": 63
     },
     "CHP-UN.TO": {
         "short_name": "CHOICE PROPERTIES REIT",
@@ -525,7 +697,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M4T 2S5",
+        "website": "http://www.choicereit.ca",
+        "full_time_employees": null
     },
     "CMPNF": {
         "short_name": "CHAMPION REAL ESTATE INVESTMENT",
@@ -537,7 +713,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Hong Kong",
-        "city": "Wan Chai"
+        "state": null,
+        "city": "Wan Chai",
+        "zipcode": null,
+        "website": "http://www.championreit.com",
+        "full_time_employees": null
     },
     "CNRAF": {
         "short_name": "VICINITY CENTRES",
@@ -549,7 +729,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Chadstone"
+        "state": "VIC",
+        "city": "Chadstone",
+        "zipcode": "3148",
+        "website": "http://www.vicinity.com.au",
+        "full_time_employees": null
     },
     "CPAMF": {
         "short_name": "CAPITALAND INTEGRATED COM TRUST",
@@ -561,7 +745,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "068912",
+        "website": "http://www.cict.com.sg",
+        "full_time_employees": 665
     },
     "CPNREIT.BK": {
         "short_name": "CPN RETAIL GROWTH LEASEHOLD REI",
@@ -573,7 +761,11 @@
         "exchange": "SET",
         "market": "th_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10900",
+        "website": "http://www.cpnreit.com",
+        "full_time_employees": null
     },
     "CQR.AX": {
         "short_name": "CHRETAILRT UNIT",
@@ -585,7 +777,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.charterhall.com.au/investments/funds/charter-hall-retail-reit",
+        "full_time_employees": null
     },
     "CRP.JO": {
         "short_name": "Capital & Regional Plc",
@@ -597,7 +793,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "SW1P 4NP",
+        "website": "http://www.capreg.com",
+        "full_time_employees": 216
     },
     "CRPU.SI": {
         "short_name": "Sasseur Reit",
@@ -609,7 +809,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "038987",
+        "website": "http://www.sasseurreit.com",
+        "full_time_employees": null
     },
     "CWYUF": {
         "short_name": "SMARTCENTRES REAL ESTATE INVEST",
@@ -621,7 +825,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Vaughan"
+        "state": "ON",
+        "city": "Vaughan",
+        "zipcode": "L4K 5Z5",
+        "website": "http://www.smartcentres.com",
+        "full_time_employees": null
     },
     "D5IU.SI": {
         "short_name": "Lippo Malls Tr",
@@ -633,7 +841,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "068809",
+        "website": "http://www.lmir-trust.com",
+        "full_time_employees": null
     },
     "DDR2.F": {
         "short_name": "SITE CENTERS NEW",
@@ -645,7 +857,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Beachwood"
+        "state": "OH",
+        "city": "Beachwood",
+        "zipcode": "44122",
+        "website": "http://www.sitecenters.com",
+        "full_time_employees": 323
     },
     "ECMPA.AS": {
         "short_name": "EUROCOMMERCIAL",
@@ -657,7 +873,11 @@
         "exchange": "AMS",
         "market": "nl_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1017 BS",
+        "website": "http://www.eurocommercialproperties.com",
+        "full_time_employees": 92
     },
     "EPR-PC": {
         "short_name": "EPR Properties 5.75% Series C C",
@@ -669,7 +889,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Kansas City"
+        "state": "MO",
+        "city": "Kansas City",
+        "zipcode": "64106",
+        "website": "http://www.eprkc.com",
+        "full_time_employees": 53
     },
     "EPR-PE": {
         "short_name": "EPR Properties Series E Cumulat",
@@ -681,7 +905,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Kansas City"
+        "state": "MO",
+        "city": "Kansas City",
+        "zipcode": "64106",
+        "website": "http://www.eprkc.com",
+        "full_time_employees": 53
     },
     "EPR-PG": {
         "short_name": "EPR Properties 5.750% Series G ",
@@ -693,7 +921,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Kansas City"
+        "state": "MO",
+        "city": "Kansas City",
+        "zipcode": "64106",
+        "website": "http://www.eprkc.com",
+        "full_time_employees": 53
     },
     "EPR": {
         "short_name": "EPR Properties",
@@ -705,7 +937,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Kansas City"
+        "state": "MO",
+        "city": "Kansas City",
+        "zipcode": "64106",
+        "website": "http://www.eprkc.com",
+        "full_time_employees": 53
     },
     "F1RI34.SA": {
         "short_name": "FEDERAL REALDRN",
@@ -717,7 +953,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "North Bethesda"
+        "state": "MD",
+        "city": "North Bethesda",
+        "zipcode": "20852",
+        "website": "http://www.federalrealty.com",
+        "full_time_employees": 307
     },
     "FGC1.F": {
         "short_name": "KITE REALTY GRP SBI DL-01",
@@ -729,7 +969,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Indianapolis"
+        "state": "IN",
+        "city": "Indianapolis",
+        "zipcode": "46204",
+        "website": "http://www.kiterealty.com",
+        "full_time_employees": 113
     },
     "FREY.PA": {
         "short_name": "FREY",
@@ -741,7 +985,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75001",
+        "website": "http://www.frey.fr",
+        "full_time_employees": 81
     },
     "FRT-PC": {
         "short_name": "Federal Realty Investment Trust",
@@ -753,7 +1001,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "North Bethesda"
+        "state": "MD",
+        "city": "North Bethesda",
+        "zipcode": "20852",
+        "website": "http://www.federalrealty.com",
+        "full_time_employees": 307
     },
     "FRT": {
         "short_name": "Federal Realty Investment Trust",
@@ -765,7 +1017,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "North Bethesda"
+        "state": "MD",
+        "city": "North Bethesda",
+        "zipcode": "20852",
+        "website": "http://www.federalrealty.com",
+        "full_time_employees": 307
     },
     "FRZCF": {
         "short_name": "FRASERS CENTREPOINT TRUST",
@@ -777,7 +1033,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "119958",
+        "website": "http://www.frasersproperty.com/reits/fct",
+        "full_time_employees": null
     },
     "FSHOP13.MX": {
         "short_name": "CIBANCO SA INSTIT DE BANCA MULT",
@@ -789,7 +1049,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Mexico",
-        "city": "Mexico City"
+        "state": "DF",
+        "city": "Mexico City",
+        "zipcode": "05109",
+        "website": "http://www.fibrashop.mx",
+        "full_time_employees": 370
     },
     "FVT.JO": {
         "short_name": "Fairvest Property Hldgs",
@@ -801,7 +1065,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Cape Town"
+        "state": null,
+        "city": "Cape Town",
+        "zipcode": "8001",
+        "website": "http://fairvest.co.za",
+        "full_time_employees": null
     },
     "GRL.F": {
         "short_name": "GETTY RLTY CORP.  DL-,01",
@@ -813,7 +1081,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Jericho"
+        "state": "NY",
+        "city": "Jericho",
+        "zipcode": "11753",
+        "website": "http://www.gettyrealty.com",
+        "full_time_employees": 31
     },
     "GTY": {
         "short_name": "Getty Realty Corporation",
@@ -825,7 +1097,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Jericho"
+        "state": "NY",
+        "city": "Jericho",
+        "zipcode": "11753",
+        "website": "http://www.gettyrealty.com",
+        "full_time_employees": 31
     },
     "H2M.F": {
         "short_name": "HMG COURTLD PROP.  DL 1",
@@ -837,7 +1113,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Miami"
+        "state": "FL",
+        "city": "Miami",
+        "zipcode": "33133",
+        "website": "http://www.hmgcourtland.com",
+        "full_time_employees": null
     },
     "H2V2.F": {
         "short_name": "HAMMERSON PLC  LS-,05",
@@ -849,7 +1129,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "N1 9GE",
+        "website": "http://www.hammerson.com",
+        "full_time_employees": 518
     },
     "HDN.AX": {
         "short_name": "HOMECO DNR UNITS",
@@ -861,7 +1145,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2028",
+        "website": "http://www.home-co.com.au",
+        "full_time_employees": null
     },
     "HGBS11.SA": {
         "short_name": "FII HEDGEBS CI  ER",
@@ -873,7 +1161,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Sao Paulo"
+        "state": "SP",
+        "city": "Sao Paulo",
+        "zipcode": "1830",
+        "website": "http://www.cshg.com.br/site/publico/imob/imob2.seam",
+        "full_time_employees": null
     },
     "HMN.JO": {
         "short_name": "Hammerson plc",
@@ -885,7 +1177,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "N1 9GE",
+        "website": "http://www.hammerson.com",
+        "full_time_employees": 518
     },
     "HMSNF": {
         "short_name": "HAMMERSON",
@@ -897,7 +1193,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "N1 9GE",
+        "website": "http://www.hammerson.com",
+        "full_time_employees": 518
     },
     "HMSO.IR": {
         "short_name": "HAMMERSON PLC",
@@ -909,7 +1209,11 @@
         "exchange": "ISE",
         "market": "ie_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "N1 9GE",
+        "website": "http://www.hammerson.com",
+        "full_time_employees": 518
     },
     "HMSO.L": {
         "short_name": "HAMMERSON PLC ORD 5P",
@@ -921,7 +1225,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "N1 9GE",
+        "website": "http://www.hammerson.com",
+        "full_time_employees": 518
     },
     "HYP.JO": {
         "short_name": "Hyprop Inv Ltd",
@@ -933,7 +1241,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Rosebank"
+        "state": null,
+        "city": "Rosebank",
+        "zipcode": "2196",
+        "website": "http://www.hyprop.co.za",
+        "full_time_employees": null
     },
     "IJX.F": {
         "short_name": "VASTNED BELGIUM S.A.",
@@ -945,7 +1257,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2600",
+        "website": "http://www.vastned.be",
+        "full_time_employees": 4
     },
     "J69U.SI": {
         "short_name": "FRASERS CENTREPOINT TRUST",
@@ -957,7 +1273,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "119958",
+        "website": "http://www.frasersproperty.com/reits/fct",
+        "full_time_employees": null
     },
     "K1IM34.SA": {
         "short_name": "KIMCO REALTYDRN",
@@ -969,7 +1289,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "Jericho"
+        "state": "NY",
+        "city": "Jericho",
+        "zipcode": "11753",
+        "website": "http://www.kimcorealty.com",
+        "full_time_employees": 484
     },
     "KIC.F": {
         "short_name": "KIMCO REALTY  DL-,01",
@@ -981,7 +1305,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Jericho"
+        "state": "NY",
+        "city": "Jericho",
+        "zipcode": "11753",
+        "website": "http://www.kimcorealty.com",
+        "full_time_employees": 484
     },
     "KIM-PL": {
         "short_name": "Kimco Realty Corporation Class ",
@@ -993,7 +1321,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Jericho"
+        "state": "NY",
+        "city": "Jericho",
+        "zipcode": "11753",
+        "website": "http://www.kimcorealty.com",
+        "full_time_employees": 484
     },
     "KIM-PM": {
         "short_name": "Kimco Realty Corporation Class ",
@@ -1005,7 +1337,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Jericho"
+        "state": "NY",
+        "city": "Jericho",
+        "zipcode": "11753",
+        "website": "http://www.kimcorealty.com",
+        "full_time_employees": 484
     },
     "KIM": {
         "short_name": "Kimco Realty Corporation",
@@ -1017,7 +1353,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Jericho"
+        "state": "NY",
+        "city": "Jericho",
+        "zipcode": "11753",
+        "website": "http://www.kimcorealty.com",
+        "full_time_employees": 484
     },
     "KLPEF": {
         "short_name": "KLEPIERRE",
@@ -1029,7 +1369,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75009",
+        "website": "http://www.klepierre.com",
+        "full_time_employees": 1057
     },
     "KPR.F": {
         "short_name": "KLEPIERRE S.A.INH.EO 1,40",
@@ -1041,7 +1385,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75009",
+        "website": "http://www.klepierre.com",
+        "full_time_employees": 1057
     },
     "KRG": {
         "short_name": "Kite Realty Group Trust",
@@ -1053,7 +1401,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Indianapolis"
+        "state": "IN",
+        "city": "Indianapolis",
+        "zipcode": "46204",
+        "website": "http://www.kiterealty.com",
+        "full_time_employees": 113
     },
     "L2D.JO": {
         "short_name": "Liberty Two Degrees LTD",
@@ -1065,7 +1417,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Johannesburg"
+        "state": null,
+        "city": "Johannesburg",
+        "zipcode": "2196",
+        "website": "http://www.liberty2degrees.co.za",
+        "full_time_employees": null
     },
     "LI.PA": {
         "short_name": "KLEPIERRE",
@@ -1077,7 +1433,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75009",
+        "website": "http://www.klepierre.com",
+        "full_time_employees": 1057
     },
     "LKREF": {
         "short_name": "LINK REAL ESTATE INVESTMENT TRU",
@@ -1089,7 +1449,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Hong Kong",
-        "city": "Kwun Tong"
+        "state": null,
+        "city": "Kwun Tong",
+        "zipcode": null,
+        "website": "http://www.linkreit.com",
+        "full_time_employees": 1064
     },
     "LPMDF": {
         "short_name": "LIPPO MALLS INDONESIA RETAIL TR",
@@ -1101,7 +1465,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "068809",
+        "website": "http://www.lmir-trust.com",
+        "full_time_employees": null
     },
     "M6G.F": {
         "short_name": "MACERICH CO.,THE  DL-,01",
@@ -1113,7 +1481,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Santa Monica"
+        "state": "CA",
+        "city": "Santa Monica",
+        "zipcode": "90401",
+        "website": "http://www.macerich.com",
+        "full_time_employees": 659
     },
     "M8Y.F": {
         "short_name": "MERCIALYS  INH. EO 1",
@@ -1125,7 +1497,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75082",
+        "website": "http://www.mercialys.com",
+        "full_time_employees": 123
     },
     "MAC": {
         "short_name": "Macerich Company (The)",
@@ -1137,7 +1513,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Santa Monica"
+        "state": "CA",
+        "city": "Santa Monica",
+        "zipcode": "90401",
+        "website": "http://www.macerich.com",
+        "full_time_employees": 659
     },
     "MERY.PA": {
         "short_name": "MERCIALYS",
@@ -1149,7 +1529,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75082",
+        "website": "http://www.mercialys.com",
+        "full_time_employees": 123
     },
     "MPCMF": {
         "short_name": "MAPLETREE COMMERCIAL TRUST TREA",
@@ -1161,7 +1545,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "117438",
+        "website": "http://www.mapletreecommercialtrust.com",
+        "full_time_employees": null
     },
     "N2IU.SI": {
         "short_name": "Mapletree Com Tr",
@@ -1173,7 +1561,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "117438",
+        "website": "http://www.mapletreecommercialtrust.com",
+        "full_time_employees": null
     },
     "N4S.F": {
         "short_name": "EUROCOMM.PR. CERT.10EO-50",
@@ -1185,7 +1577,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1017 BS",
+        "website": "http://www.eurocommercialproperties.com",
+        "full_time_employees": 92
     },
     "NNN-PF": {
         "short_name": "National Retail Properties Depo",
@@ -1197,7 +1593,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Orlando"
+        "state": "FL",
+        "city": "Orlando",
+        "zipcode": "32801",
+        "website": "http://www.nnnreit.com",
+        "full_time_employees": 69
     },
     "NNN": {
         "short_name": "National Retail Properties",
@@ -1209,7 +1609,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Orlando"
+        "state": "FL",
+        "city": "Orlando",
+        "zipcode": "32801",
+        "website": "http://www.nnnreit.com",
+        "full_time_employees": 69
     },
     "NRR.L": {
         "short_name": "NEWRIVER REIT PLC ORD 1P",
@@ -1221,7 +1625,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W1S 2HX",
+        "website": "http://www.nrr.co.uk",
+        "full_time_employees": 184
     },
     "NTST": {
         "short_name": "NetSTREIT Corp.",
@@ -1233,7 +1641,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Dallas"
+        "state": "TX",
+        "city": "Dallas",
+        "zipcode": "75206",
+        "website": "http://www.netstreit.com",
+        "full_time_employees": 19
     },
     "O.MX": {
         "short_name": "REALTY INCOME CORP",
@@ -1245,7 +1657,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "San Diego"
+        "state": "CA",
+        "city": "San Diego",
+        "zipcode": "92130",
+        "website": "http://www.realtyincome.com",
+        "full_time_employees": 208
     },
     "O": {
         "short_name": "Realty Income Corporation",
@@ -1257,7 +1673,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "San Diego"
+        "state": "CA",
+        "city": "San Diego",
+        "zipcode": "92130",
+        "website": "http://www.realtyincome.com",
+        "full_time_employees": 208
     },
     "OVW.F": {
         "short_name": "SHAFTESBURY PLC  LS-,25",
@@ -1269,7 +1689,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W1F 7FD",
+        "website": "http://www.shaftesbury.co.uk",
+        "full_time_employees": 39
     },
     "P40U.SI": {
         "short_name": "StarhillGbl Reit",
@@ -1281,7 +1705,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "238874",
+        "website": "http://www.starhillglobalreit.com",
+        "full_time_employees": 30
     },
     "PAGYO.IS": {
         "short_name": "PANORA GMYO",
@@ -1293,7 +1721,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": null,
+        "website": "http://www.panoragyo.com",
+        "full_time_employees": 43
     },
     "PEI-PB": {
         "short_name": "Pennsylvania Real Estate Invest",
@@ -1305,7 +1737,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Philadelphia"
+        "state": "PA",
+        "city": "Philadelphia",
+        "zipcode": "19103",
+        "website": "http://www.preit.com",
+        "full_time_employees": 175
     },
     "PEI-PC": {
         "short_name": "Pennsylvania Real Estate Invest",
@@ -1317,7 +1753,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Philadelphia"
+        "state": "PA",
+        "city": "Philadelphia",
+        "zipcode": "19103",
+        "website": "http://www.preit.com",
+        "full_time_employees": 175
     },
     "PEI-PD": {
         "short_name": "Pennsylvania Real Estate Invest",
@@ -1329,7 +1769,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Philadelphia"
+        "state": "PA",
+        "city": "Philadelphia",
+        "zipcode": "19103",
+        "website": "http://www.preit.com",
+        "full_time_employees": 175
     },
     "PEI": {
         "short_name": "Pennsylvania Real Estate Invest",
@@ -1341,7 +1785,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Philadelphia"
+        "state": "PA",
+        "city": "Philadelphia",
+        "zipcode": "19103",
+        "website": "http://www.preit.com",
+        "full_time_employees": 175
     },
     "PLZ-UN.TO": {
         "short_name": "PLAZA RETAIL REIT",
@@ -1353,7 +1801,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Fredericton"
+        "state": "NB",
+        "city": "Fredericton",
+        "zipcode": "E3A 9N6",
+        "website": "http://www.plaza.ca",
+        "full_time_employees": null
     },
     "QRF.BR": {
         "short_name": "QRF",
@@ -1365,7 +1817,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2000",
+        "website": "http://www.qrf.be",
+        "full_time_employees": 6
     },
     "R1EG34.SA": {
         "short_name": "REGENCY CENTDRN",
@@ -1377,7 +1833,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "Jacksonville"
+        "state": "FL",
+        "city": "Jacksonville",
+        "zipcode": "32202",
+        "website": "http://www.regencycenters.com",
+        "full_time_employees": 431
     },
     "R1IN34.SA": {
         "short_name": "REALTY INCOMDRN ED",
@@ -1389,7 +1849,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "San Diego"
+        "state": "CA",
+        "city": "San Diego",
+        "zipcode": "92130",
+        "website": "http://www.realtyincome.com",
+        "full_time_employees": 208
     },
     "R6N.F": {
         "short_name": "RETAIL ESTATES",
@@ -1401,7 +1865,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.retailestates.com",
+        "full_time_employees": null
     },
     "REG": {
         "short_name": "Regency Centers Corporation",
@@ -1413,7 +1881,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Jacksonville"
+        "state": "FL",
+        "city": "Jacksonville",
+        "zipcode": "32202",
+        "website": "http://www.regencycenters.com",
+        "full_time_employees": 431
     },
     "REI-UN.TO": {
         "short_name": "RIOCAN REAL EST UN",
@@ -1425,7 +1897,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M4P 1E4",
+        "website": "http://www.riocan.com",
+        "full_time_employees": 586
     },
     "RES.JO": {
         "short_name": "Resilient REIT Limited",
@@ -1437,7 +1913,11 @@
         "exchange": "JNB",
         "market": "za_market",
         "country": "South Africa",
-        "city": "Rivonia"
+        "state": null,
+        "city": "Rivonia",
+        "zipcode": "2191",
+        "website": "http://www.resilient.co.za",
+        "full_time_employees": null
     },
     "RET.BR": {
         "short_name": "RETAIL ESTATES",
@@ -1449,7 +1929,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.retailestates.com",
+        "full_time_employees": null
     },
     "RIOCF": {
         "short_name": "RIOCAN REAL ESTATE INVESTMENT T",
@@ -1461,7 +1945,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M4P 1E4",
+        "website": "http://www.riocan.com",
+        "full_time_employees": 586
     },
     "ROIC": {
         "short_name": "Retail Opportunity Investments ",
@@ -1473,7 +1961,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "San Diego"
+        "state": "CA",
+        "city": "San Diego",
+        "zipcode": "92130",
+        "website": "http://www.roireit.net",
+        "full_time_employees": 66
     },
     "RPAI": {
         "short_name": "Retail Properties of America, I",
@@ -1485,7 +1977,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Oak Brook"
+        "state": "IL",
+        "city": "Oak Brook",
+        "zipcode": "60523",
+        "website": "http://www.rpai.com",
+        "full_time_employees": 214
     },
     "RPT": {
         "short_name": "RPT Realty",
@@ -1497,7 +1993,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10036",
+        "website": "http://www.rptrealty.com",
+        "full_time_employees": 105
     },
     "RRC.F": {
         "short_name": "REGENCY CENT  DL-,01",
@@ -1509,7 +2009,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Jacksonville"
+        "state": "FL",
+        "city": "Jacksonville",
+        "zipcode": "32202",
+        "website": "http://www.regencycenters.com",
+        "full_time_employees": 431
     },
     "RVI": {
         "short_name": "Retail Value Inc.",
@@ -1521,7 +2025,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Beachwood"
+        "state": "OH",
+        "city": "Beachwood",
+        "zipcode": "44122",
+        "website": "http://retailvalueinc.com",
+        "full_time_employees": null
     },
     "RY6.F": {
         "short_name": "REALTY INC. CORP.  DL 1",
@@ -1533,7 +2041,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "San Diego"
+        "state": "CA",
+        "city": "San Diego",
+        "zipcode": "92130",
+        "website": "http://www.realtyincome.com",
+        "full_time_employees": 208
     },
     "SA4.F": {
         "short_name": "SAUL CENTERS INC.  DL-,01",
@@ -1545,7 +2057,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Bethesda"
+        "state": "MD",
+        "city": "Bethesda",
+        "zipcode": "20814",
+        "website": "http://www.saulcenters.com",
+        "full_time_employees": 110
     },
     "SCG.AX": {
         "short_name": "SCENTRE STAPLED",
@@ -1557,7 +2073,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.scentregroup.com",
+        "full_time_employees": 2427
     },
     "SCP.AX": {
         "short_name": "SHOPCENAUS STAPLED",
@@ -1569,7 +2089,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.scaproperty.com.au",
+        "full_time_employees": null
     },
     "SELER.PA": {
         "short_name": "SELECTIRENTE",
@@ -1581,7 +2105,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Evry"
+        "state": null,
+        "city": "Evry",
+        "zipcode": "91026",
+        "website": "http://www.selectirente.com",
+        "full_time_employees": null
     },
     "SGR-UN.TO": {
         "short_name": "SLATE GROCERY REIT",
@@ -1593,7 +2121,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5H 3T9",
+        "website": "http://www.slategroceryreit.com",
+        "full_time_employees": null
     },
     "SHB.L": {
         "short_name": "SHAFTESBURY PLC ORD 25P",
@@ -1605,7 +2137,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "W1F 7FD",
+        "website": "http://www.shaftesbury.co.uk",
+        "full_time_employees": 39
     },
     "SIMN34.SA": {
         "short_name": "SIMON PROP  DRN",
@@ -1617,7 +2153,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "Indianapolis"
+        "state": "IN",
+        "city": "Indianapolis",
+        "zipcode": "46204",
+        "website": "http://www.simon.com",
+        "full_time_employees": 2400
     },
     "SITC-PA": {
         "short_name": "SITE Centers Corp. 6.375%",
@@ -1629,7 +2169,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Beachwood"
+        "state": "OH",
+        "city": "Beachwood",
+        "zipcode": "44122",
+        "website": "http://www.sitecenters.com",
+        "full_time_employees": 323
     },
     "SITC": {
         "short_name": "SITE Centers Corp.",
@@ -1641,7 +2185,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Beachwood"
+        "state": "OH",
+        "city": "Beachwood",
+        "zipcode": "44122",
+        "website": "http://www.sitecenters.com",
+        "full_time_employees": 323
     },
     "SK6U.SI": {
         "short_name": "SPHREIT",
@@ -1653,7 +2201,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "318994",
+        "website": "http://www.sphreit.com.sg",
+        "full_time_employees": null
     },
     "SKT": {
         "short_name": "Tanger Factory Outlet Centers, ",
@@ -1665,7 +2217,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Greensboro"
+        "state": "NC",
+        "city": "Greensboro",
+        "zipcode": "27408",
+        "website": "http://www.tangeroutlets.com",
+        "full_time_employees": 262
     },
     "SPG-PJ": {
         "short_name": "Simon Property Group, Inc. Simo",
@@ -1677,7 +2233,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Indianapolis"
+        "state": "IN",
+        "city": "Indianapolis",
+        "zipcode": "46204",
+        "website": "http://www.simon.com",
+        "full_time_employees": 2400
     },
     "SPG.MX": {
         "short_name": "SIMON PROPERTY GROUP INC",
@@ -1689,7 +2249,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "Indianapolis"
+        "state": "IN",
+        "city": "Indianapolis",
+        "zipcode": "46204",
+        "website": "http://www.simon.com",
+        "full_time_employees": 2400
     },
     "SPG": {
         "short_name": "Simon Property Group, Inc.",
@@ -1701,7 +2265,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Indianapolis"
+        "state": "IN",
+        "city": "Indianapolis",
+        "zipcode": "46204",
+        "website": "http://www.simon.com",
+        "full_time_employees": 2400
     },
     "SPGR.VI": {
         "short_name": "SIMON PROPERTY GROUP INC",
@@ -1713,7 +2281,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "United States",
-        "city": "Indianapolis"
+        "state": "IN",
+        "city": "Indianapolis",
+        "zipcode": "46204",
+        "website": "http://www.simon.com",
+        "full_time_employees": 2400
     },
     "SQI.F": {
         "short_name": "SIMON PROPERTY GRP PAIRED",
@@ -1725,7 +2297,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Indianapolis"
+        "state": "IN",
+        "city": "Indianapolis",
+        "zipcode": "46204",
+        "website": "http://www.simon.com",
+        "full_time_employees": 2400
     },
     "SRG-PA": {
         "short_name": "Seritage Growth Properties 7.00",
@@ -1737,7 +2313,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10110",
+        "website": "http://www.seritage.com",
+        "full_time_employees": 61
     },
     "SRG": {
         "short_name": "Seritage Growth Properties",
@@ -1749,7 +2329,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10110",
+        "website": "http://www.seritage.com",
+        "full_time_employees": 61
     },
     "SRRTF": {
         "short_name": "SLATE GROCERY REIT",
@@ -1761,7 +2345,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5H 3T9",
+        "website": "http://www.slategroceryreit.com",
+        "full_time_employees": null
     },
     "SRU-UN.TO": {
         "short_name": "SMARTCENTRES REIT",
@@ -1773,7 +2361,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Vaughan"
+        "state": "ON",
+        "city": "Vaughan",
+        "zipcode": "L4K 5Z5",
+        "website": "http://www.smartcentres.com",
+        "full_time_employees": null
     },
     "STGPF": {
         "short_name": "SCENTRE GROUP LIMITED",
@@ -1785,7 +2377,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.scentregroup.com",
+        "full_time_employees": 2427
     },
     "T6O.F": {
         "short_name": "TANGER FACT.OUTLET DL-,01",
@@ -1797,7 +2393,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Greensboro"
+        "state": "NC",
+        "city": "Greensboro",
+        "zipcode": "27408",
+        "website": "http://www.tangeroutlets.com",
+        "full_time_employees": 262
     },
     "TRGYO.IS": {
         "short_name": "TORUNLAR GMYO",
@@ -1809,7 +2409,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34805",
+        "website": "http://www.torunlargyo.com.tr",
+        "full_time_employees": 103
     },
     "TS0U.SI": {
         "short_name": "OUE Com Reit",
@@ -1821,7 +2425,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "049321",
+        "website": "http://www.ouect.com",
+        "full_time_employees": 72
     },
     "UBA": {
         "short_name": "Urstadt Biddle Properties Inc.",
@@ -1833,7 +2441,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Greenwich"
+        "state": "CT",
+        "city": "Greenwich",
+        "zipcode": "06830",
+        "website": "http://www.ubproperties.com",
+        "full_time_employees": 95
     },
     "UBLB.F": {
         "short_name": "URW (STAPL.SHS CDI)EO-,05",
@@ -1845,7 +2457,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75772",
+        "website": "http://www.urw.com",
+        "full_time_employees": 2999
     },
     "UBP-PH": {
         "short_name": "Urstadt Biddle Properties Inc. ",
@@ -1857,7 +2473,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Greenwich"
+        "state": "CT",
+        "city": "Greenwich",
+        "zipcode": "06830",
+        "website": "http://www.ubproperties.com",
+        "full_time_employees": 95
     },
     "UBP-PK": {
         "short_name": "Urstadt Biddle Properties Inc. ",
@@ -1869,7 +2489,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Greenwich"
+        "state": "CT",
+        "city": "Greenwich",
+        "zipcode": "06830",
+        "website": "http://www.ubproperties.com",
+        "full_time_employees": 95
     },
     "UBP": {
         "short_name": "Urstadt Biddle Properties Inc.",
@@ -1881,7 +2505,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Greenwich"
+        "state": "CT",
+        "city": "Greenwich",
+        "zipcode": "06830",
+        "website": "http://www.ubproperties.com",
+        "full_time_employees": 95
     },
     "UL.VI": {
         "short_name": "WFD UNIBAIL-RODAMCO N.V.",
@@ -1893,7 +2521,11 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75772",
+        "website": "http://www.urw.com",
+        "full_time_employees": 2999
     },
     "UNBLF": {
         "short_name": "UNIBAIL-RODAMCO-WESTFIELD",
@@ -1905,7 +2537,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75772",
+        "website": "http://www.urw.com",
+        "full_time_employees": 2999
     },
     "URW.AS": {
         "short_name": "UNIBAIL-RODAMCO-WE",
@@ -1917,7 +2553,11 @@
         "exchange": "AMS",
         "market": "nl_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75772",
+        "website": "http://www.urw.com",
+        "full_time_employees": 2999
     },
     "URW.AX": {
         "short_name": "UNIBALWEST CDI 20:1",
@@ -1929,7 +2569,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75772",
+        "website": "http://www.urw.com",
+        "full_time_employees": 2999
     },
     "VASTB.BR": {
         "short_name": "VASTNED BELGIUM",
@@ -1941,7 +2585,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Antwerp"
+        "state": null,
+        "city": "Antwerp",
+        "zipcode": "2600",
+        "website": "http://www.vastned.be",
+        "full_time_employees": 4
     },
     "VASTN.AS": {
         "short_name": "VASTNED",
@@ -1953,7 +2601,11 @@
         "exchange": "AMS",
         "market": "nl_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1083 HJ",
+        "website": "http://www.vastned.com",
+        "full_time_employees": 29
     },
     "VB2.F": {
         "short_name": "VASTNED RETAIL N.V.  EO 5",
@@ -1965,7 +2617,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1083 HJ",
+        "website": "http://www.vastned.com",
+        "full_time_employees": 29
     },
     "VCX.AX": {
         "short_name": "VICINITY STAPLED",
@@ -1977,7 +2633,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Chadstone"
+        "state": "VIC",
+        "city": "Chadstone",
+        "zipcode": "3148",
+        "website": "http://www.vicinity.com.au",
+        "full_time_employees": null
     },
     "W02A.F": {
         "short_name": "WASHINGTON PR.GRP NEW",
@@ -1989,7 +2649,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Columbus"
+        "state": "OH",
+        "city": "Columbus",
+        "zipcode": "43215",
+        "website": "http://www.washingtonprime.com",
+        "full_time_employees": 717
     },
     "WEHB.BR": {
         "short_name": "WERELDHAVE BELGIUM",
@@ -2001,7 +2665,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Vilvoorde"
+        "state": null,
+        "city": "Vilvoorde",
+        "zipcode": "1800",
+        "website": "http://www.wereldhavebelgium.com",
+        "full_time_employees": 46
     },
     "WER.F": {
         "short_name": "WERELDHAVE  EO 1",
@@ -2013,7 +2681,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Netherlands",
-        "city": "Schiphol"
+        "state": null,
+        "city": "Schiphol",
+        "zipcode": "1118 BH",
+        "website": "http://www.wereldhave.com",
+        "full_time_employees": 148
     },
     "WHA.AS": {
         "short_name": "WERELDHAVE",
@@ -2025,7 +2697,11 @@
         "exchange": "AMS",
         "market": "nl_market",
         "country": "Netherlands",
-        "city": "Schiphol"
+        "state": null,
+        "city": "Schiphol",
+        "zipcode": "1118 BH",
+        "website": "http://www.wereldhave.com",
+        "full_time_employees": 148
     },
     "WHLR": {
         "short_name": "Wheeler Real Estate Investment ",
@@ -2037,7 +2713,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Virginia Beach"
+        "state": "VA",
+        "city": "Virginia Beach",
+        "zipcode": "23452",
+        "website": "http://www.whlr.us",
+        "full_time_employees": 35
     },
     "WHLRD": {
         "short_name": "Wheeler Real Estate Investment ",
@@ -2049,7 +2729,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Virginia Beach"
+        "state": "VA",
+        "city": "Virginia Beach",
+        "zipcode": "23452",
+        "website": "http://www.whlr.us",
+        "full_time_employees": 35
     },
     "WHLRP": {
         "short_name": "Wheeler Real Estate Investment ",
@@ -2061,7 +2745,11 @@
         "exchange": "NCM",
         "market": "us_market",
         "country": "United States",
-        "city": "Virginia Beach"
+        "state": "VA",
+        "city": "Virginia Beach",
+        "zipcode": "23452",
+        "website": "http://www.whlr.us",
+        "full_time_employees": 35
     },
     "WP4.F": {
         "short_name": "WEING.RLTY INV.DL-,03 SBI",
@@ -2073,7 +2761,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Houston"
+        "state": "TX",
+        "city": "Houston",
+        "zipcode": "77008",
+        "website": "http://www.weingarten.com",
+        "full_time_employees": 243
     },
     "WPG-PH": {
         "short_name": "Washington Prime Group Inc. 7.5",
@@ -2085,7 +2777,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Columbus"
+        "state": "OH",
+        "city": "Columbus",
+        "zipcode": "43215",
+        "website": "http://www.washingtonprime.com",
+        "full_time_employees": 717
     },
     "WPG-PI": {
         "short_name": "Washington Prime Group Inc. 6.8",
@@ -2097,7 +2793,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Columbus"
+        "state": "OH",
+        "city": "Columbus",
+        "zipcode": "43215",
+        "website": "http://www.washingtonprime.com",
+        "full_time_employees": 717
     },
     "WPG": {
         "short_name": "Washington Prime Group Inc.",
@@ -2109,7 +2809,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Columbus"
+        "state": "OH",
+        "city": "Columbus",
+        "zipcode": "43215",
+        "website": "http://www.washingtonprime.com",
+        "full_time_employees": 717
     },
     "WPU.F": {
         "short_name": "WERELDHAVE BELGIUM SCA",
@@ -2121,7 +2825,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Vilvoorde"
+        "state": null,
+        "city": "Vilvoorde",
+        "zipcode": "1800",
+        "website": "http://www.wereldhavebelgium.com",
+        "full_time_employees": 46
     },
     "WRI": {
         "short_name": "Weingarten Realty Investors",
@@ -2133,7 +2841,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Houston"
+        "state": "TX",
+        "city": "Houston",
+        "zipcode": "77008",
+        "website": "http://www.weingarten.com",
+        "full_time_employees": 243
     },
     "WSR": {
         "short_name": "Whitestone REIT",
@@ -2145,7 +2857,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Houston"
+        "state": "TX",
+        "city": "Houston",
+        "zipcode": "77063",
+        "website": "http://www.whitestonereit.com",
+        "full_time_employees": 88
     },
     "WVI.F": {
         "short_name": "URSTADT BIDDLE PROP.",
@@ -2157,7 +2873,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Greenwich"
+        "state": "CT",
+        "city": "Greenwich",
+        "zipcode": "06830",
+        "website": "http://www.ubproperties.com",
+        "full_time_employees": 95
     },
     "WX1.F": {
         "short_name": "ACADIA RLTY TRUST  DL-001",
@@ -2169,7 +2889,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Rye"
+        "state": "NY",
+        "city": "Rye",
+        "zipcode": "10580",
+        "website": "http://www.acadiarealty.com",
+        "full_time_employees": 120
     },
     "WXB.F": {
         "short_name": "URSTADT BIDDLE  DL-,01",
@@ -2181,7 +2905,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Greenwich"
+        "state": "CT",
+        "city": "Greenwich",
+        "zipcode": "06830",
+        "website": "http://www.ubproperties.com",
+        "full_time_employees": 95
     },
     "XC2R.F": {
         "short_name": "CAPITAL + REGIONAL LS-,01",
@@ -2193,7 +2921,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "SW1P 4NP",
+        "website": "http://www.capreg.com",
+        "full_time_employees": 216
     },
     "YGGC.MC": {
         "short_name": "GENERAL DE GALER...AS COMERCIAL",
@@ -2205,6 +2937,10 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Marbella"
+        "state": null,
+        "city": "Marbella",
+        "zipcode": "29603",
+        "website": "http://generaldegalerias.com/en",
+        "full_time_employees": 133
     }
 }

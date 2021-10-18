@@ -9,7 +9,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": null,
+        "website": "http://www.lokmanhekim.com.tr",
+        "full_time_employees": 1620
     },
     "MPARK.IS": {
         "short_name": "MLP SAGLIK",
@@ -21,6 +25,10 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34050",
+        "website": "http://www.mlpcare.com",
+        "full_time_employees": 11704
     }
 }

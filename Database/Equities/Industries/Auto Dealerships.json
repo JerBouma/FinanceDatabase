@@ -9,7 +9,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Paris"
+        "state": null,
+        "city": "Paris",
+        "zipcode": "75010",
+        "website": null,
+        "full_time_employees": null
     },
     "MOTO.AT": {
         "short_name": "Cars,Motorcyc.&mar.eng.tr.&imp",
@@ -21,6 +25,10 @@
         "exchange": "ATH",
         "market": "gr_market",
         "country": "Greece",
-        "city": "Aspropyrgos"
+        "state": null,
+        "city": "Aspropyrgos",
+        "zipcode": "19300",
+        "website": "http://www.motodynamics.gr",
+        "full_time_employees": 233
     }
 }

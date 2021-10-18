@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Brisbane"
+        "state": "QLD",
+        "city": "Brisbane",
+        "zipcode": "4009",
+        "website": "http://www.allianceairlines.com.au",
+        "full_time_employees": 552
     },
     "QABSY": {
         "short_name": "QANTAS AIRWAYS",
@@ -21,7 +25,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Mascot"
+        "state": "NSW",
+        "city": "Mascot",
+        "zipcode": "2020",
+        "website": "http://www.qantas.com",
+        "full_time_employees": 20000
     },
     "QAN.AX": {
         "short_name": "QANTAS FPO",
@@ -33,7 +41,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Mascot"
+        "state": "NSW",
+        "city": "Mascot",
+        "zipcode": "2020",
+        "website": "http://www.qantas.com",
+        "full_time_employees": 20000
     },
     "QAN.F": {
         "short_name": "QANTAS AIRWAYS",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Mascot"
+        "state": "NSW",
+        "city": "Mascot",
+        "zipcode": "2020",
+        "website": "http://www.qantas.com",
+        "full_time_employees": 20000
     },
     "QUBSF": {
         "short_name": "QANTAS AIRWAYS",
@@ -57,7 +73,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Mascot"
+        "state": "NSW",
+        "city": "Mascot",
+        "zipcode": "2020",
+        "website": "http://www.qantas.com",
+        "full_time_employees": 20000
     },
     "R4L.F": {
         "short_name": "REGIONAL EXPRESS HLDGS",
@@ -69,7 +89,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Australia",
-        "city": "Mascot"
+        "state": "NSW",
+        "city": "Mascot",
+        "zipcode": "2020",
+        "website": "http://www.rex.com.au",
+        "full_time_employees": null
     },
     "REX.AX": {
         "short_name": "REG EX HLD FPO",
@@ -81,6 +105,10 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Mascot"
+        "state": "NSW",
+        "city": "Mascot",
+        "zipcode": "2020",
+        "website": "http://www.rex.com.au",
+        "full_time_employees": null
     }
 }

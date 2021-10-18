@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Milwaukee"
+        "state": "WI",
+        "city": "Milwaukee",
+        "zipcode": "53202",
+        "website": "http://www.docreit.com",
+        "full_time_employees": 81
     },
     "AED.BR": {
         "short_name": "AEDIFICA",
@@ -21,7 +25,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1040",
+        "website": "http://www.aedifica.be",
+        "full_time_employees": 105
     },
     "AGR.L": {
         "short_name": "ASSURA PLC ORD 10P",
@@ -33,7 +41,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "Warrington"
+        "state": null,
+        "city": "Warrington",
+        "zipcode": "WA4 6HL",
+        "website": "http://www.assuraplc.com",
+        "full_time_employees": 81
     },
     "AOO.F": {
         "short_name": "AEDIFICA S.A.",
@@ -45,7 +57,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1040",
+        "website": "http://www.aedifica.be",
+        "full_time_employees": 105
     },
     "ARSSF": {
         "short_name": "ASSURA PLC",
@@ -57,7 +73,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United Kingdom",
-        "city": "Warrington"
+        "state": null,
+        "city": "Warrington",
+        "zipcode": "WA4 6HL",
+        "website": "http://www.assuraplc.com",
+        "full_time_employees": 81
     },
     "AW9U.SI": {
         "short_name": "First Reit",
@@ -69,7 +89,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "49321",
+        "website": "http://www.first-reit.com",
+        "full_time_employees": null
     },
     "C2PU.SI": {
         "short_name": "ParkwayLife Reit",
@@ -81,7 +105,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "068898",
+        "website": "http://www.plifereit.com",
+        "full_time_employees": null
     },
     "CHCT": {
         "short_name": "Community Healthcare Trust Inco",
@@ -93,7 +121,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Franklin"
+        "state": "TN",
+        "city": "Franklin",
+        "zipcode": "37067",
+        "website": "http://www.chct.reit",
+        "full_time_employees": 28
     },
     "CSH-UN.TO": {
         "short_name": "CHARTWELL RETIREMENT RESIDENCES",
@@ -105,7 +137,11 @@
         "exchange": "TOR",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Mississauga"
+        "state": "ON",
+        "city": "Mississauga",
+        "zipcode": "L5W 0G5",
+        "website": "http://www.chartwell.com",
+        "full_time_employees": 16674
     },
     "CTRE": {
         "short_name": "CareTrust REIT, Inc.",
@@ -117,7 +153,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "San Clemente"
+        "state": "CA",
+        "city": "San Clemente",
+        "zipcode": "92673",
+        "website": "http://www.caretrustreit.com",
+        "full_time_employees": 15
     },
     "CWSRF": {
         "short_name": "CHARTWELL RETIREMENT RESIDENCES",
@@ -129,7 +169,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Mississauga"
+        "state": "ON",
+        "city": "Mississauga",
+        "zipcode": "L5W 0G5",
+        "website": "http://www.chartwell.com",
+        "full_time_employees": 16674
     },
     "DHC": {
         "short_name": "Diversified Healthcare Trust",
@@ -141,7 +185,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Newton"
+        "state": "MA",
+        "city": "Newton",
+        "zipcode": "02458",
+        "website": "http://www.dhcreit.com",
+        "full_time_employees": null
     },
     "DOC": {
         "short_name": "Physicians Realty Trust",
@@ -153,7 +201,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Milwaukee"
+        "state": "WI",
+        "city": "Milwaukee",
+        "zipcode": "53202",
+        "website": "http://www.docreit.com",
+        "full_time_employees": 81
     },
     "FESNF": {
         "short_name": "FIRST REIT",
@@ -165,7 +217,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Singapore",
-        "city": "Singapore"
+        "state": null,
+        "city": "Singapore",
+        "zipcode": "49321",
+        "website": "http://www.first-reit.com",
+        "full_time_employees": null
     },
     "GBCS": {
         "short_name": "GLOBAL HEALTHCARE REIT INC",
@@ -177,7 +233,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Niwot"
+        "state": "CO",
+        "city": "Niwot",
+        "zipcode": "80503",
+        "website": "http://www.gbcsreit.com",
+        "full_time_employees": 287
     },
     "GEG.F": {
         "short_name": "GEO GROUP INC. DL -,01",
@@ -189,7 +249,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Boca Raton"
+        "state": "FL",
+        "city": "Boca Raton",
+        "zipcode": "33431",
+        "website": "http://www.geogroup.com",
+        "full_time_employees": 20430
     },
     "GEO": {
         "short_name": "Geo Group Inc (The) REIT",
@@ -201,7 +265,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Boca Raton"
+        "state": "FL",
+        "city": "Boca Raton",
+        "zipcode": "33431",
+        "website": "http://www.geogroup.com",
+        "full_time_employees": 20430
     },
     "GEO1.MX": {
         "short_name": "GEO GROUP INC(THE)",
@@ -213,7 +281,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "Boca Raton"
+        "state": "FL",
+        "city": "Boca Raton",
+        "zipcode": "33431",
+        "website": "http://www.geogroup.com",
+        "full_time_employees": 20430
     },
     "GMRE-PA": {
         "short_name": "Global Medical REIT Inc. Series",
@@ -225,7 +297,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Bethesda"
+        "state": "MD",
+        "city": "Bethesda",
+        "zipcode": "20814",
+        "website": "http://www.globalmedicalreit.com",
+        "full_time_employees": 22
     },
     "GMRE": {
         "short_name": "Global Medical REIT Inc.",
@@ -237,7 +313,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Bethesda"
+        "state": "MD",
+        "city": "Bethesda",
+        "zipcode": "20814",
+        "website": "http://www.globalmedicalreit.com",
+        "full_time_employees": 22
     },
     "HC5.F": {
         "short_name": "HEALTHPEAK PROP.INC. DL 1",
@@ -249,7 +329,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Denver"
+        "state": "CO",
+        "city": "Denver",
+        "zipcode": "80237",
+        "website": "http://www.healthpeak.com",
+        "full_time_employees": 217
     },
     "HCW.DE": {
         "short_name": "WELLTOWER INC.  DL 1",
@@ -261,7 +345,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "United States",
-        "city": "Toledo"
+        "state": "OH",
+        "city": "Toledo",
+        "zipcode": "43615",
+        "website": "http://www.welltower.com",
+        "full_time_employees": 423
     },
     "HCW.F": {
         "short_name": "WELLTOWER INC.  DL 1",
@@ -273,7 +361,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Toledo"
+        "state": "OH",
+        "city": "Toledo",
+        "zipcode": "43615",
+        "website": "http://www.welltower.com",
+        "full_time_employees": 423
     },
     "HR": {
         "short_name": "Healthcare Realty Trust Incorpo",
@@ -285,7 +377,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Nashville"
+        "state": "TN",
+        "city": "Nashville",
+        "zipcode": "37203",
+        "website": "http://www.healthcarerealty.com",
+        "full_time_employees": 308
     },
     "HR6.F": {
         "short_name": "HEALTHCARE RLTY TR. DL-01",
@@ -297,7 +393,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Nashville"
+        "state": "TN",
+        "city": "Nashville",
+        "zipcode": "37203",
+        "website": "http://www.healthcarerealty.com",
+        "full_time_employees": 308
     },
     "HT01.F": {
         "short_name": "HEALTHCARE TR.OF AMER. A",
@@ -309,7 +409,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Scottsdale"
+        "state": "AZ",
+        "city": "Scottsdale",
+        "zipcode": "85254",
+        "website": "http://www.htareit.com",
+        "full_time_employees": 333
     },
     "HTA": {
         "short_name": "Healthcare Trust of America, In",
@@ -321,7 +425,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Scottsdale"
+        "state": "AZ",
+        "city": "Scottsdale",
+        "zipcode": "85254",
+        "website": "http://www.htareit.com",
+        "full_time_employees": 333
     },
     "HTIA": {
         "short_name": "Healthcare Trust, Inc. - 7.375%",
@@ -333,7 +441,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10019",
+        "website": "http://www.healthcaretrustinc.com",
+        "full_time_employees": null
     },
     "LTC": {
         "short_name": "LTC Properties, Inc.",
@@ -345,7 +457,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Westlake Village"
+        "state": "CA",
+        "city": "Westlake Village",
+        "zipcode": "91361",
+        "website": "http://www.LTCreit.com",
+        "full_time_employees": 24
     },
     "LTP.F": {
         "short_name": "LTC PTIES INC.  DL-,01",
@@ -357,7 +473,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Westlake Village"
+        "state": "CA",
+        "city": "Westlake Village",
+        "zipcode": "91361",
+        "website": "http://www.LTCreit.com",
+        "full_time_employees": 24
     },
     "M2PW34.SA": {
         "short_name": "MEDICAL P TRDRN",
@@ -369,7 +489,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "Birmingham"
+        "state": "AL",
+        "city": "Birmingham",
+        "zipcode": "35242",
+        "website": "http://www.medicalpropertiestrust.com",
+        "full_time_employees": 106
     },
     "M3P.F": {
         "short_name": "MEDICAL PROPERTIES TR.",
@@ -381,7 +505,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Birmingham"
+        "state": "AL",
+        "city": "Birmingham",
+        "zipcode": "35242",
+        "website": "http://www.medicalpropertiestrust.com",
+        "full_time_employees": 106
     },
     "MPW": {
         "short_name": "Medical Properties Trust, Inc.",
@@ -393,7 +521,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Birmingham"
+        "state": "AL",
+        "city": "Birmingham",
+        "zipcode": "35242",
+        "website": "http://www.medicalpropertiestrust.com",
+        "full_time_employees": 106
     },
     "NHHS": {
         "short_name": "NORTHSTAR HEALTHCARE INCOME INC",
@@ -405,7 +537,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "New York"
+        "state": "NY",
+        "city": "New York",
+        "zipcode": "10022",
+        "website": "http://www.northstarhealthcarereit.com",
+        "full_time_employees": null
     },
     "NHI": {
         "short_name": "National Health Investors, Inc.",
@@ -417,7 +553,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Murfreesboro"
+        "state": "TN",
+        "city": "Murfreesboro",
+        "zipcode": "37129",
+        "website": "http://www.nhireit.com",
+        "full_time_employees": 19
     },
     "OHI": {
         "short_name": "Omega Healthcare Investors, Inc",
@@ -429,7 +569,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Hunt Valley"
+        "state": "MD",
+        "city": "Hunt Valley",
+        "zipcode": "21030",
+        "website": "http://www.omegahealthcare.com",
+        "full_time_employees": 68
     },
     "P1EA34.SA": {
         "short_name": "HEALTHPEAK PDRN",
@@ -441,7 +585,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "Denver"
+        "state": "CO",
+        "city": "Denver",
+        "zipcode": "80237",
+        "website": "http://www.healthpeak.com",
+        "full_time_employees": 217
     },
     "PEAK": {
         "short_name": "Healthpeak Properties, Inc.",
@@ -453,7 +601,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Denver"
+        "state": "CO",
+        "city": "Denver",
+        "zipcode": "80237",
+        "website": "http://www.healthpeak.com",
+        "full_time_employees": 217
     },
     "PHP.L": {
         "short_name": "PRIMARY HEALTH PROPERTIES PLC O",
@@ -465,7 +617,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "SW1Y 4RF",
+        "website": "http://www.phpgroup.co.uk",
+        "full_time_employees": 50
     },
     "PP51.F": {
         "short_name": "PRIMARY HEALTH  LS-,0125",
@@ -477,7 +633,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United Kingdom",
-        "city": "London"
+        "state": null,
+        "city": "London",
+        "zipcode": "SW1Y 4RF",
+        "website": "http://www.phpgroup.co.uk",
+        "full_time_employees": 50
     },
     "SBC.F": {
         "short_name": "SABRA HLTH CARE REIT",
@@ -489,7 +649,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Irvine"
+        "state": "CA",
+        "city": "Irvine",
+        "zipcode": "92612",
+        "website": "http://www.sabrahealth.com",
+        "full_time_employees": 38
     },
     "SBRA": {
         "short_name": "Sabra Health Care REIT, Inc.",
@@ -501,7 +665,11 @@
         "exchange": "NMS",
         "market": "us_market",
         "country": "United States",
-        "city": "Irvine"
+        "state": "CA",
+        "city": "Irvine",
+        "zipcode": "92612",
+        "website": "http://www.sabrahealth.com",
+        "full_time_employees": 38
     },
     "UHT": {
         "short_name": "Universal Health Realty Income ",
@@ -513,7 +681,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "King Of Prussia"
+        "state": "PA",
+        "city": "King Of Prussia",
+        "zipcode": "19406",
+        "website": "http://www.uhrit.com",
+        "full_time_employees": null
     },
     "V1TA34.SA": {
         "short_name": "VENTAS INC  DRN",
@@ -525,7 +697,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60654",
+        "website": "http://www.ventasreit.com",
+        "full_time_employees": 448
     },
     "VEN.F": {
         "short_name": "VENTAS INC.  DL-,25",
@@ -537,7 +713,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60654",
+        "website": "http://www.ventasreit.com",
+        "full_time_employees": 448
     },
     "VHP.NZ": {
         "short_name": "Vital Healthcare Property Trust",
@@ -549,7 +729,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Auckland"
+        "state": null,
+        "city": "Auckland",
+        "zipcode": "1010",
+        "website": "http://www.vitalhealthcareproperty.co.nz",
+        "full_time_employees": null
     },
     "VTR.MX": {
         "short_name": "VENTAS INC",
@@ -561,7 +745,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60654",
+        "website": "http://www.ventasreit.com",
+        "full_time_employees": 448
     },
     "VTR": {
         "short_name": "Ventas, Inc.",
@@ -573,7 +761,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Chicago"
+        "state": "IL",
+        "city": "Chicago",
+        "zipcode": "60654",
+        "website": "http://www.ventasreit.com",
+        "full_time_employees": 448
     },
     "W1EL34.SA": {
         "short_name": "WELLTOWER INDRN",
@@ -585,7 +777,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "United States",
-        "city": "Toledo"
+        "state": "OH",
+        "city": "Toledo",
+        "zipcode": "43615",
+        "website": "http://www.welltower.com",
+        "full_time_employees": 423
     },
     "WELL": {
         "short_name": "Welltower Inc.",
@@ -597,7 +793,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "United States",
-        "city": "Toledo"
+        "state": "OH",
+        "city": "Toledo",
+        "zipcode": "43615",
+        "website": "http://www.welltower.com",
+        "full_time_employees": 423
     },
     "WX4.F": {
         "short_name": "OMEGA HEALTHC. INV. DL-10",
@@ -609,7 +809,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Hunt Valley"
+        "state": "MD",
+        "city": "Hunt Valley",
+        "zipcode": "21030",
+        "website": "http://www.omegahealthcare.com",
+        "full_time_employees": 68
     },
     "WX6.F": {
         "short_name": "NATL HEALTH INV.  DL-,01",
@@ -621,6 +825,10 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "United States",
-        "city": "Murfreesboro"
+        "state": "TN",
+        "city": "Murfreesboro",
+        "zipcode": "37129",
+        "website": "http://www.nhireit.com",
+        "full_time_employees": 19
     }
 }

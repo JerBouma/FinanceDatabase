@@ -9,7 +9,11 @@
         "exchange": "LSE",
         "market": "gb_market",
         "country": "United States",
-        "city": "Lake Forest"
+        "state": "IL",
+        "city": "Lake Forest",
+        "zipcode": "60045",
+        "website": "http://www.tenneco.com",
+        "full_time_employees": 73000
     },
     "APTVN.MX": {
         "short_name": "APTIV PLC",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "2",
+        "website": "http://www.aptiv.com",
+        "full_time_employees": 151000
     },
     "ATAR": {
         "short_name": "AVATAR VENTURES",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "United States",
-        "city": "Carson City"
+        "state": "NV",
+        "city": "Carson City",
+        "zipcode": "89703",
+        "website": "http://www.avatarventurescorp.com",
+        "full_time_employees": null
     },
     "CIEAN.MX": {
         "short_name": "CIE AUTOMOTIVE SA",
@@ -45,7 +57,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Spain",
-        "city": "Bilbao"
+        "state": null,
+        "city": "Bilbao",
+        "zipcode": "48009",
+        "website": "http://www.cieautomotive.com",
+        "full_time_employees": 25209
     },
     "FARE": {
         "short_name": "WORLD MOTO INC",
@@ -57,7 +73,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Thailand",
-        "city": "Bangkok"
+        "state": null,
+        "city": "Bangkok",
+        "zipcode": "10110",
+        "website": null,
+        "full_time_employees": 2
     },
     "HARITASEAT.NS": {
         "short_name": "HARITA SEATING SYS",
@@ -69,6 +89,10 @@
         "exchange": "NSI",
         "market": "in_market",
         "country": "India",
-        "city": "Chennai"
+        "state": null,
+        "city": "Chennai",
+        "zipcode": "600006",
+        "website": "http://www.haritaseating.com",
+        "full_time_employees": 341
     }
 }

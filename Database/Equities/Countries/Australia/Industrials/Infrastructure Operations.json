@@ -9,7 +9,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3000",
+        "website": "http://www.atlasarteria.com",
+        "full_time_employees": null
     },
     "ARA.AX": {
         "short_name": "ARIADNE FPO",
@@ -21,7 +25,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Sydney"
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.ariadne.com.au",
+        "full_time_employees": 10
     },
     "MAQAF": {
         "short_name": "ATLAS ARTERIA",
@@ -33,7 +41,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3000",
+        "website": "http://www.atlasarteria.com",
+        "full_time_employees": null
     },
     "TCL.AX": {
         "short_name": "TRANSURBAN STAPLED",
@@ -45,7 +57,11 @@
         "exchange": "ASX",
         "market": "au_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3008",
+        "website": "http://www.transurban.com.au",
+        "full_time_employees": 1800
     },
     "TRAUF": {
         "short_name": "TRANSURBAN GROUP",
@@ -57,6 +73,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Australia",
-        "city": "Melbourne"
+        "state": "VIC",
+        "city": "Melbourne",
+        "zipcode": "3008",
+        "website": "http://www.transurban.com.au",
+        "full_time_employees": 1800
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "China",
-        "city": "Beijing"
+        "state": null,
+        "city": "Beijing",
+        "zipcode": "100033",
+        "website": "http://www.chinare.com.cn",
+        "full_time_employees": 63914
     },
     "SNAS": {
         "short_name": "SINO ASSURANCE INC",
@@ -21,6 +25,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "China",
-        "city": "Shenzhen"
+        "state": null,
+        "city": "Shenzhen",
+        "zipcode": "518053",
+        "website": "http://www.snas.cc",
+        "full_time_employees": 190
     }
 }

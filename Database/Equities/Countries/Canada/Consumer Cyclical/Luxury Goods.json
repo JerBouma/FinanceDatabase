@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H3A 2A5",
+        "website": "http://www.maisonbirks.com",
+        "full_time_employees": 365
     },
     "BGI": {
         "short_name": "Birks Group Inc.",
@@ -21,7 +25,11 @@
         "exchange": "ASE",
         "market": "us_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H3A 2A5",
+        "website": "http://www.maisonbirks.com",
+        "full_time_employees": 365
     },
     "MENE.V": {
         "short_name": "MENE INC",
@@ -33,7 +41,11 @@
         "exchange": "VAN",
         "market": "ca_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5V 1R4",
+        "website": "http://mene.com",
+        "full_time_employees": null
     },
     "MENEF": {
         "short_name": "MENE INC",
@@ -45,7 +57,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Toronto"
+        "state": "ON",
+        "city": "Toronto",
+        "zipcode": "M5V 1R4",
+        "website": "http://mene.com",
+        "full_time_employees": null
     },
     "NRPI": {
         "short_name": "NRP STONE INC",
@@ -57,6 +73,10 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Canada",
-        "city": "Redcliff"
+        "state": "AB",
+        "city": "Redcliff",
+        "zipcode": "T0J 2P0",
+        "website": null,
+        "full_time_employees": null
     }
 }

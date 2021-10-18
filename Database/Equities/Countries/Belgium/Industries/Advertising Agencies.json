@@ -9,7 +9,11 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Brussels"
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1170",
+        "website": "http://www.emakina.com",
+        "full_time_employees": 901
     },
     "ALINV.PA": {
         "short_name": "INVIBES ADVERTSING",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "Belgium",
-        "city": "Ghent"
+        "state": null,
+        "city": "Ghent",
+        "zipcode": "9052",
+        "website": "http://www.invibes.com",
+        "full_time_employees": null
     },
     "MLIOC.PA": {
         "short_name": "IOC HOLDING",
@@ -33,6 +41,10 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "Belgium",
-        "city": "Ans"
+        "state": null,
+        "city": "Ans",
+        "zipcode": "4430",
+        "website": "http://www.iocommunication.com",
+        "full_time_employees": null
     }
 }

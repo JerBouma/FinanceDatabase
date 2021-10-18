@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Spain",
-        "city": "Barcelona"
+        "state": null,
+        "city": "Barcelona",
+        "zipcode": "08014",
+        "website": "http://www.ercros.es",
+        "full_time_employees": 1304
     },
     "ECR.MC": {
         "short_name": "ERCROS",
@@ -21,6 +25,10 @@
         "exchange": "MCE",
         "market": "es_market",
         "country": "Spain",
-        "city": "Barcelona"
+        "state": null,
+        "city": "Barcelona",
+        "zipcode": "08014",
+        "website": "http://www.ercros.es",
+        "full_time_employees": 1304
     }
 }

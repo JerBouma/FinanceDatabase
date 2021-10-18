@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Netherlands",
-        "city": "Leiden"
+        "state": null,
+        "city": "Leiden",
+        "zipcode": "2333 CS",
+        "website": "http://www.airbus.com",
+        "full_time_employees": 127814
     },
     "BBDBN.MX": {
         "short_name": "BOMBARDIER INC",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Canada",
-        "city": "Montreal"
+        "state": "QC",
+        "city": "Montreal",
+        "zipcode": "H3B 1Y8",
+        "website": "http://www.bombardier.com",
+        "full_time_employees": 45550
     },
     "ERJN.MX": {
         "short_name": "EMBRAER SA",
@@ -33,7 +41,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
+        "state": "SP",
+        "city": "S\u00c3\u00a3o Paulo",
+        "zipcode": "05425-070",
+        "website": "http://www.embraer.com",
+        "full_time_employees": 15658
     },
     "HONV.PA": {
         "short_name": "THALES NV21",
@@ -45,7 +57,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "France",
-        "city": "Courbevoie"
+        "state": null,
+        "city": "Courbevoie",
+        "zipcode": "92400",
+        "website": "http://www.thalesgroup.com/en",
+        "full_time_employees": 75735
     },
     "RTX.BA": {
         "short_name": "RAYTHEON TECHNOLOG",
@@ -57,6 +73,10 @@
         "exchange": "BUE",
         "market": "ar_market",
         "country": "United States",
-        "city": "Waltham"
+        "state": "MA",
+        "city": "Waltham",
+        "zipcode": "02451",
+        "website": "http://www.rtx.com",
+        "full_time_employees": 181000
     }
 }

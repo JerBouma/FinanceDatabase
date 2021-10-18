@@ -9,7 +9,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "4",
+        "website": "http://www.eaton.com",
+        "full_time_employees": 91987
     },
     "ETN": {
         "short_name": "Eaton Corporation, PLC",
@@ -21,7 +25,11 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "4",
+        "website": "http://www.eaton.com",
+        "full_time_employees": 92000
     },
     "I1RP34.SA": {
         "short_name": "TRANE TECH  DRN",
@@ -33,7 +41,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Ireland",
-        "city": "Swords"
+        "state": null,
+        "city": "Swords",
+        "zipcode": null,
+        "website": "http://www.tranetechnologies.com",
+        "full_time_employees": 35000
     },
     "TT": {
         "short_name": "Trane Technologies plc",
@@ -45,6 +57,10 @@
         "exchange": "NYQ",
         "market": "us_market",
         "country": "Ireland",
-        "city": "Swords"
+        "state": null,
+        "city": "Swords",
+        "zipcode": null,
+        "website": "http://www.tranetechnologies.com",
+        "full_time_employees": 35000
     }
 }

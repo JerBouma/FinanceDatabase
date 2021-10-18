@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "102 25",
+        "website": "http://www.arcane.no",
+        "full_time_employees": null
     },
     "ARCANE.ST": {
         "short_name": "Arcane Crypto AB",
@@ -21,7 +25,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "102 25",
+        "website": "http://www.arcane.no",
+        "full_time_employees": null
     },
     "HAV-B.ST": {
         "short_name": "Havsfrun Investment AB ser. B",
@@ -33,7 +41,11 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "114 51",
+        "website": "http://www.havsfrun.se",
+        "full_time_employees": 3
     },
     "MANG.ST": {
         "short_name": "Mangold AB",
@@ -45,6 +57,10 @@
         "exchange": "STO",
         "market": "se_market",
         "country": "Sweden",
-        "city": "Stockholm"
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "114 34",
+        "website": "http://www.mangold.se",
+        "full_time_employees": 79
     }
 }

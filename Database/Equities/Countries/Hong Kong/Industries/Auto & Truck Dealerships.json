@@ -9,7 +9,11 @@
         "exchange": "HKG",
         "market": "hk_market",
         "country": "Hong Kong",
-        "city": "Wan Chai"
+        "state": null,
+        "city": "Wan Chai",
+        "zipcode": null,
+        "website": "http://www.hk970.com",
+        "full_time_employees": 435
     },
     "RS1.SI": {
         "short_name": "China Env Res",
@@ -21,7 +25,11 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Hong Kong",
-        "city": "Kowloon"
+        "state": null,
+        "city": "Kowloon",
+        "zipcode": null,
+        "website": "http://www.cergroup.com.hk",
+        "full_time_employees": 62
     },
     "T15.SI": {
         "short_name": "h TCIL HK$",
@@ -33,6 +41,10 @@
         "exchange": "SES",
         "market": "sg_market",
         "country": "Hong Kong",
-        "city": "Wan Chai"
+        "state": null,
+        "city": "Wan Chai",
+        "zipcode": null,
+        "website": "http://www.tanchong.com",
+        "full_time_employees": 5407
     }
 }

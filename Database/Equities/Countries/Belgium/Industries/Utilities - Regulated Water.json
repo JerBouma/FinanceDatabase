@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Belgium",
-        "city": "Tielt"
+        "state": null,
+        "city": "Tielt",
+        "zipcode": "8700",
+        "website": "http://ekopak.be",
+        "full_time_employees": 40
     },
     "EKOP.BR": {
         "short_name": "EKOPAK",
@@ -21,6 +25,10 @@
         "exchange": "BRU",
         "market": "be_market",
         "country": "Belgium",
-        "city": "Tielt"
+        "state": null,
+        "city": "Tielt",
+        "zipcode": "8700",
+        "website": "http://ekopak.be",
+        "full_time_employees": 40
     }
 }

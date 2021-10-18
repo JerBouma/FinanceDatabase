@@ -9,7 +9,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": "06750",
+        "website": "http://www.emek.com.tr",
+        "full_time_employees": 212
     },
     "GEREL.IS": {
         "short_name": "GERSAN ELEKTRIK",
@@ -21,7 +25,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34953",
+        "website": "http://www.gersan.com.tr",
+        "full_time_employees": 516
     },
     "PRKAB.IS": {
         "short_name": "TURK PRYSMIAN KABLO",
@@ -33,7 +41,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Mudanya"
+        "state": null,
+        "city": "Mudanya",
+        "zipcode": "16941",
+        "website": "http://tr.prysmiangroup.com",
+        "full_time_employees": 520
     },
     "SANEL.IS": {
         "short_name": "SANEL MUHENDISLIK",
@@ -45,7 +57,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": null,
+        "website": "http://www.san-el.com",
+        "full_time_employees": 160
     },
     "ULUSE.IS": {
         "short_name": "ULUSOY ELEKTRIK",
@@ -57,6 +73,10 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": "06935",
+        "website": "http://www.ulusoyelektrik.com.tr",
+        "full_time_employees": 869
     }
 }

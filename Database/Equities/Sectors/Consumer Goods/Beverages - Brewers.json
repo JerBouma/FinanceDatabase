@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Brazil",
-        "city": "S\u00c3\u00a3o Paulo"
+        "state": "SP",
+        "city": "S\u00c3\u00a3o Paulo",
+        "zipcode": "04530-001",
+        "website": "http://www.ambev.com.br",
+        "full_time_employees": 50000
     },
     "HEIAN.MX": {
         "short_name": "HEINEKEN NV",
@@ -21,6 +25,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Netherlands",
-        "city": "Amsterdam"
+        "state": null,
+        "city": "Amsterdam",
+        "zipcode": "1017 ZD",
+        "website": "http://www.theheinekencompany.com",
+        "full_time_employees": 84000
     }
 }

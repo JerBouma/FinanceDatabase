@@ -9,7 +9,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Canada",
-        "city": "Laval"
+        "state": "QC",
+        "city": "Laval",
+        "zipcode": "H7L 4A8",
+        "website": "http://www.bauschhealth.com",
+        "full_time_employees": 21600
     },
     "ENDPN.MX": {
         "short_name": "ENDO INTERNATIONAL PLC",
@@ -21,7 +25,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Ireland",
-        "city": "Dublin"
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "4",
+        "website": "http://www.endo.com",
+        "full_time_employees": 3397
     },
     "EVTA.DE": {
         "short_name": "EVOTEC SE ADR/2 O.N.",
@@ -33,7 +41,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Hamburg"
+        "state": null,
+        "city": "Hamburg",
+        "zipcode": "22419",
+        "website": "http://www.evotec.com",
+        "full_time_employees": 3572
     },
     "TAKN.MX": {
         "short_name": "TAKEDA PHARMACEUTICAL CO LTD",
@@ -45,7 +57,11 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Japan",
-        "city": "Tokyo"
+        "state": null,
+        "city": "Tokyo",
+        "zipcode": "103-8668",
+        "website": "http://www.takeda.com",
+        "full_time_employees": 47495
     },
     "TBET": {
         "short_name": "TIBET PHARMACEUTICALS INC",
@@ -57,7 +73,11 @@
         "exchange": "PNK",
         "market": "us_market",
         "country": "Hong Kong",
-        "city": "Wanchai"
+        "state": null,
+        "city": "Wanchai",
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": 190
     },
     "TEVAN.MX": {
         "short_name": "TEVA PHARMACEUTICAL INDUSTRIES",
@@ -69,6 +89,10 @@
         "exchange": "MEX",
         "market": "mx_market",
         "country": "Israel",
-        "city": "Petah Tikva"
+        "state": null,
+        "city": "Petah Tikva",
+        "zipcode": "4951033",
+        "website": "http://www.tevapharm.com",
+        "full_time_employees": 37100
     }
 }

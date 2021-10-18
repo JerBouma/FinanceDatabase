@@ -9,7 +9,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20123",
+        "website": "http://www.giglio.org",
+        "full_time_employees": null
     },
     "ALKER.PA": {
         "short_name": "MEDIA MAKER",
@@ -21,7 +25,11 @@
         "exchange": "PAR",
         "market": "fr_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20121",
+        "website": "http://www.mmaker.it",
+        "full_time_employees": 15
     },
     "DM.MI": {
         "short_name": "DIGITAL MAGICS",
@@ -33,7 +41,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20139",
+        "website": "http://www.digitalmagics.com",
+        "full_time_employees": null
     },
     "GG.MI": {
         "short_name": "GIGLIO GROUP",
@@ -45,7 +57,11 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Milan"
+        "state": "MI",
+        "city": "Milan",
+        "zipcode": "20123",
+        "website": "http://www.giglio.org",
+        "full_time_employees": null
     },
     "PRM.MI": {
         "short_name": "PRISMI",
@@ -57,6 +73,10 @@
         "exchange": "MIL",
         "market": "it_market",
         "country": "Italy",
-        "city": "Modena"
+        "state": "MO",
+        "city": "Modena",
+        "zipcode": "41122",
+        "website": "http://www.prismi.net",
+        "full_time_employees": 350
     }
 }

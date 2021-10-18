@@ -9,7 +9,11 @@
         "exchange": "DUS",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Berlin"
+        "state": null,
+        "city": "Berlin",
+        "zipcode": "10179",
+        "website": "http://www.cashlife.de",
+        "full_time_employees": 7
     },
     "WUW.DE": {
         "short_name": "WUESTENROT+WUERTT.AG O.N.",
@@ -21,7 +25,11 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "Germany",
-        "city": "Stuttgart"
+        "state": null,
+        "city": "Stuttgart",
+        "zipcode": "70176",
+        "website": "http://www.ww-ag.com",
+        "full_time_employees": 6473
     },
     "WUW.F": {
         "short_name": "WUESTENROT+WUERTT.AG O.N.",
@@ -33,7 +41,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Germany",
-        "city": "Stuttgart"
+        "state": null,
+        "city": "Stuttgart",
+        "zipcode": "70176",
+        "website": "http://www.ww-ag.com",
+        "full_time_employees": 6473
     },
     "WUW.VI": {
         "short_name": "WUESTENROT+WUERTTEMBERGISCHE",
@@ -45,6 +57,10 @@
         "exchange": "VIE",
         "market": "at_market",
         "country": "Germany",
-        "city": "Stuttgart"
+        "state": null,
+        "city": "Stuttgart",
+        "zipcode": "70176",
+        "website": "http://www.ww-ag.com",
+        "full_time_employees": 6473
     }
 }

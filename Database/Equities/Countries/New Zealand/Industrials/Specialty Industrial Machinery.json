@@ -9,7 +9,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Christchurch"
+        "state": null,
+        "city": "Christchurch",
+        "zipcode": null,
+        "website": "http://mhmautomation.com",
+        "full_time_employees": 141
     },
     "SCT.NZ": {
         "short_name": "Scott Technology Limited Ordina",
@@ -21,7 +25,11 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Dunedin"
+        "state": null,
+        "city": "Dunedin",
+        "zipcode": "9054",
+        "website": "http://www.scottautomation.com",
+        "full_time_employees": 600
     },
     "SKL.NZ": {
         "short_name": "Skellerup Holdings Limited Ordi",
@@ -33,6 +41,10 @@
         "exchange": "NZE",
         "market": "nz_market",
         "country": "New Zealand",
-        "city": "Auckland"
+        "state": null,
+        "city": "Auckland",
+        "zipcode": "1051",
+        "website": "http://www.skellerupholdings.com",
+        "full_time_employees": 798
     }
 }

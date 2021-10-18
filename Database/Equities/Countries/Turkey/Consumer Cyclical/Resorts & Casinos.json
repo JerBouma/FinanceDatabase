@@ -9,7 +9,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Izmir"
+        "state": null,
+        "city": "Izmir",
+        "zipcode": "35930",
+        "website": "http://www.altinyunus.com.tr",
+        "full_time_employees": 126
     },
     "MERIT.IS": {
         "short_name": "MERIT TURIZM",
@@ -21,7 +25,11 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Istanbul"
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34337",
+        "website": "http://meritturizm.com",
+        "full_time_employees": 34
     },
     "PKENT.IS": {
         "short_name": "PETROKENT TURIZM",
@@ -33,6 +41,10 @@
         "exchange": "IST",
         "market": "tr_market",
         "country": "Turkey",
-        "city": "Ankara"
+        "state": null,
+        "city": "Ankara",
+        "zipcode": null,
+        "website": "http://www.petrokent.com.tr",
+        "full_time_employees": 177
     }
 }

@@ -9,7 +9,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "FIIB11.SA": {
         "short_name": "FII INDL BR CI  ER",
@@ -21,7 +25,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": null
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "full_time_employees": null
     },
     "GGRC11.SA": {
         "short_name": "FII GGRCOVEPCI  ER",
@@ -33,7 +41,11 @@
         "exchange": "SAO",
         "market": "br_market",
         "country": "Brazil",
-        "city": "Sao Paulo"
+        "state": null,
+        "city": "Sao Paulo",
+        "zipcode": "04547-004",
+        "website": null,
+        "full_time_employees": null
     },
     "PUP.DE": {
         "short_name": "PUBLIC STORAGE  DL-,10",
@@ -45,6 +57,10 @@
         "exchange": "GER",
         "market": "de_market",
         "country": "United States",
-        "city": "Glendale"
+        "state": "CA",
+        "city": "Glendale",
+        "zipcode": "91201",
+        "website": "http://www.publicstorage.com",
+        "full_time_employees": 5400
     }
 }

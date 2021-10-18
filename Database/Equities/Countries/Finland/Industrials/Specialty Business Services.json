@@ -9,7 +9,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Helsinki"
+        "state": null,
+        "city": "Helsinki",
+        "zipcode": "00240",
+        "website": "http://aallongroup.fi",
+        "full_time_employees": 268
     },
     "C7O.F": {
         "short_name": "CAVERION OYJ. O.N.",
@@ -21,7 +25,11 @@
         "exchange": "FRA",
         "market": "dr_market",
         "country": "Finland",
-        "city": "Vantaa"
+        "state": null,
+        "city": "Vantaa",
+        "zipcode": "01650",
+        "website": "http://www.caverion.com",
+        "full_time_employees": 14892
     },
     "CAV1V.HE": {
         "short_name": "Caverion Oyj",
@@ -33,7 +41,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Vantaa"
+        "state": null,
+        "city": "Vantaa",
+        "zipcode": "01650",
+        "website": "http://www.caverion.com",
+        "full_time_employees": 14892
     },
     "PNA1V.HE": {
         "short_name": "Panostaja Oyj",
@@ -45,7 +57,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Tampere"
+        "state": null,
+        "city": "Tampere",
+        "zipcode": "33100",
+        "website": "http://www.panostaja.fi",
+        "full_time_employees": 1558
     },
     "RUSH.HE": {
         "short_name": "Rush Factory Plc",
@@ -57,7 +73,11 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Rauma"
+        "state": null,
+        "city": "Rauma",
+        "zipcode": "26100",
+        "website": "http://rushfactory.fi",
+        "full_time_employees": 13
     },
     "TNOM.HE": {
         "short_name": "Talenom Oyj",
@@ -69,6 +89,10 @@
         "exchange": "HEL",
         "market": "fi_market",
         "country": "Finland",
-        "city": "Oulu"
+        "state": null,
+        "city": "Oulu",
+        "zipcode": "90230",
+        "website": "http://www.talenom.fi",
+        "full_time_employees": 912
     }
 }
