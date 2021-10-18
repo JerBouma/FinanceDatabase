@@ -44,9 +44,26 @@ def fill_data_points_equities(data_symbol, options=None):
     except (TypeError, KeyError):
         options['country'] = None
     try:
+        options['state'] = data_symbol['summaryProfile']['state']
+    except (TypeError, KeyError):
+        options['state'] = None
+    try:
         options['city'] = data_symbol['summaryProfile']['city']
     except (TypeError, KeyError):
         options['city'] = None
+    try:
+        options['zipcode'] = data_symbol['summaryProfile']['zip']
+    except (TypeError, KeyError):
+        options['zipcode'] = None
+    try:
+        options['website'] = data_symbol['summaryProfile']['website']
+    except (TypeError, KeyError):
+        options['website'] = None
+    try:
+        options['full_time_employees'] = data_symbol['summaryProfile']['fullTimeEmployees']
+    except (TypeError, KeyError):
+        options['full_time_employees'] = None
+
     return options
 
 
