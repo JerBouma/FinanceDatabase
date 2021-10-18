@@ -106,7 +106,7 @@ def select_currencies(currency=None,
     return json_data
 
 
-def select_etfs(category=None,
+def select_etfs(category=None, exclude_exchanges=True,
                 base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
                          "master/Database/ETFs/",
                 use_local_location=False, all_etfs_json="_ETFs"):
@@ -120,6 +120,9 @@ def select_etfs(category=None,
     ----
     category (string, default is None)
         If filled, gives all data for a specific category.
+    exclude_exchanges (boolean, default is True):
+        Whether you want to exclude exchanges from the search. If False,
+        you will receive multiple times i.e. Vanguard S&P 500 from different exchanges.
     base_url (string, default is GitHub location)
         The possibility to enter your own location if desired.
     use_local_location (string, default False)
@@ -158,10 +161,18 @@ def select_etfs(category=None,
             except json.decoder.JSONDecodeError:
                 raise ValueError("Not able to find any data.")
 
+    if exclude_exchanges:
+        for etf in json_data.copy():
+            if '.' in etf:
+                del json_data[etf]
+        if not len(json_data):
+            raise ValueError("Because include_exchanges is set to True, all available data for "
+                             f"this combination ({category}) is removed. Set this parameter to False to obtain data.")
+
     return json_data
 
 
-def select_equities(country=None, sector=None, industry=None,
+def select_equities(country=None, sector=None, industry=None, exclude_exchanges=True,
                     base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
                              "master/Database/Equities/",
                     use_local_location=False):
@@ -182,6 +193,9 @@ def select_equities(country=None, sector=None, industry=None,
         If filled, gives all data for a specific sector.
     industry (string, default is None)
         If filled, gives all data for a specific industry.
+    exclude_exchanges (boolean, default is True):
+        Whether you want to exclude exchanges from the search. If False,
+        you will receive multiple times i.e. Tesla from different exchanges.
     base_url (string, default is GitHub location)
         The possibility to enter your own location if desired.
     use_local_location (string, default False)
@@ -321,10 +335,19 @@ def select_equities(country=None, sector=None, industry=None,
             except json.decoder.JSONDecodeError:
                 raise ValueError("Not able to find any data.")
 
+    if exclude_exchanges:
+        for company in json_data.copy():
+            if '.' in company:
+                del json_data[company]
+            if not len(json_data):
+                raise ValueError("Because include_exchanges is set to True, all available data for "
+                                 f"this combination ({country}, {sector} and {industry}) is removed. "
+                                 f"Set this parameter to False to obtain data.")
+
     return json_data
 
 
-def select_funds(category=None,
+def select_funds(category=None, exclude_exchanges=True,
                  base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
                           "master/Database/Funds/",
                  use_local_location=False, all_funds_json="_Funds"):
@@ -338,6 +361,9 @@ def select_funds(category=None,
     ----
     category (string, default is None)
         If filled, gives all data for a specific category.
+    exclude_exchanges (boolean, default is True):
+        Whether you want to exclude exchanges from the search. If False,
+        you will receive multiple times i.e. AAEUX from different exchanges.
     base_url (string, default is GitHub location)
         The possibility to enter your own location if desired.
     use_local_location (string, default False)
@@ -375,10 +401,18 @@ def select_funds(category=None,
             except json.decoder.JSONDecodeError:
                 raise ValueError("Not able to find any data.")
 
+    if exclude_exchanges:
+        for fund in json_data.copy():
+            if '.' in fund:
+                del json_data[fund]
+            if not len(json_data):
+                raise ValueError("Because include_exchanges is set to True, all available data for "
+                                 f"this combination ({category}) is removed. Set this parameter to False to obtain data.")
+
     return json_data
 
 
-def select_indices(market=None,
+def select_indices(market=None, exclude_exchanges=True,
                    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
                             "master/Database/Indices/",
                    use_local_location=False, all_indices_json="_Indices"):
@@ -392,6 +426,9 @@ def select_indices(market=None,
     ----
     market (string, default is None)
         If filled, gives all data for a specific market.
+    exclude_exchanges (boolean, default is True):
+        Whether you want to exclude exchanges from the search. If False,
+        you will receive multiple times i.e. ^GSPC from different exchanges.
     base_url (string, default is GitHub location)
         The possibility to enter your own location if desired.
     use_local_location (string, default False)
@@ -427,10 +464,18 @@ def select_indices(market=None,
             except json.decoder.JSONDecodeError:
                 raise ValueError("Not able to find any data.")
 
+    if exclude_exchanges:
+        for index in json_data.copy():
+            if '.' in index:
+                del json_data[index]
+            if not len(json_data):
+                raise ValueError("Because include_exchanges is set to True, all available data for "
+                                 f"this combination ({market}) is removed. Set this parameter to False to obtain data.")
+
     return json_data
 
 
-def select_moneymarkets(market=None,
+def select_moneymarkets(market=None, exclude_exchanges=True,
                         base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
                                  "master/Database/Moneymarkets/",
                         use_local_location=False, all_moneymarkets_json="_Moneymarkets"):
@@ -444,6 +489,9 @@ def select_moneymarkets(market=None,
     ----
     market (string, default is None)
         If filled, gives all data for a specific market.
+    exclude_exchanges (boolean, default is True):
+        Whether you want to exclude exchanges from the search. If False,
+        you will receive multiple times i.e. SOND from different exchanges.
     base_url (string, default is GitHub location)
         The possibility to enter your own location if desired.
     use_local_location (string, default False)
@@ -478,5 +526,13 @@ def select_moneymarkets(market=None,
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
                 raise ValueError("Not able to find any data.")
+
+    if exclude_exchanges:
+        for moneymarket in json_data.copy():
+            if '.' in moneymarket:
+                del json_data[moneymarket]
+        if not len(json_data):
+            raise ValueError("Because include_exchanges is set to True, all available data for "
+                             f"this combination ({market}) is removed. Set this parameter to False to obtain data.")
 
     return json_data
