@@ -1,13 +1,10 @@
-import FinanceDatabase as fd
+import Searcher as fd  # Replace with FinanceDatabase if repo not cloned
+import FundamentalAnalysis as fa
+import pandas as pd
+import matplotlib.pyplot as plt
 
 all_technology_companies = fd.select_equities(sector='Technology')
 silicon_valley = fd.search_products(all_technology_companies, query='San Jose', search='city')
-
-for ticker in silicon_valley.copy():
-    if '.' in ticker:
-        del silicon_valley[ticker]
-
-import FundamentalAnalysis as fa
 
 API_KEY = "YOUR_API_KEY_HERE"
 data_set = {}
@@ -16,9 +13,6 @@ for ticker in silicon_valley:
         data_set[ticker] = fa.key_metrics(ticker, API_KEY, period='annual')
     except Exception:
         continue
-
-import pandas as pd
-import matplotlib.pyplot as plt
 
 years = ['2016', '2017', '2018', '2019', '2020']
 market_cap = pd.DataFrame(index=years)
