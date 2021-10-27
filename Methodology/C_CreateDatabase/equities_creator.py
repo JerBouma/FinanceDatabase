@@ -60,9 +60,9 @@ def fill_data_points_equities(data_symbol, options=None):
     except (TypeError, KeyError):
         options['website'] = None
     try:
-        options['full_time_employees'] = data_symbol['summaryProfile']['fullTimeEmployees']
+        options['market_cap'] = data_symbol['price']['marketCap']
     except (TypeError, KeyError):
-        options['full_time_employees'] = None
+        options['market_cap'] = None
 
     return options
 

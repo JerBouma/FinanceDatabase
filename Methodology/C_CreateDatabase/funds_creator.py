@@ -46,6 +46,11 @@ def fill_data_points_funds(data_symbol, options=None):
         options['market'] = data_symbol['quoteType']['market']
     except (TypeError, KeyError):
         options['market'] = None
+    try:
+        options['total_assets'] = data_symbol['summaryDetail']['totalAssets']
+    except (TypeError, KeyError):
+        options['total_assets'] = None
+
     return options
 
 
