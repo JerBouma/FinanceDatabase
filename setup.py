@@ -4,9 +4,9 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="FinanceDatabase",
-    packages=["FinanceDatabase"],
-    version="0.1.11",
+    name="financedatabase",
+    packages=["financedatabase"],
+    version="1.0.0",
     license="MIT",
     description="This is a database of 300.000+ symbols containing Equities, ETFs, Funds, Indices, "
                 "Currencies, Cryptocurrencies and Money Markets.",

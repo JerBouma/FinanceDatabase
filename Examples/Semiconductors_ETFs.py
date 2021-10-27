@@ -1,4 +1,4 @@
-import Searcher as fd
+import financedatabase as fd
 from yfinance.utils import get_json
 import matplotlib.pyplot as plt
 

@@ -1,4 +1,4 @@
-from Searcher.json_options import show_options
+from financedatabase.json_options import show_options
 import pytest
 
 

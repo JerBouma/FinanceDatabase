@@ -1,4 +1,4 @@
-import Searcher as fd  # Replace with FinanceDatabase if repo not cloned
+import financedatabase as fd
 from yfinance.utils import get_json
 from yfinance import download
 import matplotlib.pyplot as plt

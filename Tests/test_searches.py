@@ -1,6 +1,6 @@
-from Searcher.json_picker import (select_cryptocurrencies, select_equities, select_moneymarkets, select_etfs,
-                                  select_funds, select_indices, select_currencies)
-from Searcher.json_options import search_products
+from financedatabase.json_picker import (select_cryptocurrencies, select_equities, select_moneymarkets, select_etfs,
+                                         select_funds, select_indices, select_currencies)
+from financedatabase.json_options import search_products
 import pytest
 
 # Initialize data

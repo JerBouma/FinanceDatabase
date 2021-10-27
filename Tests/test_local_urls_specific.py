@@ -1,5 +1,5 @@
-from Searcher.json_picker import (select_cryptocurrencies, select_equities, select_moneymarkets, select_etfs,
-                                  select_funds, select_indices, select_currencies)
+from financedatabase.json_picker import (select_cryptocurrencies, select_equities, select_moneymarkets, select_etfs,
+                                         select_funds, select_indices, select_currencies)
 import pytest
 
 LOCAL_URL = "C:/Users/jerbo/Google Drive/Programming/Python/FinanceDatabase/Database"

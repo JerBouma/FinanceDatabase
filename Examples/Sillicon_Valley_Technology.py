@@ -1,4 +1,4 @@
-import Searcher as fd  # Replace with FinanceDatabase if repo not cloned
+import financedatabase as fd
 import FundamentalAnalysis as fa
 import pandas as pd
 import matplotlib.pyplot as plt
