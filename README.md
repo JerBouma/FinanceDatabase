@@ -67,9 +67,9 @@ data with a specific query.
 
 ### Installation
 You can install the package with the following steps:
-1. `pip install FinanceDatabase`
+1. `pip install financedatabase`
     - Alternatively, download the 'Searcher' directory.
-2. (within Python) `import FinanceDatabase as fd`
+2. (within Python) `import financedatabase as fd`
 
 ### Functions
 The package has the following functions:
@@ -128,7 +128,7 @@ A function crucial to querying data from the Database.
 
 Let's start by acquiring the unique countries, sectors and industries of all equities in the database:
 ````
-import FinanceDatabase as fd
+import financedatabase as fd
 
 # Obtain all countries from the database
 equities_countries = fd.show_options('equities', 'countries')
@@ -184,7 +184,7 @@ searching the database for ETFs related to Health and then make a subselection b
 for biotech-related ETFs:
 
 ````
-import FinanceDatabase as fd
+import financedatabase as fd
 
 health_etfs = fd.select_etfs(category='Health')
 health_etfs_in_biotech = fd.search_products(health_etfs, 'biotech')
@@ -246,7 +246,7 @@ about [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp)
 If I wish to obtain all companies within the United States listed under 'Airlines' I can write the 
 following code:
 ````
-import FinanceDatabase as fd
+import financedatabase as fd
 
 airlines_us = fd.select_equities(country='United States', industry='Airlines')
 ````
@@ -292,7 +292,7 @@ If I want to understand which listed technology companies exist in Silicon Valle
 the sector 'Technology' and then filter based on city to obtain all listed technology companies in 'Silicon Valley'. 
 The city 'San Jose' is where Silicon Valley is located.
 ````
-import FinanceDatabase as fd
+import financedatabase as fd
 
 all_technology_companies = fd.select_equities(sector='Technology')
 silicon_valley = fd.search_products(all_technology_companies, query='San Jose', search='city')
@@ -347,7 +347,7 @@ this program is to quickly compare a large selection of ETFs by collecting their
 As I invest with DeGiro, a great start for me would be by collecting all ETFs that are listed within the Core 
 Selection (commission free) list of my broker with the following code (or manually obtain them from the json file):
 ````
-import FinanceDatabase as fd
+import financedatabase as fd
 
 core_selection = fd.select_etfs("core_selection_filtered", exclude_exchanges=False)
 ````
