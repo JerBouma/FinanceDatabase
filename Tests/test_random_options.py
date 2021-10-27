@@ -29,7 +29,7 @@ def test_random_options():
     assert type(random_equity) is dict and len(random_equity) > 0, "random_equity (sectors) dictionary is invalid."
 
     equity_option_industries = show_options('equities')['industries'][random_number]
-    random_equity = select_equities(industry=equity_option_industries)
+    random_equity = select_equities(industry=equity_option_industries, exclude_exchanges=False)
     assert type(random_equity) is dict and len(random_equity) > 0, "random_equity (industries) dictionary is invalid."
 
     random_equity = select_equities(country='United States', sector='Basic Materials')
@@ -46,7 +46,7 @@ def test_random_options():
                                                                     "dictionary is invalid.")
 
     funds_option = show_options('funds')[random_number]
-    random_fund = select_funds(funds_option)
+    random_fund = select_funds(funds_option, exclude_exchanges=False)
     assert type(random_fund) is dict and len(random_fund) > 0, "random_fund dictionary is invalid."
 
     random_index = select_indices('us_market')

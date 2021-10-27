@@ -6,7 +6,7 @@ LOCAL_URL = "C:/Users/jerbo/Google Drive/Programming/Python/FinanceDatabase/Data
 
 
 def test_local_urls_specific():
-    crypto = select_cryptocurrencies(cryptocurrency='BTC',
+    crypto = select_cryptocurrencies(cryptocurrency='BTC2',
                                      base_url=rf'{LOCAL_URL}/Cryptocurrencies/',
                                      use_local_location=True)
     assert type(crypto) is dict and len(crypto) > 0, "crypto BTC dictionary is invalid."
