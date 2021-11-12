@@ -88,6 +88,18 @@ def make_directories_and_fill_json_funds(data, directory_name):
     with open(directory_name + '/_' + directory_name + ".json", 'w') as handle:
         json.dump(symbols_dictionaries, handle, indent=4)
 
+    print(f'Creating {directory_name} list..')
+    funds_list = {}
+    for fund in tqdm(symbols_dictionaries):
+        if '.' not in fund:
+            if symbols_dictionaries[fund]['short_name'] is None:
+                continue
+            else:
+                funds_list[f"{fund} ({symbols_dictionaries[fund]['short_name']})"] = fund
+
+    with open(directory_name + '/_' + directory_name + " List.json", 'w') as handle:
+        json.dump(funds_list, handle, indent=4)
+
     if Errors:
         print("A couple of tickers were not able to be categorized. Please check the output of this function.")
         return Errors

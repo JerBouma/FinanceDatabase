@@ -59,6 +59,18 @@ def make_directories_and_fill_json_currencies(data, directory_name):
     with open(directory_name + '/_' + directory_name + ".json", 'w') as handle:
         json.dump(symbols_dictionaries, handle, indent=4)
 
+    print(f'Creating {directory_name} list..')
+    currencies_list = {}
+    for currency in tqdm(symbols_dictionaries):
+        if '.' not in currency:
+            if symbols_dictionaries[currency]['short_name'] is None:
+                continue
+            else:
+                currencies_list[f"{currency} ({symbols_dictionaries[currency]['short_name']})"] = currency
+
+    with open(directory_name + '/_' + directory_name + " List.json", 'w') as handle:
+        json.dump(currencies_list, handle, indent=4)
+
     if Errors:
         print("A couple of tickers were not able to be categorized. Please check the output of this function.")
         return Errors

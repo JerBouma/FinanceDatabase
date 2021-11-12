@@ -3,7 +3,7 @@ import json
 from tqdm import tqdm
 import cryptocurrencies_creator, currencies_creator, equities_creator, etfs_creator, funds_creator, futures_creator, indices_creator, moneymarkets_creator, options_creator, utilities
 
-DATA_FOLDER = r"C:/Users/jerbo/Python/FinanceDatabase"
+DATA_FOLDER = r"C:\Users\jerbo\Python Offline\FinanceDatabase"
 EXCLUDED_TYPES = ['Option', 'Futures']
 naming = {
     'Cryptocurrencies': 'CRYPTOCURRENCY',
@@ -67,7 +67,7 @@ for folder in naming:
         with open("Categories/currencies_options.json", 'w') as handle:
             json.dump(sorted(currencies), handle, indent=4)
     elif folder == 'Equities':
-        print("Creating equities countries, sectors and industries..")
+        print("Creating equities countries, sectors and industries options..")
         countries = []
         sectors = []
         industries = []
@@ -93,7 +93,7 @@ for folder in naming:
         with open("Categories/equities_industries.json", 'w') as handle:
             json.dump(sorted(industries), handle, indent=4)
     elif folder == 'ETFs':
-        print("Creating etfs categories..")
+        print("Creating etfs options..")
         etfs = []
         for symbol in tqdm(data_set):
             try:

@@ -63,6 +63,18 @@ def make_directories_and_fill_json_indices(data, directory_name):
     with open(directory_name + '/_' + directory_name + ".json", 'w') as handle:
         json.dump(symbols_dictionaries, handle, indent=4)
 
+    print(f'Creating {directory_name} list..')
+    indices_list = {}
+    for index in tqdm(symbols_dictionaries):
+        if '.' not in index:
+            if symbols_dictionaries[index]['short_name'] is None:
+                continue
+            else:
+                indices_list[f"{index} ({symbols_dictionaries[index]['short_name']})"] = index
+
+    with open(directory_name + '/_' + directory_name + " List.json", 'w') as handle:
+        json.dump(indices_list, handle, indent=4)
+
     if Errors:
         print("A couple of tickers were not able to be categorized. Please check the output of this function.")
         return Errors

@@ -63,6 +63,18 @@ def make_directories_and_fill_json_moneymarkets(data, directory_name):
     with open(directory_name + '/_' + directory_name + ".json", 'w') as handle:
         json.dump(symbols_dictionaries, handle, indent=4)
 
+    print(f'Creating {directory_name} list..')
+    moneymarkets_list = {}
+    for moneymarket in tqdm(symbols_dictionaries):
+        if '.' not in moneymarket:
+            if symbols_dictionaries[moneymarket]['short_name'] is None:
+                continue
+            else:
+                moneymarkets_list[f"{moneymarket} ({symbols_dictionaries[moneymarket]['short_name']})"] = moneymarket
+
+    with open(directory_name + '/_' + directory_name + " List.json", 'w') as handle:
+        json.dump(moneymarkets_list, handle, indent=4)
+
     if Errors:
         print("A couple of tickers were not able to be categorized. Please check the output of this function.")
         return Errors

@@ -80,6 +80,18 @@ def make_directories_and_fill_json_etfs(data, directory_name):
     with open(directory_name + '/_' + directory_name + ".json", 'w') as handle:
         json.dump(symbols_dictionaries, handle, indent=4)
 
+    print(f'Creating {directory_name} list..')
+    etf_list = {}
+    for etf in tqdm(symbols_dictionaries):
+        if '.' not in etf:
+            if symbols_dictionaries[etf]['short_name'] is None:
+                continue
+            else:
+                etf_list[f"{etf} ({symbols_dictionaries[etf]['short_name']})"] = etf
+
+    with open(directory_name + '/_' + directory_name + " List.json", 'w') as handle:
+        json.dump(etf_list, handle, indent=4)
+
     if Errors:
         print("A couple of tickers were not able to be categorized. Please check the output of this function.")
         return Errors
