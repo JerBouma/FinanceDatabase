@@ -60,7 +60,12 @@ def fill_data_points_equities(data_symbol, options=None):
     except (TypeError, KeyError):
         options['website'] = None
     try:
-        options['market_cap'] = data_symbol['price']['marketCap']
+        if data_symbol['price']['marketCap'] <= 2e9:
+            options['market_cap'] = 'Small Cap'
+        elif (data_symbol['price']['marketCap'] > 2e9) and (data_symbol['price']['marketCap'] < 10e9):
+            options['market_cap'] = 'Mid Cap'
+        elif data_symbol['price']['marketCap'] >= 10e9:
+            options['market_cap'] = 'Large Cap'
     except (TypeError, KeyError):
         options['market_cap'] = None
 
@@ -187,6 +192,18 @@ def make_directories_and_fill_json_equities(data, directory_name):
         json.dump(symbols_dictionary_part_one, handle, indent=4)
     with open(directory_name + '/' + directory_name + " Part 2.json", 'w') as handle:
         json.dump(symbols_dictionary_part_two, handle, indent=4)
+
+    print(f'Creating {directory_name} list..')
+    equities_list = {}
+    for equity in tqdm(symbols_dictionaries):
+        if '.' not in equity:
+            if symbols_dictionaries[equity]['short_name'] is None:
+                continue
+            else:
+                equities_list[f"{equity} ({symbols_dictionaries[equity]['short_name']})"] = equity
+
+    with open(directory_name + '/' + directory_name + " List.json", 'w') as handle:
+        json.dump(equities_list, handle, indent=4)
 
     if Errors:
         print("A couple of tickers were not able to be categorized. Please check the output of this function.")
