@@ -70,7 +70,7 @@ def make_directories_and_fill_json_indices(data, directory_name):
             if symbols_dictionaries[index]['short_name'] is None:
                 continue
             else:
-                indices_list[f"{index} ({symbols_dictionaries[index]['short_name']})"] = index
+                indices_list[symbols_dictionaries[index]['short_name']] = index
 
     with open(directory_name + '/_' + directory_name + " List.json", 'w') as handle:
         json.dump(indices_list, handle, indent=4)

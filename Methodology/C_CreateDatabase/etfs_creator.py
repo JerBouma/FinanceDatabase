@@ -87,7 +87,7 @@ def make_directories_and_fill_json_etfs(data, directory_name):
             if symbols_dictionaries[etf]['short_name'] is None:
                 continue
             else:
-                etf_list[f"{etf} ({symbols_dictionaries[etf]['short_name']})"] = etf
+                etf_list[symbols_dictionaries[etf]['short_name']] = etf
 
     with open(directory_name + '/_' + directory_name + " List.json", 'w') as handle:
         json.dump(etf_list, handle, indent=4)

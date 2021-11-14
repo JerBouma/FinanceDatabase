@@ -73,8 +73,7 @@ def make_directories_and_fill_json_cryptocurrencies(data, directory_name):
             if symbols_dictionaries[cryptocurrency]['short_name'] is None:
                 continue
             else:
-                cryptocurrencies_list[
-                    f"{cryptocurrency} ({symbols_dictionaries[cryptocurrency]['short_name']})"] = cryptocurrency
+                cryptocurrencies_list[symbols_dictionaries[cryptocurrency]['short_name']] = cryptocurrency
 
     with open(directory_name + '/_' + directory_name + " List.json", 'w') as handle:
         json.dump(cryptocurrencies_list, handle, indent=4)

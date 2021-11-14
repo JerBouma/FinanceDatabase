@@ -95,7 +95,7 @@ def make_directories_and_fill_json_funds(data, directory_name):
             if symbols_dictionaries[fund]['short_name'] is None:
                 continue
             else:
-                funds_list[f"{fund} ({symbols_dictionaries[fund]['short_name']})"] = fund
+                funds_list[symbols_dictionaries[fund]['short_name']] = fund
 
     with open(directory_name + '/_' + directory_name + " List.json", 'w') as handle:
         json.dump(funds_list, handle, indent=4)

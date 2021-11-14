@@ -200,7 +200,7 @@ def make_directories_and_fill_json_equities(data, directory_name):
             if symbols_dictionaries[equity]['short_name'] is None:
                 continue
             else:
-                equities_list[f"{equity} ({symbols_dictionaries[equity]['short_name']})"] = equity
+                equities_list[symbols_dictionaries[equity]['short_name']] = equity
 
     with open(directory_name + '/' + directory_name + " List.json", 'w') as handle:
         json.dump(equities_list, handle, indent=4)

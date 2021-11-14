@@ -66,7 +66,7 @@ def make_directories_and_fill_json_currencies(data, directory_name):
             if symbols_dictionaries[currency]['short_name'] is None:
                 continue
             else:
-                currencies_list[f"{currency} ({symbols_dictionaries[currency]['short_name']})"] = currency
+                currencies_list[symbols_dictionaries[currency]['short_name']] = currency
 
     with open(directory_name + '/_' + directory_name + " List.json", 'w') as handle:
         json.dump(currencies_list, handle, indent=4)

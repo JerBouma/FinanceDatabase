@@ -70,7 +70,7 @@ def make_directories_and_fill_json_moneymarkets(data, directory_name):
             if symbols_dictionaries[moneymarket]['short_name'] is None:
                 continue
             else:
-                moneymarkets_list[f"{moneymarket} ({symbols_dictionaries[moneymarket]['short_name']})"] = moneymarket
+                moneymarkets_list[symbols_dictionaries[moneymarket]['short_name']] = moneymarket
 
     with open(directory_name + '/_' + directory_name + " List.json", 'w') as handle:
         json.dump(moneymarkets_list, handle, indent=4)
