@@ -1,6 +1,7 @@
 import os
 import json
 from tqdm import tqdm
+import financedatabase as fd
 import cryptocurrencies_creator, currencies_creator, equities_creator, etfs_creator, funds_creator, futures_creator, indices_creator, moneymarkets_creator, options_creator, utilities
 
 DATA_FOLDER = r"C:\Users\jerbo\Python Offline\FinanceDatabase"
@@ -25,25 +26,22 @@ for folder in naming:
         print(f"{folder} is skipped due to being time-dependent")
         continue
     items = {}
-    print("Creating a list with symbols..")
-    for item in tqdm(os.listdir(f"{DATA_FOLDER}/Data/{naming[folder]}")):
+    for item in tqdm(os.listdir(f"{DATA_FOLDER}/Data/{naming[folder]}"), desc="Creating a list with symbols"):
         items[item.strip('.pickle')] = item
     data_set = {}
-    print("Loading all pickles..")
-    for data in tqdm(items):
+    for data in tqdm(items, desc="Loading all pickles"):
         data_set[data] = utilities.read_pickle(f"{DATA_FOLDER}/Data/{naming[folder]}/{items[data]}")
 
-    eval(folder.lower() + '_creator' + ".make_directories_and_fill_json_" + folder.lower())(data_set, folder)
+    eval(f"{folder.lower()}_creator.make_directories_and_fill_json_{folder.lower()}")(data_set, folder)
 
     try:
         os.mkdir("Categories")
     except FileExistsError:
-        None
+        pass
 
     if folder == 'Cryptocurrencies':
-        print("Creating cryptocurrencies options..")
         cryptocurrencies = []
-        for symbol in tqdm(data_set):
+        for symbol in tqdm(data_set, desc="Creating cryptocurrencies options"):
             try:
                 if data_set[symbol]['summaryDetail']['fromCurrency'] not in cryptocurrencies:
                     cryptocurrencies.append(data_set[symbol]['summaryDetail']['fromCurrency'])
@@ -54,9 +52,8 @@ for folder in naming:
         with open("Categories/cryptocurrencies_options.json", 'w') as handle:
             json.dump(sorted(cryptocurrencies), handle, indent=4)
     elif folder == 'Currencies':
-        print("Creating currencies options..")
         currencies = []
-        for symbol in tqdm(data_set):
+        for symbol in tqdm(data_set, desc="Creating currencies options"):
             try:
                 if data_set[symbol]['price']['currency'] not in currencies:
                     currencies.append(data_set[symbol]['price']['currency'])
@@ -67,12 +64,11 @@ for folder in naming:
         with open("Categories/currencies_options.json", 'w') as handle:
             json.dump(sorted(currencies), handle, indent=4)
     elif folder == 'Equities':
-        print("Creating equities countries, sectors and industries options..")
         countries = []
         sectors = []
         industries = []
 
-        for symbol in tqdm(data_set):
+        for symbol in tqdm(data_set, desc="Creating equities countries, sectors and industries options"):
             try:
                 country = data_set[symbol]['summaryProfile']['country']
                 sector = data_set[symbol]['summaryProfile']['sector']
@@ -92,10 +88,68 @@ for folder in naming:
             json.dump(sorted(sectors), handle, indent=4)
         with open("Categories/equities_industries.json", 'w') as handle:
             json.dump(sorted(industries), handle, indent=4)
+
+        industries_countries = {}
+        for sector in tqdm(sectors, desc="Creating specific options for each sector"):
+            if not sector or len(sector) == 0:
+                continue
+
+            sector_data = fd.select_equities(
+                sector=sector, exclude_exchanges=False,
+                base_url=r"Equities//",
+                use_local_location=True)
+
+            sector_industries = []
+            for company in sector_data:
+                industry = sector_data[company]['industry']
+                country = sector_data[company]['country']
+
+                if industry not in sector_industries:
+                    sector_industries.append(industry)
+                if industry not in industries_countries:
+                    industries_countries[industry] = []
+                if country not in industries_countries[industry]:
+                    industries_countries[industry].append(country)
+
+            with open(f"Equities/Sectors/{sector}/_{sector} Industries.json", 'w') as handle:
+                json.dump(sorted(sector_industries), handle, indent=4)
+
+        with open(f"Equities/Industries/_Industries Countries.json", 'w') as handle:
+            json.dump(dict(sorted(industries_countries.items())), handle, indent=4)
+
+        for country in tqdm(countries, desc="Creating specific options for each country"):
+            country_data = fd.select_equities(
+                country=country, exclude_exchanges=False,
+                base_url=r"Equities//",
+                use_local_location=True)
+
+            country_sectors = []
+            country_industries = []
+            country_sector_industries = {}
+            for company in country_data:
+                sector = country_data[company]['sector']
+                industry = country_data[company]['industry']
+
+                if sector not in country_sectors:
+                    country_sectors.append(sector)
+                    country_sector_industries[sector] = []
+                if industry not in country_industries:
+                    country_industries.append(industry)
+                if industry not in country_sector_industries[sector]:
+                    country_sector_industries[sector].append(industry)
+
+            for sector in country_sectors:
+                with open(f"Equities/Countries/{country}/{sector}/_{sector} Industries.json", 'w') as handle:
+                    json.dump(sorted(country_sector_industries[sector]), handle, indent=4)
+
+            with open(f"Equities/Countries/{country}/{country} Sectors.json", 'w') as handle:
+                json.dump(sorted(country_sectors), handle, indent=4)
+            with open(f"Equities/Countries/{country}/{country} Industries.json", 'w') as handle:
+                json.dump(sorted(country_industries), handle, indent=4)
+
     elif folder == 'ETFs':
-        print("Creating etfs options..")
         etfs = []
-        for symbol in tqdm(data_set):
+        for symbol in tqdm(data_set, desc="Creating etfs options"):
             try:
                 if data_set[symbol]['fundProfile']['categoryName'] not in etfs:
                     etfs.append(data_set[symbol]['fundProfile']['categoryName'])
@@ -106,9 +160,8 @@ for folder in naming:
         with open("Categories/etfs_options.json", 'w') as handle:
             json.dump(sorted(etfs), handle, indent=4)
     elif folder == 'Funds':
-        print("Creating funds options..")
         funds = []
-        for symbol in tqdm(data_set):
+        for symbol in tqdm(data_set, desc="Creating funds options"):
             try:
                 if data_set[symbol]['fundProfile']['categoryName'] not in funds:
                     funds.append(data_set[symbol]['fundProfile']['categoryName'])
