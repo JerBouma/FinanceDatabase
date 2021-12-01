@@ -99,27 +99,6 @@ def show_options(product, equities_selection=None, country=None, sector=None):
     return json_data
 
 
-def show_options_equities(country=None, sector=None):
-    """
-    Description
-    ----
-    Returns all options that exist in the database based on further criteria
-
-    Input
-    ----
-    product (string)
-        Gives all data for a specific product which can be
-        cryptocurrencies, currencies, equities, etfs or funds.
-    equities_selection (string)
-        Gives a sub selection fo the possibilities for equities which can be
-        countries, sectors or industries.
-    Output
-    ----
-    json_data (dictionary)
-        Returns a dictionary with a selection based on the input.
-    """
-
-
 def search_products(database, query, search='summary', case_sensitive=False, new_database=None):
     """
     Description
