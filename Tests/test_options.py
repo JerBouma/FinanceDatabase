@@ -22,13 +22,19 @@ def test_different_options():
     assert type(equities) is list and len(equities) > 0, 'equities industries is incorrect'
 
     equities = show_options('equities', sector='Technology')
-    assert type(equities) is list and len(equities) > 0, 'equities industries is incorrect'
+    assert type(equities) is dict and len(equities) > 0, 'equities industries is incorrect'
 
     equities = show_options('equities', country='United States')
     assert type(equities) is dict and len(equities) > 0, 'equities industries is incorrect'
 
     equities = show_options('equities', country='United States', sector='Technology')
     assert type(equities) is list and len(equities) > 0, 'equities industries is incorrect'
+
+    equities = show_options('equities', industry=True)
+    assert type(equities) is dict and len(equities) > 0, 'equities industries is incorrect'
+
+    equities = show_options('equities', country='United States', sector='Technology', industry=True)
+    assert type(equities) is dict and len(equities) > 0, 'equities industries is incorrect'
 
     equities = show_options('etfs', country='United States', sector='Technology')
     assert type(equities) is list and len(equities) > 0, 'equities industries is incorrect'
