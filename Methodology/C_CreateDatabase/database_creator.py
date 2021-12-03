@@ -99,23 +99,31 @@ for folder in naming:
                 base_url=r"Equities//",
                 use_local_location=True)
 
-            sector_industries = []
+            sector_industries_countries = {'Countries': [], 'Industries': []}
             for company in sector_data:
                 industry = sector_data[company]['industry']
                 country = sector_data[company]['country']
 
-                if industry not in sector_industries:
-                    sector_industries.append(industry)
+                if industry not in sector_industries_countries['Industries']:
+                    sector_industries_countries['Industries'].append(industry)
+                if country not in sector_industries_countries['Countries']:
+                    sector_industries_countries['Countries'].append(country)
                 if industry not in industries_countries:
-                    industries_countries[industry] = []
-                if country not in industries_countries[industry]:
-                    industries_countries[industry].append(country)
+                    industries_countries[industry] = {'Sector': sector, 'Countries': []}
+                if country not in industries_countries[industry]['Countries']:
+                    industries_countries[industry]['Countries'].append(country)
 
-            with open(f"Equities/Sectors/{sector}/_{sector} Industries.json", 'w') as handle:
-                json.dump(sorted(sector_industries), handle, indent=4)
+            for industry in industries_countries:
+                industries_countries[industry]['Countries'] = sorted(industries_countries[industry]['Countries'])
+
+            sector_industries_countries['Industries'] = sorted(sector_industries_countries['Industries'])
+            sector_industries_countries['Countries'] = sorted(sector_industries_countries['Countries'])
+
+            with open(f"Equities/Sectors/{sector}/_{sector} Countries and Industries.json", 'w') as handle:
+                json.dump(sector_industries_countries, handle, indent=4)
 
         with open(f"Equities/Industries/_Industries Countries.json", 'w') as handle:
-            json.dump(dict(sorted(industries_countries.items())), handle, indent=4)
+            json.dump(industries_countries, handle, indent=4)
 
         for country in tqdm(countries, desc="Creating specific options for each country"):
             country_data = fd.select_equities(
