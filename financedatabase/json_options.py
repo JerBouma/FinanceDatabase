@@ -2,7 +2,7 @@ import requests
 import json
 
 
-def show_options(product, equities_selection=None, country=None, sector=None):
+def show_options(product, equities_selection=None, country=None, sector=None, industry=None):
     """
     Description
     ----
@@ -15,8 +15,17 @@ def show_options(product, equities_selection=None, country=None, sector=None):
         Gives all data for a specific product which can be
         cryptocurrencies, currencies, equities, etfs or funds.
     equities_selection (string)
-        Gives a sub selection fo the possibilities for equities which can be
-        countries, sectors or industries.
+        Gives a sub selection fo the possibilities for equities which can be countries, sectors or industries.
+    country (string)
+        By entering a country here, you are able to obtain all Sectors and Industries within this country. You can
+        add in Sector to specify on the Industry level.
+    sector (string)
+        By entering a sector here, you are able to obtain all industries within this sector. You can
+        add in country to specify within a country.
+    industry (boolean)
+        By setting industry to True, you are able to obtain the sector the industry resides in as well as all
+        countries who have companies in this industry.
+
     Output
     ----
     json_data (dictionary)
@@ -25,14 +34,24 @@ def show_options(product, equities_selection=None, country=None, sector=None):
     URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
            "Database/Categories/")
 
-    if country or sector is not None:
+    if country or sector or industry is not None:
         if product.lower() != 'equities':
-            print("Country and Sector variables only work for equities thus changing hte product to equities.")
+            print("Country, sector and industry variables only work for equities thus changing the "
+                  "product to equities.")
             product = 'equities'
 
         equities_URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
                         f"Database/{product.capitalize()}")
-        if country and sector:
+        if industry:
+            if country or sector is not None:
+                print("Industry parameter is set to True thus ignoring country and sector parameters.")
+            try:
+                json_file = f"{equities_URL}/Industries/_Industries Countries.json"
+                request = requests.get(json_file)
+                json_data = json.loads(request.text)
+            except json.decoder.JSONDecodeError:
+                raise ValueError(f"Not able to find any data for industries.")
+        elif country and sector:
             try:
                 country = country.replace('%', '%25').replace(' ', '%20')
                 sector = sector.replace('%', '%25').replace(' ', '%20')
@@ -61,7 +80,7 @@ def show_options(product, equities_selection=None, country=None, sector=None):
         elif sector:
             try:
                 sector = sector.replace('%', '%25').replace(' ', '%20')
-                json_file = f"{equities_URL}/Sectors/{sector}/_{sector} Industries.json"
+                json_file = f"{equities_URL}/Sectors/{sector}/_{sector} Countries and Industries.json"
                 request = requests.get(json_file)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
