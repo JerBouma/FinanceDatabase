@@ -73,10 +73,12 @@ You can install the package with the following steps:
 
 ### Functions
 The package has the following functions:
-- `show_options(product, equities_selection=None, country=None, sector=None)` - gives all available options from 
+- `show_options(product, equities_selection=None, country=None, sector=None, industry=None)` - gives all available options from 
   the functions below per product (i.e. Equities, Funds) which then can be used to collect data. You can select a 
   sub selection of equities by entering 'countries', 'sectors' or 'industries' for equities_selection as well as select 
-  the specific sectors and industries per country and industries per sector via the 'country' and 'sector' parameters.
+  the specific sectors and industries per country and industries per sector via the 'country' and 'sector' parameters. 
+  The industry variable is a boolean that returns all industries, to what sector each corresponds and all countries 
+  that have companies in this industry.
 - `select_cryptocurrencies(cryptocurrency=None)` - with no input gives all cryptocurrencies, with input gives 
 the cryptocurrency of choice.
 - `select_currencies(currency=None)` - with no input gives all currencies, with input gives 
