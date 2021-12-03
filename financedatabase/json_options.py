@@ -7,7 +7,9 @@ def show_options(product, equities_selection=None, country=None, sector=None, in
     Description
     ----
     Returns all options that exist in the database that you can use to filter the database. In case you
-    use country and/or secto
+    use country and/or sector, you obtain different lists based on your input. The industry variable is a boolean
+    that returns all industries, to what sector each corresponds and all countries  that have companies
+    in this industry.
 
     Input
     ----
