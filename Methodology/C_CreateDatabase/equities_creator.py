@@ -4,7 +4,7 @@ from tqdm import tqdm
 from itertools import islice
 
 
-def fill_data_points_equities(data_symbol, options=None):
+def fill_data_points_equities(data_symbol, exchange_rates, options=None):
     if options is None:
         options = {}
     try:
@@ -60,11 +60,17 @@ def fill_data_points_equities(data_symbol, options=None):
     except (TypeError, KeyError):
         options['website'] = None
     try:
-        if data_symbol['price']['marketCap'] <= 2e9:
+        if options['currency'] != 'USD':
+            exchange_rate = exchange_rates.loc[f"{options['currency']}USD=X"]
+        else:
+            exchange_rate = 1
+
+        if data_symbol['price']['marketCap'] * exchange_rate <= 2e9:
             options['market_cap'] = 'Small Cap'
-        elif (data_symbol['price']['marketCap'] > 2e9) and (data_symbol['price']['marketCap'] < 10e9):
+        elif (data_symbol['price']['marketCap'] * exchange_rate > 2e9) \
+                and (data_symbol['price']['marketCap'] * exchange_rate < 10e9):
             options['market_cap'] = 'Mid Cap'
-        elif data_symbol['price']['marketCap'] >= 10e9:
+        elif data_symbol['price']['marketCap'] * exchange_rate >= 10e9:
             options['market_cap'] = 'Large Cap'
     except (TypeError, KeyError):
         options['market_cap'] = None
@@ -72,7 +78,7 @@ def fill_data_points_equities(data_symbol, options=None):
     return options
 
 
-def make_directories_and_fill_json_equities(data, directory_name):
+def make_directories_and_fill_json_equities(data, directory_name, exchange_rates):
     try:
         os.mkdir(directory_name)
         os.mkdir(directory_name + '/Sectors')
@@ -93,7 +99,7 @@ def make_directories_and_fill_json_equities(data, directory_name):
 
     print("Creating folder structure")
     for symbol in tqdm(data):
-        options = fill_data_points_equities(data[symbol])
+        options = fill_data_points_equities(data[symbol], exchange_rates)
         symbols_dictionaries[symbol] = options
 
         try:

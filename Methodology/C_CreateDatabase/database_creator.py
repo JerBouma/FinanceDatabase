@@ -2,6 +2,7 @@ import os
 import json
 from tqdm import tqdm
 import financedatabase as fd
+import yfinance as yf
 import cryptocurrencies_creator, currencies_creator, equities_creator, etfs_creator, funds_creator, futures_creator, indices_creator, moneymarkets_creator, options_creator, utilities
 
 DATA_FOLDER = r"C:\Users\jerbo\Python Offline\FinanceDatabase"
@@ -18,6 +19,13 @@ naming = {
     'Options': 'Option'}
 
 for folder in naming:
+    if folder == 'Equities':
+        print("Determine exchange rates")
+        usd_symbols = []
+        for currency in currencies:
+           usd_symbols.append(f"{currency}USD=X")
+        exchange_rates = yf.download(usd_symbols).iloc[-1]['Adj Close']
+
     print("--- " + folder + " ---")
     if folder in os.listdir():
         print(f"{folder} is skipped as the folder already exists")
@@ -32,7 +40,11 @@ for folder in naming:
     for data in tqdm(items, desc="Loading all pickles"):
         data_set[data] = utilities.read_pickle(f"{DATA_FOLDER}/Data/{naming[folder]}/{items[data]}")
 
-    eval(f"{folder.lower()}_creator.make_directories_and_fill_json_{folder.lower()}")(data_set, folder)
+    if folder in ['Equities', 'ETFs', 'Funds']:
+        eval(f"{folder.lower()}_creator.make_directories_and_fill_json_{folder.lower()}")(data_set, folder,
+                                                                                          exchange_rates)
+    else:
+        eval(f"{folder.lower()}_creator.make_directories_and_fill_json_{folder.lower()}")(data_set, folder)
 
     try:
         os.mkdir("Categories")

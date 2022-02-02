@@ -1,9 +1,10 @@
 import json
 import os
 from tqdm import tqdm
+import yfinance as yf
 
 
-def fill_data_points_etfs(data_symbol, options=None):
+def fill_data_points_etfs(data_symbol, exchange_rates, options=None):
     if options is None:
         options = {}
     try:
@@ -39,14 +40,19 @@ def fill_data_points_etfs(data_symbol, options=None):
     except (TypeError, KeyError):
         options['market'] = None
     try:
-        options['total_assets'] = data_symbol['summaryDetail']['totalAssets']
+        if options['currency'] != 'USD':
+            exchange_rate = exchange_rates.loc[f"{options['currency']}USD=X"]
+        else:
+            exchange_rate = 1
+
+        options['total_assets'] = data_symbol['summaryDetail']['totalAssets'] * exchange_rate
     except (TypeError, KeyError):
         options['total_assets'] = None
 
     return options
 
 
-def make_directories_and_fill_json_etfs(data, directory_name):
+def make_directories_and_fill_json_etfs(data, directory_name, exchange_rates):
     try:
         os.mkdir(directory_name)
         category_dictionaries = {}
@@ -58,7 +64,7 @@ def make_directories_and_fill_json_etfs(data, directory_name):
 
     print("Creating folder structure")
     for symbol in tqdm(data):
-        options = fill_data_points_etfs(data[symbol])
+        options = fill_data_points_etfs(data[symbol], exchange_rates)
         symbols_dictionaries[symbol] = options
 
         try:
