@@ -65,13 +65,19 @@ def fill_data_points_equities(data_symbol, exchange_rates, options=None):
         else:
             exchange_rate = 1
 
-        if data_symbol['price']['marketCap'] * exchange_rate <= 2e9:
+        # See: https://www.indeed.com/career-advice/career-development/what-is-market-capitalization
+        if 5e7 >= data_symbol['price']['marketCap'] * exchange_rate:
+            options['market_cap'] = 'Nano Cap'
+        if 5e7 < data_symbol['price']['marketCap'] * exchange_rate <= 3e8:
+            options['market_cap'] = 'Micro Cap'
+        elif 3e8 < data_symbol['price']['marketCap'] * exchange_rate <= 2e9:
             options['market_cap'] = 'Small Cap'
-        elif (data_symbol['price']['marketCap'] * exchange_rate > 2e9) \
-                and (data_symbol['price']['marketCap'] * exchange_rate < 10e9):
+        elif 2e9 < data_symbol['price']['marketCap'] * exchange_rate <= 10e9:
             options['market_cap'] = 'Mid Cap'
-        elif data_symbol['price']['marketCap'] * exchange_rate >= 10e9:
+        elif 1e10 < data_symbol['price']['marketCap'] * exchange_rate <= 2e11:
             options['market_cap'] = 'Large Cap'
+        elif 2e11 < data_symbol['price']['marketCap'] * exchange_rate:
+            options['market_cap'] = 'Mega Cap'
     except (TypeError, KeyError):
         options['market_cap'] = None
 
