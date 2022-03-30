@@ -19,7 +19,7 @@ ticker_list = pickle.load(open(my_file, "rb")).symbols
 def initialize():
     # Create a data folder in case it does not exist yet
     if 'Data' not in os.listdir():
-        os.mkdir('Data')
+        os.mkdir('Documents/Finance Database Dataset/Data')
     else:
         # Determine whether pickles are corrupted. If so remove them so they are added again
         # in the next section
@@ -27,18 +27,18 @@ def initialize():
             print("Checking for corrupted pickles and removing empty pickles..")
         else:
             print("Checking for corrupted pickles..")
-        options = os.listdir('Data')
+        options = os.listdir('Documents/Finance Database Dataset/Data')
 
         if "Blacklist.pickle" in options:
             options.remove("Blacklist.pickle")
-        if 'Blacklist.pickle' not in os.listdir('Data'):
+        if 'Blacklist.pickle' not in os.listdir('Documents/Finance Database Dataset/Data'):
             Blacklist = {}
             for option in options:
                 Blacklist[option] = {}
-            with open(f"Data/Blacklist.pickle", 'wb') as handle:
+            with open(f"Documents/Finance Database Dataset/Data/Blacklist.pickle", 'wb') as handle:
                 pickle.dump(Blacklist, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-        Blacklist = pickle.load(open("Data/Blacklist.pickle", "rb"))
+        Blacklist = pickle.load(open("Documents/Finance Database Dataset/Data/Blacklist.pickle", "rb"))
     
         for option in tqdm(options):
             if option in SKIP_LIST:
@@ -63,7 +63,7 @@ def initialize():
                 except Exception as error:
                     print(f"{Fore.RED} Could not read (and thus removing) {ticker} due to: {error}")
                     os.remove(f"Data/{option}/{ticker}.pickle")
-        with open(f"Data/Blacklist.pickle", 'wb') as handle:
+        with open(f"Documents/Finance Database Dataset/Data/Blacklist.pickle", 'wb') as handle:
             pickle.dump(Blacklist, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 
@@ -75,7 +75,7 @@ def collect_data(ticker):
         symbol_type = ticker_list[ticker].symbolTypeDisplay
         ticker = ticker.replace('*', '').replace('\\', '')
 
-        if symbol_type not in os.listdir('Data'):
+        if symbol_type not in os.listdir('Documents/Finance Database Dataset/Data'):
             os.mkdir(f'Data/{symbol_type}')
         if symbol_type in SKIP_LIST:
             with open(f"Data/{symbol_type}/{ticker}.pickle", 'wb') as handle:
@@ -150,11 +150,11 @@ if __name__ == "__main__":
 
     print(f"{Fore.YELLOW} Loading tickers....")
     ticker_symbols = list(ticker_list.keys())
-    ticker_symbols_issue_8 = open("GitHub Issues/Issues - 8.txt", "r").read().split("\n")
+    ticker_symbols_issue_8 = open("Documents/Finance Database Dataset/Issues/Issues - 8.txt", "r").read().split("\n")
 
     # Determine which pickles are already created so they are not included in the total list
     already_collected = []
-    options = os.listdir('Data')
+    options = os.listdir('Documents/Finance Database Dataset/Data')
     if "Blacklist.pickle" in options:
         options.remove("Blacklist.pickle")
 
