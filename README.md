@@ -91,7 +91,7 @@ gives all equities of a country, sector, industry or a combination of the three.
 specific category.
 - `select_indices(market=None)` - with no input gives all indices, with input gives all indices of a 
 specific market which usually refers to indices in a specific country (like de_market gives DAX).
-- `select_moneymarket(market=None)` - with no input gives all moneymarkets, with input gives all moneymarkets of a 
+- `select_moneymarkets(market=None)` - with no input gives all moneymarkets, with input gives all moneymarkets of a 
 specific market which usually refers to moneymarkets in a specific country.
 - `search_products(database, query, search='summary', case_sensitive=False, new_database=None)` - with input 
   from the above functions, this function searches for specific values (i.e. the query 'sustainable') in 
