@@ -1,42 +1,6 @@
 [
   {
-    "VTJ": {
-      "short_name": "\u0110\u1ea7u t\u01b0 Vinataba",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n Th\u01b0\u01a1ng m\u1ea1i v\u00e0 \u0110\u1ea7u t\u01b0 VI NA TA BA",
-      "summary": null,
-      "currency": "VND",
-      "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
-      "industry": "Thu\u1ed1c L\u00e1",
-      "exchange": "HNX",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Micro Cap"
-    }
-  },
-  {
-    "HLG": {
-      "short_name": "Ho\u00e0ng Long Group",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n T\u1eadp \u0111o\u00e0n Ho\u00e0ng Long",
-      "summary": null,
-      "currency": "VND",
-      "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
-      "industry": "Thu\u1ed1c L\u00e1",
-      "exchange": "UPCOM",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Small Cap"
-    }
-  },
-  {
-    "SHX": {
+    "UPCOM.SHX": {
       "short_name": "S\u00e0i G\u00f2n H\u1ecfa xa",
       "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n S\u00e0i G\u00f2n H\u1ecfa xa",
       "summary": null,
@@ -54,7 +18,25 @@
     }
   },
   {
-    "NST": {
+    "HNX.VTJ": {
+      "short_name": "\u0110\u1ea7u t\u01b0 Vinataba",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n Th\u01b0\u01a1ng m\u1ea1i v\u00e0 \u0110\u1ea7u t\u01b0 VI NA TA BA",
+      "summary": null,
+      "currency": "VND",
+      "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
+      "industry": "Thu\u1ed1c L\u00e1",
+      "exchange": "HNX",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Micro Cap"
+    }
+  },
+  {
+    "HNX.NST": {
       "short_name": "CTCP Ng\u00e2n S\u01a1n",
       "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n Ng\u00e2n S\u01a1n ",
       "summary": null,
@@ -72,7 +54,7 @@
     }
   },
   {
-    "CLC": {
+    "HOSE.CLC": {
       "short_name": "CTCP C\u00e1t L\u1ee3i",
       "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n C\u00e1t L\u1ee3i",
       "summary": null,
@@ -80,6 +62,24 @@
       "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
       "industry": "Thu\u1ed1c L\u00e1",
       "exchange": "HOSE",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Small Cap"
+    }
+  },
+  {
+    "UPCOM.HLG": {
+      "short_name": "Ho\u00e0ng Long Group",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n T\u1eadp \u0111o\u00e0n Ho\u00e0ng Long",
+      "summary": null,
+      "currency": "VND",
+      "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
+      "industry": "Thu\u1ed1c L\u00e1",
+      "exchange": "UPCOM",
       "market": "vn_market",
       "country": "vietnam",
       "state": null,

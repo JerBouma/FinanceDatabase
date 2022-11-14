@@ -1,24 +1,6 @@
 [
   {
-    "HHS": {
-      "short_name": "\u0110T - DV Ho\u00e0ng Huy",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n \u0110\u1ea7u t\u01b0 - D\u1ecbch v\u1ee5 Ho\u00e0ng Huy ",
-      "summary": null,
-      "currency": "VND",
-      "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
-      "industry": "\u00d4t\u00f4",
-      "exchange": "HOSE",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Small Cap"
-    }
-  },
-  {
-    "VMA": {
+    "UPCOM.VMA": {
       "short_name": "CN \u00d4 t\u00f4 Vinacomin",
       "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n C\u00f4ng nghi\u1ec7p \u00d4 t\u00f4 - Vinacomin",
       "summary": null,
@@ -36,9 +18,9 @@
     }
   },
   {
-    "TMT": {
-      "short_name": "CTCP \u00d4 t\u00f4 TMT",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n \u00d4 t\u00f4 TMT ",
+    "HOSE.HHS": {
+      "short_name": "\u0110T - DV Ho\u00e0ng Huy",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n \u0110\u1ea7u t\u01b0 - D\u1ecbch v\u1ee5 Ho\u00e0ng Huy ",
       "summary": null,
       "currency": "VND",
       "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
@@ -54,7 +36,7 @@
     }
   },
   {
-    "VEA": {
+    "UPCOM.VEA": {
       "short_name": "M\u00e1y N.nghi\u1ec7p VN",
       "long_name": "T\u1ed5ng c\u00f4ng ty M\u00e1y \u0110\u1ed9ng l\u1ef1c v\u00e0 M\u00e1y N\u00f4ng nghi\u1ec7p Vi\u1ec7t Nam \u2013 CTCP",
       "summary": null,
@@ -72,7 +54,7 @@
     }
   },
   {
-    "VVS": {
+    "UPCOM.VVS": {
       "short_name": "\u0110\u1ea7u t\u01b0 ph\u00e1t tri\u1ec3n m\u00e1y Vi\u1ec7t Nam",
       "long_name": "C\u00d4NG TY C\u1ed4 PH\u1ea6N \u0110\u1ea6U T\u01af PH\u00c1T TRI\u1ec2N M\u00c1Y VI\u1ec6T NAM",
       "summary": null,
@@ -80,6 +62,24 @@
       "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
       "industry": "\u00d4t\u00f4",
       "exchange": "UPCOM",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Small Cap"
+    }
+  },
+  {
+    "HOSE.TMT": {
+      "short_name": "CTCP \u00d4 t\u00f4 TMT",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n \u00d4 t\u00f4 TMT ",
+      "summary": null,
+      "currency": "VND",
+      "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
+      "industry": "\u00d4t\u00f4",
+      "exchange": "HOSE",
       "market": "vn_market",
       "country": "vietnam",
       "state": null,

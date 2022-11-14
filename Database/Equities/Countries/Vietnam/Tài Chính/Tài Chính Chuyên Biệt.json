@@ -1,8 +1,8 @@
 [
   {
-    "API": {
-      "short_name": "\u0110T Ch\u00e2u \u00c1 - TBD",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n \u0110\u1ea7u t\u01b0 Ch\u00e2u \u00c1 - Th\u00e1i B\u00ecnh D\u01b0\u01a1ng",
+    "HNX.IPA": {
+      "short_name": "T\u1eadp \u0111o\u00e0n I.P.A",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n T\u1eadp \u0111o\u00e0n \u0111\u1ea7u t\u01b0 I.P.A",
       "summary": null,
       "currency": "VND",
       "sector": "T\u00e0i Ch\u00ednh",
@@ -18,7 +18,7 @@
     }
   },
   {
-    "PIV": {
+    "UPCOM.PIV": {
       "short_name": "CTCP PIV",
       "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n PIV",
       "summary": null,
@@ -36,7 +36,7 @@
     }
   },
   {
-    "PV2": {
+    "HNX.PV2": {
       "short_name": "CTCP \u0110\u1ea7u t\u01b0 PV2",
       "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n \u0110\u1ea7u t\u01b0 PV2 ",
       "summary": null,
@@ -54,14 +54,14 @@
     }
   },
   {
-    "IBC": {
-      "short_name": "\u0110T APAX HOLDINGS",
-      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n \u0110\u1ea7u t\u01b0 APAX HOLDINGS",
+    "HNX.API": {
+      "short_name": "\u0110T Ch\u00e2u \u00c1 - TBD",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n \u0110\u1ea7u t\u01b0 Ch\u00e2u \u00c1 - Th\u00e1i B\u00ecnh D\u01b0\u01a1ng",
       "summary": null,
       "currency": "VND",
       "sector": "T\u00e0i Ch\u00ednh",
       "industry": "T\u00e0i Ch\u00ednh Chuy\u00ean Bi\u1ec7t",
-      "exchange": "HOSE",
+      "exchange": "HNX",
       "market": "vn_market",
       "country": "vietnam",
       "state": null,
@@ -72,14 +72,14 @@
     }
   },
   {
-    "IPA": {
-      "short_name": "T\u1eadp \u0111o\u00e0n I.P.A",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n T\u1eadp \u0111o\u00e0n \u0111\u1ea7u t\u01b0 I.P.A",
+    "HOSE.IBC": {
+      "short_name": "\u0110T APAX HOLDINGS",
+      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n \u0110\u1ea7u t\u01b0 APAX HOLDINGS",
       "summary": null,
       "currency": "VND",
       "sector": "T\u00e0i Ch\u00ednh",
       "industry": "T\u00e0i Ch\u00ednh Chuy\u00ean Bi\u1ec7t",
-      "exchange": "HNX",
+      "exchange": "HOSE",
       "market": "vn_market",
       "country": "vietnam",
       "state": null,

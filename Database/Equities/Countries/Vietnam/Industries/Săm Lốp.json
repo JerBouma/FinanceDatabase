@@ -1,8 +1,8 @@
 [
   {
-    "SRC": {
-      "short_name": "Cao su Sao V\u00e0ng",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n Cao su Sao v\u00e0ng",
+    "HOSE.CSM": {
+      "short_name": "Cao su Mi\u1ec1n Nam",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n C\u00f4ng nghi\u1ec7p Cao su Mi\u1ec1n Nam",
       "summary": null,
       "currency": "VND",
       "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
@@ -18,25 +18,7 @@
     }
   },
   {
-    "IRC": {
-      "short_name": "Cao su C\u00f4ng nghi\u1ec7p",
-      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n Cao su C\u00f4ng nghi\u1ec7p",
-      "summary": null,
-      "currency": "VND",
-      "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
-      "industry": "S\u0103m L\u1ed1p",
-      "exchange": "UPCOM",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Small Cap"
-    }
-  },
-  {
-    "DRC": {
+    "HOSE.DRC": {
       "short_name": "Cao Su \u0110\u00e0 N\u1eb5ng",
       "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n Cao Su \u0110\u00e0 N\u1eb5ng",
       "summary": null,
@@ -54,9 +36,27 @@
     }
   },
   {
-    "CSM": {
-      "short_name": "Cao su Mi\u1ec1n Nam",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n C\u00f4ng nghi\u1ec7p Cao su Mi\u1ec1n Nam",
+    "UPCOM.IRC": {
+      "short_name": "Cao su C\u00f4ng nghi\u1ec7p",
+      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n Cao su C\u00f4ng nghi\u1ec7p",
+      "summary": null,
+      "currency": "VND",
+      "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
+      "industry": "S\u0103m L\u1ed1p",
+      "exchange": "UPCOM",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Small Cap"
+    }
+  },
+  {
+    "HOSE.SRC": {
+      "short_name": "Cao su Sao V\u00e0ng",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n Cao su Sao v\u00e0ng",
       "summary": null,
       "currency": "VND",
       "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",

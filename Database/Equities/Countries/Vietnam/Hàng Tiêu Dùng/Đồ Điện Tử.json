@@ -1,26 +1,8 @@
 [
   {
-    "NAG": {
-      "short_name": "Nagakawa Group",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n T\u1eadp \u0111o\u00e0n Nagakawa",
-      "summary": null,
-      "currency": "VND",
-      "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
-      "industry": "\u0110\u1ed3 \u0110i\u1ec7n T\u1eed",
-      "exchange": "HNX",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Small Cap"
-    }
-  },
-  {
-    "FBA": {
-      "short_name": "T\u0110 Qu\u1ed1c t\u1ebf FBA",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n T\u1eadp \u0111o\u00e0n Qu\u1ed1c t\u1ebf FBA",
+    "UPCOM.VEC": {
+      "short_name": "\u0110i\u1ec7n t\u1eed Tin h\u1ecdc VN",
+      "long_name": "T\u1ed5ng C\u00f4ng ty C\u1ed5 ph\u1ea7n \u0110i\u1ec7n t\u1eed v\u00e0 Tin h\u1ecdc Vi\u1ec7t Nam",
       "summary": null,
       "currency": "VND",
       "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
@@ -32,11 +14,11 @@
       "city": null,
       "zipcode": null,
       "website": null,
-      "market_cap": "Nano Cap"
+      "market_cap": "Small Cap"
     }
   },
   {
-    "VBH": {
+    "UPCOM.VBH": {
       "short_name": "\u0110i\u1ec7n t\u1eed B\u00ecnh H\u00f2a",
       "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n \u0110i\u1ec7n t\u1eed B\u00ecnh H\u00f2a",
       "summary": null,
@@ -54,7 +36,7 @@
     }
   },
   {
-    "VTB": {
+    "HOSE.VTB": {
       "short_name": "Viettronics T\u00e2n B\u00ecnh",
       "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n Viettronics T\u00e2n B\u00ecnh",
       "summary": null,
@@ -72,9 +54,27 @@
     }
   },
   {
-    "VEC": {
-      "short_name": "\u0110i\u1ec7n t\u1eed Tin h\u1ecdc VN",
-      "long_name": "T\u1ed5ng C\u00f4ng ty C\u1ed5 ph\u1ea7n \u0110i\u1ec7n t\u1eed v\u00e0 Tin h\u1ecdc Vi\u1ec7t Nam",
+    "HNX.NAG": {
+      "short_name": "Nagakawa Group",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n T\u1eadp \u0111o\u00e0n Nagakawa",
+      "summary": null,
+      "currency": "VND",
+      "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
+      "industry": "\u0110\u1ed3 \u0110i\u1ec7n T\u1eed",
+      "exchange": "HNX",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Small Cap"
+    }
+  },
+  {
+    "UPCOM.FBA": {
+      "short_name": "T\u0110 Qu\u1ed1c t\u1ebf FBA",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n T\u1eadp \u0111o\u00e0n Qu\u1ed1c t\u1ebf FBA",
       "summary": null,
       "currency": "VND",
       "sector": "H\u00e0ng Ti\u00eau D\u00f9ng",
@@ -86,7 +86,7 @@
       "city": null,
       "zipcode": null,
       "website": null,
-      "market_cap": "Small Cap"
+      "market_cap": "Nano Cap"
     }
   }
 ]

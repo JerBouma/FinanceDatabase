@@ -1,6 +1,6 @@
 import requests
 import json
-
+import unidecode
 
 def show_options(product, equities_selection=None, country=None, sector=None, industry=None):
     """
@@ -164,7 +164,10 @@ def search_products(database, query, search='summary', case_sensitive=False, new
             if not case_sensitive:
                 query = query.lower()
                 string = database[symbol][search].lower()
-            if query in string:
+            unaccented_string = unidecode.unidecode(string)
+            norm_query = unidecode.unidecode(query)
+
+            if norm_query in unaccented_string:
                 new_database[symbol] = database[symbol]
         except (TypeError, KeyError, AttributeError):
             continue

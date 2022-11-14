@@ -229,11 +229,12 @@ def crawl_equities(output_dir="output"):
     for k, v in norm_equities.items():
         if v["sector"] not in sectors_n:
             sectors_n[v["sector"]] = []
-        sectors_n[v["sector"]].append({k: v})
+        ex_k = v["exchange"] + "." + k
+        sectors_n[v["sector"]].append({ex_k: v})
 
         if v["industry"] not in industries_n:
             industries_n[v["industry"]] = []
-        industries_n[v["industry"]].append({k: v})
+        industries_n[v["industry"]].append({ex_k: v})
 
     print(f"INFO: Dump sectors")
     with open(os.path.join(output_dir, "Vietnam Sectors.json"), "w") as fobj:
@@ -269,10 +270,6 @@ def crawl_equities(output_dir="output"):
                 json.dump(industries_n[id], fobj, indent=2)
             shutil.copyfile(idf, idf_copy)
             
-
-    # print(f"INFO: Dump equities by sectors")
-    # for k, v in norm_equities.items():
-    #     print(k, v)
     with open(os.path.join(output_dir, "Vietnam.json"), "w") as fobj:
         json.dump(norm_equities, fobj, indent=2)
 

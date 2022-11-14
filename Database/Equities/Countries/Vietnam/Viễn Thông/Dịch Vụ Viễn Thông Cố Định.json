@@ -1,78 +1,6 @@
 [
   {
-    "CTR": {
-      "short_name": "C\u00f4ng tr\u00ecnh Viettel",
-      "long_name": "T\u1ed5ng c\u00f4ng ty c\u1ed5 ph\u1ea7n c\u00f4ng tr\u00ecnh Viettel",
-      "summary": null,
-      "currency": "VND",
-      "sector": "Vi\u1ec5n Th\u00f4ng",
-      "industry": "D\u1ecbch V\u1ee5 Vi\u1ec5n Th\u00f4ng C\u1ed1 \u0110\u1ecbnh",
-      "exchange": "HOSE",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Mid Cap"
-    }
-  },
-  {
-    "VGI": {
-      "short_name": "\u0110.t\u01b0 Q.t\u1ebf Viettel",
-      "long_name": "T\u1ed5ng C\u00f4ng ty c\u1ed5 ph\u1ea7n \u0110\u1ea7u t\u01b0 Qu\u1ed1c t\u1ebf Viettel",
-      "summary": null,
-      "currency": "VND",
-      "sector": "Vi\u1ec5n Th\u00f4ng",
-      "industry": "D\u1ecbch V\u1ee5 Vi\u1ec5n Th\u00f4ng C\u1ed1 \u0110\u1ecbnh",
-      "exchange": "UPCOM",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Large Cap"
-    }
-  },
-  {
-    "TEL": {
-      "short_name": "C.tr\u00ecnh V.th\u00f4ng",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n Ph\u00e1t tri\u1ec3n C\u00f4ng tr\u00ecnh Vi\u1ec5n th\u00f4ng",
-      "summary": null,
-      "currency": "VND",
-      "sector": "Vi\u1ec5n Th\u00f4ng",
-      "industry": "D\u1ecbch V\u1ee5 Vi\u1ec5n Th\u00f4ng C\u1ed1 \u0110\u1ecbnh",
-      "exchange": "UPCOM",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Micro Cap"
-    }
-  },
-  {
-    "PTO": {
-      "short_name": "XD C.tr\u00ecnh B\u01b0u \u0110i\u1ec7n",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n D\u1ecbch v\u1ee5 - X\u00e2y d\u1ef1ng C\u00f4ng tr\u00ecnh B\u01b0u \u0111i\u1ec7n",
-      "summary": null,
-      "currency": "VND",
-      "sector": "Vi\u1ec5n Th\u00f4ng",
-      "industry": "D\u1ecbch V\u1ee5 Vi\u1ec5n Th\u00f4ng C\u1ed1 \u0110\u1ecbnh",
-      "exchange": "UPCOM",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Micro Cap"
-    }
-  },
-  {
-    "VTC": {
+    "HNX.VTC": {
       "short_name": "Vi\u1ec5n th\u00f4ng VTC",
       "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n vi\u1ec5n th\u00f4ng VTC",
       "summary": null,
@@ -90,7 +18,7 @@
     }
   },
   {
-    "FOX": {
+    "UPCOM.FOX": {
       "short_name": "Vi\u1ec5n th\u00f4ng FPT",
       "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n Vi\u1ec5n th\u00f4ng FPT",
       "summary": null,
@@ -105,6 +33,78 @@
       "zipcode": null,
       "website": null,
       "market_cap": "Mid Cap"
+    }
+  },
+  {
+    "HOSE.CTR": {
+      "short_name": "C\u00f4ng tr\u00ecnh Viettel",
+      "long_name": "T\u1ed5ng c\u00f4ng ty c\u1ed5 ph\u1ea7n c\u00f4ng tr\u00ecnh Viettel",
+      "summary": null,
+      "currency": "VND",
+      "sector": "Vi\u1ec5n Th\u00f4ng",
+      "industry": "D\u1ecbch V\u1ee5 Vi\u1ec5n Th\u00f4ng C\u1ed1 \u0110\u1ecbnh",
+      "exchange": "HOSE",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Mid Cap"
+    }
+  },
+  {
+    "UPCOM.TEL": {
+      "short_name": "C.tr\u00ecnh V.th\u00f4ng",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n Ph\u00e1t tri\u1ec3n C\u00f4ng tr\u00ecnh Vi\u1ec5n th\u00f4ng",
+      "summary": null,
+      "currency": "VND",
+      "sector": "Vi\u1ec5n Th\u00f4ng",
+      "industry": "D\u1ecbch V\u1ee5 Vi\u1ec5n Th\u00f4ng C\u1ed1 \u0110\u1ecbnh",
+      "exchange": "UPCOM",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Micro Cap"
+    }
+  },
+  {
+    "UPCOM.PTO": {
+      "short_name": "XD C.tr\u00ecnh B\u01b0u \u0110i\u1ec7n",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n D\u1ecbch v\u1ee5 - X\u00e2y d\u1ef1ng C\u00f4ng tr\u00ecnh B\u01b0u \u0111i\u1ec7n",
+      "summary": null,
+      "currency": "VND",
+      "sector": "Vi\u1ec5n Th\u00f4ng",
+      "industry": "D\u1ecbch V\u1ee5 Vi\u1ec5n Th\u00f4ng C\u1ed1 \u0110\u1ecbnh",
+      "exchange": "UPCOM",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Micro Cap"
+    }
+  },
+  {
+    "UPCOM.VGI": {
+      "short_name": "\u0110.t\u01b0 Q.t\u1ebf Viettel",
+      "long_name": "T\u1ed5ng C\u00f4ng ty c\u1ed5 ph\u1ea7n \u0110\u1ea7u t\u01b0 Qu\u1ed1c t\u1ebf Viettel",
+      "summary": null,
+      "currency": "VND",
+      "sector": "Vi\u1ec5n Th\u00f4ng",
+      "industry": "D\u1ecbch V\u1ee5 Vi\u1ec5n Th\u00f4ng C\u1ed1 \u0110\u1ecbnh",
+      "exchange": "UPCOM",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Large Cap"
     }
   }
 ]

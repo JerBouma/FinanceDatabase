@@ -1,42 +1,6 @@
 [
   {
-    "CLX": {
-      "short_name": "XNK & \u0110.t\u01b0 Ch\u1ee3 L\u1edbn",
-      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n Xu\u1ea5t nh\u1eadp kh\u1ea9u v\u00e0 \u0111\u1ea7u t\u01b0 Ch\u1ee3 L\u1edbn (Cholimex)",
-      "summary": null,
-      "currency": "VND",
-      "sector": "D\u1ecbch V\u1ee5 Ti\u00eau D\u00f9ng",
-      "industry": "B\u00e1n L\u1ebb Th\u1ef1c Ph\u1ea9m",
-      "exchange": "UPCOM",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Small Cap"
-    }
-  },
-  {
-    "HAF": {
-      "short_name": "Th\u1ef1c ph\u1ea9m H\u00e0 N\u1ed9i",
-      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n Th\u1ef1c ph\u1ea9m H\u00e0 N\u1ed9i",
-      "summary": null,
-      "currency": "VND",
-      "sector": "D\u1ecbch V\u1ee5 Ti\u00eau D\u00f9ng",
-      "industry": "B\u00e1n L\u1ebb Th\u1ef1c Ph\u1ea9m",
-      "exchange": "UPCOM",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Small Cap"
-    }
-  },
-  {
-    "FHN": {
+    "UPCOM.FHN": {
       "short_name": "XNK Th.ph\u1ea9m HN",
       "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n Xu\u1ea5t nh\u1eadp kh\u1ea9u L\u01b0\u01a1ng th\u1ef1c - Th\u1ef1c ph\u1ea9m H\u00e0 N\u1ed9i",
       "summary": null,
@@ -54,7 +18,43 @@
     }
   },
   {
-    "BNA": {
+    "UPCOM.VLF": {
+      "short_name": "L.th\u1ef1c V\u0129nh Long",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n L\u01b0\u01a1ng th\u1ef1c th\u1ef1c ph\u1ea9m V\u0129nh Long",
+      "summary": null,
+      "currency": "VND",
+      "sector": "D\u1ecbch V\u1ee5 Ti\u00eau D\u00f9ng",
+      "industry": "B\u00e1n L\u1ebb Th\u1ef1c Ph\u1ea9m",
+      "exchange": "UPCOM",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Nano Cap"
+    }
+  },
+  {
+    "UPCOM.CLX": {
+      "short_name": "XNK & \u0110.t\u01b0 Ch\u1ee3 L\u1edbn",
+      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n Xu\u1ea5t nh\u1eadp kh\u1ea9u v\u00e0 \u0111\u1ea7u t\u01b0 Ch\u1ee3 L\u1edbn (Cholimex)",
+      "summary": null,
+      "currency": "VND",
+      "sector": "D\u1ecbch V\u1ee5 Ti\u00eau D\u00f9ng",
+      "industry": "B\u00e1n L\u1ebb Th\u1ef1c Ph\u1ea9m",
+      "exchange": "UPCOM",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Small Cap"
+    }
+  },
+  {
+    "HNX.BNA": {
       "short_name": "\u0110\u1ea7u t\u01b0 SX B\u1ea3o Ng\u1ecdc",
       "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n \u0110\u1ea7u t\u01b0 S\u1ea3n xu\u1ea5t B\u1ea3o Ng\u1ecdc",
       "summary": null,
@@ -72,9 +72,9 @@
     }
   },
   {
-    "VLF": {
-      "short_name": "L.th\u1ef1c V\u0129nh Long",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n L\u01b0\u01a1ng th\u1ef1c th\u1ef1c ph\u1ea9m V\u0129nh Long",
+    "UPCOM.HAF": {
+      "short_name": "Th\u1ef1c ph\u1ea9m H\u00e0 N\u1ed9i",
+      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n Th\u1ef1c ph\u1ea9m H\u00e0 N\u1ed9i",
       "summary": null,
       "currency": "VND",
       "sector": "D\u1ecbch V\u1ee5 Ti\u00eau D\u00f9ng",
@@ -86,7 +86,7 @@
       "city": null,
       "zipcode": null,
       "website": null,
-      "market_cap": "Nano Cap"
+      "market_cap": "Small Cap"
     }
   }
 ]

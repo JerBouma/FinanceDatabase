@@ -1,60 +1,6 @@
 [
   {
-    "RAT": {
-      "short_name": "V.t\u1ea3i T.m\u1ea1i \u0110.s\u1eaft",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n V\u1eadn t\u1ea3i v\u00e0 Th\u01b0\u01a1ng m\u1ea1i \u0110\u01b0\u1eddng S\u1eaft",
-      "summary": null,
-      "currency": "VND",
-      "sector": "C\u00f4ng Nghi\u1ec7p",
-      "industry": "\u0110\u01b0\u1eddng S\u1eaft",
-      "exchange": "UPCOM",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Small Cap"
-    }
-  },
-  {
-    "HRT": {
-      "short_name": "V.t\u1ea3i \u0110.s\u1eaft HN",
-      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n V\u1eadn t\u1ea3i \u0110\u01b0\u1eddng s\u1eaft H\u00e0 N\u1ed9i",
-      "summary": null,
-      "currency": "VND",
-      "sector": "C\u00f4ng Nghi\u1ec7p",
-      "industry": "\u0110\u01b0\u1eddng S\u1eaft",
-      "exchange": "UPCOM",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Small Cap"
-    }
-  },
-  {
-    "HLR": {
-      "short_name": "\u0110.s\u1eaft H\u00e0 L\u1ea1ng",
-      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n \u0110\u01b0\u1eddng s\u1eaft H\u00e0 L\u1ea1ng",
-      "summary": null,
-      "currency": "VND",
-      "sector": "C\u00f4ng Nghi\u1ec7p",
-      "industry": "\u0110\u01b0\u1eddng S\u1eaft",
-      "exchange": "UPCOM",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Micro Cap"
-    }
-  },
-  {
-    "DSV": {
+    "UPCOM.DSV": {
       "short_name": "\u0110.s\u1eaft V\u0129nh Ph\u00fa",
       "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n \u0110\u01b0\u1eddng s\u1eaft V\u0129nh Ph\u00fa",
       "summary": null,
@@ -72,7 +18,43 @@
     }
   },
   {
-    "HTR": {
+    "UPCOM.RAT": {
+      "short_name": "V.t\u1ea3i T.m\u1ea1i \u0110.s\u1eaft",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n V\u1eadn t\u1ea3i v\u00e0 Th\u01b0\u01a1ng m\u1ea1i \u0110\u01b0\u1eddng S\u1eaft",
+      "summary": null,
+      "currency": "VND",
+      "sector": "C\u00f4ng Nghi\u1ec7p",
+      "industry": "\u0110\u01b0\u1eddng S\u1eaft",
+      "exchange": "UPCOM",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Small Cap"
+    }
+  },
+  {
+    "UPCOM.TSG": {
+      "short_name": "T\u00edn hi\u1ec7u \u0110.s\u1eaft SG",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n Th\u00f4ng tin T\u00edn hi\u1ec7u \u0110\u01b0\u1eddng s\u1eaft S\u00e0i G\u00f2n",
+      "summary": null,
+      "currency": "VND",
+      "sector": "C\u00f4ng Nghi\u1ec7p",
+      "industry": "\u0110\u01b0\u1eddng S\u1eaft",
+      "exchange": "UPCOM",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Micro Cap"
+    }
+  },
+  {
+    "UPCOM.HTR": {
       "short_name": "\u0110.s\u1eaft H\u00e0 Th\u00e1i",
       "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n \u0110\u01b0\u1eddng s\u1eaft H\u00e0 Th\u00e1i",
       "summary": null,
@@ -90,9 +72,9 @@
     }
   },
   {
-    "TSG": {
-      "short_name": "T\u00edn hi\u1ec7u \u0110.s\u1eaft SG",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n Th\u00f4ng tin T\u00edn hi\u1ec7u \u0110\u01b0\u1eddng s\u1eaft S\u00e0i G\u00f2n",
+    "UPCOM.HLR": {
+      "short_name": "\u0110.s\u1eaft H\u00e0 L\u1ea1ng",
+      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n \u0110\u01b0\u1eddng s\u1eaft H\u00e0 L\u1ea1ng",
       "summary": null,
       "currency": "VND",
       "sector": "C\u00f4ng Nghi\u1ec7p",
@@ -105,6 +87,24 @@
       "zipcode": null,
       "website": null,
       "market_cap": "Micro Cap"
+    }
+  },
+  {
+    "UPCOM.HRT": {
+      "short_name": "V.t\u1ea3i \u0110.s\u1eaft HN",
+      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n V\u1eadn t\u1ea3i \u0110\u01b0\u1eddng s\u1eaft H\u00e0 N\u1ed9i",
+      "summary": null,
+      "currency": "VND",
+      "sector": "C\u00f4ng Nghi\u1ec7p",
+      "industry": "\u0110\u01b0\u1eddng S\u1eaft",
+      "exchange": "UPCOM",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Small Cap"
     }
   }
 ]

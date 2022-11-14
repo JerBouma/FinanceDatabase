@@ -1,6 +1,6 @@
 [
   {
-    "UEM": {
+    "UPCOM.UEM": {
       "short_name": "C\u01a1 \u0111i\u1ec7n U\u00f4ng B\u00ed",
       "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n c\u01a1 \u0111i\u1ec7n U\u00f4ng B\u00ed",
       "summary": null,
@@ -18,25 +18,7 @@
     }
   },
   {
-    "DLT": {
-      "short_name": "T.m\u1ea1i VINACOMIN",
-      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n du l\u1ecbch v\u00e0 th\u01b0\u01a1ng m\u1ea1i - VINACOMIN",
-      "summary": null,
-      "currency": "VND",
-      "sector": "C\u00f4ng Nghi\u1ec7p",
-      "industry": "C\u00f4ng Nghi\u1ec7p \u0110a Ng\u00e0nh",
-      "exchange": "UPCOM",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Micro Cap"
-    }
-  },
-  {
-    "SMA": {
+    "HOSE.SMA": {
       "short_name": "T.b\u1ecb ph\u1ee5 t\u00f9ng SG",
       "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n Thi\u1ebft b\u1ecb ph\u1ee5 t\u00f9ng S\u00e0i G\u00f2n",
       "summary": null,
@@ -54,7 +36,43 @@
     }
   },
   {
-    "PRT": {
+    "HNX.VKC": {
+      "short_name": "Nh\u1ef1a V\u0129nh Kh\u00e1nh",
+      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n VKC Holdings",
+      "summary": null,
+      "currency": "VND",
+      "sector": "C\u00f4ng Nghi\u1ec7p",
+      "industry": "C\u00f4ng Nghi\u1ec7p \u0110a Ng\u00e0nh",
+      "exchange": "HNX",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Micro Cap"
+    }
+  },
+  {
+    "UPCOM.DLT": {
+      "short_name": "T.m\u1ea1i VINACOMIN",
+      "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n du l\u1ecbch v\u00e0 th\u01b0\u01a1ng m\u1ea1i - VINACOMIN",
+      "summary": null,
+      "currency": "VND",
+      "sector": "C\u00f4ng Nghi\u1ec7p",
+      "industry": "C\u00f4ng Nghi\u1ec7p \u0110a Ng\u00e0nh",
+      "exchange": "UPCOM",
+      "market": "vn_market",
+      "country": "vietnam",
+      "state": null,
+      "city": null,
+      "zipcode": null,
+      "website": null,
+      "market_cap": "Micro Cap"
+    }
+  },
+  {
+    "UPCOM.PRT": {
       "short_name": "XNK B\u00ecnh D\u01b0\u01a1ng",
       "long_name": "T\u1ed5ng C\u00f4ng ty c\u1ed5 ph\u1ea7n S\u1ea3n xu\u1ea5t \u2013 Xu\u1ea5t nh\u1eadp kh\u1ea9u B\u00ecnh D\u01b0\u01a1ng",
       "summary": null,
@@ -72,7 +90,7 @@
     }
   },
   {
-    "DAT": {
+    "HOSE.DAT": {
       "short_name": "P.tri\u1ec3n Th\u1ee7y s\u1ea3n",
       "long_name": "C\u00f4ng ty c\u1ed5 ph\u1ea7n \u0110\u1ea7u t\u01b0 Du l\u1ecbch v\u00e0 Ph\u00e1t tri\u1ec3n Thu\u1ef7 s\u1ea3n",
       "summary": null,
@@ -87,24 +105,6 @@
       "zipcode": null,
       "website": null,
       "market_cap": "Small Cap"
-    }
-  },
-  {
-    "VKC": {
-      "short_name": "Nh\u1ef1a V\u0129nh Kh\u00e1nh",
-      "long_name": "C\u00f4ng ty C\u1ed5 ph\u1ea7n VKC Holdings",
-      "summary": null,
-      "currency": "VND",
-      "sector": "C\u00f4ng Nghi\u1ec7p",
-      "industry": "C\u00f4ng Nghi\u1ec7p \u0110a Ng\u00e0nh",
-      "exchange": "HNX",
-      "market": "vn_market",
-      "country": "vietnam",
-      "state": null,
-      "city": null,
-      "zipcode": null,
-      "website": null,
-      "market_cap": "Micro Cap"
     }
   }
 ]
