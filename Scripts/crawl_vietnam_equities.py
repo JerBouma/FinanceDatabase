@@ -2,6 +2,7 @@ import os
 import requests
 import json
 import numpy as np
+import shutil
 
 """
 curl 'https://fiin-fundamental.ssi.com.vn/Snapshot/GetSnapshotNoneBank?language=vi&OrganCode=SSI' \
@@ -93,7 +94,7 @@ def get_company_size(companies_mc, symbol):
     if companies_mc[symbol] > 24*1e12:
         return "Large Cap"
     
-    if companies_mc[symbol] > 2 * 1e12:
+    if companies_mc[symbol] > 2*1e12:
         return "Mid Cap"
 
     if companies_mc[symbol] > 5e10:
@@ -223,8 +224,59 @@ def crawl_equities(output_dir="output"):
         sectors, industries,
         sectors_by_industries)
 
+    sectors_n = {}
+    industries_n = {}
+    for k, v in norm_equities.items():
+        if v["sector"] not in sectors_n:
+            sectors_n[v["sector"]] = []
+        sectors_n[v["sector"]].append(v)
+
+        if v["industry"] not in industries_n:
+            industries_n[v["industry"]] = []
+        industries_n[v["industry"]].append(v)
+
+    print(f"INFO: Dump sectors")
+    with open(os.path.join(output_dir, "Vietnam Sectors.json"), "w") as fobj:
+        json.dump(sorted(list(sectors_n.keys())), fobj, indent=2)
+
+    print(f"INFO: Dump industries")
+    with open(os.path.join(output_dir, "Vietnam Industries.json"), "w") as fobj:
+        json.dump(sorted(industries_n.keys()), fobj, indent=2)
+
+    industries_dir = os.path.join(output_dir, "Industries")
+    os.makedirs(industries_dir , exist_ok=True)
+
+    for k, v in sectors_n.items():
+        sector_dir = os.path.join(output_dir, k)
+        os.makedirs(sector_dir, exist_ok=True)
+        industries_by_sector = set()
+        for e in v:
+            industries_by_sector.add(e["industry"])
+        ibs_file = os.path.join(sector_dir, f"_{k} Industries.json")
+        all_e_file = os.path.join(sector_dir, f"_{k}.json")
+
+        with open(ibs_file, "w") as fobj:
+            json.dump(sorted(list(industries_by_sector)), fobj, indent=2)
+
+        v = sorted(v, key=lambda x: x["long_name"])
+        with open(all_e_file, "w") as fobj:
+            json.dump(v, fobj, indent=2)
+
+        for id in industries_by_sector:
+            idf = os.path.join(sector_dir, f"{id}.json")
+            idf_copy = os.path.join(industries_dir, f"{id}.json")
+            with open(idf, "w") as fobj:
+                json.dump(industries_n[id], fobj, indent=2)
+            shutil.copyfile(idf, idf_copy)
+            
+
+    # print(f"INFO: Dump equities by sectors")
+    # for k, v in norm_equities.items():
+    #     print(k, v)
     with open(os.path.join(output_dir, "Vietnam.json"), "w") as fobj:
         json.dump(norm_equities, fobj, indent=2)
 
+
+
 if __name__ == "__main__":
-    crawl_equities()
+    crawl_equities("Database/Equities/Countries/Vietnam")
