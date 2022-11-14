@@ -3,7 +3,7 @@ import json
 
 
 def select_cryptocurrencies(cryptocurrency=None,
-                            base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
+                            base_url="https://raw.githubusercontent.com/mothaibatacungmua/FinanceDatabase/master/"
                                      "Database/Cryptocurrencies",
                             use_local_location=False, all_cryptocurrencies_json="_Cryptocurrencies"):
     """
@@ -55,7 +55,7 @@ def select_cryptocurrencies(cryptocurrency=None,
 
 
 def select_currencies(currency=None,
-                      base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+                      base_url="https://raw.githubusercontent.com/mothaibatacungmua/FinanceDatabase/"
                                "master/Database/Currencies",
                       use_local_location=False, all_currencies_json="_Currencies"):
     """
@@ -107,7 +107,7 @@ def select_currencies(currency=None,
 
 
 def select_etfs(category=None, exclude_exchanges=True,
-                base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+                base_url="https://raw.githubusercontent.com/mothaibatacungmua/FinanceDatabase/"
                          "master/Database/ETFs",
                 use_local_location=False, all_etfs_json="_ETFs"):
     """
@@ -173,7 +173,7 @@ def select_etfs(category=None, exclude_exchanges=True,
 
 
 def select_equities(country=None, sector=None, industry=None, exclude_exchanges=True,
-                    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+                    base_url="https://raw.githubusercontent.com/mothaibatacungmua/FinanceDatabase/"
                              "master/Database/Equities",
                     use_local_location=False):
     """
@@ -348,7 +348,7 @@ def select_equities(country=None, sector=None, industry=None, exclude_exchanges=
 
 
 def select_funds(category=None, exclude_exchanges=True,
-                 base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+                 base_url="https://raw.githubusercontent.com/mothaibatacungmua/FinanceDatabase/"
                           "master/Database/Funds",
                  use_local_location=False, all_funds_json="_Funds"):
     """
@@ -414,7 +414,7 @@ def select_funds(category=None, exclude_exchanges=True,
 
 
 def select_indices(market=None, exclude_exchanges=True,
-                   base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+                   base_url="https://raw.githubusercontent.com/mothaibatacungmua/FinanceDatabase/"
                             "master/Database/Indices",
                    use_local_location=False, all_indices_json="_Indices"):
     """
@@ -477,7 +477,7 @@ def select_indices(market=None, exclude_exchanges=True,
 
 
 def select_moneymarkets(market=None, exclude_exchanges=True,
-                        base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+                        base_url="https://raw.githubusercontent.com/mothaibatacungmua/FinanceDatabase/"
                                  "master/Database/Moneymarkets",
                         use_local_location=False, all_moneymarkets_json="_Moneymarkets"):
     """

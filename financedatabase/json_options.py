@@ -33,7 +33,7 @@ def show_options(product, equities_selection=None, country=None, sector=None, in
     json_data (dictionary)
         Returns a dictionary with a selection based on the input.
     """
-    URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
+    URL = ("https://raw.githubusercontent.com/mothaibatacungmua/FinanceDatabase/master/"
            "Database/Categories/")
 
     if country or sector or industry is not None:
@@ -42,7 +42,7 @@ def show_options(product, equities_selection=None, country=None, sector=None, in
                   "product to equities.")
             product = 'equities'
 
-        equities_URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
+        equities_URL = ("https://raw.githubusercontent.com/mothaibatacungmua/FinanceDatabase/master/"
                         f"Database/{product.capitalize()}")
         if industry:
             if country or sector is not None:

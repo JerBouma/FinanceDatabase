@@ -229,11 +229,11 @@ def crawl_equities(output_dir="output"):
     for k, v in norm_equities.items():
         if v["sector"] not in sectors_n:
             sectors_n[v["sector"]] = []
-        sectors_n[v["sector"]].append(v)
+        sectors_n[v["sector"]].append({k: v})
 
         if v["industry"] not in industries_n:
             industries_n[v["industry"]] = []
-        industries_n[v["industry"]].append(v)
+        industries_n[v["industry"]].append({k: v})
 
     print(f"INFO: Dump sectors")
     with open(os.path.join(output_dir, "Vietnam Sectors.json"), "w") as fobj:
@@ -251,16 +251,16 @@ def crawl_equities(output_dir="output"):
         os.makedirs(sector_dir, exist_ok=True)
         industries_by_sector = set()
         for e in v:
-            industries_by_sector.add(e["industry"])
+            industries_by_sector.add(e[list(e.keys())[0]]["industry"])
         ibs_file = os.path.join(sector_dir, f"_{k} Industries.json")
         all_e_file = os.path.join(sector_dir, f"_{k}.json")
 
         with open(ibs_file, "w") as fobj:
             json.dump(sorted(list(industries_by_sector)), fobj, indent=2)
 
-        v = sorted(v, key=lambda x: x["long_name"])
+        z = sorted(v, key=lambda x: x[list(x.keys())[0]]["long_name"])
         with open(all_e_file, "w") as fobj:
-            json.dump(v, fobj, indent=2)
+            json.dump(z, fobj, indent=2)
 
         for id in industries_by_sector:
             idf = os.path.join(sector_dir, f"{id}.json")
