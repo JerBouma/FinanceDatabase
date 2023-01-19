@@ -55,7 +55,7 @@ or by manual search.
     2. [Technical Analysis of Biotech ETFs](#technical-analysis-of-biotech-etfs)
     3. [United States' Airlines](#united-states-airlines)
     4. [Silicon Valley's Market Cap](#silicon-valleys-market-cap)
-    5. [DEGIRO's Core Selection ETFs](#core-selection-etfs)
+    5. [Compare Japanese Stock ETFs](#compare-japanese-stock-etfs)
 3. [Questions & Answers](#questions--answers)
 4. [Contribution](#contribution)
 
@@ -130,7 +130,8 @@ also to understand which area holds the most data. This is a demonstration of th
 A function crucial to querying data from the Database.
 
 Let's start by acquiring the unique countries, sectors and industries of all equities in the database:
-````
+
+````python
 import financedatabase as fd
 
 # Obtain all countries from the database
@@ -151,7 +152,8 @@ This gives the following lists (where  ```equities_all_categories``` is a dictio
 
 Then, I want to see how many companies exist in each sector in the Netherlands. Let's count all companies with the 
 following code, I skip a sector when it has no data and also do not include companies that are not categorized:
-````
+
+````python
 equities_per_sector_netherlands = {}
 
 for sector in equities_sectors[1:]:
@@ -160,8 +162,10 @@ for sector in equities_sectors[1:]:
     except ValueError as error:
         print(error)
 ````
+
 Lastly, I plot the data in a pie chart and add some formatting to make the pie chart look a bit nicer:
-````
+
+````python
 legend, values = zip(*equities_per_sector_netherlands.items())
 
 colors = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'tab:blue', 'tab:orange', 'tab:gray',
@@ -172,8 +176,8 @@ plt.title('Companies per sector in the Netherlands')
 plt.tight_layout()
 
 plt.show()
-
 ````
+
 This results in the following graph which gives an indication which sectors are dominant within The Netherlands. 
 Of course this is a mere example and to truly understand the importance of certain companies for the Netherlands, 
 an in-depth analysis must be done.
@@ -186,7 +190,7 @@ quickly perform a basic technical analysis on a group of ETFs categorized by the
 searching the database for ETFs related to Health and then make a subselection by searching, in the collected database, 
 for biotech-related ETFs:
 
-````
+````python
 import financedatabase as fd
 
 health_etfs = fd.select_etfs(category='Health')
@@ -196,7 +200,7 @@ health_etfs_in_biotech = fd.search_products(health_etfs, 'biotech')
 Then, I collect stock data on each ticker and remove tickers that have no data in my chosen period. The period I have 
 chosen shows the initial impact of the Coronacrisis on the financial markets.
 
-````
+````python
 import yfinance as yf
 
 stock_data_biotech = yf.download(list(health_etfs_in_biotech.keys()), start="2020-01-01", end="2020-06-01")['Adj Close']
@@ -207,7 +211,7 @@ Next up I initialise subplots and loop over all collected tickers. Here, I creat
 with the adjusted close prices of the ticker as well as the Bollinger Bands. Then I plot the data in one of 
 the subplots.
 
-````
+````python
 import pandas as pd
 from ta.volatility import BollingerBands
 import matplotlib.pyplot as plt
@@ -248,14 +252,17 @@ about [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp)
 ### United States' Airlines
 If I wish to obtain all companies within the United States listed under 'Airlines' I can write the 
 following code:
-````
+
+````python
 import financedatabase as fd
 
 airlines_us = fd.select_equities(country='United States', industry='Airlines')
 ````
+
 Then, I can use packages like [yfinance](https://github.com/ranaroussi/yfinance) to quickly collect data from 
 Yahoo Finance for each symbol in the industry like this:
-````
+
+````python
 from yfinance.utils import get_json
 from yfinance import download
 
@@ -264,11 +271,13 @@ for symbol in airlines_us:
     airlines_us_fundamentals[symbol] = get_json("https://finance.yahoo.com/quote/" + symbol)
 
 airlines_us_stock_data = download(list(airlines_us))
-```` 
+````
+
 With a few lines of code, I have collected all data from a specific industry within the United States. From here on 
 you can compare pretty much any key statistic, fundamental- and stock data. For example, let's plot a simple bar 
 chart that gives insights in the Quick Ratios (indicator of the overall financial strength or weakness of a company):
-````
+
+````python
 import matplotlib.pyplot as plt
 
 for symbol in airlines_us_fundamentals:
@@ -283,6 +292,7 @@ for symbol in airlines_us_fundamentals:
 plt.tight_layout()
 plt.show()
 ``````
+
 Which results in the graph displayed below (as of the 18th of October 2021). From this graph you can identify 
 companies that currently lack enough assets to cover their liabilities (quick ratio < 1), and those that do have 
 enough assets (quick ratio > 1). Both too low and too high could make you wonder whether the company adequately 
@@ -294,7 +304,8 @@ manages its assets.
 If I want to understand which listed technology companies exist in Silicon Valley, I can collect all equities of 
 the sector 'Technology' and then filter based on city to obtain all listed technology companies in 'Silicon Valley'. 
 The city 'San Jose' is where Silicon Valley is located.
-````
+
+````python
 import financedatabase as fd
 
 all_technology_companies = fd.select_equities(sector='Technology')
@@ -302,7 +313,8 @@ silicon_valley = fd.search_products(all_technology_companies, query='San Jose', 
 ````
 Then I start collecting data with the [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) package. 
 Here I collect the key metrics which include 57 different metrics (ranging from PE ratios to Market Cap).
-````
+
+````python
 import FundamentalAnalysis as fa
 
 API_KEY = "YOUR API KEY HERE"
@@ -313,10 +325,12 @@ for ticker in silicon_valley:
     except Exception:
         continue
 ````
+
 Then I make a selection based on the last 5 years and filter by market cap to compare the companies in terms of size
 with each other. This also causes companies that have not been listed for 5 years to be filtered out of my dataset.
 Lastly, I plot the data.
-````
+
+````python
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -335,47 +349,112 @@ market_cap_plot = market_cap.plot.bar(stacked=True, rot=0, colormap='Spectral')
 market_cap_plot.legend(prop={'size': 5.25})
 plt.show()
 ````
+
 This results in the graph displayed below which separates the small companies from the large companies. Note that 
 this does not include _all_ technology companies in Silicon Valley because most are not listed or are not included 
 in the database of the FundamentalAnalysis package.
 
 ![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/Silicon_Valley_Technology_MarketCap.png)
 
-### Core Selection ETFs
+### Compare Japanese Stock ETFs
 Sometimes, Excel simply offers the best solution if you want compare a range of ETFs quickly. Therefore, another 
 option is to use my program [ThePassiveInvestor](https://github.com/JerBouma/ThePassiveInvestor). The goal of 
-this program is to quickly compare a large selection of ETFs by collecting their most important attributes 
+this package is to quickly compare a large selection of ETFs by collecting their most important attributes 
 (i.e. holdings, return, volatility, tracking error).
 
-As I invest with DeGiro, a great start for me would be by collecting all ETFs that are listed within the Core 
-Selection (commission free) list of my broker with the following code (or manually obtain them from the json file):
-````
+For example, let's obtain ETFs that track the Japanese Stock Market:
+
+````python
 import financedatabase as fd
 
-core_selection = fd.select_etfs("core_selection_filtered", exclude_exchanges=False)
+# Obtain Japanese Stock ETFs (found via fd.show_options("etfs"))
+japanese_stock = fd.select_etfs("Japan Stock")
+
+# Convert tickers to a list
+japanese_stock_tickers = list(japanese_stock.keys())
 ````
-Then I convert the keys of the core_selection into a Series and send it to Excel without index and header.
+
+Then I create the Excel report
+
+````python
+import thepassiveinvestor as pi
+
+pi.create_ETF_report(japanese_stock_tickers, "Japanese Stock ETFs.xlsx")
 ````
-import pandas as pd
 
-tickers = pd.Series(core_selection.keys())
-tickers.to_excel('core_selection_tickers.xlsx', index=None, header=None)
-````
-If you open the Excel file created you see the following lay-out (which corresponds to the lay-out accepted 
-by the program):
-
-![ThePassiveInvestor](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/ThePassiveInvestor_Excel.PNG)
-
-Then I open ThePassiveInvestor program and use the Excel as input. The first input is the Excel that you want to 
-be filled with input from your tickers (created by the program). The second input is the file you created above.
-
-![ThePassiveInvestor](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/ThePassiveInvestor_Program.PNG)
-
-When you run the program it starts collecting data on each ticker and fills the Excel with data. After the program 
-is finished you are able to find an Excel that looks very much like the GIF you see below. With this data you can 
+When you run this function it starts collecting data on each ticker and fills the Excel with data. After the function 
+is finished you are able to find an Excel that looks to the GIF you see below. With this data you can 
 get an indication whether the ETF is what you are looking for.
 
 ![ThePassiveInvestor](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/ThePassiveInvestor_GIF.gif)
+
+Alternatively, you can also use the comparison method from `pi.collect_data` as follows:
+
+````python
+import financedatabase as fd
+import thepassiveinvestor as pi
+
+# Obtain Japanese Stock ETFs (found via fd.show_options("etfs"))
+japanese_stock = fd.select_etfs("Japan Stock")
+
+# Convert tickers to a list
+japanese_stock_tickers = list(japanese_stock.keys())
+
+# Create a comparison DataFrame
+comparison = pi.collect_data(japanese_stock_tickers, comparison=True)
+````
+
+Which returns the following:
+
+|                                               | BBJP        | DBJP        | EWJ         | EWJV        | GSJY        | JPXN        | SCJ         |
+|:----------------------------------------------|:------------|:------------|:------------|:------------|:------------|:------------|:------------|
+| ('sector_holdings', 'realestate')             | 3.88%       | 3.11%       | 3.37%       | 5.04%       | 2.39%       | 2.52%       | 10.52%      |
+| ('sector_holdings', 'consumer_cyclical')      | 15.79%      | 13.65%      | 14.81%      | 18.81%      | 14.7%       | 10.8%       | 17.44%      |
+| ('sector_holdings', 'basic_materials')        | 4.73%       | 4.1%        | 4.43%       | 4.1%        | 3.18%       | 5.38%       | 8.69%       |
+| ('sector_holdings', 'consumer_defensive')     | 6.53%       | 6.09%       | 6.56%       | 3.62%       | 7.63%       | 8.23%       | 7.93%       |
+| ('sector_holdings', 'technology')             | 14.7%       | 14.76%      | 15.9%       | 4.5%        | 14.84%      | 14.07%      | 9.69%       |
+| ('sector_holdings', 'communication_services') | 7.47%       | 7.66%       | 8.26%       | 8.66%       | 8.76%       | 8.53%       | 2.69%       |
+| ('sector_holdings', 'financial_services')     | 11.85%      | 11.19%      | 12.17%      | 20.44%      | 12.92%      | 11.96%      | 6.97%       |
+| ('sector_holdings', 'utilities')              | 1.17%       | 1.02%       | 1.02%       | 1.85%       | 1.57%       | 1.3%        | 2.23%       |
+| ('sector_holdings', 'industrials')            | 23.02%      | 20.72%      | 22.32%      | 25.99%      | 22.8%       | 23.89%      | 24.94%      |
+| ('sector_holdings', 'energy')                 | 0.79%       | 0.79%       | 0.84%       | 1.61%       | 1.43%       | 1.02%       | 0.54%       |
+| ('sector_holdings', 'healthcare')             | 10.1%       | 9.18%       | 9.92%       | 4.81%       | 10.63%      | 12.01%      | 8.06%       |
+| ('annual_returns', '2022')                    | -16.79%     | -2.53%      | -17.36%     | -5.68%      | -15.6%      | -16.04%     | -12.7%      |
+| ('annual_returns', '2021')                    | 1.39%       | 12.89%      | 1.56%       | 6.16%       | 0.6%        | 0.4%        | -2.4%       |
+| ('annual_returns', '2020')                    | 15.05%      | 9.49%       | 14.03%      | 0.89%       | 12.56%      | 13.78%      | 6.28%       |
+| ('annual_returns', '2019')                    | 18.62%      | 20.78%      | 19.19%      | N/A         | 18.28%      | 19.36%      | 19.04%      |
+| ('annual_returns', '2018')                    | N/A         | -14.03%     | -13.17%     | nan         | -10.52%     | -13.94%     | -16.36%     |
+| ('key_characteristics', 'fundInceptionDate')  | 2018-06-15  | 2011-06-09  | 1996-03-12  | 2019-03-05  | 2016-03-02  | 2001-10-23  | 2007-12-20  |
+| ('key_characteristics', 'category')           | Japan Stock | Japan Stock | Japan Stock | Japan Stock | Japan Stock | Japan Stock | Japan Stock |
+| ('key_characteristics', 'totalAssets')        | 6722127360  | 229223424   | 9353692160  | 83362744    | 12140200    | 52644332    | 65078772    |
+| ('key_characteristics', 'currency')           | USD         | USD         | USD         | USD         | USD         | USD         | USD         |
+| ('key_characteristics', 'navPrice')           | 46.83       | 49.34       | 56.87       | 25.39       | 31.51       | 60.73       | 66.02       |
+| ('key_characteristics', 'previousClose')      | 47.21       | 49.5855     | 57.31       | 25.4712     | 31.45       | 61.14       | 65.98       |
+| ('risk_data_3y', 'year')                      | 3y          | 3y          | 3y          | 3y          | 3y          | 3y          | 3y          |
+| ('risk_data_3y', 'alpha')                     | -1.2        | 5.92        | -1.64       | 0.18        | -1.74       | -1.54       | -3.46       |
+| ('risk_data_3y', 'beta')                      | 0.78        | 0.6         | 0.8         | 0.76        | 0.76        | 0.8         | 0.67        |
+| ('risk_data_3y', 'meanAnnualReturn')          | 0.04        | 0.62        | 0.01        | 0.16        | -0.01       | 0.02        | -0.16       |
+| ('risk_data_3y', 'rSquared')                  | 75.22       | 54.25       | 76.73       | 69.7        | 73.88       | 74.18       | 58.87       |
+| ('risk_data_3y', 'stdDev')                    | 17.63       | 15.75       | 17.95       | 17.66       | 17.18       | 18.06       | 17.11       |
+| ('risk_data_3y', 'sharpeRatio')               | 0.28        | 0.18        | 0.51        | 0.24        | 0.3         | 0.58        | 0.14        |
+| ('risk_data_3y', 'treynorRatio')              | -2.35       | 9.32        | -2.86       | -0.68       | -3.11       | -2.8        | -6.11       |
+| ('risk_data_5y', 'year')                      | 5y          | 5y          | 5y          | 5y          | 5y          | 5y          | 5y          |
+| ('risk_data_5y', 'alpha')                     | 0           | 3.62        | -1.13       | 0           | -0.76       | -1.22       | -2.94       |
+| ('risk_data_5y', 'beta')                      | 0           | 0.68        | 0.81        | 0           | 0.75        | 0.8         | 0.7         |
+| ('risk_data_5y', 'meanAnnualReturn')          | 0           | 0.47        | 0.09        | 0           | 0.11        | 0.08        | -0.08       |
+| ('risk_data_5y', 'rSquared')                  | 0           | 57.38       | 77.72       | 0           | 74.52       | 75.54       | 62.08       |
+| ('risk_data_5y', 'stdDev')                    | 0           | 15.33       | 15.76       | 0           | 14.95       | 15.86       | 15.39       |
+| ('risk_data_5y', 'sharpeRatio')               | 0           | 0.23        | 0.81        | 0           | 0.7         | 0.9         | 0.49        |
+| ('risk_data_5y', 'treynorRatio')              | 0           | 4.79        | -1.9        | 0           | -1.49       | -2.05       | -4.82       |
+| ('risk_data_10y', 'year')                     | 10y         | 10y         | 10y         | 10y         | 10y         | 10y         | 10y         |
+| ('risk_data_10y', 'alpha')                    | 0           | 7.31        | 1.96        | 0           | 0           | 1.98        | 3.32        |
+| ('risk_data_10y', 'beta')                     | 0           | 0.72        | 0.81        | 0           | 0           | 0.8         | 0.7         |
+| ('risk_data_10y', 'meanAnnualReturn')         | 0           | 0.92        | 0.5         | 0           | 0           | 0.5         | 0.58        |
+| ('risk_data_10y', 'rSquared')                 | 0           | 44.31       | 70          | 0           | 0           | 68.8        | 53.61       |
+| ('risk_data_10y', 'stdDev')                   | 0           | 15.7        | 14.14       | 0           | 0           | 14.08       | 13.96       |
+| ('risk_data_10y', 'sharpeRatio')              | 0           | 0.32        | 0.84        | 0           | 0           | 0.94        | 0.78        |
+| ('risk_data_10y', 'treynorRatio')             | 0           | 13.09       | 5.32        | 0           | 0           | 5.37        | 7.58        |
+| ('annual_returns', '2017')                    | nan         | 20.83%      | 23.56%      | nan         | 24.52%      | 24.01%      | 30.92%      |
 
 ## Questions & Answers
 In this section you can find answers to commonly asked questions. In case the answer to your question is not here, 
