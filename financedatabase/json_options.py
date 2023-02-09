@@ -106,7 +106,8 @@ def show_options(
         elif sector:
             try:
                 sector = sector.replace("%", "%25").replace(" ", "%20")
-                json_file = f"{equities_url}/Sectors/{sector}/_{sector} Countries and Industries.json"
+                json_file = (
+                    f"{equities_url}/Sectors/{sector}/_{sector} Countries and Industries.json")
                 request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
