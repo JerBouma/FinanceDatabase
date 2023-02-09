@@ -1,0 +1,53 @@
+name: General Linting
+
+on:
+  pull_request:
+    types: [opened, synchronize, edited]
+  push:
+    branches:
+      - 'main'
+
+concurrency:
+  group: ${{ github.event_name }}-${{ github.repository }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  code-linting:
+    name: General Code Linting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        - uses: actions/setup-node@v3
+          with:
+            node-version: 16
+        - run: npm i -g json-sort-cli
+
+      - name: Setup Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+          architecture: x64
+
+      - run: |
+          pip install bandit black codespell mypy==0.982 safety pylint==2.15.2 packaging==22 ruff==0.0.243
+          pip install types-pytz types-requests types-termcolor types-tabulate types-PyYAML types-python-dateutil types-setuptools types-six
+      - run: black --diff --check .
+      - run: codespell --skip Database,./.mypy_cache,./.git
+      - run: mypy
+      - run: ruff financedatabase
+      - run: pylint financedatabase
+      - run: sortjson
+
+  markdown-link-check:
+    name: Markdown Linting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        name: Check out the code
+      - name: Lint Code Base
+        uses: docker://avtodev/markdown-lint:v1
+        with:
+          args: "./*.md
