@@ -7,6 +7,7 @@ import requests
 # pylint: disable=unspecified-encoding, too-many-arguments, too-many-locals, too-many-return-statements,
 # pylint: disable=too-many-return-statements,too-many-branches,too-many-statements,duplicate-code
 
+
 def show_options(
     product, equities_selection=None, country=None, sector=None, industry=None
 ):
@@ -105,8 +106,7 @@ def show_options(
         elif sector:
             try:
                 sector = sector.replace("%", "%25").replace(" ", "%20")
-                json_file = (
-                    f"{equities_url}/Sectors/{sector}/_{sector} Countries and Industries.json")
+                json_file = f"{equities_url}/Sectors/{sector}/_{sector} Countries and Industries.json"
                 request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
