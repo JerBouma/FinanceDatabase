@@ -4,7 +4,7 @@ import json
 import requests
 
 # pylint: disable=unspecified-encoding, too-many-arguments, too-many-locals, too-many-return-statements,
-# pylint: disable=too-many-return-statements,too-many-branches,too-many-statements
+# pylint: disable=too-many-return-statements,too-many-branches,too-many-statements,line-too-long
 
 
 def select_cryptocurrencies(
