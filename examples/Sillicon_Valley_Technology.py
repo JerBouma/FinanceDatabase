@@ -1,5 +1,5 @@
 import financedatabase as fd
-import fundamentalanalysis as fa
+import FundamentalAnalysis as fa
 import pandas as pd
 import matplotlib.pyplot as plt
 
