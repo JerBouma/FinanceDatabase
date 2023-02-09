@@ -1,7 +1,11 @@
+"""JSON Options"""
+
 import json
 
 import requests
 
+# pylint: disable=unspecified-encoding, too-many-arguments, too-many-locals, too-many-return-statements,
+# pylint: disable=too-many-return-statements,too-many-branches,too-many-statements,duplicate-code
 
 def show_options(
     product, equities_selection=None, country=None, sector=None, industry=None
@@ -9,10 +13,10 @@ def show_options(
     """
     Description
     ----
-    Returns all options that exist in the database that you can use to filter the database. In case you
-    use country and/or sector, you obtain different lists based on your input. The industry variable is a boolean
-    that returns all industries, to what sector each corresponds and all countries  that have companies
-    in this industry.
+    Returns all options that exist in the database that you can use to filter the database.
+    In case you use country and/or sector, you obtain different lists based on your input.
+    The industry variable is a boolean that returns all industries, to what sector each
+    corresponds and all countries that have companies in this industry.
 
     Input
     ----
@@ -20,24 +24,25 @@ def show_options(
         Gives all data for a specific product which can be
         cryptocurrencies, currencies, equities, etfs or funds.
     equities_selection (string)
-        Gives a sub selection of the possibilities for equities which can be countries, sectors or industries.
+        Gives a sub selection of the possibilities for equities which can be countries, sectors or
+        industries.
     country (string)
-        By entering a country here, you are able to obtain all Sectors and Industries within this country. You can
-        add in Sector to specify on the Industry level.
+        By entering a country here, you are able to obtain all Sectors and Industries within
+        this country. You can add in Sector to specify on the Industry level.
     sector (string)
         By entering a sector here, you are able to obtain all industries within this sector. You can
         add in country to specify within a country.
     industry (boolean)
-        By setting industry to True, you are able to obtain the sector the industry resides in as well as all
-        countries who have companies in this industry.
+        By setting industry to True, you are able to obtain the sector the industry resides
+        in as well as all countries who have companies in this industry.
 
     Output
     ----
     json_data (dictionary)
         Returns a dictionary with a selection based on the input.
     """
-    URL = (
-        "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
+    url = (
+        "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/"
         "Database/Categories/"
     )
 
@@ -49,8 +54,8 @@ def show_options(
             )
             product = "equities"
 
-        equities_URL = (
-            "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
+        equities_url = (
+            "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/"
             f"Database/{product.capitalize()}"
         )
         if industry:
@@ -59,49 +64,54 @@ def show_options(
                     "Industry parameter is set to True thus ignoring country and sector parameters."
                 )
             try:
-                json_file = f"{equities_URL}/Industries/_Industries Countries.json"
-                request = requests.get(json_file)
+                json_file = f"{equities_url}/Industries/_Industries Countries.json"
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError("Not able to find any data for industries.")
+                print("Not able to find any data for industries.")
+                return {}
         elif country and sector:
             try:
                 country = country.replace("%", "%25").replace(" ", "%20")
                 sector = sector.replace("%", "%25").replace(" ", "%20")
-                json_file = f"{equities_URL}/Countries/{country}/{sector}/_{sector} Industries.json"
-                request = requests.get(json_file)
+                json_file = f"{equities_url}/Countries/{country}/{sector}/_{sector} Industries.json"
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(
+                print(
                     f"Not able to find any data with the combination of Country ({country}) "
                     f"and Sector ({sector})"
                 )
+                return {}
         elif country:
             json_data = {}
             try:
                 country = country.replace("%", "%25").replace(" ", "%20")
 
-                json_file = f"{equities_URL}/Countries/{country}/{country} Sectors.json"
-                request = requests.get(json_file)
+                json_file = f"{equities_url}/Countries/{country}/{country} Sectors.json"
+                request = requests.get(json_file, timeout=30)
                 sector = json.loads(request.text)
                 json_data["Sectors"] = sector
 
                 json_file = (
-                    f"{equities_URL}/Countries/{country}/{country} Industries.json"
+                    f"{equities_url}/Countries/{country}/{country} Industries.json"
                 )
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 industries = json.loads(request.text)
                 json_data["Industries"] = industries
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data for {country}.")
+                print(f"Not able to find any data for {country}.")
+                return {}
         elif sector:
             try:
                 sector = sector.replace("%", "%25").replace(" ", "%20")
-                json_file = f"{equities_URL}/Sectors/{sector}/_{sector} Countries and Industries.json"
-                request = requests.get(json_file)
+                json_file = (
+                    f"{equities_url}/Sectors/{sector}/_{sector} Countries and Industries.json")
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data for {sector}.")
+                print(f"Not able to find any data for {sector}.")
+                return {}
     else:
         if product.lower() not in [
             "cryptocurrencies",
@@ -111,21 +121,22 @@ def show_options(
             "funds",
         ]:
             raise ValueError(
-                f"{product.lower()} is not an available option. Please choose either 'cryptocurrencies', "
-                f"'currencies', 'equities', 'etfs' or 'funds'."
+                f"{product.lower()} is not an available option. Please choose either "
+                "'cryptocurrencies', 'currencies', 'equities', 'etfs' or 'funds'."
             )
         if equities_selection is not None:
             if equities_selection.lower() not in ["countries", "sectors", "industries"]:
                 raise ValueError(
-                    f"{equities_selection.lower()} is not an available sub selection. Please choose either "
-                    "'countries', 'sectors' or 'industries'."
+                    f"{equities_selection.lower()} is not an available sub selection. "
+                    "Please choose either 'countries', 'sectors' or 'industries'."
                 )
             if (
                 equities_selection.lower() in ["countries", "sectors", "industries"]
                 and product.lower() != "equities"
             ):
                 print(
-                    "equities_selection is only used for the product 'equities' thus changing product to 'equities'."
+                    "equities_selection is only used for the product 'equities' thus "
+                    "changing product to 'equities'."
                 )
                 product = "equities"
 
@@ -133,18 +144,19 @@ def show_options(
             if product.lower() == "equities" and equities_selection is None:
                 json_data = {}
                 for option in ["countries", "sectors", "industries"]:
-                    json_file = f"{URL}{product.lower()}_{option}.json"
-                    request = requests.get(json_file)
+                    json_file = f"{url}{product.lower()}_{option}.json"
+                    request = requests.get(json_file, timeout=30)
                     json_data[option] = json.loads(request.text)
                 return json_data
             if equities_selection:
-                json_file = f"{URL}{product.lower()}_{equities_selection}.json"
+                json_file = f"{url}{product.lower()}_{equities_selection}.json"
             else:
-                json_file = f"{URL}{product.lower()}_options.json"
-            request = requests.get(json_file)
+                json_file = f"{url}{product.lower()}_options.json"
+            request = requests.get(json_file, timeout=30)
             json_data = json.loads(request.text)
         except json.decoder.JSONDecodeError:
-            raise ValueError(f"Not able to find the options for {product.lower()}.")
+            print(f"Not able to find the options for {product.lower()}.")
+            return {}
 
     return json_data
 
@@ -184,14 +196,16 @@ def search_products(
     try:
         all_keys = list(database[list(database.keys())[0]].keys())
     except IndexError:
-        raise ValueError(
+        print(
             "The database is empty. Please fill the database with one of the 'select' functions."
         )
+        return {}
     if search not in all_keys:
-        raise ValueError(
+        print(
             f"The value {search} is not an option for the 'search' variable. "
             f"Please select one of the following:\n{all_keys}"
         )
+        return {}
 
     for symbol in database:
         try:

@@ -1,4 +1,4 @@
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/FinanceDatabaseCropped.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/FinanceDatabaseCropped.png)
 
 [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-brightgreen?logo=buymeacoffee)](https://www.buymeacoffee.com/jerbouma)
 [![Issues](https://img.shields.io/github/issues/jerbouma/financedatabase)](https://github.com/JerBouma/FinanceDatabase/issues)
@@ -148,7 +148,7 @@ equities_all_categories = fd.show_options('equities')
 ````
 This gives the following lists (where  ```equities_all_categories``` is a dictionary with these three lists):
 
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/CountriesSectorsIndustries.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/CountriesSectorsIndustries.png)
 
 Then, I want to see how many companies exist in each sector in the Netherlands. Let's count all companies with the 
 following code, I skip a sector when it has no data and also do not include companies that are not categorized:
@@ -182,7 +182,7 @@ This results in the following graph which gives an indication which sectors are 
 Of course this is a mere example and to truly understand the importance of certain companies for the Netherlands, 
 an in-depth analysis must be done.
 
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/CompaniesPerSectorInTheNetherlands.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/CompaniesPerSectorInTheNetherlands.png)
 
 ### Technical Analysis of Biotech ETFs
 With the help of [ta](https://github.com/bukosabino/ta) and [yfinance](https://github.com/ranaroussi/yfinance) I can 
@@ -247,7 +247,7 @@ This leads to the following graph which gives an indication whether Biotech ETFs
 how this effect is neutralised (to some degree) in the months after. Read more 
 about [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp) here.
 
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/Technical_Analysis_Biotech_Companies_Coronacrisis.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/Technical_Analysis_Biotech_Companies_Coronacrisis.png)
 
 ### United States' Airlines
 If I wish to obtain all companies within the United States listed under 'Airlines' I can write the 
@@ -298,7 +298,7 @@ companies that currently lack enough assets to cover their liabilities (quick ra
 enough assets (quick ratio > 1). Both too low and too high could make you wonder whether the company adequately 
 manages its assets.
 
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/United_States_Airlines_QuickRatio.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/United_States_Airlines_QuickRatio.png)
 
 ### Silicon Valley's Market Cap
 If I want to understand which listed technology companies exist in Silicon Valley, I can collect all equities of 
@@ -354,7 +354,7 @@ This results in the graph displayed below which separates the small companies fr
 this does not include _all_ technology companies in Silicon Valley because most are not listed or are not included 
 in the database of the FundamentalAnalysis package.
 
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/Silicon_Valley_Technology_MarketCap.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/Silicon_Valley_Technology_MarketCap.png)
 
 ### Compare Japanese Stock ETFs
 Sometimes, Excel simply offers the best solution if you want compare a range of ETFs quickly. Therefore, another 
@@ -386,7 +386,7 @@ When you run this function it starts collecting data on each ticker and fills th
 is finished you are able to find an Excel that looks to the GIF you see below. With this data you can 
 get an indication whether the ETF is what you are looking for.
 
-![ThePassiveInvestor](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/ThePassiveInvestor_GIF.gif)
+![ThePassiveInvestor](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/ThePassiveInvestor_GIF.gif)
 
 Alternatively, you can also use the comparison method from `pi.collect_data` as follows:
 
@@ -461,10 +461,10 @@ In this section you can find answers to commonly asked questions. In case the an
 consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues).
 
 - **How did you get your data?**
-    - Please check the [Methodology](https://github.com/JerBouma/FinanceDatabase/tree/master/Methodology).
+    - Please check the [Methodology](https://github.com/JerBouma/FinanceDatabase/tree/main/Methodology).
 - **Is there support for <insert_country>?**
     - Yes, most likely there is as the database includes 111 countries. Please check 
-    [here](https://github.com/JerBouma/FinanceDatabase/tree/master/Database/Equities/Countries).
+    [here](https://github.com/JerBouma/FinanceDatabase/tree/main/Database/Equities/Countries).
 - **How can I find out which countries, sectors and/or industries exists within the database without needing to check 
   the database manually?**
     - For this you can use the ``show_options`` function from the package attached to this database. Please see 
@@ -478,7 +478,7 @@ consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues)
       collected is only general information. For example, a Sector name hardly changes and companies do not tend to 
       move to another country every few months. Therefore, the data should stay up to date for several months. 
       *If you wish to contribute to updating the database then that is much appreciated. Please check the 
-      [Methodology](https://github.com/JerBouma/FinanceDatabase/tree/master/Methodology) for guidance on how.*
+      [Methodology](https://github.com/JerBouma/FinanceDatabase/tree/main/Methodology) for guidance on how.*
 - **Do your sector and industry names use the same naming convention as GIC sector**?
     - Not entirely but very similar, it's based on Yahoo Finance's sectors and industries. See industries and 
       sectors. Perhaps a future adjustment could be to make them aligned with GICS.

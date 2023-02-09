@@ -1,11 +1,15 @@
+"""JSON Picker"""
 import json
 
 import requests
 
+# pylint: disable=unspecified-encoding, too-many-arguments, too-many-locals, too-many-return-statements,
+# pylint: disable=too-many-return-statements,too-many-branches,too-many-statements
+
 
 def select_cryptocurrencies(
     cryptocurrency=None,
-    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
+    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/"
     "Database/Cryptocurrencies",
     use_local_location=False,
     all_cryptocurrencies_json="_Cryptocurrencies",
@@ -39,10 +43,11 @@ def select_cryptocurrencies(
                 json_data = json.load(json_local)
         else:
             try:
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data for {cryptocurrency}.")
+                print(f"Not able to find any data for {cryptocurrency}.")
+                return {}
     else:
         json_file = f"{base_url}/{all_cryptocurrencies_json}.json"
         if use_local_location:
@@ -50,10 +55,11 @@ def select_cryptocurrencies(
                 json_data = json.load(json_local)
         else:
             try:
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError("Not able to find any data.")
+                print("Not able to find any data.")
+                return {}
 
     return json_data
 
@@ -94,10 +100,11 @@ def select_currencies(
                 json_data = json.load(json_local)
         else:
             try:
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data for {currency}.")
+                print(f"Not able to find any data for {currency}.")
+                return {}
     else:
         json_file = f"{base_url}/{all_currencies_json}.json"
         if use_local_location:
@@ -105,10 +112,11 @@ def select_currencies(
                 json_data = json.load(json_local)
         else:
             try:
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError("Not able to find any data.")
+                print("Not able to find any data.")
+                return {}
 
     return json_data
 
@@ -156,10 +164,11 @@ def select_etfs(
             try:
                 category = category.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/{category}.json"
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data for {category}.")
+                print(f"Not able to find any data for {category}.")
+                return {}
     else:
         json_file = f"{base_url}/{all_etfs_json}.json"
         if use_local_location:
@@ -167,20 +176,23 @@ def select_etfs(
                 json_data = json.load(json_local)
         else:
             try:
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError("Not able to find any data.")
+                print("Not able to find any data.")
+                return {}
 
     if exclude_exchanges:
         for etf in json_data.copy():
             if "." in etf:
                 del json_data[etf]
-        if not len(json_data):
-            raise ValueError(
-                "Because exclude_exchanges is set to True, all available data for "
-                f"this combination ({category}) is removed. Set this parameter to False to obtain data."
+        if len(json_data) == 0:
+            print(
+                "Because exclude_exchanges is set to True, all available data for this "
+                f"combination ({category}) is removed. Set this parameter to False "
+                "to obtain data."
             )
+            return {}
 
     return json_data
 
@@ -235,13 +247,14 @@ def select_equities(
                 sector = sector.replace("%", "%25").replace(" ", "%20")
                 industry = industry.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Countries/{country}/{sector}/{industry}.json"
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(
+                print(
                     f"Not able to find any data with the combination of Country ({country}), "
                     f"Sector ({sector}) and Industry ({industry})."
                 )
+                return {}
     elif country and sector:
         if use_local_location:
             json_file = f"{base_url}/Countries/{country}/{sector}/_{sector}.json"
@@ -252,13 +265,14 @@ def select_equities(
                 country = country.replace("%", "%25").replace(" ", "%20")
                 sector = sector.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Countries/{country}/{sector}/_{sector}.json"
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(
+                print(
                     f"Not able to find any data with the combination of Country ({country}) "
                     f"and Sector ({sector})"
                 )
+                return {}
     elif sector and industry:
         if use_local_location:
             json_file = f"{base_url}/Sectors/{sector}/{industry}.json"
@@ -269,13 +283,14 @@ def select_equities(
                 sector = sector.replace("%", "%25").replace(" ", "%20")
                 industry = industry.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Sectors/{sector}/{industry}.json"
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(
+                print(
                     "Not able to find any data with the combination of, "
                     f"Sector ({sector}) and Industry ({industry})."
                 )
+                return {}
     elif country and industry:
         if use_local_location:
             json_file = f"{base_url}/Countries/{country}/Industries/{industry}.json"
@@ -286,13 +301,14 @@ def select_equities(
                 country = country.replace("%", "%25").replace(" ", "%20")
                 industry = industry.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Countries/{country}/Industries/{industry}.json"
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(
+                print(
                     "Not able to find any data with the combination of, "
                     f"Country ({country}) and Industry ({industry})."
                 )
+                return {}
     elif country:
         if use_local_location:
             json_file = f"{base_url}/Countries/{country}/{country}.json"
@@ -302,10 +318,11 @@ def select_equities(
             try:
                 country = country.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Countries/{country}/{country}.json"
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=60)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data for {country}.")
+                print(f"Not able to find any data for {country}.")
+                return {}
     elif sector:
         if use_local_location:
             json_file = f"{base_url}/Sectors/{sector}/_{sector}.json"
@@ -315,10 +332,11 @@ def select_equities(
             try:
                 sector = sector.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Sectors/{sector}/_{sector}.json"
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=60)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data for {sector}.")
+                print(f"Not able to find any data for {sector}.")
+                return {}
     elif industry:
         if use_local_location:
             json_file = f"{base_url}/Industries/{industry}.json"
@@ -328,10 +346,11 @@ def select_equities(
             try:
                 industry = industry.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Industries/{industry}.json"
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=60)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data for {industry}.")
+                print(f"Not able to find any data for {industry}.")
+                return {}
     else:
         if use_local_location:
             json_data = {}
@@ -350,27 +369,29 @@ def select_equities(
                 json_data = {}
 
                 json_file_part_one = f"{base_url}/Equities Part 1.json"
-                request = requests.get(json_file_part_one)
+                request = requests.get(json_file_part_one, timeout=60)
                 json_data_segment = json.loads(request.text)
                 json_data.update(json_data_segment)
 
                 json_file_part_two = f"{base_url}/Equities Part 2.json"
-                request = requests.get(json_file_part_two)
+                request = requests.get(json_file_part_two, timeout=60)
                 json_data_segment = json.loads(request.text)
                 json_data.update(json_data_segment)
             except json.decoder.JSONDecodeError:
-                raise ValueError("Not able to find any data.")
+                print("Not able to find any data.")
+                return {}
 
     if exclude_exchanges:
         for company in json_data.copy():
             if "." in company:
                 del json_data[company]
-            if not len(json_data):
-                raise ValueError(
+            if len(json_data) == 0:
+                print(
                     "Because exclude_exchanges is set to True, all available data for "
                     f"this combination ({country}, {sector} and {industry}) is removed. "
                     f"Set this parameter to False to obtain data."
                 )
+                return {}
 
     return json_data
 
@@ -417,10 +438,11 @@ def select_funds(
             try:
                 category = category.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/{category}.json"
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data for {category}.")
+                print(f"Not able to find any data for {category}.")
+                return {}
     else:
         json_file = f"{base_url}/{all_funds_json}.json"
         if use_local_location:
@@ -428,16 +450,17 @@ def select_funds(
                 json_data = json.load(json_local)
         else:
             try:
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError("Not able to find any data.")
+                print("Not able to find any data.")
+                return {}
 
     if exclude_exchanges:
         for fund in json_data.copy():
             if "." in fund:
                 del json_data[fund]
-            if not len(json_data):
+            if len(json_data) == 0:
                 raise ValueError(
                     "Because exclude_exchanges is set to True, all available data for "
                     f"this combination ({category}) is removed. Set this parameter to False to "
@@ -487,10 +510,11 @@ def select_indices(
                 json_data = json.load(json_local)
         else:
             try:
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data for {market}.")
+                print(f"Not able to find any data for {market}.")
+                return {}
     else:
         json_file = f"{base_url}/{all_indices_json}.json"
         if use_local_location:
@@ -498,19 +522,21 @@ def select_indices(
                 json_data = json.load(json_local)
         else:
             try:
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError("Not able to find any data.")
+                print("Not able to find any data.")
+                return {}
 
     if exclude_exchanges:
         for index in json_data.copy():
             if "." in index:
                 del json_data[index]
-            if not len(json_data):
+            if len(json_data) == 0:
                 raise ValueError(
-                    "Because exclude_exchanges is set to True, all available data for "
-                    f"this combination ({market}) is removed. Set this parameter to False to obtain data."
+                    "Because exclude_exchanges is set to True, all available data for this "
+                    f"combination ({market}) is removed. Set this parameter to False "
+                    "to obtain data."
                 )
 
     return json_data
@@ -556,10 +582,11 @@ def select_moneymarkets(
                 json_data = json.load(json_local)
         else:
             try:
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data for {market}.")
+                print(f"Not able to find any data for {market}.")
+                return {}
     else:
         json_file = f"{base_url}/{all_moneymarkets_json}.json"
         if use_local_location:
@@ -567,19 +594,22 @@ def select_moneymarkets(
                 json_data = json.load(json_local)
         else:
             try:
-                request = requests.get(json_file)
+                request = requests.get(json_file, timeout=30)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError("Not able to find any data.")
+                print("Not able to find any data.")
+                return {}
 
     if exclude_exchanges:
         for moneymarket in json_data.copy():
             if "." in moneymarket:
                 del json_data[moneymarket]
-        if not len(json_data):
-            raise ValueError(
-                "Because exclude_exchanges is set to True, all available data for "
-                f"this combination ({market}) is removed. Set this parameter to False to obtain data."
+        if len(json_data) == 0:
+            print(
+                "Because exclude_exchanges is set to True, all available data for this "
+                f"combination ({market}) is removed. Set this parameter to False "
+                "to obtain data."
             )
+            return {}
 
     return json_data
