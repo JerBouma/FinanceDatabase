@@ -49,5 +49,3 @@ jobs:
         name: Check out the code
       - name: Lint Code Base
         uses: docker://avtodev/markdown-lint:v1
-        with:
-          args: "./*.md
