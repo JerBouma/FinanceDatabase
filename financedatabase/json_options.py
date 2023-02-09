@@ -1,8 +1,11 @@
-import requests
 import json
 
+import requests
 
-def show_options(product, equities_selection=None, country=None, sector=None, industry=None):
+
+def show_options(
+    product, equities_selection=None, country=None, sector=None, industry=None
+):
     """
     Description
     ----
@@ -17,7 +20,7 @@ def show_options(product, equities_selection=None, country=None, sector=None, in
         Gives all data for a specific product which can be
         cryptocurrencies, currencies, equities, etfs or funds.
     equities_selection (string)
-        Gives a sub selection fo the possibilities for equities which can be countries, sectors or industries.
+        Gives a sub selection of the possibilities for equities which can be countries, sectors or industries.
     country (string)
         By entering a country here, you are able to obtain all Sectors and Industries within this country. You can
         add in Sector to specify on the Industry level.
@@ -33,77 +36,103 @@ def show_options(product, equities_selection=None, country=None, sector=None, in
     json_data (dictionary)
         Returns a dictionary with a selection based on the input.
     """
-    URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
-           "Database/Categories/")
+    URL = (
+        "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
+        "Database/Categories/"
+    )
 
     if country or sector or industry is not None:
-        if product.lower() != 'equities':
-            print("Country, sector and industry variables only work for equities thus changing the "
-                  "product to equities.")
-            product = 'equities'
+        if product.lower() != "equities":
+            print(
+                "Country, sector and industry variables only work for equities thus changing the "
+                "product to equities."
+            )
+            product = "equities"
 
-        equities_URL = ("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
-                        f"Database/{product.capitalize()}")
+        equities_URL = (
+            "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
+            f"Database/{product.capitalize()}"
+        )
         if industry:
             if country or sector is not None:
-                print("Industry parameter is set to True thus ignoring country and sector parameters.")
+                print(
+                    "Industry parameter is set to True thus ignoring country and sector parameters."
+                )
             try:
                 json_file = f"{equities_URL}/Industries/_Industries Countries.json"
                 request = requests.get(json_file)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data for industries.")
+                raise ValueError("Not able to find any data for industries.")
         elif country and sector:
             try:
-                country = country.replace('%', '%25').replace(' ', '%20')
-                sector = sector.replace('%', '%25').replace(' ', '%20')
+                country = country.replace("%", "%25").replace(" ", "%20")
+                sector = sector.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{equities_URL}/Countries/{country}/{sector}/_{sector} Industries.json"
                 request = requests.get(json_file)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data with the combination of Country ({country}) "
-                                 f"and Sector ({sector})")
+                raise ValueError(
+                    f"Not able to find any data with the combination of Country ({country}) "
+                    f"and Sector ({sector})"
+                )
         elif country:
             json_data = {}
             try:
-                country = country.replace('%', '%25').replace(' ', '%20')
+                country = country.replace("%", "%25").replace(" ", "%20")
 
                 json_file = f"{equities_URL}/Countries/{country}/{country} Sectors.json"
                 request = requests.get(json_file)
                 sector = json.loads(request.text)
-                json_data['Sectors'] = sector
+                json_data["Sectors"] = sector
 
-                json_file = f"{equities_URL}/Countries/{country}/{country} Industries.json"
+                json_file = (
+                    f"{equities_URL}/Countries/{country}/{country} Industries.json"
+                )
                 request = requests.get(json_file)
                 industries = json.loads(request.text)
-                json_data['Industries'] = industries
+                json_data["Industries"] = industries
             except json.decoder.JSONDecodeError:
                 raise ValueError(f"Not able to find any data for {country}.")
         elif sector:
             try:
-                sector = sector.replace('%', '%25').replace(' ', '%20')
+                sector = sector.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{equities_URL}/Sectors/{sector}/_{sector} Countries and Industries.json"
                 request = requests.get(json_file)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
                 raise ValueError(f"Not able to find any data for {sector}.")
     else:
-        if product.lower() not in ['cryptocurrencies', 'currencies', 'equities', 'etfs', 'funds']:
-            raise ValueError(f"{product.lower()} is not an available option. Please choose either 'cryptocurrencies', "
-                             f"'currencies', 'equities', 'etfs' or 'funds'.")
+        if product.lower() not in [
+            "cryptocurrencies",
+            "currencies",
+            "equities",
+            "etfs",
+            "funds",
+        ]:
+            raise ValueError(
+                f"{product.lower()} is not an available option. Please choose either 'cryptocurrencies', "
+                f"'currencies', 'equities', 'etfs' or 'funds'."
+            )
         if equities_selection is not None:
-            if equities_selection.lower() not in ['countries', 'sectors', 'industries']:
+            if equities_selection.lower() not in ["countries", "sectors", "industries"]:
                 raise ValueError(
                     f"{equities_selection.lower()} is not an available sub selection. Please choose either "
-                    "'countries', 'sectors' or 'industries'.")
-            if equities_selection.lower() in ['countries', 'sectors', 'industries'] and product.lower() != 'equities':
-                print("equities_selection is only used for the product 'equities' thus changing product to 'equities'.")
-                product = 'equities'
+                    "'countries', 'sectors' or 'industries'."
+                )
+            if (
+                equities_selection.lower() in ["countries", "sectors", "industries"]
+                and product.lower() != "equities"
+            ):
+                print(
+                    "equities_selection is only used for the product 'equities' thus changing product to 'equities'."
+                )
+                product = "equities"
 
         try:
-            if product.lower() == 'equities' and equities_selection is None:
+            if product.lower() == "equities" and equities_selection is None:
                 json_data = {}
-                for option in ['countries', 'sectors', 'industries']:
+                for option in ["countries", "sectors", "industries"]:
                     json_file = f"{URL}{product.lower()}_{option}.json"
                     request = requests.get(json_file)
                     json_data[option] = json.loads(request.text)
@@ -120,7 +149,9 @@ def show_options(product, equities_selection=None, country=None, sector=None, in
     return json_data
 
 
-def search_products(database, query, search='summary', case_sensitive=False, new_database=None):
+def search_products(
+    database, query, search="summary", case_sensitive=False, new_database=None
+):
     """
     Description
     ----
@@ -153,10 +184,14 @@ def search_products(database, query, search='summary', case_sensitive=False, new
     try:
         all_keys = list(database[list(database.keys())[0]].keys())
     except IndexError:
-        raise ValueError("The database is empty. Please fill the database with one of the 'select' functions.")
+        raise ValueError(
+            "The database is empty. Please fill the database with one of the 'select' functions."
+        )
     if search not in all_keys:
-        raise ValueError(f"The value {search} is not an option for the 'search' variable. "
-                         f"Please select one of the following:\n{all_keys}")
+        raise ValueError(
+            f"The value {search} is not an option for the 'search' variable. "
+            f"Please select one of the following:\n{all_keys}"
+        )
 
     for symbol in database:
         try:

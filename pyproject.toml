@@ -1,0 +1,12 @@
+[tool.ruff]
+line-length = 122
+
+[tool.ruff.isort]
+combine-as-imports = true
+force-wrap-aliases = true
+
+[tool.isort]
+profile = "black"
+line_length = 122
+skip_gitignore = true
+combine_as_imports = true

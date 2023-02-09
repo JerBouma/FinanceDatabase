@@ -1,4 +1,4 @@
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/FinanceDatabaseCropped.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/FinanceDatabaseCropped.png)
 
 [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-brightgreen?logo=buymeacoffee)](https://www.buymeacoffee.com/jerbouma)
 [![Issues](https://img.shields.io/github/issues/jerbouma/financedatabase)](https://github.com/JerBouma/FinanceDatabase/issues)
@@ -106,7 +106,7 @@ when using the function `select_etfs`.
 By default, exchanges are not included in the selection functions. Therefore, the amount of data returned is less 
 than depicted in the key statistics. If you wish to include all exchanges, please set `exclude_exchanges` to `False`.
 
-For additional information about each function you can use the build-in help function of Python. For 
+For additional information about each function you can use the built-in help function of Python. For 
 example `help(show_options)` returns a general description, the possible input parameters and what is returned 
 as output.
   
@@ -148,7 +148,7 @@ equities_all_categories = fd.show_options('equities')
 ````
 This gives the following lists (where  ```equities_all_categories``` is a dictionary with these three lists):
 
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/CountriesSectorsIndustries.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/CountriesSectorsIndustries.png)
 
 Then, I want to see how many companies exist in each sector in the Netherlands. Let's count all companies with the 
 following code, I skip a sector when it has no data and also do not include companies that are not categorized:
@@ -182,7 +182,7 @@ This results in the following graph which gives an indication which sectors are 
 Of course this is a mere example and to truly understand the importance of certain companies for the Netherlands, 
 an in-depth analysis must be done.
 
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/CompaniesPerSectorInTheNetherlands.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/CompaniesPerSectorInTheNetherlands.png)
 
 ### Technical Analysis of Biotech ETFs
 With the help of [ta](https://github.com/bukosabino/ta) and [yfinance](https://github.com/ranaroussi/yfinance) I can 
@@ -243,11 +243,11 @@ figure.suptitle('Technical Analysis of Biotech ETFs during Coronacrisis')
 figure.tight_layout()
 ````
 
-This leads to the following graph which gives an indication wether Biotech ETFs were oversold or overbought and 
+This leads to the following graph which gives an indication whether Biotech ETFs were oversold or overbought and 
 how this effect is neutralised (to some degree) in the months after. Read more 
 about [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp) here.
 
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/Technical_Analysis_Biotech_Companies_Coronacrisis.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/Technical_Analysis_Biotech_Companies_Coronacrisis.png)
 
 ### United States' Airlines
 If I wish to obtain all companies within the United States listed under 'Airlines' I can write the 
@@ -298,7 +298,7 @@ companies that currently lack enough assets to cover their liabilities (quick ra
 enough assets (quick ratio > 1). Both too low and too high could make you wonder whether the company adequately 
 manages its assets.
 
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/United_States_Airlines_QuickRatio.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/United_States_Airlines_QuickRatio.png)
 
 ### Silicon Valley's Market Cap
 If I want to understand which listed technology companies exist in Silicon Valley, I can collect all equities of 
@@ -354,7 +354,7 @@ This results in the graph displayed below which separates the small companies fr
 this does not include _all_ technology companies in Silicon Valley because most are not listed or are not included 
 in the database of the FundamentalAnalysis package.
 
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/Silicon_Valley_Technology_MarketCap.png)
+![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/Silicon_Valley_Technology_MarketCap.png)
 
 ### Compare Japanese Stock ETFs
 Sometimes, Excel simply offers the best solution if you want compare a range of ETFs quickly. Therefore, another 
@@ -386,7 +386,7 @@ When you run this function it starts collecting data on each ticker and fills th
 is finished you are able to find an Excel that looks to the GIF you see below. With this data you can 
 get an indication whether the ETF is what you are looking for.
 
-![ThePassiveInvestor](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Examples/ThePassiveInvestor_GIF.gif)
+![ThePassiveInvestor](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/examples/ThePassiveInvestor_GIF.gif)
 
 Alternatively, you can also use the comparison method from `pi.collect_data` as follows:
 

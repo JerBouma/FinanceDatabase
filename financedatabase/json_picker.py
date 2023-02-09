@@ -1,11 +1,15 @@
-import requests
 import json
 
+import requests
 
-def select_cryptocurrencies(cryptocurrency=None,
-                            base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
-                                     "Database/Cryptocurrencies",
-                            use_local_location=False, all_cryptocurrencies_json="_Cryptocurrencies"):
+
+def select_cryptocurrencies(
+    cryptocurrency=None,
+    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/"
+    "Database/Cryptocurrencies",
+    use_local_location=False,
+    all_cryptocurrencies_json="_Cryptocurrencies",
+):
     """
     Description
     ----
@@ -54,10 +58,13 @@ def select_cryptocurrencies(cryptocurrency=None,
     return json_data
 
 
-def select_currencies(currency=None,
-                      base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
-                               "master/Database/Currencies",
-                      use_local_location=False, all_currencies_json="_Currencies"):
+def select_currencies(
+    currency=None,
+    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+    "master/Database/Currencies",
+    use_local_location=False,
+    all_currencies_json="_Currencies",
+):
     """
     Description
     ----
@@ -106,10 +113,14 @@ def select_currencies(currency=None,
     return json_data
 
 
-def select_etfs(category=None, exclude_exchanges=True,
-                base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
-                         "master/Database/ETFs",
-                use_local_location=False, all_etfs_json="_ETFs"):
+def select_etfs(
+    category=None,
+    exclude_exchanges=True,
+    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+    "master/Database/ETFs",
+    use_local_location=False,
+    all_etfs_json="_ETFs",
+):
     """
     Description
     ----
@@ -143,7 +154,7 @@ def select_etfs(category=None, exclude_exchanges=True,
                 json_data = json.load(json_local)
         else:
             try:
-                category = category.replace('%', '%25').replace(' ', '%20')
+                category = category.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/{category}.json"
                 request = requests.get(json_file)
                 json_data = json.loads(request.text)
@@ -163,19 +174,26 @@ def select_etfs(category=None, exclude_exchanges=True,
 
     if exclude_exchanges:
         for etf in json_data.copy():
-            if '.' in etf:
+            if "." in etf:
                 del json_data[etf]
         if not len(json_data):
-            raise ValueError("Because exclude_exchanges is set to True, all available data for "
-                             f"this combination ({category}) is removed. Set this parameter to False to obtain data.")
+            raise ValueError(
+                "Because exclude_exchanges is set to True, all available data for "
+                f"this combination ({category}) is removed. Set this parameter to False to obtain data."
+            )
 
     return json_data
 
 
-def select_equities(country=None, sector=None, industry=None, exclude_exchanges=True,
-                    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
-                             "master/Database/Equities",
-                    use_local_location=False):
+def select_equities(
+    country=None,
+    sector=None,
+    industry=None,
+    exclude_exchanges=True,
+    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+    "master/Database/Equities",
+    use_local_location=False,
+):
     """
     Description
     ----
@@ -213,15 +231,17 @@ def select_equities(country=None, sector=None, industry=None, exclude_exchanges=
                 json_data = json.load(json_local)
         else:
             try:
-                country = country.replace('%', '%25').replace(' ', '%20')
-                sector = sector.replace('%', '%25').replace(' ', '%20')
-                industry = industry.replace('%', '%25').replace(' ', '%20')
+                country = country.replace("%", "%25").replace(" ", "%20")
+                sector = sector.replace("%", "%25").replace(" ", "%20")
+                industry = industry.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Countries/{country}/{sector}/{industry}.json"
                 request = requests.get(json_file)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data with the combination of Country ({country}), "
-                                 f"Sector ({sector}) and Industry ({industry}).")
+                raise ValueError(
+                    f"Not able to find any data with the combination of Country ({country}), "
+                    f"Sector ({sector}) and Industry ({industry})."
+                )
     elif country and sector:
         if use_local_location:
             json_file = f"{base_url}/Countries/{country}/{sector}/_{sector}.json"
@@ -229,14 +249,16 @@ def select_equities(country=None, sector=None, industry=None, exclude_exchanges=
                 json_data = json.load(json_local)
         else:
             try:
-                country = country.replace('%', '%25').replace(' ', '%20')
-                sector = sector.replace('%', '%25').replace(' ', '%20')
+                country = country.replace("%", "%25").replace(" ", "%20")
+                sector = sector.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Countries/{country}/{sector}/_{sector}.json"
                 request = requests.get(json_file)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError(f"Not able to find any data with the combination of Country ({country}) "
-                                 f"and Sector ({sector})")
+                raise ValueError(
+                    f"Not able to find any data with the combination of Country ({country}) "
+                    f"and Sector ({sector})"
+                )
     elif sector and industry:
         if use_local_location:
             json_file = f"{base_url}/Sectors/{sector}/{industry}.json"
@@ -244,14 +266,16 @@ def select_equities(country=None, sector=None, industry=None, exclude_exchanges=
                 json_data = json.load(json_local)
         else:
             try:
-                sector = sector.replace('%', '%25').replace(' ', '%20')
-                industry = industry.replace('%', '%25').replace(' ', '%20')
+                sector = sector.replace("%", "%25").replace(" ", "%20")
+                industry = industry.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Sectors/{sector}/{industry}.json"
                 request = requests.get(json_file)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError("Not able to find any data with the combination of, "
-                                 f"Sector ({sector}) and Industry ({industry}).")
+                raise ValueError(
+                    "Not able to find any data with the combination of, "
+                    f"Sector ({sector}) and Industry ({industry})."
+                )
     elif country and industry:
         if use_local_location:
             json_file = f"{base_url}/Countries/{country}/Industries/{industry}.json"
@@ -259,14 +283,16 @@ def select_equities(country=None, sector=None, industry=None, exclude_exchanges=
                 json_data = json.load(json_local)
         else:
             try:
-                country = country.replace('%', '%25').replace(' ', '%20')
-                industry = industry.replace('%', '%25').replace(' ', '%20')
+                country = country.replace("%", "%25").replace(" ", "%20")
+                industry = industry.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Countries/{country}/Industries/{industry}.json"
                 request = requests.get(json_file)
                 json_data = json.loads(request.text)
             except json.decoder.JSONDecodeError:
-                raise ValueError("Not able to find any data with the combination of, "
-                                 f"Country ({country}) and Industry ({industry}).")
+                raise ValueError(
+                    "Not able to find any data with the combination of, "
+                    f"Country ({country}) and Industry ({industry})."
+                )
     elif country:
         if use_local_location:
             json_file = f"{base_url}/Countries/{country}/{country}.json"
@@ -274,7 +300,7 @@ def select_equities(country=None, sector=None, industry=None, exclude_exchanges=
                 json_data = json.load(json_local)
         else:
             try:
-                country = country.replace('%', '%25').replace(' ', '%20')
+                country = country.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Countries/{country}/{country}.json"
                 request = requests.get(json_file)
                 json_data = json.loads(request.text)
@@ -287,7 +313,7 @@ def select_equities(country=None, sector=None, industry=None, exclude_exchanges=
                 json_data = json.load(json_local)
         else:
             try:
-                sector = sector.replace('%', '%25').replace(' ', '%20')
+                sector = sector.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Sectors/{sector}/_{sector}.json"
                 request = requests.get(json_file)
                 json_data = json.loads(request.text)
@@ -300,7 +326,7 @@ def select_equities(country=None, sector=None, industry=None, exclude_exchanges=
                 json_data = json.load(json_local)
         else:
             try:
-                industry = industry.replace('%', '%25').replace(' ', '%20')
+                industry = industry.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/Industries/{industry}.json"
                 request = requests.get(json_file)
                 json_data = json.loads(request.text)
@@ -337,20 +363,26 @@ def select_equities(country=None, sector=None, industry=None, exclude_exchanges=
 
     if exclude_exchanges:
         for company in json_data.copy():
-            if '.' in company:
+            if "." in company:
                 del json_data[company]
             if not len(json_data):
-                raise ValueError("Because exclude_exchanges is set to True, all available data for "
-                                 f"this combination ({country}, {sector} and {industry}) is removed. "
-                                 f"Set this parameter to False to obtain data.")
+                raise ValueError(
+                    "Because exclude_exchanges is set to True, all available data for "
+                    f"this combination ({country}, {sector} and {industry}) is removed. "
+                    f"Set this parameter to False to obtain data."
+                )
 
     return json_data
 
 
-def select_funds(category=None, exclude_exchanges=True,
-                 base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
-                          "master/Database/Funds",
-                 use_local_location=False, all_funds_json="_Funds"):
+def select_funds(
+    category=None,
+    exclude_exchanges=True,
+    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+    "master/Database/Funds",
+    use_local_location=False,
+    all_funds_json="_Funds",
+):
     """
     Description
     ----
@@ -383,7 +415,7 @@ def select_funds(category=None, exclude_exchanges=True,
                 json_data = json.load(json_local)
         else:
             try:
-                category = category.replace('%', '%25').replace(' ', '%20')
+                category = category.replace("%", "%25").replace(" ", "%20")
                 json_file = f"{base_url}/{category}.json"
                 request = requests.get(json_file)
                 json_data = json.loads(request.text)
@@ -403,20 +435,26 @@ def select_funds(category=None, exclude_exchanges=True,
 
     if exclude_exchanges:
         for fund in json_data.copy():
-            if '.' in fund:
+            if "." in fund:
                 del json_data[fund]
             if not len(json_data):
-                raise ValueError("Because exclude_exchanges is set to True, all available data for "
-                                 f"this combination ({category}) is removed. Set this parameter to False to "
-                                 f"obtain data.")
+                raise ValueError(
+                    "Because exclude_exchanges is set to True, all available data for "
+                    f"this combination ({category}) is removed. Set this parameter to False to "
+                    f"obtain data."
+                )
 
     return json_data
 
 
-def select_indices(market=None, exclude_exchanges=True,
-                   base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
-                            "master/Database/Indices",
-                   use_local_location=False, all_indices_json="_Indices"):
+def select_indices(
+    market=None,
+    exclude_exchanges=True,
+    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+    "master/Database/Indices",
+    use_local_location=False,
+    all_indices_json="_Indices",
+):
     """
     Description
     ----
@@ -467,19 +505,25 @@ def select_indices(market=None, exclude_exchanges=True,
 
     if exclude_exchanges:
         for index in json_data.copy():
-            if '.' in index:
+            if "." in index:
                 del json_data[index]
             if not len(json_data):
-                raise ValueError("Because exclude_exchanges is set to True, all available data for "
-                                 f"this combination ({market}) is removed. Set this parameter to False to obtain data.")
+                raise ValueError(
+                    "Because exclude_exchanges is set to True, all available data for "
+                    f"this combination ({market}) is removed. Set this parameter to False to obtain data."
+                )
 
     return json_data
 
 
-def select_moneymarkets(market=None, exclude_exchanges=True,
-                        base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
-                                 "master/Database/Moneymarkets",
-                        use_local_location=False, all_moneymarkets_json="_Moneymarkets"):
+def select_moneymarkets(
+    market=None,
+    exclude_exchanges=True,
+    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
+    "master/Database/Moneymarkets",
+    use_local_location=False,
+    all_moneymarkets_json="_Moneymarkets",
+):
     """
     Description
     ----
@@ -530,10 +574,12 @@ def select_moneymarkets(market=None, exclude_exchanges=True,
 
     if exclude_exchanges:
         for moneymarket in json_data.copy():
-            if '.' in moneymarket:
+            if "." in moneymarket:
                 del json_data[moneymarket]
         if not len(json_data):
-            raise ValueError("Because exclude_exchanges is set to True, all available data for "
-                             f"this combination ({market}) is removed. Set this parameter to False to obtain data.")
+            raise ValueError(
+                "Because exclude_exchanges is set to True, all available data for "
+                f"this combination ({market}) is removed. Set this parameter to False to obtain data."
+            )
 
     return json_data
