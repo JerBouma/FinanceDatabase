@@ -97,7 +97,7 @@ To find more information about each category:
 - "market": enter which market the company belongs to, this is related to the exchange as well.
 - "market_cap": based on [market cap categorization](https://www.investopedia.com/investing/market-capitalization-defined/) define the market cap.
 - "sector" select the sector that belongs to the company. Pick an option from [this list](https://github.com/JerBouma/FinanceDatabase/blob/main/Database/Categories/equities_sectors.json).
-- "short_name": enter the short abbrevation of the company name.
+- "short_name": enter the short abbreviation of the company name.
 - "state": if applicable, select a state in the United States.
 - "summary": enter a brief company description, explaining the purpose of the company.
 - "zipcode": if applicable, enter the zipcode.
