@@ -19,7 +19,7 @@
     </a>
 </center>
 
-| :bulb: **Call for Contributors for the FinanceDatabase** :bulb:   |
+| :bulb: **Call for Contributors to the FinanceDatabase** :bulb:   |
 |:------------------------------------------------------:|
 | The **FinanceDatabase** serves the role of providing anyone with any type of financial product categorisation entirely for free. To be able to achieve this, the FinanceDatabase relies on involvement from the community to update, edit and remove tickers over time. This is made easy enough that anyone, even with a lack of coding experience can contribute because of the generation of JSON files that can be manually edited. I'd like to invite you to go to the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md) to understand how you can help. **Thank you!** |
 
