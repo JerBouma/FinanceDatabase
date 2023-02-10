@@ -4,6 +4,13 @@ First off all, thank you for taking the time to contribute (or at least read the
 
 The following is a set of guidelines for contributing to the FinanceDatabase. They are meant to guide you through how updating of the FinanceDatabase works and how you can contribute with little coding background as well.
 
+- [Working with Git & Pull Requests](#working-with-git--pull-requests)
+- [Following the Workflow](#following-the-workflow)
+- [What can you do?](#what-can-you-do)
+    - [Changing or Removing Tickers](#changing-or-removing-tickers)
+    - [Adding Tickers](#adding-tickers)
+    - [Updating the Package](#updating-the-package)
+
 ## Working with Git & Pull Requests
 
 Any new contribution will require a Pull Request to be made. In essence, all you really need is Git and basic understanding of how a Pull Request works. Find some resources that explain this well here:
@@ -102,7 +109,91 @@ To find more information about each category:
 - "summary": enter a brief company description, explaining the purpose of the company.
 - "zipcode": if applicable, enter the zipcode.
 
-This sometimes differs between asset classes but should be self explanatory. **There is room for improvement in automization for some of this. Feel free to leave suggestions about this as well.**
+:warning: **There is room for improvement in automization for some of this. Feel free to leave suggestions about this as well.**
+
+This sometimes differs between asset classes, see the difference templates:
+
+**Cryptocurrencies**
+
+```json
+"ETC-USD": {
+    "cryptocurrency": "ETC",
+    "currency": "USD",
+    "exchange": "CCC",
+    "market": "ccc_market",
+    "short_name": "EthereumClassic USD",
+    "summary": "Ethereum Classic (ETC) is a cryptocurrency . Users are able to generate ETC through the process of mining. Ethereum Classic has a current supply of 116,313,299. The last known price of Ethereum Classic is 127.66382269 USD and is up 4.60 over the last 24 hours. It is currently trading on 277 active market(s) with $19,208,674,461.21 traded over the last 24 hours. More information can be found at https://ethereumclassic.org/."
+}
+```
+
+**Currencies**
+
+```json
+"EURUSD=X": {
+    "currency": "USD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/USD"
+}
+```
+
+**ETFs**
+
+```json
+"VOO": {
+    "short_name": "Vanguard S&P 500 ETF",
+    "long_name": "Vanguard S&P 500 ETF",
+    "currency": "USD",
+    "summary": "The investment seeks to track the performance of the Standard & Poor\u00e2\u0080\u0098s 500 Index that measures the investment return of large-capitalization stocks.\n The fund employs an indexing investment approach designed to track the performance of the Standard & Poor&#39;s 500 Index, a widely recognized benchmark of U.S. stock market performance that is dominated by the stocks of large U.S. companies. The advisor attempts to replicate the target index by investing all, or substantially all, of its assets in the stocks that make up the index, holding each stock in approximately the same proportion as its weighting in the index.",
+    "category": "Large Blend",
+    "family": "Vanguard",
+    "exchange": "PCX",
+    "market": "us_market",
+    "total_assets": 705316978688
+}
+```
+
+**Funds**
+
+```json
+"VAIPX": {
+    "short_name": "Vanguard Inflation Protected Se",
+    "long_name": "Vanguard Inflation-Protected Securities Fund Admiral Shares",
+    "currency": "USD",
+    "summary": "The investment seeks to provide inflation protection and income consistent with investment in inflation-indexed securities.  The fund invests at least 80% of its assets in inflation-indexed bonds issued by the U.S. government, its agencies and instrumentalities, and corporations. It may invest in bonds of any maturity; however, its dollar-weighted average maturity is expected to be in the range of 7 to 20 years. At a minimum, all bonds purchased by the fund will be rated investment-grade or, if unrated, will be considered by the advisor to be investment-grade.",
+    "manager_name": "Gemma  Wright-Casparius",
+    "manager_bio": "Gemma Wright-Casparius, Principal of Vanguard. She has worked in investment management since 2005, has managed investment portfolios since 2008; has been with Vanguard since 2011; and has managed the Short-Term Treasury, Intermediate-Term Treasury, and Long-Term Treasury Funds since 2015. Education: B.B.A. and M.B.A., Bernard M. Baruch College of The City University of New York.",
+    "category": "Inflation-Protected Bond",
+    "family": "Vanguard",
+    "exchange": "NAS",
+    "market": "us_market",
+    "total_assets": null
+}
+```
+
+**Indices**
+
+```json
+"^GSPC": {
+    "short_name": "S&P 500",
+    "currency": "USD",
+    "market": "us_market",
+    "exchange": "SNP",
+    "exchange timezone": "EDT"
+}
+```
+
+**Money Markets**
+
+```json
+"BNBXX": {
+    "currency": "USD",
+    "exchange": "NAS",
+    "long_name": "BlackRock Liquidity Funds - New York Money Fund",
+    "market": "us_market",
+    "short_name": "BlackRock Liquidity Funds New Y"
+},
+```
 
 ## Updating the Package
 
