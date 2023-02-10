@@ -6,6 +6,10 @@
 [![PYPI Version](https://img.shields.io/pypi/v/FinanceDatabase)](https://pypi.org/project/FinanceDatabase/)
 [![PYPI Downloads](https://img.shields.io/pypi/dm/FinanceDatabase)](https://pypi.org/project/FinanceDatabase/)
 
+| :bulb: **Call for Contributors for the FinanceDatabase** :bulb:   |
+|:------------------------------------------------------:|
+| The FinanceDatabase serves the role of providing any type of investor with any type of financial product categorisation completely for free. To be able to achieve this, the FinanceDatabase relies on involvement from the community to update, edit and remove tickers over time. This is made easy enough that anyone, even with a lack of coding experience can contribute because of the generation of JSON files that can be manually edited. I'd like to invite you to go to the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md) to understand how you can help. **Thank you!** |
+
 As a private investor, the sheer amount of information that can be found on the internet is rather daunting. Trying to 
 understand what type of companies or ETFs are available is incredibly challenging with there being millions of
 companies and derivatives available on the market. Sure, the most traded companies and ETFs can quickly be found
@@ -22,10 +26,6 @@ that exist in each country, industry and sector and gives the most essential inf
 this information, you can analyse specific areas of the financial world and/or find a product that is hard to find. 
 See for examples on how you can combine this database, and the earlier mentioned packages the section 
 [Examples](#Examples).
-
-| :bulb: **Call for Contributors for the FinanceDatabase** :bulb:   |
-|:------------------------------------------------------:|
-| The FinanceDatabase serves the role of providing any type of investor with any type of financial product categorisation completely for free. To be able to achieve this, the FinanceDatabase relies on involvement from the community to update, edit and remove tickers over time. This is made easy enough that anyone, even with a lack of coding experience can contribute because of the generation of JSON files that can be manually edited. I'd like to invite you to go to the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md) to understand how you can help. **Thank you!** |
 
 Some key statistics of the database:
 
