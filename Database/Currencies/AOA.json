@@ -1,44 +1,44 @@
 {
-    "AOA=X": {
-        "short_name": "USD/AOA",
-        "currency": "AOA",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADAOA=X": {
-        "short_name": "CAD/AOA",
-        "currency": "AOA",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFAOA=X": {
-        "short_name": "CHF/AOA",
-        "currency": "AOA",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURAOA=X": {
-        "short_name": "EUR/AOA",
-        "currency": "AOA",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPAOA=X": {
-        "short_name": "GBP/AOA",
-        "currency": "AOA",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYAOA=X": {
-        "short_name": "JPY/AOA",
-        "currency": "AOA",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "ZARAOA=X": {
-        "short_name": "ZAR/AOA",
-        "currency": "AOA",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AOA=X": {
+    "currency": "AOA",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/AOA"
+  },
+  "CADAOA=X": {
+    "currency": "AOA",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/AOA"
+  },
+  "CHFAOA=X": {
+    "currency": "AOA",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/AOA"
+  },
+  "EURAOA=X": {
+    "currency": "AOA",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/AOA"
+  },
+  "GBPAOA=X": {
+    "currency": "AOA",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/AOA"
+  },
+  "JPYAOA=X": {
+    "currency": "AOA",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/AOA"
+  },
+  "ZARAOA=X": {
+    "currency": "AOA",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "ZAR/AOA"
+  }
 }

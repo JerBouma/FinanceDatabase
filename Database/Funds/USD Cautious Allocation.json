@@ -1,28 +1,28 @@
 {
-    "0P00006HY5.SI": {
-        "short_name": "GrowthPath Today",
-        "long_name": "UOB GrowthPath Portfolios - UOB GrowthPath Today",
-        "currency": "SGD",
-        "summary": "The objective of GrowthPath Today is to provide income and short-term capital appreciation for investors planning to begin to withdraw portions of their investment in the near future.",
-        "manager_name": "Not  Disclosed",
-        "manager_bio": "",
-        "category": "USD Cautious Allocation",
-        "family": "UOB Asset Management Ltd",
-        "exchange": "SES",
-        "market": "sg_market",
-        "total_assets": 4691446.842580557
-    },
-    "0P0000ZQ7M.F": {
-        "short_name": "Nuveen Global Investers Fund Pl",
-        "long_name": "Nuveen Global Investers Fund Plc - NWQ Flexible Income Fund Class A Accumulating Euro",
-        "currency": "EUR",
-        "summary": "The investment objective of the Nuveen NWQ Flexible Income Fund is to seek to provide current income and capital appreciation.",
-        "manager_name": "Susi J. Budiman",
-        "manager_bio": "Prior to joining NWQ in 2006, Ms. Budiman was Portfolio Manager for China Life Insurance Company, Ltd. in Taiwan. Prior to the fixed income portfolio management position, Ms. Budiman was a currency exchange sales associate at Fleet National Bank in Singapore covering Asian , Euro, UK and other major currencies. Ms. Budiman graduated from the University of British Columbia with a Bachelor of Commerce degree in Finance.",
-        "category": "USD Cautious Allocation",
-        "family": "Nuveen Fund Advisors, LLC.",
-        "exchange": "FRA",
-        "market": "dr_market",
-        "total_assets": null
-    }
+  "0P00006HY5.SI": {
+    "category": "USD Cautious Allocation",
+    "currency": "SGD",
+    "exchange": "SES",
+    "family": "UOB Asset Management Ltd",
+    "long_name": "UOB GrowthPath Portfolios - UOB GrowthPath Today",
+    "manager_bio": "",
+    "manager_name": "Not  Disclosed",
+    "market": "sg_market",
+    "short_name": "GrowthPath Today",
+    "summary": "The objective of GrowthPath Today is to provide income and short-term capital appreciation for investors planning to begin to withdraw portions of their investment in the near future.",
+    "total_assets": 4691446.842580557
+  },
+  "0P0000ZQ7M.F": {
+    "category": "USD Cautious Allocation",
+    "currency": "EUR",
+    "exchange": "FRA",
+    "family": "Nuveen Fund Advisors, LLC.",
+    "long_name": "Nuveen Global Investers Fund Plc - NWQ Flexible Income Fund Class A Accumulating Euro",
+    "manager_bio": "Prior to joining NWQ in 2006, Ms. Budiman was Portfolio Manager for China Life Insurance Company, Ltd. in Taiwan. Prior to the fixed income portfolio management position, Ms. Budiman was a currency exchange sales associate at Fleet National Bank in Singapore covering Asian , Euro, UK and other major currencies. Ms. Budiman graduated from the University of British Columbia with a Bachelor of Commerce degree in Finance.",
+    "manager_name": "Susi J. Budiman",
+    "market": "dr_market",
+    "short_name": "Nuveen Global Investers Fund Pl",
+    "summary": "The investment objective of the Nuveen NWQ Flexible Income Fund is to seek to provide current income and capital appreciation.",
+    "total_assets": null
+  }
 }

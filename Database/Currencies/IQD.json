@@ -1,38 +1,38 @@
 {
-    "CADIQD=X": {
-        "short_name": "CAD/IQD",
-        "currency": "IQD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFIQD=X": {
-        "short_name": "CHF/IQD",
-        "currency": "IQD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURIQD=X": {
-        "short_name": "EUR/IQD",
-        "currency": "IQD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPIQD=X": {
-        "short_name": "GBP/IQD",
-        "currency": "IQD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "IQD=X": {
-        "short_name": "USD/IQD",
-        "currency": "IQD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYIQD=X": {
-        "short_name": "JPY/IQD",
-        "currency": "IQD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADIQD=X": {
+    "currency": "IQD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/IQD"
+  },
+  "CHFIQD=X": {
+    "currency": "IQD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/IQD"
+  },
+  "EURIQD=X": {
+    "currency": "IQD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/IQD"
+  },
+  "GBPIQD=X": {
+    "currency": "IQD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/IQD"
+  },
+  "IQD=X": {
+    "currency": "IQD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/IQD"
+  },
+  "JPYIQD=X": {
+    "currency": "IQD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/IQD"
+  }
 }

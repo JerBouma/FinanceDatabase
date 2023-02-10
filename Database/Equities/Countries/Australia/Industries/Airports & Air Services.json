@@ -1,34 +1,34 @@
 {
-    "SYD.AX": {
-        "short_name": "SYDAIRPORT STAPLED",
-        "long_name": "Sydney Airport Limited",
-        "summary": "Sydney Airport Limited owns Sydney Airport. The company provides international and domestic passenger services. It also offers aeronautical services, including access to terminals, infrastructure, apron parking, and airfield and terminal facilities, as well as government mandated security services for airlines; and parking and ground transport services, as well as leases commercial space to tenants whose activities comprise duty free, food and beverage, financial, and advertising services. In addition, the company is involved in the leasing of terminal space, buildings, and other space in the Sydney Airport; and rental of cars. Sydney Airport Limited was founded in 1919 and is based in Sydney, Australia.",
-        "currency": "AUD",
-        "sector": "Industrials",
-        "industry": "Airports & Air Services",
-        "exchange": "ASX",
-        "market": "au_market",
-        "country": "Australia",
-        "state": "NSW",
-        "city": "Sydney",
-        "zipcode": "2020",
-        "website": "http://www.sydneyairport.com.au",
-        "market_cap": "Large Cap"
-    },
-    "SYDDF": {
-        "short_name": "SYDNEY AIRPORT CORPORATION LTD",
-        "long_name": "Sydney Airport Limited",
-        "summary": "Sydney Airport Limited owns Sydney Airport. The company provides international and domestic passenger services. It also offers aeronautical services, including access to terminals, infrastructure, apron parking, and airfield and terminal facilities, as well as government mandated security services for airlines; and parking and ground transport services, as well as leases commercial space to tenants whose activities comprise duty free, food and beverage, financial, and advertising services. In addition, the company is involved in the leasing of terminal space, buildings, and other space in the Sydney Airport; and rental of cars. Sydney Airport Limited was founded in 1919 and is based in Sydney, Australia.",
-        "currency": "USD",
-        "sector": "Industrials",
-        "industry": "Airports & Air Services",
-        "exchange": "PNK",
-        "market": "us_market",
-        "country": "Australia",
-        "state": "NSW",
-        "city": "Sydney",
-        "zipcode": "2020",
-        "website": "http://www.sydneyairport.com.au",
-        "market_cap": "Large Cap"
-    }
+  "SYD.AX": {
+    "city": "Sydney",
+    "country": "Australia",
+    "currency": "AUD",
+    "exchange": "ASX",
+    "industry": "Airports & Air Services",
+    "long_name": "Sydney Airport Limited",
+    "market": "au_market",
+    "market_cap": "Large Cap",
+    "sector": "Industrials",
+    "short_name": "SYDAIRPORT STAPLED",
+    "state": "NSW",
+    "summary": "Sydney Airport Limited owns Sydney Airport. The company provides international and domestic passenger services. It also offers aeronautical services, including access to terminals, infrastructure, apron parking, and airfield and terminal facilities, as well as government mandated security services for airlines; and parking and ground transport services, as well as leases commercial space to tenants whose activities comprise duty free, food and beverage, financial, and advertising services. In addition, the company is involved in the leasing of terminal space, buildings, and other space in the Sydney Airport; and rental of cars. Sydney Airport Limited was founded in 1919 and is based in Sydney, Australia.",
+    "website": "http://www.sydneyairport.com.au",
+    "zipcode": "2020"
+  },
+  "SYDDF": {
+    "city": "Sydney",
+    "country": "Australia",
+    "currency": "USD",
+    "exchange": "PNK",
+    "industry": "Airports & Air Services",
+    "long_name": "Sydney Airport Limited",
+    "market": "us_market",
+    "market_cap": "Large Cap",
+    "sector": "Industrials",
+    "short_name": "SYDNEY AIRPORT CORPORATION LTD",
+    "state": "NSW",
+    "summary": "Sydney Airport Limited owns Sydney Airport. The company provides international and domestic passenger services. It also offers aeronautical services, including access to terminals, infrastructure, apron parking, and airfield and terminal facilities, as well as government mandated security services for airlines; and parking and ground transport services, as well as leases commercial space to tenants whose activities comprise duty free, food and beverage, financial, and advertising services. In addition, the company is involved in the leasing of terminal space, buildings, and other space in the Sydney Airport; and rental of cars. Sydney Airport Limited was founded in 1919 and is based in Sydney, Australia.",
+    "website": "http://www.sydneyairport.com.au",
+    "zipcode": "2020"
+  }
 }

@@ -1,79 +1,79 @@
 {
-    "DDLS": {
-        "short_name": "WisdomTree Dynamic Currency Hed",
-        "long_name": "WisdomTree Dynamic Currency Hedged International SmallCap Equity Fund",
-        "currency": "USD",
-        "summary": "The investment seeks to track the WisdomTree Dynamic Currency Hedged International SmallCap Equity Index.\n The fund will invest at least 80% of its total assets in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a dividend weighted index designed to provide exposure to small-capitalization equity securities in the industrialized world, excluding Canada and U.S., while at the same time dynamically hedging currency exposure to fluctuations between the value of foreign currencies and the USD. It is non-diversified.",
-        "category": "Foreign Small/Mid Value",
-        "family": "WisdomTree",
-        "exchange": "BTS",
-        "market": "us_market",
-        "total_assets": 40128984
-    },
-    "DIM": {
-        "short_name": "WisdomTree International MidCap",
-        "long_name": "WisdomTree International MidCap Dividend Fund",
-        "currency": "USD",
-        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree International MidCap Dividend Index.\n The fund normally invests at least 95% of its total assets (exclusive of collateral held from securities lending) in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a fundamentally weighted index that is comprised of the mid-capitalization segment of the dividend-paying market in the industrialized world outside the U.S. and Canada. The fund is non-diversified.",
-        "category": "Foreign Small/Mid Value",
-        "family": "WisdomTree",
-        "exchange": "PCX",
-        "market": "us_market",
-        "total_assets": 144404128
-    },
-    "DLS": {
-        "short_name": "WisdomTree International SmallC",
-        "long_name": "WisdomTree International SmallCap Dividend Fund",
-        "currency": "USD",
-        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree International SmallCap Dividend Index.\n Under normal circumstances, at least 95% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is comprised of the small-capitalization segment of the dividend-paying market in the industrialized world outside the U.S. and Canada. The fund is non-diversified.",
-        "category": "Foreign Small/Mid Value",
-        "family": "WisdomTree",
-        "exchange": "PCX",
-        "market": "us_market",
-        "total_assets": 1403544192
-    },
-    "FDTS": {
-        "short_name": "First Trust Developed Markets e",
-        "long_name": "First Trust Developed Markets ex-US Small Cap AlphaDEX Fund",
-        "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield of an equity index called the NASDAQ AlphaDEX\u00c2\u00ae Developed Markets Ex-US Small Cap Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks, depositary receipts, real estate investment trusts (\"REITs\") and preferred shares that comprise the index. The index is designed to select stocks from the NASDAQ Developed Markets Ex-US Index that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEX\u00c2\u00ae selection methodology.",
-        "category": "Foreign Small/Mid Value",
-        "family": "First Trust",
-        "exchange": "NGM",
-        "market": "us_market",
-        "total_assets": 9420191
-    },
-    "FYLD": {
-        "short_name": "Cambria Foreign Shareholder Yie",
-        "long_name": "Cambria Foreign Shareholder Yield ETF",
-        "currency": "USD",
-        "summary": "The investment seeks income and capital appreciation.\n The fund is actively managed and seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its total assets in equity securities, including common stock and depositary receipts, issued by publicly listed companies in developed foreign markets excluding the U.S. (\"developed ex-U.S.\"), that provide high \"shareholder yield.\" Its investment adviser, Cambria Investment Management, L.P. (\"Cambria\" or the \"Adviser\"), defines \"shareholder yield\" as the totality of returns realized by an investor from a company\u00e2\u0080\u0099s cash payments for dividends, buybacks and debt paydowns.",
-        "category": "Foreign Small/Mid Value",
-        "family": "CAMBRIA ETF TRUST",
-        "exchange": "BTS",
-        "market": "us_market",
-        "total_assets": 27543370
-    },
-    "GVAL": {
-        "short_name": "Cambria Global Value ETF",
-        "long_name": "Cambria Global Value ETF",
-        "currency": "USD",
-        "summary": "The investment seeks income and capital appreciation.\n The fund is actively managed and seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its total assets in equity securities, including common stock and depositary receipts, issued by publicly listed companies in developed and emerging markets that exhibit strong value characteristics. The fund\u00e2\u0080\u0099s investment adviser, Cambria Investment Management, L.P. (\u00e2\u0080\u009cCambria\u00e2\u0080\u009d or the \u00e2\u0080\u009cAdviser\u00e2\u0080\u009d), uses its own proprietary rules-based quantitative algorithm to select its holdings.",
-        "category": "Foreign Small/Mid Value",
-        "family": "CAMBRIA ETF TRUST",
-        "exchange": "BTS",
-        "market": "us_market",
-        "total_assets": 117007032
-    },
-    "PDN": {
-        "short_name": "Invesco FTSE RAFI Developed Mar",
-        "long_name": "Invesco FTSE RAFI Developed Markets ex-U.S. Small-Mid ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results (before fees and expenses) of the FTSE RAFI TM Developed ex U.S. Mid-Small 1500 Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index, as well as American depositary receipts (\"ADRs\") and global depositary receipts (\"GDRs\") that represent securities in the underlying index. The underlying index is comprised of securities of small-and mid-capitalization companies that are classified as \"developed\" within the country classification definition of FTSE, excluding the United States.",
-        "category": "Foreign Small/Mid Value",
-        "family": "Invesco",
-        "exchange": "PCX",
-        "market": "us_market",
-        "total_assets": 402616192
-    }
+  "DDLS": {
+    "category": "Foreign Small/Mid Value",
+    "currency": "USD",
+    "exchange": "BTS",
+    "family": "WisdomTree",
+    "long_name": "WisdomTree Dynamic Currency Hedged International SmallCap Equity Fund",
+    "market": "us_market",
+    "short_name": "WisdomTree Dynamic Currency Hed",
+    "summary": "The investment seeks to track the WisdomTree Dynamic Currency Hedged International SmallCap Equity Index.\n The fund will invest at least 80% of its total assets in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a dividend weighted index designed to provide exposure to small-capitalization equity securities in the industrialized world, excluding Canada and U.S., while at the same time dynamically hedging currency exposure to fluctuations between the value of foreign currencies and the USD. It is non-diversified.",
+    "total_assets": 40128984
+  },
+  "DIM": {
+    "category": "Foreign Small/Mid Value",
+    "currency": "USD",
+    "exchange": "PCX",
+    "family": "WisdomTree",
+    "long_name": "WisdomTree International MidCap Dividend Fund",
+    "market": "us_market",
+    "short_name": "WisdomTree International MidCap",
+    "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree International MidCap Dividend Index.\n The fund normally invests at least 95% of its total assets (exclusive of collateral held from securities lending) in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is a fundamentally weighted index that is comprised of the mid-capitalization segment of the dividend-paying market in the industrialized world outside the U.S. and Canada. The fund is non-diversified.",
+    "total_assets": 144404128
+  },
+  "DLS": {
+    "category": "Foreign Small/Mid Value",
+    "currency": "USD",
+    "exchange": "PCX",
+    "family": "WisdomTree",
+    "long_name": "WisdomTree International SmallCap Dividend Fund",
+    "market": "us_market",
+    "short_name": "WisdomTree International SmallC",
+    "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree International SmallCap Dividend Index.\n Under normal circumstances, at least 95% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is comprised of the small-capitalization segment of the dividend-paying market in the industrialized world outside the U.S. and Canada. The fund is non-diversified.",
+    "total_assets": 1403544192
+  },
+  "FDTS": {
+    "category": "Foreign Small/Mid Value",
+    "currency": "USD",
+    "exchange": "NGM",
+    "family": "First Trust",
+    "long_name": "First Trust Developed Markets ex-US Small Cap AlphaDEX Fund",
+    "market": "us_market",
+    "short_name": "First Trust Developed Markets e",
+    "summary": "The investment seeks investment results that correspond generally to the price and yield of an equity index called the NASDAQ AlphaDEXÂ® Developed Markets Ex-US Small Cap Index.\n The fund will normally invest at least 90% of its net assets (including investment borrowings) in the common stocks, depositary receipts, real estate investment trusts (\"REITs\") and preferred shares that comprise the index. The index is designed to select stocks from the NASDAQ Developed Markets Ex-US Index that may generate positive alpha, or risk-adjusted returns, relative to traditional indices through the use of the AlphaDEXÂ® selection methodology.",
+    "total_assets": 9420191
+  },
+  "FYLD": {
+    "category": "Foreign Small/Mid Value",
+    "currency": "USD",
+    "exchange": "BTS",
+    "family": "CAMBRIA ETF TRUST",
+    "long_name": "Cambria Foreign Shareholder Yield ETF",
+    "market": "us_market",
+    "short_name": "Cambria Foreign Shareholder Yie",
+    "summary": "The investment seeks income and capital appreciation.\n The fund is actively managed and seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its total assets in equity securities, including common stock and depositary receipts, issued by publicly listed companies in developed foreign markets excluding the U.S. (\"developed ex-U.S.\"), that provide high \"shareholder yield.\" Its investment adviser, Cambria Investment Management, L.P. (\"Cambria\" or the \"Adviser\"), defines \"shareholder yield\" as the totality of returns realized by an investor from a companyâs cash payments for dividends, buybacks and debt paydowns.",
+    "total_assets": 27543370
+  },
+  "GVAL": {
+    "category": "Foreign Small/Mid Value",
+    "currency": "USD",
+    "exchange": "BTS",
+    "family": "CAMBRIA ETF TRUST",
+    "long_name": "Cambria Global Value ETF",
+    "market": "us_market",
+    "short_name": "Cambria Global Value ETF",
+    "summary": "The investment seeks income and capital appreciation.\n The fund is actively managed and seeks to achieve its investment objective by investing, under normal market conditions, at least 80% of its total assets in equity securities, including common stock and depositary receipts, issued by publicly listed companies in developed and emerging markets that exhibit strong value characteristics. The fundâs investment adviser, Cambria Investment Management, L.P. (âCambriaâ or the âAdviserâ), uses its own proprietary rules-based quantitative algorithm to select its holdings.",
+    "total_assets": 117007032
+  },
+  "PDN": {
+    "category": "Foreign Small/Mid Value",
+    "currency": "USD",
+    "exchange": "PCX",
+    "family": "Invesco",
+    "long_name": "Invesco FTSE RAFI Developed Markets ex-U.S. Small-Mid ETF",
+    "market": "us_market",
+    "short_name": "Invesco FTSE RAFI Developed Mar",
+    "summary": "The investment seeks to track the investment results (before fees and expenses) of the FTSE RAFI TM Developed ex U.S. Mid-Small 1500 Index (the \"underlying index\").\n The fund generally will invest at least 90% of its total assets in the securities that comprise the underlying index, as well as American depositary receipts (\"ADRs\") and global depositary receipts (\"GDRs\") that represent securities in the underlying index. The underlying index is comprised of securities of small-and mid-capitalization companies that are classified as \"developed\" within the country classification definition of FTSE, excluding the United States.",
+    "total_assets": 402616192
+  }
 }

@@ -1,38 +1,38 @@
 {
-    "CADNPR=X": {
-        "short_name": "CAD/NPR",
-        "currency": "NPR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFNPR=X": {
-        "short_name": "CHF/NPR",
-        "currency": "NPR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURNPR=X": {
-        "short_name": "EUR/NPR",
-        "currency": "NPR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPNPR=X": {
-        "short_name": "GBP/NPR",
-        "currency": "NPR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYNPR=X": {
-        "short_name": "JPY/NPR",
-        "currency": "NPR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "NPR=X": {
-        "short_name": "USD/NPR",
-        "currency": "NPR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADNPR=X": {
+    "currency": "NPR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/NPR"
+  },
+  "CHFNPR=X": {
+    "currency": "NPR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/NPR"
+  },
+  "EURNPR=X": {
+    "currency": "NPR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/NPR"
+  },
+  "GBPNPR=X": {
+    "currency": "NPR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/NPR"
+  },
+  "JPYNPR=X": {
+    "currency": "NPR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/NPR"
+  },
+  "NPR=X": {
+    "currency": "NPR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/NPR"
+  }
 }

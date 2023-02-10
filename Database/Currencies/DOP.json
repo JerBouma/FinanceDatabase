@@ -1,44 +1,44 @@
 {
-    "AUDDOP=X": {
-        "short_name": "AUD/DOP",
-        "currency": "DOP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADDOP=X": {
-        "short_name": "CAD/DOP",
-        "currency": "DOP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFDOP=X": {
-        "short_name": "CHF/DOP",
-        "currency": "DOP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "DOP=X": {
-        "short_name": "USD/DOP",
-        "currency": "DOP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURDOP=X": {
-        "short_name": "EUR/DOP",
-        "currency": "DOP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPDOP=X": {
-        "short_name": "GBP/DOP",
-        "currency": "DOP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYDOP=X": {
-        "short_name": "JPY/DOP",
-        "currency": "DOP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AUDDOP=X": {
+    "currency": "DOP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/DOP"
+  },
+  "CADDOP=X": {
+    "currency": "DOP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/DOP"
+  },
+  "CHFDOP=X": {
+    "currency": "DOP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/DOP"
+  },
+  "DOP=X": {
+    "currency": "DOP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/DOP"
+  },
+  "EURDOP=X": {
+    "currency": "DOP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/DOP"
+  },
+  "GBPDOP=X": {
+    "currency": "DOP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/DOP"
+  },
+  "JPYDOP=X": {
+    "currency": "DOP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/DOP"
+  }
 }

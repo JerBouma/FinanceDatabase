@@ -1,28 +1,28 @@
 {
-    "AT0000857412.VI": {
-        "short_name": "Amundi Austria Stock",
-        "long_name": "Amundi Austria Stock A",
-        "currency": "EUR",
-        "summary": "Equity fund, invested in Austrian companies.",
-        "manager_name": "Andreas  Wosol",
-        "manager_bio": "",
-        "category": "Austria Equity",
-        "family": "Amundi Austria GmbH",
-        "exchange": "VIE",
-        "market": "at_market",
-        "total_assets": 207069027.2693634
-    },
-    "AT0000858147.VI": {
-        "short_name": "ERSTE STOCK VIENNA (A) (EUR)",
-        "long_name": "ESPA Stock Vienna A",
-        "currency": "EUR",
-        "summary": "The ESPA STOCK VIENNA fund is an equity fund geared towards achieving long-term capital appreciation. The strategic focus of the fund is on the shares of companies from Austria. The management of the fund pursues an active investment approach that is geared towards the weightings of the benchmark (ATX Prime Index).",
-        "manager_name": "Bernhard  Ruttenstorfer",
-        "manager_bio": "",
-        "category": "Austria Equity",
-        "family": "Erste Asset Management GmbH",
-        "exchange": "VIE",
-        "market": "at_market",
-        "total_assets": 68909527.43778229
-    }
+  "AT0000857412.VI": {
+    "category": "Austria Equity",
+    "currency": "EUR",
+    "exchange": "VIE",
+    "family": "Amundi Austria GmbH",
+    "long_name": "Amundi Austria Stock A",
+    "manager_bio": "",
+    "manager_name": "Andreas  Wosol",
+    "market": "at_market",
+    "short_name": "Amundi Austria Stock",
+    "summary": "Equity fund, invested in Austrian companies.",
+    "total_assets": 207069027.2693634
+  },
+  "AT0000858147.VI": {
+    "category": "Austria Equity",
+    "currency": "EUR",
+    "exchange": "VIE",
+    "family": "Erste Asset Management GmbH",
+    "long_name": "ESPA Stock Vienna A",
+    "manager_bio": "",
+    "manager_name": "Bernhard  Ruttenstorfer",
+    "market": "at_market",
+    "short_name": "ERSTE STOCK VIENNA (A) (EUR)",
+    "summary": "The ESPA STOCK VIENNA fund is an equity fund geared towards achieving long-term capital appreciation. The strategic focus of the fund is on the shares of companies from Austria. The management of the fund pursues an active investment approach that is geared towards the weightings of the benchmark (ATX Prime Index).",
+    "total_assets": 68909527.43778229
+  }
 }

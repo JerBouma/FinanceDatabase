@@ -1,79 +1,79 @@
 {
-    "GII": {
-        "short_name": "SPDR S&P Global Infrastructure ",
-        "long_name": "SPDR S&P Global Infrastructure ETF",
-        "currency": "USD",
-        "summary": "The investment seeks investment results that, before fees and expenses, correspond generally to the total return performance of the S&P Global Infrastructure Index.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in depositary receipts based on securities comprising the index. The index is comprised of 75 of the largest publicly listed infrastructure companies that meet specific investability requirements.",
-        "category": "Infrastructure",
-        "family": "SPDR State Street Global Advisors",
-        "exchange": "PCX",
-        "market": "us_market",
-        "total_assets": 423800928
-    },
-    "GLIF": {
-        "short_name": "AGFiQ Global Infrastructure ETF",
-        "long_name": "AGFiQ Global Infrastructure ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to provide long-term capital appreciation.\n The fund, under normal circumstances, invests at least 80% of its net assets (plus the amount of any borrowings for investment purposes) in securities of infrastructure-related companies located throughout the world, including the United States, and infrastructure-related investments. It may invest in issuers located in emerging market countries.",
-        "category": "Infrastructure",
-        "family": "AGFiQ",
-        "exchange": "PCX",
-        "market": "us_market",
-        "total_assets": 2511444
-    },
-    "IGF": {
-        "short_name": "iShares Global Infrastructure E",
-        "long_name": "iShares Global Infrastructure ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the S&P Global Infrastructure IndexTM.\n The fund generally invests at least 90% of its assets in the component securities of the index and in investments that have economic characteristics that are substantially identical to the component securities and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The index is designed to track performance of the stocks of large infrastructure companies in developed or emerging markets that must be domiciled in developed markets, or whose stocks are listed on developed market exchanges around the world.",
-        "category": "Infrastructure",
-        "family": "iShares",
-        "exchange": "NGM",
-        "market": "us_market",
-        "total_assets": 2936543744
-    },
-    "INFR": {
-        "short_name": "Legg Mason Global Infrastructur",
-        "long_name": "Legg Mason Global Infrastructure ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the RARE Global Infrastructure Index (the \"underlying index\").\n The fund will invest at least 80% of its net assets, plus borrowings for investment purposes, if any, in securities that compose its underlying index. The underlying index is composed of equity securities in developed and developing markets that are included in the MSCI ACWI All Cap Index. Companies in the MSCI ACWI All Cap Index are screened to include only companies within the Global Industry Classification Standard (GICS) sub-industries and are classified into infrastructure sectors.",
-        "category": "Infrastructure",
-        "family": "Franklin Templeton Investments",
-        "exchange": "NMS",
-        "market": "us_market",
-        "total_assets": 12344099
-    },
-    "NFRA": {
-        "short_name": "FlexShares STOXX Global Broad I",
-        "long_name": "FlexShares STOXX Global Broad Infrastructure Index Fund",
-        "currency": "USD",
-        "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the STOXX\u00c2\u00ae Global Broad Infrastructure Index.\n The index reflects the performance of a selection of companies that, in aggregate, offer broad exposure to publicly-traded developed- and emerging-market infrastructure companies, including U.S. companies, as defined by STOXX Ltd. (the \"index provider\") pursuant to its index methodology. Under normal circumstances, the fund will invest at least 80% of its total assets in the securities of the index and in ADRs and GDRs based on the securities in the index. It is non-diversified.",
-        "category": "Infrastructure",
-        "family": "Flexshares Trust",
-        "exchange": "PCX",
-        "market": "us_market",
-        "total_assets": 2277634048
-    },
-    "SIMS": {
-        "short_name": "SPDR S&P Kensho Intelligent Str",
-        "long_name": "SPDR S&P Kensho Intelligent Structures ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the S&P Kensho Intelligent Infrastructure Index.\n Under normal market conditions, the fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is comprised of U.S.-listed equity securities (including depositary receipts) of companies domiciled across developed and emerging markets worldwide which are included in the Intelligent Infrastructure sector as determined by a classification standard produced by the index provider. The fund is non-diversified.",
-        "category": "Infrastructure",
-        "family": "SPDR State Street Global Advisors",
-        "exchange": "PCX",
-        "market": "us_market",
-        "total_assets": 56776544
-    },
-    "TOLZ": {
-        "short_name": "ProShares DJ Brookfield Global ",
-        "long_name": "ProShares DJ Brookfield Global Infrastructure ETF",
-        "currency": "USD",
-        "summary": "The investment seeks investment results, before fees and expenses, that track the performance of the Dow Jones Brookfield Global Infrastructure Composite Index (the \"index\").\n The index consists of companies domiciled globally that qualify as \"pure-play\" infrastructure companies-companies whose primary business is the ownership and operation of infrastructure assets, activities that generally generate long-term stable cash flows. Under normal circumstances, the fund will invest at least 80% of its total assets in component securities. It is non-diversified.",
-        "category": "Infrastructure",
-        "family": "ProShares",
-        "exchange": "PCX",
-        "market": "us_market",
-        "total_assets": 151000816
-    }
+  "GII": {
+    "category": "Infrastructure",
+    "currency": "USD",
+    "exchange": "PCX",
+    "family": "SPDR State Street Global Advisors",
+    "long_name": "SPDR S&P Global Infrastructure ETF",
+    "market": "us_market",
+    "short_name": "SPDR S&P Global Infrastructure ",
+    "summary": "The investment seeks investment results that, before fees and expenses, correspond generally to the total return performance of the S&P Global Infrastructure Index.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in depositary receipts based on securities comprising the index. The index is comprised of 75 of the largest publicly listed infrastructure companies that meet specific investability requirements.",
+    "total_assets": 423800928
+  },
+  "GLIF": {
+    "category": "Infrastructure",
+    "currency": "USD",
+    "exchange": "PCX",
+    "family": "AGFiQ",
+    "long_name": "AGFiQ Global Infrastructure ETF",
+    "market": "us_market",
+    "short_name": "AGFiQ Global Infrastructure ETF",
+    "summary": "The investment seeks to provide long-term capital appreciation.\n The fund, under normal circumstances, invests at least 80% of its net assets (plus the amount of any borrowings for investment purposes) in securities of infrastructure-related companies located throughout the world, including the United States, and infrastructure-related investments. It may invest in issuers located in emerging market countries.",
+    "total_assets": 2511444
+  },
+  "IGF": {
+    "category": "Infrastructure",
+    "currency": "USD",
+    "exchange": "NGM",
+    "family": "iShares",
+    "long_name": "iShares Global Infrastructure ETF",
+    "market": "us_market",
+    "short_name": "iShares Global Infrastructure E",
+    "summary": "The investment seeks to track the S&P Global Infrastructure IndexTM.\n The fund generally invests at least 90% of its assets in the component securities of the index and in investments that have economic characteristics that are substantially identical to the component securities and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents. The index is designed to track performance of the stocks of large infrastructure companies in developed or emerging markets that must be domiciled in developed markets, or whose stocks are listed on developed market exchanges around the world.",
+    "total_assets": 2936543744
+  },
+  "INFR": {
+    "category": "Infrastructure",
+    "currency": "USD",
+    "exchange": "NMS",
+    "family": "Franklin Templeton Investments",
+    "long_name": "Legg Mason Global Infrastructure ETF",
+    "market": "us_market",
+    "short_name": "Legg Mason Global Infrastructur",
+    "summary": "The investment seeks to track the investment results of the RARE Global Infrastructure Index (the \"underlying index\").\n The fund will invest at least 80% of its net assets, plus borrowings for investment purposes, if any, in securities that compose its underlying index. The underlying index is composed of equity securities in developed and developing markets that are included in the MSCI ACWI All Cap Index. Companies in the MSCI ACWI All Cap Index are screened to include only companies within the Global Industry Classification Standard (GICS) sub-industries and are classified into infrastructure sectors.",
+    "total_assets": 12344099
+  },
+  "NFRA": {
+    "category": "Infrastructure",
+    "currency": "USD",
+    "exchange": "PCX",
+    "family": "Flexshares Trust",
+    "long_name": "FlexShares STOXX Global Broad Infrastructure Index Fund",
+    "market": "us_market",
+    "short_name": "FlexShares STOXX Global Broad I",
+    "summary": "The investment seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the STOXXÂ® Global Broad Infrastructure Index.\n The index reflects the performance of a selection of companies that, in aggregate, offer broad exposure to publicly-traded developed- and emerging-market infrastructure companies, including U.S. companies, as defined by STOXX Ltd. (the \"index provider\") pursuant to its index methodology. Under normal circumstances, the fund will invest at least 80% of its total assets in the securities of the index and in ADRs and GDRs based on the securities in the index. It is non-diversified.",
+    "total_assets": 2277634048
+  },
+  "SIMS": {
+    "category": "Infrastructure",
+    "currency": "USD",
+    "exchange": "PCX",
+    "family": "SPDR State Street Global Advisors",
+    "long_name": "SPDR S&P Kensho Intelligent Structures ETF",
+    "market": "us_market",
+    "short_name": "SPDR S&P Kensho Intelligent Str",
+    "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the total return performance of the S&P Kensho Intelligent Infrastructure Index.\n Under normal market conditions, the fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index. The index is comprised of U.S.-listed equity securities (including depositary receipts) of companies domiciled across developed and emerging markets worldwide which are included in the Intelligent Infrastructure sector as determined by a classification standard produced by the index provider. The fund is non-diversified.",
+    "total_assets": 56776544
+  },
+  "TOLZ": {
+    "category": "Infrastructure",
+    "currency": "USD",
+    "exchange": "PCX",
+    "family": "ProShares",
+    "long_name": "ProShares DJ Brookfield Global Infrastructure ETF",
+    "market": "us_market",
+    "short_name": "ProShares DJ Brookfield Global ",
+    "summary": "The investment seeks investment results, before fees and expenses, that track the performance of the Dow Jones Brookfield Global Infrastructure Composite Index (the \"index\").\n The index consists of companies domiciled globally that qualify as \"pure-play\" infrastructure companies-companies whose primary business is the ownership and operation of infrastructure assets, activities that generally generate long-term stable cash flows. Under normal circumstances, the fund will invest at least 80% of its total assets in component securities. It is non-diversified.",
+    "total_assets": 151000816
+  }
 }

@@ -1,44 +1,44 @@
 {
-    "AUDBZD=X": {
-        "short_name": "AUD/BZD",
-        "currency": "BZD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "BZD=X": {
-        "short_name": "USD/BZD",
-        "currency": "BZD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADBZD=X": {
-        "short_name": "CAD/BZD",
-        "currency": "BZD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFBZD=X": {
-        "short_name": "CHF/BZD",
-        "currency": "BZD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURBZD=X": {
-        "short_name": "EUR/BZD",
-        "currency": "BZD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPBZD=X": {
-        "short_name": "GBP/BZD",
-        "currency": "BZD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYBZD=X": {
-        "short_name": "JPY/BZD",
-        "currency": "BZD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AUDBZD=X": {
+    "currency": "BZD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/BZD"
+  },
+  "BZD=X": {
+    "currency": "BZD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/BZD"
+  },
+  "CADBZD=X": {
+    "currency": "BZD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/BZD"
+  },
+  "CHFBZD=X": {
+    "currency": "BZD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/BZD"
+  },
+  "EURBZD=X": {
+    "currency": "BZD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/BZD"
+  },
+  "GBPBZD=X": {
+    "currency": "BZD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/BZD"
+  },
+  "JPYBZD=X": {
+    "currency": "BZD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/BZD"
+  }
 }

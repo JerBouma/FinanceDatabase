@@ -1,62 +1,62 @@
 {
-    "CADVND=X": {
-        "short_name": "CAD/VND",
-        "currency": "VND",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFVND=X": {
-        "short_name": "CHF/VND",
-        "currency": "VND",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURVND=X": {
-        "short_name": "EUR/VND",
-        "currency": "VND",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPVND=X": {
-        "short_name": "GBP/VND",
-        "currency": "VND",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "HKDVND=X": {
-        "short_name": "HKD/VND",
-        "currency": "VND",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYVND=X": {
-        "short_name": "JPY/VND",
-        "currency": "VND",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "PHPVND=X": {
-        "short_name": "PHP/VND",
-        "currency": "VND",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "PKRVND=X": {
-        "short_name": "PKR/VND",
-        "currency": "VND",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SGDVND=X": {
-        "short_name": "SGD/VND",
-        "currency": "VND",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "VND=X": {
-        "short_name": "USD/VND",
-        "currency": "VND",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADVND=X": {
+    "currency": "VND",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/VND"
+  },
+  "CHFVND=X": {
+    "currency": "VND",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/VND"
+  },
+  "EURVND=X": {
+    "currency": "VND",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/VND"
+  },
+  "GBPVND=X": {
+    "currency": "VND",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/VND"
+  },
+  "HKDVND=X": {
+    "currency": "VND",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "HKD/VND"
+  },
+  "JPYVND=X": {
+    "currency": "VND",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/VND"
+  },
+  "PHPVND=X": {
+    "currency": "VND",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "PHP/VND"
+  },
+  "PKRVND=X": {
+    "currency": "VND",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "PKR/VND"
+  },
+  "SGDVND=X": {
+    "currency": "VND",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "SGD/VND"
+  },
+  "VND=X": {
+    "currency": "VND",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/VND"
+  }
 }

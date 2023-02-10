@@ -1,38 +1,38 @@
 {
-    "CADMDL=X": {
-        "short_name": "CAD/MDL",
-        "currency": "MDL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFMDL=X": {
-        "short_name": "CHF/MDL",
-        "currency": "MDL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURMDL=X": {
-        "short_name": "EUR/MDL",
-        "currency": "MDL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPMDL=X": {
-        "short_name": "GBP/MDL",
-        "currency": "MDL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYMDL=X": {
-        "short_name": "JPY/MDL",
-        "currency": "MDL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "MDL=X": {
-        "short_name": "USD/MDL",
-        "currency": "MDL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADMDL=X": {
+    "currency": "MDL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/MDL"
+  },
+  "CHFMDL=X": {
+    "currency": "MDL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/MDL"
+  },
+  "EURMDL=X": {
+    "currency": "MDL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/MDL"
+  },
+  "GBPMDL=X": {
+    "currency": "MDL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/MDL"
+  },
+  "JPYMDL=X": {
+    "currency": "MDL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/MDL"
+  },
+  "MDL=X": {
+    "currency": "MDL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/MDL"
+  }
 }

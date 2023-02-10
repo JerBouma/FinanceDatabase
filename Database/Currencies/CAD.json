@@ -1,182 +1,182 @@
 {
-    "AEDCAD=X": {
-        "short_name": "AED/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "AUDCAD=X": {
-        "short_name": "AUD/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "BDTCAD=X": {
-        "short_name": "BDT/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "BWPCAD=X": {
-        "short_name": "BWP/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CAD=X": {
-        "short_name": "USD/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFCAD=X": {
-        "short_name": "CHF/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CNYCAD=X": {
-        "short_name": "CNY/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "DKKCAD=X": {
-        "short_name": "DKK/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURCAD=X": {
-        "short_name": "EUR/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPCAD=X": {
-        "short_name": "GBP/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GHSCAD=X": {
-        "short_name": "GHS/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "HKDCAD=X": {
-        "short_name": "HKD/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "IDRCAD=X": {
-        "short_name": "IDR/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "INRCAD=X": {
-        "short_name": "INR/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYCAD=X": {
-        "short_name": "JPY/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "KRWCAD=X": {
-        "short_name": "KRW/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "LKRCAD=X": {
-        "short_name": "LKR/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "MXNCAD=X": {
-        "short_name": "MXN/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "MYRCAD=X": {
-        "short_name": "MYR/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "NOKCAD=X": {
-        "short_name": "NOK/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "NZDCAD=X": {
-        "short_name": "NZD/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "OMRCAD=X": {
-        "short_name": "OMR/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "PHPCAD=X": {
-        "short_name": "PHP/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "PKRCAD=X": {
-        "short_name": "PKR/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SEKCAD=X": {
-        "short_name": "SEK/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "THBCAD=X": {
-        "short_name": "THB/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "TWDCAD=X": {
-        "short_name": "TWD/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "UGXCAD=X": {
-        "short_name": "UGX/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "ZARCAD=X": {
-        "short_name": "ZAR/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "ZMWCAD=X": {
-        "short_name": "ZMW/CAD",
-        "currency": "CAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AEDCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AED/CAD"
+  },
+  "AUDCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/CAD"
+  },
+  "BDTCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "BDT/CAD"
+  },
+  "BWPCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "BWP/CAD"
+  },
+  "CAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/CAD"
+  },
+  "CHFCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/CAD"
+  },
+  "CNYCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CNY/CAD"
+  },
+  "DKKCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "DKK/CAD"
+  },
+  "EURCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/CAD"
+  },
+  "GBPCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/CAD"
+  },
+  "GHSCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GHS/CAD"
+  },
+  "HKDCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "HKD/CAD"
+  },
+  "IDRCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "IDR/CAD"
+  },
+  "INRCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "INR/CAD"
+  },
+  "JPYCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/CAD"
+  },
+  "KRWCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "KRW/CAD"
+  },
+  "LKRCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "LKR/CAD"
+  },
+  "MXNCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "MXN/CAD"
+  },
+  "MYRCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "MYR/CAD"
+  },
+  "NOKCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "NOK/CAD"
+  },
+  "NZDCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "NZD/CAD"
+  },
+  "OMRCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "OMR/CAD"
+  },
+  "PHPCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "PHP/CAD"
+  },
+  "PKRCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "PKR/CAD"
+  },
+  "SEKCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "SEK/CAD"
+  },
+  "THBCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "THB/CAD"
+  },
+  "TWDCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "TWD/CAD"
+  },
+  "UGXCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "UGX/CAD"
+  },
+  "ZARCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "ZAR/CAD"
+  },
+  "ZMWCAD=X": {
+    "currency": "CAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "ZMW/CAD"
+  }
 }

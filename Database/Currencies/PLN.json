@@ -1,122 +1,122 @@
 {
-    "AUDPLN=X": {
-        "short_name": "AUD/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADPLN=X": {
-        "short_name": "CAD/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFPLN=X": {
-        "short_name": "CHF/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CNYPLN=X": {
-        "short_name": "CNY/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CZKPLN=X": {
-        "short_name": "CZK/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "DKKPLN=X": {
-        "short_name": "DKK/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURPLN=X": {
-        "short_name": "EUR/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPPLN=X": {
-        "short_name": "GBP/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "HKDPLN=X": {
-        "short_name": "HKD/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "ILSPLN=X": {
-        "short_name": "ILS/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "INRPLN=X": {
-        "short_name": "INR/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYPLN=X": {
-        "short_name": "JPY/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "NOKPLN=X": {
-        "short_name": "NOK/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "NZDPLN=X": {
-        "short_name": "NZD/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "PLN=X": {
-        "short_name": "USD/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "RUBPLN=X": {
-        "short_name": "RUB/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SEKPLN=X": {
-        "short_name": "SEK/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SGDPLN=X": {
-        "short_name": "SGD/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "TRYPLN=X": {
-        "short_name": "TRY/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "ZARPLN=X": {
-        "short_name": "ZAR/PLN",
-        "currency": "PLN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AUDPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/PLN"
+  },
+  "CADPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/PLN"
+  },
+  "CHFPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/PLN"
+  },
+  "CNYPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CNY/PLN"
+  },
+  "CZKPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CZK/PLN"
+  },
+  "DKKPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "DKK/PLN"
+  },
+  "EURPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/PLN"
+  },
+  "GBPPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/PLN"
+  },
+  "HKDPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "HKD/PLN"
+  },
+  "ILSPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "ILS/PLN"
+  },
+  "INRPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "INR/PLN"
+  },
+  "JPYPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/PLN"
+  },
+  "NOKPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "NOK/PLN"
+  },
+  "NZDPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "NZD/PLN"
+  },
+  "PLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/PLN"
+  },
+  "RUBPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "RUB/PLN"
+  },
+  "SEKPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "SEK/PLN"
+  },
+  "SGDPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "SGD/PLN"
+  },
+  "TRYPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "TRY/PLN"
+  },
+  "ZARPLN=X": {
+    "currency": "PLN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "ZAR/PLN"
+  }
 }

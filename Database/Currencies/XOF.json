@@ -1,38 +1,38 @@
 {
-    "CADXOF=X": {
-        "short_name": "CAD/XOF",
-        "currency": "XOF",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFXOF=X": {
-        "short_name": "CHF/XOF",
-        "currency": "XOF",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURXOF=X": {
-        "short_name": "EUR/XOF",
-        "currency": "XOF",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPXOF=X": {
-        "short_name": "GBP/XOF",
-        "currency": "XOF",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYXOF=X": {
-        "short_name": "JPY/XOF",
-        "currency": "XOF",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "XOF=X": {
-        "short_name": "USD/XOF",
-        "currency": "XOF",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADXOF=X": {
+    "currency": "XOF",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/XOF"
+  },
+  "CHFXOF=X": {
+    "currency": "XOF",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/XOF"
+  },
+  "EURXOF=X": {
+    "currency": "XOF",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/XOF"
+  },
+  "GBPXOF=X": {
+    "currency": "XOF",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/XOF"
+  },
+  "JPYXOF=X": {
+    "currency": "XOF",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/XOF"
+  },
+  "XOF=X": {
+    "currency": "XOF",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/XOF"
+  }
 }

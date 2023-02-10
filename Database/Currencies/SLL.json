@@ -1,38 +1,38 @@
 {
-    "CADSLL=X": {
-        "short_name": "CAD/SLL",
-        "currency": "SLL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFSLL=X": {
-        "short_name": "CHF/SLL",
-        "currency": "SLL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURSLL=X": {
-        "short_name": "EUR/SLL",
-        "currency": "SLL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPSLL=X": {
-        "short_name": "GBP/SLL",
-        "currency": "SLL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYSLL=X": {
-        "short_name": "JPY/SLL",
-        "currency": "SLL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SLL=X": {
-        "short_name": "USD/SLL",
-        "currency": "SLL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADSLL=X": {
+    "currency": "SLL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/SLL"
+  },
+  "CHFSLL=X": {
+    "currency": "SLL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/SLL"
+  },
+  "EURSLL=X": {
+    "currency": "SLL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/SLL"
+  },
+  "GBPSLL=X": {
+    "currency": "SLL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/SLL"
+  },
+  "JPYSLL=X": {
+    "currency": "SLL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/SLL"
+  },
+  "SLL=X": {
+    "currency": "SLL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/SLL"
+  }
 }

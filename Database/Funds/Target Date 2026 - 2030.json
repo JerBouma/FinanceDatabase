@@ -1,28 +1,28 @@
 {
-    "0P00006HY8.SI": {
-        "short_name": "GrowthPath 2030",
-        "long_name": "UOB GrowthPath Portfolios - UOB GrowthPath 2030 Fund",
-        "currency": "SGD",
-        "summary": "The objective of GrowthPath 2030 is to provide long-term capital appreciation for investors planning to begin to withdraw substantial portions of their investment approximately in the year 2030.",
-        "manager_name": "Not  Disclosed",
-        "manager_bio": "",
-        "category": "Target Date 2026 - 2030",
-        "family": "UOB Asset Management Ltd",
-        "exchange": "SES",
-        "market": "sg_market",
-        "total_assets": 3923917.434893608
-    },
-    "0P0001CQCX.L": {
-        "short_name": "BlackRock ACS LifePath 2025-202",
-        "long_name": "BlackRock ACS LifePath 2025-2027 X1 GBP Accmulating",
-        "currency": "GBp",
-        "summary": "The fund is a target date retirement fund. The Fund\u00e2\u0080\u0099s objective is to provide a total return with an asset allocation that\nchanges over time.",
-        "manager_name": "",
-        "manager_bio": "",
-        "category": "Target Date 2026 - 2030",
-        "family": "BlackRock Fund Managers Limited",
-        "exchange": "LSE",
-        "market": "gb_market",
-        "total_assets": null
-    }
+  "0P00006HY8.SI": {
+    "category": "Target Date 2026 - 2030",
+    "currency": "SGD",
+    "exchange": "SES",
+    "family": "UOB Asset Management Ltd",
+    "long_name": "UOB GrowthPath Portfolios - UOB GrowthPath 2030 Fund",
+    "manager_bio": "",
+    "manager_name": "Not  Disclosed",
+    "market": "sg_market",
+    "short_name": "GrowthPath 2030",
+    "summary": "The objective of GrowthPath 2030 is to provide long-term capital appreciation for investors planning to begin to withdraw substantial portions of their investment approximately in the year 2030.",
+    "total_assets": 3923917.434893608
+  },
+  "0P0001CQCX.L": {
+    "category": "Target Date 2026 - 2030",
+    "currency": "GBp",
+    "exchange": "LSE",
+    "family": "BlackRock Fund Managers Limited",
+    "long_name": "BlackRock ACS LifePath 2025-2027 X1 GBP Accmulating",
+    "manager_bio": "",
+    "manager_name": "",
+    "market": "gb_market",
+    "short_name": "BlackRock ACS LifePath 2025-202",
+    "summary": "The fund is a target date retirement fund. The Fundâs objective is to provide a total return with an asset allocation that\nchanges over time.",
+    "total_assets": null
+  }
 }

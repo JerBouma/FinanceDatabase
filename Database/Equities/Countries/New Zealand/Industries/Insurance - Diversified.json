@@ -1,34 +1,34 @@
 {
-    "TWR.AX": {
-        "short_name": "TOWER FPO NZX",
-        "long_name": "Tower Limited",
-        "summary": "Tower Limited provides general insurance products in New Zealand and the Pacific Islands. Its insurance products include car, contents, renters', house, landlord, business, travel, boat, motorbike, lifestyle block and farm, motorhome, and caravan or trailer insurance. The company was founded in 1869 and is based in Auckland, New Zealand.",
-        "currency": "AUD",
-        "sector": "Financial Services",
-        "industry": "Insurance - Diversified",
-        "exchange": "ASX",
-        "market": "au_market",
-        "country": "New Zealand",
-        "state": null,
-        "city": "Auckland",
-        "zipcode": "1142",
-        "website": "http://www.tower.co.nz",
-        "market_cap": "Micro Cap"
-    },
-    "TWR.NZ": {
-        "short_name": "Tower Limited Ordinary Shares",
-        "long_name": "Tower Limited",
-        "summary": "Tower Limited provides general insurance products in New Zealand and the Pacific Islands. Its insurance products include car, contents, renters', house, landlord, business, travel, boat, motorbike, lifestyle block and farm, motorhome, and caravan or trailer insurance. The company was founded in 1869 and is based in Auckland, New Zealand.",
-        "currency": "NZD",
-        "sector": "Financial Services",
-        "industry": "Insurance - Diversified",
-        "exchange": "NZE",
-        "market": "nz_market",
-        "country": "New Zealand",
-        "state": null,
-        "city": "Auckland",
-        "zipcode": "1142",
-        "website": "http://www.tower.co.nz",
-        "market_cap": "Micro Cap"
-    }
+  "TWR.AX": {
+    "city": "Auckland",
+    "country": "New Zealand",
+    "currency": "AUD",
+    "exchange": "ASX",
+    "industry": "Insurance - Diversified",
+    "long_name": "Tower Limited",
+    "market": "au_market",
+    "market_cap": "Micro Cap",
+    "sector": "Financial Services",
+    "short_name": "TOWER FPO NZX",
+    "state": null,
+    "summary": "Tower Limited provides general insurance products in New Zealand and the Pacific Islands. Its insurance products include car, contents, renters', house, landlord, business, travel, boat, motorbike, lifestyle block and farm, motorhome, and caravan or trailer insurance. The company was founded in 1869 and is based in Auckland, New Zealand.",
+    "website": "http://www.tower.co.nz",
+    "zipcode": "1142"
+  },
+  "TWR.NZ": {
+    "city": "Auckland",
+    "country": "New Zealand",
+    "currency": "NZD",
+    "exchange": "NZE",
+    "industry": "Insurance - Diversified",
+    "long_name": "Tower Limited",
+    "market": "nz_market",
+    "market_cap": "Micro Cap",
+    "sector": "Financial Services",
+    "short_name": "Tower Limited Ordinary Shares",
+    "state": null,
+    "summary": "Tower Limited provides general insurance products in New Zealand and the Pacific Islands. Its insurance products include car, contents, renters', house, landlord, business, travel, boat, motorbike, lifestyle block and farm, motorhome, and caravan or trailer insurance. The company was founded in 1869 and is based in Auckland, New Zealand.",
+    "website": "http://www.tower.co.nz",
+    "zipcode": "1142"
+  }
 }

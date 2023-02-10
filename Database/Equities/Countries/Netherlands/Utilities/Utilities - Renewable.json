@@ -1,34 +1,34 @@
 {
-    "MPCES.OL": {
-        "short_name": "MPC ENERGY SOLUTIO",
-        "long_name": "MPC Energy Solutions N.V.",
-        "summary": "MPC Energy Solutions NV develop, construct, distribute, own, and operate renewable energy assets globally. The company offers sustainable energy and primarily focuses on low-carbon energy infrastructure, including solar assets, wind assets, hybrid assets, and energy efficiency solutions. The company is based in Amsterdam, Netherlands.",
-        "currency": "NOK",
-        "sector": "Utilities",
-        "industry": "Utilities - Renewable",
-        "exchange": "OSL",
-        "market": "no_market",
-        "country": "Netherlands",
-        "state": null,
-        "city": "Amsterdam",
-        "zipcode": "1077 XX",
-        "website": "http://www.mpc-energysolutions.com",
-        "market_cap": "Micro Cap"
-    },
-    "NSE.AS": {
-        "short_name": "NEW SOURCES ENERGY",
-        "long_name": "New Sources Energy N.V.",
-        "summary": "New Sources Energy N.V. develops, operates, exploits, and invests in projects that generates electricity using renewable energy sources. The company was formerly known as Management Share NV and changed its name to New Sources Energy N.V. in July 2011. New Sources Energy N.V. is headquartered in Amersfoort, the Netherlands.",
-        "currency": "EUR",
-        "sector": "Utilities",
-        "industry": "Utilities - Renewable",
-        "exchange": "AMS",
-        "market": "nl_market",
-        "country": "Netherlands",
-        "state": null,
-        "city": "Amersfoort",
-        "zipcode": "3822 NA",
-        "website": "http://www.newsourcesenergy.com",
-        "market_cap": "Nano Cap"
-    }
+  "MPCES.OL": {
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "currency": "NOK",
+    "exchange": "OSL",
+    "industry": "Utilities - Renewable",
+    "long_name": "MPC Energy Solutions N.V.",
+    "market": "no_market",
+    "market_cap": "Micro Cap",
+    "sector": "Utilities",
+    "short_name": "MPC ENERGY SOLUTIO",
+    "state": null,
+    "summary": "MPC Energy Solutions NV develop, construct, distribute, own, and operate renewable energy assets globally. The company offers sustainable energy and primarily focuses on low-carbon energy infrastructure, including solar assets, wind assets, hybrid assets, and energy efficiency solutions. The company is based in Amsterdam, Netherlands.",
+    "website": "http://www.mpc-energysolutions.com",
+    "zipcode": "1077 XX"
+  },
+  "NSE.AS": {
+    "city": "Amersfoort",
+    "country": "Netherlands",
+    "currency": "EUR",
+    "exchange": "AMS",
+    "industry": "Utilities - Renewable",
+    "long_name": "New Sources Energy N.V.",
+    "market": "nl_market",
+    "market_cap": "Nano Cap",
+    "sector": "Utilities",
+    "short_name": "NEW SOURCES ENERGY",
+    "state": null,
+    "summary": "New Sources Energy N.V. develops, operates, exploits, and invests in projects that generates electricity using renewable energy sources. The company was formerly known as Management Share NV and changed its name to New Sources Energy N.V. in July 2011. New Sources Energy N.V. is headquartered in Amersfoort, the Netherlands.",
+    "website": "http://www.newsourcesenergy.com",
+    "zipcode": "3822 NA"
+  }
 }

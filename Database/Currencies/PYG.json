@@ -1,44 +1,44 @@
 {
-    "AUDPYG=X": {
-        "short_name": "AUD/PYG",
-        "currency": "PYG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADPYG=X": {
-        "short_name": "CAD/PYG",
-        "currency": "PYG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFPYG=X": {
-        "short_name": "CHF/PYG",
-        "currency": "PYG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURPYG=X": {
-        "short_name": "EUR/PYG",
-        "currency": "PYG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPPYG=X": {
-        "short_name": "GBP/PYG",
-        "currency": "PYG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYPYG=X": {
-        "short_name": "JPY/PYG",
-        "currency": "PYG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "PYG=X": {
-        "short_name": "USD/PYG",
-        "currency": "PYG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AUDPYG=X": {
+    "currency": "PYG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/PYG"
+  },
+  "CADPYG=X": {
+    "currency": "PYG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/PYG"
+  },
+  "CHFPYG=X": {
+    "currency": "PYG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/PYG"
+  },
+  "EURPYG=X": {
+    "currency": "PYG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/PYG"
+  },
+  "GBPPYG=X": {
+    "currency": "PYG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/PYG"
+  },
+  "JPYPYG=X": {
+    "currency": "PYG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/PYG"
+  },
+  "PYG=X": {
+    "currency": "PYG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/PYG"
+  }
 }

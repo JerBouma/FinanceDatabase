@@ -1,38 +1,38 @@
 {
-    "CADYER=X": {
-        "short_name": "CAD/YER",
-        "currency": "YER",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFYER=X": {
-        "short_name": "CHF/YER",
-        "currency": "YER",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURYER=X": {
-        "short_name": "EUR/YER",
-        "currency": "YER",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPYER=X": {
-        "short_name": "GBP/YER",
-        "currency": "YER",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYYER=X": {
-        "short_name": "JPY/YER",
-        "currency": "YER",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "YER=X": {
-        "short_name": "USD/YER",
-        "currency": "YER",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADYER=X": {
+    "currency": "YER",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/YER"
+  },
+  "CHFYER=X": {
+    "currency": "YER",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/YER"
+  },
+  "EURYER=X": {
+    "currency": "YER",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/YER"
+  },
+  "GBPYER=X": {
+    "currency": "YER",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/YER"
+  },
+  "JPYYER=X": {
+    "currency": "YER",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/YER"
+  },
+  "YER=X": {
+    "currency": "YER",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/YER"
+  }
 }

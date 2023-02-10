@@ -1,56 +1,56 @@
 {
-    "AUDGIP=X": {
-        "short_name": "AUD/GIP",
-        "currency": "GIP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADGIP=X": {
-        "short_name": "CAD/GIP",
-        "currency": "GIP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFGIP=X": {
-        "short_name": "CHF/GIP",
-        "currency": "GIP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "DKKGIP=X": {
-        "short_name": "DKK/GIP",
-        "currency": "GIP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURGIP=X": {
-        "short_name": "EUR/GIP",
-        "currency": "GIP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPGIP=X": {
-        "short_name": "GBP/GIP",
-        "currency": "GIP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GIP=X": {
-        "short_name": "USD/GIP",
-        "currency": "GIP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYGIP=X": {
-        "short_name": "JPY/GIP",
-        "currency": "GIP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SEKGIP=X": {
-        "short_name": "SEK/GIP",
-        "currency": "GIP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AUDGIP=X": {
+    "currency": "GIP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/GIP"
+  },
+  "CADGIP=X": {
+    "currency": "GIP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/GIP"
+  },
+  "CHFGIP=X": {
+    "currency": "GIP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/GIP"
+  },
+  "DKKGIP=X": {
+    "currency": "GIP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "DKK/GIP"
+  },
+  "EURGIP=X": {
+    "currency": "GIP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/GIP"
+  },
+  "GBPGIP=X": {
+    "currency": "GIP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/GIP"
+  },
+  "GIP=X": {
+    "currency": "GIP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/GIP"
+  },
+  "JPYGIP=X": {
+    "currency": "GIP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/GIP"
+  },
+  "SEKGIP=X": {
+    "currency": "GIP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "SEK/GIP"
+  }
 }

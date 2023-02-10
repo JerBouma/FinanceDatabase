@@ -1,74 +1,74 @@
 {
-    "AUDILS=X": {
-        "short_name": "AUD/ILS",
-        "currency": "ILS",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "BRLILS=X": {
-        "short_name": "BRL/ILS",
-        "currency": "ILS",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADILS=X": {
-        "short_name": "CAD/ILS",
-        "currency": "ILS",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFILS=X": {
-        "short_name": "CHF/ILS",
-        "currency": "ILS",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURILS=X": {
-        "short_name": "EUR/ILS",
-        "currency": "ILS",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPILS=X": {
-        "short_name": "GBP/ILS",
-        "currency": "ILS",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "HKDILS=X": {
-        "short_name": "HKD/ILS",
-        "currency": "ILS",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "ILS=X": {
-        "short_name": "USD/ILS",
-        "currency": "ILS",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYILS=X": {
-        "short_name": "JPY/ILS",
-        "currency": "ILS",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "NZDILS=X": {
-        "short_name": "NZD/ILS",
-        "currency": "ILS",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "PLNILS=X": {
-        "short_name": "PLN/ILS",
-        "currency": "ILS",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SEKILS=X": {
-        "short_name": "SEK/ILS",
-        "currency": "ILS",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AUDILS=X": {
+    "currency": "ILS",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/ILS"
+  },
+  "BRLILS=X": {
+    "currency": "ILS",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "BRL/ILS"
+  },
+  "CADILS=X": {
+    "currency": "ILS",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/ILS"
+  },
+  "CHFILS=X": {
+    "currency": "ILS",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/ILS"
+  },
+  "EURILS=X": {
+    "currency": "ILS",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/ILS"
+  },
+  "GBPILS=X": {
+    "currency": "ILS",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/ILS"
+  },
+  "HKDILS=X": {
+    "currency": "ILS",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "HKD/ILS"
+  },
+  "ILS=X": {
+    "currency": "ILS",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/ILS"
+  },
+  "JPYILS=X": {
+    "currency": "ILS",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/ILS"
+  },
+  "NZDILS=X": {
+    "currency": "ILS",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "NZD/ILS"
+  },
+  "PLNILS=X": {
+    "currency": "ILS",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "PLN/ILS"
+  },
+  "SEKILS=X": {
+    "currency": "ILS",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "SEK/ILS"
+  }
 }

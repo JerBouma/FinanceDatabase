@@ -1,34 +1,34 @@
 {
-    "AIQ.AX": {
-        "short_name": "A INV TRST UNITS",
-        "long_name": "Alternative Investment Trust",
-        "summary": "Alternative Investment Trust is a balanced mutual fund launched by RE The Trust Company (RE Services) Limited. The fund is co-managed by Laxey Partners (UK) Limited and Laxey Partners Ltd. It invests in the equity and fixed income markets of Australia. The fund also invests in absolute return funds. It seeks to invest in stocks of companies that are operating across diversified sectors. The fund was formerly known as Everest Babcock & Brown Alternative Investment Trust. Alternative Investment Trust was formed on April 7, 2005 and is domiciled in Australia.",
-        "currency": "AUD",
-        "sector": "Financial",
-        "industry": "Asset Management",
-        "exchange": "ASX",
-        "market": "au_market",
-        "country": "United Kingdom",
-        "state": null,
-        "city": "London",
-        "zipcode": "SW1Y 6DN",
-        "website": "http://www.thealternativeinvestmenttrust.com",
-        "market_cap": "Nano Cap"
-    },
-    "LSEN.MX": {
-        "short_name": "LONDON STOCK EXCHANGE GROUP",
-        "long_name": "London Stock Exchange Group plc",
-        "summary": "London Stock Exchange Group plc engages in market infrastructure business primarily in the United Kingdom, the United States, Italy, France, and internationally. The company operates in five segments: Information Services, Post Trade Services, Capital Markets, Technology Services, and Other. It operates a range of international equity, ETF, bond, and derivatives markets, including London Stock Exchange; Borsa Italiana; MTS, a European fixed income market; and Turquoise, a pan-European equities multilateral trading facility. The company also provides capital formation, intellectual property, and risk and balance sheet management services; financial indexing, benchmarking, and analytic services; data and research services; and clearing, settlement, custody and other post trade services. In addition, it offers information and data products, such as indexes and benchmarks, real time pricing data, product identification, reporting, and reconciliation services, as well as network connectivity and server hosting services. Further, the company provides market trading services; information services comprising regulatory news; education and training, events space, and studio hire services; and capital markets technology and services, trading solutions, technical services, infrastructure solutions and services, and market connectivity, as well as operates data centers and trading venues. Additionally, it licenses capital markets and related IT infrastructure. London Stock Exchange Group plc was founded in 1698 and is headquartered in London, the United Kingdom.",
-        "currency": "MXN",
-        "sector": "Financial",
-        "industry": "Asset Management",
-        "exchange": "MEX",
-        "market": "mx_market",
-        "country": "United Kingdom",
-        "state": null,
-        "city": "London",
-        "zipcode": "EC4M 7LS",
-        "website": "http://www.lseg.com",
-        "market_cap": "Large Cap"
-    }
+  "AIQ.AX": {
+    "city": "London",
+    "country": "United Kingdom",
+    "currency": "AUD",
+    "exchange": "ASX",
+    "industry": "Asset Management",
+    "long_name": "Alternative Investment Trust",
+    "market": "au_market",
+    "market_cap": "Nano Cap",
+    "sector": "Financial",
+    "short_name": "A INV TRST UNITS",
+    "state": null,
+    "summary": "Alternative Investment Trust is a balanced mutual fund launched by RE The Trust Company (RE Services) Limited. The fund is co-managed by Laxey Partners (UK) Limited and Laxey Partners Ltd. It invests in the equity and fixed income markets of Australia. The fund also invests in absolute return funds. It seeks to invest in stocks of companies that are operating across diversified sectors. The fund was formerly known as Everest Babcock & Brown Alternative Investment Trust. Alternative Investment Trust was formed on April 7, 2005 and is domiciled in Australia.",
+    "website": "http://www.thealternativeinvestmenttrust.com",
+    "zipcode": "SW1Y 6DN"
+  },
+  "LSEN.MX": {
+    "city": "London",
+    "country": "United Kingdom",
+    "currency": "MXN",
+    "exchange": "MEX",
+    "industry": "Asset Management",
+    "long_name": "London Stock Exchange Group plc",
+    "market": "mx_market",
+    "market_cap": "Large Cap",
+    "sector": "Financial",
+    "short_name": "LONDON STOCK EXCHANGE GROUP",
+    "state": null,
+    "summary": "London Stock Exchange Group plc engages in market infrastructure business primarily in the United Kingdom, the United States, Italy, France, and internationally. The company operates in five segments: Information Services, Post Trade Services, Capital Markets, Technology Services, and Other. It operates a range of international equity, ETF, bond, and derivatives markets, including London Stock Exchange; Borsa Italiana; MTS, a European fixed income market; and Turquoise, a pan-European equities multilateral trading facility. The company also provides capital formation, intellectual property, and risk and balance sheet management services; financial indexing, benchmarking, and analytic services; data and research services; and clearing, settlement, custody and other post trade services. In addition, it offers information and data products, such as indexes and benchmarks, real time pricing data, product identification, reporting, and reconciliation services, as well as network connectivity and server hosting services. Further, the company provides market trading services; information services comprising regulatory news; education and training, events space, and studio hire services; and capital markets technology and services, trading solutions, technical services, infrastructure solutions and services, and market connectivity, as well as operates data centers and trading venues. Additionally, it licenses capital markets and related IT infrastructure. London Stock Exchange Group plc was founded in 1698 and is headquartered in London, the United Kingdom.",
+    "website": "http://www.lseg.com",
+    "zipcode": "EC4M 7LS"
+  }
 }

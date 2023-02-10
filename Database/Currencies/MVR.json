@@ -1,38 +1,38 @@
 {
-    "CADMVR=X": {
-        "short_name": "CAD/MVR",
-        "currency": "MVR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFMVR=X": {
-        "short_name": "CHF/MVR",
-        "currency": "MVR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURMVR=X": {
-        "short_name": "EUR/MVR",
-        "currency": "MVR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPMVR=X": {
-        "short_name": "GBP/MVR",
-        "currency": "MVR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYMVR=X": {
-        "short_name": "JPY/MVR",
-        "currency": "MVR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "MVR=X": {
-        "short_name": "USD/MVR",
-        "currency": "MVR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADMVR=X": {
+    "currency": "MVR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/MVR"
+  },
+  "CHFMVR=X": {
+    "currency": "MVR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/MVR"
+  },
+  "EURMVR=X": {
+    "currency": "MVR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/MVR"
+  },
+  "GBPMVR=X": {
+    "currency": "MVR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/MVR"
+  },
+  "JPYMVR=X": {
+    "currency": "MVR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/MVR"
+  },
+  "MVR=X": {
+    "currency": "MVR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/MVR"
+  }
 }

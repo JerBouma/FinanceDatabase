@@ -1,38 +1,38 @@
 {
-    "CADLBP=X": {
-        "short_name": "CAD/LBP",
-        "currency": "LBP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFLBP=X": {
-        "short_name": "CHF/LBP",
-        "currency": "LBP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURLBP=X": {
-        "short_name": "EUR/LBP",
-        "currency": "LBP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPLBP=X": {
-        "short_name": "GBP/LBP",
-        "currency": "LBP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYLBP=X": {
-        "short_name": "JPY/LBP",
-        "currency": "LBP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "LBP=X": {
-        "short_name": "USD/LBP",
-        "currency": "LBP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADLBP=X": {
+    "currency": "LBP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/LBP"
+  },
+  "CHFLBP=X": {
+    "currency": "LBP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/LBP"
+  },
+  "EURLBP=X": {
+    "currency": "LBP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/LBP"
+  },
+  "GBPLBP=X": {
+    "currency": "LBP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/LBP"
+  },
+  "JPYLBP=X": {
+    "currency": "LBP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/LBP"
+  },
+  "LBP=X": {
+    "currency": "LBP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/LBP"
+  }
 }

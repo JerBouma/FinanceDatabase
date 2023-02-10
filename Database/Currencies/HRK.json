@@ -1,44 +1,44 @@
 {
-    "AUDHRK=X": {
-        "short_name": "AUD/HRK",
-        "currency": "HRK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADHRK=X": {
-        "short_name": "CAD/HRK",
-        "currency": "HRK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFHRK=X": {
-        "short_name": "CHF/HRK",
-        "currency": "HRK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURHRK=X": {
-        "short_name": "EUR/HRK",
-        "currency": "HRK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPHRK=X": {
-        "short_name": "GBP/HRK",
-        "currency": "HRK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "HRK=X": {
-        "short_name": "USD/HRK",
-        "currency": "HRK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYHRK=X": {
-        "short_name": "JPY/HRK",
-        "currency": "HRK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AUDHRK=X": {
+    "currency": "HRK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/HRK"
+  },
+  "CADHRK=X": {
+    "currency": "HRK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/HRK"
+  },
+  "CHFHRK=X": {
+    "currency": "HRK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/HRK"
+  },
+  "EURHRK=X": {
+    "currency": "HRK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/HRK"
+  },
+  "GBPHRK=X": {
+    "currency": "HRK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/HRK"
+  },
+  "HRK=X": {
+    "currency": "HRK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/HRK"
+  },
+  "JPYHRK=X": {
+    "currency": "HRK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/HRK"
+  }
 }

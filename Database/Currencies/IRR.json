@@ -1,38 +1,38 @@
 {
-    "CADIRR=X": {
-        "short_name": "CAD/IRR",
-        "currency": "IRR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFIRR=X": {
-        "short_name": "CHF/IRR",
-        "currency": "IRR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURIRR=X": {
-        "short_name": "EUR/IRR",
-        "currency": "IRR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPIRR=X": {
-        "short_name": "GBP/IRR",
-        "currency": "IRR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "IRR=X": {
-        "short_name": "USD/IRR",
-        "currency": "IRR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYIRR=X": {
-        "short_name": "JPY/IRR",
-        "currency": "IRR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADIRR=X": {
+    "currency": "IRR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/IRR"
+  },
+  "CHFIRR=X": {
+    "currency": "IRR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/IRR"
+  },
+  "EURIRR=X": {
+    "currency": "IRR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/IRR"
+  },
+  "GBPIRR=X": {
+    "currency": "IRR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/IRR"
+  },
+  "IRR=X": {
+    "currency": "IRR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/IRR"
+  },
+  "JPYIRR=X": {
+    "currency": "IRR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/IRR"
+  }
 }

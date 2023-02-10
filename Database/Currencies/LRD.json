@@ -1,38 +1,38 @@
 {
-    "CADLRD=X": {
-        "short_name": "CAD/LRD",
-        "currency": "LRD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFLRD=X": {
-        "short_name": "CHF/LRD",
-        "currency": "LRD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURLRD=X": {
-        "short_name": "EUR/LRD",
-        "currency": "LRD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPLRD=X": {
-        "short_name": "GBP/LRD",
-        "currency": "LRD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYLRD=X": {
-        "short_name": "JPY/LRD",
-        "currency": "LRD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "LRD=X": {
-        "short_name": "USD/LRD",
-        "currency": "LRD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADLRD=X": {
+    "currency": "LRD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/LRD"
+  },
+  "CHFLRD=X": {
+    "currency": "LRD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/LRD"
+  },
+  "EURLRD=X": {
+    "currency": "LRD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/LRD"
+  },
+  "GBPLRD=X": {
+    "currency": "LRD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/LRD"
+  },
+  "JPYLRD=X": {
+    "currency": "LRD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/LRD"
+  },
+  "LRD=X": {
+    "currency": "LRD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/LRD"
+  }
 }

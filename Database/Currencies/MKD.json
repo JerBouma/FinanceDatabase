@@ -1,38 +1,38 @@
 {
-    "CADMKD=X": {
-        "short_name": "CAD/MKD",
-        "currency": "MKD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFMKD=X": {
-        "short_name": "CHF/MKD",
-        "currency": "MKD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURMKD=X": {
-        "short_name": "EUR/MKD",
-        "currency": "MKD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPMKD=X": {
-        "short_name": "GBP/MKD",
-        "currency": "MKD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYMKD=X": {
-        "short_name": "JPY/MKD",
-        "currency": "MKD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "MKD=X": {
-        "short_name": "USD/MKD",
-        "currency": "MKD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADMKD=X": {
+    "currency": "MKD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/MKD"
+  },
+  "CHFMKD=X": {
+    "currency": "MKD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/MKD"
+  },
+  "EURMKD=X": {
+    "currency": "MKD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/MKD"
+  },
+  "GBPMKD=X": {
+    "currency": "MKD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/MKD"
+  },
+  "JPYMKD=X": {
+    "currency": "MKD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/MKD"
+  },
+  "MKD=X": {
+    "currency": "MKD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/MKD"
+  }
 }

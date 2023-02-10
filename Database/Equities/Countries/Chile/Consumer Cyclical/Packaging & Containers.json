@@ -1,34 +1,34 @@
 {
-    "CRISTALES.SN": {
-        "short_name": "CRISTALERIAS CHILE",
-        "long_name": "Cristaler\u00edas de Chile S.A.",
-        "summary": "Cristaler\u00c3\u00adas de Chile S.A. manufactures and sells glass containers in Chile and internationally. It offers products for wine, beer, spirit, food, and non-alcoholic markets. The company was founded in 1904 and is based in Padre Hurtado, Chile.",
-        "currency": "CLP",
-        "sector": "Consumer Cyclical",
-        "industry": "Packaging & Containers",
-        "exchange": "SGO",
-        "market": "cl_market",
-        "country": "Chile",
-        "state": null,
-        "city": "Padre Hurtado",
-        "zipcode": null,
-        "website": "http://www.cristalchile.cl",
-        "market_cap": "Micro Cap"
-    },
-    "EDELPA.SN": {
-        "short_name": "ENVASES PACIFICO",
-        "long_name": "Envases del Pacifico S.A.",
-        "summary": "Envases del Pacifico S.A. provides packaging solutions in Chile. It offers structures, preformed packaging products, specialty products, and labeling and covers. The company was founded in 1967 and is based in Santiago, Chile.",
-        "currency": "CLP",
-        "sector": "Consumer Cyclical",
-        "industry": "Packaging & Containers",
-        "exchange": "SGO",
-        "market": "cl_market",
-        "country": "Chile",
-        "state": null,
-        "city": "Santiago de Chile",
-        "zipcode": "13320",
-        "website": "http://www.edelpa.cl",
-        "market_cap": "Nano Cap"
-    }
+  "CRISTALES.SN": {
+    "city": "Padre Hurtado",
+    "country": "Chile",
+    "currency": "CLP",
+    "exchange": "SGO",
+    "industry": "Packaging & Containers",
+    "long_name": "Cristalerías de Chile S.A.",
+    "market": "cl_market",
+    "market_cap": "Micro Cap",
+    "sector": "Consumer Cyclical",
+    "short_name": "CRISTALERIAS CHILE",
+    "state": null,
+    "summary": "CristalerÃ­as de Chile S.A. manufactures and sells glass containers in Chile and internationally. It offers products for wine, beer, spirit, food, and non-alcoholic markets. The company was founded in 1904 and is based in Padre Hurtado, Chile.",
+    "website": "http://www.cristalchile.cl",
+    "zipcode": null
+  },
+  "EDELPA.SN": {
+    "city": "Santiago de Chile",
+    "country": "Chile",
+    "currency": "CLP",
+    "exchange": "SGO",
+    "industry": "Packaging & Containers",
+    "long_name": "Envases del Pacifico S.A.",
+    "market": "cl_market",
+    "market_cap": "Nano Cap",
+    "sector": "Consumer Cyclical",
+    "short_name": "ENVASES PACIFICO",
+    "state": null,
+    "summary": "Envases del Pacifico S.A. provides packaging solutions in Chile. It offers structures, preformed packaging products, specialty products, and labeling and covers. The company was founded in 1967 and is based in Santiago, Chile.",
+    "website": "http://www.edelpa.cl",
+    "zipcode": "13320"
+  }
 }

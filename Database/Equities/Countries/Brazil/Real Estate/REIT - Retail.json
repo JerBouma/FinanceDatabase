@@ -1,34 +1,34 @@
 {
-    "CARE11.SA": {
-        "short_name": "FII DEA CARECI  ER",
-        "long_name": "M\u00e1xima Renda Corporativa Fundo de Investimento Imobili\u00e1rio - FII",
-        "summary": "Maxima Renda Corporativa Fundo Invest Imobiliario-Cotas Fund specializes in real estate investments.",
-        "currency": "BRL",
-        "sector": "Real Estate",
-        "industry": "REIT - Retail",
-        "exchange": "SAO",
-        "market": "br_market",
-        "country": "Brazil",
-        "state": null,
-        "city": "Rio de Janeiro",
-        "zipcode": null,
-        "website": null,
-        "market_cap": "Nano Cap"
-    },
-    "HGBS11.SA": {
-        "short_name": "FII HEDGEBS CI  ER",
-        "long_name": "HEDGE Brasil Shopping Fundo de Investimento Imobili\u00e1rio",
-        "summary": "CSHG Brasil Shopping FII specializes in real estate investing.",
-        "currency": "BRL",
-        "sector": "Real Estate",
-        "industry": "REIT - Retail",
-        "exchange": "SAO",
-        "market": "br_market",
-        "country": "Brazil",
-        "state": "SP",
-        "city": "Sao Paulo",
-        "zipcode": "1830",
-        "website": "http://www.cshg.com.br/site/publico/imob/imob2.seam",
-        "market_cap": "Micro Cap"
-    }
+  "CARE11.SA": {
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "currency": "BRL",
+    "exchange": "SAO",
+    "industry": "REIT - Retail",
+    "long_name": "Máxima Renda Corporativa Fundo de Investimento Imobiliário - FII",
+    "market": "br_market",
+    "market_cap": "Nano Cap",
+    "sector": "Real Estate",
+    "short_name": "FII DEA CARECI  ER",
+    "state": null,
+    "summary": "Maxima Renda Corporativa Fundo Invest Imobiliario-Cotas Fund specializes in real estate investments.",
+    "website": null,
+    "zipcode": null
+  },
+  "HGBS11.SA": {
+    "city": "Sao Paulo",
+    "country": "Brazil",
+    "currency": "BRL",
+    "exchange": "SAO",
+    "industry": "REIT - Retail",
+    "long_name": "HEDGE Brasil Shopping Fundo de Investimento Imobiliário",
+    "market": "br_market",
+    "market_cap": "Micro Cap",
+    "sector": "Real Estate",
+    "short_name": "FII HEDGEBS CI  ER",
+    "state": "SP",
+    "summary": "CSHG Brasil Shopping FII specializes in real estate investing.",
+    "website": "http://www.cshg.com.br/site/publico/imob/imob2.seam",
+    "zipcode": "1830"
+  }
 }

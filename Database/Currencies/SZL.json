@@ -1,44 +1,44 @@
 {
-    "CADSZL=X": {
-        "short_name": "CAD/SZL",
-        "currency": "SZL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFSZL=X": {
-        "short_name": "CHF/SZL",
-        "currency": "SZL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURSZL=X": {
-        "short_name": "EUR/SZL",
-        "currency": "SZL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPSZL=X": {
-        "short_name": "GBP/SZL",
-        "currency": "SZL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYSZL=X": {
-        "short_name": "JPY/SZL",
-        "currency": "SZL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SZL=X": {
-        "short_name": "USD/SZL",
-        "currency": "SZL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "ZARSZL=X": {
-        "short_name": "ZAR/SZL",
-        "currency": "SZL",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADSZL=X": {
+    "currency": "SZL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/SZL"
+  },
+  "CHFSZL=X": {
+    "currency": "SZL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/SZL"
+  },
+  "EURSZL=X": {
+    "currency": "SZL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/SZL"
+  },
+  "GBPSZL=X": {
+    "currency": "SZL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/SZL"
+  },
+  "JPYSZL=X": {
+    "currency": "SZL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/SZL"
+  },
+  "SZL=X": {
+    "currency": "SZL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/SZL"
+  },
+  "ZARSZL=X": {
+    "currency": "SZL",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "ZAR/SZL"
+  }
 }

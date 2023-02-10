@@ -1,56 +1,56 @@
 {
-    "AUDKES=X": {
-        "short_name": "AUD/KES",
-        "currency": "KES",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADKES=X": {
-        "short_name": "CAD/KES",
-        "currency": "KES",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFKES=X": {
-        "short_name": "CHF/KES",
-        "currency": "KES",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURKES=X": {
-        "short_name": "EUR/KES",
-        "currency": "KES",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPKES=X": {
-        "short_name": "GBP/KES",
-        "currency": "KES",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYKES=X": {
-        "short_name": "JPY/KES",
-        "currency": "KES",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "KES=X": {
-        "short_name": "USD/KES",
-        "currency": "KES",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "OMRKES=X": {
-        "short_name": "OMR/KES",
-        "currency": "KES",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "ZARKES=X": {
-        "short_name": "ZAR/KES",
-        "currency": "KES",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AUDKES=X": {
+    "currency": "KES",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/KES"
+  },
+  "CADKES=X": {
+    "currency": "KES",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/KES"
+  },
+  "CHFKES=X": {
+    "currency": "KES",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/KES"
+  },
+  "EURKES=X": {
+    "currency": "KES",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/KES"
+  },
+  "GBPKES=X": {
+    "currency": "KES",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/KES"
+  },
+  "JPYKES=X": {
+    "currency": "KES",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/KES"
+  },
+  "KES=X": {
+    "currency": "KES",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/KES"
+  },
+  "OMRKES=X": {
+    "currency": "KES",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "OMR/KES"
+  },
+  "ZARKES=X": {
+    "currency": "KES",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "ZAR/KES"
+  }
 }

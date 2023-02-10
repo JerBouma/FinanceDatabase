@@ -1,44 +1,44 @@
 {
-    "CADMWK=X": {
-        "short_name": "CAD/MWK",
-        "currency": "MWK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFMWK=X": {
-        "short_name": "CHF/MWK",
-        "currency": "MWK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURMWK=X": {
-        "short_name": "EUR/MWK",
-        "currency": "MWK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPMWK=X": {
-        "short_name": "GBP/MWK",
-        "currency": "MWK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYMWK=X": {
-        "short_name": "JPY/MWK",
-        "currency": "MWK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "MWK=X": {
-        "short_name": "USD/MWK",
-        "currency": "MWK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "ZARMWK=X": {
-        "short_name": "ZAR/MWK",
-        "currency": "MWK",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADMWK=X": {
+    "currency": "MWK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/MWK"
+  },
+  "CHFMWK=X": {
+    "currency": "MWK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/MWK"
+  },
+  "EURMWK=X": {
+    "currency": "MWK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/MWK"
+  },
+  "GBPMWK=X": {
+    "currency": "MWK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/MWK"
+  },
+  "JPYMWK=X": {
+    "currency": "MWK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/MWK"
+  },
+  "MWK=X": {
+    "currency": "MWK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/MWK"
+  },
+  "ZARMWK=X": {
+    "currency": "MWK",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "ZAR/MWK"
+  }
 }

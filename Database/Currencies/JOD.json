@@ -1,44 +1,44 @@
 {
-    "AUDJOD=X": {
-        "short_name": "AUD/JOD",
-        "currency": "JOD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADJOD=X": {
-        "short_name": "CAD/JOD",
-        "currency": "JOD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFJOD=X": {
-        "short_name": "CHF/JOD",
-        "currency": "JOD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURJOD=X": {
-        "short_name": "EUR/JOD",
-        "currency": "JOD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPJOD=X": {
-        "short_name": "GBP/JOD",
-        "currency": "JOD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JOD=X": {
-        "short_name": "USD/JOD",
-        "currency": "JOD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYJOD=X": {
-        "short_name": "JPY/JOD",
-        "currency": "JOD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AUDJOD=X": {
+    "currency": "JOD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/JOD"
+  },
+  "CADJOD=X": {
+    "currency": "JOD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/JOD"
+  },
+  "CHFJOD=X": {
+    "currency": "JOD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/JOD"
+  },
+  "EURJOD=X": {
+    "currency": "JOD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/JOD"
+  },
+  "GBPJOD=X": {
+    "currency": "JOD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/JOD"
+  },
+  "JOD=X": {
+    "currency": "JOD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/JOD"
+  },
+  "JPYJOD=X": {
+    "currency": "JOD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/JOD"
+  }
 }

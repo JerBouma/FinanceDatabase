@@ -1,79 +1,79 @@
 {
-    "MSVX": {
-        "short_name": "LHA Market State Alpha Seeker E",
-        "long_name": "LHA Market State Alpha Seeker ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to provide positive returns across multiple market cycles that are generally not correlated to the U.S. equity or fixed income markets.\n The fund is an actively-managed exchange-traded fund (\"ETF\") and seeks to achieve its objective principally by investing long or short in instruments linked directly or indirectly to the performance and/or volatility of the S&P 500\u00c2\u00ae Index based on models and analyses, that seek to estimate the direction of the U.S. equity market. It is non-diversified.",
-        "category": "Volatility",
-        "family": "Little Harbor Advisors",
-        "exchange": "BTS",
-        "market": "us_market",
-        "total_assets": 20020652
-    },
-    "SVXY": {
-        "short_name": "ProShares Short VIX Short Term ",
-        "long_name": "ProShares Short VIX Short-Term Futures ETF",
-        "currency": "USD",
-        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to one-half the inverse (-0.5x) of the performance of the S&P 500 VIX Short-Term Futures Index for a single day.\n The index seeks to offer exposure to market volatility through publicly traded futures markets and is designed to measure the implied volatility of the S&P 500 over 30 days in the future.",
-        "category": "Volatility",
-        "family": "ProShares",
-        "exchange": "BTS",
-        "market": "us_market",
-        "total_assets": 454817376
-    },
-    "UVXY": {
-        "short_name": "ProShares Trust Ultra VIX Short",
-        "long_name": "ProShares Ultra VIX Short-Term Futures ETF",
-        "currency": "USD",
-        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to one and one-half times (1.5x) the performance of the S&P 500 VIX Short-Term Futures Index for a single day.\n The index seeks to offer exposure to market volatility through publicly traded futures markets and is designed to measure the implied volatility of the S&P 500 over 30 days in the future.",
-        "category": "Volatility",
-        "family": "ProShares",
-        "exchange": "BTS",
-        "market": "us_market",
-        "total_assets": 2525896704
-    },
-    "VIIXF": {
-        "short_name": "CREDIT SUISSE NASSAU TRACKER ZE",
-        "long_name": "VelocityShares VIX Short-Term ETN",
-        "currency": "USD",
-        "summary": "The investment seeks to replicate, net of expenses, the return of the daily performance of the S&P 500 VIX Short-Term Futures index.\n The index was designed to provide investors with exposure to one or more maturities of futures contracts on the VIX, which reflects implied volatility of the S&P 500 Index at various points along the volatility forward curve. The calculation of the VIX is based on prices of put and call options on the S&P 500 Index. The ETNs are linked to the daily return of the index and do not represent an investment in the VIX.",
-        "category": "Volatility",
-        "family": "Credit Suisse AG",
-        "exchange": "PNK",
-        "market": "us_market",
-        "total_assets": 12020778
-    },
-    "VIXM": {
-        "short_name": "ProShares Trust VIX Mid-Term Fu",
-        "long_name": "ProShares VIX Mid-Term Futures ETF",
-        "currency": "USD",
-        "summary": "The investment seeks investment results, before fees and expenses, that match the performance of the S&P 500\u00c2\u00ae VIX Mid-Term Futures Index.\n The fund seeks to meet its investment objective, by taking long positions in VIX futures contracts. It will also hold cash or cash equivalents such as U.S. Treasury securities or other high credit quality, short-term fixed-income or similar securities (such as shares of money market funds) as collateral for Financial Instruments and pending investment in Financial Instruments.",
-        "category": "Volatility",
-        "family": "ProShares",
-        "exchange": "BTS",
-        "market": "us_market",
-        "total_assets": 93434616
-    },
-    "XVZ": {
-        "short_name": "iPath S&P 500 Dynamic VIX ETN",
-        "long_name": "iPath S&P 500 Dynamic VIX ETN",
-        "currency": "USD",
-        "summary": "The investment seeks to provide investors with exposure to the S&P 500\u00c2\u00ae Dynamic VIX Futures\u00e2\u0084\u00a2 Total Return Index.\n The S&P 500\u00c2\u00ae Dynamic VIX Futures\u00e2\u0084\u00a2 Total Return Index (the \"index\") is designed to dynamically allocate between the S&P 500\u00c2\u00ae VIX Short-Term Futures\u00e2\u0084\u00a2 Index Excess Return and the S&P 500\u00c2\u00ae VIX Mid-Term Futures\u00e2\u0084\u00a2 Index Excess Return by monitoring the steepness of the implied volatility curve. The index seeks to react positively to overall increases in market volatility and aims to lower the roll cost of investments linked to future implied volatility.",
-        "category": "Volatility",
-        "family": "Milleis Investissements Funds",
-        "exchange": "BTS",
-        "market": "us_market",
-        "total_assets": 13298281
-    },
-    "ZIVZF": {
-        "short_name": "CREDIT SUISSE NASSAU TRACKER ZE",
-        "long_name": "VelocityShares Daily Inverse VIX Medium-Term ETN",
-        "currency": "USD",
-        "summary": "The investment seeks to replicate, net of expenses, the inverse of the daily performance of the S&P 500 VIX Mid-Term Futures index.\n The index was designed to provide investors with exposure to one or more maturities of futures contracts on the VIX, which reflects implied volatility of the S&P 500 Index at various points along the volatility forward curve. The calculation of the VIX is based on prices of put and call options on the S&P 500 Index. The ETNs are linked to the daily inverse return of the index and do not represent an investment in the inverse of the VIX.",
-        "category": "Volatility",
-        "family": "Credit Suisse AG",
-        "exchange": "PNK",
-        "market": "us_market",
-        "total_assets": 32577000
-    }
+  "MSVX": {
+    "category": "Volatility",
+    "currency": "USD",
+    "exchange": "BTS",
+    "family": "Little Harbor Advisors",
+    "long_name": "LHA Market State Alpha Seeker ETF",
+    "market": "us_market",
+    "short_name": "LHA Market State Alpha Seeker E",
+    "summary": "The investment seeks to provide positive returns across multiple market cycles that are generally not correlated to the U.S. equity or fixed income markets.\n The fund is an actively-managed exchange-traded fund (\"ETF\") and seeks to achieve its objective principally by investing long or short in instruments linked directly or indirectly to the performance and/or volatility of the S&P 500Â® Index based on models and analyses, that seek to estimate the direction of the U.S. equity market. It is non-diversified.",
+    "total_assets": 20020652
+  },
+  "SVXY": {
+    "category": "Volatility",
+    "currency": "USD",
+    "exchange": "BTS",
+    "family": "ProShares",
+    "long_name": "ProShares Short VIX Short-Term Futures ETF",
+    "market": "us_market",
+    "short_name": "ProShares Short VIX Short Term ",
+    "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to one-half the inverse (-0.5x) of the performance of the S&P 500 VIX Short-Term Futures Index for a single day.\n The index seeks to offer exposure to market volatility through publicly traded futures markets and is designed to measure the implied volatility of the S&P 500 over 30 days in the future.",
+    "total_assets": 454817376
+  },
+  "UVXY": {
+    "category": "Volatility",
+    "currency": "USD",
+    "exchange": "BTS",
+    "family": "ProShares",
+    "long_name": "ProShares Ultra VIX Short-Term Futures ETF",
+    "market": "us_market",
+    "short_name": "ProShares Trust Ultra VIX Short",
+    "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to one and one-half times (1.5x) the performance of the S&P 500 VIX Short-Term Futures Index for a single day.\n The index seeks to offer exposure to market volatility through publicly traded futures markets and is designed to measure the implied volatility of the S&P 500 over 30 days in the future.",
+    "total_assets": 2525896704
+  },
+  "VIIXF": {
+    "category": "Volatility",
+    "currency": "USD",
+    "exchange": "PNK",
+    "family": "Credit Suisse AG",
+    "long_name": "VelocityShares VIX Short-Term ETN",
+    "market": "us_market",
+    "short_name": "CREDIT SUISSE NASSAU TRACKER ZE",
+    "summary": "The investment seeks to replicate, net of expenses, the return of the daily performance of the S&P 500 VIX Short-Term Futures index.\n The index was designed to provide investors with exposure to one or more maturities of futures contracts on the VIX, which reflects implied volatility of the S&P 500 Index at various points along the volatility forward curve. The calculation of the VIX is based on prices of put and call options on the S&P 500 Index. The ETNs are linked to the daily return of the index and do not represent an investment in the VIX.",
+    "total_assets": 12020778
+  },
+  "VIXM": {
+    "category": "Volatility",
+    "currency": "USD",
+    "exchange": "BTS",
+    "family": "ProShares",
+    "long_name": "ProShares VIX Mid-Term Futures ETF",
+    "market": "us_market",
+    "short_name": "ProShares Trust VIX Mid-Term Fu",
+    "summary": "The investment seeks investment results, before fees and expenses, that match the performance of the S&P 500Â® VIX Mid-Term Futures Index.\n The fund seeks to meet its investment objective, by taking long positions in VIX futures contracts. It will also hold cash or cash equivalents such as U.S. Treasury securities or other high credit quality, short-term fixed-income or similar securities (such as shares of money market funds) as collateral for Financial Instruments and pending investment in Financial Instruments.",
+    "total_assets": 93434616
+  },
+  "XVZ": {
+    "category": "Volatility",
+    "currency": "USD",
+    "exchange": "BTS",
+    "family": "Milleis Investissements Funds",
+    "long_name": "iPath S&P 500 Dynamic VIX ETN",
+    "market": "us_market",
+    "short_name": "iPath S&P 500 Dynamic VIX ETN",
+    "summary": "The investment seeks to provide investors with exposure to the S&P 500Â® Dynamic VIX Futuresâ¢ Total Return Index.\n The S&P 500Â® Dynamic VIX Futuresâ¢ Total Return Index (the \"index\") is designed to dynamically allocate between the S&P 500Â® VIX Short-Term Futuresâ¢ Index Excess Return and the S&P 500Â® VIX Mid-Term Futuresâ¢ Index Excess Return by monitoring the steepness of the implied volatility curve. The index seeks to react positively to overall increases in market volatility and aims to lower the roll cost of investments linked to future implied volatility.",
+    "total_assets": 13298281
+  },
+  "ZIVZF": {
+    "category": "Volatility",
+    "currency": "USD",
+    "exchange": "PNK",
+    "family": "Credit Suisse AG",
+    "long_name": "VelocityShares Daily Inverse VIX Medium-Term ETN",
+    "market": "us_market",
+    "short_name": "CREDIT SUISSE NASSAU TRACKER ZE",
+    "summary": "The investment seeks to replicate, net of expenses, the inverse of the daily performance of the S&P 500 VIX Mid-Term Futures index.\n The index was designed to provide investors with exposure to one or more maturities of futures contracts on the VIX, which reflects implied volatility of the S&P 500 Index at various points along the volatility forward curve. The calculation of the VIX is based on prices of put and call options on the S&P 500 Index. The ETNs are linked to the daily inverse return of the index and do not represent an investment in the inverse of the VIX.",
+    "total_assets": 32577000
+  }
 }

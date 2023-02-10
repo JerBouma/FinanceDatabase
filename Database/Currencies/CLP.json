@@ -1,56 +1,56 @@
 {
-    "AUDCLP=X": {
-        "short_name": "AUD/CLP",
-        "currency": "CLP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "BRLCLP=X": {
-        "short_name": "BRL/CLP",
-        "currency": "CLP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADCLP=X": {
-        "short_name": "CAD/CLP",
-        "currency": "CLP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFCLP=X": {
-        "short_name": "CHF/CLP",
-        "currency": "CLP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CLFCLP=X": {
-        "short_name": "CLF/CLP",
-        "currency": "CLP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CLP=X": {
-        "short_name": "USD/CLP",
-        "currency": "CLP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURCLP=X": {
-        "short_name": "EUR/CLP",
-        "currency": "CLP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPCLP=X": {
-        "short_name": "GBP/CLP",
-        "currency": "CLP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYCLP=X": {
-        "short_name": "JPY/CLP",
-        "currency": "CLP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AUDCLP=X": {
+    "currency": "CLP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/CLP"
+  },
+  "BRLCLP=X": {
+    "currency": "CLP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "BRL/CLP"
+  },
+  "CADCLP=X": {
+    "currency": "CLP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/CLP"
+  },
+  "CHFCLP=X": {
+    "currency": "CLP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/CLP"
+  },
+  "CLFCLP=X": {
+    "currency": "CLP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CLF/CLP"
+  },
+  "CLP=X": {
+    "currency": "CLP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/CLP"
+  },
+  "EURCLP=X": {
+    "currency": "CLP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/CLP"
+  },
+  "GBPCLP=X": {
+    "currency": "CLP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/CLP"
+  },
+  "JPYCLP=X": {
+    "currency": "CLP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/CLP"
+  }
 }

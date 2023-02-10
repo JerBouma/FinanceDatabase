@@ -1,35 +1,35 @@
 {
-    "CWB": {
-        "short_name": "SPDR Bloomberg Barclays Convert",
-        "long_name": "SPDR Bloomberg Barclays Convertible Securities ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the price and yield performance of the Bloomberg Barclays U.S. Convertible Liquid Bond Index.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in securities that the Adviser determines have economic characteristics that are substantially identical to the economic characteristics of the securities that comprise the index. The index is designed to represent the market of U.S. convertible securities, such as convertible bonds and convertible preferred stock.",
-        "category": "Convertibles",
-        "family": "SPDR State Street Global Advisors",
-        "exchange": "PCX",
-        "market": "us_market",
-        "total_assets": 6699191808
-    },
-    "FCVT": {
-        "short_name": "First Trust SSI Strategic Conve",
-        "long_name": "First Trust SSI Strategic Convertible Securities ETF",
-        "currency": "USD",
-        "summary": "The investment seeks total return.\n Under normal market conditions, the fund seeks to achieve its investment objective by investing at least 80% of its net assets (including investment borrowings) in a portfolio of U.S. and non-U.S. convertible securities. In general, convertible securities combine the investment characteristics of bonds and common stocks and typically consist of debt securities or preferred securities that may be converted or exchanged within a specified period of time into a certain amount of common stock or other equity security of the same or a different issuer.",
-        "category": "Convertibles",
-        "family": "First Trust",
-        "exchange": "NMS",
-        "market": "us_market",
-        "total_assets": 278429696
-    },
-    "ICVT": {
-        "short_name": "iShares Convertible Bond ETF",
-        "long_name": "iShares Convertible Bond ETF",
-        "currency": "USD",
-        "summary": "The investment seeks to track the investment results of the Bloomberg Barclays U.S. Convertible Cash Pay Bond > $250MM Index (the \"underlying index\").\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the underlying index. The underlying index is a subset of the Bloomberg Barclays U.S. Convertibles: Cash Pay Bonds Index, which measures the performance of the U.S. dollar-denominated convertibles market.",
-        "category": "Convertibles",
-        "family": "iShares",
-        "exchange": "BTS",
-        "market": "us_market",
-        "total_assets": 1602650112
-    }
+  "CWB": {
+    "category": "Convertibles",
+    "currency": "USD",
+    "exchange": "PCX",
+    "family": "SPDR State Street Global Advisors",
+    "long_name": "SPDR Bloomberg Barclays Convertible Securities ETF",
+    "market": "us_market",
+    "short_name": "SPDR Bloomberg Barclays Convert",
+    "summary": "The investment seeks to provide investment results that, before fees and expenses, correspond generally to the price and yield performance of the Bloomberg Barclays U.S. Convertible Liquid Bond Index.\n The fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the index and in securities that the Adviser determines have economic characteristics that are substantially identical to the economic characteristics of the securities that comprise the index. The index is designed to represent the market of U.S. convertible securities, such as convertible bonds and convertible preferred stock.",
+    "total_assets": 6699191808
+  },
+  "FCVT": {
+    "category": "Convertibles",
+    "currency": "USD",
+    "exchange": "NMS",
+    "family": "First Trust",
+    "long_name": "First Trust SSI Strategic Convertible Securities ETF",
+    "market": "us_market",
+    "short_name": "First Trust SSI Strategic Conve",
+    "summary": "The investment seeks total return.\n Under normal market conditions, the fund seeks to achieve its investment objective by investing at least 80% of its net assets (including investment borrowings) in a portfolio of U.S. and non-U.S. convertible securities. In general, convertible securities combine the investment characteristics of bonds and common stocks and typically consist of debt securities or preferred securities that may be converted or exchanged within a specified period of time into a certain amount of common stock or other equity security of the same or a different issuer.",
+    "total_assets": 278429696
+  },
+  "ICVT": {
+    "category": "Convertibles",
+    "currency": "USD",
+    "exchange": "BTS",
+    "family": "iShares",
+    "long_name": "iShares Convertible Bond ETF",
+    "market": "us_market",
+    "short_name": "iShares Convertible Bond ETF",
+    "summary": "The investment seeks to track the investment results of the Bloomberg Barclays U.S. Convertible Cash Pay Bond > $250MM Index (the \"underlying index\").\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents, as well as in securities not included in the underlying index. The underlying index is a subset of the Bloomberg Barclays U.S. Convertibles: Cash Pay Bonds Index, which measures the performance of the U.S. dollar-denominated convertibles market.",
+    "total_assets": 1602650112
+  }
 }

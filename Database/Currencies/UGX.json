@@ -1,38 +1,38 @@
 {
-    "CADUGX=X": {
-        "short_name": "CAD/UGX",
-        "currency": "UGX",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFUGX=X": {
-        "short_name": "CHF/UGX",
-        "currency": "UGX",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURUGX=X": {
-        "short_name": "EUR/UGX",
-        "currency": "UGX",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPUGX=X": {
-        "short_name": "GBP/UGX",
-        "currency": "UGX",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYUGX=X": {
-        "short_name": "JPY/UGX",
-        "currency": "UGX",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "UGX=X": {
-        "short_name": "USD/UGX",
-        "currency": "UGX",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADUGX=X": {
+    "currency": "UGX",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/UGX"
+  },
+  "CHFUGX=X": {
+    "currency": "UGX",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/UGX"
+  },
+  "EURUGX=X": {
+    "currency": "UGX",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/UGX"
+  },
+  "GBPUGX=X": {
+    "currency": "UGX",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/UGX"
+  },
+  "JPYUGX=X": {
+    "currency": "UGX",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/UGX"
+  },
+  "UGX=X": {
+    "currency": "UGX",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/UGX"
+  }
 }

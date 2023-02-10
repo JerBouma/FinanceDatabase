@@ -1,34 +1,34 @@
 {
-    "AUSO.BA": {
-        "short_name": "AUTOPISTAS DEL SOL",
-        "long_name": "Autopistas Del Sol SA",
-        "summary": "Autopistas Del Sol SA engages in the construction, expansion, remodeling, preservation, maintenance, operation, and administration of highways. The company was founded in 1994 and is based in San Isidro, Argentina.",
-        "currency": "ARS",
-        "sector": "Industrials",
-        "industry": "Infrastructure Operations",
-        "exchange": "BUE",
-        "market": "ar_market",
-        "country": "Argentina",
-        "state": null,
-        "city": "San Isidro",
-        "zipcode": "1609",
-        "website": "http://www.ausol.com.ar",
-        "market_cap": "Micro Cap"
-    },
-    "OEST.BA": {
-        "short_name": "GPO CONCESIONARIO",
-        "long_name": "Grupo Concesionario del Oeste S.A.",
-        "summary": "Grupo Concesionario del Oeste S.A. engages in the construction, improvement, repair, conservation, extension, remodeling, maintenance, administration, and exploitation of the Western highway in Argentina. The company was founded in 1993 and is based in Buenos Aires, Argentina.",
-        "currency": "ARS",
-        "sector": "Industrials",
-        "industry": "Infrastructure Operations",
-        "exchange": "BUE",
-        "market": "ar_market",
-        "country": "Argentina",
-        "state": null,
-        "city": "Buenos Aires",
-        "zipcode": null,
-        "website": "http://www.auoeste.com.ar",
-        "market_cap": "Micro Cap"
-    }
+  "AUSO.BA": {
+    "city": "San Isidro",
+    "country": "Argentina",
+    "currency": "ARS",
+    "exchange": "BUE",
+    "industry": "Infrastructure Operations",
+    "long_name": "Autopistas Del Sol SA",
+    "market": "ar_market",
+    "market_cap": "Micro Cap",
+    "sector": "Industrials",
+    "short_name": "AUTOPISTAS DEL SOL",
+    "state": null,
+    "summary": "Autopistas Del Sol SA engages in the construction, expansion, remodeling, preservation, maintenance, operation, and administration of highways. The company was founded in 1994 and is based in San Isidro, Argentina.",
+    "website": "http://www.ausol.com.ar",
+    "zipcode": "1609"
+  },
+  "OEST.BA": {
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "currency": "ARS",
+    "exchange": "BUE",
+    "industry": "Infrastructure Operations",
+    "long_name": "Grupo Concesionario del Oeste S.A.",
+    "market": "ar_market",
+    "market_cap": "Micro Cap",
+    "sector": "Industrials",
+    "short_name": "GPO CONCESIONARIO",
+    "state": null,
+    "summary": "Grupo Concesionario del Oeste S.A. engages in the construction, improvement, repair, conservation, extension, remodeling, maintenance, administration, and exploitation of the Western highway in Argentina. The company was founded in 1993 and is based in Buenos Aires, Argentina.",
+    "website": "http://www.auoeste.com.ar",
+    "zipcode": null
+  }
 }

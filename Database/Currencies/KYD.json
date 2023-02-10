@@ -1,44 +1,44 @@
 {
-    "AUDKYD=X": {
-        "short_name": "AUD/KYD",
-        "currency": "KYD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADKYD=X": {
-        "short_name": "CAD/KYD",
-        "currency": "KYD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFKYD=X": {
-        "short_name": "CHF/KYD",
-        "currency": "KYD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURKYD=X": {
-        "short_name": "EUR/KYD",
-        "currency": "KYD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPKYD=X": {
-        "short_name": "GBP/KYD",
-        "currency": "KYD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYKYD=X": {
-        "short_name": "JPY/KYD",
-        "currency": "KYD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "KYD=X": {
-        "short_name": "USD/KYD",
-        "currency": "KYD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AUDKYD=X": {
+    "currency": "KYD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/KYD"
+  },
+  "CADKYD=X": {
+    "currency": "KYD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/KYD"
+  },
+  "CHFKYD=X": {
+    "currency": "KYD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/KYD"
+  },
+  "EURKYD=X": {
+    "currency": "KYD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/KYD"
+  },
+  "GBPKYD=X": {
+    "currency": "KYD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/KYD"
+  },
+  "JPYKYD=X": {
+    "currency": "KYD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/KYD"
+  },
+  "KYD=X": {
+    "currency": "KYD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/KYD"
+  }
 }

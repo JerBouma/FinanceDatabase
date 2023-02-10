@@ -1,134 +1,134 @@
 {
-    "AED=X": {
-        "short_name": "USD/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "AUDAED=X": {
-        "short_name": "AUD/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADAED=X": {
-        "short_name": "CAD/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFAED=X": {
-        "short_name": "CHF/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EGPAED=X": {
-        "short_name": "EGP/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURAED=X": {
-        "short_name": "EUR/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPAED=X": {
-        "short_name": "GBP/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "HKDAED=X": {
-        "short_name": "HKD/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "INRAED=X": {
-        "short_name": "INR/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYAED=X": {
-        "short_name": "JPY/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "KRWAED=X": {
-        "short_name": "KRW/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "LKRAED=X": {
-        "short_name": "LKR/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "NOKAED=X": {
-        "short_name": "NOK/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "NZDAED=X": {
-        "short_name": "NZD/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "OMRAED=X": {
-        "short_name": "OMR/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "PKRAED=X": {
-        "short_name": "PKR/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "QARAED=X": {
-        "short_name": "QAR/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SARAED=X": {
-        "short_name": "SAR/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SEKAED=X": {
-        "short_name": "SEK/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SGDAED=X": {
-        "short_name": "SGD/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "VNDAED=X": {
-        "short_name": "VND/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "ZARAED=X": {
-        "short_name": "ZAR/AED",
-        "currency": "AED",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/AED"
+  },
+  "AUDAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/AED"
+  },
+  "CADAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/AED"
+  },
+  "CHFAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/AED"
+  },
+  "EGPAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EGP/AED"
+  },
+  "EURAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/AED"
+  },
+  "GBPAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/AED"
+  },
+  "HKDAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "HKD/AED"
+  },
+  "INRAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "INR/AED"
+  },
+  "JPYAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/AED"
+  },
+  "KRWAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "KRW/AED"
+  },
+  "LKRAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "LKR/AED"
+  },
+  "NOKAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "NOK/AED"
+  },
+  "NZDAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "NZD/AED"
+  },
+  "OMRAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "OMR/AED"
+  },
+  "PKRAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "PKR/AED"
+  },
+  "QARAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "QAR/AED"
+  },
+  "SARAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "SAR/AED"
+  },
+  "SEKAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "SEK/AED"
+  },
+  "SGDAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "SGD/AED"
+  },
+  "VNDAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "VND/AED"
+  },
+  "ZARAED=X": {
+    "currency": "AED",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "ZAR/AED"
+  }
 }

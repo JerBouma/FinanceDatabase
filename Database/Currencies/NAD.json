@@ -1,38 +1,38 @@
 {
-    "CADNAD=X": {
-        "short_name": "CAD/NAD",
-        "currency": "NAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFNAD=X": {
-        "short_name": "CHF/NAD",
-        "currency": "NAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURNAD=X": {
-        "short_name": "EUR/NAD",
-        "currency": "NAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPNAD=X": {
-        "short_name": "GBP/NAD",
-        "currency": "NAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYNAD=X": {
-        "short_name": "JPY/NAD",
-        "currency": "NAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "NAD=X": {
-        "short_name": "USD/NAD",
-        "currency": "NAD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADNAD=X": {
+    "currency": "NAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/NAD"
+  },
+  "CHFNAD=X": {
+    "currency": "NAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/NAD"
+  },
+  "EURNAD=X": {
+    "currency": "NAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/NAD"
+  },
+  "GBPNAD=X": {
+    "currency": "NAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/NAD"
+  },
+  "JPYNAD=X": {
+    "currency": "NAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/NAD"
+  },
+  "NAD=X": {
+    "currency": "NAD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/NAD"
+  }
 }

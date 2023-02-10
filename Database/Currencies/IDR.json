@@ -1,152 +1,152 @@
 {
-    "AUDIDR=X": {
-        "short_name": "AUD/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "BRLIDR=X": {
-        "short_name": "BRL/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "BWPIDR=X": {
-        "short_name": "BWP/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADIDR=X": {
-        "short_name": "CAD/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFIDR=X": {
-        "short_name": "CHF/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CNHIDR=X": {
-        "short_name": "CNH/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CNYIDR=X": {
-        "short_name": "CNY/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "DKKIDR=X": {
-        "short_name": "DKK/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURIDR=X": {
-        "short_name": "EUR/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPIDR=X": {
-        "short_name": "GBP/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GHSIDR=X": {
-        "short_name": "GHS/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "HKDIDR=X": {
-        "short_name": "HKD/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "IDR=X": {
-        "short_name": "USD/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "INRIDR=X": {
-        "short_name": "INR/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYIDR=X": {
-        "short_name": "JPY/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "KRWIDR=X": {
-        "short_name": "KRW/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "MYRIDR=X": {
-        "short_name": "MYR/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "NZDIDR=X": {
-        "short_name": "NZD/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "PHPIDR=X": {
-        "short_name": "PHP/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SEKIDR=X": {
-        "short_name": "SEK/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SGDIDR=X": {
-        "short_name": "SGD/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "THBIDR=X": {
-        "short_name": "THB/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "TWDIDR=X": {
-        "short_name": "TWD/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "UGXIDR=X": {
-        "short_name": "UGX/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "ZARIDR=X": {
-        "short_name": "ZAR/IDR",
-        "currency": "IDR",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AUDIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/IDR"
+  },
+  "BRLIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "BRL/IDR"
+  },
+  "BWPIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "BWP/IDR"
+  },
+  "CADIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/IDR"
+  },
+  "CHFIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/IDR"
+  },
+  "CNHIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CNH/IDR"
+  },
+  "CNYIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CNY/IDR"
+  },
+  "DKKIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "DKK/IDR"
+  },
+  "EURIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/IDR"
+  },
+  "GBPIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/IDR"
+  },
+  "GHSIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GHS/IDR"
+  },
+  "HKDIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "HKD/IDR"
+  },
+  "IDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/IDR"
+  },
+  "INRIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "INR/IDR"
+  },
+  "JPYIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/IDR"
+  },
+  "KRWIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "KRW/IDR"
+  },
+  "MYRIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "MYR/IDR"
+  },
+  "NZDIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "NZD/IDR"
+  },
+  "PHPIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "PHP/IDR"
+  },
+  "SEKIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "SEK/IDR"
+  },
+  "SGDIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "SGD/IDR"
+  },
+  "THBIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "THB/IDR"
+  },
+  "TWDIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "TWD/IDR"
+  },
+  "UGXIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "UGX/IDR"
+  },
+  "ZARIDR=X": {
+    "currency": "IDR",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "ZAR/IDR"
+  }
 }

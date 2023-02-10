@@ -1,62 +1,62 @@
 {
-    "ANG=X": {
-        "short_name": "USD/ANG",
-        "currency": "ANG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "AUDANG=X": {
-        "short_name": "AUD/ANG",
-        "currency": "ANG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADANG=X": {
-        "short_name": "CAD/ANG",
-        "currency": "ANG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFANG=X": {
-        "short_name": "CHF/ANG",
-        "currency": "ANG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "DKKANG=X": {
-        "short_name": "DKK/ANG",
-        "currency": "ANG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURANG=X": {
-        "short_name": "EUR/ANG",
-        "currency": "ANG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPANG=X": {
-        "short_name": "GBP/ANG",
-        "currency": "ANG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYANG=X": {
-        "short_name": "JPY/ANG",
-        "currency": "ANG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "SEKANG=X": {
-        "short_name": "SEK/ANG",
-        "currency": "ANG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "ZARANG=X": {
-        "short_name": "ZAR/ANG",
-        "currency": "ANG",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "ANG=X": {
+    "currency": "ANG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/ANG"
+  },
+  "AUDANG=X": {
+    "currency": "ANG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/ANG"
+  },
+  "CADANG=X": {
+    "currency": "ANG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/ANG"
+  },
+  "CHFANG=X": {
+    "currency": "ANG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/ANG"
+  },
+  "DKKANG=X": {
+    "currency": "ANG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "DKK/ANG"
+  },
+  "EURANG=X": {
+    "currency": "ANG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/ANG"
+  },
+  "GBPANG=X": {
+    "currency": "ANG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/ANG"
+  },
+  "JPYANG=X": {
+    "currency": "ANG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/ANG"
+  },
+  "SEKANG=X": {
+    "currency": "ANG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "SEK/ANG"
+  },
+  "ZARANG=X": {
+    "currency": "ANG",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "ZAR/ANG"
+  }
 }

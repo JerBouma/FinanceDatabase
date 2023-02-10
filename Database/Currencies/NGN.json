@@ -1,44 +1,44 @@
 {
-    "CADNGN=X": {
-        "short_name": "CAD/NGN",
-        "currency": "NGN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFNGN=X": {
-        "short_name": "CHF/NGN",
-        "currency": "NGN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURNGN=X": {
-        "short_name": "EUR/NGN",
-        "currency": "NGN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPNGN=X": {
-        "short_name": "GBP/NGN",
-        "currency": "NGN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GHSNGN=X": {
-        "short_name": "GHS/NGN",
-        "currency": "NGN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYNGN=X": {
-        "short_name": "JPY/NGN",
-        "currency": "NGN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "NGN=X": {
-        "short_name": "USD/NGN",
-        "currency": "NGN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADNGN=X": {
+    "currency": "NGN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/NGN"
+  },
+  "CHFNGN=X": {
+    "currency": "NGN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/NGN"
+  },
+  "EURNGN=X": {
+    "currency": "NGN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/NGN"
+  },
+  "GBPNGN=X": {
+    "currency": "NGN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/NGN"
+  },
+  "GHSNGN=X": {
+    "currency": "NGN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GHS/NGN"
+  },
+  "JPYNGN=X": {
+    "currency": "NGN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/NGN"
+  },
+  "NGN=X": {
+    "currency": "NGN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/NGN"
+  }
 }

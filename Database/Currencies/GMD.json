@@ -1,38 +1,38 @@
 {
-    "CADGMD=X": {
-        "short_name": "CAD/GMD",
-        "currency": "GMD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFGMD=X": {
-        "short_name": "CHF/GMD",
-        "currency": "GMD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURGMD=X": {
-        "short_name": "EUR/GMD",
-        "currency": "GMD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPGMD=X": {
-        "short_name": "GBP/GMD",
-        "currency": "GMD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GMD=X": {
-        "short_name": "USD/GMD",
-        "currency": "GMD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYGMD=X": {
-        "short_name": "JPY/GMD",
-        "currency": "GMD",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADGMD=X": {
+    "currency": "GMD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/GMD"
+  },
+  "CHFGMD=X": {
+    "currency": "GMD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/GMD"
+  },
+  "EURGMD=X": {
+    "currency": "GMD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/GMD"
+  },
+  "GBPGMD=X": {
+    "currency": "GMD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/GMD"
+  },
+  "GMD=X": {
+    "currency": "GMD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/GMD"
+  },
+  "JPYGMD=X": {
+    "currency": "GMD",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/GMD"
+  }
 }

@@ -1,34 +1,34 @@
 {
-    "FKRFT.OL": {
-        "short_name": "FJORDKRAFT HLDG",
-        "long_name": "Fjordkraft Holding ASA",
-        "summary": "Fjordkraft Holding ASA, together with its subsidiaries, engages in the purchase, sale, and portfolio management of electrical power to households, private and public companies, and municipalities in Norway. It operates through Consumer and Business segments. The Consumer segment sells electrical power and related services to private consumers. The Business segment sells electrical power and related services to business consumers. The company also provides mobile phone services to private customers. Fjordkraft Holding ASA was founded in 2001 and is headquartered in Bergen, Norway.",
-        "currency": "NOK",
-        "sector": "Utilities",
-        "industry": "Utilities - Regulated Electric",
-        "exchange": "OSL",
-        "market": "no_market",
-        "country": "Norway",
-        "state": null,
-        "city": "Bergen",
-        "zipcode": "5147",
-        "website": "http://www.fjordkraft.no",
-        "market_cap": "Small Cap"
-    },
-    "GNP.OL": {
-        "short_name": "GNP ENERGY AS",
-        "long_name": "GNP Energy AS",
-        "summary": "GNP Energy AS supplies electricity to private and corporate markets. It operates in Norway, Sweden, Denmark, and Finland under the brand name GNP Energy. The company was founded in 2010 and is headquartered in Sandefjord, Norway.",
-        "currency": "NOK",
-        "sector": "Utilities",
-        "industry": "Utilities - Regulated Electric",
-        "exchange": "OSL",
-        "market": "no_market",
-        "country": "Norway",
-        "state": null,
-        "city": "Sandefjord",
-        "zipcode": "3239",
-        "website": "http://no.gnp.energy",
-        "market_cap": "Nano Cap"
-    }
+  "FKRFT.OL": {
+    "city": "Bergen",
+    "country": "Norway",
+    "currency": "NOK",
+    "exchange": "OSL",
+    "industry": "Utilities - Regulated Electric",
+    "long_name": "Fjordkraft Holding ASA",
+    "market": "no_market",
+    "market_cap": "Small Cap",
+    "sector": "Utilities",
+    "short_name": "FJORDKRAFT HLDG",
+    "state": null,
+    "summary": "Fjordkraft Holding ASA, together with its subsidiaries, engages in the purchase, sale, and portfolio management of electrical power to households, private and public companies, and municipalities in Norway. It operates through Consumer and Business segments. The Consumer segment sells electrical power and related services to private consumers. The Business segment sells electrical power and related services to business consumers. The company also provides mobile phone services to private customers. Fjordkraft Holding ASA was founded in 2001 and is headquartered in Bergen, Norway.",
+    "website": "http://www.fjordkraft.no",
+    "zipcode": "5147"
+  },
+  "GNP.OL": {
+    "city": "Sandefjord",
+    "country": "Norway",
+    "currency": "NOK",
+    "exchange": "OSL",
+    "industry": "Utilities - Regulated Electric",
+    "long_name": "GNP Energy AS",
+    "market": "no_market",
+    "market_cap": "Nano Cap",
+    "sector": "Utilities",
+    "short_name": "GNP ENERGY AS",
+    "state": null,
+    "summary": "GNP Energy AS supplies electricity to private and corporate markets. It operates in Norway, Sweden, Denmark, and Finland under the brand name GNP Energy. The company was founded in 2010 and is headquartered in Sandefjord, Norway.",
+    "website": "http://no.gnp.energy",
+    "zipcode": "3239"
+  }
 }

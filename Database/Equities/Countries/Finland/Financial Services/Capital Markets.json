@@ -1,34 +1,34 @@
 {
-    "PRIVA.HE": {
-        "short_name": "Privanet Group Oyj",
-        "long_name": "Privanet Group Oyj",
-        "summary": "Privanet Group Oyj, an investment services company, specializing in the brokerage of unlisted corporate securities in Finland. The company offers a service to trade in over-the-counter securities; and company reports on its portfolio companies, and news feeds from portfolio companies on its website. Privanet Group Oyj was founded in 2000 and is based in Helsinki, Finland.",
-        "currency": "EUR",
-        "sector": "Financial Services",
-        "industry": "Capital Markets",
-        "exchange": "HEL",
-        "market": "fi_market",
-        "country": "Finland",
-        "state": null,
-        "city": "Helsinki",
-        "zipcode": "00130",
-        "website": "http://privanet.fi",
-        "market_cap": "Nano Cap"
-    },
-    "UNITED.HE": {
-        "short_name": "United Bankers Oyj",
-        "long_name": "United Bankers Oyj",
-        "summary": "United Bankers Oyj provides investment services in Finland. It offers direct and structured bonds, asset management, fund management, brokerage, investment banking, real assets investment, and capital market services. The company was founded in 1986 and is based in Helsinki, Finland.",
-        "currency": "EUR",
-        "sector": "Financial Services",
-        "industry": "Capital Markets",
-        "exchange": "HEL",
-        "market": "fi_market",
-        "country": "Finland",
-        "state": null,
-        "city": "Helsinki",
-        "zipcode": "00100",
-        "website": "http://www.unitedbankers.fi",
-        "market_cap": "Micro Cap"
-    }
+  "PRIVA.HE": {
+    "city": "Helsinki",
+    "country": "Finland",
+    "currency": "EUR",
+    "exchange": "HEL",
+    "industry": "Capital Markets",
+    "long_name": "Privanet Group Oyj",
+    "market": "fi_market",
+    "market_cap": "Nano Cap",
+    "sector": "Financial Services",
+    "short_name": "Privanet Group Oyj",
+    "state": null,
+    "summary": "Privanet Group Oyj, an investment services company, specializing in the brokerage of unlisted corporate securities in Finland. The company offers a service to trade in over-the-counter securities; and company reports on its portfolio companies, and news feeds from portfolio companies on its website. Privanet Group Oyj was founded in 2000 and is based in Helsinki, Finland.",
+    "website": "http://privanet.fi",
+    "zipcode": "00130"
+  },
+  "UNITED.HE": {
+    "city": "Helsinki",
+    "country": "Finland",
+    "currency": "EUR",
+    "exchange": "HEL",
+    "industry": "Capital Markets",
+    "long_name": "United Bankers Oyj",
+    "market": "fi_market",
+    "market_cap": "Micro Cap",
+    "sector": "Financial Services",
+    "short_name": "United Bankers Oyj",
+    "state": null,
+    "summary": "United Bankers Oyj provides investment services in Finland. It offers direct and structured bonds, asset management, fund management, brokerage, investment banking, real assets investment, and capital market services. The company was founded in 1986 and is based in Helsinki, Finland.",
+    "website": "http://www.unitedbankers.fi",
+    "zipcode": "00100"
+  }
 }

@@ -1,38 +1,38 @@
 {
-    "CADTOP=X": {
-        "short_name": "CAD/TOP",
-        "currency": "TOP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFTOP=X": {
-        "short_name": "CHF/TOP",
-        "currency": "TOP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURTOP=X": {
-        "short_name": "EUR/TOP",
-        "currency": "TOP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPTOP=X": {
-        "short_name": "GBP/TOP",
-        "currency": "TOP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYTOP=X": {
-        "short_name": "JPY/TOP",
-        "currency": "TOP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "TOP=X": {
-        "short_name": "USD/TOP",
-        "currency": "TOP",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADTOP=X": {
+    "currency": "TOP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/TOP"
+  },
+  "CHFTOP=X": {
+    "currency": "TOP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/TOP"
+  },
+  "EURTOP=X": {
+    "currency": "TOP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/TOP"
+  },
+  "GBPTOP=X": {
+    "currency": "TOP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/TOP"
+  },
+  "JPYTOP=X": {
+    "currency": "TOP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/TOP"
+  },
+  "TOP=X": {
+    "currency": "TOP",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/TOP"
+  }
 }

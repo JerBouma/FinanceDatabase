@@ -1,38 +1,38 @@
 {
-    "CADNIO=X": {
-        "short_name": "CAD/NIO",
-        "currency": "NIO",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFNIO=X": {
-        "short_name": "CHF/NIO",
-        "currency": "NIO",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURNIO=X": {
-        "short_name": "EUR/NIO",
-        "currency": "NIO",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPNIO=X": {
-        "short_name": "GBP/NIO",
-        "currency": "NIO",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYNIO=X": {
-        "short_name": "JPY/NIO",
-        "currency": "NIO",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "NIO=X": {
-        "short_name": "USD/NIO",
-        "currency": "NIO",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "CADNIO=X": {
+    "currency": "NIO",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/NIO"
+  },
+  "CHFNIO=X": {
+    "currency": "NIO",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/NIO"
+  },
+  "EURNIO=X": {
+    "currency": "NIO",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/NIO"
+  },
+  "GBPNIO=X": {
+    "currency": "NIO",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/NIO"
+  },
+  "JPYNIO=X": {
+    "currency": "NIO",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/NIO"
+  },
+  "NIO=X": {
+    "currency": "NIO",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/NIO"
+  }
 }

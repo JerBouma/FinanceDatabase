@@ -1,44 +1,44 @@
 {
-    "AUDPEN=X": {
-        "short_name": "AUD/PEN",
-        "currency": "PEN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CADPEN=X": {
-        "short_name": "CAD/PEN",
-        "currency": "PEN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "CHFPEN=X": {
-        "short_name": "CHF/PEN",
-        "currency": "PEN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "EURPEN=X": {
-        "short_name": "EUR/PEN",
-        "currency": "PEN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "GBPPEN=X": {
-        "short_name": "GBP/PEN",
-        "currency": "PEN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "JPYPEN=X": {
-        "short_name": "JPY/PEN",
-        "currency": "PEN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    },
-    "PEN=X": {
-        "short_name": "USD/PEN",
-        "currency": "PEN",
-        "exchange": "CCY",
-        "market": "ccy_market"
-    }
+  "AUDPEN=X": {
+    "currency": "PEN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "AUD/PEN"
+  },
+  "CADPEN=X": {
+    "currency": "PEN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CAD/PEN"
+  },
+  "CHFPEN=X": {
+    "currency": "PEN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "CHF/PEN"
+  },
+  "EURPEN=X": {
+    "currency": "PEN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "EUR/PEN"
+  },
+  "GBPPEN=X": {
+    "currency": "PEN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "GBP/PEN"
+  },
+  "JPYPEN=X": {
+    "currency": "PEN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "JPY/PEN"
+  },
+  "PEN=X": {
+    "currency": "PEN",
+    "exchange": "CCY",
+    "market": "ccy_market",
+    "short_name": "USD/PEN"
+  }
 }

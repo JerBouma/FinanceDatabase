@@ -1,34 +1,34 @@
 {
-    "CGE.SN": {
-        "short_name": "CIA GRAL DE ELECTR",
-        "long_name": "Compa\u00f1\u00eda General de Electricidad S.A.",
-        "summary": "Compa\u00c3\u00b1\u00c3\u00ada General de Electricidad S.A., engages in the distribution of electricity in Chile. The company provides various services, such as corrective maintenance, leasing of electrical installations and measurement equipment, postal dispatch, support poles, project elaboration, air and underground distribution networks, aerial and underground street lighting, LED lighting, diagnosis and maintenance, and solar panels. Compa\u00c3\u00b1\u00c3\u00ada General de Electricidad S.A. was founded in 1905 and is based in Santiago, Chile. Compa\u00c3\u00b1\u00c3\u00ada General de Electricidad S.A. is a subsidiary of Naturgy Energy Group, S.A.",
-        "currency": "CLP",
-        "sector": "Utilities",
-        "industry": "Utilities - Diversified",
-        "exchange": "SGO",
-        "market": "cl_market",
-        "country": "Chile",
-        "state": null,
-        "city": "Santiago de Chile",
-        "zipcode": "8340434",
-        "website": "http://www.cge.cl",
-        "market_cap": "Mid Cap"
-    },
-    "CGEGAS.SN": {
-        "short_name": "CGE GAS NATURAL SA",
-        "long_name": "CGE Gas Natural S.A.",
-        "summary": "CGE Gas Natural S.A. distributes and transports natural gas in Chile and Argentina. The company is based in Santiago, Chile. CGE Gas Natural S.A. is a subsidiary of Naturgy Energy Group S.A.",
-        "currency": "CLP",
-        "sector": "Utilities",
-        "industry": "Utilities - Diversified",
-        "exchange": "SGO",
-        "market": "cl_market",
-        "country": "Chile",
-        "state": null,
-        "city": "Santiago de Chile",
-        "zipcode": null,
-        "website": "http://www.gasnaturalchile.cl",
-        "market_cap": "Small Cap"
-    }
+  "CGE.SN": {
+    "city": "Santiago de Chile",
+    "country": "Chile",
+    "currency": "CLP",
+    "exchange": "SGO",
+    "industry": "Utilities - Diversified",
+    "long_name": "Compañía General de Electricidad S.A.",
+    "market": "cl_market",
+    "market_cap": "Mid Cap",
+    "sector": "Utilities",
+    "short_name": "CIA GRAL DE ELECTR",
+    "state": null,
+    "summary": "CompaÃ±Ã­a General de Electricidad S.A., engages in the distribution of electricity in Chile. The company provides various services, such as corrective maintenance, leasing of electrical installations and measurement equipment, postal dispatch, support poles, project elaboration, air and underground distribution networks, aerial and underground street lighting, LED lighting, diagnosis and maintenance, and solar panels. CompaÃ±Ã­a General de Electricidad S.A. was founded in 1905 and is based in Santiago, Chile. CompaÃ±Ã­a General de Electricidad S.A. is a subsidiary of Naturgy Energy Group, S.A.",
+    "website": "http://www.cge.cl",
+    "zipcode": "8340434"
+  },
+  "CGEGAS.SN": {
+    "city": "Santiago de Chile",
+    "country": "Chile",
+    "currency": "CLP",
+    "exchange": "SGO",
+    "industry": "Utilities - Diversified",
+    "long_name": "CGE Gas Natural S.A.",
+    "market": "cl_market",
+    "market_cap": "Small Cap",
+    "sector": "Utilities",
+    "short_name": "CGE GAS NATURAL SA",
+    "state": null,
+    "summary": "CGE Gas Natural S.A. distributes and transports natural gas in Chile and Argentina. The company is based in Santiago, Chile. CGE Gas Natural S.A. is a subsidiary of Naturgy Energy Group S.A.",
+    "website": "http://www.gasnaturalchile.cl",
+    "zipcode": null
+  }
 }

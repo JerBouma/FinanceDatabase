@@ -1,28 +1,28 @@
 {
-    "0P00008T0M.SI": {
-        "short_name": "LionGlobal Vietnam Fund SGD",
-        "long_name": "LionGlobal Vietnam Fund SGD",
-        "currency": "SGD",
-        "summary": "The investment objective of the Fund is to provide investors with medium to long-term capital appreciation.\n The Fund shall invest in Authorized Investments which are equities, equity related instruments (including, without limitation, interests in property funds) and securities in Vietnamese incorporated companies or institutions, as well as in companies or institutions which although not incorporated in Vietnam, have operations in, exposure to, or derive part of their revenue from Vietnam, and the Indo-China Region (which includes, but is not limited to, Cambodia, Laos and Myanmar).",
-        "manager_name": "Not  Disclosed",
-        "manager_bio": "",
-        "category": "Vietnam Equity",
-        "family": "Lion Global Investors Ltd",
-        "exchange": "SES",
-        "market": "sg_market",
-        "total_assets": null
-    },
-    "TCMVN.AS": {
-        "short_name": "TCM VIETN HDE",
-        "long_name": "TCM Vietnam High Dividend Equity",
-        "currency": "EUR",
-        "summary": null,
-        "manager_name": "Wytze  Riemersma",
-        "manager_bio": "2003 \u00e2\u0080\u0093 heden: Intereffekt Investment Funds N.V.:\nsinds januari 2005 Portfolio Manager Intereffekt Japanse Warrants\n1998 \u00e2\u0080\u0093 2003: Rabobank Senior Beleggingsadviseur",
-        "category": "Vietnam Equity",
-        "family": "Trustus Capital Management BV",
-        "exchange": "AMS",
-        "market": "nl_market",
-        "total_assets": 8020864.909328461
-    }
+  "0P00008T0M.SI": {
+    "category": "Vietnam Equity",
+    "currency": "SGD",
+    "exchange": "SES",
+    "family": "Lion Global Investors Ltd",
+    "long_name": "LionGlobal Vietnam Fund SGD",
+    "manager_bio": "",
+    "manager_name": "Not  Disclosed",
+    "market": "sg_market",
+    "short_name": "LionGlobal Vietnam Fund SGD",
+    "summary": "The investment objective of the Fund is to provide investors with medium to long-term capital appreciation.\n The Fund shall invest in Authorized Investments which are equities, equity related instruments (including, without limitation, interests in property funds) and securities in Vietnamese incorporated companies or institutions, as well as in companies or institutions which although not incorporated in Vietnam, have operations in, exposure to, or derive part of their revenue from Vietnam, and the Indo-China Region (which includes, but is not limited to, Cambodia, Laos and Myanmar).",
+    "total_assets": null
+  },
+  "TCMVN.AS": {
+    "category": "Vietnam Equity",
+    "currency": "EUR",
+    "exchange": "AMS",
+    "family": "Trustus Capital Management BV",
+    "long_name": "TCM Vietnam High Dividend Equity",
+    "manager_bio": "2003 â heden: Intereffekt Investment Funds N.V.:\nsinds januari 2005 Portfolio Manager Intereffekt Japanse Warrants\n1998 â 2003: Rabobank Senior Beleggingsadviseur",
+    "manager_name": "Wytze  Riemersma",
+    "market": "nl_market",
+    "short_name": "TCM VIETN HDE",
+    "summary": null,
+    "total_assets": 8020864.909328461
+  }
 }
