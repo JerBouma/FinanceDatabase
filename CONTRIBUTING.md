@@ -20,7 +20,7 @@ Every now and then a JSON linter can also be ran with `npm i -g json-sort-cli` a
 
 ## Following the Workflow
 
-After setting up Git, you can fork and pull the project in. Note that is bulky given the large collection of files.
+After setting up Git, you can fork and pull the project in. Note that the repository is a bit bulky given the large collection of files.
 
 1. Fork the Project ([more info](https://docs.github.com/en/get-started/quickstart/fork-a-repo))
     - **Using GitHub Desktop:** [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop) will guide you through setting up Desktop. Once Desktop is set up, you can use it to [fork the repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop)!
