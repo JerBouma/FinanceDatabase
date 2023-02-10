@@ -89,14 +89,14 @@ Find an example below where I added "New Company, Inc" to the "Equities Part 2.j
 To find more information about each category:
 
 - "city": select the city where the company's headquarters is located.
-- "country": select the country where the company's headquarters is located.
-- "currency": select the denominated currency of this specific ticker (based on exchange). See currency options [here](https://github.com/JerBouma/FinanceDatabase/blob/main/Database/Categories/currencies_options.json)
+- "country": select the country where the company's headquarters is located. Pick an option from [this list](https://github.com/JerBouma/FinanceDatabase/blob/main/Database/Categories/equities_countries.json).
+- "currency": select the denominated currency of this specific ticker (based on exchange). See currency options [here](https://github.com/JerBouma/FinanceDatabase/blob/main/Database/Categories/currencies_options.json).
 - "exchange": select the exchange the company is listed at.
-- "industry": select the industry that belongs to the company. Pick an option from [this list](https://github.com/JerBouma/FinanceDatabase/blob/main/Database/Categories/equities_industries.json)
+- "industry": select the industry that belongs to the company. Pick an option from [this list](https://github.com/JerBouma/FinanceDatabase/blob/main/Database/Categories/equities_industries.json).
 - "long_name": enter the full company name.
 - "market": enter which market the company belongs to, this is related to the exchange as well.
 - "market_cap": based on [market cap categorization](https://www.investopedia.com/investing/market-capitalization-defined/) define the market cap.
-- "sector" select the sector that belongs to the company. Pick an option from [this list](https://github.com/JerBouma/FinanceDatabase/blob/main/Database/Categories/equities_sectors.json)
+- "sector" select the sector that belongs to the company. Pick an option from [this list](https://github.com/JerBouma/FinanceDatabase/blob/main/Database/Categories/equities_sectors.json).
 - "short_name": enter the short abbrevation of the company name.
 - "state": if applicable, select a state in the United States.
 - "summary": enter a brief company description, explaining the purpose of the company.
