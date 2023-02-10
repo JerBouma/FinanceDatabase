@@ -17,13 +17,15 @@ Currencies, Cryptocurrencies and Money Markets. It therefore allows you to obtai
 industries, types of investments and much more.
 
 The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data as those can be obtained 
-with ease (with the help of this database) by using [yfinance](https://github.com/ranaroussi/yfinance), 
-[FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) or 
-[ThePassiveInvestor](https://github.com/JerBouma/ThePassiveInvestor). Instead, it gives insights into the products 
+with ease (with the help of this database) by using [yfinance](https://github.com/ranaroussi/yfinance) or [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis). Instead, it gives insights into the products 
 that exist in each country, industry and sector and gives the most essential information about each product. With 
 this information, you can analyse specific areas of the financial world and/or find a product that is hard to find. 
 See for examples on how you can combine this database, and the earlier mentioned packages the section 
 [Examples](#Examples).
+
+| :bulb: Call for Contributors for the FinanceDatabase   |
+|:-------------------------------------------------------|
+| The FinanceDatabase serves the role of providing any type of investor with any type of financial product categorisation completely for free. To be able to achieve this, the FinanceDatabase relies on involvement from the community to update, edit and remove tickers over time. This is made easy enough that anyone, even with a lack of coding experience can contribute because of the generation of JSON files that can be manually edited. I'd like to invite you to go to the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md) to understand how you can help. **Thank you!** |
 
 Some key statistics of the database:
 
@@ -484,11 +486,16 @@ consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues)
       sectors. Perhaps a future adjustment could be to make them aligned with GICS.
 
 ## Contribution
-Projects are bound to have (small) errors and can always be improved. Therefore, I highly encourage you to submit 
-issues and create pull requests to improve the package.
+After setting up Git, you can fork and pull the project in. Note that is bulky given the large collection of files.
 
-The last update to the database is the 18th of October 2021. I always accept Pull Requests every few months 
-to keep the database up to date. Extending the amount of tickers and data is also much appreciated. When you wish to do 
-this, please inform me first to prevent multiple users doing the exact same thing.
+1. Fork the Project ([more info](https://docs.github.com/en/get-started/quickstart/fork-a-repo))
+    - **Using GitHub Desktop:** [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop) will guide you through setting up Desktop. Once Desktop is set up, you can use it to [fork the repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop)!
+    - **Using the command line:** [Fork the repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) so that you can make your changes without affecting the original project until you're ready to merge them.
+2. Pull the Repository Locally ([more info](https://github.com/git-guides/git-pull))
+2. Create your own branch (`git checkout -b Contribution`)
+3. Add your changes (`git add .`)
+4. Commit your Changes (`git commit -m 'Improve the Database'`)
+5. Push to your Branch (`git push origin Contribution`)
+6. Open a Pull Request
 
-<a href="https://www.buymeacoffee.com/jerbouma" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+Please read more about how you can contribute to the Database by reading the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).

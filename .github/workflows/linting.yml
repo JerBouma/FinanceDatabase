@@ -19,11 +19,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
       - name: Setup Python 3.9
         uses: actions/setup-python@v4
         with:
@@ -34,12 +29,10 @@ jobs:
           pip install bandit black codespell safety pylint==2.15.2 packaging==22 ruff==0.0.243
           pip install types-pytz types-requests types-termcolor types-tabulate types-PyYAML types-python-dateutil types-setuptools types-six
           pip install financedatabase pandas yfinance ta fundamentalanalysis matplotlib
-      - run: npm i -g json-sort-cli
       - run: black --diff --check .
       - run: codespell --skip Database,./.mypy_cache,./.git
       - run: ruff financedatabase
       - run: pylint financedatabase
-      - run: sortjson 
 
   markdown-link-check:
     name: Markdown Linting
