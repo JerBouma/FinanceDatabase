@@ -1,10 +1,23 @@
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/FinanceDatabaseCropped.png)
-
-[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-brightgreen?logo=buymeacoffee)](https://www.buymeacoffee.com/jerbouma)
-[![Issues](https://img.shields.io/github/issues/jerbouma/financedatabase)](https://github.com/JerBouma/FinanceDatabase/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/JerBouma/FinanceDatabase?color=yellow)](https://github.com/JerBouma/FinanceDatabase/pulls)
-[![PYPI Version](https://img.shields.io/pypi/v/FinanceDatabase)](https://pypi.org/project/FinanceDatabase/)
-[![PYPI Downloads](https://img.shields.io/pypi/dm/FinanceDatabase)](https://pypi.org/project/FinanceDatabase/)
+<p align="center">
+    <img src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/FinanceDatabaseCropped.png" alt="Logo">
+</center>
+<p align="center">
+    <a href="https://www.buymeacoffee.com/jerbouma">
+        <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-brightgreen?logo=buymeacoffee" alt="Logo">
+    </a>
+    <a href="https://github.com/JerBouma/FinanceDatabase/issues">
+        <img src="https://img.shields.io/github/issues/jerbouma/financedatabase" alt="Logo">
+    </a>
+     <a href="https://github.com/JerBouma/FinanceDatabase/pulls">
+        <img src="https://img.shields.io/github/issues-pr/JerBouma/FinanceDatabase?color=yellow" alt="Logo">
+    </a>
+    <a href="https://pypi.org/project/financedatabase/">
+        <img src="https://img.shields.io/pypi/v/FinanceDatabase" alt="Logo">
+    </a>
+    <a href="https://pypi.org/project/financedatabase/">
+        <img src="https://img.shields.io/pypi/dm/FinanceDatabase" alt="Logo">
+    </a>
+</center>
 
 | :bulb: **Call for Contributors for the FinanceDatabase** :bulb:   |
 |:------------------------------------------------------:|
