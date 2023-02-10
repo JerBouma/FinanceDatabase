@@ -2,6 +2,8 @@
 
 First off all, thank you for taking the time to contribute (or at least read the Contributing Guidelines)! 🚀
 
+The FinanceDatabase serves the role of providing anyone with any type of financial product categorisation entirely for free. To be able to achieve this, the FinanceDatabase relies on involvement from the community to update, edit and remove tickers over time. This is made easy enough that anyone, even with a lack of coding experience can contribute because of the generation of JSON files that can be manually edited.
+
 The following is a set of guidelines for contributing to the FinanceDatabase. They are meant to guide you through how updating of the FinanceDatabase works and how you can contribute with little coding background as well.
 
 - [Working with Git & Pull Requests](#working-with-git--pull-requests)
