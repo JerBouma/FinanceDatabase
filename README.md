@@ -462,28 +462,21 @@ Which returns the following:
 In this section you can find answers to commonly asked questions. In case the answer to your question is not here, 
 consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues).
 
-- **How did you get your data?**
-    - Please check the [Methodology](https://github.com/JerBouma/FinanceDatabase/tree/main/Methodology).
-- **Is there support for <insert_country>?**
+- **How is the data obtained?**
+    - The data is an aggregation of a variety of sources and is driven by the community to extend further.
+- **How can I contribute?**
+    - Please see the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md). Thank you!
+- **Is there support for my country?**
     - Yes, most likely there is as the database includes 111 countries. Please check 
     [here](https://github.com/JerBouma/FinanceDatabase/tree/main/Database/Equities/Countries).
 - **How can I find out which countries, sectors and/or industries exists within the database without needing to check 
   the database manually?**
     - For this you can use the ``show_options`` function from the package attached to this database. Please see 
     [this example](#companies-in-the-netherlands)
-- **When I collect data via yfinance I notice that not all tickers return output, why is that?**
+- **When I try collect data I notice that not all tickers return output, why is that?**
     - Some tickers are merely holdings of companies and therefore do not really have any data attached to them. 
       Therefore, it makes sense that not all tickers return data. If you are still in doubt, search the ticker on 
-      Google to see if there is really no data available.
-- **How frequently does the Database get updated?**
-    - I aim at doing this every few months. The database does not have to get updated frequently because the data 
-      collected is only general information. For example, a Sector name hardly changes and companies do not tend to 
-      move to another country every few months. Therefore, the data should stay up to date for several months. 
-      *If you wish to contribute to updating the database then that is much appreciated. Please check the 
-      [Methodology](https://github.com/JerBouma/FinanceDatabase/tree/main/Methodology) for guidance on how.*
-- **Do your sector and industry names use the same naming convention as GIC sector**?
-    - Not entirely but very similar, it's based on Yahoo Finance's sectors and industries. See industries and 
-      sectors. Perhaps a future adjustment could be to make them aligned with GICS.
+      Google to see if there is really no data available. If you can't find anything about the ticker, consider updating the database by visiting the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
 
 ## Contribution
 After setting up Git, you can fork and pull the project in. Note that is bulky given the large collection of files.
