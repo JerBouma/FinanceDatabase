@@ -16,6 +16,8 @@ It is important you have some sort of Code Editor (like VS Code) installed so th
 
 On every Pull Request, a couple of linters will run (see [here](https://github.com/JerBouma/FinanceDatabase/blob/main/.github/workflows/linting.yml)). These check the code and whether it matches specific coding formatting. This is entirely irrelevant for the database itself but keeps the code of the related package in check as well as any markdown changes.
 
+Every now and then a JSON linter can also be ran with `npm i -g json-sort-cli` and then `sortjson Database`. This is lengthy and it is fine this doesn't happen on every Pull Request or merge. The purpose is to keep things consistent.
+
 ## Following the Workflow
 
 After setting up Git, you can fork and pull the project in. Note that is bulky given the large collection of files.
@@ -40,11 +42,17 @@ In essence, all you really have to know is how to use `CTRL + F` (search) and `C
 
 I start with finding all entries that include `"TSLA`. This results in the following hinting at all companies of Tesla from all different exchanges.
 
+<img width="800" alt="Screenshot 2023-02-10 at 13 54 09" src="https://user-images.githubusercontent.com/46355364/218102302-d5d97956-7673-4616-92f9-ad8278327ba2.png">
+
 Then I notice that the naming is sometimes off, in some cases it is referred to as `"TESLA INC"` whereas in others it is referred to as `"Tesla, Inc."`.
 
-I decide to make the change to the code so that everything has the same naming, `"Tesla, Inc."`. 
+<img width="800" alt="Screenshot 2023-02-10 at 13 55 27" src="https://user-images.githubusercontent.com/46355364/218102391-a4213ca9-2baf-4269-a66f-9aa9300c64f9.png">
 
-This is a mere example but it shows the ease of contribution.
+I decide to make the change to the code so that everything has the same naming, `"Tesla, Inc."`.
+
+<img width="800" alt="Screenshot 2023-02-10 at 13 55 42" src="https://user-images.githubusercontent.com/46355364/218102418-5a7ecfac-535c-4709-ba71-846c628da6d2.png">
+
+This is a mere example but it shows the ease of contribution whereas these small changes can already make a huge difference!
 
 ## Adding Tickers
 
@@ -74,7 +82,27 @@ If in any case you are not able to acquire data for a specific category, enter `
 - The correct "Country", "Sector" and "Industry" including their total lists (e.g. "United States.json" or "_Healthcare.json")
 - The total list of Equities ("Equities List.json", "Equities Part 1.json" and "Equities Part 2.json")
 
-There is room for improvement in automization for some of this. Feel free to leave suggestions about this as well.
+Find an example below where I added "New Company, Inc" to the "Equities Part 2.json"
+
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/46355364/218105400-10ba3178-d1ce-440e-b5c4-c66580a5b6ef.png">
+
+To find more information about each category:
+
+- "city": select the city where the company's headquarters is located.
+- "country": select the country where the company's headquarters is located.
+- "currency": select the denominated currency of this specific ticker (based on exchange). See currency options [here](https://github.com/JerBouma/FinanceDatabase/blob/main/Database/Categories/currencies_options.json)
+- "exchange": select the exchange the company is listed at.
+- "industry": select the industry that belongs to the company. Pick an option from [this list](https://github.com/JerBouma/FinanceDatabase/blob/main/Database/Categories/equities_industries.json)
+- "long_name": enter the full company name.
+- "market": enter which market the company belongs to, this is related to the exchange as well.
+- "market_cap": based on [market cap categorization](https://www.investopedia.com/investing/market-capitalization-defined/) define the market cap.
+- "sector" select the sector that belongs to the company. Pick an option from [this list](https://github.com/JerBouma/FinanceDatabase/blob/main/Database/Categories/equities_sectors.json)
+- "short_name": enter the short abbrevation of the company name.
+- "state": if applicable, select a state in the United States.
+- "summary": enter a brief company description, explaining the purpose of the company.
+- "zipcode": if applicable, enter the zipcode.
+
+This sometimes differs between asset classes but should be self explanatory. **There is room for improvement in automization for some of this. Feel free to leave suggestions about this as well.**
 
 ## Updating the Package
 
