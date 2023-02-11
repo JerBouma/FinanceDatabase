@@ -123,7 +123,7 @@ For sectors, you will find the following list if you print `equities_sectors`:
 
 For industries, you will find the following list if you print `equities_industries`:
 
-`Advertising Agencies, Aerospace & Defense, Aerospace Defense - Major Diversified, Aerospace Defense Products & Services, Agricultural Chemicals, Agricultural Inputs, Air Delivery & Freight Services, Airlines, Airports & Air Services, Aluminum, Apparel Manufacturing, Apparel Retail, Apparel Stores, Asset Management, Auto & Truck Dealerships, Auto Dealerships, Auto Manufacturers, Auto Manufacturers - Major, Auto Parts, Banks - Diversified, Banks - Regional, Beverages - Brewers, Beverages - Non-Alcoholic, Beverages - Soft Drinks, Beverages - Wineries & Distilleries, Beverages - Wineries & Distillers, Biotechnology, Broadcasting, Broadcasting - TV, Building Materials, Building Products & Equipment, Business Equipment, Business Equipment & Supplies, Business Services, Business Software & Services, Capital Markets, Chemicals, Chemicals - Major Diversified, Cigarettes, Closed-End Fund - Equity, Coking Coal, Communication Equipment, Computer Based Systems, Computer Hardware, Confectioners, Conglomerates, Consulting Services, Consumer Electronics, Copper, Credit Services, Department Stores, Diagnostics & Research, Discount Stores, Discount, Variety Stores, Diversified Computer Systems, Diversified Electronics, Diversified Investments, Diversified Machinery, Diversified Utilities, Drug Manufacturers - General, Drug Manufacturers - Major, Drug Manufacturers - Other, Drug Manufacturers - Specialty & Generic, Drugs - Generic, Education & Training Services, Electric Utilities, Electrical Equipment & Parts, Electronic Components, Electronic Equipment, Electronic Gaming & Multimedia, Electronics & Computer Distribution, Electronics Wholesale, Engineering & Construction, Entertainment, Entertainment - Diversified, Farm & Construction Machinery, Farm & Heavy Construction Machinery, Farm Products, Financial Conglomerates, Financial Data & Stock Exchanges, Food - Major Diversified, Food Distribution, Food Wholesale, Footwear & Accessories, Furnishings, Fixtures & Appliances, Gambling, Gaming Activities, General Building Materials, General Contractors, Gold, Grocery Stores, Health Care Plans, Health Information Services, Healthcare Information Services, Healthcare Plans, Heavy Construction, Home Furnishings & Fixtures, Home Improvement Retail, Hospitals, Household & Personal Products, Independent Oil & Gas, Industrial Distribution, Industrial Equipment Wholesale, Industrial Metals & Minerals, Information Technology Services, Infrastructure Operations, Insurance - Diversified, Insurance - Life, Insurance - Property & Casualty, Insurance - Reinsurance, Insurance - Specialty, Insurance Brokers, Integrated Freight & Logistics, Internet Content & Information, Internet Information Providers, Internet Retail, Internet Service Providers, Internet Software & Services, Investment Brokerage - National, Jewelry Stores, Leisure, Life Insurance, Lodging, Long Distance Carriers, Lumber & Wood Production, Lumber, Wood Production, Luxury Goods, Machine Tools & Accessories, Major Airlines, Major Integrated Oil & Gas, Marine Shipping, Marketing Services, Medical Appliances & Equipment, Medical Care Facilities, Medical Devices, Medical Distribution, Medical Instruments & Supplies, Medical Laboratories & Research, Metal Fabrication, Money Center Banks, Mortgage Finance, Mortgage Investment, Multimedia & Graphics Software, Networking & Communication Devices, Nonmetallic Mineral Mining, Oil & Gas Drilling, Oil & Gas Drilling & Exploration, Oil & Gas E&P, Oil & Gas Equipment & Services, Oil & Gas Integrated, Oil & Gas Midstream, Oil & Gas Pipelines, Oil & Gas Refining & Marketing, Other Industrial Metals & Mining, Other Precious Metals & Mining, Packaged Foods, Packaging & Containers, Paper & Paper Products, Personal Products, Personal Services, Pharmaceutical Retailers, Pollution & Treatment Controls, Printed Circuit Boards, Processed & Packaged Goods, Property & Casualty Insurance, Property Management, Publishing, Publishing - Newspapers, REIT - Diversified, REIT - Healthcare Facilities, REIT - Hotel & Motel, REIT - Industrial, REIT - Mortgage, REIT - Office, REIT - Residential, REIT - Retail, REIT - Specialty, Railroads, Real Estate - Development, Real Estate - Diversified, Real Estate Development, Real Estate Services, Recreational Goods, Other, Recreational Vehicles, Regional - Mid-Atlantic Banks, Rental & Leasing Services, Research Services, Residential Construction, Resorts & Casinos, Restaurants, Rubber & Plastics, Scientific & Technical Instruments, Security & Protection Services, Security Software & Services, Semiconductor - Broad Line, Semiconductor Equipment & Materials, Semiconductor- Memory Chips, Semiconductors, Shell Companies, Shipping, Silver, Software - Application, Software - Infrastructure, Solar, Specialized Health Services, Specialty Business Services, Specialty Chemicals, Specialty Industrial Machinery, Specialty Retail, Specialty Retail, Other, Staffing & Employment Services, Staffing & Outsourcing Services, Steel, Steel & Iron, Technical & System Software, Telecom Services, Textile - Apparel Clothing, Textile - Apparel Footwear & Accessories, Textile Industrial, Textile Manufacturing, Thermal Coal, Tobacco, Tobacco Products, Other, Tools & Accessories, Travel Services, Trucking, Trucks & Other Vehicles, Uranium, Utilities - Diversified, Utilities - Independent Power Producers, Utilities - Regulated Electric, Utilities - Regulated Gas, Utilities - Regulated Water, Utilities - Renewable, Waste Management, Water Utilities, Wireless Communications`
+`Advertising Agencies, Aerospace & Defense, Aerospace Defense - Major Diversified, Aerospace Defense Products & Services, Agricultural Chemicals, Agricultural Inputs, Air Delivery & Freight Services, Airlines, Airports & Air Services, Aluminum, Apparel Manufacturing, Apparel Retail, Apparel Stores, Asset Management, Auto & Truck Dealerships, Auto Dealerships, Auto Manufacturers, Auto Manufacturers - Major, Auto Parts, Banks - Diversified, Banks - Regional, Beverages - Brewers, Beverages - Non-Alcoholic, Beverages - Soft Drinks, Beverages - Wineries & Distilleries, Beverages - Wineries & Distillers, Biotechnology, Broadcasting, Broadcasting - TV, Building Materials, Building Products & Equipment, Business Equipment, ...`
 
 When you wish to get country, sector or industry specific lists, you can use the related `country`, `sector` and `industry` tags as also find in the help window with `help(fd.show_options)`:
 
@@ -185,7 +185,7 @@ fd.show_options('etfs')
 
  Which returns:
 
-`Allocation--15% to 30% Equity, Allocation--30% to 50% Equity, Allocation--50% to 70% Equity, Allocation--70% to 85% Equity, Allocation--85%+ Equity, Bank Loan, Bear Market, China Region, Commodities Broad Basket, Communications, Consumer Cyclical, Consumer Defensive, Convertibles, Corporate Bond, Diversified Emerging Mkts, Diversified Pacific/Asia, Emerging Markets Bond, Emerging-Markets Local-Currency Bond, Energy Limited Partnership, Equity Energy, Equity Precious Metals, Europe Stock, Financial, Foreign Large Blend, Foreign Large Growth, Foreign Large Value, Foreign Small/Mid Blend, Foreign Small/Mid Growth, Foreign Small/Mid Value, Global Real Estate, Health, High Yield Bond, High Yield Muni, India Equity, Industrials, Inflation-Protected Bond, Infrastructure, Intermediate Government, Intermediate-Term Bond, Japan Stock, Large Blend, Large Growth, Large Value, Latin America Stock, Long Government, Long-Short Credit, Long-Short Equity, Long-Term Bond, Managed Futures, Market Neutral, Mid-Cap Blend, Mid-Cap Growth, Mid-Cap Value, Miscellaneous Region, Miscellaneous Sector, Multialternative, Multicurrency, Multisector Bond, Muni California Long, Muni Minnesota, Muni National Interm, Muni National Long, Muni National Short, Muni New York Intermediate, Natural Resources, Nontraditional Bond, Option Writing, Pacific/Asia ex-Japan Stk, Preferred Stock, Real Estate, Short Government, Short-Term Bond, Single Currency, Small Blend, Small Growth, Small Value, Tactical Allocation, Technology, Trading--Inverse Commodities, Trading--Inverse Debt, Trading--Inverse Equity, Trading--Leveraged Commodities, Trading--Leveraged Debt, Trading--Leveraged Equity, Trading--Miscellaneous, Ultrashort Bond, Utilities, Volatility, World Allocation, World Bond, World Stock`
+`Allocation--15% to 30% Equity, Allocation--30% to 50% Equity, Allocation--50% to 70% Equity, Allocation--70% to 85% Equity, Allocation--85%+ Equity, Bank Loan, Bear Market, China Region, Commodities Broad Basket, Communications, Consumer Cyclical, Consumer Defensive, Convertibles, Corporate Bond, Diversified Emerging Mkts, Diversified Pacific/Asia, Emerging Markets Bond, Emerging-Markets Local-Currency Bond, Energy Limited Partnership, Equity Energy, Equity Precious Metals, Europe Stock, Financial, Foreign Large Blend, Foreign Large Growth, Foreign Large Value, ...`
 
 ### Collecting information from the database
 
@@ -285,49 +285,9 @@ This gives you a dictionary with the following information:
   'summary': 'Century Aluminum Company, together with its subsidiaries, produces standard-grade and value-added primary aluminum products in the United States and Iceland. The company was incorporated in 1981 and is headquartered in Chicago, Illinois.',
   'website': 'http://centuryaluminum.com',
   'zipcode': '60606'},
- 'KALU': {'city': 'Foothill Ranch',
-  'country': 'United States',
-  'currency': 'USD',
-  'exchange': 'NMS',
-  'industry': 'Aluminum',
-  'long_name': 'Kaiser Aluminum Corporation',
-  'market': 'us_market',
-  'market_cap': 'Mid Cap',
-  'sector': 'Basic Materials',
-  'short_name': 'Kaiser Aluminum Corporation',
-  'state': 'CA',
-  'summary': "Kaiser Aluminum Corporation manufactures and sells semi-fabricated specialty aluminum mill products. The company provides rolled, extruded, and drawn aluminum products used principally for aerospace and defense, automotive, consumer durables, electronics, electrical, and machinery and equipment applications. Its aerospace and high strength products include heat treat plates and sheets, hard alloy extruded shapes, cold finish rods and bars, seamless drawn tubes, and billets for aerospace and defense industries. The company's automotive extrusions include extruded aluminum products for structural components, crash management systems, anti-lock braking systems, and drawn tubes for drive shafts, as well as offers fabrication services, including sawing and cutting to length. Its general engineering products comprise alloy plate, sheet, rod, bar, tube, wire, and standard extrusion shapes used in various applications, including the production of military vehicles, ordnances, semiconductor manufacturing cells, electronic devices, after-market motor sport parts, tooling plates, parts for machinery and equipment, bolts, screws, nails, and rivets. The company also offers extruded, drawn, and cast billet aluminum products for industrial end uses. It sells its products directly to customers through sales personnel located in the United States, Canada, Western Europe, and China, as well as through independent sales agents in other regions of Asia, Latin America, and the Middle East. Kaiser Aluminum Corporation was founded in 1946 and is based in Foothill Ranch, California.",
-  'website': 'http://www.kaiseraluminum.com',
-  'zipcode': '92610-2831'},
- 'NORNQ': {'city': 'Franklin',
-  'country': 'United States',
-  'currency': 'USD',
-  'exchange': 'PNK',
-  'industry': 'Aluminum',
-  'long_name': 'Noranda Aluminum Holding Corporation',
-  'market': 'us_market',
-  'market_cap': 'Nano Cap',
-  'sector': 'Basic Materials',
-  'short_name': 'NORANDA ALUM HLDG CORP',
-  'state': 'TN',
-  'summary': "Noranda Aluminum Holding Corporation produces and sells primary aluminum, alumina, bauxite, and rolled aluminum coils in the United States. The company's Bauxite segment mines, produces, and sells bauxite used for alumina production. Its Alumina segment refines and converts bauxite into alumina, which is used in the production of primary aluminum; and sells smelter grade alumina and alumina hydrate, or chemical-grade alumina. The company's Primary Aluminum segment produces and sells aluminum products in various forms, such as billets, rods, sow and foundry, and commodity grade sow. Its Flat-Rolled Products segment primarily produces rolled aluminum products, including finstock for use in commercial, residential, and automotive applications; container stock for pre-packaged foods; converter foils for food, drink, agricultural, and industrial products; and transformer windings used as conducting medium. The company sells its products to original equipment manufacturers of air conditioners, transformers, semi-rigid containers, and foil packaging. The company was founded in 2007 and is headquartered in Franklin, Tennessee.",
-  'website': None,
-  'zipcode': '37067'},
- 'ORMTQ': {'city': 'Hannibal',
-  'country': 'United States',
-  'currency': 'USD',
-  'exchange': 'PNK',
-  'industry': 'Aluminum',
-  'long_name': 'Ormet Corporation',
-  'market': 'us_market',
-  'market_cap': 'Nano Cap',
-  'sector': 'Basic Materials',
-  'short_name': 'ORMET CORP',
-  'state': 'OH',
-  'summary': 'Ormet Corporation engages in the production and sale of primary aluminum and related products in the United States. It offers aluminum/sows and alumina primarily to commodity traders. The company was founded in 1956 and is headquartered in Hannibal, Ohio.',
-  'website': None,
-  'zipcode': '43931'}}
-  ```
+
+<continues>
+```
 
 As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Basic Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
 
