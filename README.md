@@ -666,6 +666,28 @@ import financedatabase as fd
 all_moneymarkets = fd.select_moneymarkets()
 ```
 
+Which returns the following:
+
+```
+{'AABXX': {'currency': 'USD',
+  'exchange': 'NAS',
+  'long_name': None,
+  'market': 'us_market',
+  'short_name': None},
+ 'AAFXX': {'currency': 'USD',
+  'exchange': 'NAS',
+  'long_name': None,
+  'market': 'us_market',
+  'short_name': 'American Funds U.S. Government '},
+ 'AALXX': {'currency': 'USD',
+  'exchange': 'NAS',
+  'long_name': 'Thrivent Mutual Funds - Thrivent Money Market Fund',
+  'market': 'us_market',
+  'short_name': 'Thrivent Money Market Fund Clas'}
+
+<continues>
+```
+
 This returns 3.367 different money markets. Find a more elaborate explanation with `help(fd.select_moneymarkets)`:
 
 ```text

@@ -30,7 +30,7 @@ jobs:
           pip install types-pytz types-requests types-termcolor types-tabulate types-PyYAML types-python-dateutil types-setuptools types-six
           pip install financedatabase pandas yfinance ta fundamentalanalysis matplotlib
       - run: black --diff --check .
-      - run: codespell --skip Database,./.mypy_cache,./.git
+      - run: codespell --skip Database,./.mypy_cache,./.git --ignore-words-list CZAR,profound
       - run: ruff financedatabase
       - run: pylint financedatabase
 
