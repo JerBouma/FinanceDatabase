@@ -10,3 +10,7 @@ profile = "black"
 line_length = 122
 skip_gitignore = true
 combine_as_imports = true
+
+[tool.codespell]
+ignore-words-list = 'ZAR,zar,profund'
+skip = '*.json,./.git'
