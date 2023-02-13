@@ -385,32 +385,20 @@ def select_funds(
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    if category:
-        if use_local_location:
-            json_file = f"{base_url}/{category}.json"
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                category = category.replace("%", "%25").replace(" ", "%20")
-                json_file = f"{base_url}/{category}.json"
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print(f"Not able to find any data for {category}.")
-                return {}
+    new_category = category if category else all_funds_json
+    if use_local_location:
+        json_file = f"{base_url}/{new_category}.json"
+        with open(json_file) as json_local:
+            json_data = json.load(json_local)
     else:
-        json_file = f"{base_url}/{all_funds_json}.json"
-        if use_local_location:
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print("Not able to find any data.")
-                return {}
+        try:
+            new_category = new_category.replace("%", "%25").replace(" ", "%20")
+            json_file = f"{base_url}/{new_category}.json"
+            request = requests.get(json_file, timeout=30)
+            json_data = json.loads(request.text)
+        except json.decoder.JSONDecodeError:
+            print("Not able to find any data.")
+            return {}
 
     if exclude_exchanges:
         return exclude_exchanges(json_data)
@@ -451,30 +439,18 @@ def select_indices(
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    if market:
-        json_file = f"{base_url}/{market}.json"
-        if use_local_location:
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print(f"Not able to find any data for {market}.")
-                return {}
+    new_market = market if market else all_indices_json
+    json_file = f"{base_url}/{new_market}.json"
+    if use_local_location:
+        with open(json_file) as json_local:
+            json_data = json.load(json_local)
     else:
-        json_file = f"{base_url}/{all_indices_json}.json"
-        if use_local_location:
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print("Not able to find any data.")
-                return {}
+        try:
+            request = requests.get(json_file, timeout=30)
+            json_data = json.loads(request.text)
+        except json.decoder.JSONDecodeError:
+            print("Not able to find any data.")
+            return {}
 
     if exclude_exchanges:
         return exclude_exchanges(json_data)
@@ -515,30 +491,18 @@ def select_moneymarkets(
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    if market:
-        json_file = f"{base_url}/{market}.json"
-        if use_local_location:
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print(f"Not able to find any data for {market}.")
-                return {}
+    new_market = market if market else all_moneymarkets_json
+    json_file = f"{base_url}/{new_market}.json"
+    if use_local_location:
+        with open(json_file) as json_local:
+            json_data = json.load(json_local)
     else:
-        json_file = f"{base_url}/{all_moneymarkets_json}.json"
-        if use_local_location:
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print("Not able to find any data.")
-                return {}
+        try:
+            request = requests.get(json_file, timeout=30)
+            json_data = json.loads(request.text)
+        except json.decoder.JSONDecodeError:
+            print("Not able to find any data.")
+            return {}
 
     if exclude_exchanges:
         return exclude_exchanges(json_data)
