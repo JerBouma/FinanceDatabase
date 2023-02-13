@@ -286,9 +286,7 @@ This gives you a dictionary with the following information:
 
 As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Basic Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
 
-<center>
-    <p>:white_check_mark: <b>For other asset classes, please have a look [here](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md).</b></p>
-</center>
+<div align="center">:white_check_mark: **For other asset classes, please have a look [here](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md).**</div>
 
 ### Storing the database at a different location
 If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
