@@ -7,7 +7,8 @@ import requests
 # pylint: disable=unspecified-encoding, too-many-arguments, too-many-locals, too-many-return-statements,
 # pylint: disable=too-many-return-statements,too-many-branches,too-many-statements,line-too-long
 def exclude_exchange(json_data):
-    for etf in json_data.copy():
+    # Use this so that we do not have to copy all of the data as well
+    for etf in list(json_data.keys()):
         if "." in etf:
             del json_data[etf]
     if len(json_data) == 0:
