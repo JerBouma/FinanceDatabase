@@ -206,8 +206,7 @@ def select_equities(
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    print("This got hit")
-    the_path = file_path / "equities.zip.csv"
+    the_path = file_path / "equities.csv.zip"
     df = pd.read_csv(
         the_path, compression="zip", on_bad_lines="skip", sep=";", index_col=0
     )
@@ -217,7 +216,8 @@ def select_equities(
         df = df[df["sector"] == sector]
     if industry:
         df = df[df["industry"] == industry]
-    return df.to_json()
+    # TODO: we still need to remove exchanges if the user requests that
+    return df.to_dict(orient="index")
 
 
 def select_funds(
