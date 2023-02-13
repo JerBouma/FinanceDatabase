@@ -70,9 +70,7 @@ or by manual search.
 2. [Examples](#examples)
     1. [Companies in the Netherlands](#companies-in-the-netherlands)
     2. [Technical Analysis of Biotech ETFs](#technical-analysis-of-biotech-etfs)
-    3. [United States' Airlines](#united-states-airlines)
-    4. [Silicon Valley's Market Cap](#silicon-valleys-market-cap)
-    5. [Compare Japanese Stock ETFs](#compare-japanese-stock-etfs)
+    3. [Silicon Valley's Market Cap](#silicon-valleys-market-cap)
 3. [Questions & Answers](#questions--answers)
 4. [Contribution](#contribution)
 
