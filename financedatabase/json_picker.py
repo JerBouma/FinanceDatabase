@@ -36,32 +36,18 @@ def select_cryptocurrencies(
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    if cryptocurrency:
-        json_file = f"{base_url}/{cryptocurrency}.json"
-        if use_local_location:
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print(f"Not able to find any data for {cryptocurrency}.")
-                return {}
-    else:
-        json_file = f"{base_url}/{all_cryptocurrencies_json}.json"
-        if use_local_location:
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print("Not able to find any data.")
-                return {}
+    specific_path = cryptocurrency if cryptocurrency else all_cryptocurrencies_json
+    json_file = f"{base_url}/{specific_path}.json"
+    if use_local_location:
+        with open(json_file) as json_local:
+            return json.load(json_local)
 
-    return json_data
+    try:
+        request = requests.get(json_file, timeout=30)
+        return json.loads(request.text)
+    except json.decoder.JSONDecodeError:
+        print("Not able to find any data.")
+        return {}
 
 
 def select_currencies(
@@ -93,31 +79,18 @@ def select_currencies(
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    if currency:
-        json_file = f"{base_url}/{currency}.json"
-        if use_local_location:
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print(f"Not able to find any data for {currency}.")
-                return {}
-    else:
-        json_file = f"{base_url}/{all_currencies_json}.json"
-        if use_local_location:
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print("Not able to find any data.")
-                return {}
+    specific_currency = currency if currency else all_currencies_json
+    json_file = f"{base_url}/{specific_currency}.json"
+    if use_local_location:
+        with open(json_file) as json_local:
+            return json.load(json_local)
 
+    try:
+        request = requests.get(json_file, timeout=30)
+        json_data = json.loads(request.text)
+    except json.decoder.JSONDecodeError:
+        print("Not able to find any data.")
+        return {}
     return json_data
 
 
