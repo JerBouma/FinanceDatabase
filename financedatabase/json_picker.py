@@ -7,10 +7,26 @@ import requests
 # pylint: disable=unspecified-encoding, too-many-arguments, too-many-locals, too-many-return-statements,
 # pylint: disable=too-many-return-statements,too-many-branches,too-many-statements,line-too-long
 def exclude_exchange(json_data):
+    """
+    Description
+    ----
+    Removes exchanges that are not part of American Exchanges. This is visible through
+    the use of a dot within the ticker name, e.g. TSLA.MX refers to the Mexican exchange.
+
+    Input
+    ----
+    json_data (dictionary)
+        Returns a dictionary with a selection or all data based on the input.
+
+    Output
+    ----
+    json_data (dictionary)
+        Returns a dictionary with no data from other exchanges than American exchanges.
+    """
     # Use this so that we do not have to copy all of the data as well
-    for etf in list(json_data.keys()):
-        if "." in etf:
-            del json_data[etf]
+    for data_point in list(json_data.keys()):
+        if "." in data_point:
+            del json_data[data_point]
     if len(json_data) == 0:
         print(
             "Because exclude_exchanges is set to True, all available data for this "

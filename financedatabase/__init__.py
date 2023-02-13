@@ -1,4 +1,4 @@
-# Modules
+# pylint: disable=missing-module-docstring
 from .json_picker import select_cryptocurrencies  # noqa
 from .json_picker import select_currencies  # noqa
 from .json_picker import select_etfs  # noqa
