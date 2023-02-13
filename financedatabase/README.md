@@ -146,7 +146,7 @@ import financedatabase as fd
 all_equities = fd.select_equities()
 ```
 
-This returns 20.063 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in 155.728 different symbols. Find a more elaborate explanation with `help(fd.select_equities)`:
+This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155.000 different symbols. Find a more elaborate explanation with `help(fd.select_equities)`:
 
 ```text
 Help on function select_equities in module financedatabase.json_picker:
@@ -239,7 +239,7 @@ import financedatabase as fd
 all_etfs = fd.select_etfs()
 ```
 
-This returns 2841 different ETFs. Note that by default, only the American exchanges are selected. These are symbols like `SPY` (SPDR S&P 500 ETF Trust) and `VTI` (Vanguard Total Stock Market Index Fund ETF) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in  36.734 different symbols. Find a more elaborate explanation with `help(fd.select_etfs)`:
+This returns approximately 2.500 different ETFs. Note that by default, only the American exchanges are selected. These are symbols like `SPY` (SPDR S&P 500 ETF Trust) and `VTI` (Vanguard Total Stock Market Index Fund ETF) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 35.000 different symbols. Find a more elaborate explanation with `help(fd.select_etfs)`:
 
 ```text
 Help on function select_etfs in module financedatabase.json_picker:
@@ -278,7 +278,7 @@ import financedatabase as fd
 large_value_etfs = fd.select_etfs(category="Large Value")
 ```
 
-Which returns a total of 80 ETFs in which below is a small snippet of the output:
+Which returns a total of approximately 80 ETFs in which below is a small snippet of the output:
 
 ```text
 {'ABEQ': {'category': 'Large Value',
@@ -313,7 +313,7 @@ import financedatabase as fd
 all_funds = fd.select_funds()
 ```
 
-This returns 31.440 different Funds. Note that by default, only the American exchanges are selected. These are symbols that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in 57.885 different symbols. Find a more elaborate explanation with `help(fd.select_funds)`:
+This returns approximately 30.000 different Funds. Note that by default, only the American exchanges are selected. These are symbols that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 55.000 different symbols. Find a more elaborate explanation with `help(fd.select_funds)`:
 
 ```text
 Help on function select_funds in module financedatabase.json_picker:
@@ -408,7 +408,7 @@ Which returns the following:
 <continues>
 ````
 
-This returns 62.140 different indices. Note that by default, only the American exchanges are selected. These are symbols like `^GSPC` (S&P 500) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in 91.183 different symbols. Find a more elaborate explanation with `help(fd.select_indices)`:
+This returns approximately 60.000 different indices. Note that by default, only the American exchanges are selected. These are symbols like `^GSPC` (S&P 500) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 90.000 different symbols. Find a more elaborate explanation with `help(fd.select_indices)`:
 
 ```text
 Help on function select_indices in module financedatabase.json_picker:
@@ -449,7 +449,7 @@ import financedatabase as fd
 all_currencies = fd.select_currencies()
 ```
 
-This returns 2.590 different currencies. Find a more elaborate explanation with `help(fd.select_currencies)`:
+This returns approximately 2.500 different currencies. Find a more elaborate explanation with `help(fd.select_currencies)`:
 
 ```text
 Help on function select_currencies in module financedatabase.json_picker:
@@ -538,7 +538,7 @@ Which returns the following:
 <continues>
 ````
 
-This returns 3.367 different cryptocurrencies. Find a more elaborate explanation with `help(fd.select_cryptocurrencies)`:
+This returns approximately 3.000 different cryptocurrencies. Find a more elaborate explanation with `help(fd.select_cryptocurrencies)`:
 
 ```text
 Help on function select_cryptocurrencies in module financedatabase.json_picker:
@@ -625,7 +625,7 @@ Which returns the following:
 <continues>
 ```
 
-This returns 3.367 different money markets. Find a more elaborate explanation with `help(fd.select_moneymarkets)`:
+This returns approximately 3.000 different money markets. Find a more elaborate explanation with `help(fd.select_moneymarkets)`:
 
 ```text
 Help on function select_moneymarkets in module financedatabase.json_picker:

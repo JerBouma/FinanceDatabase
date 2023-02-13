@@ -205,7 +205,7 @@ import financedatabase as fd
 all_equities = fd.select_equities()
 ```
 
-This returns 20.063 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in 155.728 different symbols. Find a more elaborate explanation with `help(fd.select_equities)`:
+This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155.000 different symbols. Find a more elaborate explanation with `help(fd.select_equities)`:
 
 ```text
 Help on function select_equities in module financedatabase.json_picker:
