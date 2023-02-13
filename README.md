@@ -91,9 +91,7 @@ can do with the package. **As you can obtain a wide range of symbols, pretty muc
 package that requires symbols should work.**
 
 ### Understanding the available options
-Understanding which sectors exist in a country can be interesting. Not only to understand the focus of the country but 
-also to understand which area holds the most data. This is a demonstration of the ```show_options``` function. 
-A function crucial to querying data from the Database.
+Understanding which countries, sectors, industries and categories exist is important to be able to search the database properly. Not only to understand the focus a specific the country but also to understand which area holds the most data. This is a demonstration of the ```show_options``` function, a function crucial to querying data from the Database. The output of all functionalities is cut off in this README for illustration purposes.
 
 Let's start by acquiring the unique countries, sectors and industries of all equities in the database:
 
@@ -115,7 +113,7 @@ equities_all_categories = fd.show_options('equities')
 
 For countries, you will find the following list if you print `equities_countries`:
 
-`Afghanistan, Anguilla, Argentina, Australia, Austria, Azerbaijan, Bahamas, Bangladesh, Barbados, Belgium, Belize, Bermuda, Botswana, Brazil, British Virgin Islands, Cambodia, Canada, Cayman Islands, Chile, China, Colombia, Costa Rica, Cyprus, Czech Republic, Denmark, Dominican Republic, Egypt, Estonia, Falkland Islands, Finland, France, French Guiana, Gabon, Georgia, Germany, Ghana, Gibraltar, Greece, Greenland, Guernsey, Hong Kong, Hungary, Iceland, India, Indonesia, Ireland, Isle of Man, Israel, Italy, Ivory Coast, Japan, Jersey, Jordan, Kazakhstan, Kyrgyzstan, Latvia, Liechtenstein, Lithuania, Luxembourg, Macau, Macedonia, Malaysia, Malta, Mauritius, Mexico, Monaco, Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Netherlands, Netherlands Antilles, New Zealand, Nigeria, Norway, Panama, Papua New Guinea, Peru, Philippines, Poland, Portugal, Qatar, Reunion, Romania, Russia, Saudi Arabia, Senegal, Singapore, Slovakia, Slovenia, South Africa, South Korea, Spain, Suriname, Sweden, Switzerland, Taiwan, Tanzania, Thailand, Turkey, Ukraine, United Arab Emirates, United Kingdom, United States, Uruguay, Vietnam, Zambia`
+`Afghanistan, Anguilla, Argentina, Australia, Austria, Azerbaijan, Bahamas, Bangladesh, Barbados, Belgium, Belize, Bermuda, Botswana, Brazil, British Virgin Islands, Cambodia, Canada, Cayman Islands, Chile, China, Colombia, Costa Rica, Cyprus, Czech Republic, Denmark, Dominican Republic, Egypt, Estonia, Falkland Islands, Finland, France, French Guiana, Gabon, Georgia, Germany, Ghana, Gibraltar, Greece, Greenland, ...`
 
 For sectors, you will find the following list if you print `equities_sectors`:
 
@@ -123,9 +121,9 @@ For sectors, you will find the following list if you print `equities_sectors`:
 
 For industries, you will find the following list if you print `equities_industries`:
 
-`Advertising Agencies, Aerospace & Defense, Aerospace Defense - Major Diversified, Aerospace Defense Products & Services, Agricultural Chemicals, Agricultural Inputs, Air Delivery & Freight Services, Airlines, Airports & Air Services, Aluminum, Apparel Manufacturing, Apparel Retail, Apparel Stores, Asset Management, Auto & Truck Dealerships, Auto Dealerships, Auto Manufacturers, Auto Manufacturers - Major, Auto Parts, Banks - Diversified, Banks - Regional, Beverages - Brewers, Beverages - Non-Alcoholic, Beverages - Soft Drinks, Beverages - Wineries & Distilleries, Beverages - Wineries & Distillers, Biotechnology, Broadcasting, Broadcasting - TV, Building Materials, Building Products & Equipment, Business Equipment, ...`
+`Advertising Agencies, Aerospace & Defense, Aerospace Defense - Major Diversified, Aerospace Defense Products & Services, Agricultural Chemicals, Agricultural Inputs, Air Delivery & Freight Services, Airlines, Airports & Air Services, Aluminum, Apparel Manufacturing, Apparel Retail, Apparel Stores, Asset Management, Auto & Truck Dealerships, Auto Dealerships, Auto Manufacturers, ...`
 
-When you wish to get country, sector or industry specific lists, you can use the related `country`, `sector` and `industry` tags as also find in the help window with `help(fd.show_options)`:
+When you wish to get country, sector or industry specific lists, you can use the related `country`, `sector` and `industry` tags as also found in the help window with `help(fd.show_options)`:
 
 ```text
 show_options(product, equities_selection=None, country=None, sector=None, industry=None)
@@ -175,7 +173,7 @@ fd.show_options('currencies')
 
 Which returns:
 
-`AED, AFN, ALL, AMD, ANG, AOA, ARS, AUD, AWG, AZN, BAM, BBD, BDT, BGN, BHD, BIF, BMD, BND, BOB, BRL, BRX, BSD, BTN, BWP, BYN, BZD, CAD, CAX, CDF, CHF, CLF, CLP, CNH, CNY, COP, CRC, CUC, CUP, CVE, CZK, CZX, DJF, DKK, DKX, DOP, DZD, EGP, ERN, ETB, EUR, FJD, FKP, GBP, GEL, GHS, GIP, GMD, GNF, GTQ, GYD, HKD, HNL, HRK, HRX, HTG, HUF, HUX, IDR, ILS, INR, IQD, IRR, ISK, ISX, JMD, JOD, JPY, KES, KGS, KHR, KMF, KPW, KRW, KWD, KYD, KZT, LAK, LBP, LKR, LRD, LSL, LYD, MAD, MDL, MGA, MKD, MMK, MNT, MOP, MRU, MUR, MVR, MWK, MXN, MXV, MXX, MYR, MYX, MZN, NAD, NGN, NIO, NOK, NPR, NZD, OMR, PAB, PEN, PGK, PHP, PKR, PLN, PLX, PYG, QAR, RON, RSD, RUB, RUX, RWF, SAR, SBD, SCR, SDG, SEK, SGD, SHP, SLL, SOS, SRD, STN, SVC, SYP, SZL, THB, THX, TJS, TMT, TND, TOP, TRY, TTD, TWD, TZS, UAH, UGX, USD, UYU, UZS, VES, VND, VUV, WST, XAF, XCD, XCU, XDR, XOF, XPF, YER, ZAC, ZAR, ZMW`
+`AED, AFN, ALL, AMD, ANG, AOA, ARS, AUD, AWG, AZN, BAM, BBD, BDT, BGN, BHD, BIF, BMD, BND, BOB, BRL, BRX, BSD, BTN, BWP, BYN, BZD, CAD, CAX, CDF, CHF, CLF, CLP, CNH, CNY, COP, CRC, CUC, CUP, CVE, CZK, CZX, DJF, DKK, DKX, ...`
 
 But also when it comes to `etfs` with 
 
@@ -185,23 +183,21 @@ fd.show_options('etfs')
 
  Which returns:
 
-`Allocation--15% to 30% Equity, Allocation--30% to 50% Equity, Allocation--50% to 70% Equity, Allocation--70% to 85% Equity, Allocation--85%+ Equity, Bank Loan, Bear Market, China Region, Commodities Broad Basket, Communications, Consumer Cyclical, Consumer Defensive, Convertibles, Corporate Bond, Diversified Emerging Mkts, Diversified Pacific/Asia, Emerging Markets Bond, Emerging-Markets Local-Currency Bond, Energy Limited Partnership, Equity Energy, Equity Precious Metals, Europe Stock, Financial, Foreign Large Blend, Foreign Large Growth, Foreign Large Value, ...`
+`Allocation--15% to 30% Equity, Allocation--30% to 50% Equity, Allocation--50% to 70% Equity, Allocation--70% to 85% Equity, Allocation--85%+ Equity, Bank Loan, Bear Market, China Region, Commodities Broad Basket, Communications, Consumer Cyclical, Consumer Defensive, ...`
 
 ### Collecting information from the database
 
 Once you have figured out how to make use of the `fd.show_options` function, you can query the database for relevant data. Each of the asset classes in the database have a specific `select_` function. This includes the following `select_` options:
 
-- [Equities](#equities) (`fd.select_equities`)
-- [ETFs](#etfs) (`fd.select_etfs`)
-- [Funds](#funds) (`fd.select_funds`)
-- [Indices](#indices) (`fd.select_indices`)
-- [Currencies](#currencies) (`fd.select_currencies`)
-- [Cryptocurrencies](#cryptocurrencies) (`fd.select_cryptocurrencies`)
-- [Money Markets](#moneymarkets) (`fd.select_moneymarkets`)
+- [Equities](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#equities) (`fd.select_equities`)
+- [ETFs](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#etfs) (`fd.select_etfs`)
+- [Funds](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#funds) (`fd.select_funds`)
+- [Indices](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#indices) (`fd.select_indices`)
+- [Currencies](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#currencies) (`fd.select_currencies`)
+- [Cryptocurrencies](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#cryptocurrencies) (`fd.select_cryptocurrencies`)
+- [Money Markets](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#moneymarkets) (`fd.select_moneymarkets`)
 
-#### Equities
-
-If you wish to collect data from all equities you can use the following:
+As an example, If you wish to collect data from all equities you can use the following:
 
 ```python
 import financedatabase as fd
@@ -245,7 +241,6 @@ select_equities(country=None, sector=None, industry=None, exclude_exchanges=True
         Returns a dictionary with a selection or all data based on the input.
 ```
 
-
 As an example, in [Understanding the available options](#understanding-the-available-options) we've used `fd.show_options(product="equities", country="United States", sector="Basic Materials")` which allowed us to look at a specific industry in the United States. So with this information in hand, I can now query the industry `Aluminum` as follows:
 
 ```python
@@ -257,467 +252,41 @@ aluminium_companies_usa = fd.select_equities(country="United States", sector="Ba
 This gives you a dictionary with the following information:
 
 ```text
-{'AA': {'city': 'Pittsburgh',
-  'country': 'United States',
-  'currency': 'USD',
-  'exchange': 'NYQ',
-  'industry': 'Aluminum',
+{'AA': {'short_name': 'Alcoa Corporation',
   'long_name': 'Alcoa Corporation',
-  'market': 'us_market',
-  'market_cap': 'Mid Cap',
-  'sector': 'Basic Materials',
-  'short_name': 'Alcoa Corporation',
-  'state': 'PA',
   'summary': 'Alcoa Corporation, together with its subsidiaries, produces and sells bauxite, alumina, and aluminum products in the United States, Spain, Australia, Brazil, Canada, and internationally. The company operates through three segments: Bauxite, Alumina, and Aluminum. It engages in bauxite mining operations; and processes bauxite into alumina and sells it to customers who process it into industrial chemical products, as well as aluminum smelting, casting, and rolling businesses. The company offers primary aluminum in the form of alloy ingot or value-add ingot to customers that produce products for the transportation, building and construction, packaging, wire, and other industrial markets; and flat-rolled aluminum sheets to customers that produce beverage and food cans. In addition, it owns hydro power plants that produce and sell electricity to the wholesale market to traders, large industrial consumers, distribution companies, and other generation companies. The company was formerly known as Alcoa Upstream Corporation and changed its name to Alcoa Corporation in October 2016. The company was founded in 1888 and is headquartered in Pittsburgh, Pennsylvania.',
-  'website': 'http://www.alcoa.com',
-  'zipcode': '15212-5858'},
- 'CENX': {'city': 'Chicago',
-  'country': 'United States',
   'currency': 'USD',
-  'exchange': 'NMS',
-  'industry': 'Aluminum',
-  'long_name': 'Century Aluminum Company',
-  'market': 'us_market',
-  'market_cap': 'Small Cap',
   'sector': 'Basic Materials',
-  'short_name': 'Century Aluminum Company',
-  'state': 'IL',
+  'industry': 'Aluminum',
+  'exchange': 'NYQ',
+  'market': 'us_market',
+  'country': 'United States',
+  'state': 'PA',
+  'city': 'Pittsburgh',
+  'zipcode': '15212-5858',
+  'website': 'http://www.alcoa.com',
+  'market_cap': 'Mid Cap'},
+ 'CENX': {'short_name': 'Century Aluminum Company',
+  'long_name': 'Century Aluminum Company',
   'summary': 'Century Aluminum Company, together with its subsidiaries, produces standard-grade and value-added primary aluminum products in the United States and Iceland. The company was incorporated in 1981 and is headquartered in Chicago, Illinois.',
+  'currency': 'USD',
+  'sector': 'Basic Materials',
+  'industry': 'Aluminum',
+  'exchange': 'NMS',
+  'market': 'us_market',
+  'country': 'United States',
+  'state': 'IL',
+  'city': 'Chicago',
+  'zipcode': '60606',
   'website': 'http://centuryaluminum.com',
-  'zipcode': '60606'},
+  'market_cap': 'Small Cap'}
 
 <continues>
 ```
 
 As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Basic Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
 
-#### ETFs
-
-If you wish to collect data from all etfs you can use the following:
-
-```python
-import financedatabase as fd
-
-
-all_etfs = fd.select_etfs()
-```
-
-This returns 2841 different ETFs. Note that by default, only the American exchanges are selected. These are symbols like `SPY` (SPDR S&P 500 ETF Trust) and `VTI` (Vanguard Total Stock Market Index Fund ETF) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in  36.734 different symbols. Find a more elaborate explanation with `help(fd.select_etfs)`:
-
-```text
-Help on function select_etfs in module financedatabase.json_picker:
-
-select_etfs(category=None, exclude_exchanges=True, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/ETFs', use_local_location=False, all_etfs_json='_ETFs')
-    Description
-    ----
-    Returns all ETFs when no input is given and has the option to give
-    a specific set of symbols for the category you provide.
-    
-    Input
-    ----
-    category (string, default is None)
-        If filled, gives all data for a specific category.
-    exclude_exchanges (boolean, default is True):
-        Whether you want to exclude exchanges from the search. If False,
-        you will receive multiple times i.e. Vanguard S&P 500 from different exchanges.
-    base_url (string, default is GitHub location)
-        The possibility to enter your own location if desired.
-    use_local_location (string, default False)
-        The possibility to select a local location (i.e. based on Windows path)
-    all_etfs_json (string, default is _ETFs)
-        Alter the name of the all etfs json if desired.
-    
-    Output
-    ----
-    json_data (dictionary)
-        Returns a dictionary with a selection or all data based on the input.
-```
-
-With this information in hand, and having seen the available options within [Understanding the available options](#understanding-the-available-options), we can specify the selection as follows:
-
-```python
-import financedatabase as fd
-
-large_value_etfs = fd.select_etfs(category="Large Value")
-```
-
-Which returns a total of 80 ETFs in which below is a small snippet of the output:
-
-```text
-{'ABEQ': {'category': 'Large Value',
-  'currency': 'USD',
-  'exchange': 'PCX',
-  'family': 'Absolute Investment Advisers',
-  'long_name': 'Absolute Core Strategy ETF',
-  'market': 'us_market',
-  'short_name': 'Absolute Core Strategy ETF',
-  'summary': 'The investment seeks positive absolute returns. The fund';s investment sub-adviser (the "Subadviser"), seeks to achieve it's objective by investing primarily in equity securities of U.S. companies that the Subadviser believes are priced at a substantial discount to the Subadviser&#39;s estimate of fair value. The fund may invest in companies of any market capitalization and in any economic sector, including equity securities of foreign companies that trade on U.S. exchanges, either directly or through American Depositary Receipts ("ADRs"). It is non-diversified.',
-  'total_assets': null},
- 'AFLG': {'category': 'Large Value',
-  'currency': 'USD',
-  'exchange': 'PCX',
-  'family': 'First Trust',
-  'long_name': 'First Trust Active Factor Large Cap ETF',
-  'market': 'us_market',
-  'short_name': 'First Trust Active Factor Large',
-  'summary': 'The investment seeks to provide capital appreciation.\n Under normal market conditions, the fund will invest at least 80% of its net assets (including investment borrowings) in U.S.-listed equity securities issued by large capitalization companies. The manager defines large capitalization companies as those that, at the time of investment, have a minimum market capitalization equal to or greater than the minimum market capitalization of a widely recognized index of large capitalization companies based upon the composition of the index at the time of investment. It is non-diversified.',
-  'total_assets': null},
-
-<continues>
-```
-
-#### Funds
-
-If you wish to collect data from all funds you can use the following:
-
-```python
-import financedatabase as fd
-
-all_funds = fd.select_funds()
-```
-
-This returns 31.440 different Funds. Note that by default, only the American exchanges are selected. These are symbols that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in 57.885 different symbols. Find a more elaborate explanation with `help(fd.select_funds)`:
-
-```text
-Help on function select_funds in module financedatabase.json_picker:
-
-select_funds(category=None, exclude_exchanges=True, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/Funds', use_local_location=False, all_funds_json='_Funds')
-    Description
-    ----
-    Returns all funds when no input is given and has the option to give
-    a specific set of symbols for the category you provide.
-    
-    Input
-    ----
-    category (string, default is None)
-        If filled, gives all data for a specific category.
-    exclude_exchanges (boolean, default is True):
-        Whether you want to exclude exchanges from the search. If False,
-        you will receive multiple times i.e. AAEUX from different exchanges.
-    base_url (string, default is GitHub location)
-        The possibility to enter your own location if desired.
-    use_local_location (string, default False)
-        The possibility to select a local location (i.e. based on Windows path)
-    all_funds_json (string, default is _Funds)
-        Alter the name of the all funds json if desired.
-    
-    Output
-    ----
-    json_data (dictionary)
-        Returns a dictionary with a selection or all data based on the input.
-```
-
-With this information in hand, and having seen the available options within [Understanding the available options](#understanding-the-available-options), we can specify the selection as follows:
-
-```python
-import financedatabase as fd
-
-bear_market_funds = fd.select_funds(category="Bear Market")
-```
-
-Which returns a total of 4 funds in which below is a small snippet of the output:
-
-```text
-{'BRPIX': {'category': 'Bear Market',
-  'currency': 'USD',
-  'exchange': 'NAS',
-  'family': 'ProFunds',
-  'long_name': 'ProFunds Bear Fund Investor Class',
-  'manager_bio': 'Michael Neches joined ProShare Advisors in 2000, and presently serves as a Senior Portfolio Manager. He previously served as the Senior Portfolio Manager responsible for the companyâ\x80\x99s commodities desk for two years, as a Portfolio Manager and team lead, as an Associate Portfolio Manager and as a Portfolio Analyst. Mr. Neches earned a Bachelor of Science in Finance from the University of Maryland, College Park and an MBA from Georgetown University.',
-  'manager_name': 'Michael  Neches',
-  'market': 'us_market',
-  'short_name': 'Bear ProFund Investor Class',
-  'summary': 'The investment seeks daily investment results, before fees and expenses, that correspond to the inverse (-1x) of the daily performance of the S&P 500Â® Index.\n The fund invests in financial instruments that ProFund Advisors believes, in combination, should produce daily returns consistent with its investment objective. The index is a float-adjusted, market capitalization-weighted index of 500 U.S. operating companies and real estate investment trusts selected through a process that factors in criteria such as liquidity, price, market capitalization and financial viability. The fund is non-diversified.',
-  'total_assets': null},
-
-<continues>
-```
-
-#### Indices
-
-If you wish to collect data from all indices you can use the following:
-
-```python
-import financedatabase as fd
-
-
-all_indices = fd.select_indices()
-```
-
-Which returns the following:
-
-```test
-{'GBKX': {'short_name': 'KBW Nasdaq Global Bank Index',
-  'currency': None,
-  'market': 'us_market',
-  'exchange': 'NIM',
-  'exchange timezone': 'EDT'},
- 'GBKXN': {'short_name': 'KBW Nasdaq Global Bank Net Total Return Index',
-  'currency': None,
-  'market': 'us_market',
-  'exchange': 'NIM',
-  'exchange timezone': 'EDT'},
- 'GBKXT': {'short_name': 'KBW Nasdaq Global Bank Total Return Index',
-  'currency': None,
-  'market': 'us_market',
-  'exchange': 'NIM',
-  'exchange timezone': 'EDT'},
- '^A1BSC': {'short_name': 'Dow Jones Americas Basic Materi',
-  'currency': 'USD',
-  'market': 'us_market',
-  'exchange': 'DJI',
-  'exchange timezone': 'EDT'}
-
-<continues>
-````
-
-This returns 62.140 different indices. Note that by default, only the American exchanges are selected. These are symbols like `^GSPC` (S&P 500) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in 91.183 different symbols. Find a more elaborate explanation with `help(fd.select_indices)`:
-
-```text
-Help on function select_indices in module financedatabase.json_picker:
-
-select_indices(market=None, exclude_exchanges=True, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/Indices', use_local_location=False, all_indices_json='_Indices')
-    Description
-    ----
-    Returns all indices when no input is given and has the option to give
-    a specific set of symbols for the market you provide.
-    
-    Input
-    ----
-    market (string, default is None)
-        If filled, gives all data for a specific market.
-    exclude_exchanges (boolean, default is True):
-        Whether you want to exclude exchanges from the search. If False,
-        you will receive multiple times i.e. ^GSPC from different exchanges.
-    base_url (string, default is GitHub location)
-        The possibility to enter your own location if desired.
-    use_local_location (string, default False)
-        The possibility to select a local location (i.e. based on Windows path)
-    all_indices_json (string, default is _Indices)
-        Alter the name of the all indices json if desired.
-    
-    Output
-    ----
-    json_data (dictionary)
-        Returns a dictionary with a selection or all data based on the input.   
-```
-
-#### Currencies
-
-If you wish to collect data from all currencies you can use the following:
-
-```python
-import financedatabase as fd
-
-all_currencies = fd.select_currencies()
-```
-
-This returns 2.590 different currencies. Find a more elaborate explanation with `help(fd.select_currencies)`:
-
-```text
-Help on function select_currencies in module financedatabase.json_picker:
-
-select_currencies(currency=None, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/Currencies', use_local_location=False, all_currencies_json='_Currencies')
-    Description
-    ----
-    Returns all currencies when no input is given and has the option to give
-    a specific set of symbols for the currency you provide.
-    
-    Input
-    ----
-    currency (string, default is None)
-        If filled, gives all data for a specific currency.
-    base_url (string, default is GitHub location)
-        The possibility to enter your own location if desired.
-    use_local_location (string, default False)
-        The possibility to select a local location (i.e. based on Windows path)
-    all_currencies_json (string, default is _Currencies)
-        Alter the name of the all currencies json if desired.
-    
-    Output
-    ----
-    json_data (dictionary)
-        Returns a dictionary with a selection or all data based on the input.
-```
-
-With this information in hand, and having seen the available options within [Understanding the available options](#understanding-the-available-options), we can specify the selection as follows:
-
-```python
-import financedatabase as fd
-
-usd_currency = fd.select_currencies(currency="USD")
-```
-
-Which returns a total of 135 combination of currencies that include the USD in which below is a small snippet of the output:
-
-```text
-{'AEDUSD=X': {'currency': 'USD',
-  'exchange': 'CCY',
-  'market': 'ccy_market',
-  'short_name': 'AED/USD'},
- 'AFNUSD=X': {'currency': 'USD',
-  'exchange': 'CCY',
-  'market': 'ccy_market',
-  'short_name': 'AFN/USD'},
- 'ALLUSD=X': {'currency': 'USD',
-  'exchange': 'CCY',
-  'market': 'ccy_market',
-  'short_name': 'ALL/USD'},
- 'ANGUSD=X': {'currency': 'USD',
-  'exchange': 'CCY',
-  'market': 'ccy_market',
-  'short_name': 'ANG/USD'}
-
-<continues>
-```
-
-#### Cryptocurrencies
-
-If you wish to collect data from all cryptocurrencies you can use the following:
-
-```python
-import financedatabase as fd
-
-
-all_cryptocurrencies = fd.select_cryptocurrencies()
-```
-
-Which returns the following:
-
-```text
-{'AAVE-CAD': {'cryptocurrency': 'AAVE',
-  'currency': 'CAD',
-  'exchange': 'CCC',
-  'market': 'ccc_market',
-  'short_name': 'Aave CAD',
-  'summary': 'Aave (AAVE) is a cryptocurrency and operates on the Ethereum platform. Aave has a current supply of 16,000,000 with 12,488,045.98548802 in circulation. The last known price of Aave is 472.51174201 USD and is down -7.08 over the last 24 hours. It is currently trading on 194 active market(s) with $808,255,779.93 traded over the last 24 hours. More information can be found at https://aave.com/.'},
- 'AAVE-CNY': {'cryptocurrency': 'AAVE',
-  'currency': 'CNY',
-  'exchange': 'CCC',
-  'market': 'ccc_market',
-  'short_name': 'Aave CNY',
-  'summary': 'Aave (AAVE) is a cryptocurrency and operates on the Ethereum platform. Aave has a current supply of 16,000,000 with 12,488,045.98548802 in circulation. The last known price of Aave is 472.51174201 USD and is down -7.08 over the last 24 hours. It is currently trading on 194 active market(s) with $808,255,779.93 traded over the last 24 hours. More information can be found at https://aave.com/.'}
-
-<continues>
-````
-
-This returns 3.367 different cryptocurrencies. Find a more elaborate explanation with `help(fd.select_cryptocurrencies)`:
-
-```text
-Help on function select_cryptocurrencies in module financedatabase.json_picker:
-
-select_cryptocurrencies(cryptocurrency=None, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/Cryptocurrencies', use_local_location=False, all_cryptocurrencies_json='_Cryptocurrencies')
-    Description
-    ----
-    Returns all cryptocurrencies when no input is given and has the option to give
-    a specific set of symbols for the cryptocurrency you provide.
-    
-    Input
-    ----
-    cryptocurrency (string, default is None)
-        If filled, gives all data for a specific cryptocurrency.
-    base_url (string, default is GitHub location)
-        The possibility to enter your own location if desired.
-    use_local_location (string, default False)
-        The possibility to select a local location (i.e. based on Windows path)
-    all_cryptocurrencies_json (string, default is _Cryptocurrencies)
-        Alter the name of the all cryptocurrencies json if desired.
-    
-    Output
-    ----
-    json_data (dictionary)
-        Returns a dictionary with a selection or all data based on the input.
-```
-
-With this information in hand, and having seen the available options within [Understanding the available options](#understanding-the-available-options), we can specify the selection as follows:
-
-```python
-import financedatabase as fd
-
-eth_cryptocurrency = fd.select_cryptocurrencies(cryptocurrency="ETH")
-```
-
-Which returns a total of 5 combination of cryptocurrencies that include the ETH in which below is a small snippet of the output:
-
-```text
-{'ETH-BTC': {'cryptocurrency': 'ETH',
-  'currency': 'BTC',
-  'exchange': 'CCC',
-  'market': 'ccc_market',
-  'short_name': 'Ethereum BTC',
-  'summary': 'Ethereum (ETH) is a cryptocurrency . Users are able to generate ETH through the process of mining. Ethereum has a current supply of 115,748,447.249. The last known price of Ethereum is 3,363.79331068 USD and is down -3.44 over the last 24 hours. It is currently trading on 6358 active market(s) with $56,906,207,070.13 traded over the last 24 hours. More information can be found at https://www.ethereum.org/.'},
- 'ETH-CAD': {'cryptocurrency': 'ETH',
-  'currency': 'CAD',
-  'exchange': 'CCC',
-  'market': 'ccc_market',
-  'short_name': 'Ethereum CAD',
-  'summary': 'Ethereum (ETH) is a cryptocurrency . Users are able to generate ETH through the process of mining. Ethereum has a current supply of 115,809,211.249. The last known price of Ethereum is 3,942.58538843 USD and is up 1.53 over the last 24 hours. It is currently trading on 5438 active market(s) with $50,452,624,669.75 traded over the last 24 hours. More information can be found at https://www.ethereum.org/.'}
-
-<continues>
-```
-
-#### Moneymarkets
-
-If you wish to collect data from all money markets you can use the following:
-
-```python
-import financedatabase as fd
-
-all_moneymarkets = fd.select_moneymarkets()
-```
-
-Which returns the following:
-
-```
-{'AABXX': {'currency': 'USD',
-  'exchange': 'NAS',
-  'long_name': None,
-  'market': 'us_market',
-  'short_name': None},
- 'AAFXX': {'currency': 'USD',
-  'exchange': 'NAS',
-  'long_name': None,
-  'market': 'us_market',
-  'short_name': 'American Funds U.S. Government '},
- 'AALXX': {'currency': 'USD',
-  'exchange': 'NAS',
-  'long_name': 'Thrivent Mutual Funds - Thrivent Money Market Fund',
-  'market': 'us_market',
-  'short_name': 'Thrivent Money Market Fund Clas'}
-
-<continues>
-```
-
-This returns 3.367 different money markets. Find a more elaborate explanation with `help(fd.select_moneymarkets)`:
-
-```text
-Help on function select_moneymarkets in module financedatabase.json_picker:
-
-select_moneymarkets(market=None, exclude_exchanges=True, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/Moneymarkets', use_local_location=False, all_moneymarkets_json='_Moneymarkets')
-    Description
-    ----
-    Returns all moneymarkets when no input is given and has the option to give
-    a specific set of symbols for the market you provide.
-    
-    Input
-    ----
-    market (string, default is None)
-        If filled, gives all data for a specific market.
-    exclude_exchanges (boolean, default is True):
-        Whether you want to exclude exchanges from the search. If False,
-        you will receive multiple times i.e. SOND from different exchanges.
-    base_url (string, default is GitHub location)
-        The possibility to enter your own location if desired.
-    use_local_location (string, default False)
-        The possibility to select a local location (i.e. based on Windows path)
-    all_moneymarkets_json (string, default is _Moneymarkets)
-        Alter the name of the all moneymarkets json if desired.
-    
-    Output
-    ----
-    json_data (dictionary)
-        Returns a dictionary with a selection or all data based on the input.
-```
+:white_check_mark: **For other asset classes, please have a look [here](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md).**
 
 ### Storing the database at a different location
 If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
@@ -762,9 +331,7 @@ plt.tight_layout()
 plt.show()
 ````
 
-This results in the following graph which gives an indication which sectors are dominant within The Netherlands. 
-Of course this is a mere example and to truly understand the importance of certain companies for the Netherlands, 
-an in-depth analysis must be done.
+This results in the following graph which gives an indication which sectors are dominant within The Netherlands. Of course this is a mere example and to truly understand the importance of certain companies for the Netherlands, you would need to know market cap of each sector as well including demographics.
 
 ![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/CompaniesPerSectorInTheNetherlands.png)
 
@@ -833,61 +400,8 @@ about [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp)
 
 ![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/Technical_Analysis_Biotech_Companies_Coronacrisis.png)
 
-### United States' Airlines
-If I wish to obtain all companies within the United States listed under 'Airlines' I can write the 
-following code:
-
-````python
-import financedatabase as fd
-
-airlines_us = fd.select_equities(country='United States', industry='Airlines')
-````
-
-Then, I can use packages like [yfinance](https://github.com/ranaroussi/yfinance) to quickly collect data from 
-Yahoo Finance for each symbol in the industry like this:
-
-````python
-from yfinance.utils import get_json
-from yfinance import download
-
-airlines_us_fundamentals = {}
-for symbol in airlines_us:
-    airlines_us_fundamentals[symbol] = get_json("https://finance.yahoo.com/quote/" + symbol)
-
-airlines_us_stock_data = download(list(airlines_us))
-````
-
-With a few lines of code, I have collected all data from a specific industry within the United States. From here on 
-you can compare pretty much any key statistic, fundamental- and stock data. For example, let's plot a simple bar 
-chart that gives insights in the Quick Ratios (indicator of the overall financial strength or weakness of a company):
-
-````python
-import matplotlib.pyplot as plt
-
-for symbol in airlines_us_fundamentals:
-    quick_ratio = airlines_us_fundamentals[symbol]['financialData']['quickRatio']
-    long_name = airlines_us_fundamentals[symbol]['quoteType']['longName']
-
-    if quick_ratio is None:
-        continue
-
-    plt.barh(long_name, quick_ratio)
-
-plt.tight_layout()
-plt.show()
-``````
-
-Which results in the graph displayed below (as of the 18th of October 2021). From this graph you can identify 
-companies that currently lack enough assets to cover their liabilities (quick ratio < 1), and those that do have 
-enough assets (quick ratio > 1). Both too low and too high could make you wonder whether the company adequately 
-manages its assets.
-
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/United_States_Airlines_QuickRatio.png)
-
 ### Silicon Valley's Market Cap
-If I want to understand which listed technology companies exist in Silicon Valley, I can collect all equities of 
-the sector 'Technology' and then filter based on city to obtain all listed technology companies in 'Silicon Valley'. 
-The city 'San Jose' is where Silicon Valley is located.
+If I want to understand which listed technology companies exist in Silicon Valley, I can collect all equities of the sector 'Technology' and then filter based on city to obtain all listed technology companies in 'Silicon Valley'. The city 'San Jose' is where Silicon Valley is located.
 
 ````python
 import financedatabase as fd
@@ -895,8 +409,7 @@ import financedatabase as fd
 all_technology_companies = fd.select_equities(sector='Technology')
 silicon_valley = fd.search_products(all_technology_companies, query='San Jose', search='city')
 ````
-Then I start collecting data with the [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) package. 
-Here I collect the key metrics which include 57 different metrics (ranging from PE ratios to Market Cap).
+Then I start collecting data with the [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) package. Here I collect the key metrics which include 57 different metrics (ranging from PE ratios to Market Cap).
 
 ````python
 import FundamentalAnalysis as fa
@@ -910,9 +423,7 @@ for ticker in silicon_valley:
         continue
 ````
 
-Then I make a selection based on the last 5 years and filter by market cap to compare the companies in terms of size
-with each other. This also causes companies that have not been listed for 5 years to be filtered out of my dataset.
-Lastly, I plot the data.
+Then I make a selection based on the last 5 years and filter by market cap to compare the companies in terms of size with each other. This also causes companies that have not been listed for 5 years to be filtered out of my dataset. Lastly, I plot the data.
 
 ````python
 import pandas as pd
@@ -934,111 +445,9 @@ market_cap_plot.legend(prop={'size': 5.25})
 plt.show()
 ````
 
-This results in the graph displayed below which separates the small companies from the large companies. Note that 
-this does not include _all_ technology companies in Silicon Valley because most are not listed or are not included 
-in the database of the FundamentalAnalysis package.
+This results in the graph displayed below which separates the small companies from the large companies. Note that  this does not include _all_ technology companies in Silicon Valley because most are not listed or are not included in the database of the FundamentalAnalysis package.
 
 ![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/Silicon_Valley_Technology_MarketCap.png)
-
-### Compare Japanese Stock ETFs
-Sometimes, Excel simply offers the best solution if you want compare a range of ETFs quickly. Therefore, another 
-option is to use my program [ThePassiveInvestor](https://github.com/JerBouma/ThePassiveInvestor). The goal of 
-this package is to quickly compare a large selection of ETFs by collecting their most important attributes 
-(i.e. holdings, return, volatility, tracking error).
-
-For example, let's obtain ETFs that track the Japanese Stock Market:
-
-````python
-import financedatabase as fd
-
-# Obtain Japanese Stock ETFs (found via fd.show_options("etfs"))
-japanese_stock = fd.select_etfs("Japan Stock")
-
-# Convert tickers to a list
-japanese_stock_tickers = list(japanese_stock.keys())
-````
-
-Then I create the Excel report
-
-````python
-import thepassiveinvestor as pi
-
-pi.create_ETF_report(japanese_stock_tickers, "Japanese Stock ETFs.xlsx")
-````
-
-When you run this function it starts collecting data on each ticker and fills the Excel with data. After the function 
-is finished you are able to find an Excel that looks to the GIF you see below. With this data you can 
-get an indication whether the ETF is what you are looking for.
-
-![ThePassiveInvestor](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/ThePassiveInvestor_GIF.gif)
-
-Alternatively, you can also use the comparison method from `pi.collect_data` as follows:
-
-````python
-import financedatabase as fd
-import thepassiveinvestor as pi
-
-# Obtain Japanese Stock ETFs (found via fd.show_options("etfs"))
-japanese_stock = fd.select_etfs("Japan Stock")
-
-# Convert tickers to a list
-japanese_stock_tickers = list(japanese_stock.keys())
-
-# Create a comparison DataFrame
-comparison = pi.collect_data(japanese_stock_tickers, comparison=True)
-````
-
-Which returns the following:
-
-|                                               | BBJP        | DBJP        | EWJ         | EWJV        | GSJY        | JPXN        | SCJ         |
-|:----------------------------------------------|:------------|:------------|:------------|:------------|:------------|:------------|:------------|
-| ('sector_holdings', 'realestate')             | 3.88%       | 3.11%       | 3.37%       | 5.04%       | 2.39%       | 2.52%       | 10.52%      |
-| ('sector_holdings', 'consumer_cyclical')      | 15.79%      | 13.65%      | 14.81%      | 18.81%      | 14.7%       | 10.8%       | 17.44%      |
-| ('sector_holdings', 'basic_materials')        | 4.73%       | 4.1%        | 4.43%       | 4.1%        | 3.18%       | 5.38%       | 8.69%       |
-| ('sector_holdings', 'consumer_defensive')     | 6.53%       | 6.09%       | 6.56%       | 3.62%       | 7.63%       | 8.23%       | 7.93%       |
-| ('sector_holdings', 'technology')             | 14.7%       | 14.76%      | 15.9%       | 4.5%        | 14.84%      | 14.07%      | 9.69%       |
-| ('sector_holdings', 'communication_services') | 7.47%       | 7.66%       | 8.26%       | 8.66%       | 8.76%       | 8.53%       | 2.69%       |
-| ('sector_holdings', 'financial_services')     | 11.85%      | 11.19%      | 12.17%      | 20.44%      | 12.92%      | 11.96%      | 6.97%       |
-| ('sector_holdings', 'utilities')              | 1.17%       | 1.02%       | 1.02%       | 1.85%       | 1.57%       | 1.3%        | 2.23%       |
-| ('sector_holdings', 'industrials')            | 23.02%      | 20.72%      | 22.32%      | 25.99%      | 22.8%       | 23.89%      | 24.94%      |
-| ('sector_holdings', 'energy')                 | 0.79%       | 0.79%       | 0.84%       | 1.61%       | 1.43%       | 1.02%       | 0.54%       |
-| ('sector_holdings', 'healthcare')             | 10.1%       | 9.18%       | 9.92%       | 4.81%       | 10.63%      | 12.01%      | 8.06%       |
-| ('annual_returns', '2022')                    | -16.79%     | -2.53%      | -17.36%     | -5.68%      | -15.6%      | -16.04%     | -12.7%      |
-| ('annual_returns', '2021')                    | 1.39%       | 12.89%      | 1.56%       | 6.16%       | 0.6%        | 0.4%        | -2.4%       |
-| ('annual_returns', '2020')                    | 15.05%      | 9.49%       | 14.03%      | 0.89%       | 12.56%      | 13.78%      | 6.28%       |
-| ('annual_returns', '2019')                    | 18.62%      | 20.78%      | 19.19%      | N/A         | 18.28%      | 19.36%      | 19.04%      |
-| ('annual_returns', '2018')                    | N/A         | -14.03%     | -13.17%     | nan         | -10.52%     | -13.94%     | -16.36%     |
-| ('key_characteristics', 'fundInceptionDate')  | 2018-06-15  | 2011-06-09  | 1996-03-12  | 2019-03-05  | 2016-03-02  | 2001-10-23  | 2007-12-20  |
-| ('key_characteristics', 'category')           | Japan Stock | Japan Stock | Japan Stock | Japan Stock | Japan Stock | Japan Stock | Japan Stock |
-| ('key_characteristics', 'totalAssets')        | 6722127360  | 229223424   | 9353692160  | 83362744    | 12140200    | 52644332    | 65078772    |
-| ('key_characteristics', 'currency')           | USD         | USD         | USD         | USD         | USD         | USD         | USD         |
-| ('key_characteristics', 'navPrice')           | 46.83       | 49.34       | 56.87       | 25.39       | 31.51       | 60.73       | 66.02       |
-| ('key_characteristics', 'previousClose')      | 47.21       | 49.5855     | 57.31       | 25.4712     | 31.45       | 61.14       | 65.98       |
-| ('risk_data_3y', 'year')                      | 3y          | 3y          | 3y          | 3y          | 3y          | 3y          | 3y          |
-| ('risk_data_3y', 'alpha')                     | -1.2        | 5.92        | -1.64       | 0.18        | -1.74       | -1.54       | -3.46       |
-| ('risk_data_3y', 'beta')                      | 0.78        | 0.6         | 0.8         | 0.76        | 0.76        | 0.8         | 0.67        |
-| ('risk_data_3y', 'meanAnnualReturn')          | 0.04        | 0.62        | 0.01        | 0.16        | -0.01       | 0.02        | -0.16       |
-| ('risk_data_3y', 'rSquared')                  | 75.22       | 54.25       | 76.73       | 69.7        | 73.88       | 74.18       | 58.87       |
-| ('risk_data_3y', 'stdDev')                    | 17.63       | 15.75       | 17.95       | 17.66       | 17.18       | 18.06       | 17.11       |
-| ('risk_data_3y', 'sharpeRatio')               | 0.28        | 0.18        | 0.51        | 0.24        | 0.3         | 0.58        | 0.14        |
-| ('risk_data_3y', 'treynorRatio')              | -2.35       | 9.32        | -2.86       | -0.68       | -3.11       | -2.8        | -6.11       |
-| ('risk_data_5y', 'year')                      | 5y          | 5y          | 5y          | 5y          | 5y          | 5y          | 5y          |
-| ('risk_data_5y', 'alpha')                     | 0           | 3.62        | -1.13       | 0           | -0.76       | -1.22       | -2.94       |
-| ('risk_data_5y', 'beta')                      | 0           | 0.68        | 0.81        | 0           | 0.75        | 0.8         | 0.7         |
-| ('risk_data_5y', 'meanAnnualReturn')          | 0           | 0.47        | 0.09        | 0           | 0.11        | 0.08        | -0.08       |
-| ('risk_data_5y', 'rSquared')                  | 0           | 57.38       | 77.72       | 0           | 74.52       | 75.54       | 62.08       |
-| ('risk_data_5y', 'stdDev')                    | 0           | 15.33       | 15.76       | 0           | 14.95       | 15.86       | 15.39       |
-| ('risk_data_5y', 'sharpeRatio')               | 0           | 0.23        | 0.81        | 0           | 0.7         | 0.9         | 0.49        |
-| ('risk_data_5y', 'treynorRatio')              | 0           | 4.79        | -1.9        | 0           | -1.49       | -2.05       | -4.82       |
-| ('risk_data_10y', 'year')                     | 10y         | 10y         | 10y         | 10y         | 10y         | 10y         | 10y         |
-| ('risk_data_10y', 'alpha')                    | 0           | 7.31        | 1.96        | 0           | 0           | 1.98        | 3.32        |
-| ('risk_data_10y', 'beta')                     | 0           | 0.72        | 0.81        | 0           | 0           | 0.8         | 0.7         |
-| ('risk_data_10y', 'meanAnnualReturn')         | 0           | 0.92        | 0.5         | 0           | 0           | 0.5         | 0.58        |
-| ('risk_data_10y', 'rSquared')                 | 0           | 44.31       | 70          | 0           | 0           | 68.8        | 53.61       |
-| ('risk_data_10y', 'stdDev')                   | 0           | 15.7        | 14.14       | 0           | 0           | 14.08       | 13.96       |
-| ('risk_data_10y', 'sharpeRatio')              | 0           | 0.32        | 0.84        | 0           | 0           | 0.94        | 0.78        |
-| ('risk_data_10y', 'treynorRatio')             | 0           | 13.09       | 5.32        | 0           | 0           | 5.37        | 7.58        |
-| ('annual_returns', '2017')                    | nan         | 20.83%      | 23.56%      | nan         | 24.52%      | 24.01%      | 30.92%      |
 
 ## Questions & Answers
 In this section you can find answers to commonly asked questions. In case the answer to your question is not here, 
