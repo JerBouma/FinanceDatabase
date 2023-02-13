@@ -347,7 +347,7 @@ def select_equities(
                 return {}
 
     if exclude_exchanges:
-        return exclude_exchanges(json_data)
+        return exclude_exchange(json_data)
 
     return json_data
 
@@ -401,7 +401,7 @@ def select_funds(
             return {}
 
     if exclude_exchanges:
-        return exclude_exchanges(json_data)
+        return exclude_exchange(json_data)
 
     return json_data
 
@@ -453,7 +453,7 @@ def select_indices(
             return {}
 
     if exclude_exchanges:
-        return exclude_exchanges(json_data)
+        return exclude_exchange(json_data)
 
     return json_data
 
@@ -505,6 +505,6 @@ def select_moneymarkets(
             return {}
 
     if exclude_exchanges:
-        return exclude_exchanges(json_data)
+        return exclude_exchange(json_data)
 
     return json_data
