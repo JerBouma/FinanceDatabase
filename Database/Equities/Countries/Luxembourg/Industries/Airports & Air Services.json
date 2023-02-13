@@ -1,34 +1,34 @@
 {
-  "CAAP": {
-    "city": "Luxembourg City",
-    "country": "Luxembourg",
-    "currency": "USD",
-    "exchange": "NYQ",
-    "industry": "Airports & Air Services",
-    "long_name": "Corporación América Airports S.A.",
-    "market": "us_market",
-    "market_cap": "Small Cap",
-    "sector": "Industrials",
-    "short_name": "Corporacion America Airports SA",
-    "state": null,
-    "summary": "CorporaciÃ³n AmÃ©rica Airports S.A., through its subsidiaries, acquires, develops, and operates airport concessions. It operates 52 airports in Latin America, Europe, and Eurasia. The company was formerly knwona as A.C.I. Airports International S.Ã  r.l. The company was founded in 1998 and is headquartered in Luxembourg, Luxembourg. CorporaciÃ³n AmÃ©rica Airports S.A. is a subsidiary of A.C.I. Airports S.Ã  r.l.",
-    "website": "http://www.caap.aero",
-    "zipcode": "1643"
-  },
-  "CAAP.BA": {
-    "city": "Luxembourg City",
-    "country": "Luxembourg",
-    "currency": "ARS",
-    "exchange": "BUE",
-    "industry": "Airports & Air Services",
-    "long_name": "Corporación América Airports S.A.",
-    "market": "ar_market",
-    "market_cap": null,
-    "sector": "Industrials",
-    "short_name": "CORPORACION AMERIC",
-    "state": null,
-    "summary": "CorporaciÃ³n AmÃ©rica Airports S.A., through its subsidiaries, acquires, develops, and operates airport concessions. It operates 52 airports in Latin America, Europe, and Eurasia. The company was formerly knwona as A.C.I. Airports International S.Ã  r.l. The company was founded in 1998 and is headquartered in Luxembourg, Luxembourg. CorporaciÃ³n AmÃ©rica Airports S.A. is a subsidiary of A.C.I. Airports S.Ã  r.l.",
-    "website": "http://www.caap.aero",
-    "zipcode": "1643"
-  }
+    "CAAP.BA": {
+        "short_name": "CORPORACION AMERIC",
+        "long_name": "Corporaci\u00f3n Am\u00e9rica Airports S.A.",
+        "summary": "Corporaci\u00c3\u00b3n Am\u00c3\u00a9rica Airports S.A., through its subsidiaries, acquires, develops, and operates airport concessions. It operates 52 airports in Latin America, Europe, and Eurasia. The company was formerly knwona as A.C.I. Airports International S.\u00c3\u00a0 r.l. The company was founded in 1998 and is headquartered in Luxembourg, Luxembourg. Corporaci\u00c3\u00b3n Am\u00c3\u00a9rica Airports S.A. is a subsidiary of A.C.I. Airports S.\u00c3\u00a0 r.l.",
+        "currency": "ARS",
+        "sector": "Industrials",
+        "industry": "Airports & Air Services",
+        "exchange": "BUE",
+        "market": "ar_market",
+        "country": "Luxembourg",
+        "state": null,
+        "city": "Luxembourg City",
+        "zipcode": "1643",
+        "website": "http://www.caap.aero",
+        "market_cap": null
+    },
+    "CAAP": {
+        "short_name": "Corporacion America Airports SA",
+        "long_name": "Corporaci\u00f3n Am\u00e9rica Airports S.A.",
+        "summary": "Corporaci\u00c3\u00b3n Am\u00c3\u00a9rica Airports S.A., through its subsidiaries, acquires, develops, and operates airport concessions. It operates 52 airports in Latin America, Europe, and Eurasia. The company was formerly knwona as A.C.I. Airports International S.\u00c3\u00a0 r.l. The company was founded in 1998 and is headquartered in Luxembourg, Luxembourg. Corporaci\u00c3\u00b3n Am\u00c3\u00a9rica Airports S.A. is a subsidiary of A.C.I. Airports S.\u00c3\u00a0 r.l.",
+        "currency": "USD",
+        "sector": "Industrials",
+        "industry": "Airports & Air Services",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "Luxembourg",
+        "state": null,
+        "city": "Luxembourg City",
+        "zipcode": "1643",
+        "website": "http://www.caap.aero",
+        "market_cap": "Small Cap"
+    }
 }

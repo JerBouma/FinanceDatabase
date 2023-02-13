@@ -1,38 +1,38 @@
 {
-  "CADSHP=X": {
-    "currency": "SHP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/SHP"
-  },
-  "CHFSHP=X": {
-    "currency": "SHP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/SHP"
-  },
-  "EURSHP=X": {
-    "currency": "SHP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/SHP"
-  },
-  "GBPSHP=X": {
-    "currency": "SHP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/SHP"
-  },
-  "JPYSHP=X": {
-    "currency": "SHP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/SHP"
-  },
-  "SHP=X": {
-    "currency": "SHP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/SHP"
-  }
+    "CADSHP=X": {
+        "short_name": "CAD/SHP",
+        "currency": "SHP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFSHP=X": {
+        "short_name": "CHF/SHP",
+        "currency": "SHP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURSHP=X": {
+        "short_name": "EUR/SHP",
+        "currency": "SHP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPSHP=X": {
+        "short_name": "GBP/SHP",
+        "currency": "SHP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYSHP=X": {
+        "short_name": "JPY/SHP",
+        "currency": "SHP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SHP=X": {
+        "short_name": "USD/SHP",
+        "currency": "SHP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

@@ -1,24 +1,24 @@
 {
-  "PCEF": {
-    "category": "Allocation--15% to 30% Equity",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Invesco",
-    "long_name": "Invesco CEF Income Composite ETF",
-    "market": "us_market",
-    "short_name": "Invesco CEF Income Composite ET",
-    "summary": "The investment seeks to track the investment results (before fees and expenses) of the S-Network Composite Closed-End Fund IndexSM.\n The fund generally will invest at least 90% of its total assets in the components of the index. It is a âfund of funds,â meaning that it invests its assets in the common shares of funds included in the index rather than in individual securities. The index is designed to measure the overall performance of a universe of U.S.-listed closed-end funds that are organized under the laws of the United States and are principally engaged in asset management processes designed to produce taxable annual yield.",
-    "total_assets": 829836608
-  },
-  "YLD": {
-    "category": "Allocation--15% to 30% Equity",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Principal Funds",
-    "long_name": "Principal Active Income ETF",
-    "market": "us_market",
-    "short_name": "Principal Active Income ETF",
-    "summary": "The investment seeks to provide current income.\n The fund is an actively managed exchange-traded fund (\"ETF\") that seeks to achieve its investment objective by investing, under normal circumstances, its assets in investment grade and non-investment grade fixed income securities (commonly known as \"junk bonds\") and in equity securities. The fund&#39;s Sub-Advisors, actively and tactically allocates the fund&#39;s assets among fixed income securities and equity securities in an effort to take advantage of changing economic conditions that the Advisor believes favors one asset class over another.",
-    "total_assets": 230413792
-  }
+    "PCEF": {
+        "short_name": "Invesco CEF Income Composite ET",
+        "long_name": "Invesco CEF Income Composite ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results (before fees and expenses) of the S-Network Composite Closed-End Fund IndexSM.\n The fund generally will invest at least 90% of its total assets in the components of the index. It is a \u00e2\u0080\u009cfund of funds,\u00e2\u0080\u009d meaning that it invests its assets in the common shares of funds included in the index rather than in individual securities. The index is designed to measure the overall performance of a universe of U.S.-listed closed-end funds that are organized under the laws of the United States and are principally engaged in asset management processes designed to produce taxable annual yield.",
+        "category": "Allocation--15% to 30% Equity",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 829836608
+    },
+    "YLD": {
+        "short_name": "Principal Active Income ETF",
+        "long_name": "Principal Active Income ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide current income.\n The fund is an actively managed exchange-traded fund (\"ETF\") that seeks to achieve its investment objective by investing, under normal circumstances, its assets in investment grade and non-investment grade fixed income securities (commonly known as \"junk bonds\") and in equity securities. The fund&#39;s Sub-Advisors, actively and tactically allocates the fund&#39;s assets among fixed income securities and equity securities in an effort to take advantage of changing economic conditions that the Advisor believes favors one asset class over another.",
+        "category": "Allocation--15% to 30% Equity",
+        "family": "Principal Funds",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 230413792
+    }
 }

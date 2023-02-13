@@ -1,26 +1,26 @@
 {
-  "CLF=X": {
-    "currency": "CLF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/CLF"
-  },
-  "EURCLF=X": {
-    "currency": "CLF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/CLF"
-  },
-  "GBPCLF=X": {
-    "currency": "CLF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/CLF"
-  },
-  "JPYCLF=X": {
-    "currency": "CLF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/CLF"
-  }
+    "CLF=X": {
+        "short_name": "USD/CLF",
+        "currency": "CLF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURCLF=X": {
+        "short_name": "EUR/CLF",
+        "currency": "CLF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPCLF=X": {
+        "short_name": "GBP/CLF",
+        "currency": "CLF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYCLF=X": {
+        "short_name": "JPY/CLF",
+        "currency": "CLF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

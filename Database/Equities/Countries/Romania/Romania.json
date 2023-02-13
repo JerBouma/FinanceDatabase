@@ -1,34 +1,34 @@
 {
-  "ECEA.F": {
-    "city": "Bucharest",
-    "country": "Romania",
-    "currency": "EUR",
-    "exchange": "FRA",
-    "industry": "Utilities - Regulated Electric",
-    "long_name": "Societatea Energetica Electrica S.A.",
-    "market": "dr_market",
-    "market_cap": "Small Cap",
-    "sector": "Utilities",
-    "short_name": "S.ENER.ELEC.SP.GDR REGS 1",
-    "state": null,
-    "summary": "Societatea Energetica Electrica S.A., together with its subsidiaries, engages in the distribution and supply of electricity in Romania. It operates through Electricity and Natural Gas Supply, Electricity Distribution, Electricity Generation, and External Electricity Network Maintenance segments. The company provides electricity distribution services to electricity suppliers; supplies electricity to consumers in North Transylvania, South Transylvania, and North Muntenia; and supplies natural gas. It also offers construction, repair, maintenance, and other services for the energy sector. The company was formerly known as Societatea de Distributie si Furnizare a Energiei Electrice Electrica S.A. and changed its name to Societatea Energetica Electrica S.A. in April 2016. Societatea Energetica Electrica S.A. was founded in 1898 and is based in Bucharest, Romania.",
-    "website": "http://www.electrica.ro",
-    "zipcode": null
-  },
-  "RZ8G.F": {
-    "city": "Medias",
-    "country": "Romania",
-    "currency": "EUR",
-    "exchange": "FRA",
-    "industry": "Oil & Gas Integrated",
-    "long_name": "SNGN Romgaz SA",
-    "market": "dr_market",
-    "market_cap": "Mid Cap",
-    "sector": "Energy",
-    "short_name": "SO.NA.GA.N.R.GDR REGS LN1",
-    "state": null,
-    "summary": "SNGN Romgaz SA engages in the exploration, development, and production of natural gas resources in Romania. It holds a 100% interest in 9 exploration-development-production blocks located in Romania. The company produces natural gas through 3,050 wells and surface facilities; and electricity with an installed capacity of 800 megawatts. It also engages in the trading of natural gas; transportation of general goods and persons; well recompletion operations, workover and special well operations, and production test works; and underground storage of natural gas. The company was founded in 1909 and is headquartered in Medias, Romania.",
-    "website": "http://www.romgaz.ro",
-    "zipcode": "551130"
-  }
+    "ECEA.F": {
+        "short_name": "S.ENER.ELEC.SP.GDR REGS 1",
+        "long_name": "Societatea Energetica Electrica S.A.",
+        "summary": "Societatea Energetica Electrica S.A., together with its subsidiaries, engages in the distribution and supply of electricity in Romania. It operates through Electricity and Natural Gas Supply, Electricity Distribution, Electricity Generation, and External Electricity Network Maintenance segments. The company provides electricity distribution services to electricity suppliers; supplies electricity to consumers in North Transylvania, South Transylvania, and North Muntenia; and supplies natural gas. It also offers construction, repair, maintenance, and other services for the energy sector. The company was formerly known as Societatea de Distributie si Furnizare a Energiei Electrice Electrica S.A. and changed its name to Societatea Energetica Electrica S.A. in April 2016. Societatea Energetica Electrica S.A. was founded in 1898 and is based in Bucharest, Romania.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Electric",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Romania",
+        "state": null,
+        "city": "Bucharest",
+        "zipcode": null,
+        "website": "http://www.electrica.ro",
+        "market_cap": "Small Cap"
+    },
+    "RZ8G.F": {
+        "short_name": "SO.NA.GA.N.R.GDR REGS LN1",
+        "long_name": "SNGN Romgaz SA",
+        "summary": "SNGN Romgaz SA engages in the exploration, development, and production of natural gas resources in Romania. It holds a 100% interest in 9 exploration-development-production blocks located in Romania. The company produces natural gas through 3,050 wells and surface facilities; and electricity with an installed capacity of 800 megawatts. It also engages in the trading of natural gas; transportation of general goods and persons; well recompletion operations, workover and special well operations, and production test works; and underground storage of natural gas. The company was founded in 1909 and is headquartered in Medias, Romania.",
+        "currency": "EUR",
+        "sector": "Energy",
+        "industry": "Oil & Gas Integrated",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Romania",
+        "state": null,
+        "city": "Medias",
+        "zipcode": "551130",
+        "website": "http://www.romgaz.ro",
+        "market_cap": "Mid Cap"
+    }
 }

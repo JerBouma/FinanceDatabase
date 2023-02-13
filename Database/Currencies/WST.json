@@ -1,38 +1,38 @@
 {
-  "CADWST=X": {
-    "currency": "WST",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/WST"
-  },
-  "CHFWST=X": {
-    "currency": "WST",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/WST"
-  },
-  "EURWST=X": {
-    "currency": "WST",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/WST"
-  },
-  "GBPWST=X": {
-    "currency": "WST",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/WST"
-  },
-  "JPYWST=X": {
-    "currency": "WST",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/WST"
-  },
-  "WST=X": {
-    "currency": "WST",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/WST"
-  }
+    "CADWST=X": {
+        "short_name": "CAD/WST",
+        "currency": "WST",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFWST=X": {
+        "short_name": "CHF/WST",
+        "currency": "WST",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURWST=X": {
+        "short_name": "EUR/WST",
+        "currency": "WST",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPWST=X": {
+        "short_name": "GBP/WST",
+        "currency": "WST",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYWST=X": {
+        "short_name": "JPY/WST",
+        "currency": "WST",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "WST=X": {
+        "short_name": "USD/WST",
+        "currency": "WST",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

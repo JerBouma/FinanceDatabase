@@ -1,68 +1,68 @@
 {
-  "CBON": {
-    "category": "Emerging-Markets Local-Currency Bond",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "VanEck",
-    "long_name": "VanEck Vectors ChinaAMC China Bond ETF",
-    "market": "us_market",
-    "short_name": "VanEck Vectors ChinaAMC China B",
-    "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the ChinaBond China High Quality Bond Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index is comprised of fixed-rate, Renminbi (\"RMB\")-denominated bonds issued in the People&#39;s Republic of China (\"China\" or the \"PRC\") by Chinese credit, governmental and quasi-governmental (e.g., policy banks) issuers (\"RMB Bonds\"). The fund is non-diversified.",
-    "total_assets": 97332464
-  },
-  "EBND": {
-    "category": "Emerging-Markets Local-Currency Bond",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "SPDR State Street Global Advisors",
-    "long_name": "SPDR Bloomberg Barclays Emerging Markets Local Bond ETF",
-    "market": "us_market",
-    "short_name": "SPDR Bloomberg Barclays Emergin",
-    "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance of the Bloomberg Barclays EM Local Currency Government Diversified Index.\n Under normal market conditions, the Fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the Index and in securities that the Adviser/Sub-Adviser determines have economic characteristics that are substantially identical to the economic characteristics of the securities that comprise the Index. The index is designed to measure the performance of the fixed-rate local currency sovereign debt of emerging market countries.",
-    "total_assets": 1245992448
-  },
-  "ELD": {
-    "category": "Emerging-Markets Local-Currency Bond",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "WisdomTree",
-    "long_name": "WisdomTree Emerging Markets Local Debt Fund",
-    "market": "us_market",
-    "short_name": "WisdomTree Emerging Markets Loc",
-    "summary": "The investment seeks a high level of total return consisting of both income and capital appreciation.\n The fund seeks to achieve its investment objective through investment in bonds and other debt instruments denominated in the local currencies of emerging market countries. Under normal circumstances, it will invest at least 80% of its net assets, plus the amount of any borrowings for investment purposes, in Local Debt. The Advisor attempts to maintain an aggregate portfolio duration of between two and ten years under normal market conditions. The fund is non-diversified.",
-    "total_assets": 135654960
-  },
-  "EMLC": {
-    "category": "Emerging-Markets Local-Currency Bond",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "VanEck",
-    "long_name": "VanEck Vectors J.P. Morgan EM Local Currency Bond ETF",
-    "market": "us_market",
-    "short_name": "VanEck Vectors J.P. Morgan EM L",
-    "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the J.P. Morgan GBI-EM Global Core Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index is comprised of bonds issued by emerging market governments and denominated in the local currency of the issuer. It may concentrate its investments in a particular industry or group of industries to the extent that the index concentrates in an industry or group of industries. The fund is non-diversified.",
-    "total_assets": 3221509376
-  },
-  "LEMB": {
-    "category": "Emerging-Markets Local-Currency Bond",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "iShares",
-    "long_name": "iShares J.P. Morgan EM Local Currency Bond ETF",
-    "market": "us_market",
-    "short_name": "iShares J.P. Morgan EM Local Cu",
-    "summary": "The investment seeks to track the investment results of the J.P. Morgan GBI-EM Global Diversified 15% Cap 4.5% Floor Index composed of local currency denominated, emerging market sovereign bonds.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents, including shares of money market funds advised by BFA or its affiliates. The index tracks the performance of local currency-denominated sovereign bond markets of emerging market countries. The fund is non-diversified.",
-    "total_assets": 483184800
-  },
-  "SOVB": {
-    "category": "Emerging-Markets Local-Currency Bond",
-    "currency": "USD",
-    "exchange": "BTS",
-    "family": "CAMBRIA ETF TRUST",
-    "long_name": "Cambria Sovereign Bond ETF",
-    "market": "us_market",
-    "short_name": "Cambria Sovereign Bond ETF",
-    "summary": "The investment seeks to provide income and capital appreciation.\n Under normal market conditions, the fundâs bond portfolio invests at least 40% of its total assets in investment grade, intermediate U.S. treasuries and TIPS and at least 40% of its total assets in ex-U.S. sovereign bonds, including investment grade and non-investment grade bonds issued by developed and emerging market governments with short and intermediate durations. The investment adviser intends to spend approximately one percent of the fundâs total assets per month to purchase put options.",
-    "total_assets": 19185922
-  }
+    "CBON": {
+        "short_name": "VanEck Vectors ChinaAMC China B",
+        "long_name": "VanEck Vectors ChinaAMC China Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the ChinaBond China High Quality Bond Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index is comprised of fixed-rate, Renminbi (\"RMB\")-denominated bonds issued in the People&#39;s Republic of China (\"China\" or the \"PRC\") by Chinese credit, governmental and quasi-governmental (e.g., policy banks) issuers (\"RMB Bonds\"). The fund is non-diversified.",
+        "category": "Emerging-Markets Local-Currency Bond",
+        "family": "VanEck",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 97332464
+    },
+    "EBND": {
+        "short_name": "SPDR Bloomberg Barclays Emergin",
+        "long_name": "SPDR Bloomberg Barclays Emerging Markets Local Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment results that correspond generally to the price and yield performance of the Bloomberg Barclays EM Local Currency Government Diversified Index.\n Under normal market conditions, the Fund generally invests substantially all, but at least 80%, of its total assets in the securities comprising the Index and in securities that the Adviser/Sub-Adviser determines have economic characteristics that are substantially identical to the economic characteristics of the securities that comprise the Index. The index is designed to measure the performance of the fixed-rate local currency sovereign debt of emerging market countries.",
+        "category": "Emerging-Markets Local-Currency Bond",
+        "family": "SPDR State Street Global Advisors",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 1245992448
+    },
+    "ELD": {
+        "short_name": "WisdomTree Emerging Markets Loc",
+        "long_name": "WisdomTree Emerging Markets Local Debt Fund",
+        "currency": "USD",
+        "summary": "The investment seeks a high level of total return consisting of both income and capital appreciation.\n The fund seeks to achieve its investment objective through investment in bonds and other debt instruments denominated in the local currencies of emerging market countries. Under normal circumstances, it will invest at least 80% of its net assets, plus the amount of any borrowings for investment purposes, in Local Debt. The Advisor attempts to maintain an aggregate portfolio duration of between two and ten years under normal market conditions. The fund is non-diversified.",
+        "category": "Emerging-Markets Local-Currency Bond",
+        "family": "WisdomTree",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 135654960
+    },
+    "EMLC": {
+        "short_name": "VanEck Vectors J.P. Morgan EM L",
+        "long_name": "VanEck Vectors J.P. Morgan EM Local Currency Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the J.P. Morgan GBI-EM Global Core Index.\n The fund normally invests at least 80% of its total assets in securities that comprise the fund&#39;s benchmark index. The index is comprised of bonds issued by emerging market governments and denominated in the local currency of the issuer. It may concentrate its investments in a particular industry or group of industries to the extent that the index concentrates in an industry or group of industries. The fund is non-diversified.",
+        "category": "Emerging-Markets Local-Currency Bond",
+        "family": "VanEck",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 3221509376
+    },
+    "LEMB": {
+        "short_name": "iShares J.P. Morgan EM Local Cu",
+        "long_name": "iShares J.P. Morgan EM Local Currency Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the J.P. Morgan GBI-EM Global Diversified 15% Cap 4.5% Floor Index composed of local currency denominated, emerging market sovereign bonds.\n The fund generally will invest at least 90% of its assets in the component securities of the underlying index and may invest up to 10% of its assets in certain futures, options and swap contracts, cash and cash equivalents, including shares of money market funds advised by BFA or its affiliates. The index tracks the performance of local currency-denominated sovereign bond markets of emerging market countries. The fund is non-diversified.",
+        "category": "Emerging-Markets Local-Currency Bond",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 483184800
+    },
+    "SOVB": {
+        "short_name": "Cambria Sovereign Bond ETF",
+        "long_name": "Cambria Sovereign Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide income and capital appreciation.\n Under normal market conditions, the fund\u00e2\u0080\u0099s bond portfolio invests at least 40% of its total assets in investment grade, intermediate U.S. treasuries and TIPS and at least 40% of its total assets in ex-U.S. sovereign bonds, including investment grade and non-investment grade bonds issued by developed and emerging market governments with short and intermediate durations. The investment adviser intends to spend approximately one percent of the fund\u00e2\u0080\u0099s total assets per month to purchase put options.",
+        "category": "Emerging-Markets Local-Currency Bond",
+        "family": "CAMBRIA ETF TRUST",
+        "exchange": "BTS",
+        "market": "us_market",
+        "total_assets": 19185922
+    }
 }

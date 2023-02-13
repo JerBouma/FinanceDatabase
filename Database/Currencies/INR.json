@@ -1,182 +1,182 @@
 {
-  "AEDINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "AED/INR"
-  },
-  "AUDINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "AUD/INR"
-  },
-  "BRLINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "BRL/INR"
-  },
-  "BWPINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "BWP/INR"
-  },
-  "CADINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/INR"
-  },
-  "CHFINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/INR"
-  },
-  "CNHINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CNH/INR"
-  },
-  "CNYINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CNY/INR"
-  },
-  "DKKINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "DKK/INR"
-  },
-  "EURINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/INR"
-  },
-  "GBPINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/INR"
-  },
-  "GHSINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GHS/INR"
-  },
-  "HKDINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "HKD/INR"
-  },
-  "IDRINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "IDR/INR"
-  },
-  "INR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/INR"
-  },
-  "JPYINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/INR"
-  },
-  "KRWINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "KRW/INR"
-  },
-  "MYRINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "MYR/INR"
-  },
-  "NZDINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "NZD/INR"
-  },
-  "OMRINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "OMR/INR"
-  },
-  "PHPINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "PHP/INR"
-  },
-  "PKRINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "PKR/INR"
-  },
-  "PLNINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "PLN/INR"
-  },
-  "SEKINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "SEK/INR"
-  },
-  "SGDINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "SGD/INR"
-  },
-  "THBINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "THB/INR"
-  },
-  "TWDINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "TWD/INR"
-  },
-  "UGXINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "UGX/INR"
-  },
-  "VNDINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "VND/INR"
-  },
-  "ZARINR=X": {
-    "currency": "INR",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "ZAR/INR"
-  }
+    "AEDINR=X": {
+        "short_name": "AED/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "AUDINR=X": {
+        "short_name": "AUD/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BRLINR=X": {
+        "short_name": "BRL/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BWPINR=X": {
+        "short_name": "BWP/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADINR=X": {
+        "short_name": "CAD/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFINR=X": {
+        "short_name": "CHF/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CNHINR=X": {
+        "short_name": "CNH/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CNYINR=X": {
+        "short_name": "CNY/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "DKKINR=X": {
+        "short_name": "DKK/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURINR=X": {
+        "short_name": "EUR/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPINR=X": {
+        "short_name": "GBP/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GHSINR=X": {
+        "short_name": "GHS/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "HKDINR=X": {
+        "short_name": "HKD/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "IDRINR=X": {
+        "short_name": "IDR/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "INR=X": {
+        "short_name": "USD/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYINR=X": {
+        "short_name": "JPY/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KRWINR=X": {
+        "short_name": "KRW/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MYRINR=X": {
+        "short_name": "MYR/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NZDINR=X": {
+        "short_name": "NZD/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "OMRINR=X": {
+        "short_name": "OMR/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PHPINR=X": {
+        "short_name": "PHP/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PKRINR=X": {
+        "short_name": "PKR/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PLNINR=X": {
+        "short_name": "PLN/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SEKINR=X": {
+        "short_name": "SEK/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SGDINR=X": {
+        "short_name": "SGD/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "THBINR=X": {
+        "short_name": "THB/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "TWDINR=X": {
+        "short_name": "TWD/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "UGXINR=X": {
+        "short_name": "UGX/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "VNDINR=X": {
+        "short_name": "VND/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARINR=X": {
+        "short_name": "ZAR/INR",
+        "currency": "INR",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

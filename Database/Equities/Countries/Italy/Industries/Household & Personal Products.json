@@ -1,34 +1,34 @@
 {
-  "EC.MI": {
-    "city": "Trenzano",
-    "country": "Italy",
-    "currency": "EUR",
-    "exchange": "MIL",
-    "industry": "Household & Personal Products",
-    "long_name": "Euro Cosmetic S.p.A.",
-    "market": "it_market",
-    "market_cap": "Nano Cap",
-    "sector": "Consumer Defensive",
-    "short_name": "EURO COSMETIC",
-    "state": "BS",
-    "summary": "Euro Cosmetic S.p.A. develops and produces cosmetics on behalf of third parties in the areas of oral hygiene, skin care, personal deodorants, body cleansing, hair treatments, and perfumery. The company was founded in 2007 and is based in Trenzano, Italy.",
-    "website": "http://www.eurocosmetic.it/en/",
-    "zipcode": "25030"
-  },
-  "FED.MI": {
-    "city": "Alpago",
-    "country": "Italy",
-    "currency": "EUR",
-    "exchange": "MIL",
-    "industry": "Household & Personal Products",
-    "long_name": "Giorgio Fedon & Figli Spa",
-    "market": "it_market",
-    "market_cap": "Nano Cap",
-    "sector": "Consumer Defensive",
-    "short_name": "GIORGIO FEDON",
-    "state": "BL",
-    "summary": "Giorgio Fedon & Figli Spa designs, develops, produces, and sells eyeglass cases, custom and luxury packaging, and leather accessories worldwide. The company offers accessories for opticians, such as cases, reading glasses, microfiber cloths, and accessories for eyeglass maintenance; and packaging for luxury items, such as watches, jewelry, and accessories. It also provides designer cases for watches, jewelry, and accessories; and accessories for optician shops or chains, consortia, and associates. The company also offers its products through stores. Giorgio Fedon & Figli Spa was founded in 1919 and is headquartered in Alpago, Italy.",
-    "website": "http://www.fedongroup.com",
-    "zipcode": "32016"
-  }
+    "EC.MI": {
+        "short_name": "EURO COSMETIC",
+        "long_name": "Euro Cosmetic S.p.A.",
+        "summary": "Euro Cosmetic S.p.A. develops and produces cosmetics on behalf of third parties in the areas of oral hygiene, skin care, personal deodorants, body cleansing, hair treatments, and perfumery. The company was founded in 2007 and is based in Trenzano, Italy.",
+        "currency": "EUR",
+        "sector": "Consumer Defensive",
+        "industry": "Household & Personal Products",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "state": "BS",
+        "city": "Trenzano",
+        "zipcode": "25030",
+        "website": "http://www.eurocosmetic.it/en/",
+        "market_cap": "Nano Cap"
+    },
+    "FED.MI": {
+        "short_name": "GIORGIO FEDON",
+        "long_name": "Giorgio Fedon & Figli Spa",
+        "summary": "Giorgio Fedon & Figli Spa designs, develops, produces, and sells eyeglass cases, custom and luxury packaging, and leather accessories worldwide. The company offers accessories for opticians, such as cases, reading glasses, microfiber cloths, and accessories for eyeglass maintenance; and packaging for luxury items, such as watches, jewelry, and accessories. It also provides designer cases for watches, jewelry, and accessories; and accessories for optician shops or chains, consortia, and associates. The company also offers its products through stores. Giorgio Fedon & Figli Spa was founded in 1919 and is headquartered in Alpago, Italy.",
+        "currency": "EUR",
+        "sector": "Consumer Defensive",
+        "industry": "Household & Personal Products",
+        "exchange": "MIL",
+        "market": "it_market",
+        "country": "Italy",
+        "state": "BL",
+        "city": "Alpago",
+        "zipcode": "32016",
+        "website": "http://www.fedongroup.com",
+        "market_cap": "Nano Cap"
+    }
 }

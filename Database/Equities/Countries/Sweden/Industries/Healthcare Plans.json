@@ -1,34 +1,34 @@
 {
-  "FEEL.ST": {
-    "city": "Stockholm",
-    "country": "Sweden",
-    "currency": "SEK",
-    "exchange": "STO",
-    "industry": "Healthcare Plans",
-    "long_name": "Feelgood Svenska AB (publ)",
-    "market": "se_market",
-    "market_cap": "Micro Cap",
-    "sector": "Healthcare",
-    "short_name": "Feelgood Svenska AB",
-    "state": null,
-    "summary": "Feelgood Svenska AB (publ) provides a range of health services to businesses, organizations, and private individuals in Sweden. The company offers health, exercise, and physiotherapy services. Feelgood Svenska AB (publ) was founded in 1995 and is headquartered in Stockholm, Sweden.",
-    "website": "http://www.feelgood.se",
-    "zipcode": "115 23"
-  },
-  "FGS.SG": {
-    "city": "Stockholm",
-    "country": "Sweden",
-    "currency": "EUR",
-    "exchange": "STU",
-    "industry": "Healthcare Plans",
-    "long_name": "Feelgood Svenska AB (publ)",
-    "market": "dr_market",
-    "market_cap": "Micro Cap",
-    "sector": "Healthcare",
-    "short_name": "Feelgood Svenska AB Namn-Aktier",
-    "state": null,
-    "summary": "Feelgood Svenska AB (publ) provides a range of health services to businesses, organizations, and private individuals in Sweden. The company offers health, exercise, and physiotherapy services. Feelgood Svenska AB (publ) was founded in 1995 and is headquartered in Stockholm, Sweden.",
-    "website": "http://www.feelgood.se",
-    "zipcode": "115 23"
-  }
+    "FEEL.ST": {
+        "short_name": "Feelgood Svenska AB",
+        "long_name": "Feelgood Svenska AB (publ)",
+        "summary": "Feelgood Svenska AB (publ) provides a range of health services to businesses, organizations, and private individuals in Sweden. The company offers health, exercise, and physiotherapy services. Feelgood Svenska AB (publ) was founded in 1995 and is headquartered in Stockholm, Sweden.",
+        "currency": "SEK",
+        "sector": "Healthcare",
+        "industry": "Healthcare Plans",
+        "exchange": "STO",
+        "market": "se_market",
+        "country": "Sweden",
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "115 23",
+        "website": "http://www.feelgood.se",
+        "market_cap": "Micro Cap"
+    },
+    "FGS.SG": {
+        "short_name": "Feelgood Svenska AB Namn-Aktier",
+        "long_name": "Feelgood Svenska AB (publ)",
+        "summary": "Feelgood Svenska AB (publ) provides a range of health services to businesses, organizations, and private individuals in Sweden. The company offers health, exercise, and physiotherapy services. Feelgood Svenska AB (publ) was founded in 1995 and is headquartered in Stockholm, Sweden.",
+        "currency": "EUR",
+        "sector": "Healthcare",
+        "industry": "Healthcare Plans",
+        "exchange": "STU",
+        "market": "dr_market",
+        "country": "Sweden",
+        "state": null,
+        "city": "Stockholm",
+        "zipcode": "115 23",
+        "website": "http://www.feelgood.se",
+        "market_cap": "Micro Cap"
+    }
 }

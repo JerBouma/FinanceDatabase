@@ -1,34 +1,34 @@
 {
-  "JSE.JO": {
-    "city": "Sandown",
-    "country": "South Africa",
-    "currency": "ZAc",
-    "exchange": "JNB",
-    "industry": "Financial Data & Stock Exchanges",
-    "long_name": "JSE Limited",
-    "market": "za_market",
-    "market_cap": null,
-    "sector": "Financial Services",
-    "short_name": "JSE Ltd",
-    "state": null,
-    "summary": "JSE Limited operates as a securities exchange in South Africa. It offers capital markets, post-trade, and information services. The company also provides trading services for equities and indices; debt, including corporate, green, and government bonds; and derivative markets, such as equity, bond, interest rate, commodity, and currency derivatives; and repo market, as well as offers equity market data. It also offers clearing, risk management, and settlement services for the equity, bonds, and derivatives markets. The company was founded in 1887 and is based in Sandown, South Africa.",
-    "website": "http://www.jse.co.za",
-    "zipcode": "2196"
-  },
-  "JSEJF": {
-    "city": "Sandown",
-    "country": "South Africa",
-    "currency": "USD",
-    "exchange": "PNK",
-    "industry": "Financial Data & Stock Exchanges",
-    "long_name": "JSE Limited",
-    "market": "us_market",
-    "market_cap": "Small Cap",
-    "sector": "Financial Services",
-    "short_name": "JSE LIMITED",
-    "state": null,
-    "summary": "JSE Limited operates as a securities exchange in South Africa. It offers capital markets, post-trade, and information services. The company also provides trading services for equities and indices; debt, including corporate, green, and government bonds; and derivative markets, such as equity, bond, interest rate, commodity, and currency derivatives; and repo market, as well as offers equity market data. It also offers clearing, risk management, and settlement services for the equity, bonds, and derivatives markets. The company was founded in 1887 and is based in Sandown, South Africa.",
-    "website": "http://www.jse.co.za",
-    "zipcode": "2196"
-  }
+    "JSE.JO": {
+        "short_name": "JSE Ltd",
+        "long_name": "JSE Limited",
+        "summary": "JSE Limited operates as a securities exchange in South Africa. It offers capital markets, post-trade, and information services. The company also provides trading services for equities and indices; debt, including corporate, green, and government bonds; and derivative markets, such as equity, bond, interest rate, commodity, and currency derivatives; and repo market, as well as offers equity market data. It also offers clearing, risk management, and settlement services for the equity, bonds, and derivatives markets. The company was founded in 1887 and is based in Sandown, South Africa.",
+        "currency": "ZAc",
+        "sector": "Financial Services",
+        "industry": "Financial Data & Stock Exchanges",
+        "exchange": "JNB",
+        "market": "za_market",
+        "country": "South Africa",
+        "state": null,
+        "city": "Sandown",
+        "zipcode": "2196",
+        "website": "http://www.jse.co.za",
+        "market_cap": null
+    },
+    "JSEJF": {
+        "short_name": "JSE LIMITED",
+        "long_name": "JSE Limited",
+        "summary": "JSE Limited operates as a securities exchange in South Africa. It offers capital markets, post-trade, and information services. The company also provides trading services for equities and indices; debt, including corporate, green, and government bonds; and derivative markets, such as equity, bond, interest rate, commodity, and currency derivatives; and repo market, as well as offers equity market data. It also offers clearing, risk management, and settlement services for the equity, bonds, and derivatives markets. The company was founded in 1887 and is based in Sandown, South Africa.",
+        "currency": "USD",
+        "sector": "Financial Services",
+        "industry": "Financial Data & Stock Exchanges",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "South Africa",
+        "state": null,
+        "city": "Sandown",
+        "zipcode": "2196",
+        "website": "http://www.jse.co.za",
+        "market_cap": "Small Cap"
+    }
 }

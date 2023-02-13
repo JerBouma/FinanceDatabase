@@ -1,34 +1,34 @@
 {
-  "NI41.F": {
-    "city": "Douglas",
-    "country": "Isle of Man",
-    "currency": "EUR",
-    "exchange": "FRA",
-    "industry": "Oil & Gas Drilling",
-    "long_name": "TomCo Energy Plc",
-    "market": "dr_market",
-    "market_cap": "Nano Cap",
-    "sector": "Energy",
-    "short_name": "TOMCO ENERGY POST CON.",
-    "state": null,
-    "summary": "TomCo Energy Plc operates as an oil shale exploration and development company primarily in the United Kingdom and the United States. It holds 100% interests in nine oil shale leases covering approximately 15,488 acres located in Uintah County, Utah. The company is based in Douglas, the Isle of Man.",
-    "website": "http://tomcoenergy.com",
-    "zipcode": "IM1 1AE"
-  },
-  "TOM.L": {
-    "city": "Douglas",
-    "country": "Isle of Man",
-    "currency": "GBp",
-    "exchange": "LSE",
-    "industry": "Oil & Gas Drilling",
-    "long_name": "TomCo Energy Plc",
-    "market": "gb_market",
-    "market_cap": null,
-    "sector": "Energy",
-    "short_name": "TOMCO ENERGY PLC ORD NPV",
-    "state": null,
-    "summary": "TomCo Energy Plc operates as an oil shale exploration and development company primarily in the United Kingdom and the United States. It holds 100% interests in nine oil shale leases covering approximately 15,488 acres located in Uintah County, Utah. The company is based in Douglas, the Isle of Man.",
-    "website": "http://tomcoenergy.com",
-    "zipcode": "IM1 1AE"
-  }
+    "NI41.F": {
+        "short_name": "TOMCO ENERGY POST CON.",
+        "long_name": "TomCo Energy Plc",
+        "summary": "TomCo Energy Plc operates as an oil shale exploration and development company primarily in the United Kingdom and the United States. It holds 100% interests in nine oil shale leases covering approximately 15,488 acres located in Uintah County, Utah. The company is based in Douglas, the Isle of Man.",
+        "currency": "EUR",
+        "sector": "Energy",
+        "industry": "Oil & Gas Drilling",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Isle of Man",
+        "state": null,
+        "city": "Douglas",
+        "zipcode": "IM1 1AE",
+        "website": "http://tomcoenergy.com",
+        "market_cap": "Nano Cap"
+    },
+    "TOM.L": {
+        "short_name": "TOMCO ENERGY PLC ORD NPV",
+        "long_name": "TomCo Energy Plc",
+        "summary": "TomCo Energy Plc operates as an oil shale exploration and development company primarily in the United Kingdom and the United States. It holds 100% interests in nine oil shale leases covering approximately 15,488 acres located in Uintah County, Utah. The company is based in Douglas, the Isle of Man.",
+        "currency": "GBp",
+        "sector": "Energy",
+        "industry": "Oil & Gas Drilling",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "Isle of Man",
+        "state": null,
+        "city": "Douglas",
+        "zipcode": "IM1 1AE",
+        "website": "http://tomcoenergy.com",
+        "market_cap": null
+    }
 }

@@ -1,34 +1,34 @@
 {
-  "8908.TWO": {
-    "city": "Kaohsiung",
-    "country": "Taiwan",
-    "currency": "TWD",
-    "exchange": "TWO",
-    "industry": "Utilities - Regulated Gas",
-    "long_name": "ShinHsiung Natural Gas Inc.",
-    "market": "tw_market",
-    "market_cap": "Small Cap",
-    "sector": "Utilities",
-    "short_name": "SHINHSIUNG NATURAL GAS INC.",
-    "state": null,
-    "summary": "ShinHsiung Natural Gas Inc. supplies natural gas in Taiwan. The company was founded in 1975 and is based in Kaohsiung, Taiwan.",
-    "website": "http://www.shng.com.tw",
-    "zipcode": "830"
-  },
-  "9908.TW": {
-    "city": "Taipei City",
-    "country": "Taiwan",
-    "currency": "TWD",
-    "exchange": "TAI",
-    "industry": "Utilities - Regulated Gas",
-    "long_name": "The Great Taipei Gas Corporation",
-    "market": "tw_market",
-    "market_cap": "Small Cap",
-    "sector": "Utilities",
-    "short_name": "THE GREAT TAIPEI GAS",
-    "state": null,
-    "summary": "The Great Taipei Gas Corporation supplies natural gas in Taiwan. The company's business area covers seven districts, including Song-Shan, Sin-Yi, Da-An, Da-Tong, Manka, Zhong-Zheng, and Zhong-Shan, as well as two counties comprising Fu-Hua and Ming-Sheng in the Su-Lim district. It serves approximately 380,000 customers. The company was founded in 1964 and is based in Taipei City, Taiwan.",
-    "website": "http://www.taipeigas.com.tw",
-    "zipcode": "105"
-  }
+    "8908.TWO": {
+        "short_name": "SHINHSIUNG NATURAL GAS INC.",
+        "long_name": "ShinHsiung Natural Gas Inc.",
+        "summary": "ShinHsiung Natural Gas Inc. supplies natural gas in Taiwan. The company was founded in 1975 and is based in Kaohsiung, Taiwan.",
+        "currency": "TWD",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Gas",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "state": null,
+        "city": "Kaohsiung",
+        "zipcode": "830",
+        "website": "http://www.shng.com.tw",
+        "market_cap": "Small Cap"
+    },
+    "9908.TW": {
+        "short_name": "THE GREAT TAIPEI GAS",
+        "long_name": "The Great Taipei Gas Corporation",
+        "summary": "The Great Taipei Gas Corporation supplies natural gas in Taiwan. The company's business area covers seven districts, including Song-Shan, Sin-Yi, Da-An, Da-Tong, Manka, Zhong-Zheng, and Zhong-Shan, as well as two counties comprising Fu-Hua and Ming-Sheng in the Su-Lim district. It serves approximately 380,000 customers. The company was founded in 1964 and is based in Taipei City, Taiwan.",
+        "currency": "TWD",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Gas",
+        "exchange": "TAI",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "state": null,
+        "city": "Taipei City",
+        "zipcode": "105",
+        "website": "http://www.taipeigas.com.tw",
+        "market_cap": "Small Cap"
+    }
 }

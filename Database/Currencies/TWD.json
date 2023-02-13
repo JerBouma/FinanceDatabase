@@ -1,122 +1,122 @@
 {
-  "AUDTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "AUD/TWD"
-  },
-  "CADTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/TWD"
-  },
-  "CHFTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/TWD"
-  },
-  "CNHTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CNH/TWD"
-  },
-  "CNYTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CNY/TWD"
-  },
-  "EURTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/TWD"
-  },
-  "GBPTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/TWD"
-  },
-  "HKDTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "HKD/TWD"
-  },
-  "IDRTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "IDR/TWD"
-  },
-  "INRTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "INR/TWD"
-  },
-  "JPYTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/TWD"
-  },
-  "KRWTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "KRW/TWD"
-  },
-  "MYRTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "MYR/TWD"
-  },
-  "NZDTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "NZD/TWD"
-  },
-  "PHPTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "PHP/TWD"
-  },
-  "SGDTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "SGD/TWD"
-  },
-  "THBTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "THB/TWD"
-  },
-  "TWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/TWD"
-  },
-  "VNDTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "VND/TWD"
-  },
-  "ZARTWD=X": {
-    "currency": "TWD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "ZAR/TWD"
-  }
+    "AUDTWD=X": {
+        "short_name": "AUD/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADTWD=X": {
+        "short_name": "CAD/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFTWD=X": {
+        "short_name": "CHF/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CNHTWD=X": {
+        "short_name": "CNH/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CNYTWD=X": {
+        "short_name": "CNY/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURTWD=X": {
+        "short_name": "EUR/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPTWD=X": {
+        "short_name": "GBP/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "HKDTWD=X": {
+        "short_name": "HKD/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "IDRTWD=X": {
+        "short_name": "IDR/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "INRTWD=X": {
+        "short_name": "INR/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYTWD=X": {
+        "short_name": "JPY/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KRWTWD=X": {
+        "short_name": "KRW/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MYRTWD=X": {
+        "short_name": "MYR/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "NZDTWD=X": {
+        "short_name": "NZD/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PHPTWD=X": {
+        "short_name": "PHP/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SGDTWD=X": {
+        "short_name": "SGD/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "THBTWD=X": {
+        "short_name": "THB/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "TWD=X": {
+        "short_name": "USD/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "VNDTWD=X": {
+        "short_name": "VND/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ZARTWD=X": {
+        "short_name": "ZAR/TWD",
+        "currency": "TWD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

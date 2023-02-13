@@ -1,68 +1,68 @@
 {
-  "AGZ": {
-    "category": "Short Government",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "iShares",
-    "long_name": "iShares Agency Bond ETF",
-    "market": "us_market",
-    "short_name": "iShares  Agency Bond ETF",
-    "summary": "The investment seeks to track the investment results of the Bloomberg Barclays U.S. Agency Bond Index.\n The underlying index measures the performance of the agency sector of the U.S. government bond market and is comprised of investment-grade U.S. dollar-denominated publicly-issued government agency bonds or debentures. The fund generally will invest at least 90% of its assets in the component securities of the underlying index.",
-    "total_assets": 787885504
-  },
-  "FTSD": {
-    "category": "Short Government",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Franklin Templeton Investments",
-    "long_name": "Franklin Liberty Short Duration U.S. Government ETF",
-    "market": "us_market",
-    "short_name": "Franklin Liberty Short Duration",
-    "summary": "The investment seeks a high level of current income as is consistent with prudent investing, while seeking preservation of capital.\n Under normal market conditions, the fund invests at least 80% of its net assets in securities issued or guaranteed by the U.S. government, its agencies, or instrumentalities. To pursue its investment goal, it may invest in certain interest rate-related derivative transactions, principally U.S. Treasury futures contracts and options on interest rate/bond futures. The fund is an actively managed exchange-traded fund (ETF) that does not seek to replicate the performance of a specified index.",
-    "total_assets": 438349408
-  },
-  "LMBS": {
-    "category": "Short Government",
-    "currency": "USD",
-    "exchange": "NMS",
-    "family": "First Trust",
-    "long_name": "First Trust Low Duration Opportunities ETF",
-    "market": "us_market",
-    "short_name": "First Trust Low Duration Opport",
-    "summary": "The investment seeks to generate current income with a secondary objective of capital appreciation.\n Under normal market conditions, the fund will seek to achieve its investment objectives by investing at least 60% of its net assets (including investment borrowings) in mortgage-related debt securities and other mortgage-related instruments (collectively, \"Mortgage-Related Investments\"). The advisor normally expects to invest in Mortgage-Related Investments tied to residential and commercial mortgages.",
-    "total_assets": 6962792448
-  },
-  "SCHO": {
-    "category": "Short Government",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Schwab ETFs",
-    "long_name": "Schwab Short-Term U.S. Treasury ETF",
-    "market": "us_market",
-    "short_name": "Schwab Short-Term U.S. Treasury",
-    "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Bloomberg Barclays US Treasury 1-3 Year Index.\n The fund will invest at least 90% of its net assets (including, for this purpose, any borrowings for investment purposes) in securities included in the index. The index includes all publicly-issued U.S. Treasury securities that have a remaining maturity of greater than or equal to one year and less than three years, are rated investment grade, and have $300 million or more of outstanding face value. The securities in the index must be denominated in U.S. dollars and must be fixed-rate and non-convertible.",
-    "total_assets": 7893031936
-  },
-  "SHY": {
-    "category": "Short Government",
-    "currency": "USD",
-    "exchange": "NGM",
-    "family": "iShares",
-    "long_name": "iShares 1-3 Year Treasury Bond ETF",
-    "market": "us_market",
-    "short_name": "iShares 1-3 Year Treasury Bond ",
-    "summary": "The investment seeks to track the investment results of the ICE U.S. Treasury 1-3 Year Bond Index (the \"underlying index\").\n The fund generally invests at least 90% of its assets in the bonds of the underlying index and at least 95% of its assets in U.S. government bonds. The underlying index measures the performance of public obligations of the U.S. Treasury that have a remaining maturity of greater than or equal to one year and less than three years.",
-    "total_assets": 19571066880
-  },
-  "VGSH": {
-    "category": "Short Government",
-    "currency": "USD",
-    "exchange": "NMS",
-    "family": "Vanguard",
-    "long_name": "Vanguard Short-Term Treasury Index Fund ETF Shares",
-    "market": "us_market",
-    "short_name": "Vanguard Short-Term Treasury ET",
-    "summary": "The investment seeks to track the performance of a market-weighted Treasury index with a short-term dollar-weighted average maturity.\n The fund employs an indexing investment approach designed to track the performance of the Bloomberg Barclays US Treasury 1-3 Year Bond Index. This index includes fixed income securities issued by the U.S. Treasury (not including inflation-protected securities), all with maturities between 1 and 3 years. At least 80% of the fund&#39;s assets will be invested in bonds included in the index.",
-    "total_assets": 16442971136
-  }
+    "AGZ": {
+        "short_name": "iShares  Agency Bond ETF",
+        "long_name": "iShares Agency Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the Bloomberg Barclays U.S. Agency Bond Index.\n The underlying index measures the performance of the agency sector of the U.S. government bond market and is comprised of investment-grade U.S. dollar-denominated publicly-issued government agency bonds or debentures. The fund generally will invest at least 90% of its assets in the component securities of the underlying index.",
+        "category": "Short Government",
+        "family": "iShares",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 787885504
+    },
+    "FTSD": {
+        "short_name": "Franklin Liberty Short Duration",
+        "long_name": "Franklin Liberty Short Duration U.S. Government ETF",
+        "currency": "USD",
+        "summary": "The investment seeks a high level of current income as is consistent with prudent investing, while seeking preservation of capital.\n Under normal market conditions, the fund invests at least 80% of its net assets in securities issued or guaranteed by the U.S. government, its agencies, or instrumentalities. To pursue its investment goal, it may invest in certain interest rate-related derivative transactions, principally U.S. Treasury futures contracts and options on interest rate/bond futures. The fund is an actively managed exchange-traded fund (ETF) that does not seek to replicate the performance of a specified index.",
+        "category": "Short Government",
+        "family": "Franklin Templeton Investments",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 438349408
+    },
+    "LMBS": {
+        "short_name": "First Trust Low Duration Opport",
+        "long_name": "First Trust Low Duration Opportunities ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to generate current income with a secondary objective of capital appreciation.\n Under normal market conditions, the fund will seek to achieve its investment objectives by investing at least 60% of its net assets (including investment borrowings) in mortgage-related debt securities and other mortgage-related instruments (collectively, \"Mortgage-Related Investments\"). The advisor normally expects to invest in Mortgage-Related Investments tied to residential and commercial mortgages.",
+        "category": "Short Government",
+        "family": "First Trust",
+        "exchange": "NMS",
+        "market": "us_market",
+        "total_assets": 6962792448
+    },
+    "SCHO": {
+        "short_name": "Schwab Short-Term U.S. Treasury",
+        "long_name": "Schwab Short-Term U.S. Treasury ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track as closely as possible, before fees and expenses, the total return of the Bloomberg Barclays US Treasury 1-3 Year Index.\n The fund will invest at least 90% of its net assets (including, for this purpose, any borrowings for investment purposes) in securities included in the index. The index includes all publicly-issued U.S. Treasury securities that have a remaining maturity of greater than or equal to one year and less than three years, are rated investment grade, and have $300 million or more of outstanding face value. The securities in the index must be denominated in U.S. dollars and must be fixed-rate and non-convertible.",
+        "category": "Short Government",
+        "family": "Schwab ETFs",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 7893031936
+    },
+    "SHY": {
+        "short_name": "iShares 1-3 Year Treasury Bond ",
+        "long_name": "iShares 1-3 Year Treasury Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the investment results of the ICE U.S. Treasury 1-3 Year Bond Index (the \"underlying index\").\n The fund generally invests at least 90% of its assets in the bonds of the underlying index and at least 95% of its assets in U.S. government bonds. The underlying index measures the performance of public obligations of the U.S. Treasury that have a remaining maturity of greater than or equal to one year and less than three years.",
+        "category": "Short Government",
+        "family": "iShares",
+        "exchange": "NGM",
+        "market": "us_market",
+        "total_assets": 19571066880
+    },
+    "VGSH": {
+        "short_name": "Vanguard Short-Term Treasury ET",
+        "long_name": "Vanguard Short-Term Treasury Index Fund ETF Shares",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance of a market-weighted Treasury index with a short-term dollar-weighted average maturity.\n The fund employs an indexing investment approach designed to track the performance of the Bloomberg Barclays US Treasury 1-3 Year Bond Index. This index includes fixed income securities issued by the U.S. Treasury (not including inflation-protected securities), all with maturities between 1 and 3 years. At least 80% of the fund&#39;s assets will be invested in bonds included in the index.",
+        "category": "Short Government",
+        "family": "Vanguard",
+        "exchange": "NMS",
+        "market": "us_market",
+        "total_assets": 16442971136
+    }
 }

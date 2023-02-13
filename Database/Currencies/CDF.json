@@ -1,38 +1,38 @@
 {
-  "CADCDF=X": {
-    "currency": "CDF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/CDF"
-  },
-  "CDF=X": {
-    "currency": "CDF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/CDF"
-  },
-  "CHFCDF=X": {
-    "currency": "CDF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/CDF"
-  },
-  "EURCDF=X": {
-    "currency": "CDF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/CDF"
-  },
-  "GBPCDF=X": {
-    "currency": "CDF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/CDF"
-  },
-  "JPYCDF=X": {
-    "currency": "CDF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/CDF"
-  }
+    "CADCDF=X": {
+        "short_name": "CAD/CDF",
+        "currency": "CDF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CDF=X": {
+        "short_name": "USD/CDF",
+        "currency": "CDF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFCDF=X": {
+        "short_name": "CHF/CDF",
+        "currency": "CDF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURCDF=X": {
+        "short_name": "EUR/CDF",
+        "currency": "CDF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPCDF=X": {
+        "short_name": "GBP/CDF",
+        "currency": "CDF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYCDF=X": {
+        "short_name": "JPY/CDF",
+        "currency": "CDF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

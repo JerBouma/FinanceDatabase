@@ -1,34 +1,34 @@
 {
-  "BIOSK.AT": {
-    "city": "Ano Liosia",
-    "country": "Greece",
-    "currency": "EUR",
-    "exchange": "ATH",
-    "industry": "Pollution & Treatment Controls",
-    "long_name": "Unibios Holdings S.A.",
-    "market": "gr_market",
-    "market_cap": "Nano Cap",
-    "sector": "Industrial Goods",
-    "short_name": "UNIBIOS HOLDING S.A",
-    "state": null,
-    "summary": "Unibios Holdings S.A., through its subsidiaries, develops and installs water treatment and recycling systems in Europe, Africa, and the Middle East. It also offers heating and air conditioning equipment, as well as installs and rents facade scaffoldings. The company was formerly known as Biossol SA and changed its name to Unibios Holdings S.A. in July 2008. Unibios Holdings S.A. was founded in 1940 and is based in Ano Liosia, Greece.",
-    "website": "http://www.unibios.gr",
-    "zipcode": "133 41"
-  },
-  "UMIN.MX": {
-    "city": "Brussels",
-    "country": "Belgium",
-    "currency": "MXN",
-    "exchange": "MEX",
-    "industry": "Pollution & Treatment Controls",
-    "long_name": "Umicore SA",
-    "market": "mx_market",
-    "market_cap": null,
-    "sector": "Industrial Goods",
-    "short_name": "UMICORE",
-    "state": null,
-    "summary": "Umicore SA operates as a materials technology and recycling company worldwide. The company operates through Catalysis, Energy & Surface Technologies, and Recycling segments. The Catalysis segment produces automotive catalysts for gasoline, and diesel light and heavy-duty diesel applications; stationary catalysis for industrial emissions control; and precious metals-based compounds and catalysts for use in the pharmaceutical and fine chemicals industries, as well as fuel cell applications. The Energy & Surface Technologies segment offers cobalt and specialty materials, rechargeable battery materials, electroplating products, and electro-optic materials. The Recycling segment treats waste streams containing precious and other specialty metals from a range of industrial residues and end-of-life materials. This segment also produces precious metals-based materials for glass production, electric, and electronic applications. The company was formerly known as Union MiniÃ¨re du Haut Katanga and changed its name to Umicore SA in 2001. Umicore SA was founded in 1805 and is headquartered in Brussels, Belgium.",
-    "website": "http://www.umicore.com",
-    "zipcode": "1000"
-  }
+    "BIOSK.AT": {
+        "short_name": "UNIBIOS HOLDING S.A",
+        "long_name": "Unibios Holdings S.A.",
+        "summary": "Unibios Holdings S.A., through its subsidiaries, develops and installs water treatment and recycling systems in Europe, Africa, and the Middle East. It also offers heating and air conditioning equipment, as well as installs and rents facade scaffoldings. The company was formerly known as Biossol SA and changed its name to Unibios Holdings S.A. in July 2008. Unibios Holdings S.A. was founded in 1940 and is based in Ano Liosia, Greece.",
+        "currency": "EUR",
+        "sector": "Industrial Goods",
+        "industry": "Pollution & Treatment Controls",
+        "exchange": "ATH",
+        "market": "gr_market",
+        "country": "Greece",
+        "state": null,
+        "city": "Ano Liosia",
+        "zipcode": "133 41",
+        "website": "http://www.unibios.gr",
+        "market_cap": "Nano Cap"
+    },
+    "UMIN.MX": {
+        "short_name": "UMICORE",
+        "long_name": "Umicore SA",
+        "summary": "Umicore SA operates as a materials technology and recycling company worldwide. The company operates through Catalysis, Energy & Surface Technologies, and Recycling segments. The Catalysis segment produces automotive catalysts for gasoline, and diesel light and heavy-duty diesel applications; stationary catalysis for industrial emissions control; and precious metals-based compounds and catalysts for use in the pharmaceutical and fine chemicals industries, as well as fuel cell applications. The Energy & Surface Technologies segment offers cobalt and specialty materials, rechargeable battery materials, electroplating products, and electro-optic materials. The Recycling segment treats waste streams containing precious and other specialty metals from a range of industrial residues and end-of-life materials. This segment also produces precious metals-based materials for glass production, electric, and electronic applications. The company was formerly known as Union Mini\u00c3\u00a8re du Haut Katanga and changed its name to Umicore SA in 2001. Umicore SA was founded in 1805 and is headquartered in Brussels, Belgium.",
+        "currency": "MXN",
+        "sector": "Industrial Goods",
+        "industry": "Pollution & Treatment Controls",
+        "exchange": "MEX",
+        "market": "mx_market",
+        "country": "Belgium",
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1000",
+        "website": "http://www.umicore.com",
+        "market_cap": null
+    }
 }

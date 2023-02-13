@@ -1,34 +1,34 @@
 {
-  "ETLN.ME": {
-    "city": "Nicosia",
-    "country": "Cyprus",
-    "currency": "RUB",
-    "exchange": "MCX",
-    "industry": "Real Estate - Development",
-    "long_name": "Etalon Group PLC",
-    "market": "ru_market",
-    "market_cap": "Small Cap",
-    "sector": "Real Estate",
-    "short_name": "ETALON GROUP PLC",
-    "state": null,
-    "summary": "Etalon Group PLC, together with its subsidiaries, primarily engages in residential development and construction business in Saint-Petersburg metropolitan and Moscow metropolitan areas in Russia. It operates through three segments: Residential Development, Construction Services, and Other Operations. The Residential Development segment constructs residential real estate properties, including flats, built-in premises, and parking places. The Construction Services segment provides construction services for third parties. The Other Operations segment sells construction materials; constructs stand-alone premises for commercial use; and offers various services related to sale and servicing of premises. The company was founded in 1987 and is based in Nicosia, Cyprus.",
-    "website": "http://www.etalongroup.com",
-    "zipcode": "1065"
-  },
-  "MLD.TA": {
-    "city": "Limassol",
-    "country": "Cyprus",
-    "currency": "ILA",
-    "exchange": "TLV",
-    "industry": "Real Estate - Development",
-    "long_name": "MirLand Development Corporation Plc",
-    "market": "il_market",
-    "market_cap": null,
-    "sector": "Real Estate",
-    "short_name": "MIRLAND DEVELOPMEN",
-    "state": null,
-    "summary": "MirLand Development Corporation Plc acquires, invests in, develops, constructs, leases, and sells commercial and residential real estate properties in Russia. Its projects portfolio consists of residential, office, retail, and logistics properties. The company was founded in 2004 and is headquartered in Limassol, Cyprus.",
-    "website": "http://www.mirland-development.com",
-    "zipcode": "3025"
-  }
+    "ETLN.ME": {
+        "short_name": "ETALON GROUP PLC",
+        "long_name": "Etalon Group PLC",
+        "summary": "Etalon Group PLC, together with its subsidiaries, primarily engages in residential development and construction business in Saint-Petersburg metropolitan and Moscow metropolitan areas in Russia. It operates through three segments: Residential Development, Construction Services, and Other Operations. The Residential Development segment constructs residential real estate properties, including flats, built-in premises, and parking places. The Construction Services segment provides construction services for third parties. The Other Operations segment sells construction materials; constructs stand-alone premises for commercial use; and offers various services related to sale and servicing of premises. The company was founded in 1987 and is based in Nicosia, Cyprus.",
+        "currency": "RUB",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "MCX",
+        "market": "ru_market",
+        "country": "Cyprus",
+        "state": null,
+        "city": "Nicosia",
+        "zipcode": "1065",
+        "website": "http://www.etalongroup.com",
+        "market_cap": "Small Cap"
+    },
+    "MLD.TA": {
+        "short_name": "MIRLAND DEVELOPMEN",
+        "long_name": "MirLand Development Corporation Plc",
+        "summary": "MirLand Development Corporation Plc acquires, invests in, develops, constructs, leases, and sells commercial and residential real estate properties in Russia. Its projects portfolio consists of residential, office, retail, and logistics properties. The company was founded in 2004 and is headquartered in Limassol, Cyprus.",
+        "currency": "ILA",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Cyprus",
+        "state": null,
+        "city": "Limassol",
+        "zipcode": "3025",
+        "website": "http://www.mirland-development.com",
+        "market_cap": null
+    }
 }

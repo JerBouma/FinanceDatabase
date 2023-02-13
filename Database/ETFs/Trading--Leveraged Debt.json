@@ -1,68 +1,68 @@
 {
-  "DFVL": {
-    "category": "Trading--Leveraged Debt",
-    "currency": "USD",
-    "exchange": "BTS",
-    "family": "Milleis Investissements Funds",
-    "long_name": "iPath US Treasury 5-year Bull ETN",
-    "market": "us_market",
-    "short_name": "iPath US Treasury 5 Year Bull E",
-    "summary": "The investment seeks to provide investors with exposure to the Barclays 5Y US Treasury Futures Targeted Exposure Indexâ¢.\n The Barclays 5Y US Treasury Futures Targeted Exposure Indexâ¢ (the \"index\") is designed to decrease in response to an increase in the 5-year Treasury note yields and to increase in response to a decrease in 5-year Treasury note yields. The index targets a fixed level of sensitivity to changes in the yield of the current \"cheapest-to-deliver\" note underlying the relevant 5-year Treasury futures contract at a given point in time.",
-    "total_assets": 5951071
-  },
-  "TMF": {
-    "category": "Trading--Leveraged Debt",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Direxion Funds",
-    "long_name": "Direxion Daily 20+ Year Treasury Bull 3X Shares",
-    "market": "us_market",
-    "short_name": "Direxion Daily 20-Yr Treasury B",
-    "summary": "The investment seeks daily investment results, before fees and expenses, of 300% of the daily performance of the ICE U.S. Treasury 20+ Year Bond Index.\n The fund, under normal circumstances, invests at least 80% of its net assets in financial instruments, such as swap agreements, securities of the index, and ETFs that track the index and other financial instruments that provide daily leveraged exposure to the index or to ETFs that track the index. The index is a market value weighted index that includes publicly issued U.S. Treasury securities that have a remaining maturity of greater than 20 years. The fund is non-diversified.",
-    "total_assets": 209133008
-  },
-  "TYD": {
-    "category": "Trading--Leveraged Debt",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Direxion Funds",
-    "long_name": "Direxion Daily 7-10 Year Treasury Bull 3X Shares",
-    "market": "us_market",
-    "short_name": "Direxion Daily 10-Yr Treasury B",
-    "summary": "The investment seeks daily investment results, before fees and expenses, of 300% of the daily performance of the ICE U.S. Treasury 7-10 Year Bond Index.\n The fund invests at least 80% of its net assets in financial instruments, such as swap agreements, securities of the index, and ETFs that track the index and other financial instruments that provide daily leveraged exposure to the index or to ETFs that track the index. The index is a market value weighted index that includes publicly issued U.S. Treasury securities that have a remaining maturity of greater than or equal to seven years and less than ten years. It is non-diversified.",
-    "total_assets": 18644118
-  },
-  "UBT": {
-    "category": "Trading--Leveraged Debt",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "ProShares",
-    "long_name": "ProShares Ultra 20+ Year Treasury",
-    "market": "us_market",
-    "short_name": "ProShares Ultra 20+ Year Treasu",
-    "summary": "The investment seeks daily investment results that correspond to two times (2x) the daily performance of the ICE U.S. Treasury 20+ Year Bond Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index includes publicly- issued U.S. Treasury securities that have a remaining maturity greater than or equal to twenty years and have $300 million or more of outstanding face value, excluding amounts held by the Federal Reserve. The fund is non-diversified.",
-    "total_assets": 23953676
-  },
-  "UJB": {
-    "category": "Trading--Leveraged Debt",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "ProShares",
-    "long_name": "ProShares Ultra High Yield",
-    "market": "us_market",
-    "short_name": "ProShares Ultra High Yield ETF",
-    "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to two times (2x) the daily performance of the Markit iBoxx $ Liquid High Yield Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index is a market-value weighted index designed to provide a balanced representation of U.S. dollar denominated high yield corporate bonds for sale within the United States by means of including the most liquid high yield corporate bonds available. The fund is non-diversified.",
-    "total_assets": 22467412
-  },
-  "UST": {
-    "category": "Trading--Leveraged Debt",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "ProShares",
-    "long_name": "ProShares Ultra 7-10 Year Treasury",
-    "market": "us_market",
-    "short_name": "ProShares Ultra 7-10 Year Treas",
-    "summary": "The investment seeks daily investment results that correspond to two times (2x) the daily performance of the ICE U.S. Treasury 7-10 Year Bond Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index includes publicly- issued U.S. Treasury securities that have a remaining maturity of greater than or equal to seven years and less than or equal to ten years and have $300 million or more of outstanding face value, excluding amounts held by the Federal Reserve. The fund is non-diversified.",
-    "total_assets": 19584448
-  }
+    "DFVL": {
+        "short_name": "iPath US Treasury 5 Year Bull E",
+        "long_name": "iPath US Treasury 5-year Bull ETN",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investors with exposure to the Barclays 5Y US Treasury Futures Targeted Exposure Index\u00e2\u0084\u00a2.\n The Barclays 5Y US Treasury Futures Targeted Exposure Index\u00e2\u0084\u00a2 (the \"index\") is designed to decrease in response to an increase in the 5-year Treasury note yields and to increase in response to a decrease in 5-year Treasury note yields. The index targets a fixed level of sensitivity to changes in the yield of the current \"cheapest-to-deliver\" note underlying the relevant 5-year Treasury futures contract at a given point in time.",
+        "category": "Trading--Leveraged Debt",
+        "family": "Milleis Investissements Funds",
+        "exchange": "BTS",
+        "market": "us_market",
+        "total_assets": 5951071
+    },
+    "TMF": {
+        "short_name": "Direxion Daily 20-Yr Treasury B",
+        "long_name": "Direxion Daily 20+ Year Treasury Bull 3X Shares",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, of 300% of the daily performance of the ICE U.S. Treasury 20+ Year Bond Index.\n The fund, under normal circumstances, invests at least 80% of its net assets in financial instruments, such as swap agreements, securities of the index, and ETFs that track the index and other financial instruments that provide daily leveraged exposure to the index or to ETFs that track the index. The index is a market value weighted index that includes publicly issued U.S. Treasury securities that have a remaining maturity of greater than 20 years. The fund is non-diversified.",
+        "category": "Trading--Leveraged Debt",
+        "family": "Direxion Funds",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 209133008
+    },
+    "TYD": {
+        "short_name": "Direxion Daily 10-Yr Treasury B",
+        "long_name": "Direxion Daily 7-10 Year Treasury Bull 3X Shares",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, of 300% of the daily performance of the ICE U.S. Treasury 7-10 Year Bond Index.\n The fund invests at least 80% of its net assets in financial instruments, such as swap agreements, securities of the index, and ETFs that track the index and other financial instruments that provide daily leveraged exposure to the index or to ETFs that track the index. The index is a market value weighted index that includes publicly issued U.S. Treasury securities that have a remaining maturity of greater than or equal to seven years and less than ten years. It is non-diversified.",
+        "category": "Trading--Leveraged Debt",
+        "family": "Direxion Funds",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 18644118
+    },
+    "UBT": {
+        "short_name": "ProShares Ultra 20+ Year Treasu",
+        "long_name": "ProShares Ultra 20+ Year Treasury",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results that correspond to two times (2x) the daily performance of the ICE U.S. Treasury 20+ Year Bond Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index includes publicly- issued U.S. Treasury securities that have a remaining maturity greater than or equal to twenty years and have $300 million or more of outstanding face value, excluding amounts held by the Federal Reserve. The fund is non-diversified.",
+        "category": "Trading--Leveraged Debt",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 23953676
+    },
+    "UJB": {
+        "short_name": "ProShares Ultra High Yield ETF",
+        "long_name": "ProShares Ultra High Yield",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results, before fees and expenses, that correspond to two times (2x) the daily performance of the Markit iBoxx $ Liquid High Yield Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index is a market-value weighted index designed to provide a balanced representation of U.S. dollar denominated high yield corporate bonds for sale within the United States by means of including the most liquid high yield corporate bonds available. The fund is non-diversified.",
+        "category": "Trading--Leveraged Debt",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 22467412
+    },
+    "UST": {
+        "short_name": "ProShares Ultra 7-10 Year Treas",
+        "long_name": "ProShares Ultra 7-10 Year Treasury",
+        "currency": "USD",
+        "summary": "The investment seeks daily investment results that correspond to two times (2x) the daily performance of the ICE U.S. Treasury 7-10 Year Bond Index.\n The fund invests in financial instruments that ProShare Advisors believes, in combination, should produce daily returns consistent with the fund&#39;s investment objective. The index includes publicly- issued U.S. Treasury securities that have a remaining maturity of greater than or equal to seven years and less than or equal to ten years and have $300 million or more of outstanding face value, excluding amounts held by the Federal Reserve. The fund is non-diversified.",
+        "category": "Trading--Leveraged Debt",
+        "family": "ProShares",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 19584448
+    }
 }

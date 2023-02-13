@@ -1,38 +1,38 @@
 {
-  "CADCVE=X": {
-    "currency": "CVE",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/CVE"
-  },
-  "CHFCVE=X": {
-    "currency": "CVE",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/CVE"
-  },
-  "CVE=X": {
-    "currency": "CVE",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/CVE"
-  },
-  "EURCVE=X": {
-    "currency": "CVE",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/CVE"
-  },
-  "GBPCVE=X": {
-    "currency": "CVE",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/CVE"
-  },
-  "JPYCVE=X": {
-    "currency": "CVE",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/CVE"
-  }
+    "CADCVE=X": {
+        "short_name": "CAD/CVE",
+        "currency": "CVE",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFCVE=X": {
+        "short_name": "CHF/CVE",
+        "currency": "CVE",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CVE=X": {
+        "short_name": "USD/CVE",
+        "currency": "CVE",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURCVE=X": {
+        "short_name": "EUR/CVE",
+        "currency": "CVE",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPCVE=X": {
+        "short_name": "GBP/CVE",
+        "currency": "CVE",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYCVE=X": {
+        "short_name": "JPY/CVE",
+        "currency": "CVE",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

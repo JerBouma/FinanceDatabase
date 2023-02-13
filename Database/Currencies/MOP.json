@@ -1,44 +1,44 @@
 {
-  "CADMOP=X": {
-    "currency": "MOP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/MOP"
-  },
-  "CHFMOP=X": {
-    "currency": "MOP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/MOP"
-  },
-  "EURMOP=X": {
-    "currency": "MOP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/MOP"
-  },
-  "GBPMOP=X": {
-    "currency": "MOP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/MOP"
-  },
-  "HKDMOP=X": {
-    "currency": "MOP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "HKD/MOP"
-  },
-  "JPYMOP=X": {
-    "currency": "MOP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/MOP"
-  },
-  "MOP=X": {
-    "currency": "MOP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/MOP"
-  }
+    "CADMOP=X": {
+        "short_name": "CAD/MOP",
+        "currency": "MOP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFMOP=X": {
+        "short_name": "CHF/MOP",
+        "currency": "MOP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURMOP=X": {
+        "short_name": "EUR/MOP",
+        "currency": "MOP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPMOP=X": {
+        "short_name": "GBP/MOP",
+        "currency": "MOP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "HKDMOP=X": {
+        "short_name": "HKD/MOP",
+        "currency": "MOP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYMOP=X": {
+        "short_name": "JPY/MOP",
+        "currency": "MOP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MOP=X": {
+        "short_name": "USD/MOP",
+        "currency": "MOP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

@@ -1,34 +1,34 @@
 {
-  "CMPNF": {
-    "city": "Wan Chai",
-    "country": "Hong Kong",
-    "currency": "USD",
-    "exchange": "PNK",
-    "industry": "REIT - Retail",
-    "long_name": "Champion Real Estate Investment Trust",
-    "market": "us_market",
-    "market_cap": "Mid Cap",
-    "sector": "Real Estate",
-    "short_name": "CHAMPION REAL ESTATE INVESTMENT",
-    "state": null,
-    "summary": "Champion Real Estate Investment Trust is a trust formed to own and invest in income- producing office and retail properties. The Trust focuses on Grade-A commercial properties in prime locations. It currently offers investors direct exposure to 2.93 million sq. ft. of prime office and retail properties by way of two landmark properties, Three Garden Road and Langham Place, one on each side of the Victoria Harbour.",
-    "website": "http://www.championreit.com",
-    "zipcode": null
-  },
-  "LKREF": {
-    "city": "Kwun Tong",
-    "country": "Hong Kong",
-    "currency": "USD",
-    "exchange": "PNK",
-    "industry": "REIT - Retail",
-    "long_name": "Link Real Estate Investment Trust",
-    "market": "us_market",
-    "market_cap": "Large Cap",
-    "sector": "Real Estate",
-    "short_name": "LINK REAL ESTATE INVESTMENT TRU",
-    "state": null,
-    "summary": "Link Real Estate Investment Trust (Hong Kong stock code: 823), managed by Link Asset Management Limited, is a leading retail-focused REIT in the world and Asia's largest REIT in terms of market capitalisation. Listed in 2005 as the first REIT in Hong Kong, Link has been 100% held by public and institutional investors and is a Hang Seng Index constituent stock. From its home in Hong Kong, Link manages a diversified portfolio including retail facilities, car parks and offices spanning Hong Kong, Beijing, Guangzhou, Shanghai, Shenzhen, London and Sydney. Link seeks to extend its portfolio growth trajectory and grasp expansion opportunities in different markets in pursuit of our medium-term target Vision 2025.",
-    "website": "http://www.linkreit.com",
-    "zipcode": null
-  }
+    "CMPNF": {
+        "short_name": "CHAMPION REAL ESTATE INVESTMENT",
+        "long_name": "Champion Real Estate Investment Trust",
+        "summary": "Champion Real Estate Investment Trust is a trust formed to own and invest in income- producing office and retail properties. The Trust focuses on Grade-A commercial properties in prime locations. It currently offers investors direct exposure to 2.93 million sq. ft. of prime office and retail properties by way of two landmark properties, Three Garden Road and Langham Place, one on each side of the Victoria Harbour.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Hong Kong",
+        "state": null,
+        "city": "Wan Chai",
+        "zipcode": null,
+        "website": "http://www.championreit.com",
+        "market_cap": "Mid Cap"
+    },
+    "LKREF": {
+        "short_name": "LINK REAL ESTATE INVESTMENT TRU",
+        "long_name": "Link Real Estate Investment Trust",
+        "summary": "Link Real Estate Investment Trust (Hong Kong stock code: 823), managed by Link Asset Management Limited, is a leading retail-focused REIT in the world and Asia's largest REIT in terms of market capitalisation. Listed in 2005 as the first REIT in Hong Kong, Link has been 100% held by public and institutional investors and is a Hang Seng Index constituent stock. From its home in Hong Kong, Link manages a diversified portfolio including retail facilities, car parks and offices spanning Hong Kong, Beijing, Guangzhou, Shanghai, Shenzhen, London and Sydney. Link seeks to extend its portfolio growth trajectory and grasp expansion opportunities in different markets in pursuit of our medium-term target Vision 2025.",
+        "currency": "USD",
+        "sector": "Real Estate",
+        "industry": "REIT - Retail",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Hong Kong",
+        "state": null,
+        "city": "Kwun Tong",
+        "zipcode": null,
+        "website": "http://www.linkreit.com",
+        "market_cap": "Large Cap"
+    }
 }

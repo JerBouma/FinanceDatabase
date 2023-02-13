@@ -1,38 +1,38 @@
 {
-  "BTN=X": {
-    "currency": "BTN",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/BTN"
-  },
-  "CADBTN=X": {
-    "currency": "BTN",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/BTN"
-  },
-  "CHFBTN=X": {
-    "currency": "BTN",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/BTN"
-  },
-  "EURBTN=X": {
-    "currency": "BTN",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/BTN"
-  },
-  "GBPBTN=X": {
-    "currency": "BTN",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/BTN"
-  },
-  "JPYBTN=X": {
-    "currency": "BTN",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/BTN"
-  }
+    "BTN=X": {
+        "short_name": "USD/BTN",
+        "currency": "BTN",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADBTN=X": {
+        "short_name": "CAD/BTN",
+        "currency": "BTN",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFBTN=X": {
+        "short_name": "CHF/BTN",
+        "currency": "BTN",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURBTN=X": {
+        "short_name": "EUR/BTN",
+        "currency": "BTN",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPBTN=X": {
+        "short_name": "GBP/BTN",
+        "currency": "BTN",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYBTN=X": {
+        "short_name": "JPY/BTN",
+        "currency": "BTN",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

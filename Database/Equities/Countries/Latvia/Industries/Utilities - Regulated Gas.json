@@ -1,34 +1,34 @@
 {
-  "GZE1R.RG": {
-    "city": "Riga",
-    "country": "Latvia",
-    "currency": "EUR",
-    "exchange": "RIS",
-    "industry": "Utilities - Regulated Gas",
-    "long_name": "AS Latvijas Gaze",
-    "market": "rg_market",
-    "market_cap": "Small Cap",
-    "sector": "Utilities",
-    "short_name": "Latvijas Gaze",
-    "state": null,
-    "summary": "AS Latvijas Gaze engages in the purchase, trading, distribution, and sale of natural gas in Latvia, Lithuania, and Estonia. It operates through Natural Gas Sales & Trading, and Natural Gas Distribution segments. The company supplies natural gas to approximately 400 thousand customers in Latvia. It serves industrial and commercial customers, as well as households. The company is based in Riga, Latvia.",
-    "website": "http://lg.lv",
-    "zipcode": "1001"
-  },
-  "UMA.F": {
-    "city": "Riga",
-    "country": "Latvia",
-    "currency": "EUR",
-    "exchange": "FRA",
-    "industry": "Utilities - Regulated Gas",
-    "long_name": "AS Latvijas Gaze",
-    "market": "dr_market",
-    "market_cap": "Small Cap",
-    "sector": "Utilities",
-    "short_name": "LATVIJAS GAZE  EO 1,40",
-    "state": null,
-    "summary": "AS Latvijas Gaze engages in the purchase, trading, distribution, and sale of natural gas in Latvia, Lithuania, and Estonia. It operates through Natural Gas Sales & Trading, and Natural Gas Distribution segments. The company supplies natural gas to approximately 400 thousand customers in Latvia. It serves industrial and commercial customers, as well as households. The company is based in Riga, Latvia.",
-    "website": "http://lg.lv",
-    "zipcode": "1001"
-  }
+    "GZE1R.RG": {
+        "short_name": "Latvijas Gaze",
+        "long_name": "AS Latvijas Gaze",
+        "summary": "AS Latvijas Gaze engages in the purchase, trading, distribution, and sale of natural gas in Latvia, Lithuania, and Estonia. It operates through Natural Gas Sales & Trading, and Natural Gas Distribution segments. The company supplies natural gas to approximately 400 thousand customers in Latvia. It serves industrial and commercial customers, as well as households. The company is based in Riga, Latvia.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Gas",
+        "exchange": "RIS",
+        "market": "rg_market",
+        "country": "Latvia",
+        "state": null,
+        "city": "Riga",
+        "zipcode": "1001",
+        "website": "http://lg.lv",
+        "market_cap": "Small Cap"
+    },
+    "UMA.F": {
+        "short_name": "LATVIJAS GAZE  EO 1,40",
+        "long_name": "AS Latvijas Gaze",
+        "summary": "AS Latvijas Gaze engages in the purchase, trading, distribution, and sale of natural gas in Latvia, Lithuania, and Estonia. It operates through Natural Gas Sales & Trading, and Natural Gas Distribution segments. The company supplies natural gas to approximately 400 thousand customers in Latvia. It serves industrial and commercial customers, as well as households. The company is based in Riga, Latvia.",
+        "currency": "EUR",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Gas",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Latvia",
+        "state": null,
+        "city": "Riga",
+        "zipcode": "1001",
+        "website": "http://lg.lv",
+        "market_cap": "Small Cap"
+    }
 }

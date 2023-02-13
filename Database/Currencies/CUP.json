@@ -1,38 +1,38 @@
 {
-  "CADCUP=X": {
-    "currency": "CUP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/CUP"
-  },
-  "CHFCUP=X": {
-    "currency": "CUP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/CUP"
-  },
-  "CUP=X": {
-    "currency": "CUP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/CUP"
-  },
-  "EURCUP=X": {
-    "currency": "CUP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/CUP"
-  },
-  "GBPCUP=X": {
-    "currency": "CUP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/CUP"
-  },
-  "JPYCUP=X": {
-    "currency": "CUP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/CUP"
-  }
+    "CADCUP=X": {
+        "short_name": "CAD/CUP",
+        "currency": "CUP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFCUP=X": {
+        "short_name": "CHF/CUP",
+        "currency": "CUP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CUP=X": {
+        "short_name": "USD/CUP",
+        "currency": "CUP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURCUP=X": {
+        "short_name": "EUR/CUP",
+        "currency": "CUP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPCUP=X": {
+        "short_name": "GBP/CUP",
+        "currency": "CUP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYCUP=X": {
+        "short_name": "JPY/CUP",
+        "currency": "CUP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

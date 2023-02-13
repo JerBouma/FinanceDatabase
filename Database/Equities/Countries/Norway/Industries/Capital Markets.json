@@ -1,34 +1,34 @@
 {
-  "ABG.OL": {
-    "city": "Oslo",
-    "country": "Norway",
-    "currency": "NOK",
-    "exchange": "OSL",
-    "industry": "Capital Markets",
-    "long_name": "ABG Sundal Collier Holding ASA",
-    "market": "no_market",
-    "market_cap": "Small Cap",
-    "sector": "Financial Services",
-    "short_name": "ABG SUN COL HLDG",
-    "state": null,
-    "summary": "ABG Sundal Collier Holding ASA, together with its subsidiaries, provides investment banking, stock broking, and corporate advisory services in Norway, Sweden, Denmark, and internationally. It operates through three segments: Corporate Financing, M&A and Advisory, and Brokerage and Research. The company offers corporate financing services, including debt advisory and sourcing services, such as loans, factoring, and leasing; and corporate advisory services in the areas of mergers and acquisitions, sales, and financial restructurings. It also provides secondary brokerage and research services in equities, bonds, derivatives, structured products, and FX. The company was founded in 1984 and is headquartered in Oslo, Norway.",
-    "website": "http://www.abgsc.com",
-    "zipcode": "0250"
-  },
-  "ABGSF": {
-    "city": "Oslo",
-    "country": "Norway",
-    "currency": "USD",
-    "exchange": "PNK",
-    "industry": "Capital Markets",
-    "long_name": "ABG Sundal Collier Holding ASA",
-    "market": "us_market",
-    "market_cap": "Small Cap",
-    "sector": "Financial Services",
-    "short_name": "ABG SUNDAL COLLIER HLDG ASA",
-    "state": null,
-    "summary": "ABG Sundal Collier Holding ASA, together with its subsidiaries, provides investment banking, stock broking, and corporate advisory services in Norway, Sweden, Denmark, and internationally. It operates through three segments: Corporate Financing, M&A and Advisory, and Brokerage and Research. The company offers corporate financing services, including debt advisory and sourcing services, such as loans, factoring, and leasing; and corporate advisory services in the areas of mergers and acquisitions, sales, and financial restructurings. It also provides secondary brokerage and research services in equities, bonds, derivatives, structured products, and FX. The company was founded in 1984 and is headquartered in Oslo, Norway.",
-    "website": "http://www.abgsc.com",
-    "zipcode": "0250"
-  }
+    "ABG.OL": {
+        "short_name": "ABG SUN COL HLDG",
+        "long_name": "ABG Sundal Collier Holding ASA",
+        "summary": "ABG Sundal Collier Holding ASA, together with its subsidiaries, provides investment banking, stock broking, and corporate advisory services in Norway, Sweden, Denmark, and internationally. It operates through three segments: Corporate Financing, M&A and Advisory, and Brokerage and Research. The company offers corporate financing services, including debt advisory and sourcing services, such as loans, factoring, and leasing; and corporate advisory services in the areas of mergers and acquisitions, sales, and financial restructurings. It also provides secondary brokerage and research services in equities, bonds, derivatives, structured products, and FX. The company was founded in 1984 and is headquartered in Oslo, Norway.",
+        "currency": "NOK",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "OSL",
+        "market": "no_market",
+        "country": "Norway",
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0250",
+        "website": "http://www.abgsc.com",
+        "market_cap": "Small Cap"
+    },
+    "ABGSF": {
+        "short_name": "ABG SUNDAL COLLIER HLDG ASA",
+        "long_name": "ABG Sundal Collier Holding ASA",
+        "summary": "ABG Sundal Collier Holding ASA, together with its subsidiaries, provides investment banking, stock broking, and corporate advisory services in Norway, Sweden, Denmark, and internationally. It operates through three segments: Corporate Financing, M&A and Advisory, and Brokerage and Research. The company offers corporate financing services, including debt advisory and sourcing services, such as loans, factoring, and leasing; and corporate advisory services in the areas of mergers and acquisitions, sales, and financial restructurings. It also provides secondary brokerage and research services in equities, bonds, derivatives, structured products, and FX. The company was founded in 1984 and is headquartered in Oslo, Norway.",
+        "currency": "USD",
+        "sector": "Financial Services",
+        "industry": "Capital Markets",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Norway",
+        "state": null,
+        "city": "Oslo",
+        "zipcode": "0250",
+        "website": "http://www.abgsc.com",
+        "market_cap": "Small Cap"
+    }
 }

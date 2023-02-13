@@ -1,34 +1,34 @@
 {
-  "BME.L": {
-    "city": "Luxembourg City",
-    "country": "Luxembourg",
-    "currency": "GBp",
-    "exchange": "LSE",
-    "industry": "Discount Stores",
-    "long_name": "B&M European Value Retail S.A.",
-    "market": "gb_market",
-    "market_cap": null,
-    "sector": "Consumer Defensive",
-    "short_name": "B&M EUROPEAN VALUE RETAIL S.A. ",
-    "state": null,
-    "summary": "B&M European Value Retail S.A. operates general merchandise and grocery stores. As of March 28, 2020, it operated 656 stores in the United Kingdom under the B&M brand; 293 stores under the Heron Foods and B&M Express brands; and 101 stores in France under the Babou and B&M brand. It also provides property development, employment, and administrative services. The company was founded in 1978 and is based in Luxembourg, Luxembourg.",
-    "website": "http://www.bandmretail.com",
-    "zipcode": "2520"
-  },
-  "BMRRY": {
-    "city": "Luxembourg City",
-    "country": "Luxembourg",
-    "currency": "USD",
-    "exchange": "PNK",
-    "industry": "Discount Stores",
-    "long_name": "B&M European Value Retail S.A.",
-    "market": "us_market",
-    "market_cap": "Mid Cap",
-    "sector": "Consumer Defensive",
-    "short_name": "B & M EUROPEAN VALUE RETAIL SA",
-    "state": null,
-    "summary": "B&M European Value Retail S.A. operates general merchandise and grocery stores. As of March 28, 2020, it operated 656 stores in the United Kingdom under the B&M brand; 293 stores under the Heron Foods and B&M Express brands; and 101 stores in France under the Babou and B&M brand. It also provides property development, employment, and administrative services. The company was founded in 1978 and is based in Luxembourg, Luxembourg.",
-    "website": "http://www.bandmretail.com",
-    "zipcode": "2520"
-  }
+    "BME.L": {
+        "short_name": "B&M EUROPEAN VALUE RETAIL S.A. ",
+        "long_name": "B&M European Value Retail S.A.",
+        "summary": "B&M European Value Retail S.A. operates general merchandise and grocery stores. As of March 28, 2020, it operated 656 stores in the United Kingdom under the B&M brand; 293 stores under the Heron Foods and B&M Express brands; and 101 stores in France under the Babou and B&M brand. It also provides property development, employment, and administrative services. The company was founded in 1978 and is based in Luxembourg, Luxembourg.",
+        "currency": "GBp",
+        "sector": "Consumer Defensive",
+        "industry": "Discount Stores",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "Luxembourg",
+        "state": null,
+        "city": "Luxembourg City",
+        "zipcode": "2520",
+        "website": "http://www.bandmretail.com",
+        "market_cap": null
+    },
+    "BMRRY": {
+        "short_name": "B & M EUROPEAN VALUE RETAIL SA",
+        "long_name": "B&M European Value Retail S.A.",
+        "summary": "B&M European Value Retail S.A. operates general merchandise and grocery stores. As of March 28, 2020, it operated 656 stores in the United Kingdom under the B&M brand; 293 stores under the Heron Foods and B&M Express brands; and 101 stores in France under the Babou and B&M brand. It also provides property development, employment, and administrative services. The company was founded in 1978 and is based in Luxembourg, Luxembourg.",
+        "currency": "USD",
+        "sector": "Consumer Defensive",
+        "industry": "Discount Stores",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Luxembourg",
+        "state": null,
+        "city": "Luxembourg City",
+        "zipcode": "2520",
+        "website": "http://www.bandmretail.com",
+        "market_cap": "Mid Cap"
+    }
 }

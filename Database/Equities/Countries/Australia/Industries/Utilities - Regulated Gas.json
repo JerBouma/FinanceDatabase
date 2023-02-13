@@ -1,34 +1,34 @@
 {
-  "APA.AX": {
-    "city": "Sydney",
-    "country": "Australia",
-    "currency": "AUD",
-    "exchange": "ASX",
-    "industry": "Utilities - Regulated Gas",
-    "long_name": "APA Group",
-    "market": "au_market",
-    "market_cap": "Large Cap",
-    "sector": "Utilities",
-    "short_name": "APA GROUP STAPLED",
-    "state": "NSW",
-    "summary": "APA Group develops, owns, and operates natural gas transportation and energy infrastructure in Australia. The company operates through three segments: Energy Infrastructure, Asset Management, and Energy Investments. It operates natural gas pipelines, gas storage facilities, gas processing facilities, gas compression facilities, electricity transmission, electricity interconnectors, and renewable and gas fired power generation assets; and operates solar farms and wind farms. The company has interests in approximately 15,000 kilometers of gas transmission pipelines; approximately 29,500 kilometers of gas mains and pipelines; and 1.4 million gas consumer connections. It also provides commercial, operating, and asset maintenance services to its energy investments and third parties; and invests in unlisted entities. APA Group was founded in 2000 and is headquartered in Sydney, Australia.",
-    "website": "http://www.apa.com.au",
-    "zipcode": "2000"
-  },
-  "APAJF": {
-    "city": "Sydney",
-    "country": "Australia",
-    "currency": "USD",
-    "exchange": "PNK",
-    "industry": "Utilities - Regulated Gas",
-    "long_name": "APA Group",
-    "market": "us_market",
-    "market_cap": "Large Cap",
-    "sector": "Utilities",
-    "short_name": "APA GROUP",
-    "state": "NSW",
-    "summary": "APA Group develops, owns, and operates natural gas transportation and energy infrastructure in Australia. The company operates through three segments: Energy Infrastructure, Asset Management, and Energy Investments. It operates natural gas pipelines, gas storage facilities, gas processing facilities, gas compression facilities, electricity transmission, electricity interconnectors, and renewable and gas fired power generation assets; and operates solar farms and wind farms. The company has interests in approximately 15,000 kilometers of gas transmission pipelines; approximately 29,500 kilometers of gas mains and pipelines; and 1.4 million gas consumer connections. It also provides commercial, operating, and asset maintenance services to its energy investments and third parties; and invests in unlisted entities. APA Group was founded in 2000 and is headquartered in Sydney, Australia.",
-    "website": "http://www.apa.com.au",
-    "zipcode": "2000"
-  }
+    "APA.AX": {
+        "short_name": "APA GROUP STAPLED",
+        "long_name": "APA Group",
+        "summary": "APA Group develops, owns, and operates natural gas transportation and energy infrastructure in Australia. The company operates through three segments: Energy Infrastructure, Asset Management, and Energy Investments. It operates natural gas pipelines, gas storage facilities, gas processing facilities, gas compression facilities, electricity transmission, electricity interconnectors, and renewable and gas fired power generation assets; and operates solar farms and wind farms. The company has interests in approximately 15,000 kilometers of gas transmission pipelines; approximately 29,500 kilometers of gas mains and pipelines; and 1.4 million gas consumer connections. It also provides commercial, operating, and asset maintenance services to its energy investments and third parties; and invests in unlisted entities. APA Group was founded in 2000 and is headquartered in Sydney, Australia.",
+        "currency": "AUD",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Gas",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.apa.com.au",
+        "market_cap": "Large Cap"
+    },
+    "APAJF": {
+        "short_name": "APA GROUP",
+        "long_name": "APA Group",
+        "summary": "APA Group develops, owns, and operates natural gas transportation and energy infrastructure in Australia. The company operates through three segments: Energy Infrastructure, Asset Management, and Energy Investments. It operates natural gas pipelines, gas storage facilities, gas processing facilities, gas compression facilities, electricity transmission, electricity interconnectors, and renewable and gas fired power generation assets; and operates solar farms and wind farms. The company has interests in approximately 15,000 kilometers of gas transmission pipelines; approximately 29,500 kilometers of gas mains and pipelines; and 1.4 million gas consumer connections. It also provides commercial, operating, and asset maintenance services to its energy investments and third parties; and invests in unlisted entities. APA Group was founded in 2000 and is headquartered in Sydney, Australia.",
+        "currency": "USD",
+        "sector": "Utilities",
+        "industry": "Utilities - Regulated Gas",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Australia",
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://www.apa.com.au",
+        "market_cap": "Large Cap"
+    }
 }

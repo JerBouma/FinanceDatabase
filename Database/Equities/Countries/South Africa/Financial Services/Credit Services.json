@@ -1,34 +1,34 @@
 {
-  "ADW.JO": {
-    "city": "Johannesburg",
-    "country": "South Africa",
-    "currency": "ZAc",
-    "exchange": "JNB",
-    "industry": "Credit Services",
-    "long_name": "African Dawn Capital Limited",
-    "market": "za_market",
-    "market_cap": null,
-    "sector": "Financial Services",
-    "short_name": "African Dawn Capital Ltd",
-    "state": null,
-    "summary": "African Dawn Capital Limited, a micro finance company, provides various financial products in South Africa. It operates through Investment Advisory and Investment Management, and Micro Finance segments. The company offers micro finance, debtor discounting, and structured property finance services. It also provides investment advisory and management, and online consulting services to entrepreneurial and other companies through its YueDiligence online platform. African Dawn Capital Limited was founded in 1998 and is headquartered in Johannesburg, South Africa.",
-    "website": "http://www.afdawn.co.za",
-    "zipcode": "1724"
-  },
-  "TCP.JO": {
-    "city": "Johannesburg",
-    "country": "South Africa",
-    "currency": "ZAc",
-    "exchange": "JNB",
-    "industry": "Credit Services",
-    "long_name": "Transaction Capital Limited",
-    "market": "za_market",
-    "market_cap": null,
-    "sector": "Financial Services",
-    "short_name": "Transaction Capital Ltd",
-    "state": null,
-    "summary": "Transaction Capital Limited provides non-deposit taking financial services in South Africa and Australia. The company offers vehicle procurement, retail, repossession, and refurbishment capabilities, such as asset-backed developmental finance and insurance services for various vehicles; and customer management solutions through its fintech platform that enables its clients to mitigate risk through their customer engagement lifecycle. It also provides business support and working capital finance to SMEs; accounts receivables collection services; payroll, human resources management, access controls, biometrics, employee self-service, recruitment, and outsourcing services, as well as time and attendance solutions; payment solutions; payroll-related services; legal and administrative services; and personal credit information services. The company was founded in 2007 and is based in Johannesburg, South Africa.",
-    "website": "http://www.transactioncapital.co.za",
-    "zipcode": "2196"
-  }
+    "ADW.JO": {
+        "short_name": "African Dawn Capital Ltd",
+        "long_name": "African Dawn Capital Limited",
+        "summary": "African Dawn Capital Limited, a micro finance company, provides various financial products in South Africa. It operates through Investment Advisory and Investment Management, and Micro Finance segments. The company offers micro finance, debtor discounting, and structured property finance services. It also provides investment advisory and management, and online consulting services to entrepreneurial and other companies through its YueDiligence online platform. African Dawn Capital Limited was founded in 1998 and is headquartered in Johannesburg, South Africa.",
+        "currency": "ZAc",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "exchange": "JNB",
+        "market": "za_market",
+        "country": "South Africa",
+        "state": null,
+        "city": "Johannesburg",
+        "zipcode": "1724",
+        "website": "http://www.afdawn.co.za",
+        "market_cap": null
+    },
+    "TCP.JO": {
+        "short_name": "Transaction Capital Ltd",
+        "long_name": "Transaction Capital Limited",
+        "summary": "Transaction Capital Limited provides non-deposit taking financial services in South Africa and Australia. The company offers vehicle procurement, retail, repossession, and refurbishment capabilities, such as asset-backed developmental finance and insurance services for various vehicles; and customer management solutions through its fintech platform that enables its clients to mitigate risk through their customer engagement lifecycle. It also provides business support and working capital finance to SMEs; accounts receivables collection services; payroll, human resources management, access controls, biometrics, employee self-service, recruitment, and outsourcing services, as well as time and attendance solutions; payment solutions; payroll-related services; legal and administrative services; and personal credit information services. The company was founded in 2007 and is based in Johannesburg, South Africa.",
+        "currency": "ZAc",
+        "sector": "Financial Services",
+        "industry": "Credit Services",
+        "exchange": "JNB",
+        "market": "za_market",
+        "country": "South Africa",
+        "state": null,
+        "city": "Johannesburg",
+        "zipcode": "2196",
+        "website": "http://www.transactioncapital.co.za",
+        "market_cap": null
+    }
 }

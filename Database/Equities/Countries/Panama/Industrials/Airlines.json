@@ -1,34 +1,34 @@
 {
-  "C2H.F": {
-    "city": "Panama City",
-    "country": "Panama",
-    "currency": "EUR",
-    "exchange": "FRA",
-    "industry": "Airlines",
-    "long_name": "Copa Holdings, S.A.",
-    "market": "dr_market",
-    "market_cap": "Mid Cap",
-    "sector": "Industrials",
-    "short_name": "COPA HOLDINGS CL.A O.N.",
-    "state": null,
-    "summary": "Copa Holdings, S.A., through its subsidiaries, provides airline passenger and cargo services. The company offers approximately 104 daily scheduled flights to 54 destinations in 25 countries in North, Central, and South America, as well as the Caribbean from its Panama City hub. As of December 31, 2020, it operated a fleet of 77 aircraft comprising 70 Boeing 737-Next Generation aircraft and 7 Boeing 737 MAX 9 aircraft. Copa Holdings, S.A. was founded in 1947 and is based in Panama City, Panama.",
-    "website": "http://copa.gcs-web.com",
-    "zipcode": null
-  },
-  "CPA": {
-    "city": "Panama City",
-    "country": "Panama",
-    "currency": "USD",
-    "exchange": "NYQ",
-    "industry": "Airlines",
-    "long_name": "Copa Holdings, S.A.",
-    "market": "us_market",
-    "market_cap": "Mid Cap",
-    "sector": "Industrials",
-    "short_name": "Copa Holdings, S.A. Copa Holdin",
-    "state": null,
-    "summary": "Copa Holdings, S.A., through its subsidiaries, provides airline passenger and cargo services. The company offers approximately 104 daily scheduled flights to 54 destinations in 25 countries in North, Central, and South America, as well as the Caribbean from its Panama City hub. As of December 31, 2020, it operated a fleet of 77 aircraft comprising 70 Boeing 737-Next Generation aircraft and 7 Boeing 737 MAX 9 aircraft. Copa Holdings, S.A. was founded in 1947 and is based in Panama City, Panama.",
-    "website": "http://copa.gcs-web.com",
-    "zipcode": null
-  }
+    "C2H.F": {
+        "short_name": "COPA HOLDINGS CL.A O.N.",
+        "long_name": "Copa Holdings, S.A.",
+        "summary": "Copa Holdings, S.A., through its subsidiaries, provides airline passenger and cargo services. The company offers approximately 104 daily scheduled flights to 54 destinations in 25 countries in North, Central, and South America, as well as the Caribbean from its Panama City hub. As of December 31, 2020, it operated a fleet of 77 aircraft comprising 70 Boeing 737-Next Generation aircraft and 7 Boeing 737 MAX 9 aircraft. Copa Holdings, S.A. was founded in 1947 and is based in Panama City, Panama.",
+        "currency": "EUR",
+        "sector": "Industrials",
+        "industry": "Airlines",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Panama",
+        "state": null,
+        "city": "Panama City",
+        "zipcode": null,
+        "website": "http://copa.gcs-web.com",
+        "market_cap": "Mid Cap"
+    },
+    "CPA": {
+        "short_name": "Copa Holdings, S.A. Copa Holdin",
+        "long_name": "Copa Holdings, S.A.",
+        "summary": "Copa Holdings, S.A., through its subsidiaries, provides airline passenger and cargo services. The company offers approximately 104 daily scheduled flights to 54 destinations in 25 countries in North, Central, and South America, as well as the Caribbean from its Panama City hub. As of December 31, 2020, it operated a fleet of 77 aircraft comprising 70 Boeing 737-Next Generation aircraft and 7 Boeing 737 MAX 9 aircraft. Copa Holdings, S.A. was founded in 1947 and is based in Panama City, Panama.",
+        "currency": "USD",
+        "sector": "Industrials",
+        "industry": "Airlines",
+        "exchange": "NYQ",
+        "market": "us_market",
+        "country": "Panama",
+        "state": null,
+        "city": "Panama City",
+        "zipcode": null,
+        "website": "http://copa.gcs-web.com",
+        "market_cap": "Mid Cap"
+    }
 }

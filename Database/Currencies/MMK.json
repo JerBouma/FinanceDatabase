@@ -1,38 +1,38 @@
 {
-  "CADMMK=X": {
-    "currency": "MMK",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/MMK"
-  },
-  "CHFMMK=X": {
-    "currency": "MMK",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/MMK"
-  },
-  "EURMMK=X": {
-    "currency": "MMK",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/MMK"
-  },
-  "GBPMMK=X": {
-    "currency": "MMK",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/MMK"
-  },
-  "JPYMMK=X": {
-    "currency": "MMK",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/MMK"
-  },
-  "MMK=X": {
-    "currency": "MMK",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/MMK"
-  }
+    "CADMMK=X": {
+        "short_name": "CAD/MMK",
+        "currency": "MMK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFMMK=X": {
+        "short_name": "CHF/MMK",
+        "currency": "MMK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURMMK=X": {
+        "short_name": "EUR/MMK",
+        "currency": "MMK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPMMK=X": {
+        "short_name": "GBP/MMK",
+        "currency": "MMK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYMMK=X": {
+        "short_name": "JPY/MMK",
+        "currency": "MMK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "MMK=X": {
+        "short_name": "USD/MMK",
+        "currency": "MMK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

@@ -1,34 +1,34 @@
 {
-  "ROSE.SW": {
-    "city": "Frauenfeld",
-    "country": "Switzerland",
-    "currency": "CHF",
-    "exchange": "EBS",
-    "industry": "Pharmaceutical Retailers",
-    "long_name": "Zur Rose Group AG",
-    "market": "ch_market",
-    "market_cap": "Mid Cap",
-    "sector": "Healthcare",
-    "short_name": "ZUR ROSE GROUP N",
-    "state": null,
-    "summary": "Zur Rose Group AG operates an e-commerce pharmacy and a wholesale business for medical and pharmaceutical products under the Zur Rose and DocMorris brands in Germany, Switzerland, and rest of Europe. It offers consumer health, beauty, and personal care products. The company also provides medicines management services. It operates stationary pharmacy shops. The company sells its products directly to physicians, online mail-order pharmacies, and private individuals. The company was formerly known as Zur Rose AG and changed its name to Zur Rose Group AG in May 2015. Zur Rose Group AG was founded in 1993 and is headquartered in Frauenfeld, Switzerland.",
-    "website": "http://www.zurrosegroup.com",
-    "zipcode": "8500"
-  },
-  "ZRSEF": {
-    "city": "Frauenfeld",
-    "country": "Switzerland",
-    "currency": "USD",
-    "exchange": "PNK",
-    "industry": "Pharmaceutical Retailers",
-    "long_name": "Zur Rose Group AG",
-    "market": "us_market",
-    "market_cap": "Mid Cap",
-    "sector": "Healthcare",
-    "short_name": "ZUR ROSE GROUP AG",
-    "state": null,
-    "summary": "Zur Rose Group AG operates an e-commerce pharmacy and a wholesale business for medical and pharmaceutical products under the Zur Rose and DocMorris brands in Germany, Switzerland, and rest of Europe. It offers consumer health, beauty, and personal care products. The company also provides medicines management services. It operates stationary pharmacy shops. The company sells its products directly to physicians, online mail-order pharmacies, and private individuals. The company was formerly known as Zur Rose AG and changed its name to Zur Rose Group AG in May 2015. Zur Rose Group AG was founded in 1993 and is headquartered in Frauenfeld, Switzerland.",
-    "website": "http://www.zurrosegroup.com",
-    "zipcode": "8500"
-  }
+    "ROSE.SW": {
+        "short_name": "ZUR ROSE GROUP N",
+        "long_name": "Zur Rose Group AG",
+        "summary": "Zur Rose Group AG operates an e-commerce pharmacy and a wholesale business for medical and pharmaceutical products under the Zur Rose and DocMorris brands in Germany, Switzerland, and rest of Europe. It offers consumer health, beauty, and personal care products. The company also provides medicines management services. It operates stationary pharmacy shops. The company sells its products directly to physicians, online mail-order pharmacies, and private individuals. The company was formerly known as Zur Rose AG and changed its name to Zur Rose Group AG in May 2015. Zur Rose Group AG was founded in 1993 and is headquartered in Frauenfeld, Switzerland.",
+        "currency": "CHF",
+        "sector": "Healthcare",
+        "industry": "Pharmaceutical Retailers",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "state": null,
+        "city": "Frauenfeld",
+        "zipcode": "8500",
+        "website": "http://www.zurrosegroup.com",
+        "market_cap": "Mid Cap"
+    },
+    "ZRSEF": {
+        "short_name": "ZUR ROSE GROUP AG",
+        "long_name": "Zur Rose Group AG",
+        "summary": "Zur Rose Group AG operates an e-commerce pharmacy and a wholesale business for medical and pharmaceutical products under the Zur Rose and DocMorris brands in Germany, Switzerland, and rest of Europe. It offers consumer health, beauty, and personal care products. The company also provides medicines management services. It operates stationary pharmacy shops. The company sells its products directly to physicians, online mail-order pharmacies, and private individuals. The company was formerly known as Zur Rose AG and changed its name to Zur Rose Group AG in May 2015. Zur Rose Group AG was founded in 1993 and is headquartered in Frauenfeld, Switzerland.",
+        "currency": "USD",
+        "sector": "Healthcare",
+        "industry": "Pharmaceutical Retailers",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "Switzerland",
+        "state": null,
+        "city": "Frauenfeld",
+        "zipcode": "8500",
+        "website": "http://www.zurrosegroup.com",
+        "market_cap": "Mid Cap"
+    }
 }

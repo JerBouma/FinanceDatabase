@@ -1,38 +1,38 @@
 {
-  "CADFKP=X": {
-    "currency": "FKP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/FKP"
-  },
-  "CHFFKP=X": {
-    "currency": "FKP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/FKP"
-  },
-  "EURFKP=X": {
-    "currency": "FKP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/FKP"
-  },
-  "FKP=X": {
-    "currency": "FKP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/FKP"
-  },
-  "GBPFKP=X": {
-    "currency": "FKP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/FKP"
-  },
-  "JPYFKP=X": {
-    "currency": "FKP",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/FKP"
-  }
+    "CADFKP=X": {
+        "short_name": "CAD/FKP",
+        "currency": "FKP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFFKP=X": {
+        "short_name": "CHF/FKP",
+        "currency": "FKP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURFKP=X": {
+        "short_name": "EUR/FKP",
+        "currency": "FKP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "FKP=X": {
+        "short_name": "USD/FKP",
+        "currency": "FKP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPFKP=X": {
+        "short_name": "GBP/FKP",
+        "currency": "FKP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYFKP=X": {
+        "short_name": "JPY/FKP",
+        "currency": "FKP",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

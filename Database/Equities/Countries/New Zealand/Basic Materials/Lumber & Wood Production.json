@@ -1,34 +1,34 @@
 {
-  "ARB.NZ": {
-    "city": "Auckland",
-    "country": "New Zealand",
-    "currency": "NZD",
-    "exchange": "NZE",
-    "industry": "Lumber & Wood Production",
-    "long_name": "ArborGen Holdings Limited",
-    "market": "nz_market",
-    "market_cap": "Micro Cap",
-    "sector": "Basic Materials",
-    "short_name": "ArborGen Holdings Limited Ordin",
-    "state": null,
-    "summary": "ArborGen Holdings Limited engages in the forestry genetics business. It produces and sells tree seedlings with a focus on pine, radiate, and eucalyptus species. The company provides its tree seedlings under the ArborGen brand name to forest land owners and managers primarily in the United States, Brazil, and Australasia. The company was formerly known as Rubicon Limited and changed its name to ArborGen Holdings Limited in September 2019. ArborGen Holdings Limited is based in Auckland, New Zealand.",
-    "website": "http://www.rubicon-nz.com",
-    "zipcode": "10"
-  },
-  "RUBNF": {
-    "city": "Auckland",
-    "country": "New Zealand",
-    "currency": "USD",
-    "exchange": "PNK",
-    "industry": "Lumber & Wood Production",
-    "long_name": "ArborGen Holdings Limited",
-    "market": "us_market",
-    "market_cap": "Micro Cap",
-    "sector": "Basic Materials",
-    "short_name": "ARBORGEN HOLDINGS LIMITED",
-    "state": null,
-    "summary": "ArborGen Holdings Limited engages in the forestry genetics business. It produces and sells tree seedlings with a focus on pine, radiate, and eucalyptus species. The company provides its tree seedlings under the ArborGen brand name to forest land owners and managers primarily in the United States, Brazil, and Australasia. The company was formerly known as Rubicon Limited and changed its name to ArborGen Holdings Limited in September 2019. ArborGen Holdings Limited is based in Auckland, New Zealand.",
-    "website": "http://www.rubicon-nz.com",
-    "zipcode": "10"
-  }
+    "ARB.NZ": {
+        "short_name": "ArborGen Holdings Limited Ordin",
+        "long_name": "ArborGen Holdings Limited",
+        "summary": "ArborGen Holdings Limited engages in the forestry genetics business. It produces and sells tree seedlings with a focus on pine, radiate, and eucalyptus species. The company provides its tree seedlings under the ArborGen brand name to forest land owners and managers primarily in the United States, Brazil, and Australasia. The company was formerly known as Rubicon Limited and changed its name to ArborGen Holdings Limited in September 2019. ArborGen Holdings Limited is based in Auckland, New Zealand.",
+        "currency": "NZD",
+        "sector": "Basic Materials",
+        "industry": "Lumber & Wood Production",
+        "exchange": "NZE",
+        "market": "nz_market",
+        "country": "New Zealand",
+        "state": null,
+        "city": "Auckland",
+        "zipcode": "10",
+        "website": "http://www.rubicon-nz.com",
+        "market_cap": "Micro Cap"
+    },
+    "RUBNF": {
+        "short_name": "ARBORGEN HOLDINGS LIMITED",
+        "long_name": "ArborGen Holdings Limited",
+        "summary": "ArborGen Holdings Limited engages in the forestry genetics business. It produces and sells tree seedlings with a focus on pine, radiate, and eucalyptus species. The company provides its tree seedlings under the ArborGen brand name to forest land owners and managers primarily in the United States, Brazil, and Australasia. The company was formerly known as Rubicon Limited and changed its name to ArborGen Holdings Limited in September 2019. ArborGen Holdings Limited is based in Auckland, New Zealand.",
+        "currency": "USD",
+        "sector": "Basic Materials",
+        "industry": "Lumber & Wood Production",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "New Zealand",
+        "state": null,
+        "city": "Auckland",
+        "zipcode": "10",
+        "website": "http://www.rubicon-nz.com",
+        "market_cap": "Micro Cap"
+    }
 }

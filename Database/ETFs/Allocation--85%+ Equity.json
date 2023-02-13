@@ -1,24 +1,24 @@
 {
-  "FFSG": {
-    "category": "Allocation--85%+ Equity",
-    "currency": "USD",
-    "exchange": "BTS",
-    "family": "FormulaFolioFunds",
-    "long_name": "FormulaFolios Smart Growth ETF",
-    "market": "us_market",
-    "short_name": "FormulaFolios Smart Growth ETF",
-    "summary": "The investment seeks to provide capital growth.\n The fund seeks to achieve its investment objective by investing through other unaffiliated ETFs primarily in domestic and foreign growth-oriented equity securities of any market capitalization and U.S. Treasuries or other cash equivalents. It is generally 100% invested in growth-oriented equity ETFs when the adviser&#39;s investment models indicate a bullish trend for the equity market, and is generally 50% invested in growth-oriented equity ETFs and 50% invested in U.S. treasuries and/or U.S. short-term bonds to hedge risk when the adviser&#39;s models indicate a bearish trend for the equity markets.",
-    "total_assets": 47606340
-  },
-  "HIPS": {
-    "category": "Allocation--85%+ Equity",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Graniteshares",
-    "long_name": "GraniteShares HIPS US High Income ETF",
-    "market": "us_market",
-    "short_name": "GraniteShares HIPS US High Inco",
-    "summary": "The investment seeks to track the performance, before fees and expenses, of the TFMS HIPS Index.\n The fund employs a \"passive management\"-or indexing-investment approach designed to track the performance of the index. The rules-based index measures the performance of up to 60 high income U.S.-listed securities that typically have \"pass-through\" structures that require them to distribute substantially all of their earnings to shareholders as cash distributions. This \"high income, pass-through\" strategy is known as HIPS.",
-    "total_assets": 33655256
-  }
+    "FFSG": {
+        "short_name": "FormulaFolios Smart Growth ETF",
+        "long_name": "FormulaFolios Smart Growth ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide capital growth.\n The fund seeks to achieve its investment objective by investing through other unaffiliated ETFs primarily in domestic and foreign growth-oriented equity securities of any market capitalization and U.S. Treasuries or other cash equivalents. It is generally 100% invested in growth-oriented equity ETFs when the adviser&#39;s investment models indicate a bullish trend for the equity market, and is generally 50% invested in growth-oriented equity ETFs and 50% invested in U.S. treasuries and/or U.S. short-term bonds to hedge risk when the adviser&#39;s models indicate a bearish trend for the equity markets.",
+        "category": "Allocation--85%+ Equity",
+        "family": "FormulaFolioFunds",
+        "exchange": "BTS",
+        "market": "us_market",
+        "total_assets": 47606340
+    },
+    "HIPS": {
+        "short_name": "GraniteShares HIPS US High Inco",
+        "long_name": "GraniteShares HIPS US High Income ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the performance, before fees and expenses, of the TFMS HIPS Index.\n The fund employs a \"passive management\"-or indexing-investment approach designed to track the performance of the index. The rules-based index measures the performance of up to 60 high income U.S.-listed securities that typically have \"pass-through\" structures that require them to distribute substantially all of their earnings to shareholders as cash distributions. This \"high income, pass-through\" strategy is known as HIPS.",
+        "category": "Allocation--85%+ Equity",
+        "family": "Graniteshares",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 33655256
+    }
 }

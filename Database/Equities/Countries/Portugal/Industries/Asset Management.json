@@ -1,34 +1,34 @@
 {
-  "FLEXD.LS": {
-    "city": "Barcelos",
-    "country": "Portugal",
-    "currency": "EUR",
-    "exchange": "LIS",
-    "industry": "Asset Management",
-    "long_name": "Flexdeal Simfe S.A.",
-    "market": "pt_market",
-    "market_cap": "Nano Cap",
-    "sector": "Financial Services",
-    "short_name": "FLEXDEAL",
-    "state": null,
-    "summary": "Flexdeal Simfe S.A. operates as an investment company. The company is based in Barcelos, Portugal. Flexdeal Simfe S.A. is a subsidiary of MÃ©todo Garantido ParticipaÃ§Ãµes, S.A.",
-    "website": "http://www.flexdeal.pt",
-    "zipcode": "4750-160"
-  },
-  "MLGEQ.PA": {
-    "city": "Lisbon",
-    "country": "Portugal",
-    "currency": "EUR",
-    "exchange": "PAR",
-    "industry": "Asset Management",
-    "long_name": "Gentlemen's Equity S.A.",
-    "market": "fr_market",
-    "market_cap": null,
-    "sector": "Financial Services",
-    "short_name": "GENTLEMENS EQUITY",
-    "state": null,
-    "summary": "Gentlemen's Equity S.A., an investment holding company, invests in e-commerce, energy and environment, sports and entertainment, and in luxury goods businesses in Europe. The company is headquartered in Lisbon, Portugal.",
-    "website": "http://www.gentlemensequity.com",
-    "zipcode": "1200-844"
-  }
+    "FLEXD.LS": {
+        "short_name": "FLEXDEAL",
+        "long_name": "Flexdeal Simfe S.A.",
+        "summary": "Flexdeal Simfe S.A. operates as an investment company. The company is based in Barcelos, Portugal. Flexdeal Simfe S.A. is a subsidiary of M\u00c3\u00a9todo Garantido Participa\u00c3\u00a7\u00c3\u00b5es, S.A.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "LIS",
+        "market": "pt_market",
+        "country": "Portugal",
+        "state": null,
+        "city": "Barcelos",
+        "zipcode": "4750-160",
+        "website": "http://www.flexdeal.pt",
+        "market_cap": "Nano Cap"
+    },
+    "MLGEQ.PA": {
+        "short_name": "GENTLEMENS EQUITY",
+        "long_name": "Gentlemen's Equity S.A.",
+        "summary": "Gentlemen's Equity S.A., an investment holding company, invests in e-commerce, energy and environment, sports and entertainment, and in luxury goods businesses in Europe. The company is headquartered in Lisbon, Portugal.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "PAR",
+        "market": "fr_market",
+        "country": "Portugal",
+        "state": null,
+        "city": "Lisbon",
+        "zipcode": "1200-844",
+        "website": "http://www.gentlemensequity.com",
+        "market_cap": null
+    }
 }

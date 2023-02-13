@@ -1,38 +1,38 @@
 {
-  "CADLAK=X": {
-    "currency": "LAK",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/LAK"
-  },
-  "CHFLAK=X": {
-    "currency": "LAK",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/LAK"
-  },
-  "EURLAK=X": {
-    "currency": "LAK",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/LAK"
-  },
-  "GBPLAK=X": {
-    "currency": "LAK",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/LAK"
-  },
-  "JPYLAK=X": {
-    "currency": "LAK",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/LAK"
-  },
-  "LAK=X": {
-    "currency": "LAK",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/LAK"
-  }
+    "CADLAK=X": {
+        "short_name": "CAD/LAK",
+        "currency": "LAK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFLAK=X": {
+        "short_name": "CHF/LAK",
+        "currency": "LAK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURLAK=X": {
+        "short_name": "EUR/LAK",
+        "currency": "LAK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPLAK=X": {
+        "short_name": "GBP/LAK",
+        "currency": "LAK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYLAK=X": {
+        "short_name": "JPY/LAK",
+        "currency": "LAK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "LAK=X": {
+        "short_name": "USD/LAK",
+        "currency": "LAK",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

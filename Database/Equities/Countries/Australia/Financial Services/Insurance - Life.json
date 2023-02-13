@@ -1,34 +1,34 @@
 {
-  "CGF.AX": {
-    "city": "Sydney",
-    "country": "Australia",
-    "currency": "AUD",
-    "exchange": "ASX",
-    "industry": "Insurance - Life",
-    "long_name": "Challenger Limited",
-    "market": "au_market",
-    "market_cap": "Mid Cap",
-    "sector": "Financial Services",
-    "short_name": "CHALLENGER FPO",
-    "state": "NSW",
-    "summary": "Challenger Limited is a publicly owned investment manager. The company also provides retirement services to its clients. It manages equity mutual funds. The firm invests into the public equity markets across the world. Challenger Limited was founded in 1985 and is based in Australia, Asia and United Kingdom.",
-    "website": "http://challenger.com.au",
-    "zipcode": "2000"
-  },
-  "GK9.F": {
-    "city": "Sydney",
-    "country": "Australia",
-    "currency": "EUR",
-    "exchange": "FRA",
-    "industry": "Insurance - Life",
-    "long_name": "Challenger Limited",
-    "market": "dr_market",
-    "market_cap": "Mid Cap",
-    "sector": "Financial Services",
-    "short_name": "CHALLENGER LTD.",
-    "state": "NSW",
-    "summary": "Challenger Limited is a publicly owned investment manager. The company also provides retirement services to its clients. It manages equity mutual funds. The firm invests into the public equity markets across the world. Challenger Limited was founded in 1985 and is based in Australia, Asia and United Kingdom.",
-    "website": "http://challenger.com.au",
-    "zipcode": "2000"
-  }
+    "CGF.AX": {
+        "short_name": "CHALLENGER FPO",
+        "long_name": "Challenger Limited",
+        "summary": "Challenger Limited is a publicly owned investment manager. The company also provides retirement services to its clients. It manages equity mutual funds. The firm invests into the public equity markets across the world. Challenger Limited was founded in 1985 and is based in Australia, Asia and United Kingdom.",
+        "currency": "AUD",
+        "sector": "Financial Services",
+        "industry": "Insurance - Life",
+        "exchange": "ASX",
+        "market": "au_market",
+        "country": "Australia",
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://challenger.com.au",
+        "market_cap": "Mid Cap"
+    },
+    "GK9.F": {
+        "short_name": "CHALLENGER LTD.",
+        "long_name": "Challenger Limited",
+        "summary": "Challenger Limited is a publicly owned investment manager. The company also provides retirement services to its clients. It manages equity mutual funds. The firm invests into the public equity markets across the world. Challenger Limited was founded in 1985 and is based in Australia, Asia and United Kingdom.",
+        "currency": "EUR",
+        "sector": "Financial Services",
+        "industry": "Insurance - Life",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Australia",
+        "state": "NSW",
+        "city": "Sydney",
+        "zipcode": "2000",
+        "website": "http://challenger.com.au",
+        "market_cap": "Mid Cap"
+    }
 }

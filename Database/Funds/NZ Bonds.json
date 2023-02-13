@@ -1,28 +1,28 @@
 {
-  "0P0001F1R5.NZ": {
-    "category": "NZ Bonds",
-    "currency": "NZD",
-    "exchange": "NZE",
-    "family": "Clarity Funds Management Limited",
-    "long_name": "Clarity Fixed Income Fund",
-    "manager_bio": "",
-    "manager_name": "",
-    "market": "nz_market",
-    "short_name": "Clarity Fixed Income Fund",
-    "summary": null,
-    "total_assets": 106419328.41643238
-  },
-  "0P0001HA7O.NZ": {
-    "category": "NZ Bonds",
-    "currency": "NZD",
-    "exchange": "NZE",
-    "family": "QuayStreet Asset Management Limited",
-    "long_name": "QuayStreet Fixed Interest Fund",
-    "manager_bio": "",
-    "manager_name": "",
-    "market": "nz_market",
-    "short_name": "QuayStreet Fixed Interest Fund",
-    "summary": "The Fund targets investment grade securities which are spread across multiple issuers, sectors, maturities and regions to provide an appropriate level of risk diversification. International investments are permitted and they are hedged back to NZ dollars.",
-    "total_assets": 193095202.31742096
-  }
+    "0P0001F1R5.NZ": {
+        "short_name": "Clarity Fixed Income Fund",
+        "long_name": "Clarity Fixed Income Fund",
+        "currency": "NZD",
+        "summary": null,
+        "manager_name": "",
+        "manager_bio": "",
+        "category": "NZ Bonds",
+        "family": "Clarity Funds Management Limited",
+        "exchange": "NZE",
+        "market": "nz_market",
+        "total_assets": 106419328.41643238
+    },
+    "0P0001HA7O.NZ": {
+        "short_name": "QuayStreet Fixed Interest Fund",
+        "long_name": "QuayStreet Fixed Interest Fund",
+        "currency": "NZD",
+        "summary": "The Fund targets investment grade securities which are spread across multiple issuers, sectors, maturities and regions to provide an appropriate level of risk diversification. International investments are permitted and they are hedged back to NZ dollars.",
+        "manager_name": "",
+        "manager_bio": "",
+        "category": "NZ Bonds",
+        "family": "QuayStreet Asset Management Limited",
+        "exchange": "NZE",
+        "market": "nz_market",
+        "total_assets": 193095202.31742096
+    }
 }

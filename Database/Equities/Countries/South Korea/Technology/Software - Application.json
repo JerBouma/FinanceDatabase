@@ -1,34 +1,34 @@
 {
-  "012510.KS": {
-    "city": "Chuncheon-si",
-    "country": "South Korea",
-    "currency": "KRW",
-    "exchange": "KSC",
-    "industry": "Software - Application",
-    "long_name": "Douzone Bizon Co., Ltd.",
-    "market": "kr_market",
-    "market_cap": "Mid Cap",
-    "sector": "Technology",
-    "short_name": "DOUZONE BIZON",
-    "state": null,
-    "summary": "Douzone Bizon Co., Ltd. provides ICT solutions and services in South Korea. Its products and services include accounting programs; ERP; cloud; groupware; information security; electronic tax invoices; electronic banking; mobile solutions; electronic fax; and education services. The company was founded in 1991 and is based in Chuncheon, South Korea.",
-    "website": "http://www.duzon.co.kr",
-    "zipcode": null
-  },
-  "IONI": {
-    "city": "Seoul",
-    "country": "South Korea",
-    "currency": "USD",
-    "exchange": "PNK",
-    "industry": "Software - Application",
-    "long_name": "I-ON Digital Corp.",
-    "market": "us_market",
-    "market_cap": "Nano Cap",
-    "sector": "Technology",
-    "short_name": "I-ON DIGITAL CORP",
-    "state": null,
-    "summary": "I-ON Digital Corp. engages in the development and supply of unstructured data management and digital marketing software and solutions in South Korea and Japan. It offers enterprise content management system and digital experience solutions, such as I-ON Content Server, I-ON Content Application Framework Engine, I-ON Deploy Server, I-ON Content Ecosystem, I-ON Digital Asset Management System, and I-ON Web Analytics Server; and sports and IT convergence service and solutions, including Ticket Advanced Marketing Management, a mobile business to business to consumer platform that integrates and manages the professional sports events, as well as VoiceBall, an amateur league umpire and data service. The company also provides software as a service solutions comprising GAIA, a distributed repository service; iDrive, an e-document management system; e.Form, a mobile contract platform; and Assist9, a mobile enterprise resource planning dashboard. In addition, it offers energy management solutions consisting of Load Aggregator's Management System, a demand response management solution designed to manage and reduce electricity consumption. The company was formerly known as I-ON Communications Corp. I-ON Digital Corp. was founded in 1999 and is headquartered in Seoul, South Korea.",
-    "website": "http://www.i-on.net",
-    "zipcode": "06234"
-  }
+    "012510.KS": {
+        "short_name": "DOUZONE BIZON",
+        "long_name": "Douzone Bizon Co., Ltd.",
+        "summary": "Douzone Bizon Co., Ltd. provides ICT solutions and services in South Korea. Its products and services include accounting programs; ERP; cloud; groupware; information security; electronic tax invoices; electronic banking; mobile solutions; electronic fax; and education services. The company was founded in 1991 and is based in Chuncheon, South Korea.",
+        "currency": "KRW",
+        "sector": "Technology",
+        "industry": "Software - Application",
+        "exchange": "KSC",
+        "market": "kr_market",
+        "country": "South Korea",
+        "state": null,
+        "city": "Chuncheon-si",
+        "zipcode": null,
+        "website": "http://www.duzon.co.kr",
+        "market_cap": "Mid Cap"
+    },
+    "IONI": {
+        "short_name": "I-ON DIGITAL CORP",
+        "long_name": "I-ON Digital Corp.",
+        "summary": "I-ON Digital Corp. engages in the development and supply of unstructured data management and digital marketing software and solutions in South Korea and Japan. It offers enterprise content management system and digital experience solutions, such as I-ON Content Server, I-ON Content Application Framework Engine, I-ON Deploy Server, I-ON Content Ecosystem, I-ON Digital Asset Management System, and I-ON Web Analytics Server; and sports and IT convergence service and solutions, including Ticket Advanced Marketing Management, a mobile business to business to consumer platform that integrates and manages the professional sports events, as well as VoiceBall, an amateur league umpire and data service. The company also provides software as a service solutions comprising GAIA, a distributed repository service; iDrive, an e-document management system; e.Form, a mobile contract platform; and Assist9, a mobile enterprise resource planning dashboard. In addition, it offers energy management solutions consisting of Load Aggregator's Management System, a demand response management solution designed to manage and reduce electricity consumption. The company was formerly known as I-ON Communications Corp. I-ON Digital Corp. was founded in 1999 and is headquartered in Seoul, South Korea.",
+        "currency": "USD",
+        "sector": "Technology",
+        "industry": "Software - Application",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "South Korea",
+        "state": null,
+        "city": "Seoul",
+        "zipcode": "06234",
+        "website": "http://www.i-on.net",
+        "market_cap": "Nano Cap"
+    }
 }

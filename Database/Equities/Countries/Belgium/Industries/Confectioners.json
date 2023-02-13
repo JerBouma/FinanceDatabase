@@ -1,34 +1,34 @@
 {
-  "CLEX.BR": {
-    "city": "Diegem",
-    "country": "Belgium",
-    "currency": "EUR",
-    "exchange": "BRU",
-    "industry": "Confectioners",
-    "long_name": "Cumulex N.V.",
-    "market": "be_market",
-    "market_cap": "Nano Cap",
-    "sector": "Consumer Defensive",
-    "short_name": "CUMULEX",
-    "state": null,
-    "summary": "Cumulex N.V. does not have significant operations. Previously, the company was engaged in sugar plantation business in the Democratic Republic of Congo. The company was formerly known as Sucrerie et Raffinerie de l'Afrique Centrale NV and changed its name to Cumulex N.V. in March 2021. Cumulex N.V. was founded in 1956 and is based in Diegem, Belgium. Cumulex N.V. is a subsidiary of Value8 NV.",
-    "website": "http://www.cumulex.be",
-    "zipcode": "1831"
-  },
-  "NEWT.BR": {
-    "city": "Brussels",
-    "country": "Belgium",
-    "currency": "EUR",
-    "exchange": "BRU",
-    "industry": "Confectioners",
-    "long_name": "Newtree S.A.",
-    "market": "be_market",
-    "market_cap": "Nano Cap",
-    "sector": "Consumer Defensive",
-    "short_name": "NEWTREE",
-    "state": null,
-    "summary": "Newtree S.A. produces and sells various chocolate products. The company offers chocolate bars, cookies, spreads, and snacks, as well as chocolate gift packs and boxes through online. It also operates chocolate cafÃ©s. The company was founded in 2001 and is based in Brussels, Belgium.",
-    "website": "http://www.newtree.com",
-    "zipcode": "1170"
-  }
+    "CLEX.BR": {
+        "short_name": "CUMULEX",
+        "long_name": "Cumulex N.V.",
+        "summary": "Cumulex N.V. does not have significant operations. Previously, the company was engaged in sugar plantation business in the Democratic Republic of Congo. The company was formerly known as Sucrerie et Raffinerie de l'Afrique Centrale NV and changed its name to Cumulex N.V. in March 2021. Cumulex N.V. was founded in 1956 and is based in Diegem, Belgium. Cumulex N.V. is a subsidiary of Value8 NV.",
+        "currency": "EUR",
+        "sector": "Consumer Defensive",
+        "industry": "Confectioners",
+        "exchange": "BRU",
+        "market": "be_market",
+        "country": "Belgium",
+        "state": null,
+        "city": "Diegem",
+        "zipcode": "1831",
+        "website": "http://www.cumulex.be",
+        "market_cap": "Nano Cap"
+    },
+    "NEWT.BR": {
+        "short_name": "NEWTREE",
+        "long_name": "Newtree S.A.",
+        "summary": "Newtree S.A. produces and sells various chocolate products. The company offers chocolate bars, cookies, spreads, and snacks, as well as chocolate gift packs and boxes through online. It also operates chocolate caf\u00c3\u00a9s. The company was founded in 2001 and is based in Brussels, Belgium.",
+        "currency": "EUR",
+        "sector": "Consumer Defensive",
+        "industry": "Confectioners",
+        "exchange": "BRU",
+        "market": "be_market",
+        "country": "Belgium",
+        "state": null,
+        "city": "Brussels",
+        "zipcode": "1170",
+        "website": "http://www.newtree.com",
+        "market_cap": "Nano Cap"
+    }
 }

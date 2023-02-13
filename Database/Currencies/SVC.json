@@ -1,44 +1,44 @@
 {
-  "AUDSVC=X": {
-    "currency": "SVC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "AUD/SVC"
-  },
-  "CADSVC=X": {
-    "currency": "SVC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/SVC"
-  },
-  "CHFSVC=X": {
-    "currency": "SVC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/SVC"
-  },
-  "EURSVC=X": {
-    "currency": "SVC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/SVC"
-  },
-  "GBPSVC=X": {
-    "currency": "SVC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/SVC"
-  },
-  "JPYSVC=X": {
-    "currency": "SVC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/SVC"
-  },
-  "SVC=X": {
-    "currency": "SVC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/SVC"
-  }
+    "AUDSVC=X": {
+        "short_name": "AUD/SVC",
+        "currency": "SVC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADSVC=X": {
+        "short_name": "CAD/SVC",
+        "currency": "SVC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFSVC=X": {
+        "short_name": "CHF/SVC",
+        "currency": "SVC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURSVC=X": {
+        "short_name": "EUR/SVC",
+        "currency": "SVC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPSVC=X": {
+        "short_name": "GBP/SVC",
+        "currency": "SVC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYSVC=X": {
+        "short_name": "JPY/SVC",
+        "currency": "SVC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SVC=X": {
+        "short_name": "USD/SVC",
+        "currency": "SVC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

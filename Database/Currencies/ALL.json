@@ -1,38 +1,38 @@
 {
-  "ALL=X": {
-    "currency": "ALL",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/ALL"
-  },
-  "CADALL=X": {
-    "currency": "ALL",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/ALL"
-  },
-  "CHFALL=X": {
-    "currency": "ALL",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/ALL"
-  },
-  "EURALL=X": {
-    "currency": "ALL",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/ALL"
-  },
-  "GBPALL=X": {
-    "currency": "ALL",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/ALL"
-  },
-  "JPYALL=X": {
-    "currency": "ALL",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/ALL"
-  }
+    "ALL=X": {
+        "short_name": "USD/ALL",
+        "currency": "ALL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADALL=X": {
+        "short_name": "CAD/ALL",
+        "currency": "ALL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFALL=X": {
+        "short_name": "CHF/ALL",
+        "currency": "ALL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURALL=X": {
+        "short_name": "EUR/ALL",
+        "currency": "ALL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPALL=X": {
+        "short_name": "GBP/ALL",
+        "currency": "ALL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYALL=X": {
+        "short_name": "JPY/ALL",
+        "currency": "ALL",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

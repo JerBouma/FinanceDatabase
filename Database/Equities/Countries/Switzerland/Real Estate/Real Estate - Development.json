@@ -1,34 +1,34 @@
 {
-  "SFPN.SW": {
-    "city": "Zurich",
-    "country": "Switzerland",
-    "currency": "CHF",
-    "exchange": "EBS",
-    "industry": "Real Estate - Development",
-    "long_name": "SF Urban Properties AG",
-    "market": "ch_market",
-    "market_cap": "Small Cap",
-    "sector": "Real Estate",
-    "short_name": "SF Urban Properties N",
-    "state": null,
-    "summary": "SF Urban Properties AG operates as a real estate company in Switzerland. The company is involved in the development and management of existing real estate portfolio; and acquisition of new properties. It invests in commercial, residential, and development properties. The company was formerly known as Swiss Finance & Property Investment AG and changed its name to SF Urban Properties AG in April 2019. SF Urban Properties AG is based in Zurich, Switzerland.",
-    "website": "http://www.sfp.ch",
-    "zipcode": "8008"
-  },
-  "VARN.SW": {
-    "city": "Zug",
-    "country": "Switzerland",
-    "currency": "CHF",
-    "exchange": "EBS",
-    "industry": "Real Estate - Development",
-    "long_name": "Varia US Properties AG",
-    "market": "ch_market",
-    "market_cap": "Small Cap",
-    "sector": "Real Estate",
-    "short_name": "VARIA US PROPERTIES N",
-    "state": null,
-    "summary": "Varia US Properties AG, a real estate investment company, acquires, holds, and sells properties in the United States. The company invests in low-moderate income and workforce multifamily housing properties. Varia US Properties AG was founded in 2015 and is based in Zug, Switzerland.",
-    "website": "http://variausproperties.com",
-    "zipcode": "6300"
-  }
+    "SFPN.SW": {
+        "short_name": "SF Urban Properties N",
+        "long_name": "SF Urban Properties AG",
+        "summary": "SF Urban Properties AG operates as a real estate company in Switzerland. The company is involved in the development and management of existing real estate portfolio; and acquisition of new properties. It invests in commercial, residential, and development properties. The company was formerly known as Swiss Finance & Property Investment AG and changed its name to SF Urban Properties AG in April 2019. SF Urban Properties AG is based in Zurich, Switzerland.",
+        "currency": "CHF",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "state": null,
+        "city": "Zurich",
+        "zipcode": "8008",
+        "website": "http://www.sfp.ch",
+        "market_cap": "Small Cap"
+    },
+    "VARN.SW": {
+        "short_name": "VARIA US PROPERTIES N",
+        "long_name": "Varia US Properties AG",
+        "summary": "Varia US Properties AG, a real estate investment company, acquires, holds, and sells properties in the United States. The company invests in low-moderate income and workforce multifamily housing properties. Varia US Properties AG was founded in 2015 and is based in Zug, Switzerland.",
+        "currency": "CHF",
+        "sector": "Real Estate",
+        "industry": "Real Estate - Development",
+        "exchange": "EBS",
+        "market": "ch_market",
+        "country": "Switzerland",
+        "state": null,
+        "city": "Zug",
+        "zipcode": "6300",
+        "website": "http://variausproperties.com",
+        "market_cap": "Small Cap"
+    }
 }

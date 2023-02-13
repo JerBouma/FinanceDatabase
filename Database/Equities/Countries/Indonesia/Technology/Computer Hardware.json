@@ -1,34 +1,34 @@
 {
-  "LUCK.JK": {
-    "city": "Jakarta Selatan",
-    "country": "Indonesia",
-    "currency": "IDR",
-    "exchange": "JKT",
-    "industry": "Computer Hardware",
-    "long_name": "PT Sentral Mitra Informatika Tbk",
-    "market": "id_market",
-    "market_cap": "Nano Cap",
-    "sector": "Technology",
-    "short_name": "Sentral Mitra Informatika Tbk.",
-    "state": null,
-    "summary": "PT Sentral Mitra Informatika Tbk provides hardware, software solutions, and services in Indonesia. The company operates through two segments, Trading and Rentals. It sells electronic items; and provides printer rental, click, and other services. The company was founded in 2008 and is based in Jakarta Selatan, Indonesia.",
-    "website": "http://www.sentral.co.id",
-    "zipcode": "12150"
-  },
-  "ZYRX.JK": {
-    "city": "Jakarta Barat",
-    "country": "Indonesia",
-    "currency": "IDR",
-    "exchange": "JKT",
-    "industry": "Computer Hardware",
-    "long_name": "PT Zyrexindo Mandiri Buana Tbk",
-    "market": "id_market",
-    "market_cap": null,
-    "sector": "Technology",
-    "short_name": "Zyrexindo Mandiri Buana Tbk.",
-    "state": null,
-    "summary": "PT Zyrexindo Mandiri Buana Tbk engages in the production, assembly, and marketing of mobile and computer related products in Indonesia. The company offers IT products, such as desktop and min PCs, and servers, as well as POS, kiosks, and digital signage products; and mobile computing devices, such as laptops, smartphones, feature phones, and tablet PCs. It also retails electronic products. The company was founded in 1996 and is based in Jakarta, Indonesia.",
-    "website": "http://zyrex.com",
-    "zipcode": "11470"
-  }
+    "LUCK.JK": {
+        "short_name": "Sentral Mitra Informatika Tbk.",
+        "long_name": "PT Sentral Mitra Informatika Tbk",
+        "summary": "PT Sentral Mitra Informatika Tbk provides hardware, software solutions, and services in Indonesia. The company operates through two segments, Trading and Rentals. It sells electronic items; and provides printer rental, click, and other services. The company was founded in 2008 and is based in Jakarta Selatan, Indonesia.",
+        "currency": "IDR",
+        "sector": "Technology",
+        "industry": "Computer Hardware",
+        "exchange": "JKT",
+        "market": "id_market",
+        "country": "Indonesia",
+        "state": null,
+        "city": "Jakarta Selatan",
+        "zipcode": "12150",
+        "website": "http://www.sentral.co.id",
+        "market_cap": "Nano Cap"
+    },
+    "ZYRX.JK": {
+        "short_name": "Zyrexindo Mandiri Buana Tbk.",
+        "long_name": "PT Zyrexindo Mandiri Buana Tbk",
+        "summary": "PT Zyrexindo Mandiri Buana Tbk engages in the production, assembly, and marketing of mobile and computer related products in Indonesia. The company offers IT products, such as desktop and min PCs, and servers, as well as POS, kiosks, and digital signage products; and mobile computing devices, such as laptops, smartphones, feature phones, and tablet PCs. It also retails electronic products. The company was founded in 1996 and is based in Jakarta, Indonesia.",
+        "currency": "IDR",
+        "sector": "Technology",
+        "industry": "Computer Hardware",
+        "exchange": "JKT",
+        "market": "id_market",
+        "country": "Indonesia",
+        "state": null,
+        "city": "Jakarta Barat",
+        "zipcode": "11470",
+        "website": "http://zyrex.com",
+        "market_cap": null
+    }
 }

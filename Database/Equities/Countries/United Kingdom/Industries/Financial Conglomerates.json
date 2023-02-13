@@ -1,34 +1,34 @@
 {
-  "STJ.L": {
-    "city": "Cirencester",
-    "country": "United Kingdom",
-    "currency": "GBp",
-    "exchange": "LSE",
-    "industry": "Financial Conglomerates",
-    "long_name": "St. James's Place plc",
-    "market": "gb_market",
-    "market_cap": null,
-    "sector": "Financial Services",
-    "short_name": "ST. JAMES'S PLACE PLC ORD 15P",
-    "state": null,
-    "summary": "St. James's Place plc is a publicly owned investment manager. The firm launches and manages equity, fixed income, and balanced mutual funds for its clients. It invests in public equity and fixed income market across the globe. The firm was formerly known as St. James's Place Capital plc. St. James's Place plc was founded in 1991 and is based in Cirencester, United Kingdom.",
-    "website": "http://www.sjp.co.uk",
-    "zipcode": "GL7 1FP"
-  },
-  "STJPF": {
-    "city": "Cirencester",
-    "country": "United Kingdom",
-    "currency": "USD",
-    "exchange": "PNK",
-    "industry": "Financial Conglomerates",
-    "long_name": "St. James's Place plc",
-    "market": "us_market",
-    "market_cap": "Large Cap",
-    "sector": "Financial Services",
-    "short_name": "ST JAMES'S PLACE",
-    "state": null,
-    "summary": "St. James's Place plc is a publicly owned investment manager. The firm launches and manages equity, fixed income, and balanced mutual funds for its clients. It invests in public equity and fixed income market across the globe. The firm was formerly known as St. James's Place Capital plc. St. James's Place plc was founded in 1991 and is based in Cirencester, United Kingdom.",
-    "website": "http://www.sjp.co.uk",
-    "zipcode": "GL7 1FP"
-  }
+    "STJ.L": {
+        "short_name": "ST. JAMES'S PLACE PLC ORD 15P",
+        "long_name": "St. James's Place plc",
+        "summary": "St. James's Place plc is a publicly owned investment manager. The firm launches and manages equity, fixed income, and balanced mutual funds for its clients. It invests in public equity and fixed income market across the globe. The firm was formerly known as St. James's Place Capital plc. St. James's Place plc was founded in 1991 and is based in Cirencester, United Kingdom.",
+        "currency": "GBp",
+        "sector": "Financial Services",
+        "industry": "Financial Conglomerates",
+        "exchange": "LSE",
+        "market": "gb_market",
+        "country": "United Kingdom",
+        "state": null,
+        "city": "Cirencester",
+        "zipcode": "GL7 1FP",
+        "website": "http://www.sjp.co.uk",
+        "market_cap": null
+    },
+    "STJPF": {
+        "short_name": "ST JAMES'S PLACE",
+        "long_name": "St. James's Place plc",
+        "summary": "St. James's Place plc is a publicly owned investment manager. The firm launches and manages equity, fixed income, and balanced mutual funds for its clients. It invests in public equity and fixed income market across the globe. The firm was formerly known as St. James's Place Capital plc. St. James's Place plc was founded in 1991 and is based in Cirencester, United Kingdom.",
+        "currency": "USD",
+        "sector": "Financial Services",
+        "industry": "Financial Conglomerates",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "United Kingdom",
+        "state": null,
+        "city": "Cirencester",
+        "zipcode": "GL7 1FP",
+        "website": "http://www.sjp.co.uk",
+        "market_cap": "Large Cap"
+    }
 }

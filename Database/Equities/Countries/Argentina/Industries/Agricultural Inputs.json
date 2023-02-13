@@ -1,34 +1,34 @@
 {
-  "BIOX.BA": {
-    "city": "Rosario",
-    "country": "Argentina",
-    "currency": "ARS",
-    "exchange": "BUE",
-    "industry": "Agricultural Inputs",
-    "long_name": "Bioceres Crop Solutions Corp.",
-    "market": "ar_market",
-    "market_cap": null,
-    "sector": "Basic Materials",
-    "short_name": "BIOCERES CROP SOLU",
-    "state": null,
-    "summary": "Bioceres Crop Solutions Corp., together with its subsidiaries, provides crop productivity solutions. The company operates through three segments: Seed and Integrated Products, Crop Protection, and Crop Nutrition. The Seed and Integrated Products segment develops and commercializes seed technology, biotechnological events, germplasm, and seed treatments. The Crop Protection segment develops, produces, and markets adjuvants, insecticides, fungicides, and baits. The Crop Nutrition segment develops, produces, commercializes, and sells inoculants, bio-inductors, and biological and microgranulated fertilizers. In addition, the company offers HB4, a drought tolerant seed technology program. It operates in Argentina, Austria, Bolivia, Brazil, Lebanon, the United States, Italy, Paraguay, the United Kingdom, South Africa, France, Canada, Ukraine, Uruguay, and internationally. The company is headquartered in Rosario, Argentina. Bioceres Crop Solutions Corp. is a subsidiary of Bioceres LLC.",
-    "website": "http://biocerescrops.com",
-    "zipcode": "2000"
-  },
-  "INAG.BA": {
-    "city": "Buenos Aires",
-    "country": "Argentina",
-    "currency": "ARS",
-    "exchange": "BUE",
-    "industry": "Agricultural Inputs",
-    "long_name": "Insumos Agroquímicos S.A.",
-    "market": "ar_market",
-    "market_cap": "Micro Cap",
-    "sector": "Basic Materials",
-    "short_name": "INSUMOS AGROQUIMIC",
-    "state": null,
-    "summary": "Insumos AgroquÃ­micos S.A. engages in the sale and distribution of agrochemicals in Argentina. It offers adjuvants, fungicides, herbicides, insecticides, and growth regulators. The company was founded in 2002 and is based in Buenos Aires, Argentina.",
-    "website": "http://www.insuagro.com.ar",
-    "zipcode": "1060"
-  }
+    "BIOX.BA": {
+        "short_name": "BIOCERES CROP SOLU",
+        "long_name": "Bioceres Crop Solutions Corp.",
+        "summary": "Bioceres Crop Solutions Corp., together with its subsidiaries, provides crop productivity solutions. The company operates through three segments: Seed and Integrated Products, Crop Protection, and Crop Nutrition. The Seed and Integrated Products segment develops and commercializes seed technology, biotechnological events, germplasm, and seed treatments. The Crop Protection segment develops, produces, and markets adjuvants, insecticides, fungicides, and baits. The Crop Nutrition segment develops, produces, commercializes, and sells inoculants, bio-inductors, and biological and microgranulated fertilizers. In addition, the company offers HB4, a drought tolerant seed technology program. It operates in Argentina, Austria, Bolivia, Brazil, Lebanon, the United States, Italy, Paraguay, the United Kingdom, South Africa, France, Canada, Ukraine, Uruguay, and internationally. The company is headquartered in Rosario, Argentina. Bioceres Crop Solutions Corp. is a subsidiary of Bioceres LLC.",
+        "currency": "ARS",
+        "sector": "Basic Materials",
+        "industry": "Agricultural Inputs",
+        "exchange": "BUE",
+        "market": "ar_market",
+        "country": "Argentina",
+        "state": null,
+        "city": "Rosario",
+        "zipcode": "2000",
+        "website": "http://biocerescrops.com",
+        "market_cap": null
+    },
+    "INAG.BA": {
+        "short_name": "INSUMOS AGROQUIMIC",
+        "long_name": "Insumos Agroqu\u00edmicos S.A.",
+        "summary": "Insumos Agroqu\u00c3\u00admicos S.A. engages in the sale and distribution of agrochemicals in Argentina. It offers adjuvants, fungicides, herbicides, insecticides, and growth regulators. The company was founded in 2002 and is based in Buenos Aires, Argentina.",
+        "currency": "ARS",
+        "sector": "Basic Materials",
+        "industry": "Agricultural Inputs",
+        "exchange": "BUE",
+        "market": "ar_market",
+        "country": "Argentina",
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "1060",
+        "website": "http://www.insuagro.com.ar",
+        "market_cap": "Micro Cap"
+    }
 }

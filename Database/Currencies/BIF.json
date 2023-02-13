@@ -1,38 +1,38 @@
 {
-  "BIF=X": {
-    "currency": "BIF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/BIF"
-  },
-  "CADBIF=X": {
-    "currency": "BIF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/BIF"
-  },
-  "CHFBIF=X": {
-    "currency": "BIF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/BIF"
-  },
-  "EURBIF=X": {
-    "currency": "BIF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/BIF"
-  },
-  "GBPBIF=X": {
-    "currency": "BIF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/BIF"
-  },
-  "JPYBIF=X": {
-    "currency": "BIF",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/BIF"
-  }
+    "BIF=X": {
+        "short_name": "USD/BIF",
+        "currency": "BIF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADBIF=X": {
+        "short_name": "CAD/BIF",
+        "currency": "BIF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFBIF=X": {
+        "short_name": "CHF/BIF",
+        "currency": "BIF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURBIF=X": {
+        "short_name": "EUR/BIF",
+        "currency": "BIF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPBIF=X": {
+        "short_name": "GBP/BIF",
+        "currency": "BIF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYBIF=X": {
+        "short_name": "JPY/BIF",
+        "currency": "BIF",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

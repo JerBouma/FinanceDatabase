@@ -1,38 +1,38 @@
 {
-  "CADPAB=X": {
-    "currency": "PAB",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/PAB"
-  },
-  "CHFPAB=X": {
-    "currency": "PAB",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/PAB"
-  },
-  "EURPAB=X": {
-    "currency": "PAB",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/PAB"
-  },
-  "GBPPAB=X": {
-    "currency": "PAB",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/PAB"
-  },
-  "JPYPAB=X": {
-    "currency": "PAB",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/PAB"
-  },
-  "PAB=X": {
-    "currency": "PAB",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/PAB"
-  }
+    "CADPAB=X": {
+        "short_name": "CAD/PAB",
+        "currency": "PAB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFPAB=X": {
+        "short_name": "CHF/PAB",
+        "currency": "PAB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURPAB=X": {
+        "short_name": "EUR/PAB",
+        "currency": "PAB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPPAB=X": {
+        "short_name": "GBP/PAB",
+        "currency": "PAB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYPAB=X": {
+        "short_name": "JPY/PAB",
+        "currency": "PAB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "PAB=X": {
+        "short_name": "USD/PAB",
+        "currency": "PAB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

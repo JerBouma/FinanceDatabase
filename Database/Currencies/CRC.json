@@ -1,50 +1,50 @@
 {
-  "AUDCRC=X": {
-    "currency": "CRC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "AUD/CRC"
-  },
-  "CADCRC=X": {
-    "currency": "CRC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/CRC"
-  },
-  "CHFCRC=X": {
-    "currency": "CRC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/CRC"
-  },
-  "CRC=X": {
-    "currency": "CRC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/CRC"
-  },
-  "EURCRC=X": {
-    "currency": "CRC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/CRC"
-  },
-  "GBPCRC=X": {
-    "currency": "CRC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/CRC"
-  },
-  "JPYCRC=X": {
-    "currency": "CRC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/CRC"
-  },
-  "KRWCRC=X": {
-    "currency": "CRC",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "KRW/CRC"
-  }
+    "AUDCRC=X": {
+        "short_name": "AUD/CRC",
+        "currency": "CRC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADCRC=X": {
+        "short_name": "CAD/CRC",
+        "currency": "CRC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFCRC=X": {
+        "short_name": "CHF/CRC",
+        "currency": "CRC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CRC=X": {
+        "short_name": "USD/CRC",
+        "currency": "CRC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURCRC=X": {
+        "short_name": "EUR/CRC",
+        "currency": "CRC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPCRC=X": {
+        "short_name": "GBP/CRC",
+        "currency": "CRC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYCRC=X": {
+        "short_name": "JPY/CRC",
+        "currency": "CRC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "KRWCRC=X": {
+        "short_name": "KRW/CRC",
+        "currency": "CRC",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

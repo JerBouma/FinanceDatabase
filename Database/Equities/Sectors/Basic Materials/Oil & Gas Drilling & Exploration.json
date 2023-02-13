@@ -1,34 +1,34 @@
 {
-  "RIGN.MX": {
-    "city": "Steinhausen",
-    "country": "Switzerland",
-    "currency": "MXN",
-    "exchange": "MEX",
-    "industry": "Oil & Gas Drilling & Exploration",
-    "long_name": "Transocean Ltd.",
-    "market": "mx_market",
-    "market_cap": "Mid Cap",
-    "sector": "Basic Materials",
-    "short_name": "TRANSOCEAN LIMITED",
-    "state": null,
-    "summary": "Transocean Ltd., together with its subsidiaries, provides offshore contract drilling services for oil and gas wells worldwide. It contracts its drilling rigs, related equipment, and work crews to drill oil and gas wells. As of February 22, 2021, the company owned or had partial ownership interests in and operated a fleet of 37 mobile offshore drilling units, including 27 ultra-deepwater and 10 harsh environment floaters. It serves integrated oil companies, government-owned or government-controlled oil companies, and other independent oil companies. The company was founded in 1926 and is based in Steinhausen, Switzerland.",
-    "website": "http://www.deepwater.com",
-    "zipcode": "6312"
-  },
-  "WNWG": {
-    "city": "Palestine",
-    "country": "United States",
-    "currency": "USD",
-    "exchange": "PNK",
-    "industry": "Oil & Gas Drilling & Exploration",
-    "long_name": "Wentworth Energy, Inc.",
-    "market": "us_market",
-    "market_cap": "Nano Cap",
-    "sector": "Basic Materials",
-    "short_name": "WENTWORTH ENERGY INC",
-    "state": "TX",
-    "summary": "Wentworth Energy, Inc. provides energy solutions for large and small companies, and personal use. Its solutions cover gas and electricity. The company is based in Palestine, Texas.",
-    "website": "http://www.wentworthenergy.com",
-    "zipcode": "75801"
-  }
+    "RIGN.MX": {
+        "short_name": "TRANSOCEAN LIMITED",
+        "long_name": "Transocean Ltd.",
+        "summary": "Transocean Ltd., together with its subsidiaries, provides offshore contract drilling services for oil and gas wells worldwide. It contracts its drilling rigs, related equipment, and work crews to drill oil and gas wells. As of February 22, 2021, the company owned or had partial ownership interests in and operated a fleet of 37 mobile offshore drilling units, including 27 ultra-deepwater and 10 harsh environment floaters. It serves integrated oil companies, government-owned or government-controlled oil companies, and other independent oil companies. The company was founded in 1926 and is based in Steinhausen, Switzerland.",
+        "currency": "MXN",
+        "sector": "Basic Materials",
+        "industry": "Oil & Gas Drilling & Exploration",
+        "exchange": "MEX",
+        "market": "mx_market",
+        "country": "Switzerland",
+        "state": null,
+        "city": "Steinhausen",
+        "zipcode": "6312",
+        "website": "http://www.deepwater.com",
+        "market_cap": "Mid Cap"
+    },
+    "WNWG": {
+        "short_name": "WENTWORTH ENERGY INC",
+        "long_name": "Wentworth Energy, Inc.",
+        "summary": "Wentworth Energy, Inc. provides energy solutions for large and small companies, and personal use. Its solutions cover gas and electricity. The company is based in Palestine, Texas.",
+        "currency": "USD",
+        "sector": "Basic Materials",
+        "industry": "Oil & Gas Drilling & Exploration",
+        "exchange": "PNK",
+        "market": "us_market",
+        "country": "United States",
+        "state": "TX",
+        "city": "Palestine",
+        "zipcode": "75801",
+        "website": "http://www.wentworthenergy.com",
+        "market_cap": "Nano Cap"
+    }
 }

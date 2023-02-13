@@ -1,44 +1,44 @@
 {
-  "AUDBSD=X": {
-    "currency": "BSD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "AUD/BSD"
-  },
-  "BSD=X": {
-    "currency": "BSD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/BSD"
-  },
-  "CADBSD=X": {
-    "currency": "BSD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/BSD"
-  },
-  "CHFBSD=X": {
-    "currency": "BSD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/BSD"
-  },
-  "EURBSD=X": {
-    "currency": "BSD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/BSD"
-  },
-  "GBPBSD=X": {
-    "currency": "BSD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/BSD"
-  },
-  "JPYBSD=X": {
-    "currency": "BSD",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/BSD"
-  }
+    "AUDBSD=X": {
+        "short_name": "AUD/BSD",
+        "currency": "BSD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BSD=X": {
+        "short_name": "USD/BSD",
+        "currency": "BSD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADBSD=X": {
+        "short_name": "CAD/BSD",
+        "currency": "BSD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFBSD=X": {
+        "short_name": "CHF/BSD",
+        "currency": "BSD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURBSD=X": {
+        "short_name": "EUR/BSD",
+        "currency": "BSD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPBSD=X": {
+        "short_name": "GBP/BSD",
+        "currency": "BSD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYBSD=X": {
+        "short_name": "JPY/BSD",
+        "currency": "BSD",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

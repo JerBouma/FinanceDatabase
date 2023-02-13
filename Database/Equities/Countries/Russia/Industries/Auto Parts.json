@@ -1,34 +1,34 @@
 {
-  "NKSH.ME": {
-    "city": "Almetyevsk",
-    "country": "Russia",
-    "currency": "RUB",
-    "exchange": "MCX",
-    "industry": "Auto Parts",
-    "long_name": "PJSC Nizhnekamskshina",
-    "market": "ru_market",
-    "market_cap": "Nano Cap",
-    "sector": "Consumer Cyclical",
-    "short_name": "NIZHNEKAMSKSHINA C",
-    "state": null,
-    "summary": "PJSC Nizhnekamskshina manufactures and distributes tires in Russian and CIS countries. It offers tires for passenger and light trucks under the KAMA and Viatti brand names. The company was founded in 1971 and is based in Almetyevsk, Russia. PJSC Nizhnekamskshina is a subsidiary of OOO Tatneft-Neftekhim Management Company.",
-    "website": "http://shinakama.tatneft.ru",
-    "zipcode": "423400"
-  },
-  "ZVEZ.ME": {
-    "city": "Saint Petersburg",
-    "country": "Russia",
-    "currency": "RUB",
-    "exchange": "MCX",
-    "industry": "Auto Parts",
-    "long_name": "Public Joint Stock Company Zvezda",
-    "market": "ru_market",
-    "market_cap": "Nano Cap",
-    "sector": "Consumer Cyclical",
-    "short_name": "ZVEZDA PJSC",
-    "state": null,
-    "summary": "Public Joint Stock Company Zvezda develops, manufactures, and sells diesel engines for shipbuilding, rail transport, diesel generators, and industrial units in Russia. It offers high-speed diesel engines and units, ship-reduction and reverse-reduction transmissions, ship and industrial diesel generators, emergency-reserve power plants, and energy equipment for marine equipment, as well as heavy ship gearboxes. The company also provides master-mounting, start-up, maintenance, spare part, repair, training, and consultation services related to its diesel engines; and aluminum casting and mechanical processing services. Public Joint Stock Company Zvezda was founded in 1932 and is based in Saint Petersburg, Russia.",
-    "website": "http://www.zvezda.spb.ru",
-    "zipcode": "192012"
-  }
+    "NKSH.ME": {
+        "short_name": "NIZHNEKAMSKSHINA C",
+        "long_name": "PJSC Nizhnekamskshina",
+        "summary": "PJSC Nizhnekamskshina manufactures and distributes tires in Russian and CIS countries. It offers tires for passenger and light trucks under the KAMA and Viatti brand names. The company was founded in 1971 and is based in Almetyevsk, Russia. PJSC Nizhnekamskshina is a subsidiary of OOO Tatneft-Neftekhim Management Company.",
+        "currency": "RUB",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "MCX",
+        "market": "ru_market",
+        "country": "Russia",
+        "state": null,
+        "city": "Almetyevsk",
+        "zipcode": "423400",
+        "website": "http://shinakama.tatneft.ru",
+        "market_cap": "Nano Cap"
+    },
+    "ZVEZ.ME": {
+        "short_name": "ZVEZDA PJSC",
+        "long_name": "Public Joint Stock Company Zvezda",
+        "summary": "Public Joint Stock Company Zvezda develops, manufactures, and sells diesel engines for shipbuilding, rail transport, diesel generators, and industrial units in Russia. It offers high-speed diesel engines and units, ship-reduction and reverse-reduction transmissions, ship and industrial diesel generators, emergency-reserve power plants, and energy equipment for marine equipment, as well as heavy ship gearboxes. The company also provides master-mounting, start-up, maintenance, spare part, repair, training, and consultation services related to its diesel engines; and aluminum casting and mechanical processing services. Public Joint Stock Company Zvezda was founded in 1932 and is based in Saint Petersburg, Russia.",
+        "currency": "RUB",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Parts",
+        "exchange": "MCX",
+        "market": "ru_market",
+        "country": "Russia",
+        "state": null,
+        "city": "Saint Petersburg",
+        "zipcode": "192012",
+        "website": "http://www.zvezda.spb.ru",
+        "market_cap": "Nano Cap"
+    }
 }

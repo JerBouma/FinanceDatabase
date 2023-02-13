@@ -1,34 +1,34 @@
 {
-  "3709.TWO": {
-    "city": "Taipei",
-    "country": "Taiwan",
-    "currency": "TWD",
-    "exchange": "TWO",
-    "industry": "Asset Management",
-    "long_name": "Trigold Holdings Limited",
-    "market": "tw_market",
-    "market_cap": "Micro Cap",
-    "sector": "Financial Services",
-    "short_name": "TRIGOLD HOLDINGS LTD",
-    "state": null,
-    "summary": "Trigold Holdings Limited, through its subsidiaries, sells computers and its peripherals in Taiwan and Mainland China. It also operates B2C and O2O businesses, and amusement parks. The company was founded in 1988 and is based in Taipei, Taiwan. Trigold Holdings Limited is a subsidiary of WPG Holdings Limited.",
-    "website": "http://www.trigoldholdings.com",
-    "zipcode": "115"
-  },
-  "BLS.SI": {
-    "city": "Taipei",
-    "country": "Taiwan",
-    "currency": "SGD",
-    "exchange": "SES",
-    "industry": "Asset Management",
-    "long_name": "Hotung Investment Holdings Limited",
-    "market": "sg_market",
-    "market_cap": "Micro Cap",
-    "sector": "Financial Services",
-    "short_name": "Hotung Inv",
-    "state": null,
-    "summary": "Hotung Investment Holdings Limited, an investment holding company, engages in the venture capital business in Taiwan, China, and internationally. It invests in listed, over the counter, and unlisted companies. The company also provides consultancy services, as well as manages third party funds. Hotung Investment Holdings Limited was incorporated in 1997 and is based in Taipei, Taiwan.",
-    "website": "http://www.hihl.com.sg",
-    "zipcode": "10483"
-  }
+    "3709.TWO": {
+        "short_name": "TRIGOLD HOLDINGS LTD",
+        "long_name": "Trigold Holdings Limited",
+        "summary": "Trigold Holdings Limited, through its subsidiaries, sells computers and its peripherals in Taiwan and Mainland China. It also operates B2C and O2O businesses, and amusement parks. The company was founded in 1988 and is based in Taipei, Taiwan. Trigold Holdings Limited is a subsidiary of WPG Holdings Limited.",
+        "currency": "TWD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "TWO",
+        "market": "tw_market",
+        "country": "Taiwan",
+        "state": null,
+        "city": "Taipei",
+        "zipcode": "115",
+        "website": "http://www.trigoldholdings.com",
+        "market_cap": "Micro Cap"
+    },
+    "BLS.SI": {
+        "short_name": "Hotung Inv",
+        "long_name": "Hotung Investment Holdings Limited",
+        "summary": "Hotung Investment Holdings Limited, an investment holding company, engages in the venture capital business in Taiwan, China, and internationally. It invests in listed, over the counter, and unlisted companies. The company also provides consultancy services, as well as manages third party funds. Hotung Investment Holdings Limited was incorporated in 1997 and is based in Taipei, Taiwan.",
+        "currency": "SGD",
+        "sector": "Financial Services",
+        "industry": "Asset Management",
+        "exchange": "SES",
+        "market": "sg_market",
+        "country": "Taiwan",
+        "state": null,
+        "city": "Taipei",
+        "zipcode": "10483",
+        "website": "http://www.hihl.com.sg",
+        "market_cap": "Micro Cap"
+    }
 }

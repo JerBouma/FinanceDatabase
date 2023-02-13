@@ -1,34 +1,34 @@
 {
-  "IRES.F": {
-    "city": "Dublin",
-    "country": "Ireland",
-    "currency": "EUR",
-    "exchange": "FRA",
-    "industry": "REIT - Residential",
-    "long_name": "Irish Residential Properties REIT Plc",
-    "market": "dr_market",
-    "market_cap": "Small Cap",
-    "sector": "Real Estate",
-    "short_name": "IRISH RES.PPTYS REIT",
-    "state": null,
-    "summary": "Irish Residential Properties REIT Plc (ÂIÂRESÂ registration # 529737) is an Irish REIT focused on consolidating the fragmented Irish rental market by targeting quality multi-unit residential real estate in Dublin and other major centres. IÂRES is externally managed by certain subsidiaries of CAPREIT (TSX:CAR.UN). Through its arrangements with CAPREIT, IÂRES's operational strategy is to deliver superior customer service, enhance tenant retention, and deliver quality homes by leveraging CAPREIT's hands-on experience, and proven operating philosophies. IÂRES was listed on the Irish Stock Exchange (now Euronext Dublin) in April 2014.",
-    "website": "http://www.iresreit.ie",
-    "zipcode": "2"
-  },
-  "IRES.IR": {
-    "city": "Dublin",
-    "country": "Ireland",
-    "currency": "EUR",
-    "exchange": "ISE",
-    "industry": "REIT - Residential",
-    "long_name": "Irish Residential Properties REIT Plc",
-    "market": "ie_market",
-    "market_cap": "Small Cap",
-    "sector": "Real Estate",
-    "short_name": "IRISH RES. PROP.",
-    "state": null,
-    "summary": "Irish Residential Properties REIT Plc (ÂIÂRESÂ registration # 529737) is an Irish REIT focused on consolidating the fragmented Irish rental market by targeting quality multi-unit residential real estate in Dublin and other major centres. IÂRES is externally managed by certain subsidiaries of CAPREIT (TSX:CAR.UN). Through its arrangements with CAPREIT, IÂRES's operational strategy is to deliver superior customer service, enhance tenant retention, and deliver quality homes by leveraging CAPREIT's hands-on experience, and proven operating philosophies. IÂRES was listed on the Irish Stock Exchange (now Euronext Dublin) in April 2014.",
-    "website": "http://www.iresreit.ie",
-    "zipcode": "2"
-  }
+    "IRES.F": {
+        "short_name": "IRISH RES.PPTYS REIT",
+        "long_name": "Irish Residential Properties REIT Plc",
+        "summary": "Irish Residential Properties REIT Plc (\u00c2\u0093I\u00c2\u0095RES\u00c2\u0094 registration # 529737) is an Irish REIT focused on consolidating the fragmented Irish rental market by targeting quality multi-unit residential real estate in Dublin and other major centres. I\u00c2\u0095RES is externally managed by certain subsidiaries of CAPREIT (TSX:CAR.UN). Through its arrangements with CAPREIT, I\u00c2\u0095RES's operational strategy is to deliver superior customer service, enhance tenant retention, and deliver quality homes by leveraging CAPREIT's hands-on experience, and proven operating philosophies. I\u00c2\u0095RES was listed on the Irish Stock Exchange (now Euronext Dublin) in April 2014.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Residential",
+        "exchange": "FRA",
+        "market": "dr_market",
+        "country": "Ireland",
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "2",
+        "website": "http://www.iresreit.ie",
+        "market_cap": "Small Cap"
+    },
+    "IRES.IR": {
+        "short_name": "IRISH RES. PROP.",
+        "long_name": "Irish Residential Properties REIT Plc",
+        "summary": "Irish Residential Properties REIT Plc (\u00c2\u0093I\u00c2\u0095RES\u00c2\u0094 registration # 529737) is an Irish REIT focused on consolidating the fragmented Irish rental market by targeting quality multi-unit residential real estate in Dublin and other major centres. I\u00c2\u0095RES is externally managed by certain subsidiaries of CAPREIT (TSX:CAR.UN). Through its arrangements with CAPREIT, I\u00c2\u0095RES's operational strategy is to deliver superior customer service, enhance tenant retention, and deliver quality homes by leveraging CAPREIT's hands-on experience, and proven operating philosophies. I\u00c2\u0095RES was listed on the Irish Stock Exchange (now Euronext Dublin) in April 2014.",
+        "currency": "EUR",
+        "sector": "Real Estate",
+        "industry": "REIT - Residential",
+        "exchange": "ISE",
+        "market": "ie_market",
+        "country": "Ireland",
+        "state": null,
+        "city": "Dublin",
+        "zipcode": "2",
+        "website": "http://www.iresreit.ie",
+        "market_cap": "Small Cap"
+    }
 }

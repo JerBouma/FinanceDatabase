@@ -1,56 +1,56 @@
 {
-  "ARS=X": {
-    "currency": "ARS",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/ARS"
-  },
-  "AUDARS=X": {
-    "currency": "ARS",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "AUD/ARS"
-  },
-  "BRLARS=X": {
-    "currency": "ARS",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "BRL/ARS"
-  },
-  "CADARS=X": {
-    "currency": "ARS",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/ARS"
-  },
-  "CHFARS=X": {
-    "currency": "ARS",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/ARS"
-  },
-  "EURARS=X": {
-    "currency": "ARS",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/ARS"
-  },
-  "GBPARS=X": {
-    "currency": "ARS",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/ARS"
-  },
-  "JPYARS=X": {
-    "currency": "ARS",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/ARS"
-  },
-  "SGDARS=X": {
-    "currency": "ARS",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "SGD/ARS"
-  }
+    "ARS=X": {
+        "short_name": "USD/ARS",
+        "currency": "ARS",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "AUDARS=X": {
+        "short_name": "AUD/ARS",
+        "currency": "ARS",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "BRLARS=X": {
+        "short_name": "BRL/ARS",
+        "currency": "ARS",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CADARS=X": {
+        "short_name": "CAD/ARS",
+        "currency": "ARS",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFARS=X": {
+        "short_name": "CHF/ARS",
+        "currency": "ARS",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURARS=X": {
+        "short_name": "EUR/ARS",
+        "currency": "ARS",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPARS=X": {
+        "short_name": "GBP/ARS",
+        "currency": "ARS",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYARS=X": {
+        "short_name": "JPY/ARS",
+        "currency": "ARS",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "SGDARS=X": {
+        "short_name": "SGD/ARS",
+        "currency": "ARS",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

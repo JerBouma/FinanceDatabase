@@ -1,79 +1,79 @@
 {
-  "CYB": {
-    "category": "Single Currency",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "WisdomTree",
-    "long_name": "WisdomTree Chinese Yuan Strategy Fund",
-    "market": "us_market",
-    "short_name": "WisdomTree Chinese Yuan Strateg",
-    "summary": "The investment seeks to achieve total returns reflective of both money market rates in China available to foreign investors and changes in value of the Chinese yuan relative to the U.S. dollar.\n The fund normally invests at least 80% of its net assets, plus the amount of any borrowings for investment purposes, in investments whose combined performance is economically tied to China. It is an actively managed exchange traded fund (\"ETF\"). The fund generally will maintain a weighted average portfolio maturity of 90 days or less with respect to the money market securities in its portfolio. It is non-diversified.",
-    "total_assets": 47511792
-  },
-  "FXA": {
-    "category": "Single Currency",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Invesco",
-    "long_name": "Invesco CurrencyShares Australian Dollar Trust",
-    "market": "us_market",
-    "short_name": "Invesco CurrencyShares Australi",
-    "summary": "The investment seeks to reflect the price in USD of the Australian Dollar.\n The Shares are intended to provide institutional and retail investors with a simple, cost-effective means of gaining investment benefits similar to those of holding Australian Dollars. The costs of purchasing Shares should not exceed the costs associated with purchasing any other publicly-traded equity securities.",
-    "total_assets": 158029680
-  },
-  "FXB": {
-    "category": "Single Currency",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Invesco",
-    "long_name": "Invesco CurrencyShares British Pound Sterling Trust",
-    "market": "us_market",
-    "short_name": "Invesco CurrencyShares British ",
-    "summary": "The investment seeks to reflect the price in USD of the British Pound Sterling.\n The shares are intended to provide institutional and retail investors with a simple, cost-effective means of gaining investment benefits similar to those of holding British Pounds Sterling.",
-    "total_assets": 148513904
-  },
-  "FXC": {
-    "category": "Single Currency",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Invesco",
-    "long_name": "Invesco CurrencyShares Canadian Dollar Trust",
-    "market": "us_market",
-    "short_name": "Invesco CurrencyShares Canadian",
-    "summary": "The investment seeks to track the price of the Canadian Dollar, net of trust expenses.\n The fund seeks to reflect the price of the Canadian Dollar. The sponsor believes that, for many investors, the shares represent a cost-effective investment relative to traditional means of investing in the foreign exchange market.",
-    "total_assets": 179805168
-  },
-  "FXE": {
-    "category": "Single Currency",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Invesco",
-    "long_name": "Invesco CurrencyShares Euro Currency Trust",
-    "market": "us_market",
-    "short_name": "Invesco CurrencyShares Euro Cur",
-    "summary": "The investment seeks to reflect the price in USD of the Euro. The Shares are intended to provide institutional and retail investors with a simple, cost-effective means of gaining investment benefits similar to those of holding euro.",
-    "total_assets": 335818528
-  },
-  "FXF": {
-    "category": "Single Currency",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Invesco",
-    "long_name": "Invesco CurrencyShares Swiss Franc Trust",
-    "market": "us_market",
-    "short_name": "Invesco CurrencyShares Swiss Fr",
-    "summary": "The investment seeks to track the price of the Swiss Franc, net of trust expenses.\n The fund seeks to reflect the price of the Swiss Franc. The sponsor believes that, for many investors, the shares represent a cost-effective investment relative to traditional means of investing in the foreign exchange market.",
-    "total_assets": 301406720
-  },
-  "FXY": {
-    "category": "Single Currency",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Invesco",
-    "long_name": "Invesco CurrencyShares Japanese Yen Trust",
-    "market": "us_market",
-    "short_name": "Invesco CurrencyShares Japanese",
-    "summary": "The investment seeks to track the price of the Japanese Yen, net of trust expenses.\n The fund seeks to reflect the price in USD of the Japanese Yen. The sponsor believes that, for many investors, the shares represent a cost-effective investment relative to traditional means of investing in the foreign exchange market.",
-    "total_assets": 187708080
-  }
+    "CYB": {
+        "short_name": "WisdomTree Chinese Yuan Strateg",
+        "long_name": "WisdomTree Chinese Yuan Strategy Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to achieve total returns reflective of both money market rates in China available to foreign investors and changes in value of the Chinese yuan relative to the U.S. dollar.\n The fund normally invests at least 80% of its net assets, plus the amount of any borrowings for investment purposes, in investments whose combined performance is economically tied to China. It is an actively managed exchange traded fund (\"ETF\"). The fund generally will maintain a weighted average portfolio maturity of 90 days or less with respect to the money market securities in its portfolio. It is non-diversified.",
+        "category": "Single Currency",
+        "family": "WisdomTree",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 47511792
+    },
+    "FXA": {
+        "short_name": "Invesco CurrencyShares Australi",
+        "long_name": "Invesco CurrencyShares Australian Dollar Trust",
+        "currency": "USD",
+        "summary": "The investment seeks to reflect the price in USD of the Australian Dollar.\n The Shares are intended to provide institutional and retail investors with a simple, cost-effective means of gaining investment benefits similar to those of holding Australian Dollars. The costs of purchasing Shares should not exceed the costs associated with purchasing any other publicly-traded equity securities.",
+        "category": "Single Currency",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 158029680
+    },
+    "FXB": {
+        "short_name": "Invesco CurrencyShares British ",
+        "long_name": "Invesco CurrencyShares British Pound Sterling Trust",
+        "currency": "USD",
+        "summary": "The investment seeks to reflect the price in USD of the British Pound Sterling.\n The shares are intended to provide institutional and retail investors with a simple, cost-effective means of gaining investment benefits similar to those of holding British Pounds Sterling.",
+        "category": "Single Currency",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 148513904
+    },
+    "FXC": {
+        "short_name": "Invesco CurrencyShares Canadian",
+        "long_name": "Invesco CurrencyShares Canadian Dollar Trust",
+        "currency": "USD",
+        "summary": "The investment seeks to track the price of the Canadian Dollar, net of trust expenses.\n The fund seeks to reflect the price of the Canadian Dollar. The sponsor believes that, for many investors, the shares represent a cost-effective investment relative to traditional means of investing in the foreign exchange market.",
+        "category": "Single Currency",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 179805168
+    },
+    "FXE": {
+        "short_name": "Invesco CurrencyShares Euro Cur",
+        "long_name": "Invesco CurrencyShares Euro Currency Trust",
+        "currency": "USD",
+        "summary": "The investment seeks to reflect the price in USD of the Euro. The Shares are intended to provide institutional and retail investors with a simple, cost-effective means of gaining investment benefits similar to those of holding euro.",
+        "category": "Single Currency",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 335818528
+    },
+    "FXF": {
+        "short_name": "Invesco CurrencyShares Swiss Fr",
+        "long_name": "Invesco CurrencyShares Swiss Franc Trust",
+        "currency": "USD",
+        "summary": "The investment seeks to track the price of the Swiss Franc, net of trust expenses.\n The fund seeks to reflect the price of the Swiss Franc. The sponsor believes that, for many investors, the shares represent a cost-effective investment relative to traditional means of investing in the foreign exchange market.",
+        "category": "Single Currency",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 301406720
+    },
+    "FXY": {
+        "short_name": "Invesco CurrencyShares Japanese",
+        "long_name": "Invesco CurrencyShares Japanese Yen Trust",
+        "currency": "USD",
+        "summary": "The investment seeks to track the price of the Japanese Yen, net of trust expenses.\n The fund seeks to reflect the price in USD of the Japanese Yen. The sponsor believes that, for many investors, the shares represent a cost-effective investment relative to traditional means of investing in the foreign exchange market.",
+        "category": "Single Currency",
+        "family": "Invesco",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 187708080
+    }
 }

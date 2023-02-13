@@ -1,34 +1,34 @@
 {
-  "WESR.TA": {
-    "city": "Kefar Sava",
-    "country": "Israel",
-    "currency": "ILA",
-    "exchange": "TLV",
-    "industry": "Insurance - Property & Casualty",
-    "long_name": "Wesure Global Tech Ltd",
-    "market": "il_market",
-    "market_cap": null,
-    "sector": "Financial Services",
-    "short_name": "WESURE GLOBAL TECH",
-    "state": null,
-    "summary": "Wesure Global Tech Ltd operates as a digital insurance company. It offers third party car, structure and contents, building, mortgage, and comprehensive insurance products. The company was founded in 2016 and is based in Kefar Sava, Israel.",
-    "website": null,
-    "zipcode": "4427125"
-  },
-  "ZUR.TA": {
-    "city": "Petah Tikva",
-    "country": "Israel",
-    "currency": "ILA",
-    "exchange": "TLV",
-    "industry": "Insurance - Property & Casualty",
-    "long_name": "Zur Shamir Holdings Ltd",
-    "market": "il_market",
-    "market_cap": null,
-    "sector": "Financial Services",
-    "short_name": "ZUR SHAMIR HOLD",
-    "state": null,
-    "summary": "Zur Shamir Holdings Ltd., through its subsidiaries, operates in the insurance, consumer credit, and real estate markets in Israel. The company was formerly known as Zur and changed to its name to Zur Shamir Holdings Ltd. in February 1997. Zur Shamir Holdings Ltd. was founded in 1957 and is based in Petah Tikva, Israel.",
-    "website": "http://www.zur-shamir.com",
-    "zipcode": "4951132"
-  }
+    "WESR.TA": {
+        "short_name": "WESURE GLOBAL TECH",
+        "long_name": "Wesure Global Tech Ltd",
+        "summary": "Wesure Global Tech Ltd operates as a digital insurance company. It offers third party car, structure and contents, building, mortgage, and comprehensive insurance products. The company was founded in 2016 and is based in Kefar Sava, Israel.",
+        "currency": "ILA",
+        "sector": "Financial Services",
+        "industry": "Insurance - Property & Casualty",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "state": null,
+        "city": "Kefar Sava",
+        "zipcode": "4427125",
+        "website": null,
+        "market_cap": null
+    },
+    "ZUR.TA": {
+        "short_name": "ZUR SHAMIR HOLD",
+        "long_name": "Zur Shamir Holdings Ltd",
+        "summary": "Zur Shamir Holdings Ltd., through its subsidiaries, operates in the insurance, consumer credit, and real estate markets in Israel. The company was formerly known as Zur and changed to its name to Zur Shamir Holdings Ltd. in February 1997. Zur Shamir Holdings Ltd. was founded in 1957 and is based in Petah Tikva, Israel.",
+        "currency": "ILA",
+        "sector": "Financial Services",
+        "industry": "Insurance - Property & Casualty",
+        "exchange": "TLV",
+        "market": "il_market",
+        "country": "Israel",
+        "state": null,
+        "city": "Petah Tikva",
+        "zipcode": "4951132",
+        "website": "http://www.zur-shamir.com",
+        "market_cap": null
+    }
 }

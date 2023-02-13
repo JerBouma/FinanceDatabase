@@ -1,34 +1,34 @@
 {
-  "DEVA.IS": {
-    "city": "Istanbul",
-    "country": "Turkey",
-    "currency": "TRY",
-    "exchange": "IST",
-    "industry": "Drug Manufacturers - Specialty & Generic",
-    "long_name": "Deva Holding A.S.",
-    "market": "tr_market",
-    "market_cap": "Small Cap",
-    "sector": "Healthcare",
-    "short_name": "DEVA HOLDING",
-    "state": null,
-    "summary": "Deva Holding A.S. manufactures and sells pharmaceutical products in Turkey. The company provides antineoplastic and immunomodulating agents; dermatological products; sysyemic hormanal preparations; anti-infective and antiparasitic products for systemic use; food supplements; and electrolyte solutions. It also offers products in the areas of urogenital system and sex hormones, blood and blood forming organs, cardiovascular system, musculoskeletal system, nervous system, alimentary tract and metabolism, respiratory system, and sensory organs. In addition, the company offers animal health products and active pharmaceutical ingredients, eye drops, medical ampoules for sterile injectable products, and cologne. It also exports its products to approximately 60 countries. The company was founded in 1958 and is based in Istanbul, Turkey. Deva Holding A.S. is a subsidiary of EastPharma SARL.",
-    "website": "http://www.deva.com.tr",
-    "zipcode": "34303"
-  },
-  "TRILC.IS": {
-    "city": "Ankara",
-    "country": "Turkey",
-    "currency": "TRY",
-    "exchange": "IST",
-    "industry": "Drug Manufacturers - Specialty & Generic",
-    "long_name": "Turk Ilac Ve Serum Sanayi Anonim Sirketi",
-    "market": "tr_market",
-    "market_cap": null,
-    "sector": "Healthcare",
-    "short_name": "TURK ILAC SERUM",
-    "state": null,
-    "summary": "Turk Ilac Ve Serum Sanayi Anonim Sirketi produces and sells human pharmaceuticals and vaccines in Turkey. It offers vaccines, basic IV solutions, premix solutions, hemodialysis solutions, sterile distilled water, diagnostic products, and immunostimulant products. The company was founded in 2010 and is based in Ankara, Turkey.",
-    "website": "http://www.turkilac.com.tr",
-    "zipcode": "06750"
-  }
+    "DEVA.IS": {
+        "short_name": "DEVA HOLDING",
+        "long_name": "Deva Holding A.S.",
+        "summary": "Deva Holding A.S. manufactures and sells pharmaceutical products in Turkey. The company provides antineoplastic and immunomodulating agents; dermatological products; sysyemic hormanal preparations; anti-infective and antiparasitic products for systemic use; food supplements; and electrolyte solutions. It also offers products in the areas of urogenital system and sex hormones, blood and blood forming organs, cardiovascular system, musculoskeletal system, nervous system, alimentary tract and metabolism, respiratory system, and sensory organs. In addition, the company offers animal health products and active pharmaceutical ingredients, eye drops, medical ampoules for sterile injectable products, and cologne. It also exports its products to approximately 60 countries. The company was founded in 1958 and is based in Istanbul, Turkey. Deva Holding A.S. is a subsidiary of EastPharma SARL.",
+        "currency": "TRY",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "exchange": "IST",
+        "market": "tr_market",
+        "country": "Turkey",
+        "state": null,
+        "city": "Istanbul",
+        "zipcode": "34303",
+        "website": "http://www.deva.com.tr",
+        "market_cap": "Small Cap"
+    },
+    "TRILC.IS": {
+        "short_name": "TURK ILAC SERUM",
+        "long_name": "Turk Ilac Ve Serum Sanayi Anonim Sirketi",
+        "summary": "Turk Ilac Ve Serum Sanayi Anonim Sirketi produces and sells human pharmaceuticals and vaccines in Turkey. It offers vaccines, basic IV solutions, premix solutions, hemodialysis solutions, sterile distilled water, diagnostic products, and immunostimulant products. The company was founded in 2010 and is based in Ankara, Turkey.",
+        "currency": "TRY",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - Specialty & Generic",
+        "exchange": "IST",
+        "market": "tr_market",
+        "country": "Turkey",
+        "state": null,
+        "city": "Ankara",
+        "zipcode": "06750",
+        "website": "http://www.turkilac.com.tr",
+        "market_cap": null
+    }
 }

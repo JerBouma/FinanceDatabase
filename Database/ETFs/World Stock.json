@@ -1,57 +1,57 @@
 {
-  "DUDE": {
-    "category": "World Stock",
-    "currency": "USD",
-    "exchange": "BTS",
-    "family": "Alpha Architect",
-    "long_name": "Merlyn.AI SectorSurfer Momentum ETF",
-    "market": "us_market",
-    "short_name": "Merlyn.AI SectorSurfer Momentum",
-    "summary": "The investment seeks to track the total return performance, before fees and expenses, of the MAI SectorSurfer Momentum Index.\n Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in the component securities of the index. The index seeks to determine whether U.S. equity markets appear to be in an advancing market (a \"Bull\" indicator) or appear to have an elevated risk of market decline (a \"Bear\" indicator). The fund is non-diversified.",
-    "total_assets": 137945264
-  },
-  "LDRS": {
-    "category": "World Stock",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Innovator ETFs",
-    "long_name": "Innovator IBD ETF Leaders ETF",
-    "market": "us_market",
-    "short_name": "Innovator IBD ETF Leaders ETF",
-    "summary": "The investment seeks to track, before fees and expenses, the performance of the IBDÂ® ETF Leaders Index.\n The fund normally invests at least 80% of its net assets (including investment borrowings) in the exchange-traded investment companies that comprise the index. It generally invests in all of the securities comprising the index in proportion to the weightings of the securities in the index. The index is a rules-based index owned and developed by Investor&#39;s Business DailyÂ® designed to attempt to outperform the broader equity and fixed income markets. The fund is non-diversified.",
-    "total_assets": 13318791
-  },
-  "PLAT": {
-    "category": "World Stock",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "WisdomTree",
-    "long_name": "WisdomTree Growth Leaders Fund",
-    "market": "us_market",
-    "short_name": "WisdomTree Growth Leaders Fund",
-    "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree Growth Leaders Index.\n Under normal circumstances, the fund will invest at least 80% of its total assets in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is designed to provide exposure to equity securities of companies which have experienced revenue growth and generate revenue from business lines active in modern platforms or digital marketplaces based upon several factors. The fund is non-diversified.",
-    "total_assets": 14410418
-  },
-  "ROMO": {
-    "category": "World Stock",
-    "currency": "USD",
-    "exchange": "BTS",
-    "family": "Strategy Shares",
-    "long_name": "Strategy Shares Newfound/ReSolve Robust Momentum ETF",
-    "market": "us_market",
-    "short_name": "Strategy Shares Newfound/ReSolv",
-    "summary": "The investment seeks to provide investment returns that correspond, before fees and expenses, to the performance of the Newfound/ReSolve Robust Equity Momentum Index.\n The fund employs a \"passive management\" investment approach designed to track the total return performance, before fees and expenses, of the Newfound/ReSolve Robust Equity Momentum Index. The index uses a quantitative, rules-based methodology to provide exposure to broad U.S. equity, international equity, and emerging market equity indices, to the extent that such equity indices are exhibiting positive momentum relative to U.S. Treasury market indices.",
-    "total_assets": 39624720
-  },
-  "TRND": {
-    "category": "World Stock",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Pacer",
-    "long_name": "Pacer Trendpilot Fund of Funds ETF",
-    "market": "us_market",
-    "short_name": "Pacer Trendpilot Fund of Funds ",
-    "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Pacer Trendpilot Fund of Funds Index.\n The index is based on a proprietary methodology developed and maintained by Index Design Group, an affiliate of Pacer Advisors, Inc., the fund&#39;s investment adviser. Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in the component securities of the index. It is non-diversified.",
-    "total_assets": 44054920
-  }
+    "DUDE": {
+        "short_name": "Merlyn.AI SectorSurfer Momentum",
+        "long_name": "Merlyn.AI SectorSurfer Momentum ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the MAI SectorSurfer Momentum Index.\n Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in the component securities of the index. The index seeks to determine whether U.S. equity markets appear to be in an advancing market (a \"Bull\" indicator) or appear to have an elevated risk of market decline (a \"Bear\" indicator). The fund is non-diversified.",
+        "category": "World Stock",
+        "family": "Alpha Architect",
+        "exchange": "BTS",
+        "market": "us_market",
+        "total_assets": 137945264
+    },
+    "LDRS": {
+        "short_name": "Innovator IBD ETF Leaders ETF",
+        "long_name": "Innovator IBD ETF Leaders ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track, before fees and expenses, the performance of the IBD\u00c2\u00ae ETF Leaders Index.\n The fund normally invests at least 80% of its net assets (including investment borrowings) in the exchange-traded investment companies that comprise the index. It generally invests in all of the securities comprising the index in proportion to the weightings of the securities in the index. The index is a rules-based index owned and developed by Investor&#39;s Business Daily\u00c2\u00ae designed to attempt to outperform the broader equity and fixed income markets. The fund is non-diversified.",
+        "category": "World Stock",
+        "family": "Innovator ETFs",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 13318791
+    },
+    "PLAT": {
+        "short_name": "WisdomTree Growth Leaders Fund",
+        "long_name": "WisdomTree Growth Leaders Fund",
+        "currency": "USD",
+        "summary": "The investment seeks to track the price and yield performance, before fees and expenses, of the WisdomTree Growth Leaders Index.\n Under normal circumstances, the fund will invest at least 80% of its total assets in component securities of the index and investments that have economic characteristics that are substantially identical to the economic characteristics of such component securities. The index is designed to provide exposure to equity securities of companies which have experienced revenue growth and generate revenue from business lines active in modern platforms or digital marketplaces based upon several factors. The fund is non-diversified.",
+        "category": "World Stock",
+        "family": "WisdomTree",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 14410418
+    },
+    "ROMO": {
+        "short_name": "Strategy Shares Newfound/ReSolv",
+        "long_name": "Strategy Shares Newfound/ReSolve Robust Momentum ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide investment returns that correspond, before fees and expenses, to the performance of the Newfound/ReSolve Robust Equity Momentum Index.\n The fund employs a \"passive management\" investment approach designed to track the total return performance, before fees and expenses, of the Newfound/ReSolve Robust Equity Momentum Index. The index uses a quantitative, rules-based methodology to provide exposure to broad U.S. equity, international equity, and emerging market equity indices, to the extent that such equity indices are exhibiting positive momentum relative to U.S. Treasury market indices.",
+        "category": "World Stock",
+        "family": "Strategy Shares",
+        "exchange": "BTS",
+        "market": "us_market",
+        "total_assets": 39624720
+    },
+    "TRND": {
+        "short_name": "Pacer Trendpilot Fund of Funds ",
+        "long_name": "Pacer Trendpilot Fund of Funds ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to track the total return performance, before fees and expenses, of the Pacer Trendpilot Fund of Funds Index.\n The index is based on a proprietary methodology developed and maintained by Index Design Group, an affiliate of Pacer Advisors, Inc., the fund&#39;s investment adviser. Under normal circumstances, at least 80% of the fund&#39;s total assets (exclusive of collateral held from securities lending) will be invested in the component securities of the index. It is non-diversified.",
+        "category": "World Stock",
+        "family": "Pacer",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 44054920
+    }
 }

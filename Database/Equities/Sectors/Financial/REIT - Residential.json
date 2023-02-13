@@ -1,34 +1,34 @@
 {
-  "EXP.DE": {
-    "city": "San Mateo",
-    "country": "United States",
-    "currency": "EUR",
-    "exchange": "GER",
-    "industry": "REIT - Residential",
-    "long_name": "Essex Property Trust, Inc.",
-    "market": "de_market",
-    "market_cap": "Large Cap",
-    "sector": "Financial",
-    "short_name": "ESSEX PROP. TR.  DL-,0001",
-    "state": "CA",
-    "summary": "Essex Property Trust, Inc., an S&P 500 company, is a fully integrated real estate investment trust (REIT) that acquires, develops, redevelops, and manages multifamily residential properties in selected West Coast markets. Essex currently has ownership interests in 246 apartment communities comprising approximately 60,000 apartment homes with an additional 6 properties in various stages of active development.",
-    "website": "http://www.essexapartmenthomes.com",
-    "zipcode": "94403"
-  },
-  "KINP11.SA": {
-    "city": null,
-    "country": "Brazil",
-    "currency": "BRL",
-    "exchange": "SAO",
-    "industry": "REIT - Residential",
-    "long_name": "Even Permuta Kinea Fii Fundo Investimento",
-    "market": "br_market",
-    "market_cap": null,
-    "sector": "Financial",
-    "short_name": "FII EV KINEACI",
-    "state": null,
-    "summary": null,
-    "website": null,
-    "zipcode": null
-  }
+    "EXP.DE": {
+        "short_name": "ESSEX PROP. TR.  DL-,0001",
+        "long_name": "Essex Property Trust, Inc.",
+        "summary": "Essex Property Trust, Inc., an S&P 500 company, is a fully integrated real estate investment trust (REIT) that acquires, develops, redevelops, and manages multifamily residential properties in selected West Coast markets. Essex currently has ownership interests in 246 apartment communities comprising approximately 60,000 apartment homes with an additional 6 properties in various stages of active development.",
+        "currency": "EUR",
+        "sector": "Financial",
+        "industry": "REIT - Residential",
+        "exchange": "GER",
+        "market": "de_market",
+        "country": "United States",
+        "state": "CA",
+        "city": "San Mateo",
+        "zipcode": "94403",
+        "website": "http://www.essexapartmenthomes.com",
+        "market_cap": "Large Cap"
+    },
+    "KINP11.SA": {
+        "short_name": "FII EV KINEACI",
+        "long_name": "Even Permuta Kinea Fii Fundo Investimento",
+        "summary": null,
+        "currency": "BRL",
+        "sector": "Financial",
+        "industry": "REIT - Residential",
+        "exchange": "SAO",
+        "market": "br_market",
+        "country": "Brazil",
+        "state": null,
+        "city": null,
+        "zipcode": null,
+        "website": null,
+        "market_cap": null
+    }
 }

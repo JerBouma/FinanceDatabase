@@ -1,38 +1,38 @@
 {
-  "CADETB=X": {
-    "currency": "ETB",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CAD/ETB"
-  },
-  "CHFETB=X": {
-    "currency": "ETB",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "CHF/ETB"
-  },
-  "ETB=X": {
-    "currency": "ETB",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "USD/ETB"
-  },
-  "EURETB=X": {
-    "currency": "ETB",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "EUR/ETB"
-  },
-  "GBPETB=X": {
-    "currency": "ETB",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "GBP/ETB"
-  },
-  "JPYETB=X": {
-    "currency": "ETB",
-    "exchange": "CCY",
-    "market": "ccy_market",
-    "short_name": "JPY/ETB"
-  }
+    "CADETB=X": {
+        "short_name": "CAD/ETB",
+        "currency": "ETB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "CHFETB=X": {
+        "short_name": "CHF/ETB",
+        "currency": "ETB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "ETB=X": {
+        "short_name": "USD/ETB",
+        "currency": "ETB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "EURETB=X": {
+        "short_name": "EUR/ETB",
+        "currency": "ETB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "GBPETB=X": {
+        "short_name": "GBP/ETB",
+        "currency": "ETB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    },
+    "JPYETB=X": {
+        "short_name": "JPY/ETB",
+        "currency": "ETB",
+        "exchange": "CCY",
+        "market": "ccy_market"
+    }
 }

@@ -1,57 +1,57 @@
 {
-  "ITM": {
-    "category": "Muni National Long",
-    "currency": "USD",
-    "exchange": "BTS",
-    "family": "VanEck",
-    "long_name": "VanEck Vectors Intermediate Muni ETF",
-    "market": "us_market",
-    "short_name": "VanEck Vectors ETF Trust VanEck",
-    "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the Bloomberg Barclays AMT-Free Intermediate Continuous Municipal Index.\n The fund normally invests at least 80% of its total assets in fixed income securities that comprise the index. The index is comprised of publicly traded municipal bonds that cover the U.S. dollar denominated intermediate term tax-exempt bond market.",
-    "total_assets": 1769630208
-  },
-  "MCEF": {
-    "category": "Muni National Long",
-    "currency": "USD",
-    "exchange": "NGM",
-    "family": "First Trust",
-    "long_name": "First Trust Municipal CEF Income Opportunity ETF",
-    "market": "us_market",
-    "short_name": "First Trust Municipal CEF Incom",
-    "summary": "The investment seeks to provide current income.\n Under normal market conditions, the fund seeks to achieve its investment objective by investing at least 80% of its net assets (including investment borrowings) in a portfolio of closed-end investment companies that are listed and traded in the United States on registered exchanges which invest primarily in municipal debt securities, some or all of which pay interest that is exempt from regular federal income taxes. It may also invest in exchange-traded funds (\"ETFs\").",
-    "total_assets": 11179210
-  },
-  "MLN": {
-    "category": "Muni National Long",
-    "currency": "USD",
-    "exchange": "BTS",
-    "family": "VanEck",
-    "long_name": "VanEck Vectors Long Muni ETF",
-    "market": "us_market",
-    "short_name": "VanEck Vectors ETF Trust VanEck",
-    "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the Bloomberg Barclays AMT-Free Long Continuous Municipal Index.\n The fund normally invests at least 80% of its total assets in fixed income securities that comprise the index. The index is comprised of publicly traded municipal bonds that cover the U.S. dollar denominated long-term tax-exempt bond market.",
-    "total_assets": 224807920
-  },
-  "RVNU": {
-    "category": "Muni National Long",
-    "currency": "USD",
-    "exchange": "PCX",
-    "family": "Xtrackers",
-    "long_name": "Xtrackers Municipal Infrastructure Revenue Bond ETF",
-    "market": "us_market",
-    "short_name": "Xtrackers Municipal Infrastruct",
-    "summary": "The investment seeks investment results that correspond generally to the performance, before fees and expenses, of the Solactive Municipal Infrastructure Revenue Bond Index (the \"underlying index\").\n The fund will invest at least 80% of its total assets (but typically far more) in instruments that comprise the underlying index. The underlying index is comprised of tax-exempt municipal securities issued by states, cities, counties, districts, their respective agencies, and other tax-exempt issuers.",
-    "total_assets": 137345744
-  },
-  "XMPT": {
-    "category": "Muni National Long",
-    "currency": "USD",
-    "exchange": "BTS",
-    "family": "VanEck",
-    "long_name": "VanEck Vectors CEF Municipal Income ETF",
-    "market": "us_market",
-    "short_name": "VanEck Vectors CEF Municipal In",
-    "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the S-Network Municipal Bond Closed-End Fund IndexSM (the \"CEFMX Index\").\n The fund normally invests at least 80% of its total assets in investments the income from which is exempt from U.S. federal income tax (other than federal alternative minimum tax). It normally invests at least 80% of its total assets in securities of issuers that comprise the fund&#39;s benchmark index. The CEFMX Index is comprised of shares of U.S.-listed closed-end funds.",
-    "total_assets": 169493552
-  }
+    "ITM": {
+        "short_name": "VanEck Vectors ETF Trust VanEck",
+        "long_name": "VanEck Vectors Intermediate Muni ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the Bloomberg Barclays AMT-Free Intermediate Continuous Municipal Index.\n The fund normally invests at least 80% of its total assets in fixed income securities that comprise the index. The index is comprised of publicly traded municipal bonds that cover the U.S. dollar denominated intermediate term tax-exempt bond market.",
+        "category": "Muni National Long",
+        "family": "VanEck",
+        "exchange": "BTS",
+        "market": "us_market",
+        "total_assets": 1769630208
+    },
+    "MCEF": {
+        "short_name": "First Trust Municipal CEF Incom",
+        "long_name": "First Trust Municipal CEF Income Opportunity ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to provide current income.\n Under normal market conditions, the fund seeks to achieve its investment objective by investing at least 80% of its net assets (including investment borrowings) in a portfolio of closed-end investment companies that are listed and traded in the United States on registered exchanges which invest primarily in municipal debt securities, some or all of which pay interest that is exempt from regular federal income taxes. It may also invest in exchange-traded funds (\"ETFs\").",
+        "category": "Muni National Long",
+        "family": "First Trust",
+        "exchange": "NGM",
+        "market": "us_market",
+        "total_assets": 11179210
+    },
+    "MLN": {
+        "short_name": "VanEck Vectors ETF Trust VanEck",
+        "long_name": "VanEck Vectors Long Muni ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the Bloomberg Barclays AMT-Free Long Continuous Municipal Index.\n The fund normally invests at least 80% of its total assets in fixed income securities that comprise the index. The index is comprised of publicly traded municipal bonds that cover the U.S. dollar denominated long-term tax-exempt bond market.",
+        "category": "Muni National Long",
+        "family": "VanEck",
+        "exchange": "BTS",
+        "market": "us_market",
+        "total_assets": 224807920
+    },
+    "RVNU": {
+        "short_name": "Xtrackers Municipal Infrastruct",
+        "long_name": "Xtrackers Municipal Infrastructure Revenue Bond ETF",
+        "currency": "USD",
+        "summary": "The investment seeks investment results that correspond generally to the performance, before fees and expenses, of the Solactive Municipal Infrastructure Revenue Bond Index (the \"underlying index\").\n The fund will invest at least 80% of its total assets (but typically far more) in instruments that comprise the underlying index. The underlying index is comprised of tax-exempt municipal securities issued by states, cities, counties, districts, their respective agencies, and other tax-exempt issuers.",
+        "category": "Muni National Long",
+        "family": "Xtrackers",
+        "exchange": "PCX",
+        "market": "us_market",
+        "total_assets": 137345744
+    },
+    "XMPT": {
+        "short_name": "VanEck Vectors CEF Municipal In",
+        "long_name": "VanEck Vectors CEF Municipal Income ETF",
+        "currency": "USD",
+        "summary": "The investment seeks to replicate as closely as possible, before fees and expenses, the price and yield performance of the S-Network Municipal Bond Closed-End Fund IndexSM (the \"CEFMX Index\").\n The fund normally invests at least 80% of its total assets in investments the income from which is exempt from U.S. federal income tax (other than federal alternative minimum tax). It normally invests at least 80% of its total assets in securities of issuers that comprise the fund&#39;s benchmark index. The CEFMX Index is comprised of shares of U.S.-listed closed-end funds.",
+        "category": "Muni National Long",
+        "family": "VanEck",
+        "exchange": "BTS",
+        "market": "us_market",
+        "total_assets": 169493552
+    }
 }

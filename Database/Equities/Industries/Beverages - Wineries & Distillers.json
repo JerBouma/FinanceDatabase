@@ -1,34 +1,34 @@
 {
-  "DGEN.MX": {
-    "city": "London",
-    "country": "United Kingdom",
-    "currency": "MXN",
-    "exchange": "MEX",
-    "industry": "Beverages - Wineries & Distillers",
-    "long_name": "Diageo plc",
-    "market": "mx_market",
-    "market_cap": null,
-    "sector": "Consumer Goods",
-    "short_name": "DIAGEO",
-    "state": null,
-    "summary": "Diageo plc, together with its subsidiaries, produces, markets, and sells alcoholic beverages. The company offers scotch, whisky, gin, vodka, rum, ready to drink products, Irish cream liqueur, raki, liqueur, wine, tequila, Canadian whisky, American whiskey, adult beverages, cachaÃ§a, spirits, and brandy, as well as beer, including cider and non-alcoholic products. Diageo plc provides its products primarily under the Johnnie Walker, Smirnoff, Baileys, Captain Morgan, Tanqueray, and Guinness brands. The company also offers its products under the Crown Royal, YenÃ¬ Raki, Shui Jing Fang, Johnnie Walker Blue Label, Bulleit Bourbon, Don Julio, Buchanan's, J?B, Old Parr, Tanqueray No. TEN, Ron Zacapa Centenario XO, Casamigos, Bundaberg, McDowell's No. 1, YpiÃ³ca, Lagavulin, The Singleton of Glen Ord, Johnnie Walker Gold Label Reserve, Windsor, Black&White, CÃ®roc, Ketel One vodka, and Talisker brands. It has operations in North America, Europe, Turkey, Africa, Latin America, the Caribbean, the Asia Pacific, and internationally. The company was incorporated in 1886 and is headquartered in London, the United Kingdom.",
-    "website": "http://www.diageo.com",
-    "zipcode": "NW10 7HQ"
-  },
-  "KTILA.AT": {
-    "city": "Drama",
-    "country": "Greece",
-    "currency": "EUR",
-    "exchange": "ATH",
-    "industry": "Beverages - Wineries & Distillers",
-    "long_name": "Ktima Kostas Lazaridis S.A.",
-    "market": "gr_market",
-    "market_cap": null,
-    "sector": "Consumer Goods",
-    "short_name": "KOSTAS LAZARIDIS S.A. (CR)",
-    "state": null,
-    "summary": "Ktima Kostas Lazaridis S.A. engages in the production and sale of wines in Greece. It offers various families of wines, including Amethystos, ChÃ¢teau Julia, Domaine Costa Lazaridi, Oenotria Land, and Oenodea. The company also provides Idoniko Tsipouro, Idoniko Ouzo, and various Methexis grape distills; Botanico balsamic vinegars; and Magnum. It exports its products to approximately 23 countries worldwide. The company was founded in 1979 and is based in Drama, Greece.",
-    "website": "http://www.domaine-lazaridi.gr",
-    "zipcode": "661 00"
-  }
+    "DGEN.MX": {
+        "short_name": "DIAGEO",
+        "long_name": "Diageo plc",
+        "summary": "Diageo plc, together with its subsidiaries, produces, markets, and sells alcoholic beverages. The company offers scotch, whisky, gin, vodka, rum, ready to drink products, Irish cream liqueur, raki, liqueur, wine, tequila, Canadian whisky, American whiskey, adult beverages, cacha\u00c3\u00a7a, spirits, and brandy, as well as beer, including cider and non-alcoholic products. Diageo plc provides its products primarily under the Johnnie Walker, Smirnoff, Baileys, Captain Morgan, Tanqueray, and Guinness brands. The company also offers its products under the Crown Royal, Yen\u00c3\u00ac Raki, Shui Jing Fang, Johnnie Walker Blue Label, Bulleit Bourbon, Don Julio, Buchanan's, J?B, Old Parr, Tanqueray No. TEN, Ron Zacapa Centenario XO, Casamigos, Bundaberg, McDowell's No. 1, Ypi\u00c3\u00b3ca, Lagavulin, The Singleton of Glen Ord, Johnnie Walker Gold Label Reserve, Windsor, Black&White, C\u00c3\u00aeroc, Ketel One vodka, and Talisker brands. It has operations in North America, Europe, Turkey, Africa, Latin America, the Caribbean, the Asia Pacific, and internationally. The company was incorporated in 1886 and is headquartered in London, the United Kingdom.",
+        "currency": "MXN",
+        "sector": "Consumer Goods",
+        "industry": "Beverages - Wineries & Distillers",
+        "exchange": "MEX",
+        "market": "mx_market",
+        "country": "United Kingdom",
+        "state": null,
+        "city": "London",
+        "zipcode": "NW10 7HQ",
+        "website": "http://www.diageo.com",
+        "market_cap": null
+    },
+    "KTILA.AT": {
+        "short_name": "KOSTAS LAZARIDIS S.A. (CR)",
+        "long_name": "Ktima Kostas Lazaridis S.A.",
+        "summary": "Ktima Kostas Lazaridis S.A. engages in the production and sale of wines in Greece. It offers various families of wines, including Amethystos, Ch\u00c3\u00a2teau Julia, Domaine Costa Lazaridi, Oenotria Land, and Oenodea. The company also provides Idoniko Tsipouro, Idoniko Ouzo, and various Methexis grape distills; Botanico balsamic vinegars; and Magnum. It exports its products to approximately 23 countries worldwide. The company was founded in 1979 and is based in Drama, Greece.",
+        "currency": "EUR",
+        "sector": "Consumer Goods",
+        "industry": "Beverages - Wineries & Distillers",
+        "exchange": "ATH",
+        "market": "gr_market",
+        "country": "Greece",
+        "state": null,
+        "city": "Drama",
+        "zipcode": "661 00",
+        "website": "http://www.domaine-lazaridi.gr",
+        "market_cap": null
+    }
 }

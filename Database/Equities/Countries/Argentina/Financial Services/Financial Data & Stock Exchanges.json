@@ -1,34 +1,34 @@
 {
-  "MTR.BA": {
-    "city": "Rosario",
-    "country": "Argentina",
-    "currency": "ARS",
-    "exchange": "BUE",
-    "industry": "Financial Data & Stock Exchanges",
-    "long_name": "Matba Rofex S.A.",
-    "market": "ar_market",
-    "market_cap": "Micro Cap",
-    "sector": "Financial Services",
-    "short_name": "MATBA ROFEX SA",
-    "state": null,
-    "summary": "MATba ROFEX SA operates a framework for futures and options trading. Its agricultural derivatives products include soybeans, wheat, corns, soybean index, chicago soybeans, chicago corns, and basis; financial derivatives products include US dollars and Euros; metal derivatives products include gold; public bonds and merval index; energy derivatives products include oil; shares; and bonds. MATba ROFEX SA was formerly known as ROFEX S.A and changed its name to MATba ROFEX SA in August 2019. MATba ROFEX SA was founded in 1909 and is based in Rosario, Argentina.",
-    "website": "http://www.matbarofex.com.ar",
-    "zipcode": "S2000CVO"
-  },
-  "VALO.BA": {
-    "city": "Buenos Aires",
-    "country": "Argentina",
-    "currency": "ARS",
-    "exchange": "BUE",
-    "industry": "Financial Data & Stock Exchanges",
-    "long_name": "Grupo Financiero Valores S.A.",
-    "market": "ar_market",
-    "market_cap": "Micro Cap",
-    "sector": "Financial Services",
-    "short_name": "GPO FINANC VALORES",
-    "state": null,
-    "summary": "Grupo Financiero Valores S.A. engages in financial and investment activities. The company offers commercial banking services comprising investment banking products; and engages in the trading and negotiation of futures contracts and options. It also executes trades and provides clearing house and central counterparty services for the settlement and monitoring of transactions, as well as offers risk management services. The company was formerly known as Mercado de Valores de Buenos Aires S.A. and changed its name to Grupo Financiero Valores S.A. Grupo Financiero Valores S.A. was founded in 1929 and is based in Buenos Aires, Argentina.",
-    "website": "http://www.byma.com.ar",
-    "zipcode": "C1041AAH"
-  }
+    "MTR.BA": {
+        "short_name": "MATBA ROFEX SA",
+        "long_name": "Matba Rofex S.A.",
+        "summary": "MATba ROFEX SA operates a framework for futures and options trading. Its agricultural derivatives products include soybeans, wheat, corns, soybean index, chicago soybeans, chicago corns, and basis; financial derivatives products include US dollars and Euros; metal derivatives products include gold; public bonds and merval index; energy derivatives products include oil; shares; and bonds. MATba ROFEX SA was formerly known as ROFEX S.A and changed its name to MATba ROFEX SA in August 2019. MATba ROFEX SA was founded in 1909 and is based in Rosario, Argentina.",
+        "currency": "ARS",
+        "sector": "Financial Services",
+        "industry": "Financial Data & Stock Exchanges",
+        "exchange": "BUE",
+        "market": "ar_market",
+        "country": "Argentina",
+        "state": null,
+        "city": "Rosario",
+        "zipcode": "S2000CVO",
+        "website": "http://www.matbarofex.com.ar",
+        "market_cap": "Micro Cap"
+    },
+    "VALO.BA": {
+        "short_name": "GPO FINANC VALORES",
+        "long_name": "Grupo Financiero Valores S.A.",
+        "summary": "Grupo Financiero Valores S.A. engages in financial and investment activities. The company offers commercial banking services comprising investment banking products; and engages in the trading and negotiation of futures contracts and options. It also executes trades and provides clearing house and central counterparty services for the settlement and monitoring of transactions, as well as offers risk management services. The company was formerly known as Mercado de Valores de Buenos Aires S.A. and changed its name to Grupo Financiero Valores S.A. Grupo Financiero Valores S.A. was founded in 1929 and is based in Buenos Aires, Argentina.",
+        "currency": "ARS",
+        "sector": "Financial Services",
+        "industry": "Financial Data & Stock Exchanges",
+        "exchange": "BUE",
+        "market": "ar_market",
+        "country": "Argentina",
+        "state": null,
+        "city": "Buenos Aires",
+        "zipcode": "C1041AAH",
+        "website": "http://www.byma.com.ar",
+        "market_cap": "Micro Cap"
+    }
 }
