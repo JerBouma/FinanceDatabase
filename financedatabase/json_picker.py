@@ -3,8 +3,20 @@ import json
 
 import requests
 
+
 # pylint: disable=unspecified-encoding, too-many-arguments, too-many-locals, too-many-return-statements,
 # pylint: disable=too-many-return-statements,too-many-branches,too-many-statements,line-too-long
+def exclude_exchange(json_data):
+    for etf in json_data.copy():
+        if "." in etf:
+            del json_data[etf]
+    if len(json_data) == 0:
+        print(
+            "Because exclude_exchanges is set to True, all available data for this "
+            "combination is removed. Set this parameter to False "
+            "to obtain data."
+        )
+    return json_data
 
 
 def select_cryptocurrencies(
@@ -128,44 +140,23 @@ def select_etfs(
         Returns a dictionary with a selection or all data based on the input.
     """
 
-    if category:
-        if use_local_location:
-            json_file = f"{base_url}/{category}.json"
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                category = category.replace("%", "%25").replace(" ", "%20")
-                json_file = f"{base_url}/{category}.json"
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print(f"Not able to find any data for {category}.")
-                return {}
+    clean_category = category if category else all_etfs_json
+    if use_local_location:
+        json_file = f"{base_url}/{clean_category}.json"
+        with open(json_file) as json_local:
+            json_data = json.load(json_local)
     else:
-        json_file = f"{base_url}/{all_etfs_json}.json"
-        if use_local_location:
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print("Not able to find any data.")
-                return {}
+        try:
+            category = category.replace("%", "%25").replace(" ", "%20")
+            json_file = f"{base_url}/{clean_category}.json"
+            request = requests.get(json_file, timeout=30)
+            json_data = json.loads(request.text)
+        except json.decoder.JSONDecodeError:
+            print("Not able to find any data.")
+            return {}
 
     if exclude_exchanges:
-        for etf in json_data.copy():
-            if "." in etf:
-                del json_data[etf]
-        if len(json_data) == 0:
-            print(
-                "Because exclude_exchanges is set to True, all available data for this "
-                f"combination ({category}) is removed. Set this parameter to False "
-                "to obtain data."
-            )
-            return {}
+        return exclude_exchange(json_data)
 
     return json_data
 
@@ -355,16 +346,7 @@ def select_equities(
                 return {}
 
     if exclude_exchanges:
-        for company in json_data.copy():
-            if "." in company:
-                del json_data[company]
-            if len(json_data) == 0:
-                print(
-                    "Because exclude_exchanges is set to True, all available data for "
-                    f"this combination ({country}, {sector} and {industry}) is removed. "
-                    f"Set this parameter to False to obtain data."
-                )
-                return {}
+        return exclude_exchanges(json_data)
 
     return json_data
 
@@ -430,15 +412,7 @@ def select_funds(
                 return {}
 
     if exclude_exchanges:
-        for fund in json_data.copy():
-            if "." in fund:
-                del json_data[fund]
-            if len(json_data) == 0:
-                raise ValueError(
-                    "Because exclude_exchanges is set to True, all available data for "
-                    f"this combination ({category}) is removed. Set this parameter to False to "
-                    f"obtain data."
-                )
+        return exclude_exchanges(json_data)
 
     return json_data
 
@@ -502,15 +476,7 @@ def select_indices(
                 return {}
 
     if exclude_exchanges:
-        for index in json_data.copy():
-            if "." in index:
-                del json_data[index]
-            if len(json_data) == 0:
-                raise ValueError(
-                    "Because exclude_exchanges is set to True, all available data for this "
-                    f"combination ({market}) is removed. Set this parameter to False "
-                    "to obtain data."
-                )
+        return exclude_exchanges(json_data)
 
     return json_data
 
@@ -574,15 +540,6 @@ def select_moneymarkets(
                 return {}
 
     if exclude_exchanges:
-        for moneymarket in json_data.copy():
-            if "." in moneymarket:
-                del json_data[moneymarket]
-        if len(json_data) == 0:
-            print(
-                "Because exclude_exchanges is set to True, all available data for this "
-                f"combination ({market}) is removed. Set this parameter to False "
-                "to obtain data."
-            )
-            return {}
+        return exclude_exchanges(json_data)
 
     return json_data
