@@ -1,10 +1,14 @@
 """JSON Picker"""
 import json
+from pathlib import Path
 
 import requests
+import pandas as pd
 
 # pylint: disable=unspecified-encoding, too-many-arguments, too-many-locals, too-many-return-statements,
 # pylint: disable=too-many-return-statements,too-many-branches,too-many-statements,line-too-long
+
+file_path = Path(__file__).parent.parent / "Database"
 
 
 def select_cryptocurrencies(
@@ -202,6 +206,7 @@ def select_equities(
     sector=None,
     industry=None,
     exclude_exchanges=True,
+    # TODO: remove base_url and use_local_location in a future PR
     base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
     "master/Database/Equities",
     use_local_location=False,
@@ -236,164 +241,18 @@ def select_equities(
     json_data (dictionary)
         Returns a dictionary with a selection or all data based on the input.
     """
-    if country and sector and industry:
-        if use_local_location:
-            json_file = f"{base_url}/Countries/{country}/{sector}/{industry}.json"
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                country = country.replace("%", "%25").replace(" ", "%20")
-                sector = sector.replace("%", "%25").replace(" ", "%20")
-                industry = industry.replace("%", "%25").replace(" ", "%20")
-                json_file = f"{base_url}/Countries/{country}/{sector}/{industry}.json"
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print(
-                    f"Not able to find any data with the combination of Country ({country}), "
-                    f"Sector ({sector}) and Industry ({industry})."
-                )
-                return {}
-    elif country and sector:
-        if use_local_location:
-            json_file = f"{base_url}/Countries/{country}/{sector}/_{sector}.json"
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                country = country.replace("%", "%25").replace(" ", "%20")
-                sector = sector.replace("%", "%25").replace(" ", "%20")
-                json_file = f"{base_url}/Countries/{country}/{sector}/_{sector}.json"
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print(
-                    f"Not able to find any data with the combination of Country ({country}) "
-                    f"and Sector ({sector})"
-                )
-                return {}
-    elif sector and industry:
-        if use_local_location:
-            json_file = f"{base_url}/Sectors/{sector}/{industry}.json"
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                sector = sector.replace("%", "%25").replace(" ", "%20")
-                industry = industry.replace("%", "%25").replace(" ", "%20")
-                json_file = f"{base_url}/Sectors/{sector}/{industry}.json"
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print(
-                    "Not able to find any data with the combination of, "
-                    f"Sector ({sector}) and Industry ({industry})."
-                )
-                return {}
-    elif country and industry:
-        if use_local_location:
-            json_file = f"{base_url}/Countries/{country}/Industries/{industry}.json"
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                country = country.replace("%", "%25").replace(" ", "%20")
-                industry = industry.replace("%", "%25").replace(" ", "%20")
-                json_file = f"{base_url}/Countries/{country}/Industries/{industry}.json"
-                request = requests.get(json_file, timeout=30)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print(
-                    "Not able to find any data with the combination of, "
-                    f"Country ({country}) and Industry ({industry})."
-                )
-                return {}
-    elif country:
-        if use_local_location:
-            json_file = f"{base_url}/Countries/{country}/{country}.json"
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                country = country.replace("%", "%25").replace(" ", "%20")
-                json_file = f"{base_url}/Countries/{country}/{country}.json"
-                request = requests.get(json_file, timeout=60)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print(f"Not able to find any data for {country}.")
-                return {}
-    elif sector:
-        if use_local_location:
-            json_file = f"{base_url}/Sectors/{sector}/_{sector}.json"
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                sector = sector.replace("%", "%25").replace(" ", "%20")
-                json_file = f"{base_url}/Sectors/{sector}/_{sector}.json"
-                request = requests.get(json_file, timeout=60)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print(f"Not able to find any data for {sector}.")
-                return {}
-    elif industry:
-        if use_local_location:
-            json_file = f"{base_url}/Industries/{industry}.json"
-            with open(json_file) as json_local:
-                json_data = json.load(json_local)
-        else:
-            try:
-                industry = industry.replace("%", "%25").replace(" ", "%20")
-                json_file = f"{base_url}/Industries/{industry}.json"
-                request = requests.get(json_file, timeout=60)
-                json_data = json.loads(request.text)
-            except json.decoder.JSONDecodeError:
-                print(f"Not able to find any data for {industry}.")
-                return {}
-    else:
-        if use_local_location:
-            json_data = {}
-
-            json_file_part_one = f"{base_url}/Equities Part 1.json"
-            with open(json_file_part_one) as json_local:
-                json_data_part_one = json.load(json_local)
-            json_data.update(json_data_part_one)
-
-            json_file_part_two = f"{base_url}/Equities Part 2.json"
-            with open(json_file_part_two) as json_local:
-                json_data_part_two = json.load(json_local)
-            json_data.update(json_data_part_two)
-        else:
-            try:
-                json_data = {}
-
-                json_file_part_one = f"{base_url}/Equities Part 1.json"
-                request = requests.get(json_file_part_one, timeout=60)
-                json_data_segment = json.loads(request.text)
-                json_data.update(json_data_segment)
-
-                json_file_part_two = f"{base_url}/Equities Part 2.json"
-                request = requests.get(json_file_part_two, timeout=60)
-                json_data_segment = json.loads(request.text)
-                json_data.update(json_data_segment)
-            except json.decoder.JSONDecodeError:
-                print("Not able to find any data.")
-                return {}
-
-    if exclude_exchanges:
-        for company in json_data.copy():
-            if "." in company:
-                del json_data[company]
-            if len(json_data) == 0:
-                print(
-                    "Because exclude_exchanges is set to True, all available data for "
-                    f"this combination ({country}, {sector} and {industry}) is removed. "
-                    f"Set this parameter to False to obtain data."
-                )
-                return {}
-
-    return json_data
+    print("This got hit")
+    the_path = file_path / "equities.zip.csv"
+    df = pd.read_csv(
+        the_path, compression="zip", on_bad_lines="skip", sep=";", index_col=0
+    )
+    if country:
+        df = df[df["country"] == country]
+    if sector:
+        df = df[df["sector"] == sector]
+    if industry:
+        df = df[df["industry"] == industry]
+    return df.to_json()
 
 
 def select_funds(
