@@ -1,28 +1,10 @@
 import pandas as pd
 
-from .helpers import data_repo, file_path
+from .helpers import FinanceDatabase
 
 
-class Equities:
-    def __init__(
-        self,
-        base_url: str = data_repo + "Database/equities.csv",
-        use_local_location: bool = False,
-    ):
-        """
-        Description
-        ----
-        Creates a dataframe with all equities from the database.
-
-        Input
-        ----
-        base_url (string, default is GitHub location)
-            The possibility to enter your own location if desired.
-        use_local_location (string, default False)
-            The possibility to select a local location (i.e. based on Windows path)
-        """
-        the_path = file_path / "equities.csv" if use_local_location else base_url
-        self.equities = pd.read_csv(the_path, on_bad_lines="skip", sep=";", index_col=0)
+class Equities(FinanceDatabase):
+    FILE_NAME = "equities.csv"
 
     def select(
         self,
@@ -61,7 +43,7 @@ class Equities:
         equities_df (pd.DataFrame)
             Returns a dictionary with a selection or all data based on the input.
         """
-        equities = self.equities.copy(deep=True)
+        equities = self.df.copy(deep=True)
         if country:
             equities = equities[equities["country"] == country]
         if sector:
@@ -69,7 +51,7 @@ class Equities:
         if industry:
             equities = equities[equities["industry"] == industry]
         if exclude_exchanges:
-            equities = equities[equities.index.str.contains(".", na=False)]
+            equities = equities[~equities["symbol"].str.contains(r"\.", na=False)]
         return equities
 
     def options(
