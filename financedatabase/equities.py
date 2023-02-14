@@ -6,7 +6,7 @@ from .helpers import file_path
 class Equities:
     def __init__(
         self,
-        base_url: str = "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/equities.csv.zip",
+        base_url: str = "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/equities.csv",
         use_local_location: bool = False,
     ):
         """
@@ -21,10 +21,8 @@ class Equities:
         use_local_location (string, default False)
             The possibility to select a local location (i.e. based on Windows path)
         """
-        the_path = file_path / "equities.csv.zip" if use_local_location else base_url
-        self.equities = pd.read_csv(
-            the_path, compression="zip", on_bad_lines="skip", sep=";", index_col=0
-        )
+        the_path = file_path / "equities.csv" if use_local_location else base_url
+        self.equities = pd.read_csv(the_path, on_bad_lines="skip", sep=";", index_col=0)
 
     def select(
         self,
