@@ -1,12 +1,12 @@
 import pandas as pd
 
-from .helpers import file_path
+from .helpers import data_repo, file_path
 
 
 class Equities:
     def __init__(
         self,
-        base_url: str = "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/equities.csv",
+        base_url: str = data_repo + "Database/equities.csv",
         use_local_location: bool = False,
     ):
         """
