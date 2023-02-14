@@ -1,5 +1,6 @@
-import financedatabase as fd
 import matplotlib.pyplot as plt
+
+import financedatabase as fd
 
 # Obtain all countries from the database
 equities_countries = fd.show_options("equities", "countries")

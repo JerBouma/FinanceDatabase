@@ -3,7 +3,6 @@ import json
 from pathlib import Path
 
 import requests
-import pandas as pd
 
 file_path = Path(__file__).parent.parent / "Database"
 
@@ -164,60 +163,6 @@ def select_etfs(
         return exclude_exchange(json_data)
 
     return json_data
-
-
-def select_equities(
-    country=None,
-    sector=None,
-    industry=None,
-    exclude_exchanges=True,
-    # TODO: remove base_url and use_local_location in a future PR
-    base_url="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/"
-    "master/Database/Equities",
-    use_local_location=False,
-):
-    """
-    Description
-    ----
-    Returns all equities when no input is given and has the option to give
-    a specific set of symbols for the country, sector and/or industry provided.
-
-    The data depends on the combination of inputs. For example Country + Sector
-    gives all symbols for a specific sector in a specific country.
-
-    Input
-    ----
-    country (string, default is None)
-        If filled, gives all data for a specific country.
-    sector (string, default is None)
-        If filled, gives all data for a specific sector.
-    industry (string, default is None)
-        If filled, gives all data for a specific industry.
-    exclude_exchanges (boolean, default is True):
-        Whether you want to exclude exchanges from the search. If False,
-        you will receive multiple times i.e. Tesla from different exchanges.
-    base_url (string, default is GitHub location)
-        The possibility to enter your own location if desired.
-    use_local_location (string, default False)
-        The possibility to select a local location (i.e. based on Windows path)
-
-    Output
-    ----
-    json_data (dictionary)
-        Returns a dictionary with a selection or all data based on the input.
-    """
-    the_path = file_path / "equities.csv.zip"
-    df = pd.read_csv(
-        the_path, compression="zip", on_bad_lines="skip", sep=";", index_col=0
-    )
-    if country:
-        df = df[df["country"] == country]
-    if sector:
-        df = df[df["sector"] == sector]
-    if industry:
-        df = df[df["industry"] == industry]
-    # TODO: we still need to remove exchanges if the user requests that
-    return df.to_dict(orient="index")
 
 
 def select_funds(

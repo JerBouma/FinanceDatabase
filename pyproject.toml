@@ -1,5 +1,8 @@
 [tool.ruff]
 line-length = 122
+select = ["E", "W", "F", "Q", "W", "S", "UP", "I", "PD", "SIM", "PLC", "PLE", "PLR", "PLW"]
+# ignore = ["S105", "S106", "S107"]
+
 
 [tool.ruff.isort]
 combine-as-imports = true

@@ -1,8 +1,9 @@
-import financedatabase as fd
 import matplotlib.pyplot as plt
 import pandas as pd
 import yfinance as yf
 from ta.volatility import BollingerBands
+
+import financedatabase as fd
 
 # Obtain all ETFs in the category health then filter based on biotech
 health_etfs = fd.select_etfs(category="Health")

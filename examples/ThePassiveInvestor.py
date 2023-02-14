@@ -1,5 +1,6 @@
-import financedatabase as fd
 import pandas as pd
+
+import financedatabase as fd
 
 core_selection = fd.select_etfs("core_selection_filtered", exclude_exchanges=False)
 
