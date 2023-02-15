@@ -1,9 +1,6 @@
 "Currencies Module"
 
-import json
 import pandas as pd
-
-import requests
 
 from .helpers import FinanceDatabase
 
@@ -46,14 +43,15 @@ class Currencies(FinanceDatabase):
         currencies = self.data.copy(deep=True)
 
         if currency:
-            currencies = currencies[currencies["currency"].str.contains(
-                currency.upper() if capitalize else currency, na=False)]
-            
+            currencies = currencies[
+                currencies["currency"].str.contains(
+                    currency.upper() if capitalize else currency, na=False
+                )
+            ]
+
         return currencies
 
-    def options(
-        self
-    ) -> pd.Series:
+    def options(self) -> pd.Series:
         """
         Description
         ----

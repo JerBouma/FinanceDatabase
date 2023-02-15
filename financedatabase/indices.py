@@ -1,9 +1,6 @@
 "Indices Module"
 
-import json
 import pandas as pd
-
-import requests
 
 from .helpers import FinanceDatabase
 
@@ -50,16 +47,17 @@ class Indices(FinanceDatabase):
         indices = self.data.copy(deep=True)
 
         if currency:
-            indices = indices[indices["currency"].str.contains(
-                currency.upper() if capitalize else currency, na=False)]
+            indices = indices[
+                indices["currency"].str.contains(
+                    currency.upper() if capitalize else currency, na=False
+                )
+            ]
         if exclude_exchanges:
             indices = indices[~indices["symbol"].str.contains(r"\.", na=False)]
-            
+
         return indices
 
-    def options(
-        self
-    ) -> pd.Series:
+    def options(self) -> pd.Series:
         """
         Description
         ----

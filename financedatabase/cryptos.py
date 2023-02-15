@@ -1,9 +1,6 @@
 "Cryptos Module"
 
-import json
 import pandas as pd
-
-import requests
 
 from .helpers import FinanceDatabase
 
@@ -47,14 +44,15 @@ class Cryptos(FinanceDatabase):
         cryptos = self.data.copy(deep=True)
 
         if crypto:
-            cryptos = cryptos[cryptos["cryptocurrency"].str.contains(
-                crypto.upper() if capitalize else crypto, na=False)]
-            
+            cryptos = cryptos[
+                cryptos["cryptocurrency"].str.contains(
+                    crypto.upper() if capitalize else crypto, na=False
+                )
+            ]
+
         return cryptos
 
-    def options(
-        self
-    ) -> pd.Series:
+    def options(self) -> pd.Series:
         """
         Description
         ----

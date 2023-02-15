@@ -1,9 +1,6 @@
 "Moneymarkets Module"
 
-import json
 import pandas as pd
-
-import requests
 
 from .helpers import FinanceDatabase
 
@@ -50,16 +47,19 @@ class Moneymarkets(FinanceDatabase):
         moneymarkets = self.data.copy(deep=True)
 
         if currency:
-            moneymarkets = moneymarkets[moneymarkets["currency"].str.contains(
-                currency.upper() if capitalize else currency, na=False)]
+            moneymarkets = moneymarkets[
+                moneymarkets["currency"].str.contains(
+                    currency.upper() if capitalize else currency, na=False
+                )
+            ]
         if exclude_exchanges:
-            moneymarkets = moneymarkets[~moneymarkets["symbol"].str.contains(r"\.", na=False)]
-            
+            moneymarkets = moneymarkets[
+                ~moneymarkets["symbol"].str.contains(r"\.", na=False)
+            ]
+
         return moneymarkets
 
-    def options(
-        self
-    ) -> pd.Series:
+    def options(self) -> pd.Series:
         """
         Description
         ----

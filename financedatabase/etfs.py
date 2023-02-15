@@ -94,8 +94,6 @@ class ETFs(FinanceDatabase):
 
         if etfs.empty:
             # Meant for the rare cases where capitalizing is not working as desired.
-            etfs = self.select(
-                category=category, family=family, capitalize=False
-            )
+            etfs = self.select(category=category, family=family, capitalize=False)
 
         return etfs[selection].unique()
