@@ -1,5 +1,12 @@
 [tool.ruff]
 line-length = 122
+select = ["E", "W", "F", "Q", "W", "S", "UP", "I", "PD", "SIM", "PLC", "PLE", "PLR", "PLW"]
+ignore = ["S105", "S106", "S107", "PLR0913"]
+
+[tool.pylint]
+max-line-length = 122
+disable = ["R0913", "W1514", "R0911", "R0912", "R0915", "R0801", "W0221"]
+
 
 [tool.ruff.isort]
 combine-as-imports = true
@@ -13,4 +20,4 @@ combine_as_imports = true
 
 [tool.codespell]
 ignore-words-list = 'ZAR,zar,profund'
-skip = '*.json,./.git'
+skip = '*.json,./.git,*.csv'

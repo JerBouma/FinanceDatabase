@@ -1,7 +1,8 @@
-import financedatabase as fd
 import fundamentalanalysis as fa
-import pandas as pd
 import matplotlib.pyplot as plt
+import pandas as pd
+
+import financedatabase as fd
 
 all_technology_companies = fd.select_equities(sector="Technology")
 silicon_valley = fd.search_products(

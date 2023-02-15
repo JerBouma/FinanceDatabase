@@ -1,9 +1,11 @@
-import financedatabase as fd
-from yfinance.utils import get_json
-from yfinance import download
-import matplotlib.pyplot as plt
-import matplotlib.colors as mcolors
 import random
+
+import matplotlib.colors as mcolors
+import matplotlib.pyplot as plt
+from yfinance import download
+from yfinance.utils import get_json
+
+import financedatabase as fd
 
 airlines_us = fd.select_equities(country="United States", industry="Airlines")
 
