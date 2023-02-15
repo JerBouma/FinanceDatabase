@@ -81,6 +81,10 @@ class Funds(FinanceDatabase):
             The selection you want to see the options for. Can be:
             - category
             - family
+        category (string, default is None)
+            If filled, gives all data for a specific category.
+        family (string, default is None)
+            If filled, gives all data for a specific family.
 
         Output
         ----

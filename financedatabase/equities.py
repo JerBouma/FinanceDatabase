@@ -88,7 +88,12 @@ class Equities(FinanceDatabase):
             - country
             - sector
             - industry
-
+        country (string, default is None)
+            If filled, gives all data for a specific country.
+        sector (string, default is None)
+            If filled, gives all data for a specific sector.
+        industry (string, default is None)
+            If filled, gives all data for a specific industry.
         Output
         ----
         options (pd.Series)
