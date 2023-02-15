@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/FinanceDatabaseCropped.png" alt="Logo">
+    <img src="https://user-images.githubusercontent.com/46355364/219179972-5c97f378-4dcc-4a1e-a6ed-a376db1d8df7.png" alt="Logo">
 </center>
 <p align="center">
     <a href="https://www.buymeacoffee.com/jerbouma">
@@ -345,7 +345,7 @@ plt.show()
 
 This results in the following graph which gives an indication which sectors are dominant within The Netherlands. Of course this is a mere example and to truly understand the importance of certain companies for the Netherlands, you would need to know market cap of each sector as well including demographics.
 
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/CompaniesPerSectorInTheNetherlands.png)
+![FinanceDatabase](https://user-images.githubusercontent.com/46355364/219180273-4ed5f3a5-6ecf-4994-8a8e-285d9c51fe7d.png)
 
 ### Technical Analysis of Biotech ETFs
 With the help of [ta](https://github.com/bukosabino/ta) and [yfinance](https://github.com/ranaroussi/yfinance) I can 
@@ -414,7 +414,7 @@ This leads to the following graph which gives an indication whether Biotech ETFs
 how this effect is neutralised (to some degree) in the months after. Read more 
 about [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp) here.
 
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/Technical_Analysis_Biotech_Companies_Coronacrisis.png)
+![FinanceDatabase](https://user-images.githubusercontent.com/46355364/219180415-dc303fa3-a615-4f80-96cf-eadb2b804a65.png)
 
 ### Silicon Valley's Market Cap
 If I want to understand which listed technology companies exist in Silicon Valley, I can collect all equities of the sector 'Technology' and then filter based on city to obtain all listed technology companies in 'Silicon Valley'. The city 'San Jose' is where Silicon Valley is located.
