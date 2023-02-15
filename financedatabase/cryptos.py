@@ -1,3 +1,5 @@
+"Cryptos Module"
+
 import json
 
 import requests
@@ -6,6 +8,9 @@ from .helpers import FinanceDatabase
 
 
 class Cryptos(FinanceDatabase):
+    """
+    Cryptos Class
+    """
     FILE_NAME = "cryptos.csv"
 
 

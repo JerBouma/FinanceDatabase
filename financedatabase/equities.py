@@ -1,9 +1,14 @@
+"Equities Module"
+
 import pandas as pd
 
 from .helpers import FinanceDatabase
 
 
 class Equities(FinanceDatabase):
+    """
+    "Equities Class
+    """
     FILE_NAME = "equities.csv"
 
     def select(
@@ -12,7 +17,7 @@ class Equities(FinanceDatabase):
         sector: str = "",
         industry: str = "",
         exclude_exchanges: bool = True,
-        capitalize: bool = True
+        capitalize: bool = True,
     ) -> pd.DataFrame:
         """
         Description
@@ -37,16 +42,25 @@ class Equities(FinanceDatabase):
         capitalize (boolean, default is True):
             Whether country, sector and industry needs to be capitalized. By default
             the values always are capitalized as that is also how it is represented
-            in the csv files. 
+            in the csv files.
+        base_url (string, default is GitHub location)
+            The possibility to enter your own location if desired.
+        use_local_location (string, default False)
+            The possibility to select a local location (i.e. based on Windows path)
+
         Output
         ----
         equities_df (pd.DataFrame)
             Returns a dictionary with a selection or all data based on the input.
         """
-        equities = self.df.copy(deep=True)
-        
+        equities = self.data.copy(deep=True)
+
         if capitalize:
-            country, sector, industry = country.title(), sector.title(), industry.title()
+            country, sector, industry = (
+                country.title(),
+                sector.title(),
+                industry.title(),
+            )
 
         if country:
             equities = equities[equities["country"] == country]
@@ -83,9 +97,11 @@ class Equities(FinanceDatabase):
             raise ValueError("The selection provided is not valid.")
 
         equities = self.select(country=country, sector=sector, industry=industry)
-        
+
         if equities.empty:
             # Meant for the rare cases where capitalizing is not working as desired.
-            equities = self.select(country=country, sector=sector, industry=industry, capitalize=False)
-        
+            equities = self.select(
+                country=country, sector=sector, industry=industry, capitalize=False
+            )
+
         return equities[selection].unique()

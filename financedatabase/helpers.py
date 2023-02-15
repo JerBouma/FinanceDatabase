@@ -1,19 +1,24 @@
+"Helper Module"
+
 from pathlib import Path
 
 import pandas as pd
 
 file_path = Path(__file__).parent.parent / "Database"
-data_repo = (
-    "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/"
+DATA_REPO = (
+    "https://raw.githubusercontent.com/colin99d/FinanceDatabase/new_equities/Database/"
 )
 
 
 class FinanceDatabase:
+    """
+    Helpers Class
+    """
     FILE_NAME = ""
 
     def __init__(
         self,
-        base_url: str = data_repo,
+        base_url: str = DATA_REPO,
         use_local_location: bool = False,
     ):
         """
@@ -30,11 +35,9 @@ class FinanceDatabase:
         """
         the_path = str(file_path) + "/" if use_local_location else base_url
         the_path += self.FILE_NAME
-        self.df = pd.read_csv(the_path, on_bad_lines="skip", sep=";")
+        self.data = pd.read_csv(the_path, on_bad_lines="skip", sep=";")
 
-    def search(
-        self, query: str, search: str = "summary", case_sensitive: bool = False
-    ) -> pd.DataFrame:
+    def search(self, **kwargs: str) -> pd.DataFrame:
         """
         Description
         ----
@@ -43,10 +46,9 @@ class FinanceDatabase:
 
         Input
         ----
-        query (string)
-            The search term that is used to search in the dictionary.
-        search (string):
-            The column you wish to search in. The default is 'summary'.
+        kwargs: str
+            Should contain the column name and query you wish to do.
+            This can for example be symbol="TSLA" or sector="Technology".
         case_sensitive (boolean):
             A variable that determines whether the query needs to be case
             sensitive or not. Default is False.
@@ -56,11 +58,24 @@ class FinanceDatabase:
         new_df pd.DataFrame
             Returns a dataframe with a selection based on the input.
         """
-        if search not in self.df.columns:
-            raise ValueError("Invalid search column selected")
-        return self.df[
-            self.df[search].str.contains(query, case=case_sensitive, na=False)
-        ]
+
+        data_filter = self.data.copy()
+
+        if "case_sensitive" in kwargs:
+            case_sensitive = kwargs["case_sensitive"]
+            kwargs = {k: v for k, v in kwargs.items() if k != "case_sensitive"}
+        else:
+            case_sensitive = False
+
+        for key, value in kwargs.items():
+            if key not in data_filter.columns:
+                print(f"{key} is not a valid column.")
+            else:
+                data_filter = data_filter[
+                    data_filter[key].str.contains(value, case=case_sensitive, na=False)
+                ]
+
+        return data_filter
 
     def options(self) -> pd.Series:
         """
@@ -73,4 +88,4 @@ class FinanceDatabase:
         options (pd.Series)
             Returns a series with all options for the specific asset class.
         """
-        return self.df.columns
+        return self.data.columns
