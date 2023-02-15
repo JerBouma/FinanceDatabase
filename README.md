@@ -96,17 +96,17 @@ Let's start by acquiring the unique countries, sectors and industries of all equ
 ````python
 import financedatabase as fd
 
+# Initalize the Equities database
+equities = fd.Equities()
+
 # Obtain all countries from the database
-equities_countries = fd.show_options('equities', 'countries')
+equities_countries = equities.options('countries')
 
 # Obtain all sectors from the database
-equities_sectors = fd.show_options('equities', 'sectors')
+equities_sectors = equities.options('sectors')
 
 # Obtain all industries from the database
-equities_industries = fd.show_options('equities', 'industries')
-
-# Obtain all countries + sectors + industries from the database
-equities_all_categories = fd.show_options('equities')
+equities_industries = equities.options('industries')
 ````
 
 For countries, you will find the following list if you print `equities_countries`:
@@ -121,42 +121,39 @@ For industries, you will find the following list if you print `equities_industri
 
 `Advertising Agencies, Aerospace & Defense, Aerospace Defense - Major Diversified, Aerospace Defense Products & Services, Agricultural Chemicals, Agricultural Inputs, Air Delivery & Freight Services, Airlines, Airports & Air Services, Aluminum, Apparel Manufacturing, Apparel Retail, Apparel Stores, Asset Management, Auto & Truck Dealerships, Auto Dealerships, Auto Manufacturers, ...`
 
-When you wish to get country, sector or industry specific lists, you can use the related `country`, `sector` and `industry` tags as also found in the help window with `help(fd.show_options)`:
+When you wish to get country, sector or industry specific lists, you can use the related `country`, `sector` and `industry` tags as also found in the help window with `help(equities.options)`:
 
 ```text
-show_options(product, equities_selection=None, country=None, sector=None, industry=None)
+Help on method options in module financedatabase.equities:
+
+options(selection: str, country: str = '', sector: str = '', industry: str = '') -> pandas.core.series.Series method of financedatabase.equities.Equities instance
     Description
     ----
-    Returns all options that exist in the database that you can use to filter the database. In case you
-    use country and/or secto
+    Returns all options for the selection provided.
     
     Input
     ----
-    product (string)
-        Gives all data for a specific product which can be
-        cryptocurrencies, currencies, equities, etfs or funds.
-    equities_selection (string)
-        Gives a sub selection for the possibilities for equities which can be countries, sectors or industries.
-    country (string)
-        By entering a country here, you are able to obtain all Sectors and Industries within this country. You can
-        add in Sector to specify on the Industry level.
-    sector (string)
-        By entering a sector here, you are able to obtain all industries within this sector. You can
-        add in country to specify within a country.
-    industry (boolean)
-        By setting industry to True, you are able to obtain the sector the industry resides in as well as all
-        countries who have companies in this industry.
-    
+    selection (string)
+        The selection you want to see the options for. Can be:
+        - country
+        - sector
+        - industry
+    country (string, default is None)
+        If filled, gives all data for a specific country.
+    sector (string, default is None)
+        If filled, gives all data for a specific sector.
+    industry (string, default is None)
+        If filled, gives all data for a specific industry.
     Output
     ----
-    json_data (dictionary)
-        Returns a dictionary with a selection based on the input.
+    options (pd.Series)
+        Returns a series with all options for the selection provided.
 ```
 
 For example, if I wish to know all available industries within the sector "Basic Materials" in the country United States I can use
 
 ```python
- fd.show_options(product="equities", country="United States", sector="Basic Materials")
+ equities.options(selection='industry', country="United States", sector="Basic Materials")
  ```
 
  Which returns:
@@ -166,7 +163,9 @@ For example, if I wish to know all available industries within the sector "Basic
 This also extends further if you are looking into a different category. For example, find all available currencies by using 
 
 ```python
-fd.show_options('currencies')
+currencies = fd.Currencies()
+
+currencies.options()
 ```
 
 Which returns:
@@ -176,7 +175,9 @@ Which returns:
 But also when it comes to `etfs` with 
 
 ```python
-fd.show_options('etfs')
+etfs = fd.ETFs()
+
+etfs.options(selection="category")
 ```
 
  Which returns:
@@ -185,30 +186,56 @@ fd.show_options('etfs')
 
 ### Collecting information from the database
 
-Once you have figured out how to make use of the `fd.show_options` function, you can query the database for relevant data. Each of the asset classes in the database have a specific `select_` function. This includes the following `select_` options:
+Each of the asset classes in the database have a specific class as follows:
 
-- [Equities](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#equities) (`fd.select_equities`)
-- [ETFs](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#etfs) (`fd.select_etfs`)
-- [Funds](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#funds) (`fd.select_funds`)
-- [Indices](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#indices) (`fd.select_indices`)
-- [Currencies](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#currencies) (`fd.select_currencies`)
-- [Cryptocurrencies](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#cryptocurrencies) (`fd.select_cryptocurrencies`)
-- [Money Markets](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#moneymarkets) (`fd.select_moneymarkets`)
+- [Equities](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#equities) (`fd.Equities()`)
+- [ETFs](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#etfs) (`fd.ETFs()`)
+- [Funds](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#funds) (`fd.Funds()`)
+- [Indices](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#indices) (`fd.Indices()`)
+- [Currencies](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#currencies) (`fd.Currencies()`)
+- [Cryptocurrencies](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#cryptocurrencies) (`fd.Cryptos()`)
+- [Money Markets](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#moneymarkets) (`fd.Moneymarkets()`)
 
 As an example, If you wish to collect data from all equities you can use the following:
 
 ```python
 import financedatabase as fd
 
-all_equities = fd.select_equities()
+equities = fd.Equities()
+
+equities.select()
 ```
 
-This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155.000 different symbols. Find a more elaborate explanation with `help(fd.select_equities)`:
+Which returns the following DataFrame:
+
+|        | symbol   | short_name                      | long_name                                | currency   | sector                 | industry                         | exchange   | market    | country       | state   | city        | zipcode    | website                         | market_cap   |
+|-------:|:---------|:--------------------------------|:-----------------------------------------|:-----------|:-----------------------|:---------------------------------|:-----------|:----------|:--------------|:--------|:------------|:-----------|:--------------------------------|:-------------|
+|  24332 | A        | Agilent Technologies, Inc.      | Agilent Technologies, Inc.               | USD        | Healthcare             | Diagnostics & Research           | NYQ        | us_market | United States | CA      | Santa Clara | 95051      | http://www.agilent.com          | Large Cap    |
+|  25583 | AA       | Alcoa Corporation               | Alcoa Corporation                        | USD        | Basic Materials        | Aluminum                         | NYQ        | us_market | United States | PA      | Pittsburgh  | 15212-5858 | http://www.alcoa.com            | Mid Cap      |
+|  25624 | AAALF    | AAREAL BANK AG                  | Aareal Bank AG                           | USD        | nan                    | nan                              | PNK        | us_market | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    |
+|  25626 | AAALY    | AAREAL BANK AG                  | Aareal Bank AG                           | USD        | nan                    | nan                              | PNK        | us_market | nan           | nan     | nan         | nan        | nan                             | nan          |
+|  25645 | AABB     | ASIA BROADBAND INC              | Asia Broadband, Inc.                     | USD        | Basic Materials        | Other Industrial Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas   | 89135      | http://www.asiabroadbandinc.com | Micro Cap    |
+|      0 | ...      | ...                             | ...                                      | ...        | ...                    | ...                              | ...        | ...       | ...           | ...     | ...         | ...        | ...                             | ...          |
+| 155684 | ZYXI     | Zynex, Inc.                     | Zynex, Inc.                              | USD        | Healthcare             | Medical Devices                  | NCM        | us_market | United States | CO      | Englewood   | 80112      | http://www.zynex.com            | Small Cap    |
+| 155717 | ZZHGF    | ZHONGAN ONLINE P & C INS CO LTD | ZhongAn Online P & C Insurance Co., Ltd. | USD        | Financial Services     | Insurance - Property & Casualty  | PNK        | us_market | China         | nan     | Shanghai    | nan        | http://www.zhongan.com          | Mid Cap      |
+| 155718 | ZZHGY    | ZHONGAN ONLINE P & C INS CO LTD | ZhongAn Online P & C Insurance Co., Ltd. | USD        | nan                    | nan                              | PNK        | us_market | nan           | nan     | nan         | nan        | nan                             | nan          |
+| 155719 | ZZLL     | ZZLL INFORMATION TECHNOLOGY INC | ZZLL Information Technology, Inc.        | USD        | Communication Services | Internet Content & Information   | PNK        | us_market | Hong Kong     | nan     | North Point | nan        | http://www.zzlliti.com          | Nano Cap     |
+| 155727 | ZZZOF    | ZINC ONE RESOURCES INC          | Zinc One Resources Inc.                  | USD        | Basic Materials        | Other Industrial Metals & Mining | PNK        | us_market | Canada        | BC      | Vancouver   | V6E 4H1    | http://www.zincone.com          | Micro Cap    |
+
+This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155.000 different symbols. 
+
+Note that the summary column is taken out on purpose to keep it organized for markdown. The summary is however very handy when it comes to querying specific words as found with the following description given for Apple. All of this information is available when you query the database.
+
+```
+Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. It also sells various related services. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple TV, Apple Watch, Beats products, HomePod, iPod touch, and other Apple-branded and third-party accessories. It also provides AppleCare support services; cloud services store services; and operates various platforms, including the App Store, that allow customers to discover and download applications and digital content, such as books, music, video, games, and podcasts. In addition, the company offers various services, such as Apple Arcade, a game subscription service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV+, which offers exclusive original content; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It sells and delivers third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers, wholesalers, retailers, and resellers. Apple Inc. was founded in 1977 and is headquartered in Cupertino, California.
+```
+
+Find a more elaborate explanation with `help(equities.select)`:
 
 ```text
-Help on function select_equities in module financedatabase.json_picker:
+Help on method select in module financedatabase.equities:
 
-select_equities(country=None, sector=None, industry=None, exclude_exchanges=True, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/Database/Equities', use_local_location=False)
+select(country: str = '', sector: str = '', industry: str = '', exclude_exchanges: bool = True, capitalize: bool = True) -> pandas.core.frame.DataFrame method of financedatabase.equities.Equities instance
     Description
     ----
     Returns all equities when no input is given and has the option to give
@@ -227,7 +254,11 @@ select_equities(country=None, sector=None, industry=None, exclude_exchanges=True
         If filled, gives all data for a specific industry.
     exclude_exchanges (boolean, default is True):
         Whether you want to exclude exchanges from the search. If False,
-        you will receive multiple times i.e. Tesla from different exchanges.
+        you will receive multiple times the product from different exchanges.
+    capitalize (boolean, default is True):
+        Whether country, sector and industry needs to be capitalized. By default
+        the values always are capitalized as that is also how it is represented
+        in the csv files.
     base_url (string, default is GitHub location)
         The possibility to enter your own location if desired.
     use_local_location (string, default False)
@@ -235,52 +266,29 @@ select_equities(country=None, sector=None, industry=None, exclude_exchanges=True
     
     Output
     ----
-    json_data (dictionary)
+    equities_df (pd.DataFrame)
         Returns a dictionary with a selection or all data based on the input.
 ```
 
-As an example, in [Understanding the available options](#understanding-the-available-options) we've used `fd.show_options(product="equities", country="United States", sector="Basic Materials")` which allowed us to look at a specific industry in the United States. So with this information in hand, I can now query the industry `Aluminum` as follows:
+As an example, in [Understanding the available options](#understanding-the-available-options) we've used `equities.options(selection='industry', country="United States", sector="Basic Materials")` which allowed us to look at a specific industry in the United States. So with this information in hand, I can now query the industry `Aluminum` as follows:
 
 ```python
 import financedatabase as fd
 
-aluminium_companies_usa = fd.select_equities(country="United States", sector="Basic Materials", industry="Aluminum")
+equities = fd.Equities()
+
+aluminium_companies_usa = equities.select(country="United States", sector="Basic Materials", industry="Aluminum")
 ```
 
-This gives you a dictionary with the following information:
+This gives you a DataFrame with the following information:
 
-```text
-{'AA': {'short_name': 'Alcoa Corporation',
-  'long_name': 'Alcoa Corporation',
-  'summary': 'Alcoa Corporation, together with its subsidiaries, produces and sells bauxite, alumina, and aluminum products in the United States, Spain, Australia, Brazil, Canada, and internationally. The company operates through three segments: Bauxite, Alumina, and Aluminum. It engages in bauxite mining operations; and processes bauxite into alumina and sells it to customers who process it into industrial chemical products, as well as aluminum smelting, casting, and rolling businesses. The company offers primary aluminum in the form of alloy ingot or value-add ingot to customers that produce products for the transportation, building and construction, packaging, wire, and other industrial markets; and flat-rolled aluminum sheets to customers that produce beverage and food cans. In addition, it owns hydro power plants that produce and sell electricity to the wholesale market to traders, large industrial consumers, distribution companies, and other generation companies. The company was formerly known as Alcoa Upstream Corporation and changed its name to Alcoa Corporation in October 2016. The company was founded in 1888 and is headquartered in Pittsburgh, Pennsylvania.',
-  'currency': 'USD',
-  'sector': 'Basic Materials',
-  'industry': 'Aluminum',
-  'exchange': 'NYQ',
-  'market': 'us_market',
-  'country': 'United States',
-  'state': 'PA',
-  'city': 'Pittsburgh',
-  'zipcode': '15212-5858',
-  'website': 'http://www.alcoa.com',
-  'market_cap': 'Mid Cap'},
- 'CENX': {'short_name': 'Century Aluminum Company',
-  'long_name': 'Century Aluminum Company',
-  'summary': 'Century Aluminum Company, together with its subsidiaries, produces standard-grade and value-added primary aluminum products in the United States and Iceland. The company was incorporated in 1981 and is headquartered in Chicago, Illinois.',
-  'currency': 'USD',
-  'sector': 'Basic Materials',
-  'industry': 'Aluminum',
-  'exchange': 'NMS',
-  'market': 'us_market',
-  'country': 'United States',
-  'state': 'IL',
-  'city': 'Chicago',
-  'zipcode': '60606',
-  'website': 'http://centuryaluminum.com',
-  'market_cap': 'Small Cap'}
-
-<continues>
-```
+|        | symbol   | short_name                  | long_name                            | currency   | sector          | industry   | exchange   | market    | country       | state   | city           | zipcode    | website                       | market_cap   |
+|-------:|:---------|:----------------------------|:-------------------------------------|:-----------|:----------------|:-----------|:-----------|:----------|:--------------|:--------|:---------------|:-----------|:------------------------------|:-------------|
+|  25583 | AA       | Alcoa Corporation           | Alcoa Corporation                    | USD        | Basic Materials | Aluminum   | NYQ        | us_market | United States | PA      | Pittsburgh     | 15212-5858 | http://www.alcoa.com          | Mid Cap      |
+|  48264 | CENX     | Century Aluminum Company    | Century Aluminum Company             | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | IL      | Chicago        | 60606      | http://centuryaluminum.com    | Small Cap    |
+|  83162 | KALU     | Kaiser Aluminum Corporation | Kaiser Aluminum Corporation          | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | CA      | Foothill Ranch | 92610-2831 | http://www.kaiseraluminum.com | Mid Cap      |
+| 102260 | NORNQ    | NORANDA ALUM HLDG CORP      | Noranda Aluminum Holding Corporation | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | TN      | Franklin       | 37067      | nan                           | Nano Cap     |
+| 106568 | ORMTQ    | ORMET CORP                  | Ormet Corporation                    | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | OH      | Hannibal       | 43931      | nan                           | Nano Cap     |
 
 As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Basic Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
 
@@ -289,11 +297,11 @@ As you can imagine, looking at such a specific selection only yields a few resul
 ### Storing the database at a different location
 If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
 `base_url` which you can find in each of the above 'select' functions. An example would be:
-- `select_funds(category='Africa Equity', base_url=<YOUR URL>)`
+- `fd.Equities(base_url=<YOUR URL>)`
 
 You can also store the database locally and point to your local location with the variable `base_url` and by setting
 `use_local_location` to True. An example would be:
-- `select_etfs(category='Bank Loan', base_url='C:/Users/jerbo/FinanceDatabase/Database/ETFs/', use_local_location=True)`
+- `fd.Equities(base_url=<YOUR PATH>, use_local_location=True)`
 
 ## Examples
 This section gives a few examples of the possibilities with this package. These are merely a few of the things you
@@ -305,11 +313,15 @@ I want to see how many companies exist in each sector in the Netherlands. Let's 
 following code, I skip a sector when it has no data and also do not include companies that are not categorized:
 
 ````python
+import financedatabase as fd
+
+equities = fd.Equities()
+
 equities_per_sector_netherlands = {}
 
-for sector in equities_sectors[1:]:
+for sector in equities.options(selection='sector', country='Netherlands'):
     try:
-        equities_per_sector_netherlands[sector] = len(fd.select_equities(country='Netherlands', sector=sector))
+        equities_per_sector_netherlands[sector] = len(equities.select(country='Netherlands', sector=sector))
     except ValueError as error:
         print(error)
 ````
@@ -317,6 +329,8 @@ for sector in equities_sectors[1:]:
 Lastly, I plot the data in a pie chart and add some formatting to make the pie chart look a bit nicer:
 
 ````python
+import matplotlib.pyplot as plt
+
 legend, values = zip(*equities_per_sector_netherlands.items())
 
 colors = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'tab:blue', 'tab:orange', 'tab:gray',
@@ -342,8 +356,9 @@ for biotech-related ETFs:
 ````python
 import financedatabase as fd
 
-health_etfs = fd.select_etfs(category='Health')
-health_etfs_in_biotech = fd.search_products(health_etfs, 'biotech')
+etfs = fd.ETFs()
+
+health_etfs_in_biotech = etfs.search(category='Health', summary='biotech')
 ````
 
 Then, I collect stock data on each ticker and remove tickers that have no data in my chosen period. The period I have 
@@ -352,7 +367,9 @@ chosen shows the initial impact of the Coronacrisis on the financial markets.
 ````python
 import yfinance as yf
 
-stock_data_biotech = yf.download(list(health_etfs_in_biotech.keys()), start="2020-01-01", end="2020-06-01")['Adj Close']
+tickers = list(health_etfs_in_biotech['symbol'])
+
+stock_data_biotech = yf.download(tickers, start="2020-01-01", end="2020-06-01")['Adj Close']
 stock_data_biotech = stock_data_biotech.dropna(axis='columns')
 ````
 
@@ -371,6 +388,7 @@ column = 0
 
 for ticker in stock_data_biotech.columns:
     data_plot = pd.DataFrame(stock_data_biotech[ticker])
+    long_name = health_etfs_in_biotech.loc[health_etfs_in_biotech.symbol == ticker, 'long_name'].iloc[0]
 
     indicator_bb = BollingerBands(close=stock_data_biotech[ticker], window=20, window_dev=2)
 
@@ -379,7 +397,7 @@ for ticker in stock_data_biotech.columns:
     data_plot['bb_bbl'] = indicator_bb.bollinger_lband()
 
     axis[row, column].plot(data_plot)
-    axis[row, column].set_title(health_etfs_in_biotech[ticker]['long_name'], fontsize=6)
+    axis[row, column].set_title(long_name, fontsize=6)
     axis[row, column].set_xticks([])
     axis[row, column].set_yticks([])
 
@@ -404,19 +422,21 @@ If I want to understand which listed technology companies exist in Silicon Valle
 ````python
 import financedatabase as fd
 
-all_technology_companies = fd.select_equities(sector='Technology')
-silicon_valley = fd.search_products(all_technology_companies, query='San Jose', search='city')
+equities = fd.Equities()
+
+silicon_valley = equities.search(sector='Technology', city='San Jose')
 ````
 Then I start collecting data with the [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) package. Here I collect the key metrics which include 57 different metrics (ranging from PE ratios to Market Cap).
 
 ````python
-import FundamentalAnalysis as fa
+import fundamentalanalysis as fa
 
-API_KEY = "YOUR API KEY HERE"
+API_KEY = "YOUR_API_KEY_HERE"
 data_set = {}
-for ticker in silicon_valley:
+
+for ticker in silicon_valley['symbol']:
     try:
-        data_set[ticker] = fa.key_metrics(ticker, API_KEY, period='annual')
+        data_set[ticker] = fa.key_metrics(ticker, API_KEY, period='annual', limit=10)
     except Exception:
         continue
 ````
@@ -427,19 +447,20 @@ Then I make a selection based on the last 5 years and filter by market cap to co
 import pandas as pd
 import matplotlib.pyplot as plt
 
-years = ['2016', '2017', '2018', '2019', '2020']
+years = ['2018', '2019', '2020', '2021', '2022']
 market_cap = pd.DataFrame(index=years)
+
 for ticker in data_set:
     try:
         data_years = []
-        for year in years:
+        for year in years: 
             data_years.append(data_set[ticker].loc['marketCap'][year])
-        market_cap[all_technology_companies[ticker]['short_name']] = data_years
+        market_cap[silicon_valley.loc[silicon_valley.symbol == ticker]['short_name'].iloc[0]] = data_years
     except Exception:
         continue
 
 market_cap_plot = market_cap.plot.bar(stacked=True, rot=0, colormap='Spectral')
-market_cap_plot.legend(prop={'size': 5.25})
+market_cap_plot.legend(prop={'size': 5.25}, loc='upper left')
 plt.show()
 ````
 
@@ -468,7 +489,7 @@ consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues)
       Google to see if there is really no data available. If you can't find anything about the ticker, consider updating the database by visiting the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
 
 ## Contribution
-After setting up Git, you can fork and pull the project in. Note that is bulky given the large collection of files.
+After setting up Git, you can fork and pull the project in.
 
 1. Fork the Project ([more info](https://docs.github.com/en/get-started/quickstart/fork-a-repo))
     - **Using GitHub Desktop:** [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop) will guide you through setting up Desktop. Once Desktop is set up, you can use it to [fork the repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop)!

@@ -126,15 +126,15 @@ fd.show_options('etfs')
 
 ### Collecting information from the database
 
-Once you have figured out how to make use of the `fd.show_options` function, you can query the database for relevant data. Each of the asset classes in the database have a specific `select_` function. This includes the following `select_` options:
+Each of the asset classes in the database have a specific class as follows:
 
-- [Equities](#equities) (`fd.select_equities`)
-- [ETFs](#etfs) (`fd.select_etfs`)
-- [Funds](#funds) (`fd.select_funds`)
-- [Indices](#indices) (`fd.select_indices`)
-- [Currencies](#currencies) (`fd.select_currencies`)
-- [Cryptocurrencies](#cryptocurrencies) (`fd.select_cryptocurrencies`)
-- [Money Markets](#moneymarkets) (`fd.select_moneymarkets`)
+- [Equities](#equities) (`fd.Equities()`)
+- [ETFs](#etfs) (`fd.ETFs()`)
+- [Funds](#funds) (`fd.Funds()`)
+- [Indices](#indices) (`fd.Indices()`)
+- [Currencies](#currencies) (`fd.Currencies()`)
+- [Cryptocurrencies](#cryptocurrencies) (`fd.Cryptos()`)
+- [Money Markets](#moneymarkets) (`fd.Moneymarkets()`)
 
 ### Equities
 
@@ -143,15 +143,41 @@ If you wish to collect data from all equities you can use the following:
 ```python
 import financedatabase as fd
 
-all_equities = fd.select_equities()
+equities = fd.Equities()
+
+equities.select()
 ```
 
-This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155.000 different symbols. Find a more elaborate explanation with `help(fd.select_equities)`:
+Which returns the following DataFrame:
+
+|        | symbol   | short_name                      | long_name                                | currency   | sector                 | industry                         | exchange   | market    | country       | state   | city        | zipcode    | website                         | market_cap   |
+|-------:|:---------|:--------------------------------|:-----------------------------------------|:-----------|:-----------------------|:---------------------------------|:-----------|:----------|:--------------|:--------|:------------|:-----------|:--------------------------------|:-------------|
+|  24332 | A        | Agilent Technologies, Inc.      | Agilent Technologies, Inc.               | USD        | Healthcare             | Diagnostics & Research           | NYQ        | us_market | United States | CA      | Santa Clara | 95051      | http://www.agilent.com          | Large Cap    |
+|  25583 | AA       | Alcoa Corporation               | Alcoa Corporation                        | USD        | Basic Materials        | Aluminum                         | NYQ        | us_market | United States | PA      | Pittsburgh  | 15212-5858 | http://www.alcoa.com            | Mid Cap      |
+|  25624 | AAALF    | AAREAL BANK AG                  | Aareal Bank AG                           | USD        | nan                    | nan                              | PNK        | us_market | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    |
+|  25626 | AAALY    | AAREAL BANK AG                  | Aareal Bank AG                           | USD        | nan                    | nan                              | PNK        | us_market | nan           | nan     | nan         | nan        | nan                             | nan          |
+|  25645 | AABB     | ASIA BROADBAND INC              | Asia Broadband, Inc.                     | USD        | Basic Materials        | Other Industrial Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas   | 89135      | http://www.asiabroadbandinc.com | Micro Cap    |
+|      0 | ...      | ...                             | ...                                      | ...        | ...                    | ...                              | ...        | ...       | ...           | ...     | ...         | ...        | ...                             | ...          |
+| 155684 | ZYXI     | Zynex, Inc.                     | Zynex, Inc.                              | USD        | Healthcare             | Medical Devices                  | NCM        | us_market | United States | CO      | Englewood   | 80112      | http://www.zynex.com            | Small Cap    |
+| 155717 | ZZHGF    | ZHONGAN ONLINE P & C INS CO LTD | ZhongAn Online P & C Insurance Co., Ltd. | USD        | Financial Services     | Insurance - Property & Casualty  | PNK        | us_market | China         | nan     | Shanghai    | nan        | http://www.zhongan.com          | Mid Cap      |
+| 155718 | ZZHGY    | ZHONGAN ONLINE P & C INS CO LTD | ZhongAn Online P & C Insurance Co., Ltd. | USD        | nan                    | nan                              | PNK        | us_market | nan           | nan     | nan         | nan        | nan                             | nan          |
+| 155719 | ZZLL     | ZZLL INFORMATION TECHNOLOGY INC | ZZLL Information Technology, Inc.        | USD        | Communication Services | Internet Content & Information   | PNK        | us_market | Hong Kong     | nan     | North Point | nan        | http://www.zzlliti.com          | Nano Cap     |
+| 155727 | ZZZOF    | ZINC ONE RESOURCES INC          | Zinc One Resources Inc.                  | USD        | Basic Materials        | Other Industrial Metals & Mining | PNK        | us_market | Canada        | BC      | Vancouver   | V6E 4H1    | http://www.zincone.com          | Micro Cap    |
+
+This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155.000 different symbols. 
+
+Note that the summary column is taken out on purpose to keep it organized for markdown. The summary is however very handy when it comes to querying specific words as found with the following description given for Microsoft. All of this information is available when you query the database.
+
+```
+Microsoft Corporation develops, licenses, and supports software, services, devices, and solutions worldwide. Its Productivity and Business Processes segment offers Office, Exchange, SharePoint, Microsoft Teams, Office 365 Security and Compliance, and Skype for Business, as well as related Client Access Licenses (CAL); Skype, Outlook.com, OneDrive, and LinkedIn; and Dynamics 365, a set of cloud-based and on-premises business solutions for small and medium businesses, large organizations, and divisions of enterprises. Its Intelligent Cloud segment licenses SQL and Windows Servers, Visual Studio, System Center, and related CALs; GitHub that provides a collaboration platform and code hosting service for developers; and Azure, a cloud platform. It also offers support services and Microsoft consulting services to assist customers in developing, deploying, and managing Microsoft server and desktop solutions; and training and certification to developers and IT professionals on various Microsoft products. Its More Personal Computing segment provides Windows original equipment manufacturer (OEM) licensing and other non-volume licensing of the Windows operating system; Windows Commercial, such as volume licensing of the Windows operating system, Windows cloud services, and other Windows commercial offerings; patent licensing; Windows Internet of Things; and MSN advertising. It also offers Surface, PC accessories, PCs, tablets, gaming and entertainment consoles, and other devices; Gaming, including Xbox hardware, and Xbox content and services; video games and third-party video game royalties; and Search, including Bing and Microsoft advertising. It sells its products through OEMs, distributors, and resellers; and directly through digital marketplaces, online stores, and retail stores. It has a strategic collaboration with DXC Technology and Dynatrace, Inc.; and a partnership with WPP plc. The company was founded in 1975 and is headquartered in Redmond, Washington.
+```
+
+Find a more elaborate explanation with `help(equities.select)`:
 
 ```text
-Help on function select_equities in module financedatabase.json_picker:
+Help on method select in module financedatabase.equities:
 
-select_equities(country=None, sector=None, industry=None, exclude_exchanges=True, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/Database/Equities', use_local_location=False)
+select(country: str = '', sector: str = '', industry: str = '', exclude_exchanges: bool = True, capitalize: bool = True) -> pandas.core.frame.DataFrame method of financedatabase.equities.Equities instance
     Description
     ----
     Returns all equities when no input is given and has the option to give
@@ -170,7 +196,11 @@ select_equities(country=None, sector=None, industry=None, exclude_exchanges=True
         If filled, gives all data for a specific industry.
     exclude_exchanges (boolean, default is True):
         Whether you want to exclude exchanges from the search. If False,
-        you will receive multiple times i.e. Tesla from different exchanges.
+        you will receive multiple times the product from different exchanges.
+    capitalize (boolean, default is True):
+        Whether country, sector and industry needs to be capitalized. By default
+        the values always are capitalized as that is also how it is represented
+        in the csv files.
     base_url (string, default is GitHub location)
         The possibility to enter your own location if desired.
     use_local_location (string, default False)
@@ -178,53 +208,29 @@ select_equities(country=None, sector=None, industry=None, exclude_exchanges=True
     
     Output
     ----
-    json_data (dictionary)
+    equities_df (pd.DataFrame)
         Returns a dictionary with a selection or all data based on the input.
 ```
 
-
-As an example, in [Understanding the available options](#understanding-the-available-options) we've used `fd.show_options(product="equities", country="United States", sector="Basic Materials")` which allowed us to look at a specific industry in the United States. So with this information in hand, I can now query the industry `Aluminum` as follows:
+As an example, in [Understanding the available options](#understanding-the-available-options) we've used `equities.options(selection='industry', country="United States", sector="Basic Materials")` which allowed us to look at a specific industry in the United States. So with this information in hand, I can now query the industry `Aluminum` as follows:
 
 ```python
 import financedatabase as fd
 
-aluminium_companies_usa = fd.select_equities(country="United States", sector="Basic Materials", industry="Aluminum")
+equities = fd.Equities()
+
+aluminium_companies_usa = equities.select(country="United States", sector="Basic Materials", industry="Aluminum")
 ```
 
-This gives you a dictionary with the following information:
+This gives you a DataFrame with the following information:
 
-```text
-{'AA': {'city': 'Pittsburgh',
-  'country': 'United States',
-  'currency': 'USD',
-  'exchange': 'NYQ',
-  'industry': 'Aluminum',
-  'long_name': 'Alcoa Corporation',
-  'market': 'us_market',
-  'market_cap': 'Mid Cap',
-  'sector': 'Basic Materials',
-  'short_name': 'Alcoa Corporation',
-  'state': 'PA',
-  'summary': 'Alcoa Corporation, together with its subsidiaries, produces and sells bauxite, alumina, and aluminum products in the United States, Spain, Australia, Brazil, Canada, and internationally. The company operates through three segments: Bauxite, Alumina, and Aluminum. It engages in bauxite mining operations; and processes bauxite into alumina and sells it to customers who process it into industrial chemical products, as well as aluminum smelting, casting, and rolling businesses. The company offers primary aluminum in the form of alloy ingot or value-add ingot to customers that produce products for the transportation, building and construction, packaging, wire, and other industrial markets; and flat-rolled aluminum sheets to customers that produce beverage and food cans. In addition, it owns hydro power plants that produce and sell electricity to the wholesale market to traders, large industrial consumers, distribution companies, and other generation companies. The company was formerly known as Alcoa Upstream Corporation and changed its name to Alcoa Corporation in October 2016. The company was founded in 1888 and is headquartered in Pittsburgh, Pennsylvania.',
-  'website': 'http://www.alcoa.com',
-  'zipcode': '15212-5858'},
- 'CENX': {'city': 'Chicago',
-  'country': 'United States',
-  'currency': 'USD',
-  'exchange': 'NMS',
-  'industry': 'Aluminum',
-  'long_name': 'Century Aluminum Company',
-  'market': 'us_market',
-  'market_cap': 'Small Cap',
-  'sector': 'Basic Materials',
-  'short_name': 'Century Aluminum Company',
-  'state': 'IL',
-  'summary': 'Century Aluminum Company, together with its subsidiaries, produces standard-grade and value-added primary aluminum products in the United States and Iceland. The company was incorporated in 1981 and is headquartered in Chicago, Illinois.',
-  'website': 'http://centuryaluminum.com',
-  'zipcode': '60606'},
-
-<continues>
-```
+|        | symbol   | short_name                  | long_name                            | currency   | sector          | industry   | exchange   | market    | country       | state   | city           | zipcode    | website                       | market_cap   |
+|-------:|:---------|:----------------------------|:-------------------------------------|:-----------|:----------------|:-----------|:-----------|:----------|:--------------|:--------|:---------------|:-----------|:------------------------------|:-------------|
+|  25583 | AA       | Alcoa Corporation           | Alcoa Corporation                    | USD        | Basic Materials | Aluminum   | NYQ        | us_market | United States | PA      | Pittsburgh     | 15212-5858 | http://www.alcoa.com          | Mid Cap      |
+|  48264 | CENX     | Century Aluminum Company    | Century Aluminum Company             | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | IL      | Chicago        | 60606      | http://centuryaluminum.com    | Small Cap    |
+|  83162 | KALU     | Kaiser Aluminum Corporation | Kaiser Aluminum Corporation          | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | CA      | Foothill Ranch | 92610-2831 | http://www.kaiseraluminum.com | Mid Cap      |
+| 102260 | NORNQ    | NORANDA ALUM HLDG CORP      | Noranda Aluminum Holding Corporation | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | TN      | Franklin       | 37067      | nan                           | Nano Cap     |
+| 106568 | ORMTQ    | ORMET CORP                  | Ormet Corporation                    | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | OH      | Hannibal       | 43931      | nan                           | Nano Cap     |
 
 As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Basic Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
 
