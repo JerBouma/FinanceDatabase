@@ -64,9 +64,10 @@ or by manual search.
 
 1. [Installation](#installation)
 2. [Basic Usage](#basic-usage)
-    1. [Understanding the available options](#understanding-the-available-options)
-    2. [Collecting information from the database](#collecting-information-from-the-database)
-    3. [Storing the database at a different location](#storing-the-database-at-a-different-location)
+    1. [Quick Start](#quick-start)
+    2. [Understanding the available options](#understanding-the-available-options)
+    3. [Collecting information from the database](#collecting-information-from-the-database)
+    4. [Storing the database at a different location](#storing-the-database-at-a-different-location)
 2. [Examples](#examples)
     1. [Companies in the Netherlands](#companies-in-the-netherlands)
     2. [Technical Analysis of Biotech ETFs](#technical-analysis-of-biotech-etfs)
@@ -86,6 +87,39 @@ You can install the package with the following steps:
 This section gives a few examples of the possibilities with this package. These are merely a few of the things you
 can do with the package. **As you can obtain a wide range of symbols, pretty much any 
 package that requires symbols should work.**
+
+
+### Quick Start
+
+Same methods apply to all other asset classes as well. Columns may vary.
+
+```
+import financedatabase as fd
+
+# Initialize the Equities database
+equities = fd.Equities()
+
+# Obtain all countries from the database
+equities_countries = equities.options('countries')
+
+# Obtain all sectors from the database
+equities_sectors = equities.options('sectors')
+
+# Obtain all industries from a country from the database
+equities_industries = equities.options('industries', country='Germany')
+
+# Obtain a selection from the database
+equities_united_states = equities.select(country="United States")
+
+# Obtain a detailed selection from the database
+equities_usa_consumer_electronics = equities.select(country="United States", industry="Consumer Electronics")
+
+# Search specific fields from the database
+equities_uk_biotech = equities.search(country='United Kingdom', summary='biotech', exchange='LSE')
+```
+
+Scroll down below for a more elaborate explanation and detailed examples.
+
 
 ### Understanding the available options
 Understanding which countries, sectors, industries and categories exist is important to be able to search the database properly. Not only to understand the focus a specific the country but also to understand which area holds the most data. This is a demonstration of the ```show_options``` function, a function crucial to querying data from the Database. The output of all functionalities is cut off in this README for illustration purposes.
