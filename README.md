@@ -93,7 +93,7 @@ package that requires symbols should work.**
 
 Same methods apply to all other asset classes as well. Columns may vary.
 
-```
+```python
 import financedatabase as fd
 
 # Initialize the Equities database
