@@ -428,6 +428,7 @@ silicon_valley = equities.search(sector='Technology', city='San Jose')
 ````
 Then I start collecting data with the [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) package. Here I collect the key metrics which include 57 different metrics (ranging from PE ratios to Market Cap).
 
+
 ````python
 import fundamentalanalysis as fa
 
@@ -466,7 +467,7 @@ plt.show()
 
 This results in the graph displayed below which separates the small companies from the large companies. Note that  this does not include _all_ technology companies in Silicon Valley because most are not listed or are not included in the database of the FundamentalAnalysis package.
 
-![FinanceDatabase](https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/examples/Silicon_Valley_Technology_MarketCap.png)
+![FinanceDatabase](https://user-images.githubusercontent.com/46355364/219179328-7eb54138-42a1-4d51-9ae1-5ac182c33440.png)
 
 ## Questions & Answers
 In this section you can find answers to commonly asked questions. In case the answer to your question is not here, 
