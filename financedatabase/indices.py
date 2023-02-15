@@ -70,4 +70,4 @@ class Indices(FinanceDatabase):
         """
         indices = self.select()
 
-        return indices["currency"].unique()
+        return indices["currency"].dropna().sort_values().unique()

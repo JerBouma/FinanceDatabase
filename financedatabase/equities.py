@@ -110,4 +110,4 @@ class Equities(FinanceDatabase):
                 country=country, sector=sector, industry=industry, capitalize=False
             )
 
-        return equities[selection].unique()
+        return equities[selection].dropna().sort_values().unique()

@@ -64,4 +64,4 @@ class Currencies(FinanceDatabase):
         """
         currencies = self.select()
 
-        return currencies["currency"].unique()
+        return currencies["currency"].dropna().sort_values().unique()

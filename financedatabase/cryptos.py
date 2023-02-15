@@ -65,4 +65,4 @@ class Cryptos(FinanceDatabase):
         """
         cryptos = self.select()
 
-        return cryptos["cryptocurrency"].unique()
+        return cryptos["cryptocurrency"].dropna().sort_values().unique()

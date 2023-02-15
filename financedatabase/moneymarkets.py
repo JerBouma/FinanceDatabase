@@ -72,4 +72,4 @@ class Moneymarkets(FinanceDatabase):
         """
         moneymarkets = self.select()
 
-        return moneymarkets["currency"].unique()
+        return moneymarkets["currency"].dropna().sort_values().unique()
