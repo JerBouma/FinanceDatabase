@@ -80,7 +80,6 @@ The package `financedatabase` allows you to select specific json files as well a
 
 You can install the package with the following steps:
 1. `pip install financedatabase`
-    - Alternatively, download the 'Searcher' directory.
 2. (within Python) `import financedatabase as fd`
 
 ##  Basic Usage
