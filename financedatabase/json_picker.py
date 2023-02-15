@@ -108,7 +108,7 @@ def select_etfs(
             json_data = json.load(json_local)
     else:
         try:
-            category = category.replace("%", "%25").replace(" ", "%20")
+            clean_category = clean_category.replace("%", "%25").replace(" ", "%20")
             json_file = f"{base_url}/{clean_category}.json"
             request = requests.get(json_file, timeout=30)
             json_data = json.loads(request.text)
