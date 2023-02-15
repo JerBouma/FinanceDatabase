@@ -12,6 +12,7 @@ class Equities(FinanceDatabase):
         sector: str = "",
         industry: str = "",
         exclude_exchanges: bool = True,
+        capitalize: bool = True
     ) -> pd.DataFrame:
         """
         Description
@@ -33,17 +34,20 @@ class Equities(FinanceDatabase):
         exclude_exchanges (boolean, default is True):
             Whether you want to exclude exchanges from the search. If False,
             you will receive multiple times i.e. Tesla from different exchanges.
-        base_url (string, default is GitHub location)
-            The possibility to enter your own location if desired.
-        use_local_location (string, default False)
-            The possibility to select a local location (i.e. based on Windows path)
-
+        capitalize (boolean, default is True):
+            Whether country, sector and industry needs to be capitalized. By default
+            the values always are capitalized as that is also how it is represented
+            in the csv files. 
         Output
         ----
         equities_df (pd.DataFrame)
             Returns a dictionary with a selection or all data based on the input.
         """
         equities = self.df.copy(deep=True)
+        
+        if capitalize:
+            country, sector, industry = country.title(), sector.title(), industry.title()
+
         if country:
             equities = equities[equities["country"] == country]
         if sector:
@@ -79,4 +83,9 @@ class Equities(FinanceDatabase):
             raise ValueError("The selection provided is not valid.")
 
         equities = self.select(country=country, sector=sector, industry=industry)
+        
+        if equities.empty:
+            # Meant for the rare cases where capitalizing is not working as desired.
+            equities = self.select(country=country, sector=sector, industry=industry, capitalize=False)
+        
         return equities[selection].unique()
