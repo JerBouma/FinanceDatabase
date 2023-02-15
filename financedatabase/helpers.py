@@ -14,6 +14,7 @@ class FinanceDatabase:
     """
     Helpers Class
     """
+
     FILE_NAME = ""
 
     def __init__(

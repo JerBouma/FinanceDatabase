@@ -9,6 +9,7 @@ class Equities(FinanceDatabase):
     """
     "Equities Class
     """
+
     FILE_NAME = "equities.csv"
 
     def select(

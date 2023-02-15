@@ -11,6 +11,7 @@ class Cryptos(FinanceDatabase):
     """
     Cryptos Class
     """
+
     FILE_NAME = "cryptos.csv"
 
 
