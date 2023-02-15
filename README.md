@@ -95,7 +95,7 @@ Let's start by acquiring the unique countries, sectors and industries of all equ
 ````python
 import financedatabase as fd
 
-# Initalize the Equities database
+# Initialize the Equities database
 equities = fd.Equities()
 
 # Obtain all countries from the database
@@ -163,7 +163,7 @@ For example, if I wish to know all available industries within the sector "Basic
 This also extends further if you are looking into a different category. For example, find all available currencies by using 
 
 ```python
-# Initalize the Currencies database
+# Initialize the Currencies database
 currencies = fd.Currencies()
 
 # Obtain all available currencies
@@ -177,7 +177,7 @@ Which returns:
 But also when it comes to `etfs` with 
 
 ```python
-# Initalize the ETFs database
+# Initialize the ETFs database
 etfs = fd.ETFs()
 
 # Obtain all availables categories
@@ -205,7 +205,7 @@ As an example, If you wish to collect data from all equities you can use the fol
 ```python
 import financedatabase as fd
 
-# Initalize the Equities database
+# Initialize the Equities database
 equities = fd.Equities()
 
 # Obtain all data available excluding international exchanges
