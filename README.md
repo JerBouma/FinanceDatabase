@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/46355364/219179972-5c97f378-4dcc-4a1e-a6ed-a376db1d8df7.png" alt="Logo">
+    <img src="https://user-images.githubusercontent.com/46355364/219180773-7c70fe5d-8597-43ce-8b11-96dee2afb98a.png" alt="Logo">
 </center>
 <p align="center">
     <a href="https://www.buymeacoffee.com/jerbouma">
