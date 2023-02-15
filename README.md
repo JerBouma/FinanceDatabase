@@ -153,6 +153,7 @@ options(selection: str, country: str = '', sector: str = '', industry: str = '')
 For example, if I wish to know all available industries within the sector "Basic Materials" in the country United States I can use
 
 ```python
+# Obtain a filtered selection of available industries
  equities.options(selection='industry', country="United States", sector="Basic Materials")
  ```
 
@@ -163,8 +164,10 @@ For example, if I wish to know all available industries within the sector "Basic
 This also extends further if you are looking into a different category. For example, find all available currencies by using 
 
 ```python
+# Initalize the Currencies database
 currencies = fd.Currencies()
 
+# Obtain all available currencies
 currencies.options()
 ```
 
@@ -175,8 +178,10 @@ Which returns:
 But also when it comes to `etfs` with 
 
 ```python
+# Initalize the ETFs database
 etfs = fd.ETFs()
 
+# Obtain all availables categories
 etfs.options(selection="category")
 ```
 
@@ -201,8 +206,10 @@ As an example, If you wish to collect data from all equities you can use the fol
 ```python
 import financedatabase as fd
 
+# Initalize the Equities database
 equities = fd.Equities()
 
+# Obtain all data available excluding international exchanges
 equities.select()
 ```
 
@@ -269,10 +276,7 @@ select(country: str = '', sector: str = '', industry: str = '', exclude_exchange
 As an example, in [Understanding the available options](#understanding-the-available-options) we've used `equities.options(selection='industry', country="United States", sector="Basic Materials")` which allowed us to look at a specific industry in the United States. So with this information in hand, I can now query the industry `Aluminum` as follows:
 
 ```python
-import financedatabase as fd
-
-equities = fd.Equities()
-
+# Obtain a filtered selection of companies
 aluminium_companies_usa = equities.select(country="United States", sector="Basic Materials", industry="Aluminum")
 ```
 
