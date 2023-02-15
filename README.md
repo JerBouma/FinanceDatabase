@@ -100,13 +100,13 @@ import financedatabase as fd
 equities = fd.Equities()
 
 # Obtain all countries from the database
-equities_countries = equities.options('countries')
+equities_countries = equities.options('country')
 
 # Obtain all sectors from the database
-equities_sectors = equities.options('sectors')
+equities_sectors = equities.options('sector')
 
 # Obtain all industries from a country from the database
-equities_industries = equities.options('industries', country='Germany')
+equities_germany_industries = equities.options('industry', country='Germany')
 
 # Obtain a selection from the database
 equities_united_states = equities.select(country="United States")
