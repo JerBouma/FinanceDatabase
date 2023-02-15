@@ -61,3 +61,16 @@ class FinanceDatabase:
         return self.df[
             self.df[search].str.contains(query, case=case_sensitive, na=False)
         ]
+
+    def options(self) -> pd.Series:
+        """
+        Description
+        ----
+        Returns all options for the specific asset class.
+
+        Output
+        ----
+        options (pd.Series)
+            Returns a series with all options for the specific asset class.
+        """
+        return self.df.columns
