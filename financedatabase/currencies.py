@@ -1,4 +1,4 @@
-"Cryptos Module"
+"Currencies Module"
 
 import json
 import pandas as pd
@@ -8,31 +8,30 @@ import requests
 from .helpers import FinanceDatabase
 
 
-class Cryptos(FinanceDatabase):
+class Currencies(FinanceDatabase):
     """
-    Cryptos Class
+    Currencies Class
     """
 
-    FILE_NAME = "cryptos.csv"
+    FILE_NAME = "currencies.csv"
 
     def select(
         self,
-        crypto: str = "",
+        currency: str = "",
         capitalize: bool = True,
     ) -> pd.DataFrame:
         """
         Description
         ----
-        Returns all cryptos when no input is given and has the option to give
-        a specific combination of cryptos based on the crypto defined.
-
+        Returns all currencies when no input is given and has the option to give
+        a specific combination of currencies based on the currency defined.
 
         Input
         ----
-        crypto (string, default is None)
-            If filled, gives all data for a specific crypto.
+        currency (string, default is None)
+            If filled, gives all data for a specific currency.
         capitalize (boolean, default is True):
-            Whether the crypto needs to be capitalized. By default the values
+            Whether the currency needs to be capitalized. By default the values
             always are capitalized as that is also how it is represented in the csv files.
         base_url (string, default is GitHub location)
             The possibility to enter your own location if desired.
@@ -41,16 +40,16 @@ class Cryptos(FinanceDatabase):
 
         Output
         ----
-        cryptos_df (pd.DataFrame)
+        currencies_df (pd.DataFrame)
             Returns a dictionary with a selection or all data based on the input.
         """
-        cryptos = self.data.copy(deep=True)
+        currencies = self.data.copy(deep=True)
 
-        if crypto:
-            cryptos = cryptos[cryptos["cryptocurrency"].str.contains(
-                crypto.upper() if capitalize else crypto, na=False)]
+        if currency:
+            currencies = currencies[currencies["currency"].str.contains(
+                currency.upper() if capitalize else currency, na=False)]
             
-        return cryptos
+        return currencies
 
     def options(
         self
@@ -65,6 +64,6 @@ class Cryptos(FinanceDatabase):
         options (pd.Series)
             Returns a series with all options for the selection provided.
         """
-        cryptos = self.select()
+        currencies = self.select()
 
-        return cryptos["cryptocurrency"].unique()
+        return currencies["currency"].unique()

@@ -39,7 +39,7 @@ class Equities(FinanceDatabase):
             If filled, gives all data for a specific industry.
         exclude_exchanges (boolean, default is True):
             Whether you want to exclude exchanges from the search. If False,
-            you will receive multiple times i.e. Tesla from different exchanges.
+            you will receive multiple times the product from different exchanges.
         capitalize (boolean, default is True):
             Whether country, sector and industry needs to be capitalized. By default
             the values always are capitalized as that is also how it is represented

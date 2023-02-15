@@ -12,7 +12,7 @@ DATA_REPO = (
 
 class FinanceDatabase:
     """
-    Helpers Class
+    Base Class
     """
 
     FILE_NAME = ""
