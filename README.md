@@ -65,10 +65,9 @@ or by manual search.
 1. [Installation](#installation)
 2. [Basic Usage](#basic-usage)
     1. [Quick Start](#quick-start)
-    2. [Understanding the available options](#understanding-the-available-options)
     3. [Collecting information from the database](#collecting-information-from-the-database)
-    4. [Searching the database extensively](#searching-the-database-extensively)
-    5. [Storing the database at a different location](#storing-the-database-at-a-different-location)
+    3. [Searching the database extensively](#searching-the-database-extensively)
+    4. [Storing the database at a different location](#storing-the-database-at-a-different-location)
 2. [Examples](#examples)
     1. [Companies in the Netherlands](#companies-in-the-netherlands)
     2. [Technical Analysis of Biotech ETFs](#technical-analysis-of-biotech-etfs)
@@ -117,107 +116,6 @@ equities_uk_biotech = equities.search(country='United Kingdom', summary='biotech
 ```
 
 Scroll down below for a more elaborate explanation and detailed examples.
-
-## Understanding the available options
-Understanding which countries, sectors, industries and categories exist is important to be able to search the database properly. Not only to understand the focus a specific the country but also to understand which area holds the most data. This is a demonstration of the ```show_options``` function, a function crucial to querying data from the Database. The output of all functionalities is cut off in this README for illustration purposes.
-
-Let's start by acquiring the unique countries, sectors and industries of all equities in the database:
-
-````python
-import financedatabase as fd
-
-# Initialize the Equities database
-equities = fd.Equities()
-
-# Obtain all countries from the database
-equities_countries = equities.options('country')
-
-# Obtain all sectors from the database
-equities_sectors = equities.options('sector')
-
-# Obtain all industries from the database
-equities_industries = equities.options('industry')
-````
-
-For countries, you will find the following list if you print `equities_countries`:
-
-`Afghanistan, Anguilla, Argentina, Australia, Austria, Azerbaijan, Bahamas, Bangladesh, Barbados, Belgium, Belize, Bermuda, Botswana, Brazil, British Virgin Islands, Cambodia, Canada, Cayman Islands, Chile, China, Colombia, Costa Rica, Cyprus, Czech Republic, Denmark, Dominican Republic, Egypt, Estonia, Falkland Islands, Finland, France, French Guiana, Gabon, Georgia, Germany, Ghana, Gibraltar, Greece, Greenland, ...`
-
-For sectors, you will find the following list if you print `equities_sectors`:
-
-`Basic Materials, Communication Services, Conglomerates, Consumer Cyclical, Consumer Defensive, Consumer Goods, Energy, Financial, Financial Services, Healthcare, Industrial Goods, Industrials, Real Estate, Services, Technology, Utilities`
-
-For industries, you will find the following list if you print `equities_industries`:
-
-`Advertising Agencies, Aerospace & Defense, Aerospace Defense - Major Diversified, Aerospace Defense Products & Services, Agricultural Chemicals, Agricultural Inputs, Air Delivery & Freight Services, Airlines, Airports & Air Services, Aluminum, Apparel Manufacturing, Apparel Retail, Apparel Stores, Asset Management, Auto & Truck Dealerships, Auto Dealerships, Auto Manufacturers, ...`
-
-When you wish to get country, sector or industry specific lists, you can use the related `country`, `sector` and `industry` tags as also found in the help window with `help(equities.options)`:
-
-```text
-Help on method options in module financedatabase.equities:
-
-options(selection: str, country: str = '', sector: str = '', industry: str = '') -> pandas.core.series.Series method of financedatabase.equities.Equities instance
-    Description
-    ----
-    Returns all options for the selection provided.
-    
-    Input
-    ----
-    selection (string)
-        The selection you want to see the options for. Can be:
-        - country
-        - sector
-        - industry
-    country (string, default is None)
-        If filled, gives all data for a specific country.
-    sector (string, default is None)
-        If filled, gives all data for a specific sector.
-    industry (string, default is None)
-        If filled, gives all data for a specific industry.
-    Output
-    ----
-    options (pd.Series)
-        Returns a series with all options for the selection provided.
-```
-
-For example, if I wish to know all available industries within the sector "Basic Materials" in the country United States I can use
-
-```python
-# Obtain a filtered selection of available industries
- equities.options(selection='industry', country="United States", sector="Basic Materials")
- ```
-
- Which returns:
-
-`Agricultural Inputs, Aluminum, Building Materials, Chemicals, Coking Coal, Copper, Gold, Independent Oil & Gas, Industrial Metals & Minerals, Lumber & Wood Production, Nonmetallic Mineral Mining, Oil & Gas Drilling & Exploration, Oil & Gas Equipment & Services, Other Industrial Metals & Mining, Other Precious Metals & Mining, Paper & Paper Products, Silver, Specialty Chemicals, Steel`
-
-This also extends further if you are looking into a different category. For example, find all available currencies by using 
-
-```python
-# Initialize the Currencies database
-currencies = fd.Currencies()
-
-# Obtain all available currencies
-currencies.options()
-```
-
-Which returns:
-
-`AED, AFN, ALL, AMD, ANG, AOA, ARS, AUD, AWG, AZN, BAM, BBD, BDT, BGN, BHD, BIF, BMD, BND, BOB, BRL, BRX, BSD, BTN, BWP, BYN, BZD, CAD, CAX, CDF, CHF, CLF, CLP, CNH, CNY, COP, CRC, CUC, CUP, CVE, CZK, CZX, DJF, DKK, DKX, ...`
-
-But also when it comes to `etfs` with 
-
-```python
-# Initialize the ETFs database
-etfs = fd.ETFs()
-
-# Obtain all availables categories
-etfs.options(selection="category")
-```
-
- Which returns:
-
-`Allocation--15% to 30% Equity, Allocation--30% to 50% Equity, Allocation--50% to 70% Equity, Allocation--70% to 85% Equity, Allocation--85%+ Equity, Bank Loan, Bear Market, China Region, Commodities Broad Basket, Communications, Consumer Cyclical, Consumer Defensive, ...`
 
 ## Collecting information from the database
 
@@ -300,10 +198,9 @@ select(country: str = '', sector: str = '', industry: str = '', exclude_exchange
         Returns a dictionary with a selection or all data based on the input.
 ```
 
-As an example, in [Understanding the available options](#understanding-the-available-options) we've used `equities.options(selection='industry', country="United States", sector="Basic Materials")` which allowed us to look at a specific industry in the United States. So with this information in hand, I can now query the industry `Aluminum` as follows:
+As an example, we can use `equities.options` to obtain specific country, sector and industry options. For example with `equities.options(selection='industry', country="United States", sector="Basic Materials")` all industries within the sector Basic Materials within the United States can be obtained. This allows us to look at a specific industry in the United States in detail. So with this information in hand, I can now query the industry `Aluminum` as follows:
 
 ```python
-# Obtain a filtered selection of companies
 aluminium_companies_usa = equities.select(country="United States", sector="Basic Materials", industry="Aluminum")
 ```
 
