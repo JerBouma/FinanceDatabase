@@ -1,7 +1,7 @@
 [tool.ruff]
 line-length = 122
 select = ["E", "W", "F", "Q", "W", "S", "UP", "I", "PD", "SIM", "PLC", "PLE", "PLR", "PLW"]
-ignore = ["S105", "S106", "S107", "PLR0913"]
+ignore = ["S105", "S106", "S107"]
 
 [tool.pylint]
 max-line-length = 122
@@ -19,5 +19,5 @@ skip_gitignore = true
 combine_as_imports = true
 
 [tool.codespell]
-ignore-words-list = 'ZAR,zar,profund'
-skip = '*.json,./.git,*.csv'
+ignore-words-list = 'ZAR,zar,profund,BASF,basf,applicatio,Ser,Mone,VIE'
+skip = '*.json,./.git,*.csv,pyproject.toml,*.ipynb'

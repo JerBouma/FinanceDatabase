@@ -18,9 +18,7 @@ class FinanceDatabase:
     FILE_NAME = ""
 
     def __init__(
-        self,
-        base_url: str = DATA_REPO,
-        use_local_location: bool = False,
+        self, base_url: str = DATA_REPO, use_local_location: bool = False,
     ):
         """
         Description

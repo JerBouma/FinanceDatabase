@@ -99,5 +99,5 @@ class Funds(FinanceDatabase):
         if funds.empty:
             # Meant for the rare cases where capitalizing is not working as desired.
             funds = self.select(category=category, family=family, capitalize=False)
-            
+
         return funds[selection].dropna().sort_values().unique()

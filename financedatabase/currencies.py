@@ -12,11 +12,7 @@ class Currencies(FinanceDatabase):
 
     FILE_NAME = "currencies.csv"
 
-    def select(
-        self,
-        currency: str = "",
-        capitalize: bool = True,
-    ) -> pd.DataFrame:
+    def select(self, currency: str = "", capitalize: bool = True,) -> pd.DataFrame:
         """
         Description
         ----

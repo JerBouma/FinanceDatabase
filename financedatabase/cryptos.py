@@ -12,11 +12,7 @@ class Cryptos(FinanceDatabase):
 
     FILE_NAME = "cryptos.csv"
 
-    def select(
-        self,
-        crypto: str = "",
-        capitalize: bool = True,
-    ) -> pd.DataFrame:
+    def select(self, crypto: str = "", capitalize: bool = True,) -> pd.DataFrame:
         """
         Description
         ----
