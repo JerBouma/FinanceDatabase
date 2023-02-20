@@ -85,7 +85,7 @@ You can install the package with the following steps:
 2. (within Python) `import financedatabase as fd`
 
 #  Basic Usage
-This section explains in detail how the database can be queried with the related `financedatabase` package, also see the Jupyter Notebook in which you can run the examples also demonstrated here. You can find this document [here](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/examples.ipynb).
+This section explains in detail how the database can be queried with the related `financedatabase` package, also see the Jupyter Notebook in which you can run the examples also demonstrated here. You can find this document [here](https://github.com/JerBouma/FinanceDatabase/blob/main/examples.ipynb).
 
 ## Quick Start
 
@@ -221,17 +221,14 @@ etfs.options(selection="category")
 
 ## Collecting information from the database
 
-Each of the asset classes in the database have a specific class as follows:
+Please see the Jupyter Notebook for an elaborate explanation of each asset class. This includes Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets.
+___
 
-- [Equities](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#equities) (`fd.Equities()`)
-- [ETFs](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#etfs) (`fd.ETFs()`)
-- [Funds](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#funds) (`fd.Funds()`)
-- [Indices](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#indices) (`fd.Indices()`)
-- [Currencies](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#currencies) (`fd.Currencies()`)
-- [Cryptocurrencies](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#cryptocurrencies) (`fd.Cryptos()`)
-- [Money Markets](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md#moneymarkets) (`fd.Moneymarkets()`)
+<b><div align="center">Find code examples of all Asset Classes in the Jupyter Notebook <a href="https://github.com/JerBouma/FinanceDatabase/blob/main/examples.ipynb">here</a>.</div></b>
+___
 
-As an example, If you wish to collect data from all equities you can use the following:
+
+As an example for Equities, If you wish to collect data from all equities you can use the following:
 
 ```python
 import financedatabase as fd
@@ -321,8 +318,6 @@ This gives you a DataFrame with the following information:
 | ORMTQ    | ORMET CORP                  | Ormet Corporation                    | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | OH      | Hannibal       | 43931      | nan                           | Nano Cap     |
 
 As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Basic Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
-
-<font size="5"><b><div align="center">:white_check_mark: For other asset classes, please have a look <a href="https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md">here</a>.</div></b></font>
 
 ## Searching the database extensively
 All asset classes have the capability to search each column with `search`, for example `equities.search()`. Through how this functionality is developed you can define multiple columns and search throughoutly. For example:
