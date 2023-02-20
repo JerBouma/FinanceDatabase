@@ -85,9 +85,7 @@ You can install the package with the following steps:
 2. (within Python) `import financedatabase as fd`
 
 #  Basic Usage
-This section gives a few examples of the possibilities with this package. These are merely a few of the things you
-can do with the package. **As you can obtain a wide range of symbols, pretty much any 
-package that requires symbols should work.**
+This section explains in detail how the database can be queried with the related `financedatabase` package, also see the Jupyter Notebook in which you can run the examples also demonstrated here. You can find this document [here](https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/examples.ipynb).
 
 ## Quick Start
 
