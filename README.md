@@ -219,7 +219,7 @@ As you can imagine, looking at such a specific selection only yields a few resul
 ## Searching the database extensively
 All asset classes have the capability to search each column with `search`, for example `equities.search()`. Through how this functionality is developed you can define multiple columns and search throughoutly. For example:
 
-```
+```python
 # Collect all Equities Database
 equities = fd.Equities()
 
