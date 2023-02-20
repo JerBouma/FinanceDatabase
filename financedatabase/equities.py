@@ -70,7 +70,7 @@ class Equities(FinanceDatabase):
         if industry:
             equities = equities[equities["industry"] == industry]
         if exclude_exchanges:
-            equities = equities[~equities["symbol"].str.contains(r"\.", na=False)]
+            equities = equities[~equities.index.str.contains(r"\.", na=False)]
         return equities
 
     def options(

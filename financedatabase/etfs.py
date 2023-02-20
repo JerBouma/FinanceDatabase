@@ -64,7 +64,7 @@ class ETFs(FinanceDatabase):
         if family:
             etfs = etfs[etfs["family"] == family]
         if exclude_exchanges:
-            etfs = etfs[~etfs["symbol"].str.contains(r"\.", na=False)]
+            etfs = etfs[~etfs.index.str.contains(r"\.", na=False)]
         return etfs
 
     def options(

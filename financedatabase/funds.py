@@ -64,7 +64,7 @@ class Funds(FinanceDatabase):
         if family:
             funds = funds[funds["family"] == family]
         if exclude_exchanges:
-            funds = funds[~funds["symbol"].str.contains(r"\.", na=False)]
+            funds = funds[~funds.index.str.contains(r"\.", na=False)]
         return funds
 
     def options(
@@ -99,5 +99,5 @@ class Funds(FinanceDatabase):
         if funds.empty:
             # Meant for the rare cases where capitalizing is not working as desired.
             funds = self.select(category=category, family=family, capitalize=False)
-
-        return funds[selection].unique()
+            
+        return funds[selection].dropna().sort_values().unique()

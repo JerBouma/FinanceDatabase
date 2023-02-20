@@ -53,7 +53,7 @@ class Indices(FinanceDatabase):
                 )
             ]
         if exclude_exchanges:
-            indices = indices[~indices["symbol"].str.contains(r"\.", na=False)]
+            indices = indices[~indices.index.str.contains(r"\.", na=False)]
 
         return indices
 

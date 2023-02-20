@@ -54,7 +54,7 @@ class Moneymarkets(FinanceDatabase):
             ]
         if exclude_exchanges:
             moneymarkets = moneymarkets[
-                ~moneymarkets["symbol"].str.contains(r"\.", na=False)
+                ~moneymarkets.index.str.contains(r"\.", na=False)
             ]
 
         return moneymarkets
