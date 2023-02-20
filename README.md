@@ -322,7 +322,7 @@ This gives you a DataFrame with the following information:
 
 As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Basic Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
 
-<h2><b><div align="center">:white_check_mark: For other asset classes, please have a look <a href="https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md">here</a>.</div></b></h2>
+<font size="3"><b><div align="center">:white_check_mark: For other asset classes, please have a look <a href="https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md">here</a>.</div></b></font>
 
 ## Searching the database extensively
 All asset classes have the capability to search each column with `search`, for example `equities.search()`. Through how this functionality is developed you can define multiple columns and search throughoutly. For example:
