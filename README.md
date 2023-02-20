@@ -327,6 +327,28 @@ As you can imagine, looking at such a specific selection only yields a few resul
 
 <b><div align="center">:white_check_mark: For other asset classes, please have a look <a href="https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md">here</a>.</div></b>
 
+
+### Searching the database extensively
+All asset classes have the capability to search each column with `search`, for example `equities.search()`. Through how this functionality is developed you can define multiple columns and search throughoutly. For example:
+
+```
+# Collect all Equities Database
+equities = fd.Equities()
+
+# Search Multiple Columns
+equities.search(summary='automotive', currency='USD', country='Germany')
+```
+
+Which returns a selection of the DataFrame that matches all criteria. 
+
+| symbol   | short_name                  | long_name                                   | currency   | sector             | industry                       | exchange   | market    | country   |   state | city                  |   zipcode | website                   | market_cap   |
+|:---------|:----------------------------|:--------------------------------------------|:-----------|:-------------------|:-------------------------------|:-----------|:----------|:----------|--------:|:----------------------|----------:|:--------------------------|:-------------|
+| AFRMF    | ALPHAFORM AG                | Alphaform AG                                | USD        | Industrials        | Specialty Industrial Machinery | PNK        | us_market | Germany   |     nan | Feldkirchen           |     85622 | nan                       | Nano Cap     |
+| AUUMF    | AUMANN AG                   | Aumann AG                                   | USD        | Industrials        | Specialty Industrial Machinery | PNK        | us_market | Germany   |     nan | Beelen                |     48361 | http://www.aumann.com     | Micro Cap    |
+| BAMXF    | BAYERISCHE MOTOREN WERKE AG | Bayerische Motoren Werke Aktiengesellschaft | USD        | Consumer Cyclical  | Auto Manufacturers             | PNK        | us_market | Germany   |     nan | Munich                |     80788 | http://www.bmwgroup.com   | Large Cap    |
+| BASFY    | BASF SE                     | BASF SE                                     | USD        | Basic Materials    | Chemicals                      | PNK        | us_market | Germany   |     nan | Ludwigshafen am Rhein |     67056 | http://www.basf.com       | Large Cap    |
+| BDRFF    | BEIERSDORF AG               | Beiersdorf Aktiengesellschaft               | USD        | Consumer Defensive | Household & Personal Products  | PNK        | us_market | Germany   |     nan | Hamburg               |     20245 | http://www.beiersdorf.com | Large Cap    |
+
 ### Storing the database at a different location
 If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
 `base_url` which you can find in each of the above 'select' functions. An example would be:
@@ -460,7 +482,6 @@ equities = fd.Equities()
 silicon_valley = equities.search(sector='Technology', city='San Jose')
 ````
 Then I start collecting data with the [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) package. Here I collect the key metrics which include 57 different metrics (ranging from PE ratios to Market Cap).
-
 
 ````python
 import fundamentalanalysis as fa

@@ -124,7 +124,7 @@ fd.show_options('etfs')
 
 `Allocation--15% to 30% Equity, Allocation--30% to 50% Equity, Allocation--50% to 70% Equity, Allocation--70% to 85% Equity, Allocation--85%+ Equity, Bank Loan, Bear Market, China Region, Commodities Broad Basket, Communications, Consumer Cyclical, Consumer Defensive, Convertibles, Corporate Bond, Diversified Emerging Mkts, Diversified Pacific/Asia, Emerging Markets Bond, Emerging-Markets Local-Currency Bond, Energy Limited Partnership, Equity Energy, Equity Precious Metals, Europe Stock, Financial, Foreign Large Blend, Foreign Large Growth, Foreign Large Value, ...`
 
-### Collecting information from the database
+## Collecting information from the database
 
 Each of the asset classes in the database have a specific class as follows:
 
@@ -150,19 +150,13 @@ equities.select()
 
 Which returns the following DataFrame:
 
-|        | symbol   | short_name                      | long_name                                | currency   | sector                 | industry                         | exchange   | market    | country       | state   | city        | zipcode    | website                         | market_cap   |
-|-------:|:---------|:--------------------------------|:-----------------------------------------|:-----------|:-----------------------|:---------------------------------|:-----------|:----------|:--------------|:--------|:------------|:-----------|:--------------------------------|:-------------|
-|  24332 | A        | Agilent Technologies, Inc.      | Agilent Technologies, Inc.               | USD        | Healthcare             | Diagnostics & Research           | NYQ        | us_market | United States | CA      | Santa Clara | 95051      | http://www.agilent.com          | Large Cap    |
-|  25583 | AA       | Alcoa Corporation               | Alcoa Corporation                        | USD        | Basic Materials        | Aluminum                         | NYQ        | us_market | United States | PA      | Pittsburgh  | 15212-5858 | http://www.alcoa.com            | Mid Cap      |
-|  25624 | AAALF    | AAREAL BANK AG                  | Aareal Bank AG                           | USD        | nan                    | nan                              | PNK        | us_market | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    |
-|  25626 | AAALY    | AAREAL BANK AG                  | Aareal Bank AG                           | USD        | nan                    | nan                              | PNK        | us_market | nan           | nan     | nan         | nan        | nan                             | nan          |
-|  25645 | AABB     | ASIA BROADBAND INC              | Asia Broadband, Inc.                     | USD        | Basic Materials        | Other Industrial Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas   | 89135      | http://www.asiabroadbandinc.com | Micro Cap    |
-|      0 | ...      | ...                             | ...                                      | ...        | ...                    | ...                              | ...        | ...       | ...           | ...     | ...         | ...        | ...                             | ...          |
-| 155684 | ZYXI     | Zynex, Inc.                     | Zynex, Inc.                              | USD        | Healthcare             | Medical Devices                  | NCM        | us_market | United States | CO      | Englewood   | 80112      | http://www.zynex.com            | Small Cap    |
-| 155717 | ZZHGF    | ZHONGAN ONLINE P & C INS CO LTD | ZhongAn Online P & C Insurance Co., Ltd. | USD        | Financial Services     | Insurance - Property & Casualty  | PNK        | us_market | China         | nan     | Shanghai    | nan        | http://www.zhongan.com          | Mid Cap      |
-| 155718 | ZZHGY    | ZHONGAN ONLINE P & C INS CO LTD | ZhongAn Online P & C Insurance Co., Ltd. | USD        | nan                    | nan                              | PNK        | us_market | nan           | nan     | nan         | nan        | nan                             | nan          |
-| 155719 | ZZLL     | ZZLL INFORMATION TECHNOLOGY INC | ZZLL Information Technology, Inc.        | USD        | Communication Services | Internet Content & Information   | PNK        | us_market | Hong Kong     | nan     | North Point | nan        | http://www.zzlliti.com          | Nano Cap     |
-| 155727 | ZZZOF    | ZINC ONE RESOURCES INC          | Zinc One Resources Inc.                  | USD        | Basic Materials        | Other Industrial Metals & Mining | PNK        | us_market | Canada        | BC      | Vancouver   | V6E 4H1    | http://www.zincone.com          | Micro Cap    |
+| symbol   | short_name                 | long_name                  | currency   | sector          | industry                         | exchange   | market    | country       | state   | city        | zipcode    | website                         | market_cap   |
+|:---------|:---------------------------|:---------------------------|:-----------|:----------------|:---------------------------------|:-----------|:----------|:--------------|:--------|:------------|:-----------|:--------------------------------|:-------------|
+| A        | Agilent Technologies, Inc. | Agilent Technologies, Inc. | USD        | Healthcare      | Diagnostics & Research           | NYQ        | us_market | United States | CA      | Santa Clara | 95051      | http://www.agilent.com          | Large Cap    |
+| AA       | Alcoa Corporation          | Alcoa Corporation          | USD        | Basic Materials | Aluminum                         | NYQ        | us_market | United States | PA      | Pittsburgh  | 15212-5858 | http://www.alcoa.com            | Mid Cap      |
+| AAALF    | AAREAL BANK AG             | Aareal Bank AG             | USD        | nan             | nan                              | PNK        | us_market | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    |
+| AAALY    | AAREAL BANK AG             | Aareal Bank AG             | USD        | nan             | nan                              | PNK        | us_market | nan           | nan     | nan         | nan        | nan                             | nan          |
+| AABB     | ASIA BROADBAND INC         | Asia Broadband, Inc.       | USD        | Basic Materials | Other Industrial Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas   | 89135      | http://www.asiabroadbandinc.com | Micro Cap    |
 
 This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155.000 different symbols. 
 
@@ -224,13 +218,13 @@ aluminium_companies_usa = equities.select(country="United States", sector="Basic
 
 This gives you a DataFrame with the following information:
 
-|        | symbol   | short_name                  | long_name                            | currency   | sector          | industry   | exchange   | market    | country       | state   | city           | zipcode    | website                       | market_cap   |
-|-------:|:---------|:----------------------------|:-------------------------------------|:-----------|:----------------|:-----------|:-----------|:----------|:--------------|:--------|:---------------|:-----------|:------------------------------|:-------------|
-|  25583 | AA       | Alcoa Corporation           | Alcoa Corporation                    | USD        | Basic Materials | Aluminum   | NYQ        | us_market | United States | PA      | Pittsburgh     | 15212-5858 | http://www.alcoa.com          | Mid Cap      |
-|  48264 | CENX     | Century Aluminum Company    | Century Aluminum Company             | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | IL      | Chicago        | 60606      | http://centuryaluminum.com    | Small Cap    |
-|  83162 | KALU     | Kaiser Aluminum Corporation | Kaiser Aluminum Corporation          | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | CA      | Foothill Ranch | 92610-2831 | http://www.kaiseraluminum.com | Mid Cap      |
-| 102260 | NORNQ    | NORANDA ALUM HLDG CORP      | Noranda Aluminum Holding Corporation | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | TN      | Franklin       | 37067      | nan                           | Nano Cap     |
-| 106568 | ORMTQ    | ORMET CORP                  | Ormet Corporation                    | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | OH      | Hannibal       | 43931      | nan                           | Nano Cap     |
+| symbol   | short_name                  | long_name                            | currency   | sector          | industry   | exchange   | market    | country       | state   | city           | zipcode    | website                       | market_cap   |
+|:---------|:----------------------------|:-------------------------------------|:-----------|:----------------|:-----------|:-----------|:----------|:--------------|:--------|:---------------|:-----------|:------------------------------|:-------------|
+| AA       | Alcoa Corporation           | Alcoa Corporation                    | USD        | Basic Materials | Aluminum   | NYQ        | us_market | United States | PA      | Pittsburgh     | 15212-5858 | http://www.alcoa.com          | Mid Cap      |
+| CENX     | Century Aluminum Company    | Century Aluminum Company             | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | IL      | Chicago        | 60606      | http://centuryaluminum.com    | Small Cap    |
+| KALU     | Kaiser Aluminum Corporation | Kaiser Aluminum Corporation          | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | CA      | Foothill Ranch | 92610-2831 | http://www.kaiseraluminum.com | Mid Cap      |
+| NORNQ    | NORANDA ALUM HLDG CORP      | Noranda Aluminum Holding Corporation | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | TN      | Franklin       | 37067      | nan                           | Nano Cap     |
+| ORMTQ    | ORMET CORP                  | Ormet Corporation                    | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | OH      | Hannibal       | 43931      | nan                           | Nano Cap     |
 
 As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Basic Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
 
@@ -241,38 +235,65 @@ If you wish to collect data from all etfs you can use the following:
 ```python
 import financedatabase as fd
 
+etfs = fd.ETFs()
 
-all_etfs = fd.select_etfs()
+etfs.select()
 ```
 
-This returns approximately 2.500 different ETFs. Note that by default, only the American exchanges are selected. These are symbols like `SPY` (SPDR S&P 500 ETF Trust) and `VTI` (Vanguard Total Stock Market Index Fund ETF) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 35.000 different symbols. Find a more elaborate explanation with `help(fd.select_etfs)`:
+Which returns the following DataFrame:
+
+| symbol   | short_name                      | long_name                                  | currency   | category                  | family                   | exchange   | market    |   total_assets |
+|:---------|:--------------------------------|:-------------------------------------------|:-----------|:--------------------------|:-------------------------|:-----------|:----------|---------------:|
+| AAA      | Listed Funds Trust AAF First Pr | AAF First Priority CLO Bond ETF            | USD        | nan                       | Alternative Access Funds | PCX        | us_market |    1.00196e+07 |
+| AAAU     | Goldman Sachs Physical Gold ETF | Goldman Sachs Physical Gold ETF            | USD        | nan                       | Exchange Traded Concepts | PCX        | us_market |    3.31796e+08 |
+| AADR     | AdvisorShares Dorsey Wright     | AdvisorShares Dorsey Wright ADR ETF        | USD        | nan                       | nan                      | NMS        | us_market |  nan           |
+| AAXJ     | iShares MSCI All Country Asia e | iShares MSCI All Country Asia ex Japan ETF | USD        | Pacific/Asia ex-Japan Stk | iShares                  | NMS        | us_market |    6.5889e+09  |
+| ABCS     | Guggenheim ABC High Dividend ET | nan                                        | nan        | nan                       | nan                      | PCX        | us_market |  nan           |
+
+
+This returns approximately 2.500 different ETFs. Note that by default, only the American exchanges are selected. These are symbols like `SPY` (SPDR S&P 500 ETF Trust) and `VTI` (Vanguard Total Stock Market Index Fund ETF) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 35.000 different symbols. 
+
+Note that the summary column is taken out on purpose to keep it organized for markdown. The summary is however very handy when it comes to querying specific words as found with the following description given for VTI. All of this information is available when you query the database.
+
+```
+The investment seeks to track the performance of the CRSP US Total Market Index that measures the investment return of the overall stock market. The fund employs an indexing investment approach designed to track the performance of the index, which represents approximately 100% of the investable U.S. stock market and includes large-, mid-, small-, and micro-cap stocks regularly traded on the New York Stock Exchange and Nasdaq. It invests by sampling the index, meaning that it holds a broadly diversified collection of securities that, in the aggregate, approximates the full index in terms of key characteristics.
+```
+
+Find a more elaborate explanation with `help(etfs.select)`:
 
 ```text
-Help on function select_etfs in module financedatabase.json_picker:
+Help on method select in module financedatabase.etfs:
 
-select_etfs(category=None, exclude_exchanges=True, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/ETFs', use_local_location=False, all_etfs_json='_ETFs')
+select(category: str = '', family: str = '', exclude_exchanges: bool = True, capitalize: bool = True) -> pandas.core.frame.DataFrame method of financedatabase.etfs.ETFs instance
     Description
     ----
-    Returns all ETFs when no input is given and has the option to give
-    a specific set of symbols for the category you provide.
+    Returns all etfs when no input is given and has the option to give
+    a specific set of symbols for the category and/or family provided.
+    
+    The data depends on the combination of inputs. For example Category + Family
+    gives all symbols for a specific category for a specific family.
     
     Input
     ----
     category (string, default is None)
         If filled, gives all data for a specific category.
+    family (string, default is None)
+        If filled, gives all data for a specific family.
     exclude_exchanges (boolean, default is True):
         Whether you want to exclude exchanges from the search. If False,
-        you will receive multiple times i.e. Vanguard S&P 500 from different exchanges.
+        you will receive multiple times the product from different exchanges.
+    capitalize (boolean, default is True):
+        Whether country, sector and industry needs to be capitalized. By default
+        the values always are capitalized as that is also how it is represented
+        in the csv files.
     base_url (string, default is GitHub location)
         The possibility to enter your own location if desired.
     use_local_location (string, default False)
         The possibility to select a local location (i.e. based on Windows path)
-    all_etfs_json (string, default is _ETFs)
-        Alter the name of the all etfs json if desired.
     
     Output
     ----
-    json_data (dictionary)
+    etfs_df (pd.DataFrame)
         Returns a dictionary with a selection or all data based on the input.
 ```
 
@@ -281,33 +302,21 @@ With this information in hand, and having seen the available options within [Und
 ```python
 import financedatabase as fd
 
-large_value_etfs = fd.select_etfs(category="Large Value")
+etfs = fd.ETFs()
+
+large_value_etfs = etfs.select(category="Large Value")
 ```
 
 Which returns a total of approximately 80 ETFs in which below is a small snippet of the output:
 
-```text
-{'ABEQ': {'category': 'Large Value',
-  'currency': 'USD',
-  'exchange': 'PCX',
-  'family': 'Absolute Investment Advisers',
-  'long_name': 'Absolute Core Strategy ETF',
-  'market': 'us_market',
-  'short_name': 'Absolute Core Strategy ETF',
-  'summary': 'The investment seeks positive absolute returns. The fund';s investment sub-adviser (the "Subadviser"), seeks to achieve it's objective by investing primarily in equity securities of U.S. companies that the Subadviser believes are priced at a substantial discount to the Subadviser&#39;s estimate of fair value. The fund may invest in companies of any market capitalization and in any economic sector, including equity securities of foreign companies that trade on U.S. exchanges, either directly or through American Depositary Receipts ("ADRs"). It is non-diversified.',
-  'total_assets': null},
- 'AFLG': {'category': 'Large Value',
-  'currency': 'USD',
-  'exchange': 'PCX',
-  'family': 'First Trust',
-  'long_name': 'First Trust Active Factor Large Cap ETF',
-  'market': 'us_market',
-  'short_name': 'First Trust Active Factor Large',
-  'summary': 'The investment seeks to provide capital appreciation.\n Under normal market conditions, the fund will invest at least 80% of its net assets (including investment borrowings) in U.S.-listed equity securities issued by large capitalization companies. The manager defines large capitalization companies as those that, at the time of investment, have a minimum market capitalization equal to or greater than the minimum market capitalization of a widely recognized index of large capitalization companies based upon the composition of the index at the time of investment. It is non-diversified.',
-  'total_assets': null},
+| symbol   | short_name                      | long_name                                              | currency   | category    | family                        | exchange   | market    |   total_assets |
+|:---------|:--------------------------------|:-------------------------------------------------------|:-----------|:------------|:------------------------------|:-----------|:----------|---------------:|
+| ABEQ     | Absolute Core Strategy ETF      | Absolute Core Strategy ETF                             | USD        | Large Value | Absolute Investment Advisers  | PCX        | us_market |    4.79386e+07 |
+| AFLG     | First Trust Active Factor Large | First Trust Active Factor Large Cap ETF                | USD        | Large Value | First Trust                   | PCX        | us_market |    7.46305e+06 |
+| BUFF     | Innovator Laddered Fund of S&P  | Innovator Laddered Fund of S&P 500 Power Buffer ETFs   | USD        | Large Value | Innovator ETFs                | BTS        | us_market |    4.50859e+07 |
+| CAPE     | iPath Shiller CAPE ETN          | Barclays ETN+ Shiller Capet ETN                        | USD        | Large Value | Milleis Investissements Funds | PCX        | us_market |    3.41154e+08 |
+| CDL      | VictoryShares US Large Cap High | VictoryShares US Large Cap High Div Volatility Wtd ETF | USD        | Large Value | Victory Capital               | NMS        | us_market |    2.10381e+08 |
 
-<continues>
-```
 
 ### Funds
 
@@ -316,37 +325,65 @@ If you wish to collect data from all funds you can use the following:
 ```python
 import financedatabase as fd
 
-all_funds = fd.select_funds()
+funds = fd.Funds()
+
+funds.select()
 ```
 
-This returns approximately 30.000 different Funds. Note that by default, only the American exchanges are selected. These are symbols that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 55.000 different symbols. Find a more elaborate explanation with `help(fd.select_funds)`:
+Which returns the following DataFrame:
+
+| symbol   | short_name                      | long_name                                                        | currency   | manager_name    | category         | family                       | exchange   | market    |    total_assets |
+|:---------|:--------------------------------|:-----------------------------------------------------------------|:-----------|:----------------|:-----------------|:-----------------------------|:-----------|:----------|----------------:|
+| AAAAX    | DWS RREEF Real Assets Fund - Cl | DWS RREEF Real Assets Fund - Class A                             | USD        | John  Vojticek  | World Allocation | DWS                          | NAS        | us_market |     1.12876e+09 |
+| AAACX    | A3 Alternative Credit Fund      | A3 Alternative Credit Fund                                       | USD        | nan             | nan              | nan                          | NAS        | us_market |   nan           |
+| AAAEX    | AllianzGI Health Sciences Fund  | Virtus AllianzGI Health Sciences Fund Class P                    | USD        | Peter  Pirsch   | Health           | Virtus                       | NAS        | us_market |     1.87148e+08 |
+| AAAFX    | nan                             | American Century One Choice Blend+ 2015 Portfolio Investor Class | USD        | Scott A. Wilson | Target-Date 2015 | American Century Investments | NAS        | us_market | 25562           |
+| AAAGX    | Thrivent Large Cap Growth Fund  | Thrivent Large Cap Growth Fund Class A                           | USD        | Lauri  Brunner  | Large Growth     | Thrivent Funds               | NAS        | us_market |     1.98547e+09 |
+
+This returns approximately 30.000 different Funds. Note that by default, only the American exchanges are selected. These are symbols that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 55.000 different symbols.
+
+
+Note that the summary column is taken out on purpose to keep it organized for markdown. The summary is however very handy when it comes to querying specific words as found with the following description given for AAAGX. All of this information is available when you query the database.
+
+```
+The investment seeks long-term capital appreciation.  The fund invests at least 80% of its net assets (plus the amount of any borrowing for investment purposes) in equity securities of large companies. The Adviser focuses mainly on the equity securities of large domestic and international companies which have market capitalizations equivalent to those included in widely known indices such as the Russell 1000 Growth Index, S&P 500 Index, or the large company market capitalization classifications published by Lipper, Inc. These companies typically have a market capitalization of approximately $8 billion or more. The fund is non-diversified.
+```
+
+Find a more elaborate explanation with `help(funds.select)`:
 
 ```text
-Help on function select_funds in module financedatabase.json_picker:
+Help on method select in module financedatabase.funds:
 
-select_funds(category=None, exclude_exchanges=True, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/Funds', use_local_location=False, all_funds_json='_Funds')
+select(category: str = '', family: str = '', exclude_exchanges: bool = True, capitalize: bool = True) -> pandas.core.frame.DataFrame method of financedatabase.funds.Funds instance
     Description
     ----
     Returns all funds when no input is given and has the option to give
-    a specific set of symbols for the category you provide.
+    a specific set of symbols for the category and/or family provided.
+    
+    The data depends on the combination of inputs. For example Category + Family
+    gives all symbols for a specific category for a specific family.
     
     Input
     ----
     category (string, default is None)
         If filled, gives all data for a specific category.
+    family (string, default is None)
+        If filled, gives all data for a specific family.
     exclude_exchanges (boolean, default is True):
         Whether you want to exclude exchanges from the search. If False,
-        you will receive multiple times i.e. AAEUX from different exchanges.
+        you will receive multiple times the product from different exchanges.
+    capitalize (boolean, default is True):
+        Whether country, sector and industry needs to be capitalized. By default
+        the values always are capitalized as that is also how it is represented
+        in the csv files.
     base_url (string, default is GitHub location)
         The possibility to enter your own location if desired.
     use_local_location (string, default False)
         The possibility to select a local location (i.e. based on Windows path)
-    all_funds_json (string, default is _Funds)
-        Alter the name of the all funds json if desired.
     
     Output
     ----
-    json_data (dictionary)
+    funds_df (pd.DataFrame)
         Returns a dictionary with a selection or all data based on the input.
 ```
 
@@ -355,26 +392,19 @@ With this information in hand, and having seen the available options within [Und
 ```python
 import financedatabase as fd
 
-bear_market_funds = fd.select_funds(category="Bear Market")
+funds = fd.Funds()
+
+funds.select(category="Bear Market")
 ```
 
-Which returns a total of 4 funds in which below is a small snippet of the output:
+Which returns a total of 4 funds:
 
-```text
-{'BRPIX': {'category': 'Bear Market',
-  'currency': 'USD',
-  'exchange': 'NAS',
-  'family': 'ProFunds',
-  'long_name': 'ProFunds Bear Fund Investor Class',
-  'manager_bio': 'Michael Neches joined ProShare Advisors in 2000, and presently serves as a Senior Portfolio Manager. He previously served as the Senior Portfolio Manager responsible for the companyâ\x80\x99s commodities desk for two years, as a Portfolio Manager and team lead, as an Associate Portfolio Manager and as a Portfolio Analyst. Mr. Neches earned a Bachelor of Science in Finance from the University of Maryland, College Park and an MBA from Georgetown University.',
-  'manager_name': 'Michael  Neches',
-  'market': 'us_market',
-  'short_name': 'Bear ProFund Investor Class',
-  'summary': 'The investment seeks daily investment results, before fees and expenses, that correspond to the inverse (-1x) of the daily performance of the S&P 500Â® Index.\n The fund invests in financial instruments that ProFund Advisors believes, in combination, should produce daily returns consistent with its investment objective. The index is a float-adjusted, market capitalization-weighted index of 500 U.S. operating companies and real estate investment trusts selected through a process that factors in criteria such as liquidity, price, market capitalization and financial viability. The fund is non-diversified.',
-  'total_assets': null},
-
-<continues>
-```
+| symbol   | short_name                      | long_name                                     | currency   | manager_name     | category    | family      | exchange   | market    |   total_assets |
+|:---------|:--------------------------------|:----------------------------------------------|:-----------|:-----------------|:------------|:------------|:-----------|:----------|---------------:|
+| BRPIX    | Bear ProFund Investor Class     | ProFunds Bear Fund Investor Class             | USD        | Michael  Neches  | Bear Market | ProFunds    | NAS        | us_market |    1.26165e+07 |
+| CPCRX    | Comstock Capital Value Fund  Cl | Comstock Capital Value Fund Class I           | USD        | Dennis J. DeCore | Bear Market | Gabelli     | NAS        | us_market |    3.85107e+06 |
+| RYARX    | Rydex Series Fds, Inverse S&P 5 | Rydex Inverse S&P 500 Strategy Fund Class A   | USD        | Ryan A. Harder   | Bear Market | Rydex Funds | NAS        | us_market |    6.23792e+07 |
+| SOPIX    | Short NASDAQ-100 ProFund Invest | ProFunds Short NASDAQ-100 Fund Investor Class | USD        | Michael  Neches  | Bear Market | ProFunds    | NAS        | us_market |    2.37906e+06 |
 
 ### Indices
 
@@ -383,66 +413,51 @@ If you wish to collect data from all indices you can use the following:
 ```python
 import financedatabase as fd
 
+indices = fd.Indices()
 
-all_indices = fd.select_indices()
+indices.select()
 ```
 
-Which returns the following:
+Which returns the following DataFrame:
 
-```test
-{'GBKX': {'short_name': 'KBW Nasdaq Global Bank Index',
-  'currency': None,
-  'market': 'us_market',
-  'exchange': 'NIM',
-  'exchange timezone': 'EDT'},
- 'GBKXN': {'short_name': 'KBW Nasdaq Global Bank Net Total Return Index',
-  'currency': None,
-  'market': 'us_market',
-  'exchange': 'NIM',
-  'exchange timezone': 'EDT'},
- 'GBKXT': {'short_name': 'KBW Nasdaq Global Bank Total Return Index',
-  'currency': None,
-  'market': 'us_market',
-  'exchange': 'NIM',
-  'exchange timezone': 'EDT'},
- '^A1BSC': {'short_name': 'Dow Jones Americas Basic Materi',
-  'currency': 'USD',
-  'market': 'us_market',
-  'exchange': 'DJI',
-  'exchange timezone': 'EDT'}
+|        | short_name                                    | currency   | market    | exchange   | exchange timezone   |
+|:-------|:----------------------------------------------|:-----------|:----------|:-----------|:--------------------|
+| GBKX   | KBW Nasdaq Global Bank Index                  | nan        | us_market | NIM        | EDT                 |
+| GBKXN  | KBW Nasdaq Global Bank Net Total Return Index | nan        | us_market | NIM        | EDT                 |
+| GBKXT  | KBW Nasdaq Global Bank Total Return Index     | nan        | us_market | NIM        | EDT                 |
+| ^A1BSC | Dow Jones Americas Basic Materi               | USD        | us_market | DJI        | EDT                 |
+| ^A1CYC | Dow Jones Americas Consumer Ser               | USD        | us_market | DJI        | EDT                 |
 
-<continues>
-````
-
-This returns approximately 60.000 different indices. Note that by default, only the American exchanges are selected. These are symbols like `^GSPC` (S&P 500) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 90.000 different symbols. Find a more elaborate explanation with `help(fd.select_indices)`:
+This returns approximately 60.000 different indices. Note that by default, only the American exchanges are selected. These are symbols like `^GSPC` (S&P 500) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 90.000 different symbols. Find a more elaborate explanation with `help(indices.select)`:
 
 ```text
-Help on function select_indices in module financedatabase.json_picker:
+Help on method select in module financedatabase.indices:
 
-select_indices(market=None, exclude_exchanges=True, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/Indices', use_local_location=False, all_indices_json='_Indices')
+select(currency: str = '', capitalize: bool = True, exclude_exchanges: bool = True) -> pandas.core.frame.DataFrame method of financedatabase.indices.Indices instance
     Description
     ----
     Returns all indices when no input is given and has the option to give
-    a specific set of symbols for the market you provide.
+    a specific combination of indices based on the currency defined.
     
     Input
     ----
-    market (string, default is None)
-        If filled, gives all data for a specific market.
+    currency (string, default is None)
+        If filled, gives all data for a specific currency.
+    capitalize (boolean, default is True):
+        Whether the currency needs to be capitalized. By default the values
+        always are capitalized as that is also how it is represented in the csv files.
     exclude_exchanges (boolean, default is True):
         Whether you want to exclude exchanges from the search. If False,
-        you will receive multiple times i.e. ^GSPC from different exchanges.
+        you will receive multiple times the product from different exchanges.
     base_url (string, default is GitHub location)
         The possibility to enter your own location if desired.
     use_local_location (string, default False)
         The possibility to select a local location (i.e. based on Windows path)
-    all_indices_json (string, default is _Indices)
-        Alter the name of the all indices json if desired.
     
     Output
     ----
-    json_data (dictionary)
-        Returns a dictionary with a selection or all data based on the input.   
+    indices_df (pd.DataFrame)
+        Returns a dictionary with a selection or all data based on the input.
 ```
 
 ### Currencies
@@ -452,34 +467,47 @@ If you wish to collect data from all currencies you can use the following:
 ```python
 import financedatabase as fd
 
-all_currencies = fd.select_currencies()
+currencies = fd.Currencies()
+
+currencies.select()
 ```
 
-This returns approximately 2.500 different currencies. Find a more elaborate explanation with `help(fd.select_currencies)`:
+Which returns the following DataFrame:
+
+| symbol   | short_name   | currency   | exchange   | market     |
+|:---------|:-------------|:-----------|:-----------|:-----------|
+| AED=X    | USD/AED      | AED        | CCY        | ccy_market |
+| AEDAUD=X | AED/AUD      | AUD        | CCY        | ccy_market |
+| AEDBRX=X | AED/BRX      | nan        | CCY        | ccy_market |
+| AEDCAD=X | AED/CAD      | CAD        | CCY        | ccy_market |
+| AEDCHF=X | AED/CHF      | CHF        | CCY        | ccy_market |
+
+This returns approximately 2.500 different currencies. Find a more elaborate explanation with `help(currencies.select)`:
 
 ```text
-Help on function select_currencies in module financedatabase.json_picker:
+Help on method select in module financedatabase.currencies:
 
-select_currencies(currency=None, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/Currencies', use_local_location=False, all_currencies_json='_Currencies')
+select(currency: str = '', capitalize: bool = True) -> pandas.core.frame.DataFrame method of financedatabase.currencies.Currencies instance
     Description
     ----
     Returns all currencies when no input is given and has the option to give
-    a specific set of symbols for the currency you provide.
+    a specific combination of currencies based on the currency defined.
     
     Input
     ----
     currency (string, default is None)
         If filled, gives all data for a specific currency.
+    capitalize (boolean, default is True):
+        Whether the currency needs to be capitalized. By default the values
+        always are capitalized as that is also how it is represented in the csv files.
     base_url (string, default is GitHub location)
         The possibility to enter your own location if desired.
     use_local_location (string, default False)
         The possibility to select a local location (i.e. based on Windows path)
-    all_currencies_json (string, default is _Currencies)
-        Alter the name of the all currencies json if desired.
     
     Output
     ----
-    json_data (dictionary)
+    currencies_df (pd.DataFrame)
         Returns a dictionary with a selection or all data based on the input.
 ```
 
@@ -488,31 +516,20 @@ With this information in hand, and having seen the available options within [Und
 ```python
 import financedatabase as fd
 
-usd_currency = fd.select_currencies(currency="USD")
+currencies = fd.Currencies()
+
+usd_currency = currencies.select(currency='USD')
 ```
 
 Which returns a total of 135 combination of currencies that include the USD in which below is a small snippet of the output:
 
-```text
-{'AEDUSD=X': {'currency': 'USD',
-  'exchange': 'CCY',
-  'market': 'ccy_market',
-  'short_name': 'AED/USD'},
- 'AFNUSD=X': {'currency': 'USD',
-  'exchange': 'CCY',
-  'market': 'ccy_market',
-  'short_name': 'AFN/USD'},
- 'ALLUSD=X': {'currency': 'USD',
-  'exchange': 'CCY',
-  'market': 'ccy_market',
-  'short_name': 'ALL/USD'},
- 'ANGUSD=X': {'currency': 'USD',
-  'exchange': 'CCY',
-  'market': 'ccy_market',
-  'short_name': 'ANG/USD'}
-
-<continues>
-```
+| symbol   | short_name   | currency   | exchange   | market     |
+|:---------|:-------------|:-----------|:-----------|:-----------|
+| AEDUSD=X | AED/USD      | USD        | CCY        | ccy_market |
+| AFNUSD=X | AFN/USD      | USD        | CCY        | ccy_market |
+| ALLUSD=X | ALL/USD      | USD        | CCY        | ccy_market |
+| ANGUSD=X | ANG/USD      | USD        | CCY        | ccy_market |
+| AOAUSD=X | AOA/USD      | USD        | CCY        | ccy_market |
 
 ### Cryptocurrencies
 
@@ -521,54 +538,55 @@ If you wish to collect data from all cryptocurrencies you can use the following:
 ```python
 import financedatabase as fd
 
+cryptos = fd.Cryptos()
 
-all_cryptocurrencies = fd.select_cryptocurrencies()
+cryptos.select()
 ```
 
 Which returns the following:
 
-```text
-{'AAVE-CAD': {'cryptocurrency': 'AAVE',
-  'currency': 'CAD',
-  'exchange': 'CCC',
-  'market': 'ccc_market',
-  'short_name': 'Aave CAD',
-  'summary': 'Aave (AAVE) is a cryptocurrency and operates on the Ethereum platform. Aave has a current supply of 16,000,000 with 12,488,045.98548802 in circulation. The last known price of Aave is 472.51174201 USD and is down -7.08 over the last 24 hours. It is currently trading on 194 active market(s) with $808,255,779.93 traded over the last 24 hours. More information can be found at https://aave.com/.'},
- 'AAVE-CNY': {'cryptocurrency': 'AAVE',
-  'currency': 'CNY',
-  'exchange': 'CCC',
-  'market': 'ccc_market',
-  'short_name': 'Aave CNY',
-  'summary': 'Aave (AAVE) is a cryptocurrency and operates on the Ethereum platform. Aave has a current supply of 16,000,000 with 12,488,045.98548802 in circulation. The last known price of Aave is 472.51174201 USD and is down -7.08 over the last 24 hours. It is currently trading on 194 active market(s) with $808,255,779.93 traded over the last 24 hours. More information can be found at https://aave.com/.'}
+| symbol   | short_name   | cryptocurrency   | currency   | exchange   | market     |
+|:---------|:-------------|:-----------------|:-----------|:-----------|:-----------|
+| AAVE-CAD | Aave CAD     | AAVE             | CAD        | CCC        | ccc_market |
+| AAVE-CNY | Aave CNY     | AAVE             | CNY        | CCC        | ccc_market |
+| AAVE-ETH | Aave ETH     | AAVE             | ETH        | CCC        | ccc_market |
+| AAVE-EUR | Aave EUR     | AAVE             | EUR        | CCC        | ccc_market |
+| AAVE-GBP | Aave GBP     | AAVE             | GBP        | CCC        | ccc_market |
 
-<continues>
-````
 
-This returns approximately 3.000 different cryptocurrencies. Find a more elaborate explanation with `help(fd.select_cryptocurrencies)`:
+This returns approximately 3.000 different cryptocurrencies. Note that the summary column is taken out on purpose to keep it organized for markdown. The summary is however very handy when it comes to querying specific words as found with the following description given for Ethereum. All of this information is available when you query the database.
+
+```
+Ethereum (ETH) is a cryptocurrency . Users are able to generate ETH through the process of mining. Ethereum has a current supply of 115,789,021.8115. The last known price of Ethereum is 3,564.42544809 USD and is up 2.35 over the last 24 hours. It is currently trading on 5393 active market(s) with $38,633,938,662.39 traded over the last 24 hours. More information can be found at https://www.ethereum.org/.
+```
+
+Find a more elaborate explanation with `help(cryptos.select)`:
 
 ```text
-Help on function select_cryptocurrencies in module financedatabase.json_picker:
+Help on method select in module financedatabase.cryptos:
 
-select_cryptocurrencies(cryptocurrency=None, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/Cryptocurrencies', use_local_location=False, all_cryptocurrencies_json='_Cryptocurrencies')
+select(crypto: str = '', capitalize: bool = True) -> pandas.core.frame.DataFrame method of financedatabase.cryptos.Cryptos instance
     Description
     ----
-    Returns all cryptocurrencies when no input is given and has the option to give
-    a specific set of symbols for the cryptocurrency you provide.
+    Returns all cryptos when no input is given and has the option to give
+    a specific combination of cryptos based on the crypto defined.
+    
     
     Input
     ----
-    cryptocurrency (string, default is None)
-        If filled, gives all data for a specific cryptocurrency.
+    crypto (string, default is None)
+        If filled, gives all data for a specific crypto.
+    capitalize (boolean, default is True):
+        Whether the crypto needs to be capitalized. By default the values
+        always are capitalized as that is also how it is represented in the csv files.
     base_url (string, default is GitHub location)
         The possibility to enter your own location if desired.
     use_local_location (string, default False)
         The possibility to select a local location (i.e. based on Windows path)
-    all_cryptocurrencies_json (string, default is _Cryptocurrencies)
-        Alter the name of the all cryptocurrencies json if desired.
     
     Output
     ----
-    json_data (dictionary)
+    cryptos_df (pd.DataFrame)
         Returns a dictionary with a selection or all data based on the input.
 ```
 
@@ -577,27 +595,20 @@ With this information in hand, and having seen the available options within [Und
 ```python
 import financedatabase as fd
 
-eth_cryptocurrency = fd.select_cryptocurrencies(cryptocurrency="ETH")
+cryptos = fd.Cryptos()
+
+eth_cryptocurrency = cryptos.select(crypto='ETH')
 ```
 
 Which returns a total of 5 combination of cryptocurrencies that include the ETH in which below is a small snippet of the output:
 
-```text
-{'ETH-BTC': {'cryptocurrency': 'ETH',
-  'currency': 'BTC',
-  'exchange': 'CCC',
-  'market': 'ccc_market',
-  'short_name': 'Ethereum BTC',
-  'summary': 'Ethereum (ETH) is a cryptocurrency . Users are able to generate ETH through the process of mining. Ethereum has a current supply of 115,748,447.249. The last known price of Ethereum is 3,363.79331068 USD and is down -3.44 over the last 24 hours. It is currently trading on 6358 active market(s) with $56,906,207,070.13 traded over the last 24 hours. More information can be found at https://www.ethereum.org/.'},
- 'ETH-CAD': {'cryptocurrency': 'ETH',
-  'currency': 'CAD',
-  'exchange': 'CCC',
-  'market': 'ccc_market',
-  'short_name': 'Ethereum CAD',
-  'summary': 'Ethereum (ETH) is a cryptocurrency . Users are able to generate ETH through the process of mining. Ethereum has a current supply of 115,809,211.249. The last known price of Ethereum is 3,942.58538843 USD and is up 1.53 over the last 24 hours. It is currently trading on 5438 active market(s) with $50,452,624,669.75 traded over the last 24 hours. More information can be found at https://www.ethereum.org/.'}
-
-<continues>
-```
+| symbol   | short_name   | cryptocurrency   | currency   | exchange   | market     |
+|:---------|:-------------|:-----------------|:-----------|:-----------|:-----------|
+| ETH-BTC  | Ethereum BTC | ETH              | BTC        | CCC        | ccc_market |
+| ETH-CAD  | Ethereum CAD | ETH              | CAD        | CCC        | ccc_market |
+| ETH-EUR  | Ethereum EUR | ETH              | EUR        | CCC        | ccc_market |
+| ETH-GBP  | Ethereum GBP | ETH              | GBP        | CCC        | ccc_market |
+| ETH-USD  | Ethereum USD | ETH              | USD        | CCC        | ccc_market |
 
 ### Moneymarkets
 
@@ -606,63 +617,75 @@ If you wish to collect data from all money markets you can use the following:
 ```python
 import financedatabase as fd
 
-all_moneymarkets = fd.select_moneymarkets()
+moneymarkets = fd.Moneymarkets()
+
+moneymarkets.select()
 ```
 
 Which returns the following:
 
-```
-{'AABXX': {'currency': 'USD',
-  'exchange': 'NAS',
-  'long_name': None,
-  'market': 'us_market',
-  'short_name': None},
- 'AAFXX': {'currency': 'USD',
-  'exchange': 'NAS',
-  'long_name': None,
-  'market': 'us_market',
-  'short_name': 'American Funds U.S. Government '},
- 'AALXX': {'currency': 'USD',
-  'exchange': 'NAS',
-  'long_name': 'Thrivent Mutual Funds - Thrivent Money Market Fund',
-  'market': 'us_market',
-  'short_name': 'Thrivent Money Market Fund Clas'}
-
-<continues>
-```
+|       | short_name                      | long_name                                                | currency   | market    | exchange   |
+|:------|:--------------------------------|:---------------------------------------------------------|:-----------|:----------|:-----------|
+| AABXX | nan                             | nan                                                      | USD        | us_market | NAS        |
+| AAFXX | American Funds U.S. Government  | nan                                                      | USD        | us_market | NAS        |
+| AALXX | Thrivent Money Market Fund Clas | Thrivent Mutual Funds - Thrivent Money Market Fund       | USD        | us_market | NAS        |
+| AAOXX | American Beacon U.S. Government | American Beacon U.S. Government Money Market Select Fund | USD        | us_market | NAS        |
+| AARXX | nan                             | nan                                                      | USD        | us_market | NAS        |
 
 This returns approximately 3.000 different money markets. Find a more elaborate explanation with `help(fd.select_moneymarkets)`:
 
 ```text
-Help on function select_moneymarkets in module financedatabase.json_picker:
+Help on method select in module financedatabase.moneymarkets:
 
-select_moneymarkets(market=None, exclude_exchanges=True, base_url='https://raw.githubusercontent.com/JerBouma/FinanceDatabase/master/Database/Moneymarkets', use_local_location=False, all_moneymarkets_json='_Moneymarkets')
+select(currency: str = '', capitalize: bool = True, exclude_exchanges: bool = True) -> pandas.core.frame.DataFrame method of financedatabase.moneymarkets.Moneymarkets instance
     Description
     ----
     Returns all moneymarkets when no input is given and has the option to give
-    a specific set of symbols for the market you provide.
+    a specific combination of moneymarkets based on the currency defined.
     
     Input
     ----
-    market (string, default is None)
-        If filled, gives all data for a specific market.
+    currency (string, default is None)
+        If filled, gives all data for a specific currency.
+    capitalize (boolean, default is True):
+        Whether the currency needs to be capitalized. By default the values
+        always are capitalized as that is also how it is represented in the csv files.
     exclude_exchanges (boolean, default is True):
         Whether you want to exclude exchanges from the search. If False,
-        you will receive multiple times i.e. SOND from different exchanges.
+        you will receive multiple times the product from different exchanges.
     base_url (string, default is GitHub location)
         The possibility to enter your own location if desired.
     use_local_location (string, default False)
         The possibility to select a local location (i.e. based on Windows path)
-    all_moneymarkets_json (string, default is _Moneymarkets)
-        Alter the name of the all moneymarkets json if desired.
     
     Output
     ----
-    json_data (dictionary)
-        Returns a dictionary with a selection or all data based on the input.
+    indices_df (pd.DataFrame)
+        Returns a dictionary with a selection or all data based on the input. 
 ```
 
-### Storing the database at a different location
+## Searching the database in detail
+All asset classes have the capability to search each column with `search`, for example `equities.search()`. Through how this functionality is developed you can define multiple columns and search throughoutly. For example:
+
+```
+# Collect all Equities Database
+equities = fd.Equities()
+
+# Search Multiple Columns
+equities.search(summary='automotive', currency='USD', country='Germany')
+```
+
+Which returns a selection of the DataFrame that matches all criteria. 
+
+| symbol   | short_name                  | long_name                                   | currency   | sector             | industry                       | exchange   | market    | country   |   state | city                  |   zipcode | website                   | market_cap   |
+|:---------|:----------------------------|:--------------------------------------------|:-----------|:-------------------|:-------------------------------|:-----------|:----------|:----------|--------:|:----------------------|----------:|:--------------------------|:-------------|
+| AFRMF    | ALPHAFORM AG                | Alphaform AG                                | USD        | Industrials        | Specialty Industrial Machinery | PNK        | us_market | Germany   |     nan | Feldkirchen           |     85622 | nan                       | Nano Cap     |
+| AUUMF    | AUMANN AG                   | Aumann AG                                   | USD        | Industrials        | Specialty Industrial Machinery | PNK        | us_market | Germany   |     nan | Beelen                |     48361 | http://www.aumann.com     | Micro Cap    |
+| BAMXF    | BAYERISCHE MOTOREN WERKE AG | Bayerische Motoren Werke Aktiengesellschaft | USD        | Consumer Cyclical  | Auto Manufacturers             | PNK        | us_market | Germany   |     nan | Munich                |     80788 | http://www.bmwgroup.com   | Large Cap    |
+| BASFY    | BASF SE                     | BASF SE                                     | USD        | Basic Materials    | Chemicals                      | PNK        | us_market | Germany   |     nan | Ludwigshafen am Rhein |     67056 | http://www.basf.com       | Large Cap    |
+| BDRFF    | BEIERSDORF AG               | Beiersdorf Aktiengesellschaft               | USD        | Consumer Defensive | Household & Personal Products  | PNK        | us_market | Germany   |     nan | Hamburg               |     20245 | http://www.beiersdorf.com | Large Cap    |
+
+## Storing the database at a different location
 If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
 `base_url` which you can find in each of the above 'select' functions. An example would be:
 - `select_funds(category='Africa Equity', base_url=<YOUR URL>)`
