@@ -16,10 +16,10 @@ ___
 
 ## Updating the Database
 
-1. You can help out tremendelously by updating one of the CSV files. This can be done through Excel and by making use of CTRL + F (and CTRL + H) to replace cells quickly. 
-
-2. Once you've made your update, you can go to [here](https://github.com/JerBouma/FinanceDatabase/issues/new/choose) and select Database Update. Then, within the textbox, drag an drop your updated CSV files. From here on, I'll make sure to update the Database with your updates!
-
+| Download & Update the CSV Files  | Create a Database Update Issue on GitHub |
+| ------------- | ------------- |
+| You can help out tremendelously by updating one of the CSV files. This can be done through Excel and by making use of CTRL + F (and CTRL + H) to replace cells quickly. <p></p> Carefully go through the cells making sure you're following the descriptions as mentioned [here](#categories). After having saved the files, you're ready to go to the next step. <p></p> |  Once you've made your update, you can go [here](https://github.com/JerBouma/FinanceDatabase/issues/new/choose) and select `Database Update`. Then, within the textbox enter a description of what you changed and then drag and drop your updated CSV files. <p></p> From here on, I'll make sure to update the Database with your updates! <p></p> |
+| <img width="1500" alt="Updating CSV Files - FinanceDatabase" src="https://user-images.githubusercontent.com/46355364/220196479-a3581da7-132b-44a4-b44f-90d989e8c807.png">  | <img width="1500" alt="GitHub Issue - FinanceDatabase" src="https://user-images.githubusercontent.com/46355364/220197736-7453a9bb-d8bb-4569-ab84-b84e456f753e.png"> |
 
 ## Categories
 
@@ -43,7 +43,6 @@ For Equities, these are the categories. Other asset classes follow a similar lay
 
 If in any case you are not able to acquire data for a specific category, keep the field blank so that it is clear that there is no data available. For any of these options, make sure you use an existing category so that it remains compact. For example, the sectors and industries adhere to the [GICS categorisation](https://www.msci.com/our-solutions/indexes/gics).
 
-
 # Developer
 If you know your way around Git and GitHub this is the prefered way of providing updates. In any case, I still provide information regarding how to set up Git.
 
@@ -65,10 +64,10 @@ After setting up Git, you can fork and pull the project in.
     - **Using GitHub Desktop:** [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop) will guide you through setting up Desktop. Once Desktop is set up, you can use it to [fork the repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop)!
     - **Using the command line:** [Fork the repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) so that you can make your changes without affecting the original project until you're ready to merge them.
 2. Pull the Repository Locally ([more info](https://github.com/git-guides/git-pull))
-2. Create your own branch (`git checkout -b Contribution`)
+2. Create your own branch (`git checkout -b feature/contribution`)
 3. Add your changes (`git add .`)
 4. Commit your Changes (`git commit -m 'Improve the Database'`)
-5. Push to your Branch (`git push origin Contribution`)
+5. Push to your Branch (`git push origin feature/contribution`)
 6. Open a Pull Request
 
 The database itself resides in the `Database` folder. Refer to the [User](#user) section what is required to update the data files.
