@@ -2,8 +2,9 @@
 
 1. [Installation](#installation)
 2. [Basic Usage](#basic-usage)
-    1. [Understanding the available options](#understanding-the-available-options) (`fd.select_options`)
-    2. [Collecting information from the database](#collecting-information-from-the-database)
+    1. [Quick Start](#quick-start)
+    2. [Understanding the available options](#understanding-the-available-options) (`fd.select_options`)
+    3. [Collecting information from the database](#collecting-information-from-the-database)
         1. [Equities](#equities) (`fd.select_equities`)
         2. [ETFs](#etfs) (`fd.select_etfs`)
         3. [Funds](#funds) (`fd.select_funds`)
@@ -11,7 +12,8 @@
         5. [Currencies](#currencies) (`fd.select_currencies`)
         6. [Cryptocurrencies](#cryptocurrencies) (`fd.select_cryptocurrencies`)
         7. [Money Markets](#moneymarkets) (`fd.select_moneymarkets`)
-    3. [Storing the database at a different location](#storing-the-database-at-a-different-location)
+    4. [Searching the database extensively](#searching-the-database-extensively)
+    5. [Storing the database at a different location](#storing-the-database-at-a-different-location)
 4. [Contribution](#contribution)
 
 # Installation
@@ -26,6 +28,36 @@ You can install the package with the following steps:
 This section gives a few examples of the possibilities with this package. These are merely a few of the things you
 can do with the package. **As you can obtain a wide range of symbols, pretty much any 
 package that requires symbols should work.**
+
+## Quickstart
+Same methods apply to all other asset classes as well. Columns may vary.
+
+```python
+import financedatabase as fd
+
+# Initialize the Equities database
+equities = fd.Equities()
+
+# Obtain all countries from the database
+equities_countries = equities.options('country')
+
+# Obtain all sectors from the database
+equities_sectors = equities.options('sector')
+
+# Obtain all industries from a country from the database
+equities_germany_industries = equities.options('industry', country='Germany')
+
+# Obtain a selection from the database
+equities_united_states = equities.select(country="United States")
+
+# Obtain a detailed selection from the database
+equities_usa_consumer_electronics = equities.select(country="United States", industry="Consumer Electronics")
+
+# Search specific fields from the database
+equities_uk_biotech = equities.search(country='United Kingdom', summary='biotech', exchange='LSE')
+```
+
+Scroll down below for a more elaborate explanation and detailed examples.
 
 ## Understanding the available options
 Understanding which sectors exist in a country can be interesting. Not only to understand the focus of the country but 

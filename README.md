@@ -60,14 +60,15 @@ Some key statistics of the database:
 \** This is an estimation. Obtaining the country distribution can only be done by collecting data on the underlying 
 or by manual search.
 
-## Table of Contents
+# Table of Contents
 
 1. [Installation](#installation)
 2. [Basic Usage](#basic-usage)
     1. [Quick Start](#quick-start)
     2. [Understanding the available options](#understanding-the-available-options)
     3. [Collecting information from the database](#collecting-information-from-the-database)
-    4. [Storing the database at a different location](#storing-the-database-at-a-different-location)
+    4. [Searching the database extensively](#searching-the-database-extensively)
+    5. [Storing the database at a different location](#storing-the-database-at-a-different-location)
 2. [Examples](#examples)
     1. [Companies in the Netherlands](#companies-in-the-netherlands)
     2. [Technical Analysis of Biotech ETFs](#technical-analysis-of-biotech-etfs)
@@ -76,20 +77,19 @@ or by manual search.
 4. [Contribution](#contribution)
 
 
-## Installation
+# Installation
 The package `financedatabase` allows you to select specific json files as well as search through collected data with a specific query.
 
 You can install the package with the following steps:
 1. `pip install financedatabase`
 2. (within Python) `import financedatabase as fd`
 
-##  Basic Usage
+#  Basic Usage
 This section gives a few examples of the possibilities with this package. These are merely a few of the things you
 can do with the package. **As you can obtain a wide range of symbols, pretty much any 
 package that requires symbols should work.**
 
-
-### Quick Start
+## Quick Start
 
 Same methods apply to all other asset classes as well. Columns may vary.
 
@@ -120,8 +120,7 @@ equities_uk_biotech = equities.search(country='United Kingdom', summary='biotech
 
 Scroll down below for a more elaborate explanation and detailed examples.
 
-
-### Understanding the available options
+## Understanding the available options
 Understanding which countries, sectors, industries and categories exist is important to be able to search the database properly. Not only to understand the focus a specific the country but also to understand which area holds the most data. This is a demonstration of the ```show_options``` function, a function crucial to querying data from the Database. The output of all functionalities is cut off in this README for illustration purposes.
 
 Let's start by acquiring the unique countries, sectors and industries of all equities in the database:
@@ -222,7 +221,7 @@ etfs.options(selection="category")
 
 `Allocation--15% to 30% Equity, Allocation--30% to 50% Equity, Allocation--50% to 70% Equity, Allocation--70% to 85% Equity, Allocation--85%+ Equity, Bank Loan, Bear Market, China Region, Commodities Broad Basket, Communications, Consumer Cyclical, Consumer Defensive, ...`
 
-### Collecting information from the database
+## Collecting information from the database
 
 Each of the asset classes in the database have a specific class as follows:
 
@@ -248,15 +247,17 @@ equities.select()
 
 Which returns the following DataFrame:
 
-|        | symbol   | short_name                      | long_name                                | currency   | sector                 | industry                         | exchange   | market    | country       | state   | city        | zipcode    | website                         | market_cap   |
-|-------:|:---------|:--------------------------------|:-----------------------------------------|:-----------|:-----------------------|:---------------------------------|:-----------|:----------|:--------------|:--------|:------------|:-----------|:--------------------------------|:-------------|
-|  24332 | A        | Agilent Technologies, Inc.      | Agilent Technologies, Inc.               | USD        | Healthcare             | Diagnostics & Research           | NYQ        | us_market | United States | CA      | Santa Clara | 95051      | http://www.agilent.com          | Large Cap    |
-|  25583 | AA       | Alcoa Corporation               | Alcoa Corporation                        | USD        | Basic Materials        | Aluminum                         | NYQ        | us_market | United States | PA      | Pittsburgh  | 15212-5858 | http://www.alcoa.com            | Mid Cap      |
-|  25624 | AAALF    | AAREAL BANK AG                  | Aareal Bank AG                           | USD        | nan                    | nan                              | PNK        | us_market | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    |
-|      0 | ...      | ...                             | ...                                      | ...        | ...                    | ...                              | ...        | ...       | ...           | ...     | ...         | ...        | ...                             | ...          |
-| 155717 | ZZHGF    | ZHONGAN ONLINE P & C INS CO LTD | ZhongAn Online P & C Insurance Co., Ltd. | USD        | Financial Services     | Insurance - Property & Casualty  | PNK        | us_market | China         | nan     | Shanghai    | nan        | http://www.zhongan.com          | Mid Cap      |
-| 155719 | ZZLL     | ZZLL INFORMATION TECHNOLOGY INC | ZZLL Information Technology, Inc.        | USD        | Communication Services | Internet Content & Information   | PNK        | us_market | Hong Kong     | nan     | North Point | nan        | http://www.zzlliti.com          | Nano Cap     |
-| 155727 | ZZZOF    | ZINC ONE RESOURCES INC          | Zinc One Resources Inc.                  | USD        | Basic Materials        | Other Industrial Metals & Mining | PNK        | us_market | Canada        | BC      | Vancouver   | V6E 4H1    | http://www.zincone.com          | Micro Cap    |
+| symbol   | short_name                    | long_name                      | currency   | sector             | industry                         | exchange   | market    | country       | state   | city        | zipcode    | website                             | market_cap   |
+|:---------|:------------------------------|:-------------------------------|:-----------|:-------------------|:---------------------------------|:-----------|:----------|:--------------|:--------|:------------|:-----------|:------------------------------------|:-------------|
+| A        | Agilent Technologies, Inc.    | Agilent Technologies, Inc.     | USD        | Healthcare         | Diagnostics & Research           | NYQ        | us_market | United States | CA      | Santa Clara | 95051      | http://www.agilent.com              | Large Cap    |
+| AA       | Alcoa Corporation             | Alcoa Corporation              | USD        | Basic Materials    | Aluminum                         | NYQ        | us_market | United States | PA      | Pittsburgh  | 15212-5858 | http://www.alcoa.com                | Mid Cap      |
+| AAALF    | AAREAL BANK AG                | Aareal Bank AG                 | USD        | nan                | nan                              | PNK        | us_market | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com          | Small Cap    |
+| AAALY    | AAREAL BANK AG                | Aareal Bank AG                 | USD        | nan                | nan                              | PNK        | us_market | nan           | nan     | nan         | nan        | nan                                 | nan          |
+| AABB     | ASIA BROADBAND INC            | Asia Broadband, Inc.           | USD        | Basic Materials    | Other Industrial Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas   | 89135      | http://www.asiabroadbandinc.com     | Micro Cap    |
+| AABVF    | ABERDEEN INTERNATIONAL INC    | Aberdeen International Inc.    | USD        | Financial Services | Asset Management                 | PNK        | us_market | Canada        | ON      | Toronto     | M5H 2M5    | http://www.aberdeeninternational.ca | Nano Cap     |
+| AAC      | Ares Acquisition Corporation  | Ares Acquisition Corporation   | USD        | Financial Services | Shell Companies                  | NYQ        | us_market | United States | NY      | New York    | 10167      | nan                                 | Small Cap    |
+| AACAF    | AAC TECHNOLOGIES HOLDINGS INC | AAC Technologies Holdings Inc. | USD        | Technology         | Communication Equipment          | PNK        | us_market | China         | nan     | Shenzhen    | 518057     | http://www.aactechnologies.com      | Mid Cap      |
+| AACAY    | AAC TECHNOLOGIES HOLDINGS INC | AAC Technologies Holdings Inc. | USD        | Technology         | Communication Equipment          | PNK        | us_market | China         | nan     | Shenzhen    | 518057     | http://www.aactechnologies.com      | Mid Cap      |
 
 This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155.000 different symbols. 
 
@@ -327,8 +328,7 @@ As you can imagine, looking at such a specific selection only yields a few resul
 
 <b><div align="center">:white_check_mark: For other asset classes, please have a look <a href="https://github.com/JerBouma/FinanceDatabase/blob/main/financedatabase/README.md">here</a>.</div></b>
 
-
-### Searching the database extensively
+## Searching the database extensively
 All asset classes have the capability to search each column with `search`, for example `equities.search()`. Through how this functionality is developed you can define multiple columns and search throughoutly. For example:
 
 ```
@@ -349,7 +349,7 @@ Which returns a selection of the DataFrame that matches all criteria.
 | BASFY    | BASF SE                     | BASF SE                                     | USD        | Basic Materials    | Chemicals                      | PNK        | us_market | Germany   |     nan | Ludwigshafen am Rhein |     67056 | http://www.basf.com       | Large Cap    |
 | BDRFF    | BEIERSDORF AG               | Beiersdorf Aktiengesellschaft               | USD        | Consumer Defensive | Household & Personal Products  | PNK        | us_market | Germany   |     nan | Hamburg               |     20245 | http://www.beiersdorf.com | Large Cap    |
 
-### Storing the database at a different location
+## Storing the database at a different location
 If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
 `base_url` which you can find in each of the above 'select' functions. An example would be:
 - `fd.Equities(base_url=<YOUR URL>)`
@@ -358,12 +358,12 @@ You can also store the database locally and point to your local location with th
 `use_local_location` to True. An example would be:
 - `fd.Equities(base_url=<YOUR PATH>, use_local_location=True)`
 
-## Examples
+# Examples
 This section gives a few examples of the possibilities with this package. These are merely a few of the things you
 can do with the package. **As you can obtain a wide range of symbols, pretty much any 
 package that requires symbols should work.**
 
-### Companies in the Netherlands
+## Companies in the Netherlands
 I want to see how many companies exist in each sector in the Netherlands. Let's count all companies with the 
 following code, I skip a sector when it has no data and also do not include companies that are not categorized:
 
@@ -402,7 +402,7 @@ This results in the following graph which gives an indication which sectors are 
 
 ![FinanceDatabase](https://user-images.githubusercontent.com/46355364/219180273-4ed5f3a5-6ecf-4994-8a8e-285d9c51fe7d.png)
 
-### Technical Analysis of Biotech ETFs
+## Technical Analysis of Biotech ETFs
 With the help of [ta](https://github.com/bukosabino/ta) and [yfinance](https://github.com/ranaroussi/yfinance) I can 
 quickly perform a basic technical analysis on a group of ETFs categorized by the FinanceDatabase. I start by 
 searching the database for ETFs related to Health and then make a subselection by searching, in the collected database, 
@@ -471,7 +471,7 @@ about [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp)
 
 ![FinanceDatabase](https://user-images.githubusercontent.com/46355364/219180415-dc303fa3-a615-4f80-96cf-eadb2b804a65.png)
 
-### Silicon Valley's Market Cap
+## Silicon Valley's Market Cap
 If I want to understand which listed technology companies exist in Silicon Valley, I can collect all equities of the sector 'Technology' and then filter based on city to obtain all listed technology companies in 'Silicon Valley'. The city 'San Jose' is where Silicon Valley is located.
 
 ````python
@@ -523,7 +523,7 @@ This results in the graph displayed below which separates the small companies fr
 
 ![FinanceDatabase](https://user-images.githubusercontent.com/46355364/219179328-7eb54138-42a1-4d51-9ae1-5ac182c33440.png)
 
-## Questions & Answers
+# Questions & Answers
 In this section you can find answers to commonly asked questions. In case the answer to your question is not here, 
 consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues).
 
@@ -543,7 +543,7 @@ consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues)
       Therefore, it makes sense that not all tickers return data. If you are still in doubt, search the ticker on 
       Google to see if there is really no data available. If you can't find anything about the ticker, consider updating the database by visiting the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
 
-## Contribution
+# Contribution
 After setting up Git, you can fork and pull the project in.
 
 1. Fork the Project ([more info](https://docs.github.com/en/get-started/quickstart/fork-a-repo))
