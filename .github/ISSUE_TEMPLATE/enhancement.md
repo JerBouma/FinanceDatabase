@@ -1,5 +1,5 @@
 ---
-name: Improvement
+name: Improvements * Bugs
 about: Improve something on this project
 title: "[IMPROVE]"
 labels: 'type:enhancement'
