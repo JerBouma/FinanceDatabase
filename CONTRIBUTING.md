@@ -14,8 +14,16 @@ ___
 <b><div align="center"><a href="https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FJerBouma%2FFinanceDatabase%2Ftree%2Fmain%2FDatabasDownload">Download the the CSV files of the FinanceDatabase here</a>.</div></b>
 ___
 
+## Updating the Database
 
-**You can help out tremendelously by updating one of the CSV files.** This can be done through Excel and by making use of CTRL + F (and CTRL + H) to replace cells quickly. For any of these options, make sure you use an existing category so that it remains compact. For example, the sectors and industries adhere to the [GICS categorisation](https://www.msci.com/our-solutions/indexes/gics). For Equities, these are the categories. Other asset classes follow a similar lay-out.
+1. You can help out tremendelously by updating one of the CSV files. This can be done through Excel and by making use of CTRL + F (and CTRL + H) to replace cells quickly. 
+
+2. Once you've made your update, you can go to [here](https://github.com/JerBouma/FinanceDatabase/issues/new/choose) and select Database Update. Then, within the textbox, drag an drop your updated CSV files. From here on, I'll make sure to update the Database with your updates!
+
+
+## Categories
+
+For Equities, these are the categories. Other asset classes follow a similar lay-out, see [examples](https://github.com/JerBouma/FinanceDatabase/blob/main/examples.ipynb).
 
 - **symbol**: set the symbol of the company.
 - **short_name**: enter the short abbreviation of the company name.
@@ -33,9 +41,7 @@ ___
 - **website**: if applicable, enter the website.
 - **market_cap**: based on [market cap categorization](https://www.investopedia.com/investing/market-capitalization-defined/) define the market cap.
 
-If in any case you are not able to acquire data for a specific category, keep the field blank so that it is clear that there is no data available.
-
-**Once you've made your update, you can go to [here](https://github.com/JerBouma/FinanceDatabase/issues/new/choose) and select Database Update.** Then, within the textbox, drag an drop your updated CSV files. From here on, I'll make sure to update the Database with your updates!
+If in any case you are not able to acquire data for a specific category, keep the field blank so that it is clear that there is no data available. For any of these options, make sure you use an existing category so that it remains compact. For example, the sectors and industries adhere to the [GICS categorisation](https://www.msci.com/our-solutions/indexes/gics).
 
 
 # Developer
