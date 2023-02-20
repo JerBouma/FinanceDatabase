@@ -198,7 +198,13 @@ select(country: str = '', sector: str = '', industry: str = '', exclude_exchange
         Returns a dictionary with a selection or all data based on the input.
 ```
 
-As an example, we can use `equities.options` to obtain specific country, sector and industry options. For example with `equities.options(selection='industry', country="United States", sector="Basic Materials")` all industries within the sector Basic Materials within the United States can be obtained. This allows us to look at a specific industry in the United States in detail. So with this information in hand, I can now query the industry `Aluminum` as follows:
+As an example, we can use `equities.options` to obtain specific country, sector and industry options. For we can acquire all industries within the sector `Basic Materials` within the `United States`. This allows us to look at a specific industry in the United States in detail. 
+
+```python
+industry_options = equities.options(selection='industry', country="United States", sector="Basic Materials")
+```
+
+So with this information in hand, I can now query the industry `Aluminum` as follows:
 
 ```python
 aluminium_companies_usa = equities.select(country="United States", sector="Basic Materials", industry="Aluminum")
