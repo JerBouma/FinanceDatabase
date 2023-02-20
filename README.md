@@ -438,16 +438,4 @@ consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues)
       Google to see if there is really no data available. If you can't find anything about the ticker, consider updating the database by visiting the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
 
 # Contribution
-After setting up Git, you can fork and pull the project in.
-
-1. Fork the Project ([more info](https://docs.github.com/en/get-started/quickstart/fork-a-repo))
-    - **Using GitHub Desktop:** [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop) will guide you through setting up Desktop. Once Desktop is set up, you can use it to [fork the repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop)!
-    - **Using the command line:** [Fork the repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) so that you can make your changes without affecting the original project until you're ready to merge them.
-2. Pull the Repository Locally ([more info](https://github.com/git-guides/git-pull))
-2. Create your own branch (`git checkout -b Contribution`)
-3. Add your changes (`git add .`)
-4. Commit your Changes (`git commit -m 'Improve the Database'`)
-5. Push to your Branch (`git push origin Contribution`)
-6. Open a Pull Request
-
-Please read more about how you can contribute to the Database by reading the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
+Please read more about how you can contribute to the Database by reading the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md). Anyone can contribute as it requires minimal knowhow of working with GitHub or Git.
