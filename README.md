@@ -254,8 +254,6 @@ Which returns the following DataFrame:
 | AABB     | ASIA BROADBAND INC            | Asia Broadband, Inc.           | USD        | Basic Materials    | Other Industrial Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas   | 89135      | http://www.asiabroadbandinc.com     | Micro Cap    |
 | AABVF    | ABERDEEN INTERNATIONAL INC    | Aberdeen International Inc.    | USD        | Financial Services | Asset Management                 | PNK        | us_market | Canada        | ON      | Toronto     | M5H 2M5    | http://www.aberdeeninternational.ca | Nano Cap     |
 | AAC      | Ares Acquisition Corporation  | Ares Acquisition Corporation   | USD        | Financial Services | Shell Companies                  | NYQ        | us_market | United States | NY      | New York    | 10167      | nan                                 | Small Cap    |
-| AACAF    | AAC TECHNOLOGIES HOLDINGS INC | AAC Technologies Holdings Inc. | USD        | Technology         | Communication Equipment          | PNK        | us_market | China         | nan     | Shenzhen    | 518057     | http://www.aactechnologies.com      | Mid Cap      |
-| AACAY    | AAC TECHNOLOGIES HOLDINGS INC | AAC Technologies Holdings Inc. | USD        | Technology         | Communication Equipment          | PNK        | us_market | China         | nan     | Shenzhen    | 518057     | http://www.aactechnologies.com      | Mid Cap      |
 
 This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155.000 different symbols. 
 
@@ -314,13 +312,13 @@ aluminium_companies_usa = equities.select(country="United States", sector="Basic
 
 This gives you a DataFrame with the following information:
 
-|        | symbol   | short_name                  | long_name                            | currency   | sector          | industry   | exchange   | market    | country       | state   | city           | zipcode    | website                       | market_cap   |
-|-------:|:---------|:----------------------------|:-------------------------------------|:-----------|:----------------|:-----------|:-----------|:----------|:--------------|:--------|:---------------|:-----------|:------------------------------|:-------------|
-|  25583 | AA       | Alcoa Corporation           | Alcoa Corporation                    | USD        | Basic Materials | Aluminum   | NYQ        | us_market | United States | PA      | Pittsburgh     | 15212-5858 | http://www.alcoa.com          | Mid Cap      |
-|  48264 | CENX     | Century Aluminum Company    | Century Aluminum Company             | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | IL      | Chicago        | 60606      | http://centuryaluminum.com    | Small Cap    |
-|  83162 | KALU     | Kaiser Aluminum Corporation | Kaiser Aluminum Corporation          | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | CA      | Foothill Ranch | 92610-2831 | http://www.kaiseraluminum.com | Mid Cap      |
-| 102260 | NORNQ    | NORANDA ALUM HLDG CORP      | Noranda Aluminum Holding Corporation | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | TN      | Franklin       | 37067      | nan                           | Nano Cap     |
-| 106568 | ORMTQ    | ORMET CORP                  | Ormet Corporation                    | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | OH      | Hannibal       | 43931      | nan                           | Nano Cap     |
+| symbol   | short_name                  | long_name                            | currency   | sector          | industry   | exchange   | market    | country       | state   | city           | zipcode    | website                       | market_cap   |
+|:---------|:----------------------------|:-------------------------------------|:-----------|:----------------|:-----------|:-----------|:----------|:--------------|:--------|:---------------|:-----------|:------------------------------|:-------------|
+| AA       | Alcoa Corporation           | Alcoa Corporation                    | USD        | Basic Materials | Aluminum   | NYQ        | us_market | United States | PA      | Pittsburgh     | 15212-5858 | http://www.alcoa.com          | Mid Cap      |
+| CENX     | Century Aluminum Company    | Century Aluminum Company             | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | IL      | Chicago        | 60606      | http://centuryaluminum.com    | Small Cap    |
+| KALU     | Kaiser Aluminum Corporation | Kaiser Aluminum Corporation          | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | CA      | Foothill Ranch | 92610-2831 | http://www.kaiseraluminum.com | Mid Cap      |
+| NORNQ    | NORANDA ALUM HLDG CORP      | Noranda Aluminum Holding Corporation | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | TN      | Franklin       | 37067      | nan                           | Nano Cap     |
+| ORMTQ    | ORMET CORP                  | Ormet Corporation                    | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | OH      | Hannibal       | 43931      | nan                           | Nano Cap     |
 
 As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Basic Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
 
