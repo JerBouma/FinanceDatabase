@@ -718,11 +718,11 @@ Which returns a selection of the DataFrame that matches all criteria.
 ## Storing the database at a different location
 If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
 `base_url` which you can find in each of the above 'select' functions. An example would be:
-- `select_funds(category='Africa Equity', base_url=<YOUR URL>)`
+- `fd.Equities(base_url=<YOUR URL>)`
 
 You can also store the database locally and point to your local location with the variable `base_url` and by setting
 `use_local_location` to True. An example would be:
-- `select_etfs(category='Bank Loan', base_url='C:/Users/jerbo/FinanceDatabase/Database/ETFs/', use_local_location=True)`
+- `fd.Equities(base_url=<YOUR PATH>, use_local_location=True)`
 
 # Contribution
 After setting up Git, you can fork and pull the project in. Note that it is bulky given the large collection of files.
