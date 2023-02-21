@@ -83,6 +83,7 @@ class ETFs(FinanceDatabase):
         ----
         selection (string)
             The selection you want to see the options for. Can be:
+            - category_group
             - category
             - family
         category (string, default is None)
@@ -95,8 +96,10 @@ class ETFs(FinanceDatabase):
         options (pd.Series)
             Returns a series with all options for the selection provided.
         """
-        if selection not in ["category_group", "category", "family"]:
-            raise ValueError("The selection provided is not valid.")
+        selection_values = ["category_group", "category", "family"]
+        if selection not in selection_values:
+            raise ValueError(f"The selection variable provided is not valid, "
+                             f"choose from {', '.join(selection_values)}")
 
         etfs = self.select(category=category, family=family, exclude_exchanges=False)
 

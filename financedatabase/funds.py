@@ -91,8 +91,10 @@ class Funds(FinanceDatabase):
         options (pd.Series)
             Returns a series with all options for the selection provided.
         """
-        if selection not in ["category", "family"]:
-            raise ValueError("The selection provided is not valid.")
+        selection_values = ["category", "family"]
+        if selection not in selection_values:
+            raise ValueError(f"The selection variable provided is not valid, "
+                             f"choose from {', '.join(selection_values)}")
 
         funds = self.select(category=category, family=family, exclude_exchanges=False)
 

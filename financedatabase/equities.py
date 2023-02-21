@@ -16,6 +16,7 @@ class Equities(FinanceDatabase):
         self,
         country: str = "",
         sector: str = "",
+        industry_group: str = "",
         industry: str = "",
         exclude_exchanges: bool = True,
         capitalize: bool = True,
@@ -35,6 +36,8 @@ class Equities(FinanceDatabase):
             If filled, gives all data for a specific country.
         sector (string, default is None)
             If filled, gives all data for a specific sector.
+        industry_group (string, default is None)
+            If filled, gives all data for a specific industry group.
         industry (string, default is None)
             If filled, gives all data for a specific industry.
         exclude_exchanges (boolean, default is True):
@@ -57,9 +60,10 @@ class Equities(FinanceDatabase):
         equities = self.data.copy(deep=True)
 
         if capitalize:
-            country, sector, industry = (
+            country, sector, industry_group, industry = (
                 country.title(),
                 sector.title(),
+                industry_group.title(),
                 industry.title(),
             )
 
@@ -67,6 +71,8 @@ class Equities(FinanceDatabase):
             equities = equities[equities["country"] == country]
         if sector:
             equities = equities[equities["sector"] == sector]
+        if industry_group:
+            equities = equities[equities["industry_group"] == sector]
         if industry:
             equities = equities[equities["industry"] == industry]
         if exclude_exchanges:
@@ -74,7 +80,7 @@ class Equities(FinanceDatabase):
         return equities
 
     def options(
-        self, selection: str, country: str = "", sector: str = "", industry: str = ""
+        self, selection: str, country: str = "", sector: str = "", industry_group: str = "", industry: str = ""
     ) -> pd.Series:
         """
         Description
@@ -87,11 +93,14 @@ class Equities(FinanceDatabase):
             The selection you want to see the options for. Can be:
             - country
             - sector
+            - industry_group
             - industry
         country (string, default is None)
             If filled, gives all data for a specific country.
         sector (string, default is None)
             If filled, gives all data for a specific sector.
+        industry_group (string, default is None)
+            If filled, gives all data for a specific industry group.
         industry (string, default is None)
             If filled, gives all data for a specific industry.
         Output
@@ -99,15 +108,19 @@ class Equities(FinanceDatabase):
         options (pd.Series)
             Returns a series with all options for the selection provided.
         """
-        if selection not in ["country", "sector", "industry"]:
-            raise ValueError("The selection provided is not valid.")
+        selection_values = ["country", "sector", "industry_group", "industry"]
+        if selection not in selection_values:
+            raise ValueError(f"The selection variable provided is not valid, "
+                             f"choose from {', '.join(selection_values)}")
 
-        equities = self.select(country=country, sector=sector, industry=industry, exclude_exchanges=False)
+        equities = self.select(country=country, sector=sector, industry_group=industry_group,
+                               industry=industry, exclude_exchanges=False)
 
         if equities.empty:
             # Meant for the rare cases where capitalizing is not working as desired.
             equities = self.select(
-                country=country, sector=sector, industry=industry, capitalize=False, exclude_exchanges=False
+                country=country, sector=sector, industry_group=industry_group, industry=industry,
+                capitalize=False, exclude_exchanges=False
             )
 
         return equities[selection].dropna().sort_values().unique()
