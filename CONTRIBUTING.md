@@ -11,7 +11,7 @@ If you only got as far as the installation process and have little experience wi
 
 ___
 
-<b><div align="center"><a href="https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FJerBouma%2FFinanceDatabase%2Ftree%2Fmain%2FDatabasDownload">Download the the CSV files of the FinanceDatabase here</a>.</div></b>
+<b><div align="center"><a href="https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FJerBouma%2FFinanceDatabase%2Ftree%2Fmain%2FDatabase">Download the the CSV files of the FinanceDatabase here</a>.</div></b>
 ___
 
 ## Updating the Database
