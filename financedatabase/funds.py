@@ -14,6 +14,7 @@ class Funds(FinanceDatabase):
 
     def select(
         self,
+        category_group: str = "",
         category: str = "",
         family: str = "",
         exclude_exchanges: bool = True,
@@ -30,6 +31,8 @@ class Funds(FinanceDatabase):
 
         Input
         ----
+        category_group (string, default is None)
+            If filled, gives all data for a specific category group.
         category (string, default is None)
             If filled, gives all data for a specific category.
         family (string, default is None)
@@ -54,11 +57,14 @@ class Funds(FinanceDatabase):
         funds = self.data.copy(deep=True)
 
         if capitalize:
-            category, family = (
+            category_group, category, family = (
+                category_group.title(),
                 category.title(),
                 family.title(),
             )
 
+        if category_group:
+            funds = funds[funds["category_group"] == category]
         if category:
             funds = funds[funds["category"] == category]
         if family:
@@ -68,7 +74,7 @@ class Funds(FinanceDatabase):
         return funds
 
     def options(
-        self, selection: str, category: str = "", family: str = ""
+        self, selection: str, category_group: str = "", category: str = "", family: str = ""
     ) -> pd.Series:
         """
         Description
@@ -79,6 +85,7 @@ class Funds(FinanceDatabase):
         ----
         selection (string)
             The selection you want to see the options for. Can be:
+            - category_group
             - category
             - family
         category (string, default is None)
@@ -91,15 +98,15 @@ class Funds(FinanceDatabase):
         options (pd.Series)
             Returns a series with all options for the selection provided.
         """
-        selection_values = ["category", "family"]
+        selection_values = ["category_group", "category", "family"]
         if selection not in selection_values:
             raise ValueError(f"The selection variable provided is not valid, "
                              f"choose from {', '.join(selection_values)}")
 
-        funds = self.select(category=category, family=family, exclude_exchanges=False)
+        funds = self.select(category_group=category_group, category=category, family=family, exclude_exchanges=False)
 
         if funds.empty:
             # Meant for the rare cases where capitalizing is not working as desired.
-            funds = self.select(category=category, family=family, capitalize=False, exclude_exchanges=False)
+            funds = self.select(category_group=category_group, category=category, family=family, capitalize=False, exclude_exchanges=False)
 
         return funds[selection].dropna().sort_values().unique()
