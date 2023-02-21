@@ -64,7 +64,7 @@ class Funds(FinanceDatabase):
             )
 
         if category_group:
-            funds = funds[funds["category_group"] == category]
+            funds = funds[funds["category_group"] == category_group]
         if category:
             funds = funds[funds["category"] == category]
         if family:
