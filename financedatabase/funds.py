@@ -94,10 +94,10 @@ class Funds(FinanceDatabase):
         if selection not in ["category", "family"]:
             raise ValueError("The selection provided is not valid.")
 
-        funds = self.select(category=category, family=family)
+        funds = self.select(category=category, family=family, exclude_exchanges=False)
 
         if funds.empty:
             # Meant for the rare cases where capitalizing is not working as desired.
-            funds = self.select(category=category, family=family, capitalize=False)
+            funds = self.select(category=category, family=family, capitalize=False, exclude_exchanges=False)
 
         return funds[selection].dropna().sort_values().unique()

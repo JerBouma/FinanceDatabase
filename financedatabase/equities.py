@@ -102,12 +102,12 @@ class Equities(FinanceDatabase):
         if selection not in ["country", "sector", "industry"]:
             raise ValueError("The selection provided is not valid.")
 
-        equities = self.select(country=country, sector=sector, industry=industry)
+        equities = self.select(country=country, sector=sector, industry=industry, exclude_exchanges=False)
 
         if equities.empty:
             # Meant for the rare cases where capitalizing is not working as desired.
             equities = self.select(
-                country=country, sector=sector, industry=industry, capitalize=False
+                country=country, sector=sector, industry=industry, capitalize=False, exclude_exchanges=False
             )
 
         return equities[selection].dropna().sort_values().unique()

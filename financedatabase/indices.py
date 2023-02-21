@@ -68,6 +68,6 @@ class Indices(FinanceDatabase):
         options (pd.Series)
             Returns a series with all options for the selection provided.
         """
-        indices = self.select()
+        indices = self.select(exclude_exchanges=False)
 
         return indices["currency"].dropna().sort_values().unique()

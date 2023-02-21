@@ -70,6 +70,6 @@ class Moneymarkets(FinanceDatabase):
         options (pd.Series)
             Returns a series with all options for the selection provided.
         """
-        moneymarkets = self.select()
+        moneymarkets = self.select(exclude_exchanges=False)
 
         return moneymarkets["currency"].dropna().sort_values().unique()

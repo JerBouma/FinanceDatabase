@@ -6,7 +6,7 @@ import pandas as pd
 
 file_path = Path(__file__).parent.parent / "Database"
 DATA_REPO = (
-    "https://raw.githubusercontent.com/colin99d/FinanceDatabase/new_equities/Database/"
+    "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/Database/"
 )
 
 

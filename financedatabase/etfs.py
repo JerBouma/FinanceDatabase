@@ -14,6 +14,7 @@ class ETFs(FinanceDatabase):
 
     def select(
         self,
+        category_group: str = "",
         category: str = "",
         family: str = "",
         exclude_exchanges: bool = True,
@@ -54,11 +55,14 @@ class ETFs(FinanceDatabase):
         etfs = self.data.copy(deep=True)
 
         if capitalize:
-            category, family = (
+            category_group, category, family = (
+                category_group.title(),
                 category.title(),
                 family.title(),
             )
-
+            
+        if category_group:
+            etfs = etfs[etfs["category_group"] == category_group]
         if category:
             etfs = etfs[etfs["category"] == category]
         if family:
@@ -91,13 +95,13 @@ class ETFs(FinanceDatabase):
         options (pd.Series)
             Returns a series with all options for the selection provided.
         """
-        if selection not in ["category", "family"]:
+        if selection not in ["category_group", "category", "family"]:
             raise ValueError("The selection provided is not valid.")
 
-        etfs = self.select(category=category, family=family)
+        etfs = self.select(category=category, family=family, exclude_exchanges=False)
 
         if etfs.empty:
             # Meant for the rare cases where capitalizing is not working as desired.
-            etfs = self.select(category=category, family=family, capitalize=False)
+            etfs = self.select(category=category, family=family, capitalize=False, exclude_exchanges=False)
 
         return etfs[selection].dropna().sort_values().unique()
