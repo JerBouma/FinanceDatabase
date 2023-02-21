@@ -30,8 +30,9 @@ For Equities, these are the categories. Other asset classes follow a similar lay
 - **long_name**: enter the full company name.
 - **summary**: enter a brief company description, explaining the purpose of the company.
 - **currency**: select the denominated currency of this specific ticker (based on exchange).
-- **sector**: select the sector that belongs to the company.
-- **industry**: select the industry that belongs to the company.
+- **sector**: select the sector that belongs to the company (follows GICS)
+- **industry_group**: select the industry group that belongs to the company (follows GICS).
+- **industry**: select the industry that belongs to the company (follows GICS).
 - **exchange**: select the exchange the company is listed at.
 - **market**: enter which market the company belongs to, this is related to the exchange as well.
 - **country**: select the country where the company's headquarters is located.
@@ -41,7 +42,7 @@ For Equities, these are the categories. Other asset classes follow a similar lay
 - **website**: if applicable, enter the website.
 - **market_cap**: based on [market cap categorization](https://www.investopedia.com/investing/market-capitalization-defined/) define the market cap.
 
-If in any case you are not able to acquire data for a specific category, keep the field blank so that it is clear that there is no data available. For any of these options, make sure you use an existing category so that it remains compact. For example, the sectors and industries adhere to the [GICS categorisation](https://www.msci.com/our-solutions/indexes/gics).
+If in any case you are not able to acquire data for a specific category, keep the field blank so that it is clear that there is no data available. For any of these options, make sure you use an existing category so that it remains compact. For example, the sectors, industry groups and industries adhere to the [GICS categorisation](https://www.msci.com/our-solutions/indexes/gics).
 
 # Developer
 If you know your way around Git and GitHub this is the preferred way of providing updates. In any case, I still provide information regarding how to set up Git.
