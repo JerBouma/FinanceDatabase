@@ -60,7 +60,7 @@ class ETFs(FinanceDatabase):
                 category.title(),
                 family.title(),
             )
-            
+
         if category_group:
             etfs = etfs[etfs["category_group"] == category_group]
         if category:
@@ -98,13 +98,20 @@ class ETFs(FinanceDatabase):
         """
         selection_values = ["category_group", "category", "family"]
         if selection not in selection_values:
-            raise ValueError(f"The selection variable provided is not valid, "
-                             f"choose from {', '.join(selection_values)}")
+            raise ValueError(
+                f"The selection variable provided is not valid, "
+                f"choose from {', '.join(selection_values)}"
+            )
 
         etfs = self.select(category=category, family=family, exclude_exchanges=False)
 
         if etfs.empty:
             # Meant for the rare cases where capitalizing is not working as desired.
-            etfs = self.select(category=category, family=family, capitalize=False, exclude_exchanges=False)
+            etfs = self.select(
+                category=category,
+                family=family,
+                capitalize=False,
+                exclude_exchanges=False,
+            )
 
         return etfs[selection].dropna().sort_values().unique()

@@ -5,9 +5,7 @@ from pathlib import Path
 import pandas as pd
 
 file_path = Path(__file__).parent.parent / "Database"
-DATA_REPO = (
-    "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/Database/"
-)
+DATA_REPO = "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/Database/"
 
 
 class FinanceDatabase:

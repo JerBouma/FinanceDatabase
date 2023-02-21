@@ -74,7 +74,11 @@ class Funds(FinanceDatabase):
         return funds
 
     def options(
-        self, selection: str, category_group: str = "", category: str = "", family: str = ""
+        self,
+        selection: str,
+        category_group: str = "",
+        category: str = "",
+        family: str = "",
     ) -> pd.Series:
         """
         Description
@@ -100,13 +104,26 @@ class Funds(FinanceDatabase):
         """
         selection_values = ["category_group", "category", "family"]
         if selection not in selection_values:
-            raise ValueError(f"The selection variable provided is not valid, "
-                             f"choose from {', '.join(selection_values)}")
+            raise ValueError(
+                f"The selection variable provided is not valid, "
+                f"choose from {', '.join(selection_values)}"
+            )
 
-        funds = self.select(category_group=category_group, category=category, family=family, exclude_exchanges=False)
+        funds = self.select(
+            category_group=category_group,
+            category=category,
+            family=family,
+            exclude_exchanges=False,
+        )
 
         if funds.empty:
             # Meant for the rare cases where capitalizing is not working as desired.
-            funds = self.select(category_group=category_group, category=category, family=family, capitalize=False, exclude_exchanges=False)
+            funds = self.select(
+                category_group=category_group,
+                category=category,
+                family=family,
+                capitalize=False,
+                exclude_exchanges=False,
+            )
 
         return funds[selection].dropna().sort_values().unique()

@@ -80,7 +80,12 @@ class Equities(FinanceDatabase):
         return equities
 
     def options(
-        self, selection: str, country: str = "", sector: str = "", industry_group: str = "", industry: str = ""
+        self,
+        selection: str,
+        country: str = "",
+        sector: str = "",
+        industry_group: str = "",
+        industry: str = "",
     ) -> pd.Series:
         """
         Description
@@ -110,17 +115,28 @@ class Equities(FinanceDatabase):
         """
         selection_values = ["country", "sector", "industry_group", "industry"]
         if selection not in selection_values:
-            raise ValueError(f"The selection variable provided is not valid, "
-                             f"choose from {', '.join(selection_values)}")
+            raise ValueError(
+                f"The selection variable provided is not valid, "
+                f"choose from {', '.join(selection_values)}"
+            )
 
-        equities = self.select(country=country, sector=sector, industry_group=industry_group,
-                               industry=industry, exclude_exchanges=False)
+        equities = self.select(
+            country=country,
+            sector=sector,
+            industry_group=industry_group,
+            industry=industry,
+            exclude_exchanges=False,
+        )
 
         if equities.empty:
             # Meant for the rare cases where capitalizing is not working as desired.
             equities = self.select(
-                country=country, sector=sector, industry_group=industry_group, industry=industry,
-                capitalize=False, exclude_exchanges=False
+                country=country,
+                sector=sector,
+                industry_group=industry_group,
+                industry=industry,
+                capitalize=False,
+                exclude_exchanges=False,
             )
 
         return equities[selection].dropna().sort_values().unique()
