@@ -1,25 +1,21 @@
-<p align="center">
-    <img src="https://user-images.githubusercontent.com/46355364/220746807-669cdbc1-ac67-404c-b0bb-4a3d67d9931f.jpg" alt="Logo">
-</center>
-<p align="center">
-    <a href="https://www.buymeacoffee.com/jerbouma">
-        <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-brightgreen?logo=buymeacoffee" alt="Logo">
-    </a>
-    <a href="https://github.com/JerBouma/FinanceDatabase/issues">
-        <img src="https://img.shields.io/github/issues/jerbouma/financedatabase" alt="Logo">
-    </a>
-     <a href="https://github.com/JerBouma/FinanceDatabase/pulls">
-        <img src="https://img.shields.io/github/issues-pr/JerBouma/FinanceDatabase?color=yellow" alt="Logo">
-    </a>
-    <a href="https://pypi.org/project/financedatabase/">
-        <img src="https://img.shields.io/pypi/v/FinanceDatabase" alt="Logo">
-    </a>
-    <a href="https://pypi.org/project/financedatabase/">
-        <img src="https://img.shields.io/pypi/dm/FinanceDatabase" alt="Logo">
-    </a>
-</center>
+<img src="https://user-images.githubusercontent.com/46355364/220746807-669cdbc1-ac67-404c-b0bb-4a3d67d9931f.jpg" alt="Logo">
+<a href="https://www.buymeacoffee.com/jerbouma">
+    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-brightgreen?logo=buymeacoffee" alt="Logo">
+</a>
+<a href="https://github.com/JerBouma/FinanceDatabase/issues">
+    <img src="https://img.shields.io/github/issues/jerbouma/financedatabase" alt="Logo">
+</a>
+    <a href="https://github.com/JerBouma/FinanceDatabase/pulls">
+    <img src="https://img.shields.io/github/issues-pr/JerBouma/FinanceDatabase?color=yellow" alt="Logo">
+</a>
+<a href="https://pypi.org/project/financedatabase/">
+    <img src="https://img.shields.io/pypi/v/FinanceDatabase" alt="Logo">
+</a>
+<a href="https://pypi.org/project/financedatabase/">
+    <img src="https://img.shields.io/pypi/dm/FinanceDatabase" alt="Logo">
+</a>
 
-| :bulb: **Call for Contributors to the FinanceDatabase** :bulb:   |
+| **Call for Contributors to the FinanceDatabase** |
 |:------------------------------------------------------:|
 | The **FinanceDatabase** serves the role of providing anyone with any type of financial product categorisation entirely for free. To be able to achieve this, the FinanceDatabase relies on involvement from the community to update, edit and remove tickers over time. This is made easy enough that anyone, even with a lack of coding experience can contribute because of the generation of JSON files that can be manually edited.
 **I'd like to invite you to go to the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md) to understand how you can help. Thank you!** |
