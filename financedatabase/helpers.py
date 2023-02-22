@@ -75,7 +75,11 @@ class FinanceDatabase:
 
         for key, value in kwargs.items():
             if key == "exclude_exchanges" and value is True:
+                # Filter data if exclude exchanges is set to True
                 data_filter = data_filter[~data_filter.index.str.contains(r"\.", na=False)]
+            elif key == "index":
+                # Look into the index of the DataFrame and search accordingly
+                data_filter = data_filter[data_filter.index.str.contains(value, na=False)]
             elif key not in data_filter.columns:
                 print(f"{key} is not a valid column.")
             else:
