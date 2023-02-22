@@ -42,6 +42,19 @@ jobs:
             pd.Series(funds.options('category_group')).to_csv('Database/Categories/funds_category_group.csv', index=False, header=False)
             pd.Series(funds.options('category')).to_csv('Database/Categories/funds_category.csv', index=False, header=False)
             pd.Series(funds.options('family')).to_csv('Database/Categories/funds_family.csv', index=False, header=False)
+
+            currencies = fd.Funds()
+            pd.Series(currencies.options()).to_csv('Database/Categories/currencies_currencies.csv', index=False, header=False)
+
+            cryptos = fd.Cryptos()
+            pd.Series(cryptos.options()).to_csv('Database/Categories/cryptocurrencies_currencies.csv', index=False, header=False)
+
+            indices = fd.Indices()
+            pd.Series(indices.options()).to_csv('Database/Categories/indices_currencies.csv', index=False, header=False)
+
+            moneymarkets = fd.Moneymarkets()
+            pd.Series(moneymarkets.options()).to_csv('Database/Categories/moneymarkets_currencies.csv', index=False, header=False)
+          
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'
