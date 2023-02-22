@@ -24,7 +24,7 @@ jobs:
       - name: Collecting FRED series
         run: |
           echo Running File...
-          status=$(python .github/python/export_categories.py
+          status=$(python .github/python/export_categories.py)
           echo ::set-output name=status::$status
       - name: Commit files and log
         run: |
