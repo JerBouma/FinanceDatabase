@@ -140,15 +140,13 @@ equities.select()
 
 Which returns the following DataFrame:
 
-| symbol   | short_name                    | long_name                      | currency   | sector             | industry                         | exchange   | market    | country       | state   | city        | zipcode    | website                             | market_cap   |
-|:---------|:------------------------------|:-------------------------------|:-----------|:-------------------|:---------------------------------|:-----------|:----------|:--------------|:--------|:------------|:-----------|:------------------------------------|:-------------|
-| A        | Agilent Technologies, Inc.    | Agilent Technologies, Inc.     | USD        | Healthcare         | Diagnostics & Research           | NYQ        | us_market | United States | CA      | Santa Clara | 95051      | http://www.agilent.com              | Large Cap    |
-| AA       | Alcoa Corporation             | Alcoa Corporation              | USD        | Basic Materials    | Aluminum                         | NYQ        | us_market | United States | PA      | Pittsburgh  | 15212-5858 | http://www.alcoa.com                | Mid Cap      |
-| AAALF    | AAREAL BANK AG                | Aareal Bank AG                 | USD        | nan                | nan                              | PNK        | us_market | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com          | Small Cap    |
-| AAALY    | AAREAL BANK AG                | Aareal Bank AG                 | USD        | nan                | nan                              | PNK        | us_market | nan           | nan     | nan         | nan        | nan                                 | nan          |
-| AABB     | ASIA BROADBAND INC            | Asia Broadband, Inc.           | USD        | Basic Materials    | Other Industrial Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas   | 89135      | http://www.asiabroadbandinc.com     | Micro Cap    |
-| AABVF    | ABERDEEN INTERNATIONAL INC    | Aberdeen International Inc.    | USD        | Financial Services | Asset Management                 | PNK        | us_market | Canada        | ON      | Toronto     | M5H 2M5    | http://www.aberdeeninternational.ca | Nano Cap     |
-| AAC      | Ares Acquisition Corporation  | Ares Acquisition Corporation   | USD        | Financial Services | Shell Companies                  | NYQ        | us_market | United States | NY      | New York    | 10167      | nan                                 | Small Cap    |
+| symbol   | short_name                 | long_name                  | currency   | sector      | industry_group                                 | industry        | exchange   | market    | country       | state   | city        | zipcode    | website                         | market_cap   |
+|:---------|:---------------------------|:---------------------------|:-----------|:------------|:-----------------------------------------------|:----------------|:-----------|:----------|:--------------|:--------|:------------|:-----------|:--------------------------------|:-------------|
+| A        | Agilent Technologies, Inc. | Agilent Technologies, Inc. | USD        | Health Care | Pharmaceuticals, Biotechnology & Life Sciences | Biotechnology   | NYQ        | us_market | United States | CA      | Santa Clara | 95051      | http://www.agilent.com          | Large Cap    |
+| AA       | Alcoa Corporation          | Alcoa Corporation          | USD        | Materials   | Materials                                      | Metals & Mining | NYQ        | us_market | United States | PA      | Pittsburgh  | 15212-5858 | http://www.alcoa.com            | Mid Cap      |
+| AAALF    | AAREAL BANK AG             | Aareal Bank AG             | USD        | nan         | nan                                            | nan             | PNK        | us_market | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    |
+| AAALY    | AAREAL BANK AG             | Aareal Bank AG             | USD        | nan         | nan                                            | nan             | PNK        | us_market | nan           | nan     | nan         | nan        | nan                             | nan          |
+| AABB     | ASIA BROADBAND INC         | Asia Broadband, Inc.       | USD        | Materials   | Materials                                      | Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas   | 89135      | http://www.asiabroadbandinc.com | Micro Cap    |
 
 This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155.000 different symbols. 
 
@@ -201,26 +199,26 @@ select(country: str = '', sector: str = '', industry: str = '', exclude_exchange
 As an example, we can use `equities.options` to obtain specific country, sector and industry options. For we can acquire all industries within the sector `Basic Materials` within the `United States`. This allows us to look at a specific industry in the United States in detail. 
 
 ```python
-industry_options = equities.options(selection='industry', country="United States", sector="Basic Materials")
+industry_options = equities.options(selection='industry', country="United States", sector="Materials")
 ```
 
-So with this information in hand, I can now query the industry `Aluminum` as follows:
+So with this information in hand, I can now query the industry `Metals & Mining` as follows:
 
 ```python
-aluminium_companies_usa = equities.select(country="United States", sector="Basic Materials", industry="Aluminum")
+metals_and_mining_companies_usa = equities.select(country="United States", sector="Materials", industry="Metals & Mining")
 ```
 
 This gives you a DataFrame with the following information:
 
-| symbol   | short_name                  | long_name                            | currency   | sector          | industry   | exchange   | market    | country       | state   | city           | zipcode    | website                       | market_cap   |
-|:---------|:----------------------------|:-------------------------------------|:-----------|:----------------|:-----------|:-----------|:----------|:--------------|:--------|:---------------|:-----------|:------------------------------|:-------------|
-| AA       | Alcoa Corporation           | Alcoa Corporation                    | USD        | Basic Materials | Aluminum   | NYQ        | us_market | United States | PA      | Pittsburgh     | 15212-5858 | http://www.alcoa.com          | Mid Cap      |
-| CENX     | Century Aluminum Company    | Century Aluminum Company             | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | IL      | Chicago        | 60606      | http://centuryaluminum.com    | Small Cap    |
-| KALU     | Kaiser Aluminum Corporation | Kaiser Aluminum Corporation          | USD        | Basic Materials | Aluminum   | NMS        | us_market | United States | CA      | Foothill Ranch | 92610-2831 | http://www.kaiseraluminum.com | Mid Cap      |
-| NORNQ    | NORANDA ALUM HLDG CORP      | Noranda Aluminum Holding Corporation | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | TN      | Franklin       | 37067      | nan                           | Nano Cap     |
-| ORMTQ    | ORMET CORP                  | Ormet Corporation                    | USD        | Basic Materials | Aluminum   | PNK        | us_market | United States | OH      | Hannibal       | 43931      | nan                           | Nano Cap     |
+| symbol   | short_name                      | long_name                           | currency   | sector    | industry_group   | industry        | exchange   | market    | country       | state   | city            | zipcode    | website                            | market_cap   |
+|:---------|:--------------------------------|:------------------------------------|:-----------|:----------|:-----------------|:----------------|:-----------|:----------|:--------------|:--------|:----------------|:-----------|:-----------------------------------|:-------------|
+| AA       | Alcoa Corporation               | Alcoa Corporation                   | USD        | Materials | Materials        | Metals & Mining | NYQ        | us_market | United States | PA      | Pittsburgh      | 15212-5858 | http://www.alcoa.com               | Mid Cap      |
+| AABB     | ASIA BROADBAND INC              | Asia Broadband, Inc.                | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas       | 89135      | http://www.asiabroadbandinc.com    | Micro Cap    |
+| AAGC     | ALL AMERICAN GOLD CORP          | All American Gold Corp.             | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | WY      | Cheyenne        | 82001      | http://www.allamericangoldcorp.com | Nano Cap     |
+| ABML     | AMERICAN BATTERY METALS CORP NE | American Battery Metals Corporation | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | NV      | Incline Village | 89451      | http://www.batterymetals.com       | Small Cap    |
+| ACNE     | ALICE CONS MINES INC            | Alice Consolidated Mines, Inc.      | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | ID      | Wallace         | 83873-0469 | nan                                | nan          |
 
-As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Basic Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
+As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
 
 ## Searching the database extensively
 All asset classes have the capability to search each column with `search`, for example `equities.search()`. Through how this functionality is developed you can define multiple columns and search throughoutly. For example:
@@ -235,13 +233,13 @@ equities.search(summary='automotive', currency='USD', country='Germany')
 
 Which returns a selection of the DataFrame that matches all criteria. 
 
-| symbol   | short_name                  | long_name                                   | currency   | sector             | industry                       | exchange   | market    | country   |   state | city                  |   zipcode | website                   | market_cap   |
-|:---------|:----------------------------|:--------------------------------------------|:-----------|:-------------------|:-------------------------------|:-----------|:----------|:----------|--------:|:----------------------|----------:|:--------------------------|:-------------|
-| AFRMF    | ALPHAFORM AG                | Alphaform AG                                | USD        | Industrials        | Specialty Industrial Machinery | PNK        | us_market | Germany   |     nan | Feldkirchen           |     85622 | nan                       | Nano Cap     |
-| AUUMF    | AUMANN AG                   | Aumann AG                                   | USD        | Industrials        | Specialty Industrial Machinery | PNK        | us_market | Germany   |     nan | Beelen                |     48361 | http://www.aumann.com     | Micro Cap    |
-| BAMXF    | BAYERISCHE MOTOREN WERKE AG | Bayerische Motoren Werke Aktiengesellschaft | USD        | Consumer Cyclical  | Auto Manufacturers             | PNK        | us_market | Germany   |     nan | Munich                |     80788 | http://www.bmwgroup.com   | Large Cap    |
-| BASFY    | BASF SE                     | BASF SE                                     | USD        | Basic Materials    | Chemicals                      | PNK        | us_market | Germany   |     nan | Ludwigshafen am Rhein |     67056 | http://www.basf.com       | Large Cap    |
-| BDRFF    | BEIERSDORF AG               | Beiersdorf Aktiengesellschaft               | USD        | Consumer Defensive | Household & Personal Products  | PNK        | us_market | Germany   |     nan | Hamburg               |     20245 | http://www.beiersdorf.com | Large Cap    |
+| symbol   | short_name                  | long_name                                   | currency   | sector                 | industry_group                | industry           | exchange   | market    | country   |   state | city                  |   zipcode | website                   | market_cap   |
+|:---------|:----------------------------|:--------------------------------------------|:-----------|:-----------------------|:------------------------------|:-------------------|:-----------|:----------|:----------|--------:|:----------------------|----------:|:--------------------------|:-------------|
+| AFRMF    | ALPHAFORM AG                | Alphaform AG                                | USD        | Industrials            | Capital Goods                 | Machinery          | PNK        | us_market | Germany   |     nan | Feldkirchen           |     85622 | nan                       | Nano Cap     |
+| AUUMF    | AUMANN AG                   | Aumann AG                                   | USD        | Industrials            | Capital Goods                 | Machinery          | PNK        | us_market | Germany   |     nan | Beelen                |     48361 | http://www.aumann.com     | Micro Cap    |
+| BAMXF    | BAYERISCHE MOTOREN WERKE AG | Bayerische Motoren Werke Aktiengesellschaft | USD        | Consumer Discretionary | Automobiles & Components      | Automobiles        | PNK        | us_market | Germany   |     nan | Munich                |     80788 | http://www.bmwgroup.com   | Large Cap    |
+| BASFY    | BASF SE                     | BASF SE                                     | USD        | Materials              | Materials                     | Chemicals          | PNK        | us_market | Germany   |     nan | Ludwigshafen am Rhein |     67056 | http://www.basf.com       | Large Cap    |
+| BDRFF    | BEIERSDORF AG               | Beiersdorf Aktiengesellschaft               | USD        | Consumer Staples       | Household & Personal Products | Household Products | PNK        | us_market | Germany   |     nan | Hamburg               |     20245 | http://www.beiersdorf.com | Large Cap    |
 
 ## Storing the database at a different location
 If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
