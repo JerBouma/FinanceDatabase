@@ -47,7 +47,7 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add -A
-          git checkout master
+          git checkout main
           git diff-index --quiet HEAD || git commit -am "Update Categorization Files"
           git push
       - name: Check run status
