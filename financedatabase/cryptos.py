@@ -7,12 +7,26 @@ from .helpers import FinanceDatabase
 
 class Cryptos(FinanceDatabase):
     """
-    Cryptos Class
+    A cryptocurrency is a digital or virtual currency secured by
+    cryptography, which makes it nearly impossible to counterfeit
+    or double-spend. Many cryptocurrencies are decentralized networks
+    based on blockchain technology—a distributed ledger enforced by
+    a disparate network of computers. A defining feature of cryptocurrencies
+    is that they are generally not issued by any central authority,
+    rendering them theoretically immune to government interference
+    or manipulation. [Source: Investopedia]
+
+    This class provides a information about the cryptocurrencies available as
+    well as the ability to select specific cryptocurrencies based on the currency.
     """
 
     FILE_NAME = "cryptos.csv"
 
-    def select(self, crypto: str = "", capitalize: bool = True,) -> pd.DataFrame:
+    def select(
+        self,
+        crypto: str = "",
+        capitalize: bool = True,
+    ) -> pd.DataFrame:
         """
         Description
         ----

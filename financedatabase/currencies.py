@@ -7,12 +7,23 @@ from .helpers import FinanceDatabase
 
 class Currencies(FinanceDatabase):
     """
-    Currencies Class
+    Currency is a medium of exchange for goods and services. In short,
+    it's money, in the form of paper and coins, usually issued by a
+    government and generally accepted at its face value as a method of payment.
+    Currency is the primary medium of exchange in the modern world, having
+    long ago replaced bartering as a means of trading goods and services.
+
+    This class provides a information about the currencies available as well as the
+    ability to select specific currencies based on the currency.
     """
 
     FILE_NAME = "currencies.csv"
 
-    def select(self, currency: str = "", capitalize: bool = True,) -> pd.DataFrame:
+    def select(
+        self,
+        currency: str = "",
+        capitalize: bool = True,
+    ) -> pd.DataFrame:
         """
         Description
         ----

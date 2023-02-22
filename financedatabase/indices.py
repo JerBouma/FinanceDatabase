@@ -7,7 +7,16 @@ from .helpers import FinanceDatabase
 
 class Indices(FinanceDatabase):
     """
-    Indices Class
+    An index is a method to track the performance of a group of assets in a standardized way.
+    Indexes typically measure the performance of a basket of securities intended to
+    eplicate a certain area of the market. These could be constructed as a broad-based
+    index that captures the entire market, such as the Standard & Poor's 500 Index or
+    Dow Jones Industrial Average (DJIA), or more specialized such as indexes that
+    track a particular industry or segment such as the Russell 2000 Index,
+    which tracks only small-cap stocks. [Source: Investopedia]
+
+    This class provides a information about the indices available as well as the
+    ability to select specific indices based on the currency.
     """
 
     FILE_NAME = "indices.csv"

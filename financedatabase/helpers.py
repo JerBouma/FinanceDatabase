@@ -10,18 +10,28 @@ DATA_REPO = "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/Dat
 
 class FinanceDatabase:
     """
-    Base Class
+    The FinanceDatabase serves the role of providing anyone with any type of
+    financial product categorisation entirely for free. It features 300.000+
+    symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies
+    and Money Markets. It therefore allows you to obtain a broad overview of
+    sectors, industries, types of investments and much more.
+
+    This class is the base controller of all other classes that are named
+    after their corresponding asset classes.
     """
 
     FILE_NAME = ""
 
     def __init__(
-        self, base_url: str = DATA_REPO, use_local_location: bool = False,
+        self,
+        base_url: str = DATA_REPO,
+        use_local_location: bool = False,
     ):
         """
         Description
         ----
-        Creates a dataframe with all equities from the database.
+        Reads in the database from the csv file corresponding to the
+        asset class. This can be locally as well as remotely stored.
 
         Input
         ----
@@ -38,8 +48,7 @@ class FinanceDatabase:
         """
         Description
         ----
-        Search in the provided dictionary for a specific query. By default
-        it searches in the 'summary' key which can be found in equities, etfs and funds.
+        Search in the provided dictionary for a specific query.
 
         Input
         ----

@@ -7,7 +7,14 @@ from .helpers import FinanceDatabase
 
 class Moneymarkets(FinanceDatabase):
     """
-    Moneymarkets Class
+    The money market refers to trading in very short-term debt investments.
+    At the wholesale level, it involves large-volume trades between institutions
+    and traders. At the retail level, it includes money market mutual funds
+    bought by individual investors and money market accounts opened
+    by bank customers. [Source: Investopedia]
+
+    This class provides a information about the moneymarkets available as well as the
+    ability to select specific moneymarkets based on the currency.
     """
 
     FILE_NAME = "moneymarkets.csv"

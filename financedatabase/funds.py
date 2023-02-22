@@ -7,7 +7,15 @@ from .helpers import FinanceDatabase
 
 class Funds(FinanceDatabase):
     """
-    "Funds Class
+    A Mutual Fund is a financial vehicle that pools assets from shareholders to
+    invest in securities like stocks, bonds, money market instruments, and
+    other assets. Mutual funds are operated by professional money managers, who
+    allocate the fund's assets and attempt to produce capital gains or income for
+    the fund's investors. A mutual fund's portfolio is structured and maintained
+    to match the investment objectives stated in its prospectus. [Source: Investopedia]
+
+    This class provides a information about the funds available as well as the
+    ability to select specific funds based on the category and/or family.
     """
 
     FILE_NAME = "funds.csv"

@@ -7,7 +7,17 @@ from .helpers import FinanceDatabase
 
 class ETFs(FinanceDatabase):
     """
-    "ETFs Class
+    An exchange-traded fund (ETF) is a type of pooled investment
+    security that operates much like a mutual fund. Typically, ETFs
+    will track a particular index, sector, commodity, or other assets,
+    but unlike mutual funds, ETFs can be purchased or sold on a stock
+    exchange the same way that a regular stock can. An ETF can be structured
+    to track anything from the price of an individual commodity to a large
+    and diverse collection of securities. ETFs can even be structured to
+    track specific investment strategies. [Source: Investopedia]
+
+    This class provides a information about the ETFs available as well as the
+    ability to select specific ETFs based on the category and/or family.
     """
 
     FILE_NAME = "etfs.csv"

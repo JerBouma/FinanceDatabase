@@ -7,7 +7,15 @@ from .helpers import FinanceDatabase
 
 class Equities(FinanceDatabase):
     """
-    "Equities Class
+    Public Equity refers to shares or ownershis of a public
+    company, i.e., a company that is listed on a public stock
+    exchange like the BSE or NYSE. When a company goes public it
+    essentially allows the public to buy ownership rights in
+    their business.
+
+    This class provides a information about the Equities available as well as the
+    ability to select specific equities based on the country, sector,
+    industry group and industry, adhering to GICS.
     """
 
     FILE_NAME = "equities.csv"
