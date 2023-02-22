@@ -1,8 +1,6 @@
 name: Categorization
 
 on:
-  pull_request:
-    types: [opened, synchronize, edited]
   push:
     branches:
       - 'main'
@@ -12,37 +10,31 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  code-linting:
+Update Categorization Files:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
+      - name: checkout repo content
+        uses: actions/checkout@v2
+      - name: setup python
+        uses: actions/setup-python@v2
         with:
-          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
-          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-      - uses: jannekem/run-python-script-action@v1
-        with:
-          script: |
-            import financedatabase as fd
-
-            equities = fd.Equities()
-            equities.show_options('countries').to_csv('Database/Categories/equities_countries.csv')
-            equities.show_options('sectors').to_csv('Database/Categories/equities_sectors.csv')
-            equities.show_options('industry_groups').to_csv('Database/Categories/equities_industry_groups.csv')
-            equities.show_options('industries').to_csv('Database/Categories/equities_industries.csv')
-
-            etfs = fd.ETFs()
-            etfs.show_options('category_group').to_csv('Database/Categories/etfs_category_group.csv')
-            etfs.show_options('category').to_csv('Database/Categories/etfs_category.csv')
-            etfs.show_options('family').to_csv('Database/Categories/etfs_family.csv')
-
-            funds = fd.Funds()
-            funds.show_options('category_group').to_csv('Database/Categories/funds_category_group.csv')
-            funds.show_options('category').to_csv('Database/Categories/funds_category.csv')
-            funds.show_options('family').to_csv('Database/Categories/funds_family.csv')
-      name: Commit & Push changes
-        uses: actions-js/push@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          python-version: 3.8
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - run: pip install financedatabase
+      - name: Collecting FRED series
+        run: |
+          echo Running File...
+          status=$(python .github/python/export_categories.py
+          echo ::set-output name=status::$status
+      - name: Commit files and log
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add -A
+          git checkout master
+          git diff-index --quiet HEAD || git commit -am "Update Categorization Files"
+          git push
+      - name: Check run status
+        if: steps.run.outputs.status != '0'
+        run: exit "${{ steps.run.outputs.status }}"
