@@ -43,7 +43,7 @@ jobs:
             pd.Series(funds.options('category')).to_csv('Database/Categories/funds_category.csv', index=False, header=False)
             pd.Series(funds.options('family')).to_csv('Database/Categories/funds_family.csv', index=False, header=False)
 
-            currencies = fd.Funds()
+            currencies = fd.Currencies()
             pd.Series(currencies.options()).to_csv('Database/Categories/currencies_currencies.csv', index=False, header=False)
 
             cryptos = fd.Cryptos()
