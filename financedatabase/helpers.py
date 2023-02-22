@@ -74,7 +74,9 @@ class FinanceDatabase:
             case_sensitive = False
 
         for key, value in kwargs.items():
-            if key not in data_filter.columns:
+            if key == "exclude_exchanges" and value is True:
+                data_filter = data_filter[~data_filter.index.str.contains(r"\.", na=False)]
+            elif key not in data_filter.columns:
                 print(f"{key} is not a valid column.")
             else:
                 data_filter = data_filter[
