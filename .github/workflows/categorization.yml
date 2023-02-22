@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-Update Categorization Files:
+  Update Categorization Files:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
