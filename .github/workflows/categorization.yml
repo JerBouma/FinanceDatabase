@@ -21,7 +21,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: pip install financedatabase
       - name: Update categories
-      - uses: jannekem/run-python-script-action@v1
+        uses: jannekem/run-python-script-action@v1
         with:
           script: |
             import financedatabase as fd
