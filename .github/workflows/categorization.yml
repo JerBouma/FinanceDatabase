@@ -7,7 +7,6 @@ on:
 
 concurrency:
   group: ${{ github.event_name }}-${{ github.repository }}-${{ github.ref }}
-  cancel-in-progress: true
 
 jobs:
   Update-Categorization-Files:
