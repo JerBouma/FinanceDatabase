@@ -40,7 +40,7 @@ jobs:
             etfs.to_pickle('compression/etfs.pkl', compression='xz')
 
             funds = pd.read_csv('Database/funds.csv', on_bad_lines="skip", sep=";", index_col=0)
-            equities.to_pickle('compression/funds.pkl', compression='xz')
+            funds.to_pickle('compression/funds.pkl', compression='xz')
 
             indices = pd.read_csv('Database/indices.csv', on_bad_lines="skip", sep=";", index_col=0)
             indices.to_pickle('compression/indices.pkl', compression='xz')
