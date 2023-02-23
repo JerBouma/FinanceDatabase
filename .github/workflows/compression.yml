@@ -1,0 +1,63 @@
+name: Compression
+
+on:
+  push:
+    branches:
+      - 'main'
+
+concurrency:
+  group: ${{ github.event_name }}-${{ github.repository }}-${{ github.ref }}
+
+jobs:
+  Update-Compression-Files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install -r requirements.txt
+      - run: pip install financedatabase
+      - name: Update Compressions
+        uses: jannekem/run-python-script-action@v1
+        with:
+          script: |
+            import financedatabase as fd
+            import pandas as pd
+
+            cryptos = pd.read_csv('Database/cryptos.csv', on_bad_lines="skip", sep=";", index_col=0)
+            cryptos.to_pickle('compression/cryptos.pkl', compression='xz')
+
+            currencies = pd.read_csv('Database/currencies.csv', on_bad_lines="skip", sep=";", index_col=0)
+            currencies.to_pickle('compression/currencies.pkl', compression='xz')
+
+            equities = pd.read_csv('Database/equities.csv', on_bad_lines="skip", sep=";", index_col=0)
+            equities.to_pickle('compression/equities.pkl', compression='xz')
+
+            etfs = pd.read_csv('Database/etfs.csv', on_bad_lines="skip", sep=";", index_col=0)
+            etfs.to_pickle('compression/etfs.pkl', compression='xz')
+
+            funds = pd.read_csv('Database/funds.csv', on_bad_lines="skip", sep=";", index_col=0)
+            equities.to_pickle('compression/funds.pkl', compression='xz')
+
+            indices = pd.read_csv('Database/indices.csv', on_bad_lines="skip", sep=";", index_col=0)
+            indices.to_pickle('compression/indices.pkl', compression='xz')
+
+            moneymarkets = pd.read_csv('Database/moneymarkets.csv', on_bad_lines="skip", sep=";", index_col=0)
+            moneymarkets.to_pickle('compression/moneymarkets.pkl', compression='xz')
+      - name: Commit files and log
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add -A
+          git checkout main
+          git diff-index --quiet HEAD || git commit -am "Update Compression Files"
+          git push
+      - name: Check run status
+        if: steps.run.outputs.status != '0'
+        run: exit "${{ steps.run.outputs.status }}"
+
+
+
