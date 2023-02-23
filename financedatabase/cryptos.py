@@ -20,7 +20,7 @@ class Cryptos(FinanceDatabase):
     well as the ability to select specific cryptocurrencies based on the currency.
     """
 
-    FILE_NAME = "cryptos.csv"
+    FILE_NAME = "cryptos.pkl"
 
     def select(
         self,

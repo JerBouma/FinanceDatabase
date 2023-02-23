@@ -17,7 +17,7 @@ class Currencies(FinanceDatabase):
     ability to select specific currencies based on the currency.
     """
 
-    FILE_NAME = "currencies.csv"
+    FILE_NAME = "currencies.pkl"
 
     def select(
         self,

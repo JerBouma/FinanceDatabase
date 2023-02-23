@@ -19,7 +19,7 @@ class Indices(FinanceDatabase):
     ability to select specific indices based on the currency.
     """
 
-    FILE_NAME = "indices.csv"
+    FILE_NAME = "indices.pkl"
 
     def select(
         self,

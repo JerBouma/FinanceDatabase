@@ -5,7 +5,9 @@ from pathlib import Path
 import pandas as pd
 
 file_path = Path(__file__).parent.parent / "Database"
-DATA_REPO = "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/Database/"
+DATA_REPO = (
+    "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/compression/"
+)
 
 
 class FinanceDatabase:
@@ -42,7 +44,7 @@ class FinanceDatabase:
         """
         the_path = str(file_path) + "/" if use_local_location else base_url
         the_path += self.FILE_NAME
-        self.data = pd.read_csv(the_path, on_bad_lines="skip", sep=";", index_col=0)
+        self.data = pd.read_pickle(the_path, compression="xz")
 
     def search(self, **kwargs: str) -> pd.DataFrame:
         """

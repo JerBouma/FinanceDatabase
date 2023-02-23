@@ -17,7 +17,7 @@ class Moneymarkets(FinanceDatabase):
     ability to select specific moneymarkets based on the currency.
     """
 
-    FILE_NAME = "moneymarkets.csv"
+    FILE_NAME = "moneymarkets.pkl"
 
     def select(
         self,

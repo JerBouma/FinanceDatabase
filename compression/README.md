@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/pypi/dm/FinanceDatabase" alt="Logo">
 </a>
 
-This compression notebook figures out what compression techniques are best suited for the database. It tries a varity of methods including csv, pickle and hdf. Based on these findings the compression technique is chosen. Here, the most important thing is **file size** given that every time someone access the database he is required to download the data file (unless stored locally). Therefore, I do not only test how long it takes for the files to get read in locally but also how long it would take to do so remotely.
+This compression notebook figures out what compression techniques are best suited for the database. It tries a variety of methods including csv, pickle and hdf. Based on these findings the compression technique is chosen. Here, the most important thing is **file size** given that every time someone access the database he is required to download the data file (unless stored locally). Therefore, I do not only test how long it takes for the files to get read in locally but also how long it would take to do so remotely.
 
 It uses the methodology as described here: https://towardsdatascience.com/still-saving-your-data-in-csv-try-these-other-options-9abe8b83db3a
 
