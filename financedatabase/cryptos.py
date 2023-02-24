@@ -25,6 +25,7 @@ class Cryptos(FinanceDatabase):
     def select(
         self,
         crypto: str = "",
+        currency: str = "",
         capitalize: bool = True,
     ) -> pd.DataFrame:
         """
@@ -59,10 +60,16 @@ class Cryptos(FinanceDatabase):
                     crypto.upper() if capitalize else crypto, na=False
                 )
             ]
+        if currency:
+            cryptos = cryptos[
+                cryptos["currency"].str.contains(
+                    currency.upper() if capitalize else currency, na=False
+                )
+            ]
 
         return cryptos
 
-    def options(self) -> pd.Series:
+    def options(self, selection: str = "cryptocurrency") -> pd.Series:
         """
         Description
         ----
@@ -75,4 +82,4 @@ class Cryptos(FinanceDatabase):
         """
         cryptos = self.select()
 
-        return cryptos["cryptocurrency"].dropna().sort_values().unique()
+        return cryptos[selection].dropna().sort_values().unique()

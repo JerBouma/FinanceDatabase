@@ -21,7 +21,7 @@ class Moneymarkets(FinanceDatabase):
 
     def select(
         self,
-        currency: str = "",
+        category: str = "",
         capitalize: bool = True,
         exclude_exchanges: bool = True,
     ) -> pd.DataFrame:
@@ -33,8 +33,8 @@ class Moneymarkets(FinanceDatabase):
 
         Input
         ----
-        currency (string, default is None)
-            If filled, gives all data for a specific currency.
+        category (string, default is None)
+            If filled, gives all data for a specific category.
         capitalize (boolean, default is True):
             Whether the currency needs to be capitalized. By default the values
             always are capitalized as that is also how it is represented in the csv files.
@@ -53,10 +53,10 @@ class Moneymarkets(FinanceDatabase):
         """
         moneymarkets = self.data.copy(deep=True)
 
-        if currency:
+        if category:
             moneymarkets = moneymarkets[
                 moneymarkets["currency"].str.contains(
-                    currency.upper() if capitalize else currency, na=False
+                    category.title() if capitalize else category, na=False
                 )
             ]
         if exclude_exchanges:
@@ -79,4 +79,4 @@ class Moneymarkets(FinanceDatabase):
         """
         moneymarkets = self.select(exclude_exchanges=False)
 
-        return moneymarkets["currency"].dropna().sort_values().unique()
+        return moneymarkets["category"].dropna().sort_values().unique()

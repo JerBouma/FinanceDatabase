@@ -21,7 +21,8 @@ class Currencies(FinanceDatabase):
 
     def select(
         self,
-        currency: str = "",
+        from_currency: str = "",
+        to_currency: str = "",
         capitalize: bool = True,
     ) -> pd.DataFrame:
         """
@@ -48,17 +49,23 @@ class Currencies(FinanceDatabase):
             Returns a dictionary with a selection or all data based on the input.
         """
         currencies = self.data.copy(deep=True)
-
-        if currency:
+        
+        if from_currency:
             currencies = currencies[
-                currencies["currency"].str.contains(
-                    currency.upper() if capitalize else currency, na=False
+                currencies["from_currency"].str.contains(
+                    from_currency.upper() if capitalize else from_currency, na=False
+                )
+            ]
+        if to_currency:
+            currencies = currencies[
+                currencies["to_currency"].str.contains(
+                    to_currency.upper() if capitalize else to_currency, na=False
                 )
             ]
 
         return currencies
 
-    def options(self) -> pd.Series:
+    def options(self, selection: str = "from_currency") -> pd.Series:
         """
         Description
         ----
@@ -66,9 +73,13 @@ class Currencies(FinanceDatabase):
 
         Output
         ----
+        selection (string)
+            The selection you want to see the options for. Can be:
+                - from_currency
+                - to_currency
         options (pd.Series)
             Returns a series with all options for the selection provided.
         """
         currencies = self.select()
 
-        return currencies["currency"].dropna().sort_values().unique()
+        return currencies[selection].dropna().sort_values().unique()
