@@ -76,11 +76,12 @@ class FinanceDatabase:
             case_sensitive = False
 
         for key, value in kwargs.items():
-            if key == "exclude_exchanges" and value is True:
-                # Filter data if exclude exchanges is set to True
-                data_filter = data_filter[
-                    ~data_filter.index.str.contains(r"\.", na=False)
-                ]
+            if key == "exclude_exchanges":
+                if value is True:
+                    # Filter data if exclude exchanges is set to True
+                    data_filter = data_filter[
+                        ~data_filter.index.str.contains(r"\.", na=False)
+                    ]
             elif key == "index":
                 # Look into the index of the DataFrame and search accordingly
                 data_filter = data_filter[
