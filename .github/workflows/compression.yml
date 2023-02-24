@@ -16,6 +16,7 @@ jobs:
         with:
           python-version: '3.x'
       - run: pip install -r requirements.txt
+      - run : pip install openpyxl
       - run: pip install financedatabase
       - name: Update Compressions
         uses: jannekem/run-python-script-action@v1
