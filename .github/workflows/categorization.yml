@@ -44,13 +44,13 @@ jobs:
             pd.Series(currencies.options()).to_csv('Database/Categories/currencies_currencies.csv', index=False, header=False)
 
             cryptos = fd.Cryptos()
-            pd.Series(cryptos.options()).to_csv('Database/Categories/cryptocurrencies_currencies.csv', index=False, header=False)
+            pd.Series(cryptos.options()).to_csv('Database/Categories/cryptocurrencies_cryptocurrencies.csv', index=False, header=False)
 
             indices = fd.Indices()
             pd.Series(indices.options()).to_csv('Database/Categories/indices_currencies.csv', index=False, header=False)
 
             moneymarkets = fd.Moneymarkets()
-            pd.Series(moneymarkets.options()).to_csv('Database/Categories/moneymarkets_currencies.csv', index=False, header=False)
+            pd.Series(moneymarkets.options()).to_csv('Database/Categories/moneymarkets_categories.csv', index=False, header=False)
           
       - name: Commit files and log
         run: |

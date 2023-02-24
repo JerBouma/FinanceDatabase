@@ -24,25 +24,25 @@ jobs:
             import financedatabase as fd
             import pandas as pd
 
-            cryptos = pd.read_csv('Database/cryptos.csv', on_bad_lines="skip", sep=";", index_col=0)
+            cryptos = pd.read_excel('Database/cryptos.xlsx', index_col=0)
             cryptos.to_pickle('compression/cryptos.pkl', compression='xz')
 
-            currencies = pd.read_csv('Database/currencies.csv', on_bad_lines="skip", sep=";", index_col=0)
+            currencies = pd.read_excel('Database/currencies.xlsx', index_col=0)
             currencies.to_pickle('compression/currencies.pkl', compression='xz')
 
-            equities = pd.read_csv('Database/equities.csv', on_bad_lines="skip", sep=";", index_col=0)
+            equities = pd.read_excel('Database/equities.xlsx', index_col=0)
             equities.to_pickle('compression/equities.pkl', compression='xz')
 
-            etfs = pd.read_csv('Database/etfs.csv', on_bad_lines="skip", sep=";", index_col=0)
+            etfs = pd.read_excel('Database/etfs.xlsx', index_col=0)
             etfs.to_pickle('compression/etfs.pkl', compression='xz')
 
-            funds = pd.read_csv('Database/funds.csv', on_bad_lines="skip", sep=";", index_col=0)
+            funds = pd.read_excel('Database/funds.xlsx', index_col=0)
             funds.to_pickle('compression/funds.pkl', compression='xz')
 
-            indices = pd.read_csv('Database/indices.csv', on_bad_lines="skip", sep=";", index_col=0)
+            indices = pd.read_excel('Database/indices.xlsx', index_col=0)
             indices.to_pickle('compression/indices.pkl', compression='xz')
 
-            moneymarkets = pd.read_csv('Database/moneymarkets.csv', on_bad_lines="skip", sep=";", index_col=0)
+            moneymarkets = pd.read_excel('Database/moneymarkets.xlsx', index_col=0)
             moneymarkets.to_pickle('compression/moneymarkets.pkl', compression='xz')
       - name: Commit files and log
         run: |
