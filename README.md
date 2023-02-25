@@ -68,12 +68,12 @@ This database is also used within OpenBB for a variety of asset classes. This al
     3. [Collecting information from the database](#collecting-information-from-the-database)
     3. [Searching the database extensively](#searching-the-database-extensively)
     4. [Storing the database at a different location](#storing-the-database-at-a-different-location)
-2. [Examples](#examples)
+3. [Examples](#examples)
     1. [Companies in the Netherlands](#companies-in-the-netherlands)
     2. [Technical Analysis of Biotech ETFs](#technical-analysis-of-biotech-etfs)
     3. [Silicon Valley's Market Cap](#silicon-valleys-market-cap)
-3. [Questions & Answers](#questions--answers)
-4. [Contribution](#contribution)
+4. [Questions & Answers](#questions--answers)
+5. [Contact](#contact)
 
 # Installation
 The package `financedatabase` allows you to select specific json files as well as search through collected data with a specific query.
@@ -436,5 +436,10 @@ consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues)
       Therefore, it makes sense that not all tickers return data. If you are still in doubt, search the ticker on 
       Google to see if there is really no data available. If you can't find anything about the ticker, consider updating the database by visiting the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
 
-# Contribution
-Please read more about how you can contribute to the Database by reading the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md). Anyone can contribute as it requires minimal knowhow of working with GitHub or Git.
+# Contact
+If you have any questions about the FinanceDatabase or would like to share with me what you have been working on, feel free to reach out to me via:
+
+- **LinkedIn:** https://www.linkedin.com/in/boumajeroen/
+-  **Email:** jer.bouma@gmail.com
+
+f you'd like to support my efforts, either help me out via the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md) or [Buy me a Coffee](https://www.buymeacoffee.com/jerbouma).

@@ -6,6 +6,15 @@ The FinanceDatabase serves the role of providing anyone with any type of financi
 
 The following is a set of guidelines for contributing to the FinanceDatabase. They are meant to guide you through how updating of the FinanceDatabase works and how you can contribute with little coding background as well. It is divided up into [User](#user) and [Developer](#developer) in which the main difference is the experience with GitHub's Pull Requests and Git in general.
 
+1. [User](#user)
+    1. [Updating the Database](#updating-the-database)
+    3. [How you can help](#how-you-can-help)
+    3. [Category Definitions](#category-definitions)
+2. [Developer](#developer)
+    1. [Working with Git & Pull Requests](#working-with-git--pull-requests)
+    2. [Following the Workflow](#following-the-workflow)
+    3. [Updating the Package](#updating-the-package)
+
 # User
 If you only got as far as the installation process and have little experience with Git, this section is for you. The code files of the database are the ones below.
 
@@ -24,16 +33,18 @@ ___
 ## How you can help
 
 There are a variety of ways you can help out, these can be:
-- Adding in ISIN, CIK and more symbols for each company.
-- Discovering whether symbols and companies still exist by Googling and if not, removing them from the database.
-- Adding new entries to the database, e.g. if you have a great data source that the database can be extended with.
-- Updating the categories, e.g. if the "Sector" is missing, figure out in what sector the company fits.
-- Update symbols that refer to the same company, e.g. ASML, ASML.DE and ASML.AS are all the same company but listed on different exchanges. Do they all contain enough information? Here you can use ASML as base.
-- Update naming, e.g. if the name doesn't properly represent the company or is inconsistent with other results (e.g. TESLA INC, TESLA CORPORATION, Tesla Inc.)
 
-This extends further in all other asset classes than Equities too. Any help is much appreciated!
+| Topic  | Description |
+| ------------- | ------------- |
+| Adding ISIN, CIK and more codes | Currently, the database has one ticker format. Ideally, every single ticker has multiple codes from ISIN, CIK, CUSIP and also how platforms like Bloomberg, Factset, Eikon Refinitiv and OpenBB represent their tickers. |
+| Testing Symbols |  Understand whether symbols and companies still exist by Googling and if not, removing them from the database. Companies could stop existing due to name changes (like Facebook to META), going bankrupt or merging with other firms. Indices, ETFs, Funds, Moneymarkets and Cryptocurrencies could be updated in a similar fashion. |
+| Updating Categories | If the "Sector" or "Industry" or "Category" is missing, figure out what would fit for that company and update accordingly. |
+| Update Identical Symbols | ASML, ASML.DE and ASML.AS are all the same company but are listed on different exchanges. Do they all contain the same information? Here you can use ASML as base. |
+| Update Naming | If the name doesn't properly represent the company or is inconsistent with other results (e.g. TESLA INC, TESLA CORPORATION, Tesla Inc.)
 
-## Categories
+These are just a few examples but feel free to proceed how you'd like! **Any help is much appreciated!**
+
+## Category Definitions
 
 For Equities, these are the categories. Other asset classes follow a similar lay-out, see [examples](https://github.com/JerBouma/FinanceDatabase/blob/main/examples.ipynb).
 
