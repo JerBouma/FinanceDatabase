@@ -4,30 +4,41 @@ First off all, thank you for taking the time to contribute (or at least read the
 
 The FinanceDatabase serves the role of providing anyone with any type of financial product categorisation entirely for free. To be able to achieve this, the FinanceDatabase relies on involvement from the community to update, edit and remove tickers over time. This is made easy enough that anyone, even with a lack of coding experience can contribute because of the generation of CSV files that can be manually edited.
 
-The following is a set of guidelines for contributing to the FinanceDatabase. They are meant to guide you through how updating of the FinanceDatabase works and how you can contribute with little coding background as well. It is divided up into [User](#user) and [Developer](#developer) in which the main difference is the experience with GitHub's Pull Requests and Git in general. 
+The following is a set of guidelines for contributing to the FinanceDatabase. They are meant to guide you through how updating of the FinanceDatabase works and how you can contribute with little coding background as well. It is divided up into [User](#user) and [Developer](#developer) in which the main difference is the experience with GitHub's Pull Requests and Git in general.
 
 # User
 If you only got as far as the installation process and have little experience with Git, this section is for you. The code files of the database are the ones below.
 
 ___
 
-<b><div align="center"><a href="https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FJerBouma%2FFinanceDatabase%2Ftree%2Fmain%2FDatabase">Download the the CSV files of the FinanceDatabase here</a>.</div></b>
+<b><div align="center"><a href="https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FJerBouma%2FFinanceDatabase%2Ftree%2Fmain%2FDatabase">Download the the XLSX files of the FinanceDatabase here</a></div></b>
 ___
 
 ## Updating the Database
 
 | Download & Update the CSV Files  | Create a Database Update Issue on GitHub |
 | ------------- | ------------- |
-| You can help out tremendelously by updating one of the CSV files. This can be done through Excel and by making use of CTRL + F (and CTRL + H) to replace cells quickly. <p></p> Carefully go through the cells making sure you're following the descriptions as mentioned [here](#categories). After having saved the files, you're ready to go to the next step. <p></p> |  Once you've made your update, you can go [here](https://github.com/JerBouma/FinanceDatabase/issues/new/choose) and select `Database Update`. Then, within the textbox enter a description of what you changed and then drag and drop your updated CSV files. <p></p> From here on, I'll make sure to update the Database with your updates! <p></p> |
+| You can help out tremendelously by updating one of the XLSX files. This can be done through Excel and by making use of CTRL + F (and CTRL + H) to replace cells quickly. <p></p> Carefully go through the cells making sure you're following the descriptions as mentioned [here](#categories). After having saved the files, you're ready to go to the next step. <p></p> |  Once you've made your update, you can go [here](https://github.com/JerBouma/FinanceDatabase/issues/new/choose) and select `Database Update`. Then, within the textbox enter a description of what you changed and then drag and drop your updated CSV files. <p></p> From here on, I'll make sure to update the Database with your updates! <p></p> |
 | <img width="1500" alt="Updating CSV Files - FinanceDatabase" src="https://user-images.githubusercontent.com/46355364/220196479-a3581da7-132b-44a4-b44f-90d989e8c807.png">  | <img width="1500" alt="GitHub Issue - FinanceDatabase" src="https://user-images.githubusercontent.com/46355364/220197736-7453a9bb-d8bb-4569-ab84-b84e456f753e.png"> |
+
+## How you can help
+
+There are a variety of ways you can help out, these can be:
+- Adding in ISIN, CIK and more symbols for each company.
+- Discovering whether symbols and companies still exist by Googling and if not, removing them from the database.
+- Adding new entries to the database, e.g. if you have a great datasource that the database can be extended with.
+- Updating the categories, e.g. if the "Sector" is missing, figure out in what sector the company fits.
+- Update symbols that refer to the same company, e.g. ASML, ASML.DE and ASML.AS are all the same company but listed on different exchanges. Do they all contain enough information? Here you can use ASML as base.
+- Update naming, e.g. if the name doesn't properly represent the company or is inconsistent with other results (e.g. TESLA INC, TESLA CORPORATION, Tesla Inc.)
+
+This extends further in all other asset classes than Equities too. Any help is much appreciated!
 
 ## Categories
 
 For Equities, these are the categories. Other asset classes follow a similar lay-out, see [examples](https://github.com/JerBouma/FinanceDatabase/blob/main/examples.ipynb).
 
 - **symbol**: set the symbol of the company.
-- **short_name**: enter the short abbreviation of the company name.
-- **long_name**: enter the full company name.
+- **name**: enter the full company name.
 - **summary**: enter a brief company description, explaining the purpose of the company.
 - **currency**: select the denominated currency of this specific ticker (based on exchange).
 - **sector**: select the sector that belongs to the company (follows GICS)
@@ -55,7 +66,7 @@ Any new contribution preferably goes via a Pull Request. In essence, all you rea
 - [Set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git)
 - [Collaborating with pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests)
 
-On every Pull Request, a couple of linters will run (see [here](https://github.com/JerBouma/FinanceDatabase/blob/main/.github/workflows/linting.yml)). These check the code and whether it matches specific coding formatting. This is entirely irrelevant for the database itself but keeps the code of the related package in check as well as any markdown changes.
+On every Pull Request, a couple of linters will run (see [here](https://github.com/JerBouma/FinanceDatabase/blob/main/.github/workflows/) as well as categorization and compression linters). The linters check the code and whether it matches specific coding formatting. This is entirely irrelevant for the database itself but keeps the code of the related package in check as well as any markdown changes. The categorization and compression actions are very relevant for the database as it makes it much easier and faster to read data.
 
 ## Following the Workflow
 
@@ -71,7 +82,7 @@ After setting up Git, you can fork and pull the project in.
 5. Push to your Branch (`git push origin feature/contribution`)
 6. Open a Pull Request
 
-The database itself resides in the `Database` folder. Refer to the [User](#user) section what is required to update the data files.
+The database files resides in the `Database` folder whereas the files that are loaded with the package are inside the `compression` folder. Refer to the [User](#user) section what is required to update the data files.
 
 ## Updating the Package
 
