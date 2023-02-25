@@ -412,7 +412,7 @@ plt.show()
 
 This results in the graph displayed below which separates the small companies from the large companies. Note that  this does not include _all_ technology companies in Silicon Valley because most are not listed or are not included in the database of the FundamentalAnalysis package.
 
-![FinanceDatabase](https://user-images.githubusercontent.com/46355364/219179328-7eb54138-42a1-4d51-9ae1-5ac182c33440.png)
+![FinanceDatabase](https://user-images.githubusercontent.com/46355364/221357077-db449ac3-2ae2-4acd-919d-59157fe07da6.png)
 
 # Questions & Answers
 In this section you can find answers to commonly asked questions. In case the answer to your question is not here, 
