@@ -108,3 +108,56 @@ class FinanceDatabase:
             Returns a series with all options for the specific asset class.
         """
         return self.data.columns
+
+
+def obtain_options(
+    selection: str, base_url: str = DATA_REPO, use_local_location: bool = False
+) -> dict:
+    """
+    Description
+    ----
+    Obtain a dictionary with all options for the specific asset class. This is
+    helpful when needing to understand the available categories without
+    initialising the class itself.
+
+    Input
+    ----
+    selection (string)
+        The name of the class you wish to obtain the options for. Choose from:
+            "equities"
+            "etfs"
+            "funds"
+            "indices"
+            "currencies"
+            "cryptos"
+            "moneymarkets"
+    base_url (string, default is GitHub location)
+        The possibility to enter your own location if desired.
+    use_local_location (string, default False)
+        The possibility to select a local location (i.e. based on Windows path)
+
+    Output
+    ----
+    categories (dict)
+        Returns a dictionary with all options for the specific asset class.
+    """
+    selection_values = [
+        "equities",
+        "etfs",
+        "funds",
+        "indices",
+        "currencies",
+        "cryptos",
+        "moneymarkets",
+    ]
+    if selection not in selection_values:
+        raise ValueError(
+            f"The selection variable provided is not valid, "
+            f"choose from {', '.join(selection_values)}"
+        )
+
+    the_path = str(file_path) + "/" if use_local_location else base_url
+    the_path += f"/categories/{selection}_categories.pickle"
+    categories = pd.read_pickle(the_path)
+
+    return categories
