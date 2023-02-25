@@ -30,7 +30,7 @@ jobs:
                 if column in ['name', 'summary']:
                     continue
                     
-                cryptos_categories[column] = list(cryptos.data[column].dropna().unique())
+                cryptos_categories[column] = cryptos.data[column].dropna().unique()
                 
             with open('compression/categories/cryptos_categories.pickle', 'wb') as handle:
                 pickle.dump(cryptos_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -41,7 +41,7 @@ jobs:
                 if column in ['name']:
                     continue
 
-                currencies_categories[column] = list(currencies.data[column].dropna().unique())
+                currencies_categories[column] = currencies.data[column].dropna().unique()
                 
             with open('compression/categories/currencies_categories.pickle', 'wb') as handle:
                 pickle.dump(currencies_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -52,7 +52,7 @@ jobs:
                 if column in ['name', 'summary', 'website']:
                     continue
                     
-                equities_categories[column] = list(equities.data[column].dropna().unique())
+                equities_categories[column] = equities.data[column].dropna().unique()
                 
             with open('compression/categories/equities_categories.pickle', 'wb') as handle:
                 pickle.dump(equities_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -63,7 +63,7 @@ jobs:
                 if column in ['name', 'summary']:
                     continue
                     
-                etfs_categories[column] = list(etfs.data[column].dropna().unique())
+                etfs_categories[column] = etfs.data[column].dropna().unique()
                 
             with open('compression/categories/etfs_categories.pickle', 'wb') as handle:
                 pickle.dump(etfs_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -74,7 +74,7 @@ jobs:
                 if column in ['name', 'summary', 'manager_name', 'manager_bio']:
                     continue
                     
-                funds_categories[column] = list(funds.data[column].dropna().unique())
+                funds_categories[column] = funds.data[column].dropna().unique()
                 
             with open('compression/categories/funds_categories.pickle', 'wb') as handle:
                 pickle.dump(funds_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -85,7 +85,7 @@ jobs:
                 if column in ['name']:
                     continue
                     
-                indices_categories[column] = list(indices.data[column].dropna().unique())
+                indices_categories[column] = indices.data[column].dropna().unique()
                 
             with open('compression/categories/indices_categories.pickle', 'wb') as handle:
                 pickle.dump(indices_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -96,7 +96,7 @@ jobs:
                 if column in ['name']:
                     continue
                     
-                moneymarkets_categories[column] = list(moneymarkets.data[column].dropna().unique())
+                moneymarkets_categories[column] = moneymarkets.data[column].dropna().unique()
                 
             with open('compression/categories/moneymarkets_categories.pickle', 'wb') as handle:
                 pickle.dump(moneymarkets_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
