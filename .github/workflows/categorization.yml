@@ -22,36 +22,81 @@ jobs:
         with:
           script: |
             import financedatabase as fd
-            import pandas as pd
-
-            equities = fd.Equities()
-            pd.Series(equities.options('country')).to_csv('Database/Categories/equities_countries.csv', index=False, header=False)
-            pd.Series(equities.options('sector')).to_csv('Database/Categories/equities_sectors.csv', index=False, header=False)
-            pd.Series(equities.options('industry_group')).to_csv('Database/Categories/equities_industry_groups.csv', index=False, header=False)
-            pd.Series(equities.options('industry')).to_csv('Database/Categories/equities_industries.csv', index=False, header=False)
-
-            etfs = fd.ETFs()
-            pd.Series(etfs.options('category_group')).to_csv('Database/Categories/etfs_category_group.csv', index=False, header=False)
-            pd.Series(etfs.options('category')).to_csv('Database/Categories/etfs_category.csv', index=False, header=False)
-            pd.Series(etfs.options('family')).to_csv('Database/Categories/etfs_family.csv', index=False, header=False)
-
-            funds = fd.Funds()
-            pd.Series(funds.options('category_group')).to_csv('Database/Categories/funds_category_group.csv', index=False, header=False)
-            pd.Series(funds.options('category')).to_csv('Database/Categories/funds_category.csv', index=False, header=False)
-            pd.Series(funds.options('family')).to_csv('Database/Categories/funds_family.csv', index=False, header=False)
-
-            currencies = fd.Currencies()
-            pd.Series(currencies.options()).to_csv('Database/Categories/currencies_currencies.csv', index=False, header=False)
+            import pickle
 
             cryptos = fd.Cryptos()
-            pd.Series(cryptos.options()).to_csv('Database/Categories/cryptocurrencies_cryptocurrencies.csv', index=False, header=False)
-
+            cryptos_categories = {}
+            for column in cryptos.data:
+                if column in ['name', 'summary']:
+                    continue
+                    
+                cryptos_categories[column] = list(cryptos.data[column].dropna().unique())
+                
+            with open('compression/categories/cryptos_categories.pickle', 'wb') as handle:
+                pickle.dump(cryptos_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                
+            currencies = fd.Currencies()
+            currencies_categories = {}
+            for column in currencies.data:
+                currencies_categories[column] = list(currencies.data[column].dropna().unique())
+                
+            with open('compression/categories/currencies_categories.pickle', 'wb') as handle:
+                pickle.dump(currencies_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                
+            equities = fd.Equities()
+            equities_categories = {}
+            for column in equities.data:
+                if column in ['name', 'summary', 'website']:
+                    continue
+                    
+                equities_categories[column] = list(equities.data[column].dropna().unique())
+                
+            with open('compression/categories/equities_categories.pickle', 'wb') as handle:
+                pickle.dump(equities_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                
+            etfs = fd.ETFs()
+            etfs_categories = {}
+            for column in etfs.data:
+                if column in ['name', 'summary']:
+                    continue
+                    
+                etfs_categories[column] = list(etfs.data[column].dropna().unique())
+                
+            with open('compression/categories/etfs_categories.pickle', 'wb') as handle:
+                pickle.dump(etfs_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                
+            funds = fd.Funds()
+            funds_categories = {}
+            for column in funds.data:
+                if column in ['name', 'summary', 'manager_name', 'manager_bio']:
+                    continue
+                    
+                funds_categories[column] = list(funds.data[column].dropna().unique())
+                
+            with open('compression/categories/funds_categories.pickle', 'wb') as handle:
+                pickle.dump(funds_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                
             indices = fd.Indices()
-            pd.Series(indices.options()).to_csv('Database/Categories/indices_currencies.csv', index=False, header=False)
-
+            indices_categories = {}
+            for column in indices.data:
+                if column in ['name']:
+                    continue
+                    
+                indices_categories[column] = list(indices.data[column].dropna().unique())
+                
+            with open('compression/categories/indices_categories.pickle', 'wb') as handle:
+                pickle.dump(indices_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                
             moneymarkets = fd.Moneymarkets()
-            pd.Series(moneymarkets.options()).to_csv('Database/Categories/moneymarkets_categories.csv', index=False, header=False)
-          
+            moneymarkets_categories = {}
+            for column in moneymarkets.data:
+                if column in ['name']:
+                    continue
+                    
+                moneymarkets_categories[column] = list(moneymarkets.data[column].dropna().unique())
+                
+            with open('compression/categories/moneymarkets_categories.pickle', 'wb') as handle:
+                pickle.dump(moneymarkets_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'

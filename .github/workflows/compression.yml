@@ -25,26 +25,30 @@ jobs:
             import financedatabase as fd
             import pandas as pd
 
-            cryptos = pd.read_excel('Database/cryptos.xlsx', index_col=0)
-            cryptos.to_pickle('compression/cryptos.pkl', compression='xz')
-
-            currencies = pd.read_excel('Database/currencies.xlsx', index_col=0)
-            currencies.to_pickle('compression/currencies.pkl', compression='xz')
-
-            equities = pd.read_excel('Database/equities.xlsx', index_col=0)
-            equities.to_pickle('compression/equities.pkl', compression='xz')
-
-            etfs = pd.read_excel('Database/etfs.xlsx', index_col=0)
-            etfs.to_pickle('compression/etfs.pkl', compression='xz')
-
-            funds = pd.read_excel('Database/funds.xlsx', index_col=0)
-            funds.to_pickle('compression/funds.pkl', compression='xz')
-
-            indices = pd.read_excel('Database/indices.xlsx', index_col=0)
-            indices.to_pickle('compression/indices.pkl', compression='xz')
-
-            moneymarkets = pd.read_excel('Database/moneymarkets.xlsx', index_col=0)
-            moneymarkets.to_pickle('compression/moneymarkets.pkl', compression='xz')
+            with open('compression/categories/funds_categories.pickle', 'wb') as handle:
+                pickle.dump(funds_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                
+            indices = fd.Indices()
+            indices_categories = {}
+            for column in indices.data:
+                if column in ['name']:
+                    continue
+                    
+                indices_categories[column] = list(indices.data[column].dropna().unique())
+                
+            with open('compression/categories/indices_categories.pickle', 'wb') as handle:
+                pickle.dump(indices_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+                
+            moneymarkets = fd.Moneymarkets()
+            moneymarkets_categories = {}
+            for column in moneymarkets.data:
+                if column in ['name']:
+                    continue
+                    
+                moneymarkets_categories[column] = list(moneymarkets.data[column].dropna().unique())
+                
+            with open('compression/categories/moneymarkets_categories.pickle', 'wb') as handle:
+                pickle.dump(moneymarkets_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'
