@@ -38,6 +38,9 @@ jobs:
             currencies = fd.Currencies()
             currencies_categories = {}
             for column in currencies.data:
+                if column in ['name']:
+                    continue
+
                 currencies_categories[column] = list(currencies.data[column].dropna().unique())
                 
             with open('compression/categories/currencies_categories.pickle', 'wb') as handle:
