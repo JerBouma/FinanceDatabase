@@ -56,7 +56,7 @@ Some key statistics of the database:
 \** This is an estimation. Obtaining the country distribution can only be done by collecting data on the underlying 
 or by manual search.
 
-This database is also used within OpenBB for a variety of asset classes. This allows users to effectively query the FinanceDatabase to obtain information and symbols they'd like to use further inside the OpenBB Terminal and OpenBB SDK. Find more information about OpenBB on the official website [here](https://openbb.co/) and the GitHub repository [here](https://github.com/OpenBB-finance/OpenBBTerminal).
+This database is also used within **OpenBB** for a variety of asset classes. This allows users to effectively query the FinanceDatabase to obtain information and symbols they'd like to use further inside the OpenBB Terminal and OpenBB SDK. Find more information about OpenBB on the official website [here](https://openbb.co/) and the GitHub repository [here](https://github.com/OpenBB-finance/OpenBBTerminal).
 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/46355364/221357979-4ff2f7f5-8da1-4f7c-8b6c-7c858a466ba1.png">
 
