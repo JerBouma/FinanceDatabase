@@ -2,7 +2,7 @@
 
 First off all, thank you for taking the time to contribute (or at least read the Contributing Guidelines)! 🚀
 
-The FinanceDatabase serves the role of providing anyone with any type of financial product categorisation entirely for free. To be able to achieve this, the FinanceDatabase relies on involvement from the community to update, edit and remove tickers over time. This is made easy enough that anyone, even with a lack of coding experience can contribute because of the generation of CSV files that can be manually edited.
+The FinanceDatabase serves the role of providing anyone with any type of financial product categorisation entirely for free. To be able to achieve this, the FinanceDatabase relies on involvement from the community to update, edit and remove tickers over time. This is made easy enough that anyone, even with a lack of coding experience can contribute because of the generation of XLSX files that can be manually edited.
 
 The following is a set of guidelines for contributing to the FinanceDatabase. They are meant to guide you through how updating of the FinanceDatabase works and how you can contribute with little coding background as well. It is divided up into [User](#user) and [Developer](#developer) in which the main difference is the experience with GitHub's Pull Requests and Git in general.
 
@@ -16,17 +16,17 @@ ___
 
 ## Updating the Database
 
-| Download & Update the CSV Files  | Create a Database Update Issue on GitHub |
+| Download & Update the XLSX Files  | Create a Database Update Issue on GitHub |
 | ------------- | ------------- |
-| You can help out tremendelously by updating one of the XLSX files. This can be done through Excel and by making use of CTRL + F (and CTRL + H) to replace cells quickly. <p></p> Carefully go through the cells making sure you're following the descriptions as mentioned [here](#categories). After having saved the files, you're ready to go to the next step. <p></p> |  Once you've made your update, you can go [here](https://github.com/JerBouma/FinanceDatabase/issues/new/choose) and select `Database Update`. Then, within the textbox enter a description of what you changed and then drag and drop your updated CSV files. <p></p> From here on, I'll make sure to update the Database with your updates! <p></p> |
-| <img width="1500" alt="Updating CSV Files - FinanceDatabase" src="https://user-images.githubusercontent.com/46355364/220196479-a3581da7-132b-44a4-b44f-90d989e8c807.png">  | <img width="1500" alt="GitHub Issue - FinanceDatabase" src="https://user-images.githubusercontent.com/46355364/220197736-7453a9bb-d8bb-4569-ab84-b84e456f753e.png"> |
+| You can help out tremendelously by updating one of the XLSX files. This can be done through Excel and by making use of CTRL + F (and CTRL + H) to replace cells quickly. <p></p> Carefully go through the cells making sure you're following the descriptions as mentioned [here](#categories). After having saved the files, you're ready to go to the next step. <p></p> |  Once you've made your update, you can go [here](https://github.com/JerBouma/FinanceDatabase/issues/new/choose) and select `Database Update`. Then, within the textbox enter a description of what you changed and then drag and drop your updated XLSX files. <p></p> From here on, I'll make sure to update the Database with your updates! <p></p> |
+| <img width="1500" alt="Updating XLSX Files - FinanceDatabase" src="https://user-images.githubusercontent.com/46355364/221357112-aac7bdc4-a605-4ecb-8337-1dd309f2e1a8.png">  | <img width="1500" alt="GitHub Issue - FinanceDatabase" src="https://user-images.githubusercontent.com/46355364/220197736-7453a9bb-d8bb-4569-ab84-b84e456f753e.png"> |
 
 ## How you can help
 
 There are a variety of ways you can help out, these can be:
 - Adding in ISIN, CIK and more symbols for each company.
 - Discovering whether symbols and companies still exist by Googling and if not, removing them from the database.
-- Adding new entries to the database, e.g. if you have a great datasource that the database can be extended with.
+- Adding new entries to the database, e.g. if you have a great data source that the database can be extended with.
 - Updating the categories, e.g. if the "Sector" is missing, figure out in what sector the company fits.
 - Update symbols that refer to the same company, e.g. ASML, ASML.DE and ASML.AS are all the same company but listed on different exchanges. Do they all contain enough information? Here you can use ASML as base.
 - Update naming, e.g. if the name doesn't properly represent the company or is inconsistent with other results (e.g. TESLA INC, TESLA CORPORATION, Tesla Inc.)
