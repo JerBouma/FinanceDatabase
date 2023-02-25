@@ -5,8 +5,7 @@ ignore = ["S105", "S106", "S107", "PLR0913"]
 
 [tool.pylint]
 max-line-length = 122
-disable = ["R0913", "W1514", "R0911", "R0912", "R0915", "R0801", "W0221"]
-
+disable = ["R0913", "W1514", "R0911", "R0912", "R0915", "R0801", "W0221", "C0103"]
 
 [tool.ruff.isort]
 combine-as-imports = true
