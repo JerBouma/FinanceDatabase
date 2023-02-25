@@ -98,6 +98,9 @@ equities_countries = equities.options('country')
 # Obtain all sectors from the database
 equities_sectors = equities.options('sector')
 
+# Obtain all industry groups from the database
+equities_industry_groups = equities.options('industry_group')
+
 # Obtain all industries from a country from the database
 equities_germany_industries = equities.options('industry', country='Germany')
 
@@ -136,13 +139,13 @@ equities.select()
 
 Which returns the following DataFrame:
 
-| symbol   | short_name                 | long_name                  | currency   | sector      | industry_group                                 | industry        | exchange   | market    | country       | state   | city        | zipcode    | website                         | market_cap   |
-|:---------|:---------------------------|:---------------------------|:-----------|:------------|:-----------------------------------------------|:----------------|:-----------|:----------|:--------------|:--------|:------------|:-----------|:--------------------------------|:-------------|
-| A        | Agilent Technologies, Inc. | Agilent Technologies, Inc. | USD        | Health Care | Pharmaceuticals, Biotechnology & Life Sciences | Biotechnology   | NYQ        | us_market | United States | CA      | Santa Clara | 95051      | http://www.agilent.com          | Large Cap    |
-| AA       | Alcoa Corporation          | Alcoa Corporation          | USD        | Materials   | Materials                                      | Metals & Mining | NYQ        | us_market | United States | PA      | Pittsburgh  | 15212-5858 | http://www.alcoa.com            | Mid Cap      |
-| AAALF    | AAREAL BANK AG             | Aareal Bank AG             | USD        | nan         | nan                                            | nan             | PNK        | us_market | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    |
-| AAALY    | AAREAL BANK AG             | Aareal Bank AG             | USD        | nan         | nan                                            | nan             | PNK        | us_market | nan           | nan     | nan         | nan        | nan                             | nan          |
-| AABB     | ASIA BROADBAND INC         | Asia Broadband, Inc.       | USD        | Materials   | Materials                                      | Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas   | 89135      | http://www.asiabroadbandinc.com | Micro Cap    |
+| symbol   | name                       | currency   | sector      | industry_group                                 | industry        | exchange   | market    | country       | state   | city        | zipcode    | website                         | market_cap   |
+|:---------|:---------------------------|:-----------|:------------|:-----------------------------------------------|:----------------|:-----------|:----------|:--------------|:--------|:------------|:-----------|:--------------------------------|:-------------|
+| A        | Agilent Technologies, Inc. | USD        | Health Care | Pharmaceuticals, Biotechnology & Life Sciences | Biotechnology   | NYQ        | us_market | United States | CA      | Santa Clara | 95051      | http://www.agilent.com          | Large Cap    |
+| AA       | Alcoa Corporation          | USD        | Materials   | Materials                                      | Metals & Mining | NYQ        | us_market | United States | PA      | Pittsburgh  | 15212-5858 | http://www.alcoa.com            | Mid Cap      |
+| AAALF    | Aareal Bank AG             | USD        | nan         | nan                                            | nan             | PNK        | us_market | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    |
+| AAALY    | Aareal Bank AG             | USD        | nan         | nan                                            | nan             | PNK        | us_market | nan           | nan     | nan         | nan        | nan                             | nan          |
+| AABB     | Asia Broadband, Inc.       | USD        | Materials   | Materials                                      | Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas   | 89135      | http://www.asiabroadbandinc.com | Micro Cap    |
 
 This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155.000 different symbols. 
 
@@ -206,13 +209,13 @@ metals_and_mining_companies_usa = equities.select(country="United States", secto
 
 This gives you a DataFrame with the following information:
 
-| symbol   | short_name                      | long_name                           | currency   | sector    | industry_group   | industry        | exchange   | market    | country       | state   | city            | zipcode    | website                            | market_cap   |
-|:---------|:--------------------------------|:------------------------------------|:-----------|:----------|:-----------------|:----------------|:-----------|:----------|:--------------|:--------|:----------------|:-----------|:-----------------------------------|:-------------|
-| AA       | Alcoa Corporation               | Alcoa Corporation                   | USD        | Materials | Materials        | Metals & Mining | NYQ        | us_market | United States | PA      | Pittsburgh      | 15212-5858 | http://www.alcoa.com               | Mid Cap      |
-| AABB     | ASIA BROADBAND INC              | Asia Broadband, Inc.                | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas       | 89135      | http://www.asiabroadbandinc.com    | Micro Cap    |
-| AAGC     | ALL AMERICAN GOLD CORP          | All American Gold Corp.             | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | WY      | Cheyenne        | 82001      | http://www.allamericangoldcorp.com | Nano Cap     |
-| ABML     | AMERICAN BATTERY METALS CORP NE | American Battery Metals Corporation | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | NV      | Incline Village | 89451      | http://www.batterymetals.com       | Small Cap    |
-| ACNE     | ALICE CONS MINES INC            | Alice Consolidated Mines, Inc.      | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | ID      | Wallace         | 83873-0469 | nan                                | nan          |
+| symbol   | name                                | currency   | sector    | industry_group   | industry        | exchange   | market    | country       | state   | city            | zipcode    | website                            | market_cap   |
+|:---------|:------------------------------------|:-----------|:----------|:-----------------|:----------------|:-----------|:----------|:--------------|:--------|:----------------|:-----------|:-----------------------------------|:-------------|
+| AA       | Alcoa Corporation                   | USD        | Materials | Materials        | Metals & Mining | NYQ        | us_market | United States | PA      | Pittsburgh      | 15212-5858 | http://www.alcoa.com               | Mid Cap      |
+| AABB     | Asia Broadband, Inc.                | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas       | 89135      | http://www.asiabroadbandinc.com    | Micro Cap    |
+| AAGC     | All American Gold Corp.             | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | WY      | Cheyenne        | 82001      | http://www.allamericangoldcorp.com | Nano Cap     |
+| ABML     | American Battery Metals Corporation | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | NV      | Incline Village | 89451      | http://www.batterymetals.com       | Small Cap    |
+| ACNE     | Alice Consolidated Mines, Inc.      | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | ID      | Wallace         | 83873-0469 | nan                                | nan          |
 
 As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
 
@@ -229,17 +232,17 @@ equities.search(summary='automotive', currency='USD', country='Germany')
 
 Which returns a selection of the DataFrame that matches all criteria. 
 
-| symbol   | short_name                  | long_name                                   | currency   | sector                 | industry_group                | industry           | exchange   | market    | country   |   state | city                  |   zipcode | website                   | market_cap   |
-|:---------|:----------------------------|:--------------------------------------------|:-----------|:-----------------------|:------------------------------|:-------------------|:-----------|:----------|:----------|--------:|:----------------------|----------:|:--------------------------|:-------------|
-| AFRMF    | ALPHAFORM AG                | Alphaform AG                                | USD        | Industrials            | Capital Goods                 | Machinery          | PNK        | us_market | Germany   |     nan | Feldkirchen           |     85622 | nan                       | Nano Cap     |
-| AUUMF    | AUMANN AG                   | Aumann AG                                   | USD        | Industrials            | Capital Goods                 | Machinery          | PNK        | us_market | Germany   |     nan | Beelen                |     48361 | http://www.aumann.com     | Micro Cap    |
-| BAMXF    | BAYERISCHE MOTOREN WERKE AG | Bayerische Motoren Werke Aktiengesellschaft | USD        | Consumer Discretionary | Automobiles & Components      | Automobiles        | PNK        | us_market | Germany   |     nan | Munich                |     80788 | http://www.bmwgroup.com   | Large Cap    |
-| BASFY    | BASF SE                     | BASF SE                                     | USD        | Materials              | Materials                     | Chemicals          | PNK        | us_market | Germany   |     nan | Ludwigshafen am Rhein |     67056 | http://www.basf.com       | Large Cap    |
-| BDRFF    | BEIERSDORF AG               | Beiersdorf Aktiengesellschaft               | USD        | Consumer Staples       | Household & Personal Products | Household Products | PNK        | us_market | Germany   |     nan | Hamburg               |     20245 | http://www.beiersdorf.com | Large Cap    |
+| symbol   | name                                        | currency   | sector                 | industry_group                | industry           | exchange   | market    | country   |   state | city                  |   zipcode | website                   | market_cap   |
+|:---------|:--------------------------------------------|:-----------|:-----------------------|:------------------------------|:-------------------|:-----------|:----------|:----------|--------:|:----------------------|----------:|:--------------------------|:-------------|
+| AFRMF    | Alphaform AG                                | USD        | Industrials            | Capital Goods                 | Machinery          | PNK        | us_market | Germany   |     nan | Feldkirchen           |     85622 | nan                       | Nano Cap     |
+| AUUMF    | Aumann AG                                   | USD        | Industrials            | Capital Goods                 | Machinery          | PNK        | us_market | Germany   |     nan | Beelen                |     48361 | http://www.aumann.com     | Micro Cap    |
+| BAMXF    | Bayerische Motoren Werke Aktiengesellschaft | USD        | Consumer Discretionary | Automobiles & Components      | Automobiles        | PNK        | us_market | Germany   |     nan | Munich                |     80788 | http://www.bmwgroup.com   | Large Cap    |
+| BASFY    | BASF SE                                     | USD        | Materials              | Materials                     | Chemicals          | PNK        | us_market | Germany   |     nan | Ludwigshafen am Rhein |     67056 | http://www.basf.com       | Large Cap    |
+| BDRFF    | Beiersdorf Aktiengesellschaft               | USD        | Consumer Staples       | Household & Personal Products | Household Products | PNK        | us_market | Germany   |     nan | Hamburg               |     20245 | http://www.beiersdorf.com | Large Cap    |
 
 ## Storing the database at a different location
 If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
-`base_url` which you can find in each of the above 'select' functions. An example would be:
+`base_url` which you can find in each of the asset classes. An example would be:
 - `fd.Equities(base_url=<YOUR URL>)`
 
 You can also store the database locally and point to your local location with the variable `base_url` and by setting
@@ -310,7 +313,7 @@ chosen shows the initial impact of the Coronacrisis on the financial markets.
 ````python
 import yfinance as yf
 
-tickers = list(health_etfs_in_biotech['symbol'])
+tickers = list(health_etfs_in_biotech.index)
 
 stock_data_biotech = yf.download(tickers, start="2020-01-01", end="2020-06-01")['Adj Close']
 stock_data_biotech = stock_data_biotech.dropna(axis='columns')
@@ -331,7 +334,7 @@ column = 0
 
 for ticker in stock_data_biotech.columns:
     data_plot = pd.DataFrame(stock_data_biotech[ticker])
-    long_name = health_etfs_in_biotech.loc[health_etfs_in_biotech.symbol == ticker, 'long_name'].iloc[0]
+    name = health_etfs_in_biotech.loc[health_etfs_in_biotech.index == ticker, 'name'].iloc[0]
 
     indicator_bb = BollingerBands(close=stock_data_biotech[ticker], window=20, window_dev=2)
 
@@ -340,7 +343,7 @@ for ticker in stock_data_biotech.columns:
     data_plot['bb_bbl'] = indicator_bb.bollinger_lband()
 
     axis[row, column].plot(data_plot)
-    axis[row, column].set_title(long_name, fontsize=6)
+    axis[row, column].set_title(name, fontsize=6)
     axis[row, column].set_xticks([])
     axis[row, column].set_yticks([])
 
@@ -377,7 +380,7 @@ import fundamentalanalysis as fa
 API_KEY = "YOUR_API_KEY_HERE"
 data_set = {}
 
-for ticker in silicon_valley['symbol']:
+for ticker in silicon_valley.index:
     try:
         data_set[ticker] = fa.key_metrics(ticker, API_KEY, period='annual', limit=10)
     except Exception:
@@ -398,7 +401,7 @@ for ticker in data_set:
         data_years = []
         for year in years: 
             data_years.append(data_set[ticker].loc['marketCap'][year])
-        market_cap[silicon_valley.loc[silicon_valley.symbol == ticker]['short_name'].iloc[0]] = data_years
+        market_cap[silicon_valley.loc[silicon_valley.index == ticker]['name'].iloc[0]] = data_years
     except Exception:
         continue
 
