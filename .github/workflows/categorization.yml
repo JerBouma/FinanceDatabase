@@ -30,7 +30,7 @@ jobs:
                 if column in ['name', 'summary']:
                     continue
                     
-                cryptos_categories[column] = cryptos.data[column].dropna().unique().sort_values
+                cryptos_categories[column] = cryptos.data[column].dropna().unique()
                 cryptos_categories[column].sort()
                 
             with open('compression/categories/cryptos_categories.pickle', 'wb') as handle:
