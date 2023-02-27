@@ -80,7 +80,7 @@ class Equities(FinanceDatabase):
         if sector:
             equities = equities[equities["sector"] == sector]
         if industry_group:
-            equities = equities[equities["industry_group"] == sector]
+            equities = equities[equities["industry_group"] == industry_group]
         if industry:
             equities = equities[equities["industry"] == industry]
         if exclude_exchanges:
