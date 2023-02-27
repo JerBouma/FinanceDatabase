@@ -294,7 +294,7 @@ plt.show()
 
 This results in the following graph which gives an indication which sectors are dominant within The Netherlands. Of course this is a mere example and to truly understand the importance of certain companies for the Netherlands, you would need to know market cap of each sector as well including demographics.
 
-![FinanceDatabase](https://user-images.githubusercontent.com/46355364/219180273-4ed5f3a5-6ecf-4994-8a8e-285d9c51fe7d.png)
+![FinanceDatabase](https://user-images.githubusercontent.com/46355364/221589281-e233dfa0-cbfc-46d2-b4b8-e8dbd16e2652.png)
 
 ## Technical Analysis of Biotech ETFs
 With the help of [ta](https://github.com/bukosabino/ta) and [yfinance](https://github.com/ranaroussi/yfinance) I can 
@@ -307,7 +307,7 @@ import financedatabase as fd
 
 etfs = fd.ETFs()
 
-health_etfs_in_biotech = etfs.search(category='Health', summary='biotech')
+health_care_etfs_in_biotech = etfs.search(category='Health Care', summary='biotech')
 ````
 
 Then, I collect stock data on each ticker and remove tickers that have no data in my chosen period. The period I have 
@@ -316,7 +316,7 @@ chosen shows the initial impact of the Coronacrisis on the financial markets.
 ````python
 import yfinance as yf
 
-tickers = list(health_etfs_in_biotech.index)
+tickers = list(health_care_etfs_in_biotech.index)
 
 stock_data_biotech = yf.download(tickers, start="2020-01-01", end="2020-06-01")['Adj Close']
 stock_data_biotech = stock_data_biotech.dropna(axis='columns')
@@ -337,7 +337,7 @@ column = 0
 
 for ticker in stock_data_biotech.columns:
     data_plot = pd.DataFrame(stock_data_biotech[ticker])
-    name = health_etfs_in_biotech.loc[health_etfs_in_biotech.index == ticker, 'name'].iloc[0]
+    name = health_care_etfs_in_biotech.loc[health_care_etfs_in_biotech.index == ticker, 'name'].iloc[0]
 
     indicator_bb = BollingerBands(close=stock_data_biotech[ticker], window=20, window_dev=2)
 
@@ -361,9 +361,9 @@ figure.tight_layout()
 
 This leads to the following graph which gives an indication whether Biotech ETFs were oversold or overbought and 
 how this effect is neutralised (to some degree) in the months after. Read more 
-about [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp) here.
+about Bollinger Bands [here](https://www.investopedia.com/terms/b/bollingerbands.asp).
 
-![FinanceDatabase](https://user-images.githubusercontent.com/46355364/219180415-dc303fa3-a615-4f80-96cf-eadb2b804a65.png)
+![FinanceDatabase](https://user-images.githubusercontent.com/46355364/221589951-bce2de36-9458-4a6f-b3ed-2383f01bed0b.png)
 
 ## Silicon Valley's Market Cap
 If I want to understand which listed technology companies exist in Silicon Valley, I can collect all equities of the sector 'Technology' and then filter based on city to obtain all listed technology companies in 'Silicon Valley'. The city 'San Jose' is where Silicon Valley is located.
