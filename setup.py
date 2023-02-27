@@ -6,10 +6,7 @@ with open("README.md") as fh:
 setuptools.setup(
     name="financedatabase",
     packages=["financedatabase"],
-    install_requires=[
-          'pandas',
-          'pathlib'
-          ],
+    install_requires=["pandas", "pathlib"],
     version="2.0.7",
     license="MIT",
     description="This is a database of 300.000+ symbols containing Equities, ETFs, Funds, Indices, "
