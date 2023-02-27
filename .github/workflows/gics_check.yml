@@ -8,7 +8,7 @@ on:
       - 'main'
 
 jobs:
-  Update-Categorization-Files:
+  Check-GICS-Categorisation:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
@@ -23,6 +23,8 @@ jobs:
         uses: jannekem/run-python-script-action@v1
         with:
           script: |
+            import pandas as pd
+            
             invalid_rows = pd.DataFrame()
             gics = pd.read_pickle('compression/categories/gics_categories.pickle')
             equities = pd.read_csv("Database/equities.csv", index_col=0)
