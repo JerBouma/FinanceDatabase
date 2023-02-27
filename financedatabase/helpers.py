@@ -19,7 +19,7 @@ class FinanceDatabase:
     sectors, industries, types of investments and much more.
 
     This class is the base controller of all other classes that are named
-    after their corresponding asset classes.
+    after their corresponding asset class.
     """
 
     FILE_NAME = ""

@@ -16,7 +16,7 @@ class Cryptos(FinanceDatabase):
     rendering them theoretically immune to government interference
     or manipulation. [Source: Investopedia]
 
-    This class provides a information about the cryptocurrencies available as
+    This class provides information about the cryptocurrencies available as
     well as the ability to select specific cryptocurrencies based on the currency.
     """
 

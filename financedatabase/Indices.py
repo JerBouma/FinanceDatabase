@@ -15,7 +15,7 @@ class Indices(FinanceDatabase):
     track a particular industry or segment such as the Russell 2000 Index,
     which tracks only small-cap stocks. [Source: Investopedia]
 
-    This class provides a information about the indices available as well as the
+    This class provides information about the indices available as well as the
     ability to select specific indices based on the currency.
     """
 

@@ -13,7 +13,7 @@ class Currencies(FinanceDatabase):
     Currency is the primary medium of exchange in the modern world, having
     long ago replaced bartering as a means of trading goods and services.
 
-    This class provides a information about the currencies available as well as the
+    This class provides information about the currencies available as well as the
     ability to select specific currencies based on the currency.
     """
 
@@ -21,20 +21,22 @@ class Currencies(FinanceDatabase):
 
     def select(
         self,
-        from_currency: str = "",
-        to_currency: str = "",
+        base_currency: str = "",
+        quote_currency: str = "",
         capitalize: bool = True,
     ) -> pd.DataFrame:
         """
         Description
         ----
         Returns all currencies when no input is given and has the option to give
-        a specific combination of currencies based on the currency defined.
+        a specific combination of currencies based on the from or to currency defined.
 
         Input
         ----
-        currency (string, default is None)
-            If filled, gives all data for a specific currency.
+        base_currency (string, default is None)
+            If filled, gives all data for the base currency.
+        quote_currency 
+            If filled, gives all data for the quote currency.
         capitalize (boolean, default is True):
             Whether the currency needs to be capitalized. By default the values
             always are capitalized as that is also how it is represented in the csv files.
@@ -50,16 +52,16 @@ class Currencies(FinanceDatabase):
         """
         currencies = self.data.copy(deep=True)
 
-        if from_currency:
+        if base_currency:
             currencies = currencies[
-                currencies["from_currency"].str.contains(
-                    from_currency.upper() if capitalize else from_currency, na=False
+                currencies["base_currency"].str.contains(
+                    base_currency.upper() if capitalize else base_currency, na=False
                 )
             ]
-        if to_currency:
+        if quote_currency:
             currencies = currencies[
-                currencies["to_currency"].str.contains(
-                    to_currency.upper() if capitalize else to_currency, na=False
+                currencies["quote_currency"].str.contains(
+                    quote_currency.upper() if capitalize else quote_currency, na=False
                 )
             ]
 
@@ -75,14 +77,14 @@ class Currencies(FinanceDatabase):
         ----
         selection (string)
             The selection you want to see the options for. Choose from:
-                "from_currency"
-                "to_currency"
+                "base_currency"
+                "quote_currency"
                 "exchange"
                 "market"
         options (pd.Series)
             Returns a series with all options for the selection provided.
         """
-        selection_values = ["from_currency", "to_currency", "exchange", "market"]
+        selection_values = ["base_currency", "quote_currency", "exchange", "market"]
         if selection not in selection_values:
             raise ValueError(
                 f"The selection variable provided is not valid, "

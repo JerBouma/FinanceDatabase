@@ -13,9 +13,9 @@ class Equities(FinanceDatabase):
     essentially allows the public to buy ownership rights in
     their business.
 
-    This class provides a information about the Equities available as well as the
+    This class provides information about the Equities available as well as the
     ability to select specific equities based on the country, sector,
-    industry group and industry, adhering to GICS.
+    industry group and industry, adhering to the GICS standard.
     """
 
     FILE_NAME = "equities.pkl"
@@ -104,15 +104,15 @@ class Equities(FinanceDatabase):
         ----
         selection (string)
             The selection you want to see the options for. Choose from:
-                "currency",
-                "sector",
-                "industry_group",
-                "industry",
-                "exchange",
-                "market",
-                "country",
-                "state",
-                "zip_code",
+                "currency"
+                "sector"
+                "industry_group"
+                "industry"
+                "exchange"
+                "market"
+                "country"
+                "state"
+                "zip_code"
                 "market_cap"
         country (string, default is None)
             If filled, gives all data for a specific country.

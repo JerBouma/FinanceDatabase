@@ -16,7 +16,7 @@ class ETFs(FinanceDatabase):
     and diverse collection of securities. ETFs can even be structured to
     track specific investment strategies. [Source: Investopedia]
 
-    This class provides a information about the ETFs available as well as the
+    This class provides information about the ETFs available as well as the
     ability to select specific ETFs based on the category and/or family.
     """
 

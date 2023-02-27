@@ -13,7 +13,7 @@ class Moneymarkets(FinanceDatabase):
     bought by individual investors and money market accounts opened
     by bank customers. [Source: Investopedia]
 
-    This class provides a information about the moneymarkets available as well as the
+    This class provides information about the moneymarkets available as well as the
     ability to select specific moneymarkets based on the currency.
     """
 

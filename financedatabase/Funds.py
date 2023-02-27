@@ -14,7 +14,7 @@ class Funds(FinanceDatabase):
     the fund's investors. A mutual fund's portfolio is structured and maintained
     to match the investment objectives stated in its prospectus. [Source: Investopedia]
 
-    This class provides a information about the funds available as well as the
+    This class provides information about the funds available as well as the
     ability to select specific funds based on the category and/or family.
     """
 
