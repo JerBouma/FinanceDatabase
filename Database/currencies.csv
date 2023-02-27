@@ -1,4 +1,4 @@
-symbol,name,from_currency,to_currency,exchange,market
+symbol,name,base_currency,quote_currency,exchange,market
 AED=X,USD/AED,USD,AED,CCY,ccy_market
 AEDAUD=X,AED/AUD,AED,AUD,CCY,ccy_market
 AEDBRX=X,AED/BRX,AED,BRX,CCY,ccy_market
