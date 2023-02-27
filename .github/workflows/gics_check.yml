@@ -26,6 +26,7 @@ jobs:
             import pandas as pd
 
             invalid_rows = pd.DataFrame()
+            errors = []
             gics = pd.read_pickle('compression/categories/gics_categories.pickle')
             equities = pd.read_csv("Database/equities.csv", index_col=0)
             filtered_data = equities[equities['sector'].notna() & equities['industry_group'].notna() & equities['industry'].notna()]
@@ -36,12 +37,18 @@ jobs:
                 try:
                     # Search whether it can find the combination
                     gics[sector][industry_group][industry]
-                except KeyError:
+                except KeyError as error:
                     # If it can't, add to invalid_rows DataFrame
+                    row['error'] = error
                     invalid_rows = pd.concat([invalid_rows, row], axis=1)
-                    
+
+
             if not invalid_rows.empty:
                 invalid_rows = invalid_rows.T
-                print(invalid_rows)
+
+                print("Invalid Rows for:")
+                for index, row in invalid_rows.iterrows():
+                    print(f"{index}: {row['error']}")
+                
                 raise ValueError("There are invalid sector, industry groups and/or industries found. "
-                                "Please check if it adheres to https://www.msci.com/our-solutions/indexes/gics")
+                                 "Please check if it adheres to https://www.msci.com/our-solutions/indexes/gics")

@@ -35,7 +35,7 @@ class Currencies(FinanceDatabase):
         ----
         base_currency (string, default is None)
             If filled, gives all data for the base currency.
-        quote_currency 
+        quote_currency
             If filled, gives all data for the quote currency.
         capitalize (boolean, default is True):
             Whether the currency needs to be capitalized. By default the values
