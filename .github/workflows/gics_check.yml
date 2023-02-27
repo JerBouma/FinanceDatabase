@@ -1,0 +1,46 @@
+name: GICS Categorisation Check
+
+on:
+  pull_request:
+    types: [opened, synchronize, edited]
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  Update-Categorization-Files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install -r requirements.txt
+      - run: pip install financedatabase
+      - name: Check GICS Categorisation
+        uses: jannekem/run-python-script-action@v1
+        with:
+          script: |
+            invalid_rows = pd.DataFrame()
+            gics = pd.read_pickle('compression/categories/gics_categories.pickle')
+            equities = pd.read_csv("Database/equities.csv", index_col=0)
+            filtered_data = equities[equities['sector'].notna() & equities['industry_group'].notna() & equities['industry'].notna()]
+
+            for index, row in filtered_data.iterrows():
+                sector, industry_group, industry = row['sector'], row['industry_group'], row['industry']
+
+                try:
+                    # Search whether it can find the combination
+                    gics[sector][industry_group][industry]
+                except KeyError:
+                    # If it can't, add to invalid_rows DataFrame
+                    print(f"{row['sector']} - {row['industry_group']} - {row['industry']}")
+                    invalid_rows = pd.concat([invalid_rows, row], axis=1)
+                    
+            if not invalid_rows.empty:
+                invalid_rows = invalid_rows.T
+                print(invalid_rows)
+                raise ValueError("There are invalid sector, industry groups and/or industries found. "
+                                "Please check if it adheres to https://www.msci.com/our-solutions/indexes/gics")
