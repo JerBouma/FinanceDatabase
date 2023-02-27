@@ -24,7 +24,7 @@ jobs:
         with:
           script: |
             import pandas as pd
-            
+
             invalid_rows = pd.DataFrame()
             gics = pd.read_pickle('compression/categories/gics_categories.pickle')
             equities = pd.read_csv("Database/equities.csv", index_col=0)
@@ -38,7 +38,6 @@ jobs:
                     gics[sector][industry_group][industry]
                 except KeyError:
                     # If it can't, add to invalid_rows DataFrame
-                    print(f"{row['sector']} - {row['industry_group']} - {row['industry']}")
                     invalid_rows = pd.concat([invalid_rows, row], axis=1)
                     
             if not invalid_rows.empty:
