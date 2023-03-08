@@ -20,5 +20,5 @@ This compression notebook figures out what compression techniques are best suite
 It uses the methodology as described here: https://towardsdatascience.com/still-saving-your-data-in-csv-try-these-other-options-9abe8b83db3a
 
 ___
-The conclusion is that **Pickle (xz)** results in the most efficient loading. However, to solve the vulnerability issue that arrises with loading with Pickles I've decided to take the next best thing, this is the **CSV No Index (GZIP)** option which is about the same in terms of loading.
+The conclusion is that **Pickle (xz)** results in the most efficient loading. However, to solve the vulnerability issue that arrises with loading with Pickles I've decided to take the next best thing, this is the **Parquet** option which is about the same in terms of loading.
 ___
