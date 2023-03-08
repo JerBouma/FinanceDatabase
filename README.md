@@ -55,10 +55,14 @@ Some key statistics of the database:
 \* These numbers refer to families (iShares, Vanguard) and categories (World Stock, Real Estate) respectively.  
 \** This is an estimation. Obtaining the country distribution can only be done by collecting data on the underlying 
 or by manual search.
+___
 
-This database is also used within **OpenBB** for a variety of asset classes. This allows users to effectively query the FinanceDatabase to obtain information and symbols they'd like to use further inside the OpenBB Terminal and OpenBB SDK. Find more information about OpenBB on the official website [here](https://openbb.co/) and the GitHub repository [here](https://github.com/OpenBB-finance/OpenBBTerminal).
+This database is also used within **OpenBB**, a company that is also open source and tries to democratise investment research. This allows users to effectively query the FinanceDatabase to obtain information and symbols from a variety of asset classes that they'd like to use further inside the OpenBB Terminal and OpenBB SDK. Find more information about OpenBB within the GitHub repository [here](https://github.com/OpenBB-finance/OpenBBTerminal).
 
-<img width="800" alt="image" src="https://user-images.githubusercontent.com/46355364/221357979-4ff2f7f5-8da1-4f7c-8b6c-7c858a466ba1.png">
+Please note that I am affiliated with this company but receive no benefits from sharing this information, I simply genuinely believe it is a great piece of (free) software that synergizes well with the FinanceDatabase.
+
+<a href="https://github.com/OpenBB-finance/OpenBBTerminal"><img width="1200" alt="image" src="https://user-images.githubusercontent.com/46355364/221357979-4ff2f7f5-8da1-4f7c-8b6c-7c858a466ba1.png" alt="OpenBB"></a>
+___
 
 # Table of Contents
 
