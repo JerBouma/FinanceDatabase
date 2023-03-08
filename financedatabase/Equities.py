@@ -18,7 +18,7 @@ class Equities(FinanceDatabase):
     industry group and industry, adhering to the GICS standard.
     """
 
-    FILE_NAME = "equities.gzip"
+    FILE_NAME = "equities.brotli"
 
     def select(
         self,

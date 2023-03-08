@@ -17,7 +17,7 @@ class Currencies(FinanceDatabase):
     ability to select specific currencies based on the currency.
     """
 
-    FILE_NAME = "currencies.gzip"
+    FILE_NAME = "currencies.brotli"
 
     def select(
         self,

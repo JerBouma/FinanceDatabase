@@ -44,7 +44,8 @@ class FinanceDatabase:
         """
         the_path = str(file_path) + "/" if use_local_location else base_url
         the_path += self.FILE_NAME
-        self.data = pd.read_csv(the_path, index_col=0, compression="gz")
+        self.data = pd.read_parquet(the_path, compression="brotli")
+        self.data = self.data.set_index(self.data.columns[0])
 
     def search(self, **kwargs: str) -> pd.DataFrame:
         """
