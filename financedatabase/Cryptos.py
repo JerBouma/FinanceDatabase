@@ -23,7 +23,10 @@ class Cryptos(FinanceDatabase):
     FILE_NAME = "cryptos.gzip"
 
     def select(
-        self, crypto: str = "", currency: str = "", capitalize: bool = True,
+        self,
+        crypto: str = "",
+        currency: str = "",
+        capitalize: bool = True,
     ) -> pd.DataFrame:
         """
         Description
