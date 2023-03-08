@@ -17,7 +17,7 @@ The following is a set of guidelines for contributing to the FinanceDatabase. Th
 When you are just looking to make edits or know your way around Excel well, I'd recommend downloading the CSV files with the following link:
 ___
 
-<b><div align="center"><a href="https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FJerBouma%2FFinanceDatabase%2Ftree%2Fmain%2FDatabase">Download the the CSV files of the FinanceDatabase here</a></div></b>
+<b><div align="center"><a href="https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FJerBouma%2FFinanceDatabase%2Ftree%2Fmain%2Fdatabase">Download the the CSV files of the FinanceDatabase here</a></div></b>
 ___
 
 Then, follow these steps to update the CSV files accordingly.
