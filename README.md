@@ -57,7 +57,7 @@ Some key statistics of the database:
 or by manual search.
 ___
 
-This database is also used within **OpenBB**, a company that is is open source and democratizes investment research. This allows users to effectively query the FinanceDatabase to obtain information and symbols from a variety of asset classes that they'd like to use further inside the OpenBB Terminal and OpenBB SDK. Find more information about OpenBB within the GitHub repository [here](https://github.com/OpenBB-finance/OpenBBTerminal).
+This database is also used within **OpenBB**, an open source investment company that is democratizing access to investment research. This allows users to effectively query the FinanceDatabase to obtain information and symbols from a variety of asset classes that they'd like to use further inside the OpenBB Terminal and OpenBB SDK. Find more information about OpenBB within the GitHub repository [here](https://github.com/OpenBB-finance/OpenBBTerminal).
 
 Please note that I am affiliated with this company but receive no benefits from sharing this information, I simply genuinely believe it is a great piece of (free) software that synergizes well with the FinanceDatabase.
 
