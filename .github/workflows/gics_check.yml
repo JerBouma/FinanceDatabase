@@ -24,10 +24,11 @@ jobs:
         with:
           script: |
             import pandas as pd
+            import json
 
             invalid_rows = pd.DataFrame()
             errors = []
-            gics = pd.read_pickle('compression/categories/gics_categories.pickle')
+            gics = json.load(open("compression/categories/gics_categories.json", "r"))
             equities = pd.read_csv("Database/equities.csv", index_col=0)
             filtered_data = equities[equities['sector'].notna() & equities['industry_group'].notna() & equities['industry'].notna()]
 
