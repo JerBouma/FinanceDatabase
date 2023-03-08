@@ -29,7 +29,7 @@ jobs:
             invalid_rows = pd.DataFrame()
             errors = []
             gics = json.load(open("compression/categories/gics_categories.json", "r"))
-            equities = pd.read_csv("Database/equities.csv", index_col=0)
+            equities = pd.read_csv("database/equities.csv", index_col=0)
             filtered_data = equities[equities['sector'].notna() & equities['industry_group'].notna() & equities['industry'].notna()]
 
             for index, row in filtered_data.iterrows():
