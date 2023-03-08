@@ -25,9 +25,7 @@ class FinanceDatabase:
     FILE_NAME = ""
 
     def __init__(
-        self,
-        base_url: str = DATA_REPO,
-        use_local_location: bool = False,
+        self, base_url: str = DATA_REPO, use_local_location: bool = False,
     ):
         """
         Description
@@ -158,8 +156,9 @@ def obtain_options(
 
     the_path = str(file_path) + "/" if use_local_location else base_url
     the_path += f"/categories/{selection}_categories.gzip"
-    categories_df = pd.read_csv(the_path, index_col=0, compression='gzip')
-    categories = {index: categories_df.loc[index].dropna().values for index in categories_df.index}
-        
+    categories_df = pd.read_csv(the_path, index_col=0, compression="gzip")
+    categories = {
+        index: categories_df.loc[index].dropna().to_numpy() for index in categories_df.index
+    }
 
     return categories
