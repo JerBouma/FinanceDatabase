@@ -101,7 +101,7 @@ After setting up Git, you can fork and pull the project in.
 5. Push to your Branch (`git push origin feature/contribution`)
 6. Open a Pull Request
 
-The database files resides in the `Database` folder whereas the files that are loaded with the package are inside the `compression` folder. Refer to the [User](#user) section what is required to update the data files.
+The database files resides in the `Database` folder whereas the files that are loaded with the package are inside the `compression` folder. Refer to the [Updating the Database](#updating-the-database) section what is required to update the data files.
 
 ## Updating the Package
 
