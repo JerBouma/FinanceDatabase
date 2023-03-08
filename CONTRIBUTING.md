@@ -32,7 +32,7 @@ It is also possible to load in the files directly into e.g. a Jupyter Notebook a
 - If remote: `pd.read_csv("https://github.com/JerBouma/FinanceDatabase/blob/main/database/equities.csv?raw=true", index_col=0)`
 - If locally: `pd.read_csv("Database/equities.csv", index_col=0)`
  
-Change the asset class name (`equities.csv`) to any of the file names as found [here](https://github.com/JerBouma/FinanceDatabase/tree/main/Database). Then, once you have made your changes you can use `df.to_csv('equities.csv')` to export back to the CSV format. From here on, follow the above steps again or create a Pull Request as described [here](#advanced-developers).
+Change the asset class name (`equities.csv`) to any of the file names as found [here](https://github.com/JerBouma/FinanceDatabase/tree/main/database). Then, once you have made your changes you can use `df.to_csv('equities.csv')` to export back to the CSV format. From here on, follow the above steps again or create a Pull Request as described [here](#advanced-developers).
 
 | If the Database is stored Remote  | If the Database is stored Locally|
 | ------------- | ------------- |
