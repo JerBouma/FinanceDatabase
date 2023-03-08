@@ -44,7 +44,7 @@ class FinanceDatabase:
         """
         the_path = str(file_path) + "/" if use_local_location else base_url
         the_path += self.FILE_NAME
-        self.data = pd.read_pickle(the_path, compression="xz")
+        self.data = pd.read_csv(the_path, index_col=0, compression="gz")
 
     def search(self, **kwargs: str) -> pd.DataFrame:
         """
@@ -157,7 +157,9 @@ def obtain_options(
         )
 
     the_path = str(file_path) + "/" if use_local_location else base_url
-    the_path += f"/categories/{selection}_categories.pickle"
-    categories = pd.read_pickle(the_path)
+    the_path += f"/categories/{selection}_categories.gzip"
+    categories_df = pd.read_csv(the_path, index_col=0, compression='gzip')
+    categories = {index: categories_df.loc[index].dropna().values for index in categories_df.index}
+        
 
     return categories

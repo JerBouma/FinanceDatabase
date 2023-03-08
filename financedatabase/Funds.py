@@ -18,7 +18,7 @@ class Funds(FinanceDatabase):
     ability to select specific funds based on the category and/or family.
     """
 
-    FILE_NAME = "funds.pkl"
+    FILE_NAME = "funds.gzip"
 
     def select(
         self,
