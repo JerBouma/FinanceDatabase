@@ -25,26 +25,26 @@ jobs:
             import financedatabase as fd
             import pandas as pd
 
-            cryptos = pd.read_csv('Database/cryptos.csv', index_col=0)
-            cryptos.to_pickle('compression/cryptos.pkl', compression='xz')
+            cryptos = pd.read_csv('Database/cryptos.csv')
+            cryptos.to_csv('compression/cryptos.gzip', index=False, compression='gzip')
 
-            currencies = pd.read_csv('Database/currencies.csv', index_col=0)
-            currencies.to_pickle('compression/currencies.pkl', compression='xz')
+            currencies = pd.read_csv('Database/currencies.csv')
+            currencies.to_csv('compression/currencies.gzip', index=False, compression='gzip')
 
-            equities = pd.read_csv('Database/equities.csv', index_col=0)
-            equities.to_pickle('compression/equities.pkl', compression='xz')
+            equities = pd.read_csv('Database/equities.csv')
+            equities.to_csv('compression/equities.gzip', index=False, compression='gzip')
 
-            etfs = pd.read_csv('Database/etfs.csv', index_col=0)
-            etfs.to_pickle('compression/etfs.pkl', compression='xz')
+            etfs = pd.read_csv('Database/etfs.csv')
+            etfs.to_csv('compression/etfs.gzip', index=False, compression='gzip')
 
-            funds = pd.read_csv('Database/funds.csv', index_col=0)
-            funds.to_pickle('compression/funds.pkl', compression='xz')
+            funds = pd.read_csv('Database/funds.csv')
+            funds.to_csv('compression/funds.gzip', index=False, compression='gzip')
 
-            indices = pd.read_csv('Database/indices.csv', index_col=0)
-            indices.to_pickle('compression/indices.pkl', compression='xz')
+            indices = pd.read_csv('Database/indices.csv')
+            indices.to_csv('compression/indices.gzip', index=False, compression='gzip')
 
-            moneymarkets = pd.read_csv('Database/moneymarkets.csv', index_col=0)
-            moneymarkets.to_pickle('compression/moneymarkets.pkl', compression='xz')
+            moneymarkets = pd.read_csv('Database/moneymarkets.csv')
+            moneymarkets.to_csv('compression/moneymarkets.gzip', index=False, compression='gzip')
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'

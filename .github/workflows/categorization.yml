@@ -22,7 +22,7 @@ jobs:
         with:
           script: |
             import financedatabase as fd
-            import pickle
+            import pandas as pd
 
             cryptos = fd.Cryptos()
             cryptos_categories = {}
@@ -33,8 +33,8 @@ jobs:
                 cryptos_categories[column] = cryptos.data[column].dropna().unique()
                 cryptos_categories[column].sort()
                 
-            with open('compression/categories/cryptos_categories.pickle', 'wb') as handle:
-                pickle.dump(cryptos_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            df_temp = pd.DataFrame.from_dict(cryptos_categories, orient='index').reset_index()
+            df_temp.to_csv('compression/categories/cryptos_categories.gzip', index=False, compression='gzip')
                 
             currencies = fd.Currencies()
             currencies_categories = {}
@@ -44,9 +44,9 @@ jobs:
 
                 currencies_categories[column] = currencies.data[column].dropna().unique()
                 currencies_categories[column].sort()
-                
-            with open('compression/categories/currencies_categories.pickle', 'wb') as handle:
-                pickle.dump(currencies_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+            df_temp = pd.DataFrame.from_dict(currencies_categories, orient='index').reset_index()
+            df_temp.to_csv('compression/categories/currencies_categories.gzip', index=False, compression='gzip')
                 
             equities = fd.Equities()
             equities_categories = {}
@@ -57,8 +57,8 @@ jobs:
                 equities_categories[column] = equities.data[column].dropna().unique()
                 equities_categories[column].sort()
                 
-            with open('compression/categories/equities_categories.pickle', 'wb') as handle:
-                pickle.dump(equities_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            df_temp = pd.DataFrame.from_dict(equities_categories, orient='index').reset_index()
+            df_temp.to_csv('compression/categories/equities_categories.gzip', index=False, compression='gzip')
                 
             etfs = fd.ETFs()
             etfs_categories = {}
@@ -68,9 +68,9 @@ jobs:
                     
                 etfs_categories[column] = etfs.data[column].dropna().unique()
                 etfs_categories[column].sort()
-                
-            with open('compression/categories/etfs_categories.pickle', 'wb') as handle:
-                pickle.dump(etfs_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+            df_temp = pd.DataFrame.from_dict(etfs_categories, orient='index').reset_index()
+            df_temp.to_csv('compression/categories/etfs_categories.gzip', index=False, compression='gzip')
                 
             funds = fd.Funds()
             funds_categories = {}
@@ -81,8 +81,8 @@ jobs:
                 funds_categories[column] = funds.data[column].dropna().unique()
                 funds_categories[column].sort()
                 
-            with open('compression/categories/funds_categories.pickle', 'wb') as handle:
-                pickle.dump(funds_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            df_temp = pd.DataFrame.from_dict(funds_categories, orient='index').reset_index()
+            df_temp.to_csv('compression/categories/funds_categories.gzip', index=False, compression='gzip')
                 
             indices = fd.Indices()
             indices_categories = {}
@@ -93,8 +93,8 @@ jobs:
                 indices_categories[column] = indices.data[column].dropna().unique()
                 indices_categories[column].sort()
                 
-            with open('compression/categories/indices_categories.pickle', 'wb') as handle:
-                pickle.dump(indices_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            df_temp = pd.DataFrame.from_dict(indices_categories, orient='index').reset_index()
+            df_temp.to_csv('compression/categories/indices_categories.gzip', index=False, compression='gzip')
                 
             moneymarkets = fd.Moneymarkets()
             moneymarkets_categories = {}
@@ -105,8 +105,8 @@ jobs:
                 moneymarkets_categories[column] = moneymarkets.data[column].dropna().unique()
                 moneymarkets_categories[column].sort()
                 
-            with open('compression/categories/moneymarkets_categories.pickle', 'wb') as handle:
-                pickle.dump(moneymarkets_categories, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            df_temp = pd.DataFrame.from_dict(moneymarkets_categories, orient='index').reset_index()
+            df_temp.to_csv('compression/categories/moneymarkets_categories.gzip', index=False, compression='gzip')
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'
