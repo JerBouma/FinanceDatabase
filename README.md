@@ -426,7 +426,9 @@ In this section you can find answers to commonly asked questions. In case the an
 consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues).
 
 - **How is the data obtained?**
-    - The data is an aggregation of a variety of sources and is driven by the community to extend further.
+    - The data is an aggregation of a variety of sources and is mostly a curation of myself. Next to that, it is driven by the community to extend further.
+- **What categorization method is used?**
+    - The categorization for Equities is based on a loose approximation of GICS. No actual data is collected from this source and this database merely tries to reflect the sectors and industries as best as possible. This is completely done through manual curation. The actual datasets as curated by MSCI has not been used in the development of any part of this database and remains the most up to date, paid, solution. Other categorizations are entirely developed by the author and can freely be changed.
 - **How can I contribute?**
     - Please see the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md). Thank you!
 - **Is there support for my country?**
