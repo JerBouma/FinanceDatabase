@@ -439,6 +439,8 @@ consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues)
     - Some tickers are merely holdings of companies and therefore do not really have any data attached to them. 
       Therefore, it makes sense that not all tickers return data. If you are still in doubt, search the ticker on 
       Google to see if there is really no data available. If you can't find anything about the ticker, consider updating the database by visiting the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
+- **How does the database handle changes to companies over time - like symbol/exchange migration, mergers, bankruptcies, or symbols getting reused?**
+    - These type of service is what you usually pay a hefty fee for, think of Bloomberg at over $25.000 a year. Instead of requiring your to pay, this is meant to be a community-driven project in which you help in identifiyng these companies. As news about migrations, mergers, bankruptcies and similar occur it is up to the community to identify these and/or users to look into writing scripts that help with this. It is important to note that the vast majority of companies do not change as rapidly that this database becomes irrelevant before it is identified, e.g. a company like Facebook changing to META has already been updated. Furthermore, even though a company goes bankrupt, the old ticker is still relevant when it comes to historic data before the bankruptcy.
 
 # Contact
 If you have any questions about the FinanceDatabase or would like to share with me what you have been working on, feel free to reach out to me via:
