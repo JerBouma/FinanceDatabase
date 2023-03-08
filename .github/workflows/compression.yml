@@ -25,25 +25,25 @@ jobs:
             import financedatabase as fd
             import pandas as pd
 
-            cryptos = pd.read_csv('Database/cryptos.csv')
+            cryptos = pd.read_csv('database/cryptos.csv')
             cryptos.to_csv('compression/cryptos.bz2', index=False, compression='bz2')
 
-            currencies = pd.read_csv('Database/currencies.csv')
+            currencies = pd.read_csv('database/currencies.csv')
             currencies.to_csv('compression/currencies.bz2', index=False, compression='bz2')
 
-            equities = pd.read_csv('Database/equities.csv')
+            equities = pd.read_csv('database/equities.csv')
             equities.to_csv('compression/equities.bz2', index=False, compression='bz2')
 
-            etfs = pd.read_csv('Database/etfs.csv')
+            etfs = pd.read_csv('database/etfs.csv')
             etfs.to_csv('compression/etfs.bz2', index=False, compression='bz2')
 
-            funds = pd.read_csv('Database/funds.csv')
+            funds = pd.read_csv('database/funds.csv')
             funds.to_csv('compression/funds.bz2', index=False, compression='bz2')
 
-            indices = pd.read_csv('Database/indices.csv')
+            indices = pd.read_csv('database/indices.csv')
             indices.to_csv('compression/indices.bz2', index=False, compression='bz2')
 
-            moneymarkets = pd.read_csv('Database/moneymarkets.csv')
+            moneymarkets = pd.read_csv('database/moneymarkets.csv')
             moneymarkets.to_csv('compression/moneymarkets.bz2', index=False, compression='bz2')
       - name: Commit files and log
         run: |
