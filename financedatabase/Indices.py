@@ -19,7 +19,7 @@ class Indices(FinanceDatabase):
     ability to select specific indices based on the currency.
     """
 
-    FILE_NAME = "indices.brotli"
+    FILE_NAME = "indices.bz2"
 
     def select(
         self,

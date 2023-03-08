@@ -17,7 +17,7 @@ class Moneymarkets(FinanceDatabase):
     ability to select specific moneymarkets based on the currency.
     """
 
-    FILE_NAME = "moneymarkets.brotli"
+    FILE_NAME = "moneymarkets.bz2"
 
     def select(
         self,

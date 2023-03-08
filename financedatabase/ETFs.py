@@ -20,7 +20,7 @@ class ETFs(FinanceDatabase):
     ability to select specific ETFs based on the category and/or family.
     """
 
-    FILE_NAME = "etfs.brotli"
+    FILE_NAME = "etfs.bzb2"
 
     def select(
         self,

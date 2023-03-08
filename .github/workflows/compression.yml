@@ -18,7 +18,6 @@ jobs:
       - run: pip install -r requirements.txt
       - run: pip install financedatabase
       - run : pip install openpyxl
-      - run: pip install pyarrow
       - name: Update Compressions
         uses: jannekem/run-python-script-action@v1
         with:
@@ -27,25 +26,26 @@ jobs:
             import pandas as pd
 
             cryptos = pd.read_csv('Database/cryptos.csv')
-            cryptos.to_parquet('compression/cryptos.brotli', compression='brotli')
+            cryptos.to_csv('compression/cryptos.bz2', index=False, compression='bz2')
 
             currencies = pd.read_csv('Database/currencies.csv')
-            currencies.to_parquet('compression/currencies.brotli', compression='brotli')
+            currencies.to_csv('compression/currencies.bz2', index=False, compression='bz2')
 
             equities = pd.read_csv('Database/equities.csv')
-            equities.to_parquet('compression/equities.brotli', compression='brotli')
+            equities.to_csv('compression/equities.bz2', index=False, compression='bz2')
 
             etfs = pd.read_csv('Database/etfs.csv')
-            etfs.to_parquet('compression/etfs.brotli', compression='brotli')
+            etfs.to_csv('compression/etfs.bz2', index=False, compression='bz2')
 
             funds = pd.read_csv('Database/funds.csv')
-            funds.to_parquet('compression/funds.brotli', compression='brotli')
+            funds.to_csv('compression/funds.bz2', index=False, compression='bz2')
 
             indices = pd.read_csv('Database/indices.csv')
-            indices.to_parquet('compression/indices.brotli', compression='brotli')
-            
+            indices.to_csv('compression/indices.bz2', index=False, compression='bz2')
+
             moneymarkets = pd.read_csv('Database/moneymarkets.csv')
-            moneymarkets.to_parquet('compression/moneymarkets.brotli', compression='brotli')
+            moneymarkets.to_csv('compression/moneymarkets.bz2', index=False, compression='bz2')
+      - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
