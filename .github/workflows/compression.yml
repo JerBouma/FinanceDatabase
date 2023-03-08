@@ -17,7 +17,6 @@ jobs:
           python-version: '3.x'
       - run: pip install -r requirements.txt
       - run: pip install financedatabase
-      - run: pip install pyarrow
       - run : pip install openpyxl
       - name: Update Compressions
         uses: jannekem/run-python-script-action@v1
@@ -27,25 +26,25 @@ jobs:
             import pandas as pd
 
             cryptos = pd.read_csv('Database/cryptos.csv')
-            cryptos.to_parquet('compression/cryptos.brotli', compression='brotli')
+            cryptos.to_parquet('compression/cryptos.gzip', index=False, compression='gzip')
 
             currencies = pd.read_csv('Database/currencies.csv')
-            currencies.to_parquet('compression/currencies.brotli', compression='brotli')
+            currencies.to_csv('compression/currencies.gzip', index=False, compression='gzip')
 
             equities = pd.read_csv('Database/equities.csv')
-            equities.to_parquet('compression/equities.brotli', compression='brotli')
+            equities.to_csv('compression/equities.gzip', index=False, compression='gzip')
 
             etfs = pd.read_csv('Database/etfs.csv')
-            etfs.to_parquet('compression/etfs.brotli', compression='brotli')
+            etfs.to_csv('compression/etfs.gzip', index=False, compression='gzip')
 
             funds = pd.read_csv('Database/funds.csv')
-            funds.to_parquet('compression/funds.brotli', compression='brotli')
+            funds.to_csv('compression/funds.gzip', index=False, compression='gzip')
 
             indices = pd.read_csv('Database/indices.csv')
-            indices.to_parquet('compression/indices.brotli', compression='brotli')
+            indices.to_csv('compression/indices.gzip', index=False, compression='gzip')
 
             moneymarkets = pd.read_csv('Database/moneymarkets.csv')
-            moneymarkets.to_parquet('compression/moneymarkets.brotli', compression='brotli')
+            moneymarkets.to_csv('compression/moneymarkets.gzip', index=False, compression='gzip')
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'
