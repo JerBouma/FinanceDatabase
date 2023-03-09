@@ -432,7 +432,7 @@ consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues)
 - **How can I contribute?**
     - Please see the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md). Thank you!
 - **Is there support for my country?**
-    - Yes, most likely there is as the database includes 111 countries. Please use `fd.obtain_options('equities')['country']`
+    - Yes, most likely there is as the database includes 112 countries. Please use `fd.obtain_options('equities')['country']`
 - **How can I find out which countries, sectors and/or industries exists within the database without needing to check 
   the database manually?**
     - For this you can use the ``obtain_options`` function from the package attached to this database. Furthermore, it is also possible to use `equities = fd.Equities()` and then use `equities.options(selection='country')` or specific further with `equities.options(selection='sector', country='United States')`. Please see 
