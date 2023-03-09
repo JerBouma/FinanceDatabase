@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: checkout repo content
         uses: actions/checkout@v3
+      - name: pull changes
+        run: git pull https://${{secrets.PAT}}@github.com/JerBouma/FinanceDatabase.git main
       - name: setup python
         uses: actions/setup-python@v4
         with:
