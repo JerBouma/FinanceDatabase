@@ -32,7 +32,7 @@ jobs:
                 if column in ['name', 'summary']:
                     continue
                     
-                cryptos_categories[column] = cryptos.data[column].dropna().unique()
+                cryptos_categories[column] = cryptos[column].dropna().unique()
                 cryptos_categories[column].sort()
                 
             df_temp = pd.DataFrame.from_dict(cryptos_categories, orient='index').reset_index()
@@ -44,7 +44,7 @@ jobs:
                 if column in ['name']:
                     continue
 
-                currencies_categories[column] = currencies.data[column].dropna().unique()
+                currencies_categories[column] = currencies[column].dropna().unique()
                 currencies_categories[column].sort()
 
             df_temp = pd.DataFrame.from_dict(currencies_categories, orient='index').reset_index()
@@ -56,7 +56,7 @@ jobs:
                 if column in ['name', 'summary', 'website']:
                     continue
                     
-                equities_categories[column] = equities.data[column].dropna().unique()
+                equities_categories[column] = equities[column].dropna().unique()
                 equities_categories[column].sort()
                 
             df_temp = pd.DataFrame.from_dict(equities_categories, orient='index').reset_index()
@@ -68,7 +68,7 @@ jobs:
                 if column in ['name', 'summary']:
                     continue
                     
-                etfs_categories[column] = etfs.data[column].dropna().unique()
+                etfs_categories[column] = etfs[column].dropna().unique()
                 etfs_categories[column].sort()
 
             df_temp = pd.DataFrame.from_dict(etfs_categories, orient='index').reset_index()
@@ -80,7 +80,7 @@ jobs:
                 if column in ['name', 'summary', 'manager_name', 'manager_bio']:
                     continue
                     
-                funds_categories[column] = funds.data[column].dropna().unique()
+                funds_categories[column] = funds[column].dropna().unique()
                 funds_categories[column].sort()
                 
             df_temp = pd.DataFrame.from_dict(funds_categories, orient='index').reset_index()
@@ -92,7 +92,7 @@ jobs:
                 if column in ['name']:
                     continue
                     
-                indices_categories[column] = indices.data[column].dropna().unique()
+                indices_categories[column] = indices[column].dropna().unique()
                 indices_categories[column].sort()
                 
             df_temp = pd.DataFrame.from_dict(indices_categories, orient='index').reset_index()
@@ -104,7 +104,7 @@ jobs:
                 if column in ['name']:
                     continue
                     
-                moneymarkets_categories[column] = moneymarkets.data[column].dropna().unique()
+                moneymarkets_categories[column] = moneymarkets[column].dropna().unique()
                 moneymarkets_categories[column].sort()
                 
             df_temp = pd.DataFrame.from_dict(moneymarkets_categories, orient='index').reset_index()
