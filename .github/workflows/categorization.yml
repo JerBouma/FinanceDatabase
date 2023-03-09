@@ -26,9 +26,9 @@ jobs:
             import financedatabase as fd
             import pandas as pd
 
-            cryptos = fd.Cryptos()
+            cryptos = pd.read_csv("database/cryptos.csv", index_col=0)
             cryptos_categories = {}
-            for column in cryptos.data:
+            for column in cryptos:
                 if column in ['name', 'summary']:
                     continue
                     
@@ -38,9 +38,9 @@ jobs:
             df_temp = pd.DataFrame.from_dict(cryptos_categories, orient='index').reset_index()
             df_temp.to_csv('compression/categories/cryptos_categories.gzip', index=False, compression='gzip')
                 
-            currencies = fd.Currencies()
+            currencies = pd.read_csv("database/currencies.csv", index_col=0)
             currencies_categories = {}
-            for column in currencies.data:
+            for column in currencies:
                 if column in ['name']:
                     continue
 
@@ -50,9 +50,9 @@ jobs:
             df_temp = pd.DataFrame.from_dict(currencies_categories, orient='index').reset_index()
             df_temp.to_csv('compression/categories/currencies_categories.gzip', index=False, compression='gzip')
                 
-            equities = fd.Equities()
+            equities =  pd.read_csv("database/equities.csv", index_col=0)
             equities_categories = {}
-            for column in equities.data:
+            for column in equities:
                 if column in ['name', 'summary', 'website']:
                     continue
                     
@@ -62,9 +62,9 @@ jobs:
             df_temp = pd.DataFrame.from_dict(equities_categories, orient='index').reset_index()
             df_temp.to_csv('compression/categories/equities_categories.gzip', index=False, compression='gzip')
                 
-            etfs = fd.ETFs()
+            etfs = pd.read_csv("database/etfs.csv", index_col=0)
             etfs_categories = {}
-            for column in etfs.data:
+            for column in etfs:
                 if column in ['name', 'summary']:
                     continue
                     
@@ -74,9 +74,9 @@ jobs:
             df_temp = pd.DataFrame.from_dict(etfs_categories, orient='index').reset_index()
             df_temp.to_csv('compression/categories/etfs_categories.gzip', index=False, compression='gzip')
                 
-            funds = fd.Funds()
+            funds = pd.read_csv("database/funds.csv", index_col=0)
             funds_categories = {}
-            for column in funds.data:
+            for column in funds:
                 if column in ['name', 'summary', 'manager_name', 'manager_bio']:
                     continue
                     
@@ -86,9 +86,9 @@ jobs:
             df_temp = pd.DataFrame.from_dict(funds_categories, orient='index').reset_index()
             df_temp.to_csv('compression/categories/funds_categories.gzip', index=False, compression='gzip')
                 
-            indices = fd.Indices()
+            indices = pd.read_csv("database/indices.csv", index_col=0)
             indices_categories = {}
-            for column in indices.data:
+            for column in indices:
                 if column in ['name']:
                     continue
                     
@@ -98,9 +98,9 @@ jobs:
             df_temp = pd.DataFrame.from_dict(indices_categories, orient='index').reset_index()
             df_temp.to_csv('compression/categories/indices_categories.gzip', index=False, compression='gzip')
                 
-            moneymarkets = fd.Moneymarkets()
+            moneymarkets = pd.read_csv("database/moneymarkets.csv", index_col=0)
             moneymarkets_categories = {}
-            for column in moneymarkets.data:
+            for column in moneymarkets:
                 if column in ['name']:
                     continue
                     
