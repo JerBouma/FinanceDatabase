@@ -77,7 +77,8 @@ ___
     2. [Technical Analysis of Biotech ETFs](#technical-analysis-of-biotech-etfs)
     3. [Silicon Valley's Market Cap](#silicon-valleys-market-cap)
 4. [Questions & Answers](#questions--answers)
-5. [Contact](#contact)
+5. [User Contributions](#user-contributions)
+6. [Contact](#contact)
 
 # Installation
 The package `financedatabase` allows you to select specific json files as well as search through collected data with a specific query.
@@ -443,6 +444,15 @@ consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues)
       Google to see if there is really no data available. If you can't find anything about the ticker, consider updating the database by visiting the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
 - **How does the database handle changes to companies over time - like symbol/exchange migration, mergers, bankruptcies, or symbols getting reused?**
     - These type of service is what you usually pay a hefty fee for, think of Bloomberg at over $25.000 a year. Instead of requiring your to pay, this is meant to be a community-driven project in which you help in identifiyng these companies. As news about migrations, mergers, bankruptcies and similar occur it is up to the community to identify these and/or users to look into writing scripts that help with this. It is important to note that the vast majority of companies do not change as rapidly that this database becomes irrelevant before it is identified, e.g. a company like Facebook changing to META has already been updated. Furthermore, even though a company goes bankrupt, the old ticker is still relevant when it comes to historic data before the bankruptcy.
+    
+# User Contributions
+
+This section is meant to thank those that contributed to the project. Looking to contribute as well? Have a look [here](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
+
+| User              | Contribution |
+| ----------------- | ------------ | 
+| [nindogo](https://github.com/nindogo)        | Introduced a variety of new equities from the Nairobi Securities Exchange and introduced the country Kenya into the dataset. |
+| [colin99d](https://github.com/colin99d)        | Helped in the conversion of the Finance Database package to Object-Orientated, making the code much more efficient. |
 
 # Contact
 If you have any questions about the FinanceDatabase or would like to share with me what you have been working on, feel free to reach out to me via:
