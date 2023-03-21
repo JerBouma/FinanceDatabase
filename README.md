@@ -81,7 +81,7 @@ ___
 6. [Contact](#contact)
 
 # Installation
-The package `financedatabase` allows you to select specific json files as well as search through collected data with a specific query.
+The package `financedatabase` allows you to select specific CSV files as well as search through collected data with a specific query.
 
 You can install the package with the following steps:
 1. `pip install financedatabase`
