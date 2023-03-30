@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pandas as pd
 
-file_path = Path(__file__).parent.parent / "database"
+file_path = Path(__file__).parent.parent / "compression"
 DATA_REPO = (
     "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/compression/"
 )
