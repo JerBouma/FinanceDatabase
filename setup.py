@@ -7,7 +7,7 @@ setuptools.setup(
     name="financedatabase",
     packages=["financedatabase"],
     install_requires=["pandas"],
-    version="2.0.9",
+    version="2.1.0",
     license="MIT",
     description="This is a database of 300.000+ symbols containing Equities, ETFs, Funds, Indices, "
     "Currencies, Cryptocurrencies and Money Markets.",
