@@ -41,27 +41,21 @@ Some key statistics of the database:
 
 | Product           | Quantity   | Sectors    | Industries    | Countries | Exchanges |
 | ----------------- | ---------- | ---------- | ------------- | --------- | --------- |
-| Equities          | 155.705    | 16         | 242           | 111       | 82        |
-| ETFs              | 36.727     | 364*       | 94*           | 100**     | 52        |
-| Funds             | 57.816     | 1678*      | 438*          | 100**     | 34        |
+| Equities          | 155.716    | 12         | 63            | 111       | 83        | 
+| ETFs              | 36.786     | 295        | 22            | 111       | 53        |
+| Funds             | 57.881     | 1541       | 52            | 111       | 34        |
 
 | Product           | Quantity  | Category              |
 | ----------------- | --------- | --------------------- |
-| Currencies        | 2.590     | 174 Currencies        |
-| Cryptocurrencies  | 3.624     | 299 Cryptocurrencies  |
-| Indices           | 86.353    | 49 Exchanges          |
-| Money Markets     | 1.384     | 2 Exchanges           |
+| Currencies        | 2.556     | 175 Currencies        |
+| Cryptocurrencies  | 3.367     | 352 Cryptocurrencies  |
+| Indices           | 91.183    | 64 Exchanges          |
+| Money Markets     | 1.367     | 3 Exchanges           |
 
-\* These numbers refer to families (iShares, Vanguard) and categories (World Stock, Real Estate) respectively.  
-\** This is an estimation. Obtaining the country distribution can only be done by collecting data on the underlying 
-or by manual search.
-___
+The Finance Database is used within:
 
-This database is also used within **OpenBB**, an open source investment company that is democratizing access to investment research. This allows users to effectively query the FinanceDatabase to obtain information and symbols from a variety of asset classes that they'd like to use further inside the OpenBB Terminal and OpenBB SDK. Find more information about OpenBB within the GitHub repository [here](https://github.com/OpenBB-finance/OpenBBTerminal).
+<a href="https://openbb.co/"><img src="https://user-images.githubusercontent.com/46355364/229621010-bba16cc4-de85-4921-9d75-b30393aaf74b.png" width="300px" height="100px"></a><a href="https://app.noteable.io/f/242bc47d-9c85-4a30-b6e5-d7d201f6e2d6/Finance+Database.ipynb"><img src="https://user-images.githubusercontent.com/46355364/229618778-2c5f1369-77d5-4fa9-abd1-e79d324a861a.png" width="300px" height="100px"></a>
 
-Please note that I am affiliated with this company but receive no benefits from sharing this information, I simply genuinely believe it is a great piece of (free) software that synergizes well with the FinanceDatabase.
-
-<a href="https://github.com/OpenBB-finance/OpenBBTerminal"><img width="1200" alt="image" src="https://user-images.githubusercontent.com/46355364/221357979-4ff2f7f5-8da1-4f7c-8b6c-7c858a466ba1.png" alt="OpenBB"></a>
 ___
 
 # Table of Contents
