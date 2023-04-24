@@ -30,7 +30,7 @@ Then, follow these steps to update the CSV files accordingly.
 It is also possible to load in the files directly into e.g. a Jupyter Notebook and make the edits how you like by using packages like pandas to search. It could be that certain naming is off that you want to correct automatically for all tickers that match the criteria or perhaps you want to fill sectors and industries automatically. Depending whether you have the database remote or locally, you can use:
 
 - If remote: `pd.read_csv("https://github.com/JerBouma/FinanceDatabase/blob/main/database/equities.csv?raw=true", index_col=0)`
-- If locally: `pd.read_csv("Database/equities.csv", index_col=0)`
+- If locally: `pd.read_csv("database/equities.csv", index_col=0)`
  
 Change the asset class name (`equities.csv`) to any of the file names as found [here](https://github.com/JerBouma/FinanceDatabase/tree/main/database). Then, once you have made your changes you can use `df.to_csv('equities.csv')` to export back to the CSV format. From here on, follow the above steps again or create a Pull Request as described [here](#advanced-developers).
 
