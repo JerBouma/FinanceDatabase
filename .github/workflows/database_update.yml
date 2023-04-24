@@ -1,6 +1,8 @@
 name: Database Update
 
 on:
+  schedule:
+    - cron: "0 12 * * 7"
   push:
     branches:
       - 'main'
