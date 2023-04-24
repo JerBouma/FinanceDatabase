@@ -1,11 +1,9 @@
 name: Database Update
 
 on:
+  push:
   schedule:
     - cron: "0 12 * * 7"
-  push:
-    branches:
-      - 'main'
 
 jobs:
   Add-New-Ticker:
