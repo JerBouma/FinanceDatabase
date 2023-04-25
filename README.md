@@ -41,7 +41,7 @@ Some key statistics of the database:
 
 | Product           | Quantity   | Sectors    | Industries    | Countries | Exchanges |
 | ----------------- | ---------- | ---------- | ------------- | --------- | --------- |
-| Equities          | 155.716    | 12         | 63            | 111       | 83        | 
+| Equities          | 158.184    | 12         | 63            | 111       | 83        | 
 | ETFs              | 36.786     | 295        | 22            | 111       | 53        |
 | Funds             | 57.881     | 1541       | 52            | 111       | 34        |
 
