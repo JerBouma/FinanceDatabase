@@ -2,11 +2,8 @@
 <a href="https://www.buymeacoffee.com/jerbouma">
     <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-brightgreen?logo=buymeacoffee" alt="Logo">
 </a>
-<a href="https://github.com/JerBouma/FinanceDatabase/issues">
-    <img src="https://img.shields.io/github/issues/jerbouma/financedatabase" alt="Logo">
-</a>
-    <a href="https://github.com/JerBouma/FinanceDatabase/pulls">
-    <img src="https://img.shields.io/github/issues-pr/JerBouma/FinanceDatabase?color=yellow" alt="Logo">
+<a href="https://jeroenbouma.com/">
+    <img src="https://img.shields.io/badge/Website-Learn%20more%20about%20me%20here!-brightgreen?logo=ReadMe" alt="Logo">
 </a>
 <a href="https://pypi.org/project/financedatabase/">
     <img src="https://img.shields.io/pypi/v/FinanceDatabase" alt="Logo">
@@ -14,9 +11,7 @@
 <a href="https://pypi.org/project/financedatabase/">
     <img src="https://img.shields.io/pypi/dm/FinanceDatabase" alt="Logo">
 </a>
-<a href="https://jeroenbouma.com/">
-    <img src="https://img.shields.io/badge/Website-Learn%20more%20about%20me%20here!-brightgreen?logo=ReadMe" alt="Logo">
-</a>
+
 
 | **Call for Contributors to the FinanceDatabase**    |
 |:------------------------------------------------------:|
