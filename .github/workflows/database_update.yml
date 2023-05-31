@@ -57,7 +57,7 @@ jobs:
             equities = pd.read_csv('database/equities.csv', index_col=0)
             ticker_dict = {}
 
-            # Loop over the exchange dataset and create a new object that will be added to the databae
+            # Loop over the exchange dataset and create a new object that will be added to the database
             for index, row in exchange_data.iterrows():
                 if row['marketCap']:
                     market_cap_value = float(row['marketCap'])

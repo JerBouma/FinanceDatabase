@@ -18,5 +18,5 @@ skip_gitignore = true
 combine_as_imports = true
 
 [tool.codespell]
-ignore-words-list = 'ZAR,zar,profund,BASF,basf,applicatio,Ser,Mone,VIE'
+ignore-words-list = 'ZAR,zar,profund,BASF,basf,applicatio,Ser,Mone,VIE,noteable'
 skip = '*.json,./.git,*.csv,pyproject.toml,*.ipynb'
