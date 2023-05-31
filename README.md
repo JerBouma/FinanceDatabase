@@ -3,7 +3,7 @@
     <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-brightgreen?logo=buymeacoffee" alt="Logo">
 </a>
 <a href="https://jeroenbouma.com/">
-    <img src="https://img.shields.io/badge/Website-Learn%20more%20about%20me%20here!-brightgreen?logo=ReadMe" alt="Logo">
+    <img src="https://img.shields.io/badge/Website-Learn%20more%20about%20me%20here-brightgreen?logo=ReadMe" alt="Logo">
 </a>
 <a href="https://pypi.org/project/financedatabase/">
     <img src="https://img.shields.io/pypi/v/FinanceDatabase" alt="Logo">
