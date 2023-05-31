@@ -14,6 +14,9 @@
 <a href="https://pypi.org/project/financedatabase/">
     <img src="https://img.shields.io/pypi/dm/FinanceDatabase" alt="Logo">
 </a>
+<a href="https://jeroenbouma.com/">
+    <img src="https://img.shields.io/badge/Website-Learn%20more%20about%20me%20here!-brightgreen?logo=ReadMe" alt="Logo">
+</a>
 
 | **Call for Contributors to the FinanceDatabase**    |
 |:------------------------------------------------------:|
