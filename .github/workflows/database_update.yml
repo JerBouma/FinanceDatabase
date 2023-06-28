@@ -23,139 +23,138 @@ jobs:
         uses: jannekem/run-python-script-action@v1
         with:
           script: |
-              import numpy as np
-              import pandas as pd
+            import numpy as np
+            import pandas as pd
 
-              # Collect NASDAQ data
-              nasdaq = pd.read_json("https://raw.githubusercontent.com/rreichel3/US-Stock-Symbols/main/nasdaq/nasdaq_full_tickers.json")
-              nasdaq = nasdaq.set_index('symbol')
-              nasdaq['exchange'] = 'NMS'
-              nasdaq['market'] = 'NASDAQ Global Select'
+            # Collect NASDAQ data
+            nasdaq = pd.read_json("https://raw.githubusercontent.com/rreichel3/US-Stock-Symbols/main/nasdaq/nasdaq_full_tickers.json")
+            nasdaq = nasdaq.set_index('symbol')
+            nasdaq['exchange'] = 'NMS'
+            nasdaq['market'] = 'NASDAQ Global Select'
 
-              # Collect NYSE data
-              nyse = pd.read_json("https://raw.githubusercontent.com/rreichel3/US-Stock-Symbols/main/nyse/nyse_full_tickers.json")
-              nyse = nyse.set_index('symbol')
-              nyse['exchange'] = 'ASE'
-              nyse['market'] = 'NYSE MKT'
+            # Collect NYSE data
+            nyse = pd.read_json("https://raw.githubusercontent.com/rreichel3/US-Stock-Symbols/main/nyse/nyse_full_tickers.json")
+            nyse = nyse.set_index('symbol')
+            nyse['exchange'] = 'ASE'
+            nyse['market'] = 'NYSE MKT'
 
-              # Collect AMEX data, since it got acquired this is now the same exchange/market as NYSE
-              amex = pd.read_json("https://raw.githubusercontent.com/rreichel3/US-Stock-Symbols/main/amex/amex_full_tickers.json")
-              amex = amex.set_index('symbol')
-              amex['exchange'] = 'ASE'
-              amex['market'] = 'NYSE MKT'
+            # Collect AMEX data, since it got acquired this is now the same exchange/market as NYSE
+            amex = pd.read_json("https://raw.githubusercontent.com/rreichel3/US-Stock-Symbols/main/amex/amex_full_tickers.json")
+            amex = amex.set_index('symbol')
+            amex['exchange'] = 'ASE'
+            amex['market'] = 'NYSE MKT'
 
-              # Combine the datasets
-              exchange_data = pd.concat([nasdaq, nyse, amex])
+            # Combine the datasets
+            exchange_data = pd.concat([nasdaq, nyse, amex])
 
-              # Obtain the categories from the FinanceDatabase for conversion
-              fd_categories_path = 'compression/categories/github_exchange_categories.xlsx'
-              fd_sectors = pd.read_excel(fd_categories_path, sheet_name='sector', index_col=1)
-              fd_industry_groups = pd.read_excel(fd_categories_path, sheet_name='industry_group', index_col=1)
-              fd_industries = pd.read_excel(fd_categories_path, sheet_name='industry', index_col=1)
+            # Obtain the categories from the FinanceDatabase for conversion
+            fd_categories_path = 'compression/categories/github_exchange_categories.xlsx'
+            fd_sectors = pd.read_excel(fd_categories_path, sheet_name='sector', index_col=1)
+            fd_industry_groups = pd.read_excel(fd_categories_path, sheet_name='industry_group', index_col=1)
+            fd_industries = pd.read_excel(fd_categories_path, sheet_name='industry', index_col=1)
 
-              # Read the equities database
-              equities = pd.read_csv('database/equities.csv', index_col=0)
-              ticker_dict = {}
+            # Read the equities database
+            equities = pd.read_csv('database/equities.csv', index_col=0)
+            ticker_dict = {}
 
-              # Loop over the exchange dataset and create a new object that will be added to the database
-              for index, row in exchange_data.iterrows():
-                  if row['marketCap']:
-                      market_cap_value = float(row['marketCap'])
-                  
-                      if market_cap_value >= 200_000_000_000:
-                          market_cap = 'Mega Cap'
-                      elif market_cap_value >= 10_000_000_000 and market_cap_value < 200_000_000_000:
-                          market_cap= 'Large Cap'
-                      elif market_cap_value >= 2_000_000_000 and market_cap_value < 10_000_000_000:
-                          market_cap = 'Mid Cap'
-                      elif market_cap_value >= 300_000_000 and market_cap_value < 2_000_000_000:
-                          market_cap = 'Small Cap'
-                      elif market_cap_value >= 50_000_000 and market_cap_value < 300_000_000:
-                          market_cap = 'Micro Cap' 
-                      else:
-                          market_cap = 'Nano Cap'
-                  else:
-                      market_cap = np.nan
-                      
-                  try:
-                      # Checks if ticker exists, if yes, continue
-                      fd_data = equities.loc[index]
-                      
-                      if fd_data['market_cap'] != market_cap and market_cap == market_cap:
-                          ticker_dict[index] = {'symbol': index}
-                          for column, value in fd_data.items():
-                              if column == 'market_cap':
-                                  ticker_dict[index][column] = market_cap
-                              else:
-                                  ticker_dict[index][column] = value
-                      continue
-                  except KeyError:
-                      ticker_dict[index] = {}
+            # Loop over the exchange dataset and create a new object that will be added to the database
+            for index, row in exchange_data.iterrows():
+                if row['marketCap']:
+                    market_cap_value = float(row['marketCap'])
+                
+                    if market_cap_value >= 200_000_000_000:
+                        market_cap = 'Mega Cap'
+                    elif market_cap_value >= 10_000_000_000 and market_cap_value < 200_000_000_000:
+                        market_cap= 'Large Cap'
+                    elif market_cap_value >= 2_000_000_000 and market_cap_value < 10_000_000_000:
+                        market_cap = 'Mid Cap'
+                    elif market_cap_value >= 300_000_000 and market_cap_value < 2_000_000_000:
+                        market_cap = 'Small Cap'
+                    elif market_cap_value >= 50_000_000 and market_cap_value < 300_000_000:
+                        market_cap = 'Micro Cap' 
+                    else:
+                        market_cap = 'Nano Cap'
+                else:
+                    market_cap = np.nan
+                    
+                try:
+                    # Checks if ticker exists, if yes, continue
+                    fd_data = equities.loc[index]
+                    
+                    if fd_data['market_cap'] != market_cap and market_cap == market_cap:
+                        ticker_dict[index] = {'symbol': index}
+                        for column, value in fd_data.items():
+                            if column == 'market_cap':
+                                ticker_dict[index][column] = market_cap
+                            else:
+                                ticker_dict[index][column] = value
+                    continue
+                except KeyError:
+                    ticker_dict[index] = {}
 
-                      ticker_dict[index]['name'] = row['name']
-                      ticker_dict[index]['summary'] = np.nan
-                      ticker_dict[index]['currency'] = "USD"
+                    ticker_dict[index]['name'] = row['name']
+                    ticker_dict[index]['summary'] = np.nan
+                    ticker_dict[index]['currency'] = "USD"
 
-                      try:
-                          industry = fd_industries.loc[row['industry']].iloc[0]
-                          
-                          if isinstance(industry, pd.Series):
-                              industry = industry[0]
-                          
-                          ticker_dict[index]['industry'] = industry
-                      except KeyError:
-                          ticker_dict[index]['industry'] = np.nan
-                          
-                      try:
-                          industry_group = fd_industry_groups.loc[row['industry']].iloc[0]
-                          
-                          if isinstance(industry_group, pd.Series):
-                              industry_group = industry_group[0]
-                              
-                          ticker_dict[index]['industry_group'] = industry_group
-                      except KeyError:
-                          ticker_dict[index]['industry_group'] = np.nan
-                      
-                      try:
-                          sector_division = equities[(equities['industry_group'] == industry_group) & (equities['industry'] == industry)]
+                    try:
+                        industry = fd_industries.loc[row['industry']].iloc[0]
+                        
+                        if isinstance(industry, pd.Series):
+                            industry = industry[0]
+                        
+                        ticker_dict[index]['industry'] = industry
+                    except KeyError:
+                        ticker_dict[index]['industry'] = np.nan
+                        
+                    try:
+                        industry_divison = equities[equities['industry'] == industry]
+                        industry_group = industry_divison['industry_group'].mode()[0]
+                            
+                        ticker_dict[index]['industry_group'] = industry_group
+                    except KeyError:
+                        ticker_dict[index]['industry_group'] = np.nan
+                    
+                    try:
+                        sector_division = equities[(equities['industry_group'] == industry_group) & (equities['industry'] == industry)]
+                        sector = sector_division['sector'].mode()[0]
 
-                          ticker_dict[index]['sector'] = sector_division['sector'].mode()[0]
-                      except Exception:
-                          ticker_dict[index]['sector'] = np.nan
-                      
-                      ticker_dict[index]['exchange'] = row['exchange']
-                      ticker_dict[index]['market'] = row['market']  
-                      ticker_dict[index]['country'] = row['country']
-                      ticker_dict[index]['state'] = np.nan
-                      ticker_dict[index]['city'] = np.nan
-                      ticker_dict[index]['zipcode'] = np.nan
-                      ticker_dict[index]['website'] = np.nan
-                      ticker_dict[index]['market_cap'] = market_cap
-                      ticker_dict[index]['isin'] = np.nan
-                      ticker_dict[index]['cusip'] = np.nan
-                      ticker_dict[index]['figi'] = np.nan
-                      ticker_dict[index]['composite_figi'] = np.nan
-                      ticker_dict[index]['shareclass_figi'] = np.nan
+                        ticker_dict[index]['sector'] = sector
+                    except Exception:
+                        ticker_dict[index]['sector'] = np.nan
+                    
+                    ticker_dict[index]['exchange'] = row['exchange']
+                    ticker_dict[index]['market'] = row['market']  
+                    ticker_dict[index]['country'] = row['country']
+                    ticker_dict[index]['state'] = np.nan
+                    ticker_dict[index]['city'] = np.nan
+                    ticker_dict[index]['zipcode'] = np.nan
+                    ticker_dict[index]['website'] = np.nan
+                    ticker_dict[index]['market_cap'] = market_cap
+                    ticker_dict[index]['isin'] = np.nan
+                    ticker_dict[index]['cusip'] = np.nan
+                    ticker_dict[index]['figi'] = np.nan
+                    ticker_dict[index]['composite_figi'] = np.nan
+                    ticker_dict[index]['shareclass_figi'] = np.nan
 
-              # Create a DataFrame out of the created dictionty
-              updated_companies = pd.DataFrame.from_dict(ticker_dict, orient='index')
-              updated_companies.index.name = 'symbol'
+            # Create a DataFrame out of the created dictionty
+            updated_companies = pd.DataFrame.from_dict(ticker_dict, orient='index')
+            updated_companies.index.name = 'symbol'
 
-              print(f"There are {len(updated_companies)} new updates!")
+            print(f"There are {len(updated_companies)} new updates!")
 
-              if not updated_companies.empty:
-                  # Loop over all acquired values and update data
-                  for index, values in updated_companies.iterrows():
-                      try:
-                          equities.loc[index] = updated_companies.loc[index]
-                      except KeyError:
-                          equities = pd.concat([equities, values])
+            if not updated_companies.empty:
+                # Loop over all acquired values and update data
+                for index, values in updated_companies.iterrows():
+                    try:
+                        equities.loc[index] = updated_companies.loc[index]
+                    except KeyError:
+                        equities = pd.concat([equities, values])
 
-                  # Sort the index        
-                  equities = equities.sort_index()
-                  
-                  # Send to CSV
-                  equities.to_csv('database/equities.csv')
+                # Sort the index        
+                equities = equities.sort_index()
+                
+                # Send to CSV
+                equities.to_csv('database/equities.csv')
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'
