@@ -380,16 +380,15 @@ Then, as a demonstration, I can obtain all balance sheet statements for all comp
 ````python
 companies.get_balance_sheet_statement()
 ````
+![FinanceDatabase - FinanceToolkit - Balance Sheet Statements](https://github.com/JerBouma/FinanceDatabase/assets/46355364/c93a80cf-cdee-484f-839f-0a9455b6fbf8)
 
-IMAGE
+With the data from the FinanceToolkit, it is now possible to execute a Dupont analysis on all companies. This shows the power of being able to combine a large database with a toolkit that allows you to do proper financial research.
 
 ````python
 companies.models.get_extended_dupont_analysis()
 ````
 
-With this information in hand, it is now possible to execute a Dupont analysis on all companies. This shows the power of being able to combine a large database with a toolkit that allows you to do proper financial research.
-
-IMAGE
+![FinanceDatabase - FinanceToolkit - Dupont Analysis](https://github.com/JerBouma/FinanceDatabase/assets/46355364/8478c6ee-a2fe-429d-b66e-5fedbfa9aeef)
 
 # Questions & Answers
 In this section you can find answers to commonly asked questions. In case the answer to your question is not here, 
