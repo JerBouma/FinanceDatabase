@@ -358,7 +358,10 @@ import financedatabase as fd
 
 equities = fd.Equities()
 
-railroad = equities.search(industry='Road & Rail', country='United States', market_cap='Large Cap', exclude_exchanges=True)
+railroad = equities.search(industry='Road & Rail',
+                           country='United States',
+                           market_cap='Large Cap',
+                           exclude_exchanges=True)
 ````
 
 Wiuth this information in hand, I can now start collecting data with the [FinanceToolkit](https://github.com/JerBouma/FinanceToolkit) package. This can be anything from balance sheet, cash flow and income statements to 50+ financial ratios, enterprise values and historical data. Here I initalize the FinanceToolkit with the tickers as found in the FinanceDatabase.
@@ -398,9 +401,8 @@ consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues)
     - The categorization for Equities is based on a loose approximation of GICS. No actual data is collected from this source and this database merely tries to reflect the sectors and industries as best as possible. This is completely done through manual curation. The actual datasets as curated by MSCI has not been used in the development of any part of this database and remains the most up to date, paid, solution. Other categorizations are entirely developed by the author and can freely be changed.
 - **How can I contribute?**
     - Please see the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md). Thank you!
-- **How can I find out which countries, sectors and/or industries exists within the database without needing to check 
-  the database manually?**
-    - For this you can use the ``obtain_options`` function from the package attached to this database. Furthermore, it is also possible to use `equities = fd.Equities()` and then use `equities.options(selection='country')` or specific further with `equities.options(selection='sector', country='United States')`. Please see 
+- **How can I find out which countries, sectors and/or industries exists within the database without needing to check the database manually?**
+    - For this you can use the ``options`` function from the package attached to this database. Furthermore, it is also possible to use `equities = fd.Equities()` and then use `equities.options(selection='country')` or specific further with `equities.options(selection='sector', country='United States')`. Please see 
     [this example](#companies-in-the-netherlands)
 - **When I try collect data I notice that not all tickers return output, why is that?**
     - Some tickers are merely holdings of companies and therefore do not really have any data attached to them. 
