@@ -12,34 +12,22 @@
     <img src="https://img.shields.io/pypi/dm/FinanceDatabase" alt="Logo">
 </a>
 
-
 | **Call for Contributors to the FinanceDatabase**    |
 |:------------------------------------------------------:|
 | The **FinanceDatabase** serves the role of providing anyone with any type of financial product categorisation entirely for free. To be able to achieve this, the FinanceDatabase relies on involvement from the community to add, edit and remove tickers over time. This is made easy enough that anyone, even with a lack of coding experience can contribute because of the usage of CSV files that can be manually edited with ease.
 **I'd like to invite you to go to the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md) to understand how you can help. Thank you!** |
 
-As a private investor, the sheer amount of information that can be found on the internet is rather daunting. Trying to 
-understand what type of companies or ETFs are available is incredibly challenging with there being millions of
-companies and derivatives available on the market. Sure, the most traded companies and ETFs can quickly be found
-simply because they are known to the public (for example, Microsoft, Tesla, S&P500 ETF or an All-World ETF). However, 
-what else is out there is often unknown.
+As a private investor, the sheer amount of information that can be found on the internet is rather daunting. Trying to understand what type of companies or ETFs are available is incredibly challenging with there being millions of companies and derivatives available on the market. Sure, the most traded companies and ETFs can quickly be found simply because they are known to the public (for example, Microsoft, Tesla, S&P500 ETF or an All-World ETF). However, what else is out there is often unknown.
 
-**This database tries to solve that**. It features 300.000+ symbols containing Equities, ETFs, Funds, Indices, 
-Currencies, Cryptocurrencies and Money Markets. It therefore allows you to obtain a broad overview of sectors,
-industries, types of investments and much more.
+**This database tries to solve that**. It features 300.000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets. It therefore allows you to obtain a broad overview of sectors, industries, types of investments and much more.
 
-The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data as those can be obtained 
-with ease (with the help of this database) by using [yfinance](https://github.com/ranaroussi/yfinance) or [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis). Instead, it gives insights into the products 
-that exist in each country, industry and sector and gives the most essential information about each product. With 
-this information, you can analyse specific areas of the financial world and/or find a product that is hard to find. 
-See for examples on how you can combine this database, and the earlier mentioned packages the section 
-[Examples](#Examples).
+The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data as those can be obtained with ease (with the help of this database) by using the [FinanceToolkit](https://github.com/JerBouma/FinanceToolkit). Instead, it gives insights into the products that exist in each country, industry and sector and gives the most essential information about each product. With this information, you can analyse specific areas of the financial world and/or find a product that is hard to find. See for examples on how you can combine this database, and the earlier mentioned packages the section [Examples](#Examples).
 
 Some key statistics of the database:
 
 | Product           | Quantity   | Sectors    | Industries    | Countries | Exchanges |
 | ----------------- | ---------- | ---------- | ------------- | --------- | --------- |
-| Equities          | 158.184    | 12         | 63            | 111       | 83        | 
+| Equities          | 158.429    | 12         | 63            | 111       | 83        | 
 | ETFs              | 36.786     | 295        | 22            | 111       | 53        |
 | Funds             | 57.881     | 1541       | 52            | 111       | 34        |
 
@@ -67,7 +55,7 @@ ___
 3. [Examples](#examples)
     1. [Companies in the Netherlands](#companies-in-the-netherlands)
     2. [Technical Analysis of Biotech ETFs](#technical-analysis-of-biotech-etfs)
-    3. [Silicon Valley's Market Cap](#silicon-valleys-market-cap)
+    3. [Perform a Dupont Analysis on Railroad Companies](#perform-a-dupont-analysis-on-railroad-companies)
 4. [Questions & Answers](#questions--answers)
 5. [User Contributions](#user-contributions)
 6. [Contact](#contact)
@@ -362,57 +350,43 @@ about Bollinger Bands [here](https://www.investopedia.com/terms/b/bollingerbands
 
 ![FinanceDatabase](https://user-images.githubusercontent.com/46355364/221589951-bce2de36-9458-4a6f-b3ed-2383f01bed0b.png)
 
-## Silicon Valley's Market Cap
-If I want to understand which listed technology companies exist in Silicon Valley, I can collect all equities of the sector 'Technology' and then filter based on city to obtain all listed technology companies in 'Silicon Valley'. The city 'San Jose' is where Silicon Valley is located.
+## Perform a Dupont Analysis on Railroad Companies
+In case I want to look into the Railroad companies in the United States that are marked as "Large Cap", I can use the following:
 
 ````python
 import financedatabase as fd
 
 equities = fd.Equities()
 
-silicon_valley = equities.search(sector='Technology', city='San Jose')
+railroad = equities.search(industry='Road & Rail', country='United States', market_cap='Large Cap', exclude_exchanges=True)
 ````
-Then I start collecting data with the [FundamentalAnalysis](https://github.com/JerBouma/FundamentalAnalysis) package. Here I collect the key metrics which include 57 different metrics (ranging from PE ratios to Market Cap).
+
+Wiuth this information in hand, I can now start collecting data with the [FinanceToolkit](https://github.com/JerBouma/FinanceToolkit) package. This can be anything from balance sheet, cash flow and income statements to 50+ financial ratios, enterprise values and historical data. Here I initalize the FinanceToolkit with the tickers as found in the FinanceDatabase.
 
 ````python
-import fundamentalanalysis as fa
+from financetoolkit import Toolkit
 
-API_KEY = "YOUR_API_KEY_HERE"
+API_KEY = "YOUR_FMP_API_KEY"
 data_set = {}
 
-for ticker in silicon_valley.index:
-    try:
-        data_set[ticker] = fa.key_metrics(ticker, API_KEY, period='annual', limit=10)
-    except Exception:
-        continue
+companies = Toolkit(list(railroad.index), API_KEY)
 ````
 
-Then I make a selection based on the last 5 years and filter by market cap to compare the companies in terms of size with each other. This also causes companies that have not been listed for 5 years to be filtered out of my dataset. Lastly, I plot the data.
+Then, as a demonstration, I can obtain all balance sheet statements for all companies that are marked as Large Cap Railroad companies in the United States.
 
 ````python
-import pandas as pd
-import matplotlib.pyplot as plt
-
-years = ['2018', '2019', '2020', '2021', '2022']
-market_cap = pd.DataFrame(index=years)
-
-for ticker in data_set:
-    try:
-        data_years = []
-        for year in years: 
-            data_years.append(data_set[ticker].loc['marketCap'][year])
-        market_cap[silicon_valley.loc[silicon_valley.index == ticker]['name'].iloc[0]] = data_years
-    except Exception:
-        continue
-
-market_cap_plot = market_cap.plot.bar(stacked=True, rot=0, colormap='Spectral')
-market_cap_plot.legend(prop={'size': 5.25}, loc='upper left')
-plt.show()
+companies.get_balance_sheet_statement()
 ````
 
-This results in the graph displayed below which separates the small companies from the large companies. Note that  this does not include _all_ technology companies in Silicon Valley because most are not listed or are not included in the database of the FundamentalAnalysis package.
+IMAGE
 
-![FinanceDatabase](https://user-images.githubusercontent.com/46355364/221357077-db449ac3-2ae2-4acd-919d-59157fe07da6.png)
+````python
+companies.models.get_extended_dupont_analysis()
+````
+
+With this information in hand, it is now possible to execute a Dupont analysis on all companies. This shows the power of being able to combine a large database with a toolkit that allows you to do proper financial research.
+
+IMAGE
 
 # Questions & Answers
 In this section you can find answers to commonly asked questions. In case the answer to your question is not here, 
@@ -424,8 +398,6 @@ consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues)
     - The categorization for Equities is based on a loose approximation of GICS. No actual data is collected from this source and this database merely tries to reflect the sectors and industries as best as possible. This is completely done through manual curation. The actual datasets as curated by MSCI has not been used in the development of any part of this database and remains the most up to date, paid, solution. Other categorizations are entirely developed by the author and can freely be changed.
 - **How can I contribute?**
     - Please see the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md). Thank you!
-- **Is there support for my country?**
-    - Yes, most likely there is as the database includes 112 countries. Please use `fd.obtain_options('equities')['country']`
 - **How can I find out which countries, sectors and/or industries exists within the database without needing to check 
   the database manually?**
     - For this you can use the ``obtain_options`` function from the package attached to this database. Furthermore, it is also possible to use `equities = fd.Equities()` and then use `equities.options(selection='country')` or specific further with `equities.options(selection='sector', country='United States')`. Please see 
