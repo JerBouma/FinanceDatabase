@@ -390,6 +390,17 @@ companies.models.get_extended_dupont_analysis()
 
 ![FinanceDatabase - FinanceToolkit - Dupont Analysis](https://github.com/JerBouma/FinanceDatabase/assets/46355364/8478c6ee-a2fe-429d-b66e-5fedbfa9aeef)
 
+As you can imagine, it isn't too difficult to then plot a metric like Return on Equity (RoE) for all companies.
+
+````python
+dupont_analysis = companies.models.get_extended_dupont_analysis()
+
+dupont_analysis.loc[: , 'Return on Equity', :].T.plot(
+    title='Return on Equity (RoE) for Railroad Companies in the United States')
+````
+
+![FinanceDatabase - FinanceToolkit - Return on Equity](https://github.com/JerBouma/FinanceDatabase/assets/46355364/f66e0dc7-c9fc-4385-9b74-0f4bb635af48)
+
 # Questions & Answers
 In this section you can find answers to commonly asked questions. In case the answer to your question is not here, 
 consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues).
