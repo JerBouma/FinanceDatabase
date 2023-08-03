@@ -71,7 +71,7 @@ You can install the package with the following steps:
 2. (within Python) `import financedatabase as fd`
 
 #  Basic Usage
-This section explains in detail how the database can be queried with the related `financedatabase` package, also see the Jupyter Notebook in which you can run the examples also demonstrated here. You can find this document [here](https://github.com/JerBouma/FinanceDatabase/blob/main/examples.ipynb).
+This section explains in detail how the database can be queried with the related `financedatabase` package, also see the Jupyter Notebook in which you can run the examples also demonstrated here. You can find this document [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started).
 
 ## Quick Start
 
@@ -112,7 +112,7 @@ Scroll down below for a more elaborate explanation and detailed examples.
 Please see the Jupyter Notebook for an elaborate explanation of each asset class. This includes Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets.
 ___
 
-<b><div align="center">Find code examples of all Asset Classes in the Jupyter Notebook <a href="https://github.com/JerBouma/FinanceDatabase/blob/main/examples.ipynb">here</a>.</div></b>
+<b><div align="center">Find code examples of all Asset Classes in the Jupyter Notebook <a href="https://www.jeroenbouma.com/projects/financedatabase/getting-started">here</a>.</div></b>
 ___
 
 
