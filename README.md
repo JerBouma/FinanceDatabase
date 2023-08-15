@@ -5,7 +5,7 @@
 <a href="https://jeroenbouma.com/">
     <img src="https://img.shields.io/badge/Read_More-website?logo=readme&label=Website" alt="Logo">
 </a>
-<a href="https://discordapp.com/users/547886981468782613">
+<a href="https://discord.gg/WS94QqH9Xb">
     <img src="https://img.shields.io/badge/Chat-hello?logo=discord&label=Discord" alt="Logo">
 </a>
 <a href="https://pypi.org/project/financedatabase/">
