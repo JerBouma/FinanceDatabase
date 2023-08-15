@@ -107,7 +107,7 @@ jobs:
                         ticker_dict[index]['industry'] = np.nan
                         
                     try:
-                        industry_divison = equities[equities['industry'] == industry]
+                        industry_divison = equities[equities['industry'] == ticker_dict[index]['industry']]
                         industry_group = industry_divison['industry_group'].mode()[0]
                             
                         ticker_dict[index]['industry_group'] = industry_group
@@ -115,7 +115,7 @@ jobs:
                         ticker_dict[index]['industry_group'] = np.nan
                     
                     try:
-                        sector_division = equities[(equities['industry_group'] == industry_group) & (equities['industry'] == industry)]
+                        sector_division = equities[(equities['industry_group'] == ticker_dict[index]['industry_group']) & (equities['industry'] == ticker_dict[index]['industry'])]
                         sector = sector_division['sector'].mode()[0]
 
                         ticker_dict[index]['sector'] = sector
@@ -136,7 +136,7 @@ jobs:
                     ticker_dict[index]['composite_figi'] = np.nan
                     ticker_dict[index]['shareclass_figi'] = np.nan
 
-            # Create a DataFrame out of the created dictionty
+            # Create a DataFrame out of the created dictionary
             updated_companies = pd.DataFrame.from_dict(ticker_dict, orient='index')
             updated_companies.index.name = 'symbol'
 
