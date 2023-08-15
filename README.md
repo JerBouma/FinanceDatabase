@@ -310,7 +310,7 @@ stock_data_biotech = yf.download(tickers, start="2020-01-01", end="2020-06-01")[
 stock_data_biotech = stock_data_biotech.dropna(axis='columns')
 ````
 
-Next up I initialise subplots and loop over all collected tickers. Here, I create a new temporary DataFrame that I fill 
+Next up I initialize subplots and loop over all collected tickers. Here, I create a new temporary DataFrame that I fill 
 with the adjusted close prices of the ticker as well as the Bollinger Bands. Then I plot the data in one of 
 the subplots.
 
