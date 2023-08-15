@@ -41,9 +41,12 @@ Some key statistics of the database:
 | Indices           | 91.183    | 64 Exchanges          |
 | Money Markets     | 1.367     | 3 Exchanges           |
 
-The Finance Database is used within:
+The Finance Database is used within or referenced by:
 
 <a href="https://openbb.co/"><img src="https://user-images.githubusercontent.com/46355364/229621010-bba16cc4-de85-4921-9d75-b30393aaf74b.png" width="300px" height="100px"></a><a href="https://app.noteable.io/f/242bc47d-9c85-4a30-b6e5-d7d201f6e2d6/Finance+Database.ipynb"><img src="https://user-images.githubusercontent.com/46355364/229618778-2c5f1369-77d5-4fa9-abd1-e79d324a861a.png" width="300px" height="100px"></a>
+<a href="https://algotrading101.com/learn/financedatabase-python-guide/"><img src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/eb050357-599f-44be-835f-8647a29a8eee" width="300px" height="100px"></a>
+<a href="https://twitter.com/pyquantnews/status/1576185955677077504?lang=en"><img src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/e1d0779c-a0ad-4c4c-8e34-45c01635a9c2" width="300px" height="100px"></a>
+<a href="https://alpha2phi.medium.com/investment-analysis-finance-database-61f47ecfe7ca"><img src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/03397b64-af70-4ef7-831f-499e91cf66bd" width="300px" height="100px"></a>
 
 ___
 
@@ -409,7 +412,7 @@ In this section you can find answers to commonly asked questions. In case the an
 consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues).
 
 - **How is the data obtained?**
-    - The data is an aggregation of a variety of sources. The rule that I hold with high regard is that all data needs to be entirely publicly available. Any data that requires API key access or requires a paid tier is never included in this database. Data that you are being charged for is often owned and mainted by the company you have a subscription at and therefore publicly sharing this information online is against their Terms of Service (ToS). However, data that is publicly available can freely be shared (read more about this subject [here](https://techcrunch.com/2022/04/18/web-scraping-legal-court/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAJRZe3F6wCbuO_n8PJ9JtAHpOY4dF2gA_tO0gJF2PhfWUueUcRQataJwNS9FZlp9rH8f8_aiCBfA2v7wlHyXyVLUfMrca4kq0_m6CYSvK7eMk9zuEhnXJOvE0lrHWXSPTtL-lHP8UJD4SyWTpQ2BnCNx-kv3mG7GGn_G_3SGVvhP)) especially since this database will never cost any money.
+    - The data is an aggregation of a variety of sources. The rule that I hold with high regard is that all data needs to be entirely publicly available. Any data that requires API key access or requires a paid tier is never included in this database. Data that you are being charged for is often owned and maintained by the company you have a subscription at and therefore publicly sharing this information online is against their Terms of Service (ToS). However, data that is publicly available can freely be shared (read more about this subject [here](https://techcrunch.com/2022/04/18/web-scraping-legal-court/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAJRZe3F6wCbuO_n8PJ9JtAHpOY4dF2gA_tO0gJF2PhfWUueUcRQataJwNS9FZlp9rH8f8_aiCBfA2v7wlHyXyVLUfMrca4kq0_m6CYSvK7eMk9zuEhnXJOvE0lrHWXSPTtL-lHP8UJD4SyWTpQ2BnCNx-kv3mG7GGn_G_3SGVvhP)) especially since this database will never cost any money.
 - **What categorization method is used?**
     - The categorization for Equities is based on a loose approximation of GICS. No actual data is collected from this source and this database merely tries to reflect the sectors and industries as best as possible. This is completely done through manual curation. The actual datasets as curated by MSCI has not been used in the development of any part of this database and remains the most up to date, paid, solution. Other categorizations are entirely developed by the author and can freely be changed.
 - **How can I contribute?**
@@ -437,7 +440,8 @@ This section is meant to thank those that contributed to the project. Looking to
 If you have any questions about the FinanceDatabase or would like to share with me what you have been working on, feel free to reach out to me via:
 
 - **LinkedIn:** https://www.linkedin.com/in/boumajeroen/
--  **Email:** jer.bouma@gmail.com
+- **Email:** jer.bouma@gmail.com
+- **Discord:** https://discord.gg/WS94QqH9Xb
 
 f you'd like to support my efforts, either help me out via the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md) or [Buy me a Coffee](https://www.buymeacoffee.com/jerbouma).
 
