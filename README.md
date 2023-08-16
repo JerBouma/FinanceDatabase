@@ -64,11 +64,22 @@ ___
 6. [Contact](#contact)
 
 # Installation
-The package `financedatabase` allows you to select specific CSV files as well as search through collected data with a specific query.
 
-You can install the package with the following steps:
-1. `pip install financedatabase`
-2. (within Python) `import financedatabase as fd`
+Before installation, consider starring the project on GitHub which helps others to find the project as well.
+
+<img width="1353" alt="image" src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/4132edde-72f9-4e32-adfe-8872207f46ff">
+
+To install the FinanceDatabase it simply requires the following:
+
+```
+pip install financedatabase
+```
+
+Then within Python use:
+
+```python
+import financedatabase as fd
+```
 
 #  Basic Usage
 This section explains in detail how the database can be queried with the related `financedatabase` package, also see the Jupyter Notebook in which you can run the examples also demonstrated here. You can find this document [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started).
