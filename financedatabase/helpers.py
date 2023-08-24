@@ -9,6 +9,8 @@ DATA_REPO = (
     "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/compression/"
 )
 
+# pylint: disable=isinstance-second-argument-not-valid-type
+
 
 class FinanceDatabase:
     """
@@ -92,15 +94,12 @@ class FinanceDatabase:
                     ]
             elif key not in data_filter.columns:
                 print(f"{key} is not a valid column.")
+            elif isinstance(value, list):
+                data_filter = data_filter[data_filter[key].isin(value)]
             else:
-                if isinstance(value, list):
-                    data_filter = data_filter[data_filter[key].isin(value)]
-                else:
-                    data_filter = data_filter[
-                        data_filter[key].str.contains(
-                            value, case=case_sensitive, na=False
-                        )
-                    ]
+                data_filter = data_filter[
+                    data_filter[key].str.contains(value, case=case_sensitive, na=False)
+                ]
 
         return data_filter
 
