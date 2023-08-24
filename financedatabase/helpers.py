@@ -84,10 +84,8 @@ class FinanceDatabase:
                     ]
             elif key == "index":
                 # Look into the index of the DataFrame and search accordingly
-                if isinstance(value, (list, pd.Index)):
-                    data_filter = data_filter[
-                        data_filter.index.isin(value)
-                    ]
+                if isinstance(value, list | pd.Index):
+                    data_filter = data_filter[data_filter.index.isin(value)]
                 else:
                     data_filter = data_filter[
                         data_filter.index.str.contains(value, na=False)
@@ -96,12 +94,12 @@ class FinanceDatabase:
                 print(f"{key} is not a valid column.")
             else:
                 if isinstance(value, list):
-                    data_filter = data_filter[
-                        data_filter[key].isin(value)
-                    ]
+                    data_filter = data_filter[data_filter[key].isin(value)]
                 else:
                     data_filter = data_filter[
-                        data_filter[key].str.contains(value, case=case_sensitive, na=False)
+                        data_filter[key].str.contains(
+                            value, case=case_sensitive, na=False
+                        )
                     ]
 
         return data_filter
