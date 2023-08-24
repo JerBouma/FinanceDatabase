@@ -2,17 +2,17 @@
 <a href="https://www.buymeacoffee.com/jerbouma">
     <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-brightgreen?logo=buymeacoffee" alt="Logo">
 </a>
-<a href="https://jeroenbouma.com/">
-    <img src="https://img.shields.io/badge/Read_More-website?logo=readme&label=Website" alt="Logo">
+<a href="https://www.jeroenbouma.com/projects/financedatabase">
+    <img src="https://img.shields.io/badge/Read_More-website?logo=readme&label=Documentation" alt="Logo">
 </a>
-<a href="https://discord.gg/WS94QqH9Xb">
-    <img src="https://img.shields.io/badge/Chat-hello?logo=discord&label=Discord" alt="Logo">
+<a href="https://discord.com/">
+    <img src="https://img.shields.io/badge/JerBouma-hello?logo=discord&label=Discord" alt="Logo">
 </a>
 <a href="https://pypi.org/project/financedatabase/">
     <img src="https://img.shields.io/pypi/v/FinanceDatabase" alt="Logo">
 </a>
-<a href="https://pypi.org/project/financedatabase/">
-    <img src="https://img.shields.io/pypi/dm/FinanceDatabase" alt="Logo">
+<a href="https://pepy.tech/project/financedatabase">
+    <img src="https://static.pepy.tech/badge/financedatabase/month" alt="Logo">
 </a>
 
 | **Call for Contributors to the FinanceDatabase**    |
@@ -65,7 +65,7 @@ ___
 
 # Installation
 
-Before installation, consider starring the project on GitHub which helps others to find the project as well.
+Before installation, consider starring the project on GitHub which helps others find the project as well.
 
 <img width="1353" alt="image" src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/4132edde-72f9-4e32-adfe-8872207f46ff">
 
@@ -112,8 +112,10 @@ equities_united_states = equities.select(country="United States")
 # Obtain a detailed selection from the database
 equities_usa_consumer_electronics = equities.select(country="United States", industry="Consumer Electronics")
 
-# Search specific fields from the database
-equities_uk_biotech = equities.search(country='United Kingdom', summary='biotech', exchange='LSE')
+# Search specific fields from the database with lists
+equities_large_biotech = equities.search(
+    summary="biotech", market_cap=["Large Cap", "Mega Cap"]
+)
 ```
 
 Scroll down below for a more elaborate explanation and detailed examples.
