@@ -1,6 +1,6 @@
 <img src="https://user-images.githubusercontent.com/46355364/220746807-669cdbc1-ac67-404c-b0bb-4a3d67d9931f.jpg" alt="Logo">
 <a href="https://github.com/sponsors/JerBouma">
-    <img src="https://img.shields.io/badge/Sponsor_the_Project-grey?logo=github" alt="Logo">
+    <img src="https://img.shields.io/badge/Sponsor_this_Project-grey?logo=github" alt="Logo">
 </a>
 <a href="https://www.jeroenbouma.com/projects/financedatabase">
     <img src="https://img.shields.io/badge/Documentation-grey?logo=readme" alt="Logo">
