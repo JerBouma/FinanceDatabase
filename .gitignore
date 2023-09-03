@@ -11,7 +11,7 @@ PyPi Build/
 Tests/*.html
 .DS_Store
 *.ipynb
-!examples.ipynb
+!examples/*.ipynb
 !compression.ipynb
 
 # C extensions

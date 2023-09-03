@@ -30,7 +30,7 @@ The aim of this database is explicitly _not_ to provide up-to-date fundamentals 
 The package `financedatabase` allows you to select specific json files as well as search through collected data with a specific query.
 
 You can install the package with the following steps:
-1. `pip install financedatabase`
+1. `pip install financedatabase -U`
 2. (within Python) `import financedatabase as fd`
 
 Please see the Jupyter Notebook for an elaborate explanation of each asset class. This includes Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets.
