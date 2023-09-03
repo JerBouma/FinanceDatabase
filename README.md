@@ -34,7 +34,11 @@ Some key statistics of the database:
 
 The Finance Database is used within or referenced by:
 
-<a href="https://openbb.co/"><img src="https://user-images.githubusercontent.com/46355364/229621010-bba16cc4-de85-4921-9d75-b30393aaf74b.png" width="300px" height="100px"></a><a href="https://app.noteable.io/f/242bc47d-9c85-4a30-b6e5-d7d201f6e2d6/Finance+Database.ipynb"><img src="https://user-images.githubusercontent.com/46355364/229618778-2c5f1369-77d5-4fa9-abd1-e79d324a861a.png" width="300px" height="100px"></a><a href="https://algotrading101.com/learn/financedatabase-python-guide/"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/46355364/260734449-eb050357-599f-44be-835f-8647a29a8eee.jpg" width="300px" height="100px"></a><a href="https://twitter.com/pyquantnews/status/1576185955677077504?lang=en"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/46355364/260736777-e1d0779c-a0ad-4c4c-8e34-45c01635a9c2.png" width="300px" height="100px"></a><a href="https://alpha2phi.medium.com/investment-analysis-finance-database-61f47ecfe7ca"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/46355364/260736010-03397b64-af70-4ef7-831f-499e91cf66bd.png" width="300px" height="100px"></a>
+<a href="https://openbb.co/"><img width="100" alt="OpenBB" src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/5dfc1110-1e6f-4643-85ec-fc42c8112830"></a>
+<a href="https://app.noteable.io/f/242bc47d-9c85-4a30-b6e5-d7d201f6e2d6/Finance+Database.ipynb"><img width="180" alt="Noteable" src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/9d3df053-e1b5-47e2-9a33-1beab5fdd303"></a>
+<a href="https://algotrading101.com/learn/financedatabase-python-guide/"><img width="180" alt="AlgoTrading" src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/868b1ff0-92b9-48ea-9bef-033e4be609ae"></a>
+<a href="https://twitter.com/pyquantnews/status/1576185955677077504?lang=en"><img width="180" alt="PyQuantNews" src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/83ef9298-d390-4063-8f53-f5e8f9ebdf4d"></a>
+<a href="https://alpha2phi.medium.com/investment-analysis-finance-database-61f47ecfe7ca"><img width="180" alt="Medium" src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/b4959c14-3cae-4c42-b8be-e73828b292bb"></a>
 
 ___
 
