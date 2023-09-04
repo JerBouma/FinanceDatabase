@@ -34,7 +34,11 @@ Some key statistics of the database:
 
 The Finance Database is used within or referenced by:
 
-<a href="https://openbb.co/"><img width="200" height="100" alt="OpenBB" src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/cff58802-8f6e-48ec-9a5c-1a7795c3522c"></a><a href="https://app.noteable.io/f/242bc47d-9c85-4a30-b6e5-d7d201f6e2d6/Finance+Database.ipynb"><img alt="Noteable" width="200" height="100" src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/1110feb5-3ad8-4f1c-b580-df661df4682d"></a><a href="https://algotrading101.com/learn/financedatabase-python-guide/"><img width="200" height="100" alt="AlgoTrading" src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/4c113348-45fc-45fe-afb5-e043b738ee94"></a><a href="https://twitter.com/pyquantnews/status/1576185955677077504?lang=en"><img width="200" height="100" alt="PyQuantNews" src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/8c9025fb-3830-4f41-95fd-e5e6d0f84758"></a><a href="https://alpha2phi.medium.com/investment-analysis-finance-database-61f47ecfe7ca"><img width="200" height="100" alt="Medium" src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/dfbd0f4c-85eb-4de6-adba-345cb5189f31"></a>
+<a href="https://openbb.co/"><img width="200" height="100" alt="OpenBB" src="https://github-production-user-asset-6210df.s3.amazonaws.com/46355364/265290693-cff58802-8f6e-48ec-9a5c-1a7795c3522c.png"></a>
+<a href="https://app.noteable.io/f/242bc47d-9c85-4a30-b6e5-d7d201f6e2d6/Finance+Database.ipynb"><img alt="Noteable" width="200" height="100" src="https://github-production-user-asset-6210df.s3.amazonaws.com/46355364/265290704-1110feb5-3ad8-4f1c-b580-df661df4682d.png"></a>
+<a href="https://algotrading101.com/learn/financedatabase-python-guide/"><img width="200" height="100" alt="AlgoTrading" src="https://github-production-user-asset-6210df.s3.amazonaws.com/46355364/265290727-4c113348-45fc-45fe-afb5-e043b738ee94.png"></a>
+<a href="https://twitter.com/pyquantnews/status/1576185955677077504?lang=en"><img width="200" height="100" alt="PyQuantNews" src="https://github-production-user-asset-6210df.s3.amazonaws.com/46355364/265290754-8c9025fb-3830-4f41-95fd-e5e6d0f84758.png"></a>
+<a href="https://alpha2phi.medium.com/investment-analysis-finance-database-61f47ecfe7ca"><img width="200" height="100" alt="Medium" src="https://github-production-user-asset-6210df.s3.amazonaws.com/46355364/265290765-dfbd0f4c-85eb-4de6-adba-345cb5189f31.png"></a>
 
 ___
 
