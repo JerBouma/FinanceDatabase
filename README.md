@@ -253,7 +253,7 @@ ___
 ___
 
 ## Companies in the Netherlands
-I want to see how many public companies exist in each sector in the Netherlands. Here, I can obtain all stocks that are located in the Netherlands with `country='Netherlands'`. I also include all exchanges by setting `exclude_exchanges=False`. This will give me all stocks that are listed on all exchanges. This is relevant because some stocks are listed on exchanges that are not the American exchanges which the parameter defaults to. Find the related Jupyter Notebook with more examples [here].
+I want to see how many public companies exist in each sector in the Netherlands. Here, I can obtain all stocks that are located in the Netherlands with `country='Netherlands'`. I also include all exchanges by setting `exclude_exchanges=False`. This will give me all stocks that are listed on all exchanges. This is relevant because some stocks are listed on exchanges that are not the American exchanges which the parameter defaults to. Find the related Jupyter Notebook with more examples [here](https://www.jeroenbouma.com/projects/financedatabase/querying-netherlands).
 
 ````python
 import financedatabase as fd
@@ -291,7 +291,7 @@ This results in the following graph which gives an indication which sectors are 
 ![FinanceDatabase](https://github.com/JerBouma/FinanceDatabase/assets/46355364/6724b674-dd7b-4897-8e88-edce18619108)
 
 ## Perform a Dupont Analysis on Railroad Companies
-A great use-case for the data found in the Finance Database is to do competitive analysis in which companies are compared that compete for the same market. For example, in case I want to look into the Railroad companies in the United States that are marked as "Large Cap", I can directly search for this with the Finance Database and use the [Finance Toolkit](https://github.com/JerBouma/FinanceToolkit) to do further research. Find the related Jupyter Notebook with more examples [here].
+A great use-case for the data found in the Finance Database is to do competitive analysis in which companies are compared that compete for the same market. For example, in case I want to look into the Railroad companies in the United States that are marked as "Large Cap", I can directly search for this with the Finance Database and use the [Finance Toolkit](https://github.com/JerBouma/FinanceToolkit) to do further research. Find the related Jupyter Notebook with more examples [here](https://www.jeroenbouma.com/projects/financedatabase/dupont-analysis).
 
 ````python
 import financedatabase as fd
@@ -410,7 +410,7 @@ Which returns:
 
 
 ## Technical Analysis of Biotech ETFs
-In this example I will show how you can use the FinanceDatabase to do a technical analysis of Biotech ETFs during the Coronacrisis. Let's find Health Care ETFs that mention something about 'Biotech' in their description. This would indicate they are related to Biotechnology. Find the related Jupyter Notebook with more examples [here].
+In this example I will show how you can use the FinanceDatabase to do a technical analysis of Biotech ETFs during the Coronacrisis. Let's find Health Care ETFs that mention something about 'Biotech' in their description. This would indicate they are related to Biotechnology. Find the related Jupyter Notebook with more examples [here](https://www.jeroenbouma.com/projects/financedatabase/technical-analysis).
 
 ````python
 import financedatabase as fd
