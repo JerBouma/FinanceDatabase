@@ -64,4 +64,4 @@ combine_as_imports = true
 
 [tool.codespell]
 ignore-words-list = "zar,profund,basf,applicatio,ser,mone,vie,noteable,basf,beter"
-skip = '*.json,./.git,*.csv,pyproject.toml,*.ipynb'
+skip = '*.json,./.git,*.csv,pyproject.toml,*.ipynb,poetry.lock'
