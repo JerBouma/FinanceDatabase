@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "financedatabase"
-version = "2.1.1"
+version = "2.2.0"
 description = "This is a database of 300.000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets."
 license = "MIT"
 authors = ["Jeroen Bouma"]
@@ -16,16 +16,15 @@ classifiers = [
     "Topic :: Office/Business :: Financial :: Investment",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
 
 [tool.poetry.dependencies]
-pandas = "^2.0.0"
-python = "^3.8"
+python = ">=3.10, <3.13"
+financetoolkit = "^1.3.5"
+pandas = {extras = ["computation", "performance", "plot"], version = "^2.1.0"}
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^6.2.2"
@@ -64,5 +63,5 @@ skip_gitignore = true
 combine_as_imports = true
 
 [tool.codespell]
-ignore-words-list = 'ZAR,zar,profund,BASF,basf,applicatio,Ser,Mone,VIE,noteable'
+ignore-words-list = "zar,profund,basf,applicatio,ser,mone,vie,noteable,basf,beter"
 skip = '*.json,./.git,*.csv,pyproject.toml,*.ipynb'

@@ -15,7 +15,7 @@ As a private investor, the sheer amount of information that can be found on the 
 
 **This database tries to solve that**. It features 300.000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets. It therefore allows you to obtain a broad overview of sectors, industries, types of investments and much more.
 
-The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data as those can be obtained with ease (with the help of this database) by using the [FinanceToolkit](https://github.com/JerBouma/FinanceToolkit). Instead, it gives insights into the products that exist in each country, industry and sector and gives the most essential information about each product. With this information, you can analyse specific areas of the financial world and/or find a product that is hard to find. See for examples on how you can combine this database, and the earlier mentioned packages the section [Examples](#Examples).
+The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data as those can be obtained with ease (with the help of this database) by using the [Finance Toolkit 🛠️](https://github.com/JerBouma/FinanceToolkit). Instead, it gives insights into the products that exist in each country, industry and sector and gives the most essential information about each product. With this information, you can analyse specific areas of the financial world and/or find a product that is hard to find. See for examples on how you can combine this database, and the earlier mentioned packages the section [Examples](#Examples).
 
 Some key statistics of the database:
 
@@ -90,27 +90,52 @@ import financedatabase as fd
 equities = fd.Equities()
 
 # Obtain all countries from the database
-equities_countries = equities.options('country')
+equities_countries = equities.options("country")
 
 # Obtain all sectors from the database
-equities_sectors = equities.options('sector')
+equities_sectors = equities.options("sector")
 
 # Obtain all industry groups from the database
-equities_industry_groups = equities.options('industry_group')
+equities_industry_groups = equities.options("industry_group")
 
 # Obtain all industries from a country from the database
-equities_germany_industries = equities.options('industry', country='Germany')
+equities_germany_industries = equities.options("industry", country="Germany")
 
 # Obtain a selection from the database
 equities_united_states = equities.select(country="United States")
 
 # Obtain a detailed selection from the database
-equities_usa_consumer_electronics = equities.select(country="United States", industry="Consumer Electronics")
+equities_usa_machinery = equities.select(
+    country="United States", industry="Machinery"
+)
+
+# Search specific fields from the database
+equities_uk_biotech = equities.search(
+    country="United Kingdom", summary="biotech", exchange="LSE"
+)
 
 # Search specific fields from the database with lists
-equities_large_biotech = equities.search(
-    summary="biotech", market_cap=["Large Cap", "Mega Cap"]
+equities_media_services = equities.search(
+    industry="Interactive Media & Services",
+    country="United States",
+    market_cap=["Large Cap", "Mega Cap"]
 )
+
+# Use the tickers to obtain data via the Finance Toolkit
+telecomunication_services = equities.search(
+    industry="Diversified Telecommunication Services",
+    country="United States",
+    market_cap="Mega Cap",
+    exclude_exchanges=True)
+
+toolkit = telecomunication_services.to_toolkit(
+    api_key="FINANCIAL_MODELING_PREP_KEY",
+    start_date="2000-01-01",
+    progress_bar=False
+)
+
+# For example, obtain the historical data
+historical_data = toolkit.get_historical_data()
 ```
 
 Scroll down below for a more elaborate explanation and detailed examples.
@@ -138,57 +163,17 @@ equities.select()
 
 Which returns the following DataFrame:
 
-| symbol   | name                       | currency   | sector      | industry_group                                 | industry        | exchange   | market    | country       | state   | city        | zipcode    | website                         | market_cap   |
-|:---------|:---------------------------|:-----------|:------------|:-----------------------------------------------|:----------------|:-----------|:----------|:--------------|:--------|:------------|:-----------|:--------------------------------|:-------------|
-| A        | Agilent Technologies, Inc. | USD        | Health Care | Pharmaceuticals, Biotechnology & Life Sciences | Biotechnology   | NYQ        | us_market | United States | CA      | Santa Clara | 95051      | http://www.agilent.com          | Large Cap    |
-| AA       | Alcoa Corporation          | USD        | Materials   | Materials                                      | Metals & Mining | NYQ        | us_market | United States | PA      | Pittsburgh  | 15212-5858 | http://www.alcoa.com            | Mid Cap      |
-| AAALF    | Aareal Bank AG             | USD        | Financials  | Banks                                          | Banks           | PNK        | us_market | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    |
-| AAALY    | Aareal Bank AG             | USD        | Financials  | Banks                                          | Banks           | PNK        | us_market | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    |
-| AABB     | Asia Broadband, Inc.       | USD        | Materials   | Materials                                      | Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas   | 89135      | http://www.asiabroadbandinc.com | Micro Cap    |
+| symbol   | name                       | currency   | sector      | industry_group                                 | industry        | exchange   | market                  | country       | state   | city        | zipcode    | website                         | market_cap   | isin         | cusip     | figi         | composite_figi   | shareclass_figi   |
+|:---------|:---------------------------|:-----------|:------------|:-----------------------------------------------|:----------------|:-----------|:------------------------|:--------------|:--------|:------------|:-----------|:--------------------------------|:-------------|:-------------|:----------|:-------------|:-----------------|:------------------|
+| A        | Agilent Technologies, Inc. | USD        | Health Care | Pharmaceuticals, Biotechnology & Life Sciences | Biotechnology   | NYQ        | New York Stock Exchange | United States | CA      | Santa Clara | 95051      | http://www.agilent.com          | Large Cap    | US00846U1016 | 00846U101 | BBG000C2V541 | BBG000C2V3D6     | BBG001SCTQY4      |
+| AA       | Alcoa Corporation          | USD        | Materials   | Materials                                      | Metals & Mining | NYQ        | New York Stock Exchange | United States | PA      | Pittsburgh  | 15212-5858 | http://www.alcoa.com            | Mid Cap      | US0138721065 | 13872106  | BBG00B3T3HK5 | BBG00B3T3HD3     | BBG00B3T3HF1      |
+| AAALF    | Aareal Bank AG             | USD        | Financials  | Banks                                          | Banks           | PNK        | OTC Bulletin Board      | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    | US00254K1088 | 00254K108 | nan          | nan              | nan               |
+| AAALY    | Aareal Bank AG             | USD        | Financials  | Banks                                          | Banks           | PNK        | OTC Bulletin Board      | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    | US00254K1088 | 00254K108 | nan          | nan              | nan               |
+| AABB     | Asia Broadband, Inc.       | USD        | Materials   | Materials                                      | Metals & Mining | PNK        | OTC Bulletin Board      | United States | NV      | Las Vegas   | 89135      | http://www.asiabroadbandinc.com | Micro Cap    | nan          | nan       | nan          | nan              | nan               |
 
-This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155.000 different symbols. 
+This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155.000 different symbols.
 
-Note that the summary column is taken out on purpose to keep it organized for markdown. The summary is however very handy when it comes to querying specific words as found with the following description given for Apple. All of this information is available when you query the database.
-
-Find a more elaborate explanation with `help(equities.select)`:
-
-```text
-Help on method select in module financedatabase.equities:
-
-select(country: str = '', sector: str = '', industry: str = '', exclude_exchanges: bool = True, capitalize: bool = True) -> pandas.core.frame.DataFrame method of financedatabase.equities.Equities instance
-    Description
-    ----
-    Returns all equities when no input is given and has the option to give
-    a specific set of symbols for the country, sector and/or industry provided.
-    
-    The data depends on the combination of inputs. For example Country + Sector
-    gives all symbols for a specific sector in a specific country.
-    
-    Input
-    ----
-    country (string, default is None)
-        If filled, gives all data for a specific country.
-    sector (string, default is None)
-        If filled, gives all data for a specific sector.
-    industry (string, default is None)
-        If filled, gives all data for a specific industry.
-    exclude_exchanges (boolean, default is True):
-        Whether you want to exclude exchanges from the search. If False,
-        you will receive multiple times the product from different exchanges.
-    capitalize (boolean, default is True):
-        Whether country, sector and industry needs to be capitalized. By default
-        the values always are capitalized as that is also how it is represented
-        in the csv files.
-    base_url (string, default is GitHub location)
-        The possibility to enter your own location if desired.
-    use_local_location (string, default False)
-        The possibility to select a local location (i.e. based on Windows path)
-    
-    Output
-    ----
-    equities_df (pd.DataFrame)
-        Returns a dictionary with a selection or all data based on the input.
-```
+Note that the summary column is taken out on purpose to keep it organized for markdown. The summary is however very handy when it comes to querying specific words as found with the following description given for Apple. All of this information is available when you query the database. Find a more elaborate explanation with `help(equities.select)`.
 
 As an example, we can use `equities.options` to obtain specific country, sector and industry options. For we can acquire all industries within the sector `Basic Materials` within the `United States`. This allows us to look at a specific industry in the United States in detail. 
 
@@ -196,23 +181,78 @@ As an example, we can use `equities.options` to obtain specific country, sector 
 industry_options = equities.options(selection='industry', country="United States", sector="Materials")
 ```
 
+Which returns:
+
+```python
+array(['Chemicals', 'Construction Materials', 'Metals & Mining',
+       'Paper & Forest Products'], dtype=object)
+```
+
 So with this information in hand, I can now query the industry `Metals & Mining` as follows:
 
 ```python
-metals_and_mining_companies_usa = equities.select(country="United States", sector="Materials", industry="Metals & Mining")
+metals_and_mining = equities.search(industry="Metals & Mining", country="United States", market_cap="Large Cap", exclude_exchanges=True)
+
+metals_and_mining
 ```
 
 This gives you a DataFrame with the following information:
 
-| symbol   | name                                | currency   | sector    | industry_group   | industry        | exchange   | market    | country       | state   | city            | zipcode    | website                            | market_cap   |
-|:---------|:------------------------------------|:-----------|:----------|:-----------------|:----------------|:-----------|:----------|:--------------|:--------|:----------------|:-----------|:-----------------------------------|:-------------|
-| AA       | Alcoa Corporation                   | USD        | Materials | Materials        | Metals & Mining | NYQ        | us_market | United States | PA      | Pittsburgh      | 15212-5858 | http://www.alcoa.com               | Mid Cap      |
-| AABB     | Asia Broadband, Inc.                | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | NV      | Las Vegas       | 89135      | http://www.asiabroadbandinc.com    | Micro Cap    |
-| AAGC     | All American Gold Corp.             | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | WY      | Cheyenne        | 82001      | http://www.allamericangoldcorp.com | Nano Cap     |
-| ABML     | American Battery Metals Corporation | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | NV      | Incline Village | 89451      | http://www.batterymetals.com       | Small Cap    |
-| ACNE     | Alice Consolidated Mines, Inc.      | USD        | Materials | Materials        | Metals & Mining | PNK        | us_market | United States | ID      | Wallace         | 83873-0469 | nan                                | nan          |
+| symbol   | name                          | currency   | sector    | industry_group   | industry        | exchange   | market                  | country       | state   | city        | zipcode    | website                           | market_cap   | isin         | cusip     | figi         | composite_figi   | shareclass_figi   |
+|:---------|:------------------------------|:-----------|:----------|:-----------------|:----------------|:-----------|:------------------------|:--------------|:--------|:------------|:-----------|:----------------------------------|:-------------|:-------------|:----------|:-------------|:-----------------|:------------------|
+| FCX      | Freeport-McMoRan Inc.         | USD        | Materials | Materials        | Metals & Mining | NYQ        | New York Stock Exchange | United States | AZ      | Phoenix     | 85004-2189 | http://fcx.com                    | Large Cap    | US35671D8570 | 35671D857 | BBG000BJDCQ6 | BBG000BJDB15     | BBG001S5R3F3      |
+| NEM      | Newmont Corporation           | USD        | Materials | Materials        | Metals & Mining | NYQ        | New York Stock Exchange | United States | CO      | Denver      | 80237      | http://www.newmont.com            | Large Cap    | US6516391066 | 651639106 | BBG000BPWYG4 | BBG000BPWXK1     | BBG001S5TKX3      |
+| NUE      | Nucor Corporation             | USD        | Materials | Materials        | Metals & Mining | NYQ        | New York Stock Exchange | United States | NC      | Charlotte   | 28211      | http://www.nucor.com              | Large Cap    | US6703461052 | 670346105 | BBG000BQ8MY5 | BBG000BQ8KV2     | BBG001S5TRV0      |
+| RS       | Reliance Steel & Aluminum Co. | USD        | Materials | Materials        | Metals & Mining | NYQ        | New York Stock Exchange | United States | CA      | Los Angeles | 90071      | http://www.rsac.com               | Large Cap    | US7595091023 | 759509102 | BBG000CJ2332 | BBG000CJ2181     | BBG001S81M27      |
+| SCCO     | Southern Copper Corporation   | USD        | Materials | Materials        | Metals & Mining | NYQ        | New York Stock Exchange | United States | AZ      | Phoenix     | 85014      | http://www.southerncoppercorp.com | Large Cap    | US84265V1052 | 84265V105 | BBG000BSHKK0 | BBG000BSHH72     | BBG001S6ZM88      |
+| STLD     | Steel Dynamics, Inc.          | USD        | Materials | Materials        | Metals & Mining | NMS        | NASDAQ Global Select    | United States | IN      | Fort Wayne  | 46804      | http://www.steeldynamics.com      | Large Cap    | US8581191009 | 858119100 | BBG000HH03N1 | BBG000HGYNZ9     | BBG001S98JK5      |
 
 As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
+
+To conclude, this information can then be send to the [Finance Toolkit 🛠️](https://github.com/JerBouma/FinanceToolkit) to obtain 130+ financial metrics, historical and fundamnental data with the `to_toolkit` function. This functionality can be used with any output as obtained from the Finance Database.
+
+```python
+companies = metals_and_mining.to_toolkit(
+    api_key="FINANCIAL_MODELING_PREP_KEY",
+    start_date="2000-01-01",
+    quarterly=False)
+
+companies.get_quote()
+```
+
+This returns the following:
+
+|                       | FCX                      | NEM                      | NUE                     | RS                            | SCCO                         | STLD                           |
+|:----------------------|:-------------------------|:-------------------------|:------------------------|:------------------------------|:-----------------------------|:-------------------------------|
+| Symbol                | FCX                      | NEM                      | NUE                     | RS                            | SCCO                         | STLD                           |
+| Price                 | 38.755                   | 40.3007                  | 157.54                  | 268.06                        | 78.3                         | 99.49                          |
+| Beta                  | 2.065006                 | 0.394536                 | 1.627593                | 0.923236                      | 1.294605                     | 1.523167                       |
+| Average Volume        | 10431879                 | 7104366                  | 1315646                 | 265598                        | 1031395                      | 1277711                        |
+| Market Capitalization | 55560715720              | 31998755800              | 39183663880             | 15696816226                   | 60534353894                  | 16479921560                    |
+| Last Dividend         | 0.6000000000000001       | 1.6                      | 2.04                    | 4                             | 4                            | 1.7000000000000002             |
+| Range                 | 26.03-46.73              | 37.45-55.41              | 102.86-182.68           | 168.25-295.98                 | 42.42-87.59                  | 69.12-136.46                   |
+| Changes               | -1.435                   | -0.1693                  | 2.87                    | 4.41                          | -1.3599999999999999          | 1.38                           |
+| Company Name          | Freeport-McMoRan Inc.    | Newmont Corporation      | Nucor Corporation       | Reliance Steel & Aluminum Co. | Southern Copper Corporation  | Steel Dynamics, Inc.           |
+| Currency              | USD                      | USD                      | USD                     | USD                           | USD                          | USD                            |
+| CIK                   | 831259                   | 1164727                  | 73309                   | 861884                        | 1001838                      | 1022671                        |
+| ISIN                  | US35671D8570             | US6516391066             | US6703461052            | US7595091023                  | US84265V1052                 | US8581191009                   |
+| CUSIP                 | 35671D857                | 651639106                | 670346105               | 759509102                     | 84265V105                    | 858119100                      |
+| Exchange              | New York Stock Exchange  | New York Stock Exchange  | New York Stock Exchange | New York Stock Exchange       | New York Stock Exchange      | NASDAQ Global Select           |
+| Exchange Short Name   | NYSE                     | NYSE                     | NYSE                    | NYSE                          | NYSE                         | NASDAQ                         |
+| Industry              | Copper                   | Gold                     | Steel                   | Steel                         | Copper                       | Steel                          |
+| Website               | https://fcx.com          | https://www.newmont.com  | https://www.nucor.com   | https://www.rsac.com          | https://www.southernperu.com | https://stld.steeldynamics.com |
+| CEO                   | Mr. Richard C. Adkerson  | Mr. Thomas Ronald Palmer | Mr. Leon J. Topalian    | Ms. Karla R. Lewis            | Mr. Oscar  Gonzalez Rocha    | Mr. Mark D. Millett            |
+| Sector                | Basic Materials          | Basic Materials          | Basic Materials         | Basic Materials               | Basic Materials              | Basic Materials                |
+| Country               | US                       | US                       | US                      | US                            | US                           | US                             |
+| Full Time Employees   | 25600                    | 14600                    | 31400                   | 14500                         | 15018                        | 12060                          |
+| Phone                 | 602 366 8100             | 303 863 7414             | 704 366 7000            | 213 687 7700                  | 602 264 1375                 | 260 969 3500                   |
+| Address               | 333 North Central Avenue | 6900 East Layton Avenue  | 1915 Rexford Road       | 350 South Grand Avenue        | 1440 East Missouri Avenue    | 7575 West Jefferson Boulevard  |
+| City                  | Phoenix                  | Denver                   | Charlotte               | Los Angeles                   | Phoenix                      | Fort Wayne                     |
+| State                 | AZ                       | CO                       | NC                      | CA                            | AZ                           | IN                             |
+| ZIP Code              | 85004-2189               | 80237                    | 28211                   | 90071                         | 85014                        | 46804                          |
+| DCF Difference        | 3.24601                  | 2.08                     | 9.70759                 | 13.6802                       | 13.4469                      | 9.8176                         |
+| DCF                   | 41.574                   | 51.24                    | 157.162                 | 213.01                        | 61.1331                      | 109.112                        |
+| IPO Date              | 1995-07-10               | 1980-03-17               | 1980-03-17              | 1994-09-16                    | 1996-01-05                   | 1996-11-22                     |
 
 ## Searching the database extensively
 All asset classes have the capability to search each column with `search`, for example `equities.search()`. Through how this functionality is developed you can define multiple columns and search throughoutly. For example:
@@ -227,13 +267,13 @@ equities.search(summary='automotive', currency='USD', country='Germany')
 
 Which returns a selection of the DataFrame that matches all criteria. 
 
-| symbol   | name                                        | currency   | sector                 | industry_group                | industry           | exchange   | market    | country   |   state | city                  |   zipcode | website                   | market_cap   |
-|:---------|:--------------------------------------------|:-----------|:-----------------------|:------------------------------|:-------------------|:-----------|:----------|:----------|--------:|:----------------------|----------:|:--------------------------|:-------------|
-| AFRMF    | Alphaform AG                                | USD        | Industrials            | Capital Goods                 | Machinery          | PNK        | us_market | Germany   |     nan | Feldkirchen           |     85622 | nan                       | Nano Cap     |
-| AUUMF    | Aumann AG                                   | USD        | Industrials            | Capital Goods                 | Machinery          | PNK        | us_market | Germany   |     nan | Beelen                |     48361 | http://www.aumann.com     | Micro Cap    |
-| BAMXF    | Bayerische Motoren Werke Aktiengesellschaft | USD        | Consumer Discretionary | Automobiles & Components      | Automobiles        | PNK        | us_market | Germany   |     nan | Munich                |     80788 | http://www.bmwgroup.com   | Large Cap    |
-| BASFY    | BASF SE                                     | USD        | Materials              | Materials                     | Chemicals          | PNK        | us_market | Germany   |     nan | Ludwigshafen am Rhein |     67056 | http://www.basf.com       | Large Cap    |
-| BDRFF    | Beiersdorf Aktiengesellschaft               | USD        | Consumer Staples       | Household & Personal Products | Household Products | PNK        | us_market | Germany   |     nan | Hamburg               |     20245 | http://www.beiersdorf.com | Large Cap    |
+| symbol   | name                                        | currency   | sector                 | industry_group                | industry           | exchange   | market             | country   |   state | city                  |   zipcode | website                   | market_cap   | isin         | cusip     |   figi |   composite_figi |   shareclass_figi |
+|:---------|:--------------------------------------------|:-----------|:-----------------------|:------------------------------|:-------------------|:-----------|:-------------------|:----------|--------:|:----------------------|----------:|:--------------------------|:-------------|:-------------|:----------|-------:|-----------------:|------------------:|
+| AFRMF    | Alphaform AG                                | USD        | Industrials            | Capital Goods                 | Machinery          | PNK        | OTC Bulletin Board | Germany   |     nan | Feldkirchen           |     85622 | nan                       | Nano Cap     | nan          | nan       |    nan |              nan |               nan |
+| AUUMF    | Aumann AG                                   | USD        | Industrials            | Capital Goods                 | Machinery          | PNK        | OTC Bulletin Board | Germany   |     nan | Beelen                |     48361 | http://www.aumann.com     | Micro Cap    | DE000A2DAM03 | nan       |    nan |              nan |               nan |
+| BAMXF    | Bayerische Motoren Werke Aktiengesellschaft | USD        | Consumer Discretionary | Automobiles & Components      | Automobiles        | PNK        | OTC Bulletin Board | Germany   |     nan | Munich                |     80788 | http://www.bmwgroup.com   | Large Cap    | DE0005190037 | nan       |    nan |              nan |               nan |
+| BASFY    | BASF SE                                     | USD        | Materials              | Materials                     | Chemicals          | PNK        | OTC Bulletin Board | Germany   |     nan | Ludwigshafen am Rhein |     67056 | http://www.basf.com       | Large Cap    | nan          | nan       |    nan |              nan |               nan |
+| BDRFF    | Beiersdorf Aktiengesellschaft               | USD        | Consumer Staples       | Household & Personal Products | Household Products | PNK        | OTC Bulletin Board | Germany   |     nan | Hamburg               |     20245 | http://www.beiersdorf.com | Large Cap    | US07724U1034 | 07724U103 |    nan |              nan |               nan |
 
 ## Storing the database at a different location
 If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
@@ -292,6 +332,7 @@ This results in the following graph which gives an indication which sectors are 
 
 ## Perform a Dupont Analysis on Railroad Companies
 A great use-case for the data found in the Finance Database is to do competitive analysis in which companies are compared that compete for the same market. For example, in case I want to look into the Railroad companies in the United States that are marked as "Large Cap", I can directly search for this with the Finance Database and use the [Finance Toolkit](https://github.com/JerBouma/FinanceToolkit) to do further research. Find the related Jupyter Notebook with more examples [here](https://www.jeroenbouma.com/projects/financedatabase/dupont-analysis).
+A great use-case for the data found in the Finance Database is to do competitive analysis in which companies are compared that compete for the same market. For example, in case I want to look into the Railroad companies in the United States that are marked as "Large Cap", I can directly search for this with the Finance Database and use the [Finance Toolkit 🛠️](https://github.com/JerBouma/FinanceToolkit) to do further research. **Find the related Jupyter Notebook with more examples [here](https://www.jeroenbouma.com/projects/financedatabase/dupont-analysis).**
 
 ````python
 import financedatabase as fd
@@ -318,11 +359,9 @@ This gives the following:
 With this information in hand, I can now start collecting data with the [FinanceToolkit](https://github.com/JerBouma/FinanceToolkit) package. This can be anything from balance sheet, cash flow and income statements to 100+ financial ratios, technical indicators and more. Here I initialize the FinanceToolkit with the tickers as found in the Finance Database.
 
 ````python
-from financetoolkit import Toolkit
-
 API_KEY = "YOUR_FMP_API_KEY"
 
-companies = Toolkit(list(railroad.index), API_KEY, start_date='2005-01-01')
+companies = railroad.to_toolkit(api_key=API_KEY, start_date='2005-01-01')
 ````
 
 Then, as a demonstration, I can obtain all balance sheet statements for all companies that are marked as Large Cap Railroad companies in the United States. To keep this concise, only the first company is shown.
@@ -410,10 +449,12 @@ Which returns:
 
 
 ## Technical Analysis of Biotech ETFs
-In this example I will show how you can use the FinanceDatabase to do a technical analysis of Biotech ETFs during the Coronacrisis. Let's find Health Care ETFs that mention something about 'Biotech' in their description. This would indicate they are related to Biotechnology. Find the related Jupyter Notebook with more examples [here](https://www.jeroenbouma.com/projects/financedatabase/technical-analysis).
+In this example I will show how you can use the FinanceDatabase to do a technical analysis of Biotech ETFs during the Coronacrisis. Let's find Health Care ETFs that mention something about 'Biotech' in their description. This would indicate they are related to Biotechnology. **Find the related Jupyter Notebook with more examples [here](https://www.jeroenbouma.com/projects/financedatabase/technical-analysis).**
 
 ````python
 import financedatabase as fd
+
+API_KEY = "YOUR_FMP_API_KEY"
 
 etfs = fd.ETFs()
 
@@ -439,10 +480,10 @@ Which returns:
 | XBI      | SPDR S&P Biotech ETF                           | USD        | Health Care      | Health Care | State Street Global Advisors  | PCX        | us_market |
 | XLV      | Health Care Select Sector SPDR Fund            | USD        | Health Care      | Health Care | State Street Global Advisors  | PCX        | us_market |
 
-Next up is initalizing the Finance Toolkit and obtaining historical data for the chosen tickers. Here a start and end date are also selected that match the period around the initial wave of the Coronacrisis. Then it's time to collect the historical data for each ETF found.
+Next up is initializing the Finance Toolkit and obtaining historical data for the chosen tickers. Here a start and end date are also selected that match the period around the initial wave of the Coronacrisis. Then it's time to collect the historical data for each ETF found.
 
 ````python
-etfs_in_biotech = Toolkit(tickers=list(health_care_etfs_in_biotech.index), start_date="2020-01-01", end_date="2020-06-01")
+etfs_in_biotech = health_care_etfs_in_biotech.to_toolkit(api_key=API_KEY, start_date="2020-01-01", end_date="2020-06-01")
 
 etfs_in_biotech.get_historical_data()
 ````
@@ -476,6 +517,8 @@ Which returns (note that this is a MultiIndex):
 Then, it's time to visually depict the Bollinger Bands for each ETF during the early stages of the Coronacrisis.
 
 ````python
+from matplotlib import pyplot as plt
+
 figure, axis = plt.subplots(4, 3)
 figure.set_size_inches(15, 10)
 row = 0
@@ -537,9 +580,10 @@ This section is meant to thank those that contributed to the project. Looking to
 # Contact
 If you have any questions about the FinanceDatabase or would like to share with me what you have been working on, feel free to reach out to me via:
 
+- **Website**: https://jeroenbouma.com/
 - **LinkedIn:** https://www.linkedin.com/in/boumajeroen/
 - **Email:** jer.bouma@gmail.com
-- **Discord:** https://discord.gg/WS94QqH9Xb
+- **Discord:** add me on Discord **`JerBouma`**
 
 f you'd like to support my efforts, either help me out via the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md) or [Buy me a Coffee](https://www.buymeacoffee.com/jerbouma).
 

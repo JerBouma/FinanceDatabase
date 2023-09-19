@@ -1,0 +1,39 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+        exclude_types: [css, markdown, text, svg]
+      - id: trailing-whitespace
+        exclude_types: [html, markdown, text]
+      - id: check-merge-conflict
+      - id: detect-private-key
+  - repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+      - id: black
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: "v0.0.256"
+    hooks:
+      - id: ruff
+        entry: ruff --ignore PLR0915
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.5
+    hooks:
+      - id: codespell
+        entry: codespell
+        args:
+          [
+            "--ignore-words-list=zar,profund,basf,applicatio,ser,mone,vie,noteable,basf,beter",
+            "--quiet-level=2",
+            "--skip=./tests,.git,*.css,*.csv,*.html,*.ini,*.ipynb,*.js,*.json,*.lock,*.scss,*.txt,*.yaml,build/pyinstaller/*,pyproject.toml",
+            "-x=.github/workflows/linting.yml"
+          ]
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint financedatabase
+        language: system
+        types: [python]
