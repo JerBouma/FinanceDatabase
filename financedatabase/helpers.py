@@ -114,7 +114,7 @@ class FinanceDatabase:
 
 class FinanceFrame(pd.DataFrame):
     """
-    The FinanceFrance is a helper class that adds in additional
+    The FinanceFrame is a helper class that adds in additional
     functionality on top of the DataFrame object where applicable. For
     the most part this is done to be able to connect to the Finance
     Toolkit with ease using the tickers as obtained from the
