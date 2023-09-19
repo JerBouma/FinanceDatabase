@@ -90,7 +90,7 @@ jobs:
                                 ticker_dict[index][column] = value
                     continue
                 except KeyError:
-                    if row['name'] == 'Nano Labs Ltd American Depositary Shares'
+                    if row['name'] == 'Nano Labs Ltd American Depositary Shares':
                       # Specific case where the ticker is NAN which is recognized
                       # as a NaN instead meaning it will continuously be added
                       index = "NAN"
