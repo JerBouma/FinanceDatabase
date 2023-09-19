@@ -91,9 +91,9 @@ jobs:
                     continue
                 except KeyError:
                     if row['name'] == 'Nano Labs Ltd American Depositary Shares':
-                      # Specific case where the ticker is NAN which is recognized
+                      # Specific case where the ticker is NA which is recognized
                       # as a NaN instead meaning it will continuously be added
-                      index = "NAN"
+                      index = "NA"
 
                     ticker_dict[index] = {}
 
