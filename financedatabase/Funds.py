@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-from .helpers import FinanceDatabase
+from .helpers import FinanceDatabase, FinanceFrame
 
 
 class Funds(FinanceDatabase):
@@ -29,38 +29,29 @@ class Funds(FinanceDatabase):
         capitalize: bool = True,
     ) -> pd.DataFrame:
         """
-        Description
-        ----
-        Returns all funds when no input is given and has the option to give
-        a specific set of symbols for the category and/or family provided.
+        Retrieve fund data based on specified criteria.
 
-        The data depends on the combination of inputs. For example Category + Family
-        gives all symbols for a specific category for a specific family.
+        This method allows you to retrieve data for specific funds based on a combination
+        of category group, category, and family filters. You can also exclude
+        exchanges from the search. If no input criteria are provided, it returns data for all funds.
 
-        Input
-        ----
-        category_group (string, default is None)
-            If filled, gives all data for a specific category group.
-        category (string, default is None)
-            If filled, gives all data for a specific category.
-        family (string, default is None)
-            If filled, gives all data for a specific family.
-        exclude_exchanges (boolean, default is True):
-            Whether you want to exclude exchanges from the search. If False,
-            you will receive multiple times the product from different exchanges.
-        capitalize (boolean, default is True):
-            Whether country, sector and industry needs to be capitalized. By default
-            the values always are capitalized as that is also how it is represented
-            in the csv files.
-        base_url (string, default is GitHub location)
-            The possibility to enter your own location if desired.
-        use_local_location (string, default False)
-            The possibility to select a local location (i.e. based on Windows path)
+        Args:
+            category_group (str, optional):
+                Specific category group to retrieve data for. If not provided, returns data for all category groups.
+            category (str, optional):
+                Specific category to retrieve data for. If not provided, returns data for all categories.
+            family (str, optional):
+                Specific family to retrieve data for. If not provided, returns data for all families.
+            exclude_exchanges (bool, optional):
+                Whether to exclude exchanges from the search. If False, you will receive
+                data for funds from different exchanges. Default is True.
+            capitalize (bool, optional):
+                Indicates whether category group, category, and family names should be capitalized for matching.
+                Default is True.
 
-        Output
-        ----
-        funds_df (pd.DataFrame)
-            Returns a dictionary with a selection or all data based on the input.
+        Returns:
+            pd.DataFrame:
+                A DataFrame containing fund data matching the specified input criteria.
         """
         funds = self.data.copy(deep=True)
 
@@ -79,7 +70,8 @@ class Funds(FinanceDatabase):
             funds = funds[funds["family"] == family]
         if exclude_exchanges:
             funds = funds[~funds.index.str.contains(r"\.", na=False)]
-        return funds
+
+        return FinanceFrame(funds)
 
     def options(
         self,
@@ -89,31 +81,31 @@ class Funds(FinanceDatabase):
         family: str = "",
     ) -> pd.Series:
         """
-        Description
-        ----
-        Returns all options for the selection provided.
+        Retrieve all options for the specified selection.
 
-        Input
-        ----
-        selection (string)
-            The selection you want to see the options for. Choose from:
-                "currency"
-                "category_group"
-                "category"
-                "family"
-                "exchange"
-                "market"
-        category_group (string, default is None)
-            If filled, gives all data for a specific category_group.
-        category (string, default is None)
-            If filled, gives all data for a specific category.
-        family (string, default is None)
-            If filled, gives all data for a specific family.
+        This method returns a series containing all available options for the specified
+        selection, which can be one of the following: "currency", "category_group",
+        "category", "family", "exchange", "market".
 
-        Output
-        ----
-        options (pd.Series)
-            Returns a series with all options for the selection provided.
+        Args:
+            selection (str):
+                The selection you want to see the options for. Choose from:
+                - "currency"
+                - "category_group"
+                - "category"
+                - "family"
+                - "exchange"
+                - "market"
+            category_group (str, optional):
+                Specific category group to retrieve data for. If not provided, returns data for all category groups.
+            category (str, optional):
+                Specific category to retrieve data for. If not provided, returns data for all categories.
+            family (str, optional):
+                Specific family to retrieve data for. If not provided, returns data for all families.
+
+        Returns:
+            pd.Series:
+                A series with all options for the specified selection, sorted and without duplicates.
         """
         selection_values = [
             "currency",

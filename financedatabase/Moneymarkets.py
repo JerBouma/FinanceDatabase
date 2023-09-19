@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-from .helpers import FinanceDatabase
+from .helpers import FinanceDatabase, FinanceFrame
 
 
 class Moneymarkets(FinanceDatabase):
@@ -26,30 +26,22 @@ class Moneymarkets(FinanceDatabase):
         exclude_exchanges: bool = True,
     ) -> pd.DataFrame:
         """
-        Description
-        ----
         Returns all moneymarkets when no input is given and has the option to give
-        a specific combination of moneymarkets based on the currency defined.
+        a specific combination of moneymarkets based on the category defined.
 
-        Input
-        ----
-        category (string, default is None)
-            If filled, gives all data for a specific category.
-        capitalize (boolean, default is True):
-            Whether the currency needs to be capitalized. By default the values
-            always are capitalized as that is also how it is represented in the csv files.
-        exclude_exchanges (boolean, default is True):
-            Whether you want to exclude exchanges from the search. If False,
-            you will receive multiple times the product from different exchanges.
-        base_url (string, default is GitHub location)
-            The possibility to enter your own location if desired.
-        use_local_location (string, default False)
-            The possibility to select a local location (i.e. based on Windows path)
+        Args:
+            category (str, optional):
+                If filled, gives all data for a specific category. Default is an empty string.
+            capitalize (bool, optional):
+                Whether the category needs to be capitalized. Default is True.
+            exclude_exchanges (bool, optional):
+                Whether you want to exclude exchanges from the search. If False,
+                you will receive multiple times the product from different exchanges.
+                Default is True.
 
-        Output
-        ----
-        indices_df (pd.DataFrame)
-            Returns a dictionary with a selection or all data based on the input.
+        Returns:
+            indices_df (pd.DataFrame):
+                Returns a DataFrame with a selection or all data based on the input.
         """
         moneymarkets = self.data.copy(deep=True)
 
@@ -64,27 +56,23 @@ class Moneymarkets(FinanceDatabase):
                 ~moneymarkets.index.str.contains(r"\.", na=False)
             ]
 
-        return moneymarkets
+        return FinanceFrame(moneymarkets)
 
     def options(self, selection: str) -> pd.Series:
         """
-        Description
-        ----
         Returns all options for the selection provided.
 
-        Input
-        ----
-        selection (string)
-            The selection you want to see the options for. Choose from:
-                "category"
-                "currency"
-                "market"
-                "exchange"
+        Args:
+            selection (str):
+                The selection you want to see the options for. Choose from:
+                    "category"
+                    "currency"
+                    "market"
+                    "exchange"
 
-        Output
-        ----
-        options (pd.Series)
-            Returns a series with all options for the selection provided.
+        Returns:
+            options (pd.Series):
+                Returns a Series with all options for the selection provided.
         """
         selection_values = ["category", "currency", "market", "exchange"]
         if selection not in selection_values:

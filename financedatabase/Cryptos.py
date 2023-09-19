@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-from .helpers import FinanceDatabase
+from .helpers import FinanceDatabase, FinanceFrame
 
 
 class Cryptos(FinanceDatabase):
@@ -29,28 +29,23 @@ class Cryptos(FinanceDatabase):
         capitalize: bool = True,
     ) -> pd.DataFrame:
         """
-        Description
-        ----
-        Returns all cryptos when no input is given and has the option to give
-        a specific combination of cryptos based on the crypto defined.
+        Obtain cryptocurrency data based on specified criteria.
 
+        This method allows you to retrieve data for specific cryptocurrencies and currencies,
+        with the option to customize the capitalization of cryptocurrency names. If no input
+        criteria are provided, it returns data for all cryptocurrencies.
 
-        Input
-        ----
-        crypto (string, default is None)
-            If filled, gives all data for a specific crypto.
-        capitalize (boolean, default is True):
-            Whether the crypto needs to be capitalized. By default the values
-            always are capitalized as that is also how it is represented in the csv files.
-        base_url (string, default is GitHub location)
-            The possibility to enter your own location if desired.
-        use_local_location (string, default False)
-            The possibility to select a local location (i.e. based on Windows path)
+        Args:
+            crypto (str, optional):
+                Specific cryptocurrency to retrieve data for. If not provided, returns data for all cryptocurrencies.
+            currency (str, optional):
+                Specific currency to filter by. If not provided, no currency filtering is applied.
+            capitalize (bool, optional):
+                Indicates whether the cryptocurrency names should be capitalized for matching. Default is True.
 
-        Output
-        ----
-        cryptos_df (pd.DataFrame)
-            Returns a dictionary with a selection or all data based on the input.
+        Returns:
+            pd.DataFrame:
+                A DataFrame containing cryptocurrency data matching the specified input criteria.
         """
         cryptos = self.data.copy(deep=True)
 
@@ -67,27 +62,26 @@ class Cryptos(FinanceDatabase):
                 )
             ]
 
-        return cryptos
+        return FinanceFrame(cryptos)
 
     def options(self, selection: str) -> pd.Series:
         """
-        Description
-        ----
-        Returns all options for the selection provided.
+        Retrieve all options for a specified selection.
 
-        Input
-        ----
-        selection (string)
-            The selection you want to see the options for. Choose from:
-                "cryptocurrency"
-                "currency"
-                "exchange"
-                "market"
+        This method returns a series containing all available options for the specified
+        selection, which can be one of the following: "cryptocurrency", "currency", "exchange", "market".
 
-        Output
-        ----
-        options (pd.Series)
-            Returns a series with all options for the selection provided.
+        Args:
+            selection (str):
+                The selection you want to see the options for. Choose from:
+                - "cryptocurrency"
+                - "currency"
+                - "exchange"
+                - "market"
+
+        Returns:
+            pd.Series:
+                A series with all options for the specified selection.
         """
         selection_values = ["cryptocurrency", "currency", "exchange", "market"]
         if selection not in selection_values:

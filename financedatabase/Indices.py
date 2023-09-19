@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-from .helpers import FinanceDatabase
+from .helpers import FinanceDatabase, FinanceFrame
 
 
 class Indices(FinanceDatabase):
@@ -28,30 +28,22 @@ class Indices(FinanceDatabase):
         exclude_exchanges: bool = True,
     ) -> pd.DataFrame:
         """
-        Description
-        ----
         Returns all indices when no input is given and has the option to give
         a specific combination of indices based on the currency defined.
 
-        Input
-        ----
-        currency (string, default is None)
-            If filled, gives all data for a specific currency.
-        capitalize (boolean, default is True):
-            Whether the currency needs to be capitalized. By default the values
-            always are capitalized as that is also how it is represented in the csv files.
-        exclude_exchanges (boolean, default is True):
-            Whether you want to exclude exchanges from the search. If False,
-            you will receive multiple times the product from different exchanges.
-        base_url (string, default is GitHub location)
-            The possibility to enter your own location if desired.
-        use_local_location (string, default False)
-            The possibility to select a local location (i.e. based on Windows path)
+        Args:
+            currency (str, optional):
+                If filled, gives all data for a specific currency.
+            capitalize (bool, optional):
+                Whether the currency needs to be capitalized. By default, the values
+                are always capitalized as that is also how it is represented in the CSV files.
+            exclude_exchanges (bool, optional):
+                Whether you want to exclude exchanges from the search. If False,
+                you will receive multiple instances of the same product from different exchanges.
 
-        Output
-        ----
-        indices_df (pd.DataFrame)
-            Returns a dictionary with a selection or all data based on the input.
+        Returns:
+            indices_df (pd.DataFrame):
+                Returns a DataFrame with a selection or all data based on the input.
         """
         indices = self.data.copy(deep=True)
 
@@ -64,27 +56,23 @@ class Indices(FinanceDatabase):
         if exclude_exchanges:
             indices = indices[~indices.index.str.contains(r"\.", na=False)]
 
-        return indices
+        return FinanceFrame(indices)
 
     def options(self, selection: str) -> pd.Series:
         """
-        Description
-        ----
         Returns all options for the selection provided.
 
-        Input
-        ----
-        selection (string)
-            The selection you want to see the options for. Choose from:
-                "currency"
-                "market"
-                "exchange"
-                "timezone"
+        Args:
+            selection (str):
+                The selection you want to see the options for. Choose from:
+                    "currency"
+                    "market"
+                    "exchange"
+                    "timezone"
 
-        Output
-        ----
-        options (pd.Series)
-            Returns a series with all options for the selection provided.
+        Returns:
+            options (pd.Series):
+                Returns a series with all options for the selection provided.
         """
         selection_values = ["currency", "market", "exchange", "timezone"]
         if selection not in selection_values:

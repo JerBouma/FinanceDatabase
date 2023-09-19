@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-from .helpers import FinanceDatabase
+from .helpers import FinanceDatabase, FinanceFrame
 
 
 class Equities(FinanceDatabase):
@@ -30,40 +30,31 @@ class Equities(FinanceDatabase):
         capitalize: bool = True,
     ) -> pd.DataFrame:
         """
-        Description
-        ----
-        Returns all equities when no input is given and has the option to give
-        a specific set of symbols for the country, sector and/or industry provided.
+        Retrieve equity data based on specified criteria.
 
-        The data depends on the combination of inputs. For example Country + Sector
-        gives all symbols for a specific sector in a specific country.
+        This method allows you to retrieve data for specific equities based on a combination
+        of country, sector, industry group, and industry filters. You can also exclude
+        exchanges from the search. If no input criteria are provided, it returns data for all equities.
 
-        Input
-        ----
-        country (string, default is None)
-            If filled, gives all data for a specific country.
-        sector (string, default is None)
-            If filled, gives all data for a specific sector.
-        industry_group (string, default is None)
-            If filled, gives all data for a specific industry group.
-        industry (string, default is None)
-            If filled, gives all data for a specific industry.
-        exclude_exchanges (boolean, default is True):
-            Whether you want to exclude exchanges from the search. If False,
-            you will receive multiple times the product from different exchanges.
-        capitalize (boolean, default is True):
-            Whether country, sector and industry needs to be capitalized. By default
-            the values always are capitalized as that is also how it is represented
-            in the csv files.
-        base_url (string, default is GitHub location)
-            The possibility to enter your own location if desired.
-        use_local_location (string, default False)
-            The possibility to select a local location (i.e. based on Windows path)
+        Args:
+            country (str, optional):
+                Specific country to retrieve data for. If not provided, returns data for all countries.
+            sector (str, optional):
+                Specific sector to retrieve data for. If not provided, returns data for all sectors.
+            industry_group (str, optional):
+                Specific industry group to retrieve data for. If not provided, returns data for all industry groups.
+            industry (str, optional):
+                Specific industry to retrieve data for. If not provided, returns data for all industries.
+            exclude_exchanges (bool, optional):
+                Whether to exclude exchanges from the search. If False, you will receive
+                data for equities from different exchanges. Default is True.
+            capitalize (bool, optional):
+                Indicates whether country, sector, and industry names should be capitalized for matching.
+                Default is True.
 
-        Output
-        ----
-        equities_df (pd.DataFrame)
-            Returns a dictionary with a selection or all data based on the input.
+        Returns:
+            pd.DataFrame:
+                A DataFrame containing equity data matching the specified input criteria.
         """
         equities = self.data.copy(deep=True)
 
@@ -85,7 +76,8 @@ class Equities(FinanceDatabase):
             equities = equities[equities["industry"] == industry]
         if exclude_exchanges:
             equities = equities[~equities.index.str.contains(r"\.", na=False)]
-        return equities
+
+        return FinanceFrame(equities)
 
     def options(
         self,
@@ -96,36 +88,37 @@ class Equities(FinanceDatabase):
         industry: str = "",
     ) -> pd.Series:
         """
-        Description
-        ----
-        Returns all options for the selection provided.
+        Retrieve all options for the specified selection.
 
-        Input
-        ----
-        selection (string)
-            The selection you want to see the options for. Choose from:
-                "currency"
-                "sector"
-                "industry_group"
-                "industry"
-                "exchange"
-                "market"
-                "country"
-                "state"
-                "zip_code"
-                "market_cap"
-        country (string, default is None)
-            If filled, gives all data for a specific country.
-        sector (string, default is None)
-            If filled, gives all data for a specific sector.
-        industry_group (string, default is None)
-            If filled, gives all data for a specific industry group.
-        industry (string, default is None)
-            If filled, gives all data for a specific industry.
-        Output
-        ----
-        options (pd.Series)
-            Returns a series with all options for the selection provided.
+        This method returns a series containing all available options for the specified
+        selection, which can be one of the following: "currency", "sector", "industry_group",
+        "industry", "exchange", "market", "country", "state", "zip_code", "market_cap".
+
+        Args:
+            selection (str):
+                The selection you want to see the options for. Choose from:
+                - "currency"
+                - "sector"
+                - "industry_group"
+                - "industry"
+                - "exchange"
+                - "market"
+                - "country"
+                - "state"
+                - "zip_code"
+                - "market_cap"
+            country (str, optional):
+                Specific country to retrieve data for. If not provided, returns data for all countries.
+            sector (str, optional):
+                Specific sector to retrieve data for. If not provided, returns data for all sectors.
+            industry_group (str, optional):
+                Specific industry group to retrieve data for. If not provided, returns data for all industry groups.
+            industry (str, optional):
+                Specific industry to retrieve data for. If not provided, returns data for all industries.
+
+        Returns:
+            pd.Series:
+                A series with all options for the specified selection, sorted and without duplicates.
         """
         selection_values = [
             "currency",

@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-from .helpers import FinanceDatabase
+from .helpers import FinanceDatabase, FinanceFrame
 
 
 class Currencies(FinanceDatabase):
@@ -26,29 +26,23 @@ class Currencies(FinanceDatabase):
         capitalize: bool = True,
     ) -> pd.DataFrame:
         """
-        Description
-        ----
-        Returns all currencies when no input is given and has the option to give
-        a specific combination of currencies based on the from or to currency defined.
+        Retrieve currency data based on specified criteria.
 
-        Input
-        ----
-        base_currency (string, default is None)
-            If filled, gives all data for the base currency.
-        quote_currency
-            If filled, gives all data for the quote currency.
-        capitalize (boolean, default is True):
-            Whether the currency needs to be capitalized. By default the values
-            always are capitalized as that is also how it is represented in the csv files.
-        base_url (string, default is GitHub location)
-            The possibility to enter your own location if desired.
-        use_local_location (string, default False)
-            The possibility to select a local location (i.e. based on Windows path)
+        This method allows you to retrieve data for specific base or quote currencies,
+        with the option to customize the capitalization of currency names. If no input
+        criteria are provided, it returns data for all currencies.
 
-        Output
-        ----
-        currencies_df (pd.DataFrame)
-            Returns a dictionary with a selection or all data based on the input.
+        Args:
+            base_currency (str, optional):
+                Specific base currency to retrieve data for. If not provided, returns data for all base currencies.
+            quote_currency (str, optional):
+                Specific quote currency to retrieve data for. If not provided, returns data for all quote currencies.
+            capitalize (bool, optional):
+                Indicates whether the currency names should be capitalized for matching. Default is True.
+
+        Returns:
+            pd.DataFrame:
+                A DataFrame containing currency data matching the specified input criteria.
         """
         currencies = self.data.copy(deep=True)
 
@@ -65,24 +59,26 @@ class Currencies(FinanceDatabase):
                 )
             ]
 
-        return currencies
+        return FinanceFrame(currencies)
 
     def options(self, selection: str) -> pd.Series:
         """
-        Description
-        ----
-        Returns all options for the selection provided.
+        Retrieve all options for the specified selection.
 
-        Output
-        ----
-        selection (string)
-            The selection you want to see the options for. Choose from:
-                "base_currency"
-                "quote_currency"
-                "exchange"
-                "market"
-        options (pd.Series)
-            Returns a series with all options for the selection provided.
+        This method returns a series containing all available options for the specified
+        selection, which can be one of the following: "base_currency", "quote_currency", "exchange", "market".
+
+        Args:
+            selection (str):
+                The selection you want to see the options for. Choose from:
+                - "base_currency"
+                - "quote_currency"
+                - "exchange"
+                - "market"
+
+        Returns:
+            pd.Series:
+                A series with all options for the specified selection, sorted and without duplicates.
         """
         selection_values = ["base_currency", "quote_currency", "exchange", "market"]
         if selection not in selection_values:
