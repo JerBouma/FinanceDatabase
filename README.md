@@ -537,7 +537,9 @@ for ticker in bollinger_bands.columns.get_level_values(1).unique():
     if column == 3:
         row += 1
         column = 0
-        
+    elif row == 3:
+        break        
+
 figure.suptitle('Technical Analysis of Biotech ETFs during Coronacrisis', fontweight='bold')
 
 figure.tight_layout()
