@@ -212,7 +212,7 @@ This gives you a DataFrame with the following information:
 
 As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
 
-To conclude, this information can then be send to the [Finance Toolkit 🛠️](https://github.com/JerBouma/FinanceToolkit) to obtain 130+ financial metrics, historical and fundamnental data with the `to_toolkit` function. This functionality can be used with any output as obtained from the Finance Database.
+To conclude, this information can then be send to the [Finance Toolkit 🛠️](https://github.com/JerBouma/FinanceToolkit) to obtain 130+ financial metrics, historical and fundamental data with the `to_toolkit` function. This functionality can be used with any output as obtained from the Finance Database.
 
 ```python
 companies = metals_and_mining.to_toolkit(
