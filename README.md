@@ -541,12 +541,12 @@ for ticker in bollinger_bands.columns.get_level_values(1).unique():
         row += 1
         column = 0
         
-figure.suptitle('Technical Analysis of Biotech ETFs during Coronacrisis', fontweight='bold')
+figure.suptitle('Technical Analysis of Biotech ETFs during the Coronacrisis', fontweight='bold')
 
 figure.tight_layout()
 ````
 
-This leads to the following graph which gives an indication of whether Biotech ETFs were oversold or overbought and how this effect is neutralised (to some degree) in the months after. Read more about Bollinger Bands [here](https://www.investopedia.com/terms/b/bollingerbands.asp).
+This leads to the following graph which gives an indication of whether Biotech ETFs were oversold or overbought and how this effect is neutralised (to some degree) in the months after. Read more about the Bollinger Bands [here](https://www.investopedia.com/terms/b/bollingerbands.asp).
 
 ![Coronacrisis](https://github.com/JerBouma/FinanceDatabase/assets/46355364/cb433e03-6ffd-45cc-ac76-3fd01d54a226)
 
