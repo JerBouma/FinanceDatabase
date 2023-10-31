@@ -7,7 +7,7 @@ from .helpers import FinanceDatabase, FinanceFrame
 
 class Equities(FinanceDatabase):
     """
-    Public Equity refers to shares or ownershis of a public
+    Public Equity refers to shares or ownership of a public
     company, i.e., a company that is listed on a public stock
     exchange like the BSE or NYSE. When a company goes public it
     essentially allows the public to buy ownership rights in
