@@ -128,11 +128,11 @@ class FinanceFrame(pd.DataFrame):
         end_date: str | None = None,
         quarterly: bool = False,
         risk_free_rate: str = "10y",
-        benchmark_ticker: str = "^GSPC",
+        benchmark_ticker: str = "SPY",
         custom_ratios: dict | None = None,
         rounding: int = 4,
-        remove_invalid_tickers: bool = True,
-        sleep_timer: bool = False,
+        remove_invalid_tickers: bool = False,
+        sleep_timer: bool = True,
         progress_bar: bool = True,
     ) -> Toolkit:
         """
@@ -145,7 +145,8 @@ class FinanceFrame(pd.DataFrame):
         Args:
             api_key (str, optional):
                 Your API key for access to additional data. If not provided, only historical
-                data and indicators are available.
+                data and indicators are available. Obtainable from:
+                https://www.jeroenbouma.com/fmp
             start_date (str, optional):
                 The start date for historical data retrieval. If not provided, it defaults
                 to the earliest available date.
@@ -177,7 +178,7 @@ class FinanceFrame(pd.DataFrame):
             print(
                 "The parameter api_key is not set. Therefore, only historical data and "
                 "indicators are available. Consider obtaining a key with the following "
-                "link: https://financialmodelingprep.com/developer/docs/pricing/jeroen/"
+                "link: https://www.jeroenbouma.com/fmp"
                 "\nThe free plan allows for 250 requests per day, a limit of 5 years and has no "
                 "quarterly data. You can get 15% off by using the above affiliate link to "
                 "get access to 30+ years of (quarterly) data which also supports the project."
