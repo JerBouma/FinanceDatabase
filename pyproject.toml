@@ -22,7 +22,7 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.10, <3.12"
+python = ">=3.10, <3.13"
 financetoolkit = "^1.3.5"
 pandas = {extras = ["computation", "performance", "plot"], version = "^2.1.0"}
 
