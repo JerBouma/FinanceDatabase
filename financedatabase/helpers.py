@@ -128,47 +128,39 @@ class FinanceFrame(pd.DataFrame):
         end_date: str | None = None,
         quarterly: bool = False,
         risk_free_rate: str = "10y",
-        benchmark_ticker: str = "SPY",
-        custom_ratios: dict | None = None,
-        rounding: int = 4,
+        benchmark_ticker: str | None = "SPY",
+        rounding: int | None = 4,
         remove_invalid_tickers: bool = False,
-        sleep_timer: bool = True,
+        sleep_timer: bool | None = None,
         progress_bar: bool = True,
     ) -> Toolkit:
         """
         Convert the FinanceFrame to a Finance Toolkit object.
 
         This method allows you to convert the FinanceFrame to a Finance Toolkit object,
-        providing access to 30+ years of fundamental and historical data, 120+ ratios,
+        providing access to 30+ years of fundamental and historical data, 180+ ratios,
         performance and risk metrics, models, and technical indicators.
 
         Args:
-            api_key (str, optional):
-                Your API key for access to additional data. If not provided, only historical
-                data and indicators are available. Obtainable from:
-                https://www.jeroenbouma.com/fmp
-            start_date (str, optional):
-                The start date for historical data retrieval. If not provided, it defaults
-                to the earliest available date.
-            end_date (str, optional):
-                The end date for historical data retrieval. If not provided, it defaults to
-                the current date.
-            quarterly (bool, optional):
-                Set to True to retrieve quarterly data. Defaults to False.
-            risk_free_rate (str, optional):
-                The risk-free rate used for calculations. Defaults to "10y".
-            benchmark_ticker (str, optional):
-                The benchmark ticker symbol. Defaults to "^GSPC".
-            custom_ratios (dict, optional):
-                Custom ratios to calculate. Should be a dictionary of ratio names and formulas.
-            rounding (int, optional):
-                The number of decimal places to round data. Defaults to 4.
-            remove_invalid_tickers (bool, optional):
-                Remove invalid tickers from the toolkit. Defaults to True.
-            sleep_timer (bool, optional):
-                Enable a sleep timer to avoid rate limiting. Defaults to False.
-            progress_bar (bool, optional):
-                Show a progress bar during data retrieval. Defaults to True.
+            api_key (str): An API key from FinancialModelingPrep. Obtain one here: https://www.jeroenbouma.com/fmp
+            start_date (str): A string containing the start date of the data. This needs to be formatted as YYYY-MM-DD.
+                The default is today minus 10 years which can be freely changed to extend the period.
+            end_date (str): A string containing the end date of the data. This needs to be formatted as YYYY-MM-DD.
+                The default is today which can be freely changed to extend the period.
+            quarterly (bool): A boolean indicating whether to collect quarterly data. This defaults to False and thus
+            collects yearly financial statements. Note that historical data can still be collected for
+            any period and interval.
+            risk_free_rate (str): A string containing the risk free rate. This can be 13w, 5y, 10y or 30y. This is
+            based on the US Treasury Yields and is used to calculate various ratios and Excess Returns.
+            benchmark_ticker (str): A string containing the benchmark ticker. Defaults to SPY (S&P 500). This is
+            meant to calculate ratios and indicators such as the CAPM and Jensen's Alpha but also serves as purpose to
+            give insights in the performance of a stock compared to a benchmark.
+            rounding (int): An integer indicating the number of decimals to round the results to.
+            remove_invalid_tickers (bool): A boolean indicating whether to remove invalid tickers. Defaults to False.
+            sleep_timer (bool): Whether to set a sleep timer when the rate limit is reached. Note that this only works
+            if you have a Premium subscription (Starter or higher) from FinancialModelingPrep. Defaults to None which
+            means it is determined by the model (Free plan = False, Premium plan = True).
+            progress_bar (bool): Whether to enable the progress bar when ticker amount is over 10. Defaults to True.
 
         Returns:
             Toolkit:
@@ -193,7 +185,6 @@ class FinanceFrame(pd.DataFrame):
             quarterly=quarterly,
             risk_free_rate=risk_free_rate,
             benchmark_ticker=benchmark_ticker,
-            custom_ratios=custom_ratios,
             rounding=rounding,
             remove_invalid_tickers=remove_invalid_tickers,
             sleep_timer=sleep_timer,
