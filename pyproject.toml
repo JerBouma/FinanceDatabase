@@ -30,7 +30,7 @@ pandas = {extras = ["computation", "performance", "plot"], version = "^2.1.0"}
 pytest = "^6.2.2"
 pylint = "2.17.0"
 codespell = "^2.2.4"
-black = "^23.1.0"
+black = ">=23.1,<25.0"
 bandit = "^1.7.0"
 pytest-mock = "^3.6.1"
 pytest-recording = "^0.12.0"
