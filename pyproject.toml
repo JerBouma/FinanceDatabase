@@ -23,7 +23,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = ">=3.10, <3.13"
-financetoolkit = "^1"
+financetoolkit = "*"
 pandas = {extras = ["computation", "performance", "plot"], version = "^2.1.0"}
 
 [tool.poetry.group.dev.dependencies]
