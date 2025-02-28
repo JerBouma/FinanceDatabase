@@ -81,7 +81,7 @@ jobs:
                     # Checks if ticker exists, if yes, continue
                     fd_data = equities.loc[index]
 
-                    if len(fd_data) > 0:
+                    if len(fd_data) > 1:
                         print(f"Please note that {index} has multiple entries.")
                         continue
                     
