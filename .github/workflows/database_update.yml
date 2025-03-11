@@ -93,7 +93,7 @@ jobs:
                     if index != index:
                       # Specific case where the ticker is NA which is recognized
                       # as a NaN instead meaning it will continuously be added
-                      index = "NANO"
+                      index = "NA"
 
                     ticker_dict[index] = {}
 
