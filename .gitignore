@@ -11,8 +11,10 @@ PyPi Build/
 Tests/*.html
 .DS_Store
 *.ipynb
+*.pickle
 !examples/*.ipynb
 !compression.ipynb
+
 
 # C extensions
 *.so
