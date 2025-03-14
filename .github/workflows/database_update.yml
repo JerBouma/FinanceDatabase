@@ -157,6 +157,12 @@ jobs:
 
                 # Sort the index        
                 equities = equities.sort_index()
+
+                # Drop NaN values in the index
+                new_index = equities.index.dropna()
+
+                # Update the equities DataFrame 
+                equities = equities.loc[new_index]
                 
                 # Send to CSV
                 equities.to_csv('database/equities.csv')
@@ -388,4 +394,4 @@ jobs:
                     print(f"{index}: {row['error']}")
                 
                 raise ValueError("There are invalid sector, industry groups and/or industries found. "
-                                 "Please check if it adheres to https://www.msci.com/our-solutions/indexes/gics")
+                                 "Please check if it adheres to compression/categories/categories.json")
