@@ -3,7 +3,6 @@
 from pathlib import Path
 
 import pandas as pd
-from financetoolkit import Toolkit
 
 file_path = Path(__file__).parent.parent / "compression"
 DATA_REPO = (
@@ -127,13 +126,17 @@ class FinanceFrame(pd.DataFrame):
         start_date: str | None = None,
         end_date: str | None = None,
         quarterly: bool = False,
+        use_cached_data: bool | str = False,
         risk_free_rate: str = "10y",
         benchmark_ticker: str | None = "SPY",
+        historical_source: str | None = None,
+        convert_currency: bool | None = None,
+        intraday_period: str | None = None,
         rounding: int | None = 4,
         remove_invalid_tickers: bool = False,
         sleep_timer: bool | None = None,
         progress_bar: bool = True,
-    ) -> Toolkit:
+    ):
         """
         Convert the FinanceFrame to a Finance Toolkit object.
 
@@ -142,7 +145,11 @@ class FinanceFrame(pd.DataFrame):
         performance and risk metrics, models, and technical indicators.
 
         Args:
-            api_key (str): An API key from FinancialModelingPrep. Obtain one here: https://www.jeroenbouma.com/fmp
+            tickers (str or list): A string or a list of strings containing the company ticker(s). E.g. 'TSLA' or 'MSFT'
+            Find the tickers on a variety of websites or via the FinanceDatabase:
+            https://github.com/JerBouma/financedatabase
+            api_key (str): An API key from FinancialModelingPrep. Obtain one here:
+            https://www.jeroenbouma.com/fmp
             start_date (str): A string containing the start date of the data. This needs to be formatted as YYYY-MM-DD.
                 The default is today minus 10 years which can be freely changed to extend the period.
             end_date (str): A string containing the end date of the data. This needs to be formatted as YYYY-MM-DD.
@@ -150,11 +157,29 @@ class FinanceFrame(pd.DataFrame):
             quarterly (bool): A boolean indicating whether to collect quarterly data. This defaults to False and thus
             collects yearly financial statements. Note that historical data can still be collected for
             any period and interval.
+            use_cached_data (bool or str): A boolean indicating whether to use cached data. This is useful when you
+            have collected data before and want to use this data again. If you want to use a specific location to
+            store the cached data, you can define this as a string, e.g. "datasets". Defaults to False.
             risk_free_rate (str): A string containing the risk free rate. This can be 13w, 5y, 10y or 30y. This is
             based on the US Treasury Yields and is used to calculate various ratios and Excess Returns.
             benchmark_ticker (str): A string containing the benchmark ticker. Defaults to SPY (S&P 500). This is
             meant to calculate ratios and indicators such as the CAPM and Jensen's Alpha but also serves as purpose to
             give insights in the performance of a stock compared to a benchmark.
+            historical_source (str): A string containing the historical source. This can be either FinancialModelingPrep
+            or YahooFinance. Defaults to FinancialModelingPrep. It is automatically defined if you enter an API Key from
+            FinancialModelingPrep. You can overwrite this by filling this parameter. Note that for the Free plan
+            the amount of historical data is limited to 5 years. If you want to collect more data, you need to
+            upgrade to a paid plan.
+            convert_currency (bool): A boolean indicating whether to convert the currency of the financial statements to
+            match that of the related historical data. This is an important conversion when comparing the financial
+            statements between each ticker as well as for calculations that are done with the historical data.
+                If you are using a Free plan from FinancialModelingPrep, this will be set to False.
+                If you are using a Premium plan from FinancialModelingPrep, this will be set to True. Defaults to None
+            and can thus be overridden.
+            intraday_period (str): A string containing the intraday period. This can be 1min, 5min, 15min, 30min or 1hour.
+            This is used to collect intraday data. Note that this is only relevant if you have are looking to utilize
+            intraday data through the Toolkit and wish to access Risk, Performance and Technicals for very short
+            timeframes. Defaults to None which means it will not use intraday data.
             rounding (int): An integer indicating the number of decimals to round the results to.
             remove_invalid_tickers (bool): A boolean indicating whether to remove invalid tickers. Defaults to False.
             sleep_timer (bool): Whether to set a sleep timer when the rate limit is reached. Note that this only works
@@ -166,6 +191,13 @@ class FinanceFrame(pd.DataFrame):
             Toolkit:
                 A Finance Toolkit object.
         """
+        try:
+            from financetoolkit import Toolkit
+        except ImportError:
+            raise ImportError(
+                "To use the 'to_toolkit' functionality, it requires installation of the FinanceToolkit "
+                "Please use: \033[1m pip install 'financedatabase[financetoolkit]' \033[0m"
+            )
         if api_key is None:
             print(
                 "The parameter api_key is not set. Therefore, only historical data and "
@@ -183,8 +215,12 @@ class FinanceFrame(pd.DataFrame):
             start_date=start_date,
             end_date=end_date,
             quarterly=quarterly,
+            use_cached_data=use_cached_data,
             risk_free_rate=risk_free_rate,
             benchmark_ticker=benchmark_ticker,
+            historical_source=historical_source,
+            convert_currency=convert_currency,
+            intraday_period=intraday_period,
             rounding=rounding,
             remove_invalid_tickers=remove_invalid_tickers,
             sleep_timer=sleep_timer,
