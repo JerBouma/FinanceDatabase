@@ -67,6 +67,7 @@ disable = [
     "R0917", # too-many-positional-arguments
     "W0212", # protected-access
     "R0914", # too-many-locals
+    "R1702", # too-many-nested-blocks
     ]
 
 [tool.ruff.lint.isort]
