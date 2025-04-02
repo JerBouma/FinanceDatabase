@@ -13,28 +13,49 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.10"
           architecture: x64
 
-      - run: |
-          pip install bandit black codespell safety pylint==2.15.2 packaging==22 ruff==0.0.243
-          pip install types-pytz types-requests types-termcolor types-tabulate types-PyYAML types-python-dateutil types-setuptools types-six
-          pip install financedatabase pandas yfinance ta fundamentalanalysis matplotlib
-      - run: black --diff --check .
-      - run: codespell
-      - run: ruff financedatabase
-      - run: pylint financedatabase
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          version: latest
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v3
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
+
+      - name: Install dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction
+
+      - name: Run black
+        run: poetry run black --diff --check .
+
+      - name: Run codespell
+        run: poetry run codespell
+
+      - name: Run ruff
+        run: poetry run ruff financedatabase
+
+      - name: Run pylint
+        run: poetry run pylint financedatabase
 
   markdown-link-check:
     name: Markdown Linting
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         name: Check out the code
       - name: Lint Code Base
         uses: docker://avtodev/markdown-lint:v1
