@@ -1,4 +1,4 @@
-"Moneymarkets Module"
+"""Moneymarkets Module"""
 
 import pandas as pd
 
@@ -11,76 +11,100 @@ class Moneymarkets(FinanceDatabase):
     At the wholesale level, it involves large-volume trades between institutions
     and traders. At the retail level, it includes money market mutual funds
     bought by individual investors and money market accounts opened
-    by bank customers. [Source: Investopedia]
+    by bank customers.
 
     This class provides information about the moneymarkets available as well as the
-    ability to select specific moneymarkets based on the currency.
+    ability to select specific moneymarkets based on the currency and family.
     """
 
     FILE_NAME = "moneymarkets.bz2"
 
     def select(
-        self,
-        category: str = "",
-        capitalize: bool = True,
-        exclude_exchanges: bool = True,
+        self, currency: str | None = None, family: str | None = None
     ) -> pd.DataFrame:
         """
-        Returns all moneymarkets when no input is given and has the option to give
-        a specific combination of moneymarkets based on the category defined.
+        Select moneymarkets based on specified criteria.
+
+        Returns all moneymarkets when no input is given and has the option to filter
+        based on currency and family.
 
         Args:
-            category (str, optional):
-                If filled, gives all data for a specific category. Default is an empty string.
-            capitalize (bool, optional):
-                Whether the category needs to be capitalized. Default is True.
-            exclude_exchanges (bool, optional):
-                Whether you want to exclude exchanges from the search. If False,
-                you will receive multiple times the product from different exchanges.
-                Default is True.
+            currency (str, optional): Filter by currency. Default is None.
+            family (str, optional): Filter by family. Default is None.
 
         Returns:
-            indices_df (pd.DataFrame):
-                Returns a DataFrame with a selection or all data based on the input.
+            pd.DataFrame: DataFrame containing the selected moneymarkets data.
+
+        Raises:
+            ValueError: If the specified currency or family is not available in the database.
         """
         moneymarkets = self.data.copy(deep=True)
 
-        if category:
-            moneymarkets = moneymarkets[
-                moneymarkets["category"].str.contains(
-                    category.title() if capitalize else category, na=False
+        if currency:
+            currency = currency.lower()
+            options_lower = [
+                option.lower() for option in self.show_options(selection="currency")
+            ]
+            if currency not in options_lower:
+                raise ValueError(
+                    f"The currency '{currency}' is not available in the database. "
+                    "Please check the available currencies using the 'options' method."
                 )
-            ]
-        if exclude_exchanges:
             moneymarkets = moneymarkets[
-                ~moneymarkets.index.str.contains(r"\.", na=False)
+                moneymarkets["currency"].str.lower() == currency
             ]
+
+        if family:
+            family = family.lower()
+            options_lower = [
+                option.lower() for option in self.show_options(selection="family")
+            ]
+            if family not in options_lower:
+                raise ValueError(
+                    f"The family '{family}' is not available in the database. "
+                    "Please check the available families using the 'options' method."
+                )
+            moneymarkets = moneymarkets[moneymarkets["family"].str.lower() == family]
 
         return FinanceFrame(moneymarkets)
 
-    def options(self, selection: str) -> pd.Series:
+    def show_options(
+        self,
+        selection: str | None = None,
+        currency: str | None = None,
+        family: str | None = None,
+    ) -> pd.Series:
         """
-        Returns all options for the selection provided.
+        Show available options for the specified selection.
 
         Args:
-            selection (str):
-                The selection you want to see the options for. Choose from:
-                    "category"
-                    "currency"
-                    "market"
-                    "exchange"
+            selection (str, optional): The category to show options for.
+                                      Choose from: "currency" or "family".
+                                      Default is None.
+            currency (str, optional): Filter by currency. Default is None.
+            family (str, optional): Filter by family. Default is None.
 
         Returns:
-            options (pd.Series):
-                Returns a Series with all options for the selection provided.
+            pd.Series: Series containing available options for the specified selection.
+
+        Raises:
+            ValueError: If the selection variable provided is not valid.
         """
-        selection_values = ["category", "currency", "market", "exchange"]
-        if selection not in selection_values:
+        selection_values = ["currency", "family"]
+
+        if selection is not None and selection not in selection_values:
             raise ValueError(
                 f"The selection variable provided is not valid, "
                 f"choose from {', '.join(selection_values)}"
             )
 
-        moneymarkets = self.select(exclude_exchanges=False)
+        moneymarkets = self.select(currency=currency, family=family)
 
-        return moneymarkets[selection].dropna().sort_values().unique()
+        return (
+            {
+                column: moneymarkets[column].dropna().sort_values().unique()
+                for column in selection_values
+            }
+            if selection is None
+            else moneymarkets[selection].dropna().sort_values().unique()
+        )

@@ -1,8 +1,9 @@
-"Helper Module"
+"""Helper Module for the Finance Database package."""
 
 from pathlib import Path
 
 import pandas as pd
+import requests
 
 file_path = Path(__file__).parent.parent / "compression"
 DATA_REPO = (
@@ -11,17 +12,23 @@ DATA_REPO = (
 
 # pylint: disable=isinstance-second-argument-not-valid-type
 
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/58.0.3029.110 Safari/537.3"
+}
+
 
 class FinanceDatabase:
     """
-    The FinanceDatabase serves the role of providing anyone with any type of
-    financial product categorisation entirely for free. It features 300.000+
-    symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies
-    and Money Markets. It therefore allows you to obtain a broad overview of
-    sectors, industries, types of investments and much more.
+    Financial product categorization database.
 
-    This class is the base controller of all other classes that are named
-    after their corresponding asset class.
+    The FinanceDatabase provides free categorization of all types of financial products.
+    It features over 300,000 symbols containing Equities, ETFs, Funds, Indices,
+    Currencies, Cryptocurrencies, and Money Markets, offering a comprehensive overview
+    of sectors, industries, investment types, and more.
+
+    This class serves as the base controller for all asset-class specific subclasses.
     """
 
     FILE_NAME = ""
@@ -32,39 +39,61 @@ class FinanceDatabase:
         use_local_location: bool = False,
     ):
         """
-        Initialize the FinanceFrame object.
+        Initialize the FinanceDatabase object.
 
-        This constructor reads the database from the CSV file corresponding to the
-        asset class, which can be located remotely or locally.
+        Reads the database from a CSV file corresponding to the asset class,
+        which can be located either remotely or locally.
 
         Args:
-            base_url (str, optional):
-                The URL or local path to the CSV file. Defaults to the GitHub location.
-            use_local_location (bool, optional):
-                Set to True if using a local file path. Defaults to False.
+            base_url: The URL or local path to the CSV file.
+                Defaults to the GitHub repository location.
+            use_local_location: Whether to use a local file path instead of URL.
+                Defaults to False.
+
+        Raises:
+            Exception: If unable to load data from the specified location.
         """
         the_path = str(file_path) + "/" if use_local_location else base_url
         the_path += self.FILE_NAME
-        self.data = pd.read_csv(the_path, compression="bz2", index_col=0)
+        try:
+            if use_local_location:
+                self.data = pd.read_csv(the_path, compression="bz2", index_col=0)
+            else:
+                response = requests.get(the_path, headers=HEADERS, timeout=60)
+                response.raise_for_status()
+
+                self.data = pd.read_csv(
+                    pd.io.common.BytesIO(response.content),
+                    compression="bz2",
+                    index_col=0,
+                )
+        except requests.exceptions.RequestException as error:
+            raise ValueError(
+                f"Failed to load data from {the_path}: {str(error)}.\n"
+                "Ensure you are able to access the file. "
+                "It is possible it fails due to a firewall or other security settings. "
+                "Sometimes Google Colab is also the culprit."
+            ) from error
 
     def search(self, **kwargs: str) -> pd.DataFrame:
         """
-        Search for specific data based on the provided criteria.
+        Search for specific data based on provided criteria.
 
-        This method allows you to search for data in the FinanceFrame based on
-        the provided column name and query. You can also specify whether the search
-        should be case-sensitive or not.
+        Allows searching the database based on column names and queries,
+        with optional case sensitivity.
 
         Args:
-            **kwargs (str):
-                Should contain the column name and query you wish to perform.
+            **kwargs: Column names and search queries.
                 For example, symbol="TSLA" or sector="Technology".
-            case_sensitive (bool, optional):
-                Determines whether the query should be case-sensitive. Defaults to False.
+            case_sensitive (bool): Whether the search should be case-sensitive.
+                Defaults to False.
+            only_primary_listing (bool): Whether to exclude secondary listings.
+                Defaults to False.
+            index (str): Search within the DataFrame index.
+                Defaults to None.
 
         Returns:
-            pd.DataFrame:
-                A DataFrame with a selection of data based on the input criteria.
+            DataFrame with filtered data based on the input criteria.
         """
         data_filter = self.data.copy()
 
@@ -75,7 +104,7 @@ class FinanceDatabase:
             case_sensitive = False
 
         for key, value in kwargs.items():
-            if key == "exclude_exchanges":
+            if key == "only_primary_listing":
                 if value is True:
                     # Filter data if exclude exchanges is set to True
                     data_filter = data_filter[
@@ -100,24 +129,23 @@ class FinanceDatabase:
 
         return FinanceFrame(data_filter)
 
-    def options(self) -> pd.Series:
+    def show_options(self) -> pd.Series:
         """
-        Get all available options for the specific asset class.
+        Get all available column options for the specific asset class.
 
         Returns:
-            pd.Series:
-                A series containing all available options for the specific asset class.
+            Series containing all available column names for the asset class.
         """
         return self.data.columns
 
 
 class FinanceFrame(pd.DataFrame):
     """
-    The FinanceFrame is a helper class that adds in additional
-    functionality on top of the DataFrame object where applicable. For
-    the most part this is done to be able to connect to the Finance
-    Toolkit with ease using the tickers as obtained from the
-    Finance Database.
+    Enhanced DataFrame with financial data integration capabilities.
+
+    Extends the pandas DataFrame with additional functionality for
+    financial analysis, particularly for connecting with the Finance
+    Toolkit using tickers obtained from the Finance Database.
     """
 
     def to_toolkit(
@@ -140,64 +168,54 @@ class FinanceFrame(pd.DataFrame):
         """
         Convert the FinanceFrame to a Finance Toolkit object.
 
-        This method allows you to convert the FinanceFrame to a Finance Toolkit object,
-        providing access to 30+ years of fundamental and historical data, 180+ ratios,
-        performance and risk metrics, models, and technical indicators.
+        Creates a Finance Toolkit object using the tickers in this DataFrame,
+        providing access to fundamental and historical data, ratios, metrics,
+        models, and technical indicators.
 
         Args:
-            tickers (str or list): A string or a list of strings containing the company ticker(s). E.g. 'TSLA' or 'MSFT'
-            Find the tickers on a variety of websites or via the FinanceDatabase:
-            https://github.com/JerBouma/financedatabase
-            api_key (str): An API key from FinancialModelingPrep. Obtain one here:
-            https://www.jeroenbouma.com/fmp
-            start_date (str): A string containing the start date of the data. This needs to be formatted as YYYY-MM-DD.
-                The default is today minus 10 years which can be freely changed to extend the period.
-            end_date (str): A string containing the end date of the data. This needs to be formatted as YYYY-MM-DD.
-                The default is today which can be freely changed to extend the period.
-            quarterly (bool): A boolean indicating whether to collect quarterly data. This defaults to False and thus
-            collects yearly financial statements. Note that historical data can still be collected for
-            any period and interval.
-            use_cached_data (bool or str): A boolean indicating whether to use cached data. This is useful when you
-            have collected data before and want to use this data again. If you want to use a specific location to
-            store the cached data, you can define this as a string, e.g. "datasets". Defaults to False.
-            risk_free_rate (str): A string containing the risk free rate. This can be 13w, 5y, 10y or 30y. This is
-            based on the US Treasury Yields and is used to calculate various ratios and Excess Returns.
-            benchmark_ticker (str): A string containing the benchmark ticker. Defaults to SPY (S&P 500). This is
-            meant to calculate ratios and indicators such as the CAPM and Jensen's Alpha but also serves as purpose to
-            give insights in the performance of a stock compared to a benchmark.
-            historical_source (str): A string containing the historical source. This can be either FinancialModelingPrep
-            or YahooFinance. Defaults to FinancialModelingPrep. It is automatically defined if you enter an API Key from
-            FinancialModelingPrep. You can overwrite this by filling this parameter. Note that for the Free plan
-            the amount of historical data is limited to 5 years. If you want to collect more data, you need to
-            upgrade to a paid plan.
-            convert_currency (bool): A boolean indicating whether to convert the currency of the financial statements to
-            match that of the related historical data. This is an important conversion when comparing the financial
-            statements between each ticker as well as for calculations that are done with the historical data.
-                If you are using a Free plan from FinancialModelingPrep, this will be set to False.
-                If you are using a Premium plan from FinancialModelingPrep, this will be set to True. Defaults to None
-            and can thus be overridden.
-            intraday_period (str): A string containing the intraday period. This can be 1min, 5min, 15min, 30min or 1hour.
-            This is used to collect intraday data. Note that this is only relevant if you have are looking to utilize
-            intraday data through the Toolkit and wish to access Risk, Performance and Technicals for very short
-            timeframes. Defaults to None which means it will not use intraday data.
-            rounding (int): An integer indicating the number of decimals to round the results to.
-            remove_invalid_tickers (bool): A boolean indicating whether to remove invalid tickers. Defaults to False.
-            sleep_timer (bool): Whether to set a sleep timer when the rate limit is reached. Note that this only works
-            if you have a Premium subscription (Starter or higher) from FinancialModelingPrep. Defaults to None which
-            means it is determined by the model (Free plan = False, Premium plan = True).
-            progress_bar (bool): Whether to enable the progress bar when ticker amount is over 10. Defaults to True.
+            api_key: API key from FinancialModelingPrep.
+                Obtain one at: https://www.jeroenbouma.com/fmp
+            start_date: Start date for data collection (YYYY-MM-DD).
+                Defaults to 10 years before current date.
+            end_date: End date for data collection (YYYY-MM-DD).
+                Defaults to current date.
+            quarterly: Whether to collect quarterly financial statements.
+                Defaults to False (yearly statements).
+            use_cached_data: Whether to use previously cached data.
+                Can be a boolean or a string path. Defaults to False.
+            risk_free_rate: Risk-free rate to use (13w, 5y, 10y, 30y).
+                Based on US Treasury Yields. Defaults to "10y".
+            benchmark_ticker: Ticker for benchmark comparisons.
+                Defaults to "SPY" (S&P 500).
+            historical_source: Source for historical data ("FinancialModelingPrep"
+                or "YahooFinance"). Defaults to FinancialModelingPrep.
+            convert_currency: Whether to convert financial statement currencies
+                to match historical data. Defaults to None (auto-determined).
+            intraday_period: Time period for intraday data (1min, 5min, 15min,
+                30min, 1hour). Defaults to None.
+            rounding: Number of decimal places for results. Defaults to 4.
+            remove_invalid_tickers: Whether to remove invalid tickers.
+                Defaults to False.
+            sleep_timer: Whether to use a sleep timer when rate limit is reached.
+                Defaults to None (auto-determined).
+            progress_bar: Whether to show progress bar for 10+ tickers.
+                Defaults to True.
 
         Returns:
-            Toolkit:
-                A Finance Toolkit object.
+            Finance Toolkit object with data for the tickers in this DataFrame.
+
+        Raises:
+            ImportError: If FinanceToolkit is not installed.
         """
         try:
-            from financetoolkit import Toolkit
-        except ImportError:
+            from financetoolkit import (  # pylint: disable=import-outside-toplevel
+                Toolkit,
+            )
+        except ImportError as exc:
             raise ImportError(
                 "To use the 'to_toolkit' functionality, it requires installation of the FinanceToolkit "
-                "Please use: \033[1m pip install 'financedatabase[financetoolkit]' \033[0m"
-            )
+                "Please use: \033[1m pip install financetoolkit \033[0m"
+            ) from exc
         if api_key is None:
             print(
                 "The parameter api_key is not set. Therefore, only historical data and "
@@ -230,36 +248,32 @@ class FinanceFrame(pd.DataFrame):
         return toolkit
 
 
-def obtain_options(
-    selection: str, base_url: str = DATA_REPO, use_local_location: bool = False
+def show_options(
+    selection: str | None = None,
+    base_url: str = DATA_REPO,
+    use_local_location: bool = False,
 ) -> dict:
     """
-    Obtain a dictionary with all options for the specific asset class.
+    Get available category options for a specific asset class.
 
-    This method provides a dictionary with all available options for the specified
-    asset class, which can be helpful for understanding available categories without
-    initializing the class itself.
+    Provides a dictionary of all available categories for the specified
+    asset class without requiring class initialization.
 
     Args:
-        selection (str):
-            The name of the class you wish to obtain the options for. Choose from:
-                "equities"
-                "etfs"
-                "funds"
-                "indices"
-                "currencies"
-                "cryptos"
-                "moneymarkets"
-        base_url (str, optional):
-            The possibility to enter your own location if desired. Defaults to the
-            GitHub location.
-        use_local_location (bool, optional):
-            The possibility to select a local location (i.e., based on a Windows path).
+        selection: Asset class to get options for. Can be one of:
+            'equities', 'etfs', 'funds', 'indices', 'currencies',
+            'cryptos', 'moneymarkets'.
+        base_url: Custom URL or file path location.
+            Defaults to the GitHub repository.
+        use_local_location: Whether to use a local file path.
             Defaults to False.
 
     Returns:
-        categories (dict):
-            A dictionary with all options for the specific asset class.
+        Dictionary mapping category names to their possible values.
+
+    Raises:
+        ValueError: If selection is None or invalid.
+        Exception: If unable to load data from the specified location.
     """
     selection_values = [
         "equities",
@@ -270,6 +284,11 @@ def obtain_options(
         "cryptos",
         "moneymarkets",
     ]
+    if selection is None:
+        raise ValueError(
+            "The 'selection' variable is not set. Please provide a valid selection.\n"
+            f"The available options are: {', '.join(selection_values)}"
+        )
     if selection not in selection_values:
         raise ValueError(
             f"The selection variable provided is not valid, "
@@ -278,7 +297,25 @@ def obtain_options(
 
     the_path = str(file_path) + "/" if use_local_location else base_url
     the_path += f"/categories/{selection}_categories.gzip"
-    categories_df = pd.read_csv(the_path, index_col=0, compression="gzip")
+
+    try:
+        if use_local_location:
+            categories_df = pd.read_csv(the_path, compression="gzip", index_col=0)
+        else:
+            response = requests.get(the_path, headers=HEADERS, timeout=60)
+            response.raise_for_status()
+
+            categories_df = pd.read_csv(
+                pd.io.common.BytesIO(response.content), compression="gzip", index_col=0
+            )
+    except requests.exceptions.RequestException as error:
+        raise ValueError(
+            f"Failed to load data from {the_path}: {str(error)}.\n"
+            "Ensure you are able to access the file. "
+            "It is possible it fails due to a firewall or other security settings. "
+            "Sometimes Google Colab is also the culprit."
+        ) from error
+
     categories = {
         index: categories_df.loc[index].dropna().to_numpy()
         for index in categories_df.index

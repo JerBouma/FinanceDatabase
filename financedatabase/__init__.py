@@ -1,6 +1,6 @@
 """Init Module"""
 
-from .helpers import obtain_options  # noqa
+from .helpers import show_options  # noqa
 from .Cryptos import Cryptos  # noqa
 from .Currencies import Currencies  # noqa
 from .Equities import Equities  # noqa

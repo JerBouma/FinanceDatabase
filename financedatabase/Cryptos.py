@@ -1,4 +1,4 @@
-"Cryptos Module"
+"""Cryptos Module"""
 
 import pandas as pd
 
@@ -14,7 +14,9 @@ class Cryptos(FinanceDatabase):
     a disparate network of computers. A defining feature of cryptocurrencies
     is that they are generally not issued by any central authority,
     rendering them theoretically immune to government interference
-    or manipulation. [Source: Investopedia]
+    or manipulation. This decentralized structure appeals to many
+    investors who are looking for an alternative to traditional
+    financial systems.
 
     This class provides information about the cryptocurrencies available as
     well as the ability to select specific cryptocurrencies based on the currency.
@@ -24,9 +26,8 @@ class Cryptos(FinanceDatabase):
 
     def select(
         self,
-        crypto: str = "",
-        currency: str = "",
-        capitalize: bool = True,
+        cryptocurrency: str | None = None,
+        currency: str | None = None,
     ) -> pd.DataFrame:
         """
         Obtain cryptocurrency data based on specified criteria.
@@ -36,59 +37,91 @@ class Cryptos(FinanceDatabase):
         criteria are provided, it returns data for all cryptocurrencies.
 
         Args:
-            crypto (str, optional):
-                Specific cryptocurrency to retrieve data for. If not provided, returns data for all cryptocurrencies.
-            currency (str, optional):
-                Specific currency to filter by. If not provided, no currency filtering is applied.
-            capitalize (bool, optional):
-                Indicates whether the cryptocurrency names should be capitalized for matching. Default is True.
+            cryptocurrency: Specific cryptocurrency to retrieve data for.
+                If not provided, returns data for all cryptocurrencies.
+            currency: Specific currency to retrieve data for.
+                If not provided, returns data for all currencies.
 
         Returns:
-            pd.DataFrame:
-                A DataFrame containing cryptocurrency data matching the specified input criteria.
+            A DataFrame containing cryptocurrency data matching the specified input criteria.
+
+        Raises:
+            ValueError: If the specified cryptocurrency or currency is not available in the database.
         """
         cryptos = self.data.copy(deep=True)
 
-        if crypto:
-            cryptos = cryptos[
-                cryptos["cryptocurrency"].str.contains(
-                    crypto.upper() if capitalize else crypto, na=False
-                )
+        if cryptocurrency:
+            cryptocurrency = cryptocurrency.lower()
+            options_lower = [
+                option.lower()
+                for option in self.show_options(selection="cryptocurrency")
             ]
+            if cryptocurrency not in options_lower:
+                raise ValueError(
+                    f"The cryptocurrency '{cryptocurrency}' is not available in the database. "
+                    "Please check the available cryptocurrencies using the 'show_options' method."
+                )
+
+            cryptos = cryptos[cryptos["cryptocurrency"].str.lower() == cryptocurrency]
         if currency:
-            cryptos = cryptos[
-                cryptos["currency"].str.contains(
-                    currency.upper() if capitalize else currency, na=False
-                )
+            currency = currency.lower()
+            options_lower = [
+                option.lower() for option in self.show_options(selection="currency")
             ]
+            if currency not in options_lower:
+                raise ValueError(
+                    f"The currency '{currency}' is not available in the database. "
+                    "Please check the available currencies using the 'show_options' method."
+                )
+
+            cryptos = cryptos[cryptos["currency"].str.lower() == currency]
 
         return FinanceFrame(cryptos)
 
-    def options(self, selection: str) -> pd.Series:
+    def show_options(
+        self,
+        selection: str | None = None,
+        cryptocurrency: str | None = None,
+        currency: str | None = None,
+    ) -> pd.Series:
         """
         Retrieve all options for a specified selection.
 
         This method returns a series containing all available options for the specified
-        selection, which can be one of the following: "cryptocurrency", "currency", "exchange", "market".
+        selection, which can be one of the following: "cryptocurrency" or "currency".
 
         Args:
-            selection (str):
-                The selection you want to see the options for. Choose from:
-                - "cryptocurrency"
-                - "currency"
-                - "exchange"
-                - "market"
+            selection: The selection variable to retrieve options for.
+                Valid options are "cryptocurrency" or "currency".
+            cryptocurrency: Specific cryptocurrency to filter options.
+                If not provided, returns data for all cryptocurrencies.
+            currency: Specific currency to filter options.
+                If not provided, returns data for all currencies.
 
         Returns:
-            pd.Series:
-                A series with all options for the specified selection.
+            A series with all options for the specified selection.
+
+        Raises:
+            ValueError: If the specified selection is not valid.
         """
-        selection_values = ["cryptocurrency", "currency", "exchange", "market"]
-        if selection not in selection_values:
+        selection_values = ["cryptocurrency", "currency"]
+
+        if selection is not None and selection not in selection_values:
             raise ValueError(
                 f"The selection variable provided is not valid, "
                 f"choose from {', '.join(selection_values)}"
             )
-        cryptos = self.select()
 
-        return cryptos[selection].dropna().unique()
+        cryptos = self.select(
+            cryptocurrency=cryptocurrency,
+            currency=currency,
+        )
+
+        return (
+            {
+                column: cryptos[column].dropna().sort_values().unique()
+                for column in selection_values
+            }
+            if selection is None
+            else cryptos[selection].dropna().sort_values().unique()
+        )

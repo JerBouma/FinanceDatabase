@@ -22,12 +22,15 @@ class Equities(FinanceDatabase):
 
     def select(
         self,
-        country: str = "",
-        sector: str = "",
-        industry_group: str = "",
-        industry: str = "",
-        exclude_exchanges: bool = True,
-        capitalize: bool = True,
+        country: str | None = None,
+        sector: str | None = None,
+        industry_group: str | None = None,
+        industry: str | None = None,
+        currency: str | None = None,
+        exchange: str | None = None,
+        market: str | None = None,
+        market_cap: str | None = None,
+        only_primary_listing: bool = False,
     ) -> pd.DataFrame:
         """
         Retrieve equity data based on specified criteria.
@@ -45,12 +48,17 @@ class Equities(FinanceDatabase):
                 Specific industry group to retrieve data for. If not provided, returns data for all industry groups.
             industry (str, optional):
                 Specific industry to retrieve data for. If not provided, returns data for all industries.
-            exclude_exchanges (bool, optional):
-                Whether to exclude exchanges from the search. If False, you will receive
-                data for equities from different exchanges. Default is True.
-            capitalize (bool, optional):
-                Indicates whether country, sector, and industry names should be capitalized for matching.
-                Default is True.
+            currency (str, optional):
+                Specific currency to retrieve data for. If not provided, returns data for all currencies.
+            exchange (str, optional):
+                Specific exchange to retrieve data for. If not provided, returns data for all exchanges.
+            market (str, optional):
+                Specific market to retrieve data for. If not provided, returns data for all markets.
+            market_cap (str, optional):
+                Specific market cap to retrieve data for. If not provided, returns data for all market caps
+            only_primary_listing (bool, optional):
+                Whether to only include the primary listing. If False, you will receive
+                data for equities from different exchanges. Default is False.
 
         Returns:
             pd.DataFrame:
@@ -58,55 +66,148 @@ class Equities(FinanceDatabase):
         """
         equities = self.data.copy(deep=True)
 
-        if capitalize:
-            country, sector, industry_group, industry = (
-                country.title(),
-                sector.title(),
-                industry_group.title(),
-                industry.title(),
-            )
-
         if country:
-            equities = equities[equities["country"] == country]
+            country_lower = country.lower()
+            options_lower = [
+                option.lower() for option in self.show_options(selection="country")
+            ]
+            if country_lower not in options_lower:
+                raise ValueError(
+                    f"The country '{country}' is not available in the database. "
+                    "Please check the available countries using the 'show_options' method."
+                )
+
+            equities = equities[equities["country"].str.lower() == country_lower]
         if sector:
-            equities = equities[equities["sector"] == sector]
+            sector_lower = sector.lower()
+            options_lower = [
+                option.lower() for option in self.show_options(selection="sector")
+            ]
+            if sector_lower not in options_lower:
+                raise ValueError(
+                    f"The sector '{sector}' is not available in the database. "
+                    "Please check the available sectors using the 'show_options' method."
+                )
+
+            equities = equities[equities["sector"].str.lower() == sector_lower]
         if industry_group:
-            equities = equities[equities["industry_group"] == industry_group]
+            industry_group_lower = industry_group.lower()
+            options_lower = [
+                option.lower()
+                for option in self.show_options(selection="industry_group")
+            ]
+            if industry_group_lower not in options_lower:
+                raise ValueError(
+                    f"The industry group '{industry_group}' is not available in the database. "
+                    "Please check the available industry groups using the 'show_options' method."
+                )
+
+            equities = equities[
+                equities["industry_group"].str.lower() == industry_group_lower
+            ]
         if industry:
-            equities = equities[equities["industry"] == industry]
-        if exclude_exchanges:
-            equities = equities[~equities.index.str.contains(r"\.", na=False)]
+            industry_lower = industry.lower()
+            options_lower = [
+                option.lower() for option in self.show_options(selection="industry")
+            ]
+            if industry_lower not in options_lower:
+                raise ValueError(
+                    f"The industry '{industry}' is not available in the database. "
+                    "Please check the available industries using the 'show_options' method."
+                )
+
+            equities = equities[equities["industry"].str.lower() == industry_lower]
+        if currency:
+            currency_lower = currency.lower()
+            options_lower = [
+                option.lower() for option in self.show_options(selection="currency")
+            ]
+            if currency_lower not in options_lower:
+                raise ValueError(
+                    f"The currency '{currency}' is not available in the database. "
+                    "Please check the available currencies using the 'show_options' method."
+                )
+
+            equities = equities[equities["currency"].str.lower() == currency_lower]
+        if exchange:
+            exchange_lower = exchange.lower()
+            options_lower = [
+                option.lower() for option in self.show_options(selection="exchange")
+            ]
+            if exchange_lower not in options_lower:
+                raise ValueError(
+                    f"The exchange '{exchange}' is not available in the database. "
+                    "Please check the available exchanges using the 'show_options' method."
+                )
+
+            equities = equities[equities["exchange"].str.lower() == exchange_lower]
+        if market:
+            market_lower = market.lower()
+            options_lower = [
+                option.lower() for option in self.show_options(selection="market")
+            ]
+            if market_lower not in options_lower:
+                raise ValueError(
+                    f"The market '{market}' is not available in the database. "
+                    "Please check the available markets using the 'show_options' method."
+                )
+
+            equities = equities[equities["market"].str.lower() == market_lower]
+        if market_cap:
+            market_cap_lower = market_cap.lower()
+            options_lower = [
+                option.lower() for option in self.show_options(selection="market_cap")
+            ]
+            if market_cap_lower not in options_lower:
+                raise ValueError(
+                    f"The market cap '{market_cap}' is not available in the database. "
+                    "Please check the available market caps using the 'show_options' method."
+                )
+
+            equities = equities[equities["market_cap"].str.lower() == market_cap_lower]
+
+        if only_primary_listing:
+            only_primary_listings_equities = equities[
+                ~equities.index.str.contains(r"\.", na=False)
+            ]
+
+            if only_primary_listings_equities.empty:
+                # If no primary listings are found, return all equities
+                print(
+                    "No primary listings found. Returning all equities matching your criteria."
+                )
+            else:
+                # If primary listings are found, filter the equities DataFrame.
+                equities = only_primary_listings_equities
 
         return FinanceFrame(equities)
 
-    def options(
+    def show_options(
         self,
-        selection: str,
-        country: str = "",
-        sector: str = "",
-        industry_group: str = "",
-        industry: str = "",
+        selection: str | None = None,
+        country: str | None = None,
+        sector: str | None = None,
+        industry_group: str | None = None,
+        industry: str | None = None,
+        currency: str | None = None,
+        exchange: str | None = None,
+        market: str | None = None,
+        market_cap: str | None = None,
     ) -> pd.Series:
         """
         Retrieve all options for the specified selection.
 
         This method returns a series containing all available options for the specified
         selection, which can be one of the following: "currency", "sector", "industry_group",
-        "industry", "exchange", "market", "country", "state", "zip_code", "market_cap".
+        "industry", "exchange", "market", "country", "market_cap".
 
         Args:
             selection (str):
                 The selection you want to see the options for. Choose from:
-                - "currency"
-                - "sector"
-                - "industry_group"
-                - "industry"
-                - "exchange"
-                - "market"
-                - "country"
-                - "state"
-                - "zip_code"
-                - "market_cap"
+                "currency", "sector", "industry_group", "industry", "exchange",
+                "market", "country", "state", "zip_code", "market_cap".
+                If None, returns all options for the specified country, sector, industry group
+                and industry.
             country (str, optional):
                 Specific country to retrieve data for. If not provided, returns data for all countries.
             sector (str, optional):
@@ -115,6 +216,12 @@ class Equities(FinanceDatabase):
                 Specific industry group to retrieve data for. If not provided, returns data for all industry groups.
             industry (str, optional):
                 Specific industry to retrieve data for. If not provided, returns data for all industries.
+            exchange (str, optional):
+                Specific exchange to retrieve data for. If not provided, returns data for all exchanges.
+            market (str, optional):
+                Specific market to retrieve data for. If not provided, returns data for all markets.
+            market_cap (str, optional):
+                Specific market cap to retrieve data for. If not provided, returns data for all market caps.
 
         Returns:
             pd.Series:
@@ -128,11 +235,10 @@ class Equities(FinanceDatabase):
             "exchange",
             "market",
             "country",
-            "state",
-            "zip_code",
             "market_cap",
         ]
-        if selection not in selection_values:
+
+        if selection is not None and selection not in selection_values:
             raise ValueError(
                 f"The selection variable provided is not valid, "
                 f"choose from {', '.join(selection_values)}"
@@ -143,18 +249,18 @@ class Equities(FinanceDatabase):
             sector=sector,
             industry_group=industry_group,
             industry=industry,
-            exclude_exchanges=False,
+            currency=currency,
+            exchange=exchange,
+            market=market,
+            market_cap=market_cap,
+            only_primary_listing=False,
         )
 
-        if equities.empty:
-            # Meant for the rare cases where capitalizing is not working as desired.
-            equities = self.select(
-                country=country,
-                sector=sector,
-                industry_group=industry_group,
-                industry=industry,
-                capitalize=False,
-                exclude_exchanges=False,
-            )
-
-        return equities[selection].dropna().sort_values().unique()
+        return (
+            {
+                column: equities[column].dropna().sort_values().unique()
+                for column in selection_values
+            }
+            if selection is None
+            else equities[selection].dropna().sort_values().unique()
+        )

@@ -10,16 +10,16 @@ repos:
       - id: check-merge-conflict
       - id: detect-private-key
   - repo: https://github.com/psf/black
-    rev: 23.1.0
+    rev: 25.1.0
     hooks:
       - id: black
   - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: "v0.0.256"
+    rev: "v0.9.9"
     hooks:
       - id: ruff
-        entry: ruff --ignore PLR0915
+        entry: ruff check financedatabase
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.5
+    rev: v2.3.0
     hooks:
       - id: codespell
         entry: codespell
