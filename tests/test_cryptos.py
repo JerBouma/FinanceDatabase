@@ -1,4 +1,4 @@
-"""Cryptos Test Module"""
+"""Cryptos"""
 
 import financedatabase as fd
 

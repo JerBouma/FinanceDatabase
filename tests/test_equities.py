@@ -1,4 +1,4 @@
-"""Equities Test Module"""
+"""Currencies Test Module"""
 
 import financedatabase as fd
 
