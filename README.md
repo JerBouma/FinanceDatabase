@@ -42,22 +42,6 @@ The Finance Database is used within or referenced by:
 
 ___
 
-# Table of Contents
-
-1. [Installation](#installation)
-2. [Basic Usage](#basic-usage)
-    1. [Quick Start](#quick-start)
-    3. [Collecting information from the database](#collecting-information-from-the-database)
-    3. [Searching the database extensively](#searching-the-database-extensively)
-    4. [Storing the database at a different location](#storing-the-database-at-a-different-location)
-3. [Examples](#examples)
-    1. [Companies in the Netherlands](#companies-in-the-netherlands)
-    3. [Perform a Dupont Analysis on Railroad Companies](#perform-a-dupont-analysis-on-railroad-companies)
-    2. [Technical Analysis of Biotech ETFs](#technical-analysis-of-biotech-etfs)
-4. [Questions & Answers](#questions--answers)
-5. [User Contributions](#user-contributions)
-6. [Contact](#contact)
-
 # Installation
 
 Before installation, consider starring the project on GitHub which helps others find the project as well.
@@ -76,498 +60,420 @@ Then within Python use:
 import financedatabase as fd
 ```
 
-#  Basic Usage
-This section explains in detail how the database can be queried with the related `financedatabase` package, also see the Jupyter Notebook in which you can run the examples also demonstrated here. You can find this document [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started).
-
-## Quick Start
-
-Same methods apply to all other asset classes as well. Columns may vary.
+# Usage
+This section explains in detail how the database can be queried with the related `financedatabase` package. Note that examples here are purposely cut off to a maximum of 10 entries due to the sheer size of the database. Furthermore, the summary column is also taken out for readability. For the full detailed results, see the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started). Let's start by importing the package:
 
 ```python
 import financedatabase as fd
-
-# Initialize the Equities database
-equities = fd.Equities()
-
-# Obtain all countries from the database
-equities_countries = equities.options("country")
-
-# Obtain all sectors from the database
-equities_sectors = equities.options("sector")
-
-# Obtain all industry groups from the database
-equities_industry_groups = equities.options("industry_group")
-
-# Obtain all industries from a country from the database
-equities_germany_industries = equities.options("industry", country="Germany")
-
-# Obtain a selection from the database
-equities_united_states = equities.select(country="United States")
-
-# Obtain a detailed selection from the database
-equities_usa_machinery = equities.select(
-    country="United States", industry="Machinery"
-)
-
-# Search specific fields from the database
-equities_uk_biotech = equities.search(
-    country="United Kingdom", summary="biotech", exchange="LSE"
-)
-
-# Search specific fields from the database with lists
-equities_media_services = equities.search(
-    industry="Interactive Media & Services",
-    country="United States",
-    market_cap=["Large Cap", "Mega Cap"]
-)
-
-# Use the tickers to obtain data via the Finance Toolkit
-telecomunication_services = equities.search(
-    industry="Diversified Telecommunication Services",
-    country="United States",
-    market_cap="Mega Cap",
-    exclude_exchanges=True)
-
-toolkit = telecomunication_services.to_toolkit(
-    api_key="FINANCIAL_MODELING_PREP_KEY",
-    start_date="2000-01-01",
-    progress_bar=False
-)
-
-# For example, obtain the historical data
-historical_data = toolkit.get_historical_data()
 ```
 
-Scroll down below for a more elaborate explanation and detailed examples.
-
-## Collecting information from the database
-
-Please see the Jupyter Notebook for an elaborate explanation of each asset class. This includes Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets.
-___
-
-<b><div align="center">Find code examples of all Asset Classes in the Jupyter Notebook <a href="https://www.jeroenbouma.com/projects/financedatabase/getting-started">here</a>.</div></b>
-___
-
-
-As an example for Equities, If you wish to collect data from all equities you can use the following:
+Initialization of each asset class is only required <u>once</u>. It is therefore important you save the class to a variable so that you can query the database much quicker. A simple example is shown below.
 
 ```python
-import financedatabase as fd
-
-# Initialize the Equities database
 equities = fd.Equities()
 
-# Obtain all data available excluding international exchanges
 equities.select()
 ```
 
-Which returns the following DataFrame:
+A sample of the output is shown below:
 
-| symbol   | name                       | currency   | sector      | industry_group                                 | industry        | exchange   | market                  | country       | state   | city        | zipcode    | website                         | market_cap   | isin         | cusip     | figi         | composite_figi   | shareclass_figi   |
-|:---------|:---------------------------|:-----------|:------------|:-----------------------------------------------|:----------------|:-----------|:------------------------|:--------------|:--------|:------------|:-----------|:--------------------------------|:-------------|:-------------|:----------|:-------------|:-----------------|:------------------|
-| A        | Agilent Technologies, Inc. | USD        | Health Care | Pharmaceuticals, Biotechnology & Life Sciences | Biotechnology   | NYQ        | New York Stock Exchange | United States | CA      | Santa Clara | 95051      | http://www.agilent.com          | Large Cap    | US00846U1016 | 00846U101 | BBG000C2V541 | BBG000C2V3D6     | BBG001SCTQY4      |
-| AA       | Alcoa Corporation          | USD        | Materials   | Materials                                      | Metals & Mining | NYQ        | New York Stock Exchange | United States | PA      | Pittsburgh  | 15212-5858 | http://www.alcoa.com            | Mid Cap      | US0138721065 | 13872106  | BBG00B3T3HK5 | BBG00B3T3HD3     | BBG00B3T3HF1      |
-| AAALF    | Aareal Bank AG             | USD        | Financials  | Banks                                          | Banks           | PNK        | OTC Bulletin Board      | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    | US00254K1088 | 00254K108 | nan          | nan              | nan               |
-| AAALY    | Aareal Bank AG             | USD        | Financials  | Banks                                          | Banks           | PNK        | OTC Bulletin Board      | Germany       | nan     | Wiesbaden   | 65189      | http://www.aareal-bank.com      | Small Cap    | US00254K1088 | 00254K108 | nan          | nan              | nan               |
-| AABB     | Asia Broadband, Inc.       | USD        | Materials   | Materials                                      | Metals & Mining | PNK        | OTC Bulletin Board      | United States | NV      | Las Vegas   | 89135      | http://www.asiabroadbandinc.com | Micro Cap    | nan          | nan       | nan          | nan              | nan               |
+| symbol   | name                           | currency   | sector                 | industry_group                                 | industry                               | exchange   | market                    | country       | state   | city                | zipcode    | website                          | market_cap   | isin         | cusip     | figi         | composite_figi   | shareclass_figi   |
+|:---------|:-------------------------------|:-----------|:-----------------------|:-----------------------------------------------|:---------------------------------------|:-----------|:--------------------------|:--------------|:--------|:--------------------|:-----------|:---------------------------------|:-------------|:-------------|:----------|:-------------|:-----------------|:------------------|
+| PMTA.DU  | PTC Inc.                       | EUR        | Information Technology | Software & Services                            | Software                               | DUS        | Dusseldorf Stock Exchange | United States | MA      | Boston              | 2210       | http://www.ptc.com               | Large Cap    | US69370C1009 | 69370C100 | BBG000FC6SC5 | BBG000FC5PS5     | BBG001S6DNK6      |
+| VAW.F    | VAALCO Energy, Inc.            | EUR        | Energy                 | Energy                                         | Oil, Gas & Consumable Fuels            | FRA        | Frankfurt Stock Exchange  | United States | TX      | Houston             | 77042      | http://www.vaalco.com            | Micro Cap    | US91851C2017 | 91851C201 | BBG000CN15Y5 | BBG000CN15F6     | BBG001S76ZS7      |
+| ORC.DE   | Oracle Corporation             | EUR        | Information Technology | Software & Services                            | Software                               | GER        | XETRA                     | United States | TX      | Austin              | 78741      | http://www.oracle.com            | Mega Cap     | US68389X1054 | 68389X105 | BBG000C0RY38 | BBG000C0RWW0     | BBG001S5SJG6      |
+| PAYX     | Paychex, Inc.                  | USD        | Industrials            | Commercial & Professional Services             | Professional Services                  | NMS        | NASDAQ Global Select      | United States | NY      | Rochester           | 14625-2396 | http://www.paychex.com           | Large Cap    | US7043261079 | 704326107 | BBG000BQT1J5 | BBG000BQSQ38     | BBG001S5V135      |
+| RI2A.F   | Rigel Pharmaceuticals, Inc.    | EUR        | Health Care            | Pharmaceuticals, Biotechnology & Life Sciences | Biotechnology                          | FRA        | Frankfurt Stock Exchange  | United States | CA      | South San Francisco | 94080      | http://www.rigel.com             | Small Cap    | US7665596034 | 766559603 | BBG000BKZNR4 | BBG000BKZNC0     | BBG001SD33Z0      |
+| PGEN     | Precigen, Inc.                 | USD        | Health Care            | Pharmaceuticals, Biotechnology & Life Sciences | Biotechnology                          | NMS        | NASDAQ Global Select      | United States | MD      | Germantown          | 20876      | http://www.precigen.com          | Small Cap    | US74017N1054 | 74017N105 | BBG004TDDJ32 | BBG000QL8VH9     | BBG001SSB3T5      |
+| GOGO     | Gogo Inc.                      | USD        | Communication Services | Telecommunication Services                     | Diversified Telecommunication Services | NMS        | NASDAQ Global Select      | United States | IL      | Chicago             | 60606      | http://www.gogoair.com           | Small Cap    | US38046C1099 | 38046C109 | BBG002CN8Y71 | BBG002CN8XN5     | BBG002CN8YD4      |
+| CRK      | Comstock Resources, Inc.       | USD        | Energy                 | Energy                                         | Oil, Gas & Consumable Fuels            | NYQ        | New York Stock Exchange   | United States | TX      | Frisco              | 75034      | http://www.comstockresources.com | Mid Cap      | US2057683029 | 205768302 | BBG000DNBMJ3 | BBG000DNBK89     | BBG001S8FX55      |
+| OIS      | Oil States International, Inc. | USD        | Energy                 | Energy                                         | Energy Equipment & Services            | NYQ        | New York Stock Exchange   | United States | TX      | Houston             | 77002      | http://www.oilstatesintl.com     | Small Cap    | US6780261052 | 678026105 | BBG000BDDQ06 | BBG000BDDN94     | BBG001S7WK56      |
+| CVLC.BE  | Vale S.A.                      | EUR        | Materials              | Materials                                      | Metals & Mining                        | BER        | Berlin Stock Exchange     | Brazil        | RJ      | Rio De Janeiro      | 22250-145  | http://www.vale.com              | Large Cap    | US91912E1055 | 9.19E+109 | BBG000HCJTN5 | BBG000HCJNQ5     | BBG001S7RS91      |
 
-This returns approximately 20.000 different equities. Note that by default, only the American exchanges are selected. These are symbols like `TSLA` (Tesla) and `MSFT` (Microsoft) that tend to be recognized by a majority of data providers and therefore is the default. To disable this, you can set the `exclude_exchanges` argument to `False` which then results in approximately 155,000 different symbols.
 
-Note that the summary column is taken out on purpose to keep it organized for markdown. The summary is however very handy when it comes to querying specific words as found with the following description given for Apple. All of this information is available when you query the database. Find a more elaborate explanation with `help(equities.select)`.
-
-As an example, we can use `equities.options` to obtain specific country, sector and industry options. For we can acquire all industries within the sector `Basic Materials` within the `United States`. This allows us to look at a specific industry in the United States in detail. 
+With `show_options` all possible options are given per column. **This is useful as it doesn't require loading the larger data files.** For example, obtaining all options for equities is done as follows.
 
 ```python
-industry_options = equities.options(selection='industry', country="United States", sector="Materials")
+fd.show_options("equities")
+```
+
+This returns all available options for each column.
+
+```text
+{'currency': array(['ARS', 'AUD', 'BRL', 'CAD', 'CHF', 'CLP', 'CNY', 'COP', 'CZK',
+        'DKK', 'EUR', 'GBP', 'HKD', 'HUF', 'IDR', 'ILA', 'ILS', 'INR',
+        'ISK', 'JPY', 'KES', 'KRW', 'LKR', 'MXN', 'MYR', 'NOK', 'NZD',
+        'PEN', 'PHP', 'PLN', 'QAR', 'RUB', 'SAR', 'SEK', 'SGD', 'THB',
+        'TRY', 'TWD', 'USD', 'ZAC', 'ZAR'], dtype=object),
+ 'sector': array(['Communication Services', 'Consumer Discretionary',
+        'Consumer Staples', 'Energy', 'Financials', 'Health Care',
+        'Industrials', 'Information Technology', 'Materials',
+        'Real Estate', 'Utilities'], dtype=object),
+ 'industry_group': array(['Automobiles & Components', 'Banks', 'Capital Goods',
+        'Commercial & Professional Services',
+        'Consumer Durables & Apparel', 'Consumer Services',
+        'Diversified Financials', 'Energy', 'Food & Staples Retailing',
+        'Food, Beverage & Tobacco', 'Health Care Equipment & Services',
+        'Household & Personal Products', 'Insurance', 'Materials',
+        'Media & Entertainment',
+        'Pharmaceuticals, Biotechnology & Life Sciences', 'Real Estate',
+        'Retailing', 'Semiconductors & Semiconductor Equipment',
+        'Software & Services', 'Technology Hardware & Equipment',
+        'Telecommunication Services', 'Transportation', 'Utilities'],
+       dtype=object)}
+```
+
+As the equities database has already been loaded in, it is also possible to use a similar functionality from within the class as follows. The main difference is that this functionality allows you to see the options based on a specific filtering. For example.
+
+```python
+equities.show_options(country='Netherlands')
+```
+
+This shows a more concise list of parameters given the focus on the Netherlands.
+
+```text
+{'currency': array(['ARS', 'AUD', 'BRL', 'CHF', 'CZK', 'EUR', 'GBP', 'ILA', 'MXN',
+        'NOK', 'RUB', 'USD', 'ZAC'], dtype=object),
+ 'sector': array(['Communication Services', 'Consumer Discretionary',
+        'Consumer Staples', 'Energy', 'Financials', 'Health Care',
+        'Industrials', 'Information Technology', 'Materials',
+        'Real Estate', 'Utilities'], dtype=object),
+ 'industry_group': array(['Automobiles & Components', 'Banks', 'Capital Goods',
+        'Commercial & Professional Services',
+        'Consumer Durables & Apparel', 'Consumer Services',
+        'Diversified Financials', 'Energy', 'Food & Staples Retailing',
+        'Food, Beverage & Tobacco', 'Health Care Equipment & Services',
+        'Household & Personal Products', 'Insurance', 'Materials',
+        'Media & Entertainment',
+        'Pharmaceuticals, Biotechnology & Life Sciences', 'Real Estate',
+        'Retailing', 'Semiconductors & Semiconductor Equipment',
+        'Software & Services', 'Technology Hardware & Equipment',
+        'Telecommunication Services', 'Transportation', 'Utilities'],
+       dtype=object)}
+```
+
+Or only showing one specific parameter.
+
+```python
+equities.show_options(
+    selection='industry',
+    sector='Financials',
+    country='Netherlands')
 ```
 
 Which returns:
 
-```python
-array(['Chemicals', 'Construction Materials', 'Metals & Mining',
-       'Paper & Forest Products'], dtype=object)
+```text
+array(['Banks', 'Capital Markets', 'Consumer Finance',
+       'Diversified Financial Services', 'Insurance'], dtype=object)
 ```
 
-So with this information in hand, I can now query the industry `Metals & Mining` as follows:
+Given this information, it then becomes possible to filter the database based on the parameters you are interested in. For example, if you are interested 'Insurance' companies in the 'Netherlands' you can use the following. Note that I omit the `sector` here, given that the selection I make is on a deeper level and therefore it is a given that the sector is 'Financials'.
 
 ```python
-metals_and_mining = equities.search(industry="Metals & Mining", country="United States", market_cap="Large Cap", exclude_exchanges=True)
-
-metals_and_mining
+equities.select(
+    country='Netherlands',
+    industry='Insurance',
+)
 ```
 
-This gives you a DataFrame with the following information:
+This returns a small selection of companies on all exchanges the companies are listed on.
 
-| symbol   | name                          | currency   | sector    | industry_group   | industry        | exchange   | market                  | country       | state   | city        | zipcode    | website                           | market_cap   | isin         | cusip     | figi         | composite_figi   | shareclass_figi   |
-|:---------|:------------------------------|:-----------|:----------|:-----------------|:----------------|:-----------|:------------------------|:--------------|:--------|:------------|:-----------|:----------------------------------|:-------------|:-------------|:----------|:-------------|:-----------------|:------------------|
-| FCX      | Freeport-McMoRan Inc.         | USD        | Materials | Materials        | Metals & Mining | NYQ        | New York Stock Exchange | United States | AZ      | Phoenix     | 85004-2189 | http://fcx.com                    | Large Cap    | US35671D8570 | 35671D857 | BBG000BJDCQ6 | BBG000BJDB15     | BBG001S5R3F3      |
-| NEM      | Newmont Corporation           | USD        | Materials | Materials        | Metals & Mining | NYQ        | New York Stock Exchange | United States | CO      | Denver      | 80237      | http://www.newmont.com            | Large Cap    | US6516391066 | 651639106 | BBG000BPWYG4 | BBG000BPWXK1     | BBG001S5TKX3      |
-| NUE      | Nucor Corporation             | USD        | Materials | Materials        | Metals & Mining | NYQ        | New York Stock Exchange | United States | NC      | Charlotte   | 28211      | http://www.nucor.com              | Large Cap    | US6703461052 | 670346105 | BBG000BQ8MY5 | BBG000BQ8KV2     | BBG001S5TRV0      |
-| RS       | Reliance Steel & Aluminum Co. | USD        | Materials | Materials        | Metals & Mining | NYQ        | New York Stock Exchange | United States | CA      | Los Angeles | 90071      | http://www.rsac.com               | Large Cap    | US7595091023 | 759509102 | BBG000CJ2332 | BBG000CJ2181     | BBG001S81M27      |
-| SCCO     | Southern Copper Corporation   | USD        | Materials | Materials        | Metals & Mining | NYQ        | New York Stock Exchange | United States | AZ      | Phoenix     | 85014      | http://www.southerncoppercorp.com | Large Cap    | US84265V1052 | 84265V105 | BBG000BSHKK0 | BBG000BSHH72     | BBG001S6ZM88      |
-| STLD     | Steel Dynamics, Inc.          | USD        | Materials | Materials        | Metals & Mining | NMS        | NASDAQ Global Select    | United States | IN      | Fort Wayne  | 46804      | http://www.steeldynamics.com      | Large Cap    | US8581191009 | 858119100 | BBG000HH03N1 | BBG000HGYNZ9     | BBG001S98JK5      |
 
-As you can imagine, looking at such a specific selection only yields a few results but picking the entire sector `Materials` would have returned 403 different companies (which excludes exchanges other than the United States).
+| symbol    | name               | currency   | sector     | industry_group   | industry   | exchange   | market                   | country     |   state | city      | zipcode   | website              | market_cap   | isin         |   cusip | figi         | composite_figi   | shareclass_figi   |
+|:----------|:-------------------|:-----------|:-----------|:-----------------|:-----------|:-----------|:-------------------------|:------------|--------:|:----------|:----------|:---------------------|:-------------|:-------------|--------:|:-------------|:-----------------|:------------------|
+| A16.F     | ASR Nederland N.V. | EUR        | Financials | Insurance        | Insurance  | FRA        | Frankfurt Stock Exchange | Netherlands |     nan | Utrecht   | 3584 BA   | http://www.asrnl.com | Mid Cap      | NL0011872643 |     nan | BBG00D2VFV96 | BBG00D2VFV78     | BBG00CWZ0HK0      |
+| A1EG34.SA | Aegon N.V.         | BRL        | Financials | Insurance        | Insurance  | SAO        | Bovespa Soma             | Netherlands |     nan | The Hague | 2591 TV   | http://www.aegon.com | Mid Cap      | NL0000303709 |     nan | nan          | nan              | nan               |
+| AEG       | Aegon N.V.         | USD        | Financials | Insurance        | Insurance  | NYQ        | New York Stock Exchange  | Netherlands |     nan | The Hague | 2591 TV   | http://www.aegon.com | Large Cap    | NL0000303709 |     nan | BBG000CKQTN4 | BBG000CKQSN6     | BBG001S6Y6M8      |
+| AEGOF     | Aegon N.V.         | USD        | Financials | Insurance        | Insurance  | PNK        | OTC Bulletin Board       | Netherlands |     nan | The Hague | 2591 TV   | http://www.aegon.com | Mid Cap      | NL0000303709 |     nan | nan          | nan              | nan               |
+| AEND.DE   | Aegon N.V.         | EUR        | Financials | Insurance        | Insurance  | GER        | XETRA                    | Netherlands |     nan | The Hague | 2591 TV   | http://www.aegon.com | Mid Cap      | NL0000303709 |     nan | BBG000DJK260 | BBG000DJHZF1     | BBG001S5V8R4      |
 
-To conclude, this information can then be send to the [Finance Toolkit 🛠️](https://github.com/JerBouma/FinanceToolkit) to obtain 130+ financial metrics, historical and fundamental data with the `to_toolkit` function. This functionality can be used with any output as obtained from the Finance Database.
+You'll see that the same company can appear multiple times. This is because by default all exchanges are shown. There are two methods to focus on one entry:
+
+- Use the `only_primary_listing` parameter. This will only show the primary listing of each company. This is useful mostly if you are looking into the US exchanges.
+- Use the `exchange` or `market` parameter. This will allow you to filter on a specific exchange or market. This is useful when you not necessarily looking into US exchanges and are already filtering on a specific country.
+
+For example, filtering on the Netherlands it makes sense to select a Dutch exchange as well. This is for example the exchange "AMS" or the market "Euronext Amsterdam". This will already give you a much smaller selection.
 
 ```python
-companies = metals_and_mining.to_toolkit(
-    api_key="FINANCIAL_MODELING_PREP_KEY",
-    start_date="2000-01-01",
-    quarterly=False)
-
-companies.get_quote()
+equities.select(
+    country='Netherlands',
+    industry='Insurance',
+    market='Euronext Amsterdam',
+)
 ```
 
-This returns the following:
+This gives the following three companies (not shortenend):
 
-|                       | FCX                      | NEM                      | NUE                     | RS                            | SCCO                         | STLD                           |
-|:----------------------|:-------------------------|:-------------------------|:------------------------|:------------------------------|:-----------------------------|:-------------------------------|
-| Symbol                | FCX                      | NEM                      | NUE                     | RS                            | SCCO                         | STLD                           |
-| Price                 | 38.755                   | 40.3007                  | 157.54                  | 268.06                        | 78.3                         | 99.49                          |
-| Beta                  | 2.065006                 | 0.394536                 | 1.627593                | 0.923236                      | 1.294605                     | 1.523167                       |
-| Average Volume        | 10431879                 | 7104366                  | 1315646                 | 265598                        | 1031395                      | 1277711                        |
-| Market Capitalization | 55560715720              | 31998755800              | 39183663880             | 15696816226                   | 60534353894                  | 16479921560                    |
-| Last Dividend         | 0.6000000000000001       | 1.6                      | 2.04                    | 4                             | 4                            | 1.7000000000000002             |
-| Range                 | 26.03-46.73              | 37.45-55.41              | 102.86-182.68           | 168.25-295.98                 | 42.42-87.59                  | 69.12-136.46                   |
-| Changes               | -1.435                   | -0.1693                  | 2.87                    | 4.41                          | -1.3599999999999999          | 1.38                           |
-| Company Name          | Freeport-McMoRan Inc.    | Newmont Corporation      | Nucor Corporation       | Reliance Steel & Aluminum Co. | Southern Copper Corporation  | Steel Dynamics, Inc.           |
-| Currency              | USD                      | USD                      | USD                     | USD                           | USD                          | USD                            |
-| CIK                   | 831259                   | 1164727                  | 73309                   | 861884                        | 1001838                      | 1022671                        |
-| ISIN                  | US35671D8570             | US6516391066             | US6703461052            | US7595091023                  | US84265V1052                 | US8581191009                   |
-| CUSIP                 | 35671D857                | 651639106                | 670346105               | 759509102                     | 84265V105                    | 858119100                      |
-| Exchange              | New York Stock Exchange  | New York Stock Exchange  | New York Stock Exchange | New York Stock Exchange       | New York Stock Exchange      | NASDAQ Global Select           |
-| Exchange Short Name   | NYSE                     | NYSE                     | NYSE                    | NYSE                          | NYSE                         | NASDAQ                         |
-| Industry              | Copper                   | Gold                     | Steel                   | Steel                         | Copper                       | Steel                          |
-| Website               | https://fcx.com          | https://www.newmont.com  | https://www.nucor.com   | https://www.rsac.com          | https://www.southernperu.com | https://stld.steeldynamics.com |
-| CEO                   | Mr. Richard C. Adkerson  | Mr. Thomas Ronald Palmer | Mr. Leon J. Topalian    | Ms. Karla R. Lewis            | Mr. Oscar  Gonzalez Rocha    | Mr. Mark D. Millett            |
-| Sector                | Basic Materials          | Basic Materials          | Basic Materials         | Basic Materials               | Basic Materials              | Basic Materials                |
-| Country               | US                       | US                       | US                      | US                            | US                           | US                             |
-| Full Time Employees   | 25600                    | 14600                    | 31400                   | 14500                         | 15018                        | 12060                          |
-| Phone                 | 602 366 8100             | 303 863 7414             | 704 366 7000            | 213 687 7700                  | 602 264 1375                 | 260 969 3500                   |
-| Address               | 333 North Central Avenue | 6900 East Layton Avenue  | 1915 Rexford Road       | 350 South Grand Avenue        | 1440 East Missouri Avenue    | 7575 West Jefferson Boulevard  |
-| City                  | Phoenix                  | Denver                   | Charlotte               | Los Angeles                   | Phoenix                      | Fort Wayne                     |
-| State                 | AZ                       | CO                       | NC                      | CA                            | AZ                           | IN                             |
-| ZIP Code              | 85004-2189               | 80237                    | 28211                   | 90071                         | 85014                        | 46804                          |
-| DCF Difference        | 3.24601                  | 2.08                     | 9.70759                 | 13.6802                       | 13.4469                      | 9.8176                         |
-| DCF                   | 41.574                   | 51.24                    | 157.162                 | 213.01                        | 61.1331                      | 109.112                        |
-| IPO Date              | 1995-07-10               | 1980-03-17               | 1980-03-17              | 1994-09-16                    | 1996-01-05                   | 1996-11-22                     |
+| symbol   | name               | currency   | sector     | industry_group   | industry   | exchange   | market             | country     |   state | city      | zipcode   | website                 | market_cap   | isin         |   cusip | figi         | composite_figi   | shareclass_figi   |
+|:---------|:-------------------|:-----------|:-----------|:-----------------|:-----------|:-----------|:-------------------|:------------|--------:|:----------|:----------|:------------------------|:-------------|:-------------|--------:|:-------------|:-----------------|:------------------|
+| AGN.AS   | Aegon N.V.         | EUR        | Financials | Insurance        | Insurance  | AMS        | Euronext Amsterdam | Netherlands |     nan | The Hague | 2591 TV   | http://www.aegon.com    | Mid Cap      | NL0000303709 |     nan | BBG000JN9DM6 | BBG000JN9C93     | BBG001S5V8R4      |
+| ASRNL.AS | ASR Nederland N.V. | EUR        | Financials | Insurance        | Insurance  | AMS        | Euronext Amsterdam | Netherlands |     nan | Utrecht   | 3584 BA   | http://www.asrnl.com    | Mid Cap      | NL0011872643 |     nan | BBG00CWZ0HG5 | BBG00CWZ0HF6     | BBG00CWZ0HK0      |
+| NN.AS    | NN Group N.V.      | EUR        | Financials | Insurance        | Insurance  | AMS        | Euronext Amsterdam | Netherlands |     nan | The Hague | 2595 AS   | http://www.nn-group.com | Large Cap    | nan          |     nan | nan          | nan              | nan               |
 
-## Searching the database extensively
-All asset classes have the capability to search each column with `search`, for example `equities.search()`. Through how this functionality is developed you can define multiple columns and search throughoutly. For example:
+Given that the Netherlands is a relatively small country, it is not uncommon for the list to become small quick. For example, the same selection for the United States is already much larger, also utilizing the `only_primary_listing` parameter.
 
 ```python
-# Collect all Equities Database
-equities = fd.Equities()
-
-# Search Multiple Columns
-equities.search(summary='automotive', currency='USD', country='Germany')
+equities.select(
+    country='United States',
+    industry='Insurance',
+    only_primary_listing=True
+)
 ```
 
-Which returns a selection of the DataFrame that matches all criteria. 
+While not immediately obvious in this shortenend output, it returns about 180 different companies.
 
-| symbol   | name                                        | currency   | sector                 | industry_group                | industry           | exchange   | market             | country   |   state | city                  |   zipcode | website                   | market_cap   | isin         | cusip     |   figi |   composite_figi |   shareclass_figi |
-|:---------|:--------------------------------------------|:-----------|:-----------------------|:------------------------------|:-------------------|:-----------|:-------------------|:----------|--------:|:----------------------|----------:|:--------------------------|:-------------|:-------------|:----------|-------:|-----------------:|------------------:|
-| AFRMF    | Alphaform AG                                | USD        | Industrials            | Capital Goods                 | Machinery          | PNK        | OTC Bulletin Board | Germany   |     nan | Feldkirchen           |     85622 | nan                       | Nano Cap     | nan          | nan       |    nan |              nan |               nan |
-| AUUMF    | Aumann AG                                   | USD        | Industrials            | Capital Goods                 | Machinery          | PNK        | OTC Bulletin Board | Germany   |     nan | Beelen                |     48361 | http://www.aumann.com     | Micro Cap    | DE000A2DAM03 | nan       |    nan |              nan |               nan |
-| BAMXF    | Bayerische Motoren Werke Aktiengesellschaft | USD        | Consumer Discretionary | Automobiles & Components      | Automobiles        | PNK        | OTC Bulletin Board | Germany   |     nan | Munich                |     80788 | http://www.bmwgroup.com   | Large Cap    | DE0005190037 | nan       |    nan |              nan |               nan |
-| BASFY    | BASF SE                                     | USD        | Materials              | Materials                     | Chemicals          | PNK        | OTC Bulletin Board | Germany   |     nan | Ludwigshafen am Rhein |     67056 | http://www.basf.com       | Large Cap    | nan          | nan       |    nan |              nan |               nan |
-| BDRFF    | Beiersdorf Aktiengesellschaft               | USD        | Consumer Staples       | Household & Personal Products | Household Products | PNK        | OTC Bulletin Board | Germany   |     nan | Hamburg               |     20245 | http://www.beiersdorf.com | Large Cap    | US07724U1034 | 07724U103 |    nan |              nan |               nan |
 
-## Storing the database at a different location
-If you wish to store the database at a different location (for example your own Fork) you can do so with the variable 
-`base_url` which you can find in each of the asset classes. An example would be:
-- `fd.Equities(base_url=<YOUR URL>)`
+| symbol   | name                             | currency   | sector     | industry_group   | industry   | exchange   | market                  | country       | state   | city            | zipcode    | website                    | market_cap   | isin         | cusip     | figi         | composite_figi   | shareclass_figi   |
+|:---------|:---------------------------------|:-----------|:-----------|:-----------------|:-----------|:-----------|:------------------------|:--------------|:--------|:----------------|:-----------|:---------------------------|:-------------|:-------------|:----------|:-------------|:-----------------|:------------------|
+| AFL      | Aflac Incorporated               | USD        | Financials | Insurance        | Insurance  | NYQ        | New York Stock Exchange | United States | GA      | Columbus        | 31999      | http://www.aflac.com       | Large Cap    | US0010551028 | 1055102   | BBG000BBBRC7 | BBG000BBBNC6     | BBG001S5NGJ4      |
+| AJG      | Arthur J. Gallagher & Co.        | USD        | Financials | Insurance        | Insurance  | NYQ        | New York Stock Exchange | United States | IL      | Rolling Meadows | 60008-4050 | http://www.ajg.com         | Large Cap    | US3635761097 | 363576109 | BBG000BBHZK4 | BBG000BBHXQ3     | BBG001S5NKC2      |
+| AMSF     | AMERISAFE, Inc.                  | USD        | Financials | Insurance        | Insurance  | NMS        | NASDAQ Global Select    | United States | LA      | Deridder        | 70634      | http://www.amerisafe.com   | Small Cap    | US03071H1005 | 03071H100 | BBG000Q0JWB7 | BBG000Q0JJQ0     | BBG001SDH7B2      |
+| BRO      | Brown & Brown, Inc.              | USD        | Financials | Insurance        | Insurance  | NYQ        | New York Stock Exchange | United States | FL      | Daytona Beach   | 32114      | http://www.bbinsurance.com | Large Cap    | US1152361010 | 115236101 | BBG000BWSJ77 | BBG000BWSGF4     | BBG001S5XFN0      |
+| CINF     | Cincinnati Financial Corporation | USD        | Financials | Insurance        | Insurance  | NMS        | NASDAQ Global Select    | United States | OH      | Fairfield       | 45014-5141 | http://www.cinfin.com      | Large Cap    | US1720621010 | 172062101 | BBG000BFPVV3 | BBG000BFPK65     | BBG001S5PTM0      |
 
-You can also store the database locally and point to your local location with the variable `base_url` and by setting
-`use_local_location` to True. An example would be:
-- `fd.Equities(base_url=<YOUR PATH>, use_local_location=True)`
+For any of the variables, it is also possible to provide a list instead. Which means that it will return all entries that match any of the variables. As an example, the queries above can be combined into one.
 
-# Examples
-This section gives a few examples of the possibilities with this package. These are merely a few of the things you can do with the package. **As you can obtain a wide range of symbols, pretty much any package that requires symbols should work.**
+    
+```python
+equities.select(
+    country=['Netherlands', 'United States'],
+    industry='Insurance',
+    market=['Euronext Amsterdam', 'Nordic Growth Market', 'OTC Bulletin Board',
+            'New York Stock Exchange', 'NASDAQ Global Select', 'NYSE MKT',
+            'NASDAQ Capital Market']
+)
+```
+
+This returns a larger selection of companies given the increased number of countries and markets.
+
+
+| symbol   | name                          | currency   | sector     | industry_group   | industry   | exchange   | market                  | country       | state   | city       | zipcode    | website                  | market_cap   | isin         |   cusip | figi         | composite_figi   | shareclass_figi   |
+|:---------|:------------------------------|:-----------|:-----------|:-----------------|:-----------|:-----------|:------------------------|:--------------|:--------|:-----------|:-----------|:-------------------------|:-------------|:-------------|--------:|:-------------|:-----------------|:------------------|
+| AAME     | Atlantic American Corporation | USD        | Financials | Insurance        | Insurance  | NGM        | Nordic Growth Market    | United States | GA      | Atlanta    | 30319-3054 | http://www.atlam.com     | Nano Cap     | nan          |     nan | nan          | nan              | nan               |
+| ACMT     | ACMAT Corporation             | USD        | Financials | Insurance        | Insurance  | PNK        | OTC Bulletin Board      | United States | CT      | Farmington | 6032       | http://www.acmatcorp.com | Nano Cap     | nan          |     nan | nan          | nan              | nan               |
+| ACMTA    | ACMAT Corporation             | USD        | Financials | Insurance        | Insurance  | PNK        | OTC Bulletin Board      | United States | CT      | Farmington | 6032       | http://www.acmatcorp.com | Nano Cap     | nan          |     nan | nan          | nan              | nan               |
+| AEG      | Aegon N.V.                    | USD        | Financials | Insurance        | Insurance  | NYQ        | New York Stock Exchange | Netherlands   | nan     | The Hague  | 2591 TV    | http://www.aegon.com     | Large Cap    | NL0000303709 |     nan | BBG000CKQTN4 | BBG000CKQSN6     | BBG001S6Y6M8      |
+| AEGOF    | Aegon N.V.                    | USD        | Financials | Insurance        | Insurance  | PNK        | OTC Bulletin Board      | Netherlands   | nan     | The Hague  | 2591 TV    | http://www.aegon.com     | Mid Cap      | NL0000303709 |     nan | nan          | nan              | nan               |
+
+
+In case the current categorization doesn't lead to the results you are looking for, it is possible to use the `search` parameter. This allows you to filter on any column in the database via a custom string. This means that if the word or sentence you input is found somewhere in the column you select, it will return the result. 
+
+By default the result will not be case sensitive but you can adjust this by setting `case_sensitive=True`. You can also filter the index (`symbol` column) by using `index` as shown below. Just like the `select` function, you can also provide lists here.
+
+```python
+equities.search(
+    summary=["Robotics", "Education"],
+    industry_group="Equipment",
+    market='Frankfurt',
+    index=".F"
+)
+```
+
+This returns instruments that are listed on the Frankfurt Stock Exchange, are in an industry group with the word "Equipment" and have either "Robotics" or "Education" in the summary column. The `index` parameter is used to filter on the symbol column, which in this case is ".F". The filtering on the index is an alternative way of finding the exchange or market you are looking for.
+
+| symbol   | name                                                        | currency   | sector                 | industry_group                   | industry                                       | exchange   | market                   | country       | state   | city          | zipcode    | website                        | market_cap   | isin         | cusip     | figi         | composite_figi   | shareclass_figi   |
+|:---------|:------------------------------------------------------------|:-----------|:-----------------------|:---------------------------------|:-----------------------------------------------|:-----------|:-------------------------|:--------------|:--------|:--------------|:-----------|:-------------------------------|:-------------|:-------------|:----------|:-------------|:-----------------|:------------------|
+| 109.F    | Castlight Health, Inc.                                      | EUR        | Health Care            | Health Care Equipment & Services | Health Care Providers & Services               | FRA        | Frankfurt Stock Exchange | United States | CA      | San Francisco | 94105      | http://www.castlighthealth.com | Small Cap    | nan          | nan       | nan          | nan              | nan               |
+| 1KT.F    | Keysight Technologies, Inc.                                 | EUR        | Information Technology | Technology Hardware & Equipment  | Electronic Equipment, Instruments & Components | FRA        | Frankfurt Stock Exchange | United States | CA      | Santa Rosa    | 95403-1738 | http://www.keysight.com        | Large Cap    | US49338L1035 | 49338L103 | BBG007DJZFD2 | BBG007DJZFC3     | BBG0059FN820      |
+| 1N1.F    | Nanalysis Scientific Corp.                                  | EUR        | Information Technology | Technology Hardware & Equipment  | Electronic Equipment, Instruments & Components | FRA        | Frankfurt Stock Exchange | Canada        | AB      | Calgary       | T2E 7C3    | http://www.nanalysis.com       | Nano Cap     | nan          | nan       | nan          | nan              | nan               |
+| 1YO.F    | Yangtze Optical Fibre And Cable Joint Stock Limited Company | EUR        | Information Technology | Technology Hardware & Equipment  | Communications Equipment                       | FRA        | Frankfurt Stock Exchange | China         | nan     | Wuhan         | 430073     | http://www.yofc.com            | Small Cap    | nan          | nan       | nan          | nan              | nan               |
+| 1ZU.F    | The Pennant Group, Inc.                                     | EUR        | Health Care            | Health Care Equipment & Services | Health Care Equipment & Supplies               | FRA        | Frankfurt Stock Exchange | United States | ID      | Eagle         | 83616      | http://pennantgroup.com        | Small Cap    | US70805E1091 | 7.08E+113 | BBG00QJ35K78 | BBG00QJ35K69     | BBG00P33SZ15      |
+
+Lastly, the Finance Database has a direct integration with the [Finance Toolkit](https://github.com/JerBouma/FinanceToolkit) making it possible to do financial analysis on the companies you've found in the Finance Database. Returning to the earlier example of the 3 insurance companies in the Netherlands, it becomes possible to load these into the Finance Toolkit with the `to_toolkit` functionality. 
+
+To be able to get started, you need to obtain an API Key from FinancialModelingPrep. This is used to gain access to 30+ years of financial statement both annually and quarterly. Note that the Free plan is limited to 250 requests each day, 5 years of data and only features companies listed on US exchanges.
 
 ___ 
 
-<b><div align="center">Find a variety of How-To Guides for the FinanceDatabase <a href="https://www.jeroenbouma.com/projects/financedatabase">here</a>.</div></b>
+<b><div align="center">Obtain an API Key from FinancialModelingPrep <a href="https://www.jeroenbouma.com/fmp" target="_blank">here</a>.</div></b>
 ___
 
-## Companies in the Netherlands
-I want to see how many public companies exist in each sector in the Netherlands. Here, I can obtain all stocks that are located in the Netherlands with `country='Netherlands'`. I also include all exchanges by setting `exclude_exchanges=False`. This will give me all stocks that are listed on all exchanges. This is relevant because some stocks are listed on exchanges that are not the American exchanges which the parameter defaults to. Find the related Jupyter Notebook with more examples [here](https://www.jeroenbouma.com/projects/financedatabase/querying-netherlands).
+Then you can go ahead and run the following code, changing the `API_KEY` to your own API Key.
 
-````python
-import financedatabase as fd
-
-dutch_companies = equities.select(country='Netherlands', exclude_exchanges=False)
-````
-
-Which returns:
-
-| symbol   | name                       | currency   | sector                 | industry_group    | industry                      | exchange   | market                                | country     |   state | city             | zipcode   | website                        | market_cap   | isin         |   cusip |   figi |   composite_figi |   shareclass_figi |
-|:---------|:---------------------------|:-----------|:-----------------------|:------------------|:------------------------------|:-----------|:--------------------------------------|:------------|--------:|:-----------------|:----------|:-------------------------------|:-------------|:-------------|--------:|-------:|-----------------:|------------------:|
-| 09B.F    | lastminute.com N.V.        | EUR        | Consumer Discretionary | Consumer Services | Hotels, Restaurants & Leisure | FRA        | Frankfurt Stock Exchange              | Netherlands |     nan | Amsterdam        | 1097 JB   | http://lmgroup.lastminute.com  | Small Cap    | nan          |     nan |    nan |              nan |               nan |
-| 0DI7.L   | AFC Ajax NV                | EUR        | nan                    | nan               | nan                           | LSE        | London Stock Exchange (international) | Netherlands |     nan | Amsterdam        | 1101 AX   | http://www.ajax.nl             | Micro Cap    | NL0000018034 |     nan |    nan |              nan |               nan |
-| 0DLI.L   | Amsterdam Commodities N.V. | EUR        | nan                    | nan               | nan                           | LSE        | London Stock Exchange (international) | Netherlands |     nan | Rotterdam        | 3011 DD   | http://www.acomo.nl            | Small Cap    | nan          |     nan |    nan |              nan |               nan |
-| 0DQK.L   | Beter Bed Holding N.V.     | EUR        | nan                    | nan               | nan                           | LSE        | London Stock Exchange (international) | Netherlands |     nan | Uden             | 5405 AR   | http://www.beterbedholding.com | Micro Cap    | NL0000339703 |     nan |    nan |              nan |               nan |
-| 0E2F.L   | Ctac N.V.                  | EUR        | nan                    | nan               | nan                           | LSE        | London Stock Exchange (international) | Netherlands |     nan | 's-Hertogenbosch | 5216 TZ   | http://www.ctac.nl             | Micro Cap    | NL0000345577 |     nan |    nan |              nan |               nan |
-
-This will return the same company multiple times. That makes sense, since a company can be listed on multiple exchanges. Filtering is applied by grouping by unique names and the sector.
 
 ```python
-unique_dutch_companies_per_sector = dutch_companies.groupby('sector').agg({'name': 'nunique'})
+API_KEY = "FINANCIAL_MODELING_PREP_API_KEY"
+
+dutch_insurance_companies = equities.select(
+    country='Netherlands',
+    industry='Insurance',
+    market='Euronext Amsterdam',
+)
+
+toolkit = dutch_insurance_companies.to_toolkit(
+    api_key=API_KEY
+)
 ```
 
-Now with this result, I can plot a pie chart to showcase the distribution of companies in each sector.
+With this integration, I can now access some of the most important financial metrics for these companies. Let's start simple with historical data.
 
 ```python
-unique_dutch_companies_per_sector['name'].plot.pie(
-    title='Number of companies per sector in the Netherlands',
-    ylabel='',
-)
-``` 
+toolkit.get_historical_data()
+```
 
-This results in the following graph which gives an indication which sectors are dominant within The Netherlands. Of course this is a mere example and to truly understand the importance of certain companies for the Netherlands, you would need to know market cap of each sector as well including demographics.
+Which returns, selecting only "ASRNL.AS" as an example:
 
-![FinanceDatabase](https://github.com/JerBouma/FinanceDatabase/assets/46355364/6724b674-dd7b-4897-8e88-edce18619108)
+| date       |   Open |   High |   Low |   Close |   Adj Close |   Volume |   Dividends |   Return |   Volatility |   Excess Return |   Excess Volatility |   Cumulative Return |
+|:-----------|-------:|-------:|------:|--------:|------------:|---------:|------------:|---------:|-------------:|----------------:|--------------------:|--------------------:|
+| 2025-03-31 |  52.86 |  52.98 | 52.56 |   52.98 |       52.98 |   547650 |           0 |  -0.0049 |       0.0175 |         -0.0474 |              0.0206 |              4.2726 |
+| 2025-04-01 |  53.22 |  53.6  | 52.98 |   53.44 |       53.44 |   486098 |           0 |   0.0087 |       0.0175 |         -0.0329 |              0.0206 |              4.3097 |
+| 2025-04-02 |  53.18 |  53.58 | 52.7  |   53.3  |       53.3  |   485768 |           0 |  -0.0026 |       0.0175 |         -0.0446 |              0.0206 |              4.2984 |
+| 2025-04-03 |  52.32 |  53.22 | 52.18 |   52.42 |       52.42 |   567242 |           0 |  -0.0165 |       0.0175 |         -0.057  |              0.0206 |              4.2274 |
+| 2025-04-04 |  52    |  52.5  | 49.45 |   50.4  |       50.4  |   485024 |           0 |  -0.0385 |       0.0175 |         -0.0775 |              0.0206 |              4.0645 |
 
-## Perform a Dupont Analysis on Railroad Companies
-A great use-case for the data found in the Finance Database is to do competitive analysis in which companies are compared that compete for the same market. For example, in case I want to look into the Railroad companies in the United States that are marked as "Large Cap", I can directly search for this with the Finance Database and use the [Finance Toolkit 🛠️](https://github.com/JerBouma/FinanceToolkit) to do further research. Find the related Jupyter Notebook with more examples [here](https://www.jeroenbouma.com/projects/financedatabase/dupont-analysis).
+And now let's make it more advanced by automatically calculating 60+ financial ratios for each. **This is just a small snippet of what is available within the Finance Toolkit, see for more information the GitHub page of the Finance Toolkit [here](https://github.com/JerBouma/FinanceToolkit) or the example Notebook [here](https://www.jeroenbouma.com/projects/financetoolkit/getting-started).**
 
-````python
-import financedatabase as fd
+```python
+toolkit.ratios.collect_all_ratios()
+```
 
-equities = fd.Equities()
+Which returns, selecting only "ASRNL.AS" as an example with a few ratios:
 
-railroad = equities.search(industry='Road & Rail',
-                           country='United States',
-                           market_cap='Large Cap',
-                           exclude_exchanges=True)
-````
+|                                 |   2015 |   2016 |   2017 |   2018 |   2019 |   2020 |   2021 |   2022 |   2023 |   2024 |
+|:--------------------------------|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
+| Interest Coverage Ratio         | 4.0535 | 4.2287 | 6.6142 | 5.152  | 3.2238 | 2.2508 | 3.1188 | 3.0962 | 4.1177 | 0      |
+| Income Before Tax Profit Margin | 0.1078 | 0.1265 | 0.1843 | 0.159  | 0.1515 | 0.1104 | 0.1231 | 0.1783 | 0.1089 | 0.0701 |
+| Effective Tax Rate              | 0.1923 | 0.2351 | 0.195  | 0.2334 | 0.1983 | 0.2075 | 0.2233 | 0.2196 | 0.2181 | 0.2647 |
+| Return on Capital Employed      | 0.0183 | 0.0192 | 0.0235 | 0.0176 | 0.0218 | 0.0145 | 0.0205 | 0.0205 | 0.0283 | 0.0382 |
+| Net Income per EBT              | 0.7908 | 0.7603 | 0.7985 | 0.743  | 0.7917 | 0.7798 | 0.768  | 0.7705 | 0.774  | 0.6972 |
+| EBT to EBIT Ratio               | 0.7469 | 0.7611 | 0.8472 | 0.801  | 0.7654 | 0.7023 | 0.7628 | 0.6654 | 0.3289 | 0.2389 |
+| EBIT to Revenue                 | 0.1327 | 0.163  | 0.2107 | 0.1803 | 0.1885 | 0.1481 | 0.1553 | 0.2564 | 0.3196 | 0.2567 |
+| Debt-to-Assets Ratio            | 0.0442 | 0.0605 | 0.0504 | 0.0546 | 0.094  | 0.1172 | 0.0923 | 0.068  | 0.0856 | 0.0771 |
 
-This gives the following:
-
-| symbol   | name                                            | currency   | sector      | industry_group   | industry    | exchange   | market                  | country       | state   | city         | zipcode    | website                        | market_cap   | isin         |         cusip | figi         | composite_figi   | shareclass_figi   |
-|:---------|:------------------------------------------------|:-----------|:------------|:-----------------|:------------|:-----------|:------------------------|:--------------|:--------|:-------------|:-----------|:-------------------------------|:-------------|:-------------|--------------:|:-------------|:-----------------|:------------------|
-| CSX      | CSX Corporation                                 | USD        | Industrials | Transportation   | Road & Rail | NMS        | NASDAQ Global Select    | United States | FL      | Jacksonville | 32202      | http://www.csx.com             | Large Cap    | US1264081035 |   1.26408e+08 | BBG000BGK1N1 | BBG000BGJRC8     | BBG001S5Q7Q3      |
-| KSU      | Kansas City Southern                            | USD        | Industrials | Transportation   | Road & Rail | NYQ        | New York Stock Exchange | United States | MO      | Kansas City  | 64105      | http://www.kcsouthern.com      | Large Cap    | nan          | nan           | nan          | nan              | nan               |
-| KSU-P    | Kansas City Southern                            | USD        | Industrials | Transportation   | Road & Rail | NYQ        | New York Stock Exchange | United States | MO      | Kansas City  | 64105      | http://www.kcsouthern.com      | Large Cap    | nan          | nan           | nan          | nan              | nan               |
-| NSC      | Norfolk Southern Corporation                    | USD        | Industrials | Transportation   | Road & Rail | NYQ        | New York Stock Exchange | United States | VA      | Norfolk      | 23510-2191 | http://www.norfolksouthern.com | Large Cap    | US6558441084 |   6.55844e+08 | BBG000BQ5GM4 | BBG000BQ5DS5     | BBG001S5TQJ6      |
-| UNP      | Union Pacific Corporation                       | USD        | Industrials | Transportation   | Road & Rail | NYQ        | New York Stock Exchange | United States | NE      | Omaha        | 68179      | http://www.up.com              | Large Cap    | US9078181081 |   9.07818e+08 | BBG000BW3413 | BBG000BW3299     | BBG001S5X2M0      |
-| WAB      | Westinghouse Air Brake Technologies Corporation | USD        | Industrials | Transportation   | Road & Rail | NYQ        | New York Stock Exchange | United States | PA      | Pittsburgh   | 15212      | http://www.wabteccorp.com      | Large Cap    | US9297401088 |   9.2974e+08  | BBG000BDDBD5 | BBG000BDD940     | BBG001S5XBT3      |
-
-With this information in hand, I can now start collecting data with the [FinanceToolkit](https://github.com/JerBouma/FinanceToolkit) package. This can be anything from balance sheet, cash flow and income statements to 100+ financial ratios, technical indicators and more. Here I initialize the FinanceToolkit with the tickers as found in the Finance Database.
-
-````python
-API_KEY = "YOUR_FMP_API_KEY"
-
-companies = railroad.to_toolkit(api_key=API_KEY, start_date='2005-01-01')
-````
-
-Then, as a demonstration, I can obtain all balance sheet statements for all companies that are marked as Large Cap Railroad companies in the United States. To keep this concise, only the first company is shown.
-
-````python
-companies.get_balance_sheet_statement().loc['CSX']
-````
-Which returns:
-
-|                                          |        2005 |        2006 |        2007 |        2008 |        2009 |        2010 |        2011 |        2012 |        2013 |        2014 |        2015 |        2016 |        2017 |        2018 |        2019 |        2020 |        2021 |        2022 |
-|:-----------------------------------------|------------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|------------:|
-| Cash and Cash Equivalents                |  3.09e+08   |  4.61e+08   |  3.68e+08   |  6.69e+08   |  1.029e+09  |  1.292e+09  |  7.83e+08   |  7.84e+08   |  5.92e+08   |  6.69e+08   |  6.28e+08   |  6.03e+08   |  4.01e+08   |  8.58e+08   |  9.58e+08   |  3.129e+09  |  2.239e+09  |  1.958e+09  |
-| Short Term Investments                   |  2.93e+08   |  4.39e+08   |  3.46e+08   |  7.6e+07    |  6.1e+07    |  5.4e+07    |  5.23e+08   |  5.87e+08   |  4.87e+08   |  2.92e+08   |  8.1e+08    |  4.17e+08   |  1.8e+07    |  2.53e+08   |  9.96e+08   |  2e+06      |  7.7e+07    |  1.29e+08   |
-| Cash and Short Term Investments          |  6.02e+08   |  9e+08      |  7.14e+08   |  7.45e+08   |  1.09e+09   |  1.346e+09  |  1.306e+09  |  1.371e+09  |  1.079e+09  |  9.61e+08   |  1.438e+09  |  1.02e+09   |  4.19e+08   |  1.111e+09  |  1.954e+09  |  3.131e+09  |  2.316e+09  |  2.087e+09  |
-| Accounts Receivable                      |  1.202e+09  |  1.174e+09  |  1.174e+09  |  1.107e+09  |  9.95e+08   |  9.93e+08   |  1.129e+09  |  9.62e+08   |  1.052e+09  |  1.129e+09  |  9.82e+08   |  9.38e+08   |  9.7e+08    |  1.01e+09   |  9.86e+08   |  9.12e+08   |  1.148e+09  |  1.313e+09  |
-| Inventory                                |  1.99e+08   |  2.04e+08   |  2.4e+08    |  2.17e+08   |  2.03e+08   |  2.18e+08   |  2.4e+08    |  2.74e+08   |  2.52e+08   |  2.73e+08   |  3.5e+08    |  4.07e+08   |  3.72e+08   |  2.63e+08   |  2.61e+08   |  3.02e+08   |  3.39e+08   |  3.41e+08   |
-| Other Current Assets                     |  1.44e+08   |  1.43e+08   |  1.09e+08   |  1.19e+08   |  1.24e+08   |  1.06e+08   |  7.8e+07    |  1.43e+09   |  1.523e+09  |  1.611e+09  |  1.528e+09  |  1.467e+09  |  1.496e+09  |  1.454e+09  |  1.324e+09  |  1.31e+09   |  1.557e+09  |  1.762e+09  |
-| Total Current Assets                     |  2.372e+09  |  2.672e+09  |  2.491e+09  |  2.391e+09  |  2.57e+09   |  2.855e+09  |  2.935e+09  |  2.801e+09  |  2.602e+09  |  2.572e+09  |  2.966e+09  |  2.487e+09  |  1.915e+09  |  2.565e+09  |  3.278e+09  |  4.441e+09  |  3.873e+09  |  3.849e+09  |
-| Property, Plant and Equipment            |  2.0163e+10 |  2.0923e+10 |  2.178e+10  |  2.2688e+10 |  2.3213e+10 |  2.3799e+10 |  2.4974e+10 |  2.605e+10  |  2.7291e+10 |  2.8584e+10 |  3.0174e+10 |  3.115e+10  |  3.1764e+10 |  3.1998e+10 |  3.2168e+10 |  3.2444e+10 |  3.3015e+10 |  3.4242e+10 |
-| Goodwill                                 |  0          |  0          |  0          |  6.4e+07    |  6.4e+07    |  7e+07      |  6.4e+07    |  6.4e+07    |  6.4e+07    |  6.3e+07    |  6.3e+07    |  6.3e+07    |  6.3e+07    |  0          |  0          |  0          |  2.76e+08   |  3.19e+08   |
-| Intangible Assets                        |  0          |  7.3e+07    |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  1.75e+08   |  1.83e+08   |
-| Long Term Investments                    |  6.03e+08   |  6.07e+08   |  1.004e+09  |  1.015e+09  |  1.088e+09  |  1.134e+09  |  1.171e+09  |  1.206e+09  |  1.298e+09  |  1.356e+09  |  1.394e+09  |  1.459e+09  |  1.686e+09  |  1.779e+09  |  1.879e+09  |  1.985e+09  |  2.099e+09  |  2.292e+09  |
-| Tax Assets                               |  0          |  0          |  2.54e+08   |  2.03e+08   | -6.4e+07    |  4.74e+08   |  1.82e+08   |  1.19e+08   |  1.55e+08   |  1.41e+08   |  1.26e+08   |  9.596e+09  |  6.418e+09  |  6.69e+09   |  6.961e+09  |  7.168e+09  | -4.51e+08   |  7.569e+09  |
-| Other Fixed Assets                       |  1.094e+09  |  8.54e+08   |  2.59e+08   | -7.3e+07    |  1.65e+08   | -1.91e+08   |  1.47e+08   |  3.31e+08   |  3.72e+08   |  3.37e+08   |  3.16e+08   | -9.341e+09  | -6.107e+09  |  3.87e+08   |  9.32e+08   |  9.23e+08   |  1.544e+09  | -6.542e+09  |
-| Fixed Assets                             |  2.186e+10  |  2.2457e+10 |  2.3043e+10 |  2.3897e+10 |  2.4466e+10 |  2.5286e+10 |  2.6538e+10 |  2.777e+10  |  2.918e+10  |  3.0481e+10 |  3.2073e+10 |  3.2927e+10 |  3.3824e+10 |  3.4164e+10 |  3.4979e+10 |  3.5352e+10 |  3.6658e+10 |  3.8063e+10 |
-| Other Assets                             |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |
-| Total Assets                             |  2.4232e+10 |  2.5129e+10 |  2.5534e+10 |  2.6288e+10 |  2.7036e+10 |  2.8141e+10 |  2.9473e+10 |  3.0571e+10 |  3.1782e+10 |  3.3053e+10 |  3.5039e+10 |  3.5414e+10 |  3.5739e+10 |  3.6729e+10 |  3.8257e+10 |  3.9793e+10 |  4.0531e+10 |  4.1912e+10 |
-| Accounts Payable                         |  9.54e+08   |  9.74e+08   |  9.76e+08   |  9.73e+08   |  9.67e+08   |  1.046e+09  |  1.147e+09  |  1.014e+09  |  9.57e+08   |  8.45e+08   |  7.64e+08   |  8.06e+08   |  8.47e+08   |  9.49e+08   |  1.043e+09  |  8.09e+08   |  9.63e+08   |  1.13e+09   |
-| Short Term Debt                          |  9.37e+08   |  6e+08      |  7.87e+08   |  3.2e+08    |  1.13e+08   |  6.13e+08   |  5.07e+08   |  7.8e+08    |  5.33e+08   |  2.28e+08   |  2e+07      |  3.31e+08   |  1.9e+07    |  1.8e+07    |  2.45e+08   |  4.01e+08   |  1.81e+08   |  1.51e+08   |
-| Tax Payables                             |  1.02e+08   |  1.14e+08   |  1.13e+08   |  1.25e+08   |  1.12e+08   |  8.5e+07    |  1.29e+08   |  8.5e+07    |  9.1e+07    |  1.63e+08   |  1.08e+08   |  1.29e+08   |  1.57e+08   |  1.06e+08   |  6.9e+07    |  7.3e+07    |  1.34e+08   |  1.11e+08   |
-| Deferred Revenue                         |  6.67e+08   |  6.09e+08   |  5.74e+08   |  5.9e+08    |  4.95e+08   | -1.046e+09  | -1.147e+09  | -1.014e+09  | -9.57e+08   | -8.45e+08   | -7.64e+08   | -8.06e+08   | -8.47e+08   |  1.06e+08   | -1.043e+09  | -8.09e+08   | -9.63e+08   |  7.569e+09  |
-| Other Current Liabilities                |  4.21e+08   |  3.39e+08   |  3.34e+08   |  5.21e+08   |  2.9e+08    |  1.924e+09  |  2.18e+09   |  1.847e+09  |  1.891e+09  |  1.879e+09  |  1.932e+09  |  1.709e+09  |  1.875e+09  |  8.42e+08   |  1.906e+09  |  1.618e+09  |  2.052e+09  | -6.379e+09  |
-| Total Current Liabilities                |  2.979e+09  |  2.522e+09  |  2.671e+09  |  2.404e+09  |  1.865e+09  |  2.537e+09  |  2.687e+09  |  2.627e+09  |  2.424e+09  |  2.107e+09  |  1.952e+09  |  2.04e+09   |  1.894e+09  |  1.915e+09  |  2.151e+09  |  2.019e+09  |  2.233e+09  |  2.471e+09  |
-| Long Term Debt                           |  5.093e+09  |  5.362e+09  |  6.47e+09   |  7.512e+09  |  7.895e+09  |  8.051e+09  |  8.734e+09  |  9.052e+09  |  9.022e+09  |  9.514e+09  |  1.0683e+10 |  1.0962e+10 |  1.179e+10  |  1.4739e+10 |  1.5993e+10 |  1.6304e+10 |  1.6185e+10 |  1.7896e+10 |
-| Deferred Revenue Non Current             |  0          |  8.74e+08   |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |
-| Deferred Tax Liabilities                 |  6.082e+09  |  6.11e+09   |  6.096e+09  |  6.235e+09  |  6.585e+09  |  7.053e+09  |  7.601e+09  |  8.096e+09  |  8.662e+09  |  8.858e+09  |  9.305e+09  |  9.596e+09  |  6.418e+09  |  6.69e+09   |  6.961e+09  |  7.168e+09  |  7.383e+09  |  7.569e+09  |
-| Other Non Current Liabilities            |  2.124e+09  |  1.23e+09   |  1.612e+09  |  2.089e+09  |  1.831e+09  |  1.8e+09    |  1.983e+09  |  1.794e+09  |  1.17e+09   |  1.398e+09  |  1.431e+09  |  1.122e+09  |  9.16e+08   |  8.05e+08   |  1.289e+09  |  1.192e+09  |  1.23e+09   |  1.351e+09  |
-| Total Non Current Liabilities            |  1.3299e+10 |  1.3576e+10 |  1.4178e+10 |  1.5836e+10 |  1.6311e+10 |  1.6904e+10 |  1.8318e+10 |  1.8942e+10 |  1.8854e+10 |  1.977e+10  |  2.1419e+10 |  2.168e+10  |  1.9124e+10 |  2.2234e+10 |  2.4243e+10 |  2.4664e+10 |  2.4798e+10 |  2.6816e+10 |
-| Other Liabilities                        |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |
-| Capital Lease Obligations                |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  0          |  4.93e+08   |  4.55e+08   |  4.78e+08   |  4.88e+08   |
-| Total Liabilities                        |  1.6278e+10 |  1.6098e+10 |  1.6849e+10 |  1.824e+10  |  1.8176e+10 |  1.9441e+10 |  2.1005e+10 |  2.1569e+10 |  2.1278e+10 |  2.1877e+10 |  2.3371e+10 |  2.372e+10  |  2.1018e+10 |  2.4149e+10 |  2.6394e+10 |  2.6683e+10 |  2.7031e+10 |  2.9287e+10 |
-| Preferred Stock                          |  0          |  0          |  0          | -1.824e+10  |  0          | -2.801e+09  |  1.3e+07    |  1.4e+07    |  2.1e+07    |  2.4e+07    |  1.6e+07    |  1.5e+07    |  1.6e+07    |  1.7e+07    |  0          |  0          |  0          |  0          |
-| Common Stock                             |  2.18e+08   |  4.38e+08   |  4.08e+08   |  3.91e+08   |  3.93e+08   |  3.7e+08    |  1.049e+09  |  1.02e+09   |  1.009e+09  |  9.92e+08   |  9.66e+08   |  9.28e+08   |  8.9e+08    |  8.18e+08   |  7.73e+08   |  7.63e+08   |  2.202e+09  |  2.066e+09  |
-| Retained Earnings                        |  6.262e+09  |  7.427e+09  |  8.565e+09  |  8.398e+09  |  9.182e+09  |  9.087e+09  |  8.275e+09  |  8.876e+09  |  9.936e+09  |  1.0734e+10 |  1.1238e+10 |  1.1253e+10 |  1.4084e+10 |  1.2157e+10 |  1.1404e+10 |  1.2527e+10 |  1.163e+10  |  1.0363e+10 |
-| Accumulated Other Comprehensive Income   | -2.77e+08   | -3.92e+08   | -3.25e+08   | -7.41e+08   | -8.09e+08   | -7.71e+08   | -8.75e+08   | -9.36e+08   | -5.23e+08   | -6.66e+08   | -6.65e+08   | -6.4e+08    | -4.86e+08   | -6.61e+08   | -6.75e+08   | -5.98e+08   | -4.08e+08   | -3.88e+08   |
-| Other Total Shareholder Equity           |  1.751e+09  |  1.469e+09  |  3.7e+07    |  1.824e+10  |  8e+07      |  2.815e+09  |  6e+06      |  2.8e+07    |  6.1e+07    |  9.2e+07    |  1.13e+08   |  1.38e+08   |  2.17e+08   |  2.49e+08   |  3.61e+08   |  4.18e+08   |  7.6e+07    |  5.84e+08   |
-| Total Shareholder Equity                 |  7.954e+09  |  8.942e+09  |  8.685e+09  |  8.048e+09  |  8.846e+09  |  8.7e+09    |  8.468e+09  |  9.002e+09  |  1.0504e+10 |  1.1176e+10 |  1.1668e+10 |  1.1694e+10 |  1.4721e+10 |  1.258e+10  |  1.1863e+10 |  1.311e+10  |  1.35e+10   |  1.2625e+10 |
-| Total Equity                             |  7.954e+09  |  8.942e+09  |  8.685e+09  |  8.048e+09  |  8.846e+09  |  8.7e+09    |  8.468e+09  |  9.002e+09  |  1.0504e+10 |  1.1176e+10 |  1.1668e+10 |  1.1694e+10 |  1.4721e+10 |  1.258e+10  |  1.1863e+10 |  1.311e+10  |  1.35e+10   |  1.2625e+10 |
-| Total Liabilities and Shareholder Equity |  2.4232e+10 |  2.5129e+10 |  2.5534e+10 |  2.6288e+10 |  2.7036e+10 |  2.8155e+10 |  2.9486e+10 |  3.0585e+10 |  3.1803e+10 |  3.3077e+10 |  3.5055e+10 |  3.5429e+10 |  3.5755e+10 |  3.6746e+10 |  3.8272e+10 |  3.9802e+10 |  4.0541e+10 |  4.1922e+10 |
-| Minority Interest                        |  0          |  8.9e+07    |  0          |  0          |  1.4e+07    |  1.4e+07    |  1.3e+07    |  1.4e+07    |  2.1e+07    |  2.4e+07    |  1.6e+07    |  1.5e+07    |  1.6e+07    |  1.7e+07    |  1.5e+07    |  9e+06      |  1e+07      |  1e+07      |
-| Total Liabilities and Equity             |  2.4232e+10 |  2.5129e+10 |  2.5534e+10 |  2.6288e+10 |  2.7036e+10 |  2.8155e+10 |  2.9486e+10 |  3.0585e+10 |  3.1803e+10 |  3.3077e+10 |  3.5055e+10 |  3.5429e+10 |  3.5755e+10 |  3.6746e+10 |  3.8272e+10 |  3.9802e+10 |  4.0541e+10 |  4.1922e+10 |
-| Total Investments                        |  8.96e+08   |  1.046e+09  |  1.35e+09   |  1.091e+09  |  1.149e+09  |  1.188e+09  |  1.694e+09  |  1.793e+09  |  1.785e+09  |  1.648e+09  |  2.204e+09  |  1.876e+09  |  1.704e+09  |  2.032e+09  |  2.875e+09  |  1.987e+09  |  2.176e+09  |  2.421e+09  |
-| Total Debt                               |  6.03e+09   |  5.962e+09  |  7.257e+09  |  7.832e+09  |  8.008e+09  |  8.664e+09  |  9.241e+09  |  9.832e+09  |  9.555e+09  |  9.742e+09  |  1.0703e+10 |  1.1293e+10 |  1.1809e+10 |  1.4757e+10 |  1.6238e+10 |  1.6705e+10 |  1.6366e+10 |  1.8047e+10 |
-| Net Debt                                 |  5.721e+09  |  5.501e+09  |  6.889e+09  |  7.163e+09  |  6.979e+09  |  7.372e+09  |  8.458e+09  |  9.048e+09  |  8.963e+09  |  9.073e+09  |  1.0075e+10 |  1.069e+10  |  1.1408e+10 |  1.3899e+10 |  1.528e+10  |  1.3576e+10 |  1.4127e+10 |  1.6089e+10 |
-
-With the data from the FinanceToolkit, it is now possible to execute a Dupont analysis on all companies. This shows the power of being able to combine a large database with a toolkit that allows you to do proper financial research. Again, only the first company is selected to keep things compact.
-
-````python
-companies.models.get_extended_dupont_analysis().loc['CSX']
-````
-
-Which returns:
-
-|                         |     2005 |   2006 |   2007 |   2008 |   2009 |   2010 |   2011 |   2012 |   2013 |   2014 |   2015 |   2016 |   2017 |   2018 |   2019 |   2020 |   2021 |   2022 |
-|:------------------------|---------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
-| Interest Burden Ratio   |   1.4961 | 1.1613 | 1.1677 | 1.2898 | 1.2976 | 1.2062 | 1.1835 | 1.1663 | 1.1886 | 1.1869 | 1.1421 | 1.2364 | 1.1671 | 1.1313 | 1.1504 | 1.2026 | 1.1299 | 1.1125 |
-| Tax Burden Ratio        |   0.7387 | 0.6127 | 0.5922 | 0.4931 | 0.5042 | 0.509  | 0.5331 | 0.5377 | 0.5367 | 0.5334 | 0.5491 | 0.5058 | 1.492  | 0.6796 | 0.6709 | 0.6339 | 0.6759 | 0.6917 |
-| Operating Profit Margin |   0.1202 | 0.1925 | 0.1926 | 0.1907 | 0.1948 | 0.2394 | 0.2459 | 0.2521 | 0.243  | 0.2403 | 0.2657 | 0.2476 | 0.2754 | 0.3513 | 0.3616 | 0.3427 | 0.3954 | 0.3645 |
-| Asset Turnover          | nan      | 0.3876 | 0.3959 | 0.4344 | 0.3391 | 0.3855 | 0.4076 | 0.3916 | 0.3857 | 0.3908 | 0.3469 | 0.3142 | 0.3207 | 0.3381 | 0.3184 | 0.2712 | 0.3118 | 0.3603 |
-| Equity Multiplier       | nan      | 2.9215 | 2.8742 | 3.097  | 3.1564 | 3.1447 | 3.3559 | 3.437  | 3.1966 | 2.9905 | 2.9807 | 3.0157 | 2.6937 | 2.6544 | 3.0678 | 3.1254 | 3.0186 | 3.1557 |
-| Return on Equity        | nan      | 0.1551 | 0.1516 | 0.1632 | 0.1364 | 0.1782 | 0.2123 | 0.2128 | 0.1911 | 0.1778 | 0.1723 | 0.1467 | 0.4142 | 0.2424 | 0.2726 | 0.2214 | 0.2842 | 0.3189 |
+All of these methods are also available for the other asset classes. The only difference is that the class name changes and the available columns. For example, for ETFs you would use `fd.ETFs()` instead of `fd.Equities()` and the `select` option has parameters such as `category_group` and `family` instead.
 
 
-It isn't too difficult to then plot a metric like Return on Equity (RoE) for all companies if you want to delve deeper. You can locate the rows directly from the DuPont Analysis but it is also possible to call the related function.
-
-````python
-companies.ratios.get_return_on_equity().T.plot(
-    title='Return on Equity (RoE) for Railroad Companies in the United States',
-    figsize=(15, 5))
-````
-
-Which returns:
-
-![Return on Equity](https://github.com/JerBouma/FinanceDatabase/assets/46355364/edb34dff-dfc7-4a06-b884-33020135644f)
-
-
-## Technical Analysis of Biotech ETFs
-In this example I will show how you can use the FinanceDatabase to do a technical analysis of Biotech ETFs during the Coronacrisis. Let's find Health Care ETFs that mention something about 'Biotech' in their description. This would indicate they are related to Biotechnology. **Find the related Jupyter Notebook with more examples [here](https://www.jeroenbouma.com/projects/financedatabase/technical-analysis).**
-
-````python
-import financedatabase as fd
-
-API_KEY = "YOUR_FMP_API_KEY"
-
+```python
 etfs = fd.ETFs()
 
-health_care_etfs_in_biotech = etfs.search(category='Health Care', summary='biotech', exclude_exchanges=True)
-````
-
-Which returns:
-
-| symbol   | name                                           | currency   | category_group   | category    | family                        | exchange   | market    |
-|:---------|:-----------------------------------------------|:-----------|:-----------------|:------------|:------------------------------|:-----------|:----------|
-| AGNG     | Global X Aging Population ETF                  | USD        | Health Care      | Health Care | Global X Funds                | NMS        | us_market |
-| BBC      | Virtus LifeSci Biotech Clinical Trials ETF     | USD        | Health Care      | Health Care | Virtus                        | PCX        | us_market |
-| BBH      | VanEck Vectors Biotech ETF                     | USD        | Health Care      | Health Care | VanEck Asset Management       | NMS        | us_market |
-| BBP      | Virtus LifeSci Biotech Products ETF            | USD        | Health Care      | Health Care | Virtus                        | PCX        | us_market |
-| CNCR     | Loncar Cancer Immunotherapy ETF                | USD        | Health Care      | Health Care | Loncar Investments            | NGM        | us_market |
-| FBT      | First Trust NYSE Arca Biotechnology Index Fund | USD        | Health Care      | Health Care | First Trust Advisors          | PCX        | us_market |
-| IBB      | iShares Nasdaq Biotechnology ETF               | USD        | Health Care      | Health Care | BlackRock Asset Management    | NMS        | us_market |
-| IBBJ     | Defiance Nasdaq Junior Biotechnology ETF       | USD        | Health Care      | Health Care | Defiance ETFs                 | NGM        | us_market |
-| IBBQ     | Invesco Nasdaq Biotechnology ETF               | USD        | Health Care      | Health Care | Invesco Investment Management | NMS        | us_market |
-| IEIH     | iShares Evolved U.S. Innovative Healthcare ETF | USD        | Health Care      | Health Care | BlackRock Asset Management    | BTS        | us_market |
-| PBE      | Invesco Dynamic Biotechnology & Genome ETF     | USD        | Health Care      | Health Care | Invesco Investment Management | PCX        | us_market |
-| SBIO     | ALPS Medical Breakthroughs ETF                 | USD        | Health Care      | Health Care | ALPS ETF Trust                | PCX        | us_market |
-| XBI      | SPDR S&P Biotech ETF                           | USD        | Health Care      | Health Care | State Street Global Advisors  | PCX        | us_market |
-| XLV      | Health Care Select Sector SPDR Fund            | USD        | Health Care      | Health Care | State Street Global Advisors  | PCX        | us_market |
-
-Next up is initializing the Finance Toolkit and obtaining historical data for the chosen tickers. Here a start and end date are also selected that match the period around the initial wave of the Coronacrisis. Then it's time to collect the historical data for each ETF found.
-
-````python
-etfs_in_biotech = health_care_etfs_in_biotech.to_toolkit(api_key=API_KEY, start_date="2020-01-01", end_date="2020-06-01")
-
-etfs_in_biotech.get_historical_data()
-````
-
-Which returns (note that this is a MultiIndex):
-
-| Date       |   ('Open', 'AGNG') |   ('Open', 'BBC') |   ('Open', 'BBH') |   ('Open', 'BBP') |   ('Open', 'CNCR') |   ('Open', 'FBT') |   ('Open', 'IBB') |   ('Open', 'IEIH') |   ('Open', 'PBE') |   ('Open', 'SBIO') |   ('Open', 'XBI') |   ('Open', 'XLV') |   ('High', 'AGNG') |   ('High', 'BBC') |   ('High', 'BBH') |   ('High', 'BBP') |   ('High', 'CNCR') |   ('High', 'FBT') |   ('High', 'IBB') |   ('High', 'IEIH') |   ('High', 'PBE') |   ('High', 'SBIO') |   ('High', 'XBI') |   ('High', 'XLV') |   ('Low', 'AGNG') |   ('Low', 'BBC') |   ('Low', 'BBH') |   ('Low', 'BBP') |   ('Low', 'CNCR') |   ('Low', 'FBT') |   ('Low', 'IBB') |   ('Low', 'IEIH') |   ('Low', 'PBE') |   ('Low', 'SBIO') |   ('Low', 'XBI') |   ('Low', 'XLV') |   ('Close', 'AGNG') |   ('Close', 'BBC') |   ('Close', 'BBH') |   ('Close', 'BBP') |   ('Close', 'CNCR') |   ('Close', 'FBT') |   ('Close', 'IBB') |   ('Close', 'IEIH') |   ('Close', 'PBE') |   ('Close', 'SBIO') |   ('Close', 'XBI') |   ('Close', 'XLV') |   ('Adj Close', 'AGNG') |   ('Adj Close', 'BBC') |   ('Adj Close', 'BBH') |   ('Adj Close', 'BBP') |   ('Adj Close', 'CNCR') |   ('Adj Close', 'FBT') |   ('Adj Close', 'IBB') |   ('Adj Close', 'IEIH') |   ('Adj Close', 'PBE') |   ('Adj Close', 'SBIO') |   ('Adj Close', 'XBI') |   ('Adj Close', 'XLV') |   ('Volume', 'AGNG') |   ('Volume', 'BBC') |   ('Volume', 'BBH') |   ('Volume', 'BBP') |   ('Volume', 'CNCR') |   ('Volume', 'FBT') |   ('Volume', 'IBB') |   ('Volume', 'IEIH') |   ('Volume', 'PBE') |   ('Volume', 'SBIO') |   ('Volume', 'XBI') |   ('Volume', 'XLV') |   ('Dividends', 'AGNG') |   ('Dividends', 'BBC') |   ('Dividends', 'BBH') |   ('Dividends', 'BBP') |   ('Dividends', 'CNCR') |   ('Dividends', 'FBT') |   ('Dividends', 'IBB') |   ('Dividends', 'IEIH') |   ('Dividends', 'PBE') |   ('Dividends', 'SBIO') |   ('Dividends', 'XBI') |   ('Dividends', 'XLV') |   ('Return', 'AGNG') |   ('Return', 'BBC') |   ('Return', 'BBH') |   ('Return', 'BBP') |   ('Return', 'CNCR') |   ('Return', 'FBT') |   ('Return', 'IBB') |   ('Return', 'IEIH') |   ('Return', 'PBE') |   ('Return', 'SBIO') |   ('Return', 'XBI') |   ('Return', 'XLV') |   ('Volatility', 'AGNG') |   ('Volatility', 'BBC') |   ('Volatility', 'BBH') |   ('Volatility', 'BBP') |   ('Volatility', 'CNCR') |   ('Volatility', 'FBT') |   ('Volatility', 'IBB') |   ('Volatility', 'IEIH') |   ('Volatility', 'PBE') |   ('Volatility', 'SBIO') |   ('Volatility', 'XBI') |   ('Volatility', 'XLV') |   ('Excess Return', 'AGNG') |   ('Excess Return', 'BBC') |   ('Excess Return', 'BBH') |   ('Excess Return', 'BBP') |   ('Excess Return', 'CNCR') |   ('Excess Return', 'FBT') |   ('Excess Return', 'IBB') |   ('Excess Return', 'IEIH') |   ('Excess Return', 'PBE') |   ('Excess Return', 'SBIO') |   ('Excess Return', 'XBI') |   ('Excess Return', 'XLV') |   ('Excess Volatility', 'AGNG') |   ('Excess Volatility', 'BBC') |   ('Excess Volatility', 'BBH') |   ('Excess Volatility', 'BBP') |   ('Excess Volatility', 'CNCR') |   ('Excess Volatility', 'FBT') |   ('Excess Volatility', 'IBB') |   ('Excess Volatility', 'IEIH') |   ('Excess Volatility', 'PBE') |   ('Excess Volatility', 'SBIO') |   ('Excess Volatility', 'XBI') |   ('Excess Volatility', 'XLV') |   ('Cumulative Return', 'AGNG') |   ('Cumulative Return', 'BBC') |   ('Cumulative Return', 'BBH') |   ('Cumulative Return', 'BBP') |   ('Cumulative Return', 'CNCR') |   ('Cumulative Return', 'FBT') |   ('Cumulative Return', 'IBB') |   ('Cumulative Return', 'IEIH') |   ('Cumulative Return', 'PBE') |   ('Cumulative Return', 'SBIO') |   ('Cumulative Return', 'XBI') |   ('Cumulative Return', 'XLV') |
-|:-----------|-------------------:|------------------:|------------------:|------------------:|-------------------:|------------------:|------------------:|-------------------:|------------------:|-------------------:|------------------:|------------------:|-------------------:|------------------:|------------------:|------------------:|-------------------:|------------------:|------------------:|-------------------:|------------------:|-------------------:|------------------:|------------------:|------------------:|-----------------:|-----------------:|-----------------:|------------------:|-----------------:|-----------------:|------------------:|-----------------:|------------------:|-----------------:|-----------------:|--------------------:|-------------------:|-------------------:|-------------------:|--------------------:|-------------------:|-------------------:|--------------------:|-------------------:|--------------------:|-------------------:|-------------------:|------------------------:|-----------------------:|-----------------------:|-----------------------:|------------------------:|-----------------------:|-----------------------:|------------------------:|-----------------------:|------------------------:|-----------------------:|-----------------------:|---------------------:|--------------------:|--------------------:|--------------------:|---------------------:|--------------------:|--------------------:|---------------------:|--------------------:|---------------------:|--------------------:|--------------------:|------------------------:|-----------------------:|-----------------------:|-----------------------:|------------------------:|-----------------------:|-----------------------:|------------------------:|-----------------------:|------------------------:|-----------------------:|-----------------------:|---------------------:|--------------------:|--------------------:|--------------------:|---------------------:|--------------------:|--------------------:|---------------------:|--------------------:|---------------------:|--------------------:|--------------------:|-------------------------:|------------------------:|------------------------:|------------------------:|-------------------------:|------------------------:|------------------------:|-------------------------:|------------------------:|-------------------------:|------------------------:|------------------------:|----------------------------:|---------------------------:|---------------------------:|---------------------------:|----------------------------:|---------------------------:|---------------------------:|----------------------------:|---------------------------:|----------------------------:|---------------------------:|---------------------------:|--------------------------------:|-------------------------------:|-------------------------------:|-------------------------------:|--------------------------------:|-------------------------------:|-------------------------------:|--------------------------------:|-------------------------------:|--------------------------------:|-------------------------------:|-------------------------------:|--------------------------------:|-------------------------------:|-------------------------------:|-------------------------------:|--------------------------------:|-------------------------------:|-------------------------------:|--------------------------------:|-------------------------------:|--------------------------------:|-------------------------------:|-------------------------------:|
-| 2020-01-02 |             23.59  |             38.47 |            140.44 |            44.18  |              23.62 |            149.6  |            121.3  |            27.7942 |             56.27 |              42.79 |             95.82 |            102.17 |             23.74  |            38.47  |            140.44 |            44.18  |             23.62  |            149.6  |            121.75 |            27.948  |             56.27 |             42.79  |             96.03 |            102.29 |            23.56  |            37.01 |           138.96 |           42.85  |             23.17 |           147.14 |           118.94 |           27.7942 |            55.33 |            41.32  |            93.73 |           101.4  |              23.665 |             37.413 |             139.62 |             43.171 |              23.459 |             148.22 |             119.89 |             27.948  |              55.84 |               41.62 |              94.68 |             102.13 |                 23.1607 |                 37.413 |                138.222 |                 43.171 |                 21.6018 |                146.208 |                118.894 |                 27.948  |                55.7882 |                   41.62 |                94.4506 |                96.6373 |                 2400 |               65300 |               15100 |                2900 |                 5000 |              324900 |          2.8444e+06 |                 2927 |                5400 |                94400 |          3.5886e+06 |          6.2774e+06 |                       0 |                      0 |                      0 |                      0 |                       0 |                      0 |                      0 |                       0 |                      0 |                       0 |                      0 |                      0 |          0           |          0          |         0           |          0          |           0          |          0          |         0           |          0           |         0           |          0           |          0          |          0          |                0.0243617 |               0.0355917 |               0.0250125 |               0.0301117 |                0.0336436 |                0.025867 |               0.0272492 |                0.0228432 |               0.0279196 |                0.0361503 |                0.032811 |               0.0268018 |                  -0.0143432 |                -0.0356187  |                 -0.0173654 |                -0.0270471  |                 -0.0179894  |                -0.022162   |                -0.0239449  |                  -0.019122  |                 -0.018979  |                  -0.0344102 |                -0.0233211  |                 -0.0161495 |                       0.0248774 |                      0.0360896 |                      0.0256092 |                      0.0305088 |                       0.0341735 |                      0.0264006 |                      0.0277755 |                       0.0234134 |                      0.0284401 |                       0.0365299 |                      0.0332703 |                      0.0273135 |                        1        |                       1        |                       1        |                       1        |                        1        |                       1        |                       1        |                        1        |                       1        |                        1        |                       1        |                       1        |
-| 2020-01-03 |             23.41  |             36.9  |            137.24 |            42.88  |              23.11 |            145.9  |            118.2  |            27.74   |             55.23 |              41.01 |             93.21 |            100.95 |             23.62  |            37.24  |            138.81 |            42.88  |             23.43  |            147.33 |            119.14 |            27.7626 |             55.63 |             41.5   |             94.18 |            101.82 |            23.18  |            34.6  |           137.24 |           42.714 |             23.11 |           145.29 |           117.77 |           27.6172 |            55.15 |            40.68  |            92.7  |           100.45 |              23.555 |             36.84  |             138    |             42.714 |              23.196 |             146.3  |             118.36 |             27.7255 |              55.42 |               40.96 |              93.36 |             101.24 |                 23.053  |                 36.84  |                136.618 |                 42.714 |                 21.3596 |                144.314 |                117.376 |                 27.7255 |                55.3686 |                   40.96 |                93.1338 |                95.7952 |                23700 |              107800 |               26900 |                 400 |                 7600 |              175100 |          5.4809e+06 |                 1937 |               12400 |                91000 |          5.1106e+06 |          8.2475e+06 |                       0 |                      0 |                      0 |                      0 |                       0 |                      0 |                      0 |                       0 |                      0 |                       0 |                      0 |                      0 |         -0.00464814  |         -0.0153155  |        -0.0116029   |         -0.0105858  |          -0.0112111  |         -0.0129537  |        -0.0127615   |         -0.00796121  |        -0.00752148  |         -0.0158578   |         -0.0139417  |         -0.00871437 |                0.0243617 |               0.0355917 |               0.0250125 |               0.0301117 |                0.0336436 |                0.025867 |               0.0272492 |                0.0228432 |               0.0279196 |                0.0361503 |                0.032811 |               0.0268018 |                  -0.0225481 |                -0.0332155  |                 -0.0295029 |                -0.0284858  |                 -0.0291111  |                -0.0308537  |                -0.0306615  |                  -0.0258612 |                 -0.0254215 |                  -0.0337578 |                -0.0318417  |                 -0.0266144 |                       0.0248774 |                      0.0360896 |                      0.0256092 |                      0.0305088 |                       0.0341735 |                      0.0264006 |                      0.0277755 |                       0.0234134 |                      0.0284401 |                       0.0365299 |                      0.0332703 |                      0.0273135 |                        0.995352 |                       0.984685 |                       0.988397 |                       0.989414 |                        0.988789 |                       0.987046 |                       0.987238 |                        0.992039 |                       0.992479 |                        0.984142 |                       0.986058 |                       0.991286 |
-| 2020-01-06 |             23.242 |             36.57 |            137.05 |            42.3   |              23.1  |            145.47 |            117.69 |            27.76   |             55.26 |              40.54 |             92.76 |            100.78 |             23.61  |            36.81  |            139.32 |            43.025 |             23.45  |            147.89 |            119.18 |            27.8415 |             55.38 |             40.992 |             94.21 |            101.9  |            23.242 |            35.72 |           137.05 |           42.07  |             22.94 |           144.9  |           116.95 |           27.76   |            54.86 |            40.04  |            91.83 |           100.75 |              23.565 |             36.77  |             139.29 |             43.025 |              23.45  |             147.89 |             119.12 |             27.8415 |              55.38 |               40.99 |              94.17 |             101.87 |                 23.0628 |                 36.77  |                137.896 |                 43.025 |                 21.5935 |                145.882 |                118.13  |                 27.8415 |                55.3286 |                   40.99 |                93.9419 |                96.3913 |                 1800 |               35300 |               15700 |                5100 |                10600 |               92600 |          2.1991e+06 |                  248 |                8100 |                89100 |          3.3645e+06 |          6.4418e+06 |                       0 |                      0 |                      0 |                      0 |                       0 |                      0 |                      0 |                       0 |                      0 |                       0 |                      0 |                      0 |          0.000424587 |         -0.00190011 |         0.0093477   |          0.00728101 |           0.0109503  |          0.010868   |         0.00642103  |          0.00418384  |        -0.000721745 |          0.000732495 |          0.00867616 |          0.00622281 |                0.0243617 |               0.0355917 |               0.0250125 |               0.0301117 |                0.0336436 |                0.025867 |               0.0272492 |                0.0228432 |               0.0279196 |                0.0361503 |                0.032811 |               0.0268018 |                  -0.0176754 |                -0.0200001  |                 -0.0087523 |                -0.010819   |                 -0.00714974 |                -0.00723197 |                -0.011679   |                  -0.0139162 |                 -0.0188217 |                  -0.0173675 |                -0.00942384 |                 -0.0118772 |                       0.0248774 |                      0.0360896 |                      0.0256092 |                      0.0305088 |                       0.0341735 |                      0.0264006 |                      0.0277755 |                       0.0234134 |                      0.0284401 |                       0.0365299 |                      0.0332703 |                      0.0273135 |                        0.995774 |                       0.982814 |                       0.997636 |                       0.996618 |                        0.999616 |                       0.997774 |                       0.993578 |                        0.996189 |                       0.991762 |                        0.984863 |                       0.994613 |                       0.997454 |
-| 2020-01-07 |             23.69  |             36.85 |            138.87 |            42.796 |              23.51 |            147.76 |            119.16 |            27.8    |             55.2  |              41.29 |             94.49 |            101.59 |             23.81  |            37.29  |            139.69 |            43.142 |             23.661 |            148.6  |            119.64 |            27.85   |             55.2  |             41.362 |             94.73 |            101.76 |            23.64  |            36.44 |           138.86 |           42.585 |             23.34 |           146.72 |           117.96 |           27.8    |            54.95 |            40.31  |            92.98 |           101.1  |              23.651 |             37.068 |             139.42 |             43.142 |              23.632 |             148.37 |             119.15 |             27.8193 |              55.02 |               41.12 |              94.32 |             101.67 |                 23.147  |                 37.068 |                138.024 |                 43.142 |                 21.7611 |                146.356 |                118.16  |                 27.8193 |                54.969  |                   41.12 |                94.0915 |                96.202  |                10600 |               27200 |                7400 |                2500 |                26900 |               93100 |          1.7184e+06 |                 2070 |                3400 |                61700 |          3.9548e+06 |          6.3353e+06 |                       0 |                      0 |                      0 |                      0 |                       0 |                      0 |                      0 |                       0 |                      0 |                       0 |                      0 |                      0 |          0.00364951  |          0.00810446 |         0.000933265 |          0.00271926 |           0.00776119 |          0.00324564 |         0.000251689 |         -0.000797335 |        -0.00650052  |          0.00317143  |          0.00159277 |         -0.00196339 |                0.0243617 |               0.0355917 |               0.0250125 |               0.0301117 |                0.0336436 |                0.025867 |               0.0272492 |                0.0228432 |               0.0279196 |                0.0361503 |                0.032811 |               0.0268018 |                  -0.0146505 |                -0.0101955  |                 -0.0173667 |                -0.0155807  |                 -0.0105388  |                -0.0150544  |                -0.0180483  |                  -0.0190973 |                 -0.0248005 |                  -0.0151286 |                -0.0167072  |                 -0.0202634 |                       0.0248774 |                      0.0360896 |                      0.0256092 |                      0.0305088 |                       0.0341735 |                      0.0264006 |                      0.0277755 |                       0.0234134 |                      0.0284401 |                       0.0365299 |                      0.0332703 |                      0.0273135 |                        0.999409 |                       0.990779 |                       0.998567 |                       0.999328 |                        1.00737  |                       1.00101  |                       0.993828 |                        0.995395 |                       0.985315 |                        0.987987 |                       0.996198 |                       0.995496 |
-| 2020-01-08 |             23.51  |             36.84 |            139.01 |            43.27  |              23.66 |            148.24 |            119.07 |            28.0052 |             54.83 |              41.17 |             94.23 |            101.72 |             23.823 |            37.431 |            141.01 |            43.937 |             24.19  |            150.56 |            120.88 |            28.0052 |             55.25 |             41.85  |             95.99 |            102.79 |            23.51  |            36.69 |           139.01 |           43.27  |             23.66 |           148.24 |           118.86 |           28.0052 |            54.83 |            40.951 |            93.89 |           101.68 |              23.763 |             37.43  |             140.12 |             43.818 |              24.11  |             150.07 |             120.22 |             28.0052 |              55.07 |               41.68 |              95.61 |             102.33 |                 23.2566 |                 37.43  |                138.717 |                 43.818 |                 22.2012 |                148.033 |                119.221 |                 28.0052 |                55.0189 |                   41.68 |                95.3784 |                96.8266 |                 2200 |               87200 |               23000 |                2100 |                23400 |               66600 |          3.3882e+06 |                  230 |               12000 |                49300 |          3.0882e+06 |          7.4947e+06 |                       0 |                      0 |                      0 |                      0 |                       0 |                      0 |                      0 |                       0 |                      0 |                       0 |                      0 |                      0 |          0.00473552  |          0.00976581 |         0.00502081  |          0.0156693  |           0.0202269  |          0.011458   |         0.00898025  |          0.00668238  |         0.000908676 |          0.0136187   |          0.0136769  |          0.00649166 |                0.0243617 |               0.0355917 |               0.0250125 |               0.0301117 |                0.0336436 |                0.025867 |               0.0272492 |                0.0228432 |               0.0279196 |                0.0361503 |                0.032811 |               0.0268018 |                  -0.0139645 |                -0.00893419 |                 -0.0136792 |                -0.00303074 |                  0.00152691 |                -0.00724201 |                -0.00971975 |                  -0.0120176 |                 -0.0177913 |                  -0.0050813 |                -0.00502309 |                 -0.0122083 |                       0.0248774 |                      0.0360896 |                      0.0256092 |                      0.0305088 |                       0.0341735 |                      0.0264006 |                      0.0277755 |                       0.0234134 |                      0.0284401 |                       0.0365299 |                      0.0332703 |                      0.0273135 |                        1.00414  |                       1.00045  |                       1.00358  |                       1.01499  |                        1.02775  |                       1.01248  |                       1.00275  |                        1.00205  |                       0.986211 |                        1.00144  |                       1.00982  |                       1.00196  |
-
-Then, let's calculate the Bollinger Bands for each ETF.
-
-```python
-bollinger_bands = etfs_in_biotech.technicals.get_bollinger_bands()
+etfs.select(
+    category_group='Fixed Income'
+)
 ```
 
-Which returns (note that this is a MultiIndex):
+This gives you results like the following:
 
-| Date       |   ('Close', 'AGNG') |   ('Close', 'BBC') |   ('Close', 'BBH') |   ('Close', 'BBP') |   ('Close', 'CNCR') |   ('Close', 'FBT') |   ('Close', 'IBB') |   ('Close', 'IEIH') |   ('Close', 'PBE') |   ('Close', 'SBIO') |   ('Close', 'XBI') |   ('Close', 'XLV') |   ('Lower Band', 'AGNG') |   ('Lower Band', 'BBC') |   ('Lower Band', 'BBH') |   ('Lower Band', 'BBP') |   ('Lower Band', 'CNCR') |   ('Lower Band', 'FBT') |   ('Lower Band', 'IBB') |   ('Lower Band', 'IEIH') |   ('Lower Band', 'PBE') |   ('Lower Band', 'SBIO') |   ('Lower Band', 'XBI') |   ('Lower Band', 'XLV') |   ('Middle Band', 'AGNG') |   ('Middle Band', 'BBC') |   ('Middle Band', 'BBH') |   ('Middle Band', 'BBP') |   ('Middle Band', 'CNCR') |   ('Middle Band', 'FBT') |   ('Middle Band', 'IBB') |   ('Middle Band', 'IEIH') |   ('Middle Band', 'PBE') |   ('Middle Band', 'SBIO') |   ('Middle Band', 'XBI') |   ('Middle Band', 'XLV') |   ('Upper Band', 'AGNG') |   ('Upper Band', 'BBC') |   ('Upper Band', 'BBH') |   ('Upper Band', 'BBP') |   ('Upper Band', 'CNCR') |   ('Upper Band', 'FBT') |   ('Upper Band', 'IBB') |   ('Upper Band', 'IEIH') |   ('Upper Band', 'PBE') |   ('Upper Band', 'SBIO') |   ('Upper Band', 'XBI') |   ('Upper Band', 'XLV') |
-|:-----------|--------------------:|-------------------:|-------------------:|-------------------:|--------------------:|-------------------:|-------------------:|--------------------:|-------------------:|--------------------:|-------------------:|-------------------:|-------------------------:|------------------------:|------------------------:|------------------------:|-------------------------:|------------------------:|------------------------:|-------------------------:|------------------------:|-------------------------:|------------------------:|------------------------:|--------------------------:|-------------------------:|-------------------------:|-------------------------:|--------------------------:|-------------------------:|-------------------------:|--------------------------:|-------------------------:|--------------------------:|-------------------------:|-------------------------:|-------------------------:|------------------------:|------------------------:|------------------------:|-------------------------:|------------------------:|------------------------:|-------------------------:|------------------------:|-------------------------:|------------------------:|------------------------:|
-| 2020-01-02 |             23.1607 |             37.413 |            138.222 |             43.171 |             21.6018 |            146.208 |            118.894 |             27.948  |            55.7882 |               41.62 |            94.4506 |            96.6373 |                  22.8653 |                 35.44   |                 136.692 |                 42.8394 |                  20.9387 |                 144.953 |                 118.097 |                  27.6492 |                 55.2137 |                  41.6414 |                 93.6136 |                 94.3335 |                   23.1337 |                  37.7297 |                  139.265 |                  43.9656 |                   21.7711 |                  148.507 |                  120.299 |                   28.0172 |                  55.988  |                   42.7784 |                  95.9705 |                  96.0125 |                  23.4021 |                 40.0195 |                 141.837 |                 45.0918 |                  22.6036 |                 152.06  |                 122.502 |                  28.3852 |                 56.7623 |                  43.9154 |                 98.3274 |                 97.6915 |
-| 2020-01-03 |             23.053  |             36.84  |            136.619 |             42.714 |             21.3596 |            144.314 |            117.376 |             27.7255 |            55.3686 |               40.96 |            93.1338 |            95.7952 |                  22.9084 |                 35.5338 |                 136.455 |                 42.6106 |                  20.9476 |                 144.258 |                 117.511 |                  27.5954 |                 55.1277 |                  41.156  |                 93.1465 |                 94.6536 |                   23.145  |                  37.7597 |                  139.214 |                  43.9066 |                   21.7739 |                  148.348 |                  120.167 |                   27.989  |                  55.9616 |                   42.6531 |                  95.8665 |                  96.1042 |                  23.3815 |                 39.9857 |                 141.972 |                 45.2026 |                  22.6002 |                 152.439 |                 122.823 |                  28.3826 |                 56.7955 |                  44.1502 |                 98.5864 |                 97.5548 |
-| 2020-01-06 |             23.0628 |             36.77  |            137.895 |             43.025 |             21.5935 |            145.882 |            118.13  |             27.8415 |            55.3286 |               40.99 |            93.9419 |            96.3913 |                  22.9012 |                 35.679  |                 136.329 |                 42.4918 |                  21.0242 |                 143.947 |                 117.204 |                  27.5757 |                 55.1102 |                  40.7901 |                 92.8938 |                 95.1474 |                   23.1413 |                  37.8004 |                  139.162 |                  43.8646 |                   21.7994 |                  148.23  |                  120.064 |                   27.9694 |                  55.9573 |                   42.5292 |                  95.7817 |                  96.2431 |                  23.3815 |                 39.9219 |                 141.995 |                 45.2374 |                  22.5746 |                 152.512 |                 122.923 |                  28.3632 |                 56.8044 |                  44.2684 |                 98.6695 |                 97.3388 |
-| 2020-01-07 |             23.147  |             37.068 |            138.024 |             43.142 |             21.7611 |            146.356 |            118.16  |             27.8193 |            54.969  |               41.12 |            94.0915 |            96.202  |                  22.924  |                 35.7637 |                 136.179 |                 42.3802 |                  21.0897 |                 143.686 |                 116.878 |                  27.5851 |                 54.9026 |                  40.5252 |                 92.6191 |                 95.2938 |                   23.1513 |                  37.8291 |                  139.007 |                  43.8016 |                   21.8268 |                  147.994 |                  119.889 |                   27.9727 |                  55.8995 |                   42.4004 |                  95.6228 |                  96.2957 |                  23.3787 |                 39.8946 |                 141.834 |                 45.223  |                  22.5639 |                 152.301 |                 122.901 |                  28.3602 |                 56.8965 |                  44.2756 |                 98.6264 |                 97.2975 |
-| 2020-01-08 |             23.2566 |             37.43  |            138.717 |             43.818 |             22.2012 |            148.032 |            119.221 |             28.0052 |            55.0189 |               41.68 |            95.3784 |            96.8266 |                  22.9437 |                 35.8584 |                 136.136 |                 42.3848 |                  21.1318 |                 143.658 |                 116.803 |                  27.6124 |                 54.7366 |                  40.4473 |                 92.5768 |                 95.5192 |                   23.1671 |                  37.8677 |                  138.958 |                  43.806  |                   21.8742 |                  147.913 |                  119.835 |                   27.9873 |                  55.8396 |                   42.286  |                  95.5601 |                  96.4002 |                  23.3905 |                 39.877  |                 141.78  |                 45.2272 |                  22.6166 |                 152.167 |                 122.867 |                  28.3621 |                 56.9425 |                  44.1247 |                 98.5433 |                 97.2811 |
+| symbol   | name               | currency   | category_group   | category               | family                    | exchange   |
+|:---------|:-------------------|:-----------|:-----------------|:-----------------------|:--------------------------|:-----------|
+| ^BND     | VANGUARD BD IDX FD | USD        | Fixed Income     | Investment Grade Bonds | Vanguard Asset Management | NIM        |
+| ^BNDX    | VANGUARD CHARLOTTE | USD        | Fixed Income     | Investment Grade Bonds | Vanguard Asset Management | NIM        |
+| ^VCIT    | VANGUARD SCOTTSDAL | USD        | Fixed Income     | Corporate Bonds        | Vanguard Asset Management | NIM        |
+| ^VCLT    | VANGUARD SCOTTSDAL | USD        | Fixed Income     | Corporate Bonds        | Vanguard Asset Management | NIM        |
+| ^VCSH    | VANGUARD SCOTTSDAL | USD        | Fixed Income     | Corporate Bonds        | Vanguard Asset Management | NIM        |
 
-Then, it's time to visually depict the Bollinger Bands for each ETF during the early stages of the Coronacrisis.
+This also translates to the available options, for example let's select `fd.Indices()` instead.
 
-````python
-from matplotlib import pyplot as plt
+```python
+indices = fd.Indices()
 
-figure, axis = plt.subplots(4, 3)
-figure.set_size_inches(15, 10)
-row = 0
-column = 0
+indices.show_options()
+```
+A sample of the output is shown below:
 
-for ticker in bollinger_bands.columns.get_level_values(1).unique():
-    name = health_care_etfs_in_biotech.loc[health_care_etfs_in_biotech.index == ticker, 'name'].iloc[0]
-    
-    bollinger_bands.xs(ticker, level=1, axis=1).plot(
-        ax=axis[row, column],
-        xlabel='',
-        title=name,
-        legend=False
-        )
+```text
+{'category_group': array(['Alternatives', 'Cash', 'Commodities', 'Communication Services',
+        'Consumer Discretionary', 'Consumer Staples', 'Currencies',
+        'Derivatives', 'Energy', 'Equities', 'Financials', 'Fixed Income',
+        'Health Care', 'Industrials', 'Information Technology',
+        'Materials', 'Real Estate', 'Utilities'], dtype=object),
+ 'category': array(['Alternative', 'Blend', 'Bonds', 'Cash', 'Commercial Real Estate',
+        'Commodities Broad Basket', 'Communications',
+        'Consumer Discretionary', 'Consumer Staples', 'Corporate Bonds',
+        'Currencies', 'Derivatives', 'Developed Markets',
+        'Emerging Markets', 'Energy', 'Equities', 'Factors', 'Financials',
+        'Frontier Markets', 'Government Bonds', 'Growth', 'Health Care',
+        'High Yield Bonds', 'Industrials',
+        'Inflation-Protected Securities', 'Investment Grade Bonds',
+        'Large Cap', 'Materials', 'Micro Cap', 'Mid Cap',
+        'Money Market Instruments', 'Municipal Bonds', 'REITs',
+        'Real Estate Development', 'Real Estate Services',
+        'Residential Real Estate', 'Small Cap', 'Technology', 'Trading',
+        'Treasury Bonds', 'Utilities', 'Value'], dtype=object)}
+```
 
-    column += 1
-    if column == 3:
-        row += 1
-        column = 0
-        
-figure.suptitle('Technical Analysis of Biotech ETFs during the Coronacrisis', fontweight='bold')
+And lastly, both the `search` and `to_toolkit` metrics also apply to each of the asset classes, using `fd.Funds()` and `fd.Cryptos()` respectively. For example, let's find the funds that focus around pension plans.
 
-figure.tight_layout()
-````
+```python
+funds = fd.Funds()
 
-This leads to the following graph which gives an indication of whether Biotech ETFs were oversold or overbought and how this effect is neutralised (to some degree) in the months after. Read more about the Bollinger Bands [here](https://www.investopedia.com/terms/b/bollingerbands.asp).
+funds.search(summary='Pension')
+```
 
-![Coronacrisis](https://github.com/JerBouma/FinanceDatabase/assets/46355364/cb433e03-6ffd-45cc-ac76-3fd01d54a226)
+A sample of the output is shown below:
+
+
+| symbol       | name                              | currency   | category_group   | category   | family                           | exchange   |
+|:-------------|:----------------------------------|:-----------|:-----------------|:-----------|:---------------------------------|:-----------|
+| 0P000017AH.F | OpenBank Renta Variable Europa PP | EUR        | Equities         | Equities   | Santander Asset Management SGIIC | FRA        |
+| 0P000017AJ.F | Alcal Futuro Uno PP   | EUR        | Financials       | Allocation | Caser Pensiones EGFP             | FRA        |
+| 0P0000189U.F | Caser Julio 2021 PP Acc           | EUR        | Financials       | Bonds      | Caser Pensiones EGFP             | FRA        |
+| 0P000018ML.F | Cajamar Renta Variable PP         | EUR        | Equities         | Equities   | Cajamar Vida Se. y Re.           | FRA        |
+| 0P000019H0.F | Bestinver Global PP               | EUR        | Financials       | Blend      | Bestinver Pensiones              | FRA        |
+
+And for Cryptos, let's collect the historical data of Ethereum in multiple currencies.
+
+```python
+cryptos = fd.Cryptos()
+
+eth_cryptos = cryptos.select(
+    cryptocurrency='ETH'
+)
+
+cryptos_toolkit = eth_cryptos.to_toolkit(
+    api_key=API_KEY,
+    start_date='2020-01-01'
+)
+
+cryptos_toolkit.get_historical_data(period='quarterly')
+```
+
+A sample of the output is shown below, focussig on ETH-BTC:
+
+| Date   |   Open |   High |    Low |   Close |   Adj Close |   Volume |   Dividends |   Return |   Volatility |   Excess Return |   Excess Volatility |   Cumulative Return |
+|:-------|-------:|-------:|-------:|--------:|------------:|---------:|------------:|---------:|-------------:|----------------:|--------------------:|--------------------:|
+| 2024Q2 | 0.0559 | 0.0558 | 0.0554 |  0.0554 |      0.0554 |   108145 |           0 |   0.0992 |       0.159  |          0.0558 |              0.144  |              2.6763 |
+| 2024Q3 | 0.0406 | 0.0407 | 0.0403 |  0.0405 |      0.0405 |   169579 |           0 |  -0.269  |       0.1433 |         -0.307  |              0.1445 |              1.9565 |
+| 2024Q4 | 0.0358 | 0.0365 | 0.036  |  0.0362 |      0.0362 |   291317 |           0 |  -0.1062 |       0.1857 |         -0.1519 |              0.1679 |              1.7488 |
+| 2025Q1 | 0.0221 | 0.0222 | 0.0217 |  0.0219 |      0.0219 |   119665 |           0 |  -0.395  |       0.1813 |         -0.4375 |              0.1639 |              1.058  |
+| 2025Q2 | 0.0218 | 0.0217 | 0.0216 |  0.0216 |      0.0216 |   195229 |           0 |  -0.0137 |       0.1415 |         -0.053  |              0.1361 |              1.0435 |
+
 
 # Questions & Answers
 In this section you can find answers to commonly asked questions. In case the answer to your question is not here, 
 consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues).
 
-- **How is the data obtained?**
-    - The data is an aggregation of a variety of sources. The rule that I hold with high regard is that all data needs to be entirely publicly available. Any data that requires API key access or requires a paid tier is never included in this database. Data that you are being charged for is often owned and maintained by the company you have a subscription at and therefore publicly sharing this information online is against their Terms of Service (ToS). However, data that is publicly available can freely be shared (read more about this subject [here](https://techcrunch.com/2022/04/18/web-scraping-legal-court/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAJRZe3F6wCbuO_n8PJ9JtAHpOY4dF2gA_tO0gJF2PhfWUueUcRQataJwNS9FZlp9rH8f8_aiCBfA2v7wlHyXyVLUfMrca4kq0_m6CYSvK7eMk9zuEhnXJOvE0lrHWXSPTtL-lHP8UJD4SyWTpQ2BnCNx-kv3mG7GGn_G_3SGVvhP)) especially since this database will never cost any money.
-- **What categorization method is used?**
-    - The categorization for Equities is based on a loose approximation of GICS. No actual data is collected from this source and this database merely tries to reflect the sectors and industries as best as possible. This is completely done through manual curation. The actual datasets as curated by MSCI has not been used in the development of any part of this database and remain the most up to date, paid, solution. Other categorizations are entirely developed by the author and can freely be changed.
-- **How can I contribute?**
-    - Please see the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md). Thank you!
-- **How can I find out which countries, sectors and/or industries exist within the database without needing to check the database manually?**
-    - For this you can use the ``options`` function from the package attached to this database. Furthermore, it is also possible to use `equities = fd.Equities()` and then use `equities.options(selection='country')` or specific further with `equities.options(selection='sector', country='United States')`. Please see 
-    [this example](#companies-in-the-netherlands)
-- **When I try collect data I notice that not all tickers return output, why is that?**
-    - Some tickers are merely holdings of companies and therefore do not really have any data attached to them. 
-      Therefore, it makes sense that not all tickers return data. If you are still in doubt, search the ticker on 
-      Google to see if there is really no data available. If you can't find anything about the ticker, consider updating the database by visiting the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
-- **How does the database handle changes to companies over time - like symbol/exchange migration, mergers, bankruptcies, or symbols getting reused?**
-    - For the American Exchanges, every Sunday the database automatically updates based on [this repository](https://github.com/rreichel3/US-Stock-Symbols). It also automatically checks if there were any market cap changes and converts assets accordingly. On purpose, most tickers are not removed even after becoming delisted. This is because it can be still of value for research to look into companies that no longer exist. When it comes to further automisation, this is what you usually pay a hefty fee for, think of Bloomberg at over $25.000 a year. Instead of requiring you to pay, this database is meant to be a community-driven project in which you help in identifying these companies. As news about migrations, mergers, bankruptcies and similar occur outside of the American exchanges it is up to the community to identify these and/or users to look into writing scripts that help with this. It is important to note that the vast majority of companies do not change as rapidly that this database becomes irrelevant before it is identified, e.g. a company like Facebook changing to META has already been updated. Furthermore, even though a company goes bankrupt, the old ticker is still relevant when it comes to historical data before the bankruptcy.
-    
-# User Contributions
+> **How is the data obtained?**
+
+The data is an aggregation of various publicly available sources. I strictly maintain the rule that all data in this database must be freely accessible to everyone. Data requiring API keys or paid subscriptions is never included. Information that companies charge for is typically owned and maintained by those companies, making public sharing of such data a violation of their Terms of Service (ToS). However, publicly available data can be freely shared (read more about the legality of web scraping [here](https://techcrunch.com/2022/04/18/web-scraping-legal-court/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAJRZe3F6wCbuO_n8PJ9JtAHpOY4dF2gA_tO0gJF2PhfWUueUcRQataJwNS9FZlp9rH8f8_aiCBfA2v7wlHyXyVLUfMrca4kq0_m6CYSvK7eMk9zuEhnXJOvE0lrHWXSPTtL-lHP8UJD4SyWTpQ2BnCNx-kv3mG7GGn_G_3SGVvhP)). This database will always remain <u>completely free</u>.
+
+> **What categorization method is used?**
+
+The categorization for Equities is based on a loose approximation of GICS (Global Industry Classification Standard). This database attempts to reflect sectors and industries as accurately as possible through manual curation, without collecting any actual data from MSCI's proprietary sources. The official GICS datasets curated by MSCI remain the most up-to-date, paid solution and were not used in developing any part of this database. All other categorizations in the database are independently developed and can be freely modified.
+
+> **How can I contribute?**
+
+Please see the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md). Thank you!
+
+> **How can I find out which countries, sectors and/or industries exist within the database without needing to check the database manually?**
+
+For this you can use the `show_options` function from the package attached to this database within a specific asset class or on a higher level without requiring any data to be loaded beforehand. See [Usage](#usage) for more information.
+
+> **When I try collect data I notice that not all tickers return output, why is that?**
+
+Some tickers are merely holdings of companies and therefore do not really have any data attached to them. Therefore, it makes sense that not all tickers return data. If you are still in doubt, search the ticker on Google to see if there is really no data available. If you can't find anything about the ticker, consider updating the database by visiting the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
+
+> **How does the database handle changes to companies over time - like symbol/exchange migration, mergers, bankruptcies, or symbols getting reused?**
+
+For American exchanges, the database automatically updates every Sunday using data from [this repository](https://github.com/rreichel3/US-Stock-Symbols). This process includes checks for market cap changes and updates asset classifications accordingly. Delisted tickers are intentionally retained for historical research purposes.
+
+While professional financial data services like Bloomberg charge over $25,000 annually for comprehensive market data maintenance, this database relies on community contributions. When companies outside American exchanges undergo changes (migrations, mergers, bankruptcies), we depend on community members to identify and update these entries.
+
+Most companies don't change so rapidly that the database becomes obsolete - major changes like Facebook's rebrand to META are quickly incorporated. Even when companies go bankrupt, their ticker information remains valuable for historical analysis.
+
+If you notice outdated information, please consider contributing through the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
+
+# Contributions
 
 This section is meant to thank those that contributed to the project. Looking to contribute as well? Have a look [here](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
 

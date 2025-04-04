@@ -25,7 +25,7 @@ repos:
         entry: codespell
         args:
           [
-            "--ignore-words-list=zar,profund,basf,applicatio,ser,mone,vie,noteable,basf,beter",
+            "--ignore-words-list=zar,profund,basf,applicatio,ser,mone,vie,noteable,basf,beter,ois",
             "--quiet-level=2",
             "--skip=./tests,.git,*.css,*.csv,*.html,*.ini,*.ipynb,*.js,*.json,*.lock,*.scss,*.txt,*.yaml,build/pyinstaller/*,pyproject.toml",
             "-x=.github/workflows/linting.yml"
