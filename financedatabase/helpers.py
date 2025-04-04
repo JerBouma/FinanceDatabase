@@ -121,7 +121,24 @@ class FinanceDatabase:
             elif key not in data_filter.columns:
                 print(f"{key} is not a valid column.")
             elif isinstance(value, list):
-                data_filter = data_filter[data_filter[key].isin(value)]
+                if case_sensitive:
+                    # For case-sensitive search, use string comparison that preserves case
+                    data_filter = data_filter[data_filter[key].isin(value)]
+                else:
+                    # For case-insensitive search, convert both sides to lowercase
+                    # Create a mask that matches if any value in the list is found in the column
+                    mask = (
+                        data_filter[key]
+                        .str.lower()
+                        .apply(
+                            lambda x, vals=value: (
+                                any(val.lower() in str(x).lower() for val in vals)
+                                if pd.notna(x)
+                                else False
+                            )
+                        )
+                    )
+                    data_filter = data_filter[mask]
             else:
                 data_filter = data_filter[
                     data_filter[key].str.contains(value, case=case_sensitive, na=False)

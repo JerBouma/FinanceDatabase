@@ -1,5 +1,6 @@
 """Cryptos Module"""
 
+import numpy as np
 import pandas as pd
 
 from .helpers import FinanceDatabase, FinanceFrame
@@ -26,8 +27,8 @@ class Cryptos(FinanceDatabase):
 
     def select(
         self,
-        cryptocurrency: str | None = None,
-        currency: str | None = None,
+        cryptocurrency: str | list | None = None,
+        currency: str | list | None = None,
     ) -> pd.DataFrame:
         """
         Obtain cryptocurrency data based on specified criteria.
@@ -37,53 +38,64 @@ class Cryptos(FinanceDatabase):
         criteria are provided, it returns data for all cryptocurrencies.
 
         Args:
-            cryptocurrency: Specific cryptocurrency to retrieve data for.
+            cryptocurrency (str | list, optional): Specific cryptocurrency to retrieve data for.
                 If not provided, returns data for all cryptocurrencies.
-            currency: Specific currency to retrieve data for.
+            currency (str | list, optional): Specific currency to retrieve data for.
                 If not provided, returns data for all currencies.
-
-        Returns:
-            A DataFrame containing cryptocurrency data matching the specified input criteria.
 
         Raises:
             ValueError: If the specified cryptocurrency or currency is not available in the database.
+                Please check the available cryptocurrencies and currencies using the 'show_options' method.
+
+        Returns:
+            A DataFrame containing cryptocurrency data matching the specified input criteria.
         """
         cryptos = self.data.copy(deep=True)
 
         if cryptocurrency:
-            cryptocurrency = cryptocurrency.lower()
+            cryptocurrencies = (
+                [cryptocurrency] if isinstance(cryptocurrency, str) else cryptocurrency
+            )
+            cryptocurrencies_lower = [crypto.lower() for crypto in cryptocurrencies]
             options_lower = [
                 option.lower()
                 for option in self.show_options(selection="cryptocurrency")
             ]
-            if cryptocurrency not in options_lower:
-                raise ValueError(
-                    f"The cryptocurrency '{cryptocurrency}' is not available in the database. "
-                    "Please check the available cryptocurrencies using the 'show_options' method."
-                )
 
-            cryptos = cryptos[cryptos["cryptocurrency"].str.lower() == cryptocurrency]
+            for cryptocurrency_lower, cryptocurrency_actual in zip(
+                cryptocurrencies_lower, cryptocurrencies
+            ):
+                if cryptocurrency_lower not in options_lower:
+                    raise ValueError(
+                        f"The cryptocurrency '{cryptocurrency_actual}' is not available in the database. "
+                        "Please check the available cryptocurrencies using the 'show_options' method."
+                    )
+            cryptos = cryptos[
+                cryptos["cryptocurrency"].str.lower().isin(cryptocurrencies_lower)
+            ]
         if currency:
-            currency = currency.lower()
+            currencies = [currency] if isinstance(currency, str) else currency
+            currencies_lower = [currency.lower() for currency in currencies]
             options_lower = [
                 option.lower() for option in self.show_options(selection="currency")
             ]
-            if currency not in options_lower:
-                raise ValueError(
-                    f"The currency '{currency}' is not available in the database. "
-                    "Please check the available currencies using the 'show_options' method."
-                )
 
-            cryptos = cryptos[cryptos["currency"].str.lower() == currency]
+            for currency_lower, currency_actual in zip(currencies_lower, currencies):
+                if currency_lower not in options_lower:
+                    raise ValueError(
+                        f"The currency '{currency_actual}' is not available in the database. "
+                        "Please check the available currencies using the 'show_options' method."
+                    )
+            cryptos = cryptos[cryptos["currency"].str.lower().isin(currencies_lower)]
 
         return FinanceFrame(cryptos)
 
     def show_options(
         self,
         selection: str | None = None,
-        cryptocurrency: str | None = None,
-        currency: str | None = None,
-    ) -> pd.Series:
+        cryptocurrency: str | list | None = None,
+        currency: str | list | None = None,
+    ) -> dict | np.ndarray:
         """
         Retrieve all options for a specified selection.
 
@@ -91,18 +103,20 @@ class Cryptos(FinanceDatabase):
         selection, which can be one of the following: "cryptocurrency" or "currency".
 
         Args:
-            selection: The selection variable to retrieve options for.
-                Valid options are "cryptocurrency" or "currency".
-            cryptocurrency: Specific cryptocurrency to filter options.
+            selection (str | None): The selection you want to see the options for.
+                Choose from "cryptocurrency" or "currency".
+            cryptocurrency (str | list | None): Specific cryptocurrency to filter options.
                 If not provided, returns data for all cryptocurrencies.
-            currency: Specific currency to filter options.
+            currency (str | list | None): Specific currency to filter options.
                 If not provided, returns data for all currencies.
 
-        Returns:
-            A series with all options for the specified selection.
-
         Raises:
-            ValueError: If the specified selection is not valid.
+            ValueError: If the selection variable provided is not valid.
+                Choose from "cryptocurrency" or "currency".
+
+        Returns:
+            dict | np.ndarray: A dictionary or array containing the available options
+                for the specified selection.
         """
         selection_values = ["cryptocurrency", "currency"]
 

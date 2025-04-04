@@ -1,5 +1,6 @@
 """Moneymarkets Module"""
 
+import numpy as np
 import pandas as pd
 
 from .helpers import FinanceDatabase, FinanceFrame
@@ -20,7 +21,7 @@ class Moneymarkets(FinanceDatabase):
     FILE_NAME = "moneymarkets.bz2"
 
     def select(
-        self, currency: str | None = None, family: str | None = None
+        self, currency: str | list | None = None, family: str | list | None = None
     ) -> pd.DataFrame:
         """
         Select moneymarkets based on specified criteria.
@@ -29,66 +30,78 @@ class Moneymarkets(FinanceDatabase):
         based on currency and family.
 
         Args:
-            currency (str, optional): Filter by currency. Default is None.
-            family (str, optional): Filter by family. Default is None.
-
-        Returns:
-            pd.DataFrame: DataFrame containing the selected moneymarkets data.
+            currency (str | list, optional): Filter by currency.
+                Default is None, which returns all currencies.
+            family (str | list, optional): Filter by family.
+                Default is None, which returns all families.
 
         Raises:
             ValueError: If the specified currency or family is not available in the database.
+                Please check the available currencies and families using the 'show_options' method.
+
+        Returns:
+            pd.DataFrame: DataFrame containing the selected moneymarkets data.
         """
         moneymarkets = self.data.copy(deep=True)
 
         if currency:
-            currency = currency.lower()
+            currencies = [currency] if isinstance(currency, str) else currency
+            currencies_lower = [currency.lower() for currency in currencies]
             options_lower = [
                 option.lower() for option in self.show_options(selection="currency")
             ]
-            if currency not in options_lower:
-                raise ValueError(
-                    f"The currency '{currency}' is not available in the database. "
-                    "Please check the available currencies using the 'options' method."
-                )
+            for currency_lower, currency_actual in zip(currencies_lower, currencies):
+                if currency_lower not in options_lower:
+                    raise ValueError(
+                        f"The currency '{currency_actual}' is not available in the database. "
+                        "Please check the available currencies using the 'show_options' method."
+                    )
             moneymarkets = moneymarkets[
-                moneymarkets["currency"].str.lower() == currency
+                moneymarkets["currency"].str.lower().isin(currencies_lower)
             ]
-
         if family:
-            family = family.lower()
+            families = [family] if isinstance(family, str) else family
+            families_lower = [family.lower() for family in families]
             options_lower = [
                 option.lower() for option in self.show_options(selection="family")
             ]
-            if family not in options_lower:
-                raise ValueError(
-                    f"The family '{family}' is not available in the database. "
-                    "Please check the available families using the 'options' method."
-                )
-            moneymarkets = moneymarkets[moneymarkets["family"].str.lower() == family]
+            for family_lower, family_actual in zip(families_lower, families):
+                if family_lower not in options_lower:
+                    raise ValueError(
+                        f"The family '{family_actual}' is not available in the database. "
+                        "Please check the available families using the 'show_options' method."
+                    )
+            moneymarkets = moneymarkets[
+                moneymarkets["family"].str.lower().isin(families_lower)
+            ]
 
         return FinanceFrame(moneymarkets)
 
     def show_options(
         self,
         selection: str | None = None,
-        currency: str | None = None,
-        family: str | None = None,
-    ) -> pd.Series:
+        currency: str | list | None = None,
+        family: str | list | None = None,
+    ) -> dict | np.ndarray:
         """
         Show available options for the specified selection.
 
         Args:
             selection (str, optional): The category to show options for.
-                                      Choose from: "currency" or "family".
-                                      Default is None.
-            currency (str, optional): Filter by currency. Default is None.
-            family (str, optional): Filter by family. Default is None.
-
-        Returns:
-            pd.Series: Series containing available options for the specified selection.
+                Choose from: "currency" or "family". Default is None.
+            currency (str | list, optional): Filter by currency.
+                Default is None, which returns all currencies.
+            family (str | list, optional): Filter by family.
+                Default is None, which returns all families.
 
         Raises:
-            ValueError: If the selection variable provided is not valid.
+            ValueError: If the specified selection is not valid.
+                Choose from: "currency" or "family".
+
+        Returns:
+            dict | np.ndarray: A dictionary containing the available options for the specified selection.
+                If selection is None, returns all available options for both currency and family.
+                If selection is "currency" or "family", returns the unique values for that selection.
         """
         selection_values = ["currency", "family"]
 
