@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "financedatabase"
-version = "2.2.3"
+version = "2.3.0"
 description = "This is a database of 300.000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets."
 license = "MIT"
 authors = ["Jeroen Bouma"]
@@ -81,7 +81,7 @@ skip_gitignore = true
 combine_as_imports = true
 
 [tool.codespell]
-ignore-words-list = 'te,hsi,amplitud,nam,tha,plaform'
+ignore-words-list = 'te,hsi,amplitud,nam,tha,plaform, ois'
 skip = '*.json,./.git,pyproject.toml,poetry.lock,examples'
 
 [tool.mypy]
