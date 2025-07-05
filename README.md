@@ -10,14 +10,14 @@
 
 | **Call for Contributors to the FinanceDatabase**    |
 |:------------------------------------------------------:|
-| The **FinanceDatabase** serves the role of providing anyone with any type of financial product categorization entirely for free. To be able to achieve this, the FinanceDatabase relies on involvement from the community to add, edit and remove tickers over time. This is made easy enough that anyone, even with a lack of coding experience can contribute because of the usage of CSV files that can be manually edited with ease.
+| The **FinanceDatabase** serves the role of providing anyone with any type of financial product categorization entirely for free. To achieve this, the FinanceDatabase relies on community involvement to add, edit, and remove tickers over time. This is made easy enough that anyone, even those with a lack of coding experience, can contribute because of the use of CSV files that can be manually edited with ease.
 **I'd like to invite you to go to the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md) to understand how you can help. Thank you!** |
 
-As a private investor, the sheer amount of information that can be found on the internet is rather daunting. Trying to understand what type of companies or ETFs are available is incredibly challenging with there being millions of companies and derivatives available on the market. Sure, the most traded companies and ETFs can quickly be found simply because they are known to the public (for example, Microsoft, Tesla, S&P500 ETF or an All-World ETF). However, what else is out there is often unknown.
+As a private investor, the sheer amount of information that can be found on the internet is rather daunting. Trying to understand what types of companies or ETFs are available is incredibly challenging, with millions of companies and derivatives available on the market. Sure, the most traded companies and ETFs can quickly be found simply because they are known to the public (for example, Microsoft, Tesla, S&P 500 ETF, or an All-World ETF). However, what else is out there is often unknown.
 
-**This database tries to solve that**. It features 300.000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets. It therefore allows you to obtain a broad overview of sectors, industries, types of investments and much more.
+**This database tries to solve that**. It features 300,000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies, and Money Markets. It therefore allows you to obtain a broad overview of sectors, industries, types of investments, and much more.
 
-The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data as those can be obtained with ease (with the help of this database) by using the [Finance Toolkit 🛠️](https://github.com/JerBouma/FinanceToolkit). Instead, it gives insights into the products that exist in each country, industry and sector and gives the most essential information about each product. With this information, you can analyse specific areas of the financial world and/or find a product that is hard to find. See for examples on how you can combine this database, and the earlier mentioned packages the section [Usage](#usage).
+The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data, as those can be obtained with ease (with the help of this database) by using the [Finance Toolkit 🛠️](https://github.com/JerBouma/FinanceToolkit). Instead, it gives insights into the products that exist in each country, industry, and sector and provides the most essential information about each product. With this information, you can analyze specific areas of the financial world and/or find a product that is hard to find. For examples of how you can combine this database with the earlier mentioned packages, see the [Usage](#usage) section.
 
 Some key statistics of the database:
 
@@ -44,11 +44,11 @@ ___
 
 # Installation
 
-Before installation, consider starring the project on GitHub which helps others find the project as well.
+Before installation, consider starring the project on GitHub, which helps others find the project as well.
 
 <img width="1353" alt="image" src="https://github.com/JerBouma/FinanceDatabase/assets/46355364/4132edde-72f9-4e32-adfe-8872207f46ff">
 
-To install the FinanceDatabase it simply requires the following:
+To install the FinanceDatabase, simply use the following:
 
 ```
 pip install financedatabase -U
@@ -61,13 +61,13 @@ import financedatabase as fd
 ```
 
 # Usage
-This section explains in detail how the database can be queried with the related `financedatabase` package. Note that examples here are purposely cut off to a maximum of 10 entries due to the sheer size of the database. Furthermore, the summary column is also taken out for readability. For the full detailed results, see the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started). Let's start by importing the package:
+This section explains in detail how the database can be queried with the related `financedatabase` package. Note that examples here are purposely cut off to a maximum of 10 entries due to the sheer size of the database. Furthermore, the summary column is also omitted for readability. For the full detailed results, see the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started). Let's start by importing the package:
 
 ```python
 import financedatabase as fd
 ```
 
-Initialization of each asset class is only required <u>once</u>. It is therefore important you save the class to a variable so that you can query the database much quicker. A simple example is shown below.
+Initialization of each asset class is only required <u>once</u>. It is therefore important that you save the class to a variable so that you can query the database much more quickly. A simple example is shown below.
 
 ```python
 equities = fd.Equities()
@@ -91,7 +91,7 @@ A sample of the output is shown below:
 | CVLC.BE  | Vale S.A.                      | EUR        | Materials              | Materials                                      | Metals & Mining                        | BER        | Berlin Stock Exchange     | Brazil        | RJ      | Rio De Janeiro      | 22250-145  | http://www.vale.com              | Large Cap    | US91912E1055 | 9.19E+109 | BBG000HCJTN5 | BBG000HCJNQ5     | BBG001S7RS91      |
 
 
-With `show_options` all possible options are given per column. **This is useful as it doesn't require loading the larger data files.** For example, obtaining all options for equities is done as follows.
+With `show_options`, all possible options are given per column. **This is useful as it doesn't require loading the larger data files.** For example, obtaining all options for equities is done as follows:
 
 ```python
 fd.show_options("equities")
@@ -101,29 +101,29 @@ This returns all available options for each column.
 
 ```text
 {'currency': array(['ARS', 'AUD', 'BRL', 'CAD', 'CHF', 'CLP', 'CNY', 'COP', 'CZK',
-        'DKK', 'EUR', 'GBP', 'HKD', 'HUF', 'IDR', 'ILA', 'ILS', 'INR',
-        'ISK', 'JPY', 'KES', 'KRW', 'LKR', 'MXN', 'MYR', 'NOK', 'NZD',
-        'PEN', 'PHP', 'PLN', 'QAR', 'RUB', 'SAR', 'SEK', 'SGD', 'THB',
-        'TRY', 'TWD', 'USD', 'ZAC', 'ZAR'], dtype=object),
+    'DKK', 'EUR', 'GBP', 'HKD', 'HUF', 'IDR', 'ILA', 'ILS', 'INR',
+    'ISK', 'JPY', 'KES', 'KRW', 'LKR', 'MXN', 'MYR', 'NOK', 'NZD',
+    'PEN', 'PHP', 'PLN', 'QAR', 'RUB', 'SAR', 'SEK', 'SGD', 'THB',
+    'TRY', 'TWD', 'USD', 'ZAC', 'ZAR'], dtype=object),
  'sector': array(['Communication Services', 'Consumer Discretionary',
-        'Consumer Staples', 'Energy', 'Financials', 'Health Care',
-        'Industrials', 'Information Technology', 'Materials',
-        'Real Estate', 'Utilities'], dtype=object),
+    'Consumer Staples', 'Energy', 'Financials', 'Health Care',
+    'Industrials', 'Information Technology', 'Materials',
+    'Real Estate', 'Utilities'], dtype=object),
  'industry_group': array(['Automobiles & Components', 'Banks', 'Capital Goods',
-        'Commercial & Professional Services',
-        'Consumer Durables & Apparel', 'Consumer Services',
-        'Diversified Financials', 'Energy', 'Food & Staples Retailing',
-        'Food, Beverage & Tobacco', 'Health Care Equipment & Services',
-        'Household & Personal Products', 'Insurance', 'Materials',
-        'Media & Entertainment',
-        'Pharmaceuticals, Biotechnology & Life Sciences', 'Real Estate',
-        'Retailing', 'Semiconductors & Semiconductor Equipment',
-        'Software & Services', 'Technology Hardware & Equipment',
-        'Telecommunication Services', 'Transportation', 'Utilities'],
+    'Commercial & Professional Services',
+    'Consumer Durables & Apparel', 'Consumer Services',
+    'Diversified Financials', 'Energy', 'Food & Staples Retailing',
+    'Food, Beverage & Tobacco', 'Health Care Equipment & Services',
+    'Household & Personal Products', 'Insurance', 'Materials',
+    'Media & Entertainment',
+    'Pharmaceuticals, Biotechnology & Life Sciences', 'Real Estate',
+    'Retailing', 'Semiconductors & Semiconductor Equipment',
+    'Software & Services', 'Technology Hardware & Equipment',
+    'Telecommunication Services', 'Transportation', 'Utilities'],
        dtype=object)}
 ```
 
-As the equities database has already been loaded in, it is also possible to use a similar functionality from within the class as follows. The main difference is that this functionality allows you to see the options based on a specific filtering. For example.
+Since the equities database has already been loaded, it is also possible to use similar functionality from within the class as follows. The main difference is that this functionality allows you to see the options based on specific filtering. For example:
 
 ```python
 equities.show_options(country='Netherlands')
@@ -133,26 +133,26 @@ This shows a more concise list of parameters given the focus on the Netherlands.
 
 ```text
 {'currency': array(['ARS', 'AUD', 'BRL', 'CHF', 'CZK', 'EUR', 'GBP', 'ILA', 'MXN',
-        'NOK', 'RUB', 'USD', 'ZAC'], dtype=object),
+    'NOK', 'RUB', 'USD', 'ZAC'], dtype=object),
  'sector': array(['Communication Services', 'Consumer Discretionary',
-        'Consumer Staples', 'Energy', 'Financials', 'Health Care',
-        'Industrials', 'Information Technology', 'Materials',
-        'Real Estate', 'Utilities'], dtype=object),
+    'Consumer Staples', 'Energy', 'Financials', 'Health Care',
+    'Industrials', 'Information Technology', 'Materials',
+    'Real Estate', 'Utilities'], dtype=object),
  'industry_group': array(['Automobiles & Components', 'Banks', 'Capital Goods',
-        'Commercial & Professional Services',
-        'Consumer Durables & Apparel', 'Consumer Services',
-        'Diversified Financials', 'Energy', 'Food & Staples Retailing',
-        'Food, Beverage & Tobacco', 'Health Care Equipment & Services',
-        'Household & Personal Products', 'Insurance', 'Materials',
-        'Media & Entertainment',
-        'Pharmaceuticals, Biotechnology & Life Sciences', 'Real Estate',
-        'Retailing', 'Semiconductors & Semiconductor Equipment',
-        'Software & Services', 'Technology Hardware & Equipment',
-        'Telecommunication Services', 'Transportation', 'Utilities'],
+    'Commercial & Professional Services',
+    'Consumer Durables & Apparel', 'Consumer Services',
+    'Diversified Financials', 'Energy', 'Food & Staples Retailing',
+    'Food, Beverage & Tobacco', 'Health Care Equipment & Services',
+    'Household & Personal Products', 'Insurance', 'Materials',
+    'Media & Entertainment',
+    'Pharmaceuticals, Biotechnology & Life Sciences', 'Real Estate',
+    'Retailing', 'Semiconductors & Semiconductor Equipment',
+    'Software & Services', 'Technology Hardware & Equipment',
+    'Telecommunication Services', 'Transportation', 'Utilities'],
        dtype=object)}
 ```
 
-Or only showing one specific parameter.
+Or only showing one specific parameter:
 
 ```python
 equities.show_options(
@@ -168,7 +168,7 @@ array(['Banks', 'Capital Markets', 'Consumer Finance',
        'Diversified Financial Services', 'Insurance'], dtype=object)
 ```
 
-Given this information, it then becomes possible to filter the database based on the parameters you are interested in. For example, if you are interested 'Insurance' companies in the 'Netherlands' you can use the following. Note that I omit the `sector` here, given that the selection I make is on a deeper level and therefore it is a given that the sector is 'Financials'.
+Given this information, it then becomes possible to filter the database based on the parameters you are interested in. For example, if you are interested in 'Insurance' companies in the 'Netherlands', you can use the following. Note that I omit the `sector` here, given that the selection I make is on a deeper level and therefore it is a given that the sector is 'Financials'.
 
 ```python
 equities.select(
@@ -177,7 +177,7 @@ equities.select(
 )
 ```
 
-This returns a small selection of companies on all exchanges the companies are listed on.
+This returns a small selection of companies on all exchanges where the companies are listed.
 
 
 | symbol    | name               | currency   | sector     | industry_group   | industry   | exchange   | market                   | country     |   state | city      | zipcode   | website              | market_cap   | isin         |   cusip | figi         | composite_figi   | shareclass_figi   |
@@ -190,10 +190,10 @@ This returns a small selection of companies on all exchanges the companies are l
 
 You'll see that the same company can appear multiple times. This is because by default all exchanges are shown. There are two methods to focus on one entry:
 
-- Use the `only_primary_listing` parameter. This will only show the primary listing of each company. This is useful mostly if you are looking into the US exchanges.
-- Use the `exchange` or `market` parameter. This will allow you to filter on a specific exchange or market. This is useful when you not necessarily looking into US exchanges and are already filtering on a specific country.
+- Use the `only_primary_listing` parameter. This will only show the primary listing of each company. This is useful mostly if you are looking at US exchanges.
+- Use the `exchange` or `market` parameter. This will allow you to filter on a specific exchange or market. This is useful when you are not necessarily looking at US exchanges and are already filtering on a specific country.
 
-For example, filtering on the Netherlands it makes sense to select a Dutch exchange as well. This is for example the exchange "AMS" or the market "Euronext Amsterdam". This will already give you a much smaller selection.
+For example, when filtering on the Netherlands, it makes sense to select a Dutch exchange as well. This could be the exchange "AMS" or the market "Euronext Amsterdam". This will give you a much smaller selection.
 
 ```python
 equities.select(
@@ -203,7 +203,7 @@ equities.select(
 )
 ```
 
-This gives the following three companies (not shortenend):
+This gives the following three companies (not shortened):
 
 | symbol   | name               | currency   | sector     | industry_group   | industry   | exchange   | market             | country     |   state | city      | zipcode   | website                 | market_cap   | isin         |   cusip | figi         | composite_figi   | shareclass_figi   |
 |:---------|:-------------------|:-----------|:-----------|:-----------------|:-----------|:-----------|:-------------------|:------------|--------:|:----------|:----------|:------------------------|:-------------|:-------------|--------:|:-------------|:-----------------|:------------------|
@@ -211,7 +211,7 @@ This gives the following three companies (not shortenend):
 | ASRNL.AS | ASR Nederland N.V. | EUR        | Financials | Insurance        | Insurance  | AMS        | Euronext Amsterdam | Netherlands |     nan | Utrecht   | 3584 BA   | http://www.asrnl.com    | Mid Cap      | NL0011872643 |     nan | BBG00CWZ0HG5 | BBG00CWZ0HF6     | BBG00CWZ0HK0      |
 | NN.AS    | NN Group N.V.      | EUR        | Financials | Insurance        | Insurance  | AMS        | Euronext Amsterdam | Netherlands |     nan | The Hague | 2595 AS   | http://www.nn-group.com | Large Cap    | nan          |     nan | nan          | nan              | nan               |
 
-Given that the Netherlands is a relatively small country, it is not uncommon for the list to become small quick. For example, the same selection for the United States is already much larger, also utilizing the `only_primary_listing` parameter.
+Given that the Netherlands is a relatively small country, it is not uncommon for the list to become small quickly. For example, the same selection for the United States is already much larger, also utilizing the `only_primary_listing` parameter.
 
 ```python
 equities.select(
@@ -221,7 +221,7 @@ equities.select(
 )
 ```
 
-While not immediately obvious in this shortenend output, it returns about 180 different companies.
+While not immediately obvious in this shortened output, it returns about 180 different companies.
 
 
 | symbol   | name                             | currency   | sector     | industry_group   | industry   | exchange   | market                  | country       | state   | city            | zipcode    | website                    | market_cap   | isin         | cusip     | figi         | composite_figi   | shareclass_figi   |
@@ -232,7 +232,7 @@ While not immediately obvious in this shortenend output, it returns about 180 di
 | BRO      | Brown & Brown, Inc.              | USD        | Financials | Insurance        | Insurance  | NYQ        | New York Stock Exchange | United States | FL      | Daytona Beach   | 32114      | http://www.bbinsurance.com | Large Cap    | US1152361010 | 115236101 | BBG000BWSJ77 | BBG000BWSGF4     | BBG001S5XFN0      |
 | CINF     | Cincinnati Financial Corporation | USD        | Financials | Insurance        | Insurance  | NMS        | NASDAQ Global Select    | United States | OH      | Fairfield       | 45014-5141 | http://www.cinfin.com      | Large Cap    | US1720621010 | 172062101 | BBG000BFPVV3 | BBG000BFPK65     | BBG001S5PTM0      |
 
-For any of the variables, it is also possible to provide a list instead. Which means that it will return all entries that match any of the variables. As an example, the queries above can be combined into one.
+For any of the variables, it is also possible to provide a list instead, which means that it will return all entries that match any of the variables. As an example, the queries above can be combined into one:
 
     
 ```python
@@ -240,8 +240,8 @@ equities.select(
     country=['Netherlands', 'United States'],
     industry='Insurance',
     market=['Euronext Amsterdam', 'Nordic Growth Market', 'OTC Bulletin Board',
-            'New York Stock Exchange', 'NASDAQ Global Select', 'NYSE MKT',
-            'NASDAQ Capital Market']
+        'New York Stock Exchange', 'NASDAQ Global Select', 'NYSE MKT',
+        'NASDAQ Capital Market']
 )
 ```
 
@@ -257,9 +257,9 @@ This returns a larger selection of companies given the increased number of count
 | AEGOF    | Aegon N.V.                    | USD        | Financials | Insurance        | Insurance  | PNK        | OTC Bulletin Board      | Netherlands   | nan     | The Hague  | 2591 TV    | http://www.aegon.com     | Mid Cap      | NL0000303709 |     nan | nan          | nan              | nan               |
 
 
-In case the current categorization doesn't lead to the results you are looking for, it is possible to use the `search` parameter. This allows you to filter on any column in the database via a custom string. This means that if the word or sentence you input is found somewhere in the column you select, it will return the result. 
+If the current categorization doesn't lead to the results you are looking for, it is possible to use the `search` parameter. This allows you to filter on any column in the database via a custom string. This means that if the word or sentence you input is found somewhere in the column you select, it will return the result. 
 
-By default the result will not be case sensitive but you can adjust this by setting `case_sensitive=True`. You can also filter the index (`symbol` column) by using `index` as shown below. Just like the `select` function, you can also provide lists here.
+By default, the result will not be case sensitive, but you can adjust this by setting `case_sensitive=True`. You can also filter the index (`symbol` column) by using `index` as shown below. Just like the `select` function, you can also provide lists here.
 
 ```python
 equities.search(
@@ -270,7 +270,7 @@ equities.search(
 )
 ```
 
-This returns instruments that are listed on the Frankfurt Stock Exchange, are in an industry group with the word "Equipment" and have either "Robotics" or "Education" in the summary column. The `index` parameter is used to filter on the symbol column, which in this case is ".F". The filtering on the index is an alternative way of finding the exchange or market you are looking for.
+This returns instruments that are listed on the Frankfurt Stock Exchange, are in an industry group with the word "Equipment," and have either "Robotics" or "Education" in the summary column. The `index` parameter is used to filter on the symbol column, which in this case is ".F". The filtering on the index is an alternative way of finding the exchange or market you are looking for.
 
 | symbol   | name                                                        | currency   | sector                 | industry_group                   | industry                                       | exchange   | market                   | country       | state   | city          | zipcode    | website                        | market_cap   | isin         | cusip     | figi         | composite_figi   | shareclass_figi   |
 |:---------|:------------------------------------------------------------|:-----------|:-----------------------|:---------------------------------|:-----------------------------------------------|:-----------|:-------------------------|:--------------|:--------|:--------------|:-----------|:-------------------------------|:-------------|:-------------|:----------|:-------------|:-----------------|:------------------|
@@ -280,16 +280,16 @@ This returns instruments that are listed on the Frankfurt Stock Exchange, are in
 | 1YO.F    | Yangtze Optical Fibre And Cable Joint Stock Limited Company | EUR        | Information Technology | Technology Hardware & Equipment  | Communications Equipment                       | FRA        | Frankfurt Stock Exchange | China         | nan     | Wuhan         | 430073     | http://www.yofc.com            | Small Cap    | nan          | nan       | nan          | nan              | nan               |
 | 1ZU.F    | The Pennant Group, Inc.                                     | EUR        | Health Care            | Health Care Equipment & Services | Health Care Equipment & Supplies               | FRA        | Frankfurt Stock Exchange | United States | ID      | Eagle         | 83616      | http://pennantgroup.com        | Small Cap    | US70805E1091 | 7.08E+113 | BBG00QJ35K78 | BBG00QJ35K69     | BBG00P33SZ15      |
 
-Lastly, the Finance Database has a direct integration with the [Finance Toolkit](https://github.com/JerBouma/FinanceToolkit) making it possible to do financial analysis on the companies you've found in the Finance Database. Returning to the earlier example of the 3 insurance companies in the Netherlands, it becomes possible to load these into the Finance Toolkit with the `to_toolkit` functionality. 
+Lastly, the Finance Database has a direct integration with the [Finance Toolkit](https://github.com/JerBouma/FinanceToolkit), making it possible to do financial analysis on the companies you've found in the Finance Database. Returning to the earlier example of the 3 insurance companies in the Netherlands, it becomes possible to load these into the Finance Toolkit with the `to_toolkit` functionality. 
 
-To be able to get started, you need to obtain an API Key from FinancialModelingPrep. This is used to gain access to 30+ years of financial statement both annually and quarterly. Note that the Free plan is limited to 250 requests each day, 5 years of data and only features companies listed on US exchanges.
+To be able to get started, you need to obtain an API Key from FinancialModelingPrep. This is used to gain access to 30+ years of financial statements, both annually and quarterly. Note that the Free plan is limited to 250 requests each day, 5 years of data, and only features companies listed on US exchanges.
 
 ___ 
 
 <b><div align="center">Obtain an API Key from FinancialModelingPrep <a href="https://www.jeroenbouma.com/fmp" target="_blank">here</a>.</div></b>
 ___
 
-Then you can go ahead and run the following code, changing the `API_KEY` to your own API Key.
+Then you can go ahead and run the following code, changing the `API_KEY` to your own API Key:
 
 
 ```python
@@ -306,7 +306,7 @@ toolkit = dutch_insurance_companies.to_toolkit(
 )
 ```
 
-With this integration, I can now access some of the most important financial metrics for these companies. Let's start simple with historical data.
+With this integration, I can now access some of the most important financial metrics for these companies. Let's start simple with historical data:
 
 ```python
 toolkit.get_historical_data()
@@ -322,7 +322,7 @@ Which returns, selecting only "ASRNL.AS" as an example:
 | 2025-04-03 |  52.32 |  53.22 | 52.18 |   52.42 |       52.42 |   567242 |           0 |  -0.0165 |       0.0175 |         -0.057  |              0.0206 |              4.2274 |
 | 2025-04-04 |  52    |  52.5  | 49.45 |   50.4  |       50.4  |   485024 |           0 |  -0.0385 |       0.0175 |         -0.0775 |              0.0206 |              4.0645 |
 
-And now let's make it more advanced by automatically calculating 60+ financial ratios for each. **This is just a small snippet of what is available within the Finance Toolkit, see for more information the GitHub page of the Finance Toolkit [here](https://github.com/JerBouma/FinanceToolkit) or the example Notebook [here](https://www.jeroenbouma.com/projects/financetoolkit/getting-started).**
+Now let's make it more advanced by automatically calculating 60+ financial ratios for each company. **This is just a small snippet of what is available within the Finance Toolkit; see the GitHub page of the Finance Toolkit [here](https://github.com/JerBouma/FinanceToolkit) or the example Notebook [here](https://www.jeroenbouma.com/projects/financetoolkit/getting-started) for more information.**
 
 ```python
 toolkit.ratios.collect_all_ratios()
@@ -362,7 +362,7 @@ This gives you results like the following:
 | ^VCLT    | VANGUARD SCOTTSDAL | USD        | Fixed Income     | Corporate Bonds        | Vanguard Asset Management | NIM        |
 | ^VCSH    | VANGUARD SCOTTSDAL | USD        | Fixed Income     | Corporate Bonds        | Vanguard Asset Management | NIM        |
 
-This also translates to the available options, for example let's select `fd.Indices()` instead.
+This also translates to the available options. For example, let's select `fd.Indices()` instead:
 
 ```python
 indices = fd.Indices()
@@ -373,26 +373,26 @@ A sample of the output is shown below:
 
 ```text
 {'category_group': array(['Alternatives', 'Cash', 'Commodities', 'Communication Services',
-        'Consumer Discretionary', 'Consumer Staples', 'Currencies',
-        'Derivatives', 'Energy', 'Equities', 'Financials', 'Fixed Income',
-        'Health Care', 'Industrials', 'Information Technology',
-        'Materials', 'Real Estate', 'Utilities'], dtype=object),
+    'Consumer Discretionary', 'Consumer Staples', 'Currencies',
+    'Derivatives', 'Energy', 'Equities', 'Financials', 'Fixed Income',
+    'Health Care', 'Industrials', 'Information Technology',
+    'Materials', 'Real Estate', 'Utilities'], dtype=object),
  'category': array(['Alternative', 'Blend', 'Bonds', 'Cash', 'Commercial Real Estate',
-        'Commodities Broad Basket', 'Communications',
-        'Consumer Discretionary', 'Consumer Staples', 'Corporate Bonds',
-        'Currencies', 'Derivatives', 'Developed Markets',
-        'Emerging Markets', 'Energy', 'Equities', 'Factors', 'Financials',
-        'Frontier Markets', 'Government Bonds', 'Growth', 'Health Care',
-        'High Yield Bonds', 'Industrials',
-        'Inflation-Protected Securities', 'Investment Grade Bonds',
-        'Large Cap', 'Materials', 'Micro Cap', 'Mid Cap',
-        'Money Market Instruments', 'Municipal Bonds', 'REITs',
-        'Real Estate Development', 'Real Estate Services',
-        'Residential Real Estate', 'Small Cap', 'Technology', 'Trading',
-        'Treasury Bonds', 'Utilities', 'Value'], dtype=object)}
+    'Commodities Broad Basket', 'Communications',
+    'Consumer Discretionary', 'Consumer Staples', 'Corporate Bonds',
+    'Currencies', 'Derivatives', 'Developed Markets',
+    'Emerging Markets', 'Energy', 'Equities', 'Factors', 'Financials',
+    'Frontier Markets', 'Government Bonds', 'Growth', 'Health Care',
+    'High Yield Bonds', 'Industrials',
+    'Inflation-Protected Securities', 'Investment Grade Bonds',
+    'Large Cap', 'Materials', 'Micro Cap', 'Mid Cap',
+    'Money Market Instruments', 'Municipal Bonds', 'REITs',
+    'Real Estate Development', 'Real Estate Services',
+    'Residential Real Estate', 'Small Cap', 'Technology', 'Trading',
+    'Treasury Bonds', 'Utilities', 'Value'], dtype=object)}
 ```
 
-And lastly, both the `search` and `to_toolkit` metrics also apply to each of the asset classes, using `fd.Funds()` and `fd.Cryptos()` respectively. For example, let's find the funds that focus around pension plans.
+Lastly, both the `search` and `to_toolkit` functions also apply to each of the asset classes, using `fd.Funds()` and `fd.Cryptos()` respectively. For example, let's find the funds that focus on pension plans:
 
 ```python
 funds = fd.Funds()
@@ -411,7 +411,7 @@ A sample of the output is shown below:
 | 0P000018ML.F | Cajamar Renta Variable PP         | EUR        | Equities         | Equities   | Cajamar Vida Se. y Re.           | FRA        |
 | 0P000019H0.F | Bestinver Global PP               | EUR        | Financials       | Blend      | Bestinver Pensiones              | FRA        |
 
-And for Cryptos, let's collect the historical data of Ethereum in multiple currencies.
+For Cryptos, let's collect the historical data of Ethereum in multiple currencies:
 
 ```python
 cryptos = fd.Cryptos()
@@ -428,7 +428,7 @@ cryptos_toolkit = eth_cryptos.to_toolkit(
 cryptos_toolkit.get_historical_data(period='quarterly')
 ```
 
-A sample of the output is shown below, focussig on ETH-BTC:
+A sample of the output is shown below, focusing on ETH-BTC:
 
 | Date   |   Open |   High |    Low |   Close |   Adj Close |   Volume |   Dividends |   Return |   Volatility |   Excess Return |   Excess Volatility |   Cumulative Return |
 |:-------|-------:|-------:|-------:|--------:|------------:|---------:|------------:|---------:|-------------:|----------------:|--------------------:|--------------------:|
