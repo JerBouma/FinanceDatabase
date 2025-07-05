@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "financedatabase"
-version = "2.3.0"
+version = "2.3.1"
 description = "This is a database of 300.000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets."
 license = "MIT"
 authors = ["Jeroen Bouma"]
@@ -24,9 +24,10 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = ">=3.10, <3.14"
-financetoolkit = ">=2.0.0, <3.0.0"
+financetoolkit = ">=2.0.3, <3.0.0"
 pandas = {version = "^2.2", extras = ["computation", "performance", "plot", "excel"]}
 requests = "^2.32.3"
+yfinance = "*"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
