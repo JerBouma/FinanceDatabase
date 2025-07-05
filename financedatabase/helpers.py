@@ -174,7 +174,7 @@ class FinanceFrame(pd.DataFrame):
         use_cached_data: bool | str = False,
         risk_free_rate: str = "10y",
         benchmark_ticker: str | None = "SPY",
-        historical_source: str | None = None,
+        enforce_source: str | None = None,
         convert_currency: bool | None = None,
         intraday_period: str | None = None,
         rounding: int | None = 4,
@@ -231,17 +231,17 @@ class FinanceFrame(pd.DataFrame):
         except ImportError as exc:
             raise ImportError(
                 "To use the 'to_toolkit' functionality, it requires installation of the FinanceToolkit "
-                "Please use: \033[1m pip install financetoolkit \033[0m"
+                "Please use: \033[1m pip install financetoolkit -U \033[0m"
             ) from exc
         if api_key is None:
             print(
-                "The parameter api_key is not set. Therefore, only historical data and "
-                "indicators are available. Consider obtaining a key with the following "
+                "The parameter api_key is not set. Therefore, using Yahoo Finance as the source which "
+                "is limited to 5 years of fundamental data. Consider obtaining a key with the following "
                 "link: https://www.jeroenbouma.com/fmp"
-                "\nThe free plan allows for 250 requests per day, a limit of 5 years and has no "
-                "quarterly data. You can get 15% off by using the above affiliate link to "
+                "\nYou can get 15% off by using the above affiliate link to "
                 "get access to 30+ years of (quarterly) data which also supports the project."
             )
+
         symbols = self[self.index.notna()].index.to_list()
 
         toolkit = Toolkit(
@@ -253,7 +253,7 @@ class FinanceFrame(pd.DataFrame):
             use_cached_data=use_cached_data,
             risk_free_rate=risk_free_rate,
             benchmark_ticker=benchmark_ticker,
-            historical_source=historical_source,
+            enforce_source=enforce_source,
             convert_currency=convert_currency,
             intraday_period=intraday_period,
             rounding=rounding,
