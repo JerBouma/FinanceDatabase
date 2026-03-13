@@ -80,7 +80,7 @@ jobs:
                     # Checks if ticker exists, if yes, continue
                     fd_data = equities.loc[index]
                     
-                    if fd_data['market_cap'] != market_cap and market_cap == market_cap:
+                    if len(fd_data) == 1 and fd_data['market_cap'] != market_cap and market_cap == market_cap:
                         ticker_dict[index] = {'symbol': index}
                         for column, value in fd_data.items():
                             if column == 'market_cap':

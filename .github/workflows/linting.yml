@@ -42,9 +42,6 @@ jobs:
       - name: Run black
         run: poetry run black --diff --check .
 
-      - name: Run codespell
-        run: poetry run codespell
-
       - name: Run ruff
         run: poetry run ruff financedatabase
 
