@@ -43,7 +43,7 @@ jobs:
         run: poetry run black --diff --check .
 
       - name: Run ruff
-        run: poetry run ruff financedatabase
+        run: poetry run ruff check financedatabase
 
       - name: Run pylint
         run: poetry run pylint financedatabase
