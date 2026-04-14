@@ -30,7 +30,7 @@ requests = "^2.32.3"
 yfinance = "*"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.3.3"
+pytest = ">=8.3.3,<10.0.0"
 pylint = "^3.3.0"
 codespell = "^2.3.0"
 black = "^25.1.0"
