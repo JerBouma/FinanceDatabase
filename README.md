@@ -240,7 +240,7 @@ equities.select(
     country=['Netherlands', 'United States'],
     industry='Insurance',
     market=['Euronext Amsterdam', 'Nordic Growth Market', 'OTC Bulletin Board',
-        'New York Stock Exchange', 'NASDAQ Global Select', 'NYSE MKT',
+        'New York Stock Exchange', 'NASDAQ Global Select', 'NYSE American',
         'NASDAQ Capital Market']
 )
 ```
