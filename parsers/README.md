@@ -26,5 +26,5 @@ Find an overview of each module below.
 - `desciptions_controller.py`: Provides descriptions for each instrument based on ticker and name.
 - `industry_controller.py`: Determines the industry of a company based on ticker, name, summary, industry group and sector. Categorization is required to be verified before merging into the database, a pipeline will also prevent pushes to the database if it doesn't align with the sector and industry group.
 - `industry_group_controller.py`: Determines the industry group of a company based on ticker, name, summary and sector. Categorization is required to be verified before merging into the database, a pipeline will also prevent pushes to the database if it doesn't align with the sector.
+- `sec_enrichment_controller.py`: Enriches missing US security names and currencies from public SEC datasets. The default mode is a dry run that writes an audit report; accepted rows can be applied with `--apply`.
 - `sectory_controller.py`: Determines the sector of a company based on ticker, name and summary. Categorization is required to be verified before merging into the database, a pipeline will also prevent pushes to the database if it doesn't align with the sector options.
-
