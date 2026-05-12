@@ -145,7 +145,9 @@ def title_case_sec_name(value: str) -> str:
     return cleaned
 
 
-def compose_series_class_name(series_name: str, class_name: str, entity_name: str = "") -> str:
+def compose_series_class_name(
+    series_name: str, class_name: str, entity_name: str = ""
+) -> str:
     """Create a display name from SEC series/class fields."""
     series = title_case_sec_name(series_name)
     class_value = title_case_sec_name(class_name)
@@ -162,7 +164,10 @@ def compose_series_class_name(series_name: str, class_name: str, entity_name: st
     if not class_value:
         return series
     normalized_class = normalize_name(class_value)
-    if original_normalized_series == normalized_class or normalized_class in original_normalized_series:
+    if (
+        original_normalized_series == normalized_class
+        or normalized_class in original_normalized_series
+    ):
         return series
     if normalized_class.startswith(f"{original_normalized_series} "):
         class_value = class_value[len(title_case_sec_name(series_name)) :].strip(" -")
@@ -224,9 +229,9 @@ def has_incomplete_fund_name(row: pd.Series, dataset: str) -> bool:
     if dataset not in {"funds", "moneymarkets"}:
         return False
     normalized_name = normalize_name(clean_text(row.get("name")))
-    return (
-        normalized_name in GENERIC_FUND_CLASS_NAMES
-        or any(generic_series in normalized_name for generic_series in GENERIC_FUND_SERIES_NAMES)
+    return normalized_name in GENERIC_FUND_CLASS_NAMES or any(
+        generic_series in normalized_name
+        for generic_series in GENERIC_FUND_SERIES_NAMES
     )
 
 
@@ -241,7 +246,10 @@ def should_upgrade_fund_name(row: pd.Series, dataset: str, candidate_name: str) 
     normalized_candidate = normalize_name(candidate_name)
     if normalized_candidate == normalized_current:
         return False
-    return normalized_current in GENERIC_FUND_CLASS_NAMES or normalized_candidate.endswith(normalized_current)
+    return (
+        normalized_current in GENERIC_FUND_CLASS_NAMES
+        or normalized_candidate.endswith(normalized_current)
+    )
 
 
 def wanted_fields_or_name_upgrade(row: pd.Series, dataset: str) -> bool:
@@ -267,31 +275,43 @@ def choose_candidate(
     symbol = normalize_ticker(row.get("symbol"))
     matching = [record for record in records if security_type_allowed(dataset, record)]
     if not is_us_candidate_row(row):
-        return EnrichmentDecision(status="skipped", symbol=symbol, reason="not_us_candidate")
+        return EnrichmentDecision(
+            status="skipped", symbol=symbol, reason="not_us_candidate"
+        )
     if not wanted_fields_or_name_upgrade(row, dataset):
-        return EnrichmentDecision(status="skipped", symbol=symbol, reason="no_missing_target_fields")
+        return EnrichmentDecision(
+            status="skipped", symbol=symbol, reason="no_missing_target_fields"
+        )
     if not matching:
-        return EnrichmentDecision(status="skipped", symbol=symbol, reason="no_sec_match")
+        return EnrichmentDecision(
+            status="skipped", symbol=symbol, reason="no_sec_match"
+        )
 
     row_ids = row_identifiers(row)
     source_ids = frozenset().union(*(record.identifiers for record in matching))
     if row_ids and not row_ids.intersection(source_ids):
         best = matching[0]
         proposed_name = ""
-        if not clean_text(row.get("name")) or should_upgrade_fund_name(row, dataset, best.name):
+        if not clean_text(row.get("name")) or should_upgrade_fund_name(
+            row, dataset, best.name
+        ):
             proposed_name = best.name
         return EnrichmentDecision(
             status="review",
             symbol=symbol,
             proposed_name=proposed_name,
-            proposed_currency="USD" if not clean_text(row.get("currency")) and best.us_listing else "",
+            proposed_currency=(
+                "USD" if not clean_text(row.get("currency")) and best.us_listing else ""
+            ),
             source=best.source,
             source_identifiers=";".join(sorted(source_ids)),
             confidence="low",
             reason="row_has_identifier_without_sec_identifier_match",
         )
 
-    normalized_names = {normalize_name(record.name) for record in matching if clean_text(record.name)}
+    normalized_names = {
+        normalize_name(record.name) for record in matching if clean_text(record.name)
+    }
     if len(normalized_names) > 1:
         return EnrichmentDecision(
             status="review",
@@ -311,9 +331,13 @@ def choose_candidate(
     elif should_upgrade_fund_name(row, dataset, chosen.name):
         proposed_name = chosen.name
         reason = "incomplete_name_sec_series_class_match"
-    proposed_currency = "USD" if not clean_text(row.get("currency")) and chosen.us_listing else ""
+    proposed_currency = (
+        "USD" if not clean_text(row.get("currency")) and chosen.us_listing else ""
+    )
     if not proposed_name and not proposed_currency:
-        return EnrichmentDecision(status="skipped", symbol=symbol, reason="no_applicable_fill")
+        return EnrichmentDecision(
+            status="skipped", symbol=symbol, reason="no_applicable_fill"
+        )
 
     confidence = "high"
     if row_ids and row_ids.intersection(source_ids):
@@ -336,7 +360,9 @@ class SecCache:
 
     def __init__(self, cache_dir: str | Path, user_agent: str) -> None:
         if not user_agent:
-            raise ValueError("Provide --user-agent or set SEC_USER_AGENT for SEC requests.")
+            raise ValueError(
+                "Provide --user-agent or set SEC_USER_AGENT for SEC requests."
+            )
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.session = requests.Session()
@@ -402,7 +428,9 @@ def series_class_urls(years: Iterable[int]) -> Iterable[tuple[int, str]]:
         yield year, f"{SEC_BASE}/files/investment/data/other/{folder}/{filename}"
 
 
-def load_series_class_records(cache: SecCache, years: Iterable[int]) -> list[SourceRecord]:
+def load_series_class_records(
+    cache: SecCache, years: Iterable[int]
+) -> list[SourceRecord]:
     """Load current and historical investment company class records."""
     records = []
     for year, url in series_class_urls(years):
@@ -410,7 +438,11 @@ def load_series_class_records(cache: SecCache, years: Iterable[int]) -> list[Sou
             payload = cache.get(url).decode("utf-8-sig")
         except requests.HTTPError:
             continue
-        source = "investment_company_series_class" if year == 0 else f"investment_company_series_class_{year}"
+        source = (
+            "investment_company_series_class"
+            if year == 0
+            else f"investment_company_series_class_{year}"
+        )
         reader = csv.DictReader(io.StringIO(payload))
         for row in reader:
             ticker = normalize_ticker(row.get("Class Ticker"))
@@ -421,7 +453,9 @@ def load_series_class_records(cache: SecCache, years: Iterable[int]) -> list[Sou
             records.append(
                 SourceRecord(
                     ticker=ticker,
-                    name=compose_series_class_name(series_name, class_name, clean_text(row.get("Entity Name"))),
+                    name=compose_series_class_name(
+                        series_name, class_name, clean_text(row.get("Entity Name"))
+                    ),
                     source=source,
                     security_types=frozenset({"etfs", "funds", "moneymarkets"}),
                     cik=clean_text(row.get("CIK Number")),
@@ -490,7 +524,10 @@ def load_ncen_records(cache: SecCache, quarters: Iterable[str]) -> list[SourceRe
         except requests.HTTPError:
             continue
         with zipfile.ZipFile(io.BytesIO(payload)) as archive:
-            if "SECURITY_EXCHANGE.tsv" in archive.namelist() and "FUND_REPORTED_INFO.tsv" in archive.namelist():
+            if (
+                "SECURITY_EXCHANGE.tsv" in archive.namelist()
+                and "FUND_REPORTED_INFO.tsv" in archive.namelist()
+            ):
                 records.extend(load_ncen_etf_records(archive, quarter))
     return records
 
@@ -528,7 +565,9 @@ def load_ncen_etf_records(archive: zipfile.ZipFile, quarter: str) -> list[Source
     return records
 
 
-def build_source_index(records: Iterable[SourceRecord]) -> dict[str, list[SourceRecord]]:
+def build_source_index(
+    records: Iterable[SourceRecord],
+) -> dict[str, list[SourceRecord]]:
     """Build a ticker -> records index, dropping nameless records when named records exist."""
     index: dict[str, list[SourceRecord]] = {}
     for record in records:
@@ -542,7 +581,9 @@ def build_source_index(records: Iterable[SourceRecord]) -> dict[str, list[Source
     return compacted
 
 
-def enrich_dataset(path: str | Path, source_index: dict[str, list[SourceRecord]], apply: bool) -> list[dict[str, str]]:
+def enrich_dataset(
+    path: str | Path, source_index: dict[str, list[SourceRecord]], apply: bool
+) -> list[dict[str, str]]:
     """Create enrichment decisions for one dataset and optionally update it."""
     dataset = dataset_kind(path)
     dataframe = pd.read_csv(path, dtype=str, keep_default_na=False)
@@ -603,15 +644,53 @@ def write_report(path: str | Path, rows: list[dict[str, str]]) -> None:
 
 def parse_args() -> argparse.Namespace:
     """Parse CLI arguments."""
-    parser = argparse.ArgumentParser(description="Enrich missing US names/currencies from SEC public data.")
-    parser.add_argument("--datasets", nargs="+", default=list(DEFAULT_DATASETS), help="CSV datasets to inspect.")
-    parser.add_argument("--cache-dir", default=".cache/sec_enrichment", help="SEC download cache directory.")
-    parser.add_argument("--report", default=".cache/sec_enrichment/sec_enrichment_report.csv", help="Audit report path.")
-    parser.add_argument("--apply", action="store_true", help="Apply accepted high-confidence fills to CSV files.")
-    parser.add_argument("--user-agent", default=os.getenv("SEC_USER_AGENT", ""), help="SEC-compliant User-Agent.")
-    parser.add_argument("--start-year", type=int, default=2010, help="First series/class year to download.")
-    parser.add_argument("--end-year", type=int, default=date.today().year, help="Last series/class year to download.")
-    parser.add_argument("--include-ncen", action=argparse.BooleanOptionalAction, default=True, help="Include N-CEN data.")
+    parser = argparse.ArgumentParser(
+        description="Enrich missing US names/currencies from SEC public data."
+    )
+    parser.add_argument(
+        "--datasets",
+        nargs="+",
+        default=list(DEFAULT_DATASETS),
+        help="CSV datasets to inspect.",
+    )
+    parser.add_argument(
+        "--cache-dir",
+        default=".cache/sec_enrichment",
+        help="SEC download cache directory.",
+    )
+    parser.add_argument(
+        "--report",
+        default=".cache/sec_enrichment/sec_enrichment_report.csv",
+        help="Audit report path.",
+    )
+    parser.add_argument(
+        "--apply",
+        action="store_true",
+        help="Apply accepted high-confidence fills to CSV files.",
+    )
+    parser.add_argument(
+        "--user-agent",
+        default=os.getenv("SEC_USER_AGENT", ""),
+        help="SEC-compliant User-Agent.",
+    )
+    parser.add_argument(
+        "--start-year",
+        type=int,
+        default=2010,
+        help="First series/class year to download.",
+    )
+    parser.add_argument(
+        "--end-year",
+        type=int,
+        default=date.today().year,
+        help="Last series/class year to download.",
+    )
+    parser.add_argument(
+        "--include-ncen",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Include N-CEN data.",
+    )
     return parser.parse_args()
 
 
@@ -637,7 +716,9 @@ def main() -> None:
     accepted = sum(row["status"] == "accepted" for row in report_rows)
     review = sum(row["status"] == "review" for row in report_rows)
     mode = "applied" if args.apply else "dry-run"
-    print(f"SEC enrichment {mode}: {accepted} accepted, {review} review rows. Report: {args.report}")
+    print(
+        f"SEC enrichment {mode}: {accepted} accepted, {review} review rows. Report: {args.report}"
+    )
 
 
 if __name__ == "__main__":

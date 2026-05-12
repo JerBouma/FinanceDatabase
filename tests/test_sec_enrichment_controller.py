@@ -23,7 +23,9 @@ def test_foreign_suffix_rows_are_not_us_candidates():
 
 
 def test_us_exchange_rows_with_missing_fields_are_accepted():
-    row = pd.Series({"symbol": "AAPL", "name": "", "currency": "", "exchange": "NMS", "country": ""})
+    row = pd.Series(
+        {"symbol": "AAPL", "name": "", "currency": "", "exchange": "NMS", "country": ""}
+    )
     records = [
         SourceRecord(
             ticker="AAPL",
@@ -42,7 +44,15 @@ def test_us_exchange_rows_with_missing_fields_are_accepted():
 
 
 def test_existing_identifier_without_sec_identifier_match_requires_review():
-    row = pd.Series({"symbol": "OLD", "name": "", "currency": "", "exchange": "NMS", "isin": "US0000000001"})
+    row = pd.Series(
+        {
+            "symbol": "OLD",
+            "name": "",
+            "currency": "",
+            "exchange": "NMS",
+            "isin": "US0000000001",
+        }
+    )
     records = [
         SourceRecord(
             ticker="OLD",
@@ -60,7 +70,9 @@ def test_existing_identifier_without_sec_identifier_match_requires_review():
 
 
 def test_ambiguous_names_require_review():
-    row = pd.Series({"symbol": "TEST", "name": "", "currency": "USD", "exchange": "NMS"})
+    row = pd.Series(
+        {"symbol": "TEST", "name": "", "currency": "USD", "exchange": "NMS"}
+    )
     records = [
         SourceRecord("TEST", "First Company", "source_a", frozenset({"equities"})),
         SourceRecord("TEST", "Second Company", "source_b", frozenset({"equities"})),
@@ -74,7 +86,10 @@ def test_ambiguous_names_require_review():
 
 def test_series_class_name_is_combined_for_generic_class_names():
     assert (
-        compose_series_class_name("COMMERCE CAPITAL GOVERNMENT MONEY MARKET FUND", "ADMINISTRATIVE CLASS SHARES")
+        compose_series_class_name(
+            "COMMERCE CAPITAL GOVERNMENT MONEY MARKET FUND",
+            "ADMINISTRATIVE CLASS SHARES",
+        )
         == "Commerce Capital Government Money Market Fund - Administrative Class Shares"
     )
 
@@ -114,7 +129,14 @@ def test_more_generic_series_names_are_prefixed_with_sec_entity_name():
 
 
 def test_generic_fund_class_name_can_be_upgraded():
-    row = pd.Series({"symbol": "CADXX", "name": "ADMINISTRATIVE CLASS SHARES", "currency": "USD", "exchange": "NAS"})
+    row = pd.Series(
+        {
+            "symbol": "CADXX",
+            "name": "ADMINISTRATIVE CLASS SHARES",
+            "currency": "USD",
+            "exchange": "NAS",
+        }
+    )
     records = [
         SourceRecord(
             "CADXX",
@@ -130,7 +152,10 @@ def test_generic_fund_class_name_can_be_upgraded():
     decision = choose_candidate(row, records, "moneymarkets")
 
     assert decision.status == "accepted"
-    assert decision.proposed_name == "Commerce Capital Government Money Market Fund - Administrative Class Shares"
+    assert (
+        decision.proposed_name
+        == "Commerce Capital Government Money Market Fund - Administrative Class Shares"
+    )
     assert decision.proposed_currency == ""
     assert decision.reason == "incomplete_name_sec_series_class_match"
 
@@ -170,21 +195,53 @@ def test_enrich_dataset_apply_preserves_columns_and_updates_only_accepted(tmp_pa
     dataset = tmp_path / "equities.csv"
     pd.DataFrame(
         [
-            {"symbol": "AAPL", "name": "", "summary": "", "currency": "", "exchange": "NMS", "isin": ""},
-            {"symbol": "OLD", "name": "", "summary": "", "currency": "", "exchange": "NMS", "isin": "US0000000001"},
+            {
+                "symbol": "AAPL",
+                "name": "",
+                "summary": "",
+                "currency": "",
+                "exchange": "NMS",
+                "isin": "",
+            },
+            {
+                "symbol": "OLD",
+                "name": "",
+                "summary": "",
+                "currency": "",
+                "exchange": "NMS",
+                "isin": "US0000000001",
+            },
         ]
     ).to_csv(dataset, index=False)
     source_index = build_source_index(
         [
-            SourceRecord("AAPL", "Apple Inc.", "company_tickers_exchange", frozenset({"equities"}), exchange="Nasdaq"),
-            SourceRecord("OLD", "New Reused Ticker Corp.", "company_tickers_exchange", frozenset({"equities"})),
+            SourceRecord(
+                "AAPL",
+                "Apple Inc.",
+                "company_tickers_exchange",
+                frozenset({"equities"}),
+                exchange="Nasdaq",
+            ),
+            SourceRecord(
+                "OLD",
+                "New Reused Ticker Corp.",
+                "company_tickers_exchange",
+                frozenset({"equities"}),
+            ),
         ]
     )
 
     report = enrich_dataset(Path(dataset), source_index, apply=True)
     updated = pd.read_csv(dataset, dtype=str, keep_default_na=False)
 
-    assert updated.columns.tolist() == ["symbol", "name", "summary", "currency", "exchange", "isin"]
+    assert updated.columns.tolist() == [
+        "symbol",
+        "name",
+        "summary",
+        "currency",
+        "exchange",
+        "isin",
+    ]
     assert updated.loc[0, "name"] == "Apple Inc."
     assert updated.loc[0, "currency"] == "USD"
     assert updated.loc[1, "name"] == ""
