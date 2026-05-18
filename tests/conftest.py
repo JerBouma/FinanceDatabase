@@ -1,3 +1,4 @@
+import difflib
 import json
 import os
 import pathlib
@@ -28,7 +29,88 @@ EXTENSIONS_MATCHING: dict[str, list[type]] = {
     "txt": [str],
 }
 
-# pylint: skip-file
+REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
+ASSET_CSVS = {
+    "cryptos": "summary",
+    "currencies": "summary",
+    "equities": "summary",
+    "etfs": "summary",
+    "funds": "summary",
+    "indices": "summary",
+    "moneymarkets": "summary",
+}
+
+
+def _regenerate_compression_artifacts() -> None:
+    """Mirror the Database-Update workflow so tests run against compression
+    artifacts derived from the *checked-out* CSV files.
+
+    The financedatabase library reads `compression/<asset>.bz2` and
+    `compression/categories/<asset>_categories.gzip`; without this step those
+    artifacts lag the `database/*.csv` on a PR branch and tests silently
+    validate against `main` instead of the PR change.
+    """
+    compression_dir = REPO_ROOT / "compression"
+    categories_dir = compression_dir / "categories"
+    for asset, name_col in ASSET_CSVS.items():
+        csv_path = REPO_ROOT / "database" / f"{asset}.csv"
+        if not csv_path.exists():
+            continue
+        df = pd.read_csv(csv_path)
+        df.to_csv(compression_dir / f"{asset}.bz2", index=False, compression="bz2")
+        indexed = pd.read_csv(csv_path, index_col=0)
+        categories: dict[str, Any] = {}
+        skip_cols = {"name", name_col, "manager_name", "manager_bio"}
+        for column in indexed.columns:
+            if column in skip_cols:
+                continue
+            vals = indexed[column].dropna().unique()
+            vals.sort()
+            categories[column] = vals
+        cat_df = pd.DataFrame.from_dict(categories, orient="index").reset_index()
+        cat_df.to_csv(
+            categories_dir / f"{asset}_categories.gzip",
+            index=False,
+            compression="gzip",
+        )
+
+
+def _snapshot_compression_artifacts() -> dict[pathlib.Path, bytes]:
+    """Capture current bytes of compression artifacts so they can be restored."""
+    compression_dir = REPO_ROOT / "compression"
+    snapshot: dict[pathlib.Path, bytes] = {}
+    for asset in ASSET_CSVS:
+        for path in (
+            compression_dir / f"{asset}.bz2",
+            compression_dir / "categories" / f"{asset}_categories.gzip",
+        ):
+            if path.exists():
+                snapshot[path] = path.read_bytes()
+    return snapshot
+
+
+def _restore_compression_artifacts(snapshot: dict[pathlib.Path, bytes]) -> None:
+    """Restore compression artifacts to their pre-test contents."""
+    for path, data in snapshot.items():
+        try:
+            path.write_bytes(data)
+        except Exception:
+            pass
+
+
+# Regenerate compression artifacts BEFORE pytest collects test modules. The
+# asset-class test modules instantiate `fd.X(use_local_location=True)` at
+# import time, so the artifacts must already be in sync with the checked-out
+# CSVs by then — a session-scoped fixture runs too late. A snapshot of the
+# original bytes is taken first; `pytest_sessionfinish` restores them so the
+# working tree stays clean for contributors.
+_compression_snapshot = _snapshot_compression_artifacts()
+_regenerate_compression_artifacts()
+
+
+def pytest_sessionfinish(session, exitstatus) -> None:  # noqa: ARG001
+    """Restore compression artifacts after the pytest session ends."""
+    _restore_compression_artifacts(_compression_snapshot)
 
 
 class Record:
@@ -43,7 +125,7 @@ class Record:
                 **kwargs,
             )
         elif isinstance(data, tuple(EXTENSIONS_MATCHING["json"])):
-            string_value = json.dumps(data, **kwargs)
+            string_value = json.dumps(data, indent=2, ensure_ascii=False, **kwargs)
         else:
             raise AttributeError(f"Unsupported type : {type(data)}")
 
@@ -225,11 +307,28 @@ class Recorder:
 
         for record in record_list:
             if record.record_changed:
+                expected = (record.recorded or "").splitlines()
+                actual = (record.captured or "").splitlines()
+                diff = "\n".join(
+                    difflib.unified_diff(
+                        expected,
+                        actual,
+                        fromfile="expected",
+                        tofile="actual",
+                        lineterm="",
+                        n=3,
+                    )
+                )
+                if not diff:
+                    diff = (
+                        f"(line-level diff empty — content differs only in trailing whitespace or EOL)\n"
+                        f"expected length={len(record.recorded or '')}, "
+                        f"actual length={len(record.captured or '')}"
+                    )
                 raise AssertionError(
-                    "Change detected\n"
-                    f"Record    : {record.record_path}\n"
-                    f"Expected  : {record.recorded[:self.display_limit]}\n"
-                    f"Actual    : {record.captured[:self.display_limit]}\n"
+                    f"Snapshot mismatch: {record.record_path}\n"
+                    f"Run pytest with --rewrite-expected to regenerate, or inspect the diff below.\n\n"
+                    f"{diff}"
                 )
 
     def assert_in_list(self, in_list: list[str]):
@@ -237,7 +336,10 @@ class Recorder:
 
         for record in record_list:
             for string_value in in_list:
-                assert string_value in record.captured  # noqa
+                assert string_value in record.captured, (  # noqa: S101
+                    f"Expected substring {string_value!r} not found in "
+                    f"{record.record_path}"
+                )
 
     def persist(self):
         record_list = self.__record_list
@@ -345,7 +447,7 @@ def pytest_addoption(parser: Parser):
 @pytest.fixture(scope="session")  # type: ignore
 def rewrite_expected(request: SubRequest) -> bool:
     """Force rewriting of all expected data by : `record_stdout` and `recorder`."""
-    return request.config.getoption("--rewrite-expected")
+    return bool(request.config.getoption("--rewrite-expected"))
 
 
 @pytest.fixture
