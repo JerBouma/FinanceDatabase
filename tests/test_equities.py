@@ -89,6 +89,34 @@ def test_show_options(recorder):
     )
 
 
+def test_exchange_market_one_to_one():
+    """Each `exchange` code must map to exactly one `market` label.
+
+    Drift between these two columns is a recurring data-quality issue.
+    This test fails fast if any exchange code becomes
+    ambiguous, preventing future PRs from re-introducing the
+    inconsistency.
+
+    The reverse direction is not asserted: one `market` label may
+    legitimately cover several exchange tiers (e.g. "OTC Bulletin
+    Board" covers PNK / OQB / OID / OEM / OQX).
+
+    Reads `database/equities.csv` directly so the assertion is against
+    the source of truth — the compressed library payload lags the CSV
+    until the maintainer regenerates it post-merge.
+    """
+    import pandas as pd
+
+    df = pd.read_csv("database/equities.csv", dtype=str)
+    pairs = df.dropna(subset=["exchange", "market"])
+
+    by_exchange = pairs.groupby("exchange")["market"].nunique()
+    ambiguous = by_exchange[by_exchange > 1]
+    assert (
+        ambiguous.empty
+    ), f"Exchange codes mapping to multiple market labels: {ambiguous.to_dict()}"
+
+
 def test_search(recorder):
     recorder.capture(equities.search(summary="apple").iloc[:5])
     recorder.capture(equities.search(index="AAPL").iloc[:5])
