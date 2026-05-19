@@ -53,6 +53,12 @@ def test_select_with_invalid_value_raises() -> None:
     """`select(<filter>=...)` raises ValueError for values not in show_options()."""
     import pytest
 
-    for col in ["category_group", "category", "family", "currency", "exchange"]:
+    for col in [
+        "category_group",
+        "category",
+        "family",
+        "currency",
+        "exchange",
+    ]:
         with pytest.raises(ValueError, match="not available in the database"):
             funds.select(**{col: "__definitely_not_a_real_value__"})
