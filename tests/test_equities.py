@@ -1,14 +1,19 @@
-"""Currencies Test Module"""
+"""Equities Test Module"""
+
+from __future__ import annotations
 
 import financedatabase as fd
 
-equities = fd.Equities()
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from tests.conftest import Recorder
+
+equities = fd.Equities(use_local_location=True)
 
 
-# pylint: disable=missing-function-docstring
-
-
-def test_select(recorder):
+def test_select(recorder: Recorder) -> None:
+    """Verify select() output for representative equity filter combinations."""
     recorder.capture(equities.select().iloc[:5])
     recorder.capture(equities.select(country="Canada").iloc[:5])
     recorder.capture(equities.select(sector="Communication Services").iloc[:5])
@@ -61,7 +66,8 @@ def test_select(recorder):
     )
 
 
-def test_show_options(recorder):
+def test_show_options(recorder: Recorder) -> None:
+    """Verify show_options() returns the expected option values for equity."""
     recorder.capture(list(equities.show_options()))
     recorder.capture(list(equities.show_options(selection="country")))
     recorder.capture(list(equities.show_options(selection="sector")))
@@ -106,8 +112,10 @@ def test_exchange_market_one_to_one():
     until the maintainer regenerates it post-merge.
     """
     import pandas as pd
+    from pathlib import Path
 
-    df = pd.read_csv("database/equities.csv", dtype=str)
+    csv_path = Path(__file__).resolve().parents[1] / "database" / "equities.csv"
+    df = pd.read_csv(csv_path, dtype=str)
     pairs = df.dropna(subset=["exchange", "market"])
 
     by_exchange = pairs.groupby("exchange")["market"].nunique()
@@ -117,7 +125,8 @@ def test_exchange_market_one_to_one():
     ), f"Exchange codes mapping to multiple market labels: {ambiguous.to_dict()}"
 
 
-def test_search(recorder):
+def test_search(recorder: Recorder) -> None:
+    """Verify search() output for representative equity queries."""
     recorder.capture(equities.search(summary="apple").iloc[:5])
     recorder.capture(equities.search(index="AAPL").iloc[:5])
     recorder.capture(equities.search(country="Canada").iloc[:5])

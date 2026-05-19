@@ -92,3 +92,8 @@ disable_error_code = "misc, valid-type, attr-defined, index"
 filterwarnings = [
     "ignore::pytest.PytestAssertRewriteWarning:",
 ]
+testpaths = ["tests"]
+addopts = "--strict-markers"
+markers = [
+    "record_stdout: capture and snapshot stdout output for the marked test",
+]

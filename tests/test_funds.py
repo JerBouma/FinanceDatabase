@@ -1,14 +1,19 @@
 """Funds Test Module"""
 
+from __future__ import annotations
+
 import financedatabase as fd
 
-funds = fd.Funds()
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from tests.conftest import Recorder
+
+funds = fd.Funds(use_local_location=True)
 
 
-# pylint: disable=missing-function-docstring
-
-
-def test_select(recorder):
+def test_select(recorder: Recorder) -> None:
+    """Verify select() output for representative fund filter combinations."""
     recorder.capture(funds.select().iloc[:5])
     recorder.capture(funds.select(currency="TWD").iloc[:5])
     recorder.capture(funds.select(category="Energy").iloc[:5])
@@ -18,7 +23,8 @@ def test_select(recorder):
     recorder.capture(funds.select(exchange="FRA", category="Energy").iloc[:5])
 
 
-def test_show_options(recorder):
+def test_show_options(recorder: Recorder) -> None:
+    """Verify show_options() returns the expected option values for fund."""
     recorder.capture(list(funds.show_options()))
     recorder.capture(list(funds.show_options(selection="category")))
     recorder.capture(list(funds.show_options(selection="category_group")))
@@ -29,7 +35,8 @@ def test_show_options(recorder):
     recorder.capture(list(funds.show_options(category="Energy")))
 
 
-def test_search(recorder):
+def test_search(recorder: Recorder) -> None:
+    """Verify search() output for representative fund queries."""
     recorder.capture(funds.search(summary="Shares").iloc[:5])
     recorder.capture(funds.search(index="GSPX").iloc[:5])
     recorder.capture(funds.search(category="Utilities").iloc[:5])
