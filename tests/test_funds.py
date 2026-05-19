@@ -14,6 +14,9 @@ funds = fd.Funds(use_local_location=True)
 
 def test_select(recorder: Recorder) -> None:
     """Verify select() output for representative fund filter combinations."""
+    smoke = funds.select()
+    assert not smoke.empty
+    assert "currency" in smoke.columns
     recorder.capture(funds.select().iloc[:5])
     recorder.capture(funds.select(currency="TWD").iloc[:5])
     recorder.capture(funds.select(category="Energy").iloc[:5])
@@ -44,3 +47,12 @@ def test_search(recorder: Recorder) -> None:
     recorder.capture(funds.search(family="ivari").iloc[:5])
     recorder.capture(funds.search(exchange="NZE").iloc[:5])
     recorder.capture(funds.search(summary="Pension", category="Energy").iloc[:5])
+
+
+def test_select_with_invalid_value_raises() -> None:
+    """`select(<filter>=...)` raises ValueError for values not in show_options()."""
+    import pytest
+
+    for col in ["category_group", "category", "family", "currency", "exchange"]:
+        with pytest.raises(ValueError, match="not available in the database"):
+            funds.select(**{col: "__definitely_not_a_real_value__"})

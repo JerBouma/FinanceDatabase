@@ -26,4 +26,4 @@ jobs:
               run: poetry install
             - name: Run tests
               run: |
-                    poetry run pytest tests/
+                    poetry run pytest tests/ --cov=financedatabase --cov-report=term-missing

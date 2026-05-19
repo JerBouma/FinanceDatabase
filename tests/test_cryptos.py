@@ -14,6 +14,9 @@ cryptos = fd.Cryptos(use_local_location=True)
 
 def test_select(recorder: Recorder) -> None:
     """Verify select() output for representative cryptocurrency filter combinations."""
+    smoke = cryptos.select()
+    assert not smoke.empty
+    assert "currency" in smoke.columns
     recorder.capture(cryptos.select().iloc[:5])
     recorder.capture(cryptos.select(currency="USD").iloc[:5])
     recorder.capture(cryptos.select(cryptocurrency="ETC").iloc[:5])
@@ -39,3 +42,12 @@ def test_search(recorder: Recorder) -> None:
     recorder.capture(cryptos.search(index="ETC").iloc[:5])
     recorder.capture(cryptos.search(cryptocurrency="AAVE").iloc[:5])
     recorder.capture(cryptos.search(currency="USD").iloc[:5])
+
+
+def test_select_with_invalid_value_raises() -> None:
+    """`select(<filter>=...)` raises ValueError for values not in show_options()."""
+    import pytest
+
+    for col in ["cryptocurrency", "currency"]:
+        with pytest.raises(ValueError, match="not available in the database"):
+            cryptos.select(**{col: "__definitely_not_a_real_value__"})
