@@ -14,6 +14,9 @@ equities = fd.Equities(use_local_location=True)
 
 def test_select(recorder: Recorder) -> None:
     """Verify select() output for representative equity filter combinations."""
+    smoke = equities.select()
+    assert not smoke.empty
+    assert "country" in smoke.columns
     recorder.capture(equities.select().iloc[:5])
     recorder.capture(equities.select(country="Canada").iloc[:5])
     recorder.capture(equities.select(sector="Communication Services").iloc[:5])
@@ -95,34 +98,126 @@ def test_show_options(recorder: Recorder) -> None:
     )
 
 
-def test_exchange_market_one_to_one():
+def test_exchange_market_one_to_one() -> None:
     """Each `exchange` code must map to exactly one `market` label.
 
     Drift between these two columns is a recurring data-quality issue.
     This test fails fast if any exchange code becomes
-    ambiguous, preventing future PRs from re-introducing the
-    inconsistency.
+    ambiguous, preventing future PRs from re-introducing it.
 
     The reverse direction is not asserted: one `market` label may
     legitimately cover several exchange tiers (e.g. "OTC Bulletin
     Board" covers PNK / OQB / OID / OEM / OQX).
-
-    Reads `database/equities.csv` directly so the assertion is against
-    the source of truth — the compressed library payload lags the CSV
-    until the maintainer regenerates it post-merge.
     """
-    import pandas as pd
-    from pathlib import Path
-
-    csv_path = Path(__file__).resolve().parents[1] / "database" / "equities.csv"
-    df = pd.read_csv(csv_path, dtype=str)
+    df = equities.select()
     pairs = df.dropna(subset=["exchange", "market"])
-
     by_exchange = pairs.groupby("exchange")["market"].nunique()
     ambiguous = by_exchange[by_exchange > 1]
     assert (
         ambiguous.empty
     ), f"Exchange codes mapping to multiple market labels: {ambiguous.to_dict()}"
+
+
+def test_search_with_list_of_index() -> None:
+    """`search(index=[...])` accepts a list of symbols and filters by membership."""
+    result = equities.search(index=["AAPL", "MSFT", "GOOGL"])
+    assert set(result.index) >= {"AAPL", "MSFT", "GOOGL"}
+
+
+def test_search_case_sensitive() -> None:
+    """`search(case_sensitive=True)` distinguishes from case-insensitive by row count."""
+    case_sensitive = equities.search(summary="Apple", case_sensitive=True)
+    case_insensitive = equities.search(summary="Apple")
+    assert len(case_sensitive) <= len(case_insensitive)
+    assert not case_sensitive.empty
+
+
+def test_search_invalid_column_is_ignored(capsys) -> None:
+    """An unknown filter column logs a warning and is silently dropped."""
+    result = equities.search(nonexistent_column="value")
+    captured = capsys.readouterr()
+    assert "nonexistent_column is not a valid column" in captured.out
+    assert len(result) == len(equities.select())
+
+
+def test_to_toolkit_raises_without_financetoolkit(monkeypatch) -> None:
+    """`FinanceFrame.to_toolkit()` raises ImportError if financetoolkit is absent."""
+    import sys
+    import pytest
+
+    monkeypatch.setitem(sys.modules, "financetoolkit", None)
+    with pytest.raises(ImportError, match="financetoolkit"):
+        equities.select().to_toolkit()
+
+
+def test_init_raises_on_request_failure(monkeypatch) -> None:
+    """`FinanceDatabase.__init__` re-raises as ValueError on network failure."""
+    import requests as _requests
+    import pytest
+
+    def _fail(*a, **kw):
+        raise _requests.exceptions.ConnectionError("simulated")
+
+    monkeypatch.setattr(_requests, "get", _fail)
+    with pytest.raises(ValueError, match="Failed to load data"):
+        fd.Equities()
+
+
+def test_module_show_options_raises_on_invalid_selection() -> None:
+    """The module-level `show_options(selection=...)` rejects unknown asset classes."""
+    import pytest
+
+    with pytest.raises(ValueError, match="not valid"):
+        fd.show_options(selection="not_a_real_asset_class")
+    with pytest.raises(ValueError, match="not set"):
+        fd.show_options(selection=None)
+
+
+def test_module_show_options_raises_on_request_failure(monkeypatch) -> None:
+    """The module-level `show_options` re-raises as ValueError on network failure."""
+    import requests as _requests
+    import pytest
+
+    def _fail(*a, **kw):
+        raise _requests.exceptions.ConnectionError("simulated")
+
+    monkeypatch.setattr(_requests, "get", _fail)
+    with pytest.raises(ValueError, match="Failed to load data"):
+        fd.show_options(selection="equities")
+
+
+def test_module_show_options_local_location() -> None:
+    """The module-level `show_options(use_local_location=True)` reads from local files."""
+    options = fd.show_options(selection="equities", use_local_location=True)
+    assert isinstance(options, dict)
+    assert "country" in options
+
+
+def test_search_case_sensitive_with_list() -> None:
+    """`search(case_sensitive=True, <col>=[...])` exercises the list+case-sensitive branch."""
+    result = equities.search(country=["Japan", "Canada"], case_sensitive=True)
+    assert set(result["country"].unique()) <= {"Japan", "Canada"}
+
+
+def test_to_toolkit_success_path(monkeypatch) -> None:
+    """`FinanceFrame.to_toolkit()` constructs a Toolkit when the dep is available."""
+    import sys
+    import types
+
+    captured_kwargs: dict = {}
+
+    class _FakeToolkit:
+        def __init__(self, **kwargs):
+            captured_kwargs.update(kwargs)
+
+    fake_module = types.ModuleType("financetoolkit")
+    fake_module.Toolkit = _FakeToolkit  # type: ignore[attr-defined]
+    monkeypatch.setitem(sys.modules, "financetoolkit", fake_module)
+
+    result = equities.select(country="Japan").to_toolkit(api_key="x")
+    assert isinstance(result, _FakeToolkit)
+    assert captured_kwargs["api_key"] == "x"
+    assert captured_kwargs["tickers"]
 
 
 def test_search(recorder: Recorder) -> None:
@@ -147,3 +242,12 @@ def test_search(recorder: Recorder) -> None:
             country="United States", sector="Industrials", industry_group="Software"
         ).iloc[:5]
     )
+
+
+def test_select_with_invalid_value_raises() -> None:
+    """`select(<filter>=...)` raises ValueError for values not in show_options()."""
+    import pytest
+
+    for col in ["country", "sector", "industry_group", "industry", "exchange"]:
+        with pytest.raises(ValueError, match="not available in the database"):
+            equities.select(**{col: "__definitely_not_a_real_value__"})

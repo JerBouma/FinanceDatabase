@@ -14,6 +14,8 @@ currencies = fd.Currencies(use_local_location=True)
 
 def test_select(recorder: Recorder) -> None:
     """Verify select() output for representative currency filter combinations."""
+    smoke = currencies.select()
+    assert not smoke.empty
     recorder.capture(currencies.select().iloc[:5])
     recorder.capture(currencies.select(base_currency="USD").iloc[:5])
     recorder.capture(currencies.select(quote_currency="EUR").iloc[:5])
@@ -43,3 +45,12 @@ def test_search(recorder: Recorder) -> None:
     recorder.capture(currencies.search(index="USD").iloc[:5])
     recorder.capture(currencies.search(base_currency="CAD").iloc[:5])
     recorder.capture(currencies.search(quote_currency="EUR").iloc[:5])
+
+
+def test_select_with_invalid_value_raises() -> None:
+    """`select(<filter>=...)` raises ValueError for values not in show_options()."""
+    import pytest
+
+    for col in ["base_currency", "quote_currency"]:
+        with pytest.raises(ValueError, match="not available in the database"):
+            currencies.select(**{col: "__definitely_not_a_real_value__"})

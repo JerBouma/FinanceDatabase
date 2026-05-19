@@ -14,6 +14,9 @@ etfs = fd.ETFs(use_local_location=True)
 
 def test_select(recorder: Recorder) -> None:
     """Verify select() output for representative ETF filter combinations."""
+    smoke = etfs.select()
+    assert not smoke.empty
+    assert "currency" in smoke.columns
     recorder.capture(etfs.select().iloc[:5])
     recorder.capture(etfs.select(category="Blend").iloc[:5])
     recorder.capture(etfs.select(category_group="Materials").iloc[:5])
@@ -45,3 +48,12 @@ def test_search(recorder: Recorder) -> None:
     recorder.capture(
         etfs.search(summary="North America", category="Financials").iloc[:5]
     )
+
+
+def test_select_with_invalid_value_raises() -> None:
+    """`select(<filter>=...)` raises ValueError for values not in show_options()."""
+    import pytest
+
+    for col in ["category_group", "category", "family", "currency", "exchange"]:
+        with pytest.raises(ValueError, match="not available in the database"):
+            etfs.select(**{col: "__definitely_not_a_real_value__"})

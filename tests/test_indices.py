@@ -14,6 +14,9 @@ indices = fd.Indices(use_local_location=True)
 
 def test_select(recorder: Recorder) -> None:
     """Verify select() output for representative index filter combinations."""
+    smoke = indices.select()
+    assert not smoke.empty
+    assert "currency" in smoke.columns
     recorder.capture(indices.select().iloc[:5])
     recorder.capture(indices.select(currency="NOK").iloc[:5])
     recorder.capture(indices.select(category="Industrials").iloc[:5])
@@ -41,3 +44,12 @@ def test_search(recorder: Recorder) -> None:
     recorder.capture(indices.search(category_group="Energy").iloc[:5])
     recorder.capture(indices.search(exchange="SHH").iloc[:5])
     recorder.capture(indices.search(summary="S&P", category="Financials").iloc[:5])
+
+
+def test_select_with_invalid_value_raises() -> None:
+    """`select(<filter>=...)` raises ValueError for values not in show_options()."""
+    import pytest
+
+    for col in ["currency", "exchange"]:
+        with pytest.raises(ValueError, match="not available in the database"):
+            indices.select(**{col: "__definitely_not_a_real_value__"})
