@@ -54,3 +54,25 @@ def test_no_symbol_collisions_across_asset_classes() -> None:
         f"  {a} <-> {b}: {sorted(syms)[:5]}{' ...' if len(syms) > 5 else ''} ({len(syms)} total)"
         for (a, b), syms in collisions.items()
     )
+
+
+def test_no_isin_collisions_across_asset_classes() -> None:
+    """A given `isin` must belong to at most one asset class.
+
+    ISIN is a unique identifier for a tradable security; the same code
+    appearing in both `equities.csv` and `etfs.csv` means one of the two
+    rows has been mis-tagged with an ISIN that rightfully belongs to the
+    other security. Only `equities.csv` and `etfs.csv` track ISIN today
+    (funds/indices/currencies/cryptos/moneymarkets don't), so this check
+    is restricted to that pair.
+    """
+    eq = _load("equities")
+    etfs = _load("etfs")
+    eq_isins = set(eq["isin"].dropna()) if "isin" in eq.columns else set()
+    etf_isins = set(etfs["isin"].dropna()) if "isin" in etfs.columns else set()
+    shared = eq_isins & etf_isins
+    assert not shared, (
+        "ISINs appear in both equities.csv and etfs.csv "
+        f"({len(shared)} total): {sorted(shared)[:5]}"
+        f"{' ...' if len(shared) > 5 else ''}"
+    )
