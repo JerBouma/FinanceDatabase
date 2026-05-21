@@ -23,16 +23,19 @@ Some key statistics of the database:
 
 | Product           | Quantity   | Sectors    | Industries    | Countries | Exchanges |
 | ----------------- | ---------- | ---------- | ------------- | --------- | --------- |
-| Equities          | 158.429    | 12         | 63            | 111       | 83        | 
-| ETFs              | 36.786     | 295        | 22            | 111       | 53        |
-| Funds             | 57.881     | 1541       | 52            | 111       | 34        |
+| Equities          | 160.113    | 11         | 62            | 113       | 84        |
+
+| Product           | Quantity   | Families   | Categories    | Exchanges |
+| ----------------- | ---------- | ---------- | ------------- | --------- |
+| ETFs              | 36.485     | 320        | 51            | 51        |
+| Funds             | 57.853     | 1.540      | 74            | 33        |
 
 | Product           | Quantity  | Category              |
 | ----------------- | --------- | --------------------- |
 | Currencies        | 2.556     | 175 Currencies        |
-| Cryptocurrencies  | 3.367     | 352 Cryptocurrencies  |
-| Indices           | 91.183    | 64 Exchanges          |
-| Money Markets     | 1.367     | 3 Exchanges           |
+| Cryptocurrencies  | 3.367     | 351 Cryptocurrencies  |
+| Indices           | 91.178    | 63 Exchanges          |
+| Money Markets     | 1.367     | 2 Exchanges           |
 
 The Finance Database is used within or referenced by:
 

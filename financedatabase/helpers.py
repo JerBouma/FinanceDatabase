@@ -2,6 +2,7 @@
 
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import requests
 
@@ -146,12 +147,15 @@ class FinanceDatabase:
 
         return FinanceFrame(data_filter)
 
-    def show_options(self) -> pd.Series:
+    def show_options(self) -> pd.Index | dict | np.ndarray:
         """
         Get all available column options for the specific asset class.
 
         Returns:
-            Series containing all available column names for the asset class.
+            Index containing all available column names for the asset class.
+            Subclasses may override this method to return a richer payload
+            (e.g. a dict keyed by column name, or a 1-D ndarray of unique
+            values for a single column).
         """
         return self.data.columns
 

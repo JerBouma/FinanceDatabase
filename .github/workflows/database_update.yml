@@ -426,8 +426,119 @@ jobs:
           if: steps.run.outputs.status != '0'
           run: exit "${{ steps.run.outputs.status }}"
 
+  Update-README-Statistics:
+    needs: [Add-New-Ticker, Update-Compression-Files, Update-Categorization-Files]
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3
+      - name: pull changes
+        run: git pull https://${{secrets.PAT}}@github.com/JerBouma/FinanceDatabase.git main
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+      - run: pip install pandas
+      - name: Refresh the statistics tables in README.md
+        uses: jannekem/run-python-script-action@v1
+        with:
+          script: |
+            import re
+            from pathlib import Path
+            import pandas as pd
+
+            def _n(x: int) -> str:
+                """Format an integer with a thousand-separator dot (e.g. 160.113)."""
+                return f"{x:,}".replace(",", ".")
+
+            # Table A: Equities — Quantity, Sectors, Industries, Countries, Exchanges
+            eq = pd.read_csv("database/equities.csv", dtype=str)
+            table_a_row = (
+                "Equities",
+                _n(len(eq)),
+                _n(eq["sector"].nunique()),
+                _n(eq["industry"].nunique()),
+                _n(eq["country"].nunique()),
+                _n(eq["exchange"].nunique()),
+            )
+
+            # Table B: ETFs / Funds — Quantity, Families, Categories, Exchanges
+            # (no Countries column: ETF/Fund 'country' is semantically the investment
+            # scope, not a HQ — not derivable from listing exchange alone.)
+            table_b_rows = []
+            for asset in ("ETFs", "Funds"):
+                df = pd.read_csv(f"database/{asset.lower()}.csv", dtype=str)
+                table_b_rows.append((
+                    asset,
+                    _n(len(df)),
+                    _n(df["family"].nunique()),
+                    _n(df["category"].nunique()),
+                    _n(df["exchange"].nunique()),
+                ))
+
+            # Table C: Currencies / Cryptocurrencies / Indices / Money Markets
+            table_c_rows = []
+            for asset, fname, col, label in [
+                ("Currencies",       "currencies.csv",   "quote_currency", "Currencies"),
+                ("Cryptocurrencies", "cryptos.csv",      "cryptocurrency", "Cryptocurrencies"),
+                ("Indices",          "indices.csv",      "exchange",       "Exchanges"),
+                ("Money Markets",    "moneymarkets.csv", "exchange",       "Exchanges"),
+            ]:
+                df = pd.read_csv(f"database/{fname}", dtype=str)
+                table_c_rows.append((asset, _n(len(df)), f"{_n(df[col].nunique())} {label}"))
+
+            def _fmt_table_a(row):
+                h = "| Product           | Quantity   | Sectors    | Industries    | Countries | Exchanges |\n"
+                h += "| ----------------- | ---------- | ---------- | ------------- | --------- | --------- |"
+                a, q, s, i, c, e = row
+                b = f"| {a:<17} | {q:<10} | {s:<10} | {i:<13} | {c:<9} | {e:<9} |"
+                return h + "\n" + b
+
+            def _fmt_table_b(rows):
+                h = "| Product           | Quantity   | Families   | Categories    | Exchanges |\n"
+                h += "| ----------------- | ---------- | ---------- | ------------- | --------- |"
+                b = "\n".join(
+                    f"| {a:<17} | {q:<10} | {f:<10} | {c:<13} | {e:<9} |"
+                    for (a, q, f, c, e) in rows
+                )
+                return h + "\n" + b
+
+            def _fmt_table_c(rows):
+                h = "| Product           | Quantity  | Category              |\n"
+                h += "| ----------------- | --------- | --------------------- |"
+                b = "\n".join(
+                    f"| {a:<17} | {q:<9} | {c:<21} |"
+                    for (a, q, c) in rows
+                )
+                return h + "\n" + b
+
+            readme = Path("README.md")
+            text = readme.read_text(encoding="utf-8")
+            # Replace the existing combined "Equities/ETFs/Funds" table with two tables (A + B).
+            text = re.sub(
+                r"\| Product\s+\| Quantity\s+\| Sectors[^\n]*\| Industries[^\n]*\n\|[^\n]*\n(?:\|[^\n]*\n){3}",
+                _fmt_table_a(table_a_row) + "\n\n" + _fmt_table_b(table_b_rows) + "\n",
+                text,
+                count=1,
+            )
+            text = re.sub(
+                r"\| Product\s+\| Quantity\s+\| Category[^\n]*\n\|[^\n]*\n(?:\|[^\n]*\n){4}",
+                _fmt_table_c(table_c_rows) + "\n",
+                text,
+                count=1,
+            )
+            readme.write_text(text, encoding="utf-8")
+            print("README.md statistics tables refreshed.")
+      - name: Commit README update
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add README.md
+          git diff-index --quiet HEAD || git commit -m "Update README statistics"
+          git push
+
   Check-GICS-Categorisation:
-    needs:  [Add-New-Ticker, Update-Compression-Files, Update-Categorization-Files]
+    needs:  [Add-New-Ticker, Update-Compression-Files, Update-Categorization-Files, Update-README-Statistics]
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
