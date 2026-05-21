@@ -34,7 +34,7 @@ Some key statistics of the database:
 | ----------------- | --------- | --------------------- |
 | Currencies        | 2.556     | 175 Currencies        |
 | Cryptocurrencies  | 3.367     | 351 Cryptocurrencies  |
-| Indices           | 91.178    | 63 Exchanges          |
+| Indices           | 91.181    | 63 Exchanges          |
 | Money Markets     | 1.367     | 2 Exchanges           |
 
 The Finance Database is used within or referenced by:
