@@ -482,6 +482,7 @@ This section is meant to thank those that contributed to the project. Looking to
 
 | User              | Contribution |
 | ----------------- | ------------ | 
+| [dokson](https://github.com/dokson) | Made very significant contributions to the quality of the database in #138, #139, #140, #141, #142, #143, #144, #145, #146 and #147. |
 | [desaijimmy](https://github.com/desaijimmy)        | Made changes to Equities dataset including the Split of Daimler to Mercedes-Benz and Daimler Trucks |
 | [nindogo](https://github.com/nindogo)        | Introduced a variety of new equities from the Nairobi Securities Exchange and introduced the country Kenya into the dataset. |
 | [colin99d](https://github.com/colin99d)        | Helped in the conversion of the Finance Database package to Object-Orientated, making the code much more efficient. |
