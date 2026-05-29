@@ -1,7 +1,6 @@
 """Indices Module"""
 
 import numpy as np
-import pandas as pd
 
 from .helpers import FinanceDatabase, FinanceFrame
 
@@ -28,7 +27,8 @@ class Indices(FinanceDatabase):
         category: str | list | None = None,
         currency: str | list | None = None,
         exchange: str | list | None = None,
-    ) -> pd.DataFrame:
+        mic: str | list | None = None,
+    ) -> FinanceFrame:
         """
         Select indices based on specified filter criteria.
 
@@ -44,13 +44,15 @@ class Indices(FinanceDatabase):
                 Default is None, which returns all currencies.
             exchange (str | list, optional): Filter by exchange.
                 Default is None, which returns all exchanges.
+            mic (str | list, optional): Filter by ISO 10383 MIC code.
+                Default is None, which returns all MIC codes.
 
         Raises:
             ValueError: If the specified category group, category, currency, or exchange
                 is not available in the database.
 
         Returns:
-            pd.DataFrame: DataFrame containing indices data matching the specified criteria.
+            FinanceFrame: DataFrame containing indices data matching the specified criteria.
         """
         indices = self.data.copy(deep=True)
 
@@ -115,6 +117,19 @@ class Indices(FinanceDatabase):
                         "Please check the available exchanges using the 'show_options' method."
                     )
             indices = indices[indices["exchange"].str.lower().isin(exchanges_lower)]
+        if mic:
+            mics = [mic] if isinstance(mic, str) else mic
+            mics_lower = [mic.lower() for mic in mics]
+            options_lower = [
+                option.lower() for option in self.show_options(selection="mic")
+            ]
+            for mic_lower, mic_actual in zip(mics_lower, mics):
+                if mic_lower not in options_lower:
+                    raise ValueError(
+                        f"The MIC '{mic_actual}' is not available in the database. "
+                        "Please check the available MICs using the 'show_options' method."
+                    )
+            indices = indices[indices["mic"].str.lower().isin(mics_lower)]
 
         return FinanceFrame(indices)
 
@@ -125,6 +140,7 @@ class Indices(FinanceDatabase):
         category: str | list | None = None,
         currency: str | list | None = None,
         exchange: str | list | None = None,
+        mic: str | list | None = None,
     ) -> dict | np.ndarray:
         """
         Show available options for the selection criteria.
@@ -144,6 +160,8 @@ class Indices(FinanceDatabase):
                 Default is None, which returns all currencies.
             exchange (str | list, optional): Filter by exchange.
                 Default is None, which returns all exchanges.
+            mic (str | list, optional): Filter by ISO 10383 MIC code.
+                Default is None, which returns all MIC codes.
 
         Raises:
             ValueError: If the specified selection is not valid or if the specified
@@ -154,7 +172,13 @@ class Indices(FinanceDatabase):
                 If selection is None, returns a dictionary with unique values for all fields.
                 If selection is specified, returns an array of unique values for that field.
         """
-        selection_values = ["category_group", "category", "currency", "exchange"]
+        selection_values = [
+            "category_group",
+            "category",
+            "currency",
+            "exchange",
+            "mic",
+        ]
 
         if selection is not None and selection not in selection_values:
             raise ValueError(
@@ -167,6 +191,7 @@ class Indices(FinanceDatabase):
             category=category,
             currency=currency,
             exchange=exchange,
+            mic=mic,
         )
 
         return (

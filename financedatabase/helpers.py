@@ -1,6 +1,8 @@
 """Helper Module for the Finance Database package."""
 
+from io import BytesIO
 from pathlib import Path
+from typing import Any
 
 import numpy as np
 import pandas as pd
@@ -64,7 +66,7 @@ class FinanceDatabase:
                 response.raise_for_status()
 
                 self.data = pd.read_csv(
-                    pd.io.common.BytesIO(response.content),
+                    BytesIO(response.content),
                     compression="bz2",
                     index_col=0,
                 )
@@ -76,7 +78,7 @@ class FinanceDatabase:
                 "Sometimes Google Colab is also the culprit."
             ) from error
 
-    def search(self, **kwargs: str) -> pd.DataFrame:
+    def search(self, **kwargs: Any) -> pd.DataFrame:
         """
         Search for specific data based on provided criteria.
 
@@ -229,7 +231,8 @@ class FinanceFrame(pd.DataFrame):
             ImportError: If FinanceToolkit is not installed.
         """
         try:
-            from financetoolkit import (  # pylint: disable=import-outside-toplevel
+            # Lazy import: financetoolkit is an optional dependency.
+            from financetoolkit import (  # noqa: PLC0415 # pylint: disable=import-outside-toplevel
                 Toolkit,
             )
         except ImportError as exc:
@@ -250,7 +253,7 @@ class FinanceFrame(pd.DataFrame):
 
         toolkit = Toolkit(
             tickers=symbols,
-            api_key=api_key,
+            api_key=api_key or "",
             start_date=start_date,
             end_date=end_date,
             quarterly=quarterly,
@@ -321,13 +324,18 @@ def show_options(
 
     try:
         if use_local_location:
-            categories_df = pd.read_csv(the_path, compression="gzip", index_col=0)
+            categories_df = pd.read_csv(
+                the_path, compression="gzip", index_col=0, low_memory=False
+            )
         else:
             response = requests.get(the_path, headers=HEADERS, timeout=60)
             response.raise_for_status()
 
             categories_df = pd.read_csv(
-                pd.io.common.BytesIO(response.content), compression="gzip", index_col=0
+                BytesIO(response.content),
+                compression="gzip",
+                index_col=0,
+                low_memory=False,
             )
     except requests.exceptions.RequestException as error:
         raise ValueError(

@@ -1,7 +1,6 @@
 "Currencies Module"
 
 import numpy as np
-import pandas as pd
 
 from .helpers import FinanceDatabase, FinanceFrame
 
@@ -24,7 +23,7 @@ class Currencies(FinanceDatabase):
         self,
         base_currency: str | list | None = None,
         quote_currency: str | list | None = None,
-    ) -> pd.DataFrame:
+    ) -> FinanceFrame:
         """
         Retrieve currency data based on specified criteria.
 
@@ -43,7 +42,7 @@ class Currencies(FinanceDatabase):
                 Please check the available base and quote currencies using the 'show_options' method.
 
         Returns:
-            pd.DataFrame:
+            FinanceFrame:
                 A DataFrame containing currency data matching the specified input criteria.
         """
         currencies = self.data.copy(deep=True)

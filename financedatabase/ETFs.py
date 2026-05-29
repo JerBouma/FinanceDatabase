@@ -1,7 +1,6 @@
 "ETFs Module"
 
 import numpy as np
-import pandas as pd
 
 from .helpers import FinanceDatabase, FinanceFrame
 
@@ -30,8 +29,9 @@ class ETFs(FinanceDatabase):
         family: str | list | None = None,
         currency: str | list | None = None,
         exchange: str | list | None = None,
+        mic: str | list | None = None,
         only_primary_listing: bool = False,
-    ) -> pd.DataFrame:
+    ) -> FinanceFrame:
         """
         Retrieve ETF data based on specified criteria.
 
@@ -50,6 +50,8 @@ class ETFs(FinanceDatabase):
                 If not provided, returns data for all currencies.
             exchange (str | list, optional): Specific exchange to filter ETFs.
                 If not provided, returns data for all exchanges.
+            mic (str | list | None): Specific ISO 10383 MIC code or list of MIC codes to filter
+                ETFs. If not provided, returns data for all MIC codes.
             only_primary_listing (bool, optional): If True, returns only primary listings.
                 Default is False, which returns all listings.
 
@@ -59,7 +61,7 @@ class ETFs(FinanceDatabase):
                 options using the 'show_options' method.
 
         Returns:
-            pd.DataFrame:
+            FinanceFrame:
                 A DataFrame containing ETF data matching the specified input criteria.
         """
         etfs = self.data.copy(deep=True)
@@ -137,6 +139,19 @@ class ETFs(FinanceDatabase):
                         "Please check the available exchanges using the 'show_options' method."
                     )
             etfs = etfs[etfs["exchange"].str.lower().isin(exchanges_lower)]
+        if mic:
+            mics = [mic] if isinstance(mic, str) else mic
+            mics_lower = [mic.lower() for mic in mics]
+            options_lower = [
+                option.lower() for option in self.show_options(selection="mic")
+            ]
+            for mic_lower, mic_actual in zip(mics_lower, mics):
+                if mic_lower not in options_lower:
+                    raise ValueError(
+                        f"The MIC '{mic_actual}' is not available in the database. "
+                        "Please check the available MICs using the 'show_options' method."
+                    )
+            etfs = etfs[etfs["mic"].str.lower().isin(mics_lower)]
 
         if only_primary_listing:
             only_primary_listings_etfs = etfs[~etfs.index.str.contains(r"\.", na=False)]
@@ -159,6 +174,7 @@ class ETFs(FinanceDatabase):
         family: str | list | None = None,
         currency: str | list | None = None,
         exchange: str | list | None = None,
+        mic: str | list | None = None,
     ) -> dict | np.ndarray:
         """
         Retrieve all options for the specified selection.
@@ -181,6 +197,8 @@ class ETFs(FinanceDatabase):
                 If not provided, returns data for all currencies.
             exchange (str | list | None): Specific exchange to filter options.
                 If not provided, returns data for all exchanges.
+            mic (str | list | None): Specific ISO 10383 MIC code to filter options.
+                If not provided, returns data for all MIC codes.
 
         Raises:
             ValueError: If the selection variable provided is not valid.
@@ -197,6 +215,7 @@ class ETFs(FinanceDatabase):
             "category",
             "family",
             "exchange",
+            "mic",
         ]
 
         if selection is not None and selection not in selection_values:
@@ -211,6 +230,7 @@ class ETFs(FinanceDatabase):
             family=family,
             currency=currency,
             exchange=exchange,
+            mic=mic,
             only_primary_listing=False,
         )
 
