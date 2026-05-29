@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import financedatabase as fd
 
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
     from tests.conftest import Recorder
@@ -59,6 +59,17 @@ def test_select_with_invalid_value_raises() -> None:
         "family",
         "currency",
         "exchange",
+        "mic",
     ]:
+        kwargs: dict[str, Any] = {col: "__definitely_not_a_real_value__"}
         with pytest.raises(ValueError, match="not available in the database"):
-            funds.select(**{col: "__definitely_not_a_real_value__"})
+            funds.select(**kwargs)
+
+
+def test_select_mic() -> None:
+    """`select(mic=...)` filters funds by their ISO 10383 MIC code."""
+    assert "mic" in funds.show_options()
+    mic = list(funds.show_options(selection="mic"))[0]
+    result = funds.select(mic=mic)
+    assert not result.empty
+    assert (result["mic"] == mic).all()

@@ -50,6 +50,15 @@ def test_select_with_invalid_value_raises() -> None:
     """`select(<filter>=...)` raises ValueError for values not in show_options()."""
     import pytest
 
-    for col in ["currency", "exchange"]:
+    for col in ["currency", "exchange", "mic"]:
         with pytest.raises(ValueError, match="not available in the database"):
             indices.select(**{col: "__definitely_not_a_real_value__"})
+
+
+def test_select_mic() -> None:
+    """`select(mic=...)` filters indices by their ISO 10383 MIC code."""
+    assert "mic" in indices.show_options()
+    mic = list(indices.show_options(selection="mic"))[0]
+    result = indices.select(mic=mic)
+    assert not result.empty
+    assert (result["mic"] == mic).all()

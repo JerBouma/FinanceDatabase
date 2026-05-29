@@ -1,7 +1,6 @@
 "Funds Module"
 
 import numpy as np
-import pandas as pd
 
 from .helpers import FinanceDatabase, FinanceFrame
 
@@ -28,8 +27,9 @@ class Funds(FinanceDatabase):
         family: str | list | None = None,
         currency: str | list | None = None,
         exchange: str | list | None = None,
+        mic: str | list | None = None,
         only_primary_listing: bool = False,
-    ) -> pd.DataFrame:
+    ) -> FinanceFrame:
         """
         Retrieve fund data based on specified criteria.
 
@@ -48,11 +48,13 @@ class Funds(FinanceDatabase):
                 If not provided, returns data for all currencies.
             exchange (str | list, optional): Specific exchange to filter funds.
                 If not provided, returns data for all exchanges.
+            mic (str | list | None): Specific ISO 10383 MIC code or list of MIC codes to filter
+                funds. If not provided, returns data for all MIC codes.
             only_primary_listing (bool, optional): Whether to return only primary listings.
                 Default is False, which returns all funds.
 
         Returns:
-            pd.DataFrame:
+            FinanceFrame:
                 A DataFrame containing fund data matching the specified input criteria.
         """
         funds = self.data.copy(deep=True)
@@ -131,6 +133,19 @@ class Funds(FinanceDatabase):
                         "Please check the available exchanges using the 'show_options' method."
                     )
             funds = funds[funds["exchange"].str.lower().isin(exchanges_lower)]
+        if mic:
+            mics = [mic] if isinstance(mic, str) else mic
+            mics_lower = [mic.lower() for mic in mics]
+            options_lower = [
+                option.lower() for option in self.show_options(selection="mic")
+            ]
+            for mic_lower, mic_actual in zip(mics_lower, mics):
+                if mic_lower not in options_lower:
+                    raise ValueError(
+                        f"The MIC '{mic_actual}' is not available in the database. "
+                        "Please check the available MICs using the 'show_options' method."
+                    )
+            funds = funds[funds["mic"].str.lower().isin(mics_lower)]
 
         if only_primary_listing:
             only_primary_listings_funds = funds[
@@ -155,6 +170,7 @@ class Funds(FinanceDatabase):
         family: str | list | None = None,
         currency: str | list | None = None,
         exchange: str | list | None = None,
+        mic: str | list | None = None,
     ) -> dict | np.ndarray:
         """
         Retrieve all options for the specified selection.
@@ -177,6 +193,8 @@ class Funds(FinanceDatabase):
                 If not provided, returns data for all currencies.
             exchange (str | list | None): Specific exchange to filter options.
                 If not provided, returns data for all exchanges.
+            mic (str | list | None): Specific ISO 10383 MIC code to filter options.
+                If not provided, returns data for all MIC codes.
 
         Raises:
             ValueError: If the selection variable provided is not valid. Choose from:
@@ -193,6 +211,7 @@ class Funds(FinanceDatabase):
             "category",
             "family",
             "exchange",
+            "mic",
         ]
         if selection is not None and selection not in selection_values:
             raise ValueError(
@@ -206,6 +225,7 @@ class Funds(FinanceDatabase):
             family=family,
             currency=currency,
             exchange=exchange,
+            mic=mic,
             only_primary_listing=False,
         )
 

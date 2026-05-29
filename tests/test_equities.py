@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import financedatabase as fd
 
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
     from tests.conftest import Recorder
@@ -248,6 +248,43 @@ def test_select_with_invalid_value_raises() -> None:
     """`select(<filter>=...)` raises ValueError for values not in show_options()."""
     import pytest
 
-    for col in ["country", "sector", "industry_group", "industry", "exchange"]:
+    for col in [
+        "country",
+        "sector",
+        "industry_group",
+        "industry",
+        "exchange",
+        "mic",
+    ]:
+        kwargs: dict[str, Any] = {col: "__definitely_not_a_real_value__"}
         with pytest.raises(ValueError, match="not available in the database"):
-            equities.select(**{col: "__definitely_not_a_real_value__"})
+            equities.select(**kwargs)
+
+
+def test_select_mic() -> None:
+    """`select(mic=...)` filters equities by their ISO 10383 MIC code."""
+    result = equities.select(mic="XNAS")
+    assert not result.empty
+    assert (result["mic"] == "XNAS").all()
+
+
+def test_mic_in_show_options() -> None:
+    """`mic` is a selectable option exposing real MIC values."""
+    assert "mic" in equities.show_options()
+    mics = list(equities.show_options(selection="mic"))
+    assert {"XNAS", "XLON", "XPAR"} <= set(mics)
+
+
+def test_exchange_mic_one_to_one() -> None:
+    """Each `exchange` code must map to exactly one `mic`.
+
+    Mirrors `test_exchange_market_one_to_one`: a single exchange code resolving
+    to multiple MICs signals drift in the exchange-to-MIC mapping.
+    """
+    df = equities.select()
+    pairs = df.dropna(subset=["exchange", "mic"])
+    by_exchange = pairs.groupby("exchange")["mic"].nunique()
+    ambiguous = by_exchange[by_exchange > 1]
+    assert (
+        ambiguous.empty
+    ), f"Exchange codes mapping to multiple MICs: {ambiguous.to_dict()}"

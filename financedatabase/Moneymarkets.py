@@ -1,7 +1,6 @@
 """Moneymarkets Module"""
 
 import numpy as np
-import pandas as pd
 
 from .helpers import FinanceDatabase, FinanceFrame
 
@@ -22,7 +21,7 @@ class Moneymarkets(FinanceDatabase):
 
     def select(
         self, currency: str | list | None = None, family: str | list | None = None
-    ) -> pd.DataFrame:
+    ) -> FinanceFrame:
         """
         Select moneymarkets based on specified criteria.
 
@@ -40,7 +39,7 @@ class Moneymarkets(FinanceDatabase):
                 Please check the available currencies and families using the 'show_options' method.
 
         Returns:
-            pd.DataFrame: DataFrame containing the selected moneymarkets data.
+            FinanceFrame: DataFrame containing the selected moneymarkets data.
         """
         moneymarkets = self.data.copy(deep=True)
 

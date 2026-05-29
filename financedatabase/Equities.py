@@ -1,7 +1,6 @@
 "Equities Module"
 
 import numpy as np
-import pandas as pd
 
 from .helpers import FinanceDatabase, FinanceFrame
 
@@ -29,10 +28,11 @@ class Equities(FinanceDatabase):
         industry: str | list | None = None,
         currency: str | list | None = None,
         exchange: str | list | None = None,
+        mic: str | list | None = None,
         market: str | list | None = None,
         market_cap: str | list | None = None,
         only_primary_listing: bool = False,
-    ) -> pd.DataFrame:
+    ) -> FinanceFrame:
         """
         Retrieve equity data based on specified criteria.
 
@@ -53,6 +53,8 @@ class Equities(FinanceDatabase):
                 If not provided, returns data for all currencies.
             exchange (str | list | None): Specific exchange or list of exchanges to filter equities.
                 If not provided, returns data for all exchanges.
+            mic (str | list | None): Specific ISO 10383 MIC code or list of MIC codes to filter
+                equities. If not provided, returns data for all MIC codes.
             market (str | list | None): Specific market or list of markets to filter equities.
                 If not provided, returns data for all markets.
             market_cap (str | list | None): Specific market cap or list of market caps to filter equities.
@@ -65,7 +67,7 @@ class Equities(FinanceDatabase):
                 Please check the available options using the 'show_options' method.
 
         Returns:
-            pd.DataFrame:
+            FinanceFrame:
                 A DataFrame containing equity data matching the specified input criteria.
         """
         equities = self.data.copy(deep=True)
@@ -155,6 +157,19 @@ class Equities(FinanceDatabase):
                         "Please check the available exchanges using the 'show_options' method."
                     )
             equities = equities[equities["exchange"].str.lower().isin(exchanges_lower)]
+        if mic:
+            mics = [mic] if isinstance(mic, str) else mic
+            mics_lower = [mic.lower() for mic in mics]
+            options_lower = [
+                option.lower() for option in self.show_options(selection="mic")
+            ]
+            for mic_lower, mic_actual in zip(mics_lower, mics):
+                if mic_lower not in options_lower:
+                    raise ValueError(
+                        f"The MIC '{mic_actual}' is not available in the database. "
+                        "Please check the available MICs using the 'show_options' method."
+                    )
+            equities = equities[equities["mic"].str.lower().isin(mics_lower)]
         if market:
             markets = [market] if isinstance(market, str) else market
             markets_lower = [market.lower() for market in markets]
@@ -209,6 +224,7 @@ class Equities(FinanceDatabase):
         industry: str | list | None = None,
         currency: str | list | None = None,
         exchange: str | list | None = None,
+        mic: str | list | None = None,
         market: str | list | None = None,
         market_cap: str | list | None = None,
     ) -> dict | np.ndarray:
@@ -258,6 +274,7 @@ class Equities(FinanceDatabase):
             "industry_group",
             "industry",
             "exchange",
+            "mic",
             "market",
             "country",
             "market_cap",
@@ -276,6 +293,7 @@ class Equities(FinanceDatabase):
             industry=industry,
             currency=currency,
             exchange=exchange,
+            mic=mic,
             market=market,
             market_cap=market_cap,
         )

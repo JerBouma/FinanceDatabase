@@ -1,7 +1,6 @@
 """Cryptos Module"""
 
 import numpy as np
-import pandas as pd
 
 from .helpers import FinanceDatabase, FinanceFrame
 
@@ -29,7 +28,7 @@ class Cryptos(FinanceDatabase):
         self,
         cryptocurrency: str | list | None = None,
         currency: str | list | None = None,
-    ) -> pd.DataFrame:
+    ) -> FinanceFrame:
         """
         Obtain cryptocurrency data based on specified criteria.
 
