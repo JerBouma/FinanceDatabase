@@ -525,9 +525,11 @@ jobs:
 
             readme = Path("README.md")
             text = readme.read_text(encoding="utf-8")
-            # Replace the existing combined "Equities/ETFs/Funds" table with two tables (A + B).
+            # Refresh the Equities (A) and ETFs/Funds (B) statistics tables.
             text = re.sub(
-                r"\| Product\s+\| Quantity\s+\| Sectors[^\n]*\| Industries[^\n]*\n\|[^\n]*\n(?:\|[^\n]*\n){3}",
+                r"\| Product\s+\| Quantity\s+\| Sectors[^\n]*\| Industries[^\n]*\n"
+                r"\|[^\n]*\n\|[^\n]*\n\n"
+                r"\| Product\s+\| Quantity\s+\| Families[^\n]*\n\|[^\n]*\n(?:\|[^\n]*\n){2}",
                 _fmt_table_a(table_a_row) + "\n\n" + _fmt_table_b(table_b_rows) + "\n",
                 text,
                 count=1,
