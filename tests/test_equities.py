@@ -288,3 +288,21 @@ def test_exchange_mic_one_to_one() -> None:
     assert (
         ambiguous.empty
     ), f"Exchange codes mapping to multiple MICs: {ambiguous.to_dict()}"
+
+
+def test_mic_filled_when_exchange_mapped() -> None:
+    """Every row whose `exchange` has a known MIC must carry that `mic`.
+
+    Complements `test_exchange_mic_one_to_one`: that guards an exchange
+    mapping to several MICs, this guards rows left blank for an exchange
+    whose MIC is otherwise known — the gap that let workflow-added tickers
+    ship without a `mic`.
+    """
+    df = equities.select()
+    mapped = df.dropna(subset=["exchange", "mic"]).drop_duplicates("exchange")
+    known = set(mapped["exchange"])
+    missing = df[df["exchange"].isin(known) & df["mic"].isna()]
+    assert missing.empty, (
+        "Rows with a known exchange but missing mic: "
+        f"{sorted(missing['exchange'].unique())} ({len(missing)} rows)"
+    )
