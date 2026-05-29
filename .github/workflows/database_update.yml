@@ -112,6 +112,7 @@ jobs:
                 fd_industries: pd.DataFrame,
                 equities: pd.DataFrame,
                 market_cap: Optional[str],
+                exchange_to_mic: dict,
             ) -> dict:
                 """Build a new ticker entry for the equities database.
 
@@ -137,6 +138,7 @@ jobs:
                     'industry_group':  industry_group,
                     'sector':          sector,
                     'exchange':        row['exchange'],
+                    'mic':             exchange_to_mic.get(row['exchange'], np.nan),
                     'market':          row['market'],
                     'country':         row['country'],
                     'state':           np.nan,
@@ -189,6 +191,15 @@ jobs:
             # Read the equities database
             equities = pd.read_csv('database/equities.csv', index_col=0)
 
+            # Derive the exchange -> ISO 10383 MIC map from the existing
+            # (ISO-validated, one-to-one) data; unknown codes stay blank.
+            exchange_to_mic = (
+                equities.dropna(subset=['mic'])
+                .drop_duplicates('exchange')
+                .set_index('exchange')['mic']
+                .to_dict()
+            )
+
             # ---------------------------------------------------------------------------
             # Main processing loop
             # ---------------------------------------------------------------------------
@@ -211,7 +222,7 @@ jobs:
                     if pd.isna(index):
                         index = "NA"
 
-                    ticker_dict[index] = build_new_ticker(index, row, fd_industries, equities, market_cap)
+                    ticker_dict[index] = build_new_ticker(index, row, fd_industries, equities, market_cap, exchange_to_mic)
 
             # ---------------------------------------------------------------------------
             # Merge results back into equities
