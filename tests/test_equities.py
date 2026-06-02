@@ -142,7 +142,7 @@ def test_search_invalid_column_is_ignored(capsys) -> None:
     result = equities.search(nonexistent_column="value")
     captured = capsys.readouterr()
     assert "nonexistent_column is not a valid column" in captured.out
-    assert len(result) == len(equities.select())
+    assert len(result) == len(equities.select(exclude_delisted=False))
 
 
 def test_to_toolkit_raises_without_financetoolkit(monkeypatch) -> None:
