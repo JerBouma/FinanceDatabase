@@ -37,12 +37,6 @@ Some key statistics of the database:
 | Indices           | 91.181    | 63 Exchanges          |
 | Money Markets     | 1.367     | 2 Exchanges           |
 
-The Finance Database is used within or referenced by:
-
-<a href="https://algotrading101.com/learn/financedatabase-python-guide/"><img width="200" height="100" alt="AlgoTrading" src="https://github-production-user-asset-6210df.s3.amazonaws.com/46355364/265290727-4c113348-45fc-45fe-afb5-e043b738ee94.png"></a>
-<a href="https://twitter.com/pyquantnews/status/1576185955677077504?lang=en"><img width="200" height="100" alt="PyQuantNews" src="https://github-production-user-asset-6210df.s3.amazonaws.com/46355364/265290754-8c9025fb-3830-4f41-95fd-e5e6d0f84758.png"></a>
-<a href="https://alpha2phi.medium.com/investment-analysis-finance-database-61f47ecfe7ca"><img width="200" height="100" alt="Medium" src="https://github-production-user-asset-6210df.s3.amazonaws.com/46355364/265290765-dfbd0f4c-85eb-4de6-adba-345cb5189f31.png"></a>
-
 ___
 
 # Installation

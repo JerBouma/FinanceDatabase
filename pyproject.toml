@@ -86,7 +86,7 @@ skip_gitignore = true
 combine_as_imports = true
 
 [tool.codespell]
-ignore-words-list = 'berkley,Sie,VIE,ore,HANSOME,Worchester'
+ignore-words-list = 'berkley,Sie,VIE,ore,HANSOME,Worchester,OIS'
 skip = '*.json,./.git,pyproject.toml,uv.lock,examples,*.csv'
 
 [tool.pytest.ini_options]
