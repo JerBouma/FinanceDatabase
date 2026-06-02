@@ -72,7 +72,7 @@ target-version = ["py313"]
 [tool.ruff]
 line-length = 122
 lint.select = ["E", "W", "F", "Q", "W", "S", "UP", "I", "PD", "SIM", "PLC", "PLE", "PLR", "PLW"]
-lint.ignore = ["S105", "S106", "S107", "PLR0913", "PLR0912", "PLR0911", "PLR0915", "PD010", "PD013", "S310", "S301"]
+lint.ignore = ["S105", "S106", "S107", "PLR0913", "PLR0912", "PLR0911", "PLR0915", "PD010", "PD013", "S310", "S301", "S101", "PLR2004"]
 exclude = ["conftest.py", "examples", "compression"]
 
 [tool.ruff.lint.isort]
@@ -86,7 +86,7 @@ skip_gitignore = true
 combine_as_imports = true
 
 [tool.codespell]
-ignore-words-list = 'te,hsi,amplitud,nam,tha,plaform, ois'
+ignore-words-list = 'berkley,Sie,VIE'
 skip = '*.json,./.git,pyproject.toml,uv.lock,examples'
 
 [tool.pytest.ini_options]

@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
-import financedatabase as fd
-
 from typing import TYPE_CHECKING
+
+import pytest
+
+import financedatabase as fd
 
 if TYPE_CHECKING:
     from tests.conftest import Recorder
@@ -49,7 +51,6 @@ def test_search(recorder: Recorder) -> None:
 
 def test_select_with_invalid_value_raises() -> None:
     """`select(<filter>=...)` raises ValueError for values not in show_options()."""
-    import pytest
 
     for col in ["base_currency", "quote_currency"]:
         with pytest.raises(ValueError, match="not available in the database"):

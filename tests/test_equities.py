@@ -2,9 +2,14 @@
 
 from __future__ import annotations
 
-import financedatabase as fd
-
+import sys
+import types
 from typing import TYPE_CHECKING, Any
+
+import pytest
+import requests as _requests
+
+import financedatabase as fd
 
 if TYPE_CHECKING:
     from tests.conftest import Recorder
@@ -142,8 +147,6 @@ def test_search_invalid_column_is_ignored(capsys) -> None:
 
 def test_to_toolkit_raises_without_financetoolkit(monkeypatch) -> None:
     """`FinanceFrame.to_toolkit()` raises ImportError if financetoolkit is absent."""
-    import sys
-    import pytest
 
     monkeypatch.setitem(sys.modules, "financetoolkit", None)
     with pytest.raises(ImportError, match="financetoolkit"):
@@ -152,8 +155,6 @@ def test_to_toolkit_raises_without_financetoolkit(monkeypatch) -> None:
 
 def test_init_raises_on_request_failure(monkeypatch) -> None:
     """`FinanceDatabase.__init__` re-raises as ValueError on network failure."""
-    import requests as _requests
-    import pytest
 
     def _fail(*a, **kw):
         raise _requests.exceptions.ConnectionError("simulated")
@@ -165,7 +166,6 @@ def test_init_raises_on_request_failure(monkeypatch) -> None:
 
 def test_module_show_options_raises_on_invalid_selection() -> None:
     """The module-level `show_options(selection=...)` rejects unknown asset classes."""
-    import pytest
 
     with pytest.raises(ValueError, match="not valid"):
         fd.show_options(selection="not_a_real_asset_class")
@@ -175,8 +175,6 @@ def test_module_show_options_raises_on_invalid_selection() -> None:
 
 def test_module_show_options_raises_on_request_failure(monkeypatch) -> None:
     """The module-level `show_options` re-raises as ValueError on network failure."""
-    import requests as _requests
-    import pytest
 
     def _fail(*a, **kw):
         raise _requests.exceptions.ConnectionError("simulated")
@@ -201,8 +199,6 @@ def test_search_case_sensitive_with_list() -> None:
 
 def test_to_toolkit_success_path(monkeypatch) -> None:
     """`FinanceFrame.to_toolkit()` constructs a Toolkit when the dep is available."""
-    import sys
-    import types
 
     captured_kwargs: dict = {}
 
@@ -246,8 +242,6 @@ def test_search(recorder: Recorder) -> None:
 
 def test_select_with_invalid_value_raises() -> None:
     """`select(<filter>=...)` raises ValueError for values not in show_options()."""
-    import pytest
-
     for col in [
         "country",
         "sector",
