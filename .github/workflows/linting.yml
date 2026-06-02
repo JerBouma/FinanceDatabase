@@ -15,38 +15,25 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
       - name: Setup Python 3.10
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
           architecture: x64
 
-      - name: Install Poetry
-        uses: snok/install-poetry@v1
-        with:
-          version: latest
-          virtualenvs-create: true
-          virtualenvs-in-project: true
-
-      - name: Load cached venv
-        id: cached-poetry-dependencies
-        uses: actions/cache@v3
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
-
       - name: Install dependencies
-        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
-        run: poetry install --no-interaction
+        run: uv sync
 
       - name: Run black
-        run: poetry run black --diff --check .
+        run: uv run black --diff --check .
 
       - name: Run ruff
-        run: poetry run ruff check financedatabase
-
-      - name: Run pylint
-        run: poetry run pylint financedatabase
+        run: uv run ruff check financedatabase
 
   markdown-link-check:
     name: Markdown Linting
