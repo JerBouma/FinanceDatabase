@@ -367,8 +367,7 @@ jobs:
                   if column in ['name', 'summary']:
                       continue
                       
-                  cryptos_categories[column] = cryptos[column].dropna().unique()
-                  cryptos_categories[column].sort()
+                  cryptos_categories[column] = sorted(cryptos[column].dropna().unique(), key=str)
                   
               df_temp = pd.DataFrame.from_dict(cryptos_categories, orient='index').reset_index()
               df_temp.to_csv('compression/categories/cryptos_categories.gzip', index=False, compression='gzip')
@@ -379,8 +378,7 @@ jobs:
                   if column in ['name']:
                       continue
 
-                  currencies_categories[column] = currencies[column].dropna().unique()
-                  currencies_categories[column].sort()
+                  currencies_categories[column] = sorted(currencies[column].dropna().unique(), key=str)
 
               df_temp = pd.DataFrame.from_dict(currencies_categories, orient='index').reset_index()
               df_temp.to_csv('compression/categories/currencies_categories.gzip', index=False, compression='gzip')
@@ -391,8 +389,7 @@ jobs:
                   if column in ['name', 'summary', 'website', 'delisted']:
                       continue
                       
-                  equities_categories[column] = equities[column].dropna().unique()
-                  equities_categories[column].sort()
+                  equities_categories[column] = sorted(equities[column].dropna().unique(), key=str)
                   
               df_temp = pd.DataFrame.from_dict(equities_categories, orient='index').reset_index()
               df_temp.to_csv('compression/categories/equities_categories.gzip', index=False, compression='gzip')
@@ -403,8 +400,7 @@ jobs:
                   if column in ['name', 'summary']:
                       continue
                       
-                  etfs_categories[column] = etfs[column].dropna().unique()
-                  etfs_categories[column].sort()
+                  etfs_categories[column] = sorted(etfs[column].dropna().unique(), key=str)
 
               df_temp = pd.DataFrame.from_dict(etfs_categories, orient='index').reset_index()
               df_temp.to_csv('compression/categories/etfs_categories.gzip', index=False, compression='gzip')
@@ -415,8 +411,7 @@ jobs:
                   if column in ['name', 'summary', 'manager_name', 'manager_bio']:
                       continue
                       
-                  funds_categories[column] = funds[column].dropna().unique()
-                  funds_categories[column].sort()
+                  funds_categories[column] = sorted(funds[column].dropna().unique(), key=str)
                   
               df_temp = pd.DataFrame.from_dict(funds_categories, orient='index').reset_index()
               df_temp.to_csv('compression/categories/funds_categories.gzip', index=False, compression='gzip')
@@ -427,8 +422,7 @@ jobs:
                   if column in ['name']:
                       continue
                       
-                  indices_categories[column] = indices[column].dropna().unique()
-                  indices_categories[column].sort()
+                  indices_categories[column] = sorted(indices[column].dropna().unique(), key=str)
                   
               df_temp = pd.DataFrame.from_dict(indices_categories, orient='index').reset_index()
               df_temp.to_csv('compression/categories/indices_categories.gzip', index=False, compression='gzip')
@@ -439,8 +433,7 @@ jobs:
                   if column in ['name']:
                       continue
                       
-                  moneymarkets_categories[column] = moneymarkets[column].dropna().unique()
-                  moneymarkets_categories[column].sort()
+                  moneymarkets_categories[column] = sorted(moneymarkets[column].dropna().unique(), key=str)
                   
               df_temp = pd.DataFrame.from_dict(moneymarkets_categories, orient='index').reset_index()
               df_temp.to_csv('compression/categories/moneymarkets_categories.gzip', index=False, compression='gzip')
