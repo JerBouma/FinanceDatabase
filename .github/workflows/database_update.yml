@@ -387,7 +387,7 @@ jobs:
               equities = pd.concat([pd.read_csv(f, index_col=0) for f in sorted(glob.glob('database/equities/*.csv'))])
               equities_categories = {}
               for column in equities:
-                  if column in ['name', 'summary', 'website']:
+                  if column in ['name', 'summary', 'website', 'delisted']:
                       continue
                       
                   equities_categories[column] = equities[column].dropna().unique()
