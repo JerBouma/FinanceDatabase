@@ -24,19 +24,22 @@ Then, follow these steps to update the CSV files accordingly.
 
 | Download & Update the CSV Files  | Create a Database Update Issue or Pull Request on GitHub |
 | ------------- | ------------- |
-| You can help out tremendously by updating one of the CSV files. This can be done through Excel and by making use of CTRL + F to find and edit symbols and their data efficiently. <p></p> Carefully go through the cells making sure you're following the descriptions as mentioned [here](#category-definitions). After having saved the files, you're ready to go to the next step. <p></p> |  Once you've made your update, you can go [here](https://github.com/JerBouma/FinanceDatabase/issues/new/choose) and select `Database Update`. Then, within the textbox enter a description of what you changed and then drag and drop your updated CSV files. From here on, I'll make sure to update the Database with your updates which will be visible within the database within minutes.<p></p>Alternatively you can also make a Pull Request as described [here](#advanced-developers). This is mostly meant for Developers that know their way around Git. <p></p> |
+| You can help out tremendously by updating one of the CSV files. This can be done through Excel and by making use of CTRL + F to find and edit symbols and their data efficiently. <p></p> Note that **Equities, ETFs and Funds** are split into individual files per exchange (e.g. `database/equities/NMS.csv` for NASDAQ, `database/etfs/AMS.csv` for Amsterdam Exchange). The other asset classes (`cryptos`, `currencies`, `indices`, `moneymarkets`) remain single files. <p></p> Carefully go through the cells making sure you're following the descriptions as mentioned [here](#category-definitions). After having saved the files, you're ready to go to the next step. <p></p> |  Once you've made your update, you can go [here](https://github.com/JerBouma/FinanceDatabase/issues/new/choose) and select `Database Update`. Then, within the textbox enter a description of what you changed and then drag and drop your updated CSV files. From here on, I'll make sure to update the Database with your updates which will be visible within the database within minutes.<p></p>Alternatively you can also make a Pull Request as described [here](#advanced-developers). This is mostly meant for Developers that know their way around Git. <p></p> |
 | <img width="2500" alt="Updating CSV Files - FinanceDatabase" src="https://user-images.githubusercontent.com/46355364/221357112-aac7bdc4-a605-4ecb-8337-1dd309f2e1a8.png">  | <img width="2500" alt="GitHub Issue - FinanceDatabase" src="https://user-images.githubusercontent.com/46355364/220197736-7453a9bb-d8bb-4569-ab84-b84e456f753e.png"> |
 
-It is also possible to load in the files directly into e.g. a Jupyter Notebook and make the edits how you like by using packages like pandas to search. It could be that certain naming is off that you want to correct automatically for all tickers that match the criteria or perhaps you want to fill sectors and industries automatically. Depending whether you have the database remote or locally, you can use:
+It is also possible to load in the files directly into e.g. a Jupyter Notebook and make the edits how you like by using packages like pandas to search. It could be that certain naming is off that you want to correct automatically for all tickers that match the criteria or perhaps you want to fill sectors and industries automatically.
 
-- If remote: `pd.read_csv("https://github.com/JerBouma/FinanceDatabase/blob/main/database/equities.csv?raw=true", delimiter=",", index_col=0)`
-- If locally: `pd.read_csv("database/equities.csv", delimiter=",", index_col=0)`
- 
-Change the asset class name (`equities.csv`) to any of the file names as found [here](https://github.com/JerBouma/FinanceDatabase/tree/main/database). Then, once you have made your changes you can use `df.to_csv('equities.csv', sep=',')` to export back to the CSV format. From here on, follow the above steps again or create a Pull Request as described [here](#advanced-developers).
+**Equities, ETFs and Funds** are stored as per-exchange files inside subdirectories. For a single exchange file, load it this way:
 
-| If the Database is stored Remote  | If the Database is stored Locally|
-| ------------- | ------------- |
-| <img width="800" alt="Screenshot 2023-02-27 at 11 20 57" src="https://user-images.githubusercontent.com/46355364/221539937-2de01ec4-7384-4b19-9411-4538485e06f8.png">| <img width="800" alt="Screenshot 2023-02-27 at 11 18 45" src="https://user-images.githubusercontent.com/46355364/221540429-24d8616f-e34a-493e-9722-ada688195384.png"> |
+- If remote: `pd.read_csv("https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/database/equities/NMS.csv", index_col=0)`
+- If locally: `pd.read_csv("database/equities/NMS.csv", index_col=0)`
+
+For the other asset classes (`cryptos`, `currencies`, `indices`, `moneymarkets`), the files remain single CSVs:
+
+- If remote: `pd.read_csv("https://github.com/JerBouma/FinanceDatabase/blob/main/database/cryptos.csv?raw=true", delimiter=",", index_col=0)`
+- If locally: `pd.read_csv("database/cryptos.csv", delimiter=",", index_col=0)`
+
+Change the asset class name to any of the file names as found [here](https://github.com/JerBouma/FinanceDatabase/tree/main/database). Then, once you have made your changes you can use `df.to_csv('database/equities/NMS.csv', sep=',')` to export back to the CSV format (saving back to the correct exchange file). From here on, follow the above steps again or create a Pull Request as described [here](#advanced-developers).
 
 # Ways to Help Out
 
@@ -44,7 +47,7 @@ There are a variety of ways you can help out, these can be:
 
 | Topic  | Description |
 | ------------- | ------------- |
-| Adding ISIN, CIK, FIGI, CUSIP, SEDOL and more | Currently, the database has one ticker format. Ideally, every single ticker has multiple codes from ISIN, CIK, FIGI, CUSIP and SEDOL and also how platforms like Bloomberg, Factset, Eikon Refinitiv and OpenBB represent their tickers. |
+| Adding ISIN, CIK, FIGI, CUSIP, SEDOL and more | Ideally, every single ticker has multiple codes from ISIN, CIK, FIGI, CUSIP and SEDOL and also how platforms like Bloomberg, Factset, Eikon Refinitiv and OpenBB represent their tickers. |
 | Testing Symbols |  Understand whether symbols and companies still exist by Googling and if not, removing them from the database. Tickers could stop existing due to name changes (like Facebook to META), going bankrupt or merging with other firms. Indices, ETFs, Funds, Moneymarkets and Cryptocurrencies could be updated in a similar fashion. |
 | Updating Categories | If the value for e.g. "Sector" or "Industry" (equities) or "Category" (ETFs and Funds) is missing or seems to be incorrect, figure out what would fit for that ticker and update accordingly. |
 | Update Identical Symbols | ASML, ASML.DE and ASML.AS are all the same company but are listed on different exchanges. Do they all contain the same information? If not, feel free to update the information accordingly. Here you can use ASML (the ticker without the dot) as base. |
