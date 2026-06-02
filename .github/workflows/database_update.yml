@@ -22,6 +22,8 @@ jobs:
         uses: jannekem/run-python-script-action@v1
         with:
           script: |
+            import glob
+            import os
             import numpy as np
             import pandas as pd
             from typing import Optional
@@ -188,8 +190,10 @@ jobs:
             fd_industry_groups = pd.read_excel(fd_categories_path, sheet_name='industry_group', index_col=1)
             fd_industries      = pd.read_excel(fd_categories_path, sheet_name='industry',       index_col=1)
 
-            # Read the equities database
-            equities = pd.read_csv('database/equities.csv', index_col=0)
+            # Read the equities database from per-exchange files
+            equities = pd.concat(
+                [pd.read_csv(f, index_col=0) for f in sorted(glob.glob('database/equities/*.csv'))],
+            )
 
             # Derive the exchange -> ISO 10383 MIC map from the existing
             # (ISO-validated, one-to-one) data; unknown codes stay blank.
@@ -256,7 +260,13 @@ jobs:
                     .loc[equities.index.notna()]   # drop NaN index entries
                 )
 
-                equities.to_csv('database/equities.csv')
+                for f in glob.glob('database/equities/*.csv'):
+                    os.remove(f)
+                nan_mask = equities['exchange'].isna()
+                for exchange, group in equities[~nan_mask].groupby('exchange'):
+                    group.to_csv(f'database/equities/{exchange}.csv')
+                if nan_mask.any():
+                    equities[nan_mask].to_csv('database/equities/NAN.csv')
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'
@@ -286,28 +296,36 @@ jobs:
         uses: jannekem/run-python-script-action@v1
         with:
           script: |
+            import glob
             import financedatabase as fd
             import pandas as pd
 
             cryptos = pd.read_csv('database/cryptos.csv')
+            cryptos = cryptos.sort_values(cryptos.columns[0]).reset_index(drop=True)
             cryptos.to_csv('compression/cryptos.bz2', index=False, compression='bz2')
 
             currencies = pd.read_csv('database/currencies.csv')
+            currencies = currencies.sort_values(currencies.columns[0]).reset_index(drop=True)
             currencies.to_csv('compression/currencies.bz2', index=False, compression='bz2')
 
-            equities = pd.read_csv('database/equities.csv')
+            equities = pd.concat([pd.read_csv(f) for f in sorted(glob.glob('database/equities/*.csv'))], ignore_index=True)
+            equities = equities.sort_values(equities.columns[0]).reset_index(drop=True)
             equities.to_csv('compression/equities.bz2', index=False, compression='bz2')
 
-            etfs = pd.read_csv('database/etfs.csv')
+            etfs = pd.concat([pd.read_csv(f) for f in sorted(glob.glob('database/etfs/*.csv'))], ignore_index=True)
+            etfs = etfs.sort_values(etfs.columns[0]).reset_index(drop=True)
             etfs.to_csv('compression/etfs.bz2', index=False, compression='bz2')
 
-            funds = pd.read_csv('database/funds.csv')
+            funds = pd.concat([pd.read_csv(f) for f in sorted(glob.glob('database/funds/*.csv'))], ignore_index=True)
+            funds = funds.sort_values(funds.columns[0]).reset_index(drop=True)
             funds.to_csv('compression/funds.bz2', index=False, compression='bz2')
 
             indices = pd.read_csv('database/indices.csv')
+            indices = indices.sort_values(indices.columns[0]).reset_index(drop=True)
             indices.to_csv('compression/indices.bz2', index=False, compression='bz2')
 
             moneymarkets = pd.read_csv('database/moneymarkets.csv')
+            moneymarkets = moneymarkets.sort_values(moneymarkets.columns[0]).reset_index(drop=True)
             moneymarkets.to_csv('compression/moneymarkets.bz2', index=False, compression='bz2')
       - name: Commit files and log
         run: |
@@ -338,6 +356,7 @@ jobs:
           uses: jannekem/run-python-script-action@v1
           with:
             script: |
+              import glob
               import financedatabase as fd
               import pandas as pd
 
@@ -365,7 +384,7 @@ jobs:
               df_temp = pd.DataFrame.from_dict(currencies_categories, orient='index').reset_index()
               df_temp.to_csv('compression/categories/currencies_categories.gzip', index=False, compression='gzip')
                   
-              equities =  pd.read_csv("database/equities.csv", index_col=0)
+              equities = pd.concat([pd.read_csv(f, index_col=0) for f in sorted(glob.glob('database/equities/*.csv'))])
               equities_categories = {}
               for column in equities:
                   if column in ['name', 'summary', 'website']:
@@ -377,7 +396,7 @@ jobs:
               df_temp = pd.DataFrame.from_dict(equities_categories, orient='index').reset_index()
               df_temp.to_csv('compression/categories/equities_categories.gzip', index=False, compression='gzip')
                   
-              etfs = pd.read_csv("database/etfs.csv", index_col=0)
+              etfs = pd.concat([pd.read_csv(f, index_col=0) for f in sorted(glob.glob('database/etfs/*.csv'))])
               etfs_categories = {}
               for column in etfs:
                   if column in ['name', 'summary']:
@@ -389,7 +408,7 @@ jobs:
               df_temp = pd.DataFrame.from_dict(etfs_categories, orient='index').reset_index()
               df_temp.to_csv('compression/categories/etfs_categories.gzip', index=False, compression='gzip')
                   
-              funds = pd.read_csv("database/funds.csv", index_col=0)
+              funds = pd.concat([pd.read_csv(f, index_col=0) for f in sorted(glob.glob('database/funds/*.csv'))])
               funds_categories = {}
               for column in funds:
                   if column in ['name', 'summary', 'manager_name', 'manager_bio']:
@@ -454,6 +473,7 @@ jobs:
         uses: jannekem/run-python-script-action@v1
         with:
           script: |
+            import glob
             import re
             from pathlib import Path
             import pandas as pd
@@ -463,7 +483,7 @@ jobs:
                 return f"{x:,}".replace(",", ".")
 
             # Table A: Equities — Quantity, Sectors, Industries, Countries, Exchanges
-            eq = pd.read_csv("database/equities.csv", dtype=str)
+            eq = pd.concat([pd.read_csv(f, dtype=str) for f in sorted(glob.glob('database/equities/*.csv'))], ignore_index=True)
             table_a_row = (
                 "Equities",
                 _n(len(eq)),
@@ -478,7 +498,7 @@ jobs:
             # scope, not a HQ — not derivable from listing exchange alone.)
             table_b_rows = []
             for asset in ("ETFs", "Funds"):
-                df = pd.read_csv(f"database/{asset.lower()}.csv", dtype=str)
+                df = pd.concat([pd.read_csv(f, dtype=str) for f in sorted(glob.glob(f'database/{asset.lower()}/*.csv'))], ignore_index=True)
                 table_b_rows.append((
                     asset,
                     _n(len(df)),
@@ -565,13 +585,14 @@ jobs:
         uses: jannekem/run-python-script-action@v1
         with:
           script: |
+            import glob
             import pandas as pd
             import json
 
             invalid_rows = pd.DataFrame()
             errors = []
             gics = json.load(open("compression/categories/categories.json", "r"))
-            equities = pd.read_csv("database/equities.csv", index_col=0)
+            equities = pd.concat([pd.read_csv(f, index_col=0) for f in sorted(glob.glob('database/equities/*.csv'))])
             filtered_data = equities[equities['sector'].notna() & equities['industry_group'].notna() & equities['industry'].notna()]
 
             for index, row in filtered_data.iterrows():
