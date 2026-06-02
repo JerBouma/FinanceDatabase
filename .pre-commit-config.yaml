@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.6.0
     hooks:
       - id: check-yaml
       - id: end-of-file-fixer
@@ -9,31 +9,25 @@ repos:
         exclude_types: [html, markdown, text]
       - id: check-merge-conflict
       - id: detect-private-key
-  - repo: https://github.com/psf/black
-    rev: 25.1.0
-    hooks:
-      - id: black
-  - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: "v0.9.9"
-    hooks:
-      - id: ruff
-        entry: ruff check financedatabase
-  - repo: https://github.com/codespell-project/codespell
-    rev: v2.3.0
-    hooks:
-      - id: codespell
-        entry: codespell
-        args:
-          [
-            "--ignore-words-list=zar,profund,basf,applicatio,ser,mone,vie,noteable,basf,beter,ois",
-            "--quiet-level=2",
-            "--skip=./tests,.git,*.css,*.csv,*.html,*.ini,*.ipynb,*.js,*.json,*.lock,*.scss,*.txt,*.yaml,build/pyinstaller/*,pyproject.toml",
-            "-x=.github/workflows/linting.yml"
-          ]
   - repo: local
     hooks:
-      - id: pylint
-        name: pylint
-        entry: pylint financedatabase
-        language: system
+      - id: black
+        name: black
+        entry: black
+        language: python
         types: [python]
+  - repo: local
+    hooks:
+      - id: ruff
+        name: ruff
+        entry: ruff check
+        language: python
+        types: [python]
+        args: ["--config=pyproject.toml"]
+  - repo: local
+    hooks:
+      - id: codespell
+        name: codespell
+        entry: codespell
+        language: python
+        types: [text]

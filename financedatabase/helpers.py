@@ -94,6 +94,8 @@ class FinanceDatabase:
                 Defaults to False.
             index (str): Search within the DataFrame index.
                 Defaults to None.
+            exclude_delisted (bool): Whether to exclude delisted entries.
+                Defaults to True.
 
         Returns:
             DataFrame with filtered data based on the input criteria.
@@ -121,6 +123,9 @@ class FinanceDatabase:
                     data_filter = data_filter[
                         data_filter.index.str.contains(value, na=False)
                     ]
+            elif key == "exclude_delisted":
+                if value is True and "delisted" in data_filter.columns:
+                    data_filter = data_filter[~data_filter["delisted"]]
             elif key not in data_filter.columns:
                 print(f"{key} is not a valid column.")
             elif isinstance(value, list):

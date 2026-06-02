@@ -32,6 +32,7 @@ class Equities(FinanceDatabase):
         market: str | list | None = None,
         market_cap: str | list | None = None,
         only_primary_listing: bool = False,
+        exclude_delisted: bool = True,
     ) -> FinanceFrame:
         """
         Retrieve equity data based on specified criteria.
@@ -62,6 +63,9 @@ class Equities(FinanceDatabase):
             only_primary_listing (bool, optional): Whether to only include the primary listing.
                 If False, you will receive data for equities from different exchanges.
                 Default is False.
+            exclude_delisted (bool, optional): Whether to exclude delisted equities.
+                If True, delisted equities will be excluded from the results.
+                Default is True.
         Raises:
             ValueError: If any of the specified criteria are not available in the database.
                 Please check the available options using the 'show_options' method.
@@ -72,6 +76,8 @@ class Equities(FinanceDatabase):
         """
         equities = self.data.copy(deep=True)
 
+        if exclude_delisted:
+            equities = equities[~equities["delisted"]]
         if country:
             countries = [country] if isinstance(country, str) else country
             countries_lower = [country.lower() for country in countries]
@@ -227,6 +233,7 @@ class Equities(FinanceDatabase):
         mic: str | list | None = None,
         market: str | list | None = None,
         market_cap: str | list | None = None,
+        exclude_delisted: bool = True,
     ) -> dict | np.ndarray:
         """
         Retrieve all options for the specified selection.
@@ -296,6 +303,7 @@ class Equities(FinanceDatabase):
             mic=mic,
             market=market,
             market_cap=market_cap,
+            exclude_delisted=exclude_delisted,
         )
 
         return (
