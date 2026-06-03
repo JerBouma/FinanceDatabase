@@ -2,6 +2,8 @@ name: Database Update
 
 on:
   push:
+    branches:
+      - 'main'
   schedule:
     - cron: '0 12 * * SUN'
 
@@ -10,16 +12,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: pull changes
         run: git pull https://${{secrets.PAT}}@github.com/JerBouma/FinanceDatabase.git main
       - name: setup python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: '3.13'
       - run: pip install "pandas[excel]" financedatabase
       - name: Add New Tickers and Update Old Ones
-        uses: jannekem/run-python-script-action@v1
+        uses: jannekem/run-python-script-action@v1.8
         with:
           script: |
             import glob
@@ -285,16 +287,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: pull changes
         run: git pull https://${{secrets.PAT}}@github.com/JerBouma/FinanceDatabase.git main
       - name: setup python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: '3.10'
       - run: pip install "pandas[excel]" financedatabase
       - name: Update Compressions
-        uses: jannekem/run-python-script-action@v1
+        uses: jannekem/run-python-script-action@v1.8
         with:
           script: |
             import glob
@@ -345,16 +347,16 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: checkout repo content
-          uses: actions/checkout@v3
+          uses: actions/checkout@v6
         - name: pull changes
           run: git pull https://${{secrets.PAT}}@github.com/JerBouma/FinanceDatabase.git main
         - name: setup python
-          uses: actions/setup-python@v4
+          uses: actions/setup-python@v6
           with:
             python-version: '3.10'
         - run: pip install "pandas[excel]" financedatabase
         - name: Update categories
-          uses: jannekem/run-python-script-action@v1
+          uses: jannekem/run-python-script-action@v1.8
           with:
             script: |
               import glob
@@ -455,16 +457,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: pull changes
         run: git pull https://${{secrets.PAT}}@github.com/JerBouma/FinanceDatabase.git main
       - name: setup python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: '3.13'
       - run: pip install pandas
       - name: Refresh the statistics tables in README.md
-        uses: jannekem/run-python-script-action@v1
+        uses: jannekem/run-python-script-action@v1.8
         with:
           script: |
             import glob
@@ -569,14 +571,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: setup python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: '3.10'
       - run: pip install "pandas[excel]" financedatabase
       - name: Check GICS Categorisation
-        uses: jannekem/run-python-script-action@v1
+        uses: jannekem/run-python-script-action@v1.8
         with:
           script: |
             import glob
