@@ -23,7 +23,7 @@ Some key statistics of the database:
 
 | Product           | Quantity   | Sectors    | Industries    | Countries | Exchanges |
 | ----------------- | ---------- | ---------- | ------------- | --------- | --------- |
-| Equities          | 160.995    | 11         | 68            | 117       | 84        |
+| Equities          | 161.015    | 11         | 68            | 117       | 84        |
 
 | Product           | Quantity   | Families   | Categories    | Exchanges |
 | ----------------- | ---------- | ---------- | ------------- | --------- |
