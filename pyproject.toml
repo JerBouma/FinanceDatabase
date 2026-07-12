@@ -49,6 +49,7 @@ dev = [
     "ruff>=0.9",
     "pytest-timeout>=2.3",
     "tqdm>=4.67",
+    "python-stdnum>=2.2",
 ]
 
 [tool.uv]

@@ -41,6 +41,48 @@ For the other asset classes (`cryptos`, `currencies`, `indices`, `moneymarkets`)
 
 Change the asset class name to any of the file names as found [here](https://github.com/JerBouma/FinanceDatabase/tree/main/database). Then, once you have made your changes you can use `df.to_csv('database/equities/NMS.csv', sep=',')` to export back to the CSV format (saving back to the correct exchange file). From here on, follow the above steps again or create a Pull Request as described [here](#advanced-developers).
 
+## Validating Identifiers
+
+Developers can audit populated ISIN, CUSIP, FIGI, composite FIGI, and
+share-class FIGI fields in the source CSV files:
+
+```bash
+uv run python scripts/validate_identifiers.py
+```
+
+The command reports the file, line, symbol, value, and validation error for
+each invalid identifier without changing any files. Standardized validation is
+provided by the development dependency
+[`python-stdnum`](https://pypi.org/project/python-stdnum/). It validates the
+[ISO 6166](https://www.iso.org/standard/78502.html) ISIN check digit,
+[CUSIP check digit](https://www.cusip.com/pdf/news/CUSIP-ACommonLanguageForEfficientMarkets_2022.pdf),
+and [FIGI format and check digit](https://www.openfigi.com/docs/figi-check-digit.pdf).
+For valid US and Canadian values, it also checks that the ISIN embeds the
+accompanying CUSIP. The command exits with status 1 when it finds invalid or
+inconsistent values, which also makes it suitable for automated checks.
+
+After reviewing the report, pass `--apply` to repair deterministic formatting
+damage and clear other identifiers with invalid formats or checksums.
+Canonical values returned by `python-stdnum` are repaired automatically. A
+`.0` suffix is removed from any supported identifier when the resulting value
+passes that identifier's validation. If leading zeros were also lost from a
+CUSIP, it is repaired only when its numeric value matches the CUSIP embedded in
+an independently valid US or Canadian ISIN. Instrument rows, valid identifiers,
+unrelated fields, quoting, line endings, and row ordering are preserved:
+
+```bash
+uv run python scripts/validate_identifiers.py --apply
+```
+
+Invalid ISIN and FIGI values without a deterministic repair are cleared.
+Unresolved CUSIPs and ISIN-CUSIP inconsistencies between two independently
+valid identifiers are not changed automatically because format and checksum
+validation cannot determine whether a CUSIP belongs to the stated instrument.
+Specific CSV files or directories can be supplied as positional arguments.
+These checks detect malformed identifiers and transcription errors; they do
+not confirm that an identifier was officially issued or belongs to the stated
+instrument.
+
 # Ways to Help Out
 
 There are a variety of ways you can help out, these can be:
