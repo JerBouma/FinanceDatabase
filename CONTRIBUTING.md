@@ -58,8 +58,8 @@ provided by the development dependency
 [CUSIP check digit](https://www.cusip.com/pdf/news/CUSIP-ACommonLanguageForEfficientMarkets_2022.pdf),
 and [FIGI format and check digit](https://www.openfigi.com/docs/figi-check-digit.pdf).
 For valid US and Canadian values, it also checks that the ISIN embeds the
-accompanying CUSIP. The command exits with status 1 when it finds invalid or
-inconsistent values, which also makes it suitable for automated checks.
+accompanying CUSIP. Findings are reported without failing the command so that
+existing data-quality issues do not block unrelated contributions.
 
 After reviewing the report, pass `--apply` to repair deterministic formatting
 damage and clear other identifiers with invalid formats or checksums.
@@ -82,6 +82,13 @@ Specific CSV files or directories can be supplied as positional arguments.
 These checks detect malformed identifiers and transcription errors; they do
 not confirm that an identifier was officially issued or belongs to the stated
 instrument.
+
+Pull requests are compared with their base revision and receive warning
+annotations only for identifier findings introduced by that pull request.
+Existing findings on untouched rows are not attributed to the contributor. On
+pushes to `main`, the database maintenance workflow applies deterministic
+repairs across the full source database and uploads remaining findings as a CSV
+artifact for maintainers.
 
 # Ways to Help Out
 

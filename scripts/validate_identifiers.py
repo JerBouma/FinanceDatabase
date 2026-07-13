@@ -53,6 +53,14 @@ class CleanupResult:
         return self.repaired + self.cleared
 
 
+@dataclass(frozen=True)
+class AuditComparison:
+    """Identifier findings added and resolved relative to a baseline audit."""
+
+    new_issues: tuple[IdentifierIssue, ...]
+    resolved_issues: tuple[IdentifierIssue, ...]
+
+
 def _validate_standard_number(
     value: str, validator: Callable[[str], str], format_error: str
 ) -> str | None:
@@ -265,6 +273,50 @@ def audit_identifiers(paths: Iterable[Path]) -> AuditResult:
     )
 
 
+def _issue_fingerprint(issue: IdentifierIssue, root: Path) -> tuple[str, ...]:
+    """Build a stable issue identity independent of checkout path and line number."""
+    try:
+        relative_path = issue.path.resolve().relative_to(root.resolve())
+    except ValueError:
+        relative_path = issue.path.resolve()
+    return (
+        relative_path.as_posix(),
+        issue.symbol,
+        issue.field,
+        issue.value,
+        issue.reason,
+    )
+
+
+def compare_audits(
+    current: AuditResult,
+    baseline: AuditResult,
+    current_root: Path,
+    baseline_root: Path,
+) -> AuditComparison:
+    """Compare complete audits while ignoring findings already in the baseline."""
+    current_by_fingerprint = {
+        _issue_fingerprint(issue, current_root): issue for issue in current.issues
+    }
+    baseline_by_fingerprint = {
+        _issue_fingerprint(issue, baseline_root): issue for issue in baseline.issues
+    }
+    return AuditComparison(
+        new_issues=tuple(
+            current_by_fingerprint[fingerprint]
+            for fingerprint in sorted(
+                current_by_fingerprint.keys() - baseline_by_fingerprint.keys()
+            )
+        ),
+        resolved_issues=tuple(
+            baseline_by_fingerprint[fingerprint]
+            for fingerprint in sorted(
+                baseline_by_fingerprint.keys() - current_by_fingerprint.keys()
+            )
+        ),
+    )
+
+
 def _replace_csv_field(record: str, field_index: int, replacement: str) -> str:
     """Replace one field without reserializing any other part of a CSV record."""
     content_end = len(record.rstrip("\r\n"))
@@ -377,25 +429,93 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Repair deterministic damage and clear other invalid identifiers",
     )
+    parser.add_argument(
+        "--baseline",
+        type=Path,
+        help="Report only findings not present below this baseline directory",
+    )
+    parser.add_argument(
+        "--github-annotations",
+        action="store_true",
+        help="Emit findings as GitHub Actions warning annotations",
+    )
+    parser.add_argument(
+        "--report-file",
+        type=Path,
+        help="Write detailed findings to a CSV report instead of standard output",
+    )
     return parser
 
 
-def main(argv: Sequence[str] | None = None) -> int:
-    """Run the identifier audit command."""
-    arguments = build_parser().parse_args(argv)
-    if not discover_csv_files(arguments.paths):
-        print("No CSV files found.")
-        return 2
+def _escape_workflow_command(value: str, *, property_value: bool = False) -> str:
+    """Escape text for a GitHub Actions workflow command."""
+    escaped = value.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+    if property_value:
+        escaped = escaped.replace(":", "%3A").replace(",", "%2C")
+    return escaped
 
-    result = audit_identifiers(arguments.paths)
-    for issue in result.issues:
-        symbol = f" ({issue.symbol})" if issue.symbol else ""
-        replacement = f"; repair as {issue.replacement!r}" if issue.replacement else ""
+
+def _format_issue_message(issue: IdentifierIssue) -> str:
+    symbol = f" ({issue.symbol})" if issue.symbol else ""
+    replacement = f"; repair as {issue.replacement!r}" if issue.replacement else ""
+    return f"{issue.field}{symbol} {issue.value!r}: {issue.reason}{replacement}"
+
+
+def _print_issues(
+    issues: Iterable[IdentifierIssue], *, github_annotations: bool
+) -> None:
+    for issue in issues:
+        message = _format_issue_message(issue)
+        if not github_annotations:
+            print(f"{issue.path}:{issue.line_number}: {message}")
+            continue
+        title = (
+            "Identifier consistency warning"
+            if issue.field == "isin/cusip"
+            else "Invalid security identifier"
+        )
         print(
-            f"{issue.path}:{issue.line_number}{symbol}: {issue.field} "
-            f"{issue.value!r}: {issue.reason}{replacement}"
+            "::warning "
+            f"file={_escape_workflow_command(issue.path.as_posix(), property_value=True)},"
+            f"line={issue.line_number},"
+            f"title={_escape_workflow_command(title, property_value=True)}::"
+            f"{_escape_workflow_command(message)}"
         )
 
+
+def _write_report(path: Path, issues: Iterable[IdentifierIssue]) -> None:
+    """Write detailed identifier findings to a CSV artifact."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as report_file:
+        writer = csv.writer(report_file)
+        writer.writerow(
+            [
+                "file",
+                "line",
+                "symbol",
+                "field",
+                "value",
+                "problem",
+                "actionable",
+                "suggested_replacement",
+            ]
+        )
+        for issue in issues:
+            writer.writerow(
+                [
+                    issue.path.as_posix(),
+                    issue.line_number,
+                    issue.symbol,
+                    issue.field,
+                    issue.value,
+                    issue.reason,
+                    issue.actionable,
+                    issue.replacement or "",
+                ]
+            )
+
+
+def _print_audit_summary(result: AuditResult) -> None:
     actionable = [issue for issue in result.issues if issue.actionable]
     repairable = [issue for issue in actionable if issue.replacement]
     removable = [issue for issue in actionable if not issue.replacement]
@@ -412,30 +532,77 @@ def main(argv: Sequence[str] | None = None) -> int:
         f"invalid values ({len(repairable)} repairable, {len(removable)} removable, "
         f"{len(review_only)} review-only) and {len(consistency)} consistency issues."
     )
-    if not result.issues:
+
+
+def main(argv: Sequence[str] | None = None) -> int:
+    """Run the identifier audit command."""
+    arguments = build_parser().parse_args(argv)
+    if arguments.apply and arguments.baseline is not None:
+        print("--apply and --baseline cannot be used together.")
+        return 2
+    if arguments.baseline is not None and (
+        len(arguments.paths) != 1
+        or not arguments.paths[0].is_dir()
+        or not arguments.baseline.is_dir()
+    ):
+        print(
+            "--baseline requires one current database directory and one baseline directory."
+        )
+        return 2
+    if not discover_csv_files(arguments.paths):
+        print("No CSV files found.")
+        return 2
+
+    result = audit_identifiers(arguments.paths)
+
+    if arguments.baseline is not None:
+        baseline_result = audit_identifiers([arguments.baseline])
+        comparison = compare_audits(
+            result,
+            baseline_result,
+            arguments.paths[0],
+            arguments.baseline,
+        )
+        if arguments.report_file is not None:
+            _write_report(arguments.report_file, comparison.new_issues)
+        else:
+            _print_issues(
+                comparison.new_issues,
+                github_annotations=arguments.github_annotations,
+            )
+        print(
+            "Compared with the pull request base: found "
+            f"{len(comparison.new_issues)} new and "
+            f"{len(comparison.resolved_issues)} resolved identifier findings."
+        )
         return 0
 
-    if not arguments.apply:
+    if arguments.apply:
+        actionable = [issue for issue in result.issues if issue.actionable]
+        affected_paths = sorted({issue.path for issue in actionable})
+        cleanup_results = [apply_identifier_cleanup(path) for path in affected_paths]
+        repaired = sum(cleanup.repaired for cleanup in cleanup_results)
+        cleared = sum(cleanup.cleared for cleanup in cleanup_results)
         print(
-            "Dry run: no files changed. Re-run with --apply to repair deterministic "
+            f"Repaired {repaired} and cleared {cleared} invalid identifier values "
+            f"in {len(affected_paths)} CSV files."
+        )
+        result = audit_identifiers(arguments.paths)
+
+    if arguments.report_file is not None:
+        _write_report(arguments.report_file, result.issues)
+        print(
+            f"Wrote {len(result.issues)} identifier findings to "
+            f"{arguments.report_file}."
+        )
+    else:
+        _print_issues(result.issues, github_annotations=arguments.github_annotations)
+    _print_audit_summary(result)
+    if result.issues and not arguments.apply:
+        print(
+            "Report only: no files changed. Re-run with --apply to repair deterministic "
             "damage and clear other identifiers that fail validation."
         )
-        return 1
-
-    affected_paths = sorted({issue.path for issue in actionable})
-    cleanup_results = [apply_identifier_cleanup(path) for path in affected_paths]
-    repaired = sum(result.repaired for result in cleanup_results)
-    cleared = sum(result.cleared for result in cleanup_results)
-    print(
-        f"Repaired {repaired} and cleared {cleared} invalid identifier values "
-        f"in {len(affected_paths)} CSV files."
-    )
-    if review_only or consistency:
-        print(
-            f"Left {len(review_only)} invalid CUSIPs and {len(consistency)} ISIN-CUSIP "
-            "consistency issues unchanged for manual review."
-        )
-        return 1
     return 0
 
 

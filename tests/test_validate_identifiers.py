@@ -1,11 +1,14 @@
+import csv
 from pathlib import Path
 
 import pytest
 
 from scripts.validate_identifiers import (
+    AuditComparison,
     CleanupResult,
     apply_identifier_cleanup,
     audit_identifiers,
+    compare_audits,
     main,
     repair_identifier,
     validate_cusip,
@@ -163,6 +166,30 @@ def test_apply_preserves_quoting_and_line_endings(tmp_path: Path) -> None:
     )
 
 
+def test_compare_audits_reports_only_new_and_resolved_findings(tmp_path: Path) -> None:
+    baseline = tmp_path / "baseline"
+    current = tmp_path / "current"
+    baseline.mkdir()
+    current.mkdir()
+    (baseline / "equities.csv").write_text(
+        "symbol,isin\nOLD,US0378331004\nFIXED,US0378331004\n",
+        encoding="utf-8",
+    )
+    (current / "equities.csv").write_text(
+        "symbol,isin\nNEW,US0378331004\nOLD,US0378331004\nFIXED,US0378331005\n",
+        encoding="utf-8",
+    )
+
+    current_audit = audit_identifiers([current])
+    baseline_audit = audit_identifiers([baseline])
+    comparison = compare_audits(current_audit, baseline_audit, current, baseline)
+
+    assert comparison == AuditComparison(
+        new_issues=(current_audit.issues[0],),
+        resolved_issues=(baseline_audit.issues[1],),
+    )
+
+
 def test_main_is_a_dry_run_by_default(
     tmp_path: Path, capsys: pytest.CaptureFixture[str]
 ) -> None:
@@ -170,9 +197,9 @@ def test_main_is_a_dry_run_by_default(
     original = "symbol,isin,cusip\nBAD,US0378331004,037833101\n"
     csv_path.write_text(original, encoding="utf-8")
 
-    assert main([str(tmp_path)]) == 1
+    assert main([str(tmp_path)]) == 0
     assert csv_path.read_text(encoding="utf-8") == original
-    assert "Dry run: no files changed" in capsys.readouterr().out
+    assert "Report only: no files changed" in capsys.readouterr().out
 
 
 def test_main_apply_repairs_or_clears_invalid_identifiers(
@@ -184,7 +211,7 @@ def test_main_apply_repairs_or_clears_invalid_identifiers(
         encoding="utf-8",
     )
 
-    assert main(["--apply", str(csv_path)]) == 1
+    assert main(["--apply", str(csv_path)]) == 0
     assert csv_path.read_text(encoding="utf-8") == (
         "symbol,isin,cusip,figi\nBAD,,037833101,\n"
     )
@@ -200,6 +227,71 @@ def test_main_apply_leaves_consistency_issues_for_manual_review(
     original = "symbol,isin,cusip\nMISMATCH,US0378331005,594918104\n"
     csv_path.write_text(original, encoding="utf-8")
 
-    assert main(["--apply", str(csv_path)]) == 1
+    assert main(["--apply", str(csv_path)]) == 0
     assert csv_path.read_text(encoding="utf-8") == original
-    assert "unchanged for manual review" in capsys.readouterr().out
+    assert "consistency issues" in capsys.readouterr().out
+
+
+def test_main_baseline_emits_github_warning_only_for_new_issue(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
+    baseline = tmp_path / "baseline"
+    current = tmp_path / "current"
+    baseline.mkdir()
+    current.mkdir()
+    (baseline / "equities.csv").write_text(
+        "symbol,isin\nOLD,US0378331004\n",
+        encoding="utf-8",
+    )
+    (current / "equities.csv").write_text(
+        "symbol,isin\nOLD,US0378331004\nNEW,US0378331004\n",
+        encoding="utf-8",
+    )
+
+    assert (
+        main(
+            [
+                "--baseline",
+                str(baseline),
+                "--github-annotations",
+                str(current),
+            ]
+        )
+        == 0
+    )
+    output = capsys.readouterr().out
+    assert "::warning " in output
+    assert "NEW" in output
+    assert "OLD" not in output
+    assert "found 1 new and 0 resolved identifier findings" in output
+
+
+def test_main_writes_post_cleanup_findings_to_csv_report(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
+    csv_path = tmp_path / "equities.csv"
+    report_path = tmp_path / "identifier-findings.csv"
+    csv_path.write_text(
+        "symbol,isin,cusip\nBAD,US0378331004,037833101\n",
+        encoding="utf-8",
+    )
+
+    assert main(["--apply", "--report-file", str(report_path), str(csv_path)]) == 0
+
+    with report_path.open(encoding="utf-8", newline="") as report_file:
+        rows = list(csv.DictReader(report_file))
+    assert rows == [
+        {
+            "file": str(csv_path),
+            "line": "2",
+            "symbol": "BAD",
+            "field": "cusip",
+            "value": "037833101",
+            "problem": "checksum mismatch",
+            "actionable": "False",
+            "suggested_replacement": "",
+        }
+    ]
+    output = capsys.readouterr().out
+    assert "Wrote 1 identifier findings" in output
+    assert "037833101" not in output
