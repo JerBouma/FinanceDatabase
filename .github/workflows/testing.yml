@@ -11,6 +11,7 @@ on:
 
 jobs:
     test:
+        name: Run Tests
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v6
@@ -28,4 +29,29 @@ jobs:
             - name: Install dependencies
               run: uv sync
             - name: Run tests
-              run: uv run pytest tests/
+              run: >-
+                uv run pytest tests/
+                --deselect tests/test_validate_identifiers.py::test_database_identifiers_have_no_actionable_issues
+
+    validate-identifiers:
+        name: Validate Identifiers
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v6
+
+            - name: Install uv
+              uses: astral-sh/setup-uv@v7
+              with:
+                enable-cache: true
+
+            - name: Set up Python
+              uses: actions/setup-python@v6
+              with:
+                python-version: '3.10'
+
+            - name: Install dependencies
+              run: uv sync
+            - name: Validate identifiers in the live database
+              run: >-
+                uv run pytest -v
+                tests/test_validate_identifiers.py::test_database_identifiers_have_no_actionable_issues

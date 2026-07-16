@@ -49,6 +49,7 @@ dev = [
     "ruff>=0.9",
     "pytest-timeout>=2.3",
     "tqdm>=4.67",
+    "python-stdnum>=2.2",
 ]
 
 [tool.uv]
@@ -60,10 +61,14 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["financedatabase"]
+exclude = ["financedatabase/validation"]
 
 [tool.hatch.build.targets.sdist]
 include = [
     "financedatabase/**",
+]
+exclude = [
+    "financedatabase/validation",
 ]
 
 [tool.black]
