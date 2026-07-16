@@ -43,52 +43,54 @@ Change the asset class name to any of the file names as found [here](https://git
 
 ## Validating Identifiers
 
-Developers can audit populated ISIN, CUSIP, FIGI, composite FIGI, and
-share-class FIGI fields in the source CSV files:
+Populated ISIN, CUSIP, FIGI, composite FIGI, and share-class FIGI fields in the
+source CSV files are audited by the normal test suite, so running the tests
+you'd run before any Pull Request already covers this:
 
 ```bash
-uv run python scripts/validate_identifiers.py
+uv run pytest
 ```
 
-The command reports the file, line, symbol, value, and validation error for
-each invalid identifier without changing any files. Standardized validation is
-provided by the development dependency
+Standardized validation is provided by the development dependency
 [`python-stdnum`](https://pypi.org/project/python-stdnum/). It validates the
 [ISO 6166](https://www.iso.org/standard/78502.html) ISIN check digit,
 [CUSIP check digit](https://www.cusip.com/pdf/news/CUSIP-ACommonLanguageForEfficientMarkets_2022.pdf),
 and [FIGI format and check digit](https://www.openfigi.com/docs/figi-check-digit.pdf).
 For valid US and Canadian values, it also checks that the ISIN embeds the
-accompanying CUSIP. Findings are reported without failing the command so that
-existing data-quality issues do not block unrelated contributions.
+accompanying CUSIP; the ISIN is treated as authoritative, since the CUSIP is
+just its middle 9 characters (e.g. Apple's ISIN `US0378331005` embeds CUSIP
+`037833100`).
 
-After reviewing the report, pass `--apply` to repair deterministic formatting
-damage and clear other identifiers with invalid formats or checksums.
+If a row you touched holds an identifier that is clearly wrong (a bad
+checksum, a mangled format), the test fails and prints the file, line, symbol,
+value, and reason. Nothing is changed for you automatically. Findings that
+need a human judgement call instead (an ambiguous CUSIP, or an ISIN whose
+embedded national code isn't itself a valid CUSIP) are reported as a warning
+instead, so they stay visible without blocking your PR.
+
+To fix an identifier the test flagged as repairable, run the same audit with
+`--apply`:
+
+```bash
+uv run python -m financedatabase.validation.validate_identifiers database --apply
+```
+
 Canonical values returned by `python-stdnum` are repaired automatically. A
 `.0` suffix is removed from any supported identifier when the resulting value
 passes that identifier's validation. If leading zeros were also lost from a
 CUSIP, it is repaired only when its numeric value matches the CUSIP embedded in
-an independently valid US or Canadian ISIN. Instrument rows, valid identifiers,
-unrelated fields, quoting, line endings, and row ordering are preserved:
-
-```bash
-uv run python scripts/validate_identifiers.py --apply
-```
-
-Invalid ISIN and FIGI values without a deterministic repair are cleared.
-Unresolved CUSIPs and ISIN-CUSIP inconsistencies between two independently
-valid identifiers are not changed automatically because format and checksum
-validation cannot determine whether a CUSIP belongs to the stated instrument.
-Specific CSV files or directories can be supplied as positional arguments.
-These checks detect malformed identifiers and transcription errors; they do
-not confirm that an identifier was officially issued or belongs to the stated
-instrument.
-
-Pull requests are compared with their base revision and receive warning
-annotations only for identifier findings introduced by that pull request.
-Existing findings on untouched rows are not attributed to the contributor. On
-pushes to `main`, the database maintenance workflow applies deterministic
-repairs across the full source database and uploads remaining findings as a CSV
-artifact for maintainers.
+an independently valid US or Canadian ISIN. A CUSIP that disagrees with an
+otherwise-valid ISIN is overwritten with the ISIN's embedded value, unless that
+embedded value isn't itself a valid CUSIP, in which case the row is left for
+manual review. A populated CUSIP next to a valid ISIN from any other country is
+cleared outright, since only US and Canadian securities have a real CUSIP.
+Instrument rows, valid identifiers, unrelated fields, quoting, line endings,
+and row ordering are preserved. Invalid ISIN and FIGI values without a
+deterministic repair are cleared instead.
+Specific CSV files or directories can be supplied as positional arguments in
+place of `database`. These checks detect malformed identifiers and
+transcription errors; they do not confirm that an identifier was officially
+issued or belongs to the stated instrument.
 
 # Ways to Help Out
 

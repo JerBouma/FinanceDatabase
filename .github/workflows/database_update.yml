@@ -282,51 +282,8 @@ jobs:
         if: steps.run.outputs.status != '0'
         run: exit "${{ steps.run.outputs.status }}"
 
-  Validate-Identifiers:
-    needs: Add-New-Ticker
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: checkout repo content
-        uses: actions/checkout@v6
-        with:
-          ref: main
-      - name: pull changes
-        run: git pull https://${{secrets.PAT}}@github.com/JerBouma/FinanceDatabase.git main
-      - name: Install uv
-        uses: astral-sh/setup-uv@v7
-        with:
-          enable-cache: true
-      - name: setup python
-        uses: actions/setup-python@v6
-        with:
-          python-version: '3.10'
-      - name: Install dependencies
-        run: uv sync --locked
-      - name: Repair identifiers and report remaining findings
-        run: >-
-          uv run python scripts/validate_identifiers.py --apply
-          --report-file identifier-findings.csv database
-      - name: Upload identifier findings
-        uses: actions/upload-artifact@v7
-        with:
-          name: identifier-findings
-          path: identifier-findings.csv
-          if-no-files-found: error
-          retention-days: 30
-      - name: Commit identifier repairs
-        run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
-          git add database
-          if ! git diff --cached --quiet; then
-            git commit -m "Repair invalid security identifiers"
-            git push
-          fi
-
   Update-Compression-Files:
-    needs: Validate-Identifiers
+    needs: Add-New-Ticker
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content

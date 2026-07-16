@@ -1,14 +1,14 @@
 import csv
+import warnings
 from pathlib import Path
 
 import pytest
 
-from scripts.validate_identifiers import (
-    AuditComparison,
+from financedatabase.validation.validate_identifiers import (
     CleanupResult,
     apply_identifier_cleanup,
     audit_identifiers,
-    compare_audits,
+    cusip_from_authoritative_isin,
     main,
     repair_identifier,
     validate_cusip,
@@ -16,6 +16,8 @@ from scripts.validate_identifiers import (
     validate_isin,
     validate_isin_cusip_consistency,
 )
+
+DATABASE_DIR = Path(__file__).resolve().parents[1] / "database"
 
 
 @pytest.mark.parametrize(
@@ -92,6 +94,14 @@ def test_validate_isin_cusip_consistency() -> None:
     )
 
 
+def test_cusip_from_authoritative_isin_returns_embedded_value_when_valid() -> None:
+    assert cusip_from_authoritative_isin("US0378331005") == "037833100"
+
+
+def test_cusip_from_authoritative_isin_rejects_invalid_embedded_cusip() -> None:
+    assert cusip_from_authoritative_isin("US1234567890") is None
+
+
 def test_repair_identifier_requires_deterministic_evidence() -> None:
     assert repair_identifier("isin", " us0378331005 ", {}) == "US0378331005"
     assert repair_identifier("figi", " bbg000blnq16 ", {}) == "BBG000BLNQ16"
@@ -120,17 +130,17 @@ def test_audit_and_apply_invalid_identifiers(tmp_path: Path) -> None:
     assert result.identifiers_checked == 10
     assert result.relationships_checked == 2
     assert len(result.issues) == 4
-    assert sum(issue.actionable for issue in result.issues) == 2
-    assert apply_identifier_cleanup(csv_path) == CleanupResult(repaired=0, cleared=2)
+    assert sum(issue.actionable for issue in result.issues) == 3
+    assert apply_identifier_cleanup(csv_path) == CleanupResult(repaired=1, cleared=2)
     assert csv_path.read_text(encoding="utf-8") == (
         "symbol,isin,cusip,figi,composite_figi,shareclass_figi,delisted\n"
         "AAPL,US0378331005,037833100,BBG000BLNQ16,BBG000BLNQ16,BBG000BLNQ16,False\n"
         "BAD,,037833101,,,,False\n"
-        "MISMATCH,US0378331005,594918104,,,,False\n"
+        "MISMATCH,US0378331005,037833100,,,,False\n"
     )
 
 
-def test_apply_repairs_corroborated_cusip_and_preserves_ambiguous_value(
+def test_apply_repairs_corroborated_cusip_and_clears_isin_incompatible_cusip(
     tmp_path: Path,
 ) -> None:
     csv_path = tmp_path / "equities.csv"
@@ -145,12 +155,27 @@ def test_apply_repairs_corroborated_cusip_and_preserves_ambiguous_value(
     issues = {issue.symbol: issue for issue in result.issues}
     assert issues["ACER"].replacement == "004434205"
     assert issues["ABITARE"].replacement is None
-    assert not issues["ABITARE"].actionable
-    assert apply_identifier_cleanup(csv_path) == CleanupResult(repaired=1, cleared=0)
+    assert issues["ABITARE"].actionable
+    assert apply_identifier_cleanup(csv_path) == CleanupResult(repaired=1, cleared=1)
     assert csv_path.read_text(encoding="utf-8") == (
-        "symbol,isin,cusip\n"
-        "ACER,US0044342055,004434205\n"
-        "ABITARE,IT0005445280,2824100\n"
+        "symbol,isin,cusip\n" "ACER,US0044342055,004434205\n" "ABITARE,IT0005445280,\n"
+    )
+
+
+def test_apply_preserves_cusip_when_isin_is_missing_or_invalid(
+    tmp_path: Path,
+) -> None:
+    csv_path = tmp_path / "equities.csv"
+    csv_path.write_text(
+        "symbol,isin,cusip\nUNKNOWN,,2824100\n",
+        encoding="utf-8",
+    )
+
+    result = audit_identifiers([csv_path])
+    assert not result.issues[0].actionable
+    assert apply_identifier_cleanup(csv_path) == CleanupResult(repaired=0, cleared=0)
+    assert csv_path.read_text(encoding="utf-8") == (
+        "symbol,isin,cusip\nUNKNOWN,,2824100\n"
     )
 
 
@@ -163,30 +188,6 @@ def test_apply_preserves_quoting_and_line_endings(tmp_path: Path) -> None:
     assert apply_identifier_cleanup(csv_path) == CleanupResult(repaired=0, cleared=1)
     assert csv_path.read_bytes() == (
         b'symbol,name,isin,cusip\r\nBAD,"Unnecessarily quoted",,037833101\r\n'
-    )
-
-
-def test_compare_audits_reports_only_new_and_resolved_findings(tmp_path: Path) -> None:
-    baseline = tmp_path / "baseline"
-    current = tmp_path / "current"
-    baseline.mkdir()
-    current.mkdir()
-    (baseline / "equities.csv").write_text(
-        "symbol,isin\nOLD,US0378331004\nFIXED,US0378331004\n",
-        encoding="utf-8",
-    )
-    (current / "equities.csv").write_text(
-        "symbol,isin\nNEW,US0378331004\nOLD,US0378331004\nFIXED,US0378331005\n",
-        encoding="utf-8",
-    )
-
-    current_audit = audit_identifiers([current])
-    baseline_audit = audit_identifiers([baseline])
-    comparison = compare_audits(current_audit, baseline_audit, current, baseline)
-
-    assert comparison == AuditComparison(
-        new_issues=(current_audit.issues[0],),
-        resolved_issues=(baseline_audit.issues[1],),
     )
 
 
@@ -220,50 +221,36 @@ def test_main_apply_repairs_or_clears_invalid_identifiers(
     )
 
 
+def test_main_apply_repairs_cusip_from_authoritative_isin(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
+    csv_path = tmp_path / "equities.csv"
+    csv_path.write_text(
+        "symbol,isin,cusip\nMISMATCH,US0378331005,594918104\n",
+        encoding="utf-8",
+    )
+
+    assert main(["--apply", str(csv_path)]) == 0
+    assert csv_path.read_text(encoding="utf-8") == (
+        "symbol,isin,cusip\nMISMATCH,US0378331005,037833100\n"
+    )
+    assert (
+        "Repaired 1 and cleared 0 invalid identifier values" in capsys.readouterr().out
+    )
+
+
 def test_main_apply_leaves_consistency_issues_for_manual_review(
     tmp_path: Path, capsys: pytest.CaptureFixture[str]
 ) -> None:
     csv_path = tmp_path / "equities.csv"
-    original = "symbol,isin,cusip\nMISMATCH,US0378331005,594918104\n"
+    # US6604876473 is a valid ISIN whose embedded national code is not itself a
+    # valid CUSIP, so it cannot corroborate a repair of the stored (valid) CUSIP.
+    original = "symbol,isin,cusip\nMISMATCH,US6604876473,037833100\n"
     csv_path.write_text(original, encoding="utf-8")
 
     assert main(["--apply", str(csv_path)]) == 0
     assert csv_path.read_text(encoding="utf-8") == original
     assert "consistency issues" in capsys.readouterr().out
-
-
-def test_main_baseline_emits_github_warning_only_for_new_issue(
-    tmp_path: Path, capsys: pytest.CaptureFixture[str]
-) -> None:
-    baseline = tmp_path / "baseline"
-    current = tmp_path / "current"
-    baseline.mkdir()
-    current.mkdir()
-    (baseline / "equities.csv").write_text(
-        "symbol,isin\nOLD,US0378331004\n",
-        encoding="utf-8",
-    )
-    (current / "equities.csv").write_text(
-        "symbol,isin\nOLD,US0378331004\nNEW,US0378331004\n",
-        encoding="utf-8",
-    )
-
-    assert (
-        main(
-            [
-                "--baseline",
-                str(baseline),
-                "--github-annotations",
-                str(current),
-            ]
-        )
-        == 0
-    )
-    output = capsys.readouterr().out
-    assert "::warning " in output
-    assert "NEW" in output
-    assert "OLD" not in output
-    assert "found 1 new and 0 resolved identifier findings" in output
 
 
 def test_main_writes_post_cleanup_findings_to_csv_report(
@@ -295,3 +282,35 @@ def test_main_writes_post_cleanup_findings_to_csv_report(
     output = capsys.readouterr().out
     assert "Wrote 1 identifier findings" in output
     assert "037833101" not in output
+
+
+def test_database_identifiers_have_no_actionable_issues() -> None:
+    """Fail the contributor's own test run when a CSV holds a repairable or clearable
+    identifier, so bad data is caught before a PR is opened rather than auto-fixed
+    later. Run `uv run python -m financedatabase.validation.validate_identifiers --apply`
+    to fix these.
+    """
+    result = audit_identifiers([DATABASE_DIR])
+    actionable = [issue for issue in result.issues if issue.actionable]
+    non_actionable = [issue for issue in result.issues if not issue.actionable]
+
+    if non_actionable:
+        warnings.warn(
+            f"{len(non_actionable)} identifier finding(s) require manual review "
+            "(ambiguous CUSIPs or ISIN/CUSIP mismatches, e.g. dual-listed shares) "
+            "and were left unchanged; run "
+            "`uv run python -m financedatabase.validation.validate_identifiers database` "
+            "for the full report.",
+            stacklevel=1,
+        )
+
+    assert not actionable, (
+        f"{len(actionable)} repairable/removable identifier finding(s) found:\n"
+        + "\n".join(
+            f"{issue.path}:{issue.line_number}: {issue.field} ({issue.symbol}) "
+            f"{issue.value!r}: {issue.reason}"
+            for issue in actionable
+        )
+        + "\nRun `uv run python -m financedatabase.validation.validate_identifiers "
+        "database --apply` to fix these automatically."
+    )
