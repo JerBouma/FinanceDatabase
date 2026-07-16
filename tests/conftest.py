@@ -30,15 +30,39 @@ EXTENSIONS_MATCHING: dict[str, list[type]] = {
 }
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
-ASSET_CSVS = {
-    "cryptos": "summary",
-    "currencies": "summary",
-    "equities": "summary",
-    "etfs": "summary",
-    "funds": "summary",
-    "indices": "summary",
-    "moneymarkets": "summary",
+
+# Columns excluded per asset class when building the `<asset>_categories.gzip`
+# files. Must stay in sync with the `Update-Categorization-Files` job in
+# `.github/workflows/database_update.yml`.
+ASSET_CATEGORY_SKIP_COLS = {
+    "cryptos": {"name", "summary"},
+    "currencies": {"name"},
+    "equities": {"name", "summary", "website", "delisted"},
+    "etfs": {"name", "summary"},
+    "funds": {"name", "summary", "manager_name", "manager_bio"},
+    "indices": {"name"},
+    "moneymarkets": {"name"},
 }
+
+# Asset classes stored as one CSV per exchange under `database/<asset>/`
+# rather than a single `database/<asset>.csv`.
+ASSETS_SPLIT_BY_EXCHANGE = {"equities", "etfs", "funds"}
+
+
+def _load_asset_frame(asset: str) -> pd.DataFrame | None:
+    """Load an asset class from `database/` the same way the
+    Database-Update workflow does before compressing it."""
+    if asset in ASSETS_SPLIT_BY_EXCHANGE:
+        files = sorted((REPO_ROOT / "database" / asset).glob("*.csv"))
+        if not files:
+            return None
+        df = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
+    else:
+        csv_path = REPO_ROOT / "database" / f"{asset}.csv"
+        if not csv_path.exists():
+            return None
+        df = pd.read_csv(csv_path)
+    return df.sort_values(df.columns[0]).reset_index(drop=True)
 
 
 def _regenerate_compression_artifacts() -> None:
@@ -47,26 +71,22 @@ def _regenerate_compression_artifacts() -> None:
 
     The financedatabase library reads `compression/<asset>.bz2` and
     `compression/categories/<asset>_categories.gzip`; without this step those
-    artifacts lag the `database/*.csv` on a PR branch and tests silently
+    artifacts lag the `database/` CSVs on a PR branch and tests silently
     validate against `main` instead of the PR change.
     """
     compression_dir = REPO_ROOT / "compression"
     categories_dir = compression_dir / "categories"
-    for asset, name_col in ASSET_CSVS.items():
-        csv_path = REPO_ROOT / "database" / f"{asset}.csv"
-        if not csv_path.exists():
+    for asset, skip_cols in ASSET_CATEGORY_SKIP_COLS.items():
+        df = _load_asset_frame(asset)
+        if df is None:
             continue
-        df = pd.read_csv(csv_path)
         df.to_csv(compression_dir / f"{asset}.bz2", index=False, compression="bz2")
-        indexed = pd.read_csv(csv_path, index_col=0)
+        indexed = df.set_index(df.columns[0])
         categories: dict[str, Any] = {}
-        skip_cols = {"name", name_col, "manager_name", "manager_bio"}
         for column in indexed.columns:
             if column in skip_cols:
                 continue
-            vals = indexed[column].dropna().unique()
-            vals.sort()
-            categories[column] = vals
+            categories[column] = sorted(indexed[column].dropna().unique(), key=str)
         cat_df = pd.DataFrame.from_dict(categories, orient="index").reset_index()
         cat_df.to_csv(
             categories_dir / f"{asset}_categories.gzip",
@@ -79,7 +99,7 @@ def _snapshot_compression_artifacts() -> dict[pathlib.Path, bytes]:
     """Capture current bytes of compression artifacts so they can be restored."""
     compression_dir = REPO_ROOT / "compression"
     snapshot: dict[pathlib.Path, bytes] = {}
-    for asset in ASSET_CSVS:
+    for asset in ASSET_CATEGORY_SKIP_COLS:
         for path in (
             compression_dir / f"{asset}.bz2",
             compression_dir / "categories" / f"{asset}_categories.gzip",
