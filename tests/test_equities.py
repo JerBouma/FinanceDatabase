@@ -4,8 +4,10 @@ from __future__ import annotations
 
 import sys
 import types
+from pathlib import Path
 from typing import TYPE_CHECKING, Any
 
+import pandas as pd
 import pytest
 import requests as _requests
 
@@ -15,6 +17,31 @@ if TYPE_CHECKING:
     from tests.conftest import Recorder
 
 equities = fd.Equities(use_local_location=True)
+
+
+def test_na_symbol_survives_local_compression_round_trip() -> None:
+    """The valid ticker ``NA`` must not be interpreted as a missing index."""
+    assert "NA" in equities.data.index
+    assert not equities.data.index.hasnans
+    assert pd.isna(equities.data.loc["NA", "summary"])
+
+
+def test_na_symbol_survives_remote_compression_round_trip(monkeypatch) -> None:
+    """Remote BZ2 loading uses the same literal-NA handling as local loading."""
+
+    class _Response:
+        content = Path("compression/equities.bz2").read_bytes()
+
+        @staticmethod
+        def raise_for_status() -> None:
+            return None
+
+    monkeypatch.setattr(_requests, "get", lambda *args, **kwargs: _Response())
+    remote_equities = fd.Equities()
+
+    assert "NA" in remote_equities.data.index
+    assert not remote_equities.data.index.hasnans
+    assert pd.isna(remote_equities.data.loc["NA", "summary"])
 
 
 def test_select(recorder: Recorder) -> None:
