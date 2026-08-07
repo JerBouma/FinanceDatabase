@@ -193,15 +193,22 @@ jobs:
             fd_industry_groups = pd.read_excel(fd_categories_path, sheet_name='industry_group', index_col=1)
             fd_industries      = pd.read_excel(fd_categories_path, sheet_name='industry',       index_col=1)
 
-            # Read the equities database from per-exchange files
+            # Read the equities database from per-exchange files, preserving every
+            # cell exactly as written so the rewrite below is a no-op for untouched
+            # rows. dtype=str stops pandas inferring numeric-looking columns such as
+            # zipcode and cusip as float64 ("9763" -> "9763.0", "031162100" ->
+            # "31162100.0"). keep_default_na=False stops it reading the symbol "NA"
+            # (Nano Labs) as a missing value, which dropped that row on every run.
+            # Missing cells are therefore empty strings, not NaN, from here on.
             equities = pd.concat(
-                [pd.read_csv(f, index_col=0) for f in sorted(glob.glob('database/equities/*.csv'))],
+                [pd.read_csv(f, index_col=0, dtype=str, keep_default_na=False)
+                 for f in sorted(glob.glob('database/equities/*.csv'))],
             )
 
             # Derive the exchange -> ISO 10383 MIC map from the existing
             # (ISO-validated, one-to-one) data; unknown codes stay blank.
             exchange_to_mic = (
-                equities.dropna(subset=['mic'])
+                equities[equities['mic'] != '']
                 .drop_duplicates('exchange')
                 .set_index('exchange')['mic']
                 .to_dict()
@@ -225,10 +232,6 @@ jobs:
                     continue
 
                 except KeyError:
-                    # "NA" is parsed as NaN by pandas; normalise the index back to a string
-                    if pd.isna(index):
-                        index = "NA"
-
                     ticker_dict[index] = build_new_ticker(index, row, fd_industries, equities, market_cap, exchange_to_mic)
 
             # ---------------------------------------------------------------------------
@@ -255,21 +258,20 @@ jobs:
                     equities = pd.concat([equities, updated_companies.loc[new_indices]])
                     
                 equities = equities[~equities.index.duplicated(keep='first')]
-                equities = equities[equities.index.notna()]
 
-                equities = (
-                    equities
-                    .sort_index()
-                    .loc[equities.index.notna()]   # drop NaN index entries
-                )
+                # Drop entries with no symbol at all. Existing rows carry an empty
+                # string here; rows appended above may still carry NaN.
+                equities = equities[equities.index.notna() & (equities.index != '')]
+                equities = equities.sort_index()
 
                 for f in glob.glob('database/equities/*.csv'):
                     os.remove(f)
-                nan_mask = equities['exchange'].isna()
-                for exchange, group in equities[~nan_mask].groupby('exchange'):
+                # Rows without an exchange cannot be routed to a per-exchange file.
+                unknown_exchange = equities['exchange'].isna() | (equities['exchange'] == '')
+                for exchange, group in equities[~unknown_exchange].groupby('exchange'):
                     group.to_csv(f'database/equities/{exchange}.csv')
-                if nan_mask.any():
-                    equities[nan_mask].to_csv('database/equities/NAN.csv')
+                if unknown_exchange.any():
+                    equities[unknown_exchange].to_csv('database/equities/NAN.csv')
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'
@@ -303,31 +305,36 @@ jobs:
             import financedatabase as fd
             import pandas as pd
 
-            cryptos = pd.read_csv('database/cryptos.csv')
+            # Read every column as text and keep NA-like strings intact, so the
+            # compressed datasets match the source CSVs cell for cell: no "9763.0"
+            # in place of "9763", and no null symbol for the ticker "NA".
+            read = dict(dtype=str, keep_default_na=False)
+
+            cryptos = pd.read_csv('database/cryptos.csv', **read)
             cryptos = cryptos.sort_values(cryptos.columns[0]).reset_index(drop=True)
             cryptos.to_csv('compression/cryptos.bz2', index=False, compression='bz2')
 
-            currencies = pd.read_csv('database/currencies.csv')
+            currencies = pd.read_csv('database/currencies.csv', **read)
             currencies = currencies.sort_values(currencies.columns[0]).reset_index(drop=True)
             currencies.to_csv('compression/currencies.bz2', index=False, compression='bz2')
 
-            equities = pd.concat([pd.read_csv(f) for f in sorted(glob.glob('database/equities/*.csv'))], ignore_index=True)
+            equities = pd.concat([pd.read_csv(f, **read) for f in sorted(glob.glob('database/equities/*.csv'))], ignore_index=True)
             equities = equities.sort_values(equities.columns[0]).reset_index(drop=True)
             equities.to_csv('compression/equities.bz2', index=False, compression='bz2')
 
-            etfs = pd.concat([pd.read_csv(f) for f in sorted(glob.glob('database/etfs/*.csv'))], ignore_index=True)
+            etfs = pd.concat([pd.read_csv(f, **read) for f in sorted(glob.glob('database/etfs/*.csv'))], ignore_index=True)
             etfs = etfs.sort_values(etfs.columns[0]).reset_index(drop=True)
             etfs.to_csv('compression/etfs.bz2', index=False, compression='bz2')
 
-            funds = pd.concat([pd.read_csv(f) for f in sorted(glob.glob('database/funds/*.csv'))], ignore_index=True)
+            funds = pd.concat([pd.read_csv(f, **read) for f in sorted(glob.glob('database/funds/*.csv'))], ignore_index=True)
             funds = funds.sort_values(funds.columns[0]).reset_index(drop=True)
             funds.to_csv('compression/funds.bz2', index=False, compression='bz2')
 
-            indices = pd.read_csv('database/indices.csv')
+            indices = pd.read_csv('database/indices.csv', **read)
             indices = indices.sort_values(indices.columns[0]).reset_index(drop=True)
             indices.to_csv('compression/indices.bz2', index=False, compression='bz2')
 
-            moneymarkets = pd.read_csv('database/moneymarkets.csv')
+            moneymarkets = pd.read_csv('database/moneymarkets.csv', **read)
             moneymarkets = moneymarkets.sort_values(moneymarkets.columns[0]).reset_index(drop=True)
             moneymarkets.to_csv('compression/moneymarkets.bz2', index=False, compression='bz2')
       - name: Commit files and log
@@ -363,7 +370,13 @@ jobs:
               import financedatabase as fd
               import pandas as pd
 
-              cryptos = pd.read_csv("database/cryptos.csv", index_col=0)
+              # dtype=str keeps numeric-looking fields (zipcode, cusip) as text, so
+              # the generated option lists hold "9763" rather than "9763.0".
+              # A fixed mtime keeps the gzip artifacts byte-identical when their
+              # uncompressed content has not changed.
+              gzip = {'method': 'gzip', 'mtime': 0}
+
+              cryptos = pd.read_csv("database/cryptos.csv", index_col=0, dtype=str)
               cryptos_categories = {}
               for column in cryptos:
                   if column in ['name', 'summary']:
@@ -372,9 +385,9 @@ jobs:
                   cryptos_categories[column] = sorted(cryptos[column].dropna().unique(), key=str)
                   
               df_temp = pd.DataFrame.from_dict(cryptos_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/cryptos_categories.gzip', index=False, compression='gzip')
+              df_temp.to_csv('compression/categories/cryptos_categories.gzip', index=False, compression=gzip)
                   
-              currencies = pd.read_csv("database/currencies.csv", index_col=0)
+              currencies = pd.read_csv("database/currencies.csv", index_col=0, dtype=str)
               currencies_categories = {}
               for column in currencies:
                   if column in ['name']:
@@ -383,9 +396,9 @@ jobs:
                   currencies_categories[column] = sorted(currencies[column].dropna().unique(), key=str)
 
               df_temp = pd.DataFrame.from_dict(currencies_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/currencies_categories.gzip', index=False, compression='gzip')
+              df_temp.to_csv('compression/categories/currencies_categories.gzip', index=False, compression=gzip)
                   
-              equities = pd.concat([pd.read_csv(f, index_col=0) for f in sorted(glob.glob('database/equities/*.csv'))])
+              equities = pd.concat([pd.read_csv(f, index_col=0, dtype=str) for f in sorted(glob.glob('database/equities/*.csv'))])
               equities_categories = {}
               for column in equities:
                   if column in ['name', 'summary', 'website', 'delisted']:
@@ -394,9 +407,9 @@ jobs:
                   equities_categories[column] = sorted(equities[column].dropna().unique(), key=str)
                   
               df_temp = pd.DataFrame.from_dict(equities_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/equities_categories.gzip', index=False, compression='gzip')
+              df_temp.to_csv('compression/categories/equities_categories.gzip', index=False, compression=gzip)
                   
-              etfs = pd.concat([pd.read_csv(f, index_col=0) for f in sorted(glob.glob('database/etfs/*.csv'))])
+              etfs = pd.concat([pd.read_csv(f, index_col=0, dtype=str) for f in sorted(glob.glob('database/etfs/*.csv'))])
               etfs_categories = {}
               for column in etfs:
                   if column in ['name', 'summary']:
@@ -405,9 +418,9 @@ jobs:
                   etfs_categories[column] = sorted(etfs[column].dropna().unique(), key=str)
 
               df_temp = pd.DataFrame.from_dict(etfs_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/etfs_categories.gzip', index=False, compression='gzip')
+              df_temp.to_csv('compression/categories/etfs_categories.gzip', index=False, compression=gzip)
                   
-              funds = pd.concat([pd.read_csv(f, index_col=0) for f in sorted(glob.glob('database/funds/*.csv'))])
+              funds = pd.concat([pd.read_csv(f, index_col=0, dtype=str) for f in sorted(glob.glob('database/funds/*.csv'))])
               funds_categories = {}
               for column in funds:
                   if column in ['name', 'summary', 'manager_name', 'manager_bio']:
@@ -416,9 +429,9 @@ jobs:
                   funds_categories[column] = sorted(funds[column].dropna().unique(), key=str)
                   
               df_temp = pd.DataFrame.from_dict(funds_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/funds_categories.gzip', index=False, compression='gzip')
+              df_temp.to_csv('compression/categories/funds_categories.gzip', index=False, compression=gzip)
                   
-              indices = pd.read_csv("database/indices.csv", index_col=0)
+              indices = pd.read_csv("database/indices.csv", index_col=0, dtype=str)
               indices_categories = {}
               for column in indices:
                   if column in ['name']:
@@ -427,9 +440,9 @@ jobs:
                   indices_categories[column] = sorted(indices[column].dropna().unique(), key=str)
                   
               df_temp = pd.DataFrame.from_dict(indices_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/indices_categories.gzip', index=False, compression='gzip')
+              df_temp.to_csv('compression/categories/indices_categories.gzip', index=False, compression=gzip)
                   
-              moneymarkets = pd.read_csv("database/moneymarkets.csv", index_col=0)
+              moneymarkets = pd.read_csv("database/moneymarkets.csv", index_col=0, dtype=str)
               moneymarkets_categories = {}
               for column in moneymarkets:
                   if column in ['name']:
@@ -438,7 +451,7 @@ jobs:
                   moneymarkets_categories[column] = sorted(moneymarkets[column].dropna().unique(), key=str)
                   
               df_temp = pd.DataFrame.from_dict(moneymarkets_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/moneymarkets_categories.gzip', index=False, compression='gzip')
+              df_temp.to_csv('compression/categories/moneymarkets_categories.gzip', index=False, compression=gzip)
 
         - name: Commit files and log
           run: |

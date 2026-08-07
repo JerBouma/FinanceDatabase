@@ -60,7 +60,13 @@ class FinanceDatabase:
         the_path += self.FILE_NAME
         try:
             if use_local_location:
-                self.data = pd.read_csv(the_path, compression="bz2", index_col=0)
+                self.data = pd.read_csv(
+                    the_path,
+                    compression="bz2",
+                    index_col=0,
+                    keep_default_na=False,
+                    na_values=[""],
+                )
             else:
                 response = requests.get(the_path, headers=HEADERS, timeout=60)
                 response.raise_for_status()
@@ -69,6 +75,8 @@ class FinanceDatabase:
                     BytesIO(response.content),
                     compression="bz2",
                     index_col=0,
+                    keep_default_na=False,
+                    na_values=[""],
                 )
         except requests.exceptions.RequestException as error:
             raise ValueError(

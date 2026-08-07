@@ -52,16 +52,20 @@ ASSETS_SPLIT_BY_EXCHANGE = {"equities", "etfs", "funds"}
 def _load_asset_frame(asset: str) -> pd.DataFrame | None:
     """Load an asset class from `database/` the same way the
     Database-Update workflow does before compressing it."""
+    read_options = {"dtype": str, "keep_default_na": False}
     if asset in ASSETS_SPLIT_BY_EXCHANGE:
         files = sorted((REPO_ROOT / "database" / asset).glob("*.csv"))
         if not files:
             return None
-        df = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
+        df = pd.concat(
+            [pd.read_csv(f, **read_options) for f in files],
+            ignore_index=True,
+        )
     else:
         csv_path = REPO_ROOT / "database" / f"{asset}.csv"
         if not csv_path.exists():
             return None
-        df = pd.read_csv(csv_path)
+        df = pd.read_csv(csv_path, **read_options)
     return df.sort_values(df.columns[0]).reset_index(drop=True)
 
 
@@ -81,7 +85,10 @@ def _regenerate_compression_artifacts() -> None:
         if df is None:
             continue
         df.to_csv(compression_dir / f"{asset}.bz2", index=False, compression="bz2")
-        indexed = df.set_index(df.columns[0])
+        # Compression preserves empty cells as empty strings. Categorization
+        # intentionally treats those cells as missing so they are not emitted
+        # as valid options, matching the workflow's default NA handling.
+        indexed = df.set_index(df.columns[0]).replace("", pd.NA)
         categories: dict[str, Any] = {}
         for column in indexed.columns:
             if column in skip_cols:
@@ -91,7 +98,7 @@ def _regenerate_compression_artifacts() -> None:
         cat_df.to_csv(
             categories_dir / f"{asset}_categories.gzip",
             index=False,
-            compression="gzip",
+            compression={"method": "gzip", "mtime": 0},
         )
 
 

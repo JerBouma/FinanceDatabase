@@ -2,11 +2,51 @@
 
 from __future__ import annotations
 
+import glob
+import io
 from pathlib import Path
 
 import pandas as pd
 
 import financedatabase as fd
+
+
+def test_equities_read_rewrite_is_byte_identical() -> None:
+    """The workflow must not alter untouched equity source files."""
+    files = sorted(glob.glob("database/equities/*.csv"))
+    assert files, "no equities CSVs found under database/equities/"
+    source = {path: Path(path).read_bytes() for path in files}
+
+    equities = pd.concat(
+        [
+            pd.read_csv(
+                io.BytesIO(source[path]),
+                index_col=0,
+                dtype=str,
+                keep_default_na=False,
+            )
+            for path in files
+        ]
+    )
+    equities = equities[~equities.index.duplicated(keep="first")]
+    equities = equities[equities.index.notna() & (equities.index != "")]
+    equities = equities.sort_index()
+
+    assert "NA" in equities.index
+    unknown_exchange = equities["exchange"].isna() | (equities["exchange"] == "")
+    regenerated: dict[str, bytes] = {}
+    for exchange, group in equities[~unknown_exchange].groupby("exchange"):
+        regenerated[f"database/equities/{exchange}.csv"] = group.to_csv(
+            lineterminator="\n"
+        ).encode()
+    if unknown_exchange.any():
+        regenerated["database/equities/NAN.csv"] = (
+            equities[unknown_exchange].to_csv(lineterminator="\n").encode()
+        )
+
+    assert set(regenerated) == set(source)
+    changed = [path for path in files if regenerated[path] != source[path]]
+    assert not changed, f"workflow read/rewrite changed untouched files: {changed}"
 
 
 def _load(asset: str):
