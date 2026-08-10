@@ -112,6 +112,10 @@ For Equities, these are the categories. Other asset classes follow a similar lay
 
 - **symbol**: set the symbol of the company.
 - **name**: enter the full company name.
+- **instrument_type**: classify the listed security as `Common Stock`,
+  `Depositary Receipt`, or `Partnership Interest`. Leave unresolved legacy rows
+  blank; non-equity securities such as preferred stock, warrants, rights,
+  bundled units, debt, ETFs, and funds do not belong in the equities dataset.
 - **summary**: enter a brief company description, explaining the purpose of the company.
 - **currency**: select the denominated currency of this specific ticker (based on exchange).
 - **sector**: select the sector that belongs to the company (follows GICS)

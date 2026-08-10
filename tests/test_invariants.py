@@ -9,6 +9,13 @@ from pathlib import Path
 import pandas as pd
 
 import financedatabase as fd
+from financedatabase.validation.update_us_equities import (
+    ALLOWED_INSTRUMENT_TYPES,
+    BACKFILL_SOURCES,
+    EQUITY_COLUMNS,
+    classify_instrument,
+    load_overrides,
+)
 
 
 def test_equities_read_rewrite_is_byte_identical() -> None:
@@ -47,6 +54,49 @@ def test_equities_read_rewrite_is_byte_identical() -> None:
     assert set(regenerated) == set(source)
     changed = [path for path in files if regenerated[path] != source[path]]
     assert not changed, f"workflow read/rewrite changed untouched files: {changed}"
+
+
+def test_equity_schema_and_instrument_types_are_consistent() -> None:
+    """Every exchange uses one schema and only normalized instrument types."""
+    expected = ["symbol", *EQUITY_COLUMNS]
+    invalid: dict[str, list[str]] = {}
+    for path in sorted(Path("database/equities").glob("*.csv")):
+        frame = pd.read_csv(path, dtype=str, keep_default_na=False)
+        assert list(frame.columns) == expected, f"Unexpected equity schema in {path}"
+        values = sorted(
+            set(frame["instrument_type"]) - {""} - set(ALLOWED_INSTRUMENT_TYPES)
+        )
+        if values:
+            invalid[str(path)] = values
+    assert not invalid, f"Invalid equity instrument types: {invalid}"
+
+
+def test_targeted_us_equities_have_no_confirmed_non_equity_names() -> None:
+    """The recurrent US import must not repopulate confirmed non-equities."""
+    overrides = load_overrides()
+    offenders: list[tuple[str, str, str]] = []
+    for exchange, source_exchange in BACKFILL_SOURCES.items():
+        path = Path("database/equities") / f"{exchange}.csv"
+        if not path.exists():
+            continue
+        frame = pd.read_csv(path, dtype=str, keep_default_na=False)
+        for row in frame.to_dict(orient="records"):
+            symbol = row["symbol"].strip().upper()
+            decision = classify_instrument(
+                row["name"], overrides.get((source_exchange, symbol))
+            )
+            current = row["instrument_type"].strip()
+            if decision.status == "rejected" or (
+                current
+                and (
+                    decision.status != "accepted" or current != decision.instrument_type
+                )
+            ):
+                offenders.append((exchange, symbol, decision.instrument_type))
+    assert not offenders, (
+        "Confirmed non-equity rows remain in targeted US equity files: "
+        f"{offenders[:20]} ({len(offenders)} total)"
+    )
 
 
 def _load(asset: str):

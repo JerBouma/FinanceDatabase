@@ -31,6 +31,7 @@ class Equities(FinanceDatabase):
         mic: str | list | None = None,
         market: str | list | None = None,
         market_cap: str | list | None = None,
+        instrument_type: str | list | None = None,
         only_primary_listing: bool = False,
         exclude_delisted: bool = True,
     ) -> FinanceFrame:
@@ -60,6 +61,8 @@ class Equities(FinanceDatabase):
                 If not provided, returns data for all markets.
             market_cap (str | list | None): Specific market cap or list of market caps to filter equities.
                 If not provided, returns data for all market caps.
+            instrument_type (str | list | None): Specific instrument type or list of
+                instrument types to filter equities. If not provided, returns all types.
             only_primary_listing (bool, optional): Whether to only include the primary listing.
                 If False, you will receive data for equities from different exchanges.
                 Default is False.
@@ -204,6 +207,28 @@ class Equities(FinanceDatabase):
             equities = equities[
                 equities["market_cap"].str.lower().isin(market_caps_lower)
             ]
+        if instrument_type:
+            instrument_types = (
+                [instrument_type]
+                if isinstance(instrument_type, str)
+                else instrument_type
+            )
+            instrument_types_lower = [value.lower() for value in instrument_types]
+            options_lower = [
+                option.lower()
+                for option in self.show_options(selection="instrument_type")
+            ]
+            for value_lower, value_actual in zip(
+                instrument_types_lower, instrument_types
+            ):
+                if value_lower not in options_lower:
+                    raise ValueError(
+                        f"The instrument type '{value_actual}' is not available in the database. "
+                        "Please check the available instrument types using the 'show_options' method."
+                    )
+            equities = equities[
+                equities["instrument_type"].str.lower().isin(instrument_types_lower)
+            ]
 
         if only_primary_listing:
             only_primary_listings_equities = equities[
@@ -233,6 +258,7 @@ class Equities(FinanceDatabase):
         mic: str | list | None = None,
         market: str | list | None = None,
         market_cap: str | list | None = None,
+        instrument_type: str | list | None = None,
         exclude_delisted: bool = True,
     ) -> dict | np.ndarray:
         """
@@ -240,13 +266,14 @@ class Equities(FinanceDatabase):
 
         This method returns a series containing all available options for the specified
         selection, which can be one of the following: "currency", "sector", "industry_group",
-        "industry", "exchange", "market", "country", "market_cap".
+        "industry", "exchange", "mic", "market", "country", "market_cap", or
+        "instrument_type".
 
         Args:
             selection (str):
                 The selection you want to see the options for. Choose from:
-                "currency", "sector", "industry_group", "industry", "exchange",
-                "market", "country", "state", "zip_code", "market_cap".
+                "currency", "sector", "industry_group", "industry", "exchange", "mic",
+                "market", "country", "market_cap", or "instrument_type".
                 If None, returns all options for the specified country, sector, industry group
                 and industry.
             country (str | list | None): Specific country or list of countries to filter options.
@@ -265,6 +292,8 @@ class Equities(FinanceDatabase):
                 If not provided, returns data for all markets.
             market_cap (str | list | None): Specific market cap or list of market caps to filter options.
                 If not provided, returns data for all market caps.
+            instrument_type (str | list | None): Specific instrument type or list of
+                instrument types to filter options.
 
         Raises:
             ValueError: If the selection variable provided is not valid.
@@ -285,6 +314,7 @@ class Equities(FinanceDatabase):
             "market",
             "country",
             "market_cap",
+            "instrument_type",
         ]
 
         if selection is not None and selection not in selection_values:
@@ -303,6 +333,7 @@ class Equities(FinanceDatabase):
             mic=mic,
             market=market,
             market_cap=market_cap,
+            instrument_type=instrument_type,
             exclude_delisted=exclude_delisted,
         )
 

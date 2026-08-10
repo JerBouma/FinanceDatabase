@@ -276,6 +276,7 @@ def test_select_with_invalid_value_raises() -> None:
         "industry",
         "exchange",
         "mic",
+        "instrument_type",
     ]:
         kwargs: dict[str, Any] = {col: "__definitely_not_a_real_value__"}
         with pytest.raises(ValueError, match="not available in the database"):
@@ -289,11 +290,33 @@ def test_select_mic() -> None:
     assert (result["mic"] == "XNAS").all()
 
 
+def test_select_instrument_type() -> None:
+    """`instrument_type` is a case-insensitive scalar/list filter."""
+    common = equities.select(instrument_type="common stock")
+    assert not common.empty
+    assert set(common["instrument_type"]) == {"Common Stock"}
+
+    multiple = equities.select(instrument_type=["Common Stock", "Depositary Receipt"])
+    assert set(multiple["instrument_type"]) <= {
+        "Common Stock",
+        "Depositary Receipt",
+    }
+
+
 def test_mic_in_show_options() -> None:
     """`mic` is a selectable option exposing real MIC values."""
     assert "mic" in equities.show_options()
     mics = list(equities.show_options(selection="mic"))
     assert {"XNAS", "XLON", "XPAR"} <= set(mics)
+
+
+def test_instrument_type_in_show_options() -> None:
+    assert "instrument_type" in equities.show_options()
+    assert set(equities.show_options(selection="instrument_type")) <= {
+        "Common Stock",
+        "Depositary Receipt",
+        "Partnership Interest",
+    }
 
 
 def test_exchange_mic_one_to_one() -> None:
