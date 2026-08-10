@@ -296,9 +296,12 @@ def test_select_instrument_type() -> None:
     assert not common.empty
     assert set(common["instrument_type"]) == {"Common Stock"}
 
-    multiple = equities.select(instrument_type=["Common Stock", "Depositary Receipt"])
-    assert set(multiple["instrument_type"]) <= {
+    multiple = equities.select(
+        instrument_type=["Common Stock", "Preferred Stock", "Depositary Receipt"]
+    )
+    assert set(multiple["instrument_type"]) == {
         "Common Stock",
+        "Preferred Stock",
         "Depositary Receipt",
     }
 
@@ -312,8 +315,9 @@ def test_mic_in_show_options() -> None:
 
 def test_instrument_type_in_show_options() -> None:
     assert "instrument_type" in equities.show_options()
-    assert set(equities.show_options(selection="instrument_type")) <= {
+    assert set(equities.show_options(selection="instrument_type")) == {
         "Common Stock",
+        "Preferred Stock",
         "Depositary Receipt",
         "Partnership Interest",
     }

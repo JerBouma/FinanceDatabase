@@ -28,6 +28,7 @@ CATEGORIES_PATH = (
 
 ALLOWED_INSTRUMENT_TYPES = (
     "Common Stock",
+    "Preferred Stock",
     "Depositary Receipt",
     "Partnership Interest",
 )
@@ -56,11 +57,11 @@ EQUITY_COLUMNS = (
     "delisted",
 )
 REJECTED_INSTRUMENT_TYPES = (
-    "Preferred Stock",
     "Warrant",
     "Unit",
     "Right",
     "Debt Security",
+    "Hybrid Security",
     "Exchange-Traded Product",
     "Fund",
 )
@@ -97,13 +98,19 @@ COMMON_PATTERN = re.compile(
     r"\bcommon (?:stock|shares?)\b|\bordinary shares?\b",
     re.IGNORECASE,
 )
+PREFERRED_PATTERN = re.compile(
+    r"\bpreferred (?:stock|shares?|units?|series)\b"
+    r"|\bdepositary shares?.{0,120}\bpreferred\b"
+    r"|\bpreference shares?\b|\bpfd(?:\s+ser(?:ies)?)?\b",
+    re.IGNORECASE,
+)
 REJECTION_PATTERNS = (
     (
-        "Preferred Stock",
+        "Hybrid Security",
         re.compile(
-            r"\bpreferred (?:stock|shares?|units?|series|securities)\b"
-            r"|\bdepositary shares?.{0,120}\bpreferred\b"
-            r"|\bpreference shares?\b|\bpfd(?:\s+ser(?:ies)?)?\b",
+            r"\btrust preferred securities\b"
+            r"|\bcapital trust\b.{0,80}\bpfd\b"
+            r"|\btr pfd (?:secs?|securities)\b",
             re.IGNORECASE,
         ),
     ),
@@ -168,6 +175,7 @@ def classify_instrument(
     partnership = bool(PARTNERSHIP_PATTERN.search(normalized_name))
     depositary = bool(DEPOSITARY_PATTERN.search(normalized_name))
     common = bool(COMMON_PATTERN.search(normalized_name))
+    preferred = bool(PREFERRED_PATTERN.search(normalized_name))
     rejected = [
         instrument_type
         for instrument_type, pattern in REJECTION_PATTERNS
@@ -179,11 +187,16 @@ def classify_instrument(
     if partnership:
         rejected = [value for value in rejected if value != "Unit"]
 
-    accepted_type = (
-        "Partnership Interest"
-        if partnership
-        else "Depositary Receipt" if depositary else "Common Stock" if common else ""
-    )
+    if preferred:
+        accepted_type = "Preferred Stock"
+    elif partnership:
+        accepted_type = "Partnership Interest"
+    elif depositary:
+        accepted_type = "Depositary Receipt"
+    elif common:
+        accepted_type = "Common Stock"
+    else:
+        accepted_type = ""
     if rejected:
         # Explicit non-equity evidence wins over words describing the security
         # into which it converts or the ownership interest it bundles.

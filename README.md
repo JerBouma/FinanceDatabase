@@ -462,7 +462,7 @@ Some tickers are merely holdings of companies and therefore do not really have a
 
 > **How does the database handle changes to companies over time - like symbol/exchange migration, mergers, bankruptcies, or symbols getting reused?**
 
-For American exchanges, the database automatically checks for new listings every Sunday using data from [this repository](https://github.com/rreichel3/US-Stock-Symbols). Because that source also contains warrants, preferred stock, units, rights, debt, and exchange-traded products, new symbols are admitted only when their name or a reviewed override establishes an allowed equity `instrument_type`. Ambiguous symbols are quarantined for review instead of being inserted automatically. Delisted tickers are intentionally retained for historical research purposes.
+For American exchanges, the database automatically checks for new listings every Sunday using data from [this repository](https://github.com/rreichel3/US-Stock-Symbols). Because that source also contains warrants, units, rights, debt, funds, and exchange-traded products, new symbols are admitted only when their name or a reviewed override establishes an allowed equity `instrument_type`. Ambiguous symbols are quarantined for review instead of being inserted automatically. Delisted tickers are intentionally retained for historical research purposes.
 
 While professional financial data services like Bloomberg charge over $25,000 annually for comprehensive market data maintenance, this database relies on community contributions. When companies outside American exchanges undergo changes (migrations, mergers, bankruptcies), we depend on community members to identify and update these entries.
 

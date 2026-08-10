@@ -43,25 +43,30 @@ from financedatabase.validation.update_us_equities import (
         ("Example Acquisition Corp. Units", "rejected", "Unit"),
         ("Example Acquisition Corp. Rights", "rejected", "Right"),
         ("Example 7.25% Senior Notes due 2031", "rejected", "Debt Security"),
-        ("Example Preferred Stock", "rejected", "Preferred Stock"),
+        ("Example Preferred Stock", "accepted", "Preferred Stock"),
         (
             "Example Depositary Shares representing Preferred Stock",
-            "rejected",
+            "accepted",
             "Preferred Stock",
         ),
         (
             "Example L.P. Series B Preferred Units representing limited partner interests",
-            "rejected",
+            "accepted",
             "Preferred Stock",
         ),
         (
             "Example Sponsored ADR Representing Perpetual Preferred Series G",
-            "rejected",
+            "accepted",
             "Preferred Stock",
         ),
-        ("Example Corp. 6.50% Pfd Ser A", "rejected", "Preferred Stock"),
-        ("Example Corp. Preference Shares", "rejected", "Preferred Stock"),
-        ("Example Trust Preferred Securities", "rejected", "Preferred Stock"),
+        ("Example Corp. 6.50% Pfd Ser A", "accepted", "Preferred Stock"),
+        ("Example Corp. Preference Shares", "accepted", "Preferred Stock"),
+        ("Example Trust Preferred Securities", "rejected", "Hybrid Security"),
+        (
+            "Example Capital Trust II PFD TR 7.20%",
+            "rejected",
+            "Hybrid Security",
+        ),
         ("Example ETF", "rejected", "Exchange-Traded Product"),
         ("Example Income Fund Common Shares", "rejected", "Fund"),
         ("Example Municipal Target Term Trust", "rejected", "Fund"),
@@ -301,9 +306,10 @@ def test_run_backfill_populates_removes_and_retains_ambiguous(tmp_path: Path) ->
     frame = pd.read_csv(
         equities_dir / "NMS.csv", index_col=0, dtype=str, keep_default_na=False
     )
-    assert set(frame.index) == {"COMMON", "PARTNER", "PLAIN"}
+    assert set(frame.index) == {"COMMON", "PARTNER", "PREFERRED", "PLAIN"}
     assert frame.loc["COMMON", "instrument_type"] == "Common Stock"
     assert frame.loc["PARTNER", "instrument_type"] == "Partnership Interest"
+    assert frame.loc["PREFERRED", "instrument_type"] == "Preferred Stock"
     assert frame.loc["PLAIN", "instrument_type"] == ""
-    assert counts["removed"] == 2
-    assert counts["updated"] == 2
+    assert counts["removed"] == 1
+    assert counts["updated"] == 3
