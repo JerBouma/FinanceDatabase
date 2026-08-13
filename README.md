@@ -490,4 +490,4 @@ If you have any questions about the FinanceDatabase or would like to share with 
 
 f you'd like to support my efforts, either help me out via the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md) or [Buy me a Coffee](https://www.buymeacoffee.com/jerbouma).
 
-[![Star History Chart](https://api.star-history.com/svg?repos=JerBouma/FinanceDatabase&type=Date)](https://star-history.com/#JerBouma/FinanceDatabase&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=JerBouma/FinanceDatabase&type=Date)](https://star-history.dera.page/#JerBouma/FinanceDatabase&Date)
