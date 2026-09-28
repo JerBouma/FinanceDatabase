@@ -82,7 +82,10 @@ class Equities(FinanceDatabase):
             countries = [country] if isinstance(country, str) else country
             countries_lower = [country.lower() for country in countries]
             options_lower = [
-                option.lower() for option in self.show_options(selection="country")
+                option.lower()
+                for option in self.show_options(
+                    selection="country", exclude_delisted=exclude_delisted
+                )
             ]
             for country_lower, country_actual in zip(countries_lower, countries):
                 if country_lower not in options_lower:
@@ -95,7 +98,10 @@ class Equities(FinanceDatabase):
             sectors = [sector] if isinstance(sector, str) else sector
             sectors_lower = [sector.lower() for sector in sectors]
             options_lower = [
-                option.lower() for option in self.show_options(selection="sector")
+                option.lower()
+                for option in self.show_options(
+                    selection="sector", exclude_delisted=exclude_delisted
+                )
             ]
             for sector_lower, sector_actual in zip(sectors_lower, sectors):
                 if sector_lower not in options_lower:
@@ -111,7 +117,9 @@ class Equities(FinanceDatabase):
             industry_groups_lower = [group.lower() for group in industry_groups]
             options_lower = [
                 option.lower()
-                for option in self.show_options(selection="industry_group")
+                for option in self.show_options(
+                    selection="industry_group", exclude_delisted=exclude_delisted
+                )
             ]
             for group_lower, group_actual in zip(
                 industry_groups_lower, industry_groups
@@ -128,7 +136,10 @@ class Equities(FinanceDatabase):
             industries = [industry] if isinstance(industry, str) else industry
             industries_lower = [industry.lower() for industry in industries]
             options_lower = [
-                option.lower() for option in self.show_options(selection="industry")
+                option.lower()
+                for option in self.show_options(
+                    selection="industry", exclude_delisted=exclude_delisted
+                )
             ]
             for industry_lower, industry_actual in zip(industries_lower, industries):
                 if industry_lower not in options_lower:
@@ -141,7 +152,10 @@ class Equities(FinanceDatabase):
             currencies = [currency] if isinstance(currency, str) else currency
             currencies_lower = [currency.lower() for currency in currencies]
             options_lower = [
-                option.lower() for option in self.show_options(selection="currency")
+                option.lower()
+                for option in self.show_options(
+                    selection="currency", exclude_delisted=exclude_delisted
+                )
             ]
             for currency_lower, currency_actual in zip(currencies_lower, currencies):
                 if currency_lower not in options_lower:
@@ -154,7 +168,10 @@ class Equities(FinanceDatabase):
             exchanges = [exchange] if isinstance(exchange, str) else exchange
             exchanges_lower = [exchange.lower() for exchange in exchanges]
             options_lower = [
-                option.lower() for option in self.show_options(selection="exchange")
+                option.lower()
+                for option in self.show_options(
+                    selection="exchange", exclude_delisted=exclude_delisted
+                )
             ]
             for exchange_lower, exchange_actual in zip(exchanges_lower, exchanges):
                 if exchange_lower not in options_lower:
@@ -167,7 +184,10 @@ class Equities(FinanceDatabase):
             mics = [mic] if isinstance(mic, str) else mic
             mics_lower = [mic.lower() for mic in mics]
             options_lower = [
-                option.lower() for option in self.show_options(selection="mic")
+                option.lower()
+                for option in self.show_options(
+                    selection="mic", exclude_delisted=exclude_delisted
+                )
             ]
             for mic_lower, mic_actual in zip(mics_lower, mics):
                 if mic_lower not in options_lower:
@@ -180,7 +200,10 @@ class Equities(FinanceDatabase):
             markets = [market] if isinstance(market, str) else market
             markets_lower = [market.lower() for market in markets]
             options_lower = [
-                option.lower() for option in self.show_options(selection="market")
+                option.lower()
+                for option in self.show_options(
+                    selection="market", exclude_delisted=exclude_delisted
+                )
             ]
             for market_lower, market_actual in zip(markets_lower, markets):
                 if market_lower not in options_lower:
@@ -193,7 +216,10 @@ class Equities(FinanceDatabase):
             market_caps = [market_cap] if isinstance(market_cap, str) else market_cap
             market_caps_lower = [cap.lower() for cap in market_caps]
             options_lower = [
-                option.lower() for option in self.show_options(selection="market_cap")
+                option.lower()
+                for option in self.show_options(
+                    selection="market_cap", exclude_delisted=exclude_delisted
+                )
             ]
             for cap_lower, cap_actual in zip(market_caps_lower, market_caps):
                 if cap_lower not in options_lower:
