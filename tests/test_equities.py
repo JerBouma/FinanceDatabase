@@ -19,6 +19,31 @@ if TYPE_CHECKING:
 equities = fd.Equities(use_local_location=True)
 
 
+EQUITY_SELECTION_FIELDS = (
+    "country",
+    "sector",
+    "industry_group",
+    "industry",
+    "currency",
+    "exchange",
+    "mic",
+    "market",
+    "market_cap",
+)
+
+
+@pytest.fixture
+def equities_with_delisted_options(monkeypatch):
+    """Provide one live and one delisted value for every selectable field."""
+    values = {
+        field: [f"Live {field}", f"Delisted {field}"]
+        for field in EQUITY_SELECTION_FIELDS
+    }
+    values["delisted"] = [False, True]
+    monkeypatch.setattr(equities, "data", pd.DataFrame(values))
+    return equities
+
+
 def test_na_symbol_survives_local_compression_round_trip() -> None:
     """The valid ticker ``NA`` must not be interpreted as a missing index."""
     assert "NA" in equities.data.index
@@ -99,6 +124,51 @@ def test_select(recorder: Recorder) -> None:
             only_primary_listing=True,
         ).iloc[:5]
     )
+
+
+@pytest.mark.parametrize("field", EQUITY_SELECTION_FIELDS)
+def test_select_allows_delisted_only_scalar_when_requested(
+    equities_with_delisted_options, field: str
+) -> None:
+    """A delisted-only scalar filter is valid when delisted equities are included."""
+    delisted_value = f"Delisted {field}"
+
+    result = equities_with_delisted_options.select(
+        **{field: delisted_value}, exclude_delisted=False
+    )
+
+    assert result.index.tolist() == [1]
+    with pytest.raises(ValueError, match="not available in the database"):
+        equities_with_delisted_options.select(**{field: delisted_value})
+    with pytest.raises(ValueError, match="not available in the database"):
+        equities_with_delisted_options.select(
+            **{field: delisted_value}, exclude_delisted=True
+        )
+
+
+@pytest.mark.parametrize("field", EQUITY_SELECTION_FIELDS)
+def test_select_allows_delisted_only_list_when_requested(
+    equities_with_delisted_options, field: str
+) -> None:
+    """A delisted-only list filter is valid when delisted equities are included."""
+    delisted_value = f"Delisted {field}"
+
+    result = equities_with_delisted_options.select(
+        **{field: [delisted_value]}, exclude_delisted=False
+    )
+
+    assert result.index.tolist() == [1]
+
+
+@pytest.mark.parametrize("field", EQUITY_SELECTION_FIELDS)
+def test_select_rejects_unknown_values_when_delisted_are_requested(
+    equities_with_delisted_options, field: str
+) -> None:
+    """Including delisted equities does not permit unknown filter values."""
+    with pytest.raises(ValueError, match="not available in the database"):
+        equities_with_delisted_options.select(
+            **{field: "__definitely_not_a_real_value__"}, exclude_delisted=False
+        )
 
 
 def test_show_options(recorder: Recorder) -> None:
