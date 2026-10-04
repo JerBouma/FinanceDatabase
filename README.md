@@ -31,7 +31,7 @@ Some key statistics of the database:
 
 | | Asset class | Symbols | Actively listed | Exchanges | Coverage |
 | :-: | :-- | --: | --: | --: | :-- |
-| 🏢 | **Equities** | 117,929 | 103,600 | 84 | 11 sectors · 80 industries · 117 countries |
+| 🏢 | **Equities** | 117,929 | 103,600 | 84 | 11 sectors · 76 industries · 117 countries |
 | 📦 | **ETFs** | 42,057 | 41,450 | 53 | 593 issuers · 43 categories |
 | 💼 | **Funds** | 57,853 | – | 33 | 1,540 fund families · 74 categories |
 | 📈 | **Indices** | 91,181 | – | 63 | 42 categories |
@@ -61,14 +61,14 @@ pie showData
 
 | Sector | Equities |
 | :-- | --: |
-| Industrials | 13,922 |
+| Industrials | 13,924 |
 | Financials | 13,211 |
-| Materials | 12,663 |
+| Materials | 12,662 |
 | Information Technology | 10,615 |
 | Health Care | 10,249 |
 | Consumer Discretionary | 9,895 |
 | Consumer Staples | 5,206 |
-| Real Estate | 4,427 |
+| Real Estate | 4,426 |
 | Communication Services | 4,078 |
 | Energy | 3,993 |
 | Utilities | 2,257 |
