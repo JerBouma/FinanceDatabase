@@ -1,0 +1,29 @@
+# This file is meant for deploying the MCP server using Docker Compose. This, together with
+# the Dockerfile, makes it possible to create a localhost deployment of the MCP server,
+# which can be used for testing and development purposes or for running on a server.
+#
+# Start with `docker compose up -d`; the server listens on http://localhost:8000/mcp.
+
+services:
+  finance-database-mcp:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      MCP_TRANSPORT: streamable-http
+      MCP_HOST: "0.0.0.0"
+      MCP_PORT: "8000"
+      FINANCEDATABASE_CACHE_DIR: /data/financedatabase
+    volumes:
+      # Keeps the downloaded database across restarts, so it isn't fetched again.
+      - fd_cache:/data/financedatabase
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+volumes:
+  fd_cache:

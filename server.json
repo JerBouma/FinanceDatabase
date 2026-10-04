@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.JerBouma/financedatabase",
+  "title": "Finance Database",
+  "description": "300,000+ equities, ETFs, funds, indices, currencies, cryptos and money markets, categorised.",
+  "repository": {
+    "url": "https://github.com/JerBouma/FinanceDatabase",
+    "source": "github"
+  },
+  "version": "2.4.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "financedatabase",
+      "version": "2.4.0",
+      "transport": {
+        "type": "stdio",
+        "command": "financedatabase-mcp"
+      }
+    }
+  ]
+}
