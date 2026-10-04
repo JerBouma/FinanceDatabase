@@ -16,8 +16,12 @@ Sources (all public, official):
 
 Safety rules, so an automated run never adds junk or duplicates:
 
-- Each source is fetched and parsed on its own. A download error, a format change or a
-  suspiciously short list skips that source only; the rest of the run continues.
+- Each source is fetched, parsed and applied on its own. A blocked download (bot check, rate
+  limit, HTTP error, timeout), a format change, a suspiciously short list or an unexpected
+  error skips that source only: its partial changes are rolled back and the other sources
+  continue. Enrichment failures (OpenFIGI, optional lists) only mean fewer filled fields.
+  An error outside the sources writes nothing and still exits cleanly, so this script can
+  never fail the weekly pipeline (the workflow step is also `continue-on-error`).
 - Rows are only ever added; nothing is removed. A symbol is added only when it exists in no
   asset class at all (no cross-asset collisions).
 - A candidate is skipped when an existing row in the same exchange file has the same symbol
@@ -27,6 +31,19 @@ Safety rules, so an automated run never adds junk or duplicates:
   the old row is marked `delisted=True`. More than `MAX_DELISTINGS_PER_SOURCE` such changes
   for one source is treated as a parsing problem and no rows are delisted for that source.
 - Values the source does not provide are left blank, never guessed.
+
+Enrichment of new rows (each step is optional: if it fails, rows are still added):
+
+- OpenFIGI (open FIGI standard, https://www.openfigi.com): FIGI, composite FIGI and share-class
+  FIGI for new equities, and the full instrument name for HKEX rows (HKEX only publishes
+  abbreviations) when OpenFIGI's name is complete (its names are cut at 28 characters). A row
+  whose OpenFIGI security type contradicts its asset class (an ETP among equities, a common
+  stock among ETFs) is not added. Set OPENFIGI_API_KEY for higher rate limits.
+- Sector / industry group / industry from the exchange's own classification (JPX 33 sectors,
+  NSE Nifty Total Market industries), translated through the existing rows of the same file:
+  a level is filled only when >= 90% of >= 10 existing rows with that classification agree.
+- ETF family (issuer) from the first words of the name, when >= 95% of existing ETFs with the
+  same opening words belong to one family.
 """
 
 from __future__ import annotations
@@ -37,6 +54,8 @@ import io
 import json
 import os
 import re
+import time
+import urllib.request
 from collections.abc import Callable
 from dataclasses import dataclass, field
 
@@ -51,6 +70,17 @@ HEADERS = {
 }
 TIMEOUT = 120
 MAX_DELISTINGS_PER_SOURCE = 50
+OPENFIGI_URL = "https://api.openfigi.com/v3/mapping"
+# Database suffix -> OpenFIGI exchange code (Hong Kong, Tokyo, NSE, ASX, TSX, TSXV).
+FIGI_EXCHANGES = {
+    ".HK": "HK",
+    ".T": "JT",
+    ".NS": "IS",
+    ".AX": "AT",
+    ".TO": "CT",
+    ".V": "CV",
+}
+MIN_AGREEMENT, MIN_ROWS = 0.9, 10
 US_ETF_FILES = {"NMS", "NGM", "NCM", "NYQ", "ASE", "PCX", "BTS"}
 
 # Exchange suffixes used by the sources below, kept when comparing symbol formats.
@@ -74,7 +104,12 @@ class Listing:
     country: str = ""
     sector: str = ""
     industry_group: str = ""
+    industry: str = ""
     mic: str = ""
+    classification: str = ""  # the exchange's own sector label, e.g. JPX "Banks"
+    figi: str = ""
+    composite_figi: str = ""
+    shareclass_figi: str = ""
 
 
 @dataclass
@@ -83,6 +118,9 @@ class SourceResult:
 
     listings: list[Listing] = field(default_factory=list)
     official: dict[str, set[str]] = field(default_factory=dict)
+    # exchange file -> {symbol: exchange sector label} for every listed symbol, used to learn
+    # how the exchange's classification translates to the database's categories.
+    classifications: dict[str, dict[str, str]] = field(default_factory=dict)
 
 
 # --------------------------------------------------------------------------- helpers
@@ -93,6 +131,33 @@ def fetch(url: str) -> bytes:
     response = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
     response.raise_for_status()
     return response.content
+
+
+def fetch_nasdaq_trader(name: str) -> bytes:
+    """Nasdaq Trader symbol directory file over HTTPS, falling back to its official FTP copy.
+
+    The HTTPS endpoint sometimes answers automated clients with a bot-check page instead.
+    """
+    try:
+        content = fetch(f"https://www.nasdaqtrader.com/dynamic/SymDir/{name}.txt")
+        if b"|" in content.split(b"\n", 1)[0]:
+            return content
+    except requests.RequestException:
+        pass
+    url = f"ftp://ftp.nasdaqtrader.com/symboldirectory/{name}.txt"
+    with urllib.request.urlopen(
+        url, timeout=TIMEOUT
+    ) as response:  # noqa: S310 (fixed URL)
+        return response.read()
+
+
+def optional_fetch(url: str) -> bytes | None:
+    """Download an enrichment-only file; a failure just means less enrichment."""
+    try:
+        return fetch(url)
+    except Exception as error:  # enrichment only: never fatal
+        print(f"  optional download failed ({url}): {type(error).__name__}: {error}")
+        return None
 
 
 def require(condition: bool, message: str) -> None:
@@ -233,9 +298,22 @@ def parse_hkex(xlsx: bytes) -> SourceResult:
     return result
 
 
-def parse_nse(equity_csv: bytes, etf_csv: bytes) -> SourceResult:
-    """India: NSE main-board equities and ETFs."""
+def parse_nse(
+    equity_csv: bytes, etf_csv: bytes, industries_csv: bytes | None = None
+) -> SourceResult:
+    """India: NSE main-board equities and ETFs (industries from the Nifty Total Market list)."""
     result = SourceResult()
+    industries: dict[str, str] = {}
+    if industries_csv:
+        nifty = pd.read_csv(
+            io.BytesIO(industries_csv), dtype=str, keep_default_na=False
+        )
+        if {"Symbol", "Industry"} <= set(nifty.columns):
+            industries = {
+                f"{s.strip()}.NS": i.strip()
+                for s, i in zip(nifty.Symbol, nifty.Industry)
+            }
+    result.classifications = {"NSE": industries}
     equities = pd.read_csv(io.BytesIO(equity_csv), dtype=str, keep_default_na=False)
     equities.columns = [c.strip() for c in equities.columns]
     etfs = pd.read_csv(io.BytesIO(etf_csv), dtype=str, keep_default_na=False)
@@ -262,6 +340,7 @@ def parse_nse(equity_csv: bytes, etf_csv: bytes) -> SourceResult:
                 "INR",
                 isin,
                 "India" if isin.startswith("IN") else "",
+                classification=industries.get(f"{row.SYMBOL.strip()}.NS", ""),
             )
         )
     for _, row in etfs.iterrows():
@@ -290,13 +369,24 @@ def parse_jpx(xlsx: bytes) -> SourceResult:
     )
     require(len(data) > 3000, "JPX list too short")
     result.official = {"JPX": {f"{c}.T" for c in data["Local Code"]}}
+    sectors = data.get("33 Sector(name)", pd.Series("", index=data.index))
+    sectors = sectors.where(sectors.str.strip() != "-", "")
+    result.classifications = {"JPX": dict(zip(data["Local Code"] + ".T", sectors))}
     for _, row in data.iterrows():
         section, symbol = row["Section/Products"], f"{row['Local Code']}.T"
         name = row["Name (English)"].strip()
         if re.search(r"(Prime|Standard|Growth) Market", section):
             country = "Japan" if "Domestic" in section else ""
             result.listings.append(
-                Listing("equities", "JPX", symbol, name, "JPY", country=country)
+                Listing(
+                    "equities",
+                    "JPX",
+                    symbol,
+                    name,
+                    "JPY",
+                    country=country,
+                    classification=result.classifications["JPX"][symbol],
+                )
             )
         elif section.startswith("ETFs"):
             result.listings.append(Listing("etfs", "JPX", symbol, name, "JPY"))
@@ -387,8 +477,7 @@ def load_sources(group_sector: dict[str, str]) -> dict[str, Callable[[], SourceR
     nse = "https://archives.nseindia.com/content/equities/{}"
     return {
         "Nasdaq Trader (US ETFs)": lambda: parse_nasdaq_trader(
-            fetch("https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt"),
-            fetch("https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt"),
+            fetch_nasdaq_trader("nasdaqlisted"), fetch_nasdaq_trader("otherlisted")
         ),
         "HKEX": lambda: parse_hkex(
             fetch(
@@ -396,7 +485,11 @@ def load_sources(group_sector: dict[str, str]) -> dict[str, Callable[[], SourceR
             )
         ),
         "NSE": lambda: parse_nse(
-            fetch(nse.format("EQUITY_L.csv")), fetch(nse.format("eq_etfseclist.csv"))
+            fetch(nse.format("EQUITY_L.csv")),
+            fetch(nse.format("eq_etfseclist.csv")),
+            optional_fetch(
+                "https://archives.nseindia.com/content/indices/ind_niftytotalmarket_list.csv"
+            ),
         ),
         "JPX": lambda: parse_jpx(fetch(jpx_download_url())),
         "ASX": lambda: parse_asx(
@@ -407,6 +500,134 @@ def load_sources(group_sector: dict[str, str]) -> dict[str, Callable[[], SourceR
             fetch(tsx.format("tsx")), fetch(tsx.format("tsxv"))
         ),
     }
+
+
+# --------------------------------------------------------------------------- enrichment
+
+
+def learn_categories(
+    frame: pd.DataFrame, labels: dict[str, str]
+) -> dict[str, dict[str, str]]:
+    """Exchange sector label -> database categories, learned from existing rows.
+
+    For each label, the deepest of sector / industry_group / industry is used on which
+    >= MIN_AGREEMENT of >= MIN_ROWS existing rows with that label agree.
+    """
+    levels = ["sector", "industry_group", "industry"]
+    known = frame[(frame["sector"] != "") & frame.index.isin(list(labels))]
+    known = known.assign(label=[labels[s] for s in known.index])
+    known = known[known.label != ""]
+    mapping: dict[str, dict[str, str]] = {}
+    for label, group in known.groupby("label"):
+        if len(group) < MIN_ROWS:
+            continue
+        chosen: dict[str, str] = {}
+        for depth in range(1, 4):
+            prefix = group[levels[:depth]].apply(tuple, axis=1)
+            counts = prefix.value_counts()
+            if counts.iloc[0] / len(group) < MIN_AGREEMENT or "" in counts.index[0]:
+                break
+            chosen = dict(zip(levels[:depth], counts.index[0]))
+        if chosen:
+            mapping[label] = chosen
+    return mapping
+
+
+def figi_job(listing: Listing) -> tuple[dict, str] | None:
+    """OpenFIGI mapping job and the ticker expected back, or None when not mappable."""
+    match = re.search(SUFFIX, listing.symbol)
+    if not match or match.group(0) not in FIGI_EXCHANGES:
+        return None
+    exchange, base = FIGI_EXCHANGES[match.group(0)], listing.symbol[: match.start()]
+    if exchange == "HK":
+        base = str(int(base))  # OpenFIGI uses Hong Kong codes without leading zeros
+    elif exchange in ("CT", "CV"):
+        if base.endswith("-UN"):
+            base = base[:-3] + "-U"  # trust units
+        elif "-" in base:
+            return None  # preferreds, warrants and other classes are not resolvable by ticker
+    if listing.isin and exchange in ("HK", "IS"):
+        return {
+            "idType": "ID_ISIN",
+            "idValue": listing.isin,
+            "exchCode": exchange,
+        }, base
+    return {"idType": "TICKER", "idValue": base, "exchCode": exchange}, base
+
+
+def openfigi_lookup(
+    jobs: list[tuple[dict, str]], api_key: str | None
+) -> list[dict | None]:
+    """Resolve mapping jobs in rate-limited batches; returns the matching record per job."""
+    batch, pause = (100, 0.25) if api_key else (10, 2.5)
+    headers = {"Content-Type": "application/json"}
+    if api_key:
+        headers["X-OPENFIGI-APIKEY"] = api_key
+    found: list[dict | None] = []
+    for start in range(0, len(jobs), batch):
+        chunk = jobs[start : start + batch]
+        for attempt in range(6):
+            response = requests.post(
+                OPENFIGI_URL,
+                json=[j for j, _ in chunk],
+                headers=headers,
+                timeout=TIMEOUT,
+            )
+            if response.status_code != 429:
+                break
+            time.sleep(10 * (attempt + 1))  # rate limited: back off and retry
+        response.raise_for_status()
+        for (_, ticker), answer in zip(chunk, response.json()):
+            data = answer.get("data") or []
+            exact = [d for d in data if d.get("ticker") == ticker]
+            found.append((exact or data or [None])[0])
+        time.sleep(pause)
+    return found
+
+
+def openfigi_name(record: dict) -> str:
+    """OpenFIGI's name when complete: its names are cut at 28 characters."""
+    name = (record.get("name") or "").strip()
+    tag = re.search(r"\s+-(HKD|USD|RMB|CNY)$", name)
+    if tag:
+        return name[: tag.start()].strip()
+    return name if len(name) < 28 else ""
+
+
+def enrich_with_openfigi(
+    listings: list[Listing], api_key: str | None
+) -> tuple[list[Listing], list[str]]:
+    """Fill FIGIs (and full HKEX names); drop rows whose security type contradicts the asset class."""
+    jobs = [(listing, figi_job(listing)) for listing in listings]
+    jobs = [(listing, job) for listing, job in jobs if job]
+    if not jobs:
+        return listings, []
+    try:
+        records = openfigi_lookup([job for _, job in jobs], api_key)
+    except Exception as error:  # blocked, rate limited, changed format: enrichment only
+        print(
+            f"  OpenFIGI unavailable, rows added without FIGIs: {type(error).__name__}: {error}"
+        )
+        return listings, []
+    rejected = set()
+    notes = []
+    for (listing, _), record in zip(jobs, records):
+        if not record:
+            continue
+        kind = record.get("securityType", "")
+        if (listing.kind == "equities" and kind == "ETP") or (
+            listing.kind == "etfs" and kind == "Common Stock"
+        ):
+            rejected.add(listing.symbol)
+            notes.append(f"{listing.symbol} ({listing.kind} but OpenFIGI type {kind})")
+            continue
+        if listing.kind == "equities":
+            listing.figi = record.get("figi") or ""
+            listing.composite_figi = record.get("compositeFIGI") or ""
+            listing.shareclass_figi = record.get("shareClassFIGI") or ""
+        if listing.file == "HKG" and openfigi_name(record):
+            listing.name = openfigi_name(record)
+    return [x for x in listings if x.symbol not in rejected], notes
 
 
 # --------------------------------------------------------------------------- database update
@@ -488,20 +709,37 @@ class Database:
         )
 
     def etf_families(self) -> Callable[[str], str]:
-        """Issuer family from the first two words of an ETF name (>= 95% agreement, >= 5 rows)."""
+        """Issuer family from the opening words of an ETF name.
+
+        The first two words are used when >= 95% of >= 5 existing ETFs starting with them
+        share one family, otherwise the first word with >= 95% of >= 10 ETFs (or all of >= 3).
+        Matching ignores case, so upper-case exchange names ('ISHARES CHINA') match too.
+        """
         frames = [
             read_csv_text(p)[["name", "family"]]
             for p in glob.glob(f"{self.root}/etfs/*.csv")
         ]
         etfs = pd.concat(frames)
         etfs = etfs[etfs.family != ""]
-        key = lambda name: " ".join(name.lower().split()[:2])  # noqa: E731
-        families = {}
-        for prefix, group in etfs.groupby(etfs.name.map(key)):
-            counts = group.family.value_counts()
-            if len(group) >= 5 and counts.iloc[0] / len(group) >= 0.95:
-                families[prefix] = counts.index[0]
-        return lambda name: families.get(key(name), "")
+        tables = []
+        for words, minimum in ((2, 5), (1, 10)):
+            key = lambda name, n=words: " ".join(name.lower().split()[:n])  # noqa: E731
+            table = {}
+            for prefix, group in etfs.groupby(etfs.name.map(key)):
+                counts = group.family.value_counts()
+                share = counts.iloc[0] / len(group)
+                unanimous = words == 1 and len(group) >= 3 and share == 1
+                if (len(group) >= minimum and share >= 0.95) or unanimous:
+                    table[prefix] = counts.index[0]
+            tables.append((key, table))
+
+        def family(name: str) -> str:
+            for key, table in tables:
+                if key(name) in table:
+                    return table[key(name)]
+            return ""
+
+        return family
 
     def write(self) -> None:
         for path, original in self.frames.items():
@@ -520,7 +758,12 @@ class Database:
 
 
 def apply_source(
-    db: Database, name: str, result: SourceResult, family: Callable[[str], str]
+    db: Database,
+    name: str,
+    result: SourceResult,
+    family: Callable[[str], str],
+    api_key: str | None = None,
+    use_openfigi: bool = True,
 ) -> dict:
     """Add a source's new listings and delist superseded tickers. Returns a summary."""
     added, skipped_format, delist = [], [], []
@@ -542,15 +785,33 @@ def apply_source(
                 continue
         added.append(listing)
 
+    rejected: list[str] = []
+    if use_openfigi and added:
+        added, rejected = enrich_with_openfigi(added, api_key)
+    categories = {
+        file: learn_categories(db.frame("equities", file), labels)
+        for file, labels in result.classifications.items()
+        if labels
+    }
+    for listing in added:
+        learned = categories.get(listing.file, {}).get(listing.classification)
+        if listing.kind == "equities" and learned and not listing.sector:
+            listing.sector = learned.get("sector", "")
+            listing.industry_group = learned.get("industry_group", "")
+            listing.industry = learned.get("industry", "")
+
     # Ticker changes: a live row in the same file with the same ISIN or name whose symbol has
     # dropped off the exchange's official list is superseded by the new listing.
+    official_keys_by_file: dict[str, set[str]] = {}
     for listing in added:
         official = result.official.get(listing.file)
         if official is None:
             continue
-        if ("official", listing.file) not in db.cache:
-            db.cache[("official", listing.file)] = {symbol_key(s) for s in official}
-        official_keys = db.cache[("official", listing.file)]
+        if (
+            listing.file not in official_keys_by_file
+        ):  # per source: lists differ by source
+            official_keys_by_file[listing.file] = {symbol_key(s) for s in official}
+        official_keys = official_keys_by_file[listing.file]
         frame = db.frame(listing.kind, listing.file)
         key = normalise_name(listing.name)
         matches = (
@@ -592,18 +853,84 @@ def apply_source(
                 country=listing.country,
                 sector=listing.sector,
                 industry_group=listing.industry_group,
+                industry=listing.industry,
                 isin=listing.isin,
+                figi=listing.figi,
+                composite_figi=listing.composite_figi,
+                shareclass_figi=listing.shareclass_figi,
             )
         else:
-            row.update(isin=listing.isin)
-            if listing.file in US_ETF_FILES:
-                row["family"] = family(listing.name)
+            row.update(isin=listing.isin, family=family(listing.name))
         db.added[db.path(listing.kind, listing.file)].append(
             pd.Series(row, name=listing.symbol)
         )
         db.symbols.add(listing.symbol)
 
-    return {"added": added, "skipped_format": skipped_format, "delisted": delist}
+    return {
+        "added": added,
+        "skipped_format": skipped_format,
+        "delisted": delist,
+        "rejected": rejected,
+    }
+
+
+def run(
+    database: str,
+    sources: dict[str, Callable[[], SourceResult]] | None = None,
+    dry_run: bool = False,
+    use_openfigi: bool = True,
+    api_key: str | None = None,
+) -> list[str]:
+    """Update the database from every source; returns the names of skipped sources.
+
+    A source that cannot be downloaded (blocked, rate limited, offline), no longer has the
+    expected format, or fails while being applied is skipped: its partial changes are rolled
+    back and the other sources continue.
+    """
+    db = Database(database)
+    family = db.etf_families()
+    if sources is None:
+        sources = load_sources(db.group_sector())
+    failures = []
+    for name, load in sources.items():
+        added_before = {path: len(rows) for path, rows in db.added.items()}
+        delisted_before = {path: f["delisted"].copy() for path, f in db.frames.items()}
+        symbols_before = set(db.symbols)
+        try:
+            result = load()
+            summary = apply_source(db, name, result, family, api_key, use_openfigi)
+        except Exception as error:  # one broken source must not stop the others
+            for path in list(db.added):
+                del db.added[path][added_before.get(path, 0) :]
+            for path, column in delisted_before.items():
+                db.frames[path]["delisted"] = column
+            for path in [p for p in db.frames if p not in delisted_before]:
+                del (
+                    db.frames[path],
+                    db.added[path],
+                )  # first loaded by this source: reload later
+            db.symbols = symbols_before
+            failures.append(name)
+            print(f"{name}: skipped ({type(error).__name__}: {error})")
+            continue
+        counts = pd.Series(
+            [f"{x.kind}/{x.file}" for x in summary["added"]], dtype=str
+        ).value_counts()
+        print(
+            f"{name}: {len(summary['added'])} added {counts.to_dict()}, "
+            f"{len(summary['delisted'])} superseded tickers delisted, "
+            f"{len(summary['skipped_format'])} skipped as symbol-format duplicates, "
+            f"{len(summary['rejected'])} rejected on security type"
+        )
+        for note in summary["rejected"]:
+            print(f"  not added: {note}")
+        for kind, file, old, new in summary["delisted"]:
+            print(f"  delisted {kind}/{file} {old} (now listed as {new})")
+    if not dry_run:
+        db.write()
+    if failures:
+        print(f"Sources skipped this run: {', '.join(failures)}")
+    return failures
 
 
 def main() -> None:
@@ -612,33 +939,19 @@ def main() -> None:
     parser.add_argument(
         "--dry-run", action="store_true", help="report only, write nothing"
     )
+    parser.add_argument(
+        "--no-openfigi", action="store_true", help="skip the OpenFIGI enrichment"
+    )
     args = parser.parse_args()
-
-    db = Database(args.database)
-    family = db.etf_families()
-    failures = []
-    for name, load in load_sources(db.group_sector()).items():
-        try:
-            result = load()
-        except Exception as error:  # one broken source must not stop the others
-            failures.append(name)
-            print(f"{name}: skipped ({type(error).__name__}: {error})")
-            continue
-        summary = apply_source(db, name, result, family)
-        counts = pd.Series(
-            [f"{x.kind}/{x.file}" for x in summary["added"]], dtype=str
-        ).value_counts()
-        print(
-            f"{name}: {len(summary['added'])} added {counts.to_dict()}, "
-            f"{len(summary['delisted'])} superseded tickers delisted, "
-            f"{len(summary['skipped_format'])} skipped as symbol-format duplicates"
+    try:
+        run(
+            args.database,
+            dry_run=args.dry_run,
+            use_openfigi=not args.no_openfigi,
+            api_key=os.environ.get("OPENFIGI_API_KEY") or None,
         )
-        for kind, file, old, new in summary["delisted"]:
-            print(f"  delisted {kind}/{file} {old} (now listed as {new})")
-    if not args.dry_run:
-        db.write()
-    if failures:
-        print(f"Sources skipped this run: {', '.join(failures)}")
+    except Exception as error:  # never break the weekly pipeline; nothing is written
+        print(f"Listings update skipped entirely ({type(error).__name__}: {error})")
 
 
 if __name__ == "__main__":

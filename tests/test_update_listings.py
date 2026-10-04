@@ -167,7 +167,7 @@ def test_apply_source_adds_dedupes_and_delists(tmp_path: Path) -> None:
             "VAN": {"HCO-P.V"},
         },
     )
-    summary = ul.apply_source(db, "test", result, db.etf_families())
+    summary = ul.apply_source(db, "test", result, db.etf_families(), use_openfigi=False)
     assert {x.symbol for x in summary["added"]} == {"RNH.TO", "NEW.TO", "ESG-F.TO"}
     assert summary["skipped_format"] == ["HCO-P.V (exists as HCO.P.V)"]
     assert summary["delisted"] == [("equities", "TOR", "OLD.TO", "RNH.TO")]
@@ -199,7 +199,7 @@ def test_too_many_delistings_are_not_applied(tmp_path: Path, monkeypatch) -> Non
         ],
         official={"TOR": {"RNH.TO"}},
     )
-    summary = ul.apply_source(db, "test", result, db.etf_families())
+    summary = ul.apply_source(db, "test", result, db.etf_families(), use_openfigi=False)
     assert summary["delisted"] == [] and len(summary["added"]) == 1
 
 
@@ -207,6 +207,179 @@ def test_untouched_files_are_not_rewritten(tmp_path: Path) -> None:
     root = make_db(tmp_path)
     before = (root / "etfs" / "TOR.csv").read_bytes()
     db = ul.Database(str(root))
-    ul.apply_source(db, "test", ul.SourceResult(), db.etf_families())
+    ul.apply_source(
+        db, "test", ul.SourceResult(), db.etf_families(), use_openfigi=False
+    )
     db.write()
     assert (root / "etfs" / "TOR.csv").read_bytes() == before
+
+
+def test_learn_categories_requires_agreement() -> None:
+    rows = {f"B{i}.T": ("Financials", "Banks", "Banks") for i in range(10)}
+    rows |= {
+        f"S{i}.T": ("Industrials" if i % 2 else "Consumer Discretionary", "", "")
+        for i in range(12)
+    }
+    frame = pd.DataFrame.from_dict(
+        rows, orient="index", columns=["sector", "industry_group", "industry"]
+    )
+    labels = {s: ("Banks" if s.startswith("B") else "Services") for s in rows}
+    mapping = ul.learn_categories(frame, labels)
+    assert mapping == {
+        "Banks": {
+            "sector": "Financials",
+            "industry_group": "Banks",
+            "industry": "Banks",
+        }
+    }
+
+
+def test_figi_jobs_and_names() -> None:
+    hk = ul.Listing(
+        "etfs", "HKG", "2801.HK", "ISHARES CHINA", "HKD", isin="HK2801040828"
+    )
+    assert ul.figi_job(hk) == (
+        {"idType": "ID_ISIN", "idValue": "HK2801040828", "exchCode": "HK"},
+        "2801",
+    )
+    assert (
+        ul.figi_job(ul.Listing("equities", "HKG", "0001.HK", "CKH", "HKD"))[0][
+            "idValue"
+        ]
+        == "1"
+    )
+    assert (
+        ul.figi_job(ul.Listing("equities", "TOR", "AD-UN.TO", "Alaris", "CAD"))[0][
+            "idValue"
+        ]
+        == "AD-U"
+    )
+    assert ul.figi_job(ul.Listing("equities", "TOR", "BCE-PA.TO", "BCE", "CAD")) is None
+    assert ul.figi_job(ul.Listing("etfs", "PCX", "SPY", "SPDR", "USD")) is None
+    assert (
+        ul.openfigi_name({"name": "ISHARES CORE MSCI CHINA -HKD"})
+        == "ISHARES CORE MSCI CHINA"
+    )
+    assert (
+        ul.openfigi_name({"name": "CK HUTCHISON HOLDINGS LTD"})
+        == "CK HUTCHISON HOLDINGS LTD"
+    )
+    assert ul.openfigi_name({"name": "KING INTERNATIONAL INVESTMEN"}) == ""  # truncated
+
+
+def test_openfigi_enrichment_fills_and_rejects(monkeypatch) -> None:
+    listings = [
+        ul.Listing("equities", "HKG", "0001.HK", "CKH HOLDINGS", "HKD"),
+        ul.Listing("equities", "HKG", "2800.HK", "TRACKER FUND", "HKD"),
+        ul.Listing("equities", "JPX", "9999.T", "Unknown Co.", "JPY"),
+    ]
+    records = [
+        {
+            "name": "CK HUTCHISON HOLDINGS LTD",
+            "securityType": "Common Stock",
+            "figi": "F1",
+            "compositeFIGI": "C1",
+            "shareClassFIGI": "S1",
+        },
+        {"name": "TRACKER FUND OF HONG KONG", "securityType": "ETP"},
+        None,
+    ]
+    monkeypatch.setattr(ul, "openfigi_lookup", lambda jobs, key: records[: len(jobs)])
+    kept, notes = ul.enrich_with_openfigi(listings, None)
+    assert [x.symbol for x in kept] == ["0001.HK", "9999.T"]
+    assert kept[0].name == "CK HUTCHISON HOLDINGS LTD"
+    assert (kept[0].figi, kept[0].composite_figi, kept[0].shareclass_figi) == (
+        "F1",
+        "C1",
+        "S1",
+    )
+    assert kept[1].figi == "" and notes == ["2800.HK (equities but OpenFIGI type ETP)"]
+
+
+def test_etf_family_matches_upper_case_names(tmp_path: Path) -> None:
+    root = make_db(tmp_path)
+    rows = "".join(
+        f"I{i}.TO,iShares Fund {i} ETF,CAD,,,,BlackRock Asset Management,TOR,XTSE,,False\n"
+        for i in range(12)
+    )
+    with open(root / "etfs" / "TOR.csv", "a") as handle:
+        handle.write(rows)
+    family = ul.Database(str(root)).etf_families()
+    assert family("ISHARES CHINA") == "BlackRock Asset Management"
+    assert family("Unknown Issuer ETF") == ""
+
+
+def test_blocked_or_broken_source_is_skipped_and_others_continue(
+    tmp_path: Path, monkeypatch
+) -> None:
+    """A bot-check page, an HTTP error or a crash mid-source never stops the run."""
+    root = make_db(tmp_path)
+    block_page = (
+        b'<html><head><script src="/_Incapsula_Resource"></script></head></html>'
+    )
+    crashing = {"on": False}
+    real_defaults = ul.Database.defaults
+
+    def defaults(self, kind, file):
+        if crashing["on"]:
+            raise RuntimeError("unexpected data")
+        return real_defaults(self, kind, file)
+
+    monkeypatch.setattr(ul.Database, "defaults", defaults)
+
+    def blocked():
+        return ul.parse_tsx(block_page, block_page)
+
+    def http_error():
+        raise ul.requests.HTTPError("403 Forbidden")
+
+    def crashes_after_delisting():
+        # OLD.TO is delisted as superseded by RNH.TO, then adding RNH.TO crashes.
+        crashing["on"] = True
+        listing = ul.Listing(
+            "equities", "TOR", "RNH.TO", "Renamed Holdings Inc.", "CAD"
+        )
+        return ul.SourceResult(listings=[listing], official={"TOR": {"RNH.TO"}})
+
+    def good():
+        listing = ul.Listing("equities", "TOR", "NEW.TO", "Brand New Corp.", "CAD")
+        return ul.SourceResult(
+            listings=[listing], official={"TOR": {"NEW.TO", "ABC.TO", "OLD.TO"}}
+        )
+
+    # TOR.csv is loaded by "good" first, so "crash" exercises the in-memory rollback;
+    # "crash_first" (fresh database) exercises dropping a file first loaded by the failed source.
+    sources = {
+        "good": good,
+        "blocked": blocked,
+        "http": http_error,
+        "crash": crashes_after_delisting,
+    }
+    failures = ul.run(str(root), sources=sources, use_openfigi=False)
+    assert failures == ["blocked", "http", "crash"]
+    second = make_db(tmp_path / "second")
+    assert ul.run(
+        str(second),
+        sources={"crash_first": crashes_after_delisting},
+        use_openfigi=False,
+    ) == ["crash_first"]
+    crashing["on"] = False
+    assert (
+        pd.read_csv(second / "equities" / "TOR.csv", index_col=0, dtype=str).loc[
+            "OLD.TO", "delisted"
+        ]
+        == "False"
+    )
+    tor = pd.read_csv(
+        root / "equities" / "TOR.csv", index_col=0, dtype=str, keep_default_na=False
+    )
+    assert "NEW.TO" in tor.index and "RNH.TO" not in tor.index
+    assert (
+        tor.loc["OLD.TO", "delisted"] == "False"
+    )  # the crashed source was rolled back
+
+
+def test_main_never_raises(tmp_path: Path, monkeypatch, capsys) -> None:
+    monkeypatch.setattr(sys, "argv", ["update_listings", "--database", str(tmp_path)])
+    ul.main()  # an empty directory is not a database: reported, not raised
+    assert "Listings update skipped entirely" in capsys.readouterr().out

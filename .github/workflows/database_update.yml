@@ -182,12 +182,20 @@ jobs:
             ETP_NAME = r'\b(?:ETF|ETFs|ETN|ETNs|Exchange[- ]Traded)\b'
 
 
-            def load_feed(name: str) -> pd.DataFrame:
-                """Download one exchange feed and drop rows that would become junk."""
-                feed = pd.read_json(FEED_URL.format(name), dtype=False)
-                # Fail the job instead of silently ingesting a truncated or broken feed.
-                if len(feed) < 100 or 'symbol' not in feed:
-                    raise ValueError(f"The {name} feed looks broken ({len(feed)} rows).")
+            def load_feed(name: str) -> Optional[pd.DataFrame]:
+                """Download one exchange feed and drop rows that would become junk.
+
+                A blocked, unreachable, truncated or reformatted feed is skipped (None) so it
+                can never add junk or fail the weekly pipeline; the other feeds still run.
+                """
+                try:
+                    feed = pd.read_json(FEED_URL.format(name), dtype=False)
+                except Exception as error:
+                    print(f"{name}: feed skipped ({type(error).__name__}: {error})")
+                    return None
+                if len(feed) < 100 or not {'symbol', 'name'} <= set(feed.columns):
+                    print(f"{name}: feed skipped, it looks broken ({len(feed)} rows)")
+                    return None
                 feed['symbol'] = feed['symbol'].astype(str).str.strip()
                 feed['name'] = feed['name'].astype(str).str.strip()
                 invalid = ~feed['symbol'].str.match(VALID_SYMBOL)
@@ -203,7 +211,8 @@ jobs:
 
 
             # Combine all exchange datasets; a symbol is listed on one exchange only.
-            exchange_data = pd.concat([load_feed(name) for name in FEEDS])
+            feeds = [feed for feed in (load_feed(name) for name in FEEDS) if feed is not None]
+            exchange_data = pd.concat(feeds) if feeds else pd.DataFrame()
             exchange_data = exchange_data[~exchange_data.index.duplicated(keep='first')]
 
             # ---------------------------------------------------------------------------
@@ -304,9 +313,17 @@ jobs:
                 if unknown_exchange.any():
                     equities[unknown_exchange].to_csv('database/equities/NAN.csv')
       # New equities and ETFs from the official HKEX, NSE, JPX, ASX, TSX/TSXV and Nasdaq Trader
-      # symbol directories. Each source is isolated: a failing or changed source is skipped and
-      # logged without stopping the job. See scripts/update_listings.py for the rules.
+      # symbol directories, enriched via OpenFIGI. Each source is isolated: a blocked, failing
+      # or changed source is skipped and logged. This step can never fail the pipeline: the
+      # script exits cleanly on any error, and continue-on-error / timeout-minutes make sure
+      # the US update above is still committed and the compression jobs still run.
+      # OPENFIGI_API_KEY is optional (higher OpenFIGI rate limits); it works without it.
+      # See scripts/update_listings.py for the rules.
       - name: Add Listings from Exchange Symbol Directories
+        continue-on-error: true
+        timeout-minutes: 45
+        env:
+          OPENFIGI_API_KEY: ${{ secrets.OPENFIGI_API_KEY }}
         run: python scripts/update_listings.py
       - name: Commit files and log
         run: |
