@@ -19,11 +19,12 @@ jobs:
     steps:
       # Pushes to main go through the FinanceDatabase Actions GitHub App, which is on the
       # branch-protection bypass list (the built-in GITHUB_TOKEN cannot bypass it).
+      # The App ID may be a repository variable or secret; the private key must be a secret.
       - name: create app token
         id: app-token
         uses: actions/create-github-app-token@v2
         with:
-          app-id: ${{ secrets.FINANCE_DATABASE_ACTIONS_ID }}
+          app-id: ${{ vars.FINANCE_DATABASE_ACTIONS_ID || secrets.FINANCE_DATABASE_ACTIONS_ID }}
           private-key: ${{ secrets.FINANCE_DATABASE_ACTIONS_PRIVATE_KEY }}
       - name: checkout repo content
         uses: actions/checkout@v6
@@ -362,11 +363,12 @@ jobs:
     steps:
       # Pushes to main go through the FinanceDatabase Actions GitHub App, which is on the
       # branch-protection bypass list (the built-in GITHUB_TOKEN cannot bypass it).
+      # The App ID may be a repository variable or secret; the private key must be a secret.
       - name: create app token
         id: app-token
         uses: actions/create-github-app-token@v2
         with:
-          app-id: ${{ secrets.FINANCE_DATABASE_ACTIONS_ID }}
+          app-id: ${{ vars.FINANCE_DATABASE_ACTIONS_ID || secrets.FINANCE_DATABASE_ACTIONS_ID }}
           private-key: ${{ secrets.FINANCE_DATABASE_ACTIONS_PRIVATE_KEY }}
       - name: checkout repo content
         uses: actions/checkout@v6
@@ -437,11 +439,13 @@ jobs:
       steps:
         # Pushes to main go through the FinanceDatabase Actions GitHub App, which is on the
         # branch-protection bypass list (the built-in GITHUB_TOKEN cannot bypass it).
+        # The App ID may be a repository variable or secret; the private key must be a secret.
+      # The App ID may be a repository variable or secret; the private key must be a secret.
         - name: create app token
           id: app-token
           uses: actions/create-github-app-token@v2
           with:
-            app-id: ${{ secrets.FINANCE_DATABASE_ACTIONS_ID }}
+            app-id: ${{ vars.FINANCE_DATABASE_ACTIONS_ID || secrets.FINANCE_DATABASE_ACTIONS_ID }}
             private-key: ${{ secrets.FINANCE_DATABASE_ACTIONS_PRIVATE_KEY }}
         - name: checkout repo content
           uses: actions/checkout@v6
@@ -563,11 +567,12 @@ jobs:
     steps:
       # Pushes to main go through the FinanceDatabase Actions GitHub App, which is on the
       # branch-protection bypass list (the built-in GITHUB_TOKEN cannot bypass it).
+      # The App ID may be a repository variable or secret; the private key must be a secret.
       - name: create app token
         id: app-token
         uses: actions/create-github-app-token@v2
         with:
-          app-id: ${{ secrets.FINANCE_DATABASE_ACTIONS_ID }}
+          app-id: ${{ vars.FINANCE_DATABASE_ACTIONS_ID || secrets.FINANCE_DATABASE_ACTIONS_ID }}
           private-key: ${{ secrets.FINANCE_DATABASE_ACTIONS_PRIVATE_KEY }}
       - name: checkout repo content
         uses: actions/checkout@v6
