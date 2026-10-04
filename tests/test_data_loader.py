@@ -176,3 +176,11 @@ def test_data_can_be_replaced_for_tests(monkeypatch) -> None:
         "NA",
         "OLD",
     ]
+
+
+def test_module_show_options_as_polars() -> None:
+    as_numpy = fd.show_options("equities", use_local_location=True)
+    as_polars = fd.show_options("equities", use_local_location=True, as_pandas=False)
+    assert list(as_polars) == list(as_numpy)
+    assert all(isinstance(v, pl.Series) for v in as_polars.values())
+    assert as_polars["sector"].to_list() == [str(v) for v in as_numpy["sector"]]

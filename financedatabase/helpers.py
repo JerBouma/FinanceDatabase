@@ -443,6 +443,7 @@ def show_options(
     selection: str | None = None,
     base_url: str = DATA_REPO,
     use_local_location: bool = False,
+    as_pandas: bool = True,
 ) -> dict:
     """
     Get available category options for a specific asset class.
@@ -458,6 +459,8 @@ def show_options(
             Defaults to the GitHub repository.
         use_local_location: Whether to use a local file path.
             Defaults to False.
+        as_pandas: Return the values as numpy arrays (True, the default) or as
+            Polars Series (False).
 
     Returns:
         Dictionary mapping category names to their possible values.
@@ -516,5 +519,10 @@ def show_options(
         index: categories_df.loc[index].dropna().to_numpy()
         for index in categories_df.index
     }
+    if not as_pandas:
+        return {
+            index: pl.Series(index, [str(v) for v in values])
+            for index, values in categories.items()
+        }
 
     return categories
