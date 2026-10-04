@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from typing import Any
 
 import pytest
@@ -73,7 +74,7 @@ SEARCH_CASES = [
     {"index": "VOO"},
     {"category": "Utilities"},
     {"category_group": "Materials"},
-    {"family": "ASYMshares"},
+    {"family": "ProShares"},
     {"exchange": "PCX"},
     {"summary": "North America", "category": "Financials"},
 ]
@@ -129,4 +130,17 @@ def test_select_excludes_delisted_by_default() -> None:
     assert len(listed) == (~everything["delisted"]).sum()
     assert set(etfs.show_options(selection="exchange")) <= set(
         etfs.show_options(selection="exchange", exclude_delisted=False)
+    )
+
+
+def test_search_excludes_delisted_by_default() -> None:
+    """search() leaves delisted symbols out unless exclude_delisted=False, like select()."""
+    data = etfs.data
+    delisted = data.index[data["delisted"].astype(bool)][0]
+    query = f"^{re.escape(delisted)}$"
+    assert delisted not in etfs.search(index=query).index
+    assert delisted not in etfs.search(index=query, exclude_delisted=True).index
+    assert delisted in etfs.search(index=query, exclude_delisted=False).index
+    assert (
+        not etfs.search(name=data.loc[delisted, "name"])["delisted"].astype(bool).any()
     )

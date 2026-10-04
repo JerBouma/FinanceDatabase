@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 import sys
 import types
 from pathlib import Path
@@ -242,7 +243,7 @@ def test_search_invalid_column_is_ignored(capsys) -> None:
     result = equities.search(nonexistent_column="value")
     captured = capsys.readouterr()
     assert "nonexistent_column is not a valid column" in captured.out
-    assert len(result) == len(equities.select(exclude_delisted=False))
+    assert len(result) == len(equities.select())  # both exclude delisted by default
 
 
 def test_to_toolkit_raises_without_financetoolkit(monkeypatch) -> None:
@@ -406,4 +407,19 @@ def test_mic_filled_when_exchange_mapped() -> None:
     assert missing.empty, (
         "Rows with a known exchange but missing mic: "
         f"{sorted(missing['exchange'].unique())} ({len(missing)} rows)"
+    )
+
+
+def test_search_excludes_delisted_by_default() -> None:
+    """search() leaves delisted symbols out unless exclude_delisted=False, like select()."""
+    data = equities.data
+    delisted = data.index[data["delisted"].astype(bool)][0]
+    query = f"^{re.escape(delisted)}$"
+    assert delisted not in equities.search(index=query).index
+    assert delisted not in equities.search(index=query, exclude_delisted=True).index
+    assert delisted in equities.search(index=query, exclude_delisted=False).index
+    assert (
+        not equities.search(name=data.loc[delisted, "name"])["delisted"]
+        .astype(bool)
+        .any()
     )

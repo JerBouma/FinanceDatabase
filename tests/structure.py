@@ -57,14 +57,16 @@ def expected_search(obj: Any, **kwargs: Any) -> pd.DataFrame:
     """What search() should return, computed directly with pandas and re."""
     data = obj.data
     case_sensitive = kwargs.pop("case_sensitive", False) in (True, "True")
+    if (
+        kwargs.pop("exclude_delisted", True) in (True, "True")
+        and "delisted" in data.columns
+    ):
+        data = data[~data["delisted"].astype(bool)]
     flags = 0 if case_sensitive else re.IGNORECASE
     for key, value in kwargs.items():
         if key == "only_primary_listing":
             if value is True:
                 data = data[~data.index.str.contains(".", regex=False, na=False)]
-        elif key == "exclude_delisted":
-            if value is True and "delisted" in data.columns:
-                data = data[~data["delisted"].astype(bool)]
         elif key == "index":
             data = _rows(data, [bool(re.search(value, str(s))) for s in data.index])
         elif key in data.columns:
