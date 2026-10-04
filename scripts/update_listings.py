@@ -38,7 +38,8 @@ Enrichment of new rows (each step is optional: if it fails, rows are still added
   FIGI for new equities, and the full instrument name for HKEX rows (HKEX only publishes
   abbreviations) when OpenFIGI's name is complete (its names are cut at 28 characters). A row
   whose OpenFIGI security type contradicts its asset class (an ETP among equities, a common
-  stock among ETFs) is not added. Set OPENFIGI_API_KEY for higher rate limits.
+  stock among ETFs) is filed under the asset class of its security type. Set OPENFIGI_API_KEY
+  for higher rate limits.
 - Sector / industry group / industry from the exchange's own classification (JPX 33 sectors,
   NSE Nifty Total Market industries), translated through the existing rows of the same file:
   a level is filled only when >= 90% of >= 10 existing rows with that classification agree.
@@ -620,7 +621,7 @@ def openfigi_name(record: dict) -> str:
 def enrich_with_openfigi(
     listings: list[Listing], api_key: str | None
 ) -> tuple[list[Listing], list[str]]:
-    """Fill FIGIs (and full HKEX names); drop rows whose security type contradicts the asset class."""
+    """Fill FIGIs (and full HKEX names); re-file rows whose security type contradicts the asset class."""
     jobs = [(listing, figi_job(listing)) for listing in listings]
     jobs = [(listing, job) for listing, job in jobs if job]
     if not jobs:
@@ -632,25 +633,27 @@ def enrich_with_openfigi(
             f"  OpenFIGI unavailable, rows added without FIGIs: {type(error).__name__}: {error}"
         )
         return listings, []
-    rejected = set()
     notes = []
     for (listing, _), record in zip(jobs, records):
         if not record:
             continue
         kind = record.get("securityType", "")
-        if (listing.kind == "equities" and kind == "ETP") or (
-            listing.kind == "etfs" and kind == "Common Stock"
-        ):
-            rejected.add(listing.symbol)
-            notes.append(f"{listing.symbol} ({listing.kind} but OpenFIGI type {kind})")
-            continue
+        # The exchange lists some funds without "ETF" in the name (and the reverse): file the
+        # row under the asset class its security type says, not the one the name suggested.
+        if listing.kind == "equities" and kind == "ETP":
+            listing.kind, listing.country, listing.sector = "etfs", "", ""
+            listing.industry_group = listing.industry = ""
+            notes.append(f"{listing.symbol} filed as ETF (OpenFIGI type {kind})")
+        elif listing.kind == "etfs" and kind == "Common Stock":
+            listing.kind = "equities"
+            notes.append(f"{listing.symbol} filed as equity (OpenFIGI type {kind})")
         if listing.kind == "equities":
             listing.figi = record.get("figi") or ""
             listing.composite_figi = record.get("compositeFIGI") or ""
             listing.shareclass_figi = record.get("shareClassFIGI") or ""
         if listing.file == "HKG" and openfigi_name(record):
             listing.name = openfigi_name(record)
-    return [x for x in listings if x.symbol not in rejected], notes
+    return listings, notes
 
 
 def factual_summary(symbol: str, row: dict[str, str], kind: str) -> str:
@@ -677,24 +680,44 @@ def factual_summary(symbol: str, row: dict[str, str], kind: str) -> str:
     return text
 
 
+# The section ends at the next heading. Case-sensitive on purpose: the objective itself often
+# says "(before fees and expenses)", which must not end it.
 SEC_END = (
-    r"(?=\s(?:Fees and Expenses|Fees & Expenses|Annual Fund Operating|Shareholder Fees|"
-    r"Principal Investment Strateg)\w*)"
+    r"(?<!before )(?<!of )(?<!\()\b(?:Fees and Expenses|Fees & Expenses|Annual Fund Operating"
+    r"|Shareholder Fees|Principal Investment Strateg\w*|FEES AND EXPENSES)\b"
 )
 
 
-def extract_objective(document: str) -> str:
-    """The 'Investment Objective' paragraph of a summary prospectus (HTML)."""
+def objective_window(document: str) -> str:
+    """Plain text following the 'Investment Objective' heading (up to 3,000 characters)."""
     text = html.unescape(re.sub(r"<[^>]+>", " ", document)).replace("\u00a0", " ")
     text = re.sub(r"\s+", " ", text)
-    match = re.search(
-        r"Investment Objectives?\s*[.:]?\s*(.{20,1200}?)" + SEC_END, text, re.I
-    )
-    if not match:
+    match = re.search(r"Investment Objectives?\s*[.:]?\s*", text, re.I)
+    return text[match.end() : match.end() + 3000] if match else ""
+
+
+def extract_objective(document: str, window: str | None = None) -> str:
+    """The 'Investment Objective' paragraph of a summary prospectus (HTML), or ''."""
+    window = objective_window(document) if window is None else window
+    end = re.search(SEC_END, window)
+    if not end:
         return ""
-    objective = re.sub(r"“\s*Fund\s*”", "“Fund”", match.group(1))
+    section = window[: end.start()].strip()
+    sentences = re.split(r"(?<=[.!?])\s+(?=[A-Z“\"])", section)
+    keep = [
+        x
+        for x in sentences
+        if not re.search(
+            r"website|www\.|important Fund information|Outcome Period", x, re.I
+        )
+    ]
+    objective = re.sub(r"“\s*Fund\s*”", "“Fund”", " ".join(keep))
     objective = re.sub(r"\s+([,.;:)])", r"\1", objective).strip()
-    return objective if re.search(r"\bseeks?\b|objective", objective, re.I) else ""
+    if not (20 <= len(objective) <= 1200) or not re.search(
+        r"\bseeks?\b|objective", objective, re.I
+    ):
+        return ""
+    return objective
 
 
 class SecFunds:
@@ -1085,10 +1108,10 @@ def run(
             f"{name}: {len(summary['added'])} added {counts.to_dict()}, "
             f"{len(summary['delisted'])} superseded tickers delisted, "
             f"{len(summary['skipped_format'])} skipped as symbol-format duplicates, "
-            f"{len(summary['rejected'])} rejected on security type"
+            f"{len(summary['rejected'])} re-filed by security type"
         )
         for note in summary["rejected"]:
-            print(f"  not added: {note}")
+            print(f"  {note}")
         for kind, file, old, new in summary["delisted"]:
             print(f"  delisted {kind}/{file} {old} (now listed as {new})")
     if not dry_run:

@@ -267,7 +267,7 @@ def test_figi_jobs_and_names() -> None:
     assert ul.openfigi_name({"name": "KING INTERNATIONAL INVESTMEN"}) == ""  # truncated
 
 
-def test_openfigi_enrichment_fills_and_rejects(monkeypatch) -> None:
+def test_openfigi_enrichment_fills_and_refiles(monkeypatch) -> None:
     listings = [
         ul.Listing("equities", "HKG", "0001.HK", "CKH HOLDINGS", "HKD"),
         ul.Listing("equities", "HKG", "2800.HK", "TRACKER FUND", "HKD"),
@@ -286,14 +286,15 @@ def test_openfigi_enrichment_fills_and_rejects(monkeypatch) -> None:
     ]
     monkeypatch.setattr(ul, "openfigi_lookup", lambda jobs, key: records[: len(jobs)])
     kept, notes = ul.enrich_with_openfigi(listings, None)
-    assert [x.symbol for x in kept] == ["0001.HK", "9999.T"]
+    assert [x.symbol for x in kept] == ["0001.HK", "2800.HK", "9999.T"]
     assert kept[0].name == "CK HUTCHISON HOLDINGS LTD"
     assert (kept[0].figi, kept[0].composite_figi, kept[0].shareclass_figi) == (
         "F1",
         "C1",
         "S1",
     )
-    assert kept[1].figi == "" and notes == ["2800.HK (equities but OpenFIGI type ETP)"]
+    assert kept[1].kind == "etfs" and kept[1].figi == ""  # a fund listed as an equity
+    assert kept[2].figi == "" and notes == ["2800.HK filed as ETF (OpenFIGI type ETP)"]
 
 
 def test_etf_family_matches_upper_case_names(tmp_path: Path) -> None:
@@ -479,4 +480,25 @@ def test_us_etfs_get_sec_objective_and_registrant_family(tmp_path: Path) -> None
     assert pcx.loc["OTHR", "family"] == ""  # unknown registrant: left blank
     assert pcx.loc["OTHR", "summary"].startswith(
         "Other Issuer ETF is an exchange-traded fund listed on the NYSE Arca"
+    )
+
+
+def test_extract_objective_keeps_before_fees_and_skips_website_sentence() -> None:
+    leveraged = (
+        "<p>Investment Objective</p><p>The Fund seeks daily investment results, before fees and"
+        " expenses, of 200% of the daily performance of SMCI.</p><h2>Fees and Expenses of the"
+        " Fund</h2>"
+    )
+    assert ul.extract_objective(leveraged) == (
+        "The Fund seeks daily investment results, before fees and expenses, of 200% of the daily"
+        " performance of SMCI."
+    )
+    buffer = (
+        "<p>Investment Objective</p><p>The Fund&#8217;s website, www.example.com/APRT, provides,"
+        " on a daily basis, important Fund information (including Outcome Period dates). The Fund"
+        " seeks to match the S&amp;P 500 up to a cap.</p><p>Fees and Expenses</p>"
+    )
+    assert (
+        ul.extract_objective(buffer)
+        == "The Fund seeks to match the S&P 500 up to a cap."
     )
