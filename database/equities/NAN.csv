@@ -50,10 +50,10 @@ symbol,name,summary,currency,sector,industry_group,industry,exchange,mic,market,
 2478.TW,TA-I Technology Co Ltd,"Established in 1989 and headquartered in Taoyuan City, Taiwan, TA-I Technology Co., Ltd. operates as a global manufacturer and distributor of chip resistors and circuit protection solutions used across automotive, industrial, and consumer electronics applications.",,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",,,,Taiwan,,Taoyuan City,33851,https://www.tai.com.tw,Mid Cap,,,,,,False
 2486.TW,I-Chiun Precision Industry Co Ltd,"I-Chiun Precision Industry Co., Ltd. specializes in the global design, production, and distribution of high-precision electronic components including optoelectronic lead frames, small motors, SMD LED products, and LCD system components. Established in 1977, headquartered in New Taipei City, Taiwan.",,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",,,,Taiwan,,New Taipei City,24890,https://www.i-chiun.com.tw,Mid Cap,,,,,,False
 2501.TW,Cathay Real Estate Development Co Ltd,"Cathay Real Estate Development Co.,Ltd., based in Taipei, Taiwan, primarily specializes in the construction of residential and commercial properties, alongside pharmaceutical wholesale distribution and other trade and investment ventures. Established in 1964.",,Real Estate,Real Estate,Real Estate Management & Development,,,,Taiwan,,Taipei,106,https://www.cathay-red.com.tw,Mid Cap,,,,,,False
-2504.TW,Goldsun Building Materials Co Ltd,,,,,Construction Materials,,,,Taiwan,,,,,,,,,,,False
+2504.TW,Goldsun Building Materials Co Ltd,,,Materials,Materials,Construction Materials,,,,Taiwan,,,,,,,,,,,False
 2505.TW,Kuo Yang Construction Co Ltd,,,Real Estate,Real Estate,Real Estate Management & Development,,,,Taiwan,,,,,,,,,,,False
 250A.T,Shimadaya Corp,,,Consumer Staples,"Food, Beverage & Tobacco",Food Products,,,,Japan,,,,,,,,,,,False
-2515.TW,BES Engineering Corp,,,,,Construction & Engineering,,,,Taiwan,,,,,,,,,,,False
+2515.TW,BES Engineering Corp,,,Industrials,Capital Goods,Construction & Engineering,,,,Taiwan,,,,,,,,,,,False
 2534.TW,Hung Sheng Construction Ltd,,,Real Estate,Real Estate,Real Estate Management & Development,,,,Taiwan,,,,,,,,,,,False
 2536.TW,Hong Pu Real Estate Development Co Ltd,,,Real Estate,Real Estate,Real Estate Management & Development,,,,Taiwan,,,,,,,,,,,False
 2538.TW,KEE TAI Properties Co Ltd,,,Real Estate,Real Estate,Real Estate Management & Development,,,,Taiwan,,,,,,,,,,,False
@@ -76,11 +76,11 @@ symbol,name,summary,currency,sector,industry_group,industry,exchange,mic,market,
 2810.T,House Foods Group Inc,,,Consumer Staples,"Food, Beverage & Tobacco",Food Products,,,,Japan,,,,,,,,,,,False
 2834.TW,Taiwan Business Bank,,,Financials,Banks,Banks,,,,Taiwan,,,,,,,,,,,False
 2883.TW,KGI Financial Holding Co Ltd,,,Financials,Insurance,Insurance,,,,Taiwan,,,,,,,,,,,False
-2885.TW,Yuanta Financial Holding Co Ltd,,,,,Diversified Financial Services,,,,Taiwan,,,,,,,,,,,False
+2885.TW,Yuanta Financial Holding Co Ltd,,,Financials,Diversified Financials,Diversified Financial Services,,,,Taiwan,,,,,,,,,,,False
 2886.TW,Mega Financial Holding Co Ltd,,,Financials,Banks,Banks,,,,Taiwan,,,,,,,,,,,False
 2897.TW,O-Bank Co Ltd,,,Financials,Banks,Banks,,,,Taiwan,,,,,,,,,,,False
 2913.TW,Taiwan TEA Corp,,,Consumer Staples,"Food, Beverage & Tobacco",Food Products,,,,Taiwan,,,,,,,,,,,False
-2929.T,Pharma Foods International Co Ltd,,,,,Biotechnology,,,,Japan,,,,,,,,,,,False
+2929.T,Pharma Foods International Co Ltd,,,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Biotechnology,,,,Japan,,,,,,,,,,,False
 2980.T,SRE Holdings Corp,,,Real Estate,Real Estate,Real Estate Management & Development,,,,Japan,,,,,,,,,,,False
 29M.AX,29Metals Ltd,,,Materials,Materials,Metals & Mining,,,,Australia,,,,,,,,,,,False
 3010.TW,Wah Lee Industrial Corp,,,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",,,,Taiwan,,,,,,,,,,,False
@@ -95,7 +95,7 @@ symbol,name,summary,currency,sector,industry_group,industry,exchange,mic,market,
 3296.T,NIPPON REIT Investment Corp,,,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),,,,Japan,,,,,,,,,,,False
 3349.T,Cosmos Pharmaceutical Corp,,,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,,,,Japan,,,,,,,,,,,False
 3350.T,Metaplanet Inc,,,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",,,,Japan,,,,,,,,,,,False
-3380.TW,Alpha Networks Inc,,,,,Communications Equipment,,,,Taiwan,,,,,,,,,,,False
+3380.TW,Alpha Networks Inc,,,Information Technology,Technology Hardware & Equipment,Communications Equipment,,,,Taiwan,,,,,,,,,,,False
 3426.T,Atom Corp,,,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",,,,Japan,,,,,,,,,,,False
 3445.T,RS Technologies Co Ltd,,,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,,,,Japan,,,,,,,,,,,False
 3465.T,Ki-Star Real Estate Co Ltd,,,Consumer Discretionary,Consumer Durables & Apparel,Household Durables,,,,Japan,,,,,,,,,,,False
@@ -103,10 +103,10 @@ symbol,name,summary,currency,sector,industry_group,industry,exchange,mic,market,
 3487.T,CRE Logistics REIT Inc,,,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),,,,Japan,,,,,,,,,,,False
 3617.TW,CyberPower Systems Inc,,,Industrials,Capital Goods,Electrical Equipment,,,,Taiwan,,,,,,,,,,,False
 3661.T,m-up Holdings Inc,,,Information Technology,Software & Services,Software,,,,Japan,,,,,,,,,,,False
-3678.T,Media Do Co Ltd,,,,,Distributors,,,,Japan,,,,,,,,,,,False
+3678.T,Media Do Co Ltd,,,Consumer Discretionary,Retailing,Distributors,,,,Japan,,,,,,,,,,,False
 3715.TW,Dynamic Holding Co Ltd,,,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",,,,Taiwan,,,,,,,,,,,False
-3716.TW,Cenra Inc,,,,,Pharmaceuticals,,,,Taiwan,,,,,,,,,,,False
-3733.T,Software Service Inc,,,,,Health Care Technology,,,,Japan,,,,,,,,,,,False
+3716.TW,Cenra Inc,,,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Pharmaceuticals,,,,Taiwan,,,,,,,,,,,False
+3733.T,Software Service Inc,,,Health Care,Health Care Equipment & Services,Health Care Technology,,,,Japan,,,,,,,,,,,False
 3817.T,SRA Holdings,,,Information Technology,Software & Services,Software,,,,Japan,,,,,,,,,,,False
 3854.T,I'll Inc,,,Information Technology,Software & Services,Software,,,,Japan,,,,,,,,,,,False
 3863.T,Nippon Paper Industries Co Ltd,,,Materials,Materials,Paper & Forest Products,,,,Japan,,,,,,,,,,,False
@@ -121,13 +121,13 @@ symbol,name,summary,currency,sector,industry_group,industry,exchange,mic,market,
 4634.T,Artience Co Ltd,,,Materials,Materials,Chemicals,,,,Japan,,,,,,,,,,,False
 4770.TW,Allied Supreme Corp,,,Materials,Materials,Chemicals,,,,Taiwan,,,,,,,,,,,False
 4812.T,Dentsu Soken Inc,"Dentsu Soken Inc. provides information technology solutions through four segments: Financial Solutions, Business Solutions, Manufacturing Solutions, and Communication IT. Formerly known as Information Services International-Dentsu, Ltd., the company was incorporated in 1975 and is headquartered in Tokyo, Japan, operating as a subsidiary of Dentsu Group Inc.",,Information Technology,Software & Services,IT Services,,,,Japan,,Tokyo,108-0075,https://www.dentsusoken.com,Large Cap,,,,,,False
-4888.T,Stella Pharma Corporation,,,,,Pharmaceuticals,,,,South Korea,,,,,,,,,,,False
+4888.T,Stella Pharma Corporation,,,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Pharmaceuticals,,,,South Korea,,,,,,,,,,,False
 4919.T,Milbon Co Ltd,,,Consumer Staples,Household & Personal Products,Personal Products,,,,Japan,,,,,,,,,,,False
 49DA.F,Industrial Bank of Korea,,,Financials,Banks,Banks,,,,South Korea,,,,,,,,,,,False
 5016.T,JX Advanced Metals Corp,,,Materials,Materials,Metals & Mining,,,,Japan,,,,,,,,,,,False
 5032.T,Anycolor Inc,,,Communication Services,Media & Entertainment,Entertainment,,,,Japan,,,,,,,,,,,False
-5074.T,Tess Holdings Co Ltd,,,,,Construction & Engineering,,,,Japan,,,,,,,,,,,False
-5076.T,INFRONEER Holdings Inc,,,,,Construction & Engineering,,,,Japan,,,,,,,,,,,False
+5074.T,Tess Holdings Co Ltd,,,Industrials,Capital Goods,Construction & Engineering,,,,Japan,,,,,,,,,,,False
+5076.T,INFRONEER Holdings Inc,,,Industrials,Capital Goods,Construction & Engineering,,,,Japan,,,,,,,,,,,False
 5110.T,Sumitomo Rubber Industries Ltd,,,Consumer Discretionary,Automobiles & Components,Auto Components,,,,Japan,,,,,,,,,,,False
 5461.T,Chubu Steel Plate Co Ltd,,,Materials,Materials,Metals & Mining,,,,Japan,,,,,,,,,,,False
 5534.TW,Chong Hong Construction Co Ltd,,,Real Estate,Real Estate,Real Estate Management & Development,,,,Taiwan,,,,,,,,,,,False
@@ -148,7 +148,7 @@ symbol,name,summary,currency,sector,industry_group,industry,exchange,mic,market,
 6419.T,Mars Group Holdings Corp,,,Consumer Discretionary,Consumer Durables & Apparel,Leisure Products,,,,Japan,,,,,,,,,,,False
 6486.T,Eagle Industry Co Ltd,,,Consumer Discretionary,Automobiles & Components,Auto Components,,,,Japan,,,,,,,,,,,False
 6526.TW,Airoha Technology Corp,,,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,,,,Taiwan,,,,,,,,,,,False
-6550.TW,Polaris Group,,,,,Biotechnology,,,,Taiwan,,,,,,,,,,,False
+6550.TW,Polaris Group,,,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Biotechnology,,,,Taiwan,,,,,,,,,,,False
 6605.TW,Depo Auto Parts Ind Co Ltd,,,Consumer Discretionary,Automobiles & Components,Auto Components,,,,Taiwan,,,,,,,,,,,False
 6630.T,YA-MAN Ltd,,,Consumer Staples,Household & Personal Products,Personal Products,,,,Japan,,,,,,,,,,,False
 6651.T,Nitto Kogyo Corp,,,Industrials,Capital Goods,Electrical Equipment,,,,Japan,,,,,,,,,,,False
@@ -159,19 +159,19 @@ symbol,name,summary,currency,sector,industry_group,industry,exchange,mic,market,
 6AU.F,TBS Holdings Inc,,,Communication Services,Media & Entertainment,Media,,,,Japan,,,,,,,,,,,False
 6O7.F,Dowlais Group PLC,,,Consumer Discretionary,Automobiles & Components,Auto Components,,,,United Kingdom,,,,,,,,,,,False
 7033.T,Management Solutions Co Ltd,,,Industrials,Commercial & Professional Services,Professional Services,,,,Japan,,,,,,,,,,,False
-7130.T,Yamae Group Holdings Co Ltd,,,,,Distributors,,,,Japan,,,,,,,,,,,False
+7130.T,Yamae Group Holdings Co Ltd,,,Consumer Discretionary,Retailing,Distributors,,,,Japan,,,,,,,,,,,False
 7148.T,Financial Partners Group Co Ltd,,,Financials,Diversified Financials,Diversified Financial Services,,,,Japan,,,,,,,,,,,False
 7172.T,Japan Investment Adviser Co Ltd,,,Financials,Diversified Financials,Diversified Financial Services,,,,Japan,,,,,,,,,,,False
 7177.T,GMO Financial Holdings Inc,,,Financials,Diversified Financials,Capital Markets,,,,Japan,,,,,,,,,,,False
 7180.T,Kyushu Financial Group Inc,,,Financials,Banks,Banks,,,,Japan,,,,,,,,,,,False
-7199.T,Premium Group Co Ltd,,,,,Consumer Finance,,,,Japan,,,,,,,,,,,False
+7199.T,Premium Group Co Ltd,,,Financials,Diversified Financials,Consumer Finance,,,,Japan,,,,,,,,,,,False
 7279.T,HI-LEX CORP,,,Consumer Discretionary,Automobiles & Components,Auto Components,,,,Japan,,,,,,,,,,,False
 7313.T,TS Tech Co Ltd,,,Consumer Discretionary,Automobiles & Components,Auto Components,,,,Japan,,,,,,,,,,,False
 7322.T,San ju San Financial Group Inc,,,Financials,Banks,Banks,,,,Japan,,,,,,,,,,,False
 7350.T,Okinawa Financial Group Inc,,,Financials,Banks,Banks,,,,Japan,,,,,,,,,,,False
 7380.T,Juroku Financial Group Inc,,,Financials,Banks,Banks,,,,Japan,,,,,,,,,,,False
 7381.T,CCI Group Inc,,,Financials,Banks,Banks,,,,Japan,,,,,,,,,,,False
-7383.T,Net Protections Holdings Inc,,,,,Consumer Finance,,,,Japan,,,,,,,,,,,False
+7383.T,Net Protections Holdings Inc,,,Financials,Diversified Financials,Consumer Finance,,,,Japan,,,,,,,,,,,False
 7384.T,Procrea Holdings Inc,,,Financials,Banks,Banks,,,,Japan,,,,,,,,,,,False
 7388.T,FP Partner Inc,,,Financials,Insurance,Insurance,,,,Japan,,,,,,,,,,,False
 7389.T,Aichi Financial Group Inc,,,Financials,Banks,Banks,,,,Japan,,,,,,,,,,,False
@@ -184,13 +184,13 @@ symbol,name,summary,currency,sector,industry_group,industry,exchange,mic,market,
 7GL.F,Alphawave IP Group PLC,,,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,,,,United Kingdom,,,,,,,,,,,True
 7TB.F,Banca Transilvania SA,,,Financials,Banks,Banks,,,,Romania,,,,,,,,,,,False
 8028.TW,Phoenix Silicon International Corp,,,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,,,,Taiwan,,,,,,,,,,,False
-8032.T,Japan Pulp & Paper Co Ltd,,,,,Trading Companies & Distributors,,,,Japan,,,,,,,,,,,False
+8032.T,Japan Pulp & Paper Co Ltd,,,Industrials,Capital Goods,Trading Companies & Distributors,,,,Japan,,,,,,,,,,,False
 8050.T,Seiko Group Corp,,,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goods",,,,Japan,,,,,,,,,,,False
 8081.TW,Global Mixed Mode Technology Inc,,,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,,,,Taiwan,,,,,,,,,,,False
 8097.T,San-Ai Obbli Co Ltd,,,Energy,Energy,"Oil, Gas & Consumable Fuels",,,,Japan,,,,,,,,,,,False
 8111.T,Goldwin Inc,,,Consumer Discretionary,Consumer Durables & Apparel,"Textiles, Apparel & Luxury Goods",,,,Japan,,,,,,,,,,,False
 8112.TW,Supreme Electronics Co Ltd,,,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",,,,Taiwan,,,,,,,,,,,False
-8117.T,Central Automotive Products Ltd,,,,,Distributors,,,,Japan,,,,,,,,,,,False
+8117.T,Central Automotive Products Ltd,,,Consumer Discretionary,Retailing,Distributors,,,,Japan,,,,,,,,,,,False
 8142.T,Toho Co Ltd/Tokyo,,,Communication Services,Media & Entertainment,Entertainment,,,,Japan,,,,,,,,,,,False
 8153.T,MOS Food Services Inc,,,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",,,,Japan,,,,,,,,,,,False
 8167.T,Retail Partners Co Ltd,,,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,,,,Japan,,,,,,,,,,,False
@@ -199,9 +199,9 @@ symbol,name,summary,currency,sector,industry_group,industry,exchange,mic,market,
 8388.T,Awa Bank Ltd/The,,,Financials,Banks,Banks,,,,Japan,,,,,,,,,,,False
 8395.T,Bank of Saga Ltd/The,,,Financials,Banks,Banks,,,,Japan,,,,,,,,,,,False
 8439.T,Tokyo Century Corp,,,Financials,Diversified Financials,Diversified Financial Services,,,,Japan,,,,,,,,,,,False
-8570.T,AEON Financial Service Co Ltd,,,,,Consumer Finance,,,,Japan,,,,,,,,,,,False
+8570.T,AEON Financial Service Co Ltd,,,Financials,Diversified Financials,Consumer Finance,,,,Japan,,,,,,,,,,,False
 8593.T,Mitsubishi HC Capital Inc,,,Financials,Diversified Financials,Diversified Financial Services,,,,Japan,,,,,,,,,,,False
-8729.T,Sony Financial Group Inc,,,,,Diversified Financial Services,,,,Japan,,,,,,,,,,,False
+8729.T,Sony Financial Group Inc,,,Financials,Diversified Financials,Diversified Financial Services,,,,Japan,,,,,,,,,,,False
 8793.T,NEC Capital Solutions Ltd,,,Financials,Diversified Financials,Diversified Financial Services,,,,Japan,,,,,,,,,,,False
 8860.T,Fuji Co Ltd/Ehime,,,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,,,,Japan,,,,,,,,,,,False
 8864.T,Airport Facilities Co Ltd,,,Real Estate,Real Estate,Real Estate Management & Development,,,,Japan,,,,,,,,,,,False
@@ -218,11 +218,11 @@ symbol,name,summary,currency,sector,industry_group,industry,exchange,mic,market,
 8985.T,Japan Hotel REIT Investment Corp,,,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),,,,Japan,,,,,,,,,,,False
 8JN.F,KANZHUN LTD - ADR,,,Industrials,Commercial & Professional Services,Professional Services,,,,United States,,,,,,,,,,,False
 9248.T,People & Technology Inc,,,Industrials,Capital Goods,Machinery,,,,South Korea,,,,,,,,,,,False
-9302.T,Mitsui-Soko Holdings Co Ltd,,,,,Air Freight & Logistics,,,,Japan,,,,,,,,,,,False
+9302.T,Mitsui-Soko Holdings Co Ltd,,,Industrials,Transportation,Air Freight & Logistics,,,,Japan,,,,,,,,,,,False
 9303.T,Sumitomo Warehouse Co Ltd/The,,,Industrials,Transportation,Transportation Infrastructure,,,,Japan,,,,,,,,,,,False
 9413.T,Tv Tokyo Holdings Corp,,,Communication Services,Media & Entertainment,Media,,,,Japan,,,,,,,,,,,False
-9533.T,Toho Gas Co Ltd,,,,,Gas Utilities,,,,Japan,,,,,,,,,,,False
-9621.T,CTI Engineering Co Ltd,,,,,Construction & Engineering,,,,Japan,,,,,,,,,,,False
+9533.T,Toho Gas Co Ltd,,,Utilities,Utilities,Gas Utilities,,,,Japan,,,,,,,,,,,False
+9621.T,CTI Engineering Co Ltd,,,Industrials,Capital Goods,Construction & Engineering,,,,Japan,,,,,,,,,,,False
 9692.T,Computer Engineering & Consulting Ltd,,,Information Technology,Software & Services,Software,,,,Japan,,,,,,,,,,,False
 9708.T,Imperial Hotel Ltd,,,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",,,,Japan,,,,,,,,,,,False
 9882.T,Yellow Hat Ltd,,,Consumer Discretionary,Retailing,Specialty Retail,,,,Japan,,,,,,,,,,,False
@@ -233,9 +233,9 @@ ABDN.L,Aberdeen Group PLC,,,Financials,Diversified Financials,Capital Markets,,,
 ABG.AX,Abacus Group,,,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),,,,Australia,,,,,,,,,,,False
 ACAM,,,,,,,,,,,,,,,,,,,,,False
 ACLN.SW,Accelleron Industries AG,,,Industrials,Capital Goods,Electrical Equipment,,,,Switzerland,,,,,,,,,,,False
-ACO-X.NE,Atco Ltd/Canada,,,,,Multi-Utilities,,,,Canada,,,,,,,,,,,False
+ACO-X.NE,Atco Ltd/Canada,,,Utilities,Utilities,Multi-Utilities,,,,Canada,,,,,,,,,,,False
 AEL.AX,Amplitude Energy Ltd,,,Energy,Energy,"Oil, Gas & Consumable Fuels",,,,Australia,,,,,,,,,,,False
-AERO.SW,Montana Aerospace AG,,,,,Aerospace & Defense,,,,Switzerland,,,,,,,,,,,False
+AERO.SW,Montana Aerospace AG,,,Industrials,Capital Goods,Aerospace & Defense,,,,Switzerland,,,,,,,,,,,False
 AFRY.ST,AFRY AB,,,Industrials,Commercial & Professional Services,Professional Services,,,,Sweden,,,,,,,,,,,False
 AGOWF,,,,,,,,,,,,,,,,,,,,,False
 AIA.AT,Athens International Airport SA,,,Industrials,Transportation,Transportation Infrastructure,,,,Greece,,,,,,,,,,,False
@@ -249,7 +249,7 @@ ANTIN.PA,Antin Infrastructure Partners SA,,,Financials,Diversified Financials,Ca
 AOV.AX,Amotiv Ltd,,,Consumer Discretionary,Automobiles & Components,Auto Components,,,,Australia,,,,,,,,,,,False
 APRWF,,,,,,,,,,,,,,,,,,,,,False
 ARAMI.PA,Aramis Group SAS,,,Consumer Discretionary,Retailing,Specialty Retail,,,,France,,,,,,,,,,,False
-ARIS.MI,Ariston Holding NV,,,,,Building Products,,,,Italy,,,,,,,,,,,False
+ARIS.MI,Ariston Holding NV,,,Industrials,Capital Goods,Building Products,,,,Italy,,,,,,,,,,,False
 ASCNZ.XC,Ascom,,,Health Care,Health Care Equipment & Services,Health Care Providers & Services,,,,Switzerland,,,,,,,,,,,False
 ASKER.ST,Asker Healthcare Group AB,,,Health Care,Health Care Equipment & Services,Health Care Equipment & Supplies,,,,Sweden,,,,,,,,,,,False
 ASMDEE-B.ST,Asmodee Group AB,,,Consumer Discretionary,Consumer Durables & Apparel,Leisure Products,,,,Sweden,,,,,,,,,,,False
@@ -259,8 +259,8 @@ ATRL.TO,AtkinsRéalis Group Inc.,,,Industrials,Capital Goods,Construction & Engi
 ATS.TO,ATS Corp,,,Industrials,Capital Goods,Machinery,,,,Canada,,,,,,,,,,,False
 AXGT,,,,,,,,,,,,,,,,,,,,,False
 AYV.PA,Ayvens SA,,,Industrials,Transportation,Road & Rail,,,,France,,,,,,,,,,,False
-AZE.BR,Azelis Group NV,,,,,Trading Companies & Distributors,,,,Belgium,,,,,,,,,,,False
-BCG.L,Baltic Classifieds Group PLC,,,,,Interactive Media & Services,,,,United Kingdom,,,,,,,,,,,False
+AZE.BR,Azelis Group NV,,,Industrials,Capital Goods,Trading Companies & Distributors,,,,Belgium,,,,,,,,,,,False
+BCG.L,Baltic Classifieds Group PLC,,,Communication Services,Media & Entertainment,Interactive Media & Services,,,,United Kingdom,,,,,,,,,,,False
 BEANZ.XC,BELIMO Holding,,,Industrials,Capital Goods,Building Products,,,,Switzerland,,,,,,,,,,,False
 BEIJBS.XC,Beijer Ref,,,Industrials,Capital Goods,Machinery,,,,Sweden,,,,,,,,,,,False
 BFT.WA,Benefit Systems,,,,,,,,,Poland,,,,,,,,,,,False
@@ -278,13 +278,13 @@ CLTNZ.XC,COLTENE,,,Health Care,Health Care Equipment & Services,Health Care Equi
 COBA,Chilean Cobalt,,,,,,,,,Chile,,,,,,,,,,,False
 CPKR.TO,Canada Packers Inc,,,Consumer Staples,"Food, Beverage & Tobacco",Food Products,,,,Canada,,,,,,,,,,,False
 CTL,Capital Trade Links Limited,Capital Trade Links Limited is involved in trading and investment activities. They deal in various commodities and securities. The company is based in India.,,Financials,Diversified Financials,,,,,Singapore,,New Delhi,,,Nano Cap,JE00BPCP3Z37,,,,,False
-CU6.AX,Clarity Pharmaceuticals Ltd,,,,,Pharmaceuticals,,,,Australia,,,,,,,,,,,False
+CU6.AX,Clarity Pharmaceuticals Ltd,,,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Pharmaceuticals,,,,Australia,,,,,,,,,,,False
 CURY.L,Currys PLC,,,Consumer Discretionary,Retailing,Specialty Retail,,,,United Kingdom,,,,,,,,,,,False
 CVC.AS,CVC Capital Partners PLC,,,Financials,Diversified Financials,Capital Markets,,,,Netherlands,,,,,,,,,,,False
 CXO,Core Lithium Ltd,"Core Lithium Ltd engages in the exploration of lithium and base metals deposits in Australia. The company primarily explores for copper, gold, iron, silver, uranium, lead, and zinc deposits. It develops the Finniss Lithium project located to the south of Darwin port in the Northern Territory in Australia. The company was formerly known as Core Exploration Limited and changed its name to Core Lithium Ltd in November 2018. The company was incorporated in 2010 and is based in Adelaide, Australia.",,Materials,Materials,Metals & Mining,,,,Australia,,Adelaide,5000,http://corelithium.com.au,Micro Cap,AU000000CXO2,,,BBG001968H71,BBG001TG20M3,False
 CZZ,,,,,,,,,,Canada,,,,,,,,,,,False
 D2J.F,Avolta AG,,,Consumer Discretionary,Retailing,Specialty Retail,,,,Switzerland,,,,,,,,,,,False
-DEME.BR,Deme Group NV,,,,,Construction & Engineering,,,,Belgium,,,,,,,,,,,False
+DEME.BR,Deme Group NV,,,Industrials,Capital Goods,Construction & Engineering,,,,Belgium,,,,,,,,,,,False
 DIA.WA,Diagnostyka,,,,,,,,,Poland,,,,,,,,,,,False
 DNK,Danakali Limited,"Danakali Limited, along with its associated entities, is active in the mineral exploration sector, primarily within Eritrea, East Africa. The company's central focus is the advancement of the Colluli potash project, situated in Eritrea's Danakil Depression region. Originally incorporated in 2001, the firm was formerly known as South Boulder Mines Ltd. before officially adopting the Danakali Limited name in June 2015. Its corporate headquarters are located in Perth, Australia.",,Materials,Materials,Chemicals,,,,Australia,,Perth,6006,https://www.danakali.com.au,Micro Cap,,,,,,False
 DNKN,,,,,,,,,,,,,,,,,,,,,False
@@ -298,7 +298,7 @@ DVP.AX,Develop Global Ltd,,,Materials,Materials,Metals & Mining,,,,Australia,,,,
 E1K.F,Lake Victoria Gold Ltd. R,,,Energy,Energy,"Oil, Gas & Consumable Fuels",,,,South Korea,,,,,,,,,,,False
 EDV.AX,Endeavour Group Ltd/Australia,,,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,,,,Australia,,,,,,,,,,,False
 ENT,Enterprise Metals Limited,"Enterprise Metals Limited engages in the acquisition, exploration, and development of mineral properties in Western Australia. The company explores for copper, gold, nickel, zinc, iron ore, lithium, and base metals. Its primary projects include Murchison, Doolgunna, and Fraser Range projects located in Western Australia. The company was formerly known as Revere Mining Limited and changed its name to Enterprise Metals Limited in December 2008. Enterprise Metals Limited was incorporated in 2007 and is based in West Perth, Australia.",,Materials,Materials,Metals & Mining,,,,United Kingdom,,West Perth,6005,http://www.enterprisemetals.com.au,Nano Cap,IM00B5VQMV65,,,BBG000FTWDZ7,BBG001SGZDS4,False
-EQS.PA,Equasens,,,,,Health Care Technology,,,,France,,,,,,,,,,,False
+EQS.PA,Equasens,,,Health Care,Health Care Equipment & Services,Health Care Technology,,,,France,,,,,,,,,,,False
 ERI,,,,,,,,,,Japan,,,,,,,,,,,False
 ETAOF,ETAO International,,,,,,,,,United States,NY,,,,,,,,,,False
 ETFC,,,,,,,,,,,,,,,,,,,,,False
@@ -307,12 +307,12 @@ FCAU,,,,,,,,,,Netherlands,,,,,,,,,,,False
 FDEF,,,,,,,,,,,,,,,,,,,,,False
 FLLIY,,,,,,,,,,,,,,,,,,,,,False
 FMCI,,,,,,,,,,,,,,,,,,,,,False
-FPR.AX,FleetPartners Group Ltd,,,,,Consumer Finance,,,,Australia,,,,,,,,,,,False
+FPR.AX,FleetPartners Group Ltd,,,Financials,Diversified Financials,Consumer Finance,,,,Australia,,,,,,,,,,,False
 FRVIA.PA,Forvia SE,,,Consumer Discretionary,Automobiles & Components,Auto Components,,,,France,,,,,,,,,,,False
-FTS.NE,Fortis Inc/Canada,,,,,Electric Utilities,,,,Canada,,,,,,,,,,,False
-FTWYF,Freightways Group Ltd,,,,,Air Freight & Logistics,,,,New Zealand,,,,,,,,,,,False
-GALD.SW,Galderma Group AG,,,,,Pharmaceuticals,,,,Switzerland,,,,,,,,,,,False
-GEA.WA,Grenevia,,,,,,,,,Poland,,,,,,,,,,,False
+FTS.NE,Fortis Inc/Canada,,,Utilities,Utilities,Electric Utilities,,,,Canada,,,,,,,,,,,False
+FTWYF,Freightways Group Ltd,,,Industrials,Transportation,Air Freight & Logistics,,,,New Zealand,,,,,,,,,,,False
+GALD.SW,Galderma Group AG,,,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Pharmaceuticals,,,,Switzerland,,,,,,,,,,,False
+GEA.WA,Grenevia,,,,,,,,,Poland,,,,,,,,,,,True
 GNVR,Genvor,,,,,,,,,United States,NC,,,,,,,,,,False
 GQG.AX,GQG PARTNERS INC-CDI,,,Financials,Diversified Financials,Capital Markets,,,,Australia,,,,,,,,,,,False
 GUBRA.CO,Gubra A/S,,,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Life Sciences Tools & Services,,,,Denmark,,,,,,,,,,,False
@@ -325,7 +325,7 @@ HBX.MC,HBX Group International PLC,,,Consumer Discretionary,Consumer Services,"H
 HDS,,,,,,,,,,,,,,,,,,,,,False
 HIAB.HE,Hiab Oyj,,,Industrials,Capital Goods,Machinery,,,,Finland,,,,,,,,,,,False
 HLI.AX,Helia Group Ltd,,,Financials,Banks,Thrifts & Mortgage Finance,,,,Australia,,,,,,,,,,,False
-HLN.L,Haleon PLC,,,,,Pharmaceuticals,,,,United Kingdom,,,,,,,,,,,False
+HLN.L,Haleon PLC,,,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Pharmaceuticals,,,,United Kingdom,,,,,,,,,,,False
 HOLHF,,,,,,,,,,,,,,,,,,,,,False
 HOLN.SW,Holcim AG,"Holcim Ltd stands as a premier international supplier of construction materials and advanced building solutions, organized into Cement, Aggregates, Ready-mix Concrete, and Solutions & Products divisions. With a history dating back to 1833, Holcim Ltd is headquartered in Zug, Switzerland, and rebranded from LafargeHolcim Ltd in May 2021.",,Materials,Materials,Construction Materials,,,,Switzerland,,Zug,6300,https://www.holcim.com,Large Cap,,,,,,False
 HUBNZ.XC,Huber+Suhner,,,Information Technology,Technology Hardware & Equipment,Communications Equipment,,,,Switzerland,,,,,,,,,,,False
@@ -344,7 +344,7 @@ JDO.AX,Judo Capital Holdings Ltd,,,Financials,Banks,Banks,,,,Australia,,,,,,,,,,
 JPMJL,,,,,,,,,,,,,,,,,,,,,False
 KALMAR.HE,Kalmar Oyj,,,Industrials,Capital Goods,Machinery,,,,Finland,,,,,,,,,,,False
 KOMOF,Komo Plant Based Foods,,,,,,,,,Canada,BC,,,,,,,,,,False
-KRU.WA,KRUK SA,,,,,Consumer Finance,,,,Poland,,,,,,,,,,,False
+KRU.WA,KRUK SA,,,Financials,Diversified Financials,Consumer Finance,,,,Poland,,,,,,,,,,,False
 KTN.F,Kontron AG,,,Information Technology,Software & Services,IT Services,,,,Germany,,,,,,,,,,,False
 L1G.AX,L1 Group Ltd,,,Financials,Diversified Financials,Capital Markets,,,,Australia,,,,,,,,,,,False
 L7H.F,ISC Co Ltd,,,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,,,,South Korea,,,,,,,,,,,False
@@ -358,7 +358,7 @@ LTMC.MI,Lottomatica Group Spa,,,Consumer Discretionary,Consumer Services,"Hotels
 LUNR.V,LunR Royalties Corp,,,Materials,Materials,Metals & Mining,,,,Canada,,,,,,,,,,,False
 LXRBF,,,,,,,,,,,,,,,,,,,,,False
 M.RO,Med Life SA,,,,,,,,,Romania,,,,,,,,,,,False
-MAIRE.MI,Maire SpA,,,,,Construction & Engineering,,,,Italy,,,,,,,,,,,False
+MAIRE.MI,Maire SpA,,,Industrials,Capital Goods,Construction & Engineering,,,,Italy,,,,,,,,,,,False
 MANTA.HE,Mandatum Oyj,,,Financials,Insurance,Insurance,,,,Finland,,,,,,,,,,,False
 MBK.WA,mBank,,,,,,,,,Poland,,,,,,,,,,,False
 MBR.WA,Mo-BRUK,,,,,,,,,Poland,,,,,,,,,,,False
@@ -371,15 +371,15 @@ MIL.WA,Bank Millennium,,,,,,,,,Poland,,,,,,,,,,,False
 MLS.WA,ML Systems,,,,,,,,,Poland,,,,,,,,,,,False
 MNRHF,Menora,,,,,,,,,Israel,,,,,,,,,,,False
 MNSEF,Magnis Energy Technologies,,,,,,,,,Australia,NSW,,,,,,,,,,True
-MRFCF,MARUKA FURUSATO Corp,,,,,Trading Companies & Distributors,,,,Japan,,,,,,,,,,,False
+MRFCF,MARUKA FURUSATO Corp,,,Industrials,Capital Goods,Trading Companies & Distributors,,,,Japan,,,,,,,,,,,False
 MSRM,Mushrooms,,,,,,,,,United States,FL,,,,,,,,,,False
 MTAV.TA,Meitav Investment House Ltd,,,Financials,Diversified Financials,Capital Markets,,,,Israel,,,,,,,,,,,False
 MTI.ST,Investment AB Oresund,,,Financials,Diversified Financials,Diversified Financial Services,,,,Sweden,,,,,,,,,,,False
-MTLN.L,Metlen Energy & Metals PLC,,,,,Industrial Conglomerates,,,,United Kingdom,,,,,,,,,,,False
+MTLN.L,Metlen Energy & Metals PLC,,,Industrials,Capital Goods,Industrial Conglomerates,,,,United Kingdom,,,,,,,,,,,False
 MYL,,,,,,,,,,,,,,,,,,,,,False
 MYLKF,The Planting Hope Company,,,,,,,,,United States,IL,,,,,,,,,,False
 MYOK,,,,,,,,,,,,,,,,,,,,,False
-NCH2.DE,Thyssenkrupp Nucera AG & Co KGaa,,,,,Construction & Engineering,,,,Germany,,,,,,,,,,,False
+NCH2.DE,Thyssenkrupp Nucera AG & Co KGaa,,,Industrials,Capital Goods,Construction & Engineering,,,,Germany,,,,,,,,,,,False
 NEMCL,NEWMONT CORP-CDI,,,Materials,Materials,Metals & Mining,,,,Australia,,,,,,,,,,,False
 NMCI,,,,,,,,,,,,,,,,,,,,,False
 NSIS-B.CO,Novonesis Novozymes B,,,Materials,Materials,Chemicals,,,,Denmark,,,,,,,,,,,False
@@ -414,13 +414,13 @@ RMRHF,OUTsurance Group Ltd,,,Financials,Insurance,Insurance,,,,South Africa,,,,,
 ROKO-B.ST,Röko AB (publ),,,Financials,Diversified Financials,Capital Markets,,,,Sweden,,,,,,,,,,,False
 RPI.L,Raspberry PI Holdings PLC,"Raspberry Pi Holdings plc is an international firm specializing in the design and development of single-board computers and compute modules, along with accessories, semiconductor offerings, and software products. Founded in 2012, the company is headquartered in Cambridge, UK.",,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals",,,,United Kingdom,,Cambridge,CB4 0AB,https://www.raspberrypi.com,Mid Cap,,,,,,False
 RPL.AX,Regal Partners Ltd,,,Financials,Diversified Financials,Capital Markets,,,,Australia,,,,,,,,,,,False
-RS1.L,RS GROUP PLC,,,,,Trading Companies & Distributors,,,,United Kingdom,,,,,,,,,,,False
+RS1.L,RS GROUP PLC,,,Industrials,Capital Goods,Trading Companies & Distributors,,,,United Kingdom,,,,,,,,,,,False
 RTRX,,,,,,,,,,,,,,,,,,,,,False
 SBNOR.OL,Sparebanken Norge,,,Financials,Banks,Banks,,,,Norway,,,,,,,,,,,False
 SCMNZ.XC,Swisscom,,,Communication Services,Telecommunication Services,Diversified Telecommunication Services,,,,Switzerland,,,,,,,,,,,False
 SDIIF,SDI Group,,,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",,,,United Kingdom,,,,,,,,,,,False
 SDR.AX,SiteMinder Ltd,,,Information Technology,Software & Services,Software,,,,Australia,,,,,,,,,,,False
-SDZ.SW,Sandoz Group AG,,,,,Pharmaceuticals,,,,Switzerland,,,,,,,,,,,False
+SDZ.SW,Sandoz Group AG,,,Health Care,"Pharmaceuticals, Biotechnology & Life Sciences",Pharmaceuticals,,,,Switzerland,,,,,,,,,,,False
 SENSZ.XC,Sensirion,,,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",,,,Switzerland,,,,,,,,,,,False
 SGBP,,,,,,,,,,,,,,,,,,,,,False
 SHLL,,,,,,,,,,,,,,,,,,,,,False
@@ -432,24 +432,24 @@ SMTX,,,,,,,,,,,,,,,,,,,,,False
 SPAIF,Sparc Al Inc,,,,,,,,,Panama,,,,,,,,,,,False
 SPG.DE,Springer Nature AG & Co KGaA,,,Communication Services,Media & Entertainment,Media,,,,Germany,,,,,,,,,,,False
 SRBEF,Vusion,,,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",,,,France,,,,,,,,,,,False
-SSNLF,Samsung C&T Corp,,,,,Industrial Conglomerates,,,,South Korea,,,,,,,,,,,False
+SSNLF,Samsung C&T Corp,,,Industrials,Capital Goods,Industrial Conglomerates,,,,South Korea,,,,,,,,,,,False
 STEAF,SM Entertainment Co Ltd,,,Communication Services,Media & Entertainment,Entertainment,,,,South Korea,,,,,,,,,,,False
 STMNZ.XC,Straumann,,,Health Care,Health Care Equipment & Services,Health Care Equipment & Supplies,,,,Switzerland,,,,,,,,,,,False
-STOR-B.ST,Storskogen Group AB,,,,,Industrial Conglomerates,,,,Sweden,,,,,,,,,,,False
+STOR-B.ST,Storskogen Group AB,,,Industrials,Capital Goods,Industrial Conglomerates,,,,Sweden,,,,,,,,,,,False
 SUNWQ,Sunworks Inc,,,,,,,,,United States,CA,,,,,,,,,,False
-SVR.AX,Solvar Ltd,,,,,Consumer Finance,,,,Australia,,,,,,,,,,,False
+SVR.AX,Solvar Ltd,,,Financials,Diversified Financials,Consumer Finance,,,,Australia,,,,,,,,,,,False
 SVTLQ,,,,,,,,,,,,,,,,,,,,,False
 SX2.AX,SOUTHERN CROSS GOLD CONS-CDI,,,Materials,Materials,Metals & Mining,,,,Australia,,,,,,,,,,,False
 SZBI,,,,,,,,,,United States,,,,,,,844271106,,,,False
-TAISF,,,,,,,,,,,,,,,,,,,,,False
+TAISF,,,,,,,,,,,,,,,,,,,,,True
 TCBLL,,,,,,,,,,,,,,,,,,,,,False
 TCO,,,,,,,,,,Canada,,,,,,,,,,,False
 TDBKF,,,,,,,,,,Canada,,,,,,,,,,,True
 TDSUP,,,,,,,,,,,,,,,,,,,,,False
 TEGD.XC,TAG Immobilien,,,Real Estate,Real Estate,Real Estate Management & Development,,,,Germany,,,,,,,,,,,False
-THEON.AS,Theon International PLC,,,,,Aerospace & Defense,,,,Netherlands,,,,,,,,,,,False
+THEON.AS,Theon International PLC,,,Industrials,Capital Goods,Aerospace & Defense,,,,Netherlands,,,,,,,,,,,False
 TIF,,,,,,,,,,,,,,,,,,,,,False
-TKMS.DE,Tkms AG& Co KGaA,,,,,Aerospace & Defense,,,,Germany,,,,,,,,,,,False
+TKMS.DE,Tkms AG& Co KGaA,,,Industrials,Capital Goods,Aerospace & Defense,,,,Germany,,,,,,,,,,,False
 TKUGF,Takeuchi Manufacturing Co Ltd,,,Industrials,Capital Goods,Machinery,,,,Japan,,,,,,,,,,,False
 TLC.AX,Lottery Corp Ltd/The,,,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",,,,Australia,,,,,,,,,,,False
 TNGRF,Thungela Resources Ltd,,,Energy,Energy,"Oil, Gas & Consumable Fuels",,,,South Africa,,,,,,,,,,,False
@@ -461,11 +461,11 @@ TVAVF,Tel Aviv Stock Exchange,,,,,,,,,Israel,,,,,,,,,,,False
 TVLMF,,,,,,,,,,,,,,,,,,,,,False
 UMG.AS,Universal Music Group NV,"Universal Music Group N.V. stands as a leading global music entertainment corporation, organized into Recorded Music, Music Publishing, and Merchandising & Other divisions, representing around 250 artists and brands across roughly 50 labels. Founded in 2020, Universal Music Group N.V. is headquartered in Hilversum, the Netherlands.",,Communication Services,Media & Entertainment,Entertainment,,,,Netherlands,,Hilversum,1217 EW,https://www.universalmusic.com,Large Cap,,,,,,False
 UROV,,,,,,,,,,,,,,,,,,,,,False
-VEND.OL,Vend Marketplaces ASA,,,,,Interactive Media & Services,,,,Norway,,,,,,,,,,,False
+VEND.OL,Vend Marketplaces ASA,,,Communication Services,Media & Entertainment,Interactive Media & Services,,,,Norway,,,,,,,,,,,False
 VGFCQ,The Very Good Food Company,,,,,,,,,Canada,BC,,,,,,,,,,False
 VIMIAN.ST,Vimian Group AB,,,Health Care,Health Care Equipment & Services,Health Care Equipment & Supplies,,,,Sweden,,,,,,,,,,,False
 VIRI.PA,Viridien,,,Energy,Energy,Energy Equipment & Services,,,,France,,,,,,,,,,,False
-VNT.AX,Ventia Services Group Pty Ltd,,,,,Construction & Engineering,,,,Australia,,,,,,,,,,,False
+VNT.AX,Ventia Services Group Pty Ltd,,,Industrials,Capital Goods,Construction & Engineering,,,,Australia,,,,,,,,,,,False
 VOLCAR-B.ST,Volvo Car AB,,,Consumer Discretionary,Automobiles & Components,Automobiles,,,,Sweden,,,,,,,,,,,False
 VSURE.ST,Verisure PLC,,,Industrials,Commercial & Professional Services,Commercial Services & Supplies,,,,Sweden,,,,,,,,,,,False
 W92.F,Guzman y Gomez Ltd,,,Consumer Discretionary,Consumer Services,"Hotels, Restaurants & Leisure",,,,Australia,,,,,,,,,,,False
@@ -478,7 +478,7 @@ WWTIF,Water Ways Technologies,,,Industrials,Capital Goods,Machinery,,,,Canada,ON
 XCFT,xCraft Enterprises,,,,,,,,,United States,ID,,,,,,,,,,False
 XTB.WA,XTB SA,,,Financials,Diversified Financials,Capital Markets,,,,Poland,,,,,,,,,,,False
 YTENQ,Yield10 Bioscience,,,,,,,,,United States,MA,,,,,,,,,,False
-Z8M.F,Aktor SA Holding Company Technical And Energy Projects,,,,,Construction & Engineering,,,,Greece,,,,,,,,,,,False
+Z8M.F,Aktor SA Holding Company Technical And Energy Projects,,,Industrials,Capital Goods,Construction & Engineering,,,,Greece,,,,,,,,,,,False
 ZAB.WA,Zabka Group SA,,,Consumer Staples,Food & Staples Retailing,Food & Staples Retailing,,,,Poland,,,,,,,,,,,False
 ZAP.WA,Grupa Azoty S.A.,,,,,,,,,Poland,,,,,,,,,,,False
 ZEVY,Lightning eMotors,,,,,,,,,United States,CO,,,,,,,,,,False

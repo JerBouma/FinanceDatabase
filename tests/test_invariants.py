@@ -125,11 +125,13 @@ def test_no_isin_collisions_across_asset_classes() -> None:
 def test_delisted_is_strictly_boolean() -> None:
     """`delisted` must be a real bool column: no NaN, no stray types.
 
-    `Equities.select()` filters with `~equities["delisted"]`, which only
+    `Equities.select()` and `ETFs.select()` filter with `~data["delisted"]`, which only
     negates correctly on a bool dtype, so anything else is dirty data.
     """
-    files = sorted(Path("database/equities").glob("*.csv"))
-    assert files, "no equities CSVs found under database/equities/"
+    files = sorted(Path("database/equities").glob("*.csv")) + sorted(
+        Path("database/etfs").glob("*.csv")
+    )
+    assert files, "no equities/ETF CSVs found under database/"
     delisted = pd.concat([pd.read_csv(f, index_col=0)["delisted"] for f in files])
     if delisted.dtype != bool:
         offenders = delisted[~delisted.isin([True, False])]

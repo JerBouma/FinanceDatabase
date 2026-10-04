@@ -38,7 +38,7 @@ ASSET_CATEGORY_SKIP_COLS = {
     "cryptos": {"name", "summary"},
     "currencies": {"name"},
     "equities": {"name", "summary", "website", "delisted"},
-    "etfs": {"name", "summary"},
+    "etfs": {"name", "summary", "delisted"},
     "funds": {"name", "summary", "manager_name", "manager_bio"},
     "indices": {"name"},
     "moneymarkets": {"name"},
