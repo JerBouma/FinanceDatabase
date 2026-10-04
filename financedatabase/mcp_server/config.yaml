@@ -1,0 +1,199 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Finance Database MCP Server — Configuration
+#
+# All module-level constants for the MCP server live here. Edit this file to
+# change tool descriptions, default columns or output limits without touching
+# Python source code. Comments explain every key.
+# ──────────────────────────────────────────────────────────────────────────────
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Server identity
+# instructions are sent to the client on initialisation and tell the model how
+# the tools fit together.
+# ──────────────────────────────────────────────────────────────────────────────
+server:
+  name: "Finance Database Explorer"
+  instructions: >-
+    The Finance Database categorises 300,000+ financial symbols: equities, ETFs,
+    funds, indices, currencies, cryptocurrencies and money markets. It holds
+    classifications (sector, industry, country, exchange, market cap tier, ETF
+    category, fund family, ...), not prices or fundamentals. Start with
+    `search_instruments` to find a symbol by ticker, name or ISIN, use
+    `show_options` to see the exact filter values that exist, and use the asset
+    class tools (`equities`, `etfs`, ...) to list everything matching a set of
+    filters. Results are paginated: follow the `_notes` hint (offset) for more.
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Output limits
+# Every data response is bounded so that no single call can return the full
+# dataset (equities alone has 100,000+ rows).
+#   default_limit       — rows returned when the caller sets no limit
+#   max_limit           — hard ceiling on rows per call, whatever is requested
+#   max_text_length     — longer text values (summaries) are cut to this length
+#   default_options     — values returned by show_options when no limit is set
+#   max_options         — hard ceiling on values returned by show_options
+#   overview_options    — values shown per field when show_options lists every field
+# ──────────────────────────────────────────────────────────────────────────────
+limits:
+  default_limit: 25
+  max_limit: 200
+  max_text_length: 300
+  default_options: 100
+  max_options: 500
+  overview_options: 25
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Dataset instance cache
+# One fd.<AssetClass>() instance is kept per asset class and reused by every
+# call. The package itself checks GitHub for a newer database at most once a
+# day when an instance is created, so an instance older than this is rebuilt
+# on its next use; that keeps a long-running (hosted) server current without
+# downloading anything more often than the package would.
+# FINANCEDATABASE_MCP_LOCAL=1 makes the server read the repository's local
+# compression/ files instead of GitHub (used by the tests).
+# ──────────────────────────────────────────────────────────────────────────────
+cache:
+  instance_ttl_seconds: 86400
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Filter descriptions
+# Shown as the description of each filter parameter on the asset class tools.
+# The filter names themselves come from each class's FIELDS in the package, so
+# a new filter added there appears automatically (with a generic description
+# until one is added here).
+# ──────────────────────────────────────────────────────────────────────────────
+filter_descriptions:
+  country: "Country of the company's headquarters, e.g. 'United States' or 'Netherlands'."
+  sector: "GICS-style sector, e.g. 'Information Technology', 'Health Care' or 'Financials'."
+  industry_group: "GICS-style industry group, e.g. 'Semiconductors & Semiconductor Equipment' or 'Banks'."
+  industry: "GICS-style industry, e.g. 'Biotechnology' or 'Hotels, Restaurants & Leisure'."
+  currency: "Trading currency as an ISO code, e.g. 'USD' or 'EUR'."
+  exchange: "Exchange code, e.g. 'NMS' (NASDAQ Global Select), 'NYQ' (NYSE) or 'AMS' (Euronext Amsterdam)."
+  mic: "ISO 10383 market identifier code, e.g. 'XNAS', 'XNYS' or 'XAMS'."
+  market: "Full market name, e.g. 'NASDAQ Global Select' or 'Euronext Amsterdam'."
+  market_cap: "Market cap tier: 'Mega Cap' (>= $200B), 'Large Cap' (>= $10B), 'Mid Cap' (>= $2B), 'Small Cap' (>= $300M), 'Micro Cap' (>= $50M) or 'Nano Cap'."
+  category_group: "Broad category group, e.g. 'Equities', 'Fixed Income', 'Commodities' or 'Information Technology'."
+  category: "Category, e.g. 'Large Cap', 'Bonds', 'Technology' or 'Emerging Markets'."
+  family: "Fund family (issuer), e.g. 'BlackRock Asset Management' or 'Vanguard Asset Management' (ETFs), 'Fidelity Investments' (funds). Use show_options to find the exact name."
+  base_currency: "Base currency of the pair as an ISO code, e.g. 'EUR' in EURUSD."
+  quote_currency: "Quote currency of the pair as an ISO code, e.g. 'USD' in EURUSD."
+  cryptocurrency: "Cryptocurrency code, e.g. 'ETH', 'ADA' or 'XRP'."
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Asset class tools
+# Each entry becomes one MCP tool exposing that class's select() filters plus
+# query, pagination and column options.
+#   tool_name            — MCP tool name
+#   display_name         — tool title shown by clients
+#   class_name           — the financedatabase class (fd.<class_name>)
+#   description          — AI-facing tool description
+#   summary              — short description for the mcpb listing
+#   default_columns      — columns returned when show_columns is not set
+#                          (summary is never a default: it is long)
+#   columns              — every column of the dataset, listed in the
+#                          show_columns description (requests are validated
+#                          against the live data, not this list)
+#   category_column      — column shown as "category" by search_instruments
+#   supports_delisted    — the class keeps delisted entries (include_delisted)
+#   supports_primary_listing — the class's select() has only_primary_listing
+# ──────────────────────────────────────────────────────────────────────────────
+asset_classes:
+  - tool_name: "equities"
+    display_name: "Equities"
+    class_name: "Equities"
+    description: "List listed companies (stocks) matching filters such as country, sector, industry group, industry, exchange and market cap tier, or matching a free-text query on symbol or name. Every filter accepts one value or several comma-separated values. Use show_options('equities', '<field>') to see valid filter values. Returns categorisation (sector, industry, country, exchange, market cap tier), not prices."
+    summary: "Find stocks by country, sector, industry, exchange, market cap tier or name."
+    default_columns: ["symbol", "name", "currency", "sector", "industry_group", "industry", "exchange", "country", "market_cap"]
+    columns: ["symbol", "name", "summary", "currency", "sector", "industry_group", "industry", "exchange", "mic", "market", "country", "state", "city", "zipcode", "website", "market_cap", "isin", "cusip", "figi", "composite_figi", "shareclass_figi", "delisted"]
+    category_column: "sector"
+    supports_delisted: true
+    supports_primary_listing: true
+
+  - tool_name: "etfs"
+    display_name: "ETFs"
+    class_name: "ETFs"
+    description: "List exchange-traded funds matching filters such as category group, category, family (issuer), currency and exchange, or matching a free-text query on symbol or name. Every filter accepts one value or several comma-separated values. Use show_options('etfs', '<field>') to see valid filter values."
+    summary: "Find ETFs by category, issuer family, currency, exchange or name."
+    default_columns: ["symbol", "name", "currency", "category_group", "category", "family", "exchange"]
+    columns: ["symbol", "name", "currency", "summary", "category_group", "category", "family", "exchange", "mic", "isin", "delisted"]
+    category_column: "category"
+    supports_delisted: true
+    supports_primary_listing: true
+
+  - tool_name: "funds"
+    display_name: "Funds"
+    class_name: "Funds"
+    description: "List mutual funds matching filters such as category group, category, family (fund house), currency and exchange, or matching a free-text query on symbol or name. Every filter accepts one value or several comma-separated values. Use show_options('funds', '<field>') to see valid filter values."
+    summary: "Find mutual funds by category, fund family, currency, exchange or name."
+    default_columns: ["symbol", "name", "currency", "category_group", "category", "family", "exchange"]
+    columns: ["symbol", "name", "currency", "summary", "category_group", "category", "family", "exchange", "mic"]
+    category_column: "category"
+    supports_delisted: false
+    supports_primary_listing: true
+
+  - tool_name: "indices"
+    display_name: "Indices"
+    class_name: "Indices"
+    description: "List market indices matching filters such as category group, category, currency and exchange, or matching a free-text query on symbol or name (e.g. query='S&P 500'). Every filter accepts one value or several comma-separated values. Use show_options('indices', '<field>') to see valid filter values."
+    summary: "Find market indices by category, currency, exchange or name."
+    default_columns: ["symbol", "name", "currency", "category_group", "category", "exchange"]
+    columns: ["symbol", "name", "currency", "summary", "category_group", "category", "exchange", "mic"]
+    category_column: "category"
+    supports_delisted: false
+    supports_primary_listing: false
+
+  - tool_name: "currencies"
+    display_name: "Currencies"
+    class_name: "Currencies"
+    description: "List currency pairs matching a base currency and/or quote currency (ISO codes, comma-separated for several), or matching a free-text query on symbol or name (e.g. query='EURUSD')."
+    summary: "Find currency pairs by base and quote currency."
+    default_columns: ["symbol", "name", "base_currency", "quote_currency", "exchange"]
+    columns: ["symbol", "name", "base_currency", "quote_currency", "summary", "exchange"]
+    category_column: "base_currency"
+    supports_delisted: false
+    supports_primary_listing: false
+
+  - tool_name: "cryptos"
+    display_name: "Cryptocurrencies"
+    class_name: "Cryptos"
+    description: "List cryptocurrency pairs matching a cryptocurrency (e.g. 'ETH') and/or the currency it is quoted in (e.g. 'USD' or 'BTC'), or matching a free-text query on symbol or name. Every filter accepts one value or several comma-separated values."
+    summary: "Find cryptocurrency pairs by coin and quote currency."
+    default_columns: ["symbol", "name", "cryptocurrency", "currency", "exchange"]
+    columns: ["symbol", "name", "cryptocurrency", "currency", "summary", "exchange", "website"]
+    category_column: "cryptocurrency"
+    supports_delisted: false
+    supports_primary_listing: false
+
+  - tool_name: "moneymarkets"
+    display_name: "Money Markets"
+    class_name: "Moneymarkets"
+    description: "List money market funds matching a currency and/or family (fund house), or matching a free-text query on symbol or name. Every filter accepts one value or several comma-separated values. Use show_options('moneymarkets', 'family') to see valid families."
+    summary: "Find money market funds by currency, fund family or name."
+    default_columns: ["symbol", "name", "currency", "family", "exchange"]
+    columns: ["symbol", "name", "currency", "summary", "family", "exchange"]
+    category_column: "family"
+    supports_delisted: false
+    supports_primary_listing: false
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Identifier columns
+# search_instruments and the query parameter also match these columns exactly
+# (case-insensitive) where an asset class has them, so an ISIN, CUSIP or FIGI
+# finds its instrument.
+# ──────────────────────────────────────────────────────────────────────────────
+identifier_columns: ["isin", "cusip", "figi", "composite_figi", "shareclass_figi"]
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Utility tools
+# Registered by UtilityToolRegistry in tools_model.py. Listed here so
+# build-mcpb.sh can include them in the manifest without hard-coding them.
+# ──────────────────────────────────────────────────────────────────────────────
+utility_tools:
+  - tool_name: "search_categories"
+    description: "List the asset classes with their tool, number of entries, filterable fields and description."
+
+  - tool_name: "show_options"
+    description: "Show the valid values of a filter (e.g. every sector or country) for an asset class, optionally narrowed by other filters."
+
+  - tool_name: "search_instruments"
+    description: "Find instruments by ticker, name or ISIN across all asset classes at once."
