@@ -6,15 +6,31 @@ on:
       - 'main'
   schedule:
     - cron: '0 12 * * SUN'
+  workflow_dispatch:  # run by hand from the Actions tab
+
+# One update at a time; a queued run waits instead of racing the running one.
+concurrency:
+  group: database-update
+  cancel-in-progress: false
 
 jobs:
   Add-New-Ticker:
     runs-on: ubuntu-latest
     steps:
+      # Pushes to main go through the FinanceDatabase Actions GitHub App, which is on the
+      # branch-protection bypass list (the built-in GITHUB_TOKEN cannot bypass it).
+      - name: create app token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.FINANCE_DATABASE_ACTIONS_ID }}
+          private-key: ${{ secrets.FINANCE_DATABASE_ACTIONS_PRIVATE_KEY }}
       - name: checkout repo content
         uses: actions/checkout@v6
+        with:
+          token: ${{ steps.app-token.outputs.token }}
       - name: pull changes
-        run: git pull https://${{secrets.PAT}}@github.com/JerBouma/FinanceDatabase.git main
+        run: git pull origin main
       - name: setup python
         uses: actions/setup-python@v6
         with:
@@ -334,7 +350,7 @@ jobs:
           git config --global user.email 'action@github.com'
           git add -A
           git checkout main
-          git diff-index --quiet HEAD || git commit -am "Update database with new tickers"
+          git diff-index --quiet HEAD || git commit -am "Update database with new tickers [skip ci]"
           git push
       - name: Check run status
         if: steps.run.outputs.status != '0'
@@ -344,10 +360,20 @@ jobs:
     needs: Add-New-Ticker
     runs-on: ubuntu-latest
     steps:
+      # Pushes to main go through the FinanceDatabase Actions GitHub App, which is on the
+      # branch-protection bypass list (the built-in GITHUB_TOKEN cannot bypass it).
+      - name: create app token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.FINANCE_DATABASE_ACTIONS_ID }}
+          private-key: ${{ secrets.FINANCE_DATABASE_ACTIONS_PRIVATE_KEY }}
       - name: checkout repo content
         uses: actions/checkout@v6
+        with:
+          token: ${{ steps.app-token.outputs.token }}
       - name: pull changes
-        run: git pull https://${{secrets.PAT}}@github.com/JerBouma/FinanceDatabase.git main
+        run: git pull origin main
       - name: setup python
         uses: actions/setup-python@v6
         with:
@@ -399,7 +425,7 @@ jobs:
           git config --global user.email 'action@github.com'
           git add -A
           git checkout main
-          git diff-index --quiet HEAD || git commit -am "Update Compression Files"
+          git diff-index --quiet HEAD || git commit -am "Update Compression Files [skip ci]"
           git push
       - name: Check run status
         if: steps.run.outputs.status != '0'
@@ -409,10 +435,20 @@ jobs:
       needs:  [Add-New-Ticker, Update-Compression-Files]
       runs-on: ubuntu-latest
       steps:
+        # Pushes to main go through the FinanceDatabase Actions GitHub App, which is on the
+        # branch-protection bypass list (the built-in GITHUB_TOKEN cannot bypass it).
+        - name: create app token
+          id: app-token
+          uses: actions/create-github-app-token@v2
+          with:
+            app-id: ${{ secrets.FINANCE_DATABASE_ACTIONS_ID }}
+            private-key: ${{ secrets.FINANCE_DATABASE_ACTIONS_PRIVATE_KEY }}
         - name: checkout repo content
           uses: actions/checkout@v6
+          with:
+            token: ${{ steps.app-token.outputs.token }}
         - name: pull changes
-          run: git pull https://${{secrets.PAT}}@github.com/JerBouma/FinanceDatabase.git main
+          run: git pull origin main
         - name: setup python
           uses: actions/setup-python@v6
           with:
@@ -515,7 +551,7 @@ jobs:
             git config --global user.email 'action@github.com'
             git add -A
             git checkout main
-            git diff-index --quiet HEAD || git commit -am "Update Categorization Files"
+            git diff-index --quiet HEAD || git commit -am "Update Categorization Files [skip ci]"
             git push
         - name: Check run status
           if: steps.run.outputs.status != '0'
@@ -525,10 +561,20 @@ jobs:
     needs: [Add-New-Ticker, Update-Compression-Files, Update-Categorization-Files]
     runs-on: ubuntu-latest
     steps:
+      # Pushes to main go through the FinanceDatabase Actions GitHub App, which is on the
+      # branch-protection bypass list (the built-in GITHUB_TOKEN cannot bypass it).
+      - name: create app token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.FINANCE_DATABASE_ACTIONS_ID }}
+          private-key: ${{ secrets.FINANCE_DATABASE_ACTIONS_PRIVATE_KEY }}
       - name: checkout repo content
         uses: actions/checkout@v6
+        with:
+          token: ${{ steps.app-token.outputs.token }}
       - name: pull changes
-        run: git pull https://${{secrets.PAT}}@github.com/JerBouma/FinanceDatabase.git main
+        run: git pull origin main
       - name: setup python
         uses: actions/setup-python@v6
         with:
@@ -543,7 +589,7 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add README.md
-          git diff-index --quiet HEAD || git commit -m "Update README statistics"
+          git diff-index --quiet HEAD || git commit -m "Update README statistics [skip ci]"
           git push
 
   Check-GICS-Categorisation:
