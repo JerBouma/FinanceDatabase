@@ -21,6 +21,18 @@ class ETFs(FinanceDatabase):
     """
 
     FILE_NAME = "etfs.bz2"
+    PLURAL_NAME = "etfs"
+    FIELDS = {
+        "category_group": ("category group", "category groups"),
+        "category": ("category", "categories"),
+        "family": ("family", "families"),
+        "currency": ("currency", "currencies"),
+        "exchange": ("exchange", "exchanges"),
+        "mic": ("MIC", "MICs"),
+    }
+    # ETFs validate filter values against listed ETFs only, also when delisted ones are
+    # requested (kept as before; equities follow exclude_delisted since #171).
+    VALIDATION_EXCLUDES_DELISTED = True
 
     def select(
         self,
@@ -32,6 +44,7 @@ class ETFs(FinanceDatabase):
         mic: str | list | None = None,
         only_primary_listing: bool = False,
         exclude_delisted: bool = True,
+        as_pandas: bool = True,
     ) -> FinanceFrame:
         """
         Retrieve ETF data based on specified criteria.
@@ -58,6 +71,9 @@ class ETFs(FinanceDatabase):
             exclude_delisted (bool, optional): Whether to exclude delisted ETFs.
                 If True, delisted ETFs will be excluded from the results.
                 Default is True.
+            as_pandas (bool, optional): Return a pandas DataFrame (True, the default) or a
+                Polars DataFrame (False).
+
 
         Raises:
             ValueError: If the specified category group, category, family, currency,
@@ -68,110 +84,19 @@ class ETFs(FinanceDatabase):
             FinanceFrame:
                 A DataFrame containing ETF data matching the specified input criteria.
         """
-        etfs = self.data.copy(deep=True)
-
-        if exclude_delisted and "delisted" in etfs.columns:
-            etfs = etfs[~etfs["delisted"]]
-
-        if category_group:
-            category_groups = (
-                [category_group] if isinstance(category_group, str) else category_group
-            )
-            category_groups_lower = [
-                category_group.lower() for category_group in category_groups
-            ]
-            options_lower = [
-                option.lower()
-                for option in self.show_options(selection="category_group")
-            ]
-
-            for category_group_lower, category_group_actual in zip(
-                category_groups_lower, category_groups
-            ):
-                if category_group_lower not in options_lower:
-                    raise ValueError(
-                        f"The category group '{category_group_actual}' is not available in the database. "
-                        "Please check the available category groups using the 'show_options' method."
-                    )
-            etfs = etfs[etfs["category_group"].str.lower().isin(category_groups_lower)]
-        if category:
-            categories = [category] if isinstance(category, str) else category
-            categories_lower = [category.lower() for category in categories]
-            options_lower = [
-                option.lower() for option in self.show_options(selection="category")
-            ]
-            for category_lower, category_actual in zip(categories_lower, categories):
-                if category_lower not in options_lower:
-                    raise ValueError(
-                        f"The category '{category_actual}' is not available in the database. "
-                        "Please check the available categories using the 'show_options' method."
-                    )
-            etfs = etfs[etfs["category"].str.lower().isin(categories_lower)]
-        if family:
-            families = [family] if isinstance(family, str) else family
-            families_lower = [family.lower() for family in families]
-            options_lower = [
-                option.lower() for option in self.show_options(selection="family")
-            ]
-            for family_lower, family_actual in zip(families_lower, families):
-                if family_lower not in options_lower:
-                    raise ValueError(
-                        f"The family '{family_actual}' is not available in the database. "
-                        "Please check the available families using the 'show_options' method."
-                    )
-            etfs = etfs[etfs["family"].str.lower().isin(families_lower)]
-        if currency:
-            currencies = [currency] if isinstance(currency, str) else currency
-            currencies_lower = [currency.lower() for currency in currencies]
-            options_lower = [
-                option.lower() for option in self.show_options(selection="currency")
-            ]
-            for currency_lower, currency_actual in zip(currencies_lower, currencies):
-                if currency_lower not in options_lower:
-                    raise ValueError(
-                        f"The currency '{currency_actual}' is not available in the database. "
-                        "Please check the available currencies using the 'show_options' method."
-                    )
-            etfs = etfs[etfs["currency"].str.lower().isin(currencies_lower)]
-        if exchange:
-            exchanges = [exchange] if isinstance(exchange, str) else exchange
-            exchanges_lower = [exchange.lower() for exchange in exchanges]
-            options_lower = [
-                option.lower() for option in self.show_options(selection="exchange")
-            ]
-            for exchange_lower, exchange_actual in zip(exchanges_lower, exchanges):
-                if exchange_lower not in options_lower:
-                    raise ValueError(
-                        f"The exchange '{exchange_actual}' is not available in the database. "
-                        "Please check the available exchanges using the 'show_options' method."
-                    )
-            etfs = etfs[etfs["exchange"].str.lower().isin(exchanges_lower)]
-        if mic:
-            mics = [mic] if isinstance(mic, str) else mic
-            mics_lower = [mic.lower() for mic in mics]
-            options_lower = [
-                option.lower() for option in self.show_options(selection="mic")
-            ]
-            for mic_lower, mic_actual in zip(mics_lower, mics):
-                if mic_lower not in options_lower:
-                    raise ValueError(
-                        f"The MIC '{mic_actual}' is not available in the database. "
-                        "Please check the available MICs using the 'show_options' method."
-                    )
-            etfs = etfs[etfs["mic"].str.lower().isin(mics_lower)]
-
-        if only_primary_listing:
-            only_primary_listings_etfs = etfs[~etfs.index.str.contains(r"\.", na=False)]
-            if only_primary_listings_etfs.empty:
-                # If no primary listings are found, return all equities
-                print(
-                    "No primary listings found. Returning all etfs matching your criteria."
-                )
-            else:
-                # If primary listings are found, filter the equities DataFrame.
-                etfs = only_primary_listings_etfs
-
-        return FinanceFrame(etfs)
+        return self._select(
+            {
+                "category_group": category_group,
+                "category": category,
+                "family": family,
+                "currency": currency,
+                "exchange": exchange,
+                "mic": mic,
+            },
+            only_primary_listing=only_primary_listing,
+            exclude_delisted=exclude_delisted,
+            as_pandas=as_pandas,
+        )
 
     def show_options(
         self,
@@ -183,6 +108,7 @@ class ETFs(FinanceDatabase):
         exchange: str | list | None = None,
         mic: str | list | None = None,
         exclude_delisted: bool = True,
+        as_pandas: bool = True,
     ) -> dict | np.ndarray:
         """
         Retrieve all options for the specified selection.
@@ -209,6 +135,9 @@ class ETFs(FinanceDatabase):
                 If not provided, returns data for all MIC codes.
             exclude_delisted (bool, optional): Whether to exclude delisted ETFs.
                 Default is True.
+            as_pandas (bool, optional): Return the options as numpy arrays (True, the default)
+                or as Polars Series (False).
+
 
         Raises:
             ValueError: If the selection variable provided is not valid.
@@ -227,29 +156,19 @@ class ETFs(FinanceDatabase):
             "exchange",
             "mic",
         ]
-
-        if selection is not None and selection not in selection_values:
-            raise ValueError(
-                f"The selection variable provided is not valid, "
-                f"choose from {', '.join(selection_values)}"
-            )
-
-        etfs = self.select(
-            category_group=category_group,
-            category=category,
-            family=family,
-            currency=currency,
-            exchange=exchange,
-            mic=mic,
-            only_primary_listing=False,
-            exclude_delisted=exclude_delisted,
-        )
-
-        return (
+        return self._show_options(
+            selection,
+            selection_values,
+            f"The selection variable provided is not valid, "
+            f"choose from {', '.join(selection_values)}",
             {
-                column: etfs[column].dropna().sort_values().unique()
-                for column in selection_values
-            }
-            if selection is None
-            else etfs[selection].dropna().sort_values().unique()
+                "category_group": category_group,
+                "category": category,
+                "family": family,
+                "currency": currency,
+                "exchange": exchange,
+                "mic": mic,
+            },
+            exclude_delisted=exclude_delisted,
+            as_pandas=as_pandas,
         )

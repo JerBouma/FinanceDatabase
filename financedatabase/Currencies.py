@@ -18,11 +18,16 @@ class Currencies(FinanceDatabase):
     """
 
     FILE_NAME = "currencies.bz2"
+    FIELDS = {
+        "base_currency": ("base currency", "base currencies"),
+        "quote_currency": ("quote currency", "quote currencies"),
+    }
 
     def select(
         self,
         base_currency: str | list | None = None,
         quote_currency: str | list | None = None,
+        as_pandas: bool = True,
     ) -> FinanceFrame:
         """
         Retrieve currency data based on specified criteria.
@@ -36,6 +41,9 @@ class Currencies(FinanceDatabase):
                 If not provided, returns data for all base currencies.
             quote_currency (str | list | None, optional): Specific quote currency to retrieve data for.
                 If not provided, returns data for all quote currencies.
+            as_pandas (bool, optional): Return a pandas DataFrame (True, the default) or a
+                Polars DataFrame (False).
+
 
         Raises:
             ValueError: If the specified base or quote currency is not available in the database.
@@ -45,59 +53,19 @@ class Currencies(FinanceDatabase):
             FinanceFrame:
                 A DataFrame containing currency data matching the specified input criteria.
         """
-        currencies = self.data.copy(deep=True)
-
-        if base_currency:
-            base_currencies = (
-                [base_currency] if isinstance(base_currency, str) else base_currency
-            )
-            base_currencies_lower = [currency.lower() for currency in base_currencies]
-            options_lower = [
-                option.lower()
-                for option in self.show_options(selection="base_currency")
-            ]
-
-            for base_currency_lower, base_currency_actual in zip(
-                base_currencies_lower, base_currencies
-            ):
-                if base_currency_lower not in options_lower:
-                    raise ValueError(
-                        f"The base currency '{base_currency_actual}' is not available in the database. "
-                        "Please check the available base currencies using the 'show_options' method."
-                    )
-
-            currencies = currencies[
-                currencies["base_currency"].str.lower().isin(base_currencies_lower)
-            ]
-
-        if quote_currency:
-            quote_currencies = (
-                [quote_currency] if isinstance(quote_currency, str) else quote_currency
-            )
-            quote_currencies_lower = [currency.lower() for currency in quote_currencies]
-            options_lower = [
-                option.lower()
-                for option in self.show_options(selection="quote_currency")
-            ]
-            for quote_currency_lower, quote_currency_actual in zip(
-                quote_currencies_lower, quote_currencies
-            ):
-                if quote_currency_lower not in options_lower:
-                    raise ValueError(
-                        f"The quote currency '{quote_currency_actual}' is not available in the database. "
-                        "Please check the available quote currencies using the 'show_options' method."
-                    )
-            currencies = currencies[
-                currencies["quote_currency"].str.lower().isin(quote_currencies_lower)
-            ]
-
-        return FinanceFrame(currencies)
+        return self._select(
+            {"base_currency": base_currency, "quote_currency": quote_currency},
+            only_primary_listing=False,
+            exclude_delisted=False,
+            as_pandas=as_pandas,
+        )
 
     def show_options(
         self,
         selection: str | None = None,
         base_currency: str | list | None = None,
         quote_currency: str | list | None = None,
+        as_pandas: bool = True,
     ) -> dict | np.ndarray:
         """
         Retrieve all options for the specified selection.
@@ -113,6 +81,9 @@ class Currencies(FinanceDatabase):
                 If not provided, returns data for all base currencies.
             quote_currency (str | list | None, optional): Specific quote currency to filter options.
                 If not provided, returns data for all quote currencies.
+            as_pandas (bool, optional): Return the options as numpy arrays (True, the default)
+                or as Polars Series (False).
+
 
         Returns:
             dict | np.ndarray:
@@ -121,23 +92,12 @@ class Currencies(FinanceDatabase):
                 If selection is specified, returns an array of unique values for that field.
         """
         selection_values = ["base_currency", "quote_currency"]
-
-        if selection is not None and selection not in selection_values:
-            raise ValueError(
-                f"The selection variable ({selection}) provided is not valid, "
-                f"choose from {', '.join(selection_values)}"
-            )
-
-        currencies = self.select(
-            base_currency=base_currency,
-            quote_currency=quote_currency,
-        )
-
-        return (
-            {
-                column: currencies[column].dropna().sort_values().unique()
-                for column in selection_values
-            }
-            if selection is None
-            else currencies[selection].dropna().sort_values().unique()
+        return self._show_options(
+            selection,
+            selection_values,
+            f"The selection variable ({selection}) provided is not valid, "
+            f"choose from {', '.join(selection_values)}",
+            {"base_currency": base_currency, "quote_currency": quote_currency},
+            exclude_delisted=False,
+            as_pandas=as_pandas,
         )

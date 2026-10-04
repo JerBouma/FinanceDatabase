@@ -13,7 +13,12 @@ from typing import Any
 
 import pandas as pd
 
-CONTROL_ARGUMENTS = {"only_primary_listing", "exclude_delisted", "selection"}
+CONTROL_ARGUMENTS = {
+    "only_primary_listing",
+    "exclude_delisted",
+    "selection",
+    "as_pandas",
+}
 
 
 def _rows(data: pd.DataFrame, mask: Any) -> pd.DataFrame:
