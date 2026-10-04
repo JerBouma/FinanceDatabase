@@ -87,10 +87,11 @@ def test_missing_markers_change_nothing(tmp_path: Path) -> None:
     assert readme.read_text() == "# No markers here\n"
 
 
-def test_bars_scale_to_the_largest_value() -> None:
-    assert rs.bar(100, 100) == "█" * rs.BAR_WIDTH
-    assert rs.bar(0, 100) == ""
-    assert rs.bar(50, 100) == "█" * (rs.BAR_WIDTH // 2)
+def test_count_tables_are_two_compact_columns() -> None:
+    counts = rs.pd.Series({"A": 30, "B": 20, "C": 5, "D": 1})
+    assert rs.count_table("Sector", "Equities", counts, 2) == (
+        "| Sector | Equities |\n| :-- | --: |\n| A | 30 |\n| B | 20 |\n| *Other (2)* | 6 |"
+    )
 
 
 def test_main_never_raises(tmp_path: Path, monkeypatch, capsys) -> None:
