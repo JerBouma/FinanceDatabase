@@ -12,7 +12,7 @@ Everything between the two marker comments in README.md is replaced:
 
 Without the markers nothing is changed and the script exits cleanly, so a README edit can never
 fail the weekly pipeline. The section only uses what GitHub renders in a README: badges,
-Markdown tables, a collapsible <details> block, a Mermaid pie chart and Unicode bars.
+Markdown tables, a collapsible <details> block and a Mermaid pie chart.
 """
 
 from __future__ import annotations
@@ -33,7 +33,6 @@ HEADER = (
     "<!-- STATISTICS:START (generated weekly by scripts/update_readme_stats.py "
     "from database/; edits between these markers are overwritten) -->"
 )
-BAR_WIDTH = 20
 
 
 @dataclass
@@ -74,13 +73,6 @@ def read(paths: list[str], columns: list[str]) -> pd.DataFrame:
 
 def distinct(series: pd.Series) -> int:
     return series[series.str.strip() != ""].nunique()
-
-
-def bar(value: int, maximum: int) -> str:
-    """A Unicode bar (eighth-block precision) that renders the same in light and dark mode."""
-    eighths = round(BAR_WIDTH * 8 * value / maximum) if maximum else 0
-    full, rest = divmod(eighths, 8)
-    return "█" * full + ("▏▎▍▌▋▊▉"[rest - 1] if rest else "")
 
 
 def collect(database: str) -> tuple[list[AssetStats], dict[str, pd.Series]]:
@@ -205,16 +197,14 @@ def badge(label: str, message: str, color: str) -> str:
     return f"![{label}]({url}?style=flat-square)"
 
 
-def bar_table(title: str, column: str, counts: pd.Series, top: int) -> str:
-    shown = counts.head(top)
-    lines = [f"| {column} | {title} | |", "| :-- | --: | :-- |"]
-    maximum = int(shown.max()) if len(shown) else 0
-    for name, value in shown.items():
-        lines.append(f"| {name} | {fmt(int(value))} | `{bar(int(value), maximum)}` |")
+def count_table(column: str, unit: str, counts: pd.Series, top: int) -> str:
+    """A compact two-column table (name, count) of the largest groups, the rest as 'Other'."""
+    lines = [f"| {column} | {unit} |", "| :-- | --: |"]
+    for name, value in counts.head(top).items():
+        lines.append(f"| {name} | {fmt(int(value))} |")
     if len(counts) > top:
-        lines.append(
-            f"| *{len(counts) - top} more* | {fmt(int(counts.iloc[top:].sum()))} | |"
-        )
+        rest = fmt(int(counts.iloc[top:].sum()))
+        lines.append(f"| *Other ({len(counts) - top})* | {rest} |")
     return "\n".join(lines)
 
 
@@ -254,14 +244,10 @@ def render(
     ]
     pie.append("```")
 
-    sectors = bar_table("Listed equities", "Sector", breakdowns["sectors"], 11)
-    countries_table = bar_table(
-        "Listed equities", "Country", breakdowns["countries"], 10
-    )
-    exchange_table = bar_table(
-        "Listed equities", "Exchange", breakdowns["exchanges"], 10
-    )
-    etf_table = bar_table("Listed ETFs", "Category group", breakdowns["etf_groups"], 10)
+    sectors = count_table("Sector", "Equities", breakdowns["sectors"], 11)
+    countries_table = count_table("Country", "Equities", breakdowns["countries"], 10)
+    exchange_table = count_table("Exchange", "Equities", breakdowns["exchanges"], 10)
+    etf_table = count_table("ETF category", "ETFs", breakdowns["etf_groups"], 10)
 
     return "\n".join(
         [

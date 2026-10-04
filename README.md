@@ -59,72 +59,72 @@ pie showData
 <tr>
 <td valign="top">
 
-| Sector | Listed equities | |
-| :-- | --: | :-- |
-| Industrials | 13,922 | `████████████████████` |
-| Financials | 13,208 | `███████████████████` |
-| Materials | 12,663 | `██████████████████▎` |
-| Information Technology | 10,612 | `███████████████▎` |
-| Health Care | 10,248 | `██████████████▊` |
-| Consumer Discretionary | 9,895 | `██████████████▎` |
-| Consumer Staples | 5,205 | `███████▌` |
-| Real Estate | 4,427 | `██████▍` |
-| Communication Services | 4,078 | `█████▉` |
-| Energy | 3,993 | `█████▊` |
-| Utilities | 2,257 | `███▎` |
+| Sector | Equities |
+| :-- | --: |
+| Industrials | 13,922 |
+| Financials | 13,208 |
+| Materials | 12,663 |
+| Information Technology | 10,612 |
+| Health Care | 10,248 |
+| Consumer Discretionary | 9,895 |
+| Consumer Staples | 5,205 |
+| Real Estate | 4,427 |
+| Communication Services | 4,078 |
+| Energy | 3,993 |
+| Utilities | 2,257 |
 
 </td>
 <td valign="top">
 
-| Country | Listed equities | |
-| :-- | --: | :-- |
-| United States | 24,025 | `████████████████████` |
-| Canada | 8,873 | `███████▍` |
-| China | 6,614 | `█████▌` |
-| India | 6,513 | `█████▍` |
-| Japan | 6,440 | `█████▍` |
-| Germany | 4,353 | `███▋` |
-| United Kingdom | 3,795 | `███▏` |
-| Australia | 3,585 | `███` |
-| France | 2,562 | `██▏` |
-| Hong Kong | 2,474 | `██` |
-| *103 more* | 25,150 | |
+| Country | Equities |
+| :-- | --: |
+| United States | 24,025 |
+| Canada | 8,873 |
+| China | 6,614 |
+| India | 6,513 |
+| Japan | 6,440 |
+| Germany | 4,353 |
+| United Kingdom | 3,795 |
+| Australia | 3,585 |
+| France | 2,562 |
+| Hong Kong | 2,474 |
+| *Other (103)* | 25,150 |
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-| Exchange | Listed equities | |
-| :-- | --: | :-- |
-| FRA | 10,472 | `████████████████████` |
-| PNK | 10,278 | `███████████████████▋` |
-| STU | 8,327 | `███████████████▉` |
-| BER | 7,347 | `██████████████` |
-| MUN | 5,883 | `███████████▎` |
-| NMS | 4,437 | `████████▌` |
-| JPX | 3,737 | `███████▏` |
-| BSE | 3,710 | `███████▏` |
-| DUS | 3,353 | `██████▍` |
-| NYQ | 3,339 | `██████▍` |
-| *74 more* | 42,231 | |
+| Exchange | Equities |
+| :-- | --: |
+| FRA | 10,472 |
+| PNK | 10,278 |
+| STU | 8,327 |
+| BER | 7,347 |
+| MUN | 5,883 |
+| NMS | 4,437 |
+| JPX | 3,737 |
+| BSE | 3,710 |
+| DUS | 3,353 |
+| NYQ | 3,339 |
+| *Other (74)* | 42,231 |
 
 </td>
 <td valign="top">
 
-| Category group | Listed ETFs | |
-| :-- | --: | :-- |
-| Fixed Income | 7,456 | `████████████████████` |
-| Alternatives | 5,243 | `██████████████▏` |
-| Equities | 4,863 | `█████████████` |
-| Financials | 4,050 | `██████████▉` |
-| Derivatives | 2,266 | `██████▏` |
-| Information Technology | 1,509 | `████` |
-| Real Estate | 884 | `██▍` |
-| Commodities | 732 | `██` |
-| Industrials | 517 | `█▍` |
-| Energy | 490 | `█▍` |
-| *8 more* | 1,977 | |
+| ETF category | ETFs |
+| :-- | --: |
+| Fixed Income | 7,456 |
+| Alternatives | 5,243 |
+| Equities | 4,863 |
+| Financials | 4,050 |
+| Derivatives | 2,266 |
+| Information Technology | 1,509 |
+| Real Estate | 884 |
+| Commodities | 732 |
+| Industrials | 517 |
+| Energy | 490 |
+| *Other (8)* | 1,977 |
 
 </td>
 </tr>
