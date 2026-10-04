@@ -303,6 +303,11 @@ jobs:
                     group.to_csv(f'database/equities/{exchange}.csv')
                 if unknown_exchange.any():
                     equities[unknown_exchange].to_csv('database/equities/NAN.csv')
+      # New equities and ETFs from the official HKEX, NSE, JPX, ASX, TSX/TSXV and Nasdaq Trader
+      # symbol directories. Each source is isolated: a failing or changed source is skipped and
+      # logged without stopping the job. See scripts/update_listings.py for the rules.
+      - name: Add Listings from Exchange Symbol Directories
+        run: python scripts/update_listings.py
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'
