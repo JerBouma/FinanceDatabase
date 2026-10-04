@@ -313,7 +313,7 @@ jobs:
                 if unknown_exchange.any():
                     equities[unknown_exchange].to_csv('database/equities/NAN.csv')
       # New equities and ETFs from the official HKEX, NSE, JPX, ASX, TSX/TSXV and Nasdaq Trader
-      # symbol directories, enriched via OpenFIGI. Each source is isolated: a blocked, failing
+      # symbol directories, enriched via OpenFIGI and SEC EDGAR. Each source is isolated: a blocked, failing
       # or changed source is skipped and logged. This step can never fail the pipeline: the
       # script exits cleanly on any error, and continue-on-error / timeout-minutes make sure
       # the US update above is still committed and the compression jobs still run.
@@ -324,6 +324,9 @@ jobs:
         timeout-minutes: 45
         env:
           OPENFIGI_API_KEY: ${{ secrets.OPENFIGI_API_KEY }}
+          # Contact SEC EDGAR requires for automated access (repository variable). Without it,
+          # US ETFs are added without SEC objectives / registrant-based families.
+          SEC_USER_AGENT_EMAIL: ${{ vars.SEC_USER_AGENT_EMAIL }}
         run: python scripts/update_listings.py
       - name: Commit files and log
         run: |

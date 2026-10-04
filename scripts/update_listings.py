@@ -44,12 +44,19 @@ Enrichment of new rows (each step is optional: if it fails, rows are still added
   a level is filled only when >= 90% of >= 10 existing rows with that classification agree.
 - ETF family (issuer) from the first words of the name, when >= 95% of existing ETFs with the
   same opening words belong to one family.
+- US ETFs (needs SEC_USER_AGENT_EMAIL, SEC's required contact for automated access): the
+  summary is the investment objective quoted from the fund's latest summary prospectus
+  (form 497K) on SEC EDGAR, and a missing family is taken from the fund's SEC registrant
+  (trust) when >= 90% of >= 5 existing ETFs of that registrant share one family.
+- Every other new row gets a factual summary built only from its known fields (name, exchange,
+  ticker, currency, issuer, categories, sector, country), so nothing is invented.
 """
 
 from __future__ import annotations
 
 import argparse
 import glob
+import html
 import io
 import json
 import os
@@ -82,6 +89,21 @@ FIGI_EXCHANGES = {
 }
 MIN_AGREEMENT, MIN_ROWS = 0.9, 10
 US_ETF_FILES = {"NMS", "NGM", "NCM", "NYQ", "ASE", "PCX", "BTS"}
+EXCHANGE_NAMES = {
+    "NMS": "Nasdaq Global Select Market",
+    "NGM": "Nasdaq Global Market",
+    "NCM": "Nasdaq Capital Market",
+    "NYQ": "New York Stock Exchange",
+    "ASE": "NYSE American",
+    "PCX": "NYSE Arca",
+    "BTS": "Cboe BZX Exchange",
+    "HKG": "Hong Kong Stock Exchange",
+    "NSE": "National Stock Exchange of India",
+    "JPX": "Tokyo Stock Exchange",
+    "ASX": "Australian Securities Exchange",
+    "TOR": "Toronto Stock Exchange",
+    "VAN": "TSX Venture Exchange",
+}
 
 # Exchange suffixes used by the sources below, kept when comparing symbol formats.
 SUFFIX = r"\.(?:TO|V|HK|NS|T|AX)$"
@@ -107,6 +129,7 @@ class Listing:
     industry: str = ""
     mic: str = ""
     classification: str = ""  # the exchange's own sector label, e.g. JPX "Banks"
+    summary: str = ""
     figi: str = ""
     composite_figi: str = ""
     shareclass_figi: str = ""
@@ -630,6 +653,134 @@ def enrich_with_openfigi(
     return [x for x in listings if x.symbol not in rejected], notes
 
 
+def factual_summary(symbol: str, row: dict[str, str], kind: str) -> str:
+    """A summary stating only facts already in the row; nothing is inferred or invented."""
+    exchange = EXCHANGE_NAMES.get(row.get("exchange", ""), "")
+    if not row.get("name") or not exchange:
+        return ""
+    ticker = re.sub(SUFFIX, "", symbol)
+    what = "an exchange-traded fund" if kind == "etfs" else "a company"
+    text = f"{row['name']} is {what} listed on the {exchange} under the ticker {ticker}"
+    text += f" and traded in {row['currency']}." if row.get("currency") else "."
+    if kind == "etfs":
+        if row.get("family"):
+            text += f" The fund is part of the {row['family']} range."
+        if row.get("category_group") and row.get("category"):
+            text += f" It is classified as {row['category_group']} ({row['category']})."
+    else:
+        detail = row.get("industry") or row.get("industry_group")
+        if row.get("sector"):
+            text += f" It is classified in the {row['sector']} sector"
+            text += f" ({detail})." if detail and detail != row["sector"] else "."
+        if row.get("country"):
+            text += f" Its country is {row['country']}."
+    return text
+
+
+SEC_END = (
+    r"(?=\s(?:Fees and Expenses|Fees & Expenses|Annual Fund Operating|Shareholder Fees|"
+    r"Principal Investment Strateg)\w*)"
+)
+
+
+def extract_objective(document: str) -> str:
+    """The 'Investment Objective' paragraph of a summary prospectus (HTML)."""
+    text = html.unescape(re.sub(r"<[^>]+>", " ", document)).replace("\u00a0", " ")
+    text = re.sub(r"\s+", " ", text)
+    match = re.search(
+        r"Investment Objectives?\s*[.:]?\s*(.{20,1200}?)" + SEC_END, text, re.I
+    )
+    if not match:
+        return ""
+    objective = re.sub(r"“\s*Fund\s*”", "“Fund”", match.group(1))
+    objective = re.sub(r"\s+([,.;:)])", r"\1", objective).strip()
+    return objective if re.search(r"\bseeks?\b|objective", objective, re.I) else ""
+
+
+class SecFunds:
+    """US fund data from SEC EDGAR: investment objectives and registrant (trust) per ticker.
+
+    Disabled (every lookup returns '') without SEC_USER_AGENT_EMAIL or when EDGAR is
+    unreachable, so it can never stop a run.
+    """
+
+    def __init__(self, contact: str | None) -> None:
+        self.headers = {"User-Agent": f"FinanceDatabase {contact}"} if contact else None
+        self.funds: dict[str, list] = {}
+        self.last = 0.0
+        if self.headers:
+            try:
+                data = json.loads(
+                    self.get("https://www.sec.gov/files/company_tickers_mf.json")
+                )
+                self.funds = {
+                    row[3]: row for row in data["data"]
+                }  # cik, series, class, symbol
+            except Exception as error:
+                print(
+                    f"  SEC EDGAR unavailable, no SEC enrichment: {type(error).__name__}: {error}"
+                )
+                self.headers = None
+
+    def get(self, url: str) -> str:
+        wait = 0.15 - (time.time() - self.last)  # stay under SEC's 10 requests/second
+        if wait > 0:
+            time.sleep(wait)
+        self.last = time.time()
+        response = requests.get(url, headers=self.headers, timeout=TIMEOUT)
+        response.raise_for_status()
+        return response.text
+
+    def registrant(self, symbol: str) -> str:
+        return str(self.funds[symbol][0]) if symbol in self.funds else ""
+
+    def objective(self, symbol: str) -> str:
+        """Investment objective from the series' latest 497K, or '' when unavailable."""
+        if not self.headers or symbol not in self.funds:
+            return ""
+        try:
+            series = self.funds[symbol][1]
+            atom = self.get(
+                "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK="
+                f"{series}&type=497K&dateb=&owner=include&count=1&output=atom"
+            )
+            filing = re.search(r"<filing-href>([^<]+)</filing-href>", atom)
+            if not filing:
+                return ""
+            docs = re.findall(
+                r'href="(/Archives/edgar/data/[^"]+\.htm)"', self.get(filing.group(1))
+            )
+            return (
+                extract_objective(self.get("https://www.sec.gov" + docs[0]))
+                if docs
+                else ""
+            )
+        except Exception as error:  # one fund's filing must not stop the run
+            print(f"  SEC objective for {symbol} unavailable: {type(error).__name__}")
+            return ""
+
+    def registrant_families(self, db: Database) -> dict[str, str]:
+        """SEC registrant (CIK) -> family, where >= 90% of >= 5 existing US ETFs agree."""
+        if not self.funds:
+            return {}
+        pairs = []
+        for file in US_ETF_FILES:
+            if os.path.exists(db.path("etfs", file)):
+                frame = db.frame("etfs", file)
+                pairs += [
+                    (self.registrant(s), f)
+                    for s, f in frame["family"].items()
+                    if f and s in self.funds
+                ]
+        table = pd.DataFrame(pairs, columns=["cik", "family"])
+        families = {}
+        for cik, group in table.groupby("cik"):
+            counts = group.family.value_counts()
+            if len(group) >= 5 and counts.iloc[0] / len(group) >= 0.9:
+                families[cik] = counts.index[0]
+        return families
+
+
 # --------------------------------------------------------------------------- database update
 
 
@@ -764,6 +915,7 @@ def apply_source(
     family: Callable[[str], str],
     api_key: str | None = None,
     use_openfigi: bool = True,
+    sec: SecFunds | None = None,
 ) -> dict:
     """Add a source's new listings and delist superseded tickers. Returns a summary."""
     added, skipped_format, delist = [], [], []
@@ -861,6 +1013,17 @@ def apply_source(
             )
         else:
             row.update(isin=listing.isin, family=family(listing.name))
+            if sec and listing.file in US_ETF_FILES:
+                if not row["family"]:
+                    if "sec_families" not in db.cache:
+                        db.cache["sec_families"] = sec.registrant_families(db)
+                    row["family"] = db.cache["sec_families"].get(
+                        sec.registrant(listing.symbol), ""
+                    )
+                listing.summary = listing.summary or sec.objective(listing.symbol)
+        row["summary"] = listing.summary or factual_summary(
+            listing.symbol, row, listing.kind
+        )
         db.added[db.path(listing.kind, listing.file)].append(
             pd.Series(row, name=listing.symbol)
         )
@@ -880,6 +1043,7 @@ def run(
     dry_run: bool = False,
     use_openfigi: bool = True,
     api_key: str | None = None,
+    sec_contact: str | None = None,
 ) -> list[str]:
     """Update the database from every source; returns the names of skipped sources.
 
@@ -889,6 +1053,7 @@ def run(
     """
     db = Database(database)
     family = db.etf_families()
+    sec = SecFunds(sec_contact) if sec_contact else None
     if sources is None:
         sources = load_sources(db.group_sector())
     failures = []
@@ -898,7 +1063,7 @@ def run(
         symbols_before = set(db.symbols)
         try:
             result = load()
-            summary = apply_source(db, name, result, family, api_key, use_openfigi)
+            summary = apply_source(db, name, result, family, api_key, use_openfigi, sec)
         except Exception as error:  # one broken source must not stop the others
             for path in list(db.added):
                 del db.added[path][added_before.get(path, 0) :]
@@ -949,6 +1114,7 @@ def main() -> None:
             dry_run=args.dry_run,
             use_openfigi=not args.no_openfigi,
             api_key=os.environ.get("OPENFIGI_API_KEY") or None,
+            sec_contact=os.environ.get("SEC_USER_AGENT_EMAIL") or None,
         )
     except Exception as error:  # never break the weekly pipeline; nothing is written
         print(f"Listings update skipped entirely ({type(error).__name__}: {error})")

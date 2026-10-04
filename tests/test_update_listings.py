@@ -383,3 +383,100 @@ def test_main_never_raises(tmp_path: Path, monkeypatch, capsys) -> None:
     monkeypatch.setattr(sys, "argv", ["update_listings", "--database", str(tmp_path)])
     ul.main()  # an empty directory is not a database: reported, not raised
     assert "Listings update skipped entirely" in capsys.readouterr().out
+
+
+def test_factual_summary_states_only_known_fields() -> None:
+    row = {
+        "name": "Abc Mining Corp.",
+        "exchange": "TOR",
+        "currency": "CAD",
+        "sector": "",
+        "country": "",
+    }
+    assert ul.factual_summary("ABC.TO", row, "equities") == (
+        "Abc Mining Corp. is a company listed on the Toronto Stock Exchange under the ticker ABC "
+        "and traded in CAD."
+    )
+    etf = {
+        "name": "ISHARES CORE MSCI CHINA",
+        "exchange": "HKG",
+        "currency": "HKD",
+        "family": "BlackRock Asset Management",
+        "category_group": "Equities",
+        "category": "Emerging Markets",
+    }
+    text = ul.factual_summary("2801.HK", etf, "etfs")
+    assert (
+        "exchange-traded fund listed on the Hong Kong Stock Exchange under the ticker 2801"
+        in text
+    )
+    assert (
+        "BlackRock Asset Management" in text and "Equities (Emerging Markets)" in text
+    )
+    assert ul.factual_summary("X.TO", {"name": "", "exchange": "TOR"}, "equities") == ""
+
+
+def test_extract_objective_from_summary_prospectus() -> None:
+    page = (
+        "<html><p>Summary Prospectus</p><h2>Investment Objective</h2><p>The Sequoia Global "
+        "Value ETF (the &#8220; Fund &#8221;) seeks to achieve long term capital appreciation .</p>"
+        "<h2>Fees and Expenses of the Fund</h2></html>"
+    )
+    assert ul.extract_objective(page) == (
+        "The Sequoia Global Value ETF (the “Fund”) seeks to achieve long term capital appreciation."
+    )
+    assert (
+        ul.extract_objective(
+            "<p>Investment Objective</p><p>Some unrelated text here.</p>"
+        )
+        == ""
+    )
+
+
+def test_sec_disabled_without_contact() -> None:
+    sec = ul.SecFunds(None)
+    assert sec.objective("SPY") == "" and sec.registrant("SPY") == ""
+
+
+def test_us_etfs_get_sec_objective_and_registrant_family(tmp_path: Path) -> None:
+    root = make_db(tmp_path)
+    rows = "".join(
+        f"T{i},Trust Fund {i} ETF,USD,,,,Acme Funds,PCX,ARCX,,False\n" for i in range(6)
+    )
+    (root / "etfs" / "PCX.csv").write_text(ETF_HEADER + rows)
+    db = ul.Database(str(root))
+
+    class FakeSec(ul.SecFunds):
+        def __init__(self) -> None:
+            self.headers = {"User-Agent": "test"}
+            self.funds = {f"T{i}": [111, "S1", "C1", f"T{i}"] for i in range(6)}
+            self.funds |= {
+                "NEWF": [111, "S2", "C2", "NEWF"],
+                "OTHR": [222, "S3", "C3", "OTHR"],
+            }
+
+        def objective(self, symbol: str) -> str:
+            return "The Fund seeks income." if symbol == "NEWF" else ""
+
+    result = ul.SourceResult(
+        listings=[
+            ul.Listing("etfs", "PCX", "NEWF", "Brand New ETF", "USD"),
+            ul.Listing("etfs", "PCX", "OTHR", "Other Issuer ETF", "USD"),
+        ],
+        official={"PCX": {"NEWF", "OTHR"}},
+    )
+    ul.apply_source(
+        db, "test", result, db.etf_families(), use_openfigi=False, sec=FakeSec()
+    )
+    db.write()
+    pcx = pd.read_csv(
+        root / "etfs" / "PCX.csv", index_col=0, dtype=str, keep_default_na=False
+    )
+    assert pcx.loc["NEWF", "summary"] == "The Fund seeks income."
+    assert (
+        pcx.loc["NEWF", "family"] == "Acme Funds"
+    )  # registrant 111: 6/6 existing ETFs agree
+    assert pcx.loc["OTHR", "family"] == ""  # unknown registrant: left blank
+    assert pcx.loc["OTHR", "summary"].startswith(
+        "Other Issuer ETF is an exchange-traded fund listed on the NYSE Arca"
+    )
