@@ -25,20 +25,20 @@ Some key statistics of the database:
 
 <div align="center">
 
-![symbols](https://img.shields.io/badge/symbols-316%2C297-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-117%2C916-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C057-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--04-57606A?style=flat-square)
+![symbols](https://img.shields.io/badge/symbols-316%2C310-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-117%2C929-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C057-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--04-57606A?style=flat-square)
 
 </div>
 
 | | Asset class | Symbols | Actively listed | Exchanges | Coverage |
 | :-: | :-- | --: | --: | --: | :-- |
-| 🏢 | **Equities** | 117,916 | 103,587 | 84 | 11 sectors · 80 industries · 117 countries |
+| 🏢 | **Equities** | 117,929 | 103,600 | 84 | 11 sectors · 80 industries · 117 countries |
 | 📦 | **ETFs** | 42,057 | 41,450 | 53 | 593 issuers · 43 categories |
 | 💼 | **Funds** | 57,853 | – | 33 | 1,540 fund families · 74 categories |
 | 📈 | **Indices** | 91,181 | – | 63 | 42 categories |
 | 💱 | **Currencies** | 2,556 | – | – | 178 currencies |
 | 🪙 | **Cryptocurrencies** | 3,367 | – | – | 351 coins · 12 quote currencies |
 | 🏦 | **Money Markets** | 1,367 | – | 2 | 129 fund families |
-| | **Total** | **316,297** | | | |
+| | **Total** | **316,310** | | | |
 
 <details>
 <summary><b>📊 More statistics</b>: composition, sectors, countries, exchanges and ETF categories</summary>
@@ -46,7 +46,7 @@ Some key statistics of the database:
 ```mermaid
 pie showData
     title Symbols per asset class
-    "Equities" : 117916
+    "Equities" : 117929
     "Indices" : 91181
     "Funds" : 57853
     "ETFs" : 42057
@@ -62,12 +62,12 @@ pie showData
 | Sector | Equities |
 | :-- | --: |
 | Industrials | 13,922 |
-| Financials | 13,208 |
+| Financials | 13,211 |
 | Materials | 12,663 |
-| Information Technology | 10,612 |
-| Health Care | 10,248 |
+| Information Technology | 10,615 |
+| Health Care | 10,249 |
 | Consumer Discretionary | 9,895 |
-| Consumer Staples | 5,205 |
+| Consumer Staples | 5,206 |
 | Real Estate | 4,427 |
 | Communication Services | 4,078 |
 | Energy | 3,993 |
@@ -78,17 +78,17 @@ pie showData
 
 | Country | Equities |
 | :-- | --: |
-| United States | 24,025 |
+| United States | 24,033 |
 | Canada | 8,873 |
 | China | 6,614 |
 | India | 6,513 |
 | Japan | 6,440 |
 | Germany | 4,353 |
 | United Kingdom | 3,795 |
-| Australia | 3,585 |
+| Australia | 3,586 |
 | France | 2,562 |
 | Hong Kong | 2,474 |
-| *Other (103)* | 25,150 |
+| *Other (103)* | 25,152 |
 
 </td>
 </tr>
@@ -102,11 +102,11 @@ pie showData
 | STU | 8,327 |
 | BER | 7,347 |
 | MUN | 5,883 |
-| NMS | 4,437 |
+| NMS | 4,447 |
 | JPX | 3,737 |
 | BSE | 3,710 |
 | DUS | 3,353 |
-| NYQ | 3,339 |
+| NYQ | 3,342 |
 | *Other (74)* | 42,231 |
 
 </td>
