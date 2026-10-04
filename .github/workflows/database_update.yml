@@ -163,26 +163,57 @@ jobs:
             # Data ingestion
             # ---------------------------------------------------------------------------
 
-            # Collect NASDAQ data
-            nasdaq = pd.read_json("https://raw.githubusercontent.com/rreichel3/US-Stock-Symbols/main/nasdaq/nasdaq_full_tickers.json")
-            nasdaq = nasdaq.set_index('symbol')
-            nasdaq['exchange'] = 'NMS'
-            nasdaq['market'] = 'NASDAQ Global Select'
+            FEED_URL = "https://raw.githubusercontent.com/rreichel3/US-Stock-Symbols/main/{0}/{0}_full_tickers.json"
 
-            # Collect NYSE data
-            nyse = pd.read_json("https://raw.githubusercontent.com/rreichel3/US-Stock-Symbols/main/nyse/nyse_full_tickers.json")
-            nyse = nyse.set_index('symbol')
-            nyse['exchange'] = 'ASE'
-            nyse['market'] = 'NYSE MKT'
+            # Feed -> (FinanceDatabase exchange file, market label). NYSE listings
+            # belong in NYQ (XNYS); only NYSE American (formerly AMEX) is ASE (XASE).
+            FEEDS = {
+                'nasdaq': ('NMS', 'NASDAQ Global Select'),
+                'nyse':   ('NYQ', 'New York Stock Exchange'),
+                'amex':   ('ASE', 'NYSE MKT'),
+            }
 
-            # Collect AMEX data (acquired by NYSE, same exchange/market)
-            amex = pd.read_json("https://raw.githubusercontent.com/rreichel3/US-Stock-Symbols/main/amex/amex_full_tickers.json")
-            amex = amex.set_index('symbol')
-            amex['exchange'] = 'ASE'
-            amex['market'] = 'NYSE MKT'
+            # A plain ticker: letters/digits plus the class and series separators
+            # used in these feeds (BRK/A, ABR^D, BF.B). Anything else, including
+            # whitespace-padded symbols like "ECC           ", is rejected.
+            VALID_SYMBOL = r'^[A-Z0-9]+(?:[./^-][A-Z0-9]+)*$'
 
-            # Combine all exchange datasets
-            exchange_data = pd.concat([nasdaq, nyse, amex])
+            # Exchange-traded products belong in database/etfs, not equities.
+            ETP_NAME = r'\b(?:ETF|ETFs|ETN|ETNs|Exchange[- ]Traded)\b'
+
+
+            def load_feed(name: str) -> Optional[pd.DataFrame]:
+                """Download one exchange feed and drop rows that would become junk.
+
+                A blocked, unreachable, truncated or reformatted feed is skipped (None) so it
+                can never add junk or fail the weekly pipeline; the other feeds still run.
+                """
+                try:
+                    feed = pd.read_json(FEED_URL.format(name), dtype=False)
+                except Exception as error:
+                    print(f"{name}: feed skipped ({type(error).__name__}: {error})")
+                    return None
+                if len(feed) < 100 or not {'symbol', 'name'} <= set(feed.columns):
+                    print(f"{name}: feed skipped, it looks broken ({len(feed)} rows)")
+                    return None
+                feed['symbol'] = feed['symbol'].astype(str).str.strip()
+                feed['name'] = feed['name'].astype(str).str.strip()
+                invalid = ~feed['symbol'].str.match(VALID_SYMBOL)
+                etp = feed['name'].str.contains(ETP_NAME, case=False, regex=True)
+                if invalid.any():
+                    print(f"{name}: skipping malformed symbols {feed.loc[invalid, 'symbol'].tolist()}")
+                if etp.any():
+                    print(f"{name}: skipping exchange-traded products {feed.loc[etp & ~invalid, 'symbol'].tolist()}")
+                feed = feed[~invalid & ~etp & (feed['name'] != '')]
+                feed = feed.drop_duplicates('symbol').set_index('symbol')
+                feed['exchange'], feed['market'] = FEEDS[name]
+                return feed
+
+
+            # Combine all exchange datasets; a symbol is listed on one exchange only.
+            feeds = [feed for feed in (load_feed(name) for name in FEEDS) if feed is not None]
+            exchange_data = pd.concat(feeds) if feeds else pd.DataFrame()
+            exchange_data = exchange_data[~exchange_data.index.duplicated(keep='first')]
 
             # ---------------------------------------------------------------------------
             # Reference data
@@ -214,6 +245,15 @@ jobs:
                 .to_dict()
             )
 
+            # A symbol may belong to one asset class only: never add a ticker as an
+            # equity when it already exists as an ETF, fund, index, currency, etc.
+            other_asset_symbols = set()
+            for asset in ['etfs', 'funds']:
+                for f in glob.glob(f'database/{asset}/*.csv'):
+                    other_asset_symbols |= set(pd.read_csv(f, usecols=[0], dtype=str, keep_default_na=False).iloc[:, 0])
+            for asset in ['indices', 'currencies', 'cryptos', 'moneymarkets']:
+                other_asset_symbols |= set(pd.read_csv(f'database/{asset}.csv', usecols=[0], dtype=str, keep_default_na=False).iloc[:, 0])
+
             # ---------------------------------------------------------------------------
             # Main processing loop
             # ---------------------------------------------------------------------------
@@ -221,17 +261,17 @@ jobs:
             ticker_dict: dict = {}
 
             for index, row in exchange_data.iterrows():
-                market_cap = calculate_market_cap(row.get('marketCap'))
+                market_cap = calculate_market_cap(pd.to_numeric(row.get('marketCap'), errors='coerce'))
 
-                try:
+                if index in equities.index:
                     fd_data = equities.loc[index]
+                    if isinstance(fd_data, pd.DataFrame):
+                        fd_data = fd_data.iloc[0]
 
                     # Update market_cap only when it has changed and the new value is valid
-                    if len(fd_data) == 0 and fd_data['market_cap'] != market_cap and pd.notna(market_cap):
-                        ticker_dict[index] = {'symbol': index, **fd_data.to_dict(), 'market_cap': market_cap}
-                    continue
-
-                except KeyError:
+                    if pd.notna(market_cap) and fd_data['market_cap'] != market_cap:
+                        ticker_dict[index] = {**fd_data.to_dict(), 'market_cap': market_cap}
+                elif index not in other_asset_symbols:
                     ticker_dict[index] = build_new_ticker(index, row, fd_industries, equities, market_cap, exchange_to_mic)
 
             # ---------------------------------------------------------------------------
@@ -272,6 +312,22 @@ jobs:
                     group.to_csv(f'database/equities/{exchange}.csv')
                 if unknown_exchange.any():
                     equities[unknown_exchange].to_csv('database/equities/NAN.csv')
+      # New equities and ETFs from the official HKEX, NSE, JPX, ASX, TSX/TSXV and Nasdaq Trader
+      # symbol directories, enriched via OpenFIGI and SEC EDGAR. Each source is isolated: a blocked, failing
+      # or changed source is skipped and logged. This step can never fail the pipeline: the
+      # script exits cleanly on any error, and continue-on-error / timeout-minutes make sure
+      # the US update above is still committed and the compression jobs still run.
+      # OPENFIGI_API_KEY is optional (higher OpenFIGI rate limits); it works without it.
+      # See scripts/update_listings.py for the rules.
+      - name: Add Listings from Exchange Symbol Directories
+        continue-on-error: true
+        timeout-minutes: 45
+        env:
+          OPENFIGI_API_KEY: ${{ secrets.OPENFIGI_API_KEY }}
+          # Contact SEC EDGAR requires for automated access (repository variable). Without it,
+          # US ETFs are added without SEC objectives / registrant-based families.
+          SEC_USER_AGENT_EMAIL: ${{ vars.SEC_USER_AGENT_EMAIL }}
+        run: python scripts/update_listings.py
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'
@@ -412,7 +468,7 @@ jobs:
               etfs = pd.concat([pd.read_csv(f, index_col=0, dtype=str) for f in sorted(glob.glob('database/etfs/*.csv'))])
               etfs_categories = {}
               for column in etfs:
-                  if column in ['name', 'summary']:
+                  if column in ['name', 'summary', 'delisted']:
                       continue
                       
                   etfs_categories[column] = sorted(etfs[column].dropna().unique(), key=str)
