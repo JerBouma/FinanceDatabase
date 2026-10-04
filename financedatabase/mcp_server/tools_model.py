@@ -239,9 +239,9 @@ class UtilityToolRegistry:
                 if len(values) > cap:
                     payload["_notes"] = [
                         f"Showing {cap} of {len(values)} values. Raise limit (max "
-                        f"{self._limits['max_options']}) or narrow with filters; the "
-                        "asset class tools also accept a value that is not listed here "
-                        "as long as it exists."
+                        f"{self._limits['max_options']}) or narrow with filters. Values "
+                        "beyond this list are still valid filters for the asset class "
+                        "tools."
                     ]
                 return to_json(payload)
 
