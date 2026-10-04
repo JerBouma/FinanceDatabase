@@ -692,7 +692,10 @@ def objective_window(document: str) -> str:
     """Plain text following the 'Investment Objective' heading (up to 3,000 characters)."""
     text = html.unescape(re.sub(r"<[^>]+>", " ", document)).replace("\u00a0", " ")
     text = re.sub(r"\s+", " ", text)
-    match = re.search(r"Investment Objectives?\s*[.:]?\s*", text, re.I)
+    # Prefer the capitalised section heading; fall back to any mention of the phrase.
+    match = re.search(r"Investment Objectives?\b\s*[.:]?\s*", text) or re.search(
+        r"Investment Objectives?\b\s*[.:]?\s*", text, re.I
+    )
     return text[match.end() : match.end() + 3000] if match else ""
 
 
@@ -704,20 +707,52 @@ def extract_objective(document: str, window: str | None = None) -> str:
         return ""
     section = window[: end.start()].strip()
     sentences = re.split(r"(?<=[.!?])\s+(?=[A-Z“\"])", section)
-    keep = [
+    keep = [x for x in sentences if not re.search(r"website|www\.", x, re.I)]
+    return clean_objective(" ".join(keep))
+
+
+def compose_summary(objective: str, symbol: str, row: dict[str, str], kind: str) -> str:
+    """The official objective, followed by the factual summary when the objective is short
+    ("The Fund seeks total return."); the factual summary alone when there is none."""
+    factual = factual_summary(symbol, row, kind)
+    if not objective:
+        return factual
+    return f"{objective} {factual}".strip() if len(objective) < 160 else objective
+
+
+OBJECTIVE_TERMS = (
+    r"\bseeks?\b|objective|capital appreciation|current income|total return|growth of capital"
+    r"|investment results|income"
+)
+
+
+def clean_objective(text: str) -> str:
+    """Tidy an extracted objective; '' when it does not read as an investment objective.
+
+    Ends it at its last full sentence (dropping a stray heading word such as "FUND") and drops
+    dated outcome-period details (e.g. a buffer ETF's cap "over the period April 1, 2026 through
+    March 31, 2027"), which go stale; a target-maturity year is kept.
+    """
+    text = re.sub(r"“\s*Fund\s*”", "“Fund”", text)
+    text = re.sub(r"\s+([,.;:)])", r"\1", text).strip()
+    last = max(text.rfind(c) for c in ".!?")
+    text = text[: last + 1] if last >= 0 else ""
+    sentences = re.split(r"(?<=[.!?])\s+(?=[A-Z“\"])", text)
+    dated_terms = (
+        r"\b(?:19|20)\d\d\b.*\b(?:cap|caps|upside|outcome period|buffer|floor|period)\b"
+    )
+    dated_terms_rev = (
+        r"\b(?:cap|caps|upside|outcome period|buffer|floor|period)\b.*\b(?:19|20)\d\d\b"
+    )
+    text = " ".join(
         x
         for x in sentences
-        if not re.search(
-            r"website|www\.|important Fund information|Outcome Period", x, re.I
-        )
-    ]
-    objective = re.sub(r"“\s*Fund\s*”", "“Fund”", " ".join(keep))
-    objective = re.sub(r"\s+([,.;:)])", r"\1", objective).strip()
-    if not (20 <= len(objective) <= 1200) or not re.search(
-        r"\bseeks?\b|objective", objective, re.I
-    ):
+        if not re.search(f"{dated_terms}|{dated_terms_rev}", x, re.I)
+    )
+    text = text.strip()
+    if not (20 <= len(text) <= 1200) or not re.search(OBJECTIVE_TERMS, text, re.I):
         return ""
-    return objective
+    return text
 
 
 class SecFunds:
@@ -758,26 +793,31 @@ class SecFunds:
         return str(self.funds[symbol][0]) if symbol in self.funds else ""
 
     def objective(self, symbol: str) -> str:
-        """Investment objective from the series' latest 497K, or '' when unavailable."""
+        """Investment objective from one of the series' latest 497K filings, or ''.
+
+        Some recent 497K filings are supplements (e.g. a portfolio-manager change) rather
+        than a summary prospectus, so up to three are tried.
+        """
         if not self.headers or symbol not in self.funds:
             return ""
         try:
             series = self.funds[symbol][1]
             atom = self.get(
                 "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK="
-                f"{series}&type=497K&dateb=&owner=include&count=1&output=atom"
+                f"{series}&type=497K&dateb=&owner=include&count=3&output=atom"
             )
-            filing = re.search(r"<filing-href>([^<]+)</filing-href>", atom)
-            if not filing:
-                return ""
-            docs = re.findall(
-                r'href="(/Archives/edgar/data/[^"]+\.htm)"', self.get(filing.group(1))
-            )
-            return (
-                extract_objective(self.get("https://www.sec.gov" + docs[0]))
-                if docs
-                else ""
-            )
+            for filing in re.findall(r"<filing-href>([^<]+)</filing-href>", atom)[:3]:
+                docs = re.findall(
+                    r'href="(/Archives/edgar/data/[^"]+\.htm)"', self.get(filing)
+                )
+                objective = (
+                    extract_objective(self.get("https://www.sec.gov" + docs[0]))
+                    if docs
+                    else ""
+                )
+                if objective:
+                    return objective
+            return ""
         except Exception as error:  # one fund's filing must not stop the run
             print(f"  SEC objective for {symbol} unavailable: {type(error).__name__}")
             return ""
@@ -1044,8 +1084,8 @@ def apply_source(
                         sec.registrant(listing.symbol), ""
                     )
                 listing.summary = listing.summary or sec.objective(listing.symbol)
-        row["summary"] = listing.summary or factual_summary(
-            listing.symbol, row, listing.kind
+        row["summary"] = compose_summary(
+            listing.summary, listing.symbol, row, listing.kind
         )
         db.added[db.path(listing.kind, listing.file)].append(
             pd.Series(row, name=listing.symbol)

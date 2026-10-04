@@ -473,7 +473,10 @@ def test_us_etfs_get_sec_objective_and_registrant_family(tmp_path: Path) -> None
     pcx = pd.read_csv(
         root / "etfs" / "PCX.csv", index_col=0, dtype=str, keep_default_na=False
     )
-    assert pcx.loc["NEWF", "summary"] == "The Fund seeks income."
+    assert pcx.loc["NEWF", "summary"] == (
+        "The Fund seeks income. Brand New ETF is an exchange-traded fund listed on the NYSE Arca"
+        " under the ticker NEWF and traded in USD. The fund is part of the Acme Funds range."
+    )  # short objective: the factual sentence follows it
     assert (
         pcx.loc["NEWF", "family"] == "Acme Funds"
     )  # registrant 111: 6/6 existing ETFs agree
@@ -501,4 +504,29 @@ def test_extract_objective_keeps_before_fees_and_skips_website_sentence() -> Non
     assert (
         ul.extract_objective(buffer)
         == "The Fund seeks to match the S&P 500 up to a cap."
+    )
+
+
+def test_sec_objective_skips_supplements() -> None:
+    pages = {
+        "atom": "<filing-href>https://sec/f1-index.htm</filing-href>"
+        "<filing-href>https://sec/f2-index.htm</filing-href>",
+        "https://sec/f1-index.htm": 'href="/Archives/edgar/data/1/supp.htm"',
+        "https://sec/f2-index.htm": 'href="/Archives/edgar/data/1/sp.htm"',
+        "https://www.sec.gov/Archives/edgar/data/1/supp.htm": "<p>This supplement does not change"
+        " the Fund's investment objective or principal investment strategies.</p>",
+        "https://www.sec.gov/Archives/edgar/data/1/sp.htm": "<p>Investment Objective</p><p>The"
+        " Fund seeks long-term capital appreciation.</p><p>Fees and Expenses</p>",
+    }
+
+    class FakeSec(ul.SecFunds):
+        def __init__(self) -> None:
+            self.headers = {"User-Agent": "test"}
+            self.funds = {"ABFL": [1, "S1", "C1", "ABFL"]}
+
+        def get(self, url: str) -> str:
+            return pages["atom"] if "browse-edgar" in url else pages[url]
+
+    assert (
+        FakeSec().objective("ABFL") == "The Fund seeks long-term capital appreciation."
     )
