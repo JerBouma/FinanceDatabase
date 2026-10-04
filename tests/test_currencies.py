@@ -2,51 +2,90 @@
 
 from __future__ import annotations
 
-from typing import TYPE_CHECKING
-
 import pytest
 
 import financedatabase as fd
-
-if TYPE_CHECKING:
-    from tests.conftest import Recorder
+from tests.structure import check_search, check_select, check_show_options
 
 currencies = fd.Currencies(use_local_location=True)
 
 
-def test_select(recorder: Recorder) -> None:
-    """Verify select() output for representative currency filter combinations."""
-    smoke = currencies.select()
-    assert not smoke.empty
-    recorder.capture(currencies.select().iloc[:5])
-    recorder.capture(currencies.select(base_currency="USD").iloc[:5])
-    recorder.capture(currencies.select(quote_currency="EUR").iloc[:5])
-    recorder.capture(
-        currencies.select(base_currency="USD", quote_currency="CAD").iloc[:5]
-    )
+SELECT_CASES = [
+    {},
+    {"base_currency": "USD"},
+    {"quote_currency": "EUR"},
+    {"base_currency": "USD", "quote_currency": "CAD"},
+]
 
 
-def test_show_options(recorder: Recorder) -> None:
-    """Verify show_options() returns the expected option values for currency."""
-    recorder.capture(list(currencies.show_options()))
-    recorder.capture(list(currencies.show_options(selection="base_currency")))
-    recorder.capture(list(currencies.show_options(selection="quote_currency")))
-    recorder.capture(list(currencies.show_options(base_currency="USD")))
-    recorder.capture(list(currencies.show_options(quote_currency="EUR")))
-    recorder.capture(
-        list(currencies.show_options(selection="base_currency", base_currency="USD"))
-    )
-    recorder.capture(
-        list(currencies.show_options(selection="quote_currency", quote_currency="EUR"))
-    )
+@pytest.mark.parametrize("kwargs", SELECT_CASES, ids=str)
+def test_select(kwargs: dict) -> None:
+    """select() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_select(currencies, nonempty=len(filters) <= 1, **kwargs)
 
 
-def test_search(recorder: Recorder) -> None:
-    """Verify search() output for representative currency queries."""
-    recorder.capture(currencies.search(summary="dollar").iloc[:5])
-    recorder.capture(currencies.search(index="USD").iloc[:5])
-    recorder.capture(currencies.search(base_currency="CAD").iloc[:5])
-    recorder.capture(currencies.search(quote_currency="EUR").iloc[:5])
+SHOW_OPTIONS_CASES = [
+    {},
+    {"selection": "base_currency"},
+    {"selection": "quote_currency"},
+    {"base_currency": "USD"},
+    {"quote_currency": "EUR"},
+    {"selection": "base_currency", "base_currency": "USD"},
+    {"selection": "quote_currency", "quote_currency": "EUR"},
+]
+
+
+@pytest.mark.parametrize("kwargs", SHOW_OPTIONS_CASES, ids=str)
+def test_show_options(kwargs: dict) -> None:
+    """show_options() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_show_options(currencies, nonempty=len(filters) <= 1, **kwargs)
+
+
+SEARCH_CASES = [
+    {"summary": "dollar"},
+    {"index": "USD"},
+    {"base_currency": "CAD"},
+    {"quote_currency": "EUR"},
+]
+
+
+@pytest.mark.parametrize("kwargs", SEARCH_CASES, ids=str)
+def test_search(kwargs: dict) -> None:
+    """search() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_search(currencies, nonempty=len(filters) <= 1, **kwargs)
 
 
 def test_select_with_invalid_value_raises() -> None:

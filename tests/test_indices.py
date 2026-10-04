@@ -2,50 +2,94 @@
 
 from __future__ import annotations
 
-from typing import TYPE_CHECKING
-
 import pytest
 
 import financedatabase as fd
-
-if TYPE_CHECKING:
-    from tests.conftest import Recorder
+from tests.structure import check_search, check_select, check_show_options
 
 indices = fd.Indices(use_local_location=True)
 
 
-def test_select(recorder: Recorder) -> None:
-    """Verify select() output for representative index filter combinations."""
-    smoke = indices.select()
-    assert not smoke.empty
-    assert "currency" in smoke.columns
-    recorder.capture(indices.select().iloc[:5])
-    recorder.capture(indices.select(currency="NOK").iloc[:5])
-    recorder.capture(indices.select(category="Industrials").iloc[:5])
-    recorder.capture(indices.select(category_group="Cash").iloc[:5])
-    recorder.capture(indices.select(exchange="ASX").iloc[:5])
-    recorder.capture(indices.select(exchange="ASX", category="REITs").iloc[:5])
+SELECT_CASES = [
+    {},
+    {"currency": "NOK"},
+    {"category": "Industrials"},
+    {"category_group": "Cash"},
+    {"exchange": "ASX"},
+    {"exchange": "ASX", "category": "REITs"},
+]
 
 
-def test_show_options(recorder: Recorder) -> None:
-    """Verify show_options() returns the expected option values for index."""
-    recorder.capture(list(indices.show_options()))
-    recorder.capture(list(indices.show_options(selection="category")))
-    recorder.capture(list(indices.show_options(selection="category_group")))
-    recorder.capture(list(indices.show_options(selection="currency")))
-    recorder.capture(list(indices.show_options(selection="exchange")))
-    recorder.capture(list(indices.show_options(exchange="ASX")))
-    recorder.capture(list(indices.show_options(category="REITs")))
+@pytest.mark.parametrize("kwargs", SELECT_CASES, ids=str)
+def test_select(kwargs: dict) -> None:
+    """select() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_select(indices, nonempty=len(filters) <= 1, **kwargs)
 
 
-def test_search(recorder: Recorder) -> None:
-    """Verify search() output for representative index queries."""
-    recorder.capture(indices.search(summary="S&P").iloc[:5])
-    recorder.capture(indices.search(index="GSPC").iloc[:5])
-    recorder.capture(indices.search(category="Industrials").iloc[:5])
-    recorder.capture(indices.search(category_group="Energy").iloc[:5])
-    recorder.capture(indices.search(exchange="SHH").iloc[:5])
-    recorder.capture(indices.search(summary="S&P", category="Financials").iloc[:5])
+SHOW_OPTIONS_CASES = [
+    {},
+    {"selection": "category"},
+    {"selection": "category_group"},
+    {"selection": "currency"},
+    {"selection": "exchange"},
+    {"exchange": "ASX"},
+    {"category": "REITs"},
+]
+
+
+@pytest.mark.parametrize("kwargs", SHOW_OPTIONS_CASES, ids=str)
+def test_show_options(kwargs: dict) -> None:
+    """show_options() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_show_options(indices, nonempty=len(filters) <= 1, **kwargs)
+
+
+SEARCH_CASES = [
+    {"summary": "S&P"},
+    {"index": "GSPC"},
+    {"category": "Industrials"},
+    {"category_group": "Energy"},
+    {"exchange": "SHH"},
+    {"summary": "S&P", "category": "Financials"},
+]
+
+
+@pytest.mark.parametrize("kwargs", SEARCH_CASES, ids=str)
+def test_search(kwargs: dict) -> None:
+    """search() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_search(indices, nonempty=len(filters) <= 1, **kwargs)
 
 
 def test_select_with_invalid_value_raises() -> None:

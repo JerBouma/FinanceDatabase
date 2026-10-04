@@ -2,54 +2,98 @@
 
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Any
+from typing import Any
 
 import pytest
 
 import financedatabase as fd
-
-if TYPE_CHECKING:
-    from tests.conftest import Recorder
+from tests.structure import check_search, check_select, check_show_options
 
 etfs = fd.ETFs(use_local_location=True)
 
 
-def test_select(recorder: Recorder) -> None:
-    """Verify select() output for representative ETF filter combinations."""
-    smoke = etfs.select()
-    assert not smoke.empty
-    assert "currency" in smoke.columns
-    recorder.capture(etfs.select().iloc[:5])
-    recorder.capture(etfs.select(category="Blend").iloc[:5])
-    recorder.capture(etfs.select(category_group="Materials").iloc[:5])
-    recorder.capture(etfs.select(family="ProShares").iloc[:5])
-    recorder.capture(etfs.select(exchange="PCX").iloc[:5])
-    recorder.capture(etfs.select(exchange="CPH", category="Financials").iloc[:5])
+SELECT_CASES = [
+    {},
+    {"category": "Blend"},
+    {"category_group": "Materials"},
+    {"family": "ProShares"},
+    {"exchange": "PCX"},
+    {"exchange": "CPH", "category": "Financials"},
+]
 
 
-def test_show_options(recorder: Recorder) -> None:
-    """Verify show_options() returns the expected option values for ETF."""
-    recorder.capture(list(etfs.show_options()))
-    recorder.capture(list(etfs.show_options(selection="category")))
-    recorder.capture(list(etfs.show_options(selection="category_group")))
-    recorder.capture(list(etfs.show_options(selection="family")))
-    recorder.capture(list(etfs.show_options(selection="currency")))
-    recorder.capture(list(etfs.show_options(selection="exchange")))
-    recorder.capture(list(etfs.show_options(exchange="PAR")))
-    recorder.capture(list(etfs.show_options(category="Energy")))
+@pytest.mark.parametrize("kwargs", SELECT_CASES, ids=str)
+def test_select(kwargs: dict) -> None:
+    """select() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_select(etfs, nonempty=len(filters) <= 1, **kwargs)
 
 
-def test_search(recorder: Recorder) -> None:
-    """Verify search() output for representative ETF queries."""
-    recorder.capture(etfs.search(summary="Apple").iloc[:5])
-    recorder.capture(etfs.search(index="VOO").iloc[:5])
-    recorder.capture(etfs.search(category="Utilities").iloc[:5])
-    recorder.capture(etfs.search(category_group="Materials").iloc[:5])
-    recorder.capture(etfs.search(family="ASYMshares").iloc[:5])
-    recorder.capture(etfs.search(exchange="PCX").iloc[:5])
-    recorder.capture(
-        etfs.search(summary="North America", category="Financials").iloc[:5]
-    )
+SHOW_OPTIONS_CASES = [
+    {},
+    {"selection": "category"},
+    {"selection": "category_group"},
+    {"selection": "family"},
+    {"selection": "currency"},
+    {"selection": "exchange"},
+    {"exchange": "PAR"},
+    {"category": "Energy"},
+]
+
+
+@pytest.mark.parametrize("kwargs", SHOW_OPTIONS_CASES, ids=str)
+def test_show_options(kwargs: dict) -> None:
+    """show_options() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_show_options(etfs, nonempty=len(filters) <= 1, **kwargs)
+
+
+SEARCH_CASES = [
+    {"summary": "Apple"},
+    {"index": "VOO"},
+    {"category": "Utilities"},
+    {"category_group": "Materials"},
+    {"family": "ASYMshares"},
+    {"exchange": "PCX"},
+    {"summary": "North America", "category": "Financials"},
+]
+
+
+@pytest.mark.parametrize("kwargs", SEARCH_CASES, ids=str)
+def test_search(kwargs: dict) -> None:
+    """search() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_search(etfs, nonempty=len(filters) <= 1, **kwargs)
 
 
 def test_select_with_invalid_value_raises() -> None:

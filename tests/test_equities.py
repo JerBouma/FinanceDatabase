@@ -5,16 +5,14 @@ from __future__ import annotations
 import sys
 import types
 from pathlib import Path
-from typing import TYPE_CHECKING, Any
+from typing import Any
 
 import pandas as pd
 import pytest
 import requests as _requests
 
 import financedatabase as fd
-
-if TYPE_CHECKING:
-    from tests.conftest import Recorder
+from tests.structure import check_search, check_select, check_show_options
 
 equities = fd.Equities(use_local_location=True)
 
@@ -69,61 +67,61 @@ def test_na_symbol_survives_remote_compression_round_trip(monkeypatch) -> None:
     assert pd.isna(remote_equities.data.loc["NA", "summary"])
 
 
-def test_select(recorder: Recorder) -> None:
-    """Verify select() output for representative equity filter combinations."""
-    smoke = equities.select()
-    assert not smoke.empty
-    assert "country" in smoke.columns
-    recorder.capture(equities.select().iloc[:5])
-    recorder.capture(equities.select(country="Canada").iloc[:5])
-    recorder.capture(equities.select(sector="Communication Services").iloc[:5])
-    recorder.capture(equities.select(industry_group="Insurance").iloc[:5])
-    recorder.capture(equities.select(market_cap="Large Cap").iloc[:5])
-    recorder.capture(equities.select(exchange="AMS").iloc[:5])
-    recorder.capture(
-        equities.select(country="United States", sector="Financials").iloc[:5]
-    )
-    recorder.capture(
-        equities.select(
-            country="United States", industry_group="Media & Entertainment"
-        ).iloc[:5]
-    )
-    recorder.capture(equities.select(sector="Energy", industry_group="Energy").iloc[:5])
-    recorder.capture(
-        equities.select(
-            country="United States",
-            sector="Health Care",
-            industry_group="Pharmaceuticals, Biotechnology & Life Sciences",
-        ).iloc[:5]
-    )
-    recorder.capture(
-        equities.select(
-            country="United States",
-            sector="Utilities",
-            industry_group="Utilities",
-            industry="Electric Utilities",
-            market="NASDAQ Global Select",
-        ).iloc[:5]
-    )
-    recorder.capture(
-        equities.select(
-            country="United States",
-            sector="Materials",
-            industry_group="Materials",
-            market="Johannesburg Stock Exchange",
-            currency="USD",
-        ).iloc[:5]
-    )
-    recorder.capture(
-        equities.select(
-            country="Japan",
-            sector="Energy",
-            industry_group="Energy",
-            market="Tokyo Stock Exchange",
-            currency="JPY",
-            only_primary_listing=True,
-        ).iloc[:5]
-    )
+SELECT_CASES = [
+    {},
+    {"country": "Canada"},
+    {"sector": "Communication Services"},
+    {"industry_group": "Insurance"},
+    {"market_cap": "Large Cap"},
+    {"exchange": "AMS"},
+    {"country": "United States", "sector": "Financials"},
+    {"country": "United States", "industry_group": "Media & Entertainment"},
+    {"sector": "Energy", "industry_group": "Energy"},
+    {
+        "country": "United States",
+        "sector": "Health Care",
+        "industry_group": "Pharmaceuticals, Biotechnology & Life Sciences",
+    },
+    {
+        "country": "United States",
+        "sector": "Utilities",
+        "industry_group": "Utilities",
+        "industry": "Electric Utilities",
+        "market": "NASDAQ Global Select",
+    },
+    {
+        "country": "United States",
+        "sector": "Materials",
+        "industry_group": "Materials",
+        "market": "Johannesburg Stock Exchange",
+        "currency": "USD",
+    },
+    {
+        "country": "Japan",
+        "sector": "Energy",
+        "industry_group": "Energy",
+        "market": "Tokyo Stock Exchange",
+        "currency": "JPY",
+        "only_primary_listing": True,
+    },
+]
+
+
+@pytest.mark.parametrize("kwargs", SELECT_CASES, ids=str)
+def test_select(kwargs: dict) -> None:
+    """select() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_select(equities, nonempty=len(filters) <= 1, **kwargs)
 
 
 @pytest.mark.parametrize("field", EQUITY_SELECTION_FIELDS)
@@ -171,33 +169,38 @@ def test_select_rejects_unknown_values_when_delisted_are_requested(
         )
 
 
-def test_show_options(recorder: Recorder) -> None:
-    """Verify show_options() returns the expected option values for equity."""
-    recorder.capture(list(equities.show_options()))
-    recorder.capture(list(equities.show_options(selection="country")))
-    recorder.capture(list(equities.show_options(selection="sector")))
-    recorder.capture(list(equities.show_options(selection="industry_group")))
-    recorder.capture(list(equities.show_options(selection="market_cap")))
-    recorder.capture(list(equities.show_options(country="Canada")))
-    recorder.capture(list(equities.show_options(sector="Communication Services")))
-    recorder.capture(list(equities.show_options(industry_group="Insurance")))
-    recorder.capture(list(equities.show_options(market_cap="Large Cap")))
-    recorder.capture(
-        list(equities.show_options(selection="country", country="United States"))
-    )
-    recorder.capture(
-        list(equities.show_options(selection="sector", sector="Financials"))
-    )
-    recorder.capture(
-        list(
-            equities.show_options(
-                selection="industry_group", industry_group="Media & Entertainment"
-            )
-        )
-    )
-    recorder.capture(
-        list(equities.show_options(selection="market_cap", market_cap="Large Cap"))
-    )
+SHOW_OPTIONS_CASES = [
+    {},
+    {"selection": "country"},
+    {"selection": "sector"},
+    {"selection": "industry_group"},
+    {"selection": "market_cap"},
+    {"country": "Canada"},
+    {"sector": "Communication Services"},
+    {"industry_group": "Insurance"},
+    {"market_cap": "Large Cap"},
+    {"selection": "country", "country": "United States"},
+    {"selection": "sector", "sector": "Financials"},
+    {"selection": "industry_group", "industry_group": "Media & Entertainment"},
+    {"selection": "market_cap", "market_cap": "Large Cap"},
+]
+
+
+@pytest.mark.parametrize("kwargs", SHOW_OPTIONS_CASES, ids=str)
+def test_show_options(kwargs: dict) -> None:
+    """show_options() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_show_options(equities, nonempty=len(filters) <= 1, **kwargs)
 
 
 def test_exchange_market_one_to_one() -> None:
@@ -313,28 +316,35 @@ def test_to_toolkit_success_path(monkeypatch) -> None:
     assert captured_kwargs["tickers"]
 
 
-def test_search(recorder: Recorder) -> None:
-    """Verify search() output for representative equity queries."""
-    recorder.capture(equities.search(summary="apple").iloc[:5])
-    recorder.capture(equities.search(index="AAPL").iloc[:5])
-    recorder.capture(equities.search(country="Canada").iloc[:5])
-    recorder.capture(equities.search(sector="Communication Services").iloc[:5])
-    recorder.capture(equities.search(industry_group="Insurance").iloc[:5])
-    recorder.capture(equities.search(market_cap="Large Cap").iloc[:5])
-    recorder.capture(
-        equities.search(country="United States", sector="Financials").iloc[:5]
-    )
-    recorder.capture(
-        equities.search(
-            country="United States", industry_group="Media & Entertainment"
-        ).iloc[:5]
-    )
-    recorder.capture(equities.search(sector="Energy", industry_group="Energy").iloc[:5])
-    recorder.capture(
-        equities.search(
-            country="United States", sector="Industrials", industry_group="Software"
-        ).iloc[:5]
-    )
+SEARCH_CASES = [
+    {"summary": "apple"},
+    {"index": "AAPL"},
+    {"country": "Canada"},
+    {"sector": "Communication Services"},
+    {"industry_group": "Insurance"},
+    {"market_cap": "Large Cap"},
+    {"country": "United States", "sector": "Financials"},
+    {"country": "United States", "industry_group": "Media & Entertainment"},
+    {"sector": "Energy", "industry_group": "Energy"},
+    {"country": "United States", "sector": "Industrials", "industry_group": "Software"},
+]
+
+
+@pytest.mark.parametrize("kwargs", SEARCH_CASES, ids=str)
+def test_search(kwargs: dict) -> None:
+    """search() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_search(equities, nonempty=len(filters) <= 1, **kwargs)
 
 
 def test_select_with_invalid_value_raises() -> None:
