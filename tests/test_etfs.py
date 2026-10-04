@@ -22,7 +22,7 @@ def test_select(recorder: Recorder) -> None:
     recorder.capture(etfs.select().iloc[:5])
     recorder.capture(etfs.select(category="Blend").iloc[:5])
     recorder.capture(etfs.select(category_group="Materials").iloc[:5])
-    recorder.capture(etfs.select(family="ASYMshares").iloc[:5])
+    recorder.capture(etfs.select(family="ProShares").iloc[:5])
     recorder.capture(etfs.select(exchange="PCX").iloc[:5])
     recorder.capture(etfs.select(exchange="CPH", category="Financials").iloc[:5])
 
@@ -74,3 +74,15 @@ def test_select_mic() -> None:
     result = etfs.select(mic=mic)
     assert not result.empty
     assert (result["mic"] == mic).all()
+
+
+def test_select_excludes_delisted_by_default() -> None:
+    """Delisted ETFs are hidden unless `exclude_delisted=False` is passed."""
+    everything = etfs.select(exclude_delisted=False)
+    listed = etfs.select()
+    assert everything["delisted"].any()
+    assert not listed["delisted"].any()
+    assert len(listed) == (~everything["delisted"]).sum()
+    assert set(etfs.show_options(selection="exchange")) <= set(
+        etfs.show_options(selection="exchange", exclude_delisted=False)
+    )
