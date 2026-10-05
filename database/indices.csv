@@ -5161,11 +5161,11 @@ symbol,name,currency,summary,category_group,category,exchange,mic
 3QC4.Z,EISTX ESG CO.LE.50 GR USD,,"The EISTX ESG CO.LE.50 GR USD is an equity index that tracks 50 leading companies with strong Environmental, Social, and Governance (ESG) practices, denominated in USD and with gross return. The index selects companies based on ESG ratings and market capitalization within a defined universe. It is designed for investors seeking sustainable investments.",Equities,Equities,ZRH,XSWX
 3QC5.Z,EISTX ESG CO.LE.50 PR EUR,,"The EISTX ESG CO.LE.50 PR EUR is an equity index that tracks 50 leading companies with strong Environmental, Social, and Governance (ESG) practices, denominated in EUR and with price return. The index selects companies based on ESG ratings and market capitalization within a defined universe. It is designed for investors seeking sustainable investments.",Equities,Equities,ZRH,XSWX
 3QC6.Z,EISTX ESG CO.LE.50 NR EUR,,"The EISTX ESG CO.LE.50 NR EUR is an equity index that tracks 50 leading companies with strong Environmental, Social, and Governance (ESG) practices, denominated in EUR and with net return. The index selects companies based on ESG ratings and market capitalization within a defined universe. It is designed for investors seeking sustainable investments.",Equities,Equities,ZRH,XSWX
-3QCL.DE,I.I.G.IN.L.GO.B.EO.H.A.EO,EUR,,,Government Bonds,GER,XETR
-3QCM.DE,I.I.G.IN.L.GO.B.EO.H.A.SF,CHF,,,Government Bonds,GER,XETR
-3QCN.DE,I.I.G.IN.L.GO.B.EO.H.A.LS,GBP,,,Government Bonds,GER,XETR
-3QCP.DE,I.I.G.IN.L.GO.B.EO.H.A.YN,JPY,,,Government Bonds,GER,XETR
-3QCQ.DE,I.I.G.IN.L.GO.B.EO.H.A.DL,USD,,,Government Bonds,GER,XETR
+3QCL.DE,I.I.G.IN.L.GO.B.EO.H.A.EO,EUR,,Fixed Income,Government Bonds,GER,XETR
+3QCM.DE,I.I.G.IN.L.GO.B.EO.H.A.SF,CHF,,Fixed Income,Government Bonds,GER,XETR
+3QCN.DE,I.I.G.IN.L.GO.B.EO.H.A.LS,GBP,,Fixed Income,Government Bonds,GER,XETR
+3QCP.DE,I.I.G.IN.L.GO.B.EO.H.A.YN,JPY,,Fixed Income,Government Bonds,GER,XETR
+3QCQ.DE,I.I.G.IN.L.GO.B.EO.H.A.DL,USD,,Fixed Income,Government Bonds,GER,XETR
 3QCW.DE,I.IS.MS.AC FE E.J.DL A.EO,EUR,,,Emerging Markets,GER,XETR
 3QCX.DE,I.IS.MS.AC FE E.J.DL A.SF,CHF,,,Emerging Markets,GER,XETR
 3QCY.DE,I.IS.MS.AC FE E.J.DL A.LS,GBP,,,Emerging Markets,GER,XETR
@@ -6587,12 +6587,12 @@ symbol,name,currency,summary,category_group,category,exchange,mic
 4UKD.Z,IST.CORE EURO+GL.WA.PR DL,,,,Developed Markets,ZRH,XSWX
 4UKE.Z,IST.CORE EURO+GL.WA.NR DL,,,,Developed Markets,ZRH,XSWX
 4UKF.Z,IST.CORE EURO+GL.WA.GR DL,,,,Developed Markets,ZRH,XSWX
-4UKG.Z,I.G.WO.M.E.C.A.S.30 PR EO,,,,Frontier Markets,ZRH,XSWX
-4UKH.Z,I.G.WO.M.E.C.A.S.30 NR EO,,,,Frontier Markets,ZRH,XSWX
-4UKJ.Z,I.G.WO.M.E.C.A.S.30 GR EO,,,,Frontier Markets,ZRH,XSWX
-4UKK.Z,I.G.WO.M.E.C.A.S.30 PR DL,,,,Frontier Markets,ZRH,XSWX
-4UKL.Z,I.G.WO.M.E.C.A.S.30 NR DL,,,,Frontier Markets,ZRH,XSWX
-4UKM.Z,I.G.WO.M.E.C.A.S.30 GR DL,,,,Frontier Markets,ZRH,XSWX
+4UKG.Z,I.G.WO.M.E.C.A.S.30 PR EO,,,Equities,Frontier Markets,ZRH,XSWX
+4UKH.Z,I.G.WO.M.E.C.A.S.30 NR EO,,,Equities,Frontier Markets,ZRH,XSWX
+4UKJ.Z,I.G.WO.M.E.C.A.S.30 GR EO,,,Equities,Frontier Markets,ZRH,XSWX
+4UKK.Z,I.G.WO.M.E.C.A.S.30 PR DL,,,Equities,Frontier Markets,ZRH,XSWX
+4UKL.Z,I.G.WO.M.E.C.A.S.30 NR DL,,,Equities,Frontier Markets,ZRH,XSWX
+4UKM.Z,I.G.WO.M.E.C.A.S.30 GR DL,,,Equities,Frontier Markets,ZRH,XSWX
 4UKN.Z,EURO ISTX W.M.H.D. PR EO,,"EURO iSTOXX Minimum Variance High Dividend Price EUR Index aims to select the 20 stocks with the lowest variance from the EURO STOXX Index, while maximizing dividend yield. The constituents are weighted according to an optimization algorithm. It is a price index denominated in EUR.",Equities,Factors,ZRH,XSWX
 4UKP.Z,EURO ISTX W.M.H.D. NR EO,,"EURO iSTOXX Minimum Variance High Dividend Net Return EUR Index aims to select the 20 stocks with the lowest variance from the EURO STOXX Index, while maximizing dividend yield. The constituents are weighted according to an optimization algorithm. It is a net return index denominated in EUR.",Equities,Factors,ZRH,XSWX
 4UKQ.Z,EURO ISTX W.M.H.D. GR EO,,"EURO iSTOXX Minimum Variance High Dividend Gross Return EUR Index aims to select the 20 stocks with the lowest variance from the EURO STOXX Index, while maximizing dividend yield. The constituents are weighted according to an optimization algorithm. It is a gross return index denominated in EUR.",Equities,Factors,ZRH,XSWX
@@ -6788,34 +6788,34 @@ symbol,name,currency,summary,category_group,category,exchange,mic
 6CCX.Z,STX GO.SHAR.RA.100 PR USD,,"The STOXX Global Sharper Ratio 100 Price USD Index aims to select 100 stocks from the STOXX Global Total Market Index with the highest Sharpe Ratio. The Sharpe Ratio is a risk-adjusted measure of return, calculated as the excess return above the risk-free rate divided by the standard deviation of returns. It is a price return index denominated in USD.",Equities,Factors,ZRH,XSWX
 6CCY.Z,STX GO.SHAR.RA.100 NR USD,,"The STOXX Global Sharper Ratio 100 Net Return USD Index aims to select 100 stocks from the STOXX Global Total Market Index with the highest Sharpe Ratio. The Sharpe Ratio is a risk-adjusted measure of return, calculated as the excess return above the risk-free rate divided by the standard deviation of returns. It is a net return index denominated in USD.",Equities,Factors,ZRH,XSWX
 6CCZ.Z,STX GO.SHAR.RA.100 GR USD,,"The STOXX Global Sharper Ratio 100 Gross Return USD Index aims to select 100 stocks from the STOXX Global Total Market Index with the highest Sharpe Ratio. The Sharpe Ratio is a risk-adjusted measure of return, calculated as the excess return above the risk-free rate divided by the standard deviation of returns. It is a gross return index denominated in USD.",Equities,Factors,ZRH,XSWX
-6S10.Z,IST.MUTB GL.VAL.600 NR AD,,,,Value,ZRH,XSWX
-6S12.Z,IS.MU.G.EX.JA.V.600 PR EO,,,,Value,ZRH,XSWX
-6S13.Z,IS.MU.G.EX.JA.V.600 NR EO,,,,Value,ZRH,XSWX
-6S14.Z,IS.MU.G.EX.JA.V.600 GR EO,,,,Value,ZRH,XSWX
-6S15.Z,IS.MU.G.EX.JA.V.600 PR DL,,,,Value,ZRH,XSWX
-6S16.Z,IS.MU.G.EX.JA.V.600 NR DL,,,,Value,ZRH,XSWX
-6S17.Z,IS.MU.G.EX.JA.V.600 GR DL,,,,Value,ZRH,XSWX
-6S18.Z,IS.MU.G.EX.JA.V.600 PR YN,,,,Value,ZRH,XSWX
-6S19.Z,IS.MU.G.EX.JA.V.600 NR YN,,,,Value,ZRH,XSWX
-6S1Q.Z,IST.MUTB GL.VAL.600 PR EO,,,,Value,ZRH,XSWX
-6S1R.Z,IST.MUTB GL.VAL.600 NR EO,,,,Value,ZRH,XSWX
-6S1T.Z,IST.MUTB GL.VAL.600 PR DL,,,,Value,ZRH,XSWX
-6S1U.Z,IST.MUTB GL.VAL.600 NR DL,,,,Value,ZRH,XSWX
-6S1V.Z,IST.MUTB GL.VAL.600 GR DL,,,,Value,ZRH,XSWX
-6S1W.Z,IST.MUTB GL.VAL.600 PR YN,,,,Value,ZRH,XSWX
-6S1X.Z,IST.MUTB GL.VAL.600 NR YN,,,,Value,ZRH,XSWX
-6S1Y.Z,IST.MUTB GL.VAL.600 GR YN,,,,Value,ZRH,XSWX
-6S1Z.Z,IST.MUTB GL.VAL.600 PR AD,,,,Value,ZRH,XSWX
-6WGA.Z,IS.MU.G.EX.JA.V.600 GR YN,,,,Value,ZRH,XSWX
-6WGB.Z,IST.MUTB JAP.VA.300 PR EO,,,,Value,ZRH,XSWX
-6WGC.Z,IST.MUTB JAP.VA.300 NR EO,,,,Value,ZRH,XSWX
-6WGD.Z,IST.MUTB JAP.VA.300 GR EO,,,,Value,ZRH,XSWX
-6WGE.Z,IST.MUTB JAP.VA.300 PR DL,,,,Value,ZRH,XSWX
-6WGF.Z,IST.MUTB JAP.VA.300 NR DL,,,,Value,ZRH,XSWX
-6WGG.Z,IST.MUTB JAP.VA.300 GR DL,,,,Value,ZRH,XSWX
-6WGH.Z,IST.MUTB JAP.VA.300 PR YN,,,,Value,ZRH,XSWX
-6WGJ.Z,IST.MUTB JAP.VA.300 NR YN,,,,Value,ZRH,XSWX
-6WGK.Z,IST.MUTB JAP.VA.300 GR YN,,,,Value,ZRH,XSWX
+6S10.Z,IST.MUTB GL.VAL.600 NR AD,,,Equities,Value,ZRH,XSWX
+6S12.Z,IS.MU.G.EX.JA.V.600 PR EO,,,Equities,Value,ZRH,XSWX
+6S13.Z,IS.MU.G.EX.JA.V.600 NR EO,,,Equities,Value,ZRH,XSWX
+6S14.Z,IS.MU.G.EX.JA.V.600 GR EO,,,Equities,Value,ZRH,XSWX
+6S15.Z,IS.MU.G.EX.JA.V.600 PR DL,,,Equities,Value,ZRH,XSWX
+6S16.Z,IS.MU.G.EX.JA.V.600 NR DL,,,Equities,Value,ZRH,XSWX
+6S17.Z,IS.MU.G.EX.JA.V.600 GR DL,,,Equities,Value,ZRH,XSWX
+6S18.Z,IS.MU.G.EX.JA.V.600 PR YN,,,Equities,Value,ZRH,XSWX
+6S19.Z,IS.MU.G.EX.JA.V.600 NR YN,,,Equities,Value,ZRH,XSWX
+6S1Q.Z,IST.MUTB GL.VAL.600 PR EO,,,Equities,Value,ZRH,XSWX
+6S1R.Z,IST.MUTB GL.VAL.600 NR EO,,,Equities,Value,ZRH,XSWX
+6S1T.Z,IST.MUTB GL.VAL.600 PR DL,,,Equities,Value,ZRH,XSWX
+6S1U.Z,IST.MUTB GL.VAL.600 NR DL,,,Equities,Value,ZRH,XSWX
+6S1V.Z,IST.MUTB GL.VAL.600 GR DL,,,Equities,Value,ZRH,XSWX
+6S1W.Z,IST.MUTB GL.VAL.600 PR YN,,,Equities,Value,ZRH,XSWX
+6S1X.Z,IST.MUTB GL.VAL.600 NR YN,,,Equities,Value,ZRH,XSWX
+6S1Y.Z,IST.MUTB GL.VAL.600 GR YN,,,Equities,Value,ZRH,XSWX
+6S1Z.Z,IST.MUTB GL.VAL.600 PR AD,,,Equities,Value,ZRH,XSWX
+6WGA.Z,IS.MU.G.EX.JA.V.600 GR YN,,,Equities,Value,ZRH,XSWX
+6WGB.Z,IST.MUTB JAP.VA.300 PR EO,,,Equities,Value,ZRH,XSWX
+6WGC.Z,IST.MUTB JAP.VA.300 NR EO,,,Equities,Value,ZRH,XSWX
+6WGD.Z,IST.MUTB JAP.VA.300 GR EO,,,Equities,Value,ZRH,XSWX
+6WGE.Z,IST.MUTB JAP.VA.300 PR DL,,,Equities,Value,ZRH,XSWX
+6WGF.Z,IST.MUTB JAP.VA.300 NR DL,,,Equities,Value,ZRH,XSWX
+6WGG.Z,IST.MUTB JAP.VA.300 GR DL,,,Equities,Value,ZRH,XSWX
+6WGH.Z,IST.MUTB JAP.VA.300 PR YN,,,Equities,Value,ZRH,XSWX
+6WGJ.Z,IST.MUTB JAP.VA.300 NR YN,,,Equities,Value,ZRH,XSWX
+6WGK.Z,IST.MUTB JAP.VA.300 GR YN,,,Equities,Value,ZRH,XSWX
 6WGP.Z,IS.INF.T.EXP.USA 75 DW PR,,,,Technology,ZRH,XSWX
 6WGQ.Z,IS.INF.T.EXP.USA 75 DW NR,,,,Technology,ZRH,XSWX
 6WGR.Z,IS.INF.T.EXP.USA 75 DW GR,,,,Technology,ZRH,XSWX
@@ -13228,15 +13228,15 @@ DE000SLA0M17.SG,TRFOXHIGHQSTUSAEUR,EUR,,,,STU,XSTU
 DE000SLA0M41.SG,SOL US SM CAP DL,EUR,,,Small Cap,STU,XSTU
 DE000SLA0M58.SG,SOLHOMEAUTOMATION,EUR,,,Technology,STU,XSTU
 DE000SLA0MD2.SG,SGIGLBQUALBETEUR,EUR,,,,STU,XSTU
-DE000SLA0MH3.SG,SHGER5YGBRS EUR,EUR,,,Government Bonds,STU,XSTU
-DE000SLA0MK7.SG,SHGER5YGBRS EUR,EUR,,,Government Bonds,STU,XSTU
+DE000SLA0MH3.SG,SHGER5YGBRS EUR,EUR,,Fixed Income,Government Bonds,STU,XSTU
+DE000SLA0MK7.SG,SHGER5YGBRS EUR,EUR,,Fixed Income,Government Bonds,STU,XSTU
 DE000SLA0ML5.SG,SOLACTIVE MLP USD,EUR,,,Energy,STU,XSTU
-DE000SLA0MN1.SG,SHUS5YGBRS USD,EUR,,,Treasury Bonds,STU,XSTU
+DE000SLA0MN1.SG,SHUS5YGBRS USD,EUR,,Fixed Income,Treasury Bonds,STU,XSTU
 DE000SLA0MP6.SG,MVIS GLMORTREITSPR,USD,,,REITs,STU,XSTU
-DE000SLA0MQ4.SG,FSHUS5YGBRS USD,EUR,,,Treasury Bonds,STU,XSTU
+DE000SLA0MQ4.SG,FSHUS5YGBRS USD,EUR,,Fixed Income,Treasury Bonds,STU,XSTU
 DE000SLA0MR2.SG,MVIS GLMORTREITSTR,USD,,,REITs,STU,XSTU
-DE000SLA0MU6.SG,GER5YGBRS EUR,EUR,,,Government Bonds,STU,XSTU
-DE000SLA0MX0.SG,SOLACT MONGOLIA EUR,EUR,,,Frontier Markets,STU,XSTU
+DE000SLA0MU6.SG,GER5YGBRS EUR,EUR,,Fixed Income,Government Bonds,STU,XSTU
+DE000SLA0MX0.SG,SOLACT MONGOLIA EUR,EUR,,Equities,Frontier Markets,STU,XSTU
 DE000SLA0MY8.SG,SOLACT.MY-FO AI USD,EUR,,,Alternative,STU,XSTU
 DE000SLA0MZ5.SG,INAV ARK DENREV,EUR,,,,STU,XSTU
 DE000SLA0N40.SG,GSACBETAUSLACAPEQ,EUR,,,,STU,XSTU
@@ -19677,8 +19677,8 @@ EQDD.DE,IN.IS.C.M.JAP.MI DL DI.SF,CHF,,,Equities,GER,XETR
 EQDE.DE,IN.IS.C.M.JAP.MI DL DI.LS,GBP,,,Equities,GER,XETR
 EQDF.DE,IN.IS.C.M.JAP.MI DL DI.YN,JPY,,,Equities,GER,XETR
 EQDG.DE,IN.IS.C.M.JAP.MI DL DI.DL,USD,,,Equities,GER,XETR
-EQDN.DE,IN.TA.NA CDX HY CR.S.A.EO,EUR,,,High Yield Bonds,GER,XETR
-EQDP.DE,IN.TA.NA CDX HY CR.S.A.DL,USD,,,High Yield Bonds,GER,XETR
+EQDN.DE,IN.TA.NA CDX HY CR.S.A.EO,EUR,,Fixed Income,High Yield Bonds,GER,XETR
+EQDP.DE,IN.TA.NA CDX HY CR.S.A.DL,USD,,Fixed Income,High Yield Bonds,GER,XETR
 EQDU.DE,IN.IS.ELE.VEC.+DR.TE.A.EO,EUR,,,Equities,GER,XETR
 EQDV.DE,IN.IS.ELE.VEC.+DR.TE.A.SF,CHF,,,Equities,GER,XETR
 EQDW.DE,IN.IS.ELE.VEC.+DR.TE.A.LS,GBP,,,Equities,GER,XETR
@@ -19710,15 +19710,15 @@ EQGY.DE,INAV INVESCO US TRE.BD EO,EUR,"This is an Invesco US Treasury Bond ETF d
 EQGZ.DE,INAV INVESCO US TRE.BD LS,GBP,"This is an Invesco US Treasury Bond ETF denominated in Swiss Franc. The fund seeks to track the performance of the overall US Treasury bond market, offering investors exposure to US government debt. Invesco manages this ETF.",Fixed Income,Treasury Bonds,GER,XETR
 ER.MX,,MXN,,,,MEX,XMEX
 EREE.FGI,FTSE EPRA/NAREIT Europe REITs,EUR,"The FTSE EPRA/NAREIT Europe REITs Index is designed to track the performance of listed Real Estate Investment Trusts (REITs) in Europe. It serves as a benchmark for investors interested in the European REIT market, providing a comprehensive and liquid representation of the sector. The index follows a transparent and rules-based methodology to ensure accurate and reliable performance tracking.",Real Estate,REITs,FGI,
-ERGBD.AS,EN RM GLB BAL DECR,EUR,,,Blend,AMS,XAMS
-ERGBN.AS,EN RM GLOB BAL NR,EUR,,,Blend,AMS,XAMS
-ERGBP.AS,EN RM GLOB BALANCE,EUR,,,Blend,AMS,XAMS
-ERGCD.AS,EN RM GLBCONV DECR,EUR,,,Blend,AMS,XAMS
-ERGCN.AS,EN RM GLOB CONV NR,EUR,,,Blend,AMS,XAMS
-ERGCP.AS,EN RM GLOB CONV,EUR,,,Blend,AMS,XAMS
-ERGSD.AS,EN RM G GL SUS DEC,EUR,,,Blend,AMS,XAMS
-ERGSN.AS,EN RM G GL SUST NR,EUR,,,Blend,AMS,XAMS
-ERGSP.AS,EN RM G GLOB SUST,EUR,,,Blend,AMS,XAMS
+ERGBD.AS,EN RM GLB BAL DECR,EUR,,Equities,Blend,AMS,XAMS
+ERGBN.AS,EN RM GLOB BAL NR,EUR,,Equities,Blend,AMS,XAMS
+ERGBP.AS,EN RM GLOB BALANCE,EUR,,Equities,Blend,AMS,XAMS
+ERGCD.AS,EN RM GLBCONV DECR,EUR,,Equities,Blend,AMS,XAMS
+ERGCN.AS,EN RM GLOB CONV NR,EUR,,Equities,Blend,AMS,XAMS
+ERGCP.AS,EN RM GLOB CONV,EUR,,Equities,Blend,AMS,XAMS
+ERGSD.AS,EN RM G GL SUS DEC,EUR,,Equities,Blend,AMS,XAMS
+ERGSN.AS,EN RM G GL SUST NR,EUR,,Equities,Blend,AMS,XAMS
+ERGSP.AS,EN RM G GLOB SUST,EUR,,Equities,Blend,AMS,XAMS
 ERI5E.PA,EN RI EU 50 EW D5%,EUR,"The index aims to represent the performance of 50 European Union companies, selected and weighted equally, with a 5% maximum weight cap applied to each constituent. It incorporates an Environmental, Social, and Governance (ESG) risk rating.",Equities,Equities,PAR,XPAR
 ERI5G.PA,EN RI EU 50 EW GR,EUR,"The index aims to represent the performance of 50 European Union companies, selected and weighted equally, incorporating an Environmental, Social, and Governance (ESG) risk rating, and with a gross return calculation.",Equities,Equities,PAR,XPAR
 ERI5N.PA,EN RI EU 50 EW NR,EUR,"The index aims to represent the performance of 50 European Union companies, selected and weighted equally, incorporating an Environmental, Social, and Governance (ESG) risk rating, and with a net return calculation.",Equities,Equities,PAR,XPAR
@@ -21223,7 +21223,7 @@ ICBBB.PA,AMUNDI CBBB INAV,EUR,,,Corporate Bonds,PAR,XPAR
 ICBE7.PA,CS ETF CBE7 INAV,EUR,,,,PAR,XPAR
 ICBSE.PA,UBS CBSE INAV,EUR,,,,PAR,XPAR
 ICBU7.PA,CS ETF CBU7 INAV,EUR,,,,PAR,XPAR
-ICBUG.PA,ISHARES CBUG INAV,GBP,,,Government Bonds,PAR,XPAR
+ICBUG.PA,ISHARES CBUG INAV,GBP,,Fixed Income,Government Bonds,PAR,XPAR
 ICC1U.PA,AMUNDI CC1U INAV,USD,,,,PAR,XPAR
 ICCME.PA,CBK CCME INAV,EUR,,,,PAR,XPAR
 ICCMR.PA,CBK CCMR INAV,CNY,,,,PAR,XPAR
@@ -21235,12 +21235,12 @@ ICEUU.PA,ISHARES CEUU INAV,USD,,,Emerging Markets,PAR,XPAR
 ICGBI.NX,,USD,,,,ENX,
 ICGBI.PA,ISHARES CGBI INAV,USD,,Fixed Income,Government Bonds,PAR,XPAR
 ICGGD.NX,,USD,,,,ENX,
-ICGGD.PA,ISHARES CGGD INAV,USD,,,Government Bonds,PAR,XPAR
+ICGGD.PA,ISHARES CGGD INAV,USD,,Fixed Income,Government Bonds,PAR,XPAR
 ICI2U.PA,AMUNDI CI2U INAV,USD,,,,PAR,XPAR
 ICIT2.PA,LS CIT2 INAV,EUR,The index tracks the performance of companies involved in the CIT2 sector. It reflects the returns of leading companies in this specific area. Additional details about the sector and its characteristics are not available.,Equities,,PAR,XPAR
 ICITS.NX,,EUR,,,,ENX,
 ICITS.PA,LS CITS INAV,EUR,The index tracks the performance of companies involved in the CITS sector. It reflects the returns of leading companies in this specific area. Additional details about the sector and its characteristics are not available.,Equities,,PAR,XPAR
-ICITY.PA,ISHARES CITY INAV,USD,,,Real Estate Services,PAR,XPAR
+ICITY.PA,ISHARES CITY INAV,USD,,Real Estate,Real Estate Services,PAR,XPAR
 ICJ1Y.PA,AMUNDI CJ1Y INAV,JPY,,,,PAR,XPAR
 ICLEM.PA,LY CLEM INAV,EUR,,,,PAR,XPAR
 ICLEU.PA,Ly CLEU INAV,EUR,,,,PAR,XPAR
@@ -21951,9 +21951,9 @@ INUS3.PA,AMUNDI US3 INAV,USD,,,Developed Markets,PAR,XPAR
 INUS7.PA,AMUNDI US7 INAV,USD,,,Developed Markets,PAR,XPAR
 INUSA.PA,LYXOR USA INAV,EUR,,,Developed Markets,PAR,XPAR
 INUSP.AS,ISHARES IUS INAV,EUR,,,Developed Markets,AMS,XAMS
-INUST.PA,LYXOR UST INAV,EUR,,,Treasury Bonds,PAR,XPAR
+INUST.PA,LYXOR UST INAV,EUR,,Fixed Income,Treasury Bonds,PAR,XPAR
 INUTI.PA,LYXOR UTI INAV,EUR,,,Utilities,PAR,XPAR
-INVAL.PA,LYXOR VAL INAV,EUR,,,Value,PAR,XPAR
+INVAL.PA,LYXOR VAL INAV,EUR,,Equities,Value,PAR,XPAR
 INVD2.PA,LS 2X NVIDIA,EUR,,,Derivatives,PAR,XPAR
 INVD3.PA,LS NVD3 INAV,EUR,,,,PAR,XPAR
 INVDS.PA,LS NVDS INAV,EUR,,,,PAR,XPAR
@@ -22140,7 +22140,7 @@ ISCIT.AS,LS SCIT INAV,EUR,,,,AMS,XAMS
 ISCIT.NX,,EUR,,,,ENX,
 ISCRM.PA,LS SCRM INAV,EUR,,,,PAR,XPAR
 ISCSG.NX,ISEQ CONS STAPL GR,EUR,,Consumer Staples,Consumer Staples,ENX,
-ISDHY.PA,ISHARES SDHY INAV,EUR,,,High Yield Bonds,PAR,XPAR
+ISDHY.PA,ISHARES SDHY INAV,EUR,,Fixed Income,High Yield Bonds,PAR,XPAR
 ISDIG.PA,ISHARES SDIG INAV,EUR,,,,PAR,XPAR
 ISEBG.NX,ISEQ BASIC MAT GR,EUR,,Materials,Materials,ENX,
 ISEBM.NX,ISEQ BASIC MATER,EUR,,Materials,Materials,ENX,
@@ -22518,7 +22518,7 @@ IVETY.PA,VANGUARD VETY INAV,EUR,The index aims to track the performance of globa
 IVEUR.PA,VANG VEUR INAV,EUR,The index seeks to track the performance of the Eurozone equity market. It aims to provide comprehensive coverage of publicly listed companies in the Eurozone. The index is weighted by market capitalization.,Equities,Developed Markets,PAR,XPAR
 IVEVE.PA,VANGUARD VEVE INAV,EUR,The index seeks to track the performance of the European equity market. It aims to provide comprehensive coverage of publicly listed companies in Europe. The index is weighted by market capitalization.,Equities,Developed Markets,PAR,XPAR
 IVFEM.PA,VANG VFEM INAV,EUR,The index seeks to track the performance of the emerging markets equity market. It aims to provide comprehensive coverage of publicly listed companies in emerging markets. The index is weighted by market capitalization.,Equities,Emerging Markets,PAR,XPAR
-IVHYL.PA,VANG VHYL INAV,EUR,,,High Yield Bonds,PAR,XPAR
+IVHYL.PA,VANG VHYL INAV,EUR,,Fixed Income,High Yield Bonds,PAR,XPAR
 IVIS2.PA,LS VIS2 INAV,EUR,,,,PAR,XPAR
 IVJPN.PA,VANG VJPN INAV,EUR,The index seeks to track the performance of the Japanese equity market. It aims to provide comprehensive coverage of publicly listed companies in Japan. The index is weighted by market capitalization.,Equities,Developed Markets,PAR,XPAR
 IVLED.PA,BNPP VLED INAV,EUR,,,,PAR,XPAR
@@ -22793,7 +22793,7 @@ METNTRN.ME,MOEX Transport Net TR-NR,RUB,"The MOEX Transport Net TR-NR Index trac
 METNTRR.ME,MOEX Transport Net TR-Res,RUB,"The MOEX Transport Net TR-Res Index tracks the net total return performance of companies in the transport sector listed on the Moscow Exchange, with withholding taxes deducted from dividends. It represents the performance of the Russian transport industry, accounting for the impact of dividend taxation. The index is designed for investors who are subject to Russian withholding taxes on dividends.",Equities,Industrials,MCX,MISX
 MFG.BO,S&P BSE INDIA MANUFACTURING IND,INR,The S&P BSE India Manufacturing Index is designed to measure the performance of companies engaged in manufacturing activities listed on the Bombay Stock Exchange (BSE). It serves as a benchmark for investors seeking exposure to the manufacturing sector in India. The index helps in tracking the growth and trends within India's manufacturing industry.,Equities,Industrials,BSE,XBOM
 MID150.BO,S&P BSE 150 MidCap Index,INR,The S&P BSE 150 MidCap Index is designed to measure the performance of 150 mid-sized companies listed on the Bombay Stock Exchange (BSE). It represents the mid-cap segment of the Indian equity market. The index serves as a benchmark for investors seeking exposure to Indian mid-cap stocks.,Equities,Mid Cap,BSE,XBOM
-MIDCAP120.TA,TA Growth,ILS,,,Growth,TLV,XTAE
+MIDCAP120.TA,TA Growth,ILS,,Equities,Growth,TLV,XTAE
 MIDCAP50.TA,TA-SME60,ILS,The TA-SME60 Index represents the performance of 60 small and medium-sized enterprises (SMEs) listed on the Tel Aviv Stock Exchange. It is designed to track the performance of smaller companies with growth potential in the Israeli market. The index serves as a benchmark for investors seeking exposure to the SME sector in Israel.,Equities,Small Cap,TLV,XTAE
 MIDSEL.BO,S&P BSE MIDCAP SELECT INDEX,INR,"The S&P BSE MIDCAP SELECT INDEX is designed to measure the performance of a select group of mid-sized companies listed on the Bombay Stock Exchange (BSE), chosen based on specific criteria. It aims to provide a more focused representation of the mid-cap segment in India. The index serves as a benchmark for investors seeking a more targeted exposure to Indian mid-cap stocks.",Equities,Mid Cap,BSE,XBOM
 MLCX.SA,MIDLARGE CAP,BRL,,,Mid Cap,SAO,BVMF
@@ -34684,10 +34684,10 @@ ZZRF.SW,,EUR,,,,EBS,XSWX
 ^HYDW-IV,Xtrackers Low Beta High Yield B,USD,"The Xtrackers Low Beta High Yield Bond ETF seeks to track the investment results of an index composed of U.S. dollar-denominated, high yield corporate bonds with potentially lower beta. The fund focuses on offering high-yield exposure with a lower sensitivity to market movements. DWS Group GmbH & Co. KGaA, headquartered in Frankfurt, Germany, manages the Xtrackers ETF family.",Fixed Income,High Yield Bonds,ASE,XASE
 ^HYDW-NV,Xtrackers Low Beta High Yield B,USD,"The Xtrackers Low Beta High Yield Bond ETF seeks to track the investment results of an index composed of U.S. dollar-denominated, high yield corporate bonds with potentially lower beta. The fund focuses on offering high-yield exposure with a lower sensitivity to market movements. DWS Group GmbH & Co. KGaA, headquartered in Frankfurt, Germany, manages the Xtrackers ETF family.",Fixed Income,High Yield Bonds,ASE,XASE
 ^HYDW-TC,Xtrackers Low Beta High Yield B,USD,"The Xtrackers Low Beta High Yield Bond ETF seeks to track the investment results of an index composed of U.S. dollar-denominated, high yield corporate bonds with potentially lower beta. The fund focuses on offering high-yield exposure with a lower sensitivity to market movements. DWS Group GmbH & Co. KGaA, headquartered in Frankfurt, Germany, manages the Xtrackers ETF family.",Fixed Income,High Yield Bonds,ASE,XASE
-^HYEM-EU,HYEM.EU,USD,,,High Yield Bonds,ASE,XASE
-^HYEM-IV,HYEM.IV,USD,,,High Yield Bonds,ASE,XASE
-^HYEM-NV,HYEM.NV,USD,,,High Yield Bonds,ASE,XASE
-^HYEM-TC,HYEM.TC,USD,,,High Yield Bonds,ASE,XASE
+^HYEM-EU,HYEM.EU,USD,,Fixed Income,High Yield Bonds,ASE,XASE
+^HYEM-IV,HYEM.IV,USD,,Fixed Income,High Yield Bonds,ASE,XASE
+^HYEM-NV,HYEM.NV,USD,,Fixed Income,High Yield Bonds,ASE,XASE
+^HYEM-TC,HYEM.TC,USD,,Fixed Income,High Yield Bonds,ASE,XASE
 ^HYG-IV,iShares iBoxx High Yield Corpor,USD,"The iShares iBoxx High Yield Corporate Bond ETF seeks to track the investment results of an index composed of U.S. dollar-denominated, high yield corporate bonds. It provides exposure to a broad range of U.S. high-yield corporate bonds. This ETF can be used by investors seeking income from corporate debt.",Fixed Income,High Yield Bonds,ASE,XASE
 ^HYGH-EU,ISHARESUSETFTRUST,USD,"The iShares iBoxx $ High Yield Corporate Bond ETF seeks to track the investment results of an index composed of U.S. dollar-denominated, high yield corporate bonds. The fund provides broad exposure to the high-yield corporate bond market. BlackRock, headquartered in New York, is a leading global asset management firm.",Fixed Income,High Yield Bonds,ASE,XASE
 ^HYGH-IV,ISHARESUSETFTRUST,USD,"The iShares iBoxx $ High Yield Corporate Bond ETF seeks to track the investment results of an index composed of U.S. dollar-denominated, high yield corporate bonds. The fund provides broad exposure to the high-yield corporate bond market. BlackRock, headquartered in New York, is a leading global asset management firm.",Fixed Income,High Yield Bonds,ASE,XASE
@@ -85233,15 +85233,15 @@ It includes companies listed on Asian exchanges that are classified as financial
 ^RJY,NYSE Arca Mini-Natural Gas Inde,USD,,Energy,Energy,NYS,XNYS
 ^RJZ-IV,AB SVENSK ELEMENTS (Intraday Va,USD,,Derivatives,Derivatives,ASE,XASE
 ^RLG,Russell 1000 Growth,USD,The Russell 1000 Growth Index measures the performance of the growth style segment of the large-cap US equity universe. It includes those Russell 1000 companies with higher price-to-book ratios and higher forecasted growth values. The index is market-capitalization weighted.,Equities,Growth,WCB,
-^RLGNET,Russell 1000 Growth Net Total R,USD,,,Growth,WCB,
-^RLGSOQ,Russell 1000 Growth Special Ope,USD,,,Growth,WCB,
+^RLGNET,Russell 1000 Growth Net Total R,USD,,Equities,Growth,WCB,
+^RLGSOQ,Russell 1000 Growth Special Ope,USD,,Equities,Growth,WCB,
 ^RLGTR,Russell 1000 Growth Total Retur,USD,"The Russell 1000 Growth Total Return Index measures the performance of those Russell 1000 companies with higher price-to-book ratios and higher forecasted growth values. The index is market-capitalization weighted. It reflects the total return, which includes reinvestment of dividends.",Equities,Growth,WCB,
 ^RLR,RUSSELL 1000 GROWTH INDEX SETTL,USD,The RUSSELL 1000 GROWTH INDEX SETTLEMENT VALUE measures the performance of the growth segment of the U.S. large-cap equity market. It includes Russell 1000 companies with higher price-to-book ratios and higher forecast earnings growth values. The index serves as a benchmark for growth-oriented large-cap strategies.,Equities,Growth,WCB,
 ^RLS,RUSSELL 2000 INDEX OPEN SETTLE,USD,"The RUSSELL 2000 INDEX OPEN SETTLEMENT represents the performance of approximately 2,000 smallest companies in the Russell 3000 Index. It serves as a benchmark for small-cap U.S. equities. The index is widely used by investors seeking exposure to the small-cap segment of the U.S. stock market.",Equities,Small Cap,WCB,
 ^RLV,Russell 1000 Value,USD,The Russell 1000 Value Index measures the performance of the value style segment of the large-cap US equity universe. It includes those Russell 1000 companies with lower price-to-book ratios and lower forecasted growth values. The index is market-capitalization weighted.,Equities,Value,WCB,
 ^RLVNET,Russell 1000 Value Net Total Re,USD,"The Russell 1000 Value Net Total Return Index measures the performance of the value segment of the U.S. equity market, capturing companies with lower price-to-book ratios and higher dividend yields within the Russell 1000 index. It reflects the net return to investors after the deduction of withholding taxes, using a variable withholding tax rate applicable to institutional investors in the United States.",Equities,Value,WCB,
 ^RLVNETP,Russell 1000 Value Net Return G,GBP,The Russell 1000 Value Net Return G Index measures the performance of the value segment of the U.S. equity market. It reflects the net return to investors after the deduction of withholding taxes.,Equities,Value,WCB,
-^RLVSOQ,Russell 1000 Value Special Open,USD,,,Value,WCB,
+^RLVSOQ,Russell 1000 Value Special Open,USD,,Equities,Value,WCB,
 ^RLVTR,Russell 1000 Value Total Return,USD,"The Russell 1000 Value Total Return Index measures the performance of the value segment of the U.S. equity market, capturing companies with lower price-to-book ratios and higher dividend yields within the Russell 1000 index. It reflects the total return, which includes price appreciation and dividend income.",Equities,Value,WCB,
 ^RLVTRP,Russell 1000 Value Total Return,GBP,"The Russell 1000 Value Total Return Index measures the performance of the value segment of the U.S. equity market, capturing large- and mid-cap value securities. It is a total return index, meaning it includes reinvestment of dividends. The index reflects the gross performance of the value stocks.",Equities,Value,WCB,
 ^RLY-EU,SPDR SSgA Multi Asset Real Retu,USD,,Alternatives,Alternative,ASE,XASE
@@ -85346,8 +85346,8 @@ It includes companies listed on Asian exchanges that are classified as financial
 ^RMICICBUTI,,USD,,,,WCB,
 ^RMICICBUTIT,,USD,,,,WCB,
 ^RMICICBUTTR,,USD,,,,WCB,
-^RMIVG20,NASDAQ Orpheus RMI Value-Growth,USD,,,Blend,NIM,
-^RMIVG20T,NASDAQ Orpheus RMI Value-Growth,USD,,,Blend,NIM,
+^RMIVG20,NASDAQ Orpheus RMI Value-Growth,USD,,Equities,Blend,NIM,
+^RMIVG20T,NASDAQ Orpheus RMI Value-Growth,USD,,Equities,Blend,NIM,
 ^RMP,Cohen and Steers US Realty Ma,USD,,Real Estate,REITs,SNP,
 ^RNDM-EU,Developed International Equity,USD,,Equities,Developed Markets,ASE,XASE
 ^RNDM-IV,Developed International Equity,USD,,Equities,Developed Markets,ASE,XASE
