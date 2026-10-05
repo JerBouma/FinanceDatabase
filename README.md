@@ -25,20 +25,20 @@ Some key statistics of the database:
 
 <div align="center">
 
-![symbols](https://img.shields.io/badge/symbols-316%2C348-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-117%2C947-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C066-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--05-57606A?style=flat-square)
+![symbols](https://img.shields.io/badge/symbols-316%2C351-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-117%2C948-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C068-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--05-57606A?style=flat-square)
 
 </div>
 
 | | Asset class | Symbols | Actively listed | Exchanges | Coverage |
 | :-: | :-- | --: | --: | --: | :-- |
-| 🏢 | **Equities** | 117,947 | 103,615 | 84 | 11 sectors · 76 industries · 117 countries |
-| 📦 | **ETFs** | 42,066 | 41,459 | 53 | 593 issuers · 43 categories |
+| 🏢 | **Equities** | 117,948 | 103,616 | 84 | 11 sectors · 76 industries · 117 countries |
+| 📦 | **ETFs** | 42,068 | 41,461 | 53 | 593 issuers · 43 categories |
 | 💼 | **Funds** | 57,853 | – | 33 | 1,540 fund families · 74 categories |
 | 📈 | **Indices** | 91,181 | – | 63 | 42 categories |
 | 💱 | **Currencies** | 2,556 | – | – | 178 currencies |
 | 🪙 | **Cryptocurrencies** | 3,378 | – | – | 352 coins · 12 quote currencies |
 | 🏦 | **Money Markets** | 1,367 | – | 2 | 129 fund families |
-| | **Total** | **316,348** | | | |
+| | **Total** | **316,351** | | | |
 
 <details>
 <summary><b>📊 More statistics</b>: composition, sectors, countries, exchanges and ETF categories</summary>
@@ -46,10 +46,10 @@ Some key statistics of the database:
 ```mermaid
 pie showData
     title Symbols per asset class
-    "Equities" : 117947
+    "Equities" : 117948
     "Indices" : 91181
     "Funds" : 57853
-    "ETFs" : 42066
+    "ETFs" : 42068
     "Cryptocurrencies" : 3378
     "Currencies" : 2556
     "Money Markets" : 1367
@@ -107,7 +107,7 @@ pie showData
 | BSE | 3,710 |
 | DUS | 3,353 |
 | NYQ | 3,342 |
-| *Other (74)* | 42,238 |
+| *Other (74)* | 42,239 |
 
 </td>
 <td valign="top">
