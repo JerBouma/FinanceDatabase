@@ -1,0 +1,103 @@
+{
+  "manifest_version": "0.4",
+  "name": "finance-database",
+  "display_name": "Finance Database",
+  "version": "2.4.0",
+  "description": "Give AI assistants a categorised map of 300,000+ financial symbols: equities, ETFs, funds, indices, currencies, cryptocurrencies and money markets.",
+  "long_description": "The Finance Database gives AI assistants access to 300,000+ symbols categorised by sector, industry group, industry, country, exchange, market cap tier, ETF and fund category, fund family and more. Find every mid cap semiconductor company in Taiwan, every bond ETF from a given issuer, or the ticker behind a company name or ISIN, and pass the results to the Finance Toolkit for fundamentals and prices.\n\nNo API key is needed: the database is free and open. It is downloaded once, cached locally and checked for updates at most once a day.",
+  "author": {
+    "name": "Jeroen Bouma",
+    "email": "jer.bouma@gmail.com",
+    "url": "https://www.jeroenbouma.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JerBouma/FinanceDatabase"
+  },
+  "homepage": "https://www.jeroenbouma.com/projects/financedatabase",
+  "documentation": "https://github.com/JerBouma/FinanceDatabase#mcp-server",
+  "support": "https://github.com/JerBouma/FinanceDatabase/issues",
+  "license": "MIT",
+  "keywords": [
+    "finance",
+    "financial",
+    "database",
+    "stocks",
+    "equities",
+    "etfs",
+    "funds",
+    "indices",
+    "currencies",
+    "cryptocurrencies",
+    "money-markets",
+    "sectors",
+    "industries",
+    "gics"
+  ],
+  "server": {
+    "type": "uv",
+    "entry_point": "financedatabase/mcp_server/mcp_controller.py",
+    "mcp_config": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "${__dirname}",
+        "-m",
+        "financedatabase.mcp_server.mcp_controller"
+      ]
+    }
+  },
+  "tools": [
+    {
+      "name": "equities",
+      "description": "Find stocks by country, sector, industry, exchange, market cap tier or name."
+    },
+    {
+      "name": "etfs",
+      "description": "Find ETFs by category, issuer family, currency, exchange or name."
+    },
+    {
+      "name": "funds",
+      "description": "Find mutual funds by category, fund family, currency, exchange or name."
+    },
+    {
+      "name": "indices",
+      "description": "Find market indices by category, currency, exchange or name."
+    },
+    {
+      "name": "currencies",
+      "description": "Find currency pairs by base and quote currency."
+    },
+    {
+      "name": "cryptos",
+      "description": "Find cryptocurrency pairs by coin and quote currency."
+    },
+    {
+      "name": "moneymarkets",
+      "description": "Find money market funds by currency, fund family or name."
+    },
+    {
+      "name": "search_categories",
+      "description": "List the asset classes with their tool, number of entries, filterable fields and description."
+    },
+    {
+      "name": "show_options",
+      "description": "Show the valid values of a filter (e.g. every sector or country) for an asset class, optionally narrowed by other filters."
+    },
+    {
+      "name": "search_instruments",
+      "description": "Find instruments by ticker, name or ISIN across all asset classes at once."
+    }
+  ],
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "linux",
+      "win32"
+    ],
+    "runtimes": {
+      "python": ">=3.10"
+    }
+  }
+}
