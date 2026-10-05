@@ -22,7 +22,7 @@ from financedatabase.mcp_server.provider_model import (
     AssetClassSpec,
     DatabaseProvider,
 )
-from financedatabase.mcp_server.registry_controller import AssetToolRegistry
+from financedatabase.mcp_server.registry_model import AssetToolRegistry
 from financedatabase.mcp_server.tools_model import UtilityToolRegistry
 from financedatabase.utilities.logger_model import get_logger
 

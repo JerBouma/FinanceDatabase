@@ -20,7 +20,7 @@ from financedatabase.mcp_server.formatting_model import (
     format_page,
 )
 from financedatabase.mcp_server.provider_model import DatabaseProvider, QueryError
-from financedatabase.mcp_server.registry_controller import run_tool
+from financedatabase.mcp_server.registry_model import run_tool
 from financedatabase.utilities.logger_model import get_logger
 
 logger = get_logger()

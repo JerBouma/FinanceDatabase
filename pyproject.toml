@@ -79,14 +79,10 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["financedatabase"]
-exclude = ["financedatabase/validation"]
 
 [tool.hatch.build.targets.sdist]
 include = [
     "financedatabase/**",
-]
-exclude = [
-    "financedatabase/validation",
 ]
 
 [tool.black]

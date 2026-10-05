@@ -2,14 +2,14 @@
 
 __docformat__ = "google"
 
-from financedatabase.cryptos_controller import Cryptos
-from financedatabase.currencies_controller import Currencies
+from financedatabase.cryptos.cryptos_controller import Cryptos
+from financedatabase.currencies.currencies_controller import Currencies
 from financedatabase.database_controller import show_options
-from financedatabase.equities_controller import Equities
-from financedatabase.etfs_controller import ETFs
-from financedatabase.funds_controller import Funds
-from financedatabase.indices_controller import Indices
-from financedatabase.moneymarkets_controller import Moneymarkets
+from financedatabase.equities.equities_controller import Equities
+from financedatabase.etfs.etfs_controller import ETFs
+from financedatabase.funds.funds_controller import Funds
+from financedatabase.indices.indices_controller import Indices
+from financedatabase.moneymarkets.moneymarkets_controller import Moneymarkets
 
 __all__ = [
     "Cryptos",

@@ -1,4 +1,4 @@
-"""ETFs Module"""
+"""Funds Module"""
 
 __docformat__ = "google"
 
@@ -6,26 +6,24 @@ import numpy as np
 import polars as pl
 
 from financedatabase.database_controller import FinanceDatabase
-from financedatabase.frame_controller import FinanceFrame
+from financedatabase.frame_model import FinanceFrame
 
 
-class ETFs(FinanceDatabase):
+class Funds(FinanceDatabase):
     """
-    An exchange-traded fund (ETF) is a type of pooled investment
-    security that operates much like a mutual fund. Typically, ETFs
-    will track a particular index, sector, commodity, or other assets,
-    but unlike mutual funds, ETFs can be purchased or sold on a stock
-    exchange the same way that a regular stock can. An ETF can be structured
-    to track anything from the price of an individual commodity to a large
-    and diverse collection of securities. ETFs can even be structured to
-    track specific investment strategies.
+    A Mutual Fund is a financial vehicle that pools assets from shareholders to
+    invest in securities like stocks, bonds, money market instruments, and
+    other assets. Mutual funds are operated by professional money managers, who
+    allocate the fund's assets and attempt to produce capital gains or income for
+    the fund's investors. A mutual fund's portfolio is structured and maintained
+    to match the investment objectives stated in its prospectus.
 
-    This class provides information about the ETFs available as well as the
-    ability to select specific ETFs based on the category and/or family.
+    This class provides information about the funds available as well as the
+    ability to select specific funds based on the category and/or family.
     """
 
-    FILE_NAME = "etfs.bz2"
-    PLURAL_NAME = "etfs"
+    FILE_NAME = "funds.bz2"
+    PLURAL_NAME = "funds"
     FIELDS = {
         "category_group": ("category group", "category groups"),
         "category": ("category", "categories"),
@@ -44,36 +42,33 @@ class ETFs(FinanceDatabase):
         exchange: str | list | None = None,
         mic: str | list | None = None,
         only_primary_listing: bool = False,
-        exclude_delisted: bool = True,
         as_pandas: bool = True,
     ) -> FinanceFrame | pl.DataFrame:
         """
-        Select ETFs based on the category group, category, family and other criteria.
+        Select funds based on the category group, category, family and other criteria.
 
-        Returns all ETFs when no input is given.
+        Returns all funds when no input is given.
 
         Args:
             category_group (str | list, optional): Specific category group or list of
-                category groups to filter ETFs on. Defaults to None (all category groups).
+                category groups to filter funds on. Defaults to None (all category groups).
             category (str | list, optional): Specific category or list of categories to
-                filter ETFs on. Defaults to None (all categories).
+                filter funds on. Defaults to None (all categories).
             family (str | list, optional): Specific family or list of families to filter
-                ETFs on. Defaults to None (all families).
+                funds on. Defaults to None (all families).
             currency (str | list, optional): Specific currency or list of currencies to
-                filter ETFs on. Defaults to None (all currencies).
+                filter funds on. Defaults to None (all currencies).
             exchange (str | list, optional): Specific exchange or list of exchanges to
-                filter ETFs on. Defaults to None (all exchanges).
-            mic (str | list, optional): Specific MIC or list of MICs to filter ETFs on.
+                filter funds on. Defaults to None (all exchanges).
+            mic (str | list, optional): Specific MIC or list of MICs to filter funds on.
                 Defaults to None (all MICs).
             only_primary_listing (bool, optional): Whether to only include primary listings
                 (symbols without an exchange suffix). Defaults to False.
-            exclude_delisted (bool, optional): Whether to exclude delisted ETFs. Defaults to
-                True.
             as_pandas (bool, optional): Whether to return a pandas DataFrame (True) or a
                 Polars DataFrame (False). Defaults to True.
 
         Returns:
-            FinanceFrame | pl.DataFrame: The ETFs matching every filter.
+            FinanceFrame | pl.DataFrame: The funds matching every filter.
 
         Raises:
             ValueError: If a filter value is not available in the database. Check the
@@ -84,25 +79,22 @@ class ETFs(FinanceDatabase):
         ```python
         import financedatabase as fd
 
-        etfs = fd.ETFs()
+        funds = fd.Funds()
 
-        etfs.select(
-            category_group="Equities",
-            category="Large Cap",
-            family="BlackRock Asset Management",
-            only_primary_listing=True,
-        )[["name", "currency", "category", "exchange"]].head()
+        funds.select(category_group="Equities", category="Growth", family="Fidelity Investments")[
+            ["name", "currency", "category", "exchange"]
+        ].head()
         ```
 
         Which returns:
 
-        | symbol | name                                       | currency | category  | exchange |
-        |:-------|:-------------------------------------------|:---------|:----------|:---------|
-        | BLCR   | iShares Large Cap Core Active ETF          | USD      | Large Cap | NGM      |
-        | ENHU   | iShares Enhanced Large Cap Core Active ETF | USD      | Large Cap | NGM      |
-        | IQQ    | iShares Nasdaq 100 ETF                     | USD      | Large Cap | NGM      |
-        | IUTSF  | iShares S&P/TSX 60 Index ETF               | USD      | Large Cap | PNK      |
-        | IVV    | iShares Core S&P 500 ETF                   | USD      | Large Cap | PCX      |
+        | symbol        | name                                        | currency | category | exchange |
+        |:--------------|:--------------------------------------------|:---------|:---------|:---------|
+        | 0P00019F32.TO | Fidelity Global Growth Class Portfolio E2T5 | CAD      | Growth   | TOR      |
+        | 0P0001DBVH.TO | Fidelity Global Innovators Class E2T5       | CAD      | Growth   | TOR      |
+        | 0P0001DBVR.TO | Fidelity Special Situations Class E3T5      | CAD      | Growth   | TOR      |
+        | 0P0001EESI.TO | Fidelity Global Innovators Class E4T5       | CAD      | Growth   | TOR      |
+        | 0P0001EESJ.TO | Fidelity Global Innovators Class E5T5       | CAD      | Growth   | TOR      |
         """
         return self._select_rows(
             {
@@ -114,7 +106,7 @@ class ETFs(FinanceDatabase):
                 "mic": mic,
             },
             only_primary_listing=only_primary_listing,
-            exclude_delisted=exclude_delisted,
+            exclude_delisted=False,
             as_pandas=as_pandas,
         )
 
@@ -127,11 +119,10 @@ class ETFs(FinanceDatabase):
         currency: str | list | None = None,
         exchange: str | list | None = None,
         mic: str | list | None = None,
-        exclude_delisted: bool = True,
         as_pandas: bool = True,
     ) -> dict | np.ndarray | pl.Series:
         """
-        Show the available values of the ETFs filters.
+        Show the available values of the funds filters.
 
         The options can be narrowed down with the same filters as select().
 
@@ -152,8 +143,6 @@ class ETFs(FinanceDatabase):
                 filter the options on. Defaults to None (all exchanges).
             mic (str | list, optional): Specific MIC or list of MICs to filter the options
                 on. Defaults to None (all MICs).
-            exclude_delisted (bool, optional): Whether to exclude delisted ETFs. Defaults to
-                True.
             as_pandas (bool, optional): Whether to return the options as numpy arrays (True)
                 or as Polars Series (False). Defaults to True.
 
@@ -169,19 +158,18 @@ class ETFs(FinanceDatabase):
         ```python
         import financedatabase as fd
 
-        etfs = fd.ETFs()
+        funds = fd.Funds()
 
-        etfs.show_options(selection="category", category_group="Fixed Income")
+        funds.show_options(selection="category_group")
         ```
 
         Which returns:
 
         ```
-        ['Blend', 'Bonds', 'Cash', 'Commercial Real Estate', 'Corporate Bonds',
-         'Developed Markets', 'Emerging Markets', 'Factors', 'Frontier Markets',
-         'Government Bonds', 'Growth', 'High Yield Bonds', 'Inflation-Protected Securities',
-         'Investment Grade Bonds', 'Large Cap', 'Mid Cap', 'Money Market Instruments',
-         'Municipal Bonds', 'Small Cap', 'Treasury Bonds', 'Value']
+        ['Alternatives', 'Cash', 'Commodities', 'Communication Services',
+         'Consumer Discretionary', 'Consumer Staples', 'Currencies', 'Derivatives', 'Energy',
+         'Equities', 'Financials', 'Fixed Income', 'Health Care', 'Industrials',
+         'Information Technology', 'Materials', 'Real Estate', 'Utilities']
         ```
         """
         selection_values = [
@@ -205,6 +193,6 @@ class ETFs(FinanceDatabase):
                 "exchange": exchange,
                 "mic": mic,
             },
-            exclude_delisted=exclude_delisted,
+            exclude_delisted=False,
             as_pandas=as_pandas,
         )

@@ -1,4 +1,4 @@
-"""FinanceFrame Module"""
+"""FinanceFrame Model"""
 
 __docformat__ = "google"
 

@@ -2,7 +2,7 @@
 
 import pytest
 
-from financedatabase.validation.identifiers_model import (
+from scripts.validation.identifiers_model import (
     get_cusip_from_authoritative_isin,
     repair_identifier,
     validate_cusip,

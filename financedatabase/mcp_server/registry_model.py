@@ -1,4 +1,4 @@
-"""Registry Module"""
+"""Registry Model"""
 
 __docformat__ = "google"
 

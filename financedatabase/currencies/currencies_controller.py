@@ -6,7 +6,7 @@ import numpy as np
 import polars as pl
 
 from financedatabase.database_controller import FinanceDatabase
-from financedatabase.frame_controller import FinanceFrame
+from financedatabase.frame_model import FinanceFrame
 
 
 class Currencies(FinanceDatabase):

@@ -12,7 +12,7 @@ import requests
 
 from financedatabase import categories_model, query_model
 from financedatabase.cache_model import load_lazy_frame
-from financedatabase.frame_controller import FinanceFrame
+from financedatabase.frame_model import FinanceFrame
 from financedatabase.helpers import convert_to_list
 from financedatabase.utilities import logger_model
 from financedatabase.utilities.dataframe_model import (

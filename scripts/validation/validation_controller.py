@@ -9,7 +9,7 @@ import tempfile
 from collections.abc import Iterable, Sequence
 from pathlib import Path
 
-from financedatabase.validation.identifiers_model import (
+from scripts.validation.identifiers_model import (
     FIELD_VALIDATORS,
     AuditResult,
     CleanupResult,
@@ -261,7 +261,7 @@ def build_parser() -> argparse.ArgumentParser:
     Build the command-line argument parser.
     """
     parser = argparse.ArgumentParser(
-        prog="python -m financedatabase.validation",
+        prog="validate_identifiers.py",
         description="Validate ISIN, CUSIP, and FIGI fields in source CSV files.",
     )
     parser.add_argument(

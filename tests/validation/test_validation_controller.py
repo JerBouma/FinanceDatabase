@@ -6,10 +6,10 @@ from pathlib import Path
 
 import pytest
 
-from financedatabase.validation.identifiers_model import (
+from scripts.validation.identifiers_model import (
     CleanupResult,
 )
-from financedatabase.validation.validation_controller import (
+from scripts.validation.validation_controller import (
     apply_identifier_cleanup,
     audit_identifiers,
     main,
@@ -200,7 +200,7 @@ def test_main_writes_post_cleanup_findings_to_csv_report(
 def test_database_identifiers_have_no_actionable_issues() -> None:
     """Fail the contributor's own test run when a CSV holds a repairable or clearable
     identifier, so bad data is caught before a PR is opened rather than auto-fixed
-    later. Run `uv run python -m financedatabase.validation --apply`
+    later. Run `uv run python scripts/validate_identifiers.py --apply`
     to fix these.
     """
     result = audit_identifiers([DATABASE_DIR])
@@ -212,7 +212,7 @@ def test_database_identifiers_have_no_actionable_issues() -> None:
             f"{len(non_actionable)} identifier finding(s) require manual review "
             "(ambiguous CUSIPs or ISIN/CUSIP mismatches, e.g. dual-listed shares) "
             "and were left unchanged; run "
-            "`uv run python -m financedatabase.validation database` "
+            "`uv run python scripts/validate_identifiers.py database` "
             "for the full report.",
             stacklevel=1,
         )
@@ -224,6 +224,6 @@ def test_database_identifiers_have_no_actionable_issues() -> None:
             f"{issue.value!r}: {issue.reason}"
             for issue in actionable
         )
-        + "\nRun `uv run python -m financedatabase.validation "
+        + "\nRun `uv run python scripts/validate_identifiers.py "
         "database --apply` to fix these automatically."
     )

@@ -72,7 +72,7 @@ To fix an identifier the test flagged as repairable, run the same audit with
 `--apply`:
 
 ```bash
-uv run python -m financedatabase.validation database --apply
+uv run python scripts/validate_identifiers.py database --apply
 ```
 
 Canonical values returned by `python-stdnum` are repaired automatically. A
