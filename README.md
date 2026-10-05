@@ -28,20 +28,20 @@ Some key statistics of the database:
 
 <div align="center">
 
-![symbols](https://img.shields.io/badge/symbols-316%2C310-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-117%2C929-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C057-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--04-57606A?style=flat-square)
+![symbols](https://img.shields.io/badge/symbols-316%2C351-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-117%2C948-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C068-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--05-57606A?style=flat-square)
 
 </div>
 
 | | Asset class | Symbols | Actively listed | Exchanges | Coverage |
 | :-: | :-- | --: | --: | --: | :-- |
-| 🏢 | **Equities** | 117,929 | 103,600 | 84 | 11 sectors · 76 industries · 117 countries |
-| 📦 | **ETFs** | 42,057 | 41,450 | 53 | 593 issuers · 43 categories |
+| 🏢 | **Equities** | 117,948 | 103,616 | 84 | 11 sectors · 76 industries · 117 countries |
+| 📦 | **ETFs** | 42,068 | 41,461 | 53 | 593 issuers · 43 categories |
 | 💼 | **Funds** | 57,853 | – | 33 | 1,540 fund families · 74 categories |
 | 📈 | **Indices** | 91,181 | – | 63 | 42 categories |
 | 💱 | **Currencies** | 2,556 | – | – | 178 currencies |
-| 🪙 | **Cryptocurrencies** | 3,367 | – | – | 351 coins · 12 quote currencies |
+| 🪙 | **Cryptocurrencies** | 3,378 | – | – | 352 coins · 12 quote currencies |
 | 🏦 | **Money Markets** | 1,367 | – | 2 | 129 fund families |
-| | **Total** | **316,310** | | | |
+| | **Total** | **316,351** | | | |
 
 <details>
 <summary><b>📊 More statistics</b>: composition, sectors, countries, exchanges and ETF categories</summary>
@@ -49,11 +49,11 @@ Some key statistics of the database:
 ```mermaid
 pie showData
     title Symbols per asset class
-    "Equities" : 117929
+    "Equities" : 117948
     "Indices" : 91181
     "Funds" : 57853
-    "ETFs" : 42057
-    "Cryptocurrencies" : 3367
+    "ETFs" : 42068
+    "Cryptocurrencies" : 3378
     "Currencies" : 2556
     "Money Markets" : 1367
 ```
@@ -69,7 +69,7 @@ pie showData
 | Materials | 12,662 |
 | Information Technology | 10,615 |
 | Health Care | 10,249 |
-| Consumer Discretionary | 9,895 |
+| Consumer Discretionary | 9,892 |
 | Consumer Staples | 5,206 |
 | Real Estate | 4,426 |
 | Communication Services | 4,078 |
@@ -84,8 +84,8 @@ pie showData
 | United States | 24,033 |
 | Canada | 8,873 |
 | China | 6,614 |
-| India | 6,513 |
-| Japan | 6,440 |
+| India | 6,520 |
+| Japan | 6,448 |
 | Germany | 4,353 |
 | United Kingdom | 3,795 |
 | Australia | 3,586 |
@@ -106,11 +106,11 @@ pie showData
 | BER | 7,347 |
 | MUN | 5,883 |
 | NMS | 4,447 |
-| JPX | 3,737 |
+| JPX | 3,745 |
 | BSE | 3,710 |
 | DUS | 3,353 |
 | NYQ | 3,342 |
-| *Other (74)* | 42,231 |
+| *Other (74)* | 42,239 |
 
 </td>
 <td valign="top">
@@ -538,20 +538,6 @@ A sample of the output is shown below, focusing on ETH-BTC:
 | 2025Q2 | 0.0218 | 0.0217 | 0.0216 |  0.0216 |      0.0216 |   195229 |           0 |  -0.0137 |       0.1415 |         -0.053  |              0.1361 |              1.0435 |
 
 
-## Caching and Polars output
-The database files are downloaded once and kept in a local cache (`~/.cache/financedatabase` on Linux, `~/Library/Caches/financedatabase` on macOS, `%LOCALAPPDATA%\financedatabase\Cache` on Windows, or the folder set in `FINANCEDATABASE_CACHE_DIR`). Once a day the package checks whether a newer version was published and only downloads it when it changed; without an internet connection the cached copy is used. Queries are run lazily with [Polars](https://pola.rs), so only the rows and columns you ask for are read.
-
-Every `select`, `search` and `show_options` call returns pandas by default, exactly as before. Pass `as_pandas=False` to get a Polars `DataFrame` (or Polars `Series` for options) instead:
-
-```python
-import polars as pl
-
-equities = fd.Equities()
-
-canadian_banks = equities.select(country="Canada", industry="Banks", as_pandas=False)
-canadian_banks.filter(pl.col("market_cap") == "Large Cap")
-```
-
 # MCP Server
 
 The Finance Database MCP Server gives any AI assistant that supports the [Model Context Protocol](https://modelcontextprotocol.io) (MCP) direct access to the database. Ask in plain English for, say, every mid cap semiconductor company in Taiwan or the bond ETFs of a given issuer, and the assistant queries the database on your behalf. No API key is needed. The data is downloaded once, cached locally and checked for updates at most once a day, exactly like the Python package.
@@ -633,6 +619,10 @@ While professional financial data services like Bloomberg charge over $25,000 an
 Most companies don't change so rapidly that the database becomes obsolete - major changes like Facebook's rebrand to META are quickly incorporated. Even when companies go bankrupt, their ticker information remains valuable for historical analysis.
 
 If you notice outdated information, please consider contributing through the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
+
+> **Is the data downloaded every time I use the package?**
+
+No. Each dataset is downloaded once and cached in your user cache folder (or the folder set in `FINANCEDATABASE_CACHE_DIR`). Once a day the package checks for a newer version and only downloads it when it changed; offline, the cached copy is used. Queries run lazily with [Polars](https://pola.rs/) and return pandas by default, or Polars with `as_pandas=False`, e.g. `equities.select(country="Canada", as_pandas=False)`.
 
 # Contributions
 
