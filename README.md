@@ -25,7 +25,7 @@ Some key statistics of the database:
 
 <div align="center">
 
-![symbols](https://img.shields.io/badge/symbols-316%2C337-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-117%2C947-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C066-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--05-57606A?style=flat-square)
+![symbols](https://img.shields.io/badge/symbols-316%2C348-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-117%2C947-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C066-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--05-57606A?style=flat-square)
 
 </div>
 
@@ -36,9 +36,9 @@ Some key statistics of the database:
 | 💼 | **Funds** | 57,853 | – | 33 | 1,540 fund families · 74 categories |
 | 📈 | **Indices** | 91,181 | – | 63 | 42 categories |
 | 💱 | **Currencies** | 2,556 | – | – | 178 currencies |
-| 🪙 | **Cryptocurrencies** | 3,367 | – | – | 351 coins · 12 quote currencies |
+| 🪙 | **Cryptocurrencies** | 3,378 | – | – | 352 coins · 12 quote currencies |
 | 🏦 | **Money Markets** | 1,367 | – | 2 | 129 fund families |
-| | **Total** | **316,337** | | | |
+| | **Total** | **316,348** | | | |
 
 <details>
 <summary><b>📊 More statistics</b>: composition, sectors, countries, exchanges and ETF categories</summary>
@@ -50,7 +50,7 @@ pie showData
     "Indices" : 91181
     "Funds" : 57853
     "ETFs" : 42066
-    "Cryptocurrencies" : 3367
+    "Cryptocurrencies" : 3378
     "Currencies" : 2556
     "Money Markets" : 1367
 ```
