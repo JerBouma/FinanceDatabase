@@ -102,8 +102,8 @@ class FinanceDatabase:
                 Defaults to False.
             index (str): Search within the DataFrame index.
                 Defaults to None.
-            exclude_delisted (bool): Whether to exclude delisted entries.
-                Defaults to True.
+            exclude_delisted (bool): Whether to exclude delisted entries (equities and
+                ETFs). Defaults to True; pass False to include them.
 
         Returns:
             DataFrame with filtered data based on the input criteria.
@@ -115,6 +115,11 @@ class FinanceDatabase:
             kwargs = {k: v for k, v in kwargs.items() if k != "case_sensitive"}
         else:
             case_sensitive = False
+
+        # Delisted entries are excluded unless exclude_delisted=False is passed, as select() does.
+        exclude_delisted = kwargs.pop("exclude_delisted", True) in [True, "True"]
+        if exclude_delisted and "delisted" in data_filter.columns:
+            data_filter = data_filter[~data_filter["delisted"].astype(bool)]
 
         for key, value in kwargs.items():
             if key == "only_primary_listing":
@@ -131,9 +136,6 @@ class FinanceDatabase:
                     data_filter = data_filter[
                         data_filter.index.str.contains(value, na=False)
                     ]
-            elif key == "exclude_delisted":
-                if value is True and "delisted" in data_filter.columns:
-                    data_filter = data_filter[~data_filter["delisted"]]
             elif key not in data_filter.columns:
                 print(f"{key} is not a valid column.")
             elif isinstance(value, list):

@@ -2,48 +2,90 @@
 
 from __future__ import annotations
 
-from typing import TYPE_CHECKING
-
 import pytest
 
 import financedatabase as fd
-
-if TYPE_CHECKING:
-    from tests.conftest import Recorder
+from tests.structure import check_search, check_select, check_show_options
 
 cryptos = fd.Cryptos(use_local_location=True)
 
 
-def test_select(recorder: Recorder) -> None:
-    """Verify select() output for representative cryptocurrency filter combinations."""
-    smoke = cryptos.select()
-    assert not smoke.empty
-    assert "currency" in smoke.columns
-    recorder.capture(cryptos.select().iloc[:5])
-    recorder.capture(cryptos.select(currency="USD").iloc[:5])
-    recorder.capture(cryptos.select(cryptocurrency="ETC").iloc[:5])
-    recorder.capture(cryptos.select(currency="USD", cryptocurrency="ETC").iloc[:5])
+SELECT_CASES = [
+    {},
+    {"currency": "USD"},
+    {"cryptocurrency": "ETC"},
+    {"currency": "USD", "cryptocurrency": "ETC"},
+]
 
 
-def test_show_options(recorder: Recorder) -> None:
-    """Verify show_options() returns the expected option values for cryptocurrency."""
-    recorder.capture(list(cryptos.show_options()))
-    recorder.capture(list(cryptos.show_options(selection="cryptocurrency")))
-    recorder.capture(list(cryptos.show_options(selection="currency")))
-    recorder.capture(list(cryptos.show_options(cryptocurrency="ETC")))
-    recorder.capture(list(cryptos.show_options(currency="USD")))
-    recorder.capture(
-        list(cryptos.show_options(selection="cryptocurrency", cryptocurrency="ETC"))
-    )
-    recorder.capture(list(cryptos.show_options(selection="currency", currency="USD")))
+@pytest.mark.parametrize("kwargs", SELECT_CASES, ids=str)
+def test_select(kwargs: dict) -> None:
+    """select() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_select(cryptos, nonempty=len(filters) <= 1, **kwargs)
 
 
-def test_search(recorder: Recorder) -> None:
-    """Verify search() output for representative cryptocurrency queries."""
-    recorder.capture(cryptos.search(summary="bitcoin").iloc[:5])
-    recorder.capture(cryptos.search(index="ETC").iloc[:5])
-    recorder.capture(cryptos.search(cryptocurrency="AAVE").iloc[:5])
-    recorder.capture(cryptos.search(currency="USD").iloc[:5])
+SHOW_OPTIONS_CASES = [
+    {},
+    {"selection": "cryptocurrency"},
+    {"selection": "currency"},
+    {"cryptocurrency": "ETC"},
+    {"currency": "USD"},
+    {"selection": "cryptocurrency", "cryptocurrency": "ETC"},
+    {"selection": "currency", "currency": "USD"},
+]
+
+
+@pytest.mark.parametrize("kwargs", SHOW_OPTIONS_CASES, ids=str)
+def test_show_options(kwargs: dict) -> None:
+    """show_options() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_show_options(cryptos, nonempty=len(filters) <= 1, **kwargs)
+
+
+SEARCH_CASES = [
+    {"summary": "bitcoin"},
+    {"index": "ETC"},
+    {"cryptocurrency": "AAVE"},
+    {"currency": "USD"},
+]
+
+
+@pytest.mark.parametrize("kwargs", SEARCH_CASES, ids=str)
+def test_search(kwargs: dict) -> None:
+    """search() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_search(cryptos, nonempty=len(filters) <= 1, **kwargs)
 
 
 def test_select_with_invalid_value_raises() -> None:

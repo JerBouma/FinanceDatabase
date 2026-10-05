@@ -100,6 +100,3 @@ filterwarnings = [
 ]
 testpaths = ["tests"]
 addopts = "--strict-markers"
-markers = [
-    "record_stdout: capture and snapshot stdout output for the marked test",
-]

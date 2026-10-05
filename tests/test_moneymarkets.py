@@ -2,42 +2,86 @@
 
 from __future__ import annotations
 
-from typing import TYPE_CHECKING
-
 import pytest
 
 import financedatabase as fd
-
-if TYPE_CHECKING:
-    from tests.conftest import Recorder
+from tests.structure import check_search, check_select, check_show_options
 
 moneymarkets = fd.Moneymarkets(use_local_location=True)
 
 
-def test_select(recorder: Recorder) -> None:
-    """Verify select() output for representative money market filter combinations."""
-    smoke = moneymarkets.select()
-    assert not smoke.empty
-    assert "currency" in smoke.columns
-    recorder.capture(moneymarkets.select().iloc[:5])
-    recorder.capture(moneymarkets.select(currency="USD").iloc[:5])
-    recorder.capture(moneymarkets.select(family="BlackRock Funds").iloc[:5])
+SELECT_CASES = [
+    {},
+    {"currency": "USD"},
+    {"family": "BlackRock Funds"},
+]
 
 
-def test_show_options(recorder: Recorder) -> None:
-    """Verify show_options() returns the expected option values for money market."""
-    recorder.capture(list(moneymarkets.show_options()))
-    recorder.capture(list(moneymarkets.show_options(selection="currency")))
-    recorder.capture(list(moneymarkets.show_options(selection="family")))
-    recorder.capture(list(moneymarkets.show_options(family="BlackRock Funds")))
+@pytest.mark.parametrize("kwargs", SELECT_CASES, ids=str)
+def test_select(kwargs: dict) -> None:
+    """select() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_select(moneymarkets, nonempty=len(filters) <= 1, **kwargs)
 
 
-def test_search(recorder: Recorder) -> None:
-    """Verify search() output for representative money market queries."""
-    recorder.capture(moneymarkets.search(summary="Government").iloc[:5])
-    recorder.capture(moneymarkets.search(index="RXX").iloc[:5])
-    recorder.capture(moneymarkets.search(currency="USD").iloc[:5])
-    recorder.capture(moneymarkets.search(family="BlackRock Funds").iloc[:5])
+SHOW_OPTIONS_CASES = [
+    {},
+    {"selection": "currency"},
+    {"selection": "family"},
+    {"family": "BlackRock Funds"},
+]
+
+
+@pytest.mark.parametrize("kwargs", SHOW_OPTIONS_CASES, ids=str)
+def test_show_options(kwargs: dict) -> None:
+    """show_options() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_show_options(moneymarkets, nonempty=len(filters) <= 1, **kwargs)
+
+
+SEARCH_CASES = [
+    {"summary": "Government"},
+    {"index": "RXX"},
+    {"currency": "USD"},
+    {"family": "BlackRock Funds"},
+]
+
+
+@pytest.mark.parametrize("kwargs", SEARCH_CASES, ids=str)
+def test_search(kwargs: dict) -> None:
+    """search() matches an independent pandas filter of the same data (structure, not a snapshot)."""
+    filters = [
+        k
+        for k in kwargs
+        if k
+        not in [
+            "case_sensitive",
+            "exclude_delisted",
+            "only_primary_listing",
+            "selection",
+        ]
+    ]
+    check_search(moneymarkets, nonempty=len(filters) <= 1, **kwargs)
 
 
 def test_select_with_invalid_value_raises() -> None:
