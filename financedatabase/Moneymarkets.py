@@ -1,8 +1,11 @@
 """Moneymarkets Module"""
 
-import numpy as np
+__docformat__ = "google"
 
-from .helpers import FinanceDatabase, FinanceFrame
+import numpy as np
+import polars as pl
+
+from financedatabase.helpers import FinanceDatabase, FinanceFrame
 
 
 class Moneymarkets(FinanceDatabase):
@@ -28,28 +31,48 @@ class Moneymarkets(FinanceDatabase):
         currency: str | list | None = None,
         family: str | list | None = None,
         as_pandas: bool = True,
-    ) -> FinanceFrame:
+    ) -> FinanceFrame | pl.DataFrame:
         """
-        Select moneymarkets based on specified criteria.
+        Select money markets based on the currency and family.
 
-        Returns all moneymarkets when no input is given and has the option to filter
-        based on currency and family.
+        Returns all money markets when no input is given.
 
         Args:
-            currency (str | list, optional): Filter by currency.
-                Default is None, which returns all currencies.
-            family (str | list, optional): Filter by family.
-                Default is None, which returns all families.
-            as_pandas (bool, optional): Return a pandas DataFrame (True, the default) or a
-                Polars DataFrame (False).
-
-
-        Raises:
-            ValueError: If the specified currency or family is not available in the database.
-                Please check the available currencies and families using the 'show_options' method.
+            currency (str | list, optional): Specific currency or list of currencies to
+                filter money markets on. Defaults to None (all currencies).
+            family (str | list, optional): Specific family or list of families to filter
+                money markets on. Defaults to None (all families).
+            as_pandas (bool, optional): Whether to return a pandas DataFrame (True) or a
+                Polars DataFrame (False). Defaults to True.
 
         Returns:
-            FinanceFrame: DataFrame containing the selected moneymarkets data.
+            FinanceFrame | pl.DataFrame: The money markets matching every filter.
+
+        Raises:
+            ValueError: If a filter value is not available in the database. Check the
+                available values with the 'show_options' method.
+
+        As an example:
+
+        ```python
+        import financedatabase as fd
+
+        moneymarkets = fd.Moneymarkets()
+
+        moneymarkets.select(family="BlackRock Liquidity Funds")[
+            ["name", "currency", "family"]
+        ].head()
+        ```
+
+        Which returns:
+
+        | symbol | name               | currency | family                    |
+        |:-------|:-------------------|:---------|:--------------------------|
+        | BCHXX  | T-Fund             | USD      | BlackRock Liquidity Funds |
+        | BEMXX  | T-Fund             | USD      | BlackRock Liquidity Funds |
+        | BFBXX  | FedFund            | USD      | BlackRock Liquidity Funds |
+        | BFCXX  | FedFund            | USD      | BlackRock Liquidity Funds |
+        | BFDXX  | Federal Trust Fund | USD      | BlackRock Liquidity Funds |
         """
         return self._select(
             {"currency": currency, "family": family},
@@ -64,29 +87,45 @@ class Moneymarkets(FinanceDatabase):
         currency: str | list | None = None,
         family: str | list | None = None,
         as_pandas: bool = True,
-    ) -> dict | np.ndarray:
+    ) -> dict | np.ndarray | pl.Series:
         """
-        Show available options for the specified selection.
+        Show the available values of the money markets filters.
+
+        The options can be narrowed down with the same filters as select().
 
         Args:
-            selection (str, optional): The category to show options for.
-                Choose from: "currency" or "family". Default is None.
-            currency (str | list, optional): Filter by currency.
-                Default is None, which returns all currencies.
-            family (str | list, optional): Filter by family.
-                Default is None, which returns all families.
-            as_pandas (bool, optional): Return the options as numpy arrays (True, the default)
-                or as Polars Series (False).
-
-
-        Raises:
-            ValueError: If the specified selection is not valid.
-                Choose from: "currency" or "family".
+            selection (str | None, optional): The column to show the options of. Choose
+                from: "currency", "family". Defaults to None, which returns the options of
+                every column.
+            currency (str | list, optional): Specific currency or list of currencies to
+                filter the options on. Defaults to None (all currencies).
+            family (str | list, optional): Specific family or list of families to filter the
+                options on. Defaults to None (all families).
+            as_pandas (bool, optional): Whether to return the options as numpy arrays (True)
+                or as Polars Series (False). Defaults to True.
 
         Returns:
-            dict | np.ndarray: A dictionary containing the available options for the specified selection.
-                If selection is None, returns all available options for both currency and family.
-                If selection is "currency" or "family", returns the unique values for that selection.
+            dict | np.ndarray | pl.Series: The sorted unique values of the selected column,
+                or a dictionary with the values of every column if no selection is given.
+
+        Raises:
+            ValueError: If the selection or a filter value is not valid.
+
+        As an example:
+
+        ```python
+        import financedatabase as fd
+
+        moneymarkets = fd.Moneymarkets()
+
+        moneymarkets.show_options(selection="currency")
+        ```
+
+        Which returns:
+
+        ```
+        ['CHF', 'USD']
+        ```
         """
         selection_values = ["currency", "family"]
         return self._show_options(

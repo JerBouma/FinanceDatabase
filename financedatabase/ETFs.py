@@ -1,8 +1,11 @@
-"ETFs Module"
+"""ETFs Module"""
+
+__docformat__ = "google"
 
 import numpy as np
+import polars as pl
 
-from .helpers import FinanceDatabase, FinanceFrame
+from financedatabase.helpers import FinanceDatabase, FinanceFrame
 
 
 class ETFs(FinanceDatabase):
@@ -42,44 +45,63 @@ class ETFs(FinanceDatabase):
         only_primary_listing: bool = False,
         exclude_delisted: bool = True,
         as_pandas: bool = True,
-    ) -> FinanceFrame:
+    ) -> FinanceFrame | pl.DataFrame:
         """
-        Retrieve ETF data based on specified criteria.
+        Select ETFs based on the category group, category, family and other criteria.
 
-        This method allows you to retrieve data for specific ETFs based on a combination
-        of category group, category, and family filters. You can also exclude
-        exchanges from the search. If no input criteria are provided, it returns data for all ETFs.
+        Returns all ETFs when no input is given.
 
         Args:
-            category_group (str | list, optional): Specific category group to filter ETFs.
-                If not provided, returns data for all category groups.
-            category (str | list, optional): Specific category to filter ETFs.
-                If not provided, returns data for all categories.
-            family (str | list, optional): Specific family to filter ETFs.
-                If not provided, returns data for all families.
-            currency (str | list, optional): Specific currency to filter ETFs.
-                If not provided, returns data for all currencies.
-            exchange (str | list, optional): Specific exchange to filter ETFs.
-                If not provided, returns data for all exchanges.
-            mic (str | list | None): Specific ISO 10383 MIC code or list of MIC codes to filter
-                ETFs. If not provided, returns data for all MIC codes.
-            only_primary_listing (bool, optional): If True, returns only primary listings.
-                Default is False, which returns all listings.
-            exclude_delisted (bool, optional): Whether to exclude delisted ETFs.
-                If True, delisted ETFs will be excluded from the results.
-                Default is True.
-            as_pandas (bool, optional): Return a pandas DataFrame (True, the default) or a
-                Polars DataFrame (False).
-
-
-        Raises:
-            ValueError: If the specified category group, category, family, currency,
-                or exchange is not available in the database. Please check the available
-                options using the 'show_options' method.
+            category_group (str | list, optional): Specific category group or list of
+                category groups to filter ETFs on. Defaults to None (all category groups).
+            category (str | list, optional): Specific category or list of categories to
+                filter ETFs on. Defaults to None (all categories).
+            family (str | list, optional): Specific family or list of families to filter
+                ETFs on. Defaults to None (all families).
+            currency (str | list, optional): Specific currency or list of currencies to
+                filter ETFs on. Defaults to None (all currencies).
+            exchange (str | list, optional): Specific exchange or list of exchanges to
+                filter ETFs on. Defaults to None (all exchanges).
+            mic (str | list, optional): Specific MIC or list of MICs to filter ETFs on.
+                Defaults to None (all MICs).
+            only_primary_listing (bool, optional): Whether to only include primary listings
+                (symbols without an exchange suffix). Defaults to False.
+            exclude_delisted (bool, optional): Whether to exclude delisted ETFs. Defaults to
+                True.
+            as_pandas (bool, optional): Whether to return a pandas DataFrame (True) or a
+                Polars DataFrame (False). Defaults to True.
 
         Returns:
-            FinanceFrame:
-                A DataFrame containing ETF data matching the specified input criteria.
+            FinanceFrame | pl.DataFrame: The ETFs matching every filter.
+
+        Raises:
+            ValueError: If a filter value is not available in the database. Check the
+                available values with the 'show_options' method.
+
+        As an example:
+
+        ```python
+        import financedatabase as fd
+
+        etfs = fd.ETFs()
+
+        etfs.select(
+            category_group="Equities",
+            category="Large Cap",
+            family="BlackRock Asset Management",
+            only_primary_listing=True,
+        )[["name", "currency", "category", "exchange"]].head()
+        ```
+
+        Which returns:
+
+        | symbol | name                                       | currency | category  | exchange |
+        |:-------|:-------------------------------------------|:---------|:----------|:---------|
+        | BLCR   | iShares Large Cap Core Active ETF          | USD      | Large Cap | NGM      |
+        | ENHU   | iShares Enhanced Large Cap Core Active ETF | USD      | Large Cap | NGM      |
+        | IQQ    | iShares Nasdaq 100 ETF                     | USD      | Large Cap | NGM      |
+        | IUTSF  | iShares S&P/TSX 60 Index ETF               | USD      | Large Cap | PNK      |
+        | IVV    | iShares Core S&P 500 ETF                   | USD      | Large Cap | PCX      |
         """
         return self._select(
             {
@@ -106,44 +128,60 @@ class ETFs(FinanceDatabase):
         mic: str | list | None = None,
         exclude_delisted: bool = True,
         as_pandas: bool = True,
-    ) -> dict | np.ndarray:
+    ) -> dict | np.ndarray | pl.Series:
         """
-        Retrieve all options for the specified selection.
+        Show the available values of the ETFs filters.
 
-        This method returns a series containing all available options for the specified
-        selection, which can be one of the following: "currency", "category_group",
-        "category", "family", "exchange", "market".
+        The options can be narrowed down with the same filters as select().
 
         Args:
-            selection (str | None): The selection you want to see the options for.
-                Choose from "currency", "category_group", "category", "family", "exchange".
-                If not provided, returns all options for all selections.
-            category_group (str | list | None): Specific category group to filter options.
-                If not provided, returns data for all category groups.
-            category (str | list | None): Specific category to filter options.
-                If not provided, returns data for all categories.
-            family (str | list | None): Specific family to filter options.
-                If not provided, returns data for all families.
-            currency (str | list | None): Specific currency to filter options.
-                If not provided, returns data for all currencies.
-            exchange (str | list | None): Specific exchange to filter options.
-                If not provided, returns data for all exchanges.
-            mic (str | list | None): Specific ISO 10383 MIC code to filter options.
-                If not provided, returns data for all MIC codes.
-            exclude_delisted (bool, optional): Whether to exclude delisted ETFs.
-                Default is True.
-            as_pandas (bool, optional): Return the options as numpy arrays (True, the default)
-                or as Polars Series (False).
-
-
-        Raises:
-            ValueError: If the selection variable provided is not valid.
-                Choose from "currency", "category_group", "category", "family", "exchange".
+            selection (str | None, optional): The column to show the options of. Choose
+                from: "category_group", "category", "family", "currency", "exchange", "mic".
+                Defaults to None, which returns the options of every column.
+            category_group (str | list, optional): Specific category group or list of
+                category groups to filter the options on. Defaults to None (all category
+                groups).
+            category (str | list, optional): Specific category or list of categories to
+                filter the options on. Defaults to None (all categories).
+            family (str | list, optional): Specific family or list of families to filter the
+                options on. Defaults to None (all families).
+            currency (str | list, optional): Specific currency or list of currencies to
+                filter the options on. Defaults to None (all currencies).
+            exchange (str | list, optional): Specific exchange or list of exchanges to
+                filter the options on. Defaults to None (all exchanges).
+            mic (str | list, optional): Specific MIC or list of MICs to filter the options
+                on. Defaults to None (all MICs).
+            exclude_delisted (bool, optional): Whether to exclude delisted ETFs. Defaults to
+                True.
+            as_pandas (bool, optional): Whether to return the options as numpy arrays (True)
+                or as Polars Series (False). Defaults to True.
 
         Returns:
-            dict | np.ndarray: A dictionary or array with all options for the specified selection.
-                If selection is None, returns a dictionary with unique values for all fields.
-                If selection is specified, returns an array of unique values for that field.
+            dict | np.ndarray | pl.Series: The sorted unique values of the selected column,
+                or a dictionary with the values of every column if no selection is given.
+
+        Raises:
+            ValueError: If the selection or a filter value is not valid.
+
+        As an example:
+
+        ```python
+        import financedatabase as fd
+
+        etfs = fd.ETFs()
+
+        etfs.show_options(selection="category", category_group="Fixed Income")
+        ```
+
+        Which returns:
+
+        ```
+        ['Blend', 'Bonds', 'Cash', 'Commercial Real Estate', 'Corporate Bonds',
+         'Developed Markets', 'Emerging Markets', 'Factors', 'Frontier Markets',
+         'Government Bonds', 'Growth', 'High Yield Bonds', 'Inflation-Protected Securities',
+         'Investment Grade Bonds', 'Large Cap', 'Mid Cap', 'Money Market Instruments',
+         'Municipal Bonds', 'Small Cap', 'Treasury Bonds', 'Value']
+        ```
         """
         selection_values = [
             "currency",

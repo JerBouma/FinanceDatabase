@@ -1,7 +1,5 @@
 """Tests for the local cache, lazy Polars loading and the pandas/Polars outputs."""
 
-from __future__ import annotations
-
 import bz2
 import time
 from pathlib import Path
@@ -38,6 +36,7 @@ class FakeResponse:
 
 
 def test_csv_is_read_as_text_with_na_ticker_kept(cache, tmp_path) -> None:
+    """Test that the CSV is read as text and the NA ticker is kept."""
     source = tmp_path / "equities.bz2"
     source.write_bytes(bz2.compress(CSV.encode()))
     frame = data_loader.load_lazy("equities.bz2", "", tmp_path).collect()
@@ -49,6 +48,7 @@ def test_csv_is_read_as_text_with_na_ticker_kept(cache, tmp_path) -> None:
 
 
 def test_local_cache_is_rebuilt_when_the_file_changes(cache, tmp_path) -> None:
+    """Test that the local cache is rebuilt when the file changes."""
     source = tmp_path / "equities.bz2"
     source.write_bytes(bz2.compress(CSV.encode()))
     assert data_loader.load_lazy("equities.bz2", "", tmp_path).collect().height == 3
@@ -59,6 +59,7 @@ def test_local_cache_is_rebuilt_when_the_file_changes(cache, tmp_path) -> None:
 
 
 def test_remote_file_is_downloaded_once_and_checked_daily(cache, monkeypatch) -> None:
+    """Test that a remote file is downloaded once and then checked daily."""
     calls = []
 
     def fake_get(url, headers, timeout):
@@ -82,6 +83,7 @@ def test_remote_file_is_downloaded_once_and_checked_daily(cache, monkeypatch) ->
 
 
 def test_cached_copy_is_used_when_offline(cache, monkeypatch) -> None:
+    """Test that the cached copy is used when offline."""
     monkeypatch.setattr(
         data_loader.requests,
         "get",
@@ -101,6 +103,8 @@ def test_cached_copy_is_used_when_offline(cache, monkeypatch) -> None:
 
 
 def test_offline_without_cache_raises_a_clear_error(cache, monkeypatch) -> None:
+    """Test that being offline without a cache raises a clear error."""
+
     def offline(*args, **kwargs):
         raise requests.exceptions.ConnectionError("offline")
 
@@ -110,6 +114,7 @@ def test_offline_without_cache_raises_a_clear_error(cache, monkeypatch) -> None:
 
 
 def test_to_pandas_matches_the_csv_reader() -> None:
+    """Test that to_pandas matches pandas' CSV reader."""
     frame = pl.read_csv(CSV.encode(), infer_schema=False)
     result = data_loader.to_pandas(frame)
     expected = pd.read_csv(
@@ -133,6 +138,7 @@ def test_to_pandas_matches_the_csv_reader() -> None:
     ],
 )
 def test_polars_output_has_the_same_rows_as_pandas(asset, method, kwargs) -> None:
+    """Test that the Polars output has the same rows as the pandas output."""
     database = asset(use_local_location=True)
     as_pandas = getattr(database, method)(**kwargs)
     as_polars = getattr(database, method)(**kwargs, as_pandas=False)
@@ -145,6 +151,7 @@ def test_polars_output_has_the_same_rows_as_pandas(asset, method, kwargs) -> Non
 
 
 def test_show_options_as_polars() -> None:
+    """Test that show_options returns Polars Series with as_pandas=False."""
     equities = fd.Equities(use_local_location=True)
     sectors = equities.show_options(selection="sector", as_pandas=False)
     assert isinstance(sectors, pl.Series)
@@ -163,6 +170,7 @@ def test_search_supports_python_only_regex() -> None:
 
 
 def test_data_can_be_replaced_for_tests(monkeypatch) -> None:
+    """Test that .data can be replaced and queries use the new frame."""
     equities = fd.Equities(use_local_location=True)
     frame = data_loader.to_pandas(pl.read_csv(CSV.encode(), infer_schema=False))
     frame["country"] = "Canada"
@@ -179,6 +187,7 @@ def test_data_can_be_replaced_for_tests(monkeypatch) -> None:
 
 
 def test_module_show_options_as_polars() -> None:
+    """Test that the module-level show_options returns Polars Series with as_pandas=False."""
     as_numpy = fd.show_options("equities", use_local_location=True)
     as_polars = fd.show_options("equities", use_local_location=True, as_pandas=False)
     assert list(as_polars) == list(as_numpy)

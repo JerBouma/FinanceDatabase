@@ -1,6 +1,6 @@
 """Report and optionally clear invalid security identifiers in source CSVs."""
 
-from __future__ import annotations
+__docformat__ = "google"
 
 import argparse
 import csv
@@ -18,7 +18,9 @@ FIGI_FIELDS = ("figi", "composite_figi", "shareclass_figi")
 
 @dataclass(frozen=True)
 class IdentifierIssue:
-    """An invalid or inconsistent identifier found in a source CSV row."""
+    """
+    An invalid or inconsistent identifier found in a source CSV row.
+    """
 
     path: Path
     line_number: int
@@ -32,7 +34,9 @@ class IdentifierIssue:
 
 @dataclass(frozen=True)
 class AuditResult:
-    """Summary of an identifier audit."""
+    """
+    Summary of an identifier audit.
+    """
 
     issues: tuple[IdentifierIssue, ...]
     files_scanned: int
@@ -42,21 +46,27 @@ class AuditResult:
 
 @dataclass(frozen=True)
 class CleanupResult:
-    """Counts of deterministic repairs and removals applied to one CSV file."""
+    """
+    Counts of deterministic repairs and removals applied to one CSV file.
+    """
 
     repaired: int = 0
     cleared: int = 0
 
     @property
     def changed(self) -> int:
-        """Return the total number of changed identifier cells."""
+        """
+        Return the total number of changed identifier cells.
+        """
         return self.repaired + self.cleared
 
 
 def _validate_standard_number(
     value: str, validator: Callable[[str], str], format_error: str
 ) -> str | None:
-    """Run a python-stdnum validator and require canonical stored formatting."""
+    """
+    Run a python-stdnum validator and require canonical stored formatting.
+    """
     try:
         canonical = validator(value)
     except InvalidChecksum:
@@ -69,7 +79,9 @@ def _validate_standard_number(
 
 
 def validate_isin(value: str) -> str | None:
-    """Return an ISO 6166 validation error, or ``None`` when valid."""
+    """
+    Return an ISO 6166 validation error, or ``None`` when valid.
+    """
     return _validate_standard_number(
         value,
         isin.validate,
@@ -78,7 +90,9 @@ def validate_isin(value: str) -> str | None:
 
 
 def validate_cusip(value: str) -> str | None:
-    """Return a CUSIP validation error, or ``None`` when valid."""
+    """
+    Return a CUSIP validation error, or ``None`` when valid.
+    """
     return _validate_standard_number(
         value,
         cusip.validate,
@@ -87,7 +101,9 @@ def validate_cusip(value: str) -> str | None:
 
 
 def validate_figi(value: str) -> str | None:
-    """Return a FIGI validation error, or ``None`` when valid."""
+    """
+    Return a FIGI validation error, or ``None`` when valid.
+    """
     return _validate_standard_number(
         value,
         figi.validate,
@@ -96,7 +112,9 @@ def validate_figi(value: str) -> str | None:
 
 
 def validate_isin_cusip_consistency(isin: str, cusip: str) -> str | None:
-    """Check whether a valid US/Canadian ISIN embeds the supplied CUSIP."""
+    """
+    Check whether a valid US/Canadian ISIN embeds the supplied CUSIP.
+    """
     if not isin or not cusip or isin[:2] not in {"US", "CA"}:
         return None
     if validate_isin(isin) is not None or validate_cusip(cusip) is not None:
@@ -107,7 +125,9 @@ def validate_isin_cusip_consistency(isin: str, cusip: str) -> str | None:
 
 
 def cusip_from_authoritative_isin(isin_value: str) -> str | None:
-    """Return the CUSIP embedded in a valid US/Canadian ISIN, the authoritative source."""
+    """
+    Return the CUSIP embedded in a valid US/Canadian ISIN, the authoritative source.
+    """
     embedded_cusip = isin_value[2:11]
     if validate_cusip(embedded_cusip) is not None:
         return None
@@ -115,7 +135,8 @@ def cusip_from_authoritative_isin(isin_value: str) -> str | None:
 
 
 def isin_precludes_cusip(isin_value: str) -> bool:
-    """Return True when a valid ISIN's country cannot carry a real CUSIP.
+    """
+    Return True when a valid ISIN's country cannot carry a real CUSIP.
 
     A CUSIP only exists for US and Canadian securities, so any populated CUSIP
     cell next to a valid non-US/Canadian ISIN is definitely wrong data, not an
@@ -138,7 +159,9 @@ FIELD_VALIDATORS: dict[str, Callable[[str], str | None]] = {
 
 
 def _canonical_value(field: str, value: str) -> str | None:
-    """Return python-stdnum's canonical value when the identifier is valid."""
+    """
+    Return python-stdnum's canonical value when the identifier is valid.
+    """
     try:
         return STANDARD_VALIDATORS[field](value)
     except ValidationError:
@@ -146,7 +169,9 @@ def _canonical_value(field: str, value: str) -> str | None:
 
 
 def _repair_cusip_from_isin(cusip_value: str, isin_value: str) -> str | None:
-    """Recover spreadsheet-damaged CUSIPs corroborated by a valid ISIN."""
+    """
+    Recover spreadsheet-damaged CUSIPs corroborated by a valid ISIN.
+    """
     canonical_isin = _canonical_value("isin", isin_value)
     if canonical_isin is None or canonical_isin[:2] not in {"US", "CA"}:
         return None
@@ -164,7 +189,9 @@ def _repair_cusip_from_isin(cusip_value: str, isin_value: str) -> str | None:
 
 
 def repair_identifier(field: str, value: str, row_values: dict[str, str]) -> str | None:
-    """Return a deterministic replacement for an invalid stored identifier."""
+    """
+    Return a deterministic replacement for an invalid stored identifier.
+    """
     canonical = _canonical_value(field, value)
     if canonical is not None and canonical != value:
         return canonical
@@ -179,7 +206,9 @@ def repair_identifier(field: str, value: str, row_values: dict[str, str]) -> str
 
 
 def discover_csv_files(paths: Iterable[Path]) -> list[Path]:
-    """Expand files and directories into a stable list of CSV paths."""
+    """
+    Expand files and directories into a stable list of CSV paths.
+    """
     csv_files: set[Path] = set()
     for path in paths:
         if path.is_dir():
@@ -192,6 +221,9 @@ def discover_csv_files(paths: Iterable[Path]) -> list[Path]:
 
 
 def _column_index(header: list[str], name: str) -> int | None:
+    """
+    Get the position of a column in the header, or None if it is missing.
+    """
     try:
         return header.index(name)
     except ValueError:
@@ -199,7 +231,9 @@ def _column_index(header: list[str], name: str) -> int | None:
 
 
 def audit_identifiers(paths: Iterable[Path]) -> AuditResult:
-    """Audit populated identifier fields in CSV files below *paths*."""
+    """
+    Audit populated identifier fields in CSV files below *paths*.
+    """
     issues: list[IdentifierIssue] = []
     files_scanned = 0
     identifiers_checked = 0
@@ -291,7 +325,9 @@ def audit_identifiers(paths: Iterable[Path]) -> AuditResult:
 
 
 def _replace_csv_field(record: str, field_index: int, replacement: str) -> str:
-    """Replace one field without reserializing any other part of a CSV record."""
+    """
+    Replace one field without reserializing any other part of a CSV record.
+    """
     content_end = len(record.rstrip("\r\n"))
     field_spans: list[tuple[int, int]] = []
     field_start = 0
@@ -317,7 +353,9 @@ def _replace_csv_field(record: str, field_index: int, replacement: str) -> str:
 
 
 def apply_identifier_cleanup(path: Path) -> CleanupResult:
-    """Repair or clear invalid cells while preserving all other CSV content."""
+    """
+    Repair or clear invalid cells while preserving all other CSV content.
+    """
     with path.open(encoding="utf-8", newline="") as csv_file:
         lines = csv_file.readlines()
 
@@ -401,7 +439,9 @@ def apply_identifier_cleanup(path: Path) -> CleanupResult:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    """Build the command-line argument parser."""
+    """
+    Build the command-line argument parser.
+    """
     parser = argparse.ArgumentParser(
         description="Validate ISIN, CUSIP, and FIGI fields in source CSV files.",
     )
@@ -426,18 +466,26 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def _format_issue_message(issue: IdentifierIssue) -> str:
+    """
+    Describe an issue in one line, with the suggested repair if there is one.
+    """
     symbol = f" ({issue.symbol})" if issue.symbol else ""
     replacement = f"; repair as {issue.replacement!r}" if issue.replacement else ""
     return f"{issue.field}{symbol} {issue.value!r}: {issue.reason}{replacement}"
 
 
 def _print_issues(issues: Iterable[IdentifierIssue]) -> None:
+    """
+    Print every issue with its file and line number.
+    """
     for issue in issues:
         print(f"{issue.path}:{issue.line_number}: {_format_issue_message(issue)}")
 
 
 def _write_report(path: Path, issues: Iterable[IdentifierIssue]) -> None:
-    """Write detailed identifier findings to a CSV artifact."""
+    """
+    Write detailed identifier findings to a CSV artifact.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="") as report_file:
         writer = csv.writer(report_file)
@@ -469,6 +517,9 @@ def _write_report(path: Path, issues: Iterable[IdentifierIssue]) -> None:
 
 
 def _print_audit_summary(result: AuditResult) -> None:
+    """
+    Print how many issues can be repaired, cleared or need a manual review.
+    """
     actionable = [issue for issue in result.issues if issue.actionable]
     repairable = [issue for issue in actionable if issue.replacement]
     removable = [issue for issue in actionable if not issue.replacement]
@@ -492,7 +543,9 @@ def _print_audit_summary(result: AuditResult) -> None:
 
 
 def main(argv: Sequence[str] | None = None) -> int:
-    """Run the identifier audit command."""
+    """
+    Run the identifier audit command.
+    """
     arguments = build_parser().parse_args(argv)
     if not discover_csv_files(arguments.paths):
         print("No CSV files found.")

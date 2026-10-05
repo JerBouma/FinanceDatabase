@@ -1,8 +1,11 @@
 """Indices Module"""
 
-import numpy as np
+__docformat__ = "google"
 
-from .helpers import FinanceDatabase, FinanceFrame
+import numpy as np
+import polars as pl
+
+from financedatabase.helpers import FinanceDatabase, FinanceFrame
 
 
 class Indices(FinanceDatabase):
@@ -36,34 +39,55 @@ class Indices(FinanceDatabase):
         exchange: str | list | None = None,
         mic: str | list | None = None,
         as_pandas: bool = True,
-    ) -> FinanceFrame:
+    ) -> FinanceFrame | pl.DataFrame:
         """
-        Select indices based on specified filter criteria.
+        Select indices based on the category group, category, currency and other criteria.
 
-        Returns all indices when no input is given and has the option to give
-        a specific combination of indices based on the filters defined.
+        Returns all indices when no input is given.
 
         Args:
-            category_group (str | list, optional): Filter by category group.
-                Default is None, which returns all category groups.
-            category (str | list, optional): Filter by category.
-                Default is None, which returns all categories.
-            currency (str | list, optional): Filter by currency.
-                Default is None, which returns all currencies.
-            exchange (str | list, optional): Filter by exchange.
-                Default is None, which returns all exchanges.
-            mic (str | list, optional): Filter by ISO 10383 MIC code.
-                Default is None, which returns all MIC codes.
-            as_pandas (bool, optional): Return a pandas DataFrame (True, the default) or a
-                Polars DataFrame (False).
-
-
-        Raises:
-            ValueError: If the specified category group, category, currency, or exchange
-                is not available in the database.
+            category_group (str | list, optional): Specific category group or list of
+                category groups to filter indices on. Defaults to None (all category
+                groups).
+            category (str | list, optional): Specific category or list of categories to
+                filter indices on. Defaults to None (all categories).
+            currency (str | list, optional): Specific currency or list of currencies to
+                filter indices on. Defaults to None (all currencies).
+            exchange (str | list, optional): Specific exchange or list of exchanges to
+                filter indices on. Defaults to None (all exchanges).
+            mic (str | list, optional): Specific MIC or list of MICs to filter indices on.
+                Defaults to None (all MICs).
+            as_pandas (bool, optional): Whether to return a pandas DataFrame (True) or a
+                Polars DataFrame (False). Defaults to True.
 
         Returns:
-            FinanceFrame: DataFrame containing indices data matching the specified criteria.
+            FinanceFrame | pl.DataFrame: The indices matching every filter.
+
+        Raises:
+            ValueError: If a filter value is not available in the database. Check the
+                available values with the 'show_options' method.
+
+        As an example:
+
+        ```python
+        import financedatabase as fd
+
+        indices = fd.Indices()
+
+        indices.select(category_group="Equities", category="Large Cap", currency="EUR")[
+            ["name", "currency", "category", "exchange"]
+        ].head()
+        ```
+
+        Which returns:
+
+        | symbol | name              | currency | category  | exchange |
+        |:-------|:------------------|:---------|:----------|:---------|
+        | 0020.Z | ESTX LRB50 NR EUR | EUR      | Large Cap | ZRH      |
+        | 0022.Z | ESTX LRB50 PR EUR | EUR      | Large Cap | ZRH      |
+        | 002A.Z | ESTX LR50 NR EUR  | EUR      | Large Cap | ZRH      |
+        | 002C.Z | ESTX LR50 PR EUR  | EUR      | Large Cap | ZRH      |
+        | 002G.Z | ESTX LR100 NR EUR | EUR      | Large Cap | ZRH      |
         """
         return self._select(
             {
@@ -87,39 +111,55 @@ class Indices(FinanceDatabase):
         exchange: str | list | None = None,
         mic: str | list | None = None,
         as_pandas: bool = True,
-    ) -> dict | np.ndarray:
+    ) -> dict | np.ndarray | pl.Series:
         """
-        Show available options for the selection criteria.
+        Show the available values of the indices filters.
 
-        This method retrieves unique values for different selection fields,
-        optionally filtered by other criteria.
+        The options can be narrowed down with the same filters as select().
 
         Args:
-            selection (str, optional): The specific field to show options for.
-                Choose from: "category_group", "category", "currency", and "exchange".
-                If None, returns options for all fields.
-            category_group (str | list, optional): Filter by category group.
-                Default is None, which returns all category groups.
-            category (str | list, optional): Filter by category.
-                Default is None, which returns all categories.
-            currency (str | list, optional): Filter by currency.
-                Default is None, which returns all currencies.
-            exchange (str | list, optional): Filter by exchange.
-                Default is None, which returns all exchanges.
-            mic (str | list, optional): Filter by ISO 10383 MIC code.
-                Default is None, which returns all MIC codes.
-            as_pandas (bool, optional): Return the options as numpy arrays (True, the default)
-                or as Polars Series (False).
-
-
-        Raises:
-            ValueError: If the specified selection is not valid or if the specified
-                category group, category, currency, or exchange is not available in the database.
+            selection (str | None, optional): The column to show the options of. Choose
+                from: "category_group", "category", "currency", "exchange", "mic". Defaults
+                to None, which returns the options of every column.
+            category_group (str | list, optional): Specific category group or list of
+                category groups to filter the options on. Defaults to None (all category
+                groups).
+            category (str | list, optional): Specific category or list of categories to
+                filter the options on. Defaults to None (all categories).
+            currency (str | list, optional): Specific currency or list of currencies to
+                filter the options on. Defaults to None (all currencies).
+            exchange (str | list, optional): Specific exchange or list of exchanges to
+                filter the options on. Defaults to None (all exchanges).
+            mic (str | list, optional): Specific MIC or list of MICs to filter the options
+                on. Defaults to None (all MICs).
+            as_pandas (bool, optional): Whether to return the options as numpy arrays (True)
+                or as Polars Series (False). Defaults to True.
 
         Returns:
-            dict | np.ndarray: A dictionary or array with all options for the specified selection.
-                If selection is None, returns a dictionary with unique values for all fields.
-                If selection is specified, returns an array of unique values for that field.
+            dict | np.ndarray | pl.Series: The sorted unique values of the selected column,
+                or a dictionary with the values of every column if no selection is given.
+
+        Raises:
+            ValueError: If the selection or a filter value is not valid.
+
+        As an example:
+
+        ```python
+        import financedatabase as fd
+
+        indices = fd.Indices()
+
+        indices.show_options(selection="category_group")
+        ```
+
+        Which returns:
+
+        ```
+        ['Alternatives', 'Cash', 'Commodities', 'Communication Services',
+         'Consumer Discretionary', 'Consumer Staples', 'Currencies', 'Derivatives', 'Energy',
+         'Equities', 'Financials', 'Fixed Income', 'Health Care', 'Industrials',
+         'Information Technology', 'Materials', 'Real Estate', 'Utilities']
+        ```
         """
         selection_values = [
             "category_group",

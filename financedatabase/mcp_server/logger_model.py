@@ -1,17 +1,19 @@
-"""Logger Module for the Finance Database MCP server."""
+"""Logger Module"""
 
 __docformat__ = "google"
 
 import logging
 import os
-import sys
 
-LOGGER_NAME = "financedatabase"
+from financedatabase import logger_model
+
+# Re-exported for the MCP server modules that refer to the logger by name.
+LOGGER_NAME = logger_model.LOGGER_NAME
 
 
 def setup_logger(log_level: int | str | None = None) -> logging.Logger:
     """
-    Set up and configure the package logger with timestamp formatting.
+    Set up and configure the package logger for the MCP server.
 
     The handler always writes to stderr: under the stdio transport stdout carries the
     JSON-RPC stream, so a single log line on stdout would corrupt the protocol.
@@ -23,28 +25,13 @@ def setup_logger(log_level: int | str | None = None) -> logging.Logger:
     Returns:
         logging.Logger: Configured logger instance.
     """
+    logger = logger_model.setup_logger()
+
+    # The package already set INFO on import, so an explicit level is applied here.
     if log_level is None:
-        log_level = os.environ.get("FINANCEDATABASE_MCP_LOG_LEVEL", "INFO").upper()
-
-    logger = logging.getLogger(LOGGER_NAME)
-
-    # Don't override a level that was already set explicitly (e.g. by a test).
-    if logger.level == logging.NOTSET:
-        logger.setLevel(log_level)
-
-    # Avoid duplicate handlers when the module is imported more than once.
-    if not logger.handlers:
-        console_handler = logging.StreamHandler(sys.stderr)
-        console_handler.setFormatter(
-            logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-                datefmt="%Y-%m-%d %H:%M:%S",
-            )
-        )
-        logger.addHandler(console_handler)
-
-    # Prevents duplicate emission through third-party root handlers on stdout.
-    logger.propagate = False
+        log_level = os.environ.get("FINANCEDATABASE_MCP_LOG_LEVEL")
+    if log_level is not None:
+        logger.setLevel(log_level.upper() if isinstance(log_level, str) else log_level)
 
     return logger
 
@@ -56,4 +43,4 @@ def get_logger() -> logging.Logger:
     Returns:
         logging.Logger: Logger instance named after the package.
     """
-    return logging.getLogger(LOGGER_NAME)
+    return logger_model.get_logger()

@@ -1,7 +1,5 @@
 """Tests for scripts/update_listings.py (weekly listings update)."""
 
-from __future__ import annotations
-
 import importlib.util
 import json
 import sys
@@ -76,6 +74,7 @@ def tsx_json(companies: list[tuple[str, list[str]]]) -> bytes:
 
 
 def test_yahoo_canada_symbols() -> None:
+    """Test that Canadian symbols are converted to Yahoo Finance symbols."""
     assert ul.yahoo_canada("BCE.PR.A") == "BCE-PA"
     assert ul.yahoo_canada("TD.PF.A") == "TD-PFA"
     assert ul.yahoo_canada("GASX.WT.A") == "GASX-WTA"
@@ -84,6 +83,7 @@ def test_yahoo_canada_symbols() -> None:
 
 
 def test_canada_names_distinguish_classes() -> None:
+    """Test that Canadian names distinguish share classes."""
     assert ul.canada_name("BCE Inc.", "BCE") == "BCE Inc."
     assert (
         ul.canada_name("BCE Inc.", "BCE.PR.A") == "BCE Inc. Preferred Shares (BCE.PR.A)"
@@ -97,6 +97,7 @@ def test_canada_names_distinguish_classes() -> None:
 
 
 def test_symbol_key_and_name_normalisation() -> None:
+    """Test that symbol keys and names are normalised."""
     assert ul.symbol_key("HCO.P.V") == ul.symbol_key("HCO-P.V")
     assert ul.symbol_key("ESGF.TO") == ul.symbol_key(
         "ESG-F.TO"
@@ -105,6 +106,7 @@ def test_symbol_key_and_name_normalisation() -> None:
 
 
 def test_parse_tsx_skips_debt_and_ambiguous_funds() -> None:
+    """Test that the TSX parser skips debt and ambiguous funds."""
     raw = tsx_json(
         [
             ("Abc Mining Corp.", ["ABC", "ABC.DB.A"]),
@@ -120,6 +122,7 @@ def test_parse_tsx_skips_debt_and_ambiguous_funds() -> None:
 
 
 def test_parse_nasdaq_trader_only_etfs() -> None:
+    """Test that the Nasdaq Trader parser only returns ETFs."""
     nasdaq = "Symbol|Security Name|Market Category|Test Issue|Financial Status|Round Lot Size|ETF|NextShares\n"
     nasdaq += "AAAP|Pacer ETF |G|N|N|100|Y|N\nAAPL|Apple Inc.|Q|N|N|100|N|N\nTEST|Test ETF|G|Y|N|100|Y|N\n"
     nasdaq += "".join(f"X{i}|Pad|Q|N|N|100|N|N\n" for i in range(3001))
@@ -135,6 +138,7 @@ def test_parse_nasdaq_trader_only_etfs() -> None:
 
 
 def test_broken_source_is_rejected() -> None:
+    """Test that a broken source is rejected."""
     try:
         ul.parse_tsx(b'{"results": []}', b'{"results": []}')
     except ValueError:
@@ -143,6 +147,7 @@ def test_broken_source_is_rejected() -> None:
 
 
 def test_apply_source_adds_dedupes_and_delists(tmp_path: Path) -> None:
+    """Test that applying a source adds, deduplicates and delists rows."""
     root = make_db(tmp_path)
     db = ul.Database(str(root))
     result = ul.SourceResult(
@@ -190,6 +195,7 @@ def test_apply_source_adds_dedupes_and_delists(tmp_path: Path) -> None:
 
 
 def test_too_many_delistings_are_not_applied(tmp_path: Path, monkeypatch) -> None:
+    """Test that too many delistings are not applied."""
     root = make_db(tmp_path)
     db = ul.Database(str(root))
     monkeypatch.setattr(ul, "MAX_DELISTINGS_PER_SOURCE", 0)
@@ -204,6 +210,7 @@ def test_too_many_delistings_are_not_applied(tmp_path: Path, monkeypatch) -> Non
 
 
 def test_untouched_files_are_not_rewritten(tmp_path: Path) -> None:
+    """Test that untouched files are not rewritten."""
     root = make_db(tmp_path)
     before = (root / "etfs" / "TOR.csv").read_bytes()
     db = ul.Database(str(root))
@@ -215,6 +222,7 @@ def test_untouched_files_are_not_rewritten(tmp_path: Path) -> None:
 
 
 def test_learn_categories_requires_agreement() -> None:
+    """Test that learned categories require agreement."""
     rows = {f"B{i}.T": ("Financials", "Banks", "Banks") for i in range(10)}
     rows |= {
         f"S{i}.T": ("Industrials" if i % 2 else "Consumer Discretionary", "", "")
@@ -235,6 +243,7 @@ def test_learn_categories_requires_agreement() -> None:
 
 
 def test_figi_jobs_and_names() -> None:
+    """Test that OpenFIGI jobs and names are built correctly."""
     hk = ul.Listing(
         "etfs", "HKG", "2801.HK", "ISHARES CHINA", "HKD", isin="HK2801040828"
     )
@@ -268,6 +277,7 @@ def test_figi_jobs_and_names() -> None:
 
 
 def test_openfigi_enrichment_fills_and_refiles(monkeypatch) -> None:
+    """Test that the OpenFIGI enrichment fills fields and refiles rows."""
     listings = [
         ul.Listing("equities", "HKG", "0001.HK", "CKH HOLDINGS", "HKD"),
         ul.Listing("equities", "HKG", "2800.HK", "TRACKER FUND", "HKD"),
@@ -298,6 +308,7 @@ def test_openfigi_enrichment_fills_and_refiles(monkeypatch) -> None:
 
 
 def test_etf_family_matches_upper_case_names(tmp_path: Path) -> None:
+    """Test that an ETF family matches upper case names."""
     root = make_db(tmp_path)
     rows = "".join(
         f"I{i}.TO,iShares Fund {i} ETF,CAD,,,,BlackRock Asset Management,TOR,XTSE,,False\n"
@@ -381,12 +392,14 @@ def test_blocked_or_broken_source_is_skipped_and_others_continue(
 
 
 def test_main_never_raises(tmp_path: Path, monkeypatch, capsys) -> None:
+    """Test that main reports a failure instead of raising."""
     monkeypatch.setattr(sys, "argv", ["update_listings", "--database", str(tmp_path)])
     ul.main()  # an empty directory is not a database: reported, not raised
     assert "Listings update skipped entirely" in capsys.readouterr().out
 
 
 def test_factual_summary_states_only_known_fields() -> None:
+    """Test that the factual summary states only known fields."""
     row = {
         "name": "Abc Mining Corp.",
         "exchange": "TOR",
@@ -418,6 +431,7 @@ def test_factual_summary_states_only_known_fields() -> None:
 
 
 def test_extract_objective_from_summary_prospectus() -> None:
+    """Test that the objective is extracted from a summary prospectus."""
     page = (
         "<html><p>Summary Prospectus</p><h2>Investment Objective</h2><p>The Sequoia Global "
         "Value ETF (the &#8220; Fund &#8221;) seeks to achieve long term capital appreciation .</p>"
@@ -435,11 +449,13 @@ def test_extract_objective_from_summary_prospectus() -> None:
 
 
 def test_sec_disabled_without_contact() -> None:
+    """Test that SEC lookups are disabled without a contact email."""
     sec = ul.SecFunds(None)
     assert sec.objective("SPY") == "" and sec.registrant("SPY") == ""
 
 
 def test_us_etfs_get_sec_objective_and_registrant_family(tmp_path: Path) -> None:
+    """Test that US ETFs get the SEC objective and the registrant family."""
     root = make_db(tmp_path)
     rows = "".join(
         f"T{i},Trust Fund {i} ETF,USD,,,,Acme Funds,PCX,ARCX,,False\n" for i in range(6)
@@ -487,6 +503,7 @@ def test_us_etfs_get_sec_objective_and_registrant_family(tmp_path: Path) -> None
 
 
 def test_extract_objective_keeps_before_fees_and_skips_website_sentence() -> None:
+    """Test that the objective keeps 'before fees' and skips the website sentence."""
     leveraged = (
         "<p>Investment Objective</p><p>The Fund seeks daily investment results, before fees and"
         " expenses, of 200% of the daily performance of SMCI.</p><h2>Fees and Expenses of the"
@@ -508,6 +525,7 @@ def test_extract_objective_keeps_before_fees_and_skips_website_sentence() -> Non
 
 
 def test_sec_objective_skips_supplements() -> None:
+    """Test that the SEC objective skips supplements."""
     pages = {
         "atom": "<filing-href>https://sec/f1-index.htm</filing-href>"
         "<filing-href>https://sec/f2-index.htm</filing-href>",

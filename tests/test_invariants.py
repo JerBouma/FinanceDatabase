@@ -1,7 +1,5 @@
 """Cross-asset invariants Test Module."""
 
-from __future__ import annotations
-
 import glob
 import io
 from pathlib import Path

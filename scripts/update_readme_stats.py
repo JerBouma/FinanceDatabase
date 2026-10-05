@@ -15,7 +15,7 @@ fail the weekly pipeline. The section only uses what GitHub renders in a README:
 Markdown tables, a collapsible <details> block and a Mermaid pie chart.
 """
 
-from __future__ import annotations
+__docformat__ = "google"
 
 import argparse
 import datetime as dt
@@ -37,7 +37,9 @@ HEADER = (
 
 @dataclass
 class AssetStats:
-    """Statistics for one asset class."""
+    """
+    Statistics for one asset class.
+    """
 
     icon: str
     name: str
@@ -48,11 +50,16 @@ class AssetStats:
 
 
 def fmt(number: int) -> str:
+    """
+    Format a number with thousands separators.
+    """
     return f"{number:,}"
 
 
 def read(paths: list[str], columns: list[str]) -> pd.DataFrame:
-    """Read only the needed columns as text (keeps memory low; 'NA' stays a ticker)."""
+    """
+    Read only the needed columns as text (keeps memory low; 'NA' stays a ticker).
+    """
     frames = []
     for path in paths:
         available = pd.read_csv(path, nrows=0).columns
@@ -72,11 +79,16 @@ def read(paths: list[str], columns: list[str]) -> pd.DataFrame:
 
 
 def distinct(series: pd.Series) -> int:
+    """
+    Count the distinct non-empty values of a column.
+    """
     return series[series.str.strip() != ""].nunique()
 
 
 def collect(database: str) -> tuple[list[AssetStats], dict[str, pd.Series]]:
-    """Per-asset-class statistics plus the breakdowns shown in the collapsible section."""
+    """
+    Per-asset-class statistics plus the breakdowns shown in the collapsible section.
+    """
     root = Path(database)
     equities = read(
         sorted(glob.glob(f"{root}/equities/*.csv")),
@@ -187,7 +199,9 @@ def collect(database: str) -> tuple[list[AssetStats], dict[str, pd.Series]]:
 
 
 def badge(label: str, message: str, color: str) -> str:
-    """A static shields.io badge (only the image is fetched; no data leaves the repo)."""
+    """
+    A static shields.io badge (only the image is fetched; no data leaves the repo).
+    """
 
     def escape(text: str) -> str:
         # shields.io treats '-' and '_' as separators; doubling them keeps them literal.
@@ -198,7 +212,9 @@ def badge(label: str, message: str, color: str) -> str:
 
 
 def count_table(column: str, unit: str, counts: pd.Series, top: int) -> str:
-    """A compact two-column table (name, count) of the largest groups, the rest as 'Other'."""
+    """
+    A compact two-column table (name, count) of the largest groups, the rest as 'Other'.
+    """
     lines = [f"| {column} | {unit} |", "| :-- | --: |"]
     for name, value in counts.head(top).items():
         lines.append(f"| {name} | {fmt(int(value))} |")
@@ -211,6 +227,9 @@ def count_table(column: str, unit: str, counts: pd.Series, top: int) -> str:
 def render(
     stats: list[AssetStats], breakdowns: dict[str, pd.Series], today: dt.date
 ) -> str:
+    """
+    Render the statistics section of the README as Markdown.
+    """
     total = sum(s.symbols for s in stats)
     equities = stats[0]
     countries = int(equities.coverage[2].split()[0])
@@ -305,7 +324,9 @@ def render(
 
 
 def update(readme: Path, database: str, today: dt.date | None = None) -> bool:
-    """Rewrite the marked section; returns False (and changes nothing) without markers."""
+    """
+    Rewrite the marked section; returns False (and changes nothing) without markers.
+    """
     text = readme.read_text(encoding="utf-8")
     pattern = re.compile(re.escape(START) + r".*?" + re.escape(END), re.S)
     if not pattern.search(text):
@@ -321,6 +342,9 @@ def update(readme: Path, database: str, today: dt.date | None = None) -> bool:
 
 
 def main() -> None:
+    """
+    Regenerate the README statistics from the command line; a failure is reported, never raised.
+    """
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--readme", default="README.md")
     parser.add_argument("--database", default="database")

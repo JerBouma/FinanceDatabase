@@ -1,7 +1,5 @@
 """Tests for scripts/update_readme_stats.py (README statistics section)."""
 
-from __future__ import annotations
-
 import datetime as dt
 import importlib.util
 import sys
@@ -51,6 +49,7 @@ README = "# Title\n\nIntro.\n\n<!-- STATISTICS:START -->\nold\n<!-- STATISTICS:E
 
 
 def test_section_is_regenerated_between_markers(tmp_path: Path) -> None:
+    """Test that the statistics section is regenerated between the markers."""
     db = make_db(tmp_path)
     readme = tmp_path / "README.md"
     readme.write_text(README)
@@ -71,6 +70,7 @@ def test_section_is_regenerated_between_markers(tmp_path: Path) -> None:
 
 
 def test_regeneration_is_idempotent(tmp_path: Path) -> None:
+    """Test that regenerating the statistics twice gives the same README."""
     db = make_db(tmp_path)
     readme = tmp_path / "README.md"
     readme.write_text(README)
@@ -81,6 +81,7 @@ def test_regeneration_is_idempotent(tmp_path: Path) -> None:
 
 
 def test_missing_markers_change_nothing(tmp_path: Path) -> None:
+    """Test that a README without the markers is left unchanged."""
     readme = tmp_path / "README.md"
     readme.write_text("# No markers here\n")
     assert rs.update(readme, str(make_db(tmp_path)), dt.date(2026, 10, 4)) is False
@@ -88,6 +89,7 @@ def test_missing_markers_change_nothing(tmp_path: Path) -> None:
 
 
 def test_count_tables_are_two_compact_columns() -> None:
+    """Test that the count tables have two compact columns."""
     counts = rs.pd.Series({"A": 30, "B": 20, "C": 5, "D": 1})
     assert rs.count_table("Sector", "Equities", counts, 2) == (
         "| Sector | Equities |\n| :-- | --: |\n| A | 30 |\n| B | 20 |\n| *Other (2)* | 6 |"
@@ -95,6 +97,7 @@ def test_count_tables_are_two_compact_columns() -> None:
 
 
 def test_main_never_raises(tmp_path: Path, monkeypatch, capsys) -> None:
+    """Test that main reports a failure instead of raising."""
     readme = tmp_path / "README.md"
     readme.write_text(README)
     monkeypatch.setattr(

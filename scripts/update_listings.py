@@ -53,7 +53,7 @@ Enrichment of new rows (each step is optional: if it fails, rows are still added
   ticker, currency, issuer, categories, sector, country), so nothing is invented.
 """
 
-from __future__ import annotations
+__docformat__ = "google"
 
 import argparse
 import glob
@@ -116,7 +116,9 @@ NAME_STOPWORDS = (
 
 @dataclass
 class Listing:
-    """One listed instrument as published by an exchange."""
+    """
+    One listed instrument as published by an exchange.
+    """
 
     kind: str  # "equities" or "etfs"
     file: str  # exchange file, e.g. "HKG" -> database/<kind>/HKG.csv
@@ -138,7 +140,9 @@ class Listing:
 
 @dataclass
 class SourceResult:
-    """Parsed source: listings to consider adding and every symbol currently listed."""
+    """
+    Parsed source: listings to consider adding and every symbol currently listed.
+    """
 
     listings: list[Listing] = field(default_factory=list)
     official: dict[str, set[str]] = field(default_factory=dict)
@@ -147,18 +151,18 @@ class SourceResult:
     classifications: dict[str, dict[str, str]] = field(default_factory=dict)
 
 
-# --------------------------------------------------------------------------- helpers
-
-
 def fetch(url: str) -> bytes:
-    """Download a URL with a browser user agent; raises on HTTP errors."""
+    """
+    Download a URL with a browser user agent; raises on HTTP errors.
+    """
     response = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
     response.raise_for_status()
     return response.content
 
 
 def fetch_nasdaq_trader(name: str) -> bytes:
-    """Nasdaq Trader symbol directory file over HTTPS, falling back to its official FTP copy.
+    """
+    Nasdaq Trader symbol directory file over HTTPS, falling back to its official FTP copy.
 
     The HTTPS endpoint sometimes answers automated clients with a bot-check page instead.
     """
@@ -176,7 +180,9 @@ def fetch_nasdaq_trader(name: str) -> bytes:
 
 
 def optional_fetch(url: str) -> bytes | None:
-    """Download an enrichment-only file; a failure just means less enrichment."""
+    """
+    Download an enrichment-only file; a failure just means less enrichment.
+    """
     try:
         return fetch(url)
     except Exception as error:  # enrichment only: never fatal
@@ -185,32 +191,41 @@ def optional_fetch(url: str) -> bytes | None:
 
 
 def require(condition: bool, message: str) -> None:
-    """Abort the current source when its data does not look like the expected format."""
+    """
+    Abort the current source when its data does not look like the expected format.
+    """
     if not condition:
         raise ValueError(message)
 
 
 def read_csv_text(path: str) -> pd.DataFrame:
-    """Read a database CSV as text, keeping values like the ticker 'NA' intact."""
+    """
+    Read a database CSV as text, keeping values like the ticker 'NA' intact.
+    """
     return pd.read_csv(path, index_col=0, dtype=str, keep_default_na=False)
 
 
 def normalise_name(name: str) -> str:
-    """Company name reduced to its distinctive words, for duplicate detection."""
+    """
+    Company name reduced to its distinctive words, for duplicate detection.
+    """
     name = re.sub(r"\(.*?\)", " ", name.lower())
     name = re.sub(r"[^a-z0-9 ]", " ", name)
     return re.sub(r"\s+", " ", re.sub(NAME_STOPWORDS, " ", name)).strip()
 
 
 def symbol_key(symbol: str) -> str:
-    """Symbol without separators, keeping the exchange suffix (HCO.P.V == HCO-P.V)."""
+    """
+    Symbol without separators, keeping the exchange suffix (HCO.P.V == HCO-P.V).
+    """
     match = re.search(SUFFIX, symbol)
     suffix = match.group(0) if match else ""
     return re.sub(r"[-.^/]", "", symbol[: len(symbol) - len(suffix)]) + suffix
 
 
 def yahoo_canada(symbol: str) -> str:
-    """TSX symbol to the database's Yahoo-style form.
+    """
+    TSX symbol to the database's Yahoo-style form.
 
     'BCE.PR.A' -> 'BCE-PA', 'TD.PF.A' -> 'TD-PFA', 'GASX.WT.A' -> 'GASX-WTA', 'AD.UN' -> 'AD-UN'.
     """
@@ -223,7 +238,9 @@ def yahoo_canada(symbol: str) -> str:
 
 
 def canada_name(company: str, symbol: str) -> str:
-    """Company name for the primary instrument; other classes and series name the instrument."""
+    """
+    Company name for the primary instrument; other classes and series name the instrument.
+    """
     if "." not in symbol or symbol.split(".", 1)[1] in ("P", "H"):
         return (
             company  # TSXV capital pool (.P) and NEX (.H) listings are the only listing
@@ -242,11 +259,10 @@ def canada_name(company: str, symbol: str) -> str:
     return f"{company} {text} ({symbol})" if text else f"{company} ({symbol})"
 
 
-# --------------------------------------------------------------------------- sources
-
-
 def parse_nasdaq_trader(nasdaq_listed: bytes, other_listed: bytes) -> SourceResult:
-    """US ETFs from the Nasdaq Trader symbol directory."""
+    """
+    US ETFs from the Nasdaq Trader symbol directory.
+    """
     result = SourceResult()
     read = lambda b: pd.read_csv(  # noqa: E731
         io.BytesIO(b), sep="|", dtype=str, keep_default_na=False
@@ -293,7 +309,9 @@ def parse_nasdaq_trader(nasdaq_listed: bytes, other_listed: bytes) -> SourceResu
 
 
 def parse_hkex(xlsx: bytes) -> SourceResult:
-    """Hong Kong equities, REITs and ETPs traded in HKD."""
+    """
+    Hong Kong equities, REITs and ETPs traded in HKD.
+    """
     result = SourceResult()
     data = pd.read_excel(io.BytesIO(xlsx), header=2, dtype=str).fillna("")
     require(
@@ -325,7 +343,9 @@ def parse_hkex(xlsx: bytes) -> SourceResult:
 def parse_nse(
     equity_csv: bytes, etf_csv: bytes, industries_csv: bytes | None = None
 ) -> SourceResult:
-    """India: NSE main-board equities and ETFs (industries from the Nifty Total Market list)."""
+    """
+    India: NSE main-board equities and ETFs (industries from the Nifty Total Market list).
+    """
     result = SourceResult()
     industries: dict[str, str] = {}
     if industries_csv:
@@ -385,7 +405,9 @@ def parse_nse(
 
 
 def parse_jpx(xlsx: bytes) -> SourceResult:
-    """Japan: TSE Prime/Standard/Growth equities and ETFs/ETNs."""
+    """
+    Japan: TSE Prime/Standard/Growth equities and ETFs/ETNs.
+    """
     result = SourceResult()
     data = pd.read_excel(io.BytesIO(xlsx), dtype=str).fillna("")
     require(
@@ -418,7 +440,9 @@ def parse_jpx(xlsx: bytes) -> SourceResult:
 
 
 def parse_asx(csv: bytes, group_sector: dict[str, str]) -> SourceResult:
-    """Australia: ASX companies with a GICS industry group (rows without one are skipped)."""
+    """
+    Australia: ASX companies with a GICS industry group (rows without one are skipped).
+    """
     result = SourceResult()
     data = pd.read_csv(io.BytesIO(csv), skiprows=2, dtype=str, keep_default_na=False)
     require(
@@ -453,7 +477,9 @@ def parse_asx(csv: bytes, group_sector: dict[str, str]) -> SourceResult:
 
 
 def parse_tsx(tsx_json: bytes, tsxv_json: bytes) -> SourceResult:
-    """Canada: TSX and TSXV equities, TSX ETFs."""
+    """
+    Canada: TSX and TSXV equities, TSX ETFs.
+    """
     result = SourceResult()
     for raw, file, suffix in [(tsx_json, "TOR", ".TO"), (tsxv_json, "VAN", ".V")]:
         companies = json.loads(raw)["results"]
@@ -486,7 +512,9 @@ def parse_tsx(tsx_json: bytes, tsxv_json: bytes) -> SourceResult:
 
 
 def jpx_download_url() -> str:
-    """The JPX listed-issues file name changes over time; read it from the index page."""
+    """
+    The JPX listed-issues file name changes over time; read it from the index page.
+    """
     page = fetch(
         "https://www.jpx.co.jp/english/markets/statistics-equities/misc/01.html"
     ).decode()
@@ -496,7 +524,9 @@ def jpx_download_url() -> str:
 
 
 def load_sources(group_sector: dict[str, str]) -> dict[str, Callable[[], SourceResult]]:
-    """Source name -> loader. Loaders download and parse lazily so one failure stays isolated."""
+    """
+    Source name -> loader. Loaders download and parse lazily so one failure stays isolated.
+    """
     tsx = "https://www.tsx.com/json/company-directory/search/{}/%5E*"
     nse = "https://archives.nseindia.com/content/equities/{}"
     return {
@@ -526,13 +556,11 @@ def load_sources(group_sector: dict[str, str]) -> dict[str, Callable[[], SourceR
     }
 
 
-# --------------------------------------------------------------------------- enrichment
-
-
 def learn_categories(
     frame: pd.DataFrame, labels: dict[str, str]
 ) -> dict[str, dict[str, str]]:
-    """Exchange sector label -> database categories, learned from existing rows.
+    """
+    Exchange sector label -> database categories, learned from existing rows.
 
     For each label, the deepest of sector / industry_group / industry is used on which
     >= MIN_AGREEMENT of >= MIN_ROWS existing rows with that label agree.
@@ -558,7 +586,9 @@ def learn_categories(
 
 
 def figi_job(listing: Listing) -> tuple[dict, str] | None:
-    """OpenFIGI mapping job and the ticker expected back, or None when not mappable."""
+    """
+    OpenFIGI mapping job and the ticker expected back, or None when not mappable.
+    """
     match = re.search(SUFFIX, listing.symbol)
     if not match or match.group(0) not in FIGI_EXCHANGES:
         return None
@@ -582,7 +612,9 @@ def figi_job(listing: Listing) -> tuple[dict, str] | None:
 def openfigi_lookup(
     jobs: list[tuple[dict, str]], api_key: str | None
 ) -> list[dict | None]:
-    """Resolve mapping jobs in rate-limited batches; returns the matching record per job."""
+    """
+    Resolve mapping jobs in rate-limited batches; returns the matching record per job.
+    """
     batch, pause = (100, 0.25) if api_key else (10, 2.5)
     headers = {"Content-Type": "application/json"}
     if api_key:
@@ -610,7 +642,9 @@ def openfigi_lookup(
 
 
 def openfigi_name(record: dict) -> str:
-    """OpenFIGI's name when complete: its names are cut at 28 characters."""
+    """
+    OpenFIGI's name when complete: its names are cut at 28 characters.
+    """
     name = (record.get("name") or "").strip()
     tag = re.search(r"\s+-(HKD|USD|RMB|CNY)$", name)
     if tag:
@@ -621,7 +655,9 @@ def openfigi_name(record: dict) -> str:
 def enrich_with_openfigi(
     listings: list[Listing], api_key: str | None
 ) -> tuple[list[Listing], list[str]]:
-    """Fill FIGIs (and full HKEX names); re-file rows whose security type contradicts the asset class."""
+    """
+    Fill FIGIs (and full HKEX names); re-file rows whose security type contradicts the asset class.
+    """
     jobs = [(listing, figi_job(listing)) for listing in listings]
     jobs = [(listing, job) for listing, job in jobs if job]
     if not jobs:
@@ -657,7 +693,9 @@ def enrich_with_openfigi(
 
 
 def factual_summary(symbol: str, row: dict[str, str], kind: str) -> str:
-    """A summary stating only facts already in the row; nothing is inferred or invented."""
+    """
+    A summary stating only facts already in the row; nothing is inferred or invented.
+    """
     exchange = EXCHANGE_NAMES.get(row.get("exchange", ""), "")
     if not row.get("name") or not exchange:
         return ""
@@ -689,7 +727,9 @@ SEC_END = (
 
 
 def objective_window(document: str) -> str:
-    """Plain text following the 'Investment Objective' heading (up to 3,000 characters)."""
+    """
+    Plain text following the 'Investment Objective' heading (up to 3,000 characters).
+    """
     text = html.unescape(re.sub(r"<[^>]+>", " ", document)).replace("\u00a0", " ")
     text = re.sub(r"\s+", " ", text)
     # Prefer the capitalised section heading; fall back to any mention of the phrase.
@@ -700,7 +740,9 @@ def objective_window(document: str) -> str:
 
 
 def extract_objective(document: str, window: str | None = None) -> str:
-    """The 'Investment Objective' paragraph of a summary prospectus (HTML), or ''."""
+    """
+    The 'Investment Objective' paragraph of a summary prospectus (HTML), or ''.
+    """
     window = objective_window(document) if window is None else window
     end = re.search(SEC_END, window)
     if not end:
@@ -712,7 +754,8 @@ def extract_objective(document: str, window: str | None = None) -> str:
 
 
 def compose_summary(objective: str, symbol: str, row: dict[str, str], kind: str) -> str:
-    """The official objective, followed by the factual summary when the objective is short
+    """
+    The official objective, followed by the factual summary when the objective is short
     ("The Fund seeks total return."); the factual summary alone when there is none."""
     factual = factual_summary(symbol, row, kind)
     if not objective:
@@ -727,7 +770,8 @@ OBJECTIVE_TERMS = (
 
 
 def clean_objective(text: str) -> str:
-    """Tidy an extracted objective; '' when it does not read as an investment objective.
+    """
+    Tidy an extracted objective; '' when it does not read as an investment objective.
 
     Ends it at its last full sentence (dropping a stray heading word such as "FUND") and drops
     dated outcome-period details (e.g. a buffer ETF's cap "over the period April 1, 2026 through
@@ -756,13 +800,17 @@ def clean_objective(text: str) -> str:
 
 
 class SecFunds:
-    """US fund data from SEC EDGAR: investment objectives and registrant (trust) per ticker.
+    """
+    US fund data from SEC EDGAR: investment objectives and registrant (trust) per ticker.
 
     Disabled (every lookup returns '') without SEC_USER_AGENT_EMAIL or when EDGAR is
     unreachable, so it can never stop a run.
     """
 
     def __init__(self, contact: str | None) -> None:
+        """
+        Load the SEC fund series index when a contact email is set (SEC requires one).
+        """
         self.headers = {"User-Agent": f"FinanceDatabase {contact}"} if contact else None
         self.funds: dict[str, list] = {}
         self.last = 0.0
@@ -781,6 +829,9 @@ class SecFunds:
                 self.headers = None
 
     def get(self, url: str) -> str:
+        """
+        Download an SEC page, pausing between requests to respect the SEC rate limit.
+        """
         wait = 0.15 - (time.time() - self.last)  # stay under SEC's 10 requests/second
         if wait > 0:
             time.sleep(wait)
@@ -790,10 +841,14 @@ class SecFunds:
         return response.text
 
     def registrant(self, symbol: str) -> str:
+        """
+        Get the registrant (fund family) of a fund symbol, or an empty string.
+        """
         return str(self.funds[symbol][0]) if symbol in self.funds else ""
 
     def objective(self, symbol: str) -> str:
-        """Investment objective from one of the series' latest 497K filings, or ''.
+        """
+        Investment objective from one of the series' latest 497K filings, or ''.
 
         Some recent 497K filings are supplements (e.g. a portfolio-manager change) rather
         than a summary prospectus, so up to three are tried.
@@ -822,8 +877,10 @@ class SecFunds:
             print(f"  SEC objective for {symbol} unavailable: {type(error).__name__}")
             return ""
 
-    def registrant_families(self, db: Database) -> dict[str, str]:
-        """SEC registrant (CIK) -> family, where >= 90% of >= 5 existing US ETFs agree."""
+    def registrant_families(self, db: "Database") -> dict[str, str]:
+        """
+        SEC registrant (CIK) -> family, where >= 90% of >= 5 existing US ETFs agree.
+        """
         if not self.funds:
             return {}
         pairs = []
@@ -844,13 +901,15 @@ class SecFunds:
         return families
 
 
-# --------------------------------------------------------------------------- database update
-
-
 class Database:
-    """The per-exchange equities/ETF files plus the symbols of every asset class."""
+    """
+    The per-exchange equities/ETF files plus the symbols of every asset class.
+    """
 
     def __init__(self, root: str) -> None:
+        """
+        Hold the database files that are read, changed or added during the update.
+        """
         self.root = root
         self.frames: dict[str, pd.DataFrame] = {}
         self.added: dict[str, list[pd.Series]] = {}
@@ -870,6 +929,9 @@ class Database:
         }
 
     def frame(self, kind: str, file: str) -> pd.DataFrame:
+        """
+        Get an exchange file as a text DataFrame, read once and then kept.
+        """
         path = self.path(kind, file)
         if path not in self.frames:
             columns = self.columns[kind]
@@ -879,17 +941,24 @@ class Database:
         return self.frames[path]
 
     def path(self, kind: str, file: str) -> str:
+        """
+        Get the CSV path of an exchange file.
+        """
         return f"{self.root}/{kind}/{file}.csv"
 
     def symbol_keys(self, kind: str, file: str) -> dict[str, str]:
-        """Separator-free symbol -> symbol for an exchange file (cached)."""
+        """
+        Separator-free symbol -> symbol for an exchange file (cached).
+        """
         if (kind + "keys", file) not in self.cache:
             frame = self.frame(kind, file)
             self.cache[(kind + "keys", file)] = {symbol_key(s): s for s in frame.index}
         return self.cache[(kind + "keys", file)]
 
     def live_by_name(self, kind: str, file: str) -> dict[str, list[str]]:
-        """Normalised name -> live symbols for an exchange file (cached)."""
+        """
+        Normalised name -> live symbols for an exchange file (cached).
+        """
         if (kind + "names", file) not in self.cache:
             frame = self.frame(kind, file)
             names: dict[str, list[str]] = {}
@@ -899,7 +968,9 @@ class Database:
         return self.cache[(kind + "names", file)]
 
     def defaults(self, kind: str, file: str) -> dict[str, str]:
-        """mic / market of an exchange file, from its existing rows."""
+        """
+        mic / market of an exchange file, from its existing rows.
+        """
         frame = self.frame(kind, file)
         mode = lambda col: (  # noqa: E731
             frame[col][frame[col] != ""].mode().iloc[0]
@@ -909,7 +980,9 @@ class Database:
         return {"mic": mode("mic"), "market": mode("market")}
 
     def group_sector(self) -> dict[str, str]:
-        """GICS industry group -> sector as used in the equities files."""
+        """
+        GICS industry group -> sector as used in the equities files.
+        """
         frames = [
             read_csv_text(p)[["sector", "industry_group"]]
             for p in glob.glob(f"{self.root}/equities/*.csv")
@@ -923,7 +996,8 @@ class Database:
         )
 
     def etf_families(self) -> Callable[[str], str]:
-        """Issuer family from the opening words of an ETF name.
+        """
+        Issuer family from the opening words of an ETF name.
 
         The first two words are used when >= 95% of >= 5 existing ETFs starting with them
         share one family, otherwise the first word with >= 95% of >= 10 ETFs (or all of >= 3).
@@ -956,6 +1030,9 @@ class Database:
         return family
 
     def write(self) -> None:
+        """
+        Write back only the files that changed, keeping the rest byte-identical.
+        """
         for path, original in self.frames.items():
             if not self.added[path] and not original.attrs.get("changed"):
                 continue
@@ -980,7 +1057,9 @@ def apply_source(
     use_openfigi: bool = True,
     sec: SecFunds | None = None,
 ) -> dict:
-    """Add a source's new listings and delist superseded tickers. Returns a summary."""
+    """
+    Add a source's new listings and delist superseded tickers. Returns a summary.
+    """
     added, skipped_format, delist = [], [], []
     seen = set()
     for listing in result.listings:
@@ -1108,7 +1187,8 @@ def run(
     api_key: str | None = None,
     sec_contact: str | None = None,
 ) -> list[str]:
-    """Update the database from every source; returns the names of skipped sources.
+    """
+    Update the database from every source; returns the names of skipped sources.
 
     A source that cannot be downloaded (blocked, rate limited, offline), no longer has the
     expected format, or fails while being applied is skipped: its partial changes are rolled
@@ -1162,6 +1242,9 @@ def run(
 
 
 def main() -> None:
+    """
+    Run the listings update from the command line; a failure is reported, never raised.
+    """
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--database", default="database")
     parser.add_argument(

@@ -5,8 +5,6 @@ pandas filter of the same data, so the tests verify behaviour (the right rows, c
 options) but keep passing when the weekly database update adds tickers or refreshes values.
 """
 
-from __future__ import annotations
-
 import inspect
 import re
 from typing import Any

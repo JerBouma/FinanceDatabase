@@ -1,8 +1,11 @@
 """Cryptos Module"""
 
-import numpy as np
+__docformat__ = "google"
 
-from .helpers import FinanceDatabase, FinanceFrame
+import numpy as np
+import polars as pl
+
+from financedatabase.helpers import FinanceDatabase, FinanceFrame
 
 
 class Cryptos(FinanceDatabase):
@@ -33,29 +36,47 @@ class Cryptos(FinanceDatabase):
         cryptocurrency: str | list | None = None,
         currency: str | list | None = None,
         as_pandas: bool = True,
-    ) -> FinanceFrame:
+    ) -> FinanceFrame | pl.DataFrame:
         """
-        Obtain cryptocurrency data based on specified criteria.
+        Select cryptocurrencies based on the cryptocurrency and the currency it is quoted in.
 
-        This method allows you to retrieve data for specific cryptocurrencies and currencies,
-        with the option to customize the capitalization of cryptocurrency names. If no input
-        criteria are provided, it returns data for all cryptocurrencies.
+        Returns all cryptocurrencies when no input is given.
 
         Args:
-            cryptocurrency (str | list, optional): Specific cryptocurrency to retrieve data for.
-                If not provided, returns data for all cryptocurrencies.
-            currency (str | list, optional): Specific currency to retrieve data for.
-                If not provided, returns data for all currencies.
-            as_pandas (bool, optional): Return a pandas DataFrame (True, the default) or a
-                Polars DataFrame (False).
-
-
-        Raises:
-            ValueError: If the specified cryptocurrency or currency is not available in the database.
-                Please check the available cryptocurrencies and currencies using the 'show_options' method.
+            cryptocurrency (str | list, optional): Specific cryptocurrency or list of
+                cryptocurrencies to filter cryptocurrencies on. Defaults to None (all
+                cryptocurrencies).
+            currency (str | list, optional): Specific currency or list of currencies to
+                filter cryptocurrencies on. Defaults to None (all currencies).
+            as_pandas (bool, optional): Whether to return a pandas DataFrame (True) or a
+                Polars DataFrame (False). Defaults to True.
 
         Returns:
-            A DataFrame containing cryptocurrency data matching the specified input criteria.
+            FinanceFrame | pl.DataFrame: The cryptocurrencies matching every filter.
+
+        Raises:
+            ValueError: If a filter value is not available in the database. Check the
+                available values with the 'show_options' method.
+
+        As an example:
+
+        ```python
+        import financedatabase as fd
+
+        cryptos = fd.Cryptos()
+
+        cryptos.select(cryptocurrency="ETH")[["name", "cryptocurrency", "currency", "exchange"]]
+        ```
+
+        Which returns:
+
+        | symbol  | name         | cryptocurrency | currency | exchange |
+        |:--------|:-------------|:---------------|:---------|:---------|
+        | ETH-BTC | Ethereum BTC | ETH            | BTC      | CCC      |
+        | ETH-CAD | Ethereum CAD | ETH            | CAD      | CCC      |
+        | ETH-EUR | Ethereum EUR | ETH            | EUR      | CCC      |
+        | ETH-GBP | Ethereum GBP | ETH            | GBP      | CCC      |
+        | ETH-USD | Ethereum USD | ETH            | USD      | CCC      |
         """
         return self._select(
             {"cryptocurrency": cryptocurrency, "currency": currency},
@@ -70,31 +91,46 @@ class Cryptos(FinanceDatabase):
         cryptocurrency: str | list | None = None,
         currency: str | list | None = None,
         as_pandas: bool = True,
-    ) -> dict | np.ndarray:
+    ) -> dict | np.ndarray | pl.Series:
         """
-        Retrieve all options for a specified selection.
+        Show the available values of the cryptocurrencies filters.
 
-        This method returns a series containing all available options for the specified
-        selection, which can be one of the following: "cryptocurrency" or "currency".
+        The options can be narrowed down with the same filters as select().
 
         Args:
-            selection (str | None): The selection you want to see the options for.
-                Choose from "cryptocurrency" or "currency".
-            cryptocurrency (str | list | None): Specific cryptocurrency to filter options.
-                If not provided, returns data for all cryptocurrencies.
-            currency (str | list | None): Specific currency to filter options.
-                If not provided, returns data for all currencies.
-            as_pandas (bool, optional): Return the options as numpy arrays (True, the default)
-                or as Polars Series (False).
-
-
-        Raises:
-            ValueError: If the selection variable provided is not valid.
-                Choose from "cryptocurrency" or "currency".
+            selection (str | None, optional): The column to show the options of. Choose
+                from: "cryptocurrency", "currency". Defaults to None, which returns the
+                options of every column.
+            cryptocurrency (str | list, optional): Specific cryptocurrency or list of
+                cryptocurrencies to filter the options on. Defaults to None (all
+                cryptocurrencies).
+            currency (str | list, optional): Specific currency or list of currencies to
+                filter the options on. Defaults to None (all currencies).
+            as_pandas (bool, optional): Whether to return the options as numpy arrays (True)
+                or as Polars Series (False). Defaults to True.
 
         Returns:
-            dict | np.ndarray: A dictionary or array containing the available options
-                for the specified selection.
+            dict | np.ndarray | pl.Series: The sorted unique values of the selected column,
+                or a dictionary with the values of every column if no selection is given.
+
+        Raises:
+            ValueError: If the selection or a filter value is not valid.
+
+        As an example:
+
+        ```python
+        import financedatabase as fd
+
+        cryptos = fd.Cryptos()
+
+        cryptos.show_options(selection="currency", cryptocurrency="ETH")
+        ```
+
+        Which returns:
+
+        ```
+        ['BTC', 'CAD', 'EUR', 'GBP', 'USD']
+        ```
         """
         selection_values = ["cryptocurrency", "currency"]
         return self._show_options(

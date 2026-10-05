@@ -1,7 +1,6 @@
 """Equities Test Module"""
 
-from __future__ import annotations
-
+import logging
 import re
 import sys
 import types
@@ -243,11 +242,16 @@ def test_search_case_sensitive() -> None:
     assert not case_sensitive.empty
 
 
-def test_search_invalid_column_is_ignored(capsys) -> None:
-    """An unknown filter column logs a warning and is silently dropped."""
-    result = equities.search(nonexistent_column="value")
-    captured = capsys.readouterr()
-    assert "nonexistent_column is not a valid column" in captured.out
+def test_search_invalid_column_is_ignored(caplog) -> None:
+    """An unknown filter column logs a warning and is otherwise ignored."""
+    # The package logger doesn't propagate, so the capture handler is attached directly.
+    logger = logging.getLogger("financedatabase")
+    logger.addHandler(caplog.handler)
+    try:
+        result = equities.search(nonexistent_column="value")
+    finally:
+        logger.removeHandler(caplog.handler)
+    assert "nonexistent_column is not a valid column" in caplog.text
     assert len(result) == len(equities.select())  # both exclude delisted by default
 
 

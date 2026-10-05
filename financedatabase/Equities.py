@@ -1,8 +1,11 @@
-"Equities Module"
+"""Equities Module"""
+
+__docformat__ = "google"
 
 import numpy as np
+import polars as pl
 
-from .helpers import FinanceDatabase, FinanceFrame
+from financedatabase.helpers import FinanceDatabase, FinanceFrame
 
 
 class Equities(FinanceDatabase):
@@ -46,49 +49,67 @@ class Equities(FinanceDatabase):
         only_primary_listing: bool = False,
         exclude_delisted: bool = True,
         as_pandas: bool = True,
-    ) -> FinanceFrame:
+    ) -> FinanceFrame | pl.DataFrame:
         """
-        Retrieve equity data based on specified criteria.
+        Select equities based on the country, sector, industry group, industry and other criteria.
 
-        This method allows you to retrieve data for specific equities based on a combination
-        of country, sector, industry group, and industry filters. You can also exclude
-        exchanges from the search. If no input criteria are provided, it returns data for all equities.
+        Filters follow the GICS standard. Returns all equities when no input is given.
 
         Args:
-            country (str | list | None): Specific country or list of countries to filter equities.
-                If not provided, returns data for all countries.
-            sector (str | list | None): Specific sector or list of sectors to filter equities.
-                If not provided, returns data for all sectors.
-            industry_group (str | list | None): Specific industry group or list of industry groups
-                to filter equities. If not provided, returns data for all industry groups.
-            industry (str | list | None): Specific industry or list of industries to filter equities.
-                If not provided, returns data for all industries.
-            currency (str | list | None): Specific currency or list of currencies to filter equities.
-                If not provided, returns data for all currencies.
-            exchange (str | list | None): Specific exchange or list of exchanges to filter equities.
-                If not provided, returns data for all exchanges.
-            mic (str | list | None): Specific ISO 10383 MIC code or list of MIC codes to filter
-                equities. If not provided, returns data for all MIC codes.
-            market (str | list | None): Specific market or list of markets to filter equities.
-                If not provided, returns data for all markets.
-            market_cap (str | list | None): Specific market cap or list of market caps to filter equities.
-                If not provided, returns data for all market caps.
-            only_primary_listing (bool, optional): Whether to only include the primary listing.
-                If False, you will receive data for equities from different exchanges.
-                Default is False.
+            country (str | list, optional): Specific country or list of countries to filter
+                equities on. Defaults to None (all countries).
+            sector (str | list, optional): Specific sector or list of sectors to filter
+                equities on. Defaults to None (all sectors).
+            industry_group (str | list, optional): Specific industry group or list of
+                industry groups to filter equities on. Defaults to None (all industry
+                groups).
+            industry (str | list, optional): Specific industry or list of industries to
+                filter equities on. Defaults to None (all industries).
+            currency (str | list, optional): Specific currency or list of currencies to
+                filter equities on. Defaults to None (all currencies).
+            exchange (str | list, optional): Specific exchange or list of exchanges to
+                filter equities on. Defaults to None (all exchanges).
+            mic (str | list, optional): Specific MIC or list of MICs to filter equities on.
+                Defaults to None (all MICs).
+            market (str | list, optional): Specific market or list of markets to filter
+                equities on. Defaults to None (all markets).
+            market_cap (str | list, optional): Specific market cap or list of market caps to
+                filter equities on. Defaults to None (all market caps).
+            only_primary_listing (bool, optional): Whether to only include primary listings
+                (symbols without an exchange suffix). Defaults to False.
             exclude_delisted (bool, optional): Whether to exclude delisted equities.
-                If True, delisted equities will be excluded from the results.
-                Default is True.
-            as_pandas (bool, optional): Return a pandas DataFrame (True, the default) or a
-                Polars DataFrame (False).
-
-        Raises:
-            ValueError: If any of the specified criteria are not available in the database.
-                Please check the available options using the 'show_options' method.
+                Defaults to True.
+            as_pandas (bool, optional): Whether to return a pandas DataFrame (True) or a
+                Polars DataFrame (False). Defaults to True.
 
         Returns:
-            FinanceFrame:
-                A DataFrame containing equity data matching the specified input criteria.
+            FinanceFrame | pl.DataFrame: The equities matching every filter.
+
+        Raises:
+            ValueError: If a filter value is not available in the database. Check the
+                available values with the 'show_options' method.
+
+        As an example:
+
+        ```python
+        import financedatabase as fd
+
+        equities = fd.Equities()
+
+        equities.select(country="Netherlands", sector="Financials", only_primary_listing=True)[
+            ["name", "currency", "industry", "exchange", "market_cap"]
+        ].head()
+        ```
+
+        Which returns:
+
+        | symbol | name                                   | currency | industry         | exchange | market_cap |
+        |:-------|:---------------------------------------|:---------|:-----------------|:---------|:-----------|
+        | AAVMY  | ABN AMRO Bank N.V. Depositary receipts | USD      | Banks            | PNK      | Large Cap  |
+        | ABMRF  | ABN AMRO Bank N.V. Depositary receipts | USD      | Banks            | PNK      | Large Cap  |
+        | AEG    | Aegon N.V.                             | USD      | Insurance        | NYQ      | Large Cap  |
+        | AEGOF  | Aegon N.V.                             | USD      | Insurance        | PNK      | Mid Cap    |
+        | CNCK   | Coincheck Group N.V. Ordinary Shares   | USD      | Consumer Finance | NMS      | Micro Cap  |
         """
         return self._select(
             {
@@ -121,49 +142,63 @@ class Equities(FinanceDatabase):
         market_cap: str | list | None = None,
         exclude_delisted: bool = True,
         as_pandas: bool = True,
-    ) -> dict | np.ndarray:
+    ) -> dict | np.ndarray | pl.Series:
         """
-        Retrieve all options for the specified selection.
+        Show the available values of the equities filters.
 
-        This method returns a series containing all available options for the specified
-        selection, which can be one of the following: "currency", "sector", "industry_group",
-        "industry", "exchange", "market", "country", "market_cap".
+        The options can be narrowed down with the same filters as select().
 
         Args:
-            selection (str):
-                The selection you want to see the options for. Choose from:
-                "currency", "sector", "industry_group", "industry", "exchange",
-                "market", "country", "state", "zip_code", "market_cap".
-                If None, returns all options for the specified country, sector, industry group
-                and industry.
-            country (str | list | None): Specific country or list of countries to filter options.
-                If not provided, returns data for all countries.
-            sector (str | list | None): Specific sector or list of sectors to filter options.
-                If not provided, returns data for all sectors.
-            industry_group (str | list | None): Specific industry group or list of industry groups
-                to filter options. If not provided, returns data for all industry groups.
-            industry (str | list | None): Specific industry or list of industries to filter options.
-                If not provided, returns data for all industries.
-            currency (str | list | None): Specific currency or list of currencies to filter options.
-                If not provided, returns data for all currencies.
-            exchange (str | list | None): Specific exchange or list of exchanges to filter options.
-                If not provided, returns data for all exchanges.
-            market (str | list | None): Specific market or list of markets to filter options.
-                If not provided, returns data for all markets.
-            market_cap (str | list | None): Specific market cap or list of market caps to filter options.
-                If not provided, returns data for all market caps.
-            as_pandas (bool, optional): Return the options as numpy arrays (True, the default)
-                or as Polars Series (False).
-
-
-        Raises:
-            ValueError: If the selection variable provided is not valid.
-                Please check the available options using the 'show_options' method.
+            selection (str | None, optional): The column to show the options of. Choose
+                from: "country", "sector", "industry_group", "industry", "currency",
+                "exchange", "mic", "market", "market_cap". Defaults to None, which returns
+                the options of every column.
+            country (str | list, optional): Specific country or list of countries to filter
+                the options on. Defaults to None (all countries).
+            sector (str | list, optional): Specific sector or list of sectors to filter the
+                options on. Defaults to None (all sectors).
+            industry_group (str | list, optional): Specific industry group or list of
+                industry groups to filter the options on. Defaults to None (all industry
+                groups).
+            industry (str | list, optional): Specific industry or list of industries to
+                filter the options on. Defaults to None (all industries).
+            currency (str | list, optional): Specific currency or list of currencies to
+                filter the options on. Defaults to None (all currencies).
+            exchange (str | list, optional): Specific exchange or list of exchanges to
+                filter the options on. Defaults to None (all exchanges).
+            mic (str | list, optional): Specific MIC or list of MICs to filter the options
+                on. Defaults to None (all MICs).
+            market (str | list, optional): Specific market or list of markets to filter the
+                options on. Defaults to None (all markets).
+            market_cap (str | list, optional): Specific market cap or list of market caps to
+                filter the options on. Defaults to None (all market caps).
+            exclude_delisted (bool, optional): Whether to exclude delisted equities.
+                Defaults to True.
+            as_pandas (bool, optional): Whether to return the options as numpy arrays (True)
+                or as Polars Series (False). Defaults to True.
 
         Returns:
-            dict | np.ndarray: A dictionary or array with all options for the specified selection.
-                If selection is None, returns a dictionary with unique values for all fields.
-                If selection is specified, returns an array of unique values for that field.
+            dict | np.ndarray | pl.Series: The sorted unique values of the selected column,
+                or a dictionary with the values of every column if no selection is given.
+
+        Raises:
+            ValueError: If the selection or a filter value is not valid.
+
+        As an example:
+
+        ```python
+        import financedatabase as fd
+
+        equities = fd.Equities()
+
+        equities.show_options(selection="market_cap", country="Netherlands")
+        ```
+
+        Which returns:
+
+        ```
+        ['Large Cap', 'Mega Cap', 'Micro Cap', 'Mid Cap', 'Nano Cap', 'Small Cap']
+        ```
         """
         selection_values = [
             "currency",
