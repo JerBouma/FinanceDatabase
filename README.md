@@ -28,20 +28,20 @@ Some key statistics of the database:
 
 <div align="center">
 
-![symbols](https://img.shields.io/badge/symbols-316%2C310-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-117%2C929-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C057-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--04-57606A?style=flat-square)
+![symbols](https://img.shields.io/badge/symbols-316%2C348-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-117%2C947-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C066-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--05-57606A?style=flat-square)
 
 </div>
 
 | | Asset class | Symbols | Actively listed | Exchanges | Coverage |
 | :-: | :-- | --: | --: | --: | :-- |
-| 🏢 | **Equities** | 117,929 | 103,600 | 84 | 11 sectors · 76 industries · 117 countries |
-| 📦 | **ETFs** | 42,057 | 41,450 | 53 | 593 issuers · 43 categories |
+| 🏢 | **Equities** | 117,947 | 103,615 | 84 | 11 sectors · 76 industries · 117 countries |
+| 📦 | **ETFs** | 42,066 | 41,459 | 53 | 593 issuers · 43 categories |
 | 💼 | **Funds** | 57,853 | – | 33 | 1,540 fund families · 74 categories |
 | 📈 | **Indices** | 91,181 | – | 63 | 42 categories |
 | 💱 | **Currencies** | 2,556 | – | – | 178 currencies |
-| 🪙 | **Cryptocurrencies** | 3,367 | – | – | 351 coins · 12 quote currencies |
+| 🪙 | **Cryptocurrencies** | 3,378 | – | – | 352 coins · 12 quote currencies |
 | 🏦 | **Money Markets** | 1,367 | – | 2 | 129 fund families |
-| | **Total** | **316,310** | | | |
+| | **Total** | **316,348** | | | |
 
 <details>
 <summary><b>📊 More statistics</b>: composition, sectors, countries, exchanges and ETF categories</summary>
@@ -49,11 +49,11 @@ Some key statistics of the database:
 ```mermaid
 pie showData
     title Symbols per asset class
-    "Equities" : 117929
+    "Equities" : 117947
     "Indices" : 91181
     "Funds" : 57853
-    "ETFs" : 42057
-    "Cryptocurrencies" : 3367
+    "ETFs" : 42066
+    "Cryptocurrencies" : 3378
     "Currencies" : 2556
     "Money Markets" : 1367
 ```
@@ -69,7 +69,7 @@ pie showData
 | Materials | 12,662 |
 | Information Technology | 10,615 |
 | Health Care | 10,249 |
-| Consumer Discretionary | 9,895 |
+| Consumer Discretionary | 9,892 |
 | Consumer Staples | 5,206 |
 | Real Estate | 4,426 |
 | Communication Services | 4,078 |
@@ -84,8 +84,8 @@ pie showData
 | United States | 24,033 |
 | Canada | 8,873 |
 | China | 6,614 |
-| India | 6,513 |
-| Japan | 6,440 |
+| India | 6,520 |
+| Japan | 6,448 |
 | Germany | 4,353 |
 | United Kingdom | 3,795 |
 | Australia | 3,586 |
@@ -106,11 +106,11 @@ pie showData
 | BER | 7,347 |
 | MUN | 5,883 |
 | NMS | 4,447 |
-| JPX | 3,737 |
+| JPX | 3,745 |
 | BSE | 3,710 |
 | DUS | 3,353 |
 | NYQ | 3,342 |
-| *Other (74)* | 42,231 |
+| *Other (74)* | 42,238 |
 
 </td>
 <td valign="top">
