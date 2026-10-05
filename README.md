@@ -538,20 +538,6 @@ A sample of the output is shown below, focusing on ETH-BTC:
 | 2025Q2 | 0.0218 | 0.0217 | 0.0216 |  0.0216 |      0.0216 |   195229 |           0 |  -0.0137 |       0.1415 |         -0.053  |              0.1361 |              1.0435 |
 
 
-## Caching and Polars output
-The database files are downloaded once and kept in a local cache (`~/.cache/financedatabase` on Linux, `~/Library/Caches/financedatabase` on macOS, `%LOCALAPPDATA%\financedatabase\Cache` on Windows, or the folder set in `FINANCEDATABASE_CACHE_DIR`). Once a day the package checks whether a newer version was published and only downloads it when it changed; without an internet connection the cached copy is used. Queries are run lazily with [Polars](https://pola.rs), so only the rows and columns you ask for are read.
-
-Every `select`, `search` and `show_options` call returns pandas by default, exactly as before. Pass `as_pandas=False` to get a Polars `DataFrame` (or Polars `Series` for options) instead:
-
-```python
-import polars as pl
-
-equities = fd.Equities()
-
-canadian_banks = equities.select(country="Canada", industry="Banks", as_pandas=False)
-canadian_banks.filter(pl.col("market_cap") == "Large Cap")
-```
-
 # MCP Server
 
 The Finance Database MCP Server gives any AI assistant that supports the [Model Context Protocol](https://modelcontextprotocol.io) (MCP) direct access to the database. Ask in plain English for, say, every mid cap semiconductor company in Taiwan or the bond ETFs of a given issuer, and the assistant queries the database on your behalf. No API key is needed. The data is downloaded once, cached locally and checked for updates at most once a day, exactly like the Python package.
@@ -633,6 +619,10 @@ While professional financial data services like Bloomberg charge over $25,000 an
 Most companies don't change so rapidly that the database becomes obsolete - major changes like Facebook's rebrand to META are quickly incorporated. Even when companies go bankrupt, their ticker information remains valuable for historical analysis.
 
 If you notice outdated information, please consider contributing through the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
+
+> **Is the data downloaded every time I use the package?**
+
+No. Each dataset is downloaded once and cached in your user cache folder (or the folder set in `FINANCEDATABASE_CACHE_DIR`). Once a day the package checks for a newer version and only downloads it when it changed; offline, the cached copy is used. Queries run lazily with [Polars](https://pola.rs/) and return pandas by default, or Polars with `as_pandas=False`, e.g. `equities.select(country="Canada", as_pandas=False)`.
 
 # Contributions
 
