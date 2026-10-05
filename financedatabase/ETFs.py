@@ -30,9 +30,6 @@ class ETFs(FinanceDatabase):
         "exchange": ("exchange", "exchanges"),
         "mic": ("MIC", "MICs"),
     }
-    # ETFs validate filter values against listed ETFs only, also when delisted ones are
-    # requested (kept as before; equities follow exclude_delisted since #171).
-    VALIDATION_EXCLUDES_DELISTED = True
 
     def select(
         self,
