@@ -5,7 +5,8 @@ __docformat__ = "google"
 import numpy as np
 import polars as pl
 
-from financedatabase.helpers import FinanceDatabase, FinanceFrame
+from financedatabase.database_controller import FinanceDatabase
+from financedatabase.frame_controller import FinanceFrame
 
 
 class Currencies(FinanceDatabase):
@@ -74,7 +75,7 @@ class Currencies(FinanceDatabase):
         | EURAMD=X | EUR/AMD | EUR           | AMD            | CCY      |
         | EURANG=X | EUR/ANG | EUR           | ANG            | CCY      |
         """
-        return self._select(
+        return self._select_rows(
             {"base_currency": base_currency, "quote_currency": quote_currency},
             only_primary_listing=False,
             exclude_delisted=False,
@@ -129,7 +130,7 @@ class Currencies(FinanceDatabase):
         ```
         """
         selection_values = ["base_currency", "quote_currency"]
-        return self._show_options(
+        return self._collect_options(
             selection,
             selection_values,
             f"The selection variable ({selection}) provided is not valid, "

@@ -1,32 +1,32 @@
-"""Funds Module"""
+"""Indices Module"""
 
 __docformat__ = "google"
 
 import numpy as np
 import polars as pl
 
-from financedatabase.helpers import FinanceDatabase, FinanceFrame
+from financedatabase.database_controller import FinanceDatabase
+from financedatabase.frame_controller import FinanceFrame
 
 
-class Funds(FinanceDatabase):
+class Indices(FinanceDatabase):
     """
-    A Mutual Fund is a financial vehicle that pools assets from shareholders to
-    invest in securities like stocks, bonds, money market instruments, and
-    other assets. Mutual funds are operated by professional money managers, who
-    allocate the fund's assets and attempt to produce capital gains or income for
-    the fund's investors. A mutual fund's portfolio is structured and maintained
-    to match the investment objectives stated in its prospectus.
+    An index is a method to track the performance of a group of assets in a standardized way.
+    Indexes typically measure the performance of a basket of securities intended to
+    replicate a certain area of the market. These could be constructed as a broad-based
+    index that captures the entire market, such as the Standard & Poor's 500 Index or
+    Dow Jones Industrial Average (DJIA), or more specialized such as indexes that
+    track a particular industry or segment such as the Russell 2000 Index,
+    which tracks only small-cap stocks.
 
-    This class provides information about the funds available as well as the
-    ability to select specific funds based on the category and/or family.
+    This class provides information about the indices available as well as the
+    ability to select specific indices based on various criteria.
     """
 
-    FILE_NAME = "funds.bz2"
-    PLURAL_NAME = "funds"
+    FILE_NAME = "indices.bz2"
     FIELDS = {
         "category_group": ("category group", "category groups"),
         "category": ("category", "categories"),
-        "family": ("family", "families"),
         "currency": ("currency", "currencies"),
         "exchange": ("exchange", "exchanges"),
         "mic": ("MIC", "MICs"),
@@ -36,38 +36,33 @@ class Funds(FinanceDatabase):
         self,
         category_group: str | list | None = None,
         category: str | list | None = None,
-        family: str | list | None = None,
         currency: str | list | None = None,
         exchange: str | list | None = None,
         mic: str | list | None = None,
-        only_primary_listing: bool = False,
         as_pandas: bool = True,
     ) -> FinanceFrame | pl.DataFrame:
         """
-        Select funds based on the category group, category, family and other criteria.
+        Select indices based on the category group, category, currency and other criteria.
 
-        Returns all funds when no input is given.
+        Returns all indices when no input is given.
 
         Args:
             category_group (str | list, optional): Specific category group or list of
-                category groups to filter funds on. Defaults to None (all category groups).
+                category groups to filter indices on. Defaults to None (all category
+                groups).
             category (str | list, optional): Specific category or list of categories to
-                filter funds on. Defaults to None (all categories).
-            family (str | list, optional): Specific family or list of families to filter
-                funds on. Defaults to None (all families).
+                filter indices on. Defaults to None (all categories).
             currency (str | list, optional): Specific currency or list of currencies to
-                filter funds on. Defaults to None (all currencies).
+                filter indices on. Defaults to None (all currencies).
             exchange (str | list, optional): Specific exchange or list of exchanges to
-                filter funds on. Defaults to None (all exchanges).
-            mic (str | list, optional): Specific MIC or list of MICs to filter funds on.
+                filter indices on. Defaults to None (all exchanges).
+            mic (str | list, optional): Specific MIC or list of MICs to filter indices on.
                 Defaults to None (all MICs).
-            only_primary_listing (bool, optional): Whether to only include primary listings
-                (symbols without an exchange suffix). Defaults to False.
             as_pandas (bool, optional): Whether to return a pandas DataFrame (True) or a
                 Polars DataFrame (False). Defaults to True.
 
         Returns:
-            FinanceFrame | pl.DataFrame: The funds matching every filter.
+            FinanceFrame | pl.DataFrame: The indices matching every filter.
 
         Raises:
             ValueError: If a filter value is not available in the database. Check the
@@ -78,33 +73,32 @@ class Funds(FinanceDatabase):
         ```python
         import financedatabase as fd
 
-        funds = fd.Funds()
+        indices = fd.Indices()
 
-        funds.select(category_group="Equities", category="Growth", family="Fidelity Investments")[
+        indices.select(category_group="Equities", category="Large Cap", currency="EUR")[
             ["name", "currency", "category", "exchange"]
         ].head()
         ```
 
         Which returns:
 
-        | symbol        | name                                        | currency | category | exchange |
-        |:--------------|:--------------------------------------------|:---------|:---------|:---------|
-        | 0P00019F32.TO | Fidelity Global Growth Class Portfolio E2T5 | CAD      | Growth   | TOR      |
-        | 0P0001DBVH.TO | Fidelity Global Innovators Class E2T5       | CAD      | Growth   | TOR      |
-        | 0P0001DBVR.TO | Fidelity Special Situations Class E3T5      | CAD      | Growth   | TOR      |
-        | 0P0001EESI.TO | Fidelity Global Innovators Class E4T5       | CAD      | Growth   | TOR      |
-        | 0P0001EESJ.TO | Fidelity Global Innovators Class E5T5       | CAD      | Growth   | TOR      |
+        | symbol | name              | currency | category  | exchange |
+        |:-------|:------------------|:---------|:----------|:---------|
+        | 0020.Z | ESTX LRB50 NR EUR | EUR      | Large Cap | ZRH      |
+        | 0022.Z | ESTX LRB50 PR EUR | EUR      | Large Cap | ZRH      |
+        | 002A.Z | ESTX LR50 NR EUR  | EUR      | Large Cap | ZRH      |
+        | 002C.Z | ESTX LR50 PR EUR  | EUR      | Large Cap | ZRH      |
+        | 002G.Z | ESTX LR100 NR EUR | EUR      | Large Cap | ZRH      |
         """
-        return self._select(
+        return self._select_rows(
             {
                 "category_group": category_group,
                 "category": category,
-                "family": family,
                 "currency": currency,
                 "exchange": exchange,
                 "mic": mic,
             },
-            only_primary_listing=only_primary_listing,
+            only_primary_listing=False,
             exclude_delisted=False,
             as_pandas=as_pandas,
         )
@@ -114,28 +108,25 @@ class Funds(FinanceDatabase):
         selection: str | None = None,
         category_group: str | list | None = None,
         category: str | list | None = None,
-        family: str | list | None = None,
         currency: str | list | None = None,
         exchange: str | list | None = None,
         mic: str | list | None = None,
         as_pandas: bool = True,
     ) -> dict | np.ndarray | pl.Series:
         """
-        Show the available values of the funds filters.
+        Show the available values of the indices filters.
 
         The options can be narrowed down with the same filters as select().
 
         Args:
             selection (str | None, optional): The column to show the options of. Choose
-                from: "category_group", "category", "family", "currency", "exchange", "mic".
-                Defaults to None, which returns the options of every column.
+                from: "category_group", "category", "currency", "exchange", "mic". Defaults
+                to None, which returns the options of every column.
             category_group (str | list, optional): Specific category group or list of
                 category groups to filter the options on. Defaults to None (all category
                 groups).
             category (str | list, optional): Specific category or list of categories to
                 filter the options on. Defaults to None (all categories).
-            family (str | list, optional): Specific family or list of families to filter the
-                options on. Defaults to None (all families).
             currency (str | list, optional): Specific currency or list of currencies to
                 filter the options on. Defaults to None (all currencies).
             exchange (str | list, optional): Specific exchange or list of exchanges to
@@ -157,9 +148,9 @@ class Funds(FinanceDatabase):
         ```python
         import financedatabase as fd
 
-        funds = fd.Funds()
+        indices = fd.Indices()
 
-        funds.show_options(selection="category_group")
+        indices.show_options(selection="category_group")
         ```
 
         Which returns:
@@ -172,14 +163,13 @@ class Funds(FinanceDatabase):
         ```
         """
         selection_values = [
-            "currency",
             "category_group",
             "category",
-            "family",
+            "currency",
             "exchange",
             "mic",
         ]
-        return self._show_options(
+        return self._collect_options(
             selection,
             selection_values,
             f"The selection variable provided is not valid, "
@@ -187,7 +177,6 @@ class Funds(FinanceDatabase):
             {
                 "category_group": category_group,
                 "category": category,
-                "family": family,
                 "currency": currency,
                 "exchange": exchange,
                 "mic": mic,

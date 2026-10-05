@@ -1,23 +1,17 @@
-"""Funds Test Module"""
-
-from typing import Any
+"""Money Markets Controller Tests"""
 
 import pytest
 
 import financedatabase as fd
-from tests.structure import check_search, check_select, check_show_options
+from tests.helpers import check_search, check_select, check_show_options
 
-funds = fd.Funds(use_local_location=True)
+moneymarkets = fd.Moneymarkets(use_local_location=True)
 
 
 SELECT_CASES = [
     {},
-    {"currency": "TWD"},
-    {"category": "Energy"},
-    {"category_group": "Miscellaneous"},
-    {"family": "13D Activist Fund"},
-    {"exchange": "PAR"},
-    {"exchange": "FRA", "category": "Energy"},
+    {"currency": "USD"},
+    {"family": "BlackRock Funds"},
 ]
 
 
@@ -35,18 +29,14 @@ def test_select(kwargs: dict) -> None:
             "selection",
         ]
     ]
-    check_select(funds, nonempty=len(filters) <= 1, **kwargs)
+    check_select(moneymarkets, nonempty=len(filters) <= 1, **kwargs)
 
 
 SHOW_OPTIONS_CASES = [
     {},
-    {"selection": "category"},
-    {"selection": "category_group"},
-    {"selection": "family"},
     {"selection": "currency"},
-    {"selection": "exchange"},
-    {"exchange": "PAR"},
-    {"category": "Energy"},
+    {"selection": "family"},
+    {"family": "BlackRock Funds"},
 ]
 
 
@@ -64,17 +54,14 @@ def test_show_options(kwargs: dict) -> None:
             "selection",
         ]
     ]
-    check_show_options(funds, nonempty=len(filters) <= 1, **kwargs)
+    check_show_options(moneymarkets, nonempty=len(filters) <= 1, **kwargs)
 
 
 SEARCH_CASES = [
-    {"summary": "Shares"},
-    {"index": "GSPX"},
-    {"category": "Utilities"},
-    {"category_group": "Miscellaneous"},
-    {"family": "ivari"},
-    {"exchange": "NZE"},
-    {"summary": "Pension", "category": "Energy"},
+    {"summary": "Government"},
+    {"index": "RXX"},
+    {"currency": "USD"},
+    {"family": "BlackRock Funds"},
 ]
 
 
@@ -92,29 +79,12 @@ def test_search(kwargs: dict) -> None:
             "selection",
         ]
     ]
-    check_search(funds, nonempty=len(filters) <= 1, **kwargs)
+    check_search(moneymarkets, nonempty=len(filters) <= 1, **kwargs)
 
 
 def test_select_with_invalid_value_raises() -> None:
     """`select(<filter>=...)` raises ValueError for values not in show_options()."""
 
-    for col in [
-        "category_group",
-        "category",
-        "family",
-        "currency",
-        "exchange",
-        "mic",
-    ]:
-        kwargs: dict[str, Any] = {col: "__definitely_not_a_real_value__"}
+    for col in ["currency", "family"]:
         with pytest.raises(ValueError, match="not available in the database"):
-            funds.select(**kwargs)
-
-
-def test_select_mic() -> None:
-    """`select(mic=...)` filters funds by their ISO 10383 MIC code."""
-    assert "mic" in funds.show_options()
-    mic = list(funds.show_options(selection="mic"))[0]
-    result = funds.select(mic=mic)
-    assert not result.empty
-    assert (result["mic"] == mic).all()
+            moneymarkets.select(**{col: "__definitely_not_a_real_value__"})

@@ -1,4 +1,4 @@
-"""Equities Test Module"""
+"""Equities Controller Tests"""
 
 import logging
 import re
@@ -12,7 +12,7 @@ import pytest
 import requests as _requests
 
 import financedatabase as fd
-from tests.structure import check_search, check_select, check_show_options
+from tests.helpers import check_search, check_select, check_show_options
 
 equities = fd.Equities(use_local_location=True)
 
@@ -266,10 +266,10 @@ def test_to_toolkit_raises_without_financetoolkit(monkeypatch) -> None:
 def test_init_raises_on_request_failure(monkeypatch) -> None:
     """`FinanceDatabase.__init__` re-raises as ValueError on network failure."""
 
-    def _fail(*a, **kw):
+    def raise_connection_error(*a, **kw):
         raise _requests.exceptions.ConnectionError("simulated")
 
-    monkeypatch.setattr(_requests, "get", _fail)
+    monkeypatch.setattr(_requests, "get", raise_connection_error)
     with pytest.raises(ValueError, match="Failed to load data"):
         fd.Equities()
 
@@ -286,10 +286,10 @@ def test_module_show_options_raises_on_invalid_selection() -> None:
 def test_module_show_options_raises_on_request_failure(monkeypatch) -> None:
     """The module-level `show_options` re-raises as ValueError on network failure."""
 
-    def _fail(*a, **kw):
+    def raise_connection_error(*a, **kw):
         raise _requests.exceptions.ConnectionError("simulated")
 
-    monkeypatch.setattr(_requests, "get", _fail)
+    monkeypatch.setattr(_requests, "get", raise_connection_error)
     with pytest.raises(ValueError, match="Failed to load data"):
         fd.show_options(selection="equities")
 

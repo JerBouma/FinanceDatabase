@@ -1,17 +1,6 @@
-"""
-Registry Controller: builds one MCP tool per asset class from config.yaml.
+"""Registry Module"""
 
-Each asset class (equities, ETFs, funds, ...) becomes a single tool whose
-parameters are that class's ``select()`` filters, read from the package's
-``FIELDS`` so the tool can never drift from the Python API, plus a free-text
-query, delisted/primary-listing switches, column selection and pagination.
-
-The tool functions are generated: a closure receives the arguments and its
-``__signature__`` is replaced with explicit ``Annotated[..., Field(...)]``
-parameters, which FastMCP turns into the JSON schema clients see.
-"""
-
-from __future__ import annotations
+__docformat__ = "google"
 
 import inspect
 import time
@@ -22,14 +11,18 @@ from mcp.server.fastmcp import FastMCP
 from mcp.types import ToolAnnotations
 from pydantic import Field
 
-from financedatabase.mcp_server.coercion_model import split_values, to_boolean, to_int
+from financedatabase.mcp_server.coercion_model import (
+    convert_to_boolean,
+    convert_to_int,
+    split_values,
+)
 from financedatabase.mcp_server.formatting_model import format_page
-from financedatabase.mcp_server.logger_model import get_logger
 from financedatabase.mcp_server.provider_model import (
     AssetClassSpec,
     DatabaseProvider,
     QueryError,
 )
+from financedatabase.utilities.logger_model import get_logger
 
 logger = get_logger()
 
@@ -99,7 +92,7 @@ class AssetToolRegistry:
         self._max_limit = int(limits["max_limit"])
         self._max_text_length = int(limits["max_text_length"])
 
-    def _run(
+    def _run_asset_tool(
         self,
         spec: AssetClassSpec,
         kwargs: dict[str, Any],
@@ -116,22 +109,23 @@ class AssetToolRegistry:
         """
         notes: list[str] = []
         requested_limit = kwargs.pop("limit", None)
-        limit = to_int(requested_limit, self._default_limit, 1, self._max_limit)
+        limit = convert_to_int(requested_limit, self._default_limit, 1, self._max_limit)
         if (
             requested_limit is not None
-            and to_int(requested_limit, 0, 0) > self._max_limit
+            and convert_to_int(requested_limit, 0, 0) > self._max_limit
         ):
             notes.append(f"limit is capped at {self._max_limit} rows per call.")
-        offset = to_int(kwargs.pop("offset", 0), 0, 0)
+        offset = convert_to_int(kwargs.pop("offset", 0), 0, 0)
         query = kwargs.pop("query", None)
-        include_delisted = to_boolean(kwargs.pop("include_delisted", False))
-        only_primary_listing = to_boolean(kwargs.pop("only_primary_listing", False))
-        include_summary = to_boolean(kwargs.pop("include_summary", False))
+        include_delisted = convert_to_boolean(kwargs.pop("include_delisted", False))
+        only_primary_listing = convert_to_boolean(
+            kwargs.pop("only_primary_listing", False)
+        )
+        include_summary = convert_to_boolean(kwargs.pop("include_summary", False))
         show_columns = split_values(kwargs.pop("show_columns", None))
 
         requested = show_columns or list(spec.default_columns)
         if include_summary and "summary" not in requested:
-            # Right after the name, where a reader expects the description.
             position = requested.index("name") + 1 if "name" in requested else 1
             requested.insert(position, "summary")
         if include_delisted and spec.supports_delisted and not show_columns:
@@ -173,13 +167,17 @@ class AssetToolRegistry:
             Callable[..., str]: A function with a replaced ``__signature__``.
         """
 
-        def wrapper(**kwargs: Any) -> str:
-            return run_tool(spec.tool_name, lambda: self._run(spec, dict(kwargs)))
+        def run_wrapper(**kwargs: Any) -> str:
+            return run_tool(
+                spec.tool_name, lambda: self._run_asset_tool(spec, dict(kwargs))
+            )
 
         P = inspect.Parameter
         KW = P.KEYWORD_ONLY
 
-        def param(name: str, annotation: Any, default: Any, description: str) -> P:
+        def create_parameter(
+            name: str, annotation: Any, default: Any, description: str
+        ) -> P:
             return P(
                 name,
                 KW,
@@ -188,7 +186,7 @@ class AssetToolRegistry:
             )
 
         params = [
-            param(
+            create_parameter(
                 "query",
                 str | None,
                 None,
@@ -197,18 +195,18 @@ class AssetToolRegistry:
                 "available. Best matches come first.",
             )
         ]
-        for name in spec.filters:
+        for name in spec.get_filters():
             description = self._filter_descriptions.get(
                 name, f"Filter on {name.replace('_', ' ')}."
             )
             params.append(
-                param(
+                create_parameter(
                     name, str | list[str] | None, None, description + MULTI_VALUE_HINT
                 )
             )
         if spec.supports_delisted:
             params.append(
-                param(
+                create_parameter(
                     "include_delisted",
                     bool,
                     False,
@@ -218,7 +216,7 @@ class AssetToolRegistry:
             )
         if spec.supports_primary_listing:
             params.append(
-                param(
+                create_parameter(
                     "only_primary_listing",
                     bool,
                     False,
@@ -228,14 +226,14 @@ class AssetToolRegistry:
             )
         columns = ", ".join(spec.columns) if spec.columns else "see the data"
         params += [
-            param(
+            create_parameter(
                 "show_columns",
                 str | list[str] | None,
                 None,
                 "Columns to return, comma-separated. Default: "
                 f"{', '.join(spec.default_columns)}. Available: {columns}.",
             ),
-            param(
+            create_parameter(
                 "include_summary",
                 bool,
                 False,
@@ -243,14 +241,14 @@ class AssetToolRegistry:
                 f"{self._max_text_length} characters). Off by default to keep "
                 "responses small.",
             ),
-            param(
+            create_parameter(
                 "limit",
                 int,
                 self._default_limit,
                 f"Rows to return (default {self._default_limit}, maximum "
                 f"{self._max_limit}).",
             ),
-            param(
+            create_parameter(
                 "offset",
                 int,
                 0,
@@ -258,12 +256,12 @@ class AssetToolRegistry:
             ),
         ]
 
-        wrapper.__signature__ = inspect.Signature(params, return_annotation=str)  # type: ignore[attr-defined]
-        wrapper.__annotations__ = {p.name: p.annotation for p in params}
-        wrapper.__annotations__["return"] = str
-        wrapper.__name__ = spec.tool_name
-        wrapper.__doc__ = spec.description
-        return wrapper
+        run_wrapper.__signature__ = inspect.Signature(params, return_annotation=str)  # type: ignore[attr-defined]
+        run_wrapper.__annotations__ = {p.name: p.annotation for p in params}
+        run_wrapper.__annotations__["return"] = str
+        run_wrapper.__name__ = spec.tool_name
+        run_wrapper.__doc__ = spec.description
+        return run_wrapper
 
     def register_all_tools(self) -> int:
         """
@@ -281,10 +279,8 @@ class AssetToolRegistry:
                     title=spec.display_name,
                     readOnlyHint=True,
                     idempotentHint=True,
-                    # A fixed, curated dataset rather than live external data.
                     openWorldHint=False,
                 ),
-                # The JSON text is the result; a structured copy would double its size.
                 structured_output=False,
             )
             logger.debug("Registered asset class tool '%s'", spec.tool_name)

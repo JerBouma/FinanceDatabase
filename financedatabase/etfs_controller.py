@@ -5,7 +5,8 @@ __docformat__ = "google"
 import numpy as np
 import polars as pl
 
-from financedatabase.helpers import FinanceDatabase, FinanceFrame
+from financedatabase.database_controller import FinanceDatabase
+from financedatabase.frame_controller import FinanceFrame
 
 
 class ETFs(FinanceDatabase):
@@ -103,7 +104,7 @@ class ETFs(FinanceDatabase):
         | IUTSF  | iShares S&P/TSX 60 Index ETF               | USD      | Large Cap | PNK      |
         | IVV    | iShares Core S&P 500 ETF                   | USD      | Large Cap | PCX      |
         """
-        return self._select(
+        return self._select_rows(
             {
                 "category_group": category_group,
                 "category": category,
@@ -191,7 +192,7 @@ class ETFs(FinanceDatabase):
             "exchange",
             "mic",
         ]
-        return self._show_options(
+        return self._collect_options(
             selection,
             selection_values,
             f"The selection variable provided is not valid, "

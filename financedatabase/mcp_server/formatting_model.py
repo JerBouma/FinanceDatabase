@@ -1,13 +1,6 @@
-"""
-Formatting Model: converts Finance Database results to compact JSON for LLM consumption.
+"""Formatting Model"""
 
-JSON is preferred over Markdown tables for data because keys are self-labelling and
-there is no parsing ambiguity; Markdown is only used for the small discovery listing.
-Every payload is built from an already bounded frame, so nothing here can return
-more rows than the caller asked for.
-"""
-
-from __future__ import annotations
+__docformat__ = "google"
 
 import json
 from typing import Any
@@ -40,7 +33,7 @@ def truncate_text(frame: pl.DataFrame, max_length: int) -> pl.DataFrame:
     )
 
 
-def to_records(frame: pl.DataFrame) -> list[dict[str, Any]]:
+def convert_to_records(frame: pl.DataFrame) -> list[dict[str, Any]]:
     """
     Convert a frame to a list of JSON-serialisable records.
 
@@ -62,7 +55,7 @@ def to_records(frame: pl.DataFrame) -> list[dict[str, Any]]:
     return frame.to_dicts()
 
 
-def to_json(payload: dict[str, Any]) -> str:
+def convert_to_json(payload: dict[str, Any]) -> str:
     """
     Serialise a payload as compact JSON.
 
@@ -124,15 +117,15 @@ def format_page(
             "offset": offset,
             "limit": limit,
             "columns": frame.columns,
-            "rows": to_records(frame),
+            "rows": convert_to_records(frame),
         }
     )
     if notes:
         payload["_notes"] = notes
-    return to_json(payload)
+    return convert_to_json(payload)
 
 
-def markdown_table(headers: list[str], rows: list[list[Any]]) -> str:
+def format_markdown_table(headers: list[str], rows: list[list[Any]]) -> str:
     """
     Render a small Markdown table.
 
@@ -144,12 +137,12 @@ def markdown_table(headers: list[str], rows: list[list[Any]]) -> str:
         str: The table as Markdown.
     """
 
-    def cell(value: Any) -> str:
+    def format_cell(value: Any) -> str:
         return str(value).replace("|", "\\|")
 
     lines = [
         "| " + " | ".join(headers) + " |",
         "| " + " | ".join("---" for _ in headers) + " |",
     ]
-    lines.extend("| " + " | ".join(cell(v) for v in row) + " |" for row in rows)
+    lines.extend("| " + " | ".join(format_cell(v) for v in row) + " |" for row in rows)
     return "\n".join(lines)

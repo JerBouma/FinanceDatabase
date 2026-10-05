@@ -1,4 +1,6 @@
-"""Structural checks for select(), search() and show_options().
+"""Helpers Module
+
+Structural checks for select(), search() and show_options().
 
 These replace recorded snapshots of the first rows. Every call is compared with an independent
 pandas filter of the same data, so the tests verify behaviour (the right rows, columns and
@@ -19,16 +21,16 @@ CONTROL_ARGUMENTS = {
 }
 
 
-def _rows(data: pd.DataFrame, mask: Any) -> pd.DataFrame:
+def _select_rows(data: pd.DataFrame, mask: Any) -> pd.DataFrame:
     """Boolean row selection that stays row-wise for an empty mask (data[mask] would select columns)."""
     return data.loc[pd.Series(mask, index=data.index, dtype=bool)]
 
 
-def _as_list(value: Any) -> list[str]:
+def _convert_to_list(value: Any) -> list[str]:
     return [value] if isinstance(value, str) else list(value)
 
 
-def _excludes_delisted_by_default(obj: Any, method: str) -> bool:
+def _check_excludes_delisted_by_default(obj: Any, method: str) -> bool:
     parameters = inspect.signature(getattr(obj, method)).parameters
     return (
         "exclude_delisted" in parameters
@@ -36,17 +38,21 @@ def _excludes_delisted_by_default(obj: Any, method: str) -> bool:
     )
 
 
-def expected_selection(obj: Any, method: str = "select", **kwargs: Any) -> pd.DataFrame:
+def get_expected_selection(
+    obj: Any, method: str = "select", **kwargs: Any
+) -> pd.DataFrame:
     """What select()/show_options() should return, computed directly with pandas."""
     data = obj.data
-    exclude = kwargs.get("exclude_delisted", _excludes_delisted_by_default(obj, method))
+    exclude = kwargs.get(
+        "exclude_delisted", _check_excludes_delisted_by_default(obj, method)
+    )
     if exclude and "delisted" in data.columns:
         data = data[~data["delisted"].astype(bool)]
     for field, value in kwargs.items():
         if field in CONTROL_ARGUMENTS or value is None:
             continue
-        wanted = {v.lower() for v in _as_list(value)}
-        data = _rows(
+        wanted = {v.lower() for v in _convert_to_list(value)}
+        data = _select_rows(
             data,
             data[field].map(lambda x, w=wanted: isinstance(x, str) and x.lower() in w),
         )
@@ -56,7 +62,7 @@ def expected_selection(obj: Any, method: str = "select", **kwargs: Any) -> pd.Da
     return data
 
 
-def expected_search(obj: Any, **kwargs: Any) -> pd.DataFrame:
+def get_expected_search(obj: Any, **kwargs: Any) -> pd.DataFrame:
     """What search() should return, computed directly with pandas and re."""
     data = obj.data
     case_sensitive = kwargs.pop("case_sensitive", False) in (True, "True")
@@ -71,7 +77,9 @@ def expected_search(obj: Any, **kwargs: Any) -> pd.DataFrame:
             if value is True:
                 data = data[~data.index.str.contains(".", regex=False, na=False)]
         elif key == "index":
-            data = _rows(data, [bool(re.search(value, str(s))) for s in data.index])
+            data = _select_rows(
+                data, [bool(re.search(value, str(s))) for s in data.index]
+            )
         elif key in data.columns:
             if isinstance(value, list):
                 hit = lambda x, vals=value: isinstance(x, str) and any(  # noqa: E731
@@ -81,7 +89,7 @@ def expected_search(obj: Any, **kwargs: Any) -> pd.DataFrame:
                 hit = lambda x, v=value: isinstance(x, str) and bool(  # noqa: E731
                     re.search(v, x, flags)
                 )
-            data = _rows(data, data[key].map(hit))
+            data = _select_rows(data, data[key].map(hit))
     return data
 
 
@@ -95,18 +103,18 @@ def _check_frame(obj: Any, result: pd.DataFrame, expected: pd.DataFrame) -> None
 def check_select(obj: Any, nonempty: bool = False, **kwargs: Any) -> pd.DataFrame:
     """select(**kwargs) returns exactly the rows matching every filter."""
     result = obj.select(**kwargs)
-    expected = expected_selection(obj, **kwargs)
+    expected = get_expected_selection(obj, **kwargs)
     _check_frame(obj, result, expected)
     if nonempty:
         assert len(result) > 0, f"select({kwargs}) unexpectedly returned no rows"
     excludes = kwargs.get(
-        "exclude_delisted", _excludes_delisted_by_default(obj, "select")
+        "exclude_delisted", _check_excludes_delisted_by_default(obj, "select")
     )
     if excludes and "delisted" in result:
         assert not result["delisted"].astype(bool).any(), "delisted rows returned"
     for field, value in kwargs.items():
         if field not in CONTROL_ARGUMENTS and value is not None and len(result):
-            wanted = {v.lower() for v in _as_list(value)}
+            wanted = {v.lower() for v in _convert_to_list(value)}
             assert (
                 result[field].str.lower().isin(wanted).all()
             ), f"{field} filter not applied"
@@ -116,13 +124,13 @@ def check_select(obj: Any, nonempty: bool = False, **kwargs: Any) -> pd.DataFram
 def check_search(obj: Any, nonempty: bool = False, **kwargs: Any) -> pd.DataFrame:
     """search(**kwargs) returns exactly the rows matching every query."""
     result = obj.search(**kwargs)
-    _check_frame(obj, result, expected_search(obj, **dict(kwargs)))
+    _check_frame(obj, result, get_expected_search(obj, **dict(kwargs)))
     if nonempty:
         assert len(result) > 0, f"search({kwargs}) unexpectedly returned no rows"
     return result
 
 
-def _option_values(values: Any) -> list:
+def _check_option_values(values: Any) -> list:
     values = list(values)
     assert values == sorted(values, key=str), "options are not sorted"
     assert len(values) == len(set(values)), "options contain duplicates"
@@ -134,7 +142,7 @@ def check_show_options(obj: Any, nonempty: bool = False, **kwargs: Any) -> Any:
     options = obj.show_options(**kwargs)
     selection = kwargs.get("selection")
     filters = {k: v for k, v in kwargs.items() if k != "selection"}
-    data = expected_selection(obj, method="show_options", **filters)
+    data = get_expected_selection(obj, method="show_options", **filters)
     parameters = inspect.signature(obj.show_options).parameters
     fields = [p for p in parameters if p not in CONTROL_ARGUMENTS]
     if selection is None:
@@ -142,12 +150,16 @@ def check_show_options(obj: Any, nonempty: bool = False, **kwargs: Any) -> Any:
         assert set(options) == set(fields), "show_options() keys changed"
         for field, values in options.items():
             expected = sorted(data[field].dropna().unique(), key=str)
-            assert _option_values(values) == expected, f"options for {field} differ"
+            assert (
+                _check_option_values(values) == expected
+            ), f"options for {field} differ"
         if nonempty:
             assert any(len(v) for v in options.values()), "no options at all"
     else:
         expected = sorted(data[selection].dropna().unique(), key=str)
-        assert _option_values(options) == expected, f"options for {selection} differ"
+        assert (
+            _check_option_values(options) == expected
+        ), f"options for {selection} differ"
         if nonempty:
             assert len(options) > 0, f"show_options({kwargs}) is empty"
     return options

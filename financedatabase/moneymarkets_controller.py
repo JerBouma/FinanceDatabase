@@ -5,7 +5,8 @@ __docformat__ = "google"
 import numpy as np
 import polars as pl
 
-from financedatabase.helpers import FinanceDatabase, FinanceFrame
+from financedatabase.database_controller import FinanceDatabase
+from financedatabase.frame_controller import FinanceFrame
 
 
 class Moneymarkets(FinanceDatabase):
@@ -74,7 +75,7 @@ class Moneymarkets(FinanceDatabase):
         | BFCXX  | FedFund            | USD      | BlackRock Liquidity Funds |
         | BFDXX  | Federal Trust Fund | USD      | BlackRock Liquidity Funds |
         """
-        return self._select(
+        return self._select_rows(
             {"currency": currency, "family": family},
             only_primary_listing=False,
             exclude_delisted=False,
@@ -128,7 +129,7 @@ class Moneymarkets(FinanceDatabase):
         ```
         """
         selection_values = ["currency", "family"]
-        return self._show_options(
+        return self._collect_options(
             selection,
             selection_values,
             f"The selection variable provided is not valid, "

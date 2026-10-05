@@ -1,9 +1,9 @@
-"""Cryptocurrencies Test Module"""
+"""Cryptocurrencies Controller Tests"""
 
 import pytest
 
 import financedatabase as fd
-from tests.structure import check_search, check_select, check_show_options
+from tests.helpers import check_search, check_select, check_show_options
 
 cryptos = fd.Cryptos(use_local_location=True)
 

@@ -5,7 +5,8 @@ __docformat__ = "google"
 import numpy as np
 import polars as pl
 
-from financedatabase.helpers import FinanceDatabase, FinanceFrame
+from financedatabase.database_controller import FinanceDatabase
+from financedatabase.frame_controller import FinanceFrame
 
 
 class Equities(FinanceDatabase):
@@ -111,7 +112,7 @@ class Equities(FinanceDatabase):
         | AEGOF  | Aegon N.V.                             | USD      | Insurance        | PNK      | Mid Cap    |
         | CNCK   | Coincheck Group N.V. Ordinary Shares   | USD      | Consumer Finance | NMS      | Micro Cap  |
         """
-        return self._select(
+        return self._select_rows(
             {
                 "country": country,
                 "sector": sector,
@@ -211,7 +212,7 @@ class Equities(FinanceDatabase):
             "country",
             "market_cap",
         ]
-        return self._show_options(
+        return self._collect_options(
             selection,
             selection_values,
             f"The selection variable provided is not valid, "

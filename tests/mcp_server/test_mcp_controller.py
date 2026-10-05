@@ -20,10 +20,10 @@ from mcp.client.stdio import stdio_client
 import financedatabase as fd
 from financedatabase.mcp_server import setup_model
 from financedatabase.mcp_server.coercion_model import (
+    convert_to_int,
     resolve_values,
     split_values,
     suggest,
-    to_int,
 )
 from financedatabase.mcp_server.formatting_model import format_page, truncate_text
 from financedatabase.mcp_server.mcp_controller import provider as server_provider
@@ -32,9 +32,6 @@ from tests.mcp_server.conftest import call_json, call_text
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[2]
 SERVER_DIR = REPO_ROOT / "financedatabase" / "mcp_server"
-
-
-# ── Instance cache ────────────────────────────────────────────────────────────
 
 
 @pytest.fixture
@@ -102,14 +99,11 @@ def test_failed_refresh_keeps_serving_the_cached_instance(monkeypatch):
     )
     first = provider.get_instance("moneymarkets")
 
-    def unavailable(*args, **kwargs):
+    def raise_unavailable(*args, **kwargs):
         raise ValueError("offline")
 
-    monkeypatch.setattr(fd.Moneymarkets, "__init__", unavailable)
+    monkeypatch.setattr(fd.Moneymarkets, "__init__", raise_unavailable)
     assert provider.get_instance("moneymarkets") is first
-
-
-# ── stdout hygiene ────────────────────────────────────────────────────────────
 
 
 def test_logging_never_writes_to_stdout(server, capsys):
@@ -160,7 +154,7 @@ def test_stdio_server_end_to_end(tmp_path):
         cwd=str(REPO_ROOT),
     )
 
-    async def session():
+    async def run_session():
         async with (
             stdio_client(parameters) as (read, write),
             ClientSession(read, write) as client,
@@ -172,23 +166,20 @@ def test_stdio_server_end_to_end(tmp_path):
             )
             return listed, result
 
-    listed, result = asyncio.run(asyncio.wait_for(session(), timeout=120))
+    listed, result = asyncio.run(asyncio.wait_for(run_session(), timeout=120))
     assert len(listed.tools) == 10
     payload = json.loads(result.content[0].text)
     assert payload["rows"][0]["symbol"] == "EURUSD=X"
-
-
-# ── Entry points ──────────────────────────────────────────────────────────────
 
 
 def test_main_defaults_to_stdio(server, monkeypatch):
     """Test that main() runs stdio unless told otherwise."""
     calls = []
 
-    def fake_run(transport):
+    def record_run(transport):
         calls.append(transport)
 
-    monkeypatch.setattr(server.mcp, "run", fake_run)
+    monkeypatch.setattr(server.mcp, "run", record_run)
     monkeypatch.setattr(sys, "argv", ["financedatabase-mcp"])
     monkeypatch.delenv("MCP_TRANSPORT", raising=False)
     server.main()
@@ -199,10 +190,10 @@ def test_main_serves_http_with_env_fallbacks(server, monkeypatch):
     """Test the HTTP transports: host/port from flags first, then the environment."""
     served = []
 
-    def fake_run(serve):
+    def record_serve(serve):
         served.append(serve.__self__.config)
 
-    monkeypatch.setattr(server.anyio, "run", fake_run)
+    monkeypatch.setattr(server.anyio, "run", record_serve)
     monkeypatch.setattr(server.mcp.settings, "host", server.mcp.settings.host)
     monkeypatch.setattr(server.mcp.settings, "port", server.mcp.settings.port)
     monkeypatch.setattr(sys, "argv", ["financedatabase-mcp", "--port", "0"])
@@ -224,14 +215,14 @@ def test_main_rejects_unknown_transport(server, monkeypatch):
 def test_health_route(server):
     """Test the /health route used by Docker's HEALTHCHECK."""
 
-    async def get():
+    async def get_health():
         transport = httpx.ASGITransport(app=server.mcp.sse_app())
         async with httpx.AsyncClient(
             transport=transport, base_url="http://test"
         ) as client:
             return await client.get("/health")
 
-    response = asyncio.run(get())
+    response = asyncio.run(get_health())
     assert response.status_code == 200
     assert response.json() == {"status": "ok"}
 
@@ -247,9 +238,6 @@ def test_module_entry_point_help():
     )
     assert result.stdout.startswith("usage: financedatabase-mcp")
     assert "--transport" in result.stdout
-
-
-# ── Setup wizard ──────────────────────────────────────────────────────────────
 
 
 def test_setup_writes_and_preserves_client_config(tmp_path):
@@ -284,13 +272,10 @@ def test_setup_cli_for_global_client(tmp_path, monkeypatch, server):
     monkeypatch.setattr(
         sys, "argv", ["financedatabase-mcp-setup", "--client", "claude-code"]
     )
-    server.setup()
+    server.run_setup()
     config = json.loads((tmp_path / ".claude.json").read_text())
     assert config["mcpServers"]["finance-database"]["command"] == "uvx"
     assert "env" not in config["mcpServers"]["finance-database"]
-
-
-# ── Formatting and coercion ───────────────────────────────────────────────────
 
 
 def test_resolve_values_keeps_commas_of_known_values():
@@ -313,10 +298,10 @@ def test_suggest_and_clamp():
     options = ["Information Technology", "Industrials", "Financials"]
     assert suggest("Tech", options)[0] == "Information Technology"
     assert suggest("financals", options)[0] == "Financials"
-    assert to_int("500", 25, 1, 200) == 200
-    assert to_int(None, 25, 1, 200) == 25
-    assert to_int("abc", 25, 1, 200) == 25
-    assert to_int(-3, 0, 0) == 0
+    assert convert_to_int("500", 25, 1, 200) == 200
+    assert convert_to_int(None, 25, 1, 200) == 25
+    assert convert_to_int("abc", 25, 1, 200) == 25
+    assert convert_to_int(-3, 0, 0) == 0
 
 
 def test_format_page_bounds_and_notes():
@@ -332,9 +317,6 @@ def test_format_page_bounds_and_notes():
     assert payload["rows"][1]["summary"] is None
     assert "offset=2" in payload["_notes"][0]
     assert truncate_text(frame, 100).equals(frame)
-
-
-# ── Packaging ─────────────────────────────────────────────────────────────────
 
 
 def test_versions_and_tool_lists_are_in_sync():
@@ -372,6 +354,6 @@ def test_configured_columns_match_the_data(server):
     """Test that config.yaml lists the real columns, so its descriptions stay true."""
     for name, spec in server.provider.specs.items():
         instance = server.provider.get_instance(name)
-        assert spec.columns == instance._lazy.collect_schema().names()
+        assert spec.columns == instance.get_columns()
         assert set(spec.default_columns) <= set(spec.columns)
         assert spec.category_column in spec.columns

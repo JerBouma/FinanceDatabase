@@ -1,18 +1,20 @@
-"""Currencies Test Module"""
+"""Indices Controller Tests"""
 
 import pytest
 
 import financedatabase as fd
-from tests.structure import check_search, check_select, check_show_options
+from tests.helpers import check_search, check_select, check_show_options
 
-currencies = fd.Currencies(use_local_location=True)
+indices = fd.Indices(use_local_location=True)
 
 
 SELECT_CASES = [
     {},
-    {"base_currency": "USD"},
-    {"quote_currency": "EUR"},
-    {"base_currency": "USD", "quote_currency": "CAD"},
+    {"currency": "NOK"},
+    {"category": "Industrials"},
+    {"category_group": "Cash"},
+    {"exchange": "ASX"},
+    {"exchange": "ASX", "category": "REITs"},
 ]
 
 
@@ -30,17 +32,17 @@ def test_select(kwargs: dict) -> None:
             "selection",
         ]
     ]
-    check_select(currencies, nonempty=len(filters) <= 1, **kwargs)
+    check_select(indices, nonempty=len(filters) <= 1, **kwargs)
 
 
 SHOW_OPTIONS_CASES = [
     {},
-    {"selection": "base_currency"},
-    {"selection": "quote_currency"},
-    {"base_currency": "USD"},
-    {"quote_currency": "EUR"},
-    {"selection": "base_currency", "base_currency": "USD"},
-    {"selection": "quote_currency", "quote_currency": "EUR"},
+    {"selection": "category"},
+    {"selection": "category_group"},
+    {"selection": "currency"},
+    {"selection": "exchange"},
+    {"exchange": "ASX"},
+    {"category": "REITs"},
 ]
 
 
@@ -58,14 +60,16 @@ def test_show_options(kwargs: dict) -> None:
             "selection",
         ]
     ]
-    check_show_options(currencies, nonempty=len(filters) <= 1, **kwargs)
+    check_show_options(indices, nonempty=len(filters) <= 1, **kwargs)
 
 
 SEARCH_CASES = [
-    {"summary": "dollar"},
-    {"index": "USD"},
-    {"base_currency": "CAD"},
-    {"quote_currency": "EUR"},
+    {"summary": "S&P"},
+    {"index": "GSPC"},
+    {"category": "Industrials"},
+    {"category_group": "Energy"},
+    {"exchange": "SHH"},
+    {"summary": "S&P", "category": "Financials"},
 ]
 
 
@@ -83,12 +87,20 @@ def test_search(kwargs: dict) -> None:
             "selection",
         ]
     ]
-    check_search(currencies, nonempty=len(filters) <= 1, **kwargs)
+    check_search(indices, nonempty=len(filters) <= 1, **kwargs)
 
 
 def test_select_with_invalid_value_raises() -> None:
     """`select(<filter>=...)` raises ValueError for values not in show_options()."""
-
-    for col in ["base_currency", "quote_currency"]:
+    for col in ["currency", "exchange", "mic"]:
         with pytest.raises(ValueError, match="not available in the database"):
-            currencies.select(**{col: "__definitely_not_a_real_value__"})
+            indices.select(**{col: "__definitely_not_a_real_value__"})
+
+
+def test_select_mic() -> None:
+    """`select(mic=...)` filters indices by their ISO 10383 MIC code."""
+    assert "mic" in indices.show_options()
+    mic = list(indices.show_options(selection="mic"))[0]
+    result = indices.select(mic=mic)
+    assert not result.empty
+    assert (result["mic"] == mic).all()

@@ -5,7 +5,8 @@ __docformat__ = "google"
 import numpy as np
 import polars as pl
 
-from financedatabase.helpers import FinanceDatabase, FinanceFrame
+from financedatabase.database_controller import FinanceDatabase
+from financedatabase.frame_controller import FinanceFrame
 
 
 class Cryptos(FinanceDatabase):
@@ -78,7 +79,7 @@ class Cryptos(FinanceDatabase):
         | ETH-GBP | Ethereum GBP | ETH            | GBP      | CCC      |
         | ETH-USD | Ethereum USD | ETH            | USD      | CCC      |
         """
-        return self._select(
+        return self._select_rows(
             {"cryptocurrency": cryptocurrency, "currency": currency},
             only_primary_listing=False,
             exclude_delisted=False,
@@ -133,7 +134,7 @@ class Cryptos(FinanceDatabase):
         ```
         """
         selection_values = ["cryptocurrency", "currency"]
-        return self._show_options(
+        return self._collect_options(
             selection,
             selection_values,
             f"The selection variable provided is not valid, "

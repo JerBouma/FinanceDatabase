@@ -1,18 +1,15 @@
-"""Tests for scripts/update_readme_stats.py (README statistics section)."""
+"""README Statistics Tests"""
 
 import datetime as dt
-import importlib.util
 import sys
 from pathlib import Path
 
-SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "update_readme_stats.py"
-spec = importlib.util.spec_from_file_location("update_readme_stats", SCRIPT)
-rs = importlib.util.module_from_spec(spec)
-sys.modules["update_readme_stats"] = rs
-spec.loader.exec_module(rs)
+import pandas as pd
+
+from scripts.readme import readme_controller, rendering_model
 
 
-def make_db(root: Path) -> Path:
+def create_database(root: Path) -> Path:
     db = root / "database"
     for sub in ("equities", "etfs", "funds"):
         (db / sub).mkdir(parents=True)
@@ -50,10 +47,10 @@ README = "# Title\n\nIntro.\n\n<!-- STATISTICS:START -->\nold\n<!-- STATISTICS:E
 
 def test_section_is_regenerated_between_markers(tmp_path: Path) -> None:
     """Test that the statistics section is regenerated between the markers."""
-    db = make_db(tmp_path)
+    db = create_database(tmp_path)
     readme = tmp_path / "README.md"
     readme.write_text(README)
-    assert rs.update(readme, str(db), dt.date(2026, 10, 4))
+    assert readme_controller.update(readme, str(db), dt.date(2026, 10, 4))
     text = readme.read_text()
     assert text.startswith("# Title\n\nIntro.\n\n<!-- STATISTICS:START")
     assert text.endswith("<!-- STATISTICS:END -->\n\n# Installation\n")
@@ -71,12 +68,12 @@ def test_section_is_regenerated_between_markers(tmp_path: Path) -> None:
 
 def test_regeneration_is_idempotent(tmp_path: Path) -> None:
     """Test that regenerating the statistics twice gives the same README."""
-    db = make_db(tmp_path)
+    db = create_database(tmp_path)
     readme = tmp_path / "README.md"
     readme.write_text(README)
-    rs.update(readme, str(db), dt.date(2026, 10, 4))
+    readme_controller.update(readme, str(db), dt.date(2026, 10, 4))
     once = readme.read_text()
-    rs.update(readme, str(db), dt.date(2026, 10, 4))
+    readme_controller.update(readme, str(db), dt.date(2026, 10, 4))
     assert readme.read_text() == once
 
 
@@ -84,14 +81,19 @@ def test_missing_markers_change_nothing(tmp_path: Path) -> None:
     """Test that a README without the markers is left unchanged."""
     readme = tmp_path / "README.md"
     readme.write_text("# No markers here\n")
-    assert rs.update(readme, str(make_db(tmp_path)), dt.date(2026, 10, 4)) is False
+    assert (
+        readme_controller.update(
+            readme, str(create_database(tmp_path)), dt.date(2026, 10, 4)
+        )
+        is False
+    )
     assert readme.read_text() == "# No markers here\n"
 
 
 def test_count_tables_are_two_compact_columns() -> None:
     """Test that the count tables have two compact columns."""
-    counts = rs.pd.Series({"A": 30, "B": 20, "C": 5, "D": 1})
-    assert rs.count_table("Sector", "Equities", counts, 2) == (
+    counts = pd.Series({"A": 30, "B": 20, "C": 5, "D": 1})
+    assert rendering_model.create_count_table("Sector", "Equities", counts, 2) == (
         "| Sector | Equities |\n| :-- | --: |\n| A | 30 |\n| B | 20 |\n| *Other (2)* | 6 |"
     )
 
@@ -105,5 +107,5 @@ def test_main_never_raises(tmp_path: Path, monkeypatch, capsys) -> None:
         "argv",
         ["x", "--readme", str(readme), "--database", str(tmp_path / "nope")],
     )
-    rs.main()
+    readme_controller.main()
     assert "README statistics not refreshed" in capsys.readouterr().out

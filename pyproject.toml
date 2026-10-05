@@ -47,8 +47,8 @@ mcp = [
 
 [project.scripts]
 financedatabase-mcp = "financedatabase.mcp_server.mcp_controller:main"
-financedatabase-mcp-inspector = "financedatabase.mcp_server.mcp_controller:inspector"
-financedatabase-mcp-setup = "financedatabase.mcp_server.mcp_controller:setup"
+financedatabase-mcp-inspector = "financedatabase.mcp_server.mcp_controller:run_inspector"
+financedatabase-mcp-setup = "financedatabase.mcp_server.mcp_controller:run_setup"
 
 [tool.mcp]
 mcp-name = "io.github.JerBouma/financedatabase"

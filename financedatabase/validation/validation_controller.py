@@ -1,4 +1,4 @@
-"""Report and optionally clear invalid security identifiers in source CSVs."""
+"""Validation Module"""
 
 __docformat__ = "google"
 
@@ -6,203 +6,21 @@ import argparse
 import csv
 import os
 import tempfile
-from collections.abc import Callable, Iterable, Sequence
-from dataclasses import dataclass
+from collections.abc import Iterable, Sequence
 from pathlib import Path
 
-from stdnum import cusip, figi, isin
-from stdnum.exceptions import InvalidChecksum, ValidationError
-
-FIGI_FIELDS = ("figi", "composite_figi", "shareclass_figi")
-
-
-@dataclass(frozen=True)
-class IdentifierIssue:
-    """
-    An invalid or inconsistent identifier found in a source CSV row.
-    """
-
-    path: Path
-    line_number: int
-    symbol: str
-    field: str
-    value: str
-    reason: str
-    actionable: bool
-    replacement: str | None = None
-
-
-@dataclass(frozen=True)
-class AuditResult:
-    """
-    Summary of an identifier audit.
-    """
-
-    issues: tuple[IdentifierIssue, ...]
-    files_scanned: int
-    identifiers_checked: int
-    relationships_checked: int
-
-
-@dataclass(frozen=True)
-class CleanupResult:
-    """
-    Counts of deterministic repairs and removals applied to one CSV file.
-    """
-
-    repaired: int = 0
-    cleared: int = 0
-
-    @property
-    def changed(self) -> int:
-        """
-        Return the total number of changed identifier cells.
-        """
-        return self.repaired + self.cleared
-
-
-def _validate_standard_number(
-    value: str, validator: Callable[[str], str], format_error: str
-) -> str | None:
-    """
-    Run a python-stdnum validator and require canonical stored formatting.
-    """
-    try:
-        canonical = validator(value)
-    except InvalidChecksum:
-        return "checksum mismatch"
-    except ValidationError:
-        return format_error
-    if canonical != value:
-        return format_error
-    return None
-
-
-def validate_isin(value: str) -> str | None:
-    """
-    Return an ISO 6166 validation error, or ``None`` when valid.
-    """
-    return _validate_standard_number(
-        value,
-        isin.validate,
-        "expected a canonical 12-character ISIN with a numeric check digit",
-    )
-
-
-def validate_cusip(value: str) -> str | None:
-    """
-    Return a CUSIP validation error, or ``None`` when valid.
-    """
-    return _validate_standard_number(
-        value,
-        cusip.validate,
-        "expected a canonical 9-character CUSIP with a check digit",
-    )
-
-
-def validate_figi(value: str) -> str | None:
-    """
-    Return a FIGI validation error, or ``None`` when valid.
-    """
-    return _validate_standard_number(
-        value,
-        figi.validate,
-        "expected a canonical 12-character FIGI with a valid prefix",
-    )
-
-
-def validate_isin_cusip_consistency(isin: str, cusip: str) -> str | None:
-    """
-    Check whether a valid US/Canadian ISIN embeds the supplied CUSIP.
-    """
-    if not isin or not cusip or isin[:2] not in {"US", "CA"}:
-        return None
-    if validate_isin(isin) is not None or validate_cusip(cusip) is not None:
-        return None
-    if isin[2:11] != cusip:
-        return "ISIN national identifier does not match CUSIP"
-    return None
-
-
-def cusip_from_authoritative_isin(isin_value: str) -> str | None:
-    """
-    Return the CUSIP embedded in a valid US/Canadian ISIN, the authoritative source.
-    """
-    embedded_cusip = isin_value[2:11]
-    if validate_cusip(embedded_cusip) is not None:
-        return None
-    return embedded_cusip
-
-
-def isin_precludes_cusip(isin_value: str) -> bool:
-    """
-    Return True when a valid ISIN's country cannot carry a real CUSIP.
-
-    A CUSIP only exists for US and Canadian securities, so any populated CUSIP
-    cell next to a valid non-US/Canadian ISIN is definitely wrong data, not an
-    ambiguous one requiring manual review.
-    """
-    return validate_isin(isin_value) is None and isin_value[:2] not in {"US", "CA"}
-
-
-STANDARD_VALIDATORS: dict[str, Callable[[str], str]] = {
-    "isin": isin.validate,
-    "cusip": cusip.validate,
-    **{field: figi.validate for field in FIGI_FIELDS},
-}
-
-FIELD_VALIDATORS: dict[str, Callable[[str], str | None]] = {
-    "isin": validate_isin,
-    "cusip": validate_cusip,
-    **{field: validate_figi for field in FIGI_FIELDS},
-}
-
-
-def _canonical_value(field: str, value: str) -> str | None:
-    """
-    Return python-stdnum's canonical value when the identifier is valid.
-    """
-    try:
-        return STANDARD_VALIDATORS[field](value)
-    except ValidationError:
-        return None
-
-
-def _repair_cusip_from_isin(cusip_value: str, isin_value: str) -> str | None:
-    """
-    Recover spreadsheet-damaged CUSIPs corroborated by a valid ISIN.
-    """
-    canonical_isin = _canonical_value("isin", isin_value)
-    if canonical_isin is None or canonical_isin[:2] not in {"US", "CA"}:
-        return None
-
-    embedded_cusip = canonical_isin[2:11]
-    if validate_cusip(embedded_cusip) is not None:
-        return None
-
-    numeric_value = cusip_value.removesuffix(".0")
-    if numeric_value.isdigit() and numeric_value.lstrip("0") == embedded_cusip.lstrip(
-        "0"
-    ):
-        return embedded_cusip
-    return None
-
-
-def repair_identifier(field: str, value: str, row_values: dict[str, str]) -> str | None:
-    """
-    Return a deterministic replacement for an invalid stored identifier.
-    """
-    canonical = _canonical_value(field, value)
-    if canonical is not None and canonical != value:
-        return canonical
-    without_decimal_suffix = value.removesuffix(".0")
-    if without_decimal_suffix != value:
-        canonical = _canonical_value(field, without_decimal_suffix)
-        if canonical == without_decimal_suffix:
-            return canonical
-    if field == "cusip":
-        return _repair_cusip_from_isin(value, row_values.get("isin", ""))
-    return None
+from financedatabase.validation.identifiers_model import (
+    FIELD_VALIDATORS,
+    AuditResult,
+    CleanupResult,
+    IdentifierIssue,
+    check_isin_precludes_cusip,
+    get_cusip_from_authoritative_isin,
+    repair_identifier,
+    validate_cusip,
+    validate_isin,
+    validate_isin_cusip_consistency,
+)
 
 
 def discover_csv_files(paths: Iterable[Path]) -> list[Path]:
@@ -220,7 +38,7 @@ def discover_csv_files(paths: Iterable[Path]) -> list[Path]:
     return sorted(csv_files)
 
 
-def _column_index(header: list[str], name: str) -> int | None:
+def _get_column_index(header: list[str], name: str) -> int | None:
     """
     Get the position of a column in the header, or None if it is missing.
     """
@@ -250,13 +68,13 @@ def audit_identifiers(paths: Iterable[Path]) -> AuditResult:
             field_indices = {
                 field: index
                 for field in FIELD_VALIDATORS
-                if (index := _column_index(header, field)) is not None
+                if (index := _get_column_index(header, field)) is not None
             }
             if not field_indices:
                 continue
 
             files_scanned += 1
-            symbol_index = _column_index(header, "symbol")
+            symbol_index = _get_column_index(header, "symbol")
             next_line_number = reader.line_num + 1
             for row in reader:
                 line_number = next_line_number
@@ -280,7 +98,7 @@ def audit_identifiers(paths: Iterable[Path]) -> AuditResult:
                         actionable = (
                             field != "cusip"
                             or replacement is not None
-                            or isin_precludes_cusip(values.get("isin", ""))
+                            or check_isin_precludes_cusip(values.get("isin", ""))
                         )
                         issues.append(
                             IdentifierIssue(
@@ -305,7 +123,7 @@ def audit_identifiers(paths: Iterable[Path]) -> AuditResult:
                     relationships_checked += 1
                     error = validate_isin_cusip_consistency(isin, cusip)
                     if error is not None:
-                        replacement = cusip_from_authoritative_isin(isin)
+                        replacement = get_cusip_from_authoritative_isin(isin)
                         issues.append(
                             IdentifierIssue(
                                 path,
@@ -368,7 +186,7 @@ def apply_identifier_cleanup(path: Path) -> CleanupResult:
     field_indices = {
         field: index
         for field in FIELD_VALIDATORS
-        if (index := _column_index(header, field)) is not None
+        if (index := _get_column_index(header, field)) is not None
     }
     if not field_indices:
         return CleanupResult()
@@ -394,7 +212,7 @@ def apply_identifier_cleanup(path: Path) -> CleanupResult:
             if (
                 field != "cusip"
                 or replacement is not None
-                or isin_precludes_cusip(values.get("isin", ""))
+                or check_isin_precludes_cusip(values.get("isin", ""))
             ):
                 replacements.append((field_indices[field], replacement or ""))
 
@@ -404,7 +222,7 @@ def apply_identifier_cleanup(path: Path) -> CleanupResult:
             "cusip" in field_indices
             and validate_isin_cusip_consistency(isin_value, cusip_value) is not None
         ):
-            embedded_cusip = cusip_from_authoritative_isin(isin_value)
+            embedded_cusip = get_cusip_from_authoritative_isin(isin_value)
             if embedded_cusip is not None:
                 replacements.append((field_indices["cusip"], embedded_cusip))
 
@@ -443,6 +261,7 @@ def build_parser() -> argparse.ArgumentParser:
     Build the command-line argument parser.
     """
     parser = argparse.ArgumentParser(
+        prog="python -m financedatabase.validation",
         description="Validate ISIN, CUSIP, and FIGI fields in source CSV files.",
     )
     parser.add_argument(
@@ -580,7 +399,3 @@ def main(argv: Sequence[str] | None = None) -> int:
             "damage and clear other identifiers that fail validation."
         )
     return 0
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())

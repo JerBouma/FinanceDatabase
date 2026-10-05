@@ -1,19 +1,6 @@
-"""
-Utility MCP tools for the Finance Database MCP server.
+"""Tools Model"""
 
-Registers the discovery tools that work across asset classes rather than
-querying a single one:
-
-- ``search_categories``  — table of asset classes, their tools, sizes and filters
-- ``show_options``       — the valid values of a filter, optionally narrowed
-- ``search_instruments`` — find a symbol by ticker, name or ISIN in every class
-
-These complement the per-asset-class tools produced by ``AssetToolRegistry``:
-a model typically finds the right filter values here first and then lists the
-matching instruments with the asset class tool.
-"""
-
-from __future__ import annotations
+__docformat__ = "google"
 
 from typing import Annotated, Any, Literal
 
@@ -22,19 +9,19 @@ from mcp.types import ToolAnnotations
 from pydantic import Field
 
 from financedatabase.mcp_server.coercion_model import (
+    convert_to_boolean,
+    convert_to_int,
     split_values,
     suggest,
-    to_boolean,
-    to_int,
 )
 from financedatabase.mcp_server.formatting_model import (
+    convert_to_json,
+    format_markdown_table,
     format_page,
-    markdown_table,
-    to_json,
 )
-from financedatabase.mcp_server.logger_model import get_logger
 from financedatabase.mcp_server.provider_model import DatabaseProvider, QueryError
 from financedatabase.mcp_server.registry_controller import run_tool
+from financedatabase.utilities.logger_model import get_logger
 
 logger = get_logger()
 
@@ -100,8 +87,19 @@ class UtilityToolRegistry:
         logger.debug("Registered %d utility tools.", len(tools))
         return len(tools)
 
-    def _asset_classes(self, value: Any) -> list[str]:
-        """Resolve an asset class selection ('all', a name, or comma-separated names)."""
+    def _resolve_asset_classes(self, value: Any) -> list[str]:
+        """
+        Resolve an asset class selection: 'all', a name, or comma-separated names.
+
+        Args:
+            value (Any): The raw selection.
+
+        Returns:
+            list[str]: The asset class names.
+
+        Raises:
+            QueryError: For an unknown asset class, with suggestions.
+        """
         names = [name.lower() for name in split_values(value)]
         if not names or "all" in names:
             return list(self._provider.specs)
@@ -115,10 +113,9 @@ class UtilityToolRegistry:
             )
         return list(dict.fromkeys(names))
 
-    # ── Tool methods ──────────────────────────────────────────────────────────
-
     def search_categories(self) -> str:
-        """List the asset classes in the Finance Database, with their tool, size and filters.
+        """
+        List the asset classes in the Finance Database, with their tool, size and filters.
 
         Use this first to see what is available. Each asset class has its own tool
         (e.g. `equities`) whose filters are listed here; `show_options` gives the
@@ -128,17 +125,15 @@ class UtilityToolRegistry:
             str: Markdown table of asset classes.
         """
 
-        def body() -> str:
+        def build_response() -> str:
             rows = []
             for name, spec in self._provider.specs.items():
                 try:
-                    listed, delisted = self._provider.count(name)
+                    listed, delisted = self._provider.count_entries(name)
                     entries = f"{listed:,}" + (
                         f" (+{delisted:,} delisted)" if delisted else ""
                     )
-                except (
-                    Exception
-                ) as error:  # one unavailable class shouldn't hide the rest
+                except Exception as error:
                     logger.warning("Could not count %s: %s", name, error)
                     entries = "n/a"
                 rows.append(
@@ -146,11 +141,11 @@ class UtilityToolRegistry:
                         f"`{name}`",
                         spec.display_name,
                         entries,
-                        ", ".join(spec.filters),
+                        ", ".join(spec.get_filters()),
                         spec.summary or spec.description,
                     ]
                 )
-            table = markdown_table(
+            table = format_markdown_table(
                 ["Tool", "Asset class", "Entries", "Filters", "Description"], rows
             )
             return (
@@ -160,7 +155,7 @@ class UtilityToolRegistry:
                 "a filter."
             )
 
-        return run_tool("search_categories", body)
+        return run_tool("search_categories", build_response)
 
     def show_options(
         self,
@@ -198,7 +193,8 @@ class UtilityToolRegistry:
             ),
         ] = None,
     ) -> str:
-        """Show the valid values of a filter (e.g. every sector or country) for an asset class.
+        """
+        Show the valid values of a filter (e.g. every sector or country) for an asset class.
 
         Use this before filtering an asset class tool so the exact values are known.
         Filters narrow the options to what actually occurs, e.g. the industries of
@@ -208,11 +204,11 @@ class UtilityToolRegistry:
             str: Compact JSON with the values and their total count.
         """
 
-        def body() -> str:
+        def build_response() -> str:
             spec_name = str(asset_class).lower()
             if spec_name not in self._provider.specs:
-                self._asset_classes(spec_name)  # raises with suggestions
-            delisted = to_boolean(include_delisted)
+                self._resolve_asset_classes(spec_name)  # raises with suggestions
+            delisted = convert_to_boolean(include_delisted)
             if filters is not None and not isinstance(filters, dict):
                 raise QueryError(
                     "filters must be an object such as {'country': 'Netherlands'}."
@@ -222,7 +218,7 @@ class UtilityToolRegistry:
             )
 
             if selection:
-                cap = to_int(
+                cap = convert_to_int(
                     limit,
                     self._limits["default_options"],
                     1,
@@ -243,9 +239,9 @@ class UtilityToolRegistry:
                         "beyond this list are still valid filters for the asset class "
                         "tools."
                     ]
-                return to_json(payload)
+                return convert_to_json(payload)
 
-            cap = to_int(
+            cap = convert_to_int(
                 limit,
                 self._limits["overview_options"],
                 1,
@@ -261,9 +257,9 @@ class UtilityToolRegistry:
                     f"Up to {cap} values per filter. Call show_options with a "
                     "selection (e.g. 'country') to see more of one filter."
                 ]
-            return to_json(payload)
+            return convert_to_json(payload)
 
-        return run_tool("show_options", body)
+        return run_tool("show_options", build_response)
 
     def search_instruments(
         self,
@@ -296,7 +292,8 @@ class UtilityToolRegistry:
             Field(description="Rows to skip, for paging."),
         ] = 0,
     ) -> str:
-        """Find instruments by ticker, name or ISIN across all asset classes at once.
+        """
+        Find instruments by ticker, name or ISIN across all asset classes at once.
 
         Matches are case-insensitive substrings of the symbol or name (plus exact
         ISIN/CUSIP/FIGI matches), ordered by relevance: exact symbol first, then
@@ -307,19 +304,19 @@ class UtilityToolRegistry:
             str: Compact JSON with the matches and their total count per asset class.
         """
 
-        def body() -> str:
+        def build_response() -> str:
             text = (query or "").strip()
             if not text:
                 raise QueryError("query is empty; pass a ticker, name or ISIN.")
-            names = self._asset_classes(asset_classes)
-            page_limit = to_int(
+            names = self._resolve_asset_classes(asset_classes)
+            page_limit = convert_to_int(
                 limit, self._limits["default_limit"], 1, self._limits["max_limit"]
             )
-            page_offset = to_int(offset, 0, 0)
+            page_offset = convert_to_int(offset, 0, 0)
             page, total, per_class = self._provider.search_instruments(
                 text,
                 names,
-                include_delisted=to_boolean(include_delisted),
+                include_delisted=convert_to_boolean(include_delisted),
                 offset=page_offset,
                 limit=page_limit,
             )
@@ -339,4 +336,4 @@ class UtilityToolRegistry:
                 "ticker without exchange suffix.",
             )
 
-        return run_tool("search_instruments", body)
+        return run_tool("search_instruments", build_response)

@@ -1,20 +1,23 @@
-"""Indices Test Module"""
+"""Funds Controller Tests"""
+
+from typing import Any
 
 import pytest
 
 import financedatabase as fd
-from tests.structure import check_search, check_select, check_show_options
+from tests.helpers import check_search, check_select, check_show_options
 
-indices = fd.Indices(use_local_location=True)
+funds = fd.Funds(use_local_location=True)
 
 
 SELECT_CASES = [
     {},
-    {"currency": "NOK"},
-    {"category": "Industrials"},
-    {"category_group": "Cash"},
-    {"exchange": "ASX"},
-    {"exchange": "ASX", "category": "REITs"},
+    {"currency": "TWD"},
+    {"category": "Energy"},
+    {"category_group": "Miscellaneous"},
+    {"family": "13D Activist Fund"},
+    {"exchange": "PAR"},
+    {"exchange": "FRA", "category": "Energy"},
 ]
 
 
@@ -32,17 +35,18 @@ def test_select(kwargs: dict) -> None:
             "selection",
         ]
     ]
-    check_select(indices, nonempty=len(filters) <= 1, **kwargs)
+    check_select(funds, nonempty=len(filters) <= 1, **kwargs)
 
 
 SHOW_OPTIONS_CASES = [
     {},
     {"selection": "category"},
     {"selection": "category_group"},
+    {"selection": "family"},
     {"selection": "currency"},
     {"selection": "exchange"},
-    {"exchange": "ASX"},
-    {"category": "REITs"},
+    {"exchange": "PAR"},
+    {"category": "Energy"},
 ]
 
 
@@ -60,16 +64,17 @@ def test_show_options(kwargs: dict) -> None:
             "selection",
         ]
     ]
-    check_show_options(indices, nonempty=len(filters) <= 1, **kwargs)
+    check_show_options(funds, nonempty=len(filters) <= 1, **kwargs)
 
 
 SEARCH_CASES = [
-    {"summary": "S&P"},
-    {"index": "GSPC"},
-    {"category": "Industrials"},
-    {"category_group": "Energy"},
-    {"exchange": "SHH"},
-    {"summary": "S&P", "category": "Financials"},
+    {"summary": "Shares"},
+    {"index": "GSPX"},
+    {"category": "Utilities"},
+    {"category_group": "Miscellaneous"},
+    {"family": "ivari"},
+    {"exchange": "NZE"},
+    {"summary": "Pension", "category": "Energy"},
 ]
 
 
@@ -87,20 +92,29 @@ def test_search(kwargs: dict) -> None:
             "selection",
         ]
     ]
-    check_search(indices, nonempty=len(filters) <= 1, **kwargs)
+    check_search(funds, nonempty=len(filters) <= 1, **kwargs)
 
 
 def test_select_with_invalid_value_raises() -> None:
     """`select(<filter>=...)` raises ValueError for values not in show_options()."""
-    for col in ["currency", "exchange", "mic"]:
+
+    for col in [
+        "category_group",
+        "category",
+        "family",
+        "currency",
+        "exchange",
+        "mic",
+    ]:
+        kwargs: dict[str, Any] = {col: "__definitely_not_a_real_value__"}
         with pytest.raises(ValueError, match="not available in the database"):
-            indices.select(**{col: "__definitely_not_a_real_value__"})
+            funds.select(**kwargs)
 
 
 def test_select_mic() -> None:
-    """`select(mic=...)` filters indices by their ISO 10383 MIC code."""
-    assert "mic" in indices.show_options()
-    mic = list(indices.show_options(selection="mic"))[0]
-    result = indices.select(mic=mic)
+    """`select(mic=...)` filters funds by their ISO 10383 MIC code."""
+    assert "mic" in funds.show_options()
+    mic = list(funds.show_options(selection="mic"))[0]
+    result = funds.select(mic=mic)
     assert not result.empty
     assert (result["mic"] == mic).all()

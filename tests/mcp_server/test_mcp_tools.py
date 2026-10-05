@@ -26,9 +26,6 @@ def tools(server):
     return {tool.name: tool for tool in asyncio.run(server.mcp.list_tools())}
 
 
-# ── Registration ──────────────────────────────────────────────────────────────
-
-
 def test_every_tool_is_registered(tools):
     """Test that one tool per asset class plus the discovery tools exist."""
     assert set(tools) == set(ASSET_TOOLS) | UTILITY_TOOLS
@@ -61,9 +58,6 @@ def test_asset_tool_parameters_mirror_select(tools, name):
     )
     assert properties["limit"]["default"] == 25
     assert not tools[name].inputSchema.get("required")
-
-
-# ── Bounded output ────────────────────────────────────────────────────────────
 
 
 @pytest.mark.parametrize("name", list(ASSET_TOOLS))
@@ -166,9 +160,6 @@ def test_multiple_values_keep_commas_inside_values(server):
     assert as_text["total"] == as_list["total"] == expected.height
 
 
-# ── Errors are returned, not raised ───────────────────────────────────────────
-
-
 def test_invalid_filter_returns_package_message_with_suggestions(server):
     """Test that a typo returns the package's message plus a 'Did you mean'."""
     text = call_text(server.mcp, "equities", {"sector": "Tech"})
@@ -192,12 +183,9 @@ def test_invalid_column_returns_suggestions(server):
     assert "Did you mean: sector?" in text
 
 
-# ── Delisted entries ──────────────────────────────────────────────────────────
-
-
 @pytest.fixture(scope="module")
 def delisted_symbol():
-    lazy = fd.Equities(use_local_location=True)._lazy
+    lazy = fd.Equities(use_local_location=True).get_lazy_frame()
     return (
         lazy.filter(pl.col("delisted") == "True")
         .select("symbol")
@@ -224,9 +212,6 @@ def test_include_delisted(server, delisted_symbol):
         server.mcp, "equities", {"limit": 1, "include_delisted": True}
     )["total"]
     assert everything > listed
-
-
-# ── Search ────────────────────────────────────────────────────────────────────
 
 
 def test_query_ranks_exact_symbol_first(server):
@@ -273,7 +258,7 @@ def test_search_instruments_across_asset_classes(server):
 
 def test_search_instruments_matches_isin(server):
     """Test that an ISIN finds its instrument."""
-    lazy = fd.Equities(use_local_location=True)._lazy
+    lazy = fd.Equities(use_local_location=True).get_lazy_frame()
     symbol, isin = (
         lazy.filter(
             pl.col("isin").is_not_null()
@@ -299,9 +284,6 @@ def test_search_instruments_errors_are_returned(server):
     )
     assert "Unknown asset class 'equity'" in text
     assert "Did you mean: equities?" in text
-
-
-# ── Discovery ─────────────────────────────────────────────────────────────────
 
 
 def test_search_categories_lists_every_asset_class(server):

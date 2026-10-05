@@ -1,4 +1,4 @@
-"""Validate Identifiers Test Module"""
+"""Validation Tests"""
 
 import csv
 import warnings
@@ -6,17 +6,19 @@ from pathlib import Path
 
 import pytest
 
-from financedatabase.validation.validate_identifiers import (
+from financedatabase.validation.identifiers_model import (
     CleanupResult,
-    apply_identifier_cleanup,
-    audit_identifiers,
-    cusip_from_authoritative_isin,
-    main,
+    get_cusip_from_authoritative_isin,
     repair_identifier,
     validate_cusip,
     validate_figi,
     validate_isin,
     validate_isin_cusip_consistency,
+)
+from financedatabase.validation.validation_controller import (
+    apply_identifier_cleanup,
+    audit_identifiers,
+    main,
 )
 
 DATABASE_DIR = Path(__file__).resolve().parents[1] / "database"
@@ -108,12 +110,12 @@ def test_validate_isin_cusip_consistency() -> None:
 
 def test_cusip_from_authoritative_isin_returns_embedded_value_when_valid() -> None:
     """Test that the CUSIP embedded in a valid ISIN is returned."""
-    assert cusip_from_authoritative_isin("US0378331005") == "037833100"
+    assert get_cusip_from_authoritative_isin("US0378331005") == "037833100"
 
 
 def test_cusip_from_authoritative_isin_rejects_invalid_embedded_cusip() -> None:
     """Test that an invalid CUSIP embedded in an ISIN is rejected."""
-    assert cusip_from_authoritative_isin("US1234567890") is None
+    assert get_cusip_from_authoritative_isin("US1234567890") is None
 
 
 def test_repair_identifier_requires_deterministic_evidence() -> None:
@@ -311,7 +313,7 @@ def test_main_writes_post_cleanup_findings_to_csv_report(
 def test_database_identifiers_have_no_actionable_issues() -> None:
     """Fail the contributor's own test run when a CSV holds a repairable or clearable
     identifier, so bad data is caught before a PR is opened rather than auto-fixed
-    later. Run `uv run python -m financedatabase.validation.validate_identifiers --apply`
+    later. Run `uv run python -m financedatabase.validation --apply`
     to fix these.
     """
     result = audit_identifiers([DATABASE_DIR])
@@ -323,7 +325,7 @@ def test_database_identifiers_have_no_actionable_issues() -> None:
             f"{len(non_actionable)} identifier finding(s) require manual review "
             "(ambiguous CUSIPs or ISIN/CUSIP mismatches, e.g. dual-listed shares) "
             "and were left unchanged; run "
-            "`uv run python -m financedatabase.validation.validate_identifiers database` "
+            "`uv run python -m financedatabase.validation database` "
             "for the full report.",
             stacklevel=1,
         )
@@ -335,6 +337,6 @@ def test_database_identifiers_have_no_actionable_issues() -> None:
             f"{issue.value!r}: {issue.reason}"
             for issue in actionable
         )
-        + "\nRun `uv run python -m financedatabase.validation.validate_identifiers "
+        + "\nRun `uv run python -m financedatabase.validation "
         "database --apply` to fix these automatically."
     )

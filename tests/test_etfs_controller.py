@@ -1,4 +1,4 @@
-"""ETFs Test Module"""
+"""ETFs Controller Tests"""
 
 import re
 from typing import Any
@@ -6,7 +6,7 @@ from typing import Any
 import pytest
 
 import financedatabase as fd
-from tests.structure import check_search, check_select, check_show_options
+from tests.helpers import check_search, check_select, check_show_options
 
 etfs = fd.ETFs(use_local_location=True)
 

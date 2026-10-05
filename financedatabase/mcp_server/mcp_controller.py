@@ -1,6 +1,6 @@
-"""
-Finance Database MCP Server
-"""
+"""MCP Server Module"""
+
+__docformat__ = "google"
 
 import argparse
 import os
@@ -9,8 +9,6 @@ import subprocess
 import sys
 from typing import Literal
 
-# The logger is attached in financedatabase/mcp_server/__init__.py, which runs before
-# this module imports FastMCP, so nothing logged can end up on stdout.
 import anyio
 import uvicorn
 import yaml
@@ -20,16 +18,14 @@ from starlette.requests import Request
 from starlette.responses import JSONResponse
 
 from financedatabase.mcp_server import setup_model
-from financedatabase.mcp_server.logger_model import get_logger
 from financedatabase.mcp_server.provider_model import (
     AssetClassSpec,
     DatabaseProvider,
 )
 from financedatabase.mcp_server.registry_controller import AssetToolRegistry
 from financedatabase.mcp_server.tools_model import UtilityToolRegistry
+from financedatabase.utilities.logger_model import get_logger
 
-# The transports FastMCP serves on, keyed by the name used on the command line and
-# in MCP_TRANSPORT; the values carry the literal type FastMCP's `run` is typed with.
 TRANSPORTS: dict[str, Literal["stdio", "sse", "streamable-http"]] = {
     "stdio": "stdio",
     "sse": "sse",
@@ -96,7 +92,7 @@ def _build_mcp_app() -> tuple[FastMCP, DatabaseProvider]:
     ).register_all_tools()
 
     @mcp.custom_route("/health", methods=["GET"])
-    async def health(request: Request) -> JSONResponse:  # noqa: ARG001
+    async def check_health(request: Request) -> JSONResponse:  # noqa: ARG001
         return JSONResponse({"status": "ok"})
 
     logger.info(
@@ -164,8 +160,6 @@ def main() -> None:
 
     transport = arguments.transport or os.environ.get("MCP_TRANSPORT", "stdio")
 
-    # The command line is restricted by argparse, but the environment variable is
-    # not, and FastMCP only accepts these three transports.
     if transport not in TRANSPORTS:
         raise ValueError(
             f"Unknown MCP transport {transport!r}; choose one of {', '.join(TRANSPORTS)}."
@@ -175,7 +169,6 @@ def main() -> None:
     if transport in ("sse", "streamable-http"):
         host = arguments.host or os.environ.get("MCP_HOST", "0.0.0.0")  # noqa: S104
         port_env = os.environ.get("MCP_PORT", "8000")
-        # Compared against None rather than truth-tested: --port 0 asks for an ephemeral port.
         port = (
             arguments.port
             if arguments.port is not None
@@ -190,7 +183,6 @@ def main() -> None:
             if transport == "streamable-http"
             else mcp.sse_app()
         )
-        # Browser-based clients (e.g. the MCP Inspector) call the server cross-origin.
         starlette_app.add_middleware(
             CORSMiddleware,
             allow_origins=["*"],
@@ -214,7 +206,7 @@ def main() -> None:
         mcp.run(transport=TRANSPORTS[transport])
 
 
-def inspector() -> None:
+def run_inspector() -> None:
     """
     Launch the MCP Inspector UI for interactive testing of the server.
 
@@ -245,8 +237,9 @@ def inspector() -> None:
     )
 
 
-def setup() -> None:
-    """Entry point for ``financedatabase-mcp-setup``.
+def run_setup() -> None:
+    """
+    Run the financedatabase-mcp-setup command.
 
     When called **without** arguments the interactive setup wizard is launched.
 
@@ -289,12 +282,14 @@ def setup() -> None:
         setup_model.console.print()
         return
 
-    _setup_interactive()
+    _run_interactive_setup()
 
 
-def _setup_interactive() -> None:
-    """Launch the interactive setup wizard."""
-    setup_model.info("No API key needed: the Finance Database is free and open.")
+def _run_interactive_setup() -> None:
+    """
+    Launch the interactive setup wizard.
+    """
+    setup_model.print_info("No API key needed: the Finance Database is free and open.")
     setup_model.console.print()
     setup_model.print_menu()
     setup_model.console.print()
@@ -302,7 +297,7 @@ def _setup_interactive() -> None:
 
     if not choice_str or "0" in choice_str:
         setup_model.console.print()
-        setup_model.info("Setup cancelled.")
+        setup_model.print_info("Setup cancelled.")
         setup_model.console.print()
         return
 
@@ -311,13 +306,12 @@ def _setup_interactive() -> None:
         setup_model.remove_all_configs(cwd)
         return
 
-    # Unique valid choices in the order typed, e.g. '13' -> Claude Desktop + VS Code.
     to_process = [
         c for c in dict.fromkeys(choice_str) if c in setup_model.MENU_TO_CLIENT
     ]
     if not to_process:
         setup_model.console.print()
-        setup_model.err("No valid options selected.")
+        setup_model.print_error("No valid options selected.")
         return
 
     setup_model.console.print()
@@ -326,15 +320,15 @@ def _setup_interactive() -> None:
         try:
             setup_model.write_client_config(client, cwd, interactive=True)
         except Exception as error:
-            setup_model.err(
+            setup_model.print_error(
                 f"Error configuring {setup_model.CLIENTS[client][2]}: {error}"
             )
 
     setup_model.console.print()
     setup_model.console.rule("[dim]Done[/]", style="dim")
     setup_model.console.print()
-    setup_model.ok("[bold]All selected configurations updated![/]")
-    setup_model.info("Restart your client(s) to apply changes.")
+    setup_model.print_success("[bold]All selected configurations updated![/]")
+    setup_model.print_info("Restart your client(s) to apply changes.")
     setup_model.console.print()
 
 
