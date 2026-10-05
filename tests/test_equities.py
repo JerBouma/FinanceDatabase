@@ -50,10 +50,15 @@ def test_na_symbol_survives_local_compression_round_trip() -> None:
     assert pd.isna(equities.data.loc["NA", "summary"])
 
 
-def test_na_symbol_survives_remote_compression_round_trip(monkeypatch) -> None:
+def test_na_symbol_survives_remote_compression_round_trip(
+    monkeypatch, tmp_path
+) -> None:
     """Remote BZ2 loading uses the same literal-NA handling as local loading."""
+    monkeypatch.setenv("FINANCEDATABASE_CACHE_DIR", str(tmp_path))
 
     class _Response:
+        status_code = 200
+        headers: dict = {}
         content = Path("compression/equities.bz2").read_bytes()
 
         @staticmethod

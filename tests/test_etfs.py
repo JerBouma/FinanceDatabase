@@ -144,3 +144,27 @@ def test_search_excludes_delisted_by_default() -> None:
     assert (
         not etfs.search(name=data.loc[delisted, "name"])["delisted"].astype(bool).any()
     )
+
+
+def test_delisted_only_values_are_valid_when_delisted_etfs_are_included() -> None:
+    """Like equities (#171): a value that only delisted ETFs have is accepted with
+    exclude_delisted=False and rejected otherwise."""
+    data = etfs.data
+    delisted = data[data["delisted"].astype(bool)]
+    listed_families = set(data.loc[~data["delisted"].astype(bool), "family"].dropna())
+    family = next(
+        f for f in delisted["family"].dropna().unique() if f not in listed_families
+    )
+
+    result = etfs.select(family=family, exclude_delisted=False)
+    assert len(result) > 0 and result["delisted"].all()
+    assert (
+        etfs.show_options(selection="family", exclude_delisted=False)
+        .tolist()
+        .count(family)
+        == 1
+    )
+    with pytest.raises(ValueError, match="is not available in the database"):
+        etfs.select(family=family)
+    with pytest.raises(ValueError, match="is not available in the database"):
+        etfs.select(family=family, exclude_delisted=True)

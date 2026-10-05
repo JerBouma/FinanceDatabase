@@ -1,12 +1,18 @@
 """Helper Module for the Finance Database package."""
 
+from __future__ import annotations
+
+import re
 from io import BytesIO
 from pathlib import Path
 from typing import Any
 
 import numpy as np
 import pandas as pd
+import polars as pl
 import requests
+
+from .data_loader import from_pandas, load_lazy, string_dtype, to_pandas
 
 file_path = Path(__file__).parent.parent / "compression"
 DATA_REPO = (
@@ -14,6 +20,8 @@ DATA_REPO = (
 )
 
 # pylint: disable=isinstance-second-argument-not-valid-type
+
+ROW_POSITION = "__financedatabase_row__"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -32,9 +40,19 @@ class FinanceDatabase:
     of sectors, industries, investment types, and more.
 
     This class serves as the base controller for all asset-class specific subclasses.
+    Data is cached locally and queried lazily with Polars (see ``data_loader``); results
+    are returned as pandas (``as_pandas=True``, the default) or Polars DataFrames.
     """
 
     FILE_NAME = ""
+    # Selectable columns in select() parameter order: column -> (label, plural) for the
+    # "The <label> '<value>' is not available ... the available <plural>" error message.
+    FIELDS: dict[str, tuple[str, str]] = {}
+    # Whether filter values are validated against listed entries only. None follows the
+    # exclude_delisted argument; True always validates against listed entries.
+    VALIDATION_EXCLUDES_DELISTED: bool | None = None
+    # Name used in the notice printed when only_primary_listing finds no primary listings.
+    PLURAL_NAME = ""
 
     def __init__(
         self,
@@ -44,8 +62,9 @@ class FinanceDatabase:
         """
         Initialize the FinanceDatabase object.
 
-        Reads the database from a CSV file corresponding to the asset class,
-        which can be located either remotely or locally.
+        Loads the database for the asset class from the local cache, downloading it first
+        when it isn't cached yet (or when the published file changed; checked at most once
+        a day). Queries only read what they need.
 
         Args:
             base_url: The URL or local path to the CSV file.
@@ -59,25 +78,9 @@ class FinanceDatabase:
         the_path = str(file_path) + "/" if use_local_location else base_url
         the_path += self.FILE_NAME
         try:
-            if use_local_location:
-                self.data = pd.read_csv(
-                    the_path,
-                    compression="bz2",
-                    index_col=0,
-                    keep_default_na=False,
-                    na_values=[""],
-                )
-            else:
-                response = requests.get(the_path, headers=HEADERS, timeout=60)
-                response.raise_for_status()
-
-                self.data = pd.read_csv(
-                    BytesIO(response.content),
-                    compression="bz2",
-                    index_col=0,
-                    keep_default_na=False,
-                    na_values=[""],
-                )
+            self._lazy = load_lazy(
+                self.FILE_NAME, base_url, file_path if use_local_location else None
+            )
         except requests.exceptions.RequestException as error:
             raise ValueError(
                 f"Failed to load data from {the_path}: {str(error)}.\n"
@@ -85,8 +88,156 @@ class FinanceDatabase:
                 "It is possible it fails due to a firewall or other security settings. "
                 "Sometimes Google Colab is also the culprit."
             ) from error
+        self._data: pd.DataFrame | None = None
+        self._options_cache: dict[tuple[str, bool], set[str]] = {}
+        self._empty_columns: set[str] | None = None
 
-    def search(self, **kwargs: Any) -> pd.DataFrame:
+    # ------------------------------------------------------------------ data access
+
+    @property
+    def data(self) -> pd.DataFrame:
+        """The full dataset as a pandas DataFrame (built on first access, then kept)."""
+        if self._data is None:
+            self._data = self._to_pandas(self._lazy.collect())
+        return self._data
+
+    @data.setter
+    def data(self, frame: pd.DataFrame) -> None:
+        # Queries run on a text copy; results are taken from the given frame by row position,
+        # so they keep its exact index and dtypes.
+        self._data = frame
+        self._lazy = (
+            from_pandas(frame)
+            .with_columns(pl.int_range(pl.len(), dtype=pl.Int64).alias(ROW_POSITION))
+            .lazy()
+        )
+        self._options_cache = {}
+        self._empty_columns = None
+
+    def _to_pandas(self, frame: pl.DataFrame) -> pd.DataFrame:
+        result = to_pandas(frame)
+        # pandas' CSV reader types a column that is empty in the whole file as float64.
+        if self._empty_columns is None:
+            counts = self._lazy.select(pl.all().is_not_null().sum()).collect().row(0)
+            self._empty_columns = {
+                name
+                for name, count in zip(self._lazy.collect_schema(), counts)
+                if not count
+            }
+        for name in self._empty_columns:
+            if name in result.columns:
+                result[name] = result[name].astype("float64")
+        return result
+
+    def _output(
+        self, frame: pl.DataFrame, as_pandas: bool
+    ) -> FinanceFrame | pl.DataFrame:
+        if ROW_POSITION in frame.columns:  # data was replaced with a pandas frame
+            if as_pandas:
+                positions = frame.get_column(ROW_POSITION).to_list()
+                return FinanceFrame(self._data.iloc[positions])
+            return frame.drop(ROW_POSITION)
+        return FinanceFrame(self._to_pandas(frame)) if as_pandas else frame
+
+    def _without_delisted(self, exclude_delisted: bool) -> pl.LazyFrame:
+        lazy = self._lazy
+        if exclude_delisted and "delisted" in lazy.collect_schema():
+            lazy = lazy.filter(pl.col("delisted") != "True")
+        return lazy
+
+    # ------------------------------------------------------------------ select / options
+
+    def _options_lower(self, field: str, exclude_delisted: bool) -> set[str]:
+        key = (field, exclude_delisted)
+        if key not in self._options_cache:
+            values = (
+                self._without_delisted(exclude_delisted)
+                .select(pl.col(field).drop_nulls().str.to_lowercase().unique())
+                .collect()
+                .get_column(field)
+            )
+            self._options_cache[key] = set(values.to_list())
+        return self._options_cache[key]
+
+    def _filtered(
+        self,
+        filters: dict[str, Any],
+        only_primary_listing: bool = False,
+        exclude_delisted: bool = False,
+    ) -> pl.LazyFrame:
+        """Validate the filters (as before: against all values) and apply them lazily."""
+        lazy = self._without_delisted(exclude_delisted)
+        for field, (label, plural) in self.FIELDS.items():
+            value = filters.get(field)
+            if not value:
+                continue
+            values = [value] if isinstance(value, str) else value
+            values_lower = [item.lower() for item in values]
+            validate_listed = self.VALIDATION_EXCLUDES_DELISTED
+            options = self._options_lower(
+                field, exclude_delisted if validate_listed is None else validate_listed
+            )
+            for item_lower, item in zip(values_lower, values):
+                if item_lower not in options:
+                    raise ValueError(
+                        f"The {label} '{item}' is not available in the database. "
+                        f"Please check the available {plural} using the 'show_options' method."
+                    )
+            lazy = lazy.filter(pl.col(field).str.to_lowercase().is_in(values_lower))
+        if only_primary_listing:
+            symbol = self._lazy.collect_schema().names()[0]
+            primary = lazy.filter(~pl.col(symbol).str.contains(".", literal=True))
+            # If there are no primary listings, all listings are returned (as before).
+            if primary.select(pl.len()).collect().item():
+                lazy = primary
+            else:
+                print(
+                    f"No primary listings found. Returning all {self.PLURAL_NAME} "
+                    "matching your criteria."
+                )
+        return lazy
+
+    def _select(
+        self,
+        filters: dict[str, Any],
+        only_primary_listing: bool = False,
+        exclude_delisted: bool = False,
+        as_pandas: bool = True,
+    ) -> FinanceFrame | pl.DataFrame:
+        lazy = self._filtered(filters, only_primary_listing, exclude_delisted)
+        return self._output(lazy.collect(), as_pandas)
+
+    def _show_options(
+        self,
+        selection: str | None,
+        selection_values: list[str],
+        invalid_selection_message: str,
+        filters: dict[str, Any],
+        exclude_delisted: bool = False,
+        as_pandas: bool = True,
+    ) -> dict | np.ndarray | pl.Series:
+        if selection is not None and selection not in selection_values:
+            raise ValueError(invalid_selection_message)
+        lazy = self._filtered(filters, False, exclude_delisted)
+        columns = selection_values if selection is None else [selection]
+        frame = lazy.select(columns).collect()
+
+        def options(column: str) -> np.ndarray | pl.Series:
+            values = frame.get_column(column).drop_nulls().unique()
+            if not as_pandas:
+                return values.sort()
+            # Sorted and deduplicated by pandas, exactly as the pandas implementation did.
+            return (
+                pd.Series(values.to_list(), dtype=string_dtype()).sort_values().unique()
+            )
+
+        if selection is None:
+            return {column: options(column) for column in selection_values}
+        return options(selection)
+
+    # ------------------------------------------------------------------ search
+
+    def search(self, **kwargs: Any) -> pd.DataFrame | pl.DataFrame:
         """
         Search for specific data based on provided criteria.
 
@@ -104,65 +255,43 @@ class FinanceDatabase:
                 Defaults to None.
             exclude_delisted (bool): Whether to exclude delisted entries (equities and
                 ETFs). Defaults to True; pass False to include them.
+            as_pandas (bool): Return a pandas DataFrame (True, the default) or a
+                Polars DataFrame (False).
 
         Returns:
             DataFrame with filtered data based on the input criteria.
         """
-        data_filter = self.data.copy()
-
-        if "case_sensitive" in kwargs:
-            case_sensitive = bool(kwargs["case_sensitive"] in [True, "True"])
-            kwargs = {k: v for k, v in kwargs.items() if k != "case_sensitive"}
-        else:
-            case_sensitive = False
-
-        # Delisted entries are excluded unless exclude_delisted=False is passed, as select() does.
+        as_pandas = kwargs.pop("as_pandas", True) in [True, "True"]
+        case_sensitive = kwargs.pop("case_sensitive", False) in [True, "True"]
         exclude_delisted = kwargs.pop("exclude_delisted", True) in [True, "True"]
-        if exclude_delisted and "delisted" in data_filter.columns:
-            data_filter = data_filter[~data_filter["delisted"].astype(bool)]
+        lazy = self._without_delisted(exclude_delisted)
+        columns = [c for c in lazy.collect_schema().names() if c != ROW_POSITION]
+        symbol = columns[0]
 
         for key, value in kwargs.items():
             if key == "only_primary_listing":
                 if value is True:
-                    # Filter data if exclude exchanges is set to True
-                    data_filter = data_filter[
-                        ~data_filter.index.str.contains(r"\.", na=False)
-                    ]
+                    lazy = lazy.filter(~pl.col(symbol).str.contains(".", literal=True))
             elif key == "index":
-                # Look into the index of the DataFrame and search accordingly
-                if isinstance(value, list | pd.Index):
-                    data_filter = data_filter[data_filter.index.isin(value)]
+                if isinstance(value, list | pd.Index | pl.Series):
+                    lazy = lazy.filter(pl.col(symbol).is_in(list(value)))
                 else:
-                    data_filter = data_filter[
-                        data_filter.index.str.contains(value, na=False)
-                    ]
-            elif key not in data_filter.columns:
+                    lazy = lazy.filter(_matches(pl.col(symbol), value, True))
+            elif key not in columns[1:]:
                 print(f"{key} is not a valid column.")
             elif isinstance(value, list):
                 if case_sensitive:
-                    # For case-sensitive search, use string comparison that preserves case
-                    data_filter = data_filter[data_filter[key].isin(value)]
+                    lazy = lazy.filter(pl.col(key).is_in(value))
                 else:
-                    # For case-insensitive search, convert both sides to lowercase
-                    # Create a mask that matches if any value in the list is found in the column
-                    mask = (
-                        data_filter[key]
-                        .str.lower()
-                        .apply(
-                            lambda x, vals=value: (
-                                any(val.lower() in str(x).lower() for val in vals)
-                                if pd.notna(x)
-                                else False
-                            )
-                        )
-                    )
-                    data_filter = data_filter[mask]
+                    lowered = pl.col(key).str.to_lowercase()
+                    hits = [
+                        lowered.str.contains(v.lower(), literal=True) for v in value
+                    ]
+                    lazy = lazy.filter(pl.any_horizontal(hits).fill_null(False))
             else:
-                data_filter = data_filter[
-                    data_filter[key].str.contains(value, case=case_sensitive, na=False)
-                ]
+                lazy = lazy.filter(_matches(pl.col(key), value, case_sensitive))
 
-        return FinanceFrame(data_filter)
+        return self._output(lazy.collect(), as_pandas)
 
     def show_options(self) -> pd.Index | dict | np.ndarray:
         """
@@ -175,6 +304,29 @@ class FinanceDatabase:
             values for a single column).
         """
         return self.data.columns
+
+
+def _matches(column: pl.Expr, pattern: str, case_sensitive: bool) -> pl.Expr:
+    """``str.contains`` with Python regex semantics, as pandas used before.
+
+    Polars' regex engine is used when it understands the pattern the same way; patterns it
+    doesn't support (e.g. look-around or backreferences) fall back to Python's ``re``.
+    """
+    try:
+        re.compile(pattern)
+    except re.error as error:
+        raise re.error(f"Invalid search pattern {pattern!r}: {error}") from error
+    flagged = pattern if case_sensitive else f"(?i){pattern}"
+    try:
+        pl.select(pl.lit("").str.contains(flagged))
+        return column.str.contains(flagged).fill_null(False)
+    except pl.exceptions.ComputeError:
+        compiled = re.compile(pattern, 0 if case_sensitive else re.IGNORECASE)
+        return column.map_elements(
+            lambda value: value is not None and bool(compiled.search(value)),
+            return_dtype=pl.Boolean,
+            skip_nulls=False,
+        ).fill_null(False)
 
 
 class FinanceFrame(pd.DataFrame):
@@ -291,6 +443,7 @@ def show_options(
     selection: str | None = None,
     base_url: str = DATA_REPO,
     use_local_location: bool = False,
+    as_pandas: bool = True,
 ) -> dict:
     """
     Get available category options for a specific asset class.
@@ -306,6 +459,8 @@ def show_options(
             Defaults to the GitHub repository.
         use_local_location: Whether to use a local file path.
             Defaults to False.
+        as_pandas: Return the values as numpy arrays (True, the default) or as
+            Polars Series (False).
 
     Returns:
         Dictionary mapping category names to their possible values.
@@ -364,5 +519,10 @@ def show_options(
         index: categories_df.loc[index].dropna().to_numpy()
         for index in categories_df.index
     }
+    if not as_pandas:
+        return {
+            index: pl.Series(index, [str(v) for v in values])
+            for index, values in categories.items()
+        }
 
     return categories

@@ -19,6 +19,18 @@ class Equities(FinanceDatabase):
     """
 
     FILE_NAME = "equities.bz2"
+    PLURAL_NAME = "equities"
+    FIELDS = {
+        "country": ("country", "countries"),
+        "sector": ("sector", "sectors"),
+        "industry_group": ("industry group", "industry groups"),
+        "industry": ("industry", "industries"),
+        "currency": ("currency", "currencies"),
+        "exchange": ("exchange", "exchanges"),
+        "mic": ("MIC", "MICs"),
+        "market": ("market", "markets"),
+        "market_cap": ("market cap", "market caps"),
+    }
 
     def select(
         self,
@@ -33,6 +45,7 @@ class Equities(FinanceDatabase):
         market_cap: str | list | None = None,
         only_primary_listing: bool = False,
         exclude_delisted: bool = True,
+        as_pandas: bool = True,
     ) -> FinanceFrame:
         """
         Retrieve equity data based on specified criteria.
@@ -66,6 +79,9 @@ class Equities(FinanceDatabase):
             exclude_delisted (bool, optional): Whether to exclude delisted equities.
                 If True, delisted equities will be excluded from the results.
                 Default is True.
+            as_pandas (bool, optional): Return a pandas DataFrame (True, the default) or a
+                Polars DataFrame (False).
+
         Raises:
             ValueError: If any of the specified criteria are not available in the database.
                 Please check the available options using the 'show_options' method.
@@ -74,178 +90,22 @@ class Equities(FinanceDatabase):
             FinanceFrame:
                 A DataFrame containing equity data matching the specified input criteria.
         """
-        equities = self.data.copy(deep=True)
-
-        if exclude_delisted:
-            equities = equities[~equities["delisted"]]
-        if country:
-            countries = [country] if isinstance(country, str) else country
-            countries_lower = [country.lower() for country in countries]
-            options_lower = [
-                option.lower()
-                for option in self.show_options(
-                    selection="country", exclude_delisted=exclude_delisted
-                )
-            ]
-            for country_lower, country_actual in zip(countries_lower, countries):
-                if country_lower not in options_lower:
-                    raise ValueError(
-                        f"The country '{country_actual}' is not available in the database. "
-                        "Please check the available countries using the 'show_options' method."
-                    )
-            equities = equities[equities["country"].str.lower().isin(countries_lower)]
-        if sector:
-            sectors = [sector] if isinstance(sector, str) else sector
-            sectors_lower = [sector.lower() for sector in sectors]
-            options_lower = [
-                option.lower()
-                for option in self.show_options(
-                    selection="sector", exclude_delisted=exclude_delisted
-                )
-            ]
-            for sector_lower, sector_actual in zip(sectors_lower, sectors):
-                if sector_lower not in options_lower:
-                    raise ValueError(
-                        f"The sector '{sector_actual}' is not available in the database. "
-                        "Please check the available sectors using the 'show_options' method."
-                    )
-            equities = equities[equities["sector"].str.lower().isin(sectors_lower)]
-        if industry_group:
-            industry_groups = (
-                [industry_group] if isinstance(industry_group, str) else industry_group
-            )
-            industry_groups_lower = [group.lower() for group in industry_groups]
-            options_lower = [
-                option.lower()
-                for option in self.show_options(
-                    selection="industry_group", exclude_delisted=exclude_delisted
-                )
-            ]
-            for group_lower, group_actual in zip(
-                industry_groups_lower, industry_groups
-            ):
-                if group_lower not in options_lower:
-                    raise ValueError(
-                        f"The industry group '{group_actual}' is not available in the database. "
-                        "Please check the available industry groups using the 'show_options' method."
-                    )
-            equities = equities[
-                equities["industry_group"].str.lower().isin(industry_groups_lower)
-            ]
-        if industry:
-            industries = [industry] if isinstance(industry, str) else industry
-            industries_lower = [industry.lower() for industry in industries]
-            options_lower = [
-                option.lower()
-                for option in self.show_options(
-                    selection="industry", exclude_delisted=exclude_delisted
-                )
-            ]
-            for industry_lower, industry_actual in zip(industries_lower, industries):
-                if industry_lower not in options_lower:
-                    raise ValueError(
-                        f"The industry '{industry_actual}' is not available in the database. "
-                        "Please check the available industries using the 'show_options' method."
-                    )
-            equities = equities[equities["industry"].str.lower().isin(industries_lower)]
-        if currency:
-            currencies = [currency] if isinstance(currency, str) else currency
-            currencies_lower = [currency.lower() for currency in currencies]
-            options_lower = [
-                option.lower()
-                for option in self.show_options(
-                    selection="currency", exclude_delisted=exclude_delisted
-                )
-            ]
-            for currency_lower, currency_actual in zip(currencies_lower, currencies):
-                if currency_lower not in options_lower:
-                    raise ValueError(
-                        f"The currency '{currency_actual}' is not available in the database. "
-                        "Please check the available currencies using the 'show_options' method."
-                    )
-            equities = equities[equities["currency"].str.lower().isin(currencies_lower)]
-        if exchange:
-            exchanges = [exchange] if isinstance(exchange, str) else exchange
-            exchanges_lower = [exchange.lower() for exchange in exchanges]
-            options_lower = [
-                option.lower()
-                for option in self.show_options(
-                    selection="exchange", exclude_delisted=exclude_delisted
-                )
-            ]
-            for exchange_lower, exchange_actual in zip(exchanges_lower, exchanges):
-                if exchange_lower not in options_lower:
-                    raise ValueError(
-                        f"The exchange '{exchange_actual}' is not available in the database. "
-                        "Please check the available exchanges using the 'show_options' method."
-                    )
-            equities = equities[equities["exchange"].str.lower().isin(exchanges_lower)]
-        if mic:
-            mics = [mic] if isinstance(mic, str) else mic
-            mics_lower = [mic.lower() for mic in mics]
-            options_lower = [
-                option.lower()
-                for option in self.show_options(
-                    selection="mic", exclude_delisted=exclude_delisted
-                )
-            ]
-            for mic_lower, mic_actual in zip(mics_lower, mics):
-                if mic_lower not in options_lower:
-                    raise ValueError(
-                        f"The MIC '{mic_actual}' is not available in the database. "
-                        "Please check the available MICs using the 'show_options' method."
-                    )
-            equities = equities[equities["mic"].str.lower().isin(mics_lower)]
-        if market:
-            markets = [market] if isinstance(market, str) else market
-            markets_lower = [market.lower() for market in markets]
-            options_lower = [
-                option.lower()
-                for option in self.show_options(
-                    selection="market", exclude_delisted=exclude_delisted
-                )
-            ]
-            for market_lower, market_actual in zip(markets_lower, markets):
-                if market_lower not in options_lower:
-                    raise ValueError(
-                        f"The market '{market_actual}' is not available in the database. "
-                        "Please check the available markets using the 'show_options' method."
-                    )
-            equities = equities[equities["market"].str.lower().isin(markets_lower)]
-        if market_cap:
-            market_caps = [market_cap] if isinstance(market_cap, str) else market_cap
-            market_caps_lower = [cap.lower() for cap in market_caps]
-            options_lower = [
-                option.lower()
-                for option in self.show_options(
-                    selection="market_cap", exclude_delisted=exclude_delisted
-                )
-            ]
-            for cap_lower, cap_actual in zip(market_caps_lower, market_caps):
-                if cap_lower not in options_lower:
-                    raise ValueError(
-                        f"The market cap '{cap_actual}' is not available in the database. "
-                        "Please check the available market caps using the 'show_options' method."
-                    )
-            equities = equities[
-                equities["market_cap"].str.lower().isin(market_caps_lower)
-            ]
-
-        if only_primary_listing:
-            only_primary_listings_equities = equities[
-                ~equities.index.str.contains(r"\.", na=False)
-            ]
-
-            if only_primary_listings_equities.empty:
-                # If no primary listings are found, return all equities
-                print(
-                    "No primary listings found. Returning all equities matching your criteria."
-                )
-            else:
-                # If primary listings are found, filter the equities DataFrame.
-                equities = only_primary_listings_equities
-
-        return FinanceFrame(equities)
+        return self._select(
+            {
+                "country": country,
+                "sector": sector,
+                "industry_group": industry_group,
+                "industry": industry,
+                "currency": currency,
+                "exchange": exchange,
+                "mic": mic,
+                "market": market,
+                "market_cap": market_cap,
+            },
+            only_primary_listing=only_primary_listing,
+            exclude_delisted=exclude_delisted,
+            as_pandas=as_pandas,
+        )
 
     def show_options(
         self,
@@ -260,6 +120,7 @@ class Equities(FinanceDatabase):
         market: str | list | None = None,
         market_cap: str | list | None = None,
         exclude_delisted: bool = True,
+        as_pandas: bool = True,
     ) -> dict | np.ndarray:
         """
         Retrieve all options for the specified selection.
@@ -291,6 +152,9 @@ class Equities(FinanceDatabase):
                 If not provided, returns data for all markets.
             market_cap (str | list | None): Specific market cap or list of market caps to filter options.
                 If not provided, returns data for all market caps.
+            as_pandas (bool, optional): Return the options as numpy arrays (True, the default)
+                or as Polars Series (False).
+
 
         Raises:
             ValueError: If the selection variable provided is not valid.
@@ -312,31 +176,22 @@ class Equities(FinanceDatabase):
             "country",
             "market_cap",
         ]
-
-        if selection is not None and selection not in selection_values:
-            raise ValueError(
-                f"The selection variable provided is not valid, "
-                f"choose from {', '.join(selection_values)}"
-            )
-
-        equities = self.select(
-            country=country,
-            sector=sector,
-            industry_group=industry_group,
-            industry=industry,
-            currency=currency,
-            exchange=exchange,
-            mic=mic,
-            market=market,
-            market_cap=market_cap,
-            exclude_delisted=exclude_delisted,
-        )
-
-        return (
+        return self._show_options(
+            selection,
+            selection_values,
+            f"The selection variable provided is not valid, "
+            f"choose from {', '.join(selection_values)}",
             {
-                column: equities[column].dropna().sort_values().unique()
-                for column in selection_values
-            }
-            if selection is None
-            else equities[selection].dropna().sort_values().unique()
+                "country": country,
+                "sector": sector,
+                "industry_group": industry_group,
+                "industry": industry,
+                "currency": currency,
+                "exchange": exchange,
+                "mic": mic,
+                "market": market,
+                "market_cap": market_cap,
+            },
+            exclude_delisted=exclude_delisted,
+            as_pandas=as_pandas,
         )

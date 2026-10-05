@@ -20,6 +20,13 @@ class Indices(FinanceDatabase):
     """
 
     FILE_NAME = "indices.bz2"
+    FIELDS = {
+        "category_group": ("category group", "category groups"),
+        "category": ("category", "categories"),
+        "currency": ("currency", "currencies"),
+        "exchange": ("exchange", "exchanges"),
+        "mic": ("MIC", "MICs"),
+    }
 
     def select(
         self,
@@ -28,6 +35,7 @@ class Indices(FinanceDatabase):
         currency: str | list | None = None,
         exchange: str | list | None = None,
         mic: str | list | None = None,
+        as_pandas: bool = True,
     ) -> FinanceFrame:
         """
         Select indices based on specified filter criteria.
@@ -46,6 +54,9 @@ class Indices(FinanceDatabase):
                 Default is None, which returns all exchanges.
             mic (str | list, optional): Filter by ISO 10383 MIC code.
                 Default is None, which returns all MIC codes.
+            as_pandas (bool, optional): Return a pandas DataFrame (True, the default) or a
+                Polars DataFrame (False).
+
 
         Raises:
             ValueError: If the specified category group, category, currency, or exchange
@@ -54,84 +65,18 @@ class Indices(FinanceDatabase):
         Returns:
             FinanceFrame: DataFrame containing indices data matching the specified criteria.
         """
-        indices = self.data.copy(deep=True)
-
-        if category_group:
-            category_groups = (
-                [category_group] if isinstance(category_group, str) else category_group
-            )
-            category_groups_lower = [
-                category_group.lower() for category_group in category_groups
-            ]
-            options_lower = [
-                option.lower()
-                for option in self.show_options(selection="category_group")
-            ]
-            for category_group_lower, category_group_actual in zip(
-                category_groups_lower, category_groups
-            ):
-                if category_group_lower not in options_lower:
-                    raise ValueError(
-                        f"The category group '{category_group_actual}' is not available in the database. "
-                        "Please check the available category groups using the 'show_options' method."
-                    )
-            indices = indices[
-                indices["category_group"].str.lower().isin(category_groups_lower)
-            ]
-        if category:
-            categories = [category] if isinstance(category, str) else category
-            categories_lower = [category.lower() for category in categories]
-            options_lower = [
-                option.lower() for option in self.show_options(selection="category")
-            ]
-            for category_lower, category_actual in zip(categories_lower, categories):
-                if category_lower not in options_lower:
-                    raise ValueError(
-                        f"The category '{category_actual}' is not available in the database. "
-                        "Please check the available categories using the 'show_options' method."
-                    )
-            indices = indices[indices["category"].str.lower().isin(categories_lower)]
-        if currency:
-            currencies = [currency] if isinstance(currency, str) else currency
-            currencies_lower = [currency.lower() for currency in currencies]
-            options_lower = [
-                option.lower() for option in self.show_options(selection="currency")
-            ]
-            for currency_lower, currency_actual in zip(currencies_lower, currencies):
-                if currency_lower not in options_lower:
-                    raise ValueError(
-                        f"The currency '{currency_actual}' is not available in the database. "
-                        "Please check the available currencies using the 'show_options' method."
-                    )
-            indices = indices[indices["currency"].str.lower().isin(currencies_lower)]
-        if exchange:
-            exchanges = [exchange] if isinstance(exchange, str) else exchange
-            exchanges_lower = [exchange.lower() for exchange in exchanges]
-            options_lower = [
-                option.lower() for option in self.show_options(selection="exchange")
-            ]
-            for exchange_lower, exchange_actual in zip(exchanges_lower, exchanges):
-                if exchange_lower not in options_lower:
-                    raise ValueError(
-                        f"The exchange '{exchange_actual}' is not available in the database. "
-                        "Please check the available exchanges using the 'show_options' method."
-                    )
-            indices = indices[indices["exchange"].str.lower().isin(exchanges_lower)]
-        if mic:
-            mics = [mic] if isinstance(mic, str) else mic
-            mics_lower = [mic.lower() for mic in mics]
-            options_lower = [
-                option.lower() for option in self.show_options(selection="mic")
-            ]
-            for mic_lower, mic_actual in zip(mics_lower, mics):
-                if mic_lower not in options_lower:
-                    raise ValueError(
-                        f"The MIC '{mic_actual}' is not available in the database. "
-                        "Please check the available MICs using the 'show_options' method."
-                    )
-            indices = indices[indices["mic"].str.lower().isin(mics_lower)]
-
-        return FinanceFrame(indices)
+        return self._select(
+            {
+                "category_group": category_group,
+                "category": category,
+                "currency": currency,
+                "exchange": exchange,
+                "mic": mic,
+            },
+            only_primary_listing=False,
+            exclude_delisted=False,
+            as_pandas=as_pandas,
+        )
 
     def show_options(
         self,
@@ -141,6 +86,7 @@ class Indices(FinanceDatabase):
         currency: str | list | None = None,
         exchange: str | list | None = None,
         mic: str | list | None = None,
+        as_pandas: bool = True,
     ) -> dict | np.ndarray:
         """
         Show available options for the selection criteria.
@@ -162,6 +108,9 @@ class Indices(FinanceDatabase):
                 Default is None, which returns all exchanges.
             mic (str | list, optional): Filter by ISO 10383 MIC code.
                 Default is None, which returns all MIC codes.
+            as_pandas (bool, optional): Return the options as numpy arrays (True, the default)
+                or as Polars Series (False).
+
 
         Raises:
             ValueError: If the specified selection is not valid or if the specified
@@ -179,26 +128,18 @@ class Indices(FinanceDatabase):
             "exchange",
             "mic",
         ]
-
-        if selection is not None and selection not in selection_values:
-            raise ValueError(
-                f"The selection variable provided is not valid, "
-                f"choose from {', '.join(selection_values)}"
-            )
-
-        indices = self.select(
-            category_group=category_group,
-            category=category,
-            currency=currency,
-            exchange=exchange,
-            mic=mic,
-        )
-
-        return (
+        return self._show_options(
+            selection,
+            selection_values,
+            f"The selection variable provided is not valid, "
+            f"choose from {', '.join(selection_values)}",
             {
-                column: indices[column].dropna().sort_values().unique()
-                for column in selection_values
-            }
-            if selection is None
-            else indices[selection].dropna().sort_values().unique()
+                "category_group": category_group,
+                "category": category,
+                "currency": currency,
+                "exchange": exchange,
+                "mic": mic,
+            },
+            exclude_delisted=False,
+            as_pandas=as_pandas,
         )

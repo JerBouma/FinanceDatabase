@@ -535,6 +535,20 @@ A sample of the output is shown below, focusing on ETH-BTC:
 | 2025Q2 | 0.0218 | 0.0217 | 0.0216 |  0.0216 |      0.0216 |   195229 |           0 |  -0.0137 |       0.1415 |         -0.053  |              0.1361 |              1.0435 |
 
 
+## Caching and Polars output
+The database files are downloaded once and kept in a local cache (`~/.cache/financedatabase` on Linux, `~/Library/Caches/financedatabase` on macOS, `%LOCALAPPDATA%\financedatabase\Cache` on Windows, or the folder set in `FINANCEDATABASE_CACHE_DIR`). Once a day the package checks whether a newer version was published and only downloads it when it changed; without an internet connection the cached copy is used. Queries are run lazily with [Polars](https://pola.rs), so only the rows and columns you ask for are read.
+
+Every `select`, `search` and `show_options` call returns pandas by default, exactly as before. Pass `as_pandas=False` to get a Polars `DataFrame` (or Polars `Series` for options) instead:
+
+```python
+import polars as pl
+
+equities = fd.Equities()
+
+canadian_banks = equities.select(country="Canada", industry="Banks", as_pandas=False)
+canadian_banks.filter(pl.col("market_cap") == "Large Cap")
+```
+
 # Questions & Answers
 In this section you can find answers to commonly asked questions. In case the answer to your question is not here, 
 consider creating an [Issue](https://github.com/JerBouma/FinanceDatabase/issues).
