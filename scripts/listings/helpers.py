@@ -18,6 +18,15 @@ TIMEOUT = 120
 US_ETF_FILES = {"NMS", "NGM", "NCM", "NYQ", "ASE", "PCX", "BTS"}
 
 SUFFIX = r"\.(?:TO|V|HK|NS|T|AX)$"
+# Instruments with an expiry or maturity date go out of date quickly and are not added;
+# the weekly US update uses the same rule.
+DATED_NAME = re.compile(
+    r"\bwarrants?\b|\s(?:WTS?|RTS)$|\brights?$|\bsubscription rights?\b"
+    r"|\bcontingent value rights?\b|\brights? to (?:receive|subscribe)\b"
+    r"|\b(?:notes?|debentures?|bonds?|preferred shares)\b.*\bdue\b"
+    r"|\bdue\s+(?:\w+\s+)?(?:\d{1,2},?\s+)?(?:19|20)\d\d\b",
+    re.IGNORECASE,
+)
 NAME_STOPWORDS = (
     r"\b(inc|incorporated|corp|corporation|ltd|limited|plc|co|company|holdings?|group|"
     r"sa|ag|nv|se|the|class [a-z]|common stock|ordinary shares|shares|stock|llc|lp)\b"

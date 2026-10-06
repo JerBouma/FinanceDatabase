@@ -17,6 +17,7 @@ from scripts.listings.enrichment_model import (
     learn_categories,
 )
 from scripts.listings.helpers import (
+    DATED_NAME,
     SUFFIX,
     US_ETF_FILES,
     get_symbol_key,
@@ -43,6 +44,8 @@ def apply_source(
     seen = set()
     for listing in result.listings:
         if listing.symbol in db.symbols or listing.symbol in seen:
+            continue
+        if DATED_NAME.search(listing.name):
             continue
         seen.add(listing.symbol)
         frame = db.get_frame(listing.kind, listing.file)

@@ -35,10 +35,10 @@ def create_database(tmp_path: Path) -> Path:
     (root / "equities" / "TOR.csv").write_text(
         EQ_HEADER
         + create_equity_row(
-            "ABC.TO", "Abc Mining Corp.", "TOR", "XTSE", "TSX Toronto Exchange"
+            "ABC.TO", "Abc Mining Corp.", "TOR", "XTSE", "Toronto Stock Exchange"
         )
         + create_equity_row(
-            "OLD.TO", "Renamed Holdings Inc.", "TOR", "XTSE", "TSX Toronto Exchange"
+            "OLD.TO", "Renamed Holdings Inc.", "TOR", "XTSE", "Toronto Stock Exchange"
         )
     )
     (root / "equities" / "VAN.csv").write_text(
@@ -198,7 +198,7 @@ def test_apply_source_adds_dedupes_and_delists(tmp_path: Path) -> None:
     assert tor.loc["NEW.TO", ["exchange", "mic", "market", "delisted"]].tolist() == [
         "TOR",
         "XTSE",
-        "TSX Toronto Exchange",
+        "Toronto Stock Exchange",
         "False",
     ]
     assert tor.loc["NEW.TO", "sector"] == ""  # unknown stays blank
@@ -593,3 +593,26 @@ def test_sec_objective_skips_supplements() -> None:
         FakeSec().get_objective("ABFL")
         == "The Fund seeks long-term capital appreciation."
     )
+
+
+def test_dated_instruments_are_not_added(tmp_path: Path) -> None:
+    """Test that warrants, rights and notes with a maturity date are not added."""
+    db = database_model.Database(str(create_database(tmp_path)))
+    listings = [
+        ("GASX-WTA.TO", "Gasx Corp. Warrants (GASX.WT.A)"),
+        ("PUL-RT.TO", "Pulse Oil Corp Rights"),
+        ("ABCN.TO", "Abc Mining Corp. 6.00% Notes due 2029"),
+        ("MOEX.TO", "Moscow Exchange MICEX-RTS"),
+        ("NEW.TO", "Brand New Corp."),
+    ]
+    result = sources_model.SourceResult(
+        listings=[
+            sources_model.Listing("equities", "TOR", symbol, name, "CAD")
+            for symbol, name in listings
+        ],
+        official={"TOR": {symbol for symbol, _ in listings} | {"ABC.TO", "OLD.TO"}},
+    )
+    summary = listings_controller.apply_source(
+        db, "TSX", result, lambda name: "", use_openfigi=False
+    )
+    assert [listing.symbol for listing in summary["added"]] == ["MOEX.TO", "NEW.TO"]

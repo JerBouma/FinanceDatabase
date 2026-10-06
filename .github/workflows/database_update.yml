@@ -36,7 +36,7 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.13'
-      - run: pip install "pandas[excel]" financedatabase
+      - run: pip install pandas financedatabase
       - name: Add New Tickers and Update Old Ones
         uses: jannekem/run-python-script-action@v1.8
         with:
@@ -74,21 +74,17 @@ jobs:
                 return np.nan
 
 
-            def lookup_industry(row_industry: str, fd_industries: pd.DataFrame) -> Optional[str]:
-                """Map an exchange industry label to the FinanceDatabase equivalent.
-                
+            def lookup_industry(row_industry: str, fd_industries: dict) -> Optional[str]:
+                """Map an exchange industry label to the FinanceDatabase (GICS) industry.
+
                 Args:
                     row_industry: Raw industry string from the exchange data.
-                    fd_industries: Lookup DataFrame with FinanceDatabase industry names.
-                
+                    fd_industries: Feed industry label -> FinanceDatabase industry.
+
                 Returns:
-                    Mapped industry string, or np.nan if not found.
+                    Mapped industry string, or np.nan for a missing or unmapped label.
                 """
-                try:
-                    result = fd_industries.loc[row_industry].iloc[0]
-                    return result.iloc[0] if isinstance(result, pd.Series) else result
-                except KeyError:
-                    return np.nan
+                return fd_industries.get(row_industry, np.nan)
 
 
             def lookup_industry_group(industry: str, equities: pd.DataFrame) -> Optional[str]:
@@ -130,7 +126,7 @@ jobs:
             def build_new_ticker(
                 index: str,
                 row: pd.Series,
-                fd_industries: pd.DataFrame,
+                fd_industries: dict,
                 equities: pd.DataFrame,
                 market_cap: Optional[str],
                 exchange_to_mic: dict,
@@ -140,7 +136,7 @@ jobs:
                 Args:
                     index: Ticker symbol.
                     row: Raw row from the exchange data.
-                    fd_industries: Lookup DataFrame for industries.
+                    fd_industries: Feed industry label -> FinanceDatabase industry.
                     equities: The equities reference DataFrame.
                     market_cap: Pre-calculated market cap tier.
 
@@ -187,7 +183,7 @@ jobs:
             FEEDS = {
                 'nasdaq': ('NMS', 'NASDAQ Global Select'),
                 'nyse':   ('NYQ', 'New York Stock Exchange'),
-                'amex':   ('ASE', 'NYSE MKT'),
+                'amex':   ('ASE', 'NYSE American'),
             }
 
             # A plain ticker: letters/digits plus the class and series separators
@@ -197,6 +193,15 @@ jobs:
 
             # Exchange-traded products belong in database/etfs, not equities.
             ETP_NAME = r'\b(?:ETF|ETFs|ETN|ETNs|Exchange[- ]Traded)\b'
+
+            # Instruments with an expiry or maturity date (warrants, rights, notes and
+            # bonds due in a given year) go out of date quickly and are not added.
+            DATED_NAME = (
+                r'\bwarrants?\b|\s(?:WTS?|RTS)$|\brights?$|\bsubscription rights?\b'
+                r'|\bcontingent value rights?\b|\brights? to (?:receive|subscribe)\b'
+                r'|\b(?:notes?|debentures?|bonds?|preferred shares)\b.*\bdue\b'
+                r'|\bdue\s+(?:\w+\s+)?(?:\d{1,2},?\s+)?(?:19|20)\d\d\b'
+            )
 
 
             def load_feed(name: str) -> Optional[pd.DataFrame]:
@@ -217,11 +222,14 @@ jobs:
                 feed['name'] = feed['name'].astype(str).str.strip()
                 invalid = ~feed['symbol'].str.match(VALID_SYMBOL)
                 etp = feed['name'].str.contains(ETP_NAME, case=False, regex=True)
+                dated = feed['name'].str.contains(DATED_NAME, case=False, regex=True)
                 if invalid.any():
                     print(f"{name}: skipping malformed symbols {feed.loc[invalid, 'symbol'].tolist()}")
                 if etp.any():
                     print(f"{name}: skipping exchange-traded products {feed.loc[etp & ~invalid, 'symbol'].tolist()}")
-                feed = feed[~invalid & ~etp & (feed['name'] != '')]
+                if dated.any():
+                    print(f"{name}: skipping warrants, rights and dated notes {feed.loc[dated & ~invalid & ~etp, 'symbol'].tolist()}")
+                feed = feed[~invalid & ~etp & ~dated & (feed['name'] != '')]
                 feed = feed.drop_duplicates('symbol').set_index('symbol')
                 feed['exchange'], feed['market'] = FEEDS[name]
                 return feed
@@ -236,10 +244,13 @@ jobs:
             # Reference data
             # ---------------------------------------------------------------------------
 
-            fd_categories_path = 'compression/categories/github_exchange_categories.xlsx'
-            fd_sectors         = pd.read_excel(fd_categories_path, sheet_name='sector',         index_col=1)
-            fd_industry_groups = pd.read_excel(fd_categories_path, sheet_name='industry_group', index_col=1)
-            fd_industries      = pd.read_excel(fd_categories_path, sheet_name='industry',       index_col=1)
+            # Nasdaq feed industry label -> GICS industry. Labels that span several GICS
+            # industries are not listed, so those tickers stay unclassified.
+            fd_industries = (
+                pd.read_csv('scripts/us_feed_industries.csv', dtype=str, keep_default_na=False)
+                .set_index('feed_industry')['industry']
+                .to_dict()
+            )
 
             # Read the equities database from per-exchange files, preserving every
             # cell exactly as written so the rewrite below is a no-op for untouched
@@ -380,7 +391,7 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.10'
-      - run: pip install "pandas[excel]" financedatabase
+      - run: pip install pandas financedatabase
       - name: Update Compressions
         uses: jannekem/run-python-script-action@v1.8
         with:
@@ -457,7 +468,7 @@ jobs:
           uses: actions/setup-python@v6
           with:
             python-version: '3.10'
-        - run: pip install "pandas[excel]" financedatabase
+        - run: pip install pandas financedatabase
         - name: Update categories
           uses: jannekem/run-python-script-action@v1.8
           with:
@@ -607,7 +618,7 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.10'
-      - run: pip install "pandas[excel]" financedatabase
+      - run: pip install pandas financedatabase
       - name: Check GICS Categorisation
         uses: jannekem/run-python-script-action@v1.8
         with:
