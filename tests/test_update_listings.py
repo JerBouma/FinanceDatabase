@@ -34,9 +34,9 @@ def make_db(tmp_path: Path) -> Path:
     (root / "etfs").mkdir()
     (root / "equities" / "TOR.csv").write_text(
         EQ_HEADER
-        + eq_row("ABC.TO", "Abc Mining Corp.", "TOR", "XTSE", "TSX Toronto Exchange")
+        + eq_row("ABC.TO", "Abc Mining Corp.", "TOR", "XTSE", "Toronto Stock Exchange")
         + eq_row(
-            "OLD.TO", "Renamed Holdings Inc.", "TOR", "XTSE", "TSX Toronto Exchange"
+            "OLD.TO", "Renamed Holdings Inc.", "TOR", "XTSE", "Toronto Stock Exchange"
         )
     )
     (root / "equities" / "VAN.csv").write_text(
@@ -181,7 +181,7 @@ def test_apply_source_adds_dedupes_and_delists(tmp_path: Path) -> None:
     assert tor.loc["NEW.TO", ["exchange", "mic", "market", "delisted"]].tolist() == [
         "TOR",
         "XTSE",
-        "TSX Toronto Exchange",
+        "Toronto Stock Exchange",
         "False",
     ]
     assert tor.loc["NEW.TO", "sector"] == ""  # unknown stays blank

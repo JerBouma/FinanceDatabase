@@ -282,9 +282,9 @@ This returns a small selection of companies on all exchanges where the companies
 | symbol    | name               | currency   | sector     | industry_group   | industry   | exchange   | market                   | country     |   state | city      | zipcode   | website              | market_cap   | isin         |   cusip | figi         | composite_figi   | shareclass_figi   |
 |:----------|:-------------------|:-----------|:-----------|:-----------------|:-----------|:-----------|:-------------------------|:------------|--------:|:----------|:----------|:---------------------|:-------------|:-------------|--------:|:-------------|:-----------------|:------------------|
 | A16.F     | ASR Nederland N.V. | EUR        | Financials | Insurance        | Insurance  | FRA        | Frankfurt Stock Exchange | Netherlands |     nan | Utrecht   | 3584 BA   | http://www.asrnl.com | Mid Cap      | NL0011872643 |     nan | BBG00D2VFV96 | BBG00D2VFV78     | BBG00CWZ0HK0      |
-| A1EG34.SA | Aegon N.V.         | BRL        | Financials | Insurance        | Insurance  | SAO        | Bovespa Soma             | Netherlands |     nan | The Hague | 2591 TV   | http://www.aegon.com | Mid Cap      | NL0000303709 |     nan | nan          | nan              | nan               |
+| A1EG34.SA | Aegon N.V.         | BRL        | Financials | Insurance        | Insurance  | SAO        | B3                       | Netherlands |     nan | The Hague | 2591 TV   | http://www.aegon.com | Mid Cap      | NL0000303709 |     nan | nan          | nan              | nan               |
 | AEG       | Aegon N.V.         | USD        | Financials | Insurance        | Insurance  | NYQ        | New York Stock Exchange  | Netherlands |     nan | The Hague | 2591 TV   | http://www.aegon.com | Large Cap    | NL0000303709 |     nan | BBG000CKQTN4 | BBG000CKQSN6     | BBG001S6Y6M8      |
-| AEGOF     | Aegon N.V.         | USD        | Financials | Insurance        | Insurance  | PNK        | OTC Bulletin Board       | Netherlands |     nan | The Hague | 2591 TV   | http://www.aegon.com | Mid Cap      | NL0000303709 |     nan | nan          | nan              | nan               |
+| AEGOF     | Aegon N.V.         | USD        | Financials | Insurance        | Insurance  | PNK        | OTC Markets              | Netherlands |     nan | The Hague | 2591 TV   | http://www.aegon.com | Mid Cap      | NL0000303709 |     nan | nan          | nan              | nan               |
 | AEND.DE   | Aegon N.V.         | EUR        | Financials | Insurance        | Insurance  | GER        | XETRA                    | Netherlands |     nan | The Hague | 2591 TV   | http://www.aegon.com | Mid Cap      | NL0000303709 |     nan | BBG000DJK260 | BBG000DJHZF1     | BBG001S5V8R4      |
 
 You'll see that the same company can appear multiple times. This is because by default all exchanges are shown. There are two methods to focus on one entry:
@@ -338,8 +338,8 @@ For any of the variables, it is also possible to provide a list instead, which m
 equities.select(
     country=['Netherlands', 'United States'],
     industry='Insurance',
-    market=['Euronext Amsterdam', 'Nordic Growth Market', 'OTC Bulletin Board',
-        'New York Stock Exchange', 'NASDAQ Global Select', 'NYSE MKT',
+    market=['Euronext Amsterdam', 'NASDAQ Global Market', 'OTC Markets',
+        'New York Stock Exchange', 'NASDAQ Global Select', 'NYSE American',
         'NASDAQ Capital Market']
 )
 ```
@@ -350,10 +350,10 @@ This returns a larger selection of companies given the increased number of count
 | symbol   | name                          | currency   | sector     | industry_group   | industry   | exchange   | market                  | country       | state   | city       | zipcode    | website                  | market_cap   | isin         |   cusip | figi         | composite_figi   | shareclass_figi   |
 |:---------|:------------------------------|:-----------|:-----------|:-----------------|:-----------|:-----------|:------------------------|:--------------|:--------|:-----------|:-----------|:-------------------------|:-------------|:-------------|--------:|:-------------|:-----------------|:------------------|
 | AAME     | Atlantic American Corporation | USD        | Financials | Insurance        | Insurance  | NGM        | Nordic Growth Market    | United States | GA      | Atlanta    | 30319-3054 | http://www.atlam.com     | Nano Cap     | nan          |     nan | nan          | nan              | nan               |
-| ACMT     | ACMAT Corporation             | USD        | Financials | Insurance        | Insurance  | PNK        | OTC Bulletin Board      | United States | CT      | Farmington | 6032       | http://www.acmatcorp.com | Nano Cap     | nan          |     nan | nan          | nan              | nan               |
-| ACMTA    | ACMAT Corporation             | USD        | Financials | Insurance        | Insurance  | PNK        | OTC Bulletin Board      | United States | CT      | Farmington | 6032       | http://www.acmatcorp.com | Nano Cap     | nan          |     nan | nan          | nan              | nan               |
+| ACMT     | ACMAT Corporation             | USD        | Financials | Insurance        | Insurance  | PNK        | OTC Markets             | United States | CT      | Farmington | 6032       | http://www.acmatcorp.com | Nano Cap     | nan          |     nan | nan          | nan              | nan               |
+| ACMTA    | ACMAT Corporation             | USD        | Financials | Insurance        | Insurance  | PNK        | OTC Markets             | United States | CT      | Farmington | 6032       | http://www.acmatcorp.com | Nano Cap     | nan          |     nan | nan          | nan              | nan               |
 | AEG      | Aegon N.V.                    | USD        | Financials | Insurance        | Insurance  | NYQ        | New York Stock Exchange | Netherlands   | nan     | The Hague  | 2591 TV    | http://www.aegon.com     | Large Cap    | NL0000303709 |     nan | BBG000CKQTN4 | BBG000CKQSN6     | BBG001S6Y6M8      |
-| AEGOF    | Aegon N.V.                    | USD        | Financials | Insurance        | Insurance  | PNK        | OTC Bulletin Board      | Netherlands   | nan     | The Hague  | 2591 TV    | http://www.aegon.com     | Mid Cap      | NL0000303709 |     nan | nan          | nan              | nan               |
+| AEGOF    | Aegon N.V.                    | USD        | Financials | Insurance        | Insurance  | PNK        | OTC Markets             | Netherlands   | nan     | The Hague  | 2591 TV    | http://www.aegon.com     | Mid Cap      | NL0000303709 |     nan | nan          | nan              | nan               |
 
 
 If the current categorization doesn't lead to the results you are looking for, it is possible to use the `search` parameter. This allows you to filter on any column in the database via a custom string. This means that if the word or sentence you input is found somewhere in the column you select, it will return the result. 
