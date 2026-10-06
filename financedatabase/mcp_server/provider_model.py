@@ -1,17 +1,6 @@
-"""
-Provider Model: the Finance Database query engine behind the MCP tools.
+"""Provider Model"""
 
-Holds one ``fd.<AssetClass>()`` instance per asset class for the lifetime of the
-process and answers every tool call from it with lazy Polars queries, so a call
-only materialises the page it returns:
-
-- The data itself is cached on disk by the package (``data_loader``): downloaded
-  once, stored as Parquet and checked for a newer version at most once a day.
-- The instances are cached in memory here, created lazily on first use and guarded
-  by a lock per asset class so concurrent first calls construct them only once.
-"""
-
-from __future__ import annotations
+__docformat__ = "google"
 
 import contextlib
 import os
@@ -24,16 +13,14 @@ from typing import Any
 import polars as pl
 
 import financedatabase as fd
-from financedatabase.helpers import ROW_POSITION, FinanceDatabase
+from financedatabase.database_controller import FinanceDatabase
 from financedatabase.mcp_server.coercion_model import resolve_values, suggest
-from financedatabase.mcp_server.logger_model import get_logger
+from financedatabase.utilities.logger_model import get_logger
 
 logger = get_logger()
 
 LOCAL_ENV = "FINANCEDATABASE_MCP_LOCAL"
 
-# Market cap tiers from largest to smallest, used to put the best-known company first
-# when several rows match a query equally well (Apple Inc. before Apple Hospitality).
 MARKET_CAP_ORDER = [
     "Mega Cap",
     "Large Cap",
@@ -45,7 +32,9 @@ MARKET_CAP_ORDER = [
 
 
 class QueryError(ValueError):
-    """An invalid request, carrying the message returned to the caller."""
+    """
+    An invalid request, carrying the message returned to the caller.
+    """
 
 
 @dataclass
@@ -77,32 +66,43 @@ class AssetClassSpec:
     supports_delisted: bool = False
     supports_primary_listing: bool = False
 
-    @property
-    def cls(self) -> type[FinanceDatabase]:
-        """The financedatabase class serving this asset class."""
+    def get_class(self) -> type[FinanceDatabase]:
+        """
+        Get the financedatabase class serving this asset class.
+
+        Returns:
+            type[FinanceDatabase]: The asset class, e.g. fd.Equities.
+        """
         return getattr(fd, self.class_name)
 
-    @property
-    def filters(self) -> list[str]:
-        """The select() filters, taken from the package so they never drift apart."""
-        return list(self.cls.FIELDS)
+    def get_filters(self) -> list[str]:
+        """
+        Get the select() filters, taken from the package so they never drift apart.
+
+        Returns:
+            list[str]: The filter names.
+        """
+        return list(self.get_class().FIELDS)
 
 
-def use_local_data() -> bool:
-    """Whether to read the repository's local compression files instead of GitHub."""
+def check_local_data() -> bool:
+    """
+    Check whether to read the repository's local compression files instead of GitHub.
+
+    Returns:
+        bool: Whether FINANCEDATABASE_MCP_LOCAL is set to a true value.
+    """
     return os.environ.get(LOCAL_ENV, "").strip().lower() in ("1", "true", "yes", "on")
 
 
 @contextlib.contextmanager
-def stdout_to_stderr():
+def redirect_stdout_to_stderr():
     """
-    Send anything the package prints to stderr while a tool runs.
+    Redirect anything printed while a tool runs to stderr.
 
-    The package prints a notice in a few places (e.g. when only_primary_listing finds
-    no primary listings). Under the stdio transport stdout is the JSON-RPC stream, so
-    a stray print would corrupt it. Tools run synchronously on the event loop thread,
-    so swapping sys.stdout for the duration of a call affects nothing else; the stdio
-    transport writes to the stdout buffer it wrapped at start-up, not to sys.stdout.
+    Under the stdio transport stdout is the JSON-RPC stream, so a stray print would
+    corrupt it. Tools run synchronously on the event loop thread, so swapping
+    sys.stdout for the duration of a call affects nothing else.
     """
     with contextlib.redirect_stdout(sys.stderr):
         yield
@@ -143,14 +143,11 @@ class DatabaseProvider:
         self._identifier_columns = list(identifier_columns or [])
         self._use_local_location = use_local_location
         self._instances: dict[str, tuple[FinanceDatabase, float]] = {}
-        # One lock per asset class, so loading equities never blocks a currency lookup.
         self._locks = {name: threading.Lock() for name in self.specs}
-
-    # ── Instances ────────────────────────────────────────────────────────────
 
     def get_instance(self, tool_name: str) -> FinanceDatabase:
         """
-        Return the cached instance for an asset class, creating it on first use.
+        Get the cached instance for an asset class, creating it on first use.
 
         Args:
             tool_name (str): The asset class tool name, e.g. "equities".
@@ -168,17 +165,16 @@ class DatabaseProvider:
                 return cached[0]
 
             local = (
-                use_local_data()
+                check_local_data()
                 if self._use_local_location is None
                 else self._use_local_location
             )
             start = time.perf_counter()
             try:
-                with stdout_to_stderr():
-                    instance = spec.cls(use_local_location=local)
+                with redirect_stdout_to_stderr():
+                    instance = spec.get_class()(use_local_location=local)
             except ValueError:
                 if cached:
-                    # Keep answering from the previous instance when a refresh fails.
                     logger.warning(
                         "Refreshing %s failed; keeping the cached instance.", tool_name
                     )
@@ -194,21 +190,17 @@ class DatabaseProvider:
             self._instances[tool_name] = (instance, time.monotonic())
             return instance
 
-    def clear(self) -> None:
-        """Drop every cached instance (they are recreated on next use)."""
+    def clear_instances(self) -> None:
+        """
+        Clear every cached instance; they are recreated on next use.
+        """
         self._instances.clear()
 
-    # ── Filters and options ──────────────────────────────────────────────────
-
-    @staticmethod
-    def _schema_columns(instance: FinanceDatabase) -> list[str]:
-        return [c for c in instance._lazy.collect_schema().names() if c != ROW_POSITION]
-
-    def options(
+    def get_options(
         self, tool_name: str, selection: str, include_delisted: bool = False
     ) -> list[str]:
         """
-        The sorted values of one field, via the package's show_options.
+        Get the sorted values of one field, via the package's show_options.
 
         Args:
             tool_name (str): The asset class tool name.
@@ -223,7 +215,7 @@ class DatabaseProvider:
         kwargs: dict[str, Any] = {"selection": selection, "as_pandas": False}
         if spec.supports_delisted:
             kwargs["exclude_delisted"] = not include_delisted
-        with stdout_to_stderr():
+        with redirect_stdout_to_stderr():
             return instance.show_options(**kwargs).to_list()
 
     def resolve_filters(
@@ -253,29 +245,23 @@ class DatabaseProvider:
             QueryError: For a field that is not a filter of the asset class.
         """
         spec = self.specs[tool_name]
-        cls = spec.cls
         instance = self.get_instance(tool_name)
-        # The same options the package validates against (see FinanceDatabase._filtered).
-        validate_listed = (
-            spec.supports_delisted and not include_delisted
-            if cls.VALIDATION_EXCLUDES_DELISTED is None
-            else cls.VALIDATION_EXCLUDES_DELISTED
-        )
+        exclude_delisted = spec.supports_delisted and not include_delisted
 
         resolved: dict[str, list[str]] = {}
         unknown: dict[str, list[str]] = {}
         for name, raw in filters.items():
             if raw is None or raw in ("", []):
                 continue
-            if name not in cls.FIELDS:
-                close = suggest(name, spec.filters, 3)
+            if name not in spec.get_filters():
+                close = suggest(name, spec.get_filters(), 3)
                 hint = f" Did you mean: {', '.join(close)}?" if close else ""
                 raise QueryError(
                     f"'{name}' is not a filter of {tool_name}.{hint} "
-                    f"Available filters: {', '.join(spec.filters)}."
+                    f"Available filters: {', '.join(spec.get_filters())}."
                 )
             values, missing = resolve_values(
-                raw, instance._options_lower(name, validate_listed)
+                raw, instance.get_lowercase_options(name, exclude_delisted)
             )
             resolved[name] = values
             if missing:
@@ -304,20 +290,34 @@ class DatabaseProvider:
         Raises:
             QueryError: The package's message plus "Did you mean" suggestions.
         """
-        with stdout_to_stderr():
+        with redirect_stdout_to_stderr():
             try:
                 return call()
             except ValueError as error:
                 hints = "".join(
-                    self._suggestion_text(tool_name, name, values, include_delisted)
+                    self._create_suggestion_text(
+                        tool_name, name, values, include_delisted
+                    )
                     for name, values in unknown.items()
                 )
                 raise QueryError(f"{error}{hints}") from error
 
-    def _suggestion_text(
+    def _create_suggestion_text(
         self, tool_name: str, name: str, unknown: list[str], include_delisted: bool
     ) -> str:
-        options = self.options(tool_name, name, include_delisted)
+        """
+        Create the "Did you mean" text for values that match no option.
+
+        Args:
+            tool_name (str): The asset class tool name.
+            name (str): The filter name.
+            unknown (list[str]): The values that match no option.
+            include_delisted (bool): Whether delisted entries are part of the request.
+
+        Returns:
+            str: The suggestions, starting with a newline.
+        """
+        options = self.get_options(tool_name, name, include_delisted)
         lines = []
         for value in unknown:
             close = suggest(value, options)
@@ -349,7 +349,7 @@ class DatabaseProvider:
         Raises:
             QueryError: For an unknown column, with suggestions.
         """
-        available = self._schema_columns(self.get_instance(tool_name))
+        available = self.get_instance(tool_name).get_columns()
         by_lower = {column.lower(): column for column in available}
         columns = [available[0]]
         for requested in show_columns:
@@ -365,9 +365,7 @@ class DatabaseProvider:
                 columns.append(column)
         return columns
 
-    # ── Queries ──────────────────────────────────────────────────────────────
-
-    def _query_expressions(
+    def _build_query_expressions(
         self, columns: list[str], query: str
     ) -> tuple[pl.Expr, pl.Expr]:
         """
@@ -376,6 +374,10 @@ class DatabaseProvider:
         Matching is a case-insensitive literal substring on symbol and name (no regex,
         so 'S&P 500' or 'BRK.B' need no escaping), plus an exact match on identifier
         columns such as ISIN where the asset class has them.
+
+        Args:
+            columns (list[str]): The columns of the dataset, the symbol column first.
+            query (str): The free-text query.
 
         Returns:
             tuple[pl.Expr, pl.Expr]: The boolean filter and an integer rank (0 = best).
@@ -401,8 +403,19 @@ class DatabaseProvider:
         return match, rank.otherwise(3).cast(pl.Int8)
 
     @staticmethod
-    def _tiebreak_columns(columns: list[str]) -> list[pl.Expr]:
-        """Order equally relevant matches: primary listings, larger caps, shorter names."""
+    def _build_tiebreak_columns(columns: list[str]) -> list[pl.Expr]:
+        """
+        Build the columns that order equally relevant matches.
+
+        Primary listings come first, then larger market caps and shorter names, so
+        Apple Inc. is listed before Apple Hospitality.
+
+        Args:
+            columns (list[str]): The columns of the dataset, the symbol column first.
+
+        Returns:
+            list[pl.Expr]: The tiebreak columns.
+        """
         exprs = [
             pl.col(columns[0])
             .str.contains(".", literal=True)
@@ -469,7 +482,7 @@ class DatabaseProvider:
 
         lazy = self._call_package(
             tool_name,
-            lambda: instance._filtered(
+            lambda: instance.filter_lazy_frame(
                 resolved,
                 only_primary_listing=(
                     only_primary_listing and spec.supports_primary_listing
@@ -480,12 +493,14 @@ class DatabaseProvider:
             include_delisted,
         )
 
-        available = self._schema_columns(instance)
+        available = instance.get_columns()
         if query and query.strip():
-            match, rank = self._query_expressions(available, query)
+            match, rank = self._build_query_expressions(available, query)
             lazy = (
                 lazy.filter(match)
-                .with_columns(rank.alias("_rank"), *self._tiebreak_columns(available))
+                .with_columns(
+                    rank.alias("_rank"), *self._build_tiebreak_columns(available)
+                )
                 .sort(["_rank", "_secondary", "_cap", "_name_length", available[0]])
             )
 
@@ -508,7 +523,7 @@ class DatabaseProvider:
         include_delisted: bool = False,
     ) -> dict[str, list[str]]:
         """
-        The available values per field via the package's show_options.
+        Show the available values per field via the package's show_options.
 
         Args:
             tool_name (str): The asset class tool name.
@@ -523,12 +538,12 @@ class DatabaseProvider:
             QueryError: For an invalid selection, filter or value.
         """
         spec = self.specs[tool_name]
-        if selection is not None and selection not in spec.filters:
-            close = suggest(selection, spec.filters, 3)
+        if selection is not None and selection not in spec.get_filters():
+            close = suggest(selection, spec.get_filters(), 3)
             hint = f" Did you mean: {', '.join(close)}?" if close else ""
             raise QueryError(
                 f"The selection variable provided is not valid, choose from "
-                f"{', '.join(spec.filters)}.{hint}"
+                f"{', '.join(spec.get_filters())}.{hint}"
             )
         resolved, unknown = self.resolve_filters(tool_name, filters, include_delisted)
         kwargs: dict[str, Any] = {"selection": selection, "as_pandas": False}
@@ -545,7 +560,7 @@ class DatabaseProvider:
             return {selection: result.to_list()}
         return {name: values.to_list() for name, values in result.items()}
 
-    def count(self, tool_name: str) -> tuple[int, int]:
+    def count_entries(self, tool_name: str) -> tuple[int, int]:
         """
         Count the entries of an asset class.
 
@@ -556,7 +571,7 @@ class DatabaseProvider:
             tuple[int, int]: Listed entries and delisted entries.
         """
         instance = self.get_instance(tool_name)
-        lazy = instance._lazy
+        lazy = instance.get_lazy_frame()
         if "delisted" in lazy.collect_schema():
             row = (
                 lazy.select(
@@ -608,17 +623,17 @@ class DatabaseProvider:
         for tool_name in tool_names:
             spec = self.specs[tool_name]
             instance = self.get_instance(tool_name)
-            available = self._schema_columns(instance)
-            lazy = instance._without_delisted(
+            available = instance.get_columns()
+            lazy = instance.get_lazy_frame(
                 spec.supports_delisted and not include_delisted
             )
-            match, rank = self._query_expressions(available, query)
+            match, rank = self._build_query_expressions(available, query)
             lazy = lazy.filter(match)
             per_class[tool_name] = lazy.select(pl.len()).collect().item()
             if not per_class[tool_name]:
                 continue
 
-            def column(
+            def select_column(
                 name: str, source: str, columns: list[str] = available
             ) -> pl.Expr:
                 if source in columns:
@@ -627,7 +642,7 @@ class DatabaseProvider:
 
             frames.append(
                 lazy.with_columns(
-                    rank.alias("_rank"), *self._tiebreak_columns(available)
+                    rank.alias("_rank"), *self._build_tiebreak_columns(available)
                 )
                 .sort(["_rank", "_secondary", "_cap", "_name_length", available[0]])
                 .head(offset + limit)
@@ -635,7 +650,7 @@ class DatabaseProvider:
                     pl.lit(tool_name).alias("asset_class"),
                     pl.col(available[0]).alias("symbol"),
                     *(
-                        column(
+                        select_column(
                             name, spec.category_column if name == "category" else name
                         )
                         for name in output_columns[1:]

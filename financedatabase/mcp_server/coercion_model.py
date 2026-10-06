@@ -1,19 +1,13 @@
-"""
-Type coercion and input normalisation utilities for the Finance Database MCP server.
+"""Coercion Model"""
 
-Language models send filter values in many shapes: a single string, a
-comma-separated string, a JSON array, or a boolean as the text "true". These
-helpers turn that input into what the package expects without raising.
-"""
-
-from __future__ import annotations
+__docformat__ = "google"
 
 import difflib
 from collections.abc import Iterable
 from typing import Any
 
 
-def to_boolean(value: Any) -> bool:
+def convert_to_boolean(value: Any) -> bool:
     """
     Coerce a value to a boolean, with support for common string representations.
 
@@ -29,7 +23,9 @@ def to_boolean(value: Any) -> bool:
     return str(value).strip().lower() in ("true", "1", "yes")
 
 
-def to_int(value: Any, default: int, minimum: int, maximum: int | None = None) -> int:
+def convert_to_int(
+    value: Any, default: int, minimum: int, maximum: int | None = None
+) -> int:
     """
     Coerce a value to an integer clamped to a range.
 

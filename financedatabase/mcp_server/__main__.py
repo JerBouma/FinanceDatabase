@@ -1,10 +1,8 @@
-"""
-Allows running the MCP server as a module:
+"""MCP Server Entry Module"""
 
-    python -m financedatabase.mcp_server
-"""
+__docformat__ = "google"
 
-from financedatabase.mcp_server.mcp_controller import main, mcp  # noqa: F401
+from financedatabase.mcp_server.mcp_controller import main
 
 if __name__ == "__main__":
     main()

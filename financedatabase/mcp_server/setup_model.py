@@ -1,15 +1,6 @@
-"""
-Finance Database MCP Setup Model
+"""Setup Model"""
 
-Helper functions that locate and write the MCP client configuration files for
-Claude Desktop, Claude Code, VS Code, Cursor, Gemini and Windsurf. Each writer
-reads any existing file before writing so that unrelated server entries are
-never disturbed, and asks before replacing an existing ``finance-database``
-entry. The Finance Database needs no API keys, so the entry is only the
-command that starts the server.
-"""
-
-from __future__ import annotations
+__docformat__ = "google"
 
 import json
 import os
@@ -23,14 +14,15 @@ from rich.panel import Panel
 from rich.prompt import Confirm
 from rich.text import Text
 
-# The setup wizard talks to the user on stderr, like the server's logging.
 console = Console(stderr=True)
 
 ENTRY_NAME = "finance-database"
 
 
 def print_banner() -> None:
-    """Print the Finance Database MCP setup wizard header."""
+    """
+    Print the Finance Database MCP setup wizard header.
+    """
     body = Text()
     body.append("\nFinanceDatabase", style="bold cyan")
     body.append("  ·  ", style="dim")
@@ -44,7 +36,9 @@ def print_banner() -> None:
 
 
 def print_menu() -> None:
-    """Print the numbered client-selection menu."""
+    """
+    Print the numbered client-selection menu.
+    """
     text = Text()
     for number, (_, _, name) in CLIENT_MENU.items():
         text.append(f"  {number}  ", style="bold cyan")
@@ -64,23 +58,31 @@ def print_menu() -> None:
     )
 
 
-def ok(message: str) -> None:
-    """Print a success line."""
+def print_success(message: str) -> None:
+    """
+    Print a success line.
+    """
     console.print(f"  [green]✔[/]  {message}")
 
 
-def warn(message: str) -> None:
-    """Print a warning line."""
+def print_warning(message: str) -> None:
+    """
+    Print a warning line.
+    """
     console.print(f"  [yellow]⚠[/]  {message}")
 
 
-def err(message: str) -> None:
-    """Print an error line."""
+def print_error(message: str) -> None:
+    """
+    Print an error line.
+    """
     console.print(f"  [red]✘[/]  {message}")
 
 
-def info(message: str) -> None:
-    """Print a dim informational line."""
+def print_info(message: str) -> None:
+    """
+    Print a dim informational line.
+    """
     console.print(f"  [dim]{message}[/]")
 
 
@@ -139,7 +141,7 @@ def get_windsurf_config_path() -> pathlib.Path:
     return pathlib.Path.home() / ".codeium" / "windsurf" / "mcp_config.json"
 
 
-def server_entry() -> dict:
+def get_server_entry() -> dict:
     """
     Return the MCP server config block that starts the server via uvx.
 
@@ -175,7 +177,6 @@ CLIENTS: dict[str, tuple[Callable[[pathlib.Path], pathlib.Path], str, str]] = {
     "windsurf": (lambda _: get_windsurf_config_path(), "mcpServers", "Windsurf"),
 }
 
-# The interactive menu numbers, in the order the Finance Toolkit wizard uses.
 CLIENT_MENU = {
     "1": CLIENTS["claude-desktop"],
     "2": CLIENTS["claude-code"],
@@ -188,7 +189,9 @@ MENU_TO_CLIENT = dict(zip(CLIENT_MENU, CLIENTS))
 
 
 def _read_json(path: pathlib.Path) -> dict:
-    """Read a JSON config file, returning an empty dict when absent or invalid."""
+    """
+    Read a JSON config file, returning an empty dict when absent or invalid.
+    """
     if not path.exists():
         return {}
     with suppress(json.JSONDecodeError, OSError):
@@ -225,12 +228,12 @@ def write_client_config(
     """
     path_fn, outer_key, display = CLIENTS[client]
     config_path = path_fn(target_dir)
-    entry = server_entry()
+    entry = get_server_entry()
 
     if client in ("vscode", "cursor"):
         config_path.parent.mkdir(parents=True, exist_ok=True)
     elif not config_path.parent.exists():
-        warn(
+        print_warning(
             f"Config directory not found for [bold]{display}[/].  "
             "Printing the block to paste manually:"
         )
@@ -243,22 +246,24 @@ def write_client_config(
     current = existing.get(outer_key, {}).get(ENTRY_NAME)
     if current is not None and not overwrite:
         if current == entry:
-            ok(f"{display} is already configured  [dim cyan]{config_path}[/]")
+            print_success(
+                f"{display} is already configured  [dim cyan]{config_path}[/]"
+            )
             return False
-        warn(
+        print_warning(
             f"Existing [bold]'{ENTRY_NAME}'[/] entry found in [dim cyan]{config_path}[/]"
         )
         if not interactive:
-            info("Use --overwrite to replace it.")
+            print_info("Use --overwrite to replace it.")
             return False
         console.print(f"  [dim]{json.dumps(current, indent=4)}[/]")
         if not Confirm.ask("  Overwrite this entry?", default=False, console=console):
-            info(f"Skipped — existing {display} config left unchanged.")
+            print_info(f"Skipped — existing {display} config left unchanged.")
             return False
 
     existing.setdefault(outer_key, {})[ENTRY_NAME] = entry
     config_path.write_text(json.dumps(existing, indent=2) + "\n", encoding="utf-8")
-    ok(f"{display} config written to [dim cyan]{config_path}[/]")
+    print_success(f"{display} config written to [dim cyan]{config_path}[/]")
     return True
 
 
@@ -280,7 +285,7 @@ def remove_client_config(client: str, target_dir: pathlib.Path) -> bool:
         return False
     del existing[outer_key][ENTRY_NAME]
     config_path.write_text(json.dumps(existing, indent=2) + "\n", encoding="utf-8")
-    ok(f"Removed [bold]'{ENTRY_NAME}'[/] from [dim cyan]{config_path}[/]")
+    print_success(f"Removed [bold]'{ENTRY_NAME}'[/] from [dim cyan]{config_path}[/]")
     return True
 
 
@@ -302,7 +307,7 @@ def remove_all_configs(target_dir: pathlib.Path) -> None:
 
     if not found:
         console.print()
-        info("No Finance Database configuration found — nothing to remove.")
+        print_info("No Finance Database configuration found — nothing to remove.")
         console.print()
         return
 
@@ -323,7 +328,7 @@ def remove_all_configs(target_dir: pathlib.Path) -> None:
     )
     console.print()
     if not Confirm.ask("  Proceed with removal?", default=False, console=console):
-        info("Removal cancelled — nothing was changed.")
+        print_info("Removal cancelled — nothing was changed.")
         console.print()
         return
 
@@ -331,5 +336,5 @@ def remove_all_configs(target_dir: pathlib.Path) -> None:
     for client, _, _ in found:
         remove_client_config(client, target_dir)
     console.print()
-    ok("[bold]Removal complete.[/]  Restart your client(s) to apply.")
+    print_success("[bold]Removal complete.[/]  Restart your client(s) to apply.")
     console.print()

@@ -1,16 +1,6 @@
-# ──────────────────────────────────────────────────────────────────────────────
-# Finance Database MCP Server — Configuration
-#
-# All module-level constants for the MCP server live here. Edit this file to
-# change tool descriptions, default columns or output limits without touching
-# Python source code. Comments explain every key.
-# ──────────────────────────────────────────────────────────────────────────────
+# Finance Database MCP Server configuration: tool descriptions, columns and output limits.
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Server identity
-# instructions are sent to the client on initialisation and tell the model how
-# the tools fit together.
-# ──────────────────────────────────────────────────────────────────────────────
+# Server name and the instructions sent to the client on initialisation.
 server:
   name: "Finance Database Explorer"
   instructions: >-
@@ -23,17 +13,7 @@ server:
     class tools (`equities`, `etfs`, ...) to list everything matching a set of
     filters. Results are paginated: follow the `_notes` hint (offset) for more.
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Output limits
-# Every data response is bounded so that no single call can return the full
-# dataset (equities alone has 100,000+ rows).
-#   default_limit       — rows returned when the caller sets no limit
-#   max_limit           — hard ceiling on rows per call, whatever is requested
-#   max_text_length     — longer text values (summaries) are cut to this length
-#   default_options     — values returned by show_options when no limit is set
-#   max_options         — hard ceiling on values returned by show_options
-#   overview_options    — values shown per field when show_options lists every field
-# ──────────────────────────────────────────────────────────────────────────────
+# Every response is bounded so no call can return the full dataset.
 limits:
   default_limit: 25
   max_limit: 200
@@ -42,26 +22,11 @@ limits:
   max_options: 500
   overview_options: 25
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Dataset instance cache
-# One fd.<AssetClass>() instance is kept per asset class and reused by every
-# call. The package itself checks GitHub for a newer database at most once a
-# day when an instance is created, so an instance older than this is rebuilt
-# on its next use; that keeps a long-running (hosted) server current without
-# downloading anything more often than the package would.
-# FINANCEDATABASE_MCP_LOCAL=1 makes the server read the repository's local
-# compression/ files instead of GitHub (used by the tests).
-# ──────────────────────────────────────────────────────────────────────────────
+# One instance per asset class is reused and rebuilt after this many seconds.
 cache:
   instance_ttl_seconds: 86400
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Filter descriptions
-# Shown as the description of each filter parameter on the asset class tools.
-# The filter names themselves come from each class's FIELDS in the package, so
-# a new filter added there appears automatically (with a generic description
-# until one is added here).
-# ──────────────────────────────────────────────────────────────────────────────
+# Descriptions of the filter parameters; the filters themselves come from each class's FIELDS.
 filter_descriptions:
   country: "Country of the company's headquarters, e.g. 'United States' or 'Netherlands'."
   sector: "GICS-style sector, e.g. 'Information Technology', 'Health Care' or 'Financials'."
@@ -79,24 +44,7 @@ filter_descriptions:
   quote_currency: "Quote currency of the pair as an ISO code, e.g. 'USD' in EURUSD."
   cryptocurrency: "Cryptocurrency code, e.g. 'ETH', 'ADA' or 'XRP'."
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Asset class tools
-# Each entry becomes one MCP tool exposing that class's select() filters plus
-# query, pagination and column options.
-#   tool_name            — MCP tool name
-#   display_name         — tool title shown by clients
-#   class_name           — the financedatabase class (fd.<class_name>)
-#   description          — AI-facing tool description
-#   summary              — short description for the mcpb listing
-#   default_columns      — columns returned when show_columns is not set
-#                          (summary is never a default: it is long)
-#   columns              — every column of the dataset, listed in the
-#                          show_columns description (requests are validated
-#                          against the live data, not this list)
-#   category_column      — column shown as "category" by search_instruments
-#   supports_delisted    — the class keeps delisted entries (include_delisted)
-#   supports_primary_listing — the class's select() has only_primary_listing
-# ──────────────────────────────────────────────────────────────────────────────
+# One MCP tool per asset class, exposing its select() filters, a query, columns and paging.
 asset_classes:
   - tool_name: "equities"
     display_name: "Equities"
@@ -175,19 +123,10 @@ asset_classes:
     supports_delisted: false
     supports_primary_listing: false
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Identifier columns
-# search_instruments and the query parameter also match these columns exactly
-# (case-insensitive) where an asset class has them, so an ISIN, CUSIP or FIGI
-# finds its instrument.
-# ──────────────────────────────────────────────────────────────────────────────
+# Columns a query matches exactly, so an ISIN, CUSIP or FIGI finds its instrument.
 identifier_columns: ["isin", "cusip", "figi", "composite_figi", "shareclass_figi"]
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Utility tools
-# Registered by UtilityToolRegistry in tools_model.py. Listed here so
-# build-mcpb.sh can include them in the manifest without hard-coding them.
-# ──────────────────────────────────────────────────────────────────────────────
+# Registered in tools_model.py; listed here for the mcpb manifest.
 utility_tools:
   - tool_name: "search_categories"
     description: "List the asset classes with their tool, number of entries, filterable fields and description."

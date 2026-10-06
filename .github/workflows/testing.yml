@@ -31,7 +31,7 @@ jobs:
             - name: Run tests
               run: >-
                 uv run pytest tests/
-                --deselect tests/test_validate_identifiers.py::test_database_identifiers_have_no_actionable_issues
+                --deselect tests/validation/test_validation_controller.py::test_database_identifiers_have_no_actionable_issues
 
     validate-identifiers:
         name: Validate Identifiers
@@ -54,4 +54,4 @@ jobs:
             - name: Validate identifiers in the live database
               run: >-
                 uv run pytest -v
-                tests/test_validate_identifiers.py::test_database_identifiers_have_no_actionable_issues
+                tests/validation/test_validation_controller.py::test_database_identifiers_have_no_actionable_issues

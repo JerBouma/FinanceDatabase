@@ -47,8 +47,8 @@ mcp = [
 
 [project.scripts]
 financedatabase-mcp = "financedatabase.mcp_server.mcp_controller:main"
-financedatabase-mcp-inspector = "financedatabase.mcp_server.mcp_controller:inspector"
-financedatabase-mcp-setup = "financedatabase.mcp_server.mcp_controller:setup"
+financedatabase-mcp-inspector = "financedatabase.mcp_server.mcp_controller:run_inspector"
+financedatabase-mcp-setup = "financedatabase.mcp_server.mcp_controller:run_setup"
 
 [tool.mcp]
 mcp-name = "io.github.JerBouma/financedatabase"
@@ -79,14 +79,10 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["financedatabase"]
-exclude = ["financedatabase/validation"]
 
 [tool.hatch.build.targets.sdist]
 include = [
     "financedatabase/**",
-]
-exclude = [
-    "financedatabase/validation",
 ]
 
 [tool.black]
@@ -94,9 +90,43 @@ target-version = ["py313"]
 
 [tool.ruff]
 line-length = 122
-lint.select = ["E", "W", "F", "Q", "W", "S", "UP", "I", "PD", "SIM", "PLC", "PLE", "PLR", "PLW"]
-lint.ignore = ["S105", "S106", "S107", "PLR0913", "PLR0912", "PLR0911", "PLR0915", "PD010", "PD013", "S310", "S301", "S101", "PLR2004"]
+lint.select = [
+    "E",   # E: pycodestyle error checks (style errors)
+    "W",   # W: pycodestyle warning checks (style warnings)
+    "F",   # F: pyflakes checks (possible logic errors, undefined names)
+    "Q",   # Q: quote-related checks (enforce consistent quoting rules)
+    "S",   # S: security-related checks (bandit-style security rules)
+    "UP",  # UP: pyupgrade / modernization fixers and related rules
+    "I",   # I: import-related checks (ordering, unused imports)
+    "PD",  # PD: pandas-vet checks (pandas usage patterns)
+    "SIM", # SIM: simplification suggestions (refactoring hints)
+    "PLC", # PLC: pylint conventions
+    "PLE", # PLE: pylint errors
+    "PLR", # PLR: pylint refactoring suggestions
+    "PLW", # PLW: pylint warnings
+]
+
+lint.ignore = [
+    "S105",  # Bandit: possible hardcoded password assigned to a variable
+    "S106",  # Bandit: possible hardcoded password passed as an argument
+    "S107",  # Bandit: possible hardcoded password as a default argument
+    "PLR0913",  # Pylint-refactor: too many arguments in function/method
+    "PLR0917",  # Pylint-refactor: too many positional arguments in function/method
+    "PLR0912",  # Pylint-refactor: too many branches in function/method
+    "PLR0911",  # Pylint-refactor: too many return statements in function/method
+    "PLR0915",  # Pylint-refactor: too many statements in function/method
+    "PD010",  # pandas-vet: .pivot_table preferred over .pivot or .unstack
+    "PD013",  # pandas-vet: .melt preferred over .stack
+    "S310",  # Bandit: URL open for permitted schemes
+    "S301",  # Bandit: pickle usage
+    "S101",  # Bandit: use of assert (assert removed in optimized runs)
+    "PLR2004",  # Pylint-refactor: magic value used in comparison
+]
+
 exclude = ["conftest.py", "examples", "compression"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["PLR2004", "PLC0415"]
 
 [tool.ruff.lint.isort]
 combine-as-imports = true
