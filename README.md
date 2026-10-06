@@ -28,20 +28,20 @@ Some key statistics of the database:
 
 <div align="center">
 
-![symbols](https://img.shields.io/badge/symbols-316%2C351-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-117%2C948-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C068-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--05-57606A?style=flat-square)
+![symbols](https://img.shields.io/badge/symbols-316%2C307-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-117%2C505-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C500-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--06-57606A?style=flat-square)
 
 </div>
 
 | | Asset class | Symbols | Actively listed | Exchanges | Coverage |
 | :-: | :-- | --: | --: | --: | :-- |
-| 🏢 | **Equities** | 117,948 | 103,616 | 84 | 11 sectors · 76 industries · 117 countries |
-| 📦 | **ETFs** | 42,068 | 41,461 | 53 | 593 issuers · 43 categories |
-| 💼 | **Funds** | 57,853 | – | 33 | 1,540 fund families · 74 categories |
-| 📈 | **Indices** | 91,181 | – | 63 | 42 categories |
+| 🏢 | **Equities** | 117,505 | 103,208 | 85 | 11 sectors · 69 industries · 117 countries |
+| 📦 | **ETFs** | 42,500 | 41,858 | 63 | 588 issuers · 42 categories |
+| 💼 | **Funds** | 57,826 | – | 33 | 1,540 fund families · 71 categories |
+| 📈 | **Indices** | 91,178 | – | 63 | 42 categories |
 | 💱 | **Currencies** | 2,556 | – | – | 178 currencies |
 | 🪙 | **Cryptocurrencies** | 3,378 | – | – | 352 coins · 12 quote currencies |
-| 🏦 | **Money Markets** | 1,367 | – | 2 | 129 fund families |
-| | **Total** | **316,351** | | | |
+| 🏦 | **Money Markets** | 1,364 | – | 2 | 126 fund families |
+| | **Total** | **316,307** | | | |
 
 <details>
 <summary><b>📊 More statistics</b>: composition, sectors, countries, exchanges and ETF categories</summary>
@@ -49,13 +49,13 @@ Some key statistics of the database:
 ```mermaid
 pie showData
     title Symbols per asset class
-    "Equities" : 117948
-    "Indices" : 91181
-    "Funds" : 57853
-    "ETFs" : 42068
+    "Equities" : 117505
+    "Indices" : 91178
+    "Funds" : 57826
+    "ETFs" : 42500
     "Cryptocurrencies" : 3378
     "Currencies" : 2556
-    "Money Markets" : 1367
+    "Money Markets" : 1364
 ```
 
 <table>
@@ -64,34 +64,34 @@ pie showData
 
 | Sector | Equities |
 | :-- | --: |
-| Industrials | 13,924 |
-| Financials | 13,211 |
-| Materials | 12,662 |
-| Information Technology | 10,615 |
-| Health Care | 10,249 |
-| Consumer Discretionary | 9,892 |
-| Consumer Staples | 5,206 |
-| Real Estate | 4,426 |
-| Communication Services | 4,078 |
-| Energy | 3,993 |
-| Utilities | 2,257 |
+| Industrials | 14,007 |
+| Financials | 12,866 |
+| Materials | 12,811 |
+| Information Technology | 10,712 |
+| Health Care | 10,303 |
+| Consumer Discretionary | 9,509 |
+| Consumer Staples | 5,217 |
+| Real Estate | 4,494 |
+| Communication Services | 4,123 |
+| Energy | 4,014 |
+| Utilities | 2,272 |
 
 </td>
 <td valign="top">
 
 | Country | Equities |
 | :-- | --: |
-| United States | 24,033 |
-| Canada | 8,873 |
-| China | 6,614 |
-| India | 6,520 |
-| Japan | 6,448 |
-| Germany | 4,353 |
-| United Kingdom | 3,795 |
-| Australia | 3,586 |
-| France | 2,562 |
-| Hong Kong | 2,474 |
-| *Other (103)* | 25,152 |
+| United States | 23,473 |
+| Canada | 8,996 |
+| China | 6,644 |
+| India | 6,510 |
+| Japan | 6,455 |
+| Germany | 4,394 |
+| United Kingdom | 3,821 |
+| Australia | 3,617 |
+| France | 2,570 |
+| Hong Kong | 2,533 |
+| *Other (103)* | 25,309 |
 
 </td>
 </tr>
@@ -101,33 +101,33 @@ pie showData
 | Exchange | Equities |
 | :-- | --: |
 | FRA | 10,472 |
-| PNK | 10,278 |
-| STU | 8,327 |
-| BER | 7,347 |
-| MUN | 5,883 |
-| NMS | 4,447 |
+| PNK | 10,244 |
+| STU | 8,323 |
+| BER | 7,344 |
+| MUN | 5,879 |
+| NMS | 4,419 |
 | JPX | 3,745 |
-| BSE | 3,710 |
-| DUS | 3,353 |
-| NYQ | 3,342 |
-| *Other (74)* | 42,239 |
+| BSE | 3,708 |
+| DUS | 3,351 |
+| NYQ | 3,334 |
+| *Other (75)* | 41,916 |
 
 </td>
 <td valign="top">
 
 | ETF category | ETFs |
 | :-- | --: |
-| Fixed Income | 7,456 |
-| Alternatives | 5,243 |
-| Equities | 4,863 |
-| Financials | 4,050 |
-| Derivatives | 2,266 |
-| Information Technology | 1,509 |
-| Real Estate | 884 |
+| Fixed Income | 7,461 |
+| Alternatives | 5,324 |
+| Equities | 4,929 |
+| Financials | 4,102 |
+| Derivatives | 2,267 |
+| Information Technology | 1,511 |
+| Real Estate | 898 |
 | Commodities | 732 |
-| Industrials | 517 |
+| Industrials | 522 |
 | Energy | 490 |
-| *Other (8)* | 1,977 |
+| *Other (8)* | 1,983 |
 
 </td>
 </tr>
