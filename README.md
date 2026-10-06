@@ -22,20 +22,20 @@ Some key statistics of the database:
 
 <div align="center">
 
-![symbols](https://img.shields.io/badge/symbols-314%2C124-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-115%2C473-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C504-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--06-57606A?style=flat-square)
+![symbols](https://img.shields.io/badge/symbols-314%2C125-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-115%2C473-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-42%2C505-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-117-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--06-57606A?style=flat-square)
 
 </div>
 
 | | Asset class | Symbols | Actively listed | Exchanges | Coverage |
 | :-: | :-- | --: | --: | --: | :-- |
 | 🏢 | **Equities** | 115,473 | 101,587 | 83 | 11 sectors · 69 industries · 117 countries |
-| 📦 | **ETFs** | 42,504 | 41,862 | 63 | 588 issuers · 42 categories |
+| 📦 | **ETFs** | 42,505 | 41,863 | 63 | 588 issuers · 42 categories |
 | 💼 | **Funds** | 57,826 | – | 33 | 1,540 fund families · 71 categories |
 | 📈 | **Indices** | 91,178 | – | 63 | 42 categories |
 | 💱 | **Currencies** | 2,556 | – | – | 178 currencies |
 | 🪙 | **Cryptocurrencies** | 3,378 | – | – | 352 coins · 12 quote currencies |
 | 🏦 | **Money Markets** | 1,209 | – | 2 | 126 fund families |
-| | **Total** | **314,124** | | | |
+| | **Total** | **314,125** | | | |
 
 <!-- STATISTICS:END -->
 
