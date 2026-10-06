@@ -59,9 +59,9 @@ def count_distinct(series: pd.Series) -> int:
     return series[series.str.strip() != ""].nunique()
 
 
-def collect(database: str) -> tuple[list[AssetStats], dict[str, pd.Series]]:
+def collect(database: str) -> list[AssetStats]:
     """
-    Per-asset-class statistics plus the breakdowns shown in the collapsible section.
+    Per-asset-class statistics for the README table.
     """
     root = Path(database)
     equities = read(
@@ -160,13 +160,4 @@ def collect(database: str) -> tuple[list[AssetStats], dict[str, pd.Series]]:
         ),
     ]
 
-    def count_values(series: pd.Series) -> pd.Series:
-        return series[series.str.strip() != ""].value_counts()
-
-    breakdowns = {
-        "sectors": count_values(live_equities["sector"]),
-        "countries": count_values(live_equities["country"]),
-        "exchanges": count_values(live_equities["exchange"]),
-        "etf_groups": count_values(live_etfs["category_group"]),
-    }
-    return stats, breakdowns
+    return stats

@@ -20,8 +20,8 @@ def update(readme: Path, database: str, today: dt.date | None = None) -> bool:
     if not pattern.search(text):
         print(f"No statistics markers found in {readme}; nothing changed.")
         return False
-    stats, breakdowns = collect(database)
-    section = render(stats, breakdowns, today or dt.date.today())
+    stats = collect(database)
+    section = render(stats, today or dt.date.today())
     readme.write_text(pattern.sub(lambda _: section, text, count=1), encoding="utf-8")
     print(
         f"{readme} statistics refreshed ({format_number(sum(s.symbols for s in stats))} symbols)."
