@@ -36,7 +36,7 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.13'
-      - run: pip install "pandas[excel]" financedatabase
+      - run: pip install pandas financedatabase
       - name: Add New Tickers and Update Old Ones
         uses: jannekem/run-python-script-action@v1.8
         with:
@@ -74,21 +74,17 @@ jobs:
                 return np.nan
 
 
-            def lookup_industry(row_industry: str, fd_industries: pd.DataFrame) -> Optional[str]:
-                """Map an exchange industry label to the FinanceDatabase equivalent.
-                
+            def lookup_industry(row_industry: str, fd_industries: dict) -> Optional[str]:
+                """Map an exchange industry label to the FinanceDatabase (GICS) industry.
+
                 Args:
                     row_industry: Raw industry string from the exchange data.
-                    fd_industries: Lookup DataFrame with FinanceDatabase industry names.
-                
+                    fd_industries: Feed industry label -> FinanceDatabase industry.
+
                 Returns:
-                    Mapped industry string, or np.nan if not found.
+                    Mapped industry string, or np.nan for a missing or unmapped label.
                 """
-                try:
-                    result = fd_industries.loc[row_industry].iloc[0]
-                    return result.iloc[0] if isinstance(result, pd.Series) else result
-                except KeyError:
-                    return np.nan
+                return fd_industries.get(row_industry, np.nan)
 
 
             def lookup_industry_group(industry: str, equities: pd.DataFrame) -> Optional[str]:
@@ -130,7 +126,7 @@ jobs:
             def build_new_ticker(
                 index: str,
                 row: pd.Series,
-                fd_industries: pd.DataFrame,
+                fd_industries: dict,
                 equities: pd.DataFrame,
                 market_cap: Optional[str],
                 exchange_to_mic: dict,
@@ -140,7 +136,7 @@ jobs:
                 Args:
                     index: Ticker symbol.
                     row: Raw row from the exchange data.
-                    fd_industries: Lookup DataFrame for industries.
+                    fd_industries: Feed industry label -> FinanceDatabase industry.
                     equities: The equities reference DataFrame.
                     market_cap: Pre-calculated market cap tier.
 
@@ -248,10 +244,13 @@ jobs:
             # Reference data
             # ---------------------------------------------------------------------------
 
-            fd_categories_path = 'compression/categories/github_exchange_categories.xlsx'
-            fd_sectors         = pd.read_excel(fd_categories_path, sheet_name='sector',         index_col=1)
-            fd_industry_groups = pd.read_excel(fd_categories_path, sheet_name='industry_group', index_col=1)
-            fd_industries      = pd.read_excel(fd_categories_path, sheet_name='industry',       index_col=1)
+            # Nasdaq feed industry label -> GICS industry. Labels that span several GICS
+            # industries are not listed, so those tickers stay unclassified.
+            fd_industries = (
+                pd.read_csv('scripts/us_feed_industries.csv', dtype=str, keep_default_na=False)
+                .set_index('feed_industry')['industry']
+                .to_dict()
+            )
 
             # Read the equities database from per-exchange files, preserving every
             # cell exactly as written so the rewrite below is a no-op for untouched
@@ -392,7 +391,7 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.10'
-      - run: pip install "pandas[excel]" financedatabase
+      - run: pip install pandas financedatabase
       - name: Update Compressions
         uses: jannekem/run-python-script-action@v1.8
         with:
@@ -469,7 +468,7 @@ jobs:
           uses: actions/setup-python@v6
           with:
             python-version: '3.10'
-        - run: pip install "pandas[excel]" financedatabase
+        - run: pip install pandas financedatabase
         - name: Update categories
           uses: jannekem/run-python-script-action@v1.8
           with:
@@ -619,7 +618,7 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.10'
-      - run: pip install "pandas[excel]" financedatabase
+      - run: pip install pandas financedatabase
       - name: Check GICS Categorisation
         uses: jannekem/run-python-script-action@v1.8
         with:
