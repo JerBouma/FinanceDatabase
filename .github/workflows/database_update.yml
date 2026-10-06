@@ -187,7 +187,7 @@ jobs:
             FEEDS = {
                 'nasdaq': ('NMS', 'NASDAQ Global Select'),
                 'nyse':   ('NYQ', 'New York Stock Exchange'),
-                'amex':   ('ASE', 'NYSE MKT'),
+                'amex':   ('ASE', 'NYSE American'),
             }
 
             # A plain ticker: letters/digits plus the class and series separators
