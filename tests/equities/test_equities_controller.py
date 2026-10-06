@@ -263,12 +263,14 @@ def test_to_toolkit_raises_without_financetoolkit(monkeypatch) -> None:
         equities.select().to_toolkit()
 
 
-def test_init_raises_on_request_failure(monkeypatch) -> None:
+def test_init_raises_on_request_failure(monkeypatch, tmp_path) -> None:
     """`FinanceDatabase.__init__` re-raises as ValueError on network failure."""
 
     def raise_connection_error(*a, **kw):
         raise _requests.exceptions.ConnectionError("simulated")
 
+    # An empty cache: with a cached copy the offline fallback would load it instead.
+    monkeypatch.setenv("FINANCEDATABASE_CACHE_DIR", str(tmp_path))
     monkeypatch.setattr(_requests, "get", raise_connection_error)
     with pytest.raises(ValueError, match="Failed to load data"):
         fd.Equities()
