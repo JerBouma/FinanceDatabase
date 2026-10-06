@@ -4,7 +4,7 @@
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor_this_Project-grey?logo=github)](https://github.com/sponsors/JerBouma)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-grey?logo=buymeacoffee)](https://www.buymeacoffee.com/jerbouma)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-grey?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/boumajeroen/)
-[![MCP Server](https://img.shields.io/badge/MCP_Server-grey?logo=modelcontextprotocol)](#mcp-server)
+<!-- Hidden until the MCP server is published: [![MCP Server](https://img.shields.io/badge/MCP_Server-grey?logo=modelcontextprotocol)](#mcp-server) -->
 [![Documentation](https://img.shields.io/badge/Documentation-grey?logo=readme)](https://www.jeroenbouma.com/projects/financedatabase)
 [![Supported Python Versions](https://img.shields.io/pypi/pyversions/financedatabase)](https://pypi.org/project/financedatabase/)
 [![PYPI Version](https://img.shields.io/pypi/v/financedatabase)](https://pypi.org/project/financedatabase/)
@@ -37,102 +37,9 @@ Some key statistics of the database:
 | 🏦 | **Money Markets** | 1,209 | – | 2 | 126 fund families |
 | | **Total** | **314,124** | | | |
 
-<details>
-<summary><b>📊 More statistics</b>: composition, sectors, countries, exchanges and ETF categories</summary>
-
-```mermaid
-pie showData
-    title Symbols per asset class
-    "Equities" : 115473
-    "Indices" : 91178
-    "Funds" : 57826
-    "ETFs" : 42504
-    "Cryptocurrencies" : 3378
-    "Currencies" : 2556
-    "Money Markets" : 1209
-```
-
-<table>
-<tr>
-<td valign="top">
-
-| Sector | Equities |
-| :-- | --: |
-| Industrials | 14,924 |
-| Materials | 13,822 |
-| Financials | 13,276 |
-| Information Technology | 11,528 |
-| Health Care | 10,741 |
-| Consumer Discretionary | 10,361 |
-| Consumer Staples | 5,342 |
-| Real Estate | 4,754 |
-| Communication Services | 4,516 |
-| Energy | 4,331 |
-| Utilities | 2,392 |
-
-</td>
-<td valign="top">
-
-| Country | Equities |
-| :-- | --: |
-| United States | 22,802 |
-| Canada | 8,977 |
-| China | 6,624 |
-| India | 6,510 |
-| Japan | 6,453 |
-| Germany | 4,393 |
-| United Kingdom | 3,814 |
-| Australia | 3,613 |
-| France | 2,568 |
-| Hong Kong | 2,523 |
-| *Other (103)* | 25,203 |
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-| Exchange | Equities |
-| :-- | --: |
-| FRA | 10,471 |
-| PNK | 10,243 |
-| STU | 8,323 |
-| BER | 7,344 |
-| MUN | 5,879 |
-| JPX | 3,745 |
-| BSE | 3,667 |
-| NMS | 3,665 |
-| DUS | 3,351 |
-| NYQ | 3,226 |
-| *Other (73)* | 41,243 |
-
-</td>
-<td valign="top">
-
-| ETF category | ETFs |
-| :-- | --: |
-| Fixed Income | 7,461 |
-| Alternatives | 5,324 |
-| Equities | 4,929 |
-| Financials | 4,102 |
-| Derivatives | 2,267 |
-| Information Technology | 1,511 |
-| Real Estate | 898 |
-| Commodities | 732 |
-| Industrials | 522 |
-| Energy | 490 |
-| *Other (8)* | 1,983 |
-
-</td>
-</tr>
-</table>
-
-*Actively listed excludes symbols flagged as delisted. Sector, country and exchange counts cover actively listed equities; exchange codes match the files in [`database/equities`](database/equities).*
-
-</details>
-
 <!-- STATISTICS:END -->
 
+<!-- Hidden until the MCP server is published.
 ___
 **🔌 The Finance Database is also available as an [MCP Server](#mcp-server)**
 
@@ -140,15 +47,15 @@ Explore all 300,000+ symbols from Claude, Copilot, Cursor, Windsurf or any MCP-c
 
 - **Local:** `uvx --from "financedatabase[mcp]" financedatabase-mcp-setup` — sets up your client config automatically. See [MCP Server](#mcp-server) for manual setup.
 ___
+-->
 
 # Table of Contents
 
 1. [Installation](#installation)
 2. [Functionality](#functionality)
-3. [MCP Server](#mcp-server)
-4. [Questions & Answers](#questions--answers)
-5. [Contributing](#contributing)
-6. [Contact](#contact)
+3. [Questions & Answers](#questions--answers)
+4. [Contributing](#contributing)
+5. [Contact](#contact)
 
 # Installation
 
@@ -502,6 +409,8 @@ And below these and other profitability ratios of ASR Nederland, each with its l
 
 This works for the other asset classes too. For example, Ethereum quoted in BTC, CAD, EUR, GBP and USD can be loaded with `fd.Cryptos().select(cryptocurrency="ETH").to_toolkit(api_key=...)`, after which `get_historical_data(period="quarterly")` returns its quarterly returns in each currency. **This is just a small snippet of what is available within the Finance Toolkit, see the GitHub page of the Finance Toolkit [here](https://github.com/JerBouma/FinanceToolkit) or the example Notebook [here](https://www.jeroenbouma.com/projects/financetoolkit/getting-started) for more information.**
 
+<!-- Hidden until the MCP server is published; add "MCP Server" back to the Table of Contents as well.
+
 # MCP Server
 
 The Finance Database MCP Server gives any AI assistant that supports the [Model Context Protocol](https://modelcontextprotocol.io) (MCP) direct access to the database. Ask in plain English for, say, every mid cap semiconductor company in Taiwan or the bond ETFs of a given issuer, and the assistant queries the database on your behalf. No API key is needed. The data is downloaded once, cached locally and checked for updates at most once a day, exactly like the Python package.
@@ -549,6 +458,8 @@ Every response is compact JSON with `total`, `returned`, `offset`, `columns` and
 - *"List the industries in the Health Care sector and how many German companies are in each."*
 
 Combine it with the [Finance Toolkit MCP Server](https://www.jeroenbouma.com/projects/financetoolkit/mcp) to go from a list of symbols to their financial statements, ratios and prices.
+
+-->
 
 # Questions & Answers
 

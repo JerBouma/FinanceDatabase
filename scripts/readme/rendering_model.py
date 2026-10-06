@@ -5,8 +5,6 @@ __docformat__ = "google"
 import datetime as dt
 from urllib.parse import quote
 
-import pandas as pd
-
 from scripts.readme.statistics_model import AssetStats, format_number
 
 START = "<!-- STATISTICS:START"
@@ -30,22 +28,7 @@ def create_badge(label: str, message: str, color: str) -> str:
     return f"![{label}]({url}?style=flat-square)"
 
 
-def create_count_table(column: str, unit: str, counts: pd.Series, top: int) -> str:
-    """
-    A compact two-column table (name, count) of the largest groups, the rest as 'Other'.
-    """
-    lines = [f"| {column} | {unit} |", "| :-- | --: |"]
-    for name, value in counts.head(top).items():
-        lines.append(f"| {name} | {format_number(int(value))} |")
-    if len(counts) > top:
-        rest = format_number(int(counts.iloc[top:].sum()))
-        lines.append(f"| *Other ({len(counts) - top})* | {rest} |")
-    return "\n".join(lines)
-
-
-def render(
-    stats: list[AssetStats], breakdowns: dict[str, pd.Series], today: dt.date
-) -> str:
+def render(stats: list[AssetStats], today: dt.date) -> str:
     """
     Render the statistics section of the README as Markdown.
     """
@@ -76,21 +59,6 @@ def render(
         )
     rows.append(f"| | **Total** | **{format_number(total)}** | | | |")
 
-    pie = ["```mermaid", "pie showData", "    title Symbols per asset class"]
-    pie += [
-        f'    "{s.name}" : {s.symbols}' for s in sorted(stats, key=lambda s: -s.symbols)
-    ]
-    pie.append("```")
-
-    sectors = create_count_table("Sector", "Equities", breakdowns["sectors"], 11)
-    countries_table = create_count_table(
-        "Country", "Equities", breakdowns["countries"], 10
-    )
-    exchange_table = create_count_table(
-        "Exchange", "Equities", breakdowns["exchanges"], 10
-    )
-    etf_table = create_count_table("ETF category", "ETFs", breakdowns["etf_groups"], 10)
-
     return "\n".join(
         [
             HEADER,
@@ -102,44 +70,6 @@ def render(
             "</div>",
             "",
             *rows,
-            "",
-            "<details>",
-            "<summary><b>📊 More statistics</b>: composition, sectors, countries, exchanges and ETF categories</summary>",
-            "",
-            *pie,
-            "",
-            "<table>",
-            "<tr>",
-            '<td valign="top">',
-            "",
-            sectors,
-            "",
-            "</td>",
-            '<td valign="top">',
-            "",
-            countries_table,
-            "",
-            "</td>",
-            "</tr>",
-            "<tr>",
-            '<td valign="top">',
-            "",
-            exchange_table,
-            "",
-            "</td>",
-            '<td valign="top">',
-            "",
-            etf_table,
-            "",
-            "</td>",
-            "</tr>",
-            "</table>",
-            "",
-            "*Actively listed excludes symbols flagged as delisted. Sector, country and exchange "
-            "counts cover actively listed equities; exchange codes match the files in "
-            "[`database/equities`](database/equities).*",
-            "",
-            "</details>",
             "",
             END,
         ]

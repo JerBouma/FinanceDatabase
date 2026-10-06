@@ -4,9 +4,7 @@ import datetime as dt
 import sys
 from pathlib import Path
 
-import pandas as pd
-
-from scripts.readme import readme_controller, rendering_model
+from scripts.readme import readme_controller
 
 
 def create_database(root: Path) -> Path:
@@ -63,7 +61,7 @@ def test_section_is_regenerated_between_markers(tmp_path: Path) -> None:
     assert "| 📦 | **ETFs** | 2 | 1 | 1 | 1 issuers · 1 categories |" in text
     assert "| | **Total** | **10** | | | |" in text
     assert "badge/updated-2026--10--04-" in text
-    assert '    "Equities" : 3' in text and "```mermaid" in text
+    assert "<details>" not in text
 
 
 def test_regeneration_is_idempotent(tmp_path: Path) -> None:
@@ -88,14 +86,6 @@ def test_missing_markers_change_nothing(tmp_path: Path) -> None:
         is False
     )
     assert readme.read_text() == "# No markers here\n"
-
-
-def test_count_tables_are_two_compact_columns() -> None:
-    """Test that the count tables have two compact columns."""
-    counts = pd.Series({"A": 30, "B": 20, "C": 5, "D": 1})
-    assert rendering_model.create_count_table("Sector", "Equities", counts, 2) == (
-        "| Sector | Equities |\n| :-- | --: |\n| A | 30 |\n| B | 20 |\n| *Other (2)* | 6 |"
-    )
 
 
 def test_main_never_raises(tmp_path: Path, monkeypatch, capsys) -> None:

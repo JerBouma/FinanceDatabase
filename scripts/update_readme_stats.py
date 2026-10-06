@@ -11,8 +11,8 @@ Everything between the two marker comments in README.md is replaced:
     <!-- STATISTICS:END -->
 
 Without the markers nothing is changed and the script exits cleanly, so a README edit can never
-fail the weekly pipeline. The section only uses what GitHub renders in a README: badges,
-Markdown tables, a collapsible <details> block and a Mermaid pie chart.
+fail the weekly pipeline. The section only uses what GitHub renders in a README: badges and a
+Markdown table.
 """
 
 __docformat__ = "google"
