@@ -198,6 +198,15 @@ jobs:
             # Exchange-traded products belong in database/etfs, not equities.
             ETP_NAME = r'\b(?:ETF|ETFs|ETN|ETNs|Exchange[- ]Traded)\b'
 
+            # Instruments with an expiry or maturity date (warrants, rights, notes and
+            # bonds due in a given year) go out of date quickly and are not added.
+            DATED_NAME = (
+                r'\bwarrants?\b|\s(?:WTS?|RTS)$|\brights?$|\bsubscription rights?\b'
+                r'|\bcontingent value rights?\b|\brights? to (?:receive|subscribe)\b'
+                r'|\b(?:notes?|debentures?|bonds?|preferred shares)\b.*\bdue\b'
+                r'|\bdue\s+(?:\w+\s+)?(?:\d{1,2},?\s+)?(?:19|20)\d\d\b'
+            )
+
 
             def load_feed(name: str) -> Optional[pd.DataFrame]:
                 """Download one exchange feed and drop rows that would become junk.
@@ -217,11 +226,14 @@ jobs:
                 feed['name'] = feed['name'].astype(str).str.strip()
                 invalid = ~feed['symbol'].str.match(VALID_SYMBOL)
                 etp = feed['name'].str.contains(ETP_NAME, case=False, regex=True)
+                dated = feed['name'].str.contains(DATED_NAME, case=False, regex=True)
                 if invalid.any():
                     print(f"{name}: skipping malformed symbols {feed.loc[invalid, 'symbol'].tolist()}")
                 if etp.any():
                     print(f"{name}: skipping exchange-traded products {feed.loc[etp & ~invalid, 'symbol'].tolist()}")
-                feed = feed[~invalid & ~etp & (feed['name'] != '')]
+                if dated.any():
+                    print(f"{name}: skipping warrants, rights and dated notes {feed.loc[dated & ~invalid & ~etp, 'symbol'].tolist()}")
+                feed = feed[~invalid & ~etp & ~dated & (feed['name'] != '')]
                 feed = feed.drop_duplicates('symbol').set_index('symbol')
                 feed['exchange'], feed['market'] = FEEDS[name]
                 return feed

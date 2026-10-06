@@ -530,3 +530,44 @@ def test_sec_objective_skips_supplements() -> None:
     assert (
         FakeSec().objective("ABFL") == "The Fund seeks long-term capital appreciation."
     )
+
+
+def test_dated_instruments_are_not_added(tmp_path: Path) -> None:
+    """Test that warrants, rights and notes with a maturity date are not added."""
+    db = ul.Database(str(make_db(tmp_path)))
+    result = ul.SourceResult(
+        listings=[
+            ul.Listing(
+                "equities",
+                "TOR",
+                "GASX-WTA.TO",
+                "Gasx Corp. Warrants (GASX.WT.A)",
+                "CAD",
+            ),
+            ul.Listing("equities", "TOR", "PUL-RT.TO", "Pulse Oil Corp Rights", "CAD"),
+            ul.Listing(
+                "equities",
+                "TOR",
+                "ABCN.TO",
+                "Abc Mining Corp. 6.00% Notes due 2029",
+                "CAD",
+            ),
+            ul.Listing(
+                "equities", "TOR", "MOEX.TO", "Moscow Exchange MICEX-RTS", "CAD"
+            ),
+            ul.Listing("equities", "TOR", "NEW.TO", "Brand New Corp.", "CAD"),
+        ],
+        official={
+            "TOR": {
+                "GASX-WTA.TO",
+                "PUL-RT.TO",
+                "ABCN.TO",
+                "MOEX.TO",
+                "NEW.TO",
+                "ABC.TO",
+                "OLD.TO",
+            }
+        },
+    )
+    summary = ul.apply_source(db, "TSX", result, lambda name: "", use_openfigi=False)
+    assert [listing.symbol for listing in summary["added"]] == ["MOEX.TO", "NEW.TO"]

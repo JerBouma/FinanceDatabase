@@ -106,6 +106,16 @@ EXCHANGE_NAMES = {
     "VAN": "TSX Venture Exchange",
 }
 
+# Instruments with an expiry or maturity date (warrants, rights, notes and bonds due in a
+# given year) go out of date quickly and are not added; the weekly US step uses the same rule.
+DATED_NAME = re.compile(
+    r"\bwarrants?\b|\s(?:WTS?|RTS)$|\brights?$|\bsubscription rights?\b"
+    r"|\bcontingent value rights?\b|\brights? to (?:receive|subscribe)\b"
+    r"|\b(?:notes?|debentures?|bonds?|preferred shares)\b.*\bdue\b"
+    r"|\bdue\s+(?:\w+\s+)?(?:\d{1,2},?\s+)?(?:19|20)\d\d\b",
+    re.IGNORECASE,
+)
+
 # Exchange suffixes used by the sources below, kept when comparing symbol formats.
 SUFFIX = r"\.(?:TO|V|HK|NS|T|AX)$"
 NAME_STOPWORDS = (
@@ -985,6 +995,8 @@ def apply_source(
     seen = set()
     for listing in result.listings:
         if listing.symbol in db.symbols or listing.symbol in seen:
+            continue
+        if DATED_NAME.search(listing.name):
             continue
         seen.add(listing.symbol)
         frame = db.frame(listing.kind, listing.file)
