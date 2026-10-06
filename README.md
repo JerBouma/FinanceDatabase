@@ -163,7 +163,7 @@ Which returns:
  'Diversified Financial Services', 'Insurance']
 ```
 
-And below the number of companies in each of these industries is shown.
+And below the number of companies in each of these industries is shown. Each company is counted once, however many exchanges it is listed on: listings that share an ISIN, share class FIGI, website or the first word of their name (such as Aegon and its perpetual bonds) are combined.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/options-dark.png">
@@ -184,7 +184,7 @@ equities.select(
 )
 ```
 
-This returns 42 listings, of which the first five are shown below.
+This returns 34 listings, of which the first five are shown below.
 
 | symbol   | name               | currency   | sector     | industry   | exchange   | market                              | country     | market_cap   | isin         |
 |:---------|:-------------------|:-----------|:-----------|:-----------|:-----------|:------------------------------------|:------------|:-------------|:-------------|
