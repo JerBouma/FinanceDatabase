@@ -106,8 +106,8 @@ A portion of the output is shown below. The tables in this section are cut off t
 |:---------|:-------------------------|:-----------|:-----------------------|:-------------------------------------------|:-----------|:---------------------|:--------------|:-------------|:-------------|
 | AAPL     | Apple Inc.               | USD        | Information Technology | Technology Hardware, Storage & Peripherals | NMS        | NASDAQ Global Select | United States | Mega Cap     | US0378331005 |
 | ASML.AS  | ASML Holding N.V.        | EUR        | Information Technology | Semiconductors & Semiconductor Equipment   | AMS        | Euronext Amsterdam   | Netherlands   | Mega Cap     | NL0010273215 |
-| 7203.T   | Toyota Motor Corporation | JPY        | Consumer Discretionary | Automobiles                                | JPX        | Tokyo Stock Exchange | Japan         | Mega Cap     |              |
-| NESN.SW  | Nestle S.A.              | CHF        | Consumer Staples       | Food Products                              | EBS        | SIX Swiss Exchange   | Switzerland   | Mega Cap     |              |
+| 7203.T   | Toyota Motor Corporation | JPY        | Consumer Discretionary | Automobiles                                | JPX        | Tokyo Stock Exchange | Japan         | Mega Cap     | JP3633400001 |
+| NESN.SW  | Nestle S.A.              | CHF        | Consumer Staples       | Food Products                              | EBS        | SIX Swiss Exchange   | Switzerland   | Mega Cap     | CH0038863350 |
 | SAP.DE   | SAP SE                   | EUR        | Information Technology | Software                                   | GER        | XETRA                | Germany       | Mega Cap     | DE0007164600 |
 
 And below the actively listed equities are counted per sector.
@@ -274,13 +274,13 @@ etfs.select(
 
 For example, see some of the Vanguard bond ETFs listed in Berlin below:
 
-| symbol   | name                      | currency   | category_group   | category        | family                    | exchange   |
-|:---------|:--------------------------|:-----------|:-----------------|:----------------|:--------------------------|:-----------|
-| 0250.BE  | VANG.INT.-T.C.BD IDX ETF  | EUR        | Fixed Income     | Corporate Bonds | Vanguard Asset Management | BER        |
-| 0251.BE  | VANG.SH.-T.CO.BD IDX ETF  | EUR        | Fixed Income     | Corporate Bonds | Vanguard Asset Management | BER        |
-| 0252.BE  | VANG.SC.FDS-V.TO.W.BD ETF | EUR        | Fixed Income     |                 | Vanguard Asset Management | BER        |
-| 025L.BE  | VANG.TOTAL INT.BD IDX ETF | EUR        | Fixed Income     |                 | Vanguard Asset Management | BER        |
-| 025N.BE  | VANG.LO.-T.C.BD IDX ETF   | EUR        | Fixed Income     | Corporate Bonds | Vanguard Asset Management | BER        |
+| symbol   | name                                                             | currency   | category_group   | category               | family                    | exchange   |
+|:---------|:-----------------------------------------------------------------|:-----------|:-----------------|:-----------------------|:--------------------------|:-----------|
+| 0250.BE  | Vanguard Intermediate-Term Corporate Bond Index Fund ETF Shares | EUR        | Fixed Income     | Corporate Bonds        | Vanguard Asset Management | BER        |
+| 0251.BE  | Vanguard Short-Term Corporate Bond Index Fund ETF Shares        | EUR        | Fixed Income     | Corporate Bonds        | Vanguard Asset Management | BER        |
+| 0252.BE  | Vanguard Total World Bond ETF                                    | EUR        | Fixed Income     | Investment Grade Bonds | Vanguard Asset Management | BER        |
+| 025L.BE  | Vanguard Total International Bond Index Fund ETF Shares         | EUR        | Fixed Income     | Investment Grade Bonds | Vanguard Asset Management | BER        |
+| 025N.BE  | Vanguard Long-Term Corporate Bond Index Fund ETF Shares         | EUR        | Fixed Income     | Corporate Bonds        | Vanguard Asset Management | BER        |
 
 The same applies to `search`, for example to find the funds that focus on pension plans:
 
@@ -292,7 +292,7 @@ funds = fd.Funds()
 funds.search(summary="Pension")
 ```
 
-Which returns 623 funds, of which a few are shown below:
+Which returns 628 funds, of which a few are shown below:
 
 | symbol       | name                                | currency   | category_group   | category                 | family                           | exchange   |
 |:-------------|:------------------------------------|:-----------|:-----------------|:-------------------------|:---------------------------------|:-----------|
