@@ -25,7 +25,6 @@ class AssetStats:
     icon: str
     name: str
     symbols: int
-    listed: int | None = None  # None when the asset class has no delisted flag
     exchanges: int | None = None
     coverage: list[str] = field(default_factory=list)
 
@@ -66,11 +65,11 @@ def collect(database: str) -> list[AssetStats]:
     root = Path(database)
     equities = read(
         sorted(glob.glob(f"{root}/equities/*.csv")),
-        ["symbol", "sector", "industry", "country", "exchange", "delisted"],
+        ["symbol", "sector", "industry", "country", "exchange"],
     )
     etfs = read(
         sorted(glob.glob(f"{root}/etfs/*.csv")),
-        ["symbol", "family", "category_group", "category", "exchange", "delisted"],
+        ["symbol", "family", "category_group", "category", "exchange"],
     )
     funds = read(
         sorted(glob.glob(f"{root}/funds/*.csv")),
@@ -83,8 +82,6 @@ def collect(database: str) -> list[AssetStats]:
     cryptos = read([f"{root}/cryptos.csv"], ["symbol", "cryptocurrency", "currency"])
     money = read([f"{root}/moneymarkets.csv"], ["symbol", "family", "exchange"])
 
-    live_equities = equities[equities["delisted"] != "True"]
-    live_etfs = etfs[etfs["delisted"] != "True"]
     currency_codes = pd.concat(
         [currencies["base_currency"], currencies["quote_currency"]]
     )
@@ -93,7 +90,6 @@ def collect(database: str) -> list[AssetStats]:
             "🏢",
             "Equities",
             len(equities),
-            len(live_equities),
             count_distinct(equities["exchange"]),
             [
                 f"{count_distinct(equities['sector'])} sectors",
@@ -105,7 +101,6 @@ def collect(database: str) -> list[AssetStats]:
             "📦",
             "ETFs",
             len(etfs),
-            len(live_etfs),
             count_distinct(etfs["exchange"]),
             [
                 f"{format_number(count_distinct(etfs['family']))} issuers",
@@ -116,7 +111,6 @@ def collect(database: str) -> list[AssetStats]:
             "💼",
             "Funds",
             len(funds),
-            None,
             count_distinct(funds["exchange"]),
             [
                 f"{format_number(count_distinct(funds['family']))} fund families",
@@ -127,7 +121,6 @@ def collect(database: str) -> list[AssetStats]:
             "📈",
             "Indices",
             len(indices),
-            None,
             count_distinct(indices["exchange"]),
             [f"{count_distinct(indices['category'])} categories"],
         ),
@@ -136,14 +129,12 @@ def collect(database: str) -> list[AssetStats]:
             "Currencies",
             len(currencies),
             None,
-            None,
             [f"{count_distinct(currency_codes)} currencies"],
         ),
         AssetStats(
             "🪙",
             "Cryptocurrencies",
             len(cryptos),
-            None,
             None,
             [
                 f"{count_distinct(cryptos['cryptocurrency'])} coins",
@@ -154,7 +145,6 @@ def collect(database: str) -> list[AssetStats]:
             "🏦",
             "Money Markets",
             len(money),
-            None,
             count_distinct(money["exchange"]),
             [f"{count_distinct(money['family'])} fund families"],
         ),
