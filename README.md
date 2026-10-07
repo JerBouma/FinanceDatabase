@@ -174,34 +174,35 @@ The options of every column can be shown this way, including `currency`, `exchan
 
 ### Selecting Equities
 
-Given these options, it becomes possible to filter the database on the categories you are interested in. For example, the 'Insurance' companies in the 'Netherlands'. The `sector` can be omitted here since the industry already implies 'Financials'.
+Given these options, it becomes possible to filter the database on the categories you are interested in. For example, the 'Insurance' companies in the 'United States', one row per company. The `sector` can be omitted here since the industry already implies 'Financials'.
 
 ```python
-# Select the insurance companies in the Netherlands
+# Select the primary listings of insurance companies in the United States
 equities.select(
-    country="Netherlands",
+    country="United States",
     industry="Insurance",
+    only_primary_listing=True,
 )
 ```
 
-This returns 34 listings, of which the first five are shown below.
+This returns 181 companies, of which a few of the larger ones are shown below.
 
-| symbol   | name               | currency   | sector     | industry   | exchange   | market                              | country     | market_cap   | isin         |
-|:---------|:-------------------|:-----------|:-----------|:-----------|:-----------|:------------------------------------|:------------|:-------------|:-------------|
-| 0RHS.IL  | ASR Nederland N.V. | EUR        | Financials | Insurance  | IOB        | London Stock Exchange (OTC and ITR) | Netherlands | Large Cap    | NL0011872643 |
-| A16.BE   | ASR Nederland N.V. | EUR        | Financials | Insurance  | BER        | Berlin Stock Exchange               | Netherlands | Large Cap    | NL0011872643 |
-| A16.DU   | ASR Nederland N.V. | EUR        | Financials | Insurance  | DUS        | Dusseldorf Stock Exchange           | Netherlands | Large Cap    | NL0011872643 |
-| A16.F    | ASR Nederland N.V. | EUR        | Financials | Insurance  | FRA        | Frankfurt Stock Exchange            | Netherlands | Large Cap    | NL0011872643 |
-| A16.MU   | ASR Nederland N.V. | EUR        | Financials | Insurance  | MUN        | Munich Stock Exchange               | Netherlands | Large Cap    | NL0011872643 |
+| symbol   | name                             | currency   | sector     | industry   | exchange   | market                  | country       | market_cap   |
+|:---------|:---------------------------------|:-----------|:-----------|:-----------|:-----------|:------------------------|:--------------|:-------------|
+| AFL      | Aflac Incorporated               | USD        | Financials | Insurance  | NYQ        | New York Stock Exchange | United States | Large Cap    |
+| AJG      | Arthur J. Gallagher & Co.        | USD        | Financials | Insurance  | NYQ        | New York Stock Exchange | United States | Large Cap    |
+| BRO      | Brown & Brown, Inc.              | USD        | Financials | Insurance  | NYQ        | New York Stock Exchange | United States | Large Cap    |
+| CINF     | Cincinnati Financial Corporation | USD        | Financials | Insurance  | NMS        | NASDAQ Global Select    | United States | Large Cap    |
+| PGR      | Progressive Corporation          | USD        | Financials | Insurance  | NYQ        | New York Stock Exchange | United States | Large Cap    |
 
-And below these listings are counted per market, showing how the same companies trade across Europe and beyond.
+Without `only_primary_listing=True`, the same query returns 454 listings on 23 exchanges, because every exchange a company trades on is shown by default. Progressive, for example, also appears as `PGV.F` (Frankfurt), `PGV.SG` (Stuttgart), `PGR.MX` (Mexico) and `P1GR34.SA` (B3). Primary listings are the symbols without an exchange suffix, which makes the option mostly useful for US companies. For companies elsewhere, filter on the `exchange` or `market` instead. The chart below shows how the Dutch insurers' listings are spread over the markets.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/listings-dark.png">
   <img alt="Listings" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/listings-light.png">
 </picture>
 
-The same company appears multiple times because all exchanges are shown by default. To focus on one entry per company, use `only_primary_listing=True` (mostly useful for US exchanges) or filter on an `exchange` or `market`. For the Netherlands, it makes sense to select the market "Euronext Amsterdam" (exchange "AMS"), here together with the market cap:
+For the Netherlands, it makes sense to select the market "Euronext Amsterdam" (exchange "AMS"), here together with the market cap:
 
 ```python
 # Select the large insurance companies on Euronext Amsterdam
@@ -217,30 +218,9 @@ This gives the following three companies:
 
 | symbol   | name               | currency   | sector     | industry   | exchange   | market             | country     | market_cap   | isin         |
 |:---------|:-------------------|:-----------|:-----------|:-----------|:-----------|:-------------------|:------------|:-------------|:-------------|
-| AGN.AS   | Aegon N.V.         | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    |              |
+| AGN.AS   | Aegon N.V.         | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | BMG0112X1056 |
 | ASRNL.AS | ASR Nederland N.V. | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | NL0011872643 |
-| NN.AS    | NN Group N.V.      | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    |              |
-
-Given that the Netherlands is a relatively small country, the list becomes small quickly. The same selection for the United States, using `only_primary_listing`, returns 178 companies:
-
-```python
-# Select the primary listings of insurance companies in the United States
-equities.select(
-    country="United States",
-    industry="Insurance",
-    only_primary_listing=True,
-)
-```
-
-For example, a few of the larger ones are shown below.
-
-| symbol   | name                             | currency   | sector     | industry   | exchange   | market                  | country       | market_cap   |
-|:---------|:---------------------------------|:-----------|:-----------|:-----------|:-----------|:------------------------|:--------------|:-------------|
-| AFL      | Aflac Incorporated               | USD        | Financials | Insurance  | NYQ        | New York Stock Exchange | United States | Large Cap    |
-| AJG      | Arthur J. Gallagher & Co.        | USD        | Financials | Insurance  | NYQ        | New York Stock Exchange | United States | Large Cap    |
-| BRO      | Brown & Brown, Inc.              | USD        | Financials | Insurance  | NYQ        | New York Stock Exchange | United States | Large Cap    |
-| CINF     | Cincinnati Financial Corporation | USD        | Financials | Insurance  | NMS        | NASDAQ Global Select    | United States | Large Cap    |
-| PGR      | Progressive Corporation          | USD        | Financials | Insurance  | NYQ        | New York Stock Exchange | United States | Large Cap    |
+| NN.AS    | NN Group N.V.      | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | NL0010773842 |
 
 Every filter also accepts a list, so both queries can be combined into one with `country=["Netherlands", "United States"]` and `market=["Euronext Amsterdam", "New York Stock Exchange", "NASDAQ Global Select"]`. Equities can be selected on `country`, `sector`, `industry_group`, `industry`, `currency`, `exchange`, `mic`, `market` and `market_cap`. **Find the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started) and the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
 
