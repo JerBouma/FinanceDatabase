@@ -1,7 +1,7 @@
 symbol,name,currency,summary,category_group,category,family,exchange,mic,isin,delisted
 ABETNC.JO,FNB ETN on ACTIVIC NOV25,ZAC,,,,,JNB,XJSE,,False
 ABETNQ.JO,FNB ETN on ACTIVIQ NOV25,ZAC,,,,,JNB,XJSE,,False
-ABSGEA.JO,Absa Global Equity Multi-Factor Risk-Controlled (13%) ETN,ZAC,Absa Global Equity Multi-Factor Risk-Controlled (13%) ETN is an Exchange Traded Note. It provides exposure to global equities while employing a multi-factor risk-controlled strategy. The ETN is listed on the Johannesburg Stock Exchange (JSE).,,,,JNB,XJSE,,False
+ABSGEA.JO,Absa Global Equity Multi-Factor Risk-Controlled (13%) ETN,ZAC,Absa Global Equity Multi-Factor Risk-Controlled (13%) ETN is an Exchange Traded Note. It provides exposure to global equities while employing a multi-factor risk-controlled strategy. The ETN is listed on the Johannesburg Stock Exchange (JSE).,Equities,Factors,,JNB,XJSE,,False
 ADETNC.JO,FNB ETN on ADOBEC NOV25,ZAC,,,,,JNB,XJSE,,False
 ADETNQ.JO,FNB ETN on ADOBEQ NOV25,ZAC,,,,,JNB,XJSE,,False
 ALETNC.JO,FNB ETN on ALPHAC SEP25,ZAC,,,,,JNB,XJSE,,False
@@ -16,17 +16,17 @@ BHETNC.JO,FNB ETN on BERKSHC NOV25,ZAC,,,,,JNB,XJSE,,False
 BHETNQ.JO,FNB ETN on BERKSHQ NOV25,ZAC,,,,,JNB,XJSE,,False
 COETNC.JO,FNB ETN on COKEC SEP25,ZAC,,,,,JNB,XJSE,,False
 COETNQ.JO,FNB ETN on COKEQ SEP25,ZAC,,,,,JNB,XJSE,,False
-CSP500.JO,10X S&P 500 ETF,ZAC,10X S&P 500 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker CSP500 and traded in ZAC.,,,,JNB,XJSE,ZAE000268694,False
-CSPROP.JO,10X South African Property Income ETF,ZAC,10X South African Property Income ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker CSPROP and traded in ZAC.,,,,JNB,XJSE,ZAE000273165,False
-ETF5IT.JO,1nvest S&P500 Info Tech Feeder ETF,ZAC,1nvest S&P500 Info Tech Feeder ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker ETF5IT and traded in ZAC.,,,,JNB,XJSE,ZAE000255063,False
+CSP500.JO,10X S&P 500 ETF,ZAC,10X S&P 500 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker CSP500 and traded in ZAC.,Equities,Large Cap,,JNB,XJSE,ZAE000268694,False
+CSPROP.JO,10X South African Property Income ETF,ZAC,10X South African Property Income ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker CSPROP and traded in ZAC.,Real Estate,REITs,,JNB,XJSE,ZAE000273165,False
+ETF5IT.JO,1nvest S&P500 Info Tech Feeder ETF,ZAC,1nvest S&P500 Info Tech Feeder ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker ETF5IT and traded in ZAC.,Equities,Developed Markets,,JNB,XJSE,ZAE000255063,False
 ETFRHO.JO,1nvest Rhodium ETF,ZAC,"1nvest Rhodium ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange that provides investors with exposure to the rand price performance of physical rhodium, fully backed by the underlying commodity.",,,,JNB,XJSE,,False
 ETFSAP.JO,1nvest SA Property ETF,ZAC,1nvest SA Property ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker ETFSAP and traded in ZAC.,,,,JNB,XJSE,ZAE000279238,False
 FAETNC.JO,FNB ETN on FACEBC SEP25,ZAC,,,,,JNB,XJSE,,False
 FAETNQ.JO,FNB ETN on FACEBQ SEP25,ZAC,,,,,JNB,XJSE,,False
 FDETNC.JO,FNB ETN on FORDC NOV25,ZAC,,,,,JNB,XJSE,,False
 FDETNQ.JO,FNB ETN on FORDQ NOV25,ZAC,,,,,JNB,XJSE,,False
-FNBT40.JO,FNB Top 40 ETF,ZAC,FNB Top 40 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker FNBT40 and traded in ZAC.,,,,JNB,XJSE,ZAE000303129,False
-GIVISA.JO,NewFunds S&P GIVI SA Top 50 Exchange Traded Fund,ZAC,,,,,JNB,XJSE,,False
+FNBT40.JO,FNB Top 40 ETF,ZAC,FNB Top 40 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker FNBT40 and traded in ZAC.,Equities,Emerging Markets,,JNB,XJSE,ZAE000303129,False
+GIVISA.JO,NewFunds S&P GIVI SA Top 50 Exchange Traded Fund,ZAC,,Equities,,,JNB,XJSE,,False
 GSETNC.JO,FNB ETN on GSACHSC NOV25,ZAC,,,,,JNB,XJSE,,False
 GSETNQ.JO,FNB ETN on GSACHSQ NOV25,ZAC,,,,,JNB,XJSE,,False
 JPETNC.JO,FNB ETN on JPMORGC NOV25,ZAC,,,,,JNB,XJSE,,False
@@ -43,17 +43,17 @@ NEWGBP.JO,NewWave GBP Currency Exchange Traded Note,ZAC,,,,,JNB,XJSE,,False
 NEWPLT.JO,NewWave Platinum Exchange Traded Note,ZAC,,,,,JNB,XJSE,,False
 NEWSLV.JO,NewWave Silver Exchange Traded Note,ZAC,,,,,JNB,XJSE,,False
 NEWUSD.JO,NewWave USD Currency Exchange Traded Note,ZAC,,,,,JNB,XJSE,,False
-NFEDEF.JO,NewFunds Volatility Managed Defensive Equity ETF,ZAC,,,,,JNB,XJSE,,False
-NFEHGE.JO,NewFunds Volatility Managed High Growth Equity ETF,ZAC,,,,,JNB,XJSE,,False
-NFEMOD.JO,NewFunds Volatility Managed Moderate Equity ETF,ZAC,,,,,JNB,XJSE,,False
-NFEMOM.JO,NewFunds Equity Momentum ETF,ZAC,,,,,JNB,XJSE,,False
+NFEDEF.JO,NewFunds Volatility Managed Defensive Equity ETF,ZAC,,Equities,,,JNB,XJSE,,False
+NFEHGE.JO,NewFunds Volatility Managed High Growth Equity ETF,ZAC,,Equities,Growth,,JNB,XJSE,,False
+NFEMOD.JO,NewFunds Volatility Managed Moderate Equity ETF,ZAC,,Equities,,,JNB,XJSE,,False
+NFEMOM.JO,NewFunds Equity Momentum ETF,ZAC,,Equities,Factors,,JNB,XJSE,,False
 NFETNC.JO,FNB ETN on NETFLC SEP25,ZAC,,,,,JNB,XJSE,,False
 NFETNQ.JO,FNB ETN on NETFLQ SEP25,ZAC,,,,,JNB,XJSE,,False
-NFEVAL.JO,NewFunds Value Equity ETF,ZAC,,,,,JNB,XJSE,,False
+NFEVAL.JO,NewFunds Value Equity ETF,ZAC,,Equities,Value,,JNB,XJSE,,False
 NFEVOL.JO,NewFunds Low Volatility ETF,ZAC,,,,,JNB,XJSE,,False
 NFGOVI.JO,NewFunds GOVI Exchange Traded Fund Portfolio,ZAC,,,,,JNB,XJSE,,False
 NFILBI.JO,NewFunds ILBI Exchange Traded Fund Portfolio,ZAC,,,,,JNB,XJSE,,False
-NFNAMB.JO,NewFunds S&P Namibia Bond ETF,ZAC,,,,,JNB,XJSE,,False
+NFNAMB.JO,NewFunds S&P Namibia Bond ETF,ZAC,,Fixed Income,,,JNB,XJSE,,False
 NFSH40.JO,NewFunds Shari'ah Top 40 ETF,ZAC,,,,,JNB,XJSE,,False
 NFTRCI.JO,NewFunds TRACI 3 Month ETF,ZAC,,,,,JNB,XJSE,,False
 NGPLD.JO,NewGold Palladium ETF,ZAC,,,,,JNB,XJSE,,False
@@ -64,21 +64,21 @@ SBACOP.JO,SB Copper ETN,ZAC,SB Copper ETN is an exchange-traded note (ETN) that 
 SBACRN.JO,SB Corn ETN,ZAC,SB Corn ETN is an exchange-traded note (ETN) that tracks the performance of corn prices. It offers investors exposure to the corn market without requiring direct ownership of the underlying commodity. The ETN is listed on the Johannesburg Stock Exchange.,,,,JNB,XJSE,,False
 SBAOIL.JO,Standard Bank WTI Crude Oil ETN,ZAC,Standard Bank WTI Crude Oil ETN is an exchange-traded note (ETN) that tracks the performance of the WTI crude oil price. It provides investors with exposure to the crude oil market without directly owning physical oil. The ETN is listed on the Johannesburg Stock Exchange.,,,,JNB,XJSE,,False
 SBAWHT.JO,SB Wheat ETN,ZAC,SB Wheat ETN is an exchange-traded note (ETN) that tracks the performance of wheat prices. It offers investors exposure to the wheat market without direct ownership of the commodity. The ETN is listed on the Johannesburg Stock Exchange.,,,,JNB,XJSE,,False
-STX40.JO,Satrix 40 ETF,ZAC,Satrix 40 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STX40 and traded in ZAC.,,,,JNB,XJSE,ZAE000027108,False
-STXCHN.JO,Satrix MSCI China Feeder ETF,ZAC,Satrix MSCI China Feeder ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXCHN and traded in ZAC.,,,,JNB,XJSE,ZAE000288361,False
-STXDIV.JO,Satrix DIVI Plus ETF,ZAC,Satrix DIVI Plus ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXDIV and traded in ZAC.,,,,JNB,XJSE,ZAE000102018,False
-STXIFR.JO,Satrix Global Infrastructure Feeder ETF,ZAC,Satrix Global Infrastructure Feeder ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXIFR and traded in ZAC.,,,,JNB,XJSE,ZAE000301586,False
-STXNDA.JO,Satrix MSCI India Feeder ETF,ZAC,Satrix MSCI India Feeder ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXNDA and traded in ZAC.,,,,JNB,XJSE,ZAE000306924,False
-STXNDQ.JO,Satrix Nasdaq 100 ETF,ZAC,Satrix Nasdaq 100 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXNDQ and traded in ZAC.,,,,JNB,XJSE,ZAE000256301,False
-STXPRO.JO,Satrix Property ETF,ZAC,Satrix Property ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXPRO and traded in ZAC.,,,,JNB,XJSE,ZAE000240131,False
-STXRAF.JO,Satrix RAFI 40 ETF,ZAC,Satrix RAFI 40 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXRAF and traded in ZAC.,,,,JNB,XJSE,ZAE000126033,False
-STXWDM.JO,Satrix MSCI World ETF,ZAC,Satrix MSCI World ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXWDM and traded in ZAC.,,,,JNB,XJSE,ZAE000246104,False
-SYG500.JO,Sygnia Itrix S&P 500 ETF,ZAC,Sygnia Itrix S&P 500 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker SYG500 and traded in ZAC.,,,,JNB,XJSE,ZAE000251377,False
-SYGEMF.JO,Sygnia Itrix MSCI Emerging Markets 50 ETF Units ZAR,ZAC,Sygnia Itrix MSCI Emerging Markets 50 ETF Units ZAR is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker SYGEMF and traded in ZAC.,,,,JNB,XJSE,ZAE000297792,False
-SYGJP.JO,Sygnia Itrix MSCI Japan,ZAC,Sygnia Itrix MSCI Japan is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker SYGJP and traded in ZAC.,,,,JNB,XJSE,ZAE000249538,False
-SYGP.JO,Sygnia Itrix Global Property ETF,ZAC,Sygnia Itrix Global Property ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker SYGP and traded in ZAC.,,,,JNB,XJSE,ZAE000251369,False
-SYGT40.JO,Sygnia Itrix Top 40 ETF,ZAC,Sygnia Itrix Top 40 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker SYGT40 and traded in ZAC.,,,,JNB,XJSE,ZAE000251351,False
-SYGWD.JO,Sygnia Itrix MSCI World,ZAC,Sygnia Itrix MSCI World is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker SYGWD and traded in ZAC.,,,,JNB,XJSE,ZAE000249553,False
+STX40.JO,Satrix 40 ETF,ZAC,Satrix 40 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STX40 and traded in ZAC.,Equities,Emerging Markets,,JNB,XJSE,ZAE000027108,False
+STXCHN.JO,Satrix MSCI China Feeder ETF,ZAC,Satrix MSCI China Feeder ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXCHN and traded in ZAC.,Equities,Developed Markets,,JNB,XJSE,ZAE000288361,False
+STXDIV.JO,Satrix DIVI Plus ETF,ZAC,Satrix DIVI Plus ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXDIV and traded in ZAC.,Equities,Emerging Markets,,JNB,XJSE,ZAE000102018,False
+STXIFR.JO,Satrix Global Infrastructure Feeder ETF,ZAC,Satrix Global Infrastructure Feeder ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXIFR and traded in ZAC.,Equities,Developed Markets,,JNB,XJSE,ZAE000301586,False
+STXNDA.JO,Satrix MSCI India Feeder ETF,ZAC,Satrix MSCI India Feeder ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXNDA and traded in ZAC.,Equities,Developed Markets,,JNB,XJSE,ZAE000306924,False
+STXNDQ.JO,Satrix Nasdaq 100 ETF,ZAC,Satrix Nasdaq 100 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXNDQ and traded in ZAC.,Information Technology,Large Cap,,JNB,XJSE,ZAE000256301,False
+STXPRO.JO,Satrix Property ETF,ZAC,Satrix Property ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXPRO and traded in ZAC.,Real Estate,REITs,,JNB,XJSE,ZAE000240131,False
+STXRAF.JO,Satrix RAFI 40 ETF,ZAC,Satrix RAFI 40 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXRAF and traded in ZAC.,Equities,Emerging Markets,,JNB,XJSE,ZAE000126033,False
+STXWDM.JO,Satrix MSCI World ETF,ZAC,Satrix MSCI World ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXWDM and traded in ZAC.,Equities,Developed Markets,,JNB,XJSE,ZAE000246104,False
+SYG500.JO,Sygnia Itrix S&P 500 ETF,ZAC,Sygnia Itrix S&P 500 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker SYG500 and traded in ZAC.,Equities,Large Cap,,JNB,XJSE,ZAE000251377,False
+SYGEMF.JO,Sygnia Itrix MSCI Emerging Markets 50 ETF Units ZAR,ZAC,Sygnia Itrix MSCI Emerging Markets 50 ETF Units ZAR is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker SYGEMF and traded in ZAC.,Information Technology,Emerging Markets,,JNB,XJSE,ZAE000297792,False
+SYGJP.JO,Sygnia Itrix MSCI Japan,ZAC,Sygnia Itrix MSCI Japan is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker SYGJP and traded in ZAC.,Equities,Developed Markets,,JNB,XJSE,ZAE000249538,False
+SYGP.JO,Sygnia Itrix Global Property ETF,ZAC,Sygnia Itrix Global Property ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker SYGP and traded in ZAC.,Real Estate,REITs,,JNB,XJSE,ZAE000251369,False
+SYGT40.JO,Sygnia Itrix Top 40 ETF,ZAC,Sygnia Itrix Top 40 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker SYGT40 and traded in ZAC.,Equities,Emerging Markets,,JNB,XJSE,ZAE000251351,False
+SYGWD.JO,Sygnia Itrix MSCI World,ZAC,Sygnia Itrix MSCI World is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker SYGWD and traded in ZAC.,Equities,Developed Markets,,JNB,XJSE,ZAE000249553,False
 TSETNC.JO,FNB ETN on TESLAC SEP25,ZAC,"FNB ETN on TESLAC SEP25 is an Exchange Traded Note (ETN) issued by First National Bank (FNB) linked to the performance of Tesla shares with a maturity date in September 2025. The ETN provides investors with exposure to Tesla's stock without directly owning the shares, and it is traded on the Johannesburg Stock Exchange (JSE). It is based in South Africa.",,,,JNB,XJSE,,False
 TSETNQ.JO,FNB ETN on TESLAQ SEP25,ZAC,"FNB ETN on TESLAQ SEP25 is an Exchange Traded Note (ETN) issued by First National Bank (FNB) linked to the performance of Tesla shares with a maturity date in September 2025. The ETN provides investors with exposure to Tesla's stock without directly owning the shares, and it is traded on the Johannesburg Stock Exchange (JSE). It is based in South Africa.",,,,JNB,XJSE,,False
 USQCPA.JO,iQ Global Quality Companies ETN,ZAC,"iQ Global Quality Companies ETN is an exchange-traded note. The ETN tracks the iQ Global Quality Leaders Index, which comprises global companies exhibiting high-quality characteristics based on factors such as return on equity, earnings stability, and debt-to-equity ratios. The ETN aims to provide exposure to companies with strong financial fundamentals.",,,,JNB,XJSE,,False
