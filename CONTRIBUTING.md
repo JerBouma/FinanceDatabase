@@ -128,6 +128,16 @@ For Equities, these are the categories. Other asset classes follow a similar lay
 
 If in any case you are not able to acquire data for a specific category, keep the field blank so that it is clear that there is no data available. For any of these options, make sure you use an existing category so that it remains compact. For example, the sectors, industry groups and industries loosely approximate to the [The Global Industry Classification Standard (GICS®)](https://www.msci.com/our-solutions/indexes/gics) as created by MSCI. No actual data is collected from this source and this database merely tries to reflect the sectors and industries as best as possible. This is completely done through manual curation. The actual datasets as curated by MSCI have not been used in the development of any part of this database and remains the most up to date, paid, solution. Other categorizations are entirely developed by the author and can freely be changed.
 
+### ETF categories
+
+ETFs have two category columns. `category_group` says what the fund holds; `category` refines it. They are decided in this order, based on the fund's holdings where they are known and otherwise on its name:
+
+1. **Leveraged or inverse** products (2x, -3x, Ultra, Bear, daily long/short) are `Derivatives` / `Trading`. **Option strategies** (buffer, defined outcome, covered call, premium income) are `Derivatives` with an empty category.
+2. **Bond funds** (the name says bond, treasury, gilt, sovereign, corporate, high yield, muni, ...) are `Fixed Income`, with the bond type as category: `Government Bonds`, `Treasury Bonds`, `Corporate Bonds`, `High Yield Bonds`, `Investment Grade Bonds`, `Inflation-Protected Securities`, `Municipal Bonds` or `Emerging Markets`. Money market, T-bill and 0–3 month funds are `Cash` / `Money Market Instruments`. Funds that hold both equities and bonds are `Equities` / `Allocation`.
+3. Other funds follow their asset class: `Commodities` (category `Commodities Broad Basket` for broad baskets, empty for a single commodity), `Real Estate` / `REITs`, `Currencies` / `Currencies`, `Alternatives` / `Alternative` (e.g. crypto) and multi-asset funds `Equities` / `Allocation`.
+4. **Equity funds** with at least 60% of their holdings in one GICS sector take that sector as `category_group` (e.g. `Information Technology`); other equity funds are `Equities`. The category is, in this order: a factor (`Factors`: momentum, quality, minimum volatility, equal weight), a size (`Micro Cap`, `Small Cap`, `Mid Cap`), a style (`Growth`, `Value`) or the region of the holdings: `Emerging Markets` or `Frontier Markets` when at least half is invested there (MSCI market classification), `Large Cap` for a broad large-cap index of one developed country (S&P 500, DAX, Nikkei, ...) and `Developed Markets` otherwise.
+5. Listings of the same fund (same ISIN) share one classification.
+
 # Advanced (Developers)
 If you know your way around Git and GitHub this is the preferred way of providing updates. In any case, I still provide information regarding how to set up Git.
 
