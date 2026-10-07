@@ -17,7 +17,7 @@ SELECT_CASES = [
     {"category_group": "Materials"},
     {"family": "ProShares"},
     {"exchange": "PCX"},
-    {"exchange": "CPH", "category": "Financials"},
+    {"exchange": "CPH", "category": "Developed Markets"},
 ]
 
 
@@ -70,7 +70,7 @@ def test_show_options(kwargs: dict) -> None:
 SEARCH_CASES = [
     {"summary": "Apple"},
     {"index": "VOO"},
-    {"category": "Utilities"},
+    {"category": "Treasury Bonds"},
     {"category_group": "Materials"},
     {"family": "ProShares"},
     {"exchange": "PCX"},
