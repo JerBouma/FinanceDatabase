@@ -53,13 +53,12 @@ def test_section_is_regenerated_between_markers(tmp_path: Path) -> None:
     assert text.startswith("# Title\n\nIntro.\n\n<!-- STATISTICS:START")
     assert text.endswith("<!-- STATISTICS:END -->\n\n# Installation\n")
     assert "old" not in text
-    # 3 equities incl. the ticker 'NA' (must not be read as missing), 2 actively listed
+    # 3 equities incl. the ticker 'NA' (must not be read as missing)
     assert (
-        "| 🏢 | **Equities** | 3 | 2 | 1 | 2 sectors · 3 industries · 2 countries |"
-        in text
+        "| 🏢 | **Equities** | 3 | 1 | 2 sectors · 3 industries · 2 countries |" in text
     )
-    assert "| 📦 | **ETFs** | 2 | 1 | 1 | 1 issuers · 1 categories |" in text
-    assert "| | **Total** | **10** | | | |" in text
+    assert "| 📦 | **ETFs** | 2 | 1 | 1 issuers · 1 categories |" in text
+    assert "| | **Total** | **10** | | |" in text
     assert "badge/updated-2026--10--04-" in text
     assert "<details>" not in text
 

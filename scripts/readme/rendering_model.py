@@ -49,15 +49,15 @@ def render(stats: list[AssetStats], today: dt.date) -> str:
         return format_number(value) if value is not None else "–"
 
     rows = [
-        "| | Asset class | Symbols | Actively listed | Exchanges | Coverage |",
-        "| :-: | :-- | --: | --: | --: | :-- |",
+        "| | Asset class | Symbols | Exchanges | Coverage |",
+        "| :-: | :-- | --: | --: | :-- |",
     ]
     for s in stats:
         rows.append(
-            f"| {s.icon} | **{s.name}** | {format_number(s.symbols)} | {format_cell(s.listed)} | "
+            f"| {s.icon} | **{s.name}** | {format_number(s.symbols)} | "
             f"{format_cell(s.exchanges)} | {' · '.join(s.coverage)} |"
         )
-    rows.append(f"| | **Total** | **{format_number(total)}** | | | |")
+    rows.append(f"| | **Total** | **{format_number(total)}** | | |")
 
     return "\n".join(
         [

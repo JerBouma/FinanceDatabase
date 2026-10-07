@@ -26,16 +26,16 @@ Some key statistics of the database:
 
 </div>
 
-| | Asset class | Symbols | Actively listed | Exchanges | Coverage |
-| :-: | :-- | --: | --: | --: | :-- |
-| 🏢 | **Equities** | 120,742 | 106,296 | 87 | 11 sectors · 69 industries · 118 countries |
-| 📦 | **ETFs** | 43,963 | 43,321 | 64 | 599 issuers · 35 categories |
-| 💼 | **Funds** | 58,011 | – | 34 | 1,560 fund families · 71 categories |
-| 📈 | **Indices** | 80,287 | – | 63 | 42 categories |
-| 💱 | **Currencies** | 2,556 | – | – | 178 currencies |
-| 🪙 | **Cryptocurrencies** | 3,378 | – | – | 352 coins · 12 quote currencies |
-| 🏦 | **Money Markets** | 1,209 | – | 2 | 126 fund families |
-| | **Total** | **310,146** | | | |
+| | Asset class | Symbols | Exchanges | Coverage |
+| :-: | :-- | --: | --: | :-- |
+| 🏢 | **Equities** | 120,742 | 87 | 11 sectors · 69 industries · 118 countries |
+| 📦 | **ETFs** | 43,963 | 64 | 599 issuers · 35 categories |
+| 💼 | **Funds** | 58,011 | 34 | 1,560 fund families · 71 categories |
+| 📈 | **Indices** | 80,287 | 63 | 42 categories |
+| 💱 | **Currencies** | 2,556 | – | 178 currencies |
+| 🪙 | **Cryptocurrencies** | 3,378 | – | 352 coins · 12 quote currencies |
+| 🏦 | **Money Markets** | 1,209 | 2 | 126 fund families |
+| | **Total** | **310,146** | | |
 
 <!-- STATISTICS:END -->
 
