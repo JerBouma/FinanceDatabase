@@ -196,12 +196,7 @@ This returns 181 companies, of which a few of the larger ones are shown below.
 | CINF     | Cincinnati Financial Corporation | USD        | Financials | Insurance  | NMS        | NASDAQ Global Select    | United States | Large Cap    |
 | PGR      | Progressive Corporation          | USD        | Financials | Insurance  | NYQ        | New York Stock Exchange | United States | Large Cap    |
 
-Without `only_primary_listing=True`, the same query returns 454 listings on 23 exchanges, because every exchange a company trades on is shown by default. Progressive, for example, also appears as `PGV.F` (Frankfurt), `PGV.SG` (Stuttgart), `PGR.MX` (Mexico) and `P1GR34.SA` (B3). Primary listings are the symbols without an exchange suffix, which makes the option mostly useful for US companies. For companies elsewhere, filter on the `exchange` or `market` instead. The chart below shows how the Dutch insurers' listings are spread over the markets.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/listings-dark.png">
-  <img alt="Listings" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/listings-light.png">
-</picture>
+Without `only_primary_listing=True`, the same query returns 454 listings on 23 exchanges, because every exchange a company trades on is shown by default. Progressive, for example, also appears as `PGV.F` (Frankfurt), `PGV.SG` (Stuttgart), `PGR.MX` (Mexico) and `P1GR34.SA` (B3). Primary listings are the symbols without an exchange suffix, which makes the option mostly useful for US companies. For companies elsewhere, filter on the `exchange` or `market` instead.
 
 For the Netherlands, it makes sense to select the market "Euronext Amsterdam" (exchange "AMS"), here together with the market cap:
 
