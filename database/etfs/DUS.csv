@@ -208,8 +208,8 @@ AW11.DU,UIE-C.A.G.D.E.C ADLA,EUR,"UIE-C.A.G.D.E.C ADLA is a fund tracking a clim
 AW1B.DU,SP500 ESEL E. AEOA,EUR,,,,,DUS,XDUS,,False
 AW1C.DU,SP500 ESEL E. ADLA,EUR,,,,,DUS,XDUS,,False
 AW1R.DU,UBS(IRL)ETF-MS.AC.S.EOAAH,EUR,,,,UBS Asset Management,DUS,XDUS,,False
-AW43.DU,AXA WLD-OPT.INCOME A TPF,EUR,,,,,DUS,XDUS,,False
-AW44.DU,AXA WLD-FRAM.ITALY A T,EUR,,,,,DUS,XDUS,,False
+AW43.DU,AXA WLD-OPT.INCOME A TPF,EUR,,,,AXA World Funds,DUS,XDUS,,False
+AW44.DU,AXA WLD-FRAM.ITALY A T,EUR,,,,AXA World Funds,DUS,XDUS,,False
 AW45.DU,AXA WLD-FR.SWITZER.A T,EUR,,,,AXA World Funds,DUS,XDUS,,False
 AW47.DU,AXA WLD-OPT.INCOME A APF,EUR,,,,AXA World Funds,DUS,XDUS,,False
 AW48.DU,AXA IM-US SH.DU.F(DIS)EUR,EUR,,,,AXA World Funds,DUS,XDUS,,False
@@ -269,11 +269,11 @@ B3F3.DU,BSF - BLACKROCK MIPM A4EO,EUR,,,,BlackRock Asset Management,DUS,XDUS,,Fa
 B3F4.DU,BSF - BLACKROCK MIPG A4EO,EUR,,,,BlackRock Asset Management,DUS,XDUS,,False
 B500.DU,AIS-AM.S+P500 BB EOC,EUR,,,,Amundi Asset Management,DUS,XDUS,,False
 B8TA.DU,MUL-LYX.FTSE EU.M.V.DR A,EUR,,Equities,,Lyxor International Asset Management,DUS,XDUS,,False
-B8TG.DU,MUL-L.M.U.C.C.E DLA,EUR,,,,,DUS,XDUS,,False
-B8TH.DU,MUL-LYX.MSCI EM CL.CH.DLA,EUR,,Equities,,,DUS,XDUS,,False
-B8TT.DU,MUL-LYX. FTSE 100 A,EUR,,Equities,,,DUS,XDUS,,False
+B8TG.DU,MUL-L.M.U.C.C.E DLA,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+B8TH.DU,MUL-LYX.MSCI EM CL.CH.DLA,EUR,,Equities,,Lyxor International Asset Management,DUS,XDUS,,False
+B8TT.DU,MUL-LYX. FTSE 100 A,EUR,,Equities,,Lyxor International Asset Management,DUS,XDUS,,False
 B92A.DU,BGF-WORLD MNG A2 EO HD.,EUR,,,,BlackRock Asset Management,DUS,XDUS,,False
-BATE.DU,L+G-L+G BATT.VALUE-CHAIN,EUR,,,,,DUS,XDUS,,False
+BATE.DU,L+G-L+G BATT.VALUE-CHAIN,EUR,,,,LGIM Managers,DUS,XDUS,,False
 BBCK.DU,INVESCOM3 GLO BUYBACH A,EUR,INVESCOM3 GLO BUYBACH A is a fund or investment product focused on global companies that actively engage in stock buyback programs. Its investment strategy centers around identifying and investing in companies that repurchase their own shares. The fund is managed by Invesco.,,,Invesco Investment Management,DUS,XDUS,,False
 BBEG.DU,JPM ICAV-BETAB.EO GBD EOA,EUR,,,,JPMorgan Asset Management,DUS,XDUS,,False
 BBET.DU,JPM-PACIF.EQU.JPMPE AAEO,EUR,"JPM-PACIF.EQU.JPMPE AAEO is a Pacific ex-Japan Equity fund managed by JP Morgan, providing investors exposure to the equity markets of the Pacific region excluding Japan. The fund invests in a diversified portfolio of companies located in countries such as Australia, Singapore, and South Korea, aiming to capture the growth potential of the region. The headquarter location and other specific details require further research.",,Emerging Markets,JPMorgan Asset Management,DUS,XDUS,,False
@@ -349,7 +349,7 @@ C060.DU,LYX STOXX EU 600 ETF I,EUR,"LYX STOXX EU 600 ETF I aims to replicate the
 C071.DU,LIF-600 MEDIA EOD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 C090.DU,LYXOR COMMO EX AGRI ETF I,EUR,"LYXOR COMMO EX AGRI ETF I aims to track the performance of the Bloomberg Commodity ex-Agriculture Index, providing exposure to a diversified basket of commodities excluding agricultural products. The ETF is designed to offer investors a way to participate in the commodities market while avoiding the volatility associated with agricultural commodities. Lyxor Asset Management, headquartered in France, manages the fund.",Commodities,,Lyxor International Asset Management,DUS,XDUS,,False
 C099.DU,LYX COMM X AGR HEDG ETF I,EUR,"LYX COMM X AGR HEDG ETF I aims to track the performance of the Bloomberg Commodity ex-Agriculture Index, while hedging against EUR fluctuations, providing exposure to a diversified basket of commodities excluding agricultural products. This ETF is designed to offer investors a way to participate in the commodities market while minimizing currency risk. Lyxor Asset Management manages the fund.",Commodities,,Lyxor International Asset Management,DUS,XDUS,,False
-C101.DU,MUL-LYXOR FFDLC DLD,EUR,,,,,DUS,XDUS,,False
+C101.DU,MUL-LYXOR FFDLC DLD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 C128.DU,LYX EME MARK 2X LEV ETF I,EUR,LYX EME MARK 2X LEV ETF I aims to provide twice (2x) the daily performance of an index representing emerging market equities. It's designed for sophisticated investors seeking leveraged exposure to emerging markets for short-term trading. Lyxor Asset Management manages this fund.,Derivatives,Trading,Lyxor International Asset Management,DUS,XDUS,,False
 C4YB.DU,ASPOMA CHINA OPP. P,EUR,"ASPOMA CHINA OPP. P is a fund focused on investment opportunities in the Chinese market. It aims to capitalize on the growth potential within the Chinese economy through investments in various sectors and industries. The fund is managed by ASPOMA, seeking to deliver returns to its investors by identifying and investing in promising Chinese companies.",,Emerging Markets,,DUS,XDUS,,False
 C540.DU,LYX GER COV CAP ALL ETF I,EUR,"LYX GER COV CAP ALL ETF I seeks to replicate the performance of the iBoxx EUR Germany Covered Capped Overall index, which includes euro-denominated covered bonds issued by German entities. This ETF provides exposure to the German covered bond market. Lyxor Asset Management, headquartered in France, manages the fund.",Fixed Income,Corporate Bonds,Lyxor International Asset Management,DUS,XDUS,,False
@@ -765,8 +765,8 @@ E908.DU,LY.1-LYXOR 1 TECDAX U.E.I,EUR,LY.1-LYXOR 1 TECDAX U.E.I is an exchange-t
 E909.DU,L1-L.1 DAX 50 ESG(DR)UE I,EUR,L1-L.1 DAX 50 ESG(DR)UE I is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker E909 and traded in EUR. It is classified as Equities (Developed Markets).,Equities,Developed Markets,,DUS,XDUS,,False
 E950.DU,LY.1-LYX.EO STOX.50 U.E.I,EUR,LY.1-LYX.EO STOX.50 U.E.I is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker E950 and traded in EUR. It is classified as Equities (Developed Markets).,Equities,Developed Markets,,DUS,XDUS,,False
 E960.DU,L.1-L.1 STOX.EUROP.600 UE,EUR,L.1-L.1 STOX.EUROP.600 UE is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker E960 and traded in EUR. It is classified as Equities (Developed Markets).,Equities,Developed Markets,,DUS,XDUS,,False
-EABE.DU,MUL-L.N.ZERO2050S+PEC EOA,EUR,MUL-L.N.ZERO2050S+PEC EOA is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker EABE and traded in EUR. It is classified as Equities (Developed Markets).,Equities,Developed Markets,,DUS,XDUS,,False
-EABG.DU,MUL-LYX.NZ2050S+P WCL.DLA,EUR,MUL-LYX.NZ2050S+P WCL.DLA is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker EABG and traded in EUR. It is classified as Equities (Developed Markets).,Equities,Developed Markets,,DUS,XDUS,,False
+EABE.DU,MUL-L.N.ZERO2050S+PEC EOA,EUR,MUL-L.N.ZERO2050S+PEC EOA is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker EABE and traded in EUR. It is classified as Equities (Developed Markets).,Equities,Developed Markets,Lyxor International Asset Management,DUS,XDUS,,False
+EABG.DU,MUL-LYX.NZ2050S+P WCL.DLA,EUR,MUL-LYX.NZ2050S+P WCL.DLA is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker EABG and traded in EUR. It is classified as Equities (Developed Markets).,Equities,Developed Markets,Lyxor International Asset Management,DUS,XDUS,,False
 EAS3.DU,EASYFOLIO 30,EUR,EASYFOLIO 30 is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker EAS3 and traded in EUR.,Equities,,,DUS,XDUS,,False
 EAS5.DU,EASYFOLIO 50,EUR,,,,,DUS,XDUS,,False
 EAS7.DU,EASYFOLIO 70,EUR,,,,,DUS,XDUS,,False
@@ -799,9 +799,9 @@ EFQ8.DU,DK IBOXX EO L.NON-FI.DIV.,EUR,,Fixed Income,,Deka Investment,DUS,XDUS,,F
 EFRN.DU,ISHSII-DL FR BD ETF EOD,EUR,The ISHSII-DL FR BD ETF EOD is an exchange-traded fund. The ETF is domiciled in Ireland. It invests in French bonds.,Fixed Income,Government Bonds,BlackRock Asset Management,DUS,XDUS,,False
 EGV1.DU,LIF-600 INSURA. EOD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 EGV2.DU,LIF-SM.OV.RE EOD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
-EGV3.DU,MUL-LX.EO GOV.BD1-3Y EOD,EUR,,,,,DUS,XDUS,,False
-EGV5.DU,MUL-L.EO GO EOD,EUR,,,,,DUS,XDUS,,False
-EGV7.DU,MUL-LX.EO GOV.BD5-7Y EOD,EUR,,,,,DUS,XDUS,,False
+EGV3.DU,MUL-LX.EO GOV.BD1-3Y EOD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+EGV5.DU,MUL-L.EO GO EOD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+EGV7.DU,MUL-LX.EO GOV.BD5-7Y EOD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 EHBA.DU,INVESCOM2 EUR CORPHYBBOND,EUR,,,,Invesco Investment Management,DUS,XDUS,,False
 EHBD.DU,INVESCOM2 EUR CORPHYBBOND,EUR,,,,Invesco Investment Management,DUS,XDUS,,False
 EHDL.DU,INVESCOM3 FT EM HD LV A,EUR,,,,Invesco Investment Management,DUS,XDUS,,False
@@ -925,7 +925,7 @@ ESIS.DU,ISVP.-IS.M.ECSS EOA,EUR,,,,,DUS,XDUS,,False
 ESIT.DU,ISVP.-IS.M.EITS EOA,EUR,,,,,DUS,XDUS,,False
 ESNB.DU,EXPAT SERB.BELEX15 UCITS,EUR,"The EXPAT SERB.BELEX15 UCITS aims to track the performance of the Belex15 index, which represents the 15 most liquid stocks traded on the Belgrade Stock Exchange. This ETF offers investors a way to gain exposure to the Serbian equity market. Expat Asset Management manages the fund.",Alternatives,,,DUS,XDUS,,False
 ESP0.DU,VANECK ETFS-VVVG+ESP.ADLA,EUR,"VANECK ETFS-VVVG+ESP.ADLA is an exchange-traded fund (ETF) providing exposure to a specific investment strategy, combining VanEck Vectors Global Equal Weight UCITS ETF (VVVG) with exposure to Spanish equities. It aims to offer a diversified portfolio with a focus on global and Spanish markets. Further details on the specific investment strategy would require analyzing the fund's prospectus.",Alternatives,,VanEck Asset Management,DUS,XDUS,,False
-ESTE.DU,MUL-L.EA.E.E.R. EOD,EUR,,,,,DUS,XDUS,,False
+ESTE.DU,MUL-L.EA.E.E.R. EOD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 ETBB.DU,BNPPEFR-EU.S.50 UETF EOCD,EUR,BNPPEFR-EU.S.50 UETF EOCD is an exchange-traded fund (ETF) designed to track the performance of the Euro Stoxx 50 index. This fund provides investors with exposure to the 50 largest companies in the Eurozone. BNP Paribas Easy ETF aims to offer simple and cost-effective access to various market segments.,Alternatives,,BNP Paribas Asset Management,DUS,XDUS,,False
 ETDD.DU,BNPPEFR-EU.S.50 UETF CEO,EUR,BNPPEFR-EU.S.50 UETF CEO is an exchange-traded fund (ETF) designed to track the performance of the Euro Stoxx 50 index. This fund provides investors with exposure to the 50 largest companies in the Eurozone. BNP Paribas Easy ETF aims to offer simple and cost-effective access to various market segments.,Alternatives,,BNP Paribas Asset Management,DUS,XDUS,,False
 ETL2.DU,L+G-L.DATED A.COMM.U.ETF,EUR,"L+G-L.DATED A.COMM.U.ETF is an exchange-traded fund (ETF) providing exposure to a basket of commodities with a dated (expiring) structure. This implies that the ETF holds futures contracts that expire on specific dates, requiring periodic rolling over of contracts. The fund allows investors to access a diversified commodity portfolio through futures contracts.",Commodities,,LGIM Managers,DUS,XDUS,,False
@@ -948,7 +948,7 @@ EUED.DU,ISIV-EO UL.BD EU.E.TF EOD,EUR,,Fixed Income,,BlackRock Asset Management,
 EUHA.DU,PFIE.-E ST HY CB IU EOA,EUR,,,,,DUS,XDUS,,False
 EUHI.DU,PFIE.-E ST HY CB IU EOI,EUR,,,,,DUS,XDUS,,False
 EUII.DU,M.-L.I.E.2-10Y I.E.UE AEO,EUR,,,,,DUS,XDUS,,False
-EUIN.DU,MUL-LYX.EO 2-10Y I.EX. A,EUR,,,,,DUS,XDUS,,False
+EUIN.DU,MUL-LYX.EO 2-10Y I.EX. A,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 EUN0.DU,ISHSVI-E.MSCI EO MIN.VEOA,EUR,,Equities,,BlackRock Asset Management,DUS,XDUS,,False
 EUN1.DU,ISHS II-STXX EUR.50 EODIS,EUR,,,,BlackRock Asset Management,DUS,XDUS,,False
 EUN2.DU,ISHSII-CORE E.STOXX50 EOD,EUR,,Equities,,BlackRock Asset Management,DUS,XDUS,,False
@@ -971,7 +971,7 @@ EUNR.DU,ISHSIII-EO C.B.EX-F.EODIS,EUR,"ISHSIII-EO C.B.EX-F.EODIS is an exchange-
 EUNS.DU,ISHSIII-EO CBX-F1-5YR EOD,EUR,"ISHSIII-EO CBX-F1-5YR EOD is an exchange-traded fund (ETF) focusing on Euro Corporate Bonds excluding financials with a maturity between 1-5 years. Managed by ISHSIII, the fund seeks to mirror the performance of a related index. Further information is required to understand the exact underlying index and the fund's investment strategy.",Fixed Income,Corporate Bonds,BlackRock Asset Management,DUS,XDUS,,False
 EUNT.DU,ISHSIII-EO C.BD 1-5YR EOD,EUR,"ISHSIII-EO C.BD 1-5YR EOD is an exchange-traded fund (ETF) focusing on Euro Corporate Bonds with a maturity between 1-5 years. Managed by ISHSIII, the fund seeks to mirror the performance of a related index. Further information is required to understand the exact underlying index and the fund's investment strategy.",Fixed Income,Corporate Bonds,BlackRock Asset Management,DUS,XDUS,,False
 EUNU.DU,ISHSIII-CORE GL.AG.BD DLD,EUR,"ISHSIII-CORE GL.AG.BD DLD is an exchange-traded fund (ETF) that provides core exposure to the global aggregate bond market. Managed by ISHSIII, it tracks a specific index of global aggregate bonds. More information is required to understand the exact underlying index and the fund's investment strategy.",Fixed Income,Investment Grade Bonds,BlackRock Asset Management,DUS,XDUS,,False
-EUNW.DU,IS EO H.Y.CO.BD U.ETF EOD,EUR,IS EO H.Y.CO.BD U.ETF EOD is an exchange-traded fund (ETF) focusing on Euro High Yield Corporate Bonds. It is managed by IS and aims to replicate the performance of a specific index of Euro-denominated high-yield corporate bonds. More information is needed to clarify the exact index and the fund's precise investment strategy.,Fixed Income,High Yield Bonds,,DUS,XDUS,,False
+EUNW.DU,IS EO H.Y.CO.BD U.ETF EOD,EUR,IS EO H.Y.CO.BD U.ETF EOD is an exchange-traded fund (ETF) focusing on Euro High Yield Corporate Bonds. It is managed by IS and aims to replicate the performance of a specific index of Euro-denominated high-yield corporate bonds. More information is needed to clarify the exact index and the fund's precise investment strategy.,Fixed Income,High Yield Bonds,BlackRock Asset Management,DUS,XDUS,,False
 EUNX.DU,ISHSII-US AGGREG.BD DLDIS,EUR,"ISHSII-US AGGREG.BD DLDIS is an exchange-traded fund (ETF) providing exposure to the U.S. aggregate bond market. Managed by ISHSII, it tracks a specific index of U.S. aggregate bonds. More information is required to understand the exact underlying index and the fund's investment strategy.",Fixed Income,Investment Grade Bonds,BlackRock Asset Management,DUS,XDUS,,False
 EUNY.DU,ISHSV-EM DIVID.U.ETF DLD,EUR,"ISHSV-EM DIVID.U.ETF DLD is an exchange-traded fund (ETF) focused on dividend-paying companies in emerging markets. Managed by ISHSV, the fund aims to track the performance of an index composed of these dividend-focused companies. More information is required to understand the exact underlying index and the fund's investment strategy.",Financials,Emerging Markets,,DUS,XDUS,,False
 EUNZ.DU,ISHSVI-E.MSCI EM MIN.VDLA,EUR,"ISHSVI-E.MSCI EM MIN.VDLA is an exchange-traded fund (ETF) that tracks the MSCI Emerging Markets Minimum Volatility index. Managed by ISHSVI, the fund aims to provide exposure to emerging market equities while minimizing volatility. More information is needed to clarify the exact business model and investment strategy.",Equities,,BlackRock Asset Management,DUS,XDUS,,False
@@ -1081,7 +1081,7 @@ F7TB.DU,F.TEM.INV-AS. BD N AC.EUR,EUR,"F.TEM.INV-AS. BD N AC.EUR is a Franklin T
 F7TC.DU,F.TEM.INV.-T.AS.SM.C.AYDL,EUR,"F.TEM.INV.-T.AS.SM.C.AYDL is a Franklin Templeton Investments fund focused on investing in Asian small-cap companies, with an annual yield distribution. The fund aims to provide income and capital appreciation by investing in equities of companies located in the Asian market with smaller market capitalizations. The fund focuses on companies with good yield within the Asian small-cap sector.",Fixed Income,Emerging Markets,Franklin Templeton Investments,DUS,XDUS,,False
 F7TD.DU,F.TEM.INV-T.GL.BAMD.EURH1,EUR,F.TEM.INV-T.GL.BAMD.EURH1 is a Franklin Templeton Investments fund focused on global bonds with an active management duration and denominated in Euros (EUR) with currency hedging (H1). The fund seeks to provide income and capital appreciation by investing in a diversified portfolio of fixed-income securities from around the world. It employs an active management approach to adjust the portfolio's duration based on interest rate outlook and manage currency exposure through hedging.,Fixed Income,Government Bonds,Franklin Templeton Investments,DUS,XDUS,,False
 F7TE.DU,F.T.I.FDS-EM.MKT.AACEO-H1,EUR,"F.T.I.FDS-EM.MKT.AACEO-H1 is a Franklin Templeton Investment Funds (FTIF) fund focused on investing in emerging markets, with an accumulating share class and currency hedging (H",Fixed Income,Emerging Markets,Franklin Templeton Investments,DUS,XDUS,,False
-F7TF.DU,F.TEM.INV-AS.G.A A.EUR-H1,EUR,,,,,DUS,XDUS,,False
+F7TF.DU,F.TEM.INV-AS.G.A A.EUR-H1,EUR,,,,Franklin Templeton Investments,DUS,XDUS,,False
 F7TG.DU,F.T.I.FDS-T.LAT.AM.AACCEO,EUR,,,,,DUS,XDUS,,False
 FA7A.DU,BL FD SELECT.-50-100 B,EUR,,,,,DUS,XDUS,,False
 FA7B.DU,BL FD SELECT.-EQUIT.B,EUR,,Equities,,,DUS,XDUS,,False
@@ -1130,16 +1130,16 @@ FGUP.DU,LA FR.SYST.M.A.ALLOC. R,EUR,,,,,DUS,XDUS,,False
 FGUQ.DU,LA FR.SYST.ETF DACHFDS P,EUR,,,,,DUS,XDUS,,False
 FGUR.DU,VERI ETF-ALL.DEFENSIVE R,EUR,,,,,DUS,XDUS,,False
 FGUV.DU,LA FRANC.SYS.ETF PORT.GL.,EUR,,,,,DUS,XDUS,,False
-FGV1.DU,JH-J.H.LATIN AMER. A2EO,EUR,,,,,DUS,XDUS,,False
-FGV2.DU,JH-J.H.CONT.EUROP. I2EO,EUR,,,,,DUS,XDUS,,False
+FGV1.DU,JH-J.H.LATIN AMER. A2EO,EUR,,,,Janus Henderson,DUS,XDUS,,False
+FGV2.DU,JH-J.H.CONT.EUROP. I2EO,EUR,,,,Janus Henderson,DUS,XDUS,,False
 FGV4.DU,JUP.GL.FD.-J.EU.GR.LEOA,EUR,,,,,DUS,XDUS,,False
 FGV5.DU,JUP.GL-JGF INDIA S.LDLAI,EUR,,,,,DUS,XDUS,,False
 FGV7.DU,JUPIT.GL-J.GL.EC.GR.L EOA,EUR,,,,,DUS,XDUS,,False
-FGV8.DU,JH-J.H.CONT.EUROP.A2DL,EUR,,,,,DUS,XDUS,,False
-FGVB.DU,JH-J.H.CONT.EUROP.X2EO,EUR,,,,,DUS,XDUS,,False
-FGVH.DU,JH-J.H.CONT.EUROP.A2EO,EUR,,,,,DUS,XDUS,,False
-FGVI.DU,JH-J.H.EMERG.MKTS A2EO,EUR,,,,,DUS,XDUS,,False
-FGVM.DU,JH-J.H.PAN EUROP. A2EO,EUR,,,,,DUS,XDUS,,False
+FGV8.DU,JH-J.H.CONT.EUROP.A2DL,EUR,,,,Janus Henderson,DUS,XDUS,,False
+FGVB.DU,JH-J.H.CONT.EUROP.X2EO,EUR,,,,Janus Henderson,DUS,XDUS,,False
+FGVH.DU,JH-J.H.CONT.EUROP.A2EO,EUR,,,,Janus Henderson,DUS,XDUS,,False
+FGVI.DU,JH-J.H.EMERG.MKTS A2EO,EUR,,,,Janus Henderson,DUS,XDUS,,False
+FGVM.DU,JH-J.H.PAN EUROP. A2EO,EUR,,,,Janus Henderson,DUS,XDUS,,False
 FGVQ.DU,JH-UK ABSOL.RETUR.FD A2LS,EUR,,,,,DUS,XDUS,,False
 FGVR.DU,JH-J.H.PA.EU.SM.CO.A2EO,EUR,,,,Janus Henderson,DUS,XDUS,,False
 FGVS.DU,Henderson Gartmore Fund - Global Growth Fund,EUR,"Henderson Gartmore Fund - Global Growth Fund is designed to seek long-term growth of capital through investments in a diversified portfolio of global equities. The fund is managed by Janus Henderson Investors, headquartered in London, and invests in companies with strong growth potential across various sectors and regions. The fund aims to outperform its benchmark by employing a fundamental, bottom-up stock selection process.",Equities,Growth,Janus Henderson,DUS,XDUS,,False
@@ -1162,15 +1162,15 @@ FH4H.DU,AXA WLD-EO CR.PL.N.A A,EUR,,,,AXA World Funds,DUS,XDUS,,False
 FH4I.DU,AXA WLD-GL.HGH Y.NAM.A-DH,EUR,,,,AXA World Funds,DUS,XDUS,,False
 FH4K.DU,AXA WLD-EO BDS NAM.A A.,EUR,,,,AXA World Funds,DUS,XDUS,,False
 FH4L.DU,AXA WLD-EO BDS NAM.A T.,EUR,,,,AXA World Funds,DUS,XDUS,,False
-FH4Q.DU,AXA WLD-FR.EUR.OPP.A T,EUR,,,,,DUS,XDUS,,False
-FH4R.DU,AXA WLD-FR.EU.SM.C.A T,EUR,,,,,DUS,XDUS,,False
-FH4S.DU,AXA WLD-FR.EU.SM.C.A A,EUR,,,,,DUS,XDUS,,False
-FH4T.DU,AXA WLD-FR.EUR.OPP.A A,EUR,,,,,DUS,XDUS,,False
-FH4U.DU,AXA WLD-GL.HGH Y.NAM.A-CH,EUR,,,,,DUS,XDUS,,False
-FH4V.DU,AXA WLD-DEF.OPTIM.INC.A T,EUR,,,,,DUS,XDUS,,False
-FH4W.DU,AXA WLD-DEF.OPTIM.INC.A A,EUR,,,,,DUS,XDUS,,False
-FH4X.DU,AXA WLD-GL.HGH Y.N.A A DL,EUR,,,,,DUS,XDUS,,False
-FH4Y.DU,AXA WLD-GL.HGH Y.N.A T DL,EUR,,,,,DUS,XDUS,,False
+FH4Q.DU,AXA WLD-FR.EUR.OPP.A T,EUR,,,,AXA World Funds,DUS,XDUS,,False
+FH4R.DU,AXA WLD-FR.EU.SM.C.A T,EUR,,,,AXA World Funds,DUS,XDUS,,False
+FH4S.DU,AXA WLD-FR.EU.SM.C.A A,EUR,,,,AXA World Funds,DUS,XDUS,,False
+FH4T.DU,AXA WLD-FR.EUR.OPP.A A,EUR,,,,AXA World Funds,DUS,XDUS,,False
+FH4U.DU,AXA WLD-GL.HGH Y.NAM.A-CH,EUR,,,,AXA World Funds,DUS,XDUS,,False
+FH4V.DU,AXA WLD-DEF.OPTIM.INC.A T,EUR,,,,AXA World Funds,DUS,XDUS,,False
+FH4W.DU,AXA WLD-DEF.OPTIM.INC.A A,EUR,,,,AXA World Funds,DUS,XDUS,,False
+FH4X.DU,AXA WLD-GL.HGH Y.N.A A DL,EUR,,,,AXA World Funds,DUS,XDUS,,False
+FH4Y.DU,AXA WLD-GL.HGH Y.N.A T DL,EUR,,,,AXA World Funds,DUS,XDUS,,False
 FH50.DU,JPM-EMG EU.EQ.JPMEEE AAEO,EUR,,,,JPMorgan Asset Management,DUS,XDUS,,False
 FH52.DU,JPM-GBL CO.B JPMGCB AAEOH,EUR,,,,JPMorgan Asset Management,DUS,XDUS,,False
 FH53.DU,JPM-ASEAN EQ.F.JPMAE DAEO,EUR,,,,JPMorgan Asset Management,DUS,XDUS,,False
@@ -1225,7 +1225,7 @@ FHDR.DU,AMUNDI GOLD STOCK T,EUR,"AMUNDI GOLD STOCK T is an equity fund offered b
 FHDS.DU,AMUNDI HEALTHC.STOCK A,EUR,"AMUNDI HEALTHC.STOCK A is an equity fund offered by Amundi, investing in healthcare stocks. The fund aims to generate capital appreciation by investing in companies involved in pharmaceuticals, biotechnology, medical devices, and healthcare services. The fund's headquarter location and specific product offerings require further research.",Equities,,Amundi Asset Management,DUS,XDUS,,False
 FHDT.DU,AMUNDI AUSTRIA STOCK VT,EUR,"AMUNDI AUSTRIA STOCK VT is an equity fund offered by Amundi, investing in Austrian stocks. The fund aims to generate capital appreciation by investing in companies based in Austria. The fund's headquarter location and specific product offerings require further research.",Equities,,Amundi Asset Management,DUS,XDUS,,False
 FHDU.DU,AMUNDI EUR.CORP.BD VT,EUR,"AMUNDI EUR.CORP.BD VT is a corporate bond fund offered by Amundi, investing in Euro-denominated corporate bonds. The fund aims to generate income and capital appreciation by investing in investment-grade corporate debt within the Eurozone. The fund's headquarter location and specific product offerings require further research.",Fixed Income,Corporate Bonds,Amundi Asset Management,DUS,XDUS,,False
-FHFA.DU,AXA WF II-EUROP.OPP.EQ.A,EUR,"AXA WF II-EUROP.OPP.EQ.A is an equity fund offered by AXA, investing in European equities. The fund aims to generate capital appreciation by investing in companies based in Europe. The fund's headquarter location and specific product offerings require further research.",Fixed Income,Developed Markets,,DUS,XDUS,,False
+FHFA.DU,AXA WF II-EUROP.OPP.EQ.A,EUR,"AXA WF II-EUROP.OPP.EQ.A is an equity fund offered by AXA, investing in European equities. The fund aims to generate capital appreciation by investing in companies based in Europe. The fund's headquarter location and specific product offerings require further research.",Fixed Income,Developed Markets,AXA World Funds,DUS,XDUS,,False
 FHJA.DU,UBSLBF-EUR FLEXIBLE PA,EUR,"UBSLBF-EUR FLEXIBLE PA is a flexible bond fund managed by UBS, investing in Euro-denominated bonds. The fund aims to generate returns by dynamically adjusting its asset allocation based on market conditions. The fund's headquarter location and specific product offerings require further research.",Fixed Income,Corporate Bonds,UBS Asset Management,DUS,XDUS,,False
 FHJB.DU,UBSLBF-EUR FLEXIBLE PD,EUR,"UBSLBF-EUR FLEXIBLE PD is a flexible bond fund managed by UBS, investing in Euro-denominated bonds, with a distribution focus. The fund aims to provide income by dynamically adjusting its asset allocation based on market conditions and distributing the earnings to investors. The fund's headquarter location and specific product offerings require further research.",Fixed Income,Corporate Bonds,UBS Asset Management,DUS,XDUS,,False
 FHJC.DU,UBS (LUX) BF-EO H.YLD P D,EUR,"UBS (LUX) BF-EO H.YLD P D is a high-yield bond fund managed by UBS, investing in Euro-denominated high-yield bonds, with a distribution focus. The fund aims to provide high income by investing in lower-rated corporate debt and distributing the earnings to investors. The fund's headquarter location and specific product offerings require further research.",Fixed Income,High Yield Bonds,UBS Asset Management,DUS,XDUS,,False
@@ -1468,7 +1468,7 @@ FP7V.DU,DWS.I.-TOP DIVIDEND LD,EUR,This is a fund focused on investing in compan
 FP7W.DU,DWS I.-LAT.AM.EQU. LC,EUR,"This is a fund focused on investing in equities of companies in Latin America. The fund aims to provide capital appreciation by investing in companies operating in the Latin American region, with its performance tied to the economic growth and market conditions of those countries. The specific countries and sectors within Latin America that the fund invests in will determine its risk and return profile.",Alternatives,Emerging Markets,DWS Investment,DUS,XDUS,,False
 FP7X.DU,DWS I.-BRAZ.EQU.LS,EUR,"This is a fund focused on investing in equities of Brazilian companies. The fund aims to provide capital appreciation by investing in companies operating in Brazil, with its performance tied to the economic growth and market conditions of the country. The specific sectors within Brazil that the fund invests in will determine its risk and return profile.",Alternatives,Emerging Markets,DWS Investment,DUS,XDUS,,False
 FP7Z.DU,DWS I.-EM.MKTS TOP DIV.LC,EUR,This is a fund focused on investing in companies with high dividend yields in emerging markets. The fund aims to provide investors with a stream of income from dividend payments while also seeking potential capital appreciation from emerging market equities. The focus on top dividend-paying companies in emerging markets differentiates it from broader emerging market equity funds.,Alternatives,Emerging Markets,DWS Investment,DUS,XDUS,,False
-FP81.DU,IQAM SHORTTERM EUR RA,EUR,"This fund invests in short-term Euro-denominated debt securities, aiming to provide a relatively stable return with low volatility. It focuses on high-quality corporate and government bonds with short maturities to minimize interest rate risk. The fund is suitable for investors seeking a conservative investment option within the Eurozone.",Fixed Income,Corporate Bonds,,DUS,XDUS,,False
+FP81.DU,IQAM SHORTTERM EUR RA,EUR,"This fund invests in short-term Euro-denominated debt securities, aiming to provide a relatively stable return with low volatility. It focuses on high-quality corporate and government bonds with short maturities to minimize interest rate risk. The fund is suitable for investors seeking a conservative investment option within the Eurozone.",Fixed Income,Corporate Bonds,3 Banken-Generali Investment-Gesellschaft,DUS,XDUS,,False
 FP82.DU,IQAM SHORTTERM EUR RT,EUR,"This fund invests in short-term Euro-denominated debt securities, aiming to provide a relatively stable return with low volatility, with a distributing share class. It focuses on high-quality corporate and government bonds with short maturities to minimize interest rate risk. The fund is suitable for investors seeking a conservative investment option within the Eurozone, with regular income payments.",Fixed Income,Corporate Bonds,3 Banken-Generali Investment-Gesellschaft,DUS,XDUS,,False
 FP83.DU,IQAM QUAL.EQU.EUR. RA,EUR,IQAM QUAL.EQU.EUR. RA is an equity fund managed by IQAM that focuses on quality European companies. IQAM is an asset management firm. The fund employs a research-driven approach to identify companies with strong fundamentals and sustainable competitive advantages.,Alternatives,Developed Markets,3 Banken-Generali Investment-Gesellschaft,DUS,XDUS,,False
 FP85.DU,IQAM QUAL.EQU.EUR. RT,EUR,IQAM QUAL.EQU.EUR. RT is an equity fund managed by IQAM that focuses on quality European companies. IQAM is an asset management firm. The fund employs a research-driven approach to identify companies with strong fundamentals and sustainable competitive advantages.,Alternatives,Developed Markets,3 Banken-Generali Investment-Gesellschaft,DUS,XDUS,,False
@@ -1562,7 +1562,7 @@ FTG5.DU,FTGF-FT IND.NEXTG U.E.ADL,EUR,"FTGF-FT IND.NEXTG U.E.ADL represents a Fr
 FTGE.DU,FIRST T.G.-EUROZ.A.D.AAEO,EUR,FIRST T.G.-EUROZ.A.D.AAEO is a First Trust Global Funds sub-fund focused on,,,First Trust Advisors,DUS,XDUS,,False
 FTGU.DU,FIR.T.G.US L.C.C.A.D.U.E.,EUR,,,,,DUS,XDUS,,False
 FTGV.DU,FIRST T.G.U.K.A.D.U.E.BLS,EUR,,,,,DUS,XDUS,,False
-FTGW.DU,FIRST TR.US EQI.INC.U.ADL,EUR,,,,,DUS,XDUS,,False
+FTGW.DU,FIRST TR.US EQI.INC.U.ADL,EUR,,,,First Trust Advisors,DUS,XDUS,,False
 FUSA.DU,FIDELITY US Q.INC.ETF ACC,EUR,"Fidelity US Quality Income ETF ACC aims to provide investment results that correspond to the performance of the Fidelity US Quality Income Index, focusing on US companies with high quality characteristics and attractive income. The ETF invests in a diversified portfolio of dividend-paying stocks selected based on factors such as profitability, earnings quality, and dividend yield. The fund is managed by Fidelity Investments.",Financials,Large Cap,Fidelity Investments,DUS,XDUS,,False
 FUSD.DU,FIDELITY US Q.INC.ETF INC,EUR,"Fidelity US Quality Income ETF INC aims to provide investment results that correspond to the performance of the Fidelity US Quality Income Index, focusing on US companies with high quality characteristics and attractive income. The ETF invests in a diversified portfolio of dividend-paying stocks selected based on factors such as profitability, earnings quality, and dividend yield, while distributing income. The fund is managed by Fidelity Investments.",Financials,Large Cap,Fidelity Investments,DUS,XDUS,,False
 FUSR.DU,FID-FSREUSEQETF DL ACC,EUR,,,,Fidelity Investments,DUS,XDUS,,False
@@ -1586,7 +1586,7 @@ FZ1D.DU,NORDIX RENTEN PLUS,EUR,"NORDIX RENTEN PLUS is a fixed-income fund that i
 FZ1E.DU,FRANKF.AKTIENFO.F.STIFT.A,EUR,"FRANKF.AKTIENFO.F.STIFT.A is a German equity fund (Aktienfonds) managed by Frankfurter Aktienfonds for foundations (Stiftung). The fund aims to achieve capital appreciation by investing in a diversified portfolio of German stocks. The ""A"" signifies a specific share class.",Equities,,,DUS,XDUS,,False
 FZ1F.DU,TRESIDES COMMODI.ONE A(A),EUR,"TRESIDES COMMODI.ONE A(A) is a commodity fund managed by Tresides Asset Management. The fund aims to provide investors with exposure to a diversified portfolio of commodities, through futures contracts or other commodity-linked instruments. The ""A(A)"" refers to a specific share class.",Commodities,,,DUS,XDUS,,False
 G05A.DU,JH-UK ABSOL.RETUR.F.A2HEO,EUR,,Alternatives,,,DUS,XDUS,,False
-G05B.DU,JH-J.H.PA.EU.SM.CO.A1EO,EUR,,,,,DUS,XDUS,,False
+G05B.DU,JH-J.H.PA.EU.SM.CO.A1EO,EUR,,,,Janus Henderson,DUS,XDUS,,False
 G1CE.DU,IM2 GL.CL.NRGE DLA,EUR,,,,,DUS,XDUS,,False
 G2X.DU,VE GOLD MINERS UCITSETF A,EUR,"The VanEck Gold Miners UCITS ETF (G2X) seeks to replicate the performance of the NYSE Arca Gold Miners Index, which tracks the performance of publicly traded companies worldwide that are involved in the gold mining industry. It provides investors with exposure to companies engaged in the extraction, refining, and processing of gold. The ETF is domiciled in Ireland and is listed on various European exchanges.",Materials,,VanEck Asset Management,DUS,XDUS,,False
 G2XJ.DU,VE JR GOLD MIN.UCITSETF A,EUR,"The VanEck Junior Gold Miners UCITS ETF (G2XJ) aims to replicate the performance of the MVIS Global Junior Gold Miners Index, which tracks the performance of smaller, publicly traded companies worldwide that are involved in the gold and silver mining industries. This ETF offers investors exposure to junior gold mining companies, which are often considered to have higher growth potential but also higher risk compared to larger, more established gold mining companies. The ETF is domiciled in Ireland.",Materials,,VanEck Asset Management,DUS,XDUS,,False
@@ -2163,7 +2163,7 @@ IUGG.DU,INVES.PAN.EUR.F.EQ.A D.EO,EUR,INVES.PAN.EUR.F.EQ.A D.EO is a fund that i
 IUGH.DU,INVESCO GREATER CHINA E.A,EUR,INVESCO GREATER CHINA E.A is a fund. It is managed by Invesco.,Financials,,Invesco Investment Management,DUS,XDUS,,False
 IUGI.DU,IF-INV.GL.CON.TR. A,EUR,,,,,DUS,XDUS,,False
 IUGJ.DU,INVESCO US STRUCTURED E.A,EUR,,,,Invesco Investment Management,DUS,XDUS,,False
-IUGK.DU,INV.FDS-I.GL CONS.FD EO A,EUR,,,,,DUS,XDUS,,False
+IUGK.DU,INV.FDS-I.GL CONS.FD EO A,EUR,,,,Invesco Investment Management,DUS,XDUS,,False
 IUGL.DU,IFS-SUPAEUSTEQ A,EUR,,,,,DUS,XDUS,,False
 IUGM.DU,INVESCO ASIA OPPORT.EQ.A,EUR,,,,Invesco Investment Management,DUS,XDUS,,False
 IUGN.DU,IFS-ENER.TRA.A,EUR,,,,,DUS,XDUS,,False
@@ -2315,7 +2315,7 @@ JMBA.DU,JPM I-DL EM.MK.SOV.BD.DLA,EUR,JPM I-DL EM.MK.SOV.BD.DLA is a JPMorgan In
 JMBE.DU,JPM I-DL EM.MK.SO.BD.EOHA,EUR,JPM I-DL EM.MK.SO.BD.EOHA denotes a JPMorgan Investment Funds-Domiciled in Luxembourg (I-DL) focused on Emerging Markets Sovereign Bonds with the EOHA indicating a specific share class. It aims to generate income and capital appreciation by investing in debt securities issued by governments of developing nations.,Fixed Income,Emerging Markets,JPMorgan Asset Management,DUS,XDUS,,False
 JMLP.DU,HANETF-A.M.E.D. EOD,EUR,"HANETF-A.M.E.D. EOD represents a thematic ETF (Exchange Traded Fund) managed by HANetf, with a focus on a specific investment theme (likely related to advanced materials, energy, or digitalization based on HANetf's offerings) offering exposure to companies within that theme, and ""EOD"" signifying an end-of-day pricing. Specifics regarding the investment methodology and the tracked index can be found in the ETF's documentation.",Alternatives,,HANetf Limited,DUS,XDUS,,False
 JNHA.DU,LIF-600 RETAIL EOD,EUR,"LIF-600 RETAIL EOD refers to a fund product, a life insurance fund (LIF), linked to an index such as the Euro Stoxx 600, offered to retail investors, and priced at the end of the day (EOD). The fund's performance is tied to the performance of the underlying index, and it might be offered as part of a life insurance policy.",Alternatives,Developed Markets,Lyxor International Asset Management,DUS,XDUS,,False
-JNHD.DU,MUL-LYX.CO.MSCI JAP. EOHD,EUR,"MUL-LYX.CO.MSCI JAP. EOHD is a fund or exchange-traded fund (ETF) provided by Lyxor Asset Management (now part of Amundi), tracking the MSCI Japan index, and with EOHD indicating a currency-hedged version or a specific share class, with end-of-day pricing. The fund's objective is to replicate the performance of the Japanese equity market as represented by the MSCI Japan index.",Equities,,,DUS,XDUS,,False
+JNHD.DU,MUL-LYX.CO.MSCI JAP. EOHD,EUR,"MUL-LYX.CO.MSCI JAP. EOHD is a fund or exchange-traded fund (ETF) provided by Lyxor Asset Management (now part of Amundi), tracking the MSCI Japan index, and with EOHD indicating a currency-hedged version or a specific share class, with end-of-day pricing. The fund's objective is to replicate the performance of the Japanese equity market as represented by the MSCI Japan index.",Equities,,Lyxor International Asset Management,DUS,XDUS,,False
 JP40.DU,AIS-AM.JPXNIK400 EOC,EUR,"AIS-AM.JPXNIK400 EOC represents a fund or ETF offered by Amundi Asset Management (AIS-AM), tracking the JPX-Nikkei 400 index, which comprises 400 Japanese companies selected based on financial metrics and corporate governance, and with ""EOC"" indicating a specific share class. The fund aims to provide investors with exposure to a selection of leading Japanese companies.",Alternatives,Developed Markets,Amundi Asset Management,DUS,XDUS,,False
 JP4H.DU,AIS-AM.JPXNIK400 EOCDH,EUR,"AIS-AM.JPXNIK400 EOCDH represents a fund or ETF offered by Amundi Asset Management (AIS-AM), tracking the JPX-Nikkei 400 index, comprised of 400 Japanese companies chosen for financial health and governance, where EOCDH signifies a specific share class that is currency-hedged. The fund endeavors to mirror the performance of Japan's top companies exhibiting sound financial metrics.",Alternatives,Developed Markets,Amundi Asset Management,DUS,XDUS,,False
 JP51.DU,JPM FDS-EU.SEL.EQ.D AC.EO,EUR,"JPM FDS-EU.SEL.EQ.D AC.EO denotes a JPMorgan Funds product, domiciled in the EU, focused on Select Equities with D AC indicating a share class and EO indicating end-of-day pricing. It aims to provide capital appreciation through investments in a diversified portfolio of carefully selected equities.",Alternatives,Developed Markets,JPMorgan Asset Management,DUS,XDUS,,False
@@ -2467,7 +2467,7 @@ L3B1.DU,RW RENTENSTRATEGIE,EUR,RW RENTENSTRATEGIE is a fixed-income fund with a 
 L3B2.DU,LBBW ROHSTOFFE 1 R,EUR,LBBW ROHSTOFFE 1 R is a commodity fund. Details of the specific investment strategy are unavailable.,Commodities,,,DUS,XDUS,,False
 L3B3.DU,W+W EUROLAND-RENDITEFONDS,EUR,W+W EUROLAND-RENDITEFONDS is a bond fund focused on the Eurozone. Details of the specific investment strategy are unavailable.,Fixed Income,Corporate Bonds,,DUS,XDUS,,False
 L4K2.DU,L.PEA J.(TOPIX)UETF DHCEO,EUR,L.PEA J.(TOPIX)UETF DHCEO is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,Equities,,,DUS,XDUS,,False
-L4K3.DU,MUL-LYX.MSCI CN DLA,EUR,MUL-LYX.MSCI CN DLA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,Equities,,,DUS,XDUS,,False
+L4K3.DU,MUL-LYX.MSCI CN DLA,EUR,MUL-LYX.MSCI CN DLA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,Equities,,Lyxor International Asset Management,DUS,XDUS,,False
 L4OA.DU,LOYS FCP-L.GLOBAL L/S P,EUR,LOYS FCP-L.GLOBAL L/S P is a global long/short equity fund. Further details about its business model and investment strategy are unavailable.,Alternatives,,,DUS,XDUS,,False
 L8I3.DU,LYX.EUR.OVERN.RET.U.ETF A,EUR,LYX.EUR.OVERN.RET.U.ETF A is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,DUS,XDUS,,False
 L8I7.DU,LYX.PEA NASD.100 D.2XLEV.,EUR,LYX.PEA NASD.100 D.2XLEV. is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,DUS,XDUS,,False
@@ -2480,11 +2480,11 @@ L8IN.DU,L.PEA NASDAQ-100 UETF CEO,EUR,L.PEA NASDAQ-100 UETF CEO is an exchange-t
 L8IP.DU,LYX.PEA S+P 500 U.ETF CEO,EUR,LYX.PEA S+P 500 U.ETF CEO is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,DUS,XDUS,,False
 L8IT.DU,LYX.PEA WOR.WAT.U.ETF CEO,EUR,LYX.PEA WOR.WAT.U.ETF CEO is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,DUS,XDUS,,False
 L8IV.DU,LY.PEA D.J.IN.AV.UETF CEO,EUR,LY.PEA D.J.IN.AV.UETF CEO is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,,DUS,XDUS,,False
-LASI.DU,MUL-L.AS.E.JAP. EOA,EUR,MUL-L.AS.E.JAP. EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,,DUS,XDUS,,False
-LASP.DU,MUL-L.AS.P.E.J. EOA,EUR,MUL-L.AS.P.E.J. EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,,DUS,XDUS,,False
+LASI.DU,MUL-L.AS.E.JAP. EOA,EUR,MUL-L.AS.E.JAP. EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,DUS,XDUS,,False
+LASP.DU,MUL-L.AS.P.E.J. EOA,EUR,MUL-L.AS.P.E.J. EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,DUS,XDUS,,False
 LAUT.DU,LIF-600 AUTOM. EOA,EUR,LIF-600 AUTOM. EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,DUS,XDUS,,False
 LBNK.DU,LIF-600 BANKS EOA,EUR,LIF-600 BANKS EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,DUS,XDUS,,False
-LBRA.DU,MUL-L.M.BRAZIL EOA,EUR,MUL-L.M.BRAZIL EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,,DUS,XDUS,,False
+LBRA.DU,MUL-L.M.BRAZIL EOA,EUR,MUL-L.M.BRAZIL EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,DUS,XDUS,,False
 LBRE.DU,LIF-600 BAS.RE. EOA,EUR,LIF-600 BAS.RE. EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,DUS,XDUS,,False
 LCEU.DU,BNPPE-L.C.100 E.PAB UECEO,EUR,"BNPPE-L.C.100 E.PAB UECEO is an exchange-traded fund (ETF) that tracks the performance of the Euronext Paris CAC 40 Equal Weight PAB index. The ETF invests in a portfolio of companies that meet specific environmental standards. BNP Paribas Asset Management manages the fund, headquartered in Paris, France.",,,BNP Paribas Asset Management,DUS,XDUS,,False
 LCHI.DU,MUL-L.CHIN.ENT. EOA,EUR,"MUL-L.CHIN.ENT. EOA is an exchange-traded fund (ETF) that provides exposure to Chinese equities. The ETF aims to track the performance of an index comprised of large and mid-cap Chinese companies listed on various exchanges. Lyxor Asset Management, a French asset management company, manages the fund.",,Emerging Markets,Lyxor International Asset Management,DUS,XDUS,,False
@@ -2546,8 +2546,8 @@ LM5D.DU,LM GL-LM B.G.F.I.A DDL(S),EUR,,,,,DUS,XDUS,,False
 LM5E.DU,LM GL-LM CL.US AG G.AADL,EUR,,,,,DUS,XDUS,,False
 LM5F.DU,LM GL-LM WA AS.OP.A EO A,EUR,,,,,DUS,XDUS,,False
 LMDA.DU,LIF-600 MEDIA EOA,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
-LMLS.DU,MUL-L.O.MALAYS. EOA,EUR,,,,,DUS,XDUS,,False
-LMVF.DU,MUL-L.CORE MSCI EMU(DR) D,EUR,"This is a fund that tracks the MSCI EMU index, providing investors exposure to a range of equities across the Eurozone, incorporating developed market countries. It is a core holding designed for diversified portfolio construction.",Equities,,,DUS,XDUS,,False
+LMLS.DU,MUL-L.O.MALAYS. EOA,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+LMVF.DU,MUL-L.CORE MSCI EMU(DR) D,EUR,"This is a fund that tracks the MSCI EMU index, providing investors exposure to a range of equities across the Eurozone, incorporating developed market countries. It is a core holding designed for diversified portfolio construction.",Equities,,Lyxor International Asset Management,DUS,XDUS,,False
 LMWE.DU,LIF-L.F.E/N G.D EOD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 LN1.DU,STOCKLAND STLPD SECS,EUR,,,,,DUS,XDUS,,False
 LOGS.DU,LIF-600 OIL+G. EOA,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
@@ -2587,16 +2587,16 @@ LR1S.DU,M + W INVEST: M + W CAP.,EUR,"M + W INVEST: M + W CAP. is a fund from M+
 LR1U.DU,1A GLOBAL VALUE,EUR,"1A GLOBAL VALUE is a fund that invests according to a global value investment strategy, seeking undervalued companies around the world with the potential for long-term capital appreciation, following the principles of value investing.",Financials,Value,,DUS,XDUS,,False
 LRET.DU,LIF-600 RETAIL EOA,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 LRUS.DU,MUL-LYX.MSCI RUSSI.UC.ETF,EUR,"The Lyxor MSCI Russia UCITS ETF is designed to track the performance of the MSCI Russia Index, providing investors with exposure to the Russian equity market. The fund invests in a diversified portfolio of Russian stocks, aiming to replicate the index's composition and returns. It is managed by Lyxor Asset Management and is domiciled in Luxembourg.",Equities,,Lyxor International Asset Management,DUS,XDUS,,False
-LSAF.DU,MUL-L.SOU.AFR. EOA,EUR,,,,,DUS,XDUS,,False
+LSAF.DU,MUL-L.SOU.AFR. EOA,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 LSK2.DU,LYX.CAC40DLY(-2X)INV.U.E.,EUR,"The Lyxor CAC 40 Daily (-2x) Inverse UCITS ETF is designed to provide twice the inverse (opposite) of the daily performance of the CAC 40 Index. It uses leverage to amplify the daily returns, both positive and negative, and is suitable for short-term trading strategies. The fund is managed by Lyxor Asset Management and is domiciled in Luxembourg.",Derivatives,Trading,Lyxor International Asset Management,DUS,XDUS,,False
 LSK7.DU,LYX.EURO ST.50D.(-1X)I. A,EUR,"The Lyxor Euro Stoxx 50 Daily (-1x) Inverse UCITS ETF seeks to provide the inverse of the daily performance of the Euro Stoxx 50 Index. It aims to deliver the opposite return of the index on a daily basis, using derivatives and other techniques to achieve this objective. This fund is managed by Lyxor Asset Management and is domiciled in Luxembourg.",Derivatives,Trading,Lyxor International Asset Management,DUS,XDUS,,False
 LSK8.DU,LYX.EURO ST.50D.(-2X)I. A,EUR,"The Lyxor Euro Stoxx 50 Daily (-2x) Inverse UCITS ETF is designed to provide twice the inverse of the daily performance of the Euro Stoxx 50 Index. It utilizes leverage to amplify the daily returns, both positive and negative, and is intended for short-term trading strategies. This fund is managed by Lyxor Asset Management and is domiciled in Luxembourg.",Derivatives,Trading,Lyxor International Asset Management,DUS,XDUS,,False
 LTCM.DU,LIF-600 TELEC. EOA,EUR,,Communication Services,,Lyxor International Asset Management,DUS,XDUS,,False
 LTUG.DU,LIF-600 TECHN. EOA,EUR,,Information Technology,,Lyxor International Asset Management,DUS,XDUS,,False
-LTUR.DU,MUL-L.M.TURKEY EOA,EUR,,,,,DUS,XDUS,,False
+LTUR.DU,MUL-L.M.TURKEY EOA,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 LTVL.DU,LIF-600 TR.+LEI EOA,EUR,,Consumer Discretionary,,Lyxor International Asset Management,DUS,XDUS,,False
-LTWA.DU,MUL-L.M.TAIWAN EOD,EUR,,,,,DUS,XDUS,,False
-LTWN.DU,MUL-L.M.TAIWAN EOA,EUR,,,,,DUS,XDUS,,False
+LTWA.DU,MUL-L.M.TAIWAN EOD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+LTWN.DU,MUL-L.M.TAIWAN EOA,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 LU91.DU,RB LUXTOPIC-AKTIEN EURO A,EUR,,Equities,,,DUS,XDUS,,False
 LU92.DU,DJE-MULTI ASSET PA,EUR,,Alternatives,,DJE Kapital AG,DUS,XDUS,,False
 LU93.DU,DJE GOLD + STABILIT.FD PA,EUR,,Alternatives,,DJE Kapital AG,DUS,XDUS,,False
@@ -2623,9 +2623,9 @@ LXFN.DU,ETHNA-DYNAMISCH INH. T,EUR,,,,,DUS,XDUS,,False
 LXFP.DU,ETHNA-DEFENSIV INH.A,EUR,,,,,DUS,XDUS,,False
 LXFQ.DU,ETHNA-DYNAMISCH INH. A,EUR,,,,,DUS,XDUS,,False
 LXFR.DU,BV GLOBAL BALANCE FONDS,EUR,,,,,DUS,XDUS,,False
-LYBF.DU,MUL-LESGEOCOBDEXFIDRUE,EUR,,,,,DUS,XDUS,,False
-LYBK.DU,MUL-L.EO STOX.B.DR UC.ETF,EUR,,,,,DUS,XDUS,,False
-LYEB.DU,MUL-LYESGEOCOBDDRUCETF,EUR,,,,,DUS,XDUS,,False
+LYBF.DU,MUL-LESGEOCOBDEXFIDRUE,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+LYBK.DU,MUL-L.EO STOX.B.DR UC.ETF,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+LYEB.DU,MUL-LYESGEOCOBDDRUCETF,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 LYEU.DU,LIF- L.F.E/N US EOD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 LYM7.DU,LYXOR MSCI E.M.U.ETF C-EO,EUR,"The Lyxor MSCI EMU ETF C-EO is an exchange-traded fund incorporated in France that aims to track the MSCI EMU Index, reflecting the performance of large and mid-cap companies across developed countries in the Eurozone. The ETF offers investors exposure to a diversified portfolio of equities within the European Monetary Union. The fund is managed by Lyxor Asset Management.",Equities,,Lyxor International Asset Management,DUS,XDUS,,False
 LYM8.DU,LYX.WLD WAT.(DR)UC.ETF D,EUR,"The LYXOR World Water (DR) UCITS ETF D is an exchange-traded fund designed to track the performance of an index composed of companies active in the water industry. The ETF provides investors with exposure to companies involved in water infrastructure, water utilities, and water technology across global markets. Lyxor Asset Management manages the fund.",,,Lyxor International Asset Management,DUS,XDUS,,False
@@ -2659,24 +2659,24 @@ LYQ2.DU,MUL-LX.EO GOV.BD 1-3Y A,EUR,This is an exchange-traded fund (ETF) that t
 LYQ3.DU,MUL-LX.EO GOV.BD 3-5Y A,EUR,This is an exchange-traded fund (ETF) that tracks Euro government bonds with maturities between 3 and 5 years. It aims to provide investors with exposure to medium-term Eurozone sovereign debt. The fund is managed by a collaboration of managers under a multi-unit Luxembourg structure.,Fixed Income,Government Bonds,Lyxor International Asset Management,DUS,XDUS,,False
 LYQ4.DU,LYX.EU.ST.50(DR)U.E.DHDLA,EUR,This is an exchange-traded fund (ETF) designed to track the EURO STOXX 50 index. The fund provides exposure to the 50 largest companies in the Eurozone. It is managed by Lyxor Asset Management.,Financials,Large Cap,Lyxor International Asset Management,DUS,XDUS,,False
 LYQ6.DU,MUL-LX.EO GOV.BD 10-15Y A,EUR,This is an exchange-traded fund (ETF) that tracks Euro government bonds with maturities between 10 and 15 years. It aims to provide investors with exposure to longer-term Eurozone sovereign debt. The fund is managed by a collaboration of managers under a multi-unit Luxembourg structure.,Fixed Income,Government Bonds,Lyxor International Asset Management,DUS,XDUS,,False
-LYQ7.DU,MUL-LYCOEOGOINLIBD A,EUR,,Fixed Income,,,DUS,XDUS,,False
+LYQ7.DU,MUL-LYCOEOGOINLIBD A,EUR,,Fixed Income,,Lyxor International Asset Management,DUS,XDUS,,False
 LYQK.DU,LYX.BU.DA.(-2X)INV.UETF A,EUR,"This is an inverse leveraged exchange-traded fund (ETF) aiming to provide twice the inverse of the daily performance of the DAX index. It seeks to deliver the opposite of the underlying index's returns, magnified by a factor of two, through the use of financial instruments. The ETF is managed by Lyxor Asset Management, headquartered in France.",Derivatives,Trading,Lyxor International Asset Management,DUS,XDUS,,False
 LYQL.DU,LY.D.SHORTDAX X2 UETF A,EUR,"This is a short, leveraged exchange-traded fund (ETF) providing twice the inverse daily performance of the DAX index. The fund employs derivatives and other financial instruments to achieve its objective of delivering the opposite of the DAX return, magnified by a factor of two, on a daily basis. It is managed by Lyxor.",Derivatives,Large Cap,Lyxor International Asset Management,DUS,XDUS,,False
 LYQS.DU,LIF-L.I.USL.E.S DLD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 LYQY.DU,LY.I.-ESG EO HI.YI.UE EOD,EUR,,,,,DUS,XDUS,,False
-LYS4.DU,MUL-L.EOM.H.R.M.W.G.B.1-3,EUR,,,,,DUS,XDUS,,False
-LYS5.DU,MUL-L.EOM.H.R.M.W.G.B.3-5,EUR,,,,,DUS,XDUS,,False
-LYS6.DU,MUL-L.EOM.H.R.M.W.G.B.5-7,EUR,,,,,DUS,XDUS,,False
+LYS4.DU,MUL-L.EOM.H.R.M.W.G.B.1-3,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+LYS5.DU,MUL-L.EOM.H.R.M.W.G.B.3-5,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+LYS6.DU,MUL-L.EOM.H.R.M.W.G.B.5-7,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 LYSX.DU,LYX.EU.ST.50(DR)U.E. ACC,EUR,The Lyxor EURO STOXX 50 UCITS ETF Acc is an exchange-traded fund designed to track the performance of the EURO STOXX 50 Index. This index represents the 50 largest companies across Eurozone countries. The ETF allows investors to gain exposure to the leading blue-chip companies in the Eurozone economy.,Real Estate,Large Cap,Lyxor International Asset Management,DUS,XDUS,,False
-LYTC.DU,MUL-LYX.IB.LS L.C.L.D. D,EUR,,,,,DUS,XDUS,,False
-LYTG.DU,MUL-LYX.COUKGOBD(DR)UE D,EUR,,,,,DUS,XDUS,,False
-LYTI.DU,MUL-LC.UKGOINFLDRUE D,EUR,,,,,DUS,XDUS,,False
-LYTR.DU,MUL-L.C.T.R./C.C.EE ACC,EUR,,,,,DUS,XDUS,,False
+LYTC.DU,MUL-LYX.IB.LS L.C.L.D. D,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+LYTG.DU,MUL-LYX.COUKGOBD(DR)UE D,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+LYTI.DU,MUL-LC.UKGOINFLDRUE D,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+LYTR.DU,MUL-L.C.T.R./C.C.EE ACC,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 LYX4.DU,LIF-600 CHEMIC. EOD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
-LYX7.DU,MUL-L.US TR.7-10Y DR UE D,EUR,,,,,DUS,XDUS,,False
+LYX7.DU,MUL-L.US TR.7-10Y DR UE D,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 LYX8.DU,LYX-ESGDLHY(DR)U.E DIS,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
-LYXA.DU,MUL-LYX.EUROMTS HRM.- A,EUR,,,,,DUS,XDUS,,False
-LYXC.DU,MUL-LX.EO GOV.BD 5-7Y A,EUR,,Fixed Income,,,DUS,XDUS,,False
+LYXA.DU,MUL-LYX.EUROMTS HRM.- A,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+LYXC.DU,MUL-LX.EO GOV.BD 5-7Y A,EUR,,Fixed Income,,Lyxor International Asset Management,DUS,XDUS,,False
 LYXD.DU,MUL-LX.EO GOV.BD 7-10Y A,EUR,MUL-LX.EO GOV.BD 7-10Y A is an Exchange Traded Fund (ETF) that aims to track the performance of government bonds with maturities between 7 and 10 years. The fund invests in Euro-denominated bonds issued by governments. This ETF provides investors with exposure to a specific segment of the Eurozone government bond market.,Fixed Income,Government Bonds,Lyxor International Asset Management,DUS,XDUS,,False
 LYXE.DU,LYX-ESGDLHY(DR)U.E BMHEOD,EUR,"LYX-ESGDLHY(DR)U.E BMHEOD is an Exchange Traded Fund (ETF) focusing on Environmental, Social, and Governance (ESG) factors and tracking a developed market high-yield index. The ETF provides investors with exposure to companies that meet certain ESG criteria within the high-yield bond market. This fund offers investors exposure to a portfolio of debt securities while considering sustainability aspects.",Fixed Income,High Yield Bonds,Lyxor International Asset Management,DUS,XDUS,,False
 LYXF.DU,MUL-LX.EO GOV.BD 15+Y A,EUR,"MUL-LX.EO GOV.BD 15+Y A is an Exchange Traded Fund (ETF) that aims to track the performance of government bonds with maturities of 15 years or longer. The fund invests in Euro-denominated bonds issued by governments. This ETF provides investors with exposure to a specific, long-term segment of the Eurozone government bond market.",Fixed Income,Government Bonds,Lyxor International Asset Management,DUS,XDUS,,False
@@ -2799,7 +2799,7 @@ MSJI.DU,MSI-SHORT MATUR.EO BD A,EUR,,Derivatives,Trading,,DUS,XDUS,,False
 MSY.DU,MSI-EURO BOND FD NAM.A,EUR,,Fixed Income,,,DUS,XDUS,,False
 MTDA.DU,LIF-600 PER.+H. EOD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 MTDB.DU,LIF-COR.E.ST50 EOD,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
-MTDD.DU,MUL-LX.EO GOV.BD7-10Y EOD,EUR,"This instrument is the MUL-LX.EO GOV.BD7-10Y EOD, tracking government bonds with a maturity of 7-10 years. It is an exchange-traded fund (ETF) managed by MUL, focusing on Euro-denominated government bonds. The specific location of MUL's headquarters is not provided.",Fixed Income,Government Bonds,,DUS,XDUS,,False
+MTDD.DU,MUL-LX.EO GOV.BD7-10Y EOD,EUR,"This instrument is the MUL-LX.EO GOV.BD7-10Y EOD, tracking government bonds with a maturity of 7-10 years. It is an exchange-traded fund (ETF) managed by MUL, focusing on Euro-denominated government bonds. The specific location of MUL's headquarters is not provided.",Fixed Income,Government Bonds,Lyxor International Asset Management,DUS,XDUS,,False
 MVEA.DU,ISHSVI-E.MSCIUSA M.VESGDL,EUR,"This is an iShares ETF tracking the MSCI USA Minimum Volatility ESG Leaders index. The ETF seeks to provide exposure to US companies with low volatility and high environmental, social and governance ratings. iShares is managed by BlackRock.",Information Technology,Developed Markets,BlackRock Asset Management,DUS,XDUS,,False
 MVEE.DU,ISHSVI-E.MSCIEUR.M.VESGEO,EUR,"This is an iShares ETF tracking the MSCI Europe Minimum Volatility ESG Leaders index. The ETF seeks to provide exposure to European companies with low volatility and high environmental, social and governance ratings. iShares is managed by BlackRock.",Information Technology,Developed Markets,BlackRock Asset Management,DUS,XDUS,,False
 MVEW.DU,ISHSVI-E.MSCIWLD M.V.E.DL,EUR,"This is an iShares ETF tracking the MSCI World Minimum Volatility ESG Leaders index. The ETF seeks to provide exposure to global companies with low volatility and high environmental, social and governance ratings. iShares is managed by BlackRock.",Information Technology,Developed Markets,BlackRock Asset Management,DUS,XDUS,,False
@@ -2816,8 +2816,8 @@ N52K.DU,NORDEA 1-NORD.EQ.SM.BP-EO,EUR,,,,,DUS,XDUS,,False
 N52L.DU,NORDEA 1-NORWEG.EQ. BP-NK,EUR,,,,,DUS,XDUS,,False
 N52M.DU,NORDEA 1-SWEDISH BD BP-SK,EUR,,Fixed Income,,,DUS,XDUS,,False
 N52N.DU,NOR.1-NO.AM.ST.EQ. BPUSD,EUR,,,,,DUS,XDUS,,False
-NADA.DU,MUL-LYX.COR.MSC YND,EUR,,,,,DUS,XDUS,,False
-NADB.DU,MUL-LX.EO GOV.BD 10-15Y D,EUR,,Fixed Income,,,DUS,XDUS,,False
+NADA.DU,MUL-LYX.COR.MSC YND,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
+NADB.DU,MUL-LX.EO GOV.BD 10-15Y D,EUR,,Fixed Income,,Lyxor International Asset Management,DUS,XDUS,,False
 NADQ.DU,Multi Units Luxembourg- Lyxor Nasdaq-100 UCITS ETF,EUR,Multi Units Luxembourg- Lyxor Nasdaq-100 UCITS ETF is an exchange-traded fund (ETF) designed to track the performance of the NASDAQ-100 Index. The index includes 100 of the largest non-financial companies listed on the NASDAQ Stock Market. It offers investors exposure to leading U.S. technology and growth companies.,Equities,Large Cap,Lyxor International Asset Management,DUS,XDUS,,False
 NBTK.DU,INVESCOMI NASDAQ BIOTECH,EUR,INVESCOMI NASDAQ BIOTECH is an exchange traded fund. The fund is designed to track the investment results of the NASDAQ Biotechnology Index. The fund generally invests in companies involved in the biotechnology and pharmaceutical industries.,Equities,,Invesco Investment Management,DUS,XDUS,,False
 NDJ0.DU,NOR.1-L.D.U.H.Y.B.BPDLACC,EUR,,,,,DUS,XDUS,,False
@@ -2842,7 +2842,7 @@ NDJV.DU,NORDEA 1-NOR.S.T.BD BP-NK,EUR,NORDEA 1-NOR.S.T.BD BP-NK refers to a Norw
 NDJW.DU,NORDEA 1-NORWEG.BD BP-NK,EUR,,Fixed Income,,,DUS,XDUS,,False
 NK40.DU,LYXOR MSCI TURK.UETF CEO,EUR,,Equities,,Lyxor International Asset Management,DUS,XDUS,,False
 NK4A.DU,LYX.PEA J.(TOPIX)UETF CEO,EUR,,Equities,,Lyxor International Asset Management,DUS,XDUS,,False
-NK4L.DU,MUL-LYX.EO F.R.N.UETF ACC,EUR,,,,,DUS,XDUS,,False
+NK4L.DU,MUL-LYX.EO F.R.N.UETF ACC,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 NK4M.DU,LY.PEA CH.(MSCI CHI)U.ETF,EUR,,Equities,,,DUS,XDUS,,False
 NK4P.DU,LYX.PEA MSCI USA UETF CEO,EUR,,Equities,,Lyxor International Asset Management,DUS,XDUS,,False
 NK4R.DU,LYX.CAC MID 60(DR) D,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
@@ -3256,7 +3256,7 @@ RR8B.DU,SIEMENS EUROCASH,EUR,SIEMENS EUROCASH is an investment fund. More specif
 RR8C.DU,UBS(D)EUROINV.IMMO.I-DIST,EUR,UBS(D)EUROINV.IMMO.I-DIST is an investment fund focused on European real estate investments and distributing income. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Commercial Real Estate,UBS Asset Management,DUS,XDUS,,False
 RS2K.DU,AIS-AM.RUS.2000 EOC,EUR,AIS-AM.RUS.2000 EOC is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,Amundi Asset Management,DUS,XDUS,,False
 RT8A.DU,ROB.QI GBL DYN.DUR. DHEO,EUR,ROB.QI GBL DYN.DUR. DHEO is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,Robeco Institutional Asset Mgmt BV,DUS,XDUS,,False
-RUSL.DU,MUL-LYX.MSCI RUSSI.DIS.LS,EUR,MUL-LYX.MSCI RUSSI.DIS.LS is an exchange-traded fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Equities,,,DUS,XDUS,,False
+RUSL.DU,MUL-LYX.MSCI RUSSI.DIS.LS,EUR,MUL-LYX.MSCI RUSSI.DIS.LS is an exchange-traded fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Equities,,Lyxor International Asset Management,DUS,XDUS,,False
 RXEA.DU,LLB SEMPER REAL ESTATE A,EUR,LLB SEMPER REAL ESTATE A is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Real Estate Services,,DUS,XDUS,,False
 RXEC.DU,LLB SEMPER R. ESTATE VTA,EUR,LLB SEMPER R. ESTATE VTA is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Real Estate Services,,DUS,XDUS,,False
 S17A.DU,SPARINV.-GLOB.INV.GR.EO R,EUR,SPARINV.-GLOB.INV.GR.EO R is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,,DUS,XDUS,,False
@@ -3590,7 +3590,7 @@ TESX.DU,F.TEM.INV-T.GWTH A DL YD.,EUR,,,Developed Markets,Franklin Templeton Inv
 TESY.DU,F.TEM.INV-FR.M.G.AA.EURH2,EUR,,,Developed Markets,Franklin Templeton Investments,DUS,XDUS,,False
 TESZ.DU,FTIF-F.GL.FD.STRAT.AYD EO,EUR,,,Developed Markets,Franklin Templeton Investments,DUS,XDUS,,False
 TGBT.DU,VANECK VE.IB.EO S.D.1-10,EUR,,Fixed Income,Government Bonds,VanEck Asset Management,DUS,XDUS,,False
-TIUP.DU,MUL-L.CORE US TIPS(DR) D,EUR,,Fixed Income,Inflation-Protected Securities,,DUS,XDUS,,False
+TIUP.DU,MUL-L.CORE US TIPS(DR) D,EUR,,Fixed Income,Inflation-Protected Securities,Lyxor International Asset Management,DUS,XDUS,,False
 TRD1.DU,INVESCOM2 USD TRSY 0-1Y D,EUR,,Fixed Income,,Invesco Investment Management,DUS,XDUS,,False
 TRD7.DU,INVESCOM2 US T B 3-7Y A,EUR,,Fixed Income,,Invesco Investment Management,DUS,XDUS,,False
 TRDE.DU,INVESCOM2 US T B 7-10Y A,EUR,,Fixed Income,,Invesco Investment Management,DUS,XDUS,,False
@@ -3851,7 +3851,7 @@ UIMT.DU,UBSLFS-MSCI PAC.S.R. DLAD,EUR,"This is an Exchange Traded Fund (ETF) tha
 UIMY.DU,UBSLFS-F.MSCI EMU LV EOAD,EUR,"This is an Exchange Traded Fund (ETF) that aims to track the performance of the MSCI EMU Low Volatility Index, providing investors with exposure to Eurozone companies with lower volatility characteristics. The ETF is managed by UBS.",Equities,Value,UBS Asset Management,DUS,XDUS,,False
 UIMZ.DU,UBSLFS-F.MSCI EMU PV EOAD,EUR,"This is an Exchange Traded Fund (ETF) that aims to track the performance of the MSCI EMU Provisional Value Weighted Index, providing investors with exposure to Eurozone companies with value characteristics using a provisional weighting scheme. The ETF is managed by UBS.",Equities,Value,UBS Asset Management,DUS,XDUS,,False
 UINE.DU,M-LY.IN.DL10Y I.EX.UE ADL,EUR,,,,,DUS,XDUS,,False
-UINF.DU,MUL-LYX.DL 10Y I.EX.UE A,EUR,,,,,DUS,XDUS,,False
+UINF.DU,MUL-LYX.DL 10Y I.EX.UE A,EUR,,,,Lyxor International Asset Management,DUS,XDUS,,False
 UIQ1.DU,UBS FDSO-CMCI EX-A.SF HEO,EUR,,,,UBS Asset Management,DUS,XDUS,,False
 UIQI.DU,UBS FDSO-MSCI AC AXJ.AADL,EUR,,Equities,,UBS Asset Management,DUS,XDUS,,False
 UIQK.DU,UBS FDSO-CMCI C.SF DLAA,EUR,,,,UBS Asset Management,DUS,XDUS,,False
@@ -3942,7 +3942,7 @@ UQ2Y.DU,AGIF-A.TR.SH.TE.PL.EU.AEO,EUR,,,,Allianz Global Investors Fund,DUS,XDUS,
 UQ2Z.DU,AGIF-LITTLE DRAGONS AT D,EUR,,,,Allianz Global Investors Fund,DUS,XDUS,,False
 USAB.DU,LG ESG DL CB E. DLD,EUR,,,,LGIM Managers,DUS,XDUS,,False
 USCP.DU,OSS.S.B.US S.V.T U.ETF1CE,EUR,,,,OSSIAM,DUS,XDUS,,False
-USPY.DU,L+G-L+G CYBER SEC.U.ETF,EUR,,,,,DUS,XDUS,,False
+USPY.DU,L+G-L+G CYBER SEC.U.ETF,EUR,,,,LGIM Managers,DUS,XDUS,,False
 USUE.DU,UBS I.ETF-MSC.U.S.F.M.ADL,EUR,,,,UBS Asset Management,DUS,XDUS,,False
 USUP.DU,UBSLFS-MSCI PAC.S.R. AADL,EUR,,Equities,,UBS Asset Management,DUS,XDUS,,False
 V20A.DU,VAN.-L.20EQ ETF EOA,EUR,,,Blend,Vanguard Asset Management,DUS,XDUS,,False
@@ -4230,8 +4230,8 @@ XAYQ.DU,AB FCP I-GL.HGH.YLD. A,EUR,,Fixed Income,,,DUS,XDUS,,False
 XAYR.DU,AB FCP I-GL.EQ.BLEND A,EUR,,Alternatives,,,DUS,XDUS,,False
 XAYW.DU,AB FCP I-JP.STR.VAL. A YN,EUR,,Alternatives,,,DUS,XDUS,,False
 XB4A.DU,XTR.ATX 1CEO,EUR,,Alternatives,,,DUS,XDUS,,False
-XB4F.DU,XTR.II ESG EUR CORP.BD 1D,EUR,,Fixed Income,Corporate Bonds,,DUS,XDUS,,False
-XBAE.DU,XTR.II GBL AGG.B.SW.5CEOH,EUR,,Fixed Income,,,DUS,XDUS,,False
+XB4F.DU,XTR.II ESG EUR CORP.BD 1D,EUR,,Fixed Income,Corporate Bonds,Xtrackers,DUS,XDUS,,False
+XBAE.DU,XTR.II GBL AGG.B.SW.5CEOH,EUR,,Fixed Income,,Xtrackers,DUS,XDUS,,False
 XBAG.DU,XTR.II GBL AGG.BD SWAP 1D,EUR,,Fixed Income,Investment Grade Bonds,Xtrackers,DUS,XDUS,,False
 XBAI.DU,XTR.II EUR.AAA G.B SW. 1D,EUR,,Fixed Income,Government Bonds,Xtrackers,DUS,XDUS,,False
 XBAK.DU,XTR.MSCI PAKIST.SWAP 1CDL,EUR,,Equities,,Xtrackers,DUS,XDUS,,False
@@ -4368,15 +4368,15 @@ XGII.DU,XTR.II GL.INF.-LINK.BD 1D,EUR,,Fixed Income,Inflation-Protected Securiti
 XGIU.DU,XTR.II GL.INF.-LINK.BD 5C,EUR,XTR.II GL.INF.-LINK.BD 5C is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker XGIU and traded in EUR. The fund is part of the Xtrackers range. It is classified as Fixed Income (Inflation-Protected Securities).,Fixed Income,Inflation-Protected Securities,Xtrackers,DUS,XDUS,,False
 XGLF.DU,X(IE)-MSCI GCC SEL.SW. 1C,EUR,X(IE)-MSCI GCC SEL.SW. 1C is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker XGLF and traded in EUR.,Equities,,,DUS,XDUS,,False
 XGLU.DU,XTRII-EOZGOVTBD 2CHDLA,EUR,XTRII-EOZGOVTBD 2CHDLA is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker XGLU and traded in EUR.,,,,DUS,XDUS,,False
-XGVD.DU,XTR.II GBL GOV.BD 1DEOH,EUR,XTR.II GBL GOV.BD 1DEOH is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker XGVD and traded in EUR.,Fixed Income,,,DUS,XDUS,,False
+XGVD.DU,XTR.II GBL GOV.BD 1DEOH,EUR,XTR.II GBL GOV.BD 1DEOH is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker XGVD and traded in EUR.,Fixed Income,,Xtrackers,DUS,XDUS,,False
 XGZB.DU,SEB SUSTAIN.FD.GLOB.C EUR,EUR,SEB SUSTAIN.FD.GLOB.C EUR is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker XGZB and traded in EUR.,,,SEB Investment Management,DUS,XDUS,,False
 XGZD.DU,SEB TRENDSYS.RENTEN BIEO,EUR,SEB TRENDSYS.RENTEN BIEO is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker XGZD and traded in EUR.,Fixed Income,,SEB Investment Management,DUS,XDUS,,False
 XGZE.DU,SEB CONCEPT BIOTECHNOLO.D,EUR,SEB CONCEPT BIOTECHNOLO.D is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker XGZE and traded in EUR.,,,SEB Investment Management,DUS,XDUS,,False
-XHY1.DU,XTR.II EO H.YLD BD1-3S.1D,EUR,"This is an exchange-traded fund (ETF) that seeks to replicate the performance of the Markit iBoxx EUR High Yield Developed Markets 1-3 index. The index comprises Euro-denominated high yield corporate bonds with a maturity between 1 and 3 years. The ETF provides investors with exposure to a diversified portfolio of short-term, high-yield corporate debt.",Fixed Income,High Yield Bonds,,DUS,XDUS,,False
-XHYA.DU,XTR.II EO H.YLD CORP.B.1C,EUR,This is an exchange-traded fund (ETF) that aims to track the performance of the Markit iBoxx EUR High Yield Corporates Index. The index includes Euro-denominated high-yield corporate bonds. This ETF offers investors access to a diversified portfolio of sub-investment grade corporate debt.,Fixed Income,High Yield Bonds,,DUS,XDUS,,False
-XHYG.DU,XTR.II EO H.YLD CORP.B.1D,EUR,This is an exchange-traded fund (ETF) designed to mirror the performance of the Markit iBoxx EUR High Yield Corporates Index. The index consists of Euro-denominated high-yield corporate bonds. It provides investors with exposure to a broad range of below-investment grade corporate debt securities.,Fixed Income,High Yield Bonds,,DUS,XDUS,,False
+XHY1.DU,XTR.II EO H.YLD BD1-3S.1D,EUR,"This is an exchange-traded fund (ETF) that seeks to replicate the performance of the Markit iBoxx EUR High Yield Developed Markets 1-3 index. The index comprises Euro-denominated high yield corporate bonds with a maturity between 1 and 3 years. The ETF provides investors with exposure to a diversified portfolio of short-term, high-yield corporate debt.",Fixed Income,High Yield Bonds,Xtrackers,DUS,XDUS,,False
+XHYA.DU,XTR.II EO H.YLD CORP.B.1C,EUR,This is an exchange-traded fund (ETF) that aims to track the performance of the Markit iBoxx EUR High Yield Corporates Index. The index includes Euro-denominated high-yield corporate bonds. This ETF offers investors access to a diversified portfolio of sub-investment grade corporate debt.,Fixed Income,High Yield Bonds,Xtrackers,DUS,XDUS,,False
+XHYG.DU,XTR.II EO H.YLD CORP.B.1D,EUR,This is an exchange-traded fund (ETF) designed to mirror the performance of the Markit iBoxx EUR High Yield Corporates Index. The index consists of Euro-denominated high-yield corporate bonds. It provides investors with exposure to a broad range of below-investment grade corporate debt securities.,Fixed Income,High Yield Bonds,Xtrackers,DUS,XDUS,,False
 XIEE.DU,XTR.MSCI EUROPE 1D,EUR,This is an exchange-traded fund (ETF) that tracks the performance of the MSCI Europe Index. The MSCI Europe Index is a market-capitalization weighted index representing developed markets in Europe. The ETF allows investors to gain broad exposure to the European equity market.,Equities,,,DUS,XDUS,,False
-XJSE.DU,XTR.II JAPAN GOV.BD 1C,EUR,This is an exchange-traded fund (ETF) that tracks the performance of the Japan Government Bond index. The index is composed of Japanese Yen-denominated government bonds. The ETF provides exposure to the Japanese sovereign debt market.,Fixed Income,Government Bonds,,DUS,XDUS,,False
+XJSE.DU,XTR.II JAPAN GOV.BD 1C,EUR,This is an exchange-traded fund (ETF) that tracks the performance of the Japan Government Bond index. The index is composed of Japanese Yen-denominated government bonds. The ETF provides exposure to the Japanese sovereign debt market.,Fixed Income,Government Bonds,Xtrackers,DUS,XDUS,,False
 XLIQ.DU,XTR.II EUR COV.BD SWAP 1C,EUR,XTR.II EUR COV.BD SWAP 1C is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker XLIQ and traded in EUR. The fund is part of the Xtrackers range.,Fixed Income,,Xtrackers,DUS,XDUS,,False
 XMAW.DU,X(IE)-MSCI AC WORLD 1C,EUR,This is an exchange-traded fund (ETF) designed to track the performance of the MSCI AC World Index. The MSCI AC World Index captures large and mid-cap representation across 23 Developed Markets and 24 Emerging Markets. It is a broad global equity index representing nearly 85% of the global investable equity opportunity set.,Equities,,Xtrackers,DUS,XDUS,,False
 XMHG.DU,BGF-EUROPEAN VALUE A2 DL,EUR,BGF-EUROPEAN VALUE A2 DL is an exchange-traded fund listed on the Dusseldorf Stock Exchange under the ticker XMHG and traded in EUR. The fund is part of the BlackRock Asset Management range.,,,BlackRock Asset Management,DUS,XDUS,,False
@@ -4443,10 +4443,10 @@ XQ1P.DU,F.TEM.INV-F.MUT.EUR.A YD,EUR,"F.TEM.INV-F.MUT.EUR.A YD represents a Fran
 XQ1Q.DU,F.TEM.INV-T.AS.GR.A A.EUR,EUR,"F.TEM.INV-T.AS.GR.A A.EUR represents a Franklin Templeton Investments fund focused on total Asian growth, Class A accumulating shares, denominated in EUR. The fund aims to achieve long-term capital appreciation by investing in a diversified portfolio of Asian equities. Franklin Templeton Investments is a global investment management organization headquartered in San Mateo, California.",Equities,Growth,Franklin Templeton Investments,DUS,XDUS,,False
 XQ1R.DU,F.TEM.INV-T.EUROLND A YD,EUR,"F.TEM.INV-T.EUROLND A YD refers to a Franklin Templeton Investments fund focused on total return in the Eurozone, Class A, with yield distribution. This fund invests in a mix of asset classes within the Eurozone, aiming for capital appreciation and income. Franklin Templeton Investments is a global investment management organization headquartered in San Mateo, California.",Fixed Income,Investment Grade Bonds,Franklin Templeton Investments,DUS,XDUS,,False
 XQ1T.DU,F.TEM.INV-F.U.S.O.A YD.EO,EUR,"F.TEM.INV-F.U.S.O.A YD.EO represents a Franklin Templeton Investments fund focused on US opportunities, Class A, with yield distribution annually. It invests in a diversified portfolio of US companies, seeking both capital appreciation and income. Franklin Templeton Investments, headquartered in San Mateo, California, offers investment management services globally.",Alternatives,Blend,Franklin Templeton Investments,DUS,XDUS,,False
-XQ1U.DU,F.TEM.INV-F.INDIA A YD.EO,EUR,,,,,DUS,XDUS,,False
-XQ1V.DU,F.TEM.I.-F.M.GL.D.A YD.EO,EUR,,,,,DUS,XDUS,,False
-XQ1Y.DU,F.TEM.INV-T.CHINA A YD.EO,EUR,,,,,DUS,XDUS,,False
-XQ1Z.DU,F.TEM.INV-F.TECHN.A A.EUR,EUR,,,,,DUS,XDUS,,False
+XQ1U.DU,F.TEM.INV-F.INDIA A YD.EO,EUR,,,,Franklin Templeton Investments,DUS,XDUS,,False
+XQ1V.DU,F.TEM.I.-F.M.GL.D.A YD.EO,EUR,,,,Franklin Templeton Investments,DUS,XDUS,,False
+XQ1Y.DU,F.TEM.INV-T.CHINA A YD.EO,EUR,,,,Franklin Templeton Investments,DUS,XDUS,,False
+XQ1Z.DU,F.TEM.INV-F.TECHN.A A.EUR,EUR,,,,Franklin Templeton Investments,DUS,XDUS,,False
 XQUA.DU,X(IE)-ESGDLEMBDQWUE 1D,EUR,,,,,DUS,XDUS,,False
 XQUE.DU,X(IE)-ESGDLEMBDQWUE 2DEOH,EUR,,,,,DUS,XDUS,,False
 XR50.DU,SISF GL I.LK BD A AC E HD,EUR,,Fixed Income,,Schroder International Selection Fund,DUS,XDUS,,False
@@ -4489,19 +4489,19 @@ XRQC.DU,ROBECO BP GL PREM.EQ.B EO,EUR,,,,Robeco Institutional Asset Mgmt BV,DUS,
 XRS2.DU,X(IE)-RUSSELL 2000 1CDL,EUR,,Equities,Small Cap,,DUS,XDUS,,False
 XRSM.DU,X(IE)-RUSSELL MIDCAP 1CDL,EUR,,Equities,Mid Cap,,DUS,XDUS,,False
 XRU0.DU,AXAIMFIIS-US C.I.B. FCEOH,EUR,,,,,DUS,XDUS,,False
-XRU1.DU,AXA WF II-NTH AMER.EQUS A,EUR,,,,,DUS,XDUS,,False
+XRU1.DU,AXA WF II-NTH AMER.EQUS A,EUR,,,,AXA World Funds,DUS,XDUS,,False
 XRU2.DU,AXA WFII-EVOLV.TR.EQ.ADDL,EUR,,,,,DUS,XDUS,,False
-XRU5.DU,AXA WF-FRA.SUS.EUROZ.ACEO,EUR,,,,,DUS,XDUS,,False
-XRU6.DU,AXA WLD-FR.EU.SM.C.F A,EUR,,,,,DUS,XDUS,,False
-XRU7.DU,AXA WLD-FR.EU.SM.C.F T,EUR,,,,,DUS,XDUS,,False
+XRU5.DU,AXA WF-FRA.SUS.EUROZ.ACEO,EUR,,,,AXA World Funds,DUS,XDUS,,False
+XRU6.DU,AXA WLD-FR.EU.SM.C.F A,EUR,,,,AXA World Funds,DUS,XDUS,,False
+XRU7.DU,AXA WLD-FR.EU.SM.C.F T,EUR,,,,AXA World Funds,DUS,XDUS,,False
 XRU8.DU,AXA WD-EURO C.SH.D.A A.EO,EUR,,,,,DUS,XDUS,,False
-XRU9.DU,AXA WLD-GBL IN.B.A-C.R.EO,EUR,,,,,DUS,XDUS,,False
-XRUA.DU,AXA WLD-OPT.INCOME E TPF,EUR,,,,,DUS,XDUS,,False
-XRUB.DU,AXA WLD-EURO 5-7 E T. EO,EUR,,,,,DUS,XDUS,,False
+XRU9.DU,AXA WLD-GBL IN.B.A-C.R.EO,EUR,,,,AXA World Funds,DUS,XDUS,,False
+XRUA.DU,AXA WLD-OPT.INCOME E TPF,EUR,,,,AXA World Funds,DUS,XDUS,,False
+XRUB.DU,AXA WLD-EURO 5-7 E T. EO,EUR,,,,AXA World Funds,DUS,XDUS,,False
 XRUC.DU,AXA World Funds - Euro 3-5,EUR,"AXA World Funds - Euro 3-5 invests in Euro-denominated bonds with maturities between 3 and 5 years. The fund's objective is to provide income while managing interest rate risk within that maturity range. AXA Investment Managers, headquartered in Paris, manages this fund.",Fixed Income,Corporate Bonds,,DUS,XDUS,,False
-XRUE.DU,AXA WLD-FR.EU.MICR.ATEOPF,EUR,,,,,DUS,XDUS,,False
+XRUE.DU,AXA WLD-FR.EU.MICR.ATEOPF,EUR,,,,AXA World Funds,DUS,XDUS,,False
 XRUF.DU,AX.W.F.E.M.SH.D.B.ACAPEOH,EUR,,,Micro Cap,,DUS,XDUS,,False
-XRUG.DU,AXA WLD-GBL INFL.A T. EO,EUR,,,,,DUS,XDUS,,False
+XRUG.DU,AXA WLD-GBL INFL.A T. EO,EUR,,,,AXA World Funds,DUS,XDUS,,False
 XRZ0.DU,Threadneedle (Lux) - Global Smaller Companies,EUR,"Threadneedle (Lux) - Global Smaller Companies invests in smaller companies across the globe, aiming to achieve capital growth by identifying promising businesses with growth potential. Threadneedle Asset Management, now part of Columbia Threadneedle Investments, manages this fund, with headquarters in London. The fund focuses on companies outside of major indices, thus offering diversification.",Industrials,Small Cap,Columbia Threadneedle,DUS,XDUS,,False
 XRZ3.DU,THREAD.L-AMER. EPIC AEH,EUR,,,,,DUS,XDUS,,False
 XRZ5.DU,THR.L.-GL FOCUS EPIC AU,EUR,,,,,DUS,XDUS,,False
@@ -4584,16 +4584,16 @@ XUO8.DU,CANDR.EQ.L-BIOTECH.INH.C,EUR,,,,Candriam Lux,DUS,XDUS,,False
 XUO9.DU,CANDR.BDS-EUR HY INH.N,EUR,,,,Candriam Lux,DUS,XDUS,,False
 XUOB.DU,CANDR.BDS-EUR HY INH.C,EUR,,,,Candriam Lux,DUS,XDUS,,False
 XUTC.DU,X(IE)-MSCI USA IN.TE.1DDL,EUR,,Equities,,,DUS,XDUS,,False
-XUTD.DU,XTR.II US TREASURIES 1D,EUR,,Fixed Income,Treasury Bonds,,DUS,XDUS,,False
-XUTE.DU,XTR.II US TREASUR. 2DEOH,EUR,,Fixed Income,Treasury Bonds,,DUS,XDUS,,False
+XUTD.DU,XTR.II US TREASURIES 1D,EUR,,Fixed Income,Treasury Bonds,Xtrackers,DUS,XDUS,,False
+XUTE.DU,XTR.II US TREASUR. 2DEOH,EUR,,Fixed Income,Treasury Bonds,Xtrackers,DUS,XDUS,,False
 XWEH.DU,XTR.MSCI WORLD SWAP 4CEOH,EUR,,Equities,,,DUS,XDUS,,False
 XWTS.DU,X(IE)-MSCI WO.CO.SER.1CDL,EUR,,Equities,,,DUS,XDUS,,False
-XY1D.DU,XTR.II IB.E.G.B.YP.1-3 1D,EUR,,Fixed Income,,,DUS,XDUS,,False
-XY4P.DU,XTR.II IB.E.G.B.Y.P. 1C,EUR,,Fixed Income,,,DUS,XDUS,,False
+XY1D.DU,XTR.II IB.E.G.B.YP.1-3 1D,EUR,,Fixed Income,,Xtrackers,DUS,XDUS,,False
+XY4P.DU,XTR.II IB.E.G.B.Y.P. 1C,EUR,,Fixed Income,,Xtrackers,DUS,XDUS,,False
 XYLD.DU,X(IE)-IB.DL C.B.Y.P. 1D,EUR,,Fixed Income,,,DUS,XDUS,,False
 XYLE.DU,XTR.-IBOX.DL 2CEOH,EUR,,Fixed Income,,,DUS,XDUS,,False
-XYP1.DU,XTR.II IB.E.G.B.YP.1-3 1C,EUR,,Fixed Income,,,DUS,XDUS,,False
-XYPD.DU,XTR.II IB.E.G.B.Y.P. 1D,EUR,,Fixed Income,,,DUS,XDUS,,False
+XYP1.DU,XTR.II IB.E.G.B.YP.1-3 1C,EUR,,Fixed Income,,Xtrackers,DUS,XDUS,,False
+XYPD.DU,XTR.II IB.E.G.B.Y.P. 1D,EUR,,Fixed Income,,Xtrackers,DUS,XDUS,,False
 XYPH.DU,XTR.USD OVER.RATE.SW. 1C,EUR,,Derivatives,,,DUS,XDUS,,False
 XZBE.DU,X(IE)-ESG DL COBD SCEOHD,EUR,,Fixed Income,,,DUS,XDUS,,False
 XZBU.DU,X(IE)-ESG DL COBD 1CDL,EUR,,Fixed Income,,,DUS,XDUS,,False

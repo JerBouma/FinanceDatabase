@@ -107,8 +107,8 @@ AOX.HM,ALSTRIA OFFICE REIT-AG,EUR,"ALSTRIA OFFICE REIT-AG is a German Real Estat
 AQ9C.HM,ALLIANZ PFANDBRIEFFO.ATEO,EUR,"ALLIANZ PFANDBRIEFFO.ATEO is a fund or investment product related to Pfandbriefe (German covered bonds) managed by Allianz. The ticker suggests it is an ATEO sub-fund or share class. It is designed to offer investors exposure to the German Pfandbrief market, which is known for its high credit quality and safety.",Fixed Income,,Allianz Global Investors Fund,HAM,XHAM,,False
 AV5C.HM,AVIVA INV.-EM.MK.BD B DL,EUR,"AVIVA INV.-EM.MK.BD B DL is a fund managed by Aviva Investors focused on investing in emerging market (EM.) bonds (BD). ""MK"" means Market. The ""B DL"" signifies a specific share class with deferred load (DL).",Fixed Income,Emerging Markets,,HAM,XHAM,,False
 AV5D.HM,AVIVA INV.-EU.EQ.INC.A EO,EUR,"AVIVA INV.-EU.EQ.INC.A EO is a fund managed by Aviva Investors focused on investing in European (EU) equities (EQ) with an income (INC) focus. The ""A EO"" signifies a specific share class. Further details about its investment style and sector allocation are needed.",Real Estate,,,HAM,XHAM,,False
-AW43.HM,AXA WLD-OPT.INCOME A TPF,EUR,,,,,HAM,XHAM,,False
-AW44.HM,AXA WLD-FRAM.ITALY A T,EUR,,,,,HAM,XHAM,,False
+AW43.HM,AXA WLD-OPT.INCOME A TPF,EUR,,,,AXA World Funds,HAM,XHAM,,False
+AW44.HM,AXA WLD-FRAM.ITALY A T,EUR,,,,AXA World Funds,HAM,XHAM,,False
 AW45.HM,AXA WLD-FR.SWITZER.A T,EUR,,,,AXA World Funds,HAM,XHAM,,False
 AW47.HM,AXA WLD-OPT.INCOME A APF,EUR,,,,AXA World Funds,HAM,XHAM,,False
 AW48.HM,AXA IM-US SH.DU.F(DIS)EUR,EUR,,,,AXA World Funds,HAM,XHAM,,False
@@ -664,7 +664,7 @@ EUNN.HM,ISHSIII-C.MSCI JP.IMI DLA,EUR,"ISHSIII-C.MSCI JP.IMI DLA is an exchange-
 EUNR.HM,ISHSIII-EO C.B.EX-F.EODIS,EUR,"ISHSIII-EO C.B.EX-F.EODIS is an exchange-traded fund (ETF) focusing on Euro Corporate Bonds excluding financials. Managed by ISHSIII, the fund aims to track the performance of a specific index related to these corporate bonds. Further information is required to understand the exact underlying index and the fund's investment strategy.",Fixed Income,Corporate Bonds,BlackRock Asset Management,HAM,XHAM,,False
 EUNS.HM,ISHSIII-EO CBX-F1-5YR EOD,EUR,"ISHSIII-EO CBX-F1-5YR EOD is an exchange-traded fund (ETF) focusing on Euro Corporate Bonds excluding financials with a maturity between 1-5 years. Managed by ISHSIII, the fund seeks to mirror the performance of a related index. Further information is required to understand the exact underlying index and the fund's investment strategy.",Fixed Income,Corporate Bonds,BlackRock Asset Management,HAM,XHAM,,False
 EUNT.HM,ISHSIII-EO C.BD 1-5YR EOD,EUR,"ISHSIII-EO C.BD 1-5YR EOD is an exchange-traded fund (ETF) focusing on Euro Corporate Bonds with a maturity between 1-5 years. Managed by ISHSIII, the fund seeks to mirror the performance of a related index. Further information is required to understand the exact underlying index and the fund's investment strategy.",Fixed Income,Corporate Bonds,BlackRock Asset Management,HAM,XHAM,,False
-EUNW.HM,IS EO H.Y.CO.BD U.ETF EOD,EUR,IS EO H.Y.CO.BD U.ETF EOD is an exchange-traded fund (ETF) focusing on Euro High Yield Corporate Bonds. It is managed by IS and aims to replicate the performance of a specific index of Euro-denominated high-yield corporate bonds. More information is needed to clarify the exact index and the fund's precise investment strategy.,Fixed Income,High Yield Bonds,,HAM,XHAM,,False
+EUNW.HM,IS EO H.Y.CO.BD U.ETF EOD,EUR,IS EO H.Y.CO.BD U.ETF EOD is an exchange-traded fund (ETF) focusing on Euro High Yield Corporate Bonds. It is managed by IS and aims to replicate the performance of a specific index of Euro-denominated high-yield corporate bonds. More information is needed to clarify the exact index and the fund's precise investment strategy.,Fixed Income,High Yield Bonds,BlackRock Asset Management,HAM,XHAM,,False
 EUNX.HM,ISHSII-US AGGREG.BD DLDIS,EUR,"ISHSII-US AGGREG.BD DLDIS is an exchange-traded fund (ETF) providing exposure to the U.S. aggregate bond market. Managed by ISHSII, it tracks a specific index of U.S. aggregate bonds. More information is required to understand the exact underlying index and the fund's investment strategy.",Fixed Income,Investment Grade Bonds,BlackRock Asset Management,HAM,XHAM,,False
 EUNY.HM,ISHSV-EM DIVID.U.ETF DLD,EUR,"ISHSV-EM DIVID.U.ETF DLD is an exchange-traded fund (ETF) focused on dividend-paying companies in emerging markets. Managed by ISHSV, the fund aims to track the performance of an index composed of these dividend-focused companies. More information is required to understand the exact underlying index and the fund's investment strategy.",Financials,Emerging Markets,,HAM,XHAM,,False
 EXH1.HM,IS.S.E.600 OIL+G.U.ETF A.,EUR,IS.S.E.600 OIL+G.U.ETF A. is an exchange-traded fund listed on the Hamburg Stock Exchange under the ticker EXH1 and traded in EUR.,,,,HAM,XHAM,,False
@@ -739,10 +739,10 @@ F7HC.HM,FST SENT-FS G.L.INFR.AALS,EUR,"FST SENT-FS G.L.INFR.AALS is a First Stat
 F7HD.HM,FST SENT-FSSA G.CH.GR.AEO,EUR,,,,First Sentier Investors,HAM,XHAM,,False
 F7R0.HM,FTIF-F.EUR.CORP.BD AA EO,EUR,,Fixed Income,Corporate Bonds,Franklin Templeton Investments,HAM,XHAM,,False
 F7R1.HM,Franklin Templeton Investment Funds SICAV - Templeton Global Equity Income Fund,EUR,"Franklin Templeton Investment Funds SICAV - Templeton Global Equity Income Fund is an investment fund that seeks to provide investors with income and capital appreciation by investing in a portfolio of equity securities worldwide. The fund is managed by Franklin Templeton Investment Funds SICAV, a global investment management organization headquartered in San Mateo, California. The fund aims to deliver a combination of current income and long-term growth by investing in dividend-paying stocks across various sectors and countries.",Equities,,Franklin Templeton Investments,HAM,XHAM,,False
-F7R2.HM,F.TEM.INV-AS. BD A ACC.,EUR,,Fixed Income,,,HAM,XHAM,,False
+F7R2.HM,F.TEM.INV-AS. BD A ACC.,EUR,,Fixed Income,,Franklin Templeton Investments,HAM,XHAM,,False
 F7R5.HM,FTIF FDS-US LOW DUR.A MD.,EUR,"FTIF FDS-US LOW DUR.A MD. is a fund focused on investing in US low duration fixed income securities, aiming for a moderate distribution yield. The fund is managed by Franklin Templeton Investments. The fund aims to provide income while minimizing interest rate risk.",Fixed Income,Corporate Bonds,Franklin Templeton Investments,HAM,XHAM,,False
 F7R7.HM,FTIF-TEMP.EM DYN.INC.AAEO,EUR,"FTIF-TEMP.EM DYN.INC.AAEO is a fund, part of the Franklin Templeton Investment Funds (FTIF) family, focused on dynamic income from emerging markets. It seeks to generate attractive returns through a flexible approach to investing in emerging market debt. The investment strategy focuses on actively allocating to various fixed income sectors within emerging markets.",Fixed Income,Emerging Markets,Franklin Templeton Investments,HAM,XHAM,,False
-F7R8.HM,F.TEM.INV-T.GL.H.Y.ACAPEO,EUR,,,,,HAM,XHAM,,False
+F7R8.HM,F.TEM.INV-T.GL.H.Y.ACAPEO,EUR,,,,Franklin Templeton Investments,HAM,XHAM,,False
 F7RD.HM,F.TEM.INV-T.E.M.S.C. ACDL,EUR,F.TEM.INV-T.E.M.S.C. ACDL is a Franklin Templeton Investments fund focused on investing in companies within the emerging markets small-cap sector. The fund's objective is to achieve long-term capital appreciation by investing in a diversified portfolio of equity securities of small-capitalization companies located in emerging market countries. The fund employs a bottom-up investment approach to identify companies with strong growth potential.,Equities,Small Cap,Franklin Templeton Investments,HAM,XHAM,,False
 F7RE.HM,F.TEM.INV.-T.FR.MKTS AADL,EUR,"F.TEM.INV.-T.FR.MKTS AADL is a Franklin Templeton Investments fund focused on frontier markets. The fund aims to provide capital appreciation by investing in equities of companies located in less-developed countries. The fund targets markets that are smaller, less liquid, and have different risk characteristics compared to traditional emerging markets.",Alternatives,Frontier Markets,Franklin Templeton Investments,HAM,XHAM,,False
 F7RJ.HM,F.TEM.INV-T.GL.INC. A ACC,EUR,"F.TEM.INV-T.GL.INC. A ACC is a Franklin Templeton Investments fund focused on global income, with an accumulating share class (ACC). The fund's objective is to generate income, with some capital appreciation, by investing in a diversified portfolio of income-producing assets around the world. The 'A' refers to a specific share class within the fund.",Fixed Income,Corporate Bonds,Franklin Templeton Investments,HAM,XHAM,,False
@@ -795,16 +795,16 @@ FGUQ.HM,VERI ETF-DACHFONDS P,EUR,VERI ETF-DACHFONDS P is a fund that invests in 
 FGUR.HM,LA FR.SYST.DEF.ALLOC. R,EUR,,,,,HAM,XHAM,,False
 FGUU.HM,LA FRAN.SYS.DYN.ALL.W,EUR,,,,,HAM,XHAM,,False
 FGUV.HM,LA FRANC.SYS.ETF PORT.GL.,EUR,,,,,HAM,XHAM,,False
-FGV1.HM,JH-J.H.LATIN AMER. A2EO,EUR,,,,,HAM,XHAM,,False
-FGV2.HM,JH-J.H.CONT.EUROP. I2EO,EUR,,,,,HAM,XHAM,,False
+FGV1.HM,JH-J.H.LATIN AMER. A2EO,EUR,,,,Janus Henderson,HAM,XHAM,,False
+FGV2.HM,JH-J.H.CONT.EUROP. I2EO,EUR,,,,Janus Henderson,HAM,XHAM,,False
 FGV4.HM,JUP.GL.FD.-J.EU.GR.LEOA,EUR,,,,,HAM,XHAM,,False
 FGV5.HM,JUP.GL-JGF INDIA S.LDLAI,EUR,,,,,HAM,XHAM,,False
 FGV6.HM,The Jupiter Global Fund - Jupiter Japan Select,EUR,"The Jupiter Global Fund - Jupiter Japan Select is a sub-fund of the Jupiter Global Fund, focused on achieving long-term capital growth by investing primarily in equities of Japanese companies. The fund is managed by Jupiter Asset Management, a UK-based investment manager, and employs a bottom-up stock selection approach. The fund is domiciled in Luxembourg.",Equities,Growth,,HAM,XHAM,,False
 FGV9.HM,JUP.G.F.-J.GBL VAL. LDLA,EUR,,,,,HAM,XHAM,,False
-FGVB.HM,JH-J.H.CONT.EUROP.X2EO,EUR,,,,,HAM,XHAM,,False
-FGVH.HM,JH-J.H.CONT.EUROP.A2EO,EUR,,,,,HAM,XHAM,,False
-FGVI.HM,JH-J.H.EMERG.MKTS A2EO,EUR,,,,,HAM,XHAM,,False
-FGVM.HM,JH-J.H.PAN EUROP. A2EO,EUR,,,,,HAM,XHAM,,False
+FGVB.HM,JH-J.H.CONT.EUROP.X2EO,EUR,,,,Janus Henderson,HAM,XHAM,,False
+FGVH.HM,JH-J.H.CONT.EUROP.A2EO,EUR,,,,Janus Henderson,HAM,XHAM,,False
+FGVI.HM,JH-J.H.EMERG.MKTS A2EO,EUR,,,,Janus Henderson,HAM,XHAM,,False
+FGVM.HM,JH-J.H.PAN EUROP. A2EO,EUR,,,,Janus Henderson,HAM,XHAM,,False
 FGVQ.HM,JH-UK ABSOL.RETUR.FD A2LS,EUR,,,,Janus Henderson,HAM,XHAM,,False
 FGVR.HM,JH-J.H.PA.EU.SM.CO.A2EO,EUR,,,,Janus Henderson,HAM,XHAM,,False
 FGVS.HM,JH-J.H.GBL EQU. A2EO,EUR,,,,Janus Henderson,HAM,XHAM,,False
@@ -824,13 +824,13 @@ FH4H.HM,AXA WLD-EO CR.PL.N.A A,EUR,,,,AXA World Funds,HAM,XHAM,,False
 FH4I.HM,AXA WLD-GL.HGH Y.NAM.A-DH,EUR,,,,AXA World Funds,HAM,XHAM,,False
 FH4K.HM,AXA WLD-EO BDS NAM.A A.,EUR,,,,AXA World Funds,HAM,XHAM,,False
 FH4L.HM,AXA WLD-EO BDS NAM.A T.,EUR,,,,AXA World Funds,HAM,XHAM,,False
-FH4Q.HM,AXA WLD-FR.EUR.OPP.A T,EUR,,,,,HAM,XHAM,,False
-FH4R.HM,AXA WLD-FR.EU.SM.C.A T,EUR,,,,,HAM,XHAM,,False
-FH4S.HM,AXA WLD-FR.EU.SM.C.A A,EUR,,,,,HAM,XHAM,,False
-FH4T.HM,AXA WLD-FR.EUR.OPP.A A,EUR,,,,,HAM,XHAM,,False
-FH4U.HM,AXA WLD-GL.HGH Y.NAM.A-CH,EUR,,,,,HAM,XHAM,,False
-FH4V.HM,AXA WLD-DEF.OPTIM.INC.A T,EUR,,,,,HAM,XHAM,,False
-FH4W.HM,AXA WLD-DEF.OPTIM.INC.A A,EUR,,,,,HAM,XHAM,,False
+FH4Q.HM,AXA WLD-FR.EUR.OPP.A T,EUR,,,,AXA World Funds,HAM,XHAM,,False
+FH4R.HM,AXA WLD-FR.EU.SM.C.A T,EUR,,,,AXA World Funds,HAM,XHAM,,False
+FH4S.HM,AXA WLD-FR.EU.SM.C.A A,EUR,,,,AXA World Funds,HAM,XHAM,,False
+FH4T.HM,AXA WLD-FR.EUR.OPP.A A,EUR,,,,AXA World Funds,HAM,XHAM,,False
+FH4U.HM,AXA WLD-GL.HGH Y.NAM.A-CH,EUR,,,,AXA World Funds,HAM,XHAM,,False
+FH4V.HM,AXA WLD-DEF.OPTIM.INC.A T,EUR,,,,AXA World Funds,HAM,XHAM,,False
+FH4W.HM,AXA WLD-DEF.OPTIM.INC.A A,EUR,,,,AXA World Funds,HAM,XHAM,,False
 FH54.HM,JPM-EO CORP. JPMEC AAEO,EUR,JPM-EO CORP. JPMEC AAEO is a fund focused on investing in European corporate bonds and is managed by J.P. Morgan Asset Management. The fund aims to provide investors with income and potential capital appreciation through investments in debt securities issued by corporations located in Europe. More information can be found in the fund's prospectus.,Fixed Income,Corporate Bonds,JPMorgan Asset Management,HAM,XHAM,,False
 FH55.HM,JPM-US.AG.BD JPMUAB AA,EUR,"JPM-US.AG.BD JPMUAB AA is a fund focused on investing in U.S. aggregate bonds, and is managed by J.P. Morgan Asset Management. It aims to provide investors with income and potential capital appreciation through investments in a broad range of U.S. investment-grade fixed-income securities. More information can be found in the fund's prospectus.",Fixed Income,Investment Grade Bonds,JPMorgan Asset Management,HAM,XHAM,,False
 FH57.HM,JPM-ASEAN EQ.F.JPMAE AAEO,EUR,"JPM-ASEAN EQ.F.JPMAE AAEO is a fund focused on equity investments in the ASEAN region, managed by J.P. Morgan Asset Management. It aims to provide investors with exposure to the growth potential of Southeast Asian markets. The fund's specific investment strategy and risk profile would be detailed in its prospectus.",,Emerging Markets,JPMorgan Asset Management,HAM,XHAM,,False
@@ -867,7 +867,7 @@ FHDJ.HM,AMUNDI GOLD STOCK A,EUR,"AMUNDI GOLD STOCK A is an equity fund offered b
 FHDN.HM,AMUNDI EAST.EUR.STOCK A,EUR,"AMUNDI EAST.EUR.STOCK A is an equity fund offered by Amundi, investing in Eastern European stocks. The fund aims to generate capital appreciation by investing in companies based in or with significant operations in Eastern Europe. The fund's headquarter location and specific product offerings require further research.",Equities,,Amundi Asset Management,HAM,XHAM,,False
 FHDQ.HM,AMUNDI ETHIK FONDS A,EUR,"AMUNDI ETHIK FONDS A is an ethical equity fund offered by Amundi. The fund invests in companies that meet specific environmental, social, and governance (ESG) criteria. The fund's headquarter location and specific product offerings require further research.",Fixed Income,Developed Markets,Amundi Asset Management,HAM,XHAM,,False
 FHDT.HM,AMUNDI AUSTRIA STOCK VT,EUR,"AMUNDI AUSTRIA STOCK VT is an equity fund offered by Amundi, investing in Austrian stocks. The fund aims to generate capital appreciation by investing in companies based in Austria. The fund's headquarter location and specific product offerings require further research.",Equities,,Amundi Asset Management,HAM,XHAM,,False
-FHFA.HM,AXA WF II-EUROP.OPP.EQ.A,EUR,"AXA WF II-EUROP.OPP.EQ.A is an equity fund offered by AXA, investing in European equities. The fund aims to generate capital appreciation by investing in companies based in Europe. The fund's headquarter location and specific product offerings require further research.",Fixed Income,Developed Markets,,HAM,XHAM,,False
+FHFA.HM,AXA WF II-EUROP.OPP.EQ.A,EUR,"AXA WF II-EUROP.OPP.EQ.A is an equity fund offered by AXA, investing in European equities. The fund aims to generate capital appreciation by investing in companies based in Europe. The fund's headquarter location and specific product offerings require further research.",Fixed Income,Developed Markets,AXA World Funds,HAM,XHAM,,False
 FHJA.HM,UBSLBF-EUR FLEXIBLE PA,EUR,"UBSLBF-EUR FLEXIBLE PA is a flexible bond fund managed by UBS, investing in Euro-denominated bonds. The fund aims to generate returns by dynamically adjusting its asset allocation based on market conditions. The fund's headquarter location and specific product offerings require further research.",Fixed Income,Corporate Bonds,UBS Asset Management,HAM,XHAM,,False
 FHJB.HM,UBSLBF-EUR FLEXIBLE PD,EUR,"UBSLBF-EUR FLEXIBLE PD is a flexible bond fund managed by UBS, investing in Euro-denominated bonds, with a distribution focus. The fund aims to provide income by dynamically adjusting its asset allocation based on market conditions and distributing the earnings to investors. The fund's headquarter location and specific product offerings require further research.",Fixed Income,Corporate Bonds,UBS Asset Management,HAM,XHAM,,False
 FHJC.HM,UBS (LUX) BF-EO H.YLD P D,EUR,"UBS (LUX) BF-EO H.YLD P D is a high-yield bond fund managed by UBS, investing in Euro-denominated high-yield bonds, with a distribution focus. The fund aims to provide high income by investing in lower-rated corporate debt and distributing the earnings to investors. The fund's headquarter location and specific product offerings require further research.",Fixed Income,High Yield Bonds,UBS Asset Management,HAM,XHAM,,False
@@ -1558,7 +1558,7 @@ IUGF.HM,IF-INV.EUR.ULT.SH.T.DE. A,EUR,IF-INV.EUR.ULT.SH.T.DE. A is a fund manage
 IUGH.HM,INVESCO GREATER CHINA E.A,EUR,INVESCO GREATER CHINA E.A is a fund. It is managed by Invesco.,Financials,,Invesco Investment Management,HAM,XHAM,,False
 IUGI.HM,IF-INV.GL.CON.TR. A,EUR,,,,,HAM,XHAM,,False
 IUGJ.HM,INVESCO US STRUCTURED E.A,EUR,,,,Invesco Investment Management,HAM,XHAM,,False
-IUGK.HM,INV.FDS-I.GL CONS.FD EO A,EUR,,,,,HAM,XHAM,,False
+IUGK.HM,INV.FDS-I.GL CONS.FD EO A,EUR,,,,Invesco Investment Management,HAM,XHAM,,False
 IUGL.HM,IFS-SUPAEUSTEQ A,EUR,,,,,HAM,XHAM,,False
 IUGM.HM,INVESCO ASIA OPPORT.EQ.A,EUR,,,,Invesco Investment Management,HAM,XHAM,,False
 IUGN.HM,IFS-ENER.TRA.A,EUR,,,,,HAM,XHAM,,False
@@ -1771,7 +1771,7 @@ L4OA.HM,LOYS FCP-L.GLOBAL L/S P,EUR,LOYS FCP-L.GLOBAL L/S P is a global long/sho
 L8I3.HM,LYX.EUR.OVERN.RET.U.ETF A,EUR,LYX.EUR.OVERN.RET.U.ETF A is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,HAM,XHAM,,False
 LAUT.HM,LIF-600 AUTOM. EOA,EUR,LIF-600 AUTOM. EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,HAM,XHAM,,False
 LBNK.HM,LIF-600 BANKS EOA,EUR,LIF-600 BANKS EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,HAM,XHAM,,False
-LBRA.HM,MUL-L.M.BRAZIL EOA,EUR,MUL-L.M.BRAZIL EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,,HAM,XHAM,,False
+LBRA.HM,MUL-L.M.BRAZIL EOA,EUR,MUL-L.M.BRAZIL EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,HAM,XHAM,,False
 LBRE.HM,LIF-600 BAS.RE. EOA,EUR,LIF-600 BAS.RE. EOA is an exchange-traded fund. Further details about its business model and investment strategy are unavailable.,,,Lyxor International Asset Management,HAM,XHAM,,False
 LCHM.HM,LIF-600 CHEMIC. EOA,EUR,"LIF-600 CHEMIC. EOA is an exchange-traded fund (ETF) that tracks the performance of companies in the chemicals sector within the STOXX Europe 600 index. This ETF aims to provide investors with exposure to companies involved in the production of chemicals, plastics, and related products. The fund is part of the Lyxor International Fund (LIF) range.",,,Lyxor International Asset Management,HAM,XHAM,,False
 LCST.HM,LIF-600 CO.+MA. EOA,EUR,"LIF-600 CO.+MA. EOA is an exchange-traded fund (ETF) that tracks the performance of companies in the construction and materials sector within the STOXX Europe 600 index. This ETF aims to provide investors with exposure to companies involved in building, infrastructure, and related materials. The fund is part of the Lyxor International Fund (LIF) range.",,,Lyxor International Asset Management,HAM,XHAM,,False
@@ -1807,7 +1807,7 @@ LM57.HM,LM GL-LM R.USSC O.ADDL(A),EUR,,,,,HAM,XHAM,,False
 LM5B.HM,Legg Mason Global Funds Plc - Legg Mason Western Asset Asian Opportunities Fund,EUR,Legg Mason Global Funds Plc - Legg Mason Western Asset Asian Opportunities Fund invests primarily in a diversified portfolio of fixed-income securities in Asian markets. The fund aims to generate income and capital appreciation by capitalizing on opportunities in the Asian fixed-income sector. It is managed by Western Asset Management.,Fixed Income,Corporate Bonds,,HAM,XHAM,,False
 LM5C.HM,Legg Mason Global Funds Plc - Legg Mason Brandywine Global Fixed Income Fund,EUR,"Legg Mason Global Funds Plc - Legg Mason Brandywine Global Fixed Income Fund seeks to maximize total return by investing primarily in a diversified portfolio of fixed-income securities from around the world. The fund is managed by Brandywine Global Investment Management, employing a value-oriented approach to identify undervalued securities and capitalize on global fixed-income opportunities. The fund aims to provide investors with a stable income stream and potential capital appreciation.",Fixed Income,Corporate Bonds,Franklin Templeton Investments,HAM,XHAM,,False
 LMDA.HM,LIF-600 MEDIA EOA,EUR,,,,Lyxor International Asset Management,HAM,XHAM,,False
-LMLS.HM,MUL-L.O.MALAYS. EOA,EUR,,,,,HAM,XHAM,,False
+LMLS.HM,MUL-L.O.MALAYS. EOA,EUR,,,,Lyxor International Asset Management,HAM,XHAM,,False
 LOGS.HM,LIF-600 OIL+G. EOA,EUR,,,,Lyxor International Asset Management,HAM,XHAM,,False
 LOH2.HM,LOF-CO.EU.SM.+MI.LE. AP,EUR,,,,,HAM,XHAM,,False
 LOH3.HM,LO F.-WLD GOLD EXP.P EO C,EUR,,,,,HAM,XHAM,,False
@@ -1849,12 +1849,12 @@ LR1S.HM,M + W INVEST: M + W CAP.,EUR,"M + W INVEST: M + W CAP. is a fund from M+
 LR1U.HM,1A GLOBAL VALUE,EUR,"1A GLOBAL VALUE is a fund that invests according to a global value investment strategy, seeking undervalued companies around the world with the potential for long-term capital appreciation, following the principles of value investing.",Financials,Value,,HAM,XHAM,,False
 LRET.HM,LIF-600 RETAIL EOA,EUR,,,,Lyxor International Asset Management,HAM,XHAM,,False
 LRUS.HM,MUL-LYX.MSCI RUSSI.UC.ETF,EUR,"The Lyxor MSCI Russia UCITS ETF is designed to track the performance of the MSCI Russia Index, providing investors with exposure to the Russian equity market. The fund invests in a diversified portfolio of Russian stocks, aiming to replicate the index's composition and returns. It is managed by Lyxor Asset Management and is domiciled in Luxembourg.",Equities,,Lyxor International Asset Management,HAM,XHAM,,False
-LSAF.HM,MUL-L.SOU.AFR. EOA,EUR,,,,,HAM,XHAM,,False
+LSAF.HM,MUL-L.SOU.AFR. EOA,EUR,,,,Lyxor International Asset Management,HAM,XHAM,,False
 LSK7.HM,LYX.EURO ST.50D.(-1X)I. A,EUR,"The Lyxor Euro Stoxx 50 Daily (-1x) Inverse UCITS ETF seeks to provide the inverse of the daily performance of the Euro Stoxx 50 Index. It aims to deliver the opposite return of the index on a daily basis, using derivatives and other techniques to achieve this objective. This fund is managed by Lyxor Asset Management and is domiciled in Luxembourg.",Derivatives,Trading,Lyxor International Asset Management,HAM,XHAM,,False
 LSK8.HM,LYX.EURO ST.50D.(-2X)I. A,EUR,"The Lyxor Euro Stoxx 50 Daily (-2x) Inverse UCITS ETF is designed to provide twice the inverse of the daily performance of the Euro Stoxx 50 Index. It utilizes leverage to amplify the daily returns, both positive and negative, and is intended for short-term trading strategies. This fund is managed by Lyxor Asset Management and is domiciled in Luxembourg.",Derivatives,Trading,Lyxor International Asset Management,HAM,XHAM,,False
 LTCM.HM,LIF-600 TELEC. EOA,EUR,,Communication Services,,Lyxor International Asset Management,HAM,XHAM,,False
 LTUG.HM,LIF-600 TECHN. EOA,EUR,,Information Technology,,Lyxor International Asset Management,HAM,XHAM,,False
-LTUR.HM,MUL-L.M.TURKEY EOA,EUR,,,,,HAM,XHAM,,False
+LTUR.HM,MUL-L.M.TURKEY EOA,EUR,,,,Lyxor International Asset Management,HAM,XHAM,,False
 LTVL.HM,LIF-600 TR.+LEI EOA,EUR,,Consumer Discretionary,,Lyxor International Asset Management,HAM,XHAM,,False
 LU91.HM,RB LUXTOPIC-AKTIEN EURO A,EUR,,Equities,,,HAM,XHAM,,False
 LU92.HM,DJE-MULTI ASSET PA,EUR,,Alternatives,,DJE Kapital AG,HAM,XHAM,,False
@@ -3052,7 +3052,7 @@ XG46.HM,MFS M.-U.S.GOVER.BD A1 DL,EUR,,Fixed Income,,MFS Investment Management,H
 XG49.HM,MFS M.-EM.MKTS DEBT A1 DL,EUR,,Financials,,MFS Investment Management,HAM,XHAM,,False
 XG4A.HM,MFS M.-EUROP.SM.COS A1 EO,EUR,,Financials,Small Cap,MFS Investment Management,HAM,XHAM,,False
 XGIU.HM,XTR.II GL.INF.-LINK.BD 5C,EUR,XTR.II GL.INF.-LINK.BD 5C is an exchange-traded fund listed on the Hamburg Stock Exchange under the ticker XGIU and traded in EUR. The fund is part of the Xtrackers range. It is classified as Fixed Income (Inflation-Protected Securities).,Fixed Income,Inflation-Protected Securities,Xtrackers,HAM,XHAM,,False
-XGVD.HM,XTR.II GBL GOV.BD 1DEOH,EUR,XTR.II GBL GOV.BD 1DEOH is an exchange-traded fund listed on the Hamburg Stock Exchange under the ticker XGVD and traded in EUR.,Fixed Income,,,HAM,XHAM,,False
+XGVD.HM,XTR.II GBL GOV.BD 1DEOH,EUR,XTR.II GBL GOV.BD 1DEOH is an exchange-traded fund listed on the Hamburg Stock Exchange under the ticker XGVD and traded in EUR.,Fixed Income,,Xtrackers,HAM,XHAM,,False
 XGZB.HM,SEB SUSTAIN.FD.GLOB.C EUR,EUR,SEB SUSTAIN.FD.GLOB.C EUR is an exchange-traded fund listed on the Hamburg Stock Exchange under the ticker XGZB and traded in EUR.,,,SEB Investment Management,HAM,XHAM,,False
 XGZC.HM,SEB FUND 1-GL.CHA./RISK D,EUR,SEB FUND 1-GL.CHA./RISK D is an exchange-traded fund listed on the Hamburg Stock Exchange under the ticker XGZC and traded in EUR.,,,SEB Investment Management,HAM,XHAM,,False
 XGZD.HM,SEB TRENDSYS.RENTEN BIEO,EUR,SEB TRENDSYS.RENTEN BIEO is an exchange-traded fund listed on the Hamburg Stock Exchange under the ticker XGZD and traded in EUR.,Fixed Income,,SEB Investment Management,HAM,XHAM,,False
@@ -3099,11 +3099,11 @@ XQ1N.HM,F.TEM.INV-T.GL.E.I.A A.EO,EUR,"F.TEM.INV-T.GL.E.I.A A.EO is a Franklin T
 XQ1P.HM,F.TEM.INV-F.MUT.EUR.A YD,EUR,"F.TEM.INV-F.MUT.EUR.A YD represents a Franklin Templeton Investments fund focused on mutual funds in Europe, Class A, with yield distribution. It invests in other European mutual funds, providing diversified exposure to the European market. Franklin Templeton Investments is a global investment management organization headquartered in San Mateo, California.",Alternatives,Blend,Franklin Templeton Investments,HAM,XHAM,,False
 XQ1Q.HM,F.TEM.INV-T.AS.GR.A A.EUR,EUR,"F.TEM.INV-T.AS.GR.A A.EUR represents a Franklin Templeton Investments fund focused on total Asian growth, Class A accumulating shares, denominated in EUR. The fund aims to achieve long-term capital appreciation by investing in a diversified portfolio of Asian equities. Franklin Templeton Investments is a global investment management organization headquartered in San Mateo, California.",Equities,Growth,Franklin Templeton Investments,HAM,XHAM,,False
 XQ1R.HM,F.TEM.INV-T.EUROLND A YD,EUR,"F.TEM.INV-T.EUROLND A YD refers to a Franklin Templeton Investments fund focused on total return in the Eurozone, Class A, with yield distribution. This fund invests in a mix of asset classes within the Eurozone, aiming for capital appreciation and income. Franklin Templeton Investments is a global investment management organization headquartered in San Mateo, California.",Fixed Income,Investment Grade Bonds,Franklin Templeton Investments,HAM,XHAM,,False
-XQ1S.HM,F.TEM.INV.-F.WLD PER.AADL,EUR,F.TEM.INV.-F.WLD PER.AADL is an exchange-traded fund listed on the Hamburg Stock Exchange under the ticker XQ1S and traded in EUR.,,,,HAM,XHAM,,False
+XQ1S.HM,F.TEM.INV.-F.WLD PER.AADL,EUR,F.TEM.INV.-F.WLD PER.AADL is an exchange-traded fund listed on the Hamburg Stock Exchange under the ticker XQ1S and traded in EUR.,,,Franklin Templeton Investments,HAM,XHAM,,False
 XQ1T.HM,F.TEM.INV-F.U.S.O.A YD.EO,EUR,"F.TEM.INV-F.U.S.O.A YD.EO represents a Franklin Templeton Investments fund focused on US opportunities, Class A, with yield distribution annually. It invests in a diversified portfolio of US companies, seeking both capital appreciation and income. Franklin Templeton Investments, headquartered in San Mateo, California, offers investment management services globally.",Alternatives,Blend,Franklin Templeton Investments,HAM,XHAM,,False
-XQ1U.HM,F.TEM.INV-F.INDIA A YD.EO,EUR,,,,,HAM,XHAM,,False
-XQ1V.HM,F.TEM.I.-F.M.GL.D.A YD.EO,EUR,,,,,HAM,XHAM,,False
-XQ1Z.HM,F.TEM.INV-F.TECHN.A A.EUR,EUR,,,,,HAM,XHAM,,False
+XQ1U.HM,F.TEM.INV-F.INDIA A YD.EO,EUR,,,,Franklin Templeton Investments,HAM,XHAM,,False
+XQ1V.HM,F.TEM.I.-F.M.GL.D.A YD.EO,EUR,,,,Franklin Templeton Investments,HAM,XHAM,,False
+XQ1Z.HM,F.TEM.INV-F.TECHN.A A.EUR,EUR,,,,Franklin Templeton Investments,HAM,XHAM,,False
 XR52.HM,SISF ASIAN EQ.YIELD A ACC,EUR,,,,Schroder International Selection Fund,HAM,XHAM,,False
 XR53.HM,SISF GL EQU.YIELD A ACC,EUR,,,,Schroder International Selection Fund,HAM,XHAM,,False
 XR54.HM,SISF JAP.EQUITY A DISAV,EUR,,Equities,,Schroder International Selection Fund,HAM,XHAM,,False
@@ -3121,10 +3121,10 @@ XRQ1.HM,ROBECO CHINESE EQU.D EO,EUR,,,,Robeco Institutional Asset Mgmt BV,HAM,XH
 XRQ2.HM,ROBECO NEW WLD FIN.E.D EO,EUR,,,,Robeco Institutional Asset Mgmt BV,HAM,XHAM,,False
 XRQ3.HM,ROBECO GL CON.TRDS.D EO,EUR,,,,Robeco Institutional Asset Mgmt BV,HAM,XHAM,,False
 XRQ4.HM,ROBECO EMERG.STA.EQ. D EO,EUR,,,,Robeco Institutional Asset Mgmt BV,HAM,XHAM,,False
-XRU1.HM,AXA WF II-NTH AMER.EQUS A,EUR,,,,,HAM,XHAM,,False
+XRU1.HM,AXA WF II-NTH AMER.EQUS A,EUR,,,,AXA World Funds,HAM,XHAM,,False
 XRU2.HM,AXA WFII-EVOLV.TR.EQ.ADDL,EUR,,,,,HAM,XHAM,,False
 XRUF.HM,AX.W.F.E.M.SH.D.B.ACAPEOH,EUR,,,Micro Cap,,HAM,XHAM,,False
-XRUH.HM,AXA WLD F.-GL.INFL.B.ADEO,EUR,,,,,HAM,XHAM,,False
+XRUH.HM,AXA WLD F.-GL.INFL.B.ADEO,EUR,,,,AXA World Funds,HAM,XHAM,,False
 XRZ0.HM,THR.L.-GL.SMALL.COMPAN.AE,EUR,,Equities,Small Cap,,HAM,XHAM,,False
 XRZ9.HM,THR.L-PAN E.S.CAP O.EP.AE,EUR,,Equities,Small Cap,,HAM,XHAM,,False
 XRZD.HM,T(L)-EUR.SM.CO. 1EEOA,EUR,,Equities,Small Cap,,HAM,XHAM,,False
@@ -3164,8 +3164,8 @@ XUMQ.HM,NN(L)-EURO CREDIT PCEO,EUR,NN(L)-EURO CREDIT PCEO is a fund that invests
 XUMR.HM,NN (L) - NN (L) Banking & Insurance,EUR,NN (L) - NN (L) Banking & Insurance is a fund focused on investing in the banking and insurance sectors.,Financials,,Nomura Asset Management,HAM,XHAM,,False
 XUMZ.HM,NN (L) - NN (L) Asian Debt (Hard Currency),EUR,NN (L) - NN (L) Asian Debt (Hard Currency) is a fund that invests in Asian debt denominated in hard currencies.,Fixed Income,Emerging Markets,Nomura Asset Management,HAM,XHAM,,False
 XUO1.HM,CANDR.BDS-EO L.TRM INH.KC,EUR,CANDR.BDS-EO L.TRM INH.KC is a fund focusing on investing in Euro-denominated long-term bonds. The fund seeks to provide investors with a steady income stream through investments in a diversified portfolio of bonds with maturities greater than 10 years. The fund's management adheres to specific investment guidelines and risk management principles.,Fixed Income,Government Bonds,Candriam Lux,HAM,XHAM,,False
-XY4P.HM,XTR.II IB.E.G.B.Y.P. 1C,EUR,,Fixed Income,,,HAM,XHAM,,False
-XYP1.HM,XTR.II IB.E.G.B.YP.1-3 1C,EUR,,Fixed Income,,,HAM,XHAM,,False
+XY4P.HM,XTR.II IB.E.G.B.Y.P. 1C,EUR,,Fixed Income,,Xtrackers,HAM,XHAM,,False
+XYP1.HM,XTR.II IB.E.G.B.YP.1-3 1C,EUR,,Fixed Income,,Xtrackers,HAM,XHAM,,False
 XZGD.HM,SEB TRENDSYS.RENTEN BIIEO,EUR,SEB TRENDSYS.RENTEN BIIEO is a fixed-income investment fund utilizing a trend-following strategy to invest in the bond market. The fund aims to generate returns by capitalizing on identified trends in interest rates and bond prices. It is managed by SEB (Skandinaviska Enskilda Banken) and domiciled in Europe.,Fixed Income,Government Bonds,SEB Investment Management,HAM,XHAM,,False
 XZGE.HM,SEB SUST.H.YLD D (EUR),EUR,"SEB SUST.H.YLD D (EUR) is a high-yield bond fund that incorporates sustainability considerations into its investment process. The fund aims to generate income by investing in a diversified portfolio of high-yield corporate bonds, while also considering environmental, social, and governance (ESG) factors. The fund is managed by SEB (Skandinaviska Enskilda Banken) and is denominated in Euros.",Fixed Income,High Yield Bonds,SEB Investment Management,HAM,XHAM,,False
 XZGL.HM,SEB 1-SEB SUST.NORD. C,EUR,"SEB 1-SEB SUST.NORD. C is a fund focusing on investments in the Nordic region with a sustainability focus. The fund invests in companies based in the Nordic countries, adhering to certain environmental, social, and governance (ESG) standards. SEB (Skandinaviska Enskilda Banken) manages this fund providing investors with exposure to Nordic equities with a sustainability overlay.",Financials,,SEB Investment Management,HAM,XHAM,,False
