@@ -27,7 +27,7 @@ def exclude_delisted_rows(lazy: pl.LazyFrame, exclude_delisted: bool) -> pl.Lazy
         pl.LazyFrame: The dataset without delisted rows when requested.
     """
     if exclude_delisted and "delisted" in lazy.collect_schema():
-        return lazy.filter(pl.col("delisted") != "True")
+        return lazy.filter(~pl.col("delisted").fill_null(False))
     return lazy
 
 
@@ -200,22 +200,37 @@ def search_rows(
     return lazy
 
 
-def get_sorted_options(
-    frame: pl.DataFrame, column: str, as_pandas: bool = True
-) -> np.ndarray | pl.Series:
+def get_unique_values(lazy: pl.LazyFrame, columns: list[str]) -> dict[str, pl.Series]:
     """
-    Get the sorted unique values of a column.
+    Get the unique values of columns in one pass, without collecting their rows.
 
     Args:
-        frame (pl.DataFrame): The collected rows.
-        column (str): The column name.
+        lazy (pl.LazyFrame): The dataset.
+        columns (list[str]): The column names.
+
+    Returns:
+        dict[str, pl.Series]: The unique values of each column, without missing values.
+    """
+    row = lazy.select(
+        [pl.col(column).drop_nulls().unique().implode() for column in columns]
+    ).collect()
+    return {column: row.get_column(column).explode() for column in columns}
+
+
+def get_sorted_options(
+    values: pl.Series, as_pandas: bool = True
+) -> np.ndarray | pl.Series:
+    """
+    Sort the unique values of a column.
+
+    Args:
+        values (pl.Series): The unique values, without missing values.
         as_pandas (bool, optional): Whether to return a numpy array (True) or a Polars
             Series (False). Defaults to True.
 
     Returns:
-        np.ndarray | pl.Series: The sorted unique values, without missing values.
+        np.ndarray | pl.Series: The sorted unique values.
     """
-    values = frame.get_column(column).drop_nulls().unique()
     if not as_pandas:
         return values.sort()
     return pd.Series(values.to_list(), dtype=get_string_dtype()).sort_values().unique()

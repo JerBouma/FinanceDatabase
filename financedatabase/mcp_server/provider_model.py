@@ -575,8 +575,8 @@ class DatabaseProvider:
         if "delisted" in lazy.collect_schema():
             row = (
                 lazy.select(
-                    (pl.col("delisted") != "True").sum().alias("listed"),
-                    (pl.col("delisted") == "True").sum().alias("delisted"),
+                    (~pl.col("delisted").fill_null(False)).sum().alias("listed"),
+                    pl.col("delisted").fill_null(False).sum().alias("delisted"),
                 )
                 .collect()
                 .row(0)

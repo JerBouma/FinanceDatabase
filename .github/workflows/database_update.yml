@@ -391,47 +391,11 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.10'
-      - run: pip install pandas financedatabase
+      - run: pip install polars
       - name: Update Compressions
-        uses: jannekem/run-python-script-action@v1.8
-        with:
-          script: |
-            import glob
-            import financedatabase as fd
-            import pandas as pd
-
-            # Read every column as text and keep NA-like strings intact, so the
-            # compressed datasets match the source CSVs cell for cell: no "9763.0"
-            # in place of "9763", and no null symbol for the ticker "NA".
-            read = dict(dtype=str, keep_default_na=False)
-
-            cryptos = pd.read_csv('database/cryptos.csv', **read)
-            cryptos = cryptos.sort_values(cryptos.columns[0]).reset_index(drop=True)
-            cryptos.to_csv('compression/cryptos.bz2', index=False, compression='bz2')
-
-            currencies = pd.read_csv('database/currencies.csv', **read)
-            currencies = currencies.sort_values(currencies.columns[0]).reset_index(drop=True)
-            currencies.to_csv('compression/currencies.bz2', index=False, compression='bz2')
-
-            equities = pd.concat([pd.read_csv(f, **read) for f in sorted(glob.glob('database/equities/*.csv'))], ignore_index=True)
-            equities = equities.sort_values(equities.columns[0]).reset_index(drop=True)
-            equities.to_csv('compression/equities.bz2', index=False, compression='bz2')
-
-            etfs = pd.concat([pd.read_csv(f, **read) for f in sorted(glob.glob('database/etfs/*.csv'))], ignore_index=True)
-            etfs = etfs.sort_values(etfs.columns[0]).reset_index(drop=True)
-            etfs.to_csv('compression/etfs.bz2', index=False, compression='bz2')
-
-            funds = pd.concat([pd.read_csv(f, **read) for f in sorted(glob.glob('database/funds/*.csv'))], ignore_index=True)
-            funds = funds.sort_values(funds.columns[0]).reset_index(drop=True)
-            funds.to_csv('compression/funds.bz2', index=False, compression='bz2')
-
-            indices = pd.read_csv('database/indices.csv', **read)
-            indices = indices.sort_values(indices.columns[0]).reset_index(drop=True)
-            indices.to_csv('compression/indices.bz2', index=False, compression='bz2')
-
-            moneymarkets = pd.read_csv('database/moneymarkets.csv', **read)
-            moneymarkets = moneymarkets.sort_values(moneymarkets.columns[0]).reset_index(drop=True)
-            moneymarkets.to_csv('compression/moneymarkets.bz2', index=False, compression='bz2')
+        # Polars writes the bz2 CSVs every package version reads, and a typed Parquet
+        # file per asset class for the versions that read Parquet.
+        run: python scripts/update_compression.py --only datasets
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'
@@ -440,9 +404,6 @@ jobs:
           git checkout main
           git diff-index --quiet HEAD || git commit -am "Update Compression Files [skip ci]"
           git push
-      - name: Check run status
-        if: steps.run.outputs.status != '0'
-        run: exit "${{ steps.run.outputs.status }}"
 
   Update-Categorization-Files:
       needs:  [Add-New-Ticker, Update-Compression-Files]
@@ -468,97 +429,11 @@ jobs:
           uses: actions/setup-python@v6
           with:
             python-version: '3.10'
-        - run: pip install pandas financedatabase
+        - run: pip install polars
         - name: Update categories
-          uses: jannekem/run-python-script-action@v1.8
-          with:
-            script: |
-              import glob
-              import financedatabase as fd
-              import pandas as pd
-
-              # dtype=str keeps numeric-looking fields (zipcode, cusip) as text, so
-              # the generated option lists hold "9763" rather than "9763.0".
-              # A fixed mtime keeps the gzip artifacts byte-identical when their
-              # uncompressed content has not changed.
-              gzip = {'method': 'gzip', 'mtime': 0}
-
-              cryptos = pd.read_csv("database/cryptos.csv", index_col=0, dtype=str)
-              cryptos_categories = {}
-              for column in cryptos:
-                  if column in ['name', 'summary']:
-                      continue
-                      
-                  cryptos_categories[column] = sorted(cryptos[column].dropna().unique(), key=str)
-                  
-              df_temp = pd.DataFrame.from_dict(cryptos_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/cryptos_categories.gzip', index=False, compression=gzip)
-                  
-              currencies = pd.read_csv("database/currencies.csv", index_col=0, dtype=str)
-              currencies_categories = {}
-              for column in currencies:
-                  if column in ['name']:
-                      continue
-
-                  currencies_categories[column] = sorted(currencies[column].dropna().unique(), key=str)
-
-              df_temp = pd.DataFrame.from_dict(currencies_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/currencies_categories.gzip', index=False, compression=gzip)
-                  
-              equities = pd.concat([pd.read_csv(f, index_col=0, dtype=str) for f in sorted(glob.glob('database/equities/*.csv'))])
-              equities_categories = {}
-              for column in equities:
-                  if column in ['name', 'summary', 'website', 'delisted']:
-                      continue
-                      
-                  equities_categories[column] = sorted(equities[column].dropna().unique(), key=str)
-                  
-              df_temp = pd.DataFrame.from_dict(equities_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/equities_categories.gzip', index=False, compression=gzip)
-                  
-              etfs = pd.concat([pd.read_csv(f, index_col=0, dtype=str) for f in sorted(glob.glob('database/etfs/*.csv'))])
-              etfs_categories = {}
-              for column in etfs:
-                  if column in ['name', 'summary', 'delisted']:
-                      continue
-                      
-                  etfs_categories[column] = sorted(etfs[column].dropna().unique(), key=str)
-
-              df_temp = pd.DataFrame.from_dict(etfs_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/etfs_categories.gzip', index=False, compression=gzip)
-                  
-              funds = pd.concat([pd.read_csv(f, index_col=0, dtype=str) for f in sorted(glob.glob('database/funds/*.csv'))])
-              funds_categories = {}
-              for column in funds:
-                  if column in ['name', 'summary', 'manager_name', 'manager_bio']:
-                      continue
-                      
-                  funds_categories[column] = sorted(funds[column].dropna().unique(), key=str)
-                  
-              df_temp = pd.DataFrame.from_dict(funds_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/funds_categories.gzip', index=False, compression=gzip)
-                  
-              indices = pd.read_csv("database/indices.csv", index_col=0, dtype=str)
-              indices_categories = {}
-              for column in indices:
-                  if column in ['name']:
-                      continue
-                      
-                  indices_categories[column] = sorted(indices[column].dropna().unique(), key=str)
-                  
-              df_temp = pd.DataFrame.from_dict(indices_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/indices_categories.gzip', index=False, compression=gzip)
-                  
-              moneymarkets = pd.read_csv("database/moneymarkets.csv", index_col=0, dtype=str)
-              moneymarkets_categories = {}
-              for column in moneymarkets:
-                  if column in ['name']:
-                      continue
-                      
-                  moneymarkets_categories[column] = sorted(moneymarkets[column].dropna().unique(), key=str)
-                  
-              df_temp = pd.DataFrame.from_dict(moneymarkets_categories, orient='index').reset_index()
-              df_temp.to_csv('compression/categories/moneymarkets_categories.gzip', index=False, compression=gzip)
+          # The gzip CSV layout every package version reads, plus a Parquet file with
+          # one list of values per category.
+          run: python scripts/update_compression.py --only categories
 
         - name: Commit files and log
           run: |
@@ -568,9 +443,6 @@ jobs:
             git checkout main
             git diff-index --quiet HEAD || git commit -am "Update Categorization Files [skip ci]"
             git push
-        - name: Check run status
-          if: steps.run.outputs.status != '0'
-          run: exit "${{ steps.run.outputs.status }}"
 
   Update-README-Statistics:
     needs: [Add-New-Ticker, Update-Compression-Files, Update-Categorization-Files]

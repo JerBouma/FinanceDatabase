@@ -186,13 +186,7 @@ def test_invalid_column_returns_suggestions(server):
 @pytest.fixture(scope="module")
 def delisted_symbol():
     lazy = fd.Equities(use_local_location=True).get_lazy_frame()
-    return (
-        lazy.filter(pl.col("delisted") == "True")
-        .select("symbol")
-        .head(1)
-        .collect()
-        .item()
-    )
+    return lazy.filter(pl.col("delisted")).select("symbol").head(1).collect().item()
 
 
 def test_include_delisted(server, delisted_symbol):
@@ -262,7 +256,7 @@ def test_search_instruments_matches_isin(server):
     symbol, isin = (
         lazy.filter(
             pl.col("isin").is_not_null()
-            & (pl.col("delisted") != "True")
+            & ~pl.col("delisted")
             & ~pl.col("symbol").str.contains(".", literal=True)
         )
         .select("symbol", "isin")
