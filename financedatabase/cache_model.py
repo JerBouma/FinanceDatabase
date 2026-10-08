@@ -4,6 +4,7 @@ __docformat__ = "google"
 
 import bz2
 import hashlib
+import io
 import json
 import os
 import sys
@@ -51,26 +52,64 @@ def get_cache_directory() -> Path:
     return path
 
 
+def write_atomically(target: Path, write) -> None:
+    """
+    Write a file through a temporary file, so readers never see a partial file.
+
+    Args:
+        target (Path): The file to write.
+        write (Callable[[str], None]): Writes the content to the given path.
+    """
+    handle, temporary = tempfile.mkstemp(dir=target.parent, suffix=".parquet.tmp")
+    os.close(handle)
+    try:
+        write(temporary)
+        os.replace(temporary, target)
+    finally:
+        if os.path.exists(temporary):
+            os.remove(temporary)
+
+
 def convert_bz2_to_parquet(content: bytes, target: Path) -> None:
     """
-    Convert a bz2-compressed CSV to Parquet, with every column as text, atomically.
+    Convert a bz2-compressed CSV to Parquet with the types of the published Parquet files.
 
-    Reading every column as text keeps values such as the ticker NA or a zipcode
-    exactly as written; empty fields become nulls.
+    Only used for compressed files published before the typed Parquet files. Every
+    column is read as text, so values such as the ticker NA stay as written; delisted
+    becomes a Boolean and a column empty in every row Float64, as the pipeline writes.
 
     Args:
         content (bytes): The bz2-compressed CSV.
         target (Path): The Parquet file to write.
     """
     frame = pl.read_csv(bz2.decompress(content), infer_schema=False)
-    handle, temporary = tempfile.mkstemp(dir=target.parent, suffix=".parquet.tmp")
-    os.close(handle)
-    try:
-        frame.write_parquet(temporary)
-        os.replace(temporary, target)
-    finally:
-        if os.path.exists(temporary):
-            os.remove(temporary)
+    if "delisted" in frame.columns:
+        frame = frame.with_columns(pl.col("delisted").eq("True").fill_null(False))
+    empty = [
+        name
+        for name in frame.columns[1:]
+        if frame.schema[name] == pl.String
+        and frame.get_column(name).null_count() == frame.height
+    ]
+    frame = frame.with_columns([pl.col(name).cast(pl.Float64) for name in empty])
+    write_atomically(target, frame.write_parquet)
+
+
+def store_parquet(content: bytes, target: Path) -> None:
+    """
+    Store a published Parquet file as it is, after checking that it is one.
+
+    Args:
+        content (bytes): The Parquet file.
+        target (Path): The file to write.
+
+    Raises:
+        ValueError: If the content isn't a Parquet file.
+    """
+    if len(content) < 12 or content[:4] != b"PAR1" or content[-4:] != b"PAR1":
+        raise ValueError("The downloaded file is not a Parquet file.")
+    pl.read_parquet_schema(io.BytesIO(content))
+    write_atomically(target, lambda path: Path(path).write_bytes(content))
 
 
 def get_cache_name(source: str) -> str:
@@ -108,7 +147,9 @@ def get_local_cache(path: Path) -> Path:
 
 def get_remote_cache(url: str) -> Path:
     """
-    Get the Parquet cache of a remote bz2 file, checked for changes at most once a day.
+    Get the Parquet cache of a remote file, checked for changes at most once a day.
+
+    A published Parquet file is stored as it is; a bz2 CSV is converted.
 
     The check is a conditional request with the stored ETag, so an unchanged file is
     not downloaded again. If the server can't be reached, the cached copy is used.
@@ -138,7 +179,10 @@ def get_remote_cache(url: str) -> Path:
             meta["checked"] = time.time()
         else:
             response.raise_for_status()
-            convert_bz2_to_parquet(response.content, target)
+            if url.endswith(".parquet"):
+                store_parquet(response.content, target)
+            else:
+                convert_bz2_to_parquet(response.content, target)
             meta = {
                 "url": url,
                 "etag": response.headers.get("ETag"),
@@ -158,6 +202,9 @@ def load_lazy_frame(
     """
     Load a lazy scan of one database file from the local cache, downloading it if needed.
 
+    The typed Parquet file published next to the bz2 CSV is used when it exists, so no
+    conversion is needed; otherwise the bz2 CSV is converted to the same types.
+
     Args:
         file_name (str): The compressed file, e.g. "equities.bz2".
         base_url (str): The URL the file is published under.
@@ -167,9 +214,20 @@ def load_lazy_frame(
     Returns:
         pl.LazyFrame: A lazy scan of the cached Parquet file.
     """
-    source = (
-        get_local_cache(local_directory / file_name)
-        if local_directory
-        else get_remote_cache(base_url + file_name)
-    )
-    return pl.scan_parquet(source)
+    parquet_name = Path(file_name).with_suffix(".parquet").name
+    if local_directory:
+        if (local_directory / parquet_name).exists():
+            return pl.scan_parquet(local_directory / parquet_name)
+        return pl.scan_parquet(get_local_cache(local_directory / file_name))
+    parquet_url = base_url + parquet_name
+    marker = get_cache_directory() / f"remote-{get_cache_name(parquet_url)}.missing"
+    if not marker.exists() or time.time() - marker.stat().st_mtime >= REFRESH_SECONDS:
+        try:
+            source = get_remote_cache(parquet_url)
+            marker.unlink(missing_ok=True)
+            return pl.scan_parquet(source)
+        except (requests.exceptions.HTTPError, ValueError):
+            marker.touch()
+        except requests.exceptions.RequestException:
+            pass
+    return pl.scan_parquet(get_remote_cache(base_url + file_name))

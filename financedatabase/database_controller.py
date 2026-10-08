@@ -103,7 +103,6 @@ class FinanceDatabase:
             ) from error
         self._data: pd.DataFrame | None = None
         self._options: dict[tuple[str, bool], set[str]] = {}
-        self._empty_columns: set[str] | None = None
 
     @property
     def data(self) -> pd.DataFrame:
@@ -135,7 +134,6 @@ class FinanceDatabase:
             .lazy()
         )
         self._options = {}
-        self._empty_columns = None
 
     def get_columns(self) -> list[str]:
         """
@@ -231,8 +229,8 @@ class FinanceDatabase:
         """
         Convert collected rows to the pandas frame the package returns.
 
-        A column that is empty in the whole dataset is float64, as pandas' CSV reader
-        types it.
+        The dataset already holds the final types (a column that is empty in the whole
+        dataset is Float64, as pandas' CSV reader types it).
 
         Args:
             frame (pl.DataFrame): The collected rows.
@@ -240,18 +238,7 @@ class FinanceDatabase:
         Returns:
             pd.DataFrame: The rows indexed by symbol.
         """
-        result = convert_to_pandas(frame)
-        if self._empty_columns is None:
-            counts = self._lazy.select(pl.all().is_not_null().sum()).collect().row(0)
-            self._empty_columns = {
-                name
-                for name, count in zip(self._lazy.collect_schema(), counts)
-                if not count
-            }
-        for name in self._empty_columns:
-            if name in result.columns:
-                result[name] = result[name].astype("float64")
-        return result
+        return convert_to_pandas(frame)
 
     def _convert_output(
         self, frame: pl.DataFrame, as_pandas: bool
@@ -330,17 +317,15 @@ class FinanceDatabase:
         if selection is not None and selection not in selection_values:
             raise ValueError(invalid_selection_message)
         columns = selection_values if selection is None else [selection]
-        frame = (
-            self.filter_lazy_frame(filters, False, exclude_delisted)
-            .select(columns)
-            .collect()
+        unique = query_model.get_unique_values(
+            self.filter_lazy_frame(filters, False, exclude_delisted), columns
         )
         if selection is None:
             return {
-                column: query_model.get_sorted_options(frame, column, as_pandas)
+                column: query_model.get_sorted_options(unique[column], as_pandas)
                 for column in selection_values
             }
-        return query_model.get_sorted_options(frame, selection, as_pandas)
+        return query_model.get_sorted_options(unique[selection], as_pandas)
 
     def search(self, **kwargs: Any) -> pd.DataFrame | pl.DataFrame:
         """
@@ -464,7 +449,7 @@ def show_options(
         )
 
     location = str(COMPRESSION_PATH) + "/" if use_local_location else base_url
-    location += f"/categories/{selection}_categories.gzip"
+    location += f"/categories/{selection}_categories"
 
     try:
         categories = categories_model.get_categories(location, use_local_location)
@@ -473,13 +458,9 @@ def show_options(
             f"Failed to load data from {location}: {str(error)}.\n{LOAD_ERROR_HINT}"
         ) from error
 
-    options = {
-        index: categories.loc[index].dropna().to_numpy() for index in categories.index
-    }
     if not as_pandas:
         return {
-            index: pl.Series(index, [str(value) for value in values])
-            for index, values in options.items()
+            name: pl.Series(name, values, dtype=pl.String)
+            for name, values in categories.items()
         }
-
-    return options
+    return {name: np.array(values, dtype=object) for name, values in categories.items()}

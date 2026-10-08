@@ -12,7 +12,7 @@ FRAME = pl.DataFrame(
         "symbol": ["AAA", "AAA.L", "BBB", "OLD"],
         "name": ["Alpha Bank", "Alpha Bank", "Beta Energy", None],
         "sector": ["Financials", "Financials", "Energy", "Energy"],
-        "delisted": ["False", "False", "False", "True"],
+        "delisted": [False, False, False, True],
     }
 ).lazy()
 
@@ -60,12 +60,14 @@ def test_search_rows_ignores_unknown_columns(caplog) -> None:
 
 def test_get_sorted_options() -> None:
     """Test that options are sorted, unique and without missing values."""
-    frame = FRAME.collect()
-    assert list(query_model.get_sorted_options(frame, "sector")) == [
+    unique = query_model.get_unique_values(FRAME, ["sector", "name"])
+    assert list(query_model.get_sorted_options(unique["sector"])) == [
         "Energy",
         "Financials",
     ]
-    assert query_model.get_sorted_options(frame, "name", as_pandas=False).to_list() == [
+    assert query_model.get_sorted_options(
+        unique["name"], as_pandas=False
+    ).to_list() == [
         "Alpha Bank",
         "Beta Energy",
     ]

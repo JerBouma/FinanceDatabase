@@ -37,8 +37,7 @@ def convert_to_records(frame: pl.DataFrame) -> list[dict[str, Any]]:
     """
     Convert a frame to a list of JSON-serialisable records.
 
-    The database stores every value as text; ``delisted`` is the one flag and is
-    returned as a real boolean so a model doesn't have to interpret "False".
+    ``delisted`` is stored as a Boolean, so it is returned as a real boolean.
 
     Args:
         frame (pl.DataFrame): The (already bounded) frame.
@@ -46,12 +45,6 @@ def convert_to_records(frame: pl.DataFrame) -> list[dict[str, Any]]:
     Returns:
         list[dict[str, Any]]: One dict per row, with None for missing values.
     """
-    if "delisted" in frame.columns and frame.schema["delisted"] == pl.String:
-        frame = frame.with_columns(
-            pl.col("delisted").replace_strict(
-                {"True": True, "False": False}, default=None, return_dtype=pl.Boolean
-            )
-        )
     return frame.to_dicts()
 
 
