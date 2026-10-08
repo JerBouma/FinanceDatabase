@@ -2,6 +2,7 @@
 
 import glob
 import io
+import json
 from pathlib import Path
 
 import pandas as pd
@@ -138,3 +139,37 @@ def test_delisted_is_strictly_boolean() -> None:
             f"{len(offenders)} invalid/NaN value(s), e.g. "
             f"{offenders.index[:5].tolist()}"
         )
+
+
+def test_equity_categories_follow_gics() -> None:
+    """Every full sector / industry group / industry combination must exist in the GICS tree.
+
+    The same check runs on main after a merge (Check-GICS-Categorisation in
+    database_update.yml); running it here catches invalid combinations before merging.
+    """
+    gics = json.loads(
+        Path("compression/categories/categories.json").read_text(encoding="utf-8")
+    )
+    files = sorted(Path("database/equities").glob("*.csv"))
+    assert files, "no equities CSVs found under database/equities/"
+    columns = ["symbol", "sector", "industry_group", "industry"]
+    equities = pd.concat(
+        [
+            pd.read_csv(f, usecols=columns, dtype=str, keep_default_na=False)
+            for f in files
+        ]
+    )
+    complete = equities[
+        (equities["sector"] != "")
+        & (equities["industry_group"] != "")
+        & (equities["industry"] != "")
+    ]
+    invalid = [
+        f"{row.symbol}: {row.sector} / {row.industry_group} / {row.industry}"
+        for row in complete.itertuples()
+        if row.industry not in gics.get(row.sector, {}).get(row.industry_group, {})
+    ]
+    assert not invalid, (
+        f"{len(invalid)} equities have a combination that is not in "
+        f"compression/categories/categories.json: {invalid[:10]}"
+    )
