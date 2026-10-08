@@ -4,11 +4,12 @@
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor_this_Project-grey?logo=github)](https://github.com/sponsors/JerBouma)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-grey?logo=buymeacoffee)](https://www.buymeacoffee.com/jerbouma)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-grey?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/boumajeroen/)
-<!-- Hidden until the MCP server is published: [![MCP Server](https://img.shields.io/badge/MCP_Server-grey?logo=modelcontextprotocol)](#mcp-server) -->
 [![Documentation](https://img.shields.io/badge/Documentation-grey?logo=readme)](https://www.jeroenbouma.com/projects/financedatabase)
 [![Supported Python Versions](https://img.shields.io/pypi/pyversions/financedatabase)](https://pypi.org/project/financedatabase/)
 [![PYPI Version](https://img.shields.io/pypi/v/financedatabase)](https://pypi.org/project/financedatabase/)
 [![PYPI Downloads](https://static.pepy.tech/badge/financedatabase/month)](https://pepy.tech/project/financedatabase)
+
+<!-- Hidden until the MCP server is published: [![MCP Server](https://img.shields.io/badge/MCP_Server-grey?logo=modelcontextprotocol)](#mcp-server) -->
 
 As a private investor, the sheer amount of information that can be found on the internet is rather daunting. Trying to understand what types of companies or ETFs are available is incredibly challenging, with millions of companies and derivatives available on the market. Sure, the most traded companies and ETFs can quickly be found simply because they are known to the public (for example, Microsoft, Tesla, S&P 500 ETF, or an All-World ETF). However, what else is out there is often unknown.
 
@@ -22,20 +23,20 @@ Some key statistics of the database:
 
 <div align="center">
 
-![symbols](https://img.shields.io/badge/symbols-310%2C146-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-120%2C742-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-43%2C963-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-118-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--07-57606A?style=flat-square)
+![symbols](https://img.shields.io/badge/symbols-312%2C090-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-122%2C364-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-44%2C285-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-118-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--08-57606A?style=flat-square)
 
 </div>
 
 | | Asset class | Symbols | Exchanges | Coverage |
 | :-: | :-- | --: | --: | :-- |
-| 🏢 | **Equities** | 120,742 | 87 | 11 sectors · 69 industries · 118 countries |
-| 📦 | **ETFs** | 43,963 | 64 | 599 issuers · 35 categories |
+| 🏢 | **Equities** | 122,364 | 87 | 11 sectors · 69 industries · 118 countries |
+| 📦 | **ETFs** | 44,285 | 64 | 605 issuers · 35 categories |
 | 💼 | **Funds** | 58,011 | 34 | 1,560 fund families · 71 categories |
 | 📈 | **Indices** | 80,287 | 63 | 42 categories |
 | 💱 | **Currencies** | 2,556 | – | 178 currencies |
 | 🪙 | **Cryptocurrencies** | 3,378 | – | 352 coins · 12 quote currencies |
 | 🏦 | **Money Markets** | 1,209 | 2 | 126 fund families |
-| | **Total** | **310,146** | | |
+| | **Total** | **312,090** | | |
 
 <!-- STATISTICS:END -->
 
