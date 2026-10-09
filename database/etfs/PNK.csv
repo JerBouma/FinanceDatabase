@@ -20,13 +20,13 @@ COWTF,iPath Bloomberg Livestock Subindex Total Return(SM) ETN,USD,iPath Bloomber
 CPLCF,iShares VII Public Limited Company - iShares MSCI USA Small Cap UCITS ETF,USD,"iShares VII Public Limited Company - iShares MSCI USA Small Cap UCITS ETF is an exchange traded fund (ETF) managed by BlackRock. It aims to track the investment results of the MSCI USA Small Cap Index, providing exposure to small cap companies in the US equity market. The ETF is domiciled in Ireland.",Equities,Small Cap,BlackRock Asset Management,PNK,OTCM,,False
 CPTFF,Xtrackers (IE) Public Limited Company - Xtrackers S&P 500 Equal Weight UCITS ETF,USD,"Xtrackers (IE) Public Limited Company - Xtrackers S&P 500 Equal Weight UCITS ETF is an exchange traded fund (ETF) managed by DWS Investment S.A.. The ETF seeks to track the performance of the S&P 500 Equal Weight Index, which provides exposure to the S&P 500 companies, but with each company allocated the same weight, which gives a different risk/return profile than the market cap weighted S&P 500 index. The ETF is domiciled in Ireland.",Equities,Factors,DWS Investment,PNK,OTCM,IE00BLNMYC90,False
 CSKRF,ISHARES MSCI KOREA USD ACC,USD,,Equities,Emerging Markets,BlackRock Asset Management,PNK,OTCM,,False
-CSTNL,ISHARES CORE S&P 500,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
+CSTNL,ISHARES CORE S&P 500,USD,,Equities,Large Cap,BlackRock Asset Management,PNK,OTCM,,False
 CYSXF,ISHARES S&P/TSX CANADIAN PRE,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
-DAGXF,DB Agriculture Double Long ETN,USD,,,,,PNK,OTCM,,False
+DAGXF,DB Agriculture Double Long ETN,USD,,Derivatives,Trading,,PNK,OTCM,,False
 DAXXF,ISHARES CORE DAX DE EUR ACC,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,True
 DBGCF,DB ETC plc - db Physical Gold ETC,USD,"DB ETC plc - db Physical Gold ETC is an exchange-traded commodity (ETC) that provides investors with exposure to physical gold. The ETC is backed by physical gold bullion held in vaults. DB ETC plc is the issuer, offering a way to invest in gold without directly owning the metal.",Commodities,,Deutsche Bank Asset Management,PNK,OTCM,,False
 DBSHF,DB ETC PLC,USD,,,,,PNK,OTCM,,False
-DBXRF,Xtrackers - MSCI Japan UCITS ETF,USD,"This Xtrackers ETF aims to replicate the performance of the MSCI Japan Index, providing exposure to the Japanese equity market. The fund allows investors to participate in the growth of Japanese companies across various sectors. The ETF is UCITS compliant.",Equities,,Xtrackers,PNK,OTCM,,False
+DBXRF,Xtrackers - MSCI Japan UCITS ETF,USD,"This Xtrackers ETF aims to replicate the performance of the MSCI Japan Index, providing exposure to the Japanese equity market. The fund allows investors to participate in the growth of Japanese companies across various sectors. The ETF is UCITS compliant.",Equities,Developed Markets,Xtrackers,PNK,OTCM,,False
 DGLDF,VelocityShares 3x Inverse Gold ETN Linked to the S&P GSCI Gold Index ER,USD,"The investment seeks to replicate, net of expenses, three times the opposite (inverse) of the S&P GSCI Gold index ER.
  The index comprises futures contracts on a single commodity. The fluctuations in the values of it are intended generally to correlate with changes in the price of gold in global markets.",Derivatives,Trading,VelocityShares,PNK,OTCM,,False
 DJXXF,ISHARES STOXXE600 DE EUR DIS,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
@@ -75,7 +75,7 @@ IHEMF,iShares IV Public Limited Company - iShares Edge MSCI Europe Multifactor U
 IHHFF,ISHARES US AGG BND USD DIST,USD,,,,BlackRock Asset Management,PNK,OTCM,,False
 IHHSF,ISHARES MSCI PACIFIC EX-JPN,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
 IHIHF,ISHARES MSCI EM SMALL CAP,USD,,Equities,Small Cap,BlackRock Asset Management,PNK,OTCM,,False
-IHPCF,ISHARES CORE S&P 500,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,IE0031442068,False
+IHPCF,ISHARES CORE S&P 500,USD,,Equities,Large Cap,BlackRock Asset Management,PNK,OTCM,IE0031442068,False
 IHREF,ISHARES CORE MSCI JAPAN,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
 IHRMF,iShares Public Limited Company - iShares MSCI Japan UCITS ETF USD (Dist),USD,iShares Public Limited Company - iShares MSCI Japan UCITS ETF USD (Dist) seeks to track the investment results of an index composed of Japanese equities. It provides exposure to a broad range of companies listed on Japanese stock exchanges. The ETF is managed by BlackRock and domiciled in Ireland.,Equities,Developed Markets,BlackRock Asset Management,PNK,OTCM,IE00B02KXH56,False
 IHSEF,ISHARES ASIA PAC DIVIDEND,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
@@ -123,11 +123,11 @@ ISHFF,ISHARES USD SHORT DUR USD D,USD,,Derivatives,Trading,BlackRock Asset Manag
 ISHOF,ISHARES S&P SMALL CAP 600,USD,,Equities,Small Cap,BlackRock Asset Management,PNK,OTCM,,False
 ISHPF,ISHARES EM DIVIDEND,USD,,Equities,Emerging Markets,BlackRock Asset Management,PNK,OTCM,,False
 ISHRF,ISHARES CORE GBP CORP,USD,,,,BlackRock Asset Management,PNK,OTCM,,False
-ISHUF,ISHARES US TREAS 0-1YR USD A,USD,,,,BlackRock Asset Management,PNK,OTCM,,False
+ISHUF,ISHARES US TREAS 0-1YR USD A,USD,,Fixed Income,Treasury Bonds,BlackRock Asset Management,PNK,OTCM,,False
 ISHVF,iShares II Public Limited Company - iShares US Aggregate Bond UCITS ETF,USD,"The iShares US Aggregate Bond UCITS ETF, managed by iShares II Public Limited Company, seeks to track the investment results of an index composed of US dollar-denominated investment-grade bonds. The ETF offers broad exposure to the US investment-grade fixed-income market. The fund is domiciled in Ireland.",Fixed Income,Investment Grade Bonds,BlackRock Asset Management,PNK,OTCM,,False
-ISHYF,ISHARES USD HY CORP USD ACC,USD,,,,BlackRock Asset Management,PNK,OTCM,,False
+ISHYF,ISHARES USD HY CORP USD ACC,USD,,Fixed Income,High Yield Bonds,BlackRock Asset Management,PNK,OTCM,,False
 ISJMF,ISHARES JPM USD EM CRP USD A,USD,,,,BlackRock Asset Management,PNK,OTCM,,False
-ISJPF,ISHARES JPM USD EM BND USD A,USD,,,,BlackRock Asset Management,PNK,OTCM,,False
+ISJPF,ISHARES JPM USD EM BND USD A,USD,,Fixed Income,Emerging Markets,BlackRock Asset Management,PNK,OTCM,,False
 ISMCF,ISHARES MSCI USA USD ACC,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
 ISMJF,ISHARES CORE MSCI PACIF X-JP,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
 ISMVF,ISHARES EDGE MSCI WRLD VALUE,USD,,Equities,Value,BlackRock Asset Management,PNK,OTCM,,False
@@ -142,7 +142,7 @@ ISRPF,iShares Public Limited Company - iShares $ Corp Bond UCITS ETF,USD,"The iS
 ISRRF,ISHARES GBP CORP BOND 0-5YR,USD,,Fixed Income,Corporate Bonds,BlackRock Asset Management,PNK,OTCM,,False
 ISRUF,ISHARES S&P 500 FINANCIALS,USD,,Financials,,BlackRock Asset Management,PNK,OTCM,,False
 ISRVF,ISHARES MSCI JAPAN USD-H ACC,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
-ISRWF,ISHARES JPM USD EM BND USD D,USD,,,,BlackRock Asset Management,PNK,OTCM,IE00B2NPKV68,False
+ISRWF,ISHARES JPM USD EM BND USD D,USD,,Fixed Income,Emerging Markets,BlackRock Asset Management,PNK,OTCM,IE00B2NPKV68,False
 ISRZF,ISHARES USD HY CORP USD DIST,USD,,,,BlackRock Asset Management,PNK,OTCM,,False
 ISSHF,ISHARES USD TREASURY 7-10Y,USD,,Fixed Income,Treasury Bonds,BlackRock Asset Management,PNK,OTCM,,False
 ISSIF,ISHARES GLBL INFL LNKD GOVT,USD,,Fixed Income,Government Bonds,BlackRock Asset Management,PNK,OTCM,,False
@@ -150,13 +150,13 @@ ISSPF,ISHARES GLOBAL GOV BND-DISTR,USD,,,,BlackRock Asset Management,PNK,OTCM,,F
 ISSQF,ISHARES GLOBAL HY CORP-DISTR,USD,,,,BlackRock Asset Management,PNK,OTCM,,False
 ISSRF,ISHARES EDGE MSCI EM MIN VOL,USD,,Equities,Factors,BlackRock Asset Management,PNK,OTCM,,False
 ISSSF,ISHARES MSCI AUSTRALIA,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
-ISSXF,ISHARES CORE S&P 500 INDEX E,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
+ISSXF,ISHARES CORE S&P 500 INDEX E,USD,,Equities,Large Cap,BlackRock Asset Management,PNK,OTCM,,False
 ISSZF,iShares V Public Limited Company - iShares S&P 500 Utilities Sector UCITS ETF,USD,"The iShares S&P 500 Utilities Sector UCITS ETF, managed by iShares V Public Limited Company, aims to track the investment results of an index composed of U.S. equities in the utilities sector. This ETF provides exposure to companies involved in providing electricity, gas, and water to consumers. The fund is domiciled in Ireland.",Utilities,Value,BlackRock Asset Management,PNK,OTCM,,False
 ISTXF,iShares Public Limited Company - iShares $ Treasury Bond 1-3yr UCITS ETF,USD,"The iShares $ Treasury Bond 1-3yr UCITS ETF, managed by iShares Public Limited Company, seeks to track the investment results of an index composed of short-term U.S. Treasury bonds. This ETF provides exposure to U.S. government debt with a maturity of 1 to 3 years, offering a low-risk investment option. The fund is domiciled in Ireland.",Fixed Income,Treasury Bonds,BlackRock Asset Management,PNK,OTCM,,False
 ISUDF,ISHARES ULTRASHRT BOND USD-A,USD,,Fixed Income,,BlackRock Asset Management,PNK,OTCM,,False
 ISUPF,ISHARES US PROPERTY YIELD,USD,,Real Estate,REITs,BlackRock Asset Management,PNK,OTCM,,False
 ISVAF,iShares VII Public Limited Company - iShares NASDAQ 100 UCITS ETF,USD,"The iShares NASDAQ 100 UCITS ETF, managed by iShares VII Public Limited Company, aims to track the investment results of an index composed of the 100 largest non-financial companies listed on the NASDAQ stock exchange. This ETF provides exposure to leading technology and growth companies in the United States. The fund is domiciled in Ireland.",Equities,,BlackRock Asset Management,PNK,OTCM,IE00B53SZB19,False
-ISVFF,ISHARES S&P HEALTH CARE,USD,,Health Care,,BlackRock Asset Management,PNK,OTCM,,False
+ISVFF,ISHARES S&P HEALTH CARE,USD,,Health Care,Developed Markets,BlackRock Asset Management,PNK,OTCM,,False
 ISVIF,ISHARES USD TRES BOND 7-10Y,USD,,Fixed Income,,BlackRock Asset Management,PNK,OTCM,,False
 ISVPF,ISHARES MSCI EMU USD-H ACC,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
 ISVQF,ISHARES USD SHORT DUR USD A,USD,,Derivatives,Trading,BlackRock Asset Management,PNK,OTCM,,False
@@ -171,7 +171,7 @@ ISZZF,ISHARES SUST MSCI USA SRI,USD,,Equities,,BlackRock Asset Management,PNK,OT
 ITBFF,ISHARES USD TRSRY 1-3Y USD D,USD,,,,BlackRock Asset Management,PNK,OTCM,,False
 ITSXF,ISHARES S&P/TSX CAPPED FINAN,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
 IUAGF,ISHARES IV PLC AGEING POPULATON,USD,ISHARES IV PLC AGEING POPULATON is an exchange-traded fund listed on the OTC Bulletin Board under the ticker IUAGF and traded in USD. The fund is part of the BlackRock Asset Management range.,,,BlackRock Asset Management,PNK,OTCM,,False
-IUNSF,iShares S&P/TSX Capped Energy Index ETF,USD,"The iShares S&P/TSX Capped Energy Index ETF is an exchange-traded fund designed to replicate, to the extent possible, the performance of the S&P/TSX Capped Energy Index, net of expenses. It invests primarily in Canadian energy sector companies. The ETF offers exposure to the Canadian energy market.",Energy,,BlackRock Asset Management,PNK,OTCM,CA46428C1005,False
+IUNSF,iShares S&P/TSX Capped Energy Index ETF,USD,"The iShares S&P/TSX Capped Energy Index ETF is an exchange-traded fund designed to replicate, to the extent possible, the performance of the S&P/TSX Capped Energy Index, net of expenses. It invests primarily in Canadian energy sector companies. The ETF offers exposure to the Canadian energy market.",Energy,Developed Markets,BlackRock Asset Management,PNK,OTCM,CA46428C1005,False
 IUNTF,ISHARES MSCI EAFE INDEX ETF,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
 IUQFF,ISHARES IV PLC EDGE MSCI USA QU,USD,,Equities,,BlackRock Asset Management,PNK,OTCM,,False
 IUSPF,iShares S&P/TSX Capped REIT Index ETF,USD,"The iShares S&P/TSX Capped REIT Index ETF (XRE) is a Canadian ETF that seeks to replicate the performance of the S&P/TSX Capped REIT Index. This index represents Canadian real estate investment trusts (REITs), providing investors with exposure to the Canadian real estate sector through publicly traded REITs. The ETF is managed by BlackRock Canada.",Real Estate,REITs,BlackRock Asset Management,PNK,OTCM,CA46431D1033,False
@@ -187,7 +187,7 @@ IZIZF,ISHARES MSCI EM ACC,USD,,Equities,Emerging Markets,BlackRock Asset Managem
 JIREF,JPMorgan ETFs (Ireland) ICAV - Ultra-Short Income UCITS ETF,USD,The JPMorgan ETFs (Ireland) ICAV - Ultra-Short Income UCITS ETF is an exchange-traded fund. It seeks to provide current income while maintaining principal value by investing in a diversified portfolio of ultra-short-term fixed-income securities. The fund is domiciled in Ireland.,Derivatives,Trading,JPMorgan Asset Management,PNK,OTCM,,False
 JJATF,iPath Bloomberg Agriculture Subindex Total Return(SM) ETN,USD,iPath Bloomberg Agriculture Subindex Total Return ETN is an exchange-traded note providing exposure to a basket of agricultural commodities. The ETN tracks the Bloomberg Agriculture Subindex Total Return. The ETN offers investors a way to gain exposure to the agricultural commodity market.,Equities,,Barclays,PNK,OTCM,,False
 JJCTF,iPath Bloomberg Copper Subindex Total Return(SM) ETN,USD,iPath Bloomberg Copper Subindex Total Return ETN is an exchange-traded note providing exposure to copper futures. The ETN tracks the Bloomberg Copper Subindex Total Return. The ETN offers investors a way to gain exposure to the copper market.,Fixed Income,,Barclays,PNK,OTCM,US06739F1012,True
-JJETF,iPath Bloomberg Energy Subindex Total Return(SM) ETN,USD,iPath Bloomberg Energy Subindex Total Return ETN is an exchange-traded note providing exposure to a basket of energy commodities. The ETN tracks the Bloomberg Energy Subindex Total Return. The ETN offers investors a way to gain exposure to the energy commodity market.,,,,PNK,OTCM,,True
+JJETF,iPath Bloomberg Energy Subindex Total Return(SM) ETN,USD,iPath Bloomberg Energy Subindex Total Return ETN is an exchange-traded note providing exposure to a basket of energy commodities. The ETN tracks the Bloomberg Energy Subindex Total Return. The ETN offers investors a way to gain exposure to the energy commodity market.,Energy,Developed Markets,,PNK,OTCM,,True
 JJGTF,iPath Bloomberg Grains Subindex Total Return(SM) ETN,USD,"The investment seeks to provide investors with exposure to the Dow Jones-UBS Grains Subindex Total ReturnService Mark.
  The Dow Jones-UBS Grains Subindex Total ReturnService Mark (the ""index"") reflects the returns that are potentially available through an unleveraged investment in the futures contracts on grains commodities. The index is currently composed of three futures contracts on grains which are included in the Dow Jones-UBS Commodity Index Total ReturnService Mark.",Equities,,Barclays,PNK,OTCM,,False
 JJMTF,iPath Bloomberg Industrial Metals Subindex Total Return(SM) ETN,USD,iPath Bloomberg Industrial Metals Subindex Total Return ETN is an exchange-traded note providing exposure to a basket of industrial metals. The ETN tracks the Bloomberg Industrial Metals Subindex Total Return. The ETN offers investors a way to gain exposure to the industrial metals market.,Equities,,Barclays,PNK,OTCM,,True
@@ -204,7 +204,7 @@ MRJOF,Purpose Marijuana Opportunities Fund,USD,,,,Purpose Investments,PNK,OTCM,,
 NTETF,Nikkei 225 Exchange Traded Fund,USD,,Equities,,,PNK,OTCM,,False
 NXTUF,First Trust Global Funds Public Limited Company - First Trust Japan AlphaDEX UCITS ETF,USD,"First Trust Global Funds Public Limited Company - First Trust Japan AlphaDEX UCITS ETF is an exchange-traded fund (ETF) that tracks an index of Japanese equities selected by the AlphaDEX methodology. This methodology aims to identify stocks with superior risk-adjusted returns based on factors such as growth, value, and momentum. The ETF provides exposure to the Japanese stock market through a smart beta approach.",Financials,,First Trust Advisors,PNK,OTCM,,False
 OILNF,iPath S&P GSCI Crude Oil Total Return Index ETN,USD,iPath S&P GSCI Crude Oil Total Return Index ETN (OILNF) provides exposure to the S&P GSCI Crude Oil Total Return Index. This index reflects the returns of a single crude oil commodity futures contract. The ETN aims to track the performance of crude oil as an asset class.,Equities,,Barclays,PNK,OTCM,,False
-OLOXF,DB Crude Oil Long ETN,USD,,,,,PNK,OTCM,,False
+OLOXF,DB Crude Oil Long ETN,USD,,Derivatives,Trading,,PNK,OTCM,,False
 PGDDF,iPath Asian & Gulf Currency Revaluation ETN,USD,The iPath Asian & Gulf Currency Revaluation ETN was an exchange-traded note linked to the performance of a basket of Asian and Gulf currencies. The ETN aimed to provide investors with exposure to potential currency revaluations in those regions. This ETN has been delisted.,Equities,,Barclays,PNK,OTCM,,False
 PGMFF,iPath Bloomberg Platinum Subindex Total Return(SM) ETN,USD,The iPath Bloomberg Platinum Subindex Total Return ETN was an exchange-traded note designed to track the performance of a subindex representing platinum futures contracts. It provided investors with exposure to the platinum market through a debt instrument. This ETN has been delisted.,,,,PNK,OTCM,,True
 PHYMF,ISHARES PHYSICAL GOLD ETC,USD,,Commodities,,BlackRock Asset Management,PNK,OTCM,,False
