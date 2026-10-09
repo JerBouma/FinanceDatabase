@@ -46,7 +46,7 @@ def test_na_symbol_survives_local_compression_round_trip() -> None:
     """The valid ticker ``NA`` must not be interpreted as a missing index."""
     assert "NA" in equities.data.index
     assert not equities.data.index.hasnans
-    assert pd.isna(equities.data.loc["NA", "summary"])
+    assert equities.data.loc["NA", "name"].startswith("Nano Labs")
 
 
 def test_na_symbol_survives_remote_compression_round_trip(
@@ -69,7 +69,7 @@ def test_na_symbol_survives_remote_compression_round_trip(
 
     assert "NA" in remote_equities.data.index
     assert not remote_equities.data.index.hasnans
-    assert pd.isna(remote_equities.data.loc["NA", "summary"])
+    assert remote_equities.data.loc["NA", "name"].startswith("Nano Labs")
 
 
 SELECT_CASES = [
