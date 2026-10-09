@@ -218,7 +218,9 @@ jobs:
                 if len(feed) < 100 or not {'symbol', 'name'} <= set(feed.columns):
                     print(f"{name}: feed skipped, it looks broken ({len(feed)} rows)")
                     return None
-                feed['symbol'] = feed['symbol'].astype(str).str.strip()
+                # The feeds write share classes as BRK/A; the database uses BRK-A, so
+                # normalise them to match existing rows instead of adding duplicates.
+                feed['symbol'] = feed['symbol'].astype(str).str.strip().str.replace('/', '-', regex=False)
                 feed['name'] = feed['name'].astype(str).str.strip()
                 invalid = ~feed['symbol'].str.match(VALID_SYMBOL)
                 etp = feed['name'].str.contains(ETP_NAME, case=False, regex=True)
