@@ -1,110 +1,75 @@
 """Shared pytest setup.
 
 Before tests are collected, the compression artifacts that the package loads
-(`compression/<asset>.bz2` and `compression/categories/<asset>_categories.gzip`) are
-regenerated from the `database/` CSVs of the checked-out branch, so the tests run against the
+(`compression/<asset>.bz2`, `compression/<asset>.parquet` and the category files in
+`compression/categories/`) are regenerated from the `database/` CSVs of the checked-out
+branch with the same pipeline as the Database-Update workflow, so the tests run against the
 data under review rather than the last CI build. The original bytes are restored when the
 session ends, so the working tree stays clean.
 """
 
+import os
 import pathlib
-from typing import Any
 
-import pandas as pd
+from scripts.compression.compression_controller import update_categories
+from scripts.compression.compression_model import (
+    ASSET_CLASSES,
+    get_typed_frame,
+    scan_asset_class,
+    write_compressed_csv,
+)
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
-
-# Columns excluded per asset class when building the `<asset>_categories.gzip`
-# files. Must stay in sync with the `Update-Categorization-Files` job in
-# `.github/workflows/database_update.yml`.
-ASSET_CATEGORY_SKIP_COLS = {
-    "cryptos": {"name", "summary"},
-    "currencies": {"name"},
-    "equities": {"name", "summary", "website", "delisted"},
-    "etfs": {"name", "summary", "delisted"},
-    "funds": {"name", "summary", "manager_name", "manager_bio"},
-    "indices": {"name"},
-    "moneymarkets": {"name"},
-}
-
-# Asset classes stored as one CSV per exchange under `database/<asset>/`
-# rather than a single `database/<asset>.csv`.
-ASSETS_SPLIT_BY_EXCHANGE = {"equities", "etfs", "funds"}
+DATABASE = str(REPO_ROOT / "database")
+COMPRESSION = str(REPO_ROOT / "compression")
 
 
-def _load_asset_frame(asset: str) -> pd.DataFrame | None:
-    """Load an asset class from `database/` the same way the
-    Database-Update workflow does before compressing it."""
-    read_options = {"dtype": str, "keep_default_na": False}
-    if asset in ASSETS_SPLIT_BY_EXCHANGE:
-        files = sorted((REPO_ROOT / "database" / asset).glob("*.csv"))
-        if not files:
-            return None
-        df = pd.concat(
-            [pd.read_csv(f, **read_options) for f in files],
-            ignore_index=True,
-        )
-    else:
-        csv_path = REPO_ROOT / "database" / f"{asset}.csv"
-        if not csv_path.exists():
-            return None
-        df = pd.read_csv(csv_path, **read_options)
-    return df.sort_values(df.columns[0]).reset_index(drop=True)
+def _get_artifact_paths() -> list[pathlib.Path]:
+    """List every compression artifact the regeneration writes."""
+    compression = REPO_ROOT / "compression"
+    paths = []
+    for asset in ASSET_CLASSES:
+        paths += [
+            compression / f"{asset}.bz2",
+            compression / f"{asset}.parquet",
+            compression / "categories" / f"{asset}_categories.gzip",
+            compression / "categories" / f"{asset}_categories.parquet",
+        ]
+    return paths
 
 
 def _regenerate_compression_artifacts() -> None:
-    """Mirror the Database-Update workflow so tests run against compression
-    artifacts derived from the *checked-out* CSV files.
+    """Rebuild the compression artifacts from the checked-out `database/` CSVs.
 
-    The financedatabase library reads `compression/<asset>.bz2` and
-    `compression/categories/<asset>_categories.gzip`; without this step those
-    artifacts lag the `database/` CSVs on a PR branch and tests silently
-    validate against `main` instead of the PR change.
+    The Parquet files are written with Polars' default compression instead of the
+    workflow's slower maximum level: the content is the same, only the file is larger.
     """
-    compression_dir = REPO_ROOT / "compression"
-    categories_dir = compression_dir / "categories"
-    for asset, skip_cols in ASSET_CATEGORY_SKIP_COLS.items():
-        df = _load_asset_frame(asset)
-        if df is None:
-            continue
-        df.to_csv(compression_dir / f"{asset}.bz2", index=False, compression="bz2")
-        # Compression preserves empty cells as empty strings. Categorization
-        # intentionally treats those cells as missing so they are not emitted
-        # as valid options, matching the workflow's default NA handling.
-        indexed = df.set_index(df.columns[0]).replace("", pd.NA)
-        categories: dict[str, Any] = {}
-        for column in indexed.columns:
-            if column in skip_cols:
-                continue
-            categories[column] = sorted(indexed[column].dropna().unique(), key=str)
-        cat_df = pd.DataFrame.from_dict(categories, orient="index").reset_index()
-        cat_df.to_csv(
-            categories_dir / f"{asset}_categories.gzip",
-            index=False,
-            compression={"method": "gzip", "mtime": 0},
+    for asset in ASSET_CLASSES:
+        frame = scan_asset_class(DATABASE, asset).collect()
+        write_compressed_csv(frame, os.path.join(COMPRESSION, f"{asset}.bz2"))
+        get_typed_frame(frame).write_parquet(
+            os.path.join(COMPRESSION, f"{asset}.parquet"), statistics=True
         )
+    update_categories(DATABASE, COMPRESSION)
 
 
-def _snapshot_compression_artifacts() -> dict[pathlib.Path, bytes]:
-    """Capture current bytes of compression artifacts so they can be restored."""
-    compression_dir = REPO_ROOT / "compression"
-    snapshot: dict[pathlib.Path, bytes] = {}
-    for asset in ASSET_CATEGORY_SKIP_COLS:
-        for path in (
-            compression_dir / f"{asset}.bz2",
-            compression_dir / "categories" / f"{asset}_categories.gzip",
-        ):
-            if path.exists():
-                snapshot[path] = path.read_bytes()
-    return snapshot
+def _snapshot_compression_artifacts() -> dict[pathlib.Path, bytes | None]:
+    """Capture the current bytes of the compression artifacts (None when missing)."""
+    return {
+        path: path.read_bytes() if path.exists() else None
+        for path in _get_artifact_paths()
+    }
 
 
-def _restore_compression_artifacts(snapshot: dict[pathlib.Path, bytes]) -> None:
-    """Restore compression artifacts to their pre-test contents."""
+def _restore_compression_artifacts(snapshot: dict[pathlib.Path, bytes | None]) -> None:
+    """Restore the compression artifacts to their pre-test contents."""
     for path, data in snapshot.items():
         try:
-            path.write_bytes(data)
-        except Exception:
+            if data is None:
+                path.unlink(missing_ok=True)
+            else:
+                path.write_bytes(data)
+        except OSError:
             pass
 
 
