@@ -391,7 +391,7 @@ The Finance Database MCP Server gives any AI assistant that supports the [Model 
 
 ### Remote server
 
-Connect directly to the hosted server at `https://financedatabase.jeroenbouma.com/mcp`. Nothing needs to be installed locally and no API key or sign-in is required.
+Connect directly to the hosted server at `https://financedatabase.jeroenbouma.com/mcp`. Nothing needs to be installed locally and no API key or sign-in is required. See the [privacy policy](PRIVACY.md) for what the hosted server processes.
 
 | Client | Steps |
 |:---|:---|
