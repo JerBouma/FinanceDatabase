@@ -128,6 +128,12 @@ For Equities, these are the categories. Other asset classes follow a similar lay
 
 If in any case you are not able to acquire data for a specific category, keep the field blank so that it is clear that there is no data available. For any of these options, make sure you use an existing category so that it remains compact. For example, the sectors, industry groups and industries loosely approximate to the [The Global Industry Classification Standard (GICS®)](https://www.msci.com/our-solutions/indexes/gics) as created by MSCI. No actual data is collected from this source and this database merely tries to reflect the sectors and industries as best as possible. This is completely done through manual curation. The actual datasets as curated by MSCI have not been used in the development of any part of this database and remains the most up to date, paid, solution. Other categorizations are entirely developed by the author and can freely be changed.
 
+### What belongs in Equities
+
+Equities only hold the shares of companies, including preferred shares, depositary receipts of shares and units of SPACs. Bonds, notes and other debt (also perpetual), warrants and rights, and certificates such as turbos and mini futures are not part of the database: most of them have a maturity or expiry date, and none of them is a company. Funds go in ETFs, Funds or Money Markets.
+
+The tests and the weekly update check this with one rule (`check_non_share` in `scripts/listings/helpers.py`): a name with a maturity or expiry date, a strike, or a coupon without share wording, or an international (XS) ISIN, is not a company share. `python scripts/remove_non_shares.py --dry-run` lists any such rows.
+
 ### ETF categories
 
 ETFs have two category columns. `category_group` says what the fund holds; `category` refines it. They are decided in this order, based on the fund's holdings where they are known and otherwise on its name:

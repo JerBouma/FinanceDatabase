@@ -361,6 +361,11 @@ jobs:
           # US ETFs are added without SEC objectives / registrant-based families.
           SEC_USER_AGENT_EMAIL: ${{ vars.SEC_USER_AGENT_EMAIL }}
         run: python scripts/update_listings.py
+      # Equities only hold company shares: any bond, note, warrant or certificate that an
+      # update above added is removed again. See scripts/remove_non_shares.py for the rule.
+      - name: Remove Non-Shares from Equities
+        continue-on-error: true
+        run: python scripts/remove_non_shares.py
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'

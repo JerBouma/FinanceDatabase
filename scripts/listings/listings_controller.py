@@ -3,6 +3,7 @@
 __docformat__ = "google"
 
 import argparse
+import glob
 import os
 import re
 from collections.abc import Callable
@@ -20,6 +21,7 @@ from scripts.listings.helpers import (
     DATED_NAME,
     SUFFIX,
     US_ETF_FILES,
+    check_non_share,
     get_symbol_key,
     normalize_name,
 )
@@ -46,6 +48,8 @@ def apply_source(
         if listing.symbol in db.symbols or listing.symbol in seen:
             continue
         if DATED_NAME.search(listing.name):
+            continue
+        if listing.kind == "equities" and check_non_share(listing.name):
             continue
         seen.add(listing.symbol)
         frame = db.get_frame(listing.kind, listing.file)
@@ -219,6 +223,46 @@ def run(
     if failures:
         print(f"Sources skipped this run: {', '.join(failures)}")
     return failures
+
+
+def remove_non_shares(database: str, dry_run: bool = False) -> list[str]:
+    """
+    Remove the rows of the equities files that are not company shares (see
+    helpers.check_non_share), whatever added them.
+
+    Args:
+        database (str): The database directory.
+        dry_run (bool): Only report the rows, change nothing.
+
+    Returns:
+        list[str]: The removed rows as "symbol (exchange file): name".
+    """
+    removed = []
+    for path in sorted(glob.glob(os.path.join(database, "equities", "*.csv"))):
+        frame = pd.read_csv(path, index_col=0, dtype=str, keep_default_na=False)
+        # Some listings use their ISIN as symbol (XS0188935174.AS).
+        isin_symbol = frame.index.to_series().where(
+            frame.index.str.match(r"^[A-Z]{2}\d{6,}"), ""
+        )
+        isin = frame["isin"].where(frame["isin"] != "", isin_symbol)
+        mask = pd.Series(
+            [
+                check_non_share(name, country, code)
+                for name, country, code in zip(
+                    frame["name"], frame["country"], isin, strict=True
+                )
+            ],
+            index=frame.index,
+        )
+        if not mask.any():
+            continue
+        file_name = os.path.basename(path)
+        removed += [
+            f"{s} ({file_name}): {frame.at[s, 'name']}" for s in frame.index[mask]
+        ]
+        if not dry_run:
+            frame[~mask].to_csv(path, lineterminator="\n")
+    return removed
 
 
 def main() -> None:
