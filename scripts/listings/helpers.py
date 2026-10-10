@@ -30,6 +30,54 @@ DATED_NAME = re.compile(
     r"|\bexpir(?:es|ing|ation)\b|\b\d{1,2}/\d{1,2}/(?:19|20)?\d{2}\b",
     re.IGNORECASE,
 )
+# Equities only hold the shares of companies. A name with a maturity or expiry date, a
+# strike, or a coupon without any share wording, or an international (XS) ISIN marks a
+# bond, note, warrant or certificate instead. The weekly update skips these and
+# scripts/remove_non_shares.py removes any that reach the equities files.
+MONTHS = "JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC"
+DATE_IN_NAME = re.compile(
+    r"\b(?:0[1-9]|[12]\d|3[01])(?:0[1-9]|1[0-2])\d{2}\b"
+    r"|\b\d{1,2}[/.]\d{1,2}[/.](?:19|20)?\d{2}\b"
+    rf"|\b\d{{1,2}}\s?(?:{MONTHS})\s?(?:\d{{2}}|\d{{4}})?\b"
+    r"|\b(?:19|20)?\d{2}\s?-\s?(?:19|20)?\d{2}$"
+    r"|\bdue\b|\bexpir",
+    re.IGNORECASE,
+)
+OPTION_NAME = re.compile(r"\b(?:CALL|PUT)\b.*\d", re.IGNORECASE)
+COUPON = re.compile(r"\d+(?:[.,]\d+)?\s?%")
+SHARE_WORDS = re.compile(
+    r"\b(?:pref|pfd|preferred|preference|depositary|cumulative|cum|shares?|stock"
+    r"|units?)\b",
+    re.IGNORECASE,
+)
+DEBT_WORDS = re.compile(
+    r"\b(?:notes?|nts?|bonds?|bds|debentures?|ncd|secs|perp|pl)\b|%pl\b",
+    re.IGNORECASE,
+)
+
+
+def check_non_share(name: str, country: str = "", isin: str = "") -> bool:
+    """
+    Check whether an equities row is not a company share: a dated instrument, an
+    option or warrant, coupon-bearing debt or an instrument with an international
+    (XS) ISIN.
+
+    Args:
+        name (str): The instrument name.
+        country (str): The issuer's country, empty when unknown.
+        isin (str): The ISIN (or an ISIN used as symbol), empty when unknown.
+
+    Returns:
+        bool: True for an instrument that does not belong in equities.
+    """
+    if isin.upper().startswith("XS") or DATE_IN_NAME.search(name):
+        return True
+    if OPTION_NAME.search(name):
+        return True
+    coupon_debt = COUPON.search(name) and not SHARE_WORDS.search(name)
+    return bool(coupon_debt and (not country or DEBT_WORDS.search(name)))
+
+
 NAME_STOPWORDS = (
     r"\b(inc|incorporated|corp|corporation|ltd|limited|plc|co|company|holdings?|group|"
     r"sa|ag|nv|se|the|class [a-z]|common stock|ordinary shares|shares|stock|llc|lp)\b"
