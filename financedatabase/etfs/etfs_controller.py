@@ -98,13 +98,13 @@ class ETFs(FinanceDatabase):
 
         Which returns:
 
-        | symbol | name                                       | currency | category  | exchange |
-        |:-------|:-------------------------------------------|:---------|:----------|:---------|
-        | BLCR   | iShares Large Cap Core Active ETF          | USD      | Large Cap | NGM      |
-        | ENHU   | iShares Enhanced Large Cap Core Active ETF | USD      | Large Cap | NGM      |
-        | IQQ    | iShares Nasdaq 100 ETF                     | USD      | Large Cap | NGM      |
-        | IUTSF  | iShares S&P/TSX 60 Index ETF               | USD      | Large Cap | PNK      |
-        | IVV    | iShares Core S&P 500 ETF                   | USD      | Large Cap | PCX      |
+        | symbol  | name                           | currency | category  | exchange |
+        |:--------|:-------------------------------|:---------|:----------|:---------|
+        | 1329.T  | iShares Core Nikkei 225 ETF    | JPY      | Large Cap | JPX      |
+        | 1475.T  | iShares Core TOPIX ETF         | JPY      | Large Cap | JPX      |
+        | 1655.T  | iShares S&P 500 ETF            | JPY      | Large Cap | JPX      |
+        | 2563.T  | iShares S&P 500 JPY Hedged ETF | JPY      | Large Cap | JPX      |
+        | 2834.HK | ISHARES NASDAQ 100 ETF-HKD     | HKD      | Large Cap | HKG      |
         """
         return self._select_rows(
             {

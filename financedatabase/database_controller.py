@@ -424,13 +424,12 @@ class FinanceDatabase:
 
         Which returns:
 
-        | symbol | name                             | currency | industry                                 | exchange | market_cap |
-        |:-------|:---------------------------------|:---------|:-----------------------------------------|:---------|:-----------|
-        | ASMIY  | ASM International N.V.           | USD      | Semiconductors & Semiconductor Equipment | PNK      | Large Cap  |
-        | ASML   | ASML Holding N.V.                | USD      | Semiconductors & Semiconductor Equipment | NMS      | Mega Cap   |
-        | ASMLF  | ASML Holding N.V.                | USD      | Semiconductors & Semiconductor Equipment | PNK      | Mega Cap   |
-        | ASMXF  | ASM International N.V.           | USD      | Semiconductors & Semiconductor Equipment | PNK      | Large Cap  |
-        | BESIY  | BE Semiconductor Industries N.V. | USD      | Semiconductors & Semiconductor Equipment | PNK      | Mid Cap    |
+        | symbol  | name                             | currency | industry                                 | exchange | market_cap |
+        |:--------|:---------------------------------|:---------|:-----------------------------------------|:---------|:-----------|
+        | ASM.AS  | ASM International N.V.           | EUR      | Semiconductors & Semiconductor Equipment | AMS      | Large Cap  |
+        | ASML.AS | ASML Holding N.V.                | EUR      | Semiconductors & Semiconductor Equipment | AMS      | Mega Cap   |
+        | BESI.AS | BE Semiconductor Industries N.V. | EUR      | Semiconductors & Semiconductor Equipment | AMS      | Large Cap  |
+        | NXPI    | NXP Semiconductors NV            | USD      | Semiconductors & Semiconductor Equipment | NMS      | Large Cap  |
         """  # noqa: E501
         as_pandas = kwargs.pop("as_pandas", True) in [True, "True"]
         case_sensitive = kwargs.pop("case_sensitive", False) in [True, "True"]

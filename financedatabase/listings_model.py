@@ -297,8 +297,10 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
     Returns:
         pl.DataFrame: The symbol column, "listing_score" (higher is stronger),
             "primary_listing", "main_venue", "listings" (the number of listings of
-            the instrument) and "usual_currency" (whether it trades in the most
-            common currency of its home's listings on that exchange).
+            the instrument), "usual_currency" (whether it trades in the most common
+            currency of its home's listings on that exchange) and "home_known"
+            (whether the instrument's country is known, always for an asset class
+            without countries).
     """
     columns = lazy.collect_schema().names()
     symbol = columns[0]
@@ -434,4 +436,7 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         "main_venue",
         "listings",
         "usual_currency",
+        (pl.col("_home").is_not_null() | pl.lit("country" not in columns)).alias(
+            "home_known"
+        ),
     )

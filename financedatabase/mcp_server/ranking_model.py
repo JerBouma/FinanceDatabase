@@ -38,6 +38,7 @@ PREFERENCE_COLUMNS = [
     "_not_primary",
     "_cap",
     "_listings",
+    "_missing",
     "_name_length",
     "_listing",
     "_unusual_currency",
@@ -220,13 +221,14 @@ def build_preference_columns(
     """
     Build the columns that order equally relevant matches:
 
-    - main lines before secondary ones: a listing that is not primary, a variant
-      symbol of an asset class without listings, or a product in a derivatives
-      category;
+    - main lines before secondary ones: a listing that is not primary or whose
+      instrument has no country, a variant symbol of an asset class without
+      listings, or a product in a derivatives category;
     - primary listings first;
     - larger market caps (a product without one ranks with mid caps);
     - instruments with more listings worldwide, a measure of prominence (Siemens AG
       before Siemens Limited);
+    - more complete records (fewer empty fields);
     - shorter names, so Apple Inc. is listed before Apple Hospitality;
     - stronger listings of the same instrument: the home market first, then larger
       main venues, and listings in the usual currency of their market (RIO.L in
@@ -244,7 +246,9 @@ def build_preference_columns(
     symbol = pl.col(columns[0])
     if has_ranks:
         not_primary = ~pl.col("primary_listing").fill_null(False)
-        secondary = not_primary
+        # A listing whose instrument has no country lacks issuer data: often a
+        # certificate or another line that is not the instrument itself.
+        secondary = not_primary | ~pl.col("home_known").fill_null(True)
         listing = -pl.col("listing_score").fill_null(0.0)
         listings = -pl.col("listings").fill_null(1)
         usual_currency = pl.col("usual_currency").fill_null(False)
@@ -293,6 +297,9 @@ def build_preference_columns(
         not_primary.alias("_not_primary"),
         cap.alias("_cap"),
         listings.alias("_listings"),
+        pl.sum_horizontal(
+            [pl.col(c).is_null().cast(pl.Int8) for c in columns[1:]]
+        ).alias("_missing"),
         name.str.len_chars().fill_null(10_000).alias("_name_length"),
         listing.alias("_listing"),
         (~usual_currency).alias("_unusual_currency"),
@@ -344,12 +351,13 @@ def interleave_classes(frames: list[pl.DataFrame]) -> pl.DataFrame:
     Merge the ranked matches of several asset classes. Within a bucket the classes
     take turns, so a search for 'bitcoin' shows the coin, ETFs and companies. The
     class whose first match is the closest goes first: by tier, plain products before
-    derivatives, a large company before a product and a small one after it, and the
-    shortest name.
+    derivatives, a large company before a product and a small one after it, the
+    instrument with the most listings, and the shortest name.
 
     Args:
         frames (list[pl.DataFrame]): Per asset class its matches in order, with the
-            columns "_bucket", "_tier", "_derivative", "_cap" and "_name_length".
+            columns "_bucket", "_tier", "_derivative", "_cap", "_listings" and
+            "_name_length".
 
     Returns:
         pl.DataFrame: The merged matches without the ranking columns.
@@ -365,7 +373,17 @@ def interleave_classes(frames: list[pl.DataFrame]) -> pl.DataFrame:
     )
     order = (
         merged.filter(pl.col("_turn") == 0)
-        .sort(["_bucket", "_tier", "_derivative", "_cap", "_name_length", "_class"])
+        .sort(
+            [
+                "_bucket",
+                "_tier",
+                "_derivative",
+                "_cap",
+                "_listings",
+                "_name_length",
+                "_class",
+            ]
+        )
         .select(
             "_bucket", "_class", pl.int_range(pl.len()).over("_bucket").alias("_order")
         )
@@ -378,6 +396,7 @@ def interleave_classes(frames: list[pl.DataFrame]) -> pl.DataFrame:
             "_tier",
             "_derivative",
             "_cap",
+            "_listings",
             "_name_length",
             "_turn",
             "_class",
