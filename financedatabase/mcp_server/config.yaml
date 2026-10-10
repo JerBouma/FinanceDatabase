@@ -28,12 +28,12 @@ cache:
 
 # Descriptions of the filter parameters; the filters themselves come from each class's FIELDS.
 filter_descriptions:
-  country: "Country of the company's headquarters, e.g. 'United States' or 'Netherlands'."
+  country: "Country of the company's headquarters, e.g. 'United States' or 'Netherlands'. This is not where it trades: ASML (Netherlands) is also listed in New York and Frankfurt. To find the listings in a country, filter on exchange or currency."
   sector: "GICS-style sector, e.g. 'Information Technology', 'Health Care' or 'Financials'."
   industry_group: "GICS-style industry group, e.g. 'Semiconductors & Semiconductor Equipment' or 'Banks'."
   industry: "GICS-style industry, e.g. 'Biotechnology' or 'Hotels, Restaurants & Leisure'."
   currency: "Trading currency as an ISO code, e.g. 'USD' or 'EUR'."
-  exchange: "Exchange code, e.g. 'NMS' (NASDAQ Global Select), 'NYQ' (NYSE) or 'AMS' (Euronext Amsterdam)."
+  exchange: "Exchange code, e.g. 'NMS' (NASDAQ Global Select), 'NYQ' (NYSE), 'PNK' (OTC Markets) or 'AMS' (Euronext Amsterdam). Use it to find an instrument's listings on certain exchanges, e.g. query='ASML' with exchange='NMS,NYQ,PNK' for its US listings."
   mic: "ISO 10383 market identifier code, e.g. 'XNAS', 'XNYS' or 'XAMS'."
   market: "Full market name, e.g. 'NASDAQ Global Select' or 'Euronext Amsterdam'."
   market_cap: "Market cap tier: 'Mega Cap' (>= $200B), 'Large Cap' (>= $10B), 'Mid Cap' (>= $2B), 'Small Cap' (>= $300M), 'Micro Cap' (>= $50M) or 'Nano Cap'."

@@ -57,9 +57,17 @@ def get_expected_selection(
             data[field].map(lambda x, w=wanted: isinstance(x, str) and x.lower() in w),
         )
     if kwargs.get("only_primary_listing"):
-        primary = data[~data.index.str.contains(".", regex=False, na=False)]
+        primary = data[_get_primary_mask(obj, data)]
         data = primary if not primary.empty else data
     return data
+
+
+def _get_primary_mask(obj: Any, data: pd.DataFrame) -> pd.Series:
+    """Primary listings: the package's listing ranks, or the symbols without a suffix."""
+    symbols = obj.get_primary_symbols()
+    if symbols is None:
+        return ~data.index.str.contains(".", regex=False, na=False)
+    return data.index.isin(symbols.to_list())
 
 
 def get_expected_search(obj: Any, **kwargs: Any) -> pd.DataFrame:
@@ -75,7 +83,7 @@ def get_expected_search(obj: Any, **kwargs: Any) -> pd.DataFrame:
     for key, value in kwargs.items():
         if key == "only_primary_listing":
             if value is True:
-                data = data[~data.index.str.contains(".", regex=False, na=False)]
+                data = data[_get_primary_mask(obj, data)]
         elif key == "index":
             data = _select_rows(
                 data, [bool(re.search(value, str(s))) for s in data.index]

@@ -25,6 +25,7 @@ class ETFs(FinanceDatabase):
     """
 
     FILE_NAME = "etfs.bz2"
+    HAS_LISTINGS = True
     PLURAL_NAME = "etfs"
     FIELDS = {
         "category_group": ("category group", "category groups"),
@@ -66,7 +67,8 @@ class ETFs(FinanceDatabase):
             mic (str | list, optional): Specific MIC or list of MICs to filter ETFs on.
                 Defaults to None (all MICs).
             only_primary_listing (bool, optional): Whether to only include primary listings
-                (symbols without an exchange suffix). Defaults to False.
+                (per instrument its listing on the main exchange of its home market, see
+                listings_model). Defaults to False.
             exclude_delisted (bool, optional): Whether to exclude delisted ETFs. Defaults to
                 True.
             as_pandas (bool, optional): Whether to return a pandas DataFrame (True) or a

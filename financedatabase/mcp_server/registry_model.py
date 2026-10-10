@@ -227,8 +227,10 @@ class AssetToolRegistry:
                     "only_primary_listing",
                     bool,
                     False,
-                    "Only primary listings (symbols without an exchange suffix such "
-                    "as '.L' or '.DE').",
+                    "Only primary listings: per instrument its listing on the main "
+                    "exchange of its home market (ASML.AS for ASML), or without one "
+                    "its listing on the largest main exchange abroad. Leaves out "
+                    "cross-listings, over-the-counter lines and depositary receipts.",
                 )
             )
         columns = ", ".join(spec.columns) if spec.columns else "see the data"

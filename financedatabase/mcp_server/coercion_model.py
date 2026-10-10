@@ -77,18 +77,24 @@ def split_values(value: Any) -> list[str]:
     return [part for part in parts if part]
 
 
-def resolve_values(value: Any, options_lower: set[str]) -> tuple[list[str], list[str]]:
+def resolve_values(
+    value: Any, options_lower: set[str], expand_prefix: bool = False
+) -> tuple[list[str], list[str]]:
     """
     Split a filter value into known options, keeping commas that belong to a value.
 
     Some valid values contain commas themselves ('Hotels, Restaurants & Leisure',
     'AB Fixed-Income Shares, Inc.'), so a plain split would break them. The parts are
     therefore re-joined greedily: at each position the longest run of parts that
-    forms a known option (case-insensitive) is taken as one value.
+    forms a known option (case-insensitive) is taken as one value. A part that is the
+    start of exactly one option, word for word, is taken as that option ('Vanguard'
+    for 'Vanguard Asset Management'); with expand_prefix it is taken as every option
+    it starts ('BlackRock' for 'BlackRock Funds' and 'BlackRock Liquidity Funds').
 
     Args:
         value (Any): The raw filter value (string, comma-separated string or list).
         options_lower (set[str]): The valid options, lower-cased.
+        expand_prefix (bool): Whether a part may stand for several options.
 
     Returns:
         tuple[list[str], list[str]]: The resolved values (as given by the caller) and
@@ -109,8 +115,13 @@ def resolve_values(value: Any, options_lower: set[str]) -> tuple[list[str], list
                 position = end
                 break
         else:
-            resolved.append(parts[position])
-            unknown.append(parts[position])
+            prefix = parts[position].lower() + " "
+            starting = sorted(o for o in options_lower if o.startswith(prefix))
+            if len(starting) == 1 or (starting and expand_prefix):
+                resolved.extend(starting)
+            else:
+                resolved.append(parts[position])
+                unknown.append(parts[position])
             position += 1
     return resolved, unknown
 

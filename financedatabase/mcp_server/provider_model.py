@@ -14,21 +14,14 @@ import polars as pl
 
 import financedatabase as fd
 from financedatabase.database_controller import FinanceDatabase
+from financedatabase.mcp_server import ranking_model
 from financedatabase.mcp_server.coercion_model import resolve_values, suggest
+from financedatabase.mcp_server.ranking_model import PREFERENCE_COLUMNS, RankingProfile
 from financedatabase.utilities.logger_model import get_logger
 
 logger = get_logger()
 
 LOCAL_ENV = "FINANCEDATABASE_MCP_LOCAL"
-
-MARKET_CAP_ORDER = [
-    "Mega Cap",
-    "Large Cap",
-    "Mid Cap",
-    "Small Cap",
-    "Micro Cap",
-    "Nano Cap",
-]
 
 
 class QueryError(ValueError):
@@ -143,6 +136,7 @@ class DatabaseProvider:
         self._identifier_columns = list(identifier_columns or [])
         self._use_local_location = use_local_location
         self._instances: dict[str, tuple[FinanceDatabase, float]] = {}
+        self._profiles: dict[str, tuple[FinanceDatabase, RankingProfile]] = {}
         self._locks = {name: threading.Lock() for name in self.specs}
 
     def get_instance(self, tool_name: str) -> FinanceDatabase:
@@ -261,7 +255,9 @@ class DatabaseProvider:
                     f"Available filters: {', '.join(spec.get_filters())}."
                 )
             values, missing = resolve_values(
-                raw, instance.get_lowercase_options(name, exclude_delisted)
+                raw,
+                instance.get_lowercase_options(name, exclude_delisted),
+                expand_prefix=name == "family",
             )
             resolved[name] = values
             if missing:
@@ -365,80 +361,67 @@ class DatabaseProvider:
                 columns.append(column)
         return columns
 
-    def _build_query_expressions(
-        self, columns: list[str], query: str
-    ) -> tuple[pl.Expr, pl.Expr]:
+    def _add_listing_ranks(
+        self, tool_name: str, lazy: pl.LazyFrame
+    ) -> tuple[pl.LazyFrame, RankingProfile, bool]:
         """
-        Build the match filter and relevance rank for a free-text query.
-
-        Matching is a case-insensitive literal substring on symbol and name (no regex,
-        so 'S&P 500' or 'BRK.B' need no escaping), plus an exact match on identifier
-        columns such as ISIN where the asset class has them.
+        Join the listing score, primary flag and cross-trading flag of each row where
+        the asset class has listings, and get the ranking measurements of the class.
 
         Args:
-            columns (list[str]): The columns of the dataset, the symbol column first.
-            query (str): The free-text query.
+            tool_name (str): The asset class tool name.
+            lazy (pl.LazyFrame): The (filtered) dataset.
 
         Returns:
-            tuple[pl.Expr, pl.Expr]: The boolean filter and an integer rank (0 = best).
+            tuple[pl.LazyFrame, RankingProfile, bool]: The dataset, the measurements
+                and whether the listing ranks were joined.
         """
-        needle = query.strip().lower()
-        symbol = pl.col(columns[0]).str.to_lowercase()
-        name = pl.col("name").str.to_lowercase() if "name" in columns else None
+        instance = self.get_instance(tool_name)
+        ranks = instance.get_listing_ranks()
+        cached = self._profiles.get(tool_name)
+        if cached is None or cached[0] is not instance:
+            profile = ranking_model.create_profile(instance.get_lazy_frame(), ranks)
+            self._profiles[tool_name] = (instance, profile)
+        profile = self._profiles[tool_name][1]
+        if ranks is None:
+            return lazy, profile, False
+        return lazy.join(ranks.lazy(), on=ranks.columns[0], how="left"), profile, True
 
-        identifier = pl.lit(False)
-        for column in self._identifier_columns:
-            if column in columns:
-                identifier = identifier | (pl.col(column).str.to_lowercase() == needle)
-        identifier = identifier.fill_null(False)
-
-        match = symbol.str.contains(needle, literal=True).fill_null(False) | identifier
-        if name is not None:
-            match = match | name.str.contains(needle, literal=True).fill_null(False)
-
-        rank = pl.when((symbol == needle) | identifier).then(0)
-        rank = rank.when(symbol.str.starts_with(needle)).then(1)
-        if name is not None:
-            rank = rank.when(name.str.starts_with(needle)).then(2)
-        return match, rank.otherwise(3).cast(pl.Int8)
-
-    @staticmethod
-    def _build_tiebreak_columns(columns: list[str]) -> list[pl.Expr]:
+    def _rank_rows(
+        self, tool_name: str, lazy: pl.LazyFrame, query: str | None
+    ) -> pl.LazyFrame:
         """
-        Build the columns that order equally relevant matches.
-
-        Primary listings come first, then larger market caps and shorter names, so
-        Apple Inc. is listed before Apple Hospitality.
+        Filter the rows matching a query and order them by relevance, or without a
+        query by preference alone (see ranking_model).
 
         Args:
-            columns (list[str]): The columns of the dataset, the symbol column first.
+            tool_name (str): The asset class tool name.
+            lazy (pl.LazyFrame): The (filtered) dataset.
+            query (str | None): The free-text query.
 
         Returns:
-            list[pl.Expr]: The tiebreak columns.
+            pl.LazyFrame: The ordered rows with the ranking columns.
         """
-        exprs = [
-            pl.col(columns[0])
-            .str.contains(".", literal=True)
-            .fill_null(True)
-            .alias("_secondary"),
-            (
-                pl.col("market_cap")
-                .replace_strict(
-                    {tier: i for i, tier in enumerate(MARKET_CAP_ORDER)},
-                    default=len(MARKET_CAP_ORDER),
-                    return_dtype=pl.Int8,
-                )
-                .fill_null(len(MARKET_CAP_ORDER))
-                if "market_cap" in columns
-                else pl.lit(len(MARKET_CAP_ORDER), dtype=pl.Int8)
-            ).alias("_cap"),
-            (
-                pl.col("name").str.len_chars().fill_null(10_000)
-                if "name" in columns
-                else pl.lit(0)
-            ).alias("_name_length"),
-        ]
-        return exprs
+        available = self.get_instance(tool_name).get_columns()
+        lazy, profile, has_ranks = self._add_listing_ranks(tool_name, lazy)
+        lazy = lazy.with_columns(
+            *ranking_model.build_preference_columns(available, profile, has_ranks)
+        )
+        sort_columns = [*PREFERENCE_COLUMNS, available[0]]
+        if query and query.strip():
+            match, tier = ranking_model.build_query_expressions(
+                available, query, profile, self._identifier_columns
+            )
+            lazy = lazy.filter(match).with_columns(tier.alias("_tier"))
+            sort_columns = ["_tier", *sort_columns]
+        if not has_ranks:
+            lazy = ranking_model.mark_duplicates(lazy, sort_columns)
+        if query and query.strip():
+            lazy = lazy.with_columns(
+                ranking_model.get_bucket(pl.col("_tier")).alias("_bucket")
+            )
+            sort_columns = ["_bucket", *sort_columns[1:]]
+        return lazy.sort(sort_columns)
 
     def select_page(
         self,
@@ -464,7 +447,7 @@ class DatabaseProvider:
             filters (dict[str, Any]): Raw filter values per field.
             query (str | None): Free-text query on symbol and name.
             include_delisted (bool): Include delisted entries (equities and ETFs).
-            only_primary_listing (bool): Only symbols without an exchange suffix.
+            only_primary_listing (bool): Only primary listings, see listings_model.
             columns (list[str] | None): Columns to return; None for the defaults.
             offset (int): Rows to skip.
             limit (int): Rows to return.
@@ -494,15 +477,7 @@ class DatabaseProvider:
         )
 
         available = instance.get_columns()
-        if query and query.strip():
-            match, rank = self._build_query_expressions(available, query)
-            lazy = (
-                lazy.filter(match)
-                .with_columns(
-                    rank.alias("_rank"), *self._build_tiebreak_columns(available)
-                )
-                .sort(["_rank", "_secondary", "_cap", "_name_length", available[0]])
-            )
+        lazy = self._rank_rows(tool_name, lazy, query)
 
         total = lazy.select(pl.len()).collect().item()
         page = lazy.slice(offset, limit).select(columns or available).collect()
@@ -627,8 +602,7 @@ class DatabaseProvider:
             lazy = instance.get_lazy_frame(
                 spec.supports_delisted and not include_delisted
             )
-            match, rank = self._build_query_expressions(available, query)
-            lazy = lazy.filter(match)
+            lazy = self._rank_rows(tool_name, lazy, query)
             per_class[tool_name] = lazy.select(pl.len()).collect().item()
             if not per_class[tool_name]:
                 continue
@@ -641,11 +615,7 @@ class DatabaseProvider:
                 return pl.lit(None, dtype=pl.String).alias(name)
 
             frames.append(
-                lazy.with_columns(
-                    rank.alias("_rank"), *self._build_tiebreak_columns(available)
-                )
-                .sort(["_rank", "_secondary", "_cap", "_name_length", available[0]])
-                .head(offset + limit)
+                lazy.head(offset + limit)
                 .select(
                     pl.lit(tool_name).alias("asset_class"),
                     pl.col(available[0]).alias("symbol"),
@@ -655,8 +625,9 @@ class DatabaseProvider:
                         )
                         for name in output_columns[1:]
                     ),
-                    "_rank",
-                    "_secondary",
+                    "_bucket",
+                    "_tier",
+                    "_derivative",
                     "_cap",
                     "_name_length",
                 )
@@ -666,12 +637,7 @@ class DatabaseProvider:
         total = sum(per_class.values())
         if not frames:
             return pl.DataFrame(schema=["asset_class", *output_columns]), 0, per_class
-        merged = (
-            pl.concat(frames)
-            .sort(["_rank", "_secondary", "_cap", "_name_length", "symbol"])
-            .slice(offset, limit)
-            .drop("_rank", "_secondary", "_cap", "_name_length")
-        )
+        merged = ranking_model.interleave_classes(frames).slice(offset, limit)
         logger.debug(
             "search_instruments(%r): %d matches in %.3fs",
             query,

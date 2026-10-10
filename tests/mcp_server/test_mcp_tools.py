@@ -108,8 +108,9 @@ def test_pagination_walks_without_overlap(server):
 
 
 def test_pages_match_the_package_select(server):
-    """Test that the tool returns exactly what select() returns, in the same order."""
-    expected = fd.Equities(use_local_location=True).select(
+    """Test that the tool returns the rows select() returns, primary listings first."""
+    equities = fd.Equities(use_local_location=True)
+    expected = equities.select(
         country="Netherlands", sector="Financials", as_pandas=False
     )
     payload = call_json(
@@ -117,10 +118,13 @@ def test_pages_match_the_package_select(server):
         "equities",
         {"country": "netherlands", "sector": "Financials", "limit": 200},
     )
+    symbols = [row["symbol"] for row in payload["rows"]]
     assert payload["total"] == expected.height
-    assert [row["symbol"] for row in payload["rows"]] == expected.get_column(
-        "symbol"
-    ).to_list()[:200]
+    assert set(symbols) <= set(expected.get_column("symbol"))
+
+    primary = set(equities.get_primary_symbols())
+    flags = [symbol in primary for symbol in symbols]
+    assert flags == sorted(flags, reverse=True)
 
 
 def test_show_columns_and_summary_truncation(server):
@@ -171,9 +175,13 @@ def test_invalid_filter_returns_package_message_with_suggestions(server):
     assert "Did you mean 'Netherlands'" in text
 
     # Many values: point to show_options rather than listing them all.
-    text = call_text(server.mcp, "etfs", {"family": "Vanguard"})
+    text = call_text(server.mcp, "etfs", {"family": "Vanguard Asset Managment"})
     assert "'Vanguard Asset Management'" in text
     assert "show_options(asset_class='etfs', selection='family')" in text
+
+    # The start of a family stands for it.
+    payload = call_json(server.mcp, "etfs", {"family": "Vanguard", "limit": 1})
+    assert payload["rows"][0]["family"] == "Vanguard Asset Management"
 
 
 def test_invalid_column_returns_suggestions(server):
@@ -216,6 +224,27 @@ def test_query_ranks_exact_symbol_first(server):
         assert "aapl" in row["symbol"].lower() or "aapl" in row["name"].lower()
 
 
+def test_query_ranks_the_home_listing_first(server):
+    """Test that a company's listing on its home exchange comes before those abroad."""
+    payload = call_json(server.mcp, "equities", {"query": "ASML", "limit": 3})
+    assert payload["rows"][0]["symbol"] == "ASML.AS"
+
+    us = call_json(server.mcp, "equities", {"query": "ASML", "currency": "USD"})
+    assert {"ASML", "ASMLF"} <= {row["symbol"] for row in us["rows"]}
+
+
+def test_query_matches_index_symbols_without_caret(server):
+    """Test that an index is found by its symbol without the leading caret."""
+    payload = call_json(server.mcp, "indices", {"query": "AEX", "limit": 3})
+    assert payload["rows"][0]["symbol"] == "^AEX"
+
+
+def test_query_ranks_the_most_common_quote_first(server):
+    """Test that a cryptocurrency's most commonly quoted pair comes first."""
+    payload = call_json(server.mcp, "cryptos", {"query": "bitcoin", "limit": 3})
+    assert payload["rows"][0]["symbol"] == "BTC-USD"
+
+
 def test_query_is_literal_not_regex(server):
     """Test that characters with a regex meaning are matched literally."""
     payload = call_json(server.mcp, "indices", {"query": "S&P 500", "limit": 5})
@@ -232,6 +261,11 @@ def test_search_instruments_across_asset_classes(server):
     assert payload["total"] == sum(payload["matches_per_asset_class"].values())
     assert payload["rows"][0]["symbol"] == "AAPL"
     assert {row["asset_class"] for row in payload["rows"]} <= set(ASSET_TOOLS)
+
+    mixed = call_json(server.mcp, "search_instruments", {"query": "bitcoin"})
+    first = [row["asset_class"] for row in mixed["rows"][:6]]
+    assert first[0] == "cryptos"
+    assert len(set(first)) >= 3
 
     only_cryptos = call_json(
         server.mcp,
