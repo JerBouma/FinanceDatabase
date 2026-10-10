@@ -29,6 +29,7 @@ MARKET_CAP_ORDER = [
 # that every cryptocurrency pair has).
 VARIANT_SEPARATOR_SHARE = 0.5
 SEPARATORS = [".", "-", "="]
+CURRENCY_COLUMNS = ["currency", "base_currency", "quote_currency"]
 # Categories of the database that hold leveraged, inverse and other trading products.
 DERIVATIVE_CATEGORIES = ["Derivatives", "Trading"]
 PREFERENCE_COLUMNS = [
@@ -36,8 +37,10 @@ PREFERENCE_COLUMNS = [
     "_derivative",
     "_not_primary",
     "_cap",
-    "_listing",
+    "_listings",
     "_name_length",
+    "_listing",
+    "_unusual_currency",
     "_currency",
 ]
 
@@ -49,14 +52,18 @@ class RankingProfile:
 
     Attributes:
         trailing_words (list[str]): Words that end many names, see listings_model.
-        currency_order (dict[str, int]): Currencies by the number of instruments, the
-            most common 0.
+        currency_order (dict[str, int]): Currencies by how often they occur in the
+            currency columns, the most common 0.
         variant_separators (list[str]): Symbol separators that mark a variant.
+        name_keys (pl.DataFrame | None): The symbol column, "_key" (the name without
+            its common trailing words) and "_words" (the name as spaced lowercase
+            words), to join to queried rows.
     """
 
     trailing_words: list[str] = field(default_factory=list)
     currency_order: dict[str, int] = field(default_factory=dict)
     variant_separators: list[str] = field(default_factory=list)
+    name_keys: pl.DataFrame | None = None
 
 
 def get_frequency_order(values: pl.Series) -> dict[str, int]:
@@ -85,18 +92,29 @@ def create_profile(lazy: pl.LazyFrame, ranks: pl.DataFrame | None) -> RankingPro
         RankingProfile: The measurements.
     """
     columns = lazy.collect_schema().names()
-    wanted = [c for c in (columns[0], "name", "currency") if c in columns]
-    if "quote_currency" in columns:
-        wanted.append("quote_currency")
-    frame = lazy.select(wanted).collect()
+    currencies = [c for c in CURRENCY_COLUMNS if c in columns]
+    wanted = [c for c in (columns[0], "name") if c in columns]
+    frame = lazy.select(*wanted, *currencies).collect()
     symbols = frame.get_column(columns[0]).drop_nulls()
 
     profile = RankingProfile()
     if "name" in columns:
         profile.trailing_words = get_trailing_words(frame.get_column("name"))
-    currency = "quote_currency" if "quote_currency" in columns else "currency"
-    if currency in columns:
-        profile.currency_order = get_frequency_order(frame.get_column(currency))
+        profile.name_keys = frame.select(
+            columns[0],
+            get_name_key(pl.col("name"), profile.trailing_words)
+            .fill_null(pl.col(columns[0]))
+            .alias("_key"),
+            (
+                pl.lit(" ")
+                + pl.col("name").str.to_lowercase().str.replace_all(r"[^a-z0-9]+", " ")
+                + pl.lit(" ")
+            ).alias("_words"),
+        ).unique(columns[0])
+    if currencies:
+        profile.currency_order = get_frequency_order(
+            pl.concat([frame.get_column(c) for c in currencies]).alias("currency")
+        )
     if ranks is None and len(symbols):
         profile.variant_separators = [
             separator
@@ -114,10 +132,13 @@ def build_query_expressions(
     identifier_columns: list[str],
 ) -> tuple[pl.Expr, pl.Expr]:
     """
-    Build the match filter and relevance tier for a free-text query.
+    Build the match filter and relevance tier for a free-text query. The tier needs
+    the "_key" and "_words" columns of the profile's name keys where the asset class
+    has names.
 
     Matching is a case-insensitive literal substring on symbol and name (no regex,
-    so 'S&P 500' or 'BRK.B' need no escaping), plus an exact match on identifier
+    so 'S&P 500' or 'BRK.B' need no escaping), also with punctuation ignored
+    ('Anheuser-Busch' finds 'Anheuser Busch'), plus an exact match on identifier
     columns such as ISIN. A leading ^ of an index symbol is optional ('AEX' finds
     ^AEX).
 
@@ -168,14 +189,18 @@ def build_query_expressions(
         return match, tier.otherwise(7).cast(pl.Int8)
 
     name = pl.col("name").str.to_lowercase()
-    key = get_name_key(pl.col("name"), profile.trailing_words)
+    key = pl.col("_key")
     needle_key = (
         pl.select(get_name_key(pl.lit(query), profile.trailing_words)).item() or needle
     )
-    words = pl.lit(" ") + name.str.replace_all(r"[^a-z0-9]+", " ") + pl.lit(" ")
+    words = pl.col("_words")
     spaced = " " + " ".join(re.sub(r"[^a-z0-9]+", " ", needle).split()) + " "
 
     match = match | name.str.contains(needle, literal=True).fill_null(False)
+    if spaced.strip():
+        match = match | words.str.contains(spaced.strip(), literal=True).fill_null(
+            False
+        )
     named = (key == needle_key) | (
         words.str.starts_with(spaced) & bare_symbol.str.starts_with(bare)
     )
@@ -200,8 +225,12 @@ def build_preference_columns(
       category;
     - primary listings first;
     - larger market caps (a product without one ranks with mid caps);
-    - stronger listings: the home market first, then larger main venues;
+    - instruments with more listings worldwide, a measure of prominence (Siemens AG
+      before Siemens Limited);
     - shorter names, so Apple Inc. is listed before Apple Hospitality;
+    - stronger listings of the same instrument: the home market first, then larger
+      main venues, and listings in the usual currency of their market (RIO.L in
+      pounds before 0KWZ.L in dollars);
     - more common currencies, so Bitcoin USD is listed before Bitcoin EUR.
 
     Args:
@@ -210,20 +239,23 @@ def build_preference_columns(
         has_ranks (bool): Whether the listing ranks are joined to the dataset.
 
     Returns:
-        list[pl.Expr]: The preference columns, named as in PREFERENCE_COLUMNS, and
-            "_key", the name key that marks duplicates (see mark_duplicates).
+        list[pl.Expr]: The preference columns, named as in PREFERENCE_COLUMNS.
     """
     symbol = pl.col(columns[0])
     if has_ranks:
         not_primary = ~pl.col("primary_listing").fill_null(False)
         secondary = not_primary
         listing = -pl.col("listing_score").fill_null(0.0)
+        listings = -pl.col("listings").fill_null(1)
+        usual_currency = pl.col("usual_currency").fill_null(False)
     else:
         variant = pl.lit(False)
         for separator in profile.variant_separators:
             variant = variant | symbol.str.contains(separator, literal=True)
         not_primary = secondary = variant.fill_null(False)
         listing = pl.lit(0.0)
+        listings = pl.lit(-1)
+        usual_currency = pl.lit(True)
 
     derivative = pl.lit(False)
     for column in ("category_group", "category"):
@@ -260,17 +292,18 @@ def build_preference_columns(
         derivative.alias("_derivative"),
         not_primary.alias("_not_primary"),
         cap.alias("_cap"),
-        listing.alias("_listing"),
+        listings.alias("_listings"),
         name.str.len_chars().fill_null(10_000).alias("_name_length"),
+        listing.alias("_listing"),
+        (~usual_currency).alias("_unusual_currency"),
         order(currency, profile.currency_order).alias("_currency"),
-        get_name_key(name, profile.trailing_words).fill_null(symbol).alias("_key"),
     ]
 
 
 def mark_duplicates(lazy: pl.LazyFrame, sort_columns: list[str]) -> pl.LazyFrame:
     """
-    Mark every row after the first of its name key as secondary, for asset classes
-    without listings: 'Bitcoin EUR' after 'Bitcoin USD'.
+    Mark every row after the first of its name key ("_key") as secondary, for asset
+    classes without listings: 'Bitcoin EUR' after 'Bitcoin USD'.
 
     Args:
         lazy (pl.LazyFrame): The rows with the preference columns.

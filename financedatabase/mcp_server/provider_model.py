@@ -365,8 +365,8 @@ class DatabaseProvider:
         self, tool_name: str, lazy: pl.LazyFrame
     ) -> tuple[pl.LazyFrame, RankingProfile, bool]:
         """
-        Join the listing score, primary flag and cross-trading flag of each row where
-        the asset class has listings, and get the ranking measurements of the class.
+        Join the listing ranks of each row where the asset class has listings, and
+        get the ranking measurements of the class.
 
         Args:
             tool_name (str): The asset class tool name.
@@ -378,14 +378,47 @@ class DatabaseProvider:
         """
         instance = self.get_instance(tool_name)
         ranks = instance.get_listing_ranks()
-        cached = self._profiles.get(tool_name)
-        if cached is None or cached[0] is not instance:
-            profile = ranking_model.create_profile(instance.get_lazy_frame(), ranks)
-            self._profiles[tool_name] = (instance, profile)
-        profile = self._profiles[tool_name][1]
+        profile = self._get_profile(tool_name)
+        symbol = instance.get_columns()[0]
         if ranks is None:
             return lazy, profile, False
-        return lazy.join(ranks.lazy(), on=ranks.columns[0], how="left"), profile, True
+        return lazy.join(ranks.lazy(), on=symbol, how="left"), profile, True
+
+    def _add_name_keys(self, tool_name: str, lazy: pl.LazyFrame) -> pl.LazyFrame:
+        """
+        Join the name key and word form of each row's name (see ranking_model).
+
+        Args:
+            tool_name (str): The asset class tool name.
+            lazy (pl.LazyFrame): The (filtered) dataset.
+
+        Returns:
+            pl.LazyFrame: The dataset with "_key" and "_words" where it has names.
+        """
+        profile = self._get_profile(tool_name)
+        if profile.name_keys is None:
+            return lazy
+        symbol = self.get_instance(tool_name).get_columns()[0]
+        return lazy.join(profile.name_keys.lazy(), on=symbol, how="left")
+
+    def _get_profile(self, tool_name: str) -> RankingProfile:
+        """
+        Get the ranking measurements of an asset class, made once per instance.
+
+        Args:
+            tool_name (str): The asset class tool name.
+
+        Returns:
+            RankingProfile: The measurements.
+        """
+        instance = self.get_instance(tool_name)
+        cached = self._profiles.get(tool_name)
+        if cached is None or cached[0] is not instance:
+            profile = ranking_model.create_profile(
+                instance.get_lazy_frame(), instance.get_listing_ranks()
+            )
+            self._profiles[tool_name] = (instance, profile)
+        return self._profiles[tool_name][1]
 
     def _rank_rows(
         self, tool_name: str, lazy: pl.LazyFrame, query: str | None
@@ -403,20 +436,25 @@ class DatabaseProvider:
             pl.LazyFrame: The ordered rows with the ranking columns.
         """
         available = self.get_instance(tool_name).get_columns()
+        searching = bool(query and query.strip())
+        profile = self._get_profile(tool_name)
+        lazy = self._add_name_keys(tool_name, lazy)
+        if searching:
+            match, tier = ranking_model.build_query_expressions(
+                available, query, profile, self._identifier_columns
+            )
+            lazy = lazy.filter(match)
         lazy, profile, has_ranks = self._add_listing_ranks(tool_name, lazy)
         lazy = lazy.with_columns(
             *ranking_model.build_preference_columns(available, profile, has_ranks)
         )
         sort_columns = [*PREFERENCE_COLUMNS, available[0]]
-        if query and query.strip():
-            match, tier = ranking_model.build_query_expressions(
-                available, query, profile, self._identifier_columns
-            )
-            lazy = lazy.filter(match).with_columns(tier.alias("_tier"))
+        if searching:
+            lazy = lazy.with_columns(tier.alias("_tier"))
             sort_columns = ["_tier", *sort_columns]
         if not has_ranks:
             lazy = ranking_model.mark_duplicates(lazy, sort_columns)
-        if query and query.strip():
+        if searching:
             lazy = lazy.with_columns(
                 ranking_model.get_bucket(pl.col("_tier")).alias("_bucket")
             )
@@ -602,10 +640,19 @@ class DatabaseProvider:
             lazy = instance.get_lazy_frame(
                 spec.supports_delisted and not include_delisted
             )
-            lazy = self._rank_rows(tool_name, lazy, query)
-            per_class[tool_name] = lazy.select(pl.len()).collect().item()
+            match, _ = ranking_model.build_query_expressions(
+                available, query, self._get_profile(tool_name), self._identifier_columns
+            )
+            per_class[tool_name] = (
+                self._add_name_keys(tool_name, lazy)
+                .filter(match)
+                .select(pl.len())
+                .collect()
+                .item()
+            )
             if not per_class[tool_name]:
                 continue
+            lazy = self._rank_rows(tool_name, lazy, query)
 
             def select_column(
                 name: str, source: str, columns: list[str] = available
