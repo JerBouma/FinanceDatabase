@@ -23,6 +23,7 @@ class Equities(FinanceDatabase):
     """
 
     FILE_NAME = "equities.bz2"
+    HAS_LISTINGS = True
     PLURAL_NAME = "equities"
     FIELDS = {
         "country": ("country", "countries"),
@@ -77,7 +78,8 @@ class Equities(FinanceDatabase):
             market_cap (str | list, optional): Specific market cap or list of market caps to
                 filter equities on. Defaults to None (all market caps).
             only_primary_listing (bool, optional): Whether to only include primary listings
-                (symbols without an exchange suffix). Defaults to False.
+                (per instrument its listing on the main exchange of its home market, see
+                listings_model). Defaults to False.
             exclude_delisted (bool, optional): Whether to exclude delisted equities.
                 Defaults to True.
             as_pandas (bool, optional): Whether to return a pandas DataFrame (True) or a

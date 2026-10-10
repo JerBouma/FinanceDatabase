@@ -38,6 +38,14 @@ def test_filter_rows_and_primary_listings() -> None:
     assert primary.collect().get_column("symbol").to_list() == ["AAA"]
 
 
+def test_primary_listings_use_the_given_symbols() -> None:
+    """Test that primary listings come from the listing ranks when they are given."""
+    primary = query_model.filter_primary_listings(
+        FRAME, "symbol", pl.Series(["AAA.L", "BBB"])
+    )
+    assert primary.collect().get_column("symbol").to_list() == ["AAA.L", "BBB"]
+
+
 def test_match_pattern_falls_back_to_python_regex() -> None:
     """Test that look-ahead, which Polars doesn't support, still matches."""
     expression = query_model.match_pattern(pl.col("name"), "^(?=.*Alpha)", False)

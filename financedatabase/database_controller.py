@@ -10,7 +10,7 @@ import pandas as pd
 import polars as pl
 import requests
 
-from financedatabase import categories_model, query_model
+from financedatabase import categories_model, listings_model, query_model
 from financedatabase.cache_model import load_lazy_frame
 from financedatabase.frame_model import FinanceFrame
 from financedatabase.helpers import convert_to_list
@@ -28,6 +28,7 @@ DATA_REPO = (
     "https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/compression/"
 )
 ROW_POSITION = "__financedatabase_row__"
+EQUITIES_FILE_NAME = "equities.bz2"
 ASSET_CLASSES = [
     "equities",
     "etfs",
@@ -57,6 +58,8 @@ class FinanceDatabase:
     """
 
     FILE_NAME = ""
+    # Whether instruments are listed on several exchanges, with one primary listing.
+    HAS_LISTINGS = False
     # Selectable columns in select() order: column -> (label, plural) for error messages.
     FIELDS: dict[str, tuple[str, str]] = {}
     PLURAL_NAME = ""
@@ -90,6 +93,7 @@ class FinanceDatabase:
         ```
         """
         location = str(COMPRESSION_PATH) + "/" if use_local_location else base_url
+        self._source = (base_url, COMPRESSION_PATH if use_local_location else None)
         try:
             self._lazy = load_lazy_frame(
                 self.FILE_NAME,
@@ -103,6 +107,7 @@ class FinanceDatabase:
             ) from error
         self._data: pd.DataFrame | None = None
         self._options: dict[tuple[str, bool], set[str]] = {}
+        self._listing_ranks: pl.DataFrame | None = None
 
     @property
     def data(self) -> pd.DataFrame:
@@ -134,6 +139,7 @@ class FinanceDatabase:
             .lazy()
         )
         self._options = {}
+        self._listing_ranks = None
 
     def get_columns(self) -> list[str]:
         """
@@ -157,6 +163,58 @@ class FinanceDatabase:
             pl.LazyFrame: The lazy dataset.
         """
         return query_model.exclude_delisted_rows(self._lazy, exclude_delisted)
+
+    def get_listing_ranks(self) -> pl.DataFrame | None:
+        """
+        Get the rank of every listing and whether it is the primary listing of its
+        instrument, computed once (see listings_model).
+
+        Returns:
+            pl.DataFrame | None: The symbol column, "listing_rank" and
+                "primary_listing", or None for an asset class without listings.
+        """
+        if not self.HAS_LISTINGS or "exchange" not in self.get_columns():
+            return None
+        if self._listing_ranks is None:
+            self._listing_ranks = listings_model.get_listing_ranks(
+                self._lazy, self.get_main_venues()
+            )
+        return self._listing_ranks
+
+    def get_main_venues(self) -> list[str]:
+        """
+        Get the exchanges that are main venues (see listings_model), measured on this
+        asset class and, for one without countries, also on the equities.
+
+        Returns:
+            list[str]: The exchanges.
+        """
+        venues = listings_model.get_main_venues(self._lazy)
+        if "country" not in self.get_columns():
+            equities = load_lazy_frame(EQUITIES_FILE_NAME, *self._source)
+            venues = sorted(
+                {
+                    *venues,
+                    *listings_model.get_main_venues(
+                        equities.select("exchange", "country")
+                    ),
+                }
+            )
+        return venues
+
+    def get_primary_symbols(self) -> pl.Series | None:
+        """
+        Get the symbols of the primary listings: per instrument the listing on the
+        main exchange of its home market, or the best listing abroad without one.
+
+        Returns:
+            pl.Series | None: The symbols, or None for an asset class without
+                listings, whose primary listings are the symbols without a suffix.
+        """
+        ranks = self.get_listing_ranks()
+        if ranks is None:
+            return None
+        return ranks.filter("primary_listing").get_column(ranks.columns[0])
 
     def get_lowercase_options(self, field: str, exclude_delisted: bool) -> set[str]:
         """
@@ -215,7 +273,9 @@ class FinanceDatabase:
             lazy = query_model.filter_rows(lazy, field, values)
 
         if only_primary_listing:
-            primary = query_model.filter_primary_listings(lazy, self.get_columns()[0])
+            primary = query_model.filter_primary_listings(
+                lazy, self.get_columns()[0], self.get_primary_symbols()
+            )
             if query_model.count_rows(primary):
                 lazy = primary
             else:
@@ -380,6 +440,11 @@ class FinanceDatabase:
             kwargs,
             self.get_columns(),
             case_sensitive,
+            (
+                self.get_primary_symbols()
+                if kwargs.get("only_primary_listing") is True
+                else None
+            ),
         )
         return self._convert_output(lazy.collect(), as_pandas)
 

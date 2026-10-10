@@ -89,17 +89,24 @@ def filter_rows(lazy: pl.LazyFrame, column: str, values: list[str]) -> pl.LazyFr
     return lazy.filter(pl.col(column).str.to_lowercase().is_in(values_lower))
 
 
-def filter_primary_listings(lazy: pl.LazyFrame, symbol_column: str) -> pl.LazyFrame:
+def filter_primary_listings(
+    lazy: pl.LazyFrame, symbol_column: str, primary_symbols: pl.Series | None = None
+) -> pl.LazyFrame:
     """
-    Filter the primary listings, the symbols without an exchange suffix.
+    Filter the primary listings: the given symbols, or without them the symbols
+    without an exchange suffix.
 
     Args:
         lazy (pl.LazyFrame): The dataset.
         symbol_column (str): The name of the symbol column.
+        primary_symbols (pl.Series | None, optional): The symbols of the primary
+            listings, see listings_model. Defaults to None.
 
     Returns:
         pl.LazyFrame: The primary listings.
     """
+    if primary_symbols is not None:
+        return lazy.filter(pl.col(symbol_column).is_in(primary_symbols.implode()))
     return lazy.filter(~pl.col(symbol_column).str.contains(".", literal=True))
 
 
@@ -156,6 +163,7 @@ def search_rows(
     queries: dict,
     columns: list[str],
     case_sensitive: bool = False,
+    primary_symbols: pl.Series | None = None,
 ) -> pl.LazyFrame:
     """
     Search the rows matching every query.
@@ -170,6 +178,8 @@ def search_rows(
         columns (list[str]): The columns of the dataset, the symbol column first.
         case_sensitive (bool, optional): Whether the search is case-sensitive.
             Defaults to False.
+        primary_symbols (pl.Series | None, optional): The symbols of the primary
+            listings. Defaults to None, the symbols without an exchange suffix.
 
     Returns:
         pl.LazyFrame: The matching rows.
@@ -179,7 +189,7 @@ def search_rows(
     for key, value in queries.items():
         if key == "only_primary_listing":
             if value is True:
-                lazy = filter_primary_listings(lazy, symbol_column)
+                lazy = filter_primary_listings(lazy, symbol_column, primary_symbols)
         elif key == "index":
             if check_list_like(value):
                 lazy = lazy.filter(pl.col(symbol_column).is_in(list(value)))
