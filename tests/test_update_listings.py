@@ -134,6 +134,33 @@ def test_dated_name_skips_debt_but_keeps_shares() -> None:
         assert not helpers.DATED_NAME.search(share), share
 
 
+def test_check_non_share_finds_papers_but_keeps_shares() -> None:
+    """Test the rule that keeps bonds, notes, warrants and certificates out of equities."""
+    for name, country, isin in [
+        ("NL 0.75% 15JUL28", "Netherlands", ""),
+        ("ABB 07/09/2023 3.31% ASB Bank", "", ""),
+        ("SAYONA RTS 13APR", "", ""),
+        ("UCH CW CALL SAIPEM 3,2 A 151222", "", ""),
+        ("VON CW PUT DAX 14000 E", "", ""),
+        ("Nestle 18-28", "", ""),
+        ("AT&T Inc. 5.35% GLB NTS 66", "United States", ""),
+        ("AEGON 1.769%PL", "Netherlands", ""),
+        ("Sec Red NCD 9.12% Sr.I", "", ""),
+        ("CO. RABOBANK 21/UND. FLR", "", "XS2332245370"),
+    ]:
+        assert helpers.check_non_share(name, country, isin), name
+    for name, country, isin in [
+        ("ASML Holding N.V.", "Netherlands", "NL0010273215"),
+        ("Atlas Corp. 7.875% Series H", "United Kingdom", ""),
+        ("KeyCorp Depositary Shares each representing a 1/40th ownership", "", ""),
+        ("Samsung Electronics Co., Ltd. Sponsored GDR", "South Korea", ""),
+        ("FEDERAL INTL (2000)", "", ""),
+        ("CODERE SA EO 0,50", "", ""),
+        ("Callaway Golf Company", "United States", ""),
+    ]:
+        assert not helpers.check_non_share(name, country, isin), name
+
+
 def test_parse_tsx_skips_debt_and_ambiguous_funds() -> None:
     """Test that the TSX parser skips debt and ambiguous funds."""
     raw = create_tsx_json(

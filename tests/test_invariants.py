@@ -173,3 +173,17 @@ def test_equity_categories_follow_gics() -> None:
         f"{len(invalid)} equities have a combination that is not in "
         f"compression/categories/categories.json: {invalid[:10]}"
     )
+
+
+def test_equities_hold_only_company_shares() -> None:
+    """Equities never hold bonds, notes, warrants or certificates.
+
+    The rule (scripts/listings/helpers.py) flags names with a maturity or expiry date,
+    a strike, or a coupon without share wording, and international (XS) ISINs. The
+    weekly update removes such rows too; this catches them in pull requests.
+    """
+    from scripts.listings.listings_controller import remove_non_shares
+
+    database = Path(__file__).resolve().parents[1] / "database"
+    found = remove_non_shares(str(database), dry_run=True)
+    assert not found, "Not company shares:\n" + "\n".join(found[:50])
