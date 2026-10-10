@@ -13,7 +13,6 @@ classifiers = [
     "Topic :: Office/Business :: Financial :: Investment",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
@@ -30,11 +29,11 @@ keywords = [
     "Cryptocurrencies",
     "Money Markets",
 ]
-requires-python = ">=3.10, <3.16"
+requires-python = ">=3.11, <3.16"
 dependencies = [
-    "financetoolkit>=2.0.3,<3.0.0",
+    "financetoolkit>=2.2.1,<3.0.0",
     "numpy>=1.26",
-    "pandas>=2.2",
+    "pandas>=3.0",
     "polars>=2.0.0",
     "requests>=2.32",
 ]
