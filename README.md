@@ -21,12 +21,6 @@ Some key statistics of the database:
 
 <!-- STATISTICS:START (generated weekly by scripts/update_readme_stats.py from database/; edits between these markers are overwritten) -->
 
-<div align="center">
-
-![symbols](https://img.shields.io/badge/symbols-313%2C333-0A66C2?style=flat-square) ![equities](https://img.shields.io/badge/equities-123%2C326-2EA44F?style=flat-square) ![ETFs](https://img.shields.io/badge/ETFs-44%2C429-8250DF?style=flat-square) ![countries](https://img.shields.io/badge/countries-118-BF8700?style=flat-square) ![updated](https://img.shields.io/badge/updated-2026--10--10-57606A?style=flat-square)
-
-</div>
-
 | | Asset class | Symbols | Exchanges | Coverage |
 | :-: | :-- | --: | --: | :-- |
 | 🏢 | **Equities** | 123,326 | 87 | 11 sectors · 69 industries · 118 countries |

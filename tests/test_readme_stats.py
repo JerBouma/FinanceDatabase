@@ -1,6 +1,5 @@
 """README Statistics Tests"""
 
-import datetime as dt
 import sys
 from pathlib import Path
 
@@ -48,7 +47,7 @@ def test_section_is_regenerated_between_markers(tmp_path: Path) -> None:
     db = create_database(tmp_path)
     readme = tmp_path / "README.md"
     readme.write_text(README)
-    assert readme_controller.update(readme, str(db), dt.date(2026, 10, 4))
+    assert readme_controller.update(readme, str(db))
     text = readme.read_text()
     assert text.startswith("# Title\n\nIntro.\n\n<!-- STATISTICS:START")
     assert text.endswith("<!-- STATISTICS:END -->\n\n# Installation\n")
@@ -59,7 +58,7 @@ def test_section_is_regenerated_between_markers(tmp_path: Path) -> None:
     )
     assert "| 📦 | **ETFs** | 2 | 1 | 1 issuers · 1 categories |" in text
     assert "| | **Total** | **10** | | |" in text
-    assert "badge/updated-2026--10--04-" in text
+    assert "shields.io" not in text
     assert "<details>" not in text
 
 
@@ -68,9 +67,9 @@ def test_regeneration_is_idempotent(tmp_path: Path) -> None:
     db = create_database(tmp_path)
     readme = tmp_path / "README.md"
     readme.write_text(README)
-    readme_controller.update(readme, str(db), dt.date(2026, 10, 4))
+    readme_controller.update(readme, str(db))
     once = readme.read_text()
-    readme_controller.update(readme, str(db), dt.date(2026, 10, 4))
+    readme_controller.update(readme, str(db))
     assert readme.read_text() == once
 
 
@@ -78,12 +77,7 @@ def test_missing_markers_change_nothing(tmp_path: Path) -> None:
     """Test that a README without the markers is left unchanged."""
     readme = tmp_path / "README.md"
     readme.write_text("# No markers here\n")
-    assert (
-        readme_controller.update(
-            readme, str(create_database(tmp_path)), dt.date(2026, 10, 4)
-        )
-        is False
-    )
+    assert readme_controller.update(readme, str(create_database(tmp_path))) is False
     assert readme.read_text() == "# No markers here\n"
 
 

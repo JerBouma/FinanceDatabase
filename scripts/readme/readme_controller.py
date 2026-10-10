@@ -3,7 +3,6 @@
 __docformat__ = "google"
 
 import argparse
-import datetime as dt
 import re
 from pathlib import Path
 
@@ -11,7 +10,7 @@ from scripts.readme.rendering_model import END, START, render
 from scripts.readme.statistics_model import collect, format_number
 
 
-def update(readme: Path, database: str, today: dt.date | None = None) -> bool:
+def update(readme: Path, database: str) -> bool:
     """
     Rewrite the marked section; returns False (and changes nothing) without markers.
     """
@@ -21,7 +20,7 @@ def update(readme: Path, database: str, today: dt.date | None = None) -> bool:
         print(f"No statistics markers found in {readme}; nothing changed.")
         return False
     stats = collect(database)
-    section = render(stats, today or dt.date.today())
+    section = render(stats)
     readme.write_text(pattern.sub(lambda _: section, text, count=1), encoding="utf-8")
     print(
         f"{readme} statistics refreshed ({format_number(sum(s.symbols for s in stats))} symbols)."
