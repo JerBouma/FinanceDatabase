@@ -113,6 +113,25 @@ def test_symbol_key_and_name_normalisation() -> None:
     )
 
 
+def test_dated_name_skips_debt_but_keeps_shares() -> None:
+    """Test that notes and debentures are skipped while shares and preferreds are kept."""
+    for debt in [
+        "Brookfield Finance Inc. 4.50% Perpetual Subordinated Notes",
+        "Dime Commercial Bancshares Inc. 9.000% Junior Subordinated Notes",
+        "DTE Energy Company 2021 Series E 4.375% Junior Subordinated Debentures",
+        "BRC Group Holdings Inc. 5% Sr. Notes due 2026",
+        "Corts Trust for BellSouth Debentures",
+    ]:
+        assert helpers.DATED_NAME.search(debt), debt
+    for share in [
+        "Apple Inc. Common Stock",
+        "KeyCorp Depositary Shares each representing a 1/40th ownership interest",
+        "Soluna Holdings Inc 9.0% Series A Cumulative Perpetual Preferred Stock",
+        "Senior Connect Acquisition Corp. I Class A Ordinary Shares",
+    ]:
+        assert not helpers.DATED_NAME.search(share), share
+
+
 def test_parse_tsx_skips_debt_and_ambiguous_funds() -> None:
     """Test that the TSX parser skips debt and ambiguous funds."""
     raw = create_tsx_json(
