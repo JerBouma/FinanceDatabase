@@ -471,7 +471,7 @@ jobs:
           python-version: '3.13'
       - run: pip install pandas
       # Regenerates the statistics section between the STATISTICS markers in README.md
-      # (badges, overview table and the collapsible charts). Never fails the pipeline.
+      # (the overview table). Never fails the pipeline.
       - name: Refresh the statistics section in README.md
         run: python scripts/update_readme_stats.py
       - name: Commit README update

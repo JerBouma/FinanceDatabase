@@ -15,6 +15,9 @@ services:
       MCP_HOST: "0.0.0.0"
       MCP_PORT: "8000"
       FINANCEDATABASE_CACHE_DIR: /data/financedatabase
+      # Usage statistics at /stats, off unless FD_MCP_ANALYTICS=1 (set it in a .env file
+      # next to this one on the hosted server). They are kept in the cache volume.
+      FD_MCP_ANALYTICS: "${FD_MCP_ANALYTICS:-0}"
     volumes:
       # Keeps the downloaded database across restarts, so it isn't fetched again.
       - fd_cache:/data/financedatabase

@@ -2,7 +2,7 @@
   "manifest_version": "0.4",
   "name": "finance-database",
   "display_name": "Finance Database",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "Give AI assistants a categorised map of 300,000+ financial symbols: equities, ETFs, funds, indices, currencies, cryptocurrencies and money markets.",
   "long_description": "The Finance Database gives AI assistants access to 300,000+ symbols categorised by sector, industry group, industry, country, exchange, market cap tier, ETF and fund category, fund family and more. Find every mid cap semiconductor company in Taiwan, every bond ETF from a given issuer, or the ticker behind a company name or ISIN, and pass the results to the Finance Toolkit for fundamentals and prices.\n\nNo API key is needed: the database is free and open. It is downloaded once, cached locally and checked for updates at most once a day.",
   "author": {
@@ -10,6 +10,7 @@
     "email": "jer.bouma@gmail.com",
     "url": "https://www.jeroenbouma.com"
   },
+  "icon": "finance_database_icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/JerBouma/FinanceDatabase"
@@ -99,5 +100,8 @@
     "runtimes": {
       "python": ">=3.11"
     }
-  }
+  },
+  "privacy_policies": [
+    "https://github.com/JerBouma/FinanceDatabase/blob/main/PRIVACY.md"
+  ]
 }
