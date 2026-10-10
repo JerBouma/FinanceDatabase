@@ -488,7 +488,10 @@ Below are those that made significant contributions to the project. Thank you!
 
 | User              | Contribution |
 | ----------------- | ------------ |
-| [dokson](https://github.com/dokson) | Made very significant contributions to the quality of the database in #138, #139, #140, #141, #142, #143, #144, #145, #146 and #147. |
+| [dokson](https://github.com/dokson) | Made very significant contributions to the quality of the database in #138, #139, #140, #141, #142, #143, #144, #145, #146 and #147, added the MIC column (#149), enriched the FIGIs and added 709 missing tickers (#150, #151) and fixed the CI workflows (#154). |
+| [JonArnfred](https://github.com/JonArnfred) | Built the identifier validation that now checks every pull request (#159), filled missing share class FIGIs (#158), made the database workflow preserve CSV values exactly as written (#166) and fixed the test suite (#160). |
+| [AlfaStake](https://github.com/AlfaStake) | Added ISIN codes for ETFs (#124) and corrected and enriched 229 equity ISINs (#126). |
+| [pettijohn](https://github.com/pettijohn) | Added missing currencies and company names from SEC data (#135, #136). |
 | [desaijimmy](https://github.com/desaijimmy)        | Made changes to Equities dataset including the Split of Daimler to Mercedes-Benz and Daimler Trucks |
 | [nindogo](https://github.com/nindogo)        | Introduced a variety of new equities from the Nairobi Securities Exchange and introduced the country Kenya into the dataset. |
 | [colin99d](https://github.com/colin99d)        | Helped in the conversion of the Finance Database package to Object-Orientated, making the code much more efficient. |
