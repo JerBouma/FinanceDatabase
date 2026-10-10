@@ -24,6 +24,15 @@ logger = get_logger()
 LOCAL_ENV = "FINANCEDATABASE_MCP_LOCAL"
 
 
+# Number of recent query results kept per provider.
+MATCH_CACHE_SIZE = 32
+# Up to this many matches filter the data scan; more are joined.
+MATCH_FILTER_SIZE = 10_000
+# A brand stands for the family that issues at least this share of the instruments
+# whose name starts with it.
+BRAND_SHARE = 0.8
+
+
 class QueryError(ValueError):
     """
     An invalid request, carrying the message returned to the caller.
@@ -137,6 +146,7 @@ class DatabaseProvider:
         self._use_local_location = use_local_location
         self._instances: dict[str, tuple[FinanceDatabase, float]] = {}
         self._profiles: dict[str, tuple[FinanceDatabase, RankingProfile]] = {}
+        self._matches: dict[tuple[str, int, str], pl.DataFrame] = {}
         self._locks = {name: threading.Lock() for name in self.specs}
 
     def get_instance(self, tool_name: str) -> FinanceDatabase:
@@ -259,10 +269,47 @@ class DatabaseProvider:
                 instance.get_lowercase_options(name, exclude_delisted),
                 expand_prefix=name == "family",
             )
+            if missing and name == "family":
+                brands = self._resolve_brands(tool_name, missing)
+                values = [v for v in values if v not in brands] + [
+                    family for family in brands.values() if family
+                ]
+                missing = [v for v in missing if not brands.get(v)]
             resolved[name] = values
             if missing:
                 unknown[name] = missing
         return resolved, unknown
+
+    def _resolve_brands(self, tool_name: str, values: list[str]) -> dict[str, str]:
+        """
+        Resolve brand names to the family that issues them: when most instruments
+        whose name starts with the brand belong to one family, the brand stands for
+        it ('iShares' for BlackRock Asset Management).
+
+        Args:
+            tool_name (str): The asset class tool name.
+            values (list[str]): Family values that match no option.
+
+        Returns:
+            dict[str, str]: Value -> family, empty for a value that is no brand.
+        """
+        lazy = self.get_instance(tool_name).get_lazy_frame()
+        brands = {}
+        for value in values:
+            words = value.strip().lower()
+            counts = (
+                lazy.filter(
+                    pl.col("name").str.to_lowercase().str.starts_with(words + " ")
+                    & pl.col("family").is_not_null()
+                )
+                .group_by("family")
+                .len()
+                .sort("len", descending=True)
+                .collect()
+            )
+            if counts.height and counts["len"][0] >= BRAND_SHARE * counts["len"].sum():
+                brands[value] = counts["family"][0]
+        return brands
 
     def _call_package(
         self,
@@ -399,7 +446,98 @@ class DatabaseProvider:
         if profile.name_keys is None:
             return lazy
         symbol = self.get_instance(tool_name).get_columns()[0]
-        return lazy.join(profile.name_keys.lazy(), on=symbol, how="left")
+        return lazy.join(
+            profile.name_keys.lazy().select(symbol, "_key"), on=symbol, how="left"
+        )
+
+    def _find_matches(self, tool_name: str, query: str) -> pl.DataFrame:
+        """
+        Match a query on the search frame of an asset class (see ranking_model). The
+        latest results are kept, as a tool counts and then ranks the same matches.
+
+        Args:
+            tool_name (str): The asset class tool name.
+            query (str): The free-text query.
+
+        Returns:
+            pl.DataFrame: The symbol column, "_tier" and "_key" of the matching rows.
+        """
+        instance = self.get_instance(tool_name)
+        cache_key = (tool_name, id(instance), query)
+        if cache_key in self._matches:
+            return self._matches[cache_key]
+        available = instance.get_columns()
+        profile = self._get_profile(tool_name)
+        match, tier = ranking_model.build_query_expressions(
+            available, query, profile, self._identifier_columns
+        )
+        if profile.name_keys is None:
+            frame = instance.get_lazy_frame().select(
+                [c for c in [available[0], *self._identifier_columns] if c in available]
+            )
+            matches = (
+                frame.filter(match)
+                .select(
+                    available[0],
+                    tier.alias("_tier"),
+                    pl.col(available[0]).alias("_key"),
+                )
+                .collect()
+            )
+        else:
+            matches = (
+                profile.name_keys.lazy()
+                .filter(match)
+                .select(available[0], tier.alias("_tier"), "_key")
+                .collect()
+            )
+        if len(self._matches) >= MATCH_CACHE_SIZE:
+            self._matches.pop(next(iter(self._matches)))
+        self._matches[cache_key] = matches
+        return matches
+
+    @staticmethod
+    def _keep_matches(
+        lazy: pl.LazyFrame, symbol: str, matches: pl.DataFrame
+    ) -> pl.LazyFrame:
+        """
+        Keep the rows of the matching symbols. A short list filters the scan, so only
+        the matching rows are read; a long one is joined, which is faster for it.
+
+        Args:
+            lazy (pl.LazyFrame): The dataset.
+            symbol (str): The symbol column.
+            matches (pl.DataFrame): The matching rows, see _find_matches.
+
+        Returns:
+            pl.LazyFrame: The matching rows of the dataset.
+        """
+        if matches.height <= MATCH_FILTER_SIZE:
+            return lazy.filter(
+                pl.col(symbol).is_in(matches.get_column(symbol).implode())
+            )
+        return lazy.join(matches.lazy().select(symbol), on=symbol, how="semi")
+
+    def _count_matches(
+        self, tool_name: str, lazy: pl.LazyFrame, query: str | None
+    ) -> int:
+        """
+        Count the rows matching a query without ranking them.
+
+        Args:
+            tool_name (str): The asset class tool name.
+            lazy (pl.LazyFrame): The (filtered) dataset.
+            query (str | None): The free-text query.
+
+        Returns:
+            int: The number of matching rows.
+        """
+        if query and query.strip():
+            symbol = self.get_instance(tool_name).get_columns()[0]
+            lazy = self._keep_matches(
+                lazy, symbol, self._find_matches(tool_name, query)
+            )
+        return lazy.select(pl.len()).collect().item()
 
     def _get_profile(self, tool_name: str) -> RankingProfile:
         """
@@ -415,7 +553,9 @@ class DatabaseProvider:
         cached = self._profiles.get(tool_name)
         if cached is None or cached[0] is not instance:
             profile = ranking_model.create_profile(
-                instance.get_lazy_frame(), instance.get_listing_ranks()
+                instance.get_lazy_frame(),
+                instance.get_listing_ranks(),
+                self._identifier_columns,
             )
             self._profiles[tool_name] = (instance, profile)
         return self._profiles[tool_name][1]
@@ -438,19 +578,21 @@ class DatabaseProvider:
         available = self.get_instance(tool_name).get_columns()
         searching = bool(query and query.strip())
         profile = self._get_profile(tool_name)
-        lazy = self._add_name_keys(tool_name, lazy)
+        has_listings = self.get_instance(tool_name).get_listing_ranks() is not None
         if searching:
-            match, tier = ranking_model.build_query_expressions(
-                available, query, profile, self._identifier_columns
+            matches = self._find_matches(tool_name, query)
+            lazy = self._keep_matches(lazy, available[0], matches).join(
+                matches.lazy(), on=available[0], how="inner"
             )
-            lazy = lazy.filter(match)
+        elif not has_listings:
+            # Name keys mark the duplicates of classes without listings.
+            lazy = self._add_name_keys(tool_name, lazy)
         lazy, profile, has_ranks = self._add_listing_ranks(tool_name, lazy)
         lazy = lazy.with_columns(
             *ranking_model.build_preference_columns(available, profile, has_ranks)
         )
         sort_columns = [*PREFERENCE_COLUMNS, available[0]]
         if searching:
-            lazy = lazy.with_columns(tier.alias("_tier"))
             sort_columns = ["_tier", *sort_columns]
         if not has_ranks:
             lazy = ranking_model.mark_duplicates(lazy, sort_columns)
@@ -515,9 +657,8 @@ class DatabaseProvider:
         )
 
         available = instance.get_columns()
+        total = self._count_matches(tool_name, lazy, query)
         lazy = self._rank_rows(tool_name, lazy, query)
-
-        total = lazy.select(pl.len()).collect().item()
         page = lazy.slice(offset, limit).select(columns or available).collect()
         logger.debug(
             "%s: %d rows matched, %d returned in %.3fs",
@@ -640,16 +781,7 @@ class DatabaseProvider:
             lazy = instance.get_lazy_frame(
                 spec.supports_delisted and not include_delisted
             )
-            match, _ = ranking_model.build_query_expressions(
-                available, query, self._get_profile(tool_name), self._identifier_columns
-            )
-            per_class[tool_name] = (
-                self._add_name_keys(tool_name, lazy)
-                .filter(match)
-                .select(pl.len())
-                .collect()
-                .item()
-            )
+            per_class[tool_name] = self._count_matches(tool_name, lazy, query)
             if not per_class[tool_name]:
                 continue
             lazy = self._rank_rows(tool_name, lazy, query)

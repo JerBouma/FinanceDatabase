@@ -179,6 +179,10 @@ def test_invalid_filter_returns_package_message_with_suggestions(server):
     assert "'Vanguard Asset Management'" in text
     assert "show_options(asset_class='etfs', selection='family')" in text
 
+    # A brand stands for the family issuing it.
+    payload = call_json(server.mcp, "etfs", {"family": "iShares", "limit": 1})
+    assert payload["rows"][0]["family"] == "BlackRock Asset Management"
+
     # The start of a family stands for it.
     payload = call_json(server.mcp, "etfs", {"family": "Vanguard", "limit": 1})
     assert payload["rows"][0]["family"] == "Vanguard Asset Management"

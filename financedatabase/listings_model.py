@@ -46,6 +46,8 @@ MAXIMUM_TRAILING_WORDS = 2
 # the most listed of them.
 DISTINCTIVE_WORD_NAMES = 5
 NON_WORD = r"[^a-z0-9]+"
+# Letters that Unicode does not split into a letter and an accent.
+LETTERS_WITHOUT_ACCENT = {"ø": "o", "æ": "ae", "œ": "oe", "ß": "ss", "ł": "l", "đ": "d"}
 # The class or series suffix of a symbol: BAC-PB, FHN^E, POW-PC.TO, TSI-R.BK.
 CLASS_SUFFIX = r"[-^][A-Z0-9]+(\.[A-Z]+)?$"
 
@@ -64,7 +66,9 @@ def get_words(name: pl.Expr) -> pl.Expr:
     # 'spa' and 'as' like their spellings without dots.
     return (
         name.str.normalize("NFKD")
+        .str.replace_all(r"\p{Mn}", "")
         .str.to_lowercase()
+        .str.replace_many(LETTERS_WITHOUT_ACCENT)
         .str.replace_all(NON_WORD, " ")
         .str.strip_chars()
         .str.replace_all(r"\b([a-z]) ([a-z]) ([a-z])\b", "$1$2$3")
