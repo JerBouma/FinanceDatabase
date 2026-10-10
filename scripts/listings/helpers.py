@@ -24,7 +24,9 @@ DATED_NAME = re.compile(
     r"\bwarrants?\b|\s(?:WTS?|RTS)$|\brights?$|\bsubscription rights?\b"
     r"|\bcontingent value rights?\b|\brights? to (?:receive|subscribe)\b"
     r"|\b(?:notes?|debentures?|bonds?|preferred shares)\b.*\bdue\b"
-    r"|\bdue\s+(?:\w+\s+)?(?:\d{1,2},?\s+)?(?:19|20)\d\d\b",
+    r"|\bdue\s+(?:\w+\s+)?(?:\d{1,2},?\s+)?(?:19|20)\d\d\b"
+    r"|\b(?:perpetual|subordinated|senior)\s+(?:\w+\s+)?(?:notes?|debentures?|bonds?)\b"
+    r"|\b(?:notes?|debentures?)\s*$|\bincome capital obligation",
     re.IGNORECASE,
 )
 NAME_STOPWORDS = (
