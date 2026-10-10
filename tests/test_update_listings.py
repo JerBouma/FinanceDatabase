@@ -121,6 +121,8 @@ def test_dated_name_skips_debt_but_keeps_shares() -> None:
         "DTE Energy Company 2021 Series E 4.375% Junior Subordinated Debentures",
         "BRC Group Holdings Inc. 5% Sr. Notes due 2026",
         "Corts Trust for BellSouth Debentures",
+        "Sify Technologies Limited Rights expiring 6/21/2024",
+        "ContraVir Pharmaceuticals, Inc. Warrants expiration 07/03/2023",
     ]:
         assert helpers.DATED_NAME.search(debt), debt
     for share in [

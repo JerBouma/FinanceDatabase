@@ -26,7 +26,8 @@ DATED_NAME = re.compile(
     r"|\b(?:notes?|debentures?|bonds?|preferred shares)\b.*\bdue\b"
     r"|\bdue\s+(?:\w+\s+)?(?:\d{1,2},?\s+)?(?:19|20)\d\d\b"
     r"|\b(?:perpetual|subordinated|senior)\s+(?:\w+\s+)?(?:notes?|debentures?|bonds?)\b"
-    r"|\b(?:notes?|debentures?)\s*$|\bincome capital obligation",
+    r"|\b(?:notes?|debentures?)\s*$|\bincome capital obligation"
+    r"|\bexpir(?:es|ing|ation)\b|\b\d{1,2}/\d{1,2}/(?:19|20)?\d{2}\b",
     re.IGNORECASE,
 )
 NAME_STOPWORDS = (
