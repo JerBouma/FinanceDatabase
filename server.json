@@ -8,6 +8,12 @@
     "source": "github"
   },
   "version": "2.5.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://financedatabase.jeroenbouma.com/mcp"
+    }
+  ],
   "packages": [
     {
       "registryType": "pypi",

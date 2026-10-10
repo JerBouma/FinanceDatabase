@@ -3,10 +3,12 @@
 __docformat__ = "google"
 
 import argparse
+import contextlib
 import os
 import pathlib
 import subprocess
 import sys
+from importlib import metadata
 from typing import Literal
 
 import anyio
@@ -79,6 +81,11 @@ def _build_mcp_app() -> tuple[FastMCP, DatabaseProvider]:
         # DNS-rebinding guard off, matching the Finance Toolkit server.
         host="0.0.0.0",  # noqa: S104
     )
+
+    # FastMCP takes no version, so the server would report the MCP SDK's version to
+    # clients; it reports the Finance Database's instead.
+    with contextlib.suppress(AttributeError, metadata.PackageNotFoundError):
+        mcp._mcp_server.version = metadata.version("financedatabase")
 
     # Off unless FD_MCP_ANALYTICS is set, so a local installation writes no statistics.
     analytics = analytics_model.create_from_environment(
