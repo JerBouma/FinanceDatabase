@@ -23,14 +23,14 @@ Some key statistics of the database:
 
 | | Asset class | Symbols | Exchanges | Coverage |
 | :-: | :-- | --: | --: | :-- |
-| 🏢 | **Equities** | 123,280 | 87 | 11 sectors · 69 industries · 118 countries |
+| 🏢 | **Equities** | 122,787 | 87 | 11 sectors · 69 industries · 118 countries |
 | 📦 | **ETFs** | 44,430 | 64 | 605 issuers · 34 categories |
 | 💼 | **Funds** | 58,149 | 34 | 1,560 fund families · 71 categories |
 | 📈 | **Indices** | 80,287 | 63 | 42 categories |
 | 💱 | **Currencies** | 2,556 | – | 178 currencies |
 | 🪙 | **Cryptocurrencies** | 3,378 | – | 352 coins · 12 quote currencies |
 | 🏦 | **Money Markets** | 1,209 | 2 | 136 fund families |
-| | **Total** | **313,289** | | |
+| | **Total** | **312,796** | | |
 
 <!-- STATISTICS:END -->
 
