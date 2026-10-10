@@ -8,8 +8,8 @@
 [![Supported Python Versions](https://img.shields.io/pypi/pyversions/financedatabase)](https://pypi.org/project/financedatabase/)
 [![PYPI Version](https://img.shields.io/pypi/v/financedatabase)](https://pypi.org/project/financedatabase/)
 [![PYPI Downloads](https://static.pepy.tech/badge/financedatabase/month)](https://pepy.tech/project/financedatabase)
-
-<!-- Hidden until the MCP server is published: [![MCP Server](https://img.shields.io/badge/MCP_Server-grey?logo=modelcontextprotocol)](#mcp-server) -->
+[![MCP Server](https://img.shields.io/badge/MCP_Server-grey?logo=modelcontextprotocol)](#mcp-server)
+[![Download MCP Bundle](https://img.shields.io/badge/Download_MCP_Bundle-grey?logo=anthropic)](https://github.com/JerBouma/FinanceDatabase/releases/latest/download/financedatabase.mcpb)
 
 As a private investor, the sheer amount of information that can be found on the internet is rather daunting. Trying to understand what types of companies or ETFs are available is incredibly challenging, with millions of companies and derivatives available on the market. Sure, the most traded companies and ETFs can quickly be found simply because they are known to the public (for example, Microsoft, Tesla, S&P 500 ETF, or an All-World ETF). However, what else is out there is often unknown.
 
@@ -40,23 +40,23 @@ Some key statistics of the database:
 
 <!-- STATISTICS:END -->
 
-<!-- Hidden until the MCP server is published.
 ___
 **🔌 The Finance Database is also available as an [MCP Server](#mcp-server)**
 
 Explore all 300,000+ symbols from Claude, Copilot, Cursor, Windsurf or any MCP-compatible client without writing code. No API key needed.
 
+- **Hosted:** connect to `https://financedatabase.jeroenbouma.com/mcp` — nothing to install and no API key.
 - **Local:** `uvx --from "financedatabase[mcp]" financedatabase-mcp-setup` — sets up your client config automatically. See [MCP Server](#mcp-server) for manual setup.
 ___
--->
 
 # Table of Contents
 
 1. [Installation](#installation)
 2. [Functionality](#functionality)
-3. [Questions & Answers](#questions--answers)
-4. [Contributing](#contributing)
-5. [Contact](#contact)
+3. [MCP Server](#mcp-server)
+4. [Questions & Answers](#questions--answers)
+5. [Contributing](#contributing)
+6. [Contact](#contact)
 
 # Installation
 
@@ -385,15 +385,26 @@ And below these and other profitability ratios of ASR Nederland, each with its l
 
 This works for the other asset classes too. For example, Ethereum quoted in BTC, CAD, EUR, GBP and USD can be loaded with `fd.Cryptos().select(cryptocurrency="ETH").to_toolkit(api_key=...)`, after which `get_historical_data(period="quarterly")` returns its quarterly returns in each currency. **This is just a small snippet of what is available within the Finance Toolkit, see the GitHub page of the Finance Toolkit [here](https://github.com/JerBouma/FinanceToolkit) or the example Notebook [here](https://www.jeroenbouma.com/projects/financetoolkit/getting-started) for more information.**
 
-<!-- Hidden until the MCP server is published; add "MCP Server" back to the Table of Contents as well.
-
 # MCP Server
 
-The Finance Database MCP Server gives any AI assistant that supports the [Model Context Protocol](https://modelcontextprotocol.io) (MCP) direct access to the database. Ask in plain English for, say, every mid cap semiconductor company in Taiwan or the bond ETFs of a given issuer, and the assistant queries the database on your behalf. No API key is needed. The data is downloaded once, cached locally and checked for updates at most once a day, exactly like the Python package.
+The Finance Database MCP Server gives any AI assistant that supports the [Model Context Protocol](https://modelcontextprotocol.io) (MCP) direct access to the database. Ask in plain English for, say, every mid cap semiconductor company in Taiwan or the bond ETFs of a given issuer, and the assistant queries the database on your behalf. No API key is needed. Combine it with the [Finance Toolkit MCP Server](https://www.jeroenbouma.com/projects/financetoolkit/mcp) to go from a list of symbols to their financial statements, ratios and prices.
+
+### Remote server
+
+Connect directly to the hosted server at `https://financedatabase.jeroenbouma.com/mcp`. Nothing needs to be installed locally and no API key or sign-in is required.
+
+| Client | Steps |
+|:---|:---|
+| **Claude Desktop** | Customize → Connectors → Add custom connector → paste the URL |
+| **Claude.ai** | Customize → Connectors → Add custom connector → paste the URL |
+| **Claude Code** | `claude mcp add --transport http finance-database https://financedatabase.jeroenbouma.com/mcp` |
+| **VS Code** | Command Palette → MCP: Add Server → HTTP → paste the URL |
+| **Cursor** | Settings → Features → MCP Servers → Add new → http → paste the URL |
+| **Windsurf** | Settings → MCP Servers → Add Server → Remote/HTTP → paste the URL |
 
 ### Local installation
 
-Run the setup wizard — it locates your client's config file (Claude Desktop, Claude Code, VS Code, Cursor, Gemini or Windsurf) and adds the server automatically:
+Run the setup wizard — it locates your client's config file (Claude Desktop, Claude Code, VS Code, Cursor, Gemini CLI or Windsurf) and adds the server automatically:
 
 ```bash
 uvx --from "financedatabase[mcp]" financedatabase-mcp-setup
@@ -412,7 +423,9 @@ For manual config, add the following to your client's MCP config file (e.g. `cla
 }
 ```
 
-For Claude Code: `claude mcp add finance-database -- uvx --from "financedatabase[mcp]" financedatabase-mcp`. To serve over HTTP instead of stdio, use `financedatabase-mcp --transport streamable-http --port 8000` or the included `Dockerfile` and `docker-compose.yml`. `financedatabase-mcp-inspector` opens the [MCP Inspector](https://github.com/modelcontextprotocol/inspector) to try the tools in a browser.
+For Claude Code: `claude mcp add finance-database -- uvx --from "financedatabase[mcp]" financedatabase-mcp`. Alternatively, download the [Finance Database MCPB bundle](https://github.com/JerBouma/FinanceDatabase/releases/latest/download/financedatabase.mcpb) and open it with Claude Desktop. The data is downloaded once, cached locally and checked for updates at most once a day, exactly like the Python package. `financedatabase-mcp-inspector` opens the [MCP Inspector](https://github.com/modelcontextprotocol/inspector) to try the tools in a browser.
+
+To host the server yourself, run `financedatabase-mcp --transport streamable-http --port 8000` or use the included `Dockerfile` and `docker-compose.yml`. The server answers `/health` for health checks, and with `FD_MCP_ANALYTICS=1` it also publishes anonymous usage totals (calls per day and per tool, no personal data) at `/stats`.
 
 ### Tools
 
@@ -432,10 +445,6 @@ Every response is compact JSON with `total`, `returned`, `offset`, `columns` and
 - *"What ETFs does Vanguard offer in the Fixed Income category group?"*
 - *"Which ticker belongs to ISIN US0378331005, and on which exchanges is it listed?"*
 - *"List the industries in the Health Care sector and how many German companies are in each."*
-
-Combine it with the [Finance Toolkit MCP Server](https://www.jeroenbouma.com/projects/financetoolkit/mcp) to go from a list of symbols to their financial statements, ratios and prices.
-
--->
 
 # Questions & Answers
 
