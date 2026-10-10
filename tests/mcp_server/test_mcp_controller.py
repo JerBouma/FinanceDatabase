@@ -5,10 +5,10 @@ import json
 import logging
 import os
 import pathlib
-import re
 import subprocess
 import sys
 import threading
+import tomllib
 
 import httpx
 import polars as pl
@@ -321,10 +321,9 @@ def test_format_page_bounds_and_notes():
 
 def test_versions_and_tool_lists_are_in_sync():
     """Test that pyproject, server.json, the mcpb manifest and config agree."""
-    # Parsed with regular expressions: tomllib needs Python 3.11 and CI runs 3.10.
-    pyproject = (REPO_ROOT / "pyproject.toml").read_text()
-    version = re.search(r'(?m)^version = "(.+)"', pyproject).group(1)
-    mcp_name = re.search(r'(?m)^mcp-name = "(.+)"', pyproject).group(1)
+    pyproject = tomllib.loads((REPO_ROOT / "pyproject.toml").read_text())
+    version = pyproject["project"]["version"]
+    mcp_name = pyproject["tool"]["mcp"]["mcp-name"]
     server_json = json.loads((REPO_ROOT / "server.json").read_text())
     manifest = json.loads((SERVER_DIR / "mcpb" / "manifest.json").read_text())
     config = yaml.safe_load((SERVER_DIR / "config.yaml").read_text())

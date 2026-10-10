@@ -2,7 +2,7 @@
 name = "finance-database-mcp"
 version = "2.4.0"
 description = "Finance Database MCP Server"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     "financedatabase[mcp]==2.4.0",
 ]

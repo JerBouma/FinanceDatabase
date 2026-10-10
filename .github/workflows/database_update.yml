@@ -392,7 +392,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.10'
+          python-version: '3.11'
       - run: pip install polars
       - name: Update Compressions
         # Polars writes the bz2 CSVs every package version reads, and a typed Parquet
@@ -430,7 +430,7 @@ jobs:
         - name: setup python
           uses: actions/setup-python@v6
           with:
-            python-version: '3.10'
+            python-version: '3.11'
         - run: pip install polars
         - name: Update categories
           # The gzip CSV layout every package version reads, plus a Parquet file with
@@ -491,7 +491,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.10'
+          python-version: '3.11'
       - run: pip install pandas financedatabase
       - name: Check GICS Categorisation
         uses: jannekem/run-python-script-action@v1.8
