@@ -17,7 +17,8 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.requests import Request
 from starlette.responses import JSONResponse
 
-from financedatabase.mcp_server import setup_model
+from financedatabase.cache_model import get_cache_directory
+from financedatabase.mcp_server import analytics_model, setup_model
 from financedatabase.mcp_server.provider_model import (
     AssetClassSpec,
     DatabaseProvider,
@@ -79,17 +80,28 @@ def _build_mcp_app() -> tuple[FastMCP, DatabaseProvider]:
         host="0.0.0.0",  # noqa: S104
     )
 
+    # Off unless FD_MCP_ANALYTICS is set, so a local installation writes no statistics.
+    analytics = analytics_model.create_from_environment(
+        default_server_name=configuration["server"]["name"],
+        default_location=get_cache_directory() / "mcp_stats.json",
+    )
+
     asset_count = AssetToolRegistry(
         mcp=mcp,
         provider=provider,
         filter_descriptions=configuration["filter_descriptions"],
         limits=configuration["limits"],
+        analytics=analytics,
     ).register_all_tools()
     utility_count = UtilityToolRegistry(
         mcp=mcp,
         provider=provider,
         limits=configuration["limits"],
+        analytics=analytics,
     ).register_all_tools()
+
+    if analytics is not None:
+        analytics.register_route(mcp)
 
     @mcp.custom_route("/health", methods=["GET"])
     async def check_health(request: Request) -> JSONResponse:  # noqa: ARG001

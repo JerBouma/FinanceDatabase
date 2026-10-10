@@ -11,6 +11,7 @@ from mcp.server.fastmcp import FastMCP
 from mcp.types import ToolAnnotations
 from pydantic import Field
 
+from financedatabase.mcp_server.analytics_model import UsageAnalytics
 from financedatabase.mcp_server.coercion_model import (
     convert_to_boolean,
     convert_to_int,
@@ -67,6 +68,8 @@ class AssetToolRegistry:
         filter_descriptions (dict[str, str]): Description per filter parameter.
         limits (dict[str, int]): Output limits (default_limit, max_limit,
             max_text_length).
+        analytics (UsageAnalytics | None): Counts the tool calls when usage analytics
+            are on.
     """
 
     def __init__(
@@ -75,6 +78,7 @@ class AssetToolRegistry:
         provider: DatabaseProvider,
         filter_descriptions: dict[str, str],
         limits: dict[str, int],
+        analytics: UsageAnalytics | None = None,
     ) -> None:
         """
         Initializes the AssetToolRegistry.
@@ -84,9 +88,12 @@ class AssetToolRegistry:
             provider (DatabaseProvider): The query engine serving the tools.
             filter_descriptions (dict[str, str]): Description per filter parameter.
             limits (dict[str, int]): Output limits from config.yaml.
+            analytics (UsageAnalytics | None): Counts the tool calls when usage
+                analytics are on. Defaults to None.
         """
         self._mcp = mcp
         self._provider = provider
+        self._analytics = analytics
         self._filter_descriptions = filter_descriptions
         self._default_limit = int(limits["default_limit"])
         self._max_limit = int(limits["max_limit"])
@@ -271,8 +278,11 @@ class AssetToolRegistry:
             int: Number of tools registered.
         """
         for spec in self._provider.specs.values():
+            tool = self._build_wrapper(spec)
+            if self._analytics is not None:
+                tool = self._analytics.wrap_tool(spec.tool_name, tool)
             self._mcp.add_tool(
-                self._build_wrapper(spec),
+                tool,
                 name=spec.tool_name,
                 description=spec.description,
                 annotations=ToolAnnotations(

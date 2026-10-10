@@ -8,6 +8,7 @@ from mcp.server.fastmcp import FastMCP
 from mcp.types import ToolAnnotations
 from pydantic import Field
 
+from financedatabase.mcp_server.analytics_model import UsageAnalytics
 from financedatabase.mcp_server.coercion_model import (
     convert_to_boolean,
     convert_to_int,
@@ -38,6 +39,8 @@ class UtilityToolRegistry:
         mcp (FastMCP): The FastMCP server instance to register tools on.
         provider (DatabaseProvider): The query engine serving the tools.
         limits (dict[str, int]): Output limits from config.yaml.
+        analytics (UsageAnalytics | None): Counts the tool calls when usage analytics
+            are on.
     """
 
     def __init__(
@@ -45,6 +48,7 @@ class UtilityToolRegistry:
         mcp: FastMCP,
         provider: DatabaseProvider,
         limits: dict[str, int],
+        analytics: UsageAnalytics | None = None,
     ) -> None:
         """
         Initializes the UtilityToolRegistry.
@@ -54,9 +58,12 @@ class UtilityToolRegistry:
             provider (DatabaseProvider): The query engine serving the tools.
             limits (dict[str, int]): Output limits (default_limit, max_limit,
                 max_text_length, default_options, max_options, overview_options).
+            analytics (UsageAnalytics | None): Counts the tool calls when usage
+                analytics are on. Defaults to None.
         """
         self._mcp = mcp
         self._provider = provider
+        self._analytics = analytics
         self._limits = {key: int(value) for key, value in limits.items()}
 
     def register_all_tools(self) -> int:
@@ -72,8 +79,11 @@ class UtilityToolRegistry:
             (self.search_instruments, "search_instruments", "Search Instruments"),
         ]
         for method, tool_name, title in tools:
+            tool = method
+            if self._analytics is not None:
+                tool = self._analytics.wrap_tool(tool_name, method)
             self._mcp.add_tool(
-                method,
+                tool,
                 name=tool_name,
                 description=method.__doc__ or "",
                 annotations=ToolAnnotations(
