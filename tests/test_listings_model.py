@@ -128,3 +128,13 @@ def test_names_match_with_or_without_dots() -> None:
         listings_model.get_words(pl.lit(pl.Series(["Novo A/S", "Novo AS", "Xyz N.V."])))
     ).to_series()
     assert words.to_list() == ["novo as", "novo as", "xyz nv"]
+
+
+def test_names_match_without_accents() -> None:
+    """Test that accented letters read as their plain letters, not as separators."""
+    words = pl.select(
+        listings_model.get_words(
+            pl.lit(pl.Series(["L’Oréal", "Hermès", "Nestlé S.A.", "Ørsted"]))
+        )
+    ).to_series()
+    assert words.to_list() == ["l oreal", "hermes", "nestle sa", "orsted"]

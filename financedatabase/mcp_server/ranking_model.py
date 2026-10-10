@@ -14,7 +14,7 @@ from dataclasses import dataclass, field
 
 import polars as pl
 
-from financedatabase.listings_model import get_name_key, get_trailing_words
+from financedatabase.listings_model import get_name_key, get_trailing_words, get_words
 
 MARKET_CAP_ORDER = [
     "Mega Cap",
@@ -30,6 +30,9 @@ MARKET_CAP_ORDER = [
 VARIANT_SEPARATOR_SHARE = 0.5
 SEPARATORS = [".", "-", "="]
 CURRENCY_COLUMNS = ["currency", "base_currency", "quote_currency"]
+# A query of at least this many letters also matches names without their spaces
+# ('USDJPY' for 'USD/JPY'); shorter ones would match inside other words.
+COMPACT_MINIMUM = 5
 # Categories of the database that hold leveraged, inverse and other trading products.
 DERIVATIVE_CATEGORIES = ["Derivatives", "Trading"]
 PREFERENCE_COLUMNS = [
@@ -57,10 +60,10 @@ class RankingProfile:
         currency_order (dict[str, int]): Currencies by how often they occur in the
             currency columns, the most common 0.
         variant_separators (list[str]): Symbol separators that mark a variant.
-        name_keys (pl.DataFrame | None): The symbol column, "_key" (the name without
-            its common trailing words), "_words" (the name as spaced lowercase words)
-            and "_compact" (the name without spaces and punctuation), to join to
-            queried rows.
+        name_keys (pl.DataFrame | None): The search frame: the symbol column, name,
+            identifiers, "_key" (the name without its common trailing words),
+            "_words" (the name as spaced lowercase words) and "_compact" (the name
+            without spaces and punctuation). Queries are matched on it in memory.
     """
 
     trailing_words: list[str] = field(default_factory=list)
@@ -83,21 +86,28 @@ def get_frequency_order(values: pl.Series) -> dict[str, int]:
     return {value: i for i, value in enumerate(counts.get_column(values.name))}
 
 
-def create_profile(lazy: pl.LazyFrame, ranks: pl.DataFrame | None) -> RankingProfile:
+def create_profile(
+    lazy: pl.LazyFrame,
+    ranks: pl.DataFrame | None,
+    identifier_columns: list[str] | None = None,
+) -> RankingProfile:
     """
     Measure an asset class for the ranking.
 
     Args:
         lazy (pl.LazyFrame): The dataset, the symbol column first.
         ranks (pl.DataFrame | None): The listing ranks, see listings_model.
+        identifier_columns (list[str] | None): Columns a query matches exactly, kept in
+            the search frame.
 
     Returns:
         RankingProfile: The measurements.
     """
     columns = lazy.collect_schema().names()
     currencies = [c for c in CURRENCY_COLUMNS if c in columns]
+    identifiers = [c for c in identifier_columns or [] if c in columns]
     wanted = [c for c in (columns[0], "name") if c in columns]
-    frame = lazy.select(*wanted, *currencies).collect()
+    frame = lazy.select(*wanted, *currencies, *identifiers).collect()
     symbols = frame.get_column(columns[0]).drop_nulls()
 
     profile = RankingProfile()
@@ -105,18 +115,13 @@ def create_profile(lazy: pl.LazyFrame, ranks: pl.DataFrame | None) -> RankingPro
         profile.trailing_words = get_trailing_words(frame.get_column("name"))
         profile.name_keys = frame.select(
             columns[0],
+            "name",
+            *identifiers,
             get_name_key(pl.col("name"), profile.trailing_words)
             .fill_null(pl.col(columns[0]))
             .alias("_key"),
-            (
-                pl.lit(" ")
-                + pl.col("name").str.to_lowercase().str.replace_all(r"[^a-z0-9]+", " ")
-                + pl.lit(" ")
-            ).alias("_words"),
-            pl.col("name")
-            .str.to_lowercase()
-            .str.replace_all(r"[^a-z0-9]+", "")
-            .alias("_compact"),
+            (pl.lit(" ") + get_words(pl.col("name")) + pl.lit(" ")).alias("_words"),
+            get_words(pl.col("name")).str.replace_all(" ", "").alias("_compact"),
         ).unique(columns[0])
     if currencies:
         profile.currency_order = get_frequency_order(
@@ -190,7 +195,15 @@ def build_query_expressions(
         symbol.str.contains(needle, literal=True)
         | bare_symbol.str.contains(bare, literal=True)
     ).fill_null(False) | identifier
-    full = ((symbol == needle) | (bare_symbol == bare)).fill_null(False)
+    # 'brk.b' and 'BRK/B' find BRK-B: separators in symbols are ignored.
+    compact_symbol = symbol.str.replace_all(r"[^a-z0-9]+", "")
+    compact_query = re.sub(r"[^a-z0-9]+", "", needle)
+    full = (
+        (symbol == needle)
+        | (bare_symbol == bare)
+        | ((compact_symbol == compact_query) & pl.lit(len(compact_query) > 1))
+    ).fill_null(False)
+    match = match | full
     exact = (full | (base == bare)).fill_null(False)
     if "name" not in columns:
         tier = pl.when(identifier | full).then(0).when(exact).then(1)
@@ -203,11 +216,14 @@ def build_query_expressions(
         pl.select(get_name_key(pl.lit(query), profile.trailing_words)).item() or needle
     )
     words = pl.col("_words")
-    spaced = " " + " ".join(re.sub(r"[^a-z0-9]+", " ", needle).split()) + " "
+    # The query is read like the names: without accents and punctuation ('Hermès',
+    # 'L’Oréal').
+    normalized = pl.select(get_words(pl.lit(query))).item() or ""
+    spaced = " " + normalized + " "
 
-    compact = re.sub(r"[^a-z0-9]+", "", needle)
+    compact = normalized.replace(" ", "")
     match = match | name.str.contains(needle, literal=True).fill_null(False)
-    if len(compact) >= 3:
+    if len(compact) >= COMPACT_MINIMUM:
         match = match | pl.col("_compact").str.contains(
             compact, literal=True
         ).fill_null(False)
@@ -218,7 +234,7 @@ def build_query_expressions(
     named = (key == needle_key) | (
         words.str.starts_with(spaced) & bare_symbol.str.starts_with(bare)
     )
-    if len(compact) >= 3:
+    if len(compact) >= COMPACT_MINIMUM:
         named = named | (pl.col("_compact") == compact)
     tier = pl.when(identifier | full).then(0)
     tier = tier.when(exact | named.fill_null(False)).then(1)
