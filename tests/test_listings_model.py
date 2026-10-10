@@ -96,8 +96,35 @@ def test_trailing_words_are_measured_on_the_names() -> None:
     """Test that words ending many names are found and removed from name keys."""
     names = pl.Series(["Alpha Inc.", "Beta Inc", "Gamma N.V.", "Delta Holding"] * 100)
     words = listings_model.get_trailing_words(names)
-    assert {"inc", "v"} <= set(words)
+    assert {"inc", "nv"} <= set(words)
     key = pl.select(
-        listings_model.get_name_key(pl.lit("Nestlé S.A. Inc."), ["inc", "a", "s"])
+        listings_model.get_name_key(pl.lit("Nestlé S.A. Inc."), ["inc", "sa"])
     ).item()
     assert key == "nestle"
+
+
+def test_share_classes_and_preferred_shares_are_not_primary() -> None:
+    """Test that a company has one primary line per exchange: not its preferreds."""
+    market = [
+        *MARKET,
+        (
+            "US0^A",
+            "American 0 Inc. Depositary Shares Series A",
+            "NYQ",
+            "United States",
+            None,
+        ),
+        ("US1-PB", "American 1 Inc.", "NYQ", "United States", None),
+        ("US2B", "American 2 Inc.", "NYQ", "United States", None),
+    ]
+    primary = _get_primary(market)
+    assert {"US0", "US1", "US2"} <= primary
+    assert not {"US0^A", "US1-PB", "US2B"} & primary
+
+
+def test_names_match_with_or_without_dots() -> None:
+    """Test that 'N.V.' and 'NV' or 'A/S' and 'AS' read the same."""
+    words = pl.select(
+        listings_model.get_words(pl.lit(pl.Series(["Novo A/S", "Novo AS", "Xyz N.V."])))
+    ).to_series()
+    assert words.to_list() == ["novo as", "novo as", "xyz nv"]
