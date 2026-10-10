@@ -20,10 +20,10 @@ def _create_frame(rows: list[tuple]) -> pl.LazyFrame:
 
 HOME = [(f"NL{i}.AS", f"Dutch {i} N.V.", "AMS", "Netherlands", None) for i in range(20)]
 HOME += [(f"DE{i}.DE", f"German {i} AG", "GER", "Germany", None) for i in range(20)]
-US = [(f"US{i}", f"American {i} Inc.", "NYQ", "United States", None) for i in range(40)]
+US = [(f"US{i}", f"American {i} Inc.", "NYQ", "United States", None) for i in range(80)]
 US += [(f"OTC{i}", f"Small {i} Inc.", "PNK", "United States", None) for i in range(10)]
 CROSS = [
-    (f"US{i}.F", f"American {i} Inc.", "FRA", "United States", None) for i in range(9)
+    (f"US{i}.F", f"American {i} Inc.", "FRA", "United States", None) for i in range(30)
 ]
 CROSS += [(f"F{i}.F", f"Other {i} AG", "FRA", "Germany", None) for i in range(2)]
 CROSS += [(f"F{i}F", f"Other {i} AG", "PNK", "Germany", None) for i in range(6)]

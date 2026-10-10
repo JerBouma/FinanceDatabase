@@ -16,9 +16,10 @@ alone: no list of exchanges, countries or naming conventions is kept.
 
 Listings of one instrument are linked by ISIN and by name within a home. Names are
 compared without accents, punctuation and the trailing words that end many names of
-the asset class, such as legal forms ('Inc.', 'N.V.', 'AG'). A first word that few
-names of a home start with links them ('ASML Holding', 'ASML CDR (CAD Hedged)'), and a
-listing without a home is linked to the name it starts with ('Toyota Motor ADR').
+the asset class, such as legal forms ('Inc.', 'N.V.', 'AG'). A lone listing joins the
+most listed name of its home with the same distinctive first word ('ASML CDR (CAD
+Hedged)' joins 'ASML Holding'), and a listing without a home joins the name it starts
+with ('Toyota Motor ADR' joins 'Toyota Motor').
 """
 
 __docformat__ = "google"
@@ -41,7 +42,8 @@ PRIMARY_TOLERANCE = 0.9
 # the end of names ('Inc', 'Limited', 'AG', 'Index', 'USD').
 TRAILING_WORD_SHARE = 0.003
 MAXIMUM_TRAILING_WORDS = 4
-# A first word shared by at most this many names of a home links those names.
+# A first word shared by at most this many names of a home links a lone listing to
+# the most listed of them.
 DISTINCTIVE_WORD_NAMES = 5
 NON_WORD = r"[^a-z0-9]+"
 
@@ -171,60 +173,108 @@ def get_main_venues(lazy: pl.LazyFrame) -> list[str]:
     )
 
 
-def link_names(frame: pl.DataFrame) -> pl.Series:
+def get_prefixes(keys: pl.DataFrame) -> pl.DataFrame:
     """
-    Get the name that links the listings of one instrument: the first word when few
-    names of the home start with it, otherwise the name. A listing without a home
-    takes the shortest name of any home that its name starts with, word for word.
+    Get every word-for-word start of each name: 'asml', 'asml holding' for 'asml
+    holding'.
 
     Args:
-        frame (pl.DataFrame): The columns "_name" and "_home".
+        keys (pl.DataFrame): The column "_name".
 
     Returns:
-        pl.Series: The linking name of every row.
+        pl.DataFrame: The columns "_name", "_prefix" and "_size", its number of words.
     """
-    keys = frame.select("_name", "_home").unique()
-    first = pl.col("_name").str.extract(r"^(\S+)")
-    keys = keys.with_columns(
-        pl.when(
-            pl.col("_home").is_not_null()
-            & (pl.len().over(first, "_home") <= DISTINCTIVE_WORD_NAMES)
-        )
-        .then(first)
-        .otherwise(pl.col("_name"))
-        .alias("_link")
-    )
-
-    named = keys.filter(pl.col("_home").is_not_null())
-    homeless = (
-        keys.filter(pl.col("_home").is_null())
-        .select("_name")
+    return (
+        keys.select("_name")
+        .unique()
         .with_columns(pl.col("_name").str.split(" ").alias("_words"))
         .with_columns(pl.int_ranges(1, pl.col("_words").list.len() + 1).alias("_size"))
         .explode("_size")
         .with_columns(
             pl.col("_words").list.head(pl.col("_size")).list.join(" ").alias("_prefix")
         )
+        .drop("_words")
+    )
+
+
+def link_names(frame: pl.DataFrame) -> pl.Series:
+    """
+    Get the name that links the listings of one instrument.
+
+    An instrument without a listing on a main venue at home, such as a depositary
+    receipt, joins the
+    name of its home that its own name starts with ('Samsung Electronics Sponsored
+    GDR' joins 'Samsung Electronics'), or else the most listed name of its home with
+    the same first word, when few names start with that word ('ASML CDR (CAD
+    Hedged)' joins 'ASML Holding'). A listing without a home joins the shortest name
+    of any home that its name starts with ('Toyota Motor ADR' joins 'Toyota Motor').
+    Instruments with a listing on a main venue at home are never joined, so Siemens
+    Energy stays apart from Siemens.
+
+    Args:
+        frame (pl.DataFrame): The columns "_name", "_home", "_at_home" and
+            "main_venue".
+
+    Returns:
+        pl.Series: The linking name of every row.
+    """
+    keys = frame.group_by("_name", "_home").agg(
+        pl.len(), (~(pl.col("_at_home") & pl.col("main_venue"))).all().alias("_orphan")
+    )
+    targets = keys.filter(pl.col("_home").is_not_null() & ~pl.col("_orphan"))
+
+    by_prefix = (
+        get_prefixes(keys)
+        .join(keys.select("_name", "_home"), on="_name")
         .join(
-            named.select(pl.col("_name").alias("_prefix"), "_link").unique("_prefix"),
-            on="_prefix",
+            targets.select(pl.col("_name").alias("_prefix"), "_home"),
+            on=["_prefix", "_home"],
+            how="semi",
+            nulls_equal=True,
         )
+        .filter(pl.col("_prefix") != pl.col("_name"))
+        .group_by("_name", "_home")
+        .agg(pl.col("_prefix").sort_by("_size").first().alias("_by_prefix"))
+    )
+    first = pl.col("_name").str.extract(r"^(\S+)")
+    by_word = (
+        keys.filter(pl.col("_home").is_not_null())
+        .with_columns(first.alias("_first"))
+        .filter(pl.len().over("_first", "_home") <= DISTINCTIVE_WORD_NAMES)
+        .join(
+            targets.with_columns(first.alias("_first"))
+            .sort("len", descending=True)
+            .unique(["_first", "_home"], keep="first")
+            .select("_first", "_home", pl.col("_name").alias("_by_word")),
+            on=["_first", "_home"],
+        )
+        .select("_name", "_home", "_by_word")
+    )
+    homeless = (
+        get_prefixes(keys.filter(pl.col("_home").is_null()))
+        .join(targets.select(pl.col("_name").alias("_prefix")).unique(), on="_prefix")
         .group_by("_name")
-        .agg(pl.col("_link").sort_by("_size").first())
+        .agg(pl.col("_prefix").sort_by("_size").first().alias("_by_name"))
         .with_columns(pl.lit(None, dtype=pl.String).alias("_home"))
     )
-    links = pl.concat(
-        [
-            named.select("_name", "_home", "_link"),
-            homeless.select(named.columns[:2] + ["_link"]),
-        ],
-        how="vertical_relaxed",
-    ).unique(["_name", "_home"])
-    return (
-        frame.join(links, on=["_name", "_home"], how="left", nulls_equal=True)
-        .get_column("_link")
-        .fill_null(frame.get_column("_name"))
+
+    links = (
+        keys.join(by_prefix, on=["_name", "_home"], how="left", nulls_equal=True)
+        .join(by_word, on=["_name", "_home"], how="left", nulls_equal=True)
+        .join(homeless, on=["_name", "_home"], how="left", nulls_equal=True)
+        .with_columns(
+            pl.when(pl.col("_home").is_null())
+            .then(pl.col("_by_name"))
+            .when(pl.col("_orphan"))
+            .then(pl.coalesce("_by_prefix", "_by_word"))
+            .fill_null(pl.col("_name"))
+            .alias("_link")
+        )
+        .select("_name", "_home", "_link")
     )
+    return frame.join(
+        links, on=["_name", "_home"], how="left", nulls_equal=True
+    ).get_column("_link")
 
 
 def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFrame:
@@ -246,7 +296,9 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
 
     Returns:
         pl.DataFrame: The symbol column, "listing_score" (higher is stronger),
-            "primary_listing" and "main_venue".
+            "primary_listing", "main_venue", "listings" (the number of listings of
+            the instrument) and "usual_currency" (whether it trades in the most
+            common currency of its home's listings on that exchange).
     """
     columns = lazy.collect_schema().names()
     symbol = columns[0]
@@ -258,10 +310,14 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
     delisted = (
         pl.col("delisted").fill_null(False) if "delisted" in columns else pl.lit(False)
     )
+    currency = (
+        pl.col("currency") if "currency" in columns else pl.lit(None, dtype=pl.String)
+    )
 
     frame = lazy.select(
         pl.col(symbol),
         pl.col("exchange").alias("_exchange"),
+        currency.alias("_currency"),
         country.alias("_home"),
         name.alias("_full_name"),
         pl.when(isin.str.len_chars() == 12).then(isin).alias("_isin"),
@@ -274,8 +330,6 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         .fill_null(pl.col(symbol))
         .alias("_name")
     )
-    frame = frame.with_columns(link_names(frame).alias("_name"))
-
     listed = frame.filter(~pl.col("_delisted"))
     shares = (
         listed.filter(pl.col("_home").is_not_null())
@@ -313,6 +367,24 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
             (pl.col("_at_home") | pl.col("main_venue")).alias("_candidate"),
         )
     )
+    frame = frame.with_columns(link_names(frame).alias("_name"))
+
+    # The usual currency of a market: the most common one of its listings there.
+    usual = (
+        frame.filter(~pl.col("_delisted") & pl.col("_currency").is_not_null())
+        .group_by("_exchange", "_home", "_currency")
+        .len()
+        .sort("len", descending=True)
+        .unique(["_exchange", "_home"], keep="first", maintain_order=True)
+        .select("_exchange", "_home", pl.col("_currency").alias("_usual"))
+    )
+    frame = frame.join(
+        usual, on=["_exchange", "_home"], how="left", nulls_equal=True
+    ).with_columns(
+        (pl.col("_currency") == pl.col("_usual"))
+        .fill_null(True)
+        .alias("usual_currency")
+    )
 
     def spread(expression: pl.Expr) -> pl.Expr:
         # Over the listings of one instrument: its linked name within a home, or in
@@ -341,6 +413,25 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
     primary = pl.col("_candidate") & (
         pl.col("_best").is_null() | (pl.col("listing_score") >= threshold)
     )
+    # How many listings the instrument has worldwide, a measure of its prominence.
+    listed_count = (~pl.col("_delisted")).cast(pl.Int32)
+    frame = frame.with_columns(
+        pl.when(pl.col("_home").is_null())
+        .then(listed_count.sum().over("_name"))
+        .otherwise(listed_count.sum().over("_name", "_home"))
+        .alias("_listings")
+    )
+    frame = frame.with_columns(
+        pl.when(pl.col("_isin").is_not_null())
+        .then(pl.col("_listings").max().over("_isin"))
+        .otherwise(pl.col("_listings"))
+        .alias("listings")
+    )
     return frame.select(
-        symbol, "listing_score", primary.alias("primary_listing"), "main_venue"
+        symbol,
+        "listing_score",
+        primary.alias("primary_listing"),
+        "main_venue",
+        "listings",
+        "usual_currency",
     )
