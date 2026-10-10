@@ -106,13 +106,13 @@ class Equities(FinanceDatabase):
 
         Which returns:
 
-        | symbol | name                                   | currency | industry         | exchange | market_cap |
-        |:-------|:---------------------------------------|:---------|:-----------------|:---------|:-----------|
-        | AAVMY  | ABN AMRO Bank N.V. Depositary receipts | USD      | Banks            | PNK      | Large Cap  |
-        | ABMRF  | ABN AMRO Bank N.V. Depositary receipts | USD      | Banks            | PNK      | Large Cap  |
-        | AEG    | Aegon N.V.                             | USD      | Insurance        | NYQ      | Large Cap  |
-        | AEGOF  | Aegon N.V.                             | USD      | Insurance        | PNK      | Mid Cap    |
-        | CNCK   | Coincheck Group N.V. Ordinary Shares   | USD      | Consumer Finance | NMS      | Micro Cap  |
+        | symbol   | name                                   | currency | industry         | exchange | market_cap |
+        |:---------|:---------------------------------------|:---------|:-----------------|:---------|:-----------|
+        | ABN.AS   | ABN AMRO Bank N.V. Depositary receipts | EUR      | Banks            | AMS      | Large Cap  |
+        | AGN.AS   | Aegon N.V.                             | EUR      | Insurance        | AMS      | Large Cap  |
+        | ASAI.L   | ASA International Group PLC            | GBP      | Consumer Finance | LSE      | Small Cap  |
+        | ASRNL.AS | ASR Nederland N.V.                     | EUR      | Insurance        | AMS      | Large Cap  |
+        | CNCK     | Coincheck Group N.V. Ordinary Shares   | USD      | Consumer Finance | NMS      | Micro Cap  |
         """
         return self._select_rows(
             {

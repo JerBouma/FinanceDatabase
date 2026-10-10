@@ -676,6 +676,7 @@ class DatabaseProvider:
                     "_tier",
                     "_derivative",
                     "_cap",
+                    "_listings",
                     "_name_length",
                 )
                 .collect()
