@@ -7,8 +7,6 @@ authors = [
     { name = "Jeroen Bouma" }
 ]
 readme = "README.md"
-homepage = "https://www.jeroenbouma.com/"
-repository = "https://github.com/JerBouma/FinanceDatabase"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Financial and Insurance Industry",
@@ -35,8 +33,15 @@ keywords = [
 requires-python = ">=3.10, <3.16"
 dependencies = [
     "financetoolkit>=2.0.3,<3.0.0",
+    "numpy>=1.26",
+    "pandas>=2.2",
     "polars>=2.0.0",
+    "requests>=2.32",
 ]
+
+[project.urls]
+Homepage = "https://www.jeroenbouma.com/"
+Repository = "https://github.com/JerBouma/FinanceDatabase"
 
 [project.optional-dependencies]
 mcp = [

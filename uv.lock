@@ -664,7 +664,12 @@ version = "2.4.0"
 source = { editable = "." }
 dependencies = [
     { name = "financetoolkit" },
+    { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "pandas", version = "2.3.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "pandas", version = "3.0.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "polars" },
+    { name = "requests" },
 ]
 
 [package.optional-dependencies]
@@ -694,8 +699,11 @@ dev = [
 requires-dist = [
     { name = "financetoolkit", specifier = ">=2.0.3,<3.0.0" },
     { name = "mcp", extras = ["cli"], marker = "extra == 'mcp'", specifier = ">=1.27.0,<2" },
+    { name = "numpy", specifier = ">=1.26" },
+    { name = "pandas", specifier = ">=2.2" },
     { name = "polars", specifier = ">=2.0.0" },
     { name = "pyyaml", marker = "extra == 'mcp'", specifier = ">=6.0" },
+    { name = "requests", specifier = ">=2.32" },
     { name = "rich", marker = "extra == 'mcp'", specifier = ">=13.0" },
 ]
 provides-extras = ["mcp"]
