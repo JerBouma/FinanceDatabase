@@ -96,22 +96,6 @@ class Database:
         )
         return {"mic": mode("mic"), "market": mode("market")}
 
-    def get_group_sector(self) -> dict[str, str]:
-        """
-        GICS industry group -> sector as used in the equities files.
-        """
-        frames = [
-            read_csv_text(p)[["sector", "industry_group"]]
-            for p in glob.glob(f"{self.root}/equities/*.csv")
-        ]
-        pairs = pd.concat(frames)
-        pairs = pairs[(pairs.sector != "") & (pairs.industry_group != "")]
-        return (
-            pairs.groupby("industry_group")
-            .sector.agg(lambda s: s.mode().iloc[0])
-            .to_dict()
-        )
-
     def get_etf_families(self) -> Callable[[str], str]:
         """
         Issuer family from the opening words of an ETF name.

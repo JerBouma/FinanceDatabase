@@ -241,38 +241,26 @@ def parse_jpx(xlsx: bytes) -> SourceResult:
     return result
 
 
-def parse_asx(csv: bytes, group_sector: dict[str, str]) -> SourceResult:
+def parse_asx(csv: bytes) -> SourceResult:
     """
-    Australia: ASX companies with a GICS industry group (rows without one are skipped).
+    Australia: ASX companies; the third column marks trusts and funds 'Not Applic'.
     """
     result = SourceResult()
     data = pd.read_csv(io.BytesIO(csv), skiprows=2, dtype=str, keep_default_na=False)
-    require(
-        {"Company name", "ASX code", "GICS industry group"} <= set(data.columns), "ASX"
-    )
-    require(len(data) > 1500, "ASX list too short")
+    require(list(data.columns[:2]) == ["Company name", "ASX code"], "ASX")
+    require(len(data.columns) >= 3 and len(data) > 1500, "ASX list too short")
     result.official = {"ASX": {f"{c}.AX" for c in data["ASX code"]}}
-    aliases = {
-        "Consumer Discretionary Distribution & Retail": "Retailing",
-        "Consumer Staples Distribution & Retail": "Food & Staples Retailing",
-        "Financial Services": "Diversified Financials",
-        "Equity Real Estate Investment Trusts (REITs)": "Real Estate",
-        "Real Estate Management & Development": "Real Estate",
-    }
-    for _, row in data.iterrows():
-        group = aliases.get(row["GICS industry group"], row["GICS industry group"])
-        if group in group_sector:
-            result.listings.append(
-                Listing(
-                    "equities",
-                    "ASX",
-                    f"{row['ASX code']}.AX",
-                    row["Company name"].strip(),
-                    "AUD",
-                    sector=group_sector[group],
-                    industry_group=group,
-                )
+    companies = ~data.iloc[:, 2].isin(["", "Not Applic"])
+    for _, row in data[companies].iterrows():
+        result.listings.append(
+            Listing(
+                "equities",
+                "ASX",
+                f"{row['ASX code']}.AX",
+                row["Company name"].strip(),
+                "AUD",
             )
+        )
     return result
 
 
@@ -440,7 +428,7 @@ def get_jpx_download_url() -> str:
     return "https://www.jpx.co.jp" + match.group(1)
 
 
-def load_sources(group_sector: dict[str, str]) -> dict[str, Callable[[], SourceResult]]:
+def load_sources() -> dict[str, Callable[[], SourceResult]]:
     """
     Source name -> lazy loader, so one failure stays isolated.
     """
@@ -464,8 +452,7 @@ def load_sources(group_sector: dict[str, str]) -> dict[str, Callable[[], SourceR
         ),
         "JPX": lambda: parse_jpx(fetch(get_jpx_download_url())),
         "ASX": lambda: parse_asx(
-            fetch("https://www.asx.com.au/asx/research/ASXListedCompanies.csv"),
-            group_sector,
+            fetch("https://www.asx.com.au/asx/research/ASXListedCompanies.csv")
         ),
         "TSX/TSXV": lambda: parse_tsx(
             fetch(tsx.format("tsx")), fetch(tsx.format("tsxv"))

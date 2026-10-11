@@ -99,8 +99,8 @@ A portion of the output is shown below. The tables in this section are cut off t
 
 | symbol   | name                     | currency   | sector                 | industry                                   | exchange   | market               | country       | market_cap   | isin         |
 |:---------|:-------------------------|:-----------|:-----------------------|:-------------------------------------------|:-----------|:---------------------|:--------------|:-------------|:-------------|
-| AAPL     | Apple Inc.               | USD        | Information Technology | Technology Hardware, Storage & Peripherals | NMS        | NASDAQ Global Select | United States | Mega Cap     | US0378331005 |
-| ASML.AS  | ASML Holding N.V.        | EUR        | Information Technology | Semiconductors & Semiconductor Equipment   | AMS        | Euronext Amsterdam   | Netherlands   | Mega Cap     | NL0010273215 |
+| AAPL     | Apple Inc.               | USD        | Information Technology | Computers & Hardware                       | NMS        | NASDAQ Global Select | United States | Mega Cap     | US0378331005 |
+| ASML.AS  | ASML Holding N.V.        | EUR        | Information Technology | Semiconductors & Chip Equipment            | AMS        | Euronext Amsterdam   | Netherlands   | Mega Cap     | NL0010273215 |
 | 7203.T   | Toyota Motor Corporation | JPY        | Consumer Discretionary | Automobiles                                | JPX        | Tokyo Stock Exchange | Japan         | Mega Cap     | JP3633400001 |
 | NESN.SW  | Nestle S.A.              | CHF        | Consumer Staples       | Food Products                              | EBS        | SIX Swiss Exchange   | Switzerland   | Mega Cap     | CH0038863350 |
 | SAP.DE   | SAP SE                   | EUR        | Information Technology | Software                                   | GER        | XETRA                | Germany       | Mega Cap     | DE0007164600 |
@@ -132,7 +132,7 @@ options = fd.show_options("equities")
 options["sector"]
 ```
 
-This returns the eleven sectors used for equities, which approximate GICS:
+This returns the eleven sectors used for equities:
 
 ```text
 ['Communication Services', 'Consumer Discretionary', 'Consumer Staples',
@@ -154,8 +154,8 @@ equities.show_options(
 Which returns:
 
 ```text
-['Banks', 'Capital Markets', 'Consumer Finance',
- 'Diversified Financial Services', 'Insurance']
+['Banks', 'Capital Markets', 'Consumer Lending', 'Insurance',
+ 'Payments & Specialty Finance']
 ```
 
 And below the number of companies in each of these industries is shown. Each company is counted once, however many exchanges it is listed on: listings that share an ISIN, share class FIGI, website or the first word of their name (such as Aegon and its perpetual bonds) are combined.
@@ -222,21 +222,21 @@ If the categorization doesn't lead to the results you are looking for, `search` 
 # Search for robotics or education companies with equipment on the Frankfurt Stock Exchange
 equities.search(
     summary=["Robotics", "Education"],
-    industry_group="Equipment",
+    industry="Equipment",
     market="Frankfurt",
     index=".F",
 )
 ```
 
-This returns the instruments listed on the Frankfurt Stock Exchange in an industry group containing "Equipment" and with "Robotics" or "Education" in their summary. Filtering on `index=".F"` is an alternative way to find the exchange or market you are looking for.
+This returns the instruments listed on the Frankfurt Stock Exchange in an industry containing "Equipment" and with "Robotics" or "Education" in their summary. Filtering on `index=".F"` is an alternative way to find the exchange or market you are looking for.
 
-| symbol | name                                                        | currency | sector                 | industry                                       | exchange | market                   | country       | market_cap |
-|:-------|:------------------------------------------------------------|:---------|:-----------------------|:-----------------------------------------------|:---------|:-------------------------|:--------------|:-----------|
-| 1KT.F  | Keysight Technologies Inc                                   | EUR      | Information Technology | Electronic Equipment, Instruments & Components | FRA      | Frankfurt Stock Exchange | United States | Large Cap  |
-| 1N1.F  | Nanalysis Scientific Corp.                                  | EUR      | Information Technology | Electronic Equipment, Instruments & Components | FRA      | Frankfurt Stock Exchange | Canada        | Nano Cap   |
-| 1YO.F  | Yangtze Optical Fibre And Cable Joint Stock Limited Company | EUR      | Information Technology | Communications Equipment                       | FRA      | Frankfurt Stock Exchange | China         | Large Cap  |
-| 1ZU.F  | Pennant Group Inc                                           | EUR      | Health Care            | Health Care Providers & Services               | FRA      | Frankfurt Stock Exchange | United States | Small Cap  |
-| 2EYA.F | Binovi Technologies Corp.                                   | EUR      | Health Care            | Health Care Technology                         | FRA      | Frankfurt Stock Exchange | Canada        | Nano Cap   |
+| symbol | name                                                        | currency | sector                 | industry                              | exchange | market                   | country        | market_cap |
+|:-------|:------------------------------------------------------------|:---------|:-----------------------|:--------------------------------------|:---------|:-------------------------|:---------------|:-----------|
+| 1YO.F  | Yangtze Optical Fibre And Cable Joint Stock Limited Company | EUR      | Information Technology | Networking & Communications Equipment | FRA      | Frankfurt Stock Exchange | China          | Large Cap  |
+| 2IU.F  | Boxlight Corporation                                        | EUR      | Information Technology | Networking & Communications Equipment | FRA      | Frankfurt Stock Exchange | United States  | Nano Cap   |
+| 49V.F  | Vertiv Holdings Co                                          | EUR      | Industrials            | Electrical Equipment                  | FRA      | Frankfurt Stock Exchange | United States  | Large Cap  |
+| A1Z1.F | eEnergy Group Plc                                           | EUR      | Industrials            | Electrical Equipment                  | FRA      | Frankfurt Stock Exchange | United Kingdom | Nano Cap   |
+| A8B.F  | Ambarella, Inc.                                             | EUR      | Information Technology | Semiconductors & Chip Equipment       | FRA      | Frankfurt Stock Exchange | United States  | Mid Cap    |
 
 And below the results are counted per industry.
 
@@ -429,7 +429,7 @@ The data is an aggregation of publicly available sources: the official listing d
 
 > **What categorization method is used?**
 
-The categorization for Equities is based on a loose approximation of GICS (Global Industry Classification Standard). This database attempts to reflect sectors and industries as accurately as possible through manual curation, without collecting any actual data from MSCI's proprietary sources. The official GICS datasets curated by MSCI remain the most up-to-date, paid solution and were not used in developing any part of this database. All other categorizations in the database are independently developed and can be freely modified.
+Equities are classified in this database's own three levels: 11 sectors, which are divided into industry groups and then industries. Every valid combination is listed in [`scripts/categories.json`](https://github.com/JerBouma/FinanceDatabase/blob/main/scripts/categories.json). The categories are curated by hand and from public sources, and the weekly update classifies new companies the same way. All categorizations in the database are independently developed and can be freely modified.
 
 > **How can I find out which countries, sectors and/or industries exist within the database without needing to check the database manually?**
 

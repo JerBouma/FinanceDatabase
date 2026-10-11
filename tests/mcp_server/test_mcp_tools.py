@@ -144,18 +144,18 @@ def test_multiple_values_keep_commas_inside_values(server):
     """Test comma-separated and list input, including values that contain commas."""
     expected = fd.Equities(use_local_location=True).select(
         country="Germany",
-        industry=["Hotels, Restaurants & Leisure", "Banks"],
+        industry=["Oil, Gas & Fuels", "Banks"],
         as_pandas=False,
     )
     as_text = call_json(
         server.mcp,
         "equities",
-        {"country": "Germany", "industry": "Hotels, Restaurants & Leisure, Banks"},
+        {"country": "Germany", "industry": "Oil, Gas & Fuels, Banks"},
     )
     as_list = call_json(
         server.mcp,
         "equities",
-        {"country": "Germany", "industry": ["Banks", "Hotels, Restaurants & Leisure"]},
+        {"country": "Germany", "industry": ["Banks", "Oil, Gas & Fuels"]},
     )
     assert as_text["total"] == as_list["total"] == expected.height
 

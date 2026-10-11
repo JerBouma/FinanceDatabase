@@ -8,7 +8,7 @@ import os
 
 import pandas as pd
 
-from scripts.equities import equities_model
+from scripts.equities import categories_model, equities_model
 from scripts.listings.helpers import write_csv
 
 
@@ -30,7 +30,7 @@ def update_us_equities(database: str = "database") -> int:
     exchange_data = pd.concat(feeds) if feeds else pd.DataFrame()
     exchange_data = exchange_data[~exchange_data.index.duplicated(keep="first")]
 
-    # Feed industry -> GICS industry; labels spanning several industries are left out.
+    # Feed industry -> industry; labels spanning several industries are left out.
     fd_industries = (
         pd.read_csv("scripts/us_feed_industries.csv", dtype=str, keep_default_na=False)
         .set_index("feed_industry")["industry"]
@@ -121,6 +121,27 @@ def remove_non_shares(database: str, dry_run: bool = False) -> list[str]:
     return removed
 
 
+def update_categories(database: str = "database") -> int:
+    """
+    Move every equity with a renamed industry group or industry to the current names.
+
+    Args:
+        database (str): The database folder.
+
+    Returns:
+        int: The number of changed rows.
+    """
+    renames = categories_model.read_renames("scripts/category_renames.csv")
+    changed = 0
+    for path in sorted(glob.glob(os.path.join(database, "equities", "*.csv"))):
+        frame = pd.read_csv(path, index_col=0, dtype=str, keep_default_na=False)
+        count = categories_model.update_categories(frame, renames)
+        if count:
+            write_csv(frame, path)
+            changed += count
+    return changed
+
+
 def run_us_equities_update() -> None:
     """
     Command line entry of the US equities update.
@@ -132,6 +153,10 @@ def run_us_equities_update() -> None:
         update_us_equities(database)
     except Exception as error:  # noqa: BLE001
         print(f"US equities update stopped: {type(error).__name__}: {error}")
+    try:
+        print(f"{update_categories(database)} equities moved to renamed categories")
+    except Exception as error:  # noqa: BLE001
+        print(f"Category update stopped: {type(error).__name__}: {error}")
 
 
 def run_non_share_removal() -> None:

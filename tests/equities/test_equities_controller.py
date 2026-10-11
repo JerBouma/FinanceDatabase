@@ -80,12 +80,12 @@ SELECT_CASES = [
     {"market_cap": "Large Cap"},
     {"exchange": "AMS"},
     {"country": "United States", "sector": "Financials"},
-    {"country": "United States", "industry_group": "Media & Entertainment"},
-    {"sector": "Energy", "industry_group": "Energy"},
+    {"country": "United States", "industry_group": "Media, Entertainment & Internet"},
+    {"sector": "Energy", "industry_group": "Energy Production & Services"},
     {
         "country": "United States",
         "sector": "Health Care",
-        "industry_group": "Pharmaceuticals, Biotechnology & Life Sciences",
+        "industry_group": "Pharma, Biotech & Life Sciences",
     },
     {
         "country": "United States",
@@ -97,14 +97,14 @@ SELECT_CASES = [
     {
         "country": "United States",
         "sector": "Materials",
-        "industry_group": "Materials",
+        "industry_group": "Basic Materials",
         "market": "Johannesburg Stock Exchange",
         "currency": "USD",
     },
     {
         "country": "Japan",
         "sector": "Energy",
-        "industry_group": "Energy",
+        "industry_group": "Energy Production & Services",
         "market": "Tokyo Stock Exchange",
         "currency": "JPY",
         "only_primary_listing": True,
@@ -186,7 +186,10 @@ SHOW_OPTIONS_CASES = [
     {"market_cap": "Large Cap"},
     {"selection": "country", "country": "United States"},
     {"selection": "sector", "sector": "Financials"},
-    {"selection": "industry_group", "industry_group": "Media & Entertainment"},
+    {
+        "selection": "industry_group",
+        "industry_group": "Media, Entertainment & Internet",
+    },
     {"selection": "market_cap", "market_cap": "Large Cap"},
 ]
 
@@ -336,8 +339,8 @@ SEARCH_CASES = [
     {"industry_group": "Insurance"},
     {"market_cap": "Large Cap"},
     {"country": "United States", "sector": "Financials"},
-    {"country": "United States", "industry_group": "Media & Entertainment"},
-    {"sector": "Energy", "industry_group": "Energy"},
+    {"country": "United States", "industry_group": "Media, Entertainment & Internet"},
+    {"sector": "Energy", "industry_group": "Energy Production & Services"},
     {"country": "United States", "sector": "Industrials", "industry_group": "Software"},
 ]
 
