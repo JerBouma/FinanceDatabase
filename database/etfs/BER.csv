@@ -216,7 +216,7 @@ symbol,name,currency,summary,category_group,category,family,exchange,mic,isin,de
 1BM5.BE,DSETFT-DDS+P NEWDLD,EUR,,,,,BER,XBER,,False
 1EYA.BE,VICT.CEMP US DISC.EN.VOL.,EUR,,Equities,Factors,,BER,XBER,,False
 1EYB.BE,VICT.CEMP.US 500 EN.VO.W.,EUR,,,,,BER,XBER,,False
-1FMA.BE,FIRST TR.MID C.C.ALPH.,EUR,,,,First Trust Advisors,BER,XBER,,False
+1FMA.BE,FIRST TR.MID C.C.ALPH.,EUR,,Equities,,First Trust Advisors,BER,XBER,,False
 1FU0.BE,F.T.ETA.II-F.T.BRAZ.ADEX,EUR,,,,FT Portfolios,BER,XBER,,False
 1FU2.BE,F.TR.ETF VI-R.DIV.ACHIEV.,EUR,,,,FT Portfolios,BER,XBER,,False
 1FU3.BE,F.T.ETA.II-F.T.L.AM.ADEX,EUR,,,,FT Portfolios,BER,XBER,,False
@@ -534,7 +534,7 @@ AEFZ.BE,ASSCVI-JPN SM.CO. AAHEO,EUR,,,Developed Markets,Aberdeen Standard Invest
 AEMD.BE,AIS-A.IN.MSCI E.M.UCETFDD,EUR,,Equities,,Amundi Asset Management,BER,XBER,,False
 AF1B.BE,AL.ETF FTSE AT.L.C.EQ.UC.,EUR,,Equities,,,BER,XBER,,False
 AFIA.BE,AIS-AM.S+P500 BB DLC,EUR,,,Large Cap,Amundi Asset Management,BER,XBER,,False
-AFIC.BE,A.-A.I.E.G.M.S.A.S.B.UEDI,EUR,,Fixed Income,,Amundi Asset Management,BER,XBER,,False
+AFIC.BE,A.-A.I.E.G.M.S.A.S.B.UEDI,EUR,,Fixed Income,Government Bonds,Amundi Asset Management,BER,XBER,,False
 AFID.BE,AIS-AM.S+P G.L.DLC,EUR,,,Large Cap,Amundi Asset Management,BER,XBER,,False
 AFIH.BE,AIS-AM.CAC 40 EOD,EUR,,,Large Cap,Amundi Asset Management,BER,XBER,,False
 AFIP.BE,Amundi Index MSCI Pacific ex Japan SRI - UCITS ETF DR - USD (C),EUR,"To track the performance of MSCI Pacific ex Japan SRI Filtered ex Fossil Fuels Index (the ""Index""), and to minimize the tracking error between the net asset value of the sub-fund and the performance of the Index.
@@ -550,7 +550,7 @@ AH8G.BE,AGIF-A.ADV.FXD I.EUR.A EO,EUR,"This is an Amundi fund focused on Advance
 AH8H.BE,AGIF-THAILAND EQU.A EO,EUR,AGIF-THAILAND EQU.A EO is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker AH8H and traded in EUR. The fund is part of the Amundi Asset Management range.,Financials,,Allianz Global Investors Fund,BER,XBER,,False
 AH8J.BE,AGIF-GERMAN EQUITY AT EO,EUR,"This is an Amundi fund that invests in German equities. Managed by Amundi Asset Management, with headquarters in Paris, France, the fund aims to provide capital appreciation through investments in companies located in Germany. The fund offers investors exposure to the German stock market.",Equities,,Allianz Global Investors Fund,BER,XBER,,False
 AH8M.BE,AGIF-ALL.EUR.H.YLD BD AEO,EUR,"This is an Amundi fund focused on All European High Yield Bonds. Managed by Amundi Asset Management, headquartered in Paris, France, the fund seeks to generate income by investing in high-yield bonds issued by companies in Europe. This fund is designed for investors seeking higher yields and willing to accept greater credit risk.",Fixed Income,High Yield Bonds,Allianz Global Investors Fund,BER,XBER,,False
-AH8Q.BE,ALL.EUR.P.I.-STR.15 CT EO,EUR,,,,Amundi Asset Management,BER,XBER,,False
+AH8Q.BE,ALL.EUR.P.I.-STR.15 CT EO,EUR,,Equities,,Amundi Asset Management,BER,XBER,,False
 AH8R.BE,AGIF-ALL.CH.MU.IN.PL.ATDL,EUR,,,,Allianz Global Investors Fund,BER,XBER,,False
 AH8T.BE,AGIF-A.INC.+GWTH A DL,EUR,,Equities,,Allianz Global Investors Fund,BER,XBER,,False
 AH8V.BE,AGIF-ALL.EUR.EQU.DIV.ATEO,EUR,"This is an Amundi fund that invests in All European Equity and aims to provide dividends to its investors. It focuses on companies across Europe and is managed by Amundi Asset Management, headquartered in Paris, France. The fund is designed for investors seeking income and capital appreciation from the European equity market.",Information Technology,Developed Markets,Allianz Global Investors Fund,BER,XBER,,False
@@ -562,7 +562,7 @@ ALQF.BE,ARERO-WELTFDS.-NACH. LC,EUR,"This is an ARERO fund that invests globally
 ALW.BE,BEST-IN-ONE BALANCED,EUR,BEST-IN-ONE BALANCED is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker ALW and traded in EUR.,Financials,,,BER,XBER,,False
 ALW1.BE,AGIF-ALL.EURO BOND AQ EO,EUR,,Fixed Income,Corporate Bonds,Allianz Global Investors Fund,BER,XBER,,False
 ALW2.BE,AGIF-AL.EU.EQ.DI.AKTZA2EO,EUR,,,,Allianz Global Investors Fund,BER,XBER,,False
-ALW3.BE,ALL.EUR.P.I.-STR.50 CT EO,EUR,,,,,BER,XBER,,False
+ALW3.BE,ALL.EUR.P.I.-STR.50 CT EO,EUR,,Equities,,,BER,XBER,,False
 ALW4.BE,AGIF-EOLAND EQU.GROW.R EO,EUR,,,,Allianz Global Investors Fund,BER,XBER,,False
 ALW5.BE,AGIF-ALL.B.ST.US EQ.CTHEO,EUR,,,,Allianz Global Investors Fund,BER,XBER,,False
 ALW6.BE,AGIF-EOLAND EQU.GROW.RTEO,EUR,,,,Allianz Global Investors Fund,BER,XBER,,False
@@ -625,7 +625,7 @@ AUM5.BE,AIS-AMUNDI S+P500UETF EOC,EUR,"AIS-AMUNDI S+P500UETF EOC is an exchange-
 AW18.BE,SP500 ESEL E. A HGDLSD,EUR,,,,,BER,XBER,,False
 AW1R.BE,UBS(IRL)ETF-MS.AC.S.EOAAH,EUR,,,,UBS Asset Management,BER,XBER,,False
 AW43.BE,AXA WLD-OPT.INCOME A TPF,EUR,,,,AXA World Funds,BER,XBER,,False
-AW44.BE,AXA WLD-FRAM.ITALY A T,EUR,,,,AXA World Funds,BER,XBER,,False
+AW44.BE,AXA WLD-FRAM.ITALY A T,EUR,,Fixed Income,Government Bonds,AXA World Funds,BER,XBER,,False
 AW45.BE,AXA WLD-FR.SWITZER.A T,EUR,,,,AXA World Funds,BER,XBER,,False
 AW46.BE,AXA WF-FRAML.EV.TR. AC EO,EUR,,,,AXA World Funds,BER,XBER,,False
 AW47.BE,AXA WLD-OPT.INCOME A APF,EUR,,,,AXA World Funds,BER,XBER,,False
@@ -639,7 +639,7 @@ AW4H.BE,AXA WLD-EURO 7-10 A T. EO,EUR,,Fixed Income,,AXA World Funds,BER,XBER,,F
 AW4I.BE,AXA WLD-EURO 10+LT A T.EO,EUR,,,,AXA World Funds,BER,XBER,,False
 AW4J.BE,AXA WLD-FR.EU.RE.E.S.A TH,EUR,,,,AXA World Funds,BER,XBER,,False
 AW4L.BE,AXA WLD-EURO 5-7 A A. EO,EUR,,Fixed Income,Government Bonds,AXA World Funds,BER,XBER,,False
-AXB3.BE,AB S.I-SUST.GL.T.PF A DL,EUR,,,,AllianceBernstein,BER,XBER,,False
+AXB3.BE,AB S.I-SUST.GL.T.PF A DL,EUR,,Fixed Income,,AllianceBernstein,BER,XBER,,False
 AXBG.BE,AB S.I-S.ABS.ALPH.P.AAEOH,EUR,,,,AllianceBernstein,BER,XBER,,False
 AXBH.BE,AB FCP I-AS.EX-J.EQ.A DL,EUR,,,,,BER,XBER,,False
 AXBI.BE,AB S.I-LOW VOL.EQU.P.ADL,EUR,,Equities,Factors,,BER,XBER,,False
@@ -702,9 +702,9 @@ B3FM.BE,BGF-NEXT GEN.T. A2DLA,EUR,,,,BlackRock Asset Management,BER,XBER,,False
 B3FN.BE,BGF-N.R.GW.+INC A2 HDEOA,EUR,,,,BlackRock Asset Management,BER,XBER,,False
 B3FP.BE,BGF-WORL.REAL E.S.A2ACCDL,EUR,,,,BlackRock Asset Management,BER,XBER,,False
 B3FQ.BE,BSF-BLACKROCK MIPC A2 EO,EUR,,,,BlackRock Asset Management,BER,XBER,,False
-B3FR.BE,B.S.F.-B.ESG EUR.BD A2EOA,EUR,,Fixed Income,,,BER,XBER,,False
+B3FR.BE,B.S.F.-B.ESG EUR.BD A2EOA,EUR,,Fixed Income,Corporate Bonds,,BER,XBER,,False
 B3FS.BE,BRGIF-IS EM.G.B.I.(L)A2DL,EUR,,Fixed Income,Government Bonds,,BER,XBER,,False
-B3FT.BE,BRGIF-IS E.A.B.I.(L) A2EO,EUR,,,,,BER,XBER,,False
+B3FT.BE,BRGIF-IS E.A.B.I.(L) A2EO,EUR,,Fixed Income,,,BER,XBER,,False
 B3FU.BE,BRGIF-IS E.G.B.I.(L) A2EO,EUR,,Fixed Income,Government Bonds,,BER,XBER,,False
 B3FV.BE,BRGIF-IS E.E.I.F.(L) A2EO,EUR,,,,,BER,XBER,,False
 B3FW.BE,BRGIF-IS G.G.B.I.(L) A2DL,EUR,,Fixed Income,Government Bonds,,BER,XBER,,False
@@ -716,7 +716,7 @@ B8TG.BE,MUL-L.M.U.C.C.E DLA,EUR,,,,Lyxor International Asset Management,BER,XBER
 B8TH.BE,MUL-LYX.MSCI EM CL.CH.DLA,EUR,,Equities,,Lyxor International Asset Management,BER,XBER,,False
 B8TT.BE,MUL-LYX. FTSE 100 A,EUR,,Equities,,Lyxor International Asset Management,BER,XBER,,False
 B92A.BE,BGF-WORLD MNG A2 EO HD.,EUR,,Fixed Income,,BlackRock Asset Management,BER,XBER,,False
-B92B.BE,BGF-LATIN AMER. NAM.A4 EO,EUR,,,,BlackRock Asset Management,BER,XBER,,False
+B92B.BE,BGF-LATIN AMER. NAM.A4 EO,EUR,,Equities,,BlackRock Asset Management,BER,XBER,,False
 B92C.BE,BRGIF-IS J.E.I.F.(L) A2DL,EUR,,,,,BER,XBER,,False
 B92D.BE,BRGIF-IS P.XJ.E.I.(L)A2DL,EUR,,,,,BER,XBER,,False
 B92E.BE,BLACKR.S.-AM.D.EQ.AB.R.A2,EUR,,,,BlackRock Asset Management,BER,XBER,,False
@@ -1616,7 +1616,7 @@ FGUR.BE,LA FR.SYST.DEF.ALLOC. R,EUR,,,,,BER,XBER,,False
 FGUS.BE,VERI ETF-ALL.DEFENSIVE W,EUR,,,,,BER,XBER,,False
 FGUU.BE,LA FRAN.SYS.DYN.ALL.W,EUR,,,,,BER,XBER,,False
 FGUV.BE,LA FRANC.SYS.ETF PORT.GL.,EUR,,,,,BER,XBER,,False
-FGV1.BE,JH-J.H.LATIN AMER. A2EO,EUR,,,,Janus Henderson,BER,XBER,,False
+FGV1.BE,JH-J.H.LATIN AMER. A2EO,EUR,,Equities,,Janus Henderson,BER,XBER,,False
 FGV4.BE,JUP.GL.FD.-J.EU.GR.LEOA,EUR,,,,,BER,XBER,,False
 FGV5.BE,JUP.GL-JGF INDIA S.LDLAI,EUR,,,,,BER,XBER,,False
 FGV6.BE,JUPIT.GL.FD.-JAP.SEL.LEOA,EUR,,,,,BER,XBER,,False
@@ -1633,8 +1633,8 @@ FGVR.BE,JH-J.H.PA.EU.SM.CO.A2EO,EUR,,,,Janus Henderson,BER,XBER,,False
 FGVS.BE,JH-J.H.GBL EQU. A2EO,EUR,,,,Janus Henderson,BER,XBER,,False
 FGVV.BE,JH-J.H.CONT.EUROP.A1EO,EUR,,,,Janus Henderson,BER,XBER,,False
 FGVW.BE,JH-J.H.EMERG.MKTS A2DL,EUR,,,,Janus Henderson,BER,XBER,,False
-FGVX.BE,JH-J.H.LATIN AMER. X2EO,EUR,,,,Janus Henderson,BER,XBER,,False
-FGVZ.BE,JH-J.H.LATIN AMER. A2DL,EUR,,,,Janus Henderson,BER,XBER,,False
+FGVX.BE,JH-J.H.LATIN AMER. X2EO,EUR,,Equities,,Janus Henderson,BER,XBER,,False
+FGVZ.BE,JH-J.H.LATIN AMER. A2DL,EUR,,Equities,,Janus Henderson,BER,XBER,,False
 FGZA.BE,UBS(L)BD-S.T.EO CORP PA,EUR,,Fixed Income,Corporate Bonds,UBS Asset Management,BER,XBER,,False
 FGZB.BE,UBS(L)BD-EOCOSU PA,EUR,,Fixed Income,,UBS Asset Management,BER,XBER,,False
 FGZF.BE,UBS(L)BD-DL CORP.P-A,EUR,,Fixed Income,Corporate Bonds,UBS Asset Management,BER,XBER,,False
@@ -1654,8 +1654,8 @@ FH4R.BE,AXA WLD-FR.EU.SM.C.A T,EUR,,,,AXA World Funds,BER,XBER,,False
 FH4S.BE,AXA WLD-FR.EU.SM.C.A A,EUR,,,,AXA World Funds,BER,XBER,,False
 FH4T.BE,AXA WLD-FR.EUR.OPP.A A,EUR,,,,AXA World Funds,BER,XBER,,False
 FH4U.BE,AXA WLD-GL.HGH Y.NAM.A-CH,EUR,,Fixed Income,,AXA World Funds,BER,XBER,,False
-FH4V.BE,AXA WLD-DEF.OPTIM.INC.A T,EUR,,,,AXA World Funds,BER,XBER,,False
-FH4W.BE,AXA WLD-DEF.OPTIM.INC.A A,EUR,,,,AXA World Funds,BER,XBER,,False
+FH4V.BE,AXA WLD-DEF.OPTIM.INC.A T,EUR,,Fixed Income,,AXA World Funds,BER,XBER,,False
+FH4W.BE,AXA WLD-DEF.OPTIM.INC.A A,EUR,,Fixed Income,,AXA World Funds,BER,XBER,,False
 FH4X.BE,AXA WLD-GL.HGH Y.N.A A DL,EUR,,Fixed Income,,AXA World Funds,BER,XBER,,False
 FH4Y.BE,AXA WLD-GL.HGH Y.N.A T DL,EUR,,Fixed Income,,AXA World Funds,BER,XBER,,False
 FH50.BE,JPM-EMG EU.EQ.JPMEEE AAEO,EUR,,,,JPMorgan Asset Management,BER,XBER,,False
@@ -1779,7 +1779,7 @@ FJ22.BE,FID.-GL THEM.OPP.AEOGL,EUR,FID.-GL THEM.OPP.AEOGL is an exchange-traded 
 FJ23.BE,FID.FDS-USD CASH FD A GL.,EUR,FID.FDS-USD CASH FD A GL. is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FJ23 and traded in EUR. The fund is part of the Fidelity Investments range.,Cash,,Fidelity Investments,BER,XBER,,False
 FJ24.BE,FID.FDS-US H.YI.A EUR,EUR,FID.FDS-US H.YI.A EUR is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FJ24 and traded in EUR. The fund is part of the Fidelity Investments range.,Fixed Income,,Fidelity Investments,BER,XBER,,False
 FJ25.BE,FID.FDS-EUR.D.G.A GL.,EUR,FID.FDS-EUR.D.G.A GL. is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FJ25 and traded in EUR. The fund is part of the Fidelity Investments range.,,,Fidelity Investments,BER,XBER,,False
-FJ26.BE,FID.FDS-MULTI A.INC.A,EUR,FID.FDS-MULTI A.INC.A is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FJ26 and traded in EUR. The fund is part of the Fidelity Investments range.,,,Fidelity Investments,BER,XBER,,False
+FJ26.BE,FID.FDS-MULTI A.INC.A,EUR,FID.FDS-MULTI A.INC.A is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FJ26 and traded in EUR. The fund is part of the Fidelity Investments range.,Fixed Income,,Fidelity Investments,BER,XBER,,False
 FJ27.BE,FIDELITY-EM.MKT.FO.AACCDL,EUR,FIDELITY-EM.MKT.FO.AACCDL is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FJ27 and traded in EUR. The fund is part of the Fidelity Investments range.,,,Fidelity Investments,BER,XBER,,False
 FJ28.BE,FID.FDS-ASEAN FD A GL.,EUR,FID.FDS-ASEAN FD A GL. is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FJ28 and traded in EUR. The fund is part of the Fidelity Investments range.,,,Fidelity Investments,BER,XBER,,False
 FJ29.BE,FID.FDS-MALAYSIA A GL.,EUR,FID.FDS-MALAYSIA A GL. is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FJ29 and traded in EUR. The fund is part of the Fidelity Investments range.,Equities,,Fidelity Investments,BER,XBER,,False
@@ -1833,7 +1833,7 @@ FJR8.BE,FID.FDS-NORDIC Y ACC. SEK,EUR,"FID.FDS-NORDIC Y ACC. SEK is a Fidelity f
 FJR9.BE,F.F.-ASIAN SMA.COM.AACCEO,EUR,F.F.-ASIAN SMA.COM.AACCEO is a Fidelity fund focusing on Asian smaller companies with an accumulating share class. The fund aims to provide long-term capital growth by investing in smaller companies in the Asian region. It is domiciled and regulated according to the jurisdiction indicated by the '.BE' suffix.,,,Fidelity Investments,BER,XBER,,False
 FJRA.BE,FID.FDS-THAILAND A GL.,EUR,"FID.FDS-THAILAND A GL. is a fund, managed by Fidelity, focusing on investments in Thailand equities. The fund aims to provide investors with exposure to the Thai stock market, targeting growth opportunities within the region. It is domiciled and regulated according to the jurisdiction indicated by the '.BE' suffix.",,,Fidelity Investments,BER,XBER,,False
 FJRB.BE,FID.FDS-USD BOND A GL.,EUR,"FID.FDS-USD BOND A GL. is a fund, managed by Fidelity, with a global investment strategy focused on US dollar-denominated bonds. The fund aims to provide investors with income through a diversified portfolio of USD bonds. It is domiciled and regulated according to the jurisdiction indicated by the '.BE' suffix.",Fixed Income,Corporate Bonds,Fidelity Investments,BER,XBER,,False
-FJRC.BE,FID.FDS-LATIN AMER. A GL.,EUR,FID.FDS-LATIN AMER. A GL. is a fund focused on investing in Latin American equities. The fund aims to achieve capital growth by investing in a diversified portfolio of companies located in Latin America. It is managed by Fidelity Investments.,,,Fidelity Investments,BER,XBER,,False
+FJRC.BE,FID.FDS-LATIN AMER. A GL.,EUR,FID.FDS-LATIN AMER. A GL. is a fund focused on investing in Latin American equities. The fund aims to achieve capital growth by investing in a diversified portfolio of companies located in Latin America. It is managed by Fidelity Investments.,Equities,,Fidelity Investments,BER,XBER,,False
 FJRD.BE,FID.FDS-EU.LAR.COS A GL.,EUR,FID.FDS-EU.LAR.COS A GL. is a fund focused on investing in large capitalization European companies. The fund aims to achieve capital growth by investing in a diversified portfolio of companies located in Europe. It is managed by Fidelity Investments.,,,Fidelity Investments,BER,XBER,,False
 FJRE.BE,FF-SUST.AS.EQ.FD A DIS.EO,EUR,"FF-SUST.AS.EQ.FD A DIS.EO is a sustainable Asian equity fund that distributes dividends. The fund focuses on investing in companies in Asia that meet specific sustainability criteria. It is a sub-fund of Fidelity Funds, based in Luxembourg.",,,Fidelity Investments,BER,XBER,,False
 FJRF.BE,FF-SUST.AS.EQ.FD A DIS.DL,EUR,"FF-SUST.AS.EQ.FD A DIS.DL is a sustainable Asian equity fund that distributes dividends. The fund focuses on investing in companies in Asia that meet specific sustainability criteria. It is a sub-fund of Fidelity Funds, based in Luxembourg.",,,Fidelity Investments,BER,XBER,,False
@@ -1842,7 +1842,7 @@ FJRH.BE,FID.FDS-CHINA FOCUS A DL,EUR,FID.FDS-CHINA FOCUS A DL is a fund that foc
 FJRI.BE,FID.FDS-SU.JP EQ.E-ACC-EO,EUR,"FID.FDS-SU.JP EQ.E-ACC-EO is a sub-fund of Fidelity Funds, focusing on sustainable Japanese equity investments. The fund seeks long-term capital growth by investing in companies based in Japan that demonstrate positive environmental, social, and governance (ESG) characteristics. It accumulates income rather than distributing it.",,,Fidelity Investments,BER,XBER,,False
 FJRJ.BE,FID.FDS-FRANCE FD A GL.,EUR,FID.FDS-FRANCE FD A GL. is a fund focused on investing in French equities. The fund aims to achieve capital growth by investing in a diversified portfolio of companies located in France. It is managed by Fidelity Investments.,,,Fidelity Investments,BER,XBER,,False
 FJRK.BE,FID.FDS-IBERIA FD A GL.,EUR,FID.FDS-IBERIA FD A GL. is a fund focused on investing in Iberian equities (Spain and Portugal). The fund aims to achieve capital growth by investing in a diversified portfolio of companies located in the Iberian Peninsula. It is managed by Fidelity Investments.,,,Fidelity Investments,BER,XBER,,False
-FJRL.BE,FID.FDS-ITALY A GL.,EUR,FID.FDS-ITALY A GL. is a fund focused on investing in Italian equities. The fund aims to achieve capital growth by investing in a diversified portfolio of companies located in Italy. It is managed by Fidelity Investments.,,,Fidelity Investments,BER,XBER,,False
+FJRL.BE,FID.FDS-ITALY A GL.,EUR,FID.FDS-ITALY A GL. is a fund focused on investing in Italian equities. The fund aims to achieve capital growth by investing in a diversified portfolio of companies located in Italy. It is managed by Fidelity Investments.,Fixed Income,Government Bonds,Fidelity Investments,BER,XBER,,False
 FJRM.BE,FIDELITY-GL.DIV.PLUS AGL,EUR,FIDELITY-GL.DIV.PLUS AGL is a fund that invests in global equities with a focus on dividend-paying companies. The fund aims to provide income and capital appreciation by investing in a diversified portfolio of dividend-paying stocks from around the world. Fidelity Investments manages the fund.,,,Fidelity Investments,BER,XBER,,False
 FJRN.BE,FID.FDS-GL FOCUS A EO GL.,EUR,FID.FDS-GL FOCUS A EO GL. is a globally focused equity fund. The fund aims to achieve capital appreciation by investing in a concentrated portfolio of companies from around the world. It is managed by Fidelity Investments.,,,Fidelity Investments,BER,XBER,,False
 FJRP.BE,FID.FDS-INDIA FOC.FD A EO,EUR,FID.FDS-INDIA FOC.FD A EO is a fund focused on investing in Indian equities. The fund aims to achieve capital growth by investing in a diversified portfolio of companies located in India. It is managed by Fidelity Investments.,,,Fidelity Investments,BER,XBER,,False
@@ -1977,7 +1977,7 @@ FP8W.BE,IQAM Bond High Yield RT,EUR,"IQAM Bond High Yield RT is a high-yield bon
 FP8X.BE,IQAM Bond Corporate RT,EUR,"IQAM Bond Corporate RT is a corporate bond fund managed by IQAM. IQAM is an asset management firm. The fund focuses on investing in investment-grade corporate bonds, aiming to provide a steady stream of income with a moderate level of credit risk.",Fixed Income,Corporate Bonds,3 Banken-Generali Investment-Gesellschaft,BER,XBER,,False
 FPG1.BE,FID.FDS-NORDIC FD A GL.,EUR,"FID.FDS-NORDIC FD A GL. is a fund managed by Fidelity Funds that focuses on Nordic companies with a global outlook. Fidelity is a global asset management firm. The fund invests in a diversified portfolio of companies located in the Nordic region (e.g., Sweden, Norway, Denmark, Finland) that have significant international operations.",Equities,,Fidelity Investments,BER,XBER,,False
 FPG2.BE,FID.FDS-GL HTH C.E GL.,EUR,,,,Fidelity Investments,BER,XBER,,False
-FPG5.BE,FID.FDS-LATIN AMER.AACCDL,EUR,,,,Fidelity Investments,BER,XBER,,False
+FPG5.BE,FID.FDS-LATIN AMER.AACCDL,EUR,,Equities,,Fidelity Investments,BER,XBER,,False
 FPG6.BE,FID.FDS-NORDIC A ACC. EUR,EUR,,Equities,,Fidelity Investments,BER,XBER,,False
 FPG7.BE,FID.FDS-AMER.A ACC.EO HGD,EUR,,,,Fidelity Investments,BER,XBER,,False
 FPGA.BE,FID.FDS-SU.JP EQ.A-EUR,EUR,,,,Fidelity Investments,BER,XBER,,False
@@ -1992,7 +1992,7 @@ FPGK.BE,FID.FDS-AUSTRALIA A GL.,EUR,"The Fidelity Funds - Australia Fund seeks t
 FPGL.BE,FID.FDS-INDONESIA A GL.,EUR,"The Fidelity Funds - Indonesia Fund seeks capital appreciation by investing primarily in equity securities of companies located in Indonesia. The fund is managed by Fidelity International, headquartered in London, and focuses on identifying companies with strong growth potential within the Indonesian market. It aims to provide investors with exposure to the growth opportunities in the Indonesian economy.",Equities,Emerging Markets,Fidelity Investments,BER,XBER,,False
 FPGM.BE,FIDE.FDS-GL.DI.AMINCGEO,EUR,"The Fidelity Funds - Global Dividend Fund aims to provide income and capital growth by investing in dividend-paying equities worldwide. The fund seeks to identify companies with a track record of consistent dividend payments and the potential for future dividend growth. Fidelity International, headquartered in London, manages the fund.",,Developed Markets,Fidelity Investments,BER,XBER,,False
 FPI.BE,FID.FDS-SMART GBL DF.A GL,EUR,,,,Fidelity Investments,BER,XBER,,False
-FPI1.BE,FID.FDS-ITALY FD E AC.EUR,EUR,,,,Fidelity Investments,BER,XBER,,False
+FPI1.BE,FID.FDS-ITALY FD E AC.EUR,EUR,,Fixed Income,Government Bonds,Fidelity Investments,BER,XBER,,False
 FPI2.BE,FID.FDS-AMERICA FD E GL.,EUR,,,,Fidelity Investments,BER,XBER,,False
 FPIA.BE,FID.FDS-CHINA CONSUM.A DL,EUR,"The Fidelity Funds - China Consumer Fund aims to achieve capital growth by investing primarily in equity securities of companies that benefit from the growth in domestic consumption in China. The fund is managed by Fidelity International, headquartered in London, and focuses on identifying companies with strong exposure to the Chinese consumer market. The fund aims to provide investors with exposure to the growing Chinese consumer sector.",,Emerging Markets,Fidelity Investments,BER,XBER,,False
 FPIF.BE,FID.FDS-GL TECHNOL.E GL.,EUR,"The Fidelity Funds - Global Technology Fund invests primarily in companies engaged in the technology industry worldwide. The fund seeks to generate capital appreciation by identifying companies with strong growth potential in the technology sector. Fidelity International, headquartered in London, manages the fund.",Information Technology,Developed Markets,Fidelity Investments,BER,XBER,,False
@@ -2019,7 +2019,7 @@ FQA.BE,FID.FDS-EMER.M. A ACC.EUR,EUR,"FID.FDS-EMER.M. A ACC.EUR refers to a Fide
 FQF.BE,WMF(L)-W.G.QUAL.GR.NDLAUH,EUR,WMF(L)-W.G.QUAL.GR.NDLAUH is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FQF and traded in EUR.,,,,BER,XBER,,False
 FRCJ.BE,UBSLFS-MSCI JP SR ADYN,EUR,UBSLFS-MSCI JP SR ADYN is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FRCJ and traded in EUR.,Equities,,UBS Asset Management,BER,XBER,,False
 FRNE.BE,AIS-AM.FL.RA.EO.C.1-3 AEO,EUR,AIS-AM.FL.RA.EO.C.1-3 AEO is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FRNE and traded in EUR. The fund is part of the Amundi Asset Management range.,Fixed Income,Corporate Bonds,Amundi Asset Management,BER,XBER,,False
-FRNH.BE,AIS-AM.FL.RA.DL COR. EOCH,EUR,AIS-AM.FL.RA.DL COR. EOCH is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FRNH and traded in EUR. The fund is part of the Amundi Asset Management range.,,,Amundi Asset Management,BER,XBER,,False
+FRNH.BE,AIS-AM.FL.RA.DL COR. EOCH,EUR,AIS-AM.FL.RA.DL COR. EOCH is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FRNH and traded in EUR. The fund is part of the Amundi Asset Management range.,Fixed Income,,Amundi Asset Management,BER,XBER,,False
 FRNU.BE,AIS-AM.FL.RA.DL.CO. DLC,EUR,AIS-AM.FL.RA.DL.CO. DLC is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker FRNU and traded in EUR. The fund is part of the Amundi Asset Management range.,,,Amundi Asset Management,BER,XBER,,False
 FT9.BE,FTIF-F.EURO HGH YLD NA EO,EUR,"FTIF-F.EURO HGH YLD NA EO is a fund that invests in Euro-denominated high yield bonds. The fund aims to provide investors with a high level of current income. Franklin Templeton Investments, headquartered in San Mateo, California, manages the fund.",Fixed Income,High Yield Bonds,Franklin Templeton Investments,BER,XBER,,False
 FT91.BE,F.TEM.INV.-T.FR.MKTS AAEO,EUR,"F.TEM.INV.-T.FR.MKTS AAEO is a fund that invests in frontier markets. The fund aims for capital appreciation by investing in companies located in less-developed economies around the world. Franklin Templeton Investments, headquartered in San Mateo, California, manages the fund.",,Frontier Markets,Franklin Templeton Investments,BER,XBER,,False
@@ -2101,7 +2101,7 @@ G3TC.BE,GRUNDBESITZ FOKUS DEUT.RC,EUR,"GRUNDBESITZ FOKUS DEUT.RC is an open-ende
 G4MA.BE,GAMAX FDS-ASIA PAC.IN.A,EUR,"GAMAX FDS-ASIA PAC.IN.A is an equity fund investing in companies located in the Asia-Pacific region, managed by GAMAX Funds. The fund seeks capital appreciation by investing in a diversified portfolio of stocks from various sectors within the Asia-Pacific market. ""IN.A"" refers to a specific share class with particular income or distribution characteristics.",Financials,Emerging Markets,GAM Investment Management,BER,XBER,,False
 G4MF.BE,GAMAX FDS-JUNIOR INH.A,EUR,"GAMAX FDS-JUNIOR INH.A is an equity fund managed by GAMAX Funds, focusing on investments in junior companies or smaller capitalization stocks. The fund aims to achieve capital appreciation through investments in companies with high growth potential. The INH.A represents a particular share class with specific shareholder rights.",Financials,Small Cap,GAM Investment Management,BER,XBER,,False
 G4NA.BE,H+A PRIME VAL.GROWTH EO A,EUR,"H+A PRIME VAL.GROWTH EO A is a value-oriented equity fund managed by H+A (Hamburg and Aachen) investing in companies exhibiting value characteristics with growth potential, focused on the European region (EO). The fund seeks to achieve long-term capital appreciation through undervalued stocks. The 'A' denotes a specific share class.",Financials,Value,,BER,XBER,,False
-G4NC.BE,H+A PRIME VALUES INC.A EO,EUR,,,,,BER,XBER,,False
+G4NC.BE,H+A PRIME VALUES INC.A EO,EUR,,Fixed Income,,,BER,XBER,,False
 G4ND.BE,GLOBAL EQU.VALUE SELECT T,EUR,,,,,BER,XBER,,False
 G4NE.BE,NIPPON PORTFOLIO AYN,EUR,,,,,BER,XBER,,False
 G5JA.BE,GROWTHPOINT PPTYS,EUR,"GROWTHPOINT PPTYS is a South African real estate investment trust (REIT) that invests in a diversified portfolio of property assets. The company's portfolio includes office, retail, and industrial properties located primarily in South Africa and Australia, with a growing presence in Central and Eastern Europe. Growthpoint aims to deliver sustainable income and capital growth to its shareholders through active property management and strategic acquisitions.",Real Estate,REITs,,BER,XBER,,False
@@ -2189,7 +2189,7 @@ GIU9.BE,AMPEGA RENDITE RENTENFDS,EUR,,Fixed Income,,,BER,XBER,,False
 GIUD.BE,TERRASSISI AKT.I AMI P(A),EUR,,,,,BER,XBER,,False
 GIUG.BE,AMPEGA UNTERNEHM.ANL.FDS,EUR,,Fixed Income,,,BER,XBER,,False
 GIUM.BE,Ampega Global Aktienfonds,EUR,,Equities,,,BER,XBER,,False
-GIUN.BE,CT WELT PTF AMI CT(A),EUR,,,,,BER,XBER,,False
+GIUN.BE,CT WELT PTF AMI CT(A),EUR,,Equities,,,BER,XBER,,False
 GIUV.BE,ZANTKE EO CO.BDS AMI P(A),EUR,,Fixed Income,,,BER,XBER,,False
 GIUW.BE,KAPITAL TOTAL RETURN AMI,EUR,,,,,BER,XBER,,False
 GIUX.BE,KAPITALAUFBAU PLUS AMI,EUR,,,,,BER,XBER,,False
@@ -2239,7 +2239,7 @@ GSDE.BE,BNP P.EASY-EN.+ME.E.R.CEO,EUR,,,,BNP Paribas Asset Management,BER,XBER,,
 GSW0.BE,GS FD-US FOC.G.E.P.A USD,EUR,,Equities,Growth,Goldman Sachs Asset Management,BER,XBER,,False
 GSW1.BE,GSF-GS GL.EQ.IN.PTF. DL,EUR,,,Blend,Goldman Sachs Asset Management,BER,XBER,,False
 GSW2.BE,G.SACHS-GL.CORE EQ.BA.C.A,EUR,,,Blend,Goldman Sachs Asset Management,BER,XBER,,False
-GSW3.BE,G.SACHS FDS-EUR.COR.EUR A,EUR,,,Developed Markets,Goldman Sachs Asset Management,BER,XBER,,False
+GSW3.BE,G.SACHS FDS-EUR.COR.EUR A,EUR,,Fixed Income,Developed Markets,Goldman Sachs Asset Management,BER,XBER,,False
 GSW4.BE,G.SACHS FDS-EUR.CORE EUR,EUR,,,Developed Markets,Goldman Sachs Asset Management,BER,XBER,,False
 GSW5.BE,GS FDS-G.S.EUR.CO.EQ.R EO,EUR,,,Developed Markets,Goldman Sachs Asset Management,BER,XBER,,False
 GSW6.BE,G.SACHS FDS-GL.H.Y.EUR HG,EUR,,Fixed Income,High Yield Bonds,Goldman Sachs Asset Management,BER,XBER,,False
@@ -2253,7 +2253,7 @@ GSWF.BE,GSF-ASIA EQU.PTF USD,EUR,,,,Goldman Sachs Asset Management,BER,XBER,,Fal
 GSWG.BE,GSF-ASIA EQU.PTF E EUR,EUR,,,,Goldman Sachs Asset Management,BER,XBER,,False
 GSWH.BE,GSF-JAPAN EQU.PTF A SN.DL,EUR,,Equities,,Goldman Sachs Asset Management,BER,XBER,,False
 GSWJ.BE,GSF-EM.MKTS EQ.PTF P,EUR,,,,Goldman Sachs Asset Management,BER,XBER,,False
-GSWK.BE,G.SACHS FDS-US COR.E.P DL,EUR,,,,Goldman Sachs Asset Management,BER,XBER,,False
+GSWK.BE,G.SACHS FDS-US COR.E.P DL,EUR,,Fixed Income,,Goldman Sachs Asset Management,BER,XBER,,False
 GSWM.BE,GS-ALL CHINA EQ.PTF BDDL,EUR,,,,Goldman Sachs Asset Management,BER,XBER,,False
 GSWN.BE,G.SACHS FDS-EUR.CO.EUR AC,EUR,,,,Goldman Sachs Asset Management,BER,XBER,,False
 GSWP.BE,GS FD-US FOC.G.E.P.USD,EUR,,Equities,,Goldman Sachs Asset Management,BER,XBER,,False
@@ -2758,7 +2758,7 @@ IU1A.BE,INVESCO PAN E.S.CAP AD DL,EUR,INVESCO PAN E.S.CAP AD DL is an exchange-t
 IU1B.BE,INV.FDS-GL.EQ.INC.C DL C,EUR,INV.FDS-GL.EQ.INC.C DL C is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker IU1B and traded in EUR. The fund is part of the Invesco Investment Management range.,,,Invesco Investment Management,BER,XBER,,False
 IU1C.BE,INVESCO-BL.-RSK AL.AD.EO,EUR,INVESCO-BL.-RSK AL.AD.EO is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker IU1C and traded in EUR. The fund is part of the Invesco Investment Management range.,,,Invesco Investment Management,BER,XBER,,False
 IU1D.BE,INVESCO-BL.-RSK AL.AA EO,EUR,INVESCO-BL.-RSK AL.AA EO is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker IU1D and traded in EUR. The fund is part of the Invesco Investment Management range.,,,Invesco Investment Management,BER,XBER,,False
-IU1E.BE,INV.FDS-GL.EQ.INC.A DL C,EUR,INV.FDS-GL.EQ.INC.A DL C is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker IU1E and traded in EUR. The fund is part of the Invesco Investment Management range.,,,Invesco Investment Management,BER,XBER,,False
+IU1E.BE,INV.FDS-GL.EQ.INC.A DL C,EUR,INV.FDS-GL.EQ.INC.A DL C is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker IU1E and traded in EUR. The fund is part of the Invesco Investment Management range.,Fixed Income,,Invesco Investment Management,BER,XBER,,False
 IU1F.BE,INVESCO-AS.CON.DEM.ACEOHD,EUR,INVESCO-AS.CON.DEM.ACEOHD is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker IU1F and traded in EUR. The fund is part of the Invesco Investment Management range.,,,Invesco Investment Management,BER,XBER,,False
 IU1H.BE,INVESCO PAN.EU.H.INC.AADE,EUR,INVESCO PAN.EU.H.INC.AADE is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker IU1H and traded in EUR. The fund is part of the Invesco Investment Management range.,,,Invesco Investment Management,BER,XBER,,False
 IU1I.BE,INVESCO EUR.CORP.BD AADEO,EUR,INVESCO EUR.CORP.BD AADEO is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker IU1I and traded in EUR. The fund is part of the Invesco Investment Management range.,Fixed Income,Corporate Bonds,Invesco Investment Management,BER,XBER,,False
@@ -2939,17 +2939,17 @@ JHS1.BE,HSBC GIF-BRIC EQU.A D,EUR,"HSBC GIF-BRIC EQU.A D is an equity fund withi
 JHS5.BE,HSBC GIF-THAI EQUITY A D.,EUR,"HSBC GIF-THAI EQUITY A D is an equity fund investing primarily in Thai equities, offered within the HSBC Global Investment Funds range. The fund seeks to achieve long-term capital appreciation by investing in companies listed on the Stock Exchange of Thailand. HSBC Global Asset Management is headquartered in London.",Equities,,HSBC Investment Funds,BER,XBER,,False
 JHS7.BE,HSBC GIF-EOL.EQ.S.E.E.A.D,EUR,"HSBC GIF-EOL.EQ.S.E.E.A.D is an equity fund within the HSBC Global Investment Funds range, focused on investing in the equities of companies in the Eastern Europe, South East Asia and Africa region. The fund aims to provide long-term capital growth through a diversified portfolio of companies in the specified regions. HSBC Global Asset Management is headquartered in London.",,,HSBC Investment Funds,BER,XBER,,False
 JHS8.BE,HSBC GIF-EURO BOND A D,EUR,"This is a sub-fund of HSBC Global Investment Funds, focusing on Euro-denominated bonds. The fund aims to provide income and capital growth by investing primarily in investment-grade Euro bonds. The fund is managed by HSBC Global Asset Management, headquartered in London.",Fixed Income,Corporate Bonds,HSBC Investment Funds,BER,XBER,,False
-JHSA.BE,BC GIF-EUROPE VALUE P D,EUR,"BC GIF-EUROPE VALUE P D is a European equity fund within the BNY Mellon Global Investment Funds range, focusing on value investing. The fund seeks to identify undervalued companies in Europe with the potential for future growth. BNY Mellon Investment Management is headquartered in New York.",,,BNY Mellon,BER,XBER,,False
+JHSA.BE,BC GIF-EUROPE VALUE P D,EUR,"BC GIF-EUROPE VALUE P D is a European equity fund within the BNY Mellon Global Investment Funds range, focusing on value investing. The fund seeks to identify undervalued companies in Europe with the potential for future growth. BNY Mellon Investment Management is headquartered in New York.",Equities,,BNY Mellon,BER,XBER,,False
 JHSB.BE,HSBC GIF-CHIN.EQU.INH.A D,EUR,"This is a sub-fund of HSBC Global Investment Funds, focusing on Chinese equities. The fund seeks to provide long-term capital growth by investing primarily in a diversified portfolio of equities of companies domiciled in, or exercising the predominant part of their economic activity in, the People's Republic of China. HSBC Global Asset Management manages the fund, operating from its headquarters in London.",,,HSBC Investment Funds,BER,XBER,,False
 JHSC.BE,HSBC GIF-IND.EQU. A D,EUR,"This is a sub-fund of HSBC Global Investment Funds, focusing on Indian equities. The fund aims to provide long-term capital growth by investing primarily in equities of companies domiciled in, or exercising the predominant part of their economic activity in, India. HSBC Global Asset Management manages the fund, headquartered in London.",Financials,,HSBC Investment Funds,BER,XBER,,False
-JHSD.BE,BC GIF-EUROPE VALUE A D,EUR,"BC GIF-EUROPE VALUE A D is a European equity fund within the BNY Mellon Global Investment Funds range, focusing on value investing. The fund seeks to identify undervalued companies in Europe with the potential for future growth. BNY Mellon Investment Management is headquartered in New York.",,,BNY Mellon,BER,XBER,,False
+JHSD.BE,BC GIF-EUROPE VALUE A D,EUR,"BC GIF-EUROPE VALUE A D is a European equity fund within the BNY Mellon Global Investment Funds range, focusing on value investing. The fund seeks to identify undervalued companies in Europe with the potential for future growth. BNY Mellon Investment Management is headquartered in New York.",Equities,,BNY Mellon,BER,XBER,,False
 JHSF.BE,THREA.L-PA.EU.ESG EQ.EPAE,EUR,"THREA.L-PA.EU.ESG EQ.EPAE is an equity fund focused on European companies with strong Environmental, Social, and Governance (ESG) credentials. It is managed by Threadneedle, now Columbia Threadneedle Investments, a global asset management group. The fund adheres to a responsible investment approach, aiming to deliver returns while promoting sustainability.",,,Columbia Threadneedle,BER,XBER,,False
 JHSK.BE,HSBC GIF-USD BD A C,EUR,"This is a sub-fund of HSBC Global Investment Funds, focusing on USD-denominated bonds. The fund seeks to provide income and capital growth by investing primarily in a diversified portfolio of USD-denominated fixed income securities. HSBC Global Asset Management manages the fund and is headquartered in London.",Fixed Income,Corporate Bonds,HSBC Investment Funds,BER,XBER,,False
 JHSL.BE,HSBC GIF-GL.HIG.I.BD ACDL,EUR,"This is a sub-fund of HSBC Global Investment Funds, investing in global high income bonds. The fund's objective is to provide income and capital growth by investing primarily in a diversified portfolio of global high yield bonds. HSBC Global Asset Management manages the fund from its headquarters in London.",Fixed Income,High Yield Bonds,HSBC Investment Funds,BER,XBER,,False
 JHSP.BE,HSBC GIF-GLOBAL BOND A C,EUR,"This is a sub-fund of HSBC Global Investment Funds, investing in global bonds. The fund seeks to provide income and capital growth by investing primarily in a diversified portfolio of global debt securities. HSBC Global Asset Management manages the fund from its headquarters in London.",Fixed Income,Corporate Bonds,HSBC Investment Funds,BER,XBER,,False
 JHSQ.BE,HSBC GIF-EURO HGH YLD A C,EUR,"This is a sub-fund of HSBC Global Investment Funds, focusing on Euro high yield bonds. The fund aims to provide income and capital growth by investing primarily in a diversified portfolio of sub-investment grade Euro-denominated debt securities. HSBC Global Asset Management manages the fund and is headquartered in London.",Fixed Income,High Yield Bonds,HSBC Investment Funds,BER,XBER,,False
 JHSR.BE,HSBC GIF-EO CRED.BD A C,EUR,"This is a sub-fund of HSBC Global Investment Funds, focusing on Euro Credit bonds. The fund aims to provide income and capital growth by investing primarily in a diversified portfolio of Euro-denominated investment grade corporate debt securities. HSBC Global Asset Management manages the fund and is headquartered in London.",Fixed Income,Corporate Bonds,HSBC Investment Funds,BER,XBER,,False
-JHSU.BE,BC GIF-EUROPE VALUE A C,EUR,"BC GIF-EUROPE VALUE A C is a European equity fund within the BNY Mellon Global Investment Funds range, focusing on value investing. The fund seeks to identify undervalued companies in Europe with the potential for future growth. BNY Mellon Investment Management is headquartered in New York.",,,BNY Mellon,BER,XBER,,False
+JHSU.BE,BC GIF-EUROPE VALUE A C,EUR,"BC GIF-EUROPE VALUE A C is a European equity fund within the BNY Mellon Global Investment Funds range, focusing on value investing. The fund seeks to identify undervalued companies in Europe with the potential for future growth. BNY Mellon Investment Management is headquartered in New York.",Equities,,BNY Mellon,BER,XBER,,False
 JHSV.BE,HSBC GIF-BRAZIL BD A CAP,EUR,"This is a sub-fund of HSBC Global Investment Funds, investing in Brazilian bonds. The fund aims to provide income and capital growth by investing primarily in a diversified portfolio of Brazilian debt securities. HSBC Global Asset Management manages the fund, headquartered in London.",Fixed Income,Emerging Markets,HSBC Investment Funds,BER,XBER,,False
 JHSX.BE,HSBC GIF-FRONT.MKTS A DIS,EUR,"This is a sub-fund of HSBC Global Investment Funds, focusing on Frontier Markets. The fund aims to provide long-term capital growth by investing primarily in equities of companies domiciled in, or exercising the predominant part of their economic activity in, frontier markets. HSBC Global Asset Management manages the fund, headquartered in London.",,,HSBC Investment Funds,BER,XBER,,False
 JHSY.BE,HSBC-ECON.SCA.US EQ. AHC,EUR,"This is a sub-fund of HSBC Global Investment Funds that focuses on US equities based on an economic scale approach. The fund aims to provide long-term capital growth by investing in a portfolio of US companies that exhibit characteristics of economic scale. HSBC Global Asset Management manages the fund, headquartered in London.",,,HSBC Investment Funds,BER,XBER,,False
@@ -3216,11 +3216,11 @@ LPJD.BE,LUPUS ALP.-SM.GER.CHAMP.A,EUR,,,,,BER,XBER,,False
 LPJE.BE,LUPUS ALP.-ALL OPPS.FD C,EUR,,,,,BER,XBER,,False
 LPJF.BE,LUPUS ALP.-GL.CONV.BDS CH,EUR,,Fixed Income,,,BER,XBER,,False
 LPNB.BE,LUPUS ALPHA VOLAT.INVT C,EUR,,,,,BER,XBER,,False
-LPNH.BE,LU.ALPH.CLO HI.QUAL.INV.A,EUR,,,,,BER,XBER,,False
+LPNH.BE,LU.ALPH.CLO HI.QUAL.INV.A,EUR,,Fixed Income,,,BER,XBER,,False
 LPNI.BE,LUPUS ALPHA DIVID.CHAMP.R,EUR,,,,,BER,XBER,,False
 LQ3A.BE,METZLER WACHSTUM INTERN.,EUR,,,,,BER,XBER,,False
 LQ3B.BE,METZL.EURO RENTEN DEFENS.,EUR,,Fixed Income,,,BER,XBER,,False
-LQ3E.BE,METZL.GERM.SM.COMP.SUST.A,EUR,,,,,BER,XBER,,False
+LQ3E.BE,METZL.GERM.SM.COMP.SUST.A,EUR,,Equities,,,BER,XBER,,False
 LQ3F.BE,METZLER AKTIEN EUROPA AR,EUR,"METZLER AKTIEN EUROPA AR is a fund that invests in European stocks, seeking capital appreciation through a diversified portfolio of companies across Europe; it is managed by Metzler Asset Management, located in Frankfurt, Germany.",Equities,,,BER,XBER,,False
 LQ3J.BE,METZ.WERTSICHERUNGSF.93 A,EUR,"METZ.WERTSICHERUNGSF.93 A is a fund, a wealth preservation fund established in 1993, that focuses on maintaining capital while generating returns through a diversified investment strategy; it is managed by Metzler Asset Management based in Frankfurt, Germany.",,,,BER,XBER,,False
 LQ3K.BE,Multi-Asset Global 5 A,EUR,"Multi-Asset Global 5 A is a multi-asset fund with a target risk level of 5, indicating a moderate risk profile; it invests in a variety of asset classes globally, aiming to provide diversification and returns, managed by Metzler Asset Management.",Equities,,,BER,XBER,,False
@@ -3431,13 +3431,13 @@ MNWB.BE,BELLVUE(LUX)-BB GL.M. BEO,EUR,BELLVUE(LUX)-BB GL.M. BEO is an exchange-t
 MODR.BE,IS3-ESG MA M.P. EOA,EUR,IS3-ESG MA M.P. EOA is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker MODR and traded in EUR.,,,,BER,XBER,,False
 MQV.BE,CHARTER HALL RETAIL UTS,EUR,CHARTER HALL RETAIL UTS is an exchange-traded fund listed on the Berlin Stock Exchange under the ticker MQV and traded in EUR.,,,,BER,XBER,,False
 MSED.BE,LYXOR I.-CO.EO ST.50(DR)A,EUR,"LYXOR I.-CO.EO ST.50(DR)A refers to a Lyxor ETF that tracks the EURO STOXX 50 index. It is designed to replicate the performance of the EURO STOXX 50 index, which comprises 50 of the largest companies in the Eurozone. Lyxor Asset Management, headquartered in France, is a large asset management firm that offers a range of ETFs and manages this fund.",,,Lyxor International Asset Management,BER,XBER,,False
-MSJ5.BE,MSI-LATIN AMER.EQ. NAM.A,EUR,,,Emerging Markets,,BER,XBER,,False
+MSJ5.BE,MSI-LATIN AMER.EQ. NAM.A,EUR,,Equities,Emerging Markets,,BER,XBER,,False
 MSJA.BE,MSI-EURO STRAT.BD NAM.A,EUR,,Fixed Income,,,BER,XBER,,False
 MSJB.BE,MSI-EUROPE OPPORTUN.A,EUR,,,,,BER,XBER,,False
 MSJI.BE,MSI-SHORT MATUR.EO BD A,EUR,,Derivatives,Trading,,BER,XBER,,False
 MSY.BE,MSI-EURO BOND FD NAM.A,EUR,,Fixed Income,Corporate Bonds,,BER,XBER,,False
 MTDA.BE,LIF-600 PER.+H. EOD,EUR,,,,Lyxor International Asset Management,BER,XBER,,False
-MTDB.BE,LIF-COR.E.ST50 EOD,EUR,,,,Lyxor International Asset Management,BER,XBER,,False
+MTDB.BE,LIF-COR.E.ST50 EOD,EUR,,Fixed Income,,Lyxor International Asset Management,BER,XBER,,False
 MTDD.BE,MUL-LX.EO GOV.BD7-10Y EOD,EUR,"This instrument is the MUL-LX.EO GOV.BD7-10Y EOD, tracking government bonds with a maturity of 7-10 years. It is an exchange-traded fund (ETF) managed by MUL, focusing on Euro-denominated government bonds. The specific location of MUL's headquarters is not provided.",Fixed Income,Government Bonds,Lyxor International Asset Management,BER,XBER,,False
 MU0N.BE,IM2-I.U.M.B.E. DLD,EUR,,,,,BER,XBER,,False
 MVEE.BE,ISHSVI-E.MSCIEUR.M.VESGEO,EUR,"This is an iShares ETF tracking the MSCI Europe Minimum Volatility ESG Leaders index. The ETF seeks to provide exposure to European companies with low volatility and high environmental, social and governance ratings. iShares is managed by BlackRock.",Information Technology,Developed Markets,BlackRock Asset Management,BER,XBER,,False
@@ -3452,7 +3452,7 @@ N52K.BE,NORDEA 1-NORD.EQ.SM.BP-EO,EUR,,,,,BER,XBER,,False
 N52L.BE,NORDEA 1-NORWEG.EQ. BP-NK,EUR,,,,,BER,XBER,,False
 N52M.BE,NORDEA 1-SWEDISH BD BP-SK,EUR,,Fixed Income,,,BER,XBER,,False
 N52N.BE,NOR.1-NO.AM.ST.EQ. BPUSD,EUR,,,,,BER,XBER,,False
-NADA.BE,MUL-LYX.COR.MSC YND,EUR,,,,Lyxor International Asset Management,BER,XBER,,False
+NADA.BE,MUL-LYX.COR.MSC YND,EUR,,Fixed Income,,Lyxor International Asset Management,BER,XBER,,False
 NADB.BE,MUL-LX.EO GOV.BD 10-15Y D,EUR,,Fixed Income,Government Bonds,Lyxor International Asset Management,BER,XBER,,False
 NADQ.BE,MUL-LYX.NASDAQ DLD,EUR,,Equities,,Lyxor International Asset Management,BER,XBER,,False
 NBTK.BE,IM-I.NASDAQ BIOTECH A,EUR,,Equities,,,BER,XBER,,False
@@ -3473,7 +3473,7 @@ NDJF.BE,NORDEA 1-NTH AM.VAL.HB-EO,EUR,NORDEA 1-NTH AM.VAL.HB-EO refers to a Nort
 NDJG.BE,NORDEA 1-AS.EX JA.E.BPDL,EUR,"NORDEA 1-AS.EX JA.E.BPDL refers to an Asia ex-Japan equity fund managed by Nordea Investment Funds S.A. The fund invests primarily in equities of companies located in Asia, excluding Japan. The objective is to provide investors with long-term capital appreciation by investing in the growing Asian markets, excluding Japan.",Financials,Emerging Markets,,BER,XBER,,False
 NDJH.BE,NORDEA 1-EUR.COV.BD BP-EO,EUR,NORDEA 1-EUR.COV.BD BP-EO refers to a Euro-denominated covered bond fund managed by Nordea Investment Funds S.A. It invests primarily in covered bonds issued in Europe. The goal is to provide investors with a steady stream of income while maintaining a relatively low risk profile due to the security offered by covered bonds.,Fixed Income,Government Bonds,,BER,XBER,,False
 NDJI.BE,NORDEA 1-NTH AM.VAL.HA-EO,EUR,NORDEA 1-NTH AM.VAL.HA-EO refers to a North American value equity fund managed by Nordea Investment Funds S.A. The fund invests primarily in undervalued stocks of companies located in North America. The objective is to provide investors with long-term capital appreciation by identifying and investing in companies trading below their intrinsic value.,Equities,Value,,BER,XBER,,False
-NDJJ.BE,NORDEA 1-LATIN A.E. AP-EO,EUR,NORDEA 1-LATIN A.E. AP-EO refers to a Latin American equity fund managed by Nordea Investment Funds S.A. The fund invests primarily in equities of companies located in Latin America. The fund's objective is to provide investors with long-term capital appreciation.,,,,BER,XBER,,False
+NDJJ.BE,NORDEA 1-LATIN A.E. AP-EO,EUR,NORDEA 1-LATIN A.E. AP-EO refers to a Latin American equity fund managed by Nordea Investment Funds S.A. The fund invests primarily in equities of companies located in Latin America. The fund's objective is to provide investors with long-term capital appreciation.,Equities,,,BER,XBER,,False
 NDJL.BE,NORDEA 1-EUR.H.YLD BP-EUR,EUR,NORDEA 1-EUR.H.YLD BP-EUR refers to a Euro High Yield bond fund managed by Nordea Investment Funds S.A. The fund invests primarily in high-yield corporate bonds denominated in Euro. The fund's objective is to provide investors with high current income and potential capital appreciation.,Fixed Income,High Yield Bonds,,BER,XBER,,False
 NDJN.BE,NORDEA 1-AS.EX JA.E.BPEO,EUR,"NORDEA 1-AS.EX JA.E.BPEO refers to an Asia ex-Japan equity fund managed by Nordea Investment Funds S.A. The fund invests primarily in equities of companies located in Asia, excluding Japan. The objective is to provide investors with long-term capital appreciation by investing in the growing Asian markets, excluding Japan.",,,,BER,XBER,,False
 NDJP.BE,NORDEA 1-SW.S.-T.BDBP-EO,EUR,NORDEA 1-SW.S.-T.BDBP-EO refers to a Swedish short-term bond fund managed by Nordea Investment Funds S.A. The fund invests primarily in short-term debt securities issued in Sweden. The fund's objective is to provide investors with a stable income stream while maintaining a low level of risk.,Fixed Income,Government Bonds,,BER,XBER,,False
@@ -3494,13 +3494,13 @@ NK4L.BE,MUL-LYX.EO F.R.N.UETF ACC,EUR,,,,Lyxor International Asset Management,BE
 NK4M.BE,LY.PEA CH.(MSCI CHI)U.ETF,EUR,,Equities,,,BER,XBER,,False
 NK4N.BE,LYX.BTP DA(-2X)INV.UETF A,EUR,,Derivatives,Trading,Lyxor International Asset Management,BER,XBER,,False
 NK4P.BE,LYX.PEA MSCI USA UETF CEO,EUR,,Equities,,Lyxor International Asset Management,BER,XBER,,False
-NK4R.BE,LYX.CAC MID 60(DR) D,EUR,,,,Lyxor International Asset Management,BER,XBER,,False
+NK4R.BE,LYX.CAC MID 60(DR) D,EUR,,Equities,,Lyxor International Asset Management,BER,XBER,,False
 NK4T.BE,LYX.PEA MSCI E.M. UETF CE,EUR,,Equities,,Lyxor International Asset Management,BER,XBER,,False
 NK4U.BE,LYX.PEA PME(DR)UCIT.ETF D,EUR,,Equities,,Lyxor International Asset Management,BER,XBER,,False
 NK4W.BE,L.P.MSCI AC APXJ.UETF CEO,EUR,,Equities,,,BER,XBER,,False
 NK4Y.BE,LYX.PEA MSCI KO U.ETF CEO,EUR,,Equities,,Lyxor International Asset Management,BER,XBER,,False
 NK4Z.BE,L.P.SA.(F.J.T.40)UETF CEO,EUR,,,,,BER,XBER,,False
-NLTA.BE,ARROW DOW J. GL. YLD ETF,EUR,,Fixed Income,,,BER,XBER,,False
+NLTA.BE,ARROW DOW J. GL. YLD ETF,EUR,,Fixed Income,High Yield Bonds,,BER,XBER,,False
 NLUF.BE,FIDECUM-CONTR.VAL.EUROL.A,EUR,,,,,BER,XBER,,False
 NQ61.BE,VP NACHHALTIG 50 AK 2,EUR,,,,,BER,XBER,,False
 NQ64.BE,NORDASIA.COM,EUR,,,,,BER,XBER,,False
@@ -3607,7 +3607,7 @@ OSX4.BE,OSS.ISTX.EUR.MV.UC.ETF 1C,EUR,,Financials,,,BER,XBER,,False
 OSX6.BE,OSS.ESTXX600 EW UC.ETF 1C,EUR,,Financials,,,BER,XBER,,False
 OVDA.BE,WBI TACTICAL INC.SHS,EUR,,,,WBI Investments,BER,XBER,,False
 OVDB.BE,WBI BU.BE.RI.IN.3000 GR.,EUR,,,,WBI Investments,BER,XBER,,False
-OVDG.BE,WBI BU.BE.RI.IN.3000 YLD,EUR,,Fixed Income,,WBI Investments,BER,XBER,,False
+OVDG.BE,WBI BU.BE.RI.IN.3000 YLD,EUR,,Fixed Income,High Yield Bonds,WBI Investments,BER,XBER,,False
 OVDH.BE,WBI BU.BE.RI.IN.3000 VAL.,EUR,,,,WBI Investments,BER,XBER,,False
 OVDI.BE,WBI BU.BE.RI.IN.3000 SEL.,EUR,,,,WBI Investments,BER,XBER,,False
 OVFA.BE,JPM.ETF-DIV.RETU.INTL.EQ.,EUR,,,,JPMorgan Asset Management,BER,XBER,,False
@@ -4112,7 +4112,7 @@ SLMD.BE,ISHSIV-MSCI EUR.ESG S.EOD,EUR,"ISHSIV-MSCI EUR.ESG S.EOD is an exchange-
 SLMF.BE,ISHSII-DLT.BD7-10YR LSDH,EUR,,,,BlackRock Asset Management,BER,XBER,,False
 SLMG.BE,ISHSII-JPM.ESG DL EMB EOH,EUR,"ISHSII-JPM.ESG DL EMB EOH is an exchange-traded fund (ETF) that aims to track the performance of an index composed of emerging market bonds with strong environmental, social, and governance (ESG) characteristics. The fund provides investors with exposure to a diversified portfolio of emerging market debt, carefully selected based on ESG criteria. It is managed by BlackRock and is domiciled in Ireland.",Fixed Income,Emerging Markets,BlackRock Asset Management,BER,XBER,,False
 SLUS.BE,ISHSIV-MSCI USA ESG S.DLD,EUR,The instrument description for ISHSIV-MSCI USA ESG S.DLD is not available,Equities,,BlackRock Asset Management,BER,XBER,,False
-SM8T.BE,A.-A.I.E.G.M.S.A.S.B.UEDI,EUR,,Fixed Income,,Amundi Asset Management,BER,XBER,,False
+SM8T.BE,A.-A.I.E.G.M.S.A.S.B.UEDI,EUR,,Fixed Income,Government Bonds,Amundi Asset Management,BER,XBER,,False
 SML2.BE,INVESCOMI SUP500 GBP HDG,EUR,"INVESCOMI SUP500 GBP HDG is an exchange-traded fund (ETF) that seeks to track the performance of the S&P 500 Index, while also hedging against fluctuations in the value of the British pound (GBP) relative to other currencies. The fund provides investors with exposure to the performance of the 500 largest U.S. companies, while mitigating the impact of currency risk for GBP-based investors. It is managed by Invesco and is designed for investors seeking U.S. equity exposure with currency hedging.",,,Invesco Investment Management,BER,XBER,,False
 SML4.BE,INVESCOMI HEALTHC S+P US,EUR,INVESCOMI HEALTHC S+P US is an exchange-traded fund (ETF) that seeks to track the performance of the S&P US Health Care Sector Index. This fund provides exposure to companies in the healthcare sector within the United States. It is managed by Invesco.,Health Care,Developed Markets,Invesco Investment Management,BER,XBER,,False
 SML7.BE,IM-I.FINANC.S+P US S.S. A,EUR,"IM-I.FINANC.S+P US S.S. A is an exchange-traded fund (ETF) that aims to track the performance of the S&P US Financials Sector Index. The fund provides exposure to companies operating in the financial sector within the United States, offering investors a targeted approach to investing in the U.S. financial market. It is managed by Invesco.",Financials,,Invesco Investment Management,BER,XBER,,False
@@ -4334,7 +4334,7 @@ TESE.BE,F.TEM.INV-T.GWTH I ACC,EUR,F.TEM.INV-T.GWTH I ACC is a global equity fun
 TESF.BE,FTIF-F.MUT.US.VAL.NACC,EUR,"FTIF-F.MUT.US.VAL.NACC is a fund of funds, investing in other mutual funds that focus on US equities with a value investing strategy. The fund is part of the Franklin Templeton Investment Funds SICAV family. It aims to provide investors with exposure to a diversified portfolio of US value funds.",Equities,Value,Franklin Templeton Investments,BER,XBER,,False
 TESG.BE,F.TEM.INV-F.TECHN. A ACC,EUR,"F.TEM.INV-F.TECHN. A ACC is a fund investing in technology companies, seeking capital appreciation through investments in the technology sector. It is part of the Franklin Templeton Investment Funds SICAV family. The fund is an accumulation share class.",Equities,Growth,Franklin Templeton Investments,BER,XBER,,False
 TESH.BE,F.TEM.INV-F.U.S.O. A ACC,EUR,"F.TEM.INV-F.U.S.O. A ACC is a fund investing in US equities, seeking capital appreciation through investments in companies located in the United States. It is part of the Franklin Templeton Investment Funds SICAV family. The fund is an accumulation share class.",,Developed Markets,Franklin Templeton Investments,BER,XBER,,False
-TESK.BE,F.TEM.INV.-FR.INC. A MDIS,EUR,"F.TEM.INV.-FR.INC. A MDIS is an income fund with monthly distributions. It is part of the Franklin Templeton Investment Funds SICAV family. The fund aims to provide a high level of current income, and secondarily, capital appreciation.",,Developed Markets,Franklin Templeton Investments,BER,XBER,,False
+TESK.BE,F.TEM.INV.-FR.INC. A MDIS,EUR,"F.TEM.INV.-FR.INC. A MDIS is an income fund with monthly distributions. It is part of the Franklin Templeton Investment Funds SICAV family. The fund aims to provide a high level of current income, and secondarily, capital appreciation.",Fixed Income,Developed Markets,Franklin Templeton Investments,BER,XBER,,False
 TESL.BE,F.TEM.INV-T.GL.BAL. A QD.,EUR,F.TEM.INV-T.GL.BAL. A QD. is a global balanced fund with quarterly distributions. It is part of the Franklin Templeton Investment Funds SICAV family. The fund invests in both equities and fixed income securities worldwide.,,Developed Markets,Franklin Templeton Investments,BER,XBER,,False
 TESM.BE,FTIF-T.GBL CL.CHANGE AAEO,EUR,"FTIF-T.GBL CL.CHANGE AAEO is a global climate change fund seeking capital appreciation through investments in companies that are involved in climate change solutions. It is part of the Franklin Templeton Investment Funds SICAV family. The fund invests in companies focused on renewable energy, energy efficiency, and other related areas.",Equities,Developed Markets,Franklin Templeton Investments,BER,XBER,,False
 TESP.BE,F.TEM.INV-T.GWTH A YDIS,EUR,F.TEM.INV-T.GWTH A YDIS is a global equity fund seeking long-term capital appreciation with yearly distributions. It is part of the Franklin Templeton Investment Funds SICAV family. The fund invests in a diversified portfolio of companies worldwide with growth potential.,Equities,Developed Markets,Franklin Templeton Investments,BER,XBER,,False
@@ -4485,7 +4485,7 @@ UFM5.BE,UBS LX STR.FD EQ.EO P-ACC,EUR,"UBS LX STR.FD EQ.EO P-ACC is a Luxembourg
 UFM6.BE,UBS LUX STR.BAL. EO P-DIS,EUR,"UBS LUX STR.BAL. EO P-DIS is a Luxembourg-domiciled structured balanced fund investing in Euro-denominated assets. Managed by UBS, a global financial services company headquartered in Zurich and Basel, Switzerland, it seeks a mix of income and capital appreciation through a balanced allocation of assets like equities and bonds. ""P-DIS"" suggests distributing shares, where income is paid out to investors rather than reinvested.",Equities,,UBS Asset Management,BER,XBER,,False
 UFM7.BE,UBS LUX STR.BA.EO P-C-DIS,EUR,,,,UBS Asset Management,BER,XBER,,False
 UFM8.BE,UBS LX STR.FX.IC.EO P-DIS,EUR,,Fixed Income,Government Bonds,UBS Asset Management,BER,XBER,,False
-UFM9.BE,UBS LUX STR. YLD EO P-DIS,EUR,,Fixed Income,,UBS Asset Management,BER,XBER,,False
+UFM9.BE,UBS LUX STR. YLD EO P-DIS,EUR,,Fixed Income,High Yield Bonds,UBS Asset Management,BER,XBER,,False
 UFUC.BE,UBS(CH)-CMCI OIL SF DLAD,EUR,UBS(CH)-CMCI OIL SF DLAD is a commodity index fund focused on tracking the performance of the CMCI Oil index. The fund provides investors exposure to the crude oil market through a structured investment vehicle. The fund is managed by UBS in Switzerland.,Commodities,,UBS Asset Management,BER,XBER,,False
 UFUH.BE,UBS ETF CH GOLD A SF HDGD,EUR,UBS ETF CH GOLD A SF HDGD is an exchange-traded fund that tracks the price of gold. The ETF provides investors with a convenient and cost-effective way to invest in gold without having to physically hold the metal. The fund is managed by UBS in Switzerland.,Commodities,,UBS Asset Management,BER,XBER,,False
 UFUI.BE,UBS ETF (CH)-SMIM CHF AD,EUR,UBS ETF (CH)-SMIM CHF AD is an exchange-traded fund that tracks the performance of the Swiss Market Index Mid (SMIM). The fund provides investors with exposure to mid-sized companies listed on the Swiss stock exchange. The fund is managed by UBS in Switzerland.,Financials,,UBS Asset Management,BER,XBER,,False
@@ -4592,7 +4592,7 @@ UIMZ.BE,UBS-ETF-FA.MS.EMU PV EOAD,EUR,"This is an Exchange Traded Fund (ETF) tha
 UIQK.BE,UBS FDSO-CMCI C.SF DLAA,EUR,,,,UBS Asset Management,BER,XBER,,False
 UIV1.BE,UniValueFonds: Europa A N,EUR,,,,,BER,XBER,,False
 UIV2.BE,UniValueFonds: Europa A,EUR,,,,,BER,XBER,,False
-UIV3.BE,UNIEUROPA MID+SMALLCAPS,EUR,,,,,BER,XBER,,False
+UIV3.BE,UNIEUROPA MID+SMALLCAPS,EUR,,Equities,,,BER,XBER,,False
 UIV4.BE,UNIEXTRA: EUROSTOXX 50,EUR,,Equities,,,BER,XBER,,False
 UIV5.BE,UNIDIVIDENDENASS INH.A,EUR,,Equities,,,BER,XBER,,False
 UIV7.BE,UNIASIAPACIFIC INH.NET A,EUR,,,,,BER,XBER,,False
@@ -4719,7 +4719,7 @@ VE4S.BE,VANECK VEC. ETF-OIL S.NEW,EUR,This is a VanEck Vectors ETF focused on oi
 VE4Z.BE,VANECK VEC.ETF-R.E.ST.NEW,EUR,"This is a VanEck Vectors ETF focused on real estate stocks. The fund invests in companies that own, operate, or develop real estate. VanEck is headquartered in New York.",Real Estate,REITs,VanEck Asset Management,BER,XBER,,False
 VECA.BE,VAN.EUR CORP.BD EOA,EUR,,Fixed Income,Corporate Bonds,Vanguard Asset Management,BER,XBER,,False
 VECP.BE,VANG.EUR COR.BD U.ETF EOD,EUR,,Fixed Income,,Vanguard Asset Management,BER,XBER,,False
-VEF0.BE,Low Carbon Energy ETF,EUR,,,,,BER,XBER,,False
+VEF0.BE,Low Carbon Energy ETF,EUR,,Equities,,,BER,XBER,,False
 VEF1.BE,VANECK VEC. ETF-RUSSIA,EUR,This is a VanEck Vectors ETF providing exposure to the Russian stock market. The fund invests in a diversified portfolio of companies based in Russia. VanEck is headquartered in New York.,Equities,Emerging Markets,VanEck Asset Management,BER,XBER,,False
 VEF2.BE,VANECK VEC. ETF-AFRICA,EUR,This is a VanEck Vectors ETF providing exposure to companies in Africa. The fund invests in a diversified portfolio of companies based in or having significant business in Africa. VanEck is headquartered in New York.,Equities,Emerging Markets,VanEck Asset Management,BER,XBER,,False
 VEF4.BE,VANECK VEC.ETF-RUS.SM.CAP,EUR,This is a VanEck Vectors ETF providing exposure to small-cap companies in Russia. The fund invests in a diversified portfolio of small companies based in Russia. VanEck is headquartered in New York.,Equities,Small Cap,VanEck Asset Management,BER,XBER,,False
@@ -5088,10 +5088,10 @@ XC4B.BE,FID.FDS-GERMANY A ACC.EUR,EUR,,,,Fidelity Investments,BER,XBER,,False
 XC4C.BE,FIDE.FDS-GL.DEMOGR.AACCDL,EUR,,,,Fidelity Investments,BER,XBER,,False
 XC4E.BE,FID.FDS-USD CASH AACC.USD,EUR,,,,Fidelity Investments,BER,XBER,,False
 XC4G.BE,FID.FDS-EO BL.CH. A AC.EO,EUR,,,,Fidelity Investments,BER,XBER,,False
-XC4H.BE,"FID.FDS-EM.E.,MID.EA.A EO",EUR,,,,Fidelity Investments,BER,XBER,,False
-XC4I.BE,"FID.FDS-EM.E.,MID.A-AC.EO",EUR,,,,Fidelity Investments,BER,XBER,,False
-XC4J.BE,"FID.FDS-EM.E.,MID.EA.A DL",EUR,,,,Fidelity Investments,BER,XBER,,False
-XC4K.BE,"FID.FDS-EM.E.,MID.A-AC.DL",EUR,,,,Fidelity Investments,BER,XBER,,False
+XC4H.BE,"FID.FDS-EM.E.,MID.EA.A EO",EUR,,Equities,,Fidelity Investments,BER,XBER,,False
+XC4I.BE,"FID.FDS-EM.E.,MID.A-AC.EO",EUR,,Equities,,Fidelity Investments,BER,XBER,,False
+XC4J.BE,"FID.FDS-EM.E.,MID.EA.A DL",EUR,,Equities,,Fidelity Investments,BER,XBER,,False
+XC4K.BE,"FID.FDS-EM.E.,MID.A-AC.DL",EUR,,Equities,,Fidelity Investments,BER,XBER,,False
 XC4M.BE,FID.-GL THEM.OPP.AAEOGL,EUR,,,,Fidelity Investments,BER,XBER,,False
 XC4N.BE,FID.FDS-EURO BOND A AC.EO,EUR,,Fixed Income,Corporate Bonds,Fidelity Investments,BER,XBER,,False
 XC4Q.BE,FID.FDS-NORDIC A ACC. SEK,EUR,,Equities,,Fidelity Investments,BER,XBER,,False
@@ -5341,7 +5341,7 @@ XRU9.BE,AXA WLD-GBL IN.B.A-C.R.EO,EUR,,,,AXA World Funds,BER,XBER,,False
 XRUE.BE,AXA WLD-FR.EU.MICR.ATEOPF,EUR,,,,AXA World Funds,BER,XBER,,False
 XRUF.BE,AX.W.F.E.M.SH.D.B.ACAPEOH,EUR,,,Micro Cap,,BER,XBER,,False
 XRUG.BE,AXA WLD-GBL INFL.A T. EO,EUR,,,,AXA World Funds,BER,XBER,,False
-XRUL.BE,AXA WLD-GL.OPT.INC.A D EO,EUR,,,,AXA World Funds,BER,XBER,,False
+XRUL.BE,AXA WLD-GL.OPT.INC.A D EO,EUR,,Fixed Income,,AXA World Funds,BER,XBER,,False
 XRZ0.BE,THR.L.-GL.SMALL.COMPAN.AE,EUR,,Equities,Small Cap,,BER,XBER,,False
 XRZ3.BE,THREAD.L-AMER. EPIC AEH,EUR,,,,,BER,XBER,,False
 XRZ5.BE,THR.L.-GL FOCUS EPIC AU,EUR,,,,,BER,XBER,,False
@@ -5483,7 +5483,7 @@ Y9V9.BE,VITRUVIUS-GREAT.CH.EQ.BDL,EUR,,,,Vitruvius SICAV,BER,XBER,,False
 YCFB.BE,CSIF2-CS(L)SEC.EQU. BDL,EUR,,,,Credit Suisse Asset Management,BER,XBER,,False
 YF5D.BE,F.TEM.INV-T.E.M.S.C.AYDDL,EUR,,,,Franklin Templeton Investments,BER,XBER,,False
 YF5F.BE,FTIF-F.GL.FD.STRAT.AAEOH1,EUR,,,,Franklin Templeton Investments,BER,XBER,,False
-YF5G.BE,F.TEM.I.-T.GL.T.AMD.EO-H1,EUR,,,,Franklin Templeton Investments,BER,XBER,,False
+YF5G.BE,F.TEM.I.-T.GL.T.AMD.EO-H1,EUR,,Fixed Income,,Franklin Templeton Investments,BER,XBER,,False
 YF5H.BE,F.T.I.-F.U.S.O. A AEUR-H1,EUR,,,,Franklin Templeton Investments,BER,XBER,,False
 YF5J.BE,F.TEM.INV-F.TECH.N ACC.EO,EUR,,,,Franklin Templeton Investments,BER,XBER,,False
 YF5L.BE,F.TEM.INV.-T.FR.MKTS NAEO,EUR,,,,Franklin Templeton Investments,BER,XBER,,False
@@ -5610,7 +5610,7 @@ ZSRN.BE,BNPPE-M.EM.SRI SS5C.UECEO,EUR,,,,BNP Paribas Asset Management,BER,XBER,,
 ZZR0.BE,ALL.EUR.P.I.-STR.50 A EO,EUR,,,,Allianz Global Investors Fund,BER,XBER,,False
 ZZR1.BE,AGIF-A.GL.ART.INTE.REO,EUR,,,,Allianz Global Investors Fund,BER,XBER,,False
 ZZR2.BE,AGIF-A.AS.MUL.I.P.AMGH2EO,EUR,,,,Allianz Global Investors Fund,BER,XBER,,False
-ZZR4.BE,ALL.EUR.P.I.-STR.75 CT EO,EUR,,,,Allianz Global Investors Fund,BER,XBER,,False
+ZZR4.BE,ALL.EUR.P.I.-STR.75 CT EO,EUR,,Equities,,Allianz Global Investors Fund,BER,XBER,,False
 ZZR5.BE,AGIF-CHINA EQUITY CT EO,EUR,,Equities,,Allianz Global Investors Fund,BER,XBER,,False
 ZZR6.BE,AGIF-T.RTN ASIAN EQU.A EO,EUR,,Financials,,Allianz Global Investors Fund,BER,XBER,,False
 ZZR7.BE,AGIF-AL.DY.MU.A.S.50 A EO,EUR,,,,Allianz Global Investors Fund,BER,XBER,,False

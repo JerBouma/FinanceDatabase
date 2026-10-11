@@ -711,7 +711,7 @@ IB37.PA,iShares iBonds Dec 2037 Term € Corp UCITS ETF EUR (Acc),EUR,,Fixed Inc
 IBE7.PA,iShares iBonds Dec 2027 Term € Corp UCITS ETF,EUR,iShares iBonds Dec 2027 Term € Corp UCITS ETF is an exchange-traded fund listed on the Euronext Paris under the ticker IBE7 and traded in EUR. The fund is part of the BlackRock Asset Management range.,Fixed Income,Corporate Bonds,BlackRock Asset Management,PAR,XPAR,IE000H5X52W8,False
 ID36.PA,iSh iBonds Dec 2036 Term $ Corp USD Acc,EUR,,Fixed Income,,BlackRock Asset Management,PAR,XPAR,IE000REC8UF0,False
 ID37.PA,iSh iBonds Dec 2037 Term $ Corp USD Acc,EUR,,Fixed Income,,BlackRock Asset Management,PAR,XPAR,IE00004OA765,False
-IEMID.PA,Indépendance AM Europe Mid UCITS ETF E (C) EUR,EUR,,,,,PAR,XPAR,LU3195985372,False
+IEMID.PA,Indépendance AM Europe Mid UCITS ETF E (C) EUR,EUR,,Equities,,,PAR,XPAR,LU3195985372,False
 IFRA.PA,Indépendance AM France Small & Mid UCITS ETF E (C) EUR,EUR,,Equities,,,PAR,XPAR,LU3447501068,False
 IG35.PA,iShares iBonds Dec 2035 Term € Corp UCITS ETF EUR (Acc),EUR,,Fixed Income,,BlackRock Asset Management,PAR,XPAR,IE000O1FWAW6,False
 IGOV.PA,BNP Paribas Easy JPM Global Government Bond IG UCITS ETF Capitalisation,EUR,,Fixed Income,Government Bonds,BNP Paribas Asset Management,PAR,XPAR,LU3215538003,False
@@ -805,7 +805,7 @@ JPXH.PA,Lyxor JPX-Nikkei 400 (DR) UCITS ETF - Daily Hedged C-EUR,EUR,"The Lyxor 
 KRW.PA,Lyxor MSCI Korea UCITS ETF - Acc-EUR,EUR,"The investment objective of the MULTI UNITS LUXEMBOURG — Lyxor MSCI Korea UCITS ETF (the ""Sub-Fund"") is to track both the upward and the downward evolution of the MSCI Korea 20/35 Net Total Return Index (the ""Index"") denominated in US Dollars and representative of the South Korean equity market, while minimizing the volatility of the difference between the return of the Sub-Fund and the return of the Index (the ""Tracking Error"").",Equities,Developed Markets,Lyxor International Asset Management,PAR,XPAR,LU1900066975,False
 L100.PA,MULTI-UNITS LUXEMBOURG - Lyxor FTSE 100 UCITS ETF - Acc,EUR,"The Lyxor FTSE 100 UCITS ETF is a UCITS compliant exchange traded fund that aims to track the benchmark index FTSE 100 TR. The FTSE 100 is a market-capitalisation weighted index representing the performance of the 100 largest UK-domiciled blue chip companies, which pass screening for size and liquidity. Lyxor ETFs are efficient investment vehicles listed on exchange that offer transparent, liquid and low-cost exposure to the underlying benchmark index.",Equities,Large Cap,Lyxor International Asset Management,PAR,XPAR,LU1650492173,False
 LC30.PA,Amundi Lifecycle 2030 UCITS ETF Acc,EUR,,Fixed Income,,Amundi Asset Management,PAR,XPAR,LU2872291948,False
-LC33.PA,Amundi Lifecycle 2033 UCITS ETF Acc,EUR,,,,Amundi Asset Management,PAR,XPAR,LU2872292086,False
+LC33.PA,Amundi Lifecycle 2033 UCITS ETF Acc,EUR,,Fixed Income,,Amundi Asset Management,PAR,XPAR,LU2872292086,False
 LC36.PA,Amundi Lifecycle 2036 UCITS ETF Acc,EUR,,,,Amundi Asset Management,PAR,XPAR,LU2872292169,False
 LC39.PA,Amundi Lifecycle 2039 UCITS ETF Acc,EUR,,,,Amundi Asset Management,PAR,XPAR,LU2872292243,False
 LCCN.PA,Lyxor MSCI China UCITS ETF - Acc,EUR,,Equities,Developed Markets,Lyxor International Asset Management,PAR,XPAR,LU1841731745,False
@@ -1066,7 +1066,7 @@ QGLOE.PA,BNP Paribas Easy Alpha Enhanced World UCITS ETF Capitalisation,EUR,,Equ
 QNXT.PA,iShares Nasdaq ex-Top 30 UCITS ETF USD (Acc),EUR,,Equities,,BlackRock Asset Management,PAR,XPAR,IE000SVXJH05,False
 QTOP.PA,iShares Nasdaq Top 30 UCITS ETF USD (Acc),EUR,,Equities,,BlackRock Asset Management,PAR,XPAR,IE000Z7P04F4,False
 QUED.PA,BNP Paribas Easy Equity Quality Europe UCITS ETF Dis,EUR,"Replicate the performance of the BNP Paribas Equity Quality Europe TR index (Bloomberg: BNPIFQE Index), including fluctuations, and to maintain the Tracking Error between the sub-fund and the index below 1%.",Equities,Factors,BNP Paribas Asset Management,PAR,XPAR,LU1481201611,False
-QUSAE.PA,BNP Paribas Easy Alpha Enhanced US UCITS ETF EUR Capitalisation,EUR,,,,,PAR,XPAR,IE00032YLFR3,False
+QUSAE.PA,BNP Paribas Easy Alpha Enhanced US UCITS ETF EUR Capitalisation,EUR,,Equities,,,PAR,XPAR,IE00032YLFR3,False
 R2EH.PA,State Street SPDR Russell 2000 U.S. Small Cap EUR Hdg UCITS ETF (Acc),EUR,,Equities,,State Street Global Advisors,PAR,XPAR,IE000WFBC0W4,False
 R2US.PA,SPDR Russell 2000 US Small Cap UCITS ETF,EUR,"The objective of the SPDR Russell 2000 U.S. Small Cap UCITS ETF
 is to track the performance of smaller U.S. companies. It aims to do
@@ -1140,7 +1140,7 @@ SHC.PA,Lyxor CAC 40 Daily (-1x) Inverse UCITS ETF Acc,EUR,"The Lyxor CAC 40 Dail
 SHO3.PA,LS 3X SHOPIFY,EUR,,Derivatives,Trading,,PAR,XPAR,,False
 SHOS.PA,LS -1X SHOPIFY,EUR,,Derivatives,Trading,,PAR,XPAR,,False
 SHSB.PA,LS -1X HSBC,EUR,,Derivatives,Trading,,PAR,XPAR,,False
-SHTE.PA,OSSIAM SHILLER BARCLAYS CAPE US SECTOR TILTED TR - UCITS ETF 1C (EUR),EUR,,,,OSSIAM,PAR,XPAR,LU3046618446,False
+SHTE.PA,OSSIAM SHILLER BARCLAYS CAPE US SECTOR TILTED TR - UCITS ETF 1C (EUR),EUR,,Fixed Income,Government Bonds,OSSIAM,PAR,XPAR,LU3046618446,False
 SJPM.PA,LS -1X JPMORGAN,EUR,,Derivatives,Trading,,PAR,XPAR,,False
 SLEEK.PA,BNP Paribas Easy Global Equity Long/Short UCITS ETF Capitalisation,EUR,,Derivatives,Trading,,PAR,XPAR,LU3307220965,False
 SLVRP.PA,WisdomTree Silver,EUR,"WisdomTree Silver is an open-ended exchange traded commodity (ETC) that aims to track the performance of silver. The ETC is designed to offer investors a simple, cost-efficient way to access the silver market. It is domiciled in Ireland.",Commodities,,WisdomTree Asset Management,PAR,XPAR,,False
@@ -1308,7 +1308,7 @@ USA.PA,Lyxor MSCI USA UCITS ETF Dist,EUR,"The Lyxor MSCI USA UCITS ETF is a UCIT
 USAC.PA,Lyxor MSCI USA UCITS ETF Acc,EUR,"The Lyxor MSCI USA UCITS ETF is a UCITS compliant exchange traded fund that aims to track the benchmark index MSCI Daily TR Net USA USD.The MSCI Daily TR Net USA USD is a free float-adjusted market capitalisation weighted index that monitors the performance of USA stocks. The index is designed to measure the USA equity market performance covering around 85% of free float-adjusted market capitalisation. The complete construction methodology for the index is available on www.msci.comLyxor ETFs are efficient investment vehicles listed on exchange that offer transparent, liquid and low-cost exposure to the underlying benchmark index.",Equities,Developed Markets,Lyxor International Asset Management,PAR,XPAR,FR0010296061,False
 USAL.PA,Amundi MSCI USA ESG Selection UCITS ETF Acc EUR Hedged,EUR,,Equities,,Amundi Asset Management,PAR,XPAR,IE000IP0UC52,False
 USAS.PA,AMUNDI MSCI USA SCREENED UCITS ETF Acc,EUR,,Equities,,Amundi Asset Management,PAR,XPAR,IE000F60HVH9,False
-USCBH.PA,BNP Paribas Easy USD Corp Bond SRI Fossil Free,EUR,,Fixed Income,,BNP Paribas Asset Management,PAR,XPAR,LU3000546336,False
+USCBH.PA,BNP Paribas Easy USD Corp Bond SRI Fossil Free,EUR,,Fixed Income,Corporate Bonds,BNP Paribas Asset Management,PAR,XPAR,LU3000546336,False
 USDIV.PA,Franklin US Dividend Tilt UCITS ETF USD,EUR,,Equities,Developed Markets,Franklin Templeton Investments,PAR,XPAR,IE000Z4OBQK4,False
 USFA.PA,VanEck US Fallen Angel High Yield Bond UCITS ETF A USD Acc,EUR,,Fixed Income,High Yield Bonds,VanEck Asset Management,PAR,XPAR,IE000J6CHW80,False
 USHY.PA,Lyxor Index Fund - Lyxor USD High Yield Corporate Bond Fund,EUR,"Lyxor Index Fund - Lyxor USD High Yield Corporate Bond Fund seeks to track the performance of an index composed of USD-denominated high-yield corporate bonds. The fund provides exposure to a portfolio of sub-investment-grade corporate debt. Lyxor Asset Management is headquartered in Paris, France.",Fixed Income,High Yield Bonds,Lyxor International Asset Management,PAR,XPAR,LU1435356149,False
