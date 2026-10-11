@@ -8,7 +8,12 @@ from collections.abc import Callable
 
 import pandas as pd
 
-from scripts.listings.helpers import get_symbol_key, normalize_name, read_csv_text
+from scripts.listings.helpers import (
+    get_symbol_key,
+    normalize_name,
+    read_csv_text,
+    write_csv,
+)
 
 
 class Database:
@@ -188,4 +193,4 @@ class Database:
             if "/equities/" in path or original.index.is_monotonic_increasing:
                 out = out.sort_index()
             out.index.name = "symbol"
-            out.to_csv(path)
+            write_csv(out, path)

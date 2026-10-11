@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 import requests
 
-from scripts.listings.helpers import HEADERS, TIMEOUT, fetch, require
+from scripts.listings.helpers import SESSION, TIMEOUT, fetch, require
 
 COINGECKO = "https://api.coingecko.com/api/v3"
 ISO_LISTS = "https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/{}.xml"
@@ -37,7 +37,7 @@ def fetch_coins(pages: int = 2) -> tuple[pd.DataFrame, set[str]]:
     """
     rows = []
     for page in range(1, pages + 1):
-        response = requests.get(
+        response = SESSION.get(
             f"{COINGECKO}/coins/markets",
             params={
                 "vs_currency": "usd",
@@ -45,13 +45,12 @@ def fetch_coins(pages: int = 2) -> tuple[pd.DataFrame, set[str]]:
                 "per_page": 250,
                 "page": page,
             },
-            headers=HEADERS,
             timeout=TIMEOUT,
         )
         response.raise_for_status()
         rows += response.json()
         time.sleep(3)
-    listed = requests.get(f"{COINGECKO}/coins/list", headers=HEADERS, timeout=TIMEOUT)
+    listed = SESSION.get(f"{COINGECKO}/coins/list", timeout=TIMEOUT)
     listed.raise_for_status()
     tickers = {coin["symbol"].upper() for coin in listed.json()}
     coins = pd.DataFrame(
@@ -76,14 +75,13 @@ def fetch_coin_website(coin_id: str) -> str:
         str: The homepage URL.
     """
     try:
-        response = requests.get(
+        response = SESSION.get(
             f"{COINGECKO}/coins/{coin_id}",
             params={
                 "localization": "false",
                 "tickers": "false",
                 "market_data": "false",
             },
-            headers=HEADERS,
             timeout=TIMEOUT,
         )
         response.raise_for_status()
@@ -139,7 +137,7 @@ def fetch_euronext_indices() -> pd.DataFrame:
     """
     frames = []
     for mic, (suffix, exchange) in EURONEXT_MARKETS.items():
-        response = requests.post(
+        response = SESSION.post(
             EURONEXT_INDICES.format(mic),
             data={
                 "args[fe_type]": "csv",
@@ -147,7 +145,6 @@ def fetch_euronext_indices() -> pd.DataFrame:
                 "args[fe_date_format]": "d/m/Y",
                 "args[fe_layout]": "ver",
             },
-            headers=HEADERS,
             timeout=TIMEOUT,
         )
         response.raise_for_status()

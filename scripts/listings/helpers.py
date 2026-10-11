@@ -2,11 +2,14 @@
 
 __docformat__ = "google"
 
+import os
 import re
 import urllib.request
 
 import pandas as pd
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 HEADERS = {
     "User-Agent": (
@@ -15,6 +18,31 @@ HEADERS = {
     )
 }
 TIMEOUT = 120
+
+
+def create_session() -> requests.Session:
+    """
+    A session that retries network errors, rate limits and server errors with backoff.
+
+    Returns:
+        requests.Session: The session, with the browser user agent.
+    """
+    retry = Retry(
+        total=3,
+        backoff_factor=5,
+        status_forcelist=(429, 500, 502, 503, 504),
+        allowed_methods=frozenset({"GET", "POST"}),
+        respect_retry_after_header=True,
+        raise_on_status=False,
+    )
+    session = requests.Session()
+    session.headers.update(HEADERS)
+    for prefix in ("http://", "https://"):
+        session.mount(prefix, HTTPAdapter(max_retries=retry))
+    return session
+
+
+SESSION = create_session()
 US_ETF_FILES = {"NMS", "NGM", "NCM", "NYQ", "ASE", "PCX", "BTS"}
 
 SUFFIX = r"\.(?:TO|V|HK|NS|T|AX)$"
@@ -86,7 +114,7 @@ def fetch(url: str) -> bytes:
     """
     Download a URL with a browser user agent; raises on HTTP errors.
     """
-    response = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+    response = SESSION.get(url, timeout=TIMEOUT)
     response.raise_for_status()
     return response.content
 
@@ -112,7 +140,7 @@ def fetch_euronext_etfs() -> bytes:
     """
     Euronext's ETF list as CSV, the download behind its ETF directory page.
     """
-    response = requests.post(
+    response = SESSION.post(
         "https://live.euronext.com/en/pd_es/data/track/download"
         "?mics=XAMS%2CXPAR%2CXBRU%2CXLIS%2CXOSL",
         data={
@@ -121,7 +149,6 @@ def fetch_euronext_etfs() -> bytes:
             "args[fe_date_format]": "d/m/Y",
             "args[fe_layout]": "ver",
         },
-        headers=HEADERS,
         timeout=TIMEOUT,
     )
     response.raise_for_status()
@@ -145,6 +172,30 @@ def require(condition: bool, message: str) -> None:
     """
     if not condition:
         raise ValueError(message)
+
+
+def write_csv(frame: pd.DataFrame, path: str) -> bool:
+    """
+    Write a CSV only when its content changes, through a temporary file so an interrupted
+    run never leaves a half-written file.
+
+    Args:
+        frame (pd.DataFrame): The rows, indexed by symbol.
+        path (str): The CSV file.
+
+    Returns:
+        bool: Whether the file changed.
+    """
+    content = frame.to_csv(lineterminator="\n")
+    if os.path.exists(path):
+        with open(path, encoding="utf-8", newline="") as handle:
+            if handle.read() == content:
+                return False
+    temporary = f"{path}.tmp"
+    with open(temporary, "w", encoding="utf-8", newline="") as handle:
+        handle.write(content)
+    os.replace(temporary, path)
+    return True
 
 
 def read_csv_text(path: str) -> pd.DataFrame:

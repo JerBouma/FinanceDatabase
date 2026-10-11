@@ -28,6 +28,9 @@ MARKET_CAP_THRESHOLDS = {
     "Nano Cap": 0,
 }
 
+# A run that would change more than this share of the US tiers is treated as a feed glitch.
+MAX_TIER_CHANGE_SHARE = 0.2
+
 # A plain ticker with the class separators of the feeds (BRK/A, ABR^D, BF.B).
 VALID_SYMBOL = r"^[A-Z0-9]+(?:[./^-][A-Z0-9]+)*$"
 

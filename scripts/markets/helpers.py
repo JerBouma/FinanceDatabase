@@ -6,6 +6,8 @@ import glob
 
 import pandas as pd
 
+from scripts.listings.helpers import write_csv
+
 
 def write(frame: pd.DataFrame, path: str, sort: bool) -> None:
     """
@@ -18,7 +20,7 @@ def write(frame: pd.DataFrame, path: str, sort: bool) -> None:
     """
     frame = frame.sort_index() if sort else frame
     frame.index.name = "symbol"
-    frame.to_csv(path)
+    write_csv(frame, path)
 
 
 def get_other_symbols(database: str, own: str) -> set[str]:

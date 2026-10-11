@@ -11,6 +11,7 @@ Repository tooling that keeps `database/` current and checks it. None of it ship
 | `update_listings.py` | weekly (Add-New-Ticker) | New equities and ETFs from official exchange directories |
 | `update_markets.py` | weekly (Add-New-Ticker) | Cryptocurrencies, currencies and indices |
 | `remove_non_shares.py` | weekly (Add-New-Ticker) | Removes equities that are not company shares |
+| `check_database.py` | weekly, before the commit | Undoes an update that broke the database (`--restore`) |
 | `update_compression.py` | after every update | Regenerates `compression/` from `database/` |
 | `update_readme_stats.py` | after every update | Regenerates the statistics section of `README.md` |
 | `check_gics.py` | after every update | Fails when an equity's categories are not valid GICS |
@@ -18,6 +19,21 @@ Repository tooling that keeps `database/` current and checks it. None of it ship
 
 Every weekly script runs with `--dry-run` (where offered) and `--database database` locally,
 for example `python scripts/update_listings.py --dry-run`.
+
+## Robustness
+
+- Downloads go through one session that retries network errors, rate limits (429) and
+  server errors three times with backoff, honouring `Retry-After`.
+- Every source is applied on its own; a failing source is skipped and logged, and no weekly
+  script can fail the pipeline (`continue-on-error` and a time limit per step as well).
+- Files are only rewritten when their content changes, through a temporary file, so an
+  interrupted run never leaves a half-written CSV.
+- Implausible changes are not applied: more than 20% of the US market cap tiers at once,
+  more than 50 ticker changes per exchange source, removing more than 40% of the coins or
+  more than 10 currencies.
+- Before the commit, `check_database.py --restore` compares the update with the last commit
+  and undoes it when it changed a file's columns, removed a file, added duplicate or empty
+  symbols, put a symbol in two asset classes or lost more than 10% of an asset class.
 
 ## US equities (`equities/`)
 

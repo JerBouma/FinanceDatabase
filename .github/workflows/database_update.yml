@@ -40,6 +40,8 @@ jobs:
       # New NASDAQ, NYSE and NYSE American equities and market cap tiers.
       # See scripts/README.md for the rules.
       - name: Add New Tickers and Update Old Ones
+        continue-on-error: true
+        timeout-minutes: 20
         run: python scripts/update_us_equities.py
       # New equities and ETFs from the official HKEX, NSE, JPX, ASX, TSX/TSXV, Nasdaq Trader,
       # Xetra, Euronext and SIX symbol directories, enriched via OpenFIGI and SEC EDGAR. Each source is isolated: a blocked, failing
@@ -70,6 +72,10 @@ jobs:
       - name: Remove Non-Shares from Equities
         continue-on-error: true
         run: python scripts/remove_non_shares.py
+      # An update that broke the database (duplicate or cross-class symbols, changed
+      # columns, many rows lost) is undone here, so it is never committed.
+      - name: Check Database Before Committing
+        run: python scripts/check_database.py --restore
       - name: Commit files and log
         run: |
           git config --global user.name 'GitHub Action'

@@ -9,6 +9,7 @@ import os
 import pandas as pd
 
 from scripts.equities import equities_model
+from scripts.listings.helpers import write_csv
 
 
 def update_us_equities(database: str = "database") -> int:
@@ -60,6 +61,13 @@ def update_us_equities(database: str = "database") -> int:
                 row, fd_industries, equities, market_cap, exchange_to_mic
             )
 
+    # A feed glitch would move many tiers at once; such a run keeps the current tiers.
+    known = exchange_data.index.isin(equities.index).sum()
+    retiered = [s for s in ticker_dict if s in equities.index]
+    if known and len(retiered) > equities_model.MAX_TIER_CHANGE_SHARE * known:
+        print(f"! {len(retiered)} of {known} tiers would change; keeping the tiers")
+        ticker_dict = {s: row for s, row in ticker_dict.items() if s not in retiered}
+
     updated = pd.DataFrame.from_dict(ticker_dict, orient="index")
     updated.index.name = "symbol"
     updated = updated.drop(columns=["symbol"], errors="ignore")
@@ -78,13 +86,12 @@ def update_us_equities(database: str = "database") -> int:
     equities = equities[equities.index.notna() & (equities.index != "")]
     equities = equities.sort_index()
 
-    for path in glob.glob(f"{database}/equities/*.csv"):
-        os.remove(path)
+    # Only changed files are rewritten, each through a temporary file.
     unknown_exchange = equities["exchange"].isna() | (equities["exchange"] == "")
     for exchange, group in equities[~unknown_exchange].groupby("exchange"):
-        group.to_csv(f"{database}/equities/{exchange}.csv")
+        write_csv(group, f"{database}/equities/{exchange}.csv")
     if unknown_exchange.any():
-        equities[unknown_exchange].to_csv(f"{database}/equities/NAN.csv")
+        write_csv(equities[unknown_exchange], f"{database}/equities/NAN.csv")
     return len(updated)
 
 
@@ -110,7 +117,7 @@ def remove_non_shares(database: str, dry_run: bool = False) -> list[str]:
             f"{s} ({file_name}): {frame.loc[s, 'name']}" for s in frame.index[mask]
         ]
         if not dry_run:
-            frame[~mask].to_csv(path, lineterminator="\n")
+            write_csv(frame[~mask], path)
     return removed
 
 
@@ -120,7 +127,11 @@ def run_us_equities_update() -> None:
     """
     parser = argparse.ArgumentParser(description="Update the US equities.")
     parser.add_argument("--database", default="database")
-    update_us_equities(parser.parse_args().database)
+    database = parser.parse_args().database
+    try:
+        update_us_equities(database)
+    except Exception as error:  # noqa: BLE001
+        print(f"US equities update stopped: {type(error).__name__}: {error}")
 
 
 def run_non_share_removal() -> None:

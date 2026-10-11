@@ -12,7 +12,7 @@ from typing import TYPE_CHECKING
 import pandas as pd
 import requests
 
-from scripts.listings.helpers import SUFFIX, TIMEOUT, US_ETF_FILES
+from scripts.listings.helpers import SESSION, SUFFIX, TIMEOUT, US_ETF_FILES
 from scripts.listings.sources_model import Listing
 
 if TYPE_CHECKING:
@@ -111,7 +111,7 @@ def lookup_openfigi(
     for start in range(0, len(jobs), batch):
         chunk = jobs[start : start + batch]
         for attempt in range(6):
-            response = requests.post(
+            response = SESSION.post(
                 OPENFIGI_URL,
                 json=[j for j, _ in chunk],
                 headers=headers,
@@ -185,7 +185,7 @@ def lookup_full_name(isin: str, mic: str = "") -> str:
     """
     for kind in ("etf", "etc"):
         try:
-            response = requests.get(
+            response = SESSION.get(
                 f"https://www.boerse-frankfurt.de/{kind}/{isin}",
                 headers={"User-Agent": "Mozilla/5.0"},
                 timeout=30,
@@ -201,7 +201,7 @@ def lookup_full_name(isin: str, mic: str = "") -> str:
         time.sleep(0.3)
     if mic:
         try:
-            page = requests.get(
+            page = SESSION.get(
                 f"https://live.euronext.com/en/product/etfs/{isin}-{mic}",
                 headers={"User-Agent": "Mozilla/5.0"},
                 timeout=30,
@@ -350,7 +350,7 @@ class SecFunds:
         if wait > 0:
             time.sleep(wait)
         self.last = time.time()
-        response = requests.get(url, headers=self.headers, timeout=TIMEOUT)
+        response = SESSION.get(url, headers=self.headers, timeout=TIMEOUT)
         response.raise_for_status()
         return response.text
 
