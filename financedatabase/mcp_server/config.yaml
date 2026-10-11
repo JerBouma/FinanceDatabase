@@ -17,7 +17,9 @@ server:
     ASML.AS). Lists without a query start
     with primary listings, ordered by market cap tier (the database holds tiers,
     not exact market caps) and, within a tier, by the number of exchanges an
-    instrument is listed on.
+    instrument is listed on. Symbols follow Yahoo Finance conventions (EURUSD=X for
+    currencies, BTC-USD for cryptocurrencies); the Finance Toolkit, which provides
+    prices and fundamentals for these symbols, writes those two as EURUSD and BTCUSD.
 
 # Every response is bounded so no call can return the full dataset.
 limits:
@@ -162,10 +164,10 @@ identifier_columns: ["isin", "cusip", "figi", "composite_figi", "shareclass_figi
 # Registered in tools_model.py; listed here for the mcpb manifest.
 utility_tools:
   - tool_name: "search_categories"
-    description: "List the asset classes with their tool, number of entries, filterable fields and description."
+    description: "List the Finance Database's asset classes with their tool, number of entries, filterable fields and description."
 
   - tool_name: "show_options"
-    description: "Show the valid values of a filter (e.g. every sector or country) for an asset class, optionally narrowed by other filters."
+    description: "Show the valid values of a Finance Database filter (e.g. every sector or country) for an asset class, optionally narrowed by other filters."
 
   - tool_name: "search_instruments"
-    description: "Find instruments by ticker, name or ISIN across all asset classes at once."
+    description: "Find which instruments exist in the Finance Database by ticker, name or ISIN across all asset classes, with their classification (no prices)."
