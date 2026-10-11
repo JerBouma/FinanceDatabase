@@ -34,10 +34,7 @@ MULTI_VALUE_HINT = (
 
 def run_tool(tool_name: str, call: Callable[[], str]) -> str:
     """
-    Run a tool body and return any failure as text instead of raising.
-
-    A raised exception reaches the model as a bare protocol error; a returned
-    message explains what went wrong and how to fix the call.
+    Run a tool body and return any failure as text, which explains it to the model.
 
     Args:
         tool_name (str): The tool name, for the log and the message.
@@ -66,10 +63,8 @@ class AssetToolRegistry:
         mcp (FastMCP): The FastMCP server instance to register tools on.
         provider (DatabaseProvider): The query engine serving the tools.
         filter_descriptions (dict[str, str]): Description per filter parameter.
-        limits (dict[str, int]): Output limits (default_limit, max_limit,
-            max_text_length).
-        analytics (UsageAnalytics | None): Counts the tool calls when usage analytics
-            are on.
+        limits (dict[str, int]): Output limits from config.yaml.
+        analytics (UsageAnalytics | None): Counts the tool calls when analytics are on.
     """
 
     def __init__(
@@ -88,8 +83,7 @@ class AssetToolRegistry:
             provider (DatabaseProvider): The query engine serving the tools.
             filter_descriptions (dict[str, str]): Description per filter parameter.
             limits (dict[str, int]): Output limits from config.yaml.
-            analytics (UsageAnalytics | None): Counts the tool calls when usage
-                analytics are on. Defaults to None.
+            analytics (UsageAnalytics | None): Counts the tool calls when analytics are on.
         """
         self._mcp = mcp
         self._provider = provider

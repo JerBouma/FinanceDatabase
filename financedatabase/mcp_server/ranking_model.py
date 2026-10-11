@@ -1,11 +1,4 @@
-"""Ranking Model
-
-Orders query results so the instrument a person most likely means comes first. Every
-rule is general and every preference is measured on the data itself: how a query
-matches (the name, the symbol, whole words or part of a word), whether a listing is
-the primary listing of its instrument (see listings_model), market cap, and how common
-an exchange or currency is within the asset class.
-"""
+"""Ranking Model"""
 
 __docformat__ = "google"
 
@@ -24,14 +17,11 @@ MARKET_CAP_ORDER = [
     "Micro Cap",
     "Nano Cap",
 ]
-# A symbol separator used by fewer than this share of an asset class's symbols marks
-# a variant of an instrument (AEXGR.AS or ^XVZ-IV among indices, but not the dash
-# that every cryptocurrency pair has).
+# Maximum share of symbols with a separator for it to mark a variant (AEXGR.AS).
 VARIANT_SEPARATOR_SHARE = 0.5
 SEPARATORS = [".", "-", "="]
 CURRENCY_COLUMNS = ["currency", "base_currency", "quote_currency"]
-# A query of at least this many letters also matches names without their spaces
-# ('USDJPY' for 'USD/JPY'); shorter ones would match inside other words.
+# Minimum query length to also match names without spaces ('USDJPY' for 'USD/JPY').
 COMPACT_MINIMUM = 5
 # Categories of the database that hold leveraged, inverse and other trading products.
 DERIVATIVE_CATEGORIES = ["Derivatives", "Trading"]
@@ -57,14 +47,10 @@ class RankingProfile:
 
     Attributes:
         trailing_words (list[str]): Words that end many names, see listings_model.
-        currency_order (dict[str, int]): Currencies by how often they occur in the
-            currency columns, the most common 0.
+        currency_order (dict[str, int]): Currencies by frequency, the most common 0.
         variant_separators (list[str]): Symbol separators that mark a variant.
         venue_sizes (dict[str, int]): Exchanges by their number of listings.
-        name_keys (pl.DataFrame | None): The search frame: the symbol column, name,
-            identifiers, "_key" (the name without its common trailing words),
-            "_words" (the name as spaced lowercase words) and "_compact" (the name
-            without spaces and punctuation). Queries are matched on it in memory.
+        name_keys (pl.DataFrame | None): The search frame with "_key", "_words", "_compact".
     """
 
     trailing_words: list[str] = field(default_factory=list)
@@ -99,8 +85,7 @@ def create_profile(
     Args:
         lazy (pl.LazyFrame): The dataset, the symbol column first.
         ranks (pl.DataFrame | None): The listing ranks, see listings_model.
-        identifier_columns (list[str] | None): Columns a query matches exactly, kept in
-            the search frame.
+        identifier_columns (list[str] | None): Columns a query matches exactly.
 
     Returns:
         RankingProfile: The measurements.
@@ -151,31 +136,7 @@ def build_query_expressions(
     identifier_columns: list[str],
 ) -> tuple[pl.Expr, pl.Expr]:
     """
-    Build the match filter and relevance tier for a free-text query. The tier needs
-    the "_key" and "_words" columns of the profile's name keys where the asset class
-    has names.
-
-    Matching is a case-insensitive literal substring on symbol and name (no regex,
-    so 'S&P 500' or 'BRK.B' need no escaping), also with punctuation ignored
-    ('Anheuser-Busch' finds 'Anheuser Busch') or without spaces ('USDJPY' finds
-    'USD/JPY'), plus an exact match on identifier
-    columns such as ISIN. A leading ^ of an index symbol is optional ('AEX' finds
-    ^AEX).
-
-    The tiers, best first:
-    0. An identifier, or the symbol itself, also without a leading caret ('EBIT',
-       '^AEX' for 'AEX').
-    1. The symbol without what follows its first separator ('ASML.AS', 'BTC-USD'); the
-       name without its common trailing words ('Bitcoin USD' for 'bitcoin'); or a name
-       starting with the query as whole words with a symbol that starts with it too
-       ('ING Groep N.V.', INGA.AS). Equally strong matches such as Estee Lauder and El
-       Al for 'EL' are then ordered by preference, so by market cap.
-    2. A name starting with the query as whole words.
-    3. A name containing the query as whole words ('SPDR S&P 500 ETF Trust').
-    4. A symbol starting with the query.
-    5. A name starting with the query.
-    6. A word in the name starting with the query.
-    7. Any other match.
+    Build the match filter and relevance tier (0 = exact, 7 = any match) for a query.
 
     Args:
         columns (list[str]): The columns of the dataset, the symbol column first.
@@ -223,8 +184,7 @@ def build_query_expressions(
         pl.select(get_name_key(pl.lit(query), profile.trailing_words)).item() or needle
     )
     words = pl.col("_words")
-    # The query is read like the names: without accents and punctuation ('Hermès',
-    # 'L’Oréal').
+    # The query is read like the names: without accents and punctuation ('Hermès').
     normalized = pl.select(get_words(pl.lit(query))).item() or ""
     spaced = " " + normalized + " "
 
@@ -257,24 +217,7 @@ def build_preference_columns(
     columns: list[str], profile: RankingProfile, has_ranks: bool
 ) -> list[pl.Expr]:
     """
-    Build the columns that order equally relevant matches:
-
-    - main lines before secondary ones: a listing that is not primary or whose
-      instrument has no country, or a variant symbol of an asset class without
-      listings;
-    - plain products before those in a derivatives category;
-    - primary listings first;
-    - larger market caps (a product without one ranks with mid caps);
-    - instruments with more listings worldwide, a measure of prominence (Siemens AG
-      before Siemens Limited);
-    - stronger listings: the home market first, then larger main venues, then other
-      venues;
-    - more complete records (fewer empty fields);
-    - shorter names, so Apple Inc. is listed before Apple Hospitality;
-    - listings in the usual currency of their market (RIO.L in pounds before 0KWZ.L in
-      dollars);
-    - more common currencies, so Bitcoin USD is listed before Bitcoin EUR;
-    - shorter symbols, so a company's line comes before its NVDR (TSI.BK, TSI-R.BK).
+    Build the columns that order equally relevant matches, most important first.
 
     Args:
         columns (list[str]): The columns of the dataset, the symbol column first.
@@ -287,8 +230,7 @@ def build_preference_columns(
     symbol = pl.col(columns[0])
     if has_ranks:
         not_primary = ~pl.col("primary_listing").fill_null(False)
-        # A listing whose instrument has no country lacks issuer data: often a
-        # certificate or another line that is not the instrument itself.
+        # A listing without a country lacks issuer data and is often not the instrument.
         secondary = not_primary | ~pl.col("home_known").fill_null(True)
         listing = -pl.col("listing_score").fill_null(0.0)
         listings = -pl.col("listings").fill_null(1)
@@ -351,8 +293,7 @@ def build_preference_columns(
 
 def mark_duplicates(lazy: pl.LazyFrame, sort_columns: list[str]) -> pl.LazyFrame:
     """
-    Mark every row after the first of its name key ("_key") as secondary, for asset
-    classes without listings: 'Bitcoin EUR' after 'Bitcoin USD'.
+    Mark every row after the first of its name key as secondary ('Bitcoin EUR').
 
     Args:
         lazy (pl.LazyFrame): The rows with the preference columns.
@@ -370,9 +311,7 @@ def mark_duplicates(lazy: pl.LazyFrame, sort_columns: list[str]) -> pl.LazyFrame
 
 def get_bucket(tier: pl.Expr) -> pl.Expr:
     """
-    Get the result bucket of a match: the main lines matching the symbol, the name or
-    the query as whole words, then their secondary lines (including derivative
-    products, unless their symbol is the query), then the weaker matches.
+    Get the result bucket of a match: strong main lines, their secondary lines, the rest.
 
     Args:
         tier (pl.Expr): The match tier, see build_query_expressions.
@@ -395,18 +334,15 @@ def keep_top_company_together(
     lazy: pl.LazyFrame, venue_sizes: dict[str, int]
 ) -> pl.LazyFrame:
     """
-    Move the best match's company listing on the largest exchange it trades on right
-    after the best match, when that is another exchange: ASML on NASDAQ after ASML.AS,
-    the ING ADR on the NYSE after INGA.AS. Its other listings keep their place.
+    Move the best match's listing on its largest other exchange right after it.
 
     Args:
-        lazy (pl.LazyFrame): The matches in order, with "_key", "_bucket",
-            "exchange" and "main_venue".
+        lazy (pl.LazyFrame): The matches in order, with "_key", "_bucket", "exchange"
+            and "main_venue".
         venue_sizes (dict[str, int]): Exchanges by their number of listings.
 
     Returns:
-        pl.LazyFrame: The matches with "_top" (the best match and that listing),
-            "_not_top" and the best match's bucket for those lines.
+        pl.LazyFrame: The matches with "_top" and "_not_top" columns.
     """
     size = (
         pl.col("exchange")
@@ -438,19 +374,11 @@ def keep_top_company_together(
 
 def interleave_classes(frames: list[pl.DataFrame]) -> pl.DataFrame:
     """
-    Merge the ranked matches of several asset classes. Within a bucket the classes
-    take turns, so a search for 'bitcoin' shows the coin, ETFs and companies. The
-    class whose first match is the strongest goes first: plain products before
-    derivatives, a large company before a product and a small one after it (so The
-    Goldman Sachs Group before the Goldman Sachs funds), then the closer match, the
-    instrument with the most listings, and the shortest name. The other main-venue
-    listings of the leading class's best company come first (see
-    keep_top_company_together).
+    Merge the ranked matches of several asset classes, taking turns within a bucket.
 
     Args:
         frames (list[pl.DataFrame]): Per asset class its matches in order, with the
-            columns "_bucket", "_tier", "_derivative", "_cap", "_listings",
-            "_name_length" and "_top".
+            ranking columns.
 
     Returns:
         pl.DataFrame: The merged matches without the ranking columns.
@@ -483,8 +411,7 @@ def interleave_classes(frames: list[pl.DataFrame]) -> pl.DataFrame:
         )
     )
     merged = merged.join(order, on=["_bucket", "_class"], how="left")
-    # The lines of the leading class's best company stay together before the other
-    # classes take turns.
+    # The leading class's best company lines stay together before the others take turns.
     leader = merged.sort(["_bucket", "_order"]).get_column("_class").first()
     block = (pl.col("_class") == leader) & pl.col("_top")
     merged = merged.with_columns(

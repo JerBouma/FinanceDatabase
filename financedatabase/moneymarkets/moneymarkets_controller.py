@@ -11,14 +11,7 @@ from financedatabase.frame_model import FinanceFrame
 
 class Moneymarkets(FinanceDatabase):
     """
-    The money market refers to trading in very short-term debt investments.
-    At the wholesale level, it involves large-volume trades between institutions
-    and traders. At the retail level, it includes money market mutual funds
-    bought by individual investors and money market accounts opened
-    by bank customers.
-
-    This class provides information about the moneymarkets available as well as the
-    ability to select specific moneymarkets based on the currency and family.
+    Money market funds, selectable by currency and family.
     """
 
     FILE_NAME = "moneymarkets.bz2"
@@ -39,19 +32,15 @@ class Moneymarkets(FinanceDatabase):
         Returns all money markets when no input is given.
 
         Args:
-            currency (str | list, optional): Specific currency or list of currencies to
-                filter money markets on. Defaults to None (all currencies).
-            family (str | list, optional): Specific family or list of families to filter
-                money markets on. Defaults to None (all families).
-            as_pandas (bool, optional): Whether to return a pandas DataFrame (True) or a
-                Polars DataFrame (False). Defaults to True.
+            currency (str | list, optional): Currencies to filter on.
+            family (str | list, optional): Families to filter on.
+            as_pandas (bool, optional): Return pandas, else Polars. Defaults to True.
 
         Returns:
             FinanceFrame | pl.DataFrame: The money markets matching every filter.
 
         Raises:
-            ValueError: If a filter value is not available in the database. Check the
-                available values with the 'show_options' method.
+            ValueError: If a filter value is not available, see show_options.
 
         As an example:
 
@@ -64,16 +53,6 @@ class Moneymarkets(FinanceDatabase):
             ["name", "currency", "family"]
         ].head()
         ```
-
-        Which returns:
-
-        | symbol | name               | currency | family                    |
-        |:-------|:-------------------|:---------|:--------------------------|
-        | BCHXX  | T-Fund             | USD      | BlackRock Liquidity Funds |
-        | BEMXX  | T-Fund             | USD      | BlackRock Liquidity Funds |
-        | BFBXX  | FedFund            | USD      | BlackRock Liquidity Funds |
-        | BFCXX  | FedFund            | USD      | BlackRock Liquidity Funds |
-        | BFDXX  | Federal Trust Fund | USD      | BlackRock Liquidity Funds |
         """
         return self._select_rows(
             {"currency": currency, "family": family},
@@ -95,19 +74,13 @@ class Moneymarkets(FinanceDatabase):
         The options can be narrowed down with the same filters as select().
 
         Args:
-            selection (str | None, optional): The column to show the options of. Choose
-                from: "currency", "family". Defaults to None, which returns the options of
-                every column.
-            currency (str | list, optional): Specific currency or list of currencies to
-                filter the options on. Defaults to None (all currencies).
-            family (str | list, optional): Specific family or list of families to filter the
-                options on. Defaults to None (all families).
-            as_pandas (bool, optional): Whether to return the options as numpy arrays (True)
-                or as Polars Series (False). Defaults to True.
+            selection (str | None, optional): The filter to show, None for every filter.
+            currency (str | list, optional): Currencies to filter on.
+            family (str | list, optional): Families to filter on.
+            as_pandas (bool, optional): Return numpy arrays, else Polars. Defaults to True.
 
         Returns:
-            dict | np.ndarray | pl.Series: The sorted unique values of the selected column,
-                or a dictionary with the values of every column if no selection is given.
+            dict | np.ndarray | pl.Series: The sorted values, a dict for every filter.
 
         Raises:
             ValueError: If the selection or a filter value is not valid.

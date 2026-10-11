@@ -39,8 +39,7 @@ class UtilityToolRegistry:
         mcp (FastMCP): The FastMCP server instance to register tools on.
         provider (DatabaseProvider): The query engine serving the tools.
         limits (dict[str, int]): Output limits from config.yaml.
-        analytics (UsageAnalytics | None): Counts the tool calls when usage analytics
-            are on.
+        analytics (UsageAnalytics | None): Counts the tool calls when analytics are on.
     """
 
     def __init__(
@@ -56,10 +55,8 @@ class UtilityToolRegistry:
         Args:
             mcp (FastMCP): The FastMCP server instance to register tools on.
             provider (DatabaseProvider): The query engine serving the tools.
-            limits (dict[str, int]): Output limits (default_limit, max_limit,
-                max_text_length, default_options, max_options, overview_options).
-            analytics (UsageAnalytics | None): Counts the tool calls when usage
-                analytics are on. Defaults to None.
+            limits (dict[str, int]): Output limits from config.yaml.
+            analytics (UsageAnalytics | None): Counts the tool calls when analytics are on.
         """
         self._mcp = mcp
         self._provider = provider

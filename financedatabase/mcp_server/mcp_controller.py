@@ -51,14 +51,10 @@ def load_configuration() -> dict:
 
 def _build_mcp_app() -> tuple[FastMCP, DatabaseProvider]:
     """
-    Bootstrap the MCP application.
-
-    Reads config.yaml, creates the DatabaseProvider (which loads nothing until the
-    first tool call) and registers the asset class and utility tools.
+    Bootstrap the MCP application from config.yaml and register all tools.
 
     Returns:
-        tuple[FastMCP, DatabaseProvider]: The ready-to-run FastMCP instance and the
-            provider holding the cached Finance Database instances.
+        tuple[FastMCP, DatabaseProvider]: The FastMCP instance and the provider.
     """
     logger = get_logger()
     configuration = load_configuration()
@@ -77,13 +73,11 @@ def _build_mcp_app() -> tuple[FastMCP, DatabaseProvider]:
         name=configuration["server"]["name"],
         instructions=configuration["server"]["instructions"],
         log_level="CRITICAL",
-        # Bound to all interfaces for Docker; this also leaves FastMCP's localhost-only
-        # DNS-rebinding guard off, matching the Finance Toolkit server.
+        # All interfaces for Docker, which also leaves the DNS-rebinding guard off.
         host="0.0.0.0",  # noqa: S104
     )
 
-    # FastMCP takes no version, so the server would report the MCP SDK's version to
-    # clients; it reports the Finance Database's instead.
+    # Report the Finance Database's version instead of the MCP SDK's.
     with contextlib.suppress(AttributeError, metadata.PackageNotFoundError):
         mcp._mcp_server.version = metadata.version("financedatabase")
 
@@ -126,22 +120,7 @@ mcp, provider = _build_mcp_app()
 
 def main() -> None:
     """
-    Start the Finance Database MCP server.
-
-    Starts the server using the transport defined by `--transport`, falling back
-    to the MCP_TRANSPORT environment variable and then to stdio, which is the
-    correct setting for Claude Desktop, VS Code and other local MCP clients.
-
-    The server contains the following optional arguments:
-
-    --transport {stdio,sse,streamable-http}
-        The transport to serve on. Defaults to MCP_TRANSPORT, then stdio.
-    --host HOST
-        The interface to bind to, for the sse and streamable-http transports
-        only. Defaults to MCP_HOST, then 0.0.0.0.
-    --port PORT
-        The port to bind to, for the sse and streamable-http transports only.
-        Defaults to MCP_PORT, then 8000.
+    Start the Finance Database MCP server (--transport, --host, --port).
     """
     parser = argparse.ArgumentParser(
         prog="financedatabase-mcp",
@@ -227,13 +206,7 @@ def main() -> None:
 
 def run_inspector() -> None:
     """
-    Launch the MCP Inspector UI for interactive testing of the server.
-
-    Invokes the MCP Inspector via npx, pointing it at this module so that all
-    registered tools can be explored and tested interactively in a browser.
-    Exits with the same return code as the Inspector process.
-
-    The Inspector takes no arguments of its own beyond --help.
+    Launch the MCP Inspector UI (via npx) for interactive testing of the server.
     """
     argparse.ArgumentParser(
         prog="financedatabase-mcp-inspector",
@@ -258,21 +231,7 @@ def run_inspector() -> None:
 
 def run_setup() -> None:
     """
-    Run the financedatabase-mcp-setup command.
-
-    When called **without** arguments the interactive setup wizard is launched.
-
-    When called **with** ``--client`` the configuration is written
-    non-interactively using a uvx-based server invocation so the entry works
-    without a pre-installed local package.
-
-    The setup contains the following optional arguments:
-
-    --client {claude-desktop,claude-code,vscode,cursor,gemini,windsurf}
-        Configure a single client without opening the interactive menu.
-    --overwrite
-        Overwrite an existing configuration. Without this flag the command
-        leaves an existing ``finance-database`` entry unchanged.
+    Run the setup: the interactive wizard, or one client with --client (--overwrite).
     """
     parser = argparse.ArgumentParser(
         prog="financedatabase-mcp-setup",

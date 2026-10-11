@@ -37,8 +37,6 @@ def convert_to_records(frame: pl.DataFrame) -> list[dict[str, Any]]:
     """
     Convert a frame to a list of JSON-serialisable records.
 
-    ``delisted`` is stored as a Boolean, so it is returned as a real boolean.
-
     Args:
         frame (pl.DataFrame): The (already bounded) frame.
 
@@ -56,8 +54,7 @@ def convert_to_json(payload: dict[str, Any]) -> str:
         payload (dict[str, Any]): The response payload.
 
     Returns:
-        str: JSON without insignificant whitespace, keeping non-ASCII characters
-            readable (company names such as 'Société Générale').
+        str: Compact JSON, keeping non-ASCII characters readable.
     """
     return json.dumps(payload, ensure_ascii=False, separators=(",", ":"), default=str)
 
@@ -86,8 +83,7 @@ def format_page(
         empty_note (str): Hint added when nothing matches.
 
     Returns:
-        str: ``{"total", "returned", "offset", "limit", "columns", "rows", "_notes"}``
-            as compact JSON.
+        str: The page with its totals and notes as compact JSON.
     """
     frame = truncate_text(frame.head(limit), max_text_length)
     notes = list(notes or [])

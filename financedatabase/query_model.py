@@ -93,14 +93,12 @@ def filter_primary_listings(
     lazy: pl.LazyFrame, symbol_column: str, primary_symbols: pl.Series | None = None
 ) -> pl.LazyFrame:
     """
-    Filter the primary listings: the given symbols, or without them the symbols
-    without an exchange suffix.
+    Filter the primary listings: the given symbols, else those without a suffix.
 
     Args:
         lazy (pl.LazyFrame): The dataset.
         symbol_column (str): The name of the symbol column.
-        primary_symbols (pl.Series | None, optional): The symbols of the primary
-            listings, see listings_model. Defaults to None.
+        primary_symbols (pl.Series | None, optional): The primary symbols. Defaults to None.
 
     Returns:
         pl.LazyFrame: The primary listings.
@@ -125,10 +123,7 @@ def count_rows(lazy: pl.LazyFrame) -> int:
 
 def match_pattern(column: pl.Expr, pattern: str, case_sensitive: bool) -> pl.Expr:
     """
-    Match a regular expression with Python's semantics, as pandas' str.contains does.
-
-    Polars' regex engine is used when it supports the pattern; patterns it doesn't
-    support (e.g. look-around or backreferences) fall back to Python's re module.
+    Match a regular expression with Python's semantics, falling back to re when needed.
 
     Args:
         column (pl.Expr): The column to search.
@@ -166,20 +161,14 @@ def search_rows(
     primary_symbols: pl.Series | None = None,
 ) -> pl.LazyFrame:
     """
-    Search the rows matching every query.
-
-    A query is a regular expression matched anywhere in the value; a list of queries
-    keeps rows that contain any of them. The keys only_primary_listing and index
-    filter on the symbol column, unknown columns are logged and ignored.
+    Search the rows matching every query, a regular expression or a list of values.
 
     Args:
         lazy (pl.LazyFrame): The dataset.
         queries (dict): Column names mapped to a query or a list of queries.
         columns (list[str]): The columns of the dataset, the symbol column first.
-        case_sensitive (bool, optional): Whether the search is case-sensitive.
-            Defaults to False.
-        primary_symbols (pl.Series | None, optional): The symbols of the primary
-            listings. Defaults to None, the symbols without an exchange suffix.
+        case_sensitive (bool, optional): Case-sensitive search. Defaults to False.
+        primary_symbols (pl.Series | None, optional): The primary symbols. Defaults to None.
 
     Returns:
         pl.LazyFrame: The matching rows.
@@ -235,8 +224,7 @@ def get_sorted_options(
 
     Args:
         values (pl.Series): The unique values, without missing values.
-        as_pandas (bool, optional): Whether to return a numpy array (True) or a Polars
-            Series (False). Defaults to True.
+        as_pandas (bool, optional): Return a numpy array, else Polars. Defaults to True.
 
     Returns:
         np.ndarray | pl.Series: The sorted unique values.

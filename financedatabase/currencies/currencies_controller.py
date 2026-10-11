@@ -11,14 +11,7 @@ from financedatabase.frame_model import FinanceFrame
 
 class Currencies(FinanceDatabase):
     """
-    Currency is a medium of exchange for goods and services. In short,
-    it's money, in the form of paper and coins, usually issued by a
-    government and generally accepted at its face value as a method of payment.
-    Currency is the primary medium of exchange in the modern world, having
-    long ago replaced bartering as a means of trading goods and services.
-
-    This class provides information about the currencies available as well as the
-    ability to select specific currencies based on the currency.
+    Currency pairs, selectable by base and quote currency.
     """
 
     FILE_NAME = "currencies.bz2"
@@ -39,19 +32,15 @@ class Currencies(FinanceDatabase):
         Returns all currency pairs when no input is given.
 
         Args:
-            base_currency (str | list, optional): Specific base currency or list of base
-                currencies to filter currencies on. Defaults to None (all base currencies).
-            quote_currency (str | list, optional): Specific quote currency or list of quote
-                currencies to filter currencies on. Defaults to None (all quote currencies).
-            as_pandas (bool, optional): Whether to return a pandas DataFrame (True) or a
-                Polars DataFrame (False). Defaults to True.
+            base_currency (str | list, optional): Base currencies to filter on.
+            quote_currency (str | list, optional): Quote currencies to filter on.
+            as_pandas (bool, optional): Return pandas, else Polars. Defaults to True.
 
         Returns:
             FinanceFrame | pl.DataFrame: The currencies matching every filter.
 
         Raises:
-            ValueError: If a filter value is not available in the database. Check the
-                available values with the 'show_options' method.
+            ValueError: If a filter value is not available, see show_options.
 
         As an example:
 
@@ -64,16 +53,6 @@ class Currencies(FinanceDatabase):
             ["name", "base_currency", "quote_currency", "exchange"]
         ].head()
         ```
-
-        Which returns:
-
-        | symbol   | name    | base_currency | quote_currency | exchange |
-        |:---------|:--------|:--------------|:---------------|:---------|
-        | EURAED=X | EUR/AED | EUR           | AED            | CCY      |
-        | EURAFN=X | EUR/AFN | EUR           | AFN            | CCY      |
-        | EURALL=X | EUR/ALL | EUR           | ALL            | CCY      |
-        | EURAMD=X | EUR/AMD | EUR           | AMD            | CCY      |
-        | EURANG=X | EUR/ANG | EUR           | ANG            | CCY      |
         """
         return self._select_rows(
             {"base_currency": base_currency, "quote_currency": quote_currency},
@@ -95,20 +74,13 @@ class Currencies(FinanceDatabase):
         The options can be narrowed down with the same filters as select().
 
         Args:
-            selection (str | None, optional): The column to show the options of. Choose
-                from: "base_currency", "quote_currency". Defaults to None, which returns the
-                options of every column.
-            base_currency (str | list, optional): Specific base currency or list of base
-                currencies to filter the options on. Defaults to None (all base currencies).
-            quote_currency (str | list, optional): Specific quote currency or list of quote
-                currencies to filter the options on. Defaults to None (all quote
-                currencies).
-            as_pandas (bool, optional): Whether to return the options as numpy arrays (True)
-                or as Polars Series (False). Defaults to True.
+            selection (str | None, optional): The filter to show, None for every filter.
+            base_currency (str | list, optional): Base currencies to filter on.
+            quote_currency (str | list, optional): Quote currencies to filter on.
+            as_pandas (bool, optional): Return numpy arrays, else Polars. Defaults to True.
 
         Returns:
-            dict | np.ndarray | pl.Series: The sorted unique values of the selected column,
-                or a dictionary with the values of every column if no selection is given.
+            dict | np.ndarray | pl.Series: The sorted values, a dict for every filter.
 
         Raises:
             ValueError: If the selection or a filter value is not valid.

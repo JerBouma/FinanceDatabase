@@ -26,11 +26,7 @@ HEADERS = {
 
 def get_cache_directory() -> Path:
     """
-    Get the directory holding the cached database files, creating it when needed.
-
-    The FINANCEDATABASE_CACHE_DIR environment variable overrides the platform default:
-    ~/.cache/financedatabase on Linux, ~/Library/Caches/financedatabase on macOS and
-    %LOCALAPPDATA%\\financedatabase\\Cache on Windows.
+    Get the cache directory (FINANCEDATABASE_CACHE_DIR or the platform default).
 
     Returns:
         Path: The cache directory.
@@ -73,10 +69,6 @@ def write_atomically(target: Path, write) -> None:
 def convert_bz2_to_parquet(content: bytes, target: Path) -> None:
     """
     Convert a bz2-compressed CSV to Parquet with the types of the published Parquet files.
-
-    Only used for compressed files published before the typed Parquet files. Every
-    column is read as text, so values such as the ticker NA stay as written; delisted
-    becomes a Boolean and a column empty in every row Float64, as the pipeline writes.
 
     Args:
         content (bytes): The bz2-compressed CSV.
@@ -147,12 +139,7 @@ def get_local_cache(path: Path) -> Path:
 
 def get_remote_cache(url: str) -> Path:
     """
-    Get the Parquet cache of a remote file, checked for changes at most once a day.
-
-    A published Parquet file is stored as it is; a bz2 CSV is converted.
-
-    The check is a conditional request with the stored ETag, so an unchanged file is
-    not downloaded again. If the server can't be reached, the cached copy is used.
+    Get the Parquet cache of a remote file, checked for changes (ETag) once a day.
 
     Args:
         url (str): The URL of the bz2 file.
@@ -202,14 +189,10 @@ def load_lazy_frame(
     """
     Load a lazy scan of one database file from the local cache, downloading it if needed.
 
-    The typed Parquet file published next to the bz2 CSV is used when it exists, so no
-    conversion is needed; otherwise the bz2 CSV is converted to the same types.
-
     Args:
         file_name (str): The compressed file, e.g. "equities.bz2".
         base_url (str): The URL the file is published under.
-        local_directory (Path | None): The local directory holding the file, or None
-            to download it.
+        local_directory (Path | None): The local directory of the file, None to download.
 
     Returns:
         pl.LazyFrame: A lazy scan of the cached Parquet file.
