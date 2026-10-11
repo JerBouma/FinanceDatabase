@@ -361,6 +361,14 @@ jobs:
           # US ETFs are added without SEC objectives / registrant-based families.
           SEC_USER_AGENT_EMAIL: ${{ vars.SEC_USER_AGENT_EMAIL }}
         run: python scripts/update_listings.py
+      # Cryptocurrencies (CoinGecko), currencies (ISO 4217) and indices (Euronext): new coins,
+      # currencies and indices are added and coins or currencies that no longer exist are
+      # removed. Each source is isolated and the script never fails the pipeline.
+      # See scripts/update_markets.py for the rules.
+      - name: Update Cryptocurrencies, Currencies and Indices
+        continue-on-error: true
+        timeout-minutes: 30
+        run: python scripts/update_markets.py
       # Equities only hold company shares: any bond, note, warrant or certificate that an
       # update above added is removed again. See scripts/remove_non_shares.py for the rule.
       - name: Remove Non-Shares from Equities
