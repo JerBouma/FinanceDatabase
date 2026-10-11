@@ -126,7 +126,7 @@ For Equities, these are the categories. Other asset classes follow a similar lay
 - **website**: if applicable, enter the website.
 - **market_cap**: based on [market cap categorization](https://www.investopedia.com/investing/market-capitalization-defined/) define the market cap.
 
-If in any case you are not able to acquire data for a specific category, keep the field blank so that it is clear that there is no data available. For any of these options, make sure you use an existing category so that it remains compact. The sectors, industry groups and industries form this database's own classification: every valid combination is listed in `scripts/categories.json`, and the tests fail on any other. When a category is renamed, `scripts/category_renames.csv` maps the old names to the new ones and the weekly update moves any row that still uses an old name.
+If in any case you are not able to acquire data for a specific category, keep the field blank so that it is clear that there is no data available. For any of these options, make sure you use an existing category so that it remains compact. The sectors, industry groups and industries form this database's own classification: every valid combination is listed in `scripts/categories.json`, and the tests fail on any other. `scripts/category_renames.csv` maps the names used before October 2026 to the current ones.
 
 ### What belongs in Equities
 

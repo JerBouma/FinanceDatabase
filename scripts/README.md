@@ -50,12 +50,12 @@ a maturity or expiry date, a strike, a warrant, a coupon without share wording, 
 international XS ISIN; `helpers.check_non_share` in `listings/`), whatever added it.
 
 The equity categories are the database's own: `categories.json` lists every valid sector,
-industry group and industry. `category_renames.csv` maps renamed categories to the current
-ones, and the US update moves any row that still uses an old name. Two old industries were
-split, so a rule decides (`equities/categories_model.py`): savings banks stay banks and other
-mortgage lenders become Mortgage Finance; a REIT takes the REIT industry of the property type
-its name and summary mention (Diversified REITs for several), and real estate companies that
-are not REITs become Real Estate Development & Services.
+industry group and industry, and `check_categories.py` fails on any other.
+`category_renames.csv` records how the old names map to the current ones (a one-off
+migration, kept for users updating their filters). Rows with a blank target were split per
+company: savings banks stayed Banks and other mortgage lenders became Mortgage Finance; REITs
+took the REIT industry of the property type in their name and summary, and other real estate
+companies became Real Estate Development & Services.
 
 ## Exchange directories (`listings/`)
 
