@@ -123,6 +123,7 @@ def test_dated_name_skips_debt_but_keeps_shares() -> None:
         "Corts Trust for BellSouth Debentures",
         "Sify Technologies Limited Rights expiring 6/21/2024",
         "ContraVir Pharmaceuticals, Inc. Warrants expiration 07/03/2023",
+        "Comcast Holdings ZONES",
     ]:
         assert helpers.DATED_NAME.search(debt), debt
     for share in [
@@ -152,6 +153,7 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("Waran Seri I Zyrexindo Mandiri", "", ""),
         ("TETRA BIO PHARMA INC WTS A", "", ""),
         ("Atossa Genetics Inc. WT EXP 052421", "", ""),
+        ("Comcast Holdings ZONES", "United States", ""),
     ]:
         assert helpers.check_non_share(name, country, isin), name
     for name, country, isin in [
@@ -163,6 +165,7 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("CODERE SA EO 0,50", "", ""),
         ("Callaway Golf Company", "United States", ""),
         ("WT Microelectronics Co., Ltd.", "Taiwan", ""),
+        ("Time Zones Inc.", "United States", ""),
     ]:
         assert not helpers.check_non_share(name, country, isin), name
 
