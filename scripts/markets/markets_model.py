@@ -101,9 +101,11 @@ def update_cryptos(
             if site:
                 frame.loc[frame.cryptocurrency == ticker, "website"] = site
 
-    # A coin whose ticker CoinGecko no longer lists at all has stopped trading.
+    # A coin no CoinGecko list has (by its ticker, or without a Yahoo number) has stopped.
+    listed = tickers | set(coins.symbol)
     base = frame.cryptocurrency.str.replace(r"\d+$", "", regex=True)
-    gone = sorted(set(frame.cryptocurrency[~base.isin(tickers)]))
+    alive = frame.cryptocurrency.isin(listed) | base.isin(listed)
+    gone = sorted(set(frame.cryptocurrency[~alive]))
     if len(gone) > MAX_REMOVED_SHARE * len(pairs):
         print(f"  ! {len(gone)} coins to remove looks implausible; removing none")
         gone = []

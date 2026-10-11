@@ -31,6 +31,7 @@ def test_update_cryptos_adds_top_coins_and_drops_dead_ones() -> None:
             ("bitcoin", "BTC", "Bitcoin", 1),
             ("sui", "SUI", "Sui", 2),
             ("sui-bridged", "SUI", "Bridged Sui", 2),
+            ("chutes", "SN64", "Chutes", 3),
             ("other-eth", "ETH", "Other Ether", 3),
             ("fund", "BUIDL", "Some Liquidity Fund", 4),
             ("odd", "A_B", "Odd", 5),
@@ -44,7 +45,7 @@ def test_update_cryptos_adds_top_coins_and_drops_dead_ones() -> None:
         lambda coin_id: f"https://{coin_id}.org",
         set(),
     )
-    assert added == ["SUI"]
+    assert added == ["SUI", "SN64"]
     assert gone == ["DEAD"]
     assert {"SUI-USD", "SUI-EUR"} <= set(frame.index)
     assert "SUI-JPY" not in frame.index  # only quotes most coins trade in
@@ -52,6 +53,12 @@ def test_update_cryptos_adds_top_coins_and_drops_dead_ones() -> None:
     assert frame.loc["SUI-USD", "website"] == "https://sui.org"
     assert frame.loc["BTC-USD", "website"] == "https://bitcoin.org"
     assert not frame.index.str.startswith("DEAD").any()
+
+    # A coin that is ranked but missing from the full coin list stays.
+    again, _, gone = markets_model.update_cryptos(
+        frame, coins, {"BTC", "ETH", "BUIDL"}, lambda coin_id: "", set()
+    )
+    assert gone == [] and {"SUI-USD", "SN64-USD"} <= set(again.index)
 
 
 def test_update_currencies_follows_iso() -> None:
