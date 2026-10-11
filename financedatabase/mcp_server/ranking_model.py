@@ -23,6 +23,8 @@ SEPARATORS = [".", "-", "="]
 CURRENCY_COLUMNS = ["currency", "base_currency", "quote_currency"]
 # Minimum query length to also match names without spaces ('USDJPY' for 'USD/JPY').
 COMPACT_MINIMUM = 5
+# A currency named in a summary with its ISO code: 'the Japanese Yen (JPY)'.
+CURRENCY_NAME = r"the ([A-Z][A-Za-z.'\- ]+?) \(([A-Z]{3})\)"
 # Categories of the database that hold leveraged, inverse and other trading products.
 DERIVATIVE_CATEGORIES = ["Derivatives", "Trading"]
 PREFERENCE_COLUMNS = [
@@ -51,6 +53,7 @@ class RankingProfile:
         variant_separators (list[str]): Symbol separators that mark a variant.
         venue_sizes (dict[str, int]): Exchanges by their number of listings.
         name_keys (pl.DataFrame | None): The search frame with "_key", "_words", "_compact".
+        currency_names (dict[str, str]): Currency name in lower case -> its ISO code.
     """
 
     trailing_words: list[str] = field(default_factory=list)
@@ -58,6 +61,7 @@ class RankingProfile:
     variant_separators: list[str] = field(default_factory=list)
     venue_sizes: dict[str, int] = field(default_factory=dict)
     name_keys: pl.DataFrame | None = None
+    currency_names: dict[str, str] = field(default_factory=dict)
 
 
 def get_frequency_order(values: pl.Series) -> dict[str, int]:
@@ -119,6 +123,21 @@ def create_profile(
         profile.currency_order = get_frequency_order(
             pl.concat([frame.get_column(c) for c in currencies]).alias("currency")
         )
+    if "base_currency" in columns and "summary" in columns:
+        # Currency pairs are named by code; their summaries name the currencies.
+        named = (
+            lazy.select(
+                pl.col("summary").str.extract_all(CURRENCY_NAME).alias("_found")
+            )
+            .explode("_found")
+            .drop_nulls()
+            .unique()
+            .collect()
+            .get_column("_found")
+        )
+        for found in named:
+            name, code = re.match(CURRENCY_NAME, found).groups()
+            profile.currency_names[name.lower()] = code
     if ranks is None and len(symbols):
         profile.variant_separators = [
             separator
@@ -173,6 +192,14 @@ def build_query_expressions(
     ).fill_null(False)
     match = match | full
     exact = (full | (base == bare)).fill_null(False)
+    code = profile.currency_names.get(" ".join(needle.split()))
+    if code:
+        # 'japanese yen' finds the pairs with JPY.
+        named_currency = symbol.str.contains(code.lower(), literal=True).fill_null(
+            False
+        )
+        match = match | named_currency
+        exact = exact | named_currency
     if "name" not in columns:
         tier = pl.when(identifier | full).then(0).when(exact).then(1)
         tier = tier.when(bare_symbol.str.starts_with(bare)).then(4)

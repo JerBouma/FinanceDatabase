@@ -2,7 +2,7 @@
 
 __docformat__ = "google"
 
-from typing import Annotated, Any, Literal
+from typing import Annotated, Any
 
 from mcp.server.fastmcp import FastMCP
 from mcp.types import ToolAnnotations
@@ -26,7 +26,8 @@ from financedatabase.utilities.logger_model import get_logger
 
 logger = get_logger()
 
-AssetClass = Literal["equities", "etfs", "indices", "currencies", "cryptos"]
+# Asset classes the package still has but this server no longer serves.
+RETIRED_ASSET_CLASSES = ["funds", "moneymarkets"]
 
 
 class UtilityToolRegistry:
@@ -109,6 +110,15 @@ class UtilityToolRegistry:
         if not names or "all" in names:
             return list(self._provider.specs)
         unknown = [name for name in names if name not in self._provider.specs]
+        retired = [
+            name for name in unknown if name.replace(" ", "") in RETIRED_ASSET_CLASSES
+        ]
+        if retired:
+            raise QueryError(
+                f"'{retired[0]}' is no longer maintained and not served here; the "
+                "financedatabase Python package still has it. Choose from: all, "
+                f"{', '.join(self._provider.specs)}."
+            )
         if unknown:
             close = suggest(unknown[0], self._provider.specs, 3)
             hint = f" Did you mean: {', '.join(close)}?" if close else ""
@@ -166,8 +176,11 @@ class UtilityToolRegistry:
     def show_options(
         self,
         asset_class: Annotated[
-            AssetClass,
-            Field(description="The asset class, e.g. 'equities' or 'etfs'."),
+            str,
+            Field(
+                description="The asset class: equities, etfs, indices, currencies or "
+                "cryptos."
+            ),
         ],
         selection: Annotated[
             str | None,

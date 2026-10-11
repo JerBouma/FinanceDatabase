@@ -362,6 +362,17 @@ def test_search_instruments_errors_are_returned(server):
     assert "Did you mean: equities?" in text
 
 
+def test_retired_asset_classes_explain_themselves(server):
+    """Test that funds and money markets point to the Python package."""
+    for arguments in (
+        ("show_options", {"asset_class": "funds", "selection": "category"}),
+        ("search_instruments", {"query": "x", "asset_classes": "moneymarkets"}),
+    ):
+        text = call_text(server.mcp, *arguments)
+        assert "no longer maintained" in text
+        assert "Python package" in text
+
+
 def test_search_categories_lists_every_asset_class(server):
     """Test the markdown overview of asset classes."""
     text = call_text(server.mcp, "search_categories")
@@ -452,3 +463,12 @@ def test_responses_are_compact_json(server):
     assert text == json.dumps(
         json.loads(text), ensure_ascii=False, separators=(",", ":")
     )
+
+
+def test_currency_names_find_their_pairs(server):
+    """Test that a currency's name finds the pairs with its code ('japanese yen')."""
+    payload = call_json(
+        server.mcp, "currencies", {"query": "japanese yen", "limit": 50}
+    )
+    assert payload["total"] > 0
+    assert all("JPY" in row["symbol"] for row in payload["rows"])
