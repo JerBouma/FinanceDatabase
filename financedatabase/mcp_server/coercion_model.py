@@ -93,7 +93,10 @@ def split_values(value: Any) -> list[str]:
 
 
 def resolve_values(
-    value: Any, options_lower: set[str], expand_prefix: bool = False
+    value: Any,
+    options_lower: set[str],
+    expand_prefix: bool = False,
+    synonyms: dict[str, list[str]] | None = None,
 ) -> tuple[list[str], list[str]]:
     """
     Split a filter value into known options, keeping commas that belong to a value.
@@ -102,11 +105,16 @@ def resolve_values(
         value (Any): The raw filter value (string, comma-separated string or list).
         options_lower (set[str]): The valid options, lower-cased.
         expand_prefix (bool): Whether a part may stand for several options.
+        synonyms (dict[str, list[str]] | None): Option -> other names for it.
 
     Returns:
         tuple[list[str], list[str]]: The resolved values and the unmatched parts.
     """
     folded = {fold_accents(option): option for option in options_lower}
+    for option, aliases in (synonyms or {}).items():
+        if option.lower() in options_lower:
+            for alias in aliases:
+                folded.setdefault(fold_accents(alias), option.lower())
 
     def match(candidate: str) -> str | None:
         if candidate.lower() in options_lower:

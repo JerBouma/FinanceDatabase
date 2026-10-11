@@ -67,6 +67,7 @@ def _build_mcp_app() -> tuple[FastMCP, DatabaseProvider]:
         ],
         instance_ttl_seconds=int(configuration["cache"]["instance_ttl_seconds"]),
         identifier_columns=configuration.get("identifier_columns", []),
+        synonyms=configuration.get("synonyms", {}),
     )
 
     mcp = FastMCP(
