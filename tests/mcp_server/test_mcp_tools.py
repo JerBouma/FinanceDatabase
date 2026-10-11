@@ -166,9 +166,9 @@ def test_multiple_values_keep_commas_inside_values(server):
 
 def test_invalid_filter_returns_package_message_with_suggestions(server):
     """Test that a typo returns the package's message plus a 'Did you mean'."""
-    text = call_text(server.mcp, "equities", {"sector": "Tech"})
+    text = call_text(server.mcp, "equities", {"sector": "Information Tech"})
     assert text.startswith("Invalid input for `equities`")
-    assert "The sector 'Tech' is not available in the database." in text
+    assert "The sector 'Information Tech' is not available in the database." in text
     assert "Did you mean 'Information Technology'" in text
 
     text = call_text(server.mcp, "equities", {"country": "Netherland"})
@@ -218,6 +218,18 @@ def test_include_delisted(server, delisted_symbol):
         server.mcp, "equities", {"limit": 1, "include_delisted": True}
     )["total"]
     assert everything > listed
+
+
+def test_filters_accept_synonyms(server):
+    """Test that a filter value's other name finds the same rows as the value."""
+    direct = call_json(server.mcp, "equities", {"country": "United States", "limit": 1})
+    for alias in ("USA", "usa", "United States of America"):
+        aliased = call_json(server.mcp, "equities", {"country": alias, "limit": 1})
+        assert aliased["total"] == direct["total"]
+    tech = call_json(server.mcp, "equities", {"sector": "Information Technology"})
+    assert (
+        call_json(server.mcp, "equities", {"sector": "Tech"})["total"] == tech["total"]
+    )
 
 
 def test_search_instruments_flags_delisted(server, delisted_symbol):

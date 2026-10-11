@@ -130,6 +130,54 @@ asset_classes:
     supports_primary_listing: false
 
 # Columns a query matches exactly, so an ISIN, CUSIP or FIGI finds its instrument.
+# Other names for filter values, per field: the database value, then its aliases.
+synonyms:
+  country:
+    United States: ["USA", "US", "U.S.", "U.S.A.", "United States of America", "America"]
+    United Kingdom: ["UK", "U.K.", "Great Britain", "Britain", "England", "Scotland", "Wales"]
+    Netherlands: ["Holland", "The Netherlands", "Nederland"]
+    Germany: ["Deutschland"]
+    Switzerland: ["Schweiz", "Suisse"]
+    Ivory Coast: ["Côte d'Ivoire", "Cote d Ivoire", "Côte d’Ivoire"]
+    South Korea: ["Korea", "Republic of Korea", "Korea, Republic of"]
+    Czech Republic: ["Czechia"]
+    Turkey: ["Türkiye"]
+    Macedonia: ["North Macedonia"]
+    Russia: ["Russian Federation"]
+    China: ["PRC", "People's Republic of China", "Mainland China"]
+    Hong Kong: ["Hong Kong SAR", "HK"]
+    Macau: ["Macao"]
+    Taiwan: ["Chinese Taipei"]
+    Vietnam: ["Viet Nam"]
+    Myanmar: ["Burma"]
+    United Arab Emirates: ["UAE", "Emirates"]
+    Saudi Arabia: ["KSA"]
+    Republic of the Congo: ["Congo", "Congo-Brazzaville"]
+    British Virgin Islands: ["BVI", "Virgin Islands (British)"]
+    U.S. Virgin Islands: ["US Virgin Islands", "USVI", "Virgin Islands (U.S.)"]
+    Bahamas: ["The Bahamas"]
+    Falkland Islands: ["Falklands"]
+    Sint Maarten: ["St. Maarten", "Saint Maarten"]
+    New Zealand: ["NZ"]
+  sector: &sectors
+    Information Technology: ["Technology", "Tech", "IT"]
+    Health Care: ["Healthcare"]
+    Financials: ["Financial", "Financial Services", "Finance"]
+    Communication Services: ["Communication", "Communications", "Telecom", "Telecommunications"]
+    Consumer Discretionary: ["Consumer Cyclical"]
+    Consumer Staples: ["Consumer Defensive"]
+    Materials: ["Basic Materials"]
+    Industrials: ["Industrial"]
+    Utilities: ["Utility"]
+  category_group: *sectors
+  market_cap:
+    Mega Cap: ["Megacap", "Mega-cap"]
+    Large Cap: ["Largecap", "Large-cap"]
+    Mid Cap: ["Midcap", "Mid-cap"]
+    Small Cap: ["Smallcap", "Small-cap"]
+    Micro Cap: ["Microcap", "Micro-cap"]
+    Nano Cap: ["Nanocap", "Nano-cap"]
+
 identifier_columns: ["isin", "cusip", "figi", "composite_figi", "shareclass_figi"]
 
 # Registered in tools_model.py; listed here for the mcpb manifest.

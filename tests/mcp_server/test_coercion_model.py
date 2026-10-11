@@ -25,3 +25,20 @@ def test_resolve_values_ignores_accents() -> None:
     )
     assert resolve_values("Nethèrlands", options) == (["netherlands"], [])
     assert resolve_values("Hotels, Restaurants & Leisure", options)[1] == []
+
+
+def test_resolve_values_accepts_synonyms() -> None:
+    """Test that another name for a value finds it, but never hides a real option."""
+    options = {"ivory coast", "united states", "us"}
+    synonyms = {
+        "Ivory Coast": ["Côte d'Ivoire"],
+        "United States": ["USA", "US"],
+        "Missing": ["Elsewhere"],
+    }
+    assert resolve_values("cote d'ivoire", options, synonyms=synonyms) == (
+        ["ivory coast"],
+        [],
+    )
+    assert resolve_values("USA", options, synonyms=synonyms) == (["united states"], [])
+    assert resolve_values("US", options, synonyms=synonyms) == (["US"], [])
+    assert resolve_values("Elsewhere", options, synonyms=synonyms)[1] == ["Elsewhere"]

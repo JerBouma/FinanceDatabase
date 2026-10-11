@@ -113,6 +113,7 @@ class DatabaseProvider:
         specs (list[AssetClassSpec]): The asset classes to serve.
         instance_ttl_seconds (int): Age after which an instance is rebuilt on next use.
         identifier_columns (list[str]): Columns matched exactly by a query (ISIN, ...).
+        synonyms (dict): Field -> value -> other names for the value.
         use_local_location (bool | None): Read local compression files, None follows
             FINANCEDATABASE_MCP_LOCAL.
     """
@@ -123,6 +124,7 @@ class DatabaseProvider:
         instance_ttl_seconds: int = 86400,
         identifier_columns: list[str] | None = None,
         use_local_location: bool | None = None,
+        synonyms: dict[str, dict[str, list[str]]] | None = None,
     ) -> None:
         """
         Initializes the DatabaseProvider. No data is loaded until the first query.
@@ -133,11 +135,13 @@ class DatabaseProvider:
             identifier_columns (list[str] | None): Columns matched exactly by a query.
             use_local_location (bool | None): Read local compression files instead of
                 GitHub; None follows FINANCEDATABASE_MCP_LOCAL.
+            synonyms (dict | None): Field -> value -> other names for the value.
         """
         self.specs: dict[str, AssetClassSpec] = {spec.tool_name: spec for spec in specs}
         self._instance_ttl = instance_ttl_seconds
         self._identifier_columns = list(identifier_columns or [])
         self._use_local_location = use_local_location
+        self._synonyms = synonyms or {}
         self._instances: dict[str, tuple[FinanceDatabase, float]] = {}
         self._profiles: dict[str, tuple[FinanceDatabase, RankingProfile]] = {}
         self._matches: dict[tuple[str, int, str], pl.DataFrame] = {}
@@ -257,6 +261,7 @@ class DatabaseProvider:
                 raw,
                 instance.get_lowercase_options(name, exclude_delisted),
                 expand_prefix=name == "family",
+                synonyms=self._synonyms.get(name),
             )
             if missing and name == "family":
                 brands = self._resolve_brands(tool_name, missing)
