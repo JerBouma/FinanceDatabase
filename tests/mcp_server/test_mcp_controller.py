@@ -279,11 +279,11 @@ def test_setup_cli_for_global_client(tmp_path, monkeypatch, server):
 
 
 def test_resolve_values_keeps_commas_of_known_values():
-    """Test the greedy split that keeps 'Hotels, Restaurants & Leisure' intact."""
-    options = {"hotels, restaurants & leisure", "banks", "ab fixed-income shares, inc."}
+    """Test the greedy split that keeps 'Oil, Gas & Fuels' intact."""
+    options = {"oil, gas & fuels", "banks", "ab fixed-income shares, inc."}
     assert resolve_values("Banks", options) == (["Banks"], [])
-    assert resolve_values("Hotels, Restaurants & Leisure, banks", options) == (
-        ["Hotels, Restaurants & Leisure", "banks"],
+    assert resolve_values("Oil, Gas & Fuels, banks", options) == (
+        ["Oil, Gas & Fuels", "banks"],
         [],
     )
     assert resolve_values(["AB Fixed-Income Shares,Inc.", "Bankz"], options) == (

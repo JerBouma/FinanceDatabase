@@ -11,7 +11,7 @@ from financedatabase.frame_model import FinanceFrame
 
 class Equities(FinanceDatabase):
     """
-    Company shares, selectable by country, GICS sector, industry, exchange and more.
+    Company shares, selectable by country, sector, industry, exchange and more.
     """
 
     FILE_NAME = "equities.bz2"
@@ -47,7 +47,7 @@ class Equities(FinanceDatabase):
         """
         Select equities by country, sector, industry group, industry and more.
 
-        Filters follow the GICS standard. Returns all equities when no input is given.
+        Returns all equities when no input is given.
 
         Args:
             country (str | list, optional): Countries to filter on.

@@ -30,7 +30,7 @@ def update_us_equities(database: str = "database") -> int:
     exchange_data = pd.concat(feeds) if feeds else pd.DataFrame()
     exchange_data = exchange_data[~exchange_data.index.duplicated(keep="first")]
 
-    # Feed industry -> GICS industry; labels spanning several industries are left out.
+    # Feed industry -> industry; labels spanning several industries are left out.
     fd_industries = (
         pd.read_csv("scripts/us_feed_industries.csv", dtype=str, keep_default_na=False)
         .set_index("feed_industry")["industry"]

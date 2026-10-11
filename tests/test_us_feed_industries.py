@@ -8,14 +8,12 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def test_us_feed_industries_map_to_valid_gics_industries() -> None:
-    """Test that every feed label maps once to an industry of the GICS tree."""
+def test_us_feed_industries_map_to_valid_industries() -> None:
+    """Test that every feed label maps once to an industry of scripts/categories.json."""
     mapping = pd.read_csv(
         ROOT / "scripts" / "us_feed_industries.csv", dtype=str, keep_default_na=False
     )
-    tree = json.loads(
-        (ROOT / "compression" / "categories" / "categories.json").read_text()
-    )
+    tree = json.loads((ROOT / "scripts" / "categories.json").read_text())
     industries = {
         industry
         for groups in tree.values()
