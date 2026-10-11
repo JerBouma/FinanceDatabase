@@ -381,7 +381,7 @@ This works for the other asset classes too. For example, Ethereum quoted in BTC,
 
 # MCP Server
 
-The Finance Database MCP Server gives any AI assistant that supports the [Model Context Protocol](https://modelcontextprotocol.io) (MCP) direct access to the database. Ask in plain English for, say, every mid cap semiconductor company in Taiwan or the bond ETFs of a given issuer, and the assistant queries the database on your behalf. No API key is needed. Combine it with the [Finance Toolkit MCP Server](https://www.jeroenbouma.com/projects/financetoolkit/mcp) to go from a list of symbols to their financial statements, ratios and prices.
+The Finance Database MCP Server gives any AI assistant that supports the [Model Context Protocol](https://modelcontextprotocol.io) (MCP) direct access to the database. Ask in plain English for, say, every mid cap semiconductor company in Taiwan or the bond ETFs of a given issuer, and the assistant queries the database on your behalf. No API key is needed. Find the tools, example prompts and how to host the server yourself in the [MCP Server Documentation](https://www.jeroenbouma.com/projects/financedatabase/mcp).
 
 ### Remote server
 
@@ -398,13 +398,13 @@ Connect directly to the hosted server at `https://financedatabase.jeroenbouma.co
 
 ### Local installation
 
-Run the setup wizard — it locates your client's config file (Claude Desktop, Claude Code, VS Code, Cursor, Gemini CLI or Windsurf) and adds the server automatically:
+Run the setup wizard — it locates your client's config file and writes the MCP entry automatically:
 
 ```bash
 uvx --from "financedatabase[mcp]" financedatabase-mcp-setup
 ```
 
-For manual config, add the following to your client's MCP config file (e.g. `claude_desktop_config.json`, `.cursor/mcp.json`; VS Code's `.vscode/mcp.json` uses `servers` instead of `mcpServers`):
+For manual config, add the following to your client's MCP config file (e.g. `claude_desktop_config.json` or `.cursor/mcp.json`; VS Code's `.vscode/mcp.json` uses `servers` instead of `mcpServers`):
 
 ```json
 {
@@ -417,28 +417,7 @@ For manual config, add the following to your client's MCP config file (e.g. `cla
 }
 ```
 
-For Claude Code: `claude mcp add finance-database -- uvx --from "financedatabase[mcp]" financedatabase-mcp`. Alternatively, download the [Finance Database MCPB bundle](https://github.com/JerBouma/FinanceDatabase/releases/latest/download/financedatabase.mcpb) and open it with Claude Desktop. The data is downloaded once, cached locally and checked for updates at most once a day, exactly like the Python package. `financedatabase-mcp-inspector` opens the [MCP Inspector](https://github.com/modelcontextprotocol/inspector) to try the tools in a browser.
-
-To host the server yourself, run `financedatabase-mcp --transport streamable-http --port 8000` or use the included `Dockerfile` and `docker-compose.yml`. The server answers `/health` for health checks, and with `FD_MCP_ANALYTICS=1` it also publishes anonymous usage totals (calls per day and per tool, and unique users counted by a keyed hash of address and user agent) at `/stats`; set `FD_MCP_SECRET_KEY` to choose the hash secret, otherwise one is generated next to the statistics file.
-
-### Tools
-
-| Tool | What it does |
-|:-----|:-------------|
-| `equities`, `etfs`, `indices`, `currencies`, `cryptos` | List the instruments of an asset class matching its `select()` filters (e.g. `country`, `sector`, `industry`, `market_cap` for equities; `category_group`, `category`, `family` for ETFs) and/or a free-text `query` on symbol and name. Filters accept several comma-separated values. Supports `include_delisted`, `only_primary_listing`, `show_columns`, `include_summary`, `limit` and `offset`. |
-| `search_instruments` | Find a symbol by ticker, name or ISIN across all asset classes at once. |
-| `show_options` | Show the valid values of a filter (e.g. every sector or country), optionally narrowed by other filters. |
-| `search_categories` | List the asset classes with their size, filters and description. |
-
-Every response is compact JSON with `total`, `returned`, `offset`, `columns` and `rows`, at most 200 rows per call (25 by default), with a `_notes` hint on how to get the next page. Summaries are left out unless asked for and truncated to 300 characters, so a response never contains the full dataset. Invalid filter values return the package's error message together with suggestions such as "Did you mean 'Information Technology'?".
-
-### Example prompts
-
-- *"Which Dutch financial companies are Large or Mega Cap?"*
-- *"Find all mid cap semiconductor companies in Taiwan and list their exchanges."*
-- *"What ETFs does Vanguard offer in the Fixed Income category group?"*
-- *"Which ticker belongs to ISIN US0378331005, and on which exchanges is it listed?"*
-- *"List the industries in the Health Care sector and how many German companies are in each."*
+Alternatively, download the [Finance Database MCPB bundle](https://github.com/JerBouma/FinanceDatabase/releases/latest/download/financedatabase.mcpb) and open it with Claude Desktop.
 
 # Questions & Answers
 
