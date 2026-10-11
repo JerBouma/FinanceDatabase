@@ -7,7 +7,7 @@
     "url": "https://github.com/JerBouma/FinanceDatabase",
     "source": "github"
   },
-  "version": "2.5.0",
+  "version": "2.5.1",
   "remotes": [
     {
       "type": "streamable-http",
@@ -18,7 +18,7 @@
     {
       "registryType": "pypi",
       "identifier": "financedatabase",
-      "version": "2.5.0",
+      "version": "2.5.1",
       "transport": {
         "type": "stdio",
         "command": "financedatabase-mcp"
