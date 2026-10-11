@@ -1616,7 +1616,7 @@ GAFF.DU,GAM ST.EUROPEAN EQ.DL ACC,EUR,"GAM ST.EUROPEAN EQ.DL ACC represents a su
 GAN8.DU,AF-AM.F.GBL BD ADLC,EUR,"AF-AM.F.GBL BD ADLC is a sub-fund of Amundi Funds, focusing on global bonds. The fund seeks to generate income and capital appreciation by investing in a diversified portfolio of fixed income securities worldwide. ""ADLC"" designates a specific share class with particular characteristics.",Fixed Income,Corporate Bonds,Amundi Asset Management,DUS,XDUS,,False
 GAN9.DU,AF-AMUN.F.VOL.WO.ADLADD,EUR,"AF-AMUN.F.VOL.WO.ADLADD is a sub-fund of Amundi Funds, focusing on volatility in world markets. The fund seeks to manage risk by focusing on volatility-related strategies, through derivatives or other instruments. ""ADLADD"" designates a specific share class with particular characteristics.",Derivatives,,Amundi Asset Management,DUS,XDUS,,False
 GANB.DU,AF-AM.F.AS.EQ.CO. ADLC,EUR,"AF-AM.F.AS.EQ.CO. ADLC is a sub-fund of Amundi Funds focusing on Asian equities in a concentrated manner. The fund aims to achieve capital growth by investing primarily in a concentrated portfolio of companies based in Asia. ""ADLC"" designates a specific share class.",Equities,Emerging Markets,Amundi Asset Management,DUS,XDUS,,False
-GANK.DU,AF-AF.LAT.AMER. EQ. ADLC,EUR,"AF-AF.LAT.AMER. EQ. ADLC represents a sub-fund of Amundi Funds focusing on Latin American equities. The fund aims to achieve capital growth by investing primarily in a diversified portfolio of companies based in Latin America. ""ADLC"" designates a specific share class.",,,Amundi Asset Management,DUS,XDUS,,False
+GANK.DU,AF-AF.LAT.AMER. EQ. ADLC,EUR,"AF-AF.LAT.AMER. EQ. ADLC represents a sub-fund of Amundi Funds focusing on Latin American equities. The fund aims to achieve capital growth by investing primarily in a diversified portfolio of companies based in Latin America. ""ADLC"" designates a specific share class.",Equities,,Amundi Asset Management,DUS,XDUS,,False
 GANL.DU,AF-AF.JAP.EQUITY VA.A2YNC,EUR,"AF-AF.JAP.EQUITY VA.A2YNC represents a sub-fund of Amundi Funds focusing on Japanese equities with a value-oriented approach. The fund aims to achieve capital growth by investing primarily in companies based in Japan that are undervalued by the market. ""A2YNC"" designates a specific share class.",Equities,,Amundi Asset Management,DUS,XDUS,,False
 GANN.DU,AF-AM.F.VOL.EURO AEOC,EUR,"AF-AM.F.VOL.EURO AEOC represents a sub-fund of Amundi Funds, focusing on volatility within the Eurozone equity markets. The fund seeks to manage risk and generate returns by focusing on volatility-related strategies, through derivatives or other instruments in the Eurozone. ""AEOC"" designates a specific share class.",Equities,Factors,Amundi Asset Management,DUS,XDUS,,False
 GANQ.DU,AF-AF.SBI.FM.IND.EQ. ADLC,EUR,"AF-AF.SBI.FM.IND.EQ. ADLC represents a sub-fund of Amundi Funds, focusing on Indian equities through a specific fund management company, SBI Funds Management. The fund aims to achieve capital growth by investing primarily in Indian equities, using a specific investment style or mandate from SBI. ""ADLC"" designates a specific share class.",,,Amundi Asset Management,DUS,XDUS,,False
@@ -1678,7 +1678,7 @@ GMXB.DU,SPROTT-FALCON GOLD EQ.A,EUR,,,,Falcom Financial Services,DUS,XDUS,,False
 GMXE.DU,FALCON SWISS EQUITY FUND,EUR,,Equities,,Falcom Financial Services,DUS,XDUS,,False
 GN4A.DU,QUINT:ESSENCE STR.DEFEN.B,EUR,,,,Alternative Access Funds,DUS,XDUS,,False
 GN4D.DU,QUINT:ESSENCE STR.DYNAM.B,EUR,,,,Alternative Access Funds,DUS,XDUS,,False
-GNA0.DU,AF-AF.LAT.AMER. EQ.ADLADD,EUR,,,,Amundi Asset Management,DUS,XDUS,,False
+GNA0.DU,AF-AF.LAT.AMER. EQ.ADLADD,EUR,,Equities,,Amundi Asset Management,DUS,XDUS,,False
 GNA2.DU,AF-AM.F.VOL.EURO AEOADD,EUR,,Equities,Factors,Amundi Asset Management,DUS,XDUS,,False
 GNAR.DU,AIS-IX MSCI US SRI AHEOA,EUR,,Equities,,Amundi Asset Management,DUS,XDUS,,False
 GNAT.DU,AF-AM.F.GL.CO.BD ADLC,EUR,,Fixed Income,,Amundi Asset Management,DUS,XDUS,,False
@@ -2881,7 +2881,7 @@ OD5L.DU,ELITE PLUS UI,EUR,,,,,DUS,XDUS,,False
 OD5M.DU,QUANTUMX GLOBAL UI,EUR,,,,,DUS,XDUS,,False
 OD5N.DU,BOERSEBIUS TOPSELECT,EUR,,,,,DUS,XDUS,,False
 OD5Q.DU,BOERSEBIUS TOPMIX,EUR,,,,,DUS,XDUS,,False
-OD5U.DU,LLOYD FDS-ASS.DEF.OPPS A,EUR,,,,,DUS,XDUS,,False
+OD5U.DU,LLOYD FDS-ASS.DEF.OPPS A,EUR,,Fixed Income,,,DUS,XDUS,,False
 OD6A.DU,G+W - HDAX - TRENDFONDS,EUR,,,,,DUS,XDUS,,False
 OD6C.DU,WBG-D-F.SMALL+MIDCA.DTL R,EUR,,Equities,,,DUS,XDUS,,False
 OD6D.DU,STEYL.FAIR IN.-EQUITIES R,EUR,,Equities,,,DUS,XDUS,,False
@@ -3028,7 +3028,7 @@ PACI.DU,BNPP EU.SMALL CAP C.CLEO,EUR,,Equities,,BNP Paribas Asset Management,DUS
 PACJ.DU,BNPP EURO CORP BD CDL,EUR,,Fixed Income,Corporate Bonds,BNP Paribas Asset Management,DUS,XDUS,,False
 PACM.DU,BNPP T.RISK BAL. CL.DIS.,EUR,,,,BNP Paribas Asset Management,DUS,XDUS,,False
 PACN.DU,BNPP T.RISK BAL. CL.C,EUR,,,,BNP Paribas Asset Management,DUS,XDUS,,False
-PACU.DU,BNPP LAT.AMER.EQ. CL.DIS.,EUR,,,,BNP Paribas Asset Management,DUS,XDUS,,False
+PACU.DU,BNPP LAT.AMER.EQ. CL.DIS.,EUR,,Equities,,BNP Paribas Asset Management,DUS,XDUS,,False
 PBAE.DU,DWS ESG EUROPEAN EQU. LC,EUR,,,,DWS Investment,DUS,XDUS,,False
 PBF.DU,PICTET-BIOTECH NAM.PDL,EUR,,Health Care,,Pictet Asset Management,DUS,XDUS,,False
 PBF1.DU,PICTET-DIGITAL PDL,EUR,,Information Technology,,Pictet Asset Management,DUS,XDUS,,False
@@ -3251,9 +3251,9 @@ ROY4.DU,R-CO CONV.CR.EO DEO,EUR,,Fixed Income,,,DUS,XDUS,,False
 RPFD.DU,IAMF-CHECKPOINT LEBEN FDS,EUR,IAMF-CHECKPOINT LEBEN FDS is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,,DUS,XDUS,,False
 RPFE.DU,IAMF - PROVITA WORLD FUND,EUR,IAMF - PROVITA WORLD FUND is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,,DUS,XDUS,,False
 RQFI.DU,XTR.HARVEST CSI300 1D,EUR,XTR.HARVEST CSI300 1D is an exchange-traded fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Equities,,,DUS,XDUS,,False
-RR8A.DU,UBS (D) 3 SEC.REAL EST.E.,EUR,UBS (D) 3 SEC.REAL EST.E. is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Commercial Real Estate,UBS Asset Management,DUS,XDUS,,False
+RR8A.DU,UBS (D) 3 SEC.REAL EST.E.,EUR,UBS (D) 3 SEC.REAL EST.E. is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Commercial Real Estate,UBS Asset Management,DUS,XDUS,,False
 RR8B.DU,SIEMENS EUROCASH,EUR,SIEMENS EUROCASH is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Cash,,DUS,XDUS,,False
-RR8C.DU,UBS(D)EUROINV.IMMO.I-DIST,EUR,UBS(D)EUROINV.IMMO.I-DIST is an investment fund focused on European real estate investments and distributing income. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Commercial Real Estate,UBS Asset Management,DUS,XDUS,,False
+RR8C.DU,UBS(D)EUROINV.IMMO.I-DIST,EUR,UBS(D)EUROINV.IMMO.I-DIST is an investment fund focused on European real estate investments and distributing income. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Commercial Real Estate,UBS Asset Management,DUS,XDUS,,False
 RS2K.DU,AIS-AM.RUS.2000 EOC,EUR,AIS-AM.RUS.2000 EOC is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,Amundi Asset Management,DUS,XDUS,,False
 RT8A.DU,ROB.QI GBL DYN.DUR. DHEO,EUR,ROB.QI GBL DYN.DUR. DHEO is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,Robeco Institutional Asset Mgmt BV,DUS,XDUS,,False
 RUSL.DU,MUL-LYX.MSCI RUSSI.DIS.LS,EUR,MUL-LYX.MSCI RUSSI.DIS.LS is an exchange-traded fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Equities,,Lyxor International Asset Management,DUS,XDUS,,False
@@ -3273,7 +3273,7 @@ S5SD.DU,UBS(I.)ETF-S+P500 ESG ADL,EUR,"This is an exchange-traded fund (ETF) tha
 S5SG.DU,UBS(I.)ETF-SP500 ESGAAEOH,EUR,,,,UBS Asset Management,DUS,XDUS,,False
 S6DW.DU,ISHSIV-MSCI WLD ESG S.DLD,EUR,"This is an iShares ETF providing exposure to global equities, while incorporating environmental, social, and governance (ESG) considerations based on MSCI World ESG Screened index. The fund aims to offer investors a broad, diversified portfolio of global stocks while excluding companies with specific ESG concerns. The ETF follows a developed world ESG screening.",Equities,,BlackRock Asset Management,DUS,XDUS,,False
 S6TB.DU,FLOSSB.V.STORCH-MUL.OPP.R,EUR,,,,,DUS,XDUS,,False
-S6TC.DU,FLOSSB.V.ST.-MU.AS.DEF.R,EUR,,,,,DUS,XDUS,,False
+S6TC.DU,FLOSSB.V.ST.-MU.AS.DEF.R,EUR,,Fixed Income,,,DUS,XDUS,,False
 S6TD.DU,FLOSSB.V.ST.-MU.AS.BAL.R,EUR,,,,,DUS,XDUS,,False
 S6TF.DU,STUTTGARTER DIVIDENDENFDS,EUR,,Equities,,,DUS,XDUS,,False
 S6TJ.DU,FLOSS.V ST.-BD OPPOR.R,EUR,,Fixed Income,,,DUS,XDUS,,False
@@ -4474,8 +4474,8 @@ XR5P.DU,SISF BRIC A DIS. EUR AV,EUR,,,Emerging Markets,Schroder International Se
 XR5Q.DU,SISF EUROP.LAR.CAP A1 ACC,EUR,,,Large Cap,Schroder International Selection Fund,DUS,XDUS,,False
 XR5S.DU,SCHR.ISF-EUR.OPPOR.ADEOSV,EUR,,,Developed Markets,,DUS,XDUS,,False
 XR5V.DU,SISF-GL.CL.CH.EQ.B ACC EO,EUR,,,Developed Markets,Schroder International Selection Fund,DUS,XDUS,,False
-XR5W.DU,SISF LAT.AMER. A ACC. EUR,EUR,,,Emerging Markets,Schroder International Selection Fund,DUS,XDUS,,False
-XR5X.DU,SISF LAT.AMER. A1 ACC.EUR,EUR,,,Emerging Markets,Schroder International Selection Fund,DUS,XDUS,,False
+XR5W.DU,SISF LAT.AMER. A ACC. EUR,EUR,,Equities,Emerging Markets,Schroder International Selection Fund,DUS,XDUS,,False
+XR5X.DU,SISF LAT.AMER. A1 ACC.EUR,EUR,,Equities,Emerging Markets,Schroder International Selection Fund,DUS,XDUS,,False
 XR5Y.DU,SISF GL SMALL.CO.A ACC.DL,EUR,,Equities,Small Cap,Schroder International Selection Fund,DUS,XDUS,,False
 XR5Z.DU,SCHRODER ISF-GCRE.AACCEH,EUR,,,Developed Markets,Schroder International Selection Fund,DUS,XDUS,,False
 XREA.DU,X(IE)-FTSE D.E.XUK R.E.1C,EUR,,Equities,,,DUS,XDUS,,False
@@ -4488,7 +4488,7 @@ XRQC.DU,ROBECO BP GL PREM.EQ.B EO,EUR,,,,Robeco Institutional Asset Mgmt BV,DUS,
 XRS2.DU,X(IE)-RUSSELL 2000 1CDL,EUR,,Equities,Small Cap,,DUS,XDUS,,False
 XRSM.DU,X(IE)-RUSSELL MIDCAP 1CDL,EUR,,Equities,Mid Cap,,DUS,XDUS,,False
 XRU0.DU,AXAIMFIIS-US C.I.B. FCEOH,EUR,,,,,DUS,XDUS,,False
-XRU1.DU,AXA WF II-NTH AMER.EQUS A,EUR,,,,AXA World Funds,DUS,XDUS,,False
+XRU1.DU,AXA WF II-NTH AMER.EQUS A,EUR,,Equities,,AXA World Funds,DUS,XDUS,,False
 XRU2.DU,AXA WFII-EVOLV.TR.EQ.ADDL,EUR,,,,,DUS,XDUS,,False
 XRU5.DU,AXA WF-FRA.SUS.EUROZ.ACEO,EUR,,,,AXA World Funds,DUS,XDUS,,False
 XRU6.DU,AXA WLD-FR.EU.SM.C.F A,EUR,,,,AXA World Funds,DUS,XDUS,,False
@@ -4502,9 +4502,9 @@ XRUE.DU,AXA WLD-FR.EU.MICR.ATEOPF,EUR,,,,AXA World Funds,DUS,XDUS,,False
 XRUF.DU,AX.W.F.E.M.SH.D.B.ACAPEOH,EUR,,,Micro Cap,,DUS,XDUS,,False
 XRUG.DU,AXA WLD-GBL INFL.A T. EO,EUR,,,,AXA World Funds,DUS,XDUS,,False
 XRZ0.DU,Threadneedle (Lux) - Global Smaller Companies,EUR,"Threadneedle (Lux) - Global Smaller Companies invests in smaller companies across the globe, aiming to achieve capital growth by identifying promising businesses with growth potential. Threadneedle Asset Management, now part of Columbia Threadneedle Investments, manages this fund, with headquarters in London. The fund focuses on companies outside of major indices, thus offering diversification.",Industrials,Small Cap,Columbia Threadneedle,DUS,XDUS,,False
-XRZ3.DU,THREAD.L-AMER. EPIC AEH,EUR,,,,,DUS,XDUS,,False
+XRZ3.DU,THREAD.L-AMER. EPIC AEH,EUR,,Equities,,,DUS,XDUS,,False
 XRZ5.DU,THR.L.-GL FOCUS EPIC AU,EUR,,,,,DUS,XDUS,,False
-XRZ8.DU,THREAD.L-AMER. EP.AU,EUR,,,,,DUS,XDUS,,False
+XRZ8.DU,THREAD.L-AMER. EP.AU,EUR,,Equities,,,DUS,XDUS,,False
 XRZ9.DU,THR.L-PAN E.S.CAP O.EP.AE,EUR,,Equities,Small Cap,,DUS,XDUS,,False
 XS7W.DU,X(IE)-PORTFOLIO INC. 1DEO,EUR,,,,,DUS,XDUS,,False
 XSVT.DU,XTR.BBG COMM.X-AGR+LST.2C,EUR,,,,,DUS,XDUS,,False

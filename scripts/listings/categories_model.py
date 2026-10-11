@@ -148,8 +148,11 @@ def fill_etf_categories(frames: list[pd.DataFrame]) -> int:
                 if category and not group:
                     group = sibling.get("category_group") or groups[category]
             if not group:
-                group = sibling.get("category_group") or predict_value(
-                    name, group_rules
+                # A known category gives its group; else the fund's other listings or name.
+                group = (
+                    groups.get(category, "")
+                    or sibling.get("category_group")
+                    or predict_value(name, group_rules)
                 )
             changes = {
                 column: value
