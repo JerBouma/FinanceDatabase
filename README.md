@@ -4,12 +4,12 @@
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor_this_Project-grey?logo=github)](https://github.com/sponsors/JerBouma)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-grey?logo=buymeacoffee)](https://www.buymeacoffee.com/jerbouma)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-grey?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/boumajeroen/)
+[![MCP Server](https://img.shields.io/badge/MCP_Server-grey?logo=modelcontextprotocol)](https://www.jeroenbouma.com/projects/financedatabase/mcp)
+[![Download MCP Bundle](https://img.shields.io/badge/Download_MCP_Bundle-grey?logo=anthropic)](https://github.com/JerBouma/FinanceDatabase/releases/latest/download/financedatabase.mcpb)
 [![Documentation](https://img.shields.io/badge/Documentation-grey?logo=readme)](https://www.jeroenbouma.com/projects/financedatabase)
 [![Supported Python Versions](https://img.shields.io/pypi/pyversions/financedatabase)](https://pypi.org/project/financedatabase/)
 [![PYPI Version](https://img.shields.io/pypi/v/financedatabase)](https://pypi.org/project/financedatabase/)
 [![PYPI Downloads](https://static.pepy.tech/badge/financedatabase/month)](https://pepy.tech/project/financedatabase)
-[![MCP Server](https://img.shields.io/badge/MCP_Server-grey?logo=modelcontextprotocol)](#mcp-server)
-[![Download MCP Bundle](https://img.shields.io/badge/Download_MCP_Bundle-grey?logo=anthropic)](https://github.com/JerBouma/FinanceDatabase/releases/latest/download/financedatabase.mcpb)
 
 As a private investor, the sheer amount of information that can be found on the internet is rather daunting. Trying to understand what types of companies or ETFs are available is incredibly challenging, with millions of companies and derivatives available on the market. Sure, the most traded companies and ETFs can quickly be found simply because they are known to the public (for example, Microsoft, Tesla, S&P 500 ETF, or an All-World ETF). However, what else is out there is often unknown.
 
@@ -35,12 +35,12 @@ Some key statistics of the database:
 <!-- STATISTICS:END -->
 
 ___
-**🔌 The Finance Database is also available as an [MCP Server](#mcp-server)**
+**🔌 The Finance Database is also available as an [MCP Server](https://www.jeroenbouma.com/projects/financedatabase/mcp)**
 
 Explore all 300,000+ symbols from Claude, Copilot, Cursor, Windsurf or any MCP-compatible client without writing code. No API key needed.
 
 - **Hosted:** connect to `https://financedatabase.jeroenbouma.com/mcp` — nothing to install and no API key.
-- **Local:** `uvx --from "financedatabase[mcp]" financedatabase-mcp-setup` — sets up your client config automatically. See [MCP Server](#mcp-server) for manual setup.
+- **Local:** `uvx --from "financedatabase[mcp]" financedatabase-mcp-setup` — sets up your client config automatically. See [MCP Server Documentation](https://www.jeroenbouma.com/projects/financedatabase/mcp#local-clients) for manual setup.
 ___
 
 # Table of Contents
