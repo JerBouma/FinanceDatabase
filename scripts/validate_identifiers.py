@@ -1,11 +1,4 @@
-"""Report and optionally repair or clear invalid security identifiers in database/.
-
-Run locally (and by the CI identifier gate through its test):
-
-    python scripts/validate_identifiers.py [paths ...] [--apply] [--report-file report.csv]
-
-Without --apply nothing is changed.
-"""
+"""Report and optionally repair invalid identifiers (see scripts/README.md)."""
 
 __docformat__ = "google"
 

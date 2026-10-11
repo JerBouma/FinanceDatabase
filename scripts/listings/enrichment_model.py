@@ -51,9 +51,7 @@ def learn_categories(
 ) -> dict[str, dict[str, str]]:
     """
     Exchange sector label -> database categories, learned from existing rows.
-
-    For each label, the deepest of sector / industry_group / industry is used on which
-    >= MIN_AGREEMENT of >= MIN_ROWS existing rows with that label agree.
+    Uses the deepest category level on which enough rows with that label agree.
     """
     levels = ["sector", "industry_group", "industry"]
     known = frame[(frame["sector"] != "") & frame.index.isin(list(labels))]
@@ -89,7 +87,7 @@ def create_figi_job(listing: Listing) -> tuple[dict, str] | None:
         if base.endswith("-UN"):
             base = base[:-3] + "-U"  # trust units
         elif "-" in base:
-            return None  # preferreds, warrants and other classes are not resolvable by ticker
+            return None  # other share classes are not resolvable by ticker
     if listing.isin and exchange in ("HK", "IS"):
         return {
             "idType": "ID_ISIN",
@@ -146,7 +144,7 @@ def enrich_with_openfigi(
     listings: list[Listing], api_key: str | None
 ) -> tuple[list[Listing], list[str]]:
     """
-    Fill FIGIs (and full HKEX names); re-file rows whose security type contradicts the asset class.
+    Fill FIGIs and HKEX names; re-file rows whose security type contradicts the class.
     """
     jobs = [(listing, create_figi_job(listing)) for listing in listings]
     jobs = [(listing, job) for listing, job in jobs if job]
@@ -164,8 +162,7 @@ def enrich_with_openfigi(
         if not record:
             continue
         kind = record.get("securityType", "")
-        # The exchange lists some funds without "ETF" in the name (and the reverse): file the
-        # row under the asset class its security type says, not the one the name suggested.
+        # File the row under the asset class its security type says, not its name.
         if listing.kind == "equities" and kind == "ETP":
             listing.kind, listing.country, listing.sector = "etfs", "", ""
             listing.industry_group = listing.industry = ""
@@ -184,8 +181,7 @@ def enrich_with_openfigi(
 
 def lookup_full_name(isin: str, mic: str = "") -> str:
     """
-    The full name of an exchange-traded product from Börse Frankfurt or Euronext, which
-    publish it per ISIN; empty when neither page has it.
+    The full name of an exchange-traded product from Börse Frankfurt or Euronext, or ''.
     """
     for kind in ("etf", "etc"):
         try:
@@ -244,8 +240,7 @@ def create_factual_summary(symbol: str, row: dict[str, str], kind: str) -> str:
     return text
 
 
-# The section ends at the next heading. Case-sensitive on purpose: the objective itself often
-# says "(before fees and expenses)", which must not end it.
+# Case-sensitive, so "(before fees and expenses)" in the objective does not end it.
 SEC_END = (
     r"(?<!before )(?<!of )(?<!\()\b(?:Fees and Expenses|Fees & Expenses|Annual Fund Operating"
     r"|Shareholder Fees|Principal Investment Strateg\w*|FEES AND EXPENSES)\b"
@@ -298,10 +293,7 @@ OBJECTIVE_TERMS = (
 def clean_objective(text: str) -> str:
     """
     Tidy an extracted objective; '' when it does not read as an investment objective.
-
-    Ends it at its last full sentence (dropping a stray heading word such as "FUND") and drops
-    dated outcome-period details (e.g. a buffer ETF's cap "over the period April 1, 2026 through
-    March 31, 2027"), which go stale; a target-maturity year is kept.
+    Ends it at its last full sentence and drops dated outcome-period details.
     """
     text = re.sub(r"“\s*Fund\s*”", "“Fund”", text)
     text = re.sub(r"\s+([,.;:)])", r"\1", text).strip()
@@ -327,10 +319,8 @@ def clean_objective(text: str) -> str:
 
 class SecFunds:
     """
-    US fund data from SEC EDGAR: investment objectives and registrant (trust) per ticker.
-
-    Disabled (every lookup returns '') without SEC_USER_AGENT_EMAIL or when EDGAR is
-    unreachable, so it can never stop a run.
+    US fund objectives and registrants from SEC EDGAR.
+    Every lookup returns '' without SEC_USER_AGENT_EMAIL or when EDGAR is unreachable.
     """
 
     def __init__(self, contact: str | None) -> None:
@@ -372,10 +362,7 @@ class SecFunds:
 
     def get_objective(self, symbol: str) -> str:
         """
-        Investment objective from one of the series' latest 497K filings, or ''.
-
-        Some recent 497K filings are supplements (e.g. a portfolio-manager change) rather
-        than a summary prospectus, so up to three are tried.
+        Investment objective from one of the series' latest three 497K filings, or ''.
         """
         if not self.headers or symbol not in self.funds:
             return ""

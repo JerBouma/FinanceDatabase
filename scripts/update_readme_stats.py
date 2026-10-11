@@ -1,18 +1,4 @@
-"""Regenerate the statistics section of README.md from database/.
-
-Run by the Update-README-Statistics job of `.github/workflows/database_update.yml` and locally:
-
-    python scripts/update_readme_stats.py [--readme README.md] [--database database]
-
-Everything between the two marker comments in README.md is replaced:
-
-    <!-- STATISTICS:START ... -->
-    ...generated...
-    <!-- STATISTICS:END -->
-
-Without the markers nothing is changed and the script exits cleanly, so a README edit can never
-fail the weekly pipeline. The section is a plain Markdown table that GitHub renders in a README.
-"""
+"""Regenerate the statistics section of README.md (see scripts/README.md)."""
 
 __docformat__ = "google"
 

@@ -182,7 +182,7 @@ def test_equities_hold_only_company_shares() -> None:
     a strike, or a coupon without share wording, and international (XS) ISINs. The
     weekly update removes such rows too; this catches them in pull requests.
     """
-    from scripts.listings.listings_controller import remove_non_shares
+    from scripts.equities.equities_controller import remove_non_shares
 
     database = Path(__file__).resolve().parents[1] / "database"
     found = remove_non_shares(str(database), dry_run=True)

@@ -19,8 +19,7 @@ from scripts.compression.compression_model import (
 
 def update_datasets(database: str, compression: str) -> None:
     """
-    Write the compressed dataset of every asset class: a bz2 CSV for every version of the
-    package and a typed Parquet file for the versions that read it.
+    Write every asset class as a bz2 CSV and, for newer versions, a typed Parquet file.
 
     Args:
         database (str): The database directory.
@@ -37,8 +36,7 @@ def update_datasets(database: str, compression: str) -> None:
 
 def update_categories(database: str, compression: str) -> None:
     """
-    Write the category options of every asset class: a gzip CSV for every version of the
-    package and a Parquet file with one list of values per category.
+    Write the category options of every asset class as a gzip CSV and a Parquet file.
 
     Args:
         database (str): The database directory.

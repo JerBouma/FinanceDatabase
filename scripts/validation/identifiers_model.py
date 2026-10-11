@@ -134,11 +134,7 @@ def get_cusip_from_authoritative_isin(isin_value: str) -> str | None:
 
 def check_isin_precludes_cusip(isin_value: str) -> bool:
     """
-    Return True when a valid ISIN's country cannot carry a real CUSIP.
-
-    A CUSIP only exists for US and Canadian securities, so any populated CUSIP
-    cell next to a valid non-US/Canadian ISIN is definitely wrong data, not an
-    ambiguous one requiring manual review.
+    Return True when a valid ISIN's country cannot carry a real CUSIP (only US/Canada).
     """
     return validate_isin(isin_value) is None and isin_value[:2] not in {"US", "CA"}
 

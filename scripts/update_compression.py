@@ -1,14 +1,4 @@
-"""Regenerate compression/ from database/ with Polars.
-
-Run by the Update-Compression-Files and Update-Categorization-Files jobs of
-`.github/workflows/database_update.yml`:
-
-    python scripts/update_compression.py [--only datasets|categories]
-
-Each asset class gets a bz2 CSV and a gzip categories CSV in the layout every earlier
-version of the package reads, and a Parquet file of each with the final types for the
-versions that read Parquet.
-"""
+"""Regenerate compression/ from database/ (see scripts/README.md)."""
 
 __docformat__ = "google"
 

@@ -4,11 +4,15 @@ __docformat__ = "google"
 
 import argparse
 import csv
+import json
 import os
 import tempfile
 from collections.abc import Iterable, Sequence
 from pathlib import Path
 
+import pandas as pd
+
+from scripts.validation import gics_model
 from scripts.validation.identifiers_model import (
     FIELD_VALIDATORS,
     AuditResult,
@@ -399,3 +403,45 @@ def main(argv: Sequence[str] | None = None) -> int:
             "damage and clear other identifiers that fail validation."
         )
     return 0
+
+
+def check_gics(database: str = "database") -> dict[str, str]:
+    """
+    Check every equity's sector, industry group and industry against the GICS tree.
+
+    Args:
+        database (str): The database folder.
+
+    Returns:
+        dict[str, str]: Symbol -> the level that is not found, empty when all are valid.
+    """
+    gics = json.loads(
+        Path("compression/categories/categories.json").read_text(encoding="utf-8")
+    )
+    columns = ["symbol", "sector", "industry_group", "industry"]
+    equities = pd.concat(
+        [
+            pd.read_csv(path, usecols=columns, dtype=str, keep_default_na=False)
+            for path in sorted(Path(database, "equities").glob("*.csv"))
+        ]
+    ).set_index("symbol")
+    return gics_model.find_invalid_gics(equities, gics)
+
+
+def run_gics_check() -> None:
+    """
+    Command line entry of the GICS check; fails when an equity is not valid GICS.
+
+    Raises:
+        ValueError: When invalid combinations are found.
+    """
+    invalid = check_gics()
+    if invalid:
+        print("Invalid Rows for:")
+        for symbol, error in invalid.items():
+            print(f"{symbol}: {error}")
+        raise ValueError(
+            "There are invalid sector, industry groups and/or industries found. "
+            "Please check if it adheres to compression/categories/categories.json"
+        )
+    print("All sectors, industry groups and industries follow GICS.")

@@ -95,15 +95,16 @@ def fetch_coin_website(coin_id: str) -> str:
 
 def fetch_iso_currencies() -> tuple[dict[str, str], set[str], dict[str, set[str]]]:
     """
-    The active ISO 4217 currencies with their names, the withdrawn codes, and the
-    currencies countries actually use (with their countries).
+    The active and withdrawn ISO 4217 currencies and the ones countries actually use.
 
     Returns:
         tuple: code -> name, withdrawn codes, code -> country names of usable currencies.
     """
     active: dict[str, str] = {}
     countries: dict[str, set[str]] = {}
-    for entry in ET.fromstring(fetch(ISO_LISTS.format("list-one"))).iter("CcyNtry"):
+    # The ISO lists come from SIX, the ISO 4217 maintenance agency.
+    current = ET.fromstring(fetch(ISO_LISTS.format("list-one")))  # noqa: S314
+    for entry in current.iter("CcyNtry"):
         code, name = entry.findtext("Ccy"), entry.findtext("CcyNm")
         is_fund = (entry.find("CcyNm").get("IsFund") or "").lower() == "true"
         if code and name and not is_fund:
@@ -111,12 +112,10 @@ def fetch_iso_currencies() -> tuple[dict[str, str], set[str], dict[str, set[str]
             countries.setdefault(code, set()).add(
                 (entry.findtext("CtryNm") or "").strip()
             )
-    history = list(
-        ET.fromstring(fetch(ISO_LISTS.format("list-three"))).iter("HstrcCcyNtry")
-    )
+    historic = ET.fromstring(fetch(ISO_LISTS.format("list-three")))  # noqa: S314
+    history = list(historic.iter("HstrcCcyNtry"))
     withdrawn = {e.findtext("Ccy") for e in history if e.findtext("Ccy")} - set(active)
-    # An X code (supranational, units of account) only counts for a country that had a
-    # currency of its own before, like the Caribbean guilder (XCG) for Curaçao.
+    # An X code only counts for a country that had its own currency before (XCG, Curaçao).
     had_currency = {
         (e.findtext("CtryNm") or "").strip()
         for e in history
