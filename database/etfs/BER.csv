@@ -168,7 +168,7 @@ symbol,name,currency,summary,category_group,category,family,exchange,mic,isin,de
 0V1X.BE,VANGUARD COMMUN.SERV.ETF,EUR,"The VANGUARD COMMUN.SERV.ETF is an exchange-traded fund that invests in stocks of companies in the communication services sector. This sector includes companies providing telecommunication services, media, and entertainment. The fund is managed by Vanguard and aims to track the performance of a benchmark index of communication services stocks.",Communication Services,,Vanguard Asset Management,BER,XBER,,False
 10A3.BE,AIS-AM.MSCI IND.DLC,EUR,AIS-AM.MSCI IND.DLC is an exchange-traded fund (ETF) that tracks the MSCI India Daily Leverage Capped Index. It aims to provide leveraged exposure to the Indian stock market. The fund is domiciled in Belgium.,Equities,,Amundi Asset Management,BER,XBER,,False
 10A4.BE,AIS-AM.MSCI NDQ100 DLC,EUR,AIS-AM.MSCI NDQ100 DLC is an exchange-traded fund (ETF) that tracks the MSCI Nasdaq 100 Daily Leverage Capped Index. It aims to provide leveraged exposure to the Nasdaq 100 index. The fund is domiciled in Belgium.,Equities,,Amundi Asset Management,BER,XBER,,False
-10A6.BE,AMF-EM.E.M.EQ. A UNH.EOA,EUR,AMF-EM.E.M.EQ. A UNH.EOA is a sub-fund of Amundi Funds focusing on emerging market equities. It aims to achieve long-term capital appreciation by investing in companies located in or doing business in emerging markets. The fund is managed by Amundi Asset Management and is domiciled in Luxembourg.,,Emerging Markets,Amundi Asset Management,BER,XBER,,False
+10A6.BE,AMF-EM.E.M.EQ. A UNH.EOA,EUR,AMF-EM.E.M.EQ. A UNH.EOA is a sub-fund of Amundi Funds focusing on emerging market equities. It aims to achieve long-term capital appreciation by investing in companies located in or doing business in emerging markets. The fund is managed by Amundi Asset Management and is domiciled in Luxembourg.,Equities,Emerging Markets,Amundi Asset Management,BER,XBER,,False
 10A9.BE,AM.MSCI EMU ESG L.S.ETFEO,EUR,"AM.MSCI EMU ESG L.S.ETFEO is an exchange-traded fund (ETF) that tracks the MSCI EMU ESG Leaders Select Index. It focuses on companies in the Eurozone with high environmental, social, and governance (ESG) ratings while employing a low carbon strategy. The fund is domiciled in Belgium.",Equities,,Amundi Asset Management,BER,XBER,,False
 10AD.BE,F.EAGLE AMUNDI INTER.AHEO,EUR,"F.EAGLE AMUNDI INTER.AHEO is a fund managed by Amundi Asset Management, investing in international markets. It aims to achieve long-term capital appreciation by investing in a diversified portfolio of global equities. The fund is domiciled in Luxembourg.",,,Amundi Asset Management,BER,XBER,,False
 10AF.BE,AIS-A.IN.MSCI E.M.UCETFDR,EUR,AIS-A.IN.MSCI E.M.UCETFDR is an exchange-traded fund (ETF) tracking the MSCI Emerging Markets Index. It provides investors with exposure to a broad range of companies in emerging market countries. The fund is domiciled in Belgium.,Equities,,Amundi Asset Management,BER,XBER,,False
@@ -280,7 +280,7 @@ symbol,name,currency,summary,category_group,category,family,exchange,mic,isin,de
 2FSE.BE,FLEXSHS-M.D.M.E.US F.T.I.,EUR,,,,Flexshares Trust,BER,XBER,,False
 2FSF.BE,FLEXSHS T.-INTL QU.DIV.I.,EUR,,,,Flexshares Trust,BER,XBER,,False
 2FSH.BE,FLEXSHS T.-QUAL.DIVI.IDX.,EUR,,,,Flexshares Trust,BER,XBER,,False
-2FSJ.BE,FLEXSHS T.-Q.DV.DEF.IX F.,EUR,,,,Flexshares Trust,BER,XBER,,False
+2FSJ.BE,FLEXSHS T.-Q.DV.DEF.IX F.,EUR,,Fixed Income,,Flexshares Trust,BER,XBER,,False
 2FSK.BE,FLEXSHS-IB.5Y.TA.DUR.TIPS,EUR,,Fixed Income,Inflation-Protected Securities,Flexshares Trust,BER,XBER,,False
 2FSL.BE,FLEXSHS T.-QUA.DIV.DY.I.F,EUR,,,,Flexshares Trust,BER,XBER,,False
 2FSM.BE,FLEXSHS T.-READ.AC.V.INC.,EUR,,,,Flexshares Trust,BER,XBER,,False
@@ -1612,7 +1612,7 @@ FGUM.BE,LA FR.SYST.ETF DACHFDS W,EUR,,,,,BER,XBER,,False
 FGUN.BE,RWS-DYNAMIK ANT.RWS-DYN.A,EUR,,,,,BER,XBER,,False
 FGUP.BE,LA FR.SYST.M.A.ALLOC. R,EUR,,,,,BER,XBER,,False
 FGUQ.BE,LA FR.SYST.ETF DACHFDS P,EUR,,,,,BER,XBER,,False
-FGUR.BE,LA FR.SYST.DEF.ALLOC. R,EUR,,,,,BER,XBER,,False
+FGUR.BE,LA FR.SYST.DEF.ALLOC. R,EUR,,Fixed Income,,,BER,XBER,,False
 FGUS.BE,VERI ETF-ALL.DEFENSIVE W,EUR,,,,,BER,XBER,,False
 FGUU.BE,LA FRAN.SYS.DYN.ALL.W,EUR,,,,,BER,XBER,,False
 FGUV.BE,LA FRANC.SYS.ETF PORT.GL.,EUR,,,,,BER,XBER,,False
@@ -1979,7 +1979,7 @@ FPG1.BE,FID.FDS-NORDIC FD A GL.,EUR,"FID.FDS-NORDIC FD A GL. is a fund managed b
 FPG2.BE,FID.FDS-GL HTH C.E GL.,EUR,,,,Fidelity Investments,BER,XBER,,False
 FPG5.BE,FID.FDS-LATIN AMER.AACCDL,EUR,,Equities,,Fidelity Investments,BER,XBER,,False
 FPG6.BE,FID.FDS-NORDIC A ACC. EUR,EUR,,Equities,,Fidelity Investments,BER,XBER,,False
-FPG7.BE,FID.FDS-AMER.A ACC.EO HGD,EUR,,,,Fidelity Investments,BER,XBER,,False
+FPG7.BE,FID.FDS-AMER.A ACC.EO HGD,EUR,,Equities,,Fidelity Investments,BER,XBER,,False
 FPGA.BE,FID.FDS-SU.JP EQ.A-EUR,EUR,,,,Fidelity Investments,BER,XBER,,False
 FPGB.BE,FID.FDS-TAIWAN FD A GL.,EUR,,,,Fidelity Investments,BER,XBER,,False
 FPGC.BE,FID.FDS-F.SEL.INT. A GL.,EUR,,,,Fidelity Investments,BER,XBER,,False
@@ -2128,7 +2128,7 @@ GAN3.BE,AF-AMUN.F.VOL.WO.ADLC,EUR,"AF-AMUN.F.VOL.WO.ADLC is a sub-fund of Amundi
 GAN8.BE,AF-AM.F.GBL BD ADLC,EUR,"AF-AM.F.GBL BD ADLC is a sub-fund of Amundi Funds, focusing on global bonds. The fund seeks to generate income and capital appreciation by investing in a diversified portfolio of fixed income securities worldwide. ""ADLC"" designates a specific share class with particular characteristics.",Fixed Income,Corporate Bonds,Amundi Asset Management,BER,XBER,,False
 GAN9.BE,AF-AMUN.F.VOL.WO.ADLADD,EUR,"AF-AMUN.F.VOL.WO.ADLADD is a sub-fund of Amundi Funds, focusing on volatility in world markets. The fund seeks to manage risk by focusing on volatility-related strategies, through derivatives or other instruments. ""ADLADD"" designates a specific share class with particular characteristics.",Derivatives,,Amundi Asset Management,BER,XBER,,False
 GANB.BE,AF-AM.F.AS.EQ.CO. ADLC,EUR,"AF-AM.F.AS.EQ.CO. ADLC is a sub-fund of Amundi Funds focusing on Asian equities in a concentrated manner. The fund aims to achieve capital growth by investing primarily in a concentrated portfolio of companies based in Asia. ""ADLC"" designates a specific share class.",Equities,Emerging Markets,Amundi Asset Management,BER,XBER,,False
-GANK.BE,AF-AF.LAT.AMER. EQ. ADLC,EUR,"AF-AF.LAT.AMER. EQ. ADLC represents a sub-fund of Amundi Funds focusing on Latin American equities. The fund aims to achieve capital growth by investing primarily in a diversified portfolio of companies based in Latin America. ""ADLC"" designates a specific share class.",,,Amundi Asset Management,BER,XBER,,False
+GANK.BE,AF-AF.LAT.AMER. EQ. ADLC,EUR,"AF-AF.LAT.AMER. EQ. ADLC represents a sub-fund of Amundi Funds focusing on Latin American equities. The fund aims to achieve capital growth by investing primarily in a diversified portfolio of companies based in Latin America. ""ADLC"" designates a specific share class.",Equities,,Amundi Asset Management,BER,XBER,,False
 GANL.BE,AF-AF.JAP.EQUITY VA.A2YNC,EUR,"AF-AF.JAP.EQUITY VA.A2YNC represents a sub-fund of Amundi Funds focusing on Japanese equities with a value-oriented approach. The fund aims to achieve capital growth by investing primarily in companies based in Japan that are undervalued by the market. ""A2YNC"" designates a specific share class.",Equities,,Amundi Asset Management,BER,XBER,,False
 GANN.BE,AF-AM.F.VOL.EURO AEOC,EUR,"AF-AM.F.VOL.EURO AEOC represents a sub-fund of Amundi Funds, focusing on volatility within the Eurozone equity markets. The fund seeks to manage risk and generate returns by focusing on volatility-related strategies, through derivatives or other instruments in the Eurozone. ""AEOC"" designates a specific share class.",Equities,Factors,Amundi Asset Management,BER,XBER,,False
 GASC.BE,G.SACHS F.-US R.E.B.EAEOH,EUR,,,,Goldman Sachs Asset Management,BER,XBER,,False
@@ -2199,7 +2199,7 @@ GLXB.BE,GL ADV.-MAJO.MKTS H.VAL.A,EUR,,,,,BER,XBER,,False
 GLXC.BE,GL.ADV.-EMERG.MKTS HI.V.A,EUR,,,,,BER,XBER,,False
 GMVM.BE,VE VECT.MRN.US WDE MOAT A,EUR,"The VE VECT.MRN.US WDE MOAT A refers to a VanEck Vectors Morningstar US Wide Moat ETF. This ETF aims to replicate the performance of the Morningstar Wide Moat Focus Index, which tracks the performance of attractively priced US companies with sustainable competitive advantages, or ""moats,"" as determined by Morningstar. The ETF provides exposure to a concentrated portfolio of companies believed to possess durable competitive advantages.",Financials,,VanEck Asset Management,BER,XBER,,False
 GN4A.BE,QUINT:ESSENCE STR.DEFEN.B,EUR,,,,Alternative Access Funds,BER,XBER,,False
-GNA0.BE,AF-AF.LAT.AMER. EQ.ADLADD,EUR,,,,Amundi Asset Management,BER,XBER,,False
+GNA0.BE,AF-AF.LAT.AMER. EQ.ADLADD,EUR,,Equities,,Amundi Asset Management,BER,XBER,,False
 GNA2.BE,AF-AM.F.VOL.EURO AEOADD,EUR,,Equities,Factors,Amundi Asset Management,BER,XBER,,False
 GNA6.BE,AF-AF EM.WO.EQ. AEOC,EUR,,,,Amundi Asset Management,BER,XBER,,False
 GNAR.BE,AIS-IX MSCI US SRI AHEOA,EUR,,Equities,,Amundi Asset Management,BER,XBER,,False
@@ -3524,7 +3524,7 @@ OD5H.BE,SEB EUROCOMPANIES,EUR,"SEB EUROCOMPANIES is an equity fund managed by SE
 OD5L.BE,ELITE PLUS UI,EUR,,,,,BER,XBER,,False
 OD5M.BE,QUANTUMX GLOBAL UI,EUR,,,,,BER,XBER,,False
 OD5N.BE,BOERSEBIUS TOPSELECT,EUR,,,,,BER,XBER,,False
-OD5U.BE,LLOYD FDS-ASS.DEF.OPPS A,EUR,,,,,BER,XBER,,False
+OD5U.BE,LLOYD FDS-ASS.DEF.OPPS A,EUR,,Fixed Income,,,BER,XBER,,False
 OD63.BE,OEKOBASIS ONE WORLD PRO.R,EUR,,,,,BER,XBER,,False
 OD6A.BE,G+W - HDAX - TRENDFONDS,EUR,,,,,BER,XBER,,False
 OD6B.BE,RP GLOB.ABSOL.RETURN BOND,EUR,,Fixed Income,,,BER,XBER,,False
@@ -3682,7 +3682,7 @@ P3WM.BE,I.INT.CO.BD,EUR,,Fixed Income,,,BER,XBER,,False
 P3WN.BE,I.DYN.BU.CO.,EUR,,,,,BER,XBER,,False
 P3WP.BE,I.DY.EN.E.P.,EUR,,,,,BER,XBER,,False
 P3WQ.BE,I.DY.O.G.SE.,EUR,,,,,BER,XBER,,False
-P3WR.BE,I.AE.DEF.ETF,EUR,,,,,BER,XBER,,False
+P3WR.BE,I.AE.DEF.ETF,EUR,,Fixed Income,,,BER,XBER,,False
 P3WS.BE,I.INT.D.ACH.,EUR,,,,,BER,XBER,,False
 P3WT.BE,I.DWA UT.MO.,EUR,,,,,BER,XBER,,False
 P3WU.BE,I.DIV.AC.ETF,EUR,,,,,BER,XBER,,False
@@ -3720,7 +3720,7 @@ PACH.BE,BNPP EURO MID CAP DCL,EUR,,Equities,Mid Cap,BNP Paribas Asset Management
 PACI.BE,BNPP EU.SMALL CAP C.CLEO,EUR,,Equities,,BNP Paribas Asset Management,BER,XBER,,False
 PACJ.BE,BNPP EURO CORP BD CDL,EUR,,Fixed Income,Corporate Bonds,BNP Paribas Asset Management,BER,XBER,,False
 PACM.BE,BNPP T.RISK BAL. CL.DIS.,EUR,,,,BNP Paribas Asset Management,BER,XBER,,False
-PACU.BE,BNPP LAT.AMER.EQ. CL.DIS.,EUR,,,,BNP Paribas Asset Management,BER,XBER,,False
+PACU.BE,BNPP LAT.AMER.EQ. CL.DIS.,EUR,,Equities,,BNP Paribas Asset Management,BER,XBER,,False
 PBAE.BE,DWS ESG EUROPEAN EQU. LC,EUR,,,,DWS Investment,BER,XBER,,False
 PBF.BE,PICTET-BIOTECH NAM.PDL,EUR,,Health Care,,Pictet Asset Management,BER,XBER,,False
 PBF1.BE,PICTET-DIGITAL PDL,EUR,,Information Technology,,Pictet Asset Management,BER,XBER,,False
@@ -3994,10 +3994,10 @@ RPFE.BE,IAMF - PROVITA WORLD FUND,EUR,IAMF - PROVITA WORLD FUND is an investment
 RPK1.BE,AGIF-A.ASI.SM.C.EQ.AT15DL,EUR,AGIF-A.ASI.SM.C.EQ.AT15DL is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,Allianz Global Investors Fund,BER,XBER,,False
 RPKZ.BE,AGIF-ALL.B.STY.US EQ.A EO,EUR,AGIF-ALL.B.STY.US EQ.A EO is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,Allianz Global Investors Fund,BER,XBER,,False
 RQFI.BE,XTR.HARVEST CSI300 1D,EUR,XTR.HARVEST CSI300 1D is an exchange-traded fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,,BER,XBER,,False
-RR8A.BE,UBS (D) 3 SEC.REAL EST.E.,EUR,UBS (D) 3 SEC.REAL EST.E. is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Commercial Real Estate,UBS Asset Management,BER,XBER,,False
+RR8A.BE,UBS (D) 3 SEC.REAL EST.E.,EUR,UBS (D) 3 SEC.REAL EST.E. is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Commercial Real Estate,UBS Asset Management,BER,XBER,,False
 RR8B.BE,SIEMENS EUROCASH,EUR,SIEMENS EUROCASH is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Cash,,BER,XBER,,False
-RR8D.BE,UBS(D)EUROINV.IMMO.Q-DIST,EUR,UBS(D)EUROINV.IMMO.Q-DIST is an investment fund focused on European real estate investments and distributing income on a quarterly basis. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Commercial Real Estate,UBS Asset Management,BER,XBER,,False
-RRI.BE,REGAL R.EST.I.TR. UTS,EUR,REGAL R.EST.I.TR. UTS is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Commercial Real Estate,,BER,XBER,,False
+RR8D.BE,UBS(D)EUROINV.IMMO.Q-DIST,EUR,UBS(D)EUROINV.IMMO.Q-DIST is an investment fund focused on European real estate investments and distributing income on a quarterly basis. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Commercial Real Estate,UBS Asset Management,BER,XBER,,False
+RRI.BE,REGAL R.EST.I.TR. UTS,EUR,REGAL R.EST.I.TR. UTS is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Commercial Real Estate,,BER,XBER,,False
 RS4A.BE,RAIFFE.ETF-SOLID GOLD HSF,EUR,RAIFFE.ETF-SOLID GOLD HSF is an exchange-traded fund focused on investments related to gold. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Equities,,,BER,XBER,,False
 RT8A.BE,ROB.QI GBL DYN.DUR. DHEO,EUR,ROB.QI GBL DYN.DUR. DHEO is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,Robeco Institutional Asset Mgmt BV,BER,XBER,,False
 RXEA.BE,LLB SEMPER REAL ESTATE A,EUR,LLB SEMPER REAL ESTATE A is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Real Estate Services,,BER,XBER,,False
@@ -4018,7 +4018,7 @@ S5SG.BE,UBS(I.)ETF-SP500 ESGAAEOH,EUR,,,,UBS Asset Management,BER,XBER,,False
 S6DV.BE,ISHS VI-E.M.W.M.V.U.E.LSH,EUR,,,,BlackRock Asset Management,BER,XBER,,False
 S6DW.BE,ISHSIV-MSCI WLD ESG S.DLD,EUR,"This is an iShares ETF providing exposure to global equities, while incorporating environmental, social, and governance (ESG) considerations based on MSCI World ESG Screened index. The fund aims to offer investors a broad, diversified portfolio of global stocks while excluding companies with specific ESG concerns. The ETF follows a developed world ESG screening.",Equities,,BlackRock Asset Management,BER,XBER,,False
 S6TB.BE,FLOSSB.V.STORCH-MUL.OPP.R,EUR,,,,,BER,XBER,,False
-S6TC.BE,FLOSSB.V.ST.-MU.AS.DEF.R,EUR,,,,,BER,XBER,,False
+S6TC.BE,FLOSSB.V.ST.-MU.AS.DEF.R,EUR,,Fixed Income,,,BER,XBER,,False
 S6TD.BE,FLOSSB.V.ST.-MU.AS.BAL.R,EUR,,,,,BER,XBER,,False
 S6TF.BE,STUTTGARTER DIVIDENDENFDS,EUR,,Equities,,,BER,XBER,,False
 S6TG.BE,FLOSSB.V.STO.-MU.OP.II RT,EUR,,,,,BER,XBER,,False
@@ -5334,7 +5334,7 @@ XRQC.BE,ROBECO BP GL PREM.EQ.B EO,EUR,,,,Robeco Institutional Asset Mgmt BV,BER,
 XRS2.BE,X(IE)-RUSSELL 2000 1CDL,EUR,,Equities,Small Cap,,BER,XBER,,False
 XRSM.BE,X(IE)-RUSSELL MIDCAP 1CDL,EUR,,Equities,Mid Cap,,BER,XBER,,False
 XRU0.BE,AXAIMFIIS-US C.I.B. FCEOH,EUR,,,,,BER,XBER,,False
-XRU1.BE,AXA WF II-NTH AMER.EQUS A,EUR,,,,AXA World Funds,BER,XBER,,False
+XRU1.BE,AXA WF II-NTH AMER.EQUS A,EUR,,Equities,,AXA World Funds,BER,XBER,,False
 XRU2.BE,AXA WFII-EVOLV.TR.EQ.ADDL,EUR,,,,,BER,XBER,,False
 XRU8.BE,AXA WD-EURO C.SH.D.A A.EO,EUR,,,,,BER,XBER,,False
 XRU9.BE,AXA WLD-GBL IN.B.A-C.R.EO,EUR,,,,AXA World Funds,BER,XBER,,False
@@ -5343,9 +5343,9 @@ XRUF.BE,AX.W.F.E.M.SH.D.B.ACAPEOH,EUR,,,Micro Cap,,BER,XBER,,False
 XRUG.BE,AXA WLD-GBL INFL.A T. EO,EUR,,,,AXA World Funds,BER,XBER,,False
 XRUL.BE,AXA WLD-GL.OPT.INC.A D EO,EUR,,Fixed Income,,AXA World Funds,BER,XBER,,False
 XRZ0.BE,THR.L.-GL.SMALL.COMPAN.AE,EUR,,Equities,Small Cap,,BER,XBER,,False
-XRZ3.BE,THREAD.L-AMER. EPIC AEH,EUR,,,,,BER,XBER,,False
+XRZ3.BE,THREAD.L-AMER. EPIC AEH,EUR,,Equities,,,BER,XBER,,False
 XRZ5.BE,THR.L.-GL FOCUS EPIC AU,EUR,,,,,BER,XBER,,False
-XRZ8.BE,THREAD.L-AMER. EP.AU,EUR,,,,,BER,XBER,,False
+XRZ8.BE,THREAD.L-AMER. EP.AU,EUR,,Equities,,,BER,XBER,,False
 XRZ9.BE,THR.L-PAN E.S.CAP O.EP.AE,EUR,,Equities,Small Cap,,BER,XBER,,False
 XRZB.BE,THR.L.-GL. TECH. AU DL,EUR,,,,,BER,XBER,,False
 XRZC.BE,THR.L.-GL MU.AS.IN.AEHEO,EUR,,,,,BER,XBER,,False

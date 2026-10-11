@@ -33,15 +33,17 @@ def test_blank_categories_are_learned_from_name_terms_and_isins() -> None:
         ("NEW2", "Deka Industrie 4.0", "", "Deka", "", ""),
         ("NEW3", "Some fund line", "IE00TEST0001", "", "", ""),
         ("OLD3", "Some fund line other", "IE00TEST0001", "", "Equities", "Small Cap"),
+        ("GRP1", "Plain listed fund", "", "", "", "Treasury Bonds"),
     ]
     frame = _etfs(rows)
     filled = categories_model.fill_etf_categories([frame])
-    assert filled == 4
+    assert filled == 5
     assert tuple(frame.loc["NEW1", ["category_group", "category"]]) == (
         "Fixed Income",
         "Treasury Bonds",
     )
     assert tuple(frame.loc["NEW2", ["category_group", "category"]]) == ("", "")
+    assert frame.loc["GRP1", "category_group"] == "Fixed Income"
     assert tuple(frame.loc["NEW3", ["category_group", "category"]]) == (
         "Equities",
         "Small Cap",

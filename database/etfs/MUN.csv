@@ -26,7 +26,7 @@ symbol,name,currency,summary,category_group,category,family,exchange,mic,isin,de
 0IIB.MU,NOTES 80 SILBER ETC,EUR,NOTES 80 SILBER ETC is an exchange-traded commodity (ETC) that tracks the price of silver. The ETC is structured as a debt instrument (note) and is collateralized with physical silver holdings. Investors use this ETC to gain exposure to silver price movements without directly owning the metal.,Derivatives,Trading,,MUN,XMUN,,False
 0PMB.MU,DPAM INV.B EQ.EUROLAND BC,EUR,"DPAM INV.B EQ.EUROLAND BC is a sub-fund of DPAM INVEST B, focusing on equities in the Eurozone, aiming to provide long-term capital growth by investing in companies located in the Eurozone. The fund is managed by Degroof Petercam Asset Management and seeks to outperform its benchmark. The fund is domiciled in Luxembourg.",,Developed Markets,,MUN,XMUN,,False
 10A5.MU,Amundi Funds - Emerging Europe and Mediterranean Equity,EUR,"Amundi Funds - Emerging Europe and Mediterranean Equity is a sub-fund of Amundi Funds, an investment company based in Luxembourg. It aims to achieve long-term capital appreciation by investing primarily in equities of companies that are located in, or do a substantial portion of their business in, emerging European and Mediterranean countries. The fund is managed by Amundi Asset Management.",Equities,Emerging Markets,Amundi Asset Management,MUN,XMUN,,False
-10A6.MU,AMF-EM.E.M.EQ. A UNH.EOA,EUR,AMF-EM.E.M.EQ. A UNH.EOA is a sub-fund of Amundi Funds focusing on emerging market equities. It aims to achieve long-term capital appreciation by investing in companies located in or doing business in emerging markets. The fund is managed by Amundi Asset Management and is domiciled in Luxembourg.,,Emerging Markets,Amundi Asset Management,MUN,XMUN,,False
+10A6.MU,AMF-EM.E.M.EQ. A UNH.EOA,EUR,AMF-EM.E.M.EQ. A UNH.EOA is a sub-fund of Amundi Funds focusing on emerging market equities. It aims to achieve long-term capital appreciation by investing in companies located in or doing business in emerging markets. The fund is managed by Amundi Asset Management and is domiciled in Luxembourg.,Equities,Emerging Markets,Amundi Asset Management,MUN,XMUN,,False
 10AD.MU,F.EAGLE AMUNDI INTER.AHEO,EUR,"F.EAGLE AMUNDI INTER.AHEO is a fund managed by Amundi Asset Management, investing in international markets. It aims to achieve long-term capital appreciation by investing in a diversified portfolio of global equities. The fund is domiciled in Luxembourg.",,,Amundi Asset Management,MUN,XMUN,,False
 10AH.MU,AIS-A.I.MSCI WRD UC.ETFDD,EUR,AIS-A.I.MSCI WRD UC.ETFDD is an exchange-traded fund (ETF) that tracks the MSCI World Index. It provides investors with exposure to a broad range of companies in developed markets worldwide. The fund is domiciled in Belgium.,Equities,,Amundi Asset Management,MUN,XMUN,,False
 10AS.MU,F.EAG.AMUN.IN.BU.FHEQDDEO,EUR,F.EAG.AMUN.IN.BU.FHEQDDEO is a fund managed by Amundi Asset Management focusing on infrastructure investments. It aims to generate long-term capital appreciation by investing in a diversified portfolio of infrastructure assets. The fund is domiciled in Luxembourg.,Industrials,,Amundi Asset Management,MUN,XMUN,,False
@@ -1331,8 +1331,8 @@ FGUM.MU,Veri ETF-Dachfonds,EUR,Veri ETF-Dachfonds is a fund of ETFs. It allocate
 FGUN.MU,RWS-DYNAMIK ANT.RWS-DYN.A,EUR,,,,,MUN,XMUN,,False
 FGUP.MU,LA FR.SYST.M.A.ALLOC. R,EUR,,,,,MUN,XMUN,,False
 FGUQ.MU,VERI ETF-DACHFONDS P,EUR,,,,,MUN,XMUN,,False
-FGUR.MU,LA FR.SYST.DEF.ALLOC. R,EUR,,,,,MUN,XMUN,,False
-FGUS.MU,LA FR.SYST.DEF.ALLOC. W,EUR,,,,,MUN,XMUN,,False
+FGUR.MU,LA FR.SYST.DEF.ALLOC. R,EUR,,Fixed Income,,,MUN,XMUN,,False
+FGUS.MU,LA FR.SYST.DEF.ALLOC. W,EUR,,Fixed Income,,,MUN,XMUN,,False
 FGUU.MU,LA FRAN.SYS.DYN.ALL.W,EUR,,,,,MUN,XMUN,,False
 FGUV.MU,LA FRANC.SYS.ETF PORT.GL.,EUR,,,,,MUN,XMUN,,False
 FGV1.MU,JH-J.H.LATIN AMER. A2EO,EUR,,Equities,,Janus Henderson,MUN,XMUN,,False
@@ -1710,7 +1710,7 @@ FPG1.MU,Fidelity Funds - Nordic Fund,EUR,"Fidelity Funds - Nordic Fund invests p
 FPG2.MU,FID.FDS-GL HTH C.E GL.,EUR,,,,Fidelity Investments,MUN,XMUN,,False
 FPG5.MU,FID.FDS-LATIN AMER.AACCDL,EUR,,Equities,,Fidelity Investments,MUN,XMUN,,False
 FPG6.MU,FID.FDS-NORDIC A ACC. EUR,EUR,,Equities,,Fidelity Investments,MUN,XMUN,,False
-FPG7.MU,FID.FDS-AMER.A ACC.EO HGD,EUR,,,,Fidelity Investments,MUN,XMUN,,False
+FPG7.MU,FID.FDS-AMER.A ACC.EO HGD,EUR,,Equities,,Fidelity Investments,MUN,XMUN,,False
 FPGA.MU,FID.FDS-SU.JP EQ.A-EUR,EUR,,,,Fidelity Investments,MUN,XMUN,,False
 FPGB.MU,FID.FDS-TAIWAN FD A GL.,EUR,,,,Fidelity Investments,MUN,XMUN,,False
 FPGC.MU,FID.FDS-F.SEL.INT. A GL.,EUR,,,,Fidelity Investments,MUN,XMUN,,False
@@ -1867,7 +1867,7 @@ GAN3.MU,AF-AMUN.F.VOL.WO.ADLC,EUR,"AF-AMUN.F.VOL.WO.ADLC is a sub-fund of Amundi
 GAN8.MU,AF-AM.F.GBL BD ADLC,EUR,"AF-AM.F.GBL BD ADLC is a sub-fund of Amundi Funds, focusing on global bonds. The fund seeks to generate income and capital appreciation by investing in a diversified portfolio of fixed income securities worldwide. ""ADLC"" designates a specific share class with particular characteristics.",Fixed Income,Corporate Bonds,Amundi Asset Management,MUN,XMUN,,False
 GAN9.MU,AF-AMUN.F.VOL.WO.ADLADD,EUR,"AF-AMUN.F.VOL.WO.ADLADD is a sub-fund of Amundi Funds, focusing on volatility in world markets. The fund seeks to manage risk by focusing on volatility-related strategies, through derivatives or other instruments. ""ADLADD"" designates a specific share class with particular characteristics.",Derivatives,,Amundi Asset Management,MUN,XMUN,,False
 GANB.MU,AF-AM.F.AS.EQ.CO. ADLC,EUR,"AF-AM.F.AS.EQ.CO. ADLC is a sub-fund of Amundi Funds focusing on Asian equities in a concentrated manner. The fund aims to achieve capital growth by investing primarily in a concentrated portfolio of companies based in Asia. ""ADLC"" designates a specific share class.",,,Amundi Asset Management,MUN,XMUN,,False
-GANK.MU,AF-AF.LAT.AMER. EQ. ADLC,EUR,"AF-AF.LAT.AMER. EQ. ADLC represents a sub-fund of Amundi Funds focusing on Latin American equities. The fund aims to achieve capital growth by investing primarily in a diversified portfolio of companies based in Latin America. ""ADLC"" designates a specific share class.",,,Amundi Asset Management,MUN,XMUN,,False
+GANK.MU,AF-AF.LAT.AMER. EQ. ADLC,EUR,"AF-AF.LAT.AMER. EQ. ADLC represents a sub-fund of Amundi Funds focusing on Latin American equities. The fund aims to achieve capital growth by investing primarily in a diversified portfolio of companies based in Latin America. ""ADLC"" designates a specific share class.",Equities,,Amundi Asset Management,MUN,XMUN,,False
 GANL.MU,AF-AF.JAP.EQUITY VA.A2YNC,EUR,"AF-AF.JAP.EQUITY VA.A2YNC represents a sub-fund of Amundi Funds focusing on Japanese equities with a value-oriented approach. The fund aims to achieve capital growth by investing primarily in companies based in Japan that are undervalued by the market. ""A2YNC"" designates a specific share class.",Equities,,Amundi Asset Management,MUN,XMUN,,False
 GANN.MU,AF-AM.F.VOL.EURO AEOC,EUR,"AF-AM.F.VOL.EURO AEOC represents a sub-fund of Amundi Funds, focusing on volatility within the Eurozone equity markets. The fund seeks to manage risk and generate returns by focusing on volatility-related strategies, through derivatives or other instruments in the Eurozone. ""AEOC"" designates a specific share class.",Equities,Factors,Amundi Asset Management,MUN,XMUN,,False
 GASC.MU,G.SACHS F.-US R.E.B.EAEOH,EUR,,,,Goldman Sachs Asset Management,MUN,XMUN,,False
@@ -1931,7 +1931,7 @@ GMVM.MU,VE VECT.MRN.US WDE MOAT A,EUR,"The VE VECT.MRN.US WDE MOAT A refers to a
 GMXE.MU,Falcon Swiss Equity Fund,EUR,,Equities,,Falcom Financial Services,MUN,XMUN,,False
 GN4A.MU,QUINT:ESSENCE STR.DEFEN.B,EUR,,,,Alternative Access Funds,MUN,XMUN,,False
 GN4C.MU,Quint:Essence Strategy Social Media & Technology,EUR,Quint:Essence Strategy Social Media & Technology is a fund focused on investing in companies within the social media and technology sectors. The fund aims to capitalize on the growth and innovation within these industries. More detailed information would be needed to provide a comprehensive description.,Information Technology,Developed Markets,Alternative Access Funds,MUN,XMUN,,False
-GNA0.MU,AF-AF.LAT.AMER. EQ.ADLADD,EUR,,,,Amundi Asset Management,MUN,XMUN,,False
+GNA0.MU,AF-AF.LAT.AMER. EQ.ADLADD,EUR,,Equities,,Amundi Asset Management,MUN,XMUN,,False
 GNA2.MU,AF-AM.F.VOL.EURO AEOADD,EUR,,Equities,Factors,Amundi Asset Management,MUN,XMUN,,False
 GNA6.MU,Amundi Funds - Emerging World Equity,EUR,"Amundi Funds - Emerging World Equity is a sub-fund of Amundi Funds investing in equities of companies located in emerging markets worldwide. The fund aims to achieve long-term capital appreciation by providing exposure to a diversified portfolio of emerging market stocks. The fund is managed by Amundi, a large European asset manager.",Equities,Emerging Markets,Amundi Asset Management,MUN,XMUN,,False
 GNAW.MU,AF-AM.F.GL.AG.BD ADLC,EUR,,Fixed Income,,Amundi Asset Management,MUN,XMUN,,False
@@ -3169,7 +3169,7 @@ OD5K.MU,FVM CLASSIC,EUR,,,,,MUN,XMUN,,False
 OD5L.MU,ELITE PLUS UI,EUR,,,,,MUN,XMUN,,False
 OD5M.MU,QUANTUMX GLOBAL UI,EUR,,,,,MUN,XMUN,,False
 OD5N.MU,BOERSEBIUS TOPSELECT,EUR,,,,,MUN,XMUN,,False
-OD5U.MU,LLOYD FDS-ASS.DEF.OPPS A,EUR,,,,,MUN,XMUN,,False
+OD5U.MU,LLOYD FDS-ASS.DEF.OPPS A,EUR,,Fixed Income,,,MUN,XMUN,,False
 OD63.MU,OEKOBASIS ONE WORLD PRO.R,EUR,,,,,MUN,XMUN,,False
 OD6A.MU,G+W - HDAX - TRENDFONDS,EUR,,,,,MUN,XMUN,,False
 OD6B.MU,RP GLOB.ABSOL.RETURN BOND,EUR,,Fixed Income,,,MUN,XMUN,,False
@@ -3320,7 +3320,7 @@ PACH.MU,BNPP EURO MID CAP DCL,EUR,,Equities,Mid Cap,BNP Paribas Asset Management
 PACI.MU,BNPP EU.SMALL CAP C.CLEO,EUR,,Equities,,BNP Paribas Asset Management,MUN,XMUN,,False
 PACJ.MU,Parvest SICAV - Parvest Euro Corporate Bond,EUR,Parvest SICAV - Parvest Euro Corporate Bond is a fund that invests in Euro-denominated corporate bonds. The objective is to provide income and capital appreciation through investments in a diversified portfolio of investment-grade and high-yield corporate bonds issued by companies located in Europe. The fund is managed by BNP Paribas Asset Management and domiciled in Luxembourg.,Fixed Income,Corporate Bonds,BNP Paribas Asset Management,MUN,XMUN,,False
 PACM.MU,BNPP T.RISK BAL. CL.DIS.,EUR,,,,BNP Paribas Asset Management,MUN,XMUN,,False
-PACU.MU,BNPP LAT.AMER.EQ. CL.DIS.,EUR,,,,BNP Paribas Asset Management,MUN,XMUN,,False
+PACU.MU,BNPP LAT.AMER.EQ. CL.DIS.,EUR,,Equities,,BNP Paribas Asset Management,MUN,XMUN,,False
 PBAE.MU,DWS ESG EUROPEAN EQU. LC,EUR,,,,DWS Investment,MUN,XMUN,,False
 PBF.MU,PICTET-BIOTECH NAM.PDL,EUR,,Health Care,,Pictet Asset Management,MUN,XMUN,,False
 PBF0.MU,Pictet - Global Environmental Opportunities,EUR,"Pictet - Global Environmental Opportunities is a thematic fund that invests in companies providing solutions to environmental challenges. The fund focuses on areas such as clean energy, water management, waste management, and sustainable agriculture. Pictet Asset Management is headquartered in Geneva, Switzerland.",,,Pictet Asset Management,MUN,XMUN,,False
@@ -3558,9 +3558,9 @@ RPK1.MU,AGIF-A.ASI.SM.C.EQ.AT15DL,EUR,AGIF-A.ASI.SM.C.EQ.AT15DL is an investment
 RPKZ.MU,AGIF-ALL.B.STY.US EQ.A EO,EUR,AGIF-ALL.B.STY.US EQ.A EO is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,Allianz Global Investors Fund,MUN,XMUN,,False
 RQFI.MU,XTR.HARVEST CSI300 1D,EUR,XTR.HARVEST CSI300 1D is an exchange-traded fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Equities,,,MUN,XMUN,,False
 RR80.MU,Siemens Global Equities,EUR,Siemens Global Equities is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Equities,,,MUN,XMUN,,False
-RR8A.MU,UBS (D) 3 SEC.REAL EST.E.,EUR,UBS (D) 3 SEC.REAL EST.E. is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Commercial Real Estate,UBS Asset Management,MUN,XMUN,,False
+RR8A.MU,UBS (D) 3 SEC.REAL EST.E.,EUR,UBS (D) 3 SEC.REAL EST.E. is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Commercial Real Estate,UBS Asset Management,MUN,XMUN,,False
 RR8B.MU,SIEMENS EUROCASH,EUR,SIEMENS EUROCASH is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Cash,,MUN,XMUN,,False
-RR8D.MU,UBS(D)EUROINV.IMMO.Q-DIST,EUR,UBS(D)EUROINV.IMMO.Q-DIST is an investment fund focused on European real estate investments and distributing income on a quarterly basis. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Commercial Real Estate,UBS Asset Management,MUN,XMUN,,False
+RR8D.MU,UBS(D)EUROINV.IMMO.Q-DIST,EUR,UBS(D)EUROINV.IMMO.Q-DIST is an investment fund focused on European real estate investments and distributing income on a quarterly basis. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Commercial Real Estate,UBS Asset Management,MUN,XMUN,,False
 RS2K.MU,AIS-AM.RUS.2000 EOC,EUR,AIS-AM.RUS.2000 EOC is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,Amundi Asset Management,MUN,XMUN,,False
 RT8A.MU,ROB.QI GBL DYN.DUR. DHEO,EUR,ROB.QI GBL DYN.DUR. DHEO is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,Robeco Institutional Asset Mgmt BV,MUN,XMUN,,False
 RUSL.MU,MUL-LYX.MSCI RUSSI.DIS.LS,EUR,MUL-LYX.MSCI RUSSI.DIS.LS is an exchange-traded fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Equities,,Lyxor International Asset Management,MUN,XMUN,,False
@@ -3577,7 +3577,7 @@ S4WG.MU,SIEM.QUAL.+ DIVID. EUROPA,EUR,,,,,MUN,XMUN,,False
 S5SD.MU,UBS(I.)ETF-S+P500 ESG ADL,EUR,"This is an exchange-traded fund (ETF) that tracks the performance of the S&P 500 ESG index, adjusted for dividends. The fund aims to provide investors with exposure to companies within the S&P 500 that meet certain environmental, social, and governance (ESG) criteria. It is domiciled in Ireland.",,,UBS Asset Management,MUN,XMUN,,False
 S5SG.MU,UBS(I.)ETF-SP500 ESGAAEOH,EUR,,,,UBS Asset Management,MUN,XMUN,,False
 S6TB.MU,FLOSSB.V.STORCH-MUL.OPP.R,EUR,,,,,MUN,XMUN,,False
-S6TC.MU,FLOSSB.V.ST.-MU.AS.DEF.R,EUR,,,,,MUN,XMUN,,False
+S6TC.MU,FLOSSB.V.ST.-MU.AS.DEF.R,EUR,,Fixed Income,,,MUN,XMUN,,False
 S6TD.MU,FLOSSB.V.ST.-MU.AS.BAL.R,EUR,,,,,MUN,XMUN,,False
 S6TE.MU,FLOSSB.V.ST.-MU.AS.GR.R,EUR,,,,,MUN,XMUN,,False
 S6TF.MU,STUTTGARTER DIVIDENDENFDS,EUR,,Equities,,,MUN,XMUN,,False
@@ -4790,7 +4790,7 @@ XRQC.MU,ROBECO BP GL PREM.EQ.B EO,EUR,,,,Robeco Institutional Asset Mgmt BV,MUN,
 XRS2.MU,X(IE)-RUSSELL 2000 1CDL,EUR,,Equities,Small Cap,,MUN,XMUN,,False
 XRSM.MU,X(IE)-RUSSELL MIDCAP 1CDL,EUR,,Equities,Mid Cap,,MUN,XMUN,,False
 XRU0.MU,AXAIMFIIS-US C.I.B. FCEOH,EUR,,,,,MUN,XMUN,,False
-XRU1.MU,AXA WF II-NTH AMER.EQUS A,EUR,,,,AXA World Funds,MUN,XMUN,,False
+XRU1.MU,AXA WF II-NTH AMER.EQUS A,EUR,,Equities,,AXA World Funds,MUN,XMUN,,False
 XRU2.MU,AXA WFII-EVOLV.TR.EQ.ADDL,EUR,,,,,MUN,XMUN,,False
 XRU8.MU,AXA WD-EURO C.SH.D.A A.EO,EUR,,,,,MUN,XMUN,,False
 XRU9.MU,AXA WLD-GBL IN.B.A-C.R.EO,EUR,,,,AXA World Funds,MUN,XMUN,,False
@@ -4799,9 +4799,9 @@ XRUF.MU,AX.W.F.E.M.SH.D.B.ACAPEOH,EUR,,,Micro Cap,,MUN,XMUN,,False
 XRUG.MU,AXA WLD-GBL INFL.A T. EO,EUR,,,,AXA World Funds,MUN,XMUN,,False
 XRUL.MU,AXA WLD-GL.OPT.INC.A D EO,EUR,,Fixed Income,,AXA World Funds,MUN,XMUN,,False
 XRZ0.MU,THR.L.-GL.SMALL.COMPAN.AE,EUR,,Equities,Small Cap,,MUN,XMUN,,False
-XRZ3.MU,THREAD.L-AMER. EPIC AEH,EUR,,,,,MUN,XMUN,,False
+XRZ3.MU,THREAD.L-AMER. EPIC AEH,EUR,,Equities,,,MUN,XMUN,,False
 XRZ5.MU,THR.L.-GL FOCUS EPIC AU,EUR,,,,,MUN,XMUN,,False
-XRZ8.MU,THREAD.L-AMER. EP.AU,EUR,,,,,MUN,XMUN,,False
+XRZ8.MU,THREAD.L-AMER. EP.AU,EUR,,Equities,,,MUN,XMUN,,False
 XRZ9.MU,THR.L-PAN E.S.CAP O.EP.AE,EUR,,Equities,Small Cap,,MUN,XMUN,,False
 XRZB.MU,THR.L.-GL. TECH. AU DL,EUR,,,,,MUN,XMUN,,False
 XRZC.MU,THR.L.-GL MU.AS.IN.AEHEO,EUR,,,,,MUN,XMUN,,False

@@ -789,7 +789,7 @@ FGUM.HM,LA FR.SYST.ETF DACHFDS W,EUR,,,,,HAM,XHAM,,False
 FGUN.HM,RWS-DYNAMIK ANT.RWS-DYN.A,EUR,,,,,HAM,XHAM,,False
 FGUP.HM,VERI MULTI ASSET ALLOC.R,EUR,"VERI MULTI ASSET ALLOC.R is a fund that invests in a variety of asset classes, such as stocks, bonds, and alternative investments. The fund aims to provide a diversified portfolio with a specific risk and return profile. Further information about the fund's asset allocation strategy can be found in its documentation.",Equities,,,HAM,XHAM,,False
 FGUQ.HM,VERI ETF-DACHFONDS P,EUR,VERI ETF-DACHFONDS P is a fund that invests in other Exchange Traded Funds (ETFs). It allocates its assets across different ETFs to achieve diversification. More information regarding its specific investment strategy and asset allocation can be found in the fund's documentation.,,,,HAM,XHAM,,False
-FGUR.HM,LA FR.SYST.DEF.ALLOC. R,EUR,,,,,HAM,XHAM,,False
+FGUR.HM,LA FR.SYST.DEF.ALLOC. R,EUR,,Fixed Income,,,HAM,XHAM,,False
 FGUU.HM,LA FRAN.SYS.DYN.ALL.W,EUR,,,,,HAM,XHAM,,False
 FGUV.HM,LA FRANC.SYS.ETF PORT.GL.,EUR,,,,,HAM,XHAM,,False
 FGV1.HM,JH-J.H.LATIN AMER. A2EO,EUR,,Equities,,Janus Henderson,HAM,XHAM,,False
@@ -1184,7 +1184,7 @@ GAFD.HM,GAM Star Fund p.l.c. - GAM Star US All Cap Equity,EUR,"GAM Star Fund p.l
 GAN6.HM,Amundi Funds - Euro Inflation Bond,EUR,"Amundi Funds - Euro Inflation Bond is a sub-fund of Amundi Funds that invests primarily in Euro-denominated inflation-linked bonds. The fund's objective is to provide investors with protection against inflation while generating income. Amundi is a large European asset manager headquartered in Paris, France.",Fixed Income,Inflation-Protected Securities,Amundi Asset Management,HAM,XHAM,,False
 GAN8.HM,AF-AM.F.GBL BD ADLC,EUR,"AF-AM.F.GBL BD ADLC is a sub-fund of Amundi Funds, focusing on global bonds. The fund seeks to generate income and capital appreciation by investing in a diversified portfolio of fixed income securities worldwide. ""ADLC"" designates a specific share class with particular characteristics.",Fixed Income,Corporate Bonds,Amundi Asset Management,HAM,XHAM,,False
 GANB.HM,AF-AM.F.AS.EQ.CO. ADLC,EUR,"AF-AM.F.AS.EQ.CO. ADLC is a sub-fund of Amundi Funds focusing on Asian equities in a concentrated manner. The fund aims to achieve capital growth by investing primarily in a concentrated portfolio of companies based in Asia. ""ADLC"" designates a specific share class.",,,Amundi Asset Management,HAM,XHAM,,False
-GANK.HM,AF-AF.LAT.AMER. EQ. ADLC,EUR,"AF-AF.LAT.AMER. EQ. ADLC represents a sub-fund of Amundi Funds focusing on Latin American equities. The fund aims to achieve capital growth by investing primarily in a diversified portfolio of companies based in Latin America. ""ADLC"" designates a specific share class.",,,Amundi Asset Management,HAM,XHAM,,False
+GANK.HM,AF-AF.LAT.AMER. EQ. ADLC,EUR,"AF-AF.LAT.AMER. EQ. ADLC represents a sub-fund of Amundi Funds focusing on Latin American equities. The fund aims to achieve capital growth by investing primarily in a diversified portfolio of companies based in Latin America. ""ADLC"" designates a specific share class.",Equities,,Amundi Asset Management,HAM,XHAM,,False
 GANL.HM,AF-AF.JAP.EQUITY VA.A2YNC,EUR,"AF-AF.JAP.EQUITY VA.A2YNC represents a sub-fund of Amundi Funds focusing on Japanese equities with a value-oriented approach. The fund aims to achieve capital growth by investing primarily in companies based in Japan that are undervalued by the market. ""A2YNC"" designates a specific share class.",Equities,,Amundi Asset Management,HAM,XHAM,,False
 GANQ.HM,AF-AF.SBI.FM.IND.EQ. ADLC,EUR,"AF-AF.SBI.FM.IND.EQ. ADLC represents a sub-fund of Amundi Funds, focusing on Indian equities through a specific fund management company, SBI Funds Management. The fund aims to achieve capital growth by investing primarily in Indian equities, using a specific investment style or mandate from SBI. ""ADLC"" designates a specific share class.",,,Amundi Asset Management,HAM,XHAM,,False
 GANT.HM,Amundi Funds - Global Inflation Bond,EUR,"Amundi Funds - Global Inflation Bond seeks to provide exposure to inflation-linked bonds from around the world. The fund invests primarily in government and corporate inflation-linked debt securities. It aims to track the performance of a global inflation-linked bond index, while employing socially responsible investing (SRI) criteria.",Fixed Income,Inflation-Protected Securities,Amundi Asset Management,HAM,XHAM,,False
@@ -2061,7 +2061,7 @@ OD5K.HM,FVM CLASSIC,EUR,,,,,HAM,XHAM,,False
 OD5N.HM,BOERSEBIUS TOPSELECT,EUR,,,,,HAM,XHAM,,False
 OD5Q.HM,RR Analysis BÖRSEBIUS MX Universal Fund,EUR,,,,,HAM,XHAM,,False
 OD5T.HM,Oberbanscheidt Global Flexibel UI,EUR,,,,,HAM,XHAM,,False
-OD5U.HM,LLOYD FDS-ASS.DEF.OPPS A,EUR,,,,,HAM,XHAM,,False
+OD5U.HM,LLOYD FDS-ASS.DEF.OPPS A,EUR,,Fixed Income,,,HAM,XHAM,,False
 OD61.HM,G+W - ZINSTREND - FONDS,EUR,,,,,HAM,XHAM,,False
 OD64.HM,STRATEGIEFDS SACHW.GL.D.T,EUR,,,,,HAM,XHAM,,False
 OD65.HM,STRATEGIEFON.SACHWERT.GL.,EUR,,,,,HAM,XHAM,,False
@@ -2304,9 +2304,9 @@ ROC.HM,ROLINCO N.V. EO 1,EUR,ROLINCO N.V. is an investment fund company that inv
 RPFC.HM,DR Strategie - Select Fund,EUR,DR Strategie - Select Fund is a fund investing in a selection of different assets. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,,HAM,XHAM,,False
 RPFD.HM,IAMF-CHECKPOINT LEBEN FDS,EUR,IAMF-CHECKPOINT LEBEN FDS is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,,HAM,XHAM,,False
 RPFE.HM,IAMF - PROVITA WORLD FUND,EUR,IAMF - PROVITA WORLD FUND is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,,HAM,XHAM,,False
-RR8A.HM,UBS (D) 3 SEC.REAL EST.E.,EUR,UBS (D) 3 SEC.REAL EST.E. is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Commercial Real Estate,UBS Asset Management,HAM,XHAM,,False
+RR8A.HM,UBS (D) 3 SEC.REAL EST.E.,EUR,UBS (D) 3 SEC.REAL EST.E. is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Commercial Real Estate,UBS Asset Management,HAM,XHAM,,False
 RR8B.HM,SIEMENS EUROCASH,EUR,SIEMENS EUROCASH is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Cash,,HAM,XHAM,,False
-RR8C.HM,UBS(D)EUROINV.IMMO.I-DIST,EUR,UBS(D)EUROINV.IMMO.I-DIST is an investment fund focused on European real estate investments and distributing income. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,Commercial Real Estate,UBS Asset Management,HAM,XHAM,,False
+RR8C.HM,UBS(D)EUROINV.IMMO.I-DIST,EUR,UBS(D)EUROINV.IMMO.I-DIST is an investment fund focused on European real estate investments and distributing income. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Commercial Real Estate,UBS Asset Management,HAM,XHAM,,False
 RT8A.HM,ROB.QI GBL DYN.DUR. DHEO,EUR,ROB.QI GBL DYN.DUR. DHEO is an investment fund. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,,,Robeco Institutional Asset Mgmt BV,HAM,XHAM,,False
 RXEA.HM,LLB SEMPER REAL ESTATE A,EUR,LLB SEMPER REAL ESTATE A is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Real Estate Services,,HAM,XHAM,,False
 RXEB.HM,SemperReal Estate,EUR,SemperReal Estate is an investment fund focused on real estate investments. More specific information regarding the fund's investment strategy and holdings would be required to provide a more detailed description.,Real Estate,Real Estate Services,,HAM,XHAM,,False
@@ -3116,7 +3116,7 @@ XRQ1.HM,ROBECO CHINESE EQU.D EO,EUR,,,,Robeco Institutional Asset Mgmt BV,HAM,XH
 XRQ2.HM,ROBECO NEW WLD FIN.E.D EO,EUR,,,,Robeco Institutional Asset Mgmt BV,HAM,XHAM,,False
 XRQ3.HM,ROBECO GL CON.TRDS.D EO,EUR,,,,Robeco Institutional Asset Mgmt BV,HAM,XHAM,,False
 XRQ4.HM,ROBECO EMERG.STA.EQ. D EO,EUR,,,,Robeco Institutional Asset Mgmt BV,HAM,XHAM,,False
-XRU1.HM,AXA WF II-NTH AMER.EQUS A,EUR,,,,AXA World Funds,HAM,XHAM,,False
+XRU1.HM,AXA WF II-NTH AMER.EQUS A,EUR,,Equities,,AXA World Funds,HAM,XHAM,,False
 XRU2.HM,AXA WFII-EVOLV.TR.EQ.ADDL,EUR,,,,,HAM,XHAM,,False
 XRUF.HM,AX.W.F.E.M.SH.D.B.ACAPEOH,EUR,,,Micro Cap,,HAM,XHAM,,False
 XRUH.HM,AXA WLD F.-GL.INFL.B.ADEO,EUR,,,,AXA World Funds,HAM,XHAM,,False
