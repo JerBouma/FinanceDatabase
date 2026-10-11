@@ -13,7 +13,7 @@
 
 As a private investor, the sheer amount of information that can be found on the internet is rather daunting. Trying to understand what types of companies or ETFs are available is incredibly challenging, with millions of companies and derivatives available on the market. Sure, the most traded companies and ETFs can quickly be found simply because they are known to the public (for example, Microsoft, Tesla, S&P 500 ETF, or an All-World ETF). However, what else is out there is often unknown.
 
-**This is why I created the FinanceDatabase**, a database featuring 300,000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets. It allows you to obtain a broad overview of sectors, industries, types of investments and much more, entirely for free. Everything is stored in CSV files that anyone can read and edit, so the database grows and improves through the community.
+**This is why I created the FinanceDatabase**, a database featuring 300,000+ symbols containing Equities, ETFs, Indices, Currencies and Cryptocurrencies, plus the Funds and Money Markets it held until October 2026. It allows you to obtain a broad overview of sectors, industries, types of investments and much more, entirely for free. Everything is stored in CSV files that anyone can read and edit, so the database grows and improves through the community.
 
 The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data, as those can be obtained with ease (with the help of this database) by using the [Finance Toolkit 🛠️](https://github.com/JerBouma/FinanceToolkit). Instead, it gives insights into the products that exist in each country, industry and sector and provides the most essential information about each product. With this information, you can analyze specific areas of the financial world and/or find a product that is hard to find. By utilising both, it is possible to do a fully-fledged competitive analysis with the tickers found from the FinanceDatabase inputted into the FinanceToolkit.
 
@@ -112,7 +112,9 @@ And below the actively listed equities are counted per sector.
   <img alt="Sectors" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/sectors-light.png">
 </picture>
 
-Each asset class has the same three functions: `select` to filter on the database's categories, `search` to look for any text in any column and `show_options` to see which values a category can take. The asset classes are `fd.Equities()`, `fd.ETFs()`, `fd.Funds()`, `fd.Indices()`, `fd.Currencies()`, `fd.Cryptos()` and `fd.MoneyMarkets()`.
+Each asset class has the same three functions: `select` to filter on the database's categories, `search` to look for any text in any column and `show_options` to see which values a category can take. The asset classes are `fd.Equities()`, `fd.ETFs()`, `fd.Indices()`, `fd.Currencies()` and `fd.Cryptos()`, which are updated weekly from official exchange and market sources.
+
+> **Funds and money markets are no longer maintained.** Since October 2026, `fd.Funds()` and `fd.MoneyMarkets()` are not updated anymore: no public source keeps mutual and money market funds across the world current, and the data had become outdated (many funds closed or merged, many new ones missing). Both stay available in the Python package as they are, with a warning when loaded, but are no longer part of the MCP server.
 
 Three capabilities cut across all of them:
 
@@ -272,7 +274,7 @@ For example, see some of the Vanguard bond ETFs listed in Berlin below:
 | 025L.BE  | Vanguard Total International Bond Index Fund ETF Shares         | EUR        | Fixed Income     | Investment Grade Bonds | Vanguard Asset Management | BER        |
 | 025N.BE  | Vanguard Long-Term Corporate Bond Index Fund ETF Shares         | EUR        | Fixed Income     | Corporate Bonds        | Vanguard Asset Management | BER        |
 
-The same applies to `search`, for example to find the funds that focus on pension plans:
+The same applies to `search`, for example to find the funds (no longer maintained, see above) that focus on pension plans:
 
 ```python
 # Initialize the Funds database
@@ -299,7 +301,7 @@ And below all actively listed ETFs are divided over their category groups.
   <img alt="ETFs" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/etfs-light.png">
 </picture>
 
-The categories of each asset class can again be found with `show_options`, e.g. `fd.Indices().show_options(selection="category")` returns the 42 index categories, from 'Corporate Bonds' and 'Emerging Markets' to 'Small Cap' and 'Value'. Cryptocurrencies are selected on `cryptocurrency` and `currency`, currencies on `base_currency` and `quote_currency` and money markets on `currency` and `family`. **Find the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started) and the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+The categories of each asset class can again be found with `show_options`, e.g. `fd.Indices().show_options(selection="category")` returns the 42 index categories, from 'Corporate Bonds' and 'Emerging Markets' to 'Small Cap' and 'Value'. Cryptocurrencies are selected on `cryptocurrency` and `currency`, currencies on `base_currency` and `quote_currency` and the retired money markets on `currency` and `family`. **Find the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started) and the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
 
 ### Combining with the Finance Toolkit
 
@@ -425,7 +427,7 @@ To host the server yourself, run `financedatabase-mcp --transport streamable-htt
 
 | Tool | What it does |
 |:-----|:-------------|
-| `equities`, `etfs`, `funds`, `indices`, `currencies`, `cryptos`, `moneymarkets` | List the instruments of an asset class matching its `select()` filters (e.g. `country`, `sector`, `industry`, `market_cap` for equities; `category_group`, `category`, `family` for ETFs) and/or a free-text `query` on symbol and name. Filters accept several comma-separated values. Supports `include_delisted`, `only_primary_listing`, `show_columns`, `include_summary`, `limit` and `offset`. |
+| `equities`, `etfs`, `indices`, `currencies`, `cryptos` | List the instruments of an asset class matching its `select()` filters (e.g. `country`, `sector`, `industry`, `market_cap` for equities; `category_group`, `category`, `family` for ETFs) and/or a free-text `query` on symbol and name. Filters accept several comma-separated values. Supports `include_delisted`, `only_primary_listing`, `show_columns`, `include_summary`, `limit` and `offset`. |
 | `search_instruments` | Find a symbol by ticker, name or ISIN across all asset classes at once. |
 | `show_options` | Show the valid values of a filter (e.g. every sector or country), optionally narrowed by other filters. |
 | `search_categories` | List the asset classes with their size, filters and description. |

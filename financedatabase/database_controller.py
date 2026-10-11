@@ -2,6 +2,7 @@
 
 __docformat__ = "google"
 
+import warnings
 from pathlib import Path
 from typing import Any
 
@@ -56,6 +57,8 @@ class FinanceDatabase:
     # Selectable columns in select() order: column -> (label, plural) for errors.
     FIELDS: dict[str, tuple[str, str]] = {}
     PLURAL_NAME = ""
+    # A retired asset class is no longer updated; loading it warns.
+    RETIRED = False
 
     def __init__(
         self,
@@ -73,6 +76,13 @@ class FinanceDatabase:
         Raises:
             ValueError: If the data can't be loaded from the specified location.
         """
+        if self.RETIRED:
+            warnings.warn(
+                f"The {self.PLURAL_NAME or type(self).__name__.lower()} database is no longer maintained (since October "
+                "2026) and may be outdated; it stays available as it is.",
+                FutureWarning,
+                stacklevel=2,
+            )
         location = str(COMPRESSION_PATH) + "/" if use_local_location else base_url
         self._source = (base_url, COMPRESSION_PATH if use_local_location else None)
         try:

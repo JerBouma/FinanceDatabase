@@ -12,10 +12,12 @@ from financedatabase.frame_model import FinanceFrame
 class Funds(FinanceDatabase):
     """
     Mutual funds, selectable by category group, category, family and more.
+    No longer maintained since October 2026: the data stays available as it is.
     """
 
     FILE_NAME = "funds.bz2"
     HAS_LISTINGS = True
+    RETIRED = True
     PLURAL_NAME = "funds"
     FIELDS = {
         "category_group": ("category group", "category groups"),
