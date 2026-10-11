@@ -272,25 +272,25 @@ For example, see some of the Vanguard bond ETFs listed in Berlin below:
 | 025L.BE  | Vanguard Total International Bond Index Fund ETF Shares         | EUR        | Fixed Income     | Investment Grade Bonds | Vanguard Asset Management | BER        |
 | 025N.BE  | Vanguard Long-Term Corporate Bond Index Fund ETF Shares         | EUR        | Fixed Income     | Corporate Bonds        | Vanguard Asset Management | BER        |
 
-The same applies to `search`, for example to find the funds (no longer maintained, see [Questions & Answers](#questions--answers)) that focus on pension plans:
+The same applies to `search`, for example to find semiconductor indices across providers and countries:
 
 ```python
-# Initialize the Funds database
-funds = fd.Funds()
+# Initialize the Indices database
+indices = fd.Indices()
 
-# Search for funds with "Pension" in their summary
-funds.search(summary="Pension")
+# Search for indices with "Semiconductor" in their name
+indices.search(name="Semiconductor")
 ```
 
-Which returns the funds with "Pension" in their summary, of which a few are shown below:
+Which returns semiconductor indices from the US, South Korea and Taiwan, including their price, net and total return variants, of which a few are shown below:
 
-| symbol       | name                                | currency | category_group | category                 | family                           | exchange |
-|:-------------|:------------------------------------|:---------|:---------------|:-------------------------|:---------------------------------|:---------|
-| 0P000015HA.F | Casermed Protección 6 PP            | EUR      | Equities       | Allocation               | Sa Nostra Seguros de Vida SA     | FRA      |
-| 0P000015V5.F | BK Revalorización Europa 2022 PP    | EUR      | Fixed Income   | Bonds                    | Bankinter                        | FRA      |
-| 0P000015VC.F | Bankia Protegido Renta 2023 PP      | EUR      | Fixed Income   | Bonds                    | Bankia Fondos                    | FRA      |
-| 0P000017AE.F | Santander Universidades RF Mixta PP | EUR      | Fixed Income   | Bonds                    | Santander Asset Management SGIIC | FRA      |
-| 0P000017AF.F | OpenBank Monetario PP               | EUR      | Cash           | Money Market Instruments | Santander Asset Management SGIIC | FRA      |
+| symbol   | name                                | currency | category_group         | category   | exchange |
+|:---------|:------------------------------------|:---------|:-----------------------|:-----------|:---------|
+| ^SOX     | PHLX Semiconductor                  | USD      | Information Technology | Technology | NIM      |
+| ^ICESEMI | ICE Semiconductor Index             | USD      | Information Technology | Technology | NYS      |
+| ^NQSSSE  | Nasdaq US Smart Semiconductor Index | USD      | Information Technology | Technology | NIM      |
+| ^KQ47    | Kosdaq Semiconductors Index         | KRW      | Information Technology | Technology | KOE      |
+| SEC.TW   | TSEC semiconductor subindex         | TWD      | Information Technology | Technology | TAI      |
 
 And below all actively listed ETFs are divided over their category groups.
 
