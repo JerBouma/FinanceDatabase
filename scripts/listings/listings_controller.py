@@ -16,6 +16,7 @@ from scripts.listings.enrichment_model import (
     compose_summary,
     enrich_with_openfigi,
     learn_categories,
+    lookup_full_name,
 )
 from scripts.listings.helpers import (
     DATED_NAME,
@@ -28,6 +29,8 @@ from scripts.listings.helpers import (
 from scripts.listings.sources_model import SourceResult, load_sources
 
 MAX_DELISTINGS_PER_SOURCE = 50
+# Full-name lookups per source and run; new funds over the limit are added in a later run.
+MAX_NAME_LOOKUPS = 300
 
 
 def apply_source(
@@ -38,6 +41,7 @@ def apply_source(
     api_key: str | None = None,
     use_openfigi: bool = True,
     sec: SecFunds | None = None,
+    max_name_lookups: int | None = MAX_NAME_LOOKUPS,
 ) -> dict:
     """
     Add a source's new listings and delist superseded tickers. Returns a summary.
@@ -64,6 +68,39 @@ def apply_source(
                 skipped_format.append(f"{listing.symbol} (exists as {existing})")
                 continue
         added.append(listing)
+
+    # An ETF line of a known fund takes the fund's name and categories; a new fund with only
+    # a short exchange name takes its full name from Börse Frankfurt or Euronext.
+    known = db.get_etfs_by_isin() if any(x.kind == "etfs" for x in added) else {}
+    lookups, deferred = 0, set()
+    for listing in added:
+        if listing.kind != "etfs" or not listing.isin:
+            continue
+        fund = known.get(listing.isin)
+        if fund:
+            listing.name = fund["name"] or listing.name
+            listing.category_group = fund["category_group"]
+            listing.category = fund["category"]
+            listing.family = fund["family"]
+        else:
+            if listing.abbreviated:
+                if max_name_lookups is not None and lookups >= max_name_lookups:
+                    deferred.add(listing.symbol)
+                    continue
+                lookups += 1
+                listing.name = (
+                    lookup_full_name(listing.isin, listing.mic) or listing.name
+                )
+            known[listing.isin] = {
+                "name": listing.name,
+                "category_group": "",
+                "category": "",
+                "family": "",
+            }
+
+    if deferred:
+        print(f"  {len(deferred)} new funds left for a later run (name lookup limit)")
+        added = [x for x in added if x.symbol not in deferred]
 
     rejected: list[str] = []
     if use_openfigi and added:
@@ -138,7 +175,12 @@ def apply_source(
                 shareclass_figi=listing.shareclass_figi,
             )
         else:
-            row.update(isin=listing.isin, family=family(listing.name))
+            row.update(
+                isin=listing.isin,
+                family=listing.family or family(listing.name),
+                category_group=listing.category_group,
+                category=listing.category,
+            )
             if sec and listing.file in US_ETF_FILES:
                 if not row["family"]:
                     if "sec_families" not in db.cache:

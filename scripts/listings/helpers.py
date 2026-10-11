@@ -116,6 +116,26 @@ def fetch_nasdaq_trader(name: str) -> bytes:
         return response.read()
 
 
+def fetch_euronext_etfs() -> bytes:
+    """
+    Euronext's ETF list as CSV, the download behind its ETF directory page.
+    """
+    response = requests.post(
+        "https://live.euronext.com/en/pd_es/data/track/download"
+        "?mics=XAMS%2CXPAR%2CXBRU%2CXLIS%2CXOSL",
+        data={
+            "args[fe_type]": "csv",
+            "args[fe_decimal]": ".",
+            "args[fe_date_format]": "d/m/Y",
+            "args[fe_layout]": "ver",
+        },
+        headers=HEADERS,
+        timeout=TIMEOUT,
+    )
+    response.raise_for_status()
+    return response.content
+
+
 def fetch_optional(url: str) -> bytes | None:
     """
     Download an enrichment-only file; a failure just means less enrichment.

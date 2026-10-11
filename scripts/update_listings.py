@@ -13,6 +13,9 @@ Sources (all public, official):
 - JPX list of TSE-listed issues: Japan equities and ETFs.
 - ASX listed companies: Australia equities with their GICS industry group.
 - TSX / TSXV company directory: Canada equities and ETFs.
+- Deutsche Börse Xetra all-tradable-instruments file: ETFs and ETCs on Xetra.
+- Euronext ETF list: ETFs on Euronext Amsterdam, Paris, Brussels, Lisbon and Oslo.
+- SIX Swiss Exchange reference data: ETFs on SIX.
 
 Safety rules, so an automated run never adds junk or duplicates:
 
@@ -49,6 +52,10 @@ Enrichment of new rows (each step is optional: if it fails, rows are still added
   summary is the investment objective quoted from the fund's latest summary prospectus
   (form 497K) on SEC EDGAR, and a missing family is taken from the fund's SEC registrant
   (trust) when >= 90% of >= 5 existing ETFs of that registrant share one family.
+- European ETFs: a line of a fund already in the database takes that fund's name, categories
+  and family (matched by ISIN); a new fund takes its full name from its Börse Frankfurt or
+  Euronext page, since these exchanges only publish short names. At most 300 such lookups
+  run per source and run; further new funds are added in a later run.
 - Every other new row gets a factual summary built only from its known fields (name, exchange,
   ticker, currency, issuer, categories, sector, country), so nothing is invented.
 """

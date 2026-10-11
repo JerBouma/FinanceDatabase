@@ -202,6 +202,49 @@ def test_parse_nasdaq_trader_only_etfs() -> None:
     }
 
 
+def test_parse_european_etf_lists() -> None:
+    """Test the Euronext, Xetra and SIX parsers on their published formats."""
+    euronext = '\ufeffName;ISIN;Symbol;Market;Currency;"Open Price";Volume\n'
+    euronext += '"European ETFS, Funds, ETVs, ETNs. Type : ETFs"\n"11 Oct 2026"\n'
+    euronext += '"VanguardFAWACC";IE00BK5BQT80;VWCE;"Euronext Amsterdam";EUR;1;2\n'
+    euronext += (
+        '"AMUETFMXUSSCXPAR";IE000F60HVH9;USAS;"Euronext Paris, Amsterdam";EUR;1;2\n'
+    )
+    euronext += "".join(
+        f'"Pad";IE{i:010d};P{i};"Euronext Paris";EUR;1;2\n' for i in range(501)
+    )
+    result = sources_model.parse_euronext(euronext.encode("utf-8"))
+    got = {(x.file, x.symbol, x.isin, x.mic) for x in result.listings[:2]}
+    assert got == {
+        ("AMS", "VWCE.AS", "IE00BK5BQT80", "XAMS"),
+        ("PAR", "USAS.PA", "IE000F60HVH9", "XPAR"),
+    }
+    assert all(x.abbreviated and x.kind == "etfs" for x in result.listings)
+
+    xetra = "Market:;XETR\nDate Last Update:;12.10.2026\n"
+    xetra += "Product Status;Instrument Status;Instrument;ISIN;Mnemonic;Instrument Type;Currency\n"
+    xetra += "Active;Active;VANG.FTSE DEV.EU.UETF EOA;IE00BK5BQX27;VWCG;ETF;EUR\n"
+    xetra += "Active;Active;ISHS PHYS.GOLD ETC;IE00B4ND3602;PPFB;ETC;USD\n"
+    xetra += "Active;Active;SOME NOTE;DE000A0;XYZ;ETN;EUR\n"
+    xetra += "".join(
+        f"Active;Active;Share {i};DE{i:010d};S{i};CS;EUR\n" for i in range(3001)
+    )
+    result = sources_model.parse_xetra(xetra.encode())
+    assert [(x.symbol, x.currency) for x in result.listings] == [
+        ("VWCG.DE", "EUR"),
+        ("PPFB.DE", "USD"),
+    ]
+    assert "S1.DE" in result.official["GER"]
+
+    six = "ShortName;ValorSymbol;ISIN;TradingBaseCurrency;ProductLine;PortalSegment\n"
+    six += "iSh Core MSCI Wld;SWDA;IE00B4L5Y983;USD;ET;FU\nSome Fund;SFND;CH0000000001;CHF;PF;FU\n"
+    six += "".join(f"Pad Zürich {i};P{i};CH{i:010d};CHF;PF;FU\n" for i in range(1001))
+    result = sources_model.parse_six(six.encode("latin-1"))
+    assert [(x.symbol, x.file, x.mic) for x in result.listings] == [
+        ("SWDA.SW", "EBS", "XSWX")
+    ]
+
+
 def test_broken_source_is_rejected() -> None:
     """Test that a broken source is rejected."""
     try:
