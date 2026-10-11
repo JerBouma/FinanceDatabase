@@ -230,17 +230,17 @@ equities.search(
 )
 ```
 
-This returns 60 instruments listed on the Frankfurt Stock Exchange, in an industry group containing "Equipment" and with "Robotics" or "Education" in their summary. Filtering on `index=".F"` is an alternative way to find the exchange or market you are looking for.
+This returns the instruments listed on the Frankfurt Stock Exchange in an industry group containing "Equipment" and with "Robotics" or "Education" in their summary. Filtering on `index=".F"` is an alternative way to find the exchange or market you are looking for.
 
-| symbol   | name                                                        | currency   | sector                 | industry                                       | exchange   | market                   | country        | market_cap   |
-|:---------|:------------------------------------------------------------|:-----------|:-----------------------|:-----------------------------------------------|:-----------|:-------------------------|:---------------|:-------------|
-| 089.F    | Cambium Networks Corporation                                | EUR        | Information Technology | Communications Equipment                       | FRA        | Frankfurt Stock Exchange | Cayman Islands | Micro Cap    |
-| 109.F    | Castlight Health, Inc.                                      | EUR        | Health Care            | Health Care Technology                         | FRA        | Frankfurt Stock Exchange | United States  | Small Cap    |
-| 1KT.F    | Keysight Technologies Inc                                   | EUR        | Information Technology | Electronic Equipment, Instruments & Components | FRA        | Frankfurt Stock Exchange | United States  | Large Cap    |
-| 1N1.F    | Nanalysis Scientific Corp.                                  | EUR        | Information Technology | Electronic Equipment, Instruments & Components | FRA        | Frankfurt Stock Exchange | Canada         | Nano Cap     |
-| 1YO.F    | Yangtze Optical Fibre And Cable Joint Stock Limited Company | EUR        | Information Technology | Communications Equipment                       | FRA        | Frankfurt Stock Exchange | China          | Small Cap    |
+| symbol | name                                                        | currency | sector                 | industry                                       | exchange | market                   | country       | market_cap |
+|:-------|:------------------------------------------------------------|:---------|:-----------------------|:-----------------------------------------------|:---------|:-------------------------|:--------------|:-----------|
+| 1KT.F  | Keysight Technologies Inc                                   | EUR      | Information Technology | Electronic Equipment, Instruments & Components | FRA      | Frankfurt Stock Exchange | United States | Large Cap  |
+| 1N1.F  | Nanalysis Scientific Corp.                                  | EUR      | Information Technology | Electronic Equipment, Instruments & Components | FRA      | Frankfurt Stock Exchange | Canada        | Nano Cap   |
+| 1YO.F  | Yangtze Optical Fibre And Cable Joint Stock Limited Company | EUR      | Information Technology | Communications Equipment                       | FRA      | Frankfurt Stock Exchange | China         | Large Cap  |
+| 1ZU.F  | Pennant Group Inc                                           | EUR      | Health Care            | Health Care Providers & Services               | FRA      | Frankfurt Stock Exchange | United States | Small Cap  |
+| 2EYA.F | Binovi Technologies Corp.                                   | EUR      | Health Care            | Health Care Technology                         | FRA      | Frankfurt Stock Exchange | Canada        | Nano Cap   |
 
-And below the 60 results are counted per industry.
+And below the results are counted per industry.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/search-dark.png">
@@ -284,15 +284,15 @@ funds = fd.Funds()
 funds.search(summary="Pension")
 ```
 
-Which returns 628 funds, of which a few are shown below:
+Which returns the funds with "Pension" in their summary, of which a few are shown below:
 
-| symbol       | name                                | currency   | category_group   | category                 | family                           | exchange   |
-|:-------------|:------------------------------------|:-----------|:-----------------|:-------------------------|:---------------------------------|:-----------|
-| 0P000015HA.F | Casermed Protección 6 PP            | EUR        | Financials       | Allocation               | Sa Nostra Seguros de Vida SA     | FRA        |
-| 0P000015V5.F | BK Revalorización Europa 2022 PP    | EUR        | Financials       | Bonds                    | Bankinter                        | FRA        |
-| 0P000015VC.F | Bankia Protegido Renta 2023 PP      | EUR        | Financials       | Bonds                    | Bankia Fondos                    | FRA        |
-| 0P000017AE.F | Santander Universidades RF Mixta PP | EUR        | Fixed Income     | Bonds                    | Santander Asset Management SGIIC | FRA        |
-| 0P000017AF.F | OpenBank Monetario PP               | EUR        | Cash             | Money Market Instruments | Santander Asset Management SGIIC | FRA        |
+| symbol       | name                                | currency | category_group | category                 | family                           | exchange |
+|:-------------|:------------------------------------|:---------|:---------------|:-------------------------|:---------------------------------|:---------|
+| 0P000015HA.F | Casermed Protección 6 PP            | EUR      | Equities       | Allocation               | Sa Nostra Seguros de Vida SA     | FRA      |
+| 0P000015V5.F | BK Revalorización Europa 2022 PP    | EUR      | Fixed Income   | Bonds                    | Bankinter                        | FRA      |
+| 0P000015VC.F | Bankia Protegido Renta 2023 PP      | EUR      | Fixed Income   | Bonds                    | Bankia Fondos                    | FRA      |
+| 0P000017AE.F | Santander Universidades RF Mixta PP | EUR      | Fixed Income   | Bonds                    | Santander Asset Management SGIIC | FRA      |
+| 0P000017AF.F | OpenBank Monetario PP               | EUR      | Cash           | Money Market Instruments | Santander Asset Management SGIIC | FRA      |
 
 And below all actively listed ETFs are divided over their category groups.
 
@@ -458,7 +458,7 @@ The categorization for Equities is based on a loose approximation of GICS (Globa
 
 For this you can use the `show_options` function, either for an asset class as a whole (`fd.show_options("equities")`), which doesn't require any data to be loaded, or on a loaded asset class to see the options that remain after filtering. See [Exploring the Options](#exploring-the-options) for more information.
 
-> **When I try collect data I notice that not all tickers return output, why is that?**
+> **When I try to collect data I notice that not all tickers return output, why is that?**
 
 Some tickers are merely holdings of companies and therefore do not really have any data attached to them. Therefore, it makes sense that not all tickers return data. If you are still in doubt, search the ticker on Google to see if there is really no data available. If you can't find anything about the ticker, consider updating the database by visiting the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
 
@@ -487,7 +487,7 @@ Since October 2026, funds and money markets are no longer maintained. Unlike exc
 No. Each dataset is downloaded once and cached in your user cache folder (or the folder set in `FINANCEDATABASE_CACHE_DIR`). Once a day the package checks for a newer version and only downloads it when it changed; offline, the cached copy is used. Queries run lazily with [Polars](https://pola.rs/) and return pandas by default, or Polars with `as_pandas=False`, e.g. `equities.select(country="Canada", as_pandas=False)`.
 
 # Contributing
-First off all, thank you for taking the time to contribute (or at least read the Contributing Guidelines)! 🚀
+First of all, thank you for taking the time to contribute (or at least read the Contributing Guidelines)! 🚀
 
 ___
 
@@ -506,7 +506,7 @@ Below are those that made significant contributions to the project. Thank you!
 | [pettijohn](https://github.com/pettijohn) | Added missing currencies and company names from SEC data (#135, #136). |
 | [desaijimmy](https://github.com/desaijimmy)        | Made changes to Equities dataset including the Split of Daimler to Mercedes-Benz and Daimler Trucks |
 | [nindogo](https://github.com/nindogo)        | Introduced a variety of new equities from the Nairobi Securities Exchange and introduced the country Kenya into the dataset. |
-| [colin99d](https://github.com/colin99d)        | Helped in the conversion of the Finance Database package to Object-Orientated, making the code much more efficient. |
+| [colin99d](https://github.com/colin99d)        | Helped in the conversion of the Finance Database package to Object-Oriented, making the code much more efficient. |
 
 # Contact
 If you have any questions about the FinanceDatabase or would like to share with me what you have been working on, feel free to reach out to me via:
