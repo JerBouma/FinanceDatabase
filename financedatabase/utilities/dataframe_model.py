@@ -19,11 +19,7 @@ def get_string_dtype() -> object:
 
 def convert_to_pandas(frame: pl.DataFrame) -> pd.DataFrame:
     """
-    Convert collected rows to the pandas frame the package returns.
-
-    The first column becomes the index, text columns get the dtype pandas' CSV reader
-    would give them with missing values as NaN; the Boolean delisted and Float64 empty
-    columns keep their type. No pyarrow is needed.
+    Convert collected rows to the pandas frame the package returns, indexed by symbol.
 
     Args:
         frame (pl.DataFrame): The collected rows, typed as the dataset stores them.

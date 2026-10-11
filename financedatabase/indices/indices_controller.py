@@ -11,16 +11,7 @@ from financedatabase.frame_model import FinanceFrame
 
 class Indices(FinanceDatabase):
     """
-    An index is a method to track the performance of a group of assets in a standardized way.
-    Indexes typically measure the performance of a basket of securities intended to
-    replicate a certain area of the market. These could be constructed as a broad-based
-    index that captures the entire market, such as the Standard & Poor's 500 Index or
-    Dow Jones Industrial Average (DJIA), or more specialized such as indexes that
-    track a particular industry or segment such as the Russell 2000 Index,
-    which tracks only small-cap stocks.
-
-    This class provides information about the indices available as well as the
-    ability to select specific indices based on various criteria.
+    Indices, selectable by category group, category, currency and exchange.
     """
 
     FILE_NAME = "indices.bz2"
@@ -47,26 +38,18 @@ class Indices(FinanceDatabase):
         Returns all indices when no input is given.
 
         Args:
-            category_group (str | list, optional): Specific category group or list of
-                category groups to filter indices on. Defaults to None (all category
-                groups).
-            category (str | list, optional): Specific category or list of categories to
-                filter indices on. Defaults to None (all categories).
-            currency (str | list, optional): Specific currency or list of currencies to
-                filter indices on. Defaults to None (all currencies).
-            exchange (str | list, optional): Specific exchange or list of exchanges to
-                filter indices on. Defaults to None (all exchanges).
-            mic (str | list, optional): Specific MIC or list of MICs to filter indices on.
-                Defaults to None (all MICs).
-            as_pandas (bool, optional): Whether to return a pandas DataFrame (True) or a
-                Polars DataFrame (False). Defaults to True.
+            category_group (str | list, optional): Category groups to filter on.
+            category (str | list, optional): Categories to filter on.
+            currency (str | list, optional): Currencies to filter on.
+            exchange (str | list, optional): Exchanges to filter on.
+            mic (str | list, optional): MICs to filter on.
+            as_pandas (bool, optional): Return pandas, else Polars. Defaults to True.
 
         Returns:
             FinanceFrame | pl.DataFrame: The indices matching every filter.
 
         Raises:
-            ValueError: If a filter value is not available in the database. Check the
-                available values with the 'show_options' method.
+            ValueError: If a filter value is not available, see show_options.
 
         As an example:
 
@@ -79,16 +62,6 @@ class Indices(FinanceDatabase):
             ["name", "currency", "category", "exchange"]
         ].head()
         ```
-
-        Which returns:
-
-        | symbol | name              | currency | category  | exchange |
-        |:-------|:------------------|:---------|:----------|:---------|
-        | 0020.Z | ESTX LRB50 NR EUR | EUR      | Large Cap | ZRH      |
-        | 0022.Z | ESTX LRB50 PR EUR | EUR      | Large Cap | ZRH      |
-        | 002A.Z | ESTX LR50 NR EUR  | EUR      | Large Cap | ZRH      |
-        | 002C.Z | ESTX LR50 PR EUR  | EUR      | Large Cap | ZRH      |
-        | 002G.Z | ESTX LR100 NR EUR | EUR      | Large Cap | ZRH      |
         """
         return self._select_rows(
             {
@@ -119,26 +92,16 @@ class Indices(FinanceDatabase):
         The options can be narrowed down with the same filters as select().
 
         Args:
-            selection (str | None, optional): The column to show the options of. Choose
-                from: "category_group", "category", "currency", "exchange", "mic". Defaults
-                to None, which returns the options of every column.
-            category_group (str | list, optional): Specific category group or list of
-                category groups to filter the options on. Defaults to None (all category
-                groups).
-            category (str | list, optional): Specific category or list of categories to
-                filter the options on. Defaults to None (all categories).
-            currency (str | list, optional): Specific currency or list of currencies to
-                filter the options on. Defaults to None (all currencies).
-            exchange (str | list, optional): Specific exchange or list of exchanges to
-                filter the options on. Defaults to None (all exchanges).
-            mic (str | list, optional): Specific MIC or list of MICs to filter the options
-                on. Defaults to None (all MICs).
-            as_pandas (bool, optional): Whether to return the options as numpy arrays (True)
-                or as Polars Series (False). Defaults to True.
+            selection (str | None, optional): The filter to show, None for every filter.
+            category_group (str | list, optional): Category groups to filter on.
+            category (str | list, optional): Categories to filter on.
+            currency (str | list, optional): Currencies to filter on.
+            exchange (str | list, optional): Exchanges to filter on.
+            mic (str | list, optional): MICs to filter on.
+            as_pandas (bool, optional): Return numpy arrays, else Polars. Defaults to True.
 
         Returns:
-            dict | np.ndarray | pl.Series: The sorted unique values of the selected column,
-                or a dictionary with the values of every column if no selection is given.
+            dict | np.ndarray | pl.Series: The sorted values, a dict for every filter.
 
         Raises:
             ValueError: If the selection or a filter value is not valid.
@@ -151,15 +114,6 @@ class Indices(FinanceDatabase):
         indices = fd.Indices()
 
         indices.show_options(selection="category_group")
-        ```
-
-        Which returns:
-
-        ```
-        ['Alternatives', 'Cash', 'Commodities', 'Communication Services',
-         'Consumer Discretionary', 'Consumer Staples', 'Currencies', 'Derivatives', 'Energy',
-         'Equities', 'Financials', 'Fixed Income', 'Health Care', 'Industrials',
-         'Information Technology', 'Materials', 'Real Estate', 'Utilities']
         ```
         """
         selection_values = [

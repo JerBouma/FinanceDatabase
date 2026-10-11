@@ -1,17 +1,4 @@
-"""Analytics Model
-
-A small usage counter for a hosted MCP server: how often each tool is called, how often
-it fails and how long it takes, with the totals published at ``/stats``.
-
-It is off unless ``FD_MCP_ANALYTICS=1`` is set, so a local installation never writes a
-statistics file or exposes a ``/stats`` page. The Finance Database needs no API key, so
-people are told apart by the client address and user agent of their requests. Neither
-is stored: a user is the HMAC of the two under the server's secret, so an identifier
-cannot be traced back to an address by anyone who lacks that secret. People behind one
-address count as one user, and a new address counts as a new one. The counts live in
-one process; several worker processes would each keep their own and overwrite each
-other's file.
-"""
+"""Analytics Model"""
 
 __docformat__ = "google"
 
@@ -67,8 +54,7 @@ def is_enabled() -> bool:
 
 def get_client(request: Any) -> str:
     """
-    Get who sent a request: the client address (the visitor's own one behind a
-    Cloudflare tunnel or proxy) and the user agent.
+    Get who sent a request: the client address (behind a proxy) and user agent.
 
     Args:
         request (Any): The HTTP request, None for a local (stdio) call.
@@ -103,8 +89,7 @@ def get_current_request() -> Any:
 
 def get_secret(location: Path) -> bytes:
     """
-    Get the secret users are hashed with: FD_MCP_SECRET_KEY, else one generated once
-    and kept next to the statistics file, so identifiers survive a restart.
+    Get the secret users are hashed with: FD_MCP_SECRET_KEY, else a stored one.
 
     Args:
         location (Path): The statistics file.
@@ -209,8 +194,7 @@ class UsageAnalytics:
             tool (str): The tool's name.
             succeeded (bool): Whether the tool returned rather than raised.
             seconds (float): How long the call took.
-            client (str | None): Who sent the call, resolved from the request when
-                None.
+            client (str | None): Who sent the call, resolved from the request if None.
         """
         try:
             today = get_today()
@@ -248,8 +232,7 @@ class UsageAnalytics:
 
     def wrap_tool(self, tool: str, function: Callable) -> Any:
         """
-        Wrap a tool so every call is counted, keeping the signature and annotations
-        FastMCP builds the tool's input schema from.
+        Wrap a tool so every call is counted, keeping its signature and annotations.
 
         Args:
             tool (str): The tool's name.
@@ -285,8 +268,7 @@ class UsageAnalytics:
 
             wrapper = count_function
 
-        # Resolved against the tool's own module: FastMCP would otherwise look string
-        # annotations up in this module and fail.
+        # Resolved in the tool's own module, else FastMCP fails on string annotations.
         signature = inspect.signature(function, eval_str=True)
         wrapper.__signature__ = signature
         wrapper.__annotations__ = {
@@ -454,9 +436,7 @@ def create_from_environment(
     default_server_name: str, default_location: Path
 ) -> UsageAnalytics | None:
     """
-    Set up the counter when FD_MCP_ANALYTICS is on: read the stored counts back and
-    save them once more when the server stops. Users are hashed with
-    FD_MCP_SECRET_KEY, or a secret generated once next to the statistics file.
+    Set up the counter when FD_MCP_ANALYTICS is on, saving it when the server stops.
 
     Args:
         default_server_name (str): The server name, unless FD_MCP_SERVER_NAME is set.

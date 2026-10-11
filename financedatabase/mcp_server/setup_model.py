@@ -91,8 +91,7 @@ def get_claude_config_path() -> pathlib.Path:
     Return the platform-specific path to the Claude Desktop configuration file.
 
     Returns:
-        pathlib.Path: Absolute path to claude_desktop_config.json for the
-            current operating system.
+        pathlib.Path: Absolute path to claude_desktop_config.json.
     """
     system = platform.system()
     if system == "Darwin":
@@ -143,11 +142,7 @@ def get_windsurf_config_path() -> pathlib.Path:
 
 def get_server_entry() -> dict:
     """
-    Return the MCP server config block that starts the server via uvx.
-
-    The entry is portable: it does not depend on a locally installed
-    ``financedatabase-mcp`` binary, because uvx downloads and runs the package
-    on demand. No environment variables are needed.
+    Return the portable MCP server config block that starts the server via uvx.
 
     Returns:
         dict: Ready-to-serialise MCP server configuration.
@@ -158,8 +153,7 @@ def get_server_entry() -> dict:
     }
 
 
-# Maps --client name to (config path given the working directory, outer JSON key,
-# display name). VS Code and Cursor configs are workspace-local.
+# --client name -> (config path for the working directory, JSON key, display name).
 CLIENTS: dict[str, tuple[Callable[[pathlib.Path], pathlib.Path], str, str]] = {
     "claude-desktop": (
         lambda _: get_claude_config_path(),
@@ -210,18 +204,11 @@ def write_client_config(
     """
     Write the ``finance-database`` server entry into a client's config file.
 
-    Other entries in the file are preserved. Workspace-local configs (VS Code,
-    Cursor) are created in *target_dir*. For a global client whose config
-    directory doesn't exist (the client is probably not installed) the block is
-    printed to paste manually instead.
-
     Args:
-        client (str): One of claude-desktop, claude-code, vscode, cursor, gemini,
-            windsurf.
+        client (str): The client name, see ``CLIENTS``.
         target_dir (pathlib.Path): Workspace root used for VS Code and Cursor.
         overwrite (bool): Replace an existing entry without asking.
-        interactive (bool): Ask before replacing an existing entry (otherwise an
-            existing entry is left alone unless *overwrite* is set).
+        interactive (bool): Ask before replacing an existing entry.
 
     Returns:
         bool: True when the config file was written.
@@ -291,13 +278,10 @@ def remove_client_config(client: str, target_dir: pathlib.Path) -> bool:
 
 def remove_all_configs(target_dir: pathlib.Path) -> None:
     """
-    Remove the ``finance-database`` entry from every known client config file.
-
-    Shows what will be removed and asks for confirmation first.
+    Remove the ``finance-database`` entry from every known client config, after asking.
 
     Args:
-        target_dir (pathlib.Path): Working directory used to resolve the VS Code
-            and Cursor configs.
+        target_dir (pathlib.Path): Workspace root used for VS Code and Cursor.
     """
     found = []
     for client, (path_fn, outer_key, display) in CLIENTS.items():

@@ -13,11 +13,7 @@ logger = logger_model.get_logger()
 
 class FinanceFrame(pd.DataFrame):
     """
-    Enhanced DataFrame with financial data integration capabilities.
-
-    Extends the pandas DataFrame with additional functionality for
-    financial analysis, particularly for connecting with the Finance
-    Toolkit using tickers obtained from the Finance Database.
+    A pandas DataFrame that converts its tickers to a Finance Toolkit object.
     """
 
     def to_toolkit(
@@ -38,60 +34,29 @@ class FinanceFrame(pd.DataFrame):
         progress_bar: bool = True,
     ) -> Any:
         """
-        Convert the FinanceFrame to a Finance Toolkit object.
-
-        Creates a Finance Toolkit object using the tickers in this DataFrame,
-        providing access to fundamental and historical data, ratios, metrics,
-        models, and technical indicators.
+        Convert the FinanceFrame to a Finance Toolkit object for its tickers.
 
         Args:
-            api_key (str | None, optional): API key from FinancialModelingPrep.
-                Obtain one at: https://www.jeroenbouma.com/fmp. Defaults to None.
-            start_date (str | None, optional): Start date for data collection (YYYY-MM-DD).
-                Defaults to 10 years before the current date.
-            end_date (str | None, optional): End date for data collection (YYYY-MM-DD).
-                Defaults to the current date.
-            quarterly (bool, optional): Whether to collect quarterly financial statements.
-                Defaults to False (yearly statements).
-            use_cached_data (bool | str, optional): Whether to use previously cached data.
-                Can be a boolean or a string path. Defaults to False.
-            risk_free_rate (str, optional): Risk-free rate to use (13w, 5y, 10y, 30y).
-                Based on US Treasury Yields. Defaults to "10y".
-            benchmark_ticker (str | None, optional): Ticker for benchmark comparisons.
-                Defaults to "SPY" (S&P 500).
-            enforce_source (str | None, optional): Source for the data ("FinancialModelingPrep"
-                or "YahooFinance"). Defaults to None (both are used).
-            convert_currency (bool | None, optional): Whether to convert financial statement
-                currencies to match historical data. Defaults to None (auto-determined).
-            intraday_period (str | None, optional): Time period for intraday data (1min, 5min,
-                15min, 30min, 1hour). Defaults to None.
-            rounding (int | None, optional): Number of decimal places for results. Defaults to 4.
-            remove_invalid_tickers (bool, optional): Whether to remove invalid tickers.
-                Defaults to False.
-            sleep_timer (bool | None, optional): Whether to use a sleep timer when the rate
-                limit is reached. Defaults to None (auto-determined).
-            progress_bar (bool, optional): Whether to show a progress bar for 10+ tickers.
-                Defaults to True.
+            api_key (str | None, optional): API key, see https://www.jeroenbouma.com/fmp.
+            start_date (str | None, optional): Start date (YYYY-MM-DD), 10 years ago if None.
+            end_date (str | None, optional): End date (YYYY-MM-DD), today if None.
+            quarterly (bool, optional): Quarterly statements. Defaults to False.
+            use_cached_data (bool | str, optional): Cached data, or its path. Defaults to False.
+            risk_free_rate (str, optional): 13w, 5y, 10y or 30y. Defaults to "10y".
+            benchmark_ticker (str | None, optional): Benchmark ticker. Defaults to "SPY".
+            enforce_source (str | None, optional): Data source, None for both.
+            convert_currency (bool | None, optional): Convert statement currencies.
+            intraday_period (str | None, optional): Intraday period such as 1min or 1hour.
+            rounding (int | None, optional): Decimal places. Defaults to 4.
+            remove_invalid_tickers (bool, optional): Remove invalid tickers. Defaults to False.
+            sleep_timer (bool | None, optional): Sleep when the rate limit is reached.
+            progress_bar (bool, optional): Show a progress bar. Defaults to True.
 
         Returns:
             Toolkit: Finance Toolkit object with data for the tickers in this DataFrame.
 
         Raises:
             ImportError: If the Finance Toolkit is not installed.
-
-        As an example:
-
-        ```python
-        import financedatabase as fd
-
-        equities = fd.Equities()
-
-        toolkit = equities.select(country="Netherlands", sector="Financials").to_toolkit(
-            api_key="FINANCIAL_MODELING_PREP_KEY"
-        )
-
-        toolkit.ratios.get_profitability_ratios()
-        ```
         """
         try:
             from financetoolkit import (  # noqa: PLC0415 # pylint: disable=import-outside-toplevel

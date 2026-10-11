@@ -28,8 +28,7 @@ LOCAL_ENV = "FINANCEDATABASE_MCP_LOCAL"
 MATCH_CACHE_SIZE = 32
 # Up to this many matches filter the data scan; more are joined.
 MATCH_FILTER_SIZE = 10_000
-# A brand stands for the family that issues at least this share of the instruments
-# whose name starts with it.
+# Minimum share of instruments named after a brand for one family to stand for it.
 BRAND_SHARE = 0.8
 
 
@@ -100,11 +99,7 @@ def check_local_data() -> bool:
 @contextlib.contextmanager
 def redirect_stdout_to_stderr():
     """
-    Redirect anything printed while a tool runs to stderr.
-
-    Under the stdio transport stdout is the JSON-RPC stream, so a stray print would
-    corrupt it. Tools run synchronously on the event loop thread, so swapping
-    sys.stdout for the duration of a call affects nothing else.
+    Redirect anything printed while a tool runs to stderr (stdout is the stdio stream).
     """
     with contextlib.redirect_stdout(sys.stderr):
         yield
@@ -116,11 +111,10 @@ class DatabaseProvider:
 
     Args:
         specs (list[AssetClassSpec]): The asset classes to serve.
-        instance_ttl_seconds (int): Age after which an instance is rebuilt on its next
-            use, letting the package check for a newer published database.
+        instance_ttl_seconds (int): Age after which an instance is rebuilt on next use.
         identifier_columns (list[str]): Columns matched exactly by a query (ISIN, ...).
-        use_local_location (bool | None): Read local compression files. None follows
-            the FINANCEDATABASE_MCP_LOCAL environment variable at instance creation.
+        use_local_location (bool | None): Read local compression files, None follows
+            FINANCEDATABASE_MCP_LOCAL.
     """
 
     def __init__(
@@ -231,11 +225,6 @@ class DatabaseProvider:
         """
         Turn raw filter input into the lists of values the package expects.
 
-        Comma-separated input is split, keeping commas that belong to a valid value
-        ('Hotels, Restaurants & Leisure'). Values that match no option are passed on
-        unchanged, so the package rejects them with its own message; they are also
-        returned separately so suggestions can be added to that message.
-
         Args:
             tool_name (str): The asset class tool name.
             filters (dict[str, Any]): Field -> raw value (None/empty values are skipped).
@@ -282,9 +271,7 @@ class DatabaseProvider:
 
     def _resolve_brands(self, tool_name: str, values: list[str]) -> dict[str, str]:
         """
-        Resolve brand names to the family that issues them: when most instruments
-        whose name starts with the brand belong to one family, the brand stands for
-        it ('iShares' for BlackRock Asset Management).
+        Resolve brand names to the family issuing most of them ('iShares' -> BlackRock).
 
         Args:
             tool_name (str): The asset class tool name.
@@ -412,8 +399,7 @@ class DatabaseProvider:
         self, tool_name: str, lazy: pl.LazyFrame
     ) -> tuple[pl.LazyFrame, RankingProfile, bool]:
         """
-        Join the listing ranks of each row where the asset class has listings, and
-        get the ranking measurements of the class.
+        Join the listing ranks where the asset class has listings, plus its profile.
 
         Args:
             tool_name (str): The asset class tool name.
@@ -452,8 +438,7 @@ class DatabaseProvider:
 
     def _find_matches(self, tool_name: str, query: str) -> pl.DataFrame:
         """
-        Match a query on the search frame of an asset class (see ranking_model). The
-        latest results are kept, as a tool counts and then ranks the same matches.
+        Match a query on the search frame of an asset class, caching recent results.
 
         Args:
             tool_name (str): The asset class tool name.
@@ -501,8 +486,7 @@ class DatabaseProvider:
         lazy: pl.LazyFrame, symbol: str, matches: pl.DataFrame
     ) -> pl.LazyFrame:
         """
-        Keep the rows of the matching symbols. A short list filters the scan, so only
-        the matching rows are read; a long one is joined, which is faster for it.
+        Keep the rows of the matching symbols: filter a short list, join a long one.
 
         Args:
             lazy (pl.LazyFrame): The dataset.
@@ -564,8 +548,7 @@ class DatabaseProvider:
         self, tool_name: str, lazy: pl.LazyFrame, query: str | None
     ) -> pl.LazyFrame:
         """
-        Filter the rows matching a query and order them by relevance, or without a
-        query by preference alone (see ranking_model).
+        Filter the rows matching a query and order them by relevance and preference.
 
         Args:
             tool_name (str): The asset class tool name.
@@ -622,12 +605,7 @@ class DatabaseProvider:
         limit: int = 25,
     ) -> tuple[pl.DataFrame, int]:
         """
-        Run a select() with an optional query and return one page.
-
-        The filtering is the package's own select() logic (validation included),
-        kept lazy so that only the requested page and columns are materialised;
-        collecting a full select() for every call would read up to 100,000+ rows
-        with their summaries just to return 25 of them.
+        Run a lazy select() with an optional query and return one page.
 
         Args:
             tool_name (str): The asset class tool name.
@@ -755,9 +733,6 @@ class DatabaseProvider:
     ) -> tuple[pl.DataFrame, int, dict[str, int]]:
         """
         Search symbol, name and identifiers across several asset classes.
-
-        Each asset class contributes at most offset + limit best matches, which is
-        enough to build any page of the merged, relevance-ordered result.
 
         Args:
             query (str): The free-text query.

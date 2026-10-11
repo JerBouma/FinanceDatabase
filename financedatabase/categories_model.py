@@ -38,15 +38,11 @@ def get_categories(
     location: str, use_local_location: bool = False
 ) -> dict[str, list[str]]:
     """
-    Get the category options of an asset class.
-
-    The Parquet file holds one list of values per category. When it isn't published,
-    the gzip CSV older versions read is used instead.
+    Get the category options of an asset class, from Parquet or else the gzip CSV.
 
     Args:
         location (str): The path or URL of the categories file, without extension.
-        use_local_location (bool, optional): Whether the location is a local path.
-            Defaults to False.
+        use_local_location (bool, optional): Whether it is a local path. Defaults to False.
 
     Returns:
         dict[str, list[str]]: Category names mapped to their sorted values.

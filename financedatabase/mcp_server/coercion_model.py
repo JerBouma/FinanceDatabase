@@ -15,8 +15,7 @@ def convert_to_boolean(value: Any) -> bool:
     Coerce a value to a boolean, with support for common string representations.
 
     Args:
-        value (Any): Value to coerce. A bool is returned unchanged; anything else is
-            compared case-insensitively against "true", "1" and "yes".
+        value (Any): Value to coerce, a bool or e.g. "true", "1" or "yes".
 
     Returns:
         bool: Boolean interpretation of the input.
@@ -30,10 +29,7 @@ def convert_to_int(
     value: Any, default: int, minimum: int, maximum: int | None = None
 ) -> int:
     """
-    Coerce a value to an integer clamped to a range.
-
-    Out-of-range or unparsable input is corrected rather than rejected, because a
-    language model asking for limit=1000 should get the maximum, not an error.
+    Coerce a value to an integer clamped to a range, correcting rather than rejecting.
 
     Args:
         value (Any): Value to coerce, e.g. 25, "25" or 25.0.
@@ -80,12 +76,10 @@ def split_values(value: Any) -> list[str]:
     Turn a filter value into a list of stripped, non-empty strings.
 
     Args:
-        value (Any): None, a string (optionally comma-separated) or an iterable of
-            strings (each of which may itself be comma-separated).
+        value (Any): None, a (comma-separated) string or an iterable of strings.
 
     Returns:
-        list[str]: The individual comma-separated parts, in order. The parts are
-            not yet resolved against the valid options; see ``resolve_values``.
+        list[str]: The comma-separated parts in order, see ``resolve_values``.
     """
     if value is None:
         return []
@@ -104,24 +98,13 @@ def resolve_values(
     """
     Split a filter value into known options, keeping commas that belong to a value.
 
-    Some valid values contain commas themselves ('Hotels, Restaurants & Leisure',
-    'AB Fixed-Income Shares, Inc.'), so a plain split would break them. The parts are
-    therefore re-joined greedily: at each position the longest run of parts that
-    forms a known option (case-insensitive) is taken as one value. A part that is the
-    start of exactly one option, word for word, is taken as that option ('Vanguard'
-    for 'Vanguard Asset Management'); with expand_prefix it is taken as every option
-    it starts ('BlackRock' for 'BlackRock Funds' and 'BlackRock Liquidity Funds').
-    Accents are ignored, so 'curacao' finds 'Curaçao'.
-
     Args:
         value (Any): The raw filter value (string, comma-separated string or list).
         options_lower (set[str]): The valid options, lower-cased.
         expand_prefix (bool): Whether a part may stand for several options.
 
     Returns:
-        tuple[list[str], list[str]]: The resolved values (as given by the caller, or the
-            option itself when only its accents differ) and
-            the parts that match no option, which the package will reject.
+        tuple[list[str], list[str]]: The resolved values and the unmatched parts.
     """
     folded = {fold_accents(option): option for option in options_lower}
 
@@ -158,11 +141,7 @@ def resolve_values(
 
 def suggest(value: str, options: Iterable[str], count: int = 5) -> list[str]:
     """
-    Suggest valid options for an unknown value.
-
-    Combines difflib's close matches (typos such as 'Finacials') with options that
-    contain the value (partial names such as 'Technology' for
-    'Information Technology'), both compared case-insensitively.
+    Suggest valid options for an unknown value: close matches and containing options.
 
     Args:
         value (str): The unknown value.
