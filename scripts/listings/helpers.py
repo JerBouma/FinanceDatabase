@@ -22,7 +22,7 @@ SUFFIX = r"\.(?:TO|V|HK|NS|T|AX)$"
 # the weekly US update uses the same rule.
 DATED_NAME = re.compile(
     r"\bwarrants?\b|\s(?:WTS?|RTS)$|\brights?$|\bsubscription rights?\b"
-    r"|\bcontingent value rights?\b|\brights? to (?:receive|subscribe)\b"
+    r"|\bcontingent value rights?\b|(?<!the )\brights? to (?:receive|subscribe)\b"
     r"|\b(?:notes?|debentures?|bonds?|preferred shares)\b.*\bdue\b"
     r"|\bdue\s+(?:\w+\s+)?(?:\d{1,2},?\s+)?(?:19|20)\d\d\b"
     r"|\b(?:perpetual|subordinated|senior)\s+(?:\w+\s+)?(?:notes?|debentures?|bonds?)\b"
@@ -31,8 +31,8 @@ DATED_NAME = re.compile(
     re.IGNORECASE,
 )
 # Equities only hold the shares of companies. A name with a maturity or expiry date, a
-# strike, or a coupon without any share wording, or an international (XS) ISIN marks a
-# bond, note, warrant or certificate instead. The weekly update skips these and
+# strike, a warrant, or a coupon without any share wording, or an international (XS)
+# ISIN marks a bond, note, warrant or certificate instead. The weekly update skips these and
 # scripts/remove_non_shares.py removes any that reach the equities files.
 MONTHS = "JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC"
 DATE_IN_NAME = re.compile(
@@ -44,6 +44,7 @@ DATE_IN_NAME = re.compile(
     re.IGNORECASE,
 )
 OPTION_NAME = re.compile(r"\b(?:CALL|PUT)\b.*\d", re.IGNORECASE)
+WARRANT_NAME = re.compile(r"\b(?:warrants?|waran|wts)\b|\bWT EXP\b", re.IGNORECASE)
 COUPON = re.compile(r"\d+(?:[.,]\d+)?\s?%")
 SHARE_WORDS = re.compile(
     r"\b(?:pref|pfd|preferred|preference|depositary|cumulative|cum|shares?|stock"
@@ -72,7 +73,7 @@ def check_non_share(name: str, country: str = "", isin: str = "") -> bool:
     """
     if isin.upper().startswith("XS") or DATE_IN_NAME.search(name):
         return True
-    if OPTION_NAME.search(name):
+    if OPTION_NAME.search(name) or WARRANT_NAME.search(name):
         return True
     coupon_debt = COUPON.search(name) and not SHARE_WORDS.search(name)
     return bool(coupon_debt and (not country or DEBT_WORDS.search(name)))

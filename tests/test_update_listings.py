@@ -130,6 +130,8 @@ def test_dated_name_skips_debt_but_keeps_shares() -> None:
         "KeyCorp Depositary Shares each representing a 1/40th ownership interest",
         "Soluna Holdings Inc 9.0% Series A Cumulative Perpetual Preferred Stock",
         "Senior Connect Acquisition Corp. I Class A Ordinary Shares",
+        "RLX Technology Inc. American Depositary Shares, each representing the right"
+        " to receive one Class A ordinary share",
     ]:
         assert not helpers.DATED_NAME.search(share), share
 
@@ -147,6 +149,9 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("AEGON 1.769%PL", "Netherlands", ""),
         ("Sec Red NCD 9.12% Sr.I", "", ""),
         ("CO. RABOBANK 21/UND. FLR", "", "XS2332245370"),
+        ("Waran Seri I Zyrexindo Mandiri", "", ""),
+        ("TETRA BIO PHARMA INC WTS A", "", ""),
+        ("Atossa Genetics Inc. WT EXP 052421", "", ""),
     ]:
         assert helpers.check_non_share(name, country, isin), name
     for name, country, isin in [
@@ -157,6 +162,7 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("FEDERAL INTL (2000)", "", ""),
         ("CODERE SA EO 0,50", "", ""),
         ("Callaway Golf Company", "United States", ""),
+        ("WT Microelectronics Co., Ltd.", "Taiwan", ""),
     ]:
         assert not helpers.check_non_share(name, country, isin), name
 
