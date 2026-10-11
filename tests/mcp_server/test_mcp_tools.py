@@ -237,6 +237,12 @@ def test_query_ranks_the_home_listing_first(server):
     assert {"ASML", "ASMLF"} <= {row["symbol"] for row in us["rows"]}
 
 
+def test_query_puts_the_largest_listing_after_the_home_listing(server):
+    """Test that a company's listing on its largest exchange follows its home listing."""
+    payload = call_json(server.mcp, "search_instruments", {"query": "ASML", "limit": 2})
+    assert [row["symbol"] for row in payload["rows"]] == ["ASML.AS", "ASML"]
+
+
 def test_query_matches_index_symbols_without_caret(server):
     """Test that an index is found by its symbol without the leading caret."""
     payload = call_json(server.mcp, "indices", {"query": "AEX", "limit": 3})

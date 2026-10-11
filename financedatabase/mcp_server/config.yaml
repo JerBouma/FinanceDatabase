@@ -12,6 +12,12 @@ server:
     `show_options` to see the exact filter values that exist, and use the asset
     class tools (`equities`, `etfs`, ...) to list everything matching a set of
     filters. Results are paginated: follow the `_notes` hint (offset) for more.
+    Results are ordered by relevance: the best match first, followed by the same
+    company's listing on the largest exchange it trades on (ASML on NASDAQ after
+    ASML.AS). Lists without a query start
+    with primary listings, ordered by market cap tier (the database holds tiers,
+    not exact market caps) and, within a tier, by the number of exchanges an
+    instrument is listed on.
 
 # Every response is bounded so no call can return the full dataset.
 limits:
