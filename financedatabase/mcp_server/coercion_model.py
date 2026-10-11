@@ -3,8 +3,11 @@
 __docformat__ = "google"
 
 import difflib
+import unicodedata
 from collections.abc import Iterable
 from typing import Any
+
+from financedatabase.listings_model import LETTERS_WITHOUT_ACCENT
 
 
 def convert_to_boolean(value: Any) -> bool:
@@ -54,6 +57,24 @@ def convert_to_int(
     return number
 
 
+def fold_accents(text: str) -> str:
+    """
+    Lower-case a text and drop its accents, so 'Curaçao' and 'curacao' compare equal.
+
+    Args:
+        text (str): The text.
+
+    Returns:
+        str: The text without accents, lower-cased.
+    """
+    decomposed = unicodedata.normalize("NFKD", text.strip().lower())
+    return "".join(
+        LETTERS_WITHOUT_ACCENT.get(c, c)
+        for c in decomposed
+        if not unicodedata.combining(c)
+    )
+
+
 def split_values(value: Any) -> list[str]:
     """
     Turn a filter value into a list of stripped, non-empty strings.
@@ -90,6 +111,7 @@ def resolve_values(
     start of exactly one option, word for word, is taken as that option ('Vanguard'
     for 'Vanguard Asset Management'); with expand_prefix it is taken as every option
     it starts ('BlackRock' for 'BlackRock Funds' and 'BlackRock Liquidity Funds').
+    Accents are ignored, so 'curacao' finds 'Curaçao'.
 
     Args:
         value (Any): The raw filter value (string, comma-separated string or list).
@@ -97,11 +119,19 @@ def resolve_values(
         expand_prefix (bool): Whether a part may stand for several options.
 
     Returns:
-        tuple[list[str], list[str]]: The resolved values (as given by the caller) and
+        tuple[list[str], list[str]]: The resolved values (as given by the caller, or the
+            option itself when only its accents differ) and
             the parts that match no option, which the package will reject.
     """
-    if isinstance(value, str) and value.strip().lower() in options_lower:
-        return [value.strip()], []
+    folded = {fold_accents(option): option for option in options_lower}
+
+    def match(candidate: str) -> str | None:
+        if candidate.lower() in options_lower:
+            return candidate
+        return folded.get(fold_accents(candidate))
+
+    if isinstance(value, str) and (whole := match(value.strip())):
+        return [whole], []
 
     parts = split_values(value)
     resolved: list[str] = []
@@ -109,14 +139,14 @@ def resolve_values(
     position = 0
     while position < len(parts):
         for end in range(len(parts), position, -1):
-            candidate = ", ".join(parts[position:end])
-            if candidate.lower() in options_lower:
-                resolved.append(candidate)
+            option = match(", ".join(parts[position:end]))
+            if option:
+                resolved.append(option)
                 position = end
                 break
         else:
-            prefix = parts[position].lower() + " "
-            starting = sorted(o for o in options_lower if o.startswith(prefix))
+            prefix = fold_accents(parts[position]) + " "
+            starting = sorted(o for f, o in folded.items() if f.startswith(prefix))
             if len(starting) == 1 or (starting and expand_prefix):
                 resolved.extend(starting)
             else:

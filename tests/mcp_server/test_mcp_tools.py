@@ -220,6 +220,21 @@ def test_include_delisted(server, delisted_symbol):
     assert everything > listed
 
 
+def test_search_instruments_flags_delisted(server, delisted_symbol):
+    """Test that the cross-class search adds a delisted column with include_delisted."""
+    plain = call_json(server.mcp, "search_instruments", {"query": "apple", "limit": 2})
+    assert "delisted" not in plain["columns"]
+
+    shown = call_json(
+        server.mcp,
+        "search_instruments",
+        {"query": delisted_symbol, "include_delisted": True, "limit": 5},
+    )
+    assert shown["columns"][-1] == "delisted"
+    flags = {row["symbol"]: row["delisted"] for row in shown["rows"]}
+    assert flags[delisted_symbol] is True
+
+
 def test_query_ranks_exact_symbol_first(server):
     """Test that an exact symbol match comes first and the query is case-insensitive."""
     payload = call_json(server.mcp, "equities", {"query": "aapl", "limit": 3})

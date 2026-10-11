@@ -778,6 +778,8 @@ class DatabaseProvider:
             "category",
             "country",
         ]
+        if include_delisted:
+            output_columns.append("delisted")
         frames = []
         per_class: dict[str, int] = {}
         start = time.perf_counter()
@@ -796,9 +798,10 @@ class DatabaseProvider:
             def select_column(
                 name: str, source: str, columns: list[str] = available
             ) -> pl.Expr:
+                dtype = pl.Boolean if name == "delisted" else pl.String
                 if source in columns:
-                    return pl.col(source).alias(name)
-                return pl.lit(None, dtype=pl.String).alias(name)
+                    return pl.col(source).cast(dtype).alias(name)
+                return pl.lit(None, dtype=dtype).alias(name)
 
             frames.append(
                 lazy.head(offset + limit)

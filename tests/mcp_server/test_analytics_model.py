@@ -92,6 +92,60 @@ def test_summary_reports_totals_without_raw_counts(tmp_path) -> None:
     }
 
 
+def test_unique_users_are_counted_without_storing_clients(tmp_path) -> None:
+    """Test that users are told apart by a keyed hash of address and user agent."""
+    analytics = UsageAnalytics("Server", tmp_path / "stats.json", secret=b"secret")
+    analytics.record_call("equities", client="1.2.3.4|claude")
+    analytics.record_call("etfs", client="1.2.3.4|claude")
+    analytics.record_call("equities", client="5.6.7.8|cursor")
+    analytics.record_call("equities", client="")
+
+    summary = analytics.get_summary()
+    assert summary["unique_users"] == 2
+    assert summary["users_today"] == 2
+    assert summary["new_users_last_7_days"] == 2
+    assert summary["average_calls_per_user"] == 1.5
+    assert summary["anonymous_calls"] == 1
+    assert summary["daily_calls"][-1]["users"] == 2
+
+    analytics.save()
+    stored = (tmp_path / "stats.json").read_text()
+    assert "1.2.3.4" not in stored and "claude" not in stored
+    other = UsageAnalytics("Server", tmp_path / "stats.json", secret=b"other")
+    assert other.get_user("1.2.3.4|claude") != analytics.get_user("1.2.3.4|claude")
+
+
+def test_client_comes_from_the_forwarded_address() -> None:
+    """Test that the visitor's address behind Cloudflare or a proxy is used."""
+
+    class Request:
+        def __init__(self, headers):
+            self.headers = headers
+            self.client = type("Client", (), {"host": "10.0.0.1"})()
+
+    assert analytics_model.get_client(None) == ""
+    assert (
+        analytics_model.get_client(
+            Request({"cf-connecting-ip": "9.9.9.9", "user-agent": "claude"})
+        )
+        == "9.9.9.9|claude"
+    )
+    assert (
+        analytics_model.get_client(Request({"x-forwarded-for": "8.8.8.8, 10.0.0.2"}))
+        == "8.8.8.8|"
+    )
+    assert analytics_model.get_client(Request({})) == "10.0.0.1|"
+
+
+def test_secret_is_generated_once(monkeypatch, tmp_path) -> None:
+    """Test that a generated secret is kept, so user ids survive a restart."""
+    monkeypatch.delenv(analytics_model.SECRET_ENVIRONMENT_VARIABLE, raising=False)
+    first = analytics_model.get_secret(tmp_path / "stats.json")
+    assert analytics_model.get_secret(tmp_path / "stats.json") == first
+    monkeypatch.setenv(analytics_model.SECRET_ENVIRONMENT_VARIABLE, "configured")
+    assert analytics_model.get_secret(tmp_path / "stats.json") == b"configured"
+
+
 def test_stats_route_is_registered(tmp_path) -> None:
     """Test that the summary is served at /stats."""
     from mcp.server.fastmcp import FastMCP

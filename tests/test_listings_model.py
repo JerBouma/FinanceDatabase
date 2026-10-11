@@ -138,3 +138,73 @@ def test_names_match_without_accents() -> None:
         )
     ).to_series()
     assert words.to_list() == ["l oreal", "hermes", "nestle sa", "orsted"]
+
+
+CURRENCIES = {"AMS": "EUR", "GER": "EUR", "FRA": "EUR", "NYQ": "USD", "PNK": "USD"}
+CANADA = [(f"CA{i}.TO", f"Canadian {i} Inc.", "TOR", "Canada", None) for i in range(20)]
+
+
+def _get_primary_with_currencies(rows: list[tuple]) -> set[str]:
+    lazy = pl.DataFrame(
+        [(*row, CURRENCIES.get(row[2], "CAD")) for row in rows],
+        schema=["symbol", "name", "exchange", "country", "isin", "currency"],
+        orient="row",
+    ).lazy()
+    ranks = listings_model.get_listing_ranks(lazy, listings_model.get_main_venues(lazy))
+    return set(ranks.filter("primary_listing").get_column("symbol"))
+
+
+def test_lines_abroad_in_another_currency_are_not_primary() -> None:
+    """Test that a US company in euros on a regional venue full of US lines is not
+    at home there, while a German company in euros is."""
+    market = [
+        *MARKET,
+        *CANADA,
+        ("GEC.F", "GENL EL CO DL", "FRA", "United States", None),
+    ]
+    primary = _get_primary_with_currencies(market)
+    assert "GEC.F" not in primary
+    assert "SAP.F" in primary
+
+
+def test_local_receipts_are_not_primary() -> None:
+    """Test that Canadian receipts of US companies in Toronto are not primary: by a
+    name that starts with the company's, or by a word that names such lines only."""
+    receipts = [
+        (f"US{i}.TO", f"American {i} CDR (CAD Hedged)", "TOR", "United States", None)
+        for i in range(25)
+    ]
+    receipts.append(("MU.TO", "Micron CDR (CAD Hedged)", "TOR", "United States", None))
+    primary = _get_primary_with_currencies([*MARKET, *CANADA, *receipts])
+    assert "US0" in primary
+    assert not {symbol for symbol, *_ in receipts} & primary
+    assert "CA0.TO" in primary
+
+
+def test_one_primary_line_per_company_and_exchange() -> None:
+    """Test share classes of the same length (BRK-A, BRK-B) and a symbol that extends
+    the company's by a letter (GOOGM), but not a company with a longer symbol."""
+    market = [
+        *MARKET,
+        ("BRK-A", "Berkshire Hathaway Inc.", "NYQ", "United States", "US0846701086"),
+        ("BRK-B", "Berkshire Hathaway Inc.", "NYQ", "United States", "US0846707026"),
+        ("BRYN.F", "Berkshire Hathaway Inc.", "FRA", "United States", "US0846707026"),
+        ("GOOG", "Alphabet Inc.", "NYQ", "United States", "US02079K1079"),
+        (
+            "GOOGM",
+            "Alphabet Inc. Depositary Shares Series A Preferred",
+            "NYQ",
+            "United States",
+            "US02079K4040",
+        ),
+        ("BX", "Blackstone Inc.", "NYQ", "United States", "US09260D1072"),
+        ("BXMT", "Blackstone Mortgage Trust", "NYQ", "United States", "US09257W1009"),
+        ("FBNC", "First Bancorp", "NYQ", "United States", "US3189101062"),
+        ("FNLC", "First Bancorp", "NYQ", "United States", "US31866P1021"),
+    ]
+    primary = _get_primary(market)
+    assert "BRK-B" in primary
+    assert "BRK-A" not in primary
+    assert "GOOG" in primary
+    assert "GOOGM" not in primary
+    assert {"BX", "BXMT", "FBNC", "FNLC"} <= primary
