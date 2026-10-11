@@ -58,8 +58,7 @@ class SourceResult:
 
     listings: list[Listing] = field(default_factory=list)
     official: dict[str, set[str]] = field(default_factory=dict)
-    # exchange file -> {symbol: exchange sector label} for every listed symbol, used to learn
-    # how the exchange's classification translates to the database's categories.
+    # exchange file -> {symbol: exchange sector label}, to learn the category mapping.
     classifications: dict[str, dict[str, str]] = field(default_factory=dict)
 
 
@@ -126,8 +125,7 @@ def parse_hkex(xlsx: bytes) -> SourceResult:
     data["code"] = data["Stock Code"].astype(int)
     result.official = {"HKG": {f"{code:04d}.HK" for code in data["code"]}}
     data = data[(data["Trading Currency"] == "HKD") & (data["RMB Counter"] == "")]
-    # 2900-2999 are temporary parallel-trading counters (share consolidations, board-lot
-    # changes, rights) that duplicate a company's main stock code.
+    # 2900-2999 are temporary parallel-trading counters duplicating a main stock code.
     data = data[~data["code"].between(2900, 2999)]
     for _, row in data.iterrows():
         symbol, isin = f"{row.code:04d}.HK", row.ISIN.strip()
@@ -148,7 +146,7 @@ def parse_nse(
     equity_csv: bytes, etf_csv: bytes, industries_csv: bytes | None = None
 ) -> SourceResult:
     """
-    India: NSE main-board equities and ETFs (industries from the Nifty Total Market list).
+    India: NSE main-board equities and ETFs, industries from the Nifty Total Market.
     """
     result = SourceResult()
     industries: dict[str, str] = {}
@@ -444,7 +442,7 @@ def get_jpx_download_url() -> str:
 
 def load_sources(group_sector: dict[str, str]) -> dict[str, Callable[[], SourceResult]]:
     """
-    Source name -> loader. Loaders download and parse lazily so one failure stays isolated.
+    Source name -> lazy loader, so one failure stays isolated.
     """
     tsx = "https://www.tsx.com/json/company-directory/search/{}/%5E*"
     nse = "https://archives.nseindia.com/content/equities/{}"

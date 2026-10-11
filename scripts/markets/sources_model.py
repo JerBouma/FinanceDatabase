@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 import requests
 
-from scripts.listings.helpers import HEADERS, TIMEOUT, fetch, require
+from scripts.listings.helpers import SESSION, TIMEOUT, fetch, require
 
 COINGECKO = "https://api.coingecko.com/api/v3"
 ISO_LISTS = "https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/{}.xml"
@@ -37,7 +37,7 @@ def fetch_coins(pages: int = 2) -> tuple[pd.DataFrame, set[str]]:
     """
     rows = []
     for page in range(1, pages + 1):
-        response = requests.get(
+        response = SESSION.get(
             f"{COINGECKO}/coins/markets",
             params={
                 "vs_currency": "usd",
@@ -45,13 +45,12 @@ def fetch_coins(pages: int = 2) -> tuple[pd.DataFrame, set[str]]:
                 "per_page": 250,
                 "page": page,
             },
-            headers=HEADERS,
             timeout=TIMEOUT,
         )
         response.raise_for_status()
         rows += response.json()
         time.sleep(3)
-    listed = requests.get(f"{COINGECKO}/coins/list", headers=HEADERS, timeout=TIMEOUT)
+    listed = SESSION.get(f"{COINGECKO}/coins/list", timeout=TIMEOUT)
     listed.raise_for_status()
     tickers = {coin["symbol"].upper() for coin in listed.json()}
     coins = pd.DataFrame(
@@ -76,14 +75,13 @@ def fetch_coin_website(coin_id: str) -> str:
         str: The homepage URL.
     """
     try:
-        response = requests.get(
+        response = SESSION.get(
             f"{COINGECKO}/coins/{coin_id}",
             params={
                 "localization": "false",
                 "tickers": "false",
                 "market_data": "false",
             },
-            headers=HEADERS,
             timeout=TIMEOUT,
         )
         response.raise_for_status()
@@ -95,15 +93,16 @@ def fetch_coin_website(coin_id: str) -> str:
 
 def fetch_iso_currencies() -> tuple[dict[str, str], set[str], dict[str, set[str]]]:
     """
-    The active ISO 4217 currencies with their names, the withdrawn codes, and the
-    currencies countries actually use (with their countries).
+    The active and withdrawn ISO 4217 currencies and the ones countries actually use.
 
     Returns:
         tuple: code -> name, withdrawn codes, code -> country names of usable currencies.
     """
     active: dict[str, str] = {}
     countries: dict[str, set[str]] = {}
-    for entry in ET.fromstring(fetch(ISO_LISTS.format("list-one"))).iter("CcyNtry"):
+    # The ISO lists come from SIX, the ISO 4217 maintenance agency.
+    current = ET.fromstring(fetch(ISO_LISTS.format("list-one")))  # noqa: S314
+    for entry in current.iter("CcyNtry"):
         code, name = entry.findtext("Ccy"), entry.findtext("CcyNm")
         is_fund = (entry.find("CcyNm").get("IsFund") or "").lower() == "true"
         if code and name and not is_fund:
@@ -111,12 +110,10 @@ def fetch_iso_currencies() -> tuple[dict[str, str], set[str], dict[str, set[str]
             countries.setdefault(code, set()).add(
                 (entry.findtext("CtryNm") or "").strip()
             )
-    history = list(
-        ET.fromstring(fetch(ISO_LISTS.format("list-three"))).iter("HstrcCcyNtry")
-    )
+    historic = ET.fromstring(fetch(ISO_LISTS.format("list-three")))  # noqa: S314
+    history = list(historic.iter("HstrcCcyNtry"))
     withdrawn = {e.findtext("Ccy") for e in history if e.findtext("Ccy")} - set(active)
-    # An X code (supranational, units of account) only counts for a country that had a
-    # currency of its own before, like the Caribbean guilder (XCG) for Curaçao.
+    # An X code only counts for a country that had its own currency before (XCG, Curaçao).
     had_currency = {
         (e.findtext("CtryNm") or "").strip()
         for e in history
@@ -140,7 +137,7 @@ def fetch_euronext_indices() -> pd.DataFrame:
     """
     frames = []
     for mic, (suffix, exchange) in EURONEXT_MARKETS.items():
-        response = requests.post(
+        response = SESSION.post(
             EURONEXT_INDICES.format(mic),
             data={
                 "args[fe_type]": "csv",
@@ -148,7 +145,6 @@ def fetch_euronext_indices() -> pd.DataFrame:
                 "args[fe_date_format]": "d/m/Y",
                 "args[fe_layout]": "ver",
             },
-            headers=HEADERS,
             timeout=TIMEOUT,
         )
         response.raise_for_status()

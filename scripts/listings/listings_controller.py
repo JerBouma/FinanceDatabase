@@ -3,7 +3,6 @@
 __docformat__ = "google"
 
 import argparse
-import glob
 import os
 import re
 from collections.abc import Callable
@@ -69,8 +68,7 @@ def apply_source(
                 continue
         added.append(listing)
 
-    # An ETF line of a known fund takes the fund's name and categories; a new fund with only
-    # a short exchange name takes its full name from Börse Frankfurt or Euronext.
+    # Known funds lend their name and categories; new ones get a full name looked up.
     known = db.get_etfs_by_isin() if any(x.kind == "etfs" for x in added) else {}
     lookups, deferred = 0, set()
     for listing in added:
@@ -117,8 +115,7 @@ def apply_source(
             listing.industry_group = learned.get("industry_group", "")
             listing.industry = learned.get("industry", "")
 
-    # Ticker changes: a live row in the same file with the same ISIN or name whose symbol has
-    # dropped off the exchange's official list is superseded by the new listing.
+    # Ticker changes: a delisted symbol with the same ISIN or name is superseded.
     official_keys_by_file: dict[str, set[str]] = {}
     for listing in added:
         official = result.official.get(listing.file)
@@ -215,10 +212,7 @@ def run(
 ) -> list[str]:
     """
     Update the database from every source; returns the names of skipped sources.
-
-    A source that cannot be downloaded (blocked, rate limited, offline), no longer has the
-    expected format, or fails while being applied is skipped: its partial changes are rolled
-    back and the other sources continue.
+    A failing source is rolled back and skipped, so the others continue.
     """
     db = Database(database)
     family = db.get_etf_families()
@@ -265,46 +259,6 @@ def run(
     if failures:
         print(f"Sources skipped this run: {', '.join(failures)}")
     return failures
-
-
-def remove_non_shares(database: str, dry_run: bool = False) -> list[str]:
-    """
-    Remove the rows of the equities files that are not company shares (see
-    helpers.check_non_share), whatever added them.
-
-    Args:
-        database (str): The database directory.
-        dry_run (bool): Only report the rows, change nothing.
-
-    Returns:
-        list[str]: The removed rows as "symbol (exchange file): name".
-    """
-    removed = []
-    for path in sorted(glob.glob(os.path.join(database, "equities", "*.csv"))):
-        frame = pd.read_csv(path, index_col=0, dtype=str, keep_default_na=False)
-        # Some listings use their ISIN as symbol (XS0188935174.AS).
-        isin_symbol = frame.index.to_series().where(
-            frame.index.str.match(r"^[A-Z]{2}\d{6,}"), ""
-        )
-        isin = frame["isin"].where(frame["isin"] != "", isin_symbol)
-        mask = pd.Series(
-            [
-                check_non_share(name, country, code)
-                for name, country, code in zip(
-                    frame["name"], frame["country"], isin, strict=True
-                )
-            ],
-            index=frame.index,
-        )
-        if not mask.any():
-            continue
-        file_name = os.path.basename(path)
-        removed += [
-            f"{s} ({file_name}): {frame.at[s, 'name']}" for s in frame.index[mask]
-        ]
-        if not dry_run:
-            frame[~mask].to_csv(path, lineterminator="\n")
-    return removed
 
 
 def main() -> None:

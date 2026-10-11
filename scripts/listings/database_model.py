@@ -8,7 +8,12 @@ from collections.abc import Callable
 
 import pandas as pd
 
-from scripts.listings.helpers import get_symbol_key, normalize_name, read_csv_text
+from scripts.listings.helpers import (
+    get_symbol_key,
+    normalize_name,
+    read_csv_text,
+    write_csv,
+)
 
 
 class Database:
@@ -110,10 +115,7 @@ class Database:
     def get_etf_families(self) -> Callable[[str], str]:
         """
         Issuer family from the opening words of an ETF name.
-
-        The first two words are used when >= 95% of >= 5 existing ETFs starting with them
-        share one family, otherwise the first word with >= 95% of >= 10 ETFs (or all of >= 3).
-        Matching ignores case, so upper-case exchange names ('ISHARES CHINA') match too.
+        Uses the first two words, else the first, when nearly all existing ETFs agree.
         """
         frames = [
             read_csv_text(p)[["name", "family"]]
@@ -143,7 +145,7 @@ class Database:
 
     def get_etfs_by_isin(self) -> dict[str, dict[str, str]]:
         """
-        ISIN -> name, categories and family of its existing ETF listings (cased names first).
+        ISIN -> name, categories and family of its existing ETF listings.
         """
         if "etf_isins" not in self.cache:
             frames = [
@@ -187,9 +189,8 @@ class Database:
             if self.added[path]:
                 new_rows = pd.DataFrame(self.added[path])[original.columns]
                 out = pd.concat([original, new_rows])
-            # Equities files are kept sorted by symbol (the US-ticker step rewrites them sorted);
-            # ETF files keep their order unless they were already sorted.
+            # Equities files are kept sorted; ETF files only when they already were.
             if "/equities/" in path or original.index.is_monotonic_increasing:
                 out = out.sort_index()
             out.index.name = "symbol"
-            out.to_csv(path)
+            write_csv(out, path)

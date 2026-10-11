@@ -28,8 +28,7 @@ CATEGORY_EXCLUDED = {
     "indices": ["name"],
     "moneymarkets": ["name"],
 }
-# The strings pandas.read_csv reads as missing by default; the category files have
-# always been built with them, so older package versions expect them left out.
+# pandas.read_csv's default missing values; older versions expect them out of categories.
 PANDAS_MISSING = [
     "",
     "#N/A",
@@ -105,10 +104,7 @@ def write_compressed_csv(frame: pl.DataFrame, target: str) -> None:
 
 def get_typed_frame(frame: pl.DataFrame) -> pl.DataFrame:
     """
-    Give rows the types the package returns, so readers need no conversion.
-
-    The delisted flag becomes a Boolean and a column that is empty in every row becomes
-    Float64, as pandas reads an empty CSV column; every other column stays text.
+    Give rows the types the package returns: delisted Boolean, all-empty columns Float64.
 
     Args:
         frame (pl.DataFrame): The rows, every column as text.
@@ -132,11 +128,7 @@ def get_typed_frame(frame: pl.DataFrame) -> pl.DataFrame:
 
 def write_typed_parquet(frame: pl.DataFrame, target: str) -> None:
     """
-    Write typed rows as Parquet, compressed for the smallest download.
-
-    One row group lets dictionary encoding share repeated values across the whole
-    file, which with zstd level 22 makes the file about a third smaller than the
-    defaults without slowing down reads.
+    Write typed rows as Parquet in one row group with zstd 22, for the smallest download.
 
     Args:
         frame (pl.DataFrame): The typed rows.
@@ -214,10 +206,8 @@ def get_category_lists(frame: pl.DataFrame) -> pl.DataFrame:
 
 def write_compressed_categories(frame: pl.DataFrame, target: str) -> None:
     """
-    Write category rows as a gzip-compressed CSV in the layout older versions read.
-
-    The gzip member is named after the file and its mtime fixed at 0, so unchanged
-    content gives an identical file.
+    Write category rows as a gzip CSV in the layout older versions read.
+    The mtime is fixed at 0, so unchanged content gives an identical file.
 
     Args:
         frame (pl.DataFrame): The category rows.

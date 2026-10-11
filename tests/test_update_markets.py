@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-from scripts.markets import markets_controller
+from scripts.markets import markets_model
 
 
 def _frame(rows: list[dict]) -> pd.DataFrame:
@@ -37,7 +37,7 @@ def test_update_cryptos_adds_top_coins_and_drops_dead_ones() -> None:
         ],
         columns=["id", "symbol", "name", "rank"],
     )
-    frame, added, gone = markets_controller.update_cryptos(
+    frame, added, gone = markets_model.update_cryptos(
         _frame(rows),
         coins,
         {"BTC", "ETH", "SUI", "BUIDL"},
@@ -78,7 +78,7 @@ def test_update_currencies_follows_iso() -> None:
         "SLE": "Leone",
         "XSU": "Sucre",
     }
-    frame, added, gone = markets_controller.update_currencies(
+    frame, added, gone = markets_model.update_currencies(
         _frame(rows), active, {"HRK", "SLL"}, set(), used={"SLE", "TND", "KES"}
     )
     assert added == ["SLE"] and gone == ["HRK"]
@@ -110,6 +110,6 @@ def test_update_indices_adds_only_new_symbols() -> None:
             "mic": ["XAMS", "XAMS", "XPAR"],
         }
     )
-    frame, added = markets_controller.update_indices(frame, published, {"TAKEN.PA"})
+    frame, added = markets_model.update_indices(frame, published, {"TAKEN.PA"})
     assert added == ["AAX.AS"]
     assert frame.loc["AAX.AS", "currency"] == "EUR"

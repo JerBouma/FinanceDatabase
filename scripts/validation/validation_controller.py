@@ -4,11 +4,17 @@ __docformat__ = "google"
 
 import argparse
 import csv
+import json
 import os
+import subprocess
+import sys
 import tempfile
 from collections.abc import Iterable, Sequence
 from pathlib import Path
 
+import pandas as pd
+
+from scripts.validation import gics_model, integrity_model
 from scripts.validation.identifiers_model import (
     FIELD_VALIDATORS,
     AuditResult,
@@ -399,3 +405,121 @@ def main(argv: Sequence[str] | None = None) -> int:
             "damage and clear other identifiers that fail validation."
         )
     return 0
+
+
+def check_gics(database: str = "database") -> dict[str, str]:
+    """
+    Check every equity's sector, industry group and industry against the GICS tree.
+
+    Args:
+        database (str): The database folder.
+
+    Returns:
+        dict[str, str]: Symbol -> the level that is not found, empty when all are valid.
+    """
+    gics = json.loads(
+        Path("compression/categories/categories.json").read_text(encoding="utf-8")
+    )
+    columns = ["symbol", "sector", "industry_group", "industry"]
+    equities = pd.concat(
+        [
+            pd.read_csv(path, usecols=columns, dtype=str, keep_default_na=False)
+            for path in sorted(Path(database, "equities").glob("*.csv"))
+        ]
+    ).set_index("symbol")
+    return gics_model.find_invalid_gics(equities, gics)
+
+
+def run_gics_check() -> None:
+    """
+    Command line entry of the GICS check; fails when an equity is not valid GICS.
+
+    Raises:
+        ValueError: When invalid combinations are found.
+    """
+    invalid = check_gics()
+    if invalid:
+        print("Invalid Rows for:")
+        for symbol, error in invalid.items():
+            print(f"{symbol}: {error}")
+        raise ValueError(
+            "There are invalid sector, industry groups and/or industries found. "
+            "Please check if it adheres to compression/categories/categories.json"
+        )
+    print("All sectors, industry groups and industries follow GICS.")
+
+
+def run_git(*arguments: str) -> str:
+    """
+    Run a git command in the repository and return its output.
+
+    Args:
+        *arguments (str): The git arguments.
+
+    Returns:
+        str: The standard output.
+    """
+    return subprocess.run(  # noqa: S603
+        ["git", *arguments],  # noqa: S607
+        capture_output=True,
+        text=True,
+        check=True,
+    ).stdout
+
+
+def check_database(database: str = "database", reference: str = "HEAD") -> list[str]:
+    """
+    The problems an update of the database files introduced compared with a commit.
+
+    Args:
+        database (str): The database folder.
+        reference (str): The commit to compare with.
+
+    Returns:
+        list[str]: The new problems, empty when the update is sound.
+    """
+    root = Path(database)
+    current = {}
+    for path in sorted(root.glob("*.csv")) + sorted(root.glob("*/*.csv")):
+        name = path.relative_to(root).as_posix()
+        try:
+            current[name] = integrity_model.read_symbols(path.read_text("utf-8"))
+        except (ValueError, UnicodeDecodeError) as error:
+            current[name] = ("", [])
+            print(f"{name}: unreadable ({error})")
+    listed = run_git("ls-tree", "-r", "--name-only", reference, database).split()
+    previous = {}
+    for path in (p for p in listed if p.endswith(".csv")):
+        text = run_git("show", f"{reference}:{path}")
+        previous[Path(path).relative_to(root).as_posix()] = (
+            integrity_model.read_symbols(text)
+        )
+    problems = integrity_model.find_problems(current, previous)
+    problems += [
+        f"{name}: unreadable" for name, (header, _) in current.items() if not header
+    ]
+    return problems
+
+
+def run_database_check() -> None:
+    """
+    Command line entry of the database check; with --restore an update that introduced
+    problems is undone, so the pipeline never commits it.
+    """
+    parser = argparse.ArgumentParser(description="Check the database before a commit.")
+    parser.add_argument("--database", default="database")
+    parser.add_argument("--restore", action="store_true")
+    arguments = parser.parse_args()
+    problems = check_database(arguments.database)
+    if not problems:
+        print("The database update is sound.")
+        return
+    print(f"The database update introduced {len(problems)} problem(s):")
+    for problem in problems[:50]:
+        print(f"  {problem}")
+    if arguments.restore:
+        run_git("checkout", "HEAD", "--", arguments.database)
+        run_git("clean", "-fdq", arguments.database)
+        print("The database files are restored to the last commit.")
+    else:
+        sys.exit(1)

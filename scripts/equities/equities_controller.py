@@ -1,0 +1,149 @@
+"""Equities Controller"""
+
+__docformat__ = "google"
+
+import argparse
+import glob
+import os
+
+import pandas as pd
+
+from scripts.equities import equities_model
+from scripts.listings.helpers import write_csv
+
+
+def update_us_equities(database: str = "database") -> int:
+    """
+    Add new NASDAQ, NYSE and NYSE American equities and refresh market cap tiers.
+
+    Args:
+        database (str): The database folder.
+
+    Returns:
+        int: The number of added or updated rows.
+    """
+    feeds = [
+        feed
+        for feed in (equities_model.load_feed(name) for name in equities_model.FEEDS)
+        if feed is not None
+    ]
+    exchange_data = pd.concat(feeds) if feeds else pd.DataFrame()
+    exchange_data = exchange_data[~exchange_data.index.duplicated(keep="first")]
+
+    # Feed industry -> GICS industry; labels spanning several industries are left out.
+    fd_industries = (
+        pd.read_csv("scripts/us_feed_industries.csv", dtype=str, keep_default_na=False)
+        .set_index("feed_industry")["industry"]
+        .to_dict()
+    )
+    equities = equities_model.read_equities(database)
+    exchange_to_mic = (
+        equities[equities["mic"] != ""]
+        .drop_duplicates("exchange")
+        .set_index("exchange")["mic"]
+        .to_dict()
+    )
+    other_symbols = equities_model.get_other_symbols(database)
+
+    ticker_dict: dict = {}
+    for symbol, row in exchange_data.iterrows():
+        market_cap = equities_model.calculate_market_cap(
+            pd.to_numeric(row.get("marketCap"), errors="coerce")
+        )
+        if symbol in equities.index:
+            existing = equities.loc[symbol]
+            if isinstance(existing, pd.DataFrame):
+                existing = existing.iloc[0]
+            if pd.notna(market_cap) and existing["market_cap"] != market_cap:
+                ticker_dict[symbol] = {**existing.to_dict(), "market_cap": market_cap}
+        elif symbol not in other_symbols:
+            ticker_dict[symbol] = equities_model.build_new_ticker(
+                row, fd_industries, equities, market_cap, exchange_to_mic
+            )
+
+    # A feed glitch would move many tiers at once; such a run keeps the current tiers.
+    known = exchange_data.index.isin(equities.index).sum()
+    retiered = [s for s in ticker_dict if s in equities.index]
+    if known and len(retiered) > equities_model.MAX_TIER_CHANGE_SHARE * known:
+        print(f"! {len(retiered)} of {known} tiers would change; keeping the tiers")
+        ticker_dict = {s: row for s, row in ticker_dict.items() if s not in retiered}
+
+    updated = pd.DataFrame.from_dict(ticker_dict, orient="index")
+    updated.index.name = "symbol"
+    updated = updated.drop(columns=["symbol"], errors="ignore")
+    print(f"There are {len(updated)} new updates!")
+    if updated.empty:
+        return 0
+
+    existing = updated.index.intersection(equities.index)
+    if not existing.empty:
+        equities.update(updated.loc[existing])
+    new = updated.index.difference(equities.index)
+    if not new.empty:
+        equities = pd.concat([equities, updated.loc[new]])
+    equities = equities[~equities.index.duplicated(keep="first")]
+    # Existing rows without a symbol carry an empty string, new ones NaN.
+    equities = equities[equities.index.notna() & (equities.index != "")]
+    equities = equities.sort_index()
+
+    # Only changed files are rewritten, each through a temporary file.
+    unknown_exchange = equities["exchange"].isna() | (equities["exchange"] == "")
+    for exchange, group in equities[~unknown_exchange].groupby("exchange"):
+        write_csv(group, f"{database}/equities/{exchange}.csv")
+    if unknown_exchange.any():
+        write_csv(equities[unknown_exchange], f"{database}/equities/NAN.csv")
+    return len(updated)
+
+
+def remove_non_shares(database: str, dry_run: bool = False) -> list[str]:
+    """
+    Remove the rows of the equities files that are not company shares.
+
+    Args:
+        database (str): The database folder.
+        dry_run (bool): Only report the rows, change nothing.
+
+    Returns:
+        list[str]: The removed rows as "symbol (exchange file): name".
+    """
+    removed = []
+    for path in sorted(glob.glob(os.path.join(database, "equities", "*.csv"))):
+        frame = pd.read_csv(path, index_col=0, dtype=str, keep_default_na=False)
+        mask = equities_model.find_non_shares(frame)
+        if not mask.any():
+            continue
+        file_name = os.path.basename(path)
+        removed += [
+            f"{s} ({file_name}): {frame.loc[s, 'name']}" for s in frame.index[mask]
+        ]
+        if not dry_run:
+            write_csv(frame[~mask], path)
+    return removed
+
+
+def run_us_equities_update() -> None:
+    """
+    Command line entry of the US equities update.
+    """
+    parser = argparse.ArgumentParser(description="Update the US equities.")
+    parser.add_argument("--database", default="database")
+    database = parser.parse_args().database
+    try:
+        update_us_equities(database)
+    except Exception as error:  # noqa: BLE001
+        print(f"US equities update stopped: {type(error).__name__}: {error}")
+
+
+def run_non_share_removal() -> None:
+    """
+    Command line entry of the removal of rows that are not company shares.
+    """
+    parser = argparse.ArgumentParser(description="Remove equities that are not shares.")
+    parser.add_argument("--database", default="database")
+    parser.add_argument("--dry-run", action="store_true")
+    arguments = parser.parse_args()
+    removed = remove_non_shares(arguments.database, arguments.dry_run)
+    print(f"{len(removed)} rows that are not company shares", end="")
+    print(" found:" if arguments.dry_run else " removed:" if removed else ".")
+    for row in removed:
+        print(f"  {row}")

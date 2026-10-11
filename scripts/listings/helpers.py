@@ -2,11 +2,14 @@
 
 __docformat__ = "google"
 
+import os
 import re
 import urllib.request
 
 import pandas as pd
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 HEADERS = {
     "User-Agent": (
@@ -15,11 +18,35 @@ HEADERS = {
     )
 }
 TIMEOUT = 120
+
+
+def create_session() -> requests.Session:
+    """
+    A session that retries network errors, rate limits and server errors with backoff.
+
+    Returns:
+        requests.Session: The session, with the browser user agent.
+    """
+    retry = Retry(
+        total=3,
+        backoff_factor=5,
+        status_forcelist=(429, 500, 502, 503, 504),
+        allowed_methods=frozenset({"GET", "POST"}),
+        respect_retry_after_header=True,
+        raise_on_status=False,
+    )
+    session = requests.Session()
+    session.headers.update(HEADERS)
+    for prefix in ("http://", "https://"):
+        session.mount(prefix, HTTPAdapter(max_retries=retry))
+    return session
+
+
+SESSION = create_session()
 US_ETF_FILES = {"NMS", "NGM", "NCM", "NYQ", "ASE", "PCX", "BTS"}
 
 SUFFIX = r"\.(?:TO|V|HK|NS|T|AX)$"
-# Instruments with an expiry or maturity date go out of date quickly and are not added;
-# the weekly US update uses the same rule.
+# Instruments with an expiry or maturity date go out of date quickly and are not added.
 DATED_NAME = re.compile(
     r"\bwarrants?\b|\s(?:WTS?|RTS)$|\brights?$|\bsubscription rights?\b"
     r"|\bcontingent value rights?\b|(?<!the )\brights? to (?:receive|subscribe)\b"
@@ -30,10 +57,7 @@ DATED_NAME = re.compile(
     r"|\bexpir(?:es|ing|ation)\b|\b\d{1,2}/\d{1,2}/(?:19|20)?\d{2}\b",
     re.IGNORECASE,
 )
-# Equities only hold the shares of companies. A name with a maturity or expiry date, a
-# strike, a warrant, or a coupon without any share wording, or an international (XS)
-# ISIN marks a bond, note, warrant or certificate instead. The weekly update skips these and
-# scripts/remove_non_shares.py removes any that reach the equities files.
+# Equities only hold company shares; these patterns mark bonds, warrants and certificates.
 MONTHS = "JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC"
 DATE_IN_NAME = re.compile(
     r"\b(?:0[1-9]|[12]\d|3[01])(?:0[1-9]|1[0-2])\d{2}\b"
@@ -60,9 +84,7 @@ DEBT_WORDS = re.compile(
 
 def check_non_share(name: str, country: str = "", isin: str = "") -> bool:
     """
-    Check whether an equities row is not a company share: a dated instrument, an
-    option or warrant, coupon-bearing debt or an instrument with an international
-    (XS) ISIN.
+    Check whether an equities row is not a company share (debt, warrant, certificate).
 
     Args:
         name (str): The instrument name.
@@ -92,7 +114,7 @@ def fetch(url: str) -> bytes:
     """
     Download a URL with a browser user agent; raises on HTTP errors.
     """
-    response = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+    response = SESSION.get(url, timeout=TIMEOUT)
     response.raise_for_status()
     return response.content
 
@@ -100,8 +122,6 @@ def fetch(url: str) -> bytes:
 def fetch_nasdaq_trader(name: str) -> bytes:
     """
     Nasdaq Trader symbol directory file over HTTPS, falling back to its official FTP copy.
-
-    The HTTPS endpoint sometimes answers automated clients with a bot-check page instead.
     """
     try:
         content = fetch(f"https://www.nasdaqtrader.com/dynamic/SymDir/{name}.txt")
@@ -120,7 +140,7 @@ def fetch_euronext_etfs() -> bytes:
     """
     Euronext's ETF list as CSV, the download behind its ETF directory page.
     """
-    response = requests.post(
+    response = SESSION.post(
         "https://live.euronext.com/en/pd_es/data/track/download"
         "?mics=XAMS%2CXPAR%2CXBRU%2CXLIS%2CXOSL",
         data={
@@ -129,7 +149,6 @@ def fetch_euronext_etfs() -> bytes:
             "args[fe_date_format]": "d/m/Y",
             "args[fe_layout]": "ver",
         },
-        headers=HEADERS,
         timeout=TIMEOUT,
     )
     response.raise_for_status()
@@ -153,6 +172,30 @@ def require(condition: bool, message: str) -> None:
     """
     if not condition:
         raise ValueError(message)
+
+
+def write_csv(frame: pd.DataFrame, path: str) -> bool:
+    """
+    Write a CSV only when its content changes, through a temporary file so an interrupted
+    run never leaves a half-written file.
+
+    Args:
+        frame (pd.DataFrame): The rows, indexed by symbol.
+        path (str): The CSV file.
+
+    Returns:
+        bool: Whether the file changed.
+    """
+    content = frame.to_csv(lineterminator="\n")
+    if os.path.exists(path):
+        with open(path, encoding="utf-8", newline="") as handle:
+            if handle.read() == content:
+                return False
+    temporary = f"{path}.tmp"
+    with open(temporary, "w", encoding="utf-8", newline="") as handle:
+        handle.write(content)
+    os.replace(temporary, path)
+    return True
 
 
 def read_csv_text(path: str) -> pd.DataFrame:
@@ -182,9 +225,7 @@ def get_symbol_key(symbol: str) -> str:
 
 def convert_to_yahoo_canada(symbol: str) -> str:
     """
-    TSX symbol to the database's Yahoo-style form.
-
-    'BCE.PR.A' -> 'BCE-PA', 'TD.PF.A' -> 'TD-PFA', 'GASX.WT.A' -> 'GASX-WTA', 'AD.UN' -> 'AD-UN'.
+    TSX symbol to the database's Yahoo-style form ('BCE.PR.A' -> 'BCE-PA').
     """
     base, _, rest = symbol.partition(".")
     if not rest:
