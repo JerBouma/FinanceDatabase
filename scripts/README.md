@@ -51,11 +51,6 @@ international XS ISIN; `helpers.check_non_share` in `listings/`), whatever added
 
 The equity categories are the database's own: `categories.json` lists every valid sector,
 industry group and industry, and `check_categories.py` fails on any other.
-`category_renames.csv` records how the old names map to the current ones (a one-off
-migration, kept for users updating their filters). Rows with a blank target were split per
-company: savings banks stayed Banks and other mortgage lenders became Mortgage Finance; REITs
-took the REIT industry of the property type in their name and summary, and other real estate
-companies became Real Estate Development & Services.
 
 ## Exchange directories (`listings/`)
 
