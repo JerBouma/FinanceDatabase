@@ -93,17 +93,17 @@ def test_instance_is_rebuilt_after_its_ttl(server, counting_cryptos, monkeypatch
 def test_failed_refresh_keeps_serving_the_cached_instance(monkeypatch):
     """Test that a refresh that cannot reach the data keeps the previous instance."""
     provider = DatabaseProvider(
-        [server_provider.specs["moneymarkets"]],
+        [server_provider.specs["currencies"]],
         instance_ttl_seconds=0,
         use_local_location=True,
     )
-    first = provider.get_instance("moneymarkets")
+    first = provider.get_instance("currencies")
 
     def raise_unavailable(*args, **kwargs):
         raise ValueError("offline")
 
-    monkeypatch.setattr(fd.Moneymarkets, "__init__", raise_unavailable)
-    assert provider.get_instance("moneymarkets") is first
+    monkeypatch.setattr(fd.Currencies, "__init__", raise_unavailable)
+    assert provider.get_instance("currencies") is first
 
 
 def test_logging_never_writes_to_stdout(server, capsys):
@@ -128,17 +128,17 @@ def test_logging_never_writes_to_stdout(server, capsys):
 def test_package_prints_are_sent_to_stderr(server, monkeypatch, capsys):
     """Test that a print inside the package cannot reach stdout during a tool call."""
 
-    class NoisyMoneymarkets(fd.Moneymarkets):
+    class NoisyCurrencies(fd.Currencies):
         def __init__(self, *args, **kwargs):
             print("notice from the package")
             super().__init__(*args, **kwargs)
 
-    monkeypatch.setattr(fd, "Moneymarkets", NoisyMoneymarkets)
-    server.provider._instances.pop("moneymarkets", None)
+    monkeypatch.setattr(fd, "Currencies", NoisyCurrencies)
+    server.provider._instances.pop("currencies", None)
     try:
-        call_json(server.mcp, "moneymarkets", {"limit": 1})
+        call_json(server.mcp, "currencies", {"limit": 1})
     finally:
-        server.provider._instances.pop("moneymarkets", None)
+        server.provider._instances.pop("currencies", None)
     captured = capsys.readouterr()
     assert captured.out == ""
     assert "notice from the package" in captured.err
@@ -167,7 +167,7 @@ def test_stdio_server_end_to_end(tmp_path):
             return listed, result
 
     listed, result = asyncio.run(asyncio.wait_for(run_session(), timeout=120))
-    assert len(listed.tools) == 10
+    assert len(listed.tools) == 8
     payload = json.loads(result.content[0].text)
     assert payload["rows"][0]["symbol"] == "EURUSD=X"
 

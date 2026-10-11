@@ -12,11 +12,9 @@ from tests.mcp_server.conftest import call_json, call_text
 ASSET_TOOLS = {
     "equities": fd.Equities,
     "etfs": fd.ETFs,
-    "funds": fd.Funds,
     "indices": fd.Indices,
     "currencies": fd.Currencies,
     "cryptos": fd.Cryptos,
-    "moneymarkets": fd.Moneymarkets,
 }
 UTILITY_TOOLS = {"search_categories", "show_options", "search_instruments"}
 
@@ -53,9 +51,7 @@ def test_asset_tool_parameters_mirror_select(tools, name):
     for key, schema in properties.items():
         assert schema.get("description"), f"{name}.{key} has no description"
     assert ("include_delisted" in properties) == (name in ("equities", "etfs"))
-    assert ("only_primary_listing" in properties) == (
-        name in ("equities", "etfs", "funds")
-    )
+    assert ("only_primary_listing" in properties) == (name in ("equities", "etfs"))
     assert properties["limit"]["default"] == 25
     assert not tools[name].inputSchema.get("required")
 
@@ -413,9 +409,18 @@ def test_show_options_filters_and_caps(server):
     assert capped["total"] > 10
     assert "_notes" in capped
 
-    overview = call_json(server.mcp, "show_options", {"asset_class": "funds"})
-    assert set(overview["options"]) == set(fd.Funds.FIELDS)
+    overview = call_json(server.mcp, "show_options", {"asset_class": "etfs"})
+    assert set(overview["options"]) == set(fd.ETFs.FIELDS)
     assert all(len(v["values"]) <= 25 for v in overview["options"].values())
+
+
+def test_retired_asset_classes_are_not_served(server, tools):
+    """Test that funds and money markets, no longer maintained, are not MCP tools."""
+    assert not {"funds", "moneymarkets"} & set(tools)
+    payload = call_json(server.mcp, "search_instruments", {"query": "vanguard"})
+    assert not {"funds", "moneymarkets"} & set(payload["matches_per_asset_class"])
+    with pytest.warns(FutureWarning, match="no longer maintained"):
+        fd.Funds(use_local_location=True)
 
 
 def test_show_options_errors_are_returned(server):
@@ -443,7 +448,7 @@ def test_show_options_errors_are_returned(server):
 
 def test_responses_are_compact_json(server):
     """Test that payloads carry no insignificant whitespace and use null for gaps."""
-    text = call_text(server.mcp, "funds", {"limit": 3})
+    text = call_text(server.mcp, "etfs", {"limit": 3})
     assert text == json.dumps(
         json.loads(text), ensure_ascii=False, separators=(",", ":")
     )
