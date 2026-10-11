@@ -398,8 +398,10 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         .select("_home", pl.col("_name").alias("_prefix"))
         .unique()
     )
+    # Only a line with a known home can be abroad; ETFs and indices have no country.
     abroad = (
-        pl.col("main_venue")
+        pl.col("_home").is_not_null()
+        & pl.col("main_venue")
         & ~pl.col("_home_line")
         & ~pl.col("_home_currency").fill_null(False)
         & pl.col("_currency").is_not_null()

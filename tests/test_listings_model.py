@@ -208,3 +208,21 @@ def test_one_primary_line_per_company_and_exchange() -> None:
     assert "GOOG" in primary
     assert "GOOGM" not in primary
     assert {"BX", "BXMT", "FBNC", "FNLC"} <= primary
+
+
+def test_lines_without_a_home_are_never_receipts() -> None:
+    """Test that ETFs, which have no country, keep their primary listings on the main
+    venues the equities define."""
+    rows = [
+        (f"E{i}", f"Fund {i} Bitcoin ETF", f"EX{i % 3}", None, None) for i in range(60)
+    ]
+    lazy = pl.DataFrame(
+        [(*row, "USD") for row in rows],
+        schema={
+            column: pl.String
+            for column in ["symbol", "name", "exchange", "country", "isin", "currency"]
+        },
+        orient="row",
+    ).lazy()
+    ranks = listings_model.get_listing_ranks(lazy, ["EX0", "EX1", "EX2"])
+    assert ranks["primary_listing"].all()

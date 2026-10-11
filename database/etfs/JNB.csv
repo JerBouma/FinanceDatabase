@@ -44,9 +44,9 @@ NEWGBP.JO,NewWave GBP Currency Exchange Traded Note,ZAC,,,,,JNB,XJSE,,False
 NEWPLT.JO,NewWave Platinum Exchange Traded Note,ZAC,,,,,JNB,XJSE,,False
 NEWSLV.JO,NewWave Silver Exchange Traded Note,ZAC,,,,,JNB,XJSE,,False
 NEWUSD.JO,NewWave USD Currency Exchange Traded Note,ZAC,,,,,JNB,XJSE,,False
-NFEDEF.JO,NewFunds Volatility Managed Defensive Equity ETF,ZAC,,Equities,,,JNB,XJSE,,False
+NFEDEF.JO,NewFunds Volatility Managed Defensive Equity ETF,ZAC,,Equities,Factors,,JNB,XJSE,,False
 NFEHGE.JO,NewFunds Volatility Managed High Growth Equity ETF,ZAC,,Equities,Growth,,JNB,XJSE,,False
-NFEMOD.JO,NewFunds Volatility Managed Moderate Equity ETF,ZAC,,Equities,,,JNB,XJSE,,False
+NFEMOD.JO,NewFunds Volatility Managed Moderate Equity ETF,ZAC,,Equities,Factors,,JNB,XJSE,,False
 NFEMOM.JO,NewFunds Equity Momentum ETF,ZAC,,Equities,Factors,,JNB,XJSE,,False
 NFETNC.JO,FNB ETN on NETFLC SEP25,ZAC,,,,,JNB,XJSE,,False
 NFETNQ.JO,FNB ETN on NETFLQ SEP25,ZAC,,,,,JNB,XJSE,,False
@@ -56,14 +56,14 @@ NFGOVI.JO,NewFunds GOVI Exchange Traded Fund Portfolio,ZAC,,,,,JNB,XJSE,,False
 NFILBI.JO,NewFunds ILBI Exchange Traded Fund Portfolio,ZAC,,,,,JNB,XJSE,,False
 NFNAMB.JO,NewFunds S&P Namibia Bond ETF,ZAC,,Fixed Income,,,JNB,XJSE,,False
 NFSH40.JO,NewFunds Shari'ah Top 40 ETF,ZAC,,,,,JNB,XJSE,,False
-NFTRCI.JO,NewFunds TRACI 3 Month ETF,ZAC,,,,,JNB,XJSE,,False
+NFTRCI.JO,NewFunds TRACI 3 Month ETF,ZAC,,Cash,Money Market Instruments,,JNB,XJSE,,False
 NGPLD.JO,NewGold Palladium ETF,ZAC,,,,,JNB,XJSE,,False
 NGPLT.JO,NewGold Platinum ETF,ZAC,,,,,JNB,XJSE,,False
 PPETNC.JO,FNB ETN on PAYPALC NOV25,ZAC,,,,,JNB,XJSE,,False
 PPETNQ.JO,FNB ETN on PAYPALQ NOV25,ZAC,,,,,JNB,XJSE,,False
 SBACOP.JO,SB Copper ETN,ZAC,SB Copper ETN is an exchange-traded note (ETN) that tracks the performance of copper prices. It provides investors with exposure to the copper market without directly owning the physical commodity. The ETN is listed on the Johannesburg Stock Exchange.,,,,JNB,XJSE,,False
 SBACRN.JO,SB Corn ETN,ZAC,SB Corn ETN is an exchange-traded note (ETN) that tracks the performance of corn prices. It offers investors exposure to the corn market without requiring direct ownership of the underlying commodity. The ETN is listed on the Johannesburg Stock Exchange.,,,,JNB,XJSE,,False
-SBAOIL.JO,Standard Bank WTI Crude Oil ETN,ZAC,Standard Bank WTI Crude Oil ETN is an exchange-traded note (ETN) that tracks the performance of the WTI crude oil price. It provides investors with exposure to the crude oil market without directly owning physical oil. The ETN is listed on the Johannesburg Stock Exchange.,,,,JNB,XJSE,,False
+SBAOIL.JO,Standard Bank WTI Crude Oil ETN,ZAC,Standard Bank WTI Crude Oil ETN is an exchange-traded note (ETN) that tracks the performance of the WTI crude oil price. It provides investors with exposure to the crude oil market without directly owning physical oil. The ETN is listed on the Johannesburg Stock Exchange.,Derivatives,Trading,,JNB,XJSE,,False
 SBAWHT.JO,SB Wheat ETN,ZAC,SB Wheat ETN is an exchange-traded note (ETN) that tracks the performance of wheat prices. It offers investors exposure to the wheat market without direct ownership of the commodity. The ETN is listed on the Johannesburg Stock Exchange.,,,,JNB,XJSE,,False
 STX40.JO,Satrix 40 ETF,ZAC,Satrix 40 ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STX40 and traded in ZAC.,Equities,Emerging Markets,,JNB,XJSE,ZAE000027108,False
 STXCHN.JO,Satrix MSCI China Feeder ETF,ZAC,Satrix MSCI China Feeder ETF is an exchange-traded fund listed on the Johannesburg Stock Exchange under the ticker STXCHN and traded in ZAC.,Equities,Developed Markets,,JNB,XJSE,ZAE000288361,False
