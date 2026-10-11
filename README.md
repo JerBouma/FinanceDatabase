@@ -448,7 +448,7 @@ This section includes frequently asked questions. If you have any questions that
 
 > **How is the data obtained?**
 
-The data is an aggregation of various publicly available sources. I strictly maintain the rule that all data in this database must be freely accessible to everyone. Data requiring API keys or paid subscriptions is never included. Information that companies charge for is typically owned and maintained by those companies, making public sharing of such data a violation of their Terms of Service (ToS). However, publicly available data can be freely shared (read more about the legality of web scraping [here](https://techcrunch.com/2022/04/18/web-scraping-legal-court/)). This database will always remain <u>completely free</u>.
+The data is an aggregation of publicly available sources: the official listing directories that exchanges publish (such as Nasdaq Trader, HKEX, NSE, the Japan Exchange Group, ASX, TSX, Deutsche Börse Xetra, Euronext and SIX Swiss Exchange), open reference data (OpenFIGI, SEC EDGAR, the ISO 4217 currency lists, CoinGecko) and contributions from the community. I strictly maintain the rule that all data in this database must be freely accessible to everyone. Data requiring paid subscriptions is never included. Information that companies charge for is typically owned and maintained by those companies, making public sharing of such data a violation of their Terms of Service (ToS). However, publicly available data can be freely shared (read more about the legality of web scraping [here](https://techcrunch.com/2022/04/18/web-scraping-legal-court/)). This database will always remain <u>completely free</u>.
 
 > **What categorization method is used?**
 
@@ -462,15 +462,25 @@ For this you can use the `show_options` function, either for an asset class as a
 
 Some tickers are merely holdings of companies and therefore do not really have any data attached to them. Therefore, it makes sense that not all tickers return data. If you are still in doubt, search the ticker on Google to see if there is really no data available. If you can't find anything about the ticker, consider updating the database by visiting the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
 
-> **How does the database handle changes to companies over time - like symbol/exchange migration, mergers, bankruptcies, or symbols getting reused?**
+> **How is the database kept up to date?**
 
-For American exchanges, the database automatically updates every Sunday using data from [this repository](https://github.com/rreichel3/US-Stock-Symbols). This process includes checks for market cap changes and updates asset classifications accordingly. Delisted tickers are intentionally retained for historical research purposes.
+Every Sunday (and after every change to the database) an automated update runs on GitHub Actions:
 
-While professional financial data services like Bloomberg charge over $25,000 annually for comprehensive market data maintenance, this database relies on community contributions. When companies outside American exchanges undergo changes (migrations, mergers, bankruptcies), we depend on community members to identify and update these entries.
+| Asset class | What the weekly update does | Source |
+|:--|:--|:--|
+| **Equities** | Adds new listings on NASDAQ, NYSE and NYSE American and refreshes their market cap tiers; adds new equities in Hong Kong, India, Japan, Australia and Canada. A ticker that is replaced by a new one is marked delisted. Bonds, notes, warrants and other papers that are not company shares are kept out. | [US-Stock-Symbols](https://github.com/rreichel3/US-Stock-Symbols), HKEX, NSE, JPX, ASX, TSX/TSXV |
+| **ETFs** | Adds new ETFs in the United States, Hong Kong, India, Japan, Canada, Germany (Xetra), Euronext (Amsterdam, Paris, Brussels, Lisbon, Oslo) and Switzerland. A new line of an existing fund takes its name and categories; blank categories are filled from the fund's other listings or, where clearly decisive, from its name. | Nasdaq Trader, HKEX, NSE, JPX, TSX, Deutsche Börse, Euronext, SIX, Börse Frankfurt |
+| **Cryptocurrencies** | Adds the coins in the top 500 by market cap against the usual quote currencies and removes coins that are no longer listed anywhere. | CoinGecko |
+| **Currencies** | Adds new currencies (such as SLE or ZWG) with their usual pairs and removes withdrawn ones (such as HRK after Croatia adopted the euro). | ISO 4217 (SIX) |
+| **Indices** | Adds the indices Euronext publishes and keeps the categories of ETF iNAVs in line with the index they track. | Euronext |
 
-Most companies don't change so rapidly that the database becomes obsolete - major changes like Facebook's rebrand to META are quickly incorporated. Even when companies go bankrupt, their ticker information remains valuable for historical analysis.
+Each source is applied on its own, so a source that is unavailable or changes its format is skipped for that week without affecting the others, and implausible changes (such as a large share of market cap tiers changing at once) are not applied. Before anything is committed, the update is checked against the previous version of the database and undone if it would introduce duplicate symbols, symbols in two asset classes, changed columns or a large loss of rows. Delisted tickers are kept on purpose, marked as delisted, for historical research. The scripts and their rules are described in [scripts/README.md](https://github.com/JerBouma/FinanceDatabase/blob/main/scripts/README.md).
 
-If you notice outdated information, please consider contributing through the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
+Not everything can be automated. Classifications of existing companies, corporate events outside the automated sources (mergers, renames, migrations) and exchanges without a public listing directory still rely on the community. If you notice outdated information, please consider contributing through the [Contributing Guidelines](https://github.com/JerBouma/FinanceDatabase/blob/main/CONTRIBUTING.md).
+
+> **What happened to Funds and Money Markets?**
+
+Since October 2026, funds and money markets are no longer maintained. Unlike exchange-listed instruments, mutual and money market funds have no public source that keeps them current worldwide, and the data had become outdated (many funds closed or merged, many new ones missing). `fd.Funds()` and `fd.MoneyMarkets()` remain available in the Python package as they are, with a warning when loaded, but they are no longer part of the MCP server. Funds that trade on a stock exchange under a regular ticker, such as listed open-ended funds in China or listed funds on Euronext Amsterdam, were moved to the ETFs so they stay maintained and searchable.
 
 > **Is the data downloaded every time I use the package?**
 
