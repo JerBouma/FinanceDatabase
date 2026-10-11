@@ -9,6 +9,7 @@ from scripts.listings.helpers import read_csv_text
 from scripts.markets import sources_model
 from scripts.markets.helpers import get_other_symbols, write
 from scripts.markets.markets_model import (
+    align_inav_categories,
     update_cryptos,
     update_currencies,
     update_indices,
@@ -70,9 +71,13 @@ def run(database: str = "database", dry_run: bool = False) -> list[str]:
             sources_model.fetch_euronext_indices(),
             get_other_symbols(database, "indices"),
         )
+        frame, aligned = align_inav_categories(frame)
         if not dry_run:
             write(frame, path, read_csv_text(path).index.is_monotonic_increasing)
-        return f"{len(added)} Euronext indices added"
+        return (
+            f"{len(added)} Euronext indices added, "
+            f"{len(aligned)} iNAV categories aligned with their index"
+        )
 
     apply("Cryptos (CoinGecko)", cryptos)
     apply("Currencies (ISO 4217)", currencies)

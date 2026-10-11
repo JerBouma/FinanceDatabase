@@ -113,3 +113,37 @@ def test_update_indices_adds_only_new_symbols() -> None:
     frame, added = markets_model.update_indices(frame, published, {"TAKEN.PA"})
     assert added == ["AAX.AS"]
     assert frame.loc["AAX.AS", "currency"] == "EUR"
+
+
+def test_inav_categories_follow_their_index() -> None:
+    """Test that an iNAV takes its headline index's categories, but not a variant's."""
+    columns = ["name", "currency", "summary", "category_group", "category"]
+    rows = [
+        ("^990100-USD-STRD", "MSCI World", "Equities", "Developed Markets"),
+        ("^GSPC", "S&P 500", "Equities", "Large Cap"),
+        ("0JHG.DE", "IN.ISH.FS MSCI WORLD USD", "Equities", "Equities"),
+        ("0WVA.DE", "IN.ISH.ED.S+P 500 MV EUR", "Equities", "Factors"),
+    ]
+    rows += [
+        (f"X{i}.DE", f"INAV FILLER {i} {cur}", "", "")
+        for i, cur in enumerate(["USD", "EUR"] * 200)
+    ]
+    frame = pd.DataFrame(
+        [
+            {
+                "symbol": s,
+                "name": n,
+                "currency": "",
+                "summary": "",
+                "category_group": g,
+                "category": c,
+                "exchange": "GER",
+                "mic": "",
+            }
+            for s, n, g, c in rows
+        ]
+    ).set_index("symbol")
+    frame, changed = markets_model.align_inav_categories(frame)
+    assert changed == ["0JHG.DE"]
+    assert frame.loc["0JHG.DE", "category"] == "Developed Markets"
+    assert frame.loc["0WVA.DE", "category"] == "Factors"

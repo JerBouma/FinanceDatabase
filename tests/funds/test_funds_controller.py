@@ -16,7 +16,7 @@ SELECT_CASES = [
     {"category": "Energy"},
     {"category_group": "Miscellaneous"},
     {"family": "13D Activist Fund"},
-    {"exchange": "PAR"},
+    {"exchange": "FRA"},
     {"exchange": "FRA", "category": "Energy"},
 ]
 
@@ -45,7 +45,7 @@ SHOW_OPTIONS_CASES = [
     {"selection": "family"},
     {"selection": "currency"},
     {"selection": "exchange"},
-    {"exchange": "PAR"},
+    {"exchange": "FRA"},
     {"category": "Energy"},
 ]
 

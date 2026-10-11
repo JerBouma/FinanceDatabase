@@ -28,7 +28,7 @@ def print_banner() -> None:
     body.append("  ·  ", style="dim")
     body.append("MCP Setup Wizard\n", style="bold")
     body.append(
-        "300,000+ Equities, ETFs, Funds, Indices, Currencies, Cryptos and Money Markets\n",
+        "300,000+ Equities, ETFs, Indices, Currencies and Cryptos\n",
         style="dim",
     )
     console.print(Panel(body, border_style="cyan", padding=(0, 2)))

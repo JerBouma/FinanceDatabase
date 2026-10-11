@@ -16,6 +16,12 @@ MAX_WEBSITE_LOOKUPS = 40
 # A removal touching more than this share of a file is treated as a source problem.
 MAX_REMOVED_SHARE = 0.4
 COIN_TICKER = re.compile(r"^[A-Z0-9]{1,12}$")
+# Names of ETF iNAVs (indicative net asset values), as Xetra and other venues publish them.
+INAV_NAME = r"^(?:INAV|IN\.|I\.)|\bINAV\b"
+# A last word of at least this share of iNAV names is a generic ending (currency, class).
+INAV_ENDING_SHARE = 0.003
+# A headline index's rows must agree on categories for at least this share.
+CATEGORY_AGREEMENT = 0.8
 
 
 def update_cryptos(
@@ -228,3 +234,55 @@ def update_indices(
         index=new.symbol.to_numpy(),
     )
     return pd.concat([frame, rows[frame.columns]]), list(new.symbol)
+
+
+def align_inav_categories(frame: pd.DataFrame) -> tuple[pd.DataFrame, list[str]]:
+    """
+    Give an ETF iNAV the categories of the headline index it tracks: its name, without
+    the endings many iNAV names share (currencies, share classes), ends with that index's
+    name ('IN.ISH.FS MSCI WORLD EUR' takes MSCI World's), and the index's rows agree.
+
+    Args:
+        frame (pd.DataFrame): The indices file.
+
+    Returns:
+        tuple[pd.DataFrame, list[str]]: The file and the changed symbols.
+    """
+    words = lambda name: re.findall(r"[a-z0-9]+", name.lower())  # noqa: E731
+    inav = frame["name"].str.contains(INAV_NAME, case=False, regex=True)
+    inav &= ~frame.index.str.startswith("^")
+    endings = pd.Series([w[-1] for w in map(words, frame["name"][inav]) if w])
+    shares = endings.value_counts() / max(int(inav.sum()), 1)
+    generic = set(shares[shares >= INAV_ENDING_SHARE].index)
+    headline = frame[
+        frame.index.str.startswith("^")
+        & (frame["category"] != "")
+        & (frame["category_group"] != "")
+    ]
+    categories: dict[str, list[tuple[str, str]]] = {}
+    for name, group, category in zip(
+        headline["name"], headline["category_group"], headline["category"], strict=True
+    ):
+        key = " ".join(words(name))
+        if len(key.split()) >= 2:
+            categories.setdefault(key, []).append((group, category))
+    frame, changed = frame.copy(), []
+    for symbol in frame.index[inav]:
+        name = words(frame.loc[symbol, "name"])
+        while name and name[-1] in generic:
+            name = name[:-1]
+        for start in range(len(name)):
+            options = categories.get(" ".join(name[start:]))
+            if not options:
+                continue
+            best = max(set(options), key=options.count)
+            agree = options.count(best) >= CATEGORY_AGREEMENT * len(options)
+            current = (
+                frame.loc[symbol, "category_group"],
+                frame.loc[symbol, "category"],
+            )
+            if agree and current != best:
+                frame.loc[symbol, ["category_group", "category"]] = list(best)
+                changed.append(symbol)
+            break
+    return frame, changed
