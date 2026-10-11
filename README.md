@@ -13,7 +13,7 @@
 
 As a private investor, the sheer amount of information that can be found on the internet is rather daunting. Trying to understand what types of companies or ETFs are available is incredibly challenging, with millions of companies and derivatives available on the market. Sure, the most traded companies and ETFs can quickly be found simply because they are known to the public (for example, Microsoft, Tesla, S&P 500 ETF, or an All-World ETF). However, what else is out there is often unknown.
 
-**This is why I created the FinanceDatabase**, a database featuring 300,000+ symbols containing Equities, ETFs, Indices, Currencies and Cryptocurrencies, plus the Funds and Money Markets it held until October 2026. It allows you to obtain a broad overview of sectors, industries, types of investments and much more, entirely for free. Everything is stored in CSV files that anyone can read and edit, so the database grows and improves through the community.
+**This is why I created the FinanceDatabase**, a database featuring 300,000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets. It allows you to obtain a broad overview of sectors, industries, types of investments and much more, entirely for free. Everything is stored in CSV files that anyone can read and edit, so the database grows and improves through the community.
 
 The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data, as those can be obtained with ease (with the help of this database) by using the [Finance Toolkit 🛠️](https://github.com/JerBouma/FinanceToolkit). Instead, it gives insights into the products that exist in each country, industry and sector and provides the most essential information about each product. With this information, you can analyze specific areas of the financial world and/or find a product that is hard to find. By utilising both, it is possible to do a fully-fledged competitive analysis with the tickers found from the FinanceDatabase inputted into the FinanceToolkit.
 
@@ -272,25 +272,25 @@ For example, see some of the Vanguard bond ETFs listed in Berlin below:
 | 025L.BE  | Vanguard Total International Bond Index Fund ETF Shares         | EUR        | Fixed Income     | Investment Grade Bonds | Vanguard Asset Management | BER        |
 | 025N.BE  | Vanguard Long-Term Corporate Bond Index Fund ETF Shares         | EUR        | Fixed Income     | Corporate Bonds        | Vanguard Asset Management | BER        |
 
-The same applies to `search`, for example to find the funds (no longer maintained, see [Questions & Answers](#questions--answers)) that focus on pension plans:
+The same applies to `search`, for example to find semiconductor indices across providers and countries:
 
 ```python
-# Initialize the Funds database
-funds = fd.Funds()
+# Initialize the Indices database
+indices = fd.Indices()
 
-# Search for funds with "Pension" in their summary
-funds.search(summary="Pension")
+# Search for indices with "Semiconductor" in their name
+indices.search(name="Semiconductor")
 ```
 
-Which returns the funds with "Pension" in their summary, of which a few are shown below:
+Which returns semiconductor indices from the US, South Korea and Taiwan, including their price, net and total return variants, of which a few are shown below:
 
-| symbol       | name                                | currency | category_group | category                 | family                           | exchange |
-|:-------------|:------------------------------------|:---------|:---------------|:-------------------------|:---------------------------------|:---------|
-| 0P000015HA.F | Casermed Protección 6 PP            | EUR      | Equities       | Allocation               | Sa Nostra Seguros de Vida SA     | FRA      |
-| 0P000015V5.F | BK Revalorización Europa 2022 PP    | EUR      | Fixed Income   | Bonds                    | Bankinter                        | FRA      |
-| 0P000015VC.F | Bankia Protegido Renta 2023 PP      | EUR      | Fixed Income   | Bonds                    | Bankia Fondos                    | FRA      |
-| 0P000017AE.F | Santander Universidades RF Mixta PP | EUR      | Fixed Income   | Bonds                    | Santander Asset Management SGIIC | FRA      |
-| 0P000017AF.F | OpenBank Monetario PP               | EUR      | Cash           | Money Market Instruments | Santander Asset Management SGIIC | FRA      |
+| symbol   | name                                | currency | category_group         | category   | exchange |
+|:---------|:------------------------------------|:---------|:-----------------------|:-----------|:---------|
+| ^SOX     | PHLX Semiconductor                  | USD      | Information Technology | Technology | NIM      |
+| ^ICESEMI | ICE Semiconductor Index             | USD      | Information Technology | Technology | NYS      |
+| ^NQSSSE  | Nasdaq US Smart Semiconductor Index | USD      | Information Technology | Technology | NIM      |
+| ^KQ47    | Kosdaq Semiconductors Index         | KRW      | Information Technology | Technology | KOE      |
+| SEC.TW   | TSEC semiconductor subindex         | TWD      | Information Technology | Technology | TAI      |
 
 And below all actively listed ETFs are divided over their category groups.
 
@@ -299,7 +299,7 @@ And below all actively listed ETFs are divided over their category groups.
   <img alt="ETFs" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/etfs-light.png">
 </picture>
 
-The categories of each asset class can again be found with `show_options`, e.g. `fd.Indices().show_options(selection="category")` returns the 42 index categories, from 'Corporate Bonds' and 'Emerging Markets' to 'Small Cap' and 'Value'. Cryptocurrencies are selected on `cryptocurrency` and `currency`, currencies on `base_currency` and `quote_currency` and the retired money markets on `currency` and `family`. **Find the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started) and the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+The categories of each asset class can again be found with `show_options`, e.g. `fd.Indices().show_options(selection="category")` returns the 42 index categories, from 'Corporate Bonds' and 'Emerging Markets' to 'Small Cap' and 'Value'. Cryptocurrencies are selected on `cryptocurrency` and `currency` and currencies on `base_currency` and `quote_currency`. **Find the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started) and the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
 
 ### Combining with the Finance Toolkit
 
