@@ -114,8 +114,6 @@ And below the actively listed equities are counted per sector.
 
 Each asset class has the same three functions: `select` to filter on the database's categories, `search` to look for any text in any column and `show_options` to see which values a category can take. The asset classes are `fd.Equities()`, `fd.ETFs()`, `fd.Indices()`, `fd.Currencies()` and `fd.Cryptos()`, which are updated weekly from official exchange and market sources.
 
-> **Funds and money markets are no longer maintained.** Since October 2026, `fd.Funds()` and `fd.MoneyMarkets()` are not updated anymore: no public source keeps mutual and money market funds across the world current, and the data had become outdated (many funds closed or merged, many new ones missing). Both stay available in the Python package as they are, with a warning when loaded, but are no longer part of the MCP server.
-
 Three capabilities cut across all of them:
 
 - **Lists of values.** Every filter accepts a single value or a list, e.g. `country=['Netherlands', 'Belgium']`, returning the entries that match any of them.
@@ -274,7 +272,7 @@ For example, see some of the Vanguard bond ETFs listed in Berlin below:
 | 025L.BE  | Vanguard Total International Bond Index Fund ETF Shares         | EUR        | Fixed Income     | Investment Grade Bonds | Vanguard Asset Management | BER        |
 | 025N.BE  | Vanguard Long-Term Corporate Bond Index Fund ETF Shares         | EUR        | Fixed Income     | Corporate Bonds        | Vanguard Asset Management | BER        |
 
-The same applies to `search`, for example to find the funds (no longer maintained, see above) that focus on pension plans:
+The same applies to `search`, for example to find the funds (no longer maintained, see [Questions & Answers](#questions--answers)) that focus on pension plans:
 
 ```python
 # Initialize the Funds database
