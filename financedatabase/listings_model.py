@@ -219,8 +219,8 @@ def link_names(frame: pl.DataFrame) -> pl.Series:
         .filter(pl.len().over("_first", "_home") <= DISTINCTIVE_WORD_NAMES)
         .join(
             targets.with_columns(first.alias("_first"))
-            .sort("len", descending=True)
-            .unique(["_first", "_home"], keep="first")
+            .sort("len", "_name", descending=[True, False])
+            .unique(["_first", "_home"], keep="first", maintain_order=True)
             .select("_first", "_home", pl.col("_name").alias("_by_word")),
             on=["_first", "_home"],
         )
@@ -300,9 +300,9 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         pl.coalesce(
             "_home",
             pl.when(pl.col("_isin").is_not_null()).then(
-                pl.col("_home").drop_nulls().mode().first().over("_isin")
+                pl.col("_home").drop_nulls().mode().min().over("_isin")
             ),
-            pl.col("_home").drop_nulls().mode().first().over("_name"),
+            pl.col("_home").drop_nulls().mode().min().over("_name"),
         ).alias("_home")
     )
 
@@ -470,7 +470,7 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         pl.when(~pl.col("_has_home"))
         .then(
             pl.coalesce(
-                pl.col("_main_home").drop_nulls().mode().first().over("_name"),
+                pl.col("_main_home").drop_nulls().mode().min().over("_name"),
                 pl.col("_home"),
             )
         )
@@ -506,29 +506,28 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
     )
     # So is a line extending a symbol and name by the same issuer (GOOGM for GOOG).
     lines = frame.select(
-        symbol,
-        "_exchange",
-        "_home",
-        "_name",
-        _first=pl.col("_name").str.extract(r"^(\S+)"),
-        _issuer=pl.col("_isin").str.slice(0, 8),
+        symbol, "_exchange", "_name", _issuer=pl.col("_isin").str.slice(0, 8)
     )
+    others = lines.rename(
+        {symbol: "_other", "_name": "_other_name", "_issuer": "_other_issuer"}
+    )
+    # Joined on each shorter start of the symbol, so the join stays as long as the data.
     extensions = (
-        lines.join(
-            lines.rename(
-                {symbol: "_other", "_name": "_other_name", "_issuer": "_other_issuer"}
-            ).drop("_home"),
-            on=["_exchange", "_first"],
+        lines.with_columns(
+            pl.int_ranges(1, pl.col(symbol).str.len_chars()).alias("_length")
         )
+        .explode("_length")
+        .drop_nulls("_length")
+        .with_columns(pl.col(symbol).str.slice(0, pl.col("_length")).alias("_other"))
+        .join(others, on=["_exchange", "_other"])
         .filter(
-            (pl.col(symbol) != pl.col("_other"))
-            & pl.col(symbol).str.starts_with(pl.col("_other"))
-            & pl.col("_name").str.starts_with(pl.col("_other_name") + " ")
+            pl.col("_name").str.starts_with(pl.col("_other_name") + " ")
             & (pl.col("_issuer") == pl.col("_other_issuer")).fill_null(
                 pl.col(symbol).str.len_chars() == pl.col("_other").str.len_chars() + 1
             )
         )
-        .unique(symbol)
+        .sort(symbol, "_length", descending=[False, True])
+        .unique(symbol, keep="first", maintain_order=True)
         .select(symbol, pl.col("_other_name").alias("_extended"))
     )
     frame = (
@@ -547,7 +546,7 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         frame.filter(~pl.col("_delisted") & pl.col("_currency").is_not_null())
         .group_by("_exchange", "_home", "_currency")
         .len()
-        .sort("len", descending=True)
+        .sort("len", "_currency", descending=[True, False])
         .unique(["_exchange", "_home"], keep="first", maintain_order=True)
         .select("_exchange", "_home", pl.col("_currency").alias("_usual"))
     )
