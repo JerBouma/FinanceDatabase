@@ -141,6 +141,41 @@ class Database:
 
         return get_family
 
+    def get_etfs_by_isin(self) -> dict[str, dict[str, str]]:
+        """
+        ISIN -> name, categories and family of its existing ETF listings (cased names first).
+        """
+        if "etf_isins" not in self.cache:
+            frames = [
+                read_csv_text(p)[
+                    ["name", "category_group", "category", "family", "isin"]
+                ]
+                for p in glob.glob(f"{self.root}/etfs/*.csv")
+            ]
+            etfs = pd.concat(frames)
+            etfs = etfs[(etfs["isin"].str.len() == 12) & (etfs["name"] != "")]
+            cased = etfs["name"].str.contains("[a-z]")
+            known = {}
+            for isin, group in etfs.groupby("isin"):
+                pick = lambda column, rows=group: (  # noqa: E731
+                    rows[column][rows[column] != ""].mode().iloc[0]
+                    if (rows[column] != "").any()
+                    else ""
+                )
+                names = (
+                    group[cased.loc[group.index]]
+                    if cased.loc[group.index].any()
+                    else group
+                )
+                known[isin] = {
+                    "name": pick("name", names),
+                    "category_group": pick("category_group"),
+                    "category": pick("category"),
+                    "family": pick("family"),
+                }
+            self.cache["etf_isins"] = known
+        return self.cache["etf_isins"]
+
     def write(self) -> None:
         """
         Write back only the files that changed, keeping the rest byte-identical.

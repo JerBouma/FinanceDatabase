@@ -345,8 +345,8 @@ jobs:
                     group.to_csv(f'database/equities/{exchange}.csv')
                 if unknown_exchange.any():
                     equities[unknown_exchange].to_csv('database/equities/NAN.csv')
-      # New equities and ETFs from the official HKEX, NSE, JPX, ASX, TSX/TSXV and Nasdaq Trader
-      # symbol directories, enriched via OpenFIGI and SEC EDGAR. Each source is isolated: a blocked, failing
+      # New equities and ETFs from the official HKEX, NSE, JPX, ASX, TSX/TSXV, Nasdaq Trader,
+      # Xetra, Euronext and SIX symbol directories, enriched via OpenFIGI and SEC EDGAR. Each source is isolated: a blocked, failing
       # or changed source is skipped and logged. This step can never fail the pipeline: the
       # script exits cleanly on any error, and continue-on-error / timeout-minutes make sure
       # the US update above is still committed and the compression jobs still run.
