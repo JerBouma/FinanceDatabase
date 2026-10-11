@@ -247,6 +247,21 @@ def test_search_instruments_flags_delisted(server, delisted_symbol):
     assert flags[delisted_symbol] is True
 
 
+def test_query_without_spaces_matches_whole_words(server):
+    """Test that 'loreal' finds L'Oreal first, but 'toyota' does not find 'Toyo Tanso'."""
+    loreal = call_json(
+        server.mcp, "search_instruments", {"query": "loreal", "limit": 1}
+    )
+    assert loreal["rows"][0]["symbol"] == "OR.PA"
+    toyota = call_json(
+        server.mcp,
+        "equities",
+        {"query": "toyota", "include_delisted": True, "limit": 200},
+    )
+    assert toyota["rows"][0]["symbol"] == "7203.T"
+    assert not [row for row in toyota["rows"] if "toyo tanso" in row["name"].lower()]
+
+
 def test_query_ranks_exact_symbol_first(server):
     """Test that an exact symbol match comes first and the query is case-insensitive."""
     payload = call_json(server.mcp, "equities", {"query": "aapl", "limit": 3})

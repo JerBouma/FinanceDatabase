@@ -191,9 +191,9 @@ def build_query_expressions(
     compact = normalized.replace(" ", "")
     match = match | name.str.contains(needle, literal=True).fill_null(False)
     if len(compact) >= COMPACT_MINIMUM:
-        match = match | pl.col("_compact").str.contains(
-            compact, literal=True
-        ).fill_null(False)
+        # Spaces may be left out ('loreal'), but the match starts and ends on a word.
+        spaced_out = r"\b" + " ?".join(compact) + r"\b"
+        match = match | words.str.contains(spaced_out).fill_null(False)
     if spaced.strip():
         match = match | words.str.contains(spaced.strip(), literal=True).fill_null(
             False
@@ -203,6 +203,7 @@ def build_query_expressions(
     )
     if len(compact) >= COMPACT_MINIMUM:
         named = named | (pl.col("_compact") == compact)
+        named = named | (key.str.replace_all(" ", "", literal=True) == compact)
     tier = pl.when(identifier | full).then(0)
     tier = tier.when(exact | named.fill_null(False)).then(1)
     tier = tier.when(words.str.starts_with(spaced)).then(2)
