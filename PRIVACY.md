@@ -16,11 +16,11 @@ The hosted server at `https://financedatabase.jeroenbouma.com/mcp` answers the t
 
 - **What it receives:** the name of the tool and its arguments, for example a country or sector filter or a ticker to search for. It does not receive your conversation or any other content from your assistant; what your assistant does with your conversation is covered by its provider's own privacy policy.
 - **Logs:** the server keeps standard technical logs of requests (time, path and response status) and, when a tool call fails, the error message, which can include the filter value that caused it. They are used only to keep the server running and to fix problems.
-- **Usage statistics:** the server counts how often each tool is called per day, how often calls fail and how long they take. These totals are published at [`/stats`](https://financedatabase.jeroenbouma.com/stats). They contain no arguments, IP addresses or other information about who made a call.
+- **Usage statistics:** the server counts how often each tool is called per day, how often calls fail and how long they take, and how many different users make calls. To tell users apart it combines your IP address and your client's user agent into a keyed hash (HMAC-SHA256 with a secret only the server holds) and keeps only that pseudonymous code, never the address or user agent themselves. Totals are published at [`/stats`](https://financedatabase.jeroenbouma.com/stats); they contain no arguments, IP addresses, codes or other information about who made a call.
 - **Network:** requests reach the server through Cloudflare, which processes them (including your IP address) as described in [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/).
 
 ## Contact
 
 Questions about this policy can be sent to jer.bouma@gmail.com.
 
-_Last updated: October 10, 2026_
+_Last updated: October 11, 2026_

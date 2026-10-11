@@ -419,7 +419,7 @@ For manual config, add the following to your client's MCP config file (e.g. `cla
 
 For Claude Code: `claude mcp add finance-database -- uvx --from "financedatabase[mcp]" financedatabase-mcp`. Alternatively, download the [Finance Database MCPB bundle](https://github.com/JerBouma/FinanceDatabase/releases/latest/download/financedatabase.mcpb) and open it with Claude Desktop. The data is downloaded once, cached locally and checked for updates at most once a day, exactly like the Python package. `financedatabase-mcp-inspector` opens the [MCP Inspector](https://github.com/modelcontextprotocol/inspector) to try the tools in a browser.
 
-To host the server yourself, run `financedatabase-mcp --transport streamable-http --port 8000` or use the included `Dockerfile` and `docker-compose.yml`. The server answers `/health` for health checks, and with `FD_MCP_ANALYTICS=1` it also publishes anonymous usage totals (calls per day and per tool, no personal data) at `/stats`.
+To host the server yourself, run `financedatabase-mcp --transport streamable-http --port 8000` or use the included `Dockerfile` and `docker-compose.yml`. The server answers `/health` for health checks, and with `FD_MCP_ANALYTICS=1` it also publishes anonymous usage totals (calls per day and per tool, and unique users counted by a keyed hash of address and user agent) at `/stats`; set `FD_MCP_SECRET_KEY` to choose the hash secret, otherwise one is generated next to the statistics file.
 
 ### Tools
 

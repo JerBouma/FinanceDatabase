@@ -13,3 +13,15 @@ def test_resolve_values_accepts_a_unique_prefix() -> None:
         [],
     )
     assert resolve_values("Van", options)[1] == ["Van"]
+
+
+def test_resolve_values_ignores_accents() -> None:
+    """Test that 'curacao' finds 'Curaçao' and an accent in the value is no obstacle."""
+    options = {"curaçao", "netherlands", "hotels, restaurants & leisure"}
+    assert resolve_values("curacao", options) == (["curaçao"], [])
+    assert resolve_values("Curacao, Netherlands", options) == (
+        ["curaçao", "Netherlands"],
+        [],
+    )
+    assert resolve_values("Nethèrlands", options) == (["netherlands"], [])
+    assert resolve_values("Hotels, Restaurants & Leisure", options)[1] == []

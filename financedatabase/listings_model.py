@@ -35,6 +35,12 @@ PRIOR_LISTINGS = 20
 # A home makes up at least this share of an exchange's listings for the exchange to
 # be a home market of it (Frankfurt is one for German companies at 6%).
 HOME_SHARE = 0.05
+# A currency of at least this share of a country's listings at home is one of its
+# home currencies.
+HOME_CURRENCY_SHARE = 0.1
+# A word of at least this share of the names that carry it naming lines abroad in
+# another currency marks such lines as local receipts ('CDR', 'DRN').
+RECEIPT_WORD_SHARE = 0.95
 # Listings scoring within this fraction of the best one are primary as well (the
 # National Stock Exchange and BSE for an Indian company).
 PRIMARY_TOLERANCE = 0.9
@@ -379,23 +385,147 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         .drop("len")
     )
 
+    # The currencies a country's companies trade in at home: those of a tenth or more
+    # of their listings on main venues where they make up a share of the listings
+    # (yuan and Hong Kong dollars for Chinese companies, not Canadian dollars for US
+    # ones).
+    home_currencies = (
+        listed.join(shares, on=["_exchange", "_home"], how="inner")
+        .filter(
+            pl.col("_exchange").is_in(main_venues)
+            & (pl.col("_share") >= HOME_SHARE)
+            & pl.col("_currency").is_not_null()
+        )
+        .group_by("_home", "_currency")
+        .len()
+        .filter(
+            pl.col("len") >= HOME_CURRENCY_SHARE * pl.col("len").sum().over("_home")
+        )
+        .select("_home", "_currency", pl.lit(True).alias("_home_currency"))
+    )
+    # The country that leads a venue: the home most of its listings come from.
+    venue_countries = (
+        listed.filter(pl.col("_home").is_not_null())
+        .group_by("_exchange", "_home")
+        .len()
+        .sort("len", "_home", descending=[True, False])
+        .unique("_exchange", keep="first", maintain_order=True)
+        .select("_exchange", pl.col("_home").alias("_venue_country"))
+    )
+
     frame = (
         frame.join(shares, on=["_exchange", "_home"], how="left", nulls_equal=True)
         .join(sizes, on="_exchange", how="left")
+        .join(home_currencies, on=["_home", "_currency"], how="left")
+        .join(
+            home_currencies.select("_home", _currencies_known=pl.lit(True)).unique(),
+            on="_home",
+            how="left",
+        )
+        .join(venue_countries, on="_exchange", how="left")
         .with_columns(
             pl.col("_exchange").is_in(main_venues).fill_null(False).alias("main_venue"),
+        )
+        .with_columns(
             (pl.col("_share").fill_null(0.0) >= HOME_SHARE).alias("_at_home"),
         )
         .with_columns(
-            pl.when(pl.col("main_venue") & pl.col("_at_home"))
+            # A listing at home only counts as one in a home currency (when its home
+            # has any), or on a main venue its home leads (UK companies in dollars in London): a US company
+            # in euros in Düsseldorf or in Canadian dollars in Toronto is a line
+            # abroad, however many such lines there are.
+            (
+                pl.col("_at_home")
+                & (
+                    pl.col("_home_currency").fill_null(False)
+                    | ~pl.col("_currencies_known").fill_null(False)
+                    | pl.col("_currency").is_null()
+                    | (
+                        pl.col("main_venue")
+                        & (pl.col("_venue_country") == pl.col("_home")).fill_null(True)
+                    )
+                )
+            ).alias("_home_line"),
+        )
+        .with_columns(
+            pl.when(pl.col("main_venue") & pl.col("_home_line"))
             .then(2 + pl.col("_share"))
             .when(pl.col("main_venue"))
             .then(1 + pl.col("_size"))
-            .when(pl.col("_at_home"))
+            .when(pl.col("_home_line"))
             .then(pl.col("_share"))
             .otherwise(0.0)
             .alias("listing_score"),
-            (pl.col("_at_home") | pl.col("main_venue")).alias("_candidate"),
+            (pl.col("_home_line") | pl.col("main_venue")).alias("_candidate"),
+        )
+    )
+    # A line abroad in another currency whose name starts with that of a share listed
+    # at home is a local receipt of it ('GE Aerospace CDR (CAD Hedged)' in Toronto).
+    home_names = (
+        frame.filter(pl.col("main_venue") & pl.col("_home_line") & ~pl.col("_delisted"))
+        .select("_home", pl.col("_name").alias("_prefix"))
+        .unique()
+    )
+    abroad = (
+        pl.col("main_venue")
+        & ~pl.col("_home_line")
+        & ~pl.col("_home_currency").fill_null(False)
+        & pl.col("_currency").is_not_null()
+    )
+    words = pl.col("_name").str.split(" ")
+    lines_abroad = frame.filter(abroad).select(
+        symbol,
+        "_home",
+        pl.int_ranges(1, words.list.len()).alias("_length"),
+        words.alias("_words"),
+    )
+    receipts = (
+        lines_abroad.explode("_length")
+        .drop_nulls("_length")
+        .select(
+            symbol,
+            "_home",
+            pl.col("_words")
+            .list.head(pl.col("_length"))
+            .list.join(" ")
+            .alias("_prefix"),
+        )
+        .join(home_names, on=["_home", "_prefix"], how="semi")
+        .get_column(symbol)
+        if lines_abroad.height
+        else pl.Series(symbol, [], dtype=pl.String)
+    )
+    # And so is a line abroad with a word that almost only names such lines ('CDR',
+    # 'Hedged', 'DRN' for a Brazilian depositary receipt).
+    names = frame.filter(~pl.col("_delisted")).select(
+        symbol,
+        abroad.alias("_abroad"),
+        get_words(pl.col("_full_name")).str.split(" ").list.unique().alias("_word"),
+    )
+    receipt_words = (
+        names.explode("_word")
+        .group_by("_word")
+        .agg(pl.col("_abroad").sum().alias("_lines"), pl.len().alias("_total"))
+        .filter(
+            (pl.col("_lines") >= PRIOR_LISTINGS)
+            & (pl.col("_lines") >= RECEIPT_WORD_SHARE * pl.col("_total"))
+        )
+        .get_column("_word")
+    )
+    receipts = pl.concat(
+        [
+            receipts,
+            names.filter(
+                pl.col("_abroad")
+                & pl.col("_word")
+                .list.eval(pl.element().is_in(receipt_words.implode()))
+                .list.any()
+            ).get_column(symbol),
+        ]
+    )
+    frame = frame.with_columns(
+        (pl.col("_candidate") & ~pl.col(symbol).is_in(receipts.implode())).alias(
+            "_candidate"
         )
     )
     frame = frame.with_columns(link_names(frame).alias("_name"))
@@ -446,6 +576,46 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
             .alias("_name")
         )
         .drop("_base", "_parent")
+    )
+    # Likewise a line whose symbol and name extend those of a listing on the same
+    # exchange, by the same issuer (the first eight characters of the ISIN) or by one
+    # letter when an ISIN is missing (GOOGM, 'Alphabet Inc. Depositary Shares ...
+    # Preferred Stock', for GOOG, but not BXMT, Blackstone Mortgage Trust, for BX).
+    lines = frame.select(
+        symbol,
+        "_exchange",
+        "_home",
+        "_name",
+        _first=pl.col("_name").str.extract(r"^(\S+)"),
+        _issuer=pl.col("_isin").str.slice(0, 8),
+    )
+    extensions = (
+        lines.join(
+            lines.rename(
+                {symbol: "_other", "_name": "_other_name", "_issuer": "_other_issuer"}
+            ).drop("_home"),
+            on=["_exchange", "_first"],
+        )
+        .filter(
+            (pl.col(symbol) != pl.col("_other"))
+            & pl.col(symbol).str.starts_with(pl.col("_other"))
+            & pl.col("_name").str.starts_with(pl.col("_other_name") + " ")
+            & (pl.col("_issuer") == pl.col("_other_issuer")).fill_null(
+                pl.col(symbol).str.len_chars() == pl.col("_other").str.len_chars() + 1
+            )
+        )
+        .unique(symbol)
+        .select(symbol, pl.col("_other_name").alias("_extended"))
+    )
+    frame = (
+        frame.join(extensions, on=symbol, how="left")
+        .with_columns(
+            (pl.col("_class_line") | pl.col("_extended").is_not_null()).alias(
+                "_class_line"
+            ),
+            pl.coalesce("_extended", "_name").alias("_name"),
+        )
+        .drop("_extended")
     )
 
     # The usual currency of a market: the most common one of its listings there.
@@ -506,10 +676,34 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
     # A line off the main venues is only primary when no main venue lists the same name
     # in any country, which guards against a wrong country on a regional line.
     on_main_venue = (pl.col("main_venue") & ~pl.col("_delisted")).any().over("_name")
+    # Share classes of one name and issuer with symbols of the same length (BRK-A,
+    # BRK-B): the one whose ISIN is listed on the most exchanges, the first symbol when
+    # that ties.
+    frame = frame.with_columns(
+        pl.col("_isin").str.slice(0, 8).alias("_issuer"),
+        pl.when(pl.col("_isin").is_not_null() & ~pl.col("_delisted"))
+        .then(pl.col("_exchange").n_unique().over("_isin"))
+        .fill_null(0)
+        .alias("_reach"),
+    )
+    tied = pl.col("_primary") & ~pl.col("_delisted") & (length == shortest)
+    groups = ["_full_name", "_issuer", "_home", "_exchange"]
+    frame = frame.with_columns(tied.alias("_tied")).with_columns(
+        pl.when("_tied").then("_reach").max().over(groups).alias("_widest")
+    )
+    frame = frame.with_columns(
+        pl.when(pl.col("_tied") & (pl.col("_reach") == pl.col("_widest")))
+        .then(pl.col(symbol))
+        .min()
+        .over(groups)
+        .alias("_first")
+    )
+    first = pl.col("_first")
     primary = (
         pl.col("_primary")
         & ~pl.col("_class_line")
         & (shortest.is_null() | (length <= shortest))
+        & (~pl.col("_tied") | first.is_null() | (pl.col(symbol) == first))
         & (pl.col("main_venue") | ~on_main_venue)
     )
     # How many listings the instrument has worldwide, a measure of its prominence.
