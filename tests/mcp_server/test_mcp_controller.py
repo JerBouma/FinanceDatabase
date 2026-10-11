@@ -358,8 +358,8 @@ def test_configured_columns_match_the_data(server):
         assert spec.category_column in spec.columns
 
 
-def test_server_reports_the_package_version(server) -> None:
-    """Test that clients see the Finance Database's version, not the MCP SDK's."""
+def test_server_reports_its_name_and_the_package_version(server) -> None:
+    """Test that clients see the server as Finance Database, with the package's version."""
     from importlib import metadata
 
     from mcp.shared.memory import create_connected_server_and_client_session
@@ -371,4 +371,5 @@ def test_server_reports_the_package_version(server) -> None:
             return (await client.initialize()).serverInfo
 
     info = asyncio.run(get_server_info())
+    assert info.name == "Finance Database"
     assert info.version == metadata.version("financedatabase")

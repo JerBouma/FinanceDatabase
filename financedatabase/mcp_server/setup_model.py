@@ -24,7 +24,7 @@ def print_banner() -> None:
     Print the Finance Database MCP setup wizard header.
     """
     body = Text()
-    body.append("\nFinanceDatabase", style="bold cyan")
+    body.append("\nFinance Database", style="bold cyan")
     body.append("  ·  ", style="dim")
     body.append("MCP Setup Wizard\n", style="bold")
     body.append(
