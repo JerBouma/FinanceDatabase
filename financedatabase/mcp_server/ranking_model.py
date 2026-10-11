@@ -60,6 +60,7 @@ class RankingProfile:
         currency_order (dict[str, int]): Currencies by how often they occur in the
             currency columns, the most common 0.
         variant_separators (list[str]): Symbol separators that mark a variant.
+        venue_sizes (dict[str, int]): Exchanges by their number of listings.
         name_keys (pl.DataFrame | None): The search frame: the symbol column, name,
             identifiers, "_key" (the name without its common trailing words),
             "_words" (the name as spaced lowercase words) and "_compact" (the name
@@ -69,6 +70,7 @@ class RankingProfile:
     trailing_words: list[str] = field(default_factory=list)
     currency_order: dict[str, int] = field(default_factory=dict)
     variant_separators: list[str] = field(default_factory=list)
+    venue_sizes: dict[str, int] = field(default_factory=dict)
     name_keys: pl.DataFrame | None = None
 
 
@@ -106,7 +108,7 @@ def create_profile(
     columns = lazy.collect_schema().names()
     currencies = [c for c in CURRENCY_COLUMNS if c in columns]
     identifiers = [c for c in identifier_columns or [] if c in columns]
-    wanted = [c for c in (columns[0], "name") if c in columns]
+    wanted = [c for c in (columns[0], "name", "exchange") if c in columns]
     frame = lazy.select(*wanted, *currencies, *identifiers).collect()
     symbols = frame.get_column(columns[0]).drop_nulls()
 
@@ -123,6 +125,11 @@ def create_profile(
             (pl.lit(" ") + get_words(pl.col("name")) + pl.lit(" ")).alias("_words"),
             get_words(pl.col("name")).str.replace_all(" ", "").alias("_compact"),
         ).unique(columns[0])
+    if "exchange" in columns:
+        counts = frame.get_column("exchange").drop_nulls().value_counts()
+        profile.venue_sizes = dict(
+            zip(counts["exchange"], counts["count"], strict=True)
+        )
     if currencies:
         profile.currency_order = get_frequency_order(
             pl.concat([frame.get_column(c) for c in currencies]).alias("currency")
@@ -384,6 +391,51 @@ def get_bucket(tier: pl.Expr) -> pl.Expr:
     )
 
 
+def keep_top_company_together(
+    lazy: pl.LazyFrame, venue_sizes: dict[str, int]
+) -> pl.LazyFrame:
+    """
+    Move the best match's company listing on the largest exchange it trades on right
+    after the best match, when that is another exchange: ASML on NASDAQ after ASML.AS,
+    the ING ADR on the NYSE after INGA.AS. Its other listings keep their place.
+
+    Args:
+        lazy (pl.LazyFrame): The matches in order, with "_key", "_bucket",
+            "exchange" and "main_venue".
+        venue_sizes (dict[str, int]): Exchanges by their number of listings.
+
+    Returns:
+        pl.LazyFrame: The matches with "_top" (the best match and that listing),
+            "_not_top" and the best match's bucket for those lines.
+    """
+    size = (
+        pl.col("exchange")
+        .replace_strict(venue_sizes, default=0, return_dtype=pl.Int64)
+        .fill_null(0)
+    )
+    company = (pl.col("_key") == pl.col("_key").first()).fill_null(False) & pl.col(
+        "main_venue"
+    ).fill_null(False)
+    largest = pl.when(company).then(size).max()
+    first_row = pl.int_range(pl.len()) == 0
+    top = first_row | (
+        company
+        & (size == largest)
+        & (pl.col("exchange") != pl.col("exchange").first())
+        & (
+            pl.int_range(pl.len())
+            == pl.when(company & (size == largest)).then(pl.int_range(pl.len())).min()
+        )
+    )
+    return lazy.with_columns(top.alias("_top")).with_columns(
+        pl.when("_top")
+        .then(pl.col("_bucket").first())
+        .otherwise(pl.col("_bucket"))
+        .alias("_bucket"),
+        (~pl.col("_top")).alias("_not_top"),
+    )
+
+
 def interleave_classes(frames: list[pl.DataFrame]) -> pl.DataFrame:
     """
     Merge the ranked matches of several asset classes. Within a bucket the classes
@@ -391,12 +443,14 @@ def interleave_classes(frames: list[pl.DataFrame]) -> pl.DataFrame:
     class whose first match is the strongest goes first: plain products before
     derivatives, a large company before a product and a small one after it (so The
     Goldman Sachs Group before the Goldman Sachs funds), then the closer match, the
-    instrument with the most listings, and the shortest name.
+    instrument with the most listings, and the shortest name. The other main-venue
+    listings of the leading class's best company come first (see
+    keep_top_company_together).
 
     Args:
         frames (list[pl.DataFrame]): Per asset class its matches in order, with the
-            columns "_bucket", "_tier", "_derivative", "_cap", "_listings" and
-            "_name_length".
+            columns "_bucket", "_tier", "_derivative", "_cap", "_listings",
+            "_name_length" and "_top".
 
     Returns:
         pl.DataFrame: The merged matches without the ranking columns.
@@ -405,6 +459,7 @@ def interleave_classes(frames: list[pl.DataFrame]) -> pl.DataFrame:
         [
             frame.with_columns(
                 pl.int_range(pl.len()).over("_bucket").alias("_turn"),
+                pl.int_range(pl.len()).alias("_row"),
                 pl.lit(position).alias("_class"),
             )
             for position, frame in enumerate(frames)
@@ -427,18 +482,27 @@ def interleave_classes(frames: list[pl.DataFrame]) -> pl.DataFrame:
             "_bucket", "_class", pl.int_range(pl.len()).over("_bucket").alias("_order")
         )
     )
-    return (
-        merged.join(order, on=["_bucket", "_class"], how="left")
-        .sort(["_bucket", "_turn", "_order"])
-        .drop(
-            "_bucket",
-            "_tier",
-            "_derivative",
-            "_cap",
-            "_listings",
-            "_name_length",
-            "_turn",
-            "_class",
-            "_order",
-        )
+    merged = merged.join(order, on=["_bucket", "_class"], how="left")
+    # The lines of the leading class's best company stay together before the other
+    # classes take turns.
+    leader = merged.sort(["_bucket", "_order"]).get_column("_class").first()
+    block = (pl.col("_class") == leader) & pl.col("_top")
+    merged = merged.with_columns(
+        pl.when(block)
+        .then(-1)
+        .otherwise((~block).cast(pl.Int32).cum_sum().over("_class", "_bucket") - 1)
+        .alias("_turn")
+    )
+    return merged.sort(["_bucket", "_turn", "_order", "_row"]).drop(
+        "_bucket",
+        "_tier",
+        "_derivative",
+        "_cap",
+        "_listings",
+        "_name_length",
+        "_top",
+        "_turn",
+        "_row",
+        "_class",
+        "_order",
     )

@@ -601,6 +601,13 @@ class DatabaseProvider:
                 ranking_model.get_bucket(pl.col("_tier")).alias("_bucket")
             )
             sort_columns = ["_bucket", *sort_columns[1:]]
+            if has_ranks:
+                lazy = ranking_model.keep_top_company_together(
+                    lazy.sort(sort_columns), profile.venue_sizes
+                )
+                sort_columns = ["_bucket", "_not_top", *sort_columns[1:]]
+            else:
+                lazy = lazy.with_columns(pl.lit(False).alias("_top"))
         return lazy.sort(sort_columns)
 
     def select_page(
@@ -810,6 +817,7 @@ class DatabaseProvider:
                     "_cap",
                     "_listings",
                     "_name_length",
+                    "_top",
                 )
                 .collect()
             )
