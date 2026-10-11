@@ -182,6 +182,42 @@ def enrich_with_openfigi(
     return listings, notes
 
 
+def lookup_full_name(isin: str, mic: str = "") -> str:
+    """
+    The full name of an exchange-traded product from Börse Frankfurt or Euronext, which
+    publish it per ISIN; empty when neither page has it.
+    """
+    for kind in ("etf", "etc"):
+        try:
+            response = requests.get(
+                f"https://www.boerse-frankfurt.de/{kind}/{isin}",
+                headers={"User-Agent": "Mozilla/5.0"},
+                timeout=30,
+            )
+            match = re.search(
+                rf"<title>(.+?) (?:Active-)?(?:ETF|ETC|ETN) \| [^|]+ \| {isin}",
+                response.text,
+            )
+            if match:
+                return html.unescape(match.group(1)).strip()
+        except requests.RequestException:
+            pass
+        time.sleep(0.3)
+    if mic:
+        try:
+            page = requests.get(
+                f"https://live.euronext.com/en/product/etfs/{isin}-{mic}",
+                headers={"User-Agent": "Mozilla/5.0"},
+                timeout=30,
+            ).text
+            match = re.search(rf'content="(?:Trackers )?([^"]+?) ETF {isin} ', page)
+            if match:
+                return html.unescape(match.group(1)).strip()
+        except requests.RequestException:
+            pass
+    return ""
+
+
 def create_factual_summary(symbol: str, row: dict[str, str], kind: str) -> str:
     """
     A summary stating only facts already in the row; nothing is inferred or invented.

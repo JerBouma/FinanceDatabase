@@ -14,6 +14,7 @@ from scripts.listings.helpers import (
     US_ETF_FILES,
     convert_to_yahoo_canada,
     fetch,
+    fetch_euronext_etfs,
     fetch_nasdaq_trader,
     fetch_optional,
     get_canada_name,
@@ -43,6 +44,10 @@ class Listing:
     figi: str = ""
     composite_figi: str = ""
     shareclass_figi: str = ""
+    category_group: str = ""
+    category: str = ""
+    family: str = ""
+    abbreviated: bool = False  # the exchange only publishes a short name
 
 
 @dataclass
@@ -306,6 +311,125 @@ def parse_tsx(tsx_json: bytes, tsxv_json: bytes) -> SourceResult:
     return result
 
 
+EURONEXT_FILES = {
+    "Euronext Amsterdam": ("AMS", ".AS", "XAMS"),
+    "Euronext Paris": ("PAR", ".PA", "XPAR"),
+    "Euronext Brussels": ("BRU", ".BR", "XBRU"),
+    "Euronext Lisbon": ("LIS", ".LS", "XLIS"),
+    "Oslo Børs": ("OSL", ".OL", "XOSL"),
+}
+
+
+def parse_euronext(csv: bytes) -> SourceResult:
+    """
+    ETFs on Euronext Amsterdam, Paris, Brussels, Lisbon and Oslo.
+    """
+    lines = csv.decode("utf-8-sig").splitlines()
+    rows = [line for i, line in enumerate(lines) if i == 0 or line.count(";") > 5]
+    data = pd.read_csv(
+        io.StringIO("\n".join(rows)), sep=";", dtype=str, keep_default_na=False
+    )
+    require(
+        {"Name", "ISIN", "Symbol", "Market", "Currency"} <= set(data.columns),
+        "Euronext",
+    )
+    require(len(data) > 500, "Euronext ETF list too short")
+    result = SourceResult()
+    for _, row in data.iterrows():
+        market = row.Market.split(",")[0].strip()
+        if market not in EURONEXT_FILES or not row.Symbol.strip():
+            continue
+        file, suffix, mic = EURONEXT_FILES[market]
+        symbol = row.Symbol.strip() + suffix
+        result.official.setdefault(file, set()).add(symbol)
+        result.listings.append(
+            Listing(
+                "etfs",
+                file,
+                symbol,
+                row.Name.strip(),
+                row.Currency.strip(),
+                row.ISIN.strip(),
+                mic=mic,
+                abbreviated=True,
+            )
+        )
+    return result
+
+
+def parse_xetra(csv: bytes) -> SourceResult:
+    """
+    ETFs and ETCs on Xetra.
+    """
+    data = pd.read_csv(
+        io.BytesIO(csv), sep=";", skiprows=2, dtype=str, keep_default_na=False
+    )
+    columns = {"Instrument", "ISIN", "Mnemonic", "Instrument Type", "Currency"}
+    require(columns <= set(data.columns), "Xetra")
+    require(len(data) > 3000, "Xetra instrument list too short")
+    result = SourceResult(official={"GER": {f"{m}.DE" for m in data.Mnemonic if m}})
+    funds = data[
+        data["Instrument Type"].isin(["ETF", "ETC"])
+        & (data["Instrument Status"] == "Active")
+        & (data.Mnemonic != "")
+    ]
+    for _, row in funds.iterrows():
+        result.listings.append(
+            Listing(
+                "etfs",
+                "GER",
+                f"{row.Mnemonic.strip()}.DE",
+                row.Instrument.strip(),
+                row.Currency.strip(),
+                row.ISIN.strip(),
+                mic="XETR",
+                abbreviated=True,
+            )
+        )
+    return result
+
+
+def parse_six(csv: bytes) -> SourceResult:
+    """
+    ETFs on SIX Swiss Exchange.
+    """
+    data = pd.read_csv(
+        io.BytesIO(csv), sep=";", dtype=str, keep_default_na=False, encoding="latin-1"
+    )
+    columns = {"ShortName", "ValorSymbol", "ISIN", "TradingBaseCurrency", "ProductLine"}
+    require(columns <= set(data.columns), "SIX")
+    require(len(data) > 1000, "SIX fund list too short")
+    result = SourceResult(official={"EBS": {f"{s}.SW" for s in data.ValorSymbol if s}})
+    for _, row in data[
+        (data.ProductLine == "ET") & (data.ValorSymbol != "")
+    ].iterrows():
+        result.listings.append(
+            Listing(
+                "etfs",
+                "EBS",
+                f"{row.ValorSymbol.strip()}.SW",
+                row.ShortName.strip(),
+                row.TradingBaseCurrency.strip(),
+                row.ISIN.strip(),
+                mic="XSWX",
+                abbreviated=True,
+            )
+        )
+    return result
+
+
+def get_xetra_download_url() -> str:
+    """
+    The Xetra instrument file moves now and then; read its link from the overview page.
+    """
+    page = fetch(
+        "https://www.cashmarket.deutsche-boerse.com/cash-en/trading/Tradable-Instruments-Xetra"
+    ).decode()
+    match = re.search(r'href="([^"]*t7-xetr-allTradableInstruments\.csv)"', page)
+    require(match is not None, "Xetra download link not found")
+    return match.group(1)
+
+
 def get_jpx_download_url() -> str:
     """
     The JPX listed-issues file name changes over time; read it from the index page.
@@ -347,5 +471,14 @@ def load_sources(group_sector: dict[str, str]) -> dict[str, Callable[[], SourceR
         ),
         "TSX/TSXV": lambda: parse_tsx(
             fetch(tsx.format("tsx")), fetch(tsx.format("tsxv"))
+        ),
+        "Xetra": lambda: parse_xetra(fetch(get_xetra_download_url())),
+        "Euronext": lambda: parse_euronext(fetch_euronext_etfs()),
+        "SIX": lambda: parse_six(
+            fetch(
+                "https://www.six-group.com/fqs/ref.csv?select=ShortName,ValorSymbol,ISIN,"
+                "TradingBaseCurrency,ProductLine&where=PortalSegment=FU&orderby=ShortName"
+                "&page=1&pagesize=99999"
+            )
         ),
     }
