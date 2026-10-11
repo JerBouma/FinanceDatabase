@@ -120,7 +120,8 @@ class UtilityToolRegistry:
 
     def search_categories(self) -> str:
         """
-        List the asset classes in the Finance Database, with their tool, size and filters.
+        List the Finance Database's asset classes (which instruments exist and how they
+        are classified, no prices), with their tool, size and filters.
 
         Use this first to see what is available. Each asset class has its own tool
         (e.g. `equities`) whose filters are listed here; `show_options` gives the
@@ -199,7 +200,8 @@ class UtilityToolRegistry:
         ] = None,
     ) -> str:
         """
-        Show the valid values of a filter (e.g. every sector or country) for an asset class.
+        Show the valid values of a Finance Database filter (e.g. every sector or
+        country) for an asset class.
 
         Use this before filtering an asset class tool so the exact values are known.
         Filters narrow the options to what actually occurs, e.g. the industries of
@@ -298,7 +300,9 @@ class UtilityToolRegistry:
         ] = 0,
     ) -> str:
         """
-        Find instruments by ticker, name or ISIN across all asset classes at once.
+        Find which instruments exist in the Finance Database by ticker, name or ISIN,
+        across equities, ETFs, indices, currencies and cryptocurrencies at once, with
+        their symbol, exchange and classification (no prices or financial data).
 
         Matches are case-insensitive substrings of the symbol or name (plus exact
         ISIN/CUSIP/FIGI matches), ordered by relevance: exact symbol first, then
