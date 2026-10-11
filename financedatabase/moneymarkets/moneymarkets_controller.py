@@ -12,9 +12,11 @@ from financedatabase.frame_model import FinanceFrame
 class Moneymarkets(FinanceDatabase):
     """
     Money market funds, selectable by currency and family.
+    No longer maintained since October 2026: the data stays available as it is.
     """
 
     FILE_NAME = "moneymarkets.bz2"
+    RETIRED = True
     FIELDS = {
         "currency": ("currency", "currencies"),
         "family": ("family", "families"),

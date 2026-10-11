@@ -4,10 +4,10 @@
 server:
   name: "Finance Database"
   instructions: >-
-    The Finance Database categorises 300,000+ financial symbols: equities, ETFs,
-    funds, indices, currencies, cryptocurrencies and money markets. It holds
-    classifications (sector, industry, country, exchange, market cap tier, ETF
-    category, fund family, ...), not prices or fundamentals. Start with
+    The Finance Database categorises financial symbols: equities, ETFs, indices,
+    currencies and cryptocurrencies. It holds classifications (sector, industry,
+    country, exchange, market cap tier, ETF category, ETF family, ...), not prices
+    or fundamentals. Start with
     `search_instruments` to find a symbol by ticker, name or ISIN, use
     `show_options` to see the exact filter values that exist, and use the asset
     class tools (`equities`, `etfs`, ...) to list everything matching a set of
@@ -45,7 +45,7 @@ filter_descriptions:
   market_cap: "Market cap tier: 'Mega Cap' (>= $200B), 'Large Cap' (>= $10B), 'Mid Cap' (>= $2B), 'Small Cap' (>= $300M), 'Micro Cap' (>= $50M) or 'Nano Cap'."
   category_group: "Broad category group, e.g. 'Equities', 'Fixed Income', 'Commodities' or 'Information Technology'."
   category: "Category, e.g. 'Large Cap', 'Bonds', 'Technology' or 'Emerging Markets'."
-  family: "Fund family (issuer), e.g. 'BlackRock Asset Management' or 'Vanguard Asset Management' (ETFs), 'Fidelity Investments' (funds). Use show_options to find the exact name."
+  family: "Fund family (issuer), e.g. 'BlackRock Asset Management' or 'Vanguard Asset Management'. Use show_options to find the exact name."
   base_currency: "Base currency of the pair as an ISO code, e.g. 'EUR' in EURUSD."
   quote_currency: "Quote currency of the pair as an ISO code, e.g. 'USD' in EURUSD."
   cryptocurrency: "Cryptocurrency code, e.g. 'ETH', 'ADA' or 'XRP'."
@@ -74,16 +74,6 @@ asset_classes:
     supports_delisted: true
     supports_primary_listing: true
 
-  - tool_name: "funds"
-    display_name: "Funds"
-    class_name: "Funds"
-    description: "List mutual funds matching filters such as category group, category, family (fund house), currency and exchange, or matching a free-text query on symbol or name. Every filter accepts one value or several comma-separated values. Use show_options('funds', '<field>') to see valid filter values."
-    summary: "Find mutual funds by category, fund family, currency, exchange or name."
-    default_columns: ["symbol", "name", "currency", "category_group", "category", "family", "exchange"]
-    columns: ["symbol", "name", "currency", "summary", "category_group", "category", "family", "exchange", "mic"]
-    category_column: "category"
-    supports_delisted: false
-    supports_primary_listing: true
 
   - tool_name: "indices"
     display_name: "Indices"
@@ -118,18 +108,6 @@ asset_classes:
     supports_delisted: false
     supports_primary_listing: false
 
-  - tool_name: "moneymarkets"
-    display_name: "Money Markets"
-    class_name: "Moneymarkets"
-    description: "List money market funds matching a currency and/or family (fund house), or matching a free-text query on symbol or name. Every filter accepts one value or several comma-separated values. Use show_options('moneymarkets', 'family') to see valid families."
-    summary: "Find money market funds by currency, fund family or name."
-    default_columns: ["symbol", "name", "currency", "family", "exchange"]
-    columns: ["symbol", "name", "currency", "summary", "family", "exchange"]
-    category_column: "family"
-    supports_delisted: false
-    supports_primary_listing: false
-
-# Columns a query matches exactly, so an ISIN, CUSIP or FIGI finds its instrument.
 # Other names for filter values, per field: the database value, then its aliases.
 synonyms:
   country:
@@ -178,6 +156,7 @@ synonyms:
     Micro Cap: ["Microcap", "Micro-cap"]
     Nano Cap: ["Nanocap", "Nano-cap"]
 
+# Columns a query matches exactly, so an ISIN, CUSIP or FIGI finds its instrument.
 identifier_columns: ["isin", "cusip", "figi", "composite_figi", "shareclass_figi"]
 
 # Registered in tools_model.py; listed here for the mcpb manifest.

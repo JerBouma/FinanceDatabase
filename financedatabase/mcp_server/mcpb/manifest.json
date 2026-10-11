@@ -3,8 +3,8 @@
   "name": "finance-database",
   "display_name": "Finance Database",
   "version": "2.5.0",
-  "description": "Give AI assistants a categorised map of 300,000+ financial symbols: equities, ETFs, funds, indices, currencies, cryptocurrencies and money markets.",
-  "long_description": "The Finance Database gives AI assistants access to 300,000+ symbols categorised by sector, industry group, industry, country, exchange, market cap tier, ETF and fund category, fund family and more. Find every mid cap semiconductor company in Taiwan, every bond ETF from a given issuer, or the ticker behind a company name or ISIN, and pass the results to the Finance Toolkit for fundamentals and prices.\n\nNo API key is needed: the database is free and open. It is downloaded once, cached locally and checked for updates at most once a day.",
+  "description": "Give AI assistants a categorised map of financial symbols: equities, ETFs, indices, currencies and cryptocurrencies.",
+  "long_description": "The Finance Database gives AI assistants access to 300,000+ symbols categorised by sector, industry group, industry, country, exchange, market cap tier, ETF category, ETF issuer and more. Find every mid cap semiconductor company in Taiwan, every bond ETF from a given issuer, or the ticker behind a company name or ISIN, and pass the results to the Finance Toolkit for fundamentals and prices.\n\nNo API key is needed: the database is free and open. It is downloaded once, cached locally and checked for updates at most once a day.",
   "author": {
     "name": "Jeroen Bouma",
     "email": "jer.bouma@gmail.com",
@@ -26,11 +26,9 @@
     "stocks",
     "equities",
     "etfs",
-    "funds",
     "indices",
     "currencies",
     "cryptocurrencies",
-    "money-markets",
     "sectors",
     "industries",
     "gics"
@@ -59,10 +57,6 @@
       "description": "Find ETFs by category, issuer family, currency, exchange or name."
     },
     {
-      "name": "funds",
-      "description": "Find mutual funds by category, fund family, currency, exchange or name."
-    },
-    {
       "name": "indices",
       "description": "Find market indices by category, currency, exchange or name."
     },
@@ -73,10 +67,6 @@
     {
       "name": "cryptos",
       "description": "Find cryptocurrency pairs by coin and quote currency."
-    },
-    {
-      "name": "moneymarkets",
-      "description": "Find money market funds by currency, fund family or name."
     },
     {
       "name": "search_categories",

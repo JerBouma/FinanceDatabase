@@ -26,9 +26,7 @@ from financedatabase.utilities.logger_model import get_logger
 
 logger = get_logger()
 
-AssetClass = Literal[
-    "equities", "etfs", "funds", "indices", "currencies", "cryptos", "moneymarkets"
-]
+AssetClass = Literal["equities", "etfs", "indices", "currencies", "cryptos"]
 
 
 class UtilityToolRegistry:
@@ -174,7 +172,7 @@ class UtilityToolRegistry:
             str | None,
             Field(
                 description="The filter to list the values of, e.g. 'sector', 'country', "
-                "'industry' (equities) or 'category', 'family' (ETFs and funds). Leave "
+                "'industry' (equities) or 'category', 'family' (ETFs). Leave "
                 "empty for an overview of every filter."
             ),
         ] = None,
@@ -282,7 +280,7 @@ class UtilityToolRegistry:
             str | list[str],
             Field(
                 description="Asset classes to search: 'all' (default) or one or more of "
-                "equities, etfs, funds, indices, currencies, cryptos, moneymarkets "
+                "equities, etfs, indices, currencies, cryptos "
                 "(comma-separated)."
             ),
         ] = "all",
