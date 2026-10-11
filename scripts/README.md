@@ -90,6 +90,11 @@ Enrichment of new rows (each step is optional; if it fails, rows are still added
 - European ETFs: a line of a fund already in the database takes that fund's name, categories
   and family (by ISIN); a new fund takes its full name from its Börse Frankfurt or Euronext
   page, at most 300 lookups per source and run.
+- ETF categories (every run, blanks only): a fund's other listings (same ISIN) give its
+  category; otherwise the most decisive word or word pair of the name does, when ≥ 85% of
+  ≥ 20 ETFs carrying it share the value ('treasury' → Fixed Income / Treasury Bonds). Words
+  mostly used by one issuer ('Deka', 'iShares') decide nothing, and a category is only
+  given with its own group. On held-out ETFs this is right about 94% of the time.
 - Every other new row gets a factual summary built only from its known fields.
 
 ## Cryptocurrencies, currencies and indices (`markets/`)

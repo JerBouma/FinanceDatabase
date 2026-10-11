@@ -178,6 +178,33 @@ class Database:
             self.cache["etf_isins"] = known
         return self.cache["etf_isins"]
 
+    def get_merged_frames(self, kind: str) -> list[pd.DataFrame]:
+        """
+        Every file of an asset class with the rows added this run merged in, so rules over
+        the whole class see them; the files are then written as changed.
+
+        Args:
+            kind (str): The asset class folder, e.g. "etfs".
+
+        Returns:
+            list[pd.DataFrame]: The files.
+        """
+        for path in sorted(glob.glob(f"{self.root}/{kind}/*.csv")):
+            self.get_frame(kind, os.path.basename(path)[:-4])
+        frames = []
+        for path in [p for p in self.frames if f"/{kind}/" in p]:
+            original = self.frames[path]
+            if self.added[path]:
+                merged = pd.concat(
+                    [original, pd.DataFrame(self.added[path])[original.columns]]
+                )
+                if original.index.is_monotonic_increasing:
+                    merged = merged.sort_index()
+                merged.attrs["changed"] = True
+                self.frames[path], self.added[path] = merged, []
+            frames.append(self.frames[path])
+        return frames
+
     def write(self) -> None:
         """
         Write back only the files that changed, keeping the rest byte-identical.

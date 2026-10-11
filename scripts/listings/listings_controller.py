@@ -9,6 +9,7 @@ from collections.abc import Callable
 
 import pandas as pd
 
+from scripts.listings.categories_model import fill_etf_categories
 from scripts.listings.database_model import Database
 from scripts.listings.enrichment_model import (
     SecFunds,
@@ -254,6 +255,11 @@ def run(
             print(f"  {note}")
         for kind, file, old, new in summary["delisted"]:
             print(f"  delisted {kind}/{file} {old} (now listed as {new})")
+    try:
+        filled = fill_etf_categories(db.get_merged_frames("etfs"))
+        print(f"ETF categories: {filled} blank values filled")
+    except Exception as error:  # noqa: BLE001
+        print(f"ETF categories: skipped ({type(error).__name__}: {error})")
     if not dry_run:
         db.write()
     if failures:
