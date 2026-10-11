@@ -36,7 +36,7 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.13'
-      - run: pip install pandas financedatabase
+      - run: pip install pandas financedatabase python-stdnum
       # New NASDAQ, NYSE and NYSE American equities and market cap tiers.
       # See scripts/README.md for the rules.
       - name: Add New Tickers and Update Old Ones
@@ -210,6 +210,6 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.11'
-      - run: pip install pandas financedatabase
+      - run: pip install pandas financedatabase python-stdnum
       - name: Check GICS Categorisation
         run: python scripts/check_gics.py
