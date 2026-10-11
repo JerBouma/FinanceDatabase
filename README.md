@@ -28,9 +28,9 @@ Some key statistics of the database:
 | 💼 | **Funds** | 57,761 | 29 | 1,534 fund families · 70 categories |
 | 📈 | **Indices** | 82,294 | 63 | 42 categories |
 | 💱 | **Currencies** | 2,516 | – | 177 currencies |
-| 🪙 | **Cryptocurrencies** | 5,557 | – | 642 coins · 12 quote currencies |
+| 🪙 | **Cryptocurrencies** | 5,629 | – | 651 coins · 12 quote currencies |
 | 🏦 | **Money Markets** | 1,225 | 4 | 131 fund families |
-| | **Total** | **319,268** | | |
+| | **Total** | **319,340** | | |
 
 <!-- STATISTICS:END -->
 
