@@ -13,7 +13,7 @@
 
 As a private investor, the sheer amount of information that can be found on the internet is rather daunting. Trying to understand what types of companies or ETFs are available is incredibly challenging, with millions of companies and derivatives available on the market. Sure, the most traded companies and ETFs can quickly be found simply because they are known to the public (for example, Microsoft, Tesla, S&P 500 ETF, or an All-World ETF). However, what else is out there is often unknown.
 
-**This is why I created the FinanceDatabase**, a database featuring 300,000+ symbols containing Equities, ETFs, Indices, Currencies and Cryptocurrencies, plus the Funds and Money Markets it held until October 2026. It allows you to obtain a broad overview of sectors, industries, types of investments and much more, entirely for free. Everything is stored in CSV files that anyone can read and edit, so the database grows and improves through the community.
+**This is why I created the FinanceDatabase**, a database featuring 300,000+ symbols containing Equities, ETFs, Funds, Indices, Currencies, Cryptocurrencies and Money Markets. It allows you to obtain a broad overview of sectors, industries, types of investments and much more, entirely for free. Everything is stored in CSV files that anyone can read and edit, so the database grows and improves through the community.
 
 The aim of this database is explicitly _not_ to provide up-to-date fundamentals or stock data, as those can be obtained with ease (with the help of this database) by using the [Finance Toolkit 🛠️](https://github.com/JerBouma/FinanceToolkit). Instead, it gives insights into the products that exist in each country, industry and sector and provides the most essential information about each product. With this information, you can analyze specific areas of the financial world and/or find a product that is hard to find. By utilising both, it is possible to do a fully-fledged competitive analysis with the tickers found from the FinanceDatabase inputted into the FinanceToolkit.
 
@@ -23,14 +23,14 @@ Some key statistics of the database:
 
 | | Asset class | Symbols | Exchanges | Coverage |
 | :-: | :-- | --: | --: | :-- |
-| 🏢 | **Equities** | 121,349 | 87 | 11 sectors · 69 industries · 119 countries |
+| 🏢 | **Equities** | 121,362 | 87 | 11 sectors · 75 industries · 119 countries |
 | 📦 | **ETFs** | 48,566 | 65 | 669 issuers · 43 categories |
 | 💼 | **Funds** | 57,761 | 29 | 1,534 fund families · 70 categories |
 | 📈 | **Indices** | 82,294 | 63 | 42 categories |
 | 💱 | **Currencies** | 2,516 | – | 177 currencies |
 | 🪙 | **Cryptocurrencies** | 5,637 | – | 652 coins · 12 quote currencies |
 | 🏦 | **Money Markets** | 1,225 | 4 | 131 fund families |
-| | **Total** | **319,348** | | |
+| | **Total** | **319,361** | | |
 
 <!-- STATISTICS:END -->
 
@@ -99,8 +99,8 @@ A portion of the output is shown below. The tables in this section are cut off t
 
 | symbol   | name                     | currency   | sector                 | industry                                   | exchange   | market               | country       | market_cap   | isin         |
 |:---------|:-------------------------|:-----------|:-----------------------|:-------------------------------------------|:-----------|:---------------------|:--------------|:-------------|:-------------|
-| AAPL     | Apple Inc.               | USD        | Information Technology | Technology Hardware, Storage & Peripherals | NMS        | NASDAQ Global Select | United States | Mega Cap     | US0378331005 |
-| ASML.AS  | ASML Holding N.V.        | EUR        | Information Technology | Semiconductors & Semiconductor Equipment   | AMS        | Euronext Amsterdam   | Netherlands   | Mega Cap     | NL0010273215 |
+| AAPL     | Apple Inc.               | USD        | Information Technology | Computers & Hardware                       | NMS        | NASDAQ Global Select | United States | Mega Cap     | US0378331005 |
+| ASML.AS  | ASML Holding N.V.        | EUR        | Information Technology | Semiconductors & Chip Equipment            | AMS        | Euronext Amsterdam   | Netherlands   | Mega Cap     | NL0010273215 |
 | 7203.T   | Toyota Motor Corporation | JPY        | Consumer Discretionary | Automobiles                                | JPX        | Tokyo Stock Exchange | Japan         | Mega Cap     | JP3633400001 |
 | NESN.SW  | Nestle S.A.              | CHF        | Consumer Staples       | Food Products                              | EBS        | SIX Swiss Exchange   | Switzerland   | Mega Cap     | CH0038863350 |
 | SAP.DE   | SAP SE                   | EUR        | Information Technology | Software                                   | GER        | XETRA                | Germany       | Mega Cap     | DE0007164600 |
@@ -132,7 +132,7 @@ options = fd.show_options("equities")
 options["sector"]
 ```
 
-This returns the eleven sectors used for equities, which approximate GICS:
+This returns the eleven sectors used for equities:
 
 ```text
 ['Communication Services', 'Consumer Discretionary', 'Consumer Staples',
@@ -154,8 +154,8 @@ equities.show_options(
 Which returns:
 
 ```text
-['Banks', 'Capital Markets', 'Consumer Finance',
- 'Diversified Financial Services', 'Insurance']
+['Banks', 'Capital Markets', 'Consumer Lending', 'Insurance',
+ 'Payments & Specialty Finance']
 ```
 
 And below the number of companies in each of these industries is shown. Each company is counted once, however many exchanges it is listed on: listings that share an ISIN, share class FIGI, website or the first word of their name (such as Aegon and its perpetual bonds) are combined.
@@ -222,21 +222,21 @@ If the categorization doesn't lead to the results you are looking for, `search` 
 # Search for robotics or education companies with equipment on the Frankfurt Stock Exchange
 equities.search(
     summary=["Robotics", "Education"],
-    industry_group="Equipment",
+    industry="Equipment",
     market="Frankfurt",
     index=".F",
 )
 ```
 
-This returns the instruments listed on the Frankfurt Stock Exchange in an industry group containing "Equipment" and with "Robotics" or "Education" in their summary. Filtering on `index=".F"` is an alternative way to find the exchange or market you are looking for.
+This returns the instruments listed on the Frankfurt Stock Exchange in an industry containing "Equipment" and with "Robotics" or "Education" in their summary. Filtering on `index=".F"` is an alternative way to find the exchange or market you are looking for.
 
-| symbol | name                                                        | currency | sector                 | industry                                       | exchange | market                   | country       | market_cap |
-|:-------|:------------------------------------------------------------|:---------|:-----------------------|:-----------------------------------------------|:---------|:-------------------------|:--------------|:-----------|
-| 1KT.F  | Keysight Technologies Inc                                   | EUR      | Information Technology | Electronic Equipment, Instruments & Components | FRA      | Frankfurt Stock Exchange | United States | Large Cap  |
-| 1N1.F  | Nanalysis Scientific Corp.                                  | EUR      | Information Technology | Electronic Equipment, Instruments & Components | FRA      | Frankfurt Stock Exchange | Canada        | Nano Cap   |
-| 1YO.F  | Yangtze Optical Fibre And Cable Joint Stock Limited Company | EUR      | Information Technology | Communications Equipment                       | FRA      | Frankfurt Stock Exchange | China         | Large Cap  |
-| 1ZU.F  | Pennant Group Inc                                           | EUR      | Health Care            | Health Care Providers & Services               | FRA      | Frankfurt Stock Exchange | United States | Small Cap  |
-| 2EYA.F | Binovi Technologies Corp.                                   | EUR      | Health Care            | Health Care Technology                         | FRA      | Frankfurt Stock Exchange | Canada        | Nano Cap   |
+| symbol | name                                                        | currency | sector                 | industry                              | exchange | market                   | country        | market_cap |
+|:-------|:------------------------------------------------------------|:---------|:-----------------------|:--------------------------------------|:---------|:-------------------------|:---------------|:-----------|
+| 1YO.F  | Yangtze Optical Fibre And Cable Joint Stock Limited Company | EUR      | Information Technology | Networking & Communications Equipment | FRA      | Frankfurt Stock Exchange | China          | Large Cap  |
+| 2IU.F  | Boxlight Corporation                                        | EUR      | Information Technology | Networking & Communications Equipment | FRA      | Frankfurt Stock Exchange | United States  | Nano Cap   |
+| 49V.F  | Vertiv Holdings Co                                          | EUR      | Industrials            | Electrical Equipment                  | FRA      | Frankfurt Stock Exchange | United States  | Large Cap  |
+| A1Z1.F | eEnergy Group Plc                                           | EUR      | Industrials            | Electrical Equipment                  | FRA      | Frankfurt Stock Exchange | United Kingdom | Nano Cap   |
+| A8B.F  | Ambarella, Inc.                                             | EUR      | Information Technology | Semiconductors & Chip Equipment       | FRA      | Frankfurt Stock Exchange | United States  | Mid Cap    |
 
 And below the results are counted per industry.
 
@@ -272,25 +272,25 @@ For example, see some of the Vanguard bond ETFs listed in Berlin below:
 | 025L.BE  | Vanguard Total International Bond Index Fund ETF Shares         | EUR        | Fixed Income     | Investment Grade Bonds | Vanguard Asset Management | BER        |
 | 025N.BE  | Vanguard Long-Term Corporate Bond Index Fund ETF Shares         | EUR        | Fixed Income     | Corporate Bonds        | Vanguard Asset Management | BER        |
 
-The same applies to `search`, for example to find the funds (no longer maintained, see [Questions & Answers](#questions--answers)) that focus on pension plans:
+The same applies to `search`, for example to find semiconductor indices across providers and countries:
 
 ```python
-# Initialize the Funds database
-funds = fd.Funds()
+# Initialize the Indices database
+indices = fd.Indices()
 
-# Search for funds with "Pension" in their summary
-funds.search(summary="Pension")
+# Search for indices with "Semiconductor" in their name
+indices.search(name="Semiconductor")
 ```
 
-Which returns the funds with "Pension" in their summary, of which a few are shown below:
+Which returns semiconductor indices from the US, South Korea and Taiwan, including their price, net and total return variants, of which a few are shown below:
 
-| symbol       | name                                | currency | category_group | category                 | family                           | exchange |
-|:-------------|:------------------------------------|:---------|:---------------|:-------------------------|:---------------------------------|:---------|
-| 0P000015HA.F | Casermed Protección 6 PP            | EUR      | Equities       | Allocation               | Sa Nostra Seguros de Vida SA     | FRA      |
-| 0P000015V5.F | BK Revalorización Europa 2022 PP    | EUR      | Fixed Income   | Bonds                    | Bankinter                        | FRA      |
-| 0P000015VC.F | Bankia Protegido Renta 2023 PP      | EUR      | Fixed Income   | Bonds                    | Bankia Fondos                    | FRA      |
-| 0P000017AE.F | Santander Universidades RF Mixta PP | EUR      | Fixed Income   | Bonds                    | Santander Asset Management SGIIC | FRA      |
-| 0P000017AF.F | OpenBank Monetario PP               | EUR      | Cash           | Money Market Instruments | Santander Asset Management SGIIC | FRA      |
+| symbol   | name                                | currency | category_group         | category   | exchange |
+|:---------|:------------------------------------|:---------|:-----------------------|:-----------|:---------|
+| ^SOX     | PHLX Semiconductor                  | USD      | Information Technology | Technology | NIM      |
+| ^ICESEMI | ICE Semiconductor Index             | USD      | Information Technology | Technology | NYS      |
+| ^NQSSSE  | Nasdaq US Smart Semiconductor Index | USD      | Information Technology | Technology | NIM      |
+| ^KQ47    | Kosdaq Semiconductors Index         | KRW      | Information Technology | Technology | KOE      |
+| SEC.TW   | TSEC semiconductor subindex         | TWD      | Information Technology | Technology | TAI      |
 
 And below all actively listed ETFs are divided over their category groups.
 
@@ -299,7 +299,7 @@ And below all actively listed ETFs are divided over their category groups.
   <img alt="ETFs" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/etfs-light.png">
 </picture>
 
-The categories of each asset class can again be found with `show_options`, e.g. `fd.Indices().show_options(selection="category")` returns the 42 index categories, from 'Corporate Bonds' and 'Emerging Markets' to 'Small Cap' and 'Value'. Cryptocurrencies are selected on `cryptocurrency` and `currency`, currencies on `base_currency` and `quote_currency` and the retired money markets on `currency` and `family`. **Find the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started) and the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+The categories of each asset class can again be found with `show_options`, e.g. `fd.Indices().show_options(selection="category")` returns the 42 index categories, from 'Corporate Bonds' and 'Emerging Markets' to 'Small Cap' and 'Value'. Cryptocurrencies are selected on `cryptocurrency` and `currency` and currencies on `base_currency` and `quote_currency`. **Find the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started) and the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
 
 ### Combining with the Finance Toolkit
 
@@ -429,7 +429,7 @@ The data is an aggregation of publicly available sources: the official listing d
 
 > **What categorization method is used?**
 
-The categorization for Equities is based on a loose approximation of GICS (Global Industry Classification Standard). This database attempts to reflect sectors and industries as accurately as possible through manual curation, without collecting any actual data from MSCI's proprietary sources. The official GICS datasets curated by MSCI remain the most up-to-date, paid solution and were not used in developing any part of this database. All other categorizations in the database are independently developed and can be freely modified.
+Equities are classified in this database's own three levels: 11 sectors, which are divided into industry groups and then industries. Every valid combination is listed in [`scripts/categories.json`](https://github.com/JerBouma/FinanceDatabase/blob/main/scripts/categories.json). The categories are curated by hand and from public sources, and the weekly update classifies new companies the same way. All categorizations in the database are independently developed and can be freely modified.
 
 > **How can I find out which countries, sectors and/or industries exist within the database without needing to check the database manually?**
 

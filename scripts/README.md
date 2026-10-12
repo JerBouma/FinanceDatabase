@@ -14,7 +14,7 @@ Repository tooling that keeps `database/` current and checks it. None of it ship
 | `check_database.py` | weekly, before the commit | Undoes an update that broke the database (`--restore`) |
 | `update_compression.py` | after every update | Regenerates `compression/` from `database/` |
 | `update_readme_stats.py` | after every update | Regenerates the statistics section of `README.md` |
-| `check_gics.py` | after every update | Fails when an equity's categories are not valid GICS |
+| `check_categories.py` | after every update | Fails when an equity's categories are not in `categories.json` |
 | `validate_identifiers.py` | locally and in the test suite | Reports (and with `--apply` repairs) invalid identifiers |
 
 Every weekly script runs with `--dry-run` (where offered) and `--database database` locally,
@@ -40,14 +40,23 @@ for example `python scripts/update_listings.py --dry-run`.
 The NASDAQ, NYSE and NYSE American feeds of the US-Stock-Symbols repository add new
 equities and refresh the market cap tier of existing ones (Mega Cap ≥ $200B, Large ≥ $10B,
 Mid ≥ $2B, Small ≥ $300M, Micro ≥ $50M, else Nano). New tickers are classified through
-`us_feed_industries.csv` (Nasdaq feed industry → GICS industry), with the industry group and
+`us_feed_industries.csv` (Nasdaq feed industry → industry), with the industry group and
 sector most common for that industry. Malformed symbols, exchange-traded products and
 instruments with an expiry or maturity date (`helpers.DATED_NAME` in `listings/`) are
 skipped, and a symbol is never added when another asset class has it.
 
+The same step keeps the delisted flag of NASDAQ, NYSE and NYSE American equities current
+with the Nasdaq Trader symbol directory (`equities/status_model.py`): a row the directory
+no longer lists is delisted (none when more than 3% would be, which points to a bad
+download), and a delisted share it lists again under the same name is relisted. Lines
+abroad of a share whose home listings are all delisted are delisted too.
+
 `remove_non_shares.py` then removes any equities row that is not a company share (a name with
 a maturity or expiry date, a strike, a warrant, a coupon without share wording, or an
 international XS ISIN; `helpers.check_non_share` in `listings/`), whatever added it.
+
+The equity categories are the database's own: `categories.json` lists every valid sector,
+industry group and industry, and `check_categories.py` fails on any other.
 
 ## Exchange directories (`listings/`)
 
@@ -57,7 +66,7 @@ Sources (all public, official):
 - HKEX List of Securities: Hong Kong equities, REITs and ETPs (HKD counters).
 - NSE equity and ETF lists: India.
 - JPX list of TSE-listed issues: Japan equities and ETFs.
-- ASX listed companies: Australia equities with their GICS industry group.
+- ASX listed companies: Australia equities (rows marked 'Not Applic', trusts and funds, are skipped).
 - TSX / TSXV company directory: Canada equities and ETFs.
 - Deutsche Börse Xetra all-tradable-instruments file: ETFs and ETCs on Xetra.
 - Euronext ETF list: ETFs on Euronext Amsterdam, Paris, Brussels, Lisbon and Oslo.
@@ -118,4 +127,4 @@ applied, and the script never fails the pipeline.
 - `readme/`: everything between the `STATISTICS:START` and `STATISTICS:END` markers of
   `README.md` is regenerated; without the markers nothing changes.
 - `validation/`: the identifier audit (ISIN, CUSIP, FIGI check digits and consistency) and the
-  GICS check against `compression/categories/categories.json`.
+  categories check against `categories.json`.

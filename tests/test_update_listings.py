@@ -154,6 +154,14 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("TETRA BIO PHARMA INC WTS A", "", ""),
         ("Atossa Genetics Inc. WT EXP 052421", "", ""),
         ("Comcast Holdings ZONES", "United States", ""),
+        ("Sec Red NCD Sr.VIII", "", ""),
+        ("VextScienceWts", "", ""),
+        ("Terranet Holding AB TO3 B", "Sweden", ""),
+        ("Volvo. AB ser. B KO 1(220)", "Sweden", ""),
+        ("Volvo. AB ser. B SO 2(196)", "Sweden", ""),
+        ("Rights Issue Of Fawry For Banki", "", ""),
+        ("CSOP Hang Seng Index Daily (2x) Leveraged Product", "", ""),
+        ("CHI-X AUSTRALIA 200 MARKET CAPITALISATION PRICE RETURN INDEX", "", ""),
     ]:
         assert helpers.check_non_share(name, country, isin), name
     for name, country, isin in [
@@ -166,6 +174,9 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("Callaway Golf Company", "United States", ""),
         ("WT Microelectronics Co., Ltd.", "Taiwan", ""),
         ("Time Zones Inc.", "United States", ""),
+        ("NCD Co.,Ltd.", "Japan", ""),
+        ("Law Debenture Corporation", "United Kingdom", ""),
+        ("Totalenergies SE", "France", ""),
     ]:
         assert not helpers.check_non_share(name, country, isin), name
 

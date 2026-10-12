@@ -141,15 +141,13 @@ def test_delisted_is_strictly_boolean() -> None:
         )
 
 
-def test_equity_categories_follow_gics() -> None:
-    """Every full sector / industry group / industry combination must exist in the GICS tree.
+def test_equity_categories_follow_tree() -> None:
+    """Every full sector / industry group / industry combination must exist in scripts/categories.json.
 
-    The same check runs on main after a merge (Check-GICS-Categorisation in
+    The same check runs on main after a merge (Check-Categorisation in
     database_update.yml); running it here catches invalid combinations before merging.
     """
-    gics = json.loads(
-        Path("compression/categories/categories.json").read_text(encoding="utf-8")
-    )
+    tree = json.loads(Path("scripts/categories.json").read_text(encoding="utf-8"))
     files = sorted(Path("database/equities").glob("*.csv"))
     assert files, "no equities CSVs found under database/equities/"
     columns = ["symbol", "sector", "industry_group", "industry"]
@@ -167,11 +165,11 @@ def test_equity_categories_follow_gics() -> None:
     invalid = [
         f"{row.symbol}: {row.sector} / {row.industry_group} / {row.industry}"
         for row in complete.itertuples()
-        if row.industry not in gics.get(row.sector, {}).get(row.industry_group, {})
+        if row.industry not in tree.get(row.sector, {}).get(row.industry_group, {})
     ]
     assert not invalid, (
         f"{len(invalid)} equities have a combination that is not in "
-        f"compression/categories/categories.json: {invalid[:10]}"
+        f"scripts/categories.json: {invalid[:10]}"
     )
 
 

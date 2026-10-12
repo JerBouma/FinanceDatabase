@@ -14,7 +14,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from scripts.validation import gics_model, integrity_model
+from scripts.validation import categories_model, integrity_model
 from scripts.validation.identifiers_model import (
     FIELD_VALIDATORS,
     AuditResult,
@@ -407,9 +407,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     return 0
 
 
-def check_gics(database: str = "database") -> dict[str, str]:
+def check_categories(database: str = "database") -> dict[str, str]:
     """
-    Check every equity's sector, industry group and industry against the GICS tree.
+    Check every equity's sector, industry group and industry against scripts/categories.json.
 
     Args:
         database (str): The database folder.
@@ -417,9 +417,7 @@ def check_gics(database: str = "database") -> dict[str, str]:
     Returns:
         dict[str, str]: Symbol -> the level that is not found, empty when all are valid.
     """
-    gics = json.loads(
-        Path("compression/categories/categories.json").read_text(encoding="utf-8")
-    )
+    tree = json.loads(Path("scripts/categories.json").read_text(encoding="utf-8"))
     columns = ["symbol", "sector", "industry_group", "industry"]
     equities = pd.concat(
         [
@@ -427,26 +425,26 @@ def check_gics(database: str = "database") -> dict[str, str]:
             for path in sorted(Path(database, "equities").glob("*.csv"))
         ]
     ).set_index("symbol")
-    return gics_model.find_invalid_gics(equities, gics)
+    return categories_model.find_invalid_categories(equities, tree)
 
 
-def run_gics_check() -> None:
+def run_categories_check() -> None:
     """
-    Command line entry of the GICS check; fails when an equity is not valid GICS.
+    Command line entry of the categories check; fails on an unknown combination.
 
     Raises:
         ValueError: When invalid combinations are found.
     """
-    invalid = check_gics()
+    invalid = check_categories()
     if invalid:
         print("Invalid Rows for:")
         for symbol, error in invalid.items():
             print(f"{symbol}: {error}")
         raise ValueError(
             "There are invalid sector, industry groups and/or industries found. "
-            "Please check if it adheres to compression/categories/categories.json"
+            "Please check if it adheres to scripts/categories.json"
         )
-    print("All sectors, industry groups and industries follow GICS.")
+    print("All sectors, industry groups and industries are in scripts/categories.json.")
 
 
 def run_git(*arguments: str) -> str:

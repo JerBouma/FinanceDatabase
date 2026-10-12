@@ -8,8 +8,8 @@ import os
 
 import pandas as pd
 
-from scripts.equities import equities_model
-from scripts.listings.helpers import write_csv
+from scripts.equities import equities_model, status_model
+from scripts.listings.helpers import fetch_nasdaq_trader, write_csv
 
 
 def update_us_equities(database: str = "database") -> int:
@@ -30,7 +30,7 @@ def update_us_equities(database: str = "database") -> int:
     exchange_data = pd.concat(feeds) if feeds else pd.DataFrame()
     exchange_data = exchange_data[~exchange_data.index.duplicated(keep="first")]
 
-    # Feed industry -> GICS industry; labels spanning several industries are left out.
+    # Feed industry -> industry; labels spanning several industries are left out.
     fd_industries = (
         pd.read_csv("scripts/us_feed_industries.csv", dtype=str, keep_default_na=False)
         .set_index("feed_industry")["industry"]
@@ -121,6 +121,77 @@ def remove_non_shares(database: str, dry_run: bool = False) -> list[str]:
     return removed
 
 
+def update_us_listing_status(
+    database: str = "database", nasdaq: bytes | None = None, other: bytes | None = None
+) -> tuple[int, int]:
+    """
+    Delist the US equities the Nasdaq Trader directory no longer lists and relist the
+    ones it lists again; delistings are skipped when implausibly many.
+
+    Args:
+        database (str): The database folder.
+        nasdaq (bytes | None): nasdaqlisted.txt, downloaded when not given.
+        other (bytes | None): otherlisted.txt, downloaded when not given.
+
+    Returns:
+        tuple[int, int]: The number of delisted and relisted rows.
+    """
+    listed = status_model.read_directory(
+        nasdaq or fetch_nasdaq_trader("nasdaqlisted"),
+        other or fetch_nasdaq_trader("otherlisted"),
+    )
+    if len(listed) < status_model.MINIMUM_DIRECTORY:
+        raise ValueError(f"Nasdaq Trader directory too short ({len(listed)})")
+    frames, changes, live = {}, {}, 0
+    for file in status_model.US_FILES:
+        path = os.path.join(database, "equities", f"{file}.csv")
+        if os.path.exists(path):
+            frames[path] = pd.read_csv(
+                path, index_col=0, dtype=str, keep_default_na=False
+            )
+            changes[path] = status_model.get_status_changes(frames[path], listed)
+            live += (frames[path]["delisted"] != "True").sum()
+    delisted = sum(len(delist) for delist, _ in changes.values())
+    if delisted > status_model.MAX_DELISTED_SHARE * live:
+        print(f"  ! {delisted} US delistings looks implausible; delisting none")
+        changes = {path: ([], relist) for path, (_, relist) in changes.items()}
+        delisted = 0
+    relisted = 0
+    for path, (delist, relist) in changes.items():
+        if delist or relist:
+            frames[path].loc[delist, "delisted"] = "True"
+            frames[path].loc[relist, "delisted"] = "False"
+            write_csv(frames[path], path)
+            relisted += len(relist)
+    return delisted, relisted
+
+
+def delist_stale_lines(database: str = "database") -> int:
+    """
+    Delist the lines abroad of shares whose home listings are all delisted.
+
+    Args:
+        database (str): The database folder.
+
+    Returns:
+        int: The number of delisted rows.
+    """
+    paths = sorted(glob.glob(os.path.join(database, "equities", "*.csv")))
+    columns = ["symbol", "exchange", "country", "isin", "delisted"]
+    equities = pd.concat(
+        pd.read_csv(p, usecols=columns, dtype=str, keep_default_na=False).assign(
+            _path=p
+        )
+        for p in paths
+    ).set_index("symbol")
+    stale = equities.loc[status_model.find_stale_lines(equities)]
+    for path, rows in stale.groupby("_path"):
+        frame = pd.read_csv(path, index_col=0, dtype=str, keep_default_na=False)
+        frame.loc[rows.index.intersection(frame.index), "delisted"] = "True"
+        write_csv(frame, path)
+    return len(stale)
+
+
 def run_us_equities_update() -> None:
     """
     Command line entry of the US equities update.
@@ -132,6 +203,14 @@ def run_us_equities_update() -> None:
         update_us_equities(database)
     except Exception as error:  # noqa: BLE001
         print(f"US equities update stopped: {type(error).__name__}: {error}")
+    try:
+        delisted, relisted = update_us_listing_status(database)
+        print(f"{delisted} US equities delisted, {relisted} relisted")
+        print(
+            f"{delist_stale_lines(database)} lines abroad of delisted shares delisted"
+        )
+    except Exception as error:  # noqa: BLE001
+        print(f"US listing status stopped: {type(error).__name__}: {error}")
 
 
 def run_non_share_removal() -> None:

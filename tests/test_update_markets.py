@@ -154,3 +154,16 @@ def test_inav_categories_follow_their_index() -> None:
     assert changed == ["0JHG.DE"]
     assert frame.loc["0JHG.DE", "category"] == "Developed Markets"
     assert frame.loc["0WVA.DE", "category"] == "Factors"
+
+
+def test_numbered_twins_of_a_coin_are_dropped() -> None:
+    """Test that 'SOL1' goes when 'SOL' is the same coin, and a namesake stays."""
+    frame = pd.DataFrame(
+        {
+            "name": ["Solana USD", "Solana USD", "Cortex USD", "Cortex USD"],
+            "cryptocurrency": ["SOL", "SOL1", "CTXC", "CX"],
+            "website": ["", "https://solana.com", "http://cortexlabs.ai", "x.io"],
+        },
+        index=["SOL-USD", "SOL1-USD", "CTXC-USD", "CX-USD"],
+    )
+    assert markets_model.find_numbered_twins(frame) == ["SOL1"]

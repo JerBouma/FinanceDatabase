@@ -61,7 +61,7 @@ def lookup_industry_group(industry: str, equities: pd.DataFrame) -> str | float:
     The most common industry group of an industry in the equities.
 
     Args:
-        industry (str): The GICS industry.
+        industry (str): The industry.
         equities (pd.DataFrame): The equities.
 
     Returns:
@@ -80,8 +80,8 @@ def lookup_sector(
     The most common sector of an industry and industry group in the equities.
 
     Args:
-        industry (str): The GICS industry.
-        industry_group (str): The GICS industry group.
+        industry (str): The industry.
+        industry_group (str): The industry group.
         equities (pd.DataFrame): The equities.
 
     Returns:
@@ -108,7 +108,7 @@ def build_new_ticker(
 
     Args:
         row (pd.Series): The feed row.
-        fd_industries (dict): Feed industry label -> GICS industry.
+        fd_industries (dict): Feed industry label -> industry.
         equities (pd.DataFrame): The equities.
         market_cap (str | float): The market cap tier.
         exchange_to_mic (dict): Exchange -> MIC.

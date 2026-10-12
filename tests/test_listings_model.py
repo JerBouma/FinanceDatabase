@@ -226,3 +226,63 @@ def test_lines_without_a_home_are_never_receipts() -> None:
     ).lazy()
     ranks = listings_model.get_listing_ranks(lazy, ["EX0", "EX1", "EX2"])
     assert ranks["primary_listing"].all()
+
+
+def test_largest_home_market_abroad_ignores_foreign_lines() -> None:
+    """Test that a venue full of foreign lines does not outrank a larger home market."""
+    french = [(f"FR{i}.PA", f"French {i} SA", "PAR", "France", None) for i in range(30)]
+    regional = [
+        (f"FR{i}.HM", f"French {i} SA", "HAM", "France", None) for i in range(30)
+    ]
+    rows = [
+        *MARKET,
+        *french,
+        *regional[:4],
+        *[(f"DE{i}.HM", f"German {i} AG", "HAM", "Germany", None) for i in range(25)],
+        ("AIR.PA", "Airbus SE", "PAR", "Netherlands", "NL0000235190"),
+        ("AIR.HM", "Airbus SE", "HAM", "Netherlands", "NL0000235190"),
+    ]
+    primary = _get_primary(rows)
+    assert "AIR.PA" in primary
+    assert "AIR.HM" not in primary
+
+
+def test_symbol_shapes_of_receipts_are_not_primary() -> None:
+    """Test that a line abroad whose symbol shape only receipts have is not primary."""
+    letters = [chr(65 + i // 26) + chr(65 + i % 26) for i in range(30)]
+    rows = [
+        (f"B{c}3.SA", f"Brasil{c.lower()} SA", "SAO", "Brazil", "BRL") for c in letters
+    ]
+    rows += [
+        (f"U{c}", f"American{c.lower()} Inc.", "NYQ", "United States", "USD")
+        for c in letters
+    ]
+    rows += [
+        (f"U{c}34.SA", f"American{c.lower()} Inc.", "SAO", "United States", "BRL")
+        for c in letters
+    ]
+    rows += [(f"{c}.T", f"Japan{c.lower()} KK", "JPX", "Japan", "JPY") for c in letters]
+    # The US market is far larger than its receipts in Brazil, as in reality.
+    rows += [
+        (f"V{i}", f"Venture{i} Inc.", "NYQ", "United States", "USD") for i in range(300)
+    ]
+    rows += [("TMCO34.SA", "TOYOTAMO DRN", "SAO", "Japan", "BRL")]
+    lazy = pl.DataFrame(
+        rows, schema=["symbol", "name", "exchange", "country", "currency"], orient="row"
+    ).lazy()
+    ranks = listings_model.get_listing_ranks(lazy, listings_model.get_main_venues(lazy))
+    primary = set(ranks.filter("primary_listing").get_column("symbol"))
+    assert {"BAA3.SA", "UAA"} <= primary
+    assert not {"UAA34.SA", "TMCO34.SA"} & primary
+
+
+def test_line_abroad_with_the_share_isin_wins() -> None:
+    """Test that abroad, a line with the share's ISIN beats one without."""
+    rows = [
+        *MARKET,
+        ("GLEN.L", "Glencore plc", "AMS", "Switzerland", "JE00B4T3BW64"),
+        ("GLC.AX", "Glencore plc", "NYQ", "Switzerland", None),
+    ]
+    primary = _get_primary(rows)
+    assert "GLEN.L" in primary
+    assert "GLC.AX" not in primary

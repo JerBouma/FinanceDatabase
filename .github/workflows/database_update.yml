@@ -200,7 +200,7 @@ jobs:
           git diff-index --quiet HEAD || git commit -m "Update README statistics [skip ci]"
           git push
 
-  Check-GICS-Categorisation:
+  Check-Categorisation:
     needs:  [Add-New-Ticker, Update-Compression-Files, Update-Categorization-Files, Update-README-Statistics]
     runs-on: ubuntu-latest
     steps:
@@ -211,5 +211,5 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install pandas financedatabase python-stdnum
-      - name: Check GICS Categorisation
-        run: python scripts/check_gics.py
+      - name: Check Categorisation
+        run: python scripts/check_categories.py

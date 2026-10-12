@@ -17,7 +17,9 @@ server:
     ASML.AS). Lists without a query start
     with primary listings, ordered by market cap tier (the database holds tiers,
     not exact market caps) and, within a tier, by the number of exchanges an
-    instrument is listed on.
+    instrument is listed on. Symbols follow Yahoo Finance conventions (EURUSD=X for
+    currencies, BTC-USD for cryptocurrencies); the Finance Toolkit, which provides
+    prices and fundamentals for these symbols, writes those two as EURUSD and BTCUSD.
 
 # Every response is bounded so no call can return the full dataset.
 limits:
@@ -35,9 +37,9 @@ cache:
 # Descriptions of the filter parameters; the filters themselves come from each class's FIELDS.
 filter_descriptions:
   country: "Country of the company's headquarters, e.g. 'United States' or 'Netherlands'. This is not where it trades: ASML (Netherlands) is also listed in New York and Frankfurt. To find the listings in a country, filter on exchange or currency."
-  sector: "GICS-style sector, e.g. 'Information Technology', 'Health Care' or 'Financials'."
-  industry_group: "GICS-style industry group, e.g. 'Semiconductors & Semiconductor Equipment' or 'Banks'."
-  industry: "GICS-style industry, e.g. 'Biotechnology' or 'Hotels, Restaurants & Leisure'."
+  sector: "Sector, e.g. 'Information Technology', 'Health Care' or 'Financials'."
+  industry_group: "Industry group, e.g. 'Semiconductors' or 'Banking'. Use show_options to find the exact names."
+  industry: "Industry, e.g. 'Biotechnology', 'Banks' or 'Hospitality & Leisure'. Use show_options to find the exact names."
   currency: "Trading currency as an ISO code, e.g. 'USD' or 'EUR'."
   exchange: "Exchange code, e.g. 'NMS' (NASDAQ Global Select), 'NYQ' (NYSE), 'PNK' (OTC Markets) or 'AMS' (Euronext Amsterdam). Use it to find an instrument's listings on certain exchanges, e.g. query='ASML' with exchange='NMS,NYQ,PNK' for its US listings."
   mic: "ISO 10383 market identifier code, e.g. 'XNAS', 'XNYS' or 'XAMS'."
@@ -162,10 +164,10 @@ identifier_columns: ["isin", "cusip", "figi", "composite_figi", "shareclass_figi
 # Registered in tools_model.py; listed here for the mcpb manifest.
 utility_tools:
   - tool_name: "search_categories"
-    description: "List the asset classes with their tool, number of entries, filterable fields and description."
+    description: "List the Finance Database's asset classes with their tool, number of entries, filterable fields and description."
 
   - tool_name: "show_options"
-    description: "Show the valid values of a filter (e.g. every sector or country) for an asset class, optionally narrowed by other filters."
+    description: "Show the valid values of a Finance Database filter (e.g. every sector or country) for an asset class, optionally narrowed by other filters."
 
   - tool_name: "search_instruments"
-    description: "Find instruments by ticker, name or ISIN across all asset classes at once."
+    description: "Find which instruments exist in the Finance Database by ticker, name or ISIN across all asset classes, with their classification (no prices)."

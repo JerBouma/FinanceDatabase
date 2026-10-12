@@ -219,7 +219,7 @@ def run(
     family = db.get_etf_families()
     sec = SecFunds(sec_contact) if sec_contact else None
     if sources is None:
-        sources = load_sources(db.get_group_sector())
+        sources = load_sources()
     failures = []
     for name, load in sources.items():
         added_before = {path: len(rows) for path, rows in db.added.items()}
