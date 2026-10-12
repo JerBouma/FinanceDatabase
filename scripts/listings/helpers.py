@@ -69,6 +69,16 @@ DATE_IN_NAME = re.compile(
 )
 OPTION_NAME = re.compile(r"\b(?:CALL|PUT)\b.*\d", re.IGNORECASE)
 WARRANT_NAME = re.compile(r"\b(?:warrants?|waran|wts)\b|\bWT EXP\b", re.IGNORECASE)
+# Subscription warrants named by series ('TO3'), and names ending in 'Wts'.
+SUBSCRIPTION_NAME = re.compile(r"\bTO\d+\b|wts$", re.IGNORECASE)
+# Nordic knock-out, stop-loss and mini certificates ('KO 1(39', 'SO 2(196').
+CERTIFICATE_NAME = re.compile(r"\b(?:KO|SO|MINI)\s?\d+\s?\(")
+# Debentures, rights issues, leveraged products and indices listed as equities.
+OTHER_NON_SHARE = re.compile(
+    r"\bred(?:eemable)? NCDs?\b|\brights issue\b|\bleveraged product\b|"
+    r"\b(?:price|total) return index\b",
+    re.IGNORECASE,
+)
 COUPON = re.compile(r"\d+(?:[.,]\d+)?\s?%")
 EXCHANGEABLE_NOTE = re.compile(r"\bzones$|\bexchangeable notes?\b", re.IGNORECASE)
 SHARE_WORDS = re.compile(
@@ -97,6 +107,10 @@ def check_non_share(name: str, country: str = "", isin: str = "") -> bool:
     if isin.upper().startswith("XS") or DATE_IN_NAME.search(name):
         return True
     if OPTION_NAME.search(name) or WARRANT_NAME.search(name):
+        return True
+    if any(
+        p.search(name) for p in (SUBSCRIPTION_NAME, CERTIFICATE_NAME, OTHER_NON_SHARE)
+    ):
         return True
     if EXCHANGEABLE_NOTE.search(name):
         return True
