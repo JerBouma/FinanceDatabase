@@ -45,6 +45,12 @@ sector most common for that industry. Malformed symbols, exchange-traded product
 instruments with an expiry or maturity date (`helpers.DATED_NAME` in `listings/`) are
 skipped, and a symbol is never added when another asset class has it.
 
+The same step keeps the delisted flag of NASDAQ, NYSE and NYSE American equities current
+with the Nasdaq Trader symbol directory (`equities/status_model.py`): a row the directory
+no longer lists is delisted (none when more than 3% would be, which points to a bad
+download), and a delisted share it lists again under the same name is relisted. Lines
+abroad of a share whose home listings are all delisted are delisted too.
+
 `remove_non_shares.py` then removes any equities row that is not a company share (a name with
 a maturity or expiry date, a strike, a warrant, a coupon without share wording, or an
 international XS ISIN; `helpers.check_non_share` in `listings/`), whatever added it.
