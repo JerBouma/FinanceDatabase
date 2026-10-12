@@ -286,3 +286,105 @@ def test_line_abroad_with_the_share_isin_wins() -> None:
     primary = _get_primary(rows)
     assert "GLEN.L" in primary
     assert "GLC.AX" not in primary
+
+
+def _rank(rows: list[tuple]) -> set[str]:
+    lazy = pl.DataFrame(
+        rows,
+        schema={
+            c: pl.String
+            for c in ["symbol", "name", "exchange", "country", "currency", "isin"]
+        },
+        orient="row",
+    ).lazy()
+    ranks = listings_model.get_listing_ranks(lazy, listings_model.get_main_venues(lazy))
+    return set(ranks.filter("primary_listing").get_column("symbol"))
+
+
+def _companies(prefix: str, exchange: str, country: str, currency: str, n: int) -> list:
+    return [
+        (f"{prefix}{i}", f"{prefix}co{i} Inc.", exchange, country, currency, None)
+        for i in range(n)
+    ]
+
+
+MARKETS = [
+    *_companies("US", "NYQ", "United States", "USD", 120),
+    *_companies("FR", "PAR", "France", "EUR", 60),
+    *_companies("DE", "GER", "Germany", "EUR", 30),
+    *_companies("GR", "GER", "United States", "EUR", 50),
+    *_companies("CZ", "PRA", "Czech Republic", "CZK", 20),
+    *_companies("AT", "PRA", "Austria", "CZK", 6),
+    *_companies("VU", "VIE", "United States", "EUR", 60),
+    *_companies("VA", "VIE", "Austria", "EUR", 25),
+    *_companies("UK", "LSE", "United Kingdom", "GBP", 60),
+    *_companies("AQ", "AQS", "United Kingdom", "GBP", 25),
+]
+
+
+def test_country_without_main_venue_takes_its_home_venue() -> None:
+    """Test that Vienna, full of foreign lines, is Austria's home rather than Prague."""
+    rows = [
+        *MARKETS,
+        ("FACC.VI", "FACC AG", "VIE", "Austria", "EUR", "AT00000FACC2"),
+        ("FACC.PR", "FACC AG", "PRA", "Austria", "CZK", "AT00000FACC2"),
+    ]
+    primary = _rank(rows)
+    assert "FACC.VI" in primary
+    assert "FACC.PR" not in primary
+
+
+def test_home_line_without_isin_gives_way() -> None:
+    """Test that a domestic line without an ISIN gives way to the same name with one."""
+    rows = [
+        *MARKETS,
+        (
+            "AVON.L",
+            "Avon Technologies plc",
+            "LSE",
+            "United Kingdom",
+            "GBP",
+            "GB0000667013",
+        ),
+        ("AVON.AQ", "Avon Technologies plc", "AQS", "United Kingdom", "GBP", None),
+    ]
+    primary = _rank(rows)
+    assert "AVON.L" in primary
+    assert "AVON.AQ" not in primary
+
+
+def test_line_abroad_on_a_selective_venue_in_the_isin_currency() -> None:
+    """Test Paris over New York for a Dutch-ISIN company based in Switzerland, while a
+    euro line on Xetra, full of foreign lines, doesn't beat New York."""
+    rows = [
+        *MARKETS,
+        *_companies("NL", "AMS", "Netherlands", "EUR", 30),
+        *[(f"IE{i}", f"ieco{i} plc", "ISE", "Ireland", "EUR", None) for i in range(25)],
+        ("STM", "STMicroelectronics N.V.", "NYQ", "Switzerland", "USD", "NL0000226223"),
+        (
+            "STMPA.PA",
+            "STMicroelectronics N.V.",
+            "PAR",
+            "Switzerland",
+            "EUR",
+            "NL0000226223",
+        ),
+        ("ACN", "Accenture plc", "NYQ", "United Kingdom", "USD", "IE00B4BNMY34"),
+        ("CSA.DE", "Accenture plc", "GER", "United Kingdom", "EUR", "IE00B4BNMY34"),
+        ("NL0.AS", "nlco0 Inc.", "AMS", "Netherlands", "EUR", "NL0000000001"),
+        ("IE0", "ieco0 plc", "ISE", "Ireland", "EUR", "IE0000000001"),
+    ]
+    primary = _rank(rows)
+    assert "STMPA.PA" in primary and "STM" not in primary
+    assert "ACN" in primary and "CSA.DE" not in primary
+
+
+def test_known_country_is_kept() -> None:
+    """Test that a company abroad keeps its own country, not that of a namesake."""
+    rows = [
+        *MARKETS,
+        *_companies("IN", "NSE", "India", "INR", 40),
+        ("FRONTCORP.NS", "Frontline Corporation Limited", "NSE", "India", "INR", None),
+        ("FRO", "Frontline Plc", "NYQ", "Cyprus", "USD", "CY0200352116"),
+    ]
+    assert "FRO" in _rank(rows)
