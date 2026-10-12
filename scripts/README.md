@@ -41,11 +41,13 @@ The NASDAQ, NYSE and NYSE American feeds of the US-Stock-Symbols repository add 
 equities and refresh the market cap tier of existing ones (Mega Cap ≥ $200B, Large ≥ $10B,
 Mid ≥ $2B, Small ≥ $300M, Micro ≥ $50M, else Nano). New tickers are classified through
 `us_feed_industries.csv` (Nasdaq feed industry → industry), with the industry group and
-sector most common for that industry. Malformed symbols, exchange-traded products and
-instruments with an expiry or maturity date (`helpers.DATED_NAME` in `listings/`) are
-skipped, and a symbol is never added when another asset class has it. A delisted row whose
-ticker a feed now lists for another company (a reused ticker, Barnes Group's B now being
-Barrick) is replaced by that company; more than 100 such rows in one run are not applied.
+sector most common for that industry, and named without the feed's share-type suffix
+('Zevia PBC Class A Common Stock' → 'Zevia PBC'). Malformed symbols, exchange-traded
+products and instruments with an expiry or maturity date (`helpers.DATED_NAME` in
+`listings/`) are skipped, and a symbol is never added when another asset class has it. A
+delisted row whose ticker a feed now lists for another company (a reused ticker, Barnes
+Group's B now being Barrick) is replaced by that company; more than 100 such rows in one run
+are not applied.
 
 The same step keeps the delisted flag of NASDAQ, NYSE and NYSE American equities current
 with the Nasdaq Trader symbol directory (`equities/status_model.py`): a row the directory

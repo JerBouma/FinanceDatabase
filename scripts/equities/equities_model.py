@@ -3,6 +3,7 @@
 __docformat__ = "google"
 
 import glob
+import re
 
 import numpy as np
 import pandas as pd
@@ -37,6 +38,13 @@ MAX_REUSED_TICKERS = 100
 
 # A plain ticker with the class separators of the feeds (BRK/A, ABR^D, BF.B).
 VALID_SYMBOL = r"^[A-Z0-9]+(?:[./^-][A-Z0-9]+)*$"
+
+# Share-type suffixes of feed names ('Class A Common Stock'); names are the company's.
+SHARE_TYPE = re.compile(
+    r"[\s,-]+(?:(?:Class|Series) [A-Z]\s+)?(?:(?:Subordinate |Non-)?Voting\s+)?"
+    r"(?:Common Stock|Common Shares|Ordinary Shares?|American Depositary Shares?)$",
+    re.IGNORECASE,
+)
 
 # Exchange-traded products belong in database/etfs, not equities.
 ETP_NAME = r"\b(?:ETF|ETFs|ETN|ETNs|Exchange[- ]Traded)\b"
@@ -100,6 +108,20 @@ def lookup_sector(
     return subset["sector"].mode()[0] if not subset.empty else np.nan
 
 
+def remove_share_type(name: str) -> str:
+    """
+    Remove the share-type suffix of a feed name ('Zevia PBC Class A Common Stock' -> 'Zevia PBC').
+
+    Args:
+        name (str): The feed name.
+
+    Returns:
+        str: The company name, or the name itself when nothing else would remain.
+    """
+    company = SHARE_TYPE.sub("", name).strip()
+    return company if len(company) > 1 else name
+
+
 def build_new_ticker(
     row: pd.Series,
     fd_industries: dict,
@@ -124,7 +146,7 @@ def build_new_ticker(
     industry_group = lookup_industry_group(industry, equities)
     sector = lookup_sector(industry, industry_group, equities)
     return {
-        "name": row["name"],
+        "name": remove_share_type(row["name"]),
         "summary": np.nan,
         "currency": "USD",
         "industry": industry,

@@ -129,3 +129,19 @@ def test_reused_tickers_make_way_for_the_new_company() -> None:
         index=["B", "GOLD", "AAPL"],
     )
     assert equities_model.find_reused_tickers(equities, feed) == ["B"]
+
+
+def test_new_rows_carry_the_company_name() -> None:
+    """Test that the share-type suffix of a feed name is dropped."""
+    for feed, name in [
+        ("Zevia PBC Class A Common Stock", "Zevia PBC"),
+        ("Boyd Group Services Inc. Common Shares", "Boyd Group Services Inc."),
+        (
+            "Velos Acquisition I Corp. Class A Ordinary shares",
+            "Velos Acquisition I Corp.",
+        ),
+        ("XCHG Limited American Depositary Share", "XCHG Limited"),
+        ("Apple Inc.", "Apple Inc."),
+        ("Common Stock", "Common Stock"),
+    ]:
+        assert equities_model.remove_share_type(feed) == name
