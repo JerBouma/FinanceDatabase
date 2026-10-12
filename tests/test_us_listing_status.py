@@ -81,6 +81,22 @@ def test_lines_abroad_of_a_delisted_home_share_are_stale() -> None:
     assert sorted(status_model.find_stale_lines(equities)) == ["ERT.DE", "TWR.DE"]
 
 
+def test_us_lines_follow_the_directory_not_the_home_market() -> None:
+    """Test that a NASDAQ line stays when the home listing abroad is delisted."""
+    equities = pd.DataFrame(
+        {
+            "exchange": ["VAN", "NMS", "NMS", "NMS", "BER", "BER", "BER"],
+            "country": ["Canada", "Canada", "United States", "United States"]
+            + ["Canada", "Germany", "Germany"],
+            "isin": ["CA0000000001", "CA0000000001", "US0000000001", "US0000000002"]
+            + ["CA0000000001", "DE0000000001", "DE0000000002"],
+            "delisted": ["True", "False", "False", "False", "False", "False", "False"],
+        },
+        index=["AZ.V", "AZ", "AAPL", "MSFT", "A23.BE", "SAP.BE", "BAS.BE"],
+    )
+    assert status_model.find_stale_lines(equities) == ["A23.BE"]
+
+
 def test_regional_german_lines_follow_xetra_and_frankfurt() -> None:
     """Test that a Berlin line goes when its ticker is delisted on Xetra and Frankfurt."""
     equities = pd.DataFrame(

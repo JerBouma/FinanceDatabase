@@ -133,7 +133,9 @@ def find_stale_lines(equities: pd.DataFrame) -> list[str]:
         .any()
     )
     stale = status.index[status["dead_home"] & ~status["live_home"]]
-    return list(with_isin.index[with_isin["isin"].isin(stale) & ~dead])
+    # US exchange lines follow the Nasdaq Trader directory instead.
+    directory = with_isin["exchange"].isin(US_FILES)
+    return list(with_isin.index[with_isin["isin"].isin(stale) & ~dead & ~directory])
 
 
 def find_stale_german_lines(equities: pd.DataFrame) -> list[str]:
