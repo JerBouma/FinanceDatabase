@@ -17,6 +17,9 @@ MAX_DELISTED_SHARE = 0.03
 MINIMUM_DIRECTORY = 8000
 # An exchange is a home market when at least this share of its listings is one country.
 HOME_VENUE_SHARE = 0.5
+# German exchanges share one ticker per security; Xetra and Frankfurt are the reference.
+GERMAN_REFERENCE = ["GER", "FRA"]
+GERMAN_REGIONAL = ["BER", "DUS", "MUN", "HAM", "HAN", "STU"]
 
 
 def convert_symbol(symbol: str) -> str:
@@ -131,3 +134,22 @@ def find_stale_lines(equities: pd.DataFrame) -> list[str]:
     )
     stale = status.index[status["dead_home"] & ~status["live_home"]]
     return list(with_isin.index[with_isin["isin"].isin(stale) & ~dead])
+
+
+def find_stale_german_lines(equities: pd.DataFrame) -> list[str]:
+    """
+    The live regional German lines whose ticker is delisted on Xetra and Frankfurt.
+
+    Args:
+        equities (pd.DataFrame): Every equities file with exchange and delisted.
+
+    Returns:
+        list[str]: The symbols to delist.
+    """
+    base = equities.index.str.split(".").str[0]
+    reference = equities["exchange"].isin(GERMAN_REFERENCE)
+    dead = (equities["delisted"] == "True")[reference].groupby(base[reference]).all()
+    regional = equities["exchange"].isin(GERMAN_REGIONAL) & (
+        equities["delisted"] != "True"
+    )
+    return list(equities.index[regional & base.map(dead).fillna(False).astype(bool)])
