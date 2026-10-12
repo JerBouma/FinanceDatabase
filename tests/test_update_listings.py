@@ -160,6 +160,8 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("Terranet Holding AB TO3 B", "Sweden", ""),
         ("Volvo. AB ser. B KO 1(220)", "Sweden", ""),
         ("Volvo. AB ser. B SO 2(196)", "Sweden", ""),
+        ("EB OE TL.Z./AIXTRON", "", ""),
+        ("RCB OE TS.Z./HENKEL VZ", "", ""),
         ("Rights Issue Of Fawry For Banki", "", ""),
         ("CSOP Hang Seng Index Daily (2x) Leveraged Product", "", ""),
         ("CHI-X AUSTRALIA 200 MARKET CAPITALISATION PRICE RETURN INDEX", "", ""),

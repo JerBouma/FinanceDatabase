@@ -71,8 +71,9 @@ OPTION_NAME = re.compile(r"\b(?:CALL|PUT)\b.*\d", re.IGNORECASE)
 WARRANT_NAME = re.compile(r"\b(?:warrants?|waran|wts)\b|\bWT EXP\b", re.IGNORECASE)
 # Subscription warrants named by series ('TO3'), and names ending in 'Wts'.
 SUBSCRIPTION_NAME = re.compile(r"\bTO\d+\b|wts$", re.IGNORECASE)
-# Nordic knock-out, stop-loss and mini certificates ('KO 1(39', 'SO 2(196').
-CERTIFICATE_NAME = re.compile(r"\b(?:KO|SO|MINI)\s?\d+\s?\(")
+# Nordic knock-out, stop-loss and mini certificates ('KO 1(39', 'SO 2(196') and Vienna
+# open-end turbo certificates ('EB OE TL.Z./AIXTRON').
+CERTIFICATE_NAME = re.compile(r"\b(?:KO|SO|MINI)\s?\d+\s?\(|\bT[LS]\.\s?Z\./")
 # German bond short names: coupon period ('Chevron 14/17', 'ENGIE 13/UND.FLR'), floaters,
 # MTNs, 'ANL.V.' (Anleihe) and Australian capital-indexed bonds ('Australia 2025 CI').
 BOND_SHORT_NAME = re.compile(
