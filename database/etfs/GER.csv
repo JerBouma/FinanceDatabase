@@ -365,8 +365,8 @@ ASWL.DE,REX Tech Innovation Income & Growth UCITS ETF USD,EUR,,Equities,,REX Sha
 ASWM.DE,REX Crypto Equity Income & Growth UCITS ETF USD,EUR,,Equities,,REX Shares,GER,XETR,IE0008BA4TY1,False
 ASWN.DE,Infrastructure Capital Preferred Income UCITS ETF - Distributing,EUR,,,,,GER,XETR,IE0008LRGGP4,False
 ASWS.DE,Infrastructure Capital S&P 500 Option Income UCITS ETF,EUR,,Derivatives,,,GER,XETR,IE000SKTEI24,False
-ATE1.DE,Invesco EUR AT1 CoCo Bond UCITS ETF Dist,EUR,,Fixed Income,,Invesco Investment Management,GER,XETR,IE000VVC8KW9,False
-ATEA.DE,Invesco EUR AT1 CoCo Bond UCITS ETF Acc,EUR,,Fixed Income,,Invesco Investment Management,GER,XETR,IE000FG3UNB8,False
+ATE1.DE,Invesco EUR AT1 CoCo Bond UCITS ETF Dist,EUR,,Fixed Income,Corporate Bonds,Invesco Investment Management,GER,XETR,IE000VVC8KW9,False
+ATEA.DE,Invesco EUR AT1 CoCo Bond UCITS ETF Acc,EUR,,Fixed Income,Corporate Bonds,Invesco Investment Management,GER,XETR,IE000FG3UNB8,False
 AUM5.DE,Amundi Index Solutions - Amundi S&P 500 UCITS ETF C EUR,EUR,"To track the performance of S&P 500 Index (the ""Index""), and to minimize
 the tracking error between the net asset value of the sub-fund and the
 performance of the Index.",Equities,Large Cap,Amundi Asset Management,GER,XETR,LU1681048804,False
@@ -622,7 +622,7 @@ C128.DE,Lyxor MSCI Emerging Markets Daily (2x) Leverage UCITS ETF,EUR,"The inves
  The fund will invest in securities that constitute the index as well as swap contacts to mirror the performance of the index. The index tracks the performance of the MSCI Daily TR Net Emerging Markets Index with a double lever.",Derivatives,Trading,Lyxor International Asset Management,GER,XETR,,False
 C3AE.DE,Invesco S&P China A 300 Swap UCITS ETF Accum Shs -USD-,EUR,,Commodities,,Invesco Investment Management,GER,XETR,IE000K9Z3SF5,False
 C47B.DE,HANetf II ICAV - KRC Cat Bond UCITS ETF Accum- USD,EUR,,Fixed Income,,HANetf Limited,GER,XETR,IE000UWJUW87,False
-C4RE.DE,Bellevue Healthcare UCITS ETF,EUR,,,,,GER,XETR,IE000R6TN604,False
+C4RE.DE,Bellevue Healthcare UCITS ETF,EUR,,Health Care,,,GER,XETR,IE000R6TN604,False
 C540.DE,Lyxor iBoxx € Germany Covered Capped Overall UCITS ETF,EUR,"The fund is an exchange-traded fund linked to the performance of the Markit iBOXX € Germany Covered Capped Overall performance index (Total Return index, TR). Coupons are included in the calculated performance of this index. All fund income is reinvested and hence increases the performance of the ETF. The price of the ETF is always transparent.",Fixed Income,Corporate Bonds,Lyxor International Asset Management,GER,XETR,,False
 C5ME.DE,Invesco S&P China A MidCap 500 Swap UCITS ETF,EUR,,Commodities,,Invesco Investment Management,GER,XETR,IE0000FCGYF9,False
 C71P.DE,Global X 1-3 Month T-Bill UCITS ETF USD,EUR,,Cash,Money Market Instruments,Global X Funds,GER,XETR,IE000GSIFIB0,False
@@ -826,7 +826,7 @@ CTBA.DE,Invesco S&P 500 CTB Net Zero Pathway ESG UCITS ETF,EUR,,Equities,,Invesc
 CTUS.DE,Amundi S&P 500 Climate Transition UCITS ETF Acc,USD,,Equities,,Amundi Asset Management,GER,XETR,IE000Z8J5HD7,False
 CTUT.DE,Amundi S&P 500 Climate Transition UCITS ETF Acc,EUR,,Equities,,Amundi Asset Management,GER,XETR,IE000Z8J5HD7,False
 CUIK.DE,Amundi MSCI UK IMI SRI Climate Paris Aligned UCITS ETF DR - EUR (D),EUR,,Equities,,Amundi Asset Management,GER,XETR,LU2368674631,False
-CURE.DE,VanEck Genomics and Healthcare Innovators UCITS ETF,EUR,,,,VanEck Asset Management,GER,XETR,IE000B9PQW54,False
+CURE.DE,VanEck Genomics and Healthcare Innovators UCITS ETF,EUR,,Equities,,VanEck Asset Management,GER,XETR,IE000B9PQW54,False
 CZX.DE,Expat Czech PX UCITS ETF,EUR,"Expat Czech PX UCITS ETF is an exchange-traded fund. The ETF aims to replicate the performance of the PX Index, providing exposure to the Czech Republic stock market. It offers investors a way to invest in a basket of Czech companies through a UCITS compliant fund.",Equities,Emerging Markets,Expat Asset Management,GER,XETR,BGCZPX003174,False
 D100.DE,MULTI-UNITS LUXEMBOURG - Lyxor FTSE 100 UCITS ETF - Inc,EUR,"The Lyxor FTSE 100 UCITS ETF is a UCITS compliant exchange traded fund that aims to track the benchmark index FTSE 100 TR. The FTSE 100 is a market-capitalisation weighted index representing the performance of the 100 largest UK-domiciled blue chip companies, which pass screening for size and liquidity. Lyxor ETFs are efficient investment vehicles listed on exchange that offer transparent, liquid and low-cost exposure to the underlying benchmark index.",Equities,Large Cap,Lyxor International Asset Management,GER,XETR,LU1650492256,False
 D26A.DE,iShares iBonds Dec 2026 Term $ Corp UCITS ETF,EUR,,Fixed Income,Corporate Bonds,BlackRock Asset Management,GER,XETR,IE000BWITBP9,False
@@ -1598,7 +1598,7 @@ FJUL.DE,First Trust Vest U.S. Equity Buffer UCITS ETF - July,EUR,,Derivatives,,,
 FLCV.DE,Franklin Templeton ICAV - Franklin Emerging Markets Sovereign Debt Values UCITS ETF Accum Shs EUR,EUR,,Fixed Income,Emerging Markets,Franklin Templeton Investments,GER,XETR,IE000YZIVX22,False
 FLDE.DE,Franklin EM Multi-Factor Equity UCITS ETF EUR (Dis),EUR,,Equities,Factors,Franklin Templeton Investments,GER,XETR,IE000CLL0K98,False
 FLPE.DE,Northern Trust Listed Private Equity UCITS ETF Accum - USD,EUR,,Equities,Developed Markets,,GER,XETR,IE0008ZGI5C1,False
-FLRA.DE,"Franklin AI, Metaverse and Blockchain UCITS ETF",EUR,,,,Franklin Templeton Investments,GER,XETR,IE000IM4K4K2,False
+FLRA.DE,"Franklin AI, Metaverse and Blockchain UCITS ETF",EUR,,Equities,,Franklin Templeton Investments,GER,XETR,IE000IM4K4K2,False
 FLRG.DE,Franklin Liberty Euro Green Bond UCITS ETF,EUR,"The objective of the Sub-Fund is to provide exposure to the European green bond market whilst maximising total returns. The Sub-Fund seeks to achieve its investment objective by investing primarily in bonds which have been labelled as “green” and are denominated in European currencies. For the avoidance of doubt, investors should note that the Sub-Fund will not seek to track the performance of the Benchmark, rather the Sub-Fund will hold a portfolio of actively selected and managed investments. The Benchmark has been included as a point of reference against which the performance of the SubFund may be measured. Under normal market conditions, the Sub-Fund will invest at least 70% of its Net Asset Value in bonds that are labelled as “green”, with up to 30% of its Net Asset Value invested in bonds which are deemed by the Investment Manager to be supportive of a low-carbon future, or supportive of the Paris climate agreement using the criteria set out below.",Fixed Income,Government Bonds,Franklin Templeton Investments,GER,XETR,IE00BHZRR253,False
 FLTE.DE,Lyxor EUR Curve Flattening 2-10 UCITS ETF Acc,EUR,is to reflect the performance of the Solactive EUR Daily (x7) Flattener 2-10 Index denominated in Euros representative of the performance of a short position in EURO-Schatz Futures and a long position in the Euro-Bund Futures - while minimizing the volatility of the difference between the return of the Sub-Fund and the return of the Benchmark Index.,Derivatives,,Lyxor International Asset Management,GER,XETR,,False
 FLTU.DE,Lyxor US Curve Flattening 2-10 UCITS ETF Acc,EUR,is to reflect the performance of the Solactive USD Daily (x7) Flattener 2-10 Index denominated in USD representative of the performance of a short position in 2Y US Treasury Note Futures (2-year contract) and a long position in the Ultra 10Y US Treasury Note Futures (10-year contract) - while minimizing the volatility of the difference between the return of the Sub-Fund and the return of the Benchmark Index.,Derivatives,,Lyxor International Asset Management,GER,XETR,,False
@@ -1711,14 +1711,14 @@ GASF.DE,Goldman Sachs Access China Government Bond UCITS ETF USD Inc,EUR,"The Su
 before fees and expenses to the performance of the Index.",Fixed Income,Government Bonds,Goldman Sachs Asset Management,GER,XETR,IE00BJSBCS90,False
 GAT1.DE,iShares AT1 Bond Active UCITS ETF EUR (Acc),EUR,,Fixed Income,,,GER,XETR,IE000DYQE2Q3,False
 GAUG.DE,First Trust Vest U.S. Equity Moderate Buffer UCITS ETF - August,EUR,,Derivatives,,,GER,XETR,IE000TGSG3Y5,False
-GB1A.DE,Invesco Global High Yield Corporate Bond ESG Climate Transition UCITS ETF - Acc,EUR,,Fixed Income,,Invesco Investment Management,GER,XETR,IE0001VDDL68,False
-GB1D.DE,Invesco Global High Yield Corporate Bond ESG Climate Transition UCITS ETF - Dist,EUR,,Fixed Income,,Invesco Investment Management,GER,XETR,IE000ZWSN3F7,False
-GB1E.DE,Invesco Global High Yield Corporate Bond ESG Climate Transition UCITS ETF EUR PfHgd Acc,EUR,,Fixed Income,,Invesco Investment Management,GER,XETR,IE000XG0ZRI7,False
+GB1A.DE,Invesco Global High Yield Corporate Bond ESG Climate Transition UCITS ETF - Acc,EUR,,Fixed Income,High Yield Bonds,Invesco Investment Management,GER,XETR,IE0001VDDL68,False
+GB1D.DE,Invesco Global High Yield Corporate Bond ESG Climate Transition UCITS ETF - Dist,EUR,,Fixed Income,High Yield Bonds,Invesco Investment Management,GER,XETR,IE000ZWSN3F7,False
+GB1E.DE,Invesco Global High Yield Corporate Bond ESG Climate Transition UCITS ETF EUR PfHgd Acc,EUR,,Fixed Income,High Yield Bonds,Invesco Investment Management,GER,XETR,IE000XG0ZRI7,False
 GBNB.DE,LGUE-ESG GR.BD EOD,EUR,"LGUE-ESG GR.BD EOD refers to a Legal & General UCITS ETF focused on ESG (Environmental, Social, and Governance) and green bonds. The fund aims to track the performance of an index of green bonds while incorporating ESG considerations. The specific details would depend on the issuer and index.",Fixed Income,,LGIM Managers,GER,XETR,,False
 GBSE.DE,WisdomTree Physical Gold - EUR Daily Hedged,EUR,,Commodities,,WisdomTree Asset Management,GER,XETR,JE00B8DFY052,False
 GC2U.DE,Amundi ETF Short MSCI USA Daily UCITS ETF,EUR,"The investment seeks to track the price and yield performance, before fee and expenses of the MSCI USA Short Daily Strategy index. The index monitors the performance of a strategy which involves reversing its exposure to the MSCI USA index (gross return) through a combination of a short position on the MSCI USA index gross return and exposure to a risk-free monetary instrument. As a result, it offers a reverse exposure, upwards or downwards, to the variations registered by the MSCI USA index.",Derivatives,Trading,Amundi Asset Management,GER,XETR,,False
 GC40.DE,Amundi Index Solutions - Amundi CAC 40 UCITS ETF-C,EUR,"To track the performance of CAC 40 Index (the ""Index""), and to minimize the tracking error between the net asset value of the sub-fund and the performance of the Index.",Equities,Large Cap,Amundi Asset Management,GER,XETR,LU1681046931,False
-GCAG.DE,Goldman Sachs Global Credit Plus Active UCITS ETF EUR Hedged (Dist),EUR,,,,Goldman Sachs Asset Management,GER,XETR,IE000CWXN435,False
+GCAG.DE,Goldman Sachs Global Credit Plus Active UCITS ETF EUR Hedged (Dist),EUR,,Fixed Income,,Goldman Sachs Asset Management,GER,XETR,IE000CWXN435,False
 GCAP.DE,Goldman Sachs Global Credit Plus Active UCITS ETF EUR Hedged (Acc),EUR,,,,Goldman Sachs Asset Management,GER,XETR,IE0002G3KSC2,False
 GCOR.DE,Franklin Sustainable Euro Green Corp 1-5 Year UCITS ETF,EUR,,Fixed Income,,,GER,XETR,IE0006K7DEL9,False
 GCRE.DE,Amundi Global Corporate SRI 1-5Y Highest Rated UCITS ETF USD Hedged Acc,EUR,,Fixed Income,Government Bonds,Amundi Asset Management,GER,XETR,LU2780870932,False
@@ -1743,7 +1743,7 @@ GIGU.DE,Goldman Sachs USD Investment Grade Corporate Bond Active UCITS ETF - USD
 GIJ0.DE,Future of US Defence UCITS ETF - Accumulating,EUR,,,,,GER,XETR,IE000KDY10O3,False
 GL3S.DE,Leverage Shares -3x Short Gold ETP Securities,EUR,,Derivatives,Trading,Leverage Shares,GER,XETR,XS2472195283,False
 GLAD.DE,AB Global Research Advanced Equity Portfolio UCITS ETF - Class UCITS ETF USD Acc Shares,EUR,,,,,GER,XETR,LU3322522247,False
-GLBD.DE,Invesco Global Corporate Bond ESG Climate Transition UCITS ETF - Dist,EUR,,Fixed Income,,Invesco Investment Management,GER,XETR,IE000FVQW7E7,False
+GLBD.DE,Invesco Global Corporate Bond ESG Climate Transition UCITS ETF - Dist,EUR,,Fixed Income,Corporate Bonds,Invesco Investment Management,GER,XETR,IE000FVQW7E7,False
 GLDA.DE,Amundi Physical Gold ETC C,EUR,,Commodities,,Amundi Asset Management,GER,XETR,FR0013416716,False
 GLIG.DE,AB Global Corporate Bond Portfolio UCITS ETF,EUR,,Fixed Income,Corporate Bonds,AllianceBernstein,GER,XETR,LU3322522080,False
 GLUX.DE,Amundi Index Solutions - Amundi S&P Global Luxury ETF-C EUR,EUR,"To track the performance of S&P Global Luxury Index, and to minimize
@@ -1776,7 +1776,7 @@ GSIB.DE,Goldman Sachs Global Income Bond Opportunities Active UCITS ETF EUR Hedg
 GSIN.DE,Goldman Sachs Global Income Bond Opportunities Active UCITS ETF EUR Hedged (Q-Dist),EUR,,Fixed Income,,Goldman Sachs Asset Management,GER,XETR,IE000D3E0G47,False
 GSOV.DE,Franklin Sustainable Euro Green Sovereign UCITS ETF,EUR,,Fixed Income,,,GER,XETR,IE000P0R7WK6,False
 GSXG.DE,Goldman Sachs Global Green Bond UCITS ETF - Class EUR-Hedged (dist),EUR,,Fixed Income,,Goldman Sachs Asset Management,GER,XETR,IE000L0X6L81,False
-GTIL.DE,Xtrackers World Green Tech Innovators UCITS ETF 1C,EUR,,,,,GER,XETR,LU2859392081,False
+GTIL.DE,Xtrackers World Green Tech Innovators UCITS ETF 1C,EUR,,Equities,,,GER,XETR,LU2859392081,False
 GTIS.DE,Xtrackers World Small Cap Green Tech Innovators UCITS ETF 1C,EUR,,Equities,Small Cap,,GER,XETR,LU2859297330,False
 GTSB.DE,Amundi Global Treasury Bond UCITS ETF USD Hedged Acc,USD,,Fixed Income,Treasury Bonds,Amundi Asset Management,GER,XETR,LU2924149862,False
 GUHY.DE,Goldman Sachs USD High Yield Bond Active UCITS ETF - Class USD (DIST),EUR,,Fixed Income,High Yield Bonds,,GER,XETR,IE0006B9CPY7,False
@@ -1803,7 +1803,7 @@ H41C.DE,HSBC Developed World Sustainable Equity UCITS ETF,EUR,"The investment ob
 The Index is a subset of the FTSE Developed Index (the “Parent Index”) and aims to measure the performance of companies in developed countries as defined by the Index Provider. As further detailed in the “Index Description” section of the Supplement, on an annual basis, the Index Provider applies sustainable exclusionary criteria and weights companies in order to reduce the exposure in the Index to companies with higher carbon emissions and fossil fuel reserves and to improve the exposure in the Index to comply with favourable FTSE Russell environmental, social and governance (""ESG"") ratings compared to that of the Parent Index.",Equities,Developed Markets,HSBC Investment Funds,GER,XETR,IE00BKY59K37,False
 H41D.DE,HSBC MSCI World Value Screened UCITS ETF USD (Acc),EUR,,Equities,,HSBC Investment Funds,GER,XETR,IE000LYBU7X5,False
 H41E.DE,HSBC MSCI Emerging Markets Value Screened UCITS ETF USD Acc,EUR,,Equities,,HSBC Investment Funds,GER,XETR,IE000NVVIF88,False
-H41F.DE,HSBC MSCI Emerging Markets Small Cap Screened UCITS ETF USD Acc,EUR,,Equities,,HSBC Investment Funds,GER,XETR,IE000W080FK3,False
+H41F.DE,HSBC MSCI Emerging Markets Small Cap Screened UCITS ETF USD Acc,EUR,,Equities,Small Cap,HSBC Investment Funds,GER,XETR,IE000W080FK3,False
 H41G.DE,HSBC MSCI World Small Cap Screened UCITS ETF USD (Acc),EUR,,Equities,Small Cap,HSBC Investment Funds,GER,XETR,IE000C692SN6,False
 H41H.DE,HSBC MSCI World UCITS ETF EUR Hedged (Acc),EUR,,Equities,,HSBC Investment Funds,GER,XETR,IE000QMIHY81,False
 H41J.DE,HSBC Multi Factor Worldwide Equity UCITS ETF,EUR,"The investment objective of the Fund is to achieve capital growth over the long term. Investment Policy: The Fund invests mainly in equities of companies incorporated anywhere in the world including emerging markets. The Fund is an actively managed UCITS ETF. Specifically, in ordinary market conditions the Fund invests a minimum of 90% of net assets in equities (i.e., shares) or equity equivalent securities of companies incorporated anywhere in the world including emerging markets. The Fund may invest in China A Shares: (a) via the Shanghai-Hong Kong Stock Connect and/or Shenzhen-Hong Kong Stock Connect (subject to applicable quota limitations); or (b) indirectly through CAAP; or (c) through Eligible Collective Investment Schemes, including other Funds of the Company or schemes managed by the Investment Manager or its affiliates. The Fund may not invest more than 10% of its Net Asset Value in Eligible Collective Investment Schemes.",Equities,Factors,HSBC Investment Funds,GER,XETR,IE00BKZGB098,False
@@ -2027,7 +2027,7 @@ IQQY.DE,iShares Core MSCI Europe UCITS ETF EUR (Dist),EUR,"The investment object
 IQSA.DE,Invesco Quantitative Strategies ESG Global Equity Multi-Factor UCITS ETF USD Acc,EUR,"The investment objective of the Fund is to achieve a long-term return in excess of the MSCI World Index (the “Benchmark”) by investing in an actively-managed portfolio of global equities that meet environmental, social, and corporate governance criteria (the “ESG Criteria”).",Equities,Factors,Invesco Investment Management,GER,XETR,IE00BJQRDN15,False
 IQSD.DE,Invesco Global Active ESG Equity UCITS ETF EUR GBP Hdg Dist,EUR,,Equities,,,GER,XETR,IE0008YN55P8,False
 IQSE.DE,Invesco Quantitative Strategies ESG Global Equity Multi-Factor UCITS ETF EUR PfHedged Acc,EUR,"The investment objective of the Fund is to achieve a long-term return in excess of the MSCI World Index (the “Benchmark”) by investing in an actively-managed portfolio of global equities that meet environmental, social, and corporate governance criteria (the “ESG Criteria”).",Equities,Factors,Invesco Investment Management,GER,XETR,IE00BJQRDP39,False
-IQSM.DE,Invesco Global Small Cap Enhanced Equity UCITS ETF,EUR,,Equities,,,GER,XETR,IE000WLI0KY7,False
+IQSM.DE,Invesco Global Small Cap Enhanced Equity UCITS ETF,EUR,,Equities,Small Cap,,GER,XETR,IE000WLI0KY7,False
 IQSW.DE,Invesco All Country World Enhanced Equity UCITS ETF,EUR,,Equities,,Invesco Investment Management,GER,XETR,IE000S0JMIY6,False
 IQUA.DE,Invesco US Enhanced Equity UCITS ETF,EUR,,Equities,,Invesco Investment Management,GER,XETR,IE0009EGAHL0,False
 IQUE.DE,Invesco US Enhanced Equity UCITS ETF EUR Hdg Acc,EUR,,Equities,,,GER,XETR,IE000WN3JW15,False
@@ -2152,7 +2152,7 @@ JCPN.DE,Janus Henderson Japan High Conviction Equity UCITS ETF ACC,EUR,,Equities
 JE13.DE,JPM BetaBuilders EUR Govt Bond 1-3 yr UCITS ETF - EUR (acc),EUR,The Sub-Fund aims to provide an exposure to the performance of Euro-denominated bonds that have been issued by governments of Eurozone countries with a maturity of between one and three years.,Fixed Income,Government Bonds,JPMorgan Asset Management,GER,XETR,IE00BYVZV757,False
 JEAA.DE,JPM EUR Aggregate Bond Active UCITS ETF - EUR (acc),EUR,,Fixed Income,Investment Grade Bonds,,GER,XETR,IE00049TNTV6,False
 JEBE.DE,JPM EUR IG Corporate Bond Active UCITS ETF - EUR (dist),EUR,,Fixed Income,Corporate Bonds,,GER,XETR,IE000WAKWCV7,False
-JEDI.DE,VanEck Space Innovators UCITS ETF,EUR,,,,VanEck Asset Management,GER,XETR,IE000YU9K6K2,False
+JEDI.DE,VanEck Space Innovators UCITS ETF,EUR,,Equities,,VanEck Asset Management,GER,XETR,IE000YU9K6K2,False
 JEEA.DE,JPM Europe Equity Premium Income Active UCITS ETF - EUR (acc),EUR,,Derivatives,,,GER,XETR,IE0000BNORX6,False
 JEEG.DE,JPM EUR Government Bond Active UCITS ETF - EUR (dist),EUR,,Fixed Income,Government Bonds,,GER,XETR,IE00081SF8K7,False
 JEEM.DE,JPM Global Emerging Markets Research Enhanced Index Equity Active UCITS ETF - EUR (acc),EUR,,Equities,,,GER,XETR,IE0006SEWKA2,False
@@ -2240,7 +2240,7 @@ JPNH.DE,Lyxor Japan (Topix) (DR) UCITS ETF Daily Hedged to EUR Dist,EUR,"The Lyx
 JPPA.DE,JPM USD Ultra-Short Income ETF USD Acc,EUR,The Sub-Fund aims to provide current income while seeking to maintain a low volatility of principal.,Derivatives,Trading,JPMorgan Asset Management,GER,XETR,IE00BG8BCY43,False
 JPPS.DE,JPMorgan ETFs (Ireland) ICAV - USD Ultra-Short Income UCITS ETF USD (dist),EUR,The Sub-Fund aims to provide current income while seeking to maintain a low volatility of principal.,Derivatives,Trading,JPMorgan Asset Management,GER,XETR,IE00BDFC6Q91,False
 JPRY.DE,JPM USD High Yield Bond Active UCITS ETF - EUR Hedged (acc),EUR,,Fixed Income,High Yield Bonds,,GER,XETR,IE000CQMYME2,False
-JPSC.DE,JPM BetaBuilders US Small Cap Equity UCITS ETF - USD (acc),EUR,,Equities,,JPMorgan Asset Management,GER,XETR,IE000JNKVS10,False
+JPSC.DE,JPM BetaBuilders US Small Cap Equity UCITS ETF - USD (acc),EUR,,Equities,Small Cap,JPMorgan Asset Management,GER,XETR,IE000JNKVS10,False
 JPSY.DE,JPM USD High Yield Bond Active UCITS ETF - SEK Hedged (acc),SEK,,Fixed Income,High Yield Bonds,,GER,XETR,IE000LT3MQE9,False
 JPUA.DE,JPMorgan ETFs (Ireland) ICAV - USD High Yield Bond Active UCITS ETF USD (acc),EUR,,Fixed Income,High Yield Bonds,JPMorgan Asset Management,GER,XETR,IE000LZI2UH4,False
 JPUY.DE,JPM USD High Yield Bond Active UCITS ETF - USD (dist),EUR,,Fixed Income,High Yield Bonds,,GER,XETR,IE000R88UVN6,False
@@ -2552,7 +2552,7 @@ the travel and leisure sector, while minimising the volatility of the difference
 return of the Index.
 The anticipated level of the Tracking error under normal market conditions is expected to be 0.50%.",Equities,Developed Markets,Lyxor International Asset Management,GER,XETR,LU1834988781,False
 LTWN.DE,Lyxor MSCI Taiwan UCITS ETF - Acc-EUR,EUR,"The investment objective of the MULTI UNITS LUXEMBOURG — Lyxor MSCI Taiwan UCITS ETF (the ""Sub-Fund"") is to track both the upward and the downward evolution of the MSCI Taiwan Net Total Return index (the ""Index"") denominated in US Dollars and representative of the Taiwanese equity market, while minimizing the volatility of the difference between the return of the Sub-Fund and the return of the Index (the ""Tracking Error"").",Information Technology,Developed Markets,Lyxor International Asset Management,GER,XETR,LU1900066033,True
-LUNA.DE,Global X Space Tech UCITS ETF,EUR,,,,Global X Funds,GER,XETR,IE000W4A2Q38,False
+LUNA.DE,Global X Space Tech UCITS ETF,EUR,,Equities,,Global X Funds,GER,XETR,IE000W4A2Q38,False
 LUTI.DE,Lyxor Index Fund - Lyxor Stoxx Europe 600 Utilities UCITS ETF Acc,EUR,"The investment objective of Lyxor Index Fund – Lyxor Stoxx Europe 600 Utilities UCITS ETF (the “Sub-Fund”) is to
 track the upward and the downward evolution of the STOXX® Europe 600 UTILITIES Net Total Return index (the
 “Index”) denominated in Euros and representative of the performance of large European companies in the utilities sector,
@@ -3073,10 +3073,10 @@ Index.",Fixed Income,Corporate Bonds,BlackRock Asset Management,GER,XETR,IE00BZ0
 QGRG.DE,Wisdomtree Global Quality Growth Ucits ETF AccumUSD,EUR,,Equities,Factors,WisdomTree Asset Management,GER,XETR,IE000Y83YZ44,False
 QGRW.DE,WisdomTree US Quality Growth UCITS ETF,EUR,,Information Technology,Developed Markets,WisdomTree Asset Management,GER,XETR,IE000YGEAK03,False
 QJUN.DE,First Trust Vest Nasdaq-100 Moderate Buffer UCITS ETF – June,EUR,,Derivatives,,,GER,XETR,IE000HFBJ0U0,False
-QOMP.DE,iShares Quantum Computing UCITS ETF USD (Acc),EUR,,,,BlackRock Asset Management,GER,XETR,IE000C6ITGC8,False
+QOMP.DE,iShares Quantum Computing UCITS ETF USD (Acc),EUR,,Information Technology,,BlackRock Asset Management,GER,XETR,IE000C6ITGC8,False
 QPEU.DE,State Street SPDR S&P Europe Quality Aristocrats UCITS ETF (Acc),EUR,,Equities,,State Street Global Advisors,GER,XETR,IE000ZEOCR03,False
-QQCC.DE,Boreas Solactive Quantum Computing UCITS ETF,EUR,,,,,GER,XETR,IE000N7LUK04,False
-QQCQ.DE,Boreas Solactive Quantum Computing UCITS ETF,USD,,,,,GER,XETR,IE000N7LUK04,False
+QQCC.DE,Boreas Solactive Quantum Computing UCITS ETF,EUR,,Information Technology,,,GER,XETR,IE000N7LUK04,False
+QQCQ.DE,Boreas Solactive Quantum Computing UCITS ETF,USD,,Information Technology,,,GER,XETR,IE000N7LUK04,False
 QQIA.DE,Invesco Nasdaq-100 Income Advantage UCITS ETF - Dist,EUR,,,,,GER,XETR,IE0007YZZZN7,False
 QRED.DE,CT QR Series European Equity Active UCITS ETF - Inc EUR,EUR,,Equities,,,GER,XETR,IE000KXM3O48,False
 QREM.DE,CT QR Series Emerging Markets Equity Active UCITS ETF Acc EUR,EUR,,Equities,,,GER,XETR,IE000DE2VF85,False
@@ -3120,7 +3120,7 @@ REM3.DE,Robeco 3D EM Equity UCITS ETF (Acc),EUR,,Equities,,,GER,XETR,IE0002Z12PN
 REMD.DE,Robeco 3D EM Equity UCITS ETF USD Dis,EUR,,Equities,,,GER,XETR,IE00063T9YS5,False
 RENW.DE,L&G Clean Energy UCITS ETF USD Acc,EUR,The investment objective of the L&G Clean Energy UCITS ETF (the “Fund”) is to provide exposure to the global clean energy industry.,Equities,Developed Markets,LGIM Managers,GER,XETR,IE00BK5BCH80,False
 REUS.DE,VanEck Circular Economy UCITS ETF,EUR,,Equities,Developed Markets,VanEck Asset Management,GER,XETR,IE0001J5A2T9,False
-RGSC.DE,Robeco NextGen Global Small-Cap Equity UCITS ETF USD Acc,EUR,,Equities,,,GER,XETR,IE000OHXGWO8,False
+RGSC.DE,Robeco NextGen Global Small-Cap Equity UCITS ETF USD Acc,EUR,,Equities,Small Cap,,GER,XETR,IE000OHXGWO8,False
 RHYE.DE,Robeco Europe Dynamic High Yield UCITS ETF EUR Acc,EUR,,Fixed Income,High Yield Bonds,,GER,XETR,IE0000LTAD82,False
 RHYG.DE,Robeco Global Dynamic High Yield UCITS ETF USD Acc,EUR,,Fixed Income,High Yield Bonds,,GER,XETR,IE000LW5CCQ4,False
 RHYH.DE,Robeco Global Dynamic High Yield UCITS ETF EUR(H) Acc,EUR,,Fixed Income,High Yield Bonds,,GER,XETR,IE000SI9E3I8,False
@@ -3706,7 +3706,7 @@ V0IH.DE,VanEck Oil Services UCITS ETF,EUR,,,,VanEck Asset Management,GER,XETR,IE
 V1VA.DE,Vanguard Russell 1000 U.S. Value UCITS ETF USD Acc,EUR,,Equities,,Vanguard Asset Management,GER,XETR,IE000US24HF4,False
 V20A.DE,Vanguard LifeStrategy 20% Equity UCITS ETF (EUR) Accumulating,EUR,"The Fund seeks to provide a combination of income and some long-term capital appreciation by investing in fixed income and equity securities, primarily through investment in other collective investment schemes.",Equities,Allocation,Vanguard Asset Management,GER,XETR,IE00BMVB5K07,False
 V20D.DE,Vanguard LifeStrategy 20% Equity UCITS ETF (EUR) Distributing,EUR,"The Fund seeks to provide a combination of income and some long-term capital appreciation by investing in fixed income and equity securities, primarily through investment in other collective investment schemes.",Equities,Allocation,Vanguard Asset Management,GER,XETR,IE00BMVB5L14,False
-V2SA.DE,Vanguard Russell 2000 U.S. Small-Cap UCITS ETF USD Acc,EUR,,Equities,,Vanguard Asset Management,GER,XETR,IE000GTBEXG4,False
+V2SA.DE,Vanguard Russell 2000 U.S. Small-Cap UCITS ETF USD Acc,EUR,,Equities,Small Cap,Vanguard Asset Management,GER,XETR,IE000GTBEXG4,False
 V3AA.DE,Vanguard ESG Global All Cap UCITS ETF (USD) Accumulating,EUR,,Equities,Developed Markets,Vanguard Asset Management,GER,XETR,IE00BNG8L278,False
 V3AL.DE,VAF-ESG G.A.C.E DLD,EUR,,,Developed Markets,Vanguard Asset Management,GER,XETR,,False
 V3DA.DE,Vanguard ESG Developed Europe All Cap UCITS ETF (USD) Accumulating,EUR,,Equities,,Vanguard Asset Management,GER,XETR,IE000QUOSE01,False
@@ -3751,8 +3751,8 @@ VDTE.DE,Vanguard USD Treasury Bond UCITS ETF EUR Hedged Accumulation,EUR,"This F
 VE6I.DE,VanEck Sustainable Future of Food UCITS ETF,EUR,,,,VanEck Asset Management,GER,XETR,IE0005B8WVT6,False
 VECA.DE,Vanguard EUR Corporate Bond UCITS ETF EUR Accumulation,EUR,"This Fund seeks to track the performance of the Index. In seeking to achieve its investment objective, the Fund aims to provide a return (comprising both income and capital appreciation) which, before application of fees and expenses, is similar to the return of the Index. The Fund employs a “passive management” – or indexing – investment approach, through physical acquisition of securities, designed to track the performance of the Index. The Index is a widely recognised benchmark designed to reflect the total universe of publically-traded, fixed-coupon, Eurodenominated investment grade corporate bonds with maturities greater than one year and which have a minimum issue size of €300 million.",Fixed Income,Corporate Bonds,Vanguard Asset Management,GER,XETR,IE00BGYWT403,False
 VECP.DE,Vanguard EUR Corporate Bond UCITS ETF,EUR,"This Fund seeks to track the performance of the Index. In seeking to achieve its investment objective, the Fund aims to provide a return (comprising both income and capital appreciation) which, before application of fees and expenses, is similar to the return of the Index. The Fund employs a “passive management” – or indexing – investment approach, through physical acquisition of securities, designed to track the performance of the Index. The Index is a widely recognised benchmark designed to reflect the total universe of publically-traded, fixed-coupon, Eurodenominated investment grade corporate bonds with maturities greater than one year and which have a minimum issue size of €300 million.",Fixed Income,Corporate Bonds,Vanguard Asset Management,GER,XETR,IE00BZ163G84,False
-VEDA.DE,Vanguard FTSE Developed Europe Small-Cap UCITS ETF Accumulating,EUR,,Equities,,Vanguard Asset Management,GER,XETR,IE00069H3LK0,False
-VEDD.DE,Vanguard FTSE Developed Europe Small-Cap UCITS ETF Distributing,EUR,,Equities,,Vanguard Asset Management,GER,XETR,IE000K7PC2G4,False
+VEDA.DE,Vanguard FTSE Developed Europe Small-Cap UCITS ETF Accumulating,EUR,,Equities,Small Cap,Vanguard Asset Management,GER,XETR,IE00069H3LK0,False
+VEDD.DE,Vanguard FTSE Developed Europe Small-Cap UCITS ETF Distributing,EUR,,Equities,Small Cap,Vanguard Asset Management,GER,XETR,IE000K7PC2G4,False
 VEGE.DE,Vanguard EUR Eurozone Government 1-3 Year Bond UCITS ETF EUR Distributing,EUR,,Fixed Income,Government Bonds,Vanguard Asset Management,GER,XETR,IE000HARFTG3,False
 VEGF.DE,Vanguard EUR Eurozone Government 1-3 Year Bond UCITS ETF EUR Accumulating,EUR,,Fixed Income,Government Bonds,Vanguard Asset Management,GER,XETR,IE00004S2680,False
 VERE.DE,Vanguard FTSE Developed Europe ex UK UCITS ETF Accuimulation,EUR,"This Fund seeks to track the performance of the Index, a widely recognised market- capitalization weighted index of stock market performance of European developed countries, excluding the United Kingdom, that is comprised of the stocks of large and mid capitalisation companies in that region. The Fund employs a “passive management” – or indexing – investment approach, through physical acquisition of securities, designed to track the performance of the Index, a free float adjusted market capitalisation weighted index. In tracking the performance of the Index, the Fund attempts to replicate the Index by investing all, or substantially all, of its assets in the stocks that make up the Index, holding each stock in approximately the same proportion as its weighting in the Index. The Index is comprised of large and mid-cap common stocks from developed European markets (excluding the UK).",Equities,Developed Markets,Vanguard Asset Management,GER,XETR,IE00BK5BQY34,False
@@ -3776,8 +3776,8 @@ VGGF.DE,Vanguard Global Government Bond UCITS ETF EUR Hedged Accumulating,EUR,,F
 VGLA.DE,Vanguard FTSE Global All-Cap UCITS ETF Accum USD,EUR,Vanguard FTSE Global All-Cap UCITS ETF Accum USD is an exchange-traded fund listed on the XETRA under the ticker VGLA and traded in EUR. The fund is part of the Vanguard Asset Management range.,Equities,Developed Markets,Vanguard Asset Management,GER,XETR,IE000VAHT5T0,False
 VGLD.DE,Vanguard FTSE Global All-Cap UCITS ETF USD Distributing,EUR,,Equities,,Vanguard Asset Management,GER,XETR,IE000CVUM3N6,False
 VGOV.DE,Vanguard U.K. Gilt UCITS ETF,EUR,"The Fund seeks to track the performance of the Index, a market-weighted index of U.K. Gilts denominated in Pound Sterling. The Fund employs a “passive management” – or indexing – investment approach, through physical acquisition of securities, designed to track the performance of the Index. The Fund will invest in a portfolio of Gilts with greater than 1 year maturity that, so far as possible and practicable, consists of a representative sample of the component securities of the Index.",Fixed Income,Government Bonds,Vanguard Asset Management,GER,XETR,IE00B42WWV65,False
-VGSA.DE,Vanguard FTSE Global Small-Cap UCITS ETF USD Accumulating,EUR,,Equities,,Vanguard Asset Management,GER,XETR,IE0007TPRF31,False
-VGSD.DE,Vanguard FTSE Global Small-Cap UCITS ETF USD Distributing,EUR,,Equities,,Vanguard Asset Management,GER,XETR,IE000F8RXD33,False
+VGSA.DE,Vanguard FTSE Global Small-Cap UCITS ETF USD Accumulating,EUR,,Equities,Small Cap,Vanguard Asset Management,GER,XETR,IE0007TPRF31,False
+VGSD.DE,Vanguard FTSE Global Small-Cap UCITS ETF USD Distributing,EUR,,Equities,Small Cap,Vanguard Asset Management,GER,XETR,IE000F8RXD33,False
 VGTY.DE,Vanguard Funds Public Limited Company - Vanguard USD Treasury Bond UCITS ETF,EUR,"Vanguard Funds Public Limited Company - Vanguard USD Treasury Bond UCITS ETF aims to replicate the performance of an index composed of USD-denominated U.S. Treasury bonds. This ETF provides investors with exposure to the U.S. government bond market. Vanguard Funds Public Limited Company is headquartered in Dublin, Ireland, and manages the fund as part of the Vanguard Group.",Fixed Income,Treasury Bonds,Vanguard Asset Management,GER,XETR,IE00BZ163M45,False
 VGUE.DE,Vanguard U.K. Gilt UCITS ETF EUR Hedged Accumulation,EUR,"The Fund seeks to track the performance of the Index, a market-weighted index of U.K. Gilts denominated in Pound Sterling. The Fund employs a “passive management” – or indexing – investment approach, through physical acquisition of securities, designed to track the performance of the Index. The Fund will invest in a portfolio of Gilts with greater than 1 year maturity that, so far as possible and practicable, consists of a representative sample of the component securities of the Index.",Fixed Income,Government Bonds,Vanguard Asset Management,GER,XETR,IE00BMX0B524,False
 VGVE.DE,VANG.FTSE DEV.W.U.ETF DLD,EUR,"This is a Vanguard ETF offering exposure to developed world equities and distributing dividends. Vanguard is a large investment management company based in Malvern, Pennsylvania, offering a variety of investment products and services. The ETF aims to track the performance of the FTSE Developed World Index.",Equities,Developed Markets,Vanguard Asset Management,GER,XETR,,False
@@ -4268,7 +4268,7 @@ XMCM.DE,Xtrackers MSCI Emerging Markets Swap UCITS ETF 1D,EUR,,Equities,,,GER,XE
 XMCX.DE,Xtrackers FTSE 250 UCITS ETF 1D,EUR,,Equities,Mid Cap,Xtrackers,GER,XETR,LU0292097317,False
 XMEA.DE,"Xtrackers MSCI EM Europe, Middle East & Africa ESG Swap UCITS ETF 1C",EUR,,Equities,Developed Markets,Xtrackers,GER,XETR,LU0292109005,False
 XMEM.DE,Xtrackers MSCI Emerging Markets Swap UCITS ETF 1C,EUR,,Equities,Developed Markets,Xtrackers,GER,XETR,LU0292107645,False
-XMES.DE,Xtrackers MSCI Europe Small Cap UCITS ETF 1D,EUR,,Equities,,,GER,XETR,LU3456232308,False
+XMES.DE,Xtrackers MSCI Europe Small Cap UCITS ETF 1D,EUR,,Equities,Small Cap,,GER,XETR,LU3456232308,False
 XMEU.DE,Xtrackers - MSCI Europe UCITS ETF,EUR,,Equities,Developed Markets,Xtrackers,GER,XETR,LU0274209237,False
 XMGA.DE,Amundi MSCI USA Ex Mega Cap UCITS ETF Acc,EUR,,Equities,,Amundi Asset Management,GER,XETR,IE000XL4IXU1,False
 XMGU.DE,Amundi MSCI USA Ex Mega Cap UCITS ETF Acc,USD,,Equities,,Amundi Asset Management,GER,XETR,IE000XL4IXU1,False
@@ -4431,7 +4431,7 @@ XZMD.DE,Xtrackers MSCI USA ESG UCITS ETF 1D,EUR,,Equities,Developed Markets,Xtra
 XZME.DE,Xtrackers MSCI USA ESG UCITS ETF 2C EUR Hedged,EUR,,Equities,,,GER,XETR,IE0000MMQ5M5,False
 XZMJ.DE,Xtrackers (IE) Plc - Xtrackers MSCI Japan ESG UCITS ETF 1C,EUR,"The fund is passively managed. The aim is for your investment to track the performance, before fees and expenses, of the MSCI Japan Low Carbon SRI Leaders Index (index). The index is based on the MSCI Japan Index (Parent Index), which is designed to reflect the performance of certain shares in large and medium-sized listed companies in Japan.",Equities,Developed Markets,Xtrackers,GER,XETR,IE00BG36TC12,False
 XZMU.DE,Xtrackers (IE) Plc - Xtrackers MSCI USA ESG UCITS ETF 1C,EUR,"The fund is passively managed. The aim is for your investment to track the performance, before fees and expenses, of the MSCI USA Low Carbon SRI Leaders Index (index). The index is based on the MSCI USA Index (Parent Index), which is designed to reflect the performance of certain shares in large and medium-sized listed companies in the USA.",Equities,Developed Markets,Xtrackers,GER,XETR,IE00BFMNPS42,False
-XZSE.DE,Xtrackers MSCI Europe Small Cap ESG UCITS ETF 1C,EUR,,Equities,,,GER,XETR,IE000ER61U30,False
+XZSE.DE,Xtrackers MSCI Europe Small Cap ESG UCITS ETF 1C,EUR,,Equities,Small Cap,,GER,XETR,IE000ER61U30,False
 XZSP.DE,Xtrackers S&P 500 Scored & Screened UCITS ETF 1C,EUR,,Equities,,,GER,XETR,IE0007ULOZS8,False
 XZSW.DE,Xtrackers MSCI World Small Cap ESG UCITS ETF 1C,EUR,,Equities,Small Cap,,GER,XETR,IE000UATQPE2,False
 XZW0.DE,Xtrackers (IE) Plc - Xtrackers MSCI World ESG UCITS ETF 1C,EUR,"The fund is passively managed. The aim is for your investment to track the performance, before fees and expenses, of the MSCI World Low Carbon SRI Leaders Index (index). The index is based on the MSCI World Index (Parent Index), which is designed to reflect the performance of certain shares in large and medium-sized listed companies in developed market countries. In order to be eligible for inclusion in the index, companies must be eligible for inclusion in the Parent Index and must display high environmental, social and governance (ESG) performance and low current and potential carbon exposure, relative to their regional and sector peers.",Equities,Developed Markets,Xtrackers,GER,XETR,IE00BZ02LR44,False
