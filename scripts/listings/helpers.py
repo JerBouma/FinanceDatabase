@@ -75,7 +75,7 @@ SUBSCRIPTION_NAME = re.compile(r"\bTO\d+\b|wts$", re.IGNORECASE)
 CERTIFICATE_NAME = re.compile(r"\b(?:KO|SO|MINI)\s?\d+\s?\(")
 # Debentures, rights issues, leveraged products and indices listed as equities.
 OTHER_NON_SHARE = re.compile(
-    r"\bred(?:eemable)? NCDs?\b|\brights issue\b|\bleveraged product\b|"
+    r"\bred(?:eemable)? NCDs?\b|\bexch(?:ange)? traded bond\b|\brights issue\b|\bleveraged product\b|"
     r"\b(?:price|total) return index\b",
     re.IGNORECASE,
 )

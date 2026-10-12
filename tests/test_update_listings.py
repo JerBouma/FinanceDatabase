@@ -155,6 +155,7 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("Atossa Genetics Inc. WT EXP 052421", "", ""),
         ("Comcast Holdings ZONES", "United States", ""),
         ("Sec Red NCD Sr.VIII", "", ""),
+        ("Theta Asset Management Ltd EXCH TRADED BOND UNITS", "Australia", ""),
         ("VextScienceWts", "", ""),
         ("Terranet Holding AB TO3 B", "Sweden", ""),
         ("Volvo. AB ser. B KO 1(220)", "Sweden", ""),
