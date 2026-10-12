@@ -7,6 +7,7 @@ import glob
 import numpy as np
 import pandas as pd
 
+from scripts.equities.status_model import get_name_start
 from scripts.listings.helpers import DATED_NAME, check_non_share
 
 FEED_URL = "https://raw.githubusercontent.com/rreichel3/US-Stock-Symbols/main/{0}/{0}_full_tickers.json"
@@ -30,6 +31,9 @@ MARKET_CAP_THRESHOLDS = {
 
 # A run that would change more than this share of the US tiers is treated as a feed glitch.
 MAX_TIER_CHANGE_SHARE = 0.2
+
+# More reused tickers than this in one run points to a broken feed.
+MAX_REUSED_TICKERS = 100
 
 # A plain ticker with the class separators of the feeds (BRK/A, ABR^D, BF.B).
 VALID_SYMBOL = r"^[A-Z0-9]+(?:[./^-][A-Z0-9]+)*$"
@@ -229,6 +233,26 @@ def get_other_symbols(database: str) -> set[str]:
             pd.read_csv(path, usecols=[0], dtype=str, keep_default_na=False).iloc[:, 0]
         )
     return symbols
+
+
+def find_reused_tickers(equities: pd.DataFrame, feed: pd.DataFrame) -> list[str]:
+    """
+    The delisted rows whose ticker a feed now lists for another company.
+
+    Args:
+        equities (pd.DataFrame): The equities by symbol.
+        feed (pd.DataFrame): The feed by symbol, with name.
+
+    Returns:
+        list[str]: The symbols.
+    """
+    names = equities.loc[equities["delisted"] == "True", "name"]
+    names = names[~names.index.duplicated()]
+    return [
+        symbol
+        for symbol in feed.index.intersection(names.index)
+        if get_name_start(names[symbol]) != get_name_start(feed.loc[symbol, "name"])
+    ]
 
 
 def find_non_shares(frame: pd.DataFrame) -> pd.Series:

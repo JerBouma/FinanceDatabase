@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-from scripts.equities import status_model
+from scripts.equities import equities_model, status_model
 
 NASDAQ = b"""Symbol|Security Name|Market Category|Test Issue|Financial Status|Round Lot Size|ETF|NextShares
 AAPL|Apple Inc. - Common Stock|Q|N|N|100|N|N
@@ -91,3 +91,25 @@ def test_regional_german_lines_follow_xetra_and_frankfurt() -> None:
         index=["GLP.DE", "GLP.F", "GLP.BE", "SAP.DE", "SAP.BE"],
     )
     assert status_model.find_stale_german_lines(equities) == ["GLP.BE"]
+
+
+def test_reused_tickers_make_way_for_the_new_company() -> None:
+    """Test that only a delisted row of another company gives up its ticker."""
+    equities = pd.DataFrame(
+        {
+            "name": ["Barnes Group Inc.", "Barrick Gold Corporation", "Apple Inc."],
+            "delisted": ["True", "True", "False"],
+        },
+        index=["B", "GOLD", "AAPL"],
+    )
+    feed = pd.DataFrame(
+        {
+            "name": [
+                "Barrick Mining Corporation Common Shares",
+                "Barrick Gold Corp",
+                "Apple Inc. Common Stock",
+            ]
+        },
+        index=["B", "GOLD", "AAPL"],
+    )
+    assert equities_model.find_reused_tickers(equities, feed) == ["B"]

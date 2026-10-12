@@ -45,12 +45,22 @@ def update_us_equities(database: str = "database") -> int:
     )
     other_symbols = equities_model.get_other_symbols(database)
 
+    # A delisted row whose ticker now belongs to another company makes way for it.
+    reused = equities_model.find_reused_tickers(equities, exchange_data)
+    if len(reused) > equities_model.MAX_REUSED_TICKERS:
+        print(f"! {len(reused)} reused tickers looks implausible; replacing none")
+        reused = []
+
     ticker_dict: dict = {}
     for symbol, row in exchange_data.iterrows():
         market_cap = equities_model.calculate_market_cap(
             pd.to_numeric(row.get("marketCap"), errors="coerce")
         )
-        if symbol in equities.index:
+        if symbol in reused:
+            ticker_dict[symbol] = equities_model.build_new_ticker(
+                row, fd_industries, equities, market_cap, exchange_to_mic
+            )
+        elif symbol in equities.index:
             existing = equities.loc[symbol]
             if isinstance(existing, pd.DataFrame):
                 existing = existing.iloc[0]
@@ -63,7 +73,7 @@ def update_us_equities(database: str = "database") -> int:
 
     # A feed glitch would move many tiers at once; such a run keeps the current tiers.
     known = exchange_data.index.isin(equities.index).sum()
-    retiered = [s for s in ticker_dict if s in equities.index]
+    retiered = [s for s in ticker_dict if s in equities.index and s not in reused]
     if known and len(retiered) > equities_model.MAX_TIER_CHANGE_SHARE * known:
         print(f"! {len(retiered)} of {known} tiers would change; keeping the tiers")
         ticker_dict = {s: row for s, row in ticker_dict.items() if s not in retiered}
@@ -75,6 +85,8 @@ def update_us_equities(database: str = "database") -> int:
     if updated.empty:
         return 0
 
+    replaced = updated.index.intersection(reused)
+    equities = equities.drop(index=replaced)
     existing = updated.index.intersection(equities.index)
     if not existing.empty:
         equities.update(updated.loc[existing])
