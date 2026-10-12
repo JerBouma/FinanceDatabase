@@ -25,6 +25,8 @@ CURRENCY_COLUMNS = ["currency", "base_currency", "quote_currency"]
 COMPACT_MINIMUM = 5
 # A currency named in a summary with its ISO code: 'the Japanese Yen (JPY)'.
 CURRENCY_NAME = r"the ([A-Z][A-Za-z.'\- ]+?) \(([A-Z]{3})\)"
+# German spellings without umlauts ('Baer', 'Zuerich') read like the folded umlaut.
+UMLAUT_SPELLINGS = {"ae": "a", "oe": "o", "ue": "u"}
 # Categories of the database that hold leveraged, inverse and other trading products.
 DERIVATIVE_CATEGORIES = ["Derivatives", "Trading"]
 PREFERENCE_COLUMNS = [
@@ -52,7 +54,8 @@ class RankingProfile:
         currency_order (dict[str, int]): Currencies by frequency, the most common 0.
         variant_separators (list[str]): Symbol separators that mark a variant.
         venue_sizes (dict[str, int]): Exchanges by their number of listings.
-        name_keys (pl.DataFrame | None): The search frame with "_key", "_words", "_compact".
+        name_keys (pl.DataFrame | None): The search frame with "_key", "_words", "_compact",
+            "_folded".
         currency_names (dict[str, str]): Currency name in lower case -> its ISO code.
     """
 
@@ -113,6 +116,9 @@ def create_profile(
             .alias("_key"),
             (pl.lit(" ") + get_words(pl.col("name")) + pl.lit(" ")).alias("_words"),
             get_words(pl.col("name")).str.replace_all(" ", "").alias("_compact"),
+            (pl.lit(" ") + get_words(pl.col("name")) + pl.lit(" "))
+            .str.replace_many(UMLAUT_SPELLINGS)
+            .alias("_folded"),
         ).unique(columns[0])
     if "exchange" in columns:
         counts = frame.get_column("exchange").drop_nulls().value_counts()
@@ -223,6 +229,14 @@ def build_query_expressions(
         match = match | words.str.contains(spaced_out).fill_null(False)
     if spaced.strip():
         match = match | words.str.contains(spaced.strip(), literal=True).fill_null(
+            False
+        )
+    # 'julius baer' finds 'Julius Bar' and 'zuerich' finds 'Zürich'.
+    folded = spaced.strip()
+    for spelling, letter in UMLAUT_SPELLINGS.items():
+        folded = folded.replace(spelling, letter)
+    if len(folded) >= COMPACT_MINIMUM and "_folded" in profile.name_keys.columns:
+        match = match | pl.col("_folded").str.contains(folded, literal=True).fill_null(
             False
         )
     named = (key == needle_key) | (

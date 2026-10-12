@@ -472,3 +472,9 @@ def test_currency_names_find_their_pairs(server):
     )
     assert payload["total"] > 0
     assert all("JPY" in row["symbol"] for row in payload["rows"])
+
+
+def test_umlaut_spellings_find_names(server):
+    """Test that 'julius baer' finds 'Julius Bar' (stored without the umlaut)."""
+    payload = call_json(server.mcp, "equities", {"query": "julius baer", "limit": 5})
+    assert any(row["name"].lower().startswith("julius b") for row in payload["rows"])
