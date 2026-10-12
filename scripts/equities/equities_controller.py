@@ -168,7 +168,8 @@ def update_us_listing_status(
 
 def delist_stale_lines(database: str = "database") -> int:
     """
-    Delist the lines abroad of shares whose home listings are all delisted.
+    Delist the lines abroad of shares whose home listings are all delisted, and the
+    regional German lines of tickers delisted on Xetra and Frankfurt.
 
     Args:
         database (str): The database folder.
@@ -184,7 +185,12 @@ def delist_stale_lines(database: str = "database") -> int:
         )
         for p in paths
     ).set_index("symbol")
-    stale = equities.loc[status_model.find_stale_lines(equities)]
+    stale = equities.loc[
+        sorted(
+            set(status_model.find_stale_lines(equities))
+            | set(status_model.find_stale_german_lines(equities))
+        )
+    ]
     for path, rows in stale.groupby("_path"):
         frame = pd.read_csv(path, index_col=0, dtype=str, keep_default_na=False)
         frame.loc[rows.index.intersection(frame.index), "delisted"] = "True"

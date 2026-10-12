@@ -79,3 +79,15 @@ def test_lines_abroad_of_a_delisted_home_share_are_stale() -> None:
         equities["isin"].str.ljust(12, "0").where(equities["isin"] != "", "")
     )
     assert sorted(status_model.find_stale_lines(equities)) == ["ERT.DE", "TWR.DE"]
+
+
+def test_regional_german_lines_follow_xetra_and_frankfurt() -> None:
+    """Test that a Berlin line goes when its ticker is delisted on Xetra and Frankfurt."""
+    equities = pd.DataFrame(
+        {
+            "exchange": ["GER", "FRA", "BER", "GER", "BER"],
+            "delisted": ["True", "True", "False", "False", "False"],
+        },
+        index=["GLP.DE", "GLP.F", "GLP.BE", "SAP.DE", "SAP.BE"],
+    )
+    assert status_model.find_stale_german_lines(equities) == ["GLP.BE"]
