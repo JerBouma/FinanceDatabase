@@ -316,8 +316,22 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         )
         .drop("len")
     )
+    # The country that leads a venue: the home most of its listings come from.
+    venue_countries = (
+        listed.filter(pl.col("_home").is_not_null())
+        .group_by("_exchange", "_home")
+        .len()
+        .sort("len", "_home", descending=[True, False])
+        .unique("_exchange", keep="first", maintain_order=True)
+        .select("_exchange", pl.col("_home").alias("_venue_country"))
+    )
+    # A venue's size: the listings of its own country, so foreign lines don't count.
     sizes = (
-        listed.filter(pl.col("_exchange").is_in(main_venues))
+        listed.join(venue_countries, on="_exchange")
+        .filter(
+            pl.col("_exchange").is_in(main_venues)
+            & (pl.col("_home") == pl.col("_venue_country"))
+        )
         .group_by("_exchange")
         .len()
         .with_columns((pl.col("len") / pl.col("len").sum()).alias("_size"))
@@ -338,15 +352,6 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
             pl.col("len") >= HOME_CURRENCY_SHARE * pl.col("len").sum().over("_home")
         )
         .select("_home", "_currency", pl.lit(True).alias("_home_currency"))
-    )
-    # The country that leads a venue: the home most of its listings come from.
-    venue_countries = (
-        listed.filter(pl.col("_home").is_not_null())
-        .group_by("_exchange", "_home")
-        .len()
-        .sort("len", "_home", descending=[True, False])
-        .unique("_exchange", keep="first", maintain_order=True)
-        .select("_exchange", pl.col("_home").alias("_venue_country"))
     )
 
     frame = (
@@ -407,16 +412,19 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         & pl.col("_currency").is_not_null()
     )
     words = pl.col("_name").str.split(" ")
-    lines_abroad = frame.filter(abroad).select(
-        symbol,
-        "_home",
-        pl.int_ranges(1, words.list.len()).alias("_length"),
-        words.alias("_words"),
+    starts = (
+        frame.filter(abroad)
+        .select(
+            symbol,
+            "_home",
+            pl.int_ranges(1, words.list.len()).alias("_length"),
+            words.alias("_words"),
+        )
+        .explode("_length")
+        .drop_nulls("_length")
     )
     receipts = (
-        lines_abroad.explode("_length")
-        .drop_nulls("_length")
-        .select(
+        starts.select(
             symbol,
             "_home",
             pl.col("_words")
@@ -426,7 +434,7 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         )
         .join(home_names, on=["_home", "_prefix"], how="semi")
         .get_column(symbol)
-        if lines_abroad.height
+        if starts.height
         else pl.Series(symbol, [], dtype=pl.String)
     )
     # So is a line abroad with a word that almost only names such lines ('CDR', 'DRN').
@@ -445,6 +453,25 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         )
         .get_column("_word")
     )
+    # And a line abroad whose symbol has a shape almost only such lines have (B3's '34').
+    digits = pl.col(symbol).str.extract(r"^[A-Za-z]+(\d+)(?:\.[A-Za-z]+)?$")
+    shapes = frame.filter(~pl.col("_delisted")).select(
+        symbol,
+        abroad.alias("_abroad"),
+        pl.concat_str(
+            "_exchange", digits.str.slice(0, 1), digits.str.len_chars().cast(pl.String)
+        ).alias("_shape"),
+    )
+    receipt_shapes = (
+        shapes.drop_nulls("_shape")
+        .group_by("_shape")
+        .agg(pl.col("_abroad").sum().alias("_lines"), pl.len().alias("_total"))
+        .filter(
+            (pl.col("_lines") >= PRIOR_LISTINGS)
+            & (pl.col("_lines") >= RECEIPT_WORD_SHARE * pl.col("_total"))
+        )
+        .get_column("_shape")
+    )
     receipts = pl.concat(
         [
             receipts,
@@ -453,6 +480,9 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
                 & pl.col("_word")
                 .list.eval(pl.element().is_in(receipt_words.implode()))
                 .list.any()
+            ).get_column(symbol),
+            shapes.filter(
+                pl.col("_abroad") & pl.col("_shape").is_in(receipt_shapes.implode())
             ).get_column(symbol),
         ]
     )
@@ -568,6 +598,19 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
             .otherwise(expression.max().over("_name", "_home"))
         )
 
+    # Abroad, a line without the share's ISIN only counts when no line abroad has one.
+    line_abroad = pl.col("_candidate") & pl.col("main_venue") & ~pl.col("_home_line")
+    with_isin = (
+        (line_abroad & pl.col("_isin").is_not_null() & ~pl.col("_delisted"))
+        .any()
+        .over("_name", "_home")
+    )
+    frame = frame.with_columns(
+        (
+            pl.col("_candidate")
+            & ~(line_abroad & pl.col("_isin").is_null() & with_isin)
+        ).alias("_candidate")
+    )
     best = pl.when(~pl.col("_delisted") & pl.col("_candidate")).then(
         pl.col("listing_score")
     )

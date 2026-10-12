@@ -112,7 +112,47 @@ def update_cryptos(
     frame = frame[~frame.cryptocurrency.isin(gone)]
     if rows:
         frame = pd.concat([frame, pd.DataFrame(rows)[frame.columns]])
-    return frame, added, gone
+    twins = find_numbered_twins(frame)
+    for twin in twins:
+        # The unnumbered coin keeps its twin's homepage when it has none.
+        base = frame.cryptocurrency == re.sub(r"\d+$", "", twin)
+        site = frame.website[frame.cryptocurrency == twin].iloc[0]
+        if site and (frame.website[base] == "").all():
+            frame.loc[base, "website"] = site
+    return frame[~frame.cryptocurrency.isin(twins)], added, gone + twins
+
+
+def find_numbered_twins(frame: pd.DataFrame) -> list[str]:
+    """
+    The numbered tickers (Yahoo's 'SOL1') of a coin that is also in the file unnumbered.
+
+    Args:
+        frame (pd.DataFrame): The cryptos file.
+
+    Returns:
+        list[str]: The numbered tickers whose base has the same name and website
+            (or no website).
+    """
+    # A website's main label ('polkadot' for polkadot.com and polkadot.network).
+    label = r"^(?:https?://)?(?:www\.)?([^./]+)\."
+    coins = frame.groupby("cryptocurrency").agg(
+        name=("name", lambda names: names.iloc[0].rsplit(" ", 1)[0].lower()),
+        website=("website", lambda sites: sites.iloc[0].lower()),
+    )
+    coins["website"] = coins["website"].str.extract(label, expand=False).fillna("")
+    numbered = coins[coins.index.str.contains(r"\d$")]
+    bases = numbered.index.str.replace(r"\d+$", "", regex=True)
+    twins = [
+        ticker
+        for ticker, base in zip(numbered.index, bases, strict=True)
+        if base in coins.index
+        and coins.loc[base, "name"] == numbered.loc[ticker, "name"]
+        and (
+            coins.loc[base, "website"] == numbered.loc[ticker, "website"]
+            or "" in (coins.loc[base, "website"], numbered.loc[ticker, "website"])
+        )
+    ]
+    return sorted(twins)
 
 
 def describe_pair(base: str, quote: str, names: dict[str, str]) -> str:
