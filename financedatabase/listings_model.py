@@ -16,6 +16,8 @@ HOME_CURRENCY_SHARE = 0.1
 RECEIPT_WORD_SHARE = 0.95
 # Listings within this fraction of the best score are primary too (NSE and BSE).
 PRIMARY_TOLERANCE = 0.9
+# A venue is selective when less than this share of its listings come from abroad.
+SELECTIVE_FOREIGN_SHARE = 0.25
 # Minimum share of names a word ends to be ignored at the end ('Inc', 'AG', 'USD').
 TRAILING_WORD_SHARE = 0.003
 MAXIMUM_TRAILING_WORDS = 2
@@ -155,6 +157,43 @@ def get_main_venues(lazy: pl.LazyFrame) -> list[str]:
     )
 
 
+def get_home_venues(lazy: pl.LazyFrame, main_venues: list[str]) -> dict[str, str]:
+    """
+    Get the home venue of each country that leads no main venue: the venue with most of
+    its listings, if it has enough there to be a home market (Vienna for Austria).
+
+    Args:
+        lazy (pl.LazyFrame): Listings with an "exchange" column and a country, ISIN or
+            currency to take the home from.
+        main_venues (list[str]): The main venues, see get_main_venues.
+
+    Returns:
+        dict[str, str]: Country -> its home venue, a main venue for its listings only.
+    """
+    homes = (
+        lazy.select(
+            "exchange", get_home(lazy.collect_schema().names()).alias("country")
+        )
+        .filter(pl.col("exchange").is_not_null())
+        .group_by("exchange", "country")
+        .len()
+        .with_columns(
+            (pl.col("len") / pl.col("len").sum().over("exchange")).alias("share")
+        )
+        .filter(pl.col("country").is_not_null())
+        .collect()
+    )
+    led = homes.filter(pl.col("exchange").is_in(main_venues)).filter(
+        pl.col("len") == pl.col("len").max().over("exchange")
+    )
+    homeless = (
+        homes.filter(~pl.col("country").is_in(led.get_column("country").implode()))
+        .filter(pl.col("len") == pl.col("len").max().over("country"))
+        .filter((pl.col("len") >= PRIOR_LISTINGS) & (pl.col("share") >= HOME_SHARE))
+    )
+    return dict(homeless.select("country", "exchange").iter_rows())
+
+
 def get_prefixes(keys: pl.DataFrame) -> pl.DataFrame:
     """
     Get every word-for-word start of each name ('asml', 'asml holding').
@@ -267,6 +306,7 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
     """
     columns = lazy.collect_schema().names()
     symbol = columns[0]
+    home_venues = get_home_venues(lazy, main_venues)
     name = pl.col("name") if "name" in columns else pl.lit(None, dtype=pl.String)
     isin = pl.col("isin") if "isin" in columns else pl.lit(None, dtype=pl.String)
     country = (
@@ -284,6 +324,7 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         pl.col("exchange").alias("_exchange"),
         currency.alias("_currency"),
         country.alias("_home"),
+        country.is_null().alias("_no_country"),
         name.alias("_full_name"),
         pl.when(isin.str.len_chars() == 12).then(isin).alias("_isin"),
         delisted.alias("_delisted"),
@@ -338,14 +379,27 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         .drop("len")
     )
 
-    # Home currencies: those of a tenth or more of a country's home main-venue listings.
-    home_currencies = (
-        listed.join(shares, on=["_exchange", "_home"], how="inner")
-        .filter(
+    # A home's own venues: the main venues it leads, and its home venue.
+    own = listed.join(venue_countries, on="_exchange").filter(
+        (
             pl.col("_exchange").is_in(main_venues)
-            & (pl.col("_share") >= HOME_SHARE)
-            & pl.col("_currency").is_not_null()
+            & (pl.col("_home") == pl.col("_venue_country"))
         )
+        | (
+            pl.col("_exchange")
+            == pl.col("_home").replace_strict(home_venues, default=None)
+        ).fill_null(False)
+    )
+    # Home currencies: those of a tenth or more of a country's listings on its own
+    # venues or on the main venues where it has a share (Vienna's EUR, Hong Kong's HKD).
+    others = listed.join(shares, on=["_exchange", "_home"], how="inner").filter(
+        pl.col("_exchange").is_in(main_venues) & (pl.col("_share") >= HOME_SHARE)
+    )
+    home_currencies = (
+        pl.concat(
+            [own.select("_home", "_currency"), others.select("_home", "_currency")]
+        )
+        .filter(pl.col("_currency").is_not_null())
         .group_by("_home", "_currency")
         .len()
         .filter(
@@ -365,7 +419,15 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
         )
         .join(venue_countries, on="_exchange", how="left")
         .with_columns(
-            pl.col("_exchange").is_in(main_venues).fill_null(False).alias("main_venue"),
+            (
+                pl.col("_exchange").is_in(main_venues)
+                | (
+                    pl.col("_exchange")
+                    == pl.col("_home").replace_strict(home_venues, default=None)
+                )
+            )
+            .fill_null(False)
+            .alias("main_venue"),
         )
         .with_columns(
             (pl.col("_share").fill_null(0.0) >= HOME_SHARE).alias("_at_home"),
@@ -386,7 +448,21 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
             ).alias("_home_line"),
         )
         .with_columns(
-            pl.when(pl.col("main_venue") & pl.col("_home_line"))
+            # On its home's own venue (led by its home, or its home venue) a home line
+            # outranks one on a venue another country leads (Vienna over Prague).
+            pl.when(
+                pl.col("main_venue")
+                & pl.col("_home_line")
+                & (
+                    (pl.col("_venue_country") == pl.col("_home")).fill_null(False)
+                    | (
+                        pl.col("_exchange")
+                        == pl.col("_home").replace_strict(home_venues, default=None)
+                    ).fill_null(False)
+                )
+            )
+            .then(3 + pl.col("_share"))
+            .when(pl.col("main_venue") & pl.col("_home_line"))
             .then(2 + pl.col("_share"))
             .when(pl.col("main_venue"))
             .then(1 + pl.col("_size"))
@@ -491,15 +567,18 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
             "_candidate"
         )
     )
-    frame = frame.with_columns(link_names(frame).alias("_name"))
+    frame = frame.with_columns(
+        pl.col("_name").alias("_own_name"), link_names(frame).alias("_name")
+    )
 
-    # A name without a home main-venue listing takes the country of one that has it.
+    # A line without a country and without a home main-venue listing takes the country
+    # of a linked name that has one; a known country is kept (Frontline stays Bermuda).
     home_main = pl.col("_at_home") & pl.col("main_venue") & ~pl.col("_delisted")
     frame = frame.with_columns(
         home_main.any().over("_name", "_home").alias("_has_home"),
         pl.when(home_main).then(pl.col("_home")).alias("_main_home"),
     ).with_columns(
-        pl.when(~pl.col("_has_home"))
+        pl.when(~pl.col("_has_home") & pl.col("_no_country"))
         .then(
             pl.coalesce(
                 pl.col("_main_home").drop_nulls().mode().min().over("_name"),
@@ -598,6 +677,25 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
             .otherwise(expression.max().over("_name", "_home"))
         )
 
+    # At home, a line without an ISIN gives way to a line of the same name with one
+    # (Avon's Aquis line to AVON.L).
+    line_home = pl.col("_candidate") & pl.col("main_venue") & pl.col("_home_line")
+    named_with_isin = (
+        (
+            line_home
+            & pl.col("_isin").is_not_null()
+            & ~pl.col("_delisted")
+            & ~pl.col("_class_line")
+        )
+        .any()
+        .over("_own_name", "_home")
+    )
+    frame = frame.with_columns(
+        (
+            pl.col("_candidate")
+            & ~(line_home & pl.col("_isin").is_null() & named_with_isin)
+        ).alias("_candidate")
+    )
     # Abroad, a line without the share's ISIN only counts when no line abroad has one.
     line_abroad = pl.col("_candidate") & pl.col("main_venue") & ~pl.col("_home_line")
     with_isin = (
@@ -611,9 +709,61 @@ def get_listing_ranks(lazy: pl.LazyFrame, main_venues: list[str]) -> pl.DataFram
             & ~(line_abroad & pl.col("_isin").is_null() & with_isin)
         ).alias("_candidate")
     )
-    best = pl.when(~pl.col("_delisted") & pl.col("_candidate")).then(
-        pl.col("listing_score")
+    # Share classes don't set the bar: a preferred on NYSE doesn't hide common shares.
+    # Abroad, a line in the currency of the ISIN's country on a selective venue (few
+    # foreign listings, so a real listing) beats the rest: STMicroelectronics in
+    # Paris, not New York; Accenture's euro lines on Xetra don't count.
+    prefix = pl.col("_isin").str.slice(0, 2)
+    isin_homes = (
+        frame.filter(pl.col("_home_line") & pl.col("_isin").is_not_null())
+        .group_by(prefix.alias("_prefix"), "_home")
+        .len()
+        .sort("len", "_home", descending=[True, False])
+        .unique("_prefix", keep="first", maintain_order=True)
+        .join(home_currencies, on="_home")
+        .select("_prefix", "_currency", pl.lit(True).alias("_isin_currency"))
     )
+    selective = (
+        listed.join(venue_countries, on="_exchange")
+        .group_by("_exchange")
+        .agg((pl.col("_home") != pl.col("_venue_country")).mean().alias("_foreign"))
+        .filter(pl.col("_foreign") < SELECTIVE_FOREIGN_SHARE)
+        .get_column("_exchange")
+    )
+    # The company's ISIN country: the most common one of its lines that aren't classes.
+    company_prefix = (
+        pl.when(~pl.col("_class_line"))
+        .then(prefix)
+        .drop_nulls()
+        .mode()
+        .min()
+        .over("_name", "_home")
+    )
+    frame = (
+        frame.with_columns(company_prefix.alias("_prefix"))
+        .join(isin_homes, on=["_prefix", "_currency"], how="left")
+        .with_columns(
+            (
+                pl.col("_isin_currency").fill_null(False)
+                & pl.col("_exchange").is_in(selective.implode())
+            ).alias("_isin_currency")
+        )
+    )
+    line_abroad = pl.col("_candidate") & pl.col("main_venue") & ~pl.col("_home_line")
+    in_isin_currency = (
+        (line_abroad & pl.col("_isin_currency") & ~pl.col("_delisted"))
+        .any()
+        .over("_name", "_home")
+    )
+    frame = frame.with_columns(
+        (
+            pl.col("_candidate")
+            & ~(line_abroad & ~pl.col("_isin_currency") & in_isin_currency)
+        ).alias("_candidate")
+    )
+    best = pl.when(
+        ~pl.col("_delisted") & pl.col("_candidate") & ~pl.col("_class_line")
+    ).then(pl.col("listing_score"))
     frame = frame.with_columns(spread(best).alias("_best"))
     frame = frame.with_columns(
         pl.when(pl.col("_isin").is_not_null())
