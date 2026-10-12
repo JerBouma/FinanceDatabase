@@ -73,6 +73,13 @@ WARRANT_NAME = re.compile(r"\b(?:warrants?|waran|wts)\b|\bWT EXP\b", re.IGNORECA
 SUBSCRIPTION_NAME = re.compile(r"\bTO\d+\b|wts$", re.IGNORECASE)
 # Nordic knock-out, stop-loss and mini certificates ('KO 1(39', 'SO 2(196').
 CERTIFICATE_NAME = re.compile(r"\b(?:KO|SO|MINI)\s?\d+\s?\(")
+# German bond short names: coupon period ('Chevron 14/17', 'ENGIE 13/UND.FLR'), floaters,
+# MTNs, 'ANL.V.' (Anleihe) and Australian capital-indexed bonds ('Australia 2025 CI').
+BOND_SHORT_NAME = re.compile(
+    r"(?<=[A-Za-z .(])\d{2}/(?:\d{4}|\d{2}|UND\.?)(?!\d)|\bFLR\b|\bMTN\s?\d|\bANL\.\s?V\."
+    r"|\b(?:19|20)\d{2} CI$",
+    re.IGNORECASE,
+)
 # Debentures, rights issues, leveraged products and indices listed as equities.
 OTHER_NON_SHARE = re.compile(
     r"\bred(?:eemable)? NCDs?\b|\bexch(?:ange)? traded bond\b|\brights issue\b|\bleveraged product\b|"
@@ -109,7 +116,8 @@ def check_non_share(name: str, country: str = "", isin: str = "") -> bool:
     if OPTION_NAME.search(name) or WARRANT_NAME.search(name):
         return True
     if any(
-        p.search(name) for p in (SUBSCRIPTION_NAME, CERTIFICATE_NAME, OTHER_NON_SHARE)
+        p.search(name)
+        for p in (SUBSCRIPTION_NAME, CERTIFICATE_NAME, OTHER_NON_SHARE, BOND_SHORT_NAME)
     ):
         return True
     if EXCHANGEABLE_NOTE.search(name):

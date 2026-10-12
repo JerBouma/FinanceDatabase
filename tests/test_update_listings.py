@@ -163,6 +163,13 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("Rights Issue Of Fawry For Banki", "", ""),
         ("CSOP Hang Seng Index Daily (2x) Leveraged Product", "", ""),
         ("CHI-X AUSTRALIA 200 MARKET CAPITALISATION PRICE RETURN INDEX", "", ""),
+        ("Chevron 14/17", "", ""),
+        ("ENGIE 13/UND.FLR", "", ""),
+        ("CHAPARRAL ENERGY18/23REGS", "", ""),
+        ("BK NOVA SCOTIA 2027 FLR", "", ""),
+        ("K.F.W.ANL.V.13/2020 DL", "", ""),
+        ("S IMMO 14-19 MTN 2", "", ""),
+        ("Australia 2025 CI", "", ""),
     ]:
         assert helpers.check_non_share(name, country, isin), name
     for name, country, isin in [
@@ -178,6 +185,9 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("NCD Co.,Ltd.", "Japan", ""),
         ("Law Debenture Corporation", "United Kingdom", ""),
         ("Totalenergies SE", "France", ""),
+        ("20/20 Biolabs Inc. Common Stock", "United States", ""),
+        ("MTN Group Limited", "South Africa", ""),
+        ("Alphabet Inc. Depositary Shares representing a 1/20th Interest", "", ""),
     ]:
         assert not helpers.check_non_share(name, country, isin), name
 
