@@ -76,6 +76,10 @@ Sources (all public, official):
 - NSE equity and ETF lists: India.
 - JPX list of TSE-listed issues: Japan equities and ETFs.
 - ASX listed companies: Australia equities (rows marked 'Not Applic', trusts and funds, are skipped).
+- KRX KIND list of listed companies: KOSPI and KOSDAQ equities (not KONEX). KIND names are
+  Korean; the English name comes from OpenFIGI, and a company without one is not added.
+- SET list of listed companies: Thailand (SET and mai) equities; property and infrastructure
+  funds are skipped.
 - TSX / TSXV company directory: Canada equities and ETFs.
 - Deutsche Börse Xetra all-tradable-instruments file: ETFs and ETCs on Xetra.
 - Euronext ETF list: ETFs on Euronext Amsterdam, Paris, Brussels, Lisbon and Oslo.
@@ -93,14 +97,16 @@ Safety rules, so an automated run never adds junk or duplicates:
   that row's symbol is no longer on the exchange's list, the old row is marked delisted. More
   than 50 such changes for one source is treated as a parsing problem and nothing is delisted.
 - Values a source does not provide are left blank, never guessed.
+- A name only in another script than Latin is never added.
 
 Enrichment of new rows (each step is optional; if it fails, rows are still added):
 
 - OpenFIGI: FIGIs for new equities, and full names for HKEX rows (HKEX publishes
-  abbreviations). A row whose security type contradicts its asset class is re-filed. Set
-  `OPENFIGI_API_KEY` for higher rate limits.
+  abbreviations) and English names for KRX rows. A row whose security type contradicts its
+  asset class is re-filed. Set `OPENFIGI_API_KEY` for higher rate limits.
 - Sector, industry group and industry from the exchange's own classification (JPX sectors,
-  NSE industries), when ≥ 90% of ≥ 10 existing rows with that classification agree.
+  NSE industries, KRX industries, SET sectors), when ≥ 90% of ≥ 10 existing rows with that
+  classification agree.
 - ETF family from the first words of the name, when ≥ 95% of existing ETFs with those words
   share one family.
 - US ETFs (needs `SEC_USER_AGENT_EMAIL`): the investment objective from the fund's summary

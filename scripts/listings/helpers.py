@@ -2,6 +2,7 @@
 
 __docformat__ = "google"
 
+import html
 import os
 import re
 import urllib.request
@@ -45,7 +46,7 @@ def create_session() -> requests.Session:
 SESSION = create_session()
 US_ETF_FILES = {"NMS", "NGM", "NCM", "NYQ", "ASE", "PCX", "BTS"}
 
-SUFFIX = r"\.(?:TO|V|HK|NS|T|AX)$"
+SUFFIX = r"\.(?:TO|V|HK|NS|T|AX|KS|KQ|BK)$"
 # Instruments with an expiry or maturity date go out of date quickly and are not added.
 DATED_NAME = re.compile(
     r"\bwarrants?\b|\s(?:WTS?|RTS)$|\brights?$|\bsubscription rights?\b"
@@ -199,6 +200,21 @@ def fetch_optional(url: str) -> bytes | None:
     except Exception as error:
         print(f"  optional download failed ({url}): {type(error).__name__}: {error}")
         return None
+
+
+def read_html_table(raw: bytes, encoding: str = "utf-8") -> list[list[str]]:
+    """
+    The cell texts of every row of an HTML table, as exchanges publish their 'Excel' lists.
+    """
+    text = raw.decode(encoding, errors="replace")
+    rows = re.findall(r"<tr[^>]*>(.*?)</tr>", text, re.S | re.I)
+    return [
+        [
+            html.unescape(re.sub(r"<[^>]+>", "", cell)).strip()
+            for cell in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", row, re.S | re.I)
+        ]
+        for row in rows
+    ]
 
 
 def require(condition: bool, message: str) -> None:

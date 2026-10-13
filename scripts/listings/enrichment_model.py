@@ -27,6 +27,9 @@ FIGI_EXCHANGES = {
     ".AX": "AT",
     ".TO": "CT",
     ".V": "CV",
+    ".KS": "KS",
+    ".KQ": "KS",
+    ".BK": "TB",
 }
 MIN_AGREEMENT, MIN_ROWS = 0.9, 10
 EXCHANGE_NAMES = {
@@ -144,7 +147,7 @@ def enrich_with_openfigi(
     listings: list[Listing], api_key: str | None
 ) -> tuple[list[Listing], list[str]]:
     """
-    Fill FIGIs and HKEX names; re-file rows whose security type contradicts the class.
+    Fill FIGIs and HKEX/KRX names; re-file rows whose security type contradicts the class.
     """
     jobs = [(listing, create_figi_job(listing)) for listing in listings]
     jobs = [(listing, job) for listing, job in jobs if job]
@@ -174,7 +177,7 @@ def enrich_with_openfigi(
             listing.figi = record.get("figi") or ""
             listing.composite_figi = record.get("compositeFIGI") or ""
             listing.shareclass_figi = record.get("shareClassFIGI") or ""
-        if listing.file == "HKG" and get_openfigi_name(record):
+        if listing.file in ("HKG", "KSC", "KOE") and get_openfigi_name(record):
             listing.name = get_openfigi_name(record)
     return listings, notes
 

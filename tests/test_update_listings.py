@@ -744,3 +744,57 @@ def test_dated_instruments_are_not_added(tmp_path: Path) -> None:
         db, "TSX", result, lambda name: "", use_openfigi=False
     )
     assert [listing.symbol for listing in summary["added"]] == ["MOEX.TO", "NEW.TO"]
+
+
+def test_parse_krx_and_set_lists() -> None:
+    """Test the KRX (KOSPI, KOSDAQ) and SET company lists, without KONEX and funds."""
+    head = "<tr><th>회사명</th><th>시장구분</th><th>종목코드</th><th>업종</th><th>지역</th></tr>"
+    rows = [
+        ("삼성전자", "유가", "005930", "통신 및 방송 장비 제조업", "경기도"),
+        ("브릴스", "코스닥", "468670", "특수 목적용 기계 제조업", "인천광역시"),
+        ("해외기업", "코스닥", "900100", "지주회사", "케이맨 제도"),
+        ("코넥스기업", "코넥스", "123450", "소프트웨어", "서울특별시"),
+    ] + [(f"회사{i}", "코스닥", f"{i:06d}", "업종", "서울특별시") for i in range(2000)]
+    page = "<table>" + head
+    page += "".join(
+        "<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>" for r in rows
+    )
+    krx = sources_model.parse_krx((page + "</table>").encode("euc-kr"))
+    found = {x.symbol: x for x in krx.listings}
+    assert found["005930.KS"].file == "KSC" and found["005930.KS"].abbreviated
+    assert found["468670.KQ"].country == "South Korea"
+    assert found["900100.KQ"].country == ""  # a Cayman Islands company
+    assert "123450.KQ" not in found and "123450.KS" not in found  # KONEX
+    assert krx.classifications["KSC"]["005930.KS"] == "통신 및 방송 장비 제조업"
+
+    head = (
+        "<tr><td>Symbol</td><td>Company</td><td>Market</td><td>Industry</td>"
+        "<td>Sector</td><td>Address</td></tr>"
+    )
+    rows = [
+        ("S&amp;J", "S &amp; J INTERNATIONAL", "SET", "Consumer", "Personal Products"),
+        ("ABPIF", "AMATA B.GRIMM POWER PLANT INFRASTRUCTURE FUND", "SET", "x", "x"),
+    ] + [(f"C{i}", f"COMPANY {i} PCL", "mai", "x", "x") for i in range(600)]
+    page = "<table><tr><td>List of Listed Companies</td></tr>" + head
+    page += "".join(
+        "<tr>" + "".join(f"<td>{c}</td>" for c in r) + "<td>a</td></tr>" for r in rows
+    )
+    thai = sources_model.parse_set((page + "</table>").encode())
+    symbols = {x.symbol for x in thai.listings}
+    assert "S&J.BK" in symbols and "ABPIF.BK" not in symbols
+    assert {"S&J.BK", "S&J-R.BK"} <= thai.official["SET"]
+
+
+def test_names_in_another_script_are_not_added(tmp_path: Path) -> None:
+    """Test that a listing whose name is only in another script is not added."""
+    db = database_model.Database(str(create_database(tmp_path)))
+    result = sources_model.SourceResult(
+        listings=[
+            sources_model.Listing("equities", "TOR", "KRN.TO", "삼성전자", "CAD"),
+            sources_model.Listing("equities", "TOR", "LAT.TO", "Société Latine", "CAD"),
+        ]
+    )
+    summary = listings_controller.apply_source(
+        db, "test", result, db.get_etf_families(), use_openfigi=False
+    )
+    assert [x.symbol for x in summary["added"]] == ["LAT.TO"]

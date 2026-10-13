@@ -29,6 +29,7 @@ from scripts.listings.helpers import (
 from scripts.listings.sources_model import SourceResult, load_sources
 
 MAX_DELISTINGS_PER_SOURCE = 50
+NON_LATIN = re.compile(r"[^\x00-\u024f]")
 # Full-name lookups per source and run; new funds over the limit are added in a later run.
 MAX_NAME_LOOKUPS = 300
 
@@ -104,6 +105,11 @@ def apply_source(
     rejected: list[str] = []
     if use_openfigi and added:
         added, rejected = enrich_with_openfigi(added, api_key)
+    # A name only in another script (KRX publishes Korean) is never added.
+    unnamed = [x.symbol for x in added if NON_LATIN.search(x.name)]
+    if unnamed:
+        added = [x for x in added if x.symbol not in unnamed]
+        rejected.append(f"{len(unnamed)} rows without a name in Latin script skipped")
     categories = {
         file: learn_categories(db.get_frame("equities", file), labels)
         for file, labels in result.classifications.items()
