@@ -137,8 +137,8 @@ def update_us_listing_status(
     database: str = "database", nasdaq: bytes | None = None, other: bytes | None = None
 ) -> tuple[int, int]:
     """
-    Delist the US equities the Nasdaq Trader directory no longer lists and relist the
-    ones it lists again; delistings are skipped when implausibly many.
+    Delist the US equities and ETFs the Nasdaq Trader directory no longer lists and
+    relist the ones it lists again; delistings are skipped when implausibly many.
 
     Args:
         database (str): The database folder.
@@ -154,27 +154,36 @@ def update_us_listing_status(
     )
     if len(listed) < status_model.MINIMUM_DIRECTORY:
         raise ValueError(f"Nasdaq Trader directory too short ({len(listed)})")
-    frames, changes, live = {}, {}, 0
-    for file in status_model.US_FILES:
-        path = os.path.join(database, "equities", f"{file}.csv")
-        if os.path.exists(path):
-            frames[path] = pd.read_csv(
-                path, index_col=0, dtype=str, keep_default_na=False
+    delisted = relisted = 0
+    for folder, files in (
+        ("equities", status_model.US_FILES),
+        ("etfs", status_model.US_ETF_FILES),
+    ):
+        frames, changes, live = {}, {}, 0
+        for file in files:
+            path = os.path.join(database, folder, f"{file}.csv")
+            if os.path.exists(path):
+                frames[path] = pd.read_csv(
+                    path, index_col=0, dtype=str, keep_default_na=False
+                )
+                changes[path] = status_model.get_status_changes(
+                    frames[path], listed, shares=folder == "equities"
+                )
+                live += (frames[path]["delisted"] != "True").sum()
+        gone = sum(len(delist) for delist, _ in changes.values())
+        if gone > status_model.MAX_DELISTED_SHARE * live:
+            print(
+                f"  ! {gone} US {folder} delistings looks implausible; delisting none"
             )
-            changes[path] = status_model.get_status_changes(frames[path], listed)
-            live += (frames[path]["delisted"] != "True").sum()
-    delisted = sum(len(delist) for delist, _ in changes.values())
-    if delisted > status_model.MAX_DELISTED_SHARE * live:
-        print(f"  ! {delisted} US delistings looks implausible; delisting none")
-        changes = {path: ([], relist) for path, (_, relist) in changes.items()}
-        delisted = 0
-    relisted = 0
-    for path, (delist, relist) in changes.items():
-        if delist or relist:
-            frames[path].loc[delist, "delisted"] = "True"
-            frames[path].loc[relist, "delisted"] = "False"
-            write_csv(frames[path], path)
-            relisted += len(relist)
+            changes = {path: ([], relist) for path, (_, relist) in changes.items()}
+            gone = 0
+        delisted += gone
+        for path, (delist, relist) in changes.items():
+            if delist or relist:
+                frames[path].loc[delist, "delisted"] = "True"
+                frames[path].loc[relist, "delisted"] = "False"
+                write_csv(frames[path], path)
+                relisted += len(relist)
     return delisted, relisted
 
 
@@ -223,7 +232,7 @@ def run_us_equities_update() -> None:
         print(f"US equities update stopped: {type(error).__name__}: {error}")
     try:
         delisted, relisted = update_us_listing_status(database)
-        print(f"{delisted} US equities delisted, {relisted} relisted")
+        print(f"{delisted} US equities and ETFs delisted, {relisted} relisted")
         print(
             f"{delist_stale_lines(database)} lines abroad of delisted shares delisted"
         )

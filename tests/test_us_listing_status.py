@@ -1,8 +1,10 @@
 """US Listing Status Test Module"""
 
+import os
+
 import pandas as pd
 
-from scripts.equities import equities_model, status_model
+from scripts.equities import equities_controller, equities_model, status_model
 
 NASDAQ = b"""Symbol|Security Name|Market Category|Test Issue|Financial Status|Round Lot Size|ETF|NextShares
 AAPL|Apple Inc. - Common Stock|Q|N|N|100|N|N
@@ -49,6 +51,30 @@ def test_status_changes_follow_the_directory() -> None:
     delist, relist = status_model.get_status_changes(frame, listed)
     assert delist == ["TLND"]
     assert relist == ["BCO"]
+
+
+def test_us_etfs_follow_the_directory(tmp_path, monkeypatch) -> None:
+    """Test that a US ETF the directory no longer lists is delisted, and relisted."""
+    monkeypatch.setattr(status_model, "MINIMUM_DIRECTORY", 1)
+    monkeypatch.setattr(status_model, "MAX_DELISTED_SHARE", 1)
+    other = OTHER + b"SPY|SPDR S&P 500 ETF Trust|P|SPY|Y|100|N|SPY\n"
+    for folder in ("equities", "etfs"):
+        os.makedirs(tmp_path / folder)
+    pd.DataFrame(
+        {"name": ["Apple Inc."], "delisted": ["False"]}, index=["AAPL"]
+    ).rename_axis("symbol").to_csv(tmp_path / "equities" / "NMS.csv")
+    pd.DataFrame(
+        {
+            "name": ["SPDR S&P 500 ETF Trust", "Cambria Fail ETF"],
+            "delisted": ["True", "False"],
+        },
+        index=["SPY", "FAIL"],
+    ).rename_axis("symbol").to_csv(tmp_path / "etfs" / "PCX.csv")
+    assert equities_controller.update_us_listing_status(
+        str(tmp_path), NASDAQ, other
+    ) == (1, 1)
+    etfs = pd.read_csv(tmp_path / "etfs" / "PCX.csv", index_col=0, dtype=str)
+    assert etfs["delisted"].to_dict() == {"FAIL": "True", "SPY": "False"}
 
 
 def test_lines_abroad_of_a_delisted_home_share_are_stale() -> None:
