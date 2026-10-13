@@ -68,7 +68,9 @@ DATE_IN_NAME = re.compile(
     re.IGNORECASE,
 )
 OPTION_NAME = re.compile(r"\b(?:CALL|PUT)\b.*\d", re.IGNORECASE)
-WARRANT_NAME = re.compile(r"\b(?:warrants?|waran|wts)\b|\bWT EXP\b", re.IGNORECASE)
+WARRANT_NAME = re.compile(
+    r"\b(?:warrants?|waran)\b|\bwts(?:\s\S{1,4})?$|\bWT EXP\b", re.IGNORECASE
+)
 # Subscription warrants named by series ('TO3'), and names ending in 'Wts'.
 SUBSCRIPTION_NAME = re.compile(r"\bTO\d+\b|wts$", re.IGNORECASE)
 # Nordic knock-out, stop-loss and mini certificates ('KO 1(39', 'SO 2(196') and Vienna
@@ -86,6 +88,10 @@ OTHER_NON_SHARE = re.compile(
     r"\bred(?:eemable)? NCDs?\b|\bexch(?:ange)? traded bond\b|\brights issue\b|\bleveraged product\b|"
     r"\b(?:price|total) return index\b",
     re.IGNORECASE,
+)
+# Commercial paper, as Caracas lists it ('P. C. DE NETUNO, EMISION 2020-I').
+COMMERCIAL_PAPER = re.compile(
+    r"^P\.\s?C\.\s+[A-Z0-9]|\b(?i:papel(?:es)? comercial(?:es)?|commercial paper)\b"
 )
 COUPON = re.compile(r"\d+(?:[.,]\d+)?\s?%")
 EXCHANGEABLE_NOTE = re.compile(r"\bzones$|\bexchangeable notes?\b", re.IGNORECASE)
@@ -118,7 +124,13 @@ def check_non_share(name: str, country: str = "", isin: str = "") -> bool:
         return True
     if any(
         p.search(name)
-        for p in (SUBSCRIPTION_NAME, CERTIFICATE_NAME, OTHER_NON_SHARE, BOND_SHORT_NAME)
+        for p in (
+            SUBSCRIPTION_NAME,
+            CERTIFICATE_NAME,
+            OTHER_NON_SHARE,
+            BOND_SHORT_NAME,
+            COMMERCIAL_PAPER,
+        )
     ):
         return True
     if EXCHANGEABLE_NOTE.search(name):

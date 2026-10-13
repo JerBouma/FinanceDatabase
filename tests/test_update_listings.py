@@ -172,6 +172,8 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("K.F.W.ANL.V.13/2020 DL", "", ""),
         ("S IMMO 14-19 MTN 2", "", ""),
         ("Australia 2025 CI", "", ""),
+        ("P. C. DE NETUNO, EMISION 2020-I", "", ""),
+        ("P.C. CALOX INTERNATIONAL EM. 20", "", ""),
     ]:
         assert helpers.check_non_share(name, country, isin), name
     for name, country, isin in [
@@ -190,6 +192,8 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("20/20 Biolabs Inc. Common Stock", "United States", ""),
         ("MTN Group Limited", "South Africa", ""),
         ("Alphabet Inc. Depositary Shares representing a 1/20th Interest", "", ""),
+        ("PC Jeweller Limited", "India", ""),
+        ("WTS Capital Bhd", "Malaysia", ""),
     ]:
         assert not helpers.check_non_share(name, country, isin), name
 

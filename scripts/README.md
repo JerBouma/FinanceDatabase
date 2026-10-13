@@ -59,7 +59,8 @@ these three exchanges, which follow the directory.
 `remove_non_shares.py` then removes any equities row that is not a company share (a name with
 a maturity or expiry date, a strike, a warrant, a coupon without share wording, a German bond
 short name such as 'Chevron 14/17' or 'ENGIE 13/UND.FLR', a certificate such as
-'EB OE TL.Z./E.ON', or an international XS ISIN;
+'EB OE TL.Z./E.ON', commercial paper such as Caracas' 'P. C. DE NETUNO, EMISION 2020-I', or an
+international XS ISIN;
 `helpers.check_non_share` in `listings/`), whatever added it.
 
 The equity categories are the database's own: `categories.json` lists every valid sector,
