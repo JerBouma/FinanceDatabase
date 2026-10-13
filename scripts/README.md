@@ -118,7 +118,8 @@ Enrichment of new rows (each step is optional; if it fails, rows are still added
 
 - CoinGecko: coins in the top 500 by market cap get the quote currencies ≥ 90% of coins trade
   in; a coin whose ticker CoinGecko no longer lists at all is removed. A ticker belongs to one
-  coin, and tokenized funds are left out.
+  coin; tokenized funds and tokenized stocks and ETFs (xStocks, bStocks, Ondo) are left out,
+  and removed when already in the file.
 - ISO 4217 (lists one and three from SIX, the maintenance agency): a new currency gets the
   pairs ≥ 80% of currencies have; withdrawn currencies are removed. Units of account (XSU,
   XUA) are not added.

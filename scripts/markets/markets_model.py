@@ -16,6 +16,11 @@ MAX_WEBSITE_LOOKUPS = 40
 # A removal touching more than this share of a file is treated as a source problem.
 MAX_REMOVED_SHARE = 0.4
 COIN_TICKER = re.compile(r"^[A-Z0-9]{1,12}$")
+# Tokenized stocks and ETFs (xStocks, bStocks, Ondo): securities, not cryptocurrencies.
+TOKENIZED_SECURITY = re.compile(
+    r"\bxStocks?\b|\bbStocks?\b|\bOndo Tokenized\b|\bTokeni[sz]ed (?:Stock|ETF|Share)s?\b",
+    re.IGNORECASE,
+)
 # Names of ETF iNAVs (indicative net asset values), as Xetra and other venues publish them.
 INAV_NAME = r"^(?:INAV|IN\.|I\.)|\bINAV\b"
 # A last word of at least this share of iNAV names is a generic ending (currency, class).
@@ -56,6 +61,8 @@ def update_cryptos(
         ticker = coin.symbol
         # Tokenized funds and tickers outside the symbol convention are left out.
         if not COIN_TICKER.match(ticker) or re.search(r"\bfund\b", coin.name, re.I):
+            continue
+        if TOKENIZED_SECURITY.search(coin.name):
             continue
         # A ticker belongs to one coin: the one already in the file, else the largest.
         if ticker in added or (
@@ -110,6 +117,7 @@ def update_cryptos(
         print(f"  ! {len(gone)} coins to remove looks implausible; removing none")
         gone = []
     frame = frame[~frame.cryptocurrency.isin(gone)]
+    frame = frame[~frame.name.str.contains(TOKENIZED_SECURITY)]
     if rows:
         frame = pd.concat([frame, pd.DataFrame(rows)[frame.columns]])
     twins = find_numbered_twins(frame)
