@@ -42,7 +42,7 @@ equities and refresh the market cap tier of existing ones (Mega Cap ≥ $200B, L
 Mid ≥ $2B, Small ≥ $300M, Micro ≥ $50M, else Nano). New tickers are classified through
 `us_feed_industries.csv` (Nasdaq feed industry → industry), with the industry group and
 sector most common for that industry, and named without the feed's share-type suffix
-('Zevia PBC Class A Common Stock' → 'Zevia PBC'). Malformed symbols, exchange-traded
+('Zevia PBC Class A Common Stock' → 'Zevia PBC', 'Gap Inc. (The)' → 'The Gap Inc.'). Malformed symbols, exchange-traded
 products and instruments with an expiry or maturity date (`helpers.DATED_NAME` in
 `listings/`) are skipped, and a symbol is never added when another asset class has it. A
 delisted row whose ticker a feed now lists for another company (a reused ticker, Barnes

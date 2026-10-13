@@ -41,8 +41,9 @@ VALID_SYMBOL = r"^[A-Z0-9]+(?:[./^-][A-Z0-9]+)*$"
 
 # Share-type suffixes of feed names ('Class A Common Stock'); names are the company's.
 SHARE_TYPE = re.compile(
-    r"[\s,-]+(?:(?:Class|Series) [A-Z]\s+)?(?:(?:Subordinate |Non-)?Voting\s+)?"
-    r"(?:Common Stock|Common Shares|Ordinary Shares?|American Depositary Shares?)$",
+    r"(?<!Preferred)[\s,-]+(?:(?:Class|Series) [A-Z]\s+)?(?:(?:Subordinate |Non-)?Voting\s+)?"
+    r"(?:Common Stock|Common Shares|Ordinary Shares?|American Depositary Shares?"
+    r"|(?:Common )?Shares of Beneficial Interest)(?:\s*\(.*\))?$",
     re.IGNORECASE,
 )
 
@@ -112,6 +113,8 @@ def remove_share_type(name: str) -> str:
     """
     Remove the share-type suffix of a feed name ('Zevia PBC Class A Common Stock' -> 'Zevia PBC').
 
+    A trailing '(The)' moves to the front ('Gap Inc. (The)' -> 'The Gap Inc.').
+
     Args:
         name (str): The feed name.
 
@@ -119,6 +122,8 @@ def remove_share_type(name: str) -> str:
         str: The company name, or the name itself when nothing else would remain.
     """
     company = SHARE_TYPE.sub("", name).strip()
+    if company.endswith(" (The)"):
+        company = f"The {company[:-6]}"
     return company if len(company) > 1 else name
 
 

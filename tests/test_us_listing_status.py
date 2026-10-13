@@ -141,6 +141,16 @@ def test_new_rows_carry_the_company_name() -> None:
             "Velos Acquisition I Corp.",
         ),
         ("XCHG Limited American Depositary Share", "XCHG Limited"),
+        (
+            "Haleon plc American Depositary Shares (Each representing two Ordinary Shares)",
+            "Haleon plc",
+        ),
+        ("Star Holdings Shares of Beneficial Interest", "Star Holdings"),
+        ("Boeing Company (The)", "The Boeing Company"),
+        (
+            "Pebblebrook Hotel Trust Preferred Shares of Beneficial Interest",
+            "Pebblebrook Hotel Trust Preferred Shares of Beneficial Interest",
+        ),
         ("Apple Inc.", "Apple Inc."),
         ("Common Stock", "Common Stock"),
     ]:
