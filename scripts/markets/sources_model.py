@@ -154,7 +154,7 @@ def fetch_euronext_indices() -> pd.DataFrame:
             io.StringIO("\n".join(rows)), sep=";", dtype=str, keep_default_na=False
         )
         require({"Name", "ISIN", "Symbol", "Currency"} <= set(data.columns), "Euronext")
-        data = data[data.Symbol.str.strip() != ""]
+        data = data[~data.Symbol.str.strip().isin(["", "-"])]
         frames.append(
             pd.DataFrame(
                 {

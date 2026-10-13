@@ -18,8 +18,14 @@ from scripts.listings.helpers import (
     fetch_nasdaq_trader,
     fetch_optional,
     get_canada_name,
+    read_html_table,
     require,
 )
+
+# KRX boards in KIND's list: KOSPI and KOSDAQ (KONEX is not covered).
+KRX_BOARDS = {"유가": ("KSC", ".KS"), "코스닥": ("KOE", ".KQ")}
+# KIND gives a Korean region; foreign companies have a country there instead.
+KOREAN_REGION = re.compile(r"(?:시|(?<!제)도)$")
 
 
 @dataclass
@@ -264,6 +270,69 @@ def parse_asx(csv: bytes) -> SourceResult:
     return result
 
 
+def parse_krx(page: bytes) -> SourceResult:
+    """
+    South Korea: KOSPI and KOSDAQ companies from KRX's KIND list. The names are Korean;
+    OpenFIGI gives the English ones, and rows without one are not added.
+    """
+    result = SourceResult()
+    rows = read_html_table(page, "euc-kr")
+    require(bool(rows) and rows[0][:3] == ["회사명", "시장구분", "종목코드"], "KRX")
+    require(len(rows) > 2000, "KRX list too short")
+    for file, _ in KRX_BOARDS.values():
+        result.classifications[file] = {}
+    for name, board, code, industry, *rest in rows[1:]:
+        if board not in KRX_BOARDS or not re.fullmatch(r"[0-9A-Z]{6}", code):
+            continue
+        file, suffix = KRX_BOARDS[board]
+        symbol = code + suffix
+        result.classifications[file][symbol] = industry
+        region = rest[-1] if rest else ""
+        result.listings.append(
+            Listing(
+                "equities",
+                file,
+                symbol,
+                name,
+                "KRW",
+                country="South Korea" if KOREAN_REGION.search(region) else "",
+                classification=industry,
+                abbreviated=True,
+            )
+        )
+    return result
+
+
+def parse_set(page: bytes) -> SourceResult:
+    """
+    Thailand: SET and mai companies; property and infrastructure funds are skipped.
+    """
+    result = SourceResult()
+    rows = read_html_table(page)
+    header = next(
+        (i for i, row in enumerate(rows) if row[:2] == ["Symbol", "Company"]), -1
+    )
+    require(header >= 0 and len(rows) - header > 500, "SET list too short")
+    data = [row for row in rows[header + 1 :] if len(row) >= 5 and row[0]]
+    # NVDR lines (-R) belong to their company and stay listed with it.
+    result.official = {"SET": {f"{r[0]}{tag}.BK" for r in data for tag in ("", "-R")}}
+    result.classifications = {"SET": {f"{r[0]}.BK": r[4] for r in data}}
+    for symbol, name, _, _, sector, *_ in data:
+        if re.search(r"\bFUND\b", name, re.I):
+            continue
+        result.listings.append(
+            Listing(
+                "equities",
+                "SET",
+                f"{symbol}.BK",
+                name,
+                "THB",
+                classification=sector,
+            )
+        )
+    return result
+
+
 def parse_tsx(tsx_json: bytes, tsxv_json: bytes) -> SourceResult:
     """
     Canada: TSX and TSXV equities, TSX ETFs.
@@ -453,6 +522,18 @@ def load_sources() -> dict[str, Callable[[], SourceResult]]:
         "JPX": lambda: parse_jpx(fetch(get_jpx_download_url())),
         "ASX": lambda: parse_asx(
             fetch("https://www.asx.com.au/asx/research/ASXListedCompanies.csv")
+        ),
+        "KRX": lambda: parse_krx(
+            fetch(
+                "https://kind.krx.co.kr/corpgeneral/corpList.do?method=download"
+                "&searchType=13"
+            )
+        ),
+        "SET": lambda: parse_set(
+            fetch(
+                "https://www.set.or.th/dat/eod/listedcompany/static/"
+                "listedCompanies_en_US.xls"
+            )
         ),
         "TSX/TSXV": lambda: parse_tsx(
             fetch(tsx.format("tsx")), fetch(tsx.format("tsxv"))

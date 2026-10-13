@@ -35,6 +35,8 @@ def test_update_cryptos_adds_top_coins_and_drops_dead_ones() -> None:
             ("other-eth", "ETH", "Other Ether", 3),
             ("fund", "BUIDL", "Some Liquidity Fund", 4),
             ("odd", "A_B", "Odd", 5),
+            ("tesla-xstock", "TSLAX", "Tesla xStock", 6),
+            ("nvda-ondo", "NVDAON", "NVIDIA (Ondo Tokenized Stock)", 7),
         ],
         columns=["id", "symbol", "name", "rank"],
     )
@@ -53,6 +55,7 @@ def test_update_cryptos_adds_top_coins_and_drops_dead_ones() -> None:
     assert frame.loc["SUI-USD", "website"] == "https://sui.org"
     assert frame.loc["BTC-USD", "website"] == "https://bitcoin.org"
     assert not frame.index.str.startswith("DEAD").any()
+    assert not frame.index.str.startswith(("TSLAX", "NVDAON")).any()
 
     # A coin that is ranked but missing from the full coin list stays.
     again, _, gone = markets_model.update_cryptos(

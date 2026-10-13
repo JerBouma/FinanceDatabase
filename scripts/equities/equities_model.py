@@ -3,10 +3,12 @@
 __docformat__ = "google"
 
 import glob
+import re
 
 import numpy as np
 import pandas as pd
 
+from scripts.equities.status_model import get_name_start
 from scripts.listings.helpers import DATED_NAME, check_non_share
 
 FEED_URL = "https://raw.githubusercontent.com/rreichel3/US-Stock-Symbols/main/{0}/{0}_full_tickers.json"
@@ -31,8 +33,19 @@ MARKET_CAP_THRESHOLDS = {
 # A run that would change more than this share of the US tiers is treated as a feed glitch.
 MAX_TIER_CHANGE_SHARE = 0.2
 
+# More reused tickers than this in one run points to a broken feed.
+MAX_REUSED_TICKERS = 100
+
 # A plain ticker with the class separators of the feeds (BRK/A, ABR^D, BF.B).
 VALID_SYMBOL = r"^[A-Z0-9]+(?:[./^-][A-Z0-9]+)*$"
+
+# Share-type suffixes of feed names ('Class A Common Stock'); names are the company's.
+SHARE_TYPE = re.compile(
+    r"(?<!Preferred)[\s,-]+(?:(?:Class|Series) [A-Z]\s+)?(?:(?:Subordinate |Non-)?Voting\s+)?"
+    r"(?:Common Stock|Common Shares|Ordinary Shares?|American Depositary Shares?"
+    r"|(?:Common )?Shares of Beneficial Interest)(?:\s*\(.*\))?$",
+    re.IGNORECASE,
+)
 
 # Exchange-traded products belong in database/etfs, not equities.
 ETP_NAME = r"\b(?:ETF|ETFs|ETN|ETNs|Exchange[- ]Traded)\b"
@@ -96,6 +109,24 @@ def lookup_sector(
     return subset["sector"].mode()[0] if not subset.empty else np.nan
 
 
+def remove_share_type(name: str) -> str:
+    """
+    Remove the share-type suffix of a feed name ('Zevia PBC Class A Common Stock' -> 'Zevia PBC').
+
+    A trailing '(The)' moves to the front ('Gap Inc. (The)' -> 'The Gap Inc.').
+
+    Args:
+        name (str): The feed name.
+
+    Returns:
+        str: The company name, or the name itself when nothing else would remain.
+    """
+    company = SHARE_TYPE.sub("", name).strip()
+    if company.endswith(" (The)"):
+        company = f"The {company[:-6]}"
+    return company if len(company) > 1 else name
+
+
 def build_new_ticker(
     row: pd.Series,
     fd_industries: dict,
@@ -120,7 +151,7 @@ def build_new_ticker(
     industry_group = lookup_industry_group(industry, equities)
     sector = lookup_sector(industry, industry_group, equities)
     return {
-        "name": row["name"],
+        "name": remove_share_type(row["name"]),
         "summary": np.nan,
         "currency": "USD",
         "industry": industry,
@@ -229,6 +260,26 @@ def get_other_symbols(database: str) -> set[str]:
             pd.read_csv(path, usecols=[0], dtype=str, keep_default_na=False).iloc[:, 0]
         )
     return symbols
+
+
+def find_reused_tickers(equities: pd.DataFrame, feed: pd.DataFrame) -> list[str]:
+    """
+    The delisted rows whose ticker a feed now lists for another company.
+
+    Args:
+        equities (pd.DataFrame): The equities by symbol.
+        feed (pd.DataFrame): The feed by symbol, with name.
+
+    Returns:
+        list[str]: The symbols.
+    """
+    names = equities.loc[equities["delisted"] == "True", "name"]
+    names = names[~names.index.duplicated()]
+    return [
+        symbol
+        for symbol in feed.index.intersection(names.index)
+        if get_name_start(names[symbol]) != get_name_start(feed.loc[symbol, "name"])
+    ]
 
 
 def find_non_shares(frame: pd.DataFrame) -> pd.Series:

@@ -11,6 +11,8 @@ from scripts.listings.helpers import check_non_share
 
 # US exchange files the Nasdaq Trader directory covers (not OTC).
 US_FILES = ["NYQ", "NMS", "NGM", "NCM", "ASE"]
+# US exchange files of ETFs the directory covers (NYSE Arca and Cboe BZX too).
+US_ETF_FILES = ["NYQ", "NMS", "NGM", "NCM", "ASE", "PCX", "BTS"]
 # At most this share of the live US rows is delisted in one run; more means a bad feed.
 MAX_DELISTED_SHARE = 0.03
 # A directory shorter than this is incomplete.
@@ -75,15 +77,16 @@ def get_name_start(name: str) -> str:
 
 
 def get_status_changes(
-    frame: pd.DataFrame, listed: dict[str, str]
+    frame: pd.DataFrame, listed: dict[str, str], shares: bool = True
 ) -> tuple[list[str], list[str]]:
     """
     The rows of a US exchange file the directory no longer lists, and the delisted
-    shares it lists again under the same company name.
+    rows it lists again under the same name.
 
     Args:
         frame (pd.DataFrame): The exchange file.
         listed (dict[str, str]): See read_directory.
+        shares (bool): Equities, which are never relisted as a non-share.
 
     Returns:
         tuple[list[str], list[str]]: The symbols to delist and to relist.
@@ -98,7 +101,7 @@ def get_status_changes(
             frame.index[~live & in_directory], keys[~live & in_directory], strict=True
         )
         if get_name_start(frame.loc[symbol, "name"]) == get_name_start(listed[key])
-        and not check_non_share(listed[key])
+        and not (shares and check_non_share(listed[key]))
     ]
     return delist, relist
 
@@ -133,7 +136,9 @@ def find_stale_lines(equities: pd.DataFrame) -> list[str]:
         .any()
     )
     stale = status.index[status["dead_home"] & ~status["live_home"]]
-    return list(with_isin.index[with_isin["isin"].isin(stale) & ~dead])
+    # US exchange lines follow the Nasdaq Trader directory instead.
+    directory = with_isin["exchange"].isin(US_FILES)
+    return list(with_isin.index[with_isin["isin"].isin(stale) & ~dead & ~directory])
 
 
 def find_stale_german_lines(equities: pd.DataFrame) -> list[str]:

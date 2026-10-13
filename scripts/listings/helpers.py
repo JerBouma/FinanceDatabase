@@ -2,6 +2,7 @@
 
 __docformat__ = "google"
 
+import html
 import os
 import re
 import urllib.request
@@ -45,7 +46,7 @@ def create_session() -> requests.Session:
 SESSION = create_session()
 US_ETF_FILES = {"NMS", "NGM", "NCM", "NYQ", "ASE", "PCX", "BTS"}
 
-SUFFIX = r"\.(?:TO|V|HK|NS|T|AX)$"
+SUFFIX = r"\.(?:TO|V|HK|NS|T|AX|KS|KQ|BK)$"
 # Instruments with an expiry or maturity date go out of date quickly and are not added.
 DATED_NAME = re.compile(
     r"\bwarrants?\b|\s(?:WTS?|RTS)$|\brights?$|\bsubscription rights?\b"
@@ -68,16 +69,30 @@ DATE_IN_NAME = re.compile(
     re.IGNORECASE,
 )
 OPTION_NAME = re.compile(r"\b(?:CALL|PUT)\b.*\d", re.IGNORECASE)
-WARRANT_NAME = re.compile(r"\b(?:warrants?|waran|wts)\b|\bWT EXP\b", re.IGNORECASE)
+WARRANT_NAME = re.compile(
+    r"\b(?:warrants?|waran)\b|\bwts(?:\s\S{1,4})?$|\bWT EXP\b", re.IGNORECASE
+)
 # Subscription warrants named by series ('TO3'), and names ending in 'Wts'.
 SUBSCRIPTION_NAME = re.compile(r"\bTO\d+\b|wts$", re.IGNORECASE)
-# Nordic knock-out, stop-loss and mini certificates ('KO 1(39', 'SO 2(196').
-CERTIFICATE_NAME = re.compile(r"\b(?:KO|SO|MINI)\s?\d+\s?\(")
+# Nordic knock-out, stop-loss and mini certificates ('KO 1(39', 'SO 2(196') and Vienna
+# open-end turbo certificates ('EB OE TL.Z./AIXTRON').
+CERTIFICATE_NAME = re.compile(r"\b(?:KO|SO|MINI)\s?\d+\s?\(|\bT[LS]\.\s?Z\./")
+# German bond short names: coupon period ('Chevron 14/17', 'ENGIE 13/UND.FLR'), floaters,
+# MTNs, 'ANL.V.' (Anleihe) and Australian capital-indexed bonds ('Australia 2025 CI').
+BOND_SHORT_NAME = re.compile(
+    r"(?<=[A-Za-z .(])\d{2}/(?:\d{4}|\d{2}|UND\.?)(?!\d)|\bFLR\b|\bMTN\s?\d|\bANL\.\s?V\."
+    r"|\b(?:19|20)\d{2} CI$",
+    re.IGNORECASE,
+)
 # Debentures, rights issues, leveraged products and indices listed as equities.
 OTHER_NON_SHARE = re.compile(
     r"\bred(?:eemable)? NCDs?\b|\bexch(?:ange)? traded bond\b|\brights issue\b|\bleveraged product\b|"
     r"\b(?:price|total) return index\b",
     re.IGNORECASE,
+)
+# Commercial paper, as Caracas lists it ('P. C. DE NETUNO, EMISION 2020-I').
+COMMERCIAL_PAPER = re.compile(
+    r"^P\.\s?C\.\s+[A-Z0-9]|\b(?i:papel(?:es)? comercial(?:es)?|commercial paper)\b"
 )
 COUPON = re.compile(r"\d+(?:[.,]\d+)?\s?%")
 EXCHANGEABLE_NOTE = re.compile(r"\bzones$|\bexchangeable notes?\b", re.IGNORECASE)
@@ -109,7 +124,14 @@ def check_non_share(name: str, country: str = "", isin: str = "") -> bool:
     if OPTION_NAME.search(name) or WARRANT_NAME.search(name):
         return True
     if any(
-        p.search(name) for p in (SUBSCRIPTION_NAME, CERTIFICATE_NAME, OTHER_NON_SHARE)
+        p.search(name)
+        for p in (
+            SUBSCRIPTION_NAME,
+            CERTIFICATE_NAME,
+            OTHER_NON_SHARE,
+            BOND_SHORT_NAME,
+            COMMERCIAL_PAPER,
+        )
     ):
         return True
     if EXCHANGEABLE_NOTE.search(name):
@@ -178,6 +200,21 @@ def fetch_optional(url: str) -> bytes | None:
     except Exception as error:
         print(f"  optional download failed ({url}): {type(error).__name__}: {error}")
         return None
+
+
+def read_html_table(raw: bytes, encoding: str = "utf-8") -> list[list[str]]:
+    """
+    The cell texts of every row of an HTML table, as exchanges publish their 'Excel' lists.
+    """
+    text = raw.decode(encoding, errors="replace")
+    rows = re.findall(r"<tr[^>]*>(.*?)</tr>", text, re.S | re.I)
+    return [
+        [
+            html.unescape(re.sub(r"<[^>]+>", "", cell)).strip()
+            for cell in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", row, re.S | re.I)
+        ]
+        for row in rows
+    ]
 
 
 def require(condition: bool, message: str) -> None:
