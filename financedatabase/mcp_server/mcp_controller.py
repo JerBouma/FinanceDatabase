@@ -15,6 +15,7 @@ import anyio
 import uvicorn
 import yaml
 from mcp.server.fastmcp import FastMCP
+from mcp.types import Icon
 from starlette.middleware.cors import CORSMiddleware
 from starlette.requests import Request
 from starlette.responses import JSONResponse
@@ -26,6 +27,7 @@ from financedatabase.mcp_server.provider_model import (
     DatabaseProvider,
 )
 from financedatabase.mcp_server.registry_model import AssetToolRegistry
+from financedatabase.mcp_server.site_model import register_site_routes
 from financedatabase.mcp_server.tools_model import UtilityToolRegistry
 from financedatabase.utilities.logger_model import get_logger
 
@@ -70,9 +72,12 @@ def _build_mcp_app() -> tuple[FastMCP, DatabaseProvider]:
         synonyms=configuration.get("synonyms", {}),
     )
 
+    server = configuration["server"]
     mcp = FastMCP(
-        name=configuration["server"]["name"],
-        instructions=configuration["server"]["instructions"],
+        name=server["name"],
+        instructions=server["instructions"],
+        website_url=server["website_url"],
+        icons=[Icon(src=server["icon_url"], mimeType="image/png", sizes=["512x512"])],
         log_level="CRITICAL",
         # All interfaces for Docker, which also leaves the DNS-rebinding guard off.
         host="0.0.0.0",  # noqa: S104
@@ -104,6 +109,8 @@ def _build_mcp_app() -> tuple[FastMCP, DatabaseProvider]:
 
     if analytics is not None:
         analytics.register_route(mcp)
+
+    register_site_routes(mcp, server["website_url"])
 
     @mcp.custom_route("/health", methods=["GET"])
     async def check_health(request: Request) -> JSONResponse:  # noqa: ARG001

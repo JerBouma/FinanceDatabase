@@ -3,6 +3,8 @@
 # Server name and the instructions sent to the client on initialisation.
 server:
   name: "Finance Database"
+  website_url: "https://www.jeroenbouma.com/projects/financedatabase/mcp"
+  icon_url: "https://financedatabase.jeroenbouma.com/icon.png"
   instructions: >-
     The Finance Database categorises financial symbols: equities, ETFs, indices,
     currencies and cryptocurrencies. It holds classifications (sector, industry,
