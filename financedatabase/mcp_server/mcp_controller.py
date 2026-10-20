@@ -27,7 +27,10 @@ from financedatabase.mcp_server.provider_model import (
     DatabaseProvider,
 )
 from financedatabase.mcp_server.registry_model import AssetToolRegistry
-from financedatabase.mcp_server.site_model import register_site_routes
+from financedatabase.mcp_server.site_model import (
+    SetupPageMiddleware,
+    register_site_routes,
+)
 from financedatabase.mcp_server.tools_model import UtilityToolRegistry
 from financedatabase.utilities.logger_model import get_logger
 
@@ -189,6 +192,12 @@ def main() -> None:
             if transport == "streamable-http"
             else mcp.sse_app()
         )
+        if transport == "streamable-http":
+            starlette_app.add_middleware(
+                SetupPageMiddleware,
+                website=load_configuration()["server"]["website_url"],
+                path=mcp.settings.streamable_http_path,
+            )
         starlette_app.add_middleware(
             CORSMiddleware,
             allow_origins=["*"],
