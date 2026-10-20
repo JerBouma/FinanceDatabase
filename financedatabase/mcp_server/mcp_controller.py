@@ -111,7 +111,7 @@ def _build_mcp_app() -> tuple[FastMCP, DatabaseProvider]:
     ).register_all_tools()
 
     if analytics is not None:
-        analytics.register_route(mcp)
+        analytics.register_route(mcp, website=server["website_url"])
 
     register_site_routes(mcp, server["website_url"])
 

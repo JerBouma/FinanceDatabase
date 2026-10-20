@@ -19,8 +19,9 @@ from typing import Any
 
 from mcp.server.lowlevel.server import request_ctx
 from starlette.requests import Request
-from starlette.responses import JSONResponse
+from starlette.responses import HTMLResponse, JSONResponse
 
+from financedatabase.mcp_server.stats_page_model import render_stats_page
 from financedatabase.utilities.logger_model import get_logger
 
 logger = get_logger()
@@ -416,19 +417,25 @@ class UsageAnalytics:
                 "uptime_seconds": int(time.time() - self._started),
             }
 
-    def register_route(self, mcp: Any, path: str = "/stats") -> None:
+    def register_route(self, mcp: Any, path: str = "/stats", website: str = "") -> None:
         """
-        Publish the totals at a public route of the server.
+        Publish the totals at a public route of the server: a dashboard for browsers, JSON
+        for everything else.
 
         Args:
             mcp (Any): The FastMCP server.
             path (str): The route. Defaults to "/stats".
+            website (str): The documentation page the dashboard links to.
         """
         if not hasattr(mcp, "custom_route"):
             return
 
         @mcp.custom_route(path, methods=["GET"])
-        async def show_stats(request: Request) -> JSONResponse:  # noqa: ARG001
+        async def show_stats(request: Request) -> JSONResponse | HTMLResponse:
+            accept = request.headers.get("accept", "")
+            if "text/html" in accept and "application/json" not in accept:
+                page = render_stats_page(self.get_summary(), str(request.url), website)
+                return HTMLResponse(page)
             return JSONResponse(self.get_summary())
 
 

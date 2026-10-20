@@ -159,3 +159,22 @@ def test_stats_route_is_registered(tmp_path) -> None:
     response = TestClient(mcp.streamable_http_app()).get("/stats")
     assert response.status_code == 200
     assert response.json()["total_calls"] == 1
+
+
+def test_browsers_get_a_stats_dashboard(tmp_path) -> None:
+    """Test that a browser gets the dashboard at /stats and other clients the JSON."""
+    from mcp.server.fastmcp import FastMCP
+    from starlette.testclient import TestClient
+
+    mcp = FastMCP(name="test")
+    analytics = UsageAnalytics("Finance Database", tmp_path / "stats.json")
+    analytics.record_call("equities")
+    analytics.register_route(mcp, website="https://example.com/mcp")
+    client = TestClient(mcp.streamable_http_app())
+
+    page = client.get("/stats", headers={"Accept": "text/html,*/*;q=0.8"})
+    assert page.headers["content-type"].startswith("text/html")
+    assert "Most used tools" in page.text and "<code>equities</code>" in page.text
+    assert 'href="https://example.com/mcp"' in page.text
+
+    assert client.get("/stats", headers={"Accept": "*/*"}).json()["total_calls"] == 1
