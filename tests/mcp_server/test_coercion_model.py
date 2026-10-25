@@ -1,6 +1,11 @@
 """Coercion Model Tests"""
 
-from financedatabase.mcp_server.coercion_model import resolve_values
+from financedatabase.mcp_server.coercion_model import convert_to_int, resolve_values
+
+
+def test_convert_to_int_uses_default_for_infinite_values() -> None:
+    for value in (float("inf"), float("-inf"), "inf", "-inf"):
+        assert convert_to_int(value, default=25, minimum=1, maximum=200) == 25
 
 
 def test_resolve_values_accepts_a_unique_prefix() -> None:
