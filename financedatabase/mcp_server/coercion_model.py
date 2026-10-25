@@ -45,7 +45,7 @@ def convert_to_int(
     else:
         try:
             number = int(float(value))
-        except (TypeError, ValueError):
+        except (TypeError, ValueError, OverflowError):
             number = default
     number = max(number, minimum)
     if maximum is not None:
