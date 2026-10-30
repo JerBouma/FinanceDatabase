@@ -81,3 +81,17 @@ def test_module_show_options_as_polars() -> None:
     assert list(as_polars) == list(as_numpy)
     assert all(isinstance(v, pl.Series) for v in as_polars.values())
     assert as_polars["sector"].to_list() == [str(v) for v in as_numpy["sector"]]
+
+
+@pytest.mark.parametrize("column", ["name", "index"])
+@pytest.mark.parametrize("case_sensitive", [False, True])
+@pytest.mark.parametrize("as_pandas", [False, True])
+def test_search_empty_list_matches_no_rows(column, case_sensitive, as_pandas) -> None:
+    """An empty set of search alternatives matches no rows in either output format."""
+    equities = fd.Equities(use_local_location=True)
+    result = equities.search(
+        **{column: []}, case_sensitive=case_sensitive, as_pandas=as_pandas
+    )
+    assert len(result) == 0
+    expected_columns = equities.select(as_pandas=as_pandas).columns
+    assert list(result.columns) == list(expected_columns)
