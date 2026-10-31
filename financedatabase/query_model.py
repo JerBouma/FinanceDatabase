@@ -192,7 +192,9 @@ def search_rows(
             else:
                 lowered = pl.col(key).str.to_lowercase()
                 hits = [lowered.str.contains(v.lower(), literal=True) for v in value]
-                lazy = lazy.filter(pl.any_horizontal(hits).fill_null(False))
+                lazy = lazy.filter(
+                    pl.any_horizontal(hits).fill_null(False) if hits else pl.lit(False)
+                )
         else:
             lazy = lazy.filter(match_pattern(pl.col(key), value, case_sensitive))
 
