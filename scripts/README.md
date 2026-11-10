@@ -16,9 +16,24 @@ Repository tooling that keeps `database/` current and checks it. None of it ship
 | `update_readme_stats.py` | after every update | Regenerates the statistics section of `README.md` |
 | `check_categories.py` | after every update | Fails when an equity's categories are not in `categories.json` |
 | `validate_identifiers.py` | locally and in the test suite | Reports (and with `--apply` repairs) invalid identifiers |
+| `prepare_release.py` | on release PRs (Release) | Checks a release PR and writes its release notes |
 
 Every weekly script runs with `--dry-run` (where offered) and `--database database` locally,
 for example `python scripts/update_listings.py --dry-run`.
+
+## Releases
+
+A release is a PR from `feature/vX.Y.Z` into `main`, titled `vX.Y.Z`, with every version
+bumped (`pyproject.toml`, `uv.lock`, `server.json`, and the bundle's `manifest.json` and
+`pyproject.toml` with its pin). Package and MCP server changes go into that branch first;
+data changes keep going straight to `main`. The PR description is the release text: a short
+introduction, then a `## Package` section (and other `## ` sections as needed).
+
+`.github/workflows/release.yml` checks an open release PR as a dry run. Once it is merged and
+the "release" environment approves it, the workflow uploads the package to PyPI, creates the
+tag `X.Y.Z` and the release "FinanceDatabase X.Y.Z" with `financedatabase.mcpb`, and publishes
+`server.json` to the MCP Registry (`mcp_registry.yml`). A re-run continues where a failed one
+stopped. The hosted MCP server is redeployed separately.
 
 ## Robustness
 

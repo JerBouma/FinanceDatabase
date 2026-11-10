@@ -1,0 +1,13 @@
+"""Check a release PR and write its release notes (see scripts/README.md)."""
+
+__docformat__ = "google"
+
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from scripts.release.release_controller import run_release_check  # noqa: E402
+
+if __name__ == "__main__":
+    run_release_check()
