@@ -43,7 +43,7 @@ def print_menu() -> None:
     for number, (_, _, name) in CLIENT_MENU.items():
         text.append(f"  {number}  ", style="bold cyan")
         text.append(f"{name}\n")
-    text.append("\n  7  ", style="yellow")
+    text.append(f"\n  {REMOVE_OPTION}  ", style="yellow")
     text.append("Remove configuration\n")
     text.append("  0  ", style="dim")
     text.append("Exit", style="dim")
@@ -107,7 +107,7 @@ def get_claude_config_path() -> pathlib.Path:
             pathlib.Path.home() / "AppData" / "Roaming"
         )
         return pathlib.Path(appdata) / "Claude" / "claude_desktop_config.json"
-    return pathlib.Path.home() / ".config" / "claude" / "claude_desktop_config.json"
+    return pathlib.Path.home() / ".config" / "Claude" / "claude_desktop_config.json"
 
 
 def get_claude_code_config_path() -> pathlib.Path:
@@ -130,9 +130,27 @@ def get_gemini_config_path() -> pathlib.Path:
     return pathlib.Path.home() / ".gemini" / "settings.json"
 
 
+def get_devin_config_path() -> pathlib.Path:
+    """
+    Return the path to the Devin Desktop (formerly Windsurf) MCP configuration file.
+
+    Returns:
+        pathlib.Path: Absolute path to ``devin/mcp_config.json`` in the user's config directory.
+    """
+    if platform.system() == "Windows":
+        appdata = os.environ.get("APPDATA") or str(
+            pathlib.Path.home() / "AppData" / "Roaming"
+        )
+        return pathlib.Path(appdata) / "devin" / "mcp_config.json"
+    config_home = os.environ.get("XDG_CONFIG_HOME") or str(
+        pathlib.Path.home() / ".config"
+    )
+    return pathlib.Path(config_home) / "devin" / "mcp_config.json"
+
+
 def get_windsurf_config_path() -> pathlib.Path:
     """
-    Return the path to the Windsurf MCP configuration file.
+    Return the path to the MCP configuration file of Windsurf versions before Devin Desktop.
 
     Returns:
         pathlib.Path: Absolute path to ``~/.codeium/windsurf/mcp_config.json``.
@@ -168,7 +186,16 @@ CLIENTS: dict[str, tuple[Callable[[pathlib.Path], pathlib.Path], str, str]] = {
     "vscode": (lambda cwd: cwd / ".vscode" / "mcp.json", "servers", "VS Code"),
     "cursor": (lambda cwd: cwd / ".cursor" / "mcp.json", "mcpServers", "Cursor"),
     "gemini": (lambda _: get_gemini_config_path(), "mcpServers", "Gemini"),
-    "windsurf": (lambda _: get_windsurf_config_path(), "mcpServers", "Windsurf"),
+    "devin": (
+        lambda _: get_devin_config_path(),
+        "mcpServers",
+        "Devin Desktop (Windsurf)",
+    ),
+    "windsurf": (
+        lambda _: get_windsurf_config_path(),
+        "mcpServers",
+        "Windsurf (older versions)",
+    ),
 }
 
 CLIENT_MENU = {
@@ -177,8 +204,10 @@ CLIENT_MENU = {
     "3": CLIENTS["vscode"],
     "4": CLIENTS["cursor"],
     "5": CLIENTS["gemini"],
-    "6": CLIENTS["windsurf"],
+    "6": CLIENTS["devin"],
+    "7": CLIENTS["windsurf"],
 }
+REMOVE_OPTION = "8"
 MENU_TO_CLIENT = dict(zip(CLIENT_MENU, CLIENTS))
 
 
