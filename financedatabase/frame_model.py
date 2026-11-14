@@ -16,6 +16,16 @@ class FinanceFrame(pd.DataFrame):
     A pandas DataFrame that converts its tickers to a Finance Toolkit object.
     """
 
+    @property
+    def _constructor(self) -> type["FinanceFrame"]:
+        """
+        Keep the FinanceFrame type when pandas returns a new frame, e.g. from head().
+
+        Returns:
+            type[FinanceFrame]: The class pandas constructs new frames with.
+        """
+        return FinanceFrame
+
     def to_toolkit(
         self,
         api_key: str | None = None,
