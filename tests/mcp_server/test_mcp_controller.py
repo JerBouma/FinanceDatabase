@@ -373,3 +373,26 @@ def test_server_reports_its_name_and_the_package_version(server) -> None:
     info = asyncio.run(get_server_info())
     assert info.name == "Finance Database"
     assert info.version == metadata.version("financedatabase")
+
+
+def test_setup_config_paths_follow_the_clients(monkeypatch, tmp_path) -> None:
+    """Test the Linux and Windows paths of Claude Desktop and Devin Desktop."""
+    monkeypatch.setattr(setup_model.platform, "system", lambda: "Linux")
+    monkeypatch.setattr(setup_model.pathlib.Path, "home", lambda: tmp_path)
+    monkeypatch.delenv("XDG_CONFIG_HOME", raising=False)
+    config = tmp_path / ".config"
+    assert setup_model.get_claude_config_path() == (
+        config / "Claude" / "claude_desktop_config.json"
+    )
+    assert setup_model.get_devin_config_path() == config / "devin" / "mcp_config.json"
+    monkeypatch.setenv("XDG_CONFIG_HOME", str(tmp_path / "xdg"))
+    assert setup_model.get_devin_config_path() == (
+        tmp_path / "xdg" / "devin" / "mcp_config.json"
+    )
+
+    monkeypatch.setattr(setup_model.platform, "system", lambda: "Windows")
+    monkeypatch.setenv("APPDATA", str(tmp_path / "AppData"))
+    assert setup_model.get_devin_config_path() == (
+        tmp_path / "AppData" / "devin" / "mcp_config.json"
+    )
+    assert setup_model.REMOVE_OPTION not in setup_model.CLIENT_MENU

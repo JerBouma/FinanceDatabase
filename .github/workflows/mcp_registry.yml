@@ -1,0 +1,58 @@
+name: Publish to the MCP Registry
+
+# Publishes server.json to registry.modelcontextprotocol.io. The Release workflow calls it after
+# a release; it also runs on a release published by hand, and can be run by hand.
+on:
+  release:
+    types: [published]
+  workflow_call:
+    inputs:
+      ref:
+        description: The tag to publish server.json from.
+        type: string
+        required: true
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write # GitHub OIDC proves ownership of the io.github.JerBouma namespace
+
+jobs:
+  publish:
+    name: Publish server.json
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ inputs.ref || github.ref }}
+          sparse-checkout: |
+            pyproject.toml
+            server.json
+          sparse-checkout-cone-mode: false
+
+      - name: Check the version matches pyproject.toml
+        run: |
+          python3 - <<'PY'
+          import json, sys, tomllib
+          expected = tomllib.load(open("pyproject.toml", "rb"))["project"]["version"]
+          server = json.load(open("server.json"))
+          versions = {server["version"], *(package["version"] for package in server["packages"])}
+          if versions != {expected}:
+              sys.exit(f"server.json has {sorted(versions)}, pyproject.toml has {expected}")
+          PY
+
+      # The SHA-256 is the one in the release's registry_1.8.1_checksums.txt; update both together.
+      - name: Install mcp-publisher
+        run: |
+          curl -sSfL -o mcp-publisher_linux_amd64.tar.gz \
+            https://github.com/modelcontextprotocol/registry/releases/download/v1.8.1/mcp-publisher_linux_amd64.tar.gz
+          echo "a06c9096dcb9727c13555b6be26c7effa707b01f06a4c561ba7a3635443cf2cc  mcp-publisher_linux_amd64.tar.gz" \
+            | sha256sum -c -
+          tar xzf mcp-publisher_linux_amd64.tar.gz mcp-publisher
+
+      - name: Publish
+        run: |
+          ./mcp-publisher login github-oidc
+          ./mcp-publisher publish
