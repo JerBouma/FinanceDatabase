@@ -331,6 +331,13 @@ def test_to_toolkit_success_path(monkeypatch) -> None:
     assert captured_kwargs["tickers"]
 
 
+def test_filtered_selection_keeps_to_toolkit() -> None:
+    """Slicing a selection returns a FinanceFrame, so `to_toolkit()` stays available."""
+    selection = equities.select(country="Japan")
+    assert hasattr(selection.head(), "to_toolkit")
+    assert hasattr(selection[selection["market_cap"] == "Large Cap"], "to_toolkit")
+
+
 SEARCH_CASES = [
     {"summary": "apple"},
     {"index": "AAPL"},

@@ -43,7 +43,7 @@ def convert_to_records(frame: pl.DataFrame) -> list[dict[str, Any]]:
     Returns:
         list[dict[str, Any]]: One dict per row, with None for missing values.
     """
-    return frame.to_dicts()
+    return frame.fill_nan(None).to_dicts()
 
 
 def convert_to_json(payload: dict[str, Any]) -> str:

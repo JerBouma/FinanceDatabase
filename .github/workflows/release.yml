@@ -1,0 +1,161 @@
+name: Release
+
+# Releases a version when its release PR (head branch feature/vX.Y.Z) is merged into main;
+# other PRs are ignored.
+# 1. Prepare: checks the versions, the tag, the notes and the "release" environment, and
+#    builds the package and financedatabase.mcpb. On an open release PR this is a dry run.
+# 2. Publish: after an approval on the "release" environment, uploads to PyPI, then creates
+#    the tag X.Y.Z and the release "FinanceDatabase X.Y.Z" (the PR description) with the bundle.
+# 3. MCP Registry: publishes server.json.
+# Every step skips what already exists, so a re-run continues where a failed run stopped.
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited, closed]
+    branches: [main]
+
+permissions:
+  contents: read
+
+# One run per PR; a newer dry run replaces an older one, a release is never cancelled.
+concurrency:
+  group: release-${{ github.event.pull_request.number }}
+  cancel-in-progress: ${{ github.event.action != 'closed' }}
+
+jobs:
+  prepare:
+    name: Prepare
+    if: >-
+      (github.event.action != 'closed' || github.event.pull_request.merged == true) &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      startsWith(github.event.pull_request.head.ref, 'feature/v')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      actions: read # to check that the "release" environment requires an approval
+    outputs:
+      release: ${{ steps.release.outputs.release }}
+      version: ${{ steps.release.outputs.version }}
+      sha: ${{ steps.release.outputs.sha }}
+    steps:
+      # The commit on main once merged; for an open PR, its test merge with main.
+      - name: Checkout the merge commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.merged && github.event.pull_request.merge_commit_sha || github.sha }}
+          fetch-depth: 0
+          filter: blob:none
+
+      - name: Check the release
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/prepare_release.py
+
+      - name: Install uv
+        if: steps.release.outputs.release == 'true'
+        uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          enable-cache: false
+
+      - name: Build the package
+        if: steps.release.outputs.release == 'true'
+        run: uv build --out-dir dist/package
+
+      - name: Set up Node.js
+        if: steps.release.outputs.release == 'true'
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "22"
+
+      # The bundle installs financedatabase[mcp]==X.Y.Z from PyPI when it starts, so it can be
+      # built before the package is published.
+      - name: Build financedatabase.mcpb
+        if: steps.release.outputs.release == 'true'
+        run: |
+          npm install --global @anthropic-ai/mcpb@2.1.2
+          mcpb validate financedatabase/mcp_server/mcpb/manifest.json
+          bash financedatabase/mcp_server/mcpb/build-mcpb.sh
+
+      - name: Upload the release files
+        if: steps.release.outputs.release == 'true'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: release
+          path: |
+            dist/package/
+            dist/financedatabase.mcpb
+            release-notes.md
+          if-no-files-found: error
+
+  publish:
+    name: Publish
+    needs: prepare
+    if: github.event.action == 'closed' && needs.prepare.outputs.release == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # The environment requires an approval before this job starts.
+    environment:
+      name: release
+      url: https://github.com/${{ github.repository }}/releases/tag/${{ needs.prepare.outputs.version }}
+    permissions:
+      contents: write
+    env:
+      VERSION: ${{ needs.prepare.outputs.version }}
+      SHA: ${{ needs.prepare.outputs.sha }}
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Download the release files
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: release
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          enable-cache: false
+
+      # --check-url skips files PyPI already has, so a re-run doesn't fail on them.
+      - name: Publish to PyPI
+        env:
+          UV_PUBLISH_TOKEN: ${{ secrets.PYPI_TOKEN }}
+        run: uv publish --trusted-publishing never --check-url https://pypi.org/simple/ dist/package/*
+
+      # The bundle and the MCP Registry point at this version, so wait until PyPI serves it.
+      - name: Wait for the version on PyPI
+        run: |
+          for attempt in $(seq 1 60); do
+            if curl -sf "https://pypi.org/pypi/financedatabase/$VERSION/json" > /dev/null; then
+              echo "financedatabase $VERSION is on PyPI."
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "::error::financedatabase $VERSION did not appear on PyPI within 10 minutes."
+          exit 1
+
+      - name: Create the tag and the release
+        run: |
+          if gh release view "$VERSION" > /dev/null 2>&1; then
+            gh release edit "$VERSION" --title "FinanceDatabase $VERSION" --notes-file release-notes.md
+            gh release upload "$VERSION" dist/financedatabase.mcpb --clobber
+          else
+            gh release create "$VERSION" dist/financedatabase.mcpb \
+              --target "$SHA" \
+              --title "FinanceDatabase $VERSION" \
+              --notes-file release-notes.md \
+              --latest
+          fi
+
+  mcp-registry:
+    name: MCP Registry
+    needs: [prepare, publish]
+    # A release created with the workflow token doesn't start other workflows, so the
+    # registry workflow is called from here.
+    uses: ./.github/workflows/mcp_registry.yml
+    with:
+      ref: ${{ needs.prepare.outputs.version }}
+    permissions:
+      contents: read
+      id-token: write

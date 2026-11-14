@@ -297,7 +297,7 @@ def _run_interactive_setup() -> None:
         return
 
     cwd = pathlib.Path.cwd()
-    if "7" in choice_str:
+    if setup_model.REMOVE_OPTION in choice_str:
         setup_model.remove_all_configs(cwd)
         return
 
