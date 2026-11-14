@@ -7940,6 +7940,12 @@ AT6000.MX,AT6 SERVICIOS,MXN,The AT6 SERVICIOS index tracks the performance of co
 ATAWG.AS,AEX ALL-TRA AW GR,EUR,"The AEX ALL-TRA AW GR is a gross return index that tracks the performance of all companies traded on Euronext Amsterdam, reinvesting dividends back into the index. It serves as a broad benchmark for investors interested in the total return of the Dutch stock market. The index includes price movements and gross dividend payments.",Equities,Equities,AMS,XAMS
 ATAWN.AS,AEX ALL-TRA AW NR,EUR,"The AEX ALL-TRA AW NR is a net return index that tracks the performance of all companies traded on Euronext Amsterdam, reinvesting dividends after the deduction of withholding taxes. It serves as a broad benchmark for investors interested in the net total return of the Dutch stock market. The index includes price movements and net dividend payments.",Equities,Equities,AMS,XAMS
 ATDB.VI,ATX Distributing in EUR,EUR,The ATX Distributing in EUR is an index which represents companies listed on the Vienna Stock Exchange and which pay dividends. It is quoted in EUR and aims to track the performance of Austrian dividend-paying companies. The index serves as a benchmark for investors seeking income from the Austrian stock market.,Equities,Equities,VIE,XWBO
+ATESG.PA,EN ATHENS ESG PR,EUR,"EN ATHENS ESG PR is an index published by Euronext (XPAR), calculated in EUR.",,,PAR,XPAR
+ATGGR.PA,EN ATHENS ESG GR,EUR,"EN ATHENS ESG GR is an index published by Euronext (XPAR), calculated in EUR.",,,PAR,XPAR
+ATGNR.PA,EN ATHENS ESG NR,EUR,"EN ATHENS ESG NR is an index published by Euronext (XPAR), calculated in EUR.",,,PAR,XPAR
+ATTGR.PA,EN ATN ESG GR TILT,EUR,"EN ATN ESG GR TILT is an index published by Euronext (XPAR), calculated in EUR.",,,PAR,XPAR
+ATTNR.PA,EN ATN ESG NR TILT,EUR,"EN ATN ESG NR TILT is an index published by Euronext (XPAR), calculated in EUR.",,,PAR,XPAR
+ATTPR.PA,EN ATN ESG PR TILT,EUR,"EN ATN ESG PR TILT is an index published by Euronext (XPAR), calculated in EUR.",,,PAR,XPAR
 ATV.VI,DB Austria TR VWAP,EUR,"The DB Austria TR VWAP index represents a basket of securities related to the Austrian market. It is a total return index, incorporating dividends and based on volume weighted average price. The index provides a performance measure of the Austrian equity market using a specific weighting methodology.",Equities,Equities,VIE,XWBO
 AW01.FGI,FTSE All World Index,USD,The FTSE All World Index is a market-capitalization weighted index representing the performance of large and mid-cap stocks from both developed and emerging markets. It serves as a benchmark for global equity market performance. The index provides investors with a comprehensive view of the world's equity markets.,Equities,Equities,FGI,
 AW02.FGI,FTSE All World Index ex US,USD,"The FTSE All World Index ex US is a market-capitalization weighted index representing the performance of large and mid-cap stocks from both developed and emerging markets, excluding the United States. It serves as a benchmark for global equity market performance, excluding US equities. The index allows investors to focus on global markets outside of the US.",Equities,Equities,FGI,
@@ -8149,6 +8155,7 @@ BPSIG.ME,MOEX Pension Government Bond Su,RUB,The MOEX Pension Government Bond Su
 BRAX.SA,ISHARES BRAX,BRL,"The iShares BRAX index tracks the performance of the IBrX 100 Index, which consists of 100 of the most actively traded stocks on the B3 (Brasil Bolsa Balcão) stock exchange. It aims to represent the overall performance of the Brazilian equity market by including companies from various sectors. The fund offers investors broad exposure to the largest companies in Brazil.",Equities,Equities,SAO,BVMF
 BRD5.AS,EN BR EU 15 N D5%,EUR,"EN BR EU 15 N D5% is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
 BRD5P.AS,EN BR EU 15 G D50P,EUR,"EN BR EU 15 G D50P is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
+BRDP2.AS,EN BR 15 G D50P II,EUR,"EN BR 15 G D50P II is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
 BREU.AS,EN BR EU 15,EUR,"EN BR EU 15 is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
 BREUG.AS,EN BR EU 15 GR,EUR,"EN BR EU 15 GR is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
 BREUN.AS,EN BR EU 15 NR,EUR,"EN BR EU 15 NR is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
@@ -11119,6 +11126,10 @@ ELPEG.AS,EN LISTED PE GR,EUR,"EN LISTED PE GR is an index published by Euronext 
 ELPEN.AS,EN LISTED PE NR,EUR,"EN LISTED PE NR is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
 ELPEP.AS,EN LISTED PE PR,EUR,"EN LISTED PE PR is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
 ELR.PA,EN LAM RSRCH,USD,"EN LAM RSRCH is an index published by Euronext (XPAR), calculated in USD.",,,PAR,XPAR
+ELSED.AS,EN EL SEL 25 D375,EUR,"EN EL SEL 25 D375 is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
+ELSEG.AS,EN EL SEL 25 GR,EUR,"EN EL SEL 25 GR is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
+ELSEN.AS,EN EL SEL 25 NR,EUR,"EN EL SEL 25 NR is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
+ELSEP.AS,EN EL SEL 25,EUR,"EN EL SEL 25 is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
 ELTD5.AS,EN LUX TRS FB D5%,EUR,"EN LUX TRS FB D5% is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
 ELTF5.AS,EN LUX TRS FB D50P,EUR,"EN LUX TRS FB D50P is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
 ELTFG.AS,EN LUX TRS FB GR,EUR,"EN LUX TRS FB GR is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
@@ -18497,6 +18508,11 @@ TINDG.AS,EN TR INDUST GR,EUR,"EN TR INDUST GR is an index published by Euronext 
 TINDN.AS,EN TR INDUST NR,EUR,"EN TR INDUST NR is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
 TIPOA.ME,Tinkoff IPO Index USD iNAV TIPO,USD,Tinkoff IPO Index USD iNAV TIPO tracks the performance of initial public offerings (IPOs). It provides exposure to newly listed companies. The index is calculated in USD.,Equities,Equities,MCX,MISX
 TLESG.PA,EN CDP E TL EW D5%,EUR,"EN CDP E TL EW D5% is an index published by Euronext (XPAR), calculated in EUR.",,,PAR,XPAR
+TLH50.AS,EN TR LONG HL D50P,EUR,"EN TR LONG HL D50P is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
+TLHL5.AS,EN TR LONG HL D5%,EUR,"EN TR LONG HL D5% is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
+TLHLG.AS,EN TR LONG HL GR,EUR,"EN TR LONG HL GR is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
+TLHLN.AS,EN TR LONG HL NR,EUR,"EN TR LONG HL NR is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
+TLHLP.AS,EN TR LONG HL,EUR,"EN TR LONG HL is an index published by Euronext (XAMS), calculated in EUR.",,,AMS,XAMS
 TLREF.IS,TURK LIRASI GECELIK REFERANS FA,TRY,,,,IST,XIST
 TMBFR.PA,EN CNO TMB,EUR,"EN CNO TMB is an index published by Euronext (XPAR), calculated in EUR.",,,PAR,XPAR
 TMEFR.PA,EN CNO TME,EUR,"EN CNO TME is an index published by Euronext (XPAR), calculated in EUR.",,,PAR,XPAR
