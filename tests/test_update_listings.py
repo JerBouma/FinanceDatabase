@@ -174,10 +174,20 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("Australia 2025 CI", "", ""),
         ("P. C. DE NETUNO, EMISION 2020-I", "", ""),
         ("P.C. CALOX INTERNATIONAL EM. 20", "", ""),
+        ("Synthetic Fixed-Income Securities Inc 6.375% (STRATS) Cl A-1", "", ""),
+        (
+            "Structures Products Cp 8% CorTS Issued by Peco Energy Cap Tr II Preferred Stock",
+            "",
+            "",
+        ),
+        ("PPlus Tr GSC-2 Tr Ctf Fltg Rate", "", ""),
+        ("Lehman ABS 3.50 3.50% Adjustable Corp Backed Tr Certs GS Cap I", "", ""),
+        ("CABCO TR FOR J C PENNEY", "", ""),
     ]:
         assert helpers.check_non_share(name, country, isin), name
     for name, country, isin in [
         ("ASML Holding N.V.", "Netherlands", "NL0010273215"),
+        ("GL.WELLNESS STRATS INC.", "", ""),
         ("Atlas Corp. 7.875% Series H", "United Kingdom", ""),
         ("KeyCorp Depositary Shares each representing a 1/40th ownership", "", ""),
         ("Samsung Electronics Co., Ltd. Sponsored GDR", "South Korea", ""),

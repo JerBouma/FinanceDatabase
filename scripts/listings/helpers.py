@@ -94,6 +94,13 @@ OTHER_NON_SHARE = re.compile(
 COMMERCIAL_PAPER = re.compile(
     r"^P\.\s?C\.\s+[A-Z0-9]|\b(?i:papel(?:es)? comercial(?:es)?|commercial paper)\b"
 )
+# Corporate bonds repackaged into trust certificates (STRATS, CorTS, PPLUS, CABCO).
+TRUST_CERTIFICATE = re.compile(
+    r"\bSTRATS\b(?!\s+(?:inc|corp|ltd)\b)|\b(?:CorTS|PPLUS|CABCO|SATURNS)\b"
+    r"|\bcorp(?:orate)?\.? backed\b|\b(?:tr|trust) (?:certs?|ctfs?|certificates?)\b"
+    r"|\brepackaged\b",
+    re.IGNORECASE,
+)
 COUPON = re.compile(r"\d+(?:[.,]\d+)?\s?%")
 EXCHANGEABLE_NOTE = re.compile(r"\bzones$|\bexchangeable notes?\b", re.IGNORECASE)
 SHARE_WORDS = re.compile(
@@ -109,7 +116,8 @@ DEBT_WORDS = re.compile(
 
 def check_non_share(name: str, country: str = "", isin: str = "") -> bool:
     """
-    Check whether an equities row is not a company share (debt, warrant, certificate).
+    Check whether an equities row is not a company share (debt, warrant, certificate,
+    trust certificate).
 
     Args:
         name (str): The instrument name.
@@ -131,6 +139,7 @@ def check_non_share(name: str, country: str = "", isin: str = "") -> bool:
             OTHER_NON_SHARE,
             BOND_SHORT_NAME,
             COMMERCIAL_PAPER,
+            TRUST_CERTIFICATE,
         )
     ):
         return True
