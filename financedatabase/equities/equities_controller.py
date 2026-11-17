@@ -76,9 +76,11 @@ class Equities(FinanceDatabase):
 
         equities = fd.Equities()
 
-        equities.select(country="Netherlands", sector="Financials", only_primary_listing=True)[
-            ["name", "currency", "industry", "exchange", "market_cap"]
-        ].head()
+        equities.select(
+            country="Netherlands",
+            sector="Information Technology",
+            only_primary_listing=True,
+        )[["name", "currency", "industry", "exchange", "market_cap"]].head()
         ```
         """
         return self._select_rows(
