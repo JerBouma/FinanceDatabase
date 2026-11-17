@@ -6,7 +6,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-grey?logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/boumajeroen/)
 [![MCP Server](https://img.shields.io/badge/MCP_Server-grey?logo=modelcontextprotocol)](https://www.jeroenbouma.com/projects/financedatabase/mcp)
 [![Download MCP Bundle](https://img.shields.io/badge/Download_MCP_Bundle-grey?logo=anthropic)](https://github.com/JerBouma/FinanceDatabase/releases/latest/download/financedatabase.mcpb)
-[![Documentation](https://img.shields.io/badge/Documentation-grey?logo=readme)](https://www.jeroenbouma.com/projects/financedatabase)
+[![Documentation](https://img.shields.io/badge/Documentation-grey?logo=readme)](https://www.jeroenbouma.com/projects/financedatabase/docs)
 [![Database Explorer](https://img.shields.io/badge/Database_Explorer-grey?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+PGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iNi41Ii8+PHBhdGggZD0iTTE1IDE1bDYgNiIvPjwvc3ZnPg==)](https://www.jeroenbouma.com/projects/financedatabase/explorer)
 [![Supported Python Versions](https://img.shields.io/pypi/pyversions/financedatabase)](https://pypi.org/project/financedatabase/)
 [![PYPI Version](https://img.shields.io/pypi/v/financedatabase)](https://pypi.org/project/financedatabase/)
@@ -166,7 +166,7 @@ And below the number of companies in each of these industries is shown. Each com
   <img alt="Options" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/options-light.png">
 </picture>
 
-The options of every column can be shown this way, including `currency`, `exchange`, `market`, `country` and `market_cap` (Mega, Large, Mid, Small, Micro and Nano Cap). **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+The options of every column can be shown this way, including `currency`, `exchange`, `market`, `country` and `market_cap` (Mega, Large, Mid, Small, Micro and Nano Cap). **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase/docs/equities#show_options).**
 
 ### Selecting Equities
 
@@ -213,7 +213,7 @@ This gives the following three companies:
 | ASRNL.AS | ASR Nederland N.V. | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | NL0011872643 |
 | NN.AS    | NN Group N.V.      | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | NL0010773842 |
 
-Every filter also accepts a list, so both queries can be combined into one with `country=["Netherlands", "United States"]` and `market=["Euronext Amsterdam", "New York Stock Exchange", "NASDAQ Global Select"]`. Equities can be selected on `country`, `sector`, `industry_group`, `industry`, `currency`, `exchange`, `mic`, `market` and `market_cap`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+Every filter also accepts a list, so both queries can be combined into one with `country=["Netherlands", "United States"]` and `market=["Euronext Amsterdam", "New York Stock Exchange", "NASDAQ Global Select"]`. Equities can be selected on `country`, `sector`, `industry_group`, `industry`, `currency`, `exchange`, `mic`, `market` and `market_cap`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase/docs/equities#select).**
 
 ### Searching the Database
 
@@ -246,7 +246,7 @@ And below the results are counted per industry.
   <img alt="Search" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/search-light.png">
 </picture>
 
-The `search` function works on every column of every asset class, including `name`, `isin`, `cusip` and `figi`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+The `search` function works on every column of every asset class, including `name`, `isin`, `cusip` and `figi`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase/docs/equities#search).**
 
 ### Exploring other Asset Classes
 
@@ -300,7 +300,7 @@ And below all actively listed ETFs are divided over their category groups.
   <img alt="ETFs" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/etfs-light.png">
 </picture>
 
-The categories of each asset class can again be found with `show_options`, e.g. `fd.Indices().show_options(selection="category")` returns the 42 index categories, from 'Corporate Bonds' and 'Emerging Markets' to 'Small Cap' and 'Value'. Cryptocurrencies are selected on `cryptocurrency` and `currency` and currencies on `base_currency` and `quote_currency`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+The categories of each asset class can again be found with `show_options`, e.g. `fd.Indices().show_options(selection="category")` returns the 42 index categories, from 'Corporate Bonds' and 'Emerging Markets' to 'Small Cap' and 'Value'. Cryptocurrencies are selected on `cryptocurrency` and `currency` and currencies on `base_currency` and `quote_currency`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase/docs).**
 
 ### Combining with the Finance Toolkit
 
