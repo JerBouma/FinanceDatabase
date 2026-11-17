@@ -159,7 +159,7 @@ Which returns:
  'Payments & Specialty Finance']
 ```
 
-And below the number of companies in each of these industries is shown. Each company is counted once, however many exchanges it is listed on: listings that share an ISIN, share class FIGI, website or the first word of their name (such as Aegon and its perpetual bonds) are combined.
+And below the number of companies in each of these industries is shown. Each company is counted once, however many exchanges it is listed on: listings that share an ISIN, share class FIGI, website or the first word of their name (such as ING Groep's listings in Amsterdam, Frankfurt, New York and São Paulo) are combined.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/options-dark.png">
@@ -193,25 +193,24 @@ This returns 194 companies, of which a few of the larger ones are shown below.
 
 Without `only_primary_listing=True`, the same query returns 455 listings on 23 exchanges, because every exchange a company trades on is shown by default. Progressive, for example, also appears as `PGV.F` (Frankfurt), `PGV.SG` (Stuttgart), `PGR.MX` (Mexico) and `P1GR34.SA` (B3). The primary listing of a company is its listing on the main exchange of its home market, or without one its listing on the largest main exchange abroad. It is worked out from the data itself, so it works for companies anywhere: for ASML it is `ASML.AS` on Euronext Amsterdam, not `ASML` on NASDAQ or `ASMLF` over the counter. To get the listings in a particular country instead, such as the US listings of ASML, filter on the `exchange`, `market` or `currency`.
 
-For the Netherlands, it makes sense to select the market "Euronext Amsterdam" (exchange "AMS"), here together with the market cap:
+For the Netherlands, it makes sense to select the market "Euronext Amsterdam" (exchange "AMS"), here for the semiconductor companies:
 
 ```python
-# Select the large insurance companies on Euronext Amsterdam
+# Select the semiconductor companies on Euronext Amsterdam
 equities.select(
     country="Netherlands",
-    industry="Insurance",
+    industry="Semiconductors & Chip Equipment",
     market="Euronext Amsterdam",
-    market_cap="Large Cap",
 )
 ```
 
 This gives the following three companies:
 
-| symbol   | name               | currency   | sector     | industry   | exchange   | market             | country     | market_cap   | isin         |
-|:---------|:-------------------|:-----------|:-----------|:-----------|:-----------|:-------------------|:------------|:-------------|:-------------|
-| AGN.AS   | Aegon N.V.         | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | BMG0112X1056 |
-| ASRNL.AS | ASR Nederland N.V. | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | NL0011872643 |
-| NN.AS    | NN Group N.V.      | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | NL0010773842 |
+| symbol   | name                             | currency   | sector                 | industry                        | exchange   | market             | country     | market_cap   | isin         |
+|:---------|:---------------------------------|:-----------|:-----------------------|:--------------------------------|:-----------|:-------------------|:------------|:-------------|:-------------|
+| ASM.AS   | ASM International N.V.           | EUR        | Information Technology | Semiconductors & Chip Equipment | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | NL0000334118 |
+| ASML.AS  | ASML Holding N.V.                | EUR        | Information Technology | Semiconductors & Chip Equipment | AMS        | Euronext Amsterdam | Netherlands | Mega Cap     | NL0010273215 |
+| BESI.AS  | BE Semiconductor Industries N.V. | EUR        | Information Technology | Semiconductors & Chip Equipment | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | NL0012866412 |
 
 Every filter also accepts a list, so both queries can be combined into one with `country=["Netherlands", "United States"]` and `market=["Euronext Amsterdam", "New York Stock Exchange", "NASDAQ Global Select"]`. Equities can be selected on `country`, `sector`, `industry_group`, `industry`, `currency`, `exchange`, `mic`, `market` and `market_cap`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer).**
 
@@ -313,38 +312,37 @@ ___
 <b><div align="center">Obtain an API Key from FinancialModelingPrep <a href="https://www.jeroenbouma.com/fmp" target="_blank">here</a>.</div></b>
 ___
 
-Returning to the three large insurance companies in the Netherlands:
+Returning to the three semiconductor companies in the Netherlands:
 
 ```python
-# Select the large insurance companies on Euronext Amsterdam
-dutch_insurance_companies = equities.select(
+# Select the semiconductor companies on Euronext Amsterdam
+dutch_semiconductor_companies = equities.select(
     country="Netherlands",
-    industry="Insurance",
+    industry="Semiconductors & Chip Equipment",
     market="Euronext Amsterdam",
-    market_cap="Large Cap",
 )
 
 # Load them into the Finance Toolkit
-toolkit = dutch_insurance_companies.to_toolkit(api_key="FINANCIAL_MODELING_PREP_KEY")
+toolkit = dutch_semiconductor_companies.to_toolkit(api_key="FINANCIAL_MODELING_PREP_KEY")
 
 # Obtain historical market data for all tickers
 historical_data = toolkit.get_historical_data()
 
-# Select the results for ASR Nederland
-historical_data.xs("ASRNL.AS", axis=1, level=1)
+# Select the results for ASML
+historical_data.xs("ASML.AS", axis=1, level=1)
 ```
 
-For example, a portion of the historical data for ASR Nederland is shown below.
+For example, a portion of the historical data for ASML is shown below.
 
-| date       |   Open |   High |   Low |   Close |   Adj Close |   Volume |   Dividends |   Return |   Cumulative Return |
-|:-----------|-------:|-------:|------:|--------:|------------:|---------:|------------:|---------:|--------------------:|
-| 2026-09-30 |  73.26 |  73.64 | 71.88 |   72.16 |       72.16 |   435324 |           0 |  -0.0118 |               3.608 |
-| 2026-10-01 |  71.52 |  71.72 | 70.58 |   71    |       71    |   666582 |           0 |  -0.0161 |               3.55  |
-| 2026-10-02 |  71.14 |  71.54 | 70.66 |   71.48 |       71.48 |   408475 |           0 |   0.0068 |               3.574 |
-| 2026-10-05 |  71.5  |  72.36 | 71.4  |   72.16 |       72.16 |   375435 |           0 |   0.0095 |               3.608 |
-| 2026-10-06 |  72.44 |  73.1  | 72.4  |   72.82 |       72.82 |    63282 |           0 |   0.0091 |               3.641 |
+| date       |   Open |   High |    Low |   Close |   Adj Close |   Volume |   Dividends |   Return |   Cumulative Return |
+|:-----------|-------:|-------:|-------:|--------:|------------:|---------:|------------:|---------:|--------------------:|
+| 2026-11-10 | 1348   | 1382.4 | 1330.6 |  1361   |      1361   |   719569 |           0 |   0.0128 |              1.8496 |
+| 2026-11-11 | 1390   | 1411.8 | 1368.6 |  1403.8 |      1403.8 |   664165 |           0 |   0.0314 |              1.9077 |
+| 2026-11-12 | 1369.2 | 1384.8 | 1351   |  1376.8 |      1376.8 |   766995 |           0 |  -0.0192 |              1.871  |
+| 2026-11-13 | 1360   | 1373.4 | 1325.2 |  1338.8 |      1338.8 |   699967 |           0 |  -0.0276 |              1.8194 |
+| 2026-11-16 | 1325   | 1332   | 1289.4 |  1306.6 |      1306.6 |   704121 |           0 |  -0.0241 |              1.7756 |
 
-And below the cumulative returns of Aegon, ASR Nederland and NN Group are plotted, including the S&P 500 as benchmark.
+And below the cumulative returns of ASM International, ASML and BE Semiconductor Industries are plotted, including the S&P 500 as benchmark.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/toolkit-dark.png">
@@ -357,21 +355,21 @@ Now let's make it more advanced by calculating the profitability ratios for each
 # Collect all Profitability Ratios for all tickers
 profitability_ratios = toolkit.ratios.collect_profitability_ratios()
 
-# Select the results for ASR Nederland
-profitability_ratios.loc["ASRNL.AS"]
+# Select the results for ASML
+profitability_ratios.loc["ASML.AS"]
 ```
 
-For example, see some of the profitability ratios of ASR Nederland below.
+For example, see some of the profitability ratios of ASML below.
 
-|                                 |   2018 |   2019 |   2020 |   2021 |    2022 |   2023 |   2024 |   2025 |
-|:--------------------------------|-------:|-------:|-------:|-------:|--------:|-------:|-------:|-------:|
-| Net Profit Margin               | 0.1055 | 0.116  | 0.0811 | 0.091  |  0.1666 | 0.0814 | 0.0427 | 0.024  |
-| Income Before Tax Profit Margin | 0.1564 | 0.1515 | 0.1104 | 0.1231 |  0.2202 | 0.1089 | 0.0688 | 0.0328 |
-| Effective Tax Rate              | 0.2168 | 0.1983 | 0.2075 | 0.2233 |  0.2609 | 0.2181 | 0.2699 | 0.1882 |
-| Return on Assets                | 0.0107 | 0.0144 | 0.0083 | 0.0118 | -0.0259 | 0.0098 | 0.0061 | 0.0036 |
-| Return on Equity                | 0.1118 | 0.16   | 0.0982 | 0.1305 | -0.2591 | 0.1427 | 0.0969 | 0.0552 |
+|                                 |   2021 |   2022 |   2023 |   2024 |   2025 |
+|:--------------------------------|-------:|-------:|-------:|-------:|-------:|
+| Net Profit Margin               | 0.3161 | 0.2656 | 0.2844 | 0.2679 | 0.2942 |
+| Income Before Tax Profit Margin | 0.371  | 0.3114 | 0.3365 | 0.3274 | 0.3558 |
+| Effective Tax Rate              | 0.1479 | 0.1471 | 0.1548 | 0.1816 | 0.1732 |
+| Return on Assets                | 0.2046 | 0.1691 | 0.2056 | 0.171  | 0.1938 |
+| Return on Equity                | 0.4901 | 0.5935 | 0.7042 | 0.4743 | 0.5046 |
 
-And below these and other profitability ratios of ASR Nederland, each with its latest value, the change over the period and its trend.
+And below these and other profitability ratios of ASML, each with its latest value, the change over the period and its trend.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/ratios-dark.png">
