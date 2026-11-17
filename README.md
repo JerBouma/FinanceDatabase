@@ -76,11 +76,11 @@ No API key is needed. Each asset class is downloaded once and cached locally, se
 
 # Functionality
 
-This section is an introduction to the FinanceDatabase. Find with the link below a Jupyter Notebook in which you can see many more examples, including the full output of each query.
+This section is an introduction to the FinanceDatabase. Search and filter the database in your browser, and copy any selection as Python code, with the Database Explorer.
 
 ___
 
-<b><div align="center">Find the Getting Started Notebook for the FinanceDatabase <a href="https://www.jeroenbouma.com/projects/financedatabase/getting-started">here</a>.</div></b>
+<b><div align="center">Open the Database Explorer <a href="https://www.jeroenbouma.com/projects/financedatabase/explorer">here</a>.</div></b>
 ___
 
 A basic example of how to use the FinanceDatabase is shown below. Every code snippet in the sections that follow builds on this same `equities` instance. Initialization of each asset class is only required <u>once</u>, so save it to a variable to query the database much more quickly.
@@ -165,7 +165,7 @@ And below the number of companies in each of these industries is shown. Each com
   <img alt="Options" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/options-light.png">
 </picture>
 
-The options of every column can be shown this way, including `currency`, `exchange`, `market`, `country` and `market_cap` (Mega, Large, Mid, Small, Micro and Nano Cap). **Find the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started) and the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+The options of every column can be shown this way, including `currency`, `exchange`, `market`, `country` and `market_cap` (Mega, Large, Mid, Small, Micro and Nano Cap). **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
 
 ### Selecting Equities
 
@@ -212,7 +212,7 @@ This gives the following three companies:
 | ASRNL.AS | ASR Nederland N.V. | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | NL0011872643 |
 | NN.AS    | NN Group N.V.      | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | NL0010773842 |
 
-Every filter also accepts a list, so both queries can be combined into one with `country=["Netherlands", "United States"]` and `market=["Euronext Amsterdam", "New York Stock Exchange", "NASDAQ Global Select"]`. Equities can be selected on `country`, `sector`, `industry_group`, `industry`, `currency`, `exchange`, `mic`, `market` and `market_cap`. **Find the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started) and the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+Every filter also accepts a list, so both queries can be combined into one with `country=["Netherlands", "United States"]` and `market=["Euronext Amsterdam", "New York Stock Exchange", "NASDAQ Global Select"]`. Equities can be selected on `country`, `sector`, `industry_group`, `industry`, `currency`, `exchange`, `mic`, `market` and `market_cap`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
 
 ### Searching the Database
 
@@ -245,7 +245,7 @@ And below the results are counted per industry.
   <img alt="Search" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/search-light.png">
 </picture>
 
-The `search` function works on every column of every asset class, including `name`, `isin`, `cusip` and `figi`. **Find the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started) and the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+The `search` function works on every column of every asset class, including `name`, `isin`, `cusip` and `figi`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
 
 ### Exploring other Asset Classes
 
@@ -299,7 +299,7 @@ And below all actively listed ETFs are divided over their category groups.
   <img alt="ETFs" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/etfs-light.png">
 </picture>
 
-The categories of each asset class can again be found with `show_options`, e.g. `fd.Indices().show_options(selection="category")` returns the 42 index categories, from 'Corporate Bonds' and 'Emerging Markets' to 'Small Cap' and 'Value'. Cryptocurrencies are selected on `cryptocurrency` and `currency` and currencies on `base_currency` and `quote_currency`. **Find the Notebook [here](https://www.jeroenbouma.com/projects/financedatabase/getting-started) and the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+The categories of each asset class can again be found with `show_options`, e.g. `fd.Indices().show_options(selection="category")` returns the 42 index categories, from 'Corporate Bonds' and 'Emerging Markets' to 'Small Cap' and 'Value'. Cryptocurrencies are selected on `cryptocurrency` and `currency` and currencies on `base_currency` and `quote_currency`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
 
 ### Combining with the Finance Toolkit
 
