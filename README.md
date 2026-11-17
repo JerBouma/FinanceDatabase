@@ -166,7 +166,7 @@ And below the number of companies in each of these industries is shown. Each com
   <img alt="Options" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/options-light.png">
 </picture>
 
-The options of every column can be shown this way, including `currency`, `exchange`, `market`, `country` and `market_cap` (Mega, Large, Mid, Small, Micro and Nano Cap). **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+The options of every column can be shown this way, including `currency`, `exchange`, `market`, `country` and `market_cap` (Mega, Large, Mid, Small, Micro and Nano Cap). **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer).**
 
 ### Selecting Equities
 
@@ -213,7 +213,7 @@ This gives the following three companies:
 | ASRNL.AS | ASR Nederland N.V. | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | NL0011872643 |
 | NN.AS    | NN Group N.V.      | EUR        | Financials | Insurance  | AMS        | Euronext Amsterdam | Netherlands | Large Cap    | NL0010773842 |
 
-Every filter also accepts a list, so both queries can be combined into one with `country=["Netherlands", "United States"]` and `market=["Euronext Amsterdam", "New York Stock Exchange", "NASDAQ Global Select"]`. Equities can be selected on `country`, `sector`, `industry_group`, `industry`, `currency`, `exchange`, `mic`, `market` and `market_cap`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+Every filter also accepts a list, so both queries can be combined into one with `country=["Netherlands", "United States"]` and `market=["Euronext Amsterdam", "New York Stock Exchange", "NASDAQ Global Select"]`. Equities can be selected on `country`, `sector`, `industry_group`, `industry`, `currency`, `exchange`, `mic`, `market` and `market_cap`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer).**
 
 ### Searching the Database
 
@@ -246,7 +246,7 @@ And below the results are counted per industry.
   <img alt="Search" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/search-light.png">
 </picture>
 
-The `search` function works on every column of every asset class, including `name`, `isin`, `cusip` and `figi`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+The `search` function works on every column of every asset class, including `name`, `isin`, `cusip` and `figi`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer).**
 
 ### Exploring other Asset Classes
 
@@ -300,7 +300,7 @@ And below all actively listed ETFs are divided over their category groups.
   <img alt="ETFs" src="https://raw.githubusercontent.com/JerBouma/FinanceDatabase/main/assets/readme/etfs-light.png">
 </picture>
 
-The categories of each asset class can again be found with `show_options`, e.g. `fd.Indices().show_options(selection="category")` returns the 42 index categories, from 'Corporate Bonds' and 'Emerging Markets' to 'Small Cap' and 'Value'. Cryptocurrencies are selected on `cryptocurrency` and `currency` and currencies on `base_currency` and `quote_currency`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer) and find the full documentation [here](https://www.jeroenbouma.com/projects/financedatabase).**
+The categories of each asset class can again be found with `show_options`, e.g. `fd.Indices().show_options(selection="category")` returns the 42 index categories, from 'Corporate Bonds' and 'Emerging Markets' to 'Small Cap' and 'Value'. Cryptocurrencies are selected on `cryptocurrency` and `currency` and currencies on `base_currency` and `quote_currency`. **Try it in the Database Explorer [here](https://www.jeroenbouma.com/projects/financedatabase/explorer).**
 
 ### Combining with the Finance Toolkit
 
