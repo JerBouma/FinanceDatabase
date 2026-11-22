@@ -159,3 +159,26 @@ def test_local_parquet_is_preferred(cache, tmp_path) -> None:
     (tmp_path / "equities.bz2").write_bytes(b"not used")
     frame = cache_model.load_lazy_frame("equities.bz2", "", tmp_path).collect()
     assert frame.equals(typed)
+
+
+@pytest.mark.parametrize("metadata", ["", '{"checked":'])
+def test_truncated_metadata_does_not_disable_offline_cache(
+    cache, monkeypatch, metadata
+) -> None:
+    """An interrupted metadata write must not make a valid database unusable."""
+    url = "https://example.test/equities.bz2"
+    monkeypatch.setattr(
+        cache_model.requests,
+        "get",
+        lambda *args, **kwargs: FakeResponse(200, bz2.compress(CSV.encode())),
+    )
+    target = cache_model.get_remote_cache(url)
+    meta_path = target.with_suffix(".json")
+    meta_path.write_text(metadata)
+
+    def offline(*args, **kwargs):
+        raise requests.exceptions.ConnectionError("offline")
+
+    monkeypatch.setattr(cache_model.requests, "get", offline)
+    assert cache_model.get_remote_cache(url) == target
+    assert pl.read_parquet(target).height == 3

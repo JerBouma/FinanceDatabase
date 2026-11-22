@@ -153,7 +153,11 @@ def get_remote_cache(url: str) -> Path:
     key = get_cache_name(url)
     target = get_cache_directory() / f"remote-{key}.parquet"
     meta_path = get_cache_directory() / f"remote-{key}.json"
-    meta = json.loads(meta_path.read_text()) if meta_path.exists() else {}
+    try:
+        meta = json.loads(meta_path.read_text()) if meta_path.exists() else {}
+    except json.JSONDecodeError:
+        # Metadata from an interrupted older write is expendable; keep the data.
+        meta = {}
     if target.exists() and time.time() - meta.get("checked", 0) < REFRESH_SECONDS:
         return target
 
@@ -175,7 +179,9 @@ def get_remote_cache(url: str) -> Path:
                 "etag": response.headers.get("ETag"),
                 "checked": time.time(),
             }
-        meta_path.write_text(json.dumps(meta))
+        write_atomically(
+            meta_path, lambda path: Path(path).write_text(json.dumps(meta))
+        )
     except requests.exceptions.RequestException:
         if target.exists():
             return target
