@@ -30,7 +30,16 @@ FIGI_EXCHANGES = {
     ".KS": "KS",
     ".KQ": "KS",
     ".BK": "TB",
+    ".AS": "NA",
+    ".PA": "FP",
+    ".BR": "BB",
+    ".LS": "PL",
+    ".OL": "NO",
+    ".MI": "IM",
+    ".IR": "ID",
 }
+# Exchanges whose directory gives ISINs, looked up by ISIN rather than ticker.
+FIGI_BY_ISIN = {"HK", "IS", "NA", "FP", "BB", "PL", "NO", "IM", "ID"}
 MIN_AGREEMENT, MIN_ROWS = 0.9, 10
 EXCHANGE_NAMES = {
     "NMS": "Nasdaq Global Select Market",
@@ -46,6 +55,13 @@ EXCHANGE_NAMES = {
     "ASX": "Australian Securities Exchange",
     "TOR": "Toronto Stock Exchange",
     "VAN": "TSX Venture Exchange",
+    "AMS": "Euronext Amsterdam",
+    "PAR": "Euronext Paris",
+    "BRU": "Euronext Brussels",
+    "LIS": "Euronext Lisbon",
+    "OSL": "Oslo Børs",
+    "MIL": "Euronext Milan",
+    "ISE": "Euronext Dublin",
 }
 
 
@@ -91,7 +107,7 @@ def create_figi_job(listing: Listing) -> tuple[dict, str] | None:
             base = base[:-3] + "-U"  # trust units
         elif "-" in base:
             return None  # other share classes are not resolvable by ticker
-    if listing.isin and exchange in ("HK", "IS"):
+    if listing.isin and exchange in FIGI_BY_ISIN:
         return {
             "idType": "ID_ISIN",
             "idValue": listing.isin,
@@ -147,7 +163,8 @@ def enrich_with_openfigi(
     listings: list[Listing], api_key: str | None
 ) -> tuple[list[Listing], list[str]]:
     """
-    Fill FIGIs and HKEX/KRX names; re-file rows whose security type contradicts the class.
+    Fill FIGIs and full names for abbreviated ones; re-file rows whose security type
+    contradicts the class.
     """
     jobs = [(listing, create_figi_job(listing)) for listing in listings]
     jobs = [(listing, job) for listing, job in jobs if job]
@@ -177,7 +194,10 @@ def enrich_with_openfigi(
             listing.figi = record.get("figi") or ""
             listing.composite_figi = record.get("compositeFIGI") or ""
             listing.shareclass_figi = record.get("shareClassFIGI") or ""
-        if listing.file in ("HKG", "KSC", "KOE") and get_openfigi_name(record):
+        full_name = listing.file in ("HKG", "KSC", "KOE") or (
+            listing.kind == "equities" and listing.abbreviated
+        )
+        if full_name and get_openfigi_name(record):
             listing.name = get_openfigi_name(record)
     return listings, notes
 

@@ -183,6 +183,13 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("PPlus Tr GSC-2 Tr Ctf Fltg Rate", "", ""),
         ("Lehman ABS 3.50 3.50% Adjustable Corp Backed Tr Certs GS Cap I", "", ""),
         ("CABCO TR FOR J C PENNEY", "", ""),
+        ("ADOCIA BSA", "", "FR001400XVZ4"),
+        ("BIOPHYTIS BSA31", "", ""),
+        ("Cybergun Bsa 2", "", ""),
+        ("BIOSYNEX BSAR", "", ""),
+        ("BANIJAY GROUP WARR", "", ""),
+        ("WARR EHI", "", ""),
+        ("SOLUTIONS 30 SE DS", "", ""),
     ]:
         assert helpers.check_non_share(name, country, isin), name
     for name, country, isin in [
@@ -204,6 +211,9 @@ def test_check_non_share_finds_papers_but_keeps_shares() -> None:
         ("Alphabet Inc. Depositary Shares representing a 1/20th Interest", "", ""),
         ("PC Jeweller Limited", "India", ""),
         ("WTS Capital Bhd", "Malaysia", ""),
+        ("BSA Limited", "Australia", ""),
+        ("DS Smith Plc", "United Kingdom", ""),
+        ("SOLUTIONS 30 SE", "", ""),
     ]:
         assert not helpers.check_non_share(name, country, isin), name
 
@@ -280,6 +290,82 @@ def test_parse_european_etf_lists() -> None:
     result = sources_model.parse_six(six.encode("latin-1"))
     assert [(x.symbol, x.file, x.mic) for x in result.listings] == [
         ("SWDA.SW", "EBS", "XSWX")
+    ]
+
+
+def test_parse_euronext_equities() -> None:
+    """Test that Euronext equities map to the venue's file, growth markets included."""
+    csv = '\ufeffName;ISIN;Symbol;Market;Currency;"Open Price";Volume\n'
+    csv += '"European Equities"\n"28 Nov 2026"\n'
+    csv += '"2CRSI";FR0013341781;AL2SI;"Euronext Growth Paris";EUR;1;2\n'
+    csv += '"ABO GROUP";BE0974278104;ABO;"Euronext Brussels, Paris";EUR;1;2\n'
+    csv += '"2020 BULKERS";BMG9156K1018;2020;"Oslo Børs";NOK;1;2\n'
+    csv += '"CLABO";IT0005252454;CLABO;"Euronext Growth Milan";EUR;1;2\n'
+    csv += '"DALATA";IE00BJMZDW83;DHG;"Euronext Dublin";EUR;1;2\n'
+    csv += '"ACE DIGITAL";NO0013531616;ACED;"Euronext Expand Oslo";NOK;1;2\n'
+    csv += '"APPLE INC";US0378331005;1AAPL;"Euronext Global Equity Market";EUR;1;2\n'
+    csv += '"SOME BOND";IT0000000000;XYZ;"EuroTLX";EUR;1;2\n'
+    csv += "".join(
+        f'"Pad";FR{i:010d};P{i};"Euronext Access Paris";EUR;1;2\n' for i in range(501)
+    )
+    result = sources_model.parse_euronext_equities(csv.encode("utf-8"))
+    got = [(x.file, x.symbol, x.mic) for x in result.listings[:6]]
+    assert got == [
+        ("PAR", "AL2SI.PA", "XPAR"),
+        ("BRU", "ABO.BR", "XBRU"),
+        ("OSL", "2020.OL", "XOSL"),
+        ("MIL", "CLABO.MI", "XMIL"),
+        ("ISE", "DHG.IR", "XDUB"),
+        ("OSL", "ACED.OL", "XOSL"),
+    ]
+    assert len(result.listings) == 507
+    assert all(x.kind == "equities" and x.abbreviated for x in result.listings)
+    assert "1AAPL.PA" not in result.official["PAR"]
+
+
+def test_new_ticker_keeps_what_the_old_row_knew(tmp_path: Path) -> None:
+    """Test that a ticker change or relisting carries the old row's fields over."""
+    root = create_database(tmp_path)
+    path = root / "equities" / "TOR.csv"
+    tor = pd.read_csv(path, index_col=0, dtype=str, keep_default_na=False)
+    tor.loc["OLD.TO", ["sector", "city", "isin", "summary"]] = [
+        "Materials",
+        "Toronto",
+        "CA0000000001",
+        "Renamed Holdings mines gold.",
+    ]
+    tor.loc["GONE.TO"] = tor.loc["ABC.TO"]
+    tor.loc["GONE.TO", ["name", "city", "isin", "delisted"]] = [
+        "Gone Corp.",
+        "Calgary",
+        "CA0000000002",
+        "True",
+    ]
+    tor.sort_index().to_csv(path)
+    db = database_model.Database(str(root))
+    result = sources_model.SourceResult(
+        listings=[
+            sources_model.Listing(
+                "equities", "TOR", "RNH.TO", "Renamed Holdings Inc.", "CAD"
+            ),
+            sources_model.Listing(
+                "equities", "TOR", "BACK.TO", "Back Corp.", "CAD", isin="CA0000000002"
+            ),
+        ],
+        official={"TOR": {"ABC.TO", "RNH.TO", "BACK.TO"}},
+    )
+    listings_controller.apply_source(
+        db, "test", result, db.get_etf_families(), use_openfigi=False
+    )
+    db.write()
+    tor = pd.read_csv(path, index_col=0, dtype=str, keep_default_na=False)
+    assert tor.loc["RNH.TO", ["sector", "city"]].tolist() == ["Materials", "Toronto"]
+    assert tor.loc["RNH.TO", "isin"] == ""  # not shown to be the same security
+    assert tor.loc["RNH.TO", "summary"] == "Renamed Holdings mines gold."
+    assert tor.loc["BACK.TO", ["name", "city", "delisted"]].tolist() == [
+        "Back Corp.",
+        "Calgary",
+        "False",
     ]
 
 
@@ -433,6 +519,11 @@ def test_figi_jobs_and_names() -> None:
         )
         is None
     )
+    assert enrichment_model.create_figi_job(
+        sources_model.Listing(
+            "equities", "PAR", "AL2SI.PA", "2CRSI", "EUR", isin="FR0013341781"
+        )
+    ) == ({"idType": "ID_ISIN", "idValue": "FR0013341781", "exchCode": "FP"}, "AL2SI")
     assert (
         enrichment_model.get_openfigi_name({"name": "ISHARES CORE MSCI CHINA -HKD"})
         == "ISHARES CORE MSCI CHINA"

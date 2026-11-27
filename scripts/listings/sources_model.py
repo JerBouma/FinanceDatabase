@@ -14,6 +14,7 @@ from scripts.listings.helpers import (
     US_ETF_FILES,
     convert_to_yahoo_canada,
     fetch,
+    fetch_euronext_equities,
     fetch_euronext_etfs,
     fetch_nasdaq_trader,
     fetch_optional,
@@ -373,11 +374,25 @@ EURONEXT_FILES = {
     "Euronext Lisbon": ("LIS", ".LS", "XLIS"),
     "Oslo Børs": ("OSL", ".OL", "XOSL"),
 }
+# Equities: every regulated market and growth market of a Euronext venue, by city. Not
+# the Global Equity Market, after-hours, EuroTLX or Expert Market (foreign or suspended).
+EURONEXT_EQUITY_FILES = {
+    "Amsterdam": ("AMS", ".AS", "XAMS"),
+    "Paris": ("PAR", ".PA", "XPAR"),
+    "Brussels": ("BRU", ".BR", "XBRU"),
+    "Lisbon": ("LIS", ".LS", "XLIS"),
+    "Oslo": ("OSL", ".OL", "XOSL"),
+    "Milan": ("MIL", ".MI", "XMIL"),
+    "Dublin": ("ISE", ".IR", "XDUB"),
+}
+EURONEXT_EQUITY_MARKET = re.compile(
+    r"^(?:Euronext(?: Growth| Access| Expand)? (\w+)|(Oslo) Børs)$"
+)
 
 
-def parse_euronext(csv: bytes) -> SourceResult:
+def read_euronext(csv: bytes, what: str) -> pd.DataFrame:
     """
-    ETFs on Euronext Amsterdam, Paris, Brussels, Lisbon and Oslo.
+    Read a Euronext directory download, skipping the title lines above the rows.
     """
     lines = csv.decode("utf-8-sig").splitlines()
     rows = [line for i, line in enumerate(lines) if i == 0 or line.count(";") > 5]
@@ -388,7 +403,15 @@ def parse_euronext(csv: bytes) -> SourceResult:
         {"Name", "ISIN", "Symbol", "Market", "Currency"} <= set(data.columns),
         "Euronext",
     )
-    require(len(data) > 500, "Euronext ETF list too short")
+    require(len(data) > 500, f"Euronext {what} list too short")
+    return data
+
+
+def parse_euronext(csv: bytes) -> SourceResult:
+    """
+    ETFs on Euronext Amsterdam, Paris, Brussels, Lisbon and Oslo.
+    """
+    data = read_euronext(csv, "ETF")
     result = SourceResult()
     for _, row in data.iterrows():
         market = row.Market.split(",")[0].strip()
@@ -400,6 +423,37 @@ def parse_euronext(csv: bytes) -> SourceResult:
         result.listings.append(
             Listing(
                 "etfs",
+                file,
+                symbol,
+                row.Name.strip(),
+                row.Currency.strip(),
+                row.ISIN.strip(),
+                mic=mic,
+                abbreviated=True,
+            )
+        )
+    return result
+
+
+def parse_euronext_equities(csv: bytes) -> SourceResult:
+    """
+    Equities on the Euronext venues: Amsterdam, Paris, Brussels, Lisbon, Oslo, Milan
+    and Dublin, including their growth markets. A share listed on several venues is
+    added on the first one Euronext names.
+    """
+    data = read_euronext(csv, "equities")
+    result = SourceResult()
+    for _, row in data.iterrows():
+        match = EURONEXT_EQUITY_MARKET.match(row.Market.split(",")[0].strip())
+        city = match and (match.group(1) or match.group(2))
+        if city not in EURONEXT_EQUITY_FILES or not row.Symbol.strip():
+            continue
+        file, suffix, mic = EURONEXT_EQUITY_FILES[city]
+        symbol = row.Symbol.strip().replace(" ", "-") + suffix
+        result.official.setdefault(file, set()).add(symbol)
+        result.listings.append(
+            Listing(
+                "equities",
                 file,
                 symbol,
                 row.Name.strip(),
@@ -540,6 +594,7 @@ def load_sources() -> dict[str, Callable[[], SourceResult]]:
         ),
         "Xetra": lambda: parse_xetra(fetch(get_xetra_download_url())),
         "Euronext": lambda: parse_euronext(fetch_euronext_etfs()),
+        "Euronext equities": lambda: parse_euronext_equities(fetch_euronext_equities()),
         "SIX": lambda: parse_six(
             fetch(
                 "https://www.six-group.com/fqs/ref.csv?select=ShortName,ValorSymbol,ISIN,"

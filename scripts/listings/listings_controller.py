@@ -29,6 +29,7 @@ from scripts.listings.helpers import (
 from scripts.listings.sources_model import SourceResult, load_sources
 
 MAX_DELISTINGS_PER_SOURCE = 50
+IDENTIFIERS = ("isin", "cusip", "figi", "composite_figi", "shareclass_figi")
 NON_LATIN = re.compile(r"[^\x00-\u024f]")
 # Full-name lookups per source and run; new funds over the limit are added in a later run.
 MAX_NAME_LOOKUPS = 300
@@ -54,7 +55,9 @@ def apply_source(
             continue
         if DATED_NAME.search(listing.name):
             continue
-        if listing.kind == "equities" and check_non_share(listing.name):
+        if listing.kind == "equities" and check_non_share(
+            listing.name, isin=listing.isin
+        ):
             continue
         seen.add(listing.symbol)
         frame = db.get_frame(listing.kind, listing.file)
@@ -150,10 +153,12 @@ def apply_source(
             f"  ! {len(delist)} ticker changes look implausible; not delisting anything for {name}"
         )
         delist = []
+    superseded = {}
     for kind, file, old, new in delist:
         frame = db.get_frame(kind, file)
         frame.loc[old, "delisted"] = "True"
         frame.attrs["changed"] = True
+        superseded.setdefault((kind, file, new), old)
 
     for listing in added:
         frame = db.get_frame(listing.kind, listing.file)
@@ -193,8 +198,29 @@ def apply_source(
                         sec.get_registrant(listing.symbol), ""
                     )
                 listing.summary = listing.summary or sec.get_objective(listing.symbol)
-        row["summary"] = compose_summary(
-            listing.summary, listing.symbol, row, listing.kind
+        # A new ticker of a known share keeps what the old row knew: the row it
+        # supersedes, else a delisted row of the same ISIN. Identifiers only when it
+        # is the same security.
+        old, carried = superseded.get((listing.kind, listing.file, listing.symbol)), ""
+        if old is None and listing.isin:
+            earlier = frame.index[
+                (frame["isin"] == listing.isin) & (frame["delisted"] == "True")
+            ]
+            old = earlier[0] if len(earlier) else None
+        if old is not None:
+            previous = frame.loc[old]
+            same = bool(listing.isin) and previous.get("isin") == listing.isin
+            for column, value in previous.items():
+                blank = column in row and not row[column] and column != "delisted"
+                if blank and (column not in IDENTIFIERS or same):
+                    row[column] = value
+            summary = previous.get("summary", "")
+            if f"ticker {old.split('.')[0]} " not in summary:
+                carried = summary
+        row["summary"] = (
+            carried
+            if carried and not listing.summary
+            else compose_summary(listing.summary, listing.symbol, row, listing.kind)
         )
         db.added[db.get_path(listing.kind, listing.file)].append(
             pd.Series(row, name=listing.symbol)
