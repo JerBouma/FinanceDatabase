@@ -153,6 +153,9 @@ def apply_source(
             f"  ! {len(delist)} ticker changes look implausible; not delisting anything for {name}"
         )
         delist = []
+    shares = db.get_equities_by_isin(
+        {x.isin for x in added if x.kind == "equities" and x.isin}
+    )
     superseded = {}
     for kind, file, old, new in delist:
         frame = db.get_frame(kind, file)
@@ -217,6 +220,21 @@ def apply_source(
             summary = previous.get("summary", "")
             if f"ticker {old.split('.')[0]} " not in summary:
                 carried = summary
+        # Otherwise a new line of a share listed elsewhere (same ISIN) takes what that
+        # share's most complete line knows, its categories as one combination.
+        share = shares.get(listing.isin) if old is None else None
+        if listing.kind == "equities" and share:
+            if share["sector"]:
+                for level in ("sector", "industry_group", "industry"):
+                    row[level] = share[level]
+            for column, value in share.items():
+                if column in ("sector", "industry_group", "industry", "summary"):
+                    continue
+                if column == "name" and listing.abbreviated and value:
+                    row["name"] = value
+                elif not row[column]:
+                    row[column] = value
+            carried = share["summary"]
         row["summary"] = (
             carried
             if carried and not listing.summary

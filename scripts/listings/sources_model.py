@@ -7,6 +7,7 @@ import json
 import re
 from collections.abc import Callable
 from dataclasses import dataclass, field
+from urllib.parse import urljoin
 
 import pandas as pd
 
@@ -16,6 +17,7 @@ from scripts.listings.helpers import (
     fetch,
     fetch_euronext_equities,
     fetch_euronext_etfs,
+    fetch_nasdaq_nordic,
     fetch_nasdaq_trader,
     fetch_optional,
     get_canada_name,
@@ -55,6 +57,7 @@ class Listing:
     category: str = ""
     family: str = ""
     abbreviated: bool = False  # the exchange only publishes a short name
+    figi_exchange: str = ""  # OpenFIGI exchange code when not the suffix's own
 
 
 @dataclass
@@ -468,7 +471,7 @@ def parse_euronext_equities(csv: bytes) -> SourceResult:
 
 def parse_xetra(csv: bytes) -> SourceResult:
     """
-    ETFs and ETCs on Xetra.
+    ETFs, ETCs and shares on Xetra.
     """
     data = pd.read_csv(
         io.BytesIO(csv), sep=";", skiprows=2, dtype=str, keep_default_na=False
@@ -482,19 +485,25 @@ def parse_xetra(csv: bytes) -> SourceResult:
         & (data["Instrument Status"] == "Active")
         & (data.Mnemonic != "")
     ]
-    for _, row in funds.iterrows():
-        result.listings.append(
-            Listing(
-                "etfs",
-                "GER",
-                f"{row.Mnemonic.strip()}.DE",
-                row.Instrument.strip(),
-                row.Currency.strip(),
-                row.ISIN.strip(),
-                mic="XETR",
-                abbreviated=True,
+    shares = data[
+        (data["Instrument Type"] == "CS")
+        & (data["Instrument Status"] == "Active")
+        & (data.Mnemonic != "")
+    ]
+    for kind, rows in (("etfs", funds), ("equities", shares)):
+        for _, row in rows.iterrows():
+            result.listings.append(
+                Listing(
+                    kind,
+                    "GER",
+                    f"{row.Mnemonic.strip()}.DE",
+                    row.Instrument.strip(),
+                    row.Currency.strip(),
+                    row.ISIN.strip(),
+                    mic="XETR",
+                    abbreviated=True,
+                )
             )
-        )
     return result
 
 
@@ -527,16 +536,101 @@ def parse_six(csv: bytes) -> SourceResult:
     return result
 
 
+# SIX product lines of Swiss shares: blue chips, domestic shares and foreign shares with
+# a primary listing in Zurich (Chinese GDRs). International shares (PS) are listed in the
+# database under their ISIN and stay out.
+SIX_SHARE_LINES = {"BC", "DS", "FS"}
+
+
+def parse_six_equities(csv: bytes) -> SourceResult:
+    """
+    Swiss shares on SIX Swiss Exchange, without the second trading lines of buybacks.
+    """
+    data = pd.read_csv(
+        io.BytesIO(csv), sep=";", dtype=str, keep_default_na=False, encoding="latin-1"
+    )
+    columns = {"ShortName", "ValorSymbol", "ISIN", "TradingBaseCurrency", "ProductLine"}
+    require(columns <= set(data.columns), "SIX")
+    require(len(data) > 500, "SIX share list too short")
+    shares = data[data.ProductLine.isin(SIX_SHARE_LINES) & (data.ValorSymbol != "")]
+    result = SourceResult(official={"EBS": {f"{s}.SW" for s in shares.ValorSymbol}})
+    for _, row in shares[~shares.ShortName.str.contains(r"\bLINIE\b")].iterrows():
+        result.listings.append(
+            Listing(
+                "equities",
+                "EBS",
+                f"{row.ValorSymbol.strip()}.SW",
+                row.ShortName.strip(),
+                row.TradingBaseCurrency.strip(),
+                row.ISIN.strip(),
+                mic="XSWX",
+                abbreviated=True,
+            )
+        )
+    return result
+
+
+# OpenFIGI files First North shares under their own exchange codes.
+FIRST_NORTH_FIGI = {"STO": "SF", "HEL": "FF", "CPH": "DF"}
+NASDAQ_NORDIC_FILES = {
+    "STO": ("STO", ".ST", "XSTO"),
+    "CPH": ("CPH", ".CO", "XCSE"),
+    "HEL": ("HEL", ".HE", "XHEL"),
+    "ICE": ("ICE", ".IC", "XICE"),
+}
+
+
+def parse_nasdaq_nordic(pages: dict[str, dict[str, bytes]]) -> SourceResult:
+    """
+    Shares on Nasdaq Stockholm, Copenhagen, Helsinki and Iceland, main market and First
+    North; Nasdaq's sector is learned into categories like other exchange labels.
+    """
+    result = SourceResult()
+    for market, answers in pages.items():
+        file, suffix, mic = NASDAQ_NORDIC_FILES[market]
+        rows = [
+            {**row, "category": category}
+            for category, answer in answers.items()
+            for row in json.loads(answer)["data"]["instrumentListing"]["rows"]
+        ]
+        require(len(rows) > 20, f"Nasdaq Nordic {market} list too short")
+        official = result.official.setdefault(file, set())
+        labels = result.classifications.setdefault(file, {})
+        for row in rows:
+            if row.get("assetClass") != "SHARES" or not row.get("symbol"):
+                continue
+            symbol = row["symbol"].strip().replace(" ", "-") + suffix
+            official.add(symbol)
+            labels[symbol] = row.get("sector") or ""
+            result.listings.append(
+                Listing(
+                    "equities",
+                    file,
+                    symbol,
+                    row["fullName"].strip(),
+                    row["currency"].strip(),
+                    (row.get("isin") or "").strip(),
+                    mic=mic,
+                    classification=row.get("sector") or "",
+                    figi_exchange=(
+                        FIRST_NORTH_FIGI.get(market, "")
+                        if row["category"] == "FIRST_NORTH"
+                        else ""
+                    ),
+                )
+            )
+    return result
+
+
 def get_xetra_download_url() -> str:
     """
     The Xetra instrument file moves now and then; read its link from the overview page.
     """
-    page = fetch(
-        "https://www.cashmarket.deutsche-boerse.com/cash-en/trading/Tradable-Instruments-Xetra"
-    ).decode()
+    overview = "https://www.cashmarket.deutsche-boerse.com/cash-en/trading/Tradable-Instruments-Xetra"
+    page = fetch(overview).decode()
     match = re.search(r'href="([^"]*t7-xetr-allTradableInstruments\.csv)"', page)
     require(match is not None, "Xetra download link not found")
-    return match.group(1)
+    return urljoin(overview, match.group(1))
 
 
 def get_jpx_download_url() -> str:
@@ -595,6 +689,22 @@ def load_sources() -> dict[str, Callable[[], SourceResult]]:
         "Xetra": lambda: parse_xetra(fetch(get_xetra_download_url())),
         "Euronext": lambda: parse_euronext(fetch_euronext_etfs()),
         "Euronext equities": lambda: parse_euronext_equities(fetch_euronext_equities()),
+        "SIX equities": lambda: parse_six_equities(
+            fetch(
+                "https://www.six-group.com/fqs/ref.csv?select=ShortName,ValorSymbol,ISIN,"
+                "TradingBaseCurrency,ProductLine&where=PortalSegment=EQ&orderby=ShortName"
+                "&page=1&pagesize=99999"
+            )
+        ),
+        "Nasdaq Nordic": lambda: parse_nasdaq_nordic(
+            {
+                market: {
+                    category: fetch_nasdaq_nordic(market, category)
+                    for category in ("MAIN_MARKET", "FIRST_NORTH")
+                }
+                for market in NASDAQ_NORDIC_FILES
+            }
+        ),
         "SIX": lambda: parse_six(
             fetch(
                 "https://www.six-group.com/fqs/ref.csv?select=ShortName,ValorSymbol,ISIN,"

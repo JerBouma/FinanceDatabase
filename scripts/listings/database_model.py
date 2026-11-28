@@ -15,6 +15,23 @@ from scripts.listings.helpers import (
     write_csv,
 )
 
+# What another line of the same share (same ISIN) tells about the company.
+SHARE_FIELDS = (
+    "name",
+    "summary",
+    "sector",
+    "industry_group",
+    "industry",
+    "country",
+    "state",
+    "city",
+    "zipcode",
+    "website",
+    "market_cap",
+    "cusip",
+    "shareclass_figi",
+)
+
 
 class Database:
     """
@@ -161,6 +178,40 @@ class Database:
                 }
             self.cache["etf_isins"] = known
         return self.cache["etf_isins"]
+
+    def get_equities_by_isin(self, isins: set[str]) -> dict[str, dict[str, str]]:
+        """
+        ISIN -> the company fields of the most complete existing line of that share.
+        Only the asked ISINs are kept, so the whole equities class is never in memory.
+
+        Args:
+            isins (set[str]): The ISINs to look up.
+
+        Returns:
+            dict[str, dict[str, str]]: The fields per ISIN that has a line.
+        """
+        isins = {isin for isin in isins if len(isin) == 12}
+        if not isins:
+            return {}
+        columns = ["symbol", "isin", "delisted", *SHARE_FIELDS]
+        frames = []
+        for path in glob.glob(f"{self.root}/equities/*.csv"):
+            frame = pd.read_csv(path, usecols=columns, dtype=str, keep_default_na=False)
+            frames.append(frame[frame["isin"].isin(isins)])
+        lines = pd.concat(frames)
+        # A summary written for one line names its ticker; it doesn't fit another line.
+        lines.loc[lines["summary"].str.contains("under the ticker"), "summary"] = ""
+        lines["score"] = (lines["delisted"] == "False") * 100 + (
+            lines[list(SHARE_FIELDS)] != ""
+        ).sum(axis=1)
+        lines["cased"] = lines["name"].str.contains("[a-z]")
+        lines = lines.sort_values(["score", "cased"], ascending=False)
+        return {
+            isin: dict(zip(SHARE_FIELDS, row))
+            for isin, *row in lines.drop_duplicates("isin")[
+                ["isin", *SHARE_FIELDS]
+            ].itertuples(index=False)
+        }
 
     def get_merged_frames(self, kind: str) -> list[pd.DataFrame]:
         """

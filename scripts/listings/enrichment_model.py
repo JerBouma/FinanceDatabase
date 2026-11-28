@@ -37,10 +37,34 @@ FIGI_EXCHANGES = {
     ".OL": "NO",
     ".MI": "IM",
     ".IR": "ID",
+    ".DE": "GY",
+    ".SW": "SW",
+    ".ST": "SS",
+    ".CO": "DC",
+    ".HE": "FH",
+    ".IC": "IR",
 }
 # Exchanges whose directory gives ISINs, looked up by ISIN rather than ticker.
-FIGI_BY_ISIN = {"HK", "IS", "NA", "FP", "BB", "PL", "NO", "IM", "ID"}
+FIGI_BY_ISIN = {
+    "HK",
+    "IS",
+    "NA",
+    "FP",
+    "BB",
+    "PL",
+    "NO",
+    "IM",
+    "ID",
+    "GY",
+    "SW",
+    "SS",
+    "DC",
+    "FH",
+    "IR",
+}
 MIN_AGREEMENT, MIN_ROWS = 0.9, 10
+# OpenFIGI security types that are not company shares.
+NON_SHARE_TYPES = {"Equity WRT", "Right", "Warrant"}
 EXCHANGE_NAMES = {
     "NMS": "Nasdaq Global Select Market",
     "NGM": "Nasdaq Global Market",
@@ -62,6 +86,12 @@ EXCHANGE_NAMES = {
     "OSL": "Oslo Børs",
     "MIL": "Euronext Milan",
     "ISE": "Euronext Dublin",
+    "GER": "Xetra",
+    "EBS": "SIX Swiss Exchange",
+    "STO": "Nasdaq Stockholm",
+    "CPH": "Nasdaq Copenhagen",
+    "HEL": "Nasdaq Helsinki",
+    "ICE": "Nasdaq Iceland",
 }
 
 
@@ -99,7 +129,8 @@ def create_figi_job(listing: Listing) -> tuple[dict, str] | None:
     match = re.search(SUFFIX, listing.symbol)
     if not match or match.group(0) not in FIGI_EXCHANGES:
         return None
-    exchange, base = FIGI_EXCHANGES[match.group(0)], listing.symbol[: match.start()]
+    exchange = listing.figi_exchange or FIGI_EXCHANGES[match.group(0)]
+    base = listing.symbol[: match.start()]
     if exchange == "HK":
         base = str(int(base))  # OpenFIGI uses Hong Kong codes without leading zeros
     elif exchange in ("CT", "CV"):
@@ -107,7 +138,7 @@ def create_figi_job(listing: Listing) -> tuple[dict, str] | None:
             base = base[:-3] + "-U"  # trust units
         elif "-" in base:
             return None  # other share classes are not resolvable by ticker
-    if listing.isin and exchange in FIGI_BY_ISIN:
+    if listing.isin and (exchange in FIGI_BY_ISIN or listing.figi_exchange):
         return {
             "idType": "ID_ISIN",
             "idValue": listing.isin,
@@ -164,7 +195,7 @@ def enrich_with_openfigi(
 ) -> tuple[list[Listing], list[str]]:
     """
     Fill FIGIs and full names for abbreviated ones; re-file rows whose security type
-    contradicts the class.
+    contradicts the class and leave out warrants and rights.
     """
     jobs = [(listing, create_figi_job(listing)) for listing in listings]
     jobs = [(listing, job) for listing, job in jobs if job]
@@ -177,11 +208,15 @@ def enrich_with_openfigi(
             f"  OpenFIGI unavailable, rows added without FIGIs: {type(error).__name__}: {error}"
         )
         return listings, []
-    notes = []
+    notes, dropped = [], set()
     for (listing, _), record in zip(jobs, records):
         if not record:
             continue
         kind = record.get("securityType", "")
+        if listing.kind == "equities" and kind in NON_SHARE_TYPES:
+            dropped.add(listing.symbol)
+            notes.append(f"{listing.symbol} left out (OpenFIGI type {kind})")
+            continue
         # File the row under the asset class its security type says, not its name.
         if listing.kind == "equities" and kind == "ETP":
             listing.kind, listing.country, listing.sector = "etfs", "", ""
@@ -199,7 +234,7 @@ def enrich_with_openfigi(
         )
         if full_name and get_openfigi_name(record):
             listing.name = get_openfigi_name(record)
-    return listings, notes
+    return [x for x in listings if x.symbol not in dropped], notes
 
 
 def lookup_full_name(isin: str, mic: str = "") -> str:

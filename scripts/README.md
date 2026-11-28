@@ -98,12 +98,16 @@ Sources (all public, official):
 - SET list of listed companies: Thailand (SET and mai) equities; property and infrastructure
   funds are skipped.
 - TSX / TSXV company directory: Canada equities and ETFs.
-- Deutsche Börse Xetra all-tradable-instruments file: ETFs and ETCs on Xetra.
+- Deutsche Börse Xetra all-tradable-instruments file: ETFs, ETCs and shares on Xetra.
 - Euronext ETF list: ETFs on Euronext Amsterdam, Paris, Brussels, Lisbon and Oslo.
 - Euronext equities list: equities on Euronext Amsterdam, Paris, Brussels, Lisbon, Oslo,
   Milan and Dublin, including their Growth, Access and Expand markets (not the Global Equity
   Market, EuroTLX or the Expert Market, which hold foreign and suspended lines).
-- SIX Swiss Exchange reference data: ETFs on SIX.
+- SIX Swiss Exchange reference data: ETFs on SIX, and Swiss shares (blue chips, domestic
+  shares and the Chinese GDRs with their primary listing in Zurich; not the international
+  shares, which the database lists under their ISIN, or second trading lines of buybacks).
+- Nasdaq Nordic share screener: shares on Nasdaq Stockholm, Copenhagen, Helsinki and Iceland,
+  main market and First North.
 
 Safety rules, so an automated run never adds junk or duplicates:
 
@@ -124,11 +128,15 @@ Safety rules, so an automated run never adds junk or duplicates:
 
 Enrichment of new rows (each step is optional; if it fails, rows are still added):
 
-- OpenFIGI: FIGIs for new equities, and full names for HKEX and Euronext rows (both publish
-  abbreviations) and English names for KRX rows. A row whose security type contradicts its
+- A new line of a share already in the database (same ISIN) takes the company fields of its
+  most complete line: name, summary, sector, industry group and industry (as one
+  combination), country, address, website, market cap tier, CUSIP and share-class FIGI.
+- OpenFIGI: FIGIs for new equities, and full names for the exchanges that publish
+  abbreviations (HKEX, Euronext, Xetra, SIX) and English names for KRX rows. Equities that
+  OpenFIGI types as a warrant or right are left out. A row whose security type contradicts its
   asset class is re-filed. Set `OPENFIGI_API_KEY` for higher rate limits.
 - Sector, industry group and industry from the exchange's own classification (JPX sectors,
-  NSE industries, KRX industries, SET sectors), when ≥ 90% of ≥ 10 existing rows with that
+  NSE industries, KRX industries, SET sectors, Nasdaq Nordic sectors), when ≥ 90% of ≥ 10 existing rows with that
   classification agree.
 - ETF family from the first words of the name, when ≥ 95% of existing ETFs with those words
   share one family.
