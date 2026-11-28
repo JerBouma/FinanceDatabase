@@ -73,7 +73,8 @@ home listings are all delisted are delisted too, except lines on these three exc
 which follow the directory.
 
 `remove_non_shares.py` then removes any equities row that is not a company share (a name with
-a maturity or expiry date, a strike, a warrant, a coupon without share wording, a German bond
+a maturity or expiry date, a strike, a warrant (also French BSA, 'bons de souscription
+d'actions'), subscription rights ('… DS'), a coupon without share wording, a German bond
 short name such as 'Chevron 14/17' or 'ENGIE 13/UND.FLR', a certificate such as
 'EB OE TL.Z./E.ON', commercial paper such as Caracas' 'P. C. DE NETUNO, EMISION 2020-I', a corporate bond
 repackaged into trust certificates such as STRATS, CorTS, PPLUS or CABCO, or an
@@ -97,9 +98,16 @@ Sources (all public, official):
 - SET list of listed companies: Thailand (SET and mai) equities; property and infrastructure
   funds are skipped.
 - TSX / TSXV company directory: Canada equities and ETFs.
-- Deutsche Börse Xetra all-tradable-instruments file: ETFs and ETCs on Xetra.
+- Deutsche Börse Xetra all-tradable-instruments file: ETFs, ETCs and shares on Xetra.
 - Euronext ETF list: ETFs on Euronext Amsterdam, Paris, Brussels, Lisbon and Oslo.
-- SIX Swiss Exchange reference data: ETFs on SIX.
+- Euronext equities list: equities on Euronext Amsterdam, Paris, Brussels, Lisbon, Oslo,
+  Milan and Dublin, including their Growth, Access and Expand markets (not the Global Equity
+  Market, EuroTLX or the Expert Market, which hold foreign and suspended lines).
+- SIX Swiss Exchange reference data: ETFs on SIX, and Swiss shares (blue chips, domestic
+  shares and the Chinese GDRs with their primary listing in Zurich; not the international
+  shares, which the database lists under their ISIN, or second trading lines of buybacks).
+- Nasdaq Nordic share screener: shares on Nasdaq Stockholm, Copenhagen, Helsinki and Iceland,
+  main market and First North.
 
 Safety rules, so an automated run never adds junk or duplicates:
 
@@ -112,16 +120,23 @@ Safety rules, so an automated run never adds junk or duplicates:
 - Ticker changes: when a new listing matches a live row of the same file by ISIN or name, and
   that row's symbol is no longer on the exchange's list, the old row is marked delisted. More
   than 50 such changes for one source is treated as a parsing problem and nothing is delisted.
+  The new row takes the blank fields (categories, country, address, summary) of the row it
+  supersedes, or of a delisted row of the same ISIN in the same file; identifiers only when
+  the ISIN is the same.
 - Values a source does not provide are left blank, never guessed.
 - A name only in another script than Latin is never added.
 
 Enrichment of new rows (each step is optional; if it fails, rows are still added):
 
-- OpenFIGI: FIGIs for new equities, and full names for HKEX rows (HKEX publishes
-  abbreviations) and English names for KRX rows. A row whose security type contradicts its
+- A new line of a share already in the database (same ISIN) takes the company fields of its
+  most complete line: name, summary, sector, industry group and industry (as one
+  combination), country, address, website, market cap tier, CUSIP and share-class FIGI.
+- OpenFIGI: FIGIs for new equities, and full names for the exchanges that publish
+  abbreviations (HKEX, Euronext, Xetra, SIX) and English names for KRX rows. Equities that
+  OpenFIGI types as a warrant or right are left out. A row whose security type contradicts its
   asset class is re-filed. Set `OPENFIGI_API_KEY` for higher rate limits.
 - Sector, industry group and industry from the exchange's own classification (JPX sectors,
-  NSE industries, KRX industries, SET sectors), when ≥ 90% of ≥ 10 existing rows with that
+  NSE industries, KRX industries, SET sectors, Nasdaq Nordic sectors), when ≥ 90% of ≥ 10 existing rows with that
   classification agree.
 - ETF family from the first words of the name, when ≥ 95% of existing ETFs with those words
   share one family.

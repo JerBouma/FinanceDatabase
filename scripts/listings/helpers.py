@@ -46,7 +46,7 @@ def create_session() -> requests.Session:
 SESSION = create_session()
 US_ETF_FILES = {"NMS", "NGM", "NCM", "NYQ", "ASE", "PCX", "BTS"}
 
-SUFFIX = r"\.(?:TO|V|HK|NS|T|AX|KS|KQ|BK)$"
+SUFFIX = r"\.(?:TO|V|HK|NS|T|AX|KS|KQ|BK|AS|PA|BR|LS|OL|MI|IR|DE|SW|ST|CO|HE|IC)$"
 # Instruments with an expiry or maturity date go out of date quickly and are not added.
 DATED_NAME = re.compile(
     r"\bwarrants?\b|\s(?:WTS?|RTS)$|\brights?$|\bsubscription rights?\b"
@@ -69,11 +69,15 @@ DATE_IN_NAME = re.compile(
     re.IGNORECASE,
 )
 OPTION_NAME = re.compile(r"\b(?:CALL|PUT)\b.*\d", re.IGNORECASE)
+# Also French 'bons de souscription d'actions' after the company name ('ADOCIA BSA',
+# 'BIOSYNEX BSAR'), not a company called BSA.
 WARRANT_NAME = re.compile(
-    r"\b(?:warrants?|waran)\b|\bwts(?:\s\S{1,4})?$|\bWT EXP\b", re.IGNORECASE
+    r"\b(?:warrants?|waran|warr)\b|\bwts(?:\s\S{1,4})?$|\bWT EXP\b|(?<=\S )BSA\w*\b",
+    re.IGNORECASE,
 )
-# Subscription warrants named by series ('TO3'), and names ending in 'Wts'.
-SUBSCRIPTION_NAME = re.compile(r"\bTO\d+\b|wts$", re.IGNORECASE)
+# Subscription warrants named by series ('TO3'), names ending in 'Wts', and Euronext
+# subscription rights ('SOLUTIONS 30 SE DS', droits de souscription).
+SUBSCRIPTION_NAME = re.compile(r"\bTO\d+\b|wts$|\sDS$", re.IGNORECASE)
 # Nordic knock-out, stop-loss and mini certificates ('KO 1(39', 'SO 2(196') and Vienna
 # open-end turbo certificates ('EB OE TL.Z./AIXTRON').
 CERTIFICATE_NAME = re.compile(r"\b(?:KO|SO|MINI)\s?\d+\s?\(|\bT[LS]\.\s?Z\./")
@@ -185,9 +189,36 @@ def fetch_euronext_etfs() -> bytes:
     """
     Euronext's ETF list as CSV, the download behind its ETF directory page.
     """
+    return fetch_euronext("track/download?mics=XAMS%2CXPAR%2CXBRU%2CXLIS%2CXOSL")
+
+
+def fetch_euronext_equities() -> bytes:
+    """
+    Euronext's equities list as CSV, the download behind its equities directory page.
+    """
+    return fetch_euronext("stocks/download?mics=dm_all_stock")
+
+
+def fetch_nasdaq_nordic(market: str, category: str) -> bytes:
+    """
+    One market's shares from Nasdaq's Nordic share screener, as JSON.
+    """
+    response = SESSION.get(
+        "https://api.nasdaq.com/api/nordic/screener/shares",
+        params={"category": category, "market": market, "tableonly": "false"},
+        headers={"Accept": "application/json"},
+        timeout=TIMEOUT,
+    )
+    response.raise_for_status()
+    return response.content
+
+
+def fetch_euronext(path: str) -> bytes:
+    """
+    A Euronext directory download as CSV.
+    """
     response = SESSION.post(
-        "https://live.euronext.com/en/pd_es/data/track/download"
-        "?mics=XAMS%2CXPAR%2CXBRU%2CXLIS%2CXOSL",
+        f"https://live.euronext.com/en/pd_es/data/{path}",
         data={
             "args[fe_type]": "csv",
             "args[fe_decimal]": ".",
